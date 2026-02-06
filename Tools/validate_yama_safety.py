@@ -51,7 +51,8 @@ def log_print(msg):
         pass
 
 def validate_file(file_path):
-    log_print(f"\n--- Checking: {os.path.basename(file_path)} ---")
+    log_print(f"\n--- 🛡️ Safety Blockade: Checking {os.path.basename(file_path)} ---")
+    log_print(f"    Targeting: {len(BANNED_WORDS)} NG Patterns (Death, Violence, Mental, Children, Pronouns)")
     
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
@@ -94,4 +95,6 @@ if __name__ == "__main__":
         log_print("Usage: python3 validate_yama_safety.py <file_path>")
         sys.exit(1)
     
+
     validate_file(sys.argv[1])
+
