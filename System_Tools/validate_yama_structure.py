@@ -19,14 +19,14 @@ except ImportError:
 MIN_VOLUME_CHARS = 6000
 
 def validate_structure(file_path):
-    print(f"🔍 Validating Yama Story Structure + Safety + Volume: {os.path.basename(file_path)}")
+    print(f"[Structure Check]: Validating Yama Story Structure + Safety + Volume: {os.path.basename(file_path)}")
     
     # --- LAYER 1: NG WORD & PRONOUN BLOCKADE ---
     # Physically block entry if Safety Check fails.
     if validate_yama_safety:
-        print("\n🔒 [Layer 1] Physical Blockade: NG Words & Pronouns...")
+        print("\n[Layer 1] Physical Blockade: NG Words & Pronouns...")
         if not validate_yama_safety.validate_file(file_path):
-            print("❌ BLOCKADE TRIGGERED: NG Words or Pronouns detected.")
+            print("[BLOCKADE]: NG Words or Pronouns detected.")
             sys.exit(1)
     else:
         print("⚠️ [Layer 1] Skipped (Module not found).")
@@ -41,7 +41,7 @@ def validate_structure(file_path):
     # 1. Check for Markers
     markers = ["<!-- PART: KI -->", "<!-- PART: SHO -->", "<!-- PART: TEN-KETSU -->"]
     if not all(marker in content for marker in markers):
-        print("❌ CRITICAL FAIL: Missing Structural Markers.")
+        print("[CRITICAL]: Missing Structural Markers.")
         print("   Required: <!-- PART: KI -->, <!-- PART: SHO -->, <!-- PART: TEN-KETSU -->")
         print("   Please demarcate the script sections explicitly.")
         sys.exit(1)
@@ -50,7 +50,7 @@ def validate_structure(file_path):
     parts = re.split(r'<!-- PART: [A-Z-]+ -->', content)
     
     if len(parts) < 4:
-         print("❌ Error: Could not split content correctly. Ensure markers are synonymous with the start of sections.")
+         print("[ERROR]: Could not split content correctly. Ensure markers are synonymous with the start of sections.")
          sys.exit(1)
          
     ki_text = parts[1]
@@ -78,49 +78,49 @@ def validate_structure(file_path):
     
     # --- LAYER 2: VOLUME PHYSICAL BLOCKADE ---
     # Physically block if the script is too "thin" (Summarized/Compressed).
-    print(f"\n🧱 [Layer 2] Physical Blockade: Volume Floor ({MIN_VOLUME_CHARS} chars)...")
+    print(f"\n[Layer 2] Physical Blockade: Volume Floor ({MIN_VOLUME_CHARS} chars)...")
     if total < MIN_VOLUME_CHARS:
-         print(f"❌ BLOCKADE TRIGGERED: Script volume ({total}) is below safety floor ({MIN_VOLUME_CHARS}).")
+         print(f"[BLOCKADE]: Script volume ({total}) is below safety floor ({MIN_VOLUME_CHARS}).")
          print("   Reason: Potential over-summarization detected.")
          sys.exit(1)
     else:
-         print(f"✅ Volume OK: {total} chars")
+         print(f"[OK]: Volume OK: {total} chars")
 
-    # --- LAYER 3: RATIO BLOCKADE ---
-    print(f"\n📐 [Layer 3] Golden Ratio Check (1:7:2)...")
+    # --- LAYER 3: RATIO BLOCKADE (1:8:1) ---
+    print(f"\n[Layer 3] Golden Ratio Check (1:8:1)...")
     
     ratio_ki = (len_ki / total) * 100
     ratio_sho = (len_sho / total) * 100
     ratio_ten = (len_ten / total) * 100
     
     print("-" * 40)
-    print(f"📊 Structural Analysis (Total: {total} chars)")
+    print(f"[Analysis]: Structural Analysis (Total: {total} chars)")
     print(f"   起 (Ki):       {ratio_ki:.1f}%  (Target: 10% ±5%)")
-    print(f"   承 (Sho):      {ratio_sho:.1f}%  (Target: 70% ±10%)")
-    print(f"   転結 (Ten):    {ratio_ten:.1f}%  (Target: 20% ±5%)")
+    print(f"   承 (Sho):      {ratio_sho:.1f}%  (Target: 80% ±10%)")
+    print(f"   転結 (Ten):    {ratio_ten:.1f}%  (Target: 10% ±5%)")
     print("-" * 40)
     
     errors = []
     
     # KI Logic (5-15%)
     if not (5 <= ratio_ki <= 15):
-        errors.append(f"⚠️ Structure Violation: 'Ki' is {ratio_ki:.1f}%. Must be between 5-15%.")
+        errors.append(f"[Structure Violation]: 'Ki' is {ratio_ki:.1f}%. Must be between 5-15%.")
         
-    # SHO Logic (60-80%)
-    if not (60 <= ratio_sho <= 80):
-        errors.append(f"⚠️ Structure Violation: 'Sho' is {ratio_sho:.1f}%. Must be between 60-80%.")
+    # SHO Logic (70-90%) - Massive Body
+    if not (70 <= ratio_sho <= 90):
+        errors.append(f"[Structure Violation]: 'Sho' is {ratio_sho:.1f}%. Must be between 70-90%.")
         
-    # TEN Logic (15-25%)
-    if not (15 <= ratio_ten <= 25):
-        errors.append(f"⚠️ Structure Violation: 'Ten-Ketsu' is {ratio_ten:.1f}%. Must be between 15-25%.")
+    # TEN Logic (5-15%) - Short & Impactful
+    if not (5 <= ratio_ten <= 15):
+        errors.append(f"[Warning]: Structure Violation: 'Ten-Ketsu' is {ratio_ten:.1f}%. Must be between 5-15%.")
         
     if errors:
         for e in errors:
             print(e)
-        print("\n❌ VALIDATION FAILED. Please resize sections to match the Golden Ratio.")
+        print("\n[FAILED]: VALIDATION FAILED. Please resize sections to match the Golden Ratio.")
         sys.exit(1)
     else:
-        print("✅ VALIDATION PASSED. Golden Ratio (1:7:2) Achieved.")
+        print("[PASSED]: VALIDATION PASSED. Golden Ratio (1:8:1) Achieved.")
         sys.exit(0)
 
 if __name__ == "__main__":
