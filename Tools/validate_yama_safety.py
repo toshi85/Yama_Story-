@@ -2,7 +2,8 @@ import sys
 import re
 import os
 
-LOG_FILE = "yama_safety_validation.log"
+# Configuration
+LOG_FILE = "/Users/tosimasa/Desktop/Antigravity/Yama_Story/yama_safety_validation.log"
 
 # Strict Prohibited Words (Demonetization Risk & Style)
 BANNED_WORDS = {
