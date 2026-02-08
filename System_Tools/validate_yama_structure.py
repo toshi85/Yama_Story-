@@ -86,41 +86,41 @@ def validate_structure(file_path):
     else:
          print(f"[OK]: Volume OK: {total} chars")
 
-    # --- LAYER 3: RATIO BLOCKADE (1:8:1) ---
-    print(f"\n[Layer 3] Golden Ratio Check (1:8:1)...")
-    
+    # --- LAYER 3: RATIO BLOCKADE (1:7:2) ---
+    print(f"\n[Layer 3] Golden Ratio Check (1:7:2)...")
+
     ratio_ki = (len_ki / total) * 100
     ratio_sho = (len_sho / total) * 100
     ratio_ten = (len_ten / total) * 100
-    
+
     print("-" * 40)
     print(f"[Analysis]: Structural Analysis (Total: {total} chars)")
     print(f"   起 (Ki):       {ratio_ki:.1f}%  (Target: 10% ±5%)")
-    print(f"   承 (Sho):      {ratio_sho:.1f}%  (Target: 80% ±10%)")
-    print(f"   転結 (Ten):    {ratio_ten:.1f}%  (Target: 10% ±5%)")
+    print(f"   承 (Sho):      {ratio_sho:.1f}%  (Target: 70% ±15%)")
+    print(f"   転結 (Ten):    {ratio_ten:.1f}%  (Target: 20% ±8%)")
     print("-" * 40)
-    
+
     errors = []
-    
+
     # KI Logic (5-15%)
     if not (5 <= ratio_ki <= 15):
         errors.append(f"[Structure Violation]: 'Ki' is {ratio_ki:.1f}%. Must be between 5-15%.")
-        
-    # SHO Logic (70-90%) - Massive Body
-    if not (70 <= ratio_sho <= 90):
-        errors.append(f"[Structure Violation]: 'Sho' is {ratio_sho:.1f}%. Must be between 70-90%.")
-        
-    # TEN Logic (5-15%) - Short & Impactful
-    if not (5 <= ratio_ten <= 15):
-        errors.append(f"[Warning]: Structure Violation: 'Ten-Ketsu' is {ratio_ten:.1f}%. Must be between 5-15%.")
-        
+
+    # SHO Logic (55-85%)
+    if not (55 <= ratio_sho <= 85):
+        errors.append(f"[Structure Violation]: 'Sho' is {ratio_sho:.1f}%. Must be between 55-85%.")
+
+    # TEN Logic (12-32%)
+    if not (12 <= ratio_ten <= 32):
+        errors.append(f"[Structure Violation]: 'Ten-Ketsu' is {ratio_ten:.1f}%. Must be between 12-32%.")
+
     if errors:
         for e in errors:
             print(e)
         print("\n[FAILED]: VALIDATION FAILED. Please resize sections to match the Golden Ratio.")
         sys.exit(1)
     else:
-        print("[PASSED]: VALIDATION PASSED. Golden Ratio (1:8:1) Achieved.")
+        print("[PASSED]: VALIDATION PASSED. Golden Ratio (1:7:2) Achieved.")
         sys.exit(0)
 
 if __name__ == "__main__":
