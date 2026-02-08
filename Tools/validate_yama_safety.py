@@ -39,6 +39,22 @@ BANNED_WORDS = {
     r"やつ": "NG: 'やつ'. Use Name.",
 }
 
+# --- SENSATIONALISM CHECK (Warning Level) ---
+SENSATIONAL_WORDS = {
+    r"衝撃": "WARN: '衝撃' in script body may trigger clickbait detection.",
+    r"驚愕": "WARN: '驚愕' is sensational. Use factual description.",
+    r"ヤバい": "WARN: 'ヤバい' is too casual for educational documentary.",
+    r"地獄絵図": "WARN: '地獄絵図' is sensational. Use '悲惨な状況'.",
+    r"グロ": "WARN: 'グロ' risks age-restriction. Use clinical description.",
+    r"閲覧注意": "WARN: '閲覧注意' in script may trigger content warning flags.",
+}
+
+# --- VICTIM DIGNITY CHECK ---
+DIGNITY_NEGATIVE_WORDS = [
+    "愚かな", "馬鹿な", "無謀な", "身勝手な", "自業自得",
+    "怠慢な", "無能な", "迂闊な", "軽率な",
+]
+
 # --- CONSISTENCY DICTIONARY (Standardized Readings) ---
 # Format: { "KeyTerm": "CorrectReading/String" }
 # The validator ensures that if 'KeyTerm' appears, it matches the strictly defined string.
@@ -124,9 +140,23 @@ def validate_file(file_path):
                     if match_reading:
                         actual_reading = match_reading.group(1)
                         expected_reading = correct_form.split("（")[1].replace("）", "")
-                        
+
                         if actual_reading != expected_reading:
                             errors.append(f"Line {line_num}: Inconsistent Reading for '{term}'. Found '（{actual_reading}）', expected '（{expected_reading}）'.")
+
+            # 4. SENSATIONALISM CHECK (Warning)
+            for pattern, reason in SENSATIONAL_WORDS.items():
+                if re.search(pattern, line):
+                    errors.append(f"Line {line_num}: {reason}\n   -> \"{stripped_line}\"")
+
+            # 5. VICTIM DIGNITY CHECK
+            for neg_word in DIGNITY_NEGATIVE_WORDS:
+                if neg_word in stripped_line:
+                    # Check if a person's name (katakana or kanji name) is near the negative word
+                    # Simple heuristic: same line contains both a negative descriptor and a proper noun pattern
+                    has_name = bool(re.search(r'[ァ-ヶー]{2,}', stripped_line)) or bool(re.search(r'[A-Z][a-z]+', stripped_line))
+                    if has_name:
+                        errors.append(f"Line {line_num}: Victim dignity concern: '{neg_word}' used near a proper name. Rephrase to respect victims.\n   -> \"{stripped_line}\"")
 
     if errors:
         log_print(f"[FAILED]: Found {len(errors)} issues.")
