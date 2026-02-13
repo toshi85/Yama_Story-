@@ -1,0 +1,4158 @@
+# 甘粛省ウルトラマラソン遭難事故 完全台本（ユーザー版）
+
+## 台本構成概要
+
+**総ASSET数: 178**（5秒ルール準拠）
+**想定ナレーション時間: 約45〜50分**（台本セリフ総文字数 約18,000字 ÷ 毎分350字 = 約51分）
+**撮影時間配分:**
+- キャラアニメーション（Lovart 1:1 + CapCut編集）: 約70 ASSET
+- 背景静止画（Lovart 16:9 + Ken Burns）: 約60 ASSET
+- AI動画（Google Flow）: 12 ASSET
+- Google Earth: 約15 ASSET
+- 図解アニメーション: 約9 ASSET
+- テキスト演出: 約12 ASSET
+
+**5秒ルールの徹底:**
+全てのASSETは**最長5秒以内**。ナレーションが5秒を超える場合は複数ASSETに分割し、視覚的変化を担保する。
+
+**音響設計:**
+- BGM: 全編通して極小音量。ナレーションの邪魔をしない。
+- SE: 各シーンの没入感を高めるポイント使用。ナレーションと被らせない。
+
+---
+
+## キャラクターベースライン設定
+
+以下のキャラクターは台本全体で繰り返し登場するため、**Lovartでキャラ生成時の統一プロンプト**として参照する。
+
+### CHAR-01: 張（チャン）28歳
+**実写参考:** なし（架空のエピソード人物）
+**設定:** 建設作業員。素朴で純朴な好青年。恋人へのプロポーズ資金を求めて参加。
+**Lovartベースプロンプト（1:1）:**
+```
+Young Chinese man, 28 years old, Zhang. Lean athletic build, sun-tanned skin, short black hair. Hopeful gentle expression with large expressive eyes. Wearing casual T-shirt or running gear depending on scene. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, simple shading. Full body, medium shot. White background for transparency. 1:1 aspect ratio. Generate 5 images.
+```
+
+### CHAR-02: 李（リー）52歳
+**実写参考:** なし（架空のエピソード人物）
+**設定:** ベテラン市民ランナー。娘への愛情で参加。体力の限界を感じつつも賞金のために挑戦。
+**Lovartベースプロンプト（1:1）:**
+```
+Middle-aged Chinese man, 52 years old, Li. Weathered face with deep wrinkles, determined eyes, athletic but aging body. Wearing modest running clothes with knee brace on right leg. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing determination. Full body. White background for transparency. 1:1 aspect ratio. Generate 5 images.
+```
+
+### CHAR-03: 梁晶（リャン・ジン）
+**実写参考:** https://www.thepaper.cn/newsDetail_forward_12780425（澎湃新闻の記事より実写写真あり）
+【著作権確認】使用前に以下を確認:
+① クリエイティブ・コモンズライセンスまたはフェアユース適用可能か
+② YouTube コンテンツポリシー（再利用コンテンツ）に抵触しないか
+③ 報道目的の引用として適切な範囲か
+④ 権利者のクレジット表記が必要か
+※ 確認できない場合はLovartフォールバックプロンプトを使用
+**設定:** 中国最強の鉄人。400kmレース完走経験。妻と2歳の娘がいる。ヘッドライト装着が特徴。
+**Lovartベースプロンプト（1:1）:**
+```
+Chinese ultra-marathon champion, Liang Jing. Muscular lean physique, fierce determined expression with large expressive eyes. Wearing minimal racing gear (T-shirt and shorts). Headlamp on forehead (distinctive feature). Confident strong presence. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors. Full body. White background for transparency. 1:1 aspect ratio. Generate 5 images.
+```
+
+### CHAR-04: 黄関軍（ホアン・グァンジュン）
+**実写参考:** https://baijiahao.baidu.com/s?id=1700651489408633886（百度百家号の記事より実写写真あり）
+【著作権確認】使用前に以下を確認:
+① クリエイティブ・コモンズライセンスまたはフェアユース適用可能か
+② YouTube コンテンツポリシー（再利用コンテンツ）に抵触しないか
+③ 報道目的の引用として適切な範囲か
+④ 権利者のクレジット表記が必要か
+※ 確認できない場合はLovartフォールバックプロンプトを使用
+**設定:** 聴覚障害を持つマラソンランナー。全国大会優勝経験。カップ麺生活の貧困状態。
+**Lovartベースプロンプト（1:1）:**
+```
+Chinese deaf marathon runner, Huang Guanjun. Humble quiet expression of deep focus, large expressive eyes showing inner strength. Hearing-impaired (no hearing aids visible). Wearing old slightly worn running clothes. Athletic stride. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors. Full body. White background for transparency. 1:1 aspect ratio. Generate 5 images.
+```
+
+### CHAR-05: 朱克銘（ジュー・クーミン）49歳
+**実写参考:** https://www.sohu.com/a/468133775_121106654（搜狐新闻の記事より実写写真あり）
+【著作権確認】使用前に以下を確認:
+① クリエイティブ・コモンズライセンスまたはフェアユース適用可能か
+② YouTube コンテンツポリシー（再利用コンテンツ）に抵触しないか
+③ 報道目的の引用として適切な範囲か
+④ 権利者のクレジット表記が必要か
+※ 確認できない場合はLovartフォールバックプロンプトを使用
+**設定:** 地元の羊飼い。山で生まれ育った。6名のランナーを単独救助した英雄。
+**Lovartベースプロンプト（1:1）:**
+```
+Chinese shepherd, Zhu Keming, 49 years old. Tough weathered face, calm determined eyes, large expressive eyes showing quiet heroism. Thick heavy coat, sturdy build. Practical outdoor clothing. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors. Full body. White background for transparency. 1:1 aspect ratio. Generate 5 images.
+```
+
+---
+
+## Section 1: フック（生還率0%の衝撃）
+
+### ASSET-001 | 0:00-0:05（5秒）
+**ナレーション（60文字）:**
+ナレーター: ここに、一つの不可解な事実があります。
+
+**制作メモ:**
+黒背景に白文字でフェードイン: 「生還率 0%」。文字が徐々に拡大しながら不気味に浮かび上がる。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Pure black background. Simple minimalist design. Photorealistic texture, subtle grain. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 黒背景に白文字「生還率 0%」をテキストレイヤーで配置
+- 0s: テキストは不透明度0%、縮小率80%
+- 0s〜3s: 不透明度0%→100%、縮小率80%→120%でズームイン
+- 3s〜5s: 120%で静止、微かに震える（±1px）
+
+**SE:**
+ヒュオオオ…という風の環境音のみ（BGMなし）
+
+---
+
+### ASSET-002 | 0:05-0:10（5秒）
+**ナレーション（0文字 / ビジュアルのみ）:**
+[無音]
+
+**制作メモ:**
+荒涼とした岩場に散乱する21足のスポーツシューズ。強い風が砂埃を巻き上げている。人間はいない。映画のような暗いトーン、ローアングル、高コントラスト。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Desolate rocky desert terrain with 21 running shoes scattered across barren ground. Strong wind effect visible with dust and sand. No people visible. Low angle shot, cinematic dark moody tone, high contrast. Desaturated color palette with blue-grey tones. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示（Ken Burns）:**
+- 0s〜5s: ゆっくり右へパン（画面の1/3分スクロール）
+- 全体に砂埃パーティクルエフェクトを重ねる
+
+**SE:**
+風の音（ゴォォォ…）が徐々に強くなる
+
+---
+
+### ASSET-003 | 0:10-0:15（5秒）
+**ナレーション（95文字）:**
+ナレーター: 中国・甘粛省（かんしゅくしょう）。黄河が流れるこの乾燥した大地で、あるマラソン大会が開かれました。
+
+**制作メモ:**
+Google Earthで宇宙空間に浮かぶ地球から、中国大陸、甘粛省、黄河石林へ一気にズームイン。
+
+**Google Earthアニメーション:**
+- 開始座標: 宇宙（Altitude: 10000km）
+- 終了座標: 36°53'00"N 104°18'00"E（黄河石林付近）Altitude: 2km
+- カメラ: 一気にズームイン、最後はチルト45°で地形を見せる
+- 所要時間: 5秒
+
+**SE:**
+なし（ナレーションのみ）
+
+---
+
+### ASSET-004 | 0:15-0:20（5秒）
+**ナレーション（72文字）:**
+ナレーター: そしてレース終了後、21人もの尊い命が失われることに、、
+
+**制作メモ:**
+トップランナーたちが倒れているシルエット。霧の中に浮かぶ、倒れ伏すランナーたちの黒いシルエット。抽象的で不気味なイメージ。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Silhouettes of fallen runners lying on the ground, shrouded in thick fog. Abstract and eerie image. Dark moody atmosphere, high contrast black shapes against grey misty background. No faces visible, only vague human forms. Photorealistic fog effects with cinematic lighting. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 背景をゆっくり左→右にスクロール（5秒で半画面分）
+- 全体に霧パーティクル（白い半透明）を重ねる
+
+**SE:**
+ごくごく小さな、心臓の鼓動のような低音（ドクン…ドクン…）
+
+---
+
+### ASSET-005 | 0:20-0:25（5秒）
+**ナレーション（96文字）:**
+ナレーター: 亡くなった方達には、ある奇妙な、そして残酷な「共通点」が発見されています。
+
+**制作メモ:**
+黒背景に赤い文字で「共通点」の文字が浮かび上がる。文字が血のように滲む演出。
+
+**CapCut編集指示:**
+- 黒背景に赤文字「共通点」をテキストレイヤーで配置
+- 0s〜3s: 文字が不透明度0%→100%でフェードイン
+- 3s〜5s: 文字の周囲に赤い滲みエフェクト（血のイメージ）
+
+**SE:**
+不穏な低音ドローン（ブォォォン…）
+
+---
+
+### ASSET-006 | 0:25-0:30（5秒）
+**ナレーション（119文字）:**
+ナレーター: それは、全員がレースの先頭を走っていた「最強のエリート選手たち」だった、ということです。
+
+**制作メモ:**
+トップランナーたちが全速力で走るシーン（スローモーション）。汗を飛ばしながら必死の形相。
+
+**AI動画プロンプト（Google Flow）:**
+```
+Elite marathon runners sprinting at full speed, slow-motion shot. Intense determined expressions, sweat flying off their faces. Dynamic running poses, muscular athletic bodies. Shot from side angle, panning to follow runners. Desert mountain race setting with rocky terrain in background. Cinematic lighting, high contrast. Photorealistic, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
+**SE:**
+重い足音（ドスッドスッドスッ…）+ 激しい呼吸音
+
+---
+
+### ASSET-007 | 0:30-0:35（5秒）
+**ナレーション（103文字）:**
+ナレーター: 逆に、後方を走っていた足の遅い市民ランナーたちは、その多くが生還を果たしています。
+
+**制作メモ:**
+ゆっくり走る市民ランナーたち。笑顔で談笑しながら走る余裕のある姿。
+
+**キャラアニメーション:**
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+```
+Group of casual citizen marathon runners jogging happily. Diverse ages and body types. Friendly smiles, chatting while running. Wearing colorful casual running gear. Full body group shot. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Bright sunny outdoor marathon course. Wide road with gentle countryside scenery. Warm color tones, soft natural lighting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 背景を右→左にゆっくりスクロール（5秒で1/4画面分）でランニングを表現
+- キャラを上下に微振動（±3px、0.4秒周期）で走りの動きを表現
+
+**SE:**
+軽快な足音（タタタタ…）+ 笑い声（遠く）
+
+---
+
+### ASSET-008 | 0:35-0:40（5秒）
+**ナレーション（128文字）:**
+ナレーター: なぜ体力があり、経験も豊富で、誰よりも強靭な肉体を持っていたはずの選手が真っ先に力尽きたのか。
+
+**制作メモ:**
+エリート選手が倒れ込むシーン。前のめりに崩れ落ちる瞬間（スローモーション）。
+
+**キャラアニメーション:**
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+```
+Elite marathon runner collapsing forward onto knees. Exhausted pained expression, hands reaching out to break fall. Athletic muscular build, wearing minimal racing gear. Dramatic falling pose. Full body. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing agony. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Desert mountain trail race setting. Rocky barren terrain. Dramatic lighting from above, dust particles in air. Dark moody tones, high contrast. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置（立ちポーズ）
+- 0s〜2.5s: キャラの不透明度100%、わずかに揺れる（±5px）
+- 2.5s: ホワイトフラッシュ → 倒れポーズ画像に差し替え
+- 2.5s〜5s: 倒れポーズ、微揺れ（±2px）
+
+**SE:**
+ドサッという重い倒れる音 + 苦しい呼吸「ハァッ…ハァッ…」
+
+---
+
+### ASSET-009 | 0:40-0:45（5秒）
+**ナレーション（84文字）:**
+ナレーター: そして、なぜ一般ランナーは生き延びたのか？
+
+**制作メモ:**
+一般ランナーたちが無事にゴールする様子。安堵の表情。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Marathon finish line with casual runners crossing safely. Relief and joy on their faces. Medical tents and support staff in background. Warm afternoon light. Positive hopeful atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 背景を右→左にゆっくりスクロール（5秒で1/4画面分）
+- ゴールテープが切れる瞬間の静止画を3秒時点で一瞬フラッシュ
+
+**SE:**
+歓声（遠く）「ワァー！」
+
+---
+
+### ASSET-010 | 0:45-0:50（5秒）
+**ナレーション（116文字）:**
+ナレーター: その答えは、選手たちがスタートラインに立つ前、ロッカーに置いてきた「たった一枚の布切れ」にありました。
+
+**制作メモ:**
+ロッカーに畳んだウインドブレーカーをしまい、鍵をかけるランナーの手元のクローズアップ。金属音「カチャリ」が響く。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of folded windbreaker jacket inside a metal locker. Cool blue metallic interior with shallow depth of field. Key inserted in locker door keyhole. Cinematic dramatic lighting. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示（Ken Burns）:**
+- 0s〜3s: ウインドブレーカーにゆっくりズームイン（1.0→1.3倍）
+- 3s〜5s: 鍵穴部分にフォーカス移動（パン）
+
+**SE:**
+服をたたむ音（カサカサ）→ ロッカーのドア「ガチャン」→ 鍵を回す「カチャリ」
+
+---
+
+### ASSET-011 | 0:50-0:55（5秒）
+**ナレーション（0文字 / タイトル表示）:**
+[無音]
+
+**制作メモ:**
+タイトル表示「エリートのパラドックス 〜強さが仇となった、生還率0%の罠〜」。文字が岩肌のテクスチャで浮かび上がる。
+
+**CapCut編集指示:**
+- 黒背景に岩肌テクスチャの白文字でタイトルを配置
+- 0s〜3s: 文字が下から上にスライドイン（Y軸+200px→0px）
+- 3s〜5s: 文字が微かに震える（±1px）
+
+**SE:**
+ドォォォン…という重低音（タイトル登場に合わせて）
+
+---
+
+**Section 1 サマリー:**
+- 総ASSET数: 11
+- ナレーション総文字数: 約873文字
+- 構成比: Ken Burns静止画18%、AI動画9%、キャラアニメーション18%、テキスト演出27%、背景静止画28%
+- AI動画: ASSET-006
+- 5秒ルール遵守: 100%
+
+---
+
+## Section 2: 誰がために走るのか（被害者の深掘り）
+
+### ASSET-012 | 0:55-1:00（5秒）
+**ナレーション（104文字）:**
+ナレーター: 2021年5月22日。中国北西部、甘粛省・白銀（パイイン）市で、172名にも及ぶ大規模なマラソン大会が開催されました。
+
+**制作メモ:**
+甘粛省白銀市の市街地から、周辺の乾燥した農村地帯へパン。
+
+**Google Earthアニメーション:**
+- 開始座標: 36°32'00"N 104°10'00"E（白銀市街地）Altitude: 5km
+- カメラ: 市街地を俯瞰 → ゆっくりパン（北西方向へ）→ 周辺の乾燥地帯を見せる
+- チルト: 45°（地形の起伏を見せる）
+- 所要時間: 5秒
+
+**SE:**
+なし（ナレーションのみ）
+
+---
+
+### ASSET-013 | 1:00-1:05（5秒）
+**ナレーション（98文字）:**
+ナレーター: マラソン大会と聞くと、趣味で楽しむものという印象があるかもしれません。
+
+**制作メモ:**
+日本の市民マラソン大会の様子。笑顔で走る参加者たち。楽しそうな雰囲気。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Japanese city marathon event with cheerful runners enjoying the race. Bright sunny day, colorful running gear. Spectators cheering from sidelines. Festive fun atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 背景を左→右にゆっくりスクロール（5秒で1/4画面分）
+
+**SE:**
+歓声（遠く）+ 拍手音
+
+---
+
+### ASSET-014 | 1:05-1:10（5秒）
+**ナレーション（95文字）:**
+ナレーター: しかし、この大会の参加者たちは生活をかけた一大勝負と考えていたのです。
+
+**制作メモ:**
+甘粛省の貧困地域の様子。質素な住居、干からびた大地。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Poor rural area in Gansu Province, China. Simple modest houses, dry cracked earth, sparse vegetation. Harsh living conditions visible. Desaturated color palette, documentary realism. Overcast grey sky. Photorealistic, shot on RED camera. Somber atmosphere. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 背景を右→左にゆっくりスクロール（5秒で1/4画面分）
+- 全体に若干の彩度低下フィルター
+
+**SE:**
+風の音（静かに）
+
+---
+
+### ASSET-015 | 1:10-1:15（5秒）
+**ナレーション（87文字）:**
+ナレーター: その理由は、賞金。完走すれば、全員に一律1600元（約2万8000円）がもらえる大会でした。
+
+**制作メモ:**
+大会ポスターのクローズアップ。「完走賞: 1600元」の文字が赤く強調されている。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Marathon event poster close-up showing prize money details. Bold red text "1600 RMB Completion Prize" prominently displayed. Chinese text, official government-sponsored event design. Slightly worn poster texture. Photorealistic, shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 0s〜2s: ポスター全体を映す
+- 2s〜5s: 「1600元」の文字部分にズームイン（1.0→1.5倍）
+
+**SE:**
+なし
+
+---
+
+### ASSET-016 | 1:15-1:20（5秒）
+**ナレーション（118文字）:**
+ナレーター: 「たったの2万8000円？」と思うかもしれませんが、当時のこの地域の人々の月給とほぼ同額の金額だったのです。
+
+**制作メモ:**
+1ヶ月分の給料明細書のイメージ。金額「1600元」と「完走賞: 1600元」が並んで表示される。
+
+**CapCut編集指示:**
+- 黒背景に2つの書類を並べて表示
+- 左: 給料明細（月給: 1600元）
+- 右: 大会ポスター（完走賞: 1600元）
+- 2つの「1600元」の文字を赤枠でハイライト
+
+**SE:**
+電卓のボタン音「ピッピッピッ」
+
+---
+
+### ASSET-017 | 1:20-1:25（5秒）
+**ナレーション（73文字）:**
+ナレーター: 「完走すればひと月分の給料がまるまるもらえる」熱狂しないわけがありません。
+
+**制作メモ:**
+スタートライン前の興奮した参加者たち。拳を握りしめ、気合を入れる様子。
+
+**キャラアニメーション:**
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+```
+Group of excited marathon runners at starting line pumping fists. Intense focused expressions, nervous energy. Diverse ages and builds, wearing racing gear. Full body group shot. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing excitement. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Marathon starting line area. Starting arch banner visible. Early morning light with slight haze. Excited pre-race atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜5s: キャラを上下に元気よく揺らす（±5px、0.5秒周期）で興奮を表現
+- 背景をゆっくり右→左にスクロール
+
+**SE:**
+ざわめき声（遠く）+ 深呼吸の音
+
+---
+
+### ASSET-018 | 1:25-1:30（5秒）
+**ナレーション（82文字）:**
+ナレーター: 張（チャン）さん、28歳も賞金目当てで参加した人のひとりです。
+
+**制作メモ:**
+CHAR-01（張）の全身立ち絵。希望に満ちた表情。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-01）— Lovart 1:1（背景透過用）
+```
+[CHAR-01 baseline reference] Zhang standing in neutral pose with gentle hopeful smile. Lean athletic build, sun-tanned skin, short black hair. Wearing casual T-shirt and pants. Full body, medium shot. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Simple Chinese apartment building exterior. Morning light. Urban poor neighborhood with modest architecture. Documentary realism. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜5s: キャラ全体をゆっくり拡大（1.0→1.1）で寄りの演出
+- わずかに微揺れ（±2px）
+
+**SE:**
+なし
+
+---
+
+### ASSET-019 | 1:30-1:35（5秒）
+**ナレーション（106文字）:**
+ナレーター: チャンさんはこの日のために、建設現場での激しい労働の合間を縫ってトレーニングを積んできました。
+
+**制作メモ:**
+CHAR-01（張）がランニングウェアに着替えるシーン。作業着→ランニングウェア。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-01）— Lovart 1:1（背景透過用）
+```
+[CHAR-01 reference] Zhang changing clothes, pulling off work uniform shirt and revealing running T-shirt underneath. Athletic lean build visible. Determined expression. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Small modest apartment room interior. Work uniform hanging on wall, running shoes on floor. Warm afternoon light through small window. Simple furniture. Photorealistic interior, natural documentary lighting. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s: 作業着姿（ポーズA）
+- 2.5s: 一瞬ホワイトフラッシュ
+- 2.5s〜5s: ランニングウェア姿（ポーズB）に差し替え
+
+**SE:**
+服を脱ぐ音「ガサッ」→ フラッシュ時「シュパッ」
+
+---
+
+### ASSET-020 | 1:35-1:40（5秒）
+**ナレーション（83文字）:**
+ナレーター: 獲得した賞金で恋人にプロポーズするための指輪を買うつもりだったのです。
+
+**制作メモ:**
+CHAR-01（張）が指輪を見つめるシーン。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-01）— Lovart 1:1（背景透過用）
+```
+[CHAR-01 reference] Zhang standing, holding a small ring up with right hand, gentle hopeful smile. Lean athletic build. Wearing casual T-shirt and pants. Full body, medium shot. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing tenderness. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Simple modest Chinese apartment room interior. Warm sunset light streaming through a small window. Sparse furniture. Dust particles floating in golden light beam. Warm nostalgic atmosphere, soft golden-orange palette. Photorealistic interior, natural documentary lighting. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央やや左に配置（窓の前）
+- 0s〜3s: キャラ全体をゆっくり拡大（1.0→1.15）で寄りの演出
+- 2s時点で指輪付近にレンズフレア/光エフェクトをじわっと発光させる
+- 3s〜5s: 拡大を維持したまま微揺れ（±2px）で静かな余韻
+
+**SE:**
+なし（静寂で感情を演出）
+
+---
+
+### ASSET-021 | 1:40-1:45（5秒）
+**ナレーション（92文字）:**
+ナレーター: 「ゴールしたら、一番に恋人に電話するんだ」スタート前、チャンさんは少し照れくさそうに、そう友人に語っていたといいます。
+
+**制作メモ:**
+スマホの待ち受け画面。笑顔のカップルの写真。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Smartphone lock screen showing photo of happy young Chinese couple smiling together. Bright cheerful photo. Phone screen UI visible with time and date. Photorealistic smartphone screen, soft bokeh background. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- スマホ画面をゆっくりズームイン（1.0→1.3倍、5秒かけて）
+- 2s時点でスマホの画面が一瞬明るく光る
+
+**SE:**
+スマホのロック解除音「ピロロン♪」
+
+---
+
+### ASSET-022 | 1:45-1:50（5秒）
+**ナレーション（79文字）:**
+ナレーター: しかし、その瞬間がおとずれることは、二度とありませんでした、、
+
+**制作メモ:**
+スマホ画面に「発信中...」の文字が出るが、そのまま暗転する。
+
+**AI動画プロンプト（Google Flow）:**
+```
+Smartphone screen showing "Calling..." text in Chinese characters. Screen brightness gradually dimming to complete black. Phone held in trembling hand. Shallow depth of field, dark background. Emotional cinematic moment. The screen light slowly fades to total darkness. Photorealistic, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
+**SE:**
+発信音「プルルル…」→ 途中でブツッと途切れる
+
+---
+
+### ASSET-023 | 1:50-1:55（5秒）
+**ナレーション（71文字）:**
+ナレーター: また、李（リー）さん、52歳。ベテランの市民ランナーではありましたが、
+
+**制作メモ:**
+CHAR-02（李）が屈伸運動をしているシーン。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-02）— Lovart 1:1（背景透過用）
+```
+[CHAR-02 baseline reference] Li in warm-up stretching pose, bending forward to touch toes. Weathered face with deep wrinkles, determined eyes, knee brace on right leg. Wearing modest running clothes, slightly worn. Athletic but aging body. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Race starting line area with crowds of runners stretching and warming up. Morning sunlight, slightly hazy atmosphere. Starting arch banner visible in background. Colorful running bibs and gear scattered across the scene. No clear individual faces. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央やや右に配置
+- 0s〜2.5s: キャラ全体を上下にゆっくり動かす（Y軸 ±20px、2.5秒で1往復）で屈伸の動きを表現
+- 2.5s: 直立ポーズの別画像に差し替え（Lovartで2ポーズ生成しておく）
+- 2.5s〜5s: 直立状態で微揺れ（±3px）
+- 3s時点で膝ブレース付近に光エフェクトを一瞬入れて注目させる
+
+**SE:**
+なし
+
+---
+
+### ASSET-024 | 1:55-2:00（5秒）
+**ナレーション（86文字）:**
+ナレーター: 年齢による体力の限界を感じていても、賞金のために参加を決意しました。
+
+**制作メモ:**
+CHAR-02（李）が決意を秘めた表情で立っている。膝のサポーターが目立つ。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-02）— Lovart 1:1（背景透過用）
+```
+[CHAR-02 reference] Li standing in determined pose, arms at sides, fists slightly clenched. Weathered face with deep wrinkles, resolute eyes. Knee brace on right leg prominently visible. Wearing modest running clothes. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing determination. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Race starting area, early morning. Runners milling around in background, soft-focus. Warm morning sunlight casting long shadows. Simple outdoor setting with starting arch barely visible. Calm pre-race atmosphere. No clear individual faces. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜5s: ゆっくり拡大（1.0→1.15）で寄りの演出
+- 3s時点で膝のサポーター部分にズームフォーカス（一瞬赤枠でハイライト）
+
+**SE:**
+深い呼吸音「スゥー…ハァー…」
+
+---
+
+### ASSET-025 | 2:00-2:05（5秒）
+**ナレーション（80文字）:**
+ナレーター: リーさんは娘からの手紙をお守り代わりにポケットに入れました。
+
+**制作メモ:**
+CHAR-02（李）が手紙を胸元で見つめるシーン。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-02）— Lovart 1:1（背景透過用）
+```
+[CHAR-02 reference] Li standing, both hands gently holding a small folded letter near chest. Tender emotional expression, eyes looking down at the letter. Weathered face with deep wrinkles. Wearing modest running clothes with visible jacket pocket. Full body, medium shot. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing tenderness. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Race starting area, early morning. Runners milling around in background, soft-focus. Warm morning sunlight casting long shadows. Simple outdoor setting with starting arch barely visible. Calm pre-race atmosphere. No clear individual faces. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 手紙の小さな画像を別レイヤーでキャラの胸元に配置
+- 0s〜2s: 手紙を見つめる（静止、わずかな微揺れのみ）
+- 2s〜4s: 手紙レイヤーをゆっくり下に移動（胸元→ポケットの位置へ、Y軸+60px）
+- 4s〜5s: キャラの顔をわずかに上に動かす（Y軸-10px）で決意の表情に
+
+**SE:**
+紙のカサカサ音
+
+---
+
+### ASSET-026 | 2:05-2:10（5秒）
+**ナレーション（78文字）:**
+ナレーター: 「パパ、がんばって」その拙い文字が、リーさんの背中を押していました。
+
+**制作メモ:**
+子供の字で「パパがんばって」と書かれた手紙のアップ。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of handwritten letter with childish writing in Chinese characters "爸爸加油" (Papa, do your best). Slightly wrinkled paper texture. Pencil writing, uneven characters showing child's handwriting. Warm lighting. Photorealistic paper texture, shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 手紙の画像をゆっくりズームイン（1.0→1.4倍、5秒かけて）
+- 2s時点で「爸爸」の文字部分に一瞬暖色の光エフェクト
+
+**SE:**
+なし（静寂で感情を演出）
+
+---
+
+### ASSET-027 | 2:10-2:15（5秒）
+**ナレーション（76文字）:**
+ナレーター: まさかそれが、娘への遺書になるとは知らずに。
+
+**制作メモ:**
+手紙の画像がゆっくりフェードアウト。暗転していく。
+
+**CapCut編集指示:**
+- 前ASSETの手紙画像を継続使用
+- 0s〜5s: 画面全体がゆっくりフェードアウト（100%→0%）
+- 全体に暗いブルーのカラーグレーディング
+
+**SE:**
+風の音（ヒュウ…）が徐々に大きくなる
+
+---
+
+### ASSET-028 | 2:15-2:20（5秒）
+**ナレーション（85文字）:**
+ナレーター: 選手たちは、それぞれの目的のために、大金を手にしようと意気込んでいました。
+
+**制作メモ:**
+スタートラインに並ぶランナーたち。緊張と期待が入り混じった表情。
+
+**キャラアニメーション:**
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+```
+Group of marathon runners lined up at starting line. Diverse ages and builds, nervous energy, focused expressions. Fidgeting with race bibs. Full body group shot. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Marathon starting line with starting arch banner. Morning light, slight haze. Race setup visible with timing equipment. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜5s: 背景を左→右にゆっくりスクロール（パン効果）
+- キャラに微揺れ（±2px）で緊張感を表現
+
+**SE:**
+ざわめき声（大きく）+ 号砲前のカウントダウン「3…2…1…」（遠くから）
+
+---
+
+### ASSET-029 | 2:20-2:25（5秒）
+**ナレーション（93文字）:**
+ナレーター: しかし、選手たちが足を踏み入れようとしているその場所は、人間が生きて帰れる場所ではなかったのです。
+
+**制作メモ:**
+黄河石林の険しい岩山。不気味な岩の林が続く風景。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Yellow River Stone Forest (Huanghe Shilin) dramatic rock formations. Sharp jagged stone pillars rising from barren desert. Ominous dark moody atmosphere, overcast stormy sky. No people visible. Photorealistic landscape, shot on RED camera. Cinematic wide shot. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 背景を下→上にゆっくりスクロール（5秒で半画面分）で岩山を見上げる視点
+- 全体に暗いブルー・グレーのカラーグレーディング
+
+**SE:**
+不穏な低音ドローン（ブォォォン…）
+
+---
+
+**Section 2 サマリー:**
+- 総ASSET数: 18（ASSET-012〜029）
+- ナレーション総文字数: 約1,571文字
+- 構成比: キャラアニメーション56%、背景静止画22%、AI動画6%、Google Earth6%、テキスト演出10%
+- AI動画: ASSET-022
+- 5秒ルール遵守: 100%
+
+---
+
+## Section 3: 人災の背景
+
+### ASSET-030 | 2:25-2:30（5秒）
+**ナレーション（81文字）:**
+ナレーター: 21人もの尊い命が失われた地獄のマラソン大会。そもそもなぜこの大会は開催されたのでしょうか？
+
+**制作メモ:**
+黒背景に白文字で疑問符「?」が浮かび上がる。
+
+**CapCut編集指示:**
+- 黒背景に巨大な白文字「?」を配置
+- 0s〜3s: 不透明度0%→100%でフェードイン
+- 3s〜5s: 文字が徐々に拡大（1.0→1.2倍）
+
+**SE:**
+なし
+
+---
+
+### ASSET-031 | 2:30-2:35（5秒）
+**ナレーション（75文字）:**
+ナレーター: その背景には、当時の中国が抱えていた「歪み」がありました。
+
+**制作メモ:**
+中国の地図。甘粛省が赤く強調される。
+
+**CapCut編集指示:**
+- 中国全土の地図画像を表示
+- 甘粛省の部分を赤く塗りつぶし
+- 0s〜3s: 地図全体を表示
+- 3s〜5s: 甘粛省部分にズームイン（1.0→1.5倍）
+
+**SE:**
+なし
+
+---
+
+### ASSET-032 | 2:35-2:40（5秒）
+**ナレーション（71文字）:**
+ナレーター: 白銀市（パイイン）は、かつて銅の採掘で栄えた工業都市でした。
+
+**制作メモ:**
+白銀市の古い写真（またはイラスト）。工場が稼働していた繁栄時代。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Historical photo-style image of Baiyin City in its industrial heyday. Active copper mining facilities, smokestacks, busy workers. 1980s-1990s China industrial atmosphere. Slightly faded vintage photo look. Photorealistic, documentary historical style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 画像にセピア調フィルターをかける
+- 全体をゆっくりズームイン（1.0→1.2倍、5秒かけて）
+
+**SE:**
+工場の稼働音（遠く）「ガガガ…」
+
+---
+
+### ASSET-033 | 2:40-2:45（5秒）
+**ナレーション（66文字）:**
+ナレーター: しかし、資源が枯渇するにつれ、街は急速に衰退。
+
+**制作メモ:**
+廃墟となった工場の空撮。錆びた設備、壊れた窓。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Aerial view of abandoned copper factory ruins in Gansu Province. Rusted equipment, broken windows, overgrown weeds. Desolate atmosphere, desaturated color palette. Cinematic lighting, overcast sky. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示（Ken Burns）:**
+- 0s〜5s: ゆっくりズームアウト（1.3→1.0倍）で荒廃した全景を見せる
+- 全体に彩度低下フィルター
+
+**SE:**
+風の音（ヒュオオオ…）+ 金属が軋む音「ギィィ…」
+
+---
+
+### ASSET-034 | 2:45-2:50（5秒）
+**ナレーション（69文字）:**
+ナレーター: 若者は仕事を求めて都会へ移り、残されたのは老人と廃墟だけ。
+
+**制作メモ:**
+シャッター通りとなった商店街。人通りはなく、風でゴミが舞っている。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Deserted Chinese small town shopping street with shuttered storefronts. Faded signs, peeling paint, trash blowing in the wind. Lonely elderly person's silhouette in distance. Grey overcast sky. Photorealistic, shot on RED camera. Somber desolate atmosphere. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 背景を右→左にゆっくりスクロール（5秒で1/3画面分）
+- ゴミが舞うパーティクルエフェクトを追加
+
+**SE:**
+風の音（静かに）+ シャッターが揺れる「ガタガタ…」
+
+---
+
+### ASSET-035 | 2:50-2:55（5秒）
+**ナレーション（61文字）:**
+ナレーター: 焦った地元政府が目をつけたのが、観光業でした。
+
+**制作メモ:**
+地元政府の会議室。役人たちが資料を見ている（イラスト）。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Chinese government office meeting room. Officials sitting around table reviewing tourism development documents. Serious expressions. Fluorescent office lighting. Photorealistic interior, documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 画像をゆっくりズームイン（1.0→1.15倍、5秒かけて）
+
+**SE:**
+書類をめくる音「パサッ」
+
+---
+
+### ASSET-036 | 2:55-3:00（5秒）
+**ナレーション（111文字）:**
+ナレーター: 白銀市には、黄河石林（こうがせきりん）という200万年前の地殻変動が生んだ、剣のように鋭い岩の森があったのです。
+
+**制作メモ:**
+黄河石林の全景。Google Earthで俯瞰。
+
+**Google Earthアニメーション:**
+- 開始座標: 37°11'02"N 104°03'50"E（黄河石林付近）Altitude: 10km
+- カメラ: 上空から俯瞰 → ゆっくりズームイン → 岩の林の特異な地形を見せる
+- チルト: 45°
+- 所要時間: 5秒
+
+**SE:**
+なし
+
+---
+
+### ASSET-037 | 3:00-3:05（5秒）
+**ナレーション（73文字）:**
+ナレーター: 「この絶景を使って人を呼び込むしかない」その思いから企画されたのが、今回のマラソン大会でした。
+
+**制作メモ:**
+大会告知ポスター。豪華なデザイン。「黄河石林マラソン大会」の文字。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Marathon event promotional poster featuring Yellow River Stone Forest dramatic landscape. Bold Chinese text "黄河石林山地马拉松" (Yellow River Stone Forest Mountain Marathon). Professional graphic design, vibrant colors, government-sponsored event branding. Photorealistic poster design. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- ポスター画像をゆっくりズームイン（1.0→1.3倍、5秒かけて）
+- 2s時点で「马拉松」の文字が光るエフェクト
+
+**SE:**
+なし
+
+---
+
+### ASSET-038 | 3:05-3:10（5秒）
+**ナレーション（57文字）:**
+ナレーター: これは、村の生き残りをかけた、最後の賭け。
+
+**制作メモ:**
+賭けのメタファー。サイコロが転がる（スローモーション）。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Single die frozen mid-roll on black background. Dramatic lighting from above, extreme close-up. Shallow depth of field. Cinematic tension. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示（Ken Burns）:**
+- 0s〜5s: サイコロにゆっくりズームイン（1.0→1.4倍）
+- 2s時点で一瞬ホワイトフラッシュ（賭けの瞬間感）
+
+**SE:**
+サイコロが転がる音（カラカラカラ…）
+
+---
+
+### ASSET-039 | 3:10-3:15（5秒）
+**ナレーション（94文字）:**
+ナレーター: だからこそ、「完走者全員に現金支給」という、異例の条件を提示したのです。
+
+**制作メモ:**
+ビルボード風の大会告知ポスター。「賞金1600元（完走賞）」の文字が赤く強調されている。それを見上げる貧しい服装の人々の後ろ姿。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Large billboard displaying marathon prize money announcement "完走奖金1600元" in bold red text. Poor rural people in simple clothing looking up at billboard from below. Low angle shot. Documentary realism. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 背景を下→上にゆっくりスクロール（5秒で1/4画面分）で見上げる視点
+- 「1600元」の文字部分を赤く強調
+
+**SE:**
+ざわめき声（遠く）
+
+---
+
+### ASSET-040 | 3:15-3:20（5秒）
+**ナレーション（92文字）:**
+ナレーター: 絶対に話題にさせて村を活性化させたい。その思いが強くなることで、安全対策の意識が薄れていたのでしょう。
+
+**制作メモ:**
+安全チェックリストに「×」印がつけられていく様子。
+
+**CapCut編集指示:**
+- 白背景に黒文字でチェックリストを表示:
+  - 医療スタッフ配置
+  - AED設置
+  - 天候監視体制
+  - 防寒具義務化
+- 各項目に赤い「×」印が順番につけられていくアニメーション（1秒ごとに1つ）
+
+**SE:**
+ペンで×をつける音「シャッ、シャッ、シャッ」
+
+---
+
+**Section 3 サマリー:**
+- 総ASSET数: 11（ASSET-030〜040）
+- ナレーション総文字数: 約850文字
+- 構成比: 背景静止画36%、Ken Burns静止画18%、Google Earth9%、テキスト演出37%
+- AI動画: なし
+- 5秒ルール遵守: 100%
+
+---
+
+## Section 4: マラソンバブルの正体
+
+### ASSET-041 | 3:20-3:25（5秒）
+**ナレーション（95文字）:**
+ナレーター: 医師や救護スタッフは最小限。AEDもまばら。GPS発信機だけは持たされているが、その信号を監視するスタッフはいない。
+
+**制作メモ:**
+チェックポイントのテント。ボロボロで無人。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Unmanned checkpoint tent at mountain trail. Worn tattered fabric, empty folding table with only water bottles. No staff present. Desolate barren mountain setting. Documentary realism. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 背景をゆっくりズームイン（1.0→1.2倍、5秒かけて）
+- 全体に暗いトーン
+
+**SE:**
+風の音（静かに）+ テントが揺れる音「パタパタ」
+
+---
+
+### ASSET-042 | 3:25-3:30（5秒）
+**ナレーション（91文字）:**
+ナレーター: そんな「見せかけだけの張りぼて」のような大会が、この甘粛省のレースだったのです。
+
+**制作メモ:**
+張りぼてのメタファー。豪華に見える看板の裏側は何もない（イラスト）。
+
+**CapCut編集指示:**
+- 左右2分割画面
+- 左: 豪華な大会ポスター
+- 右: ボロボロの実際のチェックポイント
+- 2s時点で左の画面が崩れ落ちるアニメーション
+
+**SE:**
+崩れる音「ガラガラガラ…」
+
+---
+
+**Section 4 サマリー:**
+- 総ASSET数: 2（ASSET-041〜042）
+- ナレーション総文字数: 約186文字
+- 5秒ルール遵守: 100%
+
+---
+
+## Section 5: 致命的な「リストラ」
+
+### ASSET-043 | 3:30-3:35（5秒）
+**ナレーション（74文字）:**
+ナレーター: 2021年5月22日、運命の朝がやってきます。午前8時の天気予報は「快晴」。
+
+**制作メモ:**
+スタート地点の電光掲示板に「晴れ / 気温20℃」の表示。真っ青な空。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Electronic scoreboard at race starting line displaying weather forecast "Sunny / 20°C" in Chinese characters. Clear blue sky background. Modern LED display. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 電光掲示板をゆっくりズームイン（1.0→1.3倍、5秒かけて）
+- 「晴れ」の文字部分を黄色く強調
+
+**SE:**
+電子音「ピッ」
+
+---
+
+### ASSET-044 | 3:35-3:40（5秒）
+**ナレーション（89文字）:**
+ナレーター: 気温は予報で20度前後まで上がるとされていました。山の天気としては、これ以上ない完璧なコンディションに見えたのです。
+
+**制作メモ:**
+天気予報のグラフ。気温曲線が20℃を指している。
+
+**CapCut編集指示:**
+- 白背景に気温グラフを表示
+- 横軸: 時間（8時〜16時）
+- 縦軸: 気温（0℃〜30℃）
+- 赤い線が20℃付近を推移
+- 0s〜3s: グラフが左から右に描画されるアニメーション
+- 3s〜5s: 「20℃」の部分を緑色の丸でハイライト
+
+**SE:**
+グラフ描画音「シュルルル…」
+
+---
+
+### ASSET-045 | 3:40-3:45（5秒）
+**ナレーション（80文字）:**
+ナレーター: この予報を見て、運営本部は一つの決定をします。「必携装備品リスト」の見直しです。
+
+**制作メモ:**
+書類のクローズアップ。「必携装備品リスト」の見出し。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of official document titled "Required Equipment List" in Chinese characters. Official government letterhead. Clean paper texture. Photorealistic document, shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 書類画像をゆっくりズームイン（1.0→1.5倍、5秒かけて）
+
+**SE:**
+書類をめくる音「パサッ」
+
+---
+
+### ASSET-046 | 3:45-3:50（5秒）
+**ナレーション（85文字）:**
+ナレーター: 本来、山のレースでは、急な天候変化に備えて防寒具の携帯を義務付けるのが常識です。
+
+**制作メモ:**
+防寒具のイラスト。ウインドブレーカー、手袋、帽子が並ぶ。
+
+**CapCut編集指示:**
+- 白背景にウインドブレーカー、手袋、帽子のシルエットを配置
+- 各アイテムに緑色の「✓」マークが順番につけられるアニメーション
+
+**SE:**
+チェック音「ピッ、ピッ、ピッ」
+
+---
+
+### ASSET-047 | 3:50-3:55（5秒）
+**ナレーション（90文字）:**
+ナレーター: しかし、運営は「こんなに天気がいいんだから、推奨でいいだろう」と判断しました。
+
+**制作メモ:**
+装備品チェックリストの書類。「防寒ジャケット」の項目に太い赤線で取り消し線が引かれ、「推奨（Recommended）」のハンコが押される。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Official equipment checklist document with "Windproof Jacket" item crossed out with thick red line. Red rubber stamp saying "Recommended Only" in Chinese characters. Paper texture, pen marks visible. Photorealistic document close-up, shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 0s〜2s: 書類全体を表示
+- 2s: 赤線が引かれるアニメーション（左→右）
+- 3s: 「推奨」のハンコが押されるアニメーション（スタンプのフェードイン+回転）
+
+**SE:**
+ペンで線を引く音「シャーッ」→ ハンコを押す音「ドンッ」
+
+---
+
+### ASSET-048 | 3:55-4:00（5秒）
+**ナレーション（89文字）:**
+ナレーター: 防寒ジャケットが『必携』から外れたことで、ランナーたちは大いに歓迎しました。
+
+**制作メモ:**
+ランナーたちが笑顔で荷物を軽くしている様子。
+
+**キャラアニメーション:**
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+```
+Group of marathon runners smiling with relief, removing heavy jackets from gear bags. Cheerful expressions, lightening their loads happily. Wearing racing gear. Full body group shot. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing relief. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Pre-race preparation area with gear bags and lockers. Morning light, cheerful atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜5s: 背景を左→右にゆっくりスクロール
+- キャラに元気な微揺れ（±3px）
+
+**SE:**
+笑い声（遠く）+ 荷物を置く音「ドサッ」
+
+---
+
+### ASSET-049 | 4:00-4:05（5秒）
+**ナレーション（97文字）:**
+ナレーター: 特に、1秒でも速さを追求するエリート選手たちにとって、重くてかさばる防寒具は「邪魔者」でしかありません。
+
+**制作メモ:**
+CHAR-03（梁晶）が腕組みをして自信満々に立っている。軽装（Tシャツと短パンのみ）。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-03）— Lovart 1:1（背景透過用）
+```
+[CHAR-03 baseline reference] Liang Jing standing confidently with arms crossed, proud smirk. Muscular lean physique. Wearing minimal racing gear (T-shirt and shorts only, no jacket). Headlamp around neck. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing confidence and pride. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Race equipment check area with metal lockers in background. Other runners putting on jackets and rain gear. Morning light, slightly overcast sky visible through open structure. Organized pre-race atmosphere. No clear individual faces. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面左1/3に配置
+- 0s〜2s: 腕組みポーズで静止（自信満々）、わずかに上下揺れ（±2px）
+- 2s〜5s: キャラを左→右にゆっくり移動（画面1/3→2/3の位置へ）で歩き出す演出
+- キャラの周りに他の選手がジャケットを着ている背景との対比を強調
+
+**SE:**
+なし
+
+---
+
+### ASSET-050 | 4:05-4:10（5秒）
+**ナレーション（85文字）:**
+ナレーター: 多くの選手が、命を守る最後の盾となるウインドブレーカーを、ロッカーの中に残すことに、、
+
+**制作メモ:**
+ロッカーに畳んだウインドブレーカーをしまい、鍵をかけるランナーの手元。金属音「カチャリ」が響く。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of bright orange windbreaker jacket neatly folded inside metal locker. Cool metallic interior. Locker door slightly ajar. Cinematic lighting with dramatic shadows. Shallow depth of field. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示（Ken Burns）:**
+- 0s〜3s: ウインドブレーカーにゆっくりズームイン（1.0→1.2倍）
+- 3s〜5s: 画面全体をゆっくり暗くする（不透明度の黒レイヤー 0%→30%）
+
+**SE:**
+服をたたむ音「カサカサ」→ ロッカーのドア「ガチャン」→ 鍵を回す「カチャリ」（響く音質）
+
+---
+
+### ASSET-051 | 4:10-4:15（5秒）
+**ナレーション（81文字）:**
+ナレーター: これが、ランナーたちの運命を分ける決定的な瞬間となったのです。
+
+**制作メモ:**
+ロッカーの鍵がかかる瞬間のスローモーション。鍵穴に鍵が刺さり、回転する。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Extreme close-up of metal key inserted in locker keyhole. Focus on key and lock mechanism. Dark moody lighting with single light source from side. Dramatic cinematic moment. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示（Ken Burns）:**
+- 0s〜5s: 鍵穴部分にゆっくりズームイン（1.0→1.5倍）
+- 3s時点で一瞬暗転（0.2秒）→ 運命の決定感を演出
+
+**SE:**
+鍵が回る音「カチャリ…カチッ」（0.5倍速のスローモーション音）
+
+---
+
+**Section 5 サマリー:**
+- 総ASSET数: 9（ASSET-043〜051）
+- ナレーション総文字数: 約770文字
+- 構成比: 背景静止画33%、Ken Burns静止画22%、キャラアニメーション22%、テキスト演出23%
+- AI動画: なし
+- 5秒ルール遵守: 100%
+
+---
+
+## Section 6: 背負ったもの（エリートたち）
+
+### ASSET-052 | 4:15-4:20（5秒）
+**ナレーション（96文字）:**
+ナレーター: 中国最強の鉄人と呼ばれた男、梁晶（リャン・ジン）さんも、少しでも軽装になるように、Ｔシャツと短パン姿で走ることに。
+
+**制作メモ:**
+CHAR-03（梁晶）の全身立ち絵。軽装で自信に満ちた表情。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-03）— Lovart 1:1（背景透過用）
+```
+[CHAR-03 reference] Liang Jing standing in neutral ready pose. Muscular lean physique, confident determined expression. Wearing minimal racing gear (T-shirt and shorts). Headlamp on forehead. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing fierce determination. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Race starting area with mountains in background. Early morning light. Other runners in soft focus background. Organized pre-race atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜5s: ゆっくり拡大（1.0→1.2倍）で寄りの演出
+- キャラ全体に微かな上下揺れ（±2px）
+
+**SE:**
+なし
+
+---
+
+### ASSET-053 | 4:20-4:25（5秒）
+**ナレーション（104文字）:**
+ナレーター: リャンさんは中国のマラソン界のスーパースターです。過去には400キロのレースを走破したこともあるリャンさんにとって、
+
+**制作メモ:**
+ロッカーの扉が重々しく閉まるスローモーション。伏線の決定打。運命が封印される瞬間。
+
+**AI動画プロンプト（Google Flow）:**
+```
+Slow-motion close-up of metal locker door closing heavily. Inside the locker, a folded bright orange windbreaker visible for a moment before door shuts completely. Final metallic clang as door locks. Dark dramatic lighting, shallow depth of field. The moment of sealing fate. Cinematic tension. Photorealistic, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
+**SE:**
+ロッカーのドアがゆっくり閉まる「ギィィ…ガチャン」（エコーつき）
+
+---
+
+### ASSET-054 | 4:25-4:30（5秒）
+**ナレーション（77文字）:**
+ナレーター: 100キロなど散歩のようなものだったはずです。
+
+**制作メモ:**
+CHAR-03（梁晶）が力強く走るシーン。疾走感のある動き。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-03）— Lovart 1:1（背景透過用）
+```
+[CHAR-03 reference] Liang Jing in dynamic running pose, one foot off ground, arms pumping powerfully. Muscular lean physique, determined fierce expression. Headlamp on forehead. Wearing minimal racing gear (T-shirt and shorts). Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing fierce determination. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Dark night road stretching into distance. Single headlamp beam cutting through darkness ahead. Motion blur on roadside terrain and sparse vegetation. Dark moody atmosphere, cool blue-black tones with single warm light source from center. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 背景を右→左にスクロール（速度: 背景全体が3秒で1画面分移動）で疾走感を演出
+- キャラを上下に微振動（±5px、0.3秒周期）でランニングの上下動を表現
+- ヘッドライト部分に白い光エフェクトを追加、上下動に連動
+
+**SE:**
+重い足音（ドスッドスッドスッ…）
+
+---
+
+### ASSET-055 | 4:30-4:35（5秒）
+**ナレーション（67文字）:**
+ナレーター: リャンさんはスタート前、ビデオ通話で2歳の娘に手を振っていたと言います。
+
+**制作メモ:**
+スマートフォンの画面越しに、笑顔で手を振る梁晶の主観視点。幼い娘が画面の向こうで笑っている。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Smartphone video call screen showing toddler daughter waving happily. Bright cheerful video call UI. Child's innocent smile. Photorealistic smartphone screen, soft bokeh background. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- スマホ画面を表示
+- 2s時点で娘のイラストが手を振るアニメーション（手の部分を上下に動かす）
+
+**SE:**
+ビデオ通話の接続音「ピロロン♪」+ 幼児の笑い声（遠く）
+
+---
+
+### ASSET-056 | 4:35-4:40（5秒）
+**ナレーション（74文字）:**
+ナレーター: そしてもう一人。聴覚障害の王者、黄関軍（ホアン・グァンジュン）。
+
+**制作メモ:**
+CHAR-04（黄関軍）の全身立ち絵。静かな決意を秘めた表情。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-04）— Lovart 1:1（背景透過用）
+```
+[CHAR-04 baseline reference] Huang Guanjun standing in neutral pose. Humble quiet expression of deep focus. Hearing-impaired (no hearing aids visible). Wearing old slightly worn running clothes. Athletic build. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing quiet determination. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Simple rural Chinese setting. Morning light. Modest background. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜5s: ゆっくり拡大（1.0→1.15倍）
+- わずかに微揺れ（±2px）
+
+**SE:**
+なし（意図的な静寂）
+
+---
+
+### ASSET-057 | 4:40-4:45（5秒）
+**ナレーション（95文字）:**
+ナレーター: 耳が聞こえないホアンさんは、そのハンディキャップを脚力だけで跳ね返し、全国大会で優勝するほどの実力者でした。
+
+**制作メモ:**
+CHAR-04（黄関軍）が走るシーン。穏やかだが力強い走り。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-04）— Lovart 1:1（背景透過用）
+```
+[CHAR-04 reference] Huang Guanjun in running pose, side profile view, arms pumping steadily. Humble quiet expression of deep focus. Wearing old slightly worn running clothes. Athletic stride. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing quiet determination. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Empty rural Chinese dirt road at early dawn. Flat farmland stretching to horizon on both sides. Soft pink-orange dawn sky with thin clouds. Morning mist hovering low over fields. Quiet lonely beautiful atmosphere. No other people visible. Photorealistic rural landscape, soft morning light, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面左1/3に配置、横向き（右を向いて走る姿）
+- 背景を右→左にゆっくりスクロール（速度: 5秒で半画面分）で穏やかなランニングを表現
+- キャラを上下に微振動（±3px、0.4秒周期）で走りの動きを表現
+- 朝霧エフェクト（白い半透明パーティクル）をキャラの足元に配置
+
+**SE:**
+なし（意図的な静寂。聴覚障害を表現）
+
+---
+
+### ASSET-058 | 4:45-4:50（5秒）
+**ナレーション（82文字）:**
+ナレーター: しかし、実はホアンさんの生活はカップ麺のみというとても苦しい状況でした。
+
+**制作メモ:**
+カップ麺が並ぶ質素な部屋。黄関軍の実写写真（首からメダルを下げているが、服は少し古びている）。
+【著作権確認】使用前に以下を確認:
+① クリエイティブ・コモンズライセンスまたはフェアユース適用可能か
+② YouTube コンテンツポリシー（再利用コンテンツ）に抵触しないか
+③ 報道目的の引用として適切な範囲か
+④ 権利者のクレジット表記が必要か
+※ 確認できない場合はLovartフォールバックプロンプトを使用
+
+**Lovart背景プロンプト（16:9）:**
+```
+Realistic illustration based on real photo of Huang Guanjun wearing medal around neck but in old worn clothes. Simple modest apartment interior with instant noodle cups visible on table. Humble living conditions. Photorealistic portrait style, natural lighting. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 画像をゆっくりズームイン（1.0→1.2倍、5秒かけて）
+- 全体に若干の彩度低下フィルター
+
+**SE:**
+なし
+
+---
+
+### ASSET-059 | 4:50-4:55（5秒）
+**ナレーション（83文字）:**
+ナレーター: ホアンさんにとってこの大会の優勝賞金は、喉から手が出るほどほしかったことでしょう。
+
+**制作メモ:**
+CHAR-04（黄関軍）が決意を秘めた表情で立っている。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-04）— Lovart 1:1（背景透過用）
+```
+[CHAR-04 reference] Huang Guanjun standing in determined pose, fists clenched at sides. Humble quiet expression with hint of desperation. Wearing old slightly worn running clothes. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing quiet determination and need. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Race starting area, early morning. Simple outdoor setting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜5s: ゆっくり拡大（1.0→1.2倍）で寄りの演出
+- わずかに微揺れ（±2px）
+
+**SE:**
+なし
+
+---
+
+### ASSET-060 | 4:55-5:00（5秒）
+**ナレーション（74文字）:**
+ナレーター: 午前9時。マラソン大会がスタート。172名のランナーたちが、黄河石林の荒野へと飛び出していきました。
+
+**制作メモ:**
+スタートの号砲と共に一斉に走り出すランナーたちの足元。スローモーション。砂煙が舞う。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Ground level close-up of marathon runners' feet at starting line. Multiple pairs of running shoes on sandy ground. Dust and sand particles visible. Low angle shot, tight framing on feet and lower legs. Dramatic cinematic lighting. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示（Ken Burns）:**
+- 0s〜5s: ゆっくり左→右にパン（足元を横にスクロール）
+- 砂埃パーティクルエフェクトを追加
+
+**SE:**
+号砲「バン!!」→ 大勢の足音「ドドドドド…」
+
+---
+
+### ASSET-061 | 5:00-5:05（5秒）
+**ナレーション（0文字 / ビジュアルのみ）:**
+[無音]
+
+**制作メモ:**
+カメラが徐々に上空へ引き、ランナーたちが荒野の点になっていく様子を見せる。
+
+**Lovart背景プロンプト（16:9）:**
+```
+High altitude aerial view of barren Yellow River Stone Forest landscape. Small dots of marathon runners visible spreading across vast desolate terrain. Cinematic wide shot, epic scale. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示（Ken Burns）:**
+- 0s〜5s: ゆっくりズームアウト（1.3→1.0倍）で広大な荒野を見せる
+- 全体に若干のブルー・グレーのカラーグレーディング
+
+**SE:**
+足音が徐々に小さくなる「ドドドド…」→ 風の音だけが残る「ヒュオオオ…」
+
+---
+
+**Section 6 サマリー:**
+- 総ASSET数: 10（ASSET-052〜061）
+- ナレーション総文字数: 約852文字
+- 構成比: キャラアニメーション50%、Ken Burns静止画20%、AI動画10%、背景静止画20%
+- AI動画: ASSET-053
+- 5秒ルール遵守: 100%
+
+---
+
+
+## Section 7: 急変の科学
+
+### ASSET-062 | 5:05-5:10（5秒）
+**ナレーション（80文字）:**
+ナレーター: レース開始から4時間が経過した午後1時。トップ集団は20キロ地点、第2チェックポイント（CP2）を通過しました。
+
+**制作メモ:**
+Google Earthでコース全体を俯瞰。スタート地点からCP2までのルートを赤い線で描画。
+
+**Google Earthアニメーション:**
+- 開始座標: 36°53'00"N 104°18'00"E（スタート地点）Altitude: 8km
+- カメラ: コース全体を俯瞰する鳥瞰図
+- ルート描画: スタート→CP1→CP2（20km地点）を赤い線で表示
+- チルト: 45°（標高差を見せる）
+- 所要時間: 5秒
+
+**SE:**
+なし（ナレーションのみ）
+
+---
+
+### ASSET-063 | 5:10-5:15（5秒）
+**ナレーション（76文字）:**
+ナレーター: ここまではランナー全員が順調で、額には汗が滲み、「暑いくらいだ」と話す選手もいました。
+
+**制作メモ:**
+快晴の下、快調に走るランナーたち。汗をぬぐいながら笑顔。
+
+**キャラアニメーション:**
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+```
+Marathon runners jogging comfortably, wiping sweat from foreheads, some smiling. Wearing light running gear. Happy relaxed expressions. Full body group shot. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Mountain trail marathon course under bright blue sky. Sunny warm conditions. Rocky terrain with clear visibility. Bright warm color palette. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 背景を右→左にゆっくりスクロール（5秒で1/4画面分）
+- キャラを上下に微振動（±3px、0.4秒周期）で走りの動きを表現
+
+
+**SE:**
+足音（タタタタ…）+ 息遣い（軽い）
+
+---
+
+### ASSET-064 | 5:15-5:20（5秒）
+**ナレーション（78文字）:**
+ナレーター: しかし、選手たちの目の前には、このコース最難関の「セクション3」が立ちはだかっていました。
+
+**制作メモ:**
+Google EarthでCP2からセクション3の急勾配区間をハイライト。
+
+**Google Earthアニメーション:**
+- 開始座標: CP2付近 → セクション3区間（36°58'30"N 104°08'10"E）
+- カメラ: CP2からCP3への登り坂へズーム
+- セクション3区間を黄色でハイライトし「最難関区間」と注釈
+- チルト: 45°（急勾配を強調）
+- 所要時間: 5秒
+
+**SE:**
+不穏な低音ドローン（ブォォォン…）
+
+---
+
+### ASSET-065 | 5:20-5:25（5秒）
+**ナレーション（72文字）:**
+ナレーター: 標高2000メートルの急勾配を、一気に駆け上がる難所です。
+
+**制作メモ:**
+荒涼とした岩肌の急斜面。ランナー視点で見上げるような崖が続く。
+
+**Lovart背景プロンプト（16:9）:**
+```
+POV shot looking up steep rocky mountain slope. Barren rocky terrain stretching upward at steep angle. Harsh desolate landscape, no vegetation. Grey-brown earth tones. Daunting vertical ascent. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示（Ken Burns）:**
+- 0s〜5s: ゆっくり下→上にパン（画面の1/3分スクロール）で見上げる視点を強調
+
+
+**SE:**
+風の音（静かに）+ 石が転がる音「カラカラ…」
+
+---
+
+### ASSET-066 | 5:25-5:30（5秒）
+**ナレーション（77文字）:**
+ナレーター: 実は、この地形そのものが、巨大な「自然の罠」だったのです。
+
+**制作メモ:**
+黒背景に赤い文字で「自然の罠」がフェードイン。
+
+**CapCut編集指示:**
+- 黒背景に赤文字「自然の罠」をテキストレイヤーで配置
+- 0s〜3s: 不透明度0%→100%でフェードイン
+- 3s〜5s: 文字が脈動するように拡大・縮小（1.0→1.05→1.0、1秒周期）
+
+**SE:**
+不穏な低音「ドーン…」
+
+---
+
+### ASSET-067 | 5:30-5:35（5秒）
+**ナレーション（67文字）:**
+ナレーター: 山に入った瞬間、世界が一変します。快晴だった空が、突然、漆黒の雲に覆われました。
+
+**制作メモ:**
+晴天の空が早回しで一気に漆黒の雲に覆われるタイムラプス。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Dramatic sky split in half: left side clear bright blue sky, right side massive dark black storm clouds. Ominous transformation from light to dark. Camera looking straight up. Dramatic color contrast. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示（Ken Burns）:**
+- 0s〜5s: ゆっくり左→右にパン（晴天→暗雲へのトランジション）
+- 3s時点でカラーグレーディングを暖色→寒色に変化させる
+
+
+**SE:**
+風の音が徐々に強くなる（ヒュウウウ…→ ゴォォォ…）
+
+---
+
+### ASSET-068 | 5:35-5:40（5秒）
+**ナレーション（62文字）:**
+ナレーター: そして、叩きつけるような雹（ひょう）、横殴りの暴風雨。
+
+**制作メモ:**
+暴風雨の中のランナー。CHAR-01（張）が風に耐えながら進む。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-01）— Lovart 1:1（背景透過用）
+```
+[CHAR-01 reference] Zhang struggling forward, body leaning into strong wind. One arm shielding face, other arm reaching forward. Lean athletic build, sun-tanned skin, short black hair. Wearing running gear, soaked and disheveled. Pained determined expression. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing pain and determination. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Mountain ridge in violent rainstorm. Dark grey sky, sheets of rain falling diagonally. Rocky narrow path barely visible. Strong wind bending sparse grass. Cold blue-grey desaturated tones. No people visible. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 背景を右→左にスクロール（5秒で1/4画面分）で前進感を演出
+- キャラを左右に揺らす（±8px、0.4秒周期）で暴風に耐える動きを表現
+- 雨エフェクト（斜めの白線パーティクル）をキャラの上レイヤーに重ねる
+- 全体に青みがかったカラーグレーディング
+
+**SE:**
+雹が地面を叩く音「バチバチバチ…」+ 暴風「ゴォォォ…」
+
+---
+
+### ASSET-069 | 5:40-5:45（5秒）
+**ナレーション（56文字）:**
+ナレーター: ランナーたちは急な気候変動に何もできません。
+
+**制作メモ:**
+暴風雨の中で立ち尽くすランナーたちのシルエット。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Silhouettes of runners standing helplessly in violent mountain storm. Heavy rain and hail, strong diagonal wind visible. Dark dramatic sky. Figures barely visible through rain. Cold blue-grey desaturated tones. Photorealistic storm scene, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 背景を左右に微揺れ（±5px、0.3秒周期）で暴風を表現
+- 雨パーティクルエフェクトを重ねる
+
+**SE:**
+暴風雨の環境音（ゴォォォ…）が最大音量
+
+---
+
+### ASSET-070 | 5:45-5:50（5秒）
+**ナレーション（86文字）:**
+ナレーター: なぜ、「快晴」とされていた天気予報がここまで変化したのでしょうか？
+
+**制作メモ:**
+天気予報の「晴れ」アイコンが崩壊して嵐のアイコンに変わるアニメーション。
+
+**CapCut編集指示:**
+- 0s〜2s: 太陽アイコン（黄色）を画面中央に表示
+- 2s〜3s: 太陽アイコンが割れて崩壊するアニメーション
+- 3s〜5s: 嵐の雲アイコン（黒+雨+雷）に変化
+
+**SE:**
+ガラスが割れるような音「パリーン」
+
+---
+
+### ASSET-071 | 5:50-5:55（5秒）
+**ナレーション（82文字）:**
+ナレーター: それはセクション3の尾根が、切り立った岩壁に挟まれた、巨大な風の通り道だったからです。
+
+**制作メモ:**
+地形図。狭い谷間を風が通り抜ける図解アニメーション。V字谷の構造を示す。
+
+**図解アニメーション:**
+- 左右に高い山がある狭い谷間（V字谷）の断面図
+- 入り口には「風速5m」の青い矢印
+- 谷間で矢印が赤くなり太さが増す
+- 出口で「風速20m以上」と表示
+
+**CapCut編集指示:**
+- 0s〜2s: V字谷の地形断面図を表示
+- 2s〜5s: 青い矢印が入口から赤い矢印に変化しながら通過するアニメーション
+
+**SE:**
+風の音が徐々に加速（ヒュウ…→ゴォォォ！）
+
+---
+
+### ASSET-072 | 5:55-6:00（5秒）
+**ナレーション（83文字）:**
+ナレーター: 例えば、ホースの先を指で潰すと、水の勢いが強くなります。それと同じ原理です。
+
+**制作メモ:**
+天候が急変するタイムラプス映像。晴天から一転、暴風雨が山を覆う最重要ターニングポイント。
+
+**AI動画プロンプト（Google Flow）:**
+```
+Dramatic time-lapse of weather changing rapidly over mountain landscape. Starting with clear blue sky, massive dark storm clouds roll in from horizon at accelerated speed. Wind picking up, visibility dropping. Mountains being swallowed by grey-black clouds. Ominous atmospheric transformation. Camera fixed on mountain ridge. Photorealistic, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
+**SE:**
+風の音が徐々に強くなる「ヒュウ…→ゴォォォ」
+
+---
+
+### ASSET-073 | 6:00-6:05（5秒）
+**ナレーション（87文字）:**
+ナレーター: 風も同じ。狭い場所を通り抜ける時、その速度は何倍にも加速する性質があります。
+
+**制作メモ:**
+同じ図解を地形に適用。V字谷に風が入り、加速して出てくる。
+
+**図解アニメーション:**
+- V字谷の3D俯瞰図
+- 白い風の流れ（パーティクル）が入口から入り、谷間で圧縮され加速
+- 出口で爆発的に広がる
+
+**CapCut編集指示:**
+- 0s〜5s: 風のパーティクルが入口→圧縮→加速→出口の流れをアニメーション
+
+**SE:**
+風の音（ゴォォォ…）が加速
+
+---
+
+### ASSET-074 | 6:05-6:10（5秒）
+**ナレーション（92文字）:**
+ナレーター: 平地では風速5メートル程度だった風が、この狭い地形に吸い込まれた瞬間、風速20メートル以上の暴風に変貌したのです。
+
+**制作メモ:**
+風速計のアニメーション。5m/s→20m/sへ急上昇。
+
+**CapCut編集指示:**
+- 風速計（アナログメーター）のグラフィック
+- 0s〜2s: 針が「5m/s」を指している
+- 2s〜4s: 針が一気に「20m/s」まで跳ね上がる
+- 4s〜5s: 針が振り切れて「DANGER」表示が赤く点滅
+
+**SE:**
+メーターの針が動く「ピピピピ…」→ 警告音「ビービービー！」
+
+---
+
+### ASSET-075 | 6:10-6:15（5秒）
+**ナレーション（65文字）:**
+ナレーター: 立っていられないほどの風圧が、ランナー達を襲います。
+
+**制作メモ:**
+暴風に吹き飛ばされそうになるランナー。体を低くして耐える。
+
+**キャラアニメーション:**
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+```
+Runner crouching low against extreme wind. Body bent at 45 degrees into the wind, barely maintaining balance. Strained painful expression. Wearing minimal racing gear being whipped by wind. Full body. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing struggle. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Mountain ridge in extreme storm. Rain and debris flying horizontally. Dark stormy atmosphere, near zero visibility. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央やや左に配置（風に逆らう構図）
+- 0s〜5s: キャラを左右に激しく揺らす（±8px、0.3秒周期）で暴風を表現
+- 雨パーティクルエフェクト（右→左に高速で流れる）を重ねる
+
+
+**SE:**
+暴風の轟音「ドォォォォ…」（最大音量）
+
+---
+
+**Section 7 サマリー:**
+- 総ASSET数: 14（ASSET-062〜075）
+- ナレーション総文字数: 約1,063文字
+- 構成比: キャラアニメーション21%、Ken Burns静止画14%、AI動画7%、Google Earth21%、図解アニメ14%、背景静止画8%、テキスト演出15%
+- AI動画: ASSET-072
+- 5秒ルール遵守: 100%
+
+---
+
+## Section 8: 低体温症と、届かぬ悲鳴
+
+### ASSET-076 | 6:15-6:20（5秒）
+**ナレーション（81文字）:**
+ナレーター: さらに致命的だったのが、「雨による冷却」です。
+
+**制作メモ:**
+暴風に吹き飛ばされるランナーの衝撃映像。体が宙に浮くほどの風圧。
+
+**AI動画プロンプト（Google Flow）:**
+```
+Runner being blown off their feet by extreme wind on exposed mountain ridge. Body lifted and thrown sideways by violent gust. Rain and debris flying horizontally. Dark stormy atmosphere, near white-out conditions. Shocking moment captured in dramatic slow-motion. Camera at ground level, wide angle. Photorealistic, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
+**SE:**
+暴風音「ゴォォォ！！」→ 体が飛ばされる音「ドサッ！」
+
+---
+
+### ASSET-077 | 6:20-6:25（5秒）
+**ナレーション（92文字）:**
+ナレーター: 公式報告書によると、この時、気温は急降下しましたが、それでも数値上は「マイナス」ではありませんでした。
+
+**制作メモ:**
+温度計のアニメーション。気温が下がるが0℃は下回らない。
+
+**CapCut編集指示:**
+- 温度計のグラフィックを画面中央に配置
+- 0s〜3s: 赤い液が20℃→5℃へ急降下するアニメーション
+- 3s〜5s: 「0℃」のラインを赤い点線で表示し、ギリギリ上回っていることを強調
+
+**SE:**
+温度が下がる効果音「シュルルルル…」
+
+---
+
+### ASSET-078 | 6:25-6:30（5秒）
+**ナレーション（96文字）:**
+ナレーター: しかし、雨が降ることで、体感温度はマイナス5度からマイナス10度まで低下したと想定されています。
+
+**制作メモ:**
+体感温度の計算式。黒板風の背景。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Blackboard-style background with white chalk writing showing formula: "Wet Body (Water) x Strong Wind (Wind) = Rapid Freezing (Freeze)". Text appearing to freeze with ice crystal effects. Dark classroom aesthetic. Photorealistic chalkboard texture, dramatic lighting. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 黒板背景に計算式をチョーク風テキストで表示
+- 「Water × Wind = Freeze」の文字が凍りつくエフェクト（白→青に変化）
+
+**SE:**
+チョークで書く音「キュッキュッ」→ 凍る音「パキパキ…」
+
+---
+
+### ASSET-079 | 6:30-6:35（5秒）
+**ナレーション（72文字）:**
+ナレーター: これは冷蔵庫の中で氷水をかけられ続けるのと同じ状態です。
+
+**制作メモ:**
+冷凍庫の中のイメージ映像。巨大なファンが回り、氷水が噴射。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Inside industrial freezer room. Large fans visible, frost forming on metal surfaces. Ice crystals and condensation everywhere. Cold blue-white lighting. Claustrophobic confined space. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示（Ken Burns）:**
+- 0s〜5s: ゆっくりズームイン（1.0→1.3倍）で閉塞感を強調
+- 白い霧パーティクルエフェクトを重ねる（冷気の表現）
+
+
+**SE:**
+冷蔵庫のコンプレッサー音「ブーン…」+ ファンの回転音
+
+---
+
+### ASSET-080 | 6:35-6:40（5秒）
+**ナレーション（68文字）:**
+ナレーター: 選手たちの体温は、見る見るうちに奪われていきます。
+
+**制作メモ:**
+暴風雨の中、泥だらけになって四つん這いで進もうとするランナー。
+
+**キャラアニメーション:**
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+```
+Runner on hands and knees crawling desperately. Body trembling, covered in mud. Exhausted desperate expression. Wearing soaked minimal racing gear. Full body, ground level perspective. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing desperation. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Mountain slope in violent rainstorm. Muddy terrain, near white-out visibility. Dark stormy atmosphere. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面下部に配置（地面レベルの視点）
+- 0s〜5s: キャラを小刻みに震わせる（±3px、0.2秒周期）で震えを表現
+- 雨パーティクル（縦に激しく流れる）を重ねる
+
+
+**SE:**
+暴風雨の音「ゴォォォ…」+ 泥の音「グチャグチャ…」
+
+---
+
+### ASSET-081 | 6:40-6:45（5秒）
+**ナレーション（52文字）:**
+ナレーター: ガタガタと激しい震えが止まらない。
+
+**制作メモ:**
+CHAR-02（李）が激しく震えている。膝をついた状態。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-02）— Lovart 1:1（背景透過用）
+```
+[CHAR-02 reference] Li on his knees, body collapsing forward. Arms limp at sides. Eyes half-closed, pale exhausted face. Weathered face with deep wrinkles. Wearing modest running clothes, soaked and mud-stained. Knee brace visible. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing exhaustion. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Barren mountain slope in heavy rain. Muddy trail with puddles. Grey overcast stormy sky, near-whiteout conditions. Cold desaturated blue-grey tones. No people visible. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜3s: キャラ全体をゆっくり下に移動（Y軸+40px）+ わずかに前傾（回転: 0°→10°）で崩れ落ちる動き
+- 3s〜5s: 地面に近い位置で微震動（±2px、0.2秒周期）で低体温の震えを表現
+- ポケットから手紙の角がちらっと見える（手紙画像を小さく重ねる）
+- 雨エフェクトを重ねる
+
+**SE:**
+ガタガタという歯の噛み合う音（震え）
+
+---
+
+### ASSET-082 | 6:45-6:50（5秒）
+**ナレーション（48文字）:**
+ナレーター: これが「低体温症」の初期症状です。
+
+**制作メモ:**
+黒背景に白文字で「低体温症」のテキスト。医学的な図解風。
+
+**CapCut編集指示:**
+- 黒背景に白文字「低体温症 Hypothermia」をテキストレイヤーで配置
+- 0s〜3s: テキストが不透明度0%→100%でフェードイン
+- 3s〜5s: テキストの下に「体温 37℃ → 35℃」のバーが表示
+
+**SE:**
+心拍モニター音「ピッ…ピッ…」（ゆっくり）
+
+---
+
+### ASSET-083 | 6:50-6:55（5秒）
+**ナレーション（68文字）:**
+ナレーター: しかし、体温が35度を切ると、その震えさえ止まります。
+
+**制作メモ:**
+震えが突然止まる演出。静止。不気味な静寂。
+
+**CapCut編集指示:**
+- 前ASSETの体温バーを継続
+- 0s〜3s: バーが「35℃」を下回る → 赤く点滅
+- 3s: 全ての音がピタッと止まる（完全無音）
+- 3s〜5s: 黒背景に「震えが止まる = 体が諦めた」のテキスト
+
+**SE:**
+ガタガタ音が「35℃」の瞬間にピタッと消える → 完全無音（2秒）
+
+---
+
+### ASSET-084 | 6:55-7:00（5秒）
+**ナレーション（52文字）:**
+ナレーター: エネルギーが尽きてしまうのです。
+
+**制作メモ:**
+人体のエネルギーゲージが空になるアニメーション。
+
+**CapCut編集指示:**
+- ゲームのHP/エネルギーバー風のグラフィック
+- 0s〜3s: 緑のバーが急速に減少（100%→0%）
+- 3s: バーが空になった瞬間、赤く点滅
+- 3s〜5s: 「EMPTY」の文字が表示
+
+**SE:**
+エネルギーが尽きる電子音「ピピピ…プッ」
+
+---
+
+### ASSET-085 | 7:00-7:05（5秒）
+**ナレーション（70文字）:**
+ナレーター: そして、ここからが低体温症の最も恐ろしい段階です。
+
+**制作メモ:**
+警告画面。「DANGER ZONE」のテキスト。
+
+**CapCut編集指示:**
+- 黒背景に赤文字「最終段階 DANGER ZONE」を配置
+- 0s〜5s: テキストが赤く脈動（点滅）
+
+**SE:**
+警告サイレン「ウーウー…」（小さく）
+
+---
+
+### ASSET-086 | 7:05-7:10（5秒）
+**ナレーション（62文字）:**
+ナレーター: 体温が33度を下回ると、体温調節中枢が誤作動を起こします。
+
+**制作メモ:**
+人体シルエット。脳の体温調節中枢が赤く点滅してエラーを起こす図解。
+
+**図解アニメーション:**
+- 人体シルエットの脳の部分にズーム
+- 体温調節中枢が正常（緑）→ エラー（赤点滅）
+- 「SYSTEM ERROR」のテキスト表示
+
+**CapCut編集指示:**
+- 人体シルエットの脳部分をハイライト
+- 0s〜2s: 緑のランプが正常点灯
+- 2s〜5s: 赤く点滅 + 「SYSTEM ERROR」テキストがフェードイン
+
+**SE:**
+正常な電子音「ピッ…ピッ…」→ 警告音「ピピピピピ！」に変化
+
+---
+
+### ASSET-087 | 7:10-7:15（5秒）
+**ナレーション（65文字）:**
+ナレーター: 極限まで冷えた手足から、冷たい血液が一気に心臓へ戻ってくる。
+
+**制作メモ:**
+人体の血管図解。末端の青い血液が心臓に戻る様子。
+
+**図解アニメーション:**
+- 人体シルエット。血管が青く収縮（防御）している状態
+- タガが外れて急に赤く拡張
+- 冷たい血液（青い液体）が心臓・脳へ逆流する
+
+**CapCut編集指示:**
+- 0s〜2s: 手足の血管が青く収縮している図
+- 2s〜5s: 青い液体が手足→心臓へ逆流するアニメーション
+
+**SE:**
+血流音「ドクン…ドクン…ドクッドクッドクッ！」（加速）
+
+---
+
+### ASSET-088 | 7:15-7:20（5秒）
+**ナレーション（88文字）:**
+ナレーター: すると脳は混乱し、寒いはずなのに「暑い！ 体が燃えるように熱い！」と誤った信号を出してしまうのです。
+
+**制作メモ:**
+冷たい血液が末端から心臓に逆流する科学的映像。低体温症の核心メカニズム。
+
+**AI動画プロンプト（Google Flow）:**
+```
+Medical visualization of cold blood flowing back through human circulatory system. Blue-purple cold blood moving from extremities toward the heart through veins. Transparent human body silhouette showing internal blood vessels. Blue cold tones pulsing through the body. Scientific medical aesthetic with dramatic lighting. Dark background. The cold blood reaches the heart and causes it to struggle. Photorealistic medical visualization, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
+**SE:**
+心臓の鼓動「ドクン…ドクン…」→ リズムが乱れる「ドク…ン……ドクン」
+
+---
+
+### ASSET-089 | 7:20-7:25（5秒）
+**ナレーション（54文字）:**
+ナレーター: これが「矛盾脱衣（むじゅんだつい）」です。
+
+**制作メモ:**
+黒背景に白文字で「矛盾脱衣」のテキスト。
+
+**CapCut編集指示:**
+- 黒背景に白文字「矛盾脱衣」+ 英語「Paradoxical Undressing」を配置
+- 0s〜3s: テキストフェードイン
+- 3s〜5s: テキストが微かに揺れる（±1px）
+
+**SE:**
+不穏な低音ドローン（ブォォォン…）
+
+---
+
+### ASSET-090 | 7:25-7:30（5秒）
+**ナレーション（87文字）:**
+ナレーター: 凍えて動けなくなった遭難者の多くが、なぜか服を脱ぎ捨て、裸に近い状態で発見されるのはこのためです。
+
+**制作メモ:**
+雪の中に散乱する衣服のイメージ。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Scattered clothing items (jacket, gloves, hat) lying on cold rocky mountain ground. Snow and ice visible. Empty shoes. No people visible. Desolate cold atmosphere. Desaturated blue-grey tones. Photorealistic still life, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 背景をゆっくりズームイン（1.0→1.2倍、5秒かけて）
+- 全体に極端な彩度低下フィルター
+
+**SE:**
+風の音（静かに、不気味に）
+
+---
+
+### ASSET-091 | 7:30-7:35（5秒）
+**ナレーション（39文字）:**
+ナレーター: 「暑い…暑い…」
+
+**制作メモ:**
+梁晶のうわ言。苦しみながら服を引っ張る動作。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-03）— Lovart 1:1（背景透過用）
+```
+[CHAR-03 reference] Liang Jing in distress, pulling at own shirt collar with one hand, other hand pushing away from body. Confused delirious expression, flushed face despite cold. Muscular lean physique. Wearing minimal racing gear, soaked. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing confusion and distress. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Barren mountain slope in heavy rain and wind. Dark stormy sky. Rocks and muddy ground. Cold grey-blue atmosphere. No people visible. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜5s: キャラの手がシャツの襟を引っ張る動き（手を上下に±10px）
+- 全体に赤いフラッシュを2回入れる（1s、3s時点）
+- 全体を微かに揺らす（±3px）
+
+**SE:**
+苦しい呼吸「ハァッ…ハァッ…」+ 「暑い…」のささやき（エコー処理）
+
+---
+
+### ASSET-092 | 7:35-7:40（5秒）
+**ナレーション（76文字）:**
+ナレーター: あの最強の鉄人、リャンさんでさえ、この生理現象には勝てませんでした。
+
+**制作メモ:**
+梁晶が岩陰に座り込むシーン。力なく体が崩れていく。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-03）— Lovart 1:1（背景透過用）
+```
+[CHAR-03 reference] Liang Jing sitting weakly against rock, body slumping sideways. Eyes half-closed, exhausted expression. One hand loosely holding a small photograph. Wearing minimal racing gear (T-shirt and shorts), soaked and mud-covered. Full body, slight low angle. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing exhaustion and sadness. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Desolate mountain rocky outcrop with large boulder in center-right of frame. Grey overcast stormy sky. Barren scree field stretching into foggy distance. Cold grey-blue desaturated tones, somber and empty atmosphere. No people visible. Photorealistic landscape, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面右寄り、岩の手前に配置（座り姿勢）
+- 0s〜3s: キャラ全体をゆっくり右に傾ける（回転: 0°→15°）で倒れ込む動き
+- 3s時点: 手元の写真画像を別レイヤーで配置、手から離れて下に落ちる（Y軸+50px、0.5秒）
+- 背景にうっすら霧パーティクルを重ねる
+
+**SE:**
+写真が飛ばされる瞬間に「ヒュウ…」という風の音を強調。直後に無音（1秒の間）
+**演出:** スローモーション。写真が飛ぶ瞬間に0.5倍速。色彩を極限まで落とす
+
+---
+
+### ASSET-093 | 7:40-7:45（5秒）
+**ナレーション（72文字）:**
+ナレーター: その後、岩陰に座り込み、もうろうとする意識の中で、ただ耐えるしかありませんでした。
+
+**制作メモ:**
+梁晶の後ろ姿。動かない。霧が包んでいく。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Back view of lone figure sitting slumped against large rock on barren mountain slope. Thick fog slowly enveloping the scene. Nearly monochrome, extreme desaturation. Somber desolate atmosphere. Photorealistic, shot on RED camera. Cinematic wide shot. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 背景を表示
+- 0s〜5s: 霧パーティクル（白い半透明）がゆっくり画面を覆っていく
+- 全体のopacityを100%→80%にフェード（5秒かけて）
+
+**SE:**
+完全無音（2秒）→ 風の音が静かに入る
+
+---
+
+### ASSET-094 | 7:45-7:50（5秒）
+**ナレーション（67文字）:**
+ナレーター: 聴覚障害のホアンさんもまた、無言のまま倒れました。
+
+**制作メモ:**
+CHAR-04（黄関軍）が倒れているシーン。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-04）— Lovart 1:1（背景透過用）
+```
+[CHAR-04 reference] Huang Guanjun lying on his side on the ground, curled slightly. Eyes closed, peaceful but lifeless expression. Wearing old slightly worn running clothes, soaked. One hand reaching forward as if trying to grasp something. Full body, side view. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes (closed). 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Rocky scree field shrouded in thick fog. Cold empty stones stretching into the mist. Extreme desaturation, nearly monochrome. Somber and desolate atmosphere. No people visible. Photorealistic, shot on RED camera. Cinematic wide shot. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央やや下に配置（地面に横たわる姿）
+- 0s〜5s: ほぼ静止。キャラ全体をごくわずかに沈める（Y軸+5px、5秒かけて）で力が抜けていく印象
+- 霧パーティクル（白い半透明）をキャラの上にゆっくり流す（右→左）
+- 全体のopacityを100%→85%にフェード（5秒かけて）
+
+**SE:**
+全ての環境音・BGMを完全カット（5秒の完全無音）
+**演出:** ホアンさんのセクションは意図的に「音を奪う」演出。視聴者にホアンさんの聴覚障害を追体験させる
+
+---
+
+### ASSET-095 | 7:50-7:55（5秒）
+**ナレーション（75文字）:**
+ナレーター: 耳の聞こえないホアンさんにとって、吹き荒れる暴風雨はどのような恐怖だったのでしょうか、、
+
+**制作メモ:**
+完全無音のまま、暴風雨の映像のみ。音のない嵐の恐怖を表現。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Violent mountain storm with rain sheets and wind-blown debris. Dark turbulent sky. Chaotic weather conditions. Extreme desaturation, nearly monochrome. No people visible. Photorealistic storm landscape, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 嵐の映像を表示
+- 全体を左右に揺らす（±5px、0.3秒周期）で暴風感
+- 音声トラックは完全無音を維持（聴覚障害の追体験）
+
+**SE:**
+完全無音（意図的）。風の音すら消す
+
+---
+
+### ASSET-096 | 7:55-8:00（5秒）
+**ナレーション（70文字）:**
+ナレーター: 視界も奪われ、音のない世界で、ただ寒さだけがホアンさんを蝕んでいきました。
+
+**制作メモ:**
+ホワイトアウトに近い画面。何も見えない恐怖。
+
+**CapCut編集指示:**
+- 白い霧で画面がほぼホワイトアウト（不透明度80%の白オーバーレイ）
+- 0s〜5s: 白いオーバーレイの不透明度が80%→95%に上昇（視界が奪われていく表現）
+
+**SE:**
+完全無音を維持
+
+---
+
+### ASSET-097 | 8:00-8:05（5秒）
+**ナレーション（65文字）:**
+ナレーター: 助けを叫ぶことさえできず、たった独り、冷たい岩の上で息絶えました。
+
+**制作メモ:**
+黒背景にフェードアウト。完全な暗闘と沈黙。
+
+**CapCut編集指示:**
+- 前ASSETのホワイトアウトから、ゆっくり黒へフェード
+- 0s〜3s: 白→黒へ反転フェード
+- 3s〜5s: 完全な黒画面
+
+**SE:**
+完全無音 → 最後の1秒で低い「ドーン…」という1音
+
+---
+
+### ASSET-098 | 8:05-8:10（5秒）
+**ナレーション（66文字）:**
+ナレーター: 賞金の2万円を掴むはずの手は、もう冷たくなっていたのでした。
+
+**制作メモ:**
+冷たくなったホアンさんの手のイメージ。開いた手のひら。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of an open empty hand lying palm-up on cold grey stone. Pale bluish skin tone. Frost beginning to form on fingertips. Cold desolate atmosphere. Extreme desaturation, nearly monochrome. Photorealistic close-up, shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 手のクローズアップをゆっくりズームイン（1.0→1.3倍、5秒かけて）
+- 全体にブルーのカラーグレーディング（冷たさの表現）
+
+**SE:**
+風の音がゆっくり戻る（ヒュウウウ…）
+
+---
+
+### ASSET-099 | 8:10-8:15（5秒）
+**ナレーション（79文字）:**
+ナレーター: 午後2時。モニター上のGPS信号は多くが停止し、SOSアラートが点滅し始めました。
+
+**制作メモ:**
+運営本部のモニタールーム。GPSトラッキング画面に赤いSOS警告が点滅。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Operations control room with multiple monitoring screens showing GPS tracking map. Red SOS alert warnings blinking on screens. Coffee cups and snacks on desk in foreground. Fluorescent office lighting. Photorealistic interior, documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- モニター画面を表示
+- GPS上の赤い点が次々と消えていくアニメーション（編集者作成）
+- SOSアラートが赤く点滅するエフェクト
+
+**SE:**
+デジタル時計の「ピピッ」音 + モニターの電子警告音「ビービービー」（小さめ）
+
+---
+
+### ASSET-100 | 8:15-8:20（5秒）
+**ナレーション（72文字）:**
+ナレーター: しかし、運営スタッフたちはコーヒーを飲みながら談笑していました。
+
+**制作メモ:**
+コーヒーカップを持つ手のクローズアップ。背景にぼんやりとモニター。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of hand holding coffee cup in operations room. Blurry monitor screens with red alerts in background. Relaxed casual atmosphere contrasting with urgency on screens. Warm indoor lighting. Photorealistic, shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- コーヒーカップのクローズアップ→ ゆっくりピントを背景のモニターに移動（ラックフォーカス風）
+
+**SE:**
+笑い声（小さく）+ コーヒーをすする音「ズズッ」
+
+---
+
+### ASSET-101 | 8:20-8:25（5秒）
+**ナレーション（76文字）:**
+ナレーター: 「ただの休憩だろう」「GPSの故障じゃないか？」スタッフたちは目の前の警告を、都合の良いように解釈したのです。
+
+**制作メモ:**
+モニター画面のSOSアラートが無視される演出。
+
+**CapCut編集指示:**
+- モニター画面でSOSアラートが点滅
+- 0s〜3s: アラートが赤く点滅
+- 3s: 「却下」ボタンが押されるアニメーション
+- 3s〜5s: アラートが消え、通常画面に戻る
+
+**SE:**
+アラート音「ビービービー」→ 「却下」時に「ポッ」と消える音
+
+---
+
+### ASSET-102 | 8:25-8:30（5秒）
+**ナレーション（76文字）:**
+ナレーター: この時、SNS上では参加者による悲痛なメッセージが拡散されていました。
+
+**制作メモ:**
+スマホ画面。WeChatメッセージの連続投稿。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Smartphone screen showing Chinese social media WeChat messaging interface with urgent distress messages in red text. Multiple messages stacked rapidly. "救命！" (Help!) text prominently displayed. Photorealistic smartphone screen, dramatic lighting. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- スマホ画面にメッセージが次々と表示されるアニメーション
+- 各メッセージが下から上にスライドイン
+
+**SE:**
+スマホの通知音「ポコン」を3回（メッセージごとに）
+
+---
+
+### ASSET-103 | 8:30-8:35（5秒）
+**ナレーション（83文字）:**
+ナレーター: 「助けてくれ！もう限界だ！」「口から泡を吹いている人がいる！」「指の感覚がない。文字が打てない…」
+
+**制作メモ:**
+メッセージのテキストが画面に次々と浮かび上がる。
+
+**CapCut編集指示:**
+- 黒背景に白文字でメッセージを順番に表示
+- 「助けてくれ！もう限界だ！」→ 1.5s
+- 「口から泡を吹いている人がいる！」→ 1.5s
+- 「指の感覚がない。文字が打てない…」→ 2s（文字が途中で崩れるエフェクト）
+
+**SE:**
+3回目のメッセージで音がブツッと途切れる
+
+---
+
+### ASSET-104 | 8:35-8:40（5秒）
+**ナレーション（81文字）:**
+ナレーター: にもかかわらず、運営トップは動こうとしません。「大会を中止すれば、キャリアに傷がつく」「騒ぎ立てるな」。
+
+**制作メモ:**
+運営本部の会議室。険しい表情の責任者（シルエット）。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Dark silhouette of authority figure sitting behind desk in dim office. Arms crossed, rigid posture. Single harsh overhead light. Oppressive atmosphere. Dark moody tones. No face visible, only silhouette. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- シルエットをゆっくりズームイン（1.0→1.2倍、5秒かけて）
+
+**SE:**
+ドンッ（拳でテーブルを叩くような衝撃音）
+
+---
+
+### ASSET-105 | 8:40-8:45（5秒）
+**ナレーション（66文字）:**
+ナレーター: 保身とメンツ。運営者が自分だけを守り、他人は切り捨てたのでした。
+
+**制作メモ:**
+黒背景にテキスト「保身とメンツ」が赤く浮かび上がる。
+
+**CapCut編集指示:**
+- 黒背景に赤文字「保身とメンツ」をテキストレイヤーで配置
+- 0s〜3s: テキストフェードイン
+- 3s〜5s: テキストが崩壊するように粒子化して消えていく
+
+**SE:**
+「切り捨てた」に合わせてドンッという衝撃音
+
+---
+
+**Section 8 サマリー:**
+- 総ASSET数: 30（ASSET-076〜105）
+- ナレーション総文字数: 約2,130文字
+- 構成比: キャラアニメーション20%、背景静止画27%、AI動画7%、Ken Burns静止画3%、図解アニメ13%、テキスト演出30%
+- AI動画: ASSET-076, ASSET-088
+- 5秒ルール遵守: 100%
+- CHAR使用: CHAR-02（1回）、CHAR-03（2回）、CHAR-04（1回）
+
+---
+
+## Section 9: 羊飼いという奇跡
+
+### ASSET-106 | 8:45-8:50（5秒）
+**ナレーション（42文字）:**
+ナレーター: 午後3時。誰も戻らない。壊滅かと思われたその時、
+
+**制作メモ:**
+暗いトーン。時計が午後3時を指している。
+
+**CapCut編集指示:**
+- 黒背景にアナログ時計を配置
+- 針が15:00を指す
+- 0s〜5s: 時計がゆっくりズームイン（1.0→1.5倍）
+- 全体に暗いブルーのカラーグレーディング
+
+**SE:**
+時計の秒針音「カチッ…カチッ…」（不気味にエコー）
+
+---
+
+### ASSET-107 | 8:50-8:55（5秒）
+**ナレーション（68文字）:**
+ナレーター: 絶望的なセクション3で、たった一つの奇跡が起きました。
+
+**制作メモ:**
+暗い画面から一筋の光が差す演出。
+
+**CapCut編集指示:**
+- 黒背景
+- 0s〜2s: 完全な暗闘
+- 2s〜5s: 画面中央から一筋の白い光が広がる（不透明度0%→50%）
+- テキスト「奇跡」がフェードイン
+
+**SE:**
+静寂 → 2s時点で暖かい弦楽器の一音「ポーン…」
+
+---
+
+### ASSET-108 | 8:55-9:00（5秒）
+**ナレーション（56文字）:**
+ナレーター: 朱克銘（ジュー・クーミン）、49歳。
+
+**制作メモ:**
+CHAR-05（朱克銘）の全身立ち絵。羊飼いの装い。逞しい顔つき。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-05）— Lovart 1:1（背景透過用）
+```
+[CHAR-05 baseline reference] Zhu Keming the shepherd standing in neutral confident pose. Thick heavy coat, sturdy build. Calm determined eyes, tough weathered face. Full body, medium shot. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing quiet strength. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Gansu Province mountain landscape with sheep grazing in background. Rolling dry hills. Warm afternoon light. Rural pastoral atmosphere. Photorealistic landscape, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜5s: ゆっくり拡大（1.0→1.15倍）で寄りの演出
+- わずかに微揺れ（±2px）
+
+**SE:**
+羊の「メェ〜」という鳴き声（遠く）
+
+---
+
+### ASSET-109 | 9:00-9:05（5秒）
+**ナレーション（78文字）:**
+ナレーター: ジューさんはランナーでも、救助隊員でもありません。この山で生まれ育った、ただの羊飼いです。
+
+**制作メモ:**
+CHAR-05（朱克銘）が猛吹雪の中を平然と歩く。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-05）— Lovart 1:1（背景透過用）
+```
+[CHAR-05 reference] Zhu Keming the shepherd walking forward, one arm raised to shield face from wind. Thick heavy coat, sturdy build. Calm determined eyes, tough weathered face. Full body, medium shot. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing quiet determination. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Fierce mountain blizzard with white-out conditions. Swirling snow and ice particles filling the frame. Rocky mountain path barely visible through storm. Cool blue-white palette, harsh winter atmosphere. Dense snow particles blowing from left to right. No people visible. Photorealistic storm landscape, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央やや左に配置
+- 背景を右→左にゆっくりスクロール（5秒で1/3画面分）で前進感を演出
+- キャラを左右に微揺れ（±3px、0.5秒周期）で吹雪に耐える動きを表現
+- 白い雪パーティクルエフェクトを左→右方向に高速で流す（キャラの上レイヤー）
+
+**SE:**
+吹雪の風音（ゴォォォ…）。しかし前セクションより少しトーンが明るい
+
+---
+
+### ASSET-110 | 9:05-9:10（5秒）
+**ナレーション（80文字）:**
+ナレーター: その日、ジューさんはたまたま羊の放牧中に嵐に遭遇し、普段から使っている洞窟に避難していました。
+
+**制作メモ:**
+Google Earthで現場付近の「ヤオトン（洞窟住居）」へズーム。
+
+**Google Earthアニメーション:**
+- 開始座標: 36°59'42"N 104°17'19"E付近（セクション3付近）Altitude: 3km
+- カメラ: 荒野に点在する洞窟住居へズームイン
+- チルト: 45°
+- 所要時間: 5秒
+
+**SE:**
+風の音（遠く）
+
+---
+
+### ASSET-111 | 9:10-9:15（5秒）
+**ナレーション（75文字）:**
+ナレーター: ふと外を見ると、薄着の男が震えながら立っているのが視界に入ってきたのです。
+
+**制作メモ:**
+洞窟の入口から外を見る主観視点。嵐の中にランナーのシルエット。
+
+**Lovart背景プロンプト（16:9）:**
+```
+POV from inside dark cave looking outward through narrow cave entrance. Outside: fierce blizzard, rain and wind. A lone figure silhouette barely visible through the storm, standing and shaking. Dark cave frame on left and right, bright stormy exterior in center. Strong contrast between dark interior and stormy exterior. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 洞窟内から外を見る構図
+- 外の嵐の中にランナーのシルエットを配置
+- 0s〜5s: シルエットが小刻みに震える（±3px、0.2秒周期）
+
+**SE:**
+風の音 + 「おい！大丈夫か！」のナレーターが少し声を張る（エコーをかけて山に響く感じ）
+
+---
+
+### ASSET-112 | 9:15-9:20（5秒）
+**ナレーション（49文字）:**
+ナレーター: 「おい！大丈夫か！」
+
+**制作メモ:**
+ジューさんが嵐の中へ飛び出すシーン。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-05）— Lovart 1:1（背景透過用）
+```
+[CHAR-05 reference] Zhu Keming running forward urgently, arms outstretched to help. Thick heavy coat flapping in wind. Urgent determined expression. Full body, dynamic pose. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing urgency and compassion. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Cave entrance with fierce blizzard outside. Figure barely visible through snow and wind. Cold blue-white storm exterior, dark warm cave interior on edges. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面左1/4に配置
+- 0s〜5s: キャラを左→右に素早く移動（嵐の中へ飛び出す）
+- 雪パーティクルを重ねる
+
+**SE:**
+吹雪の音が一気に大きくなる（ゴォォォ！）
+
+---
+
+### ASSET-113 | 9:20-9:25（5秒）
+**ナレーション（68文字）:**
+ナレーター: ジューさんは迷わず嵐の中へ飛び出し、その男を洞窟へと避難させました。
+
+**制作メモ:**
+CHAR-05がランナーを背負って洞窟に運ぶシーン。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-05）— Lovart 1:1（背景透過用）
+```
+[CHAR-05 reference] Zhu Keming carrying an unconscious person on his back, both arms supporting the person's legs. Thick heavy coat, sturdy build. Strained but determined expression. Leaning forward under the weight. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing strain and determination. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Dark rocky mountain path leading toward a cave entrance. Blizzard conditions with swirling snow. The cave entrance glows faintly with warm orange light from inside. Cold blue-white exterior contrasting with warm cave interior. No people visible. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面左1/4に配置
+- 0s〜5s: キャラを左→右にゆっくり移動（洞窟の入口に向かって）画面1/4→3/4の位置へ
+- 移動しながら上下に揺れ（±5px、0.6秒周期）で重い荷物を背負う歩行感
+- 雪パーティクルを左→右に流す
+- 3s以降、キャラにオレンジの光が徐々に当たる（洞窟からの光）
+
+**SE:**
+吹雪の音 + 足を踏みしめる音「ザッ…ザッ…」
+
+---
+
+### ASSET-114 | 9:25-9:30（5秒）
+**ナレーション（62文字）:**
+ナレーター: 洞窟の中で火を焚き、凍えたランナーの手足を必死にマッサージしました。
+
+**制作メモ:**
+洞窟内の焚き火シーン。暖かいオレンジの光。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Inside a mountain cave with warm campfire burning. Orange warm light illuminating rough stone walls. Thick smoke rising. Simple survival setting with shepherd's supplies visible. Cozy warm atmosphere contrasting with cold outside. No people visible. Photorealistic cave interior, natural firelight. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 焚き火の暖かい背景を表示
+- 0s〜5s: 焚き火のゆらぎエフェクト（オレンジの光をちらつかせる）
+- ゆっくりズームイン（1.0→1.15倍）
+
+**SE:**
+パチパチという焚き火の音（環境音として常時）
+
+---
+
+### ASSET-115 | 9:30-9:35（5秒）
+**ナレーション（60文字）:**
+ナレーター: 意識を取り戻したランナーは、涙ながらに訴えたといいます。
+
+**制作メモ:**
+焚き火に照らされたランナーの顔。涙を流している。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of exhausted runner's face lit by warm campfire glow inside cave. Tears streaming down cheeks. Relief and desperation mixed in expression. Warm orange light on one side, dark shadow on other. No specific identity. Photorealistic portrait, dramatic firelight. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- ランナーの顔のクローズアップ
+- 焚き火の光がゆらゆら揺れるエフェクト
+- ゆっくりズームイン（1.0→1.2倍）
+
+**SE:**
+焚き火の音 + すすり泣き（小さく）
+
+---
+
+### ASSET-116 | 9:35-9:40（5秒）
+**ナレーション（49文字）:**
+ナレーター: 「まだ外に仲間がいるんだ…！」
+
+**制作メモ:**
+ジューさんの視点。嵐の中、薄着で倒れている男を発見する瞬間。
+
+**AI動画プロンプト（Google Flow）:**
+```
+POV shot through blizzard and rain. Walking through storm on mountain terrain. Visibility near zero. Suddenly discovering a figure lying on the ground wearing only thin T-shirt and shorts. Camera approaching the collapsed figure from distance. Shock of discovery moment. Dark stormy atmosphere with brief lightning flash revealing the body. Photorealistic, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
+**SE:**
+暴風音「ゴォォ…」→ 発見の瞬間に一瞬の静寂 → 「ハッ！」という息を呑む音
+
+---
+
+### ASSET-117 | 9:40-9:45（5秒）
+**ナレーション（66文字）:**
+ナレーター: 外は、命の危険を感じるほどの暴風雨です。一度助かった安全な場所から、再び地獄へ戻る。
+
+**制作メモ:**
+洞窟の暖かい内部と、外の猛吹雪のコントラスト。
+
+**CapCut編集指示:**
+- 左右2分割画面
+- 左: 暖かい洞窟内（オレンジトーン）
+- 右: 猛吹雪の外（青白トーン）
+- 0s〜5s: 分割線がゆっくり右から左に移動（外の世界が広がっていく演出）
+
+**SE:**
+焚き火の音（左チャンネル）+ 暴風の音（右チャンネル）→ 暴風が徐々に大きくなる
+
+---
+
+### ASSET-118 | 9:45-9:50（5秒）
+**ナレーション（52文字）:**
+ナレーター: 普通なら躊躇するでしょう。しかし、ジューさんは無言で立ち上がりました。
+
+**制作メモ:**
+CHAR-05が焚き火の前で帽子を被り直し、立ち上がるシーン。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-05）— Lovart 1:1（背景透過用）
+```
+[CHAR-05 reference] Zhu Keming standing, both hands adjusting a weathered hat firmly on head. Determined resolute expression. Thick heavy coat, collar visible. Sturdy build. Full body, medium shot. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing quiet heroism. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Inside a dark cave with warm orange campfire glow illuminating rough stone walls on left side. Cave entrance on right side showing fierce blizzard outside with cold blue-white storm light. Strong warm-cool contrast between interior and exterior. Thick smoke rising from small fire. No people visible. Photorealistic cave interior with atmospheric lighting, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央、焚き火の明かりが当たる位置に配置
+- 0s〜2s: キャラの手が帽子を押さえる静止ポーズ（微揺れのみ）
+- 2s〜4s: キャラを画面中央→右方向にゆっくり移動（洞窟の出口に向かう）
+- 移動に合わせてキャラにかかる光の色温度を変える（暖色オーバーレイ→寒色オーバーレイ）
+- 焚き火のゆらぎエフェクト（オレンジの光をちらつかせる）を背景に重ねる
+
+**SE:**
+焚き火の音 → 2s時点で「ザッ」と立ち上がる足音
+
+---
+
+### ASSET-119 | 9:50-9:55（5秒）
+**ナレーション（65文字）:**
+ナレーター: ジューさんの行動は、極めて冷静でした。
+
+**制作メモ:**
+ジューさんが嵐の中を歩く後ろ姿。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Back view of sturdy figure in thick coat walking into fierce mountain blizzard from cave entrance. Warm orange light from cave behind contrasting with cold blue-white storm ahead. Heroic solitary silhouette. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 後ろ姿のシルエットがゆっくり嵐の中へ消えていく
+- 0s〜5s: 人物が画面中央→奥（小さく）に移動
+- 雪パーティクルを重ねる
+
+**SE:**
+吹雪の音（ゴォォォ…）
+
+---
+
+### ASSET-120 | 9:55-10:00（5秒）
+**ナレーション（82文字）:**
+ナレーター: ただ救助するだけでなく、リスクを冒して電波の入る高台まで登り、救助要請の電話をかけていたのです。
+
+**制作メモ:**
+高台でスマホを掲げるジューさんのシルエット。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Silhouette of man standing on mountain hilltop in storm, arm raised holding phone up trying to get signal. Wind blowing coat. Dramatic stormy sky behind. Single figure against vast sky. Heroic pose. Cold blue-grey tones. Photorealistic, shot on RED camera. Cinematic wide shot. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- シルエットをゆっくりズームイン（1.0→1.3倍、5秒かけて）
+- スマホの画面が一瞬光る（電波が入った瞬間）エフェクト
+
+**SE:**
+風の音 + スマホの接続音「プルルル…プルルル…」
+
+---
+
+### ASSET-121 | 10:00-10:05（5秒）
+**ナレーション（68文字）:**
+ナレーター: 「偶然そこにいた」だけではありません。この状況で何をすべきか判断できる「山の知恵」がありました。
+
+**制作メモ:**
+ジューさんが山の地形を読む主観視点。山の稜線を見渡す。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Mountain landscape viewed from experienced mountaineer's perspective. Visible trails and terrain features. Stormy but with breaks in clouds showing possible routes. Topographic knowledge visualization. Cold blue-grey tones with slight warm highlights. Photorealistic mountain landscape, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 山の風景をゆっくりパン（左→右、5秒かけて）
+- 3s時点で山道に光るライン（ルート表示）を重ねる
+
+**SE:**
+なし（ナレーションの力で聞かせる）
+
+---
+
+### ASSET-122 | 10:05-10:10（5秒）
+**ナレーション（85文字）:**
+ナレーター: ジューさんは何度も嵐の中を往復し、倒れていた選手たちを次々と背負っては洞窟へと避難させました。
+
+**制作メモ:**
+ジューさんが複数回往復する様子をモンタージュ。
+
+**キャラアニメーション:**
+■ キャラプロンプト（CHAR-05）— Lovart 1:1（背景透過用）
+```
+[CHAR-05 reference] Zhu Keming carrying injured runner on his back, walking through storm. Exhausted but determined expression. Thick heavy coat, sturdy build. Person on back wrapped in blanket. Full body, side view. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing heroic determination. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Dark stormy mountain setting. Blizzard conditions with near zero visibility. Wind and snow swirling violently. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面左1/3に配置、右向き
+- 0s〜5s: 背景を右→左にゆっくりスクロール（移動の表現）
+- キャラを上下に微振動（±3px、0.5秒周期）で歩きの動きを表現
+- 雪パーティクルエフェクトを重ねる
+
+
+**SE:**
+足音「ザッ…ザッ…」が繰り返される
+
+---
+
+### ASSET-123 | 10:10-10:15（5秒）
+**ナレーション（58文字）:**
+ナレーター: 最終的に6人の命を救いました。
+
+**制作メモ:**
+黒背景に白文字で「6人」が大きく表示。
+
+**CapCut編集指示:**
+- 黒背景に白文字「6」を巨大に配置
+- 0s〜3s: 数字がカウントアップ（1→2→3→4→5→6）
+- 3s〜5s: 「6人の命」のテキストがフェードイン
+- 数字が暖色（オレンジ）に変化
+
+**SE:**
+カウントごとに心拍音「ドクン」
+
+---
+
+### ASSET-124 | 10:15-10:20（5秒）
+**ナレーション（74文字）:**
+ナレーター: もしジューさんがいなければ、セクション3の生存者は本当に「ゼロ」だったでしょう。
+
+**制作メモ:**
+「0」の文字が大きく表示。衝撃的な事実の強調。
+
+**CapCut編集指示:**
+- 黒背景に赤文字「0」を巨大に配置
+- 0s〜5s: 「0」が脈動するように拡大・縮小（1.0→1.05→1.0）
+
+**SE:**
+重低音「ドーン…」
+
+---
+
+### ASSET-125 | 10:20-10:25（5秒）
+**ナレーション（52文字）:**
+ナレーター: 皮肉なことです。
+
+**制作メモ:**
+画面2分割。左: 運営本部のモニタールーム / 右: 洞窟のジューさん。
+
+**CapCut編集指示:**
+- 左右2分割画面
+- 左: 運営本部（暗く冷たいトーン、モニターの青い光）
+- 右: 洞窟のジューさん（暖かいオレンジトーン、焚き火の光）
+- 左右の対比を強調
+
+**SE:**
+なし
+
+---
+
+### ASSET-126 | 10:25-10:30（5秒）
+**ナレーション（68文字）:**
+ナレーター: 高性能なGPSを持った運営本部は誰も助けられず、
+
+**制作メモ:**
+運営本部のモニター。GPS画面が映るが誰も行動していない。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Empty operations control room with GPS tracking screens showing red alert warnings. No staff present. Coffee cups and abandoned documents on desk. Cold fluorescent lighting. Sterile abandoned atmosphere. Photorealistic interior, documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 空っぽの運営本部をゆっくりパン（左→右）
+- GPS画面のアラートが虚しく点滅
+
+**SE:**
+アラート音「ビービービー」（小さく、虚しく）
+
+---
+
+### ASSET-127 | 10:30-10:35（5秒）
+**ナレーション（82文字）:**
+ナレーター: スマホも持たない一人の羊飼いが、その足と勇気だけで、6人のエリートを救ったのです。
+
+**制作メモ:**
+洞窟内で6人のランナーが暖を取っている。ジューさんが入口に立ち、外の嵐を見つめる。クライマックスシーン。
+
+**AI動画プロンプト（Google Flow）:**
+```
+Cave interior with warm orange campfire light. Six rescued runners huddled together wrapped in blankets around fire. Shepherd figure silhouetted at cave entrance looking out into blizzard. Warm interior contrasting with cold blue exterior storm. Campfire flames flickering. Steam rising from survivors. Camera slowly pushing in toward the group. Heroic emotional climax. Photorealistic, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
+**SE:**
+なし（ナレーションの力で聞かせるパート。SEを引き算する）
+
+---
+
+### ASSET-128 | 10:35-10:40（5秒）
+**ナレーション（0文字 / ビジュアルのみ）:**
+[無音]
+
+**制作メモ:**
+前ASSETの余韻。洞窟内の焚き火のゆらぎ。6人が暖を取っている。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Inside mountain cave, warm campfire scene. Six exhausted runners huddled around fire, wrapped in shepherd's coat and blankets. Warm orange glow. Relief and gratitude visible. Intimate survival moment. Photorealistic cave interior, natural firelight. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 焚き火シーンをゆっくりズームアウト（1.2→1.0倍）
+- 焚き火のゆらぎエフェクト
+
+**SE:**
+焚き火の音「パチパチ…」（静かに）
+
+---
+
+### ASSET-129 | 10:40-10:45（5秒）
+**ナレーション（0文字 / セクション区切り）:**
+[無音]
+
+**制作メモ:**
+セクション区切り。黒背景にフェードアウト。
+
+**CapCut編集指示:**
+- 前ASSETからゆっくりフェードアウト（100%→0%、5秒かけて）
+
+**SE:**
+焚き火の音がゆっくりフェードアウト
+
+---
+
+### ASSET-130 | 10:45-10:50（5秒）
+**ナレーション（0文字 / セクション転換）:**
+[無音]
+
+**制作メモ:**
+次のセクションへの転換。黒画面から白文字テキスト「第10章: 名もなき英雄たち」がフェードイン。
+
+**CapCut編集指示:**
+- 黒背景に白文字「名もなき英雄たち」をテキストレイヤーで配置
+- 0s〜3s: テキストフェードイン
+- 3s〜5s: テキストが微かに揺れる（±1px）
+
+**SE:**
+なし
+
+---
+
+**Section 9 サマリー:**
+- 総ASSET数: 25（ASSET-106〜130）
+- ナレーション総文字数: 約1,334文字
+- 構成比: キャラアニメーション32%、背景静止画28%、AI動画8%、Google Earth4%、テキスト演出28%
+- AI動画: ASSET-116, ASSET-127
+- 5秒ルール遵守: 100%
+- CHAR使用: CHAR-05（5回）
+
+---
+
+## Section 10: 名もなき英雄たち（村の総力戦）
+
+### ASSET-131 | 10:50-10:55（5秒）
+**ナレーション（51文字）:**
+ナレーター: 奇跡は、洞窟の中だけではありませんでした。
+
+**制作メモ:**
+麓の村の全景。穏やかだった村に緊張が走る。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Panoramic view of small rural Chinese village at the foot of mountains. Simple farmhouses, dirt roads. Late afternoon golden light. Quiet peaceful atmosphere about to change. Photorealistic landscape, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 村の全景をゆっくりズームイン（1.0→1.2倍、5秒かけて）
+
+**SE:**
+静かな環境音（鳥の声、風）
+
+---
+
+### ASSET-132 | 10:55-11:00（5秒）
+**ナレーション（73文字）:**
+ナレーター: 午後4時。ようやく事態の深刻さに気づいたのは、運営ではなく、麓（ふもと）の村人たちでした。
+
+**制作メモ:**
+村人が家から飛び出してくるシーン。
+
+**キャラアニメーション:**
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+```
+Chinese villagers rushing out of houses looking alarmed. Some pointing toward mountains. Urgent worried expressions. Wearing rural work clothes. Full body group shot. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing alarm. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Rural Chinese village street with traditional farmhouses. Late afternoon light. Mountains visible in background with dark storm clouds. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜2s: キャラが画面外（右）から中央へ移動（飛び出す動き）
+- 2s〜5s: 山の方を指差すポーズで微揺れ（±3px）
+
+
+**SE:**
+ドアがバタンと開く音「バン！」→ 駆け足の音
+
+---
+
+### ASSET-133 | 11:00-11:05（5秒）
+**ナレーション（52文字）:**
+ナレーター: 「山で人が倒れているらしいぞ！」「あんた、家の布団持ってきて！」
+
+**制作メモ:**
+村人たちが叫び合うシーン。テキストで台詞を表示。
+
+**CapCut編集指示:**
+- 前ASSETの背景を継続使用
+- テキストレイヤーで台詞を表示:
+  - 0s〜2.5s: 「山で人が倒れているらしいぞ！」
+  - 2.5s〜5s: 「あんた、家の布団持ってきて！」
+
+**SE:**
+声を張り上げる叫び声（遠く）
+
+---
+
+### ASSET-134 | 11:05-11:10（5秒）
+**ナレーション（72文字）:**
+ナレーター: SOSを聞きつけた村人たちは、誰に言われるでもなく、自主的に動き始めました。
+
+**制作メモ:**
+村人たちが動き出すシーン。新規村人キャラ（布団を抱えた女性）。
+
+**キャラアニメーション:**
+■ キャラプロンプト（新規村人キャラ）— Lovart 1:1（背景透過用）
+```
+Chinese rural middle-aged woman running forward urgently, carrying a large thick folded quilt in both arms. Worried determined expression. Wearing simple rural clothing, apron still on. Hair slightly disheveled from rushing. Full body, dynamic running pose. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing urgency and compassion. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Rural Chinese village street at dusk. Simple farmhouses with doors flung open. Warm golden-orange sunset sky. A tractor parked with headlights on. Urgent atmosphere. No people visible. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面右1/4に配置（家のドアから出てきた直後）
+- 0s〜5s: キャラを右→左に素早く移動（画面右1/4→左1/4へ）で走り抜ける演出
+- 移動中、キャラ全体を上下に揺れ（±6px、0.3秒周期）+ わずかに左右回転（±2°）で走りの勢いを表現
+- 背景のドアが開いている家から暖色の光が漏れている演出
+
+**SE:**
+ドアがバタンと開く音 → トラクターのエンジン始動「ガガガガ…ドドドド」
+
+---
+
+### ASSET-135 | 11:10-11:15（5秒）
+**ナレーション（86文字）:**
+ナレーター: 農作業に使っているトラクターやバイクに、家にあるだけの「布団」と「お湯を入れた魔法瓶」を積み込みました。
+
+**制作メモ:**
+トラクターに布団や魔法瓶を積み込むシーン。
+
+**キャラアニメーション:**
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+```
+Chinese villagers loading thick quilts and thermos bottles. Urgent purposeful movements. Multiple people helping to pile supplies. Wearing rural work clothes. Full body group shot. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing urgency. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Farm tractor parked in rural Chinese village. Late afternoon golden light. Quilts and thermos bottles being loaded. Documentary style. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央やや右に配置（トラクターに物を積む構図）
+- 0s〜5s: キャラを上下に動かす（±5px、0.5秒周期）で積み込み動作を表現
+
+
+**SE:**
+トラクターのエンジン音「ドドドド…」+ 布団を積む音「ドサッ、ドサッ」
+
+---
+
+### ASSET-136 | 11:15-11:20（5秒）
+**ナレーション（82文字）:**
+ナレーター: 一方、公式の救助隊や警察車両は、悪天候による土砂崩れと深い泥に阻まれ、現場に近づくことさえできませんでした。
+
+**制作メモ:**
+泥にハマる救助車両。タイヤが空転。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Modern emergency rescue vehicle stuck deep in thick mud on mountain road. Wheels spinning helplessly. Mud splashing. Official emergency lights flashing. Frustrated atmosphere. Dark stormy sky above. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 泥にハマる車両を表示
+- タイヤが空転するアニメーション（回転エフェクト）
+
+**SE:**
+車輪が泥で空転する音「キュルルル…」
+
+---
+
+### ASSET-137 | 11:20-11:25（5秒）
+**ナレーション（78文字）:**
+ナレーター: 皮肉なことに、最新鋭の車両が泥で立ち往生する横を、村人のトラクターだけが力強く突破していったのです。
+
+**制作メモ:**
+泥にハマる救助車両の横を、トラクターが力強く突破する。カタルシスの瞬間。
+
+**AI動画プロンプト（Google Flow）:**
+```
+Muddy mountain road. Modern rescue vehicle stuck in deep mud with wheels spinning helplessly. Simple old farm tractor powering through the same mud with unstoppable force, mud spraying from its wheels. Dramatic contrast. Stormy overcast atmosphere. Camera tracking the tractor as it overtakes the stuck vehicle. Triumphant practical moment. Photorealistic, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
+**SE:**
+車輪が空転「キュルルル…」→ トラクターの力強いエンジン「ドドドド！」に切り替え
+
+---
+
+### ASSET-138 | 11:25-11:30（5秒）
+**ナレーション（60文字）:**
+ナレーター: 土地の地理を知り尽くした村人たちは、徒歩と重機で、最短ルートを駆け上がります。
+
+**制作メモ:**
+夕暮れの荒れ地を行く村人たちのシルエット。背中には布団。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Silhouettes of villagers hiking up barren mountain path at dusk. Large quilts strapped to backs. Headlights from tractor behind creating dramatic backlighting. Line of determined figures ascending toward mountain. Golden-orange sunset sky. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- シルエットをゆっくりパン（右→左）
+- 夕日の光がシルエットの背後から差す
+
+**SE:**
+足音「ザッ…ザッ…ザッ…」（複数人の足音が重なる）
+
+---
+
+### ASSET-139 | 11:30-11:35（5秒）
+**ナレーション（65文字）:**
+ナレーター: 「なんとかして助けたい」。そんな思いで、無償で、少しでも役立ちそうなものを集め、救助へと動いたのです。
+
+**制作メモ:**
+村人たちが物資を集めるモンタージュ。布団、スープ、毛布。
+
+**キャラアニメーション:**
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+```
+Chinese villagers gathering emergency supplies urgently. Holding quilts and thermos bottles. Determined caring expressions. Wearing rural work clothes. Full body group shot. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing determination to help. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Warm interior of humble Chinese farmhouse. Quilts on bed, thermos bottles on table. Warm interior lighting. Documentary style. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜5s: キャラを左右に動かす（±5px、0.5秒周期）で物資を集める動きを表現
+
+
+**SE:**
+物を集める音「ガサガサ」+ お湯を注ぐ音「コポコポ…」
+
+---
+
+### ASSET-140 | 11:35-11:40（5秒）
+**ナレーション（64文字）:**
+ナレーター: 中には、自分の着ている上着を脱いで、震えるランナーにかけてあげる村人もいました。
+
+**制作メモ:**
+村人が自分の上着を脱いでランナーにかける再現イメージ。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of hands placing a worn thick coat over the shoulders of a trembling exhausted person. Warm human gesture. Mountain setting at dusk. Warm golden light. Compassionate moment. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 上着をかけるシーンをゆっくりズームイン（1.0→1.3倍、5秒かけて）
+
+**SE:**
+布の音「サッ…」→ 静寂
+
+---
+
+### ASSET-141 | 11:40-11:45（5秒）
+**ナレーション（70文字）:**
+ナレーター: 発見されたランナーたちは、村人たちが持ってきた熱いスープを飲み、
+
+**制作メモ:**
+スープを飲むランナー。布団にくるまれている。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Exhausted runner wrapped in thick quilt, both hands clutching hot bowl of soup. Steam rising from bowl. Warm orange indoor lighting. Relief and gratitude on face. Mountain rescue shelter setting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- スープから立ち上る湯気のパーティクルエフェクト
+- ゆっくりズームイン（1.0→1.2倍）
+
+**SE:**
+スープをすする音（小さく）+ 湯気の音「シュウウウ…」
+
+---
+
+### ASSET-142 | 11:45-11:50（5秒）
+**ナレーション（66文字）:**
+ナレーター: 分厚い綿の布団にくるまれて、ようやく生きた心地を取り戻しました。
+
+**制作メモ:**
+布団に包まれて安堵するランナーたち。
+
+**キャラアニメーション:**
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+```
+Multiple rescued runners wrapped in thick cotton quilts, sitting together. Relief on their faces, holding hot drinks with steam rising. Exhausted but grateful expressions. Full body group shot. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing relief. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+```
+Simple rural Chinese shelter interior. Warm orange light from fire nearby. Steam visible in air. Intimate comforting atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜5s: ゆっくりズームイン（1.0→1.15倍）で安堵の表情に寄る
+- 焚き火のゆらぎエフェクト（オレンジの光がゆらめく）
+
+
+**SE:**
+焚き火の音（パチパチ）+ 安堵の呼吸音「ハァー…」
+
+---
+
+### ASSET-143 | 11:50-11:55（5秒）
+**ナレーション（43文字）:**
+ナレーター: 「ありがとう、ありがとう…」
+
+**制作メモ:**
+震える声で感謝するランナーのクローズアップ。涙。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of rescued runner's face with tears streaming down. Wrapped in quilt. Expression of overwhelming gratitude. Warm orange firelight on one side. Emotional intimate moment. Photorealistic portrait, shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 顔のクローズアップをゆっくりズームイン（1.0→1.3倍）
+- 涙が光に反射するエフェクト
+
+**SE:**
+「ありがとう」は震える声質で（声優への指示: 泣きながら搾り出す感じ）
+
+---
+
+### ASSET-144 | 11:55-12:00（5秒）
+**ナレーション（52文字）:**
+ナレーター: 震える声で感謝する選手たち。
+
+**制作メモ:**
+複数のランナーが村人たちに感謝している全景。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Wide shot of rural Chinese shelter with rescued runners bowing and thanking village rescuers. Quilts and thermos bottles scattered around. Warm orange campfire light. Emotional reunion scene. Multiple people visible. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 全景をゆっくりパン（左→右）
+- 暖色のカラーグレーディング
+
+**SE:**
+すすり泣き（複数、遠く）
+
+---
+
+### ASSET-145 | 12:00-12:05（5秒）
+**ナレーション（72文字）:**
+ナレーター: その命を繋ぎ止めたのは、国や組織ではなく、名もなき村人たちの、温かい人間性でした。
+
+**制作メモ:**
+画面2分割対比。左: 空っぽの運営本部 / 右: 布団を被せる村人。
+
+**CapCut編集指示:**
+- 左右2分割画面
+- 左: 空っぽの運営本部（冷たいブルートーン）
+- 右: 布団を被せる村人（暖かいオレンジトーン）
+- 0s〜5s: 左の画面が徐々に暗くなり、右の画面が明るくなる
+
+**SE:**
+なし（ナレーションの力で聞かせる）
+
+---
+
+### ASSET-146 | 12:05-12:10（5秒）
+**ナレーション（75文字）:**
+ナレーター: 公式の救助隊がようやく現場に到着したのは、事故発生からなんと「9時間後」でした。
+
+**制作メモ:**
+黒背景に白文字「9時間後」のテキスト。巨大な数字。
+
+**CapCut編集指示:**
+- 黒背景に赤文字「9時間後」を巨大に配置
+- 0s〜3s: テキストフェードイン
+- 3s〜5s: テキストが脈動（1.0→1.05→1.0）
+
+**SE:**
+時計の「カチッ…カチッ…」が加速して止まる
+
+---
+
+### ASSET-147 | 12:10-12:15（5秒）
+**ナレーション（66文字）:**
+ナレーター: その空白の9時間を埋め、命をつないだのは、間違いなく村人たちでした。
+
+**制作メモ:**
+村人たちの後ろ姿のシルエット。朝焼けの山に向かって立っている。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Silhouettes of village rescuers standing together looking at dawn breaking over mountains. Proud humble figures. Orange-pink sunrise sky. Heroic group composition. Warm hopeful atmosphere. Photorealistic, shot on RED camera. Cinematic wide shot. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 朝焼けのシルエットをゆっくりズームアウト（1.2→1.0倍）で壮大さを強調
+
+**SE:**
+なし（静寂で余韻）
+
+---
+
+### ASSET-148 | 12:15-12:20（5秒）
+**ナレーション（0文字 / セクション区切り）:**
+[無音]
+
+**制作メモ:**
+村人とランナーが別れの挨拶を交わす感動的なシーン。セクションの締めくくり。
+
+**AI動画プロンプト（Google Flow）:**
+```
+Emotional farewell scene between Chinese villagers and rescued marathon runners. Runners bowing deeply in gratitude, villagers waving with warm smiles. Morning light after storm. Tears visible on some faces. Simple rural village background. Camera slowly pulling back to show the full scene. Intimate emotional documentary moment. Photorealistic, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
+**SE:**
+風の音がゆっくりフェードイン
+
+---
+
+**Section 10 サマリー:**
+- 総ASSET数: 18（ASSET-131〜148）
+- ナレーション総文字数: 約1,127文字
+- 構成比: 背景静止画22%、AI動画11%、キャラアニメーション33%、テキスト演出34%
+- AI動画: ASSET-137, ASSET-148
+- 5秒ルール遵守: 100%
+
+---
+
+## Section 11: 結末と教訓
+
+### ASSET-149 | 12:20-12:25（5秒）
+**ナレーション（76文字）:**
+ナレーター: 多くの協力者のおかげで、172名中、ジューさんが救った6名を含め、151名の生存は確認できました。
+
+**制作メモ:**
+黒背景に白文字で数字。「172名中 151名生存」。
+
+**CapCut編集指示:**
+- 黒背景に白文字で「172名中」（上段）「151名 生存確認」（下段、緑色）を配置
+- 0s〜3s: 数字がカウントアップでフェードイン
+- 3s〜5s: 「151名」の部分が緑色に光る
+
+**SE:**
+なし
+
+---
+
+### ASSET-150 | 12:25-12:30（5秒）
+**ナレーション（57文字）:**
+ナレーター: しかし、残り21名の行方はいまだ不明のままでした。
+
+**制作メモ:**
+「21名 行方不明」の赤い文字が浮かび上がる。
+
+**CapCut編集指示:**
+- 前ASSETの「151名」表示から
+- 0s〜2s: 「残り 21名」が赤文字でフェードイン
+- 2s〜5s: 「行方不明」のテキストが脈動
+
+**SE:**
+不穏な低音ドローン（ブォォォン…）
+
+---
+
+### ASSET-151 | 12:30-12:35（5秒）
+**ナレーション（52文字）:**
+ナレーター: 翌朝、5月23日。嵐は嘘のように去り、空は晴れ渡っていました。
+
+**制作メモ:**
+快晴の朝。嵐の痕跡が残る山の風景。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Mountain landscape after storm has cleared. Bright blue morning sky. Wet rocks and puddles reflecting sunlight. Debris from storm scattered on ground. Peaceful but eerie calm. Warm morning light. Photorealistic landscape, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 朝の風景をゆっくりパン（左→右）
+- 明るいが空虚な雰囲気
+
+**SE:**
+鳥の声（静かに）+ 風の音（穏やか）
+
+---
+
+### ASSET-152 | 12:35-12:40（5秒）
+**ナレーション（66文字）:**
+ナレーター: 夜通しの捜索が行われ、世界中が「新たな生存者」の発見を祈っていました。
+
+**制作メモ:**
+捜索隊が山を歩く空撮。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Aerial view of search and rescue teams spread across mountain terrain in morning light. Teams wearing bright orange vests visible as dots on rocky landscape. Post-storm calm conditions. Documentary aerial composition. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示（Ken Burns）:**
+- 0s〜5s: ゆっくりズームアウト（1.3→1.0倍）で捜索範囲の広大さを見せる
+
+
+**SE:**
+ヘリコプターの音（遠く）+ 無線通信の音「ザーッ…」
+
+---
+
+### ASSET-153 | 12:40-12:45（5秒）
+**ナレーション（72文字）:**
+ナレーター: しかし、午前10時に発表された報告は、あまりにも残酷なものでした。
+
+**制作メモ:**
+記者会見のマイク。報道陣のカメラフラッシュ。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Press conference podium with multiple microphones. Camera flashes lighting up the scene. Tense somber atmosphere. Official government press conference setting. Dark background. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- マイクのクローズアップをゆっくりズームイン（1.0→1.3倍）
+- カメラフラッシュのエフェクトを2回入れる
+
+**SE:**
+カメラのシャッター音「パシャパシャ…」
+
+---
+
+### ASSET-154 | 12:45-12:50（5秒）
+**ナレーション（0文字 / テキスト表示）:**
+[無音]
+
+**制作メモ:**
+黒背景に白文字: 「捜索終了。生存者、なし」
+
+**CapCut編集指示:**
+- 黒背景
+- 0s〜3s: 完全な黒（無音）
+- 3s〜5s: 白文字「捜索終了。生存者、なし」がフェードイン
+
+**SE:**
+3秒のデッドエアー（意図的な完全無音）→ 最後に低い「ドーン…」という1音
+**演出:** 画面暗転。ナレーションも一拍置く
+
+---
+
+### ASSET-155 | 12:50-12:55（5秒）
+**ナレーション（68文字）:**
+ナレーター: 「行方不明となっていた21名、全員が帰らぬ人となったことを確認」。
+
+**制作メモ:**
+薄着のまま発見されたランナーたちの衝撃映像。荒涼とした岩場に横たわる人影。
+
+**AI動画プロンプト（Google Flow）:**
+```
+Desolate rocky mountain terrain at dawn. Multiple figures lying motionless on cold stone ground, wearing only thin T-shirts and running shorts. Morning mist hanging low. Rescue workers approaching in the distance. Devastating quiet scene. Camera slowly panning across the scene at ground level. Grey-blue color palette, somber atmosphere. Photorealistic, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
+**SE:**
+風の音だけ（静かに）
+
+---
+
+### ASSET-156 | 12:55-13:00（5秒）
+**ナレーション（62文字）:**
+ナレーター: 発見されたランナーたちは、薄着のまま、冷たい石の上で固くなっていました。
+
+**制作メモ:**
+荒涼とした岩場。冒頭と同じ21足の靴だが、今度は朝日に照らされている。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Running shoes scattered on cold rocky mountain ground in morning sunlight. Frost on shoes. Empty trail stretching into distance. Peaceful but haunting atmosphere. Morning golden light contrasting with cold ground. Photorealistic, shot on RED camera. Cinematic wide shot. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 靴のアップをゆっくりズームアウト（1.3→1.0倍）で全体を見せる
+
+**SE:**
+風の音（静かに）
+
+---
+
+### ASSET-157 | 13:00-13:05（5秒）
+**ナレーション（62文字）:**
+ナレーター: 記者会見。運営者が頭を下げている。
+
+**制作メモ:**
+記者会見。運営責任者が深々と頭を下げている。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Chinese official press conference. Multiple officials bowing deeply in apology. Microphones and cameras in foreground. Somber atmosphere. Bright camera flashes. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 記者会見の全景をゆっくりズームイン（1.0→1.2倍）
+
+**SE:**
+カメラのシャッター音「パシャパシャ」が鳴り響く
+
+---
+
+### ASSET-158 | 13:05-13:10（5秒）
+**ナレーション（73文字）:**
+ナレーター: あの「鉄人」リャンさんも、変わり果てた姿で見つかりました。
+
+**制作メモ:**
+梁晶が発見された場所の再現。岩場に横たわるシルエット。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Desolate mountain rocky outcrop in morning light. Single dark silhouette of a person lying motionless on cold rock. Morning mist. Haunting peaceful atmosphere. Warm morning light but cold emotional tone. Photorealistic landscape, shot on RED camera. Cinematic wide shot. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 岩場のシルエットをゆっくりズームイン（1.0→1.3倍）
+- 全体に彩度を落としたカラーグレーディング
+
+**SE:**
+娘の笑い声を一瞬だけ入れる（回想演出。エコー処理して遠くから聞こえる感じ）
+
+---
+
+### ASSET-159 | 13:10-13:15（5秒）
+**ナレーション（75文字）:**
+ナレーター: 娘さんとの約束も果たせぬまま、ただ、家族への想いを胸に、冷たい岩肌に横たわっていました。
+
+**制作メモ:**
+遺品モンタージュ。スマホの画面、娘の写真。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Still life of personal belongings on cold rock surface. Cracked smartphone showing photo of smiling toddler. Scattered running gear. Morning light casting long shadows. Haunting memorial composition. Photorealistic, shot on RED camera. Shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 遺品のクローズアップをゆっくりパン
+- スマホの画面が一瞬光る（最後のバッテリー）エフェクト
+
+**SE:**
+なし（静寂で悲しみを演出）
+
+---
+
+### ASSET-160 | 13:15-13:20（5秒）
+**ナレーション（76文字）:**
+ナレーター: 聴覚障害の王者、ホアンさんもまた、誰にも声を届けることができず、静寂の中で息絶えていました。
+
+**制作メモ:**
+ホアンさんが発見された場所の再現。静寂のガレ場。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Rocky scree field in morning light. Mist clearing over barren stones. Silent empty landscape. One pair of worn running shoes visible among rocks. Extreme desaturation, nearly monochrome. Peaceful but desolate atmosphere. Photorealistic, shot on RED camera. Cinematic wide shot. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- ガレ場の全景
+- 全体に極端な彩度低下
+- 完全無音を3秒維持（聴覚障害の追体験）
+
+**SE:**
+完全無音（3秒）→ 風の音がゆっくり入る
+
+---
+
+### ASSET-161 | 13:20-13:25（5秒）
+**ナレーション（74文字）:**
+ナレーター: ホアンさんの手には、おそらく最後まで握りしめていたであろう、家族の写真があったと言われています。
+
+**制作メモ:**
+手に握られた家族写真のクローズアップ。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of a hand lying on cold stone, fingers curled around a small creased family photograph. Pale bluish skin tone. Frost on knuckles. Photo shows happy family smiling. Contrast between warmth of photo and cold of hand. Extreme shallow depth of field. Photorealistic, dramatic lighting. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 手のクローズアップをゆっくりズームイン（1.0→1.5倍、家族写真にフォーカス）
+- 写真部分に一瞬暖色の光エフェクト
+
+**SE:**
+なし（完全な静寂）
+
+---
+
+### ASSET-162 | 13:25-13:30（5秒）
+**ナレーション（54文字）:**
+ナレーター: 犠牲となった21名。
+
+**制作メモ:**
+黒背景に白文字で「21」の数字。
+
+**CapCut編集指示:**
+- 黒背景に白文字「21」を巨大に配置
+- 0s〜3s: 数字がフェードイン
+- 3s〜5s: 数字の周りに21個の小さな光の点がゆっくり灯るアニメーション
+
+**SE:**
+鎮魂の鐘の音「ゴーン…」（1回）
+
+---
+
+### ASSET-163 | 13:30-13:35（5秒）
+**ナレーション（66文字）:**
+ナレーター: そのほとんどが、中国のトップレベルを走るエリート選手たちでした。
+
+**制作メモ:**
+エリート選手たちの走る姿のモンタージュ（過去のシーンの回想）。セピア調。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Sepia-toned montage of elite runners in action. Multiple dynamic running poses overlapping. Memory/flashback aesthetic with soft edges and warm sepia filter. Photorealistic portrait montage style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- セピア調フィルター
+- 複数のランナーの画像がクロスフェードで切り替わる
+
+**SE:**
+なし
+
+---
+
+### ASSET-164 | 13:35-13:40（5秒）
+**ナレーション（74文字）:**
+ナレーター: 「強さ」が仇となり、誰よりも深く、誰よりも遠く、「魔の領域」へと走り込んでしまったのです。
+
+**制作メモ:**
+コースマップ。先頭集団がセクション3の最深部まで到達していた図解。
+
+**CapCut編集指示:**
+- コースマップ（Google Earthスクリーンショット風）
+- 先頭集団の赤い点がセクション3の最深部に到達
+- 後方集団の青い点は手前で引き返している
+- 「魔の領域」のテキストが赤く表示
+
+**SE:**
+不穏な低音ドローン
+
+---
+
+### ASSET-165 | 13:40-13:45（5秒）
+**ナレーション（58文字）:**
+ナレーター: 事故後、責任を問う裁判が開かれました。
+
+**制作メモ:**
+裁判所の外観。厳粛な雰囲気。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Chinese court building exterior. Official government architecture. Serious somber atmosphere. Overcast sky. Police vehicles parked outside. No people visible. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 裁判所をゆっくりズームイン（1.0→1.2倍）
+
+**SE:**
+なし
+
+---
+
+### ASSET-166 | 13:45-13:50（5秒）
+**ナレーション（54文字）:**
+ナレーター: 被告席に座ったのは、大会運営の責任者たち。
+
+**制作メモ:**
+被告席のイメージ。後ろ姿のシルエット。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Courtroom interior. Silhouettes of defendants sitting on bench from behind. Judge's elevated desk in background. Formal legal atmosphere. Dark moody lighting with single overhead light. Photorealistic interior, documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 被告のシルエットをゆっくりズームイン（1.0→1.2倍）
+
+**SE:**
+裁判所のガベル（木槌）を叩く「コン！」という音
+
+---
+
+### ASSET-167 | 13:50-13:55（5秒）
+**ナレーション（62文字）:**
+ナレーター: 運営責任者たちに下された判決は、「懲役3年から5年半」。
+
+**制作メモ:**
+判決文のテキスト表示。
+
+**CapCut編集指示:**
+- 黒背景に白文字で判決を表示
+- 「懲役 3年〜5年半」の文字が大きくフェードイン
+- 文字色が白→赤に変化
+
+**SE:**
+ガベル音「コン！コン！コン！」（3回）
+
+---
+
+### ASSET-168 | 13:55-14:00（5秒）
+**ナレーション（61文字）:**
+ナレーター: 罪状は「職務怠慢」および「安全管理義務違反」。
+
+**制作メモ:**
+法律文書のクローズアップ。罪状が記載。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of official Chinese legal document with highlighted text showing charges. Red official stamps visible. Paper texture, formal legal typography. Photorealistic document, shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 法律文書をゆっくりズームイン（1.0→1.5倍、罪状部分にフォーカス）
+
+**SE:**
+なし
+
+---
+
+### ASSET-169 | 14:00-14:05（5秒）
+**ナレーション（63文字）:**
+ナレーター: 「21人の命を奪っておいて、たったの3年？」遺族たちの叫びは、法廷に響き渡りました。
+
+**制作メモ:**
+遺族のシルエット。怒りと悲しみ。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Silhouettes of grieving family members in courtroom, some standing with raised fists, others collapsed in tears. Dramatic courtroom lighting from windows. Emotional powerful atmosphere. Dark moody tones. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- シルエットをゆっくりズームイン（1.0→1.2倍）
+
+**SE:**
+法廷内のざわめき → 「たったの3年？」で怒号が響く
+
+---
+
+### ASSET-170 | 14:05-14:10（5秒）
+**ナレーション（66文字）:**
+ナレーター: しかし、どれだけ刑を重くしても、失われた命は二度と戻ることはありませんでした。
+
+**制作メモ:**
+黒背景にフェードアウト。静寂。
+
+**CapCut編集指示:**
+- 前ASSETからゆっくりフェードアウト（100%→0%）
+- 最後は完全な黒画面
+
+**SE:**
+なし（1.5秒の完全無音）
+
+---
+
+### ASSET-171 | 14:10-14:15（5秒）
+**ナレーション（61文字）:**
+ナレーター: この悲劇から、私たちは何を学ぶべきなのでしょうか。
+
+**制作メモ:**
+新聞記事コラージュ。各国メディアの報道。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Collage of international newspaper front pages reporting on the Gansu ultramarathon disaster. Multiple languages visible (Chinese, English, Japanese). Headlines about the tragedy. Photorealistic newspaper collage, documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 新聞コラージュをゆっくりズームアウト（1.3→1.0倍）
+**演出:** 少し間を取る。視聴者に問いかける「間」を意識。
+
+**SE:**
+なし（1.5秒の無音で「間」を取る）
+
+---
+
+### ASSET-172 | 14:15-14:20（5秒）
+**ナレーション（45文字）:**
+ナレーター: それは、「引き返す勇気」。
+
+**制作メモ:**
+サンクコストの天秤。引き返す vs 進む。
+
+**図解アニメーション:**
+- 天秤のグラフィック
+- 左: 「引き返す（損）」
+- 右: 「進む（得？）」
+- 「進む」を選ぶと天秤ごと奈落へ落ちるアニメーション
+
+**CapCut編集指示:**
+- 0s〜3s: 天秤が表示され、「進む」側に傾く
+- 3s〜5s: 天秤ごと画面下に落ちるアニメーション
+
+**SE:**
+天秤が傾く「ギギギ…」→ 奈落へ落ちる「ゴゴゴ…ドォン」
+
+---
+
+### ASSET-173 | 14:20-14:25（5秒）
+**ナレーション（79文字）:**
+ナレーター: 「ここまで来たから」「賞金が欲しいから」そんな執着が、ランナーたちの足を前へ前へと進ませてしまいました。
+
+**制作メモ:**
+ランナーが前に進み続けるシルエット。背後に「引き返せ」の文字。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Silhouette of runner stubbornly pushing forward into dark storm. Behind the runner, faint text "TURN BACK" barely visible. Dramatic dark atmosphere. Runner moving away from safety into danger. Photorealistic, shot on RED camera. Cinematic style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- シルエットが画面中央→奥へ移動（小さくなる）
+- 背後の「引き返せ」テキストが徐々にフェードイン
+
+**SE:**
+足音「ドスッ…ドスッ…」が徐々に弱くなる
+
+---
+
+### ASSET-174 | 14:25-14:30（5秒）
+**ナレーション（67文字）:**
+ナレーター: しかし、山では「進む勇気」よりも「戻る勇気」こそが、真の強さと言えます。
+
+**制作メモ:**
+テキスト演出。「戻る勇気 = 真の強さ」。
+
+**CapCut編集指示:**
+- 黒背景に白文字で「戻る勇気 ＝ 真の強さ」を配置
+- 0s〜3s: テキストフェードイン
+- 3s〜5s: テキストが金色に光るエフェクト
+
+**SE:**
+なし
+
+---
+
+### ASSET-175 | 14:30-14:35（5秒）
+**ナレーション（61文字）:**
+ナレーター: あなたを待っている人がいます。あなたの帰りを、心から願っている人がいます。
+
+**制作メモ:**
+家族が待つ家。窓に明かりが灯る。暖かいイメージ。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Warm light glowing from windows of simple house at night. Cozy home atmosphere. Welcoming warm orange-yellow light spilling out into dark evening. Path leading to front door. Peaceful hopeful feeling. Photorealistic, shot on RED camera. Warm color palette. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 家の外観をゆっくりズームイン（1.0→1.2倍、窓に向かって）
+- 窓の光がゆらぐエフェクト
+
+**SE:**
+なし（ナレーションだけで聞かせる）
+
+---
+
+### ASSET-176 | 14:35-14:40（5秒）
+**ナレーション（74文字）:**
+ナレーター: その人たちのために、どうか、命を賭けるような無理はしないでください。無事に帰ってくること。それが人生というマラソンにおける、唯一の勝利条件です。
+
+**制作メモ:**
+暖かい家の中。家族が食卓を囲む温かいイメージ。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Warm family dinner scene viewed through window from outside. Soft golden interior light. Family silhouettes visible around dining table. Cozy domestic atmosphere. Evening sky with first stars appearing. Photorealistic, shot on RED camera. Warm hopeful color palette. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 窓越しの家族シーンをゆっくりズームアウト（1.2→1.0倍）
+- 暖色のカラーグレーディング
+
+**SE:**
+なし
+
+---
+
+### ASSET-177 | 14:40-14:45（5秒）
+**ナレーション（68文字）:**
+ナレーター: 最後に、6人の命を救った羊飼い、ジュー・クーミンさんの言葉で締めくくりましょう。
+
+**制作メモ:**
+21足のランニングシューズが荒涼とした岩場に散乱。冒頭ASSET-002の対比として朝日に照らされている。エンディングの象徴的な映像。
+
+**AI動画プロンプト（Google Flow）:**
+```
+21 running shoes scattered across desolate rocky terrain, now bathed in warm golden sunrise light. Same scene as opening but transformed by morning sun. Soft golden-orange rays illuminating each shoe. Gentle wind blowing fine dust. No people visible. Camera slowly rising upward to reveal the vast landscape at dawn. Hopeful yet melancholic atmosphere. Photorealistic, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
+**SE:**
+羊の「メェ〜」という鳴き声を遠くに1回だけ（温かみ）
+
+---
+
+### ASSET-178 | 14:45-14:50（5秒）
+**ナレーション（63文字）:**
+ナレーター: 「困っている人がいたら、助ける。それだけだ」
+
+**制作メモ:**
+ジューさんの言葉がテキストで画面に表示。背景は夕日の黄河石林。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Yellow River Stone Forest at golden sunset. Dramatic rock formations bathed in warm orange-gold light. Peaceful serene atmosphere. Vast landscape stretching to horizon. Warm hopeful color palette. Photorealistic landscape, aerial shot. 16:9 aspect ratio. Generate 5 images.
+```
+
+**CapCut編集指示:**
+- 夕日の黄河石林を背景に、白文字で「困っている人がいたら、助ける。それだけだ」を配置
+- 0s〜3s: テキストフェードイン
+- 3s〜5s: 全体がゆっくりフェードアウト → 暗転
+- **エンドカード（追加5秒）:** チャンネルロゴ＋「チャンネル登録・高評価お願いします」
+
+**SE:**
+風の音だけ。最後の2秒で風も消える → 完全無音 → 暗転
+
+---
+
+**Section 11 サマリー:**
+- 総ASSET数: 30（ASSET-149〜178）
+- ナレーション総文字数: 約1,803文字
+- 構成比: 背景静止画40%、テキスト演出27%、AI動画7%、Ken Burns静止画3%、図解アニメ3%、その他20%
+- AI動画: ASSET-155, ASSET-177
+- 5秒ルール遵守: 100%
+- CHAR使用: なし（CHAR-05のキャラアニメ→ASSET-177のAI動画に変更）
+
+---
+
+## 全体サマリー
+
+### 素材カテゴリ別集計
+
+| カテゴリ | ASSET数 | 比率 |
+|:---|:---:|:---:|
+| キャラアニメーション（Lovart 1:1 + CapCut編集）| 69 | 38.8% |
+| 背景静止画（Lovart 16:9 + Ken Burns）| 58 | 32.6% |
+| AI動画（Google Flow） | 12 | 6.7% |
+| テキスト演出（CapCut テキストレイヤー） | 16 | 9.0% |
+| Google Earth | 8 | 4.5% |
+| 図解アニメーション | 9 | 5.1% |
+| 実写素材（著作権チェック必須） | 3 | 1.7% |
+| その他（キャラ定義・セクション区切り等） | 3 | 1.6% |
+| **合計** | **178** | **100%** |
+
+### AI動画（Google Flow）12本 詳細リスト
+| ASSET番号 | 内容 | 用途 |
+|:---|:---|:---|
+| ASSET-006 | エリート選手の疾走 | 冒頭の掴み |
+| ASSET-022 | スマホ画面暗転 | 感情ピーク |
+| ASSET-053 | ロッカーの扉が閉まる | 伏線の決定打 |
+| ASSET-072 | 天候急変タイムラプス | 最重要ターニングポイント |
+| ASSET-076 | 暴風に吹き飛ばされる | 衝撃映像 |
+| ASSET-088 | 冷たい血液の逆流 | 科学解説の核心 |
+| ASSET-116 | 薄着の男を発見 | ジューさん視点 |
+| ASSET-127 | 6人の命を救った洞窟 | クライマックス |
+| ASSET-137 | トラクターが泥を突破 | カタルシス |
+| ASSET-148 | 村人とランナーの別れ | 感動の締め |
+| ASSET-155 | 薄着のまま発見 | 衝撃 |
+| ASSET-177 | 21足の靴・朝日版 | エンディング対比 |
+
+### 実写素材リスト（著作権チェック必須）
+| ASSET/CHAR | 参照元 | 備考 |
+|:---|:---|:---|
+| CHAR-03（梁晶） | https://www.thepaper.cn/newsDetail_forward_12780425 | 澎湃新闻の記事より |
+| CHAR-04（黄関軍） | https://baijiahao.baidu.com/s?id=1700651489408633886 | 百度百家号の記事より |
+| CHAR-05（朱克銘） | https://www.sohu.com/a/468133775_121106654 | 搜狐新闻の記事より |
+
+### 著作権チェックリスト（全実写素材共通）
+使用前に以下を確認:
+① クリエイティブ・コモンズライセンスまたはフェアユース適用可能か
+② YouTube コンテンツポリシー（再利用コンテンツ）に抵触しないか
+③ 報道目的の引用として適切な範囲か
+④ 権利者のクレジット表記が必要か
+※ 確認できない場合はLovartフォールバックプロンプトを使用
+
+### 比率チェック
+- キャラアニメーション: 38.8%（フリー素材廃止・AI動画削減分を吸収）
+- 背景静止画（Ken Burns含む）: 32.6%（フリー素材廃止分を吸収）
+- AI動画: 6.7%（28本→12本に厳選。感情ピーク・ターニングポイントに集中投下）
+- Google Earth: 4.5%（変更なし）
+- 図解アニメ: 5.1%（ASSET-072をAI動画に転用のため1本減）
+- テキスト演出: 9.0%（ASSET-022, 088, 155をAI動画に転用のため3本減）
+- フリー素材: 0件（全てLovart生成に置換済み）
+
+### CHAR使用状況
+
+| キャラID | キャラ名 | 使用回数 | 登場セクション |
+|:---|:---|:---:|:---|
+| CHAR-01 | 張（チャン）28歳 | 6回 | Sec.2, Sec.7 |
+| CHAR-02 | 李（リー）52歳 | 5回 | Sec.2, Sec.8 |
+| CHAR-03 | 梁晶（リャン・ジン） | 7回 | Sec.5, Sec.6, Sec.8 |
+| CHAR-04 | 黄関軍（ホアン・グァンジュン） | 5回 | Sec.6, Sec.8 |
+| CHAR-05 | 朱克銘（ジュー・クーミン） | 7回 | Sec.9, Sec.11 |
+| 新規村人 | 布団を持つ女性 | 1回 | Sec.10 |
+
+### Google Earth座標まとめ
+
+| 座標 | 説明 | 使用ASSET |
+|:---|:---|:---|
+| 36°53'00"N 104°18'00"E | 黄河石林付近（スタート地点） | ASSET-003, ASSET-062 |
+| 36°32'00"N 104°10'00"E | 白銀市街地 | ASSET-012 |
+| 37°11'02"N 104°03'50"E | 黄河石林全景（俯瞰ポイント） | ASSET-036 |
+| 36°58'30"N 104°08'10"E | CP2-CP3間（セクション3急勾配） | ASSET-064 |
+| 36°59'42"N 104°17'19"E | ヤオトン（洞窟住居）付近 | ASSET-110 |
+
+### セクション別ASSET数一覧
+
+| セクション | 内容 | ASSET範囲 | ASSET数 |
+|:---|:---|:---|:---:|
+| Section 1 | フック（生還率0%の衝撃） | 001-011 | 11 |
+| Section 2 | 誰がために走るのか（被害者の深掘り） | 012-029 | 18 |
+| Section 3 | 人災の背景 | 030-040 | 11 |
+| Section 4 | マラソンバブルの正体 | 041-042 | 2 |
+| Section 5 | 致命的な「リストラ」 | 043-051 | 9 |
+| Section 6 | 背負ったもの（エリートたち） | 052-061 | 10 |
+| Section 7 | 急変の科学 | 062-075 | 14 |
+| Section 8 | 低体温症と、届かぬ悲鳴 | 076-105 | 30 |
+| Section 9 | 羊飼いという奇跡 | 106-130 | 25 |
+| Section 10 | 名もなき英雄たち（村の総力戦） | 131-148 | 18 |
+| Section 11 | 結末と教訓 | 149-178 | 30 |
+| **合計** | | | **178** |
+
+（終）
