@@ -117,10 +117,12 @@ Pure black background. Simple minimalist design. Photorealistic texture, subtle 
 **制作メモ:**
 荒涼とした岩場に散乱する21足のスポーツシューズ。強い風が砂埃を巻き上げている。人間はいない。映画のような暗いトーン、ローアングル、高コントラスト。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Desolate rocky desert terrain with 21 running shoes scattered across barren ground. Strong wind effect visible with dust and sand. No people visible. Low angle shot, cinematic dark moody tone, high contrast. Desaturated color palette with blue-grey tones. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°53'00"N 104°18'00"E（黄河石林レースコース付近）Altitude: 500m
+- カメラ: 低空から荒涼とした岩場の地形を俯瞰。乾燥した大地と岩の溝が見える
+- チルト: 60°（地形の起伏を近距離で強調）
+- 0s〜5s: ゆっくり右にパン（レースコースに沿って）
+- 所要時間: 5秒
 
 **CapCut編集指示（Ken Burns）:**
 - 0s〜5s: ゆっくり右へパン（画面の1/3分スクロール）
@@ -177,8 +179,13 @@ Silhouettes of fallen runners lying on the ground, shrouded in thick fog. Abstra
 **制作メモ:**
 黒背景に赤い文字で「共通点」の文字が浮かび上がる。文字が血のように滲む演出。
 
+**Lovart背景プロンプト（16:9）:**
+```
+Dark rocky desert terrain at twilight, deep shadows cast across barren ground. Ominous atmosphere with faint red-orange glow on horizon. Cracked dry earth, scattered small stones. Close-up ground-level angle looking across the flat desolate surface. Desaturated palette with crimson undertones. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
 **CapCut編集指示:**
-- 黒背景に赤文字「共通点」をテキストレイヤーで配置
+- 背景素材の上に赤文字「共通点」をテキストレイヤーで配置
 - 0s〜3s: 文字が不透明度0%→100%でフェードイン
 - 3s〜5s: 文字の周囲に赤い滲みエフェクト（血のイメージ）
 
@@ -274,7 +281,7 @@ Desert mountain trail race setting. Rocky barren terrain. Dramatic lighting from
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Marathon finish line with casual runners crossing safely. Relief and joy on their faces. Medical tents and support staff in background. Warm afternoon light. Positive hopeful atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+Marathon finish line area in Chinese rural setting, Gansu province. Finish arch banner with Chinese text visible. Warm afternoon sunlight, celebratory atmosphere. Scattered confetti on ground, timing clock display visible. Medium wide shot from slightly elevated angle. Warm golden tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -314,8 +321,13 @@ Close-up of folded windbreaker jacket inside a metal locker. Cool blue metallic 
 **制作メモ:**
 タイトル表示「エリートのパラドックス 〜強さが仇となった、生還率0%の罠〜」。文字が岩肌のテクスチャで浮かび上がる。
 
+**Lovart背景プロンプト（16:9）:**
+```
+Dramatic close-up of rough weathered rock face texture in Gansu province mountains. Deep cracks and striations in stone surface. Harsh side-lighting creating deep shadows in rock crevices. Desaturated earth tones with cold blue-grey cast. Overhead angle looking down at rocky cliff face. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
 **CapCut編集指示:**
-- 黒背景に岩肌テクスチャの白文字でタイトルを配置
+- 岩肌背景素材の上に白文字でタイトルを配置
 - 0s〜3s: 文字が下から上にスライドイン（Y軸+200px→0px）
 - 3s〜5s: 文字が微かに震える（±1px）
 
@@ -380,10 +392,12 @@ Japanese city marathon event with cheerful runners enjoying the race. Bright sun
 **制作メモ:**
 甘粛省の貧困地域の様子。質素な住居、干からびた大地。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Poor rural area in Gansu Province, China. Simple modest houses, dry cracked earth, sparse vegetation. Harsh living conditions visible. Desaturated color palette, documentary realism. Overcast grey sky. Photorealistic, shot on RED camera. Somber atmosphere. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°35'00"N 104°12'00"E（白銀市郊外の農村地帯）Altitude: 2km
+- カメラ: 農村地帯を俯瞰。乾燥した土地と質素な集落が見える
+- チルト: 45°（地形と集落の構造を見せる）
+- 0s〜5s: ゆっくりズームイン
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 背景を右→左にゆっくりスクロール（5秒で1/4画面分）
@@ -422,8 +436,13 @@ Marathon event poster close-up showing prize money details. Bold red text "1600 
 **制作メモ:**
 1ヶ月分の給料明細書のイメージ。金額「1600元」と「完走賞: 1600元」が並んで表示される。
 
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of a worn Chinese payroll slip on a rough wooden table. Creased paper with printed Chinese characters showing salary details. Nearby, a colorful marathon race flyer with prize money information. Rural Chinese household setting, dim warm incandescent lighting. Humble modest atmosphere. Warm desaturated tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
 **CapCut編集指示:**
-- 黒背景に2つの書類を並べて表示
+- 背景素材の上に2つの金額を並べて表示
 - 左: 給料明細（月給: 1600元）
 - 右: 大会ポスター（完走賞: 1600元）
 - 2つの「1600元」の文字を赤枠でハイライト
@@ -501,15 +520,11 @@ Simple Chinese apartment building exterior. Morning light. Urban poor neighborho
 CHAR-01（張）がランニングウェアに着替えるシーン。作業着→ランニングウェア。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-01）— Lovart 1:1（背景透過用）
-```
-[CHAR-01 reference] Zhang changing clothes, pulling off work uniform shirt and revealing running T-shirt underneath. Athletic lean build visible. Determined expression. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-01 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Small modest apartment room interior. Work uniform hanging on wall, running shoes on floor. Warm afternoon light through small window. Simple furniture. Photorealistic interior, natural documentary lighting. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-11共有]（ASSET-018で生成済み。同じ背景画像を使用）
 
 ■ 動かし方メモ（CapCut編集指示）:
 - キャラを画面中央に配置
@@ -530,15 +545,11 @@ Small modest apartment room interior. Work uniform hanging on wall, running shoe
 CHAR-01（張）が指輪を見つめるシーン。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-01）— Lovart 1:1（背景透過用）
-```
-[CHAR-01 reference] Zhang standing, holding a small ring up with right hand, gentle hopeful smile. Lean athletic build. Wearing casual T-shirt and pants. Full body, medium shot. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing tenderness. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-01 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Simple modest Chinese apartment room interior. Warm sunset light streaming through a small window. Sparse furniture. Dust particles floating in golden light beam. Warm nostalgic atmosphere, soft golden-orange palette. Photorealistic interior, natural documentary lighting. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-11共有]（ASSET-018で生成済み。同じ背景画像を使用）
 
 ■ 動かし方メモ（CapCut編集指示）:
 - キャラを画面中央やや左に配置（窓の前）
@@ -603,9 +614,7 @@ CHAR-02（李）が屈伸運動をしているシーン。
 ```
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Race starting line area with crowds of runners stretching and warming up. Morning sunlight, slightly hazy atmosphere. Starting arch banner visible in background. Colorful running bibs and gear scattered across the scene. No clear individual faces. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-01共有]（ASSET-017で生成済み。同じ背景画像を使用）
 
 ■ 動かし方メモ（CapCut編集指示）:
 - キャラを画面中央やや右に配置
@@ -627,15 +636,11 @@ Race starting line area with crowds of runners stretching and warming up. Mornin
 CHAR-02（李）が決意を秘めた表情で立っている。膝のサポーターが目立つ。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-02）— Lovart 1:1（背景透過用）
-```
-[CHAR-02 reference] Li standing in determined pose, arms at sides, fists slightly clenched. Weathered face with deep wrinkles, resolute eyes. Knee brace on right leg prominently visible. Wearing modest running clothes. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing determination. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-02 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Race starting area, early morning. Runners milling around in background, soft-focus. Warm morning sunlight casting long shadows. Simple outdoor setting with starting arch barely visible. Calm pre-race atmosphere. No clear individual faces. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-01共有]（ASSET-017で生成済み。同じ背景画像を使用）
 
 ■ 動かし方メモ（CapCut編集指示）:
 - キャラを画面中央に配置
@@ -655,15 +660,11 @@ Race starting area, early morning. Runners milling around in background, soft-fo
 CHAR-02（李）が手紙を胸元で見つめるシーン。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-02）— Lovart 1:1（背景透過用）
-```
-[CHAR-02 reference] Li standing, both hands gently holding a small folded letter near chest. Tender emotional expression, eyes looking down at the letter. Weathered face with deep wrinkles. Wearing modest running clothes with visible jacket pocket. Full body, medium shot. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing tenderness. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-02 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Race starting area, early morning. Runners milling around in background, soft-focus. Warm morning sunlight casting long shadows. Simple outdoor setting with starting arch barely visible. Calm pre-race atmosphere. No clear individual faces. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-01共有]（ASSET-017で生成済み。同じ背景画像を使用）
 
 ■ 動かし方メモ（CapCut編集指示）:
 - キャラを画面中央に配置
@@ -703,12 +704,16 @@ Close-up of handwritten letter with childish writing in Chinese characters "爸�
 ナレーター: まさかそれが、娘への遺書になるとは知らずに。
 
 **制作メモ:**
-手紙の画像がゆっくりフェードアウト。暗転していく。
+手紙が風に吹かれて地面に落ちる。暗転していく。
+
+**AI動画プロンプト（Google Flow）:**
+```
+A small folded letter falling from someone's hand onto dry dusty ground in Gansu province. The paper lands face-down on cracked earth. Camera slowly pulls back as shadows grow longer and darker, the warm light gradually fading to cold blue-gray darkness. Wind picks up dust around the letter. Somber and foreboding atmosphere. Photorealistic, cinematic, 16:9 aspect ratio. 5 seconds duration.
+```
 
 **CapCut編集指示:**
-- 前ASSETの手紙画像を継続使用
-- 0s〜5s: 画面全体がゆっくりフェードアウト（100%→0%）
-- 全体に暗いブルーのカラーグレーディング
+- 3s〜5s: 全体に暗いブルーのカラーグレーディングを徐々に適用
+- 4s〜5s: フェードアウト（不透明度100%→0%）
 
 **SE:**
 風の音（ヒュウ…）が徐々に大きくなる
@@ -729,9 +734,7 @@ Group of marathon runners lined up at starting line. Diverse ages and builds, ne
 ```
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Marathon starting line with starting arch banner. Morning light, slight haze. Race setup visible with timing equipment. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-01共有]（ASSET-017で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -752,10 +755,12 @@ Marathon starting line with starting arch banner. Morning light, slight haze. Ra
 **制作メモ:**
 黄河石林の険しい岩山。不気味な岩の林が続く風景。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Yellow River Stone Forest (Huanghe Shilin) dramatic rock formations. Sharp jagged stone pillars rising from barren desert. Ominous dark moody atmosphere, overcast stormy sky. No people visible. Photorealistic landscape, shot on RED camera. Cinematic wide shot. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°26'00"N 104°03'00"E（黄河石林エリア）Altitude: 3km
+- カメラ: 黄河石林の険しい岩山を俯瞰。奇岩が林立する特異な地形
+- チルト: 50°（岩の林の構造を強調）
+- 0s〜5s: ゆっくりズームイン、岩山に迫る
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 背景を下→上にゆっくりスクロール（5秒で半画面分）で岩山を見上げる視点
@@ -782,12 +787,17 @@ Yellow River Stone Forest (Huanghe Shilin) dramatic rock formations. Sharp jagge
 ナレーター: 21人もの尊い命が失われた地獄のマラソン大会。そもそもなぜこの大会は開催されたのでしょうか？
 
 **制作メモ:**
-黒背景に白文字で疑問符「?」が浮かび上がる。
+大会会場の廃墟化した風景。大会後に放置されたゲート。
+
+**Google Earthアニメーション:**
+- 開始座標: 36°53'00"N 104°18'00"E（レース会場付近）Altitude: 1km
+- カメラ: レース会場の周辺を俯瞰。大会施設のあった平地と周辺の荒野
+- チルト: 45°
+- 0s〜5s: ゆっくりパン（北方向へ、レースコースの方向を見せる）
+- 所要時間: 5秒
 
 **CapCut編集指示:**
-- 黒背景に巨大な白文字「?」を配置
-- 0s〜3s: 不透明度0%→100%でフェードイン
-- 3s〜5s: 文字が徐々に拡大（1.0→1.2倍）
+- 0s〜5s: ゆっくり近づく（1.0→1.15倍）
 
 **SE:**
 なし
@@ -799,13 +809,17 @@ Yellow River Stone Forest (Huanghe Shilin) dramatic rock formations. Sharp jagge
 ナレーター: その背景には、当時の中国が抱えていた「歪み」がありました。
 
 **制作メモ:**
-中国の地図。甘粛省が赤く強調される。
+中国全土の地図。甘粛省が赤く強調される。
+
+**Lovart背景プロンプト（16:9）:（[Lovart静止画 + 編集者]）**
+```
+Overhead view of a large physical map of China spread on a dark wooden desk. Warm desk lamp lighting. A red marker or pin placed on the northwest region (Gansu province area). Old worn paper texture. Documentary research style. Photorealistic, shallow depth of field focused on the map. 16:9 aspect ratio. Generate 5 images.
+```
 
 **CapCut編集指示:**
-- 中国全土の地図画像を表示
-- 甘粛省の部分を赤く塗りつぶし
+- 編集者が甘粛省の部分を赤く塗りつぶすオーバーレイを追加
 - 0s〜3s: 地図全体を表示
-- 3s〜5s: 甘粛省部分にズームイン（1.0→1.5倍）
+- 3s〜5s: 甘粛省部分にゆっくり近づく（1.0→1.5倍）
 
 **SE:**
 なし
@@ -840,10 +854,12 @@ Historical photo-style image of Baiyin City in its industrial heyday. Active cop
 **制作メモ:**
 廃墟となった工場の空撮。錆びた設備、壊れた窓。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Aerial view of abandoned copper factory ruins in Gansu Province. Rusted equipment, broken windows, overgrown weeds. Desolate atmosphere, desaturated color palette. Cinematic lighting, overcast sky. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°33'30"N 104°10'30"E（白銀市工業地区）Altitude: 3km
+- カメラ: 白銀市の工場跡地を俯瞰。かつて銅採掘で栄えた工業地帯の広大な施設群
+- チルト: 45°（地上の建造物を見せる）
+- 0s〜5s: ゆっくりズームアウト（荒廃した全景を見せる）
+- 所要時間: 5秒
 
 **CapCut編集指示（Ken Burns）:**
 - 0s〜5s: ゆっくりズームアウト（1.3→1.0倍）で荒廃した全景を見せる
@@ -863,7 +879,7 @@ Aerial view of abandoned copper factory ruins in Gansu Province. Rusted equipmen
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Deserted Chinese small town shopping street with shuttered storefronts. Faded signs, peeling paint, trash blowing in the wind. Lonely elderly person's silhouette in distance. Grey overcast sky. Photorealistic, shot on RED camera. Somber desolate atmosphere. 16:9 aspect ratio. Generate 5 images.
+Deserted Chinese shopping street with all metal shutters closed. Empty narrow road, no pedestrians. Trash and plastic bags scattered on ground. Old faded shop signs in Chinese characters hanging crooked. Late afternoon harsh sunlight creating long shadows. Street-level perspective looking down the empty corridor of closed shops. Bleak desolate atmosphere, warm but melancholy tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -964,7 +980,7 @@ Single die frozen mid-roll on black background. Dramatic lighting from above, ex
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Large billboard displaying marathon prize money announcement "完走奖金1600元" in bold red text. Poor rural people in simple clothing looking up at billboard from below. Low angle shot. Documentary realism. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
+Large outdoor billboard advertisement in rural Chinese village, Gansu province. Billboard shows marathon event poster with bold red Chinese text promoting prize money. Small crowd of modest rural villagers seen from behind, looking up at the billboard. Dusty unpaved road, simple brick buildings nearby. Overcast sky, flat documentary lighting. Medium shot from behind the crowd looking up at the billboard. Warm muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -1014,10 +1030,12 @@ Large billboard displaying marathon prize money announcement "完走奖金1600�
 **制作メモ:**
 チェックポイントのテント。ボロボロで無人。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Unmanned checkpoint tent at mountain trail. Worn tattered fabric, empty folding table with only water bottles. No staff present. Desolate barren mountain setting. Documentary realism. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°55'00"N 104°14'00"E（CP1付近の山間部）Altitude: 2km
+- カメラ: チェックポイント付近の山間の道を俯瞰。荒涼とした山道が見える
+- チルト: 50°
+- 0s〜5s: ゆっくりズームイン
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 背景をゆっくりズームイン（1.0→1.2倍、5秒かけて）
@@ -1035,10 +1053,13 @@ Unmanned checkpoint tent at mountain trail. Worn tattered fabric, empty folding 
 **制作メモ:**
 張りぼてのメタファー。豪華に見える看板の裏側は何もない（イラスト）。
 
+**Lovart背景プロンプト（16:9）:**
+```
+Split composition showing contrast: left side a glossy polished Chinese marathon event banner with gold lettering and professional graphics, right side revealing the shabby reality behind it — a bare dirt road with a single flimsy plastic table as a checkpoint in Gansu province desert. Peeling facade metaphor. Harsh midday sun. Desaturated cynical tones on right side, oversaturated artificial colors on left. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
 **CapCut編集指示:**
-- 左右2分割画面
-- 左: 豪華な大会ポスター
-- 右: ボロボロの実際のチェックポイント
+- 左右2分割画面を背景素材の上に構成
 - 2s時点で左の画面が崩れ落ちるアニメーション
 
 **SE:**
@@ -1081,10 +1102,15 @@ Electronic scoreboard at race starting line displaying weather forecast "Sunny /
 ナレーター: 気温は予報で20度前後まで上がるとされていました。山の天気としては、これ以上ない完璧なコンディションに見えたのです。
 
 **制作メモ:**
-天気予報のグラフ。気温曲線が20℃を指している。
+天気予報のグラフ。気温曲線が20℃を指している。[Lovart静止画 + 編集者]
+
+**Lovart背景プロンプト（16:9）:**
+```
+Clean modern weather forecast display screen background. Soft blue gradient background with subtle grid lines. Professional meteorological data aesthetic. Clean minimalist design with faint topographic map of Gansu province in background. Cool blue and white tones. Photorealistic digital display, sharp clean. 16:9 aspect ratio. Generate 5 images.
+```
 
 **CapCut編集指示:**
-- 白背景に気温グラフを表示
+- 背景素材の上に気温グラフを配置
 - 横軸: 時間（8時〜16時）
 - 縦軸: 気温（0℃〜30℃）
 - 赤い線が20℃付近を推移
@@ -1123,9 +1149,13 @@ Close-up of official document titled "Required Equipment List" in Chinese charac
 **制作メモ:**
 防寒具のイラスト。ウインドブレーカー、手袋、帽子が並ぶ。
 
+**Lovart背景プロンプト（16:9）:**
+```
+Neatly arranged cold weather running gear laid out on a flat surface. Windbreaker jacket, thermal gloves, wool beanie hat, and neck gaiter displayed in organized grid. Clean white background surface with soft even lighting. Top-down flat lay photography perspective. Bright clinical tones. Photorealistic, shot on RED camera. Product photography style. 16:9 aspect ratio. Generate 5 images.
+```
+
 **CapCut編集指示:**
-- 白背景にウインドブレーカー、手袋、帽子のシルエットを配置
-- 各アイテムに緑色の「✓」マークが順番につけられるアニメーション
+- 背景素材の上に各アイテムに緑色の「✓」マークが順番につけられるアニメーション
 
 **SE:**
 チェック音「ピッ、ピッ、ピッ」
@@ -1141,7 +1171,7 @@ Close-up of official document titled "Required Equipment List" in Chinese charac
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Official equipment checklist document with "Windproof Jacket" item crossed out with thick red line. Red rubber stamp saying "Recommended Only" in Chinese characters. Paper texture, pen marks visible. Photorealistic document close-up, shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+Close-up of official equipment checklist document on a clipboard. Chinese text printed in formal font. One line item highlighted with a thick red strikethrough mark. A red rubber stamp impression reading "Recommended" in Chinese next to the crossed-out item. Shallow depth of field focusing on the strikethrough. Warm indoor lighting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -1168,9 +1198,7 @@ Group of marathon runners smiling with relief, removing heavy jackets from gear 
 ```
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Pre-race preparation area with gear bags and lockers. Morning light, cheerful atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-01共有]（ASSET-017で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -1198,9 +1226,7 @@ CHAR-03（梁晶）が腕組みをして自信満々に立っている。軽装�
 ```
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Race equipment check area with metal lockers in background. Other runners putting on jackets and rain gear. Morning light, slightly overcast sky visible through open structure. Organized pre-race atmosphere. No clear individual faces. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-01共有]（ASSET-017で生成済み。同じ背景画像を使用）
 
 ■ 動かし方メモ（CapCut編集指示）:
 - キャラを画面左1/3に配置
@@ -1222,7 +1248,7 @@ Race equipment check area with metal lockers in background. Other runners puttin
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Close-up of bright orange windbreaker jacket neatly folded inside metal locker. Cool metallic interior. Locker door slightly ajar. Cinematic lighting with dramatic shadows. Shallow depth of field. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+Row of metal sports lockers in a Chinese athletic facility changing room. One locker door slightly ajar, folded blue windbreaker jacket visible inside on the shelf. Fluorescent overhead lighting casting cold blue-white glow. Medium shot at eye level focusing on the open locker. Industrial utilitarian atmosphere. Cool desaturated tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示（Ken Burns）:**
@@ -1243,7 +1269,7 @@ Close-up of bright orange windbreaker jacket neatly folded inside metal locker. 
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Extreme close-up of metal key inserted in locker keyhole. Focus on key and lock mechanism. Dark moody lighting with single light source from side. Dramatic cinematic moment. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+Extreme close-up of a metal locker key being turned in a keyhole. Fingers gripping the small silver key mid-rotation. Scratched metal surface around the keyhole catching dim light. Very shallow depth of field, only the key in sharp focus. Dramatic side lighting creating strong shadows. Dark ominous mood. Photorealistic, macro photography style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示（Ken Burns）:**
@@ -1274,15 +1300,11 @@ Extreme close-up of metal key inserted in locker keyhole. Focus on key and lock 
 CHAR-03（梁晶）の全身立ち絵。軽装で自信に満ちた表情。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-03）— Lovart 1:1（背景透過用）
-```
-[CHAR-03 reference] Liang Jing standing in neutral ready pose. Muscular lean physique, confident determined expression. Wearing minimal racing gear (T-shirt and shorts). Headlamp on forehead. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing fierce determination. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-03 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Race starting area with mountains in background. Early morning light. Other runners in soft focus background. Organized pre-race atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-01共有]（ASSET-017で生成済み。同じ背景画像を使用）
 
 ■ 動かし方メモ（CapCut編集指示）:
 - キャラを画面中央に配置
@@ -1319,15 +1341,11 @@ Slow-motion close-up of metal locker door closing heavily. Inside the locker, a 
 CHAR-03（梁晶）が力強く走るシーン。疾走感のある動き。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-03）— Lovart 1:1（背景透過用）
-```
-[CHAR-03 reference] Liang Jing in dynamic running pose, one foot off ground, arms pumping powerfully. Muscular lean physique, determined fierce expression. Headlamp on forehead. Wearing minimal racing gear (T-shirt and shorts). Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing fierce determination. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-03 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Dark night road stretching into distance. Single headlamp beam cutting through darkness ahead. Motion blur on roadside terrain and sparse vegetation. Dark moody atmosphere, cool blue-black tones with single warm light source from center. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-02共有]（ASSET-007で生成済み。同じ背景画像を使用）
 
 ■ 動かし方メモ（CapCut編集指示）:
 - キャラを画面中央に配置
@@ -1349,7 +1367,7 @@ Dark night road stretching into distance. Single headlamp beam cutting through d
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Smartphone video call screen showing toddler daughter waving happily. Bright cheerful video call UI. Child's innocent smile. Photorealistic smartphone screen, soft bokeh background. 16:9 aspect ratio. Generate 5 images.
+POV shot of a smartphone screen showing a video call. On the screen, a blurry living room background with warm lighting and a small toddler girl waving happily. The phone is held by a hand with athletic wristband visible. Soft bokeh background of an outdoor athletic venue behind the phone. Warm intimate lighting. Close-up perspective from behind the phone holder. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -1397,15 +1415,11 @@ Simple rural Chinese setting. Morning light. Modest background. Photorealistic, 
 CHAR-04（黄関軍）が走るシーン。穏やかだが力強い走り。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-04）— Lovart 1:1（背景透過用）
-```
-[CHAR-04 reference] Huang Guanjun in running pose, side profile view, arms pumping steadily. Humble quiet expression of deep focus. Wearing old slightly worn running clothes. Athletic stride. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing quiet determination. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-04 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Empty rural Chinese dirt road at early dawn. Flat farmland stretching to horizon on both sides. Soft pink-orange dawn sky with thin clouds. Morning mist hovering low over fields. Quiet lonely beautiful atmosphere. No other people visible. Photorealistic rural landscape, soft morning light, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-12共有]（ASSET-056で生成済み。同じ背景画像を使用）
 
 ■ 動かし方メモ（CapCut編集指示）:
 - キャラを画面左1/3に配置、横向き（右を向いて走る姿）
@@ -1453,15 +1467,11 @@ Realistic illustration based on real photo of Huang Guanjun wearing medal around
 CHAR-04（黄関軍）が決意を秘めた表情で立っている。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-04）— Lovart 1:1（背景透過用）
-```
-[CHAR-04 reference] Huang Guanjun standing in determined pose, fists clenched at sides. Humble quiet expression with hint of desperation. Wearing old slightly worn running clothes. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing quiet determination and need. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-04 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Race starting area, early morning. Simple outdoor setting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-01共有]（ASSET-017で生成済み。同じ背景画像を使用）
 
 ■ 動かし方メモ（CapCut編集指示）:
 - キャラを画面中央に配置
@@ -1480,10 +1490,12 @@ Race starting area, early morning. Simple outdoor setting. Photorealistic, shot 
 **制作メモ:**
 スタートの号砲と共に一斉に走り出すランナーたちの足元。スローモーション。砂煙が舞う。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Ground level close-up of marathon runners' feet at starting line. Multiple pairs of running shoes on sandy ground. Dust and sand particles visible. Low angle shot, tight framing on feet and lower legs. Dramatic cinematic lighting. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°53'00"N 104°18'00"E（スタート地点）Altitude: 100m
+- カメラ: スタート地点の砂利道を極低空で俯瞰。ランナーの足元レベルの迫力
+- チルト: 75°（地面すれすれの視点）
+- 0s〜5s: ゆっくり左→右にパン（足元のトレイルに沿って）
+- 所要時間: 5秒
 
 **CapCut編集指示（Ken Burns）:**
 - 0s〜5s: ゆっくり左→右にパン（足元を横にスクロール）
@@ -1501,10 +1513,13 @@ Ground level close-up of marathon runners' feet at starting line. Multiple pairs
 **制作メモ:**
 カメラが徐々に上空へ引き、ランナーたちが荒野の点になっていく様子を見せる。
 
-**Lovart背景プロンプト（16:9）:**
-```
-High altitude aerial view of barren Yellow River Stone Forest landscape. Small dots of marathon runners visible spreading across vast desolate terrain. Cinematic wide shot, epic scale. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°53'00"N 104°18'00"E（スタート地点）Altitude: 800m
+- 終了座標: 36°53'00"N 104°18'00"E Altitude: 10km
+- カメラ: スタート地点から上空へ引き上げ、ランナーたちが荒野の点になっていく演出
+- チルト: 90°→60°（真上から斜め俯瞰へ変化）
+- 0s〜5s: ゆっくりズームアウト（広大な荒野を見せる）
+- 所要時間: 5秒
 
 **CapCut編集指示（Ken Burns）:**
 - 0s〜5s: ゆっくりズームアウト（1.3→1.0倍）で広大な荒野を見せる
@@ -1560,9 +1575,7 @@ Marathon runners jogging comfortably, wiping sweat from foreheads, some smiling.
 ```
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Mountain trail marathon course under bright blue sky. Sunny warm conditions. Rocky terrain with clear visibility. Bright warm color palette. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-02共有]（ASSET-007で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -1603,10 +1616,12 @@ Google EarthでCP2からセクション3の急勾配区間をハイライト。
 **制作メモ:**
 荒涼とした岩肌の急斜面。ランナー視点で見上げるような崖が続く。
 
-**Lovart背景プロンプト（16:9）:**
-```
-POV shot looking up steep rocky mountain slope. Barren rocky terrain stretching upward at steep angle. Harsh desolate landscape, no vegetation. Grey-brown earth tones. Daunting vertical ascent. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°58'00"N 104°08'00"E（セクション3入口付近）Altitude: 500m
+- カメラ: 標高2000mの急勾配を見上げるように、崖面に沿ってチルトアップ
+- チルト: 70°→30°（地面レベルから見上げる演出）
+- 0s〜5s: 低空から急斜面に沿って上昇
+- 所要時間: 5秒
 
 **CapCut編集指示（Ken Burns）:**
 - 0s〜5s: ゆっくり下→上にパン（画面の1/3分スクロール）で見上げる視点を強調
@@ -1624,8 +1639,15 @@ POV shot looking up steep rocky mountain slope. Barren rocky terrain stretching 
 **制作メモ:**
 黒背景に赤い文字で「自然の罠」がフェードイン。
 
+**Google Earthアニメーション:**
+- 開始座標: 36°58'30"N 104°08'10"E（セクション3のV字谷入口）Altitude: 2km
+- カメラ: V字谷の構造を俯瞰。切り立った岩壁に挟まれた狭い通路
+- チルト: 45°（谷の深さと狭さを強調）
+- 0s〜5s: 谷の入口から奥へゆっくりパン
+- 所要時間: 5秒
+
 **CapCut編集指示:**
-- 黒背景に赤文字「自然の罠」をテキストレイヤーで配置
+- 背景素材の上に赤文字「自然の罠」をテキストレイヤーで配置
 - 0s〜3s: 不透明度0%→100%でフェードイン
 - 3s〜5s: 文字が脈動するように拡大・縮小（1.0→1.05→1.0、1秒周期）
 
@@ -1641,10 +1663,12 @@ POV shot looking up steep rocky mountain slope. Barren rocky terrain stretching 
 **制作メモ:**
 晴天の空が早回しで一気に漆黒の雲に覆われるタイムラプス。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Dramatic sky split in half: left side clear bright blue sky, right side massive dark black storm clouds. Ominous transformation from light to dark. Camera looking straight up. Dramatic color contrast. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°58'30"N 104°08'10"E（セクション3）Altitude: 3km
+- カメラ: セクション3の山岳地帯を広く俯瞰。尾根と谷が交互に見える地形
+- チルト: 45°
+- 0s〜5s: ゆっくりパン（東→西方向、嵐の進行方向）
+- 所要時間: 5秒
 
 **CapCut編集指示（Ken Burns）:**
 - 0s〜5s: ゆっくり左→右にパン（晴天→暗雲へのトランジション）
@@ -1664,10 +1688,8 @@ Dramatic sky split in half: left side clear bright blue sky, right side massive 
 暴風雨の中のランナー。CHAR-01（張）が風に耐えながら進む。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-01）— Lovart 1:1（背景透過用）
-```
-[CHAR-01 reference] Zhang struggling forward, body leaning into strong wind. One arm shielding face, other arm reaching forward. Lean athletic build, sun-tanned skin, short black hair. Wearing running gear, soaked and disheveled. Pained determined expression. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing pain and determination. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-01 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
 ```
@@ -1695,10 +1717,12 @@ Mountain ridge in violent rainstorm. Dark grey sky, sheets of rain falling diago
 **制作メモ:**
 暴風雨の中で立ち尽くすランナーたちのシルエット。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Silhouettes of runners standing helplessly in violent mountain storm. Heavy rain and hail, strong diagonal wind visible. Dark dramatic sky. Figures barely visible through rain. Cold blue-grey desaturated tones. Photorealistic storm scene, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°59'00"N 104°08'00"E（セクション3尾根上）Altitude: 500m
+- カメラ: 尾根上を低空飛行。切り立った岩壁に挟まれた風の通り道を見せる
+- チルト: 60°（地形の迫力を強調）
+- 0s〜5s: 尾根に沿って低空でゆっくり前進
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 背景を左右に微揺れ（±5px、0.3秒周期）で暴風を表現
@@ -1716,10 +1740,16 @@ Silhouettes of runners standing helplessly in violent mountain storm. Heavy rain
 **制作メモ:**
 天気予報の「晴れ」アイコンが崩壊して嵐のアイコンに変わるアニメーション。
 
+**AI動画プロンプト（Google Flow）:**
+```
+Clear sunny sky rapidly transforming into violent storm. Starting with bright blue sky and warm golden sunlight over Gansu desert mountains, then dark menacing clouds surge in from all directions. Lightning flashes illuminate the darkening landscape. Dramatic weather transition from calm to chaos. Camera looking up at sky, fixed position. Cinematic color shift from warm gold to cold grey-blue. Photorealistic, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
 **CapCut編集指示:**
-- 0s〜2s: 太陽アイコン（黄色）を画面中央に表示
-- 2s〜3s: 太陽アイコンが割れて崩壊するアニメーション
-- 3s〜5s: 嵐の雲アイコン（黒+雨+雷）に変化
+- AI動画素材を使用
+- 0s〜2s: 晴天の空
+- 2s〜3s: 急激な天候変化
+- 3s〜5s: 嵐へ変貌
 
 **SE:**
 ガラスが割れるような音「パリーン」
@@ -1731,15 +1761,18 @@ Silhouettes of runners standing helplessly in violent mountain storm. Heavy rain
 ナレーター: それはセクション3の尾根が、切り立った岩壁に挟まれた、巨大な風の通り道だったからです。
 
 **制作メモ:**
-地形図。狭い谷間を風が通り抜ける図解アニメーション。V字谷の構造を示す。
+地形図。狭い谷間を風が通り抜ける図解アニメーション。V字谷の構造を示す。[Lovart静止画 + 編集者]
 
-**図解アニメーション:**
-- 左右に高い山がある狭い谷間（V字谷）の断面図
-- 入り口には「風速5m」の青い矢印
-- 谷間で矢印が赤くなり太さが増す
-- 出口で「風速20m以上」と表示
+**Lovart背景プロンプト（16:9）:**
+```
+Cross-section view of a dramatic V-shaped mountain gorge with steep rocky cliff walls on both sides. Narrow passage between towering rock formations in arid Gansu province terrain. Bird's eye perspective showing the funnel-like canyon shape. Geological diagram aesthetic with photorealistic rock textures. Cool grey-brown earth tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
 
 **CapCut編集指示:**
+- 背景素材の上にV字谷の地形断面図の矢印・テキストを配置
+- 入り口に「風速5m」の青い矢印
+- 谷間で矢印が赤くなり太さが増す
+- 出口で「風速20m以上」と表示
 - 0s〜2s: V字谷の地形断面図を表示
 - 2s〜5s: 青い矢印が入口から赤い矢印に変化しながら通過するアニメーション
 
@@ -1770,14 +1803,16 @@ Dramatic time-lapse of weather changing rapidly over mountain landscape. Startin
 ナレーター: 風も同じ。狭い場所を通り抜ける時、その速度は何倍にも加速する性質があります。
 
 **制作メモ:**
-同じ図解を地形に適用。V字谷に風が入り、加速して出てくる。
+同じ図解を地形に適用。V字谷に風が入り、加速して出てくる。[Lovart静止画 + 編集者]
 
-**図解アニメーション:**
-- V字谷の3D俯瞰図
-- 白い風の流れ（パーティクル）が入口から入り、谷間で圧縮され加速
-- 出口で爆発的に広がる
+**Lovart背景プロンプト（16:9）:**
+```
+Cross-section diagram of a narrow V-shaped mountain valley viewed from the side. Rocky cliff walls converging to a narrow bottleneck passage. Clean dark background with geological cross-section illustration style. Arrows showing wind flow pattern entering wide, compressing through narrow gap, and accelerating out the other side. Scientific educational diagram aesthetic, clean lines. Photorealistic terrain texture. 16:9 aspect ratio. Generate 5 images.
+```
 
 **CapCut編集指示:**
+- 背景素材の上に風の流れを示す白いパーティクル矢印を配置
+- 入口から入り、谷間で圧縮され加速、出口で爆発的に広がる
 - 0s〜5s: 風のパーティクルが入口→圧縮→加速→出口の流れをアニメーション
 
 **SE:**
@@ -1790,13 +1825,18 @@ Dramatic time-lapse of weather changing rapidly over mountain landscape. Startin
 ナレーター: 平地では風速5メートル程度だった風が、この狭い地形に吸い込まれた瞬間、風速20メートル以上の暴風に変貌したのです。
 
 **制作メモ:**
-風速計のアニメーション。5m/s→20m/sへ急上昇。
+風速計のアニメーション。5m/s→20m/sへ急上昇。[Lovart静止画 + 編集者]
+
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of a vintage analog anemometer (wind speed gauge) with metal casing and glass face. Circular dial with numbered markings from 0 to 30 m/s. Industrial weathered metal texture. Single needle pointer. Red danger zone marking on the high end of the dial. Dark moody background with dramatic side lighting. Photorealistic instrument close-up, shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+```
 
 **CapCut編集指示:**
-- 風速計（アナログメーター）のグラフィック
-- 0s〜2s: 針が「5m/s」を指している
-- 2s〜4s: 針が一気に「20m/s」まで跳ね上がる
-- 4s〜5s: 針が振り切れて「DANGER」表示が赤く点滅
+- 背景素材の上に風速の数値テキストを配置
+- 0s〜2s: 「5m/s」のテキスト表示
+- 2s〜4s: 数値が一気に「20m/s」まで跳ね上がるアニメーション
+- 4s〜5s: 「DANGER」表示が赤く点滅
 
 **SE:**
 メーターの針が動く「ピピピピ…」→ 警告音「ビービービー！」
@@ -1817,9 +1857,7 @@ Runner crouching low against extreme wind. Body bent at 45 degrees into the wind
 ```
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Mountain ridge in extreme storm. Rain and debris flying horizontally. Dark stormy atmosphere, near zero visibility. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-04共有]（ASSET-068で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -1867,11 +1905,16 @@ Runner being blown off their feet by extreme wind on exposed mountain ridge. Bod
 ナレーター: 公式報告書によると、この時、気温は急降下しましたが、それでも数値上は「マイナス」ではありませんでした。
 
 **制作メモ:**
-温度計のアニメーション。気温が下がるが0℃は下回らない。
+温度計のアニメーション。気温が下がるが0℃は下回らない。[Lovart静止画 + 編集者]
+
+**Lovart背景プロンプト（16:9）:**
+```
+Large analog thermometer against dark moody background. Mercury column showing temperature dropping rapidly. Red mercury line visible between 0 and 10 degrees Celsius. Frost crystals forming on the glass tube. Close-up macro shot of the thermometer face. Cold blue-white lighting with ice textures. Scientific clinical atmosphere. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
+```
 
 **CapCut編集指示:**
-- 温度計のグラフィックを画面中央に配置
-- 0s〜3s: 赤い液が20℃→5℃へ急降下するアニメーション
+- 背景素材の上に温度の数値テキストを配置
+- 0s〜3s: 温度が20℃→5℃へ急降下するアニメーション
 - 3s〜5s: 「0℃」のラインを赤い点線で表示し、ギリギリ上回っていることを強調
 
 **SE:**
@@ -1888,7 +1931,7 @@ Runner being blown off their feet by extreme wind on exposed mountain ridge. Bod
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Blackboard-style background with white chalk writing showing formula: "Wet Body (Water) x Strong Wind (Wind) = Rapid Freezing (Freeze)". Text appearing to freeze with ice crystal effects. Dark classroom aesthetic. Photorealistic chalkboard texture, dramatic lighting. 16:9 aspect ratio. Generate 5 images.
+Dark green chalkboard surface with chalk dust and eraser marks. Worn textured surface of a well-used educational blackboard. Faint chalk residue creating subtle patterns. Overhead fluorescent lighting creating slight glare on board surface. Front-facing straight-on shot of the chalkboard. Academic classroom atmosphere. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -1909,7 +1952,7 @@ Blackboard-style background with white chalk writing showing formula: "Wet Body 
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Inside industrial freezer room. Large fans visible, frost forming on metal surfaces. Ice crystals and condensation everywhere. Cold blue-white lighting. Claustrophobic confined space. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
+Interior of industrial walk-in freezer with thick frost on metal walls. Large ventilation fan spinning behind metal grate. Ice crystals suspended in air, visible breath vapor. Fluorescent cold blue lighting creating harsh shadows. Water droplets frozen mid-splash on metal floor. Wide angle shot from inside looking toward the fan. Extreme cold industrial atmosphere. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示（Ken Burns）:**
@@ -1936,9 +1979,7 @@ Runner on hands and knees crawling desperately. Body trembling, covered in mud. 
 ```
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Mountain slope in violent rainstorm. Muddy terrain, near white-out visibility. Dark stormy atmosphere. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-04共有]（ASSET-068で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -1961,15 +2002,11 @@ Mountain slope in violent rainstorm. Muddy terrain, near white-out visibility. D
 CHAR-02（李）が激しく震えている。膝をついた状態。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-02）— Lovart 1:1（背景透過用）
-```
-[CHAR-02 reference] Li on his knees, body collapsing forward. Arms limp at sides. Eyes half-closed, pale exhausted face. Weathered face with deep wrinkles. Wearing modest running clothes, soaked and mud-stained. Knee brace visible. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing exhaustion. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-02 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Barren mountain slope in heavy rain. Muddy trail with puddles. Grey overcast stormy sky, near-whiteout conditions. Cold desaturated blue-grey tones. No people visible. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-04共有]（ASSET-068で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -1990,10 +2027,15 @@ Barren mountain slope in heavy rain. Muddy trail with puddles. Grey overcast sto
 ナレーター: これが「低体温症」の初期症状です。
 
 **制作メモ:**
-黒背景に白文字で「低体温症」のテキスト。医学的な図解風。
+黒背景に白文字で「低体温症」のテキスト。医学的な図解風。[Lovart静止画 + 編集者]
+
+**Lovart背景プロンプト（16:9）:**
+```
+Medical examination room background with dark moody lighting. Frost and ice crystals forming on a clinical metal surface. Cold blue surgical light from above casting harsh shadows. Stethoscope and medical chart barely visible in background blur. Sterile ominous hospital aesthetic. Deep cold blue and black tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
 
 **CapCut編集指示:**
-- 黒背景に白文字「低体温症 Hypothermia」をテキストレイヤーで配置
+- 背景素材の上に白文字「低体温症 Hypothermia」をテキストレイヤーで配置
 - 0s〜3s: テキストが不透明度0%→100%でフェードイン
 - 3s〜5s: テキストの下に「体温 37℃ → 35℃」のバーが表示
 
@@ -2007,13 +2049,16 @@ Barren mountain slope in heavy rain. Muddy trail with puddles. Grey overcast sto
 ナレーター: しかし、体温が35度を切ると、その震えさえ止まります。
 
 **制作メモ:**
-震えが突然止まる演出。静止。不気味な静寂。
+震えが突然止まる演出。体温計が35℃を下回るクローズアップ。
+
+**AI動画プロンプト（Google Flow）:**
+```
+Extreme close-up of a medical thermometer display showing temperature dropping below 35 degrees Celsius. Digital numbers flickering and declining. Red warning indicator flashing. Cold blue lighting. The display cracks slightly as temperature drops. Ominous and clinical atmosphere. Photorealistic medical equipment, 16:9 aspect ratio. 5 seconds duration.
+```
 
 **CapCut編集指示:**
-- 前ASSETの体温バーを継続
-- 0s〜3s: バーが「35℃」を下回る → 赤く点滅
 - 3s: 全ての音がピタッと止まる（完全無音）
-- 3s〜5s: 黒背景に「震えが止まる = 体が諦めた」のテキスト
+- 3s〜5s: 画面がゆっくり暗転
 
 **SE:**
 ガタガタ音が「35℃」の瞬間にピタッと消える → 完全無音（2秒）
@@ -2025,10 +2070,15 @@ Barren mountain slope in heavy rain. Muddy trail with puddles. Grey overcast sto
 ナレーター: エネルギーが尽きてしまうのです。
 
 **制作メモ:**
-人体のエネルギーゲージが空になるアニメーション。
+人体のエネルギーゲージが空になるアニメーション。[Lovart静止画 + 編集者]
+
+**Lovart背景プロンプト（16:9）:**
+```
+Human body silhouette outline against pure black background. Translucent anatomical view showing internal energy systems dimming. Fading orange-red glow inside torso representing depleting energy reserves. Simple clean medical illustration style with dark background. Front-facing full body view. Cool clinical atmosphere with dramatic contrast. Photorealistic medical visualization. 16:9 aspect ratio. Generate 5 images.
+```
 
 **CapCut編集指示:**
-- ゲームのHP/エネルギーバー風のグラフィック
+- 背景素材の上にゲームのHP/エネルギーバー風のグラフィックを配置
 - 0s〜3s: 緑のバーが急速に減少（100%→0%）
 - 3s: バーが空になった瞬間、赤く点滅
 - 3s〜5s: 「EMPTY」の文字が表示
@@ -2045,8 +2095,13 @@ Barren mountain slope in heavy rain. Muddy trail with puddles. Grey overcast sto
 **制作メモ:**
 警告画面。「DANGER ZONE」のテキスト。
 
+**Lovart背景プロンプト（16:9）:**
+```
+Emergency warning display screen in a dark medical monitoring room. Red emergency lights reflecting off wet cold walls. Frost forming on metal surfaces. Harsh red glow illuminating the scene. Critical alert atmosphere. Industrial emergency lighting. Deep crimson red and black tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
 **CapCut編集指示:**
-- 黒背景に赤文字「最終段階 DANGER ZONE」を配置
+- 背景素材の上に赤文字「最終段階 DANGER ZONE」を配置
 - 0s〜5s: テキストが赤く脈動（点滅）
 
 **SE:**
@@ -2059,14 +2114,15 @@ Barren mountain slope in heavy rain. Muddy trail with puddles. Grey overcast sto
 ナレーター: 体温が33度を下回ると、体温調節中枢が誤作動を起こします。
 
 **制作メモ:**
-人体シルエット。脳の体温調節中枢が赤く点滅してエラーを起こす図解。
+人体シルエット。脳の体温調節中枢が赤く点滅してエラーを起こす図解。[Lovart静止画 + 編集者]
 
-**図解アニメーション:**
-- 人体シルエットの脳の部分にズーム
-- 体温調節中枢が正常（緑）→ エラー（赤点滅）
-- 「SYSTEM ERROR」のテキスト表示
+**Lovart背景プロンプト（16:9）:**
+```
+Medical diagram of human body silhouette showing the brain and nervous system. Dark background with glowing neural pathways. Hypothalamus region in the brain highlighted and glowing red indicating malfunction. Clean anatomical illustration style with neon-like glowing lines tracing the thermoregulation pathways. Side profile view of full body. Scientific medical visualization aesthetic. Photorealistic, 4K. 16:9 aspect ratio. Generate 5 images.
+```
 
 **CapCut編集指示:**
+- 背景素材の上にテキストとアニメーションを配置
 - 人体シルエットの脳部分をハイライト
 - 0s〜2s: 緑のランプが正常点灯
 - 2s〜5s: 赤く点滅 + 「SYSTEM ERROR」テキストがフェードイン
@@ -2083,14 +2139,15 @@ Barren mountain slope in heavy rain. Muddy trail with puddles. Grey overcast sto
 **制作メモ:**
 人体の血管図解。末端の青い血液が心臓に戻る様子。
 
-**図解アニメーション:**
-- 人体シルエット。血管が青く収縮（防御）している状態
-- タガが外れて急に赤く拡張
-- 冷たい血液（青い液体）が心臓・脳へ逆流する
+**AI動画プロンプト（Google Flow）:**
+```
+Medical visualization of human circulatory system. Transparent body silhouette showing blood vessels. Blue-purple cold blood concentrated in the extremities (hands and feet). Suddenly blood vessels dilate and cold blue blood rushes inward toward the heart and brain. Pulsing veins visible through translucent skin. Dark background with bioluminescent blue and red glow. The heart struggles as cold blood reaches it. Scientific medical aesthetic. Photorealistic medical visualization, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
 
 **CapCut編集指示:**
-- 0s〜2s: 手足の血管が青く収縮している図
-- 2s〜5s: 青い液体が手足→心臓へ逆流するアニメーション
+- AI動画素材を使用
+- 0s〜2s: 手足の血管が青く収縮している
+- 2s〜5s: 青い液体が手足→心臓へ逆流する
 
 **SE:**
 血流音「ドクン…ドクン…ドクッドクッドクッ！」（加速）
@@ -2121,8 +2178,13 @@ Medical visualization of cold blood flowing back through human circulatory syste
 **制作メモ:**
 黒背景に白文字で「矛盾脱衣」のテキスト。
 
+**Lovart背景プロンプト（16:9）:**
+```
+Abandoned clothing scattered on a frozen mountain trail in Gansu province. A torn running jacket draped over a rock, gloves dropped in the mud, running shoes left in the path. Frost covering everything. The scene suggests someone desperately removing their own clothes. Haunting eerie atmosphere. Cold desaturated blue-grey tones with hints of ice white. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
 **CapCut編集指示:**
-- 黒背景に白文字「矛盾脱衣」+ 英語「Paradoxical Undressing」を配置
+- 背景素材の上に白文字「矛盾脱衣」+ 英語「Paradoxical Undressing」を配置
 - 0s〜3s: テキストフェードイン
 - 3s〜5s: テキストが微かに揺れる（±1px）
 
@@ -2140,7 +2202,7 @@ Medical visualization of cold blood flowing back through human circulatory syste
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Scattered clothing items (jacket, gloves, hat) lying on cold rocky mountain ground. Snow and ice visible. Empty shoes. No people visible. Desolate cold atmosphere. Desaturated blue-grey tones. Photorealistic still life, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+Scattered clothing items abandoned on frozen rocky mountain ground. A running jacket, single glove, and torn shirt lying on ice-covered stones. Light dusting of snow on the garments. No people visible. Overhead bird's-eye view looking straight down at the scattered clothes. Extremely cold desolate atmosphere. Desaturated blue-grey tones with frost textures. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -2160,15 +2222,11 @@ Scattered clothing items (jacket, gloves, hat) lying on cold rocky mountain grou
 梁晶のうわ言。苦しみながら服を引っ張る動作。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-03）— Lovart 1:1（背景透過用）
-```
-[CHAR-03 reference] Liang Jing in distress, pulling at own shirt collar with one hand, other hand pushing away from body. Confused delirious expression, flushed face despite cold. Muscular lean physique. Wearing minimal racing gear, soaked. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing confusion and distress. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-03 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Barren mountain slope in heavy rain and wind. Dark stormy sky. Rocks and muddy ground. Cold grey-blue atmosphere. No people visible. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-04共有]（ASSET-068で生成済み。同じ背景画像を使用）
 
 ■ 動かし方メモ（CapCut編集指示）:
 - キャラを画面中央に配置
@@ -2189,15 +2247,11 @@ Barren mountain slope in heavy rain and wind. Dark stormy sky. Rocks and muddy g
 梁晶が岩陰に座り込むシーン。力なく体が崩れていく。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-03）— Lovart 1:1（背景透過用）
-```
-[CHAR-03 reference] Liang Jing sitting weakly against rock, body slumping sideways. Eyes half-closed, exhausted expression. One hand loosely holding a small photograph. Wearing minimal racing gear (T-shirt and shorts), soaked and mud-covered. Full body, slight low angle. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing exhaustion and sadness. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-03 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Desolate mountain rocky outcrop with large boulder in center-right of frame. Grey overcast stormy sky. Barren scree field stretching into foggy distance. Cold grey-blue desaturated tones, somber and empty atmosphere. No people visible. Photorealistic landscape, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-04共有]（ASSET-068で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -2220,10 +2274,12 @@ Desolate mountain rocky outcrop with large boulder in center-right of frame. Gre
 **制作メモ:**
 梁晶の後ろ姿。動かない。霧が包んでいく。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Back view of lone figure sitting slumped against large rock on barren mountain slope. Thick fog slowly enveloping the scene. Nearly monochrome, extreme desaturation. Somber desolate atmosphere. Photorealistic, shot on RED camera. Cinematic wide shot. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°59'20"N 104°08'05"E（セクション3の岩場）Altitude: 300m
+- カメラ: 岩場の荒涼とした斜面を低空から俯瞰。大きな岩が点在する地形
+- チルト: 55°
+- 0s〜5s: ゆっくりズームイン（霧が包む演出はCapCutで追加）
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 背景を表示
@@ -2243,10 +2299,8 @@ Back view of lone figure sitting slumped against large rock on barren mountain s
 CHAR-04（黄関軍）が倒れているシーン。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-04）— Lovart 1:1（背景透過用）
-```
-[CHAR-04 reference] Huang Guanjun lying on his side on the ground, curled slightly. Eyes closed, peaceful but lifeless expression. Wearing old slightly worn running clothes, soaked. One hand reaching forward as if trying to grasp something. Full body, side view. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes (closed). 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-04 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
 ```
@@ -2274,10 +2328,12 @@ Rocky scree field shrouded in thick fog. Cold empty stones stretching into the m
 **制作メモ:**
 完全無音のまま、暴風雨の映像のみ。音のない嵐の恐怖を表現。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Violent mountain storm with rain sheets and wind-blown debris. Dark turbulent sky. Chaotic weather conditions. Extreme desaturation, nearly monochrome. No people visible. Photorealistic storm landscape, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°59'30"N 104°08'10"E（セクション3の稜線）Altitude: 200m
+- カメラ: 地面レベルに近い低空から稜線を見渡す。暴風雨の演出はCapCutで重ねる
+- チルト: 70°（地面すれすれの視点）
+- 0s〜5s: 稜線に沿ってゆっくりパン
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 嵐の映像を表示
@@ -2296,9 +2352,14 @@ Violent mountain storm with rain sheets and wind-blown debris. Dark turbulent sk
 **制作メモ:**
 ホワイトアウトに近い画面。何も見えない恐怖。
 
+**AI動画プロンプト（Google Flow）:**
+```
+Mountain landscape in Gansu province rapidly disappearing into dense white fog and blizzard conditions. Visibility decreasing from partial to near zero. Snow and ice particles flying horizontally across the frame. A lone figure barely visible through the whiteout, then completely swallowed by white. Camera fixed position, the world disappearing into white void. Terrifying isolation. Color draining from warm to pure white. Photorealistic, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
 **CapCut編集指示:**
-- 白い霧で画面がほぼホワイトアウト（不透明度80%の白オーバーレイ）
-- 0s〜5s: 白いオーバーレイの不透明度が80%→95%に上昇（視界が奪われていく表現）
+- AI動画素材を使用
+- 0s〜5s: 視界が奪われていく表現（ホワイトアウト進行）
 
 **SE:**
 完全無音を維持
@@ -2310,11 +2371,15 @@ Violent mountain storm with rain sheets and wind-blown debris. Dark turbulent sk
 ナレーター: 助けを叫ぶことさえできず、たった独り、冷たい岩の上で息絶えました。
 
 **制作メモ:**
-黒背景にフェードアウト。完全な暗闘と沈黙。
+冷たい岩の上に横たわる人影のシルエット。白から黒へ反転。
+
+**AI動画プロンプト（Google Flow）:**
+```
+A solitary figure lying motionless on cold grey rocks on a barren mountain slope in Gansu province. Dense white fog slowly transitioning to complete darkness. The figure becomes a faint silhouette then disappears into black void. Devastating isolation. Extreme desaturation fading to pure black. Photorealistic, cinematic, 16:9 aspect ratio. 5 seconds duration.
+```
 
 **CapCut編集指示:**
-- 前ASSETのホワイトアウトから、ゆっくり黒へフェード
-- 0s〜3s: 白→黒へ反転フェード
+- 0s〜3s: 映像のホワイトアウトがゆっくり暗転
 - 3s〜5s: 完全な黒画面
 
 **SE:**
@@ -2374,7 +2439,7 @@ Operations control room with multiple monitoring screens showing GPS tracking ma
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Close-up of hand holding coffee cup in operations room. Blurry monitor screens with red alerts in background. Relaxed casual atmosphere contrasting with urgency on screens. Warm indoor lighting. Photorealistic, shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+Close-up of a hand holding a white coffee cup with steam rising. Blurred background showing multiple computer monitors with GPS tracking screens. Chinese operations center interior, fluorescent lighting. Shallow depth of field with cup in sharp focus, monitors as soft bokeh. Warm coffee steam contrasting with cold blue monitor glow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -2392,8 +2457,13 @@ Close-up of hand holding coffee cup in operations room. Blurry monitor screens w
 **制作メモ:**
 モニター画面のSOSアラートが無視される演出。
 
+**Lovart背景プロンプト（16:9）:**
+```
+Computer monitor screen displaying GPS tracking interface with red warning indicators. Multiple runner position dots on a topographic map, several dots flashing red. Dark operations room reflected in the monitor glass. Close-up of the screen from slightly below, looking up at the monitor. Cold blue-green screen glow in dim room. Tense urgent atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
 **CapCut編集指示:**
-- モニター画面でSOSアラートが点滅
+- 背景素材の上にSOSアラートアニメーションを配置
 - 0s〜3s: アラートが赤く点滅
 - 3s: 「却下」ボタンが押されるアニメーション
 - 3s〜5s: アラートが消え、通常画面に戻る
@@ -2412,7 +2482,7 @@ Close-up of hand holding coffee cup in operations room. Blurry monitor screens w
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Smartphone screen showing Chinese social media WeChat messaging interface with urgent distress messages in red text. Multiple messages stacked rapidly. "救命！" (Help!) text prominently displayed. Photorealistic smartphone screen, dramatic lighting. 16:9 aspect ratio. Generate 5 images.
+Close-up of a smartphone screen showing a Chinese messaging app (WeChat style) with multiple urgent text messages. Rain droplets on the phone screen. Trembling hand barely holding the phone. Background is blurred dark stormy mountain landscape. Shallow depth of field focusing on the cracked wet screen. Emergency desperate atmosphere. Cool blue desaturated tones. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -2431,8 +2501,15 @@ Smartphone screen showing Chinese social media WeChat messaging interface with u
 **制作メモ:**
 メッセージのテキストが画面に次々と浮かび上がる。
 
+**Google Earthアニメーション:**
+- 開始座標: 36°59'00"N 104°08'00"E（セクション3）Altitude: 1km
+- カメラ: セクション3の全景を俯瞰。嵐のエフェクトはCapCutで重ねる
+- チルト: 50°
+- 0s〜5s: ゆっくりズームイン（暗い雰囲気はCapCutカラーグレーディングで表現）
+- 所要時間: 5秒
+
 **CapCut編集指示:**
-- 黒背景に白文字でメッセージを順番に表示
+- 背景素材の上に白文字でメッセージを順番に表示
 - 「助けてくれ！もう限界だ！」→ 1.5s
 - 「口から泡を吹いている人がいる！」→ 1.5s
 - 「指の感覚がない。文字が打てない…」→ 2s（文字が途中で崩れるエフェクト）
@@ -2451,7 +2528,7 @@ Smartphone screen showing Chinese social media WeChat messaging interface with u
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Dark silhouette of authority figure sitting behind desk in dim office. Arms crossed, rigid posture. Single harsh overhead light. Oppressive atmosphere. Dark moody tones. No face visible, only silhouette. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+Dark silhouette of a man sitting at the head of a conference table in a dimly lit Chinese government office meeting room. Stern posture, arms on table. Venetian blinds casting horizontal shadow lines across the figure. Single harsh overhead spotlight creating dramatic shadows. Wide shot from across the table looking at the silhouette. Oppressive authoritarian atmosphere. Dark moody tones with minimal light. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -2469,8 +2546,13 @@ Dark silhouette of authority figure sitting behind desk in dim office. Arms cros
 **制作メモ:**
 黒背景にテキスト「保身とメンツ」が赤く浮かび上がる。
 
+**Lovart背景プロンプト（16:9）:**
+```
+Dark textured concrete wall in a stark government building corridor. Harsh fluorescent light casting cold shadows. Cracked and stained wall surface. Institutional cold oppressive atmosphere. Close-up of the wall texture with vignette darkening at edges. No people visible. Grim austere mood. Dark desaturated grey-green tones. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
+```
+
 **CapCut編集指示:**
-- 黒背景に赤文字「保身とメンツ」をテキストレイヤーで配置
+- 背景素材の上に赤文字「保身とメンツ」をテキストレイヤーで配置
 - 0s〜3s: テキストフェードイン
 - 3s〜5s: テキストが崩壊するように粒子化して消えていく
 
@@ -2498,10 +2580,13 @@ Dark silhouette of authority figure sitting behind desk in dim office. Arms cros
 **制作メモ:**
 暗いトーン。時計が午後3時を指している。
 
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of an old weathered wall clock on a dark wall showing 3:00 PM. The clock face is cracked and dusty. Single dim light source from the side creating long shadows. Rain streaks visible on a nearby window. Tense waiting atmosphere. Dark moody blue-grey color grading with cold tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
 **CapCut編集指示:**
-- 黒背景にアナログ時計を配置
-- 針が15:00を指す
-- 0s〜5s: 時計がゆっくりズームイン（1.0→1.5倍）
+- 背景素材をゆっくりズームイン（1.0→1.5倍、5秒かけて）
 - 全体に暗いブルーのカラーグレーディング
 
 **SE:**
@@ -2516,11 +2601,15 @@ Dark silhouette of authority figure sitting behind desk in dim office. Arms cros
 **制作メモ:**
 暗い画面から一筋の光が差す演出。
 
+**AI動画プロンプト（Google Flow）:**
+```
+Dark mountain cave interior in Gansu province. Complete darkness for the first moment, then a single beam of warm golden light slowly pierces through a crack in the cave ceiling. The light beam cuts through dust particles in the air, gradually illuminating the rocky interior. The light grows stronger, revealing the texture of wet stone walls. Transition from total despair to faint hope. Camera fixed looking upward at the light source. From pure black to warm golden glow. Photorealistic, 4K, 16:9 aspect ratio. 5 seconds duration.
+```
+
 **CapCut編集指示:**
-- 黒背景
-- 0s〜2s: 完全な暗闘
-- 2s〜5s: 画面中央から一筋の白い光が広がる（不透明度0%→50%）
-- テキスト「奇跡」がフェードイン
+- AI動画素材を使用
+- 0s〜2s: 完全な暗闇
+- 2s〜5s: 一筋の光が徐々に広がる
 
 **SE:**
 静寂 → 2s時点で暖かい弦楽器の一音「ポーン…」
@@ -2541,9 +2630,7 @@ CHAR-05（朱克銘）の全身立ち絵。羊飼いの装い。逞しい顔つ�
 ```
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Gansu Province mountain landscape with sheep grazing in background. Rolling dry hills. Warm afternoon light. Rural pastoral atmosphere. Photorealistic landscape, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-12共有]（ASSET-056で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -2565,15 +2652,11 @@ Gansu Province mountain landscape with sheep grazing in background. Rolling dry 
 CHAR-05（朱克銘）が猛吹雪の中を平然と歩く。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-05）— Lovart 1:1（背景透過用）
-```
-[CHAR-05 reference] Zhu Keming the shepherd walking forward, one arm raised to shield face from wind. Thick heavy coat, sturdy build. Calm determined eyes, tough weathered face. Full body, medium shot. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing quiet determination. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-05 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Fierce mountain blizzard with white-out conditions. Swirling snow and ice particles filling the frame. Rocky mountain path barely visible through storm. Cool blue-white palette, harsh winter atmosphere. Dense snow particles blowing from left to right. No people visible. Photorealistic storm landscape, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-04共有]（ASSET-068で生成済み。同じ背景画像を使用）
 
 ■ 動かし方メモ（CapCut編集指示）:
 - キャラを画面中央やや左に配置
@@ -2611,10 +2694,12 @@ Google Earthで現場付近の「ヤオトン（洞窟住居）」へズーム�
 **制作メモ:**
 洞窟の入口から外を見る主観視点。嵐の中にランナーのシルエット。
 
-**Lovart背景プロンプト（16:9）:**
-```
-POV from inside dark cave looking outward through narrow cave entrance. Outside: fierce blizzard, rain and wind. A lone figure silhouette barely visible through the storm, standing and shaking. Dark cave frame on left and right, bright stormy exterior in center. Strong contrast between dark interior and stormy exterior. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°59'42"N 104°17'19"E（洞窟住居付近）Altitude: 300m
+- カメラ: ヤオトン（洞窟住居）周辺の地形を低空から俯瞰。洞窟入口と周辺の嵐の山道
+- チルト: 60°
+- 0s〜5s: 洞窟入口付近にゆっくりズームイン
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 洞窟内から外を見る構図
@@ -2634,15 +2719,11 @@ POV from inside dark cave looking outward through narrow cave entrance. Outside:
 ジューさんが嵐の中へ飛び出すシーン。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-05）— Lovart 1:1（背景透過用）
-```
-[CHAR-05 reference] Zhu Keming running forward urgently, arms outstretched to help. Thick heavy coat flapping in wind. Urgent determined expression. Full body, dynamic pose. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing urgency and compassion. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-05 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Cave entrance with fierce blizzard outside. Figure barely visible through snow and wind. Cold blue-white storm exterior, dark warm cave interior on edges. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-04共有]（ASSET-068で生成済み。同じ背景画像を使用）
 
 ■ 動かし方メモ（CapCut編集指示）:
 - キャラを画面左1/4に配置
@@ -2662,15 +2743,11 @@ Cave entrance with fierce blizzard outside. Figure barely visible through snow a
 CHAR-05がランナーを背負って洞窟に運ぶシーン。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-05）— Lovart 1:1（背景透過用）
-```
-[CHAR-05 reference] Zhu Keming carrying an unconscious person on his back, both arms supporting the person's legs. Thick heavy coat, sturdy build. Strained but determined expression. Leaning forward under the weight. Full body. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing strain and determination. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-05 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Dark rocky mountain path leading toward a cave entrance. Blizzard conditions with swirling snow. The cave entrance glows faintly with warm orange light from inside. Cold blue-white exterior contrasting with warm cave interior. No people visible. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-04共有]（ASSET-068で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -2717,7 +2794,7 @@ Inside a mountain cave with warm campfire burning. Orange warm light illuminatin
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Close-up of exhausted runner's face lit by warm campfire glow inside cave. Tears streaming down cheeks. Relief and desperation mixed in expression. Warm orange light on one side, dark shadow on other. No specific identity. Photorealistic portrait, dramatic firelight. 16:9 aspect ratio. Generate 5 images.
+Close-up of a face illuminated by warm orange firelight inside a dark cave. Tears streaming down cheeks reflecting the fire glow. Eyes filled with emotion and relief. Flickering warm light from below casting upward shadows on the cave ceiling. Very close portrait framing showing only the face and immediate surroundings. Intimate emotional atmosphere, warm orange tones against dark background. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -2754,11 +2831,14 @@ POV shot through blizzard and rain. Walking through storm on mountain terrain. V
 **制作メモ:**
 洞窟の暖かい内部と、外の猛吹雪のコントラスト。
 
+**Lovart背景プロンプト（16:9）:**
+```
+Cave entrance framing a raging blizzard outside. Left side shows warm orange firelight reflecting off cave walls, right side shows the white-out storm conditions beyond the cave mouth. Sharp contrast between warm safety inside and deadly cold outside. Rocky cave archway framing the composition. Medium shot from inside the cave looking out. Split warm-cold color temperature contrast. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+```
+
 **CapCut編集指示:**
-- 左右2分割画面
-- 左: 暖かい洞窟内（オレンジトーン）
-- 右: 猛吹雪の外（青白トーン）
-- 0s〜5s: 分割線がゆっくり右から左に移動（外の世界が広がっていく演出）
+- 背景素材を使用
+- 0s〜5s: ゆっくりズームアウト（外の世界が広がっていく演出）
 
 **SE:**
 焚き火の音（左チャンネル）+ 暴風の音（右チャンネル）→ 暴風が徐々に大きくなる
@@ -2773,15 +2853,11 @@ POV shot through blizzard and rain. Walking through storm on mountain terrain. V
 CHAR-05が焚き火の前で帽子を被り直し、立ち上がるシーン。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-05）— Lovart 1:1（背景透過用）
-```
-[CHAR-05 reference] Zhu Keming standing, both hands adjusting a weathered hat firmly on head. Determined resolute expression. Thick heavy coat, collar visible. Sturdy build. Full body, medium shot. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing quiet heroism. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-05 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Inside a dark cave with warm orange campfire glow illuminating rough stone walls on left side. Cave entrance on right side showing fierce blizzard outside with cold blue-white storm light. Strong warm-cool contrast between interior and exterior. Thick smoke rising from small fire. No people visible. Photorealistic cave interior with atmospheric lighting, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-04共有]（ASSET-068で生成済み。同じ背景画像を使用）
 
 ■ 動かし方メモ（CapCut編集指示）:
 - キャラを画面中央、焚き火の明かりが当たる位置に配置
@@ -2802,10 +2878,12 @@ Inside a dark cave with warm orange campfire glow illuminating rough stone walls
 **制作メモ:**
 ジューさんが嵐の中を歩く後ろ姿。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Back view of sturdy figure in thick coat walking into fierce mountain blizzard from cave entrance. Warm orange light from cave behind contrasting with cold blue-white storm ahead. Heroic solitary silhouette. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°59'42"N 104°17'19"E（洞窟付近から山道へ）Altitude: 300m
+- カメラ: 洞窟住居付近の山道を低空俯瞰。嵐の中の人物演出はCapCutで追加
+- チルト: 60°
+- 0s〜5s: 洞窟から山道へ向かう方向にゆっくりパン
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 後ろ姿のシルエットがゆっくり嵐の中へ消えていく
@@ -2824,10 +2902,12 @@ Back view of sturdy figure in thick coat walking into fierce mountain blizzard f
 **制作メモ:**
 高台でスマホを掲げるジューさんのシルエット。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Silhouette of man standing on mountain hilltop in storm, arm raised holding phone up trying to get signal. Wind blowing coat. Dramatic stormy sky behind. Single figure against vast sky. Heroic pose. Cold blue-grey tones. Photorealistic, shot on RED camera. Cinematic wide shot. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°59'50"N 104°17'30"E（セクション3付近の高台）Altitude: 500m
+- カメラ: 高台を見上げるように低空から俯瞰。電波が届く高台の地形を見せる
+- チルト: 40°（見上げる構図）
+- 0s〜5s: ゆっくりズームイン（高台に迫る）
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - シルエットをゆっくりズームイン（1.0→1.3倍、5秒かけて）
@@ -2845,10 +2925,12 @@ Silhouette of man standing on mountain hilltop in storm, arm raised holding phon
 **制作メモ:**
 ジューさんが山の地形を読む主観視点。山の稜線を見渡す。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Mountain landscape viewed from experienced mountaineer's perspective. Visible trails and terrain features. Stormy but with breaks in clouds showing possible routes. Topographic knowledge visualization. Cold blue-grey tones with slight warm highlights. Photorealistic mountain landscape, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°59'42"N 104°17'19"E（洞窟付近）Altitude: 2km
+- カメラ: 山の稜線をパノラミックに見渡す。複数の谷と尾根、洞窟の位置関係を見せる
+- チルト: 45°
+- 0s〜5s: ゆっくりパン（左→右、270°回転で周囲を見渡す）
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 山の風景をゆっくりパン（左→右、5秒かけて）
@@ -2867,15 +2949,11 @@ Mountain landscape viewed from experienced mountaineer's perspective. Visible tr
 ジューさんが複数回往復する様子をモンタージュ。
 
 **キャラアニメーション:**
-■ キャラプロンプト（CHAR-05）— Lovart 1:1（背景透過用）
-```
-[CHAR-05 reference] Zhu Keming carrying injured runner on his back, walking through storm. Exhausted but determined expression. Thick heavy coat, sturdy build. Person on back wrapped in blanket. Full body, side view. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing heroic determination. 1:1 aspect ratio. Generate 5 images.
-```
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+→ [CHAR-05 reference | 再利用]（新規生成不要。一貫性キャラ機能で自動生成）
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Dark stormy mountain setting. Blizzard conditions with near zero visibility. Wind and snow swirling violently. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-04共有]（ASSET-068で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -2898,8 +2976,13 @@ Dark stormy mountain setting. Blizzard conditions with near zero visibility. Win
 **制作メモ:**
 黒背景に白文字で「6人」が大きく表示。
 
+**Lovart背景プロンプト（16:9）:**
+```
+Interior of a mountain cave with warm flickering firelight. Six figures huddled together wrapped in a shepherd's coat and makeshift blankets near a small campfire. Warm orange glow illuminating rough cave walls. Smoke rising toward the dark cave ceiling. Medium-wide shot from slightly above, looking down at the group gathered around the fire. Warm intimate atmosphere of survival and human connection. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
 **CapCut編集指示:**
-- 黒背景に白文字「6」を巨大に配置
+- 背景素材の上に白文字「6」を巨大に配置
 - 0s〜3s: 数字がカウントアップ（1→2→3→4→5→6）
 - 3s〜5s: 「6人の命」のテキストがフェードイン
 - 数字が暖色（オレンジ）に変化
@@ -2916,8 +2999,15 @@ Dark stormy mountain setting. Blizzard conditions with near zero visibility. Win
 **制作メモ:**
 「0」の文字が大きく表示。衝撃的な事実の強調。
 
+**Google Earthアニメーション:**
+- 開始座標: 36°59'00"N 104°08'00"E（セクション3のトレイル）Altitude: 500m
+- カメラ: 嵐が去った後のセクション3の荒涼としたトレイルを俯瞰
+- チルト: 50°
+- 0s〜5s: トレイルに沿ってゆっくりパン（完全な静寂感を演出）
+- 所要時間: 5秒
+
 **CapCut編集指示:**
-- 黒背景に赤文字「0」を巨大に配置
+- 背景素材の上に赤文字「0」を巨大に配置
 - 0s〜5s: 「0」が脈動するように拡大・縮小（1.0→1.05→1.0）
 
 **SE:**
@@ -2930,12 +3020,22 @@ Dark stormy mountain setting. Blizzard conditions with near zero visibility. Win
 ナレーター: 皮肉なことです。
 
 **制作メモ:**
-画面2分割。左: 運営本部のモニタールーム / 右: 洞窟のジューさん。
+画面2分割。左: 運営本部のモニタールーム / 右: 洞窟のジューさん。[Lovart静止画 + 編集者]
+
+**Lovart背景プロンプト（16:9）— 左側（運営本部）:**
+```
+Empty operations center with multiple idle computer monitors glowing blue in a dark room. Swivel chairs pushed back from desks, coffee cups abandoned. No people present. Cold sterile fluorescent lighting. Wide shot of the abandoned control room. Cold blue clinical tones, lifeless empty atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**Lovart背景プロンプト（16:9）— 右側（洞窟）:**
+```
+Warm cave interior with a small campfire burning. A shepherd figure tending to rescued people huddled around the fire. Orange firelight dancing on rough stone walls. Intimate close space filled with human warmth. Medium shot from the side capturing the group around the flames. Warm orange-amber tones, compassionate caring atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
 
 **CapCut編集指示:**
-- 左右2分割画面
-- 左: 運営本部（暗く冷たいトーン、モニターの青い光）
-- 右: 洞窟のジューさん（暖かいオレンジトーン、焚き火の光）
+- 左右2分割画面を2つの背景素材で構成
+- 左: 運営本部（冷たいブルートーン）
+- 右: 洞窟のジューさん（暖かいオレンジトーン）
 - 左右の対比を強調
 
 **SE:**
@@ -2952,7 +3052,7 @@ Dark stormy mountain setting. Blizzard conditions with near zero visibility. Win
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Empty operations control room with GPS tracking screens showing red alert warnings. No staff present. Coffee cups and abandoned documents on desk. Cold fluorescent lighting. Sterile abandoned atmosphere. Photorealistic interior, documentary style. 16:9 aspect ratio. Generate 5 images.
+GPS tracking monitor screen showing multiple stationary red dots clustered on a mountain map. Screen reflecting in empty room. No hands on keyboard, mouse untouched. Overhead desk lamp casting pool of light on the idle workstation. Close-up of the monitor from slightly to the side. Neglectful absent atmosphere. Cold blue screen glow in otherwise dark room. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -2986,11 +3086,11 @@ Cave interior with warm orange campfire light. Six rescued runners huddled toget
 [無音]
 
 **制作メモ:**
-前ASSETの余韻。洞窟内の焚き火のゆらぎ。6人が暖を取っている。
+洞窟内の焚き火のゆらぎ。6人が暖を取っている。別アングルで撮影。
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Inside mountain cave, warm campfire scene. Six exhausted runners huddled around fire, wrapped in shepherd's coat and blankets. Warm orange glow. Relief and gratitude visible. Intimate survival moment. Photorealistic cave interior, natural firelight. 16:9 aspect ratio. Generate 5 images.
+Close-up of a small campfire burning on a stone floor inside a mountain cave. Warm orange flames licking at gathered dry branches. Hands of multiple people visible reaching toward the warmth. Smoke curling upward toward dark cave ceiling. Low angle shot from near the fire looking slightly upward. Warm intimate firelight with deep shadows beyond the circle of light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -3007,10 +3107,15 @@ Inside mountain cave, warm campfire scene. Six exhausted runners huddled around 
 [無音]
 
 **制作メモ:**
-セクション区切り。黒背景にフェードアウト。
+セクション区切り。焚き火の残り火がゆっくり消えていく。
+
+**AI動画プロンプト（Google Flow）:**
+```
+Close-up of dying campfire embers in a dark cave. Glowing orange coals slowly fading to grey ash. Wisps of smoke rising and disappearing. The warm orange light gradually dims to near darkness. Intimate and melancholic atmosphere. Warm tones fading to cold dark blue-grey. Photorealistic, cinematic, 16:9 aspect ratio. 5 seconds duration.
+```
 
 **CapCut編集指示:**
-- 前ASSETからゆっくりフェードアウト（100%→0%、5秒かけて）
+- 4s〜5s: フェードアウト（不透明度100%→0%）
 
 **SE:**
 焚き火の音がゆっくりフェードアウト
@@ -3053,10 +3158,12 @@ Inside mountain cave, warm campfire scene. Six exhausted runners huddled around 
 **制作メモ:**
 麓の村の全景。穏やかだった村に緊張が走る。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Panoramic view of small rural Chinese village at the foot of mountains. Simple farmhouses, dirt roads. Late afternoon golden light. Quiet peaceful atmosphere about to change. Photorealistic landscape, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°52'00"N 104°17'00"E（黄河石林麓の集落）Altitude: 2km
+- カメラ: 山麓の小さな村を俯瞰。簡素な農家が見える穏やかな風景
+- チルト: 45°
+- 0s〜5s: ゆっくりズームイン（村の全景から集落へ近づく）
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 村の全景をゆっくりズームイン（1.0→1.2倍、5秒かけて）
@@ -3080,9 +3187,7 @@ Chinese villagers rushing out of houses looking alarmed. Some pointing toward mo
 ```
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Rural Chinese village street with traditional farmhouses. Late afternoon light. Mountains visible in background with dark storm clouds. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-04共有]（ASSET-068で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -3102,13 +3207,21 @@ Rural Chinese village street with traditional farmhouses. Late afternoon light. 
 ナレーター: 「山で人が倒れているらしいぞ！」「あんた、家の布団持ってきて！」
 
 **制作メモ:**
-村人たちが叫び合うシーン。テキストで台詞を表示。
+村人たちが叫び合うシーン。村の家の中から外を見る構図。
 
-**CapCut編集指示:**
-- 前ASSETの背景を継続使用
-- テキストレイヤーで台詞を表示:
-  - 0s〜2.5s: 「山で人が倒れているらしいぞ！」
-  - 2.5s〜5s: 「あんた、家の布団持ってきて！」
+**キャラアニメーション:**
+■ キャラプロンプト — Lovart 1:1（背景透過用）
+```
+Two Chinese rural villagers facing each other and shouting urgently. One man pointing toward mountains, one woman turning to run. Panicked expressions, mouths open mid-shout. Rural work clothes. Full body, dynamic poses. White background for transparency. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing panic. 1:1 aspect ratio. Generate 5 images.
+```
+
+■ 背景プロンプト — Lovart 16:9（フォトリアル）
+→ [BG-12共有]（ASSET-056で生成済み。同じ背景画像を使用）
+
+■ 動かし方メモ（CapCut編集指示）:
+- キャラを画面中央に配置
+- 0s〜2.5s: 男性キャラが山を指差すポーズで微揺れ（±5px）
+- 2.5s〜5s: 女性キャラが画面右→左へ素早く移動（走り出す演出）
 
 **SE:**
 声を張り上げる叫び声（遠く）
@@ -3129,9 +3242,7 @@ Chinese rural middle-aged woman running forward urgently, carrying a large thick
 ```
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Rural Chinese village street at dusk. Simple farmhouses with doors flung open. Warm golden-orange sunset sky. A tractor parked with headlights on. Urgent atmosphere. No people visible. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-12共有]（ASSET-056で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -3160,9 +3271,7 @@ Chinese villagers loading thick quilts and thermos bottles. Urgent purposeful mo
 ```
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Farm tractor parked in rural Chinese village. Late afternoon golden light. Quilts and thermos bottles being loaded. Documentary style. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-12共有]（ASSET-056で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -3183,10 +3292,12 @@ Farm tractor parked in rural Chinese village. Late afternoon golden light. Quilt
 **制作メモ:**
 泥にハマる救助車両。タイヤが空転。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Modern emergency rescue vehicle stuck deep in thick mud on mountain road. Wheels spinning helplessly. Mud splashing. Official emergency lights flashing. Frustrated atmosphere. Dark stormy sky above. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°55'00"N 104°12'00"E（山間部の道路）Altitude: 1km
+- カメラ: 狭い山道を俯瞰。土砂崩れが起きやすい急勾配の道路が見える
+- チルト: 50°
+- 0s〜5s: 道路に沿ってゆっくりパン（車両の進行方向）
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 泥にハマる車両を表示
@@ -3221,10 +3332,12 @@ Muddy mountain road. Modern rescue vehicle stuck in deep mud with wheels spinnin
 **制作メモ:**
 夕暮れの荒れ地を行く村人たちのシルエット。背中には布団。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Silhouettes of villagers hiking up barren mountain path at dusk. Large quilts strapped to backs. Headlights from tractor behind creating dramatic backlighting. Line of determined figures ascending toward mountain. Golden-orange sunset sky. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°54'00"N 104°15'00"E（村から山への道）Altitude: 1.5km
+- カメラ: 村人たちが登った山道を俯瞰。村から山頂方面への最短ルートが見える
+- チルト: 45°
+- 0s〜5s: 村の方向から山頂方面へゆっくりパン
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - シルエットをゆっくりパン（右→左）
@@ -3249,9 +3362,7 @@ Chinese villagers gathering emergency supplies urgently. Holding quilts and ther
 ```
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Warm interior of humble Chinese farmhouse. Quilts on bed, thermos bottles on table. Warm interior lighting. Documentary style. Photorealistic, shot on RED camera. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-12共有]（ASSET-056で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -3274,7 +3385,7 @@ Warm interior of humble Chinese farmhouse. Quilts on bed, thermos bottles on tab
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Close-up of hands placing a worn thick coat over the shoulders of a trembling exhausted person. Warm human gesture. Mountain setting at dusk. Warm golden light. Compassionate moment. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+A Chinese villager removing their own thick padded jacket and draping it over the shoulders of a shivering person sitting on the ground. Close-up of the jacket being placed, hands gently arranging it. Dim twilight mountain setting with rain-soaked ground. Warm human gesture of compassion. Medium close-up focusing on the hands and jacket. Soft warm tones despite the cold setting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -3294,7 +3405,7 @@ Close-up of hands placing a worn thick coat over the shoulders of a trembling ex
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Exhausted runner wrapped in thick quilt, both hands clutching hot bowl of soup. Steam rising from bowl. Warm orange indoor lighting. Relief and gratitude on face. Mountain rescue shelter setting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+Close-up of hands wrapped in a thick cotton quilt holding a steaming bowl of hot soup. Steam rising visibly from the bowl. The hands are trembling slightly. Background shows a makeshift rural shelter with dim warm lantern light. Shallow depth of field focusing on the bowl and hands. Warm comforting tones with steam catching the light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -3320,9 +3431,7 @@ Multiple rescued runners wrapped in thick cotton quilts, sitting together. Relie
 ```
 
 ■ 背景プロンプト — Lovart 16:9（フォトリアル）
-```
-Simple rural Chinese shelter interior. Warm orange light from fire nearby. Steam visible in air. Intimate comforting atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+→ [BG-12共有]（ASSET-056で生成済み。同じ背景画像を使用）
 
 ■ 制作手順: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutでキャラを背景に配置→編集者が手動でアニメーション
 
@@ -3346,7 +3455,7 @@ Simple rural Chinese shelter interior. Warm orange light from fire nearby. Steam
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Close-up of rescued runner's face with tears streaming down. Wrapped in quilt. Expression of overwhelming gratitude. Warm orange firelight on one side. Emotional intimate moment. Photorealistic portrait, shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+Extreme close-up of a person's face showing tears of gratitude streaming down muddy cheeks. Eyes closed, lips trembling. Warm lantern light illuminating the face from one side. Wet disheveled hair. Background completely blurred. Intimate portrait framing showing raw emotion. Warm amber tones mixed with cool shadows. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -3365,10 +3474,12 @@ Close-up of rescued runner's face with tears streaming down. Wrapped in quilt. E
 **制作メモ:**
 複数のランナーが村人たちに感謝している全景。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Wide shot of rural Chinese shelter with rescued runners bowing and thanking village rescuers. Quilts and thermos bottles scattered around. Warm orange campfire light. Emotional reunion scene. Multiple people visible. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°52'00"N 104°17'00"E（黄河石林麓の集落）Altitude: 500m
+- カメラ: 村の中心部を低空で俯瞰。救助活動が行われた広場の位置関係
+- チルト: 55°
+- 0s〜5s: ゆっくりズームイン（村の広場に近づく）
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 全景をゆっくりパン（左→右）
@@ -3384,10 +3495,20 @@ Wide shot of rural Chinese shelter with rescued runners bowing and thanking vill
 ナレーター: その命を繋ぎ止めたのは、国や組織ではなく、名もなき村人たちの、温かい人間性でした。
 
 **制作メモ:**
-画面2分割対比。左: 空っぽの運営本部 / 右: 布団を被せる村人。
+画面2分割対比。左: 空っぽの運営本部 / 右: 布団を被せる村人。[Lovart静止画 + 編集者]
+
+**Lovart背景プロンプト（16:9）— 左側（空の本部）:**
+```
+Deserted operations center at night. Empty rolling chairs, dark idle monitors in standby mode. A single desk lamp left on casting lonely pool of light on empty papers. Nobody in the room. Wide shot of the abandoned workspace. Cold sterile blue-grey tones, neglected atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
+**Lovart背景プロンプト（16:9）— 右側（村人の救助）:**
+```
+Chinese villager gently placing a thick quilt over the shoulders of a collapsed runner on the ground. Runner curled up on muddy earth. Villager kneeling beside them with caring expression. Dim twilight with tractor headlights in background. Medium shot at ground level. Warm compassionate atmosphere, golden-orange tones from headlights. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
 
 **CapCut編集指示:**
-- 左右2分割画面
+- 左右2分割画面を2つの背景素材で構成
 - 左: 空っぽの運営本部（冷たいブルートーン）
 - 右: 布団を被せる村人（暖かいオレンジトーン）
 - 0s〜5s: 左の画面が徐々に暗くなり、右の画面が明るくなる
@@ -3404,8 +3525,15 @@ Wide shot of rural Chinese shelter with rescued runners bowing and thanking vill
 **制作メモ:**
 黒背景に白文字「9時間後」のテキスト。巨大な数字。
 
+**Google Earthアニメーション:**
+- 開始座標: 36°58'00"N 104°10'00"E（セクション3方面）Altitude: 5km
+- カメラ: 夜のセクション3全域を広く俯瞰。救助隊の到着方向を見せる
+- チルト: 45°
+- 0s〜5s: 遠方からゆっくりズームイン（救助隊の接近ルートを暗示）
+- 所要時間: 5秒
+
 **CapCut編集指示:**
-- 黒背景に赤文字「9時間後」を巨大に配置
+- 背景素材の上に赤文字「9時間後」を巨大に配置
 - 0s〜3s: テキストフェードイン
 - 3s〜5s: テキストが脈動（1.0→1.05→1.0）
 
@@ -3421,10 +3549,12 @@ Wide shot of rural Chinese shelter with rescued runners bowing and thanking vill
 **制作メモ:**
 村人たちの後ろ姿のシルエット。朝焼けの山に向かって立っている。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Silhouettes of village rescuers standing together looking at dawn breaking over mountains. Proud humble figures. Orange-pink sunrise sky. Heroic group composition. Warm hopeful atmosphere. Photorealistic, shot on RED camera. Cinematic wide shot. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°53'00"N 104°17'00"E（山の展望台付近）Altitude: 2km
+- カメラ: 朝日に照らされた甘粛省の山脈をパノラミックに見渡す
+- チルト: 30°（遠景を広く見せる）
+- 0s〜5s: ゆっくりズームアウト（壮大さを強調）
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 朝焼けのシルエットをゆっくりズームアウト（1.2→1.0倍）で壮大さを強調
@@ -3467,10 +3597,17 @@ Emotional farewell scene between Chinese villagers and rescued marathon runners.
 ナレーター: 多くの協力者のおかげで、172名中、ジューさんが救った6名を含め、151名の生存は確認できました。
 
 **制作メモ:**
-黒背景に白文字で数字。「172名中 151名生存」。
+黒背景に白文字で数字。「172名中 151名生存」。[Lovart静止画 + 編集者]
+
+**Google Earthアニメーション:**
+- 開始座標: 36°53'00"N 104°18'00"E（レース会場/救助拠点）Altitude: 3km
+- カメラ: 救助拠点となったレース会場周辺を広く俯瞰
+- チルト: 45°
+- 0s〜5s: ゆっくりズームイン（拠点に近づく）
+- 所要時間: 5秒
 
 **CapCut編集指示:**
-- 黒背景に白文字で「172名中」（上段）「151名 生存確認」（下段、緑色）を配置
+- 背景素材の上に白文字で「172名中」（上段）「151名 生存確認」（下段、緑色）を配置
 - 0s〜3s: 数字がカウントアップでフェードイン
 - 3s〜5s: 「151名」の部分が緑色に光る
 
@@ -3484,12 +3621,16 @@ Emotional farewell scene between Chinese villagers and rescued marathon runners.
 ナレーター: しかし、残り21名の行方はいまだ不明のままでした。
 
 **制作メモ:**
-「21名 行方不明」の赤い文字が浮かび上がる。
+空の捜索リスト。21名の名前が赤くハイライトされている。
+
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of an official search and rescue checklist on a clipboard. Names written in Chinese characters with red circles around 21 unchecked entries. Harsh fluorescent light in a command center. Pen lying next to the list. Tense and somber atmosphere. Desaturated cold tones. Photorealistic document close-up, shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+```
 
 **CapCut編集指示:**
-- 前ASSETの「151名」表示から
-- 0s〜2s: 「残り 21名」が赤文字でフェードイン
-- 2s〜5s: 「行方不明」のテキストが脈動
+- 0s〜3s: リストをゆっくり近づく（1.0→1.2倍）
+- 3s〜5s: 赤い丸が付いた名前の部分にさらにズームイン
 
 **SE:**
 不穏な低音ドローン（ブォォォン…）
@@ -3503,10 +3644,12 @@ Emotional farewell scene between Chinese villagers and rescued marathon runners.
 **制作メモ:**
 快晴の朝。嵐の痕跡が残る山の風景。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Mountain landscape after storm has cleared. Bright blue morning sky. Wet rocks and puddles reflecting sunlight. Debris from storm scattered on ground. Peaceful but eerie calm. Warm morning light. Photorealistic landscape, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°58'00"N 104°08'00"E（セクション3全域）Altitude: 5km
+- カメラ: 嵐が去った翌朝のセクション3全景を広く俯瞰
+- チルト: 40°（広大な景色を見せる）
+- 0s〜5s: ゆっくりパン（左→右、被害地域全体を見渡す）
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 朝の風景をゆっくりパン（左→右）
@@ -3524,10 +3667,13 @@ Mountain landscape after storm has cleared. Bright blue morning sky. Wet rocks a
 **制作メモ:**
 捜索隊が山を歩く空撮。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Aerial view of search and rescue teams spread across mountain terrain in morning light. Teams wearing bright orange vests visible as dots on rocky landscape. Post-storm calm conditions. Documentary aerial composition. Photorealistic, 4K, 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°59'00"N 104°08'00"E（セクション3捜索エリア）Altitude: 5km
+- 終了座標: 36°59'00"N 104°08'00"E Altitude: 500m
+- カメラ: 上空から捜索エリアへ急降下ズーム。広大な捜索範囲を強調
+- チルト: 60°
+- 0s〜5s: ズームイン（捜索範囲の広大さ→地上の細部へ）
+- 所要時間: 5秒
 
 **CapCut編集指示（Ken Burns）:**
 - 0s〜5s: ゆっくりズームアウト（1.3→1.0倍）で捜索範囲の広大さを見せる
@@ -3547,7 +3693,7 @@ Aerial view of search and rescue teams spread across mountain terrain in morning
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Press conference podium with multiple microphones. Camera flashes lighting up the scene. Tense somber atmosphere. Official government press conference setting. Dark background. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+Close-up of a press conference microphone on a podium with multiple microphones clustered together. Camera flashes creating white bursts of light. Blurred background showing a Chinese government press conference banner with red and gold colors. Shallow depth of field focusing on the central microphone. Tense somber atmosphere. Neutral documentary lighting with camera flash highlights. Photorealistic, shot on RED camera. Documentary journalism style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -3566,9 +3712,16 @@ Press conference podium with multiple microphones. Camera flashes lighting up th
 **制作メモ:**
 黒背景に白文字: 「捜索終了。生存者、なし」
 
+**Google Earthアニメーション:**
+- 開始座標: 36°59'00"N 104°08'00"E（セクション3のトレイル）Altitude: 300m
+- カメラ: 誰もいないトレイルを低空で俯瞰。完全に空虚な風景
+- チルト: 60°
+- 0s〜5s: トレイルに沿ってゆっくりパン（空虚さを強調）
+- 所要時間: 5秒
+
 **CapCut編集指示:**
-- 黒背景
-- 0s〜3s: 完全な黒（無音）
+- 背景素材を使用
+- 0s〜3s: 背景がゆっくり暗転（無音）
 - 3s〜5s: 白文字「捜索終了。生存者、なし」がフェードイン
 
 **SE:**
@@ -3603,7 +3756,7 @@ Desolate rocky mountain terrain at dawn. Multiple figures lying motionless on co
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Running shoes scattered on cold rocky mountain ground in morning sunlight. Frost on shoes. Empty trail stretching into distance. Peaceful but haunting atmosphere. Morning golden light contrasting with cold ground. Photorealistic, shot on RED camera. Cinematic wide shot. 16:9 aspect ratio. Generate 5 images.
+Twenty-one pairs of running shoes arranged in rows on rocky mountain ground, illuminated by warm golden sunrise light. Long morning shadows cast behind each pair. Dew droplets glistening on the shoes. Barren Gansu mountain terrain stretching behind. Slightly elevated angle looking down at the memorial-like arrangement. Warm golden dawn light contrasting with cold grey stone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -3623,7 +3776,7 @@ Running shoes scattered on cold rocky mountain ground in morning sunlight. Frost
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Chinese official press conference. Multiple officials bowing deeply in apology. Microphones and cameras in foreground. Somber atmosphere. Bright camera flashes. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+Chinese government press conference room. A row of officials seated behind a long table, the central figure bowing deeply in apology. Microphones lined up on the table. Camera flashes illuminating the scene. Red banner with Chinese government text behind the table. Wide shot from the press gallery looking at the officials. Formal institutional atmosphere, harsh flash lighting. Photorealistic, shot on RED camera. Documentary journalism style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -3641,10 +3794,12 @@ Chinese official press conference. Multiple officials bowing deeply in apology. 
 **制作メモ:**
 梁晶が発見された場所の再現。岩場に横たわるシルエット。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Desolate mountain rocky outcrop in morning light. Single dark silhouette of a person lying motionless on cold rock. Morning mist. Haunting peaceful atmosphere. Warm morning light but cold emotional tone. Photorealistic landscape, shot on RED camera. Cinematic wide shot. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°59'10"N 104°08'05"E（梁晶が発見された付近）Altitude: 200m
+- カメラ: 岩場の発見現場付近を低空で俯瞰。荒涼とした地形
+- チルト: 65°（地面に近い視点）
+- 0s〜5s: ゆっくりズームイン
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 岩場のシルエットをゆっくりズームイン（1.0→1.3倍）
@@ -3683,10 +3838,12 @@ Still life of personal belongings on cold rock surface. Cracked smartphone showi
 **制作メモ:**
 ホアンさんが発見された場所の再現。静寂のガレ場。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Rocky scree field in morning light. Mist clearing over barren stones. Silent empty landscape. One pair of worn running shoes visible among rocks. Extreme desaturation, nearly monochrome. Peaceful but desolate atmosphere. Photorealistic, shot on RED camera. Cinematic wide shot. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°59'15"N 104°08'08"E（ホアンさんが発見された付近のガレ場）Altitude: 300m
+- カメラ: 荒涼としたガレ場を低空で俯瞰。灰色の石が広がる静寂の地形
+- チルト: 55°
+- 0s〜5s: ゆっくりパン（静寂感を演出）
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - ガレ場の全景
@@ -3707,7 +3864,7 @@ Rocky scree field in morning light. Mist clearing over barren stones. Silent emp
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Close-up of a hand lying on cold stone, fingers curled around a small creased family photograph. Pale bluish skin tone. Frost on knuckles. Photo shows happy family smiling. Contrast between warmth of photo and cold of hand. Extreme shallow depth of field. Photorealistic, dramatic lighting. 16:9 aspect ratio. Generate 5 images.
+Extreme close-up of a weathered hand clutching a small family photograph. Fingers wrapped tightly around the photo edges. Faded color photo showing blurry family figures. Dirt and scratches on the hand. Dark muted background out of focus. Intimate tight framing. Warm golden light hitting just the photograph surface. Photorealistic, macro lens detail. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -3726,8 +3883,13 @@ Close-up of a hand lying on cold stone, fingers curled around a small creased fa
 **制作メモ:**
 黒背景に白文字で「21」の数字。
 
+**Lovart背景プロンプト（16:9）:**
+```
+Pure deep black void background with subtle dark grey gradient at the very edges. Minimal abstract composition. Faint particles of dust floating in a single narrow beam of pale white light from above center. Somber solemn atmosphere. Clean empty space for text overlay. Photorealistic, studio lighting. 16:9 aspect ratio. Generate 5 images.
+```
+
 **CapCut編集指示:**
-- 黒背景に白文字「21」を巨大に配置
+- 背景素材の上に白文字「21」を巨大に配置
 - 0s〜3s: 数字がフェードイン
 - 3s〜5s: 数字の周りに21個の小さな光の点がゆっくり灯るアニメーション
 
@@ -3804,7 +3966,7 @@ Chinese court building exterior. Official government architecture. Serious sombe
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Courtroom interior. Silhouettes of defendants sitting on bench from behind. Judge's elevated desk in background. Formal legal atmosphere. Dark moody lighting with single overhead light. Photorealistic interior, documentary style. 16:9 aspect ratio. Generate 5 images.
+Dark courtroom interior with defendant dock in center. Silhouette of a person sitting with head bowed behind a railing. Harsh overhead fluorescent light creating strong shadows. Empty wooden judge bench in background. Cold sterile institutional atmosphere. Blue-grey color palette. Low angle looking up at the dock. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -3822,8 +3984,13 @@ Courtroom interior. Silhouettes of defendants sitting on bench from behind. Judg
 **制作メモ:**
 判決文のテキスト表示。
 
+**Lovart背景プロンプト（16:9）:**
+```
+Close-up of official Chinese court document on dark wooden desk. Red government seal stamp visible on paper. Formal printed Chinese legal text. Dramatic single desk lamp illuminating the document from left side. Deep shadows around edges. Overhead angle looking straight down at the paper. Warm amber lamplight against cold dark surroundings. Photorealistic, macro detail. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
+
 **CapCut編集指示:**
-- 黒背景に白文字で判決を表示
+- 背景素材の上に白文字で判決を表示
 - 「懲役 3年〜5年半」の文字が大きくフェードイン
 - 文字色が白→赤に変化
 
@@ -3841,7 +4008,7 @@ Courtroom interior. Silhouettes of defendants sitting on bench from behind. Judg
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Close-up of official Chinese legal document with highlighted text showing charges. Red official stamps visible. Paper texture, formal legal typography. Photorealistic document, shallow depth of field. 16:9 aspect ratio. Generate 5 images.
+Stack of bound legal documents and case files on a polished courtroom table. Red ribbons tying thick paper bundles. Chinese characters printed on the top page. Shallow depth of field focusing on the text. Sterile white fluorescent lighting from above. Cold institutional setting. Side angle at table level. Photorealistic, shot on Canon R5. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -3861,7 +4028,7 @@ Close-up of official Chinese legal document with highlighted text showing charge
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Silhouettes of grieving family members in courtroom, some standing with raised fists, others collapsed in tears. Dramatic courtroom lighting from windows. Emotional powerful atmosphere. Dark moody tones. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+Courtroom gallery viewed from behind. Dark silhouettes of multiple people sitting in rows of wooden benches. Tension and grief visible in hunched postures. Dim overhead lighting. Narrow courtroom with high walls. Emotional heavy atmosphere. Desaturated blue-grey tones with warm reddish highlights on the silhouettes. Wide angle from rear of the gallery. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -3877,11 +4044,15 @@ Silhouettes of grieving family members in courtroom, some standing with raised f
 ナレーター: しかし、どれだけ刑を重くしても、失われた命は二度と戻ることはありませんでした。
 
 **制作メモ:**
-黒背景にフェードアウト。静寂。
+21個の白い花が並ぶ祭壇。命の重さを表現。
+
+**AI動画プロンプト（Google Flow）:**
+```
+Twenty-one white chrysanthemum flowers arranged in a row on a simple stone memorial in Gansu province. Gentle wind causing petals to tremble slightly. One by one, candle flames in front of each flower flicker and extinguish, darkness slowly consuming the scene. Deeply sorrowful and reverent atmosphere. Desaturated cool tones gradually fading to black. Photorealistic, cinematic, 16:9 aspect ratio. 5 seconds duration.
+```
 
 **CapCut編集指示:**
-- 前ASSETからゆっくりフェードアウト（100%→0%）
-- 最後は完全な黒画面
+- 4s〜5s: フェードアウト（不透明度100%→0%）
 
 **SE:**
 なし（1.5秒の完全無音）
@@ -3914,16 +4085,18 @@ Collage of international newspaper front pages reporting on the Gansu ultramarat
 ナレーター: それは、「引き返す勇気」。
 
 **制作メモ:**
-サンクコストの天秤。引き返す vs 進む。
+サンクコストの天秤。引き返す vs 進む。[Lovart静止画 + 編集者]
 
-**図解アニメーション:**
-- 天秤のグラフィック
-- 左: 「引き返す（損）」
-- 右: 「進む（得？）」
-- 「進む」を選ぶと天秤ごと奈落へ落ちるアニメーション
+**Lovart背景プロンプト（16:9）:**
+```
+An old ornate brass balance scale on a dark stone surface. One side of the scale is weighted down heavily, the other side is raised. Dramatic single spotlight from above. Dark moody background suggesting a cliff edge or abyss below. The scale is tipping dangerously toward the edge. Metaphor for fateful decision. Rich warm brass tones against deep black void. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+```
 
 **CapCut編集指示:**
-- 0s〜3s: 天秤が表示され、「進む」側に傾く
+- 背景素材の上に天秤のラベルテキストを配置
+- 左: 「引き返す（損）」
+- 右: 「進む（得？）」
+- 0s〜3s: 天秤が「進む」側に傾くアニメーション
 - 3s〜5s: 天秤ごと画面下に落ちるアニメーション
 
 **SE:**
@@ -3938,10 +4111,12 @@ Collage of international newspaper front pages reporting on the Gansu ultramarat
 **制作メモ:**
 ランナーが前に進み続けるシルエット。背後に「引き返せ」の文字。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Silhouette of runner stubbornly pushing forward into dark storm. Behind the runner, faint text "TURN BACK" barely visible. Dramatic dark atmosphere. Runner moving away from safety into danger. Photorealistic, shot on RED camera. Cinematic style. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°59'00"N 104°08'00"E（セクション3の稜線）Altitude: 500m
+- カメラ: 稜線上の細い道を俯瞰。先が霧に消えていく地形
+- チルト: 50°
+- 0s〜5s: 稜線に沿って前方にゆっくりパン（前に進む一方向の道を強調）
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - シルエットが画面中央→奥へ移動（小さくなる）
@@ -3959,8 +4134,15 @@ Silhouette of runner stubbornly pushing forward into dark storm. Behind the runn
 **制作メモ:**
 テキスト演出。「戻る勇気 = 真の強さ」。
 
+**Google Earthアニメーション:**
+- 開始座標: 36°58'30"N 104°08'10"E（セクション3の分岐点付近）Altitude: 1km
+- カメラ: トレイルが二方向に分かれる地形を俯瞰。一方は谷へ下り、一方は尾根を登る
+- チルト: 45°
+- 0s〜5s: 分岐点を中心にゆっくりズームイン
+- 所要時間: 5秒
+
 **CapCut編集指示:**
-- 黒背景に白文字で「戻る勇気 ＝ 真の強さ」を配置
+- 背景素材の上に白文字で「戻る勇気 ＝ 真の強さ」を配置
 - 0s〜3s: テキストフェードイン
 - 3s〜5s: テキストが金色に光るエフェクト
 
@@ -3999,7 +4181,7 @@ Warm light glowing from windows of simple house at night. Cozy home atmosphere. 
 
 **Lovart背景プロンプト（16:9）:**
 ```
-Warm family dinner scene viewed through window from outside. Soft golden interior light. Family silhouettes visible around dining table. Cozy domestic atmosphere. Evening sky with first stars appearing. Photorealistic, shot on RED camera. Warm hopeful color palette. 16:9 aspect ratio. Generate 5 images.
+Warm interior of a modest Chinese family home viewed through a window frame from outside. Family gathered around a small dining table with steaming dishes. Soft warm orange-yellow lighting from overhead lamp. Cozy intimate atmosphere. Condensation on the window glass slightly blurring the scene. Cold blue exterior framing the warm golden interior. Medium shot through the window pane. Photorealistic, shot on Canon R5. Documentary style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 **CapCut編集指示:**
@@ -4035,10 +4217,12 @@ Warm family dinner scene viewed through window from outside. Soft golden interio
 **制作メモ:**
 ジューさんの言葉がテキストで画面に表示。背景は夕日の黄河石林。
 
-**Lovart背景プロンプト（16:9）:**
-```
-Yellow River Stone Forest at golden sunset. Dramatic rock formations bathed in warm orange-gold light. Peaceful serene atmosphere. Vast landscape stretching to horizon. Warm hopeful color palette. Photorealistic landscape, aerial shot. 16:9 aspect ratio. Generate 5 images.
-```
+**Google Earthアニメーション:**
+- 開始座標: 36°26'00"N 104°03'00"E（黄河石林全景）Altitude: 5km
+- カメラ: 黄河石林を広く俯瞰。夕日のカラーグレーディングはCapCutで追加
+- チルト: 35°（壮大な全景を見せる）
+- 0s〜5s: ゆっくりズームアウト（壮大なエンディング構図）
+- 所要時間: 5秒
 
 **CapCut編集指示:**
 - 夕日の黄河石林を背景に、白文字で「困っている人がいたら、助ける。それだけだ」を配置
