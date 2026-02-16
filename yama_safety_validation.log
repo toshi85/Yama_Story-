@@ -11,3 +11,270 @@
 --- 🛡️ Safety Blockade: Checking Script_Full_Definitive_Gansu.md ---
     Targeting: 18 NG Patterns (Death, Violence, Mental, Children, Pronouns)
 ✅ SUCCESS: No Issues Found.
+
+--- [Safety Blockade]: Checking Gansu_Script_User_Version_Complete.txt ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[FAILED]: Found 9 issues.
+Line 352: Inconsistent Reading for '白銀'. Found '（パイイン）', expected '（はくぎん）'.
+Line 1891: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "暴風に吹き飛ばされるランナーの衝撃映像。体が宙に浮くほどの風圧。"
+Line 2538: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "ドンッ（拳でテーブルを叩くような衝撃音）"
+Line 2560: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "「切り捨てた」に合わせてドンッという衝撃音"
+Line 3000: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "「0」の文字が大きく表示。衝撃的な事実の強調。"
+Line 3738: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "薄着のまま発見されたランナーたちの衝撃映像。荒涼とした岩場に横たわる人影。"
+Line 4271: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| ASSET-076 | 暴風に吹き飛ばされる | 衝撃映像 |"
+Line 4277: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| ASSET-155 | 薄着のまま発見 | 衝撃 |"
+Line 4329: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| Section 1 | フック（生還率0%の衝撃） | 001-011 | 11 |"
+
+--- [Safety Blockade]: Checking Gansu_Script_User_Version_Complete.txt ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[FAILED]: Found 9 issues.
+Line 352: Inconsistent Reading for '白銀'. Found '（パイイン）', expected '（はくぎん）'.
+Line 1891: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "暴風に吹き飛ばされるランナーの衝撃映像。体が宙に浮くほどの風圧。"
+Line 2538: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "ドンッ（拳でテーブルを叩くような衝撃音）"
+Line 2560: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "「切り捨てた」に合わせてドンッという衝撃音"
+Line 3000: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "「0」の文字が大きく表示。衝撃的な事実の強調。"
+Line 3738: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "薄着のまま発見されたランナーたちの衝撃映像。荒涼とした岩場に横たわる人影。"
+Line 4271: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| ASSET-076 | 暴風に吹き飛ばされる | 衝撃映像 |"
+Line 4277: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| ASSET-155 | 薄着のまま発見 | 衝撃 |"
+Line 4329: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| Section 1 | フック（生還率0%の衝撃） | 001-011 | 11 |"
+
+--- [Safety Blockade]: Checking Gansu_Script_User_Version_Complete.txt ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[FAILED]: Found 9 issues.
+Line 352: Inconsistent Reading for '白銀'. Found '（パイイン）', expected '（はくぎん）'.
+Line 1891: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "暴風に吹き飛ばされるランナーの衝撃映像。体が宙に浮くほどの風圧。"
+Line 2538: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "ドンッ（拳でテーブルを叩くような衝撃音）"
+Line 2560: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "「切り捨てた」に合わせてドンッという衝撃音"
+Line 3000: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "「0」の文字が大きく表示。衝撃的な事実の強調。"
+Line 3738: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "薄着のまま発見されたランナーたちの衝撃映像。荒涼とした岩場に横たわる人影。"
+Line 4271: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| ASSET-076 | 暴風に吹き飛ばされる | 衝撃映像 |"
+Line 4277: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| ASSET-155 | 薄着のまま発見 | 衝撃 |"
+Line 4329: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| Section 1 | フック（生還率0%の衝撃） | 001-011 | 11 |"
+
+--- [Safety Blockade]: Checking Gansu_Script_User_Version_Complete.txt ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[FAILED]: Found 9 issues.
+Line 352: Inconsistent Reading for '白銀'. Found '（パイイン）', expected '（はくぎん）'.
+Line 1891: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "暴風に吹き飛ばされるランナーの衝撃映像。体が宙に浮くほどの風圧。"
+Line 2538: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "ドンッ（拳でテーブルを叩くような衝撃音）"
+Line 2560: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "「切り捨てた」に合わせてドンッという衝撃音"
+Line 3000: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "「0」の文字が大きく表示。衝撃的な事実の強調。"
+Line 3738: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "薄着のまま発見されたランナーたちの衝撃映像。荒涼とした岩場に横たわる人影。"
+Line 4271: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| ASSET-076 | 暴風に吹き飛ばされる | 衝撃映像 |"
+Line 4277: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| ASSET-155 | 薄着のまま発見 | 衝撃 |"
+Line 4329: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| Section 1 | フック（生還率0%の衝撃） | 001-011 | 11 |"
+
+--- [Safety Blockade]: Checking Gansu_Script_User_Version_Complete.txt ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[FAILED]: Found 9 issues.
+Line 352: Inconsistent Reading for '白銀'. Found '（パイイン）', expected '（はくぎん）'.
+Line 1891: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "暴風に吹き飛ばされるランナーの衝撃映像。体が宙に浮くほどの風圧。"
+Line 2538: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "ドンッ（拳でテーブルを叩くような衝撃音）"
+Line 2560: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "「切り捨てた」に合わせてドンッという衝撃音"
+Line 3000: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "「0」の文字が大きく表示。衝撃的な事実の強調。"
+Line 3738: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "薄着のまま発見されたランナーたちの衝撃映像。荒涼とした岩場に横たわる人影。"
+Line 4271: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| ASSET-076 | 暴風に吹き飛ばされる | 衝撃映像 |"
+Line 4277: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| ASSET-155 | 薄着のまま発見 | 衝撃 |"
+Line 4329: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| Section 1 | フック（生還率0%の衝撃） | 001-011 | 11 |"
+
+--- [Safety Blockade]: Checking Gansu_Script_User_Version_Complete.txt ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[FAILED]: Found 9 issues.
+Line 352: Inconsistent Reading for '白銀'. Found '（パイイン）', expected '（はくぎん）'.
+Line 1891: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "暴風に吹き飛ばされるランナーの衝撃映像。体が宙に浮くほどの風圧。"
+Line 2538: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "ドンッ（拳でテーブルを叩くような衝撃音）"
+Line 2560: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "「切り捨てた」に合わせてドンッという衝撃音"
+Line 3000: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "「0」の文字が大きく表示。衝撃的な事実の強調。"
+Line 3738: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "薄着のまま発見されたランナーたちの衝撃映像。荒涼とした岩場に横たわる人影。"
+Line 4271: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| ASSET-076 | 暴風に吹き飛ばされる | 衝撃映像 |"
+Line 4277: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| ASSET-155 | 薄着のまま発見 | 衝撃 |"
+Line 4329: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "| Section 1 | フック（生還率0%の衝撃） | 001-011 | 11 |"
+
+--- [Safety Blockade]: Checking Gansu_Script_User_Version_Complete.txt ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[FAILED]: Found 6 issues.
+Line 1891: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "暴風に吹き飛ばされるランナーの衝撃映像。体が宙に浮くほどの風圧。"
+Line 2538: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "ドンッ（拳でテーブルを叩くような衝撃音）"
+Line 2560: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "「切り捨てた」に合わせてドンッという衝撃音"
+Line 3000: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "「0」の文字が大きく表示。衝撃的な事実の強調。"
+Line 3738: WARN: '衝撃' in script body may trigger clickbait detection.
+   -> "薄着のまま発見されたランナーたちの衝撃映像。荒涼とした岩場に横たわる人影。"
+Line 3775: Repetitive Ending 'いる' (Count: 2). Change to noun stop (体言止め) or other form.
+
+--- [Safety Blockade]: Checking Gansu_Script_User_Version_Complete.txt ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[FAILED]: Found 21 issues.
+Line 352: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 657: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 683: Repetitive Ending 'ました' (Count: 3). Change to noun stop (体言止め) or other form.
+Line 1189: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 1437: Repetitive Ending 'でした' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 1547: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 1566: Repetitive Ending 'ました' (Count: 3). Change to noun stop (体言止め) or other form.
+Line 1595: Repetitive Ending 'ました' (Count: 4). Change to noun stop (体言止め) or other form.
+Line 2272: Repetitive Ending 'でした' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 2371: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 2435: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 2768: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 2946: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 2974: Repetitive Ending 'ました' (Count: 3). Change to noun stop (体言止め) or other form.
+Line 3178: Repetitive Ending 'でした' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 3262: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 3523: Repetitive Ending 'でした' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 3547: Repetitive Ending 'でした' (Count: 3). Change to noun stop (体言止め) or other form.
+Line 3665: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 3815: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 3836: Repetitive Ending 'ました' (Count: 3). Change to noun stop (体言止め) or other form.
+
+--- [Safety Blockade]: Checking Gansu_Script_User_Version_Complete.txt ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[SUCCESS]: No Safety or Style Issues Found.
+
+--- [Safety Blockade]: Checking Gansu_Script_User_Version_Complete.txt ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[SUCCESS]: No Safety or Style Issues Found.
+
+--- [Safety Blockade]: Checking Gansu_Script_User_Version_Complete.txt ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[SUCCESS]: No Safety or Style Issues Found.
+
+--- [Safety Blockade]: Checking Gansu_Script_User_Version_Complete.txt ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[SUCCESS]: No Safety or Style Issues Found.
+
+--- [Safety Blockade]: Checking Gansu_Script_User_Version_Complete.txt ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[SUCCESS]: No Safety or Style Issues Found.
+
+--- [Safety Blockade]: Checking Gansu_Narration_Script.md ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[FAILED]: Found 24 issues.
+Line 48: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 105: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 115: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 128: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 148: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 150: Repetitive Ending 'ました' (Count: 3). Change to noun stop (体言止め) or other form.
+Line 199: Repetitive Ending 'でした' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 205: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 206: Repetitive Ending 'ました' (Count: 3). Change to noun stop (体言止め) or other form.
+Line 208: Repetitive Ending 'ました' (Count: 4). Change to noun stop (体言止め) or other form.
+Line 210: Repetitive Ending 'ました' (Count: 5). Change to noun stop (体言止め) or other form.
+Line 237: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 243: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 244: Repetitive Ending 'ました' (Count: 3). Change to noun stop (体言止め) or other form.
+Line 261: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 269: Repetitive Ending 'でした' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 275: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 279: Repetitive Ending 'でした' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 289: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 297: Repetitive Ending 'でした' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 307: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 314: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 315: Repetitive Ending 'ました' (Count: 3). Change to noun stop (体言止め) or other form.
+Line 318: Repetitive Ending 'ました' (Count: 4). Change to noun stop (体言止め) or other form.
+
+--- [Safety Blockade]: Checking Gansu_Narration_Script.md ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[FAILED]: Found 24 issues.
+Line 48: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 105: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 115: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 128: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 148: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 150: Repetitive Ending 'ました' (Count: 3). Change to noun stop (体言止め) or other form.
+Line 199: Repetitive Ending 'でした' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 205: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 206: Repetitive Ending 'ました' (Count: 3). Change to noun stop (体言止め) or other form.
+Line 208: Repetitive Ending 'ました' (Count: 4). Change to noun stop (体言止め) or other form.
+Line 210: Repetitive Ending 'ました' (Count: 5). Change to noun stop (体言止め) or other form.
+Line 237: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 243: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 244: Repetitive Ending 'ました' (Count: 3). Change to noun stop (体言止め) or other form.
+Line 261: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 269: Repetitive Ending 'でした' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 275: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 279: Repetitive Ending 'でした' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 289: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 297: Repetitive Ending 'でした' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 307: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 314: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+Line 315: Repetitive Ending 'ました' (Count: 3). Change to noun stop (体言止め) or other form.
+Line 318: Repetitive Ending 'ました' (Count: 4). Change to noun stop (体言止め) or other form.
+
+--- [Safety Blockade]: Checking Gansu_Narration_Script.md ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[FAILED]: Found 1 issues.
+Line 307: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+
+--- [Safety Blockade]: Checking Gansu_Narration_Script.md ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[SUCCESS]: No Safety or Style Issues Found.
+
+--- [Safety Blockade]: Checking Gansu_Narration_Script.md ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[SUCCESS]: No Safety or Style Issues Found.
+
+--- [Safety Blockade]: Checking Gansu_Narration_Script.md ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[SUCCESS]: No Safety or Style Issues Found.
+
+--- [Safety Blockade]: Checking Gansu_Narration_Script.md ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[SUCCESS]: No Safety or Style Issues Found.
+
+--- [Safety Blockade]: Checking Gansu_Narration_Script.md ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[SUCCESS]: No Safety or Style Issues Found.

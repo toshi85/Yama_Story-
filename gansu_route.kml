@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>甘粛省ウルトラマラソン遭難事故コース (Gansu Ultramarathon Route)</name>
+    <description>2021年5月22日に発生した事故のコース概略図、特にCP2からCP3にかけての「死の区間」を可視化。</description>
+    <Style id="redLine">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="yellowLine">
+      <LineStyle>
+        <color>ff00ffff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="pointStyle">
+        <IconStyle>
+          <scale>1.1</scale>
+        </IconStyle>
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+    </Style>
+
+    <!-- Start Point -->
+    <Placemark>
+      <name>Start (スタート地点)</name>
+      <styleUrl>#pointStyle</styleUrl>
+      <Point>
+        <coordinates>104.311944,36.886389,1595</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- CP1 (Approximate) -->
+    <Placemark>
+      <name>CP1 (10km)</name>
+      <description>景勝地の中を通る比較的平坦なルート。</description>
+      <styleUrl>#pointStyle</styleUrl>
+      <Point>
+        <coordinates>104.300000,36.930000,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- CP2 (20km) -->
+    <Placemark>
+      <name>CP2 (20km地点)</name>
+      <description>ここまでは天候も穏やかだった。ここから急勾配の「セクション3」が始まる。</description>
+      <styleUrl>#pointStyle</styleUrl>
+      <Point>
+        <coordinates>104.288611,36.975000,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- Zhu Keming's Cave -->
+    <Placemark>
+      <name>朱克銘の洞窟 (Shepherd's Cave)</name>
+      <description>羊飼いの朱克銘氏がランナーを救助した場所。CP2とCP3の間。</description>
+      <styleUrl>#pointStyle</styleUrl>
+      <Point>
+        <coordinates>104.288611,36.995000,2000</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- CP3 (30km, Summit) -->
+    <Placemark>
+      <name>CP3 (30km地点 山頂)</name>
+      <description>標高2230m。猛烈な暴風雨と低温に見舞われた地点。</description>
+      <styleUrl>#pointStyle</styleUrl>
+      <Point>
+        <coordinates>104.270000,37.010000,2230</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- Path from Start to CP2 (Red) -->
+    <Placemark>
+      <name>Start - CP2</name>
+      <styleUrl>#redLine</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          104.311944,36.886389,0
+          104.305000,36.910000,0
+          104.300000,36.930000,0
+          104.295000,36.950000,0
+          104.288611,36.975000,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- Path from CP2 to CP3 (Yellow - Danger Zone) -->
+    <Placemark>
+      <name>CP2 - CP3 (魔のセクション3)</name>
+      <description>急勾配と暴風雨の区間</description>
+      <styleUrl>#yellowLine</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          104.288611,36.975000,0
+          104.288611,36.995000,0
+          104.270000,37.010000,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+  </Document>
+</kml>

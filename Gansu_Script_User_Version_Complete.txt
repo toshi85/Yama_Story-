@@ -85,6 +85,7 @@ Chinese shepherd, Zhu Keming, 49 years old. Tough weathered face, calm determine
 
 ---
 
+<!-- PART: KI -->
 ## Section 1: フック（生還率0%の衝撃）
 
 ### ASSET-001 | 0:00-0:05（5秒）
@@ -345,6 +346,7 @@ Dramatic close-up of rough weathered rock face texture in Gansu province mountai
 
 ---
 
+<!-- PART: SHO -->
 ## Section 2: 誰がために走るのか（被害者の深掘り）
 
 ### ASSET-012 | 0:55-1:00（5秒）
@@ -3590,6 +3592,7 @@ Emotional farewell scene between Chinese villagers and rescued marathon runners.
 
 ---
 
+<!-- PART: TEN-KETSU -->
 ## Section 11: 結末と教訓
 
 ### ASSET-149 | 12:20-12:25（5秒）
@@ -4061,7 +4064,7 @@ Twenty-one white chrysanthemum flowers arranged in a row on a simple stone memor
 
 ### ASSET-171 | 14:10-14:15（5秒）
 **ナレーション（61文字）:**
-ナレーター: この悲劇から、私たちは何を学ぶべきなのでしょうか。
+ナレーター: この悲劇が、ひとつの問いを残した。
 
 **制作メモ:**
 新聞記事コラージュ。各国メディアの報道。

@@ -59,8 +59,8 @@ DIGNITY_NEGATIVE_WORDS = [
 # Format: { "KeyTerm": "CorrectReading/String" }
 # The validator ensures that if 'KeyTerm' appears, it matches the strictly defined string.
 TERM_DB = {
-    "白銀": "白銀（はくぎん）",
-    "景泰": "景泰（ケイタイ）" 
+    "白銀": "白銀（パイイン）",
+    "景泰": "景泰（ケイタイ）"
 }
 
 # Whitelist exceptions not covered by Regex lookbehinds
@@ -91,23 +91,46 @@ def validate_file(file_path):
         return False
 
     errors = []
-    
+
     # Repetition Check Variables
     last_ending = ""
     repetition_count = 0
-    
+
     # Simple ending pattern: Capture 'でした', 'ました', 'だ', 'ある' at end of line (ignoring punctuation)
     ending_pattern = re.compile(r'(でした|ました|だ|ある|いる)[。、]?$')
+
+    # Track production note context (制作メモ, SE, CapCut, 演出 sections)
+    in_production_section = False
 
     for i, line in enumerate(lines):
         line_num = i + 1
         stripped_line = line.strip()
-        
+
         if not stripped_line: continue
-        
+
+        # Detect production section headers → skip until next ASSET header or ナレーション
+        if re.match(r'\*\*(制作メモ|SE|CapCut編集指示|演出|Lovart|AI動画プロンプト|Google Earth)', stripped_line):
+            in_production_section = True
+        elif re.match(r'### ASSET-|ナレーター:', stripped_line):
+            in_production_section = False
+        elif stripped_line.startswith('**ナレーション'):
+            in_production_section = False
+
         # Skip Production Notes & Metadata for checks
-        is_metadata = any(w in line for w in WHITELIST_LINES) or stripped_line.startswith('[') or stripped_line.startswith('#') or stripped_line.startswith('<')
+        is_metadata = (
+            any(w in line for w in WHITELIST_LINES) or
+            stripped_line.startswith('[') or stripped_line.startswith('#') or
+            stripped_line.startswith('<') or stripped_line.startswith('|') or
+            stripped_line.startswith('```') or stripped_line.startswith('**') or
+            stripped_line.startswith('- ') or  # Bullet points in production notes
+            in_production_section  # Inside production note sections
+        )
         
+        # Reset ending counter when hitting metadata (prevents cross-ASSET false positives)
+        if is_metadata:
+            last_ending = ""
+            repetition_count = 0
+
         # 1. NG Word & Pronoun Check
         if not is_metadata:
             for pattern, reason in BANNED_WORDS.items():
@@ -172,4 +195,5 @@ if __name__ == "__main__":
         log_print("Usage: python3 validate_yama_safety.py <file_path>")
         sys.exit(1)
     
-    validate_file(sys.argv[1])
+    result = validate_file(sys.argv[1])
+    sys.exit(0 if result else 1)

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>甘粛省ウルトラマラソン遭難事故コース (Gansu Ultramarathon Route) - Corrected</name>
+    <description>2021年5月22日に発生した事故のコース概略図。修正版。</description>
+    <Style id="redLine">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="yellowLine">
+      <LineStyle>
+        <color>ff00ffff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="pointStyle">
+        <IconStyle>
+          <scale>1.1</scale>
+        </IconStyle>
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+    </Style>
+
+    <!-- Start Point (Yellow River Stone Forest Scenic Area Entrance / Plaza) -->
+    <!-- Re-adjusted closer to the actual park entrance based on 104.18 E -->
+    <Placemark>
+      <name>Start (景区広場)</name>
+      <styleUrl>#pointStyle</styleUrl>
+      <Point>
+        <coordinates>104.300000,36.883333,1595</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- CP1 -->
+    <Placemark>
+      <name>CP1 (10km)</name>
+      <styleUrl>#pointStyle</styleUrl>
+      <Point>
+        <coordinates>104.233333,36.916667,1400</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- CP2 (20km) - Mijiashan Base -->
+    <!-- Moving West towards the mountain range as per Claude's likely correct data -->
+    <Placemark>
+      <name>CP2 (20km - 米家山麓)</name>
+      <styleUrl>#pointStyle</styleUrl>
+      <Point>
+        <coordinates>104.166667,36.950000,1347</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- Section 3 (Climb) -->
+    <Placemark>
+      <name>Section 3 (急勾配区間)</name>
+      <description>石林の中を登る難所</description>
+      <styleUrl>#yellowLine</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          104.166667,36.950000,0
+          104.135000,36.975000,0
+          104.116667,36.991667,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- CP3 (Summit) -->
+    <Placemark>
+      <name>CP3 (30km - 山頂)</name>
+      <styleUrl>#pointStyle</styleUrl>
+      <Point>
+        <coordinates>104.116667,36.991667,2230</coordinates>
+      </Point>
+    </Placemark>
+
+  </Document>
+</kml>
