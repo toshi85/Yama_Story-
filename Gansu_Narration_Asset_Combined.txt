@@ -3361,18 +3361,18 @@ Extreme close-up of a hand lying on cold rocky ground, fingers loosely curled ar
 
 ---
 
-**ASSET-160** [Lovart動画] — 遺品モンタージュ（指輪、手紙、写真） [Generic group]
+**ASSET-160** [Lovart動画] — 選手の遺品（ゼッケン、シューズ、メダル） [Generic group]
 
 → ファイル名: ASSET-160.mp4
 ナレーション: 犠牲となった21名。そのほとんどが、中国のトップレベルを走るエリート選手たちでした。
 
 ```
-Slow montage of three personal items lying on cold rocky ground in morning light: a small engagement ring catching sunlight, a child's handwritten letter partially damaged by rain, and a family photograph. Each item represents a life lost. Heavily desaturated colors, sorrowful atmosphere. Photorealistic, shot on RED camera. Cinematic close-up collage. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
+Close-up of a muddy race bib number lying on wet rocky ground next to a pair of worn-out trail running shoes. A finisher medal rests on top of the bib. Rain droplets on the items. Cold morning light. Shallow depth of field. Heavily desaturated colors, sorrowful memorial atmosphere. Photorealistic, shot on RED camera. Cinematic close-up. Documentary drama style. 16:9 aspect ratio. Generate 5 images.
 ```
 
 → **Google Flow動画プロンプト:**
 ```
-Slow dissolve between three personal items on rocky ground. Ring glinting in morning light. Letter page fluttering in gentle breeze. Photo lying still. Each item lingers for 1.5 seconds. Somber pace. 5 seconds.
+Slow camera pan across a muddy race bib and worn trail running shoes on rocky ground. A medal glints faintly in cold morning light. Rain droplets fall on the items. Shallow depth of field shifts. Sorrowful stillness. 5 seconds.
 ```
 
 【SE】: 風の音がかすかに戻ってくる（ホアンさんの無音セクションからの復帰）
