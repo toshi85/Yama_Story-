@@ -3,21 +3,47 @@ import re
 
 def validate_narrative_tone(file_path):
     """
-    Validates that the narrator does not use "preachy" or "moralizing" language.
-    Enforces a "Show, Don't Tell" policy by flagging banned keywords in Narrator lines.
+    Validates Yama_Story narrator lines for:
+    1. Show Don't Tell (banned preachy phrases)
+    2. Dash (──) prohibition
+    3. Written-language expressions (以下の通り, etc.)
+    4. Literary/jargon expressions
     """
-    
-    # Banned keywords that indicate moralizing/preaching
-    # These are high-precision signals of "Teaching Mode" vs "Storytelling Mode"
+
+    # Gate 1: Banned preachy phrases (Show Don't Tell)
     BANNED_PHRASES = [
-        "学ぶべき",      # e.g. "私たちが学ぶべきことは..."
-        "教訓",          # e.g. "この事件の教訓は..."
-        "社会の闇",      # e.g. "現代社会の闇が..."
-        "警鐘",          # e.g. "私たちに警鐘を鳴らして..."
-        "私たち",        # e.g. "最後に私たちを救うのは..." (Generic "We" is usually preachy)
-        "現代社会",      # e.g. "現代社会には..."
-        "考えるべき",    # e.g. "一度立ち止まって考えるべきです"
-        "知るべき",      # e.g. "知るべき事実があります"
+        "学ぶべき",
+        "教訓",
+        "社会の闇",
+        "警鐘",
+        "私たち",
+        "現代社会",
+        "考えるべき",
+        "知るべき",
+    ]
+
+    # Gate 2: Dash prohibition
+    DASH_PATTERN = re.compile(r'──|—―|━━')
+
+    # Gate 3: Written-language expressions (not suitable for audio narration)
+    WRITTEN_LANG_PHRASES = [
+        "以下の通り",
+        "上記の",
+        "前述の",
+        "後述の",
+        "下記の",
+        "以下に示す",
+    ]
+
+    # Gate 4: Literary/jargon expressions to flag as warnings
+    LITERARY_PHRASES = [
+        ("机上の空論", "→ 「通用しない」等に言い換え"),
+        ("火を噴いた", "→ 「発砲」等に言い換え"),
+        ("紛糾", "→ 「白熱」等に言い換え"),
+        ("登攀", "→ 「登る」「作業」等に言い換え"),
+        ("取り付いた", "→ 一般的な表現に言い換え"),
+        ("取り付く", "→ 一般的な表現に言い換え"),
+        ("取りついた", "→ 一般的な表現に言い換え"),
     ]
 
     try:
@@ -32,44 +58,97 @@ def validate_narrative_tone(file_path):
             sys.exit(1)
 
     errors = []
-    
-    current_section = "Unknown"
-    
-    print("--------------------------------------------------")
-    print(f"[Analysis] Analyzing Narrative Tone: {file_path}")
-    print("--------------------------------------------------")
+    warnings = []
+    dash_count = 0
+
+    print("=" * 60)
+    print(f"[Yama Narrative Validator] {file_path}")
+    print("=" * 60)
 
     for i, line in enumerate(lines):
-        line = line.strip()
-        
-        # Track sections if needed across headers
-        if line.startswith("#"):
-            current_section = line
+        line_stripped = line.strip()
+
+        # Skip headers and empty lines
+        if line_stripped.startswith("#") or line_stripped.startswith("<!--") or not line_stripped:
             continue
 
         # Only check Narrator lines
-        if line.startswith("ナレーター:"):
-            content = line.replace("ナレーター:", "").strip()
-            
-            for phrase in BANNED_PHRASES:
-                if phrase in content:
-                    errors.append(f"Line {i+1}: Found Banned Phrase '{phrase}' in Narrator line.\n   > \"{content[:40]}...\"")
+        if not line_stripped.startswith("ナレーター:"):
+            continue
+
+        content = line_stripped.replace("ナレーター:", "").strip()
+
+        # Gate 1: Show Don't Tell
+        for phrase in BANNED_PHRASES:
+            if phrase in content:
+                errors.append(
+                    f"[Show Don't Tell] Line {i+1}: '{phrase}'\n"
+                    f"   > \"{content[:60]}...\""
+                )
+
+        # Gate 2: Dash prohibition
+        if DASH_PATTERN.search(content):
+            dash_count += 1
+            errors.append(
+                f"[Dash Prohibited] Line {i+1}: ダッシュ（──）を検出\n"
+                f"   > \"{content[:60]}...\"\n"
+                f"   → 句読点と文構造で間を表現してください"
+            )
+
+        # Gate 3: Written-language
+        for phrase in WRITTEN_LANG_PHRASES:
+            if phrase in content:
+                errors.append(
+                    f"[Written Language] Line {i+1}: '{phrase}' は書き言葉\n"
+                    f"   > \"{content[:60]}...\"\n"
+                    f"   → 音声ナレーションでは不適切。削除または言い換え"
+                )
+
+        # Gate 4: Literary/jargon (warnings)
+        for phrase, suggestion in LITERARY_PHRASES:
+            if phrase in content:
+                warnings.append(
+                    f"[Literary/Jargon] Line {i+1}: '{phrase}' {suggestion}\n"
+                    f"   > \"{content[:60]}...\""
+                )
+
+    # Output results
+    print()
 
     if errors:
-        print(f"[FAIL] Found {len(errors)} instances of 'Preachy/Moralizing' language.")
-        print("   The Narrator must deal in FACTS and EMOTIONS (Show), not OPINIONS (Tell).")
-        print("   Please remove these phrases and let the story speak for itself.\n")
+        print(f"[FAIL] {len(errors)} error(s) found.")
+        print("-" * 40)
         for err in errors:
-            print(f"   - {err}")
+            print(f"  ❌ {err}")
+            print()
+
+    if warnings:
+        print(f"[WARN] {len(warnings)} warning(s) found.")
+        print("-" * 40)
+        for warn in warnings:
+            print(f"  ⚠️  {warn}")
+            print()
+
+    if not errors and not warnings:
+        print("[PASS] All narrative checks passed.")
+        print("  ✅ Show Don't Tell: OK")
+        print("  ✅ Dash prohibition: OK")
+        print("  ✅ Written language: OK")
+        print("  ✅ Literary/jargon: OK")
+    elif not errors:
+        print("[PASS with warnings] No errors, but warnings should be reviewed.")
+
+    print()
+    print("=" * 60)
+
+    if errors:
         sys.exit(1)
     else:
-        print("[PASS] No moralizing language detected in Narrator lines.")
-        print("   (Good Intent: 'Show, Don't Tell' compliance checked)")
         sys.exit(0)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python validate_yama_narrative.py <script_file>")
         sys.exit(1)
-    
+
     validate_narrative_tone(sys.argv[1])
