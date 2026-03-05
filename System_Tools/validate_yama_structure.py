@@ -16,7 +16,7 @@ except ImportError:
         print("⚠️ Warning: Could not import 'validate_yama_safety'. Safety check skipped (Not Ideal).")
         validate_yama_safety = None
 
-MIN_VOLUME_CHARS = 6000
+MIN_VOLUME_CHARS = 8800  # 最適尺26分（340字/分）に基づく最低文字数
 
 def validate_structure(file_path):
     print(f"[Structure Check]: Validating Yama Story Structure + Safety + Volume: {os.path.basename(file_path)}")
