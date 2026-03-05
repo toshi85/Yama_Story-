@@ -8,7 +8,7 @@ LOG_FILE = "/Users/tosimasa/Desktop/Antigravity/Yama_Story/yama_safety_validatio
 # Strict Prohibited Words (Demonetization Risk & Style)
 BANNED_WORDS = {
     # Death (High Risk) - Must use euphemisms
-    r"(?<!必)死(?!守|角|球|力|闘|去)": "NG: '死' (Direct Death/Corpse reference). Use '悲劇', '帰らぬ人', '命を落とす'. (Exception: '必死' included in regex)",
+    r"(?<!必)(?<!不)死(?!守|角|球|力|闘|去)": "NG: '死' (Direct Death/Corpse reference). Use '悲劇', '帰らぬ人', '命を落とす'. (Exception: '必死', '不死' included in regex)",
     r"死亡": "NG: '死亡'. Use '帰らぬ人', '命が失われた'.",
     r"死体": "NG: '死体'. Use '遺体', 'なきがら'.",
     r"遺体": "NG: '遺体' (Avoid in Title/Thumb). Use '発見', '姿'. Script OK if respectful.",
