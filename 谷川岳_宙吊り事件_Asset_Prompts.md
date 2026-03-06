@@ -770,10 +770,13 @@ Close-up of wet serpentinite rock surface. Water droplets running down black-gre
 ```
 → 編集者指示: ゆっくりズームイン（5秒で1.0→1.15）。岩の質感が伝わるように
 
-#### ASSET-042 [Google Earth] 台本L305-306
+#### ASSET-042 [Lovart静止画] 台本L305-306
 ナレーション: つまり、目の前に2人がいるのに、誰も近づけない状況でした。
-座標: 36°50'44"N 138°56'20"E
-カメラ: 衝立岩の3D地形。基部から宙吊り地点までのルートを見せるが、オーバーハング部分が立ちはだかっている様子。到達不可能な状況が伝わるカメラワーク
+シーン: 岩壁の基部から見上げた圧倒的な壁と、はるか上方の小さな2つの影
+```
+Low angle looking straight up at a massive vertical dark serpentinite cliff face from the base. The rock wall fills the entire frame, overwhelming and impassable. Far above, barely visible against the grey sky at approximately 200 meters height, two tiny dark silhouettes hang motionless from the rock face. The enormous distance between the viewer at the bottom and the figures above emphasizes the impossibility of reaching them. Wet black rock surface, no handholds visible. Autumn overcast sky. Photorealistic, shot on RED camera. Documentary drama style. Desperate hopeless atmosphere, cold desaturated tones. 16:9 aspect ratio. Generate 5 images.
+```
+→ 編集者指示: ゆっくりズームイン（5秒で1.0→1.15）。上方の人影に向かってフォーカス移動
 
 ---
 
@@ -1351,11 +1354,11 @@ Dim traditional Japanese room (washitsu). Low table (chabudai) with documents. H
 
 #### ASSET-077 [Lovart静止画] 台本L556-558
 ナレーション: 銃弾がロープではなく、体に命中するかもしれない。
-シーン: 銃弾の軌道図解
+シーン: スコープ越しに見たザイルと人体の危険な近さ
 ```
-Dark background diagram. Silhouette of person hanging from rope on cliff. Bullet trajectory lines drawn: one hitting rope (green), one missing (red). Risk visualization. Dark moody infographic. Photorealistic dark background. Documentary diagram style. 16:9 aspect ratio. Generate 5 images.
+Rifle scope circular view looking up at cliff face. Small dark silhouette of a person hanging from thin red rope against grey rock wall, seen from 140 meters below. Crosshair centered on the thin rope, but the hanging body is dangerously close to the aim point. Emphasizing how narrow the margin between rope and body is. Vignette scope frame. Photorealistic, shot on RED camera. Documentary drama style. Tense ominous atmosphere, desaturated cold tones. 16:9 aspect ratio. Generate 5 images.
 ```
-→ 編集者指示: テキスト追加（「ザイルに命中」「外れた場合...」）。ゆっくりズームイン（5秒）
+→ 編集者指示: テキスト追加（「ザイルに命中」「外れた場合...」）。ゆっくりズームイン（5秒で1.0→1.15）
 
 #### ASSET-078 [キャラアニメーション] [Generic group] 台本L562-564
 ナレーション: ロープに当たり切断できても、300メートルの岩壁をゴロゴロと落下することになる。
@@ -1748,11 +1751,13 @@ Shooting point vicinity. Journalists with 1960s cameras and tripods. Mountain ba
 - 0s〜5s: 群衆の横顔にゆっくりズームイン（1.0→1.1）
 - 5秒
 
-#### ASSET-100 [Google Earth] 台本L728-730
+#### ASSET-100 [Lovart静止画] 台本L728-730
 ナレーション: 合わせて400人を超える人々が、衝立岩を見上げていました。
-座標: 36°50'50"N 138°56'32"E → 36°50'44"N 138°56'20"E
-カメラ: 射撃地点（一ノ倉沢出合付近）から衝立岩を見上げる角度。射撃距離約140mの距離感を強調
-→ 編集者指示: テキスト追加（「射撃距離 約140m」）
+シーン: 射撃地点に集結した400人の群衆と圧倒的な岩壁
+```
+Wide angle view from behind a massive crowd of over 400 Japanese people gathered at the base of a towering vertical cliff face in 1960. Military personnel in 1960s JGSDF uniforms, police officers, mountaineers with climbing gear, families in dark formal clothing, journalists with cameras and notepads. All looking upward at the enormous dark serpentinite rock wall rising 300 meters above them. Autumn mountain valley setting, narrow gorge, morning light. The cliff dominates the upper two-thirds of the frame, emphasizing the overwhelming scale difference between the tiny humans below and the massive wall above. Photorealistic, shot on RED camera. Documentary journalism style. Tense somber atmosphere, desaturated cool tones. 16:9 aspect ratio. Generate 5 images.
+```
+→ 編集者指示: テキスト追加（「射撃距離 約140m」）。ゆっくりズームアウト（5秒で1.1→1.0）
 
 #### ASSET-101 [キャラアニメーション] [CHAR-05 reference | 再利用] 台本L734-736
 ナレーション: 隊員たちが銃を構え、見上げた先。射撃距離、約140メートル。
@@ -2131,6 +2136,27 @@ Dark background with Tsuitate-iwa cliff diagram on left half. Bullet trajectory 
 - 5秒
 → 編集者指示: テキスト追加（「失敗: 空中のザイルを狙撃→風で揺れて命中せず」）
 
+#### ASSET-120.5 [キャラアニメーション] [CHAR-05 reference | 再利用] 台本L871
+ナレーション: しかし風で揺れ回転するザイルを、140メートル先から撃ち抜くのは、ほぼ不可能に近いです。
+シーン: スコープ越しに揺れるザイルを追うが照準が定まらない狙撃手
+
+**キャラプロンプト（CHAR-05）** — Lovart 1:1で生成（背景透過用）
+```
+[CHAR-05 reference | reuse] Japanese JGSDF sniper in his 30s, 1960s military uniform. Looking through rifle scope with intense frustrated expression, sweat on forehead, jaw clenched. Gripping rifle tightly. Upper body, side view aiming upward. White background. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes showing frustration. No text, no words, no letters. 1:1 aspect ratio. Generate 5 images.
+```
+
+**背景プロンプト** — Lovart 16:9で生成（フォトリアル）
+```
+Rifle scope POV looking up at cliff face 140 meters away, thin red nylon rope swaying and spinning in wind against dark rock wall, crosshair trying to track the rope but unable to lock on, blurred motion of rope, wind-swept rocky mountain environment. Photorealistic, shot on RED camera. Documentary drama style. Tense desperate atmosphere. 16:9 aspect ratio. Generate 5 images.
+```
+
+**制作手順**: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutで配置→下記メモに沿って動かす
+
+**動かし方メモ（CapCut編集指示）:**
+- 狙撃手を画面左下に配置（スコープを覗くアングル）
+- 0s〜5s: スコープ部分にゆっくりズームイン（1.0→1.15）
+- 5秒
+
 #### ASSET-121 [キャラアニメーション] [Generic group] 台本L875-877
 ナレーション: 当たっても弾の力が逃げてしまい、切断には至りません。
 参照キャラ: なし（指揮官）
@@ -2280,9 +2306,9 @@ Close-up of rope being struck by bullet at rock surface. Final fibers stretching
 
 #### ASSET-128 [Lovart静止画] 台本L928-930
 ナレーション: Nさんの姿が、岩壁を滑り落ちていきます。100メートル以上の落下。
-シーン: 落下ラインを示す衝立岩
+シーン: 宙吊り地点から雪渓までの圧倒的な落下距離
 ```
-Tsuitate-iwa rock face. Fall trajectory line drawn from midway point down to snow field at base. Massive cliff showing 100+ meter drop distance. No human figures shown. Dark somber atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 images.
+Towering vertical dark serpentinite cliff face of Tsuitate-iwa, 300 meters tall. View from the side showing the full height of the rock wall. A single thin frayed red rope dangling from midway up the cliff, its cut end swaying in the wind. Far below at the base, a white snow field. Scuff marks and scratches visible on the dark rock surface tracing a long vertical path downward. The vast empty space between the rope and the snow field below emphasizes the terrifying 100-meter drop. Autumn overcast sky. Photorealistic, shot on RED camera. Documentary drama style. Devastating somber atmosphere, desaturated cold grey tones. 16:9 aspect ratio. Generate 5 images.
 ```
 → 編集者指示: テキスト追加（「100m以上の落下」のライン）。上から下にゆっくり動かす（5秒）
 
@@ -2480,10 +2506,17 @@ Autumn sunset at Ichinokurasawa valley approach. Climbers descending in far dist
 ```
 → 編集者指示: ゆっくりズームイン（5秒で1.0→1.15）。見出しにフォーカス
 
-#### ASSET-140 [Google Earth] 台本L1021-1023
+#### ASSET-140 [Lovart動画] 台本L1021-1023
 ナレーション: 谷川岳は「魔の山」と呼ばれるようになり、衝立岩は恐怖の象徴となったのです。
-座標: 36°50'14"N 138°55'47"E
-カメラ: 谷川岳全景。上空から衝立岩に向かってゆっくり近づいていく。険しい岩壁が徐々にクローズアップ
+シーン: 霧の中から不気味に姿を現す衝立岩
+```
+Tsuitate-iwa cliff face emerging from thick fog and dark clouds. Massive 300-meter vertical serpentinite rock wall, wet and black, towering ominously. Low angle looking up from the base. Swirling mist partially concealing the upper portion. No people visible. The cliff appears almost alive, menacing, like a dark monument. Autumn overcast sky, last light of day casting deep shadows. Photorealistic, shot on RED camera. Documentary horror atmosphere. Dark ominous desaturated tones, deep blacks and cold greys. 16:9 aspect ratio. Generate 5 images.
+```
+
+→ **Google Flow動画プロンプト:**
+```
+Slow reveal: thick fog gradually pulls back to expose the massive dark cliff face from bottom to top. Camera slowly tilts upward following the rock wall as it emerges from the mist. Eerie atmosphere. 5 seconds.
+```
 → 編集者指示: テキスト追加（「魔の山 谷川岳」）
 
 #### ASSET-141 [Lovart静止画] 台本L1029-1032
@@ -2524,28 +2557,13 @@ Tsuitate-iwa rock face shrouded in thick fog. Same cliff where tragedy repeats. 
 ```
 → 編集者指示: ゆっくりズームイン（5秒で1.0→1.1）
 
-#### ASSET-144 [キャラアニメーション] [Generic group] 台本L1052-1054
+#### ASSET-144 [Lovart静止画 + 編集者] 台本L1052-1054
 ナレーション: この「2度目の宙吊り」により、根本的に制度を見直す動きが始まります。1967年、「群馬県谷川岳遭難防止条例」が施行。
-参照キャラ: なし（年表図解モデル）
-シーン: 因果関係を結ぶ年表
-
-**キャラプロンプト（Generic group）** — Lovart 1:1で生成（背景透過用）
+シーン: 3つの事件から条例施行への因果年表
 ```
-[Generic group] Timeline diagram model with three event nodes connected by arrows showing cause and effect. Each node has a date marker. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors. Clean analytical design. No text, no words, no letters. 1:1 aspect ratio. Generate 5 images.
+Dark moody background with subtle silhouette of Tsuitate-iwa cliff in the distance, shrouded in fog. Three faint circular light spots arranged horizontally across the frame, connected by thin lines, suggesting a timeline flow. Dark desaturated tones, deep navy and charcoal. Empty space for text overlay. Photorealistic, shot on RED camera. Documentary infographic style. Somber reflective atmosphere. 16:9 aspect ratio. Generate 5 images.
 ```
-
-**背景プロンプト** — Lovart 16:9で生成（フォトリアル）
-```
-Dark background for timeline infographic. Clean documentary style. 16:9 aspect ratio. Generate 5 images.
-```
-
-**制作手順**: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutで配置→下記メモに沿って動かす
-
-**動かし方メモ（CapCut編集指示）:**
-- 年表モデルを画面中央に配置
-- 0s〜5s: 年表を左から右にゆっくりパン
-- 5秒
-→ 編集者指示: テキスト追加（「1960年 宙吊り事件」→「1966年 2度目の宙吊り」→「1967年 遭難防止条例施行」）。1つずつ順番に表示
+→ 編集者指示: テキスト追加（「1960年 宙吊り事件」→「1966年 2度目の宙吊り」→「1967年 遭難防止条例施行」）。1つずつ順番に表示（各1.5秒）。ゆっくりズームイン（5秒で1.0→1.1）
 
 #### ASSET-145 [キャラアニメーション] [Generic group] 台本L1058-1060
 ナレーション: 一ノ倉沢を含む危険地区への立ち入りには、
@@ -2817,28 +2835,13 @@ Dark background for data comparison infographic. Documentary style. 16:9 aspect 
 - 5秒
 → 編集者指示: テキスト追加（「谷川岳 800人以上」vs「8,000m峰14座 合計637人」の棒グラフ）
 
-#### ASSET-161 [キャラアニメーション] [Generic group] 台本L1168-1170
+#### ASSET-161 [Lovart静止画 + 編集者] 台本L1168-1170
 ナレーション: つまり谷川岳は、世界最高峰のエベレストより、はるかに多くの命を奪ってきた山なのです。
-参照キャラ: なし（高さ比較モデル）
-シーン: 谷川岳とエベレストの高さ比較
-
-**キャラプロンプト（Generic group）** — Lovart 1:1で生成（背景透過用）
+シーン: 谷川岳 vs エベレストの高さと犠牲者数の逆転比較
 ```
-[Generic group] Height comparison model: small mountain silhouette (Tanigawadake 1,977m) next to towering mountain silhouette (Everest 8,849m). Dramatic size difference but inverted danger. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors. Dark analytical tones. No text, no words, no letters. 1:1 aspect ratio. Generate 5 images.
+Split comparison image. Left side: small modest mountain silhouette against grey sky, low elevation, autumn colors, unassuming appearance. Right side: towering massive snow-capped Himalayan peak piercing through clouds, overwhelming height. Dramatic contrast between the tiny mountain and the giant mountain. Dark moody atmosphere, desaturated documentary tones. Empty space at bottom for data overlay. Photorealistic, shot on RED camera. Documentary infographic style. 16:9 aspect ratio. Generate 5 images.
 ```
-
-**背景プロンプト** — Lovart 16:9で生成（フォトリアル）
-```
-Dark background for height comparison infographic. Documentary data visualization style. 16:9 aspect ratio. Generate 5 images.
-```
-
-**制作手順**: Lovartでキャラ(1:1)→背景透過書き出し→Lovartで背景(16:9)→CapCutで配置→下記メモに沿って動かす
-
-**動かし方メモ（CapCut編集指示）:**
-- 比較モデルを画面中央に配置
-- 0s〜5s: ゆっくりズームアウト（1.1→1.0）
-- 5秒
-→ 編集者指示: テキスト追加（「谷川岳 1,977m」「エベレスト 8,849m」「しかし犠牲者は...」）
+→ 編集者指示: テキスト追加（左に「谷川岳 1,977m」「犠牲者 800人以上」、右に「エベレスト 8,849m」「8,000m峰14座 合計637人」）。左の数字を赤、右の数字を白で表示。ゆっくりズームイン（5秒で1.0→1.1）
 
 #### ASSET-162 [Google Earth] 台本L1176-1178
 ナレーション: 1931年に上越線の清水トンネルが開通し、東京から日帰りできるようになった。
@@ -2999,16 +3002,13 @@ Sunset light on massive rock face gradually turning golden-red. Camera slowly, c
 | ASSET-010 | 36°50'50"N→36°50'44"N | 一ノ倉沢出合から衝立岩を正面に見据える |
 | ASSET-029 | 36°50'44"N 138°56'20"E | 衝立岩の3D断面図。200m地点マーク |
 | ASSET-036 | 36°50'44"N 138°56'20"E | 岩壁基部から見上げ。宙吊り位置の垂直距離強調 |
-| ASSET-042 | 36°50'44"N 138°56'20"E | 基部から宙吊り地点ルート。オーバーハング |
 | ASSET-046 | 36°50'14"N 138°55'47"E | 広域表示。日本海/太平洋分水嶺 |
 | ASSET-055 | 36°50'44"N 138°56'20"E | 横からの3D。オーバーハング。正面ルート不可 |
 | ASSET-056 | 36°50'44"N 138°56'20"E | 迂回ルートを矢印で表示 |
 | ASSET-069 | 36°50'44"N 138°56'20"E | 夕暮れの3D地形。垂直さとスケール感 |
 | ASSET-081 | 36°39'08"N→36°50'14"N | 沼田警察署と谷川岳の距離感。2地点ライン |
 | ASSET-086 | 36°26'05"N→36°50'50"N | 相馬原駐屯地→谷川岳。距離約45km |
-| ASSET-100 | 36°50'50"N→36°50'44"N | 射撃地点から衝立岩。距離約140m |
 | ASSET-129 | 36°50'44"N 138°56'20"E | 宙吊り位置から基部への落下ルート。雪渓表示 |
-| ASSET-140 | 36°50'14"N 138°55'47"E | 谷川岳全景→衝立岩へズームイン |
 | ASSET-157 | 36°50'14"N 138°55'47"E | 谷川岳全景。紅葉。低さが際立つ |
 | ASSET-162 | 35°42'48"N→36°49'53"N | 上野駅→土合駅。上越線ルート |
 | ASSET-172 | 36°49'53"N 138°58'03"E | 土合駅位置表示 |
