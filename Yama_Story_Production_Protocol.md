@@ -36,7 +36,7 @@ This tool physically blocks the process if any of the following are found. You C
 
 This tool enforces the strict **Ki-Sho-Ten-Ketsu (1:8:1)** ratio.
 
-*   **起 (Ki)**: 10% ±5%
+*   **起 (Ki)**: 10% ±5% — **5文サマリー・オープニング必須**（`Structure_Rules.md` §0）。フラッシュフォワード禁止
 *   **承 (Sho)**: 80% ±10% (Centerpiece / Hell)
 *   **転結 (Ten-Ketsu)**: 10% ±5% (Short Ending)
 
