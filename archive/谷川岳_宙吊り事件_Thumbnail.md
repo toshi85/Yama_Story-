@@ -37,13 +37,13 @@ Photorealistic portrait of a young Japanese male climber in his early 20s, short
 ## フォント・テキスト設定
 
 ### 上部（慢心セリフ）
-- Font: LightNovelPOPv2
+- Font: Hiragino Mincho Pro W3
 - Color: #FFFFFF
 - Stroke: #000000, 5px, Outside
 - Shadow: なし
 
 ### 中間（状況説明・箇条書き）
-- Font: Source Han Sans JP Medium
+- Font: Hiragino Mincho Pro W3
 - Color: #FFFFFF
 - Stroke: #000000, 3px, Outside
 - Shadow: なし
@@ -51,14 +51,14 @@ Photorealistic portrait of a young Japanese male climber in his early 20s, short
 - 配置: 人物の左側、3行
 
 ### 下部（衝撃オチ）
-- Font: Source Han Sans JP Heavy
+- Font: Source Han Sans Heavy
 - Color: グラデーション #FFD700 → #FFA500（黄→オレンジ）
 - Stroke: #000000, 5px, Outside
 - Shadow: #000000, Opacity 75%, Angle 135°, Distance 5px, Spread 30%, Size 8px
 - 傾き: 右上がり3-5度
 
 ### フッター
-- Font: Source Han Sans JP Medium
+- Font: Hiragino Mincho Pro Medium
 - Color: #FFFFFF
 - 背景: 黒帯
 - 内容: 「地形図・アニメーションで解説」
