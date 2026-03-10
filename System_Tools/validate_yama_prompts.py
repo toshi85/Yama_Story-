@@ -15,9 +15,10 @@ Yama_Story プロンプト品質バリデーター
   6. 安全ワード — blood/death/corpse等のNGワード
   7. カメラ専門用語 — パン/チルト/ドリー等の禁止用語
   8. CHAR参照タグ — 初出/再利用の区別があるか
-  9. 複数キャラCHAR矛盾 — 複数キャラなのに "only this one character" を使用していないか
-  10. 静止画連続 — 3連続以上の検出
-  11. 映像密度 — 全体平均35字/ASSET以下か
+  9. 複数キャラCHAR矛盾 — 複数キャラ/Generic groupなのに "only this one character" を使用していないか
+  10. キャラプロンプト環境混入 — 1:1キャラプロンプトに環境・構図要素が含まれていないか
+  11. 静止画連続 — 3連続以上の検出
+  12. 映像密度 — 全体平均35字/ASSET以下か
 """
 
 import sys
@@ -227,7 +228,9 @@ def check_char_multi_conflict(lines):
     """複数キャラCHARプロンプトに 'only this one character' が含まれていないか"""
     multi_char_indicators = re.compile(
         r'\bTwo\b|\bThree\b|\bFour\b|\bFive\b|'
-        r'side by side|standing together|'
+        r'\bMultiple\b|\bseveral\b|\bgroup\b|'
+        r'side by side|standing together|scattered|'
+        r'\[Generic group\]|'
         r'\[CHAR-\d+.*\[CHAR-\d+',
         re.I
     )
@@ -258,6 +261,53 @@ def check_char_multi_conflict(lines):
             continue
         if in_code:
             code_lines.append(s)
+
+    return issues
+
+
+def check_char_environment(lines):
+    """キャラプロンプト(1:1)に環境・構図要素が混入していないか"""
+    env_words = re.compile(
+        r'\baerial view\b|\bbird.s eye\b|\boverhead\b|'
+        r'\blandscape\b|\bmountain slope\b|\bforest floor\b|'
+        r'\bstepping off train\b|\bstanding at.*summit\b|\bsitting in tent\b|'
+        r'\bscattered far apart\b|\bscattered across\b|'
+        r'\bin their own.*space\b|\bisolated in\b|'
+        r'\bplatform\b|\bstation\b|\btrailhead\b|'
+        r'\binterior\b|\broom\b|\bcorridor\b',
+        re.I
+    )
+
+    issues = []
+    in_code = False
+    is_char_prompt = False
+
+    for i, line in enumerate(lines):
+        s = line.strip()
+
+        # Detect character prompt section (1:1)
+        if 'キャラプロンプト' in s and '1:1' in s:
+            is_char_prompt = True
+            continue
+        if '背景プロンプト' in s or ('【制作メモ】' in s and 'ASSET-' in s):
+            is_char_prompt = False
+
+        if s.startswith('```'):
+            in_code = not in_code
+            if not in_code:
+                is_char_prompt = False
+            continue
+
+        if not in_code or not is_char_prompt:
+            continue
+
+        # Skip CHAR reference section (section 0)
+        if 'white background' in s.lower() and 'Single character' in s:
+            continue
+
+        matches = env_words.findall(s)
+        if matches:
+            issues.append((i + 1, matches, s[:100]))
 
     return issues
 
@@ -433,7 +483,18 @@ def main():
     else:
         print("✅ PASS: 複数キャラCHAR整合性")
 
-    # 9. 静止画連続
+    # 10. キャラプロンプト環境混入
+    issues = check_char_environment(lines)
+    if issues:
+        all_pass = False
+        print(f"\n❌ FAIL: キャラプロンプト(1:1)に環境・構図要素 ({len(issues)}件)")
+        for ln, matches, text in issues[:5]:
+            print(f"   L{ln}: {matches}")
+            print(f"         {text}")
+    else:
+        print("✅ PASS: キャラプロンプト環境要素")
+
+    # 11. 静止画連続
     max_cons, runs = check_static_consecutive(lines)
     if max_cons >= 3:
         all_pass = False
@@ -443,7 +504,7 @@ def main():
     else:
         print(f"✅ PASS: 静止画連続 (最大{max_cons})")
 
-    # 9. 映像密度
+    # 12. 映像密度
     total_chars, total_assets, avg = check_density(lines)
     if avg > 50:
         all_pass = False
