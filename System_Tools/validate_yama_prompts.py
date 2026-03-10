@@ -15,8 +15,9 @@ Yama_Story プロンプト品質バリデーター
   6. 安全ワード — blood/death/corpse等のNGワード
   7. カメラ専門用語 — パン/チルト/ドリー等の禁止用語
   8. CHAR参照タグ — 初出/再利用の区別があるか
-  9. 静止画連続 — 3連続以上の検出
-  10. 映像密度 — 全体平均35字/ASSET以下か
+  9. 複数キャラCHAR矛盾 — 複数キャラなのに "only this one character" を使用していないか
+  10. 静止画連続 — 3連続以上の検出
+  11. 映像密度 — 全体平均35字/ASSET以下か
 """
 
 import sys
@@ -222,6 +223,45 @@ def check_char_tags(lines):
     return issues
 
 
+def check_char_multi_conflict(lines):
+    """複数キャラCHARプロンプトに 'only this one character' が含まれていないか"""
+    multi_char_indicators = re.compile(
+        r'\bTwo\b|\bThree\b|\bFour\b|\bFive\b|'
+        r'side by side|standing together|'
+        r'\[CHAR-\d+.*\[CHAR-\d+',
+        re.I
+    )
+    one_char_pattern = re.compile(r'only this one character', re.I)
+
+    issues = []
+    in_code = False
+    code_block_start = 0
+    code_lines = []
+
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if s.startswith('```'):
+            if not in_code:
+                in_code = True
+                code_block_start = i
+                code_lines = []
+            else:
+                in_code = False
+                block_text = ' '.join(code_lines)
+                if multi_char_indicators.search(block_text) and one_char_pattern.search(block_text):
+                    issues.append((
+                        code_block_start + 1,
+                        '複数キャラなのに "only this one character" を使用',
+                        block_text[:100]
+                    ))
+                code_lines = []
+            continue
+        if in_code:
+            code_lines.append(s)
+
+    return issues
+
+
 def check_static_consecutive(lines):
     """静止画3連続以上の検出"""
     static_cats = ['Lovart静止画]', 'Lovart静止画 + 編集者]']
@@ -382,7 +422,18 @@ def main():
     else:
         print("✅ PASS: CHAR参照タグ")
 
-    # 8. 静止画連続
+    # 8. 複数キャラCHAR矛盾チェック
+    issues = check_char_multi_conflict(lines)
+    if issues:
+        all_pass = False
+        print(f"\n❌ FAIL: 複数キャラCHARに 'only this one character' ({len(issues)}件)")
+        for ln, msg, text in issues:
+            print(f"   L{ln}: {msg}")
+            print(f"         {text}")
+    else:
+        print("✅ PASS: 複数キャラCHAR整合性")
+
+    # 9. 静止画連続
     max_cons, runs = check_static_consecutive(lines)
     if max_cons >= 3:
         all_pass = False
