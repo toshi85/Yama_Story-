@@ -176,14 +176,6 @@ Mountain trailhead leading into bamboo grass, early morning light, Fuppushidake 
 
 ナレーター: 当時、チシマザサのタケノコは7キロから8キロで10万円の値がつきました。1976年の10万円。
 
-【制作メモ】ASSET-012 [Lovart静止画]
-シーン: チシマザサのタケノコが山盛りになった竹かご
-```
-Close-up of overflowing woven bamboo basket filled with fresh Chishimazasa bamboo shoots, placed on a rustic wooden table, 1970s Japanese rural setting, morning light. Photorealistic, shot on RED camera. Documentary drama style. No people visible. 16:9 aspect ratio. Generate 5 separate images.
-```
-→ 編集者指示: タケノコにゆっくりズームイン（4秒）
-
-
 【制作メモ】ASSET-013 [キャラアニメーション]
 シーン: タケノコを秤に載せる地元の農家
 キャラプロンプト（1:1）:

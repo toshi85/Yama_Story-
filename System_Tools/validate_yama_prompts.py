@@ -379,6 +379,87 @@ def check_density(lines):
     return total_chars, total_assets, avg
 
 
+def check_narrator_consecutive(lines):
+    """ナレーター行が2行以上連続している箇所を検出"""
+    issues = []
+    in_code = False
+    prev_is_narrator = False
+    prev_line_num = 0
+    prev_text = ''
+
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if s.startswith('```'):
+            in_code = not in_code
+            prev_is_narrator = False
+            continue
+        if in_code or not s:
+            continue
+
+        is_narrator = s.startswith('ナレーター:') or s.startswith('ナレーター：')
+        if is_narrator and prev_is_narrator:
+            issues.append((prev_line_num, prev_text[:60], i + 1, s[:60]))
+        prev_is_narrator = is_narrator
+        if is_narrator:
+            prev_line_num = i + 1
+            prev_text = s
+
+    return issues
+
+
+def check_static_narration_length(lines):
+    """静止画アセットに紐づくナレーション文字数が25文字を超えている箇所を検出"""
+    static_cats = ['Lovart静止画]', 'Lovart静止画 + 編集者]']
+    issues = []
+    in_code = False
+
+    # ナレーション行を蓄積し、制作メモが来たら紐付ける
+    narration_buffer = []  # [(line_num, text, char_count)]
+
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if s.startswith('```'):
+            in_code = not in_code
+            continue
+        if in_code:
+            continue
+
+        # ナレーター行を検出
+        if s.startswith('ナレーター:') or s.startswith('ナレーター：'):
+            narr_text = s.split(':', 1)[1].strip() if ':' in s else s.split('：', 1)[1].strip()
+            narration_buffer.append((i + 1, narr_text, len(narr_text)))
+            continue
+
+        # 制作メモ行を検出
+        if '【制作メモ】' in s and 'ASSET-' in s:
+            is_static = any(c in s for c in static_cats)
+            if is_static and narration_buffer:
+                # 直前のナレーションを紐付け
+                last_narr = narration_buffer[-1]
+                if last_narr[2] > 25:
+                    asset_match = re.search(r'ASSET-\d+', s)
+                    asset_id = asset_match.group() if asset_match else '?'
+                    issues.append((
+                        last_narr[0],
+                        last_narr[2],
+                        asset_id,
+                        i + 1,
+                        last_narr[1][:50]
+                    ))
+            narration_buffer = []
+            continue
+
+        # 制作メモ関連行はスキップ（バッファはクリアしない）
+        if s.startswith('シーン:') or s.startswith('キャラプロンプト') or s.startswith('背景プロンプト'):
+            continue
+        if s.startswith('→') or s.startswith('座標:') or s.startswith('カメラ:'):
+            continue
+        if s.startswith('【') or s.startswith('#'):
+            continue
+
+    return issues
+
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: python3 validate_yama_prompts.py <台本ファイルパス>")
@@ -494,7 +575,35 @@ def main():
     else:
         print("✅ PASS: キャラプロンプト環境要素")
 
-    # 11. 静止画連続
+    # 11. ナレーター行連続チェック
+    issues = check_narrator_consecutive(lines)
+    if issues:
+        all_pass = False
+        print(f"\n❌ FAIL: ナレーター行2行以上連続 ({len(issues)}件)")
+        for ln1, text1, ln2, text2 in issues[:5]:
+            print(f"   L{ln1}: {text1}")
+            print(f"   L{ln2}: {text2}")
+            print(f"   → 各行の間に制作メモ+プロンプトを挿入して交互配置にする")
+        if len(issues) > 5:
+            print(f"   ...他{len(issues)-5}件")
+    else:
+        print("✅ PASS: ナレーター行交互配置")
+
+    # 12. 静止画ナレーション文字数チェック
+    issues = check_static_narration_length(lines)
+    if issues:
+        all_pass = False
+        print(f"\n❌ FAIL: 静止画アセットのナレーション25文字超過 ({len(issues)}件)")
+        for narr_ln, char_count, asset_id, asset_ln, text in issues[:5]:
+            print(f"   L{narr_ln}: {char_count}字 → {asset_id} (L{asset_ln}) [静止画]")
+            print(f"   ナレーション: {text}")
+            print(f"   → キャラアニメーション or 動画に変更し制作メモも書き直す")
+        if len(issues) > 5:
+            print(f"   ...他{len(issues)-5}件")
+    else:
+        print("✅ PASS: 静止画ナレーション文字数")
+
+    # 13. 静止画連続
     max_cons, runs = check_static_consecutive(lines)
     if max_cons >= 3:
         all_pass = False
@@ -504,7 +613,7 @@ def main():
     else:
         print(f"✅ PASS: 静止画連続 (最大{max_cons})")
 
-    # 12. 映像密度
+    # 14. 映像密度
     total_chars, total_assets, avg = check_density(lines)
     if avg > 50:
         all_pass = False
