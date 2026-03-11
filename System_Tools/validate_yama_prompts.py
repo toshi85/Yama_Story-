@@ -312,6 +312,59 @@ def check_char_environment(lines):
     return issues
 
 
+def check_char_fullbody(lines):
+    """キャラプロンプト(1:1)が全身(Full body)であるかチェック"""
+    prohibited = re.compile(
+        r'\bbust shot\b|\bupper body shot\b|\bclose-up\b|\bhalf body\b|'
+        r'\bwaist up\b|\bchest up\b|\bhands only\b|\bface close\b|'
+        r'\bhead shot\b|\bpaw close\b|\bside profile bust\b',
+        re.I
+    )
+    fullbody_pattern = re.compile(r'\bFull body\b', re.I)
+
+    issues = []
+    in_code = False
+    is_char_prompt = False
+    current_asset = None
+
+    for i, line in enumerate(lines):
+        s = line.strip()
+
+        if '【制作メモ】' in s and 'ASSET-' in s:
+            m = re.search(r'ASSET-\d+', s)
+            current_asset = m.group() if m else '?'
+
+        if 'キャラプロンプト' in s and '1:1' in s:
+            is_char_prompt = True
+            continue
+        if '背景プロンプト' in s or ('【制作メモ】' in s and 'ASSET-' in s):
+            is_char_prompt = False
+
+        if s.startswith('```'):
+            if in_code and is_char_prompt:
+                # End of char prompt code block — no further action
+                pass
+            in_code = not in_code
+            if not in_code:
+                is_char_prompt = False
+            continue
+
+        if not in_code or not is_char_prompt:
+            continue
+
+        # Check for prohibited partial composition terms
+        found = prohibited.findall(s)
+        if found:
+            issues.append((i + 1, current_asset, 'prohibited', found, s[:100]))
+
+        # Check for missing "Full body"
+        if '[CHAR-' in s or '[Generic' in s or '[New' in s:
+            if not fullbody_pattern.search(s):
+                issues.append((i + 1, current_asset, 'missing_fullbody', [], s[:100]))
+
+    return issues
+
+
 def check_static_consecutive(lines):
     """静止画3連続以上の検出"""
     static_cats = ['Lovart静止画]', 'Lovart静止画 + 編集者]']
@@ -403,6 +456,57 @@ def check_narrator_consecutive(lines):
         if is_narrator:
             prev_line_num = i + 1
             prev_text = s
+
+    return issues
+
+
+def check_multi_asset_per_narration(lines):
+    """1つのナレーションに複数アセットが紐づいている箇所を検出"""
+    issues = []
+    in_code = False
+    last_narrator_line = 0
+    last_narrator_text = ''
+    asset_count_since_narrator = 0
+    assets_since_narrator = []
+
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if s.startswith('```'):
+            in_code = not in_code
+            continue
+        if in_code:
+            continue
+
+        is_narrator = s.startswith('ナレーター:') or s.startswith('ナレーター：')
+        is_asset = '【制作メモ】' in s and 'ASSET-' in s
+
+        if is_narrator:
+            # 前のナレーターに複数アセットが紐づいていたら報告
+            if last_narrator_line > 0 and asset_count_since_narrator >= 2:
+                issues.append((
+                    last_narrator_line,
+                    last_narrator_text[:60],
+                    asset_count_since_narrator,
+                    [a for a in assets_since_narrator]
+                ))
+            last_narrator_line = i + 1
+            last_narrator_text = s
+            asset_count_since_narrator = 0
+            assets_since_narrator = []
+
+        if is_asset:
+            asset_count_since_narrator += 1
+            m = re.search(r'ASSET-\d+', s)
+            assets_since_narrator.append(m.group() if m else '?')
+
+    # 最後のナレーターもチェック
+    if last_narrator_line > 0 and asset_count_since_narrator >= 2:
+        issues.append((
+            last_narrator_line,
+            last_narrator_text[:60],
+            asset_count_since_narrator,
+            [a for a in assets_since_narrator]
+        ))
 
     return issues
 
@@ -575,7 +679,39 @@ def main():
     else:
         print("✅ PASS: キャラプロンプト環境要素")
 
-    # 11. ナレーター行連続チェック
+    # 11. キャラプロンプト全身チェック
+    issues = check_char_fullbody(lines)
+    if issues:
+        all_pass = False
+        prohibited_count = sum(1 for x in issues if x[2] == 'prohibited')
+        missing_count = sum(1 for x in issues if x[2] == 'missing_fullbody')
+        print(f"\n❌ FAIL: キャラプロンプト全身ルール違反 ({len(issues)}件: 禁止語{prohibited_count}, Full body欠落{missing_count})")
+        for ln, asset, kind, found, text in issues[:5]:
+            if kind == 'prohibited':
+                print(f"   L{ln} ({asset}): 禁止語 {found}")
+            else:
+                print(f"   L{ln} ({asset}): 'Full body' が含まれていません")
+            print(f"         {text}")
+        if len(issues) > 5:
+            print(f"   ...他{len(issues)-5}件")
+    else:
+        print("✅ PASS: キャラプロンプト全身ルール")
+
+    # 12. 1ナレーション複数アセット
+    issues = check_multi_asset_per_narration(lines)
+    if issues:
+        all_pass = False
+        print(f"\n❌ FAIL: 1ナレーションに複数アセット紐づき ({len(issues)}件)")
+        for ln, text, count, assets in issues[:5]:
+            print(f"   L{ln}: {text}")
+            print(f"   → {count}アセット紐づき: {', '.join(assets)}")
+            print(f"   → ナレーションを分割して各アセットに1文ずつ対応させる")
+        if len(issues) > 5:
+            print(f"   ...他{len(issues)-5}件")
+    else:
+        print("✅ PASS: 1ナレーション=1アセット")
+
+    # 13. ナレーター行連続チェック
     issues = check_narrator_consecutive(lines)
     if issues:
         all_pass = False
