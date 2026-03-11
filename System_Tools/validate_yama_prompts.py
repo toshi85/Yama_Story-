@@ -17,8 +17,11 @@ Yama_Story プロンプト品質バリデーター
   8. CHAR参照タグ — 初出/再利用の区別があるか
   9. 複数キャラCHAR矛盾 — 複数キャラ/Generic groupなのに "only this one character" を使用していないか
   10. キャラプロンプト環境混入 — 1:1キャラプロンプトに環境・構図要素が含まれていないか
-  11. 静止画連続 — 3連続以上の検出
-  12. 映像密度 — 全体平均35字/ASSET以下か
+  11. キャラプロンプト全身 — Full body必須、bust shot等の部分構図禁止
+  12. 1ナレ複数アセット — 1ナレーションに2+アセット紐づき検出
+  13. 孤立アセット — ナレーション紐づきなしのアセット検出
+  14. 静止画連続 — 3連続以上の検出
+  15. 映像密度 — 全体平均35字/ASSET以下か
 """
 
 import sys
@@ -511,6 +514,42 @@ def check_multi_asset_per_narration(lines):
     return issues
 
 
+def check_orphan_assets(lines):
+    """ナレーションが紐づかない孤立アセットを検出（直前にナレーター行がないアセット）"""
+    issues = []
+    in_code = False
+    found_narrator_before_asset = False
+    in_asset_section = False
+
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if '<!-- PART:' in s:
+            in_asset_section = True
+        if not in_asset_section:
+            continue
+
+        if s.startswith('```'):
+            in_code = not in_code
+            continue
+        if in_code:
+            continue
+
+        is_narrator = s.startswith('ナレーター:') or s.startswith('ナレーター：')
+        is_asset = '【制作メモ】' in s and 'ASSET-' in s
+
+        if is_narrator:
+            found_narrator_before_asset = True
+
+        if is_asset:
+            if not found_narrator_before_asset:
+                m = re.search(r'ASSET-\d+', s)
+                asset_id = m.group() if m else '?'
+                issues.append((i + 1, asset_id, s[:80]))
+            found_narrator_before_asset = False
+
+    return issues
+
+
 def check_static_narration_length(lines):
     """静止画アセットに紐づくナレーション文字数が25文字を超えている箇所を検出"""
     static_cats = ['Lovart静止画]', 'Lovart静止画 + 編集者]']
@@ -711,7 +750,20 @@ def main():
     else:
         print("✅ PASS: 1ナレーション=1アセット")
 
-    # 13. ナレーター行連続チェック
+    # 13. 孤立アセット（ナレーションなし）
+    issues = check_orphan_assets(lines)
+    if issues:
+        all_pass = False
+        print(f"\n❌ FAIL: 孤立アセット（ナレーション紐づきなし） ({len(issues)}件)")
+        for ln, asset_id, text in issues[:5]:
+            print(f"   L{ln}: {asset_id} — 直前にナレーター行がありません")
+            print(f"   → ナレーションを追加して紐づけるか、アセットを削除する")
+        if len(issues) > 5:
+            print(f"   ...他{len(issues)-5}件")
+    else:
+        print("✅ PASS: 孤立アセットなし")
+
+    # 14. ナレーター行連続チェック
     issues = check_narrator_consecutive(lines)
     if issues:
         all_pass = False
