@@ -268,6 +268,34 @@ def check_char_multi_conflict(lines):
     return issues
 
 
+def check_char_single_use(lines):
+    """CHAR-XX番号が1回しか使われていない（初出のみで再利用なし）ケースを警告"""
+    char_pattern = re.compile(r'\[CHAR-(\d+)\s+reference')
+    char_counts = {}  # {番号: [行番号リスト]}
+    in_code = False
+
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if s.startswith('```'):
+            in_code = not in_code
+            continue
+        if not in_code:
+            continue
+
+        for m in char_pattern.finditer(s):
+            num = m.group(1)
+            if num not in char_counts:
+                char_counts[num] = []
+            char_counts[num].append(i + 1)
+
+    issues = []
+    for num, line_list in sorted(char_counts.items(), key=lambda x: int(x[0])):
+        if len(line_list) == 1:
+            issues.append((num, line_list[0]))
+
+    return issues
+
+
 def check_char_environment(lines):
     """キャラプロンプト(1:1)に環境・構図要素が混入していないか"""
     env_words = re.compile(
@@ -706,6 +734,19 @@ def main():
             print(f"         {text}")
     else:
         print("✅ PASS: 複数キャラCHAR整合性")
+
+    # 9. CHAR番号1回使用（名前なし人物の可能性）
+    issues = check_char_single_use(lines)
+    if issues:
+        warnings += len(issues)
+        print(f"\n⚠️  WARNING: CHAR番号が1回しか使われていない ({len(issues)}件)")
+        print(f"   名前のない人物にCHAR番号を振っていませんか？名前なし人物は [Generic group] を使用してください")
+        for num, ln in issues[:5]:
+            print(f"   CHAR-{num}: L{ln}のみ（再利用なし）")
+        if len(issues) > 5:
+            print(f"   ...他{len(issues)-5}件")
+    else:
+        print("✅ PASS: CHAR番号再利用")
 
     # 10. キャラプロンプト環境混入
     issues = check_char_environment(lines)
