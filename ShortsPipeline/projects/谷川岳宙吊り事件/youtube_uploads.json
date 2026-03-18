@@ -1,0 +1,44 @@
+{
+  "uploads": [
+    {
+      "episode": 1,
+      "video_id": "vTLeo2ciXgc",
+      "publish_at": "2026-03-23T07:00:00+09:00"
+    },
+    {
+      "episode": 2,
+      "video_id": "7NAjwTfYqU0",
+      "publish_at": "2026-03-23T20:00:00+09:00"
+    },
+    {
+      "episode": 3,
+      "video_id": "Ng0kYkUJrlk",
+      "publish_at": "2026-03-24T07:00:00+09:00"
+    },
+    {
+      "episode": 4,
+      "video_id": "RrHCbDIDZ_I",
+      "publish_at": "2026-03-24T20:00:00+09:00"
+    },
+    {
+      "episode": 5,
+      "video_id": "K8g3KYjD8Zc",
+      "publish_at": "2026-03-25T07:00:00+09:00"
+    },
+    {
+      "episode": 6,
+      "video_id": "Zs3xJeq_qtk",
+      "publish_at": "2026-03-25T20:00:00+09:00"
+    },
+    {
+      "episode": 7,
+      "video_id": "QRp67qbGjnw",
+      "publish_at": "2026-03-26T07:00:00+09:00"
+    },
+    {
+      "episode": 8,
+      "video_id": "-SISyhxyEUA",
+      "publish_at": "2026-03-26T20:00:00+09:00"
+    }
+  ]
+}

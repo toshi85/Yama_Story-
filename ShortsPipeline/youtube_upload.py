@@ -19,11 +19,13 @@ from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
-SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
+SCOPES = ["https://www.googleapis.com/auth/youtube"]
 SCRIPT_DIR = Path(__file__).parent
 ASSETS_DIR = SCRIPT_DIR / "assets"
 CLIENT_SECRET = ASSETS_DIR / "client_secret.json"
 TOKEN_FILE = ASSETS_DIR / "youtube_token.json"
+
+PLAYLIST_NAME = "事故ログ【ショート】"
 
 # 投稿スケジュール設定（JST）
 JST = timezone(timedelta(hours=9))
@@ -55,6 +57,32 @@ def get_youtube_service():
         print("✅ YouTube認証完了（トークン保存済み）")
 
     return build("youtube", "v3", credentials=creds)
+
+
+def find_playlist(youtube, name):
+    """再生リストを名前で検索してIDを返す"""
+    request = youtube.playlists().list(part="snippet", mine=True, maxResults=50)
+    response = request.execute()
+    for item in response.get("items", []):
+        if item["snippet"]["title"] == name:
+            return item["id"]
+    return None
+
+
+def add_to_playlist(youtube, playlist_id, video_id):
+    """動画を再生リストに追加"""
+    youtube.playlistItems().insert(
+        part="snippet",
+        body={
+            "snippet": {
+                "playlistId": playlist_id,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": video_id
+                }
+            }
+        }
+    ).execute()
 
 
 def generate_schedule(total_parts, start_date):
@@ -136,6 +164,8 @@ def main():
     parser.add_argument("project_dir", help="プロジェクトフォルダのパス")
     parser.add_argument("--start-date", help="投稿開始日 (YYYY-MM-DD)", default=None)
     parser.add_argument("--immediate", action="store_true", help="予約なしで即時公開")
+    parser.add_argument("--playlist", default=PLAYLIST_NAME, help=f"追加先の再生リスト名 (デフォルト: {PLAYLIST_NAME})")
+    parser.add_argument("--no-playlist", action="store_true", help="再生リストへの追加をスキップ")
     parser.add_argument("--dry-run", action="store_true", help="実際にはアップロードしない")
     args = parser.parse_args()
 
@@ -204,6 +234,15 @@ def main():
     # YouTube API認証
     youtube = get_youtube_service()
 
+    # 再生リスト検索
+    playlist_id = None
+    if not args.no_playlist:
+        playlist_id = find_playlist(youtube, args.playlist)
+        if playlist_id:
+            print(f"📋 再生リスト「{args.playlist}」に自動追加します")
+        else:
+            print(f"⚠️  再生リスト「{args.playlist}」が見つかりません（追加スキップ）")
+
     # アップロード実行
     print("\n📤 アップロード開始...")
     results = []
@@ -219,6 +258,11 @@ def main():
 
         print(f"\n🎬 Part {ep}/{total}")
         video_id = upload_video(youtube, video_path, title, description, publish_time)
+
+        if playlist_id:
+            add_to_playlist(youtube, playlist_id, video_id)
+            print(f"  📋 再生リストに追加済み")
+
         results.append({
             "episode": ep,
             "video_id": video_id,
