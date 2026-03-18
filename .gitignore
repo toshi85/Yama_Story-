@@ -1,1 +1,11 @@
 .DS_Store
+
+# 動画・画像ファイル（大容量）
+ShortsPipeline/projects/*/segments/
+ShortsPipeline/projects/*/output/
+ShortsPipeline/projects/*/*.mp4
+ShortsPipeline/projects/*/*.jpg
+ShortsPipeline/projects/*/*.png
+ShortsPipeline/projects/*/transcript.json
+ShortsPipeline/assets/client_secret.json
+ShortsPipeline/assets/youtube_token.json

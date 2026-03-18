@@ -16,7 +16,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 ASSETS_DIR="$SCRIPT_DIR/assets"
-WHISPER_BIN="/Users/tosimasa/Library/Python/3.9/bin/whisper"
+WHISPER_BIN="/Users/tosimasa/Library/Python/3.9/bin/mlx_whisper"
 
 # --- 引数チェック ---
 if [ $# -eq 0 ]; then
@@ -62,11 +62,11 @@ if [ -f "$TRANSCRIPT_JSON" ]; then
   echo "  ⏭️  文字起こし済み（スキップ）"
 else
   "$WHISPER_BIN" "$SOURCE_MP4" \
-    --model medium \
+    --model mlx-community/whisper-small-mlx \
     --language ja \
-    --output_format json \
-    --output_dir "$PROJECT_DIR" \
-    --word_timestamps True
+    --output-format json \
+    --output-dir "$PROJECT_DIR" \
+    --word-timestamps True
 
   # Whisperはファイル名ベースで出力するのでリネーム
   WHISPER_OUTPUT="$PROJECT_DIR/$(basename "$SOURCE_MP4" .mp4).json"
@@ -159,15 +159,20 @@ if [ -f "$ASSETS_DIR/font.ttf" ]; then
 elif [ -f "$ASSETS_DIR/font.otf" ]; then
   FONT_PATH="$ASSETS_DIR/font.otf"
 else
-  FONT_PATH="/System/Library/Fonts/ヒラギノ角ゴシック W6.ttc"
+  # 日本語パスはFFmpegでエスケープ問題が出るためシンボリックリンクを使用
+  ln -sf "/System/Library/Fonts/ヒラギノ角ゴシック W6.ttc" /tmp/hiragino.ttc
+  FONT_PATH="/tmp/hiragino.ttc"
 fi
 
-# サムネイル確認（プロジェクト固有 → 共通assets）
+# サムネイル確認（プロジェクト固有の画像ファイルを自動検出）
 THUMBNAIL_PATH=""
 if [ -f "$PROJECT_DIR/thumbnail.png" ]; then
   THUMBNAIL_PATH="$PROJECT_DIR/thumbnail.png"
 elif [ -f "$PROJECT_DIR/thumbnail.jpg" ]; then
   THUMBNAIL_PATH="$PROJECT_DIR/thumbnail.jpg"
+else
+  # thumbnail以外の名前の画像も検出（サムネ.jpg等）
+  THUMBNAIL_PATH=$(find "$PROJECT_DIR" -maxdepth 1 \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" \) ! -name ".*" 2>/dev/null | /usr/bin/head -1)
 fi
 
 # ロゴ確認
@@ -176,149 +181,119 @@ if [ -f "$ASSETS_DIR/logo.png" ]; then
   LOGO_PATH="$ASSETS_DIR/logo.png"
 fi
 
-python3 -c "
+export CUTS_JSON SEG_DIR OUT_DIR FONT_PATH THUMBNAIL_PATH PROJECT_NAME
+python3 << 'STEP4_EOF'
 import json, subprocess, os, sys
 
-CUTS_JSON = '$CUTS_JSON'
-SEG_DIR = '$SEG_DIR'
-OUT_DIR = '$OUT_DIR'
-FONT_PATH = '$FONT_PATH'
-THUMBNAIL_PATH = '$THUMBNAIL_PATH'
-LOGO_PATH = '$LOGO_PATH'
-PROJECT_NAME = '$PROJECT_NAME'
+CUTS_JSON = os.environ.get("CUTS_JSON", "")
+SEG_DIR = os.environ.get("SEG_DIR", "")
+OUT_DIR = os.environ.get("OUT_DIR", "")
+FONT_PATH = os.environ.get("FONT_PATH", "/tmp/hiragino.ttc")
+THUMBNAIL_PATH = os.environ.get("THUMBNAIL_PATH", "")
+PROJECT_NAME = os.environ.get("PROJECT_NAME", "")
 
 with open(CUTS_JSON) as f:
     data = json.load(f)
 
-total_parts = len(data['cuts'])
+total_parts = len(data["cuts"])
 
-for cut in data['cuts']:
-    ep = cut['episode']
-    title = cut.get('title', PROJECT_NAME)
-    input_seg = f'{SEG_DIR}/ep{ep:02d}.mp4'
-    output_file = f'{OUT_DIR}/ep{ep:02d}_short.mp4'
+for cut in data["cuts"]:
+    ep = cut["episode"]
+    input_seg = f"{SEG_DIR}/ep{ep:02d}.mp4"
+    output_file = f"{OUT_DIR}/ep{ep:02d}_short.mp4"
 
     if not os.path.exists(input_seg):
-        print(f'  ⚠️  スキップ（ファイルなし）: ep{ep:02d}.mp4')
+        print(f"  ⚠️  スキップ（ファイルなし）: ep{ep:02d}.mp4")
         continue
 
     if os.path.exists(output_file):
-        print(f'  ⏭️  Part {ep}: 装飾済み（スキップ）')
+        print(f"  ⏭️  Part {ep}: 装飾済み（スキップ）")
         continue
 
     # 元動画の解像度を取得
     probe = subprocess.run(
-        ['ffprobe', '-v', 'quiet', '-print_format', 'json',
-         '-show_streams', input_seg],
+        ["ffprobe", "-v", "quiet", "-print_format", "json",
+         "-show_streams", input_seg],
         capture_output=True, text=True
     )
     streams = json.loads(probe.stdout)
-    video_stream = [s for s in streams['streams'] if s['codec_type'] == 'video'][0]
-    src_w = int(video_stream['width'])
-    src_h = int(video_stream['height'])
+    video_stream = [s for s in streams["streams"] if s["codec_type"] == "video"][0]
+    src_w = int(video_stream["width"])
+    src_h = int(video_stream["height"])
 
-    # 9:16 = 1080x1920
-    out_w = 1080
-    out_h = 1920
-
-    # 動画を横幅1080にフィット
+    # 9:16 = 1080x1920、動画を横幅1080にフィット
+    out_w, out_h = 1080, 1920
     scale_w = out_w
     scale_h = int(src_h * (out_w / src_w))
-    if scale_h > out_h:
-        scale_h = out_h
-        scale_w = int(src_w * (out_h / src_h))
-
     video_y = (out_h - scale_h) // 2
     top_margin = video_y
-    bottom_margin = out_h - video_y - scale_h
+    bottom_text_y = video_y + scale_h + 20
+    part_text = f"Part {ep} / {total_parts}"
 
-    font_escaped = FONT_PATH.replace(':', r'\:').replace(\"'\", r\"\\'\")
+    inputs = ["-i", input_seg]
 
-    inputs = ['-i', input_seg]
-    filter_parts = []
-
-    # ベース: 黒背景 + 動画スケール + 中央配置
-    filter_parts.append(
-        f'color=c=black:s={out_w}x{out_h}:r=30[bg];'
-        f'[0:v]scale={scale_w}:{scale_h}[scaled];'
-        f'[bg][scaled]overlay=(W-w)/2:(H-h)/2[base]'
-    )
-
-    current_label = 'base'
-    input_idx = 1
-
-    # 上余白: サムネイル画像
-    if THUMBNAIL_PATH:
-        inputs.extend(['-i', THUMBNAIL_PATH])
+    # サムネイルがある場合
+    if THUMBNAIL_PATH and os.path.exists(THUMBNAIL_PATH):
+        inputs.extend(["-i", THUMBNAIL_PATH])
         thumb_h = max(top_margin - 20, 100)
         thumb_w = int(thumb_h * 16 / 9)
         if thumb_w > out_w - 40:
             thumb_w = out_w - 40
             thumb_h = int(thumb_w * 9 / 16)
-        next_label = f'thumb{ep}'
-        filter_parts.append(
-            f';[{input_idx}:v]scale={thumb_w}:{thumb_h}[thumbscaled];'
-            f'[{current_label}][thumbscaled]overlay=(W-w)/2:10[{next_label}]'
+        filter_complex = (
+            f"color=c=black:s={out_w}x{out_h}:r=30[bg];"
+            f"[0:v]scale={scale_w}:{scale_h}[scaled];"
+            f"[bg][scaled]overlay=0:{video_y}[base];"
+            f"[1:v]scale={thumb_w}:{thumb_h}[thumbscaled];"
+            f"[base][thumbscaled]overlay=(W-w)/2:10[withthumb];"
+            f"[withthumb]drawtext=fontfile={FONT_PATH}:text='{PROJECT_NAME}'"
+            f":fontsize=52:fontcolor=white:borderw=3:bordercolor=black"
+            f":x=(w-text_w)/2:y={bottom_text_y}[titled];"
+            f"[titled]drawtext=fontfile={FONT_PATH}:text='{part_text}'"
+            f":fontsize=40:fontcolor=#CCCCCC:borderw=2:bordercolor=black"
+            f":x=(w-text_w)/2:y={bottom_text_y + 70}[final]"
         )
-        current_label = next_label
-        input_idx += 1
+    else:
+        filter_complex = (
+            f"color=c=black:s={out_w}x{out_h}:r=30[bg];"
+            f"[0:v]scale={scale_w}:{scale_h}[scaled];"
+            f"[bg][scaled]overlay=0:{video_y}[base];"
+            f"[base]drawtext=fontfile={FONT_PATH}:text='{PROJECT_NAME}'"
+            f":fontsize=52:fontcolor=white:borderw=3:bordercolor=black"
+            f":x=(w-text_w)/2:y={bottom_text_y}[titled];"
+            f"[titled]drawtext=fontfile={FONT_PATH}:text='{part_text}'"
+            f":fontsize=40:fontcolor=#CCCCCC:borderw=2:bordercolor=black"
+            f":x=(w-text_w)/2:y={bottom_text_y + 70}[final]"
+        )
 
-    # 下余白: タイトル（= プロジェクト名）+ Part表記
-    bottom_text_y = video_y + scale_h + 20
-    part_text = f'Part {ep} / {total_parts}'
-
-    next_label = f'titled{ep}'
-    filter_parts.append(
-        f\";[{current_label}]drawtext=\"
-        f\"fontfile='{font_escaped}'\"
-        f\":text='{PROJECT_NAME}'\"
-        f\":fontsize=52:fontcolor=white\"
-        f\":borderw=3:bordercolor=black\"
-        f\":x=(w-text_w)/2:y={bottom_text_y}\"
-        f\"[{next_label}]\"
-    )
-    current_label = next_label
-
-    final_label = f'final{ep}'
-    filter_parts.append(
-        f\";[{current_label}]drawtext=\"
-        f\"fontfile='{font_escaped}'\"
-        f\":text='{part_text}'\"
-        f\":fontsize=40:fontcolor=#CCCCCC\"
-        f\":borderw=2:bordercolor=black\"
-        f\":x=(w-text_w)/2:y={bottom_text_y + 70}\"
-        f\"[{final_label}]\"
-    )
-
-    filter_complex = ''.join(filter_parts)
-
-    cmd = ['ffmpeg', '-y'] + inputs + [
-        '-filter_complex', filter_complex,
-        '-map', f'[{final_label}]',
-        '-map', '0:a?',
-        '-c:v', 'libx264',
-        '-c:a', 'aac',
-        '-preset', 'fast',
-        '-r', '30',
-        '-shortest',
+    cmd = ["ffmpeg", "-y"] + inputs + [
+        "-filter_complex", filter_complex,
+        "-map", "[final]",
+        "-map", "0:a?",
+        "-c:v", "libx264",
+        "-c:a", "aac",
+        "-preset", "fast",
+        "-r", "30",
+        "-shortest",
         output_file
     ]
 
-    print(f'  🎨 Part {ep}/{total_parts}: {PROJECT_NAME}')
+    print(f"  🎨 Part {ep}/{total_parts}: {PROJECT_NAME}")
     result = subprocess.run(cmd, capture_output=True, text=True)
     if result.returncode == 0:
-        print(f'  ✅ 完成: ep{ep:02d}_short.mp4')
+        size = os.path.getsize(output_file) // 1024 // 1024
+        print(f"  ✅ 完成: ep{ep:02d}_short.mp4 ({size}MB)")
     else:
-        print(f'  ⚠️  装飾エラー → フォールバック（パディングのみ）')
+        print(f"  ⚠️  装飾エラー → フォールバック（パディングのみ）")
         simple_cmd = [
-            'ffmpeg', '-y', '-i', input_seg,
-            '-vf', f'scale={out_w}:-2,pad={out_w}:{out_h}:(ow-iw)/2:(oh-ih)/2:black',
-            '-c:a', 'aac', '-preset', 'fast',
+            "ffmpeg", "-y", "-i", input_seg,
+            "-vf", f"scale={out_w}:-2,pad={out_w}:{out_h}:(ow-iw)/2:(oh-ih)/2:black",
+            "-c:a", "aac", "-preset", "fast",
             output_file
         ]
         subprocess.run(simple_cmd, capture_output=True)
-        print(f'  ✅ フォールバック完成: ep{ep:02d}_short.mp4')
-"
+        print(f"  ✅ フォールバック完成: ep{ep:02d}_short.mp4")
+STEP4_EOF
 
 echo ""
 echo "=========================================="
