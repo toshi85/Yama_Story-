@@ -225,35 +225,42 @@ for cut in data["cuts"]:
     out_w, out_h = 1080, 1920
     scale_w = out_w
     scale_h = int(src_h * (out_w / src_w))
-    video_y = (out_h - scale_h) // 2
-    top_margin = video_y
-    bottom_text_y = video_y + scale_h + 20
     part_text = f"Part {ep} / {total_parts}"
+    cta_text = "▶ フォローして続きを見る"
 
     inputs = ["-i", input_seg]
 
     # サムネイルがある場合
     if THUMBNAIL_PATH and os.path.exists(THUMBNAIL_PATH):
         inputs.extend(["-i", THUMBNAIL_PATH])
-        thumb_h = max(top_margin - 20, 100)
+        # サムネを上部に小さく配置、動画をその直下に詰める
+        thumb_h = 160
         thumb_w = int(thumb_h * 16 / 9)
         if thumb_w > out_w - 40:
             thumb_w = out_w - 40
             thumb_h = int(thumb_w * 9 / 16)
+        video_y = thumb_h + 15  # サムネ直下に詰める
+        bottom_text_y = video_y + scale_h + 20
         filter_complex = (
             f"color=c=black:s={out_w}x{out_h}:r=30[bg];"
             f"[0:v]scale={scale_w}:{scale_h}[scaled];"
             f"[bg][scaled]overlay=0:{video_y}[base];"
             f"[1:v]scale={thumb_w}:{thumb_h}[thumbscaled];"
-            f"[base][thumbscaled]overlay=(W-w)/2:10[withthumb];"
+            f"[base][thumbscaled]overlay=(W-w)/2:5[withthumb];"
             f"[withthumb]drawtext=fontfile={FONT_PATH}:text='{PROJECT_NAME}'"
             f":fontsize=52:fontcolor=white:borderw=3:bordercolor=black"
             f":x=(w-text_w)/2:y={bottom_text_y}[titled];"
             f"[titled]drawtext=fontfile={FONT_PATH}:text='{part_text}'"
             f":fontsize=40:fontcolor=#CCCCCC:borderw=2:bordercolor=black"
-            f":x=(w-text_w)/2:y={bottom_text_y + 70}[final]"
+            f":x=(w-text_w)/2:y={bottom_text_y + 65}[parted];"
+            f"[parted]drawtext=fontfile={FONT_PATH}:text='{cta_text}'"
+            f":fontsize=30:fontcolor=#FFD700:borderw=1:bordercolor=black"
+            f":x=(w-text_w)/2:y={bottom_text_y + 120}[final]"
         )
     else:
+        # サムネなし: 動画を上端に詰める
+        video_y = 10
+        bottom_text_y = video_y + scale_h + 20
         filter_complex = (
             f"color=c=black:s={out_w}x{out_h}:r=30[bg];"
             f"[0:v]scale={scale_w}:{scale_h}[scaled];"
@@ -263,7 +270,10 @@ for cut in data["cuts"]:
             f":x=(w-text_w)/2:y={bottom_text_y}[titled];"
             f"[titled]drawtext=fontfile={FONT_PATH}:text='{part_text}'"
             f":fontsize=40:fontcolor=#CCCCCC:borderw=2:bordercolor=black"
-            f":x=(w-text_w)/2:y={bottom_text_y + 70}[final]"
+            f":x=(w-text_w)/2:y={bottom_text_y + 65}[parted];"
+            f"[parted]drawtext=fontfile={FONT_PATH}:text='{cta_text}'"
+            f":fontsize=30:fontcolor=#FFD700:borderw=1:bordercolor=black"
+            f":x=(w-text_w)/2:y={bottom_text_y + 120}[final]"
         )
 
     cmd = ["ffmpeg", "-y"] + inputs + [
