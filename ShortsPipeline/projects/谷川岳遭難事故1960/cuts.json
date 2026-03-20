@@ -1,0 +1,120 @@
+{
+  "source": "source.mp4",
+  "total_duration": "00:17:58",
+  "total_episodes": 16,
+  "display_title": "2人に向けて1300発…\n自衛隊が山で発砲した末路",
+  "cuts": [
+    {
+      "episode": 1,
+      "title": "史上初の壁に挑む2人の若きクライマー",
+      "start": "00:00:00",
+      "end": "00:01:10",
+      "thumbnail_text": "憧れの壁へ"
+    },
+    {
+      "episode": 2,
+      "title": "落下、そしてザイルで宙吊りに",
+      "start": "00:01:10",
+      "end": "00:02:13",
+      "thumbnail_text": "宙吊りの2人"
+    },
+    {
+      "episode": 3,
+      "title": "200m上空の2人、誰も近づけない",
+      "start": "00:02:13",
+      "end": "00:03:16",
+      "thumbnail_text": "誰も近づけない"
+    },
+    {
+      "episode": 4,
+      "title": "腹巻式ザイルの致命的な弱点",
+      "start": "00:03:16",
+      "end": "00:04:13",
+      "thumbnail_text": "致命的な弱点"
+    },
+    {
+      "episode": 5,
+      "title": "濡れた邪門岩、命がけの救助",
+      "start": "00:04:13",
+      "end": "00:05:18",
+      "thumbnail_text": "命がけの救助"
+    },
+    {
+      "episode": 6,
+      "title": "あと3メートルが届かない",
+      "start": "00:05:18",
+      "end": "00:06:23",
+      "thumbnail_text": "あと3m"
+    },
+    {
+      "episode": 7,
+      "title": "残された選択肢はたった1つ",
+      "start": "00:06:23",
+      "end": "00:07:21",
+      "thumbnail_text": "最後の手段"
+    },
+    {
+      "episode": 8,
+      "title": "家族が同意した、あまりに辛い決断",
+      "start": "00:07:21",
+      "end": "00:08:26",
+      "thumbnail_text": "辛い決断"
+    },
+    {
+      "episode": 9,
+      "title": "自衛隊出動、弾薬2000発の作戦",
+      "start": "00:08:26",
+      "end": "00:09:34",
+      "thumbnail_text": "弾薬2000発"
+    },
+    {
+      "episode": 10,
+      "title": "1cmのザイルを140m先から狙え",
+      "start": "00:09:34",
+      "end": "00:10:40",
+      "thumbnail_text": "直径1cm"
+    },
+    {
+      "episode": 11,
+      "title": "500発撃っても切れないザイル",
+      "start": "00:10:40",
+      "end": "00:11:53",
+      "thumbnail_text": "500発でも切れない"
+    },
+    {
+      "episode": 12,
+      "title": "作戦変更、そして38発目の奇跡",
+      "start": "00:11:53",
+      "end": "00:13:07",
+      "thumbnail_text": "38発目"
+    },
+    {
+      "episode": 13,
+      "title": "1300発、7日ぶりに家族の元へ",
+      "start": "00:13:07",
+      "end": "00:14:09",
+      "thumbnail_text": "7日ぶりの帰還"
+    },
+    {
+      "episode": 14,
+      "title": "悲劇が変えた日本の登山法",
+      "start": "00:14:09",
+      "end": "00:15:27",
+      "thumbnail_text": "日本初の条例"
+    },
+    {
+      "episode": 15,
+      "title": "エベレストより多くの命を奪った山",
+      "start": "00:15:27",
+      "end": "00:16:51",
+      "thumbnail_text": "世界一の犠牲者"
+    },
+    {
+      "episode": 16,
+      "title": "1300発の銃弾を忘れないで",
+      "start": "00:16:51",
+      "end": "00:17:58",
+      "thumbnail_text": "忘れないで"
+    }
+  ]
+}
