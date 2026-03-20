@@ -52,6 +52,26 @@ echo "🎥 元動画: $(basename "$SOURCE_MP4")"
 echo "=========================================="
 
 # ============================================================
+# STEP 0: サムネイル確認（なければ警告）
+# ============================================================
+THUMB_EXISTS=$(find "$PROJECT_DIR" -maxdepth 1 \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" \) ! -name ".*" 2>/dev/null | /usr/bin/head -1)
+if [ -z "$THUMB_EXISTS" ]; then
+  echo ""
+  echo "⚠️  サムネイル画像がありません"
+  echo "   ショート動画にサムネイルが表示されません"
+  echo "   thumbnail.jpg を $PROJECT_DIR/ に配置してください"
+  echo ""
+  echo "   YouTubeからダウンロードする場合:"
+  echo "   yt-dlp --write-thumbnail --skip-download --convert-thumbnails jpg -o \"$PROJECT_DIR/thumbnail\" <URL>"
+  echo ""
+  read -p "   サムネイルなしで続行しますか？ (y/N): " CONTINUE_WITHOUT_THUMB
+  if [ "$CONTINUE_WITHOUT_THUMB" != "y" ] && [ "$CONTINUE_WITHOUT_THUMB" != "Y" ]; then
+    echo "   → 中止しました。サムネイルを配置してから再実行してください。"
+    exit 0
+  fi
+fi
+
+# ============================================================
 # STEP 1: Whisperで文字起こし
 # ============================================================
 echo ""
@@ -84,6 +104,20 @@ CUTS_JSON="$PROJECT_DIR/cuts.json"
 if [ -f "$CUTS_JSON" ]; then
   echo ""
   echo "✂️  STEP 2: カットポイント済み（スキップ）"
+  # display_titleの存在チェック
+  HAS_DISPLAY_TITLE=$(python3 -c "import json; d=json.load(open('$CUTS_JSON')); print('yes' if d.get('display_title') else 'no')" 2>/dev/null)
+  if [ "$HAS_DISPLAY_TITLE" = "no" ]; then
+    echo ""
+    echo "⚠️  cuts.jsonに display_title がありません"
+    echo "   フォルダ名「$PROJECT_NAME」がそのまま表示されます"
+    echo "   cuts.jsonに display_title を追加してください（例: \"1行目\\n2行目\"）"
+    echo ""
+    read -p "   このまま続行しますか？ (y/N): " CONTINUE_WITHOUT_TITLE
+    if [ "$CONTINUE_WITHOUT_TITLE" != "y" ] && [ "$CONTINUE_WITHOUT_TITLE" != "Y" ]; then
+      echo "   → 中止しました。display_titleを追加してから再実行してください。"
+      exit 0
+    fi
+  fi
 else
   echo ""
   echo "✂️  STEP 2: カットポイント判断が必要です"
@@ -97,139 +131,116 @@ else
 fi
 
 # ============================================================
-# STEP 3: Demucsで音源分離（BGM除去）
+# STEP 3: FFmpegで分割
 # ============================================================
 echo ""
-echo "🎵 STEP 3: Demucsでナレーション抽出中..."
-
-VOCALS_WAV="$PROJECT_DIR/vocals.wav"
-CLEAN_MP4="$PROJECT_DIR/clean.mp4"
-
-if [ -f "$CLEAN_MP4" ]; then
-  echo "  ⏭️  音源分離済み（スキップ）"
-else
-  # Demucsでボーカル（ナレーション）を抽出
-  python3 -m demucs --two-stems=vocals -o "$PROJECT_DIR/separated" "$SOURCE_MP4" 2>/dev/null
-
-  # Demucs出力パスを特定（htdemucs/ファイル名/vocals.wav）
-  DEMUCS_DIR=$(find "$PROJECT_DIR/separated" -name "vocals.wav" -print -quit 2>/dev/null | xargs dirname)
-  if [ -z "$DEMUCS_DIR" ]; then
-    echo "  ❌ Demucs出力が見つかりません"
-    exit 1
-  fi
-  VOCALS_WAV="$DEMUCS_DIR/vocals.wav"
-
-  # ナレーション音声を元動画の映像と再合成（BGMなし版のマスター）
-  ffmpeg -y -i "$SOURCE_MP4" -i "$VOCALS_WAV" \
-    -c:v copy -map 0:v:0 -map 1:a:0 \
-    -c:a aac -b:a 192k \
-    "$CLEAN_MP4" 2>/dev/null
-
-  echo "  ✅ 完了: clean.mp4（ナレーションのみ）"
-fi
-
-# ============================================================
-# STEP 4: FFmpegで分割（2バージョン）
-# ============================================================
-echo ""
-echo "🔪 STEP 4: 動画分割中（BGMあり版 + BGMなし版）..."
+echo "🔪 STEP 3: 動画分割中..."
 
 SEG_DIR="$PROJECT_DIR/segments"
 SEG_DIR_NOBGM="$PROJECT_DIR/segments_nobgm"
 mkdir -p "$SEG_DIR" "$SEG_DIR_NOBGM"
 
-# BGM楽曲の確認
-BGM_FILE=""
-if [ -f "$ASSETS_DIR/bgm.mp3" ]; then
-  BGM_FILE="$ASSETS_DIR/bgm.mp3"
-elif [ -f "$ASSETS_DIR/bgm.wav" ]; then
-  BGM_FILE="$ASSETS_DIR/bgm.wav"
-elif [ -f "$ASSETS_DIR/bgm.m4a" ]; then
-  BGM_FILE="$ASSETS_DIR/bgm.m4a"
-fi
-
-export CUTS_JSON CLEAN_MP4 SOURCE_MP4 SEG_DIR SEG_DIR_NOBGM BGM_FILE
+export CUTS_JSON SOURCE_MP4 SEG_DIR SEG_DIR_NOBGM
 python3 << 'SPLIT_EOF'
-import json, subprocess, os, sys
+import json, subprocess, os, sys, shutil
 
 CUTS_JSON = os.environ["CUTS_JSON"]
-CLEAN_MP4 = os.environ["CLEAN_MP4"]
 SOURCE_MP4 = os.environ["SOURCE_MP4"]
 SEG_DIR = os.environ["SEG_DIR"]
 SEG_DIR_NOBGM = os.environ["SEG_DIR_NOBGM"]
-BGM_FILE = os.environ.get("BGM_FILE", "")
 
 with open(CUTS_JSON) as f:
     data = json.load(f)
+
+total = len(data["cuts"])
 
 for cut in data["cuts"]:
     ep = cut["episode"]
     start = cut["start"]
     end = cut["end"]
-    title = cut.get("title", f"第{ep}話")
+    is_last = (ep == total)
 
     s_sec = float(start.split(":")[0])*3600 + float(start.split(":")[1])*60 + float(start.split(":")[2])
     e_sec = float(end.split(":")[0])*3600 + float(end.split(":")[1])*60 + float(end.split(":")[2])
     duration = e_sec - s_sec
 
-    # --- BGMなし版（clean.mp4からカット） ---
-    out_nobgm = f"{SEG_DIR_NOBGM}/ep{ep:02d}.mp4"
-    if not os.path.exists(out_nobgm):
+    # --- source.mp4からそのまま切り出し ---
+    out_seg = f"{SEG_DIR}/ep{ep:02d}.mp4"
+    if not os.path.exists(out_seg):
         cmd = [
-            "ffmpeg", "-y", "-ss", start, "-i", CLEAN_MP4,
+            "ffmpeg", "-y", "-ss", start, "-i", SOURCE_MP4,
             "-t", str(duration),
             "-c:v", "libx264", "-c:a", "aac", "-preset", "fast",
-            "-avoid_negative_ts", "make_zero", out_nobgm
+            "-avoid_negative_ts", "make_zero", out_seg
         ]
-        print(f"  ✂️  Part {ep} (BGMなし): {start} → {end}")
+        print(f"  ✂️  Part {ep}/{total}: {start} → {end}")
         r = subprocess.run(cmd, capture_output=True, text=True)
         if r.returncode == 0:
-            print(f"  ✅ {os.path.basename(out_nobgm)}")
+            print(f"  ✅ {os.path.basename(out_seg)}")
         else:
             print(f"  ❌ エラー: {r.stderr[-200:]}")
             sys.exit(1)
     else:
-        print(f"  ⏭️  Part {ep} (BGMなし): 分割済み")
+        print(f"  ⏭️  Part {ep}: 分割済み")
 
-    # --- BGMあり版（clean.mp4 + BGMをミックス） ---
-    out_bgm = f"{SEG_DIR}/ep{ep:02d}.mp4"
-    if not os.path.exists(out_bgm):
-        if BGM_FILE and os.path.exists(BGM_FILE):
-            # ナレーション + BGMをミックス（BGM音量を下げる）
-            cmd = [
-                "ffmpeg", "-y", "-ss", start, "-i", CLEAN_MP4,
-                "-stream_loop", "-1", "-i", BGM_FILE,
-                "-t", str(duration),
-                "-filter_complex",
-                "[0:a]volume=1.0[voice];[1:a]volume=0.15[music];[voice][music]amix=inputs=2:duration=first[aout]",
-                "-map", "0:v", "-map", "[aout]",
-                "-c:v", "libx264", "-c:a", "aac", "-preset", "fast",
-                "-avoid_negative_ts", "make_zero",
-                "-shortest", out_bgm
-            ]
-            print(f"  ✂️  Part {ep} (BGMあり): {start} → {end}")
-            r = subprocess.run(cmd, capture_output=True, text=True)
-            if r.returncode == 0:
-                print(f"  ✅ {os.path.basename(out_bgm)}")
+    # --- BGMなし版（最終パートのみDemucs、他はコピー） ---
+    out_nobgm = f"{SEG_DIR_NOBGM}/ep{ep:02d}.mp4"
+    if not os.path.exists(out_nobgm):
+        if is_last:
+            # 最終パートのみDemucsでBGM除去
+            print(f"  🎵 Part {ep} (最終): Demucsでナレーション抽出中...")
+            sep_dir = f"{SEG_DIR_NOBGM}/separated"
+            # pipxでインストールしたdemucsコマンドを使用
+            import shutil as _sh
+            demucs_bin = _sh.which("demucs") or "demucs"
+            r = subprocess.run(
+                [demucs_bin, "--two-stems=vocals", "-o", sep_dir, out_seg],
+                capture_output=True, text=True
+            )
+            if r.returncode != 0:
+                print(f"  ⚠️  Demucs失敗 → BGMあり版をそのまま使用")
+                print(f"      ({r.stderr[-200:]})")
+                shutil.copy2(out_seg, out_nobgm)
             else:
-                print(f"  ❌ エラー: {r.stderr[-200:]}")
-                sys.exit(1)
+                # Demucs出力からvocals.wavを探す
+                vocals = None
+                for root, dirs, files in os.walk(sep_dir):
+                    if "vocals.wav" in files:
+                        vocals = os.path.join(root, "vocals.wav")
+                        break
+                if vocals:
+                    # ナレーション音声を映像と再合成
+                    r2 = subprocess.run([
+                        "ffmpeg", "-y", "-i", out_seg, "-i", vocals,
+                        "-c:v", "copy", "-map", "0:v:0", "-map", "1:a:0",
+                        "-c:a", "aac", "-b:a", "192k", out_nobgm
+                    ], capture_output=True, text=True)
+                    if r2.returncode == 0:
+                        print(f"  ✅ BGM除去完了: {os.path.basename(out_nobgm)}")
+                    else:
+                        print(f"  ⚠️  再合成失敗 → BGMあり版をそのまま使用")
+                        shutil.copy2(out_seg, out_nobgm)
+                else:
+                    print(f"  ⚠️  vocals.wav未検出 → BGMあり版をそのまま使用")
+                    shutil.copy2(out_seg, out_nobgm)
+                # Demucs一時ファイル削除
+                shutil.rmtree(sep_dir, ignore_errors=True)
         else:
-            # BGMファイルがない場合はBGMなし版をコピー
-            import shutil
-            shutil.copy2(out_nobgm, out_bgm)
-            print(f"  ⚠️  Part {ep}: BGMファイル未設定 → BGMなし版をコピー")
+            # 最終パート以外はそのままコピー
+            shutil.copy2(out_seg, out_nobgm)
+            print(f"  📋 Part {ep}: BGMなし版コピー")
     else:
-        print(f"  ⏭️  Part {ep} (BGMあり): 分割済み")
+        print(f"  ⏭️  Part {ep} (BGMなし): 済み")
+
 SPLIT_EOF
 
 echo "  ✅ 分割完了（2バージョン）"
 
 # ============================================================
-# STEP 5: FFmpegで縦型変換 + 上下装飾（2バージョン）
+# STEP 4: FFmpegで縦型変換 + 上下装飾（2バージョン）
 # ============================================================
 echo ""
-echo "🎨 STEP 5: 縦型変換 + 装飾中..."
+echo "🎨 STEP 4: 縦型変換 + 装飾中..."
 
 OUT_DIR="$PROJECT_DIR/output"
 OUT_DIR_NOBGM="$PROJECT_DIR/output_nobgm"
@@ -264,7 +275,7 @@ if [ -f "$ASSETS_DIR/logo.png" ]; then
 fi
 
 export CUTS_JSON SEG_DIR SEG_DIR_NOBGM OUT_DIR OUT_DIR_NOBGM FONT_PATH THUMBNAIL_PATH PROJECT_NAME
-python3 << 'STEP5_EOF'
+python3 << 'STEP4_EOF'
 import json, subprocess, os, sys
 
 CUTS_JSON = os.environ.get("CUTS_JSON", "")
@@ -282,6 +293,42 @@ with open(CUTS_JSON) as f:
     data = json.load(f)
 
 total_parts = len(data["cuts"])
+
+# display_titleを行ごとに分割（改行対応）
+title_lines = data.get("display_title", PROJECT_NAME).split("\n")
+
+def build_title_filters(prev_label, font_path, title_lines, part_text, cta_text, text_y):
+    """タイトル行 + Part + CTAのdrawtextフィルターチェーンを構築"""
+    filters = ""
+    label = prev_label
+    y = text_y
+    title_fontsize = 48 if max(len(l) for l in title_lines) > 12 else 52
+    for i, line in enumerate(title_lines):
+        # FFmpeg drawtextの特殊文字をエスケープ
+        escaped = line.replace("'", "'\\''").replace(":", "\\:")
+        next_label = f"title{i}"
+        filters += (
+            f"[{label}]drawtext=fontfile={font_path}:text='{escaped}'"
+            f":fontsize={title_fontsize}:fontcolor=white:borderw=3:bordercolor=black"
+            f":x=(w-text_w)/2:y={y}[{next_label}];"
+        )
+        label = next_label
+        y += title_fontsize + 10
+    # Part表示
+    y += 5
+    filters += (
+        f"[{label}]drawtext=fontfile={font_path}:text='{part_text}'"
+        f":fontsize=40:fontcolor=#CCCCCC:borderw=2:bordercolor=black"
+        f":x=(w-text_w)/2:y={y}[parted];"
+    )
+    y += 50
+    # CTA表示
+    filters += (
+        f"[parted]drawtext=fontfile={font_path}:text='{cta_text}'"
+        f":fontsize=30:fontcolor=#FFD700:borderw=1:bordercolor=black"
+        f":x=(w-text_w)/2:y={y}[final]"
+    )
+    return filters
 
 for seg_dir, out_dir, label in versions:
   print(f"\n  --- {label}版 ---")
@@ -309,60 +356,53 @@ for seg_dir, out_dir, label in versions:
     src_w = int(video_stream["width"])
     src_h = int(video_stream["height"])
 
-    # 9:16 = 1080x1920、動画を横幅1080にフィット
+    # 9:16 = 1080x1920、均等3分割（各640px）
     out_w, out_h = 1080, 1920
-    scale_w = out_w
-    scale_h = int(src_h * (out_w / src_w))
+    section_h = out_h // 3  # 640px
     part_text = f"Part {ep} / {total_parts}"
     cta_text = "▶ フォローして続きを見る"
+
+    # 動画を中央セクション(640px)にフィット
+    scale_w = out_w
+    scale_h = int(src_h * (out_w / src_w))
+    if scale_h > section_h:
+        scale_h = section_h
+        scale_w = int(src_w * (section_h / src_h))
+    video_y = section_h + (section_h - scale_h) // 2  # 中央セクション内で上下中央
+
+    # テキストは下セクション上端から配置（上揃え）
+    text_y = section_h * 2 + 20
 
     inputs = ["-i", input_seg]
 
     # サムネイルがある場合
     if THUMBNAIL_PATH and os.path.exists(THUMBNAIL_PATH):
         inputs.extend(["-i", THUMBNAIL_PATH])
-        # サムネを上部に小さく配置、動画をその直下に詰める
-        thumb_h = 160
-        thumb_w = int(thumb_h * 16 / 9)
-        if thumb_w > out_w - 40:
-            thumb_w = out_w - 40
-            thumb_h = int(thumb_w * 9 / 16)
-        video_y = thumb_h + 15  # サムネ直下に詰める
-        bottom_text_y = video_y + scale_h + 20
-        filter_complex = (
+        # サムネを上セクション(640px)にフィット
+        thumb_w = out_w - 40
+        thumb_h = int(thumb_w * 9 / 16)
+        if thumb_h > section_h - 20:
+            thumb_h = section_h - 20
+            thumb_w = int(thumb_h * 16 / 9)
+        thumb_y = (section_h - thumb_h) // 2  # 上セクション内で上下中央
+        base_filter = (
             f"color=c=black:s={out_w}x{out_h}:r=30[bg];"
             f"[0:v]scale={scale_w}:{scale_h}[scaled];"
-            f"[bg][scaled]overlay=0:{video_y}[base];"
+            f"[bg][scaled]overlay={(out_w - scale_w) // 2}:{video_y}[base];"
             f"[1:v]scale={thumb_w}:{thumb_h}[thumbscaled];"
-            f"[base][thumbscaled]overlay=(W-w)/2:5[withthumb];"
-            f"[withthumb]drawtext=fontfile={FONT_PATH}:text='{PROJECT_NAME}'"
-            f":fontsize=52:fontcolor=white:borderw=3:bordercolor=black"
-            f":x=(w-text_w)/2:y={bottom_text_y}[titled];"
-            f"[titled]drawtext=fontfile={FONT_PATH}:text='{part_text}'"
-            f":fontsize=40:fontcolor=#CCCCCC:borderw=2:bordercolor=black"
-            f":x=(w-text_w)/2:y={bottom_text_y + 65}[parted];"
-            f"[parted]drawtext=fontfile={FONT_PATH}:text='{cta_text}'"
-            f":fontsize=30:fontcolor=#FFD700:borderw=1:bordercolor=black"
-            f":x=(w-text_w)/2:y={bottom_text_y + 120}[final]"
+            f"[base][thumbscaled]overlay=(W-w)/2:{thumb_y}[withthumb];"
         )
+        title_filters = build_title_filters("withthumb", FONT_PATH, title_lines, part_text, cta_text, text_y)
+        filter_complex = base_filter + title_filters
     else:
-        # サムネなし: 動画を上端に詰める
-        video_y = 10
-        bottom_text_y = video_y + scale_h + 20
-        filter_complex = (
+        # サムネなし: 動画を中央セクションに配置
+        base_filter = (
             f"color=c=black:s={out_w}x{out_h}:r=30[bg];"
             f"[0:v]scale={scale_w}:{scale_h}[scaled];"
-            f"[bg][scaled]overlay=0:{video_y}[base];"
-            f"[base]drawtext=fontfile={FONT_PATH}:text='{PROJECT_NAME}'"
-            f":fontsize=52:fontcolor=white:borderw=3:bordercolor=black"
-            f":x=(w-text_w)/2:y={bottom_text_y}[titled];"
-            f"[titled]drawtext=fontfile={FONT_PATH}:text='{part_text}'"
-            f":fontsize=40:fontcolor=#CCCCCC:borderw=2:bordercolor=black"
-            f":x=(w-text_w)/2:y={bottom_text_y + 65}[parted];"
-            f"[parted]drawtext=fontfile={FONT_PATH}:text='{cta_text}'"
-            f":fontsize=30:fontcolor=#FFD700:borderw=1:bordercolor=black"
-            f":x=(w-text_w)/2:y={bottom_text_y + 120}[final]"
+            f"[bg][scaled]overlay={(out_w - scale_w) // 2}:{video_y}[baseout];"
         )
+        title_filters = build_title_filters("baseout", FONT_PATH, title_lines, part_text, cta_text, text_y)
+        filter_complex = base_filter + title_filters
 
     cmd = ["ffmpeg", "-y"] + inputs + [
         "-filter_complex", filter_complex,
@@ -391,7 +431,7 @@ for seg_dir, out_dir, label in versions:
         ]
         subprocess.run(simple_cmd, capture_output=True)
         print(f"  ✅ フォールバック完成: ep{ep:02d}_short.mp4")
-STEP5_EOF
+STEP4_EOF
 
 echo ""
 echo "=========================================="
@@ -401,12 +441,10 @@ echo "📁 BGMなし版: $OUT_DIR_NOBGM/"
 echo "=========================================="
 echo "BGMあり版（YouTube用）:"
 ls -la "$OUT_DIR/" 2>/dev/null || echo "  (出力ファイルなし)"
-echo "BGMなし版（TikTok/Instagram/Facebook/LINE VOOM用）:"
+echo "BGMなし版（TikTok用）:"
 ls -la "$OUT_DIR_NOBGM/" 2>/dev/null || echo "  (出力ファイルなし)"
 echo ""
 echo "📱 投稿先:"
 echo "   YouTube       → BGMあり版（$OUT_DIR/） + URL申請"
 echo "   TikTok        → BGMなし版（$OUT_DIR_NOBGM/） + アプリ内楽曲後付け"
-echo "   Instagram     → BGMなし版 + アプリ内楽曲後付け"
-echo "   Facebook      → BGMなし版 + アプリ内楽曲後付け"
-echo "   LINE VOOM     → BGMなし版そのまま"
+echo "   LINE VOOM     → BGMあり版（$OUT_DIR/）そのまま"

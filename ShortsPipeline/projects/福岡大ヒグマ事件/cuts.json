@@ -1,83 +1,204 @@
 {
   "source": "source.mp4",
   "total_duration": "00:31:14",
-  "total_episodes": 15,
+  "total_episodes": 28,
   "display_title": "5人中3人死亡、、\n熊を甘く見た大学生の結末",
   "cuts": [
     {
       "episode": 1,
+      "title": "20歳の大学生5人、北海道の山奥へ",
       "start": "00:00:00",
-      "end": "00:01:52"
+      "end": "00:01:01",
+      "thumbnail_text": "夢の北海道合宿"
     },
     {
       "episode": 2,
-      "start": "00:01:52",
-      "end": "00:03:33"
+      "title": "登山開始、しかし異変の予兆が",
+      "start": "00:01:01",
+      "end": "00:02:08",
+      "thumbnail_text": "熊の異常行動"
     },
     {
       "episode": 3,
-      "start": "00:03:33",
-      "end": "00:05:42"
+      "title": "順調な日々、他大学との出会い",
+      "start": "00:02:08",
+      "end": "00:03:13",
+      "thumbnail_text": "順調な登山"
     },
     {
       "episode": 4,
-      "start": "00:05:42",
-      "end": "00:07:50"
+      "title": "ルート変更、そして最初の犠牲者",
+      "start": "00:03:13",
+      "end": "00:04:19",
+      "thumbnail_text": "最初の犠牲者"
     },
     {
       "episode": 5,
-      "start": "00:07:50",
-      "end": "00:10:00"
+      "title": "ヒグマが真っ直ぐ近づいてくる",
+      "start": "00:04:19",
+      "end": "00:05:23",
+      "thumbnail_text": "距離10m"
     },
     {
       "episode": 6,
-      "start": "00:10:00",
-      "end": "00:12:07"
+      "title": "岩の上で睨み合い、そして飛びかかる熊",
+      "start": "00:05:23",
+      "end": "00:06:27",
+      "thumbnail_text": "飛びかかる熊"
     },
     {
       "episode": 7,
-      "start": "00:12:07",
-      "end": "00:14:09"
+      "title": "必死の逃走、草に足を取られた瞬間",
+      "start": "00:06:27",
+      "end": "00:07:28",
+      "thumbnail_text": "足が抜けない"
     },
     {
       "episode": 8,
-      "start": "00:14:09",
-      "end": "00:16:14"
+      "title": "熊が荷物を人間のように並べていた",
+      "start": "00:07:28",
+      "end": "00:08:32",
+      "thumbnail_text": "異常な行動"
     },
     {
       "episode": 9,
-      "start": "00:16:14",
-      "end": "00:18:33"
+      "title": "福岡大学、運命のテント設営",
+      "start": "00:08:32",
+      "end": "00:09:33",
+      "thumbnail_text": "運命のテント"
     },
     {
       "episode": 10,
-      "start": "00:18:33",
-      "end": "00:20:42"
+      "title": "犬を見るようにヒグマを観察する大学生",
+      "start": "00:09:33",
+      "end": "00:10:40",
+      "thumbnail_text": "無警戒の代償"
     },
     {
       "episode": 11,
-      "start": "00:20:42",
-      "end": "00:23:01"
+      "title": "深夜、テントに近づく鼻息の音",
+      "start": "00:10:40",
+      "end": "00:11:45",
+      "thumbnail_text": "テントに鼻息"
     },
     {
       "episode": 12,
-      "start": "00:23:01",
-      "end": "00:25:07"
+      "title": "テントを倒す熊、限界の5分間",
+      "start": "00:11:45",
+      "end": "00:12:52",
+      "thumbnail_text": "テント崩壊"
     },
     {
       "episode": 13,
-      "start": "00:25:07",
-      "end": "00:27:09"
+      "title": "助けを求めて沢を駆け下りる2人",
+      "start": "00:12:52",
+      "end": "00:14:09",
+      "thumbnail_text": "必死の救助要請"
     },
     {
       "episode": 14,
-      "start": "00:27:09",
-      "end": "00:29:14"
+      "title": "3度目の遭遇、逃げ場のないカール",
+      "start": "00:14:09",
+      "end": "00:15:14",
+      "thumbnail_text": "3度目の遭遇"
     },
     {
       "episode": 15,
-      "start": "00:29:14",
-      "end": "00:31:14"
+      "title": "鳥取大学のテントを目指す決断",
+      "start": "00:15:14",
+      "end": "00:16:17",
+      "thumbnail_text": "最後の望み"
+    },
+    {
+      "episode": 16,
+      "title": "背後から迫る熊、響く絶叫",
+      "start": "00:16:17",
+      "end": "00:17:28",
+      "thumbnail_text": "ギャー!"
+    },
+    {
+      "episode": 17,
+      "title": "バラバラになった5人、助けを求める声",
+      "start": "00:17:28",
+      "end": "00:18:33",
+      "thumbnail_text": "バラバラに"
+    },
+    {
+      "episode": 18,
+      "title": "熊に石を投げた結果",
+      "start": "00:18:33",
+      "end": "00:19:49",
+      "thumbnail_text": "石を投げた結果"
+    },
+    {
+      "episode": 19,
+      "title": "誰もいないテント、眠れない夜",
+      "start": "00:19:49",
+      "end": "00:20:54",
+      "thumbnail_text": "孤独の恐怖"
+    },
+    {
+      "episode": 20,
+      "title": "濃霧の中、2m先に現れた熊",
+      "start": "00:20:54",
+      "end": "00:22:15",
+      "thumbnail_text": "霧の中の熊"
+    },
+    {
+      "episode": 21,
+      "title": "命からがら下山、工事現場へ",
+      "start": "00:22:15",
+      "end": "00:23:19",
+      "thumbnail_text": "決死の下山"
+    },
+    {
+      "episode": 22,
+      "title": "捜索隊が見た、変わり果てた姿",
+      "start": "00:23:19",
+      "end": "00:24:25",
+      "thumbnail_text": "変わり果てた姿"
+    },
+    {
+      "episode": 23,
+      "title": "遺体のそばに残されたメモの内容",
+      "start": "00:24:25",
+      "end": "00:25:45",
+      "thumbnail_text": "最期のメモ"
+    },
+    {
+      "episode": 24,
+      "title": "2つの大学の決定的な違い",
+      "start": "00:25:45",
+      "end": "00:26:47",
+      "thumbnail_text": "決定的な違い"
+    },
+    {
+      "episode": 25,
+      "title": "熊に背中を見せてはいけない理由",
+      "start": "00:26:47",
+      "end": "00:27:54",
+      "thumbnail_text": "絶対NG行動"
+    },
+    {
+      "episode": 26,
+      "title": "死んだふりは効果がない",
+      "start": "00:27:54",
+      "end": "00:29:04",
+      "thumbnail_text": "死んだふり無効"
+    },
+    {
+      "episode": 27,
+      "title": "50年間封印された記憶",
+      "start": "00:29:04",
+      "end": "00:30:05",
+      "thumbnail_text": "50年の沈黙"
+    },
+    {
+      "episode": 28,
+      "title": "3人の犠牲を忘れないために",
+      "start": "00:30:05",
+      "end": "00:31:14",
+      "thumbnail_text": "追悼"
     }
   ]
 }
