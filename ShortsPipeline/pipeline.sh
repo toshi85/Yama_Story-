@@ -97,61 +97,143 @@ else
 fi
 
 # ============================================================
-# STEP 3: FFmpegで分割
+# STEP 3: Demucsで音源分離（BGM除去）
 # ============================================================
 echo ""
-echo "🔪 STEP 3: FFmpegで動画分割中..."
+echo "🎵 STEP 3: Demucsでナレーション抽出中..."
+
+VOCALS_WAV="$PROJECT_DIR/vocals.wav"
+CLEAN_MP4="$PROJECT_DIR/clean.mp4"
+
+if [ -f "$CLEAN_MP4" ]; then
+  echo "  ⏭️  音源分離済み（スキップ）"
+else
+  # Demucsでボーカル（ナレーション）を抽出
+  python3 -m demucs --two-stems=vocals -o "$PROJECT_DIR/separated" "$SOURCE_MP4" 2>/dev/null
+
+  # Demucs出力パスを特定（htdemucs/ファイル名/vocals.wav）
+  DEMUCS_DIR=$(find "$PROJECT_DIR/separated" -name "vocals.wav" -print -quit 2>/dev/null | xargs dirname)
+  if [ -z "$DEMUCS_DIR" ]; then
+    echo "  ❌ Demucs出力が見つかりません"
+    exit 1
+  fi
+  VOCALS_WAV="$DEMUCS_DIR/vocals.wav"
+
+  # ナレーション音声を元動画の映像と再合成（BGMなし版のマスター）
+  ffmpeg -y -i "$SOURCE_MP4" -i "$VOCALS_WAV" \
+    -c:v copy -map 0:v:0 -map 1:a:0 \
+    -c:a aac -b:a 192k \
+    "$CLEAN_MP4" 2>/dev/null
+
+  echo "  ✅ 完了: clean.mp4（ナレーションのみ）"
+fi
+
+# ============================================================
+# STEP 4: FFmpegで分割（2バージョン）
+# ============================================================
+echo ""
+echo "🔪 STEP 4: 動画分割中（BGMあり版 + BGMなし版）..."
 
 SEG_DIR="$PROJECT_DIR/segments"
-mkdir -p "$SEG_DIR"
+SEG_DIR_NOBGM="$PROJECT_DIR/segments_nobgm"
+mkdir -p "$SEG_DIR" "$SEG_DIR_NOBGM"
 
-python3 -c "
-import json, subprocess, sys, os
+# BGM楽曲の確認
+BGM_FILE=""
+if [ -f "$ASSETS_DIR/bgm.mp3" ]; then
+  BGM_FILE="$ASSETS_DIR/bgm.mp3"
+elif [ -f "$ASSETS_DIR/bgm.wav" ]; then
+  BGM_FILE="$ASSETS_DIR/bgm.wav"
+elif [ -f "$ASSETS_DIR/bgm.m4a" ]; then
+  BGM_FILE="$ASSETS_DIR/bgm.m4a"
+fi
 
-with open('$CUTS_JSON') as f:
+export CUTS_JSON CLEAN_MP4 SOURCE_MP4 SEG_DIR SEG_DIR_NOBGM BGM_FILE
+python3 << 'SPLIT_EOF'
+import json, subprocess, os, sys
+
+CUTS_JSON = os.environ["CUTS_JSON"]
+CLEAN_MP4 = os.environ["CLEAN_MP4"]
+SOURCE_MP4 = os.environ["SOURCE_MP4"]
+SEG_DIR = os.environ["SEG_DIR"]
+SEG_DIR_NOBGM = os.environ["SEG_DIR_NOBGM"]
+BGM_FILE = os.environ.get("BGM_FILE", "")
+
+with open(CUTS_JSON) as f:
     data = json.load(f)
 
-for cut in data['cuts']:
-    ep = cut['episode']
-    start = cut['start']
-    end = cut['end']
-    title = cut.get('title', f'第{ep}話')
-    output = f'$SEG_DIR/ep{ep:02d}.mp4'
+for cut in data["cuts"]:
+    ep = cut["episode"]
+    start = cut["start"]
+    end = cut["end"]
+    title = cut.get("title", f"第{ep}話")
 
-    if os.path.exists(output):
-        print(f'  ⏭️  Part {ep}: 分割済み（スキップ）')
-        continue
+    s_sec = float(start.split(":")[0])*3600 + float(start.split(":")[1])*60 + float(start.split(":")[2])
+    e_sec = float(end.split(":")[0])*3600 + float(end.split(":")[1])*60 + float(end.split(":")[2])
+    duration = e_sec - s_sec
 
-    cmd = [
-        'ffmpeg', '-y',
-        '-ss', start,
-        '-i', '$SOURCE_MP4',
-        '-to', str(float(end.split(':')[0])*3600 + float(end.split(':')[1])*60 + float(end.split(':')[2]) - float(start.split(':')[0])*3600 - float(start.split(':')[1])*60 - float(start.split(':')[2])),
-        '-c:v', 'libx264',
-        '-c:a', 'aac',
-        '-preset', 'fast',
-        '-avoid_negative_ts', 'make_zero',
-        output
-    ]
-    print(f'  ✂️  Part {ep}: {start} → {end} ({title})')
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    if result.returncode == 0:
-        print(f'  ✅ 保存: ep{ep:02d}.mp4')
+    # --- BGMなし版（clean.mp4からカット） ---
+    out_nobgm = f"{SEG_DIR_NOBGM}/ep{ep:02d}.mp4"
+    if not os.path.exists(out_nobgm):
+        cmd = [
+            "ffmpeg", "-y", "-ss", start, "-i", CLEAN_MP4,
+            "-t", str(duration),
+            "-c:v", "libx264", "-c:a", "aac", "-preset", "fast",
+            "-avoid_negative_ts", "make_zero", out_nobgm
+        ]
+        print(f"  ✂️  Part {ep} (BGMなし): {start} → {end}")
+        r = subprocess.run(cmd, capture_output=True, text=True)
+        if r.returncode == 0:
+            print(f"  ✅ {os.path.basename(out_nobgm)}")
+        else:
+            print(f"  ❌ エラー: {r.stderr[-200:]}")
+            sys.exit(1)
     else:
-        print(f'  ❌ エラー: {result.stderr[-200:]}')
-        sys.exit(1)
-"
+        print(f"  ⏭️  Part {ep} (BGMなし): 分割済み")
 
-echo "  ✅ 分割完了"
+    # --- BGMあり版（clean.mp4 + BGMをミックス） ---
+    out_bgm = f"{SEG_DIR}/ep{ep:02d}.mp4"
+    if not os.path.exists(out_bgm):
+        if BGM_FILE and os.path.exists(BGM_FILE):
+            # ナレーション + BGMをミックス（BGM音量を下げる）
+            cmd = [
+                "ffmpeg", "-y", "-ss", start, "-i", CLEAN_MP4,
+                "-stream_loop", "-1", "-i", BGM_FILE,
+                "-t", str(duration),
+                "-filter_complex",
+                "[0:a]volume=1.0[voice];[1:a]volume=0.15[music];[voice][music]amix=inputs=2:duration=first[aout]",
+                "-map", "0:v", "-map", "[aout]",
+                "-c:v", "libx264", "-c:a", "aac", "-preset", "fast",
+                "-avoid_negative_ts", "make_zero",
+                "-shortest", out_bgm
+            ]
+            print(f"  ✂️  Part {ep} (BGMあり): {start} → {end}")
+            r = subprocess.run(cmd, capture_output=True, text=True)
+            if r.returncode == 0:
+                print(f"  ✅ {os.path.basename(out_bgm)}")
+            else:
+                print(f"  ❌ エラー: {r.stderr[-200:]}")
+                sys.exit(1)
+        else:
+            # BGMファイルがない場合はBGMなし版をコピー
+            import shutil
+            shutil.copy2(out_nobgm, out_bgm)
+            print(f"  ⚠️  Part {ep}: BGMファイル未設定 → BGMなし版をコピー")
+    else:
+        print(f"  ⏭️  Part {ep} (BGMあり): 分割済み")
+SPLIT_EOF
+
+echo "  ✅ 分割完了（2バージョン）"
 
 # ============================================================
-# STEP 4: FFmpegで縦型変換 + 上下装飾
+# STEP 5: FFmpegで縦型変換 + 上下装飾（2バージョン）
 # ============================================================
 echo ""
-echo "🎨 STEP 4: 縦型変換 + 装飾中..."
+echo "🎨 STEP 5: 縦型変換 + 装飾中..."
 
 OUT_DIR="$PROJECT_DIR/output"
-mkdir -p "$OUT_DIR"
+OUT_DIR_NOBGM="$PROJECT_DIR/output_nobgm"
+mkdir -p "$OUT_DIR" "$OUT_DIR_NOBGM"
 
 # フォント設定
 if [ -f "$ASSETS_DIR/font.ttf" ]; then
@@ -181,26 +263,32 @@ if [ -f "$ASSETS_DIR/logo.png" ]; then
   LOGO_PATH="$ASSETS_DIR/logo.png"
 fi
 
-export CUTS_JSON SEG_DIR OUT_DIR FONT_PATH THUMBNAIL_PATH PROJECT_NAME
-python3 << 'STEP4_EOF'
+export CUTS_JSON SEG_DIR SEG_DIR_NOBGM OUT_DIR OUT_DIR_NOBGM FONT_PATH THUMBNAIL_PATH PROJECT_NAME
+python3 << 'STEP5_EOF'
 import json, subprocess, os, sys
 
 CUTS_JSON = os.environ.get("CUTS_JSON", "")
-SEG_DIR = os.environ.get("SEG_DIR", "")
-OUT_DIR = os.environ.get("OUT_DIR", "")
 FONT_PATH = os.environ.get("FONT_PATH", "/tmp/hiragino.ttc")
 THUMBNAIL_PATH = os.environ.get("THUMBNAIL_PATH", "")
 PROJECT_NAME = os.environ.get("PROJECT_NAME", "")
+
+# 2バージョン処理: (入力セグメントDir, 出力Dir, ラベル)
+versions = [
+    (os.environ.get("SEG_DIR", ""), os.environ.get("OUT_DIR", ""), "BGMあり"),
+    (os.environ.get("SEG_DIR_NOBGM", ""), os.environ.get("OUT_DIR_NOBGM", ""), "BGMなし"),
+]
 
 with open(CUTS_JSON) as f:
     data = json.load(f)
 
 total_parts = len(data["cuts"])
 
-for cut in data["cuts"]:
+for seg_dir, out_dir, label in versions:
+  print(f"\n  --- {label}版 ---")
+  for cut in data["cuts"]:
     ep = cut["episode"]
-    input_seg = f"{SEG_DIR}/ep{ep:02d}.mp4"
-    output_file = f"{OUT_DIR}/ep{ep:02d}_short.mp4"
+    input_seg = f"{seg_dir}/ep{ep:02d}.mp4"
+    output_file = f"{out_dir}/ep{ep:02d}_short.mp4"
 
     if not os.path.exists(input_seg):
         print(f"  ⚠️  スキップ（ファイルなし）: ep{ep:02d}.mp4")
@@ -303,14 +391,22 @@ for cut in data["cuts"]:
         ]
         subprocess.run(simple_cmd, capture_output=True)
         print(f"  ✅ フォールバック完成: ep{ep:02d}_short.mp4")
-STEP4_EOF
+STEP5_EOF
 
 echo ""
 echo "=========================================="
 echo "🎉 パイプライン完了！"
-echo "📁 出力: $OUT_DIR/"
+echo "📁 BGMあり版: $OUT_DIR/"
+echo "📁 BGMなし版: $OUT_DIR_NOBGM/"
 echo "=========================================="
-ls -la "$OUT_DIR/" 2>/dev/null || echo "(出力ファイルなし)"
+echo "BGMあり版（YouTube用）:"
+ls -la "$OUT_DIR/" 2>/dev/null || echo "  (出力ファイルなし)"
+echo "BGMなし版（TikTok/Instagram/Facebook/LINE VOOM用）:"
+ls -la "$OUT_DIR_NOBGM/" 2>/dev/null || echo "  (出力ファイルなし)"
 echo ""
-echo "📱 YouTube Shorts / TikTok / Instagram Reels"
-echo "   → 全て9:16縦型。そのままアップロード可能です。"
+echo "📱 投稿先:"
+echo "   YouTube       → BGMあり版（$OUT_DIR/） + URL申請"
+echo "   TikTok        → BGMなし版（$OUT_DIR_NOBGM/） + アプリ内楽曲後付け"
+echo "   Instagram     → BGMなし版 + アプリ内楽曲後付け"
+echo "   Facebook      → BGMなし版 + アプリ内楽曲後付け"
+echo "   LINE VOOM     → BGMなし版そのまま"
