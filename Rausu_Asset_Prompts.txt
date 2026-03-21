@@ -683,12 +683,17 @@ Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, l
 
 ナレーター: 明日の早朝に捜索を開始する形となりました。
 
-【制作メモ】ASSET-057 [Lovart静止画+編集者] 台本L218-L222
-シーン: 捜索開始が翌朝に持ち越された経緯の説明。登山口の前で待機する警察・消防のイメージ
+【制作メモ】ASSET-057 [キャラアニメーション] 台本L218-L222
+シーン: CHAR-02が夜の登山口で一人佇む。救助を待つ間の葛藤と絶望
+キャラプロンプト（1:1）:
 ```
-Photorealistic, shot on RED camera. Documentary style. Japanese police officers and firefighters standing at the base of a mountain trailhead in Hokkaido at dusk, in full gear but unable to advance. Floodlights illuminating the trailhead area. Marked police vehicles (black and white) and fire trucks visible. Tense waiting atmosphere. Dense dark forest behind the trailhead. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. [CHAR-02 reference | 再利用] Full body. A Japanese man in his mid-20s in orange hiking jacket, black pants, red daypack, sitting on a bench at a trailhead at night. Head in his hands, shoulders slumped in despair. Tears visible on his cheeks. Exhausted and devastated expression. Generate 5 separate images, each showing only this one character.
 ```
-→ 編集者指示: 待機する救助隊の画像に「安全確保のため捜索は翌朝に延期」テロップを重ねる
+背景プロンプト（16:9）:
+```
+Photorealistic, shot on RED camera. Documentary style. The Iwaobetsu mountain trailhead at night. Emergency vehicle lights casting red and blue flashes on the trees. Floodlights illuminating the trailhead area. Dense dark forest behind. A single bench near the trailhead sign. Tense waiting atmosphere. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: CHAR-02を中央のベンチに配置。赤と青の光が交互に点滅する演出。「安全確保のため捜索は翌朝に延期」テロップを下部に表示（5秒）
 
 ナレーター: また、救助を待つ間、友人はオホーツク展望台付近で、あるものを目撃しています。
 
@@ -1250,10 +1255,17 @@ Photorealistic, shot on RED camera. Documentary style. Soft golden evening light
 
 ナレーター: もしこのとき閉鎖されていれば、4日後の悲劇は起きなかったかもしれません。
 
-【制作メモ】ASSET-095 [Lovart静止画+編集者] 台本L427-L431
-シーン: 閉鎖されていない登山口ゲート。開いたままの柵の前に「通行可」の標識。対比として「閉鎖」の看板が存在しない。
-プロンプト: A mountain trailhead gate at the start of the Iwaobetsu route in Shiretoko. The metal gate stands fully open. A wooden signboard shows the trail is accessible. No warning tape, no closure notice. Empty parking area nearby. Morning light. The image conveys a path that remains open despite recent bear encounters. Desaturated color palette, vignette. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
-編集者指示: 「登山道は閉鎖されなかった」テロップを画面下部に表示。「もし閉鎖されていれば…」テロップをフェードインで続けて表示。
+【制作メモ】ASSET-095 [キャラアニメーション] 台本L427-L431
+シーン: 恐怖を感じた登山者が急いで下山する。しかし登山道は閉鎖されず開放されたまま
+キャラプロンプト（1:1）:
+```
+Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. [New character] Full body. A Japanese male hiker in his 30s wearing a red hiking jacket and gray pants, walking quickly downhill with a frightened pale expression, looking over his shoulder nervously. Gripping his backpack straps tightly. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Photorealistic, shot on RED camera. Documentary style. The Iwaobetsu trailhead of Mount Rausu, Shiretoko, Hokkaido. The trail gate stands wide open with no closure sign or barrier. Summer morning light. A hiking trail stretching into dense forest beyond. Desaturated color palette, vignette edges. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 登山者キャラが急ぎ足で下山してくるアニメーション。「登山道は閉鎖されなかった」「もし閉鎖されていれば…」テロップを順番にフェードイン（5秒）
 
 ---
 
@@ -1395,12 +1407,17 @@ Photorealistic, shot on RED camera. Documentary style. A weathered warning sign 
 
 ナレーター: 「どういう場面で、どういう対応をとるか、あらかじめ決まっていなかった」
 
-【制作メモ】ASSET-107 [Lovart静止画 + 編集者] 台本L477-L479
-シーン: 役所の窓口で担当者が困惑した表情で答えているイメージ映像。証言テロップを重ねる
+【制作メモ】ASSET-107 [キャラアニメーション] 台本L477-L479
+シーン: 斜里町の担当者が困惑しながら取材に答える。「決まっていなかった」という衝撃の証言
+キャラプロンプト（1:1）:
 ```
-Photorealistic, shot on RED camera. Documentary style. Interior of a Japanese small-town government office, fluorescent lighting, stacks of papers on desks, a male official in his 40s with a troubled uncertain expression looking slightly downward. Blurred office equipment in background. Somber official atmosphere. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. [New character] Full body. A Japanese male government official in his 40s wearing a dark navy suit, slightly disheveled hair, troubled confused expression, hands clasped in front of his body nervously. Looking slightly downward with uncertainty. Generate 5 separate images.
 ```
-→ 編集者指示: 画面下部に引用テロップ「どういう場面で、どういう対応をとるか、あらかじめ決まっていなかった」を白文字で表示。ゆっくりフェードイン（3秒）
+背景プロンプト（16:9）:
+```
+Photorealistic, shot on RED camera. Documentary style. Interior of a Japanese small-town government office in Shari, Hokkaido. Fluorescent lighting, stacks of papers on desks, filing cabinets. Plain institutional walls. Somber bureaucratic atmosphere. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 担当者キャラを中央に配置。引用テロップ「どういう場面で、どういう対応をとるか、あらかじめ決まっていなかった」を下部に白文字で表示（4秒）
 
 ---
 
@@ -1443,12 +1460,17 @@ A large dark brown bear silhouette walks forward through an orange cloud of bear
 
 ナレーター: しかし、その判断をする仕組みが、そもそもなかったのです。
 
-【制作メモ】ASSET-110 [Lovart静止画 + 編集者] 台本L485-L491
-シーン: 知床を熟知したベテランガイドのイメージ。証言テロップを重ねる。「仕組みがなかった」という憤りの強調
+【制作メモ】ASSET-110 [キャラアニメーション] 台本L485-L491
+シーン: 観光ガイド綾野さんが憤りをもって「閉鎖すべきだった」と語る。しかし仕組みがなかった
+キャラプロンプト（1:1）:
 ```
-Photorealistic, shot on RED camera. Documentary style. An experienced Japanese male outdoor guide in his 50s, wearing a khaki field jacket and cap, standing outdoors in a Hokkaido mountain forest, arms slightly crossed, serious concerned expression looking toward camera. Shiretoko-style dense green forest in background. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. [New character] Full body. An experienced Japanese male outdoor guide in his 50s, tanned weathered face, wearing a khaki field jacket and hiking cap, arms folded across his chest. Frustrated serious expression, brow furrowed, looking directly forward with conviction. Generate 5 separate images.
 ```
-→ 編集者指示: 画面下部に「危ないクマがいたら、2、3日でいいから閉鎖して様子を見る」テロップ表示。フェードイン。その後テロップを「しかし、その仕組みが存在しなかった」に切り替え（各2秒）
+背景プロンプト（16:9）:
+```
+Photorealistic, shot on RED camera. Documentary style. Shiretoko mountain forest entrance, Hokkaido, Japan. Dense green birch and spruce trees. A wooden trail information board visible. Afternoon light filtering through canopy. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: ガイドキャラを中央に配置。引用テロップ「危ないクマがいたら、2、3日でいいから閉鎖して様子を見る」→「しかし、その仕組みが存在しなかった」に切り替え（各2.5秒）
 
 ---
 
@@ -1637,12 +1659,17 @@ Photorealistic, shot on RED camera. Documentary style. An overhead view of a Jap
 
 ナレーター: と付け加えました。
 
-【制作メモ】ASSET-121 [Lovart静止画 + 編集者] 台本L555-L569
-シーン: 斜里町の首長たちが記者会見で回答するイメージ。2名の発言を順番にテロップ表示
+【制作メモ】ASSET-121 [キャラアニメーション] 台本L555-L569
+シーン: 山内町長と増田副町長が記者会見で発言。衝撃と検証の必要性を語る
+キャラプロンプト（1:1）:
 ```
-Photorealistic, shot on RED camera. Documentary style. Japanese town government press conference setting. Two male officials in formal suits standing behind a podium with microphones. Serious concerned expressions. Plain white wall background typical of rural Japanese municipal offices. Reporters visible in blurred foreground. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. [New character] Full body. Two Japanese male officials in their 50s-60s standing side by side. Left: a town mayor in a dark formal suit, silver hair, deeply concerned shocked expression, hands gripping the podium edge. Right: a vice-mayor in a gray suit, glasses, serious analytical expression. Both looking at the camera. Generate 5 separate images.
 ```
-→ 編集者指示: 山内町長の引用テロップ→増田副町長の引用テロップ→「知床のクマは人を襲わないということはない」を順番にフェードイン。各テロップ3秒ずつ（計9秒）
+背景プロンプト（16:9）:
+```
+Photorealistic, shot on RED camera. Documentary style. A Japanese small-town government press conference room. A podium with two microphones, plain white wall background, overhead fluorescent lighting. Blurred silhouettes of reporters and cameras in the foreground. Formal tense atmosphere. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 2人のキャラを会見台に配置。山内町長テロップ→増田副町長テロップ→「知床のクマは人を襲わないということはない」を順番にフェードイン（各3秒、計9秒）
 
 ---
 
