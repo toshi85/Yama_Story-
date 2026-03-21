@@ -9,3 +9,11 @@ ShortsPipeline/projects/*/*.png
 ShortsPipeline/projects/*/transcript.json
 ShortsPipeline/assets/client_secret.json
 ShortsPipeline/assets/youtube_token.json
+ShortsPipeline/projects/*/segments_nobgm/
+ShortsPipeline/projects/*/output_nobgm/
+ShortsPipeline/sleep-output/
+ShortsPipeline/.venv/
+ShortsPipeline/__pycache__/
+__pycache__/
+*.pyc
+*.log
