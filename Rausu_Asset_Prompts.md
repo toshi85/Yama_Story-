@@ -326,6 +326,8 @@ A Hokkaido mountain trail at 1500m elevation in August with patches of snow rema
 ナレーター: 晴れた日の羅臼岳山頂からは、知床半島の全容が見渡せます。
 
 ナレーター: オホーツク海と太平洋。2つの海に挟まれた細い半島。
+ナレーター: 2つの海に挟まれた細い半島。
+
 
 ナレーター: 日本でも指折りの大自然が残る場所です。
 
@@ -488,6 +490,8 @@ Narrow mountain trail in Hokkaido. Dense bamboo grass on both sides. Split secon
 ナレーター: 逃げる間もなければ、声を出す間すらありません。
 
 ナレーター: 子連れの母グマにとって、突然目の前に現れた人間は敵とみなします。
+ナレーター: 子連れの母グマにとって、突然目の前に現れた人間は敵とみなします。自分の子供が襲われると感じるからです。
+
 
 ナレーター: 自分の子供が襲われると感じるからです。
 
@@ -506,6 +510,8 @@ Extremely narrow mountain trail in Hokkaido, bamboo walls closing in. The space 
 ---
 
 ナレーター: 自分の子供を守るため、母グマは曽田さんを襲撃。
+ナレーター: 自分の子供を守るため、母グマは曽田さんを襲撃。あたり一帯に曽田さんの叫び声が響き渡ります。
+
 
 【制作メモ】ASSET-028 [Lovart動画]
 シーン: 子グマを守るため曽田さんに向かって突進する母グマの映像
@@ -523,6 +529,8 @@ Slow-motion footage of a large female brown bear (dark brown fur, 140cm, massive
 ナレーター: あたり一帯に曽田さんの叫び声が響き渡ります。
 
 ナレーター: 200メートル後ろにいた友人にもその叫び声は届きました。
+ナレーター: 200メートル後ろにいた友人にもその叫び声は届きました。友人は必死に曽田さんの元へ走ります。
+
 
 【制作メモ】ASSET-029 [キャラアニメーション]
 シーン: 山の静寂の中に叫び声が響き、CHAR-02（友人）が遠くから叫び声を聞き顔が青ざめる
@@ -565,6 +573,8 @@ Mountain trail in Hokkaido descending toward a bend. Bamboo grass walls on both 
 ナレーター: 残量がなかったのか。有効期限が切れていたのか。
 
 ナレーター: 詳細は不明ですが、いずれにしても噴射はできなかったと報告されています。
+ナレーター: 残量がなかったのか。有効期限が切れていたのか。詳細は不明ですが、いずれにしても噴射はできなかったと報告されています。
+
 
 【制作メモ】ASSET-031 [キャラアニメーション]
 シーン: CHAR-02（友人）がクマスプレーを取り出し必死に噴射しようとするが出ない。調査報告書のインフォグラフィック
@@ -581,6 +591,8 @@ Chaotic mountain trail scene in Hokkaido, bear attack in progress nearby. Dense 
 ---
 
 ナレーター: さらに、問題なのが「ヒグマには効果がない」と商品ラベルに記載されていたことです。
+ナレーター: さらに、問題なのが「ヒグマには効果がない」と商品ラベルに記載されていたことです。つまり、このスプレーはヒグマ対応の正規品ではありませんでした。
+
 
 ナレーター: つまり、このスプレーはヒグマ対応の正規品ではありませんでした。
 
@@ -714,6 +726,8 @@ Close-up of a digital watch showing 11:10 AM worn on a male hiker's wrist, with 
 → 編集者指示: 画面中央に「午前11時10分ごろ」という白テロップを大きく表示。
 
 ナレーター: 午前11時10分ごろ。
+ナレーター: 午前8時30分ごろ。
+
 
 ---
 
@@ -725,6 +739,8 @@ A male hiker in an orange jacket and black pants with a red daypack urgently dia
 
 ナレーター: 友人は急いで110番通報。
 ナレーター: 仲間がヒグマに襲われた
+ナレーター: 「仲間がヒグマに襲われた」
+
 
 ---
 
@@ -819,6 +835,8 @@ An official government office interior in Hokkaido, Japan. Officials in suits ga
 → 編集者指示: 画面下部に「環境省・斜里町・羅臼町 緊急会議」というテロップを表示。
 
 ナレーター: 事件の連絡を受け、近隣の町と環境省は羅臼岳の登山道と、
+ナレーター: 事件の連絡を受け、近隣の町と環境省は羅臼岳の登山道と、知床五湖（しれとこごこ）に利用制限をかけることに。
+
 ナレーター: 知床五湖（しれとこごこ）に利用制限をかけることに。
 
 ---
@@ -851,6 +869,8 @@ A rescue team assembling at the Iwaobetsu trailhead in the early morning light, 
 → 編集者指示: 各人物グループの上に「北海道警」「消防」「知床財団」「ハンター」というラベルを矢印付きで表示。
 
 ナレーター: 北海道警、消防、知床財団の職員、そしてハンター。
+ナレーター: 北海道警、消防、知床財団の職員、そしてハンター。警察犬も投入された、大規模な捜索です。
+
 ナレーター: 警察犬も投入された、大規模な捜索です。
 
 ---
@@ -892,6 +912,8 @@ Google Earth-style aerial view of the Iwaobetsu trail at 550m elevation on Mt. R
 → 編集者指示: 地図上に「母グマがここに戻っていた」という矢印ラベルを現場地点に表示。
 
 ナレーター: 母グマは、曽田さんを引きずり込んだ場所に戻っていました。
+ナレーター: 母グマと、子グマ2頭。母グマは、曽田さんを引きずり込んだ場所に戻っていました。
+
 ナレーター: 知床財団によると、母グマは捜索隊を確認しても逃げなかったとされています。
 ナレーター: 子グマのそばを離れようとしませんでした。
 
@@ -947,6 +969,8 @@ A Hokkaido Police spokesperson at a press conference podium, facing multiple mic
 
 ナレーター: 北海道警は、曽田さんについてこう発表しています。
 ナレーター: 全身に複数の外傷があり、出血が原因により死亡
+ナレーター: 「全身に複数の外傷があり、出血が原因により死亡」
+
 
 ---
 
@@ -1021,6 +1045,8 @@ A close-up of an official Shiretoko Foundation field survey report document in J
 → 編集者指示: 画面中央に鉤括弧付きで「"人を避けない。人に出会ってもすぐに逃走しない"」という白テロップを大きく表示。続いて「つまり、人間を怖がらないクマだった」というテロップを強調。
 
 ナレーター: 知床財団の調査速報に「人を避けない。人に出会ってもすぐに逃走しない」と記録されています。
+ナレーター: 「人を避けない。人に出会ってもすぐに逃走しない」
+
 ナレーター: つまり、人間を怖がらないクマだったのです。
 
 ---
@@ -1080,6 +1106,8 @@ A middle-aged Japanese man in a campsite manager's uniform being interviewed out
 
 ナレーター: 地元のキャンプ場管理人の西山修次さんは、HTB北海道ニュースの取材にこう語っています。
 ナレーター: とんでもないクマだと、その時話した
+ナレーター: 「とんでもないクマだと、その時話した」
+
 
 ---
 
@@ -1145,6 +1173,8 @@ CHAR-03 (mother bear SH, 140cm, 117kg, dark brown fur) stands on a mountain trai
 
 【制作メモ】ASSET-080 [キャラアニメーション]
 ナレーター: 知床財団はヒグマへの威嚇を繰り返しましたが、結局、母グマの行動は変わりませんでした。さらに、知床財団によるヒグマの記録を追っていくと、ある事実が浮かび上がります。
+ナレーター: さらに、知床財団によるヒグマの記録を追っていくと、ある事実が浮かび上がります。
+
 
 ```
 Shiretoko Foundation staff members in safety vests fire rubber bullets and handheld fireworks toward CHAR-03 (mother bear SH) on a forest trail. The bear barely flinches — she stands her ground, staring back calmly. Staff exchange nervous glances. Repeated attempt implied by motion lines. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
@@ -1155,6 +1185,8 @@ Shiretoko Foundation staff members in safety vests fire rubber bullets and handh
 
 【制作メモ】ASSET-081 [Lovart動画]
 ナレーター: 事件から約2週間前の7月29日。岩尾別地区で、観光客が車の窓を開け、ヒグマにスナック菓子を投げ与えていたのです。
+ナレーター: 岩尾別地区で、観光客が車の窓を開け、ヒグマにスナック菓子を投げ与えていたのです。
+
 
 ```
 Calendar graphic animating to July 29th. The date glows briefly then fades. Behind the calendar, a blurred forest road in the Shiretoko Iwaubetsu area. Ominous, quiet atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
@@ -1185,6 +1217,8 @@ CHAR-03 (mother bear SH) sniffs a human's hand holding a snack. A thought bubble
 
 【制作メモ】ASSET-084 [キャラアニメーション]
 ナレーター: その結果、クマは積極的に人間に近づくことに。そして、近づいても食べ物がもらえなかった場合、やがて苛立ちへと変わり、人間を襲う動機となることがあります。
+ナレーター: そして、近づいても食べ物がもらえなかった場合、やがて苛立ちへと変わり、人間を襲う動機となることがあります。
+
 
 ```
 CHAR-03 (mother bear SH) walks confidently toward a group of tourists. First panel: tourists reach out with food — bear's expression happy. Second panel: tourists have no food and back away — bear's expression shifts from hopeful to frustrated, eyes narrowing, brow furrowing, red anger lines around head. The progression from reward to aggression shown in two panels. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
@@ -1225,6 +1259,8 @@ CHAR-03 (mother bear SH) posing on a roadside while tourists surround her taking
 
 【制作メモ】ASSET-088 [Lovart静止画+編集者]
 ナレーター: さらに事件発生から4日前の8月10日。岩尾別ルート、標高1,040メートルから1,120メートルの区間。
+ナレーター: 岩尾別ルート、標高1,040メートルから1,120メートルの区間。
+
 
 ```
 Calendar showing August 10 highlighted in amber/orange with countdown "事件まであと4日" overlay. Behind the calendar, a Google Earth-style view of the Iwaubetsu trail route highlighting the elevation band between 1,040m and 1,120m with altitude markers as text overlays. Ominous quiet atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
@@ -1235,6 +1271,8 @@ Calendar showing August 10 highlighted in amber/orange with countdown "事件ま
 
 【制作メモ】ASSET-089 [キャラアニメーション]
 ナレーター: 子グマ2頭を連れた母グマが、登山道の上に姿を表したと報告されています。登山者、そしてガイドを含む別のパーティも、その場に居合わせていました。
+ナレーター: 登山者、そしてガイドを含む別のパーティも、その場に居合わせていました。
+
 
 ```
 CHAR-03 (mother bear SH, dark brown, 140cm) walks onto the mountain trail with two small cubs following close behind. She stops in the middle of the path and looks directly toward the camera. A group of hikers including a professional guide freeze behind her — the guide raises his arm signaling the group to stop. Dense forest on both sides. Everyone holds their breath. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
@@ -1244,6 +1282,8 @@ CHAR-03 (mother bear SH, dark brown, 140cm) walks onto the mountain trail with t
 
 【制作メモ】ASSET-090 [Lovart動画]
 ナレーター: ガイドはクマスプレーを構え、登山者たちは後ろへゆっくり移動。このときはスプレーを噴射する前に、母グマは登山道から離れていったといいます。ただし、すぐにではありません。
+ナレーター: このときはスプレーを噴射する前に、母グマは登山道から離れていったといいます。ただし、すぐにではありません。
+
 
 ```
 A mountain guide raises a bear spray canister aimed toward CHAR-03 on the trail. Behind him, hikers step backward slowly. CHAR-03 slowly turns and walks off the trail into the forest with her two cubs — but only after a prolonged tense pause. A stopwatch graphic showing the delay is visible in corner. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
@@ -1264,6 +1304,8 @@ Split comparison: Left — a generic wild brown bear encounters hikers and immed
 
 【制作メモ】ASSET-092 [キャラアニメーション]
 ナレーター: この時、居合わせた登山者の中には、恐怖を感じてその日のうちに下山した者もいました。しかし、登山道は閉鎖されることなく、そのまま開放されていました。
+ナレーター: しかし、登山道は閉鎖されることなく、そのまま開放されていました。
+
 
 ```
 A hiker from the August 10 group visibly shaken, hurriedly descending the mountain trail. Their face shows residual fear. In the next panel, the Iwaubetsu trailhead with its gate wide open — other hikers continue arriving without any closure signage. No warning barrier. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
@@ -1284,6 +1326,8 @@ The trailhead gate shown in two states side by side: left image shows it open (A
 
 【制作メモ】ASSET-094 [Lovart動画]
 ナレーター: 8月12日。事件2日前。さらに深刻な事態が起こっていました。
+ナレーター: さらに深刻な事態が起こっていました。
+
 
 ```
 Calendar animating to August 12. The date glows amber with a subtle countdown "2 days before the incident." Behind it, the Iwaubetsu trail in dark foreboding tones. A large bear silhouette visible in the shadowy forest. Warning alarm icon pulses briefly. Atmosphere heavier and more ominous than August 10. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
@@ -1342,6 +1386,8 @@ Overhead trail map view showing CHAR-03's movement pattern: advance → retreat 
 
 【制作メモ】ASSET-100 [キャラアニメーション]
 ナレーター: たったの5分と思うかもしれません。しかし、100キロを超えるヒグマが、すぐそこにいる5分間です。いつ向かってくるかわかりません。
+ナレーター: しかし、100キロを超えるヒグマが、すぐそこにいる5分間です。いつ向かってくるかわかりません。
+
 
 ```
 CHAR-03 (117kg) shown in size comparison next to the hiker — the bear's massive scale emphasized. A stopwatch showing "5分" in the corner. The hiker's face frozen in pure fear. The bear stares ahead with calm confidence. POV inset showing the bear's dark eyes from the hiker's perspective. Utterly tense standoff. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
@@ -1381,6 +1427,8 @@ Interview-style shot of Sakurai Kenji (hunting association) in outdoor work atti
 
 【制作メモ】ASSET-104 [Lovart静止画+編集者]
 ナレーター: にも関わらず、登山道は閉鎖されず、注意喚起の看板が設置されただけだったのです。なぜか？
+ナレーター: 注意喚起の看板が設置されただけだったのです。
+
 
 ```
 A small, easily-overlooked warning sign "熊出没注意" posted near the Iwaubetsu trailhead in modest font. Hikers walk past without noticing it. Then a dramatic slow push-in toward the open trailhead gate — the question hanging in the air. The inadequacy of the response and the "why" embodied in the open gate. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
@@ -1391,6 +1439,8 @@ A small, easily-overlooked warning sign "熊出没注意" posted near the Iwaube
 
 【制作メモ】ASSET-105 [Lovart動画]
 ナレーター: HTB北海道ニュースの取材に対し地元、斜里町の担当者はこう答えています。どういう場面で、どういう対応をとるか、あらかじめ決まっていなかった。
+ナレーター: 「どういう場面で、どういう対応をとるか、あらかじめ決まっていなかった」
+
 
 ```
 Interview setup with a Shari Town municipal official speaking to HTB microphone. Then close-up of an empty decision flowchart on an official whiteboard — the boxes are blank, a municipal official stands beside it with hands raised in a helpless gesture. The absence of a protocol made visually concrete. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
@@ -1650,6 +1700,8 @@ Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, l
 【制作メモ】ASSET-125 [Lovart静止画+編集者] 台本L525〜L527
 
 ナレーター: 北海道庁には160件以上の苦情が届いたとされています。
+ナレーター: 北海道庁には160件以上の苦情が届いたとされています。地元、斜里町にも約130件。
+
 
 ナレーター: 地元、斜里町にも約130件。
 
@@ -1665,6 +1717,14 @@ Photorealistic, shot on RED camera. Documentary style. A split documentary graph
 ---
 
 ナレーター: と語っています。
+ナレーター: と指摘しています。
+
+ナレーター: と、語っています。
+
+ナレーター: と学習してしまいます。
+
+ナレーター: と記録されています。
+
 
 【制作メモ】ASSET-126 [Lovart静止画+編集者] 台本L528〜L530
 
@@ -1741,6 +1801,8 @@ A large Hokkaido brown bear sitting calmly on a raised wooden boardwalk in Shire
 【制作メモ】ASSET-130 [Lovart静止画+編集者] 台本L541〜L543
 
 ナレーター: 道路沿いに出てきたクマを至近距離で撮影する観光客。
+ナレーター: 道路沿いに出てきたクマを至近距離で撮影する観光客。SNSに「知床でクマに会えた」と投稿する旅行者。
+
 
 ナレーター: SNSに「知床でクマに会えた」と投稿する旅行者。
 
@@ -1978,6 +2040,8 @@ Photorealistic, shot on RED camera. Documentary style. A newly upgraded mountain
 ナレーター: 知床の山は、ヒグマの生息地域。
 
 ナレーター: ひとたびクマの標的にされれば、成人男性でも歯が立ちません。
+ナレーター: 知床の山は、ヒグマの生息地域。ひとたびクマの標的にされれば、成人男性でも歯が立ちません。
+
 
 シーン: 登山口の岐路に立つCHAR-01（入山か引き返しかの判断）。背景に羅臼岳の威容
 
@@ -2022,6 +2086,8 @@ A large Hokkaido brown bear walks slowly through dense primeval Shiretoko forest
 ナレーター: クマが人間に接近した場合の対応。
 
 ナレーター: スプレーが効かない個体が確認された場合の閉鎖基準。
+ナレーター: クマが人間に接近した場合の対応。スプレーが効かない個体が確認された場合の閉鎖基準。情報共有の手順。
+
 
 ナレーター: 情報共有の手順。
 
@@ -2041,6 +2107,8 @@ Photorealistic, shot on RED camera. Documentary style. Split composition: Upper 
 ナレーター: あの日、閉じられなかった登山道。
 
 ナレーター: その判断基準が、ようやく作られることに。
+ナレーター: あの日、閉じられなかった登山道。その判断基準が、ようやく作られることに。
+
 
 ナレーター: 同じ悲劇を繰り返さないために。
 
@@ -2126,6 +2194,58 @@ Photorealistic, shot on RED camera. Documentary style. An extremely simple, quie
 【制作メモ】ASSET-151 [Lovart動画] 台本L595（エンディング）
 
 ナレーター: 曽田さんのご冥福を心よりお祈り申し上げます。最後までご視聴いただきありがとうございました。
+ナレーター: 実際、知床財団のウェブサイトには、ほぼ毎日のようにクマの目撃情報が報告されています。
+
+ナレーター: 報道会社からは「友人は素手でクマを殴って抵抗した」と報じています。
+
+ナレーター: 成人男性2人分に相当する重さです。
+
+ナレーター: 国立公園内であること。そして、観光地としての価値があること。
+
+ナレーター: ヒグマ駆除のために、簡単に閉鎖できない場所だったのです。
+
+ナレーター: 違反した場合、罰則の対象です。
+
+ナレーター: それでも、こうした行為は後を絶ちませんでした。
+
+ナレーター: クマは一度でも人間の食べ物の味を覚えると、その記憶は消えないとされています。
+
+ナレーター: そして一度でも人間から食べ物をもらうと、
+
+ナレーター: 「人間のそばに行けば、おいしいものがもらえる」
+
+ナレーター: その結果、クマは積極的に人間に近づくことに、、
+
+ナレーター: この餌付けと事件の直接の因果関係は、まだ証明されていません。
+
+ナレーター: しかし、餌付けによって今回の事件が発生した可能性は十分にあると言えます。
+
+ナレーター: 毎日新聞は、この母グマをこう表現しています。
+
+ナレーター: 「観光客に人気のあるヒグマだった」
+
+ナレーター: クマスプレーを構えた人間を目の前にしても、しばらくその場にとどまっていたと報告されています。
+
+ナレーター: これは明らかに異常な行動です。
+
+ナレーター: 「クマよけスプレーを噴射しても付きまとう時点で十分に危険。もっと周知すればよかった」
+
+ナレーター: この情報は、知床財団に正式に報告されています。
+
+ナレーター: なぜか？
+
+ナレーター: 地元の観光ガイド、綾野雄次さんは
+
+ナレーター: 「危ないクマがいたら、とりあえず2、3日でいいから辺りを閉鎖して様子を見る」
+
+ナレーター: しかし、その判断をする仕組みが、そもそもなかったのです。
+
+ナレーター: その取り決めが、存在していませんでした。
+
+ナレーター: と発言。
+
+ナレーター: クマは追い払われても戻ってきた。スプレーを浴びても離れなかった。餌をもらい、人間を恐れなくなっていた。
+
 
 シーン: 羅臼岳の遠景。夕暮れ時の知床半島。静かな空と山。動画はフェードアウトで終わる
 
