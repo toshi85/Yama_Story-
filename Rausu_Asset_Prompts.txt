@@ -1626,6 +1626,8 @@ Slow drone flyover of Shiretoko Peninsula coastline. Dense dark green primordial
 
 ---
 
+ナレーター: 「クマの目撃情報が登山口や登山者に十分に届いておらず、看板に気づかなかった登山者もいた」
+
 【制作メモ】ASSET-124 [キャラアニメーション] 台本L520〜L524
 
 ナレーター: 事件の後、全国から斜里町に様々なクレームが殺到。
@@ -1662,6 +1664,8 @@ Photorealistic, shot on RED camera. Documentary style. A split documentary graph
 
 ---
 
+ナレーター: と語っています。
+
 【制作メモ】ASSET-126 [Lovart静止画+編集者] 台本L528〜L530
 
 ナレーター: 1件あたり30分から1時間にもなり、感情的な内容も多く、町の通常業務に支障が出るほどでした。
@@ -1676,6 +1680,8 @@ Photorealistic, shot on RED camera. Documentary style. A stylized map of Japan o
 → 編集者指示: 日本地図の矢印が知床に集中する様子を表示。「道外からの苦情が多数」「通常業務に支障」テロップを重ねる
 
 ---
+
+ナレーター: しかし、初めてだったからこそ、前例がなかったのです。
 
 【制作メモ】ASSET-127 [Lovart静止画+編集者] 台本L532〜L533
 
@@ -1709,6 +1715,8 @@ Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, l
 
 ---
 
+ナレーター: 事件の後、全国から斜里町に様々なクレームが殺到。
+
 【制作メモ】ASSET-129 [Lovart動画] 台本L539〜L540
 
 ナレーター: 知床では、過去にもヒグマと人間の距離が近すぎることが問題視されてきました。
@@ -1728,6 +1736,8 @@ A large Hokkaido brown bear sitting calmly on a raised wooden boardwalk in Shire
 
 ---
 
+ナレーター: 「なぜヒグマを射殺する必要があったのか」
+
 【制作メモ】ASSET-130 [Lovart静止画+編集者] 台本L541〜L543
 
 ナレーター: 道路沿いに出てきたクマを至近距離で撮影する観光客。
@@ -1745,6 +1755,8 @@ Photorealistic, shot on RED camera. Documentary style. Split composition: Left �
 
 ---
 
+ナレーター: 「子グマまで撃たなくてもいいのではないか」
+
 【制作メモ】ASSET-131 [Lovart静止画+編集者] 台本L543〜L544
 
 ナレーター: 専門家は最後に、
@@ -1759,6 +1771,8 @@ Photorealistic, shot on RED camera. Documentary style. A dark documentary backgr
 → 編集者指示: 専門家引用文を画面中央に大きくテロップ表示。フォントは白・太字。背景は夕暮れの知床シルエット
 
 ---
+
+ナレーター: 「世界自然遺産の登録を返すべきだ」
 
 【制作メモ】ASSET-132 [Lovart動画] 台本L545〜L548
 
@@ -1797,6 +1811,8 @@ Photorealistic, shot on RED camera. Documentary style. Close-up of a hiker's wai
 → 編集者指示: 「クマスプレーの事前準備の大切さ」テロップ。正規品のラベルと有効期限の部分をズームしてクローズアップカットを追加
 
 ---
+
+ナレーター: 1件あたり30分から1時間にもなり、感情的な内容も多く、町の通常業務に支障が出るほどでした。
 
 【制作メモ】ASSET-134 [キャラアニメーション] 台本L551〜L553
 
@@ -1853,6 +1869,8 @@ First-person POV walking around a tight bend in a Hokkaido bamboo-grass mountain
 
 ---
 
+ナレーター: 増田泰副町長は、
+
 【制作メモ】ASSET-137 [キャラアニメーション] 台本L561〜L562
 
 ナレーター: 見通しの悪い場所では、手を叩く、声を出す、鈴を鳴らす。
@@ -1868,6 +1886,8 @@ Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, l
 
 ---
 
+ナレーター: 「結果的に事故が起きたということは、この注意喚起がどこまで伝わっていたのか。今後の検証が必要」
+
 【制作メモ】ASSET-138 [Lovart静止画+編集者] 台本L563〜L564
 
 ナレーター: 最新の目撃情報の確認も欠かせません。
@@ -1882,6 +1902,8 @@ Photorealistic, shot on RED camera. Documentary style. Close-up of a smartphone 
 → 編集者指示: 「登山前に目撃情報を確認」チェックリストテロップ。「2日前に情報あり」テロップを赤で追加
 
 ---
+
+ナレーター: と回答し、
 
 【制作メモ】ASSET-139 [Lovart静止画+編集者] 台本L565〜L567
 
@@ -1913,6 +1935,8 @@ Photorealistic, shot on RED camera. Documentary style. A laptop screen on a wood
 
 ---
 
+ナレーター: と付け加えました。
+
 【制作メモ】ASSET-141 [キャラアニメーション] 台本L569〜L570
 
 ナレーター: この情報にたどり着いていれば、「今日は登らない」という判断もできたはずです。
@@ -1928,6 +1952,8 @@ Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, l
 
 ---
 
+ナレーター: 知床では、過去にもヒグマと人間の距離が近すぎることが問題視されてきました。
+
 【制作メモ】ASSET-142 [Lovart静止画+編集者] 台本L571〜L572
 
 ナレーター: 事件後、知床財団はウェブサイトでのクマ目撃情報の発信を強化しました。
@@ -1942,6 +1968,8 @@ Photorealistic, shot on RED camera. Documentary style. A newly upgraded mountain
 → 編集者指示: 「情報発信が強化された」テロップ。新しい掲示板の「改善後」テロップを追加
 
 ---
+
+ナレーター: 知床五湖の遊歩道では、ヒグマが道の上に座り込んで動かず、観光客が立ち往生することが何度もあったとされています。
 
 【制作メモ】ASSET-143 [キャラアニメーション] 台本L573〜L575
 
@@ -1985,6 +2013,8 @@ A large Hokkaido brown bear walks slowly through dense primeval Shiretoko forest
 
 ---
 
+ナレーター: 専門家は最後に、
+
 【制作メモ】ASSET-145 [Lovart静止画+編集者] 台本L579〜L582
 
 ナレーター: 事件のあと、知床ヒグマ対策連絡会議は入山規制の基準を新たに策定しました。
@@ -2003,6 +2033,8 @@ Photorealistic, shot on RED camera. Documentary style. Split composition: Upper 
 → 編集者指示: 「入山規制の基準が新たに策定」テロップを表示。3項目を画面に順番にフェードイン
 
 ---
+
+ナレーター: と締めくくっています。
 
 【制作メモ】ASSET-146 [Lovart動画] 台本L583〜L585
 
@@ -2060,6 +2092,8 @@ Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, l
 → 編集者指示: 3コマを順番にフェードイン。各コマに対応するナレーションテロップを表示。「追い払い→戻る」「スプレーを浴びても」「餌をもらい人間を恐れなくなった」
 
 ---
+
+ナレーター: と意見を述べています。
 
 【制作メモ】ASSET-149 [Lovart静止画+編集者] 台本L591〜L592
 
