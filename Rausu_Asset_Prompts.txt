@@ -2241,9 +2241,6 @@ Photorealistic, shot on RED camera. Documentary style. An extremely simple, quie
 
 
 
-
-
-
 ナレーター: クマは追い払われても戻ってきた。スプレーを浴びても離れなかった。餌をもらい、人間を恐れなくなっていた。
 
 
