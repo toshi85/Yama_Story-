@@ -500,11 +500,58 @@ for seg_dir, out_dir, label in versions:
         print(f"  ✅ フォールバック完成: ep{ep:02d}_short.mp4")
 STEP4_EOF
 
+# ============================================================
+# STEP 5: BGMミックス（YouTube用 output/ にBGMを合成）
+# ============================================================
+echo ""
+echo "🎵 STEP 5: BGMミックス中..."
+
+BGM_FILE="$ASSETS_DIR/bgm.mp3"
+BGM_VOLUME="0.15"
+
+if [ ! -f "$BGM_FILE" ]; then
+  echo "  ⚠️  BGMファイルがありません: $BGM_FILE"
+  echo "  → BGMなしのまま完了します"
+else
+  BGM_TMP_DIR="$OUT_DIR/tmp_bgm"
+  mkdir -p "$BGM_TMP_DIR"
+
+  for f in "$OUT_DIR"/ep*_short.mp4; do
+    BASE=$(basename "$f")
+    TMP_OUT="$BGM_TMP_DIR/$BASE"
+
+    if [ -f "$TMP_OUT" ]; then
+      echo "  ⏭️  $BASE: BGMミックス済み"
+      continue
+    fi
+
+    echo "  🎵 $BASE"
+    ffmpeg -y -i "$f" -stream_loop -1 -i "$BGM_FILE" \
+      -filter_complex "[1:a]volume=${BGM_VOLUME}[bgm];[0:a][bgm]amix=inputs=2:duration=first:dropout_transition=3[aout]" \
+      -map 0:v -map "[aout]" -c:v copy -c:a aac -b:a 192k \
+      "$TMP_OUT" 2>/dev/null
+
+    if [ $? -eq 0 ]; then
+      echo "  ✅ $BASE"
+    else
+      echo "  ⚠️  BGMミックス失敗 → 元ファイルを維持: $BASE"
+      cp "$f" "$TMP_OUT"
+    fi
+  done
+
+  # 差し替え
+  for f in "$BGM_TMP_DIR"/ep*_short.mp4; do
+    mv "$f" "$OUT_DIR/$(basename "$f")"
+  done
+  rm -rf "$BGM_TMP_DIR"
+  echo "  ✅ BGMミックス完了（volume=${BGM_VOLUME}）"
+fi
+
 echo ""
 echo "=========================================="
 echo "🎉 パイプライン完了！"
-echo "📁 BGMあり版: $OUT_DIR/"
-echo "📁 BGMなし版: $OUT_DIR_NOBGM/"
+echo "📁 BGMあり版（YouTube用）: $OUT_DIR/"
+echo "📁 BGMなし版（TikTok用）: $OUT_DIR_NOBGM/"
 echo "=========================================="
 echo "BGMあり版（YouTube用）:"
 ls -la "$OUT_DIR/" 2>/dev/null || echo "  (出力ファイルなし)"
@@ -512,6 +559,6 @@ echo "BGMなし版（TikTok用）:"
 ls -la "$OUT_DIR_NOBGM/" 2>/dev/null || echo "  (出力ファイルなし)"
 echo ""
 echo "📱 投稿先:"
-echo "   YouTube       → BGMあり版（$OUT_DIR/） + URL申請"
+echo "   YouTube       → BGMあり版（$OUT_DIR/） + BGM自動合成済み"
 echo "   TikTok        → BGMなし版（$OUT_DIR_NOBGM/） + アプリ内楽曲後付け"
 echo "   LINE VOOM     → BGMあり版（$OUT_DIR/）そのまま"

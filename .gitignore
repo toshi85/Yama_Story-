@@ -11,6 +11,7 @@ ShortsPipeline/assets/client_secret.json
 ShortsPipeline/assets/youtube_token.json
 ShortsPipeline/projects/*/segments_nobgm/
 ShortsPipeline/projects/*/output_nobgm/
+ShortsPipeline/projects/*/output_withbgm/
 ShortsPipeline/sleep-output/
 ShortsPipeline/.venv/
 ShortsPipeline/__pycache__/
