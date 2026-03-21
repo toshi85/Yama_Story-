@@ -118,7 +118,7 @@ Open mountain trailhead in Hokkaido, no closure tape, no warning barriers, hiker
 シーン: 夏の清々しい早朝の登山口から、CHAR-01とCHAR-02が準備をして出発する。二人は笑顔で登山口を出発前の様子
 キャラプロンプト（1:1）:
 ```
-Two young male hikers at the trailhead. CHAR-01: 26-year-old Japanese male, blue jacket, gray pants, green daypack, smiling with anticipation. CHAR-02: male friend, orange jacket, black pants, red daypack, cheerful expression. Both checking their gear and looking toward the trail. Early morning golden sunrise light. Photorealistic, shot on RED camera. Documentary style.
+Two young male hikers preparing to set off. CHAR-01: 26-year-old Japanese male, blue jacket, gray pants, green daypack, smiling with anticipation. CHAR-02: male friend, orange jacket, black pants, red daypack, cheerful expression. Both checking their gear and looking toward the trail. Early morning golden sunrise light. Photorealistic, shot on RED camera. Documentary style.
 ```
 背景プロンプト（16:9）:
 ```
@@ -204,6 +204,7 @@ Slow cinematic pan over bear claw marks on a birch tree in Hokkaido forest, then
 ナレーター: 多くの生き物が生息している場所ということです。
 
 ナレーター: そして、その中にヒグマもいます。
+ナレーター: 実際、知床財団のウェブサイトには、ほぼ毎日のようにクマの目撃情報が報告されています。
 
 【制作メモ】ASSET-011 [キャラアニメーション]
 シーン: 知床の豊かな生態系を示す動物映像から、草原の中を歩くヒグマ（CHAR-03）へ繋がる
@@ -230,7 +231,7 @@ Wide alpine meadow in Hokkaido with low grass and wildflowers. Mountain ridge vi
 シーン: 夜明け前から明るくなっていく早朝、CHAR-01とCHAR-02が岩尾別温泉の登山口を出発する
 キャラプロンプト（1:1）:
 ```
-CHAR-01 (blue jacket, gray pants, green daypack) and CHAR-02 (orange jacket, black pants, red daypack) setting off from the trailhead in early morning light. Both looking forward with determination. Backpacks fully loaded. Pre-dawn atmosphere, stars still faintly visible transitioning to dawn. Photorealistic, shot on RED camera. Documentary style.
+CHAR-01 (blue jacket, gray pants, green daypack) and CHAR-02 (orange jacket, black pants, red daypack) setting off together in early morning light. Both looking forward with determination. Backpacks fully loaded. Pre-dawn atmosphere, stars still faintly visible transitioning to dawn. Photorealistic, shot on RED camera. Documentary style.
 ```
 背景プロンプト（16:9）:
 ```
@@ -461,7 +462,7 @@ First-person perspective: running through bamboo grass tunnel then suddenly burs
 ```
 → **Google Flow動画プロンプト:**
 ```
-POV shot running through bamboo grass tunnel, rounding a blind corner fast. Camera shakes slightly. Suddenly bursting into a small open section. Everything happens in a fraction of a second. The frame freezes. "次の瞬間" text on screen. Complete silence then a sharp sound cut. Photorealistic, shot on RED camera. Documentary style.
+POV shot running through bamboo grass tunnel, rounding a blind corner fast. Camera shakes slightly. Suddenly bursting into a small open section. Everything happens in a fraction of a second. The frame freezes. Complete silence then a sharp sound cut. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: 「次の瞬間、、」でいったん画面を暗転。BGMを完全カットし、静寂を作ってから次のカットへ。
 
@@ -499,7 +500,7 @@ Narrow mountain trail in Hokkaido. Dense bamboo grass on both sides. Split secon
 シーン: CHAR-01（曽田）が恐怖で固まっている一方、CHAR-03（母グマ）が子グマを守るように立つ。子グマを守る本能の解説
 キャラプロンプト（1:1）:
 ```
-CHAR-01 (blue jacket, gray pants, green daypack) completely frozen with extreme fear, unable to move or speak. Face pale with terror. Body rigid. A split-second before a bear attack. AND: CHAR-03: A large dark brown female bear (140cm, 117kg) positioning herself protectively between her two small cubs and CHAR-01. Close-up of the mother bear's face: intense protective eyes, nostrils flaring, fur raised. Photorealistic, shot on RED camera. Documentary style.
+CHAR-01 (blue jacket, gray pants, green daypack) completely frozen with extreme fear, unable to move or speak. Face pale with terror. Body rigid. A split-second before a bear attack. AND: CHAR-03: A large dark brown female bear (140cm, 117kg) positioning herself protectively between her two small cubs and CHAR-01. The mother bear showing intense protective eyes, nostrils flaring, fur raised. Photorealistic, shot on RED camera. Documentary style.
 ```
 背景プロンプト（16:9）:
 ```
@@ -540,7 +541,7 @@ CHAR-02 (orange jacket, black pants, red daypack) standing still on a mountain t
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido, mid-descent. Bamboo grass walls. The trail curves ahead, the screaming coming from beyond the curve. Afternoon light. Deathly still except for the distant sound. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido, mid-descent. Bamboo grass walls. The trail curves ahead, the screaming coming from beyond the curve. Afternoon light. Eerily silent except for the distant sound. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 叫び声の音効果とともに山の景色を映す。静寂と叫び声のコントラストで観る人の想像力を刺激。「叫び声が山に響き渡る」テロップ。CHAR-02の恐怖の表情をクローズアップ。「200m後方の友人」位置を地図インフォグラフィックで示す。
 
@@ -601,7 +602,7 @@ Chaotic mountain trail scene in Hokkaido, bear attack in progress nearby. Dense 
 【制作メモ】ASSET-032 [Lovart動画]
 シーン: 「ヒグマには効果がない」と記載されたラベルのクローズアップ。正規品と防犯スプレーの比較
 ```
-Close-up of a defensive spray canister label clearly showing it is a personal security product for humans, NOT designed for bears. Red warning text on label. Then: side-by-side comparison — a large proper bear spray canister (tall, orange, 9-meter range) next to a small compact personal security spray (small, black). The dramatic size difference visible. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Close-up of a defensive spray canister label clearly showing it is a personal security product for humans, NOT designed for bears. Red warning sticker prominently visible on label. Then: side-by-side comparison — a large proper bear spray canister (tall, orange, 9-meter range) next to a small compact personal security spray (small, black). The dramatic size difference visible. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「ヒグマには効果がない」のラベル文字を赤く囲んで強調。「問題② 対熊非対応製品」テロップを衝撃的に表示。「STV札幌テレビ報道」ソーステロップを添える。「正規品vs非対応品」比較インフォグラフィックを表示。
 
@@ -652,6 +653,7 @@ Mountain trail in Hokkaido. The scene of a bear attack just ahead. CHAR-02 facin
 ナレーター: なんと素手でヒグマに向かっていったのです。
 
 ナレーター: ヒグマに、何度も何度も拳を叩きつけます。
+ナレーター: 報道会社からは「友人は素手でクマを殴って抵抗した」と報じています。
 
 【制作メモ】ASSET-035 [Lovart動画]
 シーン: CHAR-02（友人）が素手でヒグマに立ち向かい、何度も拳を叩きつける壮絶な場面
@@ -963,7 +965,7 @@ A rescue team member kneeling beside an unmoving hiker in the forest undergrowth
 
 【制作メモ】ASSET-062 [Lovart静止画+編集者]
 ```
-A Hokkaido Police spokesperson at a press conference podium, facing multiple microphones and cameras. Serious expression, uniform, official setting. Press conference room with reporters in the foreground. Below: close-up of an official police press release document in Japanese with formal text about cause of death. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A Hokkaido Police spokesperson at a press conference podium, facing multiple microphones and cameras. Serious expression, uniform, official setting. Press conference room with reporters in the foreground. Below: close-up of an official police press release document in Japanese with official stamps and formal seals indicating cause of injuries. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 画面下部に「北海道警 公式発表」というテロップを表示。続いて画面中央に鉤括弧付きで「"全身に複数の外傷 出血が原因により死亡"」という白テロップを大きく表示。
 
@@ -1020,11 +1022,12 @@ A wildlife researcher's field notebook open to a page showing bear identificatio
 
 【制作メモ】ASSET-067 [Lovart静止画+編集者]
 ```
-A size comparison infographic showing a dark brown Hokkaido brown bear (140cm tall, 117kg) standing next to two adult male silhouettes for scale. The bear is clearly larger and heavier. A Google Earth aerial view inset shows the Iwaobetsu district within Shiretoko National Park with a circled territory area labeled "SH（岩尾別の母さん）の生活圏". Timeline label "2014年〜2025年" overlaid. Desaturated color palette, vignette edges. Documentary graphic style. 16:9 aspect ratio. Generate 5 separate images.
+A side-by-side comparison scene showing a dark brown Hokkaido brown bear (140cm tall, 117kg) standing next to two adult male silhouettes for scale. The bear is clearly larger and heavier. A Google Earth aerial view inset shows the Iwaobetsu district within Shiretoko National Park with a circled territory area labeled "SH（岩尾別の母さん）の生活圏". Timeline label "2014年〜2025年" overlaid. Desaturated color palette, vignette edges. Documentary graphic style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: インフォグラフィックに「体長140cm / 体重117kg = 成人男性2人分」という数値テロップを表示。地図に「SH：2014年生まれ」を追記。
 
 ナレーター: 11歳のメスで体長140センチ。体重117キロ。成人男性2人分に相当する重さです。
+ナレーター: 成人男性2人分に相当する重さです。
 ナレーター: 2014年ごろに生まれて、知床国立公園内の岩尾別地区を中心に生活してきたヒグマです。
 
 ---
@@ -1163,6 +1166,8 @@ Wildlife management meeting room. Japanese bear researchers and officials gather
 
 【制作メモ】ASSET-079 [キャラアニメーション]
 ナレーター: 世界自然遺産の登録地であること。国立公園内であること。そして、観光地としての価値があること。ヒグマ駆除のために、簡単に閉鎖できない場所だったのです。
+ナレーター: ヒグマ駆除のために、簡単に閉鎖できない場所だったのです。
+ナレーター: 国立公園内であること。そして、観光地としての価値があること。
 
 ```
 CHAR-03 (mother bear SH, 140cm, 117kg, dark brown fur) stands on a mountain trail. Superimposed transparent icons around her: a UNESCO plaque, a national park sign, a tourist camera, a closed gate with a red X. The icons visually "trap" the bear in place, unable to be removed. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
@@ -1197,6 +1202,8 @@ Calendar graphic animating to July 29th. The date glows briefly then fades. Behi
 
 【制作メモ】ASSET-082 [キャラアニメーション]
 ナレーター: 知床では、クマへの餌付けは条例で禁止されています。違反した場合、罰則の対象です。それでも、こうした行為は後を絶ちませんでした。
+ナレーター: それでも、こうした行為は後を絶ちませんでした。
+ナレーター: 違反した場合、罰則の対象です。
 
 ```
 A tourist's car window rolled down on a forest road. A hand reaches out holding a snack bag, tossing chips toward CHAR-03 (mother bear SH) who approaches the vehicle eagerly. Other tourists inside the car lean over to watch, smiling and holding smartphones. Cheerful mood contrasted with ominous undertone. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
@@ -1207,9 +1214,12 @@ A tourist's car window rolled down on a forest road. A hand reaches out holding 
 
 【制作メモ】ASSET-083 [キャラアニメーション]
 ナレーター: なぜ餌付けが危険なのか。クマは一度でも人間の食べ物の味を覚えると、その記憶は消えないとされています。そして一度でも人間から食べ物をもらうと、「人間のそばに行けば、おいしいものがもらえる」と学習してしまいます。
+ナレーター: 「人間のそばに行けば、おいしいものがもらえる」
+ナレーター: そして一度でも人間から食べ物をもらうと、
+ナレーター: クマは一度でも人間の食べ物の味を覚えると、その記憶は消えないとされています。
 
 ```
-CHAR-03 (mother bear SH) sniffs a human's hand holding a snack. A thought bubble above the bear shows a happy face with food. A large question mark floats on screen, then transforms into a glowing neural pathway connecting to a snack icon labeled "Long-term memory." The learning mechanism visualized in infographic style. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
+CHAR-03 (mother bear SH) sniffs a human's hand holding a snack. The bear reaching toward a human offering food, showing an eager happy expression. The scene conveys the moment of dangerous conditioning — the bear learning to associate humans with food.  Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「?」→「記憶固定」への変化アニメーションを段階的に表示。「永久に記憶」テロップを強調。
 
@@ -1218,6 +1228,7 @@ CHAR-03 (mother bear SH) sniffs a human's hand holding a snack. A thought bubble
 【制作メモ】ASSET-084 [キャラアニメーション]
 ナレーター: その結果、クマは積極的に人間に近づくことに。そして、近づいても食べ物がもらえなかった場合、やがて苛立ちへと変わり、人間を襲う動機となることがあります。
 ナレーター: そして、近づいても食べ物がもらえなかった場合、やがて苛立ちへと変わり、人間を襲う動機となることがあります。
+ナレーター: その結果、クマは積極的に人間に近づくことに、、
 
 
 ```
@@ -1229,9 +1240,11 @@ CHAR-03 (mother bear SH) walks confidently toward a group of tourists. First pan
 
 【制作メモ】ASSET-085 [Lovart静止画+編集者]
 ナレーター: 北米でもオーストラリアでも、野生動物への餌付けが重大事故につながった事例は数多く報告されています。この餌付けと事件の直接の因果関係は、まだ証明されていません。しかし、餌付けによって今回の事件が発生した可能性は十分にあると言えます。
+ナレーター: しかし、餌付けによって今回の事件が発生した可能性は十分にあると言えます。
+ナレーター: この餌付けと事件の直接の因果関係は、まだ証明されていません。
 
 ```
-Split screen documentary graphic: Left — world map with red incident markers over North America and Australia showing wildlife feeding accidents. Right — cause-and-effect chain: tourist feeding bear → bear loses fear of humans → bear approaches hikers → fatal attack, connected by arrows. Both sides combined in one analytical infographic frame. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Split screen documentary graphic: Left — world map with red incident markers over North America and Australia showing wildlife feeding accidents. Right — cause-and-effect chain: tourist feeding bear → bear loses fear of humans → bear approaches hikers → fatal attack, connected by arrows. Both sides combined in one documentary comparison frame. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 左の地図マーカーを順にポップアップ後、右の因果チェーンを矢印ごとに段階表示。「可能性は十分にある」で最終矢印を強調。
 
@@ -1239,6 +1252,8 @@ Split screen documentary graphic: Left — world map with red incident markers o
 
 【制作メモ】ASSET-086 [Lovart動画]
 ナレーター: STV札幌テレビは「ヒグマへの餌付けが事件に発展した事案」として、この件を報道しています。毎日新聞は、この母グマをこう表現しています——観光客に人気のあるヒグマだった。
+ナレーター: 毎日新聞は、この母グマをこう表現しています。
+ナレーター: 「観光客に人気のあるヒグマだった」
 
 ```
 Television screen showing a STV Sapporo news broadcast with bear incident headline. Then cut to Mainichi Shimbun newspaper page with headline about the bear. Both media sources shown sequentially in a documentary news montage. Authoritative broadcast atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
@@ -1263,7 +1278,7 @@ CHAR-03 (mother bear SH) posing on a roadside while tourists surround her taking
 
 
 ```
-Calendar showing August 10 highlighted in amber/orange with countdown "事件まであと4日" overlay. Behind the calendar, a Google Earth-style view of the Iwaubetsu trail route highlighting the elevation band between 1,040m and 1,120m with altitude markers as text overlays. Ominous quiet atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Calendar showing August 10 highlighted in amber/orange with countdown "事件まであと4日" overlay. Behind the calendar, a Google Earth-style view of the Iwaubetsu trail route highlighting the elevation band between 1,040m and 1,120m with visible altitude markers. Ominous quiet atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「8月10日」テロップをフラッシュ強調。「事件まであと4日」カウントダウンテロップを追加。標高帯をズームで強調。
 
@@ -1294,9 +1309,11 @@ A mountain guide raises a bear spray canister aimed toward CHAR-03 on the trail.
 
 【制作メモ】ASSET-091 [Lovart動画]
 ナレーター: 通常、人間の集団を見たクマは、すぐに逃げます。ところがこの母グマは、複数の人間がいても逃げませんでした。クマスプレーを構えた人間を目の前にしても、しばらくその場にとどまっていたと報告されています。これは明らかに異常な行動です。
+ナレーター: これは明らかに異常な行動です。
+ナレーター: クマスプレーを構えた人間を目の前にしても、しばらくその場にとどまっていたと報告されています。
 
 ```
-Split comparison: Left — a generic wild brown bear encounters hikers and immediately bolts into the forest (normal behavior). Right — CHAR-03 stands on the trail, completely calm, as multiple hikers are visible in front of her, hiker aiming bear spray canister at her. She shows no fear response, remaining motionless. Expert wildlife biologist visible in inset pointing at footage with "異常行動" text in red. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Split comparison: Left — a generic wild brown bear encounters hikers and immediately bolts into the forest (normal behavior). Right — CHAR-03 stands on the trail, completely calm, as multiple hikers are visible in front of her, hiker aiming bear spray canister at her. She shows no fear response, remaining motionless. Expert wildlife biologist visible in inset pointing at footage with alarmed expression. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 左右比較を「通常」vs「SH」ラベルで明示。「異常行動」テロップを赤・太字で最後に強調。
 
@@ -1359,7 +1376,7 @@ A solo hiker on the Iwaubetsu trail suddenly stops — CHAR-03 (mother bear SH) 
 ナレーター: 通常のヒグマであれば、カプサイシンのスプレーを浴びた時点で逃げ去ります。目や鼻に激しい痛みを感じるからです。
 
 ```
-A generic wild brown bear gets hit by bear spray and immediately bolts away in pain — eyes watering, moving fast. An infographic inset showing close-up of a bear's face reacting to capsaicin — pain indicators around eyes and nose. Anatomy callout showing capsaicin affecting sensory receptors. Normal behavioral response shown clearly for comparison. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A generic wild brown bear gets hit by bear spray and immediately bolts away in pain — eyes watering, moving fast. A visual inset showing close-up of a bear's face reacting to capsaicin — pain indicators around eyes and nose. Anatomy callout showing capsaicin affecting sensory receptors. Normal behavioral response shown clearly for comparison. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「通常は逃げる」比較テロップを追加。インフォグラフィックパネルをカットイン。
 
@@ -1400,7 +1417,7 @@ CHAR-03 (117kg) shown in size comparison next to the hiker — the bear's massiv
 ナレーター: ヒグマがひとたび走れば時速50キロで追ってきます。握力も500キロ以上です。到底、人間に勝ち目はありません。
 
 ```
-Infographic split panel: left side shows bear running speed 50 km/h compared to average human running speed 15 km/h with silhouettes and arrows. Right side shows bear grip strength 500kg vs human 50kg — a human fist and a bear paw shown side by side, the bear paw dwarfing the human hand. A large red X over the human side. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Documentary split panel comparison: left side shows bear running speed 50 km/h compared to average human running speed 15 km/h with silhouettes and arrows. Right side shows bear grip strength 500kg vs human 50kg — a human fist and a bear paw shown side by side, the bear paw dwarfing the human hand. A large red X over the human side. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 数値を大きく表示してインパクト強調。赤Xアニメーションを最後に追加。
 
@@ -1417,6 +1434,8 @@ The August 12 hiker reaching the trailhead safely, breathing hard, face pale fro
 
 【制作メモ】ASSET-103 [Lovart静止画+編集者]
 ナレーター: 羅臼町猟友会の桜井憲二さんは、HTB北海道ニュースの取材に「クマよけスプレーを噴射しても付きまとう時点で十分に危険。もっと周知すればよかった」と、語っています。この情報は、知床財団に正式に報告されています。
+ナレーター: この情報は、知床財団に正式に報告されています。
+ナレーター: 「クマよけスプレーを噴射しても付きまとう時点で十分に危険。もっと周知すればよかった」
 
 ```
 Interview-style shot of Sakurai Kenji (hunting association) in outdoor work attire speaking to an off-camera interviewer. HTB news microphone visible. Serious expression. Mountain background visible through window. A formal incident report document being submitted to a Shiretoko Foundation official visible in adjacent inset. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
@@ -1427,6 +1446,7 @@ Interview-style shot of Sakurai Kenji (hunting association) in outdoor work atti
 
 【制作メモ】ASSET-104 [Lovart静止画+編集者]
 ナレーター: にも関わらず、登山道は閉鎖されず、注意喚起の看板が設置されただけだったのです。なぜか？
+ナレーター: なぜか？
 ナレーター: 注意喚起の看板が設置されただけだったのです。
 
 
@@ -1443,7 +1463,7 @@ A small, easily-overlooked warning sign "熊出没注意" posted near the Iwaube
 
 
 ```
-Interview setup with a Shari Town municipal official speaking to HTB microphone. Then close-up of an empty decision flowchart on an official whiteboard — the boxes are blank, a municipal official stands beside it with hands raised in a helpless gesture. The absence of a protocol made visually concrete. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Interview setup with a Shari Town municipal official speaking to HTB microphone. Then close-up of an empty official whiteboard — no procedures or steps written on it, a municipal official stands beside it with hands raised in a helpless gesture. The absence of a protocol made visually concrete. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「斜里町担当者」テロップを表示。空白フローチャートに引用テキストをオーバーレイ。
 
@@ -1461,6 +1481,9 @@ An empty official manual opened to a blank page labeled "入山規制判断基�
 
 【制作メモ】ASSET-107 [キャラアニメーション]
 ナレーター: クマがスプレーを浴びても人間を追い続ける。この異常事態が報告されても、登山道を閉じるという決まりはありませんでした。地元の観光ガイド、綾野雄次さんは「危ないクマがいたら、とりあえず2、3日でいいから辺りを閉鎖して様子を見る」と語っています。しかし、その判断をする仕組みが、そもそもなかったのです。
+ナレーター: しかし、その判断をする仕組みが、そもそもなかったのです。
+ナレーター: 「危ないクマがいたら、とりあえず2、3日でいいから辺りを閉鎖して様子を見る」
+ナレーター: 地元の観光ガイド、綾野雄次さんは
 
 ```
 CHAR-03 pursuing the hiker while drenched in orange spray. A checkbox list labeled "閉鎖基準" floats in the air beside the scene — all boxes blank/unchecked. Adjacent panel: a local tourism guide (Ayano Yuji) in outdoor gear pointing toward a trail and speaking. His words shown as a speech bubble: "2、3日でいいから閉鎖して様子を見る." The contrast between the common-sense solution and the absence of a system. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
@@ -1473,7 +1496,7 @@ CHAR-03 pursuing the hiker while drenched in orange spray. A checkbox list label
 ナレーター: 知床の登山道は環境省の管轄です。しかし、入山規制の判断は地元自治体に委ねられていました。
 
 ```
-Official Ministry of the Environment signboard at the Shiretoko trail entrance. Then an organizational chart animating on screen: Ministry of Environment → arrow pointing down → Local Municipality (Shari Town). The decision-making responsibility arrow shown transferring downward. Responsibility chain visualization. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Official Ministry of the Environment signboard at the Shiretoko trail entrance. Then a visual hierarchy animating on screen: Ministry of Environment → arrow pointing down → Local Municipality (Shari Town). The decision-making responsibility arrow shown transferring downward. Responsibility chain visualization. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「環境省管轄」テロップ→組織図へブリッジ。矢印アニメーションで責任の委譲を視覚化。
 
@@ -1481,9 +1504,10 @@ Official Ministry of the Environment signboard at the Shiretoko trail entrance. 
 
 【制作メモ】ASSET-109 [Lovart静止画+編集者]
 ナレーター: 環境省、北海道、斜里町、羅臼町、知床財団。複数の組織が関わる中で、誰が、どの段階で、登山道を閉じるのか。その取り決めが、存在していませんでした。
+ナレーター: その取り決めが、存在していませんでした。
 
 ```
-Organizational chart showing five boxes: 環境省 / 北海道 / 斜里町 / 羅臼町 / 知床財団. Arrows between them pointing in all directions with question marks at each arrow. The center where the decision should be made — empty blank space with a question mark. No clear decision line. Camera slowly zooms into the void. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Visual hierarchy showing five boxes: 環境省 / 北海道 / 斜里町 / 羅臼町 / 知床財団. Arrows between them pointing in all directions with question marks at each arrow. The center where the decision should be made — empty blank space with a question mark. No clear decision line. Camera slowly zooms into the void. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 各ボックスを順番に表示→矢印と「?」をアニメーション追加→「誰が決める？」テロップ→中心の空白をズームイン。
 
@@ -1513,7 +1537,7 @@ Four-panel timeline animation. Panel 1 "7月29日": tourist's hand feeding snack
 ナレーター: 2週間の間に、段階的にエスカレートしていたのです。
 
 ```
-The full 4-step timeline shown in one frame — July 29 to August 14. A red escalation curve rises steeply from left to right, connecting all four incidents. The animation builds the line from left to right. "2週間" text overlay. The curve's final point glows with maximum intensity. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+The full 4-step timeline shown in one frame — July 29 to August 14. A red escalation curve rises steeply from left to right, connecting all four incidents. The animation builds the line from left to right. The curve's final point glows with maximum intensity. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: エスカレーションカーブを左から右へゆっくり描画。「2週間で何が起きたか」を視覚的に総括。
 
@@ -1523,7 +1547,7 @@ The full 4-step timeline shown in one frame — July 29 to August 14. A red esca
 ナレーター: 1年で最も登山者が多いお盆の時期に、スプレーが効かないヒグマがいる山が、野放し状態だったのです。
 
 ```
-Crowded Iwaubetsu trailhead during Obon holiday season — hikers queuing to enter. In the background the Shiretoko mountain looms. No warning signs visible from this angle. The bear's unchecked presence implied. Obon holiday date range shown as overlay text. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Crowded Iwaubetsu trailhead during Obon holiday season — hikers queuing to enter. In the background the Shiretoko mountain looms. No warning signs visible from this angle. The bear's unchecked presence implied. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「野放し状態」テロップを赤字で強調。「お盆期間」の日程テロップも追加。
 
@@ -1609,7 +1633,7 @@ Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, l
 シーン: 羅臼岳・オホーツク展望台付近の暗い笹薮の道（上半分）＋タイムライン図（7/29→8/10→8/12→8/14）を下半分に配置したコンポジット
 
 ```
-Photorealistic, shot on RED camera. Documentary style. Split composition: upper half — a narrow overgrown mountain hiking trail near "Okhotsk Viewpoint" on Mount Rausu, tall bamboo grass walls forming a dark green tunnel, calm before tragedy. Lower half — a minimalist timeline infographic on dark textured background: four entries connected by arrows — "7月29日 餌付け" → "8月10日 逃げない母グマ" → "8月12日 スプレー無効" → "8月14日 襲撃". The final entry in bold red. 16:9 aspect ratio. Generate 5 separate images.
+Photorealistic, shot on RED camera. Documentary style. Split composition: upper half — a narrow overgrown mountain hiking trail near "Okhotsk Viewpoint" on Mount Rausu, tall bamboo grass walls forming a dark green tunnel, calm before tragedy. Lower half — a minimalist documentary sequence on dark background: four entries connected by arrows — "7月29日 餌付け" → "8月10日 逃げない母グマ" → "8月12日 スプレー無効" → "8月14日 襲撃". The final entry in bold red. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 画面中央に「8月14日」テロップを大きく表示してから、タイムラインの4段階を左→右へフェードイン。「8月14日 襲撃」で画面が一瞬暗転
 
@@ -1656,7 +1680,7 @@ Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, l
 シーン: 知床半島の空撮→「2005年〜2025年、20年間死亡事故ゼロ」テロップ→白紙の規制マニュアルへの展開
 
 ```
-Photorealistic, shot on RED camera. Documentary style. A dramatic wide shot of Shiretoko Peninsula coastline — the deep blue Okhotsk Sea meets dense untouched forest on steep cliffs. A subtle text overlay reads "2005年 世界自然遺産登録" fading to "2025年 初の死亡事故". The landscape is timeless and majestic, but the text carries the weight of 20 years of uneasy coexistence. Overcast sky, somber light. 16:9 aspect ratio. Generate 5 separate images.
+Photorealistic, shot on RED camera. Documentary style. A dramatic wide shot of Shiretoko Peninsula coastline — the deep blue Okhotsk Sea meets dense untouched forest on steep cliffs. The landscape is timeless and majestic, carrying the weight of 20 years of uneasy coexistence between humans and nature. Overcast sky, somber light. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -1691,7 +1715,7 @@ Slow drone flyover of Shiretoko Peninsula coastline. Dense dark green primordial
 シーン: 斜里町役場の電話が鳴り続け、批判の吹き出しが画面に溢れる。子グマへの言及と遺産返還要求の声が重なる
 
 ```
-Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. A Japanese town hall office (斜里町役場) interior — multiple telephone handsets all ringing simultaneously with red lightning bolt symbols. A flustered office worker answers one phone while others continue ringing. Multiple speech bubbles fill the screen from different directions, each with an angry face and protest text in Japanese: "なぜ射殺する必要が！" / "子グマまで撃たないで！" / "世界遺産を返すべきだ！". The bubbles overlap and crowd the frame, red and orange tones convey heat and anger. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. A Japanese town hall office (斜里町役場) interior — multiple telephone handsets all ringing simultaneously with red lightning bolt symbols. A flustered office worker answers one phone while others continue ringing. Multiple speech bubbles fill the screen from different directions, each with an angry face and angry protest symbols and exclamation marks. The bubbles overlap and crowd the frame, red and orange tones convey heat and anger. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「全国からクレームが殺到」テロップを画面中央に表示。吹き出しが左右から次々と現れるアニメーション。「子グマ」と「世界自然遺産」のキーワードを赤太文字でハイライト
 
@@ -1710,7 +1734,7 @@ Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, l
 シーン: 「160件以上」「130件」を強調するインフォグラフィック。役場職員が疲弊して電話を受け続けている様子も組み合わせ
 
 ```
-Photorealistic, shot on RED camera. Documentary style. A split documentary graphic: Left half — bold white numerals "160件以上" with text "北海道庁への苦情" on dark background, below it "斜里町 約130件". Right half — inside a small town hall, a middle-aged male worker in loosened tie, dark circles under eyes, holding a phone handset while another phone rings. Window in background shows morning light transitioning to night — many hours have passed. The numbers on the left feel like a weight crushing the exhausted man on the right. 16:9 aspect ratio. Generate 5 separate images.
+Photorealistic, shot on RED camera. Documentary style. A split documentary graphic: Left half — bold white numerals "160件以上" labeled "北海道庁" on dark background, below it a similar counter for Shari Town. Right half — inside a small town hall, a middle-aged male worker in loosened tie, dark circles under eyes, holding a phone handset while another phone rings. Window in background shows morning light transitioning to night — many hours have passed. The numbers on the left feel like a weight crushing the exhausted man on the right. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「北海道庁 160件以上」「斜里町 約130件」の数字を順番にフェードイン。画面左に「朝から晩まで」テロップを追加
 
@@ -1735,7 +1759,7 @@ Photorealistic, shot on RED camera. Documentary style. A split documentary graph
 シーン: 業務停止した役場＋全国各地から知床へ飛ぶ苦情の矢印インフォグラフィック（日本地図）
 
 ```
-Photorealistic, shot on RED camera. Documentary style. A stylized map of Japan on dark background with glowing red telephone icons appearing across the country — Tokyo, Osaka, Fukuoka, Nagoya — with arrows pointing toward the Shiretoko Peninsula in Hokkaido. Corner inset: a town hall desk with stacks of unprocessed documents piling up, staff all on phones rather than regular duties. "通常業務に支障" label in red box. Documentary infographic style. 16:9 aspect ratio. Generate 5 separate images.
+Photorealistic, shot on RED camera. Documentary style. A stylized map of Japan on dark background with glowing red telephone icons appearing across the country — Tokyo, Osaka, Fukuoka, Nagoya — with arrows pointing toward the Shiretoko Peninsula in Hokkaido. Corner inset: a town hall desk with stacks of unprocessed documents piling up, staff all on phones rather than regular duties. "通常業務に支障" label in red box. Documentary visual style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 日本地図の矢印が知床に集中する様子を表示。「道外からの苦情が多数」「通常業務に支障」テロップを重ねる
 
@@ -1748,6 +1772,7 @@ Photorealistic, shot on RED camera. Documentary style. A stylized map of Japan o
 ナレーター: これに対して、斜里町の山内浩彰町長は、
 
 ナレーター: 「大変なことになったと、非常に衝撃を受けた。これまでそういう事故が起きなかったので、どうしてそういうことが起きたのかと、まず思いました」と発言。
+ナレーター: と発言。
 
 シーン: 会見的な場面。斜里町役場エンブレムのある演台と、発言テロップ
 
@@ -1828,7 +1853,7 @@ Photorealistic, shot on RED camera. Documentary style. Split composition: Left �
 シーン: 知床の森のシルエットを背景に専門家の引用テロップを大きく表示
 
 ```
-Photorealistic, shot on RED camera. Documentary style. A dark documentary background — deep green Shiretoko forest silhouette against a fading dusk sky. Center screen: a pull quote in clean white Japanese text: "良くも悪くも、知床のクマは人を怖がらない" — attributed as a specialist's statement. The sky transitions from golden to deep purple, suggesting twilight and the end of an era of denial. 16:9 aspect ratio. Generate 5 separate images.
+Photorealistic, shot on RED camera. Documentary style. A dark documentary background — deep green Shiretoko forest silhouette against a fading dusk sky. Center screen: an empty framed space for an editorial quote overlay — attributed as a specialist's statement. The sky transitions from golden to deep purple, suggesting twilight and the end of an era of denial. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 専門家引用文を画面中央に大きくテロップ表示。フォントは白・太字。背景は夕暮れの知床シルエット
 
@@ -1887,7 +1912,7 @@ Photorealistic, shot on RED camera. Documentary style. Close-up of a hiker's wai
 シーン: 非対応スプレー（×）と正規品スプレー（✓）の比較。教育的インフォグラフィック
 
 ```
-Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. A side-by-side comparison illustration: Left panel — a small keychain-sized personal defense spray labeled "防犯スプレー" with a red ✗ overlay, caption "ヒグマ非対応・使用済み". Right panel — a large bright orange bear spray canister labeled "ヒグマ対応クマスプレー" with a green ✓ overlay, caption "正規品・新品". Clear educational infographic style, bold contrasting colors. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. A side-by-side comparison illustration: Left panel — a small keychain-sized personal defense spray labeled "防犯スプレー" with a red ✗ overlay, caption "ヒグマ非対応・使用済み". Right panel — a large bright orange bear spray canister labeled "ヒグマ対応クマスプレー" with a green ✓ overlay, caption "正規品・新品". Bold contrasting colors, clear educational comparison. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「非対応×」「正規品✓」の比較テロップを画面左右に表示。「チェック① ヒグマ対応の正規品・新品を使用」チェックボックス形式で追加
 
@@ -1906,7 +1931,7 @@ Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, l
 シーン: 正しく装備した登山者（ホルスター装着・✓）と誤った登山者（カバンの中・✗）の比較。「遭遇は一瞬」を示す文字演出を組み合わせ
 
 ```
-Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. Two cartoon hikers side by side: Left hiker (blue jacket) with a large orange bear spray clearly holstered at his hip, green ✓ above — caption "すぐ手が届く". Right hiker (same style) with bear spray buried deep in backpack, red ✗ above with sweat drops and the moment showing a bear suddenly appearing on the trail ahead — the hiker cannot reach his spray in time. A bold warning text at bottom: "遭遇は一瞬。カバンに入れていては間に合わない". 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. Two cartoon hikers side by side: Left hiker (blue jacket) with a large orange bear spray clearly holstered at his hip, green ✓ above — caption "すぐ手が届く". Right hiker (same style) with bear spray buried deep in backpack, red ✗ above with sweat drops and the moment showing a bear suddenly appearing on the trail ahead — the hiker cannot reach his spray in time.  16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「すぐ手が届く場所に装着」チェックボックステロップを表示。「遭遇は一瞬」テキストを太字で強調
 
@@ -1978,7 +2003,7 @@ Photorealistic, shot on RED camera. Documentary style. Close-up of a smartphone 
 シーン: 3つの情報源（掲示板・ウェブサイト・SNS）を示すインフォグラフィック。時計アイコン「3分」付き
 
 ```
-Photorealistic, shot on RED camera. Documentary style. A clean infographic-style visual on dark background showing three information sources as icons: 1) A wooden bulletin board labeled "登山口掲示板", 2) A smartphone screen labeled "管理団体ウェブサイト", 3) A social media feed labeled "SNS最新情報". All three connected by arrows to a central icon labeled "安全確認". A small clock icon shows "所要時間 3分". Documentary educational layout. 16:9 aspect ratio. Generate 5 separate images.
+Photorealistic, shot on RED camera. Documentary style. A documentary visual on dark background showing three information sources: 1) A wooden bulletin board labeled "登山口掲示板", 2) A smartphone screen labeled "管理団体ウェブサイト", 3) A social media feed labeled "SNS最新情報". All three connected by arrows to a central icon labeled "安全確認". A small clock icon shows "所要時間 3分". Documentary educational layout. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 3つの情報源チェックリストを画面左から右へ順番にテロップ表示。「もし確認していれば…」の文字をフェードイン。「3分でできる安全確認」テロップを追加
 
@@ -2094,7 +2119,7 @@ A large Hokkaido brown bear walks slowly through dense primeval Shiretoko forest
 シーン: 会議室で規制基準が策定されている場面＋3つの新基準をアイコンで視覚化したインフォグラフィック
 
 ```
-Photorealistic, shot on RED camera. Documentary style. Split composition: Upper half — a formal conference room with Japanese officials from multiple organizations gathered around a table with documents titled "入山規制基準". Serious professional atmosphere. Lower half — a clean infographic showing three new safety policy icons: 1) A bear approaching a hiker with a red stop sign (クマ接近時の対応手順), 2) A bear spray canister with X mark and trail closure sign (スプレー無効個体の閉鎖基準), 3) A network of connected communication icons (情報共有の手順). 16:9 aspect ratio. Generate 5 separate images.
+Photorealistic, shot on RED camera. Documentary style. Split composition: Upper half — a formal conference room with Japanese officials from multiple organizations gathered around a table with documents titled "入山規制基準". Serious professional atmosphere. Lower half — a clean visual showing three new safety policy concepts: 1) A bear approaching a hiker with a red stop sign (クマ接近時の対応手順), 2) A bear spray canister with X mark and trail closure sign (スプレー無効個体の閉鎖基準), 3) A network of connected communication icons (情報共有の手順). 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「入山規制の基準が新たに策定」テロップを表示。3項目を画面に順番にフェードイン
 
@@ -2194,55 +2219,30 @@ Photorealistic, shot on RED camera. Documentary style. An extremely simple, quie
 【制作メモ】ASSET-151 [Lovart動画] 台本L595（エンディング）
 
 ナレーター: 曽田さんのご冥福を心よりお祈り申し上げます。最後までご視聴いただきありがとうございました。
-ナレーター: 実際、知床財団のウェブサイトには、ほぼ毎日のようにクマの目撃情報が報告されています。
 
-ナレーター: 報道会社からは「友人は素手でクマを殴って抵抗した」と報じています。
 
-ナレーター: 成人男性2人分に相当する重さです。
 
-ナレーター: 国立公園内であること。そして、観光地としての価値があること。
 
-ナレーター: ヒグマ駆除のために、簡単に閉鎖できない場所だったのです。
 
-ナレーター: 違反した場合、罰則の対象です。
 
-ナレーター: それでも、こうした行為は後を絶ちませんでした。
 
-ナレーター: クマは一度でも人間の食べ物の味を覚えると、その記憶は消えないとされています。
 
-ナレーター: そして一度でも人間から食べ物をもらうと、
 
-ナレーター: 「人間のそばに行けば、おいしいものがもらえる」
 
-ナレーター: その結果、クマは積極的に人間に近づくことに、、
 
-ナレーター: この餌付けと事件の直接の因果関係は、まだ証明されていません。
 
-ナレーター: しかし、餌付けによって今回の事件が発生した可能性は十分にあると言えます。
 
-ナレーター: 毎日新聞は、この母グマをこう表現しています。
 
-ナレーター: 「観光客に人気のあるヒグマだった」
 
-ナレーター: クマスプレーを構えた人間を目の前にしても、しばらくその場にとどまっていたと報告されています。
 
-ナレーター: これは明らかに異常な行動です。
 
-ナレーター: 「クマよけスプレーを噴射しても付きまとう時点で十分に危険。もっと周知すればよかった」
 
-ナレーター: この情報は、知床財団に正式に報告されています。
 
-ナレーター: なぜか？
 
-ナレーター: 地元の観光ガイド、綾野雄次さんは
 
-ナレーター: 「危ないクマがいたら、とりあえず2、3日でいいから辺りを閉鎖して様子を見る」
 
-ナレーター: しかし、その判断をする仕組みが、そもそもなかったのです。
 
-ナレーター: その取り決めが、存在していませんでした。
 
-ナレーター: と発言。
 
 ナレーター: クマは追い払われても戻ってきた。スプレーを浴びても離れなかった。餌をもらい、人間を恐れなくなっていた。
 
