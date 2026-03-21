@@ -60,6 +60,7 @@ def validate_narrative_tone(file_path):
     errors = []
     warnings = []
     dash_count = 0
+    narrator_lines = []  # (line_number, content) for math check
 
     print("=" * 60)
     print(f"[Yama Narrative Validator] {file_path}")
@@ -77,6 +78,7 @@ def validate_narrative_tone(file_path):
             continue
 
         content = line_stripped.replace("ナレーター:", "").strip()
+        narrator_lines.append((i + 1, content))
 
         # Gate 1: Show Don't Tell
         for phrase in BANNED_PHRASES:
@@ -112,6 +114,62 @@ def validate_narrative_tone(file_path):
                     f"   > \"{content[:60]}...\""
                 )
 
+    # Gate 5: Math consistency check (YCP-025 related)
+    # Detect lines with numbers and frequency expressions, check if math adds up
+    NUM_PATTERN = re.compile(r'(\d+(?:,\d+)*(?:\.\d+)?)')
+    FREQ_PATTERNS = [
+        (re.compile(r'(\d+)日に(\d+)回'), 'day_freq'),
+        (re.compile(r'(\d+)週間?に(\d+)回'), 'week_freq'),
+        (re.compile(r'(\d+)ヶ月?に(\d+)回'), 'month_freq'),
+    ]
+    CALC_KEYWORDS = re.compile(r'計算|ペース|つまり|換算|割る|÷')
+
+    # Scan for number pairs within a 5-line window
+    for idx, (line_num, content) in enumerate(narrator_lines):
+        # Look for frequency claims with "計算" or "ペース" nearby
+        if not CALC_KEYWORDS.search(content):
+            continue
+
+        # Gather numbers from this line and nearby lines (window of 5)
+        window_start = max(0, idx - 4)
+        window_end = min(len(narrator_lines), idx + 1)
+        window_numbers = []
+        for w_idx in range(window_start, window_end):
+            w_line_num, w_content = narrator_lines[w_idx]
+            nums = NUM_PATTERN.findall(w_content)
+            for n in nums:
+                try:
+                    val = float(n.replace(',', ''))
+                    if val > 0:
+                        window_numbers.append((w_line_num, val, w_content))
+                except ValueError:
+                    pass
+
+        # Check frequency claims: "X日に1回のペース" with total count N and period D
+        for freq_pat, freq_type in FREQ_PATTERNS:
+            match = freq_pat.search(content)
+            if match:
+                claimed_interval = float(match.group(1))
+                # Look for a total count in the window
+                for w_line_num, val, w_content in window_numbers:
+                    if val >= 10 and w_line_num != line_num:
+                        # val is likely total count, estimate period
+                        # For "X日に1回" with count N: expected interval = period / N
+                        # Flag if claimed interval differs significantly from any reasonable period/count
+                        # Common periods: 30 days (1 month), 90 days (3 months), 120 days (4 months), 240 days (8 months), 365 days (1 year)
+                        for period_days, period_name in [(30, "1ヶ月"), (90, "3ヶ月"), (120, "4ヶ月"), (150, "5ヶ月"), (240, "8ヶ月"), (365, "1年")]:
+                            actual_interval = period_days / val
+                            if abs(actual_interval - claimed_interval) < 1.0:
+                                break  # Math checks out for this period
+                        else:
+                            # No reasonable period makes the math work
+                            warnings.append(
+                                f"[Math Check] Line {line_num}: 「{claimed_interval:.0f}日に1回」の計算を確認してください\n"
+                                f"   近くの数値: {val:.0f}（Line {w_line_num}）\n"
+                                f"   → 期間が不明確、または換算が合わない可能性があります\n"
+                                f"   > \"{content[:70]}...\""
+                            )
+
     # Output results
     print()
 
@@ -135,6 +193,7 @@ def validate_narrative_tone(file_path):
         print("  ✅ Dash prohibition: OK")
         print("  ✅ Written language: OK")
         print("  ✅ Literary/jargon: OK")
+        print("  ✅ Math consistency: OK")
     elif not errors:
         print("[PASS with warnings] No errors, but warnings should be reviewed.")
 
