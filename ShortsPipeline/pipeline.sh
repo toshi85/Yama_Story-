@@ -131,6 +131,73 @@ else
 fi
 
 # ============================================================
+# STEP 2.5: カット尺バリデーション（61秒未満をブロック）
+# ============================================================
+echo ""
+echo "🔍 STEP 2.5: カット尺バリデーション..."
+
+export CUTS_JSON
+VALIDATION_RESULT=$(python3 << 'VALIDATE_EOF'
+import json, os, sys
+
+CUTS_JSON = os.environ["CUTS_JSON"]
+
+with open(CUTS_JSON) as f:
+    data = json.load(f)
+
+errors = []
+warnings = []
+MIN_DURATION = 61
+MAX_DURATION = 90
+
+for cut in data["cuts"]:
+    ep = cut["episode"]
+    start = cut["start"]
+    end = cut["end"]
+    s_sec = float(start.split(":")[0])*3600 + float(start.split(":")[1])*60 + float(start.split(":")[2])
+    e_sec = float(end.split(":")[0])*3600 + float(end.split(":")[1])*60 + float(end.split(":")[2])
+    duration = e_sec - s_sec
+
+    if duration < MIN_DURATION:
+        errors.append(f"ep{ep:02d}: {duration:.0f}秒 (最低{MIN_DURATION}秒未満)")
+    elif duration > MAX_DURATION:
+        warnings.append(f"ep{ep:02d}: {duration:.0f}秒 (推奨{MAX_DURATION}秒超過)")
+
+if errors:
+    print("ERRORS")
+    for e in errors:
+        print(f"  ❌ {e}")
+    for w in warnings:
+        print(f"  ⚠️  {w}")
+elif warnings:
+    print("WARNINGS")
+    for w in warnings:
+        print(f"  ⚠️  {w}")
+else:
+    print("OK")
+VALIDATE_EOF
+)
+
+VALIDATION_STATUS=$(echo "$VALIDATION_RESULT" | /usr/bin/head -1)
+
+if [ "$VALIDATION_STATUS" = "ERRORS" ]; then
+  echo "$VALIDATION_RESULT" | tail -n +2
+  echo ""
+  echo "❌ 61秒未満のエピソードがあります。cuts.jsonを修正してください。"
+  exit 1
+elif [ "$VALIDATION_STATUS" = "WARNINGS" ]; then
+  echo "$VALIDATION_RESULT" | tail -n +2
+  echo ""
+  read -p "   90秒超過がありますが続行しますか？ (y/N): " CONTINUE_WITH_WARN
+  if [ "$CONTINUE_WITH_WARN" != "y" ] && [ "$CONTINUE_WITH_WARN" != "Y" ]; then
+    echo "   → 中止しました。cuts.jsonを修正してから再実行してください。"
+    exit 0
+  fi
+else
+  echo "  ✅ 全エピソード 61〜90秒 OK"
+fi
+
+# ============================================================
 # STEP 3: FFmpegで分割
 # ============================================================
 echo ""
