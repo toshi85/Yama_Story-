@@ -22,6 +22,8 @@ Yama_Story プロンプト品質バリデーター
   13. 孤立アセット — ナレーション紐づきなしのアセット検出
   14. 静止画連続 — 3連続以上の検出
   15. 映像密度 — 全体平均35字/ASSET以下か
+  16. ASSET構造順序 — ナレーター→制作メモ→プロンプトの正しい順序か (WARNING)
+  17. 末尾ゴミ行 — 最後のASSET以降に孤立ナレーション行や大量空行がないか (FAIL)
 """
 
 import sys
@@ -659,6 +661,72 @@ def check_narration_coverage(asset_lines, master_path):
     return missing, len(master_narrations)
 
 
+def check_asset_structure_order(lines):
+    """ASSETの構造順序チェック: ナレーター→【制作メモ】→プロンプトの正しい順序か。
+    【制作メモ】の直前（---まで遡って）にナレーター行がないASSETを検出する。"""
+    issues = []
+    for i, line in enumerate(lines):
+        s = line.strip()
+        m = re.match(r'【制作メモ】(ASSET-\d+)', s)
+        if m:
+            asset_id = m.group(1)
+            has_narr_before = False
+            for j in range(i - 1, max(0, i - 15), -1):
+                sj = lines[j].strip()
+                if sj.startswith('ナレーター:'):
+                    has_narr_before = True
+                    break
+                elif sj == '---' or sj.startswith('【制作メモ】'):
+                    break
+            if not has_narr_before:
+                issues.append((i + 1, asset_id))
+    return issues
+
+
+def check_trailing_garbage(lines):
+    """末尾ゴミ行チェック: 最後のASSETのプロンプト・編集者指示の後に
+    孤立したナレーション行や大量の空行がないか検出する。"""
+    issues = []
+
+    # 最後のASSETの制作メモ位置を見つける
+    last_asset_idx = None
+    last_asset_id = None
+    for i, line in enumerate(lines):
+        m = re.match(r'【制作メモ】(ASSET-\d+)', line.strip())
+        if m:
+            last_asset_idx = i
+            last_asset_id = m.group(1)
+
+    if last_asset_idx is None:
+        return issues
+
+    # 最後のASSETの編集者指示/プロンプト末尾を見つける
+    last_content_idx = last_asset_idx
+    for i in range(last_asset_idx + 1, len(lines)):
+        s = lines[i].strip()
+        if s and not s == '---':
+            last_content_idx = i
+
+    # last_content_idx以降にナレーション行がないかチェック
+    trailing_narr = []
+    trailing_empty = 0
+    for i in range(last_content_idx + 1, len(lines)):
+        s = lines[i].strip()
+        if s.startswith('ナレーター:'):
+            trailing_narr.append((i + 1, s[:60]))
+        elif s == '':
+            trailing_empty += 1
+
+    if trailing_narr:
+        for ln, text in trailing_narr:
+            issues.append((ln, f"末尾の孤立ナレーション行: {text}..."))
+
+    if trailing_empty > 5:
+        issues.append((len(lines), f"末尾に連続空行{trailing_empty}行"))
+
+    return issues
+
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: python3 validate_yama_prompts.py <台本ファイルパス> [台本Master.mdパス]")
@@ -907,6 +975,28 @@ def main():
             print(f"✅ PASS: 台本突合チェック ({total_master}/{total_master}行カバー)")
     else:
         print("⏭️  SKIP: 台本突合チェック（第2引数に台本パスを指定すると実行）")
+
+    # 16. ASSET構造順序チェック（ナレーター→制作メモ→プロンプト）
+    issues = check_asset_structure_order(lines)
+    if issues:
+        warnings += 1
+        print(f"\n⚠️  WARNING: ASSET構造順序 — {len(issues)}件で【制作メモ】の前にナレーターなし")
+        for ln, aid in issues[:5]:
+            print(f"   L{ln} ({aid})")
+        if len(issues) > 5:
+            print(f"   ...他{len(issues)-5}件")
+    else:
+        print("✅ PASS: ASSET構造順序（ナレーター→制作メモ→プロンプト）")
+
+    # 17. 末尾ゴミ行チェック
+    issues = check_trailing_garbage(lines)
+    if issues:
+        all_pass = False
+        print(f"\n❌ FAIL: 末尾ゴミ行 ({len(issues)}件)")
+        for ln, desc in issues:
+            print(f"   L{ln}: {desc}")
+    else:
+        print("✅ PASS: 末尾ゴミ行なし")
 
     # Summary
     print("\n" + "=" * 60)
