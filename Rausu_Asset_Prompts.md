@@ -1961,3 +1961,14 @@ A single blue hiking jacket hanging on a wooden peg in a quiet mountain hut. Sof
 → 編集者指示: 映像に重ねて「曽田圭亮さん」を白文字でゆっくりフェードイン。下に「享年26歳」を追加。その後、CHAR-01の全身イラスト（笑顔・登山装備）を右側に配置。BGMはここで一番小さくする（7秒）
 
 ナレーター: 曽田さんのご冥福を心よりお祈り申し上げます。最後までご視聴いただきありがとうございました。
+
+【制作メモ】ASSET-138 [Lovart動画] 台本L673
+シーン: エンディング最終カット。知床の山並みが夕日に染まる。追悼と感謝の静かな締めくくり
+```
+Photorealistic, shot on RED camera. Documentary drama style. Wide aerial view of the Shiretoko mountain range at sunset, golden and amber light flooding across the ridgeline. Mount Rausu silhouetted against the glowing sky. The vast wilderness below fading into shadow. Peaceful, solemn, memorial atmosphere. No people visible. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ **Google Flow動画プロンプト:**
+```
+Slow aerial pullback from Mount Rausu as the sun sets behind the Shiretoko mountain range. Golden amber light floods the ridgeline. The landscape slowly recedes into the distance. Peaceful solemn memorial atmosphere. 5 seconds.
+```
+→ 編集者指示: 夕日の山並みが遠ざかる映像。画面下部に「ご視聴ありがとうございました」テロップをゆっくりフェードイン。最後に黒画面へフェードアウト（7秒）
