@@ -76,7 +76,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Narrow mountain hiking trail in Hokkaido, thick bamboo grass walls on both sides, overcast sky filtering through tree canopy. Dense forest. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Narrow mountain hiking trail in Hokkaido, thick bamboo grass walls on both sides, overcast sky filtering through tree canopy. Dense forest. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: スプレーの煙エフェクトを追加。ヒグマが迫る動きをズームイン演出で強調。
 
@@ -96,7 +96,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Open mountain trailhead in Hokkaido, no closure tape, no warning barriers. A mountain hiking trail in summer with dense bamboo grass and forest on both sides. Dappled sunlight. Quiet and eerie atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Open mountain trailhead in Hokkaido, no closure tape, no warning barriers. A mountain hiking trail in summer with dense bamboo grass and forest on both sides. Dappled sunlight. Quiet and eerie atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: ヒグマの目をクローズアップするカットを入れる。「登山道閉鎖なし」のテロップを重ね、「なぜクマは人間を襲ったのか」「なぜ登山道は閉鎖されなかったのか？」の2行テロップをゆっくりフェードイン。低音BGMで不安感を高める。
 
@@ -122,7 +122,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Rocky mountain trailhead in Hokkaido, summer morning. Wooden trail marker sign, lush green forest in background, clear blue sky. Warm morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Rocky mountain trailhead in Hokkaido, summer morning. Wooden trail marker sign, lush green forest in background, clear blue sky. Warm morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「2025年8月14日」のテロップをフェードイン。「曽田圭亮さん（26歳）」と「友人」のテロップを各キャラクターに矢印で示す。BGMは清々しい朝から徐々に緊張感を帯びた音楽へ。
 
@@ -150,7 +150,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Panoramic view from a high mountain summit in Hokkaido. Rugged peaks in the distance, valleys filled with forest, shimmering sea visible at the horizon. Clear sky with a few clouds. Epic and majestic. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Panoramic view from a high mountain summit in Hokkaido. Rugged peaks in the distance, valleys filled with forest, shimmering sea visible at the horizon. Clear sky with a few clouds. Epic and majestic. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「羅臼岳 標高1,661m」「日本百名山のひとつ」のテロップを重ねる。百名山リストの一部をイメージとして小さく合成。
 
@@ -178,7 +178,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A long winding mountain trail ascending through alpine terrain in Hokkaido. Rocky path, low scrub vegetation, distant mountain peaks visible. Midday summer light. Vast and challenging terrain. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A long winding mountain trail ascending through alpine terrain in Hokkaido. Rocky path, low scrub vegetation, distant mountain peaks visible. Midday summer light. Vast and challenging terrain. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「片道7時間 / 往復14時間」のインフォグラフィックを表示。軽快なBGMで二人が着実に進んでいる様子を伝える。しかしその後すぐに緊張感のある音楽に切り替え「しかし、この山には——」への伏線を作る。
 
@@ -214,7 +214,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Wide alpine meadow in Hokkaido with low grass and wildflowers. Mountain ridge visible in background. Birch forest on the edges. Overcast summer sky. Natural and wild atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Wide alpine meadow in Hokkaido with low grass and wildflowers. Mountain ridge visible in background. Birch forest on the edges. Overcast summer sky. Natural and wild atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 動物映像（エゾシカ、オジロワシ等）を複数カット繋いだ後、ヒグマが画面中央をゆっくり横切るように合成。「ヒグマ」テロップを赤文字で重ね存在感を強調。「知床財団ウェブサイトにほぼ毎日目撃情報」のテロップを続けて入れる。
 
@@ -235,7 +235,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Iwaobetsu Onsen trailhead entrance in early morning, Hokkaido. Wooden trail marker and information board visible. Forest path ahead in soft dawn light. Quiet and fresh mountain morning atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Iwaobetsu Onsen trailhead entrance in early morning, Hokkaido. Wooden trail marker and information board visible. Forest path ahead in soft dawn light. Quiet and fresh mountain morning atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「8月14日 早朝」のテロップをフェードイン。「岩尾別温泉 登山口」のテロップを地図ピンのアイコンとともに表示。BGMは清々しい朝の雰囲気。
 
@@ -280,7 +280,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Steep rocky hiking trail in Hokkaido mountains. Dramatic elevation gain visible, rugged terrain with boulders and alpine plants. Bright morning sun. Sense of progress and momentum. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Steep rocky hiking trail in Hokkaido mountains. Dramatic elevation gain visible, rugged terrain with boulders and alpine plants. Bright morning sun. Sense of progress and momentum. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「順調に登山中」のテロップを入れる。Google Earthで岩尾別登山口から羅臼岳山頂まで一本のルートを赤いラインで描画し「岩尾別ルート：一本道」のテロップを追加。
 
@@ -300,7 +300,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A small natural spring water source on a Hokkaido mountain trail. Crystal clear water flowing over mossy rocks into a small pool. Sunlight filtering through trees. Rocky trail continues uphill. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A small natural spring water source on a Hokkaido mountain trail. Crystal clear water flowing over mossy rocks into a small pool. Sunlight filtering through trees. Rocky trail continues uphill. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「山小屋なし / 水場限定」のインフォグラフィックをルートマップと重ねて表示。「弥三吉水（標高約780m付近）」「銀冷水（標高約1,040m付近）」の位置を黄色のマーカーでGoogle Earthに示す。
 
@@ -318,7 +318,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A Hokkaido mountain trail at 1500m elevation in August with patches of snow remaining. Then: rocky mountain summit of Mount Rausu, 1661m elevation. Vast panoramic view in all directions, distant sea visible. Clear summer sky. Triumphant and breathtaking. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A Hokkaido mountain trail at 1500m elevation in August with patches of snow remaining. Then: rocky mountain summit of Mount Rausu, 1661m elevation. Vast panoramic view in all directions, distant sea visible. Clear summer sky. Triumphant and breathtaking. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「標高1,500m 8月でも雪が残る」のテロップを入れ、その後「山頂到達！」のテロップを喜びを表現するエフェクトとともに表示。達成感を伝える感動的なBGMを入れる。
 
@@ -350,7 +350,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Rocky summit plateau of Mount Rausu with stunning 360-degree panoramic views. Sea visible in the distance, bright noon summer sun. Then: rocky mountain trail descending from a summit. Afternoon sun starting to angle. Forest visible far below. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Rocky summit plateau of Mount Rausu with stunning 360-degree panoramic views. Sea visible in the distance, bright noon summer sun. Then: rocky mountain trail descending from a summit. Afternoon sun starting to angle. Forest visible far below. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 楽しそうに山頂を満喫する映像の後、少し間を置いて雰囲気を変える。明るいBGMから徐々に緊張感が漂うBGMへ移行。「問題は、ここからです。」への伏線として不安な雰囲気を演出。
 
@@ -388,7 +388,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Descending mountain trail in Hokkaido, lined with dense tall bamboo grass. Trail winding downward, stretching into the distance. Dappled midday sunlight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Descending mountain trail in Hokkaido, lined with dense tall bamboo grass. Trail winding downward, stretching into the distance. Dappled midday sunlight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: CHAR-01を手前に大きく、CHAR-02を遠くに小さく表示。「距離：約200m」の矢印と距離マーカーを地図インフォグラフィックで表示。
 
@@ -406,7 +406,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Steep descending trail in Hokkaido mountains. Rocky surface, motion blur suggesting quick movement. Dense bamboo grass walls. Midday light. Sense of speed and recklessness on a dangerous trail. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Steep descending trail in Hokkaido mountains. Rocky surface, motion blur suggesting quick movement. Dense bamboo grass walls. Midday light. Sense of speed and recklessness on a dangerous trail. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「走りながら下山していた可能性」のテロップを表示。続けてGoogle Earthで岩尾別ルート上のオホーツク展望台付近（標高550m）を赤いマーカーで表示し「事件発生地点」のラベルをつける。登山口（230m）・事件現場（550m）・山頂（1,661m）の3点を比較表示。
 
@@ -443,7 +443,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Tight blind curve on a Hokkaido mountain trail. Dense bamboo walls completely blocking visibility. Dense bamboo grass area beside the trail with rotting logs on the forest floor, rich foraging habitat. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Tight blind curve on a Hokkaido mountain trail. Dense bamboo walls completely blocking visibility. Dense bamboo grass area beside the trail with rotting logs on the forest floor, rich foraging habitat. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: BGMを無音または最小限に抑え、足音だけが聞こえる演出に。「カーブを曲がるまで全く見えない」のテロップを入れる。アリのインフォグラフィック（ヒグマの食べ物）を小さく表示。ヒグマが食事中→次のシーンで突然人間と遭遇する流れへ。
 
@@ -480,7 +480,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Narrow mountain trail in Hokkaido. Dense bamboo grass on both sides. Ominous midday light. Tension and danger in the air. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Narrow mountain trail in Hokkaido. Dense bamboo grass on both sides. Ominous midday light. Tension and danger in the air. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 衝撃的なBGMの一撃（ドン！）とともにヒグマの映像を出す。「目の前にヒグマ！」テロップを赤文字で強調。続けて「母グマ + 子グマ2頭 = 最も危険な組み合わせ」の警告ボックスを表示。
 
@@ -504,7 +504,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Extremely narrow mountain trail in Hokkaido, bamboo walls closing in. The space feels impossibly small and inescapable. A sense of absolute entrapment. Midday filtered light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Extremely narrow mountain trail in Hokkaido, bamboo walls closing in. The space feels impossibly small and inescapable. A sense of absolute entrapment. Midday filtered light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「わずか数メートル = 車1〜2台分」の距離感を平面図で視覚化。時間が止まったような演出（スローモーション）で「逃げる間もない」テロップを入れる。母グマの防衛本能を説明するテキストボックスを追加。「子連れ母グマ = 最も危険」の警告テロップ。
 
@@ -541,7 +541,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido, mid-descent. Bamboo grass walls. The trail curves ahead, the screaming coming from beyond the curve. Afternoon light. Eerily silent except for the distant sound. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido, mid-descent. Bamboo grass walls. The trail curves ahead, the screaming coming from beyond the curve. Afternoon light. Eerily silent except for the distant sound. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 叫び声の音効果とともに山の景色を映す。静寂と叫び声のコントラストで観る人の想像力を刺激。「叫び声が山に響き渡る」テロップ。CHAR-02の恐怖の表情をクローズアップ。「200m後方の友人」位置を地図インフォグラフィックで示す。
 
@@ -559,7 +559,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido descending toward a bend. Bamboo grass walls on both sides. Motion blur of frantic running. Then: a mountain trail showing signs of a violent struggle — torn vegetation, disturbed earth, scattered items from a green daypack. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido descending toward a bend. Bamboo grass walls on both sides. Motion blur of frantic running. Then: a mountain trail showing signs of a violent struggle — torn vegetation, disturbed earth, scattered items from a green daypack. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: CHAR-02が全力で走る映像を疾走感のあるBGMで演出。直接的な暴力シーンは映さず、CHAR-02の表情のクローズアップと環境音（ヒグマの唸り声）で場面を表現。
 
@@ -585,7 +585,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Chaotic mountain trail scene in Hokkaido. Dense bamboo grass trampled and disturbed. Signs of a violent struggle — torn vegetation, scattered debris. Desperate emergency atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Chaotic mountain trail scene in Hokkaido. Dense bamboo grass trampled and disturbed. Signs of a violent struggle — torn vegetation, scattered debris. Desperate emergency atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: スプレーが出ない瞬間の絶望を強調。「知床財団の調査報告」テロップとともに「問題①使用済みの形跡あり＝残量不足の可能性」「詳細は不明」を箇条書きインフォグラフィックで表示。赤い「×」マークで強調。「噴射不能」テロップを大きく表示。
 
@@ -626,7 +626,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido with orange bear spray mist in the air. Effective deterrence contrast with ineffective deterrence. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido with orange bear spray mist in the air. Effective deterrence contrast with ineffective deterrence. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「正規クマスプレー：噴射距離9m / カプサイシン高濃度」のインフォグラフィック。唐辛子→クマスプレーの成分解説。「防犯スプレー：2〜3m」と「正規クマスプレー：9m」の距離比較図を並べる。「ヒグマにはほぼ無力」のテロップを強調。
 
@@ -644,7 +644,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido. Signs of a violent struggle just ahead on the trail — torn vegetation, disturbed earth. An atmosphere of danger and crisis. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido. Signs of a violent struggle just ahead on the trail — torn vegetation, disturbed earth. An atmosphere of danger and crisis. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「スプレー×、武器×、道具×」の3連バツ印インフォグラフィックを表示。「それでも友人は見捨てなかった」のテロップを感動的な演出で。感情的なBGMに切り替え。
 
@@ -684,7 +684,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Dense bamboo grass mountain trail in Hokkaido. Rocky trail surface with signs of violent struggle. Disturbed vegetation and scattered debris. Tense, dark atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Dense bamboo grass mountain trail in Hokkaido. Rocky trail surface with signs of violent struggle. Disturbed vegetation and scattered debris. Tense, dark atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 画面右下に「友人：素手で応戦」というテロップを白文字で入れる。
 
@@ -721,7 +721,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Dense bamboo grass thicket along a Hokkaido mountain trail. Trail edge where vegetation has been pushed aside and broken, leading into dark undergrowth. Ominous, disturbing atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Dense bamboo grass thicket along a Hokkaido mountain trail. Trail edge where vegetation has been pushed aside and broken, leading into dark undergrowth. Ominous, disturbing atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 
 ナレーター: ヒグマは友人の攻撃を1ミリも気にすることなく、曽田さんをくわえたまま、藪の中へと消えていきました。
@@ -750,7 +750,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido with dense bamboo grass on both sides. Midday light filtering through. Emergency atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido with dense bamboo grass on both sides. Midday light filtering through. Emergency atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 画面中央に鉤括弧付きで「"仲間がヒグマに襲われた"」というテロップを表示。緊急通報のSEを当てる。
 
@@ -810,7 +810,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail entrance in Hokkaido. Dense bamboo grass ahead, the silhouette of a large bear barely visible in the vegetation. Ominous atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail entrance in Hokkaido. Dense bamboo grass ahead, the silhouette of a large bear barely visible in the vegetation. Ominous atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 画面下部に「安全確保を最優先 → 翌朝まで捜索を延期」というテロップを表示。
 
@@ -836,7 +836,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail observation point in Hokkaido with a view of the Okhotsk Sea. In the distance, a large dark brown Hokkaido brown bear walking calmly down the mountain hiking trail, moving confidently without fear. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail observation point in Hokkaido with a view of the Okhotsk Sea. In the distance, a large dark brown Hokkaido brown bear walking calmly down the mountain hiking trail, moving confidently without fear. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 
 ナレーター: なんと、それはヒグマが、登山道を下っている姿でした。
@@ -896,7 +896,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Iwaobetsu trailhead at the base of Mt. Rausu in the early morning light, August 15th. Misty morning atmosphere. Mountain looming in the background. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Iwaobetsu trailhead at the base of Mt. Rausu in the early morning light, August 15th. Misty morning atmosphere. Mountain looming in the background. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 各人物グループの上に「北海道警」「消防」「知床財団」「ハンター」というラベルを矢印付きで表示。
 
@@ -914,7 +914,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Narrow mountain trail in Hokkaido through dense bamboo grass. The trail stretches upward through thick vegetation. Tense, alert atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Narrow mountain trail in Hokkaido through dense bamboo grass. The trail stretches upward through thick vegetation. Tense, alert atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 
 ナレーター: ヒグマがまだ付近にいることを前提に、ハンターが先頭に立ちました。
@@ -939,7 +939,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido with dense bamboo grass on both sides. Narrow path stretching ahead. Tense, dangerous atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido with dense bamboo grass on both sides. Narrow path stretching ahead. Tense, dangerous atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「母グマ」「子グマ①」「子グマ②」のラベルを矢印付きで各個体に表示。
 
@@ -968,7 +968,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido surrounded by forest. Afternoon light filtering through the trees. Intense and sobering atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido surrounded by forest. Afternoon light filtering through the trees. Intense and sobering atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 
 ナレーター: すかさずハンターが母グマを銃撃。
@@ -1130,7 +1130,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido. Dense forest on both sides. Smoke and debris from firework deterrents visible in the air. Tense atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido. Dense forest on both sides. Smoke and debris from firework deterrents visible in the air. Tense atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 画面下部に「ゴム弾・花火で威嚇→それでも嫌がる様子すら見せなかった」というテロップを赤文字で表示。
 
@@ -1225,7 +1225,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido's Shiretoko region. Dense forest setting with UNESCO World Heritage signage visible. National park entrance signs. Tourist infrastructure. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido's Shiretoko region. Dense forest setting with UNESCO World Heritage signage visible. National park entrance signs. Tourist infrastructure. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: アイコンを1つずつフェードインし「世界自然遺産」「国立公園」「観光地」テロップを順に重ねる。「閉鎖できない」に合わせて赤Xゲートを最後に表示。
 
@@ -1241,7 +1241,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Forest trail in Hokkaido's Shiretoko region. Dense vegetation on both sides. Smoke and debris from firework deterrents in the air. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Forest trail in Hokkaido's Shiretoko region. Dense vegetation on both sides. Smoke and debris from firework deterrents in the air. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 威嚇を複数回繰り返す演出（動線アニメーション）。「ある事実が浮かび上がります」で次カットへのブリッジとして暗転。
 
@@ -1270,7 +1270,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Forest road in Hokkaido's Shiretoko region. Dense trees lining both sides of the road. A parked vehicle visible. Cheerful but ominous atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Forest road in Hokkaido's Shiretoko region. Dense trees lining both sides of the road. A parked vehicle visible. Cheerful but ominous atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「条例で禁止」テロップを赤字でオーバーレイ。「それでも後を絶たず」のナレーションに合わせ、スマホを構える観光客を複数コマで繰り返し表示。
 
@@ -1288,7 +1288,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Forest road in Hokkaido's Shiretoko region. Natural wilderness setting. The atmosphere conveys the danger of wildlife habituation. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Forest road in Hokkaido's Shiretoko region. Natural wilderness setting. The atmosphere conveys the danger of wildlife habituation. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「?」→「記憶固定」への変化アニメーションを段階的に表示。「永久に記憶」テロップを強調。
 
@@ -1305,7 +1305,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Forest road in Hokkaido's Shiretoko region. A natural area where wildlife and tourists interact. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Forest road in Hokkaido's Shiretoko region. A natural area where wildlife and tourists interact. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 2パネルを左右に配置し感情変化を明確化。「苛立ち→攻撃」の矢印アニメーション追加。
 
@@ -1344,7 +1344,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Roadside in Hokkaido's Shiretoko region. Dense forest in the background. A natural area near a road where wildlife appears. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Roadside in Hokkaido's Shiretoko region. Dense forest in the background. A natural area near a road where wildlife appears. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「アイドル化された危険」のコントラストが伝わるよう、観光客の笑顔と背景の警告看板を同一フレームに配置。
 
@@ -1372,7 +1372,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido with dense forest on both sides. The path stretches ahead through the wilderness. Tense atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido with dense forest on both sides. The path stretches ahead through the wilderness. Tense atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 
 ---
@@ -1411,7 +1411,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-The Iwaubetsu trailhead with its gate wide open. No closure signage. No warning barrier. Other hikers' gear visible at the entrance. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+The Iwaubetsu trailhead with its gate wide open. No closure signage. No warning barrier. Other hikers' gear visible at the entrance. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「下山した者」→「開放されたまま」の2コマ対比。「閉鎖なし」テロップをオーバーレイ。
 
@@ -1458,7 +1458,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-The Iwaubetsu trail in Hokkaido. Narrow mountain path through dense vegetation. Dramatic atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+The Iwaubetsu trail in Hokkaido. Narrow mountain path through dense vegetation. Dramatic atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 
 ---
@@ -1492,7 +1492,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Overhead view of a mountain trail in Hokkaido. Narrow path through dense forest and bamboo grass. Movement arrows and path indicators visible. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Overhead view of a mountain trail in Hokkaido. Narrow path through dense forest and bamboo grass. Movement arrows and path indicators visible. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 
 ---
@@ -1507,7 +1507,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido. Narrow path with dense vegetation on both sides. Tense, claustrophobic atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido. Narrow path with dense vegetation on both sides. Tense, claustrophobic atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: ストップウォッチのカウントを画面上で動かし続ける演出。POVインサートカットを挿入。
 
@@ -1591,7 +1591,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido. Dense vegetation. Orange bear spray mist visible in the air. Tense atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido. Dense vegetation. Orange bear spray mist visible in the air. Tense atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: チェックリストの空白ボックスを強調。ガイドの名前テロップ「観光ガイド 綾野雄次さん」を表示。
 
@@ -1637,7 +1637,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Four-panel timeline layout on dark background. Panel backgrounds showing: 1) Hokkaido forest road, 2) Mountain trail, 3) Mountain trail with orange spray mist, 4) Dense bamboo grass trail curve. Timeline bar at bottom escalating in red intensity. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Four-panel timeline layout on dark background. Panel backgrounds showing: 1) Hokkaido forest road, 2) Mountain trail, 3) Mountain trail with orange spray mist, 4) Dense bamboo grass trail curve. Timeline bar at bottom escalating in red intensity. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: パネルを1枚ずつリズミカルに表示。タイムラインバーが左から右へ赤く点灯していく演出。最終パネルで一瞬の暗転。
 
@@ -1733,7 +1733,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Three-panel layout on dark background. Panel 1: Hokkaido forest road with a car. Panel 2: Narrow mountain hiking trail in dense vegetation. Panel 3: Mountain trail with orange bear spray mist. Each panel enclosed in a bold comic frame. Tension escalates left to right. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Three-panel layout on dark background. Panel 1: Hokkaido forest road with a car. Panel 2: Narrow mountain hiking trail in dense vegetation. Panel 3: Mountain trail with orange bear spray mist. Each panel enclosed in a bold comic frame. Tension escalates left to right. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 画面左上に各コマの日付テロップを大きく表示。左→中→右と順番に点灯。最後のパネルで「スプレー無効」テキストを赤でハイライト
 
@@ -1770,7 +1770,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A busy mountain trailhead during Obon holiday week. Wooden post with a warning sign visible. Bright summer day. Ironic contrast between festive atmosphere and systemic failure. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A busy mountain trailhead during Obon holiday week. Wooden post with a warning sign visible. Bright summer day. Ironic contrast between festive atmosphere and systemic failure. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「野放し状態」テロップを画面右に表示。HTBテロップ引用文を画面下部にニュース字幕スタイルで表示
 
@@ -1790,7 +1790,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-The base of a mountain with autumn-tinged scenery. A bench near a trailhead. Heavy, somber atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+The base of a mountain with autumn-tinged scenery. A bench near a trailhead. Heavy, somber atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 画面下に証言テロップ「クマの出没情報は一切知らなかった」を表示
 
@@ -1845,7 +1845,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A Japanese town hall office (斜里町役場) interior. Multiple telephone handsets on desks. Fluorescent lighting. Tense, overwhelmed atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A Japanese town hall office (斜里町役場) interior. Multiple telephone handsets on desks. Fluorescent lighting. Tense, overwhelmed atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「全国からクレームが殺到」テロップを画面中央に表示。吹き出しが左右から次々と現れるアニメーション。「子グマ」と「世界自然遺産」のキーワードを赤太文字でハイライト
 
@@ -1929,7 +1929,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A silhouette of Mount Rausu at dusk. Somber, grave atmosphere. Official press conference setting implied. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A silhouette of Mount Rausu at dusk. Somber, grave atmosphere. Official press conference setting implied. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 発言テロップを画面下部に順番に表示。「知床のクマは人を襲わないということはない」の行を赤太文字でハイライト
 
@@ -2072,7 +2072,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido. Dense bamboo grass on both sides. A bear suddenly visible on the trail ahead. Educational documentary atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido. Dense bamboo grass on both sides. A bear suddenly visible on the trail ahead. Educational documentary atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「すぐ手が届く場所に装着」チェックボックステロップを表示。「遭遇は一瞬」テキストを太字で強調
 
@@ -2113,7 +2113,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A bamboo-flanked mountain trail in Hokkaido. Dense vegetation on both sides. Calm, educational atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A bamboo-flanked mountain trail in Hokkaido. Dense vegetation on both sides. Calm, educational atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「チェック④ 鈴・声・手拍きでゆっくり歩く」チェックリストテロップを重ねる
 
@@ -2184,7 +2184,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A mountain trailhead entrance. The mountain trail stretches ahead into the wilderness. Calm, educational atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A mountain trailhead entrance. The mountain trail stretches ahead into the wilderness. Calm, educational atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「このひと手間が、命を守ります」テロップを画面中央に大きくフェードイン表示
 
@@ -2227,7 +2227,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A mountain trailhead entrance with the mountain looming silently ahead. This is the bear's domain — powerful and indifferent. Quiet weighty atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A mountain trailhead entrance with the mountain looming silently ahead. This is the bear's domain — powerful and indifferent. Quiet weighty atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「最後に判断するのは登山者自身です」テロップを中央に表示。続けて「知床の山はヒグマの生息地域」テロップを重ねる
 
@@ -2343,7 +2343,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Three-panel layout. Panel 1: Mountain trail at sunrise. Panel 2: Dense forest trail with orange bear spray mist. Panel 3 (sepia tones): Forest road in Shiretoko. Deeply somber, bittersweet retrospective tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Three-panel layout. Panel 1: Mountain trail at sunrise. Panel 2: Dense forest trail with orange bear spray mist. Panel 3 (sepia tones): Forest road in Shiretoko. Deeply somber, bittersweet retrospective tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 3コマを順番にフェードイン。各コマに対応するナレーションテロップを表示。「追い払い→戻る」「スプレーを浴びても」「餌をもらい人間を恐れなくなった」
 
