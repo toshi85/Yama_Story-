@@ -72,7 +72,7 @@ Cinematic aerial drone footage slowly gliding over Shiretoko Peninsula in midsum
 シーン: 登山者がクマスプレーを噴射するが、ヒグマが怯まずに迫ってくる緊迫の瞬間
 キャラプロンプト（1:1）:
 ```
-A male hiker wearing a blue jacket and gray pants spraying bear spray toward a large brown female bear (CHAR-03: mother bear, 140cm tall, 117kg, dark brown fur) that is charging forward without flinching. The hiker's face shows terror. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A male hiker wearing a blue jacket and gray pants spraying bear spray toward a large brown female bear (CHAR-03: mother bear, 140cm tall, 117kg, dark brown fur) that is charging forward without flinching. The hiker's face shows terror. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -92,11 +92,11 @@ Narrow mountain hiking trail in Hokkaido, thick bamboo grass walls on both sides
 シーン: 開放されたままの登山口を背景に、ヒグマ（CHAR-03）が登山道に立ち、人間の方向を見つめている。威圧的な眼差し
 キャラプロンプト（1:1）:
 ```
-CHAR-03: A large female brown bear (140cm, 117kg, dark brown fur) standing upright on a mountain trail, staring directly at the viewer with intense, unafraid eyes. Two small bear cubs visible slightly behind her. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: A large female brown bear (140cm, 117kg, dark brown fur) standing upright, staring directly at the viewer with intense, unafraid eyes. Two small bear cubs visible slightly behind her. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
-Open mountain trailhead in Hokkaido, no closure tape, no warning barriers, hikers freely entering. A mountain hiking trail in summer with dense bamboo grass and forest on both sides. Dappled sunlight. Quiet and eerie atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Open mountain trailhead in Hokkaido, no closure tape, no warning barriers. A mountain hiking trail in summer with dense bamboo grass and forest on both sides. Dappled sunlight. Quiet and eerie atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: ヒグマの目をクローズアップするカットを入れる。「登山道閉鎖なし」のテロップを重ね、「なぜクマは人間を襲ったのか」「なぜ登山道は閉鎖されなかったのか？」の2行テロップをゆっくりフェードイン。低音BGMで不安感を高める。
 
@@ -118,7 +118,7 @@ Open mountain trailhead in Hokkaido, no closure tape, no warning barriers, hiker
 シーン: 夏の清々しい早朝の登山口から、CHAR-01とCHAR-02が準備をして出発する。二人は笑顔で登山口を出発前の様子
 キャラプロンプト（1:1）:
 ```
-Two young male hikers preparing to set off. CHAR-01: 26-year-old Japanese male, blue jacket, gray pants, green daypack, smiling with anticipation. CHAR-02: male friend, orange jacket, black pants, red daypack, cheerful expression. Both checking their gear and looking toward the trail. Early morning golden sunrise light. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two young male hikers preparing to set off. CHAR-01: 26-year-old Japanese male, blue jacket, gray pants, green daypack, smiling with anticipation. CHAR-02: male friend, orange jacket, black pants, red daypack, cheerful expression. Both checking their gear. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -146,7 +146,7 @@ Rocky mountain trailhead in Hokkaido, summer morning. Wooden trail marker sign, 
 シーン: CHAR-01（曽田）が山頂からの絶景を眺め、感慨深げにしている。背景にGoogle Earthの羅臼岳地形
 キャラプロンプト（1:1）:
 ```
-CHAR-01: 26-year-old Japanese male in blue jacket and gray pants with green daypack, standing on a mountain summit, gazing out over a vast panoramic view with a deeply moved and determined expression. Hands on hips, wind in hair. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 26-year-old Japanese male in blue jacket and gray pants with green daypack, standing with a deeply moved and determined expression. Hands on hips, wind in hair. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -174,7 +174,7 @@ Panoramic view from a high mountain summit in Hokkaido. Rugged peaks in the dist
 シーン: CHAR-01とCHAR-02が長い登山道を元気よく歩んでいる。若々しい活気と自信に溢れている
 キャラプロンプト（1:1）:
 ```
-CHAR-01 (blue jacket, gray pants, green daypack) and CHAR-02 (orange jacket, black pants, red daypack) striding confidently and energetically along a winding mountain trail. Both young and enthusiastic, smiling. Bright summer morning on a mountain trail in Hokkaido. Forest path with sunlight streaming through birch trees. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01 (blue jacket, gray pants, green daypack) and CHAR-02 (orange jacket, black pants, red daypack) striding confidently and energetically. Both young and enthusiastic, smiling. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -210,7 +210,7 @@ Slow cinematic pan over bear claw marks on a birch tree in Hokkaido forest, then
 シーン: 知床の豊かな生態系を示す動物映像から、草原の中を歩くヒグマ（CHAR-03）へ繋がる
 キャラプロンプト（1:1）:
 ```
-CHAR-03: A large dark brown female Hokkaido brown bear (140cm, 117kg) walking calmly through a green alpine meadow. Powerful build, thick dark brown fur, small round ears. Natural habitat, no threat yet, but imposing presence. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: A large dark brown female Hokkaido brown bear (140cm, 117kg) walking calmly. Powerful build, thick dark brown fur, small round ears. Imposing presence. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -231,7 +231,7 @@ Wide alpine meadow in Hokkaido with low grass and wildflowers. Mountain ridge vi
 シーン: 夜明け前から明るくなっていく早朝、CHAR-01とCHAR-02が岩尾別温泉の登山口を出発する
 キャラプロンプト（1:1）:
 ```
-CHAR-01 (blue jacket, gray pants, green daypack) and CHAR-02 (orange jacket, black pants, red daypack) setting off together in early morning light. Both looking forward with determination. Backpacks fully loaded. Pre-dawn atmosphere, stars still faintly visible transitioning to dawn. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01 (blue jacket, gray pants, green daypack) and CHAR-02 (orange jacket, black pants, red daypack) setting off together. Both looking forward with determination. Backpacks fully loaded. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -276,7 +276,7 @@ Wide establishing shot of Mount Rausu under a brilliant blue summer sky. Camera 
 シーン: CHAR-01とCHAR-02が急坂を元気よく登っている。Google Earth地図でルートを確認
 キャラプロンプト（1:1）:
 ```
-CHAR-01 (blue jacket, gray pants, green daypack) and CHAR-02 (orange jacket, black pants, red daypack) hiking briskly uphill on a steep rocky mountain trail. Both look fit and energetic, maintaining good pace. Morning light, mountains visible ahead. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01 (blue jacket, gray pants, green daypack) and CHAR-02 (orange jacket, black pants, red daypack) hiking briskly uphill. Both look fit and energetic, maintaining good pace. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -296,7 +296,7 @@ Steep rocky hiking trail in Hokkaido mountains. Dramatic elevation gain visible,
 シーン: CHAR-01が弥三吉水で水をボトルに補給している。地図上で二つの水場の位置を確認
 キャラプロンプト（1:1）:
 ```
-CHAR-01 (blue jacket, gray pants, green daypack) kneeling at a small clear mountain spring, filling a water bottle from the natural water source. Calm and focused expression. Rocky mountain terrain around him. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01 (blue jacket, gray pants, green daypack) kneeling, filling a water bottle from a natural water source. Calm and focused expression. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -314,7 +314,7 @@ A small natural spring water source on a Hokkaido mountain trail. Crystal clear 
 シーン: 雪の残る高山帯をCHAR-01とCHAR-02が慎重に歩き、ついに山頂に到着する瞬間。感動と達成感
 キャラプロンプト（1:1）:
 ```
-CHAR-01 (blue jacket, gray pants, green daypack) and CHAR-02 (orange jacket, black pants, red daypack) first carefully navigating patches of snow at 1500m elevation, then reaching the rocky summit with arms raised in celebration. Wide smiles, exhausted but triumphant. Panoramic sky behind them. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01 (blue jacket, gray pants, green daypack) and CHAR-02 (orange jacket, black pants, red daypack) reaching a summit with arms raised in celebration. Wide smiles, exhausted but triumphant. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -346,7 +346,7 @@ A Hokkaido mountain trail at 1500m elevation in August with patches of snow rema
 シーン: CHAR-01とCHAR-02が山頂でくつろぎ写真を撮ったり食事をしている。その後、下山を始める後ろ姿へ
 キャラプロンプト（1:1）:
 ```
-CHAR-01 (blue jacket, gray pants, green daypack) and CHAR-02 (orange jacket, black pants, red daypack) relaxing on a mountain summit, eating lunch, taking photos, enjoying the view. Then, beginning their descent — turning to face the trail downward, adjusting their packs. The descent stretches below them through rocky terrain. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01 (blue jacket, gray pants, green daypack) and CHAR-02 (orange jacket, black pants, red daypack) relaxing on a mountain summit, eating lunch, taking photos, enjoying the view. Then, beginning their descent — turning to face the trail downward, adjusting their packs. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -384,11 +384,11 @@ Slow push down a narrow hiking trail in Hokkaido. Dense bamboo grass walls closi
 シーン: CHAR-01（曽田）が先を歩き、CHAR-02（友人）が後方に見える構図。200メートルの距離感を示す
 キャラプロンプト（1:1）:
 ```
-CHAR-01 (blue jacket, gray pants, green daypack) walking quickly ahead on a descending mountain trail, moving fast. CHAR-02 (orange jacket, black pants, red daypack) visible much further behind, smaller in the distance. Both descending through dense bamboo grass trail. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01 (blue jacket, gray pants, green daypack) walking quickly ahead, moving fast. CHAR-02 (orange jacket, black pants, red daypack) visible much further behind, smaller in the distance. Both descending. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
-Descending mountain trail in Hokkaido, lined with dense tall bamboo grass. Trail winding downward. Dappled midday sunlight. The separation between two hikers emphasized by the trail's curve. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Descending mountain trail in Hokkaido, lined with dense tall bamboo grass. Trail winding downward, stretching into the distance. Dappled midday sunlight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: CHAR-01を手前に大きく、CHAR-02を遠くに小さく表示。「距離：約200m」の矢印と距離マーカーを地図インフォグラフィックで表示。
 
@@ -402,7 +402,7 @@ Descending mountain trail in Hokkaido, lined with dense tall bamboo grass. Trail
 シーン: CHAR-01（曽田）が登山道を走るように急ぎ足で下山している。Google Earthで事件発生地点（標高550m）を表示
 キャラプロンプト（1:1）:
 ```
-CHAR-01 (blue jacket, gray pants, green daypack) jogging or running down a steep mountain trail, moving faster than a normal hiking pace. Footsteps kicking up small stones, leaning forward with momentum. Dense bamboo grass on both sides. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01 (blue jacket, gray pants, green daypack) jogging or running down a steep slope, moving faster than a normal hiking pace. Footsteps kicking up small stones, leaning forward with momentum. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -439,7 +439,7 @@ First-person perspective walking down a narrow mountain trail. Dense bamboo gras
 シーン: CHAR-01（曽田）がカーブを曲がる直前のシーン。一方でCHAR-03（母グマ）が岩を引っくり返してアリを食べている
 キャラプロンプト（1:1）:
 ```
-Split composition: CHAR-01 (blue jacket, gray pants, green daypack) approaching a blind curve on a narrow mountain trail at a fast pace, about to round the corner — tension at maximum. AND: CHAR-03: large dark brown female bear (140cm, 117kg) digging at a rotting log with powerful claws, eating ants, completely absorbed in feeding. Surrounded by dense bamboo grass. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Split composition: CHAR-01 (blue jacket, gray pants, green daypack) approaching a blind curve at a fast pace, about to round the corner — tension at maximum. AND: CHAR-03: large dark brown female bear (140cm, 117kg) digging at a rotting log with powerful claws, eating ants, completely absorbed in feeding. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -476,11 +476,11 @@ POV shot running through bamboo grass tunnel, rounding a blind corner fast. Came
 シーン: CHAR-01（曽田）が突然目の前に現れたCHAR-03（母グマ）と対峙する衝撃の瞬間。母グマと子グマ2頭
 キャラプロンプト（1:1）:
 ```
-CHAR-01 (26-year-old male, blue jacket, gray pants, green daypack) frozen in absolute shock, face showing pure terror, eyes wide, having come face to face with CHAR-03: a massive dark brown female bear (140cm, 117kg) just a few meters away on the narrow trail. Two small bear cubs visible beside the mother bear. The mother bear's protective stance. Extremely close encounter. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01 (26-year-old male, blue jacket, gray pants, green daypack) frozen in absolute shock, face showing pure terror, eyes wide, having come face to face with CHAR-03: a massive dark brown female bear (140cm, 117kg) just a few meters away. Two small bear cubs visible beside the mother bear. The mother bear's protective stance. Extremely close encounter. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
-Narrow mountain trail in Hokkaido. Dense bamboo grass on both sides. Split second of encounter - two figures facing each other at extremely close range. Shock and danger. Midday light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Narrow mountain trail in Hokkaido. Dense bamboo grass on both sides. Ominous midday light. Tension and danger in the air. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 衝撃的なBGMの一撃（ドン！）とともにヒグマの映像を出す。「目の前にヒグマ！」テロップを赤文字で強調。続けて「母グマ + 子グマ2頭 = 最も危険な組み合わせ」の警告ボックスを表示。
 
@@ -500,7 +500,7 @@ Narrow mountain trail in Hokkaido. Dense bamboo grass on both sides. Split secon
 シーン: CHAR-01（曽田）が恐怖で固まっている一方、CHAR-03（母グマ）が子グマを守るように立つ。子グマを守る本能の解説
 キャラプロンプト（1:1）:
 ```
-CHAR-01 (blue jacket, gray pants, green daypack) completely frozen with extreme fear, unable to move or speak. Face pale with terror. Body rigid. A split-second before a bear attack. AND: CHAR-03: A large dark brown female bear (140cm, 117kg) positioning herself protectively between her two small cubs and CHAR-01. The mother bear showing intense protective eyes, nostrils flaring, fur raised. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01 (blue jacket, gray pants, green daypack) completely frozen with extreme fear, unable to move or speak. Face pale with terror. Body rigid. A split-second before a bear attack. AND: CHAR-03: A large dark brown female bear (140cm, 117kg) positioning herself protectively between her two small cubs and CHAR-01. The mother bear showing intense protective eyes, nostrils flaring, fur raised. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -537,7 +537,7 @@ Slow-motion footage of a large female brown bear (dark brown fur, 140cm, massive
 シーン: 山の静寂の中に叫び声が響き、CHAR-02（友人）が遠くから叫び声を聞き顔が青ざめる
 キャラプロンプト（1:1）:
 ```
-CHAR-02 (orange jacket, black pants, red daypack) standing still on a mountain trail, having just heard a terrifying scream from far ahead. Face white with shock, eyes wide, mouth slightly open. The trail ahead curves out of sight, hiding the source of the sound. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02 (orange jacket, black pants, red daypack) standing still, having just heard a terrifying scream from far ahead. Face white with shock, eyes wide, mouth slightly open. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -555,7 +555,7 @@ Mountain trail in Hokkaido, mid-descent. Bamboo grass walls. The trail curves ah
 シーン: CHAR-02（友人）が全力疾走で駆けつける。現場到着の衝撃の瞬間
 キャラプロンプト（1:1）:
 ```
-CHAR-02 (orange jacket, black pants, red daypack) sprinting at full speed down the mountain trail toward the source of the screams. Face showing desperate urgency and fear. Running with all his strength. Then: arriving at the scene — face frozen in horror at what he sees. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02 (orange jacket, black pants, red daypack) sprinting at full speed toward the source of the screams. Face showing desperate urgency and fear. Running with all his strength. Then: arriving at the scene — face frozen in horror at what he sees. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -581,11 +581,11 @@ Mountain trail in Hokkaido descending toward a bend. Bamboo grass walls on both 
 シーン: CHAR-02（友人）がクマスプレーを取り出し必死に噴射しようとするが出ない。調査報告書のインフォグラフィック
 キャラプロンプト（1:1）:
 ```
-CHAR-02 (orange jacket, black pants, red daypack) desperately fumbling with a small bear spray canister, pressing the trigger repeatedly but nothing coming out. Face showing absolute panic and desperation. The spray is failing him at the worst possible moment. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02 (orange jacket, black pants, red daypack) desperately fumbling with a small bear spray canister, pressing the trigger repeatedly but nothing coming out. Face showing absolute panic and desperation. The spray is failing him at the worst possible moment. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
-Chaotic mountain trail scene in Hokkaido, bear attack in progress nearby. Dense bamboo grass trampled. Desperate emergency situation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Chaotic mountain trail scene in Hokkaido. Dense bamboo grass trampled and disturbed. Signs of a violent struggle — torn vegetation, scattered debris. Desperate emergency atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: スプレーが出ない瞬間の絶望を強調。「知床財団の調査報告」テロップとともに「問題①使用済みの形跡あり＝残量不足の可能性」「詳細は不明」を箇条書きインフォグラフィックで表示。赤い「×」マークで強調。「噴射不能」テロップを大きく表示。
 
@@ -622,7 +622,7 @@ Close-up of a defensive spray canister label clearly showing it is a personal se
 シーン: CHAR-03（母グマ）が正規品スプレーを浴びてひるむシーン。その後「正規品vs防犯スプレー」比較インフォグラフィック
 キャラプロンプト（1:1）:
 ```
-CHAR-03: A large dark brown female bear (140cm, 117kg) reacting to bear spray hitting her face. Eyes and nose being directly hit by the orange mist. The bear momentarily halting, pawing at her face in pain. Versus: the same bear being unaffected by a tiny personal security spray from only 2-3 meters. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: A large dark brown female bear (140cm, 117kg) reacting to bear spray hitting her face. Eyes and nose being directly hit by the orange mist. The bear momentarily halting, pawing at her face in pain. Versus: the same bear being unaffected by a tiny personal security spray from only 2-3 meters. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
@@ -640,11 +640,11 @@ Mountain trail in Hokkaido with orange bear spray mist in the air. Effective det
 シーン: 何も使えない絶体絶命の状況の中、CHAR-02（友人）が迷わず前に進む覚悟の表情
 キャラプロンプト（1:1）:
 ```
-CHAR-02 (orange jacket, black pants, red daypack) standing firm on a mountain trail, facing forward with absolute determination and courage. No weapons, no spray, nothing but bare hands and will. His face showing fierce resolve to protect his friend despite the impossible odds. Scattered gear visible — ineffective spray canister, empty backpack items — nothing useful. Photorealistic, shot on RED camera. Documentary style.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02 (orange jacket, black pants, red daypack) standing firm, facing forward with absolute determination and courage. No weapons, no spray, nothing but bare hands and will. His face showing fierce resolve to protect his friend despite the impossible odds. Scattered gear visible — ineffective spray canister, empty backpack items — nothing useful. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 背景プロンプト（16:9）:
 ```
-Mountain trail in Hokkaido. The scene of a bear attack just ahead. CHAR-02 facing forward alone, choosing to advance despite the danger. A moment of extraordinary human courage. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Mountain trail in Hokkaido. Signs of a violent struggle just ahead on the trail — torn vegetation, disturbed earth. An atmosphere of danger and crisis. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「スプレー×、武器×、道具×」の3連バツ印インフォグラフィックを表示。「それでも友人は見捨てなかった」のテロップを感動的な演出で。感情的なBGMに切り替え。
 
@@ -678,8 +678,13 @@ A young Japanese male in an orange jacket charging toward a large dark brown bea
 ---
 
 【制作メモ】ASSET-036 [キャラアニメーション]
+キャラプロンプト（1:1）:
 ```
-CHAR-02 (male hiker, orange jacket, black pants, red daypack) repeatedly punching a massive dark brown bear (CHAR-03, 140cm tall, 117kg) with his bare fists on a dense bamboo grass mountain trail. The bear barely reacts, continuing its attack on CHAR-01 (male hiker, blue jacket, gray pants, green daypack) on the ground. CHAR-02's face shows desperate determination. Rocky mountain trail. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02 (male hiker, orange jacket, black pants, red daypack) repeatedly punching a massive dark brown bear (CHAR-03, 140cm tall, 117kg) with his bare fists. The bear barely reacts, continuing its attack on CHAR-01 (male hiker, blue jacket, gray pants, green daypack) on the ground. CHAR-02's face shows desperate determination. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Dense bamboo grass mountain trail in Hokkaido. Rocky trail surface with signs of violent struggle. Disturbed vegetation and scattered debris. Tense, dark atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 画面右下に「友人：素手で応戦」というテロップを白文字で入れる。
 
@@ -710,8 +715,13 @@ Medical illustration style showing human leg anatomy with the femoral artery hig
 ---
 
 【制作メモ】ASSET-039 [キャラアニメーション]
+キャラプロンプト（1:1）:
 ```
-A massive dark brown bear (140cm, 117kg) dragging CHAR-01 (male hiker, blue jacket, gray pants, green daypack) by the leg into the dense bamboo grass thicket along a mountain trail. CHAR-02 (orange jacket, black pants, red daypack) reaches out in desperation as the bear disappears into the undergrowth. Dark, ominous atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A massive dark brown bear (CHAR-03, 140cm, 117kg) dragging CHAR-01 (male hiker, blue jacket, gray pants, green daypack) by the leg. CHAR-02 (orange jacket, black pants, red daypack) reaches out in desperation. Dark, ominous atmosphere. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Dense bamboo grass thicket along a Hokkaido mountain trail. Trail edge where vegetation has been pushed aside and broken, leading into dark undergrowth. Ominous, disturbing atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 
 ナレーター: ヒグマは友人の攻撃を1ミリも気にすることなく、曽田さんをくわえたまま、藪の中へと消えていきました。
@@ -734,8 +744,13 @@ Close-up of a digital watch showing 11:10 AM worn on a male hiker's wrist, with 
 ---
 
 【制作メモ】ASSET-041 [キャラアニメーション]
+キャラプロンプト（1:1）:
 ```
-A male hiker in an orange jacket and black pants with a red daypack urgently dialing emergency number 110 on his smartphone on a mountain trail. His hands are shaking, expression panicked. Dense bamboo grass behind him. In a close-up inset: a smartphone screen showing an active emergency call (110), the caller's face partially visible, showing extreme distress. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02 (male hiker, orange jacket, black pants, red daypack) urgently dialing emergency number 110 on his smartphone. His hands are shaking, expression panicked. In a close-up inset: a smartphone screen showing an active emergency call (110), showing extreme distress. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain trail in Hokkaido with dense bamboo grass on both sides. Midday light filtering through. Emergency atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 画面中央に鉤括弧付きで「"仲間がヒグマに襲われた"」というテロップを表示。緊急通報のSEを当てる。
 
@@ -789,8 +804,13 @@ A large brown bear standing guard over its catch in a dense forest, alert and te
 ---
 
 【制作メモ】ASSET-046 [キャラアニメーション]
+キャラプロンプト（1:1）:
 ```
-A rescue team leader in a Hokkaido Police uniform making a difficult decision, hand raised to stop the rescue team at a mountain trail entrance. His expression shows the anguish of having to prioritize safety over speed. Other team members stand behind him. The silhouette of a large bear is barely visible in the dense bamboo grass ahead. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A rescue team leader in a Hokkaido Police uniform making a difficult decision, hand raised to stop the team. His expression shows the anguish of having to prioritize safety over speed. Other team members stand behind him. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain trail entrance in Hokkaido. Dense bamboo grass ahead, the silhouette of a large bear barely visible in the vegetation. Ominous atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 画面下部に「安全確保を最優先 → 翌朝まで捜索を延期」というテロップを表示。
 
@@ -810,8 +830,13 @@ A somber scene at the base of a Hokkaido mountain at dusk. Rescue vehicles and p
 ---
 
 【制作メモ】ASSET-048 [キャラアニメーション]
+キャラプロンプト（1:1）:
 ```
-CHAR-02 (male hiker, orange jacket, black pants, red daypack) standing alone on a mountain trail observation point, phone in hand. He stares into the distance with a shocked expression. The view shows the Okhotsk Sea in the background. In the distance: a large dark brown Hokkaido brown bear walking calmly down the mountain hiking trail. The bear moves confidently without fear. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02 (male hiker, orange jacket, black pants, red daypack) standing alone, phone in hand. He stares into the distance with a shocked expression. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain trail observation point in Hokkaido with a view of the Okhotsk Sea. In the distance, a large dark brown Hokkaido brown bear walking calmly down the mountain hiking trail, moving confidently without fear. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 
 ナレーター: なんと、それはヒグマが、登山道を下っている姿でした。
@@ -865,8 +890,13 @@ A trail closure barrier with warning signs in Japanese placed across the entranc
 ---
 
 【制作メモ】ASSET-053 [キャラアニメーション]
+キャラプロンプト（1:1）:
 ```
-A rescue team assembling at the Iwaobetsu trailhead in the early morning light, August 15th. Team members in orange rescue uniforms, Hokkaido Police in dark uniforms, hunters with rifles, and rescue dogs on leashes. Misty morning atmosphere at the base of Mt. Rausu. A wide shot of diverse rescue team with clear identification of each group. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A rescue team assembling: team members in orange rescue uniforms, Hokkaido Police in dark uniforms, hunters with rifles, and rescue dogs on leashes. A wide shot of diverse rescue team with clear identification of each group. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Iwaobetsu trailhead at the base of Mt. Rausu in the early morning light, August 15th. Misty morning atmosphere. Mountain looming in the background. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 各人物グループの上に「北海道警」「消防」「知床財団」「ハンター」というラベルを矢印付きで表示。
 
@@ -878,8 +908,13 @@ A rescue team assembling at the Iwaobetsu trailhead in the early morning light, 
 ---
 
 【制作メモ】ASSET-054 [キャラアニメーション]
+キャラプロンプト（1:1）:
 ```
-A hunter with a rifle leading a rescue team up a narrow mountain trail through dense bamboo grass. The hunter scans the vegetation ahead cautiously. A police dog handler with a German Shepherd follows, the dog sniffing the ground and tracking a scent. Rescue team members follow in single file behind. Tense, alert atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A hunter with a rifle leading a rescue team. The hunter scans ahead cautiously. A police dog handler with a German Shepherd follows, the dog sniffing the ground and tracking a scent. Rescue team members follow in single file behind. Tense, alert expressions. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Narrow mountain trail in Hokkaido through dense bamboo grass. The trail stretches upward through thick vegetation. Tense, alert atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 
 ナレーター: ヒグマがまだ付近にいることを前提に、ハンターが先頭に立ちました。
@@ -898,8 +933,13 @@ A digital watch showing 1:00 PM on a rescue worker's wrist, with a mountain fore
 ---
 
 【制作メモ】ASSET-056 [キャラアニメーション]
+キャラプロンプト（1:1）:
 ```
-A rescue team on a mountain trail suddenly stopping as they encounter a large dark brown mother bear (140cm tall, 117kg) with two small bear cubs ahead on the trail. The hunter raises his rifle. The team freezes. Dense bamboo grass on both sides. "母グマ" "子グマ①" "子グマ②" visible as individual animals in clear positions. Tense confrontation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A rescue team suddenly stopping as they encounter CHAR-03: a large dark brown mother bear (140cm tall, 117kg) with two small bear cubs. The hunter raises his rifle. The team freezes. "母グマ" "子グマ①" "子グマ②" labeled. Tense confrontation. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain trail in Hokkaido with dense bamboo grass on both sides. Narrow path stretching ahead. Tense, dangerous atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「母グマ」「子グマ①」「子グマ②」のラベルを矢印付きで各個体に表示。
 
@@ -922,8 +962,13 @@ Google Earth-style aerial view of the Iwaobetsu trail at 550m elevation on Mt. R
 ---
 
 【制作メモ】ASSET-058 [キャラアニメーション]
+キャラプロンプト（1:1）:
 ```
-A hunter taking a precise rifle shot at a large dark brown mother bear on a mountain trail. The rescue team stands back. Dramatic moment frozen in time. Mountain forest setting with afternoon light. Intense and sobering atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A hunter taking a precise rifle shot at a large dark brown mother bear (CHAR-03). The rescue team stands back. Dramatic moment frozen in time. Intense and sobering atmosphere. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain trail in Hokkaido surrounded by forest. Afternoon light filtering through the trees. Intense and sobering atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 
 ナレーター: すかさずハンターが母グマを銃撃。
@@ -1079,8 +1124,13 @@ A large dark brown bear confidently walking along the side of a road in the Iwao
 ---
 
 【制作メモ】ASSET-072 [キャラアニメーション]
+キャラプロンプト（1:1）:
 ```
-Shiretoko Foundation staff in green vests firing rubber bullets and shooting warning fireworks toward a large dark brown bear on a mountain trail. Multiple attempts visible. In a close-up reaction insert: the bear flinches briefly from a rubber bullet impact but immediately regains composure, holding its ground. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Shiretoko Foundation staff in green vests firing rubber bullets and shooting warning fireworks toward CHAR-03 (large dark brown bear). Multiple attempts visible. In a close-up reaction insert: the bear flinches briefly from a rubber bullet impact but immediately regains composure, holding its ground. Desaturated color palette, vignette edges. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain trail in Hokkaido. Dense forest on both sides. Smoke and debris from firework deterrents visible in the air. Tense atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 画面下部に「ゴム弾・花火で威嚇→それでも嫌がる様子すら見せなかった」というテロップを赤文字で表示。
 
@@ -1169,8 +1219,13 @@ Wildlife management meeting room. Japanese bear researchers and officials gather
 ナレーター: ヒグマ駆除のために、簡単に閉鎖できない場所だったのです。
 ナレーター: 国立公園内であること。そして、観光地としての価値があること。
 
+キャラプロンプト（1:1）:
 ```
-CHAR-03 (mother bear SH, 140cm, 117kg, dark brown fur) stands on a mountain trail. Superimposed transparent icons around her: a UNESCO plaque, a national park sign, a tourist camera, a closed gate with a red X. The icons visually "trap" the bear in place, unable to be removed. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03 (mother bear SH, 140cm, 117kg, dark brown fur) standing with superimposed transparent icons around her: a UNESCO plaque, a national park sign, a tourist camera, a closed gate with a red X. The icons visually "trap" the bear in place, unable to be removed. Desaturated color palette, vignette edges. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain trail in Hokkaido's Shiretoko region. Dense forest setting with UNESCO World Heritage signage visible. National park entrance signs. Tourist infrastructure. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: アイコンを1つずつフェードインし「世界自然遺産」「国立公園」「観光地」テロップを順に重ねる。「閉鎖できない」に合わせて赤Xゲートを最後に表示。
 
@@ -1180,9 +1235,13 @@ CHAR-03 (mother bear SH, 140cm, 117kg, dark brown fur) stands on a mountain trai
 ナレーター: 知床財団はヒグマへの威嚇を繰り返しましたが、結局、母グマの行動は変わりませんでした。さらに、知床財団によるヒグマの記録を追っていくと、ある事実が浮かび上がります。
 ナレーター: さらに、知床財団によるヒグマの記録を追っていくと、ある事実が浮かび上がります。
 
-
+キャラプロンプト（1:1）:
 ```
-Shiretoko Foundation staff members in safety vests fire rubber bullets and handheld fireworks toward CHAR-03 (mother bear SH) on a forest trail. The bear barely flinches — she stands her ground, staring back calmly. Staff exchange nervous glances. Repeated attempt implied by motion lines. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Shiretoko Foundation staff members in safety vests fire rubber bullets and handheld fireworks toward CHAR-03 (mother bear SH). The bear barely flinches — she stands her ground, staring back calmly. Staff exchange nervous glances. Repeated attempt implied by motion lines. Desaturated color palette, vignette edges. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Forest trail in Hokkaido's Shiretoko region. Dense vegetation on both sides. Smoke and debris from firework deterrents in the air. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 威嚇を複数回繰り返す演出（動線アニメーション）。「ある事実が浮かび上がります」で次カットへのブリッジとして暗転。
 
@@ -1205,8 +1264,13 @@ Calendar graphic animating to July 29th. The date glows briefly then fades. Behi
 ナレーター: それでも、こうした行為は後を絶ちませんでした。
 ナレーター: 違反した場合、罰則の対象です。
 
+キャラプロンプト（1:1）:
 ```
-A tourist's car window rolled down on a forest road. A hand reaches out holding a snack bag, tossing chips toward CHAR-03 (mother bear SH) who approaches the vehicle eagerly. Other tourists inside the car lean over to watch, smiling and holding smartphones. Cheerful mood contrasted with ominous undertone. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A tourist's hand reaches out from a car window holding a snack bag, tossing chips toward CHAR-03 (mother bear SH) who approaches eagerly. Other tourists inside the car lean over to watch, smiling and holding smartphones. Cheerful mood contrasted with ominous undertone. Desaturated color palette, vignette edges. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Forest road in Hokkaido's Shiretoko region. Dense trees lining both sides of the road. A parked vehicle visible. Cheerful but ominous atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「条例で禁止」テロップを赤字でオーバーレイ。「それでも後を絶たず」のナレーションに合わせ、スマホを構える観光客を複数コマで繰り返し表示。
 
@@ -1218,8 +1282,13 @@ A tourist's car window rolled down on a forest road. A hand reaches out holding 
 ナレーター: そして一度でも人間から食べ物をもらうと、
 ナレーター: クマは一度でも人間の食べ物の味を覚えると、その記憶は消えないとされています。
 
+キャラプロンプト（1:1）:
 ```
-CHAR-03 (mother bear SH) sniffs a human's hand holding a snack. The bear reaching toward a human offering food, showing an eager happy expression. The scene conveys the moment of dangerous conditioning — the bear learning to associate humans with food.  Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03 (mother bear SH) sniffs a human's hand holding a snack. The bear reaching toward food, showing an eager happy expression. The scene conveys the moment of dangerous conditioning — the bear learning to associate humans with food. Desaturated color palette, vignette edges. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Forest road in Hokkaido's Shiretoko region. Natural wilderness setting. The atmosphere conveys the danger of wildlife habituation. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「?」→「記憶固定」への変化アニメーションを段階的に表示。「永久に記憶」テロップを強調。
 
@@ -1230,9 +1299,13 @@ CHAR-03 (mother bear SH) sniffs a human's hand holding a snack. The bear reachin
 ナレーター: そして、近づいても食べ物がもらえなかった場合、やがて苛立ちへと変わり、人間を襲う動機となることがあります。
 ナレーター: その結果、クマは積極的に人間に近づくことに、、
 
-
+キャラプロンプト（1:1）:
 ```
-CHAR-03 (mother bear SH) walks confidently toward a group of tourists. First panel: tourists reach out with food — bear's expression happy. Second panel: tourists have no food and back away — bear's expression shifts from hopeful to frustrated, eyes narrowing, brow furrowing, red anger lines around head. The progression from reward to aggression shown in two panels. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03 (mother bear SH) walks confidently toward a group of tourists. First panel: tourists reach out with food — bear's expression happy. Second panel: tourists have no food and back away — bear's expression shifts from hopeful to frustrated, eyes narrowing, brow furrowing, red anger lines around head. The progression from reward to aggression shown in two panels. Desaturated color palette, vignette edges. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Forest road in Hokkaido's Shiretoko region. A natural area where wildlife and tourists interact. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 2パネルを左右に配置し感情変化を明確化。「苛立ち→攻撃」の矢印アニメーション追加。
 
@@ -1265,8 +1338,13 @@ Television screen showing a STV Sapporo news broadcast with bear incident headli
 【制作メモ】ASSET-087 [キャラアニメーション]
 ナレーター: 観光客が写真を撮り、スナック菓子を投げ、「かわいい」と声をかけていたのです。
 
+キャラプロンプト（1:1）:
 ```
-CHAR-03 (mother bear SH) posing on a roadside while tourists surround her taking selfies and photos, hands extending with snacks. One tourist's face showing delight. The bear eats calmly — almost like a tourist attraction, comfortable and relaxed among humans. Ominous undertone beneath the cheerful celebrity scene. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03 (mother bear SH) posing while tourists surround her taking selfies and photos, hands extending with snacks. One tourist's face showing delight. The bear eats calmly — almost like a tourist attraction, comfortable and relaxed among humans. Ominous undertone beneath the cheerful celebrity scene. Desaturated color palette, vignette edges. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Roadside in Hokkaido's Shiretoko region. Dense forest in the background. A natural area near a road where wildlife appears. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「アイドル化された危険」のコントラストが伝わるよう、観光客の笑顔と背景の警告看板を同一フレームに配置。
 
@@ -1288,9 +1366,13 @@ Calendar showing August 10 highlighted in amber/orange with countdown "事件ま
 ナレーター: 子グマ2頭を連れた母グマが、登山道の上に姿を表したと報告されています。登山者、そしてガイドを含む別のパーティも、その場に居合わせていました。
 ナレーター: 登山者、そしてガイドを含む別のパーティも、その場に居合わせていました。
 
-
+キャラプロンプト（1:1）:
 ```
-CHAR-03 (mother bear SH, dark brown, 140cm) walks onto the mountain trail with two small cubs following close behind. She stops in the middle of the path and looks directly toward the camera. A group of hikers including a professional guide freeze behind her — the guide raises his arm signaling the group to stop. Dense forest on both sides. Everyone holds their breath. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03 (mother bear SH, dark brown, 140cm) walks with two small cubs following close behind. She stops and looks directly toward the camera. A group of hikers including a professional guide freeze — the guide raises his arm signaling the group to stop. Everyone holds their breath. Desaturated color palette, vignette edges. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain trail in Hokkaido with dense forest on both sides. The path stretches ahead through the wilderness. Tense atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 
 ---
@@ -1323,9 +1405,13 @@ Split comparison: Left — a generic wild brown bear encounters hikers and immed
 ナレーター: この時、居合わせた登山者の中には、恐怖を感じてその日のうちに下山した者もいました。しかし、登山道は閉鎖されることなく、そのまま開放されていました。
 ナレーター: しかし、登山道は閉鎖されることなく、そのまま開放されていました。
 
-
+キャラプロンプト（1:1）:
 ```
-A hiker from the August 10 group visibly shaken, hurriedly descending the mountain trail. Their face shows residual fear. In the next panel, the Iwaubetsu trailhead with its gate wide open — other hikers continue arriving without any closure signage. No warning barrier. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A hiker from the August 10 group visibly shaken, hurriedly descending. Their face shows residual fear. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+The Iwaubetsu trailhead with its gate wide open. No closure signage. No warning barrier. Other hikers' gear visible at the entrance. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「下山した者」→「開放されたまま」の2コマ対比。「閉鎖なし」テロップをオーバーレイ。
 
@@ -1366,8 +1452,13 @@ Google Earth flythrough of the Iwaubetsu trail between elevation 780m (Yasayoshi
 【制作メモ】ASSET-096 [キャラアニメーション]
 ナレーター: 1人の登山者が、大人のヒグマと至近距離で遭遇。すかさずクマスプレーを噴射。
 
+キャラプロンプト（1:1）:
 ```
-A solo hiker on the Iwaubetsu trail suddenly stops — CHAR-03 (mother bear SH) is just meters away on the same path. Both freeze. Then the hiker draws a bear spray canister and fires a wide orange cloud directly toward CHAR-03. The spray billows toward the bear. The hiker's stance braced and desperate. Dramatic action moment. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A solo hiker suddenly stops — CHAR-03 (mother bear SH) is just meters away. Both freeze. Then the hiker draws a bear spray canister and fires a wide orange cloud directly toward CHAR-03. The spray billows toward the bear. The hiker's stance braced and desperate. Dramatic action moment. Desaturated color palette, vignette edges. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+The Iwaubetsu trail in Hokkaido. Narrow mountain path through dense vegetation. Dramatic atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 
 ---
@@ -1395,8 +1486,13 @@ CHAR-03 backs away slightly from the spray cloud — the hiker watches with caut
 【制作メモ】ASSET-099 [キャラアニメーション]
 ナレーター: クマはスプレーを浴びながら、接近と後退を繰り返し、登山者のあとを5分間、つけまわしたと報告されています。
 
+キャラプロンプト（1:1）:
 ```
-Overhead trail map view showing CHAR-03's movement pattern: advance → retreat → advance → retreat, following the hiker's path. Arrows and timer showing 5-minute duration. The hiker slowly moving backward while the bear follows in repeated cycles. Orange spray cloud visible at each advance. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Overhead trail map view showing CHAR-03's movement pattern: advance → retreat → advance → retreat, following the hiker's path. Arrows and timer showing 5-minute duration. The hiker slowly moving backward while the bear follows in repeated cycles. Orange spray cloud visible at each advance. Desaturated color palette, vignette edges. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Overhead view of a mountain trail in Hokkaido. Narrow path through dense forest and bamboo grass. Movement arrows and path indicators visible. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 
 ---
@@ -1405,9 +1501,13 @@ Overhead trail map view showing CHAR-03's movement pattern: advance → retreat 
 ナレーター: たったの5分と思うかもしれません。しかし、100キロを超えるヒグマが、すぐそこにいる5分間です。いつ向かってくるかわかりません。
 ナレーター: しかし、100キロを超えるヒグマが、すぐそこにいる5分間です。いつ向かってくるかわかりません。
 
-
+キャラプロンプト（1:1）:
 ```
-CHAR-03 (117kg) shown in size comparison next to the hiker — the bear's massive scale emphasized. A stopwatch showing "5分" in the corner. The hiker's face frozen in pure fear. The bear stares ahead with calm confidence. POV inset showing the bear's dark eyes from the hiker's perspective. Utterly tense standoff. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03 (117kg) shown in size comparison next to the hiker — the bear's massive scale emphasized. A stopwatch showing "5分" in the corner. The hiker's face frozen in pure fear. The bear stares ahead with calm confidence. POV inset showing the bear's dark eyes from the hiker's perspective. Utterly tense standoff. Desaturated color palette, vignette edges. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain trail in Hokkaido. Narrow path with dense vegetation on both sides. Tense, claustrophobic atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: ストップウォッチのカウントを画面上で動かし続ける演出。POVインサートカットを挿入。
 
@@ -1485,8 +1585,13 @@ An empty official manual opened to a blank page labeled "入山規制判断基�
 ナレーター: 「危ないクマがいたら、とりあえず2、3日でいいから辺りを閉鎖して様子を見る」
 ナレーター: 地元の観光ガイド、綾野雄次さんは
 
+キャラプロンプト（1:1）:
 ```
-CHAR-03 pursuing the hiker while drenched in orange spray. A checkbox list labeled "閉鎖基準" floats in the air beside the scene — all boxes blank/unchecked. Adjacent panel: a local tourism guide (Ayano Yuji) in outdoor gear pointing toward a trail and speaking. His words shown as a speech bubble: "2、3日でいいから閉鎖して様子を見る." The contrast between the common-sense solution and the absence of a system. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03 pursuing the hiker while drenched in orange spray. A checkbox list labeled "閉鎖基準" floats in the air beside the scene — all boxes blank/unchecked. Adjacent panel: a local tourism guide (Ayano Yuji) in outdoor gear pointing and speaking. His words shown as a speech bubble: "2、3日でいいから閉鎖して様子を見る." The contrast between the common-sense solution and the absence of a system. Desaturated color palette, vignette edges. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain trail in Hokkaido. Dense vegetation. Orange bear spray mist visible in the air. Tense atmosphere. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: チェックリストの空白ボックスを強調。ガイドの名前テロップ「観光ガイド 綾野雄次さん」を表示。
 
@@ -1526,8 +1631,13 @@ Nishiyama Shuji (campsite manager, middle-aged man in work vest) points skeptica
 【制作メモ】ASSET-111 [キャラアニメーション]（タイムライン統合: ASSET-237〜240）
 ナレーター: 7月29日。観光客がヒグマに餌を与える。8月10日。母子グマが登山道に現れ、複数の人間がいても逃げない。8月12日。ヒグマがスプレーを浴びても、登山者を5分間つきまとう。そして、8月14日。曽田さんが襲われる。
 
+キャラプロンプト（1:1）:
 ```
-Four-panel timeline animation. Panel 1 "7月29日": tourist's hand feeding snacks to CHAR-03 from car window. Panel 2 "8月10日": CHAR-03 with two cubs on trail, hikers backing away — bear stands firm. Panel 3 "8月12日": CHAR-03 pursuing hiker through orange spray cloud, "5分" timer above. Panel 4 "8月14日": date in bold red, CHAR-01 (Sota, blue jacket) silhouette on trail, CHAR-03 charging from behind the curve. Timeline bar at bottom escalating in red intensity across all four panels. Desaturated color palette, vignette edges. Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Four-panel timeline animation. Panel 1 "7月29日": tourist's hand feeding snacks to CHAR-03 from car window. Panel 2 "8月10日": CHAR-03 with two cubs, hikers backing away — bear stands firm. Panel 3 "8月12日": CHAR-03 pursuing hiker through orange spray cloud, "5分" timer above. Panel 4 "8月14日": date in bold red, CHAR-01 (Sota, blue jacket) silhouette, CHAR-03 charging. Timeline bar at bottom escalating in red intensity. Desaturated color palette, vignette edges. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Four-panel timeline layout on dark background. Panel backgrounds showing: 1) Hokkaido forest road, 2) Mountain trail, 3) Mountain trail with orange spray mist, 4) Dense bamboo grass trail curve. Timeline bar at bottom escalating in red intensity. Desaturated color palette, vignette edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: パネルを1枚ずつリズミカルに表示。タイムラインバーが左から右へ赤く点灯していく演出。最終パネルで一瞬の暗転。
 
@@ -1617,8 +1727,13 @@ Photorealistic, shot on RED camera. Documentary style. A stone monument inscribe
 
 シーン: 3つの日付をタイムライン形式で並べ、エスカレーションを表現。各コマに対応する場面（餌付け/母子グマ/スプレー無効）をマンガパネル風に配置
 
+キャラプロンプト（1:1）:
 ```
-Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. A three-panel timeline comic layout on dark background. Panel 1 — date label "7月29日": a tourist hand reaching from a car window throwing snack food toward a large dark brown Hokkaido brown bear (CHAR-03). Panel 2 — date label "8月10日": CHAR-03 and two small cubs standing calmly on a narrow mountain hiking trail while three hikers back away. Panel 3 — date label "8月12日": CHAR-03 walking forward through orange capsaicin bear spray cloud toward a retreating hiker, completely unbothered. Each panel enclosed in a bold comic frame. Tension escalates left to right. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A three-panel timeline comic layout. Panel 1 — date label "7月29日": a tourist hand reaching from a car window throwing snack food toward CHAR-03 (large dark brown Hokkaido brown bear). Panel 2 — date label "8月10日": CHAR-03 and two small cubs standing calmly while three hikers back away. Panel 3 — date label "8月12日": CHAR-03 walking forward through orange capsaicin bear spray cloud toward a retreating hiker, completely unbothered. Each panel enclosed in a bold comic frame. Tension escalates left to right. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Three-panel layout on dark background. Panel 1: Hokkaido forest road with a car. Panel 2: Narrow mountain hiking trail in dense vegetation. Panel 3: Mountain trail with orange bear spray mist. Each panel enclosed in a bold comic frame. Tension escalates left to right. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 画面左上に各コマの日付テロップを大きく表示。左→中→右と順番に点灯。最後のパネルで「スプレー無効」テキストを赤でハイライト
 
@@ -1649,8 +1764,13 @@ Photorealistic, shot on RED camera. Documentary style. Split composition: upper 
 
 シーン: 混雑する登山口。多くのハイカーが注意看板を無視して通り過ぎている。背後にクマのシルエット。下部にHTB報道テロップ引用
 
+キャラプロンプト（1:1）:
 ```
-Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. A busy mountain trailhead during Obon holiday week. Multiple Japanese hikers in colorful gear passing through the entrance, most walking past a warning sign on a wooden post without reading it. Bright summer day, cheerful bustling crowd. In the upper corner, a small illustrated Hokkaido brown bear face watches from behind a bamboo leaf — unseen danger. At the bottom of the frame, a news banner-style strip reads: "HTB報道：目撃情報が登山者に十分に届いていなかった". Ironic contrast between festive crowd and systemic failure. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Multiple Japanese hikers in colorful gear passing through a trailhead entrance, most walking past a warning sign without reading it. Bright cheerful bustling crowd. In the upper corner, a small illustrated Hokkaido brown bear face watches from behind a bamboo leaf — unseen danger. At the bottom, a news banner reads: "HTB報道：目撃情報が登山者に十分に届いていなかった". White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+A busy mountain trailhead during Obon holiday week. Wooden post with a warning sign visible. Bright summer day. Ironic contrast between festive atmosphere and systemic failure. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「野放し状態」テロップを画面右に表示。HTBテロップ引用文を画面下部にニュース字幕スタイルで表示
 
@@ -1664,8 +1784,13 @@ Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, l
 
 シーン: 下山後の登山者が頭を抱えて悔やんでいる。スマホに後から見つけたクマ警告情報が映っている
 
+キャラプロンプト（1:1）:
 ```
-Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. A single Japanese male hiker in his 30s sitting on a bench at the base of a mountain, head in his hands with a deeply regretful expression. His hiking gear is slightly disheveled. A smartphone screen visible in his hand shows a bear warning website page — information he found after the fact. Autumn-tinged mountain scenery in background. Heavy guilt and regret atmosphere. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A single Japanese male hiker in his 30s sitting on a bench, head in his hands with a deeply regretful expression. His hiking gear is slightly disheveled. A smartphone screen visible in his hand shows a bear warning website page — information he found after the fact. Heavy guilt and regret atmosphere. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+The base of a mountain with autumn-tinged scenery. A bench near a trailhead. Heavy, somber atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 画面下に証言テロップ「クマの出没情報は一切知らなかった」を表示
 
@@ -1714,8 +1839,13 @@ Slow drone flyover of Shiretoko Peninsula coastline. Dense dark green primordial
 
 シーン: 斜里町役場の電話が鳴り続け、批判の吹き出しが画面に溢れる。子グマへの言及と遺産返還要求の声が重なる
 
+キャラプロンプト（1:1）:
 ```
-Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. A Japanese town hall office (斜里町役場) interior — multiple telephone handsets all ringing simultaneously with red lightning bolt symbols. A flustered office worker answers one phone while others continue ringing. Multiple speech bubbles fill the screen from different directions, each with an angry face and angry protest symbols and exclamation marks. The bubbles overlap and crowd the frame, red and orange tones convey heat and anger. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A flustered Japanese office worker answers one phone while multiple telephone handsets ring simultaneously with red lightning bolt symbols. Multiple speech bubbles fill the screen from different directions, each with an angry face and angry protest symbols and exclamation marks. The bubbles overlap and crowd the frame, red and orange tones convey heat and anger. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+A Japanese town hall office (斜里町役場) interior. Multiple telephone handsets on desks. Fluorescent lighting. Tense, overwhelmed atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「全国からクレームが殺到」テロップを画面中央に表示。吹き出しが左右から次々と現れるアニメーション。「子グマ」と「世界自然遺産」のキーワードを赤太文字でハイライト
 
@@ -1793,8 +1923,13 @@ Photorealistic, shot on RED camera. Documentary style. A formal press conference
 
 シーン: 副町長が真剣な表情で演台に立つ。「知床のクマは人を襲わないということはない」の言葉を吹き出しで強調
 
+キャラプロンプト（1:1）:
 ```
-Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. A Japanese male official (副町長 / deputy mayor) in formal attire standing at a podium with a serious somber expression. A speech bubble above reads: "知床のクマは人を襲わないということはない". Behind him, a silhouette of Mount Rausu at dusk. The expression and posture convey the gravity of official acknowledgment. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese male official (副町長 / deputy mayor) in formal attire standing at a podium with a serious somber expression. A speech bubble above reads: "知床のクマは人を襲わないということはない". The expression and posture convey the gravity of official acknowledgment. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+A silhouette of Mount Rausu at dusk. Somber, grave atmosphere. Official press conference setting implied. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 発言テロップを画面下部に順番に表示。「知床のクマは人を襲わないということはない」の行を赤太文字でハイライト
 
@@ -1911,8 +2046,9 @@ Photorealistic, shot on RED camera. Documentary style. Close-up of a hiker's wai
 
 シーン: 非対応スプレー（×）と正規品スプレー（✓）の比較。教育的インフォグラフィック
 
+キャラプロンプト（1:1）:
 ```
-Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. A side-by-side comparison illustration: Left panel — a small keychain-sized personal defense spray labeled "防犯スプレー" with a red ✗ overlay, caption "ヒグマ非対応・使用済み". Right panel — a large bright orange bear spray canister labeled "ヒグマ対応クマスプレー" with a green ✓ overlay, caption "正規品・新品". Bold contrasting colors, clear educational comparison. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A side-by-side comparison illustration: Left panel — a small keychain-sized personal defense spray labeled "防犯スプレー" with a red ✗ overlay, caption "ヒグマ非対応・使用済み". Right panel — a large bright orange bear spray canister labeled "ヒグマ対応クマスプレー" with a green ✓ overlay, caption "正規品・新品". Bold contrasting colors, clear educational comparison. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「非対応×」「正規品✓」の比較テロップを画面左右に表示。「チェック① ヒグマ対応の正規品・新品を使用」チェックボックス形式で追加
 
@@ -1930,8 +2066,13 @@ Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, l
 
 シーン: 正しく装備した登山者（ホルスター装着・✓）と誤った登山者（カバンの中・✗）の比較。「遭遇は一瞬」を示す文字演出を組み合わせ
 
+キャラプロンプト（1:1）:
 ```
-Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. Two cartoon hikers side by side: Left hiker (blue jacket) with a large orange bear spray clearly holstered at his hip, green ✓ above — caption "すぐ手が届く". Right hiker (same style) with bear spray buried deep in backpack, red ✗ above with sweat drops and the moment showing a bear suddenly appearing on the trail ahead — the hiker cannot reach his spray in time.  16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two cartoon hikers side by side: Left hiker (blue jacket) with a large orange bear spray clearly holstered at his hip, green ✓ above — caption "すぐ手が届く". Right hiker (same style) with bear spray buried deep in backpack, red ✗ above with sweat drops and a bear suddenly appearing ahead — the hiker cannot reach his spray in time. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain trail in Hokkaido. Dense bamboo grass on both sides. A bear suddenly visible on the trail ahead. Educational documentary atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「すぐ手が届く場所に装着」チェックボックステロップを表示。「遭遇は一瞬」テキストを太字で強調
 
@@ -1966,8 +2107,13 @@ First-person POV walking around a tight bend in a Hokkaido bamboo-grass mountain
 
 シーン: 鈴を鳴らし手を叩きながらゆっくり歩く正しい行動の登山者
 
+キャラプロンプト（1:1）:
 ```
-Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. CHAR-01 (blue jacket hiker) walking slowly and carefully on a bamboo-flanked mountain trail. He is clapping his hands, a small silver bear bell jingling on his pack strap, and sound effects "チリリン♪" and "パン！" emanating. His expression is calm and cautious. Green ✓ checkmarks float beside each action. Safe hiking educational illustration. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01 (blue jacket hiker) walking slowly and carefully. He is clapping his hands, a small silver bear bell jingling on his pack strap, and sound effects "チリリン♪" and "パン！" emanating. His expression is calm and cautious. Green ✓ checkmarks float beside each action. Safe hiking educational illustration. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+A bamboo-flanked mountain trail in Hokkaido. Dense vegetation on both sides. Calm, educational atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「チェック④ 鈴・声・手拍きでゆっくり歩く」チェックリストテロップを重ねる
 
@@ -2032,8 +2178,13 @@ Photorealistic, shot on RED camera. Documentary style. A laptop screen on a wood
 
 シーン: 登山口でスマホのクマ警告を見て踵を返す登山者。「命を守る決断」の表現
 
+キャラプロンプト（1:1）:
 ```
-Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. A cartoon hiker (blue jacket, similar to CHAR-01) standing at the trailhead, looking at a bear warning on his smartphone. He shakes his head calmly, turns around, and walks away from the mountain. A large green ✓ glows above him. In the background, the mountain trail entrance is visible. The message: a simple decision saves lives. Calm resolute tone. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A cartoon hiker (blue jacket, similar to CHAR-01) standing at a trailhead, looking at a bear warning on his smartphone. He shakes his head calmly, turns around, and walks away. A large green ✓ glows above him. The message: a simple decision saves lives. Calm resolute tone. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+A mountain trailhead entrance. The mountain trail stretches ahead into the wilderness. Calm, educational atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「このひと手間が、命を守ります」テロップを画面中央に大きくフェードイン表示
 
@@ -2070,8 +2221,13 @@ Photorealistic, shot on RED camera. Documentary style. A newly upgraded mountain
 
 シーン: 登山口の岐路に立つCHAR-01（入山か引き返しかの判断）。背景に羅臼岳の威容
 
+キャラプロンプト（1:1）:
 ```
-Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. A lone hiker (CHAR-01: blue jacket, green daypack) standing alone at a mountain trailhead entrance, facing the path ahead. He is holding a smartphone showing bear warning information. He stands at the fork between entering the trail and turning back — the decision visible in his contemplative expression. The mountain looms silently ahead. Background note: this is the bear's domain — powerful and indifferent. Quiet weighty atmosphere. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A lone hiker (CHAR-01: blue jacket, green daypack) standing alone, facing the path ahead. He is holding a smartphone showing bear warning information. He stands at the fork between entering and turning back — the decision visible in his contemplative expression. Quiet weighty atmosphere. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+A mountain trailhead entrance with the mountain looming silently ahead. This is the bear's domain — powerful and indifferent. Quiet weighty atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 「最後に判断するのは登山者自身です」テロップを中央に表示。続けて「知床の山はヒグマの生息地域」テロップを重ねる
 
@@ -2181,8 +2337,13 @@ Slow aerial pullback from Shiretoko forest canopy to a wide establishing shot of
 
 シーン: 3コマ構成——①追い払い→翌日戻る、②スプレーを受けても前進する目線のクローズアップ、③過去の餌付けの記憶（セピアフラッシュバック）
 
+キャラプロンプト（1:1）:
 ```
-Cute cartoon illustration style, thick black outlines, flat cel-shaded colors, large expressive eyes. Three-panel retrospective sequence: Panel 1 — a ranger waves arms to chase away CHAR-03 (dark brown bear), then right panel shows the bear back in the same spot the next morning (sunrise visible). Panel 2 — close-up of CHAR-03's face looking forward, undeterred, orange bear spray mist visible — eyes open and focused. Panel 3 (in soft sepia tones) — a memory bubble shows a tourist tossing food to a younger CHAR-03, the origin of her fearlessness. Deeply somber, bittersweet retrospective tone. 16:9 aspect ratio. Generate 5 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three-panel retrospective sequence: Panel 1 — a ranger waves arms to chase away CHAR-03 (dark brown bear), then right panel shows the bear back in the same spot the next morning. Panel 2 — close-up of CHAR-03's face looking forward, undeterred, orange bear spray mist visible — eyes open and focused. Panel 3 (in soft sepia tones) — a memory bubble shows a tourist tossing food to a younger CHAR-03, the origin of her fearlessness. Deeply somber, bittersweet retrospective tone. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Three-panel layout. Panel 1: Mountain trail at sunrise. Panel 2: Dense forest trail with orange bear spray mist. Panel 3 (sepia tones): Forest road in Shiretoko. Deeply somber, bittersweet retrospective tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
 → 編集者指示: 3コマを順番にフェードイン。各コマに対応するナレーションテロップを表示。「追い払い→戻る」「スプレーを浴びても」「餌をもらい人間を恐れなくなった」
 
