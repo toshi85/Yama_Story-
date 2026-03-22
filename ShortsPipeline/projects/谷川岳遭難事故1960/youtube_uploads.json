@@ -2,83 +2,16 @@
   "uploads": [
     {
       "episode": 1,
-      "video_id": "Tk0H476BXaM",
+      "video_id": "CxLVaMipycI",
       "publish_at": "2026-03-23T07:00:00+09:00"
     },
     {
       "episode": 2,
-      "video_id": "nGVM2nB6trE",
+      "video_id": "1r5g1TKhmvw",
       "publish_at": "2026-03-23T20:00:00+09:00"
-    },
-    {
-      "episode": 3,
-      "video_id": "XKsqD42VBm8",
-      "publish_at": "2026-03-24T07:00:00+09:00"
-    },
-    {
-      "episode": 4,
-      "video_id": "EUEgZGgS6yk",
-      "publish_at": "2026-03-24T20:00:00+09:00"
-    },
-    {
-      "episode": 5,
-      "video_id": "wmX3fmxuXHI",
-      "publish_at": "2026-03-25T07:00:00+09:00"
-    },
-    {
-      "episode": 6,
-      "video_id": "-lIH_XVRSqs",
-      "publish_at": "2026-03-25T20:00:00+09:00"
-    },
-    {
-      "episode": 7,
-      "video_id": "gas9sjacmn8",
-      "publish_at": "2026-03-26T07:00:00+09:00"
-    },
-    {
-      "episode": 8,
-      "video_id": "r8AyflcYk_k",
-      "publish_at": "2026-03-26T20:00:00+09:00"
-    },
-    {
-      "episode": 9,
-      "video_id": "_P6Z1KcTVoc",
-      "publish_at": "2026-03-27T07:00:00+09:00"
-    },
-    {
-      "episode": 10,
-      "video_id": "Fe9_to1UrBk",
-      "publish_at": "2026-03-27T20:00:00+09:00"
-    },
-    {
-      "episode": 11,
-      "video_id": "3k5Dfao968w",
-      "publish_at": "2026-03-28T07:00:00+09:00"
-    },
-    {
-      "episode": 12,
-      "video_id": "tACAU66JgH0",
-      "publish_at": "2026-03-28T20:00:00+09:00"
-    },
-    {
-      "episode": 13,
-      "video_id": "tywkHNBZ5bE",
-      "publish_at": "2026-03-29T07:00:00+09:00"
-    },
-    {
-      "episode": 14,
-      "video_id": "C1SQC-bQfio",
-      "publish_at": "2026-03-29T20:00:00+09:00"
-    },
-    {
-      "episode": 15,
-      "video_id": "s60IgdUgNyc",
-      "publish_at": "2026-03-30T07:00:00+09:00"
-    },
-    {
-      "episode": 16,
-      "video_id": "zd9NtEHt41c",
-      "publish_at": "2026-03-30T20:00:00+09:00"
     }
-  ]
+  ],
+  "pending": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+  "schedule_start": "2026-03-24T07:00:00+09:00",
+  "note": "ep03-16はクォータリセット後(3/23 17時JST頃)にアップロード。スケジュール: 3/24朝7時〜3/30夜20時"
 }

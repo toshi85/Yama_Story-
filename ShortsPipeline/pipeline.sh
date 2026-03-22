@@ -388,11 +388,11 @@ def build_title_filters(prev_label, font_path, title_lines, part_text, cta_text,
         f":fontsize=40:fontcolor=#CCCCCC:borderw=2:bordercolor=black"
         f":x=(w-text_w)/2:y={y}[parted];"
     )
-    y += 50
+    y += 70
     # CTA表示
     filters += (
         f"[parted]drawtext=fontfile={font_path}:text='{cta_text}'"
-        f":fontsize=30:fontcolor=#FFD700:borderw=1:bordercolor=black"
+        f":fontsize=30:fontcolor=#FFFF00:borderw=2:bordercolor=black"
         f":x=(w-text_w)/2:y={y}[final]"
     )
     return filters
@@ -438,7 +438,7 @@ for seg_dir, out_dir, label in versions:
     video_y = section_h + (section_h - scale_h) // 2  # 中央セクション内で上下中央
 
     # テキストは下セクション上端から配置（上揃え）
-    text_y = section_h * 2 + 20
+    text_y = section_h * 2 + 60
 
     inputs = ["-i", input_seg]
 
@@ -446,7 +446,7 @@ for seg_dir, out_dir, label in versions:
     if THUMBNAIL_PATH and os.path.exists(THUMBNAIL_PATH):
         inputs.extend(["-i", THUMBNAIL_PATH])
         # サムネを上セクション(640px)にフィット
-        thumb_w = out_w - 40
+        thumb_w = out_w - 100
         thumb_h = int(thumb_w * 9 / 16)
         if thumb_h > section_h - 20:
             thumb_h = section_h - 20
