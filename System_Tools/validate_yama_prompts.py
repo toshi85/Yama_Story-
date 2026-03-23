@@ -22,8 +22,9 @@ Yama_Story プロンプト品質バリデーター
   13. 孤立アセット — ナレーション紐づきなしのアセット検出
   14. 静止画連続 — 3連続以上の検出
   15. 映像密度 — 全体平均35字/ASSET以下か
-  16. ASSET構造順序 — ナレーター→制作メモ→プロンプトの正しい順序か (WARNING)
+  16. ASSET構造順序 — ナレーター→制作メモ→プロンプトの正しい順序か (FAIL)
   17. 末尾ゴミ行 — 最後のASSET以降に孤立ナレーション行や大量空行がないか (FAIL)
+  18. シーン行必須 — 全ASSETに「シーン:」行があるか (FAIL)
 """
 
 import sys
@@ -683,6 +684,28 @@ def check_asset_structure_order(lines):
     return issues
 
 
+def check_scene_line_required(lines):
+    """全ASSETに「シーン:」行があるかチェック。
+    【制作メモ】ASSET-XXXの直後15行以内に「シーン:」行がなければ欠落と判定。"""
+    issues = []
+    for i, line in enumerate(lines):
+        s = line.strip()
+        m = re.match(r'【制作メモ】(ASSET-\d+)', s)
+        if m:
+            asset_id = m.group(1)
+            has_scene = False
+            for j in range(i + 1, min(len(lines), i + 15)):
+                sj = lines[j].strip()
+                if sj.startswith('シーン:') or sj.startswith('シーン：'):
+                    has_scene = True
+                    break
+                elif sj.startswith('【制作メモ】') or sj == '---':
+                    break
+            if not has_scene:
+                issues.append((i + 1, asset_id))
+    return issues
+
+
 def check_trailing_garbage(lines):
     """末尾ゴミ行チェック: 最後のASSETのプロンプト・編集者指示の後に
     孤立したナレーション行や大量の空行がないか検出する。"""
@@ -976,17 +999,31 @@ def main():
     else:
         print("⏭️  SKIP: 台本突合チェック（第2引数に台本パスを指定すると実行）")
 
-    # 16. ASSET構造順序チェック（ナレーター→制作メモ→プロンプト）
+    # 16. ASSET構造順序チェック（ナレーター→制作メモ→プロンプト）— FAIL判定
     issues = check_asset_structure_order(lines)
     if issues:
-        warnings += 1
-        print(f"\n⚠️  WARNING: ASSET構造順序 — {len(issues)}件で【制作メモ】の前にナレーターなし")
+        all_pass = False
+        print(f"\n❌ FAIL: ASSET構造順序 — {len(issues)}件で【制作メモ】の前にナレーターなし")
         for ln, aid in issues[:5]:
             print(f"   L{ln} ({aid})")
         if len(issues) > 5:
             print(f"   ...他{len(issues)-5}件")
+        print(f"   → 正しい順序: ナレーター → 【制作メモ】→ シーン: → プロンプト → 編集者指示")
     else:
         print("✅ PASS: ASSET構造順序（ナレーター→制作メモ→プロンプト）")
+
+    # 18. シーン行必須チェック — 全ASSETに「シーン:」行があるか
+    scene_missing = check_scene_line_required(lines)
+    if scene_missing:
+        all_pass = False
+        print(f"\n❌ FAIL: シーン行欠落 — {len(scene_missing)}件で「シーン:」行なし")
+        for ln, aid in scene_missing[:5]:
+            print(f"   L{ln} ({aid})")
+        if len(scene_missing) > 5:
+            print(f"   ...他{len(scene_missing)-5}件")
+        print(f"   → 全ASSETに「シーン: <日本語でシーン説明>」行が必須です")
+    else:
+        print("✅ PASS: シーン行（全ASSETに「シーン:」あり）")
 
     # 17. 末尾ゴミ行チェック
     issues = check_trailing_garbage(lines)
