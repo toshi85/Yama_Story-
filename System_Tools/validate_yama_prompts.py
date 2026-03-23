@@ -25,6 +25,7 @@ Yama_Story プロンプト品質バリデーター
   16. ASSET構造順序 — ナレーター→制作メモ→プロンプトの正しい順序か (FAIL)
   17. 末尾ゴミ行 — 最後のASSET以降に孤立ナレーション行や大量空行がないか (FAIL)
   18. シーン行必須 — 全ASSETに「シーン:」行があるか (FAIL)
+  19. Google Earthプロンプト禁止 — [Google Earth]カテゴリに```ブロックがないか (FAIL)
 """
 
 import sys
@@ -684,6 +685,27 @@ def check_asset_structure_order(lines):
     return issues
 
 
+def check_google_earth_no_prompt(lines):
+    """[Google Earth]カテゴリのASSETに```プロンプトブロックがないかチェック。
+    Google Earthは編集者がGoogle Earth Studioで画面録画する素材であり、
+    Lovart用プロンプトを書いてはいけない。"""
+    issues = []
+    for i, line in enumerate(lines):
+        s = line.strip()
+        m = re.match(r'【制作メモ】(ASSET-\d+)\s*\[Google Earth\]', s)
+        if m:
+            asset_id = m.group(1)
+            # 次の【制作メモ】または---まで探索し、```ブロックがあれば違反
+            for j in range(i + 1, min(len(lines), i + 30)):
+                sj = lines[j].strip()
+                if sj.startswith('【制作メモ】'):
+                    break
+                if sj == '```':
+                    issues.append((i + 1, asset_id))
+                    break
+    return issues
+
+
 def check_scene_line_required(lines):
     """全ASSETに「シーン:」行があるかチェック。
     【制作メモ】ASSET-XXXの直後15行以内に「シーン:」行がなければ欠落と判定。"""
@@ -1024,6 +1046,19 @@ def main():
         print(f"   → 全ASSETに「シーン: <日本語でシーン説明>」行が必須です")
     else:
         print("✅ PASS: シーン行（全ASSETに「シーン:」あり）")
+
+    # 19. Google Earthプロンプト禁止チェック
+    ge_issues = check_google_earth_no_prompt(lines)
+    if ge_issues:
+        all_pass = False
+        print(f"\n❌ FAIL: Google Earthプロンプト禁止 — {len(ge_issues)}件で```ブロック検出")
+        for ln, aid in ge_issues[:5]:
+            print(f"   L{ln} ({aid})")
+        if len(ge_issues) > 5:
+            print(f"   ...他{len(ge_issues)-5}件")
+        print(f"   → [Google Earth]は座標+カメラ指示のみ。Lovart用プロンプト(```)は禁止")
+    else:
+        print("✅ PASS: Google Earthプロンプト禁止（```ブロックなし）")
 
     # 17. 末尾ゴミ行チェック
     issues = check_trailing_garbage(lines)

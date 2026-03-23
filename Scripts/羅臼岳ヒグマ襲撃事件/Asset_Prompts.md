@@ -106,7 +106,9 @@ Open mountain trailhead in Hokkaido, no closure tape, no warning barriers. A mou
 
 【制作メモ】ASSET-004 [Google Earth]
 シーン: Google Earthで羅臼岳と知床半島を上空から映し出し、岩尾別登山口から山頂までのルートをライン表示
-→ 編集者指示: Google Earthで北海道・知床半島を表示し、羅臼岳山頂（43°39'56"N, 145°00'44"E付近）にズームイン。岩尾別登山口から山頂までのルートを赤いラインで引く。「羅臼岳 標高1,661m」のテロップを重ねる。
+座標: 44°04'33"N, 145°07'20"E（羅臼岳山頂）
+カメラ: 知床半島を広角で映してから山頂にズームイン
+→ 編集者指示: 羅臼岳山頂にズームイン。岩尾別登山口（44°06'33"N, 145°05'26"E）から山頂までのルートを赤いラインで引く。「羅臼岳 標高1,661m」のテロップを重ねる。
 
 ---
 
@@ -134,7 +136,9 @@ Rocky mountain trailhead in Hokkaido, summer morning. Wooden trail marker sign, 
 
 【制作メモ】ASSET-006 [Google Earth]
 シーン: Google Earthで日本列島全体を映し出し、北の利尻岳と南の屋久島を結ぶラインを表示。日本百名山の広がりを見せる
-→ 編集者指示: Google Earthで日本全体を表示し、北海道の利尻岳（45°10'N, 141°14'E）と鹿児島の屋久島（30°20'N, 130°31'E）を光る点で示す。北から南へカメラを流し「利尻岳→屋久島」のテロップを入れる。続けて「日本百名山を目指す青年」テロップを重ねる。
+座標: 45°10'43"N, 141°14'43"E（利尻岳）、30°20'N, 130°31'E（屋久島）
+カメラ: 日本全体を表示し、北から南へカメラを流す
+→ 編集者指示: 利尻岳と屋久島を光る点で示す。「利尻岳→屋久島」のテロップを入れる。続けて「日本百名山を目指す青年」テロップを重ねる。
 
 ---
 
@@ -162,7 +166,9 @@ Panoramic view from a high mountain summit in Hokkaido. Rugged peaks in the dist
 
 【制作メモ】ASSET-008 [Google Earth]
 シーン: Google Earthで斜里町側から岩尾別登山口へのアクセスルートを表示。標高グラフも合わせて表示
-→ 編集者指示: Google Earthで斜里町から岩尾別温泉登山口（43°51'N, 144°59'E付近）までのアクセス道路を黄色のラインで示す。「岩尾別ルート登山口」ラベルを追加。「登山口 標高230m」のテロップを下部に重ねる。地図グラフィックで230mから1661mへの標高差を矢印で示すインフォグラフィックを追加。
+座標: 44°06'33"N, 145°05'26"E（岩尾別温泉登山口/木下小屋）
+カメラ: 斜里町から登山口へアクセス道路をたどるフライスルー
+→ 編集者指示: 斜里町から岩尾別温泉登山口までのアクセス道路を黄色のラインで示す。「岩尾別ルート登山口」ラベルを追加。「登山口 標高230m」のテロップを下部に重ねる。地図グラフィックで230mから1,661mへの標高差を矢印で示すインフォグラフィックを追加。
 
 ---
 
@@ -264,7 +270,9 @@ Wide establishing shot of Mount Rausu under a brilliant blue summer sky. Camera 
 
 【制作メモ】ASSET-014 [Google Earth]
 シーン: Google Earthの地形ビューで登山口から山頂までの標高差を立体的に表示。東京タワーとの比較インフォグラフィック
-→ 編集者指示: Google Earthの地形ビューで岩尾別登山口（230m）から羅臼岳山頂（1,661m）まで横断面図を表示。「標高差 約1,400m」を強調。続けて「東京タワー333m × 約4本分 ＝ 標高差1,400m」の比較グラフィックを重ねる。
+座標: 44°06'33"N, 145°05'26"E（登山口 230m）→ 44°04'33"N, 145°07'20"E（山頂 1,661m）
+カメラ: 地形ビューで横断面図を表示
+→ 編集者指示: 岩尾別登山口（230m）から羅臼岳山頂（1,661m）まで横断面図を表示。「標高差 約1,400m」を強調。続けて「東京タワー333m × 約4本分 ＝ 標高差1,400m」の比較グラフィックを重ねる。
 
 ---
 
@@ -334,7 +342,9 @@ A Hokkaido mountain trail at 1500m elevation in August with patches of snow rema
 
 【制作メモ】ASSET-018 [Google Earth]
 シーン: Google Earthで羅臼岳山頂から360度見渡せる知床半島のパノラマビュー。両側の海をラベルで示す
-→ 編集者指示: Google Earthで羅臼岳山頂（43°39'56"N, 145°00'44"E）を中心に、知床半島全体が見渡せる高度から表示。北側の「オホーツク海」と南側の「太平洋（根室海峡）」をそれぞれテキストラベルで示す。「晴れた日の山頂からの眺め」「日本最後の秘境」のテロップを重ねる。
+座標: 44°04'33"N, 145°07'20"E（羅臼岳山頂）
+カメラ: 山頂を中心に知床半島全体が見渡せる高度で360度パン
+→ 編集者指示: 北側の「オホーツク海」と南側の「太平洋（根室海峡）」をそれぞれテキストラベルで示す。「晴れた日の山頂からの眺め」「日本最後の秘境」のテロップを重ねる。
 
 ---
 
@@ -772,10 +782,10 @@ A Hokkaido Police patrol car and a fire rescue truck speeding along a mountain r
 ---
 
 【制作メモ】ASSET-043 [Google Earth]
-```
-Google Earth-style aerial view of the Iwaobetsu trail on Mt. Rausu in Hokkaido, Japan. A red marker pin at 550m elevation on the trail. A dotted red line traces the trail path from the trailhead to the incident site. Labels: "事件現場 標高550m" at the marker, "登山口→現場：早足でも2時間以上" along the trail. Clear satellite imagery. 16:9 aspect ratio. Generate 5 separate images.
-```
-→ 編集者指示: 地図上の現場地点（標高550m付近）に「事件現場 標高550m」のラベルと、「登山口→現場：早足でも2時間以上」の距離テロップを追加する。
+シーン: Google Earthで岩尾別登山口から事件現場（標高550m）までのルートを赤いラインで表示し、距離感を伝える
+座標: 44°06'33"N, 145°05'26"E（岩尾別登山口）→ 事件現場（標高550m地点、Google Earthでピン打ちして確定）
+カメラ: 登山口から現場へルートをたどるフライスルー
+→ 編集者指示: 現場地点に「事件現場 標高550m」のラベル、ルート上に「登山口→現場：早足でも2時間以上」の距離テロップを追加。
 
 ナレーター: 登山口から現場まで、早足でも2時間以上はかかる距離です。
 ナレーター: さらに大きな問題がありました。
@@ -869,10 +879,10 @@ An official government office interior in Hokkaido, Japan. Officials in suits ga
 ---
 
 【制作メモ】ASSET-051 [Google Earth]
-```
-Google Earth aerial view of the Shiretoko Goko (Five Lakes) area and Mt. Rausu trail in Hokkaido, Japan. Both areas highlighted in red with "利用制限" (access restriction) warning labels. Satellite imagery showing the natural landscape. 16:9 aspect ratio. Generate 5 separate images.
-```
-→ 編集者指示: 地図上の知床五湖と羅臼岳登山道に「利用制限」の赤いバナーをそれぞれ重ねる。
+シーン: Google Earthで知床五湖エリアと羅臼岳登山道を俯瞰し、両方に利用制限がかかった状況を示す
+座標: 知床五湖（マップコード757 730 305、Google Earthでピン打ちして確定）、44°06'33"N, 145°05'26"E（岩尾別登山口）
+カメラ: 知床半島を広角で映し、知床五湖→羅臼岳登山道へパン
+→ 編集者指示: 知床五湖と羅臼岳登山道それぞれに「利用制限」の赤いバナーを重ねる。
 
 ナレーター: お盆の観光シーズンの真っただ中だったこともあり、知床五湖には多くの観光客が訪れていました。
 ナレーター: しかし、緊急事態のため仕方ありません。
@@ -948,10 +958,10 @@ Mountain trail in Hokkaido with dense bamboo grass on both sides. Narrow path st
 ---
 
 【制作メモ】ASSET-057 [Google Earth]
-```
-Google Earth-style aerial view of the Iwaobetsu trail at 550m elevation on Mt. Rausu. A red marker shows the exact incident site in bamboo grass. An animated arrow shows the bear's return path back to that exact spot. Dense vegetation visible from above. Satellite imagery. 16:9 aspect ratio. Generate 5 separate images.
-```
-→ 編集者指示: 地図上に「母グマがここに戻っていた」という矢印ラベルを現場地点に表示。
+シーン: Google Earthで事件現場（標高550m）付近を拡大表示し、母グマが同じ場所に戻っていたことを地図上で示す
+座標: 事件現場（標高550m地点、ASSET-043と同じ位置。Google Earthでピン打ちして確定）
+カメラ: 現場地点へズームイン、低高度で藪の密度が分かる地形ビュー
+→ 編集者指示: 現場地点に赤いマーカーと「母グマがここに戻っていた」の矢印ラベルを表示。
 
 ナレーター: 母グマは、曽田さんを引きずり込んだ場所に戻っていました。
 ナレーター: 母グマと、子グマ2頭。母グマは、曽田さんを引きずり込んだ場所に戻っていました。
@@ -1440,12 +1450,10 @@ Calendar animating to August 12. The date glows amber with a subtle countdown "2
 ---
 
 【制作メモ】ASSET-095 [Google Earth]
-ナレーター: 同じ岩尾別ルート。標高780メートルの弥三吉水（やさよしみず）と、標高1,040メートルの銀冷水（ぎんれいすい）の間。午前8時30分ごろ。
-
-```
-Google Earth flythrough of the Iwaubetsu trail between elevation 780m (Yasayoshimizu water source, labeled) and 1,040m (Ginreisuui water source, labeled). The segment between them highlights in red. Clock showing 8:30 AM in corner. Morning light effect overlaid. Terrain detail clearly visible. Desaturated color palette, vignette edges. 16:9 aspect ratio. Generate 5 separate images.
-```
-→ 編集者指示: 地名と標高ラベルを順に表示。「8:30」時刻テロップをシンプルに追加。
+シーン: Google Earthで岩尾別ルートの弥三吉水から銀冷水までの区間を赤くハイライト
+座標: 弥三吉水・銀冷水（登山道上の水場。Google Earthで岩尾別ルート上にピン打ちして確定）
+カメラ: 弥三吉水から銀冷水へルートをたどるフライスルー、地形ディテールを見せる
+→ 編集者指示: 弥三吉水・銀冷水の地名と標高ラベルを順に表示。「午前8時30分ごろ」の時刻テロップを追加。
 
 ---
 
