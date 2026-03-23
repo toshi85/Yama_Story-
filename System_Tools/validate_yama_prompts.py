@@ -25,7 +25,8 @@ Yama_Story プロンプト品質バリデーター
   16. ASSET構造順序 — ナレーター→制作メモ→プロンプトの正しい順序か (FAIL)
   17. 末尾ゴミ行 — 最後のASSET以降に孤立ナレーション行や大量空行がないか (FAIL)
   18. シーン行必須 — 全ASSETに「シーン:」行があるか (FAIL)
-  19. Google Earthプロンプト禁止 — [Google Earth]カテゴリに```ブロックがないか (FAIL)
+  19. Google Earthプロンプト禁止 — [Google Earth]カテゴリにブロックがないか (FAIL)
+  20. 背景プロンプト人物矛盾 — 「No people visible」と人物描写が同居していないか (FAIL)
 """
 
 import sys
@@ -772,6 +773,70 @@ def check_trailing_garbage(lines):
     return issues
 
 
+def check_background_people_contradiction(lines):
+    """背景プロンプトに No people visible と人物描写が同居していないか"""
+    people_keywords = re.compile(
+        r'\b(person|people|human|man |woman |men |women |boy |girl |'
+        r'climber|hiker|rescuer|official|soldier|police|doctor|nurse|'
+        r'family|crowd|group of people|figure|silhouette|standing|walking|'
+        r'running|sitting|carrying|holding|wearing|dressed)\b',
+        re.IGNORECASE
+    )
+    # Exceptions: words that appear in non-human context
+    exceptions = re.compile(
+        r'(no people|no figures|no humans|no person|figurehead|figure-eight|'
+        r'standing water|standing stone|standing dead|running water|'
+        r'holding pattern|wearing away|dressed stone|'
+        # Animal/nature context
+        r'bear\s+walking|bear\s+standing|bear\s+running|bear\s+sitting|'
+        r'walking\s+(calmly|slowly|away)|running\s+(motion|blur)|'
+        r'frantic\s+running|signs?\s+of|'
+        # Silhouette of non-human subjects
+        r'silhouette\s+of\s+(a\s+)?(mount|mountain|tree|bear|rock|peak|ridge|'
+        r'the\s+mountain|the\s+peak|the\s+ridge)|'
+        r'silhouette\s+of\s+a\s+large\s+bear|'
+        # Official as adjective for non-human
+        r'official\s+(press|report|document|record|statement|announcement|'
+        r'conference|investigation|setting|notice))',
+        re.IGNORECASE
+    )
+
+    issues = []
+    in_code = False
+    current_asset = None
+
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if '【制作メモ】' in s and 'ASSET-' in s:
+            m = re.search(r'ASSET-\d+', s)
+            current_asset = m.group() if m else '?'
+
+        if s.startswith('```'):
+            in_code = not in_code
+            continue
+        if not in_code or len(s) < 30:
+            continue
+        # Only check 16:9 background prompts (not 1:1 character prompts)
+        if 'white background' in s.lower():
+            continue
+        if '1:1' in s and '16:9' not in s:
+            continue
+
+        # Check if this line has "no people" type phrase
+        has_no_people = bool(re.search(r'no (people|figures|humans|person)', s, re.I))
+        if not has_no_people:
+            continue
+
+        # Remove exception phrases before checking for people keywords
+        cleaned = exceptions.sub('', s)
+        matches = people_keywords.findall(cleaned)
+        if matches:
+            unique = list(set(m.strip() for m in matches))
+            issues.append((i + 1, current_asset, unique, s[:100]))
+
+    return issues
+
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: python3 validate_yama_prompts.py <台本ファイルパス> [台本Master.mdパス]")
@@ -1069,6 +1134,20 @@ def main():
             print(f"   L{ln}: {desc}")
     else:
         print("✅ PASS: 末尾ゴミ行なし")
+
+    # 18. 背景プロンプト人物矛盾
+    issues = check_background_people_contradiction(lines)
+    if issues:
+        all_pass = False
+        print(f"\n❌ FAIL: 背景プロンプト人物矛盾 ({len(issues)}件)")
+        print(f"   「No people visible」と人物描写が同居しています")
+        for ln, asset, words, text in issues[:5]:
+            print(f"   L{ln} ({asset}): 検出語={words}")
+            print(f"         {text}")
+        if len(issues) > 5:
+            print(f"   ...他{len(issues)-5}件")
+    else:
+        print("✅ PASS: 背景プロンプト人物矛盾なし")
 
     # Summary
     print("\n" + "=" * 60)

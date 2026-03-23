@@ -4,6 +4,7 @@ YouTube Shorts 予約投稿スクリプト
 使い方:
   python3 youtube_upload.py projects/甘粛省ウルトラマラソン/
   python3 youtube_upload.py projects/甘粛省ウルトラマラソン/ --start-date 2026-03-19
+  python3 youtube_upload.py projects/谷川岳遭難事故1960/ --resume   # 未投稿分から再開
 """
 
 import json
@@ -167,6 +168,8 @@ def main():
     parser.add_argument("--playlist", default=PLAYLIST_NAME, help=f"追加先の再生リスト名 (デフォルト: {PLAYLIST_NAME})")
     parser.add_argument("--no-playlist", action="store_true", help="再生リストへの追加をスキップ")
     parser.add_argument("--dry-run", action="store_true", help="実際にはアップロードしない")
+    parser.add_argument("--resume", action="store_true", help="youtube_uploads.jsonから未投稿分を再開")
+    parser.add_argument("--yes", "-y", action="store_true", help="確認をスキップして即実行")
     args = parser.parse_args()
 
     project_dir = Path(args.project_dir)
@@ -188,30 +191,50 @@ def main():
     # 改行を除去してベースタイトルに
     base_title = display_title.replace("\n", " ").strip()
 
+    # 既存アップロード結果を読み込み（--resume用）
+    results_file = project_dir / "youtube_uploads.json"
+    uploaded_episodes = set()
+    existing_uploads = []
+    if args.resume and results_file.exists():
+        with open(results_file) as f:
+            prev_data = json.load(f)
+        existing_uploads = prev_data.get("uploads", [])
+        uploaded_episodes = {u["episode"] for u in existing_uploads}
+        print(f"📋 既存アップロード: {len(uploaded_episodes)}本（ep{sorted(uploaded_episodes)}）")
+
     # 出力ファイル確認
     output_dir = project_dir / "output"
     videos = []
     for cut in data["cuts"]:
         ep = cut["episode"]
+        if ep in uploaded_episodes:
+            continue
         video_path = output_dir / f"ep{ep:02d}_short.mp4"
         if not video_path.exists():
             print(f"❌ 動画ファイルが見つかりません: {video_path}")
             sys.exit(1)
         videos.append((ep, video_path))
 
-    # スケジュール生成
+    if not videos:
+        print("✅ 全エピソードがアップロード済みです")
+        return
+
+    # スケジュール生成（残りの本数分だけ）
     if args.start_date:
         start = datetime.strptime(args.start_date, "%Y-%m-%d")
     else:
         start = datetime.now() + timedelta(days=1)  # 明日から
 
-    schedule = generate_schedule(total, start)
+    schedule = generate_schedule(len(videos), start)
 
     # スケジュール表示
     print("==========================================")
     print("📅 YouTube Shorts 投稿スケジュール")
     print(f"📁 プロジェクト: {project_dir.name}")
-    print(f"🎬 全{total}本")
+    if uploaded_episodes:
+        print(f"🔄 再開モード: {len(uploaded_episodes)}本済み → 残り{len(videos)}本")
+    else:
+        print(f"🎬 全{total}本")
     print("==========================================")
 
     for i, (ep, video_path) in enumerate(videos):
@@ -225,11 +248,12 @@ def main():
         return
 
     # 確認
-    print("")
-    confirm = input("この内容でアップロードしますか？ (y/N): ")
-    if confirm.lower() != "y":
-        print("キャンセルしました")
-        return
+    if not args.yes:
+        print("")
+        confirm = input("この内容でアップロードしますか？ (y/N): ")
+        if confirm.lower() != "y":
+            print("キャンセルしました")
+            return
 
     # YouTube API認証
     youtube = get_youtube_service()
@@ -245,7 +269,7 @@ def main():
 
     # アップロード実行
     print("\n📤 アップロード開始...")
-    results = []
+    new_uploads = []
 
     for i, (ep, video_path) in enumerate(videos):
         publish_time = schedule[i] if not args.immediate else None
@@ -263,16 +287,17 @@ def main():
             add_to_playlist(youtube, playlist_id, video_id)
             print(f"  📋 再生リストに追加済み")
 
-        results.append({
+        new_uploads.append({
             "episode": ep,
             "video_id": video_id,
             "publish_at": publish_time.isoformat() if publish_time else "immediate"
         })
 
-    # 結果保存
-    results_file = project_dir / "youtube_uploads.json"
-    with open(results_file, "w") as f:
-        json.dump({"uploads": results}, f, indent=2, ensure_ascii=False)
+        # 1本ごとに結果を保存（途中停止に備える）
+        all_uploads = existing_uploads + new_uploads
+        all_uploads.sort(key=lambda x: x["episode"])
+        with open(results_file, "w") as f:
+            json.dump({"uploads": all_uploads}, f, indent=2, ensure_ascii=False)
 
     print("\n==========================================")
     print("🎉 全動画のアップロード完了！")

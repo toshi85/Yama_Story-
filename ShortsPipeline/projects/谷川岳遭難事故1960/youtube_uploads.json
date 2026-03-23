@@ -9,9 +9,76 @@
       "episode": 2,
       "video_id": "1r5g1TKhmvw",
       "publish_at": "2026-03-23T20:00:00+09:00"
+    },
+    {
+      "episode": 3,
+      "video_id": "UFql2qziKZ4",
+      "publish_at": "2026-03-24T07:00:00+09:00"
+    },
+    {
+      "episode": 4,
+      "video_id": "HNvwglbElG8",
+      "publish_at": "2026-03-24T20:00:00+09:00"
+    },
+    {
+      "episode": 5,
+      "video_id": "dW1_N6fUUR8",
+      "publish_at": "2026-03-25T07:00:00+09:00"
+    },
+    {
+      "episode": 6,
+      "video_id": "nEKLueUGN4I",
+      "publish_at": "2026-03-25T20:00:00+09:00"
+    },
+    {
+      "episode": 7,
+      "video_id": "zLYrJeJwPAs",
+      "publish_at": "2026-03-26T07:00:00+09:00"
+    },
+    {
+      "episode": 8,
+      "video_id": "qqPdd7MRqBs",
+      "publish_at": "2026-03-26T20:00:00+09:00"
+    },
+    {
+      "episode": 9,
+      "video_id": "yaz4Q56iS2g",
+      "publish_at": "2026-03-27T07:00:00+09:00"
+    },
+    {
+      "episode": 10,
+      "video_id": "_2n8dTcNT6c",
+      "publish_at": "2026-03-27T20:00:00+09:00"
+    },
+    {
+      "episode": 11,
+      "video_id": "T6fbpqCC2X4",
+      "publish_at": "2026-03-28T07:00:00+09:00"
+    },
+    {
+      "episode": 12,
+      "video_id": "SdpzM55IVwY",
+      "publish_at": "2026-03-28T20:00:00+09:00"
+    },
+    {
+      "episode": 13,
+      "video_id": "ZFFda3nWgbM",
+      "publish_at": "2026-03-29T07:00:00+09:00"
+    },
+    {
+      "episode": 14,
+      "video_id": "FRImY6V2bZM",
+      "publish_at": "2026-03-29T20:00:00+09:00"
+    },
+    {
+      "episode": 15,
+      "video_id": "otCPBzHwNx0",
+      "publish_at": "2026-03-30T07:00:00+09:00"
+    },
+    {
+      "episode": 16,
+      "video_id": "sZjthIKlWa0",
+      "publish_at": "2026-03-30T20:00:00+09:00"
     }
-  ],
-  "pending": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
-  "schedule_start": "2026-03-24T07:00:00+09:00",
-  "note": "ep03-16はクォータリセット後(3/23 17時JST頃)にアップロード。スケジュール: 3/24朝7時〜3/30夜20時"
+  ]
 }
