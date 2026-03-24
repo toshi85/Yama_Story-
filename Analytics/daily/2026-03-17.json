@@ -1,0 +1,243 @@
+{
+  "date": "2026-03-17",
+  "collected_at": "2026-03-24T09:20:47.304500",
+  "overview": {
+    "views": 6800,
+    "watch_minutes": 48616,
+    "subs_gained": 13,
+    "subs_lost": 11,
+    "avg_view_duration_sec": 428,
+    "revenue_usd": 32.835
+  },
+  "top_videos": [
+    {
+      "video_id": "bJhz7_XiduE",
+      "views": 3699,
+      "watch_minutes": 21211,
+      "avg_view_duration_sec": 344,
+      "avg_view_percentage": 24.77,
+      "subs_gained": 3
+    },
+    {
+      "video_id": "c_kkIsQlFe8",
+      "views": 1748,
+      "watch_minutes": 15300,
+      "avg_view_duration_sec": 525,
+      "avg_view_percentage": 28.02,
+      "subs_gained": 3
+    },
+    {
+      "video_id": "9NU6MUOyiCM",
+      "views": 382,
+      "watch_minutes": 2711,
+      "avg_view_duration_sec": 425,
+      "avg_view_percentage": 33.88,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "-sHkcezuQLY",
+      "views": 296,
+      "watch_minutes": 2424,
+      "avg_view_duration_sec": 491,
+      "avg_view_percentage": 30.099999999999998,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "Ot4G3-EHj5Q",
+      "views": 236,
+      "watch_minutes": 1708,
+      "avg_view_duration_sec": 434,
+      "avg_view_percentage": 28.939999999999998,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "1oVqjBXOtiI",
+      "views": 112,
+      "watch_minutes": 1673,
+      "avg_view_duration_sec": 896,
+      "avg_view_percentage": 33.4,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "eQuoRcakpoE",
+      "views": 90,
+      "watch_minutes": 693,
+      "avg_view_duration_sec": 462,
+      "avg_view_percentage": 32.15,
+      "subs_gained": 1
+    },
+    {
+      "video_id": "buJZzI8kM8Y",
+      "views": 43,
+      "watch_minutes": 286,
+      "avg_view_duration_sec": 399,
+      "avg_view_percentage": 37.03,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "GvthPK_1V8Q",
+      "views": 30,
+      "watch_minutes": 387,
+      "avg_view_duration_sec": 774,
+      "avg_view_percentage": 39.23,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "XObsWZm_Hcg",
+      "views": 25,
+      "watch_minutes": 450,
+      "avg_view_duration_sec": 1082,
+      "avg_view_percentage": 15.73,
+      "subs_gained": 0
+    }
+  ],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 5173,
+      "watch_minutes": 32515
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 1183,
+      "watch_minutes": 11910
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 125,
+      "watch_minutes": 757
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 117,
+      "watch_minutes": 1636
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 80,
+      "watch_minutes": 933
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 68,
+      "watch_minutes": 570
+    },
+    {
+      "source": "EXT_URL",
+      "views": 27,
+      "watch_minutes": 74
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 15,
+      "watch_minutes": 90
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 12,
+      "watch_minutes": 128
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "さんけべつヒグマ事件",
+      "views": 3,
+      "watch_minutes": 32
+    },
+    {
+      "term": "熊 事件",
+      "views": 3,
+      "watch_minutes": 55
+    },
+    {
+      "term": "福岡大学ワンダーフォーゲル部ヒグマ事件",
+      "views": 3,
+      "watch_minutes": 31
+    },
+    {
+      "term": "熊事件",
+      "views": 2,
+      "watch_minutes": 3
+    },
+    {
+      "term": "くまま",
+      "views": 1,
+      "watch_minutes": 2
+    },
+    {
+      "term": "どうぶつ奇想天外",
+      "views": 1,
+      "watch_minutes": 2
+    },
+    {
+      "term": "アニメ",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "アンビリバボー 事件",
+      "views": 1,
+      "watch_minutes": 28
+    },
+    {
+      "term": "ヒグマ 映画",
+      "views": 1,
+      "watch_minutes": 1
+    },
+    {
+      "term": "ヒグマ事件",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "世界仰天ニュース",
+      "views": 1,
+      "watch_minutes": 9
+    },
+    {
+      "term": "事件",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "事件 再現ドラマ",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "人喰い熊",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "喧嘩上等",
+      "views": 1,
+      "watch_minutes": 21
+    },
+    {
+      "term": "山から生きて帰るには",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "山岳遭難ファイル",
+      "views": 1,
+      "watch_minutes": 16
+    },
+    {
+      "term": "山本兵吉",
+      "views": 1,
+      "watch_minutes": 18
+    },
+    {
+      "term": "嵐",
+      "views": 1,
+      "watch_minutes": 1
+    },
+    {
+      "term": "熊に食べられた人",
+      "views": 1,
+      "watch_minutes": 1
+    }
+  ]
+}
