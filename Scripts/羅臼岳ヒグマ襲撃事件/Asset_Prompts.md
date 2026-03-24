@@ -291,6 +291,10 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 Steep rocky hiking trail in Hokkaido mountains. Dramatic elevation gain visible, rugged terrain with boulders and alpine plants. Bright morning sun. Sense of progress and momentum. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「順調に登山中」のテロップを入れる。Google Earthで岩尾別登山口から羅臼岳山頂まで一本のルートを赤いラインで描画し「岩尾別ルート：一本道」のテロップを追加。
+→ **Google Earth座標**:
+→ - ルート全景の中心: `44.0930, 145.1060` で検索 → カメラ高度5,000〜8,000m、斜め45°、3D地形ON、北西→南東を見下ろす
+→ - 登山口（木下小屋）: `44.1098, 145.0904`（標高230m）
+→ - 羅臼岳 山頂: `44.0758, 145.1222`（標高1,661m）
 
 ---
 
@@ -311,6 +315,10 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 A small natural spring water source on a Hokkaido mountain trail. Crystal clear water flowing over mossy rocks into a small pool. Sunlight filtering through trees. Rocky trail continues uphill. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
 → 編集者指示: 「山小屋なし / 水場限定」のインフォグラフィックをルートマップと重ねて表示。「弥三吉水（標高約780m付近）」「銀冷水（標高約1,040m付近）」の位置を黄色のマーカーでGoogle Earthに示す。
+→ **Google Earth座標**:
+→ - ルート中間の俯瞰: `44.0920, 145.1040` で検索 → カメラ高度2,000〜3,000m、斜め30°、3D地形ON。森林帯が続く「何もない」感じが出ればOK
+→ - 弥三吉水（水場①）: 約 `44.0965, 145.1000`（標高789m）
+→ - 銀冷水（水場②）: 約 `44.0880, 145.1080`（標高1,050m）
 
 ---
 
