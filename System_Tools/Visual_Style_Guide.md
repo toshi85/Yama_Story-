@@ -11,6 +11,15 @@ AI動画生成（Runway/Luma）による「インパクト」と、静止画＋�
 ## 2. プロンプト記述ルール (日本語)
 編集者が直感的に理解し、生成ツールに入力しやすい具体的日本語で記述する。
 
+### 人物の国籍指定（必須）
+実写プロンプトに人物が登場する場合、必ず「Japanese」を明記する。指定がないとAI生成で西洋人が出力される可能性が高い。
+- 登山者: `Japanese hiker` / `Japanese male hiker`
+- 救助隊: `Japanese rescue team members`
+- ハンター: `Japanese hunter`
+- 観光客: `Japanese tourists`
+- 記者会見: `Japanese police spokesperson`
+- キャラプロンプト（カートゥン調）はCHAR参照画像で担保されるため不要
+
 ### 構成要素
 `[被写体] + [動き/状態] + [環境/照明] + [画質/スタイル]`
 
