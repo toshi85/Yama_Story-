@@ -21,6 +21,20 @@ MIN_VOLUME_CHARS = 8800  # 最適尺26分（340字/分）に基づく最低文�
 def validate_structure(file_path):
     print(f"[Structure Check]: Validating Yama Story Structure + Safety + Volume: {os.path.basename(file_path)}")
     
+    # --- LAYER 0: COMPETITOR & THUMBNAIL ANALYSIS BLOCKADE ---
+    try:
+        import validate_yama_competitor
+        print("\n[Layer 0] Physical Blockade: Competitor & Thumbnail Analysis...")
+        # validate_yama_competitor calls sys.exit(1) on failure, so reaching next line = PASS
+        validate_yama_competitor.validate_competitor(file_path)
+        print("[Layer 0] PASSED.")
+    except SystemExit as e:
+        if e.code != 0:
+            print("[BLOCKADE]: Competitor & Thumbnail Analysis missing. Cannot proceed.")
+            sys.exit(1)
+    except ImportError:
+        print("⚠️ [Layer 0] Skipped (validate_yama_competitor module not found).")
+
     # --- LAYER 1: NG WORD & PRONOUN BLOCKADE ---
     # Physically block entry if Safety Check fails.
     if validate_yama_safety:
