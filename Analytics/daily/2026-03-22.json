@@ -1,8 +1,258 @@
 {
   "date": "2026-03-22",
-  "collected_at": "2026-03-24T09:20:51.450232",
-  "overview": null,
-  "top_videos": [],
-  "traffic_sources": [],
-  "search_terms": []
+  "collected_at": "2026-03-31T18:31:02.664381",
+  "overview": {
+    "views": 7598,
+    "watch_minutes": 40766,
+    "subs_gained": 7,
+    "subs_lost": 13,
+    "avg_view_duration_sec": 379,
+    "revenue_usd": 23.432
+  },
+  "top_videos": [
+    {
+      "video_id": "bJhz7_XiduE",
+      "views": 2311,
+      "watch_minutes": 12723,
+      "avg_view_duration_sec": 330,
+      "avg_view_percentage": 23.78,
+      "subs_gained": 1
+    },
+    {
+      "video_id": "CxLVaMipycI",
+      "views": 1560,
+      "watch_minutes": 530,
+      "avg_view_duration_sec": 43,
+      "avg_view_percentage": 60.65999999999999,
+      "subs_gained": 2
+    },
+    {
+      "video_id": "c_kkIsQlFe8",
+      "views": 1360,
+      "watch_minutes": 12596,
+      "avg_view_duration_sec": 555,
+      "avg_view_percentage": 29.659999999999997,
+      "subs_gained": 3
+    },
+    {
+      "video_id": "9NU6MUOyiCM",
+      "views": 560,
+      "watch_minutes": 3531,
+      "avg_view_duration_sec": 378,
+      "avg_view_percentage": 30.11,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "0-ZxPfOWA8Q",
+      "views": 350,
+      "watch_minutes": 3496,
+      "avg_view_duration_sec": 599,
+      "avg_view_percentage": 37.09,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "-sHkcezuQLY",
+      "views": 314,
+      "watch_minutes": 2129,
+      "avg_view_duration_sec": 406,
+      "avg_view_percentage": 24.92,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "riCGcKooiFU",
+      "views": 230,
+      "watch_minutes": 196,
+      "avg_view_duration_sec": 109,
+      "avg_view_percentage": 89.33,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "Ot4G3-EHj5Q",
+      "views": 175,
+      "watch_minutes": 1106,
+      "avg_view_duration_sec": 379,
+      "avg_view_percentage": 25.28,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "MyYqksDBtjs",
+      "views": 174,
+      "watch_minutes": 112,
+      "avg_view_duration_sec": 75,
+      "avg_view_percentage": 45.11,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "eQuoRcakpoE",
+      "views": 103,
+      "watch_minutes": 663,
+      "avg_view_duration_sec": 386,
+      "avg_view_percentage": 26.86,
+      "subs_gained": 0
+    }
+  ],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 4448,
+      "watch_minutes": 28863
+    },
+    {
+      "source": "SHORTS",
+      "views": 1931,
+      "watch_minutes": 821
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 596,
+      "watch_minutes": 6563
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 179,
+      "watch_minutes": 1215
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 166,
+      "watch_minutes": 1123
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 95,
+      "watch_minutes": 1192
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 82,
+      "watch_minutes": 690
+    },
+    {
+      "source": "NOTIFICATION",
+      "views": 57,
+      "watch_minutes": 27
+    },
+    {
+      "source": "EXT_URL",
+      "views": 11,
+      "watch_minutes": 79
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 7,
+      "watch_minutes": 119
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 5,
+      "watch_minutes": 4
+    },
+    {
+      "source": "SOUND_PAGE",
+      "views": 5,
+      "watch_minutes": 6
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "さんけべつヒグマ事件",
+      "views": 6,
+      "watch_minutes": 52
+    },
+    {
+      "term": "熊 事件",
+      "views": 5,
+      "watch_minutes": 112
+    },
+    {
+      "term": "福岡大学ワンダーフォーゲル部ヒグマ事件",
+      "views": 4,
+      "watch_minutes": 7
+    },
+    {
+      "term": "ヒグマ事件",
+      "views": 3,
+      "watch_minutes": 31
+    },
+    {
+      "term": "三毛別羆事件",
+      "views": 3,
+      "watch_minutes": 23
+    },
+    {
+      "term": "三毛別熊事件",
+      "views": 2,
+      "watch_minutes": 0
+    },
+    {
+      "term": "事件 再現ドラマ",
+      "views": 2,
+      "watch_minutes": 30
+    },
+    {
+      "term": "山岳事故",
+      "views": 2,
+      "watch_minutes": 0
+    },
+    {
+      "term": "洞窟 事故",
+      "views": 2,
+      "watch_minutes": 3
+    },
+    {
+      "term": "素晴らしき世界",
+      "views": 2,
+      "watch_minutes": 0
+    },
+    {
+      "term": "遭難",
+      "views": 2,
+      "watch_minutes": 10
+    },
+    {
+      "term": "r-type tactics i・ii cosmos",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "どうぶつ奇想天外 ヒグマ",
+      "views": 1,
+      "watch_minutes": 4
+    },
+    {
+      "term": "キャンプ",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "クマ牧場",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ザワールド",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "バイオ 多摩川",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ヒューマンバグ大学",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ブレイキングダウン19結果",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ミステリードラマ",
+      "views": 1,
+      "watch_minutes": 31
+    }
+  ]
 }

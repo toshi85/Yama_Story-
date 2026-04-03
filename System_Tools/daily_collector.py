@@ -24,16 +24,25 @@ ANALYTICS_DIR.mkdir(parents=True, exist_ok=True)
 MAX_BACKFILL_DAYS = 30  # 最大30日分のバックフィル
 
 
+def _is_incomplete(json_path):
+    """ファイルが存在してもデータがnull/空なら未収集扱い"""
+    try:
+        data = json.loads(json_path.read_text())
+        return data.get("overview") is None and len(data.get("top_videos", [])) == 0
+    except (json.JSONDecodeError, OSError):
+        return True
+
+
 def get_missing_dates():
-    """未収集の日付リストを返す（昨日まで。今日はデータ未確定）"""
+    """未収集 or データ不完全の日付リストを返す（3日前まで。APIは2-3日遅延）"""
     today = datetime.now().date()
-    yesterday = today - timedelta(days=1)
+    latest = today - timedelta(days=3)  # APIの遅延を考慮
 
     missing = []
     for i in range(MAX_BACKFILL_DAYS):
-        d = yesterday - timedelta(days=i)
+        d = latest - timedelta(days=i)
         json_path = ANALYTICS_DIR / f"{d.isoformat()}.json"
-        if not json_path.exists():
+        if not json_path.exists() or _is_incomplete(json_path):
             missing.append(d)
 
     missing.sort()  # 古い順
@@ -147,11 +156,18 @@ def main():
         print(f"  収集中: {date_str} ...", end=" ", flush=True)
 
         try:
+            overview = collect_overview(analytics, date_str)
+            top_videos = collect_top_videos(analytics, date_str)
+
+            if overview is None and len(top_videos) == 0:
+                print("SKIP (APIデータなし)")
+                continue
+
             data = {
                 "date": date_str,
                 "collected_at": datetime.now().isoformat(),
-                "overview": collect_overview(analytics, date_str),
-                "top_videos": collect_top_videos(analytics, date_str),
+                "overview": overview,
+                "top_videos": top_videos,
                 "traffic_sources": collect_traffic_sources(analytics, date_str),
                 "search_terms": collect_search_terms(analytics, date_str),
             }

@@ -1,8 +1,253 @@
 {
   "date": "2026-03-24",
-  "collected_at": "2026-03-25T07:44:48.774529",
-  "overview": null,
-  "top_videos": [],
-  "traffic_sources": [],
-  "search_terms": []
+  "collected_at": "2026-03-31T18:31:05.823138",
+  "overview": {
+    "views": 4420,
+    "watch_minutes": 22785,
+    "subs_gained": 7,
+    "subs_lost": 7,
+    "avg_view_duration_sec": 393,
+    "revenue_usd": 15.047
+  },
+  "top_videos": [
+    {
+      "video_id": "HNvwglbElG8",
+      "views": 1054,
+      "watch_minutes": 190,
+      "avg_view_duration_sec": 29,
+      "avg_view_percentage": 47.78,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "c_kkIsQlFe8",
+      "views": 811,
+      "watch_minutes": 7413,
+      "avg_view_duration_sec": 548,
+      "avg_view_percentage": 29.270000000000003,
+      "subs_gained": 2
+    },
+    {
+      "video_id": "bJhz7_XiduE",
+      "views": 796,
+      "watch_minutes": 4818,
+      "avg_view_duration_sec": 363,
+      "avg_view_percentage": 26.150000000000002,
+      "subs_gained": 3
+    },
+    {
+      "video_id": "9NU6MUOyiCM",
+      "views": 550,
+      "watch_minutes": 2979,
+      "avg_view_duration_sec": 325,
+      "avg_view_percentage": 25.86,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "-sHkcezuQLY",
+      "views": 303,
+      "watch_minutes": 1841,
+      "avg_view_duration_sec": 364,
+      "avg_view_percentage": 22.33,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "Ot4G3-EHj5Q",
+      "views": 171,
+      "watch_minutes": 1313,
+      "avg_view_duration_sec": 460,
+      "avg_view_percentage": 30.7,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "UFql2qziKZ4",
+      "views": 109,
+      "watch_minutes": 25,
+      "avg_view_duration_sec": 35,
+      "avg_view_percentage": 55.230000000000004,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "CxLVaMipycI",
+      "views": 96,
+      "watch_minutes": 35,
+      "avg_view_duration_sec": 55,
+      "avg_view_percentage": 77.81,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "1r5g1TKhmvw",
+      "views": 90,
+      "watch_minutes": 37,
+      "avg_view_duration_sec": 80,
+      "avg_view_percentage": 125.44,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "1oVqjBXOtiI",
+      "views": 72,
+      "watch_minutes": 1151,
+      "avg_view_duration_sec": 959,
+      "avg_view_percentage": 35.74,
+      "subs_gained": 0
+    }
+  ],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 2189,
+      "watch_minutes": 14057
+    },
+    {
+      "source": "SHORTS",
+      "views": 1301,
+      "watch_minutes": 368
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 457,
+      "watch_minutes": 5176
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 146,
+      "watch_minutes": 932
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 131,
+      "watch_minutes": 919
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 48,
+      "watch_minutes": 301
+    },
+    {
+      "source": "NOTIFICATION",
+      "views": 48,
+      "watch_minutes": 22
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 44,
+      "watch_minutes": 410
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 32,
+      "watch_minutes": 448
+    },
+    {
+      "source": "EXT_URL",
+      "views": 15,
+      "watch_minutes": 44
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 9,
+      "watch_minutes": 102
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "熊 事件",
+      "views": 7,
+      "watch_minutes": 48
+    },
+    {
+      "term": "さんけべつヒグマ事件",
+      "views": 5,
+      "watch_minutes": 39
+    },
+    {
+      "term": "ヒグマ事件",
+      "views": 4,
+      "watch_minutes": 87
+    },
+    {
+      "term": "人喰い族",
+      "views": 3,
+      "watch_minutes": 3
+    },
+    {
+      "term": "石狩沼田幌新事件",
+      "views": 3,
+      "watch_minutes": 0
+    },
+    {
+      "term": "みなかみ",
+      "views": 2,
+      "watch_minutes": 7
+    },
+    {
+      "term": "バイオハザードレーザールーム",
+      "views": 2,
+      "watch_minutes": 1
+    },
+    {
+      "term": "ヒグマ 事件",
+      "views": 2,
+      "watch_minutes": 31
+    },
+    {
+      "term": "三毛別熊事件",
+      "views": 2,
+      "watch_minutes": 28
+    },
+    {
+      "term": "三毛別羆事件",
+      "views": 2,
+      "watch_minutes": 14
+    },
+    {
+      "term": "山から生きて帰るには",
+      "views": 2,
+      "watch_minutes": 0
+    },
+    {
+      "term": "山岳遭難ファイル",
+      "views": 2,
+      "watch_minutes": 1
+    },
+    {
+      "term": "新潟親子遭難事故",
+      "views": 2,
+      "watch_minutes": 22
+    },
+    {
+      "term": "洞窟 事故",
+      "views": 2,
+      "watch_minutes": 25
+    },
+    {
+      "term": "熊に遭遇",
+      "views": 2,
+      "watch_minutes": 25
+    },
+    {
+      "term": "熊に食べられた人",
+      "views": 2,
+      "watch_minutes": 31
+    },
+    {
+      "term": "熊事件",
+      "views": 2,
+      "watch_minutes": 11
+    },
+    {
+      "term": "熊被害事件",
+      "views": 2,
+      "watch_minutes": 57
+    },
+    {
+      "term": "登山 熊",
+      "views": 2,
+      "watch_minutes": 15
+    },
+    {
+      "term": "jera",
+      "views": 1,
+      "watch_minutes": 0
+    }
+  ]
 }

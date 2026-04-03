@@ -1,8 +1,258 @@
 {
   "date": "2026-03-25",
-  "collected_at": "2026-03-26T06:00:05.606016",
-  "overview": null,
-  "top_videos": [],
-  "traffic_sources": [],
-  "search_terms": []
+  "collected_at": "2026-03-31T18:31:07.280872",
+  "overview": {
+    "views": 2545,
+    "watch_minutes": 15727,
+    "subs_gained": 5,
+    "subs_lost": 9,
+    "avg_view_duration_sec": 420,
+    "revenue_usd": 12.132
+  },
+  "top_videos": [
+    {
+      "video_id": "c_kkIsQlFe8",
+      "views": 837,
+      "watch_minutes": 6837,
+      "avg_view_duration_sec": 490,
+      "avg_view_percentage": 26.150000000000002,
+      "subs_gained": 4
+    },
+    {
+      "video_id": "9NU6MUOyiCM",
+      "views": 412,
+      "watch_minutes": 1848,
+      "avg_view_duration_sec": 269,
+      "avg_view_percentage": 21.42,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "bJhz7_XiduE",
+      "views": 288,
+      "watch_minutes": 1980,
+      "avg_view_duration_sec": 412,
+      "avg_view_percentage": 29.710000000000004,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "Ot4G3-EHj5Q",
+      "views": 177,
+      "watch_minutes": 1199,
+      "avg_view_duration_sec": 406,
+      "avg_view_percentage": 27.089999999999996,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "HNvwglbElG8",
+      "views": 133,
+      "watch_minutes": 27,
+      "avg_view_duration_sec": 29,
+      "avg_view_percentage": 47.65,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "1r5g1TKhmvw",
+      "views": 97,
+      "watch_minutes": 21,
+      "avg_view_duration_sec": 31,
+      "avg_view_percentage": 49.71,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "-sHkcezuQLY",
+      "views": 79,
+      "watch_minutes": 528,
+      "avg_view_duration_sec": 401,
+      "avg_view_percentage": 24.58,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "nEKLueUGN4I",
+      "views": 69,
+      "watch_minutes": 49,
+      "avg_view_duration_sec": 109,
+      "avg_view_percentage": 165.36,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "zLYrJeJwPAs",
+      "views": 59,
+      "watch_minutes": 15,
+      "avg_view_duration_sec": 43,
+      "avg_view_percentage": 69.9,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "CxLVaMipycI",
+      "views": 50,
+      "watch_minutes": 18,
+      "avg_view_duration_sec": 52,
+      "avg_view_percentage": 74.44,
+      "subs_gained": 0
+    }
+  ],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 1379,
+      "watch_minutes": 8803
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 391,
+      "watch_minutes": 3817
+    },
+    {
+      "source": "SHORTS",
+      "views": 386,
+      "watch_minutes": 102
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 129,
+      "watch_minutes": 944
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 83,
+      "watch_minutes": 871
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 50,
+      "watch_minutes": 360
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 41,
+      "watch_minutes": 471
+    },
+    {
+      "source": "NOTIFICATION",
+      "views": 34,
+      "watch_minutes": 46
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 24,
+      "watch_minutes": 140
+    },
+    {
+      "source": "EXT_URL",
+      "views": 11,
+      "watch_minutes": 15
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 5,
+      "watch_minutes": 59
+    },
+    {
+      "source": "SHORTS_CONTENT_LINKS",
+      "views": 1,
+      "watch_minutes": 0
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "熊 事件",
+      "views": 7,
+      "watch_minutes": 119
+    },
+    {
+      "term": "映画",
+      "views": 3,
+      "watch_minutes": 0
+    },
+    {
+      "term": "熊事件",
+      "views": 3,
+      "watch_minutes": 20
+    },
+    {
+      "term": "登山 事故",
+      "views": 3,
+      "watch_minutes": 0
+    },
+    {
+      "term": "石狩沼田幌新事件",
+      "views": 3,
+      "watch_minutes": 27
+    },
+    {
+      "term": "さんけべつヒグマ事件",
+      "views": 2,
+      "watch_minutes": 28
+    },
+    {
+      "term": "アンビリーバボー 事件",
+      "views": 2,
+      "watch_minutes": 31
+    },
+    {
+      "term": "熊事件 三毛別",
+      "views": 2,
+      "watch_minutes": 20
+    },
+    {
+      "term": "くま",
+      "views": 1,
+      "watch_minutes": 16
+    },
+    {
+      "term": "アニメ ",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "アンビリーバボー 事件 日本",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ツキノワグマ",
+      "views": 1,
+      "watch_minutes": 4
+    },
+    {
+      "term": "ヒグマ 事件",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ヒグマ事件",
+      "views": 1,
+      "watch_minutes": 31
+    },
+    {
+      "term": "三毛別熊事件",
+      "views": 1,
+      "watch_minutes": 1
+    },
+    {
+      "term": "三毛別羆事件",
+      "views": 1,
+      "watch_minutes": 28
+    },
+    {
+      "term": "事件簿",
+      "views": 1,
+      "watch_minutes": 24
+    },
+    {
+      "term": "宰務翔太",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "山で生きて帰るには",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "山岳遭難",
+      "views": 1,
+      "watch_minutes": 0
+    }
+  ]
 }
