@@ -1,0 +1,248 @@
+{
+  "date": "2026-04-05",
+  "collected_at": "2026-04-08T06:00:03.944349",
+  "overview": {
+    "views": 3846,
+    "watch_minutes": 29887,
+    "subs_gained": 5,
+    "subs_lost": 4,
+    "avg_view_duration_sec": 466,
+    "revenue_usd": 15.222
+  },
+  "top_videos": [
+    {
+      "video_id": "P6129_NW2Zk",
+      "views": 2128,
+      "watch_minutes": 13908,
+      "avg_view_duration_sec": 392,
+      "avg_view_percentage": 25.71,
+      "subs_gained": 3
+    },
+    {
+      "video_id": "c_kkIsQlFe8",
+      "views": 1229,
+      "watch_minutes": 12007,
+      "avg_view_duration_sec": 586,
+      "avg_view_percentage": 31.28,
+      "subs_gained": 1
+    },
+    {
+      "video_id": "Ot4G3-EHj5Q",
+      "views": 258,
+      "watch_minutes": 1575,
+      "avg_view_duration_sec": 366,
+      "avg_view_percentage": 24.42,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "bJhz7_XiduE",
+      "views": 48,
+      "watch_minutes": 293,
+      "avg_view_duration_sec": 366,
+      "avg_view_percentage": 26.419999999999998,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "-sHkcezuQLY",
+      "views": 40,
+      "watch_minutes": 331,
+      "avg_view_duration_sec": 497,
+      "avg_view_percentage": 30.48,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "1oVqjBXOtiI",
+      "views": 29,
+      "watch_minutes": 394,
+      "avg_view_duration_sec": 816,
+      "avg_view_percentage": 30.4,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "mlvCbz0DP4Y",
+      "views": 22,
+      "watch_minutes": 225,
+      "avg_view_duration_sec": 614,
+      "avg_view_percentage": 35.68,
+      "subs_gained": 1
+    },
+    {
+      "video_id": "9NU6MUOyiCM",
+      "views": 14,
+      "watch_minutes": 106,
+      "avg_view_duration_sec": 456,
+      "avg_view_percentage": 36.34,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "XObsWZm_Hcg",
+      "views": 12,
+      "watch_minutes": 262,
+      "avg_view_duration_sec": 1314,
+      "avg_view_percentage": 19.11,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "Ick3QnL_SEs",
+      "views": 11,
+      "watch_minutes": 188,
+      "avg_view_duration_sec": 1029,
+      "avg_view_percentage": 13.140000000000002,
+      "subs_gained": 0
+    }
+  ],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 3060,
+      "watch_minutes": 22192
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 517,
+      "watch_minutes": 5106
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 123,
+      "watch_minutes": 966
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 49,
+      "watch_minutes": 574
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 44,
+      "watch_minutes": 485
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 31,
+      "watch_minutes": 331
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 8,
+      "watch_minutes": 96
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 7,
+      "watch_minutes": 130
+    },
+    {
+      "source": "EXT_URL",
+      "views": 6,
+      "watch_minutes": 2
+    },
+    {
+      "source": "NOTIFICATION",
+      "views": 1,
+      "watch_minutes": 0
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "ヒグマ事件",
+      "views": 7,
+      "watch_minutes": 25
+    },
+    {
+      "term": "熊 事件",
+      "views": 7,
+      "watch_minutes": 73
+    },
+    {
+      "term": "熊 怖い",
+      "views": 7,
+      "watch_minutes": 12
+    },
+    {
+      "term": "さんけべつヒグマ事件",
+      "views": 6,
+      "watch_minutes": 46
+    },
+    {
+      "term": "福岡大学ワンダーフォーゲル部ヒグマ事件",
+      "views": 3,
+      "watch_minutes": 2
+    },
+    {
+      "term": "八甲田山",
+      "views": 2,
+      "watch_minutes": 2
+    },
+    {
+      "term": "熊事件",
+      "views": 2,
+      "watch_minutes": 38
+    },
+    {
+      "term": "知床 ヒグマ",
+      "views": 2,
+      "watch_minutes": 1
+    },
+    {
+      "term": "とうきょうmer",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ひぐま",
+      "views": 1,
+      "watch_minutes": 12
+    },
+    {
+      "term": "アンビリバボー",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "アンビリーバボー",
+      "views": 1,
+      "watch_minutes": 1
+    },
+    {
+      "term": "グリズリーベア",
+      "views": 1,
+      "watch_minutes": 25
+    },
+    {
+      "term": "ヒグマに遭遇",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ブラフチャージ",
+      "views": 1,
+      "watch_minutes": 2
+    },
+    {
+      "term": "ワンダーフォーゲル",
+      "views": 1,
+      "watch_minutes": 7
+    },
+    {
+      "term": "三毛別熊事件",
+      "views": 1,
+      "watch_minutes": 16
+    },
+    {
+      "term": "三毛別羆事件",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "世界仰天ニュース 事件",
+      "views": 1,
+      "watch_minutes": 11
+    },
+    {
+      "term": "事件",
+      "views": 1,
+      "watch_minutes": 0
+    }
+  ]
+}
