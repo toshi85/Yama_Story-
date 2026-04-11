@@ -1,411 +1,2560 @@
 タイトル：10人中8人が帰らぬ人に、、生き残った2人だけが持っていた"あるもの"、、1989年 立山中高年大量遭難事故
 
+> 1ナレーション行 = 1アセット。Lovartにコピペするだけの流れ作業用。生成順＝台本の登場順。
+
+---
+
+## 0. キャラ基準画像（最初に生成→一貫性キャラ機能の参照画像にする）
+
+> **スタイル方針**: キャラ画像 = カートゥン調イラスト（太い輪郭線、フラットカラー、大きな瞳、子供向けアニメ風）
+> 背景・シーン画像/動画 = フォトリアル（RED camera風、ドキュメンタリー調）
+> Lovartでは1プロンプトにつき5枚同時生成。ベスト1枚を一貫性キャラの参照画像として採用。
+
+### CHAR-01: 佐伯常行（さえきつねゆき）— 内蔵助山荘オーナー
+
+[実写参照: なし — テキスト情報のみ]
+
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background. Single character only, front-facing view. A Japanese man in his late 50s, sturdy weathered build from decades of mountain work, short gray-black hair, tanned skin, deep wrinkles around eyes. Wearing a dark green mountain lodge work jacket, brown work pants, sturdy boots. Stern but caring expression. Generate 5 separate images, each showing only this one character.
+```
+
+### CHAR-02: 野口（仮名）— 経験豊富な登山者・「山の師匠」
+
+[実写参照: なし — テキスト情報のみ]
+
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background. Single character only, front-facing view. A Japanese man in his late 50s, medium build, short black hair with some gray, medium skin tone. Wearing a dark navy blue hiking jacket, olive green hiking pants, brown leather hiking boots, carrying a large backpack with a portable stove strapped to it. Confident experienced expression. Generate 5 separate images, each showing only this one character.
+```
+
+### CHAR-03: 吉田（仮名）— 勉強熱心な登山者
+
+[実写参照: なし — テキスト情報のみ]
+
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background. Single character only, front-facing view. A Japanese man in his early 50s, slim intellectual build, black hair with glasses, medium skin tone. Wearing a gray hiking jacket, dark blue hiking pants, basic hiking shoes, carrying a small daypack. Thoughtful reserved expression. Generate 5 separate images, each showing only this one character.
+```
+
+### CHAR-04: 中村（仮名）— 生存者・良装備
+
+[実写参照: なし — テキスト情報のみ]
+
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background. Single character only, front-facing view. A Japanese man in his 50s, sturdy build, short black hair, determined face. Wearing a high-quality dark green waterproof rain jacket, dark gray hiking pants, brown leather hiking boots, wool gloves. Serious resilient expression. Generate 5 separate images, each showing only this one character.
+```
+
+### CHAR-05: 高橋（仮名）— 生存者・赤いヤッケ
+
+[実写参照: なし — テキスト情報のみ]
+
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background. Single character only, front-facing view. A Japanese man in his 50s, average build, short black hair, medium skin tone. Wearing a bright red waterproof rain jacket (yakke), dark hiking pants, brown leather hiking boots, wool gloves. Quiet determined expression. Generate 5 separate images, each showing only this one character.
+```
+
+### CHAR-06: 菅野 — 剱御前小舎従業員
+
+[実写参照: なし — テキスト情報のみ]
+
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background. Single character only, front-facing view. A Japanese man in his 30s, athletic build from mountain work, short black hair, medium skin tone. Wearing a dark brown mountain hut staff jacket with a name patch, gray work pants, sturdy boots. Alert dutiful expression. Generate 5 separate images, each showing only this one character.
+```
+
+---
+
+## 座標リファレンス（Google Earth用）
+
+| 地点 | 座標（DMS） | 標高 |
+|:---|:---|:---|
+| 室堂 | 36°34'38"N, 137°35'45"E | 2,450m |
+| 一ノ越 | 36°34'13"N, 137°36'43"E | 2,700m |
+| 雄山（立山） | 36°34'33"N, 137°37'11"E | 3,003m |
+| 大汝山 | 36°34'39"N, 137°37'14"E | 3,015m |
+| 富士ノ折立 | 36°34'44"N, 137°37'17"E | 2,999m |
+| 真砂岳 | 36°35'12"N, 137°37'12"E | 2,861m |
+| 内蔵助山荘 | 36°35'18"N, 137°37'24"E | 2,780m |
+| 別山 | 36°35'51"N, 137°37'13"E | 2,880m |
+| 剱御前小舎 | 36°36'12"N, 137°37'05"E | 2,746m |
+| 剱岳 | 36°37'24"N, 137°37'01"E | 2,999m |
+
+---
+
+## 1. 全素材リスト（台本順）
+
+---
+
+<!-- PART: KI -->
+
+
+---
+
 ナレーター: 足がけいれんし動けない、、めまい、喋ることすらままならない。体感温度マイナス21度の極寒地獄。
+
+【制作メモ】ASSET-001 [Lovart動画]
+シーン: 猛吹雪の山岳稜線。倒れ込む中高年登山者たちのシルエット。体が震え、視界は真っ白
+```
+Extreme blizzard on a high mountain ridge at night. Several middle-aged Japanese hikers collapsed in the snow, barely moving. Whiteout conditions, violent wind blowing snow horizontally. One person trembling uncontrollably, another lying motionless. Dark and terrifying atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ Google Flow動画プロンプト:
+```
+Cinematic blizzard footage on a mountain ridge. Violent snow and wind. Silhouettes of collapsed hikers barely visible through whiteout. Camera shakes from wind. Photorealistic documentary style.
+```
+→ 編集者指示: 「体感温度マイナス21度」の赤テロップを画面中央にフェードイン。BGMはダーク・ドローン系。風の効果音を強調。
+
+---
 
 ナレーター: それでも10人は、誰ひとり「帰ろう」とは口にしませんでした、、
 
+【制作メモ】ASSET-002 [キャラアニメーション]
+シーン: 吹雪の中を黙々と歩く10人の中高年登山者グループ。誰も引き返そうとしない
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 10 middle-aged and elderly Japanese hikers walking in a line through heavy snow. Most wearing thin cotton pants and vinyl rain gear. Exhausted but silent, no one turning back. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge trail in a severe blizzard, heavy snowfall, zero visibility. Strong wind blowing snow sideways. Rocky trail barely visible under fresh snow. Dark gray sky. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「帰ろう」の部分をカギカッコ付き白テロップで表示。BGM継続。
+
+---
+
 ナレーター: なぜこのような事態となったのか？そして、なぜ引き返さなかったのか。
+
+【制作メモ】ASSET-003 [Lovart静止画+編集者]
+```
+Dark atmospheric mountain landscape in autumn turning to winter. Tateyama mountain range silhouette against an ominous stormy sky. Faint outline of a hiking trail disappearing into darkness and fog. Mysterious and foreboding. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 画面中央に2行テロップをゆっくりフェードイン。「なぜこのような事態となったのか？」→「なぜ引き返さなかったのか。」低音BGMで不安感を高める。
+
+---
 
 ナレーター: 地形図とともに解説します。
 
+【制作メモ】ASSET-004 [Google Earth]
+シーン: 宇宙空間から日本列島へズームイン → 富山県 → 立山連峰を俯瞰
+座標: 36°34'33"N, 137°37'11"E（立山・雄山山頂）
+カメラ: 宇宙 → 日本列島 → 北アルプス → 立山にズームイン
+→ 編集者指示: 「立山連峰 標高3,003m」のテロップを重ねる。ルート全体（室堂→雄山→別山→剱御前小舎）を赤いラインで示す。
+
+---
+
 ナレーター: 1989年10月7日（登山前日）。
+
+【制作メモ】ASSET-005 [Lovart静止画+編集者]
+```
+A vintage Japanese calendar page showing October 1989. Autumn leaves partially visible at the edges. Warm nostalgic color tone reminiscent of late 1980s Japan. Soft natural lighting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「1989年10月7日（登山前日）」の白テロップを画面中央にフェードイン。
+
+---
 
 ナレーター: 小笠原諸島の付近に台風25号が発生。
 
+【制作メモ】ASSET-006 [Google Earth]
+シーン: 日本列島の南方、小笠原諸島付近に台風のシンボルを表示。日本海側への影響範囲を矢印で示す
+座標: 27°05'N, 142°12'E（小笠原諸島付近）
+カメラ: 日本列島の南海上を広角で表示し、台風の位置と進路を示す
+→ 編集者指示: 台風マーク（渦巻き）を小笠原付近に配置。「台風25号」のラベルを追加。寒気の南下を青い矢印で表現。
+
+---
+
 ナレーター: 気象庁の天気予報では、日本海側の山が大荒れになると警告。
+
+【制作メモ】ASSET-007 [図解/テロップ演出]
+→ 編集者指示: ASSET-006のGoogle Earth画面を引き続き表示しながら、日本海側を赤くハイライト。「日本海側の山 大荒れ」の警告テロップを赤文字で表示。天気図風のグラフィックを重ねる。
+
+---
 
 ナレーター: テレビでは真冬並みの寒気が流れ込むと報道され、10月としては異例の気象状況でした。
 
+【制作メモ】ASSET-008 [Lovart静止画+編集者]
+```
+A 1980s Japanese television set in a traditional Japanese living room showing a weather forecast broadcast. The TV screen displays a weather map of Japan with cold air mass arrows. Warm interior lighting contrasting with the ominous weather forecast on screen. Nostalgic 1989 atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: テレビ画面部分に「真冬並みの寒気」のテロップを追加。「10月としては異例」の白テロップを画面下部に表示。
+
+---
+
 ナレーター: 立山の道中にある内蔵助山荘（くらのすけさんそう）のオーナー、佐伯常行（さえきつねゆき）さんは、この異常気象で登山をするのは危険と判断します。
+
+【制作メモ】ASSET-009 [キャラアニメーション]
+シーン: 内蔵助山荘の中で天気図を見つめるCHAR-01（佐伯さん）。深刻な表情で窓の外の荒天を見る
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A Japanese man in his late 50s, sturdy weathered build, short gray-black hair, tanned skin, deep wrinkles. Wearing a dark green mountain lodge work jacket. Looking at a weather chart with a deeply concerned, serious expression. Arms crossed. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Interior of a rustic Japanese mountain lodge (sanso) in autumn. Wooden walls and ceiling, warm incandescent lighting. A weather chart pinned to the wall. Through a small window, a dark stormy sky is visible. Cozy but tense atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「内蔵助山荘オーナー 佐伯常行さん」のテロップをCHAR-01に矢印で示す。BGMを緊迫系に切り替え。
+
+---
 
 ナレーター: そして、登山者への注意喚起を実施。「明日は山に入るな」「気の毒だが、明日は諦めなきゃダメだ」と被害者を出さないよう必死に声がけをしていきます。
 
+【制作メモ】ASSET-010 [キャラアニメーション]
+シーン: 山荘のロビーでCHAR-01（佐伯さん）が宿泊客たちに向かって真剣に説得している
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A Japanese man in his late 50s, sturdy weathered build, short gray-black hair, dark green work jacket. Standing with both hands raised in a stopping gesture, mouth open speaking urgently. Desperate pleading expression. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Interior of a Japanese mountain lodge common room at night. Long wooden table with benches. Warm yellow lighting from ceiling lamp. Maps and mountain photos on wooden walls. Rain streaking down the windows outside. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 佐伯さんのセリフを2行テロップで表示。「明日は山に入るな」→「気の毒だが、明日は諦めなきゃダメだ」。白文字、カギカッコ付き。
+
+---
+
 ナレーター: しかし、全員が佐伯さんの忠告を聞いたわけではありませんでした。
+
+【制作メモ】ASSET-011 [Lovart静止画+編集者]
+```
+A dark mountain lodge corridor at night. An open door at the end reveals a stormy dark sky outside. Hiking boots and backpacks lined up near the entrance, suggesting people preparing to leave despite the warning. Ominous foreboding atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「しかし——」の白テロップを画面中央下部に表示。不穏なSEを追加。
+
+---
 
 ナレーター: 翌朝、悪天候の中、それでも登山に出発しようとする6人の中高年。
 
+【制作メモ】ASSET-012 [キャラアニメーション]
+シーン: 悪天候の早朝、山荘の前で出発準備をする6人の中高年グループ
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 6 middle-aged Japanese hikers preparing to depart. Wearing basic rain gear, adjusting backpacks. Some look uneasy but determined. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Exterior of a Japanese mountain lodge (sanso) in early morning. Heavy gray clouds, strong wind, light snow beginning to fall. The lodge entrance with a wooden sign. Dark and foreboding autumn mountain landscape. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「翌朝 10月8日」のテロップをフェードイン。
+
+---
+
 ナレーター: その人たちが出発する直前まで、佐伯さんは「必ず引き返してきなさい。もし無理そうだと思ったら、必ず引き返してきなさい」と熱心に説得しました。
+
+【制作メモ】ASSET-013 [キャラアニメーション]
+シーン: 山荘の入口でCHAR-01（佐伯さん）が出発しようとする登山者たちに最後の説得をしている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A Japanese man in his late 50s, sturdy build, short gray-black hair, dark green work jacket. Grabbing a hiker's arm with one hand, pointing back toward the lodge with the other. Intense worried expression, eyebrows furrowed. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Mountain lodge entrance in early morning storm. Wooden doorframe, snow-dusted ground. Dim gray light, wind blowing. Hiking trail disappearing into fog and snow ahead. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 佐伯さんのセリフ「必ず引き返してきなさい」を白テロップで強調。2回目の「必ず引き返してきなさい」はやや大きくフェードイン。
+
+---
 
 ナレーター: 「この吹雪の先に予定通り行くのは無理だろう」。それが佐伯さんが感じていたことでした。
 
+【制作メモ】ASSET-014 [キャラアニメーション]
+シーン: CHAR-01（佐伯さん）が登山者たちの背中を見送りながら、不安そうに吹雪を見つめている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A Japanese man in his late 50s, sturdy build, short gray-black hair, dark green work jacket. Standing at a doorway watching people walk away into a storm. Arms at his sides, fists slightly clenched. Deeply worried resigned expression. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+View from a mountain lodge entrance looking out at a snowy mountain trail. Hikers' footprints disappearing into heavy snowfall and fog. Early morning gray light. Sense of impending doom. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 佐伯さんの心中テロップ「この吹雪の先に予定通り行くのは無理だろう」を白文字カギカッコ付きで画面下部に表示。
+
+---
+
 ナレーター: 長年この山で働いてきた人物なので、天気図を見れば、山の状況がどうなるか瞬時に理解していたのです。
+
+【制作メモ】ASSET-015 [Lovart静止画+編集者]
+```
+Close-up of a detailed weather chart showing a powerful low-pressure system approaching the Sea of Japan coast. Isobars tightly packed. A weathered Japanese man's hand pointing at the chart. Warm lodge interior lighting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 天気図のクローズアップ。低気圧の位置を赤い丸で囲む。「長年の経験」テロップを小さく画面右下に表示。
+
+---
 
 ナレーター: また、この日、立山を目指したのは、先ほどの6人の宿泊客だけではありませんでした。
 
+【制作メモ】ASSET-016 [Lovart静止画+編集者]
+```
+Murodo bus terminal building in autumn 1989. A concrete building surrounded by mountain landscape turning from autumn colors to early snow. Overcast sky with dark clouds rolling in. Several buses parked outside. Nostalgic 1980s atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「しかし6人だけではなかった——」の白テロップを画面中央下部にフェードイン。場面転換のSE。
+
+---
+
 ナレーター: 40代から60代の10人。この人たちもまた、立山を目指すことに。
+
+【制作メモ】ASSET-017 [キャラアニメーション]
+シーン: 10人の中高年グループが室堂付近に集合している。和やかな雰囲気だがやや曇天
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 10 middle-aged and elderly Japanese men and women (ages 40-60), gathered together preparing for a hike. Mix of casual and basic hiking attire, some with cotton pants and thin jackets. Cheerful and excited expressions. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Murodo plateau in Tateyama, autumn. Alpine landscape with mountain peaks in background partially hidden by clouds. Stone-paved walkway. Autumn colors fading, dark clouds approaching from the west. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「40代〜60代の10人」のテロップを画面下部に表示。
+
+---
 
 ナレーター: 京都、滋賀から車で何時間もかけて、紅葉狩りを楽しむため富山県立山へ向かっていました。
 
+【制作メモ】ASSET-018 [Google Earth]
+シーン: Google Earthで京都・滋賀から富山県立山への道のりをライン表示
+座標: 35°01'N, 135°46'E（京都）→ 36°34'33"N, 137°35'52"E（室堂）
+カメラ: 京都付近から北東方向に富山・立山へフライスルー
+→ 編集者指示: 京都→滋賀→富山→立山の道のりを黄色のラインで表示。「京都・滋賀 → 富山県立山」のテロップ。「目的：紅葉狩り」のラベルを追加。
+
+---
+
 ナレーター: 1日目に室堂から一ノ越、そして雄山、剱御前小舎（つるぎごぜんごや）で一泊。
+
+【制作メモ】ASSET-019 [Google Earth]
+シーン: 立山エリアのクローズアップ。1日目のルート（室堂→一ノ越→雄山→剱御前小舎）を赤いラインで表示
+座標: 36°34'33"N, 137°35'52"E（室堂）→ 36°34'13"N, 137°36'43"E（一ノ越）→ 36°34'33"N, 137°37'11"E（雄山）→ 36°36'12"N, 137°37'05"E（剱御前小舎）
+カメラ: 室堂上空から稜線に沿ってフライスルー
+→ 編集者指示: 各地点にラベル（「室堂」「一ノ越」「雄山 3,003m」「剱御前小舎（1泊目）」）を配置。ルートを赤いラインで引く。「1日目」のテロップを画面左上に表示。
+
+---
 
 ナレーター: 2日目に、2班に分かれて剱岳を往復し雷鳥沢温泉で合流し宿泊。3日目には下山する計画。
 
+【制作メモ】ASSET-020 [Google Earth]
+シーン: 2日目以降のルート。剱御前小舎→剱岳→雷鳥沢温泉→3日目下山
+座標: 36°36'12"N, 137°37'05"E（剱御前小舎）→ 36°37'24"N, 137°37'01"E（剱岳）→ 36°34'48"N, 137°36'12"E（雷鳥沢）
+カメラ: 剱御前小舎から剱岳方面、そして雷鳥沢へ
+→ 編集者指示: 2日目ルートを青いラインで表示。「2日目」「3日目 下山」のテロップ。「剱岳 2,999m」のラベル。全行程3日間の計画図を一画面にまとめる。
+
+---
+
 ナレーター: 総距離約20km、17時間ほどかかる道のりで、上級者向けコース。しかし10人のうち6人は、登山経験がほとんどなかったとされています。
+
+【制作メモ】ASSET-021 [図解/テロップ演出]
+→ 編集者指示: ASSET-019/020のGoogle Earth画面を背景に、インフォグラフィックを重ねる。「総距離 約20km」「所要時間 約17時間」「難易度：上級者向け」を箇条書き表示。続けて「10人中6人は登山経験ほぼなし」を赤テロップで強調。
+
+---
 
 ナレーター:10人は京都と滋賀を拠点とする税理士を中心としたグループ。
 
+【制作メモ】ASSET-022 [Lovart静止画+編集者]
+```
+A quiet Japanese city street in Kyoto in the late 1980s. Traditional machiya townhouses alongside modern office buildings. Autumn ginkgo trees lining the street. Warm nostalgic atmosphere of 1989 Japan. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「京都・滋賀の税理士グループ」のテロップを画面下部に白文字で表示。
+
+---
+
 ナレーター: メンバーの中でも特に経験豊富で、仲間から「山の師匠」と呼ばれていたのが野口さん（仮名）。コンロなどの山道具も持参し、頼れる存在でした。
+
+【制作メモ】ASSET-023 [キャラアニメーション]
+シーン: CHAR-02（野口さん）がバックパックからコンロを取り出して見せている。頼もしい雰囲気
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02: A Japanese man in his late 50s, medium build, short black hair with gray, wearing a dark navy hiking jacket and olive pants. Confidently holding a portable camping stove in one hand, backpack open at his feet showing neatly packed mountain gear. Proud reliable expression. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Mountain lodge common room interior with wooden walls. Hiking gear spread on a table: maps, compass, flashlight. Warm interior lighting. 1989 Japan atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「野口さん（仮名）— 山の師匠」のテロップをCHAR-02に矢印で示す。
+
+---
 
 ナレーター: もうひとり、吉田さん（仮名）は、登山雑誌『山と渓谷』を読み、出発前に天気を調べていた勉強熱心な登山者です。山の異変には敏感なタイプ。
 
+【制作メモ】ASSET-024 [キャラアニメーション]
+シーン: CHAR-03（吉田さん）が登山雑誌を読みながら天気情報をチェックしている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: A Japanese man in his early 50s, slim build, black hair with glasses, gray hiking jacket. Sitting and reading a Japanese hiking magazine, looking thoughtful and studious. Adjusting his glasses with one hand. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+A quiet corner of a mountain lodge. A small table with a Japanese hiking magazine "Yama to Keikoku" and a weather forecast newspaper clipping. Warm lamp light. Calm studious atmosphere. 1989 Japan. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「吉田さん（仮名）— 天気に敏感な登山者」のテロップをCHAR-03に矢印で示す。
+
+---
+
 ナレーター:そのため、吉田さんは今回の登山中に、山の天候が崩れることを事前に知っていた可能性が高いです。
+
+【制作メモ】ASSET-025 [キャラアニメーション]
+シーン: CHAR-03（吉田さん）が空を見上げて暗い雲を心配そうに眺めている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: A Japanese man in his early 50s, slim build, glasses, gray hiking jacket. Looking up at the sky with a worried, knowing expression. One hand shielding his eyes. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Dark ominous storm clouds gathering over mountain peaks. Autumn alpine landscape with the last traces of fall colors. Wind picking up, first snowflakes beginning to fall. Foreboding atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「天候悪化を事前に知っていた可能性」のテロップを画面下部に白文字で表示。
+
+---
 
 ナレーター:しかし、なぜか吉田さんが天候について仲間に伝えることはありませんでした。
 
+【制作メモ】ASSET-026 [キャラアニメーション]
+シーン: CHAR-03（吉田さん）が口を閉ざしたまま、仲間たちの輪から少し離れて立っている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: A Japanese man in his early 50s, slim build, glasses, gray hiking jacket. Standing slightly apart from a cheerful group, mouth closed, looking down with a conflicted guilty expression. Arms folded. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Mountain lodge interior. A group of hikers chatting and laughing at a table in the warm background. One empty chair slightly pulled away. Contrast between the cheerful group and a sense of isolation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「なぜか仲間に伝えなかった」のテロップを白文字で表示。「？」マークを大きく追加。不穏なSE。
+
+---
+
 ナレーター: 残りのメンバー8人のうち、登山経験者が2名。その他、ほとんど経験がないとされるメンバーが6名いました。
+
+【制作メモ】ASSET-027 [図解/テロップ演出]
+→ 編集者指示: グループ構成のインフォグラフィックを作成。10人のシルエットアイコンを並べ、色分けで示す。「経験豊富: 野口（1名）」青 /「天気に詳しい: 吉田（1名）」緑 /「登山経験あり: 2名」黄 /「経験ほぼなし: 6名」赤。背景は暗い山の画像。
+
+---
 
 ナレーター: また、10人は登山前に登山計画書を提出していなかったとされています。
 
+【制作メモ】ASSET-028 [Lovart静止画+編集者]
+```
+A blank Japanese mountain climbing registration form (tozan keikaku-sho) lying on a wooden table. The form is completely empty, pen lying beside it untouched. Dramatic spotlight on the blank form against dark background. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「登山計画書 未提出」の赤テロップを画面中央に大きく表示。バツ印を重ねる。
+
+---
+
 ナレーター: つまり、誰がいつどこへ向かっているのか、メンバー以外の人は誰も知らない状態だったのです。
+
+【制作メモ】ASSET-029 [Lovart静止画+編集者]
+```
+A desolate mountain trail disappearing into thick fog and approaching snowstorm. No signs, no markers, no trace of human presence. The trail fades into white nothingness. Isolated and eerie atmosphere. Late autumn Tateyama mountain range. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「誰もこの10人の存在を知らなかった」のテロップを画面中央にゆっくりフェードイン。低音BGMで不安感を最大化。暗転でKIセクション終了。
+
+---
+
+<!-- PART: SHO -->
+
+
+---
 
 ナレーター: 10月8日、午前8時45分。
 
+【制作メモ】ASSET-030 [Lovart静止画+編集者]
+```
+Early morning mountain landscape, Murodo plateau, Tateyama. Overcast sky at dawn, faint autumn colors on distant slopes, thin layer of fresh snow on the ground. Clock reading 8:45 AM superimposed feel. Cold gray morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「10月8日 午前8時45分」の白テロップを画面中央にフェードイン。時計のSEを追加。BGMは静かな緊張系に切り替え。
+
+---
+
 ナレーター: 10人は室堂から雄山を通り、1日目の目的地である剱御前小舎へと向かいます。
+
+【制作メモ】ASSET-031 [Google Earth]
+シーン: 室堂から雄山、剱御前小舎までの1日目のルートを赤いラインで表示
+座標: 36°34'33"N, 137°35'52"E（室堂）→ 36°34'33"N, 137°37'11"E（雄山）→ 36°36'12"N, 137°37'05"E（剱御前小舎）
+カメラ: 室堂上空から稜線に沿ってフライスルー
+→ 編集者指示: 各地点にラベルを配置。ルートを赤いラインで表示。「1日目のルート」のテロップを画面左上に。
+
+---
 
 ナレーター: この日、室堂の空は少し曇っていましたが、まわりの山々は赤や黄色に染まり、見事な紅葉が広がっていました。
 
+【制作メモ】ASSET-032 [Lovart動画]
+シーン: 室堂周辺の美しい紅葉風景。曇り空だが山々が赤や黄色に色づいている穏やかな光景
+```
+Murodo plateau in Tateyama, early October. Stunning autumn foliage covering the mountain slopes in vivid red, orange, and yellow. Slightly overcast sky but still bright. Alpine landscape with distant peaks. Breathtaking natural beauty. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ Google Flow動画プロンプト:
+```
+Sweeping panoramic shot of autumn mountain landscape. Vivid red and yellow foliage covering mountain slopes under an overcast sky. Gentle breeze rustling the leaves. Peaceful yet ominous atmosphere. Photorealistic documentary style.
+```
+→ 編集者指示: 紅葉の美しさを強調するカラフルな映像。後の吹雪との対比を意識。穏やかなBGM。
+
+---
+
 ナレーター: この日の富山市は気温13.2度でおだやかな気候。
+
+【制作メモ】ASSET-033 [図解/テロップ演出]
+→ 編集者指示: ASSET-032の紅葉映像を引き続き背景に使用。画面右側に温度計グラフィックを表示。「富山市 13.2℃」を白テロップで大きく表示。おだやかな印象。
+
+---
 
 ナレーター: しかし、標高の高い雄山では気温はマイナス6度。地上と比べ20度近い差があったのです。
 
+【制作メモ】ASSET-034 [図解/テロップ演出]
+→ 編集者指示: ASSET-033から連続。温度計グラフィックを2つ並べて比較。左「富山市 13.2℃」右「雄山 −6℃」。差の「約20℃」を赤い矢印で強調。背景を暗くして不穏さを演出。警告SE。
+
+---
+
 ナレーター: 出発から約30分が経過したころ。
+
+【制作メモ】ASSET-035 [Google Earth]
+シーン: 室堂から一ノ越方面への登山道を上空から表示。出発地点から30分程度進んだ位置をマーク
+座標: 36°34'33"N, 137°35'52"E（室堂）→ 36°34'23"N, 137°36'18"E（中間地点付近）
+カメラ: 室堂から一ノ越方面へのルート上空を緩やかに移動
+→ 編集者指示: 「出発から約30分」のテロップ。赤いラインでルート表示し、現在地点をピンで示す。
+
+---
 
 ナレーター: 室堂を出た時には見えていた青空が、急速に変わりはじめました。
 
+【制作メモ】ASSET-036 [Lovart静止画+編集者]
+```
+Mountain trail between Murodo and Ichinokoshi on Tateyama. The sky rapidly changing from partly blue to dark gray storm clouds. Dramatic contrast between the last patch of blue sky and approaching dark clouds. Strong sense of weather transition. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 青空から暗雲へのトランジションを強調。不穏なBGMに切り替え開始。
+
+---
+
 ナレーター: よどんだ雲が覆い、雪がちらつきはじめます。さらに歩みを進めると、風もどんどん強くなり登山困難な状況に、、
+
+【制作メモ】ASSET-037 [Lovart動画]
+シーン: 山岳の登山道で天候が急変。雪がちらつき始め、風が強まっていく
+```
+Mountain hiking trail on Tateyama ridge. Dark oppressive clouds completely covering the sky. Light snow beginning to fall, wind picking up strongly. Visibility dropping rapidly. Rocky alpine trail with patches of snow forming. Dramatic and threatening atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ Google Flow動画プロンプト:
+```
+Mountain trail with weather rapidly deteriorating. Snow begins falling lightly then intensifies. Wind picks up, blowing snow sideways. Clouds descend and swallow the mountain. Photorealistic documentary style.
+```
+→ 編集者指示: 風のSEを徐々に強く。「登山困難な状況に、、」のテロップをフェードイン。
+
+---
 
 ナレーター: 先ほどの穏やかな天気が、嘘のような変貌ぶりです。
 
+【制作メモ】ASSET-038 [キャラアニメーション]
+シーン: 吹雪の中を必死に歩く10人の中高年登山者グループ。先ほどの穏やかさが一変
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 10 middle-aged Japanese hikers leaning forward against strong wind. Holding their hats, squinting, arms bracing. Shocked and distressed expressions. Soaked clothing clinging to their bodies. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge trail in sudden blizzard conditions. Heavy snow falling diagonally in strong wind. Visibility severely reduced. Rocky trail barely visible under accumulating snow. Dark threatening sky. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 先ほどの紅葉映像との対比を強調。BGMを緊迫系に完全切り替え。
+
+---
+
 ナレーター: メンバー10人が一ノ越に到着した頃には、すでに本格的な吹雪になっており、まともに顔を上げて歩くことすら難しい状況でした。
+
+【制作メモ】ASSET-039 [Google Earth]
+シーン: 一ノ越の位置を表示。吹雪のイメージを重ねる
+座標: 36°34'13"N, 137°36'43"E（一ノ越）
+カメラ: 一ノ越付近を上空からクローズアップ
+→ 編集者指示: 一ノ越の位置にピンを配置。「一ノ越 標高2,700m」のラベル。「本格的な吹雪」の赤テロップを追加。
+
+---
 
 ナレーター: 一ノ越には、一ノ越山荘という山小屋があります。
 
+【制作メモ】ASSET-040 [Lovart静止画+編集者]
+```
+A sturdy stone and wood Japanese mountain hut (Ichinokoshi Sanso) on a mountain pass at 2700m elevation. Heavy snow falling, strong wind. The building barely visible through the blizzard. Warm faint light glowing from inside the windows. Harsh alpine winter conditions. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「一ノ越山荘」のテロップを建物に矢印で示す。
+
+---
+
 ナレーター: 10人は一旦そこで休憩することに。
+
+【制作メモ】ASSET-041 [キャラアニメーション]
+シーン: 山荘内部で冷え切った10人が休憩している。安堵と疲労の表情
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 10 middle-aged Japanese hikers sitting inside a mountain lodge, warming their hands. Soaked clothing, exhausted but relieved expressions. Some rubbing their hands, others catching their breath. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Interior of a simple Japanese mountain hut at a high mountain pass. Wooden benches along the walls, small windows showing whiteout blizzard outside. Dim warm lighting from a single bulb. Basic shelter atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 一時的に安堵感のあるBGM。しかし窓の外の吹雪を強調。
+
+---
 
 ナレーター: ここが、最初の分岐点でした。引き返すなら、このタイミングです。
 
+【制作メモ】ASSET-042 [図解/テロップ演出]
+→ 編集者指示: 画面を暗くし、中央に大きく「最初の分岐点」の赤テロップをフェードイン。下に「引き返すなら、このタイミング」の白テロップ。分岐を示す矢印グラフィック（←室堂へ戻る / →雄山へ進む）を表示。警告SE。
+
+---
+
 ナレーター: 室堂まで戻れば、1時間ほどバスに乗って安全な場所へ降りられます。
+
+【制作メモ】ASSET-043 [Google Earth]
+シーン: 一ノ越から室堂への下山ルートを表示。安全な選択肢としてのルート
+座標: 36°34'13"N, 137°36'43"E（一ノ越）→ 36°34'33"N, 137°35'52"E（室堂）
+カメラ: 一ノ越から室堂方面を俯瞰
+→ 編集者指示: 一ノ越→室堂の下山ルートを緑色のラインで表示。「約1時間」「バスで安全な場所へ」のテロップ。安全な選択肢を強調。
+
+---
 
 ナレーター:しかし、結局10人は引き返すことはしませんでした。
 
+【制作メモ】ASSET-044 [キャラアニメーション]
+シーン: 山荘の中で10人が立ち上がり、出発の準備をしている。引き返さない選択
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 10 middle-aged Japanese hikers standing up and putting on backpacks inside a lodge. Determined but uncertain expressions. Some glancing at the window nervously. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Interior of mountain hut entrance. Door slightly ajar revealing fierce blizzard outside. Backpacks and wet hiking gear on the floor. The contrast between warm interior and deadly conditions outside. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「しかし——引き返さなかった」のテロップを画面中央にゆっくり表示。不穏なSE。
+
+---
+
 ナレーター: 一ノ越山荘で休憩をとるメンバー10人。時間が経つにつれ、吹雪はどんどん強まっていきます。
+
+【制作メモ】ASSET-045 [Lovart静止画+編集者]
+```
+A small window inside a Japanese mountain hut. Through the glass, a raging blizzard is visible, snow plastered against the window pane. The glass is fogged from warmth inside. Dim interior light. The storm outside intensifying minute by minute. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 吹雪のSEを徐々に強く。時計の針が進む演出を重ねる。
+
+---
 
 ナレーター: 窓の外は真っ白。風が山荘の壁を叩き、建物全体がきしむほどだったとのこと。
 
+【制作メモ】ASSET-046 [Lovart静止画+編集者]
+```
+Exterior of a mountain hut in a violent blizzard at high altitude. The building shaking under extreme wind. Snow completely covering the windows, visibility zero. The wooden structure creaking under the storm's force. Dark and terrifying atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 建物がきしむSEを追加。風の音を最大限に強調。
+
+---
+
 ナレーター:メンバーの中には、この天候を不安に感じていた人もいたはずです。
+
+【制作メモ】ASSET-047 [キャラアニメーション]
+シーン: 山荘内で不安そうな表情のメンバー。窓の外を心配そうに見つめる
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A middle-aged Japanese hiker sitting on a bench, looking toward a window with a deeply worried expression. Hands clasped together nervously. Biting lower lip. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Interior of a mountain hut. A frost-covered window showing nothing but white blizzard outside. Wooden walls, a dim light bulb swinging slightly from wind vibrations. Tense claustrophobic atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 不安を煽るBGM。メンバーの心理描写を強調。
+
+---
 
 ナレーター: しかし、誰も「やめよう」とは言い出せませんでした。
 
+【制作メモ】ASSET-048 [キャラアニメーション]
+シーン: 山荘内で互いに目を合わせられない10人。沈黙の重圧
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of middle-aged Japanese hikers sitting in a small room, avoiding eye contact with each other. Some looking down at their hands, others staring at the wall. Heavy silence atmosphere. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Interior of a mountain hut common room. Empty benches and table. A heavy oppressive silence implied by the still scene. Storm raging outside the frost-covered windows. Dim yellow lighting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「やめよう」のテロップをカギカッコ付き白文字で表示し、すぐに消す（言い出せなかった演出）。沈黙のSE。
+
+---
+
 ナレーター: 遠方から何時間もかけて来ている。仲間を誘った手前、自分から中止とは言いにくい。このような心理があったのではないかと推測されています。
+
+【制作メモ】ASSET-049 [図解/テロップ演出]
+→ 編集者指示: 暗い背景に心理分析テロップを箇条書きで順番に表示。「遠方から何時間もかけて来ている」→「仲間を誘った手前…」→「自分から中止とは言いにくい」。最後に「集団心理の罠」を赤テロップで表示。
+
+---
 
 ナレーター: また、経験豊富な野口さんがいたものの、明確なリーダーというわけではありませんでした。そのため、続行か中止かの判断は誰も下せなかったのです。
 
+【制作メモ】ASSET-050 [キャラアニメーション]
+シーン: CHAR-02（野口さん）が仲間たちの間で判断を迷っている様子
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02: A Japanese man in his late 50s, medium build, short black hair with gray, navy hiking jacket. Standing with arms crossed, looking conflicted and uncertain. Not quite a leader but the most experienced. Troubled furrowed brows. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Interior of a mountain hut. A table with a map spread out. Empty chairs around it. The map showing the Tateyama ridge route. Storm sounds from outside. Indecisive atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「明確なリーダー不在」のテロップを画面下部に表示。判断できない沈黙の間を演出。
+
+---
+
 ナレーター: 10人が30分ほど小屋で過ごし、再び登山を開始することに。
+
+【制作メモ】ASSET-051 [キャラアニメーション]
+シーン: 10人が山荘を出て吹雪の中に踏み出す瞬間
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 10 middle-aged Japanese hikers stepping out of a doorway into a blizzard. Bracing themselves against the wind. Pulling hoods tight, leaning forward. Determined but fearful expressions. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain hut doorway opening into a fierce blizzard. Snow blowing horizontally. The trail ahead barely visible, disappearing into white. A stark contrast between the sheltered interior behind and the deadly storm ahead. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「30分後——再出発」のテロップ。扉を開ける音のSE。風のSEが一気に大きくなる演出。
+
+---
 
 ナレーター: 同じ頃、朝、佐伯さんから注意を受けながらも登山に出かけた6人の中高年メンバーは、
 
+【制作メモ】ASSET-052 [キャラアニメーション]
+シーン: 6人の中高年グループが吹雪の中を歩いている（佐伯さんに忠告された別グループ）
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 6 middle-aged Japanese hikers walking in a blizzard, looking distressed and regretting their decision. Hunched against the wind, struggling. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain trail in heavy blizzard conditions near Tateyama ridge. Visibility near zero. Snow accumulating rapidly on the rocky path. Fierce wind. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「同じ頃——」のテロップで場面転換。佐伯さんに忠告された6人グループへ。
+
+---
+
 ナレーター: あまりの急激な天候悪化だったので、
+
+【制作メモ】ASSET-053 [Lovart静止画+編集者]
+```
+A mountain ridge completely engulfed in violent blizzard. Extreme wind bending sparse alpine vegetation. Snow and ice pellets flying horizontally. Zero visibility. Raw power of nature on full display. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 天候悪化の激しさを映像で表現。風のSE最大。
+
+---
 
 ナレーター: しばらくして忠告通りに内蔵助山荘に戻ってきていました。
 
+【制作メモ】ASSET-054 [キャラアニメーション]
+シーン: 6人が内蔵助山荘に戻ってきた。雪まみれで疲弊しているが安堵の表情
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 6 middle-aged Japanese hikers entering a mountain lodge, covered in snow. Exhausted but relieved expressions. Some brushing snow off their jackets. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Entrance of Kuranisuke mountain lodge (sanso). Warm light spilling out from the open door onto snow-covered ground. Welcoming shelter against the raging blizzard. Relief and safety. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 安堵感のあるBGMに一時切り替え。「内蔵助山荘に帰還」のテロップ。
+
+---
+
 ナレーター: この時に、メンバーのひとりが、「やっぱりオヤジさんの言うとおりだったよ」と佐伯さんに語ったとされています。
+
+【制作メモ】ASSET-055 [キャラアニメーション]
+シーン: 山荘内で6人のメンバーの1人がCHAR-01（佐伯さん）に話しかけている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese men: one middle-aged hiker covered in melting snow, speaking with a sheepish grateful smile; and CHAR-01, a man in his late 50s with short gray-black hair and dark green work jacket, listening with a stern but relieved expression. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Interior of Kuranisuke mountain lodge. Warm wood-paneled room with a kerosene heater. Wet hiking gear hanging to dry. Steam rising from hot tea cups on a table. Cozy safe atmosphere contrasting with the storm outside. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「やっぱりオヤジさんの言うとおりだったよ」のセリフをカギカッコ付き白テロップで表示。
+
+---
 
 ナレーター: 佐伯さんの忠告がなければ、6人のメンバーはそのまま登山を続けていた可能性も考えられますので、
 
+【制作メモ】ASSET-056 [キャラアニメーション]
+シーン: CHAR-01（佐伯さん）が腕を組んで窓の外の吹雪を見ている。忠告が功を奏した安堵
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A Japanese man in his late 50s, sturdy build, short gray-black hair, dark green work jacket. Arms crossed, looking out a window with a mixture of relief and lingering worry. Slight nod of satisfaction. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Mountain lodge window view showing fierce blizzard outside. Frost forming on the glass edges. The warm interior light reflecting on the window pane. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 佐伯さんの忠告の重要性を強調するテロップ。
+
+---
+
 ナレーター: 熱心な説得により未然に事故を防げた事例と言えます。
+
+【制作メモ】ASSET-057 [図解/テロップ演出]
+→ 編集者指示: 画面を2分割。左側「佐伯さんの忠告を聞いた6人 → 無事帰還」を緑色で表示。右側「忠告なく登山を続行した10人 → ？」を赤色で表示。対比を明確に。運命の分かれ道を強調するBGM。
+
+---
 
 ナレーター:一方、登山を続行した10人は、 一ノ越から雄山へと向かっていました。
 
+【制作メモ】ASSET-058 [Google Earth]
+シーン: 一ノ越から雄山への稜線ルートを表示
+座標: 36°34'13"N, 137°36'43"E（一ノ越）→ 36°34'33"N, 137°37'11"E（雄山）
+カメラ: 一ノ越から雄山方面へ稜線沿いにフライスルー
+→ 編集者指示: ルートを赤いラインで表示。「一方——10人は」の白テロップで場面転換。不穏なBGMに戻す。
+
+---
+
 ナレーター: 通常であれば1時間ほどで通過できます。しかし、猛吹雪の影響で、視界は数メートル先しか見えず、強風で、体がよろめきます。
+
+【制作メモ】ASSET-059 [キャラアニメーション]
+シーン: 猛吹雪の稜線で体がよろめきながら歩く登山者たち
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of middle-aged Japanese hikers struggling against extreme wind. Bodies leaning at steep angles, one person stumbling. Faces barely visible through hoods, coated in snow. Desperate exhausted expressions. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge trail between Ichinokoshi and Oyama in severe blizzard. Visibility only a few meters. Snow blowing horizontally. Rocky steep trail covered in ice and snow. Extremely dangerous conditions. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「通常1時間のルート」のテロップ。風のSEを強調。体がよろめく演出。
+
+---
 
 ナレーター:疲労が出はじめたメンバーの足取りが徐々に遅れはじめ、間隔が広がります。
 
+【制作メモ】ASSET-060 [キャラアニメーション]
+シーン: 吹雪の中、グループの間隔が広がっていく。前方と後方で距離が開く
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Japanese hikers walking in a line with increasing gaps between them. The front hikers moving steadily while rear hikers lag behind, dragging their feet. Fatigue evident in their posture. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Steep mountain ridge trail in blizzard. A long trail stretching into fog and snow. Distance between markers increasing. Desolate and exhausting terrain. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: グループの間隔が広がる演出。BGM継続。
+
+---
+
 ナレーター: いつしか、前を行く4人のグループと後方の6人のグループの2つに分裂。声をかけ合おうにも、風の音にかき消されて届きません。
+
+【制作メモ】ASSET-061 [キャラアニメーション]
+シーン: グループが4人と6人に完全に分裂。後方グループが振り返って叫ぶが声が届かない
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two separate groups of Japanese hikers in blizzard conditions: a front group of 4 walking ahead, and a rear group of 6 falling behind. One person in the rear group cupping hands around mouth trying to shout. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge in whiteout blizzard. The trail splits into obscurity ahead and behind. Howling wind. Snow so thick it creates a wall of white between near and far points. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「4人 + 6人 に分裂」の図解テロップを追加。風で声がかき消される演出（セリフ音がフェードアウト）。
+
+---
 
 ナレーター: 振り返っても、吹雪で後方の姿が見えません。それでも、全員が同じ方向に歩き続けていました。
 
+【制作メモ】ASSET-062 [Lovart静止画+編集者]
+```
+Point of view shot looking back down a mountain ridge trail in heavy blizzard. Nothing visible beyond a few meters of snow-covered rocky path. Complete whiteout behind. Footprints in snow quickly being filled in by fresh snowfall. Isolated and hopeless atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「後方の姿が見えない」感覚を映像で再現。孤独感を強調するBGM。
+
+---
+
 ナレーター: やがて前のグループが、雄山の山頂に到着。しばらくして後ろのグループも合流。
+
+【制作メモ】ASSET-063 [Google Earth]
+シーン: 雄山山頂の位置を表示
+座標: 36°34'33"N, 137°37'11"E（雄山）
+カメラ: 雄山山頂を上空からクローズアップ
+→ 編集者指示: 「雄山山頂 3,003m」のラベル。「前方4人が先着 → しばらくして6人合流」のテロップ。
+
+---
 
 ナレーター: ここまでにかかった時間は、標準コースタイムの倍近く。つまり1時間で着くはずの場所に、2時間近くかかっていました。
 
+【制作メモ】ASSET-064 [図解/テロップ演出]
+→ 編集者指示: 画面を2分割。左「標準コースタイム：1時間」→右「実際の所要時間：約2時間」。時計グラフィックで倍の時間を視覚化。「×2」を赤い大文字で強調。警告SE。
+
+---
+
 ナレーター: これは明らかな危険信号。
+
+【制作メモ】ASSET-065 [図解/テロップ演出]
+→ 編集者指示: 黒背景に赤い警告マーク（⚠）を大きく表示。「危険信号」の赤テロップを点滅。短い警告SE。前のASSET-064から連続演出。
+
+---
 
 ナレーター: 標準の倍の時間がかかったことで、10人のメンバーの体力はかなり削られていたと想定されています。
 
+【制作メモ】ASSET-066 [キャラアニメーション]
+シーン: 雄山山頂で疲弊しきった10人。肩を落とし、息が荒い
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 10 exhausted middle-aged Japanese hikers. Some bent over catching their breath, others sitting on rocks with heads down. Visible fatigue and depleted energy. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Summit of Mount Oyama (3003m) in blizzard. Rocky peak area with a small stone shrine barely visible through snow. Wind howling across the exposed summit. Accumulating snow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 体力消耗を表現。重い疲労感のBGM。
+
+---
+
 ナレーター: この時、雄山の山頂からふもとの室堂までは、下りで2時間ほど。吹雪の中でも、まだ戻れる距離でした。
+
+【制作メモ】ASSET-067 [Google Earth]
+シーン: 雄山山頂から室堂への下山ルートを表示。まだ間に合う選択肢
+座標: 36°34'33"N, 137°37'11"E（雄山）→ 36°34'33"N, 137°35'52"E（室堂）
+カメラ: 雄山から室堂方面へ下りルートを俯瞰
+→ 編集者指示: 雄山→室堂のルートを緑色のラインで表示。「下り約2時間 まだ戻れた」のテロップ。
+
+---
 
 ナレーター: それでも、10人は山を下りませんでした。
 
+【制作メモ】ASSET-068 [Lovart静止画+編集者]
+```
+A mountain summit in blizzard with two diverging paths. One path leading down to safety (faintly visible), the other continuing along a dangerous ridge into darkness and storm. A crossroads of fate. Dark dramatic lighting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「それでも——下りなかった」の白テロップを画面中央に表示。重低音SE。2回目の分岐点を逃した演出。
+
+---
+
 ナレーター: 12時頃、全員が揃ったので、体力回復のため休憩をとることに。
+
+【制作メモ】ASSET-069 [Google Earth]
+シーン: 雄山山頂の詳細表示。休憩地点を示す
+座標: 36°34'33"N, 137°37'11"E（雄山山頂）
+カメラ: 雄山山頂をクローズアップ
+→ 編集者指示: 「正午12時 雄山山頂」のテロップ。山頂の祠の位置をマーク。
+
+---
 
 ナレーター: 雄山の山頂には祠（ほこら）があり、その陰で風をしのぎながらの食事でした。
 
+【制作メモ】ASSET-070 [Lovart静止画+編集者]
+```
+A small stone Shinto shrine (hokora) on the summit of Mount Oyama, Tateyama. Snow accumulating on the shrine roof. Strong wind blowing snow around it. The shrine providing a small windbreak on its leeward side. Rocky mountain summit in blizzard. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「雄山山頂の祠」のテロップ。祠の陰で風をしのぐ位置を矢印で示す。
+
+---
+
 ナレーター: 経験豊富な野口さんが持参していたコンロを取り出し、豚汁を作ることに。
+
+【制作メモ】ASSET-071 [キャラアニメーション]
+シーン: CHAR-02（野口さん）がコンロを取り出し、吹雪の中で豚汁を作っている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02: A Japanese man in his late 50s, medium build, short black hair with gray, navy hiking jacket. Crouching and carefully operating a portable camping stove, a small pot balanced on it. Focused determined expression, wind blowing his hair. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Rocky mountain summit behind a stone shrine, providing partial wind shelter. A small camping stove with steam rising from a pot, barely visible in blowing snow. Mountain summit in blizzard conditions. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 豚汁を作る音のSE（コンロの火、鍋の湯気）。野口さんの頼もしさを演出。
+
+---
 
 ナレーター: かじかんだ手でおにぎりをほおばり、豚汁をすする一同。温かい食べ物が心と体を癒します。
 
+【制作メモ】ASSET-072 [キャラアニメーション]
+シーン: 吹雪の中、祠の陰で食事をする10人。震える手でおにぎりを食べ、豚汁を飲んでいる
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of middle-aged Japanese hikers huddled together eating. Trembling hands holding onigiri rice balls, sipping hot soup from cups. Briefly comforted expressions despite the cold. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Sheltered spot behind a stone shrine on a mountain summit. Steam rising from a small pot. Snow swirling around but slightly calmer in the wind shadow. Brief moment of warmth in harsh conditions. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 一時的に温かみのあるBGM。しかし吹雪のSEは継続して不安を残す。
+
+---
+
 ナレーター: しかし、吹雪が吹くたびメンバー10人の体温がどんどん奪われていきました。
+
+【制作メモ】ASSET-073 [Lovart静止画+編集者]
+```
+Close-up of trembling hands holding a cup of hot soup in a blizzard. Steam being instantly ripped away by violent wind. Frost forming on the fingers. The warm liquid contrasting with the freezing conditions. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 温かさが奪われていく演出。BGMを再び暗く。体温低下を示す青いフィルターを画面端からじわじわと。
+
+---
 
 ナレーター: 次第に状況は悪化していきます。足のけいれんを訴える人やめまいを感じる人も出てきてしまいました。
 
+【制作メモ】ASSET-074 [キャラアニメーション]
+シーン: メンバーの中で体調不良者が出始める。足を押さえる人、頭を抱える人
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two middle-aged Japanese hikers showing distress: one grabbing their leg with a pained expression from muscle cramps, another holding their head dizzy and swaying. Clearly unwell. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Mountain summit in blizzard. Rocky ground covered in snow. Wind and snow swirling. Dark oppressive atmosphere suggesting deteriorating conditions. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 体調悪化のSE（心拍音など）。「足のけいれん」「めまい」のテロップを症状ごとに表示。
+
+---
+
 ナレーター: これは低体温症の初期症状です。
+
+【制作メモ】ASSET-075 [図解/テロップ演出]
+→ 編集者指示: 医学的な図解を表示。人体シルエットに低体温症の初期症状を矢印で示す。「低体温症 初期症状」のタイトル。「けいれん」「めまい」「震え」「判断力低下」を各部位に配置。体温計グラフィック「35℃以下」を赤く表示。
+
+---
 
 ナレーター: 体温が低下したことで、体は末端の血流を減らし内臓を守ろうとします。
 
+【制作メモ】ASSET-076 [図解/テロップ演出]
+→ 編集者指示: 人体シルエットのアニメーション。手足の血管が青くなり（血流減少）、中心部（内臓）が赤く光る（防御反応）。「末端の血流↓」「内臓を守る」のテロップ。ASSET-075から連続した医学解説。
+
+---
+
 ナレーター: その結果、手足の感覚が鈍くなり、筋肉が正常に動かなくなります。
+
+【制作メモ】ASSET-077 [図解/テロップ演出]
+→ 編集者指示: ASSET-076の人体図を引き続き使用。手足部分がグレーアウト（感覚喪失を表現）。「手足の感覚↓」「筋肉の機能低下」のテロップ。
+
+---
 
 ナレーター: 箸すらまともに握れない。おにぎりを口に運ぶ手が、震えて止まらないのです。
 
+【制作メモ】ASSET-078 [キャラアニメーション]
+シーン: 震える手でおにぎりを落としそうになるメンバー。箸を握れない
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A middle-aged Japanese hiker with violently trembling hands trying to hold an onigiri rice ball. The onigiri slipping from numb fingers. Frustrated desperate expression. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Close-up of a snow-covered rocky surface on a mountain summit. Dropped chopsticks and scattered rice on the frozen ground. Wind blowing snow across the scene. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 手の震えを強調するカメラワーク。落としたおにぎりのクローズアップ。
+
+---
+
 ナレーター: すでに登山続行は不可能と判断しないと命取りとなる状態でした。
+
+【制作メモ】ASSET-079 [Lovart静止画+編集者]
+```
+A desolate mountain summit in extreme blizzard. The landscape suggests no way forward, no way back. Dark ominous sky meeting white snow-covered ground. A sense of being trapped and running out of time. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「登山続行は不可能」の赤テロップを画面中央に表示。「命取り」を強調。警告SE。
+
+---
 
 ナレーター: ここから登山口の室堂まで、下りで2時間。まだ間に合う距離です。
 
+【制作メモ】ASSET-080 [Google Earth]
+シーン: 雄山山頂から室堂への下山ルートを再度表示。まだ間に合うことを強調
+座標: 36°34'33"N, 137°37'11"E（雄山）→ 36°34'33"N, 137°35'52"E（室堂）
+カメラ: 雄山から室堂方面を俯瞰
+→ 編集者指示: ルートを緑色のラインで表示。「下り2時間 まだ間に合う」の白テロップ。3回目の分岐点。
+
+---
+
 ナレーター: それでも誰ひとり、「帰ろう」とは言い出しません。
+
+【制作メモ】ASSET-081 [キャラアニメーション]
+シーン: 疲弊した10人が黙って座っている。誰も撤退を言い出さない重い沈黙
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of exhausted middle-aged Japanese hikers sitting in silence. Heads bowed, eyes avoiding each other. Heavy oppressive atmosphere of unspoken words. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain summit area in blizzard. Empty rocky space near a stone shrine. Wind howling. The path down the mountain faintly visible but no one taking it. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「帰ろう」をカギカッコ付き白テロップで表示→すぐ消える（言い出せない演出）。沈黙の間を長めに。
+
+---
 
 ナレーター: 午後1時半ごろ、吹雪が吹き荒れる中、10人は雄山を出発します。
 
+【制作メモ】ASSET-082 [キャラアニメーション]
+シーン: 10人が雄山山頂を離れ、猛吹雪の中を再び歩き出す
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 10 middle-aged Japanese hikers departing from a mountain summit into a blizzard. Hunched forward, leaning into the wind. Exhausted but forcing themselves to move. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge trail leading away from a summit shrine into fierce blizzard. The trail disappearing into whiteout ahead. Snow drifts forming on the rocks. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「午後1時半 雄山出発」のテロップ。風のSEが再び強まる。
+
+---
+
 ナレーター: しかし、雄山を出たあと、状況はさらに悪化することに。
+
+【制作メモ】ASSET-083 [Lovart静止画+編集者]
+```
+Mountain ridge beyond Mount Oyama heading toward Onanjiyama. Conditions dramatically worse than before. Extreme blizzard with near-zero visibility. Ice forming on rocks. The trail nearly impossible to follow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「状況はさらに悪化」の赤テロップ。BGMの緊迫度をさらに上げる。
+
+---
 
 ナレーター: 西からの強風が、10人の体力を容赦なく削り取ります。
 
+【制作メモ】ASSET-084 [Lovart動画]
+シーン: 稜線上で西から吹き付ける猛烈な強風。雪が横殴りに飛ぶ
+```
+Mountain ridge in extreme storm. Violent west wind blowing snow and ice horizontally across a narrow ridge trail. Rocks and vegetation bent by the force of the gale. Terrifying power of mountain weather. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ Google Flow動画プロンプト:
+```
+Extreme wind on a mountain ridge. Snow and ice blasting horizontally from left to right. Camera shakes from the violent gale. Visibility drops to near zero. Raw power of nature. Photorealistic documentary style.
+```
+→ 編集者指示: 風のSEを最大レベルに。カメラシェイク効果。視聴者に嵐の凄まじさを体感させる。
+
+---
+
 ナレーター: この時、風速は毎秒20メートルを超えており、台風に匹敵するほどの強風でした。
+
+【制作メモ】ASSET-085 [図解/テロップ演出]
+→ 編集者指示: 風速計グラフィックを表示。「風速 20m/s以上」を赤い大文字で。下に比較テロップ「台風の暴風域に匹敵」。風の強さを矢印の太さで視覚化。
+
+---
 
 ナレーター: まっすぐ立っていられない。風が吹くたびに体がよろめき、踏ん張らなければ吹き飛ばされそうになる。そんな過酷な状況です。
 
+【制作メモ】ASSET-086 [キャラアニメーション]
+シーン: 強風で体がよろめき、踏ん張って耐える登山者たち
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Middle-aged Japanese hikers being blown sideways by extreme wind. One nearly knocked off their feet, another crouching low and gripping with both hands. Terrified expressions, hair and clothing whipping violently. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Exposed mountain ridge in hurricane-force wind. Snow and ice blasting across the narrow trail. Rocks and boulders the only anchors. A sense of being blown off the mountain. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: カメラシェイク効果。体がよろめく動きを強調。
+
+---
+
 ナレーター: さらに、登山道の両側は急な斜面。踏み外したら、数百メートル下まで転がり落ちる危険性があります。
+
+【制作メモ】ASSET-087 [Google Earth]
+シーン: 雄山〜大汝山間の稜線を横から見た角度で、両側の急斜面を強調
+座標: 36°34'36"N, 137°37'13"E（雄山〜大汝山の中間稜線）
+カメラ: 稜線を側面から見て、両側の切り立った斜面を強調する角度
+→ 編集者指示: 登山道の狭さと両側の急斜面を強調。「数百メートルの崖」の赤テロップ。高度差を矢印で示す。
+
+---
 
 ナレーター: 前を歩く人の背中すら見えない。吹雪で視界は数メートル。声を出しても、風にかき消される。
 
+【制作メモ】ASSET-088 [Lovart静止画+編集者]
+```
+First-person perspective on a mountain ridge in complete whiteout blizzard. Only a few meters of snowy trail visible ahead, then nothing but white. No other hikers visible. Total isolation. The sense of being swallowed by the storm. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 主観映像的な演出。風のSEのみ。声が風に消される演出（エコーがフェードアウト）。
+
+---
+
 ナレーター: それでも、10人は一歩一歩、歩み続けたのです。
+
+【制作メモ】ASSET-089 [キャラアニメーション]
+シーン: 吹雪の中を一歩一歩進み続ける登山者たちの足元
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Close-up view of Japanese hikers' legs and feet trudging forward. One step at a time, exhausted but persistent. Boots heavy and snow-caked, knees trembling. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Close-up of a snowy mountain trail with fresh footprints slowly being covered by falling snow. Each step leaving a deep imprint. Blizzard conditions. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 一歩一歩のリズムに合わせた演出。静かだが力強いBGM。
+
+---
 
 ナレーター: さらに問題だったのが、10人の服装でした。
 
+【制作メモ】ASSET-090 [Lovart静止画+編集者]
+```
+Close-up of wet cotton clothing and thin vinyl rain gear in a blizzard. Ice forming on the fabric surface. Water soaking through cotton fibers. The inadequacy of the gear painfully obvious against the extreme conditions. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「装備の問題」の白テロップ。不穏なBGMに切り替え。
+
+---
+
 ナレーター: 10人のうち万全の装備だったのはわずか2名。残り8名の多くは綿のズボンにビニールの雨具でした。
+
+【制作メモ】ASSET-091 [図解/テロップ演出]
+→ 編集者指示: 装備比較の図解。10人のシルエットアイコンを並べ、2人を緑（万全装備）、8人を赤（不十分装備）で色分け。「万全装備: 2名」vs「綿ズボン+ビニール雨具: 8名」のテロップ。
+
+---
 
 ナレーター: 当時、防水透湿素材の雨具はビニール製の何倍もの価格。「紅葉狩り程度なら、これで十分だろう」と判断したとしても、不思議ではありません。
 
+【制作メモ】ASSET-092 [Lovart静止画+編集者]
+```
+A 1980s Japanese outdoor gear shop display. Gore-Tex rain jackets with expensive price tags next to cheap vinyl rain ponchos. The price difference clearly visible. Nostalgic 1989 retail atmosphere. Warm indoor lighting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 価格差を示すテロップ「防水透湿素材 = ビニール製の数倍」。「紅葉狩り程度なら…」のセリフテロップをカギカッコ付きで表示。
+
+---
+
 ナレーター: しかし、吹雪で濡れた体から、容赦なく体温が奪われていきました。
+
+【制作メモ】ASSET-093 [キャラアニメーション]
+シーン: 吹雪の中、濡れた綿の服で震える登山者たち。服が水を吸って重くなっている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Middle-aged Japanese hikers in soaking wet cotton clothing, shivering violently. Their clothes heavy with water, clinging to their bodies. Miserable suffering expressions. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge in blizzard. Wet snow falling heavily. Water and ice on every surface. The kind of conditions that soak through any non-waterproof clothing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 体温低下を示す青いフィルター効果。震えのSE。
+
+---
 
 ナレーター:次第に10人はそれぞれ疲労が蓄積し、 再び4人と6人の2つのグループに分かれてしまうことに。
 
+【制作メモ】ASSET-094 [キャラアニメーション]
+シーン: 再び4人と6人に分裂するグループ。疲労で後方グループがさらに遅れる
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Japanese hikers splitting into two groups. Front group of 4 walking with tired but steady posture, rear group of 6 barely standing, some being supported by others. Extreme exhaustion visible in their faces and posture. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge trail in blizzard. A long snowy path with poor visibility. The sense of a group being stretched and split apart by distance. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「再び分裂 4人 + 6人」のテロップ。グループ分裂を矢印で図示。
+
+---
+
 ナレーター: この時、雄山から近くにある大汝山（おおなんじやま）付近で、後ろから来た別の2人組の登山者が、遅れている後方の6人グループに気づきます。
+
+【制作メモ】ASSET-095 [Google Earth]
+シーン: 大汝山付近を表示。別の2人組登山者が後方6人グループに遭遇した地点
+座標: 36°34'39"N, 137°37'14"E（大汝山）
+カメラ: 大汝山付近の稜線をクローズアップ
+→ 編集者指示: 「大汝山付近 標高3,015m」のラベル。2人組と6人グループの遭遇地点をマーク。
+
+---
 
 ナレーター: 足がもつれ、おんぶされた人やまともに歩けていない人たち、、明らかに様子がおかしいです。
 
+【制作メモ】ASSET-096 [キャラアニメーション]
+シーン: 後方6人グループの悲惨な状態。おんぶされている人、まともに歩けない人
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 6 Japanese hikers in terrible condition. One person being carried piggyback, another stumbling and barely standing, supported by companions. Faces pale, eyes half-closed. Clearly in distress and danger. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge near Onanjiyama in severe blizzard. Rocky trail covered in ice and snow. Extreme conditions. Visibility only a few meters. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 6人の悲惨な状態を強調。「おんぶされた人」「まともに歩けない」のテロップ。
+
+---
+
 ナレーター: 「大丈夫ですか」と声をかけたところ、
+
+【制作メモ】ASSET-097 [キャラアニメーション]
+シーン: 別の2人組の登山者が6人グループに声をかけている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese hikers in proper mountain gear approaching a struggling group. One of the two calling out with concern, hand cupped near mouth. Worried expression. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Mountain trail in blizzard. A narrow section of ridge trail with poor visibility. Two sets of footprints converging on the snowy path. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「大丈夫ですか」のセリフをカギカッコ付き白テロップで表示。
+
+---
 
 ナレーター: 「1時間くらいで下ろしますから」と回答したと報告されています。
 
+【制作メモ】ASSET-098 [キャラアニメーション]
+シーン: 6人グループのメンバーが2人組に対して手を振って「大丈夫」と答えている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A middle-aged Japanese hiker in poor condition, waving off concern with one hand while barely standing. Trying to appear fine but clearly not. Forced reassuring expression. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge trail in blizzard. The path ahead disappearing into whiteout. A crossroads moment. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「1時間くらいで下ろしますから」のセリフをカギカッコ付き白テロップで表示。
+
+---
+
 ナレーター: つまり、これだけの悲惨な状況になってもまだ、自分たちで対処できると思っていたのです。
+
+【制作メモ】ASSET-099 [Lovart静止画+編集者]
+```
+A mountain ridge trail in blizzard disappearing into darkness. The impossibility of self-rescue evident in the extreme conditions. A sense of fatal misjudgment. Dark dramatic atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「自分たちで対処できると思っていた」の白テロップを画面中央に。判断ミスを強調するBGM。
+
+---
 
 ナレーター: 声をかけた2人組は、その言葉を信じ、そのまま歩みを進めることに。
 
+【制作メモ】ASSET-100 [キャラアニメーション]
+シーン: 2人組の登山者が6人グループを残して先に進んでいく後ろ姿
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese hikers walking away, looking back over their shoulders with uncertain expressions. Reluctantly continuing forward. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge trail in blizzard. Two sets of footprints diverging. One path continuing ahead, the other fading behind. The sense of a missed opportunity for rescue. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 2人組が去っていく演出。「その言葉を信じ…」の白テロップ。
+
+---
+
 ナレーター: これが、外部の人間に助けを求めることができた最後のチャンスでした。
+
+【制作メモ】ASSET-101 [Lovart静止画+編集者]
+```
+A mountain ridge trail in blizzard. Two sets of footprints in the snow diverging in different directions, one set slowly being covered by fresh snowfall. The last trace of a missed connection disappearing. Dark melancholic atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「最後のチャンス」の赤テロップを画面中央に大きく表示。低音のドラムビート。暗転気味の演出。
+
+---
 
 ナレーター: 一ノ越、雄山、そしてこの大汝山。山を下りると判断できるタイミングが複数回あったのにもかかわらず、全てのチャンスを棒に振ってしまいました。
 
+【制作メモ】ASSET-102 [Google Earth]
+シーン: 一ノ越→雄山→大汝山の3つの分岐点を順番にハイライト
+座標: 36°34'13"N, 137°36'43"E（一ノ越）→ 36°34'33"N, 137°37'11"E（雄山）→ 36°34'39"N, 137°37'14"E（大汝山）
+カメラ: 3地点を順番にフライスルーし、各地点で赤いマーカーを配置
+→ 編集者指示: 各地点に「分岐点①」「分岐点②」「分岐点③」のラベルを赤で配置。「全てのチャンスを棒に振った」のテロップ。
+
+---
+
 ナレーター: 午後4時半ごろ。 通常ならとっくに宿泊予定の剱御前小舎に到着してる頃です。
+
+【制作メモ】ASSET-103 [Google Earth]
+シーン: 現在地（富士ノ折立〜真砂岳付近）と目的地（剱御前小舎）の距離を表示
+座標: 36°34'44"N, 137°37'17"E（富士ノ折立）→ 36°36'12"N, 137°37'05"E（剱御前小舎）
+カメラ: 現在地から剱御前小舎までの残りルートを俯瞰
+→ 編集者指示: 「午後4時半」のテロップ。「通常ならとっくに到着」の白テロップ。現在地と目的地の距離感を視覚化。
+
+---
 
 ナレーター: 10人は、剱御前小舎からかなり手前の富士ノ折立（ふじのおりたて）と真砂岳（まさごだけ）の鞍部（あんぶ）付近を歩いていました。
 
+【制作メモ】ASSET-104 [Google Earth]
+シーン: 富士ノ折立と真砂岳の鞍部を詳細表示
+座標: 36°34'58"N, 137°37'15"E（富士ノ折立〜真砂岳の鞍部付近）
+カメラ: 鞍部付近をクローズアップ
+→ 編集者指示: 「富士ノ折立 2,999m」「真砂岳 2,861m」のラベル。鞍部の位置にピンを配置。「10人の現在地」のテロップ。
+
+---
+
 ナレーター:もうろうとする意識の中、先に進んでいた4人は間違えて雷鳥平へ下山する大走りコースに入り込んでしまいます。
+
+【制作メモ】ASSET-105 [Google Earth]
+シーン: 鞍部から大走りコースへの分岐を表示。4人が誤って大走りコースに入った経路
+座標: 36°34'58"N, 137°37'15"E（鞍部）→ 36°34'48"N, 137°36'12"E（雷鳥平方面・大走りコース）
+カメラ: 鞍部付近から大走りコースの分岐を俯瞰
+→ 編集者指示: 正しいルートを青、誤ったルート（大走りコース）を赤の点線で表示。「道を間違えた」の赤テロップ。
+
+---
 
 ナレーター:すぐに進んでいる道が違うことに気がつき、もとのルートへと引き返しました。
 
+【制作メモ】ASSET-106 [キャラアニメーション]
+シーン: 4人が間違いに気づき、急いで引き返している
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 4 middle-aged Japanese hikers turning around abruptly. Panicked realization on their faces. Bodies twisting, rushing back urgently. Snow-covered clothing, wide fearful eyes. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+A mountain trail fork in blizzard. One path leading downhill (wrong direction), another continuing along the ridge (correct route). Snow covering trail markers. Confusing terrain in whiteout conditions. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 引き返す動きの矢印演出。「すぐに気づき引き返す」のテロップ。
+
+---
+
 ナレーター:その後、仲間が同じミスをしないよう、分岐点で6人の到着を待つことに。
+
+【制作メモ】ASSET-107 [キャラアニメーション]
+シーン: 4人が分岐点で吹雪の中、立ち尽くして6人を待っている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 4 middle-aged Japanese hikers huddling together, looking behind them waiting for their companions. Shivering, arms wrapped around themselves. Snow on their shoulders and hats. Anxious worried expressions. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+A trail junction on a mountain ridge in blizzard. Two paths diverging. Snow accumulating. The trail behind disappearing into whiteout. Waiting in extreme cold. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 待機シーンの静かな緊張感。風のSE継続。
+
+---
 
 ナレーター: 吹雪の中、ただ立ち尽くして待つしかない時間。動いていれば多少は体が温まりますが、立ち止まった瞬間から体温は急速に奪われます。
 
+【制作メモ】ASSET-108 [Lovart静止画+編集者]
+```
+Mountain ridge trail junction in blizzard. Fresh snow piling up on rocks and the ground. The stillness of waiting contrasted with the violent storm. Time passing agonizingly. Ice forming on every surface. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「立ち止まった瞬間から体温は急速に低下」のテロップ。時間経過を示す演出。
+
+---
+
 ナレーター: 10分、20分、、後方の6人はなかなか姿を見せません。結局、全員が集合するまで40分も経過したとされています。
+
+【制作メモ】ASSET-109 [図解/テロップ演出]
+→ 編集者指示: 黒背景にカウントアップ時計の演出。「10分…」→「20分…」→「30分…」→「40分」と時間が経過するテロップ。最後に「40分間の待機」を赤テロップで大きく表示。体温低下のグラフを併せて表示。
+
+---
 
 ナレーター: そうこうしてるうちに、1人の体力が限界に。意識がもうろうとし、自分の力では歩けない状態となります。
 
+【制作メモ】ASSET-110 [キャラアニメーション]
+シーン: 1人のメンバーが崩れ落ちるように倒れ、仲間が支えようとする
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A middle-aged Japanese hiker collapsing to their knees on a snowy trail. Eyes half-closed, consciousness fading. Another hiker rushing to support them. Desperation and fear. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Snow-covered mountain trail in blizzard. A spot where someone has fallen, disturbed snow around the impact point. Desperate scene. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 倒れるSE。「1人が限界に」の赤テロップ。心拍音を低く重く。
+
+---
+
 ナレーター: 確実に10人の体が命の危機に瀕していました。
+
+【制作メモ】ASSET-111 [Lovart静止画+編集者]
+```
+A desolate mountain ridge in blizzard at dusk. The last light fading from the sky. Complete isolation and danger. The sense of lives hanging in the balance. Dark dramatic atmosphere with blue-gray tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「命の危機」の赤テロップを画面中央に。重低音BGM。暗転気味に。
+
+---
 
 ナレーター: 出発から約8時間が経過。富士ノ折立と真砂岳の鞍部付近。
 
+【制作メモ】ASSET-112 [Google Earth]
+シーン: 出発からの経過時間と現在地を表示
+座標: 36°34'58"N, 137°37'15"E（富士ノ折立〜真砂岳の鞍部）
+カメラ: 鞍部付近を上空から表示し、出発地点（室堂）からのルート全体を振り返る
+→ 編集者指示: 「出発から約8時間」の白テロップ。室堂からのルートを全て赤いラインで表示。現在地にピンを配置。日没が近づくオレンジ色の空を背景に。
+
+---
+
 ナレーター: あたりは暗くなりつつあり、吹雪はいまだにやむ気配がありません。
+
+【制作メモ】ASSET-113 [Lovart動画]
+シーン: 夕暮れの山岳稜線。暗くなりつつある中で吹雪が続いている
+```
+Mountain ridge at dusk in severe blizzard. The last dim light of day fading. Snow and wind continuing relentlessly. Growing darkness swallowing the landscape. The transition from dangerous to deadly conditions. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ Google Flow動画プロンプト:
+```
+Mountain ridge at dusk. Fading light as darkness creeps in. Blizzard continuing without mercy. The landscape slowly disappearing into blackness. Haunting and terrifying atmosphere. Photorealistic documentary style.
+```
+→ 編集者指示: 日没のタイムラプス的演出。光が失われていく恐怖を強調。BGMを最も暗いトーンに。
+
+---
 
 ナレーター: ここにきて、ようやく10人は事態の深刻さに気づき、救助要請をすることに。
 
+【制作メモ】ASSET-114 [キャラアニメーション]
+シーン: 10人が集まり、ようやく救助要請の判断をする場面
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of middle-aged Japanese hikers huddled together in a desperate meeting. Some barely standing, others sitting on the snowy ground. A moment of grim realization. Fear and urgency in their faces. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge at dusk in blizzard. Darkening sky. A small area of rocky ground where a group might gather. Harsh wind and snow. The transition from day to night bringing increased danger. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「ようやく——救助要請を決断」のテロップ。遅すぎた決断を強調。
+
+---
+
 ナレーター: しかし、助けを呼ぼうにも全員が全員、まともに動ける状態ではありませんでした。
+
+【制作メモ】ASSET-115 [キャラアニメーション]
+シーン: 全員が疲弊しきっている。立ち上がることすら困難な状態
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of middle-aged Japanese hikers in dire condition. Most sitting or lying on snowy ground, unable to stand. Faces showing exhaustion, confusion, and fear. Bodies trembling. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge in darkening blizzard. Windswept snow covering everything. The harshest possible conditions for survival. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 全員の疲弊を強調。「全員が動ける状態ではない」の白テロップ。
+
+---
 
 ナレーター: そこで、比較的、体力が残っていた中村さんと高橋さんの2人が最寄りの山小屋である内蔵助山荘（くらのすけさんそう）に向かう形となり、
 
+【制作メモ】ASSET-116 [キャラアニメーション]
+シーン: CHAR-04（中村さん）とCHAR-05（高橋さん）が立ち上がり、救助要請に出発する
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese men standing up from a group: CHAR-04 in a dark green waterproof jacket with wool gloves, and CHAR-05 in a bright red waterproof jacket (yakke) with wool gloves. Determined courageous expressions, ready to brave the storm for their companions. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge at dusk in blizzard. A group of hikers huddled on the ground. Two sets of footprints leading away from the group into the storm. The beginning of a rescue mission. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「中村さん（CHAR-04）」「高橋さん（CHAR-05）」のテロップを各キャラに矢印で示す。「救助要請へ」のテロップ。
+
+---
+
 ナレーター: 残る8人は、その場で二人の帰りを信じて待つことにします。
+
+【制作メモ】ASSET-117 [キャラアニメーション]
+シーン: 8人が吹雪の中に残され、2人の出発を見送る
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 8 exhausted middle-aged Japanese hikers huddled on the ground, watching two companions walk away into the storm. Hoping and praying expressions. Some waving weakly. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge at dusk in blizzard. An exposed area with no shelter. Two sets of footprints leading away into the darkness. The remaining group's location marked by disturbed snow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「残る8人——信じて待つ」の白テロップ。2人が吹雪に消えていく演出。
+
+---
 
 ナレーター: 8人が待機した場所は風をさえぎるものが何もない絶望的な場所でした。
 
+【制作メモ】ASSET-118 [Lovart静止画+編集者]
+```
+An exposed mountain ridge saddle between two peaks in extreme blizzard. Completely open to the wind with no rocks, no trees, no shelter of any kind. Flat exposed terrain battered by horizontal snow and wind. The most vulnerable possible location on a mountain. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「風をさえぎるものが何もない」の白テロップ。風の音を強調。絶望的な場所の映像。
+
+---
+
 ナレーター: 内蔵助山荘の佐伯さんは、取材でこの場所について「ほんとに吹きさらしで、隠（かげ）になるところがない」。
+
+【制作メモ】ASSET-119 [キャラアニメーション]
+シーン: CHAR-01（佐伯さん）が取材に答えている（後日談の回想シーン）
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A Japanese man in his late 50s, sturdy build, short gray-black hair, dark green work jacket. Sitting and being interviewed, speaking with a pained sorrowful expression. Shaking his head slightly. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Interior of a mountain lodge. Simple wooden room with a table. Interview setting atmosphere. A window showing mountain landscape in the background. Quiet reflective mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 佐伯さんの証言テロップ「ほんとに吹きさらしで、隠になるところがない」をカギカッコ付き白文字で表示。「内蔵助山荘 佐伯さん」のラベル。
+
+---
 
 ナレーター: 少し移動すれば、風を避けられる窪地や岩陰があったかもしれません。
 
+【制作メモ】ASSET-120 [Google Earth]
+シーン: 待機地点付近の地形を詳細表示。近くに風を避けられそうな窪地や岩場がある可能性を示す
+座標: 36°34'58"N, 137°37'15"E（鞍部付近）
+カメラ: 待機地点を3D地形で表示し、近くの地形変化を確認できる角度
+→ 編集者指示: 待機した場所（吹きさらし）と少し離れた場所（窪地・岩陰）を矢印で示す。「もし移動していれば…」のテロップ。
+
+---
+
 ナレーター: 「せめて風だけでも避けていれば…」と振り返っています。
+
+【制作メモ】ASSET-121 [キャラアニメーション]
+シーン: CHAR-01（佐伯さん）が後悔と悲しみの表情で語っている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A Japanese man in his late 50s, sturdy build, short gray-black hair, dark green work jacket. Eyes downcast, one hand covering his mouth in grief. Deep regret and sorrow in his expression. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Interior of a mountain lodge interview setting. Warm but somber lighting. The weight of memories in the quiet room. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「せめて風だけでも避けていれば…」のテロップをカギカッコ付き白文字で表示。佐伯さんの悲しみを強調。
+
+---
 
 ナレーター: 残された8人は濡れきった綿のズボンとビニールの雨具でみるみる体温が奪われていて、心身ともに疲弊していました。
 
+【制作メモ】ASSET-122 [キャラアニメーション]
+シーン: 8人が吹きさらしの場所で濡れた服のまま体を震わせている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 8 middle-aged Japanese hikers huddled together on open ground. Soaking wet cotton clothing and vinyl rain gear. Violently shivering, faces blue with cold. Some barely conscious. Desperate and suffering. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Open exposed mountain ridge at night in blizzard. No shelter, no windbreak. Wind and snow battering the area relentlessly. Complete darkness except for faint ambient light from snow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 体温低下を青いフィルター効果で表現。「綿のズボン」「ビニール雨具」のテロップ。
+
+---
+
 ナレーター: そのため、岩陰に隠れる体力すら、もうなかったのです。
+
+【制作メモ】ASSET-123 [Lovart静止画+編集者]
+```
+A group of abandoned backpacks and scattered gear on snow-covered ground in blizzard at night. No people visible but the evidence of collapse is everywhere. Items dropped where their owners could no longer carry them. Heartbreaking scene. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「体力すらもうなかった」の白テロップ。静かな絶望のBGM。
+
+---
 
 ナレーター: メンバーの中には、綿の軍手しか持っていない人もいました。
 
+【制作メモ】ASSET-124 [Lovart静止画+編集者]
+```
+Close-up of soaking wet cotton work gloves (gunte) abandoned on snow. The gloves completely saturated with water, frozen stiff. Ice crystals forming on the cotton fibers. A stark symbol of inadequate mountain preparation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「綿の軍手」のクローズアップ。濡れた軍手の危険性を暗示。
+
+---
+
 ナレーター: 軍手は防寒になると思いがちですが、一度濡れてしまうと、体温を奪い続けてしまいます。
+
+【制作メモ】ASSET-125 [図解/テロップ演出]
+→ 編集者指示: 図解で濡れた綿の危険性を説明。左「乾いた軍手 → 一定の保温」→右「濡れた軍手 → 体温を奪い続ける」。水が蒸発する際に熱を奪う仕組みを矢印で示す。「Cotton Kills（綿は命を奪う）」の予告テロップを小さく。
+
+---
 
 ナレーター: 日が暮れていくにつれ、気温はさらに低下。吹雪は弱まる気配がありません。
 
+【制作メモ】ASSET-126 [Lovart静止画+編集者]
+```
+Mountain ridge at night in severe blizzard. Complete darkness with only the faint glow of snow providing minimal visibility. Temperature dropping. The storm showing no signs of weakening. Utterly desolate and terrifying. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 日没から夜への移行演出。気温低下を示す温度計グラフィック「−6℃以下」。
+
+---
+
 ナレーター: 8人は互いに身を寄せ合い、声をかけ合っていたはずです。
+
+【制作メモ】ASSET-127 [キャラアニメーション]
+シーン: 暗闇の中、8人が身を寄せ合って耐えている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A group of 8 middle-aged Japanese hikers huddled tightly together in the dark. Arms around each other for warmth. Faces barely visible, eyes wide with fear. Trying to encourage each other. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge at night in blizzard. Complete darkness. Only the sound and fury of wind and snow. The faintest suggestion of a group huddled together implied by disturbed snow patterns. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 暗闘の中での連帯感。微かな人の声のSE。しかし風がそれをかき消す。
+
+---
 
 ナレーター: 体が震え、やがて震えすら止まる。それは、体が熱を作る力すら失った証拠。
 
+【制作メモ】ASSET-128 [図解/テロップ演出]
+→ 編集者指示: 低体温症の進行図を表示。「段階1: 激しい震え」→「段階2: 震えが止まる」→「段階3: 意識消失」。体温計が35℃→33℃→30℃と下がるアニメーション。「震えが止まる = 危険信号」を赤テロップで強調。
+
+---
+
 ナレーター: ひとり、またひとりと、ピクリとも体が動かなくなっていきました。
+
+【制作メモ】ASSET-129 [Lovart動画]
+シーン: 夜の吹雪の中、雪に覆われていく山岳の風景。命が消えていく暗示
+```
+Mountain ridge at night in severe blizzard. Snow slowly covering everything. Dark shapes on the ground being buried under fresh snow, barely distinguishable. The relentless accumulation of snow erasing all traces. Haunting and devastating. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ Google Flow動画プロンプト:
+```
+Night blizzard on a mountain ridge. Snow accumulating slowly, covering the ground. Dark shapes being gradually buried. Wind howling. Time passing with devastating consequence. Photorealistic documentary style.
+```
+→ 編集者指示: 最も悲しいBGMに切り替え。「ひとり、またひとりと…」の白テロップをゆっくりフェードイン。
+
+---
 
 ナレーター: 午後5時ごろ
 
+【制作メモ】ASSET-130 [Lovart静止画+編集者]
+```
+A mountain landscape at twilight in blizzard. The last traces of daylight on the western horizon. Dark blue and black sky. Snow continuing to fall. The boundary between day and night, between hope and despair. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「午後5時」の白テロップ。場面転換——中村さんと高橋さんへ。
+
+---
+
 ナレーター: 一方、8人を救うべく救助要請に向かった中村さんと高橋さん。
+
+【制作メモ】ASSET-131 [キャラアニメーション]
+シーン: CHAR-04（中村さん）とCHAR-05（高橋さん）が猛吹雪の中を必死に歩いている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese men walking through extreme blizzard: CHAR-04 in dark green waterproof jacket with wool gloves, and CHAR-05 in bright red waterproof jacket with wool gloves. Determined fierce expressions, leaning into the wind. Saving their friends. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge in extreme blizzard at dusk. Two sets of fresh footprints in the snow leading toward a distant destination. Wind and snow. A mission of life and death. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「中村さん・高橋さん 救助要請へ」のテロップ。緊迫感のあるBGMに切り替え。
+
+---
 
 ナレーター: 2人は猛吹雪の中、目的地である内蔵助山荘を目指していました。距離にして400メートルほど。10分もあれば到着する距離感です。
 
+【制作メモ】ASSET-132 [Google Earth]
+シーン: 鞍部から内蔵助山荘までの距離を表示。わずか400メートル
+座標: 36°34'58"N, 137°37'15"E（鞍部付近）→ 36°35'06"N, 137°37'24"E（内蔵助山荘）
+カメラ: 2地点間の距離感を俯瞰で表示
+→ 編集者指示: 「わずか400m」のテロップ。「通常10分の距離」の白テロップ。2地点を結ぶ線を表示。
+
+---
+
 ナレーター: しかし、視界がほぼゼロで何も見えず、体力を削られた今の二人にとって、何十キロもある遠い道のりに感じたことでしょう。
+
+【制作メモ】ASSET-133 [キャラアニメーション]
+シーン: CHAR-04とCHAR-05が視界ゼロの吹雪の中を手探りで進んでいる
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese men struggling through a whiteout blizzard: CHAR-04 in dark green waterproof jacket and CHAR-05 in bright red waterproof jacket. Arms stretched out feeling their way, faces barely visible through the snow. Exhausted but pushing forward. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Complete whiteout blizzard on a mountain. Nothing visible beyond arm's length. The ground and sky merge into one white void. Total disorientation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 視界ゼロを画面の白いフィルターで表現。「何十キロにも感じた」のテロップ。
+
+---
 
 ナレーター: 雪で足元が見えないため、一歩間違えれば、数百メートルの崖から転落する危険すらありました。
 
+【制作メモ】ASSET-134 [Lovart静止画+編集者]
+```
+Edge of a mountain ridge in blizzard at night. A steep cliff face dropping hundreds of meters into darkness below. Snow covering the edge, making it impossible to see where solid ground ends. One wrong step means death. Terrifying vertigo-inducing perspective. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「一歩間違えれば…」のテロップ。崖の深さを強調する俯瞰カメラワーク。
+
+---
+
 ナレーター:仲間を助けるため必死に内蔵助山荘を目指しますが、なんと吹雪の影響で内蔵助山荘ルートへの分岐点を完全に見失ってしまいます。
+
+【制作メモ】ASSET-135 [Google Earth]
+シーン: 稜線から内蔵助山荘への分岐点を表示。吹雪で見失った状況を説明
+座標: 36°35'06"N, 137°37'24"E（内蔵助山荘）付近の稜線上の分岐点
+カメラ: 稜線と内蔵助山荘への枝道の分岐を上空から表示
+→ 編集者指示: 稜線を白いライン、内蔵助山荘への枝道を黄色の点線で表示。分岐点に「×見失った」の赤マーク。
+
+---
 
 ナレーター: 内蔵助山荘は稜線から外れた東側の斜面にあり、たどり着くには稜線を離れて枝道に入る必要がありました。
 
+【制作メモ】ASSET-136 [Google Earth]
+シーン: 内蔵助山荘の位置を3D地形で詳細表示。稜線から東側に外れた位置
+座標: 36°35'06"N, 137°37'24"E（内蔵助山荘）
+カメラ: 稜線から内蔵助山荘の位置関係を3D地形で表示
+→ 編集者指示: 稜線と内蔵助山荘の位置関係を立体的に見せる。「稜線から外れた東側斜面」のテロップ。「枝道に入る必要がある」の説明テロップ。
+
+---
+
 ナレーター: わずか400メートル先に山小屋があるのに、その入口がどこにあるのかわからない。これが吹雪の恐ろしさです。
+
+【制作メモ】ASSET-137 [Lovart静止画+編集者]
+```
+A mountain lodge barely visible through an extreme blizzard, just a faint warm light in the distance that could be imagined or real. The path to it completely obscured by snow. So close yet impossibly far. The cruel irony of proximity without access. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「400m先に山小屋があるのに」の白テロップ。「これが吹雪の恐ろしさ」を赤テロップで強調。
+
+---
 
 ナレーター: 「このままではマズイ」そう判断した中村さんと高橋さんは、ここで大きく方針を変えます。
 
+【制作メモ】ASSET-138 [キャラアニメーション]
+シーン: CHAR-04（中村さん）とCHAR-05（高橋さん）が吹雪の中で相談し、方針変更を決断
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese men in blizzard: CHAR-04 in dark green waterproof jacket and CHAR-05 in bright red waterproof jacket. Leaning close to each other to be heard over the wind, discussing urgently. Resolute decision-making expressions. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge in extreme blizzard at dusk. A decision point on the trail. Two directions possible. Wind and snow making communication nearly impossible. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「このままではマズイ」のセリフテロップ。「方針変更」のテロップを赤で表示。
+
+---
+
 ナレーター: 別山（べっさん）方面にある剱御前小舎を目指すことにしたのです。距離にして約4キロ。
+
+【制作メモ】ASSET-139 [Google Earth]
+シーン: 方針変更——内蔵助山荘を諦め、別山方面の剱御前小舎を目指すルートを表示
+座標: 36°35'06"N, 137°37'24"E（内蔵助山荘・断念）→ 36°35'51"N, 137°37'13"E（別山）→ 36°36'12"N, 137°37'05"E（剱御前小舎）
+カメラ: 現在地から別山→剱御前小舎への新ルートをフライスルー
+→ 編集者指示: 内蔵助山荘ルートを赤×で消し、別山方面のルートを新たに黄色ラインで表示。「約4km」のテロップ。「剱御前小舎」のラベル。
+
+---
 
 ナレーター: 剱御前小舎であれば、内蔵助山荘よりも距離は遠くなりますが、そのまま道を辿っていけば確認できる地点にあるため、方角さえわかれば辿り着けます。
 
+【制作メモ】ASSET-140 [Google Earth]
+シーン: 剱御前小舎が稜線上にある位置関係を表示。分岐を探す必要がないことを強調
+座標: 36°36'12"N, 137°37'05"E（剱御前小舎）
+カメラ: 稜線沿いに剱御前小舎が位置している様子を3D地形で表示
+→ 編集者指示: 「稜線沿いに辿り着ける」のテロップ。内蔵助山荘（枝道必要）vs剱御前小舎（稜線沿い）の比較図。
+
+---
+
 ナレーター: この時の2人は、思考力や体力など、残された8人と比べると正常でした。
+
+【制作メモ】ASSET-141 [キャラアニメーション]
+シーン: CHAR-04とCHAR-05が毅然とした表情で吹雪の中を歩いている。8人より状態が良い
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese men walking in blizzard with relatively strong posture: CHAR-04 in dark green waterproof jacket with wool gloves, and CHAR-05 in bright red waterproof jacket with wool gloves. Tired but alert and focused. Compared to their fallen companions, still functioning. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Mountain ridge trail in blizzard at night. A challenging but navigable path along the ridgeline. The storm continues but the terrain is followable. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 2人がまだ動ける理由への伏線。「思考力・体力が比較的正常」のテロップ。
+
+---
 
 ナレーター: 理由は、二人の服装にありました。
 
+【制作メモ】ASSET-142 [Lovart静止画+編集者]
+```
+Close-up comparison of two types of mountain gear laid out on snow. On one side: high-quality waterproof jacket, leather hiking boots, wool gloves. On the other side: cotton pants, vinyl rain poncho, cotton work gloves. The difference between life and death. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「理由は——服装」の白テロップ。装備比較への導入。
+
+---
+
 ナレーター: 革の登山靴。防水と除湿を兼ねた高機能な雨具。そして、濡れても保温性を失わないウールの手袋。
+
+【制作メモ】ASSET-143 [図解/テロップ演出]
+→ 編集者指示: CHAR-04/CHAR-05の装備を図解で詳細表示。人体シルエットに装備を配置。「革の登山靴」→「防水透湿の雨具」→「ウールの手袋」を順番にハイライト。各装備の機能を小テロップで説明。緑色で「生存装備」と表示。
+
+---
 
 ナレーター: 登山の世界には「コットン・キルズ」という言葉があります。直訳すれば「綿は命を奪う」。
 
+【制作メモ】ASSET-144 [図解/テロップ演出]
+→ 編集者指示: 黒背景に「COTTON KILLS」の英語を赤い大文字でドンと表示。下に「綿は命を奪う」の日本語訳。登山界の格言としてのインパクトを最大化。警告SE。
+
+---
+
 ナレーター: 濡れた綿は体温を奪い続け、ビニールの雨具は汗を閉じ込めて内側から体を濡らす。8人が身につけていたのは、まさにその装備でした。
+
+【制作メモ】ASSET-145 [図解/テロップ演出]
+→ 編集者指示: 2分割比較図。左「8人の装備」（赤）: 綿ズボン→「水を吸って体温を奪う」/ ビニール雨具→「汗を閉じ込めて内側から濡れる」/ 綿軍手→「濡れると逆効果」。右「2人の装備」（緑）: 防水透湿素材→「風と雪を遮り汗を外に逃がす」/ 革の靴→「防水＋保温」/ ウール手袋→「濡れても保温」。「装備が違うだけで生死が分かれた」の赤テロップ。
+
+---
 
 ナレーター: 一方、2人の防水素材は風と雪を遮りながら、汗だけを外に逃がす。同じ吹雪、同じ気温でも、装備が違うだけで体温の奪われ方がまるで違っていたのです。
 
+【制作メモ】ASSET-146 [Lovart静止画+編集者]
+```
+Side by side comparison in mountain blizzard conditions. On one side: a high-quality waterproof jacket with water beading off the surface, dry and protected inside. On the other side: a cheap vinyl poncho with condensation dripping inside, cotton clothing soaked through. The critical difference in equipment. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「同じ吹雪、同じ気温——装備だけが違った」の白テロップ。装備比較のクライマックス。
+
+---
+
 ナレーター: すでに日が暮れていたこともあり、吹雪の中で夜の間も動き続けることは危険と判断し、
+
+【制作メモ】ASSET-147 [Lovart静止画+編集者]
+```
+Mountain ridge at complete nightfall in blizzard. Pitch black sky with driving snow visible only in the faintest ambient light. The trail completely invisible. Moving forward in these conditions means certain danger. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 完全な夜の暗さを表現。「日没後」のテロップ。動き続けることの危険を暗示。
+
+---
 
 ナレーター:2人は、別山の山頂付近まで移動し、その日はそこで一夜を過ごすことに。
 
+【制作メモ】ASSET-148 [Google Earth]
+シーン: 別山の山頂付近を表示。2人のビバーク地点
+座標: 36°35'51"N, 137°37'13"E（別山）
+カメラ: 別山山頂付近をクローズアップ
+→ 編集者指示: 「別山 2,880m」のラベル。「ビバーク地点」のピンを配置。「一夜を過ごす」のテロップ。
+
+---
+
 ナレーター: 猛吹雪の中での寝泊まり。テントや寝袋はひとつもありません。
+
+【制作メモ】ASSET-149 [Lovart静止画+編集者]
+```
+A desolate rocky mountain summit at night in blizzard. Small rocks and boulders offering minimal shelter. No tent, no sleeping bag, nothing. Just raw exposure to the elements. The terrifying prospect of spending a night here. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「テントなし」「寝袋なし」のテロップを順番に表示。生存の厳しさを強調。
+
+---
 
 ナレーター: マイナス6度以下の中で2人は岩陰に身を寄せ、雨具で体を包み、ただひたすら夜が明けるのを待つしかありませんでした。
 
+【制作メモ】ASSET-150 [キャラアニメーション]
+シーン: CHAR-04とCHAR-05が岩陰に身を寄せ合い、雨具に包まって耐えている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese men huddled together behind a rock: CHAR-04 in dark green waterproof jacket and CHAR-05 in bright red waterproof jacket. Pressed tightly against each other for warmth, wrapped in their rain gear. Shivering, eyes wide open, waiting for dawn. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Rocky outcrop on a mountain summit at night in blizzard. A small sheltered space behind large boulders. Snow and wind swirling around but slightly less intense in the lee of the rocks. Minus 6 degrees or colder. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「−6℃以下」の青テロップ。「ただひたすら夜明けを待つ」の白テロップ。極寒のSE。
+
+---
+
 ナレーター: このまま眠ってしまえば、二度と目を覚ますことはない。2人はそのことを理解していました。
+
+【制作メモ】ASSET-151 [キャラアニメーション]
+シーン: CHAR-04とCHAR-05の顔のクローズアップ。眠気と闘いながら必死に目を開けている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Close-up of two Japanese men's faces: CHAR-04 with determined wide-open eyes fighting sleep, and CHAR-05 in red jacket with similar desperate wakefulness. Frost on their eyebrows and hair. The knowledge that sleep means death visible in their eyes. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Dark night scene behind rocks on a mountain summit. Only the faintest ambient glow from snow. The oppressive darkness of a mountain night in blizzard. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「眠ったら——終わり」の白テロップをゆっくり表示。静寂と緊張のBGM。
+
+---
 
 ナレーター: お互いの体を叩き合い、声をかけ合い、必死に意識を保ち続けたのです。
 
+【制作メモ】ASSET-152 [キャラアニメーション]
+シーン: CHAR-04とCHAR-05が互いの体を叩いて起こし合っている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese men helping each other stay awake: CHAR-04 in dark green jacket slapping CHAR-05's back firmly, while CHAR-05 in red jacket shouts encouragement. Desperate survival teamwork. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Rocky shelter on mountain summit at night. Blizzard continuing outside the rock shelter. The faintest warmth of human presence in an inhospitable world. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 叩き合うSE。励まし合う声のSE。生存への執念を表現。
+
+---
+
 ナレーター: 1時間、2時間。徐々に時間の感覚が薄れていき、その度に体を叩き合います。
+
+【制作メモ】ASSET-153 [Lovart静止画+編集者]
+```
+Abstract representation of passing time in extreme cold. A watch face with frost covering the glass, hands barely visible. The concept of time blurring and losing meaning in survival conditions. Dark blue tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「1時間…2時間…」のテロップをゆっくり表示。時計の針が進む演出。時間の感覚が薄れていく表現。
+
+---
 
 ナレーター: 次第に指先の感覚が消え、叩いても痛みを感じなくなりました。足の爪先も、痛みから無感覚に変わっていきました。
 
+【制作メモ】ASSET-154 [キャラアニメーション]
+シーン: CHAR-04とCHAR-05の手や足の感覚が失われていく。叩いても反応がない
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Close-up of two Japanese men's hands: CHAR-04 hitting his own numb fingers with no reaction, CHAR-05 looking at his frost-covered feet with a blank expression. The loss of sensation visible in their confused faces. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Dark rocky shelter at night. Frost and ice covering every surface. The cruel cold penetrating even the sheltered space. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「感覚が消える」の白テロップ。手足がグレーアウトする演出。凍傷の暗示。
+
+---
+
 ナレーター: 2人は夜の間も交互に相手の背中を叩き続けたといいます。眠ったら終わりだと、わかっていたからです。
+
+【制作メモ】ASSET-155 [キャラアニメーション]
+シーン: 夜通し互いの背中を叩き続けるCHAR-04とCHAR-05
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese men in the darkest hour of night: CHAR-04 in dark green jacket mechanically patting CHAR-05's back, while CHAR-05 in red jacket does the same. Eyes barely open, faces numb, but hands still moving. An unbreakable will to survive. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Mountain summit shelter at the deepest hour of night. Complete darkness except for snow. The blizzard continuing without pause. The longest night. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「眠ったら終わり」の白テロップ。静かだが力強いBGM。2人の絆と生存への意志を強調。
+
+---
 
 ナレーター: 声が出なくなっても、手だけは動かし続ける。それだけが、生きている証でした。
 
+【制作メモ】ASSET-156 [Lovart動画]
+シーン: 夜明け前の暗闇の中、岩陰でかすかに動く2人の手。生きている最後の証
+```
+Extreme close-up of two pairs of hands in the dark of a mountain night. The hands weakly, mechanically patting each other's backs. Frost covering the gloves. Movement slowing but never stopping. The last sign of life in impossible conditions. Dark blue tones, faint ambient light from snow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ Google Flow動画プロンプト:
+```
+Close-up of two pairs of gloved hands weakly patting in rhythm in complete darkness. Frost-covered wool gloves. Slow but persistent movement. The only sign of life on a frozen mountain at night. Haunting and deeply emotional. Photorealistic documentary style.
+```
+→ 編集者指示: SHOセクション最後のカット。「声が出なくなっても、手だけは動かし続ける」の白テロップをゆっくりフェードイン。「それだけが、生きている証でした。」を続けて表示。BGMを最も感動的なピアノ曲に。余韻を残してフェードアウト。暗転でSHOセクション終了。
+
+---
+
+<!-- PART: TEN-KETSU -->
+
+
+---
+
 ナレーター: 10月9日（翌日）。午前3時半ごろ。奇跡的に吹雪の中を生き延びた二人。
+
+【制作メモ】ASSET-157 [Lovart動画]
+シーン: 夜明け前の暗い雪山。吹雪が止みかけた稜線で、2人の登山者が雪の中で身を寄せ合って夜を明かしている
+```
+Pre-dawn mountain ridge after a violent blizzard. Two middle-aged Japanese hikers huddled together in the snow, barely conscious, frost covering their jackets. Faint starlight breaking through dispersing clouds above. Snow-covered alpine landscape. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ Google Flow動画プロンプト:
+```
+Pre-dawn mountain scene. Two figures huddled in snow slowly stir as blizzard subsides. Stars visible through breaking clouds. Breath visible in freezing air. Cinematic slow camera push-in. Photorealistic documentary style.
+```
+→ 編集者指示: 「10月9日 午前3時半」の白テロップをフェードイン。BGMは静かなピアノ→希望の兆し。風音は残しつつ弱める。
+
+---
 
 ナレーター: この日は前日の吹雪が嘘かのように、いい天気でした。
 
+【制作メモ】ASSET-158 [Lovart静止画+編集者]
+```
+Stunning clear morning sky over the Tateyama mountain range after a snowstorm. Fresh white snow covering the peaks and ridgeline. Brilliant sunrise painting the snow orange and gold. Dramatic contrast between yesterday's blizzard and today's perfect calm. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 前のASSETから一転、明るく澄んだ映像に切り替え。「前日の吹雪が嘘のように——」の白テロップを画面下部に表示。BGMは穏やかで希望的なトーンに。
+
+---
+
 ナレーター: 一睡もできなかったであろう中村さんと高橋さんは、再び救助要請に向けて歩き出します。
+
+【制作メモ】ASSET-159 [キャラアニメーション]
+シーン: CHAR-04（中村さん）とCHAR-05（高橋さん）が疲労困憊の状態で雪の中を歩き始める
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese men in their 50s walking together through snow. CHAR-04: sturdy build, short black hair, dark green waterproof rain jacket, dark gray pants, brown leather boots, wool gloves, exhausted determined face. CHAR-05: average build, short black hair, bright red waterproof rain jacket (yakke), dark pants, brown leather boots, wool gloves, stumbling but pushing forward. Both frost-covered and visibly exhausted. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Snow-covered mountain ridge trail at dawn. Fresh powder snow glittering in early morning light. Clear blue sky. Footprints starting in fresh snow. Cold but calm atmosphere after a blizzard. Tateyama mountain range. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「中村さん・高橋さん 救助要請へ」のテロップを画面下部に表示。BGMに決意のテーマを重ねる。
+
+---
 
 ナレーター: 目指すは剱御前小舎。中村さんと高橋さんは前日のうちに別山の山頂まで来ていました。
 
+【制作メモ】ASSET-160 [Google Earth]
+シーン: 別山山頂から剱御前小舎へのルートをハイライト。2人の現在位置を示す
+座標: 36°35'51"N, 137°37'13"E（別山）→ 36°36'12"N, 137°37'05"E（剱御前小舎）
+カメラ: 別山上空からの俯瞰で剱御前小舎方面を望む
+→ 編集者指示: 別山に赤いピンで「現在地」、剱御前小舎に青いピンで「目的地」を配置。2地点間を黄色い点線ルートで結ぶ。「別山 2,880m → 剱御前小舎 2,746m」のラベル。
+
+---
+
 ナレーター: そのため、剱御前小舎まではそこからわずか20分で到達する距離です。
+
+【制作メモ】ASSET-161 [図解/テロップ演出]
+→ 編集者指示: ASSET-160のGoogle Earth画面を引き続き使用。ルート上に「通常わずか20分」の白テロップを大きく表示。距離と所要時間を強調するインフォグラフィック。残り距離をメーターで示す。
+
+---
 
 ナレーター: しかし、一晩の猛吹雪と睡眠不足で、2人の心身はすでに限界をむかえていました。
 
+【制作メモ】ASSET-162 [キャラアニメーション]
+シーン: CHAR-04（中村さん）とCHAR-05（高橋さん）がふらつきながら歩く。明らかに体力の限界
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese men in their 50s, barely standing. CHAR-04: sturdy build, dark green waterproof jacket, knees buckling, one hand on his thigh for support, eyes half-closed from exhaustion. CHAR-05: average build, bright red waterproof jacket, wobbling and swaying, dark circles under eyes. Both frost-covered and physically broken. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Snow-covered mountain trail in morning light. Deep footprints staggering unevenly through fresh snow. Wind-sculpted snow drifts along the ridge. Clear sky but bitterly cold atmosphere. Tateyama ridge between Bessan and Tsurugigozengoya. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「心身の限界」の白テロップを画面下部に表示。BGMに疲労・緊迫感を加える。
+
+---
+
 ナレーター: 中村さんは口もきけない状態で、高橋さんが後ろから押すようにして歩かせていたと言います。
+
+【制作メモ】ASSET-163 [キャラアニメーション]
+シーン: CHAR-05（高橋さん）がCHAR-04（中村さん）の背中を両手で押して歩かせている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese men in their 50s. CHAR-04 (front): sturdy build, dark green waterproof jacket, stumbling forward, mouth closed, unable to speak, eyes glazed and unfocused. CHAR-05 (behind): average build, bright red waterproof jacket, pushing CHAR-04's back with both hands, gritting teeth with desperate effort. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Narrow snow-covered mountain trail along a ridge. Morning sunlight casting long shadows on the snow. Trail winding toward a distant mountain hut barely visible on the horizon. Cold clear atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 高橋さんが中村さんを押すアニメーション動作を強調。「口もきけない状態」のテロップを画面下部に表示。
+
+---
 
 ナレーター: しかし、とうとう限界に達し、惜しくも2人とも雪の中へ倒れ込み気絶。剱御前小舎まで、あとたった数百メートルの地点でした。
 
+【制作メモ】ASSET-164 [Lovart動画]
+シーン: 雪の中で2人が倒れ込む瞬間。遠くに剱御前小舎がうっすら見える
+```
+Two middle-aged Japanese hikers collapsing face-down into deep snow on a mountain ridge. One in a dark green jacket, the other in a bright red jacket. Both falling forward simultaneously, completely spent. In the far background, a small mountain hut is barely visible just a few hundred meters away. Morning light on fresh snow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ Google Flow動画プロンプト:
+```
+Two exhausted hikers stumble and collapse into snow on a mountain ridge. Camera pulls back slowly to reveal a mountain hut tantalizingly close in the background. Dramatic irony of being so close yet unable to reach safety. Photorealistic documentary style.
+```
+→ 編集者指示: 「あと数百メートル——」の赤テロップを画面中央にフェードイン。衝撃音SE。BGMが一瞬途切れて静寂→低音再開。
+
+---
+
 ナレーター:ちょうどその頃、目的地である剱御前小舎では、宿泊客が朝日を撮影したいとのことで、早朝から外に出ていました。
+
+【制作メモ】ASSET-165 [Lovart静止画+編集者]
+```
+A rustic Japanese mountain hut (Tsurugigozengoya) in early morning. Warm light from windows contrasting with the cold snowy exterior. Clear dawn sky with golden sunrise light hitting the mountain peaks. A camera on a tripod set up outside the hut entrance. Fresh snow everywhere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 場面転換SE。「剱御前小舎 早朝」のテロップをフェードイン。BGMを穏やかな朝のトーンに切り替え。
+
+---
 
 ナレーター:撮影場所を探していたその時、雪の中にうつぶせで倒れている2人を発見。
 
+【制作メモ】ASSET-166 [キャラアニメーション]
+シーン: 宿泊客（Generic）が朝日撮影のため外に出たところ、雪の中に倒れた2人を目撃する
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese man in his 40s, wearing a warm down jacket and carrying a camera, looking ahead with a shocked horrified expression. Mouth open, one hand raised pointing forward. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Snow-covered mountain trail near a mountain hut at dawn. Two dark shapes (one green, one red) lying face-down in the white snow in the distance. Fresh untouched snow around them. Golden sunrise light. Stark contrast between the beautiful morning and the ominous discovery. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 発見の瞬間を強調。驚きのSE。「雪の中にうつぶせで倒れている2人を発見」のテロップ。
+
+---
+
 ナレーター: 高橋さんの赤いヤッケが、白い雪の中で目印になっていたのです。もし目立たない色の服だったら、発見はさらに遅れていたかもしれません。
+
+【制作メモ】ASSET-167 [Lovart静止画+編集者]
+```
+A bright red waterproof rain jacket (yakke) visible against pure white snow on a mountain ridge. The red fabric is the only color in an entirely white snow landscape. Early morning light. The vivid red stands out dramatically as a lifesaving beacon. Close-up perspective emphasizing the color contrast. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 赤いヤッケのクローズアップから始め、Ken Burnsでゆっくり引く。「赤いヤッケが命を救った」のテロップを白文字で表示。
+
+---
 
 ナレーター: 慌てた宿泊客はすぐさま小屋へ駆け戻ります。そして、剱御前小舎の従業員である菅野さんに「登山道に遭難者が倒れている」と伝えました。
 
+【制作メモ】ASSET-168 [キャラアニメーション]
+シーン: 宿泊客がCHAR-06（菅野さん）に必死で報告している。菅野さんは真剣な表情で聞いている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese men talking urgently. One man in his 40s wearing a down jacket, gesturing frantically, out of breath. CHAR-06: A Japanese man in his 30s, athletic build, short black hair, dark brown mountain hut staff jacket with name patch, gray pants. Alert serious expression, already preparing to act. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 2 characters together.
+```
+背景プロンプト（16:9）:
+```
+Interior of a Japanese mountain hut entrance area. Wooden walls, boots and gear lined up by the door. Early morning light streaming through a window. Emergency atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 菅野さんに「剱御前小舎 従業員 菅野さん」のテロップを矢印で示す。セリフ「登山道に遭難者が倒れている」を白テロップで表示。
+
+---
+
 ナレーター: それを聞いた菅野さんはすぐさま数名の従業員を引き連れ、現場へと向かいます。
+
+【制作メモ】ASSET-169 [キャラアニメーション]
+シーン: CHAR-06（菅野さん）が従業員たちを率いて山小屋から飛び出していく
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: A Japanese man in his 30s, athletic build, short black hair, dark brown mountain hut staff jacket. Running forward with determination, waving his arm to signal others to follow. Carrying a first aid kit. Resolute commanding expression. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Exterior of a Japanese mountain hut (Tsurugigozengoya) in early morning. Door flung open. Fresh footprints in snow leading away from the hut toward a mountain trail. Clear dawn sky. Urgent atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 急ぎの足音SE。菅野さんが先頭で走るアニメーション。BGMは緊迫テンポアップ。
+
+---
 
 ナレーター: 菅野さんらは中村さんと高橋さんを確保。
 
+【制作メモ】ASSET-170 [キャラアニメーション]
+シーン: CHAR-06（菅野さん）がCHAR-04（中村さん）とCHAR-05（高橋さん）のもとに駆け寄り、状態を確認している
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese men. CHAR-06: 30s, athletic build, dark brown staff jacket, kneeling in snow checking on two collapsed hikers. CHAR-04: 50s, dark green waterproof jacket, lying on his back, eyes closed. CHAR-05: 50s, bright red waterproof jacket, lying face-down. CHAR-06 has a deeply concerned expression. White background. 1:1 aspect ratio. Generate 5 separate images, each showing these 3 characters together.
+```
+背景プロンプト（16:9）:
+```
+Snow-covered mountain trail near a hut. Deep body-shaped impressions in the snow. First aid supplies scattered nearby. Morning sunlight on snow. Urgent rescue scene atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「中村さん・高橋さんを確保」のテロップを画面下部に表示。
+
+---
+
 ナレーター: そのまま剱御前小舎へと運び込み応急処置を施しました。
+
+【制作メモ】ASSET-171 [Lovart静止画+編集者]
+```
+Interior of a Japanese mountain hut emergency room. A simple wooden bed with thick wool blankets. A first aid kit opened on a side table with bandages and warming supplies. Hot water thermos and cups nearby. Warm orange interior lighting contrasting with cold blue light from the window. Urgent medical care atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「応急処置」のテロップを画面下部に表示。心拍モニター風のSEを追加。BGMは緊迫だが救出への希望感を含む。
+
+---
 
 ナレーター: この時、意識がかすかに戻った高橋さんは、「ほかに、八人が待っている」と伝えたといいます。
 
+【制作メモ】ASSET-172 [キャラアニメーション]
+シーン: CHAR-05（高橋さん）がかすかに目を開け、必死に言葉を絞り出す。菅野さんが驚く
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-05: A Japanese man in his 50s, average build, bright red waterproof jacket now opened, lying under blankets. Eyes barely open, cracked lips moving, one trembling hand weakly reaching out. Desperate fading expression trying to communicate something critical. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Interior of a mountain hut room. Warm blankets on a wooden bed. Steam rising from a hot drink on a side table. Dim warm lighting. Quiet tense atmosphere of a rescue aftermath. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「ほかに、八人が待っている」のセリフテロップをカギカッコ付き白文字で大きく表示。衝撃SE。BGMが一瞬止まる→重い低音再開。この台詞は本パート最大の転換点。
+
+---
+
 ナレーター: こうして様々な偶然が重なり中村さんと高橋さんは奇跡的に一命をとりとめたのでした。
+
+【制作メモ】ASSET-173 [Lovart静止画+編集者]
+```
+Warm golden sunrise light flooding through a mountain hut window onto two beds with thick blankets. Sense of relief and survival. Steam rising from hot drinks. A red waterproof jacket and a green waterproof jacket hanging to dry near a wood stove. Hopeful morning atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「奇跡の生還」の白テロップを画面中央にゆっくりフェードイン。BGMは安堵と感動のテーマ。
+
+---
 
 ナレーター: もし発見があと数時間遅れていたら、2人は助からなかったことでしょう。
 
+【制作メモ】ASSET-174 [図解/テロップ演出]
+→ 編集者指示: 画面中央に時計のグラフィック。針が進む演出とともに「もし発見が数時間遅れていたら——」の白テロップ。時計が赤く変わるエフェクト。BGMは緊張感のある低音。
+
+---
+
 ナレーター: しかし、2人はこの事故で手足に激しい凍傷を負ってしまいました。指の感覚はすでになく、歩くこともままならない状態。
+
+【制作メモ】ASSET-175 [Lovart静止画+編集者]
+```
+Close-up of severely frostbitten hands wearing torn wool gloves, fingers swollen and discolored dark purple. Brown leather hiking boots with frozen laces on a wooden floor. Medical bandages partially applied. Harsh clinical lighting. Painful documentary atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「激しい凍傷」のテロップを画面下部に白文字で表示。痛々しいSEを追加。BGMは抑えめの悲しいトーン。
+
+---
 
 ナレーター: 救出後も、長い治療とリハビリを重ねたとのこと。
 
+【制作メモ】ASSET-176 [Lovart静止画+編集者]
+```
+A Japanese hospital corridor in the late 1980s. Long quiet hallway with soft fluorescent lighting. A wheelchair parked against the wall. Rehabilitation handrails visible along the corridor. Calendar on the wall showing months passing. Nostalgic melancholic atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「長い治療とリハビリ」のテロップを画面下部に白文字で表示。時間経過を示すカレンダーめくりエフェクトを重ねる。
+
+---
+
 ナレーター: それでも、防水素材の雨具とウールの手袋が、致命的な体温低下だけは防いでくれていました。
+
+【制作メモ】ASSET-177 [図解/テロップ演出]
+→ 編集者指示: 画面を2分割。左側に「中村さん・高橋さんの装備」として防水ジャケット（緑/赤）とウール手袋のイラスト。右側に「他の8人の装備」として綿パンツとビニール雨具のイラスト。矢印で「防水素材 → 体温維持 → 生存」の因果関係を示す。「装備の差が生死を分けた」の赤テロップを中央に。
+
+---
 
 ナレーター: 一方、中村さんと高橋さんの2人が救助された日から1日前。
 
+【制作メモ】ASSET-178 [Lovart静止画+編集者]
+```
+A dark stormy mountain landscape at dusk. Heavy snow falling. The silhouette of Tateyama mountain range against an angry dark sky. Timestamp overlay showing "October 8th" in the corner. Time rewinding atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 場面転換SE（巻き戻し風）。「1日前 — 10月8日」のテロップを画面中央にフェードイン。BGMが一転、重いダーク・ドローン系に。フラッシュバック演出。
+
+---
+
 ナレーター: 内蔵助山荘のオーナー佐伯さんは、一睡もしていませんでした。
+
+【制作メモ】ASSET-179 [キャラアニメーション]
+シーン: CHAR-01（佐伯さん）が暗い山荘の中、窓の外の吹雪を見つめながら一睡もできずにいる
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A Japanese man in his late 50s, sturdy weathered build, short gray-black hair, tanned skin, deep wrinkles. Wearing a dark green mountain lodge work jacket. Sitting by a window in a dark room, chin resting on his hand, eyes wide open and haunted with worry. Deep dark circles under his eyes. Sleepless anguished expression. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Interior of a mountain lodge at night. Single dim oil lamp casting warm orange light. Window showing a violent blizzard outside, snow battering the glass. Dark wooden walls. Empty chair and table. Lonely anxious atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 佐伯さんの不安な表情をクローズアップ。「一睡もしていなかった」のテロップを画面下部に表示。窓ガラスに吹雪が当たるSE。
+
+---
 
 ナレーター: あの吹雪の中、山に人がいるかもしれない。なぜかその考えが頭から離れなかったと振り返っています。
 
+【制作メモ】ASSET-180 [キャラアニメーション]
+シーン: CHAR-01（佐伯さん）が暗闇の中、吹雪の窓を見つめながら何かを感じ取っている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A Japanese man in his late 50s, sturdy build, short gray-black hair, dark green work jacket. Standing at a window, one hand pressed against the glass, staring out into darkness. Face reflected dimly in the window. Deeply troubled intuitive expression, sensing danger. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+View through a frosted mountain lodge window at night. Blizzard raging outside, snow streaking horizontally past the glass. Faint reflection of warm interior light on the frost-covered window. Eerie atmospheric tension. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 佐伯さんの心中セリフ「山に人がいるかもしれない」を白テロップのカギカッコ付きで表示。BGMは不安なストリングスを静かに。
+
+---
+
 ナレーター: 翌朝、佐伯さんは朝早くから双眼鏡を手に、遭難者がいないかとあたり一帯を捜索していました。
+
+【制作メモ】ASSET-181 [キャラアニメーション]
+シーン: CHAR-01（佐伯さん）が早朝、山荘の外で双眼鏡を覗き込みながら周囲を捜索している
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A Japanese man in his late 50s, sturdy build, short gray-black hair, dark green work jacket, warm scarf. Holding binoculars up to his eyes, scanning the horizon with intense focus. Standing upright and determined. Concentrating searching expression. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Early morning mountain panorama after a blizzard. Snow-covered peaks of Tateyama mountain range glowing in dawn light. Clear cold air. Vast alpine vista stretching to the horizon. View from Kuranousuke mountain lodge area. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「翌朝（10月9日）」のテロップをフェードイン。双眼鏡の視界エフェクト（円形フレーム）を一瞬重ねる演出。BGMは静かな緊張感。
+
+---
 
 ナレーター: 前日の夜からずっと、嫌な予感が消えなかった佐伯さん。長年の山の経験が、何かを訴えていたのでしょう。
 
+【制作メモ】ASSET-182 [Lovart静止画+編集者]
+```
+A weathered pair of binoculars resting on a wooden railing of a mountain lodge balcony. Snow-covered Tateyama peaks in the soft morning light behind. Years of scratches and wear on the binoculars showing long use. Contemplative atmospheric mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「長年の山の経験が、何かを訴えていた」の白テロップをゆっくりフェードイン。BGMはエモーショナルなピアノソロ。
+
+---
+
 ナレーター: 双眼鏡を登山道に向けると、雪の中に小さな人影が見えました。1人、2人、、数えると8人。
+
+【制作メモ】ASSET-183 [Lovart動画]
+シーン: 双眼鏡越しの視界。雪原の中に小さな人影が点々と見える。数えると8人
+```
+Binocular view (circular vignette frame) looking across a snow-covered mountain ridge. Tiny dark figures scattered in the white snow far away. Some lying motionless, barely distinguishable from the snow. Morning light casting long shadows. 8 small human shapes visible against the vast white landscape. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ Google Flow動画プロンプト:
+```
+Binocular POV slowly scanning a snow-covered mountain ridge. Camera steadies as tiny dark figures come into view against white snow. Counting them one by one. 8 shapes barely visible. Tense discovery moment. Photorealistic documentary style.
+```
+→ 編集者指示: 双眼鏡の円形フレームエフェクト。人影が見えるたびにカウント数字「1...2...」を画面右下に表示。「8人」で赤く強調。BGMが徐々にビルドアップ。最重要シーンの一つ。
+
+---
 
 ナレーター: じっと見つめると、ほとんどが動いていません。しかし、そのうち2人だけが微かに体を動かしているのが確認できました。
 
+【制作メモ】ASSET-184 [キャラアニメーション]
+シーン: CHAR-01（佐伯さん）が双眼鏡を握りしめ、食い入るように見つめている。表情が変わる瞬間
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A Japanese man in his late 50s, sturdy build, short gray-black hair, dark green work jacket. Pressing binoculars tightly to his eyes, knuckles white from gripping. Face showing a mix of horror and desperate hope. Tears forming in the corners of his eyes. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Distant view of a snow-covered mountain ridge. Most shapes in the snow are completely still. Two barely perceptible movements among the figures. Vast white silence. Morning sun on snow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「ほとんどが動いていない」の白テロップ→「2人だけが微かに——」の白テロップへ切り替え。BGMは悲壮感と緊迫感を両立。
+
+---
+
 ナレーター: 佐伯さんはすぐに無線で警備隊を呼び出しました。「8人見つけた。ふたりは、まだ生きている」。
+
+【制作メモ】ASSET-185 [キャラアニメーション]
+シーン: CHAR-01（佐伯さん）が無線機を握りしめ、必死に呼びかけている
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A Japanese man in his late 50s, sturdy build, short gray-black hair, dark green work jacket. Gripping a handheld radio transceiver close to his mouth, shouting urgently into it. Other hand pointing toward the mountain. Eyes wide with urgency, veins visible on his neck. Desperate commanding expression. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Mountain lodge balcony overlooking a vast snow-covered mountain range. Radio antenna on the roof. Clear morning sky. Panoramic view of the Tateyama ridgeline where the victims were found. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: セリフ「8人見つけた。ふたりは、まだ生きている」をカギカッコ付き白テロップで画面中央に大きく表示。無線のノイズSE。BGMはクライマックスの緊迫。佐伯さんシーンのクライマックス。
+
+---
 
 ナレーター: その後、内蔵助山荘から若いスタッフが毛布を持って現場に駆けつけます。
 
+【制作メモ】ASSET-186 [キャラアニメーション]
+シーン: 若いスタッフたちが毛布を抱えて雪の中を駆け下りていく
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two young Japanese men in their 20s, athletic builds, wearing dark work jackets and boots. Running urgently through snow, each carrying thick wool blankets and emergency supplies in their arms. Determined focused expressions. White background. 1:1 aspect ratio. Generate 5 separate images.
+```
+背景プロンプト（16:9）:
+```
+Snow-covered mountain trail descending from a lodge. Fresh deep footprints running downhill in the snow. Sunlight on the mountain. Sense of urgency and speed. Tateyama mountain landscape. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 走る足音SE。「若いスタッフが現場へ」のテロップを画面下部に。BGMは救出テーマ。
+
+---
+
 ナレーター: ヘリも迅速に現場へと向かい、午前7時50分に到着。
+
+【制作メモ】ASSET-187 [Lovart静止画+編集者]
+```
+A rescue helicopter approaching a snow-covered mountain ridge in clear morning sky. The helicopter is small against the massive Tateyama mountain range backdrop. Rotor wash blowing snow. Brilliant morning sunlight. Dramatic scale contrast between the helicopter and the mountains. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: ヘリのローター音SE。「午前7時50分 ヘリ到着」の白テロップをフェードイン。BGMにヘリの効果音を重ねる。
+
+---
 
 ナレーター: しかし、残念ながらこの時すでに6人は息をしていませんでした。
 
+【制作メモ】ASSET-188 [図解/テロップ演出]
+→ 編集者指示: BGMが突然止まり、完全な静寂に。黒背景に白文字で「6人はすでに息をしていなかった」をゆっくりフェードイン。数字「6」を赤く大きく表示。数秒間の沈黙を保つ。最も重い事実を映像ではなく文字の力で伝える演出。
+
+---
+
 ナレーター: 残る男女2人は、寄り添うように倒れていたとのこと。お互いに体温を保っていたのでしょう。
+
+【制作メモ】ASSET-189 [Lovart静止画+編集者]
+```
+Two dark figures lying close together in white snow on a mountain ridge, leaning against each other. Their shapes suggest they were trying to keep each other warm. Snow partially covering them. Tender and heartbreaking composition. Soft morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「寄り添うように倒れていた」の白テロップを画面下部に表示。BGMは悲しくも温かいピアノ。Ken Burnsでゆっくりズームイン。
+
+---
 
 ナレーター: かろうじて息がありましたが、指すら動かず、いくら声をかけても反応は返ってきません。1分1秒を争う事態でした。
 
+【制作メモ】ASSET-190 [キャラアニメーション]
+シーン: 救助スタッフが2人の意識を確認しようとするが反応がない
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A young Japanese rescue worker in his 20s, wearing a dark work jacket, kneeling in snow. Leaning over and shaking the shoulder of a collapsed hiker, shouting, face full of desperation and urgency. Other hand checking for pulse. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+Snow-covered mountain ridge rescue scene. Wool blankets spread on snow. Emergency supplies scattered around. A helicopter hovering in the background. Footprints and trampled snow everywhere. Urgent chaotic atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「反応なし…1分1秒を争う」の赤テロップを画面中央に。心拍モニター風の「ピッ…ピッ…」SE。BGMは緊迫のクライマックス。
+
+---
+
 ナレーター: すぐさまヘリに乗せ近くの病院へと搬送。
+
+【制作メモ】ASSET-191 [Lovart静止画+編集者]
+```
+A rescue helicopter on a snowy mountain ridge, door open, rescuers loading a stretcher. Rotor spinning, snow blowing outward from downdraft. Dramatic morning light. Tateyama peaks in background. Urgent evacuation atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: ヘリのローター音と風のSE。「搬送開始」の白テロップ。スピード感のある場面転換。
+
+---
 
 ナレーター: 懸命の処置を施しましたが、2人の命を救うことはできませんでした。
 
+【制作メモ】ASSET-192 [キャラアニメーション]
+シーン: 病院の廊下で、医療スタッフが首を横に振る。暗い照明
+キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in his 40s, wearing a white lab coat, standing with head bowed and eyes closed. Slowly shaking his head. One hand holding a clipboard at his side. Sorrowful defeated expression. White background. 1:1 aspect ratio. Generate 5 separate images, each showing only this one character.
+```
+背景プロンプト（16:9）:
+```
+A dimly lit Japanese hospital corridor in the late 1980s. Fluorescent lights casting cold blue-white light. Emergency room doors at the end of the hallway with a red "in use" light turned off. Empty stretcher against the wall. Heavy somber atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+```
+→ 編集者指示: 「2人の命を救うことはできなかった」の白テロップをゆっくりフェードイン。BGMは悲しみのストリングス。画面をゆっくり暗転。
+
+---
+
 ナレーター: こうして10人中、8人が帰らぬ人に、、
+
+【制作メモ】ASSET-193 [図解/テロップ演出]
+→ 編集者指示: 黒背景に10人のシルエットアイコン。左から順に8人が白からグレーに変わる（帰らぬ人に）。残る2人（中村・高橋）だけが明るいまま残る。「10人中8人が帰らぬ人に」の白テロップを画面下部に。数秒間の沈黙。BGMは低く重い弦楽器の持続音のみ。
+
+---
 
 ナレーター: 翌朝の立山には、2メートル近い雪が積もっていたとのこと。
 
+【制作メモ】ASSET-194 [Lovart静止画+編集者]
+```
+Tateyama mountain range buried under nearly 2 meters of fresh heavy snow. Everything covered in thick white snow — trail markers, rocks, mountain hut roof barely visible under snow load. Overwhelming amount of snow. Scale comparison showing snow depth against a partially buried trail sign. Bright morning light on pristine snow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「積雪 約2メートル」の白テロップを画面中央に大きく。雪の深さを示す矢印ラベルを追加。
+
+---
+
 ナレーター: 前日の朝、晴天の中を出発した場所が、わずか1日で真冬に変わっていたのです。山の環境が急激に変わることを知らしめる風景と言えます。
+
+【制作メモ】ASSET-195 [Lovart静止画+編集者]
+```
+Split-image composition: left half shows a bright autumn mountain landscape with colorful fall foliage and clear blue sky at Tateyama. Right half shows the exact same mountain view buried in heavy winter snow under gray sky. Dramatic before-and-after contrast. Diagonal split line. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 左に「10月8日 朝」、右に「翌日」のラベル。「わずか1日で真冬に」の白テロップを画面下部に表示。対比の衝撃を強調。
+
+---
 
 ナレーター: この事故から23年後の2012年。白馬岳で、ほぼ同じ構図の遭難事故が起き、6人が低体温症で命を落としています。
 
+【制作メモ】ASSET-196 [Google Earth]
+シーン: 立山から白馬岳への位置関係を示す。同じ北アルプスの近い位置であることを強調
+座標: 36°34'33"N, 137°37'11"E（立山）→ 36°45'32"N, 137°45'29"E（白馬岳）
+カメラ: 北アルプス全体を俯瞰し、2つの事故現場を示す
+→ 編集者指示: 立山に「1989年 8人が帰らぬ人に」、白馬岳に「2012年 6人が帰らぬ人に」の赤いラベルを配置。2地点を赤い線で結ぶ。「23年後、同じ悲劇が——」のテロップ。
+
+---
+
 ナレーター: この立山の事故は、中高年の登山ブームにおける最初の大量遭難として、登山界に衝撃を与えました。
+
+【制作メモ】ASSET-197 [Lovart静止画+編集者]
+```
+A 1989 Japanese newspaper front page reporting a major mountain disaster. Bold black headline text. A black and white photograph of Tateyama mountain range. Dramatic newspaper layout with thick borders. Vintage newsprint texture and yellowed paper. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 新聞の見出し部分をズームイン。「中高年登山ブーム 最初の大量遭難」の白テロップを画面下部に表示。
+
+---
 
 ナレーター: しかし、こうした急激な天候変化による山の被害は、何十年経っても毎年のように繰り返されています。
 
+【制作メモ】ASSET-198 [図解/テロップ演出]
+→ 編集者指示: タイムラインのインフォグラフィック。1989年（立山）→ 2012年（白馬岳）→ 現在へ。年表上に主要な天候急変による遭難事故を赤い点でプロット。「毎年のように繰り返されている」の白テロップを画面下部に。BGMは警告的な低音。
+
+---
+
 ナレーター: もしあの日、一ノ越で引き返していたら。もし誰かが「やめよう」と声を上げていたら。
+
+【制作メモ】ASSET-199 [Google Earth]
+シーン: 一ノ越のポイントにカメラを配置。ここが分岐点だったことを示す
+座標: 36°34'13"N, 137°36'43"E（一ノ越）
+カメラ: 一ノ越上空から室堂方面（安全な帰路）と雄山方面（危険な稜線）の2方向を映す
+→ 編集者指示: 一ノ越に「運命の分岐点」の赤いラベル。室堂方面に緑矢印「引き返す→生存」、雄山方面に赤矢印「進む→遭難」を表示。「もしあの日——」の白テロップ。
+
+---
 
 ナレーター: 結果は違っていたかもしれません。
 
+【制作メモ】ASSET-200 [Lovart静止画+編集者]
+```
+An empty mountain trail fork on a snowy mountain ridge. One path leads downward toward safety in golden light. The other path leads upward into dark storm clouds and snow. Symbolic crossroads. Melancholic and reflective atmosphere. Tateyama mountain range. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「結果は違っていたかもしれません。」の白テロップを画面中央にゆっくりフェードイン。数秒間の沈黙を保つ。BGMは余韻のある静かなピアノ。
+
+---
+
 ナレーター: 1989年10月8日。
+
+【制作メモ】ASSET-201 [Lovart静止画+編集者]
+```
+Tateyama mountain range silhouette at sunset. Dark mountain profiles against a deep orange and purple sky. Snow-capped peaks. Solemn and monumental atmosphere. A sense of finality and remembrance. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「1989年10月8日」の白テロップを画面中央に大きく表示。BGMはエンディングテーマ開始。静かで荘厳な弦楽器。
+
+---
 
 ナレーター: 北アルプス立山連峰で、紅葉狩りに出かけた10人は、ほとんどが帰らぬ人となりました。
 
+【制作メモ】ASSET-202 [Google Earth]
+シーン: 立山連峰を遠景で俯瞰。事故のルート全体（室堂→雄山→真砂岳→別山→剱御前小舎）を赤いラインで描く
+座標: 36°34'33"N, 137°37'11"E（立山・雄山）
+カメラ: 立山連峰を遠方から広角で映す。ゆっくりとズームアウトしていく
+→ 編集者指示: ルート全体を赤いラインで表示。各地点にラベル。最後にゆっくりズームアウトして山全体を見渡す。「10人中8人が帰らぬ人に」の白テロップを画面下部に。BGM継続。
+
+---
+
 ナレーター: 8人のご冥福を心よりお祈り申し上げます。
+
+【制作メモ】ASSET-203 [Lovart静止画+編集者]
+```
+A simple mountain memorial stone (cairn) on a snow-covered ridge of Tateyama. Small wildflowers and mountain plants at the base, partially covered by first snow. Soft diffused light. Peaceful dignified atmosphere. Mountains in the far background fading into gentle mist. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「8人のご冥福を心よりお祈り申し上げます。」の白テロップを画面中央にゆっくりフェードイン。BGMは荘厳で静かな弦楽器。画面を明るく柔らかく。
+
+---
 
 ナレーター: 最後までご視聴いただき、ありがとうございました。
 
-
+【制作メモ】ASSET-204 [Lovart静止画+編集者]
+```
+Panoramic view of Tateyama mountain range in peaceful autumn. Golden and red autumn leaves in the foreground framing the majestic snow-capped peaks in the background. Clear blue sky. Beautiful serene mountain landscape. A sense of nature's timeless grandeur and quiet respect. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ 編集者指示: 「最後までご視聴いただき、ありがとうございました。」の白テロップを画面中央に表示。チャンネル登録・高評価のエンドカードを重ねる。BGMはゆっくりフェードアウト。暗転で終了。
