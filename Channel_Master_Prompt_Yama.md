@@ -124,8 +124,8 @@ YouTube AIと視聴者に「唯一無二」と認識させるための、絶対�
 - **配分目安（25分台本）**: CHAR 10〜15枚 / ASSET背景 80〜100枚（ユニーク） / Veo動画化 25本（上限フル活用） / Google Earth＋実写で追加カバー（生成不要）
 - **映像比率**: 全素材の50%以上をキャラアニメ/Veo動画/Google Earthにする
 - **Veo動画化**: Lovart静止画→Google Flow(Veo)で動画化。1枚で50字分カバー（静止画の2倍）。Veo Fast=20cr/本、25本/台本上限
-- **CHAR末尾テンプレ（場合分け必須）**: 1人→`Generate 5 separate images, each showing only this one character.` / 2人以上→`Generate 5 separate images, each showing these [N] characters together.`（[N]にキャラ人数を記入）
-- **Lovartプロンプト共通**: `Generate 5 images.` 禁止→ `Generate 5 separate images.`（ASSET用）。`Character design reference sheet` 禁止→ `Single character only, front-facing view.`
+- **CHAR末尾テンプレ（場合分け必須）**: 1人→`Generate 3 separate images, each showing only this one character.` / 2人以上→`Generate 3 separate images, each showing these [N] characters together.`（[N]にキャラ人数を記入）
+- **Lovartプロンプト共通**: `Generate 5 images.` 禁止→ `Generate 3 separate images.`（ASSET用）。`Character design reference sheet` 禁止→ `Single character only, front-facing view.`
 
 ## 4. 安全対策と収益化（Safety & Monetization）
 **⚠️ 最重要項目：タイトル・サムネ・台本すべてにおいて、以下のNGワードは「使用禁止」とする。**
