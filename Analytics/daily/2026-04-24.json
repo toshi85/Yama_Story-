@@ -1,0 +1,167 @@
+{
+  "date": "2026-04-24",
+  "collected_at": "2026-04-29T10:48:38.727673",
+  "overview": {
+    "views": 3583,
+    "watch_minutes": 31069,
+    "subs_gained": 11,
+    "subs_lost": 4,
+    "avg_view_duration_sec": 520,
+    "revenue_usd": 22.261
+  },
+  "top_videos": [],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 2719,
+      "watch_minutes": 23280
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 586,
+      "watch_minutes": 5468
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 100,
+      "watch_minutes": 831
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 54,
+      "watch_minutes": 383
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 36,
+      "watch_minutes": 292
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 29,
+      "watch_minutes": 294
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 18,
+      "watch_minutes": 152
+    },
+    {
+      "source": "EXT_URL",
+      "views": 15,
+      "watch_minutes": 102
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 15,
+      "watch_minutes": 166
+    },
+    {
+      "source": "NOTIFICATION",
+      "views": 8,
+      "watch_minutes": 56
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "熊 事件",
+      "views": 6,
+      "watch_minutes": 51
+    },
+    {
+      "term": "さんけべつヒグマ事件",
+      "views": 4,
+      "watch_minutes": 42
+    },
+    {
+      "term": "グリズリー",
+      "views": 4,
+      "watch_minutes": 1
+    },
+    {
+      "term": "ヒグマ事件",
+      "views": 3,
+      "watch_minutes": 9
+    },
+    {
+      "term": "怖い事件",
+      "views": 3,
+      "watch_minutes": 13
+    },
+    {
+      "term": "福岡大学ワンダーフォーゲル部ヒグマ事件",
+      "views": 3,
+      "watch_minutes": 38
+    },
+    {
+      "term": "登山 熊",
+      "views": 2,
+      "watch_minutes": 4
+    },
+    {
+      "term": "アンビリーバボー 事件",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ドキュメンタリー",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ミステリードラマ",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "三毛別熊事件",
+      "views": 1,
+      "watch_minutes": 31
+    },
+    {
+      "term": "世界仰天ニュース",
+      "views": 1,
+      "watch_minutes": 5
+    },
+    {
+      "term": "九州 熊",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "五頭連山 親子遭難",
+      "views": 1,
+      "watch_minutes": 1
+    },
+    {
+      "term": "恐怖映像",
+      "views": 1,
+      "watch_minutes": 3
+    },
+    {
+      "term": "星野道夫",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "滑落",
+      "views": 1,
+      "watch_minutes": 4
+    },
+    {
+      "term": "熊 射殺シーン",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "熊 怖い",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "熊 滑落",
+      "views": 1,
+      "watch_minutes": 2
+    }
+  ]
+}

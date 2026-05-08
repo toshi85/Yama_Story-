@@ -1,0 +1,243 @@
+{
+  "date": "2026-04-18",
+  "collected_at": "2026-04-25T07:01:45.127837",
+  "overview": {
+    "views": 2512,
+    "watch_minutes": 25171,
+    "subs_gained": 3,
+    "subs_lost": 2,
+    "avg_view_duration_sec": 600,
+    "revenue_usd": 12.679
+  },
+  "top_videos": [
+    {
+      "video_id": "c_kkIsQlFe8",
+      "views": 1688,
+      "watch_minutes": 16984,
+      "avg_view_duration_sec": 603,
+      "avg_view_percentage": 32.22,
+      "subs_gained": 1
+    },
+    {
+      "video_id": "P6129_NW2Zk",
+      "views": 492,
+      "watch_minutes": 4587,
+      "avg_view_duration_sec": 559,
+      "avg_view_percentage": 36.68,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "Ot4G3-EHj5Q",
+      "views": 113,
+      "watch_minutes": 806,
+      "avg_view_duration_sec": 428,
+      "avg_view_percentage": 28.53,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "-sHkcezuQLY",
+      "views": 34,
+      "watch_minutes": 459,
+      "avg_view_duration_sec": 810,
+      "avg_view_percentage": 49.66,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "9NU6MUOyiCM",
+      "views": 31,
+      "watch_minutes": 260,
+      "avg_view_duration_sec": 504,
+      "avg_view_percentage": 40.14,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "bJhz7_XiduE",
+      "views": 23,
+      "watch_minutes": 226,
+      "avg_view_duration_sec": 590,
+      "avg_view_percentage": 42.54,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "eQuoRcakpoE",
+      "views": 17,
+      "watch_minutes": 254,
+      "avg_view_duration_sec": 899,
+      "avg_view_percentage": 62.480000000000004,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "mlvCbz0DP4Y",
+      "views": 13,
+      "watch_minutes": 113,
+      "avg_view_duration_sec": 524,
+      "avg_view_percentage": 30.47,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "Ick3QnL_SEs",
+      "views": 12,
+      "watch_minutes": 125,
+      "avg_view_duration_sec": 628,
+      "avg_view_percentage": 8.03,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "T6AZh73TeB8",
+      "views": 12,
+      "watch_minutes": 128,
+      "avg_view_duration_sec": 644,
+      "avg_view_percentage": 40.29,
+      "subs_gained": 0
+    }
+  ],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 1353,
+      "watch_minutes": 13040
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 894,
+      "watch_minutes": 9314
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 111,
+      "watch_minutes": 886
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 39,
+      "watch_minutes": 301
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 37,
+      "watch_minutes": 311
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 34,
+      "watch_minutes": 824
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 27,
+      "watch_minutes": 297
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 9,
+      "watch_minutes": 160
+    },
+    {
+      "source": "EXT_URL",
+      "views": 8,
+      "watch_minutes": 32
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "アンビリーバボー",
+      "views": 5,
+      "watch_minutes": 10
+    },
+    {
+      "term": "熊 事件",
+      "views": 5,
+      "watch_minutes": 68
+    },
+    {
+      "term": "五頭連山 親子遭難",
+      "views": 4,
+      "watch_minutes": 20
+    },
+    {
+      "term": "熊事件",
+      "views": 3,
+      "watch_minutes": 91
+    },
+    {
+      "term": "石狩沼田幌新事件",
+      "views": 3,
+      "watch_minutes": 29
+    },
+    {
+      "term": "福岡大学ワンダーフォーゲル部ヒグマ事件",
+      "views": 3,
+      "watch_minutes": 48
+    },
+    {
+      "term": "ヒグマ事件",
+      "views": 2,
+      "watch_minutes": 2
+    },
+    {
+      "term": "三毛別羆事件",
+      "views": 2,
+      "watch_minutes": 14
+    },
+    {
+      "term": "山から生きて帰るには",
+      "views": 2,
+      "watch_minutes": 2
+    },
+    {
+      "term": "登山",
+      "views": 2,
+      "watch_minutes": 0
+    },
+    {
+      "term": "くま",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "さんけべつヒグマ事件",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "スプラトゥーン3",
+      "views": 1,
+      "watch_minutes": 18
+    },
+    {
+      "term": "ヒグマ 事件",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ワンダーフォーゲル",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ワールド極限ミステリー",
+      "views": 1,
+      "watch_minutes": 3
+    },
+    {
+      "term": "事件 怖い",
+      "views": 1,
+      "watch_minutes": 11
+    },
+    {
+      "term": "五島連峰 遭難",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "人喰い族",
+      "views": 1,
+      "watch_minutes": 1
+    },
+    {
+      "term": "人喰い熊",
+      "views": 1,
+      "watch_minutes": 0
+    }
+  ]
+}

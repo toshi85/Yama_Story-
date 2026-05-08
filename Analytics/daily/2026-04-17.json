@@ -1,0 +1,243 @@
+{
+  "date": "2026-04-17",
+  "collected_at": "2026-04-25T07:01:43.592087",
+  "overview": {
+    "views": 1752,
+    "watch_minutes": 16230,
+    "subs_gained": 4,
+    "subs_lost": 5,
+    "avg_view_duration_sec": 555,
+    "revenue_usd": 9.277
+  },
+  "top_videos": [
+    {
+      "video_id": "c_kkIsQlFe8",
+      "views": 1046,
+      "watch_minutes": 9883,
+      "avg_view_duration_sec": 566,
+      "avg_view_percentage": 30.25,
+      "subs_gained": 1
+    },
+    {
+      "video_id": "P6129_NW2Zk",
+      "views": 422,
+      "watch_minutes": 3510,
+      "avg_view_duration_sec": 499,
+      "avg_view_percentage": 32.73,
+      "subs_gained": 1
+    },
+    {
+      "video_id": "Ot4G3-EHj5Q",
+      "views": 113,
+      "watch_minutes": 793,
+      "avg_view_duration_sec": 421,
+      "avg_view_percentage": 28.059999999999995,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "bJhz7_XiduE",
+      "views": 29,
+      "watch_minutes": 382,
+      "avg_view_duration_sec": 791,
+      "avg_view_percentage": 56.98,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "9NU6MUOyiCM",
+      "views": 25,
+      "watch_minutes": 199,
+      "avg_view_duration_sec": 478,
+      "avg_view_percentage": 38.05,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "-sHkcezuQLY",
+      "views": 24,
+      "watch_minutes": 218,
+      "avg_view_duration_sec": 545,
+      "avg_view_percentage": 33.42,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "mlvCbz0DP4Y",
+      "views": 17,
+      "watch_minutes": 229,
+      "avg_view_duration_sec": 811,
+      "avg_view_percentage": 47.14,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "eQuoRcakpoE",
+      "views": 15,
+      "watch_minutes": 138,
+      "avg_view_duration_sec": 555,
+      "avg_view_percentage": 38.61,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "XObsWZm_Hcg",
+      "views": 13,
+      "watch_minutes": 371,
+      "avg_view_duration_sec": 1712,
+      "avg_view_percentage": 24.89,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "d_098KPBtvE",
+      "views": 11,
+      "watch_minutes": 52,
+      "avg_view_duration_sec": 286,
+      "avg_view_percentage": 24.82,
+      "subs_gained": 0
+    }
+  ],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 957,
+      "watch_minutes": 8541
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 571,
+      "watch_minutes": 5890
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 94,
+      "watch_minutes": 673
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 39,
+      "watch_minutes": 249
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 32,
+      "watch_minutes": 158
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 17,
+      "watch_minutes": 163
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 17,
+      "watch_minutes": 298
+    },
+    {
+      "source": "EXT_URL",
+      "views": 11,
+      "watch_minutes": 63
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 6,
+      "watch_minutes": 50
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "アンビリーバボー 事件",
+      "views": 7,
+      "watch_minutes": 48
+    },
+    {
+      "term": "熊 事件",
+      "views": 7,
+      "watch_minutes": 82
+    },
+    {
+      "term": "五頭連山 親子遭難",
+      "views": 6,
+      "watch_minutes": 63
+    },
+    {
+      "term": "さんけべつヒグマ事件",
+      "views": 5,
+      "watch_minutes": 108
+    },
+    {
+      "term": "札幌丘珠事件",
+      "views": 3,
+      "watch_minutes": 8
+    },
+    {
+      "term": "新潟親子遭難事故",
+      "views": 2,
+      "watch_minutes": 0
+    },
+    {
+      "term": "羅臼岳 登山",
+      "views": 2,
+      "watch_minutes": 25
+    },
+    {
+      "term": "おかだまひぐま",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "アンビリーバボー",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "スーパー マリオブラザーズ",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ティモシーチューイ",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ヒグマ 事件",
+      "views": 1,
+      "watch_minutes": 11
+    },
+    {
+      "term": "ヒグマ事件",
+      "views": 1,
+      "watch_minutes": 1
+    },
+    {
+      "term": "ワンダーフォーゲル",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ワンダーフォーゲル部ヒグマ事件",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "三毛別羆事件",
+      "views": 1,
+      "watch_minutes": 8
+    },
+    {
+      "term": "事件 解説",
+      "views": 1,
+      "watch_minutes": 13
+    },
+    {
+      "term": "五頭連山",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "実話 漫画",
+      "views": 1,
+      "watch_minutes": 8
+    },
+    {
+      "term": "山岳遭難",
+      "views": 1,
+      "watch_minutes": 27
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "date": "2026-04-23",
+  "collected_at": "2026-04-29T10:48:37.414943",
+  "overview": {
+    "views": 4497,
+    "watch_minutes": 40548,
+    "subs_gained": 13,
+    "subs_lost": 8,
+    "avg_view_duration_sec": 541,
+    "revenue_usd": 22.324
+  },
+  "top_videos": [],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 3346,
+      "watch_minutes": 29130
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 814,
+      "watch_minutes": 7774
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 140,
+      "watch_minutes": 1382
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 66,
+      "watch_minutes": 484
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 52,
+      "watch_minutes": 990
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 33,
+      "watch_minutes": 316
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 14,
+      "watch_minutes": 206
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 14,
+      "watch_minutes": 174
+    },
+    {
+      "source": "EXT_URL",
+      "views": 9,
+      "watch_minutes": 58
+    },
+    {
+      "source": "NOTIFICATION",
+      "views": 9,
+      "watch_minutes": 29
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "熊 事件",
+      "views": 11,
+      "watch_minutes": 67
+    },
+    {
+      "term": "ヒグマ事件",
+      "views": 6,
+      "watch_minutes": 21
+    },
+    {
+      "term": "さんけべつヒグマ事件",
+      "views": 5,
+      "watch_minutes": 38
+    },
+    {
+      "term": "グリズリー",
+      "views": 3,
+      "watch_minutes": 29
+    },
+    {
+      "term": "山の事件簿",
+      "views": 3,
+      "watch_minutes": 35
+    },
+    {
+      "term": "熊事件",
+      "views": 3,
+      "watch_minutes": 19
+    },
+    {
+      "term": "アンビリーバボー",
+      "views": 2,
+      "watch_minutes": 26
+    },
+    {
+      "term": "アンビリーバボー 事件",
+      "views": 2,
+      "watch_minutes": 11
+    },
+    {
+      "term": "事件 再現ドラマ",
+      "views": 2,
+      "watch_minutes": 0
+    },
+    {
+      "term": "山岳遭難ファイル",
+      "views": 2,
+      "watch_minutes": 33
+    },
+    {
+      "term": "怖い事件",
+      "views": 2,
+      "watch_minutes": 0
+    },
+    {
+      "term": "新潟親子遭難事故",
+      "views": 2,
+      "watch_minutes": 16
+    },
+    {
+      "term": "熊 遭遇",
+      "views": 2,
+      "watch_minutes": 12
+    },
+    {
+      "term": "熊に食べられた人",
+      "views": 2,
+      "watch_minutes": 56
+    },
+    {
+      "term": "獣害事件",
+      "views": 2,
+      "watch_minutes": 0
+    },
+    {
+      "term": "登山 熊",
+      "views": 2,
+      "watch_minutes": 30
+    },
+    {
+      "term": "福岡大学ワンダーフォーゲル部ヒグマ事件",
+      "views": 2,
+      "watch_minutes": 31
+    },
+    {
+      "term": "遭難事故 山",
+      "views": 2,
+      "watch_minutes": 13
+    },
+    {
+      "term": "ヒグマ 北海道 大学生",
+      "views": 1,
+      "watch_minutes": 31
+    },
+    {
+      "term": "ヒグマ 映画",
+      "views": 1,
+      "watch_minutes": 1
+    }
+  ]
+}

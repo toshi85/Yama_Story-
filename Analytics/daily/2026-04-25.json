@@ -1,0 +1,167 @@
+{
+  "date": "2026-04-25",
+  "collected_at": "2026-04-29T10:48:40.257627",
+  "overview": {
+    "views": 1824,
+    "watch_minutes": 16716,
+    "subs_gained": 2,
+    "subs_lost": 7,
+    "avg_view_duration_sec": 549,
+    "revenue_usd": 8.329
+  },
+  "top_videos": [],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 1107,
+      "watch_minutes": 9078
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 474,
+      "watch_minutes": 5119
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 139,
+      "watch_minutes": 1175
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 29,
+      "watch_minutes": 325
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 21,
+      "watch_minutes": 219
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 20,
+      "watch_minutes": 273
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 13,
+      "watch_minutes": 292
+    },
+    {
+      "source": "EXT_URL",
+      "views": 11,
+      "watch_minutes": 96
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 7,
+      "watch_minutes": 117
+    },
+    {
+      "source": "NOTIFICATION",
+      "views": 3,
+      "watch_minutes": 18
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "熊 事件",
+      "views": 10,
+      "watch_minutes": 78
+    },
+    {
+      "term": "グリズリー",
+      "views": 6,
+      "watch_minutes": 83
+    },
+    {
+      "term": "熊事件",
+      "views": 6,
+      "watch_minutes": 63
+    },
+    {
+      "term": "ヒグマ事件",
+      "views": 5,
+      "watch_minutes": 61
+    },
+    {
+      "term": "熊遭遇",
+      "views": 4,
+      "watch_minutes": 17
+    },
+    {
+      "term": "アンビリーバボー 事件",
+      "views": 3,
+      "watch_minutes": 9
+    },
+    {
+      "term": "熊 遭遇",
+      "views": 3,
+      "watch_minutes": 51
+    },
+    {
+      "term": "さんけべつヒグマ事件",
+      "views": 2,
+      "watch_minutes": 24
+    },
+    {
+      "term": "アンビリーバボー",
+      "views": 2,
+      "watch_minutes": 3
+    },
+    {
+      "term": "コディアックヒグマ",
+      "views": 2,
+      "watch_minutes": 0
+    },
+    {
+      "term": "三毛別羆事件 アンビリーバボー",
+      "views": 2,
+      "watch_minutes": 16
+    },
+    {
+      "term": "山の遭難事故",
+      "views": 2,
+      "watch_minutes": 3
+    },
+    {
+      "term": "羅臼岳 ヒグマ",
+      "views": 2,
+      "watch_minutes": 18
+    },
+    {
+      "term": "さんけべつヒグマ事件 アンビリバボー",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "アンビリバボー",
+      "views": 1,
+      "watch_minutes": 8
+    },
+    {
+      "term": "カムチャッカ半島",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ドラマ",
+      "views": 1,
+      "watch_minutes": 25
+    },
+    {
+      "term": "ヒグマ 事件",
+      "views": 1,
+      "watch_minutes": 2
+    },
+    {
+      "term": "ヒグマ 映画",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ヒグマ 落下",
+      "views": 1,
+      "watch_minutes": 1
+    }
+  ]
+}
