@@ -391,12 +391,16 @@ Forested autumn mountains of southwestern Hokkaido viewed from a distance, Daise
 警察は少しでも手がかりがないかと聞き込み調査を開始。しかし、なかなか有力な情報は得られません。
 
 【制作メモ】ASSET-022 [AI動画]
-シーン: 警察官が住民に話を聞いて回るが、首を振られる場面
-プロンプト（16:9・フォトリアル）:
+シーン: 警察官が複数の住民・店主・釣り人に次々と聞き込みを続けるが、皆首を振る。日が傾き、警察官の表情に疲労が滲む時間経過モンタージュ
+静止画プロンプト（16:9・フォトリアル）:
 ```
-A police officer in uniform talking with a local resident in a small town in Hokkaido, the resident shaking their head with apologetic expression. Late autumn outdoor lighting, low overcast clouds. Documentary style, photorealistic. 16:9. Faces from behind or partially obscured. Generate 3 separate images.
+A police officer in dark uniform walking through a quiet rural town in southwestern Hokkaido in late autumn, approaching different local residents one after another — an elderly farmer in front of a small house, a shop owner outside a general store, a fisherman at a small harbor. Each resident shaking their head with apologetic gestures. Multiple sequential moments shown across the frame as a documentary photo essay. Long shadows of late afternoon, low warm sunlight, overcast sky with patches of pale blue. Officer's face shown from behind or in profile only, no identifiable individuals. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. Generate 3 separate images.
 ```
-編集者指示: 数カット繋ぎ（聞き込み→首を振る→次の場所へ）で時間経過を演出。5秒程度。
+→ **Google Flow動画プロンプト:**
+```
+A 5-second documentary-style montage following a police officer in dark uniform walking through a rural Hokkaido town in late autumn. Quick sequential cuts: the officer questioning an elderly farmer (head shake), then a shop owner (apologetic gesture), then a fisherman at a small harbor (shrug). Each cut lasts about 1 second. Lighting subtly shifts from afternoon to dusk to show time passing. The officer's shoulders gradually sink with fatigue. Camera mostly handheld, slight motion. Officer always seen from behind or in profile, no identifiable faces. Photorealistic, RED camera, documentary style.
+```
+編集者指示: 5秒。3カット程度のモンタージュで時間経過を表現。BGMはゆっくりとした寂寥感のあるピアノ。最後のカットで警察官の手帳に「？」マークだけが増えていくインサートを編集で追加。「有力な情報なし」のテロップを最後にフェードイン。
 
 ---
 
@@ -469,14 +473,18 @@ A desk piled with documents, maps, and a phone in a police station office. A wal
 
 東の福島町、奥二股登山口あたりで無人の車を発見。
 
-【制作メモ】ASSET-029 [AI動画 / Lovart + Google Earth]
-シーン: 夜の奥二股登山口駐車場、警察車両のヘッドライトが無人の車を照らす
+【制作メモ】ASSET-029 [AI動画 / Lovart + Google Flow]
+シーン: 夜の奥二股登山口駐車場、警察車両のヘッドライトが無人の小型乗用車を照らし出す発見の瞬間（人物は映さず、車と光のみで緊張感を出す）
 GE参考座標: 奥二股登山口 約 `41°33'00"N, 140°15'00"E`
-プロンプト（16:9・フォトリアル）:
+静止画プロンプト（16:9・フォトリアル）:
 ```
-A police vehicle's headlights illuminating an abandoned small civilian car parked alone at a remote mountain trailhead at night. Dense dark forest surrounding the gravel lot. Police flashlights scanning the empty car. Cold autumn night, breath visible. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A remote gravel parking area at the Okufutamata trailhead in rural southwestern Hokkaido at night, deep in late autumn. A police patrol vehicle's headlights cutting through the darkness, illuminating an abandoned small civilian car parked alone in the lot. Handheld flashlight beams scanning the empty car from off-frame. Cold autumn night, breath-like vapor faintly visible in the cold air, frost on the ground. Dense black silhouettes of cedar and birch forest surrounding the lot. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
 ```
-編集者指示: ヘッドライトが車に当たる瞬間を強調。「無人の車を発見」のテロップ。緊張感あるBGM。
+→ **Google Flow動画プロンプト:**
+```
+A 5-second documentary night scene at a remote mountain trailhead parking area in Hokkaido. The camera starts in near darkness, then a police patrol vehicle's headlights slowly sweep across the gravel lot, gradually revealing an abandoned small civilian car. Off-frame flashlight beams scan the empty driver's seat through the windshield. Breath-like vapor faintly visible in the cold night air. Slow, tense pacing. No people visible in frame, only the car and the moving lights. Photorealistic, RED camera, documentary style.
+```
+編集者指示: 5秒。冒頭1秒は暗闇、ヘッドライトが車を照らし出す瞬間に「無人の車を発見」のテロップを衝撃音とともにフェードイン。BGMは緊張感のある低音ドローン。最後に懐中電灯の光が車内（空席）を映すアップで締める。次ASSET-030（実写写真）への引き。
 
 ---
 
@@ -946,13 +954,19 @@ CHAR-04 (Funaiita) being slammed backward by CHAR-05 (bear), falling on his back
 
 船板さんは、「クマの左手の爪で、右太ももを引っかかれるように引きずり倒された」
 
-【制作メモ】ASSET-071 [証言テロップ + アニメーション]
-シーン: 船板さんの証言。爪で太ももを引きずる動作のアニメ
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-071 [AI動画 / Lovart + Google Flow]
+シーン: ヒグマの左前足の爪が船板さんの右太ももを引っかき、横方向に引きずり倒す瞬間。船板さんの証言を実写ドキュメンタリー風に映像化。流血表現は避け、ズボンの破れと土埃で表現
+静止画プロンプト（16:9・フォトリアル）:
 ```
-Close-up animation of CHAR-05 (bear)'s left paw with sharp claws grabbing at CHAR-04 (Funaiita)'s right thigh, dragging him. Minimal stylized blood, cartoon style not graphic. White background. 1:1. Generate 3 separate images.
+A young male Hokkaido brown bear (Ursus arctos yesoensis), 125cm body length, muscular well-fed build weighing over 100kg, dark brown shaggy fur with a slightly lighter muzzle, uses its left front paw with extended sharp dark claws to hook into the right thigh of a fallen Japanese male firefighter (41-year-old, broad-shouldered tough build, short black hair with slight gray at temples, tan skin tone, dark navy blue hiking jacket, brown cargo pants with the right thigh visibly torn at the hook point), dragging him sideways along the damp dirt trail. The firefighter twists on the ground, hands clawing desperately at the dirt, face contorted in extreme pain, mouth open in a silent gasp. Dense tall Sasa bamboo grass walls flanking both sides of the narrow trail at Daisengen-dake. Cold overcast late autumn afternoon light, deep shadows under the conifer canopy. Dirt and fallen leaves scattering from the dragging motion. No blood visible, no graphic injuries shown — only the bear's claws hooking the torn pants and the man being pulled. Photorealistic, shot on RED camera. Documentary wildlife style, raw unfiltered tension. 16:9 aspect ratio. Generate 3 separate images.
 ```
-編集者指示: 証言テロップを2行で表示。動きはコンパクトに3秒。
+→ **Google Flow動画プロンプト:**
+```
+A 5-second slow-motion documentary video footage from a first-person POV at Daisengen-dake in late autumn. The camera is positioned at the eye level of a Japanese male firefighter lying flat on his back on a damp dirt mountain trail. Opening frame: the firefighter's own legs in brown cargo pants visible in the lower frame, his hands visible in the foreground palms-down on the dirt. A large young male Hokkaido brown bear with dark brown shaggy fur enters from the upper edge of the frame, head lowered. Action sequence unfolds in continuous motion: the bear advances directly toward the camera with deliberate predatory steps, head pushed forward, mouth wide open exposing massive sharp white fangs and bared gums in a ferocious snarl. The bear's intense eyes lock directly on the viewer, drawing closer and closer until its open jaws fill the upper portion of the frame, just inches away from the camera as if about to bite down. The camera shakes slightly from the firefighter's heavy breathing. Dense bamboo grass walls visible flanking the trail, cold overcast afternoon light, faint swirling mist. No blood visible, no graphic injuries shown — the threat suggested only by proximity, bared fangs, and the bear's predatory intent. Photorealistic, shot on RED camera, slow-motion documentary cinematography.
+```
+編集者指示: 5秒。1秒目: 仰向けPOV視点、ヒグマがフレーム上部に登場 → 2〜4秒目: ヒグマがゆっくりと正面に迫り、口を大きく開けて牙を見せる → 5秒目: 牙がフレーム上部いっぱいに広がり噛みつき直前で止まる。証言テロップを画面下に1行タイピング演出で表示:
+- 「私には猫が忍び寄ってくるように感じられた」（前ASSET-062の証言と連動）
+キャプション「船板克志さん 証言」を画面右上に固定表示。SE: ヒグマの低い唸り声が次第に大きくなる、船板さんの荒い息遣い、心拍音、噛みつき直前で全音カット（無音の衝撃）。BGMは前ASSETの心拍音を継続しつつ、最後の瞬間に低音ヒット。
 
 ---
 

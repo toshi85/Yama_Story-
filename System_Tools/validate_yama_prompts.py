@@ -27,6 +27,10 @@ Yama_Story プロンプト品質バリデーター
   18. シーン行必須 — 全ASSETに「シーン:」行があるか (FAIL)
   19. Google Earthプロンプト禁止 — [Google Earth]カテゴリにブロックがないか (FAIL)
   20. 背景プロンプト人物矛盾 — 「No people visible」と人物描写が同居していないか (FAIL)
+  21. 【AI動画】2ブロック構成 — Google Flow動画プロンプト欠落の検出 (FAIL)
+  22. キャラ系プロンプト比率 — 60%以上の達成度（リファレンス羅臼岳72.8%）(FAIL/WARNING)
+  23. CHAR-XX 再利用マーカー — 2回目以降のASSET冒頭に (CHAR-XX 再利用): があるか (WARNING)
+  24. 複数キャラ個別生成パターン — 複数人シーンでキャラプロンプト①②形式か (WARNING)
 """
 
 import sys
@@ -837,6 +841,257 @@ def check_background_people_contradiction(lines):
     return issues
 
 
+def split_into_asset_blocks(lines):
+    """ASSETブロック単位に分割する。各ブロックは (asset_id, start_line, end_line, block_lines) のタプル"""
+    asset_header = re.compile(r'【制作メモ】(ASSET-\d+)')
+    blocks = []
+    current_id = None
+    current_start = None
+    current_lines = []
+    for i, line in enumerate(lines):
+        m = asset_header.search(line)
+        if m:
+            if current_id is not None:
+                blocks.append((current_id, current_start, i - 1, current_lines))
+            current_id = m.group(1)
+            current_start = i
+            current_lines = [line]
+        elif current_id is not None:
+            current_lines.append(line)
+    if current_id is not None:
+        blocks.append((current_id, current_start, len(lines) - 1, current_lines))
+    return blocks
+
+
+def check_video_prompt_two_blocks(lines):
+    """【AI動画】タグ数 == Google Flow動画プロンプト数 を検証"""
+    blocks = split_into_asset_blocks(lines)
+    issues = []
+    for asset_id, start, end, block_lines in blocks:
+        header = block_lines[0]
+        is_ai_video = bool(re.search(r'【AI動画】|\[AI動画', header))
+        if not is_ai_video:
+            continue
+        block_text = ''.join(block_lines)
+        has_flow_prompt = bool(re.search(r'Google Flow動画プロンプト', block_text))
+        if not has_flow_prompt:
+            issues.append((start + 1, asset_id, '【AI動画】指定だが Google Flow動画プロンプト欠落'))
+    return issues
+
+
+def check_character_prompt_ratio(lines):
+    """キャラ系プロンプト比率（60%以上）を検証"""
+    blocks = split_into_asset_blocks(lines)
+    total = len(blocks)
+    if total == 0:
+        return None, 0, 0
+    char_count = 0
+    for asset_id, start, end, block_lines in blocks:
+        block_text = ''.join(block_lines)
+        if re.search(r'キャラプロンプト|キャラアニメ|キャラ流用|キャラ静止画', block_text):
+            char_count += 1
+    ratio = (char_count * 100.0) / total
+    if ratio >= 60:
+        verdict = 'PASS'
+    elif ratio >= 50:
+        verdict = 'WARNING'
+    elif ratio >= 30:
+        verdict = 'WARNING_STRONG'
+    else:
+        verdict = 'FAIL'
+    return verdict, char_count, total, ratio
+
+
+def check_character_style_header(lines):
+    """キャラ系プロンプトに固定スタイルヘッダー6要素が含まれているか検証"""
+    required_keywords = [
+        'Cute cartoon character design',
+        'thick black outlines',
+        'flat cel-shaded colors',
+        'large expressive eyes',
+        'slightly chibi proportions',
+        "children's animation style",
+    ]
+    char_prompt_label = re.compile(r'^\s*(キャラプロンプト|キャラアニメーション|キャラ流用|キャラ静止画)[①②③④⑤1-5]?[（(]?')
+    blocks = split_into_asset_blocks(lines)
+    issues = []
+    for asset_id, start, end, block_lines in blocks:
+        # キャラ系プロンプトのラベル行を探し、その直後のコードブロック/プロンプト本文を取得
+        for idx, line in enumerate(block_lines):
+            if not char_prompt_label.search(line):
+                continue
+            # ラベル行の後、空行までを「このキャラプロンプトのブロック」とみなす（最大30行）
+            body_lines = []
+            for j in range(idx + 1, min(idx + 31, len(block_lines))):
+                nxt = block_lines[j]
+                if char_prompt_label.search(nxt):
+                    break
+                # 「背景プロンプト」「SE:」「編集者指示:」「シーン:」が来たら終了
+                if re.search(r'^\s*(背景プロンプト|SE:|編集者指示:|シーン:|→\s*\*\*Google Flow)', nxt):
+                    break
+                body_lines.append(nxt)
+            body_text = ' '.join(body_lines)
+            if not body_text.strip():
+                continue
+            missing = [kw for kw in required_keywords if kw not in body_text]
+            if missing:
+                actual_line = start + idx + 1
+                issues.append((actual_line, asset_id, line.strip()[:50], missing))
+    return issues
+
+
+def check_one_character_per_image_clause(lines):
+    """
+    Generate指示の使い分けを検証（リファレンス羅臼岳準拠）:
+    - CHAR基準画像定義（### CHAR-XX: 直下のキャラプロンプト）: `each showing only this one character` 必須
+    - 本編ASSETのキャラ系プロンプト: 不要（`Generate N separate images.` のみで可）
+    - バリエーション指示文（`Generate N images with variations` / `image 1..., image 2...` 列挙）: 全プロンプトで禁止
+    """
+    char_prompt_label = re.compile(r'^\s*(キャラプロンプト|キャラアニメーション|キャラ流用|キャラ静止画)[①②③④⑤1-5]?[（(]?')
+    char_definition_header = re.compile(r'^###\s+CHAR-\d+')
+    required_phrase = 'each showing only this one character'
+    forbidden_variation_pattern = re.compile(
+        r'Generate\s+\d+\s+separate\s+images?\s+with\s+(subtle\s+)?variations?\s*[\(（]', re.I
+    )
+    forbidden_enumeration = re.compile(
+        r'(Vary[^.]*across\s+the\s+\d+\s+images?\s*[:：]|image\s*1\b[^.]*?image\s*2\b)', re.I
+    )
+
+    # CHAR基準画像定義の行範囲を特定（### CHAR-XX: から次の ### or ASSET- まで）
+    char_def_ranges = []
+    for i, line in enumerate(lines):
+        if char_definition_header.search(line):
+            end = len(lines)
+            for j in range(i + 1, len(lines)):
+                if lines[j].startswith('### ') or '【制作メモ】ASSET-' in lines[j]:
+                    end = j
+                    break
+            char_def_ranges.append((i, end))
+
+    def is_in_char_definition(line_idx):
+        return any(s <= line_idx < e for s, e in char_def_ranges)
+
+    blocks = split_into_asset_blocks(lines)
+    issues = []
+    # まず CHAR基準画像定義内のキャラプロンプトを直接走査
+    for s, e in char_def_ranges:
+        for idx in range(s, e):
+            line = lines[idx]
+            if not char_prompt_label.search(line):
+                continue
+            body_lines = []
+            for j in range(idx + 1, min(idx + 31, e)):
+                nxt = lines[j]
+                if char_prompt_label.search(nxt):
+                    break
+                if re.search(r'^\s*(背景プロンプト|SE:|編集者指示:|シーン:|→\s*\*\*Google Flow)', nxt):
+                    break
+                body_lines.append(nxt)
+            body_text = ' '.join(body_lines)
+            if not body_text.strip():
+                continue
+            label = line.strip()[:50]
+            if required_phrase not in body_text:
+                issues.append((idx + 1, f'CHAR定義', label, "CHAR基準画像定義に必須定型句 'each showing only this one character' 欠落"))
+            if forbidden_variation_pattern.search(body_text) or forbidden_enumeration.search(body_text):
+                issues.append((idx + 1, f'CHAR定義', label, "禁止表現（バリエーション指示文 / image 1..., image 2... 列挙）"))
+
+    # 本編ASSETは「禁止表現」のみチェック（必須定型句は不要）
+    for asset_id, start, end, block_lines in blocks:
+        for idx, line in enumerate(block_lines):
+            actual_line = start + idx
+            if is_in_char_definition(actual_line):
+                continue
+            if not char_prompt_label.search(line):
+                continue
+            body_lines = []
+            for j in range(idx + 1, min(idx + 31, len(block_lines))):
+                nxt = block_lines[j]
+                if char_prompt_label.search(nxt):
+                    break
+                if re.search(r'^\s*(背景プロンプト|SE:|編集者指示:|シーン:|→\s*\*\*Google Flow)', nxt):
+                    break
+                body_lines.append(nxt)
+            body_text = ' '.join(body_lines)
+            if not body_text.strip():
+                continue
+            label = line.strip()[:50]
+            if forbidden_variation_pattern.search(body_text) or forbidden_enumeration.search(body_text):
+                issues.append((actual_line + 1, asset_id, label, "禁止表現（バリエーション指示文 / image 1..., image 2... 列挙）"))
+    return issues
+
+
+def check_no_scene_words_in_char_prompt(lines):
+    """キャラ系プロンプトに場所・時間・気象等のシーン状況描写が含まれていないか検証"""
+    char_prompt_label = re.compile(r'^\s*(キャラプロンプト|キャラアニメーション|キャラ流用|キャラ静止画)[①②③④⑤1-5]?[（(]?')
+    # 禁止語句リスト（小文字で検出）
+    forbidden_patterns = [
+        re.compile(r'\boutdoors?\b', re.I),
+        re.compile(r'\bindoors?\b', re.I),
+        re.compile(r'\bat night\b', re.I),
+        re.compile(r'\bat dawn\b', re.I),
+        re.compile(r'\bin the morning\b', re.I),
+        re.compile(r'\bat sunset\b', re.I),
+        re.compile(r'\blate evening\b', re.I),
+        re.compile(r'\bat the (police station|hospital|station|counter)\b', re.I),
+        re.compile(r'\bat a reception counter\b', re.I),
+        re.compile(r'\bin (the|her|his) home\b', re.I),
+        re.compile(r'\bon a mountain\b', re.I),
+        re.compile(r'\bin the (forest|rain|snow|wind)\b', re.I),
+        re.compile(r'\bunder (snow|bright sunlight)\b', re.I),
+    ]
+    blocks = split_into_asset_blocks(lines)
+    issues = []
+    for asset_id, start, end, block_lines in blocks:
+        for idx, line in enumerate(block_lines):
+            if not char_prompt_label.search(line):
+                continue
+            body_lines = []
+            for j in range(idx + 1, min(idx + 31, len(block_lines))):
+                nxt = block_lines[j]
+                if char_prompt_label.search(nxt):
+                    break
+                if re.search(r'^\s*(背景プロンプト|SE:|編集者指示:|シーン:|→\s*\*\*Google Flow)', nxt):
+                    break
+                body_lines.append(nxt)
+            body_text = ' '.join(body_lines)
+            if not body_text.strip():
+                continue
+            for pat in forbidden_patterns:
+                m = pat.search(body_text)
+                if m:
+                    actual_line = start + idx + 1
+                    label = line.strip()[:50]
+                    issues.append((actual_line, asset_id, label, m.group(0)))
+                    break  # 同じブロック内で1件検出で次へ
+    return issues
+
+
+def check_background_generate_clause(lines):
+    """背景プロンプトの末尾に `Generate N separate images.` 定型句が含まれているか検証"""
+    bg_label = re.compile(r'^\s*背景プロンプト[（(]')
+    required_pattern = re.compile(r'Generate\s+\d+\s+separate\s+images?\.', re.I)
+    blocks = split_into_asset_blocks(lines)
+    issues = []
+    for asset_id, start, end, block_lines in blocks:
+        for idx, line in enumerate(block_lines):
+            if not bg_label.search(line):
+                continue
+            body_lines = []
+            for j in range(idx + 1, min(idx + 31, len(block_lines))):
+                nxt = block_lines[j]
+                if re.search(r'^\s*(キャラプロンプト|キャラアニメーション|キャラ流用|キャラ静止画|SE:|編集者指示:|シーン:|→\s*\*\*Google Flow)', nxt):
+                    break
+                body_lines.append(nxt)
+            body_text = ' '.join(body_lines)
+            if not body_text.strip():
+                continue
+            if not required_pattern.search(body_text):
+                actual_line = start + idx + 1
+                issues.append((actual_line, asset_id, "背景プロンプト末尾 `Generate N separate images.` 欠落"))
+    return issues
+
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: python3 validate_yama_prompts.py <台本ファイルパス> [台本Master.mdパス]")
@@ -1148,6 +1403,91 @@ def main():
             print(f"   ...他{len(issues)-5}件")
     else:
         print("✅ PASS: 背景プロンプト人物矛盾なし")
+
+    # 21. 【AI動画】2ブロック整合性
+    issues = check_video_prompt_two_blocks(lines)
+    if issues:
+        all_pass = False
+        print(f"\n❌ FAIL: 【AI動画】2ブロック構成違反 ({len(issues)}件)")
+        print(f"   Google Flow動画プロンプトが欠落しているASSET:")
+        for ln, asset, msg in issues[:10]:
+            print(f"   L{ln} ({asset}): {msg}")
+        if len(issues) > 10:
+            print(f"   ...他{len(issues)-10}件")
+    else:
+        print("✅ PASS: 【AI動画】2ブロック構成")
+
+    # 22. キャラ系プロンプト比率
+    result = check_character_prompt_ratio(lines)
+    if result[0] is not None:
+        verdict, char_count, total, ratio = result
+        if verdict == 'PASS':
+            print(f"✅ PASS: キャラ系プロンプト比率 ({char_count}/{total} = {ratio:.1f}%)")
+        elif verdict in ('WARNING', 'WARNING_STRONG'):
+            warnings += 1
+            label = '⚠️  WARNING' if verdict == 'WARNING' else '⚠️  WARNING(強)'
+            print(f"\n{label}: キャラ系プロンプト比率 ({char_count}/{total} = {ratio:.1f}%)")
+            print(f"   目標60%以上。背景静止画偏重の可能性。リファレンス羅臼岳=72.8%")
+        else:  # FAIL
+            all_pass = False
+            print(f"\n❌ FAIL: キャラ系プロンプト比率 ({char_count}/{total} = {ratio:.1f}%)")
+            print(f"   30%未満。解説調になりすぎ。台本全体の人物配置設計を見直し")
+
+    # 23. キャラプロンプト固定スタイルヘッダー
+    issues = check_character_style_header(lines)
+    if issues:
+        warnings += 1
+        print(f"\n⚠️  WARNING: キャラプロンプト固定スタイルヘッダー欠落 ({len(issues)}件)")
+        print(f"   必須6要素: Cute cartoon character design / thick black outlines / flat cel-shaded colors")
+        print(f"             / large expressive eyes / slightly chibi proportions / children's animation style")
+        for ln, asset, label, missing in issues[:10]:
+            print(f"   L{ln} ({asset}) [{label}] 欠落: {missing}")
+        if len(issues) > 10:
+            print(f"   ...他{len(issues)-10}件")
+    else:
+        print("✅ PASS: キャラプロンプト固定スタイルヘッダー")
+
+    # 24. Generate指示の使い分け（CHAR定義のみ必須・本編は禁止表現のみチェック）
+    issues = check_one_character_per_image_clause(lines)
+    if issues:
+        warnings += 1
+        print(f"\n⚠️  WARNING: Generate指示の使い分け違反 ({len(issues)}件)")
+        print(f"   CHAR基準画像定義: 'Generate N separate images, each showing only this one character.' 必須")
+        print(f"   本編ASSET: 'Generate N separate images.' のみで可")
+        print(f"   禁止表現（全プロンプト共通）: バリエーション指示文 / image 1..., image 2... 列挙")
+        for ln, asset, label, msg in issues[:10]:
+            print(f"   L{ln} ({asset}) [{label}]: {msg}")
+        if len(issues) > 10:
+            print(f"   ...他{len(issues)-10}件")
+    else:
+        print("✅ PASS: Generate指示の使い分け")
+
+    # 25. キャラプロンプトにシーン状況描写禁止
+    issues = check_no_scene_words_in_char_prompt(lines)
+    if issues:
+        warnings += 1
+        print(f"\n⚠️  WARNING: キャラプロンプトにシーン状況描写混入 ({len(issues)}件)")
+        print(f"   禁止語例: outdoors / indoors / at night / at the police station / in the rain 等")
+        print(f"   これらが white background を上書きして余計な背景が混入します")
+        for ln, asset, label, word in issues[:10]:
+            print(f"   L{ln} ({asset}) [{label}] 検出: '{word}'")
+        if len(issues) > 10:
+            print(f"   ...他{len(issues)-10}件")
+    else:
+        print("✅ PASS: キャラプロンプトにシーン状況描写なし")
+
+    # 26. 背景プロンプト末尾Generate指示
+    issues = check_background_generate_clause(lines)
+    if issues:
+        warnings += 1
+        print(f"\n⚠️  WARNING: 背景プロンプト末尾Generate指示欠落 ({len(issues)}件)")
+        print(f"   必須: 'Generate N separate images.' (無いと1枚しか生成されない)")
+        for ln, asset, msg in issues[:10]:
+            print(f"   L{ln} ({asset}): {msg}")
+        if len(issues) > 10:
+            print(f"   ...他{len(issues)-10}件")
+    else:
+        print("✅ PASS: 背景プロンプト末尾Generate指示")
 
     # Summary
     print("\n" + "=" * 60)

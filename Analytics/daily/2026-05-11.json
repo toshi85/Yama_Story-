@@ -1,0 +1,248 @@
+{
+  "date": "2026-05-11",
+  "collected_at": "2026-05-17T08:49:07.969706",
+  "overview": {
+    "views": 5948,
+    "watch_minutes": 51558,
+    "subs_gained": 10,
+    "subs_lost": 4,
+    "avg_view_duration_sec": 520,
+    "revenue_usd": 25.791
+  },
+  "top_videos": [
+    {
+      "video_id": "Ot4G3-EHj5Q",
+      "views": 2792,
+      "watch_minutes": 20962,
+      "avg_view_duration_sec": 450,
+      "avg_view_percentage": 30.010000000000005,
+      "subs_gained": 5
+    },
+    {
+      "video_id": "c_kkIsQlFe8",
+      "views": 2009,
+      "watch_minutes": 19063,
+      "avg_view_duration_sec": 569,
+      "avg_view_percentage": 30.380000000000003,
+      "subs_gained": 2
+    },
+    {
+      "video_id": "P6129_NW2Zk",
+      "views": 794,
+      "watch_minutes": 7706,
+      "avg_view_duration_sec": 582,
+      "avg_view_percentage": 38.19,
+      "subs_gained": 1
+    },
+    {
+      "video_id": "-sHkcezuQLY",
+      "views": 105,
+      "watch_minutes": 1100,
+      "avg_view_duration_sec": 628,
+      "avg_view_percentage": 38.5,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "1oVqjBXOtiI",
+      "views": 41,
+      "watch_minutes": 622,
+      "avg_view_duration_sec": 910,
+      "avg_view_percentage": 33.92,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "3NkSKsjMBwI",
+      "views": 38,
+      "watch_minutes": 334,
+      "avg_view_duration_sec": 528,
+      "avg_view_percentage": 35.63,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "eQuoRcakpoE",
+      "views": 30,
+      "watch_minutes": 440,
+      "avg_view_duration_sec": 881,
+      "avg_view_percentage": 61.23,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "9NU6MUOyiCM",
+      "views": 28,
+      "watch_minutes": 241,
+      "avg_view_duration_sec": 517,
+      "avg_view_percentage": 41.15,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "bJhz7_XiduE",
+      "views": 25,
+      "watch_minutes": 211,
+      "avg_view_duration_sec": 507,
+      "avg_view_percentage": 36.56,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "mlvCbz0DP4Y",
+      "views": 21,
+      "watch_minutes": 219,
+      "avg_view_duration_sec": 625,
+      "avg_view_percentage": 36.37,
+      "subs_gained": 0
+    }
+  ],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 4581,
+      "watch_minutes": 38437
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 979,
+      "watch_minutes": 9280
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 142,
+      "watch_minutes": 1296
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 85,
+      "watch_minutes": 533
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 43,
+      "watch_minutes": 445
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 35,
+      "watch_minutes": 646
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 34,
+      "watch_minutes": 367
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 28,
+      "watch_minutes": 473
+    },
+    {
+      "source": "EXT_URL",
+      "views": 9,
+      "watch_minutes": 44
+    },
+    {
+      "source": "HASHTAGS",
+      "views": 2,
+      "watch_minutes": 21
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "熊 事件",
+      "views": 13,
+      "watch_minutes": 144
+    },
+    {
+      "term": "グリズリー",
+      "views": 6,
+      "watch_minutes": 18
+    },
+    {
+      "term": "ヒグマ事件",
+      "views": 5,
+      "watch_minutes": 20
+    },
+    {
+      "term": "福岡大学ワンダーフォーゲル部ヒグマ事件",
+      "views": 4,
+      "watch_minutes": 45
+    },
+    {
+      "term": "アンビリーバボー",
+      "views": 3,
+      "watch_minutes": 28
+    },
+    {
+      "term": "三毛別羆事件",
+      "views": 3,
+      "watch_minutes": 35
+    },
+    {
+      "term": "怖い事件",
+      "views": 3,
+      "watch_minutes": 29
+    },
+    {
+      "term": "熊嵐",
+      "views": 3,
+      "watch_minutes": 72
+    },
+    {
+      "term": "さんけべつヒグマ事件",
+      "views": 2,
+      "watch_minutes": 27
+    },
+    {
+      "term": "世界仰天ニュース 事件",
+      "views": 2,
+      "watch_minutes": 4
+    },
+    {
+      "term": "五島連峰 遭難",
+      "views": 2,
+      "watch_minutes": 16
+    },
+    {
+      "term": "滑落",
+      "views": 2,
+      "watch_minutes": 0
+    },
+    {
+      "term": "熊 射殺シーン",
+      "views": 2,
+      "watch_minutes": 8
+    },
+    {
+      "term": "熊 遭遇",
+      "views": 2,
+      "watch_minutes": 1
+    },
+    {
+      "term": "熊事件",
+      "views": 2,
+      "watch_minutes": 31
+    },
+    {
+      "term": "熊遭遇",
+      "views": 2,
+      "watch_minutes": 6
+    },
+    {
+      "term": "登山 熊",
+      "views": 2,
+      "watch_minutes": 25
+    },
+    {
+      "term": "秩父 熊",
+      "views": 2,
+      "watch_minutes": 13
+    },
+    {
+      "term": "羅臼岳 ヒグマ",
+      "views": 2,
+      "watch_minutes": 0
+    },
+    {
+      "term": "アンビリーバボー 事件",
+      "views": 1,
+      "watch_minutes": 5
+    }
+  ]
+}
