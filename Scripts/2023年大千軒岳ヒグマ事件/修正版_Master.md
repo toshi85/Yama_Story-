@@ -127,9 +127,13 @@ Forested mountains of Matsumae Peninsula in southwestern Hokkaido, autumn foliag
 
 【制作メモ】ASSET-001 [AI動画 / Lovart or Google Flow]
 シーン: 森の中で人間の太ももに伸びる、毛むくじゃらの巨大なヒグマの前足のクローズアップ。爪が衣服を引き裂きながら太ももに食い込む瞬間
-プロンプト（16:9・フォトリアル）:
+静止画プロンプト（16:9・フォトリアル）:
 ```
-Extreme close-up cinematic shot of a massive Hokkaido brown bear paw with thick black sharp claws digging into a human thigh covered in dark hiking pants in dense forest understory. Fabric tearing, slight blood at the contact point (minimal, not graphic). Dark dramatic lighting, shallow depth of field. Tension and visceral danger. Photorealistic, shot on RED camera. Documentary style. 5-second motion loop. 16:9 aspect ratio. Generate 3 separate images.
+Extreme close-up cinematic shot of a massive Hokkaido brown bear's front paw — thick curved black claws fully extended, each sharp talon catching the dim forest light, digging into a dark olive green hiking pant leg that is being torn and pierced inward. The claws sink into the thick fabric, fibers visibly fraying and stretching around each claw tip. Dense dark brown shaggy bear fur surrounds the paw with individual hairs catching the light. Strands of dirt and dried bamboo grass debris cling to the claws. The texture of the rough leathery paw pad pressed hard against the pant leg, the underlying thigh muscle compressing under the weight. Damp dirt and trampled bamboo grass on the forest floor beneath. Dim cold afternoon light filtering through dense vegetation overhead, deep shadows under the conifer canopy. Shallow depth of field with razor focus locked on the claws sinking in. Visceral and raw documentary intensity. No blood visible, no graphic injuries shown. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+```
+→ **Google Flow動画プロンプト:**
+```
+A 5-second slow-motion documentary video footage on Daisengen-dake at the moment a massive Hokkaido brown bear's front paw drives down into a male hiker's right thigh. Camera holds steady in extreme close-up on the paw. Thick curved black claws extend forward and sink into the dark olive green hiking pant leg, fabric fibers tear and stretch frame by frame, dirt fragments and bamboo grass debris scatter from the impact. Dense dark brown shaggy fur ripples with the downward pressure. The paw pad presses hard against the leg, the thigh muscle compresses beneath. Damp forest floor visible just below. Dim cold afternoon light, deep shadows under the conifer canopy. No blood visible, no graphic injuries shown. Photorealistic, RED camera, slow-motion documentary cinematography.
 ```
 SE: 「ザッ」という鈍い衣服が裂ける音、低い唸り声を遠くに重ねる
 編集者指示: 5秒以内、クローズアップ→そのまま暗転。冒頭の引き込みカットなので即座のインパクト最優先。テロップなし。
@@ -1008,7 +1012,7 @@ Stylized silhouette dark shadow scene of a bear figure biting at a fallen human 
 シーン: 破壊された信号ピストルが地面に転がる
 プロンプト（16:9・フォトリアル）:
 ```
-A broken signal flare pistol lying on the forest floor, twisted and damaged, scattered leaves around it. Tense dim lighting. Photorealistic, RED camera. 16:9. No people. Generate 3 separate images.
+Close-up of a broken signal flare pistol lying on the damp forest floor. The orange plastic frame is cracked and split along the side, the barrel bent at an unnatural angle, the trigger guard snapped off. Deep scratch marks and dirt smears across the surface suggest a violent struggle. Scattered fallen leaves, broken twigs, and trampled bamboo grass around it. Disturbed earth visible. Dim afternoon light filtering through dense vegetation overhead. Shallow depth of field with the broken pistol in sharp focus. Tense, ominous atmosphere of aftermath. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 3 separate images.
 ```
 編集者指示: 「武器破壊」「絶体絶命」の赤字テロップ。視聴者に最大の絶望を伝える演出。
 
@@ -1033,10 +1037,10 @@ CHAR-02 (Ohara) with determined intense expression, hand reaching into his backp
 大原さんは先日購入した小型ナイフを取り出し、ヒグマの右目を狙います。
 
 【制作メモ】ASSET-077 [キャラアニメーション + ナイフ素材流用]
-シーン: CHAR-02がナイフを取り出し、CHAR-05の右目に向かって振りかぶる
+シーン: CHAR-02がナイフを取り出し、CHAR-05の右目に向かって振りかぶる極限の瞬間
 キャラプロンプト（1:1）:
 ```
-CHAR-02 (Ohara) holding the 5cm knife, lunging toward CHAR-05 (bear)'s right eye area. Action pose, focused intensity. Cartoon style. White background. 1:1. Generate 3 separate images.
+(CHAR-02、CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body. CHAR-02 (Ohara, 41-year-old firefighter, muscular build, dark olive green hiking jacket, tactical backpack) gripping a small folding knife with both hands, knuckles white, body coiled forward in a violent lunge — face contorted with desperate fury, teeth clenched hard, eyes blazing with life-or-death focus, sweat and dirt streaked across his face, jaw locked, every muscle taut. The knife tip stops just short of CHAR-05's right eye, about to strike. CHAR-05 (young male Hokkaido brown bear, 125cm, dark brown fur) reacting with raw aggression — mouth wide open in a snarling roar, sharp teeth bared, lips curled back, eyes blazing with primal rage, nostrils flared, head jerking violently sideways. Extreme tension at the breaking point. No blood visible, no graphic injuries shown. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these 2 characters together.
 ```
 編集者指示: 動きは3秒のアニメ。「右目を狙う」のテロップ。
 
@@ -1044,7 +1048,17 @@ CHAR-02 (Ohara) holding the 5cm knife, lunging toward CHAR-05 (bear)'s right eye
 
 しかし、頑丈なヒグマの頭蓋骨にはじかれてしまいました。
 
-【制作メモ】ASSET-078 [SE + 画面エフェクト]
+【制作メモ】ASSET-078 [キャラアニメーション + ナイフ素材分離]
+シーン: 大原のナイフがヒグマの頭蓋骨にはじかれ、絶望の表情。ヒグマは無傷で臨戦態勢継続
+キャラプロンプト（1:1 / 大原ナイフ無し + ヒグマ）:
+```
+(CHAR-02、CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body. CHAR-02 (Ohara, 41-year-old firefighter, muscular build, dark olive green hiking jacket, tactical backpack) recoiling backward from the impact, both hands empty and open with fingers splayed in shock — face frozen in absolute despair, eyes wide and hollow, mouth half-open in a silent gasp, all color drained from his face, shoulders sagging with the realization that his weapon was knocked away. He is unarmed. CHAR-05 (young male Hokkaido brown bear, 125cm, dark brown fur) standing firm in full battle stance completely unharmed — head lowered, mouth open in a low menacing growl, sharp teeth visible, lips curled back, eyes fixed coldly on CHAR-02 with predatory focus, ears flattened, massive shoulders tensed and coiled for the next strike. No blood visible, no graphic injuries shown. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these 2 characters together.
+```
+ナイフ単体プロップ画像（1:1 / 編集者のナイフ飛ばし演出用素材）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A small folding knife shown as an isolated prop object — 5cm silver blade fully extended, black molded handle with grip texture, clean cartoon line art. No characters, no hands, no people. The knife floats centered on the canvas. White background, no shadow. 1:1 aspect ratio. Generate 3 separate images.
+```
+編集者指示: ヒグマの頭蓋骨にナイフがはじかれる「カキン！」の衝撃音SE。ナイフ素材をキャラ画像に重ね、ヒグマの頭付近から斜め上方向へ高速回転しながら飛んでいくモーションを付与（モーションブラー＋スピンアニメ）。「はじかれた」「武器ロスト」テロップを赤字で強調。BGM一瞬カットして絶望感を作る。
 シーン: ナイフが弾かれる効果音と視覚演出
 編集者指示: 「カキン！」の効果音＋ナイフが弾かれる動きを示すモーションライン。「頭蓋骨にはじかれた」のテロップ。
 
@@ -1053,12 +1067,12 @@ CHAR-02 (Ohara) holding the 5cm knife, lunging toward CHAR-05 (bear)'s right eye
 とはいえ、攻撃されたことに気づいたヒグマは、標的を大原さんに変更。
 
 【制作メモ】ASSET-079 [キャラアニメーション]
-シーン: CHAR-05の顔がCHAR-02に向き直る
+シーン: ヒグマが標的を船板さんから大原さんに変更。汗を流し勇気を振り絞る大原と、四つ足で牙を剥くヒグマの対峙構図
 キャラプロンプト（1:1）:
 ```
-CHAR-05 (bear) turning its head and body to face CHAR-02 (Ohara), eyes now locked onto a new target. Aggressive intent. Cartoon style. White background. 1:1. Generate 3 separate images.
+(CHAR-02、CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body. CHAR-02 (Ohara, 41-year-old firefighter, muscular build, dark olive green hiking jacket, tactical backpack) bracing himself upright with feet planted wide and firm, fists clenched tight at his sides, shoulders squared — face streaming with sweat that runs down his temples and drips from his chin, eyes burning with fierce courage rising through the fear, teeth gritted hard, brow furrowed in absolute resolve as he steels himself for what comes next. He stands unarmed but unbroken. CHAR-05 (young male Hokkaido brown bear, 125cm, dark brown fur) lowered into a full four-legged predator stance, all four paws on the ground, body pressed close to the earth, head pushed forward and aimed directly at CHAR-02 — mouth wide open exposing sharp white fangs in a vicious snarl, lips curled back, eyes locked onto Ohara with murderous intent, ears flattened, massive shoulders bunched and trembling with coiled aggression, ready to lunge. The two stand face to face across a short distance. No blood visible, no graphic injuries shown. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these 2 characters together.
 ```
-編集者指示: 視線が船板さんから大原さんへ移る瞬間を強調。「標的変更」のテロップ。
+編集者指示: ヒグマの視線が船板さんから大原さんへ流れるカットを前置（カメラパン）してから本カットへ。「標的変更」の赤字テロップ。BGMを一気に緊張感MAXへ。汗が落ちる滴のSEを大原のクローズアップに重ねて勇気の溜めを演出。
 
 ---
 
@@ -1077,12 +1091,12 @@ CHAR-02 (Ohara) being knocked onto his back by CHAR-05 (bear), the bear mounting
 噛みつかれないよう必死に抵抗しますが、ヒグマは強靭な力でグイグイと顔を近づけます。
 
 【制作メモ】ASSET-081 [キャラアニメーション]
-シーン: 顔を近づけてくるCHAR-05、必死に押し返すCHAR-02
+シーン: 馬乗り状態で顔を近づけるヒグマと必死に押し返す大原。焦った表情と牙剥き出し噛みつき寸前
 キャラプロンプト（1:1）:
 ```
-Close-up tense pose: CHAR-05 (bear)'s face pushing down toward CHAR-02 (Ohara)'s face, only inches apart. CHAR-02 pushing back desperately with both hands on the bear's neck. Cartoon style, intense expression. White background. 1:1. Generate 3 separate images.
+(CHAR-02、CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body. CHAR-02 (Ohara, 41-year-old firefighter, muscular build, dark olive green hiking jacket, tactical backpack) lying on his back with CHAR-05 mounted on top of him — both hands shoved hard against the bear's lower jaw and throat with arms shaking from the strain, elbows trembling, every muscle straining at the limit. Face contorted with panicked desperation, eyes wide and darting, brow furrowed sharply, sweat pouring down his face and dripping onto the ground, teeth clenched in a grimace, veins on his neck and arms bulging from the effort. CHAR-05 (young male Hokkaido brown bear, 125cm, dark brown fur) crushing down from above with overwhelming weight, head pushed forward toward Ohara's face just inches away — mouth wide open exposing massive sharp white fangs in a full bare, lips fully curled back, tongue and gums visible, jaws snapping forward about to bite down on Ohara's face, eyes blazing with raw predatory hunger, ears flattened, massive paws planted on either side of Ohara, shoulders driving forward with brute strength. The bear's face closes the distance inch by inch despite Ohara's resistance. No blood visible, no graphic injuries shown. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these 2 characters together.
 ```
-編集者指示: 顔の距離感を強調。BGMで緊迫を最大化。
+編集者指示: ヒグマの顔と大原の顔の距離が縮まっていく1秒の寄りカットを重ね、距離マーカー（10cm→5cm→3cm）を小さく表示。「噛みつき寸前」の赤字テロップ。BGMを心拍音に切り替え緊迫MAX。
 
 ---
 
@@ -1097,9 +1111,13 @@ Close-up tense pose: CHAR-05 (bear)'s face pushing down toward CHAR-02 (Ohara)'s
 
 この時の感覚を大原さんは、「ぐーっと（太ももが）熱くなっていった」と語っています。
 
-【制作メモ】ASSET-083 [証言テロップ + キャラ]
-シーン: CHAR-02のアップ＋証言テロップ
-編集者指示: CHAR-02のアップ（ASSET-064 流用可）＋「ぐーっと（太ももが）熱くなっていった」の証言テロップ。BGMを一瞬静かにして証言を際立たせる。
+【制作メモ】ASSET-083 [キャラアニメーション]
+シーン: ヒグマの爪が右太ももに刺さり、絶叫する大原と食らいつこうとするヒグマ
+キャラプロンプト（1:1）:
+```
+(CHAR-02、CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body. CHAR-02 (Ohara, 41-year-old firefighter, muscular build, dark olive green hiking jacket, tactical hiking pants, tactical backpack) lying on his back on the ground pinned beneath the bear, head thrown back and mouth wrenched wide open to the absolute maximum in a full-throated agonized scream — jaw stretched as wide as it can go, teeth fully visible, tongue and throat exposed, neck veins bulging hard, sweat flying from his face, brow knotted tight, eyes squeezed shut, body arched and twisting in extreme agony. CHAR-05 (young male Hokkaido brown bear, 125cm, dark brown fur) crushing down from above with overwhelming weight, head lowered and driven forward toward Ohara's chest and face — jaws stretched wide open to the absolute maximum exposing huge sharp white fangs, upper and lower jaw spread far apart, gums and tongue visible, mouth lunging forward as if about to bite down on Ohara, eyes blazing with raw predatory hunger, ears flattened, massive shoulders bearing down. The bear's front right paw with thick black claws fully extended is sunk deep into Ohara's right thigh — each claw embedded into and piercing the dark olive green pant fabric over the right thigh, the fabric stretched and torn around each claw tip, the paw pressing the leg into the ground. No blood visible, no graphic injuries shown. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these 2 characters together.
+```
+編集者指示: 「ぐーっと（太ももが）熱くなっていった」の証言テロップを大きめに重ねる。BGMを一瞬カットして証言を際立たせ、心拍音SEで痛みの感覚を演出。爪が刺さる右太ももに赤いゆらぎエフェクト（熱の感覚を可視化）。
 
 ---
 
@@ -1129,9 +1147,13 @@ CHAR-05 (bear) with knife embedded in throat, head raised with painful roar, bac
 
 二人はこれで一安心だと思いましたが、実は、これで終わりではありませんでした。
 
-【制作メモ】ASSET-086 [画面エフェクト]
-シーン: 安堵から再緊張へ
-編集者指示: 「しかし、終わりではなかった」のテロップを赤字でフェードイン。BGMを再びダークに戻す。
+【制作メモ】ASSET-086 [キャラアニメーション]
+シーン: ヒグマが逃げ去った直後、登山道に座り込み「もう大丈夫」と安堵する負傷した大原と船板
+キャラプロンプト（1:1）:
+```
+(CHAR-02、CHAR-04 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body. CHAR-02 (Ohara, 41-year-old firefighter, muscular build, dark olive green hiking jacket, tactical hiking pants visibly torn and scratched across the right thigh, tactical backpack) sitting heavily on the ground with knees bent, one hand braced behind him on the ground, the other hand resting lightly on his right thigh — shoulders sagging in deep relief, head tilted slightly back, eyes half-closed from exhaustion, mouth open in a long heavy exhale, sweat soaking his face and hair, dirt smudges across his cheeks and jacket, a faint exhausted smile starting to form. CHAR-04 (Funaita, 41-year-old firefighter, broad-shouldered build with short black hair and slight gray at temples, dark navy blue hiking jacket torn at the shoulder, brown cargo pants torn and scratched at the right thigh) crouched down on one knee beside Ohara, leaning forward with both hands resting on his bent knee, head hanging low, eyes half-shut, chest heaving with deep ragged breaths, sweat dripping from his chin, dirt and torn fabric across his clothes, a quiet exhausted relief washing over his face. Both men look battered and spent but quietly relieved, as if the worst is finally over. No blood visible, no graphic injuries shown. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these 2 characters together.
+```
+編集者指示: 二人のホッとした表情から数秒の間を作り、その後「しかし、終わりではなかった」の赤字テロップをフェードイン。BGMを穏やかなトーンから一気にダークに反転させ、視聴者の油断を裏切る演出。
 
 ---
 
@@ -1185,21 +1207,33 @@ CHAR-05 (bear) walking away down the trail, viewed from behind, disappearing int
 
 大原さんはこの一連の事件について、「ただじゃすまないと思った。助かったのは、運がよかっただけ」と振り返っています。
 
-【制作メモ】ASSET-091 [証言テロップ + キャラ]
-シーン: CHAR-02のアップ＋証言テロップ
-編集者指示: CHAR-02アップ画像（ASSET-064 流用可）＋証言テロップ「ただじゃすまないと思った」「助かったのは、運がよかっただけ」。重い独白トーン。
+【制作メモ】ASSET-091 [キャラアニメーション + 実写背景]
+シーン: 事件後、頭を抱えて恐怖と疲労に打ちのめされる大原さんが自宅で振り返る
+キャラプロンプト（1:1）:
+```
+(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body. CHAR-02 (Ohara, 41-year-old firefighter, muscular build, dark olive green hiking jacket torn at the shoulder, tactical hiking pants visibly torn and scratched across the right thigh) sitting hunched forward with both hands clutching the sides of his head, fingers gripping his hair tight, elbows resting on his bent knees, body trembling — face contorted with raw lingering fear and disbelief, eyes wide open and staring vacantly at nothing, pupils dilated, mouth slightly open as if frozen in a silent gasp, sweat beading on his forehead, all color drained from his face. The realization of how close he came to dying etched into every line of his expression. White background. 1:1 aspect ratio. Generate 3 separate images.
+```
+背景プロンプト（16:9・フォトリアル / 家の中）:
+```
+A dimly lit Japanese living room in the early evening, simple modest interior — tatami flooring, low wooden table, an old television set in the corner, a single floor lamp casting warm but somber light, sliding paper doors slightly ajar showing darkness beyond. Quiet still atmosphere of solitude and contemplation, the room feels heavy and silent. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
+```
+編集者指示: 「ただじゃすまないと思った」「助かったのは、運がよかっただけ」の証言テロップを順にフェードイン。BGMを重い独白トーンに切り替え。大原さんの震える肩に微細なシェイクエフェクト。証言と恐怖の表情で「あの瞬間が今も離れない」深いトラウマを表現。
 
 ---
 
 ちなみに、3人目の阿部さんは、ヒグマから逃げようとしたはずみで、およそ3.5メートル下の崖下へと転落したとのことです。負傷はしましたが、命に別状はありませんでした。
 
-【制作メモ】ASSET-092 [キャラアニメーション + 補足説明]
-シーン: CHAR-03（阿部さん）が斜面を滑落するアニメ＋「3.5m滑落」テロップ
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-092 [キャラアニメーション + 実写背景]
+シーン: 阿部さんがヒグマから逃げようとして3.5m下の崖下へ転落する瞬間
+キャラプロンプト（1:1 / 滑落の瞬間）:
 ```
-CHAR-03 (Abe) slipping down a steep 3.5-meter slope on the side of the trail, falling but landing relatively safely. Cartoon style, motion blur. White background. 1:1. Generate 3 separate images.
+(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body. CHAR-03 (Abe, 36-year-old firefighter, average athletic build, short black hair, dark red hiking jacket, dark gray pants, hiking boots, black daypack) caught mid-fall tumbling down a steep slope — body tilted sharply backward off balance, both arms flailing wildly in the air desperately trying to grab onto anything, legs splayed and skidding, one boot kicking up dirt and small stones. Face frozen in absolute panic — mouth wrenched wide open in a sudden terrified shout, eyes bulging wide with raw fear, eyebrows shot up high, sweat flying from his face, all color drained, every muscle tensed in the instinctive terror of falling. No blood visible, no graphic injuries shown. White background. 1:1 aspect ratio. Generate 3 separate images.
 ```
-編集者指示: 「3.5m転落 / 負傷あり・命に別状なし」のテロップ。やや軽めのBGMで「3人目はこういう状況だった」と補足的に説明。
+背景プロンプト（16:9・フォトリアル / 崖下と落下痕）:
+```
+A steep narrow cliff edge along a mountain hiking trail on Daisengen-dake in late autumn. The trail abruptly drops off into a 3.5-meter rocky drop below — exposed dark soil, broken rocks, scattered fallen leaves and dried bamboo grass at the bottom. Fresh signs of a recent fall — disturbed earth on the slope face, scuff marks dragged down the dirt wall, a few broken twigs and torn leaves marking the path of descent. Dense tall sasa bamboo grass framing the upper edge of the trail. Cold overcast late autumn afternoon light, deep shadows under the conifer canopy overhead. Tense quiet atmosphere of immediate aftermath. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
+```
+編集者指示: 背景を実写崖カットに切り替えてから阿部さんの滑落アニメをモーションブラー付きで合成（上から下へ斜め落下、約1秒）。「3.5m転落」のテロップを高さインフォグラフィック（矢印＋距離マーカー）と共に表示。「負傷あり・命に別状なし」のサブテロップを安堵BGMと共に重ねる。
 
 ---
 
@@ -1225,9 +1259,13 @@ CHAR-03 (Abe) slipping down a steep 3.5-meter slope on the side of the trail, fa
 
 その後、3人はその場で10分ほど様子を見て、ヒグマが戻ってこないことを確認。
 
-【制作メモ】ASSET-095 [画面エフェクト + 背景BG-A]
-シーン: 時計の表示が10分進む、3人が周囲を警戒
-編集者指示: 「10分待機」のテロップ＋時計アニメ。背景はBG-A（笹薮の登山道）再利用。
+【制作メモ】ASSET-095 [キャラアニメーション + 背景BG-A流用]
+シーン: ヒグマが戻らないか10分間警戒し続ける、傷ついて怯える3人
+キャラプロンプト（1:1）:
+```
+(CHAR-02、CHAR-03、CHAR-04 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body. Three battered firefighters huddled close together on the ground, supporting one another. CHAR-03 (Abe, dark red hiking jacket torn at the shoulder, dark gray pants scratched and dirty, dark dirt smudges on his face from his fall) on the left, CHAR-02 (Ohara, dark olive green hiking jacket, tactical hiking pants torn at the right thigh) in the center, CHAR-04 (Funaita, dark navy blue hiking jacket torn at the shoulder, brown cargo pants torn at the right thigh) on the right. Each of them: crouched low and pressed close to the others, heads up and eyes wide darting nervously in every direction scanning their surroundings for any sign of the bear, faces frozen with lingering fear and hyper-vigilance, mouths slightly open in shallow rapid breaths, sweat beading on their foreheads, bodies tense and trembling, hands gripping each other's arms or shoulders for support, every muscle braced ready to flee at the first sound. No blood visible, no graphic injuries shown. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these 3 characters together.
+```
+編集者指示: 背景は既存BG-A（笹薮の登山道）に合成。3人のキャラ画像を中央に配置し、左下に時計アニメを置いて10分の経過を早回し表示（実時間2〜3秒）。「10分待機」のテロップを時計と並べて表示。BGMは緊張感のあるサスペンス調を維持し、最後の数秒で安堵のトーンへわずかに緩める。視線が周囲をキョロキョロ動くシェイクエフェクトでサスペンスを強化。
 
 ---
 
