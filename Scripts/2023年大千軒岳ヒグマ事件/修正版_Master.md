@@ -143,13 +143,17 @@ SE: 「ザッ」という鈍い衣服が裂ける音、低い唸り声を遠く�
 押し返しても、押し返しても、ヒグマの首は一向に下がらない。
 
 【制作メモ】ASSET-002 [AI動画 / Lovart or Google Flow]
-シーン: 仰向けに倒された登山者の視点から見上げる、覆いかぶさるヒグマの黒い影。両手で必死に押し返す手のひらが画面手前に映る
-プロンプト（16:9・フォトリアル・POV）:
+シーン: 正面構図。地面レベル真横から、仰向けの登山者が両手でヒグマの首と胸を押し上げ、それでもヒグマの首が下がってくる拮抗の瞬間
+静止画プロンプト（16:9・フォトリアル・サイドビュー）:
 ```
-First-person POV shot lying on the forest floor looking up at a massive dark silhouette of a brown bear looming overhead, with two human hands in dark hiking gloves pushing up against the bear's neck and chest. Dim canopy light behind the bear creating dramatic backlighting. Sense of weight and inescapable pressure. Photorealistic, shot on RED camera. Documentary style. 5-second motion. 16:9 aspect ratio. Generate 3 separate images.
+A side-view ground-level documentary shot of a desperate struggle on a Hokkaido mountain forest floor. A Japanese male hiker in his 20s wearing dark hiking gear is lying on his back among dense bamboo grass and fallen leaves, both arms straining straight upward, palms pressed firmly against the lower jaw and broad chest of a massive Hokkaido brown bear looming directly over him. The bear's head is being pushed up by the hiker's hands, but the bear's powerful neck strains relentlessly downward, jaw inches from the hiker's face. The hiker's arms tremble with effort. Forest understory, dim shafts of canopy light filtering through. No blood visible, no graphic injuries shown. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
 ```
-SE: 喘ぐ息遣い、ヒグマの低い唸り声、手が触れ合う鈍い音
-編集者指示: 5秒、徐々にヒグマの顔が近づく動き。視聴者を主観に置く演出。テロップなし。
+Google Flow動画プロンプト:
+```
+A 5-second slow-motion documentary video footage on a life-or-death struggle on a Hokkaido forest floor. A Japanese male hiker lies on his back, both arms locked straight upward, palms pressed against the lower jaw and chest of an enormous brown bear looming directly over him. The hiker's arms tremble and push upward with all his strength; the bear's massive head sinks slowly and relentlessly downward in steady unstoppable pressure, refusing to lift. The camera holds steady at ground level a few meters to the side, framing the entire struggle in pure side profile. Dust and fallen leaves stir beneath the bear's weight. Photorealistic, RED camera, slow-motion documentary cinematography.
+```
+SE: 喘ぐ息遣い、ヒグマの低い唸り声、衣服とヒグマの毛が擦れる鈍い音
+編集者指示: 5秒、ヒグマの首がじわじわ下がる動きを強調。サイドビュー固定。テロップなし。
 
 ---
 
@@ -1427,13 +1431,20 @@ Eerie bamboo grass forest with a vague silhouette of a bear hidden deep within, 
 
 捜索隊が下手に動けば、さらなる被害になりかねない状況。そのため、安全に動けるよう警察、消防、ハンター、北海道警察航空隊の協力のもと捜索を進めることとなります。
 
-【制作メモ】ASSET-110 [画面エフェクト + 各機関ロゴ]
-シーン: 警察・消防・ハンター・防災ヘリの各部隊が集結
-プロンプト（16:9・フォトリアル）:
+【制作メモ】ASSET-110 [キャラプロンプト + 背景静止画]
+シーン: 協力要請前の段階。捜索隊員2人が登山道入口付近で立ち止まり、ヒグマの脅威で奥に進めず困った表情で立ち往生。背景は実写の登山道入口を別途生成
+
+キャラプロンプト（1:1・2人同居・新規キャラ）:
 ```
-Multiple emergency vehicles gathered at a rural staging area: police cars, fire trucks, hunter trucks with red license plates, and a rescue helicopter on the ground. Coordinating teams in uniforms (faces from behind). Late autumn day, low overcast. Photorealistic, RED camera, documentary style. 16:9. Generate 3 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background. Two Japanese male search-and-rescue team members standing together at a halt, unable to advance, both visibly torn between the urgency to search and the danger of an active bear threat. The first character: a Japanese male search team member in his 40s, wearing a high-visibility bright orange search-and-rescue vest over a dark gray long-sleeve shirt, dark cargo pants, sturdy hiking boots, a black knit cap, a paper map held in both hands, short black hair, deeply troubled worried expression with furrowed brow, looking down at the map hesitating. The second character: a Japanese male search team member in his 30s, wearing a high-visibility bright orange search-and-rescue vest over a navy blue long-sleeve shirt, dark cargo pants, sturdy hiking boots, no cap, a small handheld radio clipped to the chest strap, short black hair, frustrated concerned expression, one hand on his hip, the other hand scratching the back of his head as he stares forward in helpless concern. Both standing close together as a small two-person search team, both clearly hesitant, body language showing the limit of what they can safely do alone. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these 2 characters together.
 ```
-編集者指示: 各機関名のテロップを順に表示。「大規模捜索体制」のテロップ。
+
+背景プロンプト（16:9・フォトリアル）:
+```
+A narrow mountain trail entrance leading into deep forest at Daisengen-dake in late autumn. Dense tall Sasa bamboo grass walls flanking both sides of the trail, partially blocking visibility deeper into the forest. Damp earth path with scattered fallen leaves in warm autumn colors. The trail curves out of sight ahead, creating a sense of unseen danger lurking further in. Cold overcast afternoon light, deep shadows under the conifer canopy. Quiet humid mountain atmosphere with a sense of imminent threat. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible, no animals visible. Empty trail only. Generate 3 separate images.
+```
+
+編集者指示: 背景の登山道入口を奥に配置し、2人のキャラを手前中央に合成。1人を画面左、もう1人を画面右に並列配置。テロップ「捜索隊・初動」を画面右上に小さく表示し、続けて「下手に動けば、さらなる被害」のテロップを画面下部に赤字でフェードイン。最後に「→ 警察・消防・ハンター・北海道警察航空隊の協力体制へ」のサブテロップを薄くフェードインさせて次ASSETへの引きを作る。BGMは緊迫感のある低音を継続。SE: 葉擦れの音、無線機の遠いノイズ、2人の困惑のため息。3〜4秒。
 
 ---
 

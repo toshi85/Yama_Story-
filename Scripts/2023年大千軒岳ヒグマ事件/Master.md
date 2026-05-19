@@ -2422,12 +2422,27 @@
 ナレーター: 「でも、夜、寝ようとして目を閉じると、目撃した一連の光景がフラッシュバックするんです」
 
 【制作メモ】
-- 【画面エフェクト】「フラッシュバック、、」赤字証言テロップ
+- 【キャラアニメーション】船板さんが恐怖を思い出し両手で頭を抱える証言シーン
+- キャラプロンプト（1:1）:
+```
+(CHAR-04 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: a 41-year-old Japanese firefighter, broad-shouldered powerful build, short black hair slightly graying at temples, wearing dark navy outdoor jacket and technical pants. He is seated, leaning forward, both hands gripping the sides of his head, eyes squeezed shut, brow tightly furrowed, mouth tense — reliving the terror of the attack as he speaks. Pure terror resurfacing on his face. White background. 1:1 aspect ratio. Generate 3 separate images.
+```
+- 背景プロンプト（16:9）:
+```
+Interior of a contemporary Japanese modern Western-style living room used as an interview setting. Light oak wood flooring, a low fabric sofa in soft gray, a small minimalist coffee table, an indoor plant in a ceramic pot near the wall, simple framed art on a clean off-white wall, sheer white curtains at a large window letting in soft natural daylight. Modern, tidy, calm documentary interview atmosphere. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
+```
+- 【画面エフェクト】「フラッシュバック、、」赤字証言テロップを上から重ねる
 
 ナレーター: 「当分、登山はする気にならないと思います」
 
 【制作メモ】
-- 【画面エフェクト】「当分、登山する気になれない」赤字証言テロップ
+- 【キャラアニメーション】船板さんが立った状態で静かに登山を断る証言シーン（背景は前カットと同じ洋室を流用）
+- キャラプロンプト（1:1）:
+```
+(CHAR-04 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: a 41-year-old Japanese firefighter, broad-shouldered powerful build, short black hair slightly graying at temples, wearing dark navy outdoor jacket and technical pants. Standing upright in a relaxed posture, arms hanging naturally at his sides, head held still and level. Face strikingly pale and ashen, all color drained from his cheeks, faint cold sweat on his brow, eyes slightly downcast with a haunted look, lips pressed together — quietly refusing the idea of climbing again. Subdued, shaken, honest expression. White background. 1:1 aspect ratio. Generate 3 separate images.
+```
+- 背景プロンプト: 前カットの洋室背景をそのまま流用
+- 【画面エフェクト】「当分、登山する気になれない」赤字証言テロップを上から重ねる
 
 ナレーター: 屋名池さんは、ひとりで、装備は通常の登山者と同じでした。
 
