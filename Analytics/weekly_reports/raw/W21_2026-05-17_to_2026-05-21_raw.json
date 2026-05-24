@@ -1,0 +1,253 @@
+{
+  "report_date": "2026-05-24",
+  "period": {
+    "this_week": "2026-05-17 ~ 2026-05-21",
+    "prev_week": "2026-05-10 ~ 2026-05-16"
+  },
+  "this_week_summary": {
+    "days_collected": 5,
+    "total_views": 74424,
+    "total_watch_minutes": 539678,
+    "total_subs_net": 81,
+    "total_revenue_usd": 285.01,
+    "avg_daily_views": 14884.8,
+    "avg_view_duration_sec": 435.4
+  },
+  "prev_week_summary": {
+    "days_collected": 7,
+    "total_views": 58615,
+    "total_watch_minutes": 484425,
+    "total_subs_net": 71,
+    "total_revenue_usd": 247.299,
+    "avg_daily_views": 8373.57142857143,
+    "avg_view_duration_sec": 497
+  },
+  "week_over_week": {
+    "views_change_pct": 27.0,
+    "watch_minutes_change_pct": 11.4,
+    "subs_change_pct": 14.1,
+    "revenue_change_pct": 15.2,
+    "avg_duration_change_pct": -12.4
+  },
+  "anomalies": [
+    {
+      "date": "2026-05-17",
+      "views": 14930,
+      "mean": 4554,
+      "stdev": 2946,
+      "direction": "spike",
+      "sigma": 3.5
+    },
+    {
+      "date": "2026-05-18",
+      "views": 19363,
+      "mean": 4554,
+      "stdev": 2946,
+      "direction": "spike",
+      "sigma": 5.0
+    },
+    {
+      "date": "2026-05-19",
+      "views": 16241,
+      "mean": 4554,
+      "stdev": 2946,
+      "direction": "spike",
+      "sigma": 4.0
+    },
+    {
+      "date": "2026-05-20",
+      "views": 12697,
+      "mean": 4554,
+      "stdev": 2946,
+      "direction": "spike",
+      "sigma": 2.8
+    },
+    {
+      "date": "2026-05-21",
+      "views": 11193,
+      "mean": 4554,
+      "stdev": 2946,
+      "direction": "spike",
+      "sigma": 2.3
+    }
+  ],
+  "search_trends": {
+    "new_terms": {
+      "熊に遭遇": 5
+    },
+    "rising_terms": {
+      "熊 遭遇": {
+        "views": 30,
+        "prev_views": 15,
+        "ratio": 2.0
+      },
+      "アニメ": {
+        "views": 2,
+        "prev_views": 1,
+        "ratio": 2.0
+      },
+      "山岳遭難": {
+        "views": 4,
+        "prev_views": 2,
+        "ratio": 2.0
+      },
+      "人喰い熊": {
+        "views": 4,
+        "prev_views": 2,
+        "ratio": 2.0
+      }
+    },
+    "disappeared_terms": {
+      "熊嵐": 30,
+      "怖い事件": 9,
+      "福岡ワンダーフォーゲル事件": 9,
+      "石狩沼田幌新事件": 9
+    },
+    "top_terms_this_week": {
+      "熊 事件": 131,
+      "熊 遭遇": 30,
+      "ヒグマ事件": 30,
+      "熊事件": 23,
+      "アンビリーバボー 事件": 19,
+      "福岡大学ワンダーフォーゲル部ヒグマ事件": 12,
+      "グリズリー": 12,
+      "三毛別羆事件": 11,
+      "熊 射殺シーン": 10,
+      "熊被害事件": 10,
+      "さんけべつヒグマ事件": 9,
+      "登山 熊": 8,
+      "アンビリーバボー": 8,
+      "羅臼岳 ヒグマ": 7,
+      "事件 再現ドラマ": 7
+    }
+  },
+  "traffic_trends": {
+    "YT_SEARCH": {
+      "views": 1224,
+      "prev_views": 1560,
+      "change_pct": -21.5
+    },
+    "EXT_URL": {
+      "views": 75,
+      "prev_views": 92,
+      "change_pct": -18.5
+    },
+    "NO_LINK_OTHER": {
+      "views": 758,
+      "prev_views": 572,
+      "change_pct": 32.5
+    },
+    "YT_OTHER_PAGE": {
+      "views": 417,
+      "prev_views": 364,
+      "change_pct": 14.6
+    },
+    "NOTIFICATION": {
+      "views": 1,
+      "prev_views": 0,
+      "change_pct": null
+    },
+    "YT_CHANNEL": {
+      "views": 333,
+      "prev_views": 328,
+      "change_pct": 1.5
+    },
+    "SUBSCRIBER": {
+      "views": 65243,
+      "prev_views": 48345,
+      "change_pct": 35.0
+    },
+    "PLAYLIST": {
+      "views": 279,
+      "prev_views": 219,
+      "change_pct": 27.4
+    },
+    "RELATED_VIDEO": {
+      "views": 5885,
+      "prev_views": 6906,
+      "change_pct": -14.8
+    },
+    "END_SCREEN": {
+      "views": 208,
+      "prev_views": 206,
+      "change_pct": 1.0
+    },
+    "HASHTAGS": {
+      "views": 1,
+      "prev_views": 5,
+      "change_pct": -80.0
+    }
+  },
+  "top_videos": [
+    {
+      "video_id": "P6129_NW2Zk",
+      "total_views": 26327,
+      "total_watch_minutes": 165016,
+      "days_in_top": 5,
+      "avg_view_percentage": 24.5
+    },
+    {
+      "video_id": "Ot4G3-EHj5Q",
+      "total_views": 24297,
+      "total_watch_minutes": 163515,
+      "days_in_top": 5,
+      "avg_view_percentage": 26.9
+    },
+    {
+      "video_id": "c_kkIsQlFe8",
+      "total_views": 12360,
+      "total_watch_minutes": 117018,
+      "days_in_top": 5,
+      "avg_view_percentage": 30.3
+    },
+    {
+      "video_id": "-sHkcezuQLY",
+      "total_views": 6558,
+      "total_watch_minutes": 51003,
+      "days_in_top": 5,
+      "avg_view_percentage": 28.8
+    },
+    {
+      "video_id": "bJhz7_XiduE",
+      "total_views": 3388,
+      "total_watch_minutes": 25912,
+      "days_in_top": 5,
+      "avg_view_percentage": 37.1
+    },
+    {
+      "video_id": "3NkSKsjMBwI",
+      "total_views": 276,
+      "total_watch_minutes": 2899,
+      "days_in_top": 5,
+      "avg_view_percentage": 41.5
+    },
+    {
+      "video_id": "9NU6MUOyiCM",
+      "total_views": 254,
+      "total_watch_minutes": 2336,
+      "days_in_top": 5,
+      "avg_view_percentage": 45.2
+    },
+    {
+      "video_id": "mlvCbz0DP4Y",
+      "total_views": 250,
+      "total_watch_minutes": 2752,
+      "days_in_top": 5,
+      "avg_view_percentage": 38.5
+    },
+    {
+      "video_id": "eQuoRcakpoE",
+      "total_views": 163,
+      "total_watch_minutes": 1816,
+      "days_in_top": 5,
+      "avg_view_percentage": 46.6
+    },
+    {
+      "video_id": "T6AZh73TeB8",
+      "total_views": 82,
+      "total_watch_minutes": 942,
+      "days_in_top": 3,
+      "avg_view_percentage": 42.8
+    }
+  ]
+}
