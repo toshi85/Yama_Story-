@@ -38,6 +38,15 @@ type: reference
 - Yama_Story/Scripts/羅臼岳ヒグマ襲撃事件/Master.md（リファレンス）
 - Yama_Story/memory/yama-script-cut-patterns.md（カットされやすいセクション）
 - Yama_Story/Learned_Patterns_Yama.md（勝ちパターン公式）
+- Yama_Story/memory/feedback_yama_research_direct_webfetch.md（リサーチ品質ルール・必読）
+- Yama_Story/memory/feedback_yama_quote_source_verified.md（引用原典確認ルール・必読）
+
+【リサーチ品質ルール（2026-05-25確定）】
+- エージェント要約に依存禁止。メインエージェントが直接WebFetchで全主要ソースを取得
+- 競合動画はyoutube-transcript-apiで字幕一括取得→実データで構成分析
+- ソース最低取得数: 日本語Wikipedia1+英語Wikipedia1+公的機関1+報道3+ブログ3+競合動画字幕3 = 計12件以上
+- 引用フレーズは一次資料で原典確認必須。確認不可なら削除 or 「と伝えられる」等の婉曲表現
+- 引用には必ず <!-- src: 書籍名 出版社 刊行年 pXX --> 形式で原典明記
 
 【数値検証】
 - 時間/距離/標高は Playwright MCP で環境省・YAMAP・山と高原地図の3点クロスチェック
@@ -45,8 +54,10 @@ type: reference
 
 【完了条件】
 - python3 Yama_Story/System_Tools/audit_numeric_facts.py <ファイル> で未検証0件
+- validate-yama-quote-source.sh 警告0件（引用原典確認）
 - yama-fact-checker スキル通過
 - 「（要設定）」「TBD」「仮置き」grep 0件
+- 競合動画字幕の実データ分析レポート添付（カバー率比較表）
 
 【構成密度】
 - 25-30セクション上限（動画25分想定なら）
