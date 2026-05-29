@@ -1104,7 +1104,7 @@ A close-up documentary still of a brown bear lifting its nose high into the air,
 
 ## §12. 10年かかった、真相の究明
 
-ナレーター: しかしこの「餌付けされた個体だった」という事実が明らかになるまでには、長い時間がかかります。<!-- src: 小坂洋右・大山孝広『星野道夫 永遠のまなざし』山と渓谷社 2006 / note 秋田しげと 2023-02-04 -->
+ナレーター: しかしこの「餌付けされた個体だった」という事実が明らかになるまでには、長い時間がかかります。<!-- src: 小坂洋右・大山卓悠『星野道夫 永遠のまなざし』山と渓谷社 2006 / note 秋田しげと 2023-02-04 -->
 
 【制作メモ】
 - 【背景静止画】積み重なった調査資料、新聞記事のスクラップ、写真、メモが机に乱雑に広がる
@@ -1127,7 +1127,7 @@ A still life close-up of an old Japanese formal report document on a desk, the c
 【制作メモ】
 - 【画面エフェクト】「報告書」と「証言」の2つを並べ、食い違いを示す矢印テロップ
 
-ナレーター: 星野さんの友人や、クマを長年研究してきた科学者たちが、独自に検証を進めます。<!-- src: 小坂洋右・大山孝広『星野道夫 永遠のまなざし』2006 -->
+ナレーター: 星野さんの友人や、クマを長年研究してきた科学者たちが、独自に検証を進めます。<!-- src: 小坂洋右・大山卓悠『星野道夫 永遠のまなざし』2006 -->
 
 【制作メモ】
 - 【キャラアニメーション】研究者風の日本人男性数名が地図と資料を囲んで議論する後ろ姿
@@ -1136,7 +1136,7 @@ A still life close-up of an old Japanese formal report document on a desk, the c
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese researchers gathered around a table covered in maps and documents, viewed from a slightly elevated angle behind them. Wearing simple casual jackets, focused serious expressions visible in profile. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these three characters together.
 ```
 
-ナレーター: そして事件から10年後の2006年、ようやくその全貌が、書籍として明らかにされます。<!-- src: 小坂洋右・大山孝広『星野道夫 永遠のまなざし』山と渓谷社 2006 -->
+ナレーター: そして事件から10年後の2006年、ようやくその全貌が、書籍として明らかにされます。<!-- src: 小坂洋右・大山卓悠『星野道夫 永遠のまなざし』山と渓谷社 2006 -->
 
 【制作メモ】
 - 【背景静止画】『星野道夫 永遠のまなざし』風の本の表紙が静かに置かれている
@@ -1150,12 +1150,12 @@ A still life of a hardcover Japanese photography essay book on a wooden table, t
 【制作メモ】
 - 【画面エフェクト】「人間の手によって変えられたヒグマ」のテロップを大きく重ねる
 
-ナレーター: 友人たちが指摘した矛盾点は、大きく3つありました。<!-- src: 小坂洋右・大山孝広『星野道夫 永遠のまなざし』山と渓谷社 2006 / note 秋田しげと 2023-02-04 -->
+ナレーター: 友人たちが指摘した矛盾点は、大きく3つありました。<!-- src: 小坂洋右・大山卓悠『星野道夫 永遠のまなざし』山と渓谷社 2006 / note 秋田しげと 2023-02-04 -->
 
 【制作メモ】
 - 【画面エフェクト】「矛盾点①〜③」のリストテロップ
 
-ナレーター: 1つ目。当時、サケの遡上は例年の10分の1まで落ち込んでいたという事実。<!-- src: 小坂洋右・大山孝広『星野道夫 永遠のまなざし』2006 -->
+ナレーター: 1つ目。当時、サケの遡上は例年の10分の1まで落ち込んでいたという事実。<!-- src: 小坂洋右・大山卓悠『星野道夫 永遠のまなざし』2006 -->
 
 【制作メモ】
 - 【背景静止画】川を遡上するサケが少なく、川底が見える寂しい光景
@@ -1169,7 +1169,7 @@ A documentary still of a Kamchatka shallow river in summer with very few sockeye
 【制作メモ】
 - 【画面エフェクト】「鮭は例年の1/10」「いい写真が撮れない」発言テロップ
 
-ナレーター: 2つ目。ヒグマの行動原理に反する点。<!-- src: 小坂洋右・大山孝広『星野道夫 永遠のまなざし』2006 -->
+ナレーター: 2つ目。ヒグマの行動原理に反する点。<!-- src: 小坂洋右・大山卓悠『星野道夫 永遠のまなざし』2006 -->
 
 【制作メモ】
 - 【画面エフェクト】「矛盾点②」テロップ
@@ -1183,7 +1183,7 @@ A documentary still of a Kamchatka shallow river in summer with very few sockeye
 A documentary still of the inside of a small camping tent, neatly arranged with no food items visible, only a folded sleeping bag and a closed waterproof bag. Soft natural light through the tent fabric. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
 ```
 
-ナレーター: 星野さんは野生動物の専門家として、テント内に食料を一切置かない徹底ぶりを貫いていました。<!-- src: 小坂洋右・大山孝広『星野道夫 永遠のまなざし』2006 -->
+ナレーター: 星野さんは野生動物の専門家として、テント内に食料を一切置かない徹底ぶりを貫いていました。<!-- src: 小坂洋右・大山卓悠『星野道夫 永遠のまなざし』2006 -->
 
 【制作メモ】
 - 【画面エフェクト】「テント内 食料ゼロ」のテロップ
@@ -1193,12 +1193,12 @@ A documentary still of the inside of a small camping tent, neatly arranged with 
 【制作メモ】
 - 【画面エフェクト】「食料なしのテントを直撃」を強調するテロップ
 
-ナレーター: 3つ目。星野さんが「テントで一人寝た」とされる経緯。<!-- src: 小坂洋右・大山孝広『星野道夫 永遠のまなざし』2006 -->
+ナレーター: 3つ目。星野さんが「テントで一人寝た」とされる経緯。<!-- src: 小坂洋右・大山卓悠『星野道夫 永遠のまなざし』2006 -->
 
 【制作メモ】
 - 【画面エフェクト】「矛盾点③」テロップ
 
-ナレーター: 米国人写真家の証言によると、小屋には機材が多くてスペースがなく、星野さんは小屋に入ることができなかったとされています。<!-- src: 小坂洋右・大山孝広『星野道夫 永遠のまなざし』2006 / note 秋田しげと -->
+ナレーター: 米国人写真家の証言によると、小屋には機材が多くてスペースがなく、星野さんは小屋に入ることができなかったとされています。<!-- src: 小坂洋右・大山卓悠『星野道夫 永遠のまなざし』2006 / note 秋田しげと -->
 
 【制作メモ】
 - 【背景静止画】小屋内部が機材で埋まり、寝るスペースがほとんどない様子
@@ -2031,7 +2031,7 @@ SHO-8: スタッフ叫び「ベアー」・ガイドシャベル叩き・ヒグ�
 SHO-9: ヘリで武装ハンターと研究者Mosolov・上空射殺・解剖で人間遺品確認
 SHO-10: 餌付け主体「観光・撮影目的」（諸説あり・日本通説:地元TV局オーナー、英語Igor Shpilenok証言:無責任な写真家・映像作家ら）
 SHO-11: Food Conditioned/食物条件付け
-SHO-12: 10年後（2006年）真相究明書籍『星野道夫 永遠のまなざし』小坂洋右・大山孝広
+SHO-12: 10年後（2006年）真相究明書籍『星野道夫 永遠のまなざし』小坂洋右・大山卓悠
 SHO-13: 銃を持たない哲学・「銃を持つと自然への謙虚さが消える」
 SHO-14: 千葉市川生まれ・19歳ナショジオ→シシュマレフ村手紙→田中光常師事→1978アラスカ大学
 SHO-15: 『旅をする木』文藝春秋1994/絵本『クマよ』福音館書店
@@ -2054,7 +2054,7 @@ TEN-22: 享年43歳・翔馬さん成長・直子さん作品継承
 - 星野道夫『旅をする木』文藝春秋, 1994
 - 星野道夫『アラスカ 光と風』六興出版, 1986
 - 星野道夫『クマよ』福音館書店「たくさんのふしぎ傑作集」
-- 小坂洋右・大山孝広『星野道夫 永遠のまなざし』山と渓谷社, 2006
+- 小坂洋右・大山卓悠『星野道夫 永遠のまなざし』山と渓谷社, 2006
 - 映画.com「地球交響曲 第三番」 https://eiga.com/movie/37789/
 - ABEMA TIMES「クマに襲われて亡くなるも…星野道夫さんが生前に銃を持たなかった理由」 https://times.abema.tv/articles/-/10065092
 - PRESIDENT Online 中野タツヤ「餌付けされたクマの怖ろしさ」2026-01-03 https://president.jp/articles/-/106990
