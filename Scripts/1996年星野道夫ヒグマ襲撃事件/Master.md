@@ -517,6 +517,38 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 
 ナレーター: 後悔の念は、一切なかったといいます。<!-- src: en.wikipedia Nick Jans証言 「Hoshino only smiled at warnings」 -->
 
+ナレーター: クルーたちの間には、言いようのない緊張が走っていました。
+
+【制作メモ】
+- 【キャラアニメーション】TBSスタッフたちが小屋の中で顔を見合わせ、不安げに窓の外をうかがう
+- キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese TV crew members inside a wooden cabin at night, exchanging uneasy glances, one peering anxiously out of a dark window. Tense worried expressions. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these three characters together.
+```
+
+ナレーター: 額に傷を持つ巨大なヒグマが、2度も、すぐそばに現れたのです。
+
+【制作メモ】
+- 【画面エフェクト】「7月27日」「8月6日」の2度の接近をカレンダー上に赤マークで示す
+
+ナレーター: それでも星野さんだけは、いつもと変わらず、静かにカメラの準備を続けていたといいます。<!-- src: en.wikipedia Nick Jans証言「Hoshino only smiled at warnings」 -->
+
+【制作メモ】
+- 【キャラアニメーション】CHAR-01 星野さんが穏やかな表情でカメラのレンズを布で拭いている
+- キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A 43-year-old Japanese male wildlife photographer sitting calmly, gently wiping a camera lens with a cloth, a serene untroubled smile on his face. White background. 1:1 aspect ratio. Generate 3 separate images.
+```
+
+ナレーター: その落ち着きが、長年の経験からくる確信だったのか。今となっては、誰にも分かりません。
+
+【制作メモ】
+- 【背景静止画】夜明け前のテント、内側からランタンの灯りがぼんやりと漏れている
+- 背景プロンプト（16:9）:
+```
+A quiet documentary still of a small tent at pre-dawn by a lake, a faint warm lantern glow leaking from inside, deep blue darkness all around, mist on the water. Calm yet foreboding. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
+```
+
 ## §7. 8月8日、午前4時
 
 ナレーター: そして、8月8日。
@@ -855,6 +887,49 @@ A documentary informational visual showing the English concept "Food Conditioned
 【制作メモ】
 - 【画面エフェクト】「人間の食べ物の味を覚えた個体」の説明テロップ
 
+ナレーター: ここで、よく似た言葉と、はっきり区別しておく必要があります。
+
+【制作メモ】
+- 【図解】「人慣れ（ハビチュエーション）」と「食物条件付け（フード・コンディションド）」を左右に分けて対比する図解
+
+ナレーター: ひとつは「人慣れ」。人間を見ても、ただ警戒しなくなった状態のことです。<!-- src: NPS / 野生動物管理 habituation定義 -->
+
+【制作メモ】
+- 【背景静止画】観光地の遊歩道のそばを、人を気にせず歩くヒグマの遠景。穏やかな日中
+- 背景プロンプト（16:9）:
+```
+A documentary still of a brown bear walking calmly along the edge of a national park boardwalk in daylight, ignoring the distant tourists, completely relaxed. Peaceful coexistence atmosphere. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No identifiable faces, only distant figures. Generate 3 separate images.
+```
+
+ナレーター: 人間を食べ物とは結びつけていない。これが、人慣れです。
+
+【制作メモ】
+- 【画面エフェクト】「人慣れ ＝ 人を無視するだけ」のキャプションを穏やかなトーンで表示
+
+ナレーター: しかし「食物条件付け」は、決定的に違います。
+
+【制作メモ】
+- 【画面エフェクト】「食物条件付け ＝ 人間そのものを“食料の合図”と学習」の赤いテロップ
+
+ナレーター: 人間そのものを、食べ物の合図として、自分から追い求めるようになるのです。<!-- src: NPS / en.wikipedia food conditioning -->
+
+【制作メモ】
+- 【図解】「人を避ける（正常）→ 人を無視する（人慣れ）→ 人を求める（食物条件付け）」の3段階を矢印で示す図解
+
+ナレーター: 野生動物の世界には、こんな言葉があります。<!-- src: 北米 野生動物管理の格言 "a fed bear is a dead bear" -->
+
+【制作メモ】
+- 【画面エフェクト】静かな間を置く演出。BGMを一拍切る
+
+ナレーター: 「餌を与えられたクマは、いずれ、自らの命を落とすクマになる」<!-- src: "a fed bear is a dead bear" 北米 野生動物管理の格言 -->
+
+【制作メモ】
+- 【背景静止画】夕暮れの森にたたずむ1頭のヒグマのシルエット、もの悲しい雰囲気
+- 背景プロンプト（16:9）:
+```
+A somber documentary still of a lone brown bear standing in a twilight forest, seen as a dark silhouette against the fading orange sky. Melancholic quiet mood. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
+```
+
 ナレーター: 食物条件付けされたヒグマは、本来の警戒心を完全に失います。
 
 【制作メモ】
@@ -869,6 +944,16 @@ A documentary still of a brown bear walking calmly along a forest trail in broad
 【制作メモ】
 - 【画面エフェクト】「警戒心喪失」「人間=食料」「逃げない」の3点が並ぶ説明テロップ
 
+ナレーター: 一度や二度、追い払うことができても、根本的な解決にはなりません。
+
+【制作メモ】
+- 【図解】「追い払う→戻る→追い払う→戻る」を繰り返す循環矢印図。中央に「一時的な撃退 ≠ 解決」
+
+ナレーター: 食べ物の記憶に縛られた個体は、必ず、また戻ってくるからです。<!-- src: en.wikipedia food conditioning 行動特性 -->
+
+【制作メモ】
+- 【画面エフェクト】カレンダー上で「7月27日 → 8月6日 → 8月8日」と、同じ個体が3度現れた流れを赤い矢印で示す
+
 ナレーター: ヒグマの記憶力は、犬の数倍とも言われます。
 
 【制作メモ】
@@ -876,6 +961,20 @@ A documentary still of a brown bear walking calmly along a forest trail in broad
 - 背景プロンプト（16:9）:
 ```
 A simple documentary visual aid showing a side-by-side comparison: a wild brown bear outline shape and a domestic dog outline shape, with stylized memory representation lines suggesting the bear's memory capacity is several times larger. Educational documentary aesthetic. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 3 separate images.
+```
+
+ナレーター: 加えて、その嗅覚は、人間のおよそ2000倍とも言われます。<!-- src: NPS Bear Nose 嗅覚~2100倍 -->
+
+【制作メモ】
+- 【図解】ヒグマの鼻と人間の鼻を並べ、「嗅覚 約2000倍 / 数キロ先の匂いを察知」の数値を示す図解
+
+ナレーター: 数キロ先にある食べ物の匂いさえ、嗅ぎ分けてしまうのです。<!-- src: NPS Bear Nose 約3km -->
+
+【制作メモ】
+- 【背景静止画】鼻先を高く上げ、空気の匂いを嗅ぐヒグマのクローズアップ
+- 背景プロンプト（16:9）:
+```
+A close-up documentary still of a brown bear lifting its nose high into the air, nostrils flared, intently scenting the wind. Detailed fur and muzzle. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 3 separate images.
 ```
 
 ナレーター: 一度「人間は食料」と覚えてしまうと、その記憶はなかなか消えません。
@@ -1276,6 +1375,20 @@ A symbolic split-frame documentary still: on the left, the wreckage of a small c
 
 ナレーター: その小さな判断の差が、ふたりの運命を、決定的に分けることになったのです。
 
+ナレーター: 米国人写真家が選んだのは、地面から高く離れた、見張り塔のような場所でした。<!-- src: ja.wikipedia 米国人写真家タワー避難・生存 -->
+
+【制作メモ】
+- 【背景静止画】高床の見張り塔のような構造物が、夜明け前の薄闇に浮かぶ
+- 背景プロンプト（16:9）:
+```
+A documentary still of an elevated wooden watchtower-like structure on stilts beside a lake at pre-dawn, raised high above the ground, dark blue twilight. A place of refuge. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
+```
+
+ナレーター: 食べ物を求めて執着する個体から、物理的に距離を取る。それが、ふたりの明暗を分けたのです。
+
+【制作メモ】
+- 【図解】「地上のテント（危険）」と「高所の塔（安全）」を高低差で対比する図解
+
 ## §18. 「地球交響曲第三番」―遺された言葉が、もう一度―
 
 ナレーター: 星野さんは、亡くなる直前まで、ある映画の出演を予定していました。<!-- src: ja.wikipedia 地球交響曲第三番 / eiga.com 1997-10-10公開 -->
@@ -1372,6 +1485,11 @@ A documentary close-up of a metal electric fence post with insulated wires exten
 
 【制作メモ】
 - 【画面エフェクト】「事件後 全周電気柵 設置」のテロップ
+
+ナレーター: ヒグマを「人間の食べ物」から遠ざけること。それが、最も確実な予防策です。<!-- src: 野生動物管理 原則 -->
+
+【制作メモ】
+- 【図解】「食べ物を管理する＝クマも人も守る」を双方向の矢印で示す図解
 
 ナレーター: そしてガイドを務めていたロシア人研究者は、その後カムチャッカで、人間とヒグマの関わりについての観察を続けます。270の事例が、記録として残されました。<!-- src: en.wikipedia Igor Revenko 270事例研究 -->
 
