@@ -111,7 +111,7 @@ A vast Alaskan tundra landscape in late summer, rolling treeless hills covered i
 
 ## §1. フック
 
-ナレーター: ある湖の畔に、世界で最もヒグマを愛した男がいました。
+ナレーター: 世界で最もヒグマを愛し、誰よりもヒグマを理解していたはずの写真家が、そのヒグマに、命を奪われました。
 
 【制作メモ】
 - 【AI動画】クリル湖の湖畔、夜明けの静寂、湖面にカムチャッカ火山群が映る空撮（5秒）
@@ -271,7 +271,7 @@ A 5-second slow-motion documentary video footage on a small helicopter flying lo
 【制作メモ】
 - 【背景静止画】BG-A クリル湖の湖畔・夜明けの静寂、湖面に火山群が映る
 
-ナレーター: 撮影拠点は、湖の南東岸・シユシュク岬にある、丸太造りのハンティングロッジ。実は、高床2階建ての、しっかりとした建物でした。<!-- src: en.wikipedia Cape Siyushk / travelaficionados Kuril Lake / note 秋田しげと 2023-02-04 「ロッジ・高床2階建て」 -->
+ナレーター: 撮影拠点は、湖の南東岸・シユシュク岬にある、丸太造りの狩猟小屋（しゅりょうごや）。実は、高床2階建ての、しっかりとした建物でした。<!-- src: en.wikipedia Cape Siyushk / travelaficionados Kuril Lake / note 秋田しげと 2023-02-04 「ロッジ・高床2階建て」 -->
 
 【制作メモ】
 - 【背景静止画】BG-B シユシュク岬のハンティング小屋
@@ -647,6 +647,54 @@ A 5-second slow-motion documentary video footage on a brown bear walking into a 
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Five characters standing in shocked stillness near the wreckage of a tent at dawn: three Japanese TV crew members and two Russian guides, all with shoulders slumped, faces pale and blank with horror. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these five characters together.
 ```
 
+## 拡散する「最後の写真」の正体
+
+ナレーター: ここで、ひとつ、触れておかなければならないことがあります。
+
+【制作メモ】
+- 【画面エフェクト】画面を一拍だけ暗転させ、「検証」の白抜きテロップを中央に表示。BGMを一段静める
+
+ナレーター: ネット上には、星野さんが最後に撮影した1枚として、テントに迫るヒグマの写真が広まっています。<!-- src: digimaga.jp お詫び記事 2016 / Snopes 偽写真検証 -->
+
+【制作メモ】
+- 【AI動画】スマートフォンの画面を指でスクロールし、「最後の写真」として拡散される一枚の画像が表示される様子（実際の写真は使わず、概念的に再現）。画面の光だけが暗い部屋に浮かぶ
+- 静止画プロンプト（16:9・フォトリアル）:
+```
+A close-up of a smartphone screen held in a dim room, a finger scrolling a social media feed, an old grainy photo of a tent with a blurry bear shape appearing on the screen. Only the screen glows. Photorealistic, shot on RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No identifiable text, no real faces. Generate 3 separate images.
+```
+
+ナレーター: しかし、この写真は、偽物です。
+
+【制作メモ】
+- 【画面エフェクト】「偽物」の赤いテロップを画面中央に強く表示し、直後に一拍の静寂を置く
+
+ナレーター: 襲われたのは午前4時。あたりはまだ薄暗く、写真のような明るさではありませんでした。<!-- src: digimaga.jp お詫び記事 2016 / ja.wikipedia 1996-08-08 午前4時頃 -->
+
+【制作メモ】
+- 【AI動画】夜明け前のクリル湖畔。まだ薄暗く、テントと小屋の輪郭がかろうじて見える程度の青い闇
+- 静止画プロンプト（16:9・フォトリアル）:
+```
+A pre-dawn scene at Kuril Lake shore in deep blue darkness, around 4 AM. A small tent and a wooden cabin are barely visible as dark silhouettes. The sky is still dim with faint pre-dawn light. Cold quiet atmosphere. Photorealistic, shot on RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
+```
+
+ナレーター: テントは一撃で引き裂かれ、突然の襲撃に、カメラを構える時間など、あるはずもありません。<!-- src: en.wikipedia "a single blow through the canvas" / digimaga.jp お詫び記事 2016 -->
+
+【制作メモ】
+- 【AI動画】夜明けの草地に、支柱が折れ布地が裂けたテントだけが残る。生々しい描写は避け、無人の現場を引きで
+- 静止画プロンプト（16:9・フォトリアル）:
+```
+A wide documentary still of a collapsed and torn small tent on dawn grassland near a lake, broken poles and shredded fabric, no people present, no blood, no graphic content. Quiet aftermath atmosphere. Photorealistic, shot on RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
+```
+
+ナレーター: 美しくも悲しい1枚として広まった写真は、後に、まったくの別物だと判明しています。<!-- src: digimaga.jp お詫び記事 2016 / Snopes 偽写真検証 -->
+
+【制作メモ】
+- 【AI動画】「訂正とお詫び」と書かれた記事の画面が静かに表示され、拡散された画像に×印が重なる
+- 静止画プロンプト（16:9・フォトリアル）:
+```
+A computer screen displaying a plain web article with a correction-and-apology layout in Japanese style, a small thumbnail image marked with a red X over it. Dim room, screen glow only. Photorealistic, shot on RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No identifiable real text, no real faces. Generate 3 separate images.
+```
+
 ## §9. ヘリコプターと、解剖
 
 ナレーター: その日のうちに、武装したハンターとシニア研究者を乗せたヘリコプターが、現場に飛来します。<!-- src: en.wikipedia Mosolov senior researcher -->
@@ -712,7 +760,7 @@ A documentary still of an open Russian field veterinary notebook on a wooden tab
 【制作メモ】
 - 【画面エフェクト】「なぜ？」の白抜きテロップを画面中央にポップ表示
 
-ナレーター: 後の検証で、衝撃的な事実が明らかになります。
+ナレーター: 後の検証で、見過ごせない事実が明らかになります。
 
 【制作メモ】
 - 【背景静止画】古いカメラとフィルム、現場周辺の調査メモが机に並ぶ静物
@@ -739,7 +787,7 @@ A 5-second slow-motion documentary video footage on an anonymous silhouetted hum
 【制作メモ】
 - 【画面エフェクト】「観光・撮影目的の餌付け」のテロップ
 
-ナレーター: ロシアの野生動物写真家、イーゴリ・シュピレノクさんは、こう証言しています。<!-- src: en.wikipedia Igor Shpilenok証言 -->
+ナレーター: ロシアを代表する野生動物写真家、イーゴリ・シュピレノクさんは、こう証言しています。<!-- src: en.wikipedia Igor Shpilenok証言 -->
 
 【制作メモ】
 - 【画面エフェクト】引用テロップ「無責任な写真家や映像作家たちによって、餌付けされていた」
@@ -789,7 +837,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ナレーター: 飢えと、人間の食べ物の記憶。その組み合わせが、ヒグマの攻撃性を、さらに極端な方向へ追い込んだ可能性も指摘されています。<!-- src: note 秋田しげと 2023-02-04 -->
 
 【制作メモ】
-- 【画面エフェクト】「飢餓 + 人間食物の記憶 = 攻撃性増大」の説明テロップ
+- 【図解】因果タイムライン（横スクロールで段階を順に提示）: ①観光・撮影目的の餌付け → ②TBS到着の直前に餌付けが中止 → ③人間の食べ物の記憶と、消えた餌 → ④飢えと記憶の結合 → ⑤警戒心の喪失と攻撃性の増大。各段階を矢印で連結し、最後の⑤を赤で強調する
 
 ## §11. Food Conditioned ―食物条件付け―
 
@@ -1173,8 +1221,6 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 
 ナレーター: その大切な時間が、ある朝、永遠に途切れてしまったのです。
 
-<!-- PART: TEN-KETSU -->
-
 ## §17. 米国人写真家との、運命の分岐
 
 ナレーター: ここで、思い出してほしいことがあります。
@@ -1230,7 +1276,7 @@ A symbolic split-frame documentary still: on the left, the wreckage of a small c
 
 ナレーター: その小さな判断の差が、ふたりの運命を、決定的に分けることになったのです。
 
-## §18. 「地球交響曲第三番」―死後に届いた言葉―
+## §18. 「地球交響曲第三番」―遺された言葉が、もう一度―
 
 ナレーター: 星野さんは、亡くなる直前まで、ある映画の出演を予定していました。<!-- src: ja.wikipedia 地球交響曲第三番 / eiga.com 1997-10-10公開 -->
 
@@ -1300,7 +1346,7 @@ A nostalgic documentary still of a quiet 1990s Japanese cinema interior, rows of
 【制作メモ】
 - 【画面エフェクト】「『地球交響曲 第三番』1997年公開 全国896箇所 約33万人動員」テロップ
 
-ナレーター: 死後、星野さんの言葉が、映画という形で、もう一度、人々のもとへと届いたのです。<!-- src: eiga.com 動員数 -->
+ナレーター: 亡くなったあとも、星野さんの言葉は、映画という形で、もう一度、人々のもとへと届いたのです。<!-- src: eiga.com 動員数 -->
 
 ## §19. 事件が変えた、クリル湖
 
@@ -1396,6 +1442,30 @@ A still life of a documentary film promotional poster lying on a wooden desk, th
 【制作メモ】
 - 【画面エフェクト】共通点「人間に慣らされた個体に襲われた」のテロップ
 
+ナレーター: さらに、星野さんと同じカムチャッカ半島でも、よく似た出来事が起きています。<!-- src: en.wikipedia Vitaly Nikolayenko / outsideonline A Message In Blood -->
+
+【制作メモ】
+- 【Google Earth】カムチャッカ半島を俯瞰し、南端のクリル湖と、東部のクロノツキー自然保護区の2点を光る点で示す
+- 座標: `54°45'00"N 161°20'00"E`（クロノツキー自然保護区周辺）→ クリル湖 `51°27'00"N 157°06'00"E` との2点間にラインを引く
+
+ナレーター: 四半世紀にわたってヒグマを観察し、撮り続けてきた研究者、ヴィタリー・ニコラエンコさん。<!-- src: en.wikipedia Vitaly Nikolayenko 25 years Kronotsky -->
+
+【制作メモ】
+- 【AI動画】雪のカムチャッカの原野を、防寒着の研究者がひとり、カメラを手に歩いていく後ろ姿（遠景・シルエット）
+- 静止画プロンプト（16:9・フォトリアル）:
+```
+A wide documentary still of a lone researcher in heavy winter clothing walking across a snowy Kamchatka wilderness, seen from far behind as a small silhouette, carrying a camera. Vast cold landscape, conifer forest and distant volcano. Photorealistic, shot on RED camera, documentary style. 16:9 aspect ratio. No identifiable face, only a distant figure. Empty landscape only. Generate 3 separate images.
+```
+
+ナレーター: 星野さんの7年後。効かなかったクマ撃退スプレーの空き缶を残して、ヒグマに命を奪われました。<!-- src: en.wikipedia Vitaly Nikolayenko 2003 empty pepper spray can / outsideonline -->
+
+【制作メモ】
+- 【AI動画】雪の上に転がる、空になったクマ撃退スプレーの缶のクローズアップ。無人の静かな現場
+- 静止画プロンプト（16:9・フォトリアル）:
+```
+A close-up documentary still of an empty bear pepper-spray canister lying in the snow near a remote log hut in Kamchatka winter, a single bear pawprint visible in the snow nearby. No people, no blood, no graphic content. Cold silent aftermath. Photorealistic, shot on RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
+```
+
 ナレーター: 餌付けは、ヒグマだけの問題ではなく、最後には人間の命にも、跳ね返ってくる。
 
 【制作メモ】
@@ -1410,31 +1480,33 @@ A still life of a documentary film promotional poster lying on a wooden desk, th
 A still life of a Japanese hardcover translation of a scientific bear research book on a wooden desk, the cover suggesting serious wildlife biology study, with a bookmark in the middle of the pages. Soft warm lamp light. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
 ```
 
-ナレーター: ヒグマ研究の世界的権威、ロシアのスティーブン・ヘレロ博士は、星野さんの事件について、こう記しています。<!-- src: スティーブン・ヘレロ『ベア・アタックス』日本語版補足解説 / 1lGLCHSapVI 競合動画の引用 -->
+ナレーター: ヒグマ研究の世界的権威、カナダ・カルガリー大学名誉教授のスティーブン・ヘレロ博士は、星野さんの事件について、こう記しています。<!-- src: スティーブン・ヘレロ『ベア・アタックス』日本語版補足解説 / 1lGLCHSapVI 競合動画の引用 -->
 
 【制作メモ】
-- 【画面エフェクト】引用テロップ「星野道夫の悲惨な死は、避けることのできた死だった」を強調表示
+- 【画面エフェクト】引用テロップ「星野道夫の身に起きたことは、避けることのできた悲劇だった」を強調表示
 
-ナレーター: 「星野道夫の悲惨な死は、避けることのできた死だった」
+ナレーター: 「星野道夫の身に起きたことは、避けることのできた悲劇だった」
 
 【制作メモ】
 - 【画面エフェクト】引用の余韻を残す静寂演出。BGMを一拍切る
 
 ナレーター: 餌付けさえ無ければ、警告が共有されていれば、事件は防げた。世界の専門家が、はっきりとそう結論づけているのです。
 
-## §21. 教訓
+<!-- PART: TEN-KETSU -->
 
-ナレーター: 星野道夫さんが命を落としたカムチャッカの事件から、3つの教訓を持ち帰ることができます。
+## §21. カムチャッカが残したもの
+
+ナレーター: この事件には、見落としてはならない点が、3つあります。
 
 【制作メモ】
-- 【画面エフェクト】「教訓」のタイトルテロップ、白文字でゆっくり表示
+- 【画面エフェクト】「カムチャッカが残したもの」のタイトルテロップ、白文字でゆっくり表示
 
 ナレーター: 1つ目。人間に餌付けされたヒグマは、もう、野生のヒグマではない、ということ。
 
 【制作メモ】
 - 【画面エフェクト】「教訓① 餌付けされたヒグマは別の生き物」テロップ
 
-ナレーター: 食物条件付けされた個体は、警戒心も、本能的な距離感も失っています。経験豊富な人間でさえ、対処できないのです。
+ナレーター: 食物条件付けされた個体は、警戒心も距離感も失います。経験豊富な人間でさえ、対処できません。
 
 【制作メモ】
 - 【背景静止画】森の中で人間を見ても全く動じないヒグマ、堂々と歩く姿（再使用または別アングル）
@@ -1448,14 +1520,10 @@ A documentary still of a brown bear walking with complete unconcern across a for
 【制作メモ】
 - 【画面エフェクト】「教訓② 近づきすぎない」テロップ
 
-ナレーター: 観光のため、撮影のために、人間が動物を近距離まで呼び寄せると、その動物だけでなく、後から来る人間の命まで、危険に晒すことになります。
+ナレーター: 撮影のために動物を近距離まで呼び寄せれば、その動物も、後から来る人間の命も、危険に晒します。
 
 【制作メモ】
-- 【背景静止画】望遠レンズで遠くから動物を撮影する適切な距離を示すイラスト風背景
-- 背景プロンプト（16:9）:
-```
-A documentary still of a long telephoto camera on a tripod set up at a safe distance from a wilderness area, the camera pointed across a meadow toward a distant treeline where wildlife might appear. Educational respectful photography setup. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
-```
+- 【図解】適切な撮影距離のイラスト: 動物と人の間に「安全な距離」を矢印で示し、近づきすぎが動物と人間の双方を危険にすることを図で示す
 
 ナレーター: 3つ目。警告を、受け取ること。
 
@@ -1465,18 +1533,12 @@ A documentary still of a long telephoto camera on a tripod set up at a safe dist
 ナレーター: 7月27日の夜、星野さんは確かに、警告を受け取っていました。
 
 【制作メモ】
-- 【背景静止画】7月27日の夜の警告を象徴する、影に浮かぶ警告の手のシルエット
-- 背景プロンプト（16:9）:
-```
-A symbolic documentary still of a single hand silhouetted against a moonlit night sky, the hand raised in a warning gesture toward the viewer. Quiet ominous atmosphere. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No identifiable people, only silhouette. Empty landscape only. Generate 3 separate images.
-```
+- 【画面エフェクト】夜の静かな背景に「7月27日 警告は、確かに届いていた」のテロップをゆっくり重ねる
 
-ナレーター: しかし、長年の経験と確信が、その警告を「特別な事態ではない」と判断させてしまいます。
+ナレーター: しかし、長年の経験と確信が、その警告をかき消してしまう。経験が深い人ほど、立ち止まる勇気が必要なのかもしれません。
 
 【制作メモ】
 - 【画面エフェクト】「経験と確信が、警告を打ち消す」のテロップ
-
-ナレーター: 経験が深い人ほど、警告を受け取った時に、立ち止まる勇気が必要なのかもしれません。
 
 ## §22. エンディング
 
