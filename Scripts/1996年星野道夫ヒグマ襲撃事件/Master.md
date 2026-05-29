@@ -388,6 +388,26 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: A 40-something Russian male bear guide spraying a bear repellent canister into the night, the orange mist dispersing harmlessly in the cold air, his face tense and determined. White background. 1:1 aspect ratio. Generate 3 separate images.
 ```
 
+ナレーター: ここで、クマ除けスプレーについて、簡単に説明します。
+
+【制作メモ】
+- 【図解】クマ除けスプレーの構造図。唐辛子（カプサイシン）のアイコンと噴射の様子
+
+ナレーター: ヒグマ用のスプレーは、唐辛子の強烈な辛味成分を、霧状に噴射する道具です。<!-- src: ベアスプレー カプサイシン -->
+
+【制作メモ】
+- 【画面エフェクト】「主成分：カプサイシン（唐辛子の辛味）」のテロップ
+
+ナレーター: ただし効果があるのは、至近距離で、ヒグマの目や鼻に直接命中したときだけ。
+
+【制作メモ】
+- 【図解】有効距離「数メートル〜約10メートル」を矢印で示し、それより遠いと霧が届かないことを図示
+
+ナレーター: この夜は距離が遠すぎて、その条件を、満たせなかったのです。
+
+【制作メモ】
+- 【画面エフェクト】「距離が遠い → 届かない」の×印テロップ
+
 ナレーター: そしてガイドは、星野さんに小屋で寝るよう強く説得します。
 
 【制作メモ】
@@ -455,6 +475,30 @@ A still life of an old hardcover Japanese book on a wooden desk, gentle window l
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: Hoshino lying inside a sleeping bag in a tent, eyes peacefully closed, a faint calm smile on his face. Gentle warm tent-light atmosphere. White background. 1:1 aspect ratio. Generate 3 separate images.
 ```
+
+ナレーター: サケが遡上する季節、ヒグマは栄養豊富なサケを大量に食べ、冬眠に備えて脂肪を蓄えます。<!-- src: ヒグマ生態 サケ遡上期 hyperphagia -->
+
+【制作メモ】
+- 【背景静止画】川でサケを捕らえ、満たされた様子のヒグマ。豊かな自然
+- 背景プロンプト（16:9）:
+```
+A documentary still of a healthy brown bear catching a salmon in a shallow river during the salmon run, water splashing, abundant fish visible. Rich natural abundance. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 3 separate images.
+```
+
+ナレーター: わざわざ危険を冒してまで、人間を襲う理由は、本来ありません。
+
+【制作メモ】
+- 【画面エフェクト】「サケが豊富 ＝ 人間を襲う必要なし」の図解テロップ
+
+ナレーター: 星野さんの確信は、科学的にも、決して間違ってはいませんでした。
+
+【制作メモ】
+- 【画面エフェクト】「星野さんの判断は“正しかった”」のテロップを一度提示する
+
+ナレーター: ただし、それは「普通の年の、普通のヒグマ」であれば、の話です。
+
+【制作メモ】
+- 【画面エフェクト】「普通の年の、普通のヒグマであれば」の一文を残し、不穏なBGMへ転調
 
 ナレーター: そしてその信念のまま、星野さんはテントに戻って眠りにつきます。
 
@@ -623,6 +667,43 @@ A documentary still from the perspective of a cabin doorway looking out at dawn,
 A 5-second slow-motion documentary video footage on the view from a cabin doorway at dawn: a massive brown bear crouched over a collapsed tent on the grass, then slowly raising its head and looking directly toward the camera. The frame holds steady. Photorealistic, RED camera, slow-motion documentary cinematography.
 ```
 
+ナレーター: それは、一瞬の出来事でした。
+
+【制作メモ】
+- 【画面エフェクト】時間が止まったような静止演出
+
+ナレーター: 夜明け前の、青い薄闇。鳥のさえずりも、まだ始まっていません。
+
+【制作メモ】
+- 【背景静止画】夜明け前、青い薄闇に沈むクリル湖畔とテント。静寂
+- 背景プロンプト（16:9）:
+```
+A pre-dawn documentary still of Kuril Lake shore in deep blue twilight silence, a small tent and cabin barely visible, mist on the still water, no movement, utter stillness before dawn. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
+```
+
+ナレーター: その静寂を引き裂いたのは、テントの布が裂ける、鋭い音でした。
+
+【制作メモ】
+- 【AI動画】静かな夜明けの湖畔に、布が裂ける音だけが響く。直接的描写は避け、テントの影と音で表現
+- 静止画プロンプト（16:9・フォトリアル）:
+```
+A documentary still of a tent silhouette at pre-dawn the instant something violent happens, captured in suggestion only through shadow and motion blur, no graphic content. Tense and sudden. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 3 separate images.
+```
+
+ナレーター: 小屋から飛び出したスタッフたちは、その光景に、息をのみます。
+
+【制作メモ】
+- 【キャラアニメーション】TBSスタッフたちが小屋の戸口で立ちすくみ、目を見開く
+- キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese TV crew members frozen in the doorway of a wooden cabin at dawn, eyes wide in shock, unable to move. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these three characters together.
+```
+
+ナレーター: 助けに入ろうにも、近づくことすら、できませんでした。
+
+【制作メモ】
+- 【画面エフェクト】「為す術なし」の緊迫感を字幕なしの間で表現
+
 ## §8. クルーの叫び、ガイドのシャベル
 
 ナレーター: スタッフは「ベアー！ベアー！」と叫び続けます。
@@ -769,6 +850,25 @@ A documentary still of a wild brown bear running away into a dense conifer fores
 【制作メモ】
 - 【画面エフェクト】「ヘリに突進＝極めて異常な行動」を赤字で強調表示
 
+ナレーター: 野生のヒグマにとって、ヘリコプターの轟音と巨大な影は、本能的な恐怖の対象です。
+
+【制作メモ】
+- 【画面エフェクト】「通常のヒグマ＝ヘリの音で逃走」の図解テロップ
+
+ナレーター: それを恐れず、逆に向かっていく。これは、恐怖という感情そのものが、失われていた証拠でした。<!-- src: en.wikipedia atypical aggressive behavior -->
+
+【制作メモ】
+- 【画面エフェクト】「恐怖の喪失＝食物条件付けの典型」を赤テロップで強調
+
+ナレーター: 餌付けによって、警戒心が、根こそぎ壊れていたのです。
+
+【制作メモ】
+- 【背景静止画】上空のヘリコプターを見上げて立つ、動じない巨大なヒグマのシルエット
+- 背景プロンプト（16:9）:
+```
+A dramatic documentary still of a massive brown bear standing its ground on a forest clearing, looking up defiantly at a helicopter overhead, showing no fear. Tense atmosphere. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 3 separate images.
+```
+
 ナレーター: ヘリコプターから、ヒグマは射殺されました。
 
 【制作メモ】
@@ -837,6 +937,16 @@ A documentary still of distant tourist photographers at a Kamchatka lake shore, 
 
 【制作メモ】
 - 【画面エフェクト】「観光・撮影目的の餌付け」のテロップを画面下に小さく表示
+
+ナレーター: ここには、深い皮肉があります。
+
+【制作メモ】
+- 【画面エフェクト】「皮肉」を象徴する静かな間の演出
+
+ナレーター: 誰よりも距離を守り、ヒグマを敬っていた写真家が、距離を壊した者たちの行いによって、命を奪われた。
+
+【制作メモ】
+- 【画面エフェクト】「距離を守った者」と「距離を壊した者」を対比するテロップ
 
 ナレーター: しかしその行為は、ヒグマの本能を、決定的に変えてしまっていました。
 
@@ -1145,6 +1255,34 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 
 ナレーター: 自然を尊重するからこそ、自分は弱い立場でいる。それが、星野さんの哲学でした。
+
+【制作メモ】
+- 【画面エフェクト】「力を持たないという選択」のテロップ
+
+ナレーター: 銃という「力」を手放すことで、星野さんは自然と対等であろうとしました。
+
+【制作メモ】
+- 【キャラアニメーション】CHAR-01 星野さんがカメラだけを手に、広大な原野に静かに立つ
+- キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A 43-year-old Japanese male wildlife photographer standing quietly with only a camera in hand, facing a vast wilderness, calm and humble posture. White background. 1:1 aspect ratio. Generate 3 separate images.
+```
+
+ナレーター: しかし、その哲学が通用するのは、相手が「野生のヒグマ」である限りでした。
+
+【制作メモ】
+- 【画面エフェクト】「野生のヒグマ ＝ 哲学が通じる相手」のテロップ
+
+ナレーター: 人間の手で変えられてしまった1頭の前では、どんな哲学も、無力だったのです。
+
+【制作メモ】
+- 【背景静止画】夕暮れの原野に置かれた一台のカメラと、その奥に滲むヒグマの影
+- 背景プロンプト（16:9）:
+```
+A symbolic documentary still of a single camera resting on tundra grass at dusk, with the faint blurred shadow of a large bear in the distant background. Quiet, foreboding, thematic. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
+```
+
+
 
 ## §14. アラスカへ、18年の旅
 
@@ -1499,6 +1637,35 @@ A documentary close-up of a metal electric fence post with insulated wires exten
 ```
 A still life of a tall stack of weathered research field notebooks on a wooden desk, the top notebook open showing handwritten Russian and English observation notes. Warm scholarly lamp light. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
 ```
+
+ナレーター: 人間とヒグマが、どこで、なぜぶつかるのか。
+
+【制作メモ】
+- 【図解】カムチャッカの地図上に、人とヒグマの遭遇地点を点で示し、傾向を可視化する図解
+
+ナレーター: その一つ一つの記録が、後の事故を防ぐための、貴重なデータとなりました。
+
+【制作メモ】
+- 【背景静止画】分厚い観察記録のノートと、ヒグマの行動を記したフィールドメモ
+- 背景プロンプト（16:9）:
+```
+A still life of thick handwritten field research notebooks and bear behavior observation logs stacked on a wooden desk, a few photographs of bears tucked between pages. Warm lamp light, dedicated research atmosphere. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
+```
+
+ナレーター: 餌付けをやめ、ゴミや食料を遠ざければ、ヒグマは人を襲う個体にはなりません。
+
+【制作メモ】
+- 【画面エフェクト】「餌を断つ＝ヒグマを変えない」のテロップ
+
+ナレーター: 当たり前のようでいて、多くの犠牲と引き換えに、ようやく分かったことでした。
+
+【制作メモ】
+- 【画面エフェクト】静かな余韻の演出
+
+ナレーター: ヒグマを変えてしまうのも、ヒグマから人を守るのも、結局は、人間の側の行い次第なのです。
+
+【制作メモ】
+- 【図解】「人間の行い」を中心に「ヒグマを変える／人を守る」が両方向に伸びる図解
 
 ナレーター: 星野さんの命が、その後の研究と安全対策に、確かな道を残したのです。
 
