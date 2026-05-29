@@ -237,7 +237,259 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 
 <!-- PART: SHO -->
 
-## §3. 7月25日、カムチャッカ到着
+## §3. 銃を持たないという哲学
+
+ナレーター: カムチャッカでの撮影を追う前に、星野道夫さんという人物について、もう少し深く知っておく必要があります。
+
+【制作メモ】
+- 【キャラアニメーション】CHAR-01 星野さんがアラスカの原野で1人カメラを構える、夕暮れの後ろ姿
+- キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: Hoshino seen from behind, kneeling on grassy tundra at sunset, holding his camera ready, gentle wind in his hair. Long peaceful contemplative silhouette. White background. 1:1 aspect ratio. Generate 3 separate images.
+```
+
+ナレーター: 星野さんは、生涯、撮影に銃を持っていきませんでした。<!-- src: times.abema.tv 星野道夫銃を持たない理由 / モデルプレス -->
+
+【制作メモ】
+- 【背景静止画】机の上に置かれた古いカメラとフィールドノート、その横に空っぽの銃ホルスター
+- 背景プロンプト（16:9）:
+```
+A still life on a wooden desk: an old worn 35mm camera, a leather-bound field notebook, and beside them an empty leather rifle holster lying flat. Soft natural window light, intimate documentary mood. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
+```
+
+ナレーター: その理由について、星野さんはこう語っていたとされます。<!-- src: times.abema.tv 星野道夫銃を持たない理由 -->
+
+【制作メモ】
+- 【画面エフェクト】引用テロップ「銃を持っていくということは、自然に対してどこか変な大胆さが出てきて、あんまり考えなくなる」
+
+ナレーター: 「銃を持っていくということは、自然に対してどこか変な大胆さが出てきて、あんまり考えなくなる」
+
+【制作メモ】
+- 【画面エフェクト】引用テロップ続き「銃を持っていない時は、自然に対して少し謙虚になれる」
+
+ナレーター: 「銃を持っていない時は、自然に対して少し謙虚になれる」
+
+【制作メモ】
+- 【背景静止画】広大なアラスカの原野、ひとつの足跡が地面に静かに残されている
+- 背景プロンプト（16:9）:
+```
+A poetic documentary still of vast Alaska tundra at dusk, a single boot print visible in the soft earth, the surrounding wilderness stretching infinitely toward the horizon. Reverent quiet atmosphere. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
+```
+
+ナレーター: 銃を持たないことが、自然と向き合う姿勢そのものでした。
+
+【制作メモ】
+- 【キャラアニメーション】CHAR-01 星野さんが穏やかに微笑む正面ショット
+- キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: Hoshino with a quiet gentle smile, looking directly at the viewer, his expression filled with calm conviction. White background. 1:1 aspect ratio. Generate 3 separate images.
+```
+
+ナレーター: 自然を尊重するからこそ、自分は弱い立場でいる。それが、星野さんの哲学でした。
+
+【制作メモ】
+- 【画面エフェクト】「力を持たないという選択」のテロップ
+
+ナレーター: 銃という「力」を手放すことで、星野さんは自然と対等であろうとしました。
+
+【制作メモ】
+- 【キャラアニメーション】CHAR-01 星野さんがカメラだけを手に、広大な原野に静かに立つ
+- キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A 43-year-old Japanese male wildlife photographer standing quietly with only a camera in hand, facing a vast wilderness, calm and humble posture. White background. 1:1 aspect ratio. Generate 3 separate images.
+```
+
+ナレーター: しかし、その哲学が通用するのは、相手が「野生のヒグマ」である限りでした。
+
+【制作メモ】
+- 【画面エフェクト】「野生のヒグマ ＝ 哲学が通じる相手」のテロップ
+
+ナレーター: 人間の手で変えられてしまった1頭の前では、どんな哲学も、無力だったのです。
+
+【制作メモ】
+- 【背景静止画】夕暮れの原野に置かれた一台のカメラと、その奥に滲むヒグマの影
+- 背景プロンプト（16:9）:
+```
+A symbolic documentary still of a single camera resting on tundra grass at dusk, with the faint blurred shadow of a large bear in the distant background. Quiet, foreboding, thematic. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
+```
+
+
+
+## §4. アラスカへ、18年の旅
+
+ナレーター: 星野さんは、千葉県市川市の出身です。<!-- src: ja.wikipedia 1952-09-27 千葉県市川市南八幡 -->
+
+【制作メモ】
+- 【背景静止画】1970年代の千葉県市川市の住宅地、レトロな雰囲気
+- 背景プロンプト（16:9）:
+```
+A nostalgic documentary still of a quiet residential street in Ichikawa, Chiba Prefecture, Japan in the 1970s. Modest wooden houses, narrow side streets, telephone poles, soft afternoon light. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty street only. Generate 3 separate images.
+```
+
+ナレーター: 19歳の時、神田の古本屋でナショナルジオグラフィックを手に取ります。<!-- src: nippon.com James Singleton 2016-08-08 / ja.wikipedia -->
+
+【制作メモ】
+- 【背景静止画】古本屋の棚に並ぶ古いナショナルジオグラフィック、1冊が手前で開かれている
+- 背景プロンプト（16:9）:
+```
+A still life of a row of old National Geographic magazines on a used bookstore shelf in 1970s Tokyo, one magazine open in the foreground showing a photograph of Alaska. Warm dim lamp light. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
+```
+
+ナレーター: その雑誌に載っていた1枚の写真に、星野さんは強く惹きつけられます。アラスカ・シシュマレフ村の写真でした。
+
+【制作メモ】
+- 【背景静止画】1970年代のアラスカ・シシュマレフ村の風景、極寒の海岸線
+- 背景プロンプト（16:9）:
+```
+A documentary still of a tiny remote Iñupiaq village on a frozen Alaska coastline in the 1970s, simple wooden houses scattered on bare snow-covered ground, the cold sea ice extending to the horizon under a pale gray sky. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
+```
+
+ナレーター: 星野さんは思い切って、村の村長宛に1通の手紙を書きます。<!-- src: nippon.com / ja.wikipedia -->
+
+【制作メモ】
+- 【背景静止画】古い手紙とインク、便箋に英文が書かれている
+- 背景プロンプト（16:9）:
+```
+A still life of a single handwritten English letter on simple Japanese stationery, addressed to "Mayor, Shishmaref, Alaska", with a fountain pen lying beside it. Warm desk lamp light. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
+```
+
+ナレーター: 数ヶ月後、返事が届きます。そして星野さんは、ひとりでシシュマレフ村に3ヶ月滞在することになりました。
+
+【制作メモ】
+- 【AI動画】若い星野さん（19歳）がシシュマレフ村の小さな飛行場に降り立つ、後ろ姿
+- 静止画プロンプト（16:9・フォトリアル）:
+```
+A documentary still of a young Japanese man arriving at a tiny Alaskan bush airport in the 1970s, viewed from behind, carrying a heavy backpack and a camera bag. A small single-engine plane behind him on a snow-covered runway. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+```
+→ **Google Flow動画プロンプト:**
+```
+A 5-second slow-motion documentary video footage on a young Japanese man with a backpack walking away from a small bush plane onto a snowy Alaskan airstrip in the 1970s, viewed from behind. Photorealistic, RED camera, slow-motion documentary cinematography.
+```
+
+ナレーター: 慶應義塾大学を卒業した後、動物写真家・田中光常さんに2年師事します。<!-- src: ja.wikipedia 田中光常師事 -->
+
+【制作メモ】
+- 【背景静止画】古い暗室、現像液とフィルムが並ぶ、写真家修行の雰囲気
+- 背景プロンプト（16:9）:
+```
+A nostalgic documentary still of an old film darkroom in Tokyo in the 1970s: an enlarger, trays of developer chemicals, photographic paper drying on a line, a single red safelight glowing. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
+```
+
+ナレーター: そして1978年、アラスカ大学フェアバンクス校に入学。そのままアラスカに移り住み、18年間にわたって、極北の自然を撮り続けることになります。<!-- src: ja.wikipedia 1978年アラスカ大学入学 / nippon.com -->
+
+【制作メモ】
+- 【背景静止画】BG-C 星野道夫さんのアラスカの丸太小屋
+
+## §5. 『旅をする木』『クマよ』
+
+ナレーター: 星野さんの活動の中で、特に多くの読者の心に残ったのが、エッセイ『旅をする木』です。<!-- src: 星野道夫『旅をする木』文藝春秋 1994 -->
+
+【制作メモ】
+- 【背景静止画】『旅をする木』風の単行本が机に置かれている、静かな構図
+- 背景プロンプト（16:9）:
+```
+A still life of a single Japanese essay collection paperback book on a wooden desk, the cover suggesting tundra and Alaska wilderness. Beside it a steaming cup of coffee and a pen. Soft window light. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
+```
+
+ナレーター: その中に、こんな一節があります。<!-- src: 星野道夫『旅をする木』文藝春秋 1994 -->
+
+【制作メモ】
+- 【画面エフェクト】引用テロップ「自然はいつも、強さの裏に脆さを秘めています。そしてぼくが惹かれるのは、自然や生命のもつその脆さの方です」
+
+ナレーター: 「自然はいつも、強さの裏に脆さを秘めています。そしてぼくが惹かれるのは、自然や生命のもつ、その脆さの方です」
+
+【制作メモ】
+- 【背景静止画】アラスカの脆く美しい風景、薄氷が張った静かな水面に朝の光が差す
+- 背景プロンプト（16:9）:
+```
+A delicate documentary still of thin ice forming on a still pond in the Alaskan tundra at dawn, the first light catching the ice patterns. Quiet fragile beauty. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
+```
+
+ナレーター: そしてもう一冊、福音館書店から出された絵本『クマよ』。<!-- src: 星野道夫『クマよ』福音館書店 たくさんのふしぎ傑作集 -->
+
+【制作メモ】
+- 【背景静止画】『クマよ』の絵本が机に置かれている、優しい雰囲気の構図
+- 背景プロンプト（16:9）:
+```
+A still life of a Japanese children's picture book about bears on a soft cloth, the cover suggesting a gentle illustration of a brown bear in the wild. Warm afternoon light. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
+```
+
+ナレーター: その絵本の中で、星野さんはヒグマに向かって、こう語りかけています。<!-- src: 星野道夫『クマよ』福音館書店 -->
+
+【制作メモ】
+- 【画面エフェクト】引用テロップ「おまえのからだにふれてみたいけれども おれとおまえとは、はなれている はるかな星のように」
+
+ナレーター: 「おまえのからだに、ふれてみたいけれども」
+
+【制作メモ】
+- 【画面エフェクト】引用テロップ続き
+
+ナレーター: 「おれとおまえとは、はなれている。はるかな星のように」
+
+【制作メモ】
+- 【背景静止画】夜空に瞬く無数の星、その下に1頭のヒグマの遠いシルエット
+- 背景プロンプト（16:9）:
+```
+A poetic documentary still of a starry night sky over a Kamchatka or Alaska wilderness, the distant outline of a single brown bear visible far below on the horizon. Vast peaceful loneliness. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 3 separate images.
+```
+
+ナレーター: 触れたいけれど、触れてはいけない。星野さんは、ヒグマと人間との間にある、決して埋まらない距離を、深く理解していた人でした。
+
+## §6. 妻・直子と、1歳11ヶ月の息子・翔馬
+
+ナレーター: 星野さんは、事件の3年前にあたる1993年、お見合いで結婚します。<!-- src: ja.wikipedia 1993年 萩谷直子と結婚 / 1101.com -->
+
+【制作メモ】
+- 【キャラアニメーション】CHAR-01 星野さんとCHAR-05 直子さんの2人がアラスカの自然の中で穏やかに並ぶ
+- キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two characters together. CHAR-01: Hoshino in a khaki vest. CHAR-05: A late 30s Japanese woman in a soft beige cardigan and earth-tone trousers, slim build, shoulder-length black hair. Both standing close, gentle smiles, soft warm light around them. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these two characters together.
+```
+
+ナレーター: 妻・直子（なおこ）さんとの間には、1994年に長男・翔馬（しょうま）さんが生まれます。<!-- src: ja.wikipedia 長男翔馬 1994年生まれ / 1101.com -->
+
+【制作メモ】
+- 【キャラアニメーション】CHAR-06 幼い翔馬くんが直子さんに抱かれている、温かい家族の構図
+- キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two characters together. CHAR-05: A Japanese woman in her late 30s, slim build, shoulder-length black hair, holding a small toddler in her arms. CHAR-06: A small Japanese toddler boy, almost 2 years old, soft black hair, big eyes, simple light blue t-shirt. Mother gentle smile, child curious gaze. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these two characters together.
+```
+
+ナレーター: 星野さんが、カムチャッカで命を落としたとき。
+
+【制作メモ】
+- 【画面エフェクト】「翔馬くん 1歳11ヶ月」のテロップを画面下部に小さく重ねる
+
+ナレーター: 翔馬さんは、まだ1歳11ヶ月の幼い男の子でした。<!-- src: ja.wikipedia 翔馬1994年生まれ・事件時1歳11ヶ月 / 1101.com -->
+
+【制作メモ】
+- 【キャラアニメーション】CHAR-06 翔馬くんが床に座って小さな手で何かを掴もうとしている、無邪気な表情
+- キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: A small Japanese toddler boy, almost 2 years old, sitting on a wooden floor, reaching out with small hands toward something off-frame, innocent gentle smile. White background. 1:1 aspect ratio. Generate 3 separate images.
+```
+
+ナレーター: 父親のことを、まだ十分に覚えていない年齢です。
+
+【制作メモ】
+- 【背景静止画】静かな日本家屋のリビング、アラスカ風景の写真が額に入って棚に置かれている
+- 背景プロンプト（16:9）:
+```
+A quiet still life inside a traditional Japanese home: a wooden shelf with framed landscape photographs of Alaska scenery, a small toy, an empty wooden chair beside a window. Soft afternoon light. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
+```
+
+ナレーター: それでも星野さんは、息子と過ごせるわずかな時間を、何より大切にしていたといわれています。
+
+【制作メモ】
+- 【キャラアニメーション】CHAR-01 星野さんがCHAR-06 翔馬くんを高く抱き上げて笑顔
+- キャラプロンプト（1:1）:
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two characters together. CHAR-01: Hoshino lifting up CHAR-06 (his small toddler son) high in his arms with a warm bright smile, the toddler giggling. Soft warm light. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these two characters together.
+```
+
+ナレーター: その大切な時間が、ある朝、永遠に途切れてしまったのです。
+
+## §7. 7月25日、カムチャッカ到着
 
 ナレーター: 1996年7月25日。
 
@@ -287,7 +539,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 
 ナレーター: ヒグマと自然の中で寝起きすることが、星野さんにとっては撮影の一部だったのです。<!-- src: times.abema.tv 星野道夫銃を持たない理由 -->
 
-## §4. 7月27日、深夜の警告
+## §8. 7月27日、深夜の警告
 
 ナレーター: 7月27日。到着から2日後の夜。
 
@@ -443,7 +695,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 【制作メモ】
 - 【画面エフェクト】「その差が、ふたりの何を分けたのか ― 物語の終盤で」の引きテロップ
 
-## §5. 「サケが豊富だから襲わない」確信の根拠
+## §9. 「サケが豊富だから襲わない」確信の根拠
 
 ナレーター: 星野さんの確信には、確かな根拠がありました。
 
@@ -512,7 +764,7 @@ A documentary still of a healthy brown bear catching a salmon in a shallow river
 
 ナレーター: そしてその信念のまま、星野さんはテントに戻って眠りにつきます。
 
-## §6. 8月6日、ヒグマ再出現
+## §10. 8月6日、ヒグマ再出現
 
 ナレーター: 8月6日。深夜。
 
@@ -603,7 +855,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 A quiet documentary still of a small tent at pre-dawn by a lake, a faint warm lantern glow leaking from inside, deep blue darkness all around, mist on the water. Calm yet foreboding. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
 ```
 
-## §7. 8月8日、午前4時
+## §11. 8月8日、午前4時
 
 ナレーター: そして、8月8日。
 
@@ -714,7 +966,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 【制作メモ】
 - 【画面エフェクト】「為す術なし」の緊迫感を字幕なしの間で表現
 
-## §8. クルーの叫び、ガイドのシャベル
+## §12. クルーの叫び、ガイドのシャベル
 
 ナレーター: スタッフは「ベアー！ベアー！」と叫び続けます。
 
@@ -818,7 +1070,7 @@ A wide documentary still of a collapsed and torn small tent on dawn grassland ne
 A computer screen displaying a plain web article with a correction-and-apology layout in Japanese style, a small thumbnail image marked with a red X over it. Dim room, screen glow only. Photorealistic, shot on RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No identifiable real text, no real faces. Generate 3 separate images.
 ```
 
-## §9. ヘリコプターと、解剖
+## §13. ヘリコプターと、解剖
 
 ナレーター: その日のうちに、武装したハンターとシニア研究者を乗せたヘリコプターが、現場に飛来します。<!-- src: en.wikipedia Mosolov senior researcher -->
 
@@ -895,7 +1147,7 @@ A documentary still of an open Russian field veterinary notebook on a wooden tab
 
 ナレーター: 額に赤い傷のあった巨大なヒグマこそが、星野さんを襲った個体であったことが、これで確定しました。
 
-## §10. 加害個体の正体
+## §14. 加害個体の正体
 
 ナレーター: なぜ、このヒグマは人間を恐れなかったのか。
 
@@ -999,7 +1251,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 【制作メモ】
 - 【図解】因果タイムライン（横スクロールで段階を順に提示）: ①観光・撮影目的の餌付け → ②TBS到着の直前に餌付けが中止 → ③人間の食べ物の記憶と、消えた餌 → ④飢えと記憶の結合 → ⑤警戒心の喪失と攻撃性の増大。各段階を矢印で連結し、最後の⑤を赤で強調する
 
-## §11. Food Conditioned ―食物条件付け―
+## §15. Food Conditioned ―食物条件付け―
 
 ナレーター: 動物学の世界には、「フード・コンディションド」という言葉があります。<!-- src: yamaoji.cocolog-nifty 2008-06 / en.wikipedia food conditioning -->
 
@@ -1132,7 +1384,7 @@ A close-up documentary still of a brown bear lifting its nose high into the air,
 【制作メモ】
 - 【画面エフェクト】次章への引き。BGMを不穏に転調する
 
-## §12. 10年かかった、真相の究明
+## §16. 10年かかった、真相の究明
 
 ナレーター: しかしこの「餌付けされた個体だった」という事実が明らかになるまでには、長い時間がかかります。<!-- src: 小坂洋右・大山卓悠『星野道夫 永遠のまなざし』山と渓谷社 2006 / note 秋田しげと 2023-02-04 -->
 
@@ -1243,258 +1495,6 @@ A documentary still of a small wooden hunting cabin interior packed with broadca
 - 【画面エフェクト】「無謀ではなかった」テロップで印象転換
 
 ナレーター: 10年かけて、ようやく辿り着いた真実です。
-
-## §13. 銃を持たないという哲学
-
-ナレーター: ここで、星野道夫さんという人物について、もう少し深く掘り下げる必要があります。
-
-【制作メモ】
-- 【キャラアニメーション】CHAR-01 星野さんがアラスカの原野で1人カメラを構える、夕暮れの後ろ姿
-- キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: Hoshino seen from behind, kneeling on grassy tundra at sunset, holding his camera ready, gentle wind in his hair. Long peaceful contemplative silhouette. White background. 1:1 aspect ratio. Generate 3 separate images.
-```
-
-ナレーター: 星野さんは、生涯、撮影に銃を持っていきませんでした。<!-- src: times.abema.tv 星野道夫銃を持たない理由 / モデルプレス -->
-
-【制作メモ】
-- 【背景静止画】机の上に置かれた古いカメラとフィールドノート、その横に空っぽの銃ホルスター
-- 背景プロンプト（16:9）:
-```
-A still life on a wooden desk: an old worn 35mm camera, a leather-bound field notebook, and beside them an empty leather rifle holster lying flat. Soft natural window light, intimate documentary mood. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
-```
-
-ナレーター: その理由について、星野さんはこう語っていたとされます。<!-- src: times.abema.tv 星野道夫銃を持たない理由 -->
-
-【制作メモ】
-- 【画面エフェクト】引用テロップ「銃を持っていくということは、自然に対してどこか変な大胆さが出てきて、あんまり考えなくなる」
-
-ナレーター: 「銃を持っていくということは、自然に対してどこか変な大胆さが出てきて、あんまり考えなくなる」
-
-【制作メモ】
-- 【画面エフェクト】引用テロップ続き「銃を持っていない時は、自然に対して少し謙虚になれる」
-
-ナレーター: 「銃を持っていない時は、自然に対して少し謙虚になれる」
-
-【制作メモ】
-- 【背景静止画】広大なアラスカの原野、ひとつの足跡が地面に静かに残されている
-- 背景プロンプト（16:9）:
-```
-A poetic documentary still of vast Alaska tundra at dusk, a single boot print visible in the soft earth, the surrounding wilderness stretching infinitely toward the horizon. Reverent quiet atmosphere. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
-```
-
-ナレーター: 銃を持たないことが、自然と向き合う姿勢そのものでした。
-
-【制作メモ】
-- 【キャラアニメーション】CHAR-01 星野さんが穏やかに微笑む正面ショット
-- キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: Hoshino with a quiet gentle smile, looking directly at the viewer, his expression filled with calm conviction. White background. 1:1 aspect ratio. Generate 3 separate images.
-```
-
-ナレーター: 自然を尊重するからこそ、自分は弱い立場でいる。それが、星野さんの哲学でした。
-
-【制作メモ】
-- 【画面エフェクト】「力を持たないという選択」のテロップ
-
-ナレーター: 銃という「力」を手放すことで、星野さんは自然と対等であろうとしました。
-
-【制作メモ】
-- 【キャラアニメーション】CHAR-01 星野さんがカメラだけを手に、広大な原野に静かに立つ
-- キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: A 43-year-old Japanese male wildlife photographer standing quietly with only a camera in hand, facing a vast wilderness, calm and humble posture. White background. 1:1 aspect ratio. Generate 3 separate images.
-```
-
-ナレーター: しかし、その哲学が通用するのは、相手が「野生のヒグマ」である限りでした。
-
-【制作メモ】
-- 【画面エフェクト】「野生のヒグマ ＝ 哲学が通じる相手」のテロップ
-
-ナレーター: 人間の手で変えられてしまった1頭の前では、どんな哲学も、無力だったのです。
-
-【制作メモ】
-- 【背景静止画】夕暮れの原野に置かれた一台のカメラと、その奥に滲むヒグマの影
-- 背景プロンプト（16:9）:
-```
-A symbolic documentary still of a single camera resting on tundra grass at dusk, with the faint blurred shadow of a large bear in the distant background. Quiet, foreboding, thematic. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
-```
-
-
-
-## §14. アラスカへ、18年の旅
-
-ナレーター: 星野さんは、千葉県市川市の出身です。<!-- src: ja.wikipedia 1952-09-27 千葉県市川市南八幡 -->
-
-【制作メモ】
-- 【背景静止画】1970年代の千葉県市川市の住宅地、レトロな雰囲気
-- 背景プロンプト（16:9）:
-```
-A nostalgic documentary still of a quiet residential street in Ichikawa, Chiba Prefecture, Japan in the 1970s. Modest wooden houses, narrow side streets, telephone poles, soft afternoon light. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty street only. Generate 3 separate images.
-```
-
-ナレーター: 19歳の時、神田の古本屋でナショナルジオグラフィックを手に取ります。<!-- src: nippon.com James Singleton 2016-08-08 / ja.wikipedia -->
-
-【制作メモ】
-- 【背景静止画】古本屋の棚に並ぶ古いナショナルジオグラフィック、1冊が手前で開かれている
-- 背景プロンプト（16:9）:
-```
-A still life of a row of old National Geographic magazines on a used bookstore shelf in 1970s Tokyo, one magazine open in the foreground showing a photograph of Alaska. Warm dim lamp light. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
-```
-
-ナレーター: その雑誌に載っていた1枚の写真に、星野さんは強く惹きつけられます。アラスカ・シシュマレフ村の写真でした。
-
-【制作メモ】
-- 【背景静止画】1970年代のアラスカ・シシュマレフ村の風景、極寒の海岸線
-- 背景プロンプト（16:9）:
-```
-A documentary still of a tiny remote Iñupiaq village on a frozen Alaska coastline in the 1970s, simple wooden houses scattered on bare snow-covered ground, the cold sea ice extending to the horizon under a pale gray sky. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
-```
-
-ナレーター: 星野さんは思い切って、村の村長宛に1通の手紙を書きます。<!-- src: nippon.com / ja.wikipedia -->
-
-【制作メモ】
-- 【背景静止画】古い手紙とインク、便箋に英文が書かれている
-- 背景プロンプト（16:9）:
-```
-A still life of a single handwritten English letter on simple Japanese stationery, addressed to "Mayor, Shishmaref, Alaska", with a fountain pen lying beside it. Warm desk lamp light. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
-```
-
-ナレーター: 数ヶ月後、返事が届きます。そして星野さんは、ひとりでシシュマレフ村に3ヶ月滞在することになりました。
-
-【制作メモ】
-- 【AI動画】若い星野さん（19歳）がシシュマレフ村の小さな飛行場に降り立つ、後ろ姿
-- 静止画プロンプト（16:9・フォトリアル）:
-```
-A documentary still of a young Japanese man arriving at a tiny Alaskan bush airport in the 1970s, viewed from behind, carrying a heavy backpack and a camera bag. A small single-engine plane behind him on a snow-covered runway. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
-```
-→ **Google Flow動画プロンプト:**
-```
-A 5-second slow-motion documentary video footage on a young Japanese man with a backpack walking away from a small bush plane onto a snowy Alaskan airstrip in the 1970s, viewed from behind. Photorealistic, RED camera, slow-motion documentary cinematography.
-```
-
-ナレーター: 慶應義塾大学を卒業した後、動物写真家・田中光常さんに2年師事します。<!-- src: ja.wikipedia 田中光常師事 -->
-
-【制作メモ】
-- 【背景静止画】古い暗室、現像液とフィルムが並ぶ、写真家修行の雰囲気
-- 背景プロンプト（16:9）:
-```
-A nostalgic documentary still of an old film darkroom in Tokyo in the 1970s: an enlarger, trays of developer chemicals, photographic paper drying on a line, a single red safelight glowing. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
-```
-
-ナレーター: そして1978年、アラスカ大学フェアバンクス校に入学。そのままアラスカに移り住み、18年間にわたって、極北の自然を撮り続けることになります。<!-- src: ja.wikipedia 1978年アラスカ大学入学 / nippon.com -->
-
-【制作メモ】
-- 【背景静止画】BG-C 星野道夫さんのアラスカの丸太小屋
-
-## §15. 『旅をする木』『クマよ』
-
-ナレーター: 星野さんの活動の中で、特に多くの読者の心に残ったのが、エッセイ『旅をする木』です。<!-- src: 星野道夫『旅をする木』文藝春秋 1994 -->
-
-【制作メモ】
-- 【背景静止画】『旅をする木』風の単行本が机に置かれている、静かな構図
-- 背景プロンプト（16:9）:
-```
-A still life of a single Japanese essay collection paperback book on a wooden desk, the cover suggesting tundra and Alaska wilderness. Beside it a steaming cup of coffee and a pen. Soft window light. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
-```
-
-ナレーター: その中に、こんな一節があります。<!-- src: 星野道夫『旅をする木』文藝春秋 1994 -->
-
-【制作メモ】
-- 【画面エフェクト】引用テロップ「自然はいつも、強さの裏に脆さを秘めています。そしてぼくが惹かれるのは、自然や生命のもつその脆さの方です」
-
-ナレーター: 「自然はいつも、強さの裏に脆さを秘めています。そしてぼくが惹かれるのは、自然や生命のもつ、その脆さの方です」
-
-【制作メモ】
-- 【背景静止画】アラスカの脆く美しい風景、薄氷が張った静かな水面に朝の光が差す
-- 背景プロンプト（16:9）:
-```
-A delicate documentary still of thin ice forming on a still pond in the Alaskan tundra at dawn, the first light catching the ice patterns. Quiet fragile beauty. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
-```
-
-ナレーター: そしてもう一冊、福音館書店から出された絵本『クマよ』。<!-- src: 星野道夫『クマよ』福音館書店 たくさんのふしぎ傑作集 -->
-
-【制作メモ】
-- 【背景静止画】『クマよ』の絵本が机に置かれている、優しい雰囲気の構図
-- 背景プロンプト（16:9）:
-```
-A still life of a Japanese children's picture book about bears on a soft cloth, the cover suggesting a gentle illustration of a brown bear in the wild. Warm afternoon light. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
-```
-
-ナレーター: その絵本の中で、星野さんはヒグマに向かって、こう語りかけています。<!-- src: 星野道夫『クマよ』福音館書店 -->
-
-【制作メモ】
-- 【画面エフェクト】引用テロップ「おまえのからだにふれてみたいけれども おれとおまえとは、はなれている はるかな星のように」
-
-ナレーター: 「おまえのからだに、ふれてみたいけれども」
-
-【制作メモ】
-- 【画面エフェクト】引用テロップ続き
-
-ナレーター: 「おれとおまえとは、はなれている。はるかな星のように」
-
-【制作メモ】
-- 【背景静止画】夜空に瞬く無数の星、その下に1頭のヒグマの遠いシルエット
-- 背景プロンプト（16:9）:
-```
-A poetic documentary still of a starry night sky over a Kamchatka or Alaska wilderness, the distant outline of a single brown bear visible far below on the horizon. Vast peaceful loneliness. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 3 separate images.
-```
-
-ナレーター: 触れたいけれど、触れてはいけない。星野さんは、ヒグマと人間との間にある、決して埋まらない距離を、深く理解していた人でした。
-
-## §16. 妻・直子と、1歳11ヶ月の息子・翔馬
-
-ナレーター: 星野さんは、事件の3年前にあたる1993年、お見合いで結婚します。<!-- src: ja.wikipedia 1993年 萩谷直子と結婚 / 1101.com -->
-
-【制作メモ】
-- 【キャラアニメーション】CHAR-01 星野さんとCHAR-05 直子さんの2人がアラスカの自然の中で穏やかに並ぶ
-- キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two characters together. CHAR-01: Hoshino in a khaki vest. CHAR-05: A late 30s Japanese woman in a soft beige cardigan and earth-tone trousers, slim build, shoulder-length black hair. Both standing close, gentle smiles, soft warm light around them. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these two characters together.
-```
-
-ナレーター: 妻・直子（なおこ）さんとの間には、1994年に長男・翔馬（しょうま）さんが生まれます。<!-- src: ja.wikipedia 長男翔馬 1994年生まれ / 1101.com -->
-
-【制作メモ】
-- 【キャラアニメーション】CHAR-06 幼い翔馬くんが直子さんに抱かれている、温かい家族の構図
-- キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two characters together. CHAR-05: A Japanese woman in her late 30s, slim build, shoulder-length black hair, holding a small toddler in her arms. CHAR-06: A small Japanese toddler boy, almost 2 years old, soft black hair, big eyes, simple light blue t-shirt. Mother gentle smile, child curious gaze. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these two characters together.
-```
-
-ナレーター: 星野さんが、カムチャッカで命を落としたとき。
-
-【制作メモ】
-- 【画面エフェクト】「翔馬くん 1歳11ヶ月」のテロップを画面下部に小さく重ねる
-
-ナレーター: 翔馬さんは、まだ1歳11ヶ月の幼い男の子でした。<!-- src: ja.wikipedia 翔馬1994年生まれ・事件時1歳11ヶ月 / 1101.com -->
-
-【制作メモ】
-- 【キャラアニメーション】CHAR-06 翔馬くんが床に座って小さな手で何かを掴もうとしている、無邪気な表情
-- キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: A small Japanese toddler boy, almost 2 years old, sitting on a wooden floor, reaching out with small hands toward something off-frame, innocent gentle smile. White background. 1:1 aspect ratio. Generate 3 separate images.
-```
-
-ナレーター: 父親のことを、まだ十分に覚えていない年齢です。
-
-【制作メモ】
-- 【背景静止画】静かな日本家屋のリビング、アラスカ風景の写真が額に入って棚に置かれている
-- 背景プロンプト（16:9）:
-```
-A quiet still life inside a traditional Japanese home: a wooden shelf with framed landscape photographs of Alaska scenery, a small toy, an empty wooden chair beside a window. Soft afternoon light. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
-```
-
-ナレーター: それでも星野さんは、息子と過ごせるわずかな時間を、何より大切にしていたといわれています。
-
-【制作メモ】
-- 【キャラアニメーション】CHAR-01 星野さんがCHAR-06 翔馬くんを高く抱き上げて笑顔
-- キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two characters together. CHAR-01: Hoshino lifting up CHAR-06 (his small toddler son) high in his arms with a warm bright smile, the toddler giggling. Soft warm light. White background. 1:1 aspect ratio. Generate 3 separate images, each showing these two characters together.
-```
-
-ナレーター: その大切な時間が、ある朝、永遠に途切れてしまったのです。
 
 ## §17. 米国人写真家との、運命の分岐
 
