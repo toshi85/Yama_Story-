@@ -137,7 +137,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 A vast Alaskan tundra landscape at sunset, rolling treeless hills in golden and red autumn colors, distant snow-capped Brooks Range peaks, a winding river reflecting the wide overcast sky. Soft warm low-angle light. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
 ```
 
-ナレーター: アラスカに18年。生涯、銃を持たずに撮影を続けた人物です。<!-- src: ja.wikipedia 星野道夫 / nippon.com James Singleton 2016-08-08 -->
+ナレーター: アラスカに18年。極北の大地で、命の営みを撮り続けてきた人物です。<!-- src: ja.wikipedia 星野道夫 / nippon.com James Singleton 2016-08-08 -->
 
 【制作メモ】
 - 【背景静止画】古びた星野道夫さんのカメラと、その横に置かれた未使用の銃。コントラストで「銃を持たなかった事実」を視覚化
@@ -271,7 +271,7 @@ A 5-second slow-motion documentary video footage on a small helicopter flying lo
 【制作メモ】
 - 【背景静止画】BG-A クリル湖の湖畔・夜明けの静寂、湖面に火山群が映る
 
-ナレーター: 撮影拠点は、湖の南東岸・シユシュク岬にある、丸太造りのハンティングロッジ。実は、高床2階建ての、しっかりとした建物でした。<!-- src: en.wikipedia Cape Siyushk / travelaficionados Kuril Lake / note 秋田しげと 2023-02-04 「ロッジ・高床2階建て」 -->
+ナレーター: 撮影拠点は、湖の南東岸・シユシュク岬にある、丸太造りの狩猟ロッジ。実は、高床2階建ての、しっかりとした建物でした。<!-- src: en.wikipedia Cape Siyushk / travelaficionados Kuril Lake / note 秋田しげと 2023-02-04 「ロッジ・高床2階建て」 -->
 
 【制作メモ】
 - 【背景静止画】BG-B シユシュク岬のハンティング小屋
@@ -712,7 +712,7 @@ A documentary still of an open Russian field veterinary notebook on a wooden tab
 【制作メモ】
 - 【画面エフェクト】「なぜ？」の白抜きテロップを画面中央にポップ表示
 
-ナレーター: 後の検証で、衝撃的な事実が明らかになります。
+ナレーター: 後の検証で、ある重大な事実が明らかになります。
 
 【制作メモ】
 - 【背景静止画】古いカメラとフィルム、現場周辺の調査メモが机に並ぶ静物
@@ -1300,7 +1300,7 @@ A nostalgic documentary still of a quiet 1990s Japanese cinema interior, rows of
 【制作メモ】
 - 【画面エフェクト】「『地球交響曲 第三番』1997年公開 全国896箇所 約33万人動員」テロップ
 
-ナレーター: 死後、星野さんの言葉が、映画という形で、もう一度、人々のもとへと届いたのです。<!-- src: eiga.com 動員数 -->
+ナレーター: 亡くなった後も、星野さんの言葉は、映画という形で、もう一度、人々のもとへと届いたのです。<!-- src: eiga.com 動員数 -->
 
 ## §19. 事件が変えた、クリル湖
 
@@ -1410,12 +1410,12 @@ A still life of a documentary film promotional poster lying on a wooden desk, th
 A still life of a Japanese hardcover translation of a scientific bear research book on a wooden desk, the cover suggesting serious wildlife biology study, with a bookmark in the middle of the pages. Soft warm lamp light. Photorealistic, RED camera, shallow depth of field, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 3 separate images.
 ```
 
-ナレーター: ヒグマ研究の世界的権威、ロシアのスティーブン・ヘレロ博士は、星野さんの事件について、こう記しています。<!-- src: スティーブン・ヘレロ『ベア・アタックス』日本語版補足解説 / 1lGLCHSapVI 競合動画の引用 -->
+ナレーター: ヒグマ研究の世界的権威、カナダのスティーブン・ヘレロ博士も、星野さんの事件について、こう記しています。<!-- src: スティーブン・ヘレロ『ベア・アタックス（Bear Attacks）』日本語版補足解説。ヘレロはカナダ・カルガリー大学名誉教授（en.wikipedia Stephen Herrero / researchgate.net で国籍確認・2026-06-11訂正、旧「ロシアの」は競合動画の誤りを孫引きしていた）。※引用文言は日本語版書籍での最終照合推奨 -->
 
 【制作メモ】
-- 【画面エフェクト】引用テロップ「星野道夫の悲惨な死は、避けることのできた死だった」を強調表示
+- 【画面エフェクト】引用テロップ「星野道夫の悲惨な最期は、避けることのできたものだった」を強調表示
 
-ナレーター: 「星野道夫の悲惨な死は、避けることのできた死だった」
+ナレーター: 「星野道夫の悲惨な最期は、避けることのできたものだった」
 
 【制作メモ】
 - 【画面エフェクト】引用の余韻を残す静寂演出。BGMを一拍切る
@@ -1424,7 +1424,7 @@ A still life of a Japanese hardcover translation of a scientific bear research b
 
 ## §21. 教訓
 
-ナレーター: 星野道夫さんが命を落としたカムチャッカの事件から、3つの教訓を持ち帰ることができます。
+ナレーター: 星野道夫さんが命を落としたカムチャッカの事件は、私たちに、3つのことを、静かに問いかけています。
 
 【制作メモ】
 - 【画面エフェクト】「教訓」のタイトルテロップ、白文字でゆっくり表示
@@ -1530,7 +1530,7 @@ A serene documentary still of a quiet Alaska boreal forest at sunset, soft warm 
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: Hoshino silhouette in the warm orange sunset light, holding his camera up in profile, a peaceful timeless figure on the tundra. White background. 1:1 aspect ratio. Generate 3 separate images.
 ```
 
-ナレーター: 「クマと心は通じる」と信じ続けた人生は、最後に、人間の手で変えられたヒグマによって、奪われることになりました。
+ナレーター: クマと心が通じ合えると信じ続けた人生は、最後に、人間の手で変えられたヒグマによって、奪われることになりました。
 
 【制作メモ】
 - 【画面エフェクト】「人間の手で変えられたヒグマに、命を奪われた」の重みあるテロップ
