@@ -118,7 +118,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 【制作メモ】ASSET-001 [Lovart動画]
 シーン: アラスカの大自然を背に佇む写真家の後ろ姿（フォトリアル）。導入の主役紹介。⚠️顔は生成せず後ろ姿で、本人は実写差し込みで
 ```
-A lone Japanese photographer with a film camera, seen from behind, standing calmly and gazing out over vast Alaskan wilderness at golden hour — distant snow-capped mountains, golden autumn tundra, soft light with a faint sense of foreboding. Face not visible, back view only. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A lone Japanese photographer with a film camera, seen from behind, standing calmly and gazing out over vast Alaskan wilderness at golden hour — distant snow-capped mountains, golden autumn tundra, soft light with a faint sense of foreboding. Face not visible, back view only. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -133,7 +133,7 @@ A slow cinematic push-in toward a lone Japanese photographer standing with his b
 【制作メモ】ASSET-002 [Lovart動画]
 シーン: 写真家が遠くのヒグマへ愛情のまなざしでそっとカメラを構える（後ろ姿・フォトリアル）
 ```
-A Japanese photographer seen from behind, kneeling and quietly raising a film camera toward a distant wild brown bear in an open Alaskan meadow at soft morning light, a respectful and loving distance between them. Face not visible, back view only. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A Japanese photographer seen from behind, kneeling and quietly raising a film camera toward a distant wild brown bear in an open Alaskan meadow at soft morning light, a respectful and loving distance between them. Face not visible, back view only. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -148,7 +148,7 @@ A gentle scene: a Japanese photographer seen from behind slowly raising his came
 【制作メモ】ASSET-003 [Lovart動画]
 シーン: 穏やかな空気が一転、暗く沈んだ森と湖。不穏な空気だけが漂う
 ```
-A still, dark lake surrounded by dense forest at dusk in Kamchatka, heavy clouds, cold wind stirring the water surface, an ominous and sorrowful atmosphere. No people. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A still, dark lake surrounded by dense forest at dusk in Kamchatka, heavy clouds, cold wind stirring the water surface, an ominous and sorrowful atmosphere. No people. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -163,7 +163,7 @@ A slow ominous drift over a dark, still lake at dusk in Kamchatka, cold wind rip
 【制作メモ】ASSET-004 [Lovart動画]
 シーン: 額に赤い傷のある雄ヒグマが暗がりから人間を見据える。恐れを知らない異質な眼差し（フォトリアル）
 ```
-A massive dark brown male brown bear with a distinctive red scar across its forehead, emerging at a dark dense forest edge at dusk, deep shadows between the trees, staring directly forward with intense, fearless, unsettling eyes. Imposing and ominous presence. No people. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A massive dark brown male brown bear with a distinctive red scar across its forehead, emerging at a dark dense forest edge at dusk, deep shadows between the trees, staring directly forward with intense, fearless, unsettling eyes. Imposing and ominous presence. No people. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -193,7 +193,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Soft neutral Alaskan outdoor backdrop, blurred tundra and distant mountains, gentle natural light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Soft neutral Alaskan outdoor backdrop, blurred tundra and distant mountains, gentle natural light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「星野道夫さん（43歳）／動物写真家」のテロップ。【実写差し込み候補：星野さん本人ポートレート（③Alaska）※クレジット必須】
 
@@ -209,7 +209,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Expansive Alaskan landscape — autumn tundra, caribou trails, a distant mountain range under a wide sky. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Expansive Alaskan landscape — autumn tundra, caribou trails, a distant mountain range under a wide sky. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「アラスカで18年」のテロップ。星野さんの実績を示す（野生動物・先住民のイメージカットを小さく合成可。実写を使う場合は権利処理済みのもののみ）。
 
@@ -225,7 +225,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Interior of a cramped vintage 1970s Tokyo secondhand bookstore, tall shelves packed with old books, warm dusty light filtering in. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Interior of a cramped vintage 1970s Tokyo secondhand bookstore, tall shelves packed with old books, warm dusty light filtering in. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「19歳・東京の古書店」のテロップ。写真集のページ（アラスカの村の空撮イメージ）をインサート。運命が動き出す瞬間として印象的に。
 
@@ -241,7 +241,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A remote Alaskan coastal village landscape under a wide pale sky, small wooden houses in the distance, tundra and sea. Lonely, vast, awe-inspiring. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A remote Alaskan coastal village landscape under a wide pale sky, small wooden houses in the distance, tundra and sea. Lonely, vast, awe-inspiring. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「たったひとりで海を渡る」のテロップ。広大さと青年の小ささの対比で心細さと挑戦を表現。
 
@@ -257,7 +257,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Interior of a modest Alaskan village home, simple wooden walls, warm lamplight, a window showing tundra outside. Cozy and humble. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Interior of a modest Alaskan village home, simple wooden walls, warm lamplight, a window showing tundra outside. Cozy and humble. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「ひと夏を先住民とともに」のテロップ。温かいBGM。星野さんの原点を印象づける。
 
@@ -273,7 +273,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A clean, softly lit photo exhibition wall with blurred large framed nature photographs. Calm, prestigious atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A clean, softly lit photo exhibition wall with blurred large framed nature photographs. Calm, prestigious atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「木村伊兵衛写真賞 受賞（37歳ごろ）」のテロップを格調高く表示。
 
@@ -294,7 +294,7 @@ A clean, softly lit photo exhibition wall with blurred large framed nature photo
 【制作メモ】ASSET-013 [Lovart動画]
 シーン: クリル湖の空撮。火山に囲まれたカルデラ湖の雄大な全景
 ```
-A sweeping aerial drone shot over Kurile Lake in Kamchatka — a vast circular caldera lake about 7km across, ringed by volcanic peaks and dense green forest, deep blue-grey water, dramatic volcanic landscape. Majestic and remote. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A sweeping aerial drone shot over Kurile Lake in Kamchatka — a vast circular caldera lake about 7km across, ringed by volcanic peaks and dense green forest, deep blue-grey water, dramatic volcanic landscape. Majestic and remote. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -309,7 +309,7 @@ Cinematic aerial drone footage gliding over Kurile Lake, a huge volcanic caldera
 【制作メモ】ASSET-014 [Lovart動画]
 シーン: 川を遡上するサケと、それを捕らえる多数のヒグマたち。ヒグマの楽園の活気
 ```
-Many wild brown bears gathered along a salmon-rich river flowing into Kurile Lake in Kamchatka, catching spawning salmon in shallow rapids, cubs and adults together, lush summer wilderness. Teeming with life, a true bear paradise. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+Many wild brown bears gathered along a salmon-rich river flowing into Kurile Lake in Kamchatka, catching spawning salmon in shallow rapids, cubs and adults together, lush summer wilderness. Teeming with life, a true bear paradise. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -339,7 +339,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A wild Kamchatka riverside location, lush summer greenery, suitable for a nature documentary shoot. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A wild Kamchatka riverside location, lush summer greenery, suitable for a nature documentary shoot. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「TBS『どうぶつ奇想天外！』のロケ」のテロップ（※局ロゴ・実映像は使わずテキストで）。
 
@@ -355,7 +355,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A simple warm-toned indoor meeting space, soft light, blurred background. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A simple warm-toned indoor meeting space, soft light, blurred background. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「テーマ：ヒグマと鮭」「星野さん自身の持ち込み企画」のテロップ。サケ＋ヒグマのアイコンを添える。
 
@@ -371,7 +371,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A quiet Kamchatka wilderness at soft light, river and forest, contemplative atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A quiet Kamchatka wilderness at soft light, river and forest, contemplative atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「ある哲学」のテロップを静かに。次のカットへの“ため”を作る。
 
@@ -387,7 +387,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A simple cabin interior corner with soft natural light from a window. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A simple cabin interior corner with soft natural light from a window. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「銃を持たない」というテロップ。銃に×、カメラに○のような対比を控えめに。
 
@@ -403,7 +403,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Soft neutral natural backdrop, gentle blurred greenery. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Soft neutral natural backdrop, gentle blurred greenery. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 次の引用テロップへの導入。BGMを落として言葉に集中させる。
 
@@ -419,7 +419,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A vast quiet Alaskan/Kamchatka wilderness, humble human presence against great nature. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A vast quiet Alaskan/Kamchatka wilderness, humble human presence against great nature. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 星野さんの言葉を引用テロップで全文表示。静かなBGM。
 
@@ -435,7 +435,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A grand humbling natural landscape — towering mountains and wide sky, soft reverent light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A grand humbling natural landscape — towering mountains and wide sky, soft reverent light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 引用テロップ全文表示。自然と人の対比で「謙虚さ」を映像化。
 
@@ -451,7 +451,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Soft natural backdrop with gentle warm light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Soft natural backdrop with gentle warm light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 余韻を残す間。次のまとめのナレーションへ。
 
@@ -467,7 +467,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A wide open path into pristine wilderness — mountains, river, endless sky ahead. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A wide open path into pristine wilderness — mountains, river, endless sky ahead. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「自然と向き合う姿勢そのもの」のテロップ。KIパートの締め。穏やかさの中に伏線の緊張を残してSHOへ。
 
@@ -493,7 +493,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A rugged Kamchatka staging area, helicopter pad or wilderness base, dramatic volcanic landscape behind. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A rugged Kamchatka staging area, helicopter pad or wilderness base, dramatic volcanic landscape behind. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 各人物に「星野さん」「TBSスタッフ×3」「ロシア人ガイド×2」のラベルを矢印で示す。「総勢6名」のテロップ。
 
@@ -514,7 +514,7 @@ A rugged Kamchatka staging area, helicopter pad or wilderness base, dramatic vol
 【制作メモ】ASSET-028 [Lovart動画]
 シーン: ヘリコプターがカムチャッカの山々を越え、クリル湖へと飛んでいく空撮
 ```
-A helicopter flying low over the rugged volcanic mountains and dense forests of Kamchatka, heading toward a vast caldera lake in the distance. Remote wilderness, dramatic terrain, summer light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A helicopter flying low over the rugged volcanic mountains and dense forests of Kamchatka, heading toward a vast caldera lake in the distance. Remote wilderness, dramatic terrain, summer light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -530,7 +530,7 @@ Aerial tracking shot following a helicopter as it crosses volcanic ridges and fo
 シーン: 山と森に囲まれたクリル湖の静謐な全景。人を寄せつけない秘境感
 静止画プロンプト（16:9）:
 ```
-A pristine remote caldera lake in Kamchatka surrounded by vast mountains and dense untouched forest, no roads, no buildings, utterly isolated wilderness, quiet and awe-inspiring. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A pristine remote caldera lake in Kamchatka surrounded by vast mountains and dense untouched forest, no roads, no buildings, utterly isolated wilderness, quiet and awe-inspiring. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「人がほとんど立ち入らない秘境」のテロップ。静かで荘厳なBGM。
 
@@ -542,7 +542,7 @@ A pristine remote caldera lake in Kamchatka surrounded by vast mountains and den
 シーン: 湖畔に建つ丸太造りの狩猟小屋の外観。撮影拠点
 静止画プロンプト（16:9）:
 ```
-A sturdy two-story log hunting cabin standing on the shore of a remote Kamchatka lake, made of thick weathered logs, surrounded by forest and tall grass, lake water nearby. Isolated and rustic. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A sturdy two-story log hunting cabin standing on the shore of a remote Kamchatka lake, made of thick weathered logs, surrounded by forest and tall grass, lake water nearby. Isolated and rustic. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「撮影拠点：シュシュク岬の狩猟小屋」のテロップ。地図ピンで湖の南東を示す。【実写差し込み候補：実際の小屋写真があれば】
 
@@ -558,7 +558,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-The interior/entrance of a sturdy two-story log cabin, thick wooden beams, simple furnishings, daylight from windows. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+The interior/entrance of a sturdy two-story log cabin, thick wooden beams, simple furnishings, daylight from windows. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「2階建ての頑丈な小屋」のテロップ。拠点が整う様子を手短に。
 
@@ -574,7 +574,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Cozy interior of a log cabin with bunks and gear, warm lamplight, evening mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Cozy interior of a log cabin with bunks and gear, warm lamplight, evening mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「全員で約2週間の滞在」のテロップ。
 
@@ -590,7 +590,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A log cabin and, a few meters away, a flat grassy spot near the lake shore, dusk light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A log cabin and, a few meters away, a flat grassy spot near the lake shore, dusk light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「星野さんだけ、ひとりテントで」のテロップ。小屋とテントの数メートルの距離を平面図で示す（後の伏線）。
 
@@ -606,7 +606,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-The area around the log cabin in fading daylight, slightly unsettling quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+The area around the log cabin in fading daylight, slightly unsettling quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「ある違和感」のテロップ。BGMにわずかな不協和音を忍ばせる。
 
@@ -622,7 +622,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A wooden food storage shed near the cabin, its contents knocked over and scattered, claw-scratched surfaces, dim light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A wooden food storage shed near the cabin, its contents knocked over and scattered, claw-scratched surfaces, dim light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「食糧庫が荒らされていた」のテロップ。荒らされた庫内をクローズアップ（爪痕など）。不穏なSE。
 
@@ -638,7 +638,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-The cabin surroundings at dusk, deep shadows at the forest edge, an ominous stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+The cabin surroundings at dusk, deep shadows at the forest edge, an ominous stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「人間の仕業ではない」のテロップを赤系で。低音BGMで緊張を高める。
 
@@ -654,7 +654,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-The cabin area returning to routine in evening light, but with a subtle uneasy atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+The cabin area returning to routine in evening light, but with a subtle uneasy atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「正体はわからないまま」のテロップ。不安を引きずる“間”を残す。
 
@@ -678,7 +678,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A lakeside at night with two small tents pitched near each other, starlight on the water. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A lakeside at night with two small tents pitched near each other, starlight on the water. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「近くにもう一人、アメリカ人写真家」のテロップ。後の重要証言者として印象づける。
 
@@ -694,7 +694,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A quiet Kurile Lake shore, solitary wilderness, soft evening light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A quiet Kurile Lake shore, solitary wilderness, soft evening light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「単独で撮影に来ていた」のテロップ。
 
@@ -718,7 +718,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-The dark interior of a tent at night, faint moonlight through the fabric. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+The dark interior of a tent at night, faint moonlight through the fabric. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「ガン！ガン！」という金属音のSEを強調しテロップ表示。緊張の立ち上がり。
 
@@ -734,7 +734,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark lakeside camp seen from a tent opening at night, shadowy shapes in the gloom. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark lakeside camp seen from a tent opening at night, shadowy shapes in the gloom. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「おそるおそる外へ」のテロップ。次の衝撃カットへの“ため”。
 
@@ -750,7 +750,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A wooden food storage shed beside a log cabin at night, moonlit, forest behind. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A wooden food storage shed beside a log cabin at night, moonlit, forest behind. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 衝撃音と共にヒグマを登場させる。「食糧庫の屋根に巨大なヒグマ」のテロップ。
 
@@ -766,7 +766,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Neutral dark night backdrop near the cabin, faint moonlight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Neutral dark night backdrop near the cabin, faint moonlight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「体長2m超／体重約250kg」のインフォグラフィック。人間のシルエットとの大きさ比較を添える。
 
@@ -782,7 +782,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Dark night backdrop, deep shadows. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Dark night backdrop, deep shadows. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 額の赤い傷を強調するクローズアップ。「額に赤い傷／巨大な雄」のテロップ。以後この傷が個体識別の鍵になることを示す。
 
@@ -798,7 +798,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark night camp near the food shed, tense atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark night camp near the food shed, tense atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「大声＋手を叩く」のSEとテロップ。緊迫の高まり。
 
@@ -814,7 +814,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A small tent near the lake at night, the dark forest edge behind it, moonlit and tense. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A small tent near the lake at night, the dark forest edge behind it, moonlit and tense. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「星野さんのテントの背後へ」のテロップを赤系で。ヒグマの動きをスローで追い緊張を最大化。
 
@@ -830,7 +830,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark lakeside camp at night, two tents, urgent atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark lakeside camp at night, two tents, urgent atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 緊迫のBGM。次の警告セリフへの導入。
 
@@ -846,7 +846,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A tent at night with the dark forest just behind it, a sense of a hidden threat extremely close. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A tent at night with the dark forest just behind it, a sense of a hidden threat extremely close. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「テントから3メートル先にヒグマ」の警告セリフをテロップ表示。テント↔ヒグマの3mを平面図で視覚化。
 
@@ -862,7 +862,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark tense night camp, blurred. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark tense night camp, blurred. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 叫び声のSE。緊迫を保ったまま次の小屋への伝達シーンへ。
 
@@ -878,7 +878,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-The front of a log cabin at night, door and windows, urgent dark atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+The front of a log cabin at night, door and windows, urgent dark atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: ドアを叩く激しいSE。「ガイドに緊急連絡」のテロップ。
 
@@ -894,7 +894,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark night camp with orange spray mist drifting in the air. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark night camp with orange spray mist drifting in the air. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: スプレー噴射のSEと煙エフェクト。「クマ除けスプレー噴射」のテロップ。
 
@@ -910,7 +910,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark camp at night, spray mist dissipating in the gap between, ineffective. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark camp at night, spray mist dissipating in the gap between, ineffective. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「距離が遠く届かず」のテロップ。スプレーとヒグマの間の距離を図示し、無力さを強調。
 
@@ -926,7 +926,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A night camp, cabin and tent both visible a few meters apart. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A night camp, cabin and tent both visible a few meters apart. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「小屋へ移るよう説得」のテロップ。
 
@@ -942,7 +942,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A night camp, calm tent area. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A night camp, calm tent area. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 星野さんの落ち着いた表情。次の発言への導入。
 
@@ -958,7 +958,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A calm night camp by the lake, salmon-rich river faintly implied. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A calm night camp by the lake, salmon-rich river faintly implied. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 星野さんの発言を引用テロップで全文表示。確信に満ちた静かなトーン。
 
@@ -974,7 +974,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A quiet night camp, tent by the lake. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A quiet night camp, tent by the lake. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「その場にとどまった」のテロップ。後の展開への伏線として、静かな“間”を残す。
 
@@ -990,7 +990,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A vast Alaskan wilderness panorama representing years of experience, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A vast Alaskan wilderness panorama representing years of experience, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「アラスカで18年の経験」のテロップ。星野さんの判断の重みを示す。
 
@@ -1006,7 +1006,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A neutral calm natural backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A neutral calm natural backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「科学的な根拠があった」のテロップ。次のヒグマの生態解説へつなぐ。
 
@@ -1017,7 +1017,7 @@ A neutral calm natural backdrop, soft light. Photorealistic, shot on RED camera.
 【制作メモ】ASSET-061 [Lovart動画]
 シーン: 夏、川を遡上するサケを次々と捕らえ、栄養を蓄えるヒグマ
 ```
-A wild brown bear catching spawning salmon in a rushing summer river in Kamchatka, feeding heavily to build fat reserves, lush green surroundings, abundant nature. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A wild brown bear catching spawning salmon in a rushing summer river in Kamchatka, feeding heavily to build fat reserves, lush green surroundings, abundant nature. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -1033,7 +1033,7 @@ Documentary footage of a brown bear catching leaping salmon in a summer river, w
 シーン: サケ・木の実・草の根など自然の食べ物を食べるヒグマ。人を襲う必要のない豊かな環境
 静止画プロンプト（16:9）:
 ```
-A brown bear foraging peacefully in a rich summer landscape in Kamchatka — eating berries, digging roots, with a salmon river nearby. Abundant natural food, calm and well-fed bear. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A brown bear foraging peacefully in a rich summer landscape in Kamchatka — eating berries, digging roots, with a salmon river nearby. Abundant natural food, calm and well-fed bear. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「食べ物が豊富な時期は人を襲わない」のテロップ。サケ・木の実・草の根のアイコン。
 
@@ -1049,7 +1049,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark forest edge at night, the bear's path leading away into the trees. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark forest edge at night, the bear's path leading away into the trees. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「誰も襲わず立ち去った」「星野さんの読み通り」のテロップ。安堵のBGM…だが、わずかに不穏さを残す。
 
@@ -1073,7 +1073,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A cozy lamplit cabin interior at night, relaxed evening. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A cozy lamplit cabin interior at night, relaxed evening. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「すっかり忘れかけていた頃」のテロップ。油断と次の急展開のコントラスト。
 
@@ -1089,7 +1089,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark camp at night, the bear emerging from shadow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark camp at night, the bear emerging from shadow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 衝撃音と共に再登場。「再び、ヒグマが現れた」のテロップ。
 
@@ -1105,7 +1105,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Dark night backdrop. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Dark night backdrop. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 額の赤い傷を再びクローズアップ。「前回と同じ個体」のテロップ。
 
@@ -1121,7 +1121,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark camp with orange spray mist in the air at night. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark camp with orange spray mist in the air at night. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: スプレーのSEと煙。「即座に噴射」のテロップ。
 
@@ -1137,7 +1137,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark forest edge, the bear retreating. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark forest edge, the bear retreating. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「刺激にやられ逃走」のテロップ。今回はスプレーが届いた点を示す。
 
@@ -1153,7 +1153,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark camp settling back down after the scare. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark camp settling back down after the scare. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「今回も被害者なし」のテロップ。だが安心しきれない空気を残す。
 
@@ -1169,7 +1169,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark forest edge at night, ominous and repeated danger. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark forest edge at night, ominous and repeated danger. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「同じ個体が2度接近＝異常事態」の警告ボックスを表示。「1回目」「2回目」のタイムラインを図示。
 
@@ -1185,7 +1185,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A quiet tent interior or camp at night, calm pool of lamplight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A quiet tent interior or camp at night, calm pool of lamplight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「星野さんだけは、いつも通り」のテロップ。周囲の緊張との対比を演出。
 
@@ -1201,7 +1201,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark camp, watchful tense night atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark camp, watchful tense night atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「ガイドたちの緊張は限界へ」のテロップ。BGMで緊張の蓄積を表現。
 
@@ -1217,7 +1217,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark forest edge at night, a sense of something that keeps coming back. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark forest edge at night, a sense of something that keeps coming back. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「追い払っても、また戻ってくる」のテロップ。終わりの見えない恐怖を低音BGMで。
 
@@ -1233,7 +1233,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark ominous forest edge at night. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark ominous forest edge at night. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「普通のヒグマではありえない」のテロップ。異常性を強調し、運命の8月8日へ向けて緊張を最高潮に。
 
@@ -1266,7 +1266,7 @@ A small one-person tent standing a few meters from a log cabin by a lake, in dim
 【制作メモ】ASSET-078 [Lovart動画]
 シーン: 巨大なヒグマの「影（シルエット）」がテントに覆いかぶさる瞬間。直接描写はせず影のみ
 ```
-The huge dark silhouette of a bear suddenly looming over a small tent in pre-dawn twilight, shown only as a shadow shape against the dim sky, no detail, no violence depicted. Sudden and shocking. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+The huge dark silhouette of a bear suddenly looming over a small tent in pre-dawn twilight, shown only as a shadow shape against the dim sky, no detail, no violence depicted. Sudden and shocking. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -1286,7 +1286,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Dim pre-dawn forest edge, dark and cold. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Dim pre-dawn forest edge, dark and cold. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「またしても、あのヒグマ」のテロップ。額の赤い傷を一瞬見せて同一個体と分からせる。
 
@@ -1298,7 +1298,7 @@ Dim pre-dawn forest edge, dark and cold. Photorealistic, shot on RED camera. Doc
 シーン: ねじ曲がったテントの柱、引き裂かれた寝袋。襲撃の激しさを“痕跡”で示す（人物・流血なし）
 静止画プロンプト（16:9）:
 ```
-A collapsed and torn tent in dim pre-dawn light — bent poles, ripped sleeping bag fabric, scattered gear — showing the violence only through the wrecked objects. No people, no blood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A collapsed and torn tent in dim pre-dawn light — bent poles, ripped sleeping bag fabric, scattered gear — showing the violence only through the wrecked objects. No people, no blood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: ⚠️人物・流血は映さない。破壊された“モノ”だけで襲撃の激しさを伝える。
 
@@ -1314,7 +1314,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A cabin doorway in dim pre-dawn light, urgent dark atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A cabin doorway in dim pre-dawn light, urgent dark atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「異変に気づき飛び出す」のテロップ。緊迫のSE（足音・叫び）。
 
@@ -1323,16 +1323,16 @@ A cabin doorway in dim pre-dawn light, urgent dark atmosphere. Photorealistic, s
 ナレーター: そこで見たのは、星野さんの上に乗った巨大なヒグマでした。
 
 【制作メモ】ASSET-082 [キャラアニメーション]
-シーン: スタッフが目撃した衝撃。※襲撃の直接描写はせず、スタッフの戦慄の表情と、暗がりに浮かぶヒグマ（CHAR-02）の影で示す
+シーン: そこで見たのは、星野さん（CHAR-01）に覆いかぶさる巨大なヒグマ（CHAR-02）。星野さんはヒグマの下敷きになっている。※カートゥーン調・流血や残虐描写は一切なし（シルエット寄り）
 キャラプロンプト（1:1）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Crew members frozen in absolute horror, faces white with shock, staring at something off-frame. (Do NOT depict the victim or any violence.) White background. 1:1 aspect ratio. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02 (the massive male brown bear with a distinctive RED scar across its forehead) crouching low on all fours and looming directly over CHAR-01 (the early-40s Japanese man in a cream-and-grey Cowichan knit sweater). The bear is roaring ferociously, jaws wide open showing teeth, hackles raised along its back, eyes blazing with intense menace, pressing the man down with one heavy front paw. The man lies pinned on his back beneath the bear, his face contorted in pain and fear, mouth open in an anguished cry, both arms raised as if desperately trying to push the bear away, struggling hard beneath its weight. Stylized and non-graphic: no blood, no wounds, no gore. White background. 1:1 aspect ratio. Both characters together in a single frame, with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
 ```
 背景プロンプト（16:9）:
 ```
-Dim pre-dawn camp, the large dark silhouette of a bear suggested in shadow at the far edge of frame, no detail. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Dim pre-dawn camp clearing with tents nearby, deep blue pre-dawn shadows, trodden grass, an ominous heavy silence. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans, no bears visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
-→ 編集者指示: ⚠️最重要・直接描写厳禁。**スタッフの戦慄の表情のクローズアップ**と、フレーム外を見る視線＋ヒグマの影だけで表現。テロップは抑制的に。BGMを止め、息をのむ静寂。
+→ 編集者指示: 暗がりの中、星野さんに覆いかぶさる巨大なヒグマ。下敷きになった星野さんは動かない。※流血・損傷・残虐表現は描かない（カートゥーン調・シルエット寄り）。BGMを止め、息をのむ静寂で見せる。
 
 ---
 
@@ -1346,7 +1346,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Dim pre-dawn camp, chaotic urgent atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Dim pre-dawn camp, chaotic urgent atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「ベアー！ベアー！」の叫び声SEとテロップ。混乱と必死さ。
 
@@ -1362,7 +1362,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Dim pre-dawn camp ground, dust and tension. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Dim pre-dawn camp ground, dust and tension. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: シャベルを叩きつける激しいSE。「必死の威嚇」のテロップ。
 
@@ -1378,7 +1378,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Dim pre-dawn forest edge. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Dim pre-dawn forest edge. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「一切、怖がらなかった」のテロップ。ヒグマの無反応な眼を強調し、異常性を印象づける。
 
@@ -1394,7 +1394,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-Dim cold forest edge, eerie atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Dim cold forest edge, eerie atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「人慣れした異質な不気味さ」のテロップ。後半の“餌付け”伏線として、眼の不気味さを記憶に残す。
 
@@ -1405,7 +1405,7 @@ Dim cold forest edge, eerie atmosphere. Photorealistic, shot on RED camera. Docu
 【制作メモ】ASSET-087 [Lovart動画]
 シーン: ヒグマが森の奥へと姿を消していく“シルエット”。※直接描写せず、遠景の影と森だけで示す
 ```
-The distant dark silhouette of a large bear slowly disappearing into a dim forest by a lake at pre-dawn, seen far away as a shadow among the trees. No detail, no violence, only a receding shape. Somber and final. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+The distant dark silhouette of a large bear slowly disappearing into a dim forest by a lake at pre-dawn, seen far away as a shadow among the trees. No detail, no violence, only a receding shape. Somber and final. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -1425,7 +1425,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dim pre-dawn camp by the lake, forest edge where the danger vanished, heavy emptiness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dim pre-dawn camp by the lake, forest edge where the danger vanished, heavy emptiness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「何もできなかった」のテロップ。無力感を静かなBGMと“間”で表現。
 
@@ -1437,7 +1437,7 @@ A dim pre-dawn camp by the lake, forest edge where the danger vanished, heavy em
 シーン: ネット上で拡散される「最後の1枚」とされる噂の画像のイメージ（※実際の出回り画像は使わない／概念表現）
 静止画プロンプト（16:9）:
 ```
-A conceptual image of a photo spreading across the internet — a generic blurry shot of a bear approaching a tent shown on phone and computer screens, social media share icons floating around it. Symbolic representation only, not a real photograph. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A conceptual image of a photo spreading across the internet — a generic blurry shot of a bear approaching a tent shown on phone and computer screens, social media share icons floating around it. Symbolic representation only, not a real photograph. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: ⚠️実際に出回っている画像は使用しない（権利・真偽）。「ネットで広まる“最後の1枚”」という概念をスクリーン演出で表現。
 
@@ -1449,7 +1449,7 @@ A conceptual image of a photo spreading across the internet — a generic blurry
 シーン: その噂の写真に大きく「偽物／FAKE」の判定が下る
 静止画プロンプト（16:9）:
 ```
-A conceptual image of a rumored photo being stamped with a large red "FAKE" mark across it, debunked, shown on a screen. Symbolic, not a real photograph. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A conceptual image of a rumored photo being stamped with a large red "FAKE" mark across it, debunked, shown on a screen. Symbolic, not a real photograph. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「この写真は偽物」のテロップと赤い「FAKE」スタンプを大きく。デマを明確に否定。
 
@@ -1473,7 +1473,7 @@ A tent area in dim pre-dawn twilight at 4 AM, clearly too dark for a bright clea
 シーン: 一撃で引き裂かれたテント。カメラを構える余裕などなかったことを“痕跡”で示す
 静止画プロンプト（16:9）:
 ```
-A tent ripped open in a single blow at pre-dawn, sudden and total, no time for anything. Shown through the torn fabric and chaos. No people. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A tent ripped open in a single blow at pre-dawn, sudden and total, no time for anything. Shown through the torn fabric and chaos. No people. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「一撃で／カメラを構える時間などない」のテロップ。偽物の根拠②として論理的に示す。
 
@@ -1485,7 +1485,7 @@ A tent ripped open in a single blow at pre-dawn, sudden and total, no time for a
 シーン: 「美しくも悲しい1枚」とされた画像が、まったくの別物だと判明する
 静止画プロンプト（16:9）:
 ```
-A conceptual screen showing the rumored "beautiful and sad final photo" being revealed as completely unrelated and false, a quiet debunking. Symbolic, not a real photograph. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A conceptual screen showing the rumored "beautiful and sad final photo" being revealed as completely unrelated and false, a quiet debunking. Symbolic, not a real photograph. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「まったくの別物と判明」のテロップ。デマの完全否定で締め。出典を示せる場合は添える。
 
@@ -1493,15 +1493,14 @@ A conceptual screen showing the rumored "beautiful and sad final photo" being re
 
 ナレーター: 星野さんがヒグマに連れ去られてすぐに、武装したハンターとシニア研究者を乗せたヘリコプターが、現場に到着。
 
-【制作メモ】ASSET-094 [キャラアニメーション]
-シーン: 武装したハンターと年配の研究者を乗せたヘリコプターが現場に到着する
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-094 [Lovart動画]
+シーン: 武装したハンターと年配の研究者を乗せたヘリコプターが現場に到着する（実写動画・キャラなし）
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. An armed hunter holding a rifle and an older researcher seated inside a helicopter, serious determined expressions, arriving at a scene. White background. 1:1 aspect ratio. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
+A helicopter sweeping in low and descending toward a remote Kamchatka lakeside camp in the pale early-morning light, rotor wash rippling the grass and the water surface, distant volcanic peaks and dense forest behind, a tense and urgent atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
-背景プロンプト（16:9）:
+→ **Google Flow動画プロンプト:**
 ```
-A helicopter descending toward a remote Kamchatka lakeside in early morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Cinematic footage of a rescue helicopter sweeping in low over a remote Kamchatka lake at dawn and descending toward the lakeside, rotor wash rippling the water and grass, mist and pale morning light, a strong sense of urgency. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: ヘリのローター音。「武装ハンター＋研究者が到着」のテロップ。
 
@@ -1512,7 +1511,7 @@ A helicopter descending toward a remote Kamchatka lakeside in early morning ligh
 【制作メモ】ASSET-095 [Lovart動画]
 シーン: ヘリが低空飛行で森と湖畔を捜索する空撮
 ```
-A helicopter flying low over a Kamchatka forest and lakeshore in morning light, searching the terrain, sweeping over treetops. Tense search operation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A helicopter flying low over a Kamchatka forest and lakeshore in morning light, searching the terrain, sweeping over treetops. Tense search operation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -1532,7 +1531,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A forest clearing seen from a helicopter's aerial viewpoint in morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A forest clearing seen from a helicopter's aerial viewpoint in morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「問題のヒグマを発見」のテロップ。額の赤い傷で同一個体と分かるように。
 
@@ -1548,7 +1547,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A forest clearing in morning light, tense atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A forest clearing in morning light, tense atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「距離を詰めようと」のテロップ。緊張の高まり。
 
@@ -1559,7 +1558,7 @@ A forest clearing in morning light, tense atmosphere. Photorealistic, shot on RE
 【制作メモ】ASSET-098 [Lovart動画]
 シーン: ヘリを見るや、ヒグマ（CHAR-02）の方から突進してくる。常識外れの攻撃性
 ```
-A massive dark brown male bear with a red scar charging aggressively toward the viewer in a forest clearing, having spotted a helicopter, raw explosive power and fearlessness. No human victims in frame. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A massive dark brown male bear with a red scar charging aggressively toward the viewer in a forest clearing, having spotted a helicopter, raw explosive power and fearlessness. No human victims in frame. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -1572,14 +1571,14 @@ A huge brown bear charging straight toward the helicopter's position at full spe
 ナレーター: すかさずハンターはヒグマに向けて発砲。
 
 【制作メモ】ASSET-099 [キャラアニメーション]
-シーン: ハンターがヒグマに向けて発砲する瞬間（※流血は描かない）
+シーン: ヘリコプターに乗ったハンターが、眼下のヒグマに向けて発砲する瞬間（※流血は描かない・ヒグマは画面に入れない）
 キャラプロンプト（1:1）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. An armed hunter firing a rifle, recoil and muzzle flash, decisive serious expression. (No blood, no gore.) White background. 1:1 aspect ratio. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. An armed hunter leaning out of the open door of a flying helicopter and firing a rifle downward, muzzle flash and recoil, decisive serious expression. (No blood, no gore.) White background. 1:1 aspect ratio. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
 ```
 背景プロンプト（16:9）:
 ```
-A forest clearing in morning light, tense decisive moment. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+An aerial view looking down over dense Kamchatka forest and clearings in the pale early-morning light, as if seen from a helicopter above, tense decisive atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans, no bears visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: ⚠️流血なし。発砲のSEとマズルフラッシュのみ。「発砲」のテロップ。
 
@@ -1588,16 +1587,16 @@ A forest clearing in morning light, tense decisive moment. Photorealistic, shot 
 ナレーター: 見事、仕留めることに成功しました。
 
 【制作メモ】ASSET-100 [キャラアニメーション]
-シーン: ヒグマの脅威が止められたことを、抑制的に示す（※遺骸の生々しい描写はしない）
+シーン: 仕留められ倒れたヒグマ（CHAR-02）。目はバツマーク（カートゥーン調・流血や遺骸の生々しい描写はしない）
 キャラプロンプト（1:1）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. An armed hunter lowering his rifle with a grim, solemn expression after the threat has ended. (Do not depict the bear's body graphically.) White background. 1:1 aspect ratio. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, slightly chibi proportions, children's animation style. CHAR-02 (the massive male brown bear with a distinctive RED scar across its forehead) lying collapsed on its side, completely limp and still, with simple X-shaped marks for its eyes in the classic cartoon knocked-out style. Non-graphic and stylized: no blood, no wounds, no gore. White background. 1:1 aspect ratio. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
 ```
 背景プロンプト（16:9）:
 ```
-A quiet forest clearing in morning light, the danger ended, somber stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A quiet forest clearing in morning light, the danger ended, somber stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans, no bears visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
-→ 編集者指示: ⚠️生々しい描写なし。「ヒグマを仕留めた」のテロップを淡々と。BGMは勝利ではなく、重く静かに。
+→ 編集者指示: ⚠️流血・生々しい描写なし。倒れたヒグマ（目はバツ）をカートゥーン調で。「ヒグマを仕留めた」のテロップを淡々と。BGMは勝利ではなく、重く静かに。
 
 ---
 
@@ -1607,7 +1606,7 @@ A quiet forest clearing in morning light, the danger ended, somber stillness. Ph
 シーン: 通常のヒグマはヘリの音に驚いて森へ逃げる、という一般的な習性を示す
 静止画プロンプト（16:9）:
 ```
-A wild brown bear startled by the sound of a helicopter, quickly fleeing into dense forest, a normal fear response. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A wild brown bear startled by the sound of a helicopter, quickly fleeing into dense forest, a normal fear response. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「通常はヘリの音で逃げる」のテロップ。次の“異常性”との対比。
 
@@ -1623,7 +1622,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A stark forest clearing, ominous mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A stark forest clearing, ominous mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「人もヘリも恐れない＝非常に危険な個体」の警告テロップ。なぜそうなったのか？という問いへつなぐ。
 
@@ -1631,13 +1630,17 @@ A stark forest clearing, ominous mood. Photorealistic, shot on RED camera. Docum
 
 ナレーター: その後、星野さんは、森の中で、クマに喰い荒らされた姿で発見され、
 
-【制作メモ】ASSET-103 [静止画]
-シーン: 静かな森。星野さんが発見された場所を、遺体を一切映さず“鎮魂の風景”として示す
-静止画プロンプト（16:9）:
+【制作メモ】ASSET-103 [キャラアニメーション]
+シーン: 森の中で発見された星野さん（CHAR-01）が、傷だらけで倒れている姿（※カートゥーン調・流血は抑制的、生々しい描写はしない）
+キャラプロンプト（1:1）:
 ```
-A quiet solemn forest in Kamchatka in soft morning light, still and reverent, dappled light through the trees. A place of mourning. Absolutely no body, no people, no blood — only the quiet forest. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, slightly chibi proportions, children's animation style. CHAR-01 (the early-40s Japanese man in a cream-and-grey Cowichan knit sweater) lying collapsed and motionless on his back, eyes closed, his clothing torn and dirtied, with several scratches and scrapes across his arms and body, one arm fallen limply to the side. Somber and still. Stylized and restrained: minimal blood, not graphic, no exposed wounds. White background. 1:1 aspect ratio. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
 ```
-→ 編集者指示: ⚠️遺体・流血は絶対に描かない。静謐な森だけを映し、鎮魂のトーン。テロップは最小限・抑制的に。BGMは沈黙に近く。
+背景プロンプト（16:9）:
+```
+A quiet solemn forest in Kamchatka in soft morning light, still and reverent, dappled light through the trees, a place of mourning. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans, no bears visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
+```
+→ 編集者指示: ⚠️生々しい描写は避ける。傷だらけで倒れた星野さんをカートゥーン調・抑制的に。鎮魂のトーン。テロップは最小限。BGMは沈黙に近く。
 
 ---
 
@@ -1651,7 +1654,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A neutral somber backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A neutral somber backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「額に赤い傷の個体が襲ったと結論」のテロップ。額の赤い傷を個体識別の決め手として示す。
 
@@ -1667,7 +1670,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark mysterious forest backdrop. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark mysterious forest backdrop. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「なぜ、ここまで人を恐れなかったのか？」のテロップを大きく。次の“餌付け”の核心へ引き込む。
 
@@ -1683,7 +1686,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A simple study or field office with documents and maps, soft daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A simple study or field office with documents and maps, soft daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「検証で判明した、見過ごせない事実」のテロップ。真相パートの幕開け。
 
@@ -1695,11 +1698,11 @@ A simple study or field office with documents and maps, soft daylight. Photoreal
 シーン: 人間に餌付けされ、警戒心を失ったヒグマ（CHAR-02）。人間に近づくことを覚えてしまった異常個体
 キャラプロンプト（1:1）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02 (massive dark brown male bear, red scar) approaching a human hand offering food, having lost its natural wariness — conditioned by people. White background. 1:1 aspect ratio. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02 (massive dark brown male bear, red scar) approaching a person who crouches and holds out food to lure it, the full body of the person clearly visible, the bear having lost its natural wariness — conditioned by people. Both the bear and the person shown together in full. White background. 1:1 aspect ratio. Both characters together in a single frame, with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
 ```
 背景プロンプト（16:9）:
 ```
-A Kamchatka riverside, soft daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A Kamchatka riverside, soft daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「人間に餌付けされ警戒心を失った異常個体」のテロップ。事件の根本原因を提示。
 
@@ -1715,7 +1718,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A Kamchatka lakeside filming spot, summer greenery. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A Kamchatka lakeside filming spot, summer greenery. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「撮影のための餌付けが行われていた（とされる）」のテロップ。※断定を避け「とされる」の婉曲を保持。
 
@@ -1731,7 +1734,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A Kamchatka wilderness backdrop, soft natural light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A Kamchatka wilderness backdrop, soft natural light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「イーゴリ・シュピレノク（ロシアを代表する野生動物写真家）」のテロップ。証言者として信頼性を示す。
 
@@ -1747,7 +1750,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A calm interview-like natural backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A calm interview-like natural backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 証言を引用テロップで全文表示。「証言：イーゴリ・シュピレノク」のクレジット。
 
@@ -1763,7 +1766,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A calm natural backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A calm natural backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 証言の余韻。BGMを落として言葉の重みを残す。
 
@@ -1779,7 +1782,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A Kamchatka lakeside filming location, summer. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A Kamchatka lakeside filming location, summer. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「撮影しやすくするため餌でおびき寄せていた」のテロップ。身勝手さを示す。
 
@@ -1795,7 +1798,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A somber Kamchatka landscape at fading light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A somber Kamchatka landscape at fading light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「身勝手な撮影者が教育したクマによって」のテロップ。因果関係を矢印インフォグラフィックで（餌付け→警戒心喪失→悲劇）。重いBGM。
 
@@ -1811,7 +1814,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dim study with documents, tense quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dim study with documents, tense quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「もう一つの、見過ごせない事実」のテロップ。BGMで“さらなる衝撃”を予感させる。
 
@@ -1827,7 +1830,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-The same Kamchatka lakeside filming spot, summer daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+The same Kamchatka lakeside filming spot, summer daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「TBS到着の直前まで、同じ場所で餌やり＆撮影」のテロップ。時系列インフォグラフィック（地元局→TBS）の前段。
 
@@ -1835,17 +1838,16 @@ The same Kamchatka lakeside filming spot, summer daylight. Photorealistic, shot 
 
 ナレーター: そして、TBSスタッフと入れ替わるように、その場を離れたと指摘されています。
 
-【制作メモ】ASSET-116 [キャラアニメーション]
-シーン: 地元テレビ局がその場を離れ、入れ替わるようにTBSスタッフ（CHAR-01含む）が到着する
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-116 [Lovart動画]
+シーン: 餌付けをしていた地元テレビ局のスタッフが、雑談しながら現場を立ち去り、遠ざかって消えていく（実写動画・キャラなし／後ろ姿主体）
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One TV crew leaving a site while another group — including CHAR-01 (Japanese photographer) — arrives, passing each other, an ill-fated changeover. White background. 1:1 aspect ratio. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
+A small group of local television crew, seen from behind, walking away from a remote Kamchatka lakeside camp and chatting casually among themselves as they leave, carrying gear and bags over their shoulders, relaxed and unconcerned, summer daylight, the lake and forest behind them. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
-背景プロンプト（16:9）:
+→ **Google Flow動画プロンプト:**
 ```
-A Kamchatka lakeside, summer, a sense of transition between groups. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Cinematic footage of a small group of local television crew walking away from a remote Kamchatka lakeside, seen from behind, chatting casually and relaxed as they leave, carrying gear over their shoulders, summer daylight, the lake and forest behind them. They gradually move off and disappear into the distance. Photorealistic, shot on RED camera. Documentary style.
 ```
-→ 編集者指示: 「入れ替わるように地元局が去った（と指摘）」のテロップ。地元局→TBSのバトンタッチを時系列図で示す。※「指摘されている」の婉曲を保持。
+→ 編集者指示: 「入れ替わるように地元局が去った（と指摘）」のテロップ。立ち去る後ろ姿で、無頓着さ・身勝手さをにじませる。※「指摘されている」の婉曲を保持。
 
 ---
 
@@ -1859,7 +1861,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-An empty lakeside spot where feeding used to happen, now deserted, summer light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+An empty lakeside spot where feeding used to happen, now deserted, summer light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「もらえていた餌が、突然なくなった」のテロップ。ヒグマ視点で因果を直感的に伝える。
 
@@ -1875,7 +1877,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A Kamchatka forest edge, tense quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A Kamchatka forest edge, tense quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「強い空腹＋人間は食べ物をくれるという思い込み」の2点を併記テロップ。危険な組み合わせを示す。
 
@@ -1891,7 +1893,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A Kamchatka lakeside camp in summer, forest edge beyond. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A Kamchatka lakeside camp in summer, forest edge beyond. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「そのタイミングで来たのが星野さんチーム」のテロップ。不運な巡り合わせを強調。重いBGM。
 
@@ -1907,7 +1909,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark ominous forest edge. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark ominous forest edge. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「人間さえも食べ物だと認識していたのかもしれない」のテロップ。※「かもしれない」の推量を保持。最も恐ろしい示唆を静かに。
 
@@ -1923,7 +1925,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A national-park-like wilderness backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A national-park-like wilderness backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「野生動物保護の専門家の間に伝わる言葉」のテロップ。次の格言への導入。
 
@@ -1939,7 +1941,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A solemn forest at dusk, melancholic light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A solemn forest at dusk, melancholic light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 格言を引用テロップで大きく表示（英語の "A fed bear is a dead bear" を併記しても良い）。重く静かに。
 
@@ -1955,7 +1957,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A Kamchatka lakeside, summer daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A Kamchatka lakeside, summer daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「餌付け→警戒心が薄れる」のテロップ。
 
@@ -1971,7 +1973,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A camp area, daytime, tense. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A camp area, daytime, tense. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「大声もシャベルも効かない」のテロップ。威嚇が通用しない異常性を強調。
 
@@ -1987,7 +1989,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A forest edge, the bear circling back. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A forest edge, the bear circling back. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「追い払っても根本解決にならない」のテロップ。
 
@@ -2003,7 +2005,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A familiar lakeside spot, the bear's repeated path implied. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A familiar lakeside spot, the bear's repeated path implied. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「執着心が強く、同じ場所に戻る」のテロップ。
 
@@ -2011,29 +2013,28 @@ A familiar lakeside spot, the bear's repeated path implied. Photorealistic, shot
 
 ナレーター: ヒグマは、一度おぼえた味や匂いを、長く忘れないとされ、嗅覚は、人間のおよそ2000倍とも言われます。
 
-【制作メモ】ASSET-127 [キャラアニメーション]
-シーン: 鋭い嗅覚を持つヒグマ（CHAR-02）が鼻を利かせる。嗅覚2000倍のインフォグラフィック
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-127 [静止画]
+シーン: ヒグマの鋭い嗅覚を、鼻のクローズアップで示す（実写）。嗅覚2000倍のインフォグラフィック
+静止画プロンプト（16:9）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02 (red scar) lifting its nose and sniffing the air intently, emphasizing its powerful sense of smell. White background. 1:1 aspect ratio. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
+An extreme close-up of a wild brown bear's snout and nose in soft natural light, the wet dark nose prominent and close to the camera, nostrils flared as it sniffs the air, detailed fur, shallow depth of field emphasizing its powerful sense of smell. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
-背景プロンプト（16:9）:
-```
-A Kamchatka wilderness, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
-```
-→ 編集者指示: 「嗅覚は人間の約2000倍とも」「一度覚えた味・匂いを長く忘れない」のインフォグラフィック。※「とも言われる」の婉曲を保持。
+→ 編集者指示: 「嗅覚は人間の約2000倍とも」「一度覚えた味・匂いを長く忘れない」のインフォグラフィックを重ねる。※「とも言われる」の婉曲を保持。
 
 ---
 
 ナレーター: 数キロ先にある食べ物の匂いさえ、嗅ぎ分けてしまいます。
 
-【制作メモ】ASSET-128 [静止画]
-シーン: 数キロ先の匂いを嗅ぎ分けるヒグマの嗅覚を、広大な距離のインフォグラフィックで示す
-静止画プロンプト（16:9）:
+【制作メモ】ASSET-128 [Lovart動画]
+シーン: 森の中をゆっくりと歩く一頭のヒグマ（実写動画）
 ```
-A wide aerial view of Kamchatka wilderness with a conceptual scent trail drifting for kilometers toward a single bear, illustrating an extraordinary sense of smell over vast distance. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A wild brown bear walking slowly and calmly through a dense Kamchatka forest, dappled sunlight filtering through the trees, lush green undergrowth, the bear moving steadily among the tree trunks. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
-→ 編集者指示: 「数km先の匂いも嗅ぎ分ける」のインフォグラフィック（距離を地図上に図示）。
+→ **Google Flow動画プロンプト:**
+```
+Cinematic documentary footage of a wild brown bear walking slowly and calmly through a dense forest in Kamchatka, dappled sunlight filtering through the trees, the bear moving steadily among the trunks, lush greenery, a quiet natural atmosphere. Photorealistic, shot on RED camera. Documentary style.
+```
+→ 編集者指示: 「数km先の匂いも嗅ぎ分ける」のインフォグラフィック（距離を地図上に図示）を歩くヒグマ映像に重ねる。
 
 ---
 
@@ -2047,7 +2048,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dark forest edge. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dark forest edge. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「『人間は食べ物』の記憶は消えない」のテロップ。
 
@@ -2063,7 +2064,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A solemn dusk forest, melancholic light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A solemn dusk forest, melancholic light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「星野さんを襲った1頭は、まさにその典型」のテロップ。SHOパートの締め。次の“報告書の真相”へ向け、重い余韻を残す。
 
@@ -2081,7 +2082,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dim quiet room with documents, tense ominous atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dim quiet room with documents, tense ominous atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「本当に恐ろしいのは、ここから」のテロップ。BGMを一段沈め、転換を予感させる。
 
@@ -2089,49 +2090,43 @@ A dim quiet room with documents, tense ominous atmosphere. Photorealistic, shot 
 
 ナレーター: 実はここまでの話は、事件直後のTBS側が作成した「遭難報告書」を元にまとめた内容です。
 
-【制作メモ】ASSET-132 [キャラアニメーション]
-シーン: TBS側が作成した「遭難報告書」という書類。ここまでの話の出所を示す
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-132 [静止画]
+シーン: TBS側が作成した「遭難報告書」という書類（実写）。ここまでの話の出所を示す
+静止画プロンプト（16:9）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04 (Russian researcher) holding a plain blank folder (no legible text), with a serious measured expression, presenting the source of the account so far. White background. 1:1 aspect ratio. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
+A formal official-looking incident report lying on a plain wooden desk, a typed document with a Japanese title "遭難報告書" printed at the top of the cover page, neutral office lighting, a somber serious tone, shallow depth of field. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
-背景プロンプト（16:9）:
-```
-A plain desk surface with documents, neutral office light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
-```
-→ 編集者指示: 「ここまでは『遭難報告書』に基づく内容」のテロップ。報告書を象徴する書類のグラフィック（実物・ロゴは使わない）。
+→ 編集者指示: 「ここまでは『遭難報告書』に基づく内容」のテロップ。※AIが日本語タイトルを崩す場合は、無地の書類を生成し「遭難報告書」の文字は編集でテロップ／グラフィック合成する（実在の実物・ロゴは使わない）。
 
 ---
 
 ナレーター: 事件のあと、「どうぶつ奇想天外！」では、星野さんが最後に遺した映像が、追悼番組として放送されました。
 
-【制作メモ】ASSET-133 [キャラアニメーション]
-シーン: 追悼番組として、星野さんが最後に遺した映像が放送される。テレビ画面の前の人々
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-133 [Lovart動画]
+シーン: 誰もいない薄暗い部屋。動物の映像が流れるテレビだけが灯っている（実写動画・人物なし）
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A family watching a television broadcasting a memorial program, the screen showing nature footage (no recognizable logos). Solemn, quiet viewing. White background. 1:1 aspect ratio. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
+A dimly-lit empty modern living room at night, no people present, only a modern flat-screen television switched on in the dark, its screen glowing and showing soft wildlife and nature footage (no recognizable logos, no text), the flickering screen light playing on the quiet walls, a somber lonely atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
-背景プロンプト（16:9）:
+→ **Google Flow動画プロンプト:**
 ```
-A living room at night lit by a TV's glow, quiet and somber. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Cinematic footage of a dimly-lit empty modern room at night with only a glowing modern flat-screen television on, its screen softly showing wildlife and nature footage (no logos, no text), the flickering light playing on the walls, quiet and somber, no people present, a sense of absence. Photorealistic, shot on RED camera. Documentary style.
 ```
-→ 編集者指示: 「最後の映像が追悼番組として放送」のテロップ（※局名・実映像は使わずテキストで）。
+→ 編集者指示: 「最後の映像が追悼番組として放送」のテロップ（※局名・実映像は使わずテキストで）。誰もいない部屋とテレビだけで“喪失”を示す。
 
 ---
 
 ナレーター: ところが、その番組や報道を見た一部の人々から、星野さんへの、心ない非難が寄せられます。
 
-【制作メモ】ASSET-134 [キャラアニメーション]
-シーン: 番組を見た一部の人々から、星野さんへ心ない非難の声が寄せられる
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-134 [Lovart動画]
+シーン: スマホでコメント欄をスクロールしている様子（実写動画）。画面のコメントはモザイク（※非難の文字テキストは編集で合成）
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Several anonymous people pointing and criticizing harshly, cold and judgmental expressions, sending hurtful words. White background. 1:1 aspect ratio. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
+A close-up of a hand holding and scrolling a modern smartphone, the screen showing a social-media-style comment feed that is deliberately blurred and pixelated with a mosaic effect (no legible text), the thumb scrolling down through the feed, a cold detached mood, soft indoor light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
-背景プロンプト（16:9）:
+→ **Google Flow動画プロンプト:**
 ```
-An abstract cold backdrop suggesting public criticism, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+Cinematic close-up footage of a hand scrolling a modern smartphone, the screen showing a social-media comment feed that is blurred and pixelated with a mosaic effect (no legible text), the thumb flicking and scrolling down through the feed, a cold detached mood, soft indoor light. Photorealistic, shot on RED camera. Documentary style.
 ```
-→ 編集者指示: 「心ない非難が寄せられた」のテロップ。冷たい空気を演出（誹謗中傷の矢印イメージ等）。
+→ 編集者指示: 画面コメントはモザイク。「心ない非難が寄せられた」＝**非難の文字テキストは編集でモザイク上に合成**。冷たい空気を演出。
 
 ---
 
@@ -2145,7 +2140,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A cold dark abstract backdrop. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A cold dark abstract backdrop. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「専門家の忠告を無視した自業自得だ」という非難をテロップで（引用符付き・匿名の声として）。冷たいSE。
 
@@ -2161,7 +2156,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A plain desk with the report under focused light, the rest in shadow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A plain desk with the report under focused light, the rest in shadow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「報告書だけを読めば、そう見えてしまう」のテロップ。一面的な見え方を示す。
 
@@ -2177,7 +2172,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A muted somber backdrop, cold tones with a faint warm light on the subject's side. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A muted somber backdrop, cold tones with a faint warm light on the subject's side. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「いわれのない言葉にさらされた」のテロップ。星野さんの優しい人物像と、不当な非難の対比で観る人の感情を動かす。
 
@@ -2193,7 +2188,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dim conceptual backdrop, a single document lit while the background stays in shadow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dim conceptual backdrop, a single document lit while the background stays in shadow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「報告書だけが独り歩き」「その陰で、本当は？」のテロップ。真相への問いを投げかける。
 
@@ -2209,7 +2204,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A still, muted, lonely backdrop. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A still, muted, lonely backdrop. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「誰も知る由もなかった」のテロップ。“間”を置き、次の証言による反転へ。
 
@@ -2225,7 +2220,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A calm interview-like backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A calm interview-like backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「現場の証言から、報告書との矛盾が指摘」のテロップ。証言者（米写真家・ガイド）を示し、反証パートの開始を告げる。
 
@@ -2241,7 +2236,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A small one-person tent by a lake in dim evening light, quiet and still, forest edge nearby. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A small one-person tent by a lake in dim evening light, quiet and still, forest edge nearby. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「報告書の主張：星野さんが無謀な判断をした」のテロップ。引用部分をハイライト。次の反証への“フリ”。
 
@@ -2257,7 +2252,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A salmon river with notably few fish, sparse compared to a normal run, summer light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A salmon river with notably few fish, sparse compared to a normal run, summer light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「サケは例年の10分の1」のインフォグラフィック（例年 vs 当年の比較）。「いい写真が撮れない」という星野さんの言葉をテロップで。反証①。
 
@@ -2273,7 +2268,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A salmon river with few fish, summer light, the scarcity evident. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A salmon river with few fish, summer light, the scarcity evident. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「星野さんも、餌が少ない時期だと理解していた」のテロップ。報告書の主張（豊富だから油断）を覆す。
 
@@ -2289,7 +2284,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A small one-person tent by a lake in dim evening light, quiet and still, forest edge nearby. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A small one-person tent by a lake in dim evening light, quiet and still, forest edge nearby. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「報告書の主張：自ら一人でテントを選んだ」のテロップ。次の反証への“フリ”。
 
@@ -2305,7 +2300,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-The interior of a log cabin crammed full of filming equipment and cases, leaving almost no room to sleep. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+The interior of a log cabin crammed full of filming equipment and cases, leaving almost no room to sleep. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「証言：小屋は機材で一杯、寝るスペースがなかった」のテロップ。機材で埋まった小屋内をビジュアルで。反証②。
 
@@ -2321,7 +2316,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A cabin full of gear and, outside, a small tent, dusk light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A cabin full of gear and, outside, a small tent, dusk light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「小屋に入れず、結果的にテントへ」のテロップ。「自ら選んだ」のではないことを明確に。
 
@@ -2337,7 +2332,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A neutral split-tone backdrop suggesting comparison. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A neutral split-tone backdrop suggesting comparison. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「報道：無謀にテントを選んだ ／ 実際：小屋に入れなかった」の対比インフォグラフィックを並べる。
 
@@ -2353,7 +2348,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A tidy tent interior with no food inside, gear neatly arranged. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A tidy tent interior with no food inside, gear neatly arranged. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「テント内に食べ物を一切置かない徹底ぶり」のテロップ。専門家としての慎重さを示す。反証③。
 
@@ -2369,7 +2364,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A tent and, conceptually, a faint scent trail leading off into the forest. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A tent and, conceptually, a faint scent trail leading off into the forest. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「食べ物の匂い→ヒグマを引き寄せると熟知」のテロップ。匂いとヒグマの関係を小さく図解。
 
@@ -2385,7 +2380,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A calm camp at dusk, orderly and careful. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A calm camp at dusk, orderly and careful. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「できる最大限の工夫・努力をしていた」のテロップ。「無謀」という非難を明確に否定。
 
@@ -2401,7 +2396,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A quiet tent by the lake at dusk, solemn and still. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A quiet tent by the lake at dusk, solemn and still. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: ⚠️直接描写なし。「様々な要素が重なり、命が絶たれた」のテロップを抑制的に。重く静かなBGM。
 
@@ -2417,7 +2412,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A neutral office backdrop, even light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A neutral office backdrop, even light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: TBS側の回答を引用テロップで正確に表示（中立的に）。「事実と異なる記載は認める／予見・予防は困難だった」。断定的な非難はせず事実として提示。
 
@@ -2433,7 +2428,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A calm quiet interior with soft natural light, gentle and reflective. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A calm quiet interior with soft natural light, gentle and reflective. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 直子さんの言葉を引用テロップで全文表示。静かで繊細なBGM。【実写差し込み候補：直子さん本人写真（④）】
 
@@ -2449,7 +2444,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A soft warm interior with gentle light, a sense of quiet acceptance. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A soft warm interior with gentle light, a sense of quiet acceptance. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「クマが悪いのではなく、人間の餌付けが原因」「クマを憎まない」のテロップ。直子さんの慈しみある姿勢を温かく。
 
@@ -2465,7 +2460,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dim quiet room, unresolved heavy atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dim quiet room, unresolved heavy atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「報告書は訂正されず、真実はわからないまま」のテロップ。未訂正の書類グラフィックは編集で重ねる。やや重い余韻。
 
@@ -2477,11 +2472,11 @@ A dim quiet room, unresolved heavy atmosphere. Photorealistic, shot on RED camer
 シーン: 結論に納得できない星野さんの関係者たちが、真実を明らかにしようと協力する
 キャラプロンプト（1:1）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A small group of people working together with determined, earnest expressions, united to uncover the truth. White background. 1:1 aspect ratio. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A few people gathered closely around a table covered with documents, papers, and photographs, leaning in to examine and compare them, discussing earnestly with determined, serious expressions, working together to uncover the truth. A warm, determined mood. White background. 1:1 aspect ratio. A single cohesive illustration of the group together in one frame, not split into panels, with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Generate 3 separate images.
 ```
 背景プロンプト（16:9）:
 ```
-A modest workspace with warm light, a sense of shared purpose. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A modest workspace with warm light, a sense of shared purpose. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「納得できない関係者の協力」のテロップ。真実を求める人々の連帯を示す。
 
@@ -2497,7 +2492,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A calm warm interior, gentle light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A calm warm interior, gentle light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「書籍『星野道夫 永遠のまなざし』として全貌が公開」のテロップで書名を表示。【実写差し込み候補：書影 ※出版社許諾・引用要件に注意。無ければテロップのみ】
 
@@ -2508,7 +2503,7 @@ A calm warm interior, gentle light. Photorealistic, shot on RED camera. Document
 【制作メモ】ASSET-158 [Lovart動画]
 シーン: 事件から10年の歳月。季節が移り変わるカムチャッカ／アラスカの時の流れ
 ```
-A poetic time-lapse feeling of seasons changing over a northern wilderness — summer green turning to autumn gold to winter snow and back — conveying ten years passing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A poetic time-lapse feeling of seasons changing over a northern wilderness — summer green turning to autumn gold to winter snow and back — conveying ten years passing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -2528,7 +2523,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A soft warm natural backdrop, gentle light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A soft warm natural backdrop, gentle light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「ある映画への出演を予定していた」のテロップ。
 
@@ -2544,7 +2539,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A neutral artistic interior, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A neutral artistic interior, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「龍村仁 監督」「ドキュメンタリー映画『地球交響曲 第三番』」のテロップで紹介（作品ビジュアルは権利に注意・基本テキストで）。
 
@@ -2560,7 +2555,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dim quiet room, somber heavy atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dim quiet room, somber heavy atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「撮影直前に、星野さんの訃報」のテロップ。重く静かなBGM。
 
@@ -2576,7 +2571,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dim contemplative space, weight of a difficult decision. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dim contemplative space, weight of a difficult decision. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「普通なら、撮影は中止」のテロップ。葛藤を表現。
 
@@ -2592,7 +2587,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A space with a hint of light breaking through, a turning point. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A space with a hint of light breaking through, a turning point. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「ある決断」のテロップ。BGMが希望へ転じる兆し。
 
@@ -2608,7 +2603,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-An Alaskan village landscape, tundra and small wooden homes, soft northern light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+An Alaskan village landscape, tundra and small wooden homes, soft northern light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「星野さんのエッセイに登場するアラスカの人々を訪ねる旅へ」のテロップ。映画の方向転換を温かく示す。
 
@@ -2620,7 +2615,7 @@ An Alaskan village landscape, tundra and small wooden homes, soft northern light
 シーン: 1997年10月、映画が完成・公開。映画館のスクリーンが灯る
 静止画プロンプト（16:9）:
 ```
-A cinema auditorium with a glowing screen coming to life, soft light spilling over empty seats, a sense of a film premiere. No recognizable footage on screen. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A cinema auditorium with a glowing screen coming to life, soft light spilling over empty seats, a sense of a film premiere. No recognizable footage on screen. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「1997年10月 映画『地球交響曲 第三番』公開」のテロップ。※実際の映画映像は使わない。
 
@@ -2632,7 +2627,7 @@ A cinema auditorium with a glowing screen coming to life, soft light spilling ov
 シーン: 星野さんの言葉とアラスカの人々の姿がスクリーンに映る（実映像は使わず象徴的に）
 静止画プロンプト（16:9）:
 ```
-A cinema screen glowing softly with warm images of northern wilderness and gentle human presence implied, words of a kind spirit conveyed. Symbolic, no recognizable real footage. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A cinema screen glowing softly with warm images of northern wilderness and gentle human presence implied, words of a kind spirit conveyed. Symbolic, no recognizable real footage. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「星野さんの言葉とアラスカの人々がスクリーンに」のテロップ。象徴的なスクリーン演出で。
 
@@ -2648,7 +2643,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A warm cinema interior glow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A warm cinema interior glow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「星野さんの活動が、もう一度人々のもとへ」のテロップ。温かいBGMで救いを感じさせる。
 
@@ -2660,7 +2655,7 @@ A warm cinema interior glow. Photorealistic, shot on RED camera. Documentary sty
 シーン: クリル湖周辺で、安全対策が強化されていく様子（柵や注意喚起の整備が進む）
 静止画プロンプト（16:9）:
 ```
-A remote Kamchatka lakeside where safety measures are being installed — sturdy fencing and warning signage being set up around a camp area, a sense of lessons being applied. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A remote Kamchatka lakeside where safety measures are being installed — sturdy fencing and warning signage being set up around a camp area, a sense of lessons being applied. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「星野さんの命と引き換えに、安全対策が強化」のテロップ。重みのあるトーンで。
 
@@ -2672,7 +2667,7 @@ A remote Kamchatka lakeside where safety measures are being installed — sturdy
 シーン: 人間の生活拠点が電気柵でしっかりと囲まれている
 静止画プロンプト（16:9）:
 ```
-A wilderness camp and cabin enclosed by a sturdy electric fence, a clear protective boundary between the human living area and the surrounding forest. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A wilderness camp and cabin enclosed by a sturdy electric fence, a clear protective boundary between the human living area and the surrounding forest. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「生活拠点を電気柵で囲む」のテロップ。具体的な予防策を示す。
 
@@ -2688,7 +2683,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A wilderness boundary with a fence line between forest and camp. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A wilderness boundary with a fence line between forest and camp. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「ヒグマと人間の距離が物理的に守られた」のテロップ。柵で隔てられた“適切な距離”を図示。
 
@@ -2704,7 +2699,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A natural wilderness where a bear forages on its own, away from human areas. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A natural wilderness where a bear forages on its own, away from human areas. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「『人間の食べ物』から遠ざける＝最も確実な予防策」のテロップ。
 
@@ -2720,7 +2715,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A Kamchatka wilderness research setting, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A Kamchatka wilderness research setting, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「イーゴリ・レヴェンコ（星野さんのガイドを務めた研究者）」のテロップ。
 
@@ -2736,7 +2731,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A Kamchatka wilderness with distant bears in their natural habitat, observation viewpoint. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A Kamchatka wilderness with distant bears in their natural habitat, observation viewpoint. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「人間に遭遇したヒグマの行動を観察し続けた」のテロップ。地道な研究を示す。
 
@@ -2752,7 +2747,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A wilderness trail where a bear retreats into the forest. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A wilderness trail where a bear retreats into the forest. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「270事例を記録／7割以上が逃げた」のインフォグラフィック（円グラフ等）。データの信頼性を示す。
 
@@ -2768,7 +2763,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A peaceful wilderness, a bear at a safe distance. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A peaceful wilderness, a bear at a safe distance. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「襲ったのはわずか1％」のインフォグラフィックを強調（7割逃走と対比）。
 
@@ -2784,7 +2779,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A natural wilderness, a bear keeping its natural wary distance. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A natural wilderness, a bear keeping its natural wary distance. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「餌付けされていなければ、ヒグマは人を避ける」のテロップ。事件の本質（＝餌付けが異常を生んだ）を裏づける。
 
@@ -2800,7 +2795,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A Kamchatka wilderness, contemplative mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A Kamchatka wilderness, contemplative mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「どこで、なぜぶつかるのか」のテロップ。研究の問いを示す。
 
@@ -2816,7 +2811,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A Kamchatka field research setting, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A Kamchatka field research setting, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「一つ一つの記録が、後の事故を防ぐ貴重なデータに」のテロップ。地道な積み重ねの価値を示す。
 
@@ -2832,7 +2827,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A clean wilderness with no human waste, a bear living naturally. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A clean wilderness with no human waste, a bear living naturally. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「餌付けをやめ、ゴミ・食べ物を遠ざける」のテロップ。具体的な行動指針を示す。
 
@@ -2848,7 +2843,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A solemn wilderness at soft light, reflective mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A solemn wilderness at soft light, reflective mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「多くの犠牲と引き換えに、ようやく分かった」のテロップ。重く静かなトーン。
 
@@ -2864,7 +2859,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A wilderness where humans and nature meet, balanced thoughtful mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A wilderness where humans and nature meet, balanced thoughtful mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「ヒグマを変えるのも、守るのも、人間の行い次第」のテロップ。本作のメッセージの核を提示。
 
@@ -2880,7 +2875,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A Kamchatka wilderness with a sense of time having passed, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A Kamchatka wilderness with a sense of time having passed, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「星野さんの事件から7年後」のテロップ。
 
@@ -2892,7 +2887,7 @@ A Kamchatka wilderness with a sense of time having passed, soft light. Photoreal
 シーン: 同じカムチャッカ半島で、再び起きてしまう悲劇の予感
 静止画プロンプト（16:9）:
 ```
-A vast Kamchatka wilderness under heavy skies, an ominous sense that history is repeating itself. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A vast Kamchatka wilderness under heavy skies, an ominous sense that history is repeating itself. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「同じカムチャッカで、似た事件が」のテロップ。重いBGM。ゆっくりズームイン。
 
@@ -2908,7 +2903,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A Kamchatka wilderness, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A Kamchatka wilderness, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「ヴィタリー・ニコラエンコ（30年以上ヒグマを観察した研究者）」のテロップ。
 
@@ -2924,7 +2919,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dense forest edge in Kamchatka, the trees where a bear retreated. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dense forest edge in Kamchatka, the trees where a bear retreated. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: ⚠️襲撃は直接描写しない。「自ら3mまで接近し、林へ追った」のテロップ。3mの距離を平面図で示し“近づきすぎ”を視覚化。
 
@@ -2936,7 +2931,7 @@ A dense forest edge in Kamchatka, the trees where a bear retreated. Photorealist
 シーン: 現場に残された、使い切ったクマ撃退スプレーの空き缶。抵抗の跡を“モノ”で示す（※遺体なし）
 静止画プロンプト（16:9）:
 ```
-An empty, used-up bear spray canister lying on the forest floor in Kamchatka, the only trace left at a scene, soft somber light. No people, no body, no blood — only the spent canister. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+An empty, used-up bear spray canister lying on the forest floor in Kamchatka, the only trace left at a scene, soft somber light. No people, no body, no blood — only the spent canister. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: ⚠️遺体・流血なし。使い切った空き缶だけで“抵抗したが及ばなかった”ことを示す。「使い切ったスプレーが残されていた」のテロップ。静かに寄る。
 
@@ -2952,7 +2947,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A forest edge in Kamchatka, tense atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A forest edge in Kamchatka, tense atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「餌付けではないが、人が必要以上に接近した＝今回と通ずる」のテロップ。共通点（人間側の行動）を整理。
 
@@ -2964,7 +2959,7 @@ A forest edge in Kamchatka, tense atmosphere. Photorealistic, shot on RED camera
 シーン: 人間が原因のヒグマ事件が、いまも世界各地で繰り返されていることを世界地図で示す
 静止画プロンプト（16:9）:
 ```
-A conceptual world map with multiple highlighted regions where human-caused bear conflicts recur, a global recurring problem. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A conceptual world map with multiple highlighted regions where human-caused bear conflicts recur, a global recurring problem. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「いまもなお世界中で繰り返されている」のテロップ。世界地図に複数地点をマーキング（編集で点灯演出）。
 
@@ -2980,7 +2975,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A scholarly study or natural backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A scholarly study or natural backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「スティーブン・ヘレロ博士（カナダ・カルガリー大学名誉教授／ヒグマ研究の世界的権威）」のテロップ。著書『Bear Attacks』に触れても良い。
 
@@ -2996,7 +2991,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A scholarly backdrop, soft serious light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A scholarly backdrop, soft serious light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: ヘレロ博士の言葉を引用テロップで全文表示。「避けることのできた悲劇だった」。重く明確に。
 
@@ -3012,7 +3007,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A scholarly backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A scholarly backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 言葉の余韻。世界的権威の結論の重みを残す。
 
@@ -3028,7 +3023,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A scholarly backdrop, clear serious light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A scholarly backdrop, clear serious light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「餌付けがなければ／警告が共有されていれば、防げた」のテロップを2点併記。「世界の専門家が結論づけている」と強調。
 
@@ -3044,7 +3039,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A serene Alaskan landscape at soft golden light, reflective and poetic. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A serene Alaskan landscape at soft golden light, reflective and poetic. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「星野道夫 エッセイ『旅をする木』」のテロップで書名を示す。【実写差し込み候補：書影 ※許諾要・無ければテロップのみ】
 
@@ -3060,7 +3055,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A delicate natural scene — a single small flower or fragile new growth in vast wilderness, soft light emphasizing fragility within grandeur. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A delicate natural scene — a single small flower or fragile new growth in vast wilderness, soft light emphasizing fragility within grandeur. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 星野さんの言葉を引用テロップで全文表示。「強さの裏の脆さ」を繊細な自然のカットで重ねる。
 
@@ -3076,7 +3071,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A soft warm natural backdrop, gentle light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A soft warm natural backdrop, gentle light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「脆さに心を寄せる、優しい人物」のテロップ。温かいBGM。
 
@@ -3092,7 +3087,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A wide Alaskan wilderness with a bear far in the distance, gentle reverent light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A wide Alaskan wilderness with a bear far in the distance, gentle reverent light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「絵本『クマよ』」のテロップで書名を示す。星野さんがヒグマへ語りかける構図。
 
@@ -3108,7 +3103,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A vast wilderness with a bear in the far distance, poetic gentle light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A vast wilderness with a bear in the far distance, poetic gentle light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 星野さんの言葉を引用テロップで表示。「ふれてみたい けれども」。手を伸ばしかけて、ためらう繊細さ。
 
@@ -3124,7 +3119,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A vast wilderness under a starry twilight sky, a sense of immense distance like that between stars. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A vast wilderness under a starry twilight sky, a sense of immense distance like that between stars. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 星野さんの言葉を引用テロップで全文表示。「はるかな星のように、遠く はなれている」。星空と距離のイメージを重ねる。
 
@@ -3140,7 +3135,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A wilderness at twilight with respectful distance implied. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A wilderness at twilight with respectful distance implied. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「触れたいけれど、触れてはいけない」のテロップ。距離の尊さを静かに。
 
@@ -3156,7 +3151,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A serene wilderness, reverent light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A serene wilderness, reverent light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「決して越えてはいけない距離を、誰よりも深く理解していた」のテロップ。星野さんの本質を示す。
 
@@ -3172,7 +3167,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A serene summer Alaskan landscape, soft melancholic golden light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A serene summer Alaskan landscape, soft melancholic golden light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「43歳の夏に、命を落とした」のテロップ。静かな鎮魂のトーン。
 
@@ -3188,7 +3183,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A warm soft backdrop suggesting the passage from past to present, gentle light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A warm soft backdrop suggesting the passage from past to present, gentle light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「当時1歳11ヶ月だった息子・翔馬さん」のテロップ。【実写差し込み候補：父と幼子の写真（①）※クレジット「画像提供：星野道夫事務所」必須】
 
@@ -3204,7 +3199,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A dignified university campus exterior, soft daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A dignified university campus exterior, soft daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「父と同じ、慶應義塾大学へ進学」のテロップ。父子のつながりを示す。
 
@@ -3220,7 +3215,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A vast Alaskan landscape, tundra and mountains, the same land the father loved, soft northern light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A vast Alaskan landscape, tundra and mountains, the same land the father loved, soft northern light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「父が見つめたアラスカを、自らの足で訪ね歩いた」のテロップ。父子が同じ大地でつながる感動を演出。
 
@@ -3236,7 +3231,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-An Alaskan wilderness, documentary filming atmosphere, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+An Alaskan wilderness, documentary filming atmosphere, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「2018年 NHKドキュメンタリーとして放送」のテロップ（※局名はテキストで・実映像は使わない）。
 
@@ -3252,7 +3247,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A soft reflective Alaskan landscape at gentle light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A soft reflective Alaskan landscape at gentle light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「父の記憶は、ほとんどないかもしれない」のテロップ。静かで繊細なBGM。
 
@@ -3268,7 +3263,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A breathtaking Alaskan vista at golden light, the world the father loved, hopeful and warm. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A breathtaking Alaskan vista at golden light, the world the father loved, hopeful and warm. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「父がまなざしを注いだ世界を、息子もまた見つめ始めている」のテロップ。希望を感じさせる温かいBGM。
 
@@ -3284,7 +3279,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A softly lit gallery wall with blurred large nature photographs. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A softly lit gallery wall with blurred large nature photographs. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「いまも、多くの人の心を動かし続けている」のテロップ。【実写差し込み候補：星野さんの作品 ※事務所許諾があれば】
 
@@ -3300,7 +3295,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A bright high school classroom, soft daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A bright high school classroom, soft daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「2006年 高校の教科書にも、その生き方が紹介」のテロップ（※教科書実物は権利に注意・基本テキストで）。
 
@@ -3316,7 +3311,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A spacious photo exhibition hall with large framed nature photographs on the walls, warm gallery lighting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A spacious photo exhibition hall with large framed nature photographs on the walls, warm gallery lighting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「没後20年・生誕70年 全国で写真展」のテロップ。新しい世代が作品と出会う様子を温かく。
 
@@ -3332,7 +3327,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A warm gentle interior, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A warm gentle interior, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「星野さんは生前『アラスカに住みたい』と」のテロップ。
 
@@ -3348,7 +3343,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A cozy log cabin home in the Alaskan wilderness in spring/summer, surrounded by greenery and distant mountains. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A cozy log cabin home in the Alaskan wilderness in spring/summer, surrounded by greenery and distant mountains. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「アラスカの丸太小屋を守り、春と夏に手入れ」のテロップ。【実写差し込み候補：丸太小屋の写真があれば】
 
@@ -3364,7 +3359,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A tidy warm office space with shelves, soft daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A tidy warm office space with shelves, soft daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「2000年12月 星野道夫事務所を設立」のテロップ。
 
@@ -3380,7 +3375,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-An archive room with carefully stored photographs and papers, warm light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+An archive room with carefully stored photographs and papers, warm light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「写真・原稿の管理、写真展の開催で活動を後世へ」のテロップ。
 
@@ -3396,7 +3391,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A warm quiet interior, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A warm quiet interior, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「忘れられない発見」のテロップ。温かい余韻のあるエピソードへの導入。
 
@@ -3412,7 +3407,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A warm interior with photographs spread on a table, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A warm interior with photographs spread on a table, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「残された写真を整理していたとき」のテロップ。
 
@@ -3428,7 +3423,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A warm interior, many flower photographs implied on a table, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A warm interior, many flower photographs implied on a table, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「同行した年だけ、花の写真が多い」のテロップ。たくさんの花の写真のイメージカットを添える。
 
@@ -3444,7 +3439,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-An Alaskan meadow dotted with small wildflowers, soft warm light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+An Alaskan meadow dotted with small wildflowers, soft warm light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「妻が喜ぶようにと、さりげない優しさ」のテロップ。温かく感動的なBGM。
 
@@ -3460,7 +3455,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A warm soft natural backdrop, gentle light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A warm soft natural backdrop, gentle light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「生前、妻についてこう語っていた」のテロップ。次の引用への導入。
 
@@ -3476,7 +3471,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A gentle backdrop with soft hints of flowers, warm light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A gentle backdrop with soft hints of flowers, warm light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 星野さんの言葉を引用テロップで表示（前半）。温かいBGM。
 
@@ -3492,7 +3487,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A gentle warm backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A gentle warm backdrop, soft light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 引用テロップ（続き）。穏やかに。
 
@@ -3508,7 +3503,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-An Alaskan ground dotted with tiny delicate wildflowers, soft warm light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+An Alaskan ground dotted with tiny delicate wildflowers, soft warm light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 引用テロップ（続き）。小さな花に気づくまなざしを重ねる。
 
@@ -3524,7 +3519,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-An Alaskan meadow of small wildflowers in warm golden light, joyful and tender. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+An Alaskan meadow of small wildflowers in warm golden light, joyful and tender. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 星野さんの言葉を引用テロップで結ぶ。「いま、すごく嬉しいんですよ」。最も温かい笑顔で。感動の頂点。
 
@@ -3540,7 +3535,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A quiet wilderness at soft light, reflective and somber. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A quiet wilderness at soft light, reflective and somber. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「クマが悪いのではなく、人間の餌付けがヒグマを変えた」のテロップ。メッセージを静かに、しかし明確に。
 
@@ -3556,7 +3551,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ```
 背景プロンプト（16:9）:
 ```
-A path leading forward through a gentle landscape at soft warm light, a sense of moving on with quiet strength. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. Generate 3 separate images.
+A path leading forward through a gentle landscape at soft warm light, a sense of moving on with quiet strength. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty scene only. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → 編集者指示: 「ご家族は静かに前へと歩み続けている」のテロップ。穏やかで希望のあるBGM。
 
@@ -3567,7 +3562,7 @@ A path leading forward through a gentle landscape at soft warm light, a sense of
 【制作メモ】ASSET-226 [Lovart動画]
 シーン: 星野さんが愛したアラスカ／カムチャッカの大自然の鎮魂の風景で追悼する
 ```
-A serene Alaskan wilderness at golden hour — vast tundra, distant mountains, soft warm reverent light, utterly peaceful and still. A tribute landscape. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A serene Alaskan wilderness at golden hour — vast tundra, distant mountains, soft warm reverent light, utterly peaceful and still. A tribute landscape. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -3582,7 +3577,7 @@ A slow cinematic drift over a serene Alaskan wilderness at golden hour, peaceful
 【制作メモ】ASSET-227 [Lovart動画]
 シーン: 星野さんが愛した大自然の風景で締める。希望と余韻のエンディング
 ```
-A breathtaking Alaskan and Kamchatka wilderness at golden hour, vast and peaceful, endless sky and mountains, a hopeful closing landscape. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 3 separate images.
+A breathtaking Alaskan and Kamchatka wilderness at golden hour, vast and peaceful, endless sky and mountains, a hopeful closing landscape. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. A single full-frame photograph, not a grid, not a collage, not split into panels. Generate 3 separate images.
 ```
 → **Google Flow動画プロンプト:**
 ```
