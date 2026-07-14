@@ -22,14 +22,14 @@
 
 ---
 
-## 1. The "Golden Ratio" (1:7:2)
+## 1. The "Golden Ratio" (1:8:1)
 All scripts MUST adhere to the following character count distribution:
 
 | Section | Role | Target Ratio | Tolerance |
 | :--- | :--- | :--- | :--- |
 | **起 (Ki)** | Introduction / Hook | **10%** | ±5% (5-15%) |
-| **承 (Sho)** | The Incident / **Human Action** | **70%** | ±10% (60-80%) |
-| **転結 (Ten-Ketsu)** | Conclusion / Lesson | **20%** | ±5% (15-25%) |
+| **承 (Sho)** | The Incident / **Human Action** | **80%** | ±10% (70-90%) |
+| **転結 (Ten-Ketsu)** | Conclusion / Lesson | **10%** | ±5% (5-15%) |
 
 ## 2. Mandatory Markers
 Scripts must explicitly demarcate these sections using HTML comments to allow the Validator to parse them physically.
