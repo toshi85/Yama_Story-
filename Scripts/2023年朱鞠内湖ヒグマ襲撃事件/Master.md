@@ -576,10 +576,10 @@ The parking and gear-prep area near the Lake Shumarinai boat launch busy in peak
 ナレーター: 実は、朱鞠内湖の釣りですが、驚くことに西川さんが訪れる前日まで、釣りが中止されていたことが判明しています。
 
 【制作メモ】
-- 【Lovart動画】舟着き場に貼られた「上陸中止」の掲示（文字はぼかす）。動き出さない静かな舟着き場
-- 静止画プロンプト（16:9・フォトリアル）:
+- 【Lovart動画】舟着き場に貼られた「上陸中止」の掲示（文字くっきり明記）。動き出さない静かな舟着き場
+- 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
 ```
-A quiet lakeside boat launch on Lake Shumarinai with a suspension notice taped to a wooden board, Japanese text softly blurred, guide boats moored and still, cold morning light, an unusual stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people.```
+A quiet lakeside boat launch on Lake Shumarinai with a suspension notice taped to a wooden board clearly reading '上陸中止' in bold black Japanese characters, guide boats moored and still, cold morning light, an unusual stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people.```
 → **Google Flow動画プロンプト:**
 ```
 A 5-second slow push-in on a suspension notice at a still lakeside boat launch, boats moored and unmoving, cold quiet morning. Photorealistic, RED camera, documentary style.
@@ -1675,12 +1675,12 @@ A 5-second slow shot of a narrow trapped cove between water and dense forest, no
 
 【制作メモ】
 - 【Lovart動画】事故を報じた新聞記事のイメージ（見出しは架空・実在紙名やロゴは使わない）
-- 静止画プロンプト（16:9・フォトリアル）:
+- 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
 ```
-A close view of a Japanese newspaper article page (fictional generic layout, no real masthead or logo), dense vertical text columns softly blurred, somber tone, soft desk light. Photorealistic, shot on RED camera, shallow depth of field. 16:9 aspect ratio. No readable specific names.```
+A close view of a Japanese newspaper article page (fictional generic layout, no real masthead or logo), dense vertical text columns clearly printed and legible, somber tone, soft desk light. Photorealistic, shot on RED camera, shallow depth of field. 16:9 aspect ratio. No readable specific names.```
 → **Google Flow動画プロンプト:**
 ```
-A 4-second slow pan across a somber Japanese newspaper article page with blurred text, soft desk light. Photorealistic, RED camera, documentary style.
+A 4-second slow pan across a somber Japanese newspaper article page with clearly printed legible text (no real personal names), soft desk light. Photorealistic, RED camera, documentary style.
 ```
 → 編集者指示: 「ベテランでも、突然の襲撃は防げなかった」を引用調テロップで（実在紙名・ロゴ不使用）。
 
@@ -1850,12 +1850,12 @@ A 5-second slow shot of an empty quiet boat launch, a moored boat, heavy reflect
 
 【制作メモ】
 - 【Lovart動画】連名で出された声明文のイメージ（実在団体のロゴ・レターヘッドは使わない）
-- 静止画プロンプト（16:9・フォトリアル）:
+- 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
 ```
-A formal printed statement document on a desk (generic layout, no real logos or letterheads), Japanese text softly blurred and unreadable, solemn quiet lighting. Photorealistic, shot on RED camera, shallow depth of field. 16:9 aspect ratio. No people.```
+A formal printed statement document on a desk (generic layout, no real logos or letterheads), the Japanese text clearly legible, solemn quiet lighting. Photorealistic, shot on RED camera, shallow depth of field. 16:9 aspect ratio. No people.```
 → **Google Flow動画プロンプト:**
 ```
-A 4-second slow pan across a formal statement document with blurred Japanese text, solemn light. Photorealistic, RED camera, documentary style.
+A 4-second slow pan across a formal statement document with clearly legible Japanese text, solemn light. Photorealistic, RED camera, documentary style.
 ```
 → 編集者指示: 「漁業協同組合＋渡し船NPO 連名声明」のテロップ（一般名詞で／ロゴ不使用）。<!-- src: 朱鞠内湖公式 漁協・NPO連名声明 -->
 
@@ -1886,10 +1886,10 @@ A calm bright view of Lake Shumarinai in gentle morning light, forested shores, 
 ナレーター: 事故のあと、朱鞠内湖では、釣り船の運行が全面的にストップとなり、釣りは禁止とされました。
 
 【制作メモ】
-- 【Lovart動画】運休した舟着き場、係留された渡し船と「釣り禁止」の掲示（文字はぼかす）
-- 静止画プロンプト（16:9・フォトリアル）:
+- 【Lovart動画】運休した舟着き場、係留された渡し船と「釣り禁止」の掲示（文字くっきり明記）
+- 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
 ```
-A deserted boat launch at Lake Shumarinai with guide boats moored and unused, a fishing-closed notice with blurred Japanese text on a board, cold quiet light, everything at a standstill. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people.```
+A deserted boat launch at Lake Shumarinai with guide boats moored and unused, a fishing-closed notice board clearly reading '釣り禁止' in bold Japanese characters, cold quiet light, everything at a standstill. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people.```
 → **Google Flow動画プロンプト:**
 ```
 A 5-second slow shot of a deserted boat launch with moored unused boats and a closed notice, cold quiet standstill. Photorealistic, RED camera, documentary style.
@@ -2412,13 +2412,13 @@ A 5-second bright hopeful shot of a spring lake morning, fresh green and sparkli
 ナレーター: その決まりは、「朱鞠内湖ルール」と呼ばれ、この規則はたった一つの反省から始まっています。
 
 【制作メモ】
-- 【Lovart動画】「朱鞠内湖ルール」を掲げた新しい掲示板（文字はぼかす）
-- 静止画プロンプト（16:9・フォトリアル）:
+- 【Lovart動画】「朱鞠内湖ルール」を掲げた新しい掲示板（文字くっきり明記）
+- 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
 ```
-A newly installed clean official-looking rules board at the Lake Shumarinai boat launch, Japanese text softly blurred, spring daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people.```
+A newly installed clean official-looking rules board at the Lake Shumarinai boat launch headed '朱鞠内湖ルール' in clear Japanese characters, spring daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people.```
 → **Google Flow動画プロンプト:**
 ```
-A 4-second slow push-in on a new official rules board at a lakeside launch, blurred text, spring light. Photorealistic, RED camera, documentary style.
+A 4-second slow push-in on a new official rules board at a lakeside launch, clear readable text, spring light. Photorealistic, RED camera, documentary style.
 ```
 → 編集者指示: 「朱鞠内湖ルール」の名称を提示し、核心へ引く。
 
