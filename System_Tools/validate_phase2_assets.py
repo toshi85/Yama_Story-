@@ -93,6 +93,36 @@ def main(master_path, daihon_path):
     if len(last2) >= 2 and '【Lovart動画】' not in last2[-1] and '【AI動画】' not in last2[-1]:
         warns.append('末尾（視聴御礼）がAI動画でない可能性（末尾は必ず動画）')
 
+    # 11/12) 文字が写る「静止画/背景」画像プロンプトのみを対象に、実文字指定/no text 強制＋【chatGPT推奨】必須
+    #   （Google Flow動画プロンプト=映像は静止画を動かすだけなので対象外。実写アセットも対象外）
+    TEXTOBJ = re.compile(r"warning sign|bear-warning|beware of|notice board|\bnotice\b|rules board|information board|newspaper|statement document|\bdocument\b|driver's licen[sc]e|licen[sc]e|signboard|placard|\bposter\b|headline|nameplate|plaque|certificate", re.I)
+    LITERAL = re.compile(r"'[^']*[一-龠ぁ-んァ-ヴー々〇]+[^']*'|「[^」]+」")  # 単一引用符内に日本語を含む(reading/headed問わず)＝実文字指定とみなす
+    NOTEXT  = re.compile(r"no text|no legible text|\bblank\b|not legible|blurred|unreadable", re.I)  # blurred/unreadable=個人情報の意図的非可読(遺族配慮)を許容。文字ぼかしの逃げは別途5bが捕捉
+    ENGSIGN = re.compile(r'"[A-Za-z][A-Za-z ]+"\s*(?:warning\s+)?sign', re.I)
+    unspoken, engs, missing_gpt = [], [], 0
+    for mo in re.finditer(r'(- [^\n]*プロンプト[^\n]*:)\n```\n(.*?)\n?```', m, re.S):
+        label, b = mo.group(1), mo.group(2)
+        if 'no written words' in b or 'Cute cartoon character design' in b:  # キャラ立ち絵は文字/環境を持たない規則→除外（"notice"=動詞の誤検出も回避）
+            continue
+        if ENGSIGN.search(b):
+            engs.append(b[:48])
+        if TEXTOBJ.search(b) and not NOTEXT.search(b) and not LITERAL.search(b):
+            unspoken.append(b[:48])
+        if LITERAL.search(b) and '【chatGPT推奨】' not in label:
+            missing_gpt += 1
+    if engs:
+        errors.append(f'看板が英語概念のまま {len(engs)}件（"beware of bears"等→画面の実文字「クマ出没注意」等を指定）')
+    if unspoken:
+        warns.append(f'文字要素だが実文字/no text未指定 {len(unspoken)}件（掲示/書類/新聞は描かせる文字を明記・出さないなら no text・実在物は実写）: 例「{unspoken[0]}...」')
+    if missing_gpt:
+        warns.append(f'実文字プロンプトなのに【chatGPT推奨】なし {missing_gpt}件（静止画/背景ラベル冒頭に付与）')
+
+    # 13) Master.mdの各制作メモにASSET番号併記（Asset_Prompts.mdと突き合わせ用）
+    memo_all = [l for l in lines if l.startswith('【制作メモ】')]
+    numbered = [l for l in memo_all if l.startswith('【制作メモ】ASSET-')]
+    if memo_all and len(numbered) != len(memo_all):
+        warns.append(f'制作メモのASSET番号併記が不足 {len(memo_all)-len(numbered)}件（全メモに ASSET-NNN を付ける）')
+
     # ---- 出力 ----
     print('=' * 60)
     for s in info: print('  INFO :', s)
