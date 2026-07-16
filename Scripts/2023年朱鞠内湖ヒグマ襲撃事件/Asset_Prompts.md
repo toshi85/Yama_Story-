@@ -101,12 +101,12 @@ A 6-second cinematic aerial drone shot slowly gliding low over Lake Shumarinai a
 
 【制作メモ】ASSET-002 [Lovart動画]
 - 【Lovart動画】薄暗い森からヒグマの気配。クマ出没注意の看板が湖畔に立つ、不穏な空気
-- 静止画プロンプト（16:9・フォトリアル）:
+- 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
 ```
-A weathered "beware of bears" warning sign at a misty Hokkaido lakeside boat launch in early May, dense dark forest behind, a large brown bear faintly visible deep among the trees, cold overcast light, ominous atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio.```
+A weathered warning sign clearly reading 'クマ出没注意' in bold black Japanese characters at a misty Hokkaido lakeside boat launch in early May, dense dark forest behind, a large brown bear faintly visible deep among the trees, cold overcast light, ominous atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio.```
 → **Google Flow動画プロンプト:**
 ```
-A 5-second slow push-in toward a weathered bear-warning sign at a misty lakeside, a large brown bear shape shifting faintly in the dark forest behind it, cold ominous morning. Photorealistic, RED camera, documentary style.
+A 5-second slow push-in toward a weathered warning sign reading 'クマ出没注意' at a misty lakeside, a large brown bear shape shifting faintly in the dark forest behind it, cold ominous morning. Photorealistic, RED camera, documentary style.
 ```
 → 編集者指示: 「ヒグマ目撃 → 釣り中止」のテロップを赤系で重ねる。BGMに不穏な低音。
 
@@ -383,7 +383,7 @@ A calm misty morning on Lake Shumarinai seen from water level, a small aluminium
 - 【Lovart動画】朝の舟着き場。並ぶ渡し船と、掲げられたルール看板。独特のルールの存在
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
-A rustic wooden boat launch on Lake Shumarinai at early morning, several small guide boats moored, a weathered wooden rules board with a lake map, cold spring mist, quiet documentary atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people.```
+A rustic wooden boat launch on Lake Shumarinai at early morning, several small guide boats moored, a weathered wooden information board with a simple lake map diagram and no text, cold spring mist, quiet documentary atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people.```
 → **Google Flow動画プロンプト:**
 ```
 A 5-second slow pan across a quiet lakeside boat launch at dawn, moored guide boats and a weathered rules board, cold morning mist. Photorealistic, RED camera, documentary style.
@@ -630,7 +630,7 @@ A quiet lakeside forest edge at Lake Shumarinai, muted grey light, an uneasy sti
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02: a Japanese man in his 30s in navy jacket and orange life vest, posting a notice with a serious concerned expression. White background. 1:1 aspect ratio.```
 - 背景プロンプト（16:9）:
 ```
-A wooden notice board at the Lake Shumarinai boat launch, moored boats behind, cold morning light. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only.```
+A blank wooden notice board with no text at the Lake Shumarinai boat launch, moored boats behind, cold morning light. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only.```
 → 編集者指示: 「上陸を、いったん中止」の判断を提示。安全側に振った判断であることを示す。
 
 ナレーター: ただ、この時期はイトウの産卵期であり、釣りのベストシーズンです。お客さんがこぞってやってくる大切な時期。
@@ -1673,13 +1673,13 @@ A 5-second slow shot of a narrow trapped cove between water and dense forest, no
 ナレーター: 事故を伝えた新聞は、ベテランの釣り師でも、突然の襲撃を、防ぐことはできなかった、と記載。
 
 【制作メモ】ASSET-138 [Lovart動画]
-- 【Lovart動画】事故を報じた新聞記事のイメージ（見出しは架空・実在紙名やロゴは使わない）
+- 【Lovart動画】事故を報じた新聞記事のイメージ（見出し「釣り人 ヒグマに襲われる／ベテランでも 突然の襲撃 防げず」を明記・実在紙名やロゴは使わない）
 - 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
 ```
-A close view of a Japanese newspaper article page (fictional generic layout, no real masthead or logo), dense vertical text columns clearly printed and legible, somber tone, soft desk light. Photorealistic, shot on RED camera, shallow depth of field. 16:9 aspect ratio. No readable specific names.```
+A close view of a Japanese newspaper article page (fictional generic layout, no real masthead or logo). The large vertical main headline clearly reads '釣り人 ヒグマに襲われる', with a subheadline reading 'ベテランでも 突然の襲撃 防げず'. Dense vertical columns of body text below, somber tone, soft desk light. Photorealistic, shot on RED camera, shallow depth of field. 16:9 aspect ratio. No real newspaper name, no victim's personal name.```
 → **Google Flow動画プロンプト:**
 ```
-A 4-second slow pan across a somber Japanese newspaper article page with clearly printed legible text (no real personal names), soft desk light. Photorealistic, RED camera, documentary style.
+A 4-second slow pan across a somber Japanese newspaper article page, the headline '釣り人 ヒグマに襲われる' visible, clearly printed legible body text (no victim's personal name), soft desk light. Photorealistic, RED camera, documentary style.
 ```
 → 編集者指示: 「ベテランでも、突然の襲撃は防げなかった」を引用調テロップで（実在紙名・ロゴ不使用）。
 
@@ -1847,16 +1847,10 @@ A 5-second slow shot of an empty quiet boat launch, a moored boat, heavy reflect
 
 ナレーター: 朱鞠内湖を管理する漁業協同組合と、渡し船を運営するNPOは、事故のあと、連名で声明を出しました。
 
-【制作メモ】ASSET-153 [Lovart動画]
-- 【Lovart動画】連名で出された声明文のイメージ（実在団体のロゴ・レターヘッドは使わない）
-- 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
-```
-A formal printed statement document on a desk (generic layout, no real logos or letterheads), the Japanese text clearly legible, solemn quiet lighting. Photorealistic, shot on RED camera, shallow depth of field. 16:9 aspect ratio. No people.```
-→ **Google Flow動画プロンプト:**
-```
-A 4-second slow pan across a formal statement document with clearly legible Japanese text, solemn light. Photorealistic, RED camera, documentary style.
-```
-→ 編集者指示: 「漁業協同組合＋渡し船NPO 連名声明」のテロップ（一般名詞で／ロゴ不使用）。<!-- src: 朱鞠内湖公式 漁協・NPO連名声明 -->
+【制作メモ】ASSET-153 [実写]
+- 【実写】朱鞠内湖公式サイトに掲載された、漁協・NPO連名の公式声明ページのスクリーンショット（AI生成しない）
+- 素材URL: https://www.shumarinai.jp/blog/3908/ 「5月14日に釣り人がヒグマに襲撃され死亡した件について」（2023年5月22日／朱鞠内湖淡水漁業協同組合 代表理事組合長 中南裕行・NPO法人シュマリナイ湖ワールドセンター 理事長 中野信之 連名）
+→ 編集者指示: 見出し「5月14日に釣り人がヒグマに襲撃され死亡した件について」が読める形で公式声明ページのスクショを表示し、哀悼・無期限の遊漁自粛の一文へ軽くズーム。画面隅に引用元「朱鞠内湖公式サイト」を明記。実在団体の公式声明のため正確に引用し改変しない。<!-- src: https://www.shumarinai.jp/blog/3908/ -->
 
 ナレーター: 西川さんは、長年にわたって渡し船を利用してきた、なじみの一人。
 
@@ -2670,22 +2664,22 @@ A lakeside trail of Lake Shumarinai with an abandoned backpack on the ground, co
 - 【キャラアニメーション】釣り人がクマ注意の看板の前で立ち止まり、引き返す判断
 - キャラプロンプト（1:1）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese angler pausing before a bear-warning sign, thoughtfully deciding to turn back, a calm sensible expression. White background. 1:1 aspect ratio.```
-- 背景プロンプト（16:9）:
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese angler pausing and thoughtfully deciding to turn back, one hand raised in a gentle stop gesture, a calm sensible expression. White background. 1:1 aspect ratio.```
+- 【chatGPT推奨】背景プロンプト（16:9）:
 ```
-A lakeside trailhead of Lake Shumarinai with a bear-warning sign, forest behind, cold daylight. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only.```
+A lakeside trailhead of Lake Shumarinai with a warning sign clearly reading 'クマ出没注意' in bold Japanese characters, forest behind, cold daylight. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only.```
 → 編集者指示: 「危ない場所には近づかない」を最重要教訓として重ねる。
 
 ナレーター: 目撃情報が出ている場所。足跡が残っている場所。
 
 【制作メモ】ASSET-221 [Lovart動画]
 - 【Lovart動画】クマ注意の看板と、地面に残るクマの足跡。危険サインの実景
-- 静止画プロンプト（16:9・フォトリアル）:
+- 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
 ```
-A bear-warning sign beside a Lake Shumarinai lakeside trail with fresh bear paw prints in the mud nearby, cold daylight, forest behind. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people.```
+A warning sign clearly reading 'クマ出没注意' in bold Japanese characters beside a Lake Shumarinai lakeside trail with fresh bear paw prints in the mud nearby, cold daylight, forest behind. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people.```
 → **Google Flow動画プロンプト:**
 ```
-A 4-second slow shot from a bear-warning sign panning to fresh bear paw prints in the mud, cold light. Photorealistic, RED camera, documentary style.
+A 4-second slow shot from a warning sign reading 'クマ出没注意' panning to fresh bear paw prints in the mud, cold light. Photorealistic, RED camera, documentary style.
 ```
 → 編集者指示: 「目撃情報のある場所」「足跡のある場所」の危険サインをアイコンで重ねる。
 

@@ -85,7 +85,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 
 ナレーター: 2023年5月14日。北海道の朱鞠内湖（しゅまりないこ）。
 
-【制作メモ】★冒頭は実写
+【制作メモ】ASSET-001 ★冒頭は実写
 - 【実写】朱鞠内湖の実景。5月の早朝、朝もやの立つ広大な湖面と、岸に並ぶ渡し船
 - 素材入手: 朱鞠内湖公式サイト／幌加内町観光協会／北海道の風景フリー素材。商用可ストック映像
 - 著作権: フリー素材はライセンス確認、公式・報道映像は引用要件を満たす（Structure_Rules実写チェックリスト）
@@ -100,20 +100,20 @@ A 6-second cinematic aerial drone shot slowly gliding low over Lake Shumarinai a
 
 ナレーター: この湖ではヒグマが目撃され、釣りは中止されていました。
 
-【制作メモ】
+【制作メモ】ASSET-002
 - 【Lovart動画】薄暗い森からヒグマの気配。クマ出没注意の看板が湖畔に立つ、不穏な空気
-- 静止画プロンプト（16:9・フォトリアル）:
+- 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
 ```
-A weathered "beware of bears" warning sign at a misty Hokkaido lakeside boat launch in early May, dense dark forest behind, a large brown bear faintly visible deep among the trees, cold overcast light, ominous atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio.```
+A weathered warning sign clearly reading 'クマ出没注意' in bold black Japanese characters at a misty Hokkaido lakeside boat launch in early May, dense dark forest behind, a large brown bear faintly visible deep among the trees, cold overcast light, ominous atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio.```
 → **Google Flow動画プロンプト:**
 ```
-A 5-second slow push-in toward a weathered bear-warning sign at a misty lakeside, a large brown bear shape shifting faintly in the dark forest behind it, cold ominous morning. Photorealistic, RED camera, documentary style.
+A 5-second slow push-in toward a weathered warning sign reading 'クマ出没注意' at a misty lakeside, a large brown bear shape shifting faintly in the dark forest behind it, cold ominous morning. Photorealistic, RED camera, documentary style.
 ```
 → 編集者指示: 「ヒグマ目撃 → 釣り中止」のテロップを赤系で重ねる。BGMに不穏な低音。
 
 ナレーター: にもかかわらず、この日、釣りは再開されていたのです。
 
-【制作メモ】
+【制作メモ】ASSET-003
 - 【Lovart動画】釣り人を乗せた渡し船が、朝の湖へ出ていく後ろ姿。中止のはずが動き出す矛盾
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -126,7 +126,7 @@ A 6-second documentary shot of a small guide boat gliding away across a misty ca
 
 ナレーター: 10年通っているベテラン男性が、一番奥のポイントで、たった一人舟を降り、数時間後。
 
-【制作メモ】
+【制作メモ】ASSET-004
 - 【キャラアニメーション】CHAR-01（西川さん）が、たった一人で舟から降り立つ後ろ姿。孤独感
 - キャラプロンプト（1:1）:
 ```
@@ -138,7 +138,7 @@ A remote secluded gravel-and-mud shoreline cove at the far eastern end of Lake S
 
 ナレーター: 迎えの舟が戻ると、男性の姿は、どこにもありません。
 
-【制作メモ】
+【制作メモ】ASSET-005
 - 【Lovart動画】迎えの舟の視点で、誰もいない静かな岸辺をゆっくり見回す。不在の緊張
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -151,7 +151,7 @@ A 6-second slow panning shot from a boat scanning an empty silent lakeshore, no 
 
 ナレーター: 代わりにいたのは、男性の衣服をくわえた、一頭のヒグマでした。
 
-【制作メモ】★最重要カット
+【制作メモ】ASSET-006 ★最重要カット
 - 【実写（報道映像）】岸辺のヒグマが口に胴長をくわえている、実際に報道された衝撃の光景 <!-- src: HBC/UHB報道 2023-05 ガイドが胴長をくわえたヒグマを目撃 -->
 - 素材入手: 当時の報道映像（HBC北海道放送・UHB北海道文化放送・STV等）。放送局クレジットを明示
 - 著作権: 報道映像の引用は出典明示・必要最小限・主従関係を厳守。不可なら下記Lovart再現に切替
@@ -166,7 +166,7 @@ A 6-second documentary shot of a young brown bear on a remote Hokkaido lakeshore
 
 ナレーター: なぜ、中止された釣りは、たった五日で再開されたのか。
 
-【制作メモ】
+【制作メモ】ASSET-007
 - 【Lovart動画】暗く沈めた朱鞠内湖の朝景。問い①を重ねる土台の実景
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -179,7 +179,7 @@ A 5-second slow drift over a darkened misty Lake Shumarinai at dawn, ominous and
 
 ナレーター: そして、衣服をくわえたクマは、何を意味していたのか。
 
-【制作メモ】
+【制作メモ】ASSET-008
 - 【キャラアニメーション】CHAR-03（ヒグマ）が胴長をくわえて立ち、こちらを見る。問い②を重ねる土台
 - キャラプロンプト（1:1）:
 ```
@@ -191,7 +191,7 @@ A remote lakeshore of Lake Shumarinai in cold dim morning light graded darker an
 
 ナレーター: 地形図とともに解説します。
 
-【制作メモ】
+【制作メモ】ASSET-009
 - 【Google Earth】朱鞠内湖を上空から俯瞰し、舟着き場（前浜）から東奥のナマコ沢までの位置関係を示す
 - 座標: `44°17'12"N 142°10'48"E`（朱鞠内湖 中央）→ 高度8,000mから低空3,000mへ降下。3D地形ON
 - カメラ: 湖全体を広角で映してから東奥のナマコ沢方向へ寄る
@@ -201,7 +201,7 @@ A remote lakeshore of Lake Shumarinai in cold dim morning light graded darker an
 
 ナレーター: 舟を降りた男性は、西川俊宏（にしかわ としひろ）さん、54歳。
 
-【制作メモ】
+【制作メモ】ASSET-010
 - 【キャラアニメーション】CHAR-01（西川さん）の人物紹介。穏やかに微笑む立ち姿、正面 <!-- src: FRIDAY/文春 西川俊宏さん54歳 -->
 - キャラプロンプト（1:1）:
 ```
@@ -213,7 +213,7 @@ A wide calm view of Lake Shumarinai in the soft light of a spring morning, fores
 
 ナレーター: 北海道オホーツク地方から、片道数時間かけてこの湖に通う常連です。
 
-【制作メモ】
+【制作メモ】ASSET-011
 - 【Google Earth】北海道地図で、オホーツク地方から朱鞠内湖までの移動ルートをラインで示す
 - 座標: オホーツク地方（`44°01'N 144°16'E` 網走付近）→ 朱鞠内湖（`44°17'12"N 142°10'48"E`）へライン
 - カメラ: オホーツク沿岸から内陸の朱鞠内湖へ地図上を移動
@@ -221,7 +221,7 @@ A wide calm view of Lake Shumarinai in the soft light of a spring morning, fores
 
 ナレーター: 西川さんの父親が「釣りバカと言うのでしょうか。少しでも暇があれば、方々へ釣りに出かけるほどでした」と話すほど、釣りが大好きな人物。
 
-【制作メモ】
+【制作メモ】ASSET-012
 - 【キャラアニメーション】CHAR-01（西川さん）が心から釣りを楽しむ、竿を振り上げる生き生きした姿 <!-- src: FRIDAY 父親の証言 -->
 - キャラプロンプト（1:1）:
 ```
@@ -233,7 +233,7 @@ A bright morning shoreline of Lake Shumarinai with sparkling water and green for
 
 ナレーター: 今回、西川さんが求めていたのは、イトウ。
 
-【制作メモ】
+【制作メモ】ASSET-013
 - 【Lovart動画】イトウが冷たい湖水を悠然と泳ぐ。国内最大級の淡水魚の迫力
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -246,7 +246,7 @@ A 6-second underwater slow-motion shot of a large Japanese huchen gliding powerf
 
 ナレーター: 国内最大級の淡水魚で、「幻の魚」とも呼ばれる魚です。
 
-【制作メモ】
+【制作メモ】ASSET-014
 - 【キャラアニメーション】釣り人（一般アングラー）が両手で1m級のイトウを掲げ、その大きさに驚く
 - キャラプロンプト（1:1）:
 ```
@@ -258,7 +258,7 @@ A quiet shoreline of Lake Shumarinai with calm water and forested banks under so
 
 ナレーター: かつては北海道の各地にいましたが、川の環境が変わり、その数は激減。
 
-【制作メモ】
+【制作メモ】ASSET-015
 - 【Google Earth】北海道全体で、イトウがかつて広く分布していた範囲を色分けで示す
 - 座標: 北海道全域（中心 `43°30'N 142°48'E`）→ 高度で全体俯瞰
 - カメラ: 北海道全体を表示、かつての分布域を広く塗る
@@ -266,7 +266,7 @@ A quiet shoreline of Lake Shumarinai with calm water and forested banks under so
 
 ナレーター: 今では、限られた場所でしか出会えない、まさに幻の存在となりました。
 
-【制作メモ】
+【制作メモ】ASSET-016
 - 【Google Earth】前カットの広い分布域が、現在のごく限られた生息域へ縮小。最後に朱鞠内湖へ光る点
 - 座標: 北海道全域（`43°30'N 142°48'E`）→ 朱鞠内湖（`44°17'12"N 142°10'48"E`）へズーム
 - カメラ: 縮小する生息域を示しつつ朱鞠内湖へ寄る
@@ -274,7 +274,7 @@ A quiet shoreline of Lake Shumarinai with calm water and forested banks under so
 
 ナレーター: その貴重なイトウが、まとまって狙える数少ない聖地。それが、この朱鞠内湖でした。
 
-【制作メモ】
+【制作メモ】ASSET-017
 - 【Lovart動画】朝の朱鞠内湖に釣り人の小舟が点在する空撮。全国の釣り人の「聖地」の空気
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -287,7 +287,7 @@ A 6-second aerial drone shot slowly gliding over Lake Shumarinai at dawn, tiny s
 
 ナレーター: 一匹のイトウを釣り上げるために、何年も通い続ける人もいるほど、釣り人にとって、この湖は、それほどの価値を持つ場所だったのです。
 
-【制作メモ】
+【制作メモ】ASSET-018
 - 【キャラアニメーション】一般の釣り人が、粘り強く竿を構え水面を見つめる、"何年も通う情熱"
 - キャラプロンプト（1:1）:
 ```
@@ -299,7 +299,7 @@ A tranquil expanse of Lake Shumarinai at dawn, wide open water stretching to dis
 
 ナレーター: 湖では、西川さんを慕う釣り仲間も多く、その腕前と人柄から、「神様」とまで呼ばれていました。
 
-【制作メモ】
+【制作メモ】ASSET-019
 - 【キャラアニメーション】CHAR-01（西川さん）が穏やかに笑う、尊敬される熟練者の佇まい（※1画像1キャラ・仲間は編集で別カット）
 - キャラプロンプト（1:1）:
 ```
@@ -311,7 +311,7 @@ A rustic wooden boat launch on the shore of Lake Shumarinai with moored guide bo
 
 ナレーター: 10年以上、この湖の水面を、誰よりも知り尽くした常連。
 
-【制作メモ】
+【制作メモ】ASSET-020
 - 【Lovart動画】朝日を受けて静かに輝く朱鞠内湖の水面。誰よりも知り尽くした湖そのもの
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -324,7 +324,7 @@ A 6-second slow shot of the calm surface of Lake Shumarinai at dawn, gentle ripp
 
 ナレーター: そんな人物が、この日、命を落とすことになるとは、湖にいた誰一人、想像していなかったはずです。
 
-【制作メモ】
+【制作メモ】ASSET-021
 - 【Lovart動画】穏やかな朱鞠内湖の朝景が、一段暗く沈んでいく。悲劇の予兆
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -341,13 +341,13 @@ A 6-second shot of a serene morning lake gradually darkening as clouds dim the l
 
 ナレーター: 2023年5月14日、日曜日。
 
-【制作メモ】
+【制作メモ】ASSET-022
 - 【画面エフェクト】黒背景・白テキストの日付カード
 → 編集者指示: 黒背景に白文字で「2023年5月14日 日曜日」を静かに表示。運命の一日の始まり。
 
 ナレーター: 午前5時。まだ空気の冷たい早朝でした。
 
-【制作メモ】
+【制作メモ】ASSET-023
 - 【Lovart動画】午前5時、朝もやの冷たい湖畔。息が白むほどの寒い薄明
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -360,7 +360,7 @@ A 5-second slow shot of a cold misty 5 AM lakeshore, mist drifting over dark wat
 
 ナレーター: 朱鞠内湖は、北海道の中でも特に寒い場所です。
 
-【制作メモ】
+【制作メモ】ASSET-024
 - 【Google Earth】朱鞠内湖の位置を北海道内で示し、内陸盆地の寒冷地であることを俯瞰で
 - 座標: `44°17'12"N 142°10'48"E`（朱鞠内湖）→ 高度で北海道北部を俯瞰してから湖へ
 - カメラ: 北海道内の位置を示してから湖へズーム
@@ -368,7 +368,7 @@ A 5-second slow shot of a cold misty 5 AM lakeshore, mist drifting over dark wat
 
 ナレーター: この日、イトウを狙う釣り人およそ10人が、ガイドの渡し船に乗り込みます。
 
-【制作メモ】
+【制作メモ】ASSET-025
 - 【キャラアニメーション】CHAR-02（ガイド船スタッフ）が渡し船で釣り人を乗せて出発する
 - キャラプロンプト（1:1）:
 ```
@@ -380,11 +380,11 @@ A calm misty morning on Lake Shumarinai seen from water level, a small aluminium
 
 ナレーター: 朱鞠内湖のイトウ釣りには、独特のルールがありました。
 
-【制作メモ】
+【制作メモ】ASSET-026
 - 【Lovart動画】朝の舟着き場。並ぶ渡し船と、掲げられたルール看板。独特のルールの存在
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
-A rustic wooden boat launch on Lake Shumarinai at early morning, several small guide boats moored, a weathered wooden rules board with a lake map, cold spring mist, quiet documentary atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people.```
+A rustic wooden boat launch on Lake Shumarinai at early morning, several small guide boats moored, a weathered wooden information board with a simple lake map diagram and no text, cold spring mist, quiet documentary atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people.```
 → **Google Flow動画プロンプト:**
 ```
 A 5-second slow pan across a quiet lakeside boat launch at dawn, moored guide boats and a weathered rules board, cold morning mist. Photorealistic, RED camera, documentary style.
@@ -393,7 +393,7 @@ A 5-second slow pan across a quiet lakeside boat launch at dawn, moored guide bo
 
 ナレーター: それは、岸の道が整っていないため、釣り人はガイドの舟で、それぞれの釣り場まで送り届けてもらうということ。
 
-【制作メモ】
+【制作メモ】ASSET-027
 - 【Google Earth】湖岸に道がなく、舟でしか各釣り場へ行けないことを俯瞰で示す
 - 座標: `44°17'12"N 142°10'48"E`（朱鞠内湖）→ 高度3,500mで俯瞰、3D地形ON
 - カメラ: 湖岸をたどり、道がないことを見せる
@@ -401,7 +401,7 @@ A 5-second slow pan across a quiet lakeside boat launch at dawn, moored guide bo
 
 ナレーター: 舟は釣り人を一人、また一人と、湖のあちこちの岸に降ろしていきます。
 
-【制作メモ】
+【制作メモ】ASSET-028
 - 【Google Earth】舟が各岸に釣り人を1人ずつ降ろすアニメーション。ピンが点々と増える
 - 座標: `44°17'12"N 142°10'48"E`（朱鞠内湖）→ 高度3,000mで俯瞰
 - カメラ: 舟の航跡をたどり、各岸にピンを落とす
@@ -409,7 +409,7 @@ A 5-second slow pan across a quiet lakeside boat launch at dawn, moored guide bo
 
 ナレーター: そして、決めておいた時間になると、また一人ずつ、迎えに戻ってくる。
 
-【制作メモ】
+【制作メモ】ASSET-029
 - 【Google Earth】決めた時刻に舟が迎えに戻る仕組みを、航路と時計アイコンで示す
 - 座標: `44°17'12"N 142°10'48"E`（朱鞠内湖）→ 高度3,000mで俯瞰
 - カメラ: 航路が各ピンへ戻る動き
@@ -417,7 +417,7 @@ A 5-second slow pan across a quiet lakeside boat launch at dawn, moored guide bo
 
 ナレーター: 広大な湖に、釣り人が点々と散らばる。それが、この湖のイトウ釣りの光景でした。
 
-【制作メモ】
+【制作メモ】ASSET-030
 - 【Lovart動画】広大な湖に釣り人の小舟が点々と散らばる空撮。互いに離れた孤立感
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -430,7 +430,7 @@ A 6-second aerial drone shot slowly rising over Lake Shumarinai, revealing tiny 
 
 ナレーター: 西川さんが向かったのは、湖の東側の奥。
 
-【制作メモ】
+【制作メモ】ASSET-031
 - 【Google Earth】湖の東側の奥へ向かう舟の航路を赤ラインで示す
 - 座標: 舟着き場（前浜 `44°17'30"N 142°08'30"E`）→ 東奥方向へ赤ライン
 - カメラ: 前浜から東奥へ航路をたどる
@@ -438,7 +438,7 @@ A 6-second aerial drone shot slowly rising over Lake Shumarinai, revealing tiny 
 
 ナレーター: 「ナマコ沢」と呼ばれる、岸辺のポイントでした。
 
-【制作メモ】
+【制作メモ】ASSET-032
 - 【Google Earth】ナマコ沢の岸辺ポイントに赤いピンとラベルを立て、事件現場を地理的に確定
 - 座標: ナマコ沢（湖の東奥 `44°17'N 142°14'E`）に赤ピン
 - カメラ: 東奥のナマコ沢へズームイン
@@ -446,7 +446,7 @@ A 6-second aerial drone shot slowly rising over Lake Shumarinai, revealing tiny 
 
 ナレーター: 舟着き場からは、およそ6キロ。湖の中でも、最も奥まった場所のひとつです。
 
-【制作メモ】
+【制作メモ】ASSET-033
 - 【Google Earth】舟着き場からナマコ沢まで約6kmの距離マーカー。最奥の孤立地
 - 座標: 前浜（`44°17'30"N 142°08'30"E`）↔ ナマコ沢（`44°17'N 142°14'E`）間に約6km距離マーカー
 - カメラ: 2点を結ぶラインを俯瞰で
@@ -454,13 +454,13 @@ A 6-second aerial drone shot slowly rising over Lake Shumarinai, revealing tiny 
 
 ナレーター: 午前6時前。
 
-【制作メモ】
+【制作メモ】ASSET-034
 - 【画面エフェクト】黒背景・白テキストの時刻カード
 → 編集者指示: 黒背景に白文字で「午前6時前」を表示。静かな間を置く。
 
 ナレーター: 西川さんはナマコ沢の岸に降り立ちます。
 
-【制作メモ】
+【制作メモ】ASSET-035
 - 【キャラアニメーション】CHAR-01（西川さん）がナマコ沢の岸に降り立ち、水面を見渡す
 - キャラプロンプト（1:1）:
 ```
@@ -472,7 +472,7 @@ A quiet secluded gravel shoreline at the eastern end of Lake Shumarinai in early
 
 ナレーター: この地点で舟を降りたのは、西川さん、ただ一人でした。このあと、迎えの舟が戻ってくるまで、およそ4時間半。
 
-【制作メモ】
+【制作メモ】ASSET-036
 - 【キャラアニメーション】CHAR-01（西川さん）が広い岸にただ一人、小さく佇む。孤立感と「4時間半」の空白
 - キャラプロンプト（1:1）:
 ```
@@ -484,7 +484,7 @@ A wide empty view of a remote misty cove at the far east end of Lake Shumarinai,
 
 ナレーター: 大物のイトウが、いつ食いついてくるか。その一点だけに、集中していたことでしょう。
 
-【制作メモ】
+【制作メモ】ASSET-037
 - 【キャラアニメーション】CHAR-01（西川さん）が水面に竿を向け、真剣に集中する横顔
 - キャラプロンプト（1:1）:
 ```
@@ -498,7 +498,7 @@ A calm dark cove of Lake Shumarinai in soft morning light, the still water surfa
 
 ナレーター: しかし、そこから先、西川さんを見た者は誰一人いませんでした、、
 
-【制作メモ】
+【制作メモ】ASSET-038
 - 【Lovart動画】人影の消えたナマコ沢の岸に竿だけが残る。記録の途切れた不穏な静寂
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -511,7 +511,7 @@ A 6-second slow static shot of an empty lakeshore, a lone fishing rod at the wat
 
 ナレーター: 朱鞠内湖には西川さん以外にも、大勢の釣り人がいました。
 
-【制作メモ】
+【制作メモ】ASSET-039
 - 【Lovart動画】前浜側で賑わう朱鞠内湖。複数の舟と釣り人（顔は特定しない引き）
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -524,7 +524,7 @@ A 5-second shot of a busy near-shore of Lake Shumarinai, several boats and dista
 
 ナレーター: 産卵期の5月は、イトウ釣りの最盛期。
 
-【制作メモ】
+【制作メモ】ASSET-040
 - 【Lovart動画】5月の浅瀬に産卵期のイトウが集まる水中映像。最盛期の活気
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -537,7 +537,7 @@ A 6-second underwater slow-motion shot of several large Japanese huchen moving o
 
 ナレーター: 全国から釣り人が集まる、一年で最もにぎわう季節です。
 
-【制作メモ】
+【制作メモ】ASSET-041
 - 【キャラアニメーション】遠方から来た釣り人が大荷物を背負い、期待に満ちて湖へ向かう
 - キャラプロンプト（1:1）:
 ```
@@ -549,7 +549,7 @@ The parking and gear-prep area near the Lake Shumarinai boat launch busy in peak
 
 ナレーター: 釣り人の多くは、前浜やキャンプ場に近い、比較的開けた場所で釣りをしていました。何かあれば、すぐに声が届く距離感。
 
-【制作メモ】
+【制作メモ】ASSET-042
 - 【Google Earth】前浜・キャンプ場側に釣り人が密集する様子をピンで示し「声が届く安全圏」を円で囲む
 - 座標: 前浜・キャンプ場周辺（`44°17'30"N 142°08'30"E`）→ 高度2,500mで俯瞰
 - カメラ: 前浜側の密集エリアを寄りで
@@ -557,7 +557,7 @@ The parking and gear-prep area near the Lake Shumarinai boat launch busy in peak
 
 ナレーター: 一方、西川さんが立っていたナマコ沢は、湖の東の、一番奥。
 
-【制作メモ】
+【制作メモ】ASSET-043
 - 【Google Earth】前浜の密集から一転、東奥ナマコ沢にぽつんと1つだけピン。対比で孤立を強調
 - 座標: 前浜（`44°17'30"N 142°08'30"E`）↔ ナマコ沢（`44°17'N 142°14'E`）を同一フレームに
 - カメラ: 湖全体を俯瞰し2エリアを同時に見せる
@@ -565,7 +565,7 @@ The parking and gear-prep area near the Lake Shumarinai boat launch busy in peak
 
 ナレーター: 何かが起きても、気づいてくれる人が、誰もいない場所です。
 
-【制作メモ】
+【制作メモ】ASSET-044
 - 【Google Earth】ナマコ沢の孤立ピンを赤く点滅させ「誰も気づけない場所」を強調
 - 座標: ナマコ沢（`44°17'N 142°14'E`）に赤ピン点滅
 - カメラ: ナマコ沢へ寄り、周囲に人のピンがないことを示す
@@ -575,7 +575,7 @@ The parking and gear-prep area near the Lake Shumarinai boat launch busy in peak
 
 ナレーター: 実は、朱鞠内湖の釣りですが、驚くことに西川さんが訪れる前日まで、釣りが中止されていたことが判明しています。
 
-【制作メモ】
+【制作メモ】ASSET-045
 - 【Lovart動画】舟着き場に貼られた「上陸中止」の掲示（文字くっきり明記）。動き出さない静かな舟着き場
 - 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -588,7 +588,7 @@ A 5-second slow push-in on a suspension notice at a still lakeside boat launch, 
 
 ナレーター: その理由はヒグマの出没。
 
-【制作メモ】
+【制作メモ】ASSET-046
 - 【キャラアニメーション】CHAR-03（加害ヒグマ）が岸辺の森から姿を現す。中止の理由となった出没
 - キャラプロンプト（1:1）:
 ```
@@ -600,7 +600,7 @@ The edge of dense green forest meeting a gravel lakeshore at Lake Shumarinai in 
 
 ナレーター: 5月9日に釣り人がヒグマを目撃し通報。
 
-【制作メモ】
+【制作メモ】ASSET-047
 - 【キャラアニメーション】CHAR-03（加害ヒグマ）が5日前、開けた岸辺にはっきり姿を見せる
 - キャラプロンプト（1:1）:
 ```
@@ -612,7 +612,7 @@ An open gravel stretch of the Lake Shumarinai shoreline under grey daylight, for
 
 ナレーター: 人を見ても逃げない、人を恐れないヒグマだったといいます。
 
-【制作メモ】
+【制作メモ】ASSET-048
 - 【キャラアニメーション】CHAR-03（加害ヒグマ）が人を見ても逃げず、じっとこちらを見つめる。「人を恐れない」異常性
 - キャラプロンプト（1:1）:
 ```
@@ -624,19 +624,19 @@ A quiet lakeside forest edge at Lake Shumarinai, muted grey light, an uneasy sti
 
 ナレーター: この通報を受けて、朱鞠内湖では、釣り人を岸に上陸させることを、いったん中止と判断。
 
-【制作メモ】
+【制作メモ】ASSET-049
 - 【キャラアニメーション】CHAR-02（スタッフ）が難しい表情で中止を決め、掲示を貼る
 - キャラプロンプト（1:1）:
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02: a Japanese man in his 30s in navy jacket and orange life vest, posting a notice with a serious concerned expression. White background. 1:1 aspect ratio.```
 - 背景プロンプト（16:9）:
 ```
-A wooden notice board at the Lake Shumarinai boat launch, moored boats behind, cold morning light. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only.```
+A blank wooden notice board with no text at the Lake Shumarinai boat launch, moored boats behind, cold morning light. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only.```
 → 編集者指示: 「上陸を、いったん中止」の判断を提示。安全側に振った判断であることを示す。
 
 ナレーター: ただ、この時期はイトウの産卵期であり、釣りのベストシーズンです。お客さんがこぞってやってくる大切な時期。
 
-【制作メモ】
+【制作メモ】ASSET-050
 - 【Lovart動画】産卵期で賑わう朱鞠内湖。多くの舟と釣り人（顔は特定しない引き）
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -649,7 +649,7 @@ A 5-second shot of a busy peak-season lake morning, several boats and anglers ac
 
 ナレーター: そういった事情もあり、結局5月9日に中止された釣りは、5日後の14日には再開されることとなりました。
 
-【制作メモ】★Man-Made核心
+【制作メモ】ASSET-051 ★Man-Made核心
 - 【Lovart動画】再び朝の湖へ出ていく渡し船。再開の朝
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -664,13 +664,13 @@ A 6-second shot of a guide boat heading out across a misty morning lake, operati
 
 ナレーター: 午前10時半ごろ。
 
-【制作メモ】
+【制作メモ】ASSET-052
 - 【画面エフェクト】黒背景・白テキストの時刻カード
 → 編集者指示: 黒背景に白文字で「午前10時半ごろ」を表示。日常の延長として静かに。
 
 ナレーター: ガイドの舟が、西川さんを迎えにナマコ沢へ戻ってきました。
 
-【制作メモ】
+【制作メモ】ASSET-053
 - 【キャラアニメーション】CHAR-02（スタッフ）が舟でナマコ沢へ戻ってくる、日常の面持ち
 - キャラプロンプト（1:1）:
 ```
@@ -682,7 +682,7 @@ Approaching a forested cove at the east end of Lake Shumarinai from the water, d
 
 ナレーター: しかし、西川さんの姿はどこにもありません。
 
-【制作メモ】
+【制作メモ】ASSET-054
 - 【キャラアニメーション】CHAR-02（スタッフ）が誰もいない岸を見回し、訝しむ
 - キャラプロンプト（1:1）:
 ```
@@ -694,7 +694,7 @@ An empty forested cove shoreline at Lake Shumarinai, no one visible, dark water 
 
 ナレーター: 大物がかかって、夢中になっているのか。少し奥へ移動したのか。
 
-【制作メモ】
+【制作メモ】ASSET-055
 - 【Lovart動画】岸の奥へ続く踏み分け道と静かな森。「奥へ移動したのか」という推測
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -707,7 +707,7 @@ A 5-second slow push toward a faint trail disappearing into dense quiet forest, 
 
 ナレーター: そう思った次の瞬間、舟の上のスタッフは、信じられない光景を目にします。
 
-【制作メモ】
+【制作メモ】ASSET-056
 - 【Lovart動画】張り詰めた一瞬。岸辺へ視線が向く緊迫のリビール直前
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -720,7 +720,7 @@ A 4-second tense slow push toward a shadowy lakeshore from a boat, the moment be
 
 ナレーター: なんと岸辺に、一頭のヒグマがいたのです。さらに、よく見るとクマは、口に何かをくわえていました。
 
-【制作メモ】★衝撃の転換
+【制作メモ】ASSET-057 ★衝撃の転換
 - 【キャラアニメーション】CHAR-03（加害ヒグマ）が岸辺に立ち、口に何かをくわえている
 - キャラプロンプト（1:1）:
 ```
@@ -732,7 +732,7 @@ A cold dim forested lakeshore cove at Lake Shumarinai, dark still water, dense t
 
 ナレーター: その正体は、釣り人が水に入るために履く、胴長（どうなが）だったのです。
 
-【制作メモ】
+【制作メモ】ASSET-058
 - 【Lovart動画】クマがくわえた胴長のクローズアップ。濡れて破れた釣り用ウェーダー
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -745,7 +745,7 @@ A 5-second close documentary shot of torn fishing waders hanging from a bear's m
 
 ナレーター: 先ほどまでその胴長は、西川さんが身につけていたはずでした。
 
-【制作メモ】
+【制作メモ】ASSET-059
 - 【キャラアニメーション】胴長を身につけた西川さん（CHAR-01・淡い回想トーン）
 - キャラプロンプト（1:1）:
 ```
@@ -757,7 +757,7 @@ A soft faded memory-toned lakeshore of Lake Shumarinai, gentle and hazy, a nosta
 
 ナレーター: また、岸の周辺には、点々とクマの足跡と大量の血の跡。
 
-【制作メモ】
+【制作メモ】ASSET-060
 - 【Lovart動画】岸辺に点々と続くクマの足跡（血は直接描写せず、暗い染み・乱れた地面で暗示）
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -770,7 +770,7 @@ A 5-second slow track along bear paw prints on muddy ground toward the forest, d
 
 ナレーター: すぐさま状況を理解した舟の上のスタッフは、「釣り人が、クマに襲われたかもしれない」と警察に通報。
 
-【制作メモ】
+【制作メモ】ASSET-061
 - 【キャラアニメーション】CHAR-02（スタッフ）が青ざめ、スマホで警察に通報する緊迫
 - キャラプロンプト（1:1）:
 ```
@@ -782,7 +782,7 @@ A tense forested cove of Lake Shumarinai in cold light, dark water, an atmospher
 
 ナレーター: 静かなイトウ釣りの朝が、一変した瞬間でした。
 
-【制作メモ】
+【制作メモ】ASSET-062
 - 【Lovart動画】穏やかだった湖の朝が暗転する。緊迫のトーンに沈む湖景
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -797,7 +797,7 @@ A 5-second shot of a calm lake morning suddenly darkening into cold tense tones,
 
 ナレーター: 危険にさらされていたのは、西川さん一人ではありません。
 
-【制作メモ】
+【制作メモ】ASSET-063
 - 【Google Earth】湖のあちこちに残る釣り人ピンを再表示。危険が湖全体に及ぶことを示す
 - 座標: `44°17'12"N 142°10'48"E`（朱鞠内湖）→ 高度3,000mで全体俯瞰
 - カメラ: 湖全体を俯瞰し、点在する釣り人ピンを見せる
@@ -805,7 +805,7 @@ A 5-second shot of a calm lake morning suddenly darkening into cold tense tones,
 
 ナレーター: この時、湖のあちこちの岸には、まだ大勢の釣り人が残されていたのです。
 
-【制作メモ】
+【制作メモ】ASSET-064
 - 【Lovart動画】湖の各岸で、まだ危険を知らずに釣りを続ける人々（顔は特定しない引き）
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -818,7 +818,7 @@ A 5-second aerial shot of scattered distant anglers still fishing across a vast 
 
 ナレーター: 人を襲ったクマが、今どこにいるかわからない。
 
-【制作メモ】
+【制作メモ】ASSET-065
 - 【Google Earth】各釣り人ピンの周囲に「?」を点滅させ、クマの居場所不明の不安を示す
 - 座標: `44°17'12"N 142°10'48"E`（朱鞠内湖）→ 高度3,000mで全体俯瞰
 - カメラ: 湖全体、各ピンに「?」を重ねる
@@ -826,7 +826,7 @@ A 5-second aerial shot of scattered distant anglers still fishing across a vast 
 
 ナレーター: 次に狙われるのが、誰なのかもわかりません。
 
-【制作メモ】
+【制作メモ】ASSET-066
 - 【キャラアニメーション】CHAR-03（加害ヒグマ）が茂みから無防備な方向をうかがう。次の標的への恐怖
 - キャラプロンプト（1:1）:
 ```
@@ -838,7 +838,7 @@ Dense green bushes and forest along a Lake Shumarinai shoreline, thick concealin
 
 ナレーター: 運営側は、湖じゅうの釣り人を、大急ぎで舟に回収していきます。
 
-【制作メモ】
+【制作メモ】ASSET-067
 - 【キャラアニメーション】CHAR-02（スタッフ）が舟で急いで釣り人を回収する緊迫
 - キャラプロンプト（1:1）:
 ```
@@ -850,7 +850,7 @@ The open water of Lake Shumarinai under tense grey light, a wake cutting across 
 
 ナレーター: なんとか無事に全員が舟に引き上げられ、広い湖から、一人残らず、人の姿が消えました。
 
-【制作メモ】
+【制作メモ】ASSET-068
 - 【Google Earth】各岸の釣り人ピンが次々に消え、無人の湖になるアニメーション
 - 座標: `44°17'12"N 142°10'48"E`（朱鞠内湖）→ 高度3,000mで全体俯瞰
 - カメラ: ピンが1つずつ消えていく
@@ -858,7 +858,7 @@ The open water of Lake Shumarinai under tense grey light, a wake cutting across 
 
 ナレーター: たった一頭のヒグマが、日本最大級の湖を、丸ごと封鎖してしまったのです。
 
-【制作メモ】
+【制作メモ】ASSET-069
 - 【Lovart動画】誰もいなくなった広大な朱鞠内湖。一頭のクマが湖全体を封鎖した象徴
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -873,7 +873,7 @@ A 6-second slow aerial pull-back over a vast completely empty lake under grey sk
 
 ナレーター: 通報を受け、警察と地元のハンターが動き出します。
 
-【制作メモ】
+【制作メモ】ASSET-070
 - 【キャラアニメーション】CHAR-05（地元ハンター）が銃を手に出動する、緊張の面持ち
 - キャラプロンプト（1:1）:
 ```
@@ -885,7 +885,7 @@ The Lake Shumarinai boat launch under tense grey light, moored boats and a patro
 
 ナレーター: しかし、救助は、簡単ではありませんでした。
 
-【制作メモ】
+【制作メモ】ASSET-071
 - 【Lovart動画】車の入れない険しい東奥の岸。救助を阻む厳しい地形
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -898,7 +898,7 @@ A 5-second slow shot across a rugged roadless forested shoreline, dense trees an
 
 ナレーター: 現場は、車の入れない、湖の奥の岸辺。たどり着くには、舟で渡るしかありません。
 
-【制作メモ】
+【制作メモ】ASSET-072
 - 【Google Earth】現場ナマコ沢へ車道がなく、舟でしか到達できないことを地図で示す
 - 座標: ナマコ沢（`44°17'N 142°14'E`）→ 高度2,500mで俯瞰、道路がないことを示す
 - カメラ: 前浜からナマコ沢への水路のみをたどる
@@ -906,7 +906,7 @@ A 5-second slow shot across a rugged roadless forested shoreline, dense trees an
 
 ナレーター: そして、何より恐ろしい問題がありました。
 
-【制作メモ】
+【制作メモ】ASSET-073
 - 【Lovart動画】暗い森の奥へ続く不穏な岸。恐ろしい問題への引き
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -919,7 +919,7 @@ A 4-second slow push into a dark ominous forested shoreline, shadows deepening, 
 
 ナレーター: それは、西川さんを襲ったとみられるヒグマが、まだその場にとどまっている可能性が高かったのです。
 
-【制作メモ】
+【制作メモ】ASSET-074
 - 【キャラアニメーション】CHAR-03（加害ヒグマ）が現場に居座り、その場を動かない
 - キャラプロンプト（1:1）:
 ```
@@ -931,7 +931,7 @@ A secluded gravel-and-mud lakeshore at the east end of Lake Shumarinai, dark wat
 
 ナレーター: 北海道野生動物研究所の門崎允昭（かどさきまさあき）所長は、ヒグマは一度手に入れた獲物に、強く執着すると説明しています。
 
-【制作メモ】★専門家の名指し引用
+【制作メモ】ASSET-075 ★専門家の名指し引用
 - 【キャラアニメーション】CHAR-04（門崎所長）が落ち着いて「獲物への執着」を解説する
 - キャラプロンプト（1:1）:
 ```
@@ -943,7 +943,7 @@ A neutral documentary interview setting, softly blurred, a research office with 
 
 ナレーター: 仕留めたものに、草や土をかけて隠し、そのそばを、離れようとしない。
 
-【制作メモ】
+【制作メモ】ASSET-076
 - 【キャラアニメーション】CHAR-03（ヒグマ）が獲物の場所に草や土をかけて隠し、そばを離れず守る
 - キャラプロンプト（1:1）:
 ```
@@ -955,7 +955,7 @@ A shadowy forest floor by Lake Shumarinai with a patch of disturbed ground cover
 
 ナレーター: 近づく者がいれば、獲物を守るために、今度はその相手に向かってくる。
 
-【制作メモ】
+【制作メモ】ASSET-077
 - 【キャラアニメーション】CHAR-03（ヒグマ）が近づく者に向かって威嚇・突進の構え
 - キャラプロンプト（1:1）:
 ```
@@ -967,7 +967,7 @@ A dark tense forest interior by Lake Shumarinai, dense trees closing in, cold di
 
 ナレーター: つまり、捜索隊が不用意に近づけば、次に襲われるのは、隊員自身だったのです。
 
-【制作メモ】
+【制作メモ】ASSET-078
 - 【Lovart動画】銃を構えた捜索隊が慎重に進む森の道。次に襲われるのは自分かもしれない緊張
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -980,7 +980,7 @@ A 5-second tense first-person-style push down a dim forest path, dense undergrow
 
 ナレーター: 一秒でも早く、西川さんのもとへ向かいたい。それでも、二次被害だけは、絶対に出せません。
 
-【制作メモ】
+【制作メモ】ASSET-079
 - 【キャラアニメーション】CHAR-05（ハンター）が、行きたい気持ちと危険の板挟みで葛藤する
 - キャラプロンプト（1:1）:
 ```
@@ -992,7 +992,7 @@ The Lake Shumarinai shoreline under a heavy grey sky, boats waiting, an atmosphe
 
 ナレーター: 苦渋の判断で、この日は、これ以上の捜索は危険と判断。本格的な捜索は、翌日に持ち越されました。
 
-【制作メモ】
+【制作メモ】ASSET-080
 - 【Lovart動画】夕暮れに沈む朱鞠内湖。時間が奪われる焦りと無念を夕景に重ねる
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1007,13 +1007,13 @@ A 6-second slow shot of a lake at dusk, light fading into cold shadow, a somber 
 
 ナレーター: 翌日、5月15日。午前8時すぎ。
 
-【制作メモ】
+【制作メモ】ASSET-081
 - 【画面エフェクト】黒背景・白テキストの日付・時刻カード
 → 編集者指示: 黒背景に白文字で「5月15日 午前8時すぎ」を表示。仕切り直しの朝。
 
 ナレーター: 15人のハンターを中心とした捜索隊が、ナマコ沢に入ります。
 
-【制作メモ】
+【制作メモ】ASSET-082
 - 【キャラアニメーション】CHAR-05（ハンター）を先頭に、捜索隊がナマコ沢の岸へ踏み込む（※1画像1キャラ・隊列は編集で複製）
 - キャラプロンプト（1:1）:
 ```
@@ -1025,7 +1025,7 @@ A dense forested shoreline at the east end of Lake Shumarinai in morning light, 
 
 ナレーター: クマが、まだ近くにいる。それを前提に、銃を構えたハンターが、先頭に立ちました。
 
-【制作メモ】
+【制作メモ】ASSET-083
 - 【キャラアニメーション】CHAR-05（ハンター）が銃を構え、先頭で警戒しながら進む
 - キャラプロンプト（1:1）:
 ```
@@ -1037,7 +1037,7 @@ A dim tense forest interior by Lake Shumarinai, dense trees, cold filtered light
 
 ナレーター: 岸を進むと、点々と続く血の跡。
 
-【制作メモ】
+【制作メモ】ASSET-084
 - 【Lovart動画】岸に点々と続く痕跡（血は直接描写せず、暗い染み・乱れた地面で暗示）
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1050,7 +1050,7 @@ A 5-second slow track along a trail of disturbed ground and dark stains on a mud
 
 ナレーター: そして、西川さんのものとみられる、釣り竿。救命胴衣。
 
-【制作メモ】
+【制作メモ】ASSET-085
 - 【Lovart動画】岸に散乱する釣り竿・救命胴衣。持ち主を失った道具
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1063,7 +1063,7 @@ A 5-second slow shot over an abandoned fishing rod and life vest on a muddy shor
 
 ナレーター: つい数時間前まで、大物のイトウを夢見て準備された道具が、無残に散らばっていました。
 
-【制作メモ】
+【制作メモ】ASSET-086
 - 【Lovart動画】散らばった釣り道具のクローズアップ。数時間前の希望と現在の惨状の落差
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1076,19 +1076,19 @@ A 5-second slow shot over broken scattered fishing gear, a sense of hope interru
 
 ナレーター: さらに捜索を進めた午後1時ごろ。
 
-【制作メモ】
+【制作メモ】ASSET-087
 - 【画面エフェクト】黒背景・白テキストの時刻カード
 → 編集者指示: 黒背景に白文字で「午後1時ごろ」を表示。発見の直前の重い緊張。
 
 ナレーター: 捜索隊は、西川さんの体の一部を、発見します。
 
-【制作メモ】※遺体は絶対に映さない
+【制作メモ】ASSET-088 ※遺体は絶対に映さない
 - 【画面エフェクト】黒背景・白テキストで発見の事実を淡々と提示。映像化は一切しない
 → 編集者指示: 黒背景に白文字で「西川さんを、発見」と静かに表示。BGMを止め、静寂で重さを出す。遺体描写は厳禁。
 
 ナレーター: それは、草木がかぶせられた状態でした。
 
-【制作メモ】※遺体は映さない・草木のマウンドのみ
+【制作メモ】ASSET-089 ※遺体は映さない・草木のマウンドのみ
 - 【Lovart動画】草木が不自然にかぶせられた岸辺の一角（発見現場の暗示）。かぶせられた草木のみ
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1101,13 +1101,13 @@ A 5-second slow solemn shot of an unnatural mound of piled branches and grass on
 
 ナレーター: 顔の損傷は激しく、ひと目では、男女の区別すらつかない状態。見た目で、本人だと確かめることはできません。
 
-【制作メモ】※損傷は映像化しない
+【制作メモ】ASSET-090 ※損傷は映像化しない
 - 【画面エフェクト】黒背景・白テキストで事実を淡々と提示。映像化しない
 → 編集者指示: 黒背景に白文字で「顔の損傷が激しく、男女の区別すらつかない状態」と提示。事件の非情さを静かに突きつける。損傷描写は厳禁。
 
 ナレーター: 身元の手がかりになったのは、衣服のポケットに残されていた、一枚の運転免許証でした。
 
-【制作メモ】
+【制作メモ】ASSET-091
 - 【Lovart動画】身元の手がかりとなった一枚の運転免許証（個人情報は伏せる）
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1122,7 +1122,7 @@ A 5-second slow shot of a single blurred driver's license in a wet garment pocke
 
 ナレーター: 捜索と並行して、原因となったクマを見つけ出す作業が進みます。
 
-【制作メモ】
+【制作メモ】ASSET-092
 - 【キャラアニメーション】CHAR-05（ハンター）が森を捜索し始める。二つ目の緊張ライン
 - キャラプロンプト（1:1）:
 ```
@@ -1134,7 +1134,7 @@ A dense difficult forest by Lake Shumarinai with thick cover in every direction,
 
 ナレーター: 午後1時前には、銃を持ったハンターと、町の職員を乗せた舟が、現場の岸へと渡っていました。
 
-【制作メモ】
+【制作メモ】ASSET-093
 - 【キャラアニメーション】CHAR-05（ハンター）が舟の上で銃を手に現場へ向かう構え
 - キャラプロンプト（1:1）:
 ```
@@ -1146,7 +1146,7 @@ The water of Lake Shumarinai from a low boat's view heading toward a forested sh
 
 ナレーター: 相手は、人を襲ったクマ。しかも、どこに潜んでいるのか、わかりません。
 
-【制作メモ】
+【制作メモ】ASSET-094
 - 【キャラアニメーション】CHAR-03（ヒグマ）が茂みに潜み、姿が見えにくい
 - キャラプロンプト（1:1）:
 ```
@@ -1158,7 +1158,7 @@ Thick concealing bushes and dense forest by Lake Shumarinai, deep shadows, cold 
 
 ナレーター: しかし、なかなかヒグマを見つけることができません。
 
-【制作メモ】
+【制作メモ】ASSET-095
 - 【キャラアニメーション】CHAR-05（ハンター）が森を探すが見つからず、焦る
 - キャラプロンプト（1:1）:
 ```
@@ -1170,7 +1170,7 @@ A vast dense forest by Lake Shumarinai stretching in every direction, overwhelmi
 
 ナレーター: 早急に安全を確保しなければいけない捜索隊が出した結論は、かなり異例な方法でした。
 
-【制作メモ】
+【制作メモ】ASSET-096
 - 【Lovart動画】不安げに見上げる空へ、次の"異例の方法"を予感させる森の俯瞰
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1183,7 +1183,7 @@ A 4-second slow tilt up from a dense forest to an overcast sky, anticipation of 
 
 ナレーター: なんと赤外線カメラを積んだドローンの使用です。
 
-【制作メモ】★国内初の象徴ディテール
+【制作メモ】ASSET-097 ★国内初の象徴ディテール
 - 【Lovart動画】赤外線カメラを搭載したドローンが森の上空へ飛び立つ
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1196,7 +1196,7 @@ A 5-second shot of a thermal-camera search drone rising and flying out over a de
 
 ナレーター: 上空から、体温を持つ生き物の位置を、熱として捉える。
 
-【制作メモ】
+【制作メモ】ASSET-098
 - 【Lovart動画】ドローンの赤外線映像風。森を上空から見下ろし、体温を熱として捉える
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1209,7 +1209,7 @@ A 5-second thermal-infrared aerial drone view drifting over a forest canopy in c
 
 ナレーター: 広い森の中で、身を潜めるヒグマを、人の目だけで探し出すのは、至難のわざです。
 
-【制作メモ】
+【制作メモ】ASSET-099
 - 【Google Earth】東奥の森の広大さを俯瞰で示し、人の目では探せない広さを実感させる
 - 座標: ナマコ沢周辺（`44°17'N 142°14'E`）→ 高度2,000mで森を俯瞰、3D地形ON
 - カメラ: 広大な森林帯をゆっくり見渡す
@@ -1217,7 +1217,7 @@ A 5-second thermal-infrared aerial drone view drifting over a forest canopy in c
 
 ナレーター: しかし、上空からの赤外線カメラは、木々にさえぎられても、体温という手がかりを見逃しません。
 
-【制作メモ】
+【制作メモ】ASSET-100
 - 【Lovart動画】サーマル映像で、木々の中にクマの体温だけが赤い熱源として浮かび上がる
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1230,7 +1230,7 @@ A 5-second thermal drone view where a bright orange-red bear heat signature emer
 
 ナレーター: すぐにドローン作戦を実行したところ、赤外線カメラでクマの居場所の特定に成功。
 
-【制作メモ】
+【制作メモ】ASSET-101
 - 【Lovart動画】サーマル映像でクマの熱源がロックオンされる。位置特定の瞬間
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1243,7 +1243,7 @@ A 4-second thermal drone view zooming to center a bright bear heat signature, th
 
 ナレーター: その情報を、地上のハンターに無線で伝えます。
 
-【制作メモ】
+【制作メモ】ASSET-102
 - 【キャラアニメーション】CHAR-05（ハンター）が無線を受け取り、位置情報を確認する
 - キャラプロンプト（1:1）:
 ```
@@ -1255,7 +1255,7 @@ A dim forest interior by Lake Shumarinai, dappled cold light, dense trees, a foc
 
 ナレーター: ちなみに、ヒグマの駆除にドローンを使ったという事例は、国内では、おそらく初めてのこととされています。
 
-【制作メモ】★知識スパイク
+【制作メモ】ASSET-103 ★知識スパイク
 - 【Lovart動画】曇天の空を飛ぶ赤外線ドローン。「国内初」の象徴カット
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1268,13 +1268,13 @@ A 4-second shot of a search drone hovering steadily against an overcast sky over
 
 ナレーター: 午後3時半すぎ。
 
-【制作メモ】
+【制作メモ】ASSET-104
 - 【画面エフェクト】黒背景・白テキストの時刻カード
 → 編集者指示: 黒背景に白文字で「午後3時半すぎ」を表示。緊張の高まり。
 
 ナレーター: ついに地上のハンターが現場付近を、離れようとしない一頭のヒグマを確認。
 
-【制作メモ】
+【制作メモ】ASSET-105
 - 【キャラアニメーション】CHAR-05（ハンター）の視線の先に、現場を離れないクマを確認する緊迫
 - キャラプロンプト（1:1）:
 ```
@@ -1286,7 +1286,7 @@ A dim forest interior by Lake Shumarinai in late-afternoon slanting light, dense
 
 ナレーター: なんと、襲撃から1日以上がたっても、まだ、獲物のそばを離れていなかったのです。
 
-【制作メモ】
+【制作メモ】ASSET-106
 - 【キャラアニメーション】CHAR-03（ヒグマ）が1日以上たっても現場を離れず居座る。門崎解説が現実に
 - キャラプロンプト（1:1）:
 ```
@@ -1298,7 +1298,7 @@ A shadowy forest floor by Lake Shumarinai with a guarded covered spot nearby, la
 
 ナレーター: ハンターは銃を構え発砲。
 
-【制作メモ】※駆除の瞬間は映さない
+【制作メモ】ASSET-107 ※駆除の瞬間は映さない
 - 【キャラアニメーション】CHAR-05（ハンター）が銃を構える緊迫の一瞬（発砲・駆除の瞬間は映さない）
 - キャラプロンプト（1:1）:
 ```
@@ -1310,13 +1310,13 @@ A tense dim forest by Lake Shumarinai in late light, dense trees, a charged deci
 
 ナレーター: 無事、クマの駆除に成功。
 
-【制作メモ】
+【制作メモ】ASSET-108
 - 【画面エフェクト】黒背景・白テキストで「駆除 成功」を淡々と提示（映像で見せない）
 → 編集者指示: 黒背景に白文字で事実を提示。安堵と重さの両方を残す。
 
 ナレーター: 体長およそ1.5メートルのオスグマで、かなり小さい部類でした。
 
-【制作メモ】
+【制作メモ】ASSET-109
 - 【キャラアニメーション】CHAR-03（加害ヒグマ）を提示。小柄な個体であることを見せる
 - キャラプロンプト（1:1）:
 ```
@@ -1328,13 +1328,13 @@ A neutral soft-lit documentary background suitable for a size comparison, muted 
 
 ナレーター: そして、駆除されたクマの胃の中からは、およそ9キロにのぼる肉片が見つかったのです。
 
-【制作メモ】※内容物は直接描写しない
+【制作メモ】ASSET-110 ※内容物は直接描写しない
 - 【画面エフェクト】黒背景・白テキストで「胃の内容物 約9kg」を提示（生々しい映像は使わない）
 → 編集者指示: 黒背景に白文字で「約9kg」を提示し、米袋・ボウリング球等の重量比較アイコンを添える。直接的描写は厳禁。<!-- src: 文春 ヒグマの胃から約9kg -->
 
 ナレーター: 警察は、そのクマの胃の内容物を鑑定。
 
-【制作メモ】
+【制作メモ】ASSET-111
 - 【Lovart動画】科学捜査の現場。試験管や分析機器が並ぶ鑑定作業
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1347,7 +1347,7 @@ A 5-second slow shot across a forensic lab bench with test tubes and analysis eq
 
 ナレーター: 検出されたのは、西川俊宏さんのDNAでした。
 
-【制作メモ】
+【制作メモ】ASSET-112
 - 【Lovart動画】DNA解析画面。二つのプロファイルが一致する結果
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1360,7 +1360,7 @@ A 5-second shot of a DNA analysis screen where two profiles align and a match in
 
 ナレーター: これにより、西川さんは、5月14日の早朝、ナマコ沢の岸でヒグマに襲われ、帰らぬ人となったことが、確定となったのです。
 
-【制作メモ】
+【制作メモ】ASSET-113
 - 【Lovart動画】ナマコ沢の岸（人物なし）。すべてが確定した後の取り返しのつかない静けさ
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1373,7 +1373,7 @@ A 6-second slow still shot of a quiet secluded cove, dark water and silent fores
 
 ナレーター: 迎えの舟が着く、わずか数時間前の出来事でした。
 
-【制作メモ】
+【制作メモ】ASSET-114
 - 【Lovart動画】静かな水面に浮かぶ迎えの舟（遠景）。「あと数時間で迎えが来た」無情
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1386,7 +1386,7 @@ A 5-second slow shot of a lone boat on a still lake seen from afar, cold quiet l
 
 ナレーター: 誰にも気づかれず、誰にも助けを求められないまま、それは起きていたのです。
 
-【制作メモ】
+【制作メモ】ASSET-115
 - 【Lovart動画】静まり返ったナマコ沢の岸。誰にも気づかれなかった孤独
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1401,7 +1401,7 @@ A 6-second slow still shot of a silent deserted cove, dark water, dense forest, 
 
 ナレーター: 自然写真家として現地を取材した人物いわく、翌日にはあっさりと駆除されたことから、このクマは、人前に出ることを、ためらわない個体だったのではないか、と語っています。
 
-【制作メモ】
+【制作メモ】ASSET-116
 - 【キャラアニメーション】CHAR-07（取材者・カメラ所持）が現地で所見を語る
 - キャラプロンプト（1:1）:
 ```
@@ -1413,7 +1413,7 @@ A gravel lakeshore at the east end of Lake Shumarinai under grey daylight, dark 
 
 ナレーター: 実際、駆除されたクマには、「問題個体」と判断される特徴が、いくつもそろっていました。
 
-【制作メモ】
+【制作メモ】ASSET-117
 - 【キャラアニメーション】CHAR-03（加害ヒグマ）を提示し、「問題個体」の判定を導入
 - キャラプロンプト（1:1）:
 ```
@@ -1425,7 +1425,7 @@ A shadowy forest edge by Lake Shumarinai, cold light, an ominous quiet. Photorea
 
 ナレーター: 現場に、強く執着していたこと。
 
-【制作メモ】
+【制作メモ】ASSET-118
 - 【キャラアニメーション】CHAR-03（ヒグマ）が現場に居座り離れない。特徴①「現場への執着」
 - キャラプロンプト（1:1）:
 ```
@@ -1437,7 +1437,7 @@ A dim guarded patch of forest floor by Lake Shumarinai, cold light, a fixated st
 
 ナレーター: 前日から、繰り返しこの場所に出入りしていた足跡があったこと。
 
-【制作メモ】
+【制作メモ】ASSET-119
 - 【Lovart動画】同じ場所に何度も残された、重なり合うクマの足跡。特徴②「繰り返しの出入り」
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1450,7 +1450,7 @@ A 5-second slow track over many overlapping bear paw prints crisscrossing one mu
 
 ナレーター: そして、人を、恐れていなかったこと。
 
-【制作メモ】
+【制作メモ】ASSET-120
 - 【キャラアニメーション】CHAR-03（ヒグマ）が人を恐れずまっすぐ見つめる。特徴③「人を恐れない」
 - キャラプロンプト（1:1）:
 ```
@@ -1462,7 +1462,7 @@ A quiet forest edge by Lake Shumarinai in muted grey light, an unsettling calm. 
 
 ナレーター: 本来、野生のヒグマは、人の気配を感じると、自分から離れていきますが、このクマは違いました。
 
-【制作メモ】
+【制作メモ】ASSET-121
 - 【キャラアニメーション】通常のヒグマなら去るところ、CHAR-03は去らず居座る。「違い」
 - キャラプロンプト（1:1）:
 ```
@@ -1474,7 +1474,7 @@ A forest edge by Lake Shumarinai with faint human signs nearby, cold light, an u
 
 ナレーター: その謎を解く手がかりは、駆除されたクマの「年齢」です。
 
-【制作メモ】
+【制作メモ】ASSET-122
 - 【キャラアニメーション】CHAR-03（加害ヒグマ）を若い個体として提示。「年齢」への引き
 - キャラプロンプト（1:1）:
 ```
@@ -1486,7 +1486,7 @@ A soft-lit neutral forest background by Lake Shumarinai, muted tones. Photoreali
 
 ナレーター: このヒグマは推定で三歳ほどとされています。
 
-【制作メモ】
+【制作メモ】ASSET-123
 - 【キャラアニメーション】CHAR-03（加害ヒグマ）を「推定3歳」の若い個体として提示
 - キャラプロンプト（1:1）:
 ```
@@ -1498,7 +1498,7 @@ A quiet forest clearing by Lake Shumarinai in soft daylight, gentle and neutral.
 
 ナレーター: ヒグマの世界では、亜成獣（あせいじゅう）と呼ばれる、若者の段階です。
 
-【制作メモ】★知識スパイク「亜成獣」
+【制作メモ】ASSET-124 ★知識スパイク「亜成獣」
 - 【キャラアニメーション】CHAR-03（亜成獣）を若者の段階として提示（成長段階の位置づけは編集で重ねる）
 - キャラプロンプト（1:1）:
 ```
@@ -1510,7 +1510,7 @@ A calm forest by Lake Shumarinai in soft light, neutral and quiet. Photorealisti
 
 ナレーター: 亜成獣とは、母グマから離れて独り立ちしたばかりの、いわば思春期のクマ。
 
-【制作メモ】
+【制作メモ】ASSET-125
 - 【キャラアニメーション】母グマから離れ、一頭で立つ亜成獣（CHAR-03）。思春期のあどけなさと不安
 - キャラプロンプト（1:1）:
 ```
@@ -1522,7 +1522,7 @@ A lonely forest clearing by Lake Shumarinai in soft light, a sense of a young an
 
 ナレーター: このクマの特徴として、大人のオスグマに追い出され、人里に近い、条件の悪い場所に流れ着きやすいことや、
 
-【制作メモ】
+【制作メモ】ASSET-126
 - 【キャラアニメーション】大きな成獣オスに追われ、後ずさる若い亜成獣（CHAR-03）
 - キャラプロンプト（1:1）:
 ```
@@ -1534,7 +1534,7 @@ A forest border between deep wild woods and a human-edge lakeside area by Lake S
 
 ナレーター: 経験が浅く、人間に対する警戒心が、まだ十分に育っておらず、好奇心が旺盛で、恐いもの知らずなところです。
 
-【制作メモ】
+【制作メモ】ASSET-127
 - 【キャラアニメーション】CHAR-03（亜成獣）が好奇心むき出しで前に出てくる、警戒心の薄い若い個体
 - キャラプロンプト（1:1）:
 ```
@@ -1546,7 +1546,7 @@ A forest edge by Lake Shumarinai in soft daylight, open and inviting to a curiou
 
 ナレーター: 大人のクマなら避けるような場所にも、平気で出てきてしまうのです。
 
-【制作メモ】
+【制作メモ】ASSET-128
 - 【キャラアニメーション】CHAR-03（亜成獣）が人の気配のある岸辺に平然と出てくる
 - キャラプロンプト（1:1）:
 ```
@@ -1558,7 +1558,7 @@ A gravel lakeshore near a boat launch at Lake Shumarinai with faint human traces
 
 ナレーター: 人の集まる湖の岸辺という、本来クマがためらう場所に、この若いオスは住みついていました。
 
-【制作メモ】
+【制作メモ】ASSET-129
 - 【キャラアニメーション】CHAR-03（亜成獣）が人の気配のある岸辺に平然と居座り"住みついている"
 - キャラプロンプト（1:1）:
 ```
@@ -1570,7 +1570,7 @@ A gravel cove of Lake Shumarinai near where people gather, calm water and forest
 
 ナレーター: それ自体が、危険信号だったと言えます。
 
-【制作メモ】
+【制作メモ】ASSET-130
 - 【キャラアニメーション】CHAR-03（亜成獣）がこちらを見据える、危険の予兆
 - キャラプロンプト（1:1）:
 ```
@@ -1584,7 +1584,7 @@ A quiet cove of Lake Shumarinai under grey light, an underlying unease. Photorea
 
 ナレーター: また、この事故には、釣りならではの、もう一つの悲惨な要因がありました。
 
-【制作メモ】
+【制作メモ】ASSET-131
 - 【Lovart動画】岸に置かれた釣り道具と胴長。「もう一つの要因」への前振り
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1597,7 +1597,7 @@ A 4-second slow shot over fishing gear and waders on a lakeshore, cold light, qu
 
 ナレーター: それは、胴長です。
 
-【制作メモ】
+【制作メモ】ASSET-132
 - 【Lovart動画】胴長（胸まであるウェーダー）のクローズアップ
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1610,7 +1610,7 @@ A 4-second slow reveal of a pair of heavy chest-high fishing waders, thick rubbe
 
 ナレーター: 腰や胸まである、大きな長靴。
 
-【制作メモ】
+【制作メモ】ASSET-133
 - 【キャラアニメーション】胴長を胸まで着けた釣り人（CHAR-01タイプ）が全身像でそのカバー範囲を見せる
 - キャラプロンプト（1:1）:
 ```
@@ -1622,7 +1622,7 @@ A neutral soft-lit documentary background, muted tones. Photorealistic, RED came
 
 ナレーター: 水に立ち込んで釣るためには欠かせない道具ですが、いざという時には、足かせとなってしまいます。
 
-【制作メモ】
+【制作メモ】ASSET-134
 - 【キャラアニメーション】胴長で水に立ち込んで釣る釣り人（CHAR-01タイプ）
 - キャラプロンプト（1:1）:
 ```
@@ -1634,7 +1634,7 @@ The shallow edge of Lake Shumarinai where water meets a gravel bank, calm cold w
 
 ナレーター: ゴム製の胴長を履いたまま、素早く走ることは、かなり難しいです。
 
-【制作メモ】
+【制作メモ】ASSET-135
 - 【キャラアニメーション】胴長を履いた釣り人（CHAR-01タイプ）が走ろうとするが重く動きにくい
 - キャラプロンプト（1:1）:
 ```
@@ -1646,7 +1646,7 @@ A muddy soft lakeshore of Lake Shumarinai, difficult footing, cold light. Photor
 
 ナレーター: ぬかるんだ岸辺で、水を吸った重い長靴で、時速50キロのヒグマから逃げる。それは、はじめから、不可能なことでした。
 
-【制作メモ】★速度比較
+【制作メモ】ASSET-136 ★速度比較
 - 【キャラアニメーション】CHAR-03（ヒグマ）が猛スピードで走る。人間との速度差は編集で重ねる
 - キャラプロンプト（1:1）:
 ```
@@ -1658,7 +1658,7 @@ A muddy lakeshore of Lake Shumarinai with motion-blur suggestion, cold tense lig
 
 ナレーター: ただでさえ逃げ場のない岸辺で、西山さんは逃げるための足さえも、奪われていたと言えます。
 
-【制作メモ】※本文の誤記に注意
+【制作メモ】ASSET-137 ※本文の誤記に注意
 - 【Lovart動画】森と水に挟まれた逃げ場のない狭い入り江。逃走不能の絶望
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1673,20 +1673,20 @@ A 5-second slow shot of a narrow trapped cove between water and dense forest, no
 
 ナレーター: 事故を伝えた新聞は、ベテランの釣り師でも、突然の襲撃を、防ぐことはできなかった、と記載。
 
-【制作メモ】
-- 【Lovart動画】事故を報じた新聞記事のイメージ（見出しは架空・実在紙名やロゴは使わない）
+【制作メモ】ASSET-138
+- 【Lovart動画】事故を報じた新聞記事のイメージ（見出し「釣り人 ヒグマに襲われる／ベテランでも 突然の襲撃 防げず」を明記・実在紙名やロゴは使わない）
 - 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
 ```
-A close view of a Japanese newspaper article page (fictional generic layout, no real masthead or logo), dense vertical text columns clearly printed and legible, somber tone, soft desk light. Photorealistic, shot on RED camera, shallow depth of field. 16:9 aspect ratio. No readable specific names.```
+A close view of a Japanese newspaper article page (fictional generic layout, no real masthead or logo). The large vertical main headline clearly reads '釣り人 ヒグマに襲われる', with a subheadline reading 'ベテランでも 突然の襲撃 防げず'. Dense vertical columns of body text below, somber tone, soft desk light. Photorealistic, shot on RED camera, shallow depth of field. 16:9 aspect ratio. No real newspaper name, no victim's personal name.```
 → **Google Flow動画プロンプト:**
 ```
-A 4-second slow pan across a somber Japanese newspaper article page with clearly printed legible text (no real personal names), soft desk light. Photorealistic, RED camera, documentary style.
+A 4-second slow pan across a somber Japanese newspaper article page, the headline '釣り人 ヒグマに襲われる' visible, clearly printed legible body text (no victim's personal name), soft desk light. Photorealistic, RED camera, documentary style.
 ```
 → 編集者指示: 「ベテランでも、突然の襲撃は防げなかった」を引用調テロップで（実在紙名・ロゴ不使用）。
 
 ナレーター: そして、恐ろしいのは、このクマが特別に凶暴な、例外的な一頭だったわけではない、という点です。
 
-【制作メモ】
+【制作メモ】ASSET-139
 - 【キャラアニメーション】CHAR-03（ヒグマ）を"ありふれた一頭"として提示。例外ではない
 - キャラプロンプト（1:1）:
 ```
@@ -1698,7 +1698,7 @@ A typical Hokkaido forest edge in soft daylight, ordinary and calm. Photorealist
 
 ナレーター: この事件を取材した、ある全国紙の記者は、みずからの体験をこう語っています。
 
-【制作メモ】
+【制作メモ】ASSET-140
 - 【キャラアニメーション】CHAR-07（記者）が自身の体験を語り始める
 - キャラプロンプト（1:1）:
 ```
@@ -1710,7 +1710,7 @@ A neutral outdoor Hokkaido setting in soft light, calm and quiet. Photorealistic
 
 ナレーター: 北海道の別の場所で、川辺にいたヒグマにカメラを向けていたときのこと。
 
-【制作メモ】
+【制作メモ】ASSET-141
 - 【キャラアニメーション】CHAR-07（記者）が川辺のヒグマにカメラを向けている
 - キャラプロンプト（1:1）:
 ```
@@ -1722,7 +1722,7 @@ A Hokkaido riverbank with shallow clear water, a gravel bar, forest on the far s
 
 ナレーター: ヒグマは、ゆっくりと川を渡り、まっすぐ記者のほうへ向かってきたといいます。その距離、およそ10メートル。
 
-【制作メモ】
+【制作メモ】ASSET-142
 - 【キャラアニメーション】CHAR-03タイプのヒグマが川を渡り、まっすぐこちらへ向かってくる
 - キャラプロンプト（1:1）:
 ```
@@ -1734,7 +1734,7 @@ A shallow Hokkaido river with a gravel bar and forested far bank, overcast light
 
 ナレーター: 記者があわてて車に逃げ込むと、ヒグマは、走って追いかけてきました。
 
-【制作メモ】
+【制作メモ】ASSET-143
 - 【キャラアニメーション】CHAR-03タイプのヒグマが、逃げる人間を走って追ってくる
 - キャラプロンプト（1:1）:
 ```
@@ -1746,7 +1746,7 @@ A gravel riverside road in Hokkaido with motion-blur suggestion, overcast tense 
 
 ナレーター: これが、人を恐れなくなったヒグマの、現実の姿です。
 
-【制作メモ】
+【制作メモ】ASSET-144
 - 【キャラアニメーション】CHAR-03（ヒグマ）が堂々と近づく、人を恐れない現実の姿
 - キャラプロンプト（1:1）:
 ```
@@ -1758,7 +1758,7 @@ A Hokkaido riverbank in overcast light, a stark unsettling calm. Photorealistic,
 
 ナレーター: カメラを向ける人間を、ヒグマは逃げる相手だと思っておらず、
 
-【制作メモ】
+【制作メモ】ASSET-145
 - 【キャラアニメーション】CHAR-03（ヒグマ）が人間を「逃げる相手」と見ておらず平然と近づく
 - キャラプロンプト（1:1）:
 ```
@@ -1770,7 +1770,7 @@ A Hokkaido forest-and-river edge in muted light, an uneasy calm. Photorealistic,
 
 ナレーター: 人を恐れなくなったヒグマは、朱鞠内湖にも、北海道の各地にも、静かに増え続けているのです。
 
-【制作メモ】
+【制作メモ】ASSET-146
 - 【Google Earth】北海道各地に「人を恐れないクマ」が増える分布を点在マーカーで示す
 - 座標: 北海道全域（中心 `43°30'N 142°48'E`）→ 高度で全体俯瞰
 - カメラ: 北海道全体に点在マーカーを表示
@@ -1778,7 +1778,7 @@ A Hokkaido forest-and-river edge in muted light, an uneasy calm. Photorealistic,
 
 ナレーター: 実際、この2023年は、北海道でヒグマによる人身事故が相次いだ年でもありました。
 
-【制作メモ】
+【制作メモ】ASSET-147
 - 【Google Earth】2023年、北海道各地のヒグマ人身事故地点を時系列マーカーで示す
 - 座標: 北海道全域（中心 `43°30'N 142°48'E`）→ 全体俯瞰
 - カメラ: 各事故地点にマーカーを順に立てる
@@ -1786,7 +1786,7 @@ A Hokkaido forest-and-river edge in muted light, an uneasy calm. Photorealistic,
 
 ナレーター: 静かな湖の岸で起きた西川さんの事故は、決して、遠い誰かの、特別な不運ではありません。
 
-【制作メモ】
+【制作メモ】ASSET-148
 - 【Lovart動画】静かな朱鞠内湖の岸辺。「特別な不運ではない」というメッセージ
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1799,7 +1799,7 @@ A 5-second slow shot of a quiet ordinary lakeshore, calm and unremarkable, a pla
 
 ナレーター: この2023年度、クマによる人身被害は全国で219人。亡くなった方は6人と、統計が残る中で、最悪の数字になりました。
 
-【制作メモ】★知識スパイク・統計
+【制作メモ】ASSET-149 ★知識スパイク・統計
 - 【Google Earth】日本全体を俯瞰し、全国のクマ人身被害の広がりを示す
 - 座標: 日本全域（中心 `37°30'N 138°00'E`）→ 高度で日本列島全体を俯瞰
 - カメラ: 日本全体を表示し、被害地点の広がりを見せる
@@ -1807,7 +1807,7 @@ A 5-second slow shot of a quiet ordinary lakeshore, calm and unremarkable, a pla
 
 ナレーター: 西川さんの事故は、その始まりの一つだったのです。
 
-【制作メモ】
+【制作メモ】ASSET-150
 - 【Lovart動画】暗く沈めた朱鞠内湖。統計の始点となった事故を象徴
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1822,7 +1822,7 @@ A 5-second slow shot of a darkened somber lake under heavy grey light, a grim qu
 
 ナレーター: そして、この事故のあと、朱鞠内湖を運営する側は、5日前にクマの目撃情報がありながら、釣りを再開していたこと。
 
-【制作メモ】
+【制作メモ】ASSET-151
 - 【Lovart動画】朱鞠内湖の管理施設・舟着き場の静かな実景（人物なし）
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1835,7 +1835,7 @@ A 5-second slow shot across the quiet boat launch and facility of the lake, subd
 
 ナレーター: そして、西川さんを、一人で行かせてしまった。対策を打つべきだったと深く反省していると発言。
 
-【制作メモ】
+【制作メモ】ASSET-152
 - 【Lovart動画】誰もいない静かな舟着き場。反省の言葉を重ねる土台
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1848,20 +1848,14 @@ A 5-second slow shot of an empty quiet boat launch, a moored boat, heavy reflect
 
 ナレーター: 朱鞠内湖を管理する漁業協同組合と、渡し船を運営するNPOは、事故のあと、連名で声明を出しました。
 
-【制作メモ】
-- 【Lovart動画】連名で出された声明文のイメージ（実在団体のロゴ・レターヘッドは使わない）
-- 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
-```
-A formal printed statement document on a desk (generic layout, no real logos or letterheads), the Japanese text clearly legible, solemn quiet lighting. Photorealistic, shot on RED camera, shallow depth of field. 16:9 aspect ratio. No people.```
-→ **Google Flow動画プロンプト:**
-```
-A 4-second slow pan across a formal statement document with clearly legible Japanese text, solemn light. Photorealistic, RED camera, documentary style.
-```
-→ 編集者指示: 「漁業協同組合＋渡し船NPO 連名声明」のテロップ（一般名詞で／ロゴ不使用）。<!-- src: 朱鞠内湖公式 漁協・NPO連名声明 -->
+【制作メモ】ASSET-153
+- 【実写】朱鞠内湖公式サイトに掲載された、漁協・NPO連名の公式声明ページのスクリーンショット（AI生成しない）
+- 素材URL: https://www.shumarinai.jp/blog/3908/ 「5月14日に釣り人がヒグマに襲撃され死亡した件について」（2023年5月22日／朱鞠内湖淡水漁業協同組合 代表理事組合長 中南裕行・NPO法人シュマリナイ湖ワールドセンター 理事長 中野信之 連名）
+→ 編集者指示: 見出し「5月14日に釣り人がヒグマに襲撃され死亡した件について」が読める形で公式声明ページのスクショを表示し、哀悼・無期限の遊漁自粛の一文へ軽くズーム。画面隅に引用元「朱鞠内湖公式サイト」を明記。実在団体の公式声明のため正確に引用し改変しない。<!-- src: https://www.shumarinai.jp/blog/3908/ -->
 
 ナレーター: 西川さんは、長年にわたって渡し船を利用してきた、なじみの一人。
 
-【制作メモ】
+【制作メモ】ASSET-154
 - 【キャラアニメーション】CHAR-01（西川さん）がなじみの常連として穏やかに微笑む
 - キャラプロンプト（1:1）:
 ```
@@ -1873,7 +1867,7 @@ A rustic boat launch at Lake Shumarinai with moored guide boats in warm familiar
 
 ナレーター: スタッフや地元の釣り人からも慕われた人物だったと、声明には記されています。
 
-【制作メモ】
+【制作メモ】ASSET-155
 - 【キャラアニメーション】CHAR-01（西川さん）が穏やかに微笑む、慕われた人物
 - キャラプロンプト（1:1）:
 ```
@@ -1885,7 +1879,7 @@ A calm bright view of Lake Shumarinai in gentle morning light, forested shores, 
 
 ナレーター: 事故のあと、朱鞠内湖では、釣り船の運行が全面的にストップとなり、釣りは禁止とされました。
 
-【制作メモ】
+【制作メモ】ASSET-156
 - 【Lovart動画】運休した舟着き場、係留された渡し船と「釣り禁止」の掲示（文字くっきり明記）
 - 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1898,7 +1892,7 @@ A 5-second slow shot of a deserted boat launch with moored unused boats and a cl
 
 ナレーター: また、調査によると西川さんが行方不明になる前日にも、現場付近には、無数のクマの足跡が点々と残っていたことが、後の調べでわかっています。
 
-【制作メモ】
+【制作メモ】ASSET-157
 - 【Lovart動画】ナマコ沢付近に点々と残る無数のクマの足跡。前日からの複数の痕跡
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1911,7 +1905,7 @@ A 5-second slow track over numerous overlapping bear paw prints across a muddy s
 
 ナレーター: さらに、事故の少し前には、この付近で「クマに吠えられた」という釣り人までいたのです。
 
-【制作メモ】
+【制作メモ】ASSET-158
 - 【キャラアニメーション】CHAR-03（ヒグマ）が釣り人に向かって吠える威嚇。事故前の予兆
 - キャラプロンプト（1:1）:
 ```
@@ -1923,7 +1917,7 @@ A gravel lakeshore at Lake Shumarinai under tense grey light, forest behind, an 
 
 ナレーター: 地元のハンターは、「足跡は、たくさんあった」と語っており、
 
-【制作メモ】
+【制作メモ】ASSET-159
 - 【キャラアニメーション】CHAR-05（ハンター）が足跡を指し示し「たくさんあった」と証言する
 - キャラプロンプト（1:1）:
 ```
@@ -1935,7 +1929,7 @@ A muddy lakeshore at Lake Shumarinai covered with many bear tracks, cold overcas
 
 ナレーター: 一頭が通り過ぎた、という数ではないことから、複数のクマが繰り返しこの場所に出入りしていた状況でした。
 
-【制作メモ】
+【制作メモ】ASSET-160
 - 【Lovart動画】異なる複数のクマの足跡が入り乱れる岸辺。複数個体の出入り
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1948,7 +1942,7 @@ A 5-second slow track over multiple distinct sets of overlapping bear tracks, in
 
 ナレーター: つまり、ナマコ沢は、その時すでに、ヒグマにとって、なじみの場所になっていた可能性が高かったのです。
 
-【制作メモ】
+【制作メモ】ASSET-161
 - 【キャラアニメーション】CHAR-03（ヒグマ）が岸辺でくつろぐ、なじみの場所として定着
 - キャラプロンプト（1:1）:
 ```
@@ -1962,7 +1956,7 @@ A secluded cove of Lake Shumarinai that feels lived-in by wildlife, calm water a
 
 ナレーター: そもそも、なぜヒグマは、人の多い釣り場の近くに現れるようになったのでしょうか。
 
-【制作メモ】
+【制作メモ】ASSET-162
 - 【キャラアニメーション】CHAR-03（ヒグマ）が人の気配のある岸辺に現れる。問いかけの土台
 - キャラプロンプト（1:1）:
 ```
@@ -1974,7 +1968,7 @@ A gravel fishing shoreline of Lake Shumarinai with faint traces of human use, ca
 
 ナレーター: ここに、釣り人自身も気づかない、ひとつの習慣が関係していると指摘されています。
 
-【制作メモ】
+【制作メモ】ASSET-163
 - 【Lovart動画】イトウ釣りの光景。釣り人自身も気づかない"ある習慣"への引き
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1987,7 +1981,7 @@ A 5-second slow shot of a quiet fishing shoreline, rods and gear at the water, a
 
 ナレーター: イトウ釣りでは、目当てのイトウ以外の魚も、針にかかります。たとえば、ウグイという魚です。
 
-【制作メモ】
+【制作メモ】ASSET-164
 - 【Lovart動画】ウグイ（イトウ以外にかかる魚）の水中・水辺の映像
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2000,7 +1994,7 @@ A 4-second underwater shot of a silvery Japanese dace swimming near a gravel ban
 
 ナレーター: 一部の釣り人は、こうした狙いではない魚を、岸に放り投げて捨てることがありました。悪気は、ありません。
 
-【制作メモ】
+【制作メモ】ASSET-165
 - 【Lovart動画】岸の砂利に放り捨てられた小魚が数匹。悪意なき習慣の痕跡
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2013,7 +2007,7 @@ A 4-second slow shot of a few small fish discarded on a gravel shore, an innocen
 
 ナレーター: しかし、岸に打ち上げられた魚は、ヒグマにとって、苦労せずに手に入る、格好のごちそうです。
 
-【制作メモ】★因果の起点
+【制作メモ】ASSET-166 ★因果の起点
 - 【キャラアニメーション】CHAR-03（ヒグマ）が岸に捨てられた魚を難なく食べる。「苦労せず手に入るごちそう」
 - キャラプロンプト（1:1）:
 ```
@@ -2025,7 +2019,7 @@ A gravel lakeshore of Lake Shumarinai with a few discarded fish, calm cold water
 
 ナレーター: これを一度でも覚えたクマは、「釣り人がいる岸に行けば、魚が食べられる」と学習することでしょう。
 
-【制作メモ】
+【制作メモ】ASSET-167
 - 【キャラアニメーション】CHAR-03（ヒグマ）が学習する。「釣り人＝魚が食べられる」の結びつき（電球は編集で重ねる）
 - キャラプロンプト（1:1）:
 ```
@@ -2037,7 +2031,7 @@ A gravel fishing shoreline of Lake Shumarinai, calm water and forest, soft dayli
 
 ナレーター: 人間を、恐れる対象ではなく、食べ物のありかとして記憶してしまうのです。
 
-【制作メモ】
+【制作メモ】ASSET-168
 - 【キャラアニメーション】CHAR-03（ヒグマ）が人間を"食べ物のありか"として見る目つき
 - キャラプロンプト（1:1）:
 ```
@@ -2049,7 +2043,7 @@ A fishing shoreline of Lake Shumarinai in cold light, calm water and forest. Pho
 
 ナレーター: しかも、この記憶は、消えません。ヒグマは、一度おぼえた食べ物の味と場所を、生涯忘れないとされています。
 
-【制作メモ】
+【制作メモ】ASSET-169
 - 【キャラアニメーション】CHAR-03（ヒグマ）が記憶を刻むように場所を見つめる。「生涯忘れない」怖さ
 - キャラプロンプト（1:1）:
 ```
@@ -2061,7 +2055,7 @@ A memorable spot on the shoreline of Lake Shumarinai, calm water and forest, sof
 
 ナレーター: さらに恐ろしいのは、母グマが子グマを連れて、その場所に通うこと。
 
-【制作メモ】★世代連鎖
+【制作メモ】ASSET-170 ★世代連鎖
 - 【キャラアニメーション】母グマが子グマを連れて岸へ向かう。学びが次世代へ
 - キャラプロンプト（1:1）:
 ```
@@ -2073,7 +2067,7 @@ A gravel fishing shoreline of Lake Shumarinai leading toward human-use areas, ca
 
 ナレーター: 「人間の岸に行けば、食べ物がある」その知恵が、母から子へと、世代をこえて受け継がれていきます。
 
-【制作メモ】
+【制作メモ】ASSET-171
 - 【キャラアニメーション】母グマと子グマが並ぶ。母から子へ知恵が受け継がれる（矢印は編集で重ねる）
 - キャラプロンプト（1:1）:
 ```
@@ -2085,7 +2079,7 @@ A quiet shoreline of Lake Shumarinai in soft light, calm water and forest. Photo
 
 ナレーター: 一人の釣り人の何気ない行為が、何年もかけて、人を恐れないクマを育ててしまう。
 
-【制作メモ】
+【制作メモ】ASSET-172
 - 【キャラアニメーション】CHAR-03（人を恐れないクマ）が堂々と人の岸に立つ、育ってしまった結果
 - キャラプロンプト（1:1）:
 ```
@@ -2097,7 +2091,7 @@ A fishing shoreline of Lake Shumarinai near human-use areas, calm water and fore
 
 ナレーター: 餌付けが危険だと言われるのは、このためです。
 
-【制作メモ】
+【制作メモ】ASSET-173
 - 【キャラアニメーション】CHAR-03（人を恐れないクマ）が人の気配に近づく。餌付けの危険の象徴
 - キャラプロンプト（1:1）:
 ```
@@ -2109,7 +2103,7 @@ A shoreline of Lake Shumarinai near human traces in cold light, calm water and f
 
 ナレーター: 人間が間接的に餌付けをしてる環境だったこともあり、朱鞠内湖のヒグマの数は年々、増加傾向で、
 
-【制作メモ】
+【制作メモ】ASSET-174
 - 【Google Earth】朱鞠内湖を含む天塩・増毛地方を俯瞰し、ヒグマ増加の地域を示す
 - 座標: 天塩・増毛地方（中心 `44°10'N 141°50'E` 目安）→ 高度で地方全体を俯瞰
 - カメラ: 朱鞠内湖を含む地方一帯を見渡す
@@ -2117,7 +2111,7 @@ A shoreline of Lake Shumarinai near human traces in cold light, calm water and f
 
 ナレーター: 朱鞠内湖を含む天塩（てしお）・増毛（ましけ）地方のヒグマは、1990年にはおよそ200頭。
 
-【制作メモ】
+【制作メモ】ASSET-175
 - 【Google Earth】天塩・増毛地方を俯瞰。生息数グラフの起点「1990年 約200頭」
 - 座標: 天塩・増毛地方（中心 `44°10'N 141°50'E`）→ 高度で地方全体を俯瞰
 - カメラ: 地方一帯を表示
@@ -2125,7 +2119,7 @@ A shoreline of Lake Shumarinai near human traces in cold light, calm water and f
 
 ナレーター: それが2020年には、およそ850頭。
 
-【制作メモ】
+【制作メモ】ASSET-176
 - 【Google Earth】同じ天塩・増毛地方の俯瞰。グラフが右肩上がりに「2020年 約850頭」へ
 - 座標: 天塩・増毛地方（中心 `44°10'N 141°50'E`）→ 高度で地方全体を俯瞰
 - カメラ: 地方一帯を表示、密度が増す演出
@@ -2133,7 +2127,7 @@ A shoreline of Lake Shumarinai near human traces in cold light, calm water and f
 
 ナレーター: 30年で、4倍を超える数にふくれ上がっていたのです。
 
-【制作メモ】★構造的因果の数字
+【制作メモ】ASSET-177 ★構造的因果の数字
 - 【Google Earth】天塩・増毛地方の俯瞰に、増えたヒグマの分布密度を重ねる
 - 座標: 天塩・増毛地方（中心 `44°10'N 141°50'E`）→ 高度で地方全体を俯瞰
 - カメラ: 地方一帯を表示
@@ -2141,7 +2135,7 @@ A shoreline of Lake Shumarinai near human traces in cold light, calm water and f
 
 ナレーター: 人を恐れないクマが増え、その生息地の真ん中で、人間が魚を捨てる。
 
-【制作メモ】
+【制作メモ】ASSET-178
 - 【キャラアニメーション】CHAR-03（人を恐れないクマ）が、魚の落ちた岸に堂々と現れる。2要因が重なる象徴
 - キャラプロンプト（1:1）:
 ```
@@ -2153,7 +2147,7 @@ A fishing shoreline of Lake Shumarinai with a discarded fish on the gravel, calm
 
 ナレーター: 事故が起きる条件は、静かに、しかし確実に、積み上がっていたと言えます。
 
-【制作メモ】
+【制作メモ】ASSET-179
 - 【Lovart動画】暗く沈めた朱鞠内湖。事故の条件が静かに積み上がる象徴
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2168,7 +2162,7 @@ A 5-second slow shot of a darkening quiet lake under heavy grey light, a sense o
 
 ナレーター: 事故のあと、湖の周辺には、監視のための定点カメラが設置されました。
 
-【制作メモ】
+【制作メモ】ASSET-180
 - 【Lovart動画】湖畔の木に取り付けられた定点カメラ（トレイルカメラ）。監視体制の導入
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2181,7 +2175,7 @@ A 4-second slow push-in on a trail camera mounted on a tree overlooking a lakesh
 
 ナレーター: そのカメラに映っていたのは、一頭ではなく、親子のヒグマの姿。
 
-【制作メモ】★追加取材ディテール
+【制作メモ】ASSET-181 ★追加取材ディテール
 - 【Lovart動画】トレイルカメラの夜間映像風（赤外線モノクロ・隅にタイムスタンプ）。親子のヒグマが岸辺を歩く
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2194,7 +2188,7 @@ A 5-second grainy monochrome night-vision trail-cam clip of a mother bear and a 
 
 ナレーター: この岸は、すでにヒグマにとって、子を育てる場所になっていたのです。
 
-【制作メモ】
+【制作メモ】ASSET-182
 - 【キャラアニメーション】母グマと子グマが岸辺で過ごす。子を育てる場所になっていた
 - キャラプロンプト（1:1）:
 ```
@@ -2206,7 +2200,7 @@ A secluded gravel cove of Lake Shumarinai that feels like a den area, calm water
 
 ナレーター: たまたま一頭が現れた、という話ではありません。
 
-【制作メモ】
+【制作メモ】ASSET-183
 - 【キャラアニメーション】CHAR-03（ヒグマ）を提示し、偶発ではないことを示す
 - キャラプロンプト（1:1）:
 ```
@@ -2218,7 +2212,7 @@ A calm secluded cove of Lake Shumarinai in soft light, a lived-in wild place. Ph
 
 ナレーター: 人を恐れないクマの一家が、静かに、この湖に暮らしていました。
 
-【制作メモ】
+【制作メモ】ASSET-184
 - 【キャラアニメーション】母グマと子グマの一家が湖の岸で穏やかに暮らす
 - キャラプロンプト（1:1）:
 ```
@@ -2230,7 +2224,7 @@ A tranquil secluded shoreline of Lake Shumarinai in soft daylight, calm water an
 
 ナレーター: そして、もう一つ。
 
-【制作メモ】
+【制作メモ】ASSET-185
 - 【Lovart動画】バックパックに下がるクマよけの鈴のクローズアップ。次の"鈴の常識"への転換
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2243,7 +2237,7 @@ A 4-second slow shot of a brass bear bell swaying gently on a backpack strap, fo
 
 ナレーター: 多くの人が信じてきた「クマよけの鈴を鳴らせば、クマは逃げる」という常識も、この湖では、静かに通用しなくなっていたのです。
 
-【制作メモ】★常識の反転
+【制作メモ】ASSET-186 ★常識の反転
 - 【キャラアニメーション】CHAR-03（通常のクマ）が鈴の音に反応する場面（従来常識の提示）
 - キャラプロンプト（1:1）:
 ```
@@ -2255,7 +2249,7 @@ A quiet forest edge by Lake Shumarinai in soft light. Photorealistic, RED camera
 
 ナレーター: 以前は、音を鳴らして人間の存在を知らせれば、クマのほうから避けてくれる、という考え方でしたが、
 
-【制作メモ】
+【制作メモ】ASSET-187
 - 【キャラアニメーション】CHAR-03（通常のクマ）が音を聞いて去っていく、従来のイメージ
 - キャラプロンプト（1:1）:
 ```
@@ -2267,7 +2261,7 @@ A forest interior by Lake Shumarinai in soft light, a bear retreating into the t
 
 ナレーター: 人間を恐れないクマにとって、鈴の音は、もはや「逃げる合図」ではなく、むしろ、「人間がいる」という合図となっていました。
 
-【制作メモ】★反転
+【制作メモ】ASSET-188 ★反転
 - 【キャラアニメーション】CHAR-03（恐れないクマ）が鈴の音に、逃げず、むしろ振り向いて寄ってくる
 - キャラプロンプト（1:1）:
 ```
@@ -2279,7 +2273,7 @@ A forest edge by Lake Shumarinai in muted light, an unsettling reversal in the a
 
 ナレーター: つまり、「食べ物が近くにある」という合図に、なってしまうこともあるのです。
 
-【制作メモ】
+【制作メモ】ASSET-189
 - 【キャラアニメーション】CHAR-03（恐れないクマ）が鈴の音の方へ期待して近づく
 - キャラプロンプト（1:1）:
 ```
@@ -2291,7 +2285,7 @@ A forest edge by Lake Shumarinai in cold light, a subtle dread. Photorealistic, 
 
 ナレーター: 鈴を鳴らせば安全、という考えは、朱鞠内湖では静かに終わりつつあったとも言えるでしょう。
 
-【制作メモ】
+【制作メモ】ASSET-190
 - 【Lovart動画】静かな森に響く鈴の余韻。「鈴＝安全」が終わりつつある象徴
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2306,7 +2300,7 @@ A 5-second slow shot of a bear bell resting silent on a mossy log in a quiet for
 
 ナレーター: とはいえ、この結果に対して誰かを責めることはできません。
 
-【制作メモ】
+【制作メモ】ASSET-191
 - 【Lovart動画】静かな朱鞠内湖。中立に事実を置くための落ち着いた実景
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2319,7 +2313,7 @@ A 5-second slow calm shot of a still lake under soft grey light, composed and re
 
 ナレーター: 山や湖といった、自然の中での活動は、基本的には自己責任となるので、法律の上では、誰も罪には問われません。
 
-【制作メモ】
+【制作メモ】ASSET-192
 - 【Lovart動画】静かな湖と森。自己責任の原則を落ち着いて示す土台
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2332,7 +2326,7 @@ A 4-second slow shot of a calm lake and forested shore, neutral and composed. Ph
 
 ナレーター: とはいえ、今回の事故を防げた可能性も、確実にあります。
 
-【制作メモ】
+【制作メモ】ASSET-193
 - 【Lovart動画】静かな朱鞠内湖。「防げた可能性」への転換
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2345,7 +2339,7 @@ A 4-second slow reflective shot of a quiet lake under soft light. Photorealistic
 
 ナレーター: クマの足跡は、前日に残されていました。
 
-【制作メモ】
+【制作メモ】ASSET-194
 - 【Lovart動画】前日に残された、はっきりとしたクマの足跡（見落とし①）
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2358,7 +2352,7 @@ A 4-second slow shot of a clear fresh set of bear paw prints in mud, unmistakabl
 
 ナレーター: 目撃情報が出ていたのは、5日前。
 
-【制作メモ】
+【制作メモ】ASSET-195
 - 【キャラアニメーション】CHAR-03（ヒグマ）が5日前に目撃された姿（見落とし②）
 - キャラプロンプト（1:1）:
 ```
@@ -2370,7 +2364,7 @@ An open lakeshore at Lake Shumarinai under grey light, forest behind. Photoreali
 
 ナレーター: 岸に魚を捨てる習慣が、クマを呼び寄せていた可能性も、指摘されています。
 
-【制作メモ】
+【制作メモ】ASSET-196
 - 【Lovart動画】岸に捨てられた魚（見落とし③）。クマを呼び寄せる習慣
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2383,7 +2377,7 @@ A 4-second slow shot of a few discarded fish on a gravel shore, cold light. Phot
 
 ナレーター: どれも、一つひとつは、小さな見落としだったのかもしれませんが、その積み重ねが重大な事故へとつながることもあるのです。
 
-【制作メモ】
+【制作メモ】ASSET-197
 - 【Lovart動画】静かな朱鞠内湖。小さな見落としの積み重ねが重大事故へ
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2398,7 +2392,7 @@ A 5-second slow somber shot of a calm grey lake, a reflective heaviness. Photore
 
 ナレーター: 二度とこのような事件を起こさないために。事故のあった2023年の秋、朱鞠内湖には、新しい決まりが作られ、翌年の春、釣りは再開されることとなりました。
 
-【制作メモ】
+【制作メモ】ASSET-198
 - 【Lovart動画】再開後の春の朱鞠内湖。前向きな再スタート
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2411,7 +2405,7 @@ A 5-second bright hopeful shot of a spring lake morning, fresh green and sparkli
 
 ナレーター: その決まりは、「朱鞠内湖ルール」と呼ばれ、この規則はたった一つの反省から始まっています。
 
-【制作メモ】
+【制作メモ】ASSET-199
 - 【Lovart動画】「朱鞠内湖ルール」を掲げた新しい掲示板（文字くっきり明記）
 - 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2424,7 +2418,7 @@ A 4-second slow push-in on a new official rules board at a lakeside launch, clea
 
 ナレーター: 「一人にしない」ということです。
 
-【制作メモ】
+【制作メモ】ASSET-200
 - 【Lovart動画】複数の釣り人が近い距離で釣る、安全な光景（顔は特定しない引き）。「一人にしない」
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2437,7 +2431,7 @@ A 5-second shot of several anglers fishing close together within sight of each o
 
 ナレーター: 前浜やキャンプ場をのぞき、単独での行動は、原則禁止。
 
-【制作メモ】
+【制作メモ】ASSET-201
 - 【Google Earth】前浜・キャンプ場を除き、単独行動が原則禁止となる範囲を地図で示す
 - 座標: 前浜・キャンプ場周辺（`44°17'30"N 142°08'30"E`）→ 高度2,500mで俯瞰
 - カメラ: 前浜・キャンプ場エリアと、それ以外の単独禁止エリアを色分け
@@ -2445,7 +2439,7 @@ A 5-second shot of several anglers fishing close together within sight of each o
 
 ナレーター: 舟で釣りをするときも、すぐに集まれる距離を保つ。必ず携帯するものも、細かく決められました。
 
-【制作メモ】
+【制作メモ】ASSET-202
 - 【Google Earth】舟同士が「すぐ集まれる距離」を保つ配置を地図で示す
 - 座標: 朱鞠内湖の釣り場エリア（`44°17'12"N 142°10'48"E`）→ 高度3,000mで俯瞰
 - カメラ: 舟のピンが近い距離を保つ様子
@@ -2453,7 +2447,7 @@ A 5-second shot of several anglers fishing close together within sight of each o
 
 ナレーター: スマートフォン。クマよけの鈴。そして、クマ撃退スプレー。
 
-【制作メモ】
+【制作メモ】ASSET-203
 - 【Lovart動画】必携品3点（スマホ・鈴・クマ撃退スプレー）のフラットレイ
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2466,7 +2460,7 @@ A 4-second slow top-down shot of three safety items laid out: a smartphone, a be
 
 ナレーター: クマ撃退スプレーは、唐辛子の辛味成分であるカプサイシンを、およそ5メートルから9メートル先まで霧のように噴射する道具です。
 
-【制作メモ】
+【制作メモ】ASSET-204
 - 【Lovart動画】クマ撃退スプレーが霧状に噴射される。噴射距離5〜9m
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2479,7 +2473,7 @@ A 4-second shot of a bear deterrent spray can emitting a forward orange mist, ne
 
 ナレーター: 非常に便利ですが、使用する上で忘れてはいけないことがあります。
 
-【制作メモ】
+【制作メモ】ASSET-205
 - 【Lovart動画】腰に下げられたクマ撃退スプレー。使用上の注意への引き
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2492,7 +2486,7 @@ A 3-second slow shot of a bear spray can holstered on a belt, ready at hand. Pho
 
 ナレーター: それは、いざという時、カバンの中に入れていては、間に合わないということ。
 
-【制作メモ】
+【制作メモ】ASSET-206
 - 【キャラアニメーション】釣り人がカバンの奥からスプレーを取り出そうとして間に合わない
 - キャラプロンプト（1:1）:
 ```
@@ -2504,7 +2498,7 @@ A tense lakeshore of Lake Shumarinai in cold light, an emergency atmosphere. Pho
 
 ナレーター: ヒグマとの遭遇は、一瞬で起きます。
 
-【制作メモ】
+【制作メモ】ASSET-207
 - 【キャラアニメーション】CHAR-03（ヒグマ）が突然目の前に現れる、一瞬の遭遇
 - キャラプロンプト（1:1）:
 ```
@@ -2516,7 +2510,7 @@ A narrow lakeside trail of Lake Shumarinai with dense bushes, cold tense light, 
 
 ナレーター: 腰やベルトなど、一秒で手が届く場所に、装着しておくこと。それでこそ、初めて命綱になる道具といえます。
 
-【制作メモ】
+【制作メモ】ASSET-208
 - 【キャラアニメーション】釣り人が腰・ベルトのスプレーに一秒で手を伸ばす、正しい携帯法
 - キャラプロンプト（1:1）:
 ```
@@ -2528,7 +2522,7 @@ A lakeshore of Lake Shumarinai in cold daylight, calm water and forest. Photorea
 
 ナレーター: さらに、あの事故の原因にもつながった、魚の扱いにも、ルールができました。
 
-【制作メモ】
+【制作メモ】ASSET-209
 - 【Lovart動画】釣り上げた魚を扱う手元。魚の扱いのルールへ
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2541,7 +2535,7 @@ A 4-second close shot of a freshly caught fish handled at the water's edge, cold
 
 ナレーター: 釣れた魚は、できるだけ水の中に返すこと。
 
-【制作メモ】
+【制作メモ】ASSET-210
 - 【Lovart動画】釣れた魚を水の中にそっと返すリリース
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2554,7 +2548,7 @@ A 4-second shot of a fish gently released back into clear cold water, ripples sp
 
 ナレーター: 岸に、魚のにおいを残さない。
 
-【制作メモ】
+【制作メモ】ASSET-211
 - 【Lovart動画】きれいに片付けられ、においを残さない岸辺
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2567,7 +2561,7 @@ A 4-second slow shot of a clean tidy lakeshore with nothing left behind, cold li
 
 ナレーター: 岸辺での調理は、カップラーメン一杯であっても、禁止。
 
-【制作メモ】
+【制作メモ】ASSET-212
 - 【Lovart動画】岸辺に置かれたカップ麺に大きなバツ。調理禁止
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2580,7 +2574,7 @@ A 3-second shot of a cup of instant noodles on a lakeshore, cold light. Photorea
 
 ナレーター: 人間の食べ物や魚のにおいで、クマを岸に呼び寄せないための工夫です。どれも、特別な装備や、難しい技術ではありません。
 
-【制作メモ】
+【制作メモ】ASSET-213
 - 【Lovart動画】清潔で安全に保たれた岸辺。においでクマを呼ばない工夫
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2595,7 +2589,7 @@ A 4-second slow shot of a clean well-kept lakeshore in bright daylight, safe and
 
 ナレーター: そして、もし万が一、ヒグマと出会ってしまった場合、
 
-【制作メモ】
+【制作メモ】ASSET-214
 - 【キャラアニメーション】CHAR-03（ヒグマ）と不意に対面する場面。ハウツーの導入
 - キャラプロンプト（1:1）:
 ```
@@ -2607,7 +2601,7 @@ A narrow lakeside trail of Lake Shumarinai with dense bushes, cold tense light. 
 
 ナレーター: やってはいけないのは、背中を見せて、勢いよく走って逃げることです。
 
-【制作メモ】
+【制作メモ】ASSET-215
 - 【キャラアニメーション】釣り人が背を見せて走って逃げる（NG行動）
 - キャラプロンプト（1:1）:
 ```
@@ -2619,7 +2613,7 @@ A lakeside trail of Lake Shumarinai with forest on both sides, tense atmosphere.
 
 ナレーター: 走って逃げる動きは、ヒグマの追う本能を、かえって刺激します。走るヒグマから、人間が逃げ切れることは、まずありません。
 
-【制作メモ】
+【制作メモ】ASSET-216
 - 【キャラアニメーション】CHAR-03（ヒグマ）が走る人を追う本能を刺激される追跡姿勢
 - キャラプロンプト（1:1）:
 ```
@@ -2631,7 +2625,7 @@ A lakeside trail of Lake Shumarinai with motion-blur suggestion, tense cold ligh
 
 ナレーター: 大声で叫ぶのも、クマを興奮させることがあります。クマと目を合わせたまま、落ち着いて、ゆっくりと後ずさりするのが得策と言えるでしょう。
 
-【制作メモ】
+【制作メモ】ASSET-217
 - 【キャラアニメーション】釣り人がクマと目を合わせたまま、落ち着いてゆっくり後ずさる（OK行動）
 - キャラプロンプト（1:1）:
 ```
@@ -2643,7 +2637,7 @@ A lakeside trail of Lake Shumarinai with forest, cold light, a tense but control
 
 ナレーター: そして、荷物をその場に残していかないこと。
 
-【制作メモ】
+【制作メモ】ASSET-218
 - 【キャラアニメーション】釣り人が食べ物入りの荷物を持ったまま後退する（置き去りにしない）
 - キャラプロンプト（1:1）:
 ```
@@ -2655,7 +2649,7 @@ A lakeside trail of Lake Shumarinai with forest, cold light. Photorealistic, RED
 
 ナレーター: 食べ物の入った荷物を置いて逃げれば、次に来た人間が、同じ危険にさらされるからです。
 
-【制作メモ】
+【制作メモ】ASSET-219
 - 【キャラアニメーション】CHAR-03（ヒグマ）が置き去りの荷物を漁る。次の被害者を生む連鎖
 - キャラプロンプト（1:1）:
 ```
@@ -2667,32 +2661,32 @@ A lakeside trail of Lake Shumarinai with an abandoned backpack on the ground, co
 
 ナレーター: 何より大切なのは、危ないクマがいる場所には、そもそも近づかないこと。
 
-【制作メモ】
+【制作メモ】ASSET-220
 - 【キャラアニメーション】釣り人がクマ注意の看板の前で立ち止まり、引き返す判断
 - キャラプロンプト（1:1）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese angler pausing before a bear-warning sign, thoughtfully deciding to turn back, a calm sensible expression. White background. 1:1 aspect ratio.```
-- 背景プロンプト（16:9）:
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese angler pausing and thoughtfully deciding to turn back, one hand raised in a gentle stop gesture, a calm sensible expression. White background. 1:1 aspect ratio.```
+- 【chatGPT推奨】背景プロンプト（16:9）:
 ```
-A lakeside trailhead of Lake Shumarinai with a bear-warning sign, forest behind, cold daylight. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only.```
+A lakeside trailhead of Lake Shumarinai with a warning sign clearly reading 'クマ出没注意' in bold Japanese characters, forest behind, cold daylight. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only.```
 → 編集者指示: 「危ない場所には近づかない」を最重要教訓として重ねる。
 
 ナレーター: 目撃情報が出ている場所。足跡が残っている場所。
 
-【制作メモ】
+【制作メモ】ASSET-221
 - 【Lovart動画】クマ注意の看板と、地面に残るクマの足跡。危険サインの実景
-- 静止画プロンプト（16:9・フォトリアル）:
+- 【chatGPT推奨】静止画プロンプト（16:9・フォトリアル）:
 ```
-A bear-warning sign beside a Lake Shumarinai lakeside trail with fresh bear paw prints in the mud nearby, cold daylight, forest behind. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people.```
+A warning sign clearly reading 'クマ出没注意' in bold Japanese characters beside a Lake Shumarinai lakeside trail with fresh bear paw prints in the mud nearby, cold daylight, forest behind. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people.```
 → **Google Flow動画プロンプト:**
 ```
-A 4-second slow shot from a bear-warning sign panning to fresh bear paw prints in the mud, cold light. Photorealistic, RED camera, documentary style.
+A 4-second slow shot from a warning sign reading 'クマ出没注意' panning to fresh bear paw prints in the mud, cold light. Photorealistic, RED camera, documentary style.
 ```
 → 編集者指示: 「目撃情報のある場所」「足跡のある場所」の危険サインをアイコンで重ねる。
 
 ナレーター: 「今日はやめておく」という判断が、命を守る、最初の一歩になります。
 
-【制作メモ】
+【制作メモ】ASSET-222
 - 【キャラアニメーション】釣り人が引き返す決断をする、落ち着いた表情
 - キャラプロンプト（1:1）:
 ```
@@ -2704,7 +2698,7 @@ A lakeside trail of Lake Shumarinai leading back toward safety, cold morning lig
 
 ナレーター: 西川さんが舟を降りた朝にも、5日前の目撃情報という、引き返すための手がかりは、確かにありました。
 
-【制作メモ】
+【制作メモ】ASSET-223
 - 【Lovart動画】静かなナマコ沢の朝。「引き返す手がかりはあった」
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2717,7 +2711,7 @@ A 5-second slow shot of a quiet misty morning cove, calm dark water and forest, 
 
 ナレーター: 一人で行かない。においを残さない。スプレーを手の届く場所に。
 
-【制作メモ】
+【制作メモ】ASSET-224
 - 【Lovart動画】穏やかな朱鞠内湖。3つの教訓の最終まとめ
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2730,7 +2724,7 @@ A 4-second slow calm shot of a reflective lake in soft light. Photorealistic, RE
 
 ナレーター: そのひと手間の積み重ねが、次の命を守ります。
 
-【制作メモ】
+【制作メモ】ASSET-225
 - 【Lovart動画】朝日を受ける朱鞠内湖の岸辺。「ひと手間が、次の命を守る」希望のトーン
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2747,7 +2741,7 @@ A 5-second slow hopeful shot of a lakeshore in soft golden morning light, calm a
 
 ナレーター: 西川俊宏さんの父親は、報道の取材に、事故のあと、テレビや新聞で息子の名前を見ても、それが息子のことだと、うまくつながらなかった、と語っています。
 
-【制作メモ】★感情の着地
+【制作メモ】ASSET-226 ★感情の着地
 - 【キャラアニメーション】CHAR-06（父親）が、うつむいて言葉を失っている
 - キャラプロンプト（1:1）:
 ```
@@ -2759,7 +2753,7 @@ A quiet dim Japanese home interior with soft window light and a low table, muted
 
 ナレーター: そして、「好きな釣りをやっていて命を落としたのであれば、本人にとっては、本望かもしれません」
 
-【制作メモ】
+【制作メモ】ASSET-227
 - 【キャラアニメーション】CHAR-06（父親）が、こみ上げる思いを抑えて静かに語る
 - キャラプロンプト（1:1）:
 ```
@@ -2771,7 +2765,7 @@ A quiet dim Japanese home interior, soft light, a low table, muted solemn tones.
 
 ナレーター: 「でも、ヒグマに、、それは、どうなのか」「どうして、そんな場所に行ったのか。どうして、一人で行ってしまったのか。疑問ばかりで、頭がはち切れそうになります」
 
-【制作メモ】★動画の感情的クライマックス
+【制作メモ】ASSET-228 ★動画の感情的クライマックス
 - 【キャラアニメーション】CHAR-06（父親）が、答えの出ない問いに苦しみ、目に涙をにじませる
 - キャラプロンプト（1:1）:
 ```
@@ -2783,7 +2777,7 @@ A quiet dim Japanese home interior with soft window light, muted solemn tones, a
 
 ナレーター: 父親は、事故の時点で、最後に息子と会ってから半年ほど経っていたとのこと。
 
-【制作メモ】
+【制作メモ】ASSET-229
 - 【キャラアニメーション】CHAR-06（父親）が遠くを見つめ、息子との記憶をたどる（横向き・場所要素なし）
 - キャラプロンプト（1:1）:
 ```
@@ -2795,7 +2789,7 @@ A quiet dim Japanese home interior by a window, soft melancholy light, muted ton
 
 ナレーター: 最後に交わした言葉が、何だったのか。それを思い返しては、胸を締めつけられていたのかもしれません。
 
-【制作メモ】
+【制作メモ】ASSET-230
 - 【Lovart動画】窓辺に置かれた古い湯呑みと色あせた便箋（人物・写真なし）。答えの出ない後悔の余韻
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2808,7 +2802,7 @@ A 5-second slow shot of an old tea cup and a faded letter on a windowsill in sof
 
 ナレーター: 西川さんには、二人の子どもがいました。
 
-【制作メモ】※子どもは顔を映さない
+【制作メモ】ASSET-231 ※子どもは顔を映さない
 - 【Lovart動画】夕暮れの湖畔に立つ二人の子どもの後ろ姿（顔は映さない・シルエット）
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2821,7 +2815,7 @@ A 5-second slow shot of two small children's silhouettes from behind at a lakesh
 
 ナレーター: 大好きなお父さんを、突然失った子どもたち。
 
-【制作メモ】※子どもは顔を映さない
+【制作メモ】ASSET-232 ※子どもは顔を映さない
 - 【Lovart動画】父の釣り竿に伸ばされる子どもの小さな手（顔は映さない）。喪失の象徴
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2834,7 +2828,7 @@ A 5-second slow shot of a child's small hand reaching toward a father's fishing 
 
 ナレーター: その気持ちを思うと、父親は「やりきれない」と、言葉を詰まらせています。
 
-【制作メモ】
+【制作メモ】ASSET-233
 - 【キャラアニメーション】CHAR-06（父親）が言葉を詰まらせ、うつむく。「やりきれない」思い
 - キャラプロンプト（1:1）:
 ```
@@ -2846,7 +2840,7 @@ A quiet dim Japanese home interior, soft light, muted solemn tones, a heavy sorr
 
 ナレーター: 事故から1年がたった後も、朱鞠内湖の周辺では、クマの出没が確認され続けています。
 
-【制作メモ】
+【制作メモ】ASSET-234
 - 【Lovart動画】1年後の朱鞠内湖周辺の森。今も続くクマの出没を静かな実景で
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2859,7 +2853,7 @@ A 5-second slow shot of a quiet forest edge by the lake, calm with a lingering u
 
 ナレーター: そして、この危険は、朱鞠内湖だけのものではありませんでした。
 
-【制作メモ】
+【制作メモ】ASSET-235
 - 【Lovart動画】北海道の広がる山と森。危険が各地に及ぶ予感
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2872,7 +2866,7 @@ A 5-second slow aerial shot over vast Hokkaido mountains and forests under grey 
 
 ナレーター: 事故からおよそ2年後の2025年8月。今度は、世界自然遺産の知床、羅臼岳（らうすだけ）で、登山をしていた男性がヒグマに襲われる事故が起きます。
 
-【制作メモ】★知床・羅臼岳2025への接続（自チャンネル動画へ誘導）
+【制作メモ】ASSET-236 ★知床・羅臼岳2025への接続（自チャンネル動画へ誘導）
 - 【Google Earth】朱鞠内湖から知床半島・羅臼岳へカメラを移動。2つの事件を地理でつなぐ
 - 座標: 朱鞠内湖（`44°17'12"N 142°10'48"E`）→ 羅臼岳（`44°04'33"N 145°07'20"E`）へフライ
 - カメラ: 朱鞠内湖から東の知床半島・羅臼岳へ地図上を移動
@@ -2880,7 +2874,7 @@ A 5-second slow aerial shot over vast Hokkaido mountains and forests under grey 
 
 ナレーター: 人の食べ物や、人の気配に慣れ、人を恐れなくなったクマ。
 
-【制作メモ】
+【制作メモ】ASSET-237
 - 【キャラアニメーション】CHAR-03タイプのヒグマが、人の気配のある場所に平然と現れる
 - キャラプロンプト（1:1）:
 ```
@@ -2892,7 +2886,7 @@ A Hokkaido forest edge meeting a human area under grey light, a quiet unsettling
 
 ナレーター: その数は、北海道の各地で、確実に増え続けています。
 
-【制作メモ】
+【制作メモ】ASSET-238
 - 【Google Earth】北海道各地で人を恐れないクマが増える分布を点在マーカーで示す
 - 座標: 北海道全域（中心 `43°30'N 142°48'E`）→ 高度で全体俯瞰
 - カメラ: 北海道全体に点在マーカーを表示
@@ -2900,7 +2894,7 @@ A Hokkaido forest edge meeting a human area under grey light, a quiet unsettling
 
 ナレーター: そうしたクマがいる限り、同じような事故は、どこでも起こりえるのです。
 
-【制作メモ】
+【制作メモ】ASSET-239
 - 【Lovart動画】人里に近い北海道の森。同じ事故がどこでも起こりえる象徴
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2913,7 +2907,7 @@ A 5-second slow shot of a Hokkaido forest near a human area under grey light, an
 
 ナレーター: それでも、朱鞠内湖は、今もイトウの聖地です。そして、その岸は、今もヒグマが暮らす場所でもあります。
 
-【制作メモ】
+【制作メモ】ASSET-240
 - 【Lovart動画】朱鞠内湖の美しい実景。聖地と危険が同居する場所
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2926,7 +2920,7 @@ A 6-second slow beautiful shot of a serene lake in soft light, calm water and fo
 
 ナレーター: 西川俊宏さん。享年54歳。心より、ご冥福をお祈り申し上げます。
 
-【制作メモ】★追悼（必ず動画）
+【制作メモ】ASSET-241 ★追悼（必ず動画）
 - 【Lovart動画】朱鞠内湖の夕景、または静かな湖面。追悼にふさわしい穏やかで厳かな動きのある映像
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2939,7 +2933,7 @@ A 6-second slow cinematic shot of a serene dusk over Lake Shumarinai, the calm w
 
 ナレーター: 最後までご視聴いただき、ありがとうございました。
 
-【制作メモ】★エンドカード（必ず動画）
+【制作メモ】ASSET-242 ★エンドカード（必ず動画）
 - 【Lovart動画】静かな朱鞠内湖の湖面がゆっくり揺れながらフェード。終了画面（関連動画＝知床羅臼岳／チャンネル登録）を配置
 - 静止画プロンプト（16:9・フォトリアル）:
 ```
