@@ -1,0 +1,243 @@
+{
+  "date": "2026-06-23",
+  "collected_at": "2026-07-19T09:17:28.985664",
+  "overview": {
+    "views": 6004,
+    "watch_minutes": 46904,
+    "subs_gained": 22,
+    "subs_lost": 8,
+    "avg_view_duration_sec": 468,
+    "revenue_usd": 25.79
+  },
+  "top_videos": [
+    {
+      "video_id": "c_kkIsQlFe8",
+      "views": 2610,
+      "watch_minutes": 21992,
+      "avg_view_duration_sec": 505,
+      "avg_view_percentage": 26.979999999999997,
+      "subs_gained": 6
+    },
+    {
+      "video_id": "Er8yvR3FaRg",
+      "views": 1909,
+      "watch_minutes": 11499,
+      "avg_view_duration_sec": 361,
+      "avg_view_percentage": 23.76,
+      "subs_gained": 5
+    },
+    {
+      "video_id": "P6129_NW2Zk",
+      "views": 557,
+      "watch_minutes": 4747,
+      "avg_view_duration_sec": 511,
+      "avg_view_percentage": 33.53,
+      "subs_gained": 3
+    },
+    {
+      "video_id": "Ot4G3-EHj5Q",
+      "views": 448,
+      "watch_minutes": 3071,
+      "avg_view_duration_sec": 411,
+      "avg_view_percentage": 27.399999999999995,
+      "subs_gained": 2
+    },
+    {
+      "video_id": "0-ZxPfOWA8Q",
+      "views": 159,
+      "watch_minutes": 2354,
+      "avg_view_duration_sec": 888,
+      "avg_view_percentage": 54.97,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "-sHkcezuQLY",
+      "views": 139,
+      "watch_minutes": 1092,
+      "avg_view_duration_sec": 471,
+      "avg_view_percentage": 28.89,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "1oVqjBXOtiI",
+      "views": 35,
+      "watch_minutes": 547,
+      "avg_view_duration_sec": 938,
+      "avg_view_percentage": 34.97,
+      "subs_gained": 1
+    },
+    {
+      "video_id": "bJhz7_XiduE",
+      "views": 24,
+      "watch_minutes": 276,
+      "avg_view_duration_sec": 692,
+      "avg_view_percentage": 49.84,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "9NU6MUOyiCM",
+      "views": 24,
+      "watch_minutes": 228,
+      "avg_view_duration_sec": 571,
+      "avg_view_percentage": 45.49,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "eQuoRcakpoE",
+      "views": 18,
+      "watch_minutes": 186,
+      "avg_view_duration_sec": 623,
+      "avg_view_percentage": 43.3,
+      "subs_gained": 0
+    }
+  ],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 3573,
+      "watch_minutes": 23021
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 1968,
+      "watch_minutes": 20270
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 188,
+      "watch_minutes": 1391
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 93,
+      "watch_minutes": 424
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 63,
+      "watch_minutes": 630
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 60,
+      "watch_minutes": 552
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 24,
+      "watch_minutes": 287
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 20,
+      "watch_minutes": 199
+    },
+    {
+      "source": "EXT_URL",
+      "views": 15,
+      "watch_minutes": 127
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "ヒグマ事件",
+      "views": 17,
+      "watch_minutes": 132
+    },
+    {
+      "term": "熊 事件",
+      "views": 13,
+      "watch_minutes": 71
+    },
+    {
+      "term": "熊事件",
+      "views": 8,
+      "watch_minutes": 29
+    },
+    {
+      "term": "アンビリーバボー 事件",
+      "views": 6,
+      "watch_minutes": 15
+    },
+    {
+      "term": "グリズリー",
+      "views": 2,
+      "watch_minutes": 25
+    },
+    {
+      "term": "ツキノワグマ 鳴き声",
+      "views": 2,
+      "watch_minutes": 12
+    },
+    {
+      "term": "熊 怖い",
+      "views": 2,
+      "watch_minutes": 33
+    },
+    {
+      "term": "熊ハンター",
+      "views": 2,
+      "watch_minutes": 7
+    },
+    {
+      "term": "登山 熊",
+      "views": 2,
+      "watch_minutes": 0
+    },
+    {
+      "term": "福岡大学ワンダーフォーゲル部ヒグマ事件",
+      "views": 2,
+      "watch_minutes": 28
+    },
+    {
+      "term": "oso",
+      "views": 1,
+      "watch_minutes": 25
+    },
+    {
+      "term": "どうぶつ奇想天外 ヒグマ",
+      "views": 1,
+      "watch_minutes": 4
+    },
+    {
+      "term": "ひぐま",
+      "views": 1,
+      "watch_minutes": 2
+    },
+    {
+      "term": "エロ動画",
+      "views": 1,
+      "watch_minutes": 1
+    },
+    {
+      "term": "キャンプ 熊",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "スーパーk",
+      "views": 1,
+      "watch_minutes": 14
+    },
+    {
+      "term": "ワンダーフォーゲル",
+      "views": 1,
+      "watch_minutes": 31
+    },
+    {
+      "term": "三毛別羆事件",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "乗鞍岳 クマ",
+      "views": 1,
+      "watch_minutes": 10
+    },
+    {
+      "term": "山岳遭難",
+      "views": 1,
+      "watch_minutes": 1
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "date": "2026-06-30",
+  "collected_at": "2026-07-19T09:17:38.526598",
+  "overview": {
+    "views": 7338,
+    "watch_minutes": 59189,
+    "subs_gained": 22,
+    "subs_lost": 6,
+    "avg_view_duration_sec": 483,
+    "revenue_usd": 30.272
+  },
+  "top_videos": [
+    {
+      "video_id": "c_kkIsQlFe8",
+      "views": 5327,
+      "watch_minutes": 41575,
+      "avg_view_duration_sec": 468,
+      "avg_view_percentage": 24.99,
+      "subs_gained": 8
+    },
+    {
+      "video_id": "Er8yvR3FaRg",
+      "views": 490,
+      "watch_minutes": 4004,
+      "avg_view_duration_sec": 490,
+      "avg_view_percentage": 32.24,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "Ot4G3-EHj5Q",
+      "views": 442,
+      "watch_minutes": 3188,
+      "avg_view_duration_sec": 432,
+      "avg_view_percentage": 28.84,
+      "subs_gained": 1
+    },
+    {
+      "video_id": "P6129_NW2Zk",
+      "views": 336,
+      "watch_minutes": 3135,
+      "avg_view_duration_sec": 559,
+      "avg_view_percentage": 36.71,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "-sHkcezuQLY",
+      "views": 230,
+      "watch_minutes": 1887,
+      "avg_view_duration_sec": 492,
+      "avg_view_percentage": 30.159999999999997,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "VRroiHKQegg",
+      "views": 158,
+      "watch_minutes": 1072,
+      "avg_view_duration_sec": 407,
+      "avg_view_percentage": 27.55,
+      "subs_gained": 1
+    },
+    {
+      "video_id": "0-ZxPfOWA8Q",
+      "views": 106,
+      "watch_minutes": 1311,
+      "avg_view_duration_sec": 742,
+      "avg_view_percentage": 45.93,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "eQuoRcakpoE",
+      "views": 33,
+      "watch_minutes": 339,
+      "avg_view_duration_sec": 617,
+      "avg_view_percentage": 42.89,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "1oVqjBXOtiI",
+      "views": 33,
+      "watch_minutes": 572,
+      "avg_view_duration_sec": 1040,
+      "avg_view_percentage": 38.77,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "bJhz7_XiduE",
+      "views": 29,
+      "watch_minutes": 272,
+      "avg_view_duration_sec": 564,
+      "avg_view_percentage": 40.62,
+      "subs_gained": 0
+    }
+  ],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 3547,
+      "watch_minutes": 26216
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 3094,
+      "watch_minutes": 27113
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 174,
+      "watch_minutes": 1272
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 156,
+      "watch_minutes": 783
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 129,
+      "watch_minutes": 1427
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 107,
+      "watch_minutes": 1184
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 64,
+      "watch_minutes": 879
+    },
+    {
+      "source": "EXT_URL",
+      "views": 45,
+      "watch_minutes": 175
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 19,
+      "watch_minutes": 125
+    },
+    {
+      "source": "HASHTAGS",
+      "views": 2,
+      "watch_minutes": 11
+    },
+    {
+      "source": "NOTIFICATION",
+      "views": 1,
+      "watch_minutes": 0
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "熊 事件",
+      "views": 14,
+      "watch_minutes": 91
+    },
+    {
+      "term": "ヒグマ事件",
+      "views": 10,
+      "watch_minutes": 98
+    },
+    {
+      "term": "ヒグマ",
+      "views": 9,
+      "watch_minutes": 78
+    },
+    {
+      "term": "熊事件",
+      "views": 6,
+      "watch_minutes": 42
+    },
+    {
+      "term": "登山 熊",
+      "views": 5,
+      "watch_minutes": 12
+    },
+    {
+      "term": "グリズリー",
+      "views": 4,
+      "watch_minutes": 0
+    },
+    {
+      "term": "アンビリーバボー 事件",
+      "views": 3,
+      "watch_minutes": 4
+    },
+    {
+      "term": "ヒグマ 遭遇",
+      "views": 3,
+      "watch_minutes": 5
+    },
+    {
+      "term": "事件 再現ドラマ",
+      "views": 3,
+      "watch_minutes": 0
+    },
+    {
+      "term": "さんけべつヒグマ事件",
+      "views": 2,
+      "watch_minutes": 7
+    },
+    {
+      "term": "山岳遭難",
+      "views": 2,
+      "watch_minutes": 25
+    },
+    {
+      "term": "星野道夫",
+      "views": 2,
+      "watch_minutes": 3
+    },
+    {
+      "term": "熊に食べられた人",
+      "views": 2,
+      "watch_minutes": 7
+    },
+    {
+      "term": "羅臼岳 ヒグマ",
+      "views": 2,
+      "watch_minutes": 1
+    },
+    {
+      "term": "クマ牧場",
+      "views": 1,
+      "watch_minutes": 1
+    },
+    {
+      "term": "サバイバル",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ワンダーフォーゲル",
+      "views": 1,
+      "watch_minutes": 11
+    },
+    {
+      "term": "事件簿",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "八甲田山雪中行軍遭難事件",
+      "views": 1,
+      "watch_minutes": 19
+    },
+    {
+      "term": "子熊",
+      "views": 1,
+      "watch_minutes": 0
+    }
+  ]
+}
