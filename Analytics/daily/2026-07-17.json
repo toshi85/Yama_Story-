@@ -1,0 +1,243 @@
+{
+  "date": "2026-07-17",
+  "collected_at": "2026-07-20T06:00:04.617784",
+  "overview": {
+    "views": 6834,
+    "watch_minutes": 51751,
+    "subs_gained": 14,
+    "subs_lost": 5,
+    "avg_view_duration_sec": 454,
+    "revenue_usd": 21.49
+  },
+  "top_videos": [
+    {
+      "video_id": "c_kkIsQlFe8",
+      "views": 4882,
+      "watch_minutes": 36558,
+      "avg_view_duration_sec": 449,
+      "avg_view_percentage": 23.98,
+      "subs_gained": 5
+    },
+    {
+      "video_id": "P6129_NW2Zk",
+      "views": 766,
+      "watch_minutes": 5758,
+      "avg_view_duration_sec": 451,
+      "avg_view_percentage": 29.580000000000002,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "Er8yvR3FaRg",
+      "views": 377,
+      "watch_minutes": 2828,
+      "avg_view_duration_sec": 450,
+      "avg_view_percentage": 29.59,
+      "subs_gained": 1
+    },
+    {
+      "video_id": "Ot4G3-EHj5Q",
+      "views": 286,
+      "watch_minutes": 1871,
+      "avg_view_duration_sec": 392,
+      "avg_view_percentage": 26.16,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "-sHkcezuQLY",
+      "views": 138,
+      "watch_minutes": 1128,
+      "avg_view_duration_sec": 490,
+      "avg_view_percentage": 30.049999999999997,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "0-ZxPfOWA8Q",
+      "views": 99,
+      "watch_minutes": 1144,
+      "avg_view_duration_sec": 693,
+      "avg_view_percentage": 42.93,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "bJhz7_XiduE",
+      "views": 56,
+      "watch_minutes": 395,
+      "avg_view_duration_sec": 424,
+      "avg_view_percentage": 30.54,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "9NU6MUOyiCM",
+      "views": 47,
+      "watch_minutes": 425,
+      "avg_view_duration_sec": 542,
+      "avg_view_percentage": 43.17,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "VRroiHKQegg",
+      "views": 40,
+      "watch_minutes": 365,
+      "avg_view_duration_sec": 547,
+      "avg_view_percentage": 37.04,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "1oVqjBXOtiI",
+      "views": 30,
+      "watch_minutes": 343,
+      "avg_view_duration_sec": 687,
+      "avg_view_percentage": 25.6,
+      "subs_gained": 0
+    }
+  ],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 3544,
+      "watch_minutes": 22914
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 2706,
+      "watch_minutes": 24044
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 168,
+      "watch_minutes": 1379
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 150,
+      "watch_minutes": 1008
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 87,
+      "watch_minutes": 801
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 73,
+      "watch_minutes": 823
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 57,
+      "watch_minutes": 496
+    },
+    {
+      "source": "EXT_URL",
+      "views": 25,
+      "watch_minutes": 66
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 24,
+      "watch_minutes": 214
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "熊 事件",
+      "views": 11,
+      "watch_minutes": 105
+    },
+    {
+      "term": "熊事件",
+      "views": 8,
+      "watch_minutes": 103
+    },
+    {
+      "term": "ヒグマ事件",
+      "views": 7,
+      "watch_minutes": 59
+    },
+    {
+      "term": "福岡大学ワンダーフォーゲル部ヒグマ事件",
+      "views": 6,
+      "watch_minutes": 43
+    },
+    {
+      "term": "ひぐま",
+      "views": 3,
+      "watch_minutes": 24
+    },
+    {
+      "term": "熊 射殺シーン",
+      "views": 3,
+      "watch_minutes": 12
+    },
+    {
+      "term": "さんけべつヒグマ事件",
+      "views": 2,
+      "watch_minutes": 16
+    },
+    {
+      "term": "三毛別羆事件",
+      "views": 2,
+      "watch_minutes": 1
+    },
+    {
+      "term": "熊 怖い",
+      "views": 2,
+      "watch_minutes": 32
+    },
+    {
+      "term": "登山",
+      "views": 2,
+      "watch_minutes": 1
+    },
+    {
+      "term": "カエル少年失踪事件",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "パラコート事件",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ヒグマ",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "ワンダーフォーゲル",
+      "views": 1,
+      "watch_minutes": 1
+    },
+    {
+      "term": "ワンダーフォーゲル部ヒグマ事件 ゆっくり",
+      "views": 1,
+      "watch_minutes": 31
+    },
+    {
+      "term": "三毛別ヒグマ事件",
+      "views": 1,
+      "watch_minutes": 10
+    },
+    {
+      "term": "乗鞍岳 クマ",
+      "views": 1,
+      "watch_minutes": 21
+    },
+    {
+      "term": "人喰いワニ",
+      "views": 1,
+      "watch_minutes": 0
+    },
+    {
+      "term": "怖い映像",
+      "views": 1,
+      "watch_minutes": 3
+    },
+    {
+      "term": "星野道夫",
+      "views": 1,
+      "watch_minutes": 7
+    }
+  ]
+}

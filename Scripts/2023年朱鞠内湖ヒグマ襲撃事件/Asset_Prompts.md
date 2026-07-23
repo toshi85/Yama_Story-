@@ -36,7 +36,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 [実写参照: なし]
 
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background. Single character only, front-facing view. A young male Hokkaido brown bear (Ursus arctos yesoensis), sub-adult about 3 years old, relatively small body length of 1.5 meters, lean not-yet-fully-muscled build, medium brown fur with a slightly lighter muzzle, small rounded ears, curious bold unafraid eyes lacking the wariness of an adult bear. Standing on all fours. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Only this one character in the image.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background. Single character only, front-facing view. A young male Hokkaido brown bear (Ursus arctos yesoensis), sub-adult about 3 years old, relatively small body length of 1.5 meters, lean but wiry and powerful build, medium brown fur with a slightly lighter muzzle, small rounded ears pinned slightly back, fierce menacing glare fixed on the viewer with no fear of humans, mouth open in a low snarl baring sharp fangs, smooth even fur all over the body, long sharp claws clearly visible on its front paws. Standing on all fours with its head lowered in an aggressive threatening stance. A single standalone character illustration with no written words, no lettering, no dialogue balloons, no onomatopoeia, and no comic sound-effects anywhere in the image. Only this one character in the image.
 ```
 
 ### CHAR-04: 門崎允昭さん（70代）— 北海道野生動物研究所 所長・ヒグマ研究者
@@ -156,10 +156,10 @@ A 6-second slow panning shot from a boat scanning an empty silent lakeshore, no 
 - 著作権: 報道映像の引用は出典明示・必要最小限・主従関係を厳守。不可なら下記Lovart再現に切替
 - 代替（推奨フォールバック）: 【Lovart動画】静止画＋Google Flow →
 ```
-A young medium-brown Hokkaido brown bear standing at the edge of a remote lakeshore, holding a pair of olive-green chest-high fishing waders in its mouth. Cold grey morning light, dense forest behind, still dark water. Ominous and quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio.```
+A young medium-brown Hokkaido brown bear standing at the edge of a remote lakeshore, holding a pair of badly torn olive-green chest-high fishing waders in its mouth — the fabric ripped to shreds, tattered loose strips of cloth hanging down from its jaws, gaping tears and frayed holes across the material. No blood, no gore. Cold grey morning light, dense forest behind, still dark water. Ominous and quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio.```
 → **Google Flow動画プロンプト:**
 ```
-A 6-second documentary shot of a young brown bear on a remote Hokkaido lakeshore, fishing waders hanging from its mouth, the bear slowly lifting its head toward the water. Cold still morning, foreboding tension. Photorealistic, RED camera, documentary style.
+A 6-second documentary shot of a young brown bear on a remote Hokkaido lakeshore, badly torn and shredded fishing waders hanging in tattered strips from its mouth, ripped fabric swaying slightly as the bear slowly lifts its head toward the water. No blood, no gore. Cold still morning, foreboding tension. Photorealistic, RED camera, documentary style.
 ```
 → 編集者指示: 衝撃音（ドン）と同時にカットイン。「くわえていたのは、釣り人の胴長」を赤文字で重ねる。直接的な残酷描写は避ける。
 
@@ -178,14 +178,11 @@ A 5-second slow drift over a darkened misty Lake Shumarinai at dawn, ominous and
 
 ナレーター: そして、衣服をくわえたクマは、何を意味していたのか。
 
-【制作メモ】ASSET-008 [キャラアニメーション]
-- 【キャラアニメーション】CHAR-03（ヒグマ）が胴長をくわえて立ち、こちらを見る。問い②を重ねる土台
-- キャラプロンプト（1:1）:
+【制作メモ】ASSET-008 [Lovart動画]
+- 【Lovart動画】フォトリアル：胴長をくわえたヒグマがカメラを正面から睨む。問い②を重ねる土台。**静止画のみ使用（Flow動画不要）**
+- 静止画プロンプト（16:9・フォトリアル）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: a young male brown bear, small 1.5m body, medium brown fur, holding a pair of olive-green fishing waders in its mouth, looking toward the viewer with bold unafraid eyes, ominous stillness. White background. 1:1 aspect ratio.```
-- 背景プロンプト（16:9）:
-```
-A remote lakeshore of Lake Shumarinai in cold dim morning light graded darker and ominous, dark water and dense forest, an unsettling quiet. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only.```
+A young medium-brown Hokkaido brown bear standing on a remote gravel lakeshore of Lake Shumarinai, head lowered, glaring straight into the camera with intense menacing eyes locked directly on the viewer, holding a pair of badly torn olive-green chest-high fishing waders in its mouth — tattered shredded strips of fabric hanging down from its jaws. No blood, no gore. Cold dim morning light graded dark and ominous, dark still water and dense forest behind. Unsettling direct eye contact. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio.```
 → 編集者指示: このカットの上に疑問テロップ「衣服をくわえたクマは、何を意味していたのか？」を白抜きで重ねる。低音BGMで引き。
 
 ナレーター: 地形図とともに解説します。
