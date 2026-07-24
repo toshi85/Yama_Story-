@@ -33,19 +33,20 @@ def prompt_lint(text, errors, warns, info):
         mo = re.search(r'ASSET-\d+', seg)
         return mo.group(0) if mo else '?'
 
-    # 14) 冬化トリガー: 地名/北海道 + cold/grey系の光 + 対策文なし（朱鞠内湖=氷上ワカサギ連想）
+    # 14) 冬化トリガー: 地名/北海道 + cold/grey系の光 + 季節宣言なし（朱鞠内湖=氷上ワカサギ連想）
+    #     ※意図的な冬シーン（winter/snow等を明示宣言）は正しいので対象外。検出するのは「季節未指定の事故的冬化」のみ
     winter = []
-    # 15-19用: セグメント内の全コードブロック
+    SEASON_DECLARED = re.compile(r'\b(winter|snow\w*|frozen|icy|midwinter)\b|no snow|Fresh green|fresh leaf|lush green|\b(spring|summer|autumn|May|June|July|August)\b', re.I)
     for nar, seg in segs:
         blocks = re.findall(r'```\n?(.*?)\n?```', seg, re.S)
         for b in blocks:
             if re.search(r'Shumarinai|Hokkaido', b, re.I) \
                and re.search(r'\b(cold|grey|gray|tense)\b[^.]*\b(light|daylight|morning|sky|water)\b', b, re.I) \
-               and not re.search(r'no snow|Fresh green|fresh leaf|lush green', b, re.I):
+               and not SEASON_DECLARED.search(b):
                 winter.append(asset_no(seg))
                 break
     if winter:
-        warns.append(f'冬化トリガー {len(winter)}件（地名+cold/grey光で雪景色化。新緑フォーミュラ=文頭Fresh green season+緑面描写+末尾no snow群を適用）: {", ".join(dict.fromkeys(winter))}')
+        warns.append(f'冬化トリガー {len(winter)}件（季節未指定+地名+cold/grey光は雪景色化する。季節を明示=夏なら新緑フォーミュラ/冬シーンならwinter・snowを明示宣言）: {", ".join(dict.fromkeys(winter))}')
 
     # 15) ナレ行にクマ/ヒグマ→プロンプト側にクマ不在（象徴表現逃げの検出）
     bearless = []
@@ -109,7 +110,30 @@ def prompt_lint(text, errors, warns, info):
     if jp_body:
         warns.append(f'chatGPT推奨プロンプトが日本語本文 {len(jp_body)}件（形式統一=英語本文+描かせる日本語のみ引用符内）: {", ".join(dict.fromkeys(jp_body))}')
 
-    info.append(f'プロンプトlint(14-20): {len(segs)}セグメント走査')
+    # 21) 人物プロンプトに日本人指定なし（外国人顔化 ASSET-093実例: 場所でなく人物側に日本を付与）
+    PERSON = re.compile(r'\b(man|men|woman|women|angler|hiker|journalist|fisherman|person|people|father|child|guide|staff|worker|hunter)\b', re.I)
+    nonjp = []
+    for nar, seg in segs:
+        for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
+            if PERSON.search(b) and not re.search(r'Japanese|East Asian', b, re.I) \
+               and not re.search(r'no people|no humans|No people visible', b, re.I):
+                nonjp.append(asset_no(seg))
+                break
+    if nonjp:
+        warns.append(f'人物に日本人指定なし {len(nonjp)}件（外国人顔になる→各人物にJapanese+必要ならall East Asian with black hair+No Western-looking people）: {", ".join(dict.fromkeys(nonjp))}')
+
+    # 22) 複数人なのに書き分け指定なし（全員同じ見た目のクローン化 ASSET-025実例）
+    MULTI = re.compile(r'\b(two|three|four|five|six|seven|ten|several|group of|crowd)\b[^.]*\b(men|people|anglers|hikers|passengers|persons)\b|\b(men|people|anglers|hikers)\b[^.]*\b(side by side|together)\b', re.I)
+    clones = []
+    for nar, seg in segs:
+        for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
+            if MULTI.search(b) and not re.search(r'distinct individual|no two (people |anglers )?(wear|dressed)|different build', b, re.I):
+                clones.append(asset_no(seg))
+                break
+    if clones:
+        warns.append(f'複数人に書き分け指定なし {len(clones)}件（全員クローン化する→Every person is a distinct individual+服装を一人ずつ列挙+no two dressed alike）: {", ".join(dict.fromkeys(clones))}')
+
+    info.append(f'プロンプトlint(14-22): {len(segs)}セグメント走査')
 
 def main(master_path, daihon_path):
     m = open(master_path, encoding='utf-8').read()
