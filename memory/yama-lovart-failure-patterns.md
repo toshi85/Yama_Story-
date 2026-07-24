@@ -86,6 +86,7 @@ type: reference
 | 症状 | 指示原因 | 回避表現 |
 |---|---|---|
 | ほぼ真っ黒な画面が生成される | `Dark charcoal background + subdued cinematic lighting` に細い線・少要素の構成→暗部に全て沈む | 背景は `dark slate-blue background (NOT pure black)`、要素側を明示的に明るく: `bold white Japanese text` `thick bright red line` `light grey axis lines and grid lines` + `All chart elements bright, high-contrast and clearly visible` + `flat vector style`（照明語cinematic lightingは使わない）（朱鞠内湖ASSET-174実例 2026-07-24） |
+| グラフを動画化すると崩れる（image-to-video/text-to-videoとも） | 生成動画AIは図版の直線・整列・比率を時間方向に維持できない | グラフ系は**静止画のみ**で作る（ChatGPTで実文字ラベル込みの完成形1枚）。動きが必要なら編集側でゆっくりズームイン（Ken Burns）を付ける（朱鞠内湖ASSET-177実例 2026-07-24） |
 
 ## 8. 血痕・痕跡描写関連
 
