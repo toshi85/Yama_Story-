@@ -58,7 +58,7 @@ type: reference
 | 症状 | 指示原因 | 回避表現 |
 |---|---|---|
 | 顔が小さい・全身入り | フレーミング指示なし | `framed from chest up`（立山実例）・バストアップ明示 |
-| 二人が違う向きを向く（複数キャラ同居時） | `both facing the same direction` 単発 | 複数キャラ同居は避け、1人ずつ単独生成→Photopea合成（リファレンスCHAR-01/02と同じ方式） |
+| 二人が違う向きを向く（複数キャラ同居時） | `both facing the same direction` 単発 | **2026-07-24ルール変更（ユーザー指示）: 複数キャラは1枚に同居させて生成するのが標準**（AI精度向上により崩れが減ったため）。各キャラの配置と向きを位置語で明示（`On the left ... On the right ... facing each other` / `both running in the same direction`）+キャラ間の距離（`with a clear gap, no contact`）+二重スタイル宣言（ASSET-027方式）。崩れた場合のみ1人ずつ単独生成→Photopea合成にフォールバック |
 
 ## 6.5 複数人物関連
 
