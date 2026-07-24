@@ -78,6 +78,7 @@ type: reference
 | 症状 | 指示原因 | 回避表現 |
 |---|---|---|
 | クマの背中に黒いタテガミ状の剛毛（モヒカン風）が生える | `bristling raised hackles along its shoulders`（毛の逆立ち指示）をカートゥーン調で文字通り誇張描画 | hackles系の語は使わない。凶暴さは `fierce menacing glare` + `baring sharp fangs` + `long sharp claws` + `head lowered in an aggressive stance` で表現し、毛は `smooth even fur all over the body` と明示（朱鞠内湖CHAR-03実例 2026-07-22） |
+| 走るクマが二足歩行（擬人化ラン）になる | カートゥーン調 + `running forward at speed in pursuit` だけだと人間型の走りに解釈される。`head lowered aggressive stance` との動的重ねがけも破綻を助長 | 走りは四足ギャロップを明示: `running ON ALL FOURS in a clean natural side profile, a horizontal quadruped galloping stride with its body parallel to the ground` + 047の解剖学定型文（`two front legs and two hind legs clearly separated...level back`）+ 末尾に `NOT standing upright, NOT running on two legs, no bipedal pose, no human-like running posture`。動的姿勢の重ねがけ（head lowered等）は外し凶暴さは顔のみで（朱鞠内湖ASSET-143実例 2026-07-24） |
 
 ## 8. 血痕・痕跡描写関連
 
