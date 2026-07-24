@@ -1,13 +1,115 @@
 #!/usr/bin/env python3
 """
 Yama Phase2 アセット割り振り 自動検証（羅臼岳標準）
-使い方: python3 validate_phase2_assets.py <Master.md> <台本.txt>
+使い方:
+  python3 validate_phase2_assets.py <Master.md> <台本.txt>   # フル検証(1-13)+プロンプトlint(14-20)
+  python3 validate_phase2_assets.py --prompts <任意の.md>    # プロンプトlint(14-20)のみ（修正版資料等の単体チェック用）
 
 「ユーザーに見せる前」に必ず実行し、全項目GREENにしてから提示する。
 2026-07-16の朱鞠内湖で4〜5回の作り直しが発生した反省から作成。
+2026-07-24拡張: 生成失敗パターン(冬化/二足歩行/グラフ動画崩れ/黒画面/方向曖昧)と
+ナレ行⇄プロンプト整合(クマ不在等)の機械検出を追加。根拠: memory/yama-lovart-failure-patterns.md
 ルール根拠: memory/feedback_yama_one_asset_per_narration_line.md
 """
 import re, sys
+
+if hasattr(sys.stdout, 'reconfigure'):  # Windows cp932コンソール対策
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+
+
+def prompt_lint(text, errors, warns, info):
+    """rules 14-20: 生成失敗パターン+ナレ行整合のlint。Master.md/修正版どちらの書式にも対応"""
+    # ナレ行→次のナレ行までを1セグメントとして走査
+    marks = [(mo.start(), mo.group(1)) for mo in re.finditer(
+        r'^(?:ナレーター:|\*\*ナレ行\*\*:\s*ナレーター:)\s*(.*)$', text, re.M)]
+    segs = []
+    for i, (pos, nar) in enumerate(marks):
+        end = marks[i + 1][0] if i + 1 < len(marks) else len(text)
+        seg = text[pos:end]
+        if '【制作メモ】' in seg:
+            segs.append((nar, seg))
+
+    def asset_no(seg):
+        mo = re.search(r'ASSET-\d+', seg)
+        return mo.group(0) if mo else '?'
+
+    # 14) 冬化トリガー: 地名/北海道 + cold/grey系の光 + 対策文なし（朱鞠内湖=氷上ワカサギ連想）
+    winter = []
+    # 15-19用: セグメント内の全コードブロック
+    for nar, seg in segs:
+        blocks = re.findall(r'```\n?(.*?)\n?```', seg, re.S)
+        for b in blocks:
+            if re.search(r'Shumarinai|Hokkaido', b, re.I) \
+               and re.search(r'\b(cold|grey|gray|tense)\b[^.]*\b(light|daylight|morning|sky|water)\b', b, re.I) \
+               and not re.search(r'no snow|Fresh green|fresh leaf|lush green', b, re.I):
+                winter.append(asset_no(seg))
+                break
+    if winter:
+        warns.append(f'冬化トリガー {len(winter)}件（地名+cold/grey光で雪景色化。新緑フォーミュラ=文頭Fresh green season+緑面描写+末尾no snow群を適用）: {", ".join(dict.fromkeys(winter))}')
+
+    # 15) ナレ行にクマ/ヒグマ→プロンプト側にクマ不在（象徴表現逃げの検出）
+    bearless = []
+    for nar, seg in segs:
+        nar_clean = re.sub(r'クマスプレー|クマよけ|クマ鈴|クマ避け', '', nar)
+        if re.search(r'ヒグマ|クマ', nar_clean):
+            body = seg.split('\n', 1)[1] if '\n' in seg else ''
+            if not re.search(r'\bbear\b|クマ|ヒグマ|CHAR-03', body, re.I):
+                bearless.append(asset_no(seg))
+    if bearless:
+        warns.append(f'ナレ行はクマなのにプロンプトにクマ不在 {len(bearless)}件（象徴表現逃げ禁止。主語をそのまま描く）: {", ".join(bearless)}')
+
+    # 16) カートゥーンのクマ走り: ON ALL FOURS必須（二足歩行化防止 ASSET-143実例）
+    biped = []
+    for nar, seg in segs:
+        for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
+            if 'cartoon' in b.lower() and re.search(r'\bbear\b', b, re.I) \
+               and re.search(r'\b(runn?ing|sprint|charg\w*|chas\w*|gallop\w*)\b', b, re.I) \
+               and not re.search(r'ALL FOURS|all fours|quadruped', b):
+                biped.append(asset_no(seg))
+    if biped:
+        errors.append(f'カートゥーンのクマ走りにON ALL FOURSなし {len(biped)}件（二足歩行化する。四足ギャロップ定型文+NOT standing upright必須）: {", ".join(biped)}')
+
+    # 17) グラフ系に動画プロンプト（グラフの動画化は崩れる ASSET-177実例→静止画のみ+編集Ken Burns）
+    graphvid = []
+    for nar, seg in segs:
+        if re.search(r'\b(chart|graph|infographic)\b|グラフ', seg, re.I) and 'Google Flow動画プロンプト' in seg:
+            graphvid.append(asset_no(seg))
+    if graphvid:
+        warns.append(f'グラフ系にFlow動画プロンプト {len(graphvid)}件（グラフの動画化は崩れる→静止画のみ+編集ズームを推奨）: {", ".join(graphvid)}')
+
+    # 18) 暗背景の黒つぶれ: dark背景に明度・コントラスト指定なし（真っ黒画面 ASSET-174実例）
+    dark = []
+    for nar, seg in segs:
+        for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
+            if re.search(r'dark (charcoal|slate|background)', b, re.I) \
+               and not re.search(r'bright|high-contrast|clearly visible|NOT pure black', b, re.I):
+                dark.append(asset_no(seg))
+    if dark:
+        warns.append(f'暗背景に明度指定なし {len(dark)}件（黒一色に沈む→NOT pure black+要素をbright/high-contrast明示）: {", ".join(dark)}')
+
+    # 19) 投げる系に着地点なし: 方向が水側に解釈される（ASSET-178実例）
+    throw = []
+    for nar, seg in segs:
+        for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
+            if re.search(r'\b(toss\w*|throw\w*|hurl\w*)\b', b, re.I) \
+               and not re.search(r'land(s|ing)? (on|flopping)|onto the (dry|gravel|ground)|AWAY from|never in the water', b, re.I):
+                throw.append(asset_no(seg))
+    if throw:
+        warns.append(f'投げる動作に着地点指定なし {len(throw)}件（方向が曖昧だと水中等に誤解釈→AWAY from+着地点+既存落下物アンカー）: {", ".join(throw)}')
+
+    # 20) 【chatGPT推奨】ブロックが日本語本文（形式は英語本文+日本語は引用符内のみ ASSET-147実例）
+    jp_body = []
+    for mo in re.finditer(r'(-[^\n]*【chatGPT推奨】[^\n]*|[^\n]*【chatGPT推奨】[^\n]*)\n(?:[^\n`]*\n)*?```\n?(.*?)\n?```', text, re.S):
+        b = mo.group(2)
+        stripped = re.sub(r"'[^']*'|「[^」]*」|『[^』]*』", '', b)
+        jp = len(re.findall(r'[一-龠ぁ-んァ-ヴー]', stripped))
+        if jp > 30:
+            no = re.search(r'ASSET-\d+', mo.group(0))
+            jp_body.append(no.group(0) if no else '?')
+    if jp_body:
+        warns.append(f'chatGPT推奨プロンプトが日本語本文 {len(jp_body)}件（形式統一=英語本文+描かせる日本語のみ引用符内）: {", ".join(dict.fromkeys(jp_body))}')
+
+    info.append(f'プロンプトlint(14-20): {len(segs)}セグメント走査')
 
 def main(master_path, daihon_path):
     m = open(master_path, encoding='utf-8').read()
@@ -123,6 +225,9 @@ def main(master_path, daihon_path):
     if memo_all and len(numbered) != len(memo_all):
         warns.append(f'制作メモのASSET番号併記が不足 {len(memo_all)-len(numbered)}件（全メモに ASSET-NNN を付ける）')
 
+    # 14-20) 生成失敗パターン+ナレ行整合のlint
+    prompt_lint(m, errors, warns, info)
+
     # ---- 出力 ----
     print('=' * 60)
     for s in info: print('  INFO :', s)
@@ -135,7 +240,26 @@ def main(master_path, daihon_path):
     print(f'✅ 全チェックPASS（警告{len(warns)}件）。提示可能。')
     return 0
 
+def main_prompts_only(path):
+    text = open(path, encoding='utf-8').read()
+    errors, warns, info = [], [], []
+    prompt_lint(text, errors, warns, info)
+    print('=' * 60)
+    for s in info: print('  INFO :', s)
+    for s in warns: print('  WARN ⚠:', s)
+    for s in errors: print('  FAIL ❌:', s)
+    print('=' * 60)
+    if errors:
+        print(f'❌ NG: {len(errors)}件のエラー / {len(warns)}件の警告 → 修正してから提示すること')
+        return 1
+    print(f'✅ プロンプトlint PASS（警告{len(warns)}件）。')
+    return 0
+
+
 if __name__ == '__main__':
+    if len(sys.argv) == 3 and sys.argv[1] == '--prompts':
+        sys.exit(main_prompts_only(sys.argv[2]))
     if len(sys.argv) != 3:
-        print('usage: python3 validate_phase2_assets.py <Master.md> <台本.txt>'); sys.exit(2)
+        print('usage: python3 validate_phase2_assets.py <Master.md> <台本.txt>\n'
+              '       python3 validate_phase2_assets.py --prompts <任意の.md>'); sys.exit(2)
     sys.exit(main(sys.argv[1], sys.argv[2]))
