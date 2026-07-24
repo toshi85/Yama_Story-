@@ -41,6 +41,7 @@ type: reference
 |---|---|---|
 | 棒立ち・スタジオ撮影感 | 動き要素ゼロ | `stylish short black hair gently blown by mountain wind. Wind gently blowing his hair and the collar of his jacket`（立山実例） |
 | motion blur過剰で人物がブレる | `autumn leaves mid-air ... fog swirling actively ... daypack strap swaying` を複数併用 | 1〜2要素に絞る（風で髪+襟だけ等） |
+| 姿勢指定なしだと座り/しゃがみで生成される（釣り等の座り連想が強い活動） | 立ち姿を明示していない | `both STANDING upright, full body, both feet planted on the ground` + `NOT sitting, NOT crouching, NOT kneeling`（朱鞠内湖ASSET-225実例 2026-07-24） |
 
 ## 5. 背景関連
 
