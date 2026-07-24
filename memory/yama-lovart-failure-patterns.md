@@ -58,6 +58,7 @@ type: reference
 | 症状 | 指示原因 | 回避表現 |
 |---|---|---|
 | 顔が小さい・全身入り | フレーミング指示なし | `framed from chest up`（立山実例）・バストアップ明示 |
+| 「岸に放る」が水中に投げ込まれる | 後ろ姿+`onto the shore behind him` は、人物が水を向いているため投げる方向が水側と解釈される | 真横アングルにして方向を空間で固定: `A side view ... tossing ... over his shoulder AWAY from the water toward the dry land` + 着地点を明示 `lands on the dry gravel beach several meters from the waterline, never in the water` + 着地点に既存の落下物（他の捨てられた魚）を置いてアンカー（朱鞠内湖ASSET-178実例 2026-07-24） |
 | 二人が違う向きを向く（複数キャラ同居時） | `both facing the same direction` 単発 | **2026-07-24ルール変更（ユーザー指示）: 複数キャラは1枚に同居させて生成するのが標準**（AI精度向上により崩れが減ったため）。各キャラの配置と向きを位置語で明示（`On the left ... On the right ... facing each other` / `both running in the same direction`）+キャラ間の距離（`with a clear gap, no contact`）+二重スタイル宣言（ASSET-027方式）。崩れた場合のみ1人ずつ単独生成→Photopea合成にフォールバック |
 
 ## 6.5 複数人物関連
