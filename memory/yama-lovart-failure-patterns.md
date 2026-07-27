@@ -10,6 +10,9 @@ type: reference
 - 新しい失敗が発生したら、該当カテゴリに1行追記
 - 次回プロンプト作成前にこのファイルを必ず Read（特にサムネ系）
 - カラム: `症状` / `指示原因` / `回避表現`
+- **プロンプト作成・修正後は提出前に必ず機械チェックを実行**（2026-07-24〜。冬化/クマ不在/二足歩行/グラフ動画/黒画面/方向曖昧/日本語本文を自動検出）:
+  `python System_Tools/validate_phase2_assets.py --prompts <プロンプト資料.md>`
+- 機械チェックで拾えない**ナレ行の意味の欠落**は、作成時に「主語・数・関係・場所・季節」の5要素をナレ行から書き出してプロンプトに反映する（象徴表現・無人・下地だけの逃げはユーザー明示指示時のみ）
 
 ---
 
@@ -41,6 +44,7 @@ type: reference
 |---|---|---|
 | 棒立ち・スタジオ撮影感 | 動き要素ゼロ | `stylish short black hair gently blown by mountain wind. Wind gently blowing his hair and the collar of his jacket`（立山実例） |
 | motion blur過剰で人物がブレる | `autumn leaves mid-air ... fog swirling actively ... daypack strap swaying` を複数併用 | 1〜2要素に絞る（風で髪+襟だけ等） |
+| 姿勢指定なしだと座り/しゃがみで生成される（釣り等の座り連想が強い活動） | 立ち姿を明示していない | `both STANDING upright, full body, both feet planted on the ground` + `NOT sitting, NOT crouching, NOT kneeling`（朱鞠内湖ASSET-225実例 2026-07-24） |
 
 ## 5. 背景関連
 
@@ -58,7 +62,8 @@ type: reference
 | 症状 | 指示原因 | 回避表現 |
 |---|---|---|
 | 顔が小さい・全身入り | フレーミング指示なし | `framed from chest up`（立山実例）・バストアップ明示 |
-| 二人が違う向きを向く（複数キャラ同居時） | `both facing the same direction` 単発 | 複数キャラ同居は避け、1人ずつ単独生成→Photopea合成（リファレンスCHAR-01/02と同じ方式） |
+| 「岸に放る」が水中に投げ込まれる | 後ろ姿+`onto the shore behind him` は、人物が水を向いているため投げる方向が水側と解釈される | 真横アングルにして方向を空間で固定: `A side view ... tossing ... over his shoulder AWAY from the water toward the dry land` + 着地点を明示 `lands on the dry gravel beach several meters from the waterline, never in the water` + 着地点に既存の落下物（他の捨てられた魚）を置いてアンカー（朱鞠内湖ASSET-178実例 2026-07-24） |
+| 二人が違う向きを向く（複数キャラ同居時） | `both facing the same direction` 単発 | **2026-07-24ルール変更（ユーザー指示）: 複数キャラは1枚に同居させて生成するのが標準**（AI精度向上により崩れが減ったため）。各キャラの配置と向きを位置語で明示（`On the left ... On the right ... facing each other` / `both running in the same direction`）+キャラ間の距離（`with a clear gap, no contact`）+二重スタイル宣言（ASSET-027方式）。崩れた場合のみ1人ずつ単独生成→Photopea合成にフォールバック |
 
 ## 6.5 複数人物関連
 
@@ -78,6 +83,14 @@ type: reference
 | 症状 | 指示原因 | 回避表現 |
 |---|---|---|
 | クマの背中に黒いタテガミ状の剛毛（モヒカン風）が生える | `bristling raised hackles along its shoulders`（毛の逆立ち指示）をカートゥーン調で文字通り誇張描画 | hackles系の語は使わない。凶暴さは `fierce menacing glare` + `baring sharp fangs` + `long sharp claws` + `head lowered in an aggressive stance` で表現し、毛は `smooth even fur all over the body` と明示（朱鞠内湖CHAR-03実例 2026-07-22） |
+| 走るクマが二足歩行（擬人化ラン）になる | カートゥーン調 + `running forward at speed in pursuit` だけだと人間型の走りに解釈される。`head lowered aggressive stance` との動的重ねがけも破綻を助長 | 走りは四足ギャロップを明示: `running ON ALL FOURS in a clean natural side profile, a horizontal quadruped galloping stride with its body parallel to the ground` + 047の解剖学定型文（`two front legs and two hind legs clearly separated...level back`）+ 末尾に `NOT standing upright, NOT running on two legs, no bipedal pose, no human-like running posture`。動的姿勢の重ねがけ（head lowered等）は外し凶暴さは顔のみで（朱鞠内湖ASSET-143実例 2026-07-24） |
+
+## 7.5 グラフ・インフォグラフィック関連
+
+| 症状 | 指示原因 | 回避表現 |
+|---|---|---|
+| ほぼ真っ黒な画面が生成される | `Dark charcoal background + subdued cinematic lighting` に細い線・少要素の構成→暗部に全て沈む | 背景は `dark slate-blue background (NOT pure black)`、要素側を明示的に明るく: `bold white Japanese text` `thick bright red line` `light grey axis lines and grid lines` + `All chart elements bright, high-contrast and clearly visible` + `flat vector style`（照明語cinematic lightingは使わない）（朱鞠内湖ASSET-174実例 2026-07-24） |
+| グラフを動画化すると崩れる（image-to-video/text-to-videoとも） | 生成動画AIは図版の直線・整列・比率を時間方向に維持できない | グラフ系は**静止画のみ**で作る（ChatGPTで実文字ラベル込みの完成形1枚）。動きが必要なら編集側でゆっくりズームイン（Ken Burns）を付ける（朱鞠内湖ASSET-177実例 2026-07-24） |
 
 ## 8. 血痕・痕跡描写関連
 
