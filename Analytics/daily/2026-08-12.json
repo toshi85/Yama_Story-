@@ -1,0 +1,253 @@
+{
+  "date": "2026-08-12",
+  "collected_at": "2026-08-15T06:00:07.556237",
+  "overview": {
+    "views": 5237,
+    "watch_minutes": 52118,
+    "subs_gained": 17,
+    "subs_lost": 9,
+    "avg_view_duration_sec": 601,
+    "revenue_usd": 28.61
+  },
+  "top_videos": [
+    {
+      "video_id": "c_kkIsQlFe8",
+      "views": 1603,
+      "watch_minutes": 16202,
+      "avg_view_duration_sec": 611,
+      "avg_view_percentage": 32.6,
+      "subs_gained": 2
+    },
+    {
+      "video_id": "kQrIDctEHVA",
+      "views": 1571,
+      "watch_minutes": 15390,
+      "avg_view_duration_sec": 592,
+      "avg_view_percentage": 39.72,
+      "subs_gained": 7
+    },
+    {
+      "video_id": "0-ZxPfOWA8Q",
+      "views": 806,
+      "watch_minutes": 8109,
+      "avg_view_duration_sec": 611,
+      "avg_view_percentage": 37.82,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "Er8yvR3FaRg",
+      "views": 378,
+      "watch_minutes": 3567,
+      "avg_view_duration_sec": 566,
+      "avg_view_percentage": 37.23,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "P6129_NW2Zk",
+      "views": 275,
+      "watch_minutes": 2507,
+      "avg_view_duration_sec": 547,
+      "avg_view_percentage": 35.87,
+      "subs_gained": 2
+    },
+    {
+      "video_id": "Ot4G3-EHj5Q",
+      "views": 176,
+      "watch_minutes": 1670,
+      "avg_view_duration_sec": 572,
+      "avg_view_percentage": 38.14,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "VRroiHKQegg",
+      "views": 115,
+      "watch_minutes": 1197,
+      "avg_view_duration_sec": 630,
+      "avg_view_percentage": 42.62,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "-sHkcezuQLY",
+      "views": 97,
+      "watch_minutes": 1040,
+      "avg_view_duration_sec": 643,
+      "avg_view_percentage": 39.39,
+      "subs_gained": 1
+    },
+    {
+      "video_id": "bJhz7_XiduE",
+      "views": 36,
+      "watch_minutes": 236,
+      "avg_view_duration_sec": 394,
+      "avg_view_percentage": 28.43,
+      "subs_gained": 0
+    },
+    {
+      "video_id": "3NkSKsjMBwI",
+      "views": 26,
+      "watch_minutes": 281,
+      "avg_view_duration_sec": 648,
+      "avg_view_percentage": 43.73,
+      "subs_gained": 0
+    }
+  ],
+  "traffic_sources": [
+    {
+      "source": "SUBSCRIBER",
+      "views": 2360,
+      "watch_minutes": 20246
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 2274,
+      "watch_minutes": 26401
+    },
+    {
+      "source": "YT_SEARCH",
+      "views": 248,
+      "watch_minutes": 1959
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 84,
+      "watch_minutes": 423
+    },
+    {
+      "source": "YT_CHANNEL",
+      "views": 84,
+      "watch_minutes": 875
+    },
+    {
+      "source": "YT_OTHER_PAGE",
+      "views": 67,
+      "watch_minutes": 836
+    },
+    {
+      "source": "PLAYLIST",
+      "views": 61,
+      "watch_minutes": 876
+    },
+    {
+      "source": "END_SCREEN",
+      "views": 33,
+      "watch_minutes": 373
+    },
+    {
+      "source": "EXT_URL",
+      "views": 23,
+      "watch_minutes": 83
+    },
+    {
+      "source": "NOTIFICATION",
+      "views": 2,
+      "watch_minutes": 15
+    },
+    {
+      "source": "HASHTAGS",
+      "views": 1,
+      "watch_minutes": 25
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "熊 事件",
+      "views": 15,
+      "watch_minutes": 151
+    },
+    {
+      "term": "福岡大学ワンダーフォーゲル部ヒグマ事件",
+      "views": 14,
+      "watch_minutes": 107
+    },
+    {
+      "term": "アンビリーバボー 事件",
+      "views": 9,
+      "watch_minutes": 49
+    },
+    {
+      "term": "ヒグマ事件",
+      "views": 7,
+      "watch_minutes": 108
+    },
+    {
+      "term": "人喰い熊",
+      "views": 6,
+      "watch_minutes": 18
+    },
+    {
+      "term": "北海道熊事件",
+      "views": 6,
+      "watch_minutes": 67
+    },
+    {
+      "term": "ワンダーフォーゲル",
+      "views": 5,
+      "watch_minutes": 78
+    },
+    {
+      "term": "熊被害 最悪",
+      "views": 5,
+      "watch_minutes": 19
+    },
+    {
+      "term": "ヒグマ",
+      "views": 4,
+      "watch_minutes": 35
+    },
+    {
+      "term": "北海道 ヒグマ",
+      "views": 4,
+      "watch_minutes": 25
+    },
+    {
+      "term": "熊事件",
+      "views": 4,
+      "watch_minutes": 46
+    },
+    {
+      "term": "ヒグマ 北海道",
+      "views": 3,
+      "watch_minutes": 9
+    },
+    {
+      "term": "星野道夫",
+      "views": 3,
+      "watch_minutes": 40
+    },
+    {
+      "term": "獣害",
+      "views": 3,
+      "watch_minutes": 1
+    },
+    {
+      "term": "羆",
+      "views": 3,
+      "watch_minutes": 21
+    },
+    {
+      "term": "さんけべつヒグマ事件",
+      "views": 2,
+      "watch_minutes": 14
+    },
+    {
+      "term": "ひぐま",
+      "views": 2,
+      "watch_minutes": 13
+    },
+    {
+      "term": "ヒグマ 映画",
+      "views": 2,
+      "watch_minutes": 9
+    },
+    {
+      "term": "朱鞠内湖",
+      "views": 2,
+      "watch_minutes": 25
+    },
+    {
+      "term": "東野登山隊",
+      "views": 2,
+      "watch_minutes": 6
+    }
+  ]
+}
