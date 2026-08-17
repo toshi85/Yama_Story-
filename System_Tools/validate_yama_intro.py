@@ -101,7 +101,8 @@ def main(path):
         warns.append("<!-- HOOK-IMAGE --> マーカーが無いため結末到達時刻を測定できません")
 
     # 問いの数
-    q = [l for l in lines if l.rstrip().endswith("のか。")]
+    # 「〜のか。」「〜のか？」の両方を問いとして数える（2026-08-17 追加）
+    q = [l for l in lines if l.rstrip().endswith(("のか。", "のか？", "のか?", "でしょうか。", "でしょうか？"))]
     ok = len(q) == REF["questions"]
     print(f"  問いの数: {len(q)}  {'OK' if ok else 'NG'}   （基準 {REF['questions']}つ固定）")
     if not ok:
