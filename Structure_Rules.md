@@ -4,7 +4,7 @@
 > **本ファイルのルールと矛盾した場合は `Winning_Formula_Shumarinai.md` を優先する。**
 > あちらは実際に数字が出た1本（朱鞠内湖・平均視聴率34.1%・0:30残存68%・YouTubeが「イントロ」を維持率貢献パートと判定）を秒単位で分解したもので、本ファイルの一部は演繹で書かれた仮説にすぎない。
 >
-> チェック: `python3 Yama_Story/System_Tools/validate_yama_intro.py <script_path>`
+> チェック: `python3 Yama_Story-/System_Tools/validate_yama_intro.py <script_path>`
 >
 > **⚠️ 2026-08-01の誤診記録**: §6-4と`Channel_Master_Prompt_Yama.md`原則1を字義通りに読み、「冒頭を日付・地名で始めるのはNG」と判断して台本を書き換えた。しかし朱鞠内湖は日付＋地名の全画面テロップで始まっており、それが維持率貢献パートだった。**ルールから演繹する前に、実測で当たった直近作の実物を確認すること。**
 
@@ -63,7 +63,7 @@ The Validator checks for "Visual/Action Keywords" in the production notes (Col E
 
 ## 4. Validator Execution
 Before any script is presented to the user, you MUST run:
-`python3 Yama_Story/System_Tools/validate_yama_structure.py <script_path>`
+`python3 Yama_Story-/System_Tools/validate_yama_structure.py <script_path>`
 
 ## 5. 素材制作ガイドライン（2026年2月策定）
 
@@ -156,7 +156,7 @@ YouTubeはAI画像パン&ズームだけの動画を「mass-produced」と判定
 - **CHAR-XX参照画像がある場合**: `[CHAR-XX reference]` でOK（基準画像にJapanese明記済み）
 - **CHAR参照なし（名無し人物 = Generic group）**: 個別に "Japanese hiker" / "Japanese police officers" / "Japanese family" 等を明記
 - **理由**: AIモデル（Lovart/Google Flow）はデフォルトで欧米人を生成する傾向があり、日本国内の事件で白人が出力されると致命的
-- **テンプレ参照**: `Yama_Story/Generic_Person_Prompts.md` のスニペットを使用
+- **テンプレ参照**: `Yama_Story-/Generic_Person_Prompts.md` のスニペットを使用
 - **強制**: `.claude/hooks/validate-asset-prompts.sh` のチェック7が Edit/Write 後に自動検査（違反は exit 2 で警告表示）
 
 ### 完了報告前チェック（2026-05-16追加 / Hook強制）
