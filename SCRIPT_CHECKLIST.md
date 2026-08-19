@@ -16,7 +16,13 @@
 | 4 | `Correction_Patterns.md`（**Promoted TOP5だけでOK**） | 過去のユーザー修正＝最頻ミス（YCP） |
 | 5 | `Learned_Patterns_Yama.md` | 勝ちパターン（テーマ/尺/タイトル/曜日） |
 | 6 | `memory/yama-script-cut-patterns.md` | 編集でカットされやすい構成を初稿で回避 |
+| 7 | **`Fact_Sheet_Template.md`** | **素材シートの作り方（2026-08-19新設・必読）** |
 | 補 | `Performance_Data/Viewer_Insights_Analysis.md` | 何がウケるか（自己責任論・救助感謝のバランス） |
+
+> ⚠️ **2026-08-19 追加: 読んだことを宣言してから着手する。**
+> 台本タスクの1発目の応答で「SCRIPT_CHECKLIST.md を読みました」と明示すること。
+> 東成瀬村台本では、AIがこのファイルの存在に気づかず、自分で選んだ4ファイルだけ読んで書き始めた。
+> その結果 `audit_numeric_facts.py`（101行目に記載）を一度も走らせず、未検証の数値を37件残した。
 
 ---
 
@@ -30,6 +36,31 @@
 - [ ] タイトル：40〜50字・フックは先頭28字・「末路/結末」優先・疑問形回避・NGワード回避・【】タグの連続3本以上を避ける
 
 → 参照: `Channel_Master_Prompt_Yama.md` §2-3 / `Learned_Patterns_Yama.md` 勝ちパターン公式
+
+---
+
+## STEP 1.5. 素材シート（★2026-08-19新設・執筆前の必須ゲート）
+
+- [ ] **ナレーションを1行も書く前に、素材シートを作る** → `Fact_Sheet_Template.md`
+- [ ] 事実を **確度A（実物確認済み）/ B（出典ありだが未確認）/ C（推定）** に仕分ける
+- [ ] **確度Cは台本で断定形にしない**（「〜とみられています」「断定はされていません」）
+- [ ] **不採用にした事実も、理由つきで残す**（同じ穴を二度掘らないため）
+- [ ] **引き継いだ `<!-- src: -->` は自分で確認し直す。** src は「誰かがそう書いた」記録であって、確認した証拠ではない
+
+**執筆ルール（最上位）**
+
+> ナレーション行は **(1) 素材シートの行の言い換え** か **(2) 既出情報の再利用** のどちらかでなければならない。
+> **つなぎの文も例外ではない。** 素材シートに無い事実を書きたくなったら、書く前にシートへ行を足す。足せないなら書かない。
+
+### リサーチで詰まったときの手だて
+
+| 壁 | 手だて |
+|:--|:--|
+| YouTube動画の中身が不明 | `yt-dlp --skip-download --write-auto-sub --sub-lang ja --sub-format vtt -o "out.%(ext)s" <URL>` で自動字幕を取得。誤認識は多いが数字・固有名詞は複数箇所の整合で判定できる |
+| 新聞が会員限定 | 見出し・リード文は無料のことが多い。**見出しに証言が使われている**場合あり。共同通信配信なら地方紙の無料転載を探す |
+| 役場・議会資料 | 自治体サイトの広報／議会だより／行政報告。無ければ**電話番号を記録して申し送り** |
+
+→ 参照: `Fact_Sheet_Template.md`
 
 ---
 
@@ -90,6 +121,8 @@
 python3 validate_yama_safety.py    <台本>   # NGワード・代名詞・語尾連続
 python3 validate_yama_structure.py <台本>   # ↓ 4層を一括検査（下記）
 python3 validate_yama_narrative.py <台本>   # 説教/モラル語禁止（教訓・警鐘・私たち等）
+python3 validate_yama_facts.py     <台本>   # ★必須 出典なしの断定・答え先行・権威名詞・出典カバー率
+python3 audit_numeric_facts.py     <台本>   # ★必須 出典の付いていない数値を全件列挙
 ```
 
 `validate_yama_structure.py` の内部4層:
@@ -98,7 +131,11 @@ python3 validate_yama_narrative.py <台本>   # 説教/モラル語禁止（教�
 - Layer2: **文字数フロア 8,800字以上**（過剰要約のブロック）
 - Layer3: **黄金比 1:8:1**（起5-15% / 承70-90% / 転結5-15%）
 
-その他（必要時）: `validate_yama_density.py` `validate_yama_competitor.py` `validate_yama_prompts.py` `audit_numeric_facts.py`
+その他（必要時）: `validate_yama_density.py` `validate_yama_competitor.py` `validate_yama_prompts.py`
+
+> ⚠️ **2026-08-19: `validate_yama_facts.py` と `audit_numeric_facts.py` を「必要時」から必須へ格上げ。**
+> 東成瀬村台本では後者が「必要時」扱いだったため一度も実行されず、未検証の数値が37件残った。
+> 前者は同台本の「同じクマの仕業だと判断されました」（報道は断定していない）を機械検出できる。
 
 - [ ] FAIL時は**黙って修正→再実行**（「下書きです、OKですか？」は禁止）
 - [ ] 最終出力時に Proof of Work を明示：`✅ safety PASSED` `✅ structure PASSED (Ki:10% Sho:80% Ten:10%)` `✅ narrative PASSED`
