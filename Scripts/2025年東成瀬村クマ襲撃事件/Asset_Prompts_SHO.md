@@ -173,7 +173,7 @@ A Japanese village field edge and forest line in Akita rendered in soft desatura
 【制作メモ】ASSET-027 [Lovart動画] 台本L215 ★AI動画（前半ピークの入口）
 シーン: クマが軽トラックに向かって突進してくる（車内視点）
 ```
-View through a kei truck windshield in a Japanese mountain village in Akita: an adult Asian black bear with a white chest crescent charging on all fours directly toward the camera across a farm road, fur rippling, dust rising. Terrifying head-on approach. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+View through a kei truck windshield in a Japanese mountain village in Akita: an adult Asian black bear with a white chest crescent frozen mid-charge on all fours, head-on and close, fur bristling, dust suspended around its paws on the farm road. Terrifying head-on moment. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -1397,7 +1397,7 @@ Low-angle view from a village lane in Higashinaruse, Akita up a steep grassy emb
 【制作メモ】ASSET-106 [Lovart動画] 台本L394 ★AI動画（対峙の画）
 シーン: 高台に座り込んだクマが、下のハンターたちをじっと見下ろしている異様な光景
 ```
-An adult Asian black bear with a white chest crescent sitting back on its haunches on a grassy hilltop in a Japanese mountain village in Akita, front paws planted, utterly still, gazing down toward the village below, cold gray sky, dry grass moving in the wind around it. Unnatural composure, deeply unsettling. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+An adult Asian black bear with a white chest crescent sitting back on its haunches on a grassy hilltop in a Japanese mountain village in Akita, front paws planted, utterly still, gazing down toward the village below, cold gray sky, wind-bent dry grass around it. Unnatural composure, deeply unsettling. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -1915,7 +1915,7 @@ Dry grass whipping sideways on the hilltop in Higashinaruse, Akita, motion strea
 【制作メモ】ASSET-140 [Lovart動画] 台本L468 ★AI動画
 シーン: クマが藪の中へ駆け込んでいく
 ```
-An adult Asian black bear with a white chest crescent plunging on all fours into a dense wall of bamboo grass and brush on a hillside in Akita, Japan, stalks whipping closed behind it, cold gray light. Escape into cover. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+An adult Asian black bear with a white chest crescent frozen at the moment of plunging into a dense wall of bamboo grass on a hillside in Akita, Japan, half its body already swallowed, stalks bent outward around it, cold gray light. Escape into cover. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -2561,7 +2561,7 @@ A blurred street perspective in Yuzawa, Akita at dawn, motion streaks along shop
 【制作メモ】ASSET-183 [Lovart動画] 台本L563 ★AI動画
 シーン: 交差点を曲がっても追ってくるクマ（追跡の恐怖）
 ```
-A dawn street chase in Yuzawa city, Akita: an adult Asian black bear with a wide white chest crescent galloping on all fours around a street corner past a convex traffic mirror, relentless pursuit, storefront shutters and utility poles, cold blue morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+A dawn street in Yuzawa city, Akita: an adult Asian black bear with a wide white chest crescent frozen mid-gallop rounding a street corner past a convex traffic mirror, all four paws off the ground, storefront shutters and utility poles behind, cold blue morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -2688,7 +2688,7 @@ Looking out through an open Japanese sliding entrance door in Yuzawa, Akita from
 【制作メモ】ASSET-191 [Lovart動画] 台本L579 ★AI動画
 シーン: クマが玄関から家の中へ押し入る（噛みつきは直接見せず、侵入の恐怖を描く）
 ```
-An adult Asian black bear with a wide white chest crescent shoving its way through the sliding front door of an old Japanese townhouse in Yuzawa, Akita, on all fours, doorframe rattling, morning light behind it, shot from inside the dim hallway. A home invaded. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+An adult Asian black bear with a wide white chest crescent halfway through the sliding front door of an old Japanese townhouse in Yuzawa, Akita, on all fours, shoulders wedged in the doorframe, morning light blazing behind it, seen from inside the dim hallway. A home invaded. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -3422,7 +3422,7 @@ A soft-focus gray tailor's mannequin torso on a stand in a neutral training spac
 【制作メモ】ASSET-240 [Lovart動画] 台本L683 ★AI動画（実用情報の核心）
 シーン: うつ伏せ防御姿勢のデモンストレーション（お手本動作）
 ```
-An instructional demonstration in a calm forest clearing in Akita, Japan: a Japanese man in a beige field jacket dropping smoothly to the ground into a face-down protective position, face pressed toward the earth, body flat, filmed in clear steady daylight. Safety demonstration clarity. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+An instructional demonstration in a calm forest clearing in Akita, Japan: a Japanese man in a beige field jacket lying flat in the face-down protective position, face pressed toward the earth, body pressed to the ground, clear steady daylight, side view. Safety demonstration clarity. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```

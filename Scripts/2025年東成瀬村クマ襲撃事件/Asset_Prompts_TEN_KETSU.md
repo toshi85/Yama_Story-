@@ -232,7 +232,7 @@ A formal meeting room in a Japanese ministry in Tokyo: long polished table, two 
 【制作メモ】ASSET-260 [Lovart動画] 台本L727 ★AI動画
 シーン: 自衛隊の支援活動（箱わなを積んだ軽トラとドローン）
 ```
-Japanese Self-Defense Force members in olive-green field uniforms loading a steel cage trap onto a kei truck bed in a mountain village in Akita, while a small drone lifts off toward the forested ridge behind, late autumn light, coordinated purposeful activity. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+Japanese Self-Defense Force members in olive-green field uniforms securing a steel cage trap onto a kei truck bed in a mountain village in Akita, one member holding a small drone ready on his open palms, the forested ridge behind, late autumn light, coordinated purposeful stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -481,7 +481,7 @@ A lush beech forest in the Akita mountains at the peak of a mast year: branches 
 【制作メモ】ASSET-276 [Lovart動画] 台本L762 ★AI動画
 シーン: 実のない森から、クマが里へ下りていく
 ```
-An adult Asian black bear with a white chest crescent walking on all fours downhill through a barren beech forest in Akita with empty branches and no nuts on the ground, emerging at the forest edge above village rooftops in the valley below, cold late-autumn light. Hunger driving descent. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+An adult Asian black bear with a white chest crescent on all fours at the edge of a barren beech forest in Akita, one paw lifted mid-stride, empty branches overhead and no nuts on the ground, village rooftops visible in the valley below it, cold late-autumn light. Hunger at the boundary line. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -655,8 +655,8 @@ A wide serene sunrise over the Higashinaruse valley in Akita: golden light slowl
 
 | カテゴリ | 件数 | 自分の作業 | 編集者の作業 |
 |----------|------|-----------|------------|
-| キャラアニメーション | 213箇所 | キャラ+背景をコピペ→選ぶ | CapCutで合成・キーフレーム |
-| Lovart静止画（+編集者含む） | 29枚 | コピペ→選ぶ | 動き指示・テキスト追加 |
+| キャラアニメーション | 207箇所 | キャラ+背景をコピペ→選ぶ | CapCutで合成・キーフレーム |
+| Lovart静止画（+編集者含む） | 24枚 | コピペ→選ぶ | 動き指示・テキスト追加 |
 | Lovart動画（Google Flow） | 12本 | コピペ→選ぶ→Flowで動画化 | なし |
 | Google Earth | 12箇所 | なし | GoogleEarth指示書.md を見て録画 |
 | 実写 | 14件 | URL先から取得（/revenue-guard判定） | 引用テロップ |
@@ -667,8 +667,8 @@ A wide serene sunrise over the Higashinaruse valley in Akita: golden light slowl
 
 | 項目 | 数 |
 |:--|--:|
-| Lovart動画（Google Flow使用） | 12本 |
-| ASSET番号 | 001, 008, 027, 106, 140, 183, 191, 240, 260, 276, 285, 286（冒頭・末尾は恒久ルールで必須） |
+| Lovart動画（Google Flow使用） | 20本 |
+| ASSET番号 | 001〜010（冒頭フック全カット・ユーザー裁定）, 027, 106, 140, 183, 191, 240, 260, 276, 285, 286 |
 | 上限（ASSET_CHECKLIST基準） | 12本/作 |
-| 判定 | ✅ 上限ちょうど・予算内 |
+| 判定 | ⚠️ 20本＝上限超過。冒頭フック全動画化のユーザー裁定（2026-08-20）による超過で承認済み |
 

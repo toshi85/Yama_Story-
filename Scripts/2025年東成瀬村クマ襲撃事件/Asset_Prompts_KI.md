@@ -4,6 +4,7 @@
 > 対象台本: `Master.md`（2026-08-20 v2確定・9,077字/286行）
 > ASSET-001〜015 / 台本L155〜L187（§1フック〜§2 山林93%の村）
 > ⚠️ 報道映像（ANN/ABS/カンテレ/防犯カメラ）を[実写]で使う箇所は各局の著作物＝切り抜き使用は `/revenue-guard` の判定対象。迷ったらLovartフォールバックを使う。
+> 🎬 **冒頭フック（§1）は全カット実写風AI動画**（カートゥン禁止・2026-08-20ユーザー裁定）。これによりAI動画は計20本＝上限12本を超過するが、冒頭優先のユーザー決定として許容。
 
 ---
 
@@ -121,7 +122,7 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 【制作メモ】ASSET-001 [Lovart動画] 台本L155 ★冒頭は必ず動画（恒久ルール）
 シーン: 夜明け直後の東成瀬村を進む不穏な空撮。この動画の上に日付・地名テロップを重ねる（朱鞠内湖型の開始）
 ```
-Slow ominous aerial drone shot at first light over a small mountain village in Akita, Japan: dark forested ridges pressing in on a thin line of houses along one road, cold mist creeping through the valley, muted pre-dawn blue tones. Something is coming. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+High aerial still view at first light over a small mountain village in Akita, Japan: dark forested ridges pressing in on a thin line of houses along one road, cold mist lying in the valley floor, muted pre-dawn blue tones. Ominous quiet before something begins. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -133,93 +134,86 @@ Slow forward aerial drone movement at first light over a narrow Japanese mountai
 
 ナレーター: 午前10時10分ごろ、農作業中の70代男性の目の前に
 
-【制作メモ】ASSET-002 [キャラアニメーション] 台本L157
-シーン: 秋の畑で農作業をするCHAR-08（70代男性）。ふと手を止めて顔を上げた瞬間
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-002 [Lovart動画] 台本L157 ★冒頭フックは実写風動画（恒久ルール）
+シーン: 秋の畑で農作業する70代男性が、ふと手を止めて顔を上げる（実写風）
 ```
-(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, khaki work pants, gray work cap, kneeling with a small hand hoe, then looking up with a puzzled expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+A Japanese farmer in his 70s wearing a navy work jacket and gray cap, kneeling among crop rows in a small vegetable field in a mountain village in Akita on a late October morning, head lifted and eyes fixed on something off-frame, hands frozen mid-weeding, golden autumn foliage on the low mountains behind. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
+→ **Google Flow動画プロンプト:**
 ```
-A small vegetable field on the edge of a mountain village in Akita, northern Japan, late October morning. Rows of autumn vegetables, a rural road nearby, golden larch and red maple foliage on the surrounding low mountains. Soft morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A Japanese farmer in his 70s in a navy work jacket and gray cap kneels weeding a vegetable field in an autumn Japanese mountain village, then slowly stops moving and raises his head, turning toward something off-frame, morning light, subtle tension entering a peaceful scene. 5 seconds. Photorealistic, shot on RED camera. Documentary drama style.
 ```
-→ 編集者指示: 「午前10時10分ごろ」の時刻テロップを左上に表示。CHAR-08が顔を上げる動きをキーフレームで作る（2〜3秒）。
-
+→ 編集者指示: 「午前10時10分ごろ」テロップを左上に。環境音のみ。
 ---
 
 ナレーター: 突如ツキノワグマが出没。
 
-【制作メモ】ASSET-003 [キャラアニメーション] 台本L159
-シーン: 畑のすぐそば、CHAR-07（ツキノワグマ）が四足歩行で姿を現す衝撃の瞬間
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-003 [Lovart動画] 台本L159 ★冒頭フックは実写風動画
+シーン: 藪の際からツキノワグマが姿を現す衝撃（実写風）
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, standing on all fours, head low, staring straight ahead with intense unafraid eyes. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+An adult Asian black bear with a white crescent chest patch frozen mid-stride as it emerges from tall dry grass at the edge of a village field in Akita, on all fours, head low, front paw raised, dry stalks bent around its shoulders, late October morning light. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
+→ **Google Flow動画プロンプト:**
 ```
-The grassy edge of a rural field in Akita, Japan, where farmland meets a dark cedar forest. Tall dry autumn grass, fallen leaves, shadows under the trees. Late October morning light with an uneasy mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+An adult Asian black bear, glossy black fur with a white crescent chest patch, bursts on all fours out of tall dry grass at the edge of a Japanese village field and takes two fast strides toward the camera, dust and leaves kicked up, sudden and violent motion, autumn morning light. 5 seconds. Photorealistic, shot on RED camera. Documentary drama style.
 ```
-→ 編集者指示: 衝撃音（ドン）とともにクマを画面外から素早くスライドイン。1〜2秒の短カット。
-
+→ 編集者指示: 衝撃SE一発。1〜2秒の短カット。
 ---
 
 ナレーター: さらに1時間後、空き地にいた70代夫婦がクマに襲われ、
 
-【制作メモ】ASSET-004 [キャラアニメーション] 台本L161
-シーン: 空き地でCHAR-04（夫）とCHAR-05（妻）が振り返り、恐怖で身を寄せ合う。クマ本体は映さず影で暗示
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-004 [Lovart動画] 台本L161 ★冒頭フックは実写風動画
+シーン: 空き地の70代夫婦が振り返り、身を寄せ合う。迫る影で襲撃を暗示（直接描写なし・実写風）
 ```
-(CHAR-04 再利用)(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: 76-year-old Japanese man, light gray farm jacket, dark green work pants, dark flat cap. CHAR-05: 72-year-old Japanese woman, lavender farm smock, dark monpe pants. Both turning around in alarm, clinging to each other, faces frozen in fear. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+An elderly Japanese couple in farm work clothes — a thin man in his 70s in a light gray jacket and flat cap, a small woman in her 70s in a lavender work smock — turned around in alarm in a vacant lot behind village houses in Akita, clinging to each other, a large dark four-legged animal shadow stretched across the grass toward their feet, cold late-morning light. No injuries shown. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
+→ **Google Flow動画プロンプト:**
 ```
-An open vacant lot behind rural Japanese houses in Akita, patchy grass and bare soil, a small weathered wooden shed at the edge, low mountains with autumn colors behind. A long dark animal shadow stretching across the ground from the shed. Tense atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+An elderly Japanese couple in farm work clothes — a thin man in his 70s in a light gray jacket and flat cap, a small woman in a lavender work smock — spin around in a village vacant lot in Akita and clutch each other as a huge four-legged animal shadow sweeps across the grass toward them, camera pushing in slightly, no contact or injuries shown, ending just before the shadow reaches them. 5 seconds. Photorealistic, shot on RED camera. Documentary drama style.
 ```
-→ 編集者指示: 「1時間後」テロップを右上に。夫婦のカットは1.5秒、影がゆっくり伸びる動きを付ける。
-
+→ 編集者指示: 「1時間後」テロップ。影が届く直前でカット。
 ---
 
 ナレーター: 悲鳴を聞いて駆けつけた男性と
 
-【制作メモ】ASSET-005 [キャラアニメーション] 台本L163
-シーン: CHAR-01（佐々木さん）が家から飛び出し、全力で走る横向きの姿
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-005 [Lovart動画] 台本L163 ★冒頭フックは実写風動画
+シーン: 悲鳴を聞いて路地を全力で走る38歳男性（実写風）
 ```
-(CHAR-01 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, black work pants, running at full sprint, side view, arms pumping, urgent worried expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+A sturdy Japanese man in his late 30s wearing a dark navy fleece jacket and black work pants captured frozen mid-sprint in a narrow lane between single-story houses in a Japanese mountain village in Akita, arms pumping, urgent expression, slight motion blur at the frame edges, autumn morning light. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
+→ **Google Flow動画プロンプト:**
 ```
-A narrow residential lane in a small Japanese mountain village, single-story houses with dark roofs, utility poles, autumn mountains close behind the rooftops. Morning light, long shadows. Sense of urgency. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A sturdy Japanese man in his late 30s in a dark navy fleece jacket and black work pants sprints toward the camera down a narrow village lane in Akita, arms pumping, breath visible, houses and utility poles rushing past, handheld urgency. 5 seconds. Photorealistic, shot on RED camera. Documentary drama style.
 ```
-→ 編集者指示: CHAR-01を左→右へ素早くスライド（1.5秒）。足音と息づかいのSE。
-
+→ 編集者指示: 足音と息づかいのSE。1.5〜2秒使用。
 ---
 
 ナレーター: その父親もクマに襲われ重傷。
 
-【制作メモ】ASSET-006 [キャラアニメーション] 台本L165
-シーン: CHAR-02（父親）が現場に駆けつけた直後、画面が赤みを帯びて衝撃を暗示（直接の暴力描写はしない）
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-006 [Lovart動画] 台本L165 ★冒頭フックは実写風動画
+シーン: 駆けつけた65歳の父親が立ちすくみ、画面が短く暗転（襲撃の直接描写なし・実写風）
 ```
-(CHAR-02 再利用)(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02: 65-year-old Japanese carpenter, olive-gray work jacket, beige work pants, frozen mid-step in shock, eyes wide, one hand raised defensively. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, lunging toward him on all fours, mouth open. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+A lean weathered Japanese carpenter in his 60s wearing an olive-gray work jacket, frozen mid-step in shock at the edge of a village vacant lot in Akita, one hand raised defensively, cold overcast light, ominous atmosphere. No injuries shown. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
+→ **Google Flow動画プロンプト:**
 ```
-An open vacant lot in a Japanese mountain village, trampled autumn grass, a small light truck parked at the edge, overcast late-morning light turning cold. Ominous heavy atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A lean weathered Japanese carpenter in his 60s in an olive-gray work jacket runs into frame at the edge of a village vacant lot in Akita, stops dead, raises one hand defensively as something unseen rushes him from off-frame, quick camera shake, cut to black at the moment of impact, nothing graphic shown. 5 seconds. Photorealistic, shot on RED camera. Documentary drama style.
 ```
-→ 編集者指示: 「重傷」の赤テロップを一瞬だけ表示し、画面を短くホワイトアウト→次カットへ。
-
+→ 編集者指示: 「重傷」赤テロップを一瞬→暗転0.5秒。
 ---
 
 ナレーター: 警察が到着したころには、
 
-【制作メモ】ASSET-007 [Lovart静止画] 台本L167
-シーン: 村道を走ってくるパトカー。赤色灯が回っている
+【制作メモ】ASSET-007 [Lovart動画] 台本L167 ★冒頭フックは実写風動画
+シーン: 赤色灯を回したパトカーが村道を走ってくる（実写風）
 ```
-A Japanese police patrol car with red lights flashing, arriving on a narrow rural road in a small mountain village in Akita, autumn morning, mountains with golden foliage in the background. Urgent documentary mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+A Japanese police patrol car with red lights flashing, captured head-on on a narrow rural road in a small mountain village in Akita, a faint dust cloud hanging behind it, autumn morning, golden foliage on the mountains behind. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 1 image.
 ```
-→ 編集者指示: ゆっくり近づく（3秒で1.0→1.1）。サイレンSE。
-
+→ **Google Flow動画プロンプト:**
+```
+A Japanese police patrol car with red lights flashing speeds along a narrow rural road toward the camera in an autumn Japanese mountain village, slight low-angle, dust trailing, siren urgency, mountains with golden foliage behind. 5 seconds. Photorealistic, shot on RED camera. Documentary drama style.
+```
+→ 編集者指示: サイレンSE。
 ---
 
 ナレーター: 倒れている4人と、走り去っていくクマの姿。
@@ -227,7 +221,7 @@ A Japanese police patrol car with red lights flashing, arriving on a narrow rura
 【制作メモ】ASSET-008 [Lovart動画] 台本L169 ★フック最大の画（HOOK-IMAGE）
 シーン: 空き地に4人が倒れており、その奥をクマが山へ走り去っていく。引きの構図で直接的な描写は避ける
 ```
-Wide high-angle shot of an open lot in a Japanese mountain village: four Japanese adults lying motionless on the ground at a distance, seen small and far away so no injuries are visible, while a black bear runs away from the scene toward the forested mountain in the background. Late October morning, muted colors, documentary realism, tragic and quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+Wide high-angle still of an open lot in a Japanese mountain village: four Japanese adults lying motionless on the ground at a distance, seen small and far away so no injuries are visible, and a black bear frozen mid-run away from the scene toward the forested mountain in the background, dust and leaves suspended behind it. Late October morning, muted colors, documentary realism, tragic and quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -239,29 +233,30 @@ Static wide high-angle shot of an open lot in a rural Japanese village in autumn
 
 ナレーター: なぜ、このような事件が発生したのか？
 
-【制作メモ】ASSET-009 [Lovart静止画 + 編集者] 台本L172
-シーン: 現場の空き地を見下ろす静かな俯瞰カットをベースに、問い①のテキストを編集者が重ねる（起パートの図解・テロップ演出枠）
+【制作メモ】ASSET-009 [Lovart動画] 台本L172 ★冒頭フックは実写風動画
+シーン: 現場の空き地をゆっくり寄っていくドローン俯瞰。問い①のテキストは編集者が重ねる（実写風）
 ```
-Somber overhead view of an empty vacant lot in a Japanese mountain village at autumn, bare soil and flattened grass, a single small shed, cold overcast light. Quiet aftermath mood, calm empty space in the center of the frame. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+High drone still view over an empty vacant lot in a Japanese mountain village in Akita, bare soil and flattened grass, a single small shed, cold overcast light, somber aftermath mood with calm space at the center of the frame. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 1 image.
 ```
-→ 編集者指示: 画面中央に「なぜ、このような事件が発生したのか？」を白文字で1行表示（ゆっくりフェードイン）。ベース画はゆっくり近づく（4秒で1.0→1.08）。
-
+→ **Google Flow動画プロンプト:**
+```
+A slow steady drone descent over an empty vacant lot in an autumn Japanese mountain village, flattened grass and a small shed below, cold overcast light, the camera easing downward and forward with funeral calm. 5 seconds. Photorealistic, shot on RED camera. Documentary drama style.
+```
+→ 編集者指示: 「なぜ、このような事件が発生したのか？」を白文字でゆっくりフェードイン。
 ---
 
 ナレーター: そして、なぜハンターは、すぐに引き金を引けなかったのか。
 
-【制作メモ】ASSET-010 [キャラアニメーション] 台本L174
-シーン: CHAR-06（ベテランハンター）がライフルを構えたまま動けない。引き金に指がかからない緊張
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-010 [Lovart動画] 台本L174 ★冒頭フックは実写風動画
+シーン: ライフルを構えたまま引き金を引けない高齢ハンターの横顔（実写風）
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, aiming a hunting rifle but holding fire, jaw clenched, sweat drop on temple, conflicted tense expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+A 76-year-old Japanese hunter in an olive-brown hunting vest and blaze-orange cap, aiming a rifle up a grassy slope in a Japanese mountain village in Akita but holding fire, jaw clenched, finger resting outside the trigger guard, houses visible close behind him, tense overcast light. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
+→ **Google Flow動画プロンプト:**
 ```
-Looking up a grassy embankment toward a small wooded hilltop on the edge of a Japanese mountain village, autumn afternoon, houses visible close behind the camera position. Tense standoff atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+Side profile of a 76-year-old Japanese hunter in an olive-brown vest and blaze-orange cap aiming a rifle upward and holding completely still, only his breathing moving his shoulders, a bead of sweat on his temple, village rooftops soft behind him, the barrel trembling almost imperceptibly. 5 seconds. Photorealistic, shot on RED camera. Documentary drama style.
 ```
-→ 編集者指示: 「なぜ、すぐに引き金を引けなかったのか」を下段に白テロップ。銃口の先をわずかに揺らすキーフレーム（2〜3秒）。
-
+→ 編集者指示: 「なぜ、すぐに引き金を引けなかったのか」を下段に白テロップ。呼吸音のみ。
 ---
 
 ナレーター: 地形図とともに解説します。

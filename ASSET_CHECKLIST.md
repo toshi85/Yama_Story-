@@ -74,6 +74,8 @@
 - [ ] **再利用は `(CHAR-XX 再利用)` をプロンプトの最先頭**に置く
 - [ ] クマは**四足歩行**。`standing upright` `on two legs` 等は禁止（フックが検出する）
 - [ ] Lovart動画には **Google Flow動画プロンプトを必ず併記**（件数が合わないとフックが警告）
+- [ ] **[Lovart動画]の1ブロック目は「静止画」プロンプト**＝手順は 静止画を先に生成→Google Flowで動画化。1ブロック目に動きの記述（slowly / gliding / charging toward / 5 seconds 等）を書かない。**凍結した1コマ**（frozen mid-stride / suspended / captured 等）として描き、動き・カメラワークはFlowプロンプト側だけに書く
+      → 2026-08-20 東成瀬村で静止画ブロックに動画用の文を書いた事故の再発防止。`validate_yama_prompts.py` チェック25が検査
 - [ ] フリー素材（Pexels/Unsplash等）の使用は**禁止**
 
 ---
