@@ -73,6 +73,7 @@
 - [ ] **人物には必ず `Japanese` を明記**（CHAR-XX 参照ありの場合は不要）
 - [ ] 名前のない人物は `[Generic group]`。**CHAR-XX は台本で名前がある人物にのみ**振る
 - [ ] **再利用は `(CHAR-XX 再利用)` をプロンプトの最先頭**に置く
+- [ ] **同一人物の服装は全ASSETで固定**（CHAR定義の服装色を、実写風プロンプト・遠景・シルエットにも同じ色で書く）。複数人が映るカットは**1人ずつ服装で書き分け**、「farm work clothes」等の一括表記で済ませない → 2026-08-20 倒れる4人が同じ服になった指摘の再発防止
 - [ ] クマは**四足歩行**。`standing upright` `on two legs` 等は禁止（フックが検出する）
 - [ ] Lovart動画には **Google Flow動画プロンプトを必ず併記**（件数が合わないとフックが警告）
 - [ ] **[Lovart動画]の1ブロック目は「静止画」プロンプト**＝手順は 静止画を先に生成→Google Flowで動画化。1ブロック目に動きの記述（slowly / gliding / charging toward / 5 seconds 等）を書かない。**凍結した1コマ**（frozen mid-stride / suspended / captured 等）として描き、動き・カメラワークはFlowプロンプト側だけに書く

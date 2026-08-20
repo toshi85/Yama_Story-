@@ -221,11 +221,11 @@ A Japanese police patrol car with red lights flashing speeds along a narrow rura
 【制作メモ】ASSET-008 [Lovart動画] 台本L169 ★フック最大の画（HOOK-IMAGE）
 シーン: 空き地に4人が倒れており、その奥をクマが山へ走り去っていく。引きの構図で直接的な描写は避ける
 ```
-Wide high-angle still of an open lot in a Japanese mountain village: four Japanese adults lying motionless on the ground at a distance, seen small and far away so no injuries are visible, and a black bear frozen mid-run away from the scene toward the forested mountain in the background, dust and leaves suspended behind it. Late October morning, muted colors, documentary realism, tragic and quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+Wide high-angle still of an open lot in a Japanese mountain village: four Japanese adults lying motionless on the ground at a distance, each clearly distinct even from afar — an elderly thin man in his 70s in a light gray farm jacket and dark flat cap, an elderly small woman in her 70s in a lavender work smock, a sturdy man in his late 30s in a dark navy fleece jacket, and a lean man in his 60s in an olive-gray carpenter jacket — no injuries visible at this distance, and a black bear frozen mid-run away from the scene toward the forested mountain in the background, dust and leaves suspended behind it. Late October morning, muted colors, documentary realism, tragic and quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
-Static wide high-angle shot of an open lot in a rural Japanese village in autumn: four Japanese adults in farm work clothes lying motionless far from the camera, no injuries visible, while one black bear with a white chest crescent runs on all fours away from the scene toward the dark forested mountain. The bear moves fast, dust and fallen leaves kicked up. Camera holds still. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+Static wide high-angle shot of an open lot in a rural Japanese village in autumn: four Japanese adults lying motionless far from the camera, each distinct by clothing — an elderly man in a light gray farm jacket and flat cap, an elderly woman in a lavender work smock, a man in a dark navy fleece jacket, a man in an olive-gray carpenter jacket — no injuries visible, while one black bear with a white chest crescent runs on all fours away from the scene toward the dark forested mountain. The bear moves fast, dust and fallen leaves kicked up. Camera holds still. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: 音を一瞬すべて消してこのカットを見せる（3〜4秒）。直後に心拍音。
 
