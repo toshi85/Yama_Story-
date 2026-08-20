@@ -51,10 +51,7 @@ A dark village lane in Higashinaruse, Akita at night: house lights glowing warm 
 ```
 [Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese village official in his 60s in a gray suit, seated with his forehead resting on his clasped hands, eyes closed, the weight of an impossible conclusion on his shoulders. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
-```
-The village meeting room in Higashinaruse, Akita late at night: papers spread untouched, cold tea, the wall clock past midnight, heavy fluorescent stillness. A conclusion no one wanted. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
-```
+背景: **ASSET-245（役場会議室・夜）の背景を再使用**。新規生成しない。ズーム位置・トリミング・色調補正で画変わりを付ける
 → 編集者指示: BGMを重く。1〜2秒の間。
 
 ---
@@ -97,10 +94,7 @@ A prefectural government office in Akita city at night: a broad desk with stacke
 ```
 [Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese news presenter, woman in her 30s in a navy blazer, holding up a blank monthly calendar board with both hands, grave presenting expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
-```
-A dark blue broadcast backdrop with a soft spotlight center, clean graphics base, Akita news tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
-```
+背景: **ASSET-213（放送ボード風背景）の背景を再使用**。新規生成しない。ズーム位置・トリミング・色調補正で画変わりを付ける
 → 編集者指示: カレンダーに赤い印を日ごとに増やし「10月だけで35人＝歴代最悪」を表示。
 
 ---
@@ -266,10 +260,7 @@ A village work yard in Higashinaruse, Akita at dusk: a kei truck with its tailga
 ```
 (CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap held at his side, looking up at something above with a wistful counting gaze. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
-```
-The old wooden notice board in the village community hall in Higashinaruse, Akita, blank name card slots in a grid with most slots empty, warm indoor light, quiet decline. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
-```
+背景: **ASSET-126（集会所の名簿ボード ※図解ASSET-126で生成したベース画を流用）の背景を再使用**。新規生成しない。ズーム位置・トリミング・色調補正で画変わりを付ける
 → 編集者指示: 「現在 18人」を表示し、埋まっている枠を18個だけ点灯。
 
 ---
@@ -373,10 +364,7 @@ The edge of a beech forest near Yuzawa, Akita in early November: a woven mushroo
 ```
 [Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese Self-Defense Force member in an olive-green field uniform and cap, ticking items on a clipboard with a pen, methodical proud posture. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
-```
-Rows of steel cage traps lined up neatly in a gravel staging yard in Akita, Japan, olive-drab trucks in the background, clear early-winter light, orderly logistics achievement. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
-```
+背景: **ASSET-256（自衛隊の集積ヤード）の背景を再使用**。新規生成しない。ズーム位置・トリミング・色調補正で画変わりを付ける
 → 編集者指示: 「運んだ箱わな 141基」をカウントアップ表示。
 
 ---
@@ -597,10 +585,7 @@ A bright late-spring morning in Higashinaruse, Akita: fresh green mountains, a n
 ```
 (CHAR-01 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, black work pants, one arm stretched protectively to shield someone behind him, steady brave expression, rendered in a warm golden memorial glow. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
-```
-A golden-hour lane in Higashinaruse, Akita: warm low light across the road he ran down, drifting autumn leaves suspended in the air, tender and heroic stillness. The moment that defined him. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
-```
+背景: **ASSET-253（黄金色の村の路地（追想））の背景を再使用**。新規生成しない。ズーム位置・トリミング・色調補正で画変わりを付ける
 → 編集者指示: 「母親を逃がし、自らは現場に残った」テロップ。ASSET-051の構図を意識した再掲で記憶を呼び戻す。
 
 ---
@@ -655,7 +640,7 @@ A wide serene sunrise over the Higashinaruse valley in Akita: golden light slowl
 
 | カテゴリ | 件数 | 自分の作業 | 編集者の作業 |
 |----------|------|-----------|------------|
-| キャラアニメーション | 207箇所 | キャラ+背景をコピペ→選ぶ | CapCutで合成・キーフレーム |
+| キャラアニメーション | 207箇所（うち背景再使用27＝背景の新規生成は180枚） | キャラ+背景をコピペ→選ぶ | CapCutで合成・キーフレーム |
 | Lovart静止画（+編集者含む） | 24枚 | コピペ→選ぶ | 動き指示・テキスト追加 |
 | Lovart動画（Google Flow） | 12本 | コピペ→選ぶ→Flowで動画化 | なし |
 | Google Earth | 12箇所 | なし | GoogleEarth指示書.md を見て録画 |
