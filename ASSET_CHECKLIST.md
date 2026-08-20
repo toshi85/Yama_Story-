@@ -116,6 +116,8 @@ python System_Tools/validate_yama_prompts.py  <Asset_Prompts.md>
 `validate_phase2_assets.py` が自動検出するもの:
 冬化／クマ不在／二足歩行／グラフ動画／黒画面／方向あいまい／日本語本文の混入
 
+- [ ] **納品物は必ず1本の結合版 `Asset_Prompts_Full.md` を生成する**（作業はPART単位で分割してよいが、ユーザーに渡す完成資料は1ファイル。分割版を編集したらFullを再生成して同期）
+      → 2026-08-20 東成瀬村で3分割のまま完了報告し「全てがまとまった資料はどこ？」となった事故の再発防止。結合はKI→SHO→TEN_KETSUの順で連結し、結合版にも `validate_yama_prompts.py <Full> <Master.md>` の台本突合を通すこと
 - [ ] **完了報告前 grep が0件**
       `grep -nE "（要設定）|要設定|TBD|仮置き|後で埋める|TODO" <ファイル>`
 - [ ] PostToolUse フック `validate-asset-prompts.sh` の ❌ が0件（背景混入／テキスト混入／二足歩行／Japanese欠落）
