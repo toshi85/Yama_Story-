@@ -29,6 +29,7 @@ Yama_Story プロンプト品質バリデーター
   20. 背景プロンプト人物矛盾 — 「No people visible」と人物描写が同居していないか (FAIL)
   21. 【AI動画】2ブロック構成 — Google Flow動画プロンプト欠落の検出 (FAIL)
   22. キャラ系プロンプト比率 — 60%以上の達成度（リファレンス羅臼岳72.8%）(FAIL/WARNING)
+  23. 冒頭・末尾動画 — KI先頭アセット/TEN-KETSU末尾アセットが[Lovart動画]か (FAIL)
   23. CHAR-XX 再利用マーカー — 2回目以降のASSET冒頭に (CHAR-XX 再利用): があるか (WARNING)
   24. 複数キャラ個別生成パターン — 複数人シーンでキャラプロンプト①②形式か (WARNING)
 """
@@ -733,6 +734,34 @@ def check_scene_line_required(lines):
     return issues
 
 
+def check_intro_ending_video(lines):
+    """冒頭・末尾動画チェック（恒久ルール 2026-08-20追加）:
+    - <!-- PART: KI --> を含むファイルでは、最初の【制作メモ】が [Lovart動画] であること
+      （feedback_yama_intro_always_video: 冒頭フックは必ず動画）
+    - <!-- PART: TEN-KETSU --> を含むファイルでは、最後の【制作メモ】が [Lovart動画] であること
+      （feedback_yama_ending_always_video: 追悼＋視聴御礼は必ずAI動画）
+    背景: 2026-08-20 東成瀬村Phase2で冒頭をテキスト演出・末尾を静止画にする事故。
+    索引(ASSET_CHECKLIST)未記載＋検査なしで素通りしたため、両方を仕組み化。"""
+    issues = []
+    text = "\n".join(lines)
+    memos = []  # (line_no, asset_id, category)
+    for i, line in enumerate(lines):
+        m = re.match(r'【制作メモ】(ASSET-\d+)\s*\[([^\]]+)\]', line.strip())
+        if m:
+            memos.append((i + 1, m.group(1), m.group(2)))
+    if not memos:
+        return issues
+    if '<!-- PART: KI -->' in text:
+        ln, aid, cat = memos[0]
+        if cat != 'Lovart動画':
+            issues.append((ln, f"冒頭アセット {aid} が [{cat}]。冒頭フックは必ず [Lovart動画]（恒久ルール feedback_yama_intro_always_video）"))
+    if '<!-- PART: TEN-KETSU -->' in text:
+        ln, aid, cat = memos[-1]
+        if cat != 'Lovart動画':
+            issues.append((ln, f"末尾アセット {aid} が [{cat}]。追悼＋視聴御礼は必ず [Lovart動画]（恒久ルール feedback_yama_ending_always_video）"))
+    return issues
+
+
 def check_trailing_garbage(lines):
     """末尾ゴミ行チェック: 最後のASSETのプロンプト・編集者指示の後に
     孤立したナレーション行や大量の空行がないか検出する。"""
@@ -1379,6 +1408,16 @@ def main():
         print(f"   → [Google Earth]は座標+カメラ指示のみ。Lovart用プロンプト(```)は禁止")
     else:
         print("✅ PASS: Google Earthプロンプト禁止（```ブロックなし）")
+
+    # 23. 冒頭・末尾動画チェック（恒久ルール）
+    issues = check_intro_ending_video(lines)
+    if issues:
+        all_pass = False
+        print(f"\n❌ FAIL: 冒頭・末尾は必ずAI動画 ({len(issues)}件)")
+        for ln, desc in issues:
+            print(f"   L{ln}: {desc}")
+    else:
+        print("✅ PASS: 冒頭・末尾動画ルール（KI先頭/TEN-KETSU末尾が[Lovart動画]）")
 
     # 17. 末尾ゴミ行チェック
     issues = check_trailing_garbage(lines)
