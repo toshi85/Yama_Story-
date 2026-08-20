@@ -35,11 +35,11 @@
 シーン: CHAR-08が畑で腰をかがめて作業している平和な日常
 キャラプロンプト（1:1）:
 ```
-(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, khaki work pants, gray work cap, bending over pulling weeds with both hands, peaceful focused expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, khaki work pants, gray work cap, bending over pulling weeds with both hands, peaceful focused expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A small roadside vegetable field in a Japanese mountain village in Akita, late October. Neat crop rows, a farm road, a parked white kei truck in the corner of the frame, autumn mountains behind. Calm morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A small roadside vegetable field in a Japanese mountain village in Akita, late October. Neat crop rows, a farm road, a parked white kei truck in the corner of the frame, autumn mountains behind. Calm morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 静かな環境音（鳥の声）。2〜3秒。
 
@@ -51,11 +51,11 @@ A small roadside vegetable field in a Japanese mountain village in Akita, late O
 シーン: CHAR-08が顔を上げ、視線の先に黒い影。主観の入り口
 キャラプロンプト（1:1）:
 ```
-(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, khaki work pants, gray work cap, head lifted, eyes widening, body stiffening mid-motion. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, khaki work pants, gray work cap, head lifted, eyes widening, body stiffening mid-motion. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-View across a Japanese village field toward the grassy forest edge in Akita: a low dark blurry shape at the tree line, out of focus, autumn morning. Unsettling stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+View across a Japanese village field toward the grassy forest edge in Akita: a low dark blurry shape at the tree line, out of focus, autumn morning. Unsettling stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 背景の黒い影に軽いピント送り演出（ぼかし→少しだけ鮮明に）。BGMを止めて環境音のみ。
 
@@ -67,11 +67,11 @@ View across a Japanese village field toward the grassy forest edge in Akita: a l
 シーン: CHAR-07（クマ）の姿がはっきり見える。正体の開示
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, standing on all fours facing forward, head slightly lowered, eyes locked on the viewer. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, standing on all fours facing forward, head slightly lowered, eyes locked on the viewer. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The edge of a Japanese village field where tall dry grass meets dark cedar forest, Akita, late October morning. Cold flat light, deep shadows between the trees. Menacing quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The edge of a Japanese village field where tall dry grass meets dark cedar forest, Akita, late October morning. Cold flat light, deep shadows between the trees. Menacing quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「ツキノワグマ」テロップを白文字で下部に1秒表示。低音の一撃SE。
 
@@ -82,7 +82,7 @@ The edge of a Japanese village field where tall dry grass meets dark cedar fores
 【制作メモ】ASSET-021 [Lovart静止画 + 編集者] 台本L203
 シーン: 畑の地面を横から見た構図に、編集者が「3m」の距離ラインを重ねる
 ```
-Low side view across bare farm soil in a Japanese village field in Akita, from a pair of black rubber boots in the near foreground to the grassy field edge only a few steps away, shallow depth of field, tense autumn morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Low side view across bare farm soil in a Japanese village field in Akita, from a pair of black rubber boots in the near foreground to the grassy field edge only a few steps away, shallow depth of field, tense autumn morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 手前と奥の間に白い両矢印ラインを引き「約3m」を大きく表示。「乗用車1台分ほど」の補足テロップを小さく添える。
 
@@ -94,11 +94,11 @@ Low side view across bare farm soil in a Japanese village field in Akita, from a
 シーン: CHAR-08が軽トラックへ全力で駆け込む
 キャラプロンプト（1:1）:
 ```
-(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, khaki work pants, gray work cap, sprinting desperately, cap almost flying off, terrified expression, arms pumping. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, khaki work pants, gray work cap, sprinting desperately, cap almost flying off, terrified expression, arms pumping. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A white Japanese kei mini truck parked on a narrow farm road beside a field in Akita, driver's door facing the camera, autumn mountains behind. Urgent atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A white Japanese kei mini truck parked on a narrow farm road beside a field in Akita, driver's door facing the camera, autumn mountains behind. Urgent atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: CHAR-08を画面左から軽トラへ素早くスライド（1.5秒）。心拍SE開始。
 
@@ -110,11 +110,11 @@ A white Japanese kei mini truck parked on a narrow farm road beside a field in A
 シーン: 運転席に飛び込みドアを閉める瞬間（車内から）
 キャラプロンプト（1:1）:
 ```
-(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, gray work cap, lunging sideways into a seated position, one arm yanking an unseen door shut behind him, face tense and breathless. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, gray work cap, lunging sideways into a seated position, one arm yanking an unseen door shut behind him, face tense and breathless. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Interior of an old Japanese kei truck cab: worn gray seats, simple dashboard, view of a village field through the windshield, keys in the ignition. Cramped and urgent. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Interior of an old Japanese kei truck cab: worn gray seats, simple dashboard, view of a village field through the windshield, keys in the ignition. Cramped and urgent. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: ドアが閉まる「バン！」のSE。画面を一瞬揺らす。
 
@@ -126,11 +126,11 @@ Interior of an old Japanese kei truck cab: worn gray seats, simple dashboard, vi
 シーン: フロントガラス越しに、こちらをじっと見るCHAR-07
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours, head raised, staring intensely straight ahead without moving. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours, head raised, staring intensely straight ahead without moving. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-View through a kei truck windshield from inside the cab: a narrow farm road and field edge in a Japanese mountain village, Akita, slightly smudged glass, autumn light. Claustrophobic tension. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+View through a kei truck windshield from inside the cab: a narrow farm road and field edge in a Japanese mountain village, Akita, slightly smudged glass, autumn light. Claustrophobic tension. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: クマをガラス越しの構図に合成し、微動だにしない「静」の緊張を2〜3秒。心拍SE継続。
 
@@ -142,11 +142,11 @@ View through a kei truck windshield from inside the cab: a narrow farm road and 
 シーン: CHAR-08がハンドル中央を強く押す
 キャラプロンプト（1:1）:
 ```
-(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, gray work cap, seated posture, both palms pressing down hard in front of him, desperate shouting expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, gray work cap, seated posture, both palms pressing down hard in front of him, desperate shouting expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Close view of an old Japanese kei truck steering wheel and dashboard from the driver's seat, worn horn button at the center, field visible through windshield. Urgent mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Close view of an old Japanese kei truck steering wheel and dashboard from the driver's seat, worn horn button at the center, field visible through windshield. Urgent mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 大音量のクラクションSE。音の波紋エフェクトを軽く重ねる。
 
@@ -158,11 +158,11 @@ Close view of an old Japanese kei truck steering wheel and dashboard from the dr
 シーン: 常識の説明。CHAR-07が音に驚いて逃げる「はずだった」イメージ
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours turning away in a startled running pose, ears back, as if fleeing from a loud sound. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours turning away in a startled running pose, ears back, as if fleeing from a loud sound. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A Japanese village field edge and forest line in Akita rendered in soft desaturated tones, dreamlike faded look suggesting an imagined outcome, autumn morning. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A Japanese village field edge and forest line in Akita rendered in soft desaturated tones, dreamlike faded look suggesting an imagined outcome, autumn morning. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 画面全体を白っぽく色調補正し「〜のはずだった」の想像カットだと分かるように。クマが右へ走り去るキーフレーム。
 
@@ -173,7 +173,7 @@ A Japanese village field edge and forest line in Akita rendered in soft desatura
 【制作メモ】ASSET-027 [Lovart動画] 台本L215 ★AI動画（前半ピークの入口）
 シーン: クマが軽トラックに向かって突進してくる（車内視点）
 ```
-View through a kei truck windshield in a Japanese mountain village in Akita: an adult Asian black bear with a white chest crescent charging on all fours directly toward the camera across a farm road, fur rippling, dust rising. Terrifying head-on approach. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+View through a kei truck windshield in a Japanese mountain village in Akita: an adult Asian black bear with a white chest crescent charging on all fours directly toward the camera across a farm road, fur rippling, dust rising. Terrifying head-on approach. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -189,11 +189,11 @@ Camera locked inside a Japanese kei truck cab looking through the windshield: an
 シーン: CHAR-07が前足で車体に体当たりする衝撃（直接衝突はキーフレームで表現）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours mid-lunge, both front paws thrust forward for a heavy strike, mouth open, power in every muscle. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours mid-lunge, both front paws thrust forward for a heavy strike, mouth open, power in every muscle. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Side view of a white Japanese kei mini truck parked on a farm road in Akita, driver's side facing the camera, autumn village behind. Impact about to happen. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Side view of a white Japanese kei mini truck parked on a farm road in Akita, driver's side facing the camera, autumn village behind. Impact about to happen. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: クマを車体へ勢いよくぶつけるキーフレーム＋画面全体を大きく揺らす。金属の衝撃SE。
 
@@ -205,11 +205,11 @@ Side view of a white Japanese kei mini truck parked on a farm road in Akita, dri
 シーン: 割れたフォグランプの前で、CHAR-07が前足を振り抜いた直後の姿勢
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours just after a heavy paw swipe, one front paw still extended, shoulders bunched with power. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours just after a heavy paw swipe, one front paw still extended, shoulders bunched with power. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Close-up of the front corner of a white Japanese kei truck on a farm road in Akita: a shattered fog lamp with cracked glass fragments and a dented bumper panel, cold autumn light. Documentary evidence feel. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Close-up of the front corner of a white Japanese kei truck on a farm road in Akita: a shattered fog lamp with cracked glass fragments and a dented bumper panel, cold autumn light. Documentary evidence feel. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 割れたフォグランプにゆっくり近づく（4秒で1.0→1.12）。ガラスの残響SE。実車の報道映像（ABS）に差し替え可（/revenue-guard対象）。
 
@@ -221,11 +221,11 @@ Close-up of the front corner of a white Japanese kei truck on a farm road in Aki
 シーン: 車内で身をすくめるCHAR-08。外に出られない
 キャラプロンプト（1:1）:
 ```
-(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, gray work cap, seated posture hunched low, both arms shielding his head, eyes squeezed shut in fear. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, gray work cap, seated posture hunched low, both arms shielding his head, eyes squeezed shut in fear. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Inside a kei truck cab in a Japanese village, view angled down at the worn seat and floor mats, keys swinging from the ignition, harsh shadow moving across the windshield. Trapped feeling. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Inside a kei truck cab in a Japanese village, view angled down at the worn seat and floor mats, keys swinging from the ignition, harsh shadow moving across the windshield. Trapped feeling. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 画面をわずかに揺らし続ける（体当たりの余韻）。
 
@@ -237,11 +237,11 @@ Inside a kei truck cab in a Japanese village, view angled down at the worn seat 
 シーン: CHAR-07が車から離れ、ふっと興味を失った様子
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours turning her body away, head still half-turned back toward the viewer, losing interest. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours turning her body away, head still half-turned back toward the viewer, losing interest. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A farm road beside a field in a Japanese mountain village in Akita, the road stretching toward the dark forest edge, autumn morning after a moment of chaos. Uneasy calm. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A farm road beside a field in a Japanese mountain village in Akita, the road stretching toward the dark forest edge, autumn morning after a moment of chaos. Uneasy calm. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 揺れを止め、環境音だけに戻す。安堵しきれない間を1秒作る。
 
@@ -253,11 +253,11 @@ A farm road beside a field in a Japanese mountain village in Akita, the road str
 シーン: CHAR-07が森の中へ消えていく後ろ姿
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours walking away from the viewer, rear view, tail end of her body, unhurried steady stride. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours walking away from the viewer, rear view, tail end of her body, unhurried steady stride. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The dark mouth of a cedar forest at the edge of a Japanese village field in Akita, a faint animal path disappearing between the trunks, fallen autumn leaves. Ominous depth. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The dark mouth of a cedar forest at the edge of a Japanese village field in Akita, a faint animal path disappearing between the trunks, fallen autumn leaves. Ominous depth. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: クマを森の暗がりへ小さくなりながらフェードアウトさせる（3秒）。「しかし、これで終わりではなかった」の含みを持つ低音を残す。
 
@@ -270,7 +270,7 @@ The dark mouth of a cedar forest at the edge of a Japanese village field in Akit
 【実写】検索キーワード: `ABS 東成瀬村 クマ 車を襲ってきた 目撃者インタビュー` / `東成瀬村 軽トラック クマ 体当たり`
 【実写】フォールバック（入手できない場合のLovart用）:
 ```
-A Japanese man in his 70s in a navy farm work jacket being interviewed outdoors in front of a rural house in Akita, autumn day, framed from the side so his face is not clearly visible, documentary news style. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A Japanese man in his 70s in a navy farm work jacket being interviewed outdoors in front of a rural house in Akita, autumn day, framed from the side so his face is not clearly visible, documentary news style. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 発言を字幕で表示（実写使用時は元映像の音声を活かす。/revenue-guard対象）。
 
@@ -282,11 +282,11 @@ A Japanese man in his 70s in a navy farm work jacket being interviewed outdoors 
 シーン: 証言の再現。CHAR-07が跳びかかる決定的瞬間のスロー再現
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, launching forward off her hind legs in a four-legged pounce, front paws extended, mouth open. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, launching forward off her hind legs in a four-legged pounce, front paws extended, mouth open. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Slightly desaturated replay-style view of a farm road and white kei truck in a Japanese village in Akita, autumn morning, subtle vignette suggesting a reenactment. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Slightly desaturated replay-style view of a farm road and white kei truck in a Japanese village in Akita, autumn morning, subtle vignette suggesting a reenactment. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 証言の字幕を下部に表示。スローモーション調のキーフレームで跳びかかりを再現（2秒）。
 
@@ -298,11 +298,11 @@ Slightly desaturated replay-style view of a farm road and white kei truck in a J
 シーン: フロントガラスに前足が迫る恐怖の主観イメージ
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, rearing forward on all fours with one front paw raised high toward the viewer, claws spread, mouth open wide. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, rearing forward on all fours with one front paw raised high toward the viewer, claws spread, mouth open wide. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Extreme close view of a kei truck windshield from inside a village farm road in Higashinaruse, Akita, faint radiating stress lines of light on the glass, blurred village field beyond, harsh contrast. Overwhelming fear. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Extreme close view of a kei truck windshield from inside a village farm road in Higashinaruse, Akita, faint radiating stress lines of light on the glass, blurred village field beyond, harsh contrast. Overwhelming fear. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 前足をガラスへ迫らせるキーフレーム→直前で暗転。「ガラスを破って入ってくると思った」を字幕表示。
 
@@ -336,11 +336,11 @@ Extreme close view of a kei truck windshield from inside a village farm road in 
 シーン: 空き地で並んで作業するCHAR-04とCHAR-05の穏やかな導入
 キャラプロンプト（1:1）:
 ```
-(CHAR-04 再利用)(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: 76-year-old Japanese man, light gray farm jacket, dark green work pants, dark flat cap. CHAR-05: 72-year-old Japanese woman, lavender farm smock, dark monpe pants. Standing side by side with garden tools, relaxed friendly expressions. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-04 再利用)(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: 76-year-old Japanese man, light gray farm jacket, dark green work pants, dark flat cap. CHAR-05: 72-year-old Japanese woman, lavender farm smock, dark monpe pants. Standing side by side with garden tools, relaxed friendly expressions. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-An open vacant lot behind single-story houses in a Japanese mountain village in Akita: patchy grass, a small vegetable patch, a weathered wooden shed on one side, a parked car at the edge, autumn mountains rising close behind. Warm late-morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+An open vacant lot behind single-story houses in a Japanese mountain village in Akita: patchy grass, a small vegetable patch, a weathered wooden shed on one side, a parked car at the edge, autumn mountains rising close behind. Warm late-morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「夫76歳・妻72歳」テロップを2人の下に表示。
 
@@ -352,11 +352,11 @@ An open vacant lot behind single-story houses in a Japanese mountain village in 
 シーン: 笑顔で土を触る2人。事件前の最後の平和
 キャラプロンプト（1:1）:
 ```
-(CHAR-04 再利用)(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: 76-year-old Japanese man, light gray farm jacket, dark flat cap, kneeling and planting seedlings. CHAR-05: 72-year-old Japanese woman, lavender farm smock, handing him a small pot, both laughing warmly. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-04 再利用)(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: 76-year-old Japanese man, light gray farm jacket, dark flat cap, kneeling and planting seedlings. CHAR-05: 72-year-old Japanese woman, lavender farm smock, handing him a small pot, both laughing warmly. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Close ground-level view of a small vegetable patch in a vacant lot in Higashinaruse village, Akita, Japan: dark soil, seedling trays, a hand trowel, gentle autumn sunshine, houses softly blurred behind. Peaceful and warm. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Close ground-level view of a small vegetable patch in a vacant lot in Higashinaruse village, Akita, Japan: dark soil, seedling trays, a hand trowel, gentle autumn sunshine, houses softly blurred behind. Peaceful and warm. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 明るく穏やかなBGM。2〜3秒だけ見せて次で反転させる。
 
@@ -367,7 +367,7 @@ Close ground-level view of a small vegetable patch in a vacant lot in Higashinar
 【制作メモ】ASSET-040 [Lovart静止画] 台本L244
 シーン: 同じ空き地の色調が急変。影が長く伸びる不穏なカット
 ```
-The same vacant lot behind houses in a Japanese mountain village in Akita, now in cold desaturated tones: long dark shadows stretching across the grass from the shed, wind-blown leaves frozen mid-air, empty tools left on the ground. Dread and foreboding. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+The same vacant lot behind houses in a Japanese mountain village in Akita, now in cold desaturated tones: long dark shadows stretching across the grass from the shed, wind-blown leaves frozen mid-air, empty tools left on the ground. Dread and foreboding. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 「しかし」で音楽を切り、低いドローン音へ。ゆっくり近づく（3秒で1.0→1.1）。
 
@@ -379,11 +379,11 @@ The same vacant lot behind houses in a Japanese mountain village in Akita, now i
 シーン: 小屋の陰からCHAR-07が音もなく現れ、低い姿勢で近づいてくる
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, stalking forward on all fours in a low creeping posture, head down, eyes fixed ahead, slow deliberate step. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, stalking forward on all fours in a low creeping posture, head down, eyes fixed ahead, slow deliberate step. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Ground-level view beside a weathered wooden shed in a Japanese village vacant lot in Akita, dry grass in the foreground, deep shadow along the shed wall, autumn light. Predatory quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Ground-level view beside a weathered wooden shed in a Japanese village vacant lot in Akita, dry grass in the foreground, deep shadow along the shed wall, autumn light. Predatory quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: CHAR-07を小屋の陰から低速スライドで出現させる（3秒）。無音に近い演出。草を踏む音だけを立てる。
 
@@ -395,11 +395,11 @@ Ground-level view beside a weathered wooden shed in a Japanese village vacant lo
 シーン: 振り向いたCHAR-04の至近距離にCHAR-07。1.5mの近さ
 キャラプロンプト（1:1）:
 ```
-(CHAR-04 再利用)(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: 76-year-old Japanese man, light gray farm jacket, dark flat cap, turning around, face frozen in disbelief. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours extremely close to him, head raised. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-04 再利用)(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: 76-year-old Japanese man, light gray farm jacket, dark flat cap, turning around, face frozen in disbelief. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours extremely close to him, head raised. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Very tight framing of grass and bare soil in a village vacant lot in Higashinaruse, Akita, Japan, shallow depth of field, the wooden shed blurred at the edge. Claustrophobic closeness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Very tight framing of grass and bare soil in a village vacant lot in Higashinaruse, Akita, Japan, shallow depth of field, the wooden shed blurred at the edge. Claustrophobic closeness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「距離 約1.5m ＝ 畳1枚分」を白テロップで一瞬表示。
 
@@ -411,11 +411,11 @@ Very tight framing of grass and bare soil in a village vacant lot in Higashinaru
 シーン: 叫ぶCHAR-04と、振り返って凍りつくCHAR-05
 キャラプロンプト（1:1）:
 ```
-(CHAR-04 再利用)(CHAR-05 再利用)(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: 76-year-old Japanese man, light gray farm jacket, dark flat cap, mouth wide open in a scream, arms flung out. CHAR-05: 72-year-old Japanese woman, lavender farm smock, spinning around, hands flying to her mouth, eyes wide with terror. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours closing in beside them. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-04 再利用)(CHAR-05 再利用)(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: 76-year-old Japanese man, light gray farm jacket, dark flat cap, mouth wide open in a scream, arms flung out. CHAR-05: 72-year-old Japanese woman, lavender farm smock, spinning around, hands flying to her mouth, eyes wide with terror. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours closing in beside them. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A vacant lot behind village houses in Akita under suddenly harsh light, grass bending in a gust of wind, scattered garden tools. Panic in a peaceful place. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A vacant lot behind village houses in Akita under suddenly harsh light, grass bending in a gust of wind, scattered garden tools. Panic in a peaceful place. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 叫び声のSE（山に反響させる）。このカットの叫びが§5の伏線になる。
 
@@ -427,11 +427,11 @@ A vacant lot behind village houses in Akita under suddenly harsh light, grass be
 シーン: 襲撃の瞬間は直接見せず、CHAR-07が跳びかかるシルエットと空へ舞う帽子で暗示
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, mid-pounce on all fours with front paws sweeping forward, powerful and fast. A dark flat cap flying through the air beside her. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, mid-pounce on all fours with front paws sweeping forward, powerful and fast. A dark flat cap flying through the air beside her. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Low dramatic view of trampled grass in a village vacant lot in Akita, a fallen garden trowel in the foreground, dust drifting in the cold light. Aftermath of sudden violence, nothing explicit shown. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Low dramatic view of trampled grass in a village vacant lot in Akita, a fallen garden trowel in the foreground, dust drifting in the cold light. Aftermath of sudden violence, nothing explicit shown. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 襲撃自体は1秒未満のシルエット＋暗転で処理。鈍い衝撃SE。直接描写はしない。
 
@@ -456,11 +456,11 @@ Low dramatic view of trampled grass in a village vacant lot in Akita, a fallen g
 シーン: CHAR-01（佐々木さん）の人物紹介。穏やかに立つ姿
 キャラプロンプト（1:1）:
 ```
-(CHAR-01 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, black work pants, standing relaxed with a gentle smile, one hand raised in a small wave. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-01 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, black work pants, standing relaxed with a gentle smile, one hand raised in a small wave. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A quiet lane in a small Japanese mountain village in Akita, an old traditional house with a dark tiled roof, persimmon tree with orange fruit by the gate, autumn mountains behind. Warm nostalgic light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A quiet lane in a small Japanese mountain village in Akita, an old traditional house with a dark tiled roof, persimmon tree with orange fruit by the gate, autumn mountains behind. Warm nostalgic light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「佐々木喜行さん（38）」「生まれも育ちも東成瀬村」の2行テロップ。
 
@@ -472,11 +472,11 @@ A quiet lane in a small Japanese mountain village in Akita, an old traditional h
 シーン: 居間でCHAR-01とCHAR-03がハッと顔を上げる
 キャラプロンプト（1:1）:
 ```
-(CHAR-01 再利用)(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, black work pants, head snapping up in alarm. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, gray pants, freezing mid-motion, hand to her chest, both listening hard. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-01 再利用)(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, black work pants, head snapping up in alarm. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, gray pants, freezing mid-motion, hand to her chest, both listening hard. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Interior of a Japanese country house living room in Akita: low table, cushions on tatami, a window with lace curtains, soft daylight. Peaceful stillness about to break. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Interior of a Japanese country house living room in Akita: low table, cushions on tatami, a window with lace curtains, soft daylight. Peaceful stillness about to break. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 遠くの悲鳴SE（こもった音）→2人が顔を上げるキーフレーム。
 
@@ -488,11 +488,11 @@ Interior of a Japanese country house living room in Akita: low table, cushions o
 シーン: 玄関から駆け出す2人
 キャラプロンプト（1:1）:
 ```
-(CHAR-01 再利用)(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, black work pants, running ahead urgently. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, gray pants, hurrying close behind him, worried face. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-01 再利用)(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, black work pants, running ahead urgently. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, gray pants, hurrying close behind him, worried face. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The front entrance of a Japanese country house in Akita with the sliding door left open, stepping stones, a narrow lane leading toward an open lot in the distance, autumn morning. Urgency in a quiet place. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The front entrance of a Japanese country house in Akita with the sliding door left open, stepping stones, a narrow lane leading toward an open lot in the distance, autumn morning. Urgency in a quiet place. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 2人を玄関から奥へ走らせるスライド（1.5秒）。開けっ放しの引き戸を強調。
 
@@ -504,11 +504,11 @@ The front entrance of a Japanese country house in Akita with the sliding door le
 シーン: 立ち尽くす親子の背中越しに、遠くに倒れている夫婦（詳細は見せない引きの構図）
 キャラプロンプト（1:1）:
 ```
-(CHAR-01 再利用)(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, seen from behind, frozen mid-step. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, beside him, hands over her mouth. Both staring ahead in horror, rear three-quarter view. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-01 再利用)(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, seen from behind, frozen mid-step. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, beside him, hands over her mouth. Both staring ahead in horror, rear three-quarter view. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Wide view of a vacant lot behind village houses in Higashinaruse, Akita: two small indistinct shapes lying far away on the grass near a shed, too distant to make out any detail, cold late-morning light. Tragic stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Wide view of a vacant lot behind village houses in Higashinaruse, Akita: two small indistinct shapes lying far away on the grass near a shed, too distant to make out any detail, cold late-morning light. Tragic stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 直接的な描写はしない。画面の彩度を落とし、心拍と耳鳴りのSE。1〜2秒で次へ。
 
@@ -520,11 +520,11 @@ Wide view of a vacant lot behind village houses in Higashinaruse, Akita: two sma
 シーン: 倒れた2人のそばに立つCHAR-07がゆっくり顔を上げ、親子を見る
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours, head turning slowly toward the viewer with a cold direct stare. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours, head turning slowly toward the viewer with a cold direct stare. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Ground-level view across trampled grass in a village vacant lot in Higashinaruse, Akita, the wooden shed looming at the edge, cold flat light, dust hanging in the air. Predator's ground. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Ground-level view across trampled grass in a village vacant lot in Higashinaruse, Akita, the wooden shed looming at the edge, cold flat light, dust hanging in the air. Predator's ground. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: クマが顔だけこちらへ向けるキーフレーム（2秒）。低音の持続音。
 
@@ -540,11 +540,11 @@ Ground-level view across trampled grass in a village vacant lot in Higashinaruse
 シーン: CHAR-01が母をかばうように腕を横に伸ばす
 キャラプロンプト（1:1）:
 ```
-(CHAR-01 再利用)(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, black work pants, one arm stretched protectively across in front of his mother, jaw set with resolve. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, behind his arm, frightened. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-01 再利用)(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, black work pants, one arm stretched protectively across in front of his mother, jaw set with resolve. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, behind his arm, frightened. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Edge of a village vacant lot in Higashinaruse, Akita, seen at eye level: trampled grass ahead, houses behind, harsh cold light. A line between danger and home. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Edge of a village vacant lot in Higashinaruse, Akita, seen at eye level: trampled grass ahead, houses behind, harsh cold light. A line between danger and home. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 時間が止まったようなスロー演出（1.5秒）。
 
@@ -556,11 +556,11 @@ Edge of a village vacant lot in Higashinaruse, Akita, seen at eye level: trample
 シーン: CHAR-01が母の肩をつかみ、家の方向を指差して叫ぶ
 キャラプロンプト（1:1）:
 ```
-(CHAR-01 再利用)(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, gripping his mother's shoulder with one hand and pointing away with the other, shouting urgently. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, tears in her eyes, torn between staying and running. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-01 再利用)(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, gripping his mother's shoulder with one hand and pointing away with the other, shouting urgently. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, tears in her eyes, torn between staying and running. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A narrow path from a village vacant lot back toward houses in Higashinaruse, Akita, the way home clear and open, cold morning light. The direction of escape. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A narrow path from a village vacant lot back toward houses in Higashinaruse, Akita, the way home clear and open, cold morning light. The direction of escape. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「逃げて、助けを呼んで」の趣旨テロップは出さない（ナレーションで十分）。指差す腕の動きを強調。
 
@@ -572,11 +572,11 @@ A narrow path from a village vacant lot back toward houses in Higashinaruse, Aki
 シーン: 家に駆け込んだCHAR-03が受話器を握りしめて叫ぶ
 キャラプロンプト（1:1）:
 ```
-(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, gray pants, clutching a landline telephone handset with both hands, shouting into it, breathless and desperate. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, gray pants, clutching a landline telephone handset with both hands, shouting into it, breathless and desperate. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Inside the entry hall of a Japanese country house in Akita: an old landline telephone on a small cabinet, a calendar on the wall, daylight from the open sliding door. Urgency at home. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Inside the entry hall of a Japanese country house in Akita: an old landline telephone on a small cabinet, a calendar on the wall, daylight from the open sliding door. Urgency at home. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「クマに襲われている人がいる」を鉤括弧付き字幕で表示。電話の呼び出しSE。
 
@@ -588,11 +588,11 @@ Inside the entry hall of a Japanese country house in Akita: an old landline tele
 シーン: 役場の窓口職員が受話器を持ったまま別の電話へ手を伸ばす（通報のリレー）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese local government office worker, man in his 40s, white shirt and dark blue work vest, holding one telephone handset to his ear while reaching urgently for a second phone, tense focused face. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese local government office worker, man in his 40s, white shirt and dark blue work vest, holding one telephone handset to his ear while reaching urgently for a second phone, tense focused face. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Interior of a small Japanese village office in Akita: desks with paperwork, telephones, a wall map of the village, fluorescent lighting. Sudden emergency in a sleepy office. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Interior of a small Japanese village office in Akita: desks with paperwork, telephones, a wall map of the village, fluorescent lighting. Sudden emergency in a sleepy office. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「役場 → 警察・消防へ」の流れを矢印なしの3点テロップ（役場／警察／消防）で順番に点灯させる。サイレンSEを遠くから入れ始める。
 
@@ -604,11 +604,11 @@ Interior of a small Japanese village office in Akita: desks with paperwork, tele
 シーン: 一人で現場に残るCHAR-01の背中と、迫るCHAR-07の影
 キャラプロンプト（1:1）:
 ```
-(CHAR-01 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, black work pants, standing alone facing away from the viewer, fists clenched at his sides, shoulders tense. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-01 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: 38-year-old Japanese man, dark navy fleece jacket, black work pants, standing alone facing away from the viewer, fists clenched at his sides, shoulders tense. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A village vacant lot in Higashinaruse, Akita, with a huge dark four-legged animal shadow stretching across the trampled grass toward the camera, cold flat light. Inescapable dread. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A village vacant lot in Higashinaruse, Akita, with a huge dark four-legged animal shadow stretching across the trampled grass toward the camera, cold flat light. Inescapable dread. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 影がゆっくり伸びる動き（3秒）。BGMを完全に止める。
 
@@ -620,11 +620,11 @@ A village vacant lot in Higashinaruse, Akita, with a huge dark four-legged anima
 シーン: 襲撃はシルエットと暗転で暗示（直接描写しない）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, rendered as a dark backlit silhouette mid-pounce on all fours, front paw sweeping. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, rendered as a dark backlit silhouette mid-pounce on all fours, front paw sweeping. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Hard backlit view of a village vacant lot in Higashinaruse, Akita, grass blown sideways, harsh white sky, high contrast frame on the edge of blackout. The moment everything goes wrong. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Hard backlit view of a village vacant lot in Higashinaruse, Akita, grass blown sideways, harsh white sky, high contrast frame on the edge of blackout. The moment everything goes wrong. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: シルエット1秒→暗転0.5秒→鈍い衝撃SE。「絶体絶命」テロップは出さない（音で語る）。
 
@@ -640,11 +640,11 @@ Hard backlit view of a village vacant lot in Higashinaruse, Akita, grass blown s
 シーン: 帰宅したCHAR-02が、取り乱すCHAR-03を見つける
 キャラプロンプト（1:1）:
 ```
-(CHAR-02 再利用)(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02: 65-year-old Japanese carpenter, olive-gray work jacket, beige work pants, a canvas tool bag over his shoulder, stopping in shock. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, distraught, gesturing frantically toward somewhere off-frame, tears on her face. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-02 再利用)(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02: 65-year-old Japanese carpenter, olive-gray work jacket, beige work pants, a canvas tool bag over his shoulder, stopping in shock. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, distraught, gesturing frantically toward somewhere off-frame, tears on her face. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The front yard of a Japanese country house in Higashinaruse, Akita, a parked work van by the gate, tools visible in the back, late morning light gone cold. A homecoming into chaos. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The front yard of a Japanese country house in Higashinaruse, Akita, a parked work van by the gate, tools visible in the back, late morning light gone cold. A homecoming into chaos. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「父親（65歳・大工）」テロップ。母の叫び声SE（言葉は入れない）。
 
@@ -656,11 +656,11 @@ The front yard of a Japanese country house in Higashinaruse, Akita, a parked wor
 シーン: CHAR-02が道具袋を放り捨てて走り出す
 キャラプロンプト（1:1）:
 ```
-(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02: 65-year-old Japanese carpenter, olive-gray work jacket, beige work pants, sprinting hard, a canvas tool bag dropped and falling behind him, face desperate. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02: 65-year-old Japanese carpenter, olive-gray work jacket, beige work pants, sprinting hard, a canvas tool bag dropped and falling behind him, face desperate. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A narrow village lane in Higashinaruse, Akita, leading toward an open lot, telephone poles and hedges drawn in strong perspective lines, cold light. The road toward danger. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A narrow village lane in Higashinaruse, Akita, leading toward an open lot, telephone poles and hedges drawn in strong perspective lines, cold light. The road toward danger. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 走りの残像エフェクト。荒い呼吸SE。
 
@@ -672,11 +672,11 @@ A narrow village lane in Higashinaruse, Akita, leading toward an open lot, telep
 シーン: 立ち尽くすCHAR-02の視点。遠くに3人が倒れている（引きの構図・詳細は見せない）
 キャラプロンプト（1:1）:
 ```
-(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02: 65-year-old Japanese carpenter, olive-gray work jacket, beige work pants, seen from behind at three-quarter angle, arms dropping to his sides, knees slightly buckling in disbelief. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-02: 65-year-old Japanese carpenter, olive-gray work jacket, beige work pants, seen from behind at three-quarter angle, arms dropping to his sides, knees slightly buckling in disbelief. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Very wide view of a vacant lot in Higashinaruse, Akita: three small indistinct shapes lying far away on the grass, too distant to make out any detail, a parked car and shed at the edges, cold overcast light. Silent devastation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Very wide view of a vacant lot in Higashinaruse, Akita: three small indistinct shapes lying far away on the grass, too distant to make out any detail, a parked car and shed at the edges, cold overcast light. Silent devastation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 音を絞り、風の音だけにする。2秒。
 
@@ -688,11 +688,11 @@ Very wide view of a vacant lot in Higashinaruse, Akita: three small indistinct s
 シーン: 現場の中央に居座るCHAR-07がこちらを向く
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours standing her ground in the center, head low, unblinking stare at the viewer. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours standing her ground in the center, head low, unblinking stare at the viewer. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Center of a trampled vacant lot in Higashinaruse, Akita, flattened grass radiating outward, cold flat light, oppressive stillness. The eye of the storm. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Center of a trampled vacant lot in Higashinaruse, Akita, flattened grass radiating outward, cold flat light, oppressive stillness. The eye of the storm. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: クマをほぼ静止させ、呼吸だけの微細な上下動を付ける（2秒）。
 
@@ -704,11 +704,11 @@ Center of a trampled vacant lot in Higashinaruse, Akita, flattened grass radiati
 シーン: CHAR-07の頭がCHAR-02の方向へ勢いよく向く「ロックオン」の瞬間
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours, body coiled, head whipped sharply to one side, ears forward, eyes locked on a new target. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours, body coiled, head whipped sharply to one side, ears forward, eyes locked on a new target. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Tight low view across trampled grass in Higashinaruse, Akita, blades of grass in sharp foreground focus, background compressed and blurred, freezing tension. The instant of target lock. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Tight low view across trampled grass in Higashinaruse, Akita, blades of grass in sharp foreground focus, background compressed and blurred, freezing tension. The instant of target lock. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 首振りを1コマ強調（フレームを一瞬止める）。金属的なSE。
 
@@ -720,11 +720,11 @@ Tight low view across trampled grass in Higashinaruse, Akita, blades of grass in
 シーン: 突進するCHAR-07（スピードの表現・接触直前まで）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, at full gallop on all fours, body stretched long, paws barely touching the ground, motion speed lines behind her. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, at full gallop on all fours, body stretched long, paws barely touching the ground, motion speed lines behind her. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Motion-blurred grass and soil streaking past at ground level in a village lot in Higashinaruse, Akita, violent sense of speed, cold light. No escape. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Motion-blurred grass and soil streaking past at ground level in a village lot in Higashinaruse, Akita, violent sense of speed, cold light. No escape. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 0.5〜1秒の高速スライド→暗転。接触は見せない。
 
@@ -736,11 +736,11 @@ Motion-blurred grass and soil streaking past at ground level in a village lot in
 シーン: 暗転明け。地面に落ちた大工の帽子と工具（人物は映さない・暗示）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours walking slowly away from the viewer, rear three-quarter view, breath steaming. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours walking slowly away from the viewer, rear three-quarter view, breath steaming. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Ground-level close view in a village lot in Higashinaruse, Akita: a fallen work glove and a carpenter's folding ruler on trampled grass, shallow depth of field, cold gray light. Aftermath told by objects. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Ground-level close view in a village lot in Higashinaruse, Akita: a fallen work glove and a carpenter's folding ruler on trampled grass, shallow depth of field, cold gray light. Aftermath told by objects. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 遠ざかるクマと手前の遺留品の対比。静寂を2秒保つ。
 
@@ -752,11 +752,11 @@ Ground-level close view in a village lot in Higashinaruse, Akita: a fallen work 
 シーン: 「1頭 vs 4人」の力の差を、CHAR-07と4人の小さなシルエットの対比で示す
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours in the center, drawn large and imposing. Around her, four small faded gray silhouettes of Japanese adults shown much smaller in scale. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours in the center, drawn large and imposing. Around her, four small faded gray silhouettes of Japanese adults shown much smaller in scale. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A bare minimalist backdrop of a village lot in Higashinaruse, Akita, desaturated almost to monochrome, empty trampled grass, heavy overcast sky. Weight of a single fact. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A bare minimalist backdrop of a village lot in Higashinaruse, Akita, desaturated almost to monochrome, empty trampled grass, heavy overcast sky. Weight of a single fact. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「1頭 vs 大人4人」テロップを中央に大きく表示（3秒）。
 
@@ -768,11 +768,11 @@ A bare minimalist backdrop of a village lot in Higashinaruse, Akita, desaturated
 シーン: 夫婦→佐々木さん→父の順に倒れていく連鎖を、3枚の小さなコマ送りシルエットで見せる
 キャラプロンプト（1:1）:
 ```
-(CHAR-01 再利用)(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three sequential faded vignettes side by side: an elderly Japanese couple in farm clothes falling, then CHAR-01 (38-year-old Japanese man, dark navy fleece jacket) rushing in and falling, then CHAR-02 (65-year-old Japanese carpenter, olive-gray work jacket) rushing in and falling. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-01 再利用)(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three sequential faded vignettes side by side: an elderly Japanese couple in farm clothes falling, then CHAR-01 (38-year-old Japanese man, dark navy fleece jacket) rushing in and falling, then CHAR-02 (65-year-old Japanese carpenter, olive-gray work jacket) rushing in and falling. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A dim abstract gradient of cold gray-blue tones over a faint village lot in Higashinaruse, Akita, vignetted edges, somber and analytical mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A dim abstract gradient of cold gray-blue tones over a faint village lot in Higashinaruse, Akita, vignetted edges, somber and analytical mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 3コマを左から順に点灯→白い連結ラインでつなぎ「負の連鎖」テロップ。各コマ1秒。
 
@@ -784,11 +784,11 @@ A dim abstract gradient of cold gray-blue tones over a faint village lot in Higa
 シーン: 現場の縁で立ち尽くすCHAR-03（母）。広がってしまった被害を前に呆然
 キャラプロンプト（1:1）:
 ```
-(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, gray pants, standing motionless with both hands pressed to her cheeks, devastated hollow expression, small against empty space. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, gray pants, standing motionless with both hands pressed to her cheeks, devastated hollow expression, small against empty space. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-High wide view over a vacant lot in Higashinaruse village, Akita: trampled grass in chaotic patterns, scattered garden tools and a dropped tool bag, a parked car and shed at the edges, cold overcast light. A few violent minutes written on the ground. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+High wide view over a vacant lot in Higashinaruse village, Akita: trampled grass in chaotic patterns, scattered garden tools and a dropped tool bag, a parked car and shed at the edges, cold overcast light. A few violent minutes written on the ground. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 背景をゆっくり近づけながら（4秒で1.0→1.1）「わずか数分」テロップ。
 
@@ -803,11 +803,11 @@ High wide view over a vacant lot in Higashinaruse village, Akita: trampled grass
 シーン: 役場職員・警察官・消防隊員が現場へ駆け込む
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese responders arriving at a run, every person a distinct individual, no two dressed alike: a village office worker in a white shirt and dark blue work vest, a police officer in a dark blue uniform with peaked cap, and a firefighter in an orange rescue uniform with helmet. Urgent expressions. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese responders arriving at a run, every person a distinct individual, no two dressed alike: a village office worker in a white shirt and dark blue work vest, a police officer in a dark blue uniform with peaked cap, and a firefighter in an orange rescue uniform with helmet. Urgent expressions. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A village vacant lot in Higashinaruse, Akita, with a patrol car and a red fire department vehicle newly parked at the edge, doors open, red lights flashing, cold overcast light. Emergency response arriving. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A village vacant lot in Higashinaruse, Akita, with a patrol car and a red fire department vehicle newly parked at the edge, doors open, red lights flashing, cold overcast light. Emergency response arriving. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: サイレンSEを最大に。3人を左から順に走らせる。
 
@@ -819,11 +819,11 @@ A village vacant lot in Higashinaruse, Akita, with a patrol car and a red fire d
 シーン: 駆け寄る救急隊員の背中越しに、遠くの4つの人影（詳細は見せない）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform with medical bag, kneeling down urgently, seen from behind at three-quarter angle. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform with medical bag, kneeling down urgently, seen from behind at three-quarter angle. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Wide view of a vacant lot in Higashinaruse, Akita: four small indistinct shapes on the grass far from the camera, too distant to make out any detail, cold gray light, emergency vehicle lights reflecting faintly on the grass. Grave and restrained. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Wide view of a vacant lot in Higashinaruse, Akita: four small indistinct shapes on the grass far from the camera, too distant to make out any detail, cold gray light, emergency vehicle lights reflecting faintly on the grass. Grave and restrained. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 彩度を落とし、直接的な描写は一切入れない。1〜2秒。
 
@@ -835,11 +835,11 @@ Wide view of a vacant lot in Higashinaruse, Akita: four small indistinct shapes 
 シーン: 職員が山を指差し、その先でCHAR-07が森へ駆け去る
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, galloping away on all fours toward the upper corner of the frame, rear view, powerful strides. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, galloping away on all fours toward the upper corner of the frame, rear view, powerful strides. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-View from a village lot in Higashinaruse, Akita, up toward the forested mountainside rising directly behind the houses, a faint animal trail visible in the grass slope, cold light. The escape route into the mountain. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+View from a village lot in Higashinaruse, Akita, up toward the forested mountainside rising directly behind the houses, a faint animal trail visible in the grass slope, cold light. The escape route into the mountain. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: クマを画面奥の森へ小さくなりながら走らせる（2秒）。「クマは山へ」テロップ。
 
@@ -851,11 +851,11 @@ View from a village lot in Higashinaruse, Akita, up toward the forested mountain
 シーン: 救急隊員たちが手分けして確認に走る
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese paramedics in orange emergency uniforms, every person a distinct individual, no two dressed alike: one carrying a medical bag and kneeling, the other speaking into a radio, both moving fast with focused expressions. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese paramedics in orange emergency uniforms, every person a distinct individual, no two dressed alike: one carrying a medical bag and kneeling, the other speaking into a radio, both moving fast with focused expressions. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Close ground-level view of trampled grass in a village lot in Higashinaruse, Akita, an opened orange medical kit with bandage rolls and gloves laid out, cold urgent light. Triage about to begin. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Close ground-level view of trampled grass in a village lot in Higashinaruse, Akita, an opened orange medical kit with bandage rolls and gloves laid out, cold urgent light. Triage about to begin. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 無線のノイズSE。テンポの速いカット割り。
 
@@ -867,11 +867,11 @@ Close ground-level view of trampled grass in a village lot in Higashinaruse, Aki
 シーン: 救急隊員が識別票を右手首に付ける手元のクローズアップ（解説パート開始）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform carefully attaching a blank paper tag band to the right wrist of another person's extended arm, gentle precise hands, serious expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform carefully attaching a blank paper tag band to the right wrist of another person's extended arm, gentle precise hands, serious expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Soft-focus emergency scene backdrop in Akita, Japan: the side of an ambulance with its rear doors open, folded stretcher, neutral cold tones. Clinical and calm. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Soft-focus emergency scene backdrop in Akita, Japan: the side of an ambulance with its rear doors open, folded stretcher, neutral cold tones. Clinical and calm. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「トリアージ＝識別票を右手首に」テロップ。ナレが52字と長いので、手元アップ→引きの2カットに分けて10秒以内で繋ぐ。
 
@@ -883,11 +883,11 @@ Soft-focus emergency scene backdrop in Akita, Japan: the side of an ambulance wi
 シーン: 救急隊員がトリアージタグを両手で示す。色と順番の解説は編集者がテキストで重ねる
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform holding a blank multi-color paper tag band stretched between both hands, presenting it toward the viewer, calm instructive expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform holding a blank multi-color paper tag band stretched between both hands, presenting it toward the viewer, calm instructive expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Close-up studio-style shot of a blank multi-color emergency triage tag band lying on a stainless tray, green, yellow and red paper sections visible, clinical lighting, shallow depth of field, Japanese emergency medicine setting in Akita. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Close-up studio-style shot of a blank multi-color emergency triage tag band lying on a stainless tray, green, yellow and red paper sections visible, clinical lighting, shallow depth of field, Japanese emergency medicine setting in Akita. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「傷の重さで色分け → 運ぶ順番を決める」テロップを下段に表示。
 
@@ -899,11 +899,11 @@ Close-up studio-style shot of a blank multi-color emergency triage tag band lyin
 シーン: 救急隊員が緑→黄→赤のタグを順に掲げる（色の意味はテロップで）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform holding up three blank color tag bands fanned in one hand — one green, one yellow, one red — presenting them toward the viewer with a serious instructive expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform holding up three blank color tag bands fanned in one hand — one green, one yellow, one red — presenting them toward the viewer with a serious instructive expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Neutral clinical backdrop in Akita, Japan: blurred ambulance interior with medical shelving in soft cold tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Neutral clinical backdrop in Akita, Japan: blurred ambulance interior with medical shelving in soft cold tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「緑＝軽い」「黄＝待てる」「赤＝命が危ない」を1色ずつ順番にテロップ表示（各1.5秒・赤だけ大きく）。
 
@@ -915,11 +915,11 @@ Neutral clinical backdrop in Akita, Japan: blurred ambulance interior with medic
 シーン: 救急隊員が4本の赤タグを見つめて立ち尽くす。衝撃のカット
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform holding four blank red paper tag bands fanned in one hand, looking down at them with a stunned grave expression, other hand clenched. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform holding four blank red paper tag bands fanned in one hand, looking down at them with a stunned grave expression, other hand clenched. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Four blank red emergency triage tag bands laid side by side on a stainless steel tray, harsh clinical light, stark composition, Japanese emergency medicine setting in Akita. Heavy silence. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Four blank red emergency triage tag bands laid side by side on a stainless steel tray, harsh clinical light, stark composition, Japanese emergency medicine setting in Akita. Heavy silence. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「4人全員が『赤』」を赤文字テロップで大きく表示。無音→心拍SE1回。
 
@@ -931,11 +931,11 @@ Four blank red emergency triage tag bands laid side by side on a stainless steel
 シーン: 額の汗を拭う間もなく動き続ける救急隊員
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform speaking urgently into a shoulder radio while checking a watch on his wrist, sweat drops on his face, extreme time pressure. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform speaking urgently into a shoulder radio while checking a watch on his wrist, sweat drops on his face, extreme time pressure. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Blurred emergency scene in a Japanese village in Akita: ambulance lights pulsing against gray sky, motion-blurred edges, cold palette. A race against time. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Blurred emergency scene in a Japanese village in Akita: ambulance lights pulsing against gray sky, motion-blurred edges, cold palette. A race against time. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 時計の針のSEを重ねて焦燥感を出す。
 
@@ -957,11 +957,11 @@ Blurred emergency scene in a Japanese village in Akita: ambulance lights pulsing
 シーン: 救急隊員がヘリへ搬送を誘導する。背景に離陸準備のドクターヘリ
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform and helmet, crouched low and beckoning urgently with one arm while shielding his face from rotor wind with the other. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform and helmet, crouched low and beckoning urgently with one arm while shielding his face from rotor wind with the other. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A white Japanese air-ambulance helicopter with red and blue stripes waiting on a grass field in a mountain village in Akita, rotors blurred in motion, dry autumn grass flattened outward, forested ridges all around, overcast sky. Urgent rescue staging. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A white Japanese air-ambulance helicopter with red and blue stripes waiting on a grass field in a mountain village in Akita, rotors blurred in motion, dry autumn grass flattened outward, forested ridges all around, overcast sky. Urgent rescue staging. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: ローター音SEを強めに。草が煽られる細かい揺れをキーフレームで。「分散搬送」への導入。
 
@@ -972,7 +972,7 @@ A white Japanese air-ambulance helicopter with red and blue stripes waiting on a
 【制作メモ】ASSET-078 [Lovart静止画 + 編集者] 台本L332
 シーン: 地域の空撮ベースに、編集者が「1か所集中 vs 分散」のラインを重ねる
 ```
-High aerial view over a regional Japanese city in Akita at dusk, several large hospital buildings with helipads visible in different districts, streets glowing softly, documentary map-like clarity. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+High aerial view over a regional Japanese city in Akita at dusk, several large hospital buildings with helipads visible in different districts, streets glowing softly, documentary map-like clarity. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 4つの光点を別々の病院へ分かれて移動させるアニメーションを重ね、「分散搬送」テロップを表示。病院名は出さない。
 
@@ -984,11 +984,11 @@ High aerial view over a regional Japanese city in Akita at dusk, several large h
 シーン: 1つの手術室前に処置待ちが集中してしまう「悪い例」のイメージ
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese hospital staff rushing and overwhelmed, every person a distinct individual, no two dressed alike: a surgeon in green scrubs checking a clipboard, a nurse in white pushing an empty gurney, another nurse in pink scrubs carrying an IV bag, all hurried and overloaded. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese hospital staff rushing and overwhelmed, every person a distinct individual, no two dressed alike: a surgeon in green scrubs checking a clipboard, a nurse in white pushing an empty gurney, another nurse in pink scrubs carrying an IV bag, all hurried and overloaded. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A Japanese hospital corridor in Akita at night outside a single operating room: red "in use" lamp glowing above the door, empty gurneys lined against the wall, harsh fluorescent light. Overload and shortage. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A Japanese hospital corridor in Akita at night outside a single operating room: red "in use" lamp glowing above the door, empty gurneys lined against the wall, harsh fluorescent light. Overload and shortage. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「手術室×1」「輸血×不足」「人手×不足」の3項目を順に赤で点灯。
 
@@ -1000,11 +1000,11 @@ A Japanese hospital corridor in Akita at night outside a single operating room: 
 シーン: 病院の案内板の前で考え込む看護師（診療科の多さ）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese nurse in a white uniform standing with one hand on her chin, looking up thoughtfully at something above, holding a clipboard in the other arm. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese nurse in a white uniform standing with one hand on her chin, looking up thoughtfully at something above, holding a clipboard in the other arm. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A Japanese hospital lobby in Akita with a large blank department directory board on the wall, clean floors reflecting ceiling lights, quiet institutional atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A Japanese hospital lobby in Akita with a large blank department directory board on the wall, clean floors reflecting ceiling lights, quiet institutional atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 案内板に「形成外科／脳神経外科／麻酔科…」の項目テキストを編集で追加し、順に光らせる。
 
@@ -1015,7 +1015,7 @@ A Japanese hospital lobby in Akita with a large blank department directory board
 【制作メモ】ASSET-081 [Lovart静止画 + 編集者] 台本L338
 シーン: 顔面の骨格模型のカット（形成外科の領域）
 ```
-A clean medical skull model focusing on the facial bones, displayed on a desk in a Japanese clinic, soft clinical lighting, cheekbones and eye sockets clearly visible, shallow depth of field. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A clean medical skull model focusing on the facial bones, displayed on a desk in a Japanese clinic, soft clinical lighting, cheekbones and eye sockets clearly visible, shallow depth of field. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 「顔の骨折 → 形成外科」テロップ。頬骨部分を淡くハイライト。
 
@@ -1027,11 +1027,11 @@ A clean medical skull model focusing on the facial bones, displayed on a desk in
 シーン: 医師が頭部の画像モニターを確認する
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, middle-aged man with glasses, pointing at something ahead with a pen, focused serious expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, middle-aged man with glasses, pointing at something ahead with a pen, focused serious expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A dim Japanese hospital reading room in Akita: a large wall monitor glowing with a soft blue medical scan image, dark surroundings, quiet high-tech atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A dim Japanese hospital reading room in Akita: a large wall monitor glowing with a soft blue medical scan image, dark surroundings, quiet high-tech atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「頭の中の出血 → 脳神経外科」テロップ。
 
@@ -1043,11 +1043,11 @@ A dim Japanese hospital reading room in Akita: a large wall monitor glowing with
 シーン: 麻酔科医が呼吸用マスクを手に構える（気道確保の領域）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese anesthesiologist in blue surgical scrubs and cap, woman in her 30s, holding an oxygen mask ready in both hands, alert precise expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese anesthesiologist in blue surgical scrubs and cap, woman in her 30s, holding an oxygen mask ready in both hands, alert precise expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A stainless medical tray in a Japanese operating room in Akita with airway management instruments neatly arranged — laryngoscope, breathing tube, oxygen mask — cold clinical lighting, shallow depth of field. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A stainless medical tray in a Japanese operating room in Akita with airway management instruments neatly arranged — laryngoscope, breathing tube, oxygen mask — cold clinical lighting, shallow depth of field. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「気道の確保 → まず麻酔科」テロップ。
 
@@ -1059,11 +1059,11 @@ A stainless medical tray in a Japanese operating room in Akita with airway manag
 シーン: 3人の医師が1台のストレッチャーへ同時に駆け寄る
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese doctors converging at a run toward the same point, every person a distinct individual, no two dressed alike: one in green surgical scrubs, one in a white coat with glasses, one in blue scrubs with a stethoscope. Determined urgent faces. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese doctors converging at a run toward the same point, every person a distinct individual, no two dressed alike: one in green surgical scrubs, one in a white coat with glasses, one in blue scrubs with a stethoscope. Determined urgent faces. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A bright Japanese emergency room bay in Akita: an empty stretcher at the center under a surgical light, monitors on stands around it, cables ready. The moment before a team converges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A bright Japanese emergency room bay in Akita: an empty stretcher at the center under a surgical light, monitors on stands around it, cables ready. The moment before a team converges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「1人の患者 × 複数の科」テロップ。3人を三方向から中央へ寄せる。
 
@@ -1075,11 +1075,11 @@ A bright Japanese emergency room bay in Akita: an empty stretcher at the center 
 シーン: 救急車とヘリが別々の方向へ出発していく
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese firefighter in an orange rescue uniform and helmet, standing and directing traffic with both arms pointing in two different directions, decisive commanding pose. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese firefighter in an orange rescue uniform and helmet, standing and directing traffic with both arms pointing in two different directions, decisive commanding pose. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A rural crossroads in Akita, Japan under an overcast sky: an ambulance heading away down one road and an air-ambulance helicopter small in the sky heading the opposite way, autumn mountains behind. Paths dividing to save lives. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A rural crossroads in Akita, Japan under an overcast sky: an ambulance heading away down one road and an air-ambulance helicopter small in the sky heading the opposite way, autumn mountains behind. Paths dividing to save lives. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「4人 → 別々の病院へ」テロップ。左右へ分かれる動きを強調。
 
@@ -1095,11 +1095,11 @@ A rural crossroads in Akita, Japan under an overcast sky: an ambulance heading a
 シーン: 夜の病院廊下で医師がカルテを見比べ、ふと手を止める。分析パートへの転換
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, man in his 40s, holding two open folders side by side, eyes narrowing as he notices something, thoughtful arrested motion. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, man in his 40s, holding two open folders side by side, eyes narrowing as he notices something, thoughtful arrested motion. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A long quiet Japanese hospital corridor in Akita at night, cool fluorescent light, polished floor reflections, an empty bench along the wall. A pause for a question. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A long quiet Japanese hospital corridor in Akita at night, cool fluorescent light, polished floor reflections, an empty bench along the wall. A pause for a question. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「共通点」テロップを静かに表示。背景はゆっくり近づく（4秒で1.0→1.08）。
 
@@ -1111,11 +1111,11 @@ A long quiet Japanese hospital corridor in Akita at night, cool fluorescent ligh
 シーン: 医師が自分の顔と頭を手で指し示して説明する
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, woman in her 40s with hair tied back, pointing with one hand to her own face and the other hand to the top of her head, calm explanatory expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, woman in her 40s with hair tied back, pointing with one hand to her own face and the other hand to the top of her head, calm explanatory expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A neutral Japanese medical lecture room in Akita: plain light wall, a desk edge with a folder, soft even lighting. Clear explanation space. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A neutral Japanese medical lecture room in Akita: plain light wall, a desk edge with a folder, soft even lighting. Clear explanation space. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「全員が顔と頭」テロップ。「偶然ではありません」で一拍置く。
 
@@ -1127,11 +1127,11 @@ A neutral Japanese medical lecture room in Akita: plain light wall, a desk edge 
 シーン: 研究者が分厚い資料をめくる手元
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese medical researcher in a white coat, man in his 30s, seated posture turning pages of a thick document file with careful fingers, studious expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese medical researcher in a white coat, man in his 30s, seated posture turning pages of a thick document file with careful fingers, studious expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A Japanese university research office in Akita: a desk with stacked papers and a lamp, bookshelves with medical journals softly blurred behind, warm desk light against cool room. Scholarly atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A Japanese university research office in Akita: a desk with stacked papers and a lamp, bookshelves with medical journals softly blurred behind, warm desk light against cool room. Scholarly atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「2023年・秋田大学病院・20人の記録」テロップ。ページをめくるSE。
 
@@ -1142,7 +1142,7 @@ A Japanese university research office in Akita: a desk with stacked papers and a
 【制作メモ】ASSET-089 [Lovart静止画 + 編集者] 台本L357
 シーン: 無地の医療背景に「90%」を編集者が大きく重ねるためのベース
 ```
-A minimalist clinical backdrop in Akita, Japan: soft gradient of pale blue-gray light across a clean wall, a faint silhouette of a medical skull model at the lower corner, calm and serious tone, large empty area in the frame. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A minimalist clinical backdrop in Akita, Japan: soft gradient of pale blue-gray light across a clean wall, a faint silhouette of a medical skull model at the lower corner, calm and serious tone, large empty area in the frame. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 「顔面の損傷 90%」を画面中央に大きく表示（カウントアップ演出0→90）。
 
@@ -1154,11 +1154,11 @@ A minimalist clinical backdrop in Akita, Japan: soft gradient of pale blue-gray 
 シーン: 医師が頬骨のあたりを模型で指し示す
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, woman in her 40s with hair tied back, holding a small skull model in one hand and pointing at its cheekbone with a pen, precise explanatory gesture. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, woman in her 40s with hair tied back, holding a small skull model in one hand and pointing at its cheekbone with a pen, precise explanatory gesture. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A neutral Japanese medical lecture room in Akita, plain light wall with soft even lighting, desk edge visible. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A neutral Japanese medical lecture room in Akita, plain light wall with soft even lighting, desk edge visible. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「顔の骨折 9例」テロップ。
 
@@ -1169,7 +1169,7 @@ A neutral Japanese medical lecture room in Akita, plain light wall with soft eve
 【制作メモ】ASSET-091 [Lovart静止画 + 編集者] 台本L361
 シーン: 眼の解剖模型の静かなカット（生々しい描写はしない）
 ```
-A clean anatomical eye model on a desk in a Japanese medical office in Akita, soft clinical lighting, shallow depth of field, calm restrained tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A clean anatomical eye model on a desk in a Japanese medical office in Akita, soft clinical lighting, shallow depth of field, calm restrained tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 「眼球破裂・視力喪失 3例」テロップ。ゆっくり近づく（3秒で1.0→1.08）。
 
@@ -1181,11 +1181,11 @@ A clean anatomical eye model on a desk in a Japanese medical office in Akita, so
 シーン: 医師が頭部モデルの上部を指す
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, man in his 50s with graying hair, holding a skull model with both hands and tilting it to show the top of the head, grave careful expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, man in his 50s with graying hair, holding a skull model with both hands and tilting it to show the top of the head, grave careful expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A dim Japanese medical office in Akita with a desk lamp pool of light on a wooden desk, papers at the edge, quiet heavy mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A dim Japanese medical office in Akita with a desk lamp pool of light on a wooden desk, papers at the edge, quiet heavy mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「頭蓋骨骨折＋頭の中の出血 1例」テロップ。
 
@@ -1196,7 +1196,7 @@ A dim Japanese medical office in Akita with a desk lamp pool of light on a woode
 【制作メモ】ASSET-093 [Lovart静止画 + 編集者] 台本L365
 シーン: 頭蓋骨模型の正面アップ。骨の薄さを光の透けで見せる
 ```
-Front view close-up of a medical skull model in a Japanese clinic in Akita, backlit softly so the thin facial bone areas around the eye sockets and nose glow brightly with transmitted light, deep gray background, NOT pure black, high-contrast highlights on the bone. The fragility of the human face. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Front view close-up of a medical skull model in a Japanese clinic in Akita, backlit softly so the thin facial bone areas around the eye sockets and nose glow brightly with transmitted light, deep gray background, NOT pure black, high-contrast highlights on the bone. The fragility of the human face. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 「顔の正面の骨＝薄い」テロップ。目・鼻周辺を淡くハイライト。
 
@@ -1208,11 +1208,11 @@ Front view close-up of a medical skull model in a Japanese clinic in Akita, back
 シーン: 医師が自分の目のまわり→頬→鼻を順に指でなぞる
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, woman in her 40s with hair tied back, touching her own eye area, then cheek, then nose with her index finger in sequence, instructive calm expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, woman in her 40s with hair tied back, touching her own eye area, then cheek, then nose with her index finger in sequence, instructive calm expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A neutral Japanese medical lecture room in Akita, plain light wall, soft even lighting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A neutral Japanese medical lecture room in Akita, plain light wall, soft even lighting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 指の動きに合わせて「目→頬→鼻」の小テロップを順に点灯。
 
@@ -1224,11 +1224,11 @@ A neutral Japanese medical lecture room in Akita, plain light wall, soft even li
 シーン: CHAR-07の前足の一撃をスローモーションで（対象は映さない）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours mid-swing, one heavy front paw sweeping across with claws spread, muscles bunched, immense force. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours mid-swing, one heavy front paw sweeping across with claws spread, muscles bunched, immense force. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Abstract dark backdrop with slow-drifting dust particles catching a single cold shaft of light, high contrast, cinematic emptiness, Akita documentary tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Abstract dark backdrop with slow-drifting dust particles catching a single cold shaft of light, high contrast, cinematic emptiness, Akita documentary tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「体重80kgの一撃」テロップ。前足のスイングをスロー再生風に。
 
@@ -1240,11 +1240,11 @@ Abstract dark backdrop with slow-drifting dust particles catching a single cold 
 シーン: 正面から迫るCHAR-07が前足を振り上げる（四足のまま）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, charging head-on toward the viewer on all fours, one front paw lifted high mid-stride ready to strike, mouth open. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, charging head-on toward the viewer on all fours, one front paw lifted high mid-stride ready to strike, mouth open. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Low frontal view down a narrow grass path in Higashinaruse, Akita, the ground rushing toward the camera in shallow focus, cold gray light, threatening immediacy. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Low frontal view down a narrow grass path in Higashinaruse, Akita, the ground rushing toward the camera in shallow focus, cold gray light, threatening immediacy. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 正面からのズームイン（1.5秒）＋前足を振り上げるキーフレーム。
 
@@ -1256,11 +1256,11 @@ Low frontal view down a narrow grass path in Higashinaruse, Akita, the ground ru
 シーン: CHAR-07が木の幹に前足を掛けて体を高く伸ばし、隣の人型シルエットの頭の高さに前足が届くことを示す
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, front paws braced high on a bare tree trunk, body stretched tall upward, hind paws on the ground. Beside the tree, a plain gray outline silhouette of an adult Japanese man for height comparison, the bear's front paw level with the silhouette's head. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, front paws braced high on a bare tree trunk, body stretched tall upward, hind paws on the ground. Beside the tree, a plain gray outline silhouette of an adult Japanese man for height comparison, the bear's front paw level with the silhouette's head. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A sparse forest clearing in Higashinaruse, Akita with one bare-trunked tree at center, fallen leaves, flat neutral light, plain composition built for a height comparison. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A sparse forest clearing in Higashinaruse, Akita with one bare-trunked tree at center, fallen leaves, flat neutral light, plain composition built for a height comparison. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: クマの前足とシルエットの頭を結ぶ水平ラインを白線で表示し「ちょうど頭の高さ」テロップ。
 
@@ -1272,11 +1272,11 @@ A sparse forest clearing in Higashinaruse, Akita with one bare-trunked tree at c
 シーン: CHAR-07の前足と爪のクローズアップ
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours with one front paw raised and turned toward the viewer, five long curved claws clearly spread and prominent. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours with one front paw raised and turned toward the viewer, five long curved claws clearly spread and prominent. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Extreme close-up of deep claw gouges scarring the bark of a beech tree in an Akita forest, four parallel grooves cut into the wood, cold light raking across the texture. Physical evidence of power. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Extreme close-up of deep claw gouges scarring the bark of a beech tree in an Akita forest, four parallel grooves cut into the wood, cold light raking across the texture. Physical evidence of power. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 爪の横に「約4cm」の寸法テロップ（実測線つき）。爪痕の背景に切り替えて実在感を出す。
 
@@ -1288,11 +1288,11 @@ Extreme close-up of deep claw gouges scarring the bark of a beech tree in an Aki
 シーン: 前足の一閃と舞い散る木の葉（人体は描かず威力だけを示す）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours completing a violent paw swipe, dry leaves and small twigs bursting into the air around the claws. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours completing a violent paw swipe, dry leaves and small twigs bursting into the air around the claws. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A burst of dry autumn leaves frozen mid-air against a dark forest backdrop in Akita, sharp shallow focus on the swirling fragments, high shutter-speed look. The force of a single blow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A burst of dry autumn leaves frozen mid-air against a dark forest backdrop in Akita, sharp shallow focus on the swirling fragments, high shutter-speed look. The force of a single blow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 一閃のSE（風切り音）→葉が舞う静止で1秒止める。「目・鼻・あご」の小テロップ。
 
@@ -1307,11 +1307,11 @@ A burst of dry autumn leaves frozen mid-air against a dark forest backdrop in Ak
 シーン: 猟銃を背負ったハンターたちが現場に到着する
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese hunters arriving with rifles slung over their shoulders, every person a distinct individual, no two dressed alike: one in a dark green hunting jacket and cap, one in a brown field vest and knit hat. Alert wary expressions. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese hunters arriving with rifles slung over their shoulders, every person a distinct individual, no two dressed alike: one in a dark green hunting jacket and cap, one in a brown field vest and knit hat. Alert wary expressions. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A village vacant lot in Higashinaruse, Akita in early afternoon: emergency vehicles gone, trampled grass, cold gray light, the forested hillside looming behind the houses. The hunt begins. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A village vacant lot in Higashinaruse, Akita in early afternoon: emergency vehicles gone, trampled grass, cold gray light, the forested hillside looming behind the houses. The hunt begins. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「東成瀬村猟友会」テロップ。足音と装備の金属音SE。
 
@@ -1323,11 +1323,11 @@ A village vacant lot in Higashinaruse, Akita in early afternoon: emergency vehic
 シーン: CHAR-06（ベテランハンター）の人物紹介
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest over checkered shirt, blaze-orange cap, rifle slung over shoulder, standing steady with quiet dignified confidence, weathered face. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest over checkered shirt, blaze-orange cap, rifle slung over shoulder, standing steady with quiet dignified confidence, weathered face. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A quiet lane in Higashinaruse village, Akita in the afternoon, houses and utility poles, the mountain rising close behind, muted autumn palette. A veteran's homeground. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A quiet lane in Higashinaruse village, Akita in the afternoon, houses and utility poles, the mountain rising close behind, muted autumn palette. A veteran's homeground. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「猟歴50年超・76歳」テロップ。
 
@@ -1339,11 +1339,11 @@ A quiet lane in Higashinaruse village, Akita in the afternoon, houses and utilit
 シーン: CHAR-06が双眼の構えで斜面を見上げ、視線が止まる
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, one hand shading his eyes, scanning upward, then eyes locking onto something, body going still. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, one hand shading his eyes, scanning upward, then eyes locking onto something, body going still. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Looking up from a village lane in Higashinaruse, Akita toward a small grassy hilltop above the houses, scattered trees on the slope, flat gray light. Something is up there. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Looking up from a village lane in Higashinaruse, Akita toward a small grassy hilltop above the houses, scattered trees on the slope, flat gray light. Something is up there. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 発見の瞬間にSEを一発。視線の先はまだ見せない。
 
@@ -1355,11 +1355,11 @@ Looking up from a village lane in Higashinaruse, Akita toward a small grassy hil
 シーン: CHAR-06が目を見開き、信じられないという表情
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, eyes wide in genuine disbelief, mouth slightly open, gripping his rifle strap. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, eyes wide in genuine disbelief, mouth slightly open, gripping his rifle strap. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Soft-focus view of a grassy hilltop above village houses in Higashinaruse, Akita, muted colors, uneasy stillness in the air. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Soft-focus view of a grassy hilltop above village houses in Higashinaruse, Akita, muted colors, uneasy stillness in the air. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「50年の経験でも、考えられない光景」の前フリとして1.5秒。
 
@@ -1371,11 +1371,11 @@ Soft-focus view of a grassy hilltop above village houses in Higashinaruse, Akita
 シーン: 現場からわずかに離れた高台にとどまるCHAR-07
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, sitting back on her haunches with front paws planted on the ground, completely calm and unmoving. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, sitting back on her haunches with front paws planted on the ground, completely calm and unmoving. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A small grassy hilltop rising just above village rooftops in Higashinaruse, Akita, dry autumn grass, a few bare trees, the vacant lot visible small below. Unnervingly close. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A small grassy hilltop rising just above village rooftops in Higashinaruse, Akita, dry autumn grass, a few bare trees, the vacant lot visible small below. Unnervingly close. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「現場からほとんど逃げていない」テロップ。現場と高台の位置関係を白ラインで一瞬示す。
 
@@ -1386,7 +1386,7 @@ A small grassy hilltop rising just above village rooftops in Higashinaruse, Akit
 【制作メモ】ASSET-105 [Lovart静止画] 台本L392
 シーン: 高台を見上げるロー・アングルの空舞台
 ```
-Low-angle view from a village lane in Higashinaruse, Akita up a steep grassy embankment to a small hilltop crowned with dry grass and two bare trees, cold overcast sky behind. A natural watchtower over the village. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Low-angle view from a village lane in Higashinaruse, Akita up a steep grassy embankment to a small hilltop crowned with dry grass and two bare trees, cold overcast sky behind. A natural watchtower over the village. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 上から下にゆっくり動かす（4秒）。「現場近くの高台」テロップ。
 
@@ -1397,7 +1397,7 @@ Low-angle view from a village lane in Higashinaruse, Akita up a steep grassy emb
 【制作メモ】ASSET-106 [Lovart動画] 台本L394 ★AI動画（対峙の画）
 シーン: 高台に座り込んだクマが、下のハンターたちをじっと見下ろしている異様な光景
 ```
-An adult Asian black bear with a white chest crescent sitting back on its haunches on a grassy hilltop in a Japanese mountain village in Akita, front paws planted, utterly still, gazing down toward the village below, cold gray sky, dry grass moving in the wind around it. Unnatural composure, deeply unsettling. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+An adult Asian black bear with a white chest crescent sitting back on its haunches on a grassy hilltop in a Japanese mountain village in Akita, front paws planted, utterly still, gazing down toward the village below, cold gray sky, dry grass moving in the wind around it. Unnatural composure, deeply unsettling. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -1415,7 +1415,7 @@ Slow low push-in from below toward an adult Asian black bear, glossy black fur w
 【実写】検索キーワード: `ABS 東成瀬村 ハンター証言 考えられない状態`
 【実写】フォールバック（入手できない場合のLovart用）:
 ```
-A 76-year-old Japanese hunter in an olive-brown hunting vest and orange cap being interviewed outdoors in a rural village in Akita, gesturing up toward a hillside as he speaks, overcast day, news interview framing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A 76-year-old Japanese hunter in an olive-brown hunting vest and orange cap being interviewed outdoors in a rural village in Akita, gesturing up toward a hillside as he speaks, overcast day, news interview framing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 証言全文を字幕表示。実写使用は数秒以内の引用に留める（/revenue-guard対象）。
 
@@ -1427,11 +1427,11 @@ A 76-year-old Japanese hunter in an olive-brown hunting vest and orange cap bein
 シーン: 斜面を登っていくハンターたちの隊列（クマ視点の遠景）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese hunters climbing a slope in single file, every person a distinct individual, no two dressed alike: one in dark green jacket with rifle, one in brown vest with rifle, one in gray field coat with rifle. Cautious low postures. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese hunters climbing a slope in single file, every person a distinct individual, no two dressed alike: one in dark green jacket with rifle, one in brown vest with rifle, one in gray field coat with rifle. Cautious low postures. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Looking down a grassy embankment from a hilltop in Higashinaruse, Akita toward village rooftops below, dry grass in the foreground swaying, cold light. Seen from above. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Looking down a grassy embankment from a hilltop in Higashinaruse, Akita toward village rooftops below, dry grass in the foreground swaying, cold light. Seen from above. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: クマ視点であることが分かるよう画面上端に黒いぼかしを薄く入れる。
 
@@ -1443,11 +1443,11 @@ Looking down a grassy embankment from a hilltop in Higashinaruse, Akita toward v
 シーン: 「本来のクマ」の行動（色抜きの想像カット）。一目散に逃げる
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, bolting away on all fours at full speed, ears back, body low, fleeing in panic. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, bolting away on all fours at full speed, ears back, body low, fleeing in panic. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A faded desaturated view of deep forest in Akita, Japan, trees receding into mist, dreamlike washed-out tones marking an imagined scene. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A faded desaturated view of deep forest in Akita, Japan, trees receding into mist, dreamlike washed-out tones marking an imagined scene. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 全体を白っぽく色調補正（想像カットの記号）。「本来なら → 逃げる」テロップ。
 
@@ -1459,11 +1459,11 @@ A faded desaturated view of deep forest in Akita, Japan, trees receding into mis
 シーン: 微動だにしないCHAR-07（現実カット・色を戻す）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, sitting perfectly still on her haunches, front paws planted, eyes half-lidded and calm, statue-like. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, sitting perfectly still on her haunches, front paws planted, eyes half-lidded and calm, statue-like. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A grassy hilltop in Higashinaruse, Akita under a heavy gray sky, wind bending the dry grass while everything else holds still, cold saturated realism. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A grassy hilltop in Higashinaruse, Akita under a heavy gray sky, wind bending the dry grass while everything else holds still, cold saturated realism. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「しかし」で彩度を現実に戻す。草だけが揺れ、クマは完全静止。
 
@@ -1474,7 +1474,7 @@ A grassy hilltop in Higashinaruse, Akita under a heavy gray sky, wind bending th
 【制作メモ】ASSET-111 [Lovart静止画] 台本L404
 シーン: 重い曇天と山影。言葉が足りない不気味さの間
 ```
-A heavy leaden sky pressing down over dark forested ridges in Higashinaruse, Akita, one thin band of pale light on the horizon, oppressive stillness. Beyond words. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A heavy leaden sky pressing down over dark forested ridges in Higashinaruse, Akita, one thin band of pale light on the horizon, oppressive stillness. Beyond words. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: ゆっくり近づく（3秒で1.0→1.06）。低音ドローンのみ。
 
@@ -1486,11 +1486,11 @@ A heavy leaden sky pressing down over dark forested ridges in Higashinaruse, Aki
 シーン: CHAR-07の目のクローズアップ的立ち姿。恐れが一切ない目
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours facing the viewer straight on, head level, gaze utterly devoid of fear, calm and dominant. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours facing the viewer straight on, head level, gaze utterly devoid of fear, calm and dominant. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Tight shallow-focus view of dry grass stems on a hilltop in Higashinaruse, Akita, gray light, everything else dissolved into soft blur. Nowhere to look but the eyes. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Tight shallow-focus view of dry grass stems on a hilltop in Higashinaruse, Akita, gray light, everything else dissolved into soft blur. Nowhere to look but the eyes. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 目元へゆっくり寄る（3秒）。「人間＝逃げる相手ではない」テロップ。
 
@@ -1504,7 +1504,7 @@ Tight shallow-focus view of dry grass stems on a hilltop in Higashinaruse, Akita
 【実写】検索キーワード: `ABS 東成瀬村 ハンター 考えられない行動 クマ`
 【実写】フォールバック（入手できない場合のLovart用）:
 ```
-A 76-year-old Japanese hunter in an olive-brown hunting vest and orange cap speaking directly to an interviewer in a rural village in Akita, earnest warning expression, overcast day, news interview framing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A 76-year-old Japanese hunter in an olive-brown hunting vest and orange cap speaking directly to an interviewer in a rural village in Akita, earnest warning expression, overcast day, news interview framing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 発言を字幕表示。（/revenue-guard対象）
 
@@ -1520,11 +1520,11 @@ A 76-year-old Japanese hunter in an olive-brown hunting vest and orange cap spea
 シーン: 横一列に並んだハンターたちが高台へ銃を構える
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, shouldering his rifle and aiming upward at an angle, cheek to the stock, breath held. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, shouldering his rifle and aiming upward at an angle, cheek to the stock, breath held. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-View up a grassy embankment in Higashinaruse, Akita toward the hilltop, rooftops at the frame edges, cold flat light, absolute stillness before a decision. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+View up a grassy embankment in Higashinaruse, Akita toward the hilltop, rooftops at the frame edges, cold flat light, absolute stillness before a decision. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 構える動きの後、完全静止（2秒）。呼吸音のみ。
 
@@ -1536,11 +1536,11 @@ View up a grassy embankment in Higashinaruse, Akita toward the hilltop, rooftops
 シーン: 引き金にかかった指が止まっている
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, aiming rifle, finger resting outside the trigger guard, jaw tight, a bead of sweat, frozen in restraint. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, aiming rifle, finger resting outside the trigger guard, jaw tight, a bead of sweat, frozen in restraint. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Extreme shallow-focus view of dry grass and the blurred hilltop beyond in Higashinaruse, Akita, cold light, time suspended. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Extreme shallow-focus view of dry grass and the blurred hilltop beyond in Higashinaruse, Akita, cold light, time suspended. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「誰も、撃てない」テロップ。無音1秒。
 
@@ -1552,11 +1552,11 @@ Extreme shallow-focus view of dry grass and the blurred hilltop beyond in Higash
 シーン: 構えたまま動けないハンターの横顔。ここから「事情」の解説へ入る
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, holding his aim in profile view, utterly motionless, conflicted eyes. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, holding his aim in profile view, utterly motionless, conflicted eyes. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A close side view of a hunting rifle barrel held steady against a heavy gray sky in Akita, Japan, cold metallic texture, muted tones, large calm negative space above. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A close side view of a hunting rifle barrel held steady against a heavy gray sky in Akita, Japan, cold metallic texture, muted tones, large calm negative space above. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「引き金を引けない事情」テロップを中央に表示。以降の理由を順に追加していく起点画面。
 
@@ -1568,11 +1568,11 @@ A close side view of a hunting rifle barrel held steady against a heavy gray sky
 シーン: 構えたままのCHAR-06の視線が、クマの奥の集落へ泳ぐ
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, still aiming but eyes shifted sideways with worry, weight rocking back slightly. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, still aiming but eyes shifted sideways with worry, weight rocking back slightly. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-From behind a hilltop in Higashinaruse, Akita looking past dry grass down to village rooftops directly beyond, houses uncomfortably close in the line of sight, cold light. What lies behind the target. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+From behind a hilltop in Higashinaruse, Akita looking past dry grass down to village rooftops directly beyond, houses uncomfortably close in the line of sight, cold light. What lies behind the target. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「①弾の行き先」テロップ。視線の先の家並みへピント送り。
 
@@ -1583,7 +1583,7 @@ From behind a hilltop in Higashinaruse, Akita looking past dry grass down to vil
 【制作メモ】ASSET-118 [Lovart静止画 + 編集者] 台本L421
 シーン: 高台と集落を一望する引きの画に、350mの距離ラインを編集者が重ねる
 ```
-Wide elevated view in Higashinaruse, Akita: a grassy hilltop in the foreground and the cluster of village houses spread just beyond it, a single road threading between, cold overcast light, clear depth between the two points. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Wide elevated view in Higashinaruse, Akita: a grassy hilltop in the foreground and the cluster of village houses spread just beyond it, a single road threading between, cold overcast light, clear depth between the two points. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 高台→集落へ白い距離ラインを引き「わずか350m」を大きく表示。
 
@@ -1595,11 +1595,11 @@ Wide elevated view in Higashinaruse, Akita: a grassy hilltop in the foreground a
 シーン: 岩の露頭と地面、そしてその先の住宅を見比べるCHAR-06の不安
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, lowering his rifle slightly, looking from the ground ahead to the distance with a deeply troubled expression, free hand open in hesitation. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, lowering his rifle slightly, looking from the ground ahead to the distance with a deeply troubled expression, free hand open in hesitation. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A rocky outcrop and hard-packed ground on a hillside in Higashinaruse, Akita, with village rooftops visible in soft focus beyond, cold light glinting off stone. Hard surfaces in a dangerous line. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A rocky outcrop and hard-packed ground on a hillside in Higashinaruse, Akita, with village rooftops visible in soft focus beyond, cold light glinting off stone. Hard surfaces in a dangerous line. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 岩→住宅の順に視線誘導のハイライトを移動させる（跳弾の矢印は描かない）。
 
@@ -1611,11 +1611,11 @@ A rocky outcrop and hard-packed ground on a hillside in Higashinaruse, Akita, wi
 シーン: 現場周辺に人が増えていく（多人数の書き分け）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Four Japanese people gathered and looking upward with concern, every person a distinct individual, no two dressed alike: a police officer in dark blue uniform, a firefighter in orange gear, a village office worker in a white shirt and blue vest, and an elderly female resident in a beige coat. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Four Japanese people gathered and looking upward with concern, every person a distinct individual, no two dressed alike: a police officer in dark blue uniform, a firefighter in orange gear, a village office worker in a white shirt and blue vest, and an elderly female resident in a beige coat. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A village road below a grassy hilltop in Higashinaruse, Akita with a patrol car and fire vehicle parked at angles, cones set out, cold afternoon light. Too many bystanders in a dangerous place. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A village road below a grassy hilltop in Higashinaruse, Akita with a patrol car and fire vehicle parked at angles, cones set out, cold afternoon light. Too many bystanders in a dangerous place. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「警察・消防・村職員・住民」の4語テロップを順に点灯。
 
@@ -1627,11 +1627,11 @@ A village road below a grassy hilltop in Higashinaruse, Akita with a patrol car 
 シーン: 銃を下ろすCHAR-06。撃てない重さ
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, lowering the rifle to a safe angle across his chest, exhaling, eyes still fixed upward, frustration and discipline in his face. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, lowering the rifle to a safe angle across his chest, exhaling, eyes still fixed upward, frustration and discipline in his face. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The base of a grassy hilltop in Higashinaruse, Akita, dry grass swaying, rooftops at the frame edge, heavy cold light. Restraint under pressure. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The base of a grassy hilltop in Higashinaruse, Akita, dry grass swaying, rooftops at the frame edge, heavy cold light. Restraint under pressure. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 銃をゆっくり下ろすキーフレーム。ため息のSE。
 
@@ -1642,7 +1642,7 @@ The base of a grassy hilltop in Higashinaruse, Akita, dry grass swaying, rooftop
 【制作メモ】ASSET-122 [Lovart静止画 + 編集者] 台本L429
 シーン: ②人数の見出しベース。並んだ長靴と装備の静物
 ```
-A row of rubber boots and slung hunting gear resting against a village wall in Higashinaruse, Akita, only three sets where more are needed, cold flat light, quiet understatement. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A row of rubber boots and slung hunting gear resting against a village wall in Higashinaruse, Akita, only three sets where more are needed, cold flat light, quiet understatement. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 「②人数」テロップを表示。ゆっくり左から右に動かす（3秒）。
 
@@ -1654,11 +1654,11 @@ A row of rubber boots and slung hunting gear resting against a village wall in H
 シーン: CHAR-06が指を1本立てて説明を始める
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, holding up one index finger in an explanatory gesture, calm teaching expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, holding up one index finger in an explanatory gesture, calm teaching expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A neutral rural backdrop in Higashinaruse, Akita: a wooden wall of a village storehouse with soft even light, muted tones. Explanation space. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A neutral rural backdrop in Higashinaruse, Akita: a wooden wall of a village storehouse with soft even light, muted tones. Explanation space. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「駆除の独自ルール」テロップ。
 
@@ -1670,11 +1670,11 @@ A neutral rural backdrop in Higashinaruse, Akita: a wooden wall of a village sto
 シーン: 山中を単独で歩くハンター（通常の狩猟のイメージ）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A lone Japanese hunter in a dark green hunting jacket and knit hat, rifle slung, walking through deep forest with a steady stride, self-reliant calm expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A lone Japanese hunter in a dark green hunting jacket and knit hat, rifle slung, walking through deep forest with a steady stride, self-reliant calm expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Deep beech forest in the Akita mountains, tall trunks and fallen leaves, mist between the trees, soft diffuse light. The solitary hunt. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Deep beech forest in the Akita mountains, tall trunks and fallen leaves, mist between the trees, soft diffuse light. The solitary hunt. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「山の狩猟＝1人でも可」テロップ。
 
@@ -1686,11 +1686,11 @@ Deep beech forest in the Akita mountains, tall trunks and fallen leaves, mist be
 シーン: 5人のハンターが横一列に並ぶ（人数要件の可視化）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Five Japanese hunters standing in a row, every person a distinct individual, no two dressed alike: dark green jacket, brown vest, gray coat, navy jacket, olive parka — all with rifles slung, serious expressions. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Five Japanese hunters standing in a row, every person a distinct individual, no two dressed alike: dark green jacket, brown vest, gray coat, navy jacket, olive parka — all with rifles slung, serious expressions. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A village road in Higashinaruse, Akita in front of a community hall, cones and a parked kei truck, cold afternoon light. Assembly point. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A village road in Higashinaruse, Akita in front of a community hall, cones and a parked kei truck, cold afternoon light. Assembly point. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 5人の上に「①②③④⑤」ではなく人数カウント「5人以上」テロップ（丸囲み数字は使わない）。1人ずつ点灯。
 
@@ -1701,7 +1701,7 @@ A village road in Higashinaruse, Akita in front of a community hall, cones and a
 【制作メモ】ASSET-126 [Lovart静止画 + 編集者] 台本L437
 シーン: 集会所の壁の名簿ボード風ベース（文字は編集者）
 ```
-An old wooden notice board on the wall of a Japanese village community hall in Higashinaruse, Akita, blank name card slots in a grid, warm indoor light, well-worn edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+An old wooden notice board on the wall of a Japanese village community hall in Higashinaruse, Akita, blank name card slots in a grid, warm indoor light, well-worn edges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: ボード上に「猟友会 18人」を大きく表示。18個の枠だけ淡く点灯させる。
 
@@ -1713,11 +1713,11 @@ An old wooden notice board on the wall of a Japanese village community hall in H
 シーン: 大工・農家・会社員の3人が仕事着からハンターの装備を手に取る
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese men each holding hunting gear over their work clothes, every person a distinct individual, no two dressed alike: a carpenter in a tool-belt apron, a farmer in a straw hat and overalls, an office worker in a shirt and tie — each picking up an orange hunter cap. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese men each holding hunting gear over their work clothes, every person a distinct individual, no two dressed alike: a carpenter in a tool-belt apron, a farmer in a straw hat and overalls, an office worker in a shirt and tie — each picking up an orange hunter cap. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A modest Japanese community hall interior in Higashinaruse, Akita: folding tables, a wall clock, hunting vests hung on hooks by the door, warm plain light. Volunteers' room. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A modest Japanese community hall interior in Higashinaruse, Akita: folding tables, a wall clock, hunting vests hung on hooks by the door, warm plain light. Volunteers' room. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「全員に本業／ほぼボランティア」テロップ。
 
@@ -1729,11 +1729,11 @@ A modest Japanese community hall interior in Higashinaruse, Akita: folding table
 シーン: 作業現場で働く男性が携帯を見る（招集がかかった瞬間）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese carpenter in a tool-belt apron and helmet on a work site, pulling a phone from his pocket and staring at the screen in alarm, sawdust on his sleeves. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese carpenter in a tool-belt apron and helmet on a work site, pulling a phone from his pocket and staring at the screen in alarm, sawdust on his sleeves. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A small construction site in rural Akita, Japan: timber framing of a house under a gray sky, sawhorses and tools, mid-morning working light. Interrupted workday. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A small construction site in rural Akita, Japan: timber framing of a house under a gray sky, sawhorses and tools, mid-morning working light. Interrupted workday. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「平日・午前中」テロップ。着信バイブSE。
 
@@ -1745,11 +1745,11 @@ A small construction site in rural Akita, Japan: timber framing of a house under
 シーン: 集合場所に2人しか集まっていない
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese hunters waiting anxiously and checking watches, every person a distinct individual, no two dressed alike: one in a dark green jacket, one in a brown vest, both glancing down an empty road. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese hunters waiting anxiously and checking watches, every person a distinct individual, no two dressed alike: one in a dark green jacket, one in a brown vest, both glancing down an empty road. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-An empty village road stretching away from a community hall in Higashinaruse, Akita, no one coming, cold light, a waiting kei truck. The gap between need and numbers. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+An empty village road stretching away from a community hall in Higashinaruse, Akita, no one coming, cold light, a waiting kei truck. The gap between need and numbers. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「集まったのは…」→人数カウンタが2で止まる演出。
 
@@ -1760,7 +1760,7 @@ An empty village road stretching away from a community hall in Higashinaruse, Ak
 【制作メモ】ASSET-130 [Lovart静止画 + 編集者] 台本L445
 シーン: ③手続きの見出しベース。印鑑と書類の静物
 ```
-A wooden desk in a Japanese village office in Higashinaruse, Akita: a stack of blank application papers, a name seal and red ink pad, a rotary phone at the edge, fluorescent light. The weight of procedure. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A wooden desk in a Japanese village office in Higashinaruse, Akita: a stack of blank application papers, a name seal and red ink pad, a rotary phone at the edge, fluorescent light. The weight of procedure. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 「③手続き」テロップ。ゆっくり近づく（3秒で1.0→1.08）。
 
@@ -1772,11 +1772,11 @@ A wooden desk in a Japanese village office in Higashinaruse, Akita: a stack of b
 シーン: CHAR-06が語り始める構え
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, arms folded, beginning to speak with a measured serious expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, arms folded, beginning to speak with a measured serious expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A quiet corner of a village community hall in Higashinaruse, Akita, wooden wall and a window with pale daylight, plain and honest setting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A quiet corner of a village community hall in Higashinaruse, Akita, wooden wall and a window with pale daylight, plain and honest setting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 1〜2秒の短カット。
 
@@ -1790,7 +1790,7 @@ A quiet corner of a village community hall in Higashinaruse, Akita, wooden wall 
 【実写】検索キーワード: `カンテレ 東成瀬村 猟友会 警察と協議`
 【実写】フォールバック（入手できない場合のLovart用）:
 ```
-A 76-year-old Japanese hunter in an olive-brown vest and orange cap talking with a Japanese police officer in dark blue uniform beside a patrol car in a village in Akita, both pointing toward a hillside, tense negotiation posture, overcast light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A 76-year-old Japanese hunter in an olive-brown vest and orange cap talking with a Japanese police officer in dark blue uniform beside a patrol car in a village in Akita, both pointing toward a hillside, tense negotiation posture, overcast light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 発言を字幕表示（/revenue-guard対象）。
 
@@ -1802,11 +1802,11 @@ A 76-year-old Japanese hunter in an olive-brown vest and orange cap talking with
 シーン: 警察官が条件を提示し、CHAR-06が渋い顔で聞く
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, listening with a grim tight-lipped face. Beside him a Japanese police officer in dark blue uniform and peaked cap holding up one cautioning hand while explaining. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, listening with a grim tight-lipped face. Beside him a Japanese police officer in dark blue uniform and peaked cap holding up one cautioning hand while explaining. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Beside a patrol car on a village road in Higashinaruse, Akita, cones on the asphalt, the hilltop looming out of focus beyond, cold procedural atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Beside a patrol car on a village road in Higashinaruse, Akita, cones on the asphalt, the hilltop looming out of focus beyond, cold procedural atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「襲ってきたら → 撃ってよい」「それ以外 → 撃てない」の2行テロップを対で表示。
 
@@ -1818,11 +1818,11 @@ Beside a patrol car on a village road in Higashinaruse, Akita, cones on the asph
 シーン: 待ち続けるハンターたちと流れる時間
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, crouched on one knee with rifle resting across his leg, glancing up repeatedly, patience worn thin. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, crouched on one knee with rifle resting across his leg, glancing up repeatedly, patience worn thin. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The base of the grassy hilltop in Higashinaruse, Akita with long shadows slowly shifting across the road, parked vehicles, waiting stillness. Time leaking away. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The base of the grassy hilltop in Higashinaruse, Akita with long shadows slowly shifting across the road, parked vehicles, waiting stillness. Time leaking away. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 画面隅に時計表示を置き「30〜40分」まで早送り。影の角度を少し動かす。
 
@@ -1836,7 +1836,7 @@ The base of the grassy hilltop in Higashinaruse, Akita with long shadows slowly 
 【実写】検索キーワード: `カンテレ 東成瀬村 ハンター たまたま移動しない`
 【実写】フォールバック（入手できない場合のLovart用）:
 ```
-A 76-year-old Japanese hunter in an olive-brown vest and orange cap being interviewed in a village hall in Akita, speaking with relief and gravity, plain wooden wall behind, news interview framing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A 76-year-old Japanese hunter in an olive-brown vest and orange cap being interviewed in a village hall in Akita, speaking with relief and gravity, plain wooden wall behind, news interview framing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 発言を字幕表示（/revenue-guard対象）。
 
@@ -1848,11 +1848,11 @@ A 76-year-old Japanese hunter in an olive-brown vest and orange cap being interv
 シーン: 山奥へ消えていく仮定のクマ（色抜きの想像カット）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, walking away on all fours into depth, rear view, half-dissolved at the edges as an imagined outcome. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, walking away on all fours into depth, rear view, half-dissolved at the edges as an imagined outcome. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A faded desaturated view of endless ridgelines and deep forest in the Akita mountains, mist swallowing the valleys, washed-out dreamlike tones of a hypothetical. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A faded desaturated view of endless ridgelines and deep forest in the Akita mountains, mist swallowing the valleys, washed-out dreamlike tones of a hypothetical. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 白っぽい色調（仮定カットの記号）。「もし山奥へ入っていたら…」テロップ。
 
@@ -1868,11 +1868,11 @@ A faded desaturated view of endless ridgelines and deep forest in the Akita moun
 シーン: 許可が下り、ハンターたちが斜面をじりじり詰める
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, advancing up a slope in a low crouch, rifle ready, each step careful and deliberate. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, advancing up a slope in a low crouch, rifle ready, each step careful and deliberate. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Climbing view up a grassy slope in Higashinaruse, Akita toward the hilltop, dry grass parting, the crest drawing closer, cold hard light. Closing the distance. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Climbing view up a grassy slope in Higashinaruse, Akita toward the hilltop, dry grass parting, the crest drawing closer, cold hard light. Closing the distance. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「約40mまで接近」テロップ。足音と草ずれのSE。
 
@@ -1884,11 +1884,11 @@ Climbing view up a grassy slope in Higashinaruse, Akita toward the hilltop, dry 
 シーン: CHAR-06の発砲の瞬間（銃口の閃光）
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, firing his rifle with a bright muzzle flash, shoulder absorbing recoil, unflinching focus. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, firing his rifle with a bright muzzle flash, shoulder absorbing recoil, unflinching focus. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The hilltop crest in Higashinaruse, Akita at the instant of a gunshot: startled small birds bursting from the dry grass into the gray sky, hard frozen moment. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The hilltop crest in Higashinaruse, Akita at the instant of a gunshot: startled small birds bursting from the dry grass into the gray sky, hard frozen moment. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 銃声SE一発→無音0.5秒。画面を一瞬白くフラッシュ。
 
@@ -1900,11 +1900,11 @@ The hilltop crest in Higashinaruse, Akita at the instant of a gunshot: startled 
 シーン: 被弾してもなお動くCHAR-07（傷は見せない）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, flinching sideways mid-stride on all fours, still powerful and moving fast. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, flinching sideways mid-stride on all fours, still powerful and moving fast. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Dry grass whipping sideways on the hilltop in Higashinaruse, Akita, motion streaks in the cold light, urgency and confusion. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Dry grass whipping sideways on the hilltop in Higashinaruse, Akita, motion streaks in the cold light, urgency and confusion. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「一発では終わらない」テロップ。
 
@@ -1915,7 +1915,7 @@ Dry grass whipping sideways on the hilltop in Higashinaruse, Akita, motion strea
 【制作メモ】ASSET-140 [Lovart動画] 台本L468 ★AI動画
 シーン: クマが藪の中へ駆け込んでいく
 ```
-An adult Asian black bear with a white chest crescent plunging on all fours into a dense wall of bamboo grass and brush on a hillside in Akita, Japan, stalks whipping closed behind it, cold gray light. Escape into cover. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+An adult Asian black bear with a white chest crescent plunging on all fours into a dense wall of bamboo grass and brush on a hillside in Akita, Japan, stalks whipping closed behind it, cold gray light. Escape into cover. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -1931,11 +1931,11 @@ An adult Asian black bear, glossy black fur with a white crescent chest patch, c
 シーン: 藪の壁を前に、銃を構えたまま撃てないハンター
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, rifle half-raised, scanning left and right in frustration at something he cannot see, tense searching eyes. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, rifle half-raised, scanning left and right in frustration at something he cannot see, tense searching eyes. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A dense impenetrable wall of dry bamboo grass and brush over two meters tall on a hillside in Higashinaruse, Akita, no gaps, no visibility beyond the first layer of stalks, cold flat light. A green-brown curtain hiding everything. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A dense impenetrable wall of dry bamboo grass and brush over two meters tall on a hillside in Higashinaruse, Akita, no gaps, no visibility beyond the first layer of stalks, cold flat light. A green-brown curtain hiding everything. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「姿が見えない＝撃てない」テロップ。背景はゆっくり近づく（3秒で1.0→1.1）。
 
@@ -1947,11 +1947,11 @@ A dense impenetrable wall of dry bamboo grass and brush over two meters tall on 
 シーン: 横並びのハンターたちが一斉に構え撃つ
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese hunters firing rifles in a coordinated line, every person a distinct individual, no two dressed alike: dark green jacket, brown vest, gray coat — muzzle flashes at each barrel, braced stances. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese hunters firing rifles in a coordinated line, every person a distinct individual, no two dressed alike: dark green jacket, brown vest, gray coat — muzzle flashes at each barrel, braced stances. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The edge of the dense bamboo grass on the hilltop in Higashinaruse, Akita, stalks shivering from impacts, cold hard light. The final volley. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The edge of the dense bamboo grass on the hilltop in Higashinaruse, Akita, stalks shivering from impacts, cold hard light. The final volley. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 連続した銃声SE（3発）。画面を小刻みに揺らす。
 
@@ -1965,7 +1965,7 @@ The edge of the dense bamboo grass on the hilltop in Higashinaruse, Akita, stalk
 【実写】検索キーワード: `ANN 東成瀬村 緊急ライブ ヘリ空撮 クマ`
 【実写】フォールバック（入手できない場合のLovart用）:
 ```
-Aerial news-helicopter view over a Japanese mountain village in Akita: rooftops, a grassy hilltop, small emergency vehicles on a road below, slightly hazy telephoto compression, broadcast look. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Aerial news-helicopter view over a Japanese mountain village in Akita: rooftops, a grassy hilltop, small emergency vehicles on a road below, slightly hazy telephoto compression, broadcast look. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 画面横にチャット欄風のコメントUIを編集で再現し、実際のコメント文言を流す（映像はテレ朝の著作物＝切り抜きは/revenue-guard対象。安全なのは空撮部分を数秒のみ引用し、コメントは編集で再現する構成）。
 
@@ -1985,11 +1985,11 @@ Aerial news-helicopter view over a Japanese mountain village in Akita: rooftops,
 シーン: 静止した藪と、その中で動きを止めたCHAR-07のシルエット
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, lying still on her side on the ground, eyes closed, rendered gently and without any wounds. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, lying still on her side on the ground, eyes closed, rendered gently and without any wounds. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The bamboo grass on the hilltop in Higashinaruse, Akita finally motionless, no wind, pale light breaking through thin clouds, profound quiet. It is over. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The bamboo grass on the hilltop in Higashinaruse, Akita finally motionless, no wind, pale light breaking through thin clouds, profound quiet. It is over. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: すべてのSEを消し、3秒の静寂。「動かなくなった」テロップは出さない（絵と静寂で語る）。
 
@@ -2001,11 +2001,11 @@ The bamboo grass on the hilltop in Higashinaruse, Akita finally motionless, no w
 シーン: ハンターたちが銃を下ろし、帽子を取る
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, lowering his rifle with one hand and removing his blaze-orange cap with the other, head slightly bowed, exhausted solemn relief. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, lowering his rifle with one hand and removing his blaze-orange cap with the other, head slightly bowed, exhausted solemn relief. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The hilltop in Higashinaruse, Akita under thin afternoon light, trampled grass path leading back down toward the village rooftops, stillness after the hunt. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The hilltop in Higashinaruse, Akita under thin afternoon light, trampled grass path leading back down toward the village rooftops, stillness after the hunt. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「駆除終了」テロップを小さく。夕方寄りの色温度に補正。
 
@@ -2020,11 +2020,11 @@ The hilltop in Higashinaruse, Akita under thin afternoon light, trampled grass p
 シーン: CHAR-06が両手を広げ「このくらいだった」と大きさを示す
 キャラプロンプト（1:1）:
 ```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, holding both hands apart at chest height indicating a modest size, eyebrows raised in surprise. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-06: 76-year-old Japanese hunter, olive-brown hunting vest, blaze-orange cap, holding both hands apart at chest height indicating a modest size, eyebrows raised in surprise. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A village road in Higashinaruse, Akita in late afternoon light, a tarp-covered kei truck bed in soft focus at the edge of frame, quiet aftermath tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A village road in Higashinaruse, Akita in late afternoon light, a tarp-covered kei truck bed in soft focus at the edge of frame, quiet aftermath tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「驚きは、その体格」テロップ。
 
@@ -2036,11 +2036,11 @@ A village road in Higashinaruse, Akita in late afternoon light, a tarp-covered k
 シーン: 職員がメジャーを伸ばして計測を記録する
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese wildlife officer in a khaki field uniform and cap, kneeling and extending a yellow tape measure with one hand while writing on a clipboard with the other, methodical focused expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese wildlife officer in a khaki field uniform and cap, kneeling and extending a yellow tape measure with one hand while writing on a clipboard with the other, methodical focused expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Ground-level view of a blue tarp laid on gravel in a village yard in Higashinaruse, Akita, a yellow tape measure stretched across it, cold procedural light. Measurement scene without the animal shown. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Ground-level view of a blue tarp laid on gravel in a village yard in Higashinaruse, Akita, a yellow tape measure stretched across it, cold procedural light. Measurement scene without the animal shown. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「体長1.2m／体重約80kg／メス成獣」テロップを計測風に表示。
 
@@ -2054,7 +2054,7 @@ Ground-level view of a blue tarp laid on gravel in a village yard in Higashinaru
 【実写】検索キーワード: `ANN 東成瀬村 クマ 駆除 1メートル20センチ`
 【実写】フォールバック（入手できない場合のLovart用）:
 ```
-A Japanese TV news style medium shot of a blue tarp area cordoned with rope in a village yard in Akita, officials in khaki uniforms in the far background out of focus, overcast light, restrained news framing that does not show the animal directly. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A Japanese TV news style medium shot of a blue tarp area cordoned with rope in a village yard in Akita, officials in khaki uniforms in the far background out of focus, overcast light, restrained news framing that does not show the animal directly. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 実映像は数秒の引用に留める（/revenue-guard対象）。「思ったより、小さい」テロップ。
 
@@ -2068,7 +2068,7 @@ A Japanese TV news style medium shot of a blue tarp area cordoned with rope in a
 【実写】検索キーワード: `ANN 東成瀬村 ライブ チャット`
 【実写】フォールバック（入手できない場合のLovart用）:
 ```
-Aerial news-helicopter view over rooftops and a hilltop in a Japanese mountain village in Akita, hazy telephoto broadcast look, space on the right side of the frame kept simple and uncluttered. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Aerial news-helicopter view over rooftops and a hilltop in a Japanese mountain village in Akita, hazy telephoto broadcast look, space on the right side of the frame kept simple and uncluttered. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: チャット欄UIは編集で再現し、実際のコメント文言（「小さいから子熊かな」等）を流す。映像引用は数秒（/revenue-guard対象）。
 
@@ -2080,11 +2080,11 @@ Aerial news-helicopter view over rooftops and a hilltop in a Japanese mountain v
 シーン: CHAR-07が堂々と立つ「これが成獣」の紹介カット
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours in a composed profile stance, head turned to the viewer, dignified presence. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours in a composed profile stance, head turned to the viewer, dignified presence. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A neutral beech forest clearing in the Akita mountains, soft even light, fallen leaves, plain natural backdrop for a specimen presentation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A neutral beech forest clearing in the Akita mountains, soft even light, fallen leaves, plain natural backdrop for a specimen presentation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「ツキノワグマは、これで成獣」テロップ。
 
@@ -2098,7 +2098,7 @@ A neutral beech forest clearing in the Akita mountains, soft even light, fallen 
 【実写】検索キーワード: `山内貴義 岩手大学 クマ カンテレ`
 【実写】フォールバック（入手できない場合のLovart用）:
 ```
-A Japanese university researcher in his 40s wearing a casual jacket, seated in a research office with bookshelves, being interviewed on camera, warm indoor light, news interview framing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A Japanese university researcher in his 40s wearing a casual jacket, seated in a research office with bookshelves, being interviewed on camera, warm indoor light, news interview framing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 「岩手大学 山内貴義 准教授」の肩書テロップ（/revenue-guard対象）。
 
@@ -2110,11 +2110,11 @@ A Japanese university researcher in his 40s wearing a casual jacket, seated in a
 シーン: 小柄なCHAR-07の前足が太い枝を軽々とへし折る（力の実演）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours pressing one front paw down on a thick broken branch, wood snapped clean, effortless power. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours pressing one front paw down on a thick broken branch, wood snapped clean, effortless power. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Forest floor close-up in the Akita mountains: a thick dry branch snapped in two on the leaves, splinters bright against dark ground, cold light. Quiet evidence of strength. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Forest floor close-up in the Akita mountains: a thick dry branch snapped in two on the leaves, splinters bright against dark ground, cold light. Quiet evidence of strength. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 枝が折れる乾いたSE。
 
@@ -2126,11 +2126,11 @@ Forest floor close-up in the Akita mountains: a thick dry branch snapped in two 
 シーン: 研究者が腕力とスピードを身振りで説明する
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese university researcher in his 40s, casual jacket over a shirt, one arm flexed to indicate strength and the other hand sweeping fast to indicate speed, engaged explanatory expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese university researcher in his 40s, casual jacket over a shirt, one arm flexed to indicate strength and the other hand sweeping fast to indicate speed, engaged explanatory expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A research office wall in Japan with soft bookshelf blur and warm light, plain interview backdrop. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A research office wall in Japan with soft bookshelf blur and warm light, plain interview backdrop. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「腕力」「スピード」の2語テロップを身振りに合わせて表示。
 
@@ -2142,11 +2142,11 @@ A research office wall in Japan with soft bookshelf blur and warm light, plain i
 シーン: 走り去る救急車と小さなクマのシルエットの対比
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, drawn small at one side on all fours, calm and unassuming — the modest size that caused it all. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, drawn small at one side on all fours, calm and unassuming — the modest size that caused it all. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A rural road in Akita, Japan at dusk with an ambulance driving away into the distance, tail lights glowing, autumn mountains dark on both sides. Consequence in motion. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A rural road in Akita, Japan at dusk with an ambulance driving away into the distance, tail lights glowing, autumn mountains dark on both sides. Consequence in motion. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「この体格で、大人4人」テロップ。
 
@@ -2159,11 +2159,11 @@ A rural road in Akita, Japan at dusk with an ambulance driving away into the dis
 → 編集者指示: ASSET-027（クマが軽トラへ突進する動画）を短く再使用し、回想枠（白フチ＋彩度低下）で表示。新規生成はしない。
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, mid-charge on all fours, rendered inside a faded flashback tone. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, mid-charge on all fours, rendered inside a faded flashback tone. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A desaturated flashback-tone view of the farm road and white kei truck in Higashinaruse, Akita, soft vignette edges marking a memory. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A desaturated flashback-tone view of the farm road and white kei truck in Higashinaruse, Akita, soft vignette edges marking a memory. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 
 ---
@@ -2187,7 +2187,7 @@ A desaturated flashback-tone view of the farm road and white kei truck in Higash
 【制作メモ】ASSET-158 [Lovart静止画] 台本L510
 シーン: 夕暮れの病院外観
 ```
-Exterior of a large Japanese hospital in Akita at dusk, warm lights in the windows against a deep blue sky, an ambulance bay glowing, quiet solemn atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Exterior of a large Japanese hospital in Akita at dusk, warm lights in the windows against a deep blue sky, an ambulance bay glowing, quiet solemn atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: ゆっくり近づく（4秒で1.0→1.08）。場面転換の静かなBGM。
 
@@ -2199,11 +2199,11 @@ Exterior of a large Japanese hospital in Akita at dusk, warm lights in the windo
 シーン: 処置室で応答する患者の手元（顔は映さない・希望のカット）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese nurse in a white uniform gently holding a patient's hand that responds with a weak squeeze, relieved careful expression on the nurse's face, patient shown only as an arm from the edge of frame. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese nurse in a white uniform gently holding a patient's hand that responds with a weak squeeze, relieved careful expression on the nurse's face, patient shown only as an arm from the edge of frame. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A softly lit Japanese hospital treatment room in Akita, monitor lights blinking steadily, IV stand by an empty bed, calm ordered atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A softly lit Japanese hospital treatment room in Akita, monitor lights blinking steadily, IV stand by an empty bed, calm ordered atmosphere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「3人＝意識あり」テロップ。モニターの規則正しい電子音SE。
 
@@ -2215,11 +2215,11 @@ A softly lit Japanese hospital treatment room in Akita, monitor lights blinking 
 シーン: 静かな集中治療室の外観と、廊下で祈るように待つ医療者（本人は描かない）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in surgical scrubs and cap standing outside a closed door, head bowed, clipboard held loosely at his side, grave stillness. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in surgical scrubs and cap standing outside a closed door, head bowed, clipboard held loosely at his side, grave stillness. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A Japanese hospital ICU corridor in Akita at night: a closed door with a lit sign above it, dim cool light, long empty hallway. The weight behind one door. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A Japanese hospital ICU corridor in Akita at night: a closed door with a lit sign above it, dim cool light, long empty hallway. The weight behind one door. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「意識不明は、ただ一人」テロップ。音を絞る。
 
@@ -2231,11 +2231,11 @@ A Japanese hospital ICU corridor in Akita at night: a closed door with a lit sig
 シーン: 看護師が包帯とガーゼを急いで準備する（直接の傷は描かない）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese nurse in a white uniform gathering rolls of bandage and gauze packs onto a tray with quick careful hands, strained focused expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese nurse in a white uniform gathering rolls of bandage and gauze packs onto a tray with quick careful hands, strained focused expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A stainless tray in a Japanese hospital in Akita with rolls of white bandage, sterile gauze packs and suture kits under cool clinical light, shallow depth of field, restrained and quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A stainless tray in a Japanese hospital in Akita with rolls of white bandage, sterile gauze packs and suture kits under cool clinical light, shallow depth of field, restrained and quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: ナレーションのみで傷を語り、映像は抑制する。背景はゆっくり左から右に動かす（3秒）。
 
@@ -2247,11 +2247,11 @@ A stainless tray in a Japanese hospital in Akita with rolls of white bandage, st
 シーン: 処置の手が止まり、医師がうつむく
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese surgeon in green scrubs and mask pulled down, shoulders sinking, gloved hands lowering slowly, eyes closing in defeat and sorrow. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese surgeon in green scrubs and mask pulled down, shoulders sinking, gloved hands lowering slowly, eyes closing in defeat and sorrow. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A Japanese operating room in Akita with the overhead surgical light switched off, instruments at rest on trays, cool dim stillness after effort. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A Japanese operating room in Akita with the overhead surgical light switched off, instruments at rest on trays, cool dim stillness after effort. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 機械音が止まり、無音へ。1〜2秒。
 
@@ -2263,11 +2263,11 @@ A Japanese operating room in Akita with the overhead surgical light switched off
 シーン: 夕日の差す廊下で、医師が壁の時計を見上げて目を伏せる
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in surgical scrubs, cap in hand, looking up at an unseen wall clock and then lowering his eyes slowly, grief held in check. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in surgical scrubs, cap in hand, looking up at an unseen wall clock and then lowering his eyes slowly, grief held in check. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A Japanese hospital room window in Akita at 4:20 in the afternoon, thin white curtain glowing amber with low autumn sunlight, quiet empty sill, profound stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A Japanese hospital room window in Akita at 4:20 in the afternoon, thin white curtain glowing amber with low autumn sunlight, quiet empty sill, profound stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「午後4時20分」の時刻テロップのみ。BGM無し、外の環境音だけ。背景はゆっくり近づく（4秒で1.0→1.06）。
 
@@ -2279,11 +2279,11 @@ A Japanese hospital room window in Akita at 4:20 in the afternoon, thin white cu
 シーン: 病院の廊下で座り込むCHAR-03
 キャラプロンプト（1:1）:
 ```
-(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, gray pants, sitting collapsed on a bench with both hands over her face, shoulders shaking. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: Japanese woman in her early 60s, dusty-pink cardigan, gray pants, sitting collapsed on a bench with both hands over her face, shoulders shaking. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A Japanese hospital waiting corridor in Akita at dusk, empty bench row, amber window light fading on the floor, unbearable quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A Japanese hospital waiting corridor in Akita at dusk, empty bench row, amber window light fading on the floor, unbearable quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「逃げるよう告げてから、約5時間」テロップ。
 
@@ -2295,11 +2295,11 @@ A Japanese hospital waiting corridor in Akita at dusk, empty bench row, amber wi
 シーン: 近所の高齢女性が目元を押さえて語る
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. An 82-year-old Japanese woman with white hair in a bun, wearing a dark gray cardigan and work apron, pressing a handkerchief to her eyes as she speaks, grief on her kind face. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. An 82-year-old Japanese woman with white hair in a bun, wearing a dark gray cardigan and work apron, pressing a handkerchief to her eyes as she speaks, grief on her kind face. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The front of an old village house in Higashinaruse, Akita in evening light, potted chrysanthemums by the door, warm and humble. A neighbor's doorstep. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The front of an old village house in Higashinaruse, Akita in evening light, potted chrysanthemums by the door, warm and humble. A neighbor's doorstep. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 発言を字幕で表示。しんみりしたBGMを薄く。
 
@@ -2311,11 +2311,11 @@ The front of an old village house in Higashinaruse, Akita in evening light, pott
 シーン: 医師が診断書に向かいペンを走らせる
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, man in his 50s, seated posture writing carefully on a document with a pen, somber professional focus. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, man in his 50s, seated posture writing carefully on a document with a pen, somber professional focus. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A Japanese hospital office desk in Akita at night: a document folder, a desk lamp pool of warm light in a dark room, a stethoscope set aside. Heavy paperwork after a loss. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A Japanese hospital office desk in Akita at night: a document folder, a desk lamp pool of warm light in a dark room, a stethoscope set aside. Heavy paperwork after a loss. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「死因：顔面損傷による低酸素脳症」テロップ（医学用語のため正確に表記）。
 
@@ -2327,11 +2327,11 @@ A Japanese hospital office desk in Akita at night: a document folder, a desk lam
 シーン: 医師が呼吸経路の模型を使って説明
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, woman in her 40s with hair tied back, holding a clear anatomical model of the human airway and lungs, tracing the path from mouth to lungs with one finger, careful explanatory expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, woman in her 40s with hair tied back, holding a clear anatomical model of the human airway and lungs, tracing the path from mouth to lungs with one finger, careful explanatory expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A neutral Japanese medical lecture room in Akita, plain light wall with soft even lighting, desk with an anatomical model stand. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A neutral Japanese medical lecture room in Akita, plain light wall with soft even lighting, desk with an anatomical model stand. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「呼吸ができない → 酸素が届かない → 脳がダメージ」の3段テロップを順に表示。
 
@@ -2346,11 +2346,11 @@ A neutral Japanese medical lecture room in Akita, plain light wall with soft eve
 シーン: 調査資料をめくる手が止まる。新事実の発見
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese researcher in a gray cardigan, woman in her 30s, flipping through a document stack, suddenly stopping at one page with widening eyes. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese researcher in a gray cardigan, woman in her 30s, flipping through a document stack, suddenly stopping at one page with widening eyes. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A desk with stacked news clippings and documents under a desk lamp in a Japanese office in Akita, one page pulled halfway out of the pile, night outside the window. A buried fact surfacing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A desk with stacked news clippings and documents under a desk lamp in a Japanese office in Akita, one page pulled halfway out of the pile, night outside the window. A buried fact surfacing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: ページをめくるSE→止まる。「発覚した事実」テロップ。
 
@@ -2380,11 +2380,11 @@ A desk with stacked news clippings and documents under a desk lamp in a Japanese
 シーン: 夜明け前の庁舎前。夜勤明けの消防職員が外の空気を吸っている
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese firefighter on night duty, man in his 30s in a dark blue duty uniform, stretching his arms with a sleepy yawn outside, mug in hand. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese firefighter on night duty, man in his 30s in a dark blue duty uniform, stretching his arms with a sleepy yawn outside, mug in hand. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A Japanese municipal office building housing a fire department headquarters in Yuzawa city, Akita, before dawn: dark facade, one lit entrance with glass automatic doors, empty street in blue pre-dawn light. Quiet city center. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A Japanese municipal office building housing a fire department headquarters in Yuzawa city, Akita, before dawn: dark facade, one lit entrance with glass automatic doors, empty street in blue pre-dawn light. Quiet city center. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「湯沢市表町・消防本部庁舎」テロップ。背景はゆっくり近づく（3秒で1.0→1.08）。
 
@@ -2396,11 +2396,11 @@ A Japanese municipal office building housing a fire department headquarters in Y
 シーン: CHAR-11（湯沢のオスグマ）が自動ドアをくぐって建物へ入る
 キャラプロンプト（1:1）:
 ```
-(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-11: adult male Asian black bear, 130cm, dull brownish-black shaggy fur, wide white crescent chest patch, small notch on right ear, walking calmly on all fours through an open doorway, head low, casual confidence. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-11: adult male Asian black bear, 130cm, dull brownish-black shaggy fur, wide white crescent chest patch, small notch on right ear, walking calmly on all fours through an open doorway, head low, casual confidence. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The glass automatic entrance doors of a Japanese municipal building in Yuzawa, Akita at night, doors sliding open onto a lit entry vestibule, fluorescent glow spilling onto dark pavement. An entrance that opens for anything. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The glass automatic entrance doors of a Japanese municipal building in Yuzawa, Akita at night, doors sliding open onto a lit entry vestibule, fluorescent glow spilling onto dark pavement. An entrance that opens for anything. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 自動ドアの開閉SE。「自動ドアを自分で通過」テロップ。
 
@@ -2414,7 +2414,7 @@ The glass automatic entrance doors of a Japanese municipal building in Yuzawa, A
 【実写】検索キーワード: `湯沢市 庁舎 クマ 自動ドア 防犯カメラ`
 【実写】フォールバック（入手できない場合のLovart用）:
 ```
-Grainy black-and-white security camera style view of an empty entry vestibule between two sets of glass doors in a Japanese municipal building in Yuzawa, Akita at night, timestamp-free clean frame, harsh fluorescent light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+Grainy black-and-white security camera style view of an empty entry vestibule between two sets of glass doors in a Japanese municipal building in Yuzawa, Akita at night, timestamp-free clean frame, harsh fluorescent light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 「滞在 約20秒」のカウント表示。映像引用は数秒（/revenue-guard対象）。
 
@@ -2426,11 +2426,11 @@ Grainy black-and-white security camera style view of an empty entry vestibule be
 シーン: 職員がモニターで録画を見返して息をのむ
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese office security staff member, man in his 50s in a gray uniform shirt, leaning toward an unseen monitor, one hand on the desk, mouth open in disbelief. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese office security staff member, man in his 50s in a gray uniform shirt, leaning toward an unseen monitor, one hand on the desk, mouth open in disbelief. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A small Japanese security office in Yuzawa, Akita: a desk with monitor glow lighting the dark room, coffee cup, night window. The moment of playback. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A small Japanese security office in Yuzawa, Akita: a desk with monitor glow lighting the dark room, coffee cup, night window. The moment of playback. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: モニターの反射光を顔に当てる合成。巻き戻しSE。
 
@@ -2450,11 +2450,11 @@ A small Japanese security office in Yuzawa, Akita: a desk with monitor glow ligh
 シーン: 早朝の路上、振り向く男性と背後のCHAR-11（接触は見せない）
 キャラプロンプト（1:1）:
 ```
-(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A 63-year-old Japanese man in a beige jacket holding a convenience store bag, spinning around in shock. CHAR-11: adult male Asian black bear, 130cm, dull brownish-black fur, wide white crescent, notch on right ear, lunging behind him on all fours. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A 63-year-old Japanese man in a beige jacket holding a convenience store bag, spinning around in shock. CHAR-11: adult male Asian black bear, 130cm, dull brownish-black fur, wide white crescent, notch on right ear, lunging behind him on all fours. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A residential street in Yuzawa, Akita at first light: utility poles, low houses, a convenience store sign glowing far down the road, cold blue morning. Danger on the walk home. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A residential street in Yuzawa, Akita at first light: utility poles, low houses, a convenience store sign glowing far down the road, cold blue morning. Danger on the walk home. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 接触直前で暗転。「63歳男性・背中を負傷」テロップ。
 
@@ -2466,11 +2466,11 @@ A residential street in Yuzawa, Akita at first light: utility poles, low houses,
 シーン: CHAR-09が犬と散歩する平和な導入
 キャラプロンプト（1:1）:
 ```
-(CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, blue jeans, holding a red leash attached to a small tan Shiba dog trotting beside him, relaxed morning stroll. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, blue jeans, holding a red leash attached to a small tan Shiba dog trotting beside him, relaxed morning stroll. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A quiet street in the Omotemachi district of Yuzawa, Akita at dawn: shuttered shops, the municipal building visible down the block, pale morning light. An ordinary walk. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A quiet street in the Omotemachi district of Yuzawa, Akita at dawn: shuttered shops, the municipal building visible down the block, pale morning light. An ordinary walk. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「35分後」テロップ。犬の足音SE。
 
@@ -2482,11 +2482,11 @@ A quiet street in the Omotemachi district of Yuzawa, Akita at dawn: shuttered sh
 シーン: 柴犬が遠くへ向かって吠え、CHAR-09が戸惑う
 キャラプロンプト（1:1）:
 ```
-(CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, blue jeans, holding the red leash taut as his small tan Shiba dog strains forward barking hard at something far away, the man puzzled. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, blue jeans, holding the red leash taut as his small tan Shiba dog strains forward barking hard at something far away, the man puzzled. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The front of the municipal fire headquarters building in Yuzawa, Akita at dawn, glass entrance doors, empty plaza, long morning shadows. Something only the dog can sense. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The front of the municipal fire headquarters building in Yuzawa, Akita at dawn, glass entrance doors, empty plaza, long morning shadows. Something only the dog can sense. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 犬の吠え声SEを繰り返す。「消防本部の前」テロップ。
 
@@ -2498,11 +2498,11 @@ The front of the municipal fire headquarters building in Yuzawa, Akita at dawn, 
 シーン: 犬の鼻のクローズアップと、建物に残る気配
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A small tan Shiba dog with a red collar, nose lifted high and sniffing intently, ears pricked, alert posture, drawn large and expressive. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A small tan Shiba dog with a red collar, nose lifted high and sniffing intently, ears pricked, alert posture, drawn large and expressive. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Low dog-height view of the pavement leading to the glass doors of the municipal building in Yuzawa, Akita, faint muddy paw prints on the stone, dawn light. A trail only a nose can read. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Low dog-height view of the pavement leading to the glass doors of the municipal building in Yuzawa, Akita, faint muddy paw prints on the stone, dawn light. A trail only a nose can read. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「1時間半前にクマが入った建物」テロップ。鼻のスンスンSE。
 
@@ -2514,11 +2514,11 @@ Low dog-height view of the pavement leading to the glass doors of the municipal 
 シーン: 道を変えた直後、犬が今度は背後に向かって吠える
 キャラプロンプト（1:1）:
 ```
-(CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, blue jeans, mid-stride on a new route while his small tan Shiba dog twists around on the red leash, barking fiercely backward past his legs, the man starting to turn. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, blue jeans, mid-stride on a new route while his small tan Shiba dog twists around on the red leash, barking fiercely backward past his legs, the man starting to turn. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A side street in Yuzawa, Akita at dawn: parked cars, shop shutters, a long empty stretch of road behind the camera position, cold morning tension. What is behind us. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A side street in Yuzawa, Akita at dawn: parked cars, shop shutters, a long empty stretch of road behind the camera position, cold morning tension. What is behind us. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 吠える向きの変化を矢印なしのカメラ振りで表現。心拍SEを開始。
 
@@ -2530,11 +2530,11 @@ A side street in Yuzawa, Akita at dawn: parked cars, shop shutters, a long empty
 シーン: 振り返ったCHAR-09の視線の先、路上にCHAR-11
 キャラプロンプト（1:1）:
 ```
-(CHAR-09 再利用)(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, frozen mid-turn with the red leash in hand, face draining with shock. CHAR-11: adult male Asian black bear, 130cm, dull brownish-black fur, wide white crescent, notch on right ear, on all fours in the open street close behind. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-09 再利用)(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, frozen mid-turn with the red leash in hand, face draining with shock. CHAR-11: adult male Asian black bear, 130cm, dull brownish-black fur, wide white crescent, notch on right ear, on all fours in the open street close behind. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-An open city street in Yuzawa, Akita at dawn, straight and empty with nowhere to hide, storefronts on both sides, pale hard light. Exposed. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+An open city street in Yuzawa, Akita at dawn, straight and empty with nowhere to hide, storefronts on both sides, pale hard light. Exposed. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「全く気づかなかった」テロップ。振り返りをスローで。
 
@@ -2546,11 +2546,11 @@ An open city street in Yuzawa, Akita at dawn, straight and empty with nowhere to
 シーン: CHAR-09が犬とともに全力で走り出す
 キャラプロンプト（1:1）:
 ```
-(CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, blue jeans, sprinting hard with the small tan Shiba dog racing beside him on the red leash, terror on his face. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, blue jeans, sprinting hard with the small tan Shiba dog racing beside him on the red leash, terror on his face. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A blurred street perspective in Yuzawa, Akita at dawn, motion streaks along shop fronts and parked cars, cold light. Flight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A blurred street perspective in Yuzawa, Akita at dawn, motion streaks along shop fronts and parked cars, cold light. Flight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 荒い呼吸と足音のSE。素早い横スライド。
 
@@ -2561,7 +2561,7 @@ A blurred street perspective in Yuzawa, Akita at dawn, motion streaks along shop
 【制作メモ】ASSET-183 [Lovart動画] 台本L563 ★AI動画
 シーン: 交差点を曲がっても追ってくるクマ（追跡の恐怖）
 ```
-A dawn street chase in Yuzawa city, Akita: an adult Asian black bear with a wide white chest crescent galloping on all fours around a street corner past a convex traffic mirror, relentless pursuit, storefront shutters and utility poles, cold blue morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A dawn street chase in Yuzawa city, Akita: an adult Asian black bear with a wide white chest crescent galloping on all fours around a street corner past a convex traffic mirror, relentless pursuit, storefront shutters and utility poles, cold blue morning light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -2577,11 +2577,11 @@ Low tracking shot at dawn in a Japanese city street in Akita: an adult male Asia
 シーン: 足を押さえて立ち止まるCHAR-09と迫る影（接触は見せない）
 キャラプロンプト（1:1）:
 ```
-(CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, doubled over holding his thigh, gasping, unable to run further, the red leash slack. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, doubled over holding his thigh, gasping, unable to run further, the red leash slack. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A street corner in Yuzawa, Akita at dawn with a huge four-legged animal shadow sweeping across the asphalt toward the camera, hard low light. Cornered. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A street corner in Yuzawa, Akita at dawn with a huge four-legged animal shadow sweeping across the asphalt toward the camera, hard low light. Cornered. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 影が覆いかぶさる→暗転。
 
@@ -2593,11 +2593,11 @@ A street corner in Yuzawa, Akita at dawn with a huge four-legged animal shadow s
 シーン: 暗転明け、左腕を押さえてうずくまるCHAR-09（傷は見せない）
 キャラプロンプト（1:1）:
 ```
-(CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, kneeling on the ground clutching his left arm to his chest, face clenched in pain, the small tan Shiba dog pressed anxiously against him. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, kneeling on the ground clutching his left arm to his chest, face clenched in pain, the small tan Shiba dog pressed anxiously against him. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Asphalt and a road-side gutter in Yuzawa, Akita at dawn, a dropped red dog leash on the ground, cold hard morning light. After the attack, told by small things. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Asphalt and a road-side gutter in Yuzawa, Akita at dawn, a dropped red dog leash on the ground, cold hard morning light. After the attack, told by small things. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「左腕を負傷」テロップ。犬の鳴き声SE。
 
@@ -2609,11 +2609,11 @@ Asphalt and a road-side gutter in Yuzawa, Akita at dawn, a dropped red dog leash
 シーン: 回復後のCHAR-09が当時を語る（証言カット）
 キャラプロンプト（1:1）:
 ```
-(CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, left arm in a white sling, speaking earnestly toward the viewer with a grave expression, other hand gesturing. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-09: 57-year-old Japanese man, dark green windbreaker, left arm in a white sling, speaking earnestly toward the viewer with a grave expression, other hand gesturing. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A plain interview backdrop in Yuzawa, Akita: the corner of a house exterior with autumn light, soft focus, news interview framing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A plain interview backdrop in Yuzawa, Akita: the corner of a house exterior with autumn light, soft focus, news interview framing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 発言を字幕表示。※実際のインタビュー映像はカンテレ特集にあり（/revenue-guard対象で差し替え可）。
 
@@ -2625,11 +2625,11 @@ A plain interview backdrop in Yuzawa, Akita: the corner of a house exterior with
 シーン: ホテル駐車場で襲われる警備員（接触は見せない・直前まで）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A 70-year-old Japanese security guard in a navy uniform and cap with a small flashlight, turning in alarm with one arm rising defensively. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A 70-year-old Japanese security guard in a navy uniform and cap with a small flashlight, turning in alarm with one arm rising defensively. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A hotel parking lot in the Zaimokucho district of Yuzawa, Akita at dawn: parked cars, a lit hotel entrance sign glow, long shadows across the asphalt. The third attack site. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A hotel parking lot in the Zaimokucho district of Yuzawa, Akita at dawn: parked cars, a lit hotel entrance sign glow, long shadows across the asphalt. The third attack site. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「材木町・70歳警備員・骨折」テロップ。ここまでの被害を短くリズミカルに刻む。
 
@@ -2641,11 +2641,11 @@ A hotel parking lot in the Zaimokucho district of Yuzawa, Akita at dawn: parked 
 シーン: 防災無線スピーカーと、家の中で耳を傾ける住民
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. An elderly Japanese woman in a brown cardigan standing by a window, one hand cupped to her ear, listening carefully to something outside, uneasy expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. An elderly Japanese woman in a brown cardigan standing by a window, one hand cupped to her ear, listening carefully to something outside, uneasy expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A gray disaster-broadcast loudspeaker pole against the morning sky over rooftops in Yuzawa, Akita, wires crossing the frame, cold light. A warning in the air. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A gray disaster-broadcast loudspeaker pole against the morning sky over rooftops in Yuzawa, Akita, wires crossing the frame, cold light. A warning in the air. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: こもった防災無線SE（言葉は聞き取れないレベル）。「警報が繰り返し」テロップ。
 
@@ -2657,11 +2657,11 @@ A gray disaster-broadcast loudspeaker pole against the morning sky over rooftops
 シーン: 家の中のCHAR-10が首をかしげて玄関の方を見る
 キャラプロンプト（1:1）:
 ```
-(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-10: 65-year-old Japanese man, brown cardigan over gray shirt, dark trousers, standing in a hallway tilting his head toward an unseen sound, puzzled mild expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-10: 65-year-old Japanese man, brown cardigan over gray shirt, dark trousers, standing in a hallway tilting his head toward an unseen sound, puzzled mild expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The interior hallway of an old Japanese townhouse in the Omotemachi district of Yuzawa, Akita: wooden floor, a sliding entrance door at the end with frosted glass glowing with morning light. Muffled sounds from outside. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The interior hallway of an old Japanese townhouse in the Omotemachi district of Yuzawa, Akita: wooden floor, a sliding entrance door at the end with frosted glass glowing with morning light. Muffled sounds from outside. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: くぐもった放送SE。「聞き取れない」の間を作る。
 
@@ -2673,11 +2673,11 @@ The interior hallway of an old Japanese townhouse in the Omotemachi district of 
 シーン: 引き戸を開けた真正面、目の前にCHAR-11（四足のまま至近距離）
 キャラプロンプト（1:1）:
 ```
-(CHAR-10 再利用)(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-10: 65-year-old Japanese man, brown cardigan, one hand still on the sliding door edge, recoiling in shock. CHAR-11: adult male Asian black bear, 130cm, dull brownish-black fur, wide white crescent, notch on right ear, on all fours filling the doorway right in front of him, head raised. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-10 再利用)(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-10: 65-year-old Japanese man, brown cardigan, one hand still on the sliding door edge, recoiling in shock. CHAR-11: adult male Asian black bear, 130cm, dull brownish-black fur, wide white crescent, notch on right ear, on all fours filling the doorway right in front of him, head raised. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Looking out through an open Japanese sliding entrance door in Yuzawa, Akita from inside: the genkan step, morning light flooding in from the narrow street beyond, framing tight and close. No distance at all. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Looking out through an open Japanese sliding entrance door in Yuzawa, Akita from inside: the genkan step, morning light flooding in from the narrow street beyond, framing tight and close. No distance at all. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 引き戸のガラガラSE→静止1秒→衝撃音。
 
@@ -2688,7 +2688,7 @@ Looking out through an open Japanese sliding entrance door in Yuzawa, Akita from
 【制作メモ】ASSET-191 [Lovart動画] 台本L579 ★AI動画
 シーン: クマが玄関から家の中へ押し入る（噛みつきは直接見せず、侵入の恐怖を描く）
 ```
-An adult Asian black bear with a wide white chest crescent shoving its way through the sliding front door of an old Japanese townhouse in Yuzawa, Akita, on all fours, doorframe rattling, morning light behind it, shot from inside the dim hallway. A home invaded. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+An adult Asian black bear with a wide white chest crescent shoving its way through the sliding front door of an old Japanese townhouse in Yuzawa, Akita, on all fours, doorframe rattling, morning light behind it, shot from inside the dim hallway. A home invaded. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -2704,11 +2704,11 @@ Interior shot down a dim Japanese townhouse hallway in Akita: an adult male Asia
 シーン: CHAR-10の証言カット
 キャラプロンプト（1:1）:
 ```
-(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-10: 65-year-old Japanese man, brown cardigan over gray shirt, seated posture with hands folded, looking down as he recalls, quiet shaken expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-10: 65-year-old Japanese man, brown cardigan over gray shirt, seated posture with hands folded, looking down as he recalls, quiet shaken expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A modest Japanese living room in Yuzawa, Akita: low table, cushion seating, soft window light through lace curtains, interview stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A modest Japanese living room in Yuzawa, Akita: low table, cushion seating, soft window light through lace curtains, interview stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「何もできなかった」を字幕表示。
 
@@ -2720,11 +2720,11 @@ A modest Japanese living room in Yuzawa, Akita: low table, cushion seating, soft
 シーン: 痛みをこらえながら外から引き戸を閉めるCHAR-10
 キャラプロンプト（1:1）:
 ```
-(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-10: 65-year-old Japanese man, brown cardigan, gritting his teeth, dragging the sliding door shut with both hands while favoring one leg, determined pained expression. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-10: 65-year-old Japanese man, brown cardigan, gritting his teeth, dragging the sliding door shut with both hands while favoring one leg, determined pained expression. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The outside of an old Japanese townhouse entrance in Yuzawa, Akita: the wooden sliding door frame, morning light on the narrow street, doorway shadows deep. Shutting danger inside. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The outside of an old Japanese townhouse entrance in Yuzawa, Akita: the wooden sliding door frame, morning light on the narrow street, doorway shadows deep. Shutting danger inside. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 引き戸が閉まる重いSE。「負傷しながら、閉めた」テロップ。
 
@@ -2736,11 +2736,11 @@ The outside of an old Japanese townhouse entrance in Yuzawa, Akita: the wooden s
 シーン: 閉じた扉を背にして立つCHAR-10。決断の重さ
 キャラプロンプト（1:1）:
 ```
-(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-10: 65-year-old Japanese man, brown cardigan, standing with his back pressed against a closed door, chest heaving, one hand still on the frame, resolute exhausted face. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-10: 65-year-old Japanese man, brown cardigan, standing with his back pressed against a closed door, chest heaving, one hand still on the frame, resolute exhausted face. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The closed wooden sliding door of a Japanese townhouse in Yuzawa, Akita from outside, faint shadow of movement behind the frosted glass, morning street quiet. A house turned cage. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The closed wooden sliding door of a Japanese townhouse in Yuzawa, Akita from outside, faint shadow of movement behind the frosted glass, morning street quiet. A house turned cage. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: すりガラスの奥の影をゆっくり動かす。「自宅を犠牲に、街を守った」の含み。
 
@@ -2752,11 +2752,11 @@ The closed wooden sliding door of a Japanese townhouse in Yuzawa, Akita from out
 シーン: 足音を忍ばせて離れるCHAR-10
 キャラプロンプト（1:1）:
 ```
-(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-10: 65-year-old Japanese man, brown cardigan, tiptoeing away with exaggerated careful steps, one finger unconsciously at his lips, glancing back over his shoulder. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-10: 65-year-old Japanese man, brown cardigan, tiptoeing away with exaggerated careful steps, one finger unconsciously at his lips, glancing back over his shoulder. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A narrow street beside an old townhouse in Yuzawa, Akita in morning light, the route away from the door, utility pole shadows. A quiet escape. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A narrow street beside an old townhouse in Yuzawa, Akita in morning light, the route away from the door, utility pole shadows. A quiet escape. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 忍び足のSEのみ。BGM無し。
 
@@ -2768,11 +2768,11 @@ A narrow street beside an old townhouse in Yuzawa, Akita in morning light, the r
 シーン: 近くの人へ必死に知らせるCHAR-10
 キャラプロンプト（1:1）:
 ```
-(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-10: 65-year-old Japanese man, brown cardigan, waving one arm urgently while pointing back toward his house with the other, calling out, urgent face. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-10: 65-year-old Japanese man, brown cardigan, waving one arm urgently while pointing back toward his house with the other, calling out, urgent face. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A street corner in Yuzawa, Akita with a telephone box and a parked patrol car in soft focus, morning light. Word getting out. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No humans visible. Empty street only. Generate 5 separate images.
+A street corner in Yuzawa, Akita with a telephone box and a parked patrol car in soft focus, morning light. Word getting out. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No humans visible. Empty street only. Generate 1 image.
 ```
 → 編集者指示: 「クマは家の中に」テロップ。サイレンSEを遠くから。
 
@@ -2783,7 +2783,7 @@ A street corner in Yuzawa, Akita with a telephone box and a parked patrol car in
 【制作メモ】ASSET-197 [Lovart静止画] 台本L591
 シーン: 玄関前に据えられた箱わな
 ```
-A large steel box trap cage positioned directly in front of the sliding entrance door of an old Japanese townhouse in Yuzawa, Akita, sandbags at its base, afternoon light, ropes securing it in place. A trap at the doorstep. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A large steel box trap cage positioned directly in front of the sliding entrance door of an old Japanese townhouse in Yuzawa, Akita, sandbags at its base, afternoon light, ropes securing it in place. A trap at the doorstep. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: ゆっくり近づく（3秒で1.0→1.1）。「玄関口に箱わな」テロップ。
 
@@ -2795,11 +2795,11 @@ A large steel box trap cage positioned directly in front of the sliding entrance
 シーン: わなの中に餌を仕込む市職員
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese city worker in a khaki field uniform and helmet, crouching to place a bundle of fruit bait inside an open cage door, careful precise motion. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese city worker in a khaki field uniform and helmet, crouching to place a bundle of fruit bait inside an open cage door, careful precise motion. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Inside view of a steel box trap in Yuzawa, Akita: mesh walls, a trigger plate at the far end, light slanting through the bars onto the floor. The mechanism of a safe capture. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Inside view of a steel box trap in Yuzawa, Akita: mesh walls, a trigger plate at the far end, light slanting through the bars onto the floor. The mechanism of a safe capture. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「餌で誘い出す作戦」テロップ。
 
@@ -2811,11 +2811,11 @@ Inside view of a steel box trap in Yuzawa, Akita: mesh walls, a trigger plate at
 シーン: 夜、家の周囲で見張り続ける警察官と市職員
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese watchers on night duty, every person a distinct individual, no two dressed alike: a police officer in a dark blue uniform holding a flashlight, and a city worker in a khaki uniform with a radio, both standing vigilant in the cold. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese watchers on night duty, every person a distinct individual, no two dressed alike: a police officer in a dark blue uniform holding a flashlight, and a city worker in a khaki uniform with a radio, both standing vigilant in the cold. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A night street in Yuzawa, Akita outside an old townhouse: traffic cones and rope cordon, a patrol car with parking lights on, one streetlamp pooling light. The long watch. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A night street in Yuzawa, Akita outside an old townhouse: traffic cones and rope cordon, a patrol car with parking lights on, one streetlamp pooling light. The long watch. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「警察・市職員が24時間待機」テロップ。夜の虫の音SE。
 
@@ -2835,11 +2835,11 @@ A night street in Yuzawa, Akita outside an old townhouse: traffic cones and rope
 シーン: 未明、わなの扉が落ちる瞬間
 キャラプロンプト（1:1）:
 ```
-(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-11: adult male Asian black bear, 130cm, dull brownish-black fur, wide white crescent, notch on right ear, on all fours inside a cage reaching toward bait as the gate drops behind him. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-11: adult male Asian black bear, 130cm, dull brownish-black fur, wide white crescent, notch on right ear, on all fours inside a cage reaching toward bait as the gate drops behind him. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The steel box trap outside the townhouse in Yuzawa, Akita in pre-dawn darkness, gate rail glinting, a single streetlamp glow, held breath of a long stakeout. The moment of capture. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The steel box trap outside the townhouse in Yuzawa, Akita in pre-dawn darkness, gate rail glinting, a single streetlamp glow, held breath of a long stakeout. The moment of capture. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「ガシャン」の金属SEを響かせる（魁の記事描写どおり未明の街に響く音）。
 
@@ -2851,11 +2851,11 @@ The steel box trap outside the townhouse in Yuzawa, Akita in pre-dawn darkness, 
 シーン: 夜通しの待機明け、時計を見上げて息をつく職員
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese city worker in a khaki uniform, dark circles under his eyes, stubble, looking at his wristwatch and exhaling a long breath of relief, shoulders finally dropping. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese city worker in a khaki uniform, dark circles under his eyes, stubble, looking at his wristwatch and exhaling a long breath of relief, shoulders finally dropping. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Dawn breaking over the rooftops of Yuzawa, Akita, pale light washing a street corner with cones and rope cordon being taken down, long night ending. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Dawn breaking over the rooftops of Yuzawa, Akita, pale light washing a street corner with cones and rope cordon being taken down, long night ending. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「100時間以上」テロップをカウンター演出で。
 
@@ -2867,11 +2867,11 @@ Dawn breaking over the rooftops of Yuzawa, Akita, pale light washing a street co
 シーン: CHAR-11の個体紹介（オス・1.3m）
 キャラプロンプト（1:1）:
 ```
-(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-11: adult male Asian black bear, 130cm, dull brownish-black shaggy fur, wide white crescent chest patch, notch on right ear, standing calmly on all fours in profile, presentation pose. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-11: adult male Asian black bear, 130cm, dull brownish-black shaggy fur, wide white crescent chest patch, notch on right ear, standing calmly on all fours in profile, presentation pose. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A neutral presentation backdrop in Akita, Japan: soft gray gradient with a faint measuring-stick shadow along the bottom edge, clean documentary tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A neutral presentation backdrop in Akita, Japan: soft gray gradient with a faint measuring-stick shadow along the bottom edge, clean documentary tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「オス・体長約1.3m＝オスとして平均的」テロップ。
 
@@ -2883,11 +2883,11 @@ A neutral presentation backdrop in Akita, Japan: soft gray gradient with a faint
 シーン: 獣医師が麻酔の準備をする（抑制した処理）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese veterinarian in a white coat and gloves, preparing a syringe with a calm somber expression, head slightly bowed in respect. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese veterinarian in a white coat and gloves, preparing a syringe with a calm somber expression, head slightly bowed in respect. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The corner of a covered work area in Yuzawa, Akita: a tarp screen, a steel table edge, soft diffuse light, respectful stillness. A hard necessary ending, nothing shown directly. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The corner of a covered work area in Yuzawa, Akita: a tarp screen, a steel table edge, soft diffuse light, respectful stillness. A hard necessary ending, nothing shown directly. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: BGMを落とし、事実として静かに1〜2秒。
 
@@ -2908,7 +2908,7 @@ The corner of a covered work area in Yuzawa, Akita: a tarp screen, a steel table
 【制作メモ】ASSET-206 [Lovart静止画] 台本L609
 シーン: 夜の飲食店街と、その一角の静まり返った家
 ```
-A narrow street of small restaurants and bars in central Yuzawa, Akita at night: lit lanterns and signs down the block, but one old townhouse at the corner dark and cordoned with rope, cold contrast. Danger in the middle of everyday life. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A narrow street of small restaurants and bars in central Yuzawa, Akita at night: lit lanterns and signs down the block, but one old townhouse at the corner dark and cordoned with rope, cold contrast. Danger in the middle of everyday life. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: ゆっくり左から右に動かす（4秒）。「市街地に5日間」テロップ。
 
@@ -2921,7 +2921,7 @@ A narrow street of small restaurants and bars in central Yuzawa, Akita at night:
 【実写】検索キーワード: `佐藤一夫 湯沢市長 会見` / `湯沢市 市長 佐藤一夫 写真`
 【実写】フォールバック（入手できない場合のLovart用）:
 ```
-A Japanese city mayor in his 60s wearing a dark suit and glasses, seated at a press conference table with a small microphone, municipal backdrop, formal lighting, news photo framing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A Japanese city mayor in his 60s wearing a dark suit and glasses, seated at a press conference table with a small microphone, municipal backdrop, formal lighting, news photo framing. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 「湯沢市 佐藤一夫 市長」肩書テロップ。
 
@@ -2933,11 +2933,11 @@ A Japanese city mayor in his 60s wearing a dark suit and glasses, seated at a pr
 シーン: 市長の判断を再現（箱わな案と銃猟案を天秤にかける会議）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese city mayor in his 60s in a dark suit and glasses, seated at a desk with both palms weighing left and right like a balance, deliberating hard, surrounded by unseen pressure. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese city mayor in his 60s in a dark suit and glasses, seated at a desk with both palms weighing left and right like a balance, deliberating hard, surrounded by unseen pressure. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A Japanese city hall meeting room in Yuzawa, Akita at night: a long table with scattered papers and teacups, whiteboard at the back, fluorescent light, crisis-meeting fatigue. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A Japanese city hall meeting room in Yuzawa, Akita at night: a long table with scattered papers and teacups, whiteboard at the back, fluorescent light, crisis-meeting fatigue. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 発言の要旨「箱わなで待つ／土のう＋銃猟も準備」を左右2枠のテロップで対比表示。長文ナレのため会議カット→わな回想の2カットで10秒以内に。
 
@@ -2949,11 +2949,11 @@ A Japanese city hall meeting room in Yuzawa, Akita at night: a long table with s
 シーン: 市長が目を伏せて語る（会見の続き）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese city mayor in his 60s in a dark suit and glasses, standing at a small podium, eyes lowered, hands gripping the podium edges, weight of responsibility on his face. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese city mayor in his 60s in a dark suit and glasses, standing at a small podium, eyes lowered, hands gripping the podium edges, weight of responsibility on his face. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A modest Japanese press conference backdrop in Yuzawa, Akita: a plain blue panel wall and a table with microphones, formal muted lighting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A modest Japanese press conference backdrop in Yuzawa, Akita: a plain blue panel wall and a table with microphones, formal muted lighting. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 発言を字幕で表示（次カットへ続く）。
 
@@ -2965,11 +2965,11 @@ A modest Japanese press conference backdrop in Yuzawa, Akita: a plain blue panel
 シーン: 「家を犠牲にしてもらった」——閉ざされた家と市長の感謝
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese city mayor in his 60s in a dark suit and glasses, bowing his head deeply in gratitude, one hand pressed to his chest. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese city mayor in his 60s in a dark suit and glasses, bowing his head deeply in gratitude, one hand pressed to his chest. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The cordoned old townhouse in Yuzawa, Akita seen at dusk: rope barrier, dark windows, the surrounding restaurant street lit and alive just beyond, poignant contrast. One house that shielded a town. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The cordoned old townhouse in Yuzawa, Akita seen at dusk: rope barrier, dark windows, the surrounding restaurant street lit and alive just beyond, poignant contrast. One house that shielded a town. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「住人に家を犠牲にしてもらった」「走り回っていたら…怖い」を2段階字幕で。しみじみしたBGM。
 
@@ -2991,11 +2991,11 @@ The cordoned old townhouse in Yuzawa, Akita seen at dusk: rope barrier, dark win
 シーン: 2頭のクマ（CHAR-07とCHAR-11）を左右に並べた対比カット
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用)(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Side-by-side comparison: CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours facing left. CHAR-11: adult male Asian black bear, 130cm, dull brownish-black fur, wide white crescent, notch on right ear, on all fours facing right. Clearly two different individuals. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用)(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Side-by-side comparison: CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours facing left. CHAR-11: adult male Asian black bear, 130cm, dull brownish-black fur, wide white crescent, notch on right ear, on all fours facing right. Clearly two different individuals. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A split-tone backdrop: the village lot of Higashinaruse on one side and the city street of Yuzawa on the other, both in Akita, joined at the center, muted documentary palette. Two stages, one problem. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A split-tone backdrop: the village lot of Higashinaruse on one side and the city street of Yuzawa on the other, both in Akita, joined at the center, muted documentary palette. Two stages, one problem. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「東成瀬村＝メス1.2m」「湯沢市＝オス1.3m」のラベルを左右に表示。「別のクマ・同じ4日間」テロップ。
 
@@ -3010,11 +3010,11 @@ A split-tone backdrop: the village lot of Higashinaruse on one side and the city
 シーン: キャスター風の語り手が統計ボードの前に立つ
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese news presenter, woman in her 30s in a navy blazer, gesturing with an open palm toward a blank presentation board beside her, composed serious expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese news presenter, woman in her 30s in a navy blazer, gesturing with an open palm toward a blank presentation board beside her, composed serious expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A clean Japanese news studio corner in Akita: a large blank presentation panel with soft rim lighting, dark blue gradient backdrop, professional broadcast look. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A clean Japanese news studio corner in Akita: a large blank presentation panel with soft rim lighting, dark blue gradient backdrop, professional broadcast look. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: パネルに「2025年 秋田県 67人」を編集で大きく表示。
 
@@ -3025,7 +3025,7 @@ A clean Japanese news studio corner in Akita: a large blank presentation panel w
 【制作メモ】ASSET-214 [Lovart静止画 + 編集者] 台本L628
 シーン: 数字を際立たせる無地ベース（都道府県比較は編集者がバー表示）
 ```
-A dark blue gradient presentation backdrop with a subtle map-paper texture, soft vignette, large clean empty space, broadcast graphics base, Japan news tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A dark blue gradient presentation backdrop with a subtle map-paper texture, soft vignette, large clean empty space, broadcast graphics base, Japan news tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 「秋田 67人（全国最多）」「岩手 40人」「福島 24人」の横バーを編集で上から順に表示（秋田だけ赤）。
 
@@ -3037,11 +3037,11 @@ A dark blue gradient presentation backdrop with a subtle map-paper texture, soft
 シーン: 語り手が全国の数字へ視線を移す
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese news presenter, woman in her 30s in a navy blazer, turning to indicate a higher point on an unseen board, expression tightening with gravity. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese news presenter, woman in her 30s in a navy blazer, turning to indicate a higher point on an unseen board, expression tightening with gravity. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A night aerial view of the Japanese archipelago glowing with city lights under deep blue darkness, documentary satellite-style beauty. The whole country in one frame. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A night aerial view of the Japanese archipelago glowing with city lights under deep blue darkness, documentary satellite-style beauty. The whole country in one frame. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「全国238人／13人が帰らぬ人に」を段階表示。
 
@@ -3052,7 +3052,7 @@ A night aerial view of the Japanese archipelago glowing with city lights under d
 【制作メモ】ASSET-216 [Lovart静止画 + 編集者] 台本L632
 シーン: 「統計開始以来最悪」を刻む無地ベース
 ```
-A stark dark presentation backdrop with a thin rising line of pale light cutting diagonally upward across the frame, minimal and ominous, broadcast graphics base. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A stark dark presentation backdrop with a thin rising line of pale light cutting diagonally upward across the frame, minimal and ominous, broadcast graphics base. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 上昇ラインの終点に「統計開始以来 最悪」を赤文字で表示。
 
@@ -3064,11 +3064,11 @@ A stark dark presentation backdrop with a thin rising line of pale light cutting
 シーン: 研究者が意外な内訳を示す
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese researcher in a white coat, man in his 30s, holding up three fingers with a surprised emphatic expression, other hand holding a clipboard. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese researcher in a white coat, man in his 30s, holding up three fingers with a surprised emphatic expression, other hand holding a clipboard. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A muted backdrop split softly between deep forest tones on one side and village rooftop tones on the other, Akita, Japan, abstract and calm. Where the attacks really happened. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A muted backdrop split softly between deep forest tones on one side and village rooftop tones on the other, Akita, Japan, abstract and calm. Where the attacks really happened. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「67人中、山の中は…3人」をため込みで表示。
 
@@ -3080,11 +3080,11 @@ A muted backdrop split softly between deep forest tones on one side and village 
 シーン: 畑・庭・道路の3景を背に立つ住民たち（生活圏の象徴）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese residents in everyday clothes, every person a distinct individual, no two dressed alike: a farmer with a hoe, a woman in a house apron with a watering can, a man in a jacket holding a shopping bag — ordinary life poses. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese residents in everyday clothes, every person a distinct individual, no two dressed alike: a farmer with a hoe, a woman in a house apron with a watering can, a man in a jacket holding a shopping bag — ordinary life poses. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A triptych-style composite in Akita, Japan: a vegetable field, a small house garden, and a residential road, joined side by side in matching autumn light, everyday places. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A triptych-style composite in Akita, Japan: a vegetable field, a small house garden, and a residential road, joined side by side in matching autumn light, everyday places. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「畑」「庭」「道路」の3語を各コマに順に表示→「64人＝生活圏」。
 
@@ -3096,11 +3096,11 @@ A triptych-style composite in Akita, Japan: a vegetable field, a small house gar
 シーン: 山側から里へ下りてくるCHAR-07の遠景（前提の崩壊）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, walking downhill on all fours with steady unhurried steps, descending toward the viewer. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, walking downhill on all fours with steady unhurried steps, descending toward the viewer. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A slope from dark forest down to village rooftops in Akita, Japan at dusk, the boundary line between wild and town dissolving in the fading light. A broken assumption. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A slope from dark forest down to village rooftops in Akita, Japan at dusk, the boundary line between wild and town dissolving in the fading light. A broken assumption. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「クマは山の中──その前提が崩れた」テロップ。
 
@@ -3112,11 +3112,11 @@ A slope from dark forest down to village rooftops in Akita, Japan at dusk, the b
 シーン: 夕暮れの村道を歩きながら考え込む研究者（転換カット）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese researcher in a white coat over a sweater, man in his 30s, walking slowly with one hand on his chin in thought, looking down at a small notebook in his other hand. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese researcher in a white coat over a sweater, man in his 30s, walking slowly with one hand on his chin in thought, looking down at a small notebook in his other hand. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-An empty village road in Higashinaruse, Akita at dusk, long shadows, a single streetlight flickering on, hushed transitional mood. One more thing in common. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+An empty village road in Higashinaruse, Akita at dusk, long shadows, a single streetlight flickering on, hushed transitional mood. One more thing in common. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「もう一つの共通点」テロップ。背景はゆっくり近づく（3秒で1.0→1.06）。
 
@@ -3128,11 +3128,11 @@ An empty village road in Higashinaruse, Akita at dusk, long shadows, a single st
 シーン: 「知らなかった」住民たちが首を横に振る
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two elderly Japanese residents shaking their heads, every person a distinct individual, no two dressed alike: a man in a beige jacket with a cane, a woman in a purple cardigan — both with unaware regretful expressions, palms raised. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two elderly Japanese residents shaking their heads, every person a distinct individual, no two dressed alike: a man in a beige jacket with a cane, a woman in a purple cardigan — both with unaware regretful expressions, palms raised. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A village noticeboard on a street corner in Akita, Japan with no warning posters on it, bare cork surface, evening light. The information that never arrived. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A village noticeboard on a street corner in Akita, Japan with no warning posters on it, bare cork surface, evening light. The information that never arrived. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「近くにクマ──知らなかった」テロップ。
 
@@ -3144,11 +3144,11 @@ A village noticeboard on a street corner in Akita, Japan with no warning posters
 シーン: 8月の掲示・回覧板と、それを見る住民（時間をお盆過ぎへ巻き戻す）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A middle-aged Japanese woman in a summer blouse holding a circular-notice clipboard, reading it with a concerned frown, fanning herself with the other hand in summer heat. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A middle-aged Japanese woman in a summer blouse holding a circular-notice clipboard, reading it with a concerned frown, fanning herself with the other hand in summer heat. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A village street in Higashinaruse, Akita in late August: green summer mountains, cicada-season light, a community noticeboard under a small roof. Sightings piling up in summer. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A village street in Higashinaruse, Akita in late August: green summer mountains, cicada-season light, a community noticeboard under a small roof. Sightings piling up in summer. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「8月・お盆過ぎから目撃相次ぐ」テロップ。季節感を夏へ切り替え。
 
@@ -3160,11 +3160,11 @@ A village street in Higashinaruse, Akita in late August: green summer mountains,
 シーン: 玄関で散歩靴をしまう高齢女性
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. An elderly Japanese woman in a light green cardigan, kneeling at her entryway putting walking shoes back into a shoe cabinet, resigned cautious expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. An elderly Japanese woman in a light green cardigan, kneeling at her entryway putting walking shoes back into a shoe cabinet, resigned cautious expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A Japanese home entryway in Higashinaruse, Akita: wooden shoe cabinet, a cane leaning by the door, soft indoor light with the door firmly closed. A habit given up for safety. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A Japanese home entryway in Higashinaruse, Akita: wooden shoe cabinet, a cane leaning by the door, soft indoor light with the door firmly closed. A habit given up for safety. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「日課の散歩をやめた人も」テロップ。
 
@@ -3176,11 +3176,11 @@ A Japanese home entryway in Higashinaruse, Akita: wooden shoe cabinet, a cane le
 シーン: CHAR-04とCHAR-05の再登場。「村の外の人」であることの提示
 キャラプロンプト（1:1）:
 ```
-(CHAR-04 再利用)(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: 76-year-old Japanese man, light gray farm jacket, dark flat cap. CHAR-05: 72-year-old Japanese woman, lavender farm smock. Standing together looking mild and unaware, drawn slightly apart from the frame edge as outsiders. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-04 再利用)(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: 76-year-old Japanese man, light gray farm jacket, dark flat cap. CHAR-05: 72-year-old Japanese woman, lavender farm smock. Standing together looking mild and unaware, drawn slightly apart from the frame edge as outsiders. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The boundary sign area at the edge of Higashinaruse village, Akita: a rural road entering the village between rice fields, autumn light, quiet threshold. The line between inside and outside. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The boundary sign area at the edge of Higashinaruse village, Akita: a rural road entering the village between rice fields, autumn light, quiet threshold. The line between inside and outside. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「夫婦は村民ではない」テロップ。
 
@@ -3192,11 +3192,11 @@ The boundary sign area at the edge of Higashinaruse village, Akita: a rural road
 シーン: 横手から村へ向かう車内の夫婦（情報の外側にいた2人）
 キャラプロンプト（1:1）:
 ```
-(CHAR-04 再利用)(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: 76-year-old Japanese man, light gray farm jacket, dark flat cap, in a seated driving posture holding a steering wheel. CHAR-05: 72-year-old Japanese woman, lavender farm smock, seated beside him chatting pleasantly. Both cheerful and unaware. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-04 再利用)(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: 76-year-old Japanese man, light gray farm jacket, dark flat cap, in a seated driving posture holding a steering wheel. CHAR-05: 72-year-old Japanese woman, lavender farm smock, seated beside him chatting pleasantly. Both cheerful and unaware. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-View through a car windshield driving a rural road from Yokote toward Higashinaruse, Akita: rice fields and low mountains ahead in morning light, peaceful commute. Driving toward what they did not know. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+View through a car windshield driving a rural road from Yokote toward Higashinaruse, Akita: rice fields and low mountains ahead in morning light, peaceful commute. Driving toward what they did not know. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「横手市から通い／村の情報は届かない」テロップ。
 
@@ -3208,11 +3208,11 @@ View through a car windshield driving a rural road from Yokote toward Higashinar
 シーン: 村職員が地図を前に対応に走る（村側の弁護へ転換）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese village office worker, man in his 40s in a white shirt and blue work vest, hurrying with a rolled map under one arm and a radio in the other hand, earnest effortful expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese village office worker, man in his 40s in a white shirt and blue work vest, hurrying with a rolled map under one arm and a radio in the other hand, earnest effortful expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Inside the Higashinaruse village office in Akita: a wall map of the village dotted with small marker magnets, desks with paperwork, fluorescent light. A small office doing what it can. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Inside the Higashinaruse village office in Akita: a wall map of the village dotted with small marker magnets, desks with paperwork, fluorescent light. A small office doing what it can. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「村は動いていなかったのか？→そうではない」テロップ。
 
@@ -3226,7 +3226,7 @@ Inside the Higashinaruse village office in Akita: a wall map of the village dott
 【実写】検索キーワード: `備前博和 東成瀬村長 写真`
 【実写】フォールバック（入手できない場合のLovart用）:
 ```
-A Japanese village mayor in his 60s wearing a gray suit and striped tie, official portrait style against a plain municipal backdrop, formal lighting, dignified calm expression. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A Japanese village mayor in his 60s wearing a gray suit and striped tie, official portrait style against a plain municipal backdrop, formal lighting, dignified calm expression. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 「東成瀬村 備前博和 村長」肩書テロップ。
 
@@ -3238,11 +3238,11 @@ A Japanese village mayor in his 60s wearing a gray suit and striped tie, officia
 シーン: 出張先で電話報告を受け立ち尽くす村長（再現）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese village mayor in his 60s in a gray suit, holding a phone to his ear, stopping mid-stride in visible shock, briefcase in the other hand. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese village mayor in his 60s in a gray suit, holding a phone to his ear, stopping mid-stride in visible shock, briefcase in the other hand. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A busy Tokyo office-district sidewalk in soft focus: tall buildings, crosswalk stripes, midday motion streaks of light along the pavement. Far from home at the worst time. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A busy Tokyo office-district sidewalk in soft focus: tall buildings, crosswalk stripes, midday motion streaks of light along the pavement. Far from home at the worst time. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 発言を字幕で表示。「都内出張中」テロップ。
 
@@ -3254,11 +3254,11 @@ A busy Tokyo office-district sidewalk in soft focus: tall buildings, crosswalk s
 シーン: うつむくハンターと、それを案じる村長（悔しさの再現）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese hunter in a dark green hunting jacket and knit hat, head bowed, fist clenched against his thigh in frustration and grief, rifle slung untouched on his back. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese hunter in a dark green hunting jacket and knit hat, head bowed, fist clenched against his thigh in frustration and grief, rifle slung untouched on his back. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The corner of a village community hall in Higashinaruse, Akita at evening: folding chairs, cold tea cups on a table, dim warm light. After the debrief. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The corner of a village community hall in Higashinaruse, Akita at evening: folding chairs, cold tea cups on a table, dim warm light. After the debrief. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「直接的な責任はないかもしれないが、悔しい」を字幕表示。「趣味のハンターに任せきりの現状」を続けて表示。
 
@@ -3270,11 +3270,11 @@ The corner of a village community hall in Higashinaruse, Akita at evening: foldi
 シーン: 車の被害確認へ向かう職員と、その背後で起きる新たな事件（すれ違いの再現）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese village office worker in a white shirt and blue work vest, walking briskly in one direction with a clipboard, unaware, while glancing at notes — heading the wrong way at the worst moment. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese village office worker in a white shirt and blue work vest, walking briskly in one direction with a clipboard, unaware, while glancing at notes — heading the wrong way at the worst moment. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A forked village road in Higashinaruse, Akita: one branch leading toward a farm road, the other toward a cluster of houses, morning light, a moment of divergence. Two directions, one hour. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A forked village road in Higashinaruse, Akita: one branch leading toward a farm road, the other toward a cluster of houses, morning light, a moment of divergence. Two directions, one hour. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 発言を字幕表示。職員の進行方向と反対側を淡く光らせる。
 
@@ -3300,11 +3300,11 @@ A forked village road in Higashinaruse, Akita: one branch leading toward a farm 
 シーン: 実用パートへの転換。語り手が前を向いて構える
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese wilderness-safety instructor, man in his 40s in a red field jacket, rolling up one sleeve and nodding firmly toward the viewer, encouraging capable expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese wilderness-safety instructor, man in his 40s in a red field jacket, rolling up one sleeve and nodding firmly toward the viewer, encouraging capable expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A calm forest clearing training area in Akita, Japan: flat ground with short grass, soft daylight, an instructional open space. Time to learn what works. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A calm forest clearing training area in Akita, Japan: flat ground with short grass, soft daylight, an instructional open space. Time to learn what works. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「対策はある」テロップ。BGMを前向きなトーンへ。
 
@@ -3316,11 +3316,11 @@ A calm forest clearing training area in Akita, Japan: flat ground with short gra
 シーン: 俗説の再現。仰向けで目を閉じて固まる人
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese man in a beige field jacket lying flat on his back with arms stiff at his sides, eyes squeezed shut, holding his breath — the classic folk-belief pose. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese man in a beige field jacket lying flat on his back with arms stiff at his sides, eyes squeezed shut, holding his breath — the classic folk-belief pose. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A patch of forest floor in Akita, Japan seen from a low angle: moss, fallen leaves, soft even light, neutral demonstration space. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A patch of forest floor in Akita, Japan seen from a low angle: moss, fallen leaves, soft even light, neutral demonstration space. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「昔からの俗説」テロップ。
 
@@ -3331,7 +3331,7 @@ A patch of forest floor in Akita, Japan seen from a low angle: moss, fallen leav
 【制作メモ】ASSET-234 [Lovart静止画 + 編集者] 台本L671
 シーン: 前カットの静止フレームに大きなバツを重ねるためのベース
 ```
-The same patch of mossy forest floor in Akita, Japan, slightly darkened and desaturated, heavy shadowed tone, judgment falling on a mistaken idea. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+The same patch of mossy forest floor in Akita, Japan, slightly darkened and desaturated, heavy shadowed tone, judgment falling on a mistaken idea. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 画面中央に大きな赤いバツ印と「間違い」テロップを重ねる。ブザーSE。
 
@@ -3343,11 +3343,11 @@ The same patch of mossy forest floor in Akita, Japan, slightly darkened and desa
 シーン: CHAR-07が地面の動かないものを鼻で探り食べようとする習性の説明
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours with her nose pressed low to the ground, sniffing and pawing at something unseen below her nose, matter-of-fact feeding behavior. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours with her nose pressed low to the ground, sniffing and pawing at something unseen below her nose, matter-of-fact feeding behavior. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Forest floor detail in Akita, Japan: disturbed leaves and overturned soil where an animal has been foraging, flat natural light, biological realism. A scavenger's table. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Forest floor detail in Akita, Japan: disturbed leaves and overturned soil where an animal has been foraging, flat natural light, biological realism. A scavenger's table. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「動かないもの＝安全、ではない」テロップ。
 
@@ -3359,11 +3359,11 @@ Forest floor detail in Akita, Japan: disturbed leaves and overturned soil where 
 シーン: 仰向けの人の横に、構わず近づくクマの前足（俗説の破綻）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours stepping calmly toward a Japanese man in a beige field jacket lying rigid on his back pretending, her nose lowering toward him. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours stepping calmly toward a Japanese man in a beige field jacket lying rigid on his back pretending, her nose lowering toward him. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-Low ground-level view of forest floor in Akita, Japan, leaves in sharp foreground, dim tense light. It does not stop. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+Low ground-level view of forest floor in Akita, Japan, leaves in sharp foreground, dim tense light. It does not stop. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 心拍SE。「やめる理由にならない」テロップ。
 
@@ -3375,11 +3375,11 @@ Low ground-level view of forest floor in Akita, Japan, leaves in sharp foregroun
 シーン: 秋田大学の研究チームが解析結果を前に顔を上げる
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese medical researchers in white coats at a desk, every person a distinct individual, no two dressed alike: a man in his 40s with glasses pointing at a printout, a woman in her 30s leaning in with sudden realization. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two Japanese medical researchers in white coats at a desk, every person a distinct individual, no two dressed alike: a man in his 40s with glasses pointing at a printout, a woman in her 30s leaning in with sudden realization. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A university research office in Akita, Japan at night: desks with document stacks and a glowing monitor, campus window lights beyond. The moment a pattern appears in the data. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A university research office in Akita, Japan at night: desks with document stacks and a glowing monitor, campus window lights beyond. The moment a pattern appears in the data. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「秋田大学の解析」テロップ。
 
@@ -3391,11 +3391,11 @@ A university research office in Akita, Japan at night: desks with document stack
 シーン: 研究者が「70人中7人」の発見を示し、隣でうつ伏せ姿勢のデモ
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese researcher in a white coat, man in his 40s with glasses, gesturing toward a demonstration beside him: a Japanese man in a beige field jacket lying face-down flat on the ground, face pressed toward the earth. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese researcher in a white coat, man in his 40s with glasses, gesturing toward a demonstration beside him: a Japanese man in a beige field jacket lying face-down flat on the ground, face pressed toward the earth. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A clean instructional backdrop in Akita, Japan: pale gradient wall over a flat floor area, soft shadowless light, room for data overlay. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A clean instructional backdrop in Akita, Japan: pale gradient wall over a flat floor area, soft shadowless light, room for data overlay. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「けがをした70人 → うつ伏せをとれた7人 → 重傷ゼロ」の3段テロップを順に表示（数字はこの通り正確に）。
 
@@ -3407,11 +3407,11 @@ A clean instructional backdrop in Akita, Japan: pale gradient wall over a flat f
 シーン: CHAR-07の視点で人の顔と首がハイライトされる説明カット
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours in a focused stalking posture, head low, eyes fixed forward with predatory attention. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours in a focused stalking posture, head low, eyes fixed forward with predatory attention. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A soft-focus gray tailor's mannequin torso on a stand in a neutral training space in Akita, Japan, plain even light, clinical demonstration prop. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No humans visible. Empty room only. Generate 5 separate images.
+A soft-focus gray tailor's mannequin torso on a stand in a neutral training space in Akita, Japan, plain even light, clinical demonstration prop. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No humans visible. Empty room only. Generate 1 image.
 ```
 → 編集者指示: 人型の顔と首の部分を赤くハイライト。「狙いは顔と首」テロップ。
 
@@ -3422,7 +3422,7 @@ A soft-focus gray tailor's mannequin torso on a stand in a neutral training spac
 【制作メモ】ASSET-240 [Lovart動画] 台本L683 ★AI動画（実用情報の核心）
 シーン: うつ伏せ防御姿勢のデモンストレーション（お手本動作）
 ```
-An instructional demonstration in a calm forest clearing in Akita, Japan: a Japanese man in a beige field jacket dropping smoothly to the ground into a face-down protective position, face pressed toward the earth, body flat, filmed in clear steady daylight. Safety demonstration clarity. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+An instructional demonstration in a calm forest clearing in Akita, Japan: a Japanese man in a beige field jacket dropping smoothly to the ground into a face-down protective position, face pressed toward the earth, body flat, filmed in clear steady daylight. Safety demonstration clarity. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
@@ -3438,11 +3438,11 @@ Instructional footage in a calm forest clearing in Akita: a Japanese man in a be
 シーン: うつ伏せ姿勢の人の背中側がハイライトされる（守れる範囲の説明）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese man in a beige field jacket lying face-down flat in the protective position, drawn calm and stable, his back and arms rendered slightly brighter as the exposed but survivable zone. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese man in a beige field jacket lying face-down flat in the protective position, drawn calm and stable, his back and arms rendered slightly brighter as the exposed but survivable zone. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The same calm forest clearing floor in Akita, Japan from a low side angle, soft daylight, instructional neutrality. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The same calm forest clearing floor in Akita, Japan from a low side angle, soft daylight, instructional neutrality. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 背中・腕を黄色、顔・首・腹を緑でハイライトし「命に直結しない／守れている」を対比表示。
 
@@ -3454,11 +3454,11 @@ The same calm forest clearing floor in Akita, Japan from a low side angle, soft 
 シーン: 研究者が結論を静かに述べる
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese researcher in a white coat, man in his 40s with glasses, hands folded on a desk, delivering a measured conclusion directly to the viewer, calm confident expression. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese researcher in a white coat, man in his 40s with glasses, hands folded on a desk, delivering a measured conclusion directly to the viewer, calm confident expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A quiet university office in Akita, Japan with warm desk light and a window showing dusk, settled and conclusive mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+A quiet university office in Akita, Japan with warm desk light and a window showing dusk, settled and conclusive mood. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「うつ伏せ＝重症化を防ぐ可能性」テロップ（断定にしない）。
 
@@ -3469,7 +3469,7 @@ A quiet university office in Akita, Japan with warm desk light and a window show
 【制作メモ】ASSET-243 [Lovart静止画 + 編集者] 台本L689
 シーン: 3択の結論を刻む無地ベース
 ```
-A minimal dark-green gradient backdrop with three faint horizontal bands of light across the frame, calm and resolute, instructional graphics base, Akita, Japan documentary tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+A minimal dark-green gradient backdrop with three faint horizontal bands of light across the frame, calm and resolute, instructional graphics base, Akita, Japan documentary tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 「逃げる ×」「戦う ×」「伏せる ○」を1行ずつ表示（×は赤、○は緑）。
 
@@ -3481,11 +3481,11 @@ A minimal dark-green gradient backdrop with three faint horizontal bands of ligh
 シーン: うつ伏せ姿勢の総まとめ。逃げたい衝動と、それでも伏せる選択
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese man in a beige field jacket shown in two small sequential poses side by side: first tensing as if about to bolt, then choosing to drop face-down into the flat protective position. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese man in a beige field jacket shown in two small sequential poses side by side: first tensing as if about to bolt, then choosing to drop face-down into the flat protective position. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-The calm forest clearing in Akita, Japan at golden hour, long soft shadows across short grass, a settled instructive endnote. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
+The calm forest clearing in Akita, Japan at golden hour, long soft shadows across short grass, a settled instructive endnote. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「軽傷で済んだ人がいた——貴重なデータ」テロップで実用パートを締める。
 

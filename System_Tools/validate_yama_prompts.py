@@ -112,7 +112,9 @@ def check_forbidden_words_in_prompts(lines):
 
 
 def check_generate_wording(lines):
-    """Generate 5 images. (separateなし) の検出"""
+    """生成枚数チェック（2026-08-20改定: ユーザー指定で1枚生成に統一）:
+    - 'Generate 5' 等の複数枚指定はFAIL
+    - プロンプト末尾は 'Generate 1 image.'（CHAR基準は 'Generate 1 image, showing only this one character.'）"""
     issues = []
     in_code = False
 
@@ -124,8 +126,9 @@ def check_generate_wording(lines):
         if not in_code:
             continue
 
-        if 'Generate 5 images.' in s and 'separate' not in s:
-            issues.append((i + 1, s[:80]))
+        m = re.search(r'Generate\s+(\d+)\s+(?:separate\s+)?images?', s)
+        if m and m.group(1) != '1':
+            issues.append((i + 1, f"複数枚指定 'Generate {m.group(1)}' → 'Generate 1 image.' に統一（2026-08-20ユーザー指定）: " + s[:60]))
 
     return issues
 
@@ -978,7 +981,7 @@ def check_one_character_per_image_clause(lines):
     """
     char_prompt_label = re.compile(r'^\s*(キャラプロンプト|キャラアニメーション|キャラ流用|キャラ静止画)[①②③④⑤1-5]?[（(]?')
     char_definition_header = re.compile(r'^###\s+CHAR-\d+')
-    required_phrase = 'each showing only this one character'
+    required_phrase = 'showing only this one character'
     forbidden_variation_pattern = re.compile(
         r'Generate\s+\d+\s+separate\s+images?\s+with\s+(subtle\s+)?variations?\s*[\(（]', re.I
     )
@@ -1099,7 +1102,7 @@ def check_no_scene_words_in_char_prompt(lines):
 def check_background_generate_clause(lines):
     """背景プロンプトの末尾に `Generate N separate images.` 定型句が含まれているか検証"""
     bg_label = re.compile(r'^\s*背景プロンプト[（(]')
-    required_pattern = re.compile(r'Generate\s+\d+\s+separate\s+images?\.', re.I)
+    required_pattern = re.compile(r'Generate\s+\d+\s+(?:separate\s+)?images?\.', re.I)
     blocks = split_into_asset_blocks(lines)
     issues = []
     for asset_id, start, end, block_lines in blocks:
@@ -1117,7 +1120,7 @@ def check_background_generate_clause(lines):
                 continue
             if not required_pattern.search(body_text):
                 actual_line = start + idx + 1
-                issues.append((actual_line, asset_id, "背景プロンプト末尾 `Generate N separate images.` 欠落"))
+                issues.append((actual_line, asset_id, "背景プロンプト末尾 `Generate 1 image.` 欠落"))
     return issues
 
 
