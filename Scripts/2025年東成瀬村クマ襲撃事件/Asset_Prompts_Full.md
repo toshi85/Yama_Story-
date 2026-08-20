@@ -2,7 +2,7 @@
 
 > **この1ファイルに全てが入っています**: CHAR基準画像11体 → 起（ASSET-001〜015）→ 承（016〜244）→ 転結（245〜286）→ サマリー
 > 全プロンプトは「Generate 1 image.」＝1枚生成（2026-08-20 ユーザー指定）。
-> 冒頭フック（§1）は全カット実写風AI動画（カートゥン禁止・ユーザー裁定）。[Lovart動画]は静止画を先に生成→Google Flowで動画化の2段階。
+> 冒頭フック（§1）は全カット実写風AI動画（カートゥン禁止・ユーザー裁定）。[Lovart動画]は静止画を先に生成→Google Flowで動画化の2段階。Google Earthは連続2回まで。
 > 分割版（_KI/_SHO/_TEN_KETSU）と内容は同一。編集は分割版に対して行い、Fullは再生成すること。
 
 ---
@@ -290,11 +290,16 @@ Side profile of a 76-year-old Japanese hunter in an olive-brown vest and blaze-o
 
 ナレーター: 面積のおよそ93パーセントが山林と原野で占められた、人口2,100人ほどの村。
 
-【制作メモ】ASSET-013 [Google Earth] 台本L183
-シーン: 村の全景を低めの俯瞰で見せ、山林93%・人口2,100人の規模感を地形で伝える
-座標: `39.1792, 140.6489`（東成瀬村役場）
-カメラ: 高度6,000〜8,000m、斜め35°、3D地形ON、村域全体（南北に細長い谷）が入る向き
-→ 編集者指示: 「山林・原野 93%」「人口 約2,100人」の2行テロップを左下に順番にフェードイン。村域の輪郭を白線で薄くなぞる。
+【制作メモ】ASSET-013 [Lovart動画] 台本L183 ※GE3連続を回避（GEは連続2回まで・2026-08-20ルール化）
+シーン: 見渡す限りの山林の中に、細長い集落がぽつんと沈む村の空撮（実写風）
+```
+High aerial still view over a tiny Japanese mountain village in Akita: a thin line of dark-roofed houses and small fields along a single road in a narrow valley, surrounded on all sides by endless forested mountains in autumn colors, morning mist lying in the side valleys. The village looks small and isolated in a sea of forest. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 1 image.
+```
+→ **Google Flow動画プロンプト:**
+```
+Slow forward aerial drone movement over a narrow Japanese mountain valley in autumn: a small village of dark-roofed houses and tiny fields along one road below, endless forested ridges in gold and red on every side, thin morning mist drifting through the side valleys. No people visible. 5 seconds. Photorealistic, shot on RED camera. Documentary drama style.
+```
+→ 編集者指示: 「山林・原野 93%」「人口 約2,100人」の2行テロップを左下に順番にフェードイン。
 
 ---
 
@@ -4487,8 +4492,8 @@ A wide serene sunrise over the Higashinaruse valley in Akita: golden light slowl
 
 | 項目 | 数 |
 |:--|--:|
-| Lovart動画（Google Flow使用） | 20本 |
-| ASSET番号 | 001〜010（冒頭フック全カット・ユーザー裁定）, 027, 106, 140, 183, 191, 240, 260, 276, 285, 286 |
+| Lovart動画（Google Flow使用） | 21本 |
+| ASSET番号 | 001〜010（冒頭フック全カット）, 013, 027, 106, 140, 183, 191, 240, 260, 276, 285, 286 |
 | 上限（ASSET_CHECKLIST基準） | 12本/作 |
 | 判定 | ⚠️ 20本＝上限超過。冒頭フック全動画化のユーザー裁定（2026-08-20）による超過で承認済み |
 

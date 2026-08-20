@@ -667,8 +667,8 @@ A wide serene sunrise over the Higashinaruse valley in Akita: golden light slowl
 
 | 項目 | 数 |
 |:--|--:|
-| Lovart動画（Google Flow使用） | 20本 |
-| ASSET番号 | 001〜010（冒頭フック全カット・ユーザー裁定）, 027, 106, 140, 183, 191, 240, 260, 276, 285, 286 |
+| Lovart動画（Google Flow使用） | 21本 |
+| ASSET番号 | 001〜010（冒頭フック全カット）, 013, 027, 106, 140, 183, 191, 240, 260, 276, 285, 286 |
 | 上限（ASSET_CHECKLIST基準） | 12本/作 |
 | 判定 | ⚠️ 20本＝上限超過。冒頭フック全動画化のユーザー裁定（2026-08-20）による超過で承認済み |
 

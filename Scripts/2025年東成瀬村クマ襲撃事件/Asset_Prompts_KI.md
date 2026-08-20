@@ -281,11 +281,16 @@ Side profile of a 76-year-old Japanese hunter in an olive-brown vest and blaze-o
 
 ナレーター: 面積のおよそ93パーセントが山林と原野で占められた、人口2,100人ほどの村。
 
-【制作メモ】ASSET-013 [Google Earth] 台本L183
-シーン: 村の全景を低めの俯瞰で見せ、山林93%・人口2,100人の規模感を地形で伝える
-座標: `39.1792, 140.6489`（東成瀬村役場）
-カメラ: 高度6,000〜8,000m、斜め35°、3D地形ON、村域全体（南北に細長い谷）が入る向き
-→ 編集者指示: 「山林・原野 93%」「人口 約2,100人」の2行テロップを左下に順番にフェードイン。村域の輪郭を白線で薄くなぞる。
+【制作メモ】ASSET-013 [Lovart動画] 台本L183 ※GE3連続を回避（GEは連続2回まで・2026-08-20ルール化）
+シーン: 見渡す限りの山林の中に、細長い集落がぽつんと沈む村の空撮（実写風）
+```
+High aerial still view over a tiny Japanese mountain village in Akita: a thin line of dark-roofed houses and small fields along a single road in a narrow valley, surrounded on all sides by endless forested mountains in autumn colors, morning mist lying in the side valleys. The village looks small and isolated in a sea of forest. Photorealistic, shot on RED camera. Documentary drama style. 16:9 aspect ratio. Generate 1 image.
+```
+→ **Google Flow動画プロンプト:**
+```
+Slow forward aerial drone movement over a narrow Japanese mountain valley in autumn: a small village of dark-roofed houses and tiny fields along one road below, endless forested ridges in gold and red on every side, thin morning mist drifting through the side valleys. No people visible. 5 seconds. Photorealistic, shot on RED camera. Documentary drama style.
+```
+→ 編集者指示: 「山林・原野 93%」「人口 約2,100人」の2行テロップを左下に順番にフェードイン。
 
 ---
 

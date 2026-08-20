@@ -799,6 +799,29 @@ def check_video_still_block_motion(lines):
     return issues
 
 
+def check_ge_consecutive(lines):
+    """Google Earth連続チェック（2026-08-20追加）: [Google Earth]アセットの3連続を検出（連続2回まで）。"""
+    issues = []
+    streak = 0
+    first_ln = None
+    ids = []
+    for i, line in enumerate(lines):
+        m = re.match(r'【制作メモ】(ASSET-\d+)\s*\[([^\]]+)\]', line.strip())
+        if not m:
+            continue
+        if m.group(2) == 'Google Earth':
+            streak += 1
+            ids.append(m.group(1))
+            if streak == 1:
+                first_ln = i + 1
+            if streak == 3:
+                issues.append((first_ln, f"Google Earthが3連続（{'/'.join(ids[-3:])}）。連続2回まで。3つ目を動画/キャラアニメ等に差し替える"))
+        else:
+            streak = 0
+            ids = []
+    return issues
+
+
 def check_trailing_garbage(lines):
     """末尾ゴミ行チェック: 最後のASSETのプロンプト・編集者指示の後に
     孤立したナレーション行や大量の空行がないか検出する。"""
@@ -1455,6 +1478,16 @@ def main():
         print(f"   → [Google Earth]は座標+カメラ指示のみ。Lovart用プロンプト(```)は禁止")
     else:
         print("✅ PASS: Google Earthプロンプト禁止（```ブロックなし）")
+
+    # 26. Google Earth連続チェック（連続2回まで）
+    issues = check_ge_consecutive(lines)
+    if issues:
+        all_pass = False
+        print(f"\n❌ FAIL: Google Earth 3連続 ({len(issues)}件)")
+        for ln, desc in issues:
+            print(f"   L{ln}: {desc}")
+    else:
+        print("✅ PASS: Google Earth連続（2回以内）")
 
     # 25. [Lovart動画]静止画ブロックの動き記述チェック
     issues = check_video_still_block_motion(lines)
