@@ -142,7 +142,7 @@ View through a kei truck windshield from inside the cab: a narrow farm road and 
 シーン: CHAR-08がハンドル中央を強く押す
 キャラプロンプト（1:1）:
 ```
-(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, gray work cap, seated posture holding a simple car steering wheel drawn in the same cartoon style, both palms slamming down hard on the horn button at its center, desperate shouting expression. Only the steering wheel as a prop, no dashboard, no car interior. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-08: Japanese man in his 70s, navy farm work jacket, gray work cap, seated posture holding a simple car steering wheel drawn in the same cartoon style, both palms slamming down hard on the horn button at its center, desperate shouting expression. Only the steering wheel as a prop, nothing else around him. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
