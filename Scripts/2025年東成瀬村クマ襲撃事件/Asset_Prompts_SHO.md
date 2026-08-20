@@ -823,9 +823,9 @@ A village vacant lot in Higashinaruse, Akita, with a patrol car and a red fire d
 ```
 背景プロンプト（16:9）:
 ```
-Wide view of a vacant lot in Higashinaruse, Akita: four small distant figures collapsed in disorder at scattered angles far from the camera — light gray farm jacket face-down, lavender work smock curled sideways, dark navy fleece jacket sprawled on his back, olive-gray carpenter jacket crumpled half-turned — faint dark red stains in the grass around them, too far away for any further detail, cold gray light, emergency vehicle lights reflecting faintly on the grass. Grave and restrained. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+Wide view of a vacant lot in Higashinaruse, Akita: four small distant figures collapsed in disorder at scattered angles far from the camera — light gray farm jacket face-down, lavender work smock curled sideways, dark navy fleece jacket sprawled on his back, olive-gray carpenter jacket crumpled half-turned — too far away for any further detail, cold gray light, emergency vehicle lights reflecting faintly on the grass. Grave and restrained. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
-→ 編集者指示: 彩度を落とし、直接的な描写は一切入れない。1〜2秒。
+→ 編集者指示: 彩度を落とし、直接的な描写は一切入れない。血痕が必要ならCapCutで暗赤色の染みを地面に後付け（AI生成には含めない）。1〜2秒。
 
 ---
 
