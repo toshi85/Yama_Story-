@@ -230,11 +230,11 @@ A Japanese police patrol car with red lights flashing speeds along a narrow rura
 【制作メモ】ASSET-008 [Lovart動画] 台本L169 ★フック最大の画（HOOK-IMAGE）
 シーン: 空き地に4人が倒れており、その奥をクマが山へ走り去っていく。引きの構図で直接的な描写は避ける
 ```
-Wide high-angle still of an open lot in a Japanese mountain village: four Japanese adults lying motionless on the ground at a distance, each clearly distinct even from afar — an elderly thin man in his 70s in a light gray farm jacket and dark flat cap, an elderly small woman in her 70s in a lavender work smock, a sturdy man in his late 30s in a dark navy fleece jacket, and a lean man in his 60s in an olive-gray carpenter jacket — no injuries visible at this distance, and a black bear frozen mid-run away from the scene toward the forested mountain in the background, dust and leaves suspended behind it. Late October morning, muted colors, documentary realism, tragic and quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+Wide high-angle still of an open lot in a Japanese mountain village: four Japanese adults collapsed in chaotic disorder, scattered at uneven distances and facing different directions — an elderly thin man in his 70s in a light gray farm jacket sprawled face-down near a shed, his dark flat cap thrown a meter away; an elderly small woman in her 70s in a lavender work smock curled on her side in the grass; a sturdy man in his late 30s in a dark navy fleece jacket on his back with one arm flung outward, far from the others; a lean man in his 60s in an olive-gray carpenter jacket crumpled half-turned on the gravel edge — dark red stains soaked into the trampled grass and soil around them, a garden trowel and a dropped tool bag scattered between, and a black bear frozen mid-run away from the scene toward the forested mountain in the background, dust and leaves suspended behind it. Late October morning, muted colors, documentary realism, tragic and quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
-Static wide high-angle shot of an open lot in a rural Japanese village in autumn: four Japanese adults lying motionless far from the camera, each distinct by clothing — an elderly man in a light gray farm jacket and flat cap, an elderly woman in a lavender work smock, a man in a dark navy fleece jacket, a man in an olive-gray carpenter jacket — no injuries visible, while one black bear with a white chest crescent runs on all fours away from the scene toward the dark forested mountain. The bear moves fast, dust and fallen leaves kicked up. Camera holds still. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+Static wide high-angle shot of an open lot in a rural Japanese village in autumn: four Japanese adults collapsed in chaotic disorder at scattered angles and distances — an elderly man in a light gray farm jacket face-down near a shed, his flat cap thrown aside; an elderly woman in a lavender work smock curled on her side; a man in a dark navy fleece jacket on his back with one arm flung out; a man in an olive-gray carpenter jacket crumpled half-turned on the gravel — dark red stains soaked into the grass around them, while one black bear with a white chest crescent runs on all fours away from the scene toward the dark forested mountain. The bear moves fast, dust and fallen leaves kicked up. Camera holds still. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: 音を一瞬すべて消してこのカットを見せる（3〜4秒）。直後に心拍音。
 
@@ -837,7 +837,7 @@ The front entrance of a Japanese country house in Akita with the sliding door le
 ```
 背景プロンプト（16:9）:
 ```
-Wide view of a vacant lot behind village houses in Higashinaruse, Akita: two small distant figures lying on the grass near a shed — one in a light gray farm jacket with a dark flat cap fallen beside him, one in a lavender work smock — too far away for any detail or injury to be visible, cold late-morning light. Tragic stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+Wide view of a vacant lot behind village houses in Higashinaruse, Akita: two small distant figures collapsed at different angles on the grass near a shed — one in a light gray farm jacket face-down, his dark flat cap fallen a meter away, one in a lavender work smock curled on her side — too far away for any detail to be visible, cold late-morning light. Tragic stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 直接的な描写はしない。画面の彩度を落とし、心拍と耳鳴りのSE。1〜2秒で次へ。
 
@@ -1005,7 +1005,7 @@ A narrow village lane in Higashinaruse, Akita, leading toward an open lot, telep
 ```
 背景プロンプト（16:9）:
 ```
-Very wide view of a vacant lot in Higashinaruse, Akita: three small distant figures lying on the grass — one in a light gray farm jacket, one in a lavender work smock, one in a dark navy fleece jacket — too far away for any detail or injury to be visible, a parked car and shed at the edges, cold overcast light. Silent devastation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+Very wide view of a vacant lot in Higashinaruse, Akita: three small distant figures collapsed at scattered angles on the grass — one in a light gray farm jacket face-down, one in a lavender work smock curled on her side, one in a dark navy fleece jacket sprawled on his back apart from the others — too far away for any detail to be visible, a parked car and shed at the edges, cold overcast light. Silent devastation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 音を絞り、風の音だけにする。2秒。
 
@@ -1152,7 +1152,7 @@ A village vacant lot in Higashinaruse, Akita, with a patrol car and a red fire d
 ```
 背景プロンプト（16:9）:
 ```
-Wide view of a vacant lot in Higashinaruse, Akita: four small distant figures on the grass far from the camera — light gray farm jacket, lavender work smock, dark navy fleece jacket, olive-gray carpenter jacket — too far away for any detail or injury to be visible, cold gray light, emergency vehicle lights reflecting faintly on the grass. Grave and restrained. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+Wide view of a vacant lot in Higashinaruse, Akita: four small distant figures collapsed in disorder at scattered angles far from the camera — light gray farm jacket face-down, lavender work smock curled sideways, dark navy fleece jacket sprawled on his back, olive-gray carpenter jacket crumpled half-turned — faint dark red stains in the grass around them, too far away for any further detail, cold gray light, emergency vehicle lights reflecting faintly on the grass. Grave and restrained. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 彩度を落とし、直接的な描写は一切入れない。1〜2秒。
 

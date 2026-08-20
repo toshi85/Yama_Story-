@@ -508,7 +508,7 @@ The front entrance of a Japanese country house in Akita with the sliding door le
 ```
 背景プロンプト（16:9）:
 ```
-Wide view of a vacant lot behind village houses in Higashinaruse, Akita: two small distant figures lying on the grass near a shed — one in a light gray farm jacket with a dark flat cap fallen beside him, one in a lavender work smock — too far away for any detail or injury to be visible, cold late-morning light. Tragic stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+Wide view of a vacant lot behind village houses in Higashinaruse, Akita: two small distant figures collapsed at different angles on the grass near a shed — one in a light gray farm jacket face-down, his dark flat cap fallen a meter away, one in a lavender work smock curled on her side — too far away for any detail to be visible, cold late-morning light. Tragic stillness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 直接的な描写はしない。画面の彩度を落とし、心拍と耳鳴りのSE。1〜2秒で次へ。
 
@@ -676,7 +676,7 @@ A narrow village lane in Higashinaruse, Akita, leading toward an open lot, telep
 ```
 背景プロンプト（16:9）:
 ```
-Very wide view of a vacant lot in Higashinaruse, Akita: three small distant figures lying on the grass — one in a light gray farm jacket, one in a lavender work smock, one in a dark navy fleece jacket — too far away for any detail or injury to be visible, a parked car and shed at the edges, cold overcast light. Silent devastation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+Very wide view of a vacant lot in Higashinaruse, Akita: three small distant figures collapsed at scattered angles on the grass — one in a light gray farm jacket face-down, one in a lavender work smock curled on her side, one in a dark navy fleece jacket sprawled on his back apart from the others — too far away for any detail to be visible, a parked car and shed at the edges, cold overcast light. Silent devastation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 音を絞り、風の音だけにする。2秒。
 
@@ -823,7 +823,7 @@ A village vacant lot in Higashinaruse, Akita, with a patrol car and a red fire d
 ```
 背景プロンプト（16:9）:
 ```
-Wide view of a vacant lot in Higashinaruse, Akita: four small distant figures on the grass far from the camera — light gray farm jacket, lavender work smock, dark navy fleece jacket, olive-gray carpenter jacket — too far away for any detail or injury to be visible, cold gray light, emergency vehicle lights reflecting faintly on the grass. Grave and restrained. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+Wide view of a vacant lot in Higashinaruse, Akita: four small distant figures collapsed in disorder at scattered angles far from the camera — light gray farm jacket face-down, lavender work smock curled sideways, dark navy fleece jacket sprawled on his back, olive-gray carpenter jacket crumpled half-turned — faint dark red stains in the grass around them, too far away for any further detail, cold gray light, emergency vehicle lights reflecting faintly on the grass. Grave and restrained. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 彩度を落とし、直接的な描写は一切入れない。1〜2秒。
 
