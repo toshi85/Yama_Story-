@@ -118,9 +118,16 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 
 ナレーター: 2025年10月24日。秋田県の東成瀬村（ひがしなるせむら）。
 
-【制作メモ】ASSET-001 [テキストのみ] 台本L155
-シーン: 黒背景に日付と地名の全画面テロップ（朱鞠内湖で維持率貢献が実証された開始型）
-→ 編集者指示: 黒背景に「2025年10月24日」を白テキストでフェードイン（1秒）、続けて下段に「秋田県 東成瀬村」を表示。低いドローン音のBGMを開始。
+【制作メモ】ASSET-001 [Lovart動画] 台本L155 ★冒頭は必ず動画（恒久ルール）
+シーン: 夜明け直後の東成瀬村を進む不穏な空撮。この動画の上に日付・地名テロップを重ねる（朱鞠内湖型の開始）
+```
+Slow ominous aerial drone shot at first light over a small mountain village in Akita, Japan: dark forested ridges pressing in on a thin line of houses along one road, cold mist creeping through the valley, muted pre-dawn blue tones. Something is coming. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+```
+→ **Google Flow動画プロンプト:**
+```
+Slow forward aerial drone movement at first light over a narrow Japanese mountain valley in Akita: dark forested ridges, a thin line of village houses below, cold mist drifting between the trees, muted blue pre-dawn tones, steady ominous glide. No people visible. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+```
+→ 編集者指示: 動画の上に「2025年10月24日」を白テキストでフェードイン（1秒）、続けて下段に「秋田県 東成瀬村」。低いドローン音のBGMを開始。
 
 ---
 
@@ -279,16 +286,11 @@ Looking up a grassy embankment toward a small wooded hilltop on the edge of a Ja
 
 ナレーター: 面積のおよそ93パーセントが山林と原野で占められた、人口2,100人ほどの村。
 
-【制作メモ】ASSET-013 [Lovart動画] 台本L183
-シーン: 山あいに小さな集落がぽつんと沈む村の空撮。見渡す限りの山林の中の細長い集落
-```
-Aerial drone shot slowly gliding over a tiny Japanese mountain village in Akita: a thin line of houses and small fields along a single road in a narrow valley, surrounded on all sides by endless forested mountains in autumn colors, morning mist in the valleys. The village looks small and isolated in a sea of forest. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
-```
-→ **Google Flow動画プロンプト:**
-```
-Slow forward aerial drone movement over a narrow Japanese mountain valley in autumn: a small village of dark-roofed houses and tiny fields along one road, surrounded by endless forested ridges in gold and red, thin morning mist drifting through the valleys. No people visible. Camera glides forward smoothly. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
-```
-→ 編集者指示: 「山林・原野 93%」「人口 約2,100人」の2行テロップを左下に順番にフェードイン。
+【制作メモ】ASSET-013 [Google Earth] 台本L183
+シーン: 村の全景を低めの俯瞰で見せ、山林93%・人口2,100人の規模感を地形で伝える
+座標: `39.1792, 140.6489`（東成瀬村役場）
+カメラ: 高度6,000〜8,000m、斜め35°、3D地形ON、村域全体（南北に細長い谷）が入る向き
+→ 編集者指示: 「山林・原野 93%」「人口 約2,100人」の2行テロップを左下に順番にフェードイン。村域の輪郭を白線で薄くなぞる。
 
 ---
 

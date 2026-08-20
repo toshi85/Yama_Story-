@@ -623,23 +623,31 @@ The village of Higashinaruse, Akita seen from a low rise in late-spring light: r
 
 ナレーター: 佐々木喜行さんのご冥福を心からお祈りいたします。
 
-【制作メモ】ASSET-285 [Lovart静止画] 台本L783
-シーン: 白菊と夕暮れの山並み（追悼の献花）
+【制作メモ】ASSET-285 [Lovart動画] 台本L783 ★末尾は必ずAI動画（恒久ルール）
+シーン: 白菊と夕暮れの山並み（追悼の献花）。花びらと空がゆっくり動く
 ```
 A single bouquet of white chrysanthemums resting on a wooden rail overlooking the dusk mountains of Higashinaruse, Akita, soft violet-orange sky, profound respectful stillness. In memoriam. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
-→ 編集者指示: 「佐々木喜行さんのご冥福をお祈りいたします」を静かに表示。BGMを絞る。ゆっくり近づく（5秒で1.0→1.05）。
+→ **Google Flow動画プロンプト:**
+```
+A quiet mourning scene at dusk in Higashinaruse, Akita: white chrysanthemum petals trembling faintly in a soft breeze on a wooden rail, the violet-orange sky slowly deepening behind the dark mountain ridgeline, camera almost still with the gentlest push in. Reverent and calm. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+```
+→ 編集者指示: 「佐々木喜行さんのご冥福をお祈りいたします」を静かに表示。BGMを絞る。
 
 ---
 
 ナレーター: 最後までご視聴いただき、ありがとうございました。
 
-【制作メモ】ASSET-286 [Lovart静止画] 台本L785
-シーン: 朝日が差す東成瀬村の遠景（エンドカードのベース）
+【制作メモ】ASSET-286 [Lovart動画] 台本L785 ★末尾は必ずAI動画（恒久ルール）
+シーン: 朝日が差す東成瀬村の遠景。霧が流れ、光が村に広がる（エンドカードのベース）
 ```
 A wide serene view of the Higashinaruse valley in Akita at sunrise: golden light spilling over the ridgelines onto the small village below, thin morning mist, peaceful renewal. The story ends, the village continues. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
 ```
-→ 編集者指示: 「ご視聴ありがとうございました」を中央に表示し、終了画面（再生リスト・チャンネル登録）の要素を右下に配置。ゆっくり近づく（6秒で1.0→1.06）。
+→ **Google Flow動画プロンプト:**
+```
+A wide serene sunrise over the Higashinaruse valley in Akita: golden light slowly spreading down the forested ridgelines onto a small village below, thin morning mist drifting and thinning, very slow gentle aerial drift forward. Peaceful closing shot. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+```
+→ 編集者指示: 「ご視聴ありがとうございました」を中央に表示し、終了画面（再生リスト・チャンネル登録）の要素を右下に配置。
 
 ---
 
@@ -647,12 +655,12 @@ A wide serene view of the Higashinaruse valley in Akita at sunrise: golden light
 
 | カテゴリ | 件数 | 自分の作業 | 編集者の作業 |
 |----------|------|-----------|------------|
-| キャラアニメーション | 211箇所 | キャラ+背景をコピペ→選ぶ | CapCutで合成・キーフレーム |
-| Lovart静止画（+編集者含む） | 28枚 | コピペ→選ぶ | 動き指示・テキスト追加 |
+| キャラアニメーション | 213箇所 | キャラ+背景をコピペ→選ぶ | CapCutで合成・キーフレーム |
+| Lovart静止画（+編集者含む） | 29枚 | コピペ→選ぶ | 動き指示・テキスト追加 |
 | Lovart動画（Google Flow） | 12本 | コピペ→選ぶ→Flowで動画化 | なし |
 | Google Earth | 12箇所 | なし | GoogleEarth指示書.md を見て録画 |
 | 実写 | 14件 | URL先から取得（/revenue-guard判定） | 引用テロップ |
-| テキストのみ | 9件 | なし | 黒背景テロップ作成 |
+| テキストのみ | 8件 | なし | 黒背景テロップ作成 |
 | **合計** | **286件（台本286行・1行1アセット）** | | |
 
 ## 動画予算サマリー
@@ -660,7 +668,7 @@ A wide serene view of the Higashinaruse valley in Akita at sunrise: golden light
 | 項目 | 数 |
 |:--|--:|
 | Lovart動画（Google Flow使用） | 12本 |
-| ASSET番号 | 008, 013, 027, 041, 077, 106, 140, 183, 191, 240, 260, 276 |
+| ASSET番号 | 001, 008, 027, 106, 140, 183, 191, 240, 260, 276, 285, 286（冒頭・末尾は恒久ルールで必須） |
 | 上限（ASSET_CHECKLIST基準） | 12本/作 |
 | 判定 | ✅ 上限ちょうど・予算内 |
 

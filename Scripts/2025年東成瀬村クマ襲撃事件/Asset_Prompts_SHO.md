@@ -375,16 +375,17 @@ The same vacant lot behind houses in a Japanese mountain village in Akita, now i
 
 ナレーター: 小屋の陰から先ほどのツキノワグマが接近。
 
-【制作メモ】ASSET-041 [Lovart動画] 台本L246 ★AI動画
-シーン: 小屋の陰からクマが音もなく現れ、低い姿勢で近づいてくる
+【制作メモ】ASSET-041 [キャラアニメーション] 台本L246
+シーン: 小屋の陰からCHAR-07が音もなく現れ、低い姿勢で近づいてくる
+キャラプロンプト（1:1）:
 ```
-An adult Asian black bear with a white chest crescent emerging silently from behind a weathered wooden shed in a Japanese village vacant lot in Akita, moving low on all fours through the grass, autumn light, shot from ground level. Predatory quiet approach. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, stalking forward on all fours in a low creeping posture, head down, eyes fixed ahead, slow deliberate step. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
-→ **Google Flow動画プロンプト:**
+背景プロンプト（16:9）:
 ```
-Ground-level shot in a Japanese village vacant lot: an adult Asian black bear, glossy black fur with a white crescent chest patch, slides out from behind a weathered wooden shed and stalks forward on all fours through dry grass, slow deliberate steps, head low, eyes fixed ahead. Camera holds still, tension building. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+Ground-level view beside a weathered wooden shed in a Japanese village vacant lot in Akita, dry grass in the foreground, deep shadow along the shed wall, autumn light. Predatory quiet. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
-→ 編集者指示: 無音に近い演出。草を踏む音だけを立てる。
+→ 編集者指示: CHAR-07を小屋の陰から低速スライドで出現させる（3秒）。無音に近い演出。草を踏む音だけを立てる。
 
 ---
 
@@ -952,16 +953,17 @@ Blurred emergency scene in a Japanese village in Akita: ambulance lights pulsing
 
 ナレーター: そこで、消防は4人をドクターヘリなどを使い、複数の病院へ分けて搬送することに決めます。
 
-【制作メモ】ASSET-077 [Lovart動画] 台本L330 ★AI動画
-シーン: ドクターヘリが山あいの村から飛び立つ
+【制作メモ】ASSET-077 [キャラアニメーション] 台本L330
+シーン: 救急隊員がヘリへ搬送を誘導する。背景に離陸準備のドクターヘリ
+キャラプロンプト（1:1）:
 ```
-A Japanese air-ambulance doctor helicopter, white with red and blue stripes, lifting off from a field in a mountain village in Akita, rotor wash flattening the autumn grass, forested ridges all around, overcast sky. Urgent rescue operation. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 5 separate images.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese paramedic in an orange emergency uniform and helmet, crouched low and beckoning urgently with one arm while shielding his face from rotor wind with the other. Full body. White background. 1:1 aspect ratio. Generate 5 separate images.
 ```
-→ **Google Flow動画プロンプト:**
+背景プロンプト（16:9）:
 ```
-A white Japanese doctor helicopter with red and blue stripes lifts off from a grass field in a narrow mountain valley in Akita, camera low as rotor wash flattens dry autumn grass, the aircraft rises, tilts forward and accelerates away over forested ridges under an overcast sky. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+A white Japanese air-ambulance helicopter with red and blue stripes waiting on a grass field in a mountain village in Akita, rotors blurred in motion, dry autumn grass flattened outward, forested ridges all around, overcast sky. Urgent rescue staging. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 5 separate images.
 ```
-→ 編集者指示: ローター音SEを強めに。「分散搬送」への導入。
+→ 編集者指示: ローター音SEを強めに。草が煽られる細かい揺れをキーフレームで。「分散搬送」への導入。
 
 ---
 
