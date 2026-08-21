@@ -29,6 +29,7 @@ Yama_Story プロンプト品質バリデーター
   20. 背景プロンプト人物矛盾 — 「No people visible」と人物描写が同居していないか (FAIL)
   21. 【AI動画】2ブロック構成 — Google Flow動画プロンプト欠落の検出 (FAIL)
   22. キャラ系プロンプト比率 — 60%以上の達成度（リファレンス羅臼岳72.8%）(FAIL/WARNING)
+  23. 冒頭・末尾動画 — KI先頭アセット/TEN-KETSU末尾アセットが[Lovart動画]か (FAIL)
   23. CHAR-XX 再利用マーカー — 2回目以降のASSET冒頭に (CHAR-XX 再利用): があるか (WARNING)
   24. 複数キャラ個別生成パターン — 複数人シーンでキャラプロンプト①②形式か (WARNING)
 """
@@ -111,7 +112,9 @@ def check_forbidden_words_in_prompts(lines):
 
 
 def check_generate_wording(lines):
-    """Generate 5 images. (separateなし) の検出"""
+    """生成枚数チェック（2026-08-20改定: ユーザー指定で1枚生成に統一）:
+    - 'Generate 5' 等の複数枚指定はFAIL
+    - プロンプト末尾は 'Generate 1 image.'（CHAR基準は 'Generate 1 image, showing only this one character.'）"""
     issues = []
     in_code = False
 
@@ -123,8 +126,9 @@ def check_generate_wording(lines):
         if not in_code:
             continue
 
-        if 'Generate 5 images.' in s and 'separate' not in s:
-            issues.append((i + 1, s[:80]))
+        m = re.search(r'Generate\s+(\d+)\s+(?:separate\s+)?images?', s)
+        if m and m.group(1) != '1':
+            issues.append((i + 1, f"複数枚指定 'Generate {m.group(1)}' → 'Generate 1 image.' に統一（2026-08-20ユーザー指定）: " + s[:60]))
 
     return issues
 
@@ -733,6 +737,91 @@ def check_scene_line_required(lines):
     return issues
 
 
+def check_intro_ending_video(lines):
+    """冒頭・末尾動画チェック（恒久ルール 2026-08-20追加）:
+    - <!-- PART: KI --> を含むファイルでは、最初の【制作メモ】が [Lovart動画] であること
+      （feedback_yama_intro_always_video: 冒頭フックは必ず動画）
+    - <!-- PART: TEN-KETSU --> を含むファイルでは、最後の【制作メモ】が [Lovart動画] であること
+      （feedback_yama_ending_always_video: 追悼＋視聴御礼は必ずAI動画）
+    背景: 2026-08-20 東成瀬村Phase2で冒頭をテキスト演出・末尾を静止画にする事故。
+    索引(ASSET_CHECKLIST)未記載＋検査なしで素通りしたため、両方を仕組み化。"""
+    issues = []
+    text = "\n".join(lines)
+    memos = []  # (line_no, asset_id, category)
+    for i, line in enumerate(lines):
+        m = re.match(r'【制作メモ】(ASSET-\d+)\s*\[([^\]]+)\]', line.strip())
+        if m:
+            memos.append((i + 1, m.group(1), m.group(2)))
+    if not memos:
+        return issues
+    if '<!-- PART: KI -->' in text:
+        ln, aid, cat = memos[0]
+        if cat != 'Lovart動画':
+            issues.append((ln, f"冒頭アセット {aid} が [{cat}]。冒頭フックは必ず [Lovart動画]（恒久ルール feedback_yama_intro_always_video）"))
+    if '<!-- PART: TEN-KETSU -->' in text:
+        ln, aid, cat = memos[-1]
+        if cat != 'Lovart動画':
+            issues.append((ln, f"末尾アセット {aid} が [{cat}]。追悼＋視聴御礼は必ず [Lovart動画]（恒久ルール feedback_yama_ending_always_video）"))
+    return issues
+
+
+def check_video_still_block_motion(lines):
+    """[Lovart動画]の1ブロック目（Lovart静止画プロンプト）に動き・時間の記述がないか（2026-08-20追加）。
+    手順は 静止画生成→Google Flowで動画化。動きはFlowプロンプト側のみに書く。
+    背景: 東成瀬村Phase2で静止画ブロックに 'Slow aerial drone shot' 等の動画用記述を書いた事故。"""
+    issues = []
+    MOTION = ['slowly', 'slow forward', 'slow push', 'slow pan', 'gliding', 'glides',
+              'descending', 'tracking shot', 'camera moves', 'camera pushing', 'camera shakes',
+              '5 seconds', 'speeds ', 'accelerat', 'driving fast', 'zooming', 'lifts off',
+              'walking toward the camera', 'running toward the camera', 'footage']
+    cur_asset = None
+    is_video = False
+    in_code = False
+    block_index = 0
+    for i, line in enumerate(lines):
+        st = line.strip()
+        m = re.match(r'【制作メモ】(ASSET-\d+)\s*\[([^\]]+)\]', st)
+        if m:
+            cur_asset = m.group(1)
+            is_video = (m.group(2) == 'Lovart動画')
+            block_index = 0
+            continue
+        if st.startswith('```'):
+            if not in_code:
+                block_index += 1
+            in_code = not in_code
+            continue
+        if in_code and is_video and block_index == 1:
+            low = st.lower()
+            hits = [w for w in MOTION if w in low]
+            if hits:
+                issues.append((i + 1, cur_asset, hits, st[:70]))
+    return issues
+
+
+def check_ge_consecutive(lines):
+    """Google Earth連続チェック（2026-08-20追加）: [Google Earth]アセットの3連続を検出（連続2回まで）。"""
+    issues = []
+    streak = 0
+    first_ln = None
+    ids = []
+    for i, line in enumerate(lines):
+        m = re.match(r'【制作メモ】(ASSET-\d+)\s*\[([^\]]+)\]', line.strip())
+        if not m:
+            continue
+        if m.group(2) == 'Google Earth':
+            streak += 1
+            ids.append(m.group(1))
+            if streak == 1:
+                first_ln = i + 1
+            if streak == 3:
+                issues.append((first_ln, f"Google Earthが3連続（{'/'.join(ids[-3:])}）。連続2回まで。3つ目を動画/キャラアニメ等に差し替える"))
+        else:
+            streak = 0
+            ids = []
+    return issues
+
+
 def check_trailing_garbage(lines):
     """末尾ゴミ行チェック: 最後のASSETのプロンプト・編集者指示の後に
     孤立したナレーション行や大量の空行がないか検出する。"""
@@ -880,17 +969,27 @@ def check_video_prompt_two_blocks(lines):
 
 
 def check_character_prompt_ratio(lines):
-    """キャラ系プロンプト比率（60%以上）を検証"""
+    """キャラ系プロンプト比率（60%以上）を検証。
+    2026-08-20改定: 分母から [Lovart動画]（冒頭は実写動画の恒久ルールでカートゥン不可）・[実写]・
+    [Google Earth]・[テキストのみ] を除外し、「キャラで描けるアセットのうちキャラ系の割合」を測る。
+    さらに対象アセットが20未満の小さいファイル（KI単体等）はFAILにせずWARNING止まり。"""
     blocks = split_into_asset_blocks(lines)
-    total = len(blocks)
-    if total == 0:
+    if len(blocks) == 0:
         return None, 0, 0
+    excluded = re.compile(r'\[(Lovart動画|実写|Google Earth|テキストのみ)\]')
+    eligible = 0
     char_count = 0
     for asset_id, start, end, block_lines in blocks:
         block_text = ''.join(block_lines)
+        memo_line = next((l for l in block_lines if '【制作メモ】' in l), '')
+        if excluded.search(memo_line):
+            continue
+        eligible += 1
         if re.search(r'キャラプロンプト|キャラアニメ|キャラ流用|キャラ静止画', block_text):
             char_count += 1
-    ratio = (char_count * 100.0) / total
+    if eligible == 0:
+        return None, 0, 0
+    ratio = (char_count * 100.0) / eligible
     if ratio >= 60:
         verdict = 'PASS'
     elif ratio >= 50:
@@ -898,8 +997,8 @@ def check_character_prompt_ratio(lines):
     elif ratio >= 30:
         verdict = 'WARNING_STRONG'
     else:
-        verdict = 'FAIL'
-    return verdict, char_count, total, ratio
+        verdict = 'FAIL' if eligible >= 20 else 'WARNING_STRONG'
+    return verdict, char_count, eligible, ratio
 
 
 def check_character_style_header(lines):
@@ -949,7 +1048,7 @@ def check_one_character_per_image_clause(lines):
     """
     char_prompt_label = re.compile(r'^\s*(キャラプロンプト|キャラアニメーション|キャラ流用|キャラ静止画)[①②③④⑤1-5]?[（(]?')
     char_definition_header = re.compile(r'^###\s+CHAR-\d+')
-    required_phrase = 'each showing only this one character'
+    required_phrase = 'showing only this one character'
     forbidden_variation_pattern = re.compile(
         r'Generate\s+\d+\s+separate\s+images?\s+with\s+(subtle\s+)?variations?\s*[\(（]', re.I
     )
@@ -1070,7 +1169,7 @@ def check_no_scene_words_in_char_prompt(lines):
 def check_background_generate_clause(lines):
     """背景プロンプトの末尾に `Generate N separate images.` 定型句が含まれているか検証"""
     bg_label = re.compile(r'^\s*背景プロンプト[（(]')
-    required_pattern = re.compile(r'Generate\s+\d+\s+separate\s+images?\.', re.I)
+    required_pattern = re.compile(r'Generate\s+\d+\s+(?:separate\s+)?images?\.', re.I)
     blocks = split_into_asset_blocks(lines)
     issues = []
     for asset_id, start, end, block_lines in blocks:
@@ -1088,7 +1187,7 @@ def check_background_generate_clause(lines):
                 continue
             if not required_pattern.search(body_text):
                 actual_line = start + idx + 1
-                issues.append((actual_line, asset_id, "背景プロンプト末尾 `Generate N separate images.` 欠落"))
+                issues.append((actual_line, asset_id, "背景プロンプト末尾 `Generate 1 image.` 欠落"))
     return issues
 
 
@@ -1379,6 +1478,40 @@ def main():
         print(f"   → [Google Earth]は座標+カメラ指示のみ。Lovart用プロンプト(```)は禁止")
     else:
         print("✅ PASS: Google Earthプロンプト禁止（```ブロックなし）")
+
+    # 26. Google Earth連続チェック（連続2回まで）
+    issues = check_ge_consecutive(lines)
+    if issues:
+        all_pass = False
+        print(f"\n❌ FAIL: Google Earth 3連続 ({len(issues)}件)")
+        for ln, desc in issues:
+            print(f"   L{ln}: {desc}")
+    else:
+        print("✅ PASS: Google Earth連続（2回以内）")
+
+    # 25. [Lovart動画]静止画ブロックの動き記述チェック
+    issues = check_video_still_block_motion(lines)
+    if issues:
+        all_pass = False
+        print(f"\n❌ FAIL: [Lovart動画]の静止画ブロックに動き記述 ({len(issues)}件)")
+        print("   手順は 静止画生成→Flowで動画化。1ブロック目は凍結した1コマとして書き、動きはFlow側のみ")
+        for ln, aid, hits, text in issues[:5]:
+            print(f"   L{ln} ({aid}): 検出語={hits}")
+            print(f"         {text}")
+        if len(issues) > 5:
+            print(f"   ...他{len(issues)-5}件")
+    else:
+        print("✅ PASS: [Lovart動画]静止画ブロックに動き記述なし")
+
+    # 23. 冒頭・末尾動画チェック（恒久ルール）
+    issues = check_intro_ending_video(lines)
+    if issues:
+        all_pass = False
+        print(f"\n❌ FAIL: 冒頭・末尾は必ずAI動画 ({len(issues)}件)")
+        for ln, desc in issues:
+            print(f"   L{ln}: {desc}")
+    else:
+        print("✅ PASS: 冒頭・末尾動画ルール（KI先頭/TEN-KETSU末尾が[Lovart動画]）")
 
     # 17. 末尾ゴミ行チェック
     issues = check_trailing_garbage(lines)
