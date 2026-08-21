@@ -202,12 +202,13 @@ def prompt_lint(text, errors, warns, info):
     if still_in_band:
         warns.append(f'26〜50字なのに静止画 {len(still_in_band)}件（この帯はキャラアニメ/動画/Earthのみ。分割するか動画に変える）: {", ".join(still_in_band)}')
 
-    # 27) Google Flow動画プロンプトの総数（上限20本・2026-08-21にユーザー指定で12→20へ変更）
+    # 27) Google Flow動画プロンプトの総数（上限40本・2026-08-21にユーザー指定で12→20→40へ変更）
+    #     根拠は実測: 朱鞠内湖96本(242中40%)/星野道夫20本(227中9%)/羅臼岳16本(151中11%)
     flow_n = text.count('Google Flow動画プロンプト')
-    if flow_n > 20:
-        warns.append(f'Google Flow動画プロンプトが{flow_n}本（上限20本を超過。動きが核心のカットだけに絞る）')
+    if flow_n > 40:
+        warns.append(f'Google Flow動画プロンプトが{flow_n}本（上限40本を超過。動きが核心のカットだけに絞る）')
     else:
-        info.append(f'Google Flow動画 {flow_n}本 / 上限20本')
+        info.append(f'Google Flow動画 {flow_n}本 / 上限40本')
 
     # 28) 素材カテゴリの内訳（1本で4カテゴリ以上使う）
     from collections import Counter
