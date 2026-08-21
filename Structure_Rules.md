@@ -80,7 +80,7 @@ Before any script is presented to the user, you MUST run:
 
 ### 禁止事項
 - **フリー素材の使用禁止**: 全てLovart AI画像で生成する。フリー素材サイト（Pexels, Unsplash等）からのダウンロードは行わない
-- **AI動画の過剰使用禁止**: 1本の動画あたりAI動画は最大12本まで（Google Flowクレジット予算: 月250クレジット/本）
+- **AI動画の過剰使用禁止**: 1本の動画あたりAI動画は最大20本まで（Google Flowクレジット予算: 月250クレジット/本）
 
 ### AI動画（Google Flow）の使用基準
 AI動画はクレジットコストが高いため、以下の基準を満たすシーンのみに使用する:
