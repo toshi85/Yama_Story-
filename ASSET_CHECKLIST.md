@@ -85,6 +85,26 @@
       → 2026-08-20 東成瀬村で静止画ブロックに動画用の文を書いた事故の再発防止。`validate_yama_prompts.py` チェック25が検査
 - [ ] フリー素材（Pexels/Unsplash等）の使用は**禁止**
 
+### 書くときに必ず入れる定型（2026-08-21 追加・lintに頼らず最初から書く）
+
+| 状況 | プロンプトに必ず入れる |
+|:--|:--|
+| **秋のシーン全部**（late October/autumn を書いたら） | `No snow anywhere, no frost, no winter.` ／ 山間部・曇天・夜明けは特に雪化しやすい |
+| **暗いシーン**（pre-dawn / at night / dim / deep shadow / dark room 等） | `dark but NOT pure black — <主要素> stays clearly readable` ／ 黒いクマ＋暗所は最も潰れる |
+| **実在の機関・施設**（大学・病院・省庁・市役所・消防・ドクターヘリ等） | `no institution name, no crest, no emblem, no logo, no signage` ＋ **名称はテロップで出す**（AI生成で実在施設の偽映像を作らない） |
+| **実在の被害者・公人が関わるカット** | 顔を出さない構図にする（手元／肩越し／首から下／POV／後ろ姿）＋ `no face visible` |
+| **日本語の文字を描かせるとき** | ラベルに **【chatGPT推奨】** を付ける（Lovartは日本語を崩す）＋ 描かせる文字は**1〜2個に限定**、残りは `too small to read` |
+| **文字を出したくない画** | `No legible text, no signage, no nameplate anywhere` |
+| **テロップを乗せる画** | 構図で余白を確保する（`the upper two-thirds is deliberately left as clean negative space for large text`）。指定しないと被写体が画面を埋める |
+| **クマが走る／前進するカット** | `ON ALL FOURS` を明記（無いとlintがERROR）＋ `NOT standing upright, NOT on two legs` |
+
+### タイプの決め方（機械が判定できる部分は数える）
+
+- [ ] **ナレーション文字数を先に数える**（句読点・記号を除く）→ 25字以下=全タイプ／26〜50字=**静止画不可**／51字以上=**分割してからタイプを決める**
+- [ ] **同じタイプを続けない**: キャラアニメ**3回まで**（4回目で実写かGoogle Earthを挟む）／静止画**2枚まで**／Google Earth**2回まで**
+- [ ] **AI動画（Google Flow）は1本あたり20本まで**。使う基準は「動きが物語の核心」「静止画で不可能」「感情ピーク」の3つ
+- [ ] 迷ったら `python System_Tools/validate_phase2_assets.py --prompts <ファイル>` を走らせる。**上の項目は全部この検査が数えてくれる**（rule 23-31）
+
 ---
 
 ## STEP 4. Google Earth・座標の作り方
