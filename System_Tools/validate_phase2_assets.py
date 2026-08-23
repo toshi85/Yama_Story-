@@ -133,7 +133,132 @@ def prompt_lint(text, errors, warns, info):
     if clones:
         warns.append(f'複数人に書き分け指定なし {len(clones)}件（全員クローン化する→Every person is a distinct individual+服装を一人ずつ列挙+no two dressed alike）: {", ".join(dict.fromkeys(clones))}')
 
-    info.append(f'プロンプトlint(14-22): {len(segs)}セグメント走査')
+    # ===== rules 23-31: 構成バランス・文字数整合・生成失敗の追加検出（2026-08-21 追加）=====
+    # 根拠: 東成瀬村セッションで人手で数えていた項目を機械化。ルール本文は ASSET_CHECKLIST.md STEP2/STEP3
+
+    def asset_type(seg):
+        """制作メモの [タイプ] を5分類に正規化。判定順が重要（動画>Earth>キャラ>静止画>テキスト）"""
+        mo = re.search(r'【制作メモ】\s*ASSET-\d+\s*\[([^\]]+)\]', seg)
+        if not mo:
+            return None
+        t = mo.group(1)
+        if '動画' in t:            return '動画'
+        if 'Google Earth' in t:    return 'Earth'
+        if 'キャラアニメーション' in t: return 'キャラ'
+        if '静止画' in t or '実写' in t: return '静止画'
+        if 'テキスト' in t:        return 'テキスト'
+        return 'その他'
+
+    PUNCT = re.compile(r'[、。，．！？!?「」『』（）()【】・…—\-\s]')
+
+    def nar_len(nar):
+        """ナレーション文字数。句読点・括弧・記号・空白は数えない（本プロジェクトの数え方）"""
+        return len(PUNCT.sub('', nar))
+
+    typed = [(nar, asset_type(seg), asset_no(seg)) for nar, seg in segs]
+
+    def run_lengths(target):
+        """同一タイプの連続区間を [(開始index, 長さ)] で返す"""
+        out, i = [], 0
+        while i < len(typed):
+            if typed[i][1] == target:
+                j = i
+                while j < len(typed) and typed[j][1] == target:
+                    j += 1
+                out.append((i, j - i))
+                i = j
+            else:
+                i += 1
+        return out
+
+    # 23) キャラアニメーションの連続（4回以上で単調化）
+    long_char = [(s, n) for s, n in run_lengths('キャラ') if n >= 4]
+    if long_char:
+        detail = ' / '.join(f'{typed[s][2]}から{n}連続' for s, n in long_char)
+        warns.append(f'キャラアニメーションが4回以上連続 {len(long_char)}箇所（画が単調になる→実写かGoogle Earthを挟む）: {detail}')
+
+    # 24) 静止画の連続（ASSET_CHECKLIST STEP2「連続静止画は2枚まで」）
+    long_still = [(s, n) for s, n in run_lengths('静止画') if n >= 3]
+    if long_still:
+        detail = ' / '.join(f'{typed[s][2]}から{n}連続' for s, n in long_still)
+        errors.append(f'静止画が3枚以上連続 {len(long_still)}箇所（連続静止画は2枚まで。AI静止画+Ken Burnsが2分以上続く）: {detail}')
+
+    # 25) Google Earthの連続（GEは連続2回まで・2026-08-20ルール化）
+    long_ge = [(s, n) for s, n in run_lengths('Earth') if n >= 3]
+    if long_ge:
+        detail = ' / '.join(f'{typed[s][2]}から{n}連続' for s, n in long_ge)
+        warns.append(f'Google Earthが3回以上連続 {len(long_ge)}箇所（GEは連続2回まで→間に実写/キャラを挟む）: {detail}')
+
+    # 26) ナレーション文字数とタイプの整合（25字以下=全タイプ / 26-50字=静止画不可 / 51字以上=要分割）
+    too_long, still_in_band = [], []
+    for nar, t, no in typed:
+        L = nar_len(nar)
+        if L >= 51:
+            too_long.append(f'{no}({L}字)')
+        elif L >= 26 and t == '静止画':
+            still_in_band.append(f'{no}({L}字)')
+    if too_long:
+        warns.append(f'ナレーション51字以上 {len(too_long)}件（タイプを決める前に分割する）: {", ".join(too_long)}')
+    if still_in_band:
+        warns.append(f'26〜50字なのに静止画 {len(still_in_band)}件（この帯はキャラアニメ/動画/Earthのみ。分割するか動画に変える）: {", ".join(still_in_band)}')
+
+    # 27) Google Flow動画プロンプトの総数（上限40本・2026-08-21にユーザー指定で12→20→40へ変更）
+    #     根拠は実測: 朱鞠内湖96本(242中40%)/星野道夫20本(227中9%)/羅臼岳16本(151中11%)
+    flow_n = text.count('Google Flow動画プロンプト')
+    if flow_n > 40:
+        warns.append(f'Google Flow動画プロンプトが{flow_n}本（上限40本を超過。動きが核心のカットだけに絞る）')
+    else:
+        info.append(f'Google Flow動画 {flow_n}本 / 上限40本')
+
+    # 28) 素材カテゴリの内訳（1本で4カテゴリ以上使う）
+    from collections import Counter
+    mix = Counter(t for _, t, _ in typed if t)
+    if mix:
+        info.append('タイプ内訳: ' + ' / '.join(f'{k}{v}' for k, v in mix.most_common()))
+        if len(typed) >= 50 and len([k for k in mix if k != 'その他']) < 4:
+            warns.append(f'素材カテゴリが{len(mix)}種類（1本で4カテゴリ以上使う＝mass-produced判定の回避）')
+
+    # 29) 秋の指定があるのに no snow が無い（10月/late Octoberは雪化しやすい）
+    nosnow = []
+    for nar, seg in segs:
+        for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
+            if re.search(r'late October|October|autumn|late autumn', b, re.I) \
+               and not re.search(r'no snow|not winter|no winter', b, re.I):
+                nosnow.append(asset_no(seg))
+                break
+    if nosnow:
+        warns.append(f'秋指定なのに no snow なし {len(nosnow)}件（10月+overcastは雪景色化する→No snow anywhere, no frost, no winter を明記）: {", ".join(dict.fromkeys(nosnow))}')
+
+    # 30) 暗いシーン指定に明度の下限がない（黒つぶれ。rule18の拡張版）
+    #     ※「dark brown fur」等の“色の形容詞”は対象外。暗い『場』を指す表現だけを拾う
+    DARKSCENE = re.compile(
+        r'pre-dawn|before dawn|before sunrise|at night|by night|darkness|unlit|'
+        r'dim(ly)?|deep shadow|in shadow|shadowed but|'
+        r'dark (room|interior|hallway|corridor|background|backdrop|sky|water|street|forest|thicket|gap|mouth|opening|charcoal|slate)',
+        re.I)
+    darkish = []
+    for nar, seg in segs:
+        for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
+            if DARKSCENE.search(b) \
+               and not re.search(r'NOT pure black|not pure black|clearly readable|clearly visible|high-contrast', b, re.I):
+                darkish.append(asset_no(seg))
+                break
+    if darkish:
+        warns.append(f'暗いシーンに明度の下限指定なし {len(darkish)}件（黒一色に沈む→NOT pure black＋主要素をclearly readableと明示）: {", ".join(dict.fromkeys(darkish))}')
+
+    # 31) 実在機関を示す語があるのに打ち消し指定がない（実在施設の偽映像を作らないため）
+    REALORG = re.compile(r'\b(university|hospital|ministry|city hall|municipal|government (office|building)|police station|fire (department|headquarters)|air-ambulance)\b', re.I)
+    NEGORG  = re.compile(r'no (institution|university|hospital|building|ministry|organization|municipal) name|no logo|no crest|no emblem|no signage|matching no specific', re.I)
+    org = []
+    for nar, seg in segs:
+        for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
+            if REALORG.search(b) and not NEGORG.search(b):
+                org.append(asset_no(seg))
+                break
+    if org:
+        warns.append(f'実在機関を示す語に打ち消し指定なし {len(org)}件（実在施設の偽映像になる→no institution name/no crest/no signage を明記し、名称はテロップで出す）: {", ".join(dict.fromkeys(org))}')
+
+    info.append(f'プロンプトlint(14-31): {len(segs)}セグメント走査')
 
 def main(master_path, daihon_path):
     m = open(master_path, encoding='utf-8').read()
