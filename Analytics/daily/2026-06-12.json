@@ -1,0 +1,248 @@
+{
+ "date": "2026-06-12",
+ "collected_at": "2026-08-25T14:42:14.456668",
+ "overview": {
+  "views": 7084,
+  "watch_minutes": 52497,
+  "subs_gained": 9,
+  "subs_lost": 4,
+  "avg_view_duration_sec": 444,
+  "revenue_usd": 28.361
+ },
+ "top_videos": [
+  {
+   "video_id": "Ot4G3-EHj5Q",
+   "views": 2492,
+   "watch_minutes": 14753,
+   "avg_view_duration_sec": 355,
+   "avg_view_percentage": 23.67,
+   "subs_gained": 1
+  },
+  {
+   "video_id": "c_kkIsQlFe8",
+   "views": 2112,
+   "watch_minutes": 18218,
+   "avg_view_duration_sec": 517,
+   "avg_view_percentage": 27.62,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "Er8yvR3FaRg",
+   "views": 1321,
+   "watch_minutes": 9358,
+   "avg_view_duration_sec": 425,
+   "avg_view_percentage": 27.949999999999996,
+   "subs_gained": 2
+  },
+  {
+   "video_id": "P6129_NW2Zk",
+   "views": 684,
+   "watch_minutes": 6428,
+   "avg_view_duration_sec": 563,
+   "avg_view_percentage": 36.98,
+   "subs_gained": 2
+  },
+  {
+   "video_id": "-sHkcezuQLY",
+   "views": 277,
+   "watch_minutes": 1560,
+   "avg_view_duration_sec": 337,
+   "avg_view_percentage": 20.69,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "3NkSKsjMBwI",
+   "views": 28,
+   "watch_minutes": 320,
+   "avg_view_duration_sec": 686,
+   "avg_view_percentage": 46.32,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "0-ZxPfOWA8Q",
+   "views": 27,
+   "watch_minutes": 402,
+   "avg_view_duration_sec": 895,
+   "avg_view_percentage": 55.40999999999999,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "9NU6MUOyiCM",
+   "views": 25,
+   "watch_minutes": 194,
+   "avg_view_duration_sec": 467,
+   "avg_view_percentage": 37.22,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "mlvCbz0DP4Y",
+   "views": 24,
+   "watch_minutes": 279,
+   "avg_view_duration_sec": 698,
+   "avg_view_percentage": 40.6,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "bJhz7_XiduE",
+   "views": 20,
+   "watch_minutes": 162,
+   "avg_view_duration_sec": 488,
+   "avg_view_percentage": 35.16,
+   "subs_gained": 0
+  }
+ ],
+ "traffic_sources": [
+  {
+   "source": "SUBSCRIBER",
+   "views": 5492,
+   "watch_minutes": 37154
+  },
+  {
+   "source": "RELATED_VIDEO",
+   "views": 1086,
+   "watch_minutes": 11448
+  },
+  {
+   "source": "YT_SEARCH",
+   "views": 254,
+   "watch_minutes": 1855
+  },
+  {
+   "source": "NO_LINK_OTHER",
+   "views": 72,
+   "watch_minutes": 329
+  },
+  {
+   "source": "YT_OTHER_PAGE",
+   "views": 53,
+   "watch_minutes": 495
+  },
+  {
+   "source": "YT_CHANNEL",
+   "views": 46,
+   "watch_minutes": 403
+  },
+  {
+   "source": "PLAYLIST",
+   "views": 35,
+   "watch_minutes": 419
+  },
+  {
+   "source": "END_SCREEN",
+   "views": 23,
+   "watch_minutes": 308
+  },
+  {
+   "source": "EXT_URL",
+   "views": 22,
+   "watch_minutes": 82
+  },
+  {
+   "source": "HASHTAGS",
+   "views": 1,
+   "watch_minutes": 0
+  }
+ ],
+ "search_terms": [
+  {
+   "term": "熊 事件",
+   "views": 26,
+   "watch_minutes": 221
+  },
+  {
+   "term": "ヒグマ事件",
+   "views": 13,
+   "watch_minutes": 63
+  },
+  {
+   "term": "グリズリー",
+   "views": 7,
+   "watch_minutes": 34
+  },
+  {
+   "term": "熊事件",
+   "views": 7,
+   "watch_minutes": 74
+  },
+  {
+   "term": "福岡大学ワンダーフォーゲル部ヒグマ事件",
+   "views": 5,
+   "watch_minutes": 37
+  },
+  {
+   "term": "ヒグマ 射殺",
+   "views": 4,
+   "watch_minutes": 30
+  },
+  {
+   "term": "熊 射殺シーン",
+   "views": 4,
+   "watch_minutes": 1
+  },
+  {
+   "term": "熊に食べられた人",
+   "views": 4,
+   "watch_minutes": 23
+  },
+  {
+   "term": "熊被害 最悪",
+   "views": 4,
+   "watch_minutes": 25
+  },
+  {
+   "term": "アンビリーバボー 事件",
+   "views": 3,
+   "watch_minutes": 26
+  },
+  {
+   "term": "乗鞍岳クマ襲撃事件 テレビ",
+   "views": 3,
+   "watch_minutes": 53
+  },
+  {
+   "term": "熊 人喰い",
+   "views": 3,
+   "watch_minutes": 2
+  },
+  {
+   "term": "熊 怖い",
+   "views": 3,
+   "watch_minutes": 19
+  },
+  {
+   "term": "熊に食べられながら電話",
+   "views": 3,
+   "watch_minutes": 1
+  },
+  {
+   "term": "さんけべつヒグマ事件",
+   "views": 2,
+   "watch_minutes": 22
+  },
+  {
+   "term": "ヒグマ",
+   "views": 2,
+   "watch_minutes": 3
+  },
+  {
+   "term": "ヒグマ 遭遇",
+   "views": 2,
+   "watch_minutes": 41
+  },
+  {
+   "term": "三毛別羆事件",
+   "views": 2,
+   "watch_minutes": 24
+  },
+  {
+   "term": "人食い熊",
+   "views": 2,
+   "watch_minutes": 17
+  },
+  {
+   "term": "岩手山",
+   "views": 2,
+   "watch_minutes": 15
+  }
+ ]
+}

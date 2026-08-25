@@ -1,0 +1,243 @@
+{
+ "date": "2026-06-08",
+ "collected_at": "2026-08-25T14:42:10.348260",
+ "overview": {
+  "views": 4235,
+  "watch_minutes": 32140,
+  "subs_gained": 6,
+  "subs_lost": 4,
+  "avg_view_duration_sec": 455,
+  "revenue_usd": 19.154
+ },
+ "top_videos": [
+  {
+   "video_id": "Er8yvR3FaRg",
+   "views": 1073,
+   "watch_minutes": 6696,
+   "avg_view_duration_sec": 374,
+   "avg_view_percentage": 24.62,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "c_kkIsQlFe8",
+   "views": 1045,
+   "watch_minutes": 9917,
+   "avg_view_duration_sec": 569,
+   "avg_view_percentage": 30.39,
+   "subs_gained": 1
+  },
+  {
+   "video_id": "Ot4G3-EHj5Q",
+   "views": 1037,
+   "watch_minutes": 6809,
+   "avg_view_duration_sec": 393,
+   "avg_view_percentage": 26.25,
+   "subs_gained": 3
+  },
+  {
+   "video_id": "P6129_NW2Zk",
+   "views": 584,
+   "watch_minutes": 4638,
+   "avg_view_duration_sec": 476,
+   "avg_view_percentage": 31.25,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "-sHkcezuQLY",
+   "views": 334,
+   "watch_minutes": 2232,
+   "avg_view_duration_sec": 401,
+   "avg_view_percentage": 24.56,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "mlvCbz0DP4Y",
+   "views": 30,
+   "watch_minutes": 291,
+   "avg_view_duration_sec": 583,
+   "avg_view_percentage": 33.9,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "0-ZxPfOWA8Q",
+   "views": 27,
+   "watch_minutes": 411,
+   "avg_view_duration_sec": 915,
+   "avg_view_percentage": 56.65,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "T6AZh73TeB8",
+   "views": 16,
+   "watch_minutes": 245,
+   "avg_view_duration_sec": 920,
+   "avg_view_percentage": 57.54,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "9NU6MUOyiCM",
+   "views": 15,
+   "watch_minutes": 111,
+   "avg_view_duration_sec": 444,
+   "avg_view_percentage": 35.33,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "eQuoRcakpoE",
+   "views": 14,
+   "watch_minutes": 132,
+   "avg_view_duration_sec": 566,
+   "avg_view_percentage": 39.35,
+   "subs_gained": 0
+  }
+ ],
+ "traffic_sources": [
+  {
+   "source": "SUBSCRIBER",
+   "views": 3262,
+   "watch_minutes": 22748
+  },
+  {
+   "source": "RELATED_VIDEO",
+   "views": 557,
+   "watch_minutes": 5847
+  },
+  {
+   "source": "YT_SEARCH",
+   "views": 232,
+   "watch_minutes": 1905
+  },
+  {
+   "source": "NO_LINK_OTHER",
+   "views": 52,
+   "watch_minutes": 267
+  },
+  {
+   "source": "YT_OTHER_PAGE",
+   "views": 36,
+   "watch_minutes": 317
+  },
+  {
+   "source": "PLAYLIST",
+   "views": 32,
+   "watch_minutes": 479
+  },
+  {
+   "source": "YT_CHANNEL",
+   "views": 29,
+   "watch_minutes": 377
+  },
+  {
+   "source": "EXT_URL",
+   "views": 21,
+   "watch_minutes": 40
+  },
+  {
+   "source": "END_SCREEN",
+   "views": 14,
+   "watch_minutes": 156
+  }
+ ],
+ "search_terms": [
+  {
+   "term": "熊 事件",
+   "views": 31,
+   "watch_minutes": 181
+  },
+  {
+   "term": "ヒグマ事件",
+   "views": 12,
+   "watch_minutes": 63
+  },
+  {
+   "term": "熊事件",
+   "views": 6,
+   "watch_minutes": 64
+  },
+  {
+   "term": "福岡大学ワンダーフォーゲル部ヒグマ事件",
+   "views": 5,
+   "watch_minutes": 101
+  },
+  {
+   "term": "人喰い熊",
+   "views": 4,
+   "watch_minutes": 11
+  },
+  {
+   "term": "登山 熊",
+   "views": 3,
+   "watch_minutes": 15
+  },
+  {
+   "term": "ひぐま",
+   "views": 2,
+   "watch_minutes": 23
+  },
+  {
+   "term": "グリズリー",
+   "views": 2,
+   "watch_minutes": 14
+  },
+  {
+   "term": "ペトロパブロフスク羆事件",
+   "views": 2,
+   "watch_minutes": 22
+  },
+  {
+   "term": "ワンダーフォーゲル部ヒグマ事件 ゆっくり",
+   "views": 2,
+   "watch_minutes": 29
+  },
+  {
+   "term": "巨大熊",
+   "views": 2,
+   "watch_minutes": 5
+  },
+  {
+   "term": "熊 人喰い",
+   "views": 2,
+   "watch_minutes": 21
+  },
+  {
+   "term": "熊 射殺シーン",
+   "views": 2,
+   "watch_minutes": 0
+  },
+  {
+   "term": "くま",
+   "views": 1,
+   "watch_minutes": 0
+  },
+  {
+   "term": "とざん",
+   "views": 1,
+   "watch_minutes": 0
+  },
+  {
+   "term": "アニメ",
+   "views": 1,
+   "watch_minutes": 6
+  },
+  {
+   "term": "カネなつ",
+   "views": 1,
+   "watch_minutes": 2
+  },
+  {
+   "term": "キャンプ熊",
+   "views": 1,
+   "watch_minutes": 2
+  },
+  {
+   "term": "クマ牧場",
+   "views": 1,
+   "watch_minutes": 5
+  },
+  {
+   "term": "ドキュメンタリー",
+   "views": 1,
+   "watch_minutes": 3
+  }
+ ]
+}

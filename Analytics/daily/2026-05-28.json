@@ -1,0 +1,248 @@
+{
+ "date": "2026-05-28",
+ "collected_at": "2026-08-25T14:41:53.972859",
+ "overview": {
+  "views": 5260,
+  "watch_minutes": 39924,
+  "subs_gained": 11,
+  "subs_lost": 7,
+  "avg_view_duration_sec": 455,
+  "revenue_usd": 25.348
+ },
+ "top_videos": [
+  {
+   "video_id": "Er8yvR3FaRg",
+   "views": 1783,
+   "watch_minutes": 11398,
+   "avg_view_duration_sec": 383,
+   "avg_view_percentage": 25.22,
+   "subs_gained": 2
+  },
+  {
+   "video_id": "Ot4G3-EHj5Q",
+   "views": 1384,
+   "watch_minutes": 9092,
+   "avg_view_duration_sec": 394,
+   "avg_view_percentage": 26.26,
+   "subs_gained": 1
+  },
+  {
+   "video_id": "c_kkIsQlFe8",
+   "views": 829,
+   "watch_minutes": 7918,
+   "avg_view_duration_sec": 573,
+   "avg_view_percentage": 30.579999999999995,
+   "subs_gained": 3
+  },
+  {
+   "video_id": "P6129_NW2Zk",
+   "views": 681,
+   "watch_minutes": 5858,
+   "avg_view_duration_sec": 516,
+   "avg_view_percentage": 33.85,
+   "subs_gained": 3
+  },
+  {
+   "video_id": "-sHkcezuQLY",
+   "views": 333,
+   "watch_minutes": 3016,
+   "avg_view_duration_sec": 543,
+   "avg_view_percentage": 33.29,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "3NkSKsjMBwI",
+   "views": 47,
+   "watch_minutes": 422,
+   "avg_view_duration_sec": 539,
+   "avg_view_percentage": 36.38,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "mlvCbz0DP4Y",
+   "views": 37,
+   "watch_minutes": 462,
+   "avg_view_duration_sec": 749,
+   "avg_view_percentage": 43.55,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "eQuoRcakpoE",
+   "views": 27,
+   "watch_minutes": 325,
+   "avg_view_duration_sec": 723,
+   "avg_view_percentage": 50.28,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "bJhz7_XiduE",
+   "views": 26,
+   "watch_minutes": 145,
+   "avg_view_duration_sec": 335,
+   "avg_view_percentage": 24.15,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "9NU6MUOyiCM",
+   "views": 21,
+   "watch_minutes": 181,
+   "avg_view_duration_sec": 519,
+   "avg_view_percentage": 41.33,
+   "subs_gained": 0
+  }
+ ],
+ "traffic_sources": [
+  {
+   "source": "SUBSCRIBER",
+   "views": 3769,
+   "watch_minutes": 24877
+  },
+  {
+   "source": "RELATED_VIDEO",
+   "views": 1051,
+   "watch_minutes": 11158
+  },
+  {
+   "source": "YT_SEARCH",
+   "views": 206,
+   "watch_minutes": 1419
+  },
+  {
+   "source": "NO_LINK_OTHER",
+   "views": 60,
+   "watch_minutes": 217
+  },
+  {
+   "source": "YT_OTHER_PAGE",
+   "views": 51,
+   "watch_minutes": 645
+  },
+  {
+   "source": "PLAYLIST",
+   "views": 47,
+   "watch_minutes": 549
+  },
+  {
+   "source": "YT_CHANNEL",
+   "views": 29,
+   "watch_minutes": 467
+  },
+  {
+   "source": "END_SCREEN",
+   "views": 28,
+   "watch_minutes": 472
+  },
+  {
+   "source": "EXT_URL",
+   "views": 16,
+   "watch_minutes": 74
+  },
+  {
+   "source": "NOTIFICATION",
+   "views": 3,
+   "watch_minutes": 42
+  }
+ ],
+ "search_terms": [
+  {
+   "term": "熊 事件",
+   "views": 26,
+   "watch_minutes": 197
+  },
+  {
+   "term": "ヒグマ事件",
+   "views": 12,
+   "watch_minutes": 96
+  },
+  {
+   "term": "さんけべつヒグマ事件",
+   "views": 5,
+   "watch_minutes": 15
+  },
+  {
+   "term": "福岡大学ワンダーフォーゲル部ヒグマ事件",
+   "views": 4,
+   "watch_minutes": 45
+  },
+  {
+   "term": "アンビリーバボー 事件",
+   "views": 3,
+   "watch_minutes": 6
+  },
+  {
+   "term": "ワンダーフォーゲル部ヒグマ事件 ゆっくり",
+   "views": 3,
+   "watch_minutes": 35
+  },
+  {
+   "term": "熊事件",
+   "views": 3,
+   "watch_minutes": 7
+  },
+  {
+   "term": "kuma",
+   "views": 2,
+   "watch_minutes": 3
+  },
+  {
+   "term": "どうぶつ奇想天外 ヒグマ",
+   "views": 2,
+   "watch_minutes": 6
+  },
+  {
+   "term": "ヒグマ",
+   "views": 2,
+   "watch_minutes": 31
+  },
+  {
+   "term": "ヒグマ 事件",
+   "views": 2,
+   "watch_minutes": 35
+  },
+  {
+   "term": "山の事件簿",
+   "views": 2,
+   "watch_minutes": 3
+  },
+  {
+   "term": "熊 射殺シーン",
+   "views": 2,
+   "watch_minutes": 0
+  },
+  {
+   "term": "熊に食べられた人",
+   "views": 2,
+   "watch_minutes": 1
+  },
+  {
+   "term": "登山 遭難",
+   "views": 2,
+   "watch_minutes": 36
+  },
+  {
+   "term": "羅臼岳 ヒグマ",
+   "views": 2,
+   "watch_minutes": 34
+  },
+  {
+   "term": "野生のクマ",
+   "views": 2,
+   "watch_minutes": 0
+  },
+  {
+   "term": "22歳",
+   "views": 1,
+   "watch_minutes": 0
+  },
+  {
+   "term": "youtube",
+   "views": 1,
+   "watch_minutes": 0
+  },
+  {
+   "term": "さんけべつヒグマ事件 アンビリバボー",
+   "views": 1,
+   "watch_minutes": 4
+  }
+ ]
+}

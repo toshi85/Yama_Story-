@@ -1,0 +1,248 @@
+{
+ "date": "2026-05-25",
+ "collected_at": "2026-08-25T14:41:49.638230",
+ "overview": {
+  "views": 14612,
+  "watch_minutes": 108449,
+  "subs_gained": 26,
+  "subs_lost": 5,
+  "avg_view_duration_sec": 445,
+  "revenue_usd": 58.54
+ },
+ "top_videos": [
+  {
+   "video_id": "Er8yvR3FaRg",
+   "views": 8084,
+   "watch_minutes": 56502,
+   "avg_view_duration_sec": 419,
+   "avg_view_percentage": 27.57,
+   "subs_gained": 12
+  },
+  {
+   "video_id": "Ot4G3-EHj5Q",
+   "views": 2508,
+   "watch_minutes": 15880,
+   "avg_view_duration_sec": 379,
+   "avg_view_percentage": 25.31,
+   "subs_gained": 4
+  },
+  {
+   "video_id": "c_kkIsQlFe8",
+   "views": 1473,
+   "watch_minutes": 13939,
+   "avg_view_duration_sec": 567,
+   "avg_view_percentage": 30.3,
+   "subs_gained": 1
+  },
+  {
+   "video_id": "P6129_NW2Zk",
+   "views": 1273,
+   "watch_minutes": 10005,
+   "avg_view_duration_sec": 471,
+   "avg_view_percentage": 30.930000000000003,
+   "subs_gained": 2
+  },
+  {
+   "video_id": "-sHkcezuQLY",
+   "views": 572,
+   "watch_minutes": 4532,
+   "avg_view_duration_sec": 475,
+   "avg_view_percentage": 29.12,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "bJhz7_XiduE",
+   "views": 309,
+   "watch_minutes": 2413,
+   "avg_view_duration_sec": 468,
+   "avg_view_percentage": 33.75,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "0-ZxPfOWA8Q",
+   "views": 76,
+   "watch_minutes": 1220,
+   "avg_view_duration_sec": 963,
+   "avg_view_percentage": 59.63,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "9NU6MUOyiCM",
+   "views": 51,
+   "watch_minutes": 530,
+   "avg_view_duration_sec": 624,
+   "avg_view_percentage": 49.66,
+   "subs_gained": 0
+  },
+  {
+   "video_id": "3NkSKsjMBwI",
+   "views": 47,
+   "watch_minutes": 530,
+   "avg_view_duration_sec": 676,
+   "avg_view_percentage": 45.63,
+   "subs_gained": 1
+  },
+  {
+   "video_id": "eQuoRcakpoE",
+   "views": 39,
+   "watch_minutes": 530,
+   "avg_view_duration_sec": 816,
+   "avg_view_percentage": 56.74,
+   "subs_gained": 0
+  }
+ ],
+ "traffic_sources": [
+  {
+   "source": "SUBSCRIBER",
+   "views": 11033,
+   "watch_minutes": 71308
+  },
+  {
+   "source": "RELATED_VIDEO",
+   "views": 2665,
+   "watch_minutes": 29385
+  },
+  {
+   "source": "YT_SEARCH",
+   "views": 339,
+   "watch_minutes": 2019
+  },
+  {
+   "source": "NO_LINK_OTHER",
+   "views": 150,
+   "watch_minutes": 1097
+  },
+  {
+   "source": "YT_OTHER_PAGE",
+   "views": 128,
+   "watch_minutes": 1264
+  },
+  {
+   "source": "YT_CHANNEL",
+   "views": 123,
+   "watch_minutes": 1474
+  },
+  {
+   "source": "PLAYLIST",
+   "views": 75,
+   "watch_minutes": 966
+  },
+  {
+   "source": "END_SCREEN",
+   "views": 51,
+   "watch_minutes": 730
+  },
+  {
+   "source": "NOTIFICATION",
+   "views": 28,
+   "watch_minutes": 160
+  },
+  {
+   "source": "EXT_URL",
+   "views": 20,
+   "watch_minutes": 42
+  }
+ ],
+ "search_terms": [
+  {
+   "term": "熊 事件",
+   "views": 16,
+   "watch_minutes": 137
+  },
+  {
+   "term": "熊 射殺シーン",
+   "views": 16,
+   "watch_minutes": 66
+  },
+  {
+   "term": "熊",
+   "views": 11,
+   "watch_minutes": 57
+  },
+  {
+   "term": "ヒグマ事件",
+   "views": 7,
+   "watch_minutes": 103
+  },
+  {
+   "term": "山岳遭難",
+   "views": 7,
+   "watch_minutes": 76
+  },
+  {
+   "term": "ヒグマ",
+   "views": 6,
+   "watch_minutes": 25
+  },
+  {
+   "term": "さんけべつヒグマ事件",
+   "views": 3,
+   "watch_minutes": 33
+  },
+  {
+   "term": "アンビリーバボー 事件",
+   "views": 3,
+   "watch_minutes": 16
+  },
+  {
+   "term": "三毛別羆事件 アンビリーバボー",
+   "views": 3,
+   "watch_minutes": 12
+  },
+  {
+   "term": "熊事件",
+   "views": 3,
+   "watch_minutes": 1
+  },
+  {
+   "term": "羅臼岳 ヒグマ",
+   "views": 3,
+   "watch_minutes": 25
+  },
+  {
+   "term": "コンパウンドボウ 熊",
+   "views": 2,
+   "watch_minutes": 0
+  },
+  {
+   "term": "ヒグマ 映画",
+   "views": 2,
+   "watch_minutes": 9
+  },
+  {
+   "term": "ホームレスまなみ",
+   "views": 2,
+   "watch_minutes": 19
+  },
+  {
+   "term": "ワンダーフォーゲル部ヒグマ事件 ゆっくり",
+   "views": 2,
+   "watch_minutes": 2
+  },
+  {
+   "term": "三毛別羆事件",
+   "views": 2,
+   "watch_minutes": 0
+  },
+  {
+   "term": "上高地 熊",
+   "views": 2,
+   "watch_minutes": 1
+  },
+  {
+   "term": "山岳遭難ファイル",
+   "views": 2,
+   "watch_minutes": 0
+  },
+  {
+   "term": "熊 ドキュメンタリー",
+   "views": 2,
+   "watch_minutes": 30
+  },
+  {
+   "term": "熊 人喰い",
+   "views": 2,
+   "watch_minutes": 1
+  }
+ ]
+}
