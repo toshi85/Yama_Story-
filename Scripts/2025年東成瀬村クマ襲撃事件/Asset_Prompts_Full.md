@@ -1106,18 +1106,16 @@ High wide view over a vacant lot in Higashinaruse village, Akita: trampled grass
 ナレーター: その後、通報をした役所の職員と警察、消防が現場に駆けつけます。
 
 【制作メモ】ASSET-067 [キャラアニメーション] 台本L310
-シーン: 役場職員・警察官・消防隊員が現場へ駆け込む
+シーン: 現場に着いた役場職員・警察官・消防隊員の3人が正面を向き、目の前の光景に衝撃を受けている
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese responders arriving at a run, every person a distinct individual, no two dressed alike: a village office worker in a white shirt and dark blue work vest, a police officer in a dark blue uniform with peaked cap, and a firefighter in an orange rescue uniform with helmet. Urgent expressions. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese men standing squarely facing the viewer, front-facing view, every person a distinct individual, no two dressed alike and no two in the same pose. A Japanese village office worker, a heavyset middle-aged man in his fifties with thinning hair and a round face, in a white shirt and a dark blue work vest, both hands half-raised in front of his chest, mouth open, eyebrows pulled up and together, all the colour drained from his face. A Japanese police officer, a lean man in his thirties, in a dark blue uniform with a peaked cap, standing rigid with one hand frozen halfway to his shoulder radio, eyes stretched wide. A Japanese firefighter, a stocky man in his forties, in an orange rescue uniform with a white helmet, caught taking a half-step backwards, jaw slack, one hand gripping the strap of his kit. All three are looking straight ahead at something in front of them, deeply shaken and stricken with worry by what they see. None of them is running. Full body. White background. Nothing else around them — no props apart from what each is wearing, no background elements of any kind. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A village vacant lot in Higashinaruse, Akita, with a patrol car and a red fire department vehicle newly parked at the edge, doors open, red lights flashing, cold overcast light. Emergency response arriving. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A village vacant lot in Higashinaruse, Akita, Japan, in late October, with a white-and-black patrol car and a red emergency vehicle newly parked at the edge of the lot, their doors open and red roof lights flashing, the dry grass pressed flat in patches, a weathered wooden shed and a low fence at the far side, golden autumn hillsides beyond under a pale overcast sky. Completely generic unmarked vehicles — no institution name, no crest, no emblem, no logo, no signage, no lettering on the vehicles. Framed from adult eye height about six metres back, the middle of the frame left as clear open space. Cold overcast late-morning light. No snow anywhere, no frost, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
-→ 編集者指示: サイレンSEを最大に。3人を左から順に走らせる。
-
----
+→ 編集者指示: サイレンSEをここで最大にしてから急に絞る。3人は動かさず、わずかに揺らす程度に留める。機関名は車両に描かれないので「役場」「警察」「消防」のテロップで補う。
 
 ナレーター: 地面には、大人4人が顔や頭から出血し、無残に横たわっていました。
 
@@ -1161,7 +1159,7 @@ View from a village lot in Higashinaruse, Akita, up toward the forested mountain
 ```
 背景プロンプト（16:9）:
 ```
-Close ground-level view of trampled grass in a village lot in Higashinaruse, Akita, an opened orange medical kit with bandage rolls and gloves laid out, cold urgent light. Triage about to begin. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+Medium-wide view of a village vacant lot in Higashinaruse, Akita, Japan, in late October, framed from adult eye height roughly 1.4 metres above the ground and about four metres back, the camera angled only slightly downward: the trampled grass with an opened orange medical kit, bandage rolls and gloves laid out on it occupies just the lower third of the frame, the flat open lot and a weathered wooden shed lie in the middle distance, and village houses with golden autumn hillsides rise across the upper part of the frame under a pale overcast sky, a clear horizon line visible. Normal everyday scale — the kit and the bandages are ordinary small objects low in the frame, never enlarged, and the middle of the frame is left as clear open space. Not a ground-level shot, not a close-up, no macro grass texture, no worm's-eye angle. Cold urgent late-morning light. No snow anywhere, no frost, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 無線のノイズSE。テンポの速いカット割り。
 
@@ -1245,17 +1243,15 @@ Blurred emergency scene in a Japanese village in Akita: ambulance lights pulsing
 ナレーター: しかし、村には診療所が1つだけ。到底、治療できる環境ではありません。
 
 【制作メモ】ASSET-076 [Lovart動画] 台本L328
-シーン: 深い山々に四方を囲まれた小さな集落の遠景。人家がまばらで、外へ通じる道が細い1本しかない
-- 実写素材は使用可（秋田県内の山間集落の風景素材／自治体の公開素材など）。ただし**診療所その他の医療機関が識別できる映像は使わない**
+シーン: 村にひとつだけの小さな診療所の外観（実写風）。建物に名称・ロゴは描かせず、名称はテロップで出す
 ```
-A high distant view of a small farming hamlet deep in the mountains of Akita, Japan, seen from a ridge above. Perhaps forty scattered houses with dark metal roofs cluster along a narrow river valley, surrounded on every side by steep forested ridges that rise far higher than the settlement and close it in completely. A single thin road winds out of the valley and disappears between the ridges — the only way in or out. Harvested rice paddies in dry brown stubble, a few small sheds, no shops, no large buildings of any kind. Late October, cold flat overcast light, thin mist lying in the folds of the mountains. Autumn foliage on the slopes, dry grass, fallen leaves. No snow anywhere, no frost, no winter. No legible text or signage anywhere in the image. No people, no humans visible, no vehicles. A sense of isolation and of being very far from anywhere. Photorealistic, shot on RED camera, 50mm lens from an elevated vantage point. Documentary style. 16:9 aspect ratio. Generate 1 image.
+Photorealistic frozen frame of a small rural village clinic in Higashinaruse, Akita, Japan, in late October: a modest single-storey building with pale cream walls and a shallow dark metal roof, a small covered entrance porch with an automatic glass door, four or five plain sash windows along the front, a narrow gravel parking area in front with room for only two or three cars and none parked, a low clipped hedge at the edge. It looks like an ordinary working Japanese village clinic: a plain white signboard on two posts at the entrance to the gravel forecourt, a smaller consultation-hours board mounted beside the automatic door, a slim vertical sign panel on the wall by the porch, a notice sheet taped inside the glass door, a bicycle rack and a short wheelchair ramp with a handrail. The signboards and notices are present in their normal places, but every one of them is small, slightly out of focus and catching the flat grey light, so that none of the characters on them can be made out. No real institution name, no municipal crest, no emblem, no logo, no red cross symbol. It is clearly a very small facility — a single small building on its own, with ordinary village houses and harvested fields to either side and steep forested hillsides in golden autumn colour rising close behind it. Framed from across the road at adult eye height with the whole building in frame. Cold flat overcast late-morning light, still air, no one about. No snow anywhere, no frost, no winter. Photorealistic, shot on RED camera, 35mm lens. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
-A 7-second documentary shot from a ridge looking down on a small mountain hamlet in Akita, Japan, ringed by steep forested ridges with a single thin road leading out of the valley. Thin mist drifts slowly through the folds of the mountains and the autumn trees stir faintly; nothing else moves and no people appear. Late October, cold overcast light, no snow. Locked-off camera, no zoom, no drone movement. Photorealistic, RED camera, slow documentary cinematography.
+A documentary shot of a small rural village clinic in Higashinaruse, Akita, in late October: a modest single-storey building with pale cream walls and a shallow dark metal roof, an automatic glass door under a small entrance porch, a narrow gravel parking area in front with no cars in it, a plain white signboard on posts at the entrance, a consultation-hours board beside the door, a bicycle rack and a short wheelchair ramp, a low hedge at the edge, steep golden autumn hillsides close behind. The signboards are in their normal places but small and slightly soft, and none of the characters on them are readable. No real institution name, no municipal crest, no emblem, no logo, no red cross symbol. The camera holds completely still and nothing moves but the wind stirring the hedge and a few dry leaves crossing the gravel. Nobody comes or goes. Cold flat overcast light, no snow. Locked-off camera, no zoom. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
-→ 編集者指示: 集落中心部に「診療所 1か所のみ」のラベルを表示（**建物を指し示さず、集落の上に浮かせる**）。下段に「重傷者4人 × 村の医療＝診療所1つ」のテロップ。BGMは落とし、風の音だけ。
----
+→ 編集者指示: 看板は写るが文字は読めない状態なので、名称は「東成瀬村の診療所」「村内の医療機関はここ1か所のみ」の白テロップで補う。下段に「重傷者4人 × 診療所1つ」の対比テロップ。BGMを落とし、風の音だけにする。
 
 ナレーター: そこで、消防は4人をドクターヘリなどを使い、複数の病院へ分けて搬送することに決めます。
 

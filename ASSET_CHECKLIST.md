@@ -95,7 +95,8 @@
 |:--|:--|
 | **秋のシーン全部**（late October/autumn を書いたら） | `No snow anywhere, no frost, no winter.` ／ 山間部・曇天・夜明けは特に雪化しやすい |
 | **暗いシーン**（pre-dawn / at night / dim / deep shadow / dark room 等） | `dark but NOT pure black — <主要素> stays clearly readable` ／ 黒いクマ＋暗所は最も潰れる |
-| **実在の機関・施設**（大学・病院・省庁・市役所・消防・ドクターヘリ等） | `no institution name, no crest, no emblem, no logo, no signage` ＋ **名称はテロップで出す**（AI生成で実在施設の偽映像を作らない） |
+| **実在の機関・施設**（大学・病院・省庁・市役所・消防・ドクターヘリ等） | `no real institution name, no crest, no emblem, no logo` ＋ **名称はテロップで出す**（AI生成で実在施設の偽映像を作らない） |
+| **あるはずの物を消すと不自然になる場合** | **「消す」のでなく「読めなくする」**。看板・ナンバープレート・表札などは `present in their normal place, but small, slightly out of focus and not readable` と書く。`no signage` `no number plates` と書くと、ぽっかり空いた偽物くさい絵になる（2026-08-26 実測。診療所の看板・緊急車両のナンバーの2件で発生） |
 | **実在の被害者・公人が関わるカット** | 顔を出さない構図にする（手元／肩越し／首から下／POV／後ろ姿）＋ `no face visible` |
 | **日本語の文字を描かせるとき** | ラベルに **【chatGPT推奨】** を付ける（Lovartは日本語を崩す）＋ 描かせる文字は**1〜2個に限定**、残りは `too small to read` |
 | **文字を出したくない画** | `No legible text, no signage, no nameplate anywhere` |
