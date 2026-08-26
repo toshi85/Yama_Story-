@@ -95,12 +95,66 @@
 |:--|:--|
 | **秋のシーン全部**（late October/autumn を書いたら） | `No snow anywhere, no frost, no winter.` ／ 山間部・曇天・夜明けは特に雪化しやすい |
 | **暗いシーン**（pre-dawn / at night / dim / deep shadow / dark room 等） | `dark but NOT pure black — <主要素> stays clearly readable` ／ 黒いクマ＋暗所は最も潰れる |
-| **実在の機関・施設**（大学・病院・省庁・市役所・消防・ドクターヘリ等） | `no institution name, no crest, no emblem, no logo, no signage` ＋ **名称はテロップで出す**（AI生成で実在施設の偽映像を作らない） |
+| **実在の機関・施設**（大学・病院・省庁・市役所・消防・ドクターヘリ等） | `no real institution name, no crest, no emblem, no logo` ＋ **名称はテロップで出す**（AI生成で実在施設の偽映像を作らない） |
+| **あるはずの物を消すと不自然になる場合** | **「消す」のでなく「読めなくする」**。看板・ナンバープレート・表札などは `present in their normal place, but small, slightly out of focus and not readable` と書く。`no signage` `no number plates` と書くと、ぽっかり空いた偽物くさい絵になる（2026-08-26 実測。診療所の看板・緊急車両のナンバーの2件で発生） |
 | **実在の被害者・公人が関わるカット** | 顔を出さない構図にする（手元／肩越し／首から下／POV／後ろ姿）＋ `no face visible` |
 | **日本語の文字を描かせるとき** | ラベルに **【chatGPT推奨】** を付ける（Lovartは日本語を崩す）＋ 描かせる文字は**1〜2個に限定**、残りは `too small to read` |
 | **文字を出したくない画** | `No legible text, no signage, no nameplate anywhere` |
 | **テロップを乗せる画** | 構図で余白を確保する（`the upper two-thirds is deliberately left as clean negative space for large text`）。指定しないと被写体が画面を埋める |
 | **クマが走る／前進するカット** | `ON ALL FOURS` を明記（無いとlintがERROR）＋ `NOT standing upright, NOT on two legs` |
+| **クマが出るカット全部** | **体長と体重を必ず書く**（無指定だと必ずグリズリー級に描かれる）＋ **凶暴さの語を3つ以上**。詳細は直下の「クマ専用ルール」 |
+
+### 🐻 クマ専用ルール（2026-08-26 恒久化・lint 32/33 が自動検査）
+
+> 毎回「凶暴さが足りない」「クマが大きすぎる」と差し戻されていた2点を仕組み化した。
+> **指摘される前に、最初から入れる。**
+
+**① サイズは必ず書く。種の標準を取り違えない**
+
+生成AIはサイズ無指定だと**どんなクマもグリズリー級**に描く。体長と体重の両方を必ず明記する。
+
+- **台本にその個体の実数値があれば、それを最優先で使う**（例: 東成瀬村＝体長1.2m・約80kgのメス／羅臼岳＝140cm・117kgのメス）
+- 台本に無ければ**種の標準体格**を使う。**ツキノワグマとヒグマでは全く違う**ので必ず区別する
+
+| 種 | 学名 | 体長の目安 | 体重の目安 |
+|:--|:--|:--|:--|
+| **ツキノワグマ** | Ursus thibetanus japonicus | 約110〜130cm | メス約40〜80kg ／ オス約60〜120kg |
+| **ヒグマ（エゾヒグマ）** | Ursus arctos yesoensis | 約190〜230cm | メス約100〜200kg ／ オス約150〜400kg |
+
+- 数値だけでは効かない。**比較対象を最低2つ**添える → `its shoulder no higher than an adult's waist` ／ `clearly much smaller than a grizzly or a brown bear` ／ `visibly small next to the wooden shed`
+- ツキノワグマの骨格を固定する語も入れる → `rounded ears, a short blunt muzzle, a stocky but slender frame`
+
+**② 凶暴さは毎回入れる — ただし実写／フォトリアルのカットだけ**
+
+> ⚠️ **カートゥン調のキャラプロンプト（1:1）は対象外**（2026-08-26 ユーザー指定）。従来どおりのトーンでよい。
+> 大きな瞳のカートゥン絵柄に牙・歯茎・唾液を盛ると顔が崩れる。lint 32 も `Cute cartoon character design` を含むブロックは自動で除外する。
+
+実写カットでは下の語彙から**3つ以上**を必ず入れる。「ferocious」だけでは効かない。**部位ごとの具体描写**が効く。
+
+| 部位 | 書く語 |
+|:--|:--|
+| 口・牙 | `jaws wrenched wide open in a savage snarl` `long curved canine fangs and the whole row of teeth completely bared` `black lips peeled back off pink gums` |
+| 唾液 | `thick ropes of saliva flung from the jaws` |
+| 鼻筋 | `muzzle creased into deep folds` |
+| 目 | `small eyes narrowed to slits and fixed straight on the lens` `the whites showing at their edges` |
+| 耳 | `ears pinned flat against the skull` |
+| 毛 | `the fur along its neck, shoulders and spine bristled up into a raised ridge` |
+| 筋肉・姿勢 | `head dropped low and driven forward between bunched shoulders` `heavy muscle bunched beneath the coat` |
+| 爪 | `claws fully extended and hooked` `tearing up turf` |
+| 総括 | `Ferocious, enraged, single-minded predatory fury.` |
+
+**③ 例外 — 凶暴にしてはいけないカット**
+
+一律に凶暴化すると演出が壊れる。次は**あえて凶暴にしない**（lint 32 も自動で除外する）。
+
+- **採食・移動・生態説明**（ブナを食べる／山を歩く／豊作の年に増える母子グマ）
+- **逃走・遠景・背面**（走り去る後ろ姿、遠くに小さく写る個体）
+- **駆除後・箱わな・鎮静後**
+- **「異様に静か」で怖がらせるカット** — 例: 高台に座って人間を見下ろす場面。**動かないことが恐怖の正体**なので、牙をむかせると台無しになる
+
+**④ 血の直接語は書かない**（既出ルールの再掲）
+
+`blood` `bleeding` 等はポリシー拒否を招く。凶暴さは**牙・唾液・逆立った毛・筋肉・めくれた土**という被害描写を伴わない要素だけで作る。
 
 ### タイプの決め方（機械が判定できる部分は数える）
 
@@ -219,8 +273,9 @@ AI生成版はこの検査で8項目全部が超過した＝それが手直し�
 | **文字数整合（26）** | **51字以上（要分割）**／**26〜50字なのに静止画** ※句読点・記号を除いて数える |
 | **予算（27-28）** | **Google Flow動画が40本超**／**素材カテゴリが4種類未満**（50アセット以上のファイルのみ判定） |
 | **プロンプト安全（29-31）** | **秋指定なのに `no snow` なし**／**暗いシーンに `NOT pure black` なし**／**実在機関名に打ち消し指定なし** |
+| **クマ（32-33）** | **実写の襲撃・威嚇カットに凶暴さの語が3つ未満**（カートゥンは対象外）／**クマにサイズ指定なし**／**ツキノワグマなのにヒグマ級の体格** |
 
-> 23-31は2026-08-21追加。東成瀬村セッションで人手で数えていた項目を機械化したもの。
+> 32-33は2026-08-26追加（クマの凶暴さ不足・サイズ過大が毎回差し戻されていたため）。23-31は2026-08-21追加。東成瀬村セッションで人手で数えていた項目を機械化したもの。
 > **AI動画の上限は40本**（2026-08-21にユーザー指定で12→20→40へ変更）。
 > 根拠は実測: 朱鞠内湖96本(全242アセット中40%)／星野道夫20本(227中9%)／羅臼岳16本(151中11%)。
 > 旧12本は**実際に作られたどの台本とも一致していなかった**（守られていないルールが文書に残っていた）。

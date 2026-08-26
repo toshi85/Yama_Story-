@@ -258,7 +258,78 @@ def prompt_lint(text, errors, warns, info):
     if org:
         warns.append(f'実在機関を示す語に打ち消し指定なし {len(org)}件（実在施設の偽映像になる→no institution name/no crest/no signage を明記し、名称はテロップで出す）: {", ".join(dict.fromkeys(org))}')
 
-    info.append(f'プロンプトlint(14-31): {len(segs)}セグメント走査')
+    # 32) クマの攻撃・威嚇カットに凶暴さの描写がない（2026-08-26 ユーザー指定で恒久化）
+    #     毎回「凶暴さが足りない」と差し戻されていたため、指摘される前に入れる定型を機械化した。
+    #     採食・逃走・遠景・死骸など「凶暴であってはならないカット」は除外する（一律凶暴化は演出を壊す）。
+    BEAR = re.compile(r'\b(bear|moon bear|ursus)\b', re.I)
+    AGGRO_CTX = re.compile(
+        r'charg|attack|lunge|pounce|mid-run|rush|snarl|roar|menac|threat|'
+        r'head-on|at the lens|confront|stare|glare|'
+        r'emerg|bursts|fills most of the frame', re.I)
+    CALM_CTX = re.compile(
+        r'seen from directly behind|escap|away from the (lot|scene|camera)|'
+        r'forag|feeding|eating|grazing|acorn|beech nut|'
+        r'carcass|culled|sedated|tranquil|box trap|cage|'
+        r'walking calmly|resting|asleep|silhouette|'
+        r'cub|playful|thriving|tumbling|family|mother bear with|'
+        r'far in the (back|distance)|small and distant', re.I)
+    FEROCITY = [
+        r'fang', r'bared', r'snarl', r'gums', r'saliva',
+        r'bristl', r'hackle', r'ferocious', r'enraged', r'creased',
+        r'ears (pinned|laid back|flat)', r'claws (spread|fully extended|extended)',
+        r'teeth', r'jaws (wide open|wrenched|parted)',
+    ]
+    tame = []
+    for nar, seg in segs:
+        for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
+            if not BEAR.search(b):
+                continue
+            # カートゥン調のキャラプロンプトは対象外（2026-08-26 ユーザー指定）。
+            # 凶暴さを盛るのは実写・フォトリアルのカットだけ。絵柄と衝突して顔が崩れるため。
+            if 'Cute cartoon character design' in b:
+                continue
+            if CALM_CTX.search(b):
+                continue
+            if not AGGRO_CTX.search(b) and not re.search(r'クマ|熊|ツキノワ', nar or ''):
+                continue
+            hits = sum(1 for pat in FEROCITY if re.search(pat, b, re.I))
+            if hits < 3:
+                tame.append(asset_no(seg))
+                break
+    if tame:
+        warns.append(f'実写クマのカットに凶暴さの描写が不足 {len(tame)}件（毎回差し戻される定番。牙/bared fangs・歯茎/gums・唾液/saliva・逆立った毛/bristling・伏せた耳/ears pinned flat・しわ寄せた鼻筋/muzzle creased・爪/claws extended のうち3つ以上を必ず入れる）: {", ".join(dict.fromkeys(tame))}')
+
+    # 33) クマのサイズ指定がない／種と体格が矛盾している（2026-08-26 ユーザー指定で恒久化）
+    #     生成AIは指定がないとクマを一律グリズリー級に描く。台本に実個体のサイズがあればそれを、
+    #     無ければ種の標準体格（下記）を必ず書く。ツキノワグマとヒグマでは標準が全く違う。
+    #       ツキノワグマ Ursus thibetanus japonicus … 体長 約110〜130cm / 体重 オス約60〜120kg・メス約40〜80kg
+    #       ヒグマ（エゾヒグマ）Ursus arctos yesoensis … 体長 約190〜230cm / 体重 オス約150〜400kg・メス約100〜200kg
+    SIZE_LEN = re.compile(r'\b\d{2,3}\s?cm\b|\b\d(?:\.\d)?\s?met(?:re|er)s?\b', re.I)
+    SIZE_KG  = re.compile(r'\b\d{2,3}\s?kg\b', re.I)
+    SP_BLACK = re.compile(r'asian black bear|asiatic black bear|moon bear|thibetanus', re.I)
+    SP_BROWN = re.compile(r'brown bear|grizzly|ursus arctos|yesoensis', re.I)
+    nosize, mism = [], []
+    for nar, seg in segs:
+        for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
+            if not BEAR.search(b):
+                continue
+            no = asset_no(seg)
+            if not (SIZE_LEN.search(b) or SIZE_KG.search(b)):
+                nosize.append(no)
+            # 種が黒（ツキノワ）なのにヒグマ級の数値を書いていないか
+            if SP_BLACK.search(b) and not SP_BROWN.search(b):
+                kgs = [int(x) for x in re.findall(r'\b(\d{2,3})\s?kg\b', b, re.I)]
+                cms = [int(x) for x in re.findall(r'\b(\d{2,3})\s?cm\b', b, re.I)]
+                mtr = [float(x) for x in re.findall(r'\b(\d(?:\.\d)?)\s?met(?:re|er)s?\b', b, re.I)]
+                if any(k > 150 for k in kgs) or any(c > 160 for c in cms) or any(m > 1.6 for m in mtr):
+                    mism.append(no)
+            break
+    if nosize:
+        warns.append(f'クマにサイズ指定なし {len(nosize)}件（無指定だとグリズリー級に描かれる→体長と体重を必ず明記。台本に実個体の数値があればそれを、無ければ種の標準を使う。ツキノワグマ=体長約110〜130cm/メス約40〜80kg・オス約60〜120kg、ヒグマ=体長約190〜230cm/メス約100〜200kg・オス約150〜400kg）: {", ".join(dict.fromkeys(nosize))}')
+    if mism:
+        warns.append(f'ツキノワグマなのにヒグマ級の体格 {len(mism)}件（種と数値が矛盾。ツキノワグマは体長160cm・体重150kgを超えない）: {", ".join(dict.fromkeys(mism))}')
+
+    info.append(f'プロンプトlint(14-33): {len(segs)}セグメント走査')
 
 def main(master_path, daihon_path):
     m = open(master_path, encoding='utf-8').read()
