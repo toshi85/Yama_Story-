@@ -1378,17 +1378,17 @@ Low-angle view from a village lane in Higashinaruse, Akita up a steep grassy emb
 
 ナレーター: そこに座りこむようにして、集まってきたハンターたちをじっと見下ろしていたとのこと。
 
-【制作メモ】ASSET-106 [Lovart動画] 台本L394 ★AI動画（対峙の画）
-シーン: 高台に座り込んだクマが、下のハンターたちをじっと見下ろしている異様な光景
+【制作メモ】ASSET-106 [キャラアニメーション] 台本L394
+シーン: 104と同じ山の平場を下から見上げた角度。そこに腰を下ろしたCHAR-07が、斜め下をじっと見据えている
+キャラプロンプト（1:1）:
 ```
-An adult Asian black bear with a white chest crescent sitting back on its haunches on a grassy hilltop in a Japanese mountain village in Akita, front paws planted, utterly still, gazing down toward the village below, cold gray sky, wind-bent dry grass around it. Unnatural composure, deeply unsettling. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, sitting back on her haunches in a natural bear sitting posture with her rump on the ground, both front paws planted flat on the ground in front of her and her forelegs straight, head level and turned to gaze steadily downward at something below and to the side. She is completely still and unafraid, with a calm unblinking expression, showing no aggression and no fear. NOT standing upright, NOT on two legs, NOT posed like a human, NOT waving or gesturing. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
-→ **Google Flow動画プロンプト:**
+背景プロンプト（16:9）:
 ```
-Slow low push-in from below toward an adult Asian black bear, glossy black fur with a white crescent chest patch, sitting back on its haunches on a grassy hilltop above a Japanese village in Akita, front paws planted, head slowly tracking downward movement below, dry grass rippling in wind, cold overcast light. The bear never flinches. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+The same forested mountainside ledge as the previous shot, in Higashinaruse, Akita, in late October, now seen from below — the camera is down among the trees at the foot of the slope, looking steeply up. A leaf-covered slope climbs away from the viewer and levels out near the top of the frame into the same small flat patch of forest floor, deep in fallen leaves and moss with exposed tree roots at its edge, set high above the camera. Tall cedar and beech trunks rise on both sides and frame the view vertically, bare branches crossing overhead, dense autumn undergrowth and fallen branches on the lower slope in the foreground. A pale flat overcast sky shows through the canopy behind the ledge. Steep dark forested ridges are just visible further back through the trees. Deep in the mountains — not a plaza, not a park, not a bare earth field, no road, no path, no fence. Framed low and looking up so the ledge sits high in the frame, with the area on and just above the ledge left as clear open space. Cold flat gray overcast late-morning light, thin wind. The shaded lower slope is dark but NOT pure black — the ledge and the tree trunks stay clearly readable. Autumn colours in the leaves. No snow anywhere, no frost, no winter. No legible text or signage anywhere. Bleak and exposed, unsettlingly quiet. Photorealistic, shot on RED camera, 35mm lens. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
-→ 編集者指示: 風の音だけ。BGMなしの不気味さで見せる（5秒）。
-
+→ 編集者指示: CHAR-07を高台の頂に配置。画面下部に既存のハンターのキャラ素材を小さく後ろ姿で3体並べ、上下の高低差で「見下ろされている」関係を作る。風の音だけ、BGMなし（5秒）。
 ---
 
 ナレーター: この時の状況についてベテラン男性は、「熊が、あの高台に、我々を見下ろしながら黙ってこうやっているなんていうのは、何十年やっているんだけどもほとんど考えられない」と語っています。
