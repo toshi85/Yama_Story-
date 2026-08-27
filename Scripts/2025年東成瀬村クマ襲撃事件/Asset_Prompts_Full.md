@@ -1527,10 +1527,10 @@ A 6-second extreme slow-motion first-person shot from flat on the ground in a ba
 ナレーター: クマは正面から向かってきて、前足を振り上げます。
 
 【制作メモ】ASSET-096 [キャラアニメーション] 台本L371
-シーン: 正面から迫るCHAR-07が前足を振り上げる（四足のまま）
+シーン: 正面から迫ったCHAR-07が後ろ足で立ち上がり、両前足を振り上げる（このカットのみ四足の例外）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, charging head-on toward the viewer on all fours, one front paw lifted high mid-stride ready to strike, mouth open. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm body length and about 80kg, glossy black fur, white crescent chest patch, rounded ears and a short blunt muzzle. She has risen up on her hind legs directly in front of the viewer and has both front paws raised high above her head, claws spread, about to bring them down. Her hind legs stay planted flat on the ground and her body is angled forward with the weight coming toward the viewer — an animal rearing to strike, never a human-like upright pose. Mouth open, small eyes fixed straight ahead. Full body, seen head-on. White background. Nothing else around her — no props, no background elements of any kind. No blood, no wounds, no gore. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
