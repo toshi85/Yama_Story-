@@ -1267,18 +1267,19 @@ Extreme close-up of deep claw gouges scarring the bark of a beech tree in an Aki
 
 ナレーター: その一撃で、目、鼻、あごなど脆い部分が、一瞬で削り取られてしまうのです。
 
-【制作メモ】ASSET-099 [キャラアニメーション] 台本L377
-シーン: 前足の一閃と舞い散る木の葉（人体は描かず威力だけを示す）
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-099 [Lovart動画] 台本L377
+シーン: 頭蓋骨の正面レントゲン写真（実写風）。顔の骨だけが砕けていて、上の厚い頭蓋は比較的無事という対比を見せる
+- 実在の患者の記録に見えないよう、氏名・ID・日付・病院名は一切写さない
+- 血液・傷・軟部組織は写さない。骨のレントゲン像のみ
+静止画プロンプト（16:9・フォトリアル）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours completing a violent paw swipe, dry leaves and small twigs bursting into the air around the claws. Family-friendly depiction, no injuries shown. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+Photorealistic frozen frame of a single frontal skull radiograph displayed on a dark medical viewing screen, filling most of the frame, seen straight on. Classic greyscale X-ray look: the dense bone bright white against the deep black background, soft grain, faint scatter, slight glow from the backlight. The thick rounded cranial vault across the top of the skull is smooth and unbroken, clearly solid. Below it the facial bones are shattered: fine and coarse fracture lines run in a web through both orbital rims and across the bridge of the nose, the left cheekbone is broken into several displaced fragments with narrow dark gaps between them, and the lower jaw is split with the pieces sitting slightly out of line. The contrast between the intact heavy vault above and the broken thin facial bones below is immediately obvious. No soft tissue, no skin, no flesh, no blood, no wounds, no gore. Not a real patient record — no patient name, no ID number, no date, no hospital name, no institution mark, no legible text, no letters, no numbers, no markers anywhere in the frame. Cold clinical light. The background is dark but NOT pure black — every fracture line in the facial bones stays clearly readable against it. Photorealistic medical radiograph, documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
+→ Google Flow動画プロンプト:
 ```
-A burst of dry autumn leaves frozen mid-air against a dark forest backdrop in Akita, sharp shallow focus on the swirling fragments, high shutter-speed look. The force of a single blow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A 5-second documentary shot of a single frontal skull radiograph on a dark medical viewing screen. The camera pushes in very slowly and steadily toward the middle of the face, from the whole skull down to the shattered orbital rims, nose and jaw. Nothing else moves. The backlight holds steady with only the faintest flicker. Greyscale X-ray, bright bone against deep black. The thick cranial vault stays smooth and unbroken while the facial bones below are clearly broken into displaced fragments. No soft tissue, no skin, no blood, no wounds, no gore. No patient name, no ID, no date, no hospital name, no legible text anywhere. The background is dark but NOT pure black — the fracture lines stay clearly readable throughout. Slow push-in, no zoom snap, locked-off otherwise. Photorealistic medical radiograph, documentary style.
 ```
-→ 編集者指示: 一閃のSE（風切り音）→葉が舞う静止で1秒止める。「目・鼻・あご」の小テロップ。
-
+→ 編集者指示: 「目・鼻・あご」の小テロップを、寄っていく順にそれぞれの部位へ重ねる。上の頭蓋には「厚い」、下の顔の骨には「薄い」を白線の引き出しで添え、094の説明と画でつなぐ。⚠️これは説明用に作った画像なので、実際の被害者のレントゲンとして紹介しない。
 ---
 ### §10 高台から、見下ろしていた
 
