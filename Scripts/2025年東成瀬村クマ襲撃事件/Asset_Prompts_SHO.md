@@ -1352,14 +1352,14 @@ Soft-focus view of a grassy hilltop above village houses in Higashinaruse, Akita
 ナレーター: というのも、クマが、ほとんど現場から逃げていなかったのです。
 
 【制作メモ】ASSET-104 [キャラアニメーション] 台本L390
-シーン: 現場からわずかに離れた高台にとどまるCHAR-07
+シーン: 現場を見下ろす高台の平らな地面に、CHAR-07が座ったままとどまっている
 キャラプロンプト（1:1）:
 ```
 (CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, sitting back on her haunches with front paws planted on the ground, completely calm and unmoving. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A small grassy hilltop rising just above village rooftops in Higashinaruse, Akita, dry autumn grass, a few bare trees, the vacant lot visible small below. Unnervingly close. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A flat open shelf of ground partway up a low hill in Higashinaruse, Akita, in late October. The near half of the frame is a wide level patch of bare packed earth and short dry autumn grass, flat and unobstructed, big enough for a large animal to sit on, with a few fallen leaves scattered across it and no rocks or bushes in the way. The ground drops away beyond it, and down below the village rooftops and a small vacant lot are visible in the distance, close enough to feel uncomfortable. A few bare trees stand well back at the edges of the frame. Framed from adult eye height looking slightly down across the flat ground toward the village, with the middle of the frame left as clear open space. Cold flat overcast late-morning light. No snow anywhere, no frost, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「現場からほとんど逃げていない」テロップ。現場と高台の位置関係を白ラインで一瞬示す。
 
