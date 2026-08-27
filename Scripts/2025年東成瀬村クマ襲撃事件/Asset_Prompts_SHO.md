@@ -964,16 +964,16 @@ High aerial view over a regional Japanese city in Akita at dusk, several large h
 ナレーター: 重い患者を1か所に集めると、手術室も輸血も人手も足りなくなり、助けられない恐れがあります。
 
 【制作メモ】ASSET-079 [キャラアニメーション] 台本L334
-シーン: 1つの手術室前に処置待ちが集中してしまう「悪い例」のイメージ
+シーン: 病室で、重なった処置に手が回らず慌てている看護師たち
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese hospital staff rushing and overwhelmed, every person a distinct individual, no two dressed alike: a surgeon in green scrubs checking a clipboard, a nurse in white pushing an empty gurney, another nurse in pink scrubs carrying an IV bag, all hurried and overloaded. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese nurses in a hurry, every person a distinct individual, no two dressed alike and no two in the same pose. A Japanese nurse, a woman in her twenties with short black hair, in a white short-sleeved nursing uniform and white trousers, hurrying forward with a clipboard clutched to her chest, eyebrows pulled together, mouth open as if calling to someone. A Japanese nurse, a woman in her forties with hair tied back, in pale blue scrubs, half-turned as if pulled in two directions at once, an IV bag held up in one hand and the other hand raised in a wait gesture, looking flustered. A Japanese male nurse, a slim man in his thirties, in pale green scrubs, crouched low while gripping a folded blanket, glancing back over his shoulder with a strained anxious face. All three are rushed and overloaded, clearly short-handed. Full body. White background. Nothing else around them — no props apart from what each is holding or wearing, no background elements of any kind. No blood, no wounds, no gore. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A Japanese hospital corridor in Akita at night outside a single operating room: red "in use" lamp glowing above the door, empty gurneys lined against the wall, harsh fluorescent light. Overload and shortage. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A hospital patient room in Akita, Japan, in the daytime: two empty beds with pale blue blankets pulled back and rumpled, a bedside cabinet with a stainless steel tray and gauze on it, a rolling IV stand beside one bed, a wheeled vital-signs monitor pushed in at an angle, a privacy curtain half drawn on its ceiling rail, a wheelchair left in the middle of the floor, pale flat daylight coming through a wide window with the blind half raised. Ordinary working Japanese hospital room, slightly disordered as if everyone has just left in a hurry. A whiteboard, a name card holder at the head of each bed and a notice sheet on the wall are present in their normal places, but every one of them is small, slightly out of focus and not readable. No real institution name, no crest, no emblem, no logo, no red cross symbol. Framed from the doorway at adult eye height, the middle of the frame left as clear open space. Fluorescent ceiling light. No blood, no wounds, no gore. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
-→ 編集者指示: 「手術室×1」「輸血×不足」「人手×不足」の3項目を順に赤で点灯。
+→ 編集者指示: 「手術室×1」「輸血×不足」「人手×不足」の3項目を順に赤で点灯。3人は左右に散らして配置し、同じ向きに並べない。院名は画に出さないので必要ならテロップで補う。
 
 ---
 
