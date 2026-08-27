@@ -1039,16 +1039,16 @@ A stainless medical tray in a Japanese operating room in Akita with airway manag
 ナレーター: 1人に対して複数の科が同時に動かなければならないのが、クマによるけがの特徴。
 
 【制作メモ】ASSET-084 [キャラアニメーション] 台本L344
-シーン: 3人の医師が1台のストレッチャーへ同時に駆け寄る
+シーン: 診療科の違う3人の医師が、病室で焦りながら話し合っている
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese doctors converging at a run toward the same point, every person a distinct individual, no two dressed alike: one in green surgical scrubs, one in a white coat with glasses, one in blue scrubs with a stethoscope. Determined urgent faces. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese doctors from different departments talking urgently to each other, standing in a loose triangle and turned partly toward one another, every person a distinct individual, no two dressed alike and no two in the same pose. A Japanese surgeon, a broad-shouldered man in his fifties in green surgical scrubs with a surgical cap pushed back, leaning in and speaking fast with one hand chopping the air, brows drawn together. A Japanese doctor, a woman in her thirties in a white coat over a pale shirt with glasses, holding an X-ray film up in one hand and pointing at it with the other, mouth open mid-sentence, looking tense. A Japanese anaesthetist, a slim man in his forties in blue scrubs with a stethoscope round his neck, half-turned away with a hand raised to cut in, jaw tight, clearly anxious about the time. All three are hurried and on edge, arguing over what to do first. Full body. White background. Nothing else around them — no props apart from what each is holding or wearing, no background elements of any kind. No blood, no wounds, no gore. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A bright Japanese emergency room bay in Akita: an empty stretcher at the center under a surgical light, monitors on stands around it, cables ready. The moment before a team converges. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A hospital patient room in Akita, Japan, in the daytime: a single made-up bed with a pale blue blanket, a rolling IV stand and a wheeled vital-signs monitor beside it, a bedside cabinet with a stainless steel tray, a privacy curtain pushed back on its ceiling rail, a low chair for a visitor, pale flat daylight through a wide window with the blind half raised. Ordinary working Japanese hospital room, plain and functional. A whiteboard, a name card holder at the head of the bed and a notice sheet on the wall are present in their normal places, but every one of them is small, slightly out of focus and not readable. No real institution name, no crest, no emblem, no logo, no red cross symbol. Framed from the doorway at adult eye height, the middle of the frame left as clear open space. Fluorescent ceiling light. No blood, no wounds, no gore. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
-→ 編集者指示: 「1人の患者 × 複数の科」テロップ。3人を三方向から中央へ寄せる。
+→ 編集者指示: 「1人の患者 × 複数の科」テロップ。3人は中央へ寄せず、三角に開いて向かい合わせる。「形成外科」「脳神経外科」「麻酔科」の科名テロップを各人の足元に順に出す。院名は画に出さない。
 
 ---
 
