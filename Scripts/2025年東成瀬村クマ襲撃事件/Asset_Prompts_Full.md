@@ -1437,11 +1437,11 @@ Close-up of a thick document lying open on a wooden desk in a Japanese universit
 ナレーター: 患者の90パーセントに、顔面の損傷があったのです。
 
 【制作メモ】ASSET-089 [Lovart静止画 + 編集者] 台本L357
-シーン: 無地の医療背景に「90%」を編集者が大きく重ねるためのベース
+シーン: 患者10人ぶんの頭部アイコンを並べ、9人ぶんの顔の部分が赤く塗られているグラフ（90%を一目で示す）
 ```
-A minimalist clinical backdrop in Akita, Japan: soft gradient of pale blue-gray light across a clean wall, a faint silhouette of a medical skull model at the lower corner, calm and serious tone, large empty area in the frame. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+A clean flat infographic on a plain dark charcoal background: a single horizontal row of ten identical simple human head icons, shown in profile-free front view as plain rounded outlines with no facial features at all, evenly spaced across the lower third of the frame, all exactly the same size and shape. Nine of the ten heads have the face area filled with a solid deep red; the tenth head, at the right-hand end of the row, is left plain pale grey and unfilled, so the difference between nine and one is immediately obvious. Thin clean lines, flat colours, no shading, no gloss, no three-dimensional effect. The upper two-thirds of the frame is deliberately left as clean empty negative space for large text. No legible text, no numbers, no labels, no signage anywhere. No blood, no wounds, no gore. Clean flat infographic render, documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
-→ 編集者指示: 「顔面の損傷 90%」を画面中央に大きく表示（カウントアップ演出0→90）。
+→ 編集者指示: 上の余白に「顔面の損傷 90%」を大きく表示（カウントアップ演出0→90）。数字が90に達したところで、赤い9個を左から順に一度だけ光らせる。右端の灰色1個は最後まで灰色のまま残す。出典テロップ「2023年 秋田大学病院 クマ被害20人の資料」を下段に小さく添える。
 
 ---
 
