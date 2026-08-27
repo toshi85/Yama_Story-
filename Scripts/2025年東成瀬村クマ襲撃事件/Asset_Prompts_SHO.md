@@ -1091,16 +1091,16 @@ A long quiet Japanese hospital corridor in Akita at night, cool fluorescent ligh
 ナレーター: それは、全員が、顔と頭をやられていた、ということです。偶然ではありません。
 
 【制作メモ】ASSET-087 [キャラアニメーション] 台本L353
-シーン: 医師が自分の顔と頭を手で指し示して説明する
+シーン: 4人全員が病室のベッドで頭に包帯を巻いている。画面を4分割にして並べる（佐々木さんだけ意識がなく目を閉じている）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese doctor in a white coat, woman in her 40s with hair tied back, pointing with one hand to her own face and the other hand to the top of her head, calm explanatory expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+(CHAR-01 / CHAR-02 / CHAR-04 / CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Four Japanese patients arranged as a two-by-two block, each one in its own quarter of the square, evenly spaced, every person clearly a distinct individual and no two in the same pose. Each one is lying on their back on a plain simple hospital bed with a pale blue blanket drawn up to the chest, and each has clean white bandages wrapped around the head and across one side of the face. Top left: CHAR-01, a 38-year-old Japanese man with a sturdy medium build and a kind gentle face, lying completely still with both eyes closed and his arms straight at his sides, unconscious and unmoving. Top right: CHAR-02, a 65-year-old Japanese man with a lean strong build and short gray-streaked hair, awake, eyes open and turned toward the ceiling, one hand resting on the blanket. Bottom left: CHAR-04, a 76-year-old Japanese man, thin and wiry with white stubble, awake, head turned slightly to one side, eyebrows drawn up in worry. Bottom right: CHAR-05, a 72-year-old Japanese woman, small and round with gray hair, awake, one hand lifted a little off the blanket as if reaching for someone. The three awake patients look exhausted and dazed but are clearly conscious; only the man in the top left has his eyes closed. Only the beds and blankets as props, nothing else around them — no room, no walls, no floor, no equipment, no background elements of any kind. Full body. White background. No blood, no wounds, no gore. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A neutral Japanese medical lecture room in Akita: plain light wall, a desk edge with a folder, soft even lighting. Clear explanation space. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A hospital patient room in Akita, Japan, in the daytime: a plain pale wall with a wide window, the blind half raised letting in flat overcast daylight, a privacy curtain pushed back on its ceiling rail, a bedside cabinet and a rolling IV stand standing empty against the wall, pale vinyl flooring. Ordinary working Japanese hospital room, plain and functional, deliberately uncluttered so the middle of the frame is left as clear open space. A whiteboard and a notice sheet on the wall are present in their normal places, but both are small, slightly out of focus and not readable. No real institution name, no crest, no emblem, no logo, no red cross symbol. Fluorescent ceiling light. No blood, no wounds, no gore. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
-→ 編集者指示: 「全員が顔と頭」テロップ。「偶然ではありません」で一拍置く。
+→ 編集者指示: 画面を十字に4分割し、キャラ画像を4分の1ずつ切り出して各枠へ配置。背景は病室を全面に敷き、枠線は細い白線で。4枠の包帯部分を同時に一度だけ光らせて「全員が顔と頭」の白テロップ。「偶然ではありません」は一拍置いてから赤字で単独表示。左上（佐々木さん）だけ枠内の彩度を少し落とし、意識がないことを画で分ける。
 
 ---
 
