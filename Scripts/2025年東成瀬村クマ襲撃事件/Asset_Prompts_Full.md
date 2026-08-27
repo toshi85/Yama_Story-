@@ -1405,19 +1405,22 @@ A long quiet Japanese hospital corridor in Akita at night, cool fluorescent ligh
 
 ナレーター: それは、全員が、顔と頭をやられていた、ということです。偶然ではありません。
 
-【制作メモ】ASSET-087 [キャラアニメーション] 台本L353
-シーン: 最初から画面が4分割されていて、それぞれの枠に病室のベッドで頭に包帯を巻いた4人が入っている1枚絵（佐々木さんだけ意識がなく目を閉じている）
-※このカットだけの例外: キャラと背景を分けず、4分割の完成画として1枚で生成する
-4分割イラスト（16:9）:
+【制作メモ】ASSET-087 [Lovart動画] 台本L353
+シーン: 画面を4分割し、それぞれの枠に病室のベッドで頭に包帯を巻いた人が写る実写風の1枚（実在の被害者のため顔は写さない。左上だけ完全に動かず意識がないことを示す）
+静止画プロンプト（16:9・フォトリアル）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A single illustration divided into four equal rectangular panels in a two-by-two grid, separated by thin clean white gutters, like four windows shown side by side. Every panel is drawn in exactly the same cartoon style, at the same scale and from the same angle: a plain Japanese hospital room seen from the foot of the bed, with one Japanese patient lying on their back in a simple bed, a pale blue blanket drawn up to the chest, a plain pale wall behind, a small window with flat daylight, and a bedside cabinet. Each patient has clean white bandages wrapped around the head and across one side of the face. Every person is clearly a distinct individual and no two are in the same pose.
-Top left panel: a 38-year-old Japanese man, sturdy medium build, kind gentle face, lying completely still with both eyes closed and both arms straight at his sides, unconscious and unmoving.
-Top right panel: a 65-year-old Japanese man, lean strong build, short gray-streaked hair, weathered face, awake with his eyes open and turned toward the ceiling, one hand resting on the blanket.
-Bottom left panel: a 76-year-old Japanese man, thin and wiry with white stubble, awake, his head turned slightly to one side, eyebrows drawn up in worry.
-Bottom right panel: a 72-year-old Japanese woman, small and round with gray hair, awake, one hand lifted a little off the blanket as if reaching toward someone.
-The three awake patients look exhausted and dazed but are plainly conscious; only the man in the top left panel has his eyes closed. Quiet, still, subdued colours. No real institution name, no crest, no emblem, no logo, no red cross symbol. No legible text, no signage, no nameplate anywhere. No blood, no wounds, no gore. 16:9 aspect ratio. Generate 1 image.
+Photorealistic frozen frame, a single image divided into four equal rectangular panels in a two-by-two grid, separated by thin clean white gutters. Every panel shows a quiet Japanese hospital room in the daytime, all four lit the same way with flat overcast daylight from a window and a plain pale wall behind: in each panel one patient lies on their back in a simple hospital bed under a pale blue blanket, with clean white bandages wrapped around the head. In every panel the camera is placed so that no face is visible at all — the head is seen from behind or from above the crown, or turned fully away toward the far wall, and the frame is cut at the collarbone or the shoulder. No face visible, no eyes, no facial features, in any of the four panels.
+Top left panel: a man's hands lie flat and completely motionless on either side of the blanket, the arms straight, nothing disturbed, the stillness absolute.
+Top right panel: an older man's weathered working hands, one resting on the blanket and one loosely closed, a folded newspaper on the bedside cabinet.
+Bottom left panel: a thin elderly man's hand near the edge of the blanket, a dark flat cap set on the cabinet beside the bed.
+Bottom right panel: an elderly woman's small hand lifted slightly off the blanket, a lavender cardigan folded over the back of the visitor's chair.
+Ordinary working Japanese hospital rooms, plain and functional. No real institution name, no crest, no emblem, no logo, no red cross symbol. No legible text, no signage, no nameplate anywhere. Quiet and still. No blood, no wounds, no gore. Photorealistic, shot on RED camera, 50mm lens. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
-→ 編集者指示: 生成した1枚をそのまま全画面で使う（合成不要）。4枠の包帯部分を同時に一度だけ光らせて「全員が顔と頭」の白テロップ。「偶然ではありません」は一拍置いてから赤字で単独表示。左上（佐々木さん）の枠だけ彩度を少し落とし、意識がないことを画で分ける。
+→ Google Flow動画プロンプト:
+```
+A documentary shot held completely still on a four-panel grid of quiet Japanese hospital rooms, each showing a bandaged patient lying in bed with no face visible. The camera never moves and there is no zoom. In three of the four panels the blanket rises and falls very slightly with breathing and a hand shifts a fraction. In the top left panel nothing moves at all — no breath, no movement, absolutely still. Flat overcast daylight, no other motion anywhere in the frame. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+```
+→ 編集者指示: 生成した1枚をそのまま全画面で使う（合成不要）。4枠の包帯部分を同時に一度だけ光らせて「全員が顔と頭」の白テロップ。「偶然ではありません」は一拍置いてから赤字で単独表示。左上（佐々木さん）は動きを止めたまま、枠内の彩度を少し落として意識がないことを画で分ける。
 ---
 
 ナレーター: 実は、2023年に秋田大学病院へ運ばれた、クマのけが人20人の資料によると、
