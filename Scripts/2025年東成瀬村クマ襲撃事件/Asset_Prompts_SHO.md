@@ -1201,18 +1201,20 @@ Front view close-up of a medical skull model in a Japanese clinic in Akita, back
 
 ナレーター: そこに、成人男性1人分の体重を乗せた一撃が入る。損傷して当然です。
 
-【制作メモ】ASSET-095 [キャラアニメーション] 台本L369
-シーン: CHAR-07の前足の一撃をスローモーションで（対象は映さない）
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-095 [Lovart動画] 台本L369
+シーン: 地面に押し倒された男性の上に、四足のクマが覆いかぶさる瞬間。土と枯れ葉が爆ぜる（顔は写さない・負傷は写さない）
+- 実写素材は使用しない（AI生成で確定してよい）
+- 禁止事項: 血液・傷・出血の描写、噛みつきや裂傷の瞬間。⚠️2026-08-27に「叩く対象は地面のみ」から変更（本人指示で人を入れる構図にした）
+- 実在の被害者を特定させないため、顔は写さず服装も特定の人物のものにしない
+静止画プロンプト（16:9・フォトリアル）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, on all fours mid-swing, one heavy front paw sweeping across with claws spread, muscles bunched, immense force. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+A low side-on view at ground level in a trampled vacant lot in rural Akita, frozen at a single instant. An adult Japanese black bear (Asiatic black bear, Ursus thibetanus japonicus), 120cm body length and about 80kg, glossy jet-black fur with a white crescent patch on its chest, rounded ears and a short blunt muzzle, its shoulder no higher than an adult's waist and clearly much smaller than a grizzly or a brown bear, is lunging over an adult man who has just been knocked flat onto the bare earth. The bear is ON ALL FOURS with both front paws planted heavily on the ground on either side of the man, its whole weight driven forward through its shoulders — it never stands upright and is never on two legs. Its jaws are wrenched wide open in a savage snarl with the long curved canine fangs and the whole row of teeth completely bared, its ears are pinned flat against the skull, the fur along its neck, shoulders and spine is bristled up into a raised ridge, its muzzle is creased into deep folds and its claws are fully extended and hooked, tearing up turf. The man is seen from behind and below, lying on his back in ordinary dark work clothes with his head turned fully away from the camera and one forearm thrown up across his head — no face visible, no eyes, no facial features. Dirt clods, dust and dry fallen leaves burst upward around them and hang suspended in mid-air. Dry autumn grass, late October, cold flat overcast light. No snow anywhere, no frost, no winter. No blood, no wounds, no gore. Ferocious, enraged, single-minded predatory fury. Photorealistic, shot on RED camera, 85mm lens, high shutter speed freezing the flying debris. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
+→ Google Flow動画プロンプト:
 ```
-Abstract dark backdrop with slow-drifting dust particles catching a single cold shaft of light, high contrast, cinematic emptiness, Akita documentary tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A 6-second extreme slow-motion documentary shot at ground level of an adult Japanese black bear, 120cm long and about 80kg with a white crescent chest patch, lunging over a man who has been knocked flat on the bare earth of a dirt lot in rural Akita. The bear drives forward and plants both front paws heavily on the ground on either side of him, jaws wide open and teeth bared, ears flat, the fur along its back bristling. It remains ON ALL FOURS the whole time and never stands upright, never on two legs. The man lies on his back with his head turned away from the camera and one forearm across his head — his face is never visible at any point. Dirt, dust and dry leaves explode upward and hang in the air. The shot cuts away at the moment of contact and never shows any injury. Late October overcast light, no snow. No blood, no wounds, no gore. Extreme slow motion, locked-off camera, no zoom. Photorealistic, RED camera, documentary style.
 ```
-→ 編集者指示: 「体重80kgの一撃」テロップ。前足のスイングをスロー再生風に。
-
+→ 編集者指示: 「成人男性1人分の体重を乗せた一撃」テロップ（「80kg」は出典が確認できないため画面には出さない）。着弾フレームで音を一瞬完全に消し、直後に低音の衝撃SEを置く。スロー再生のまま6秒使い切る。接触の瞬間で切り、その先は絶対に映さない。
 ---
 
 ナレーター: クマは正面から向かってきて、前足を振り上げます。

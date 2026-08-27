@@ -1509,17 +1509,19 @@ Front view close-up of a medical skull model in a Japanese clinic in Akita, back
 ナレーター: そこに、成人男性1人分の体重を乗せた一撃が入る。損傷して当然です。
 
 【制作メモ】ASSET-095 [Lovart動画] 台本L369
-シーン: 地面すれすれの横位置。クマが前足を振り下ろし、土と枯れ葉が爆ぜる。叩かれる対象は映さない
+シーン: 地面に押し倒された男性の上に、四足のクマが覆いかぶさる瞬間。土と枯れ葉が爆ぜる（顔は写さない・負傷は写さない）
 - 実写素材は使用しない（AI生成で確定してよい）
-- 禁止事項: 人・動物・被害者を叩く描写、負傷の描写。叩く対象は地面のみ
+- 禁止事項: 血液・傷・出血の描写、噛みつきや裂傷の瞬間。⚠️2026-08-27に「叩く対象は地面のみ」から変更（本人指示で人を入れる構図にした）
+- 実在の被害者を特定させないため、顔は写さず服装も特定の人物のものにしない
+静止画プロンプト（16:9・フォトリアル）:
 ```
-A low side-on view at ground level in a trampled vacant lot in rural Akita. An adult Japanese black bear (Asiatic black bear, Ursus thibetanus japonicus), about 120cm body length, glossy jet-black fur with a white crescent patch on its chest, frozen at the instant one heavy front paw drives down into the bare earth with its full body weight behind the blow, claws spread, shoulder and back muscles bunched, the other three limbs planted on the ground. It stays on all fours and never stands upright. At the point of impact the soil bursts upward in a spray of dirt clods, dust and dry fallen leaves, all suspended in mid-air. Nothing else is being struck — only bare ground. Dry autumn grass, late October, cold flat overcast light. No snow anywhere, no frost, no winter. No people, no humans visible, no other animals, no figures of any kind. No injuries visible. Raw physical power. Photorealistic, shot on RED camera, 85mm lens, high shutter speed freezing the flying debris. Documentary style. 16:9 aspect ratio. Generate 1 image.
+A low side-on view at ground level in a trampled vacant lot in rural Akita, frozen at a single instant. An adult Japanese black bear (Asiatic black bear, Ursus thibetanus japonicus), 120cm body length and about 80kg, glossy jet-black fur with a white crescent patch on its chest, rounded ears and a short blunt muzzle, its shoulder no higher than an adult's waist and clearly much smaller than a grizzly or a brown bear, is lunging over an adult man who has just been knocked flat onto the bare earth. The bear is ON ALL FOURS with both front paws planted heavily on the ground on either side of the man, its whole weight driven forward through its shoulders — it never stands upright and is never on two legs. Its jaws are wrenched wide open in a savage snarl with the long curved canine fangs and the whole row of teeth completely bared, its ears are pinned flat against the skull, the fur along its neck, shoulders and spine is bristled up into a raised ridge, its muzzle is creased into deep folds and its claws are fully extended and hooked, tearing up turf. The man is seen from behind and below, lying on his back in ordinary dark work clothes with his head turned fully away from the camera and one forearm thrown up across his head — no face visible, no eyes, no facial features. Dirt clods, dust and dry fallen leaves burst upward around them and hang suspended in mid-air. Dry autumn grass, late October, cold flat overcast light. No snow anywhere, no frost, no winter. No blood, no wounds, no gore. Ferocious, enraged, single-minded predatory fury. Photorealistic, shot on RED camera, 85mm lens, high shutter speed freezing the flying debris. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
-→ **Google Flow動画プロンプト:**
+→ Google Flow動画プロンプト:
 ```
-A 6-second slow-motion documentary shot at ground level of an adult Japanese black bear with a white crescent chest patch in a bare dirt lot in rural Akita. The bear raises one front paw high and slams it down into the earth with its full weight, and dirt, dust and dry leaves explode upward and hang in the air. It remains ON ALL FOURS the whole time and never stands upright. Only the ground is struck — nothing and no one else is in the frame. Late October overcast light, no snow. No injuries visible. Extreme slow motion, locked-off camera, no zoom. Photorealistic, RED camera, documentary style.
+A 6-second extreme slow-motion documentary shot at ground level of an adult Japanese black bear, 120cm long and about 80kg with a white crescent chest patch, lunging over a man who has been knocked flat on the bare earth of a dirt lot in rural Akita. The bear drives forward and plants both front paws heavily on the ground on either side of him, jaws wide open and teeth bared, ears flat, the fur along its back bristling. It remains ON ALL FOURS the whole time and never stands upright, never on two legs. The man lies on his back with his head turned away from the camera and one forearm across his head — his face is never visible at any point. Dirt, dust and dry leaves explode upward and hang in the air. The shot cuts away at the moment of contact and never shows any injury. Late October overcast light, no snow. No blood, no wounds, no gore. Extreme slow motion, locked-off camera, no zoom. Photorealistic, RED camera, documentary style.
 ```
-→ 編集者指示: 「成人男性1人分の体重を乗せた一撃」テロップ（**「80kg」は出典が確認できないため出さない**）。着弾フレームで音を一瞬完全に消し、直後に低音の衝撃SEを置く。スロー再生のまま6秒使い切る。
+→ 編集者指示: 「成人男性1人分の体重を乗せた一撃」テロップ（「80kg」は出典が確認できないため画面には出さない）。着弾フレームで音を一瞬完全に消し、直後に低音の衝撃SEを置く。スロー再生のまま6秒使い切る。接触の瞬間で切り、その先は絶対に映さない。
 ---
 
 ナレーター: クマは正面から向かってきて、前足を振り上げます。
