@@ -1236,16 +1236,16 @@ Low frontal view down a narrow grass path in Higashinaruse, Akita, the ground ru
 ナレーター: 立っている人間の頭は、四つ足のクマが立ち上がったとき、ちょうど届く高さ。
 
 【制作メモ】ASSET-097 [キャラアニメーション] 台本L373
-シーン: CHAR-07が木の幹に前足を掛けて体を高く伸ばし、隣の人型シルエットの頭の高さに前足が届くことを示す
+シーン: 驚いて立ちすくむ男性と、後ろ足で立ち上がって襲いかかろうとするCHAR-07が真横から向かい合う（前足が相手の頭と同じ高さに来る）
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-07: adult female Asian black bear, 120cm, glossy black fur, white crescent chest patch, front paws braced high on a bare tree trunk, body stretched tall upward, hind paws on the ground. Beside the tree, a plain gray outline silhouette of an adult Japanese man for height comparison, the bear's front paw level with the silhouette's head. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two figures facing each other in profile, seen from the side, standing a short distance apart with a clear gap between them. On the left, a Japanese man in his forties of average height and build, in a plain dark work jacket and grey work trousers, caught mid-step as he freezes — his body leaning back and away, both arms flung up in front of his chest, eyes stretched wide, mouth open, every muscle locked in shock. On the right, CHAR-07: adult female Asian black bear, 120cm body length and about 80kg, glossy black fur, white crescent chest patch, rounded ears and a short blunt muzzle. She has risen up on her hind legs, hind paws planted flat on the ground and her body angled forward toward the man, with one front paw drawn back and raised, claws spread, at exactly the same height as the top of the man's head. Mouth open, small eyes fixed on him. An animal rearing to strike, never a human-like upright pose. The bear reared is the same height as the standing man, so the raised paw and his head sit on the same level. Both figures full body, both feet and paws on the same ground line. White background. Nothing else around them — no tree, no props, no background elements of any kind. No blood, no wounds, no gore. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A sparse forest clearing in Higashinaruse, Akita with one bare-trunked tree at center, fallen leaves, flat neutral light, plain composition built for a height comparison. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A sparse forest clearing in Higashinaruse, Akita in late October: flat open ground covered in fallen leaves, thin bare trunks well back at the edges, plain and uncluttered with the middle of the frame left as clear open space. Cold flat overcast light. No snow anywhere, no frost, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
-→ 編集者指示: クマの前足とシルエットの頭を結ぶ水平ラインを白線で表示し「ちょうど頭の高さ」テロップ。
+→ 編集者指示: クマの前足と男性の頭を結ぶ水平ラインを白線で表示し「ちょうど頭の高さ」テロップ。2人の間の距離を矢印で示す。効果音は入れず、無音のまま次のカットへ渡す。
 
 ---
 
