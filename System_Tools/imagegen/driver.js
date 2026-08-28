@@ -39,9 +39,27 @@
   const retryBtn = () => [...document.querySelectorAll('button')]
     .find((b) => b.textContent.includes('再試行') || b.textContent.includes('Retry'));
 
-  // 生成上限に当たっていないか
-  const limitHit = () => /画像の生成上限|上限に達しました|rate limit|generation limit|しばらくお待ち/i
+  // 生成上限に当たっていないか（実際に出た文面: 「画像を使い切りました」
+  // 「画像生成の利用上限に達しています…21:49までお待ちください」
+  //  "You've hit the Plus plan limit for image generations requests." ）
+  const limitHit = () => /画像を使い切りました|利用上限に達し|画像の生成上限|上限に達し|しばらくお待ち|hit the [^.]{0,24}plan limit|limit for image generation|rate limit|generation limit/i
     .test(document.body.innerText.slice(-3000));
+
+  // 上限の解除がいつかを画面から読む。Plusの上限は「20分待てば空く」類ではなく
+  // 十数時間単位なので、書いてある時刻まで待たないと空回りするだけになる。
+  function limitWaitMs() {
+    const t = document.body.innerText.slice(-3000);
+    let m = t.match(/(\d{1,2}):(\d{2})\s*までお待ちください/);
+    if (m) {
+      const d = new Date();
+      d.setHours(+m[1], +m[2], 0, 0);
+      if (d <= new Date()) d.setDate(d.getDate() + 1);
+      return d - new Date() + 120000;
+    }
+    m = t.match(/resets in (?:(\d+)\s*hours?)?(?:\s*and\s*)?(?:(\d+)\s*minutes?)?/i);
+    if (m && (m[1] || m[2])) return ((+m[1] || 0) * 60 + (+m[2] || 0) + 2) * 60000;
+    return LIMIT_WAIT_MIN * 60000;
+  }
 
   // 停止ボタンが消えるまで待つ（＝生成が終わるまで）
   async function waitIdle(timeoutMs) {
@@ -107,7 +125,9 @@
     const res = await fetch(img.src, { credentials: 'include' });
     if (!res.ok) throw new Error('画像取得 HTTP ' + res.status);
     const blob = await res.blob();
-    if (blob.size < 300000) throw new Error('画像が小さすぎる（途中経過の疑い） ' + blob.size);
+    // 完了判定は停止ボタンで見ているので、ここは「明らかに壊れている」だけを弾く。
+    // 平坦な1:1のキャラ絵は 240KB 程度で正常なことがある（しきい値を上げると取りこぼす）。
+    if (blob.size < 80000) throw new Error('画像が小さすぎる ' + blob.size);
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url; a.download = filename;
@@ -135,10 +155,11 @@
 
         // 生成上限は「終わり」ではなく「待てば空く」。夜通し回すので待って続ける。
         let waits = 0;
-        while (img === 'limit' && !S.stop && waits < 24) {
+        while (img === 'limit' && !S.stop && waits < 4) {
           waits++;
-          note(`生成上限 — ${LIMIT_WAIT_MIN}分待って再開します (${waits}回目)`);
-          for (let m = 0; m < LIMIT_WAIT_MIN && !S.stop; m++) await sleep(60000);
+          const ms = limitWaitMs();
+          note(`生成上限 — ${Math.round(ms / 60000)}分待って再開します (${waits}回目)`);
+          for (let m = 0; m < ms / 60000 && !S.stop; m++) await sleep(60000);
           if (S.stop) break;
           await newChat();
           await sleep(1500);
