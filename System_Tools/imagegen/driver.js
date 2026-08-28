@@ -11,9 +11,16 @@
    開始: __yamaRun()          停止: __yamaGen.stop = true
    状況: __yamaGen.status()                                              */
 (() => {
+  // タブがリロードされるとページに入れたものは全部消える。進捗だけは localStorage に
+  // 残しておき、入れ直したときに続きから拾えるようにする（実測でリロードが起きた）。
+  const SAVE_KEY = 'yamaDone';
+  const loadDone = () => { try { return JSON.parse(localStorage.getItem(SAVE_KEY)) || []; } catch (e) { return []; } };
+  const saveDone = (d) => { try { localStorage.setItem(SAVE_KEY, JSON.stringify(d)); } catch (e) {} };
+
   const S = (window.__yamaGen = window.__yamaGen || {});
   Object.assign(S, {
-    stop: false, done: S.done || [], failed: S.failed || [], current: null, running: false,
+    stop: false, done: S.done || loadDone(), failed: S.failed || [], current: null, running: false,
+    forget: () => { S.done = []; saveDone([]); },
     status: () => ({
       running: S.running, current: S.current,
       done: S.done.length, failed: S.failed.length,
@@ -23,7 +30,7 @@
     log: S.log || [],
   });
 
-  const LIMIT_WAIT_MIN = 8;      // 上限に当たったあと、投げ直すまでの分数
+  const LIMIT_WAIT_MIN = 20;     // 投げ直す間隔の上限（解除が近いほど短くする）
   const LIMIT_MAX_TRIES = 240;   // 8分×240 = 32時間ぶん粘る
 
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -46,13 +53,32 @@
   const limitHit = () => /画像を使い切りました|利用上限に達し|画像の生成上限|上限に達し|しばらくお待ち|hit the [^.]{0,24}plan limit|limit for image generation|rate limit|generation limit/i
     .test(document.body.innerText.slice(-3000));
 
-  // 画面に出る解除予定（「21:49までお待ちください」等）は参考として記録するだけ。
-  // 実際にいつ空くかはこの表示と食い違うことがあるので、待ち時間の根拠にはしない。
-  function limitNote() {
+  // 断り文句に書かれた「あと何分で解除か」を読む。読めなければ null。
+  function limitLeftMin() {
     const t = document.body.innerText.slice(-3000);
-    const m = t.match(/(\d{1,2}:\d{2}\s*までお待ちください)/)
-           || t.match(/(resets in [^.]{0,40})/i);
-    return m ? m[1].trim() : '解除予定の表示なし';
+    let m = t.match(/resets in (?:(\d+)\s*hours?)?(?:\s*and\s*)?(?:(\d+)\s*minutes?)?/i);
+    if (m && (m[1] || m[2])) return (+m[1] || 0) * 60 + (+m[2] || 0);
+    m = t.match(/(\d{1,2}):(\d{2})\s*までお待ちください/);
+    if (m) {
+      const d = new Date();
+      d.setHours(+m[1], +m[2], 0, 0);
+      if (d <= new Date()) d.setDate(d.getDate() + 1);
+      return Math.round((d - new Date()) / 60000);
+    }
+    return null;
+  }
+
+  // 次に投げ直すまでの分数。書かれた解除時刻は「目安」に使うが鵜呑みにはしない。
+  // 遠いうちは間隔を空け、近づくほど詰める。表示が外れて早く空いても最大20分で気づく。
+  function nextProbeMin() {
+    const left = limitLeftMin();
+    if (left === null) return LIMIT_WAIT_MIN;
+    return Math.min(LIMIT_WAIT_MIN, Math.max(2, Math.ceil(left / 4)));
+  }
+
+  function limitNote() {
+    const left = limitLeftMin();
+    return left === null ? '解除予定の表示なし' : `解除まで残り約${left}分`;
   }
 
   // 停止ボタンが消えるまで待つ（＝生成が終わるまで）
@@ -153,8 +179,9 @@
         let waits = 0;
         while (img === 'limit' && !S.stop && waits < LIMIT_MAX_TRIES) {
           waits++;
-          note(`生成上限（${limitNote()}）— ${LIMIT_WAIT_MIN}分後にもう一度投げます (${waits}回目)`);
-          for (let m = 0; m < LIMIT_WAIT_MIN && !S.stop; m++) await sleep(60000);
+          const wait = nextProbeMin();
+          note(`生成上限（${limitNote()}）— ${wait}分後にもう一度投げます (${waits}回目)`);
+          for (let m = 0; m < wait && !S.stop; m++) await sleep(60000);
           if (S.stop) break;
           await newChat();
           await sleep(1500);
@@ -174,6 +201,7 @@
 
         const bytes = await saveAs(img, `${item.id}.png`);
         S.done.push(item.id);
+        saveDone(S.done);
         note(`${item.id} 保存 ${Math.round(bytes / 1024)}KB (${S.done.length}/${queue.length})`);
       } catch (e) {
         S.failed.push({ id: item.id, error: e.message });
