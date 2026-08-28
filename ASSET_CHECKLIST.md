@@ -50,7 +50,7 @@
 - [ ] **Google Earthも連続2回まで**（3連続禁止。3つ目は動画/キャラアニメ等に差し替える） → 2026-08-20 東成瀬村でGE3連続を指摘され恒久ルール化。`validate_yama_prompts.py` チェック26が検査
 - [ ] 1本で**4カテゴリ以上**使う（実写／キャラアニメ／Lovart背景／Google Earth／図解）
 - [ ] 図解・テロップ演出を**起・承・転結の各パートに最低1箇所**（mass-produced 判定回避）
-- [ ] AI動画（Google Flow）は**1本あたり最大40本**。基準は「動きが物語の核心」「静止画で不可能」「感情ピーク」の3つ
+- [ ] AI動画（Google Flow）は**1本あたり最大60本**。基準は「動きが物語の核心」「静止画で不可能」「感情ピーク」の3つ
 - [ ] **冒頭フックの最初のアセットは必ず [Lovart動画]**（テキスト演出・静止画・キャラアニメ不可。日付テロップは動画の上に重ねる） → `feedback_yama_intro_always_video`
 - [ ] **末尾（追悼＋視聴御礼）のアセットも必ず [Lovart動画]**＝動画で始まり動画で終わる → `feedback_yama_ending_always_video`
       ※どちらも `validate_yama_prompts.py` チェック23が自動検査（2026-08-20 東成瀬村で冒頭テキスト・末尾静止画にした事故を仕組み化）
@@ -75,6 +75,7 @@
 - [ ] **人物には必ず `Japanese` を明記**（CHAR-XX 参照ありの場合は不要）
 - [ ] 名前のない人物は `[Generic group]`。**CHAR-XX は台本で名前がある人物にのみ**振る
 - [ ] **再利用は `(CHAR-XX 再利用)` をプロンプトの最先頭**に置く
+- [ ] **複数キャラを1枚に入れるときは頭身を数字で書く**。`(CHAR-XX 再利用)` タグだけでは**頭身が引き継がれず、頭の小さいリアル体型で出る**（2026-08-28 実測。ハンター3人で発生）。基準画像に合わせて `a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall, with the head taking up about a quarter of the total height` ＋ `Do NOT draw them with realistic adult proportions — not six or seven heads tall, not slender, not elongated` を明記する
 - [ ] **背景は同一ロケーションでマスター1枚→以降は再使用**（「ASSET-XXXの背景を再使用。ズーム位置・色調で画変わり」と書き、新規生成しない）。統合してよいのは場所・時間帯・演出が同じ場合のみ。人数・時刻・色調が画の意味になっているカットは統合しない → 2026-08-20 生成枚数削減のユーザー指示で恒久化
 - [ ] **同一人物の服装は全ASSETで固定**（CHAR定義の服装色を、実写風プロンプト・遠景・シルエットにも同じ色で書く）。複数人が映るカットは**1人ずつ服装で書き分け**、「farm work clothes」等の一括表記で済ませない → 2026-08-20 倒れる4人が同じ服になった指摘の再発防止
 - [ ] クマは**四足歩行**。`standing upright` `on two legs` 等は禁止（フックが検出する）
@@ -152,15 +153,140 @@
 - **駆除後・箱わな・鎮静後**
 - **「異様に静か」で怖がらせるカット** — 例: 高台に座って人間を見下ろす場面。**動かないことが恐怖の正体**なので、牙をむかせると台無しになる
 
+**⑤ クマが死ぬカットは、この形で固定する**（2026-08-28 恒久化・lint 34 が自動検査）
+
+> ⚠️ **仰向け（belly-up）は禁止。** 「腹を上にして脚が宙に浮く」は**人間の寝姿勢の記述**なので、生成AIが二足歩行の生き物として解釈し、肘をついて座った人のような絵になる（2026-08-28 実測）。
+
+確定形は**うつ伏せ（PRONE）＋四肢を地面に伸ばす＋目はバツ印**。次をそのまま使う。
+
+```
+She lies PRONE, flat on her belly on the ground, exactly the way a four-legged animal drops:
+her chest and stomach flat against the ground, all four legs splayed straight out limp and flat
+on the ground around her — the two front legs stretched forward past her head, the two back legs
+stretched out behind her — and her head down flat with her chin and muzzle resting on the ground.
+Her mouth is a little open with her tongue just showing.
+She is a four-legged animal throughout: NOT sitting, NOT sitting up, NOT reclining, NOT on her back,
+NOT belly-up, NOT propped on an elbow, NOT posed like a person, and no leg is raised in the air.
+Seen from a low three-quarter front angle so that her head and both X-mark eyes are clearly visible.
+BOTH EYES ARE DRAWN AS SIMPLE BLACK X MARKS — two crossed straight lines for each eye.
+Do NOT draw open eyes, do NOT draw closed eyelids, do NOT draw pupils or irises — each eye is an X mark and nothing else.
+```
+
+- **目のバツ印は必ず否定で固定する**。スタイルヘッダーに `large expressive eyes` が残っているので、書かないと普通の目になる
+- **顔が見える角度を指定する**。うつ伏せを真横から描かれると顔が隠れてバツ目が意味を失う
+- **傷を負っている個体なら、直前のカットと同じ位置・同じ大きさの痕を1か所だけ残す**（消すと別個体に見える）
+- 胸の白い月の輪は「体の下に隠れる」と明記する。無理に見せようとすると体がねじれる
+
 **④ 血の直接語は書かない**（既出ルールの再掲）
 
 `blood` `bleeding` 等はポリシー拒否を招く。凶暴さは**牙・唾液・逆立った毛・筋肉・めくれた土**という被害描写を伴わない要素だけで作る。
+
+### 🧾 プロンプト執筆の定石（2026-08-28 セッションで確定・修正をゼロに近づけるための蓄積）
+
+> **書き直しになった原因をすべて一般化したもの。書く前にこの節を通す。**
+
+**A. 向き・角度は「その角度でしか成立しない条件」で縛る**
+
+「正面を向かせて」「横向きに」と書いても効かない。**幾何学的に1つの角度でしか満たせない条件**を足す。
+
+| 欲しい向き | 効く書き方 |
+|:--|:--|
+| 正面 | `with BOTH SHOULDERS EQUALLY VISIBLE, shoulder lines parallel to the picture plane`（横向きでは片肩しか見えない） |
+| 真横 | `THE WHOLE LENGTH OF THE RIFLE IS VISIBLE across the frame`（正面では前後に潰れる） |
+| 真横の寝姿 | `his body lies horizontally across the frame from left to right`（真上からでは放射状になる） |
+| 背面 | `only its back, rump and hind legs face the camera, its face is hidden` |
+| 正面から迫る | `its chest and both shoulders squared to the camera` |
+
+- **腕を横に伸ばす指示は体ごと回転させる。** 「手を横に出して」→ 体が横向きになる。**手のひらを胸の前でこちらに向ける**に置き換える
+- 複数人の向きを揃えるときは `only their eye direction and head tilt may differ`（差は視線と首だけ）
+- 否定も添える → `do NOT turn anyone side-on or three-quarter, do NOT twist a body away from the camera`
+
+**B. 表情は「極端に」振る。部位ごとに書き、望まない顔を否定で潰す**
+
+> ⚠️ **迷ったら常に大げさな側へ倒す**（2026-08-28 ユーザー指定「極端にするのを意識してもいい。今だと表情のインパクトが弱い」）。
+> カートゥン調は誇張して初めて等身大に見える。**控えめに書くと必ず無表情になる。**
+
+`serious` `shocked` だけでは無難な標準顔になる。**眉・目・口・汗**の4点を必ず書き、さらに**振り切った語**を選ぶ。
+
+| 弱い（使わない） | 極端（こちらを使う） |
+|:--|:--|
+| eyes wide | **eyes bulging almost out of the head, pupils shrunk to tiny dots** |
+| mouth open | **mouth stretched wide open in a scream, every tooth showing, tongue visible** |
+| eyebrows raised | **eyebrows shot up so hard the forehead is a mass of deep creases** |
+| looks worried | **face drained bone white, jaw hanging slack** |
+| sweating | **sweat flying off the face in visible droplets** |
+| in pain | **eyes screwed shut into tight creases, teeth bared, tendons standing out on the neck** |
+
+- **顔だけでなく体も振る** — のけぞる／膝が抜ける／物を取り落とす／片足が浮く
+- **漫符（まんぷ）を足してよい** — 縦線の影／汗マーク／驚きの集中線的な効果は編集側で足す前提で、キャラは大げさな素の表情にする
+
+- 真剣 → `eyebrows driven down hard and pulled together / eyes narrowed to a hard unblinking stare / mouth pressed into a flat grim line with the jaw muscles tight`
+- 焦り → `eyebrows shot up and together / eyes stretched wide / mouth open, teeth showing / beads of sweat coming off the temple`
+- **否定を並べる** → `not smiling, not startled, not frightened and not hesitant` ／ `NOT calm, NOT composed`
+- 最後に**人物像を1文**добавить → `the concentrated face of a man doing something he has done for fifty years`
+
+**C. 人物の一貫性 — `(CHAR-XX 再利用)` が引き継がないもの**
+
+参照タグは服と顔立ちを引き継ぐが、**次は引き継がない**。毎回書く。
+
+- **頭身** … `a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall, the head about a quarter of the total height` ＋ `Do NOT draw them with realistic adult proportions — not six or seven heads tall`
+- **ひげ** … 高齢キャラは必ず `CLEAN-SHAVEN ... no beard, no moustache, no stubble`（白髪の老人を描くとAIはほぼ必ずひげを足す）
+- **老いの見た目** … 年齢の数字だけでは若く出る。`deeply lined face, sunken cheeks, sagging skin at the jaw, sparse thin white hair, age spots` ＋ `NOT middle-aged`
+- **身長** … 複数人は `All are the same height as one another apart from the one kneeling`
+
+**D. 背景の画角は3点セットで書く**
+
+「引きで」「近めで」は効かない。**高さ・距離・地面の占有率**を数値で。
+
+```
+framed from adult eye height roughly 1.5 metres above the ground and about four metres back,
+the camera angled only slightly downward: the ground occupies just the lower third of the frame,
+... a clear horizon line visible. The middle of the frame is left as clear open space.
+Not a ground-level shot, not a close-up, no macro texture, no worm's-eye angle.
+```
+
+- キャラを載せる背景は**中央を必ず空ける**
+- 地面すれすれの背景は**キャラが小人に見える**。`Close ground-level view` は原則使わない（意図的な主観カットのみ）
+
+**E. 生成拒否を避ける — 打ち消し文が逆効果になる**
+
+- **`no injuries` `nothing graphic` を並べると、かえって「負傷を描く意図あり」の合図になる**（ASSET-059 実測）。**見えているものだけを書く**のが正解
+- 暴力の事後を示す語を外す → `collapsed` `motionless` `torn` `gouged` `struggle` を `lying down on the ground` `dusty and rumpled` `pressed flat in patches` に置換
+- 代わりに**時間の範囲を限定**する → `Captured at the moment of collision only, nothing beyond it.`
+- **実写で人物を出すより「物だけ」を写す方が安全**（レントゲン、模型、車両、シート）。人物が要るなら手・前腕・後ろ姿だけ
+- 拒否されたときの外す順番: ①牙・攻撃描写の一文 →②接触の示唆 →③人と対象を別生成して合成 →**④カートゥンに切り替え（実証済みの確実な逃げ道）**
+
+**F. 失敗した形は「名指しで」禁止する**
+
+抽象的な指示より、**実際に出た失敗の形をそのまま否定語にする**方が効く。
+
+- 前脚が赤く塗られた → `do NOT draw red boots or red socks`
+- 肘をついて座った → `NOT propped on an elbow`
+- 仰向けが人間ポーズになった → `NOT belly-up, no leg is raised in the air`
+- 銃を胸に抱えた → `do NOT draw the rifle hanging at his side or held flat across his chest`
+
+**G. 自分がlintに引っかけがちな語（書く前に避ける）**
+
+| 使ってはいけない語 | 引っかかる検査 | 言い換え |
+|:--|:--|:--|
+| `blood` `no blood` | 安全ワード | `nothing red and nothing stained` |
+| `text` `no legible text` | 禁止ワード | `no lettering` `no readable characters` |
+| `thrown` `throwing` `flung` | 投げる動作 | `pitched` `casting` `lifted` |
+| `carrying` `holding` `standing` `person` `human` `official` | 背景プロンプト人物矛盾 | `with` `stands`→`sits on` 等／`no signage of any kind` |
+| `room` `interior` `overhead` `landscape` | キャラプロンプト環境要素 | `nothing of the surroundings` `NOT looking straight down` |
+| `hospital` `university` `police station` | 実在機関 | キャラ側では `patient's gown` 等に言い換え、打ち消しは背景側に書く |
+| `diagram` `chart` `infographic` | 禁止ワード | 図解は**編集者指示**に書く（プロンプトには書かない） |
+
+**H. 素材タイプは文字数で自動的に決まる — 先に数える**
+
+- **26〜50字は静止画も図解も使えない。** 実写にするなら [Lovart動画] 一択で、動画枠を1本消費する
+- 実写で静止画にしたいなら、**ナレーションが25字以下か先に確認する**
 
 ### タイプの決め方（機械が判定できる部分は数える）
 
 - [ ] **ナレーション文字数を先に数える**（句読点・記号を除く）→ 25字以下=全タイプ／26〜50字=**静止画不可**／51字以上=**分割してからタイプを決める**
 - [ ] **同じタイプを続けない**: キャラアニメ**3回まで**（4回目で実写かGoogle Earthを挟む）／静止画**2枚まで**／Google Earth**2回まで**
-- [ ] **AI動画（Google Flow）は1本あたり40本まで**。使う基準は「動きが物語の核心」「静止画で不可能」「感情ピーク」の3つ
+- [ ] **AI動画（Google Flow）は1本あたり60本まで**。使う基準は「動きが物語の核心」「静止画で不可能」「感情ピーク」の3つ
 - [ ] 迷ったら `python System_Tools/validate_phase2_assets.py --prompts <ファイル>` を走らせる。**上の項目は全部この検査が数えてくれる**（rule 23-31）
 
 ---
@@ -271,12 +397,12 @@ AI生成版はこの検査で8項目全部が超過した＝それが手直し�
 | 生成失敗（14-22） | 冬化／クマ不在／二足歩行／グラフ動画／黒画面／方向あいまい／日本語本文の混入／日本人指定なし／複数人のクローン化 |
 | **構成バランス（23-25）** | **キャラアニメ4回以上連続**／**静止画3枚以上連続＝ERROR**／**Google Earth 3回以上連続** |
 | **文字数整合（26）** | **51字以上（要分割）**／**26〜50字なのに静止画** ※句読点・記号を除いて数える |
-| **予算（27-28）** | **Google Flow動画が40本超**／**素材カテゴリが4種類未満**（50アセット以上のファイルのみ判定） |
+| **予算（27-28）** | **Google Flow動画が60本超**／**素材カテゴリが4種類未満**（50アセット以上のファイルのみ判定） |
 | **プロンプト安全（29-31）** | **秋指定なのに `no snow` なし**／**暗いシーンに `NOT pure black` なし**／**実在機関名に打ち消し指定なし** |
-| **クマ（32-33）** | **実写の襲撃・威嚇カットに凶暴さの語が3つ未満**（カートゥンは対象外）／**クマにサイズ指定なし**／**ツキノワグマなのにヒグマ級の体格** |
+| **クマ（32-34）** | **実写の襲撃・威嚇カットに凶暴さの語が3つ未満**（カートゥンは対象外）／**クマにサイズ指定なし**／**ツキノワグマなのにヒグマ級の体格**／**死亡カットがうつ伏せ＋バツ目になっていない** |
 
 > 32-33は2026-08-26追加（クマの凶暴さ不足・サイズ過大が毎回差し戻されていたため）。23-31は2026-08-21追加。東成瀬村セッションで人手で数えていた項目を機械化したもの。
-> **AI動画の上限は40本**（2026-08-21にユーザー指定で12→20→40へ変更）。
+> **AI動画の上限は60本**（2026-08-21にユーザー指定で12→20→40→60へ変更（2026-08-28））。
 > 根拠は実測: 朱鞠内湖96本(全242アセット中40%)／星野道夫20本(227中9%)／羅臼岳16本(151中11%)。
 > 旧12本は**実際に作られたどの台本とも一致していなかった**（守られていないルールが文書に残っていた）。
 

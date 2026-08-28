@@ -202,13 +202,13 @@ def prompt_lint(text, errors, warns, info):
     if still_in_band:
         warns.append(f'26〜50字なのに静止画 {len(still_in_band)}件（この帯はキャラアニメ/動画/Earthのみ。分割するか動画に変える）: {", ".join(still_in_band)}')
 
-    # 27) Google Flow動画プロンプトの総数（上限40本・2026-08-21にユーザー指定で12→20→40へ変更）
+    # 27) Google Flow動画プロンプトの総数（上限60本・2026-08-21にユーザー指定で12→20→40へ変更）
     #     根拠は実測: 朱鞠内湖96本(242中40%)/星野道夫20本(227中9%)/羅臼岳16本(151中11%)
     flow_n = text.count('Google Flow動画プロンプト')
-    if flow_n > 40:
-        warns.append(f'Google Flow動画プロンプトが{flow_n}本（上限40本を超過。動きが核心のカットだけに絞る）')
+    if flow_n > 60:
+        warns.append(f'Google Flow動画プロンプトが{flow_n}本（上限60本を超過。動きが核心のカットだけに絞る）')
     else:
-        info.append(f'Google Flow動画 {flow_n}本 / 上限40本')
+        info.append(f'Google Flow動画 {flow_n}本 / 上限60本')
 
     # 28) 素材カテゴリの内訳（1本で4カテゴリ以上使う）
     from collections import Counter
@@ -262,6 +262,7 @@ def prompt_lint(text, errors, warns, info):
     #     毎回「凶暴さが足りない」と差し戻されていたため、指摘される前に入れる定型を機械化した。
     #     採食・逃走・遠景・死骸など「凶暴であってはならないカット」は除外する（一律凶暴化は演出を壊す）。
     BEAR = re.compile(r'\b(bear|moon bear|ursus)\b', re.I)
+    # 「no bear」「no animals」等の打ち消しだけの言及は対象外（2026-08-28 ASSET-141の誤検出で追加）
     AGGRO_CTX = re.compile(
         r'charg|attack|lunge|pounce|mid-run|rush|snarl|roar|menac|threat|'
         r'head-on|at the lens|confront|stare|glare|'
@@ -282,7 +283,7 @@ def prompt_lint(text, errors, warns, info):
     tame = []
     for nar, seg in segs:
         for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
-            if not BEAR.search(b):
+            if not BEAR.search(re.sub(r'no\s+(bears?|animals?)', '', b, flags=re.I)):
                 continue
             # カートゥン調のキャラプロンプトは対象外（2026-08-26 ユーザー指定）。
             # 凶暴さを盛るのは実写・フォトリアルのカットだけ。絵柄と衝突して顔が崩れるため。
@@ -311,7 +312,7 @@ def prompt_lint(text, errors, warns, info):
     nosize, mism = [], []
     for nar, seg in segs:
         for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
-            if not BEAR.search(b):
+            if not BEAR.search(re.sub(r'no\s+(bears?|animals?)', '', b, flags=re.I)):
                 continue
             no = asset_no(seg)
             if not (SIZE_LEN.search(b) or SIZE_KG.search(b)):
@@ -329,7 +330,28 @@ def prompt_lint(text, errors, warns, info):
     if mism:
         warns.append(f'ツキノワグマなのにヒグマ級の体格 {len(mism)}件（種と数値が矛盾。ツキノワグマは体長160cm・体重150kgを超えない）: {", ".join(dict.fromkeys(mism))}')
 
-    info.append(f'プロンプトlint(14-33): {len(segs)}セグメント走査')
+    # 34) クマが死ぬカットの表現を統一する（2026-08-28 ユーザー指定で恒久化）
+    #     仰向け・腹を上・脚が宙に浮く は人間の寝姿勢で、四足動物として破綻する（実測）。
+    #     うつ伏せ（PRONE）＋四肢を地面に伸ばす＋目はバツ印、が確定形。
+    DEATH_NAR = re.compile(r'動かなくなり|動かなくなっ|息絶え|絶命|事切れ|仕留め')
+    BEAR_NAR  = re.compile(r'クマ|熊|ツキノワ')
+    dead = []
+    for nar, seg in segs:
+        n = nar or ''
+        if not (DEATH_NAR.search(n) and BEAR_NAR.search(n)):
+            continue
+        for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
+            if not BEAR.search(re.sub(r'no\s+(bears?|animals?)', '', b, flags=re.I)):
+                continue
+            has_prone = re.search(r'\bprone\b|flat on (her|his|its) belly|lying face-down', b, re.I)
+            has_x     = re.search(r'X MARKS?|X-mark|cross(ed)? (straight )?lines', b, re.I)
+            if not (has_prone and has_x):
+                dead.append(asset_no(seg))
+            break
+    if dead:
+        warns.append(f'クマの死亡カットが確定形になっていない {len(dead)}件（仰向けは人間ポーズに化ける→うつ伏せPRONE＋四肢を地面に伸ばす＋目はバツ印。詳細はASSET_CHECKLIST「クマ専用ルール⑤」）: {", ".join(dict.fromkeys(dead))}')
+
+    info.append(f'プロンプトlint(14-34): {len(segs)}セグメント走査')
 
 def main(master_path, daihon_path):
     m = open(master_path, encoding='utf-8').read()
