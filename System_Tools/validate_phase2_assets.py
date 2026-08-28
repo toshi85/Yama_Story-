@@ -36,17 +36,21 @@ def prompt_lint(text, errors, warns, info):
     # 14) 冬化トリガー: 地名/北海道 + cold/grey系の光 + 季節宣言なし（朱鞠内湖=氷上ワカサギ連想）
     #     ※意図的な冬シーン（winter/snow等を明示宣言）は正しいので対象外。検出するのは「季節未指定の事故的冬化」のみ
     winter = []
-    SEASON_DECLARED = re.compile(r'\b(winter|snow\w*|frozen|icy|midwinter)\b|no snow|Fresh green|fresh leaf|lush green|\b(spring|summer|autumn|May|June|July|August)\b', re.I)
+    SEASON_DECLARED = re.compile(r'\b(winter|snow\w*|frozen|icy|midwinter)\b|no snow|Fresh green|fresh leaf|lush green|\b(spring|summer|autumn|May|June|July|August|September|October|November)\b', re.I)
+    PLACE_JP = re.compile(r'Japan\w*|Akita|Higashinaruse|Yuzawa|Yokote|Hokkaido|Shumarinai', re.I)
+    COLD_LIGHT = re.compile(r'(cold|chilly|grey|gray|overcast|bleak|wintry|pre-dawn|first light|dim|pale)[^.]{0,60}(light|daylight|morning|sky|air|water|tones?)', re.I)
+    # 2026-08-28 拡張: 地名を北海道限定から日本全域へ、光の語も overcast/pre-dawn 等へ広げた。
+    # ASSET-176（秋田の路上・cold blue morning・季節宣言なし）が旧条件をすり抜けて雪景色になったため。
     for nar, seg in segs:
         blocks = re.findall(r'```\n?(.*?)\n?```', seg, re.S)
         for b in blocks:
-            if re.search(r'Shumarinai|Hokkaido', b, re.I) \
-               and re.search(r'\b(cold|grey|gray|tense)\b[^.]*\b(light|daylight|morning|sky|water)\b', b, re.I) \
-               and not SEASON_DECLARED.search(b):
+            if 'white background' in b.lower():
+                continue
+            if PLACE_JP.search(b) and COLD_LIGHT.search(b) and not SEASON_DECLARED.search(b):
                 winter.append(asset_no(seg))
                 break
     if winter:
-        warns.append(f'冬化トリガー {len(winter)}件（季節未指定+地名+cold/grey光は雪景色化する。季節を明示=夏なら新緑フォーミュラ/冬シーンならwinter・snowを明示宣言）: {", ".join(dict.fromkeys(winter))}')
+        warns.append(f'冬化トリガー {len(winter)}件（季節を一言も書かずに cold/grey/overcast/pre-dawn 系の光を書くと雪景色になる。屋外背景には必ず季節を1語入れ、秋なら No snow anywhere, no frost, no winter も添える）: {", ".join(dict.fromkeys(winter))}')
 
     # 15) ナレ行にクマ/ヒグマ→プロンプト側にクマ不在（象徴表現逃げの検出）
     bearless = []
