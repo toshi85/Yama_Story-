@@ -23,7 +23,8 @@
     log: S.log || [],
   });
 
-  const LIMIT_WAIT_MIN = 20;   // 生成上限に当たったときに待つ分数
+  const LIMIT_WAIT_MIN = 8;      // 上限に当たったあと、投げ直すまでの分数
+  const LIMIT_MAX_TRIES = 240;   // 8分×240 = 32時間ぶん粘る
 
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const q = (s) => document.querySelector(s);
@@ -45,20 +46,13 @@
   const limitHit = () => /画像を使い切りました|利用上限に達し|画像の生成上限|上限に達し|しばらくお待ち|hit the [^.]{0,24}plan limit|limit for image generation|rate limit|generation limit/i
     .test(document.body.innerText.slice(-3000));
 
-  // 上限の解除がいつかを画面から読む。Plusの上限は「20分待てば空く」類ではなく
-  // 十数時間単位なので、書いてある時刻まで待たないと空回りするだけになる。
-  function limitWaitMs() {
+  // 画面に出る解除予定（「21:49までお待ちください」等）は参考として記録するだけ。
+  // 実際にいつ空くかはこの表示と食い違うことがあるので、待ち時間の根拠にはしない。
+  function limitNote() {
     const t = document.body.innerText.slice(-3000);
-    let m = t.match(/(\d{1,2}):(\d{2})\s*までお待ちください/);
-    if (m) {
-      const d = new Date();
-      d.setHours(+m[1], +m[2], 0, 0);
-      if (d <= new Date()) d.setDate(d.getDate() + 1);
-      return d - new Date() + 120000;
-    }
-    m = t.match(/resets in (?:(\d+)\s*hours?)?(?:\s*and\s*)?(?:(\d+)\s*minutes?)?/i);
-    if (m && (m[1] || m[2])) return ((+m[1] || 0) * 60 + (+m[2] || 0) + 2) * 60000;
-    return LIMIT_WAIT_MIN * 60000;
+    const m = t.match(/(\d{1,2}:\d{2}\s*までお待ちください)/)
+           || t.match(/(resets in [^.]{0,40})/i);
+    return m ? m[1].trim() : '解除予定の表示なし';
   }
 
   // 停止ボタンが消えるまで待つ（＝生成が終わるまで）
@@ -154,12 +148,13 @@
         let img = await waitImage();
 
         // 生成上限は「終わり」ではなく「待てば空く」。夜通し回すので待って続ける。
+        // 上限は「書いてある時刻まで待つ」のではなく、一定間隔で投げ直して
+        // 通った瞬間に再開する。これなら解除が5時間後でも20時間後でも取りこぼさない。
         let waits = 0;
-        while (img === 'limit' && !S.stop && waits < 4) {
+        while (img === 'limit' && !S.stop && waits < LIMIT_MAX_TRIES) {
           waits++;
-          const ms = limitWaitMs();
-          note(`生成上限 — ${Math.round(ms / 60000)}分待って再開します (${waits}回目)`);
-          for (let m = 0; m < ms / 60000 && !S.stop; m++) await sleep(60000);
+          note(`生成上限（${limitNote()}）— ${LIMIT_WAIT_MIN}分後にもう一度投げます (${waits}回目)`);
+          for (let m = 0; m < LIMIT_WAIT_MIN && !S.stop; m++) await sleep(60000);
           if (S.stop) break;
           await newChat();
           await sleep(1500);
@@ -167,7 +162,7 @@
           img = await waitImage();
         }
         if (S.stop) break;
-        if (img === 'limit') { note('上限待ちが続きすぎたので停止'); S.stop = true; break; }
+        if (img === 'limit') { note('上限が32時間空かなかったので停止'); S.stop = true; break; }
 
         if (img === 'retry') {
           note(`${item.id} エラー → 再試行`);
