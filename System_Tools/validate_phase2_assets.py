@@ -37,8 +37,8 @@ def prompt_lint(text, errors, warns, info):
     #     ※意図的な冬シーン（winter/snow等を明示宣言）は正しいので対象外。検出するのは「季節未指定の事故的冬化」のみ
     winter = []
     SEASON_DECLARED = re.compile(r'\b(winter|snow\w*|frozen|icy|midwinter)\b|no snow|Fresh green|fresh leaf|lush green|\b(spring|summer|autumn|May|June|July|August|September|October|November)\b', re.I)
-    PLACE_JP = re.compile(r'Japan\w*|Akita|Higashinaruse|Yuzawa|Yokote|Hokkaido|Shumarinai', re.I)
-    COLD_LIGHT = re.compile(r'(cold|chilly|grey|gray|overcast|bleak|wintry|pre-dawn|first light|dim|pale)[^.]{0,60}(light|daylight|morning|sky|air|water|tones?)', re.I)
+    PLACE_JP = re.compile(r'\bJapan\w*|Akita|Higashinaruse|Yuzawa|Yokote|Hokkaido|Shumarinai\b', re.I)
+    COLD_LIGHT = re.compile(r'\b(cold|chilly|grey|gray|overcast|bleak|wintry|pre-dawn|first light|dim|pale)\b[^.]{0,60}\b(light|daylight|morning|sky|air|water|tones?)\b', re.I)
     # 2026-08-28 拡張: 地名を北海道限定から日本全域へ、光の語も overcast/pre-dawn 等へ広げた。
     # ASSET-176（秋田の路上・cold blue morning・季節宣言なし）が旧条件をすり抜けて雪景色になったため。
     for nar, seg in segs:
@@ -237,7 +237,7 @@ def prompt_lint(text, errors, warns, info):
     #     ※「dark brown fur」等の“色の形容詞”は対象外。暗い『場』を指す表現だけを拾う
     DARKSCENE = re.compile(
         r'pre-dawn|before dawn|before sunrise|at night|by night|darkness|unlit|'
-        r'dim(ly)?|deep shadow|in shadow|shadowed but|'
+        r'\bdim(ly)?\b|deep shadow|in shadow|shadowed but|'
         r'dark (room|interior|hallway|corridor|background|backdrop|sky|water|street|forest|thicket|gap|mouth|opening|charcoal|slate)',
         re.I)
     darkish = []
@@ -284,25 +284,30 @@ def prompt_lint(text, errors, warns, info):
         r'ears (pinned|laid back|flat)', r'claws (spread|fully extended|extended)',
         r'teeth', r'jaws (wide open|wrenched|parted)',
     ]
+    # カートゥン用の軽量セット（絵柄と衝突しない範囲。2026-08-28 追加）
+    FEROCITY_CARTOON = [r'teeth', r'snarl', r'growl', r'ears (flattened|laid back|pinned|back)',
+                        r'bristl|raised ridge|fur .{0,20}raised', r'head (dropped|lowered) low',
+                        r'claws (spread|out)', r'furious|ferocious|enraged']
     tame = []
     for nar, seg in segs:
         for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
-            if not BEAR.search(re.sub(r'no\s+(bears?|animals?)', '', b, flags=re.I)):
+            if not BEAR.search(re.sub(r'\bno\s+(bears?|animals?)\b', '', b, flags=re.I)):
                 continue
             # カートゥン調のキャラプロンプトは対象外（2026-08-26 ユーザー指定）。
             # 凶暴さを盛るのは実写・フォトリアルのカットだけ。絵柄と衝突して顔が崩れるため。
-            if 'Cute cartoon character design' in b:
-                continue
+            is_cartoon = 'Cute cartoon character design' in b
+            # カートゥンは牙・歯茎・唾液までは求めないが、軽量セット（口を開けて歯／耳を伏せる／毛を逆立てる／頭を下げる）は必須
             if CALM_CTX.search(b):
                 continue
             if not AGGRO_CTX.search(b) and not re.search(r'クマ|熊|ツキノワ', nar or ''):
                 continue
-            hits = sum(1 for pat in FEROCITY if re.search(pat, b, re.I))
+            pool = FEROCITY_CARTOON if is_cartoon else FEROCITY
+            hits = sum(1 for pat in pool if re.search(pat, b, re.I))
             if hits < 3:
                 tame.append(asset_no(seg))
                 break
     if tame:
-        warns.append(f'実写クマのカットに凶暴さの描写が不足 {len(tame)}件（毎回差し戻される定番。牙/bared fangs・歯茎/gums・唾液/saliva・逆立った毛/bristling・伏せた耳/ears pinned flat・しわ寄せた鼻筋/muzzle creased・爪/claws extended のうち3つ以上を必ず入れる）: {", ".join(dict.fromkeys(tame))}')
+        warns.append(f'クマのカットに凶暴さの描写が不足 {len(tame)}件（毎回差し戻される定番。実写=牙/歯茎/唾液/逆立った毛/伏せた耳/しわ寄せた鼻筋/爪 から3つ以上、カートゥン=口を開けて歯/唸り/耳を伏せる/毛を逆立てる/頭を下げる/爪を開く/furious から3つ以上）: {", ".join(dict.fromkeys(tame))}')
 
     # 33) クマのサイズ指定がない／種と体格が矛盾している（2026-08-26 ユーザー指定で恒久化）
     #     生成AIは指定がないとクマを一律グリズリー級に描く。台本に実個体のサイズがあればそれを、
@@ -316,7 +321,7 @@ def prompt_lint(text, errors, warns, info):
     nosize, mism = [], []
     for nar, seg in segs:
         for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
-            if not BEAR.search(re.sub(r'no\s+(bears?|animals?)', '', b, flags=re.I)):
+            if not BEAR.search(re.sub(r'\bno\s+(bears?|animals?)\b', '', b, flags=re.I)):
                 continue
             no = asset_no(seg)
             if not (SIZE_LEN.search(b) or SIZE_KG.search(b)):
