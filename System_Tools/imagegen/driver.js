@@ -41,8 +41,10 @@
   const busy = () => !!q('[data-testid="stop-button"]');
 
   // ページに出ている画像。生成中のプレビューもここに入るので、単独では完了の証拠にならない。
+  // 🚨 naturalWidth で選ばない。裏のタブでは画像がデコードされず 0 のままになり、
+  //    「完了したのに画像が無い」と誤診する（実測）。実体の確認は後段の blob サイズで行う。
   const imgEls = () => [...document.querySelectorAll('[class*="imagegen-image"] img')]
-    .filter((i) => i.src && i.naturalWidth > 256);
+    .filter((i) => i.src && /backend-api|oaiusercontent/.test(i.src));
 
   const retryBtn = () => [...document.querySelectorAll('button')]
     .find((b) => b.textContent.includes('再試行') || b.textContent.includes('Retry'));
@@ -50,12 +52,17 @@
   // 生成上限に当たっていないか（実際に出た文面: 「画像を使い切りました」
   // 「画像生成の利用上限に達しています…21:49までお待ちください」
   //  "You've hit the Plus plan limit for image generations requests." ）
+  // 判定は会話部分だけを見る。body だと左の履歴一覧のチャット名まで拾ってしまい、
+  // 過去に「Image Generation Limit」という名前のチャットが並んだだけで
+  // 永久に「上限中」と誤判定する（実測: 一晩まるごと空回りした）。
+  const convText = () => (document.querySelector('main') || document.body).innerText.slice(-3000);
+
   const limitHit = () => /画像を使い切りました|利用上限に達し|画像の生成上限|上限に達し|しばらくお待ち|hit the [^.]{0,24}plan limit|limit for image generation|rate limit|generation limit/i
-    .test(document.body.innerText.slice(-3000));
+    .test(convText());
 
   // 断り文句に書かれた「あと何分で解除か」を読む。読めなければ null。
   function limitLeftMin() {
-    const t = document.body.innerText.slice(-3000);
+    const t = convText();
     let m = t.match(/resets in (?:(\d+)\s*hours?)?(?:\s*and\s*)?(?:(\d+)\s*minutes?)?/i);
     if (m && (m[1] || m[2])) return (+m[1] || 0) * 60 + (+m[2] || 0);
     m = t.match(/(\d{1,2}):(\d{2})\s*までお待ちください/);
@@ -138,16 +145,24 @@
     await sleep(2000);
     const imgs = imgEls();
     if (!imgs.length) throw new Error('完了したのに画像が無い');
-    return imgs.slice(-1)[0];
+    return imgs;
   }
 
-  async function saveAs(img, filename) {
-    const res = await fetch(img.src, { credentials: 'include' });
-    if (!res.ok) throw new Error('画像取得 HTTP ' + res.status);
-    const blob = await res.blob();
-    // 完了判定は停止ボタンで見ているので、ここは「明らかに壊れている」だけを弾く。
-    // 平坦な1:1のキャラ絵は 240KB 程度で正常なことがある（しきい値を上げると取りこぼす）。
-    if (blob.size < 80000) throw new Error('画像が小さすぎる ' + blob.size);
+  // 候補を新しい順に試して、中身のある1枚を落とす。
+  // 完了判定は停止ボタンで見ているので、ここは「明らかに壊れている」だけを弾く。
+  // 平坦な1:1のキャラ絵は 240KB 程度で正常なことがある（しきい値を上げると取りこぼす）。
+  async function saveAs(imgs, filename) {
+    let blob = null, last = '';
+    for (const img of [...imgs].reverse()) {
+      try {
+        const res = await fetch(img.src, { credentials: 'include' });
+        if (!res.ok) { last = 'HTTP ' + res.status; continue; }
+        const b = await res.blob();
+        if (b.size < 80000) { last = '小さすぎる ' + b.size; continue; }
+        blob = b; break;
+      } catch (e) { last = e.message; }
+    }
+    if (!blob) throw new Error('使える画像が無い（' + last + '）');
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url; a.download = filename;
