@@ -33,7 +33,19 @@
   const LIMIT_WAIT_MIN = 20;     // 投げ直す間隔の上限（解除が近いほど短くする）
   const LIMIT_MAX_TRIES = 240;   // 8分×240 = 32時間ぶん粘る
 
-  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+  // 🚨 Chromeは隠れたタブのタイマーを凍結する。凍結されると「動いているのに進まない」
+  //    という一番気づきにくい壊れ方をするので、自分で時計のずれを測って知らせる。
+  //    起動オプション --disable-backgrounding-occluded-windows などが外れると再発する。
+  const sleep = async (ms) => {
+    const t0 = Date.now();
+    await new Promise((r) => setTimeout(r, ms));
+    const drift = Date.now() - t0;
+    if (drift > ms * 5 + 10000 && !S.frozeNoted) {
+      S.frozeNoted = true;
+      note(`⚠ タイマーが間引かれています（${ms}ms待つはずが${drift}ms）— Chromeの起動オプションを確認してください`);
+    }
+    return drift;
+  };
   const q = (s) => document.querySelector(s);
   const note = (m) => { S.log.push(`${new Date().toLocaleTimeString()} ${m}`); if (S.log.length > 200) S.log.shift(); };
 
@@ -189,6 +201,17 @@
         let img = await waitImage();
 
         // 生成上限は「終わり」ではなく「待てば空く」。夜通し回すので待って続ける。
+        // 🚨 上限の誤判定を機械で止める。上限らしき表示が出ても、解除までの残り時間が
+        //    読めないものは疑う（一晩空回りしたときの症状がまさにこれだった）。
+        //    2回続けて同じことが起きたときだけ本物として扱う。
+        if (img === 'limit' && limitLeftMin() === null) {
+          S.falseLimit = (S.falseLimit || 0) + 1;
+          note(`⚠ 上限らしき表示だが解除時刻が読めない（${S.falseLimit}回目）— 誤判定の疑い`);
+          if (S.falseLimit < 2) { throw new Error('上限判定が怪しいので次の周回で拾い直す'); }
+        } else if (img !== 'limit') {
+          S.falseLimit = 0;
+        }
+
         // 上限は「書いてある時刻まで待つ」のではなく、一定間隔で投げ直して
         // 通った瞬間に再開する。これなら解除が5時間後でも20時間後でも取りこぼさない。
         let waits = 0;
