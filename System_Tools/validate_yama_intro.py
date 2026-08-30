@@ -69,10 +69,16 @@ def main(path):
         print(f"  {ok}{name:10} {c:6,}字 {pct:5.1f}%  許容 {rlo}-{rhi}%")
 
     # ---- セクション分解 ----
-    secs = re.split(r"\n## (\d+\. [^\n]+)\n", t)
+    # 2026-08-30: 見出しの「§」「第」を許容。朱鞠内湖（実測で当たった1本）は "## §1. フック" 形式で、
+    # 旧正規表現（数字始まりのみ）ではセクションが1つも取れず IndexError で落ちていた。
+    # → Analytics/Why_Shumarinai_Hit.md §5
+    secs = re.split(r"\n## (?:§|第)?(\d+[\.．][^\n]+)\n", t)
     sections = []
     for i in range(1, len(secs), 2):
         sections.append((secs[i], narr(secs[i + 1]), secs[i + 1]))
+    if not sections:
+        print("[ERROR] セクション見出しが読めません。'## 1. タイトル' または '## §1. タイトル' 形式にしてください")
+        return 1
 
     # ---- イントロ ----
     title, lines, body = sections[0]
