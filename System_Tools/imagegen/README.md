@@ -9,6 +9,36 @@ python3 collect.py <作品フォルダ> --watch      # ~/Downloads → images/ �
 
 `driver.js` は chatgpt.com のページに入れて動かす。開始 `__yamaRun()` ／ 状況 `__yamaGen.status()` ／ 停止 `__yamaGen.stop = true`。
 
+## 動かし方は2通りある
+
+**A. `run.py`（推奨・受講生に配るのはこちら）**
+```
+python3 run.py <作品フォルダ>
+```
+自動化専用のChromeを開き、ログインを待ち、キューを作り、ループを入れ、
+上限を待ち、回収し、全部そろうまで見張る。**AIエージェントの常駐も拡張機能も要らない。**
+手順書は `SETUP_FOR_STUDENTS.md`。
+
+**B. ブラウザ拡張から手で流し込む**
+開発中に中を覗きたいときだけ。`driver.js` をページに入れて `__yamaRun()`。
+
+## Chromeへの繋ぎ方（実測でここに落ち着いた）
+
+`chrome_bridge.py` が、Chrome自身のデバッグ用の口（CDP）を通してJSを流し込む。
+
+🚨**普段使っているプロファイルではデバッグポートが開かない**（Chrome 136以降の
+乗っ取り対策。実測：151で `DevToolsActivePort` が作られない）。
+だから `--user-data-dir` で**自動化専用のプロファイル**を作る。
+新品なのでChatGPTに未ログイン＝**初回だけ人がサインインする**。ここは設計で消せない。
+
+❌ **osascript（Apple Events）は使わない。** ログイン済みプロファイルのまま使えて
+魅力的だが、`browser.allow_javascript_apple_events` の設定が要るうえ、
+**エージェントのサンドボックスがApple Events用のXPCを塞ぐ**（実測でXPCエラー）。
+
+⚠️ **`codex sandbox` の結果を信じない。** あれは設定を読まない素のサンドボックスで、
+実際の `codex exec` とは通る/通らないが逆に出る（localhostが前者では塞がれ後者では通った）。
+検証は必ず本番の経路でやること。
+
 ## 動かす前に必ず読む（実測でつまずいた順）
 
 **1. Chromeは起動オプション付きで開く。** これが無いと、ウィンドウが他の窓に隠れた時点で
