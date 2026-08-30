@@ -25,17 +25,77 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from pathlib import Path
 from urllib.parse import urlparse
 
 PORT = 9222
-CHROME = '/Applications/Google Chrome.app'
-FLAGS = [
-    f'--remote-debugging-port={PORT}',
-    # 隠れたタブのタイマーをChromeが凍結すると、「動いているのに進まない」状態になる。
-    '--disable-backgrounding-occluded-windows',
-    '--disable-background-timer-throttling',
-    '--disable-renderer-backgrounding',
-]
+
+
+def default_profile():
+    if sys.platform == 'win32':
+        base = Path(os.environ.get('LOCALAPPDATA', Path.home() / 'AppData' / 'Local'))
+        return base / 'YamaImagegen' / 'Chrome'
+    return Path.home() / '.yama_imagegen_chrome'
+
+
+PROFILE = default_profile()
+
+
+def chrome_candidates():
+    if sys.platform == 'win32':
+        roots = [os.environ.get('PROGRAMFILES'), os.environ.get('PROGRAMFILES(X86)'),
+                 os.environ.get('LOCALAPPDATA')]
+        return [Path(root) / 'Google' / 'Chrome' / 'Application' / 'chrome.exe'
+                for root in roots if root]
+    return [
+        Path('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'),
+        Path.home() / 'Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    ]
+
+
+def flags():
+    return [
+        f'--user-data-dir={PROFILE}',
+        f'--remote-debugging-port={PORT}',
+        # 隠れたタブのタイマーをChromeが凍結すると、「動いているのに進まない」状態になる。
+        '--disable-backgrounding-occluded-windows',
+        '--disable-background-timer-throttling',
+        '--disable-renderer-backgrounding',
+        '--no-first-run',
+        '--no-default-browser-check',
+    ]
+
+
+def chrome_binary():
+    found = next((p for p in chrome_candidates() if p.exists()), None)
+    if not found:
+        sys.exit('Google Chrome が見つかりません。Chromeをインストールしてから、もう一度実行してください。')
+    return found
+
+
+def prepare_profile(profile=PROFILE):
+    """専用プロファイルに、画像保存で人の確認を求めない設定を入れる。"""
+    default = Path(profile) / 'Default'
+    default.mkdir(parents=True, exist_ok=True)
+    prefs_path = default / 'Preferences'
+    try:
+        prefs = json.loads(prefs_path.read_text(encoding='utf-8')) if prefs_path.exists() else {}
+    except (json.JSONDecodeError, OSError):
+        prefs = {}
+
+    profile_prefs = prefs.setdefault('profile', {})
+    defaults = profile_prefs.setdefault('default_content_setting_values', {})
+    defaults['automatic_downloads'] = 1       # 「複数ファイルを常に許可」
+    exceptions = profile_prefs.setdefault('content_settings', {}).setdefault(
+        'exceptions', {}).setdefault('automatic_downloads', {})
+    exceptions['https://chatgpt.com,*'] = {'last_modified': '0', 'setting': 1}
+    download = prefs.setdefault('download', {})
+    download['prompt_for_download'] = False
+    download['directory_upgrade'] = True
+
+    tmp = prefs_path.with_suffix('.tmp')
+    tmp.write_text(json.dumps(prefs, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    tmp.replace(prefs_path)
 
 
 def _http(path):
@@ -52,21 +112,20 @@ def is_ready():
 
 
 def start():
-    """Chromeをデバッグ用の口つきで開き直す。既に開いていれば何もしない。"""
+    """通常のChromeに触れず、自動化専用Chromeを起動する。"""
     if is_ready():
         print('Chromeは既に準備できています')
         return
-    if subprocess.run(['pgrep', '-x', 'Google Chrome'],
-                      capture_output=True).returncode == 0:
-        # 起動オプションは起動時にしか効かないので、一度きちんと閉じる
-        subprocess.run(['osascript', '-e', 'tell application "Google Chrome" to quit'],
-                       capture_output=True)
-        for _ in range(30):
-            if subprocess.run(['pgrep', '-x', 'Google Chrome'],
-                              capture_output=True).returncode != 0:
-                break
-            time.sleep(1)
-    subprocess.run(['open', '-a', CHROME, '--args'] + FLAGS, check=True)
+    prepare_profile()
+    options = {
+        'stdout': subprocess.DEVNULL,
+        'stderr': subprocess.DEVNULL,
+    }
+    if sys.platform == 'win32':
+        options['creationflags'] = subprocess.CREATE_NEW_PROCESS_GROUP
+    else:
+        options['start_new_session'] = True
+    subprocess.Popen([str(chrome_binary()), *flags()], **options)
     for _ in range(40):
         time.sleep(1)
         if is_ready():
@@ -79,8 +138,8 @@ def tabs():
     return [t for t in _http('/json') if t.get('type') == 'page']
 
 
-def evaluate(ws_url, expression):
-    """CDPのRuntime.evaluateを1回だけ叩く。WebSocketは標準ライブラリで喋る。"""
+def command(ws_url, method, params=None):
+    """CDPコマンドを1回だけ叩く。WebSocketは標準ライブラリで喋る。"""
     u = urlparse(ws_url)
     sock = socket.create_connection((u.hostname, u.port), timeout=10)
     sock.settimeout(180)
@@ -96,8 +155,7 @@ def evaluate(ws_url, expression):
         head += sock.recv(4096)
 
     body = json.dumps({
-        'id': 1, 'method': 'Runtime.evaluate',
-        'params': {'expression': expression, 'awaitPromise': True, 'returnByValue': True},
+        'id': 1, 'method': method, 'params': params or {},
     }).encode()
     mask = os.urandom(4)
     n = len(body)
@@ -129,6 +187,27 @@ def evaluate(ws_url, expression):
         if message.get('id') == 1:
             sock.close()
             return message
+
+
+def evaluate(ws_url, expression):
+    return command(ws_url, 'Runtime.evaluate', {
+        'expression': expression, 'awaitPromise': True, 'returnByValue': True,
+    })
+
+
+def allow_downloads(download_path):
+    """CDP側でも自動ダウンロードを許可し、作品の images/ へ直接保存する。"""
+    target = next((t for t in tabs() if 'chatgpt.com' in t.get('url', '')), None)
+    if not target:
+        raise RuntimeError('chatgpt.com のタブがありません')
+    path = Path(download_path).resolve()
+    path.mkdir(parents=True, exist_ok=True)
+    result = command(target['webSocketDebuggerUrl'], 'Browser.setDownloadBehavior', {
+        'behavior': 'allow', 'downloadPath': str(path), 'eventsEnabled': True,
+    })
+    if result.get('error'):
+        raise RuntimeError(result['error'].get('message', 'ダウンロード許可の設定に失敗しました'))
+    return path
 
 
 def main():

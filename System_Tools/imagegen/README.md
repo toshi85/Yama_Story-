@@ -9,7 +9,25 @@ python3 collect.py <作品フォルダ> --watch      # ~/Downloads → images/ �
 
 `driver.js` は chatgpt.com のページに入れて動かす。開始 `__yamaRun()` ／ 状況 `__yamaGen.status()` ／ 停止 `__yamaGen.stop = true`。
 
-## 動かし方は2通りある
+## 受講生への配布（macOS／Windows）
+
+受講生にはこの `imagegen` フォルダ一式を配布し、`start_imagegen.command` を1回実行してもらう。
+
+```text
+macOS:  start_imagegen.command をダブルクリック
+Windows: start_imagegen_windows.bat をダブルクリック
+→ 作品フォルダを選ぶ → 専用Chromeで初回ログイン
+```
+
+インストーラーは実行した場所から絶対パスを組み立てるため、受講生のユーザー名や配置場所に依存しない。macOSでは `~/Library/LaunchAgents/com.yama.imagegen.plist`、Windowsではタスクスケジューラの `Yama Imagegen` を生成し、ログイン後の再開、異常終了時の再起動、ログ保存、二重起動防止まで設定する。
+
+専用Chromeの設定では `automatic_downloads=1` と `prompt_for_download=false` を自動設定し、CDPでも保存を許可する。受講生がChromeの「複数ファイルを常に許可」やCodexの「常に許可」を選ぶ必要はない。
+
+初回のChatGPTログイン、Google Chrome、画像生成を使えるChatGPTアカウントは必要。アカウント認証やプランの利用上限は配布物では省略・変更できない。
+
+詳しい受講生向け手順は `SETUP_FOR_STUDENTS.md`。
+
+## 開発者向けの動かし方は2通りある
 
 **A. `run.py`（推奨・受講生に配るのはこちら）**
 ```
@@ -30,6 +48,8 @@ python3 run.py <作品フォルダ>
 乗っ取り対策。実測：151で `DevToolsActivePort` が作られない）。
 だから `--user-data-dir` で**自動化専用のプロファイル**を作る。
 新品なのでChatGPTに未ログイン＝**初回だけ人がサインインする**。ここは設計で消せない。
+
+`chrome_bridge.py` は通常のChromeを終了せず、Chrome本体を別プロセスとして起動する。専用プロファイルはmacOSでは `~/.yama_imagegen_chrome`、Windowsでは `%LOCALAPPDATA%\YamaImagegen\Chrome` に置く。
 
 ❌ **osascript（Apple Events）は使わない。** ログイン済みプロファイルのまま使えて
 魅力的だが、`browser.allow_javascript_apple_events` の設定が要るうえ、

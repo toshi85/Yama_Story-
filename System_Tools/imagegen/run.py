@@ -14,16 +14,60 @@
 Chromeの拡張機能も、AIエージェントの常駐も要らない。このコマンド1つで完結する。
 """
 import json
+import os
 import pathlib
 import subprocess
 import sys
 import time
+import urllib.request
+
+if sys.platform == 'win32':
+    import msvcrt
+else:
+    import fcntl
 
 import chrome_bridge as bridge
 
 HERE = pathlib.Path(__file__).resolve().parent
 DRIVER = HERE / 'driver.js'
 STALL_LIMIT = 45 * 60      # これだけ画像が増えなければ、入れ直して様子を見る
+
+
+def prepare_work(work):
+    """キューが無ければAsset_Prompts.mdから自動作成する。"""
+    queue = work / 'image_queue.json'
+    if queue.exists():
+        return
+    prompts = work / 'Asset_Prompts.md'
+    if not prompts.exists():
+        sys.exit(f'{work} に image_queue.json または Asset_Prompts.md がありません')
+    subprocess.run(
+        [sys.executable, str(HERE / 'extract_prompts.py'), str(prompts), str(queue)],
+        check=True,
+    )
+
+
+def acquire_lock(work):
+    """同じ作品を二重起動しない。ファイルは進捗ではなくロックの器だけ。"""
+    lock_path = work / '.imagegen.lock'
+    handle = lock_path.open('a+')
+    try:
+        if sys.platform == 'win32':
+            handle.seek(0)
+            if not handle.read(1):
+                handle.write(' ')
+                handle.flush()
+            handle.seek(0)
+            msvcrt.locking(handle.fileno(), msvcrt.LK_NBLCK, 1)
+        else:
+            fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except (BlockingIOError, OSError):
+        sys.exit('この作品の画像生成はすでに動いています。二重起動はしません。')
+    handle.seek(0)
+    handle.write(str(os.getpid()))
+    handle.truncate()
+    handle.flush()
+    return handle
 
 
 def js(expression):
@@ -40,10 +84,14 @@ def js(expression):
 
 def open_chatgpt():
     if not any('chatgpt.com' in t.get('url', '') for t in bridge.tabs()):
-        subprocess.run(
-            ['curl', '-s', '-X', 'PUT', '-o', '/dev/null',
-             f'http://127.0.0.1:{bridge.PORT}/json/new?https://chatgpt.com/'],
-            check=False)
+        request = urllib.request.Request(
+            f'http://127.0.0.1:{bridge.PORT}/json/new?https://chatgpt.com/',
+            method='PUT',
+        )
+        try:
+            urllib.request.urlopen(request, timeout=10).close()
+        except OSError:
+            pass
         time.sleep(6)
 
 
@@ -71,7 +119,7 @@ def install_and_run(todo):
     js(f'window.__yamaQueue = {json.dumps(todo, ensure_ascii=False)}; '
        'window.__yamaQueue.length')
     js(DRIVER.read_text(encoding='utf-8'))
-    js('''
+    js('''(() => {
       const g = window.__yamaGen;
       g.forget(); g.failed = []; g.stop = false;
       clearInterval(window.__yamaSuper);
@@ -82,7 +130,8 @@ def install_and_run(todo):
         if (!s.running && !s.stop && left > 0) window.__yamaRun();
       }, 60000);
       __yamaRun();
-      "started"
+      return "started";
+    })()
     ''')
 
 
@@ -92,15 +141,22 @@ def collect(work):
 
 
 def main():
+    try:
+        sys.stdout.reconfigure(line_buffering=True)
+    except AttributeError:
+        pass
     if len(sys.argv) < 2:
         sys.exit(__doc__)
     work = pathlib.Path(sys.argv[1]).resolve()
-    if not (work / 'image_queue.json').exists():
-        sys.exit(f'{work} に image_queue.json がありません')
+    if not work.is_dir():
+        sys.exit(f'作品フォルダが見つかりません: {work}')
+    prepare_work(work)
+    _lock_handle = acquire_lock(work)
 
     bridge.start()
     open_chatgpt()
     wait_for_login()
+    bridge.allow_downloads(work / 'images')
 
     queue, todo = remaining(work)
     if not todo:
