@@ -3756,10 +3756,10 @@ A Japanese prefectural governor in his 40s wearing a dark suit, official portrai
 ナレーター: 「もはや県と市町村のみで対応できる範囲を超えており、現場の疲弊も限界を迎えつつある」と表明しています。
 
 【制作メモ】ASSET-249 [キャラアニメーション] 台本L705
-シーン: 知事が苦渋の表明を発する（再現）
+シーン: 困り果てた顔で説明する知事（再現）。机は背景側にあるのでキャラには描かせない
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese prefectural governor in his 40s in a dark suit, standing with one hand pressed flat on a desk, jaw set, delivering a hard admission with unflinching eyes. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style — exactly the same friendly cartoon look as the rest of this series. Full body from head to feet, standing, with his legs and shoes fully inside the frame. Do NOT crop him at the waist or the chest, and do NOT frame in tightly on his face. He is drawn in the same chibi proportions as the rest of this series: a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall, with the head taking up about a quarter of the total height. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. A Japanese prefectural governor in his forties in a dark navy suit with a plain grey tie, short black hair, standing and squared up to the viewer with BOTH SHOULDERS EQUALLY VISIBLE. One hand is raised in front of his chest with the palm open and turned upward in a small, hesitant explaining gesture; the other hand hangs at his side. His shoulders are drawn up and tense. HIS FACE IS TROUBLED AND AT A LOSS: eyebrows tipped UP at the inner ends and pulled together so there are deep vertical creases between them, eyes narrowed and looking down and away from the viewer rather than into the lens, mouth pulled over to one side and turned down at the corner with the lips pressed together, a bead of sweat running from his temple. He is NOT smiling, NOT angry, NOT confident, NOT composed and NOT defiant — this is a man admitting he has run out of options and does not know what comes next. Nothing of the surroundings — no desk, no table, no papers, no flag, no chair, no ground, no props, no background elements of any kind. No blood, no wounds, no gore. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
@@ -3771,31 +3771,26 @@ A prefectural government office in Akita city at night: a broad desk with stacke
 
 ナレーター: この10月だけで見ても、秋田県で襲われた人は35人で歴代最悪の数字でした。
 
-【制作メモ】ASSET-250 [キャラアニメーション] 台本L707
-シーン: 10月のカレンダーが被害の印で埋まっていく
-キャラプロンプト（1:1）:
-```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese news presenter, woman in her 30s in a navy blazer, holding up a blank monthly calendar board with both hands, grave presenting expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
-```
-→ 背景再使用: **ASSET-213（放送ボード風背景）**。新規生成しない。ズーム位置・トリミング・色調補正で画変わりを付ける
-→ 編集者指示: カレンダーに赤い印を日ごとに増やし「10月だけで35人＝歴代最悪」を表示。
-
+【制作メモ】ASSET-250 [Lovart静止画 + 編集者] 台本L707
+シーン: 秋田県の月別被害者数の棒グラフ。10月だけ赤で突出させる
+→ ここは生成不要。作成済みの画像を使用: assets/ASSET-250_秋田県月別クマ被害2025年度.png（1920x1080）
+→ 月別の内訳（環境省「クマ類による人身被害について［速報値］」令和7年度・秋田県）:
+   4月0／5月1／6月1／7月2／8月4／9月11／10月35／11月10／12月1／1〜3月0
+   出典URL: https://www.env.go.jp/nature/choju/effort/effort12/r07injury-qe.pdf
+   ※10月は台本に合わせて35人で表示している（同資料の速報値は37人）。画像の脚注にもその旨を入れてある
+→ 編集者指示: 画像には解説文を入れていない（「歴代最悪」等は編集で載せる）。4月から順に0.15秒間隔でグレーの棒を立て、10月だけ間を置いてから一気に伸ばす。伸び切ってから「10月だけで35人」「歴代最悪」を編集で重ねる。脚注は画面下に小さく残したまま消さない。
 ---
 
 ナレーター: そして、この時点での秋田県の被害者は、すでに54人。
 
-【制作メモ】ASSET-251 [キャラアニメーション] 台本L709
-シーン: 語り手が積み上がった数字を示す
-キャラプロンプト（1:1）:
-```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese news presenter, woman in her 30s in a navy blazer, holding one open palm upward as if presenting a rising number, somber restrained expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
-```
-背景プロンプト（16:9）:
-```
-A dark gradient presentation backdrop with a faint outline of the shape of Akita prefecture glowing softly at the center, broadcast graphics base, somber tone. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
-```
-→ 編集者指示: 県形の上に「54人」をカウントアップで大きく表示。
-
+【制作メモ】ASSET-251 [Lovart静止画 + 編集者] 台本L709
+シーン: 4月から10月までの被害者数の累計を示す折れ線。10月の到達点だけ赤
+→ ここは生成不要。作成済みの画像を使用: assets/ASSET-251_秋田県クマ被害累計2025年度.png（1920x1080）
+→ 累計（環境省「クマ類による人身被害について［速報値］」令和7年度・秋田県の月別から算出）:
+   4月0／5月1／6月2／7月4／8月8／9月19／10月54
+   出典URL: https://www.env.go.jp/nature/choju/effort/effort12/r07injury-qe.pdf
+   ※10月は台本に合わせて35人で計算しているため累計は54人（同資料の速報値37人なら56人）
+→ 編集者指示: 画像には解説文を入れていない（「すでに54人」等は編集で載せる）。左から順に線を引き、10月の赤い点で止める。到達したところで「54人」を編集で大きく重ねる。脚注は画面下に小さく残したまま消さない。
 ---
 
 ナレーター: そのうち2人が、帰らぬ人となっていました。
@@ -3840,18 +3835,17 @@ A soft-focus autumn lane in Higashinaruse, Akita in warm golden backlight, drift
 
 ナレーター: 知事は 自衛隊の協力を求めるため防衛省へ向かいます。
 
-【制作メモ】ASSET-255 [Lovart動画] 台本L717
-シーン: 中央官庁の庁舎を見上げる固定カット。日章旗が風になびく。人物は一切映さない
-- 実写素材が第一候補: 秋田県公式ページの要望活動の写真、または防衛省庁舎の報道映像。出典を明示（`/revenue-guard` 対象）
-- 禁止事項: 実在の省庁が特定できる建物形状・銘板・省章の描写、人物
+【制作メモ】ASSET-255 [キャラアニメーション] 台本L717
+シーン: 真剣な顔で防衛省の庁舎へ歩いていく知事。ASSET-249と同一人物
+キャラプロンプト（1:1）:
 ```
-A low-angle exterior view looking up at the entrance facade of a large, plain Japanese central government office building in Tokyo. Grey stone and concrete cladding, tall vertical window bays, a wide flight of steps leading to a formal entrance under a deep portico, a low steel fence and a guard post at the perimeter. A single Japanese national flag hangs from a tall flagpole beside the entrance. The architecture is generic mid-century institutional and deliberately unremarkable, matching no specific real ministry. Overcast late autumn daylight, flat grey sky, bare branches of street trees at the frame edges. No snow anywhere, no frost, no winter. No legible text, no numbers, no building name, no ministry crest, no institution name, no emblem, no logo, no plaque, and no signage anywhere in the image. No people, no humans visible, no vehicles, no security personnel. Formal, imposing, impersonal — the weight of asking a national institution for help. Photorealistic, shot on RED camera, 24mm wide-angle lens from ground level. Documentary style. 16:9 aspect ratio. Generate 1 image.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style — exactly the same friendly cartoon look as the rest of this series. Full body from head to feet, with his legs and shoes fully inside the frame. Do NOT crop him at the waist or the chest, and do NOT frame in tightly on his face. He is drawn in the same chibi proportions as the rest of this series: a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall, with the head taking up about a quarter of the total height. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. THE SAME MAN AS THE PREVIOUS CUT: a Japanese prefectural governor in his forties in a dark navy suit with a plain grey tie and short black hair. He is walking, seen in FULL SIDE PROFILE facing to the RIGHT of the picture, so that THE WHOLE LENGTH OF BOTH LEGS IS VISIBLE across the frame in a clear mid-stride step, one foot forward and one pushing off behind. A slim dark briefcase hangs from his right hand; his left arm swings forward. His stride is long and purposeful and his upper body leans very slightly forward. HIS FACE IS EARNEST AND SOBER, NOT ANGRY — a quiet, straightforward serious face. His eyebrows are only SLIGHTLY lowered and are drawn as simple soft strokes: do NOT angle them sharply down into a V, do NOT pull them together, and do NOT draw any furrow, crease, wrinkle or shadow between them or on his forehead. His eyes are OPEN AT THEIR NORMAL WIDTH in the large round style of this series, with the pupils clearly visible, looking calmly ahead at where he is going — not narrowed, not squinting, not glaring. His mouth is small and closed, a short flat line turned down only very slightly at the corners — not clenched, not pressed thin, not a scowl, not a grimace. His chin is level. The whole face should read as an ordinary earnest man on serious business, with the same sober level expression as the other adults in this series. He is NOT angry, NOT scowling, NOT glaring, NOT stern, NOT menacing, NOT frightening, NOT grim and NOT smiling. Only the briefcase as a prop, nothing else around him — no ground, no steps, no building, no doors, no flag, no background elements of any kind. No blood, no wounds, no gore. White background. 1:1 aspect ratio. Generate 1 image.
 ```
-→ **Google Flow動画プロンプト:**
+背景プロンプト（16:9）:
 ```
-A 5-second documentary shot looking up at the entrance facade of a large plain Japanese central government office building in Tokyo. The only movement is the national flag lifting and falling on its pole in the wind, the bare branches of street trees stirring at the frame edges, and grey overcast cloud drifting slowly behind the roofline. No person, no vehicle and no movement at the entrance at any point. Late autumn, flat grey daylight, no snow. No legible text or emblem anywhere on the building. Locked-off camera, no zoom, no pan. Photorealistic, RED camera, documentary style.
+A low-angle exterior view looking up at the entrance facade of a large, plain Japanese central government office building in Tokyo on an afternoon in late autumn. Grey stone and concrete cladding, tall vertical window bays, a wide flight of steps leading to a formal entrance under a deep portico, a low steel fence and a guard post at the perimeter. A single Japanese national flag hangs from a tall flagpole beside the entrance. The architecture is generic mid-century institutional and deliberately unremarkable, matching no specific real ministry. Overcast daylight, flat grey sky, street trees at the frame edges still carrying thin rust and ochre leaves. No snow anywhere, no frost, no ice, no winter. The lower left third of the frame is open empty pavement at the foot of the steps, deliberately left as clear space. No legible text, no numbers, no building name, no ministry crest, no emblem, no plaque and no signage anywhere in the image. No people, no humans visible, no vehicles, no security personnel. Formal, imposing, impersonal — the weight of asking a national institution for help. Photorealistic, shot on RED camera, 24mm wide-angle lens from ground level. Documentary style. 16:9 aspect ratio. Empty landscape only. Generate 1 image.
 ```
-→ 編集者指示: 「防衛省へ」テロップ（**建物名はここでのみ出す**）。実写素材を使う場合は画面隅に出典クレジットを表示。BGMは重く低めに、緊迫は上げない。5秒フルで使う。
+→ 編集者指示: 知事を画面左下の歩道に置き、階段へ向かって右へゆっくりスライドさせながら少し小さくする（入っていく動き）。「防衛省へ」テロップ（建物名はここでのみ出す）。BGMは重く低めに、緊迫は上げない。5秒。
 ---
 
 ナレーター: 具体的には、箱わなの運搬と設置。周辺の監視。そして駆除した個体の処理。
@@ -3951,10 +3945,10 @@ A village work yard in Higashinaruse, Akita at dusk: a kei truck with its tailga
 ナレーター: ベテラン男性が入った50年前は、80人以上もいたといいます。
 
 【制作メモ】ASSET-263 [キャラアニメーション] 台本L733
-シーン: 50年前の賑わい（色抜きの回想・大勢のハンター）
+シーン: 50年前の賑わい（色抜きの回想）。5人を年齢・体格・髪・被り物・服で全部描き分ける
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A lively group of five young Japanese hunters from 50 years ago in faded sepia tones, every person a distinct individual, no two dressed alike: varied old-style hunting jackets, caps and headbands, rifles shouldered, laughing together. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. All five are drawn in the same chibi proportions as the rest of this series: large heads, short compact torsos and short stubby arms and legs, roughly four to five heads tall. Do NOT draw them with realistic adult proportions — not six or seven heads tall, not slender, not elongated. FIVE Japanese hunters of the 1970s standing in a row, rendered in faded sepia tones. THEY MUST ALL LOOK CLEARLY DIFFERENT FROM ONE ANOTHER — different ages, different builds, different heights, different hair, different headwear, different clothes and different ways of laughing. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE, A HAT OR AN OUTFIT. Describe each one exactly as follows, left to right: 1) The tallest of the five, a lean young man of about twenty, a white towel tied round his head as a headband, thick eyebrows, an open-collared cream shirt under a dark green vest, sleeves rolled up, his mouth wide open in a big laugh with one arm raised high. 2) A short, stocky, round-faced man of about twenty-five with a close-cropped near-shaven head and full cheeks, in a brown work jacket with the sleeves pushed up, arms folded across his chest, grinning broadly with his eyes squeezed into happy curves. 3) A man of about thirty-five of medium height and slim build, wearing round black-rimmed glasses and a flat cap with a long peak, in a grey jacket buttoned to the top, a hunting rifle slung over one shoulder, smiling only faintly with his mouth closed. 4) The smallest of the five, a wiry man of about twenty-eight with messy unkempt hair and a white towel hanging round his neck, in a long-sleeved shirt under a black sleeveless vest, crouching down on one knee at the front, laughing with all his teeth showing and one hand on his knee. 5) The heaviest and broadest of the five, a big man of about forty-five with a thick moustache and a knitted woollen cap pulled down, in a heavy dark navy blouson, both hands planted on his hips, head tipped back in a hearty open-mouthed laugh. No two of them are the same height and no two are the same width. Their headwear must all be different: a towel headband, a bare cropped head, a flat cap, a towel round the neck, and a knitted cap. Only the one rifle carried by man 3 as a prop, nothing else around them — no ground, no scenery, no background elements of any kind. No blood, no wounds, no gore. Full body for all five. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
@@ -3966,13 +3960,17 @@ A faded sepia-toned village square in Higashinaruse, Akita in the 1970s: old woo
 
 ナレーター: しかも、そのうちの4、5人は既に70代です。
 
-【制作メモ】ASSET-264 [Lovart静止画 + 編集者] 台本L735
-シーン: 高齢化の可視化ベース（並んだ椅子と杖）
+【制作メモ】ASSET-264 [キャラアニメーション] 台本L735
+シーン: 高齢化した猟友会。70代を含む年配のハンター5人を、年齢・体格・被り物・服で全部描き分ける
+キャラプロンプト（1:1）:
 ```
-A row of folding chairs along the wall of a village community hall in Higashinaruse, Akita, a cane leaning against one chair and reading glasses on another seat, warm quiet light. An aging roster. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. All five are drawn in the same chibi proportions as the rest of this series: large heads, short compact torsos and short stubby arms and legs, roughly four to five heads tall. Do NOT draw them with realistic adult proportions — not six or seven heads tall, not slender, not elongated. FIVE elderly Japanese hunters of the local hunting association, standing in a row. THEY MUST ALL LOOK CLEARLY DIFFERENT FROM ONE ANOTHER — different ages, builds, heights, hair, headwear, clothes and postures. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE, A HAT OR AN OUTFIT. Their age is shown SIMPLY in the cartoon idiom — white or thinning hair, a couple of clean soft lines at the eyes and mouth, slightly rounded shoulders — and nothing more. Do NOT draw heavy wrinkles, deep folds, sagging jowls, cross-hatching or leathery skin, and do NOT make any of them grotesque, gaunt or scary. They all read as warm, ordinary old men with sober, level expressions: not smiling broadly, not angry, not frightening. Left to right: 1) A man of about seventy-six, the shortest of the five, small and round-shouldered, thin white hair under a faded blaze-orange cap, an olive-brown hunting vest over a checked shirt, leaning slightly on a wooden walking stick, mouth in a calm level line. 2) A man of about seventy, tall and lean with a full head of white hair swept back and round silver-rimmed glasses, a dark green hunting jacket zipped halfway, both hands clasped in front of him, looking quietly at the viewer. 3) A man of about sixty-eight, broad and heavy-set with a close-cropped grey head and a short grey moustache, a brown field vest over a thick knitted sweater, arms folded across his chest. 4) A man of about seventy-two, medium height and wiry, bald on top with white hair at the sides, a grey knitted cap held in one hand and a hunting rifle slung over the opposite shoulder, standing straight-backed. 5) A man of about sixty-five, the youngest-looking of the five, stocky with salt-and-pepper hair under a navy work cap, a dark blue blouson with the collar up, one hand resting on the back of a folding chair. All five are CLEAN-SHAVEN except man 3, who has the short grey moustache — do NOT give the others beards, moustaches or stubble. No two of them are the same height. Their headwear must all be different: an orange cap, no hat, no hat with cropped grey hair, a knitted cap held in the hand, and a navy work cap. Only the walking stick, the rifle, the knitted cap and the folding chair back as props, nothing else around them — no floor, no wall, no scenery, no background elements of any kind. No blood, no wounds, no gore. Full body for all five. White background. 1:1 aspect ratio. Generate 1 image.
 ```
-→ 編集者指示: 「18人中、4〜5人が70代」テロップ。
-
+背景プロンプト（16:9）:
+```
+The inside of a modest village community hall in Higashinaruse, Akita: a plain wall with a row of empty folding chairs along it, a low table at one side, warm quiet indoor light from a window out of frame. The centre of the frame is left as clear open floor space. Indoors, not a landscape: no sky, no weather, no snow, no frost, no winter. Shadowed at the edges but NOT pure black — the chairs, the wall and the floor all stay clearly readable. No crest, no emblem, no logo, no readable lettering anywhere. An aging roster. Photorealistic, shot on RED camera, 35mm lens. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+```
+→ 編集者指示: 「18人中、4〜5人が70代」テロップ。5人を横一列に並べ、左端の杖の男性と右端の若く見える男性を最初と最後に軽く点灯させて年齢差を見せる。
 ---
 
 ナレーター: ベテラン男性は「我々がいなくなれば、どうなるのかな」と今後の人手不足について不安な気持ちを語っていました。
@@ -4010,10 +4008,10 @@ A prefectural crisis-response room in Akita city: a large wall map of Akita pref
 ナレーター: 10月27日、秋田市で農作業中の80代女性。
 
 【制作メモ】ASSET-267 [キャラアニメーション] 台本L741
-シーン: 秋田市の畑に残された鍬と手ぬぐい（人物は描かず遺留品で悼む）
+シーン: 畑に横たわる80代女性。苦悶の表情。傷や血は一切描かない
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese police officer in a dark blue uniform, kneeling and gently picking up a fallen farm towel from the ground, sorrowful respectful care in his posture. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. She is drawn in the same chibi proportions as the rest of this series: a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall, with the head taking up about a quarter of the total height. Do NOT draw her with realistic adult proportions — not six or seven heads tall, not slender, not elongated. An elderly Japanese woman in her eighties, small and slight, in a lavender farm work smock over dark monpe work trousers with a white towel tied over her head. She lies motionless on her side on the ground, seen from a low side angle so that HER WHOLE BODY LIES HORIZONTALLY ACROSS THE PICTURE FROM LEFT TO RIGHT, head at one end and feet at the other. Her knees are drawn up tight, one arm stretched out on the ground in front of her with the fingers curled and clawing at the ground, and the other pressed hard against her chest. HER EYES ARE COMPLETELY CLOSED. Each eye is drawn as a single closed curved line, squeezed tight with creases at the outer corner. Do NOT draw open eyes, do NOT draw pupils, irises or any white of the eye, do NOT leave the eyes even slightly open — she is unconscious. HER FACE IS IN PAIN, NOT PEACEFUL: her eyebrows are pulled UP at the inner ends and drawn together, her mouth is open in a strained grimace with the corners dragged down and her teeth showing a little, her jaw and neck tight, and there is sweat on her brow and cheek. She is NOT smiling, NOT calm, NOT peaceful, NOT serene, NOT awake and does NOT look asleep. Her age is shown SIMPLY — thin white hair showing at her temples under the towel and a couple of soft lines at the eyes — and nothing more; do NOT draw heavy wrinkles, do NOT make her gaunt or grotesque. Family-friendly depiction: the distress is carried entirely by her face and her posture, with no graphic detail at all. HER CLOTHES ARE TORN AND FILTHY: the shoulder seam of her smock is ripped open and the sleeve hangs loose, the hem is frayed and split in two places, one trouser leg is torn at the knee, and the whole outfit is smeared and streaked with dark earth and dust. The head towel has slipped back and is dirty and rumpled. The damage is ONLY to the cloth — the skin underneath is clean and unbroken, and nothing is red anywhere on her. No blood, no wounds, no gore, no injuries on her body. Only the white head towel as a prop, nothing else around her — no ground, no soil, no crops, no tools, no background elements of any kind. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
@@ -4026,10 +4024,10 @@ A small vegetable field on the outskirts of Akita city in cold morning light: a 
 ナレーター: 11月2日、湯沢市で、キノコ採りに出た70代女性が、それぞれクマに襲われ亡くなっています。
 
 【制作メモ】ASSET-268 [キャラアニメーション] 台本L743
-シーン: 山際に残されたキノコ籠（人物は描かず遺留品で悼む）
+シーン: 山際に横たわる70代女性。苦悶の表情。傷や血は一切描かない（267と服装・姿勢を変える）
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese firefighter in an orange rescue uniform, standing with his helmet removed and held to his chest, head bowed in silent mourning. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. She is drawn in the same chibi proportions as the rest of this series: a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall, with the head taking up about a quarter of the total height. Do NOT draw her with realistic adult proportions — not six or seven heads tall, not slender, not elongated. An elderly Japanese woman in her seventies, of medium build, dressed for going into the hills: a dark red windbreaker over a beige shirt, brown work trousers, rubber boots and a wide-brimmed khaki hat that has come off and lies beside her. Her short grey hair is uncovered. She lies motionless FACE DOWN on the ground, her chest and stomach against the ground, seen from a low side angle so that HER WHOLE BODY LIES HORIZONTALLY ACROSS THE PICTURE FROM LEFT TO RIGHT, head at one end and boots at the other. Both arms are stretched out on the ground above her head with the fingers curled and clawing at the ground, and her legs are straight and slightly apart. HER HEAD IS TURNED TO ONE SIDE with her cheek against the ground. HER EYES ARE COMPLETELY CLOSED. Each eye is drawn as a single closed curved line, squeezed tight with creases at the outer corner. Do NOT draw open eyes, do NOT draw pupils, irises or any white of the eye, do NOT leave the eyes even slightly open — she is unconscious. HER FACE IS IN PAIN, NOT PEACEFUL: her eyebrows are pulled UP at the inner ends and drawn together, her mouth is open in a strained grimace with the corners dragged down and her teeth showing a little, her jaw and neck tight, and there is sweat on her brow and cheek. She is NOT smiling, NOT calm, NOT peaceful, NOT serene, NOT awake and does NOT look asleep. Her age is shown SIMPLY — short grey hair and a couple of soft lines at the eyes — and nothing more; do NOT draw heavy wrinkles, do NOT make her gaunt or grotesque. Family-friendly depiction: the distress is carried entirely by her face and her posture, with no graphic detail at all. HER CLOTHES ARE TORN AND FILTHY: the back of her windbreaker is ripped open in two long splits and the fabric hangs loose, one sleeve is torn at the elbow, her trousers are scuffed and muddy at the knees, and the whole outfit is smeared with dark earth and leaf litter. The fallen hat is crushed and dirty. The damage is ONLY to the cloth — the skin underneath is clean and unbroken, and nothing is red anywhere on her except the colour of her windbreaker. No blood, no wounds, no gore, no injuries on her body. Only the fallen khaki hat as a prop, nothing else around her — no ground, no leaves, no basket, no mushrooms, no background elements of any kind. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
@@ -4041,15 +4039,19 @@ The edge of a beech forest near Yuzawa, Akita in early November: a woven mushroo
 
 ナレーター: とはいえ、自衛隊の支援により県内に運んだ箱わなは141基。
 
-【制作メモ】ASSET-269 [キャラアニメーション] 台本L745
-シーン: 隊員が箱わなの列を前に記録をつける（成果の可視化）
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-269 [Lovart動画] 台本L745
+シーン: 山際の林の中に据えられた箱わな1基。数はテロップで見せる
+- 実写素材は使用しない（AI生成で確定）
+- 禁止事項: 2基以上の箱わな、人物、車両、建物や道路、部隊名や記章、雪
+静止画プロンプト（16:9・フォトリアル）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese Self-Defense Force member in an olive-green field uniform and cap, ticking items on a clipboard with a pen, methodical proud posture. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+A single steel box trap set up alone in the mountains of Akita, Japan, on a morning in late autumn, frozen at one instant, photographed from a low side angle about a metre above the ground and three metres back. The cage stands on a small flat shelf of ground at the edge of the forest, where a slope of dry fallen leaves meets a stand of grey beech trunks and dark cedars; low bamboo grass and undergrowth crowd in on both sides and a faint animal trail runs past it into the trees. The cage sits directly on the leaf litter, its feet bedded into the ground and a rope lashing one corner to a tree trunk beside it. Just the one cage and nothing else: welded steel mesh walls and roof, a heavy vertical sliding gate propped up in the set position on its guide rails at the near end, a trigger plate on the floor inside, and a shallow tray of fruit bait resting on the floor beyond the trigger plate, seen through the mesh. The frame is scuffed and the metal dulled with use, with dew on the mesh. It stands completely by itself — there are NO other cages, no row of traps, no stack, no truck, no equipment, no buildings and no road anywhere in the picture. The right third of the frame is open forest floor and soft out-of-focus trunks receding into mist, deliberately left as clean uncluttered negative space for large text. Autumn: deep drifts of gold and rust leaves, a few leaves still on the branches. No snow anywhere, no frost, no ice, no winter. Soft flat morning light through the canopy; the inside of the cage is shadowed but NOT pure black — the mesh, the gate, the trigger plate and the bait all stay clearly readable. No people, no humans visible, no animals, no bear. No crest, no emblem, no logo, no unit name, no registration number and no readable lettering anywhere. Plain, functional, matter-of-fact. Photorealistic, shot on RED camera, 50mm lens. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
-→ 背景再使用: **ASSET-256（自衛隊の集積ヤード）**。新規生成しない。ズーム位置・トリミング・色調補正で画変わりを付ける
-→ 編集者指示: 「運んだ箱わな 141基」をカウントアップ表示。
-
+→ **Google Flow動画プロンプト:**
+```
+A 5-second documentary shot of a single steel box trap set up alone at the edge of the forest in the mountains of Akita on a morning in late autumn, camera locked off on a tripod at low height to one side of it. The cage sits on deep fallen leaves among grey beech trunks and dark cedars, with bamboo grass crowding in on both sides. There is only the one cage in the whole shot — no other traps, no row, no stack, no truck, no equipment, no buildings and no road ever appear. Nothing moves except thin morning mist drifting between the trunks behind it and a few dry leaves turning over at its base; the propped gate never falls and the bait inside is never disturbed. Nobody and no animal appears at any point. The right third of the frame stays open and empty. Late October, no snow. Soft flat light through the canopy. No crest, emblem, logo or readable lettering anywhere. No zoom, no pan. Photorealistic, RED camera, documentary style.
+```
+→ 編集者指示: 右の余白に「運んだ箱わな 141基」をカウントアップ表示。画には1基しか映さず、数は文字だけで伝える。5秒フルで使う。
 ---
 
 ナレーター: 駆除されたクマの運搬は9頭。動いた隊員は、のべ924人にのぼり、村は、少しずつ日常を取り戻していったのです。
@@ -4165,16 +4167,16 @@ Tracking shot of an adult Asian black bear, glossy black fur with a white cresce
 ナレーター: そして、2024年は豊作だったのに対して、翌年の2025年は不作。
 
 【制作メモ】ASSET-277 [キャラアニメーション] 台本L764
-シーン: 研究者が2年の落差を両手で示す
+シーン: 背景を左右2分割にして豊作と不作を対比。研究者が中央で両手を左右に開いて示す
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese forestry researcher, man in his 50s in a khaki field vest, one palm raised high and the other palm dropped low, contrasting two levels, emphatic teaching expression. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. He is drawn in the same chibi proportions as the rest of this series: a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall, with the head taking up about a quarter of the total height. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. A Japanese forestry researcher, a man in his fifties in a khaki field vest over a check shirt and dark work trousers, squared up to the viewer with BOTH SHOULDERS EQUALLY VISIBLE. BOTH ARMS ARE STRETCHED OUT SIDEWAYS, one to his left and one to his right, each hand open with the palm turned upward, presenting something on either side of him — the two arms are level with each other and held at chest height. His face is instructive and even-tempered: eyebrows level, eyes open normally looking at the viewer, mouth open mid-sentence as he explains. Not smiling broadly, not angry, not alarmed. Nothing of the surroundings — no ground, no trees, no props, no background elements of any kind. No blood, no wounds, no gore. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A split-tone forest backdrop in the Akita mountains: one side lush with golden nuts, the other side bare gray branches, joined at the center. Two years, two fates. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A single photorealistic image divided into two equal panels side by side, separated by a thin clean white gutter. BOTH PANELS SHOW THE SAME BEECH GROVE IN THE AKITA MOUNTAINS FROM EXACTLY THE SAME CAMERA POSITION AND THE SAME ANGLE, with the same trunks in the same places, so the only difference between them is the crop. LEFT PANEL — a good year: the branches are heavy with beech nuts in their spiky husks, clustered thickly all along every branch, the canopy full and gold-green, and the forest floor completely carpeted with fallen nuts and husks. Warm rich autumn light. RIGHT PANEL — a bad year: the very same branches carry NO nuts and NO husks at all, completely bare of fruit with only sparse thin leaves left, and the forest floor below has only dry brown leaves on it with not a single nut anywhere. Flat cold grey light. The contrast between the two panels must be immediate and obvious at a glance: heavy versus empty, warm versus cold. Both panels are autumn, late October — no snow anywhere, no frost, no ice, no winter, and no bare leafless winter branches. The lower centre of each panel is left as clear open space. Shadowed under the canopy but NOT pure black — the branches, the nuts and the ground all stay clearly readable. No legible text, no numbers, no labels, no year captions and no lettering anywhere in the image. No people, no figures, no humans visible, no animals, no bear. Photorealistic, shot on RED camera, 50mm lens. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
-→ 編集者指示: 「2024＝豊作」「2025＝凶作」を左右に表示。
+→ 編集者指示: 「2024＝豊作」を左パネルの上、「2025＝凶作」を右パネルの上に表示（年号は画像に描かせず編集で載せる）。研究者は分割線の上に立たせ、左右に開いた手がそれぞれのパネルを指すよう配置する。
 
 ---
 
@@ -4197,15 +4199,12 @@ The boundary between forest and farmland in Akita, Japan at dusk: a harvested fi
 ナレーター: また、秋田県の調査によると、豊作と不作が交互に一年ごとに発生しており、2026年は豊作の見込み。
 
 【制作メモ】ASSET-279 [キャラアニメーション] 台本L768
-シーン: 研究者が交互のリズムを左右の手で示す
+シーン: 豊作の森を背に、真剣な顔で説明する研究者。ASSET-277と同一人物
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese forestry researcher, man in his 50s in a khaki field vest, alternating his two hands up and down like a seesaw rhythm, explanatory rhythmic gesture. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. He is drawn in the same chibi proportions as the rest of this series: a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall, with the head taking up about a quarter of the total height. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. THE SAME MAN AS ASSET-277: a Japanese forestry researcher in his fifties in a khaki field vest over a check shirt and dark work trousers, squared up to the viewer with BOTH SHOULDERS EQUALLY VISIBLE. One hand is raised in front of his chest with the index finger up as he makes a point; the other hand is open at his side. HIS FACE IS EARNEST AND SOBER, NOT ANGRY — a quiet, straightforward serious face. His eyebrows are only SLIGHTLY lowered and drawn as simple soft strokes: do NOT angle them sharply down into a V, do NOT pull them together, and do NOT draw any furrow, crease, wrinkle or shadow between them or on his forehead. His eyes are OPEN AT THEIR NORMAL WIDTH in the large round style of this series, with the pupils clearly visible, looking straight at the viewer — not narrowed, not squinting, not glaring. His mouth is open mid-sentence as he explains, the jaw relaxed — not clenched, not a scowl, not a grimace. The whole face should read as an ordinary earnest specialist explaining something important, with the same sober level expression as the other adults in this series. He is NOT angry, NOT scowling, NOT glaring, NOT stern, NOT menacing, NOT frightening, NOT grim and NOT smiling broadly. Nothing of the surroundings — no ground, no trees, no desk, no props, no background elements of any kind. No blood, no wounds, no gore. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
-```
-A calm research office in Akita, Japan: a desk with tree-ring samples and field notebooks, window light, orderly scientific space. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
-```
+→ 背景再使用: **ASSET-275（豊作のブナ林）**。新規生成しない。ズーム位置・トリミング・色調補正で画変わりを付ける
 → 編集者指示: 「豊作⇄凶作が交互／2026年＝豊作見込み」テロップ（年表は編集で年号のみ並べる）。
 
 ---
@@ -4241,16 +4240,16 @@ A new electric fence line with white insulator posts running along the boundary 
 ナレーター: 同じ悲劇を繰り返さないために、一人一人ができることに必死で取り組んでいます。
 
 【制作メモ】ASSET-282 [キャラアニメーション] 台本L777
-シーン: 柵を張る作業員・見回りの住民・鈴を付けて歩く人（村の取り組み）
+シーン: 村道を背景に、それぞれ別の備えをしている村人4人
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three Japanese villagers each doing a safety task, every person a distinct individual, no two dressed alike: a man in work overalls tightening a fence wire, an elderly woman in a reflective vest on patrol with a whistle, a young father clipping a bear bell to his belt. Determined hopeful faces. Full body. White background. 1:1 aspect ratio. Generate 1 image.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. All four are drawn in the same chibi proportions as the rest of this series: large heads, short compact torsos and short stubby arms and legs, roughly four to five heads tall. Do NOT draw them with realistic adult proportions — not six or seven heads tall, not slender, not elongated. FOUR Japanese villagers standing in a row, evenly spaced with a clear gap between each one, each doing a different everyday safety task. THEY MUST ALL LOOK CLEARLY DIFFERENT FROM ONE ANOTHER — different ages, sexes, builds, heights, hair, clothes and props. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT. Left to right: 1) A woman of about forty-five, medium height, hair tied back in a short ponytail, in a navy farm work jacket, khaki work trousers and rubber boots, a small brass bear bell clipped to her belt which she is flicking with one finger to make it ring, a hand towel over her shoulder. 2) A man of about sixty-five, short and stocky with close-cropped grey hair, in grey work coveralls and a cap, crouching on one knee and holding a small handheld electrical tester out in front of him with both hands as if touching it to a wire. 3) A man of about thirty-five, tall and lean with slightly long black hair, in a dark blue windbreaker and jeans, a yellow armband on his upper arm, standing straight with one arm raised and the palm open in a stopping or guiding gesture, looking off to one side. 4) A man of about seventy, small and round-shouldered with thin white hair under a knitted cap, in a thick padded winter jacket and scarf, holding a switched-on torch pointed down at the ground in front of him with both hands. No two of them are the same height. Their faces are calm and quietly determined — earnest and level, eyebrows relaxed with no furrow between them, eyes open at their normal width, mouths closed in soft even lines. They are NOT grinning, NOT angry, NOT frightened, NOT grim. Only the bell, the tester, the armband and the torch as props, nothing else around them — no ground, no fence, no houses, no background elements of any kind. No blood, no wounds, no gore. Full body for all four. White background. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A bright late-spring morning in Higashinaruse, Akita: fresh green mountains, a new fence line at the forest edge, village houses with open windows. A community rebuilding its confidence. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A quiet village lane in Higashinaruse, Akita, Japan on a bright morning in late spring. Single-storey houses with dark metal roofs stand along one side, a utility pole and a low hedge at the roadside, harvested paddies opening out on the other side, and a new fence line running along the foot of the forest at the edge of the village. Fresh green mountains rise close behind, the trees in new leaf. Calm clear daylight, gentle shadows, quiet ordinary life. The centre of the frame is left as clear open road, deliberately kept empty. No snow anywhere, no frost, no ice, no winter. Shadowed at the edges but NOT pure black — the road, the houses, the pole and the fence line all stay clearly readable. No legible text, no numbers, no signage and no lettering anywhere. No people, no figures, no humans visible, no animals, no bear, no vehicles. A community getting on with it. Photorealistic, shot on RED camera, 35mm lens. Documentary style. 16:9 aspect ratio. Empty landscape only. Generate 1 image.
 ```
-→ 編集者指示: 前向きなBGMへ転調。「一人一人ができることを」テロップ。
+→ 編集者指示: 前向きなBGMへ転調。「一人一人ができることを」テロップ。4人を村道に横一列で置き、左から右へ0.3秒間隔で点灯させる。
 
 ---
 
@@ -4286,13 +4285,13 @@ The village of Higashinaruse, Akita seen from a low rise in late-spring light: r
 ナレーター: 佐々木喜行さんのご冥福を心からお祈りいたします。
 
 【制作メモ】ASSET-285 [Lovart動画] 台本L783 ★末尾は必ずAI動画（恒久ルール）
-シーン: 白菊と夕暮れの山並み（追悼の献花）。花びらと空がゆっくり動く
+シーン: 現場の道路脇に置かれた白菊（追悼の献花）。花びらと空がゆっくり動く
 ```
-A single bouquet of white chrysanthemums resting on a wooden rail overlooking the dusk mountains of Higashinaruse, Akita, soft violet-orange sky, profound respectful stillness. In memoriam. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+A roadside memorial at the actual site in Higashinaruse, Akita, Japan at dusk in late spring. A bouquet of white chrysanthemums wrapped in pale paper has been laid on the ground at the edge of a narrow village road, right where the road meets the foot of the forest, leaning against the base of a weathered guardrail post. Beside it sit a small glass of water, an unopened can of drink and a single white flower laid flat on the asphalt. The dark green wall of the forest rises immediately behind, fresh leaves on the trees, the ridgeline of the mountains beyond going violet-orange in the last light. Shot low and close, the flowers large in the lower half of the frame and slightly off centre, the road and the forest edge falling away soft behind them. Profound respectful stillness. No snow anywhere, no frost, no ice, no winter. Dim but NOT pure black — the flowers, the guardrail and the road surface all stay clearly readable. No legible text, no numbers, no labels, no signage and no lettering anywhere in the image. No people, no figures, no humans visible, no animals, no bear, no vehicles. No blood, no wounds, no gore. Photorealistic, shot on RED camera, 50mm lens, shallow depth of field. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
-A quiet mourning scene at dusk in Higashinaruse, Akita: white chrysanthemum petals trembling faintly in a soft breeze on a wooden rail, the violet-orange sky slowly deepening behind the dark mountain ridgeline, camera almost still with the gentlest push in. Reverent and calm. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+A quiet mourning scene at dusk at the roadside site in Higashinaruse, Akita: a bouquet of white chrysanthemums laid on the ground against a guardrail post at the edge of a village road, the outer petals and the wrapping paper trembling faintly in a soft breeze, the dark forest behind stirring very slightly, the violet-orange sky slowly deepening above the ridgeline. Camera almost still, the gentlest push in. Late spring, no snow, no winter. Dim but not pure black. Reverent and calm. No people, no animals, no vehicles, no lettering. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: 「佐々木喜行さんのご冥福をお祈りいたします」を静かに表示。BGMを絞る。
 

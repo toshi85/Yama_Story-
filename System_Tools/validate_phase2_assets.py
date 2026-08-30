@@ -360,7 +360,102 @@ def prompt_lint(text, errors, warns, info):
     if dead:
         warns.append(f'クマの死亡カットが確定形になっていない {len(dead)}件（仰向けは人間ポーズに化ける→うつ伏せPRONE＋四肢を地面に伸ばす＋目はバツ印。詳細はASSET_CHECKLIST「クマ専用ルール⑤」）: {", ".join(dict.fromkeys(dead))}')
 
-    info.append(f'プロンプトlint(14-34): {len(segs)}セグメント走査')
+    # ===== rules 35-39: 2026-08-29〜30 セッションの差し戻しを機械化 =====
+    # 根拠は全て実測（本人が生成画像を見て差し戻した件）。ルール本文は ASSET_CHECKLIST.md STEP3「定石 I〜N」
+    def labeled_blocks(seg):
+        """[(直前のラベル行, プロンプト本文), ...]。ラベルでキャラ/背景/動画を切り分けるため"""
+        out, label, buf, inb = [], '', [], False
+        for line in seg.split('\n'):
+            if line.strip().startswith('```'):
+                if inb:
+                    out.append((label, '\n'.join(buf)))
+                    buf, inb = [], False
+                else:
+                    inb = True
+                continue
+            if inb:
+                buf.append(line)
+            elif line.strip():
+                label = line
+        return out
+
+    # 35) キャラプロンプトが複数行（validate_yama_prompts.py は行単位で Full body を見るため、
+    #     改行すると「Full body欠落」の誤検出になる。背景・実写は分割画面の説明で改行してよい＝出荷済みASSET-087）
+    multiline = []
+    for nar, seg in segs:
+        for lab, b in labeled_blocks(seg):
+            if 'キャラ' in lab and '\n' in b.strip():
+                multiline.append(asset_no(seg))
+                break
+    if multiline:
+        errors.append(f'キャラプロンプトが複数行になっている {len(multiline)}件（このファイルのプロンプトは1行で書く。改行すると後段の検査が本文を読めない）: {", ".join(dict.fromkeys(multiline))}')
+
+    # 36) 群像の個別化不足（「全員違う人物にして」の一般指示は効かない。1)2)3) と番号を振って1人ずつ書く）
+    GROUP_N = re.compile(r'\b(two|three|four|five|six)\b[^.]{0,40}?\b(people|villagers|men|women|hunters|residents|officials|figures|persons|police officers|firefighters)\b', re.I)
+    nogroup = []
+    for nar, seg in segs:
+        for lab, b in labeled_blocks(seg):
+            if 'キャラ' not in lab:
+                continue
+            if GROUP_N.search(b) and not (re.search(r'(?<![0-9])1\)\s', b) and re.search(r'(?<![0-9])2\)\s', b)):
+                nogroup.append(asset_no(seg))
+                break
+    if nogroup:
+        warns.append(f'複数人のキャラプロンプトが番号付きで書き分けられていない {len(nogroup)}件（年齢・性別・体格・身長・髪・服・小物を 1) 2) 3) と1人ずつ書く。一般指示では全員同じ顔になる）: {", ".join(dict.fromkeys(nogroup))}')
+
+    # 37) 気絶・意識不明なのに目を閉じる指定がない（スタイル指定の large expressive eyes が開き目を強制する）
+    FAINT_NAR = re.compile(r'気を失|意識を失|意識不明|気絶|昏睡|ぐったり')
+    eyesopen = []
+    for nar, seg in segs:
+        if not FAINT_NAR.search(nar or ''):
+            continue
+        for lab, b in labeled_blocks(seg):
+            if 'キャラ' not in lab:
+                continue
+            if not re.search(r'eyes?\s+(are\s+)?(closed|shut)|eyelids\s+(closed|shut)|eyes\s+screwed\s+shut', b, re.I):
+                eyesopen.append(asset_no(seg))
+            break
+    if eyesopen:
+        warns.append(f'気絶・意識不明のキャラに目を閉じる指定がない {len(eyesopen)}件（スタイル指定の large expressive eyes が勝つので eyes closed を明示。服の損傷も添える）: {", ".join(dict.fromkeys(eyesopen))}')
+
+    # 38) ツキノワグマの判別指定がない（指定しないとヒグマ／グリズリーの絵になる。実測 ASSET-190）
+    TSUKI_NAR = re.compile(r'ツキノワ')
+    noid = []
+    for nar, seg in segs:
+        for lab, b in labeled_blocks(seg):
+            if not (TSUKI_NAR.search(nar or '') or re.search(r'Asiatic black bear', b, re.I)):
+                continue
+            if not BEAR.search(re.sub(r'no\s+(bears?|animals?)', '', b, flags=re.I)):
+                continue
+            has_black = re.search(r'jet[- ]black|glossy black coat|entirely black', b, re.I)
+            has_nohump = re.search(r'(no|without a|NOT a)\s+(pronounced\s+|large\s+)?shoulder hump|no hump', b, re.I)
+            if not (has_black and has_nohump):
+                noid.append(asset_no(seg))
+            break
+    if noid:
+        warns.append(f'ツキノワグマの判別指定が足りない {len(noid)}件（jet-black coat／NO shoulder hump／large round ears／short blunt muzzle を書かないとヒグマの絵になる）: {", ".join(dict.fromkeys(noid))}')
+
+    # 39) 夕暮れ・夜の屋外に季節宣言も雪の打ち消しも無い（rule14/29の穴。暗い時間帯は特に冬に化ける）
+    #     ⚠️ 屋外プロンプト全部を対象にすると出荷済み（人間チェック済み版）が56件落ちる＝検査側が過剰。
+    #        暗い時間帯だけに絞って較正した（feedback_calibrate_audits_to_shipped_content）
+    OUTDOOR = re.compile(r'\b(mountain|mountains|forest|village|lane|road|field|paddy|paddies|ridge|ridgeline|hillside|riverbank|valley|sky)\b', re.I)
+    SEASON  = re.compile(r'\b(spring|summer|autumn|fall|winter)\b|\b(january|february|march|april|may|june|july|august|september|october|november|december)\b', re.I)
+    NOSNOW  = re.compile(r'no snow', re.I)
+    DARKHOUR = re.compile(r'\b(dusk|nightfall|night|twilight|dark)\b', re.I)
+    winter = []
+    for nar, seg in segs:
+        for lab, b in labeled_blocks(seg):
+            if 'キャラ' in lab or 'Google Earth' in lab:
+                continue
+            if not (OUTDOOR.search(b) and DARKHOUR.search(b)):
+                continue
+            if not (SEASON.search(b) or NOSNOW.search(b)):
+                winter.append(asset_no(seg))
+                break
+    if winter:
+        warns.append(f'夕暮れ・夜の屋外に季節宣言も雪の打ち消しも無い {len(winter)}件（季節を名指しするか "No snow anywhere, no frost, no ice, no winter" を書く。暗い屋外は無指定だと冬になる）: {", ".join(dict.fromkeys(winter))}')
+
+    info.append(f'プロンプトlint(14-39): {len(segs)}セグメント走査')
 
 def main(master_path, daihon_path):
     m = open(master_path, encoding='utf-8').read()
