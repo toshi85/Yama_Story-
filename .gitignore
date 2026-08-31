@@ -22,3 +22,7 @@ System_Tools/analytics_token.json
 System_Tools/analytics_token.json
 System_Tools/analytics_token.json
 System_Tools/update_token.json
+
+# 書籍のページ画像（著作物）はローカル保管のみ。public リポジトリへ出さない
+Yama_Story-/Scripts/*/_sources/熊が人を襲うとき_米田一彦/
+Scripts/*/_sources/熊が人を襲うとき_米田一彦/

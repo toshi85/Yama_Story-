@@ -64,9 +64,14 @@ TERM_DB = {
 }
 
 # Whitelist exceptions not covered by Regex lookbehinds
+# 検査対象外にする行（読み上げられない＝YouTubeが見ない行）
+# 2026-08-30 追加の根拠: Analytics/Why_Shumarinai_Hit.md §5-1
+#   朱鞠内湖（実測で当たった1本）の「違反」12件は全て制作メモ・編集者指示・SE指定だった。
+#   例: 「衝撃音（ドン）と同時にカットイン」＝効果音の名前／「遺体描写は厳禁」＝禁止する指示
 WHITELIST_LINES = [
-    "【制作メモ】", 
-    "<!-- SAFETY_OVERRIDE -->",
+    "【制作メモ】",
+    "【SE】",            # 効果音の指定（「衝撃音」等が入る）
+    "<!-- SAFETY_OVERRIDE -->",  # 公文書の逐語引用など、言い換えると事実が変わる行に付ける
     "[BGM:",
     "[SEQ:"
 ]
@@ -123,6 +128,18 @@ def validate_file(file_path):
             stripped_line.startswith('<') or stripped_line.startswith('|') or
             stripped_line.startswith('```') or stripped_line.startswith('**') or
             stripped_line.startswith('- ') or  # Bullet points in production notes
+            # --- 2026-08-30 追加: 制作メモ・編集者指示は「読み上げない文」なので検査対象外 ---
+            # 根拠: 朱鞠内湖（実測で当たった1本）の違反12件が全てここだった。
+            #   「衝撃音（ドン）と同時にカットイン」＝効果音の名前
+            #   「遺体描写は厳禁」＝むしろ禁止している指示
+            #   「2023年度 全国219人／死亡6人」＝環境省統計の出典つき引用
+            # YouTubeが判定するのは完成した動画であって、編集者向けの指示文ではない。
+            # → Analytics/Why_Shumarinai_Hit.md §5-1
+            stripped_line.startswith('【') or      # 【SE】【制作メモ】等の指定行
+            stripped_line.startswith('→') or       # → 編集者指示: / → シーン:
+            stripped_line.startswith('>') or       # 引用ブロック（台本冒頭の方針メモ）
+            stripped_line.startswith('シーン:') or
+            '編集者指示' in stripped_line or
             in_production_section  # Inside production note sections
         )
         

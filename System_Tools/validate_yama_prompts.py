@@ -44,6 +44,20 @@ def load_file(filepath):
         return f.readlines()
 
 
+# ⚠️ 打ち消し表現を先に消してから禁止語を探すための共通処理（2026-08-30 追加）
+#    ASSET_CHECKLIST は "No blood, no wounds, no gore." と "no legible text" を**必ず書け**と定めている。
+#    素直に部分一致で探すと、正しく書いてあるプロンプトほど引っかかり、検査が鳴りっぱなしで誰も見なくなる。
+#    （フックの二足歩行検査・全身検査と同型のバグ。実測99件+38件がこれで、中身は全部正しい打ち消しだった）
+#    句読点を跨がない範囲（[^.,;]{0,24}）だけを打ち消しとみなすので、
+#    "a pool of blood on the road" のような本物の違反は消えずに残る。
+_NEG_PREFIX = r'(?:\b(?:no|not|never|without|nothing|free of|avoid)\b[^.,;]{0,24}?)'
+
+
+def strip_negated(text, word):
+    """「no <word>」「without any <word>」等の打ち消しだけを取り除く"""
+    return re.sub(_NEG_PREFIX + re.escape(word), ' ', text, flags=re.I)
+
+
 def check_narrator_prefix(lines):
     """全ナレーション行に ナレーター: があるか"""
     issues = []
@@ -52,8 +66,12 @@ def check_narrator_prefix(lines):
 
     non_narr_prefixes = [
         '#', '```', '---', '>', '|', '【', '→', 'シーン:', 'キャラプロンプト',
-        '背景プロンプト', 'Lovart', 'Google Flow', '[CHAR-', '[Generic',
-        '[New', 'ASSET-', '座標:', 'カメラ:', '<!-- ', 'ナレーター:'
+        '背景プロンプト', '静止画プロンプト', '動画プロンプト', '実写プロンプト', 'Google Earth', '編集者指示',
+        'Lovart', 'Google Flow', '[CHAR-', '[Generic',
+        '[New', 'ASSET-', '座標:', 'カメラ:', '<!-- ', 'ナレーター:',
+        # 箇条書きの補足行はナレーションではない（ナレ行検出の誤検出。2026-08-30）
+        # ※ 納品物にこの種の補足が残っていること自体は別問題（作業指示書には残さない）
+        '- ', '* ', '  - '
     ]
 
     for i, line in enumerate(lines):
@@ -102,10 +120,13 @@ def check_forbidden_words_in_prompts(lines):
             continue
 
         for word, category in forbidden:
-            if word.lower() in s.lower():
+            if word.lower() in strip_negated(s, word).lower():
                 issues.append((i + 1, category, word, s[:80]))
 
-        if text_pattern.search(s) and 'no text' not in s.lower() and 'texture' not in s.lower():
+        # 「文字を載せる余白」「読めない小さな本文」は出荷済みプロンプトの定型なので対象外に較正
+        s_text = strip_negated(s, 'text').replace('texture', '')
+        s_text = re.sub(r'(negative\s+)?space for (large |the )?text|body text', ' ', s_text, flags=re.I)
+        if text_pattern.search(s_text):
             issues.append((i + 1, 'テキスト混入', 'text', s[:80]))
 
     return issues
@@ -187,7 +208,7 @@ def check_safety_words(lines):
             continue
 
         for word in ng_words:
-            if word.lower() in s.lower():
+            if word.lower() in strip_negated(s, word).lower():
                 issues.append((i + 1, word, s[:80]))
 
     return issues
@@ -365,6 +386,14 @@ def check_char_fullbody(lines):
         re.I
     )
     fullbody_pattern = re.compile(r'\bFull body\b', re.I)
+    # ⚠️ 打ち消し（Do NOT crop ... close-up / NOT a bust shot）を先に消してから探す。
+    #    ASSET_CHECKLIST が「失敗した形は名指しで禁止する」と定めているので、素直に検索すると
+    #    "正しく書いてあるプロンプトほど"引っかかる（2026-08-29 実測。フックの二足歩行検査と同型のバグ）
+    negation = re.compile(
+        r'(?:do\s+)?(?:NOT|Not|not|NEVER|Never|never|NO|No|no|avoid|Avoid)\s+'
+        r'(?:\w+\s+){0,4}?'
+        r'(bust shot|upper body shot|close-up|half body|waist up|chest up|'
+        r'hands only|face close|head shot|paw close|side profile bust)', re.I)
 
     issues = []
     in_code = False
@@ -397,7 +426,7 @@ def check_char_fullbody(lines):
             continue
 
         # Check for prohibited partial composition terms
-        found = prohibited.findall(s)
+        found = prohibited.findall(negation.sub('', s))
         if found:
             issues.append((i + 1, current_asset, 'prohibited', found, s[:100]))
 
