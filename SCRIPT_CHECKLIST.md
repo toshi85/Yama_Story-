@@ -211,7 +211,26 @@ python3 validate_yama_structure.py <台本>   # ↓ 4層を一括検査（下記
 python3 validate_yama_narrative.py <台本>   # 説教/モラル語禁止（教訓・警鐘・私たち等）
 python3 validate_yama_facts.py     <台本>   # ★必須 出典なしの断定・答え先行・権威名詞・出典カバー率
 python3 audit_numeric_facts.py     <台本>   # ★必須 出典の付いていない数値を全件列挙
+python3 validate_yama_intro.py     <台本>   # ★必須 朱鞠内湖フォーミュラ（イントロ・問い2つ・谷・二山）
+python3 validate_yama_consistency.py <台本> # ★必須 台本↔プロット表↔素材シートの整合＋完全重複行
+python3 validate_yama_plot.py      <プロット表> # ★必須 執筆前。素材密度（字数÷素材数≤120）を含む
 ```
+
+> 🚨 **2026-09-01 新設の3つ（同日の事故を機械で止めるために作った）**
+> - `validate_yama_plot.py` の **Check 9 素材密度**（字数÷素材数 ≤ 120）
+>   … 素材1つで298字書いた §5 は章まるごと創作だった。**執筆前にここで止まる**
+> - `validate_yama_narrative.py` の **Gate 6 メタ語り禁止 / Gate 7 孤立した固有名詞**
+>   … 「ここで資料を開きます」「地図で見てみます」12件、繋がらない固有名詞（最上川）を検出
+> - `validate_yama_consistency.py`（新規）
+>   … 完全重複ナレ行／プロット表の章題・字数のズレ／素材シートの「使う章」が本文に無い／素材#が素材シートに無い
+>
+> 🧪 **しきい値を1つでも変えたら `python3 check_calibration.py` を必ず走らせる。**
+> 出荷済み7本が現在の検査を通るかを一括確認する。台帳 `calibration_baseline.json` に無い失敗が出たら、
+> **まず検査側を疑う**（2026-09-01 に `遺体`・イントロ字数・セットアップ字数の3つがこれで見つかった）
+>
+> 🧪 **`python3 selftest_guards.py`** — 検査そのものが効いているかの自己試験。
+> 2026-09-01 のミス9種を実際に注入して、止まるかを確かめる。**検査を触ったら必ず走らせる。**
+> 「検査を足した」と言うだけでは効いている証拠にならない。ここが 9/9 で初めて「機械で止まる」と言える
 
 `validate_yama_structure.py` の内部4層:
 - Layer0: 競合・サムネ分析の記載ブロック必須

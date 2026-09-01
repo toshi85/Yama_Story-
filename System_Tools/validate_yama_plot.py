@@ -17,6 +17,7 @@ Yamaプロット表バリデーター（執筆前ゲート）
   6. 80%以降に「実用」の章がある
   7. 二山構造（前半ピーク15〜45% / 後半ピーク50〜85%）
   8. 全章に素材#がある
+  9. 素材密度（字数÷素材数 ≤ 120）★創作の予防
 
 使い方:
   python3 Yama_Story/System_Tools/validate_yama_plot.py <プロット表>
@@ -150,6 +151,26 @@ def main(path):
     nosrc = [r["no"] for r in rows if not re.search(r"\d", r["src"])]
     if nosrc:
         fails.append(f"素材#が空の章: {', '.join('§'+str(n) for n in nosrc)}（素材シートに無い章は作れない）")
+
+    # 9. 素材密度（2026-09-01 追加）— 1素材あたりの字数
+    # 戸沢村の実測: 平均96字/素材。創作で埋めていた5章が全て120字/素材を超えていた。
+    #   §5=298（章まるごと創作）§11=140 §7=131 §22=130（雨の予報は出典なし）§12=120
+    #   逆に出典が厚い章は §18=42 §3=45 §13=57 で、いずれも創作ゼロだった。
+    # 素材1つで300字書けば、残りは埋め草になる。**執筆前にここで止める。**
+    DENSITY_HI = 120
+    dense = []
+    for r in rows:
+        cnt = len([x for x in r["src"].split(",") if x.strip() and re.search(r"\d", x)])
+        if cnt:
+            d = r["chars"] / cnt
+            if d > DENSITY_HI:
+                dense.append((r["no"], r["title"][:18], r["chars"], cnt, d))
+    if dense:
+        for no, ti, ch, cnt, d in dense:
+            fails.append(
+                f"素材密度 §{no}「{ti}」= {d:.0f}字/素材（{ch}字 ÷ 素材{cnt}件・上限{DENSITY_HI}）"
+                f" → 素材を足すか章を短くする。この比率を超えた章は創作で埋まる"
+            )
 
     # 種別の語彙
     bad = {r["kind"] for r in rows} - KINDS
