@@ -35,6 +35,26 @@ def validate_narrative_tone(file_path):
         "以下に示す",
     ]
 
+    # Gate 6: メタ語り禁止（YCP-020 ③「メタ語り全削除」）2026-09-01 追加
+    # ナレーターが「これから何をするか」を段取りとして説明する文は全削除し、直接内容に入る。
+    # 実例（戸沢村・2026-09-01 に12件検出）:
+    #   「ここで一度、山形県が残している資料を開きます。」「見つかった場所を、地図で見てみます。」
+    #   「ここで、まったく別の形の事故を一つ挟みます。」「ここからは、持ち帰ってほしい数字です。」
+    META_NARRATION = [
+        (r'^(ここで|ここから|ここからは)[、。]', "「ここで」「ここから」で始まる段取り説明"),
+        (r'(見てみます|見ていきます|見ておきます|開きます|並べます|挟みます|整理します)。$', "これから何をするかの予告"),
+        (r'(紹介します|説明します|お伝えします|触れておきます|押さえておきます)。$', "これから何を語るかの予告"),
+        (r'^(最後に|次に|まず最初に)[、].*(します|しましょう)。$', "セクションの段取り説明"),
+        (r'(詳しく見て|順に見て|後ほど|のちほど|次のセクション|この章では|本編では)', "ナレーター視点のメタ発言"),
+        (r'^これは、?あとで', "あとで意味を持つ、という予告"),
+    ]
+
+    # Gate 7: 孤立した固有名詞の警告（2026-09-01 追加）
+    # 台本に1回しか出てこない地名・組織名は「出しただけで使っていない」候補。
+    # 実例: 戸沢村§2の「最上川」は以降一度も出てこず、村紹介で終わっていた。
+    # ※ 比較事例・列挙（笹神村・岩泉町など）は正当なので WARNING 止まりにする。
+    PROPER_NOUN = re.compile(r'[一-龥ヶヵ]{2,6}(?:川|山|岳|湖|沼|峠|市|町|村|区|大学|学院|病院|署|センター|新聞|研究所|林業|役場)')
+
     # Gate 4: Literary/jargon expressions to flag as warnings
     LITERARY_PHRASES = [
         ("机上の空論", "→ 「通用しない」等に言い換え"),
@@ -106,6 +126,20 @@ def validate_narrative_tone(file_path):
                     f"   → 音声ナレーションでは不適切。削除または言い換え"
                 )
 
+        # Gate 6: メタ語り禁止（YCP-020）
+        # ⚠️ 証言の導入（「〜さんは、こう振り返ります。」等）は除外する。
+        #    2026-09-01 の較正で、大千軒岳の4件が全て証言導入だったため。
+        is_quote_intro = re.search(r'(こう|このように|次のように)(語|話|振り返|説明|証言|記し|書い)', content) \
+                         or re.search(r'(さん|氏|教授|さんたち)(は|も)、?こう', content)
+        for pat, why in (META_NARRATION if not is_quote_intro else []):
+            if re.search(pat, content):
+                errors.append(
+                    f"[メタ語り禁止 YCP-020] Line {i+1}: {why}\n"
+                    f"   > \"{content[:60]}\"\n"
+                    f"   → 削除して直接内容に入る。出典を示したいなら文の後ろへ回す"
+                )
+                break
+
         # Gate 4: Literary/jargon (warnings)
         for phrase, suggestion in LITERARY_PHRASES:
             if phrase in content:
@@ -113,6 +147,23 @@ def validate_narrative_tone(file_path):
                     f"[Literary/Jargon] Line {i+1}: '{phrase}' {suggestion}\n"
                     f"   > \"{content[:60]}...\""
                 )
+
+    # Gate 7: 1回しか出てこない固有名詞を列挙（WARNING）
+    all_body = "\n".join(c for _, c in narrator_lines)
+    seen = {}
+    for _, c in narrator_lines:
+        for m in PROPER_NOUN.findall(c) or []:
+            pass
+    for ln, c in narrator_lines:
+        for m in set(PROPER_NOUN.findall(c)):
+            seen.setdefault(m, []).append(ln)
+    for word, hits in sorted(seen.items()):
+        if all_body.count(word) == 1:
+            line_no = hits[0]
+            warnings.append(
+                f"[孤立した固有名詞] Line {line_no}: '{word}' は台本に1回しか出てきません\n"
+                f"   → 後半で使わないなら削る。比較事例・列挙なら問題なし（判断は人間）"
+            )
 
     # Gate 5: Math consistency check (YCP-025 related)
     # Detect lines with numbers and frequency expressions, check if math adds up
@@ -189,7 +240,7 @@ def validate_narrative_tone(file_path):
 
     if not errors and not warnings:
         print("[PASS] All narrative checks passed.")
-        print("  ✅ Show Don't Tell: OK")
+        print("  ✅ Show Don't Tell: OK\n  ✅ メタ語り禁止(YCP-020): OK\n  ✅ 孤立した固有名詞: 警告のみ（下記参照）")
         print("  ✅ Dash prohibition: OK")
         print("  ✅ Written language: OK")
         print("  ✅ Literary/jargon: OK")
