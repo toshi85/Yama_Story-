@@ -11,7 +11,6 @@ BANNED_WORDS = {
     r"(?<!必)(?<!不)死(?!守|角|球|力|闘|去)": "NG: '死' (Direct Death/Corpse reference). Use '悲劇', '帰らぬ人', '命を落とす'. (Exception: '必死', '不死' included in regex)",
     r"死亡": "NG: '死亡'. Use '帰らぬ人', '命が失われた'.",
     r"死体": "NG: '死体'. Use '遺体', 'なきがら'.",
-    r"遺体": "NG: '遺体' (Avoid in Title/Thumb). Use '発見', '姿'. Script OK if respectful.",
     r"全滅": "NG: '全滅'. Use '誰ひとり戻らない', '壊滅'.",
     r"即死": "NG: '即死'. Use 'その瞬間に意識を失う'.",
     
@@ -37,6 +36,18 @@ BANNED_WORDS = {
     r"あいつ": "NG: 'あいつ'. Use Name.",
     r"こいつ": "NG: 'こいつ'. Use Name.",
     r"やつ": "NG: 'やつ'. Use Name.",
+}
+
+# --- TITLE / THUMBNAIL ONLY (2026-09-01 新設) ---
+# 本文では許容し、タイトル・サムネイルでのみ止める語。
+# 根拠: 出荷済み12本が本文で '遺体' を使い、すべて公開・収益化されている
+#       （十和利山30件・三毛別9件・福岡大7件・朱鞠内湖4件。朱鞠内湖は平均視聴率34.1%の実測トップ）。
+#       旧実装は '遺体' を BANNED_WORDS に置いていたが、本文だけを止めていた。
+#       '#' で始まる行はメタデータとして読み飛ばすため、肝心のタイトルは一度も検査されていなかった。
+#       さらに辞書内で矛盾していた（'死体' の指示が「'遺体' を使え」）。
+# → feedback_calibrate_audits_to_shipped_content.md（出荷済みの内容が通る値に較正する）
+TITLE_THUMB_BANNED = {
+    r"遺体": "NG(タイトル/サムネのみ): '遺体'. Use '発見', '姿'. 本文での使用は可.",
 }
 
 # --- SENSATIONALISM CHECK (Warning Level) ---
@@ -96,6 +107,20 @@ def validate_file(file_path):
         return False
 
     errors = []
+
+    # --- Title / Thumbnail scoped check (2026-09-01) ---
+    # H1（動画タイトル）と、見出しに「サムネ」を含む節だけを対象にする
+    in_thumb = False
+    for i, line in enumerate(lines):
+        s_line = line.strip()
+        if s_line.startswith('#'):
+            in_thumb = ('サムネ' in s_line) or ('thumbnail' in s_line.lower())
+        is_title = s_line.startswith('# ') and not s_line.startswith('##')
+        if not (is_title or in_thumb):
+            continue
+        for pattern, reason in TITLE_THUMB_BANNED.items():
+            if re.search(pattern, s_line):
+                errors.append(f"Line {i+1}: {reason} \n   -> Context: \"{s_line}\"")
 
     # Repetition Check Variables
     last_ending = ""
