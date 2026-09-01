@@ -111,6 +111,44 @@ def main():
         "| 1 | フック | KI | フック | 298 | 2 |\n")
     ok.append(check("⑦ 素材1つで298字（創作の温床）", "validate_yama_plot.py", p, "素材密度"))
 
+    # ⑧ 証言が「」の外（ナレーターが一人称で話す）
+    p = os.path.join(tmp, "colloq.md")
+    open(p, "w").write("ナレーター: 俺、持ったけど。甥っ子が背負って。\nナレーター: 嫌だったよな。\n")
+    ok.append(check("⑧ 話し言葉が括弧の外（俺／よな）", "validate_yama_narrative.py", p, "話し言葉が括弧の外"))
+
+    # ⑧b 正しく「」で囲めば通る
+    p = os.path.join(tmp, "quoted.md")
+    open(p, "w").write("ナレーター: 佐藤さんは、取材にこう話しています。\nナレーター: 「俺、持ったけど。嫌だったよな」\n")
+    code, out = run("validate_yama_narrative.py", p)
+    hit = "❌ [話し言葉が括弧の外" not in out and code == 0
+    print(f"  {'✅' if hit else '❌'} {'⑧b 「」で囲めば通る':<42} validate_yama_narrative.py")
+    ok.append(hit)
+
+    # ⑨ 帰属だけの単独行を後ろに置く
+    p = os.path.join(tmp, "attr.md")
+    open(p, "w").write("ナレーター: 満腹の状態でありながら、人を食べていた。\nナレーター: 米田さんは、そう記しています。\n")
+    ok.append(check("⑨ 後置の「そう記しています。」単独行", "validate_yama_narrative.py", p, "帰属だけの単独行"))
+
+    # ⑩ リファレンス未読で Master.md を書こうとするとブロックされるか
+    proj = os.path.abspath(os.path.join(HERE, "..", ".."))
+    hook = os.path.join(proj, ".claude", "hooks", "guard-yama-script-reference.sh")
+    if os.path.exists(hook):
+        st = os.path.join(proj, ".claude", ".state", "yama_reads_selftest.log")
+        if os.path.exists(st): os.remove(st)
+        env = {**os.environ, "CLAUDE_PROJECT_DIR": proj}
+        import json as _json
+        cases = [
+            ({"tool_name": "Write", "tool_input": {"file_path": "/x/Yama_Story/Scripts/e/Master.md"}}, 2, "Write"),
+            ({"tool_name": "Bash", "tool_input": {"command": "python3 -c \"open('/x/Master.md','w').write(s)\""}}, 2, "Bash経由の書き込み"),
+            ({"tool_name": "Bash", "tool_input": {"command": "grep -n x /x/Master.md"}}, 0, "読み取りは素通り"),
+        ]
+        for payload, want, label in cases:
+            payload["session_id"] = "selftest"
+            r = subprocess.run(["bash", hook], input=_json.dumps(payload), capture_output=True, text=True, env=env)
+            hit = r.returncode == want
+            print(f"  {'✅' if hit else '❌'} {'⑩ 未読ガード: ' + label:<42} guard-yama-script-reference.sh")
+            ok.append(hit)
+
     shutil.rmtree(tmp)
     print()
     n, t = sum(ok), len(ok)

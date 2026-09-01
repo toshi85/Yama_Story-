@@ -148,6 +148,51 @@ def validate_narrative_tone(file_path):
                     f"   > \"{content[:60]}...\""
                 )
 
+    # Gate 8: 引用の作法（2026-09-01 追加）
+    # 出荷済みの型（羅臼岳・大千軒岳）: 導入文で「誰が・どこで」を示し、次の行に「引用」を置く。
+    #   例) 「西山修次さんは、HTB北海道ニュースの取材にこう語っています。」→「とんでもないクマだと〜」
+    #       「知床財団の調査速報に」→「人を避けない〜」→「と記録されています。」
+    # 2026-09-01 の事故: 佐藤さんの証言を「」なしで9行にばらし、ナレーターが「俺」と言う形になっていた。
+    INTRO_PAT = re.compile(r'(こう(語|話|振り返|述べ|記|書|発表|コメント|説明|証言)|によると|によれば|"?と(記録|記載)されて|の(取材|調査|報告)に|こう(記して|書いて))')
+    COLLOQUIAL = re.compile(r'(^|[^」])(俺|僕|わたし)[、。はがもの]|(よな|だよ|ですよ|ないね|かな|だろうな)。\s*$')
+    prev_two = []
+    for idx, (ln, content) in enumerate(narrator_lines):
+        # 8a. 引用行に、直前2行以内の導入があるか
+        if content.startswith("「") and content.rstrip().endswith("」"):
+            ctx = [c for _, c in narrator_lines[max(0, idx - 2):idx]]
+            prev_quote = bool(ctx) and ctx[-1].startswith("「")
+            if not prev_quote and not any(INTRO_PAT.search(c) for c in ctx):
+                warnings.append(
+                    f"[引用に導入がない] Line {ln}: 誰の・どこでの発言か直前に示されていません\n"
+                    f"   > \"{content[:44]}\"\n"
+                    f"   → 「◯◯さんは、△△の取材にこう話しています。」を直前に置く（羅臼岳・大千軒岳の型）"
+                )
+        # 8c. 帰属だけの単独行を後ろに置かない（2026-09-01）
+        #  出荷済み3本（羅臼岳・朱鞠内湖・大千軒岳）に「そう書いています。」単独行は0件。
+        #  唯一の後置は羅臼岳の「と記録されています。」で、直前が必ず「」引用だった。
+        # 「こう〜います。」は前置（これから引用を導く）＝正しい。「そう〜います。」だけが後置。
+        # 後置と、「と語っています。」型の閉じは、直前が「」引用でなければ誤り。
+        is_trailing = bool(re.fullmatch(
+            r'([^、。]{0,14}(さん|氏|教授|さんたち))?(は|も)?[、]?そう(書いて|記して|話して|語って|述べて|振り返って|コメントして)います。', content)
+        ) or bool(re.fullmatch(r'と[、]?(記録|記載)されています。|と[、]?(語って|話して|述べて)います。', content))
+        if is_trailing:
+            prev = narrator_lines[idx - 1][1] if idx else ""
+            if not prev.startswith("「"):
+                errors.append(
+                    f"[帰属だけの単独行] Line {ln}: 引用でない地の文に、後置の帰属行を足しています\n"
+                    f"   > \"{content}\"\n"
+                    f"   → 導入を前に置く（「米田さんは、こう書いています。」→ 本文）か、1行にまとめる。"
+                    f"後置の単独行は出荷済み3本で0件"
+                )
+        # 8b. 話し言葉が「」の外に出ていないか（引用行そのものは対象外）
+        is_quoted = content.startswith("「") and content.rstrip().endswith("」")
+        if not is_quoted and COLLOQUIAL.search(content):
+            errors.append(
+                f"[話し言葉が括弧の外] Line {ln}: 証言は「」で囲む\n"
+                f"   > \"{content[:44]}\"\n"
+                f"   → ナレーターが一人称で話す形になっています。引用なら「」で囲み、導入文を付ける"
+            )
+
     # Gate 7: 1回しか出てこない固有名詞を列挙（WARNING）
     all_body = "\n".join(c for _, c in narrator_lines)
     seen = {}
@@ -240,7 +285,7 @@ def validate_narrative_tone(file_path):
 
     if not errors and not warnings:
         print("[PASS] All narrative checks passed.")
-        print("  ✅ Show Don't Tell: OK\n  ✅ メタ語り禁止(YCP-020): OK\n  ✅ 孤立した固有名詞: 警告のみ（下記参照）")
+        print("  ✅ Show Don't Tell: OK\n  ✅ メタ語り禁止(YCP-020): OK\n  ✅ 引用の作法(Gate8): OK\n  ✅ 孤立した固有名詞: 警告のみ（下記参照）")
         print("  ✅ Dash prohibition: OK")
         print("  ✅ Written language: OK")
         print("  ✅ Literary/jargon: OK")
