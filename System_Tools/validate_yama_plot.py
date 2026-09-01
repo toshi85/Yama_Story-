@@ -11,7 +11,7 @@ Yamaプロット表バリデーター（執筆前ゲート）
 検査:
   1. 合計字数 8,400〜11,300字
   2. 起承転結 5-15 : 70-90 : 5-15
-  3. イントロ章 200〜270字
+  3. イントロ章 120〜380字
   4. 説明の連続（説明/データが2章連続しない・1章800字以内）
   5. 谷の帯（累計50〜55%に説明/データを置かない）
   6. 80%以降に「実用」の章がある
@@ -22,6 +22,9 @@ Yamaプロット表バリデーター（執筆前ゲート）
   python3 Yama_Story/System_Tools/validate_yama_plot.py <プロット表>
 """
 
+# 2026-09-01 較正: イントロ字数の基準を出荷済み7本（128-360字・中央値180）に合わせた。
+# 旧値200-270は羅臼岳(128)・大千軒岳(151)・風不死岳(162)・戸沢村(180)を落としていた。
+# → feedback_calibrate_audits_to_shipped_content.md
 import re
 import sys
 from pathlib import Path
@@ -29,7 +32,7 @@ from pathlib import Path
 CPS = 323                       # 字/分
 TOTAL_LO, TOTAL_HI = 8400, 11300
 PART_RANGE = {"KI": (5, 15), "SHO": (70, 90), "TEN-KETSU": (5, 15)}
-INTRO_LO, INTRO_HI = 200, 270
+INTRO_LO, INTRO_HI = 120, 380  # 2026-09-01 較正: 出荷済み7本は128-360字・中央値180。旧値200-270は羅臼岳(128)大千軒岳(151)風不死岳(162)戸沢村(180)を落としていた → feedback_calibrate_audits_to_shipped_content.md
 EXPLAIN = {"説明", "データ"}
 EXPLAIN_MAX = 800
 VALLEY = (50.0, 55.0)           # 谷が出やすい帯
