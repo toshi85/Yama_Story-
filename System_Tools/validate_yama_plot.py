@@ -36,7 +36,7 @@ from pathlib import Path
 
 CPS = 323                       # 字/分
 TOTAL_LO, TOTAL_HI = 8400, 11300
-PART_RANGE = {"KI": (5, 15), "SHO": (70, 90), "TEN-KETSU": (5, 15)}
+PART_RANGE = {"KI": (0, 10), "SHO": (70, 90), "TEN-KETSU": (5, 15)}
 # 起は字数で判定する（比率は上限のみ）。フック120-380 ＋ セットアップ150-500 の合成。
 # 出荷済み7本の実測は 328〜929字。→ validate_yama_intro.py / validate_yama_structure.py と同値
 KI_CHARS = (270, 950)

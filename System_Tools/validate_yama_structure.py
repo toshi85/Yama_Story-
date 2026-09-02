@@ -125,8 +125,9 @@ def validate_structure(file_path):
         errors.append(f"[Structure Violation]: 'Ki' is {len_ki} chars. "
                       f"Must be between {KI_CHARS[0]}-{KI_CHARS[1]} chars "
                       f"(hook 120-380 + setup 150-500).")
-    if ratio_ki > 15:
-        errors.append(f"[Structure Violation]: 'Ki' is {ratio_ki:.1f}%. Must be 15% or less.")
+    # 2026-09-02 ユーザー指示:「起は短ければ短いほどいい。1割未満に抑える」
+    if ratio_ki >= 10:
+        errors.append(f"[Structure Violation]: 'Ki' is {ratio_ki:.1f}%. Must be under 10%.")
 
     # SHO Logic (70-90%)
     if not (70 <= ratio_sho <= 90):
