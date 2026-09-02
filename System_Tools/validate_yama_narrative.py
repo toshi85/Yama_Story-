@@ -293,6 +293,45 @@ def validate_narrative_tone(file_path):
     elif not errors:
         print("[PASS with warnings] No errors, but warnings should be reviewed.")
 
+    # --- 証言の途切れ（2026-09-02 追加・WARNのみ）------------------------
+    #   出典: 新井一樹『物語のみがき方』。ドラマ＝人間を描くこと。
+    #   出来事の羅列が続くと、事実は積まれても人が消える。
+    #
+    #   🚨 これは FAIL にしない。出荷済み7本の実測では最長が風不死岳の3,648字(40.8%)で、
+    #      その風不死岳は維持率38.4%と全27本中トップクラスだった。
+    #      「人が出てこない区間が長い＝離脱する」は本の理論であって、Yama の実績では
+    #      裏付けが取れていない。数値を出すだけにして、判断は人間に残す。
+    #      参考値(2026-09-02): 最小949字 / 中央1,266字 / 最大3,648字
+    import re as _re2
+    _narr, _ch, _chs = [], 0, {}
+    for _l in open(file_path, encoding="utf-8"):
+        _m = _re2.match(r"^## (\d+)\.", _l)
+        if _m:
+            _ch = int(_m.group(1))
+        elif _l.startswith("ナレーター:"):
+            _t = _re2.sub(r"\s*<!--.*?-->", "", _l).split(":", 1)[1].strip()
+            _narr.append((_ch, _t))
+    if _narr:
+        _best, _cur, _start, _bstart, _bend = 0, 0, None, None, None
+        for _c, _t in _narr:
+            if "「" in _t:
+                _cur, _start = 0, None
+            else:
+                if _start is None:
+                    _start = _c
+                _cur += len(_t)
+                if _cur > _best:
+                    _best, _bstart, _bend = _cur, _start, _c
+        _total = sum(len(t) for _, t in _narr)
+        _pct = _best / _total * 100 if _total else 0
+        print()
+        print("-" * 60)
+        print(f"[証言の途切れ] 最長 {_best:,}字（全体の {_pct:.1f}%）§{_bstart}〜§{_bend}")
+        print(f"   出荷済み7本の実測: 最小949字 / 中央1,266字 / 最大3,648字（風不死岳・維持率38.4%）")
+        if _best > 1266:
+            print("   → 中央値より長い。事実は積まれているが人が出てこない区間がある可能性。")
+            print("      ただし最長の風不死岳が高維持率なので、FAIL にはしない（判断は人間）")
+
     print()
     print("=" * 60)
 

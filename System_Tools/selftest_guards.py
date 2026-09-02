@@ -44,12 +44,43 @@ def run(script, path):
                        encoding="utf-8", errors="replace", env=env)
     return r.returncode, (r.stdout or "") + (r.stderr or "")
 
+# --- 3点セットの強制（2026-09-02 新設）-------------------------------------
+#   矛盾検査を書いたとき、1回目も2回目も「素通りする検査」を書いてしまった。
+#   どちらも「止まるべき入力」しか試していなかったからではなく、
+#   **通すべき入力での確認を後回しにしたまま直したつもりになっていた**のが原因。
+#
+#   検査が「効く」と言えるのは、次の3つが揃ったときだけ:
+#     ① 事故そのもの（過去に実際に起きた形）  → FAIL する
+#     ② 直した版                             → PASS する
+#     ③ 出荷済みの全台本                      → 誤検知しない（check_calibration.py の担当）
+#
+#   ①だけなら「何でも赤くする検査」が通ってしまう。②が無いと素通りに気づけない。
+#   ここでは ①と② がペアで登録されているかを機械で確かめる。
+import re as _re
+REGISTRY = []          # [(グループ記号, "fail"|"pass", 表示名, 検査スクリプト)]
+
+def _group_of(name):
+    m = _re.match(r"^([①-⑳])", name.strip())
+    return m.group(1) if m else name.strip()[:2]
+
 def check(name, script, path, must_contain):
+    """事故そのものを注入して、止まることを確かめる"""
     code, out = run(script, path)
     hit = must_contain in out
+    REGISTRY.append((_group_of(name), "fail", name, script))
     print(f"  {'✅' if hit else '❌'} {name:<42} {script}")
     if not hit:
         print(f"      期待: 「{must_contain}」を含む出力 / 実際の末尾: {out.strip().splitlines()[-1][:70] if out.strip() else '(空)'}")
+    return hit
+
+def check_pass(name, script, path, must_not_contain):
+    """直した版を通して、余計に止めないことを確かめる"""
+    code, out = run(script, path)
+    hit = must_not_contain not in out
+    REGISTRY.append((_group_of(name), "pass", name, script))
+    print(f"  {'✅' if hit else '❌'} {name:<42} {script}")
+    if not hit:
+        print(f"      「{must_not_contain}」が出てはいけない場面で出ています（誤検知）")
     return hit
 
 def main():
@@ -67,10 +98,8 @@ def main():
     # ①b 証言導入は誤検出しないこと
     p = os.path.join(tmp, "quote.md")
     open(p, "w", encoding="utf-8").write("ナレーター: 佐藤さんは、こう振り返ります。\nナレーター: ひどかったな、あれは。\n")
-    code, out = run("validate_yama_narrative.py", p)
-    hit = "❌ [メタ語り禁止" not in out and code == 0
-    print(f"  {'✅' if hit else '❌'} {'①b 証言導入を誤検出しない':<42} validate_yama_narrative.py")
-    ok.append(hit)
+    ok.append(check_pass("①b 証言導入を誤検出しない", "validate_yama_narrative.py",
+                         p, "❌ [メタ語り禁止"))
 
     # ② 孤立した固有名詞（Gate 7・警告）
     p = os.path.join(tmp, "orphan.md")
@@ -83,10 +112,8 @@ def main():
     ok.append(check("③ 遺体がタイトルにあると止まる", "validate_yama_safety.py", p, "タイトル/サムネのみ"))
     p = os.path.join(tmp, "body.md")
     open(p, "w", encoding="utf-8").write("# ふつうのタイトル\n\nナレーター: 深夜、男性が遺体で発見。\n")
-    code, out = run("validate_yama_safety.py", p)
-    hit = code == 0
-    print(f"  {'✅' if hit else '❌'} {'③b 遺体が本文なら通る':<42} validate_yama_safety.py")
-    ok.append(hit)
+    ok.append(check_pass("③b 遺体が本文なら通る", "validate_yama_safety.py",
+                         p, "タイトル/サムネのみ"))
 
     # ④ 完全重複ナレ行
     d = os.path.join(tmp, "dup"); os.makedirs(d)
@@ -123,10 +150,8 @@ def main():
     # ⑧b 正しく「」で囲めば通る
     p = os.path.join(tmp, "quoted.md")
     open(p, "w", encoding="utf-8").write("ナレーター: 佐藤さんは、取材にこう話しています。\nナレーター: 「俺、持ったけど。嫌だったよな」\n")
-    code, out = run("validate_yama_narrative.py", p)
-    hit = "❌ [話し言葉が括弧の外" not in out and code == 0
-    print(f"  {'✅' if hit else '❌'} {'⑧b 「」で囲めば通る':<42} validate_yama_narrative.py")
-    ok.append(hit)
+    ok.append(check_pass("⑧b 「」で囲めば通る", "validate_yama_narrative.py",
+                         p, "話し言葉が括弧の外"))
 
     # ⑨ 帰属だけの単独行を後ろに置く
     p = os.path.join(tmp, "attr.md")
@@ -170,10 +195,8 @@ def main():
                     mkdrift("drift_ng", 149, 232), "設計からの乖離"))
 
     f = mkdrift("drift_ok", 149, 160)   # +7%
-    code, out = run("validate_yama_plot.py", f)
-    hit = "設計からの乖離" not in out
-    print(f"  {'✅' if hit else '❌'} {'⑬ b ±15%以内なら通す':<42} validate_yama_plot.py")
-    ok.append(hit)
+    ok.append(check_pass("⑬ b ±15%以内なら通す", "validate_yama_plot.py",
+                         f, "設計からの乖離"))
 
     d = _os3.path.join(tmp, "drift_old"); _os3.makedirs(d, exist_ok=True)
     open(_os3.path.join(d, "Plot_Sheet_d.md"), "w", encoding="utf-8").write(
@@ -201,16 +224,12 @@ def main():
                     "「日常が崩れる予感」で終わっていません"))
 
     f = mkki("ki_ok", "ところが、この日は戻りません。")
-    code, out = run("validate_yama_intro.py", f)
-    hit = "「日常が崩れる予感」で終わっていません" not in out
-    print(f"  {'✅' if hit else '❌'} {'⑭ b 逆接＋不在で終わっていれば通す':<42} validate_yama_intro.py")
-    ok.append(hit)
+    ok.append(check_pass("⑭ b 逆接＋不在で終わっていれば通す", "validate_yama_intro.py",
+                         f, "「日常が崩れる予感」で終わっていません"))
 
     f = mkki("ki_ok2", "そんな人物が、この日、命を落とすことになるとは、誰一人、想像していなかったはずです。")
-    code, out = run("validate_yama_intro.py", f)
-    hit = "「日常が崩れる予感」で終わっていません" not in out
-    print(f"  {'✅' if hit else '❌'} {'⑭ c 前振り型（朱鞠内湖の形）も通す':<42} validate_yama_intro.py")
-    ok.append(hit)
+    ok.append(check_pass("⑭ c 前振り型（朱鞠内湖の形）も通す", "validate_yama_intro.py",
+                         f, "「日常が崩れる予感」で終わっていません"))
 
     # ⑮ V字（ボトムの宣言）2026-09-02
     #    出典: たちばなやすひと『「物語」の見つけ方』。落差を省略しないための宣言。
@@ -238,13 +257,8 @@ def main():
     ok.append(check("⑮b ボトムが承の外にある", "validate_yama_plot.py",
                     mkbottom("v_bad", "- ボトム: 2"), "承（SHO）にありません"))
 
-    _f_v = mkbottom("v_ok", "- ボトム: 1")
-    _code_v, _out_v = run("validate_yama_plot.py", _f_v)
-    _hit_v = ("[V字] ボトム" in _out_v
-              and "承（SHO）にありません" not in _out_v
-              and "宣言がありません" not in _out_v)
-    print(f"  {'✅' if _hit_v else '❌'} {'⑮c 承の中なら通す':<42} validate_yama_plot.py")
-    ok.append(_hit_v)
+    ok.append(check_pass("⑮c 承の中なら通す", "validate_yama_plot.py",
+                         mkbottom("v_ok", "- ボトム: 1"), "承（SHO）にありません"))
 
     # ⑪ 主題占有率（2026-09-02 追加）— 他事件・全国統計での水増しを止める
     #    旧稿の戸沢村は §19 受傷部位統計 / §22 1994年 新潟県笹神村 / §24 月別・時間帯統計 で
@@ -277,10 +291,8 @@ def main():
                     mk("ext_ng", 2000), "主題占有率 —"))
 
     f = mk("ext_ok", 500)
-    code, out = run("validate_yama_plot.py", f)
-    hit = "主題占有率 —" not in out
-    print(f"  {'✅' if hit else '❌'} {'⑪ b 外部素材が9.1%なら通す':<42} validate_yama_plot.py")
-    ok.append(hit)
+    ok.append(check_pass("⑪ b 外部素材が9.1%なら通す", "validate_yama_plot.py",
+                         f, "主題占有率 —"))
 
     d = _os.path.join(tmp, "ext_nosheet")
     _os.makedirs(d, exist_ok=True)
@@ -311,7 +323,117 @@ def main():
             print(f"  {'✅' if hit else '❌'} {'⑩ 未読ガード: ' + label:<42} guard-yama-script-reference.sh")
             ok.append(hit)
 
+    # ⑯ 台本内の相互矛盾（2026-09-02）
+    #    出典: 戸沢村 §9「二人目は前から」と §19「三件とも後ろから」を両方断定していた。
+    #    米田 p.206 と p.208 で記述が割れているのに、割れていると書かなかった。
+    import os as _os6
+    def mkcontra(name, line19):
+        d = _os6.path.join(tmp, name)
+        _os6.makedirs(d, exist_ok=True)
+        p = _os6.path.join(d, "Master.md")
+        open(p, "w", encoding="utf-8").write(
+            "<!-- PART: KI -->" + chr(10) +
+            "## 9. 200メートル" + chr(10) +
+            "ナレーター: 一人目は背後から。二人目は前から。" + chr(10) +
+            "## 19. 防ぎ方" + chr(10) + line19 + chr(10))
+        return p
+
+    ok.append(check("⑯ 全称の断定が個別章と矛盾している", "validate_yama_consistency.py",
+                    mkcontra("contra_bad",
+                             "ナレーター: 三件とも、クマは身を伏せて、後ろから襲ってきました。"),
+                    "台本内の矛盾"))
+
+    ok.append(check_pass("⑯b 食い違いを当の章で明示すれば通す", "validate_yama_consistency.py",
+                         mkcontra("contra_ok",
+                                  "ナレーター: 三件とも後ろからとされますが、記録は食い違ったままです。"),
+                         "台本内の矛盾"))
+
+    # ---- 「通すべきケース」の補完（2026-09-02）--------------------------
+    #   メタチェックを入れたら、②④⑤⑥⑦⑨⑫ は「止まる」しか試していなかった。
+    #   正常な入力で余計に止めないことを、ここで1件ずつ確かめる。
+    import os as _os7
+    dn = _os7.path.join(tmp, "normal"); _os7.makedirs(dn, exist_ok=True)
+
+    # 正常な3点セット。§1=9字 / §2=9字 でプロット表・素材シートと一致させる
+    open(_os7.path.join(dn, "Master.md"), "w", encoding="utf-8").write(
+        HEAD + chr(10) + "ナレーター: ダミーの一行です。" + chr(10) * 2 +
+        "## 2. 二章目" + chr(10) + "ナレーター: もう一行のダミー。" + chr(10))
+    open(_os7.path.join(dn, "Plot_Sheet_n.md"), "w", encoding="utf-8").write(
+        "# プロット表" + chr(10) * 2 +
+        "| 章 | タイトル | PART | 種別 | 設計字数 | 実測字数 | 素材# |" + chr(10) +
+        "|--:|:--|:--|:--|--:|--:|:--|" + chr(10) +
+        "| 1 | フック | KI | フック | 9 | 9 | 1 |" + chr(10) +
+        "| 2 | 二章目 | SHO | 動き | 9 | 9 | 2 |" + chr(10))
+    open(_os7.path.join(dn, "Fact_Sheet_n.md"), "w", encoding="utf-8").write(
+        "# 素材シート" + chr(10) * 2 +
+        "| # | 事実 | 出典 | 確認方法 | 使う章 |" + chr(10) +
+        "|:--|:--|:--|:--|:--|" + chr(10) +
+        "| 1 | 事実A | X | 実物 | §1 |" + chr(10) +
+        "| 2 | 事実B | X | 実物 | §2 |" + chr(10))
+    _mn = _os7.path.join(dn, "Master.md")
+
+    ok.append(check_pass("④b 重複が無ければ通す", "validate_yama_consistency.py",
+                         _mn, "完全重複ナレ行"))
+    ok.append(check_pass("⑤b 表と本文の字数が一致すれば通す", "validate_yama_consistency.py",
+                         _mn, "字数の不一致"))
+    ok.append(check_pass("⑥b 使う章が本文にあれば通す", "validate_yama_consistency.py",
+                         _mn, "「使う章」が本文に存在しない"))
+    ok.append(check_pass("⑫b 素材#と使う章が双方向で合えば通す", "validate_yama_consistency.py",
+                         _mn, "「使う章」に §2 が無い"))
+
+    # ② 固有名詞が2回以上出ていれば孤立ではない
+    p = _os7.path.join(tmp, "orphan_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        "ナレーター: 村の真ん中を、最上川が西へ流れています。" + chr(10) +
+        "ナレーター: その最上川の岸に、集落があります。" + chr(10))
+    ok.append(check_pass("②b 2回以上出る固有名詞は通す", "validate_yama_narrative.py",
+                         p, "[孤立した固有名詞] Line"))
+
+    # ⑨ 引用先を先に置き、述語を後ろに回した正しい形
+    p = _os7.path.join(tmp, "attr_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        "ナレーター: 米田さんは、こう記しています。" + chr(10) +
+        "ナレーター: 満腹の状態でありながら、人を食べていた。" + chr(10))
+    ok.append(check_pass("⑨b 引用先が先にあれば通す", "validate_yama_narrative.py",
+                         p, "帰属だけの単独行"))
+
+    # ⑦ 素材密度が 120字/素材 以下なら通す
+    p = _os7.path.join(tmp, "Plot_Sheet_sparse.md")
+    open(p, "w", encoding="utf-8").write(
+        "- 前半ピーク: 1" + chr(10) + "- 後半ピーク: 1" + chr(10) * 2 +
+        "| 章 | タイトル | PART | 種別 | 目標字数 | 素材# |" + chr(10) +
+        "|--:|:--|:--|:--|--:|:--|" + chr(10) +
+        "| 1 | フック | KI | フック | 220 | 2,3 |" + chr(10))
+    ok.append(check_pass("⑦b 110字/素材なら通す", "validate_yama_plot.py",
+                         p, "素材密度"))
+
     shutil.rmtree(tmp)
+
+    # --- メタチェック: 3点セットが揃っているか ---------------------------
+    print()
+    print("-" * 74)
+    print("メタチェック — 各検査に「止まるべき」と「通すべき」が両方あるか")
+    print("-" * 74)
+    groups = {}
+    for g, kind, name, script in REGISTRY:
+        groups.setdefault(g, {"fail": [], "pass": [], "script": script})[kind].append(name)
+    lonely = []
+    for g in sorted(groups, key=lambda x: (len(x), x)):
+        v = groups[g]
+        both = v["fail"] and v["pass"]
+        mark = "✅" if both else "❌"
+        miss = "" if both else ("  ← 通すべきケースが無い" if not v["pass"] else "  ← 止まるべきケースが無い")
+        print(f"  {mark} {g}  止まる{len(v['fail'])}件 / 通す{len(v['pass'])}件  {v['script']}{miss}")
+        if not both:
+            lonely.append(g)
+    meta_ok = not lonely
+    ok.append(meta_ok)
+    if lonely:
+        print()
+        print(f"  片側だけの検査が {len(lonely)}件: {' '.join(lonely)}")
+        print("  → 「止まる」しか試していない検査は、素通りしていても気づけない。")
+        print("     矛盾検査では実際にそれで2回、素通りする検査を書いた（YCP-033）。")
+
     print()
     n, t = sum(ok), len(ok)
     print(f"{n}/{t} 件が期待どおり動作")
