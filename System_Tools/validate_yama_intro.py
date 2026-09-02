@@ -217,6 +217,28 @@ def main(path):
     print(f"  問いの数: {len(q)}  {'OK' if ok else 'NG'}   （基準 {REF['questions']}つ固定）")
     if not ok:
         fails.append(f"問いの数 {len(q)}（基準 {REF['questions']}つ）")
+
+    # ---- CQ（セントラルクエスチョン）の回収位置（2026-09-02 新設）----
+    # 出典: たちばなやすひと『「物語」の見つけ方』（CQ＝物語を最後まで見届けさせる問い。
+    #       CQの結果はクライマックスで出る）。Yama では「フックの問い2つ」＝CQ。
+    # よって **各CQは転（TEN-KETSU）で受ける**。承の途中で言い切って終わらせない。
+    if tk is not None and q:
+        tk_text = "".join(narr(tk))
+        for n, qq in enumerate(q, 1):
+            body_q = re.sub(r"(そして|なぜ|どうして|一体|いったい)", "", qq)
+            # ありふれた語で「回収したこと」にできてしまうため除外する
+            GENERIC = {"のか", "でしょうか", "クマ", "ヒグマ", "ツキノワグマ", "事件", "事故",
+                       "男性", "女性", "現場", "場所"}
+            terms = [w for w in re.findall(r"[一-龥ァ-ヶー]{2,}", body_q) if w not in GENERIC]
+            terms.sort(key=len, reverse=True)
+            hit = [w for w in terms if w in tk_text]
+            if hit:
+                print(f"  CQ{n} 回収: OK  転に「{hit[0]}」が出てきます")
+            else:
+                fails.append(
+                    f"CQ{n}「{qq[:32]}」が転で回収されていません（探した語: {'/'.join(terms[:6])}）"
+                    " → CQの答えはクライマックス＝転で出す。承の途中で言い切って終わらせない")
+
     for x in q:
         print(f"      - {x}")
 

@@ -75,7 +75,18 @@ ROW = re.compile(r"^\|\s*(\d+)\s*\|(.+?)\|(.+?)\|(.+?)\|\s*([\d,]+)\s*\|(.*?)\|\
 #   2026-09-02 の戸沢村で、起の5%フロアを満たすために §2 を149→232字（+56%）、
 #   §3 を171→222字（+30%）に膨らませ、そのあと表を本文から再生成して差を消していた。
 DRIFT = 15.0
-META = re.compile(r"^-\s*(前半ピーク|後半ピーク|目標尺)\s*[:：]\s*(.+?)\s*$")
+META = re.compile(r"^-\s*(前半ピーク|後半ピーク|目標尺|ボトム)\s*[:：]\s*(.+?)\s*$")
+
+# --- 検査12 V字（落差）2026-09-02 追加 ------------------------------------
+# 出典: たちばなやすひと『「物語」の見つけ方』
+#   「谷」を作ることで見かけの上がり幅が大きくなる。一度マイナスになり、そこから反転することで
+#   上昇がより鮮明に認識される。時間が同じなら、人は上がり幅の大きいほうを望む。
+#   坂本龍一「音楽とは緊張からの解決」／松本人志「笑いは緊張と緩和」も同じ「V」。
+#
+# ⚠️ ノンフィクションでは「谷を作らない」。実際に起きた落差を**省略しない**だけ。
+#    プチハッピー・再起・プラスαは完全創作の型なので、Yama では採用しない。
+# ⚠️ 「物語のボトム」と「維持率の谷」は別物。前者は作るべき最低点、後者は避けるべき離脱点
+#    （説明の連続で生まれる）。混同しないこと。
 
 
 def main(path):
@@ -193,7 +204,7 @@ def main(path):
             fails.append(f"「- {key}: <章番号>」の宣言がありません（二山構造）")
             continue
         try:
-            n = int(re.sub(r"\D", "", v))
+            n = int(re.search(r"\d+", v.split("#")[0]).group())
         except ValueError:
             fails.append(f"{key} の章番号が読めません: {v}")
             continue
@@ -246,6 +257,41 @@ def main(path):
                              "検査を通すために行を足さない")
         print("[設計との差] 全%d章 / 上限±%.0f%% / 乖離 %d章" % (len(planned), DRIFT, len(drift)))
         print()
+
+    # 12. V字（ボトムの宣言と位置）— 2026-09-02 追加
+    bt = meta.get("ボトム")
+    part_of = {r["no"]: r["part"] for r in rows}
+    if not bt:
+        fails.append("「- ボトム: <章番号>」の宣言がありません"
+                     " → 物語がいちばん落ちる章。ここが深いほど、そこからの反転が大きく見える"
+                     "（ノンフィクションでは谷を作らず、実際にあった落差を省略しない）")
+    elif "なし" in bt:
+        warns.append("ボトムが「なし」。落差のない構成は上がり幅が出ない。本当に無いか確認すること")
+    else:
+        try:
+            bn = int(re.search(r"\d+", bt.split("#")[0]).group())
+        except ValueError:
+            fails.append(f"ボトムの章番号が読めません: {bt}")
+            bn = None
+        if bn is not None:
+            if bn not in pos:
+                fails.append(f"ボトムの §{bn} が表にありません")
+            elif part_of.get(bn) != "SHO":
+                fails.append(f"ボトム §{bn} が承（SHO）にありません（PART: {part_of.get(bn)}）"
+                             " → ボトムは承の中。そこから転（クライマックス）へ向けて反転させる")
+            else:
+                print(f"[V字] ボトム §{bn}「{next(r['title'] for r in rows if r['no']==bn)[:22]}」"
+                      f" 累計{pos[bn]:.1f}%")
+                p2 = meta.get("後半ピーク")
+                if p2:
+                    try:
+                        pn = int(re.search(r"\d+", p2.split("#")[0]).group())
+                        if pn <= bn:
+                            warns.append(f"後半ピーク §{pn} がボトム §{bn} より前にあります"
+                                         "（落ちてから上げる形になっていない）")
+                    except ValueError:
+                        pass
+                print()
 
     # 10. 主題占有率（2026-09-02 追加）— 他事件・全国統計での水増しを止める
     fs = sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(path)), "Fact_Sheet_*.md")))

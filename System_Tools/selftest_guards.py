@@ -212,6 +212,40 @@ def main():
     print(f"  {'✅' if hit else '❌'} {'⑭ c 前振り型（朱鞠内湖の形）も通す':<42} validate_yama_intro.py")
     ok.append(hit)
 
+    # ⑮ V字（ボトムの宣言）2026-09-02
+    #    出典: たちばなやすひと『「物語」の見つけ方』。落差を省略しないための宣言。
+    import os as _os5
+    _FS_V = ("# 素材シート\n\n| # | 事実 | 出典 | 確認方法 | 使う章 |\n"
+             "|:--|:--|:--|:--|:--|\n| 1 | 事実A | X | 実物 | §1 |\n")
+    _ROWS_V = ("| 章 | タイトル | PART | 種別 | 設計字数 | 実測字数 | 素材# |\n"
+               "|--:|:--|:--|:--|--:|--:|:--|\n"
+               "| 1 | 本編 | SHO | 動き | 8000 | 8000 | 1 |\n"
+               "| 2 | 山場 | TEN-KETSU | 動き | 1000 | 1000 | 1 |\n")
+
+    def mkbottom(name, bottom_line):
+        d = _os5.path.join(tmp, name)
+        _os5.makedirs(d, exist_ok=True)
+        open(_os5.path.join(d, "Fact_Sheet_v.md"), "w", encoding="utf-8").write(_FS_V)
+        f = _os5.path.join(d, "Plot_Sheet_v.md")
+        head = ("# プロット表\n\n- 目標尺: 28分\n- 前半ピーク: 1\n- 後半ピーク: 2\n"
+                + bottom_line + "\n")
+        open(f, "w", encoding="utf-8").write(head + _ROWS_V)
+        return f
+
+    ok.append(check("⑮ ボトムの宣言が無い", "validate_yama_plot.py",
+                    mkbottom("v_none", ""), "「- ボトム: <章番号>」の宣言がありません"))
+
+    ok.append(check("⑮b ボトムが承の外にある", "validate_yama_plot.py",
+                    mkbottom("v_bad", "- ボトム: 2"), "承（SHO）にありません"))
+
+    _f_v = mkbottom("v_ok", "- ボトム: 1")
+    _code_v, _out_v = run("validate_yama_plot.py", _f_v)
+    _hit_v = ("[V字] ボトム" in _out_v
+              and "承（SHO）にありません" not in _out_v
+              and "宣言がありません" not in _out_v)
+    print(f"  {'✅' if _hit_v else '❌'} {'⑮c 承の中なら通す':<42} validate_yama_plot.py")
+    ok.append(_hit_v)
+
     # ⑪ 主題占有率（2026-09-02 追加）— 他事件・全国統計での水増しを止める
     #    旧稿の戸沢村は §19 受傷部位統計 / §22 1994年 新潟県笹神村 / §24 月別・時間帯統計 で
     #    外部素材だけの章が18.4%あった。同じ形を注入して、止まるかを確かめる。
