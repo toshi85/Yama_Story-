@@ -19,6 +19,7 @@ Yamaプロット表バリデーター（執筆前ゲート）
   8. 全章に素材#がある
   9. 素材密度（字数÷素材数 ≤ 120）★創作の予防
  10. 主題占有率（外部素材だけで組まれた章 ≤ 15%）★他事件・全国統計での水増しの予防
+ 11. 設計からの乖離（設計字数 ±15%）★しきい値合わせの水増しの予防
 
 使い方:
   python3 Yama_Story/System_Tools/validate_yama_plot.py <プロット表>
@@ -63,7 +64,14 @@ KINDS = {"フック", "動き", "証言", "感情", "説明", "データ", "実�
 EXT_CHAPTER = 2 / 3
 EXT_BUDGET = 15.0
 
+# 7列（設計字数／実測字数）と 旧6列（字数のみ）の両方を受ける
+ROW7 = re.compile(r"^\|\s*(\d+)\s*\|(.+?)\|(.+?)\|(.+?)\|\s*([\d,]+)\s*\|\s*([\d,]+)\s*\|(.*?)\|\s*$")
 ROW = re.compile(r"^\|\s*(\d+)\s*\|(.+?)\|(.+?)\|(.+?)\|\s*([\d,]+)\s*\|(.*?)\|\s*$")
+# 設計字数から実測がこれ以上ずれたら FAIL（2026-09-02 追加）
+#   「書きながら膨らませて、あとでプロット表を本文に合わせる」を止めるための検査。
+#   2026-09-02 の戸沢村で、起の5%フロアを満たすために §2 を149→232字（+56%）、
+#   §3 を171→222字（+30%）に膨らませ、そのあと表を本文から再生成して差を消していた。
+DRIFT = 15.0
 META = re.compile(r"^-\s*(前半ピーク|後半ピーク|目標尺)\s*[:：]\s*(.+?)\s*$")
 
 
@@ -77,6 +85,18 @@ def main(path):
         if m:
             meta[m.group(1)] = m.group(2)
             continue
+        m7 = ROW7.match(line.strip())
+        if m7:
+            rows.append({
+                "no": int(m7.group(1)),
+                "title": m7.group(2).strip(),
+                "part": m7.group(3).strip(),
+                "kind": m7.group(4).strip(),
+                "plan": int(m7.group(5).replace(",", "")),
+                "chars": int(m7.group(6).replace(",", "")),
+                "src": m7.group(7).strip(),
+            })
+            continue
         m = ROW.match(line.strip())
         if not m:
             continue
@@ -85,6 +105,7 @@ def main(path):
             "title": m.group(2).strip(),
             "part": m.group(3).strip(),
             "kind": m.group(4).strip(),
+            "plan": None,
             "chars": int(m.group(5).replace(",", "")),
             "src": m.group(6).strip(),
         })
@@ -189,6 +210,26 @@ def main(path):
                 f"素材密度 §{no}「{ti}」= {d:.0f}字/素材（{ch}字 ÷ 素材{cnt}件・上限{DENSITY_HI}）"
                 f" → 素材を足すか章を短くする。この比率を超えた章は創作で埋まる"
             )
+
+    # 11. 設計からの乖離（2026-09-02 追加）— 書きながら膨らませるのを止める
+    planned = [r for r in rows if r.get("plan")]
+    if not planned:
+        warns.append("プロット表に「設計字数」列がありません。"
+                     "6列の旧形式では、書きながら膨らませても検知できません"
+                     "（列: 章／タイトル／PART／種別／設計字数／実測字数／素材#）")
+    else:
+        drift = []
+        for r in planned:
+            d = 100 * (r["chars"] - r["plan"]) / r["plan"]
+            if abs(d) > DRIFT:
+                drift.append((r["no"], r["title"][:20], r["plan"], r["chars"], d))
+        if drift:
+            for no, ti, pl, ch, d in drift:
+                fails.append(f"設計からの乖離 §{no}「{ti}」= {pl}字 → {ch}字（{d:+.0f}%・上限±{DRIFT:.0f}%）"
+                             " → 本文を設計に戻すか、設計を意識して更新する。"
+                             "検査を通すために行を足さない")
+        print("[設計との差] 全%d章 / 上限±%.0f%% / 乖離 %d章" % (len(planned), DRIFT, len(drift)))
+        print()
 
     # 10. 主題占有率（2026-09-02 追加）— 他事件・全国統計での水増しを止める
     fs = sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(path)), "Fact_Sheet_*.md")))

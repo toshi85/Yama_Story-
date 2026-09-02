@@ -12,7 +12,7 @@
   python3 validate_yama_consistency.py <Master.md>
   （同じフォルダの Plot_Sheet_*.md / Fact_Sheet_*.md を自動で探す）
 """
-import sys, re, glob, os
+import sys, re, glob, os, itertools
 
 NEWLINE = chr(10)
 
@@ -27,7 +27,7 @@ def load_master(p):
         elif l.startswith("ナレーター:"):
             c = re.sub(r"\s*<!--.*?-->", "", l.split(":", 1)[1]).strip()
             if cur: cur["chars"] += len(c)
-            dup.setdefault(c, []).append(i + 1)
+            dup.setdefault(c, []).append((i + 1, cur["no"] if cur else 0))
     return ch, dup
 
 def main():
@@ -44,7 +44,39 @@ def main():
     # 1. 完全重複ナレーション行
     for text, lines in dup.items():
         if len(lines) > 1 and len(text) >= 12:
-            fails.append(f"完全重複ナレ行 行{','.join(map(str,lines))}: 「{text[:44]}」")
+            fails.append(f"完全重複ナレ行 行{','.join(str(n) for n, _ in lines)}: 「{text[:44]}」")
+
+    # 1b. 近似重複ナレーション行（2026-09-02 追加）
+    #     完全一致だけを見ていたため「言い換えただけの水増し」がすり抜けていた。
+    #     実例: §3「山形県は、44年ぶんの人身事故の記録を残しています。」
+    #           §3「一覧が始まるのは、1977年。／そこから2020年まで、書き足されてきた記録です。」
+    #           §18「山形県は、1977年から2020年までの人身事故を一覧にしています。／44年ぶんです。」
+    #           §3「夏のあいだは、少なくなります。」 vs §7「クマに襲われる事故は、夏のあいだは少なくなります。」
+    #     較正: 文字bigramのJaccard係数。出荷済み6本での検出は 0.65 で大千軒岳2件のみ（0.55だと5件に増える）。
+    #     引用行（「で始まる）は語り口が似るため対象外。
+    SIM = 0.65
+    def _bg(t):
+        t = re.sub(r"[、。「」（）\s]", "", t)
+        return set(t[i:i + 2] for i in range(len(t) - 1))
+    #     近い場所での言い換え＝水増し（FAIL）／離れた場所での再提示＝聞き手のための再説明（WARN）。
+    #     出荷済みの大千軒岳は「22歳。北海道大学水産学部…」（§冒頭）と追悼（§末尾）、
+    #     武田主幹の肩書きを2章で再提示していた。どちらも章が大きく離れており、水増しではない。
+    NEAR = 2
+    cand = [(ls[0][0], ls[0][1], t) for t, ls in dup.items()
+            if len(t) >= 12 and not t.startswith("「")]
+    for (l1, c1, t1), (l2, c2, t2) in itertools.combinations(cand, 2):
+        a, b = _bg(t1), _bg(t2)
+        if not (a | b):
+            continue
+        j = len(a & b) / len(a | b)
+        if j < SIM:
+            continue
+        msg = (f"近似重複ナレ行 類似度{j:.2f} §{c1}行{l1} / §{c2}行{l2}: "
+               f"「{t1[:30]}」/「{t2[:30]}」")
+        if abs(c1 - c2) <= NEAR:
+            fails.append(msg + " → 近い場所で同じことを言い換えている。どちらかを削る")
+        else:
+            warns.append(msg + " → 章が離れているので再提示かもしれない（判断は人間）")
 
     # 2/3. プロット表との整合（章番号・章題・字数）
     pp = glob.glob(os.path.join(d, "Plot_Sheet_*.md"))
@@ -52,7 +84,8 @@ def main():
     if pp:
         rows = {}
         for l in open(pp[0], encoding="utf-8"):
-            m = re.match(r"^\|\s*(\d+)\s*\|([^|]+)\|[^|]+\|[^|]+\|\s*([\d,]+)\s*\|([^|]*)\|", l.strip())
+            m7 = re.match(r"^\|\s*(\d+)\s*\|([^|]+)\|[^|]+\|[^|]+\|\s*[\d,]+\s*\|\s*([\d,]+)\s*\|([^|]*)\|", l.strip())
+            m = m7 or re.match(r"^\|\s*(\d+)\s*\|([^|]+)\|[^|]+\|[^|]+\|\s*([\d,]+)\s*\|([^|]*)\|", l.strip())
             if m:
                 rows[int(m.group(1))] = (m.group(2).strip(), int(m.group(3).replace(",", "")), m.group(4))
                 plot_src[int(m.group(1))] = re.findall(r"\d+", m.group(4))
