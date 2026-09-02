@@ -293,6 +293,44 @@ def validate_narrative_tone(file_path):
     elif not errors:
         print("[PASS with warnings] No errors, but warnings should be reviewed.")
 
+    # --- 数字表記（2026-09-02 追加）--------------------------------------
+    #   ナレーションの数量・時刻・寸法は算用数字に統一する（2026-09-02 ユーザー指示）。
+    #   戸沢村の初稿は漢数字が156箇所あり、出荷済み（8〜42箇所）から突出していた。
+    #   固有名詞（十和利山）・熟語（一同/一方/一撃/一覧/二度と）・「〜つ」は漢字のまま。
+    #
+    #   🚨 表記を変えると検査が壊れることがある。実際に2件起きた:
+    #     ・validate_yama_intro.py の CQ 語抽出が「三度」は拾えて「3度」を拾えず誤 FAIL
+    #     ・audit_numeric_facts.py の監査対象が増え、src 注記の不足が6件表面化
+    #   数字表記を触ったら、この2つを必ず再実行すること。
+    _KEEP_NUM = ("十和利山", "米田一彦", "一同", "一方", "一部", "一般", "一定", "一致", "一瞬",
+                 "一気", "一帯", "一連", "一線", "一切", "第一", "唯一", "万一", "一言",
+                 "一撃", "一片", "一文", "一覧", "一体", "一人ひとり", "何十", "数十", "何百",
+                 "十数", "一度", "二度と", "同一個体")
+    _UNIT_NUM = (r"(人|名|頭|件|歳|年|月|日|時|分|秒|回|度|キロ|メートル|センチ"
+                 r"|週間|か月|カ月|ヶ月|カ所|か所|箇所|班|発|冊|枚|匹|台)")
+    _kan_hits = []
+    for _c, _t in _narr if '_narr' in dir() else []:
+        pass
+    _ch2 = 0
+    for _l in open(file_path, encoding="utf-8"):
+        _m = _re2.match(r"^## (\d+)\.", _l) if '_re2' in dir() else None
+        if _m:
+            _ch2 = int(_m.group(1))
+        elif _l.startswith("ナレーター:"):
+            _t = _l.split(":", 1)[1]
+            for _w in _KEEP_NUM:
+                _t = _t.replace(_w, "")
+            for _mm in __import__("re").finditer(r"[一二三四五六七八九十百千]+(?=" + _UNIT_NUM + ")", _t):
+                _kan_hits.append((_ch2, _mm.group(0), _l.split(":", 1)[1].strip()[:34]))
+    if _kan_hits:
+        print()
+        print(f"[数字表記] 漢数字が {len(_kan_hits)}箇所（数量・時刻・寸法は算用数字に統一する）")
+        for _c, _w, _t in _kan_hits[:8]:
+            print(f"   §{_c}: 「{_w}」 …{_t}…")
+        if len(_kan_hits) > 8:
+            print(f"   ほか {len(_kan_hits)-8}箇所")
+        print("   → 直したら validate_yama_intro.py と audit_numeric_facts.py を必ず再実行")
+
     # --- 証言の途切れ（2026-09-02 追加・WARNのみ）------------------------
     #   出典: 新井一樹『物語のみがき方』。ドラマ＝人間を描くこと。
     #   出来事の羅列が続くと、事実は積まれても人が消える。

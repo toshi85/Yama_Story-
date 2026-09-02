@@ -229,7 +229,11 @@ def main(path):
             # ありふれた語で「回収したこと」にできてしまうため除外する
             GENERIC = {"のか", "でしょうか", "クマ", "ヒグマ", "ツキノワグマ", "事件", "事故",
                        "男性", "女性", "現場", "場所"}
-            terms = [w for w in re.findall(r"[一-龥ァ-ヶー]{2,}", body_q) if w not in GENERIC]
+            # 2026-09-02: 「3度」のような算用数字＋助数詞も語として拾う。
+            #   漢数字を算用数字に統一したとき、「三度」は拾えるのに「3度」が拾えず、
+            #   中身は同じなのに CQ 未回収と誤判定した（表記ゆれで検査が壊れた）。
+            terms = [w for w in re.findall(r"[0-9０-９]+[一-龥ァ-ヶー]+|[一-龥ァ-ヶー]{2,}", body_q)
+                     if w not in GENERIC]
             terms.sort(key=len, reverse=True)
             hit = [w for w in terms if w in tk_text]
             if hit:
