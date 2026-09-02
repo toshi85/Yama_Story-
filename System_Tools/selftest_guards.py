@@ -149,6 +149,69 @@ def main():
     ok.append(check("⑫ 素材#と「使う章」のズレ", "validate_yama_consistency.py",
                     _os2.path.join(d4, "Master.md"), "「使う章」に §2 が無い"))
 
+    # ⑬ 設計からの乖離（2026-09-02 追加）— しきい値を満たすための水増しを止める
+    #    2026-09-02 の戸沢村で、起が5%フロアぎりぎりだったため §2 を149→232字（+56%）に膨らませた。
+    #    そのあとプロット表を本文から再生成したので差が消えていた。同じ形を注入して、止まるか確かめる。
+    import os as _os3
+    def mkdrift(dirname, plan, real):
+        d = _os3.path.join(tmp, dirname); _os3.makedirs(d, exist_ok=True)
+        open(_os3.path.join(d, "Fact_Sheet_d.md"), "w", encoding="utf-8").write(
+            "# 素材シート\n\n| # | 事実 | 出典 | 確認方法 | 使う章 |\n|:--|:--|:--|:--|:--|\n"
+            "| 1 | 事実A | X | 実物 | §1 |\n| 2 | 事実B | X | 実物 | §2 |\n")
+        f = _os3.path.join(d, "Plot_Sheet_d.md")
+        open(f, "w", encoding="utf-8").write(
+            "# プロット表\n\n- 目標尺: 28分\n- 前半ピーク: 1\n- 後半ピーク: 1\n\n"
+            "| 章 | タイトル | PART | 種別 | 設計字数 | 実測字数 | 素材# |\n|--:|:--|:--|:--|--:|--:|:--|\n"
+            "| 1 | 本編 | SHO | 動き | 9000 | 9000 | 1 |\n"
+            f"| 2 | 膨らませた章 | KI | 説明 | {plan} | {real} | 2 |\n")
+        return f
+
+    ok.append(check("⑬ 設計149字を本文で232字に膨らませた", "validate_yama_plot.py",
+                    mkdrift("drift_ng", 149, 232), "設計からの乖離"))
+
+    f = mkdrift("drift_ok", 149, 160)   # +7%
+    code, out = run("validate_yama_plot.py", f)
+    hit = "設計からの乖離" not in out
+    print(f"  {'✅' if hit else '❌'} {'⑬ b ±15%以内なら通す':<42} validate_yama_plot.py")
+    ok.append(hit)
+
+    d = _os3.path.join(tmp, "drift_old"); _os3.makedirs(d, exist_ok=True)
+    open(_os3.path.join(d, "Plot_Sheet_d.md"), "w", encoding="utf-8").write(
+        "# プロット表\n\n- 目標尺: 28分\n- 前半ピーク: 1\n- 後半ピーク: 1\n\n"
+        "| 章 | タイトル | PART | 種別 | 目標字数 | 素材# |\n|--:|:--|:--|:--|--:|:--|\n"
+        "| 1 | 本編 | SHO | 動き | 9000 | 1 |\n")
+    ok.append(check("⑬ c 6列の旧形式は検知できないと告げる", "validate_yama_plot.py",
+                    _os3.path.join(d, "Plot_Sheet_d.md"), "「設計字数」列がありません"))
+
+    # ⑭ 起の切り方（2026-09-02 確定の設計ルール）
+    #    起 = フック ＋ 最初の被害者の日常 ＋「その日常が崩れる予感」の一行。承はそこから事件の具体。
+    import os as _os4
+    def mkki(name, last):
+        f = _os4.path.join(tmp, name + ".md")
+        sho = "ナレーター: " + ("日が暮れます。山の中は、もう何も見えません。" * 120)
+        ten = "ナレーター: " + ("その後、村は変わりました。" * 20)
+        body = HEAD + "\nナレーター: 1988年5月25日。山形県の戸沢村。\nナレーター: 深夜、男性が遺体で発見。\nナレーター: なぜ、三度も繰り返されたのか。\nナレーター: そしてなぜ、満腹なのに人を食べたのか？\nナレーター: 地形図とともに解説します。\n\n## 2. 最初に山へ入った人\nナレーター: 戸沢村は、山形県の北にあります。人口はおよそ4,300人。\nナレーター: この村に住む61歳の男性が、タケノコを採りに山へ入りました。\nナレーター: 農業を営む人でした。家を出たのは午前十時ごろでした。\nナレーター: 何十年も繰り返されてきた、ふつうの一日のはずでした。\n{LAST}\n\n<!-- PART: SHO -->\n## 3. 戻らなかった一日\nナレーター: {SHO}\n\n<!-- PART: TEN-KETSU -->\n## 4. その後\nナレーター: {TEN}\n"
+        body = body.replace("{LAST}", "ナレーター: " + last)
+        body = body.replace("ナレーター: {SHO}", sho).replace("ナレーター: {TEN}", ten)
+        open(f, "w", encoding="utf-8").write(body)
+        return f
+
+    ok.append(check("⑭ 起が舞台説明で終わっている", "validate_yama_intro.py",
+                    mkki("ki_ng", "それほど自然との距離が近い環境でした。"),
+                    "「日常が崩れる予感」で終わっていません"))
+
+    f = mkki("ki_ok", "ところが、この日は戻りません。")
+    code, out = run("validate_yama_intro.py", f)
+    hit = "「日常が崩れる予感」で終わっていません" not in out
+    print(f"  {'✅' if hit else '❌'} {'⑭ b 逆接＋不在で終わっていれば通す':<42} validate_yama_intro.py")
+    ok.append(hit)
+
+    f = mkki("ki_ok2", "そんな人物が、この日、命を落とすことになるとは、誰一人、想像していなかったはずです。")
+    code, out = run("validate_yama_intro.py", f)
+    hit = "「日常が崩れる予感」で終わっていません" not in out
+    print(f"  {'✅' if hit else '❌'} {'⑭ c 前振り型（朱鞠内湖の形）も通す':<42} validate_yama_intro.py")
+    ok.append(hit)
+
     # ⑪ 主題占有率（2026-09-02 追加）— 他事件・全国統計での水増しを止める
     #    旧稿の戸沢村は §19 受傷部位統計 / §22 1994年 新潟県笹神村 / §24 月別・時間帯統計 で
     #    外部素材だけの章が18.4%あった。同じ形を注入して、止まるかを確かめる。

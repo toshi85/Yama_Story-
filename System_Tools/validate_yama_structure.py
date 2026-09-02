@@ -116,9 +116,17 @@ def validate_structure(file_path):
 
     errors = []
 
-    # KI Logic (5-15%)
-    if not (5 <= ratio_ki <= 15):
-        errors.append(f"[Structure Violation]: 'Ki' is {ratio_ki:.1f}%. Must be between 5-15%.")
+    # KI Logic — 2026-09-02: 起は「機能」で切るので、比率の下限では判定しない。
+    #   起 = フック章 ＋ 最初の被害者の日常 ＋「その日常が崩れる予感」の一行。承はそこから事件の具体。
+    #   下限は字数（フック120-380 ＋ セットアップ150-500 の合成／出荷済み実測 328-929字）、
+    #   上限だけ比率で見る。切り方そのものは validate_yama_intro.py が検査する。
+    KI_CHARS = (270, 950)
+    if not (KI_CHARS[0] <= len_ki <= KI_CHARS[1]):
+        errors.append(f"[Structure Violation]: 'Ki' is {len_ki} chars. "
+                      f"Must be between {KI_CHARS[0]}-{KI_CHARS[1]} chars "
+                      f"(hook 120-380 + setup 150-500).")
+    if ratio_ki > 15:
+        errors.append(f"[Structure Violation]: 'Ki' is {ratio_ki:.1f}%. Must be 15% or less.")
 
     # SHO Logic (70-90%)
     if not (70 <= ratio_sho <= 90):

@@ -37,6 +37,9 @@ from pathlib import Path
 CPS = 323                       # 字/分
 TOTAL_LO, TOTAL_HI = 8400, 11300
 PART_RANGE = {"KI": (5, 15), "SHO": (70, 90), "TEN-KETSU": (5, 15)}
+# 起は字数で判定する（比率は上限のみ）。フック120-380 ＋ セットアップ150-500 の合成。
+# 出荷済み7本の実測は 328〜929字。→ validate_yama_intro.py / validate_yama_structure.py と同値
+KI_CHARS = (270, 950)
 INTRO_LO, INTRO_HI = 120, 380  # 2026-09-01 較正: 出荷済み7本は128-360字・中央値180。旧値200-270は羅臼岳(128)大千軒岳(151)風不死岳(162)戸沢村(180)を落としていた → feedback_calibrate_audits_to_shipped_content.md
 EXPLAIN = {"説明", "データ"}
 EXPLAIN_MAX = 800
@@ -137,9 +140,22 @@ def main(path):
         fails.append(f"合計 {total:,}字（基準 {TOTAL_LO:,}〜{TOTAL_HI:,}字＝26〜35分）")
 
     # 2. 起承転結
+    #    2026-09-02: 起は「機能」で切るので比率の下限では判定しない。
+    #    起 = フック章 ＋ 最初の被害者の日常 ＋「その日常が崩れる予感」の一行。承はそこから事件の具体。
+    #    下限は字数（フック120-380＋セットアップ150-500／出荷済み実測328-929字）、上限だけ比率。
     for part, (lo, hi) in PART_RANGE.items():
         c = sum(r["chars"] for r in rows if r["part"] == part)
         pct = 100 * c / total
+        if part == "KI":
+            ok = KI_CHARS[0] <= c <= KI_CHARS[1] and pct <= hi
+            print(f"  {'OK ' if ok else 'NG '}{part:<10} {c:6,}字 {pct:5.1f}%"
+                  f"  基準 {KI_CHARS[0]:,}-{KI_CHARS[1]:,}字 かつ 上限{hi}%")
+            if not (KI_CHARS[0] <= c <= KI_CHARS[1]):
+                fails.append(f"KI 字数 {c:,}字（基準 {KI_CHARS[0]:,}〜{KI_CHARS[1]:,}字）"
+                             "＝フック120-380＋セットアップ150-500")
+            if pct > hi:
+                fails.append(f"KI 比率 {pct:.1f}%（上限 {hi}%）")
+            continue
         ok = lo <= pct <= hi
         print(f"  {'OK ' if ok else 'NG '}{part:<10} {c:6,}字 {pct:5.1f}%  許容 {lo}-{hi}%")
         if not ok:
