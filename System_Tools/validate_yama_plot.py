@@ -18,6 +18,7 @@ Yamaプロット表バリデーター（執筆前ゲート）
   7. 二山構造（前半ピーク15〜45% / 後半ピーク50〜85%）
   8. 全章に素材#がある
   9. 素材密度（字数÷素材数 ≤ 120）★創作の予防
+ 10. 主題占有率（外部素材だけで組まれた章 ≤ 15%）★他事件・全国統計での水増しの予防
 
 使い方:
   python3 Yama_Story/System_Tools/validate_yama_plot.py <プロット表>
@@ -26,6 +27,8 @@ Yamaプロット表バリデーター（執筆前ゲート）
 # 2026-09-01 較正: イントロ字数の基準を出荷済み7本（128-360字・中央値180）に合わせた。
 # 旧値200-270は羅臼岳(128)・大千軒岳(151)・風不死岳(162)・戸沢村(180)を落としていた。
 # → feedback_calibrate_audits_to_shipped_content.md
+import glob
+import os
 import re
 import sys
 from pathlib import Path
@@ -44,6 +47,21 @@ PEAK1 = (15.0, 45.0)
 #       → Analytics/Why_Shumarinai_Hit.md §4-5
 PEAK2 = (35.0, 75.0)
 KINDS = {"フック", "動き", "証言", "感情", "説明", "データ", "実用"}
+
+# --- 検査10 主題占有率（2026-09-02 追加）---------------------------------
+# 「他の事件で文字を水増しするのではなく、その事件を深掘りして分量を満たす」を機械で守らせる。
+# 視聴者が見に来ているのは "その事件" であって、他所の統計でも別の事件でもない。
+#
+# 判定は素材シートの〔外部〕印で行う。〔外部〕= 本件そのものではない行（全国統計・他事件・一般知識）。
+#   章の素材のうち〔外部〕が EXT_CHAPTER 以上を占める章 = 「外部素材の章」
+#   外部素材の章の合計字数が全体の EXT_BUDGET% を超えたら FAIL
+#
+# 較正（2026-09-02 実測・戸沢村）:
+#   旧稿 = 18.4%（§19 受傷部位の統計456字 / §22 1994年 新潟県笹神村352字 / §24 月別・時間帯の統計922字）
+#   新稿 =  7.8%（§3 記録の枠組み222字 / §25 5月と10月の実用575字）
+#   → 上限15%は「旧稿を落とし、新稿を通す」値。統計や他事件の引用そのものを禁じてはいない。
+EXT_CHAPTER = 2 / 3
+EXT_BUDGET = 15.0
 
 ROW = re.compile(r"^\|\s*(\d+)\s*\|(.+?)\|(.+?)\|(.+?)\|\s*([\d,]+)\s*\|(.*?)\|\s*$")
 META = re.compile(r"^-\s*(前半ピーク|後半ピーク|目標尺)\s*[:：]\s*(.+?)\s*$")
@@ -171,6 +189,46 @@ def main(path):
                 f"素材密度 §{no}「{ti}」= {d:.0f}字/素材（{ch}字 ÷ 素材{cnt}件・上限{DENSITY_HI}）"
                 f" → 素材を足すか章を短くする。この比率を超えた章は創作で埋まる"
             )
+
+    # 10. 主題占有率（2026-09-02 追加）— 他事件・全国統計での水増しを止める
+    fs = sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(path)), "Fact_Sheet_*.md")))
+    if not fs:
+        warns.append("素材シート（Fact_Sheet_*.md）が同じフォルダに無いため、主題占有率を測れません")
+    else:
+        body = Path(fs[0]).read_text(encoding="utf-8")
+        ext_ids, all_ids = set(), set()
+        for line in body.splitlines():
+            m = re.match(r"^\|\s*(\d+)\s*\|([^|]*)\|", line)
+            if not m:
+                continue
+            all_ids.add(m.group(1))
+            if "〔外部〕" in m.group(2):
+                ext_ids.add(m.group(1))
+        if not ext_ids:
+            warns.append(
+                f"素材シート {os.path.basename(fs[0])} に〔外部〕印が1件もありません。"
+                "全素材が本件由来なら正常ですが、印の付け忘れなら主題占有率の検査が空振りします")
+        else:
+            ext_rows, ext_chars = [], 0
+            for r in rows:
+                ids = [x.strip() for x in r["src"].split(",") if re.search(r"\d", x)]
+                ids = [re.sub(r"\D", "", x) for x in ids]
+                if not ids:
+                    continue
+                e = sum(1 for x in ids if x in ext_ids)
+                if e / len(ids) >= EXT_CHAPTER:
+                    ext_rows.append((r["no"], r["title"][:22], r["chars"], e, len(ids)))
+                    ext_chars += r["chars"]
+            pct = 100 * ext_chars / total
+            print(f"[主題占有率] 外部素材の章 {len(ext_rows)}章 / {ext_chars:,}字 = {pct:.1f}%"
+                  f"（上限 {EXT_BUDGET:.0f}%）")
+            for no, ti, ch, e, n in ext_rows:
+                print(f"    §{no} {ti}  {ch:,}字  外部素材 {e}/{n}")
+            if pct > EXT_BUDGET:
+                fails.append(
+                    f"主題占有率 — 外部素材だけで組まれた章が {pct:.1f}%（上限 {EXT_BUDGET:.0f}%）。"
+                    "他事件・全国統計で尺を伸ばさず、本件の未使用素材で埋めること")
+            print()
 
     # 種別の語彙
     bad = {r["kind"] for r in rows} - KINDS

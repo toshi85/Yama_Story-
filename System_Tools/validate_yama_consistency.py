@@ -14,6 +14,8 @@
 """
 import sys, re, glob, os
 
+NEWLINE = chr(10)
+
 def load_master(p):
     ch, cur, dup = [], None, {}
     for i, l in enumerate(open(p, encoding="utf-8")):
@@ -81,6 +83,24 @@ def main():
         exist = {c["no"] for c in ch}
         bad = sorted(used - exist)
         if bad: fails.append(f"素材シートの「使う章」が本文に存在しない: {', '.join('§'+str(b) for b in bad)}")
+
+        # 6. 素材# と「使う章」の双方向一致（2026-09-02 追加）
+        #    2026-09-01 の戸沢村で、§22 を新設したのに素材シートの「使う章」を振り直さず 65件がズレていた。
+        #    「使う章」は プロット表の素材# から一意に決まるので、機械で突き合わせる。
+        row_use = {}
+        for l in body.split(NEWLINE):
+            m = re.match(r"^\|\s*(\d+)\s*\|", l)
+            if not m or l.count("|") < 3:
+                continue
+            row_use[m.group(1)] = set(re.findall(r"§(\d+)", l.split("|")[-2]))
+        miss = []
+        for n, ids in sorted(plot_src.items()):
+            for sid in ids:
+                if sid in row_use and str(n) not in row_use[sid]:
+                    miss.append(f"素材#{sid} を §{n} で使っているが、素材シートの「使う章」に §{n} が無い")
+        if miss:
+            fails.append(f"素材#と「使う章」の食い違い {len(miss)}件: " + " / ".join(miss[:6])
+                         + (" ..." if len(miss) > 6 else ""))
     else:
         warns.append("Fact_Sheet_*.md が見つからない")
 
