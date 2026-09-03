@@ -279,6 +279,34 @@ def validate_narrative_tone(file_path):
             print(f"  ❌ {err}")
             print()
 
+    # --- 発言に「」が付いていない（2026-09-03 追加・WARNのみ）-------------
+    #   ユーザー指摘:「こういう発言には、ちゃんと「」をつけてくださいね」
+    #   実例（戸沢村）:
+    #     ナレーター: 佐藤浩人さんは、こう話しています。
+    #     ナレーター: 3件目のあと、この村で同じことは起きていない。   ← 「」が無い
+    #   富山のクマ獲り名人の3つの箴言も、原文は「」つきなのに地の文になっていた。
+    #
+    #   🚨 FAIL にしない。出荷済みの朱鞠内湖（実測トップ・維持率34.1%）に
+    #      「みずからの体験をこう語っています」→ 体験の要約、という形が1件ある。
+    #      直接引用を約束する言い方と、体験の要約を機械で分けられないので、
+    #      鳴らして人に見せるところまでにする。
+    import re as _re3
+    _CUE = _re3.compile(r"(こう|そう|次のように)(話して|書いて|記して|語って|述べて|残して)")
+    _lines = [_l.rstrip() for _l in open(file_path, encoding="utf-8")]
+    _nl = [(_i + 1, _l) for _i, _l in enumerate(_lines) if _l.startswith("ナレーター:")]
+    for _k, (_no, _l) in enumerate(_nl):
+        if not _CUE.search(_l) or _k + 1 >= len(_nl):
+            continue
+        _nn, _nx = _nl[_k + 1]
+        _body = _re3.sub(r"\s*<!--.*?-->", "", _nx).split(":", 1)[1].strip()
+        if "「" in _body or _CUE.search(_nx):
+            continue
+        warnings.append(
+            f"L{_no} 発言に「」が付いていません: 「{_l.split(':', 1)[1].strip()[:30]}」の次の "
+            f"L{_nn}「{_body[:40]}」\n"
+            f"   → 資料の原文に「」があるならそのまま「」で囲む。"
+            f"要約なら『〜と話しています』の形にして、引用だと約束しない")
+
     if warnings:
         print(f"[WARN] {len(warnings)} warning(s) found.")
         print("-" * 40)

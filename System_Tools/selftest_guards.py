@@ -306,6 +306,22 @@ def main():
         "ナレーター: 日本クマネットワークの報告書も、同じ3件を挙げています。\n")
     ok.append(check_pass("㉖b 二つ目を畳めば通る", "validate_yama_coherence.py", p, "＋限定語を"))
 
+    # ㉗ 発言に「」が付いていない（2026-09-03 新設・WARN）
+    d27 = os.path.join(tmp, "quote"); os.makedirs(d27)
+    p = os.path.join(d27, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 1. テスト\n\n"
+        "ナレーター: 佐藤浩人さんは、こう話しています。\n\n"
+        "ナレーター: 3件目のあと、この村で同じことは起きていない。\n")
+    ok.append(check("㉗ 発言に「」が付いていない", "validate_yama_narrative.py", p, "発言に「」が付いていません"))
+    d27b = os.path.join(tmp, "quoteb"); os.makedirs(d27b)
+    p = os.path.join(d27b, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 1. テスト\n\n"
+        "ナレーター: 佐藤浩人さんは、こう話しています。\n\n"
+        "ナレーター: 「3件目のあと、この村で同じことは起きていない」\n")
+    ok.append(check_pass("㉗b 「」で囲めば通る", "validate_yama_narrative.py", p, "発言に「」が付いていません"))
+
     # ⑤ プロット表の字数ズレ
     d2 = os.path.join(tmp, "stale"); os.makedirs(d2)
     open(os.path.join(d2, "Master.md"), "w", encoding="utf-8").write(HEAD + "\nナレーター: 十文字ちょうどの行。\n")
