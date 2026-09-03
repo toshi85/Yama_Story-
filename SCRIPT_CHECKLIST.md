@@ -280,6 +280,7 @@ python3 validate_yama_consistency.py <台本> # ★必須 台本↔プロット�
 python3 validate_yama_coherence.py   <台本> # ★必須 辻褄（章タイトル↔本文の矛盾・同じ章で反対・素材#の同期）
 #                                          … 資料に無い箇所の太字漏れ・太字の閉じ方の壊れも止める（YCP-035）
 #                                          … src の無い章・時間の飛び・結論の前借りも止める（YCP-036）
+# validate_yama_safety.py も 書籍の著者名（book_authors.txt）と「この本には／著書／同書」を止める（YCP-037）
 python3 validate_yama_plot.py      <プロット表> # ★必須 執筆前。素材密度（字/素材≤120）と主題占有率（外部素材の章≤15%）を含む
 ```
 

@@ -240,6 +240,34 @@ def main():
         "ナレーター: 59歳の女性が、クルミを拾いに出かけました。\n")
     ok.append(check_pass("㉒b 空いた時間を1行で言えば通る", "validate_yama_coherence.py", p, "が飛びますが"))
 
+    # ㉓ 書籍の著者名を本文に出す（2026-09-03 新設）
+    d23 = os.path.join(tmp, "author"); os.makedirs(d23)
+    p = os.path.join(d23, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 1. テスト\n<!-- src: 米田一彦『熊が人を襲うとき』p.206 -->\n\n"
+        "ナレーター: 米田さんは、そう書いています。\n")
+    ok.append(check("㉓ 書籍の著者名を本文に出す", "validate_yama_safety.py", p, "書籍の著者名"))
+    d23b = os.path.join(tmp, "authorb"); os.makedirs(d23b)
+    p = os.path.join(d23b, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 1. テスト\n<!-- src: 米田一彦『熊が人を襲うとき』p.206 -->\n\n"
+        "ナレーター: 研究者は、そう見ています。\n")
+    ok.append(check_pass("㉓b 名前を出さなければ通る", "validate_yama_safety.py", p, "書籍の著者名"))
+
+    # ㉔ 本を出典として明かす言い回し（2026-09-03 新設）
+    d24 = os.path.join(tmp, "book"); os.makedirs(d24)
+    p = os.path.join(d24, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 1. テスト\n\n"
+        "ナレーター: この本には、月ごとの事故の件数を並べたグラフがあります。\n")
+    ok.append(check("㉔ 本を出典として明かす言い回し", "validate_yama_safety.py", p, "本を出典として明かす"))
+    d24b = os.path.join(tmp, "bookb"); os.makedirs(d24b)
+    p = os.path.join(d24b, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 1. テスト\n\n"
+        "ナレーター: 月ごとの事故の件数を並べたグラフがあります。\n")
+    ok.append(check_pass("㉔b 本だと分からない形なら通る", "validate_yama_safety.py", p, "本を出典として明かす"))
+
     # ⑤ プロット表の字数ズレ
     d2 = os.path.join(tmp, "stale"); os.makedirs(d2)
     open(os.path.join(d2, "Master.md"), "w", encoding="utf-8").write(HEAD + "\nナレーター: 十文字ちょうどの行。\n")
