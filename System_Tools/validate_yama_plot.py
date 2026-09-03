@@ -28,6 +28,9 @@ Yamaプロット表バリデーター（執筆前ゲート）
 # 2026-09-01 較正: イントロ字数の基準を出荷済み7本（128-360字・中央値180）に合わせた。
 # 旧値200-270は羅臼岳(128)・大千軒岳(151)・風不死岳(162)・戸沢村(180)を落としていた。
 # → feedback_calibrate_audits_to_shipped_content.md
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import _infermarks
 import glob
 import os
 import re
@@ -298,7 +301,7 @@ def main(path):
     if not fs:
         warns.append("素材シート（Fact_Sheet_*.md）が同じフォルダに無いため、主題占有率を測れません")
     else:
-        body = Path(fs[0]).read_text(encoding="utf-8")
+        body = _infermarks.strip_infer(Path(fs[0]).read_text(encoding="utf-8"))
         ext_ids, all_ids = set(), set()
         for line in body.splitlines():
             m = re.match(r"^\|\s*(\d+)\s*\|([^|]*)\|", line)

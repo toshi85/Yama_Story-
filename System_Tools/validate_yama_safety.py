@@ -1,3 +1,6 @@
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import _infermarks
 import sys
 import re
 import os
@@ -101,7 +104,7 @@ def validate_file(file_path):
     
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
+            lines = _infermarks.strip_infer_lines(f.readlines())
     except FileNotFoundError:
         log_print("[ERROR]: File not found.")
         return False

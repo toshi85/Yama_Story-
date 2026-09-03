@@ -1,3 +1,6 @@
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import _infermarks
 import sys
 import os
 import re
@@ -47,7 +50,7 @@ def validate_structure(file_path):
     
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
+            content = _infermarks.strip_infer(f.read())
     except FileNotFoundError:
         print(f"❌ Error: File not found: {file_path}")
         sys.exit(1)

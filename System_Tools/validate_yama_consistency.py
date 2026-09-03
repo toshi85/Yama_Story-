@@ -12,13 +12,16 @@
   python3 validate_yama_consistency.py <Master.md>
   （同じフォルダの Plot_Sheet_*.md / Fact_Sheet_*.md を自動で探す）
 """
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import _infermarks
 import sys, re, glob, os, itertools
 
 NEWLINE = chr(10)
 
 def load_master(p):
     ch, cur, dup = [], None, {}
-    for i, l in enumerate(open(p, encoding="utf-8")):
+    for i, l in enumerate(_infermarks.strip_infer(open(p, encoding="utf-8").read()).split(NEWLINE)):
         l = l.rstrip("\n")
         m = re.match(r"^## (\d+)\. (.+)", l)
         if m:
@@ -103,7 +106,7 @@ def main():
     # 4/5. 素材シートとの整合（素材#の実在・「使う章」の実在）
     fp = glob.glob(os.path.join(d, "Fact_Sheet_*.md"))
     if fp:
-        body = open(fp[0], encoding="utf-8").read()
+        body = _infermarks.strip_infer(open(fp[0], encoding="utf-8").read())
         have = set(re.findall(r"^\|\s*(\d+)\s*\|", body, re.M))
         for n, ids in plot_src.items():
             miss = [i for i in ids if i not in have]

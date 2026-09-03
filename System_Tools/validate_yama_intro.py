@@ -9,6 +9,9 @@
 台本側で1行だけ指定が必要:
     結末（画になる一文）の直後の行に  <!-- HOOK-IMAGE -->  を置く
 """
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import _infermarks
 import re
 import sys
 
@@ -74,7 +77,7 @@ def chars(lines):
 
 
 def main(path):
-    t = open(path, encoding="utf-8").read()
+    t = _infermarks.strip_infer(open(path, encoding="utf-8").read())
     fails, warns = [], []
 
     # ---- パート比率 ----

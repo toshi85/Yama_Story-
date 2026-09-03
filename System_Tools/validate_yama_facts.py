@@ -20,6 +20,9 @@ Yama台本 事実・語り口バリデーター
   python3 Yama_Story/System_Tools/validate_yama_facts.py <台本>
 """
 
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import _infermarks
 import re
 import sys
 from pathlib import Path
@@ -56,7 +59,7 @@ def near_src(lines, idx, span=3):
 
 def main(path):
     p = Path(path)
-    lines = p.read_text(encoding="utf-8").split("\n")
+    lines = _infermarks.strip_infer(p.read_text(encoding="utf-8")).split("\n")
     narr_idx = [i for i, l in enumerate(lines) if l.startswith(NARR)]
 
     fails, warns = [], []

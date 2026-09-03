@@ -156,6 +156,22 @@ def main():
         "捕らえたどれがそれなのか、記録は食い違ったままです。\n")
     ok.append(check_pass("⑱b 食い違いを明示すれば通る", "validate_yama_coherence.py", p, "同じ章の中で反対"))
 
+    # ⑲ 資料に無い部分を埋めたのに、太字で示していない（2026-09-03 新設）
+    d19 = os.path.join(tmp, "coh3"); os.makedirs(d19)
+    p = os.path.join(d19, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 6. 1週間の山狩り\n"
+        "<!-- src: 素材#75。⚠️「胃の内容物を確認」は資料に無い＝人間側の確定判断 -->\n\n"
+        "ナレーター: 7頭から8頭のクマを捕らえ胃の内容物を確認しました。\n")
+    ok.append(check("⑲ 推測を埋めたのに太字が無い", "validate_yama_coherence.py", p, "太字が1つも無い"))
+    d19b = os.path.join(tmp, "coh3b"); os.makedirs(d19b)
+    p = os.path.join(d19b, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 6. 1週間の山狩り\n"
+        "<!-- src: 素材#75。⚠️「胃の内容物を確認」は資料に無い＝人間側の確定判断 -->\n\n"
+        "ナレーター: 7頭から8頭のクマを捕らえ**胃の内容物を確認しました**。\n")
+    ok.append(check_pass("⑲b 太字で示せば通る", "validate_yama_coherence.py", p, "太字が1つも無い"))
+
     # ⑤ プロット表の字数ズレ
     d2 = os.path.join(tmp, "stale"); os.makedirs(d2)
     open(os.path.join(d2, "Master.md"), "w", encoding="utf-8").write(HEAD + "\nナレーター: 十文字ちょうどの行。\n")

@@ -1,3 +1,6 @@
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import _infermarks
 import sys
 import re
 
@@ -68,11 +71,11 @@ def validate_narrative_tone(file_path):
 
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
+            lines = _infermarks.strip_infer_lines(f.readlines())
     except UnicodeDecodeError:
         try:
             with open(file_path, 'r', encoding='cp932') as f:
-                lines = f.readlines()
+                lines = _infermarks.strip_infer_lines(f.readlines())
         except Exception as e:
             print(f"Error opening file: {e}")
             sys.exit(1)

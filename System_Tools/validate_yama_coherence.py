@@ -23,6 +23,9 @@
   python3 validate_yama_coherence.py <Master.md>
   （同じフォルダの Fact_Sheet_*.md を自動で探す）
 """
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import _infermarks
 import sys, re, os, glob
 
 # --- Check 2 の対立語ペア -------------------------------------------------
@@ -72,7 +75,8 @@ def load_master(p):
         m = re.match(r"^## (\d+)\. (.+)", line)
         if m:
             cur = {"no": int(m.group(1)), "title": m.group(2).strip(),
-                   "narr": [], "srcs": set(), "line": i, "ok": None}
+                   "narr": [], "srcs": set(), "line": i, "ok": None,
+                   "note": "", "bold": 0}
             chapters.append(cur)
             continue
         if cur is None:
@@ -88,8 +92,13 @@ def load_master(p):
             for grp in re.findall(r"素材[#＃]\s*\d+(?:\s*[#＃]\s*\d+)*", line):
                 for n in re.findall(r"\d+", grp):
                     cur["srcs"].add(int(n))
+            cur["note"] += line
         elif line.startswith("ナレーター:"):
-            cur["narr"].append(re.sub(r"\s*<!--.*?-->", "", line.split(":", 1)[1]).strip())
+            cur["bold"] += line.count("**") // 2
+            cur["narr"].append(re.sub(r"\s*<!--.*?-->", "",
+                                      line.replace("**", "").split(":", 1)[1]).strip())
+        elif cur["note"] and line.strip() and not line.startswith("##"):
+            cur["note"] += line if line.lstrip().startswith(("①", "②", "③", "④", "⑤", "-", "  ")) else ""
     return chapters
 
 def load_facts(d):
@@ -225,6 +234,23 @@ def main():
     #    （§11→§12 2016→1988 / §21→§22 2020→2017 / §23→§24 2026→2016 / §26→§27 1998→1988）。
     #    振り返りや比較事例で年が戻るのは普通の構成で、本物と区別がつかない。
     #    **鳴りすぎる検査は無視されるので、置かない。**
+
+    # --- Check 4: 推測を埋めたのに、太字で示していない ----------------------
+    # 2026-09-03 ユーザー指示「推測の部分は、太文字にするなどできる？今後は」。
+    # 資料に無い部分を現実的な推論で埋めるのは可（同日の裁定）。ただし
+    # **どこが資料でどこが推論かは、読む人に見えていなければならない**。
+    # src に「資料に無い／補完／人間側の確定判断」と書いた章は、本文に **太字** が
+    # 1つ以上ないと FAIL。src に書いていない推論はそもそも機械では見つけられないので、
+    # この検査が守るのは「自分で気づいて注記まで書いたのに、本文に印を付け忘れた」型だけ。
+    INFER = re.compile(r"資料に(?:記述が)?無い|資料に無く|補完|人間側の確定判断")
+    for c in chapters:
+        if INFER.search(c["note"]) and c["bold"] == 0:
+            hit = INFER.search(c["note"]).group(0)
+            fails.append(
+                f"§{c['no']}「{c['title'][:20]}」は src に「{hit}」と書いてあるのに、"
+                f"本文に太字が1つも無い（L{c['line']}）\n"
+                f"      → 資料に無い部分を **…** で囲む。囲めないなら、その行は書かない"
+            )
 
     # --- Check 3: 同じ素材の扱いの割れ -------------------------------------
     by_src = {}

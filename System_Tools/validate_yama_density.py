@@ -14,6 +14,9 @@ Full.md / 台本.txt の映像密度を物理チェック。
 使い方:
   python3 Yama_Story/System_Tools/validate_yama_density.py <file_path>
 """
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import _infermarks
 import sys
 import os
 import re
@@ -77,7 +80,7 @@ def parse_assets(file_path):
         list of dict: [{type, narration_chars, narration_text, line_num}, ...]
     """
     with open(file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
+        content = _infermarks.strip_infer(f.read())
 
     lines = content.split('\n')
     assets = []
