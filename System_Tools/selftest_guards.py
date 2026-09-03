@@ -60,7 +60,9 @@ import re as _re
 REGISTRY = []          # [(グループ記号, "fail"|"pass", 表示名, 検査スクリプト)]
 
 def _group_of(name):
-    m = _re.match(r"^([①-⑳])", name.strip())
+    # ⚠️ ①〜⑳ は U+2460〜、㉑〜㉟ は U+3251〜 で連続していない。
+    #    範囲を ①-⑳ だけにしていると ㉑ 以降が対にならず、増やした瞬間に赤くなる（2026-09-03）
+    m = _re.match(r"^([\u2460-\u2473\u3251-\u325f])", name.strip())
     return m.group(1) if m else name.strip()[:2]
 
 def check(name, script, path, must_contain):
@@ -187,6 +189,56 @@ def main():
         "<!-- src: 素材#120。⚠️ 資料に無い＝人間側の確定判断 -->\n\n"
         "ナレーター: **家族にタケノコを採りにいくと伝え**、午前10時ごろに出発。\n")
     ok.append(check_pass("⑳b 読点を印の外へ出せば通る", "validate_yama_coherence.py", p, "太字の閉じ方"))
+
+    # ㉑ 素材シートがあるのに src の無い章（2026-09-03 新設）
+    d21 = os.path.join(tmp, "coh5"); os.makedirs(d21)
+    open(os.path.join(d21, "Fact_Sheet_test.md"), "w", encoding="utf-8").write(
+        "| # | 事実 | 出典 | 確認 | 使う章 |\n|--:|:--|:--|:--|:--|\n| 1 | テスト素材 | X | Y | §2 |\n")
+    p = os.path.join(d21, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 2. 結論を先に出す章\n\n"
+        "ナレーター: 日本クマネットワークの報告書にも、こう書かれています。\n\n"
+        "ナレーター: 同じ1頭だった可能性が考えられる。\n\n"
+        "ナレーター: 2016年の十和利山でも、クマは移動しています。\n")
+    ok.append(check("㉑ 素材シートがあるのに src の無い章", "validate_yama_coherence.py", p, "src がありません"))
+    d21b = os.path.join(tmp, "coh5b"); os.makedirs(d21b)
+    open(os.path.join(d21b, "Fact_Sheet_test.md"), "w", encoding="utf-8").write(
+        "| # | 事実 | 出典 | 確認 | 使う章 |\n|--:|:--|:--|:--|:--|\n| 1 | テスト素材 | X | Y | §2 |\n")
+    open(os.path.join(d21b, "Plot_Sheet_test.md"), "w", encoding="utf-8").write(
+        "| 章 | タイトル | PART | 種別 | 設計 | 実測 | 素材# |\n|--:|:--|:--|:--|--:|--:|:--|\n"
+        "| 2 | 結論を先に出す章 | SHO | 説明 | 60 | 60 | 1 |\n")
+    p = os.path.join(d21b, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 2. 結論を先に出す章\n"
+        "<!-- src: 報告書＝素材#1 -->\n\n"
+        "ナレーター: 日本クマネットワークの報告書にも、こう書かれています。\n\n"
+        "ナレーター: 同じ1頭だった可能性が考えられる。\n\n"
+        "ナレーター: 2016年の十和利山でも、クマは移動しています。\n")
+    ok.append(check_pass("㉑b src を書けば通る", "validate_yama_coherence.py", p, "src がありません"))
+
+    # ㉒ 時間が飛ぶのに、飛んだと分かる行が無い（2026-09-03 新設）
+    d22 = os.path.join(tmp, "coh6"); os.makedirs(d22)
+    p = os.path.join(d22, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 6. 1週間の山狩り\n\n"
+        "ナレーター: 1988年5月27日。\n\n"
+        "ナレーター: 猟友会が緊急許可を取ります。\n\n"
+        "## 7. クルミを拾いに\n\n"
+        "ナレーター: 1988年10月6日。\n\n"
+        "ナレーター: 59歳の女性が、クルミを拾いに出かけました。\n")
+    ok.append(check("㉒ 132日飛ぶのに飛んだと分かる行が無い", "validate_yama_coherence.py", p,
+                    "が飛びますが"))
+    d22b = os.path.join(tmp, "coh6b"); os.makedirs(d22b)
+    p = os.path.join(d22b, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 6. 1週間の山狩り\n\n"
+        "ナレーター: 1988年5月27日。\n\n"
+        "ナレーター: 猟友会が緊急許可を取ります。\n\n"
+        "## 7. クルミを拾いに\n\n"
+        "ナレーター: それから4か月半、村は静かでした。\n\n"
+        "ナレーター: 1988年10月6日。\n\n"
+        "ナレーター: 59歳の女性が、クルミを拾いに出かけました。\n")
+    ok.append(check_pass("㉒b 空いた時間を1行で言えば通る", "validate_yama_coherence.py", p, "が飛びますが"))
 
     # ⑤ プロット表の字数ズレ
     d2 = os.path.join(tmp, "stale"); os.makedirs(d2)
