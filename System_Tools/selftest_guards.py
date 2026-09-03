@@ -357,6 +357,27 @@ def main():
     ok.append(check_pass("㉙b 数を出さず「また」で継げば通る／「〜のひとつ」は誤検知しない",
                          "validate_yama_narrative.py", p, "列挙の前に個数を宣言"))
 
+    # ㉚ 引用の改変（否定が消えて意味が逆になる）2026-09-03 新設
+    d30 = os.path.join(tmp, "quotemod"); os.makedirs(d30)
+    open(os.path.join(d30, "Fact_Sheet_test.md"), "w", encoding="utf-8").write(
+        "| # | 事実 | 出典 | 確認 | 使う章 |\n|--:|:--|:--|:--|:--|\n"
+        "| 1 | 佐藤さん「昔は裏手の山肌は歩くけど、ここに出なかったんですよ。ここ1、2年だね」 | note | 実物 | §1 |\n")
+    p = os.path.join(d30, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 1. テスト\n<!-- src: 素材#1 -->\n\n"
+        "ナレーター: 「昔は裏手の山肌は歩くけど、ここに出たんですよ。ここ1、2年だね」と話しています。\n")
+    ok.append(check("㉚ 引用の改変（否定が消える）", "validate_yama_facts.py", p, "引用の改変"))
+    d30b = os.path.join(tmp, "quotemodb"); os.makedirs(d30b)
+    open(os.path.join(d30b, "Fact_Sheet_test.md"), "w", encoding="utf-8").write(
+        "| # | 事実 | 出典 | 確認 | 使う章 |\n|--:|:--|:--|:--|:--|\n"
+        "| 1 | 佐藤さん「昔は裏手の山肌は歩くけど、ここに出なかったんですよ。ここ1、2年だね」 | note | 実物 | §1 |\n")
+    p = os.path.join(d30b, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 1. テスト\n<!-- src: 素材#1 -->\n\n"
+        "ナレーター: 「昔は裏手の山肌は歩くけど、ここに出なかったんですよ」と話しています。\n")
+    ok.append(check_pass("㉚b 抜粋なら通る（書き換えでなければよい）",
+                         "validate_yama_facts.py", p, "引用の改変"))
+
     # ⑤ プロット表の字数ズレ
     d2 = os.path.join(tmp, "stale"); os.makedirs(d2)
     open(os.path.join(d2, "Master.md"), "w", encoding="utf-8").write(HEAD + "\nナレーター: 十文字ちょうどの行。\n")

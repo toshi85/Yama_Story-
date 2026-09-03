@@ -57,6 +57,9 @@ def near_src(lines, idx, span=3):
     return any(SRC.search(lines[i]) for i in range(lo, hi))
 
 
+import re as _re
+
+
 def main(path):
     p = Path(path)
     lines = _infermarks.strip_infer(p.read_text(encoding="utf-8")).split("\n")
@@ -101,6 +104,49 @@ def main(path):
     # --- D. 出典カバー率 ---
     covered = sum(1 for i in narr_idx if near_src(lines, i, span=2))
     rate = 100 * covered / len(narr_idx) if narr_idx else 0
+
+    # --- 引用の改変（2026-09-03 新設・WARNのみ）-----------------------------
+    #   ユーザー確定稿で、佐藤さんの証言が
+    #     原文「昔は裏手の山肌は歩くけど、ここに出なかったんですよ。ここ1、2年だね」
+    #     台本「昔は裏手の山肌は歩くけど、ここに出たんですよ。ここ1、2年だね」
+    #   と、**否定が消えて意味が真逆**になっていた。「ここ1、2年だね」と繋がらなくなる。
+    #   発言の引用は、語尾も含めて資料のまま。抜粋（部分列）はよいが、書き換えは不可。
+    #
+    #   判定: 本文の「」内（12字以上）を素材シートの「」内と突き合わせ、
+    #         似ている（正規化して一致率0.7以上）のに一致せず、
+    #         **否定語の数か、含まれる数字が食い違う**ものだけ WARN。
+    #   較正: 戸沢村で誤検知2件（匿名記号A/Bを説明語へ置換した箇所・表記ゆれ）。
+    #         抜粋（片方がもう片方の部分列）は除外している。
+    import difflib as _dl
+    _NEG = _re.compile(r"ない|なかっ|ません|ませんで|ず[、。]|ぬ[、。]")
+    _NUM = _re.compile(r"\d+")
+    def _nrm(t):
+        return _re.sub(r"[\s\u3000\*（）()、。「」『』]", "", t)
+    _fq = []
+    for _fp in p.parent.glob("Fact_Sheet_*.md"):
+        _fq += [m.group(1) for m in
+                _re.finditer(r"[「『]([^」』\n|]{12,})[」』]", _fp.read_text(encoding="utf-8"))]
+    if _fq:
+        for _i, _l in enumerate(lines, 1):
+            if not _l.startswith("ナレーター:"):
+                continue
+            _t = _re.sub(r"\s*<!--.*?-->", "", _l)
+            for _m in _re.finditer(r"「([^」\n]{12,})」", _t):
+                _q = _m.group(1); _nq = _nrm(_q)
+                _best = max(((_dl.SequenceMatcher(None, _nq, _nrm(_f)).ratio(), _f) for _f in _fq),
+                            default=(0, ""))
+                if _best[0] < 0.7 or _best[0] >= 1.0:
+                    continue
+                _nf = _nrm(_best[1])
+                if _nq in _nf or _nf in _nq:
+                    continue
+                if (len(_NEG.findall(_q)) != len(_NEG.findall(_best[1]))
+                        or _NUM.findall(_nq) != _NUM.findall(_nf)):
+                    warns.append((_i, "D/引用の改変",
+                                  f"素材シートの引用と、否定か数字が食い違います（一致率{_best[0]:.2f}）\n"
+                                  f"      素材: {_best[1][:60]}\n"
+                                  f"      → 発言の引用は語尾まで資料のまま。抜粋は可、書き換えは不可（YCP-042）",
+                                  _q[:60]))
 
     print("=" * 62)
     print(f"[Yama Facts Validator] {p.name}")
