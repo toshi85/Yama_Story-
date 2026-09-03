@@ -259,14 +259,33 @@ def main():
     p = os.path.join(d24, "Master.md")
     open(p, "w", encoding="utf-8").write(
         "# T\n\n## 1. テスト\n\n"
-        "ナレーター: この本には、月ごとの事故の件数を並べたグラフがあります。\n")
+        "ナレーター: ただし同じ本の別のページには、前から咬まれたと書かれています。\n")
     ok.append(check("㉔ 本を出典として明かす言い回し", "validate_yama_safety.py", p, "本を出典として明かす"))
     d24b = os.path.join(tmp, "bookb"); os.makedirs(d24b)
     p = os.path.join(d24b, "Master.md")
     open(p, "w", encoding="utf-8").write(
         "# T\n\n## 1. テスト\n\n"
-        "ナレーター: 月ごとの事故の件数を並べたグラフがあります。\n")
+        "ナレーター: ただし同じ研究者は、別のところで、前から咬まれたと書いています。\n")
     ok.append(check_pass("㉔b 本だと分からない形なら通る", "validate_yama_safety.py", p, "本を出典として明かす"))
+
+    # ㉕ 助数詞・標本・日本などを誤検知しない／SAFETY_OK 宣言で外せる（2026-09-03 新設）
+    d25 = os.path.join(tmp, "bookfp"); os.makedirs(d25)
+    p = os.path.join(d25, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 1. テスト\n\n"
+        "ナレーター: 刃渡り5センチのナイフ一本で、ヒグマと向き合いました。\n\n"
+        "ナレーター: 標本にしてみると、頭の骨に古い傷が残っていたのです。\n\n"
+        "ナレーター: 日本では、こうした事故は多くありません。\n\n"
+        "ナレーター: 星野さん自身、著書の中でこう書いています。"
+        " <!-- SAFETY_OK: 本人がこの回の題材で、その人自身の著書を引くのは出典を隠す話とは別 -->\n")
+    ok.append(check_pass("㉕ 助数詞・標本・日本とSAFETY_OK宣言を誤検知しない",
+                         "validate_yama_safety.py", p, "本を出典として明かす"))
+    d25b = os.path.join(tmp, "bookfpb"); os.makedirs(d25b)
+    p = os.path.join(d25b, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 1. テスト\n\n"
+        "ナレーター: 星野さん自身、著書の中でこう書いています。\n")
+    ok.append(check("㉕b 宣言が無ければ止まる", "validate_yama_safety.py", p, "本を出典として明かす"))
 
     # ⑤ プロット表の字数ズレ
     d2 = os.path.join(tmp, "stale"); os.makedirs(d2)

@@ -715,7 +715,7 @@ A documentary still of a wild brown bear catching a sockeye salmon mid-leap in a
 A peaceful documentary still of a brown bear foraging berries from a low bush in a Kamchatka forest in summer, soft natural light filtering through trees. Photorealistic, RED camera, documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 3 separate images.
 ```
 
-ナレーター: 星野さん自身、著書の中でこう書いています。
+ナレーター: 星野さん自身、著書の中でこう書いています。 <!-- SAFETY_OK: 星野道夫さん本人がこの回の題材で、その人自身の著書を引くのは、出典の本を隠す話とは別（YCP-037の例外） -->
 
 【制作メモ】
 - 【画面エフェクト】引用テロップ「はじめから人を襲おうとするクマは、まずいない」（『アラスカ 光と風』六興出版・1986）

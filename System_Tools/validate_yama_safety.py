@@ -47,8 +47,15 @@ BANNED_WORDS = {
     #    ネット上で無料で読める記事・報告書に出てくる専門家や取材対象の実名は、
     #    そのまま出してよい（例: 戸沢村役場の小林室長、猟友会の佐藤さん、JBNの報告書）。
     # 著者名は Yama_Story/System_Tools/book_authors.txt に1行1名で足す。
-    r"(?<!絵)本には|(?<!絵)本の中で|(?<!絵)本によると|著書|という本|この本|巻末|同書":
-        "NG: 本を出典として明かす言い回し。「記録には」「この集計では」など、本だと分からない形にする（YCP-037）",
+    # ⚠️ 2026-09-03: 最初は「本には／本の中で／本によると」だけを見ていて、
+    #    「同じ本の別のページには」を素通りさせた（ユーザー指摘「こういうのも絶対禁止」）。
+    #    **「本」の直後に助詞が来る形すべて**と、ページ・章・巻を指す語を止める。
+    #    ⚠️ 較正で出た誤検知を除外している: 標本／一本・二本…（助数詞）／日本／絵本／
+    #       本人・本州・本家・本当・基本・資本・台本・見本。出荷済み7本で誤検知ゼロを確認。
+    r"(?<![絵日標基資根台手見])(?<![一二三四五六七八九十数何\d])本(?![人州家当部社来能質格音棚語])[のにはをでも、。]|"
+    r"著書|という本|この本|同書|巻末|"
+    r"別のページ|同じページ|ページには|ページ目|第[一二三四五六七八九十\d]+章には":
+        "NG: 本を出典として明かす言い回し。「記録には」「この集計では」「別のところで」など、本だと分からない形にする（YCP-037）",
 }
 
 # 書籍の著者名（1行1名）。本文に出たら止める。2026-09-03 新設
@@ -130,6 +137,7 @@ def validate_file(file_path):
         return False
 
     errors = []
+    declared = []
 
     # --- Title / Thumbnail scoped check (2026-09-01) ---
     # H1（動画タイトル）と、見出しに「サムネ」を含む節だけを対象にする
@@ -197,7 +205,13 @@ def validate_file(file_path):
             repetition_count = 0
 
         # 1. NG Word & Pronoun Check
-        if not is_metadata:
+        # 意図した例外は行末に宣言を置く（2026-09-03 新設・COHERENCE_OK と同じ形）
+        #   ナレーター: 星野さん自身、著書の中でこう書いています。 <!-- SAFETY_OK: 本人が題材で、その人の著書だと明かすのは隠す対象ではない -->
+        # ⚠️ 宣言は検査を黙らせるだけ。理由を8字以上書くこと
+        _ok = re.search(r"<!--\s*SAFETY_OK:\s*(.{8,}?)\s*-->", line)
+        if _ok:
+            declared.append(f"Line {line_num}: {_ok.group(1)}")
+        if not is_metadata and not _ok:
             for pattern, reason in BANNED_WORDS.items():
                 matches = re.finditer(pattern, line)
                 for match in matches:
@@ -245,6 +259,12 @@ def validate_file(file_path):
                     has_name = bool(re.search(r'[ァ-ヶー]{2,}', stripped_line)) or bool(re.search(r'[A-Z][a-z]+', stripped_line))
                     if has_name:
                         errors.append(f"Line {line_num}: Victim dignity concern: '{neg_word}' used near a proper name. Rephrase to respect victims.\n   -> \"{stripped_line}\"")
+
+    if declared:
+        log_print(f"--- 検査を外す宣言（SAFETY_OK）{len(declared)}件 ---")
+        for d in declared:
+            log_print(f"    {d}")
+        log_print("    ⚠️ 宣言は検査を黙らせるだけ。中身が本当に例外かは人が読む")
 
     if errors:
         log_print(f"[FAILED]: Found {len(errors)} issues.")
