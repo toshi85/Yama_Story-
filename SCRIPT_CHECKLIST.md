@@ -277,6 +277,7 @@ python3 validate_yama_facts.py     <台本>   # ★必須 出典なしの断定�
 python3 audit_numeric_facts.py     <台本>   # ★必須 出典の付いていない数値を全件列挙
 python3 validate_yama_intro.py     <台本>   # ★必須 朱鞠内湖フォーミュラ（イントロ・問い2つ・谷・二山）
 python3 validate_yama_consistency.py <台本> # ★必須 台本↔プロット表↔素材シートの整合＋完全重複行
+python3 validate_yama_coherence.py   <台本> # ★必須 辻褄（章タイトル↔本文の矛盾・同じ章で反対・素材#の同期）
 python3 validate_yama_plot.py      <プロット表> # ★必須 執筆前。素材密度（字/素材≤120）と主題占有率（外部素材の章≤15%）を含む
 ```
 
@@ -287,6 +288,13 @@ python3 validate_yama_plot.py      <プロット表> # ★必須 執筆前。素
 >   … 「ここで資料を開きます」「地図で見てみます」12件、繋がらない固有名詞（最上川）を検出
 > - `validate_yama_consistency.py`（新規）
 >   … 完全重複ナレ行／プロット表の章題・字数のズレ／素材シートの「使う章」が本文に無い／素材#が素材シートに無い
+>
+> 🚨 **2026-09-03 新設**
+> - `validate_yama_coherence.py`（新規・PostToolUse で自動実行。FAIL は exit 2 でブロック）
+>   … **資料を並べただけ**を止める。章タイトルと本文が反対／同じ章で反対のことを言う／台本の src とプロット表の素材#がズレる
+>   意図した対比は章の直下に `<!-- COHERENCE_OK: 理由（8字以上） -->` を置く。宣言は検査の出力に全部並ぶので隠せない
+>   ⚠️ **止まるのは「書いてあること同士の食い違い」だけ。** 実測で事故10件中7件。
+>   「襲われた人が書かれていない」のような**不在**は検出できない → `Correction_Patterns.md` YCP-034
 >
 > 🚨 **2026-09-02 新設**
 > - `validate_yama_plot.py` の **Check 10 主題占有率**（外部素材だけで組まれた章 ≤ 15%）

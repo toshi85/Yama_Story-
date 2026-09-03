@@ -121,6 +121,41 @@ def main():
     open(p, "w", encoding="utf-8").write(HEAD + "\nナレーター: クマは二人に出会った場合、動いているほうの人を襲う。\n\n## 2. 別の章\n\nナレーター: クマは二人に出会った場合、動いているほうの人を襲う。\n")
     ok.append(check("④ 完全重複ナレ行", "validate_yama_consistency.py", p, "完全重複ナレ行"))
 
+    # ⑰ 辻褄検査（2026-09-03 新設）— 章タイトルと本文が反対
+    d17 = os.path.join(tmp, "coh1"); os.makedirs(d17)
+    p = os.path.join(d17, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 4. クマが、そこから動かなかった\n\n"
+        "ナレーター: ブナの木の下にいたクマは、間もなく姿を消します。\n\n"
+        "ナレーター: しかし6人は、男性を運び出すことを諦めました。\n")
+    ok.append(check("⑰ 章タイトルと本文が反対", "validate_yama_coherence.py", p, "章タイトルと本文が反対"))
+    d17b = os.path.join(tmp, "coh1b"); os.makedirs(d17b)
+    p = os.path.join(d17b, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 4. クマが、そこから動かなかった\n\n"
+        "ナレーター: 6人は声を上げ、石を投げつけます。\n\n"
+        "ナレーター: しかし、それでもクマはその場に居座り続けました。\n")
+    ok.append(check_pass("⑰b 直した版は通る", "validate_yama_coherence.py", p, "章タイトルと本文が反対"))
+
+    # ⑱ 同じ章の中で反対のことを言う（説明なし）
+    d18 = os.path.join(tmp, "coh2"); os.makedirs(d18)
+    p = os.path.join(d18, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 6. 1週間の山狩り\n\n"
+        "ナレーター: 新聞は、成果は上がらなかった、と書いています。\n\n"
+        "ナレーター: ただし、新聞に載らなかったことがあります。\n\n"
+        "ナレーター: 猟友会は1週間に7頭から8頭のクマを捕らえています。\n")
+    ok.append(check("⑱ 同じ章で反対（成果なし↔捕獲）", "validate_yama_coherence.py", p, "同じ章の中で反対"))
+    d18b = os.path.join(tmp, "coh2b"); os.makedirs(d18b)
+    p = os.path.join(d18b, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 6. 1週間の山狩り\n\n"
+        "ナレーター: 新聞は、成果は上がらなかった、と書いています。\n\n"
+        "ナレーター: 猟友会は7頭から8頭のクマを捕らえています。\n\n"
+        "ナレーター: それでも「成果なし」でした。探していたのは男性を襲った1頭で、"
+        "捕らえたどれがそれなのか、記録は食い違ったままです。\n")
+    ok.append(check_pass("⑱b 食い違いを明示すれば通る", "validate_yama_coherence.py", p, "同じ章の中で反対"))
+
     # ⑤ プロット表の字数ズレ
     d2 = os.path.join(tmp, "stale"); os.makedirs(d2)
     open(os.path.join(d2, "Master.md"), "w", encoding="utf-8").write(HEAD + "\nナレーター: 十文字ちょうどの行。\n")
