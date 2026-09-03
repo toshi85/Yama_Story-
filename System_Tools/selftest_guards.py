@@ -338,6 +338,25 @@ def main():
         "ナレーター: 農家に居ついていたようです」と話しています。\n")
     ok.append(check_pass("㉘b セリフの後に帰属を置けば通る", "validate_yama_narrative.py", p, "帰属が前に出ています"))
 
+    # ㉙ 列挙の前に個数を宣言（2026-09-03 新設・WARN）
+    d29 = os.path.join(tmp, "cnt"); os.makedirs(d29)
+    p = os.path.join(d29, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 1. テスト\n\n"
+        "ナレーター: 1頭だと考える根拠は、三つ。\n\n"
+        "ナレーター: 傷の場所が、よく似ていること。\n")
+    ok.append(check("㉙ 列挙の前に個数を宣言", "validate_yama_narrative.py", p, "列挙の前に個数を宣言"))
+    d29b = os.path.join(tmp, "cntb"); os.makedirs(d29b)
+    p = os.path.join(d29b, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 1. テスト\n\n"
+        "ナレーター: 1頭だと考える根拠としては、\n\n"
+        "ナレーター: 傷の場所が、よく似ていること。\n\n"
+        "ナレーター: また、最初の2件の現場が、200メートルしか離れていないこと。\n\n"
+        "ナレーター: 湖の中でも、最も奥まった場所のひとつです。\n")
+    ok.append(check_pass("㉙b 数を出さず「また」で継げば通る／「〜のひとつ」は誤検知しない",
+                         "validate_yama_narrative.py", p, "列挙の前に個数を宣言"))
+
     # ⑤ プロット表の字数ズレ
     d2 = os.path.join(tmp, "stale"); os.makedirs(d2)
     open(os.path.join(d2, "Master.md"), "w", encoding="utf-8").write(HEAD + "\nナレーター: 十文字ちょうどの行。\n")
