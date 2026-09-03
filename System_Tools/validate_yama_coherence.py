@@ -76,7 +76,7 @@ def load_master(p):
         if m:
             cur = {"no": int(m.group(1)), "title": m.group(2).strip(),
                    "narr": [], "srcs": set(), "line": i, "ok": None,
-                   "note": "", "bold": 0}
+                   "note": "", "bold": 0, "raw": []}
             chapters.append(cur)
             continue
         if cur is None:
@@ -95,6 +95,7 @@ def load_master(p):
             cur["note"] += line
         elif line.startswith("ナレーター:"):
             cur["bold"] += line.count("**") // 2
+            cur["raw"].append(line.rstrip())
             cur["narr"].append(re.sub(r"\s*<!--.*?-->", "",
                                       line.replace("**", "").split(":", 1)[1]).strip())
         elif cur["note"] and line.strip() and not line.startswith("##"):
@@ -251,6 +252,21 @@ def main():
                 f"本文に太字が1つも無い（L{c['line']}）\n"
                 f"      → 資料に無い部分を **…** で囲む。囲めないなら、その行は書かない"
             )
+
+    # --- Check 5: 太字の閉じ方がドキュメントで壊れる形 ----------------------
+    # 2026-09-03。台本をGoogleドキュメントへ「マークダウンから貼り付け」したとき、
+    # 閉じの ** の直前が読点だと強調として解釈されず、** が文字のまま残った
+    # （CommonMark の右フランキング規則）。実測2件。行末で閉じるぶんには問題ない。
+    # 印を読点の外へ出す（**…伝え、** → **…伝え**、）だけで直る。
+    BAD_BOLD = re.compile(r"\*\*[^*]*?[、。，．]\*\*(?=.)")
+    for c in chapters:
+        for t in c["raw"]:
+            for m in BAD_BOLD.finditer(t):
+                fails.append(
+                    f"§{c['no']} 太字の閉じ方がドキュメントで壊れます: 「{m.group(0)}」\n"
+                    f"      → 読点を印の外へ出す（**…**、の形にする）。"
+                    f"閉じ ** の直前が読点だと Google ドキュメントで太字にならない"
+                )
 
     # --- Check 3: 同じ素材の扱いの割れ -------------------------------------
     by_src = {}

@@ -172,6 +172,22 @@ def main():
         "ナレーター: 7頭から8頭のクマを捕らえ**胃の内容物を確認しました**。\n")
     ok.append(check_pass("⑲b 太字で示せば通る", "validate_yama_coherence.py", p, "太字が1つも無い"))
 
+    # ⑳ 太字の閉じ方がドキュメントで壊れる（2026-09-03 新設）
+    d20 = os.path.join(tmp, "coh4"); os.makedirs(d20)
+    p = os.path.join(d20, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 2. 最初に山へ入った人\n"
+        "<!-- src: 素材#120。⚠️ 資料に無い＝人間側の確定判断 -->\n\n"
+        "ナレーター: **家族にタケノコを採りにいくと伝え、**午前10時ごろに出発。\n")
+    ok.append(check("⑳ 太字の閉じ方がドキュメントで壊れる", "validate_yama_coherence.py", p, "太字の閉じ方"))
+    d20b = os.path.join(tmp, "coh4b"); os.makedirs(d20b)
+    p = os.path.join(d20b, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 2. 最初に山へ入った人\n"
+        "<!-- src: 素材#120。⚠️ 資料に無い＝人間側の確定判断 -->\n\n"
+        "ナレーター: **家族にタケノコを採りにいくと伝え**、午前10時ごろに出発。\n")
+    ok.append(check_pass("⑳b 読点を印の外へ出せば通る", "validate_yama_coherence.py", p, "太字の閉じ方"))
+
     # ⑤ プロット表の字数ズレ
     d2 = os.path.join(tmp, "stale"); os.makedirs(d2)
     open(os.path.join(d2, "Master.md"), "w", encoding="utf-8").write(HEAD + "\nナレーター: 十文字ちょうどの行。\n")
