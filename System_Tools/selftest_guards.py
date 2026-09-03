@@ -322,6 +322,22 @@ def main():
         "ナレーター: 「3件目のあと、この村で同じことは起きていない」\n")
     ok.append(check_pass("㉗b 「」で囲めば通る", "validate_yama_narrative.py", p, "発言に「」が付いていません"))
 
+    # ㉘ 発言の帰属が前に出ている（2026-09-03 新設・WARN）
+    d28 = os.path.join(tmp, "attr"); os.makedirs(d28)
+    p = os.path.join(d28, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 1. テスト\n\n"
+        "ナレーター: 小林室長は、こう話しています。\n\n"
+        "ナレーター: 「事件の前か後かは不明です」\n")
+    ok.append(check("㉘ 発言の帰属が前に出ている", "validate_yama_narrative.py", p, "帰属が前に出ています"))
+    d28b = os.path.join(tmp, "attrb"); os.makedirs(d28b)
+    p = os.path.join(d28b, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 1. テスト\n\n"
+        "ナレーター: 小林室長は、「事件の前か後かは不明ですが、\n\n"
+        "ナレーター: 農家に居ついていたようです」と話しています。\n")
+    ok.append(check_pass("㉘b セリフの後に帰属を置けば通る", "validate_yama_narrative.py", p, "帰属が前に出ています"))
+
     # ⑤ プロット表の字数ズレ
     d2 = os.path.join(tmp, "stale"); os.makedirs(d2)
     open(os.path.join(d2, "Master.md"), "w", encoding="utf-8").write(HEAD + "\nナレーター: 十文字ちょうどの行。\n")
