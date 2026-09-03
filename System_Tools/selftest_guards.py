@@ -287,6 +287,25 @@ def main():
         "ナレーター: 星野さん自身、著書の中でこう書いています。\n")
     ok.append(check("㉕b 宣言が無ければ止まる", "validate_yama_safety.py", p, "本を出典として明かす"))
 
+    # ㉖ 同じ数字を資料を変えて二度言う（2026-09-03 新設）
+    d26 = os.path.join(tmp, "dupnum"); os.makedirs(d26)
+    p = os.path.join(d26, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 20. 44年で、三人だけ\n\n"
+        "ナレーター: 山形県は、1977年から2020年までの人身事故を一覧にしています。\n\n"
+        "ナレーター: そのなかで、命が失われたと記録されているのは、1988年の3件だけ。\n\n"
+        "ナレーター: 日本クマネットワークの報告書も、同じことを書いています。\n\n"
+        "ナレーター: 記録が残る1977年から2008年までで、命が失われた事故は、この3件だけです。\n")
+    ok.append(check("㉖ 同じ数字を資料を変えて二度言う", "validate_yama_coherence.py", p, "＋限定語を"))
+    d26b = os.path.join(tmp, "dupnumb"); os.makedirs(d26b)
+    p = os.path.join(d26b, "Master.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 20. 44年で、三人だけ\n\n"
+        "ナレーター: 山形県は、1977年から2020年までの人身事故を一覧にしています。\n\n"
+        "ナレーター: そのなかで、命が失われたと記録されているのは、1988年の3件だけ。\n\n"
+        "ナレーター: 日本クマネットワークの報告書も、同じ3件を挙げています。\n")
+    ok.append(check_pass("㉖b 二つ目を畳めば通る", "validate_yama_coherence.py", p, "＋限定語を"))
+
     # ⑤ プロット表の字数ズレ
     d2 = os.path.join(tmp, "stale"); os.makedirs(d2)
     open(os.path.join(d2, "Master.md"), "w", encoding="utf-8").write(HEAD + "\nナレーター: 十文字ちょうどの行。\n")
