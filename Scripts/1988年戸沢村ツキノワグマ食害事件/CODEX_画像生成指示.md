@@ -5,24 +5,49 @@
 
 ---
 
-## やること（これをコピーして渡す）
+## 常駐はすでに入っています（2026-09-04）
+
+生成は **launchd（`com.yama.imagegen`）が動かしています。** Codex のセッションとは無関係に、
+ログインのたびに勝手に立ち上がり、落ちれば30秒で再起動します。
+
+**Codex がやることは、様子を見ることだけです。**
+`run.py` を自分で起動しないでください。監視ループも作らないでください。二重起動になります。
 
 ```
-Yama_Story の作品フォルダ
-  /Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件
-の画像を、全部そろうまで作ってください。
+Yama_Story の画像生成は launchd（com.yama.imagegen）が常駐で回しています。
+新しく起動せず、状態だけ見てください。
 
-  cd /Users/tosimasa/Desktop/Antigravity/Yama_Story
-  python3 System_Tools/imagegen/run.py "Scripts/1988年戸沢村ツキノワグマ食害事件"
-
-このコマンドを走らせたまま最後まで見届けてください。
+  launchctl print gui/$(id -u)/com.yama.imagegen | grep -E "state|pid|last exit"
+  ls /Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/images/*.png | wc -l
+  tail -20 /Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/.imagegen/imagegen.log
 
 守ってほしいこと
 - 生成上限で止まるのは正常です。止めない、別の方法に切り替えない、二重に起動しない。
-- 途中で終わらせない。images/ が311枚になるまで続ける。
+- run.py を手で起動しない。while ループの監視役も作らない。launchd が持ち主です。
 - プロンプトの中身は書き換えない。image_queue.json も編集しない。
-- 進捗を聞かれたら images/*.png の枚数で答える。
+- 進捗を聞かれたら images/*.png の枚数で答える（目標311枚）。
 ```
+
+### 止まっている・入れ直したいとき（人が使うコマンド）
+
+```bash
+cd /Users/tosimasa/Desktop/Antigravity/Yama_Story
+launchctl kickstart -k gui/$(id -u)/com.yama.imagegen     # 入れ直す
+launchctl print   gui/$(id -u)/com.yama.imagegen          # 状態を見る
+launchctl bootout gui/$(id -u)/com.yama.imagegen          # 止める
+python3 System_Tools/imagegen/install_for_student.py "Scripts/1988年戸沢村ツキノワグマ食害事件"   # 入れ直し（登録から）
+```
+
+---
+
+## 2つの「上限」を混同しない
+
+| 何の上限か | どう見えるか | どうなるか |
+|:--|:--|:--|
+| **ChatGPTの画像生成**（24時間で約90枚） | 専用Chromeのタブ名が「画像生成上限通知」 | `run.py` が2〜20分おきに投げ直し、**空いた瞬間に自分で再開する** |
+| **Codexの利用枠**（5時間ごと） | Codexの画面に「使用可能量は残り1%」 | 画像生成には**影響しません**。launchdが回し続けます |
+
+Codexが止まっても画像は増え続けます。Codexの枠が戻ったら、状態を見るだけで足ります。
 
 ---
 
