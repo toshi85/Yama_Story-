@@ -33,9 +33,27 @@ CHAR_STYLE = (
     "a few large plain shapes, no small pockets, no straps, no cords, no buckles, no badges, no "
     "gadgets, no accessories other than the ones listed. If the description below mentions many "
     "pockets, straps or accessories, simplify them into a few plain shapes. "
-    "Standing upright, front-facing, symmetrical, arms relaxed at the sides. "
     "Full body head to feet, whole figure inside the frame, centred."
 )
+
+# 姿勢の一文は素材の中身で切り替える（2026-08-28 の定型は「直立・左右対称」固定だった）。
+#   四足の動物に「Standing upright」を付けると二足歩行の絵になる（Phase2の禁止事項）。
+#   動きのあるカットに「arms relaxed at the sides」を付けると、指定した姿勢が消える。
+POSE_UPRIGHT = "Standing upright, front-facing, symmetrical, arms relaxed at the sides. "
+POSE_ALLFOURS = "Standing on all four legs in a side-front view, never upright and never on two legs. "
+POSE_ASDESCRIBED = "Posed exactly as described below, front-facing where possible. "
+POSE_VERBS = re.compile(
+    r"\b(kneel|crouch|sprint|running|runs|walking|walks|leaning|lean|bent|bending|"
+    r"seated|sitting|lying|lies|raised|raising|pointing|points|holding|holds|"
+    r"reaching|clutch|gripping|grips|swinging|swings|turning|turns|shrug)", re.I)
+
+
+def pose_of(body: str) -> str:
+    if re.search(r"ON ALL FOURS|all four", body, re.I):
+        return POSE_ALLFOURS
+    if POSE_VERBS.search(body):
+        return POSE_ASDESCRIBED
+    return POSE_UPRIGHT
 
 CHAR_TAIL = (
     "No written words or lettering anywhere. "
@@ -99,7 +117,7 @@ def parse(md_path: Path):
         items.append({
             "id": cid, "asset_no": None, "kind": "キャラ基準画像", "slot": "char_ref",
             "aspect": "1:1", "label": label, "narration": "", "char_ref": None,
-            "body": body, "prompt": f"{CHAR_STYLE} {body} {CHAR_TAIL}",
+            "body": body, "prompt": f"{CHAR_STYLE} {pose_of(body)}{body} {CHAR_TAIL}",
         })
 
     # --- 本文アセット ---
@@ -125,7 +143,7 @@ def parse(md_path: Path):
 
             if name == "char":
                 body = char_body(raw)
-                prompt = f"{CHAR_STYLE} {body} {CHAR_TAIL}"
+                prompt = f"{CHAR_STYLE} {pose_of(body)}{body} {CHAR_TAIL}"
                 ref = char_ref_of(raw)
             else:
                 body = prompt = re.sub(r"\s+", " ", raw).strip()

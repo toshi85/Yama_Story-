@@ -8,75 +8,79 @@
 
 スタイル方針: キャラ画像 = カートゥン調イラスト（太い輪郭線、フラットカラー、大きな瞳）。背景・実写調カットはフォトリアル（RED camera風、ドキュメンタリー調）。
 
-CHAR-01 1人目の被害者（61歳男性・農業・タケノコ採り）
+### CHAR-01: 1人目の被害者（61歳男性・農業・タケノコ採り）
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese farmer, 61 years old, weathered sun-darkened face, deeply lined forehead, short cropped grey hair, CLEAN-SHAVEN with no beard, no moustache and no stubble. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall, with the head taking up about a quarter of the total height. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing a faded dark green work jacket, brown work trousers, black rubber boots, a beige towel around his neck and a woven bamboo basket on his back. Calm everyday expression. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
 ```
 
-CHAR-02 1人目の妻（60代女性）
+### CHAR-02: 1人目の妻（60代女性）
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese woman in her early 60s, small and slight, grey hair tied back in a low bun, deeply lined kind face. She has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw her with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing a dusty-rose work smock over dark navy monpe trousers and a grey cardigan. Gentle worried expression. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
 ```
 
-CHAR-03 2人目の被害者（59歳女性・クルミ拾い）
+### CHAR-03: 2人目の被害者（59歳女性・クルミ拾い）
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese woman, 59 years old, sturdy and short, greying hair under a faded blue headscarf, lined cheerful face. She has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw her with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing a mustard-yellow work smock, dark grey monpe trousers, black rubber boots, and carrying a small woven basket in one hand. Warm everyday expression. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
 ```
 
-CHAR-04 3人目の被害者（61歳女性・酒田市・クリ拾い）
+### CHAR-04: 3人目の被害者（61歳女性・酒田市・クリ拾い）
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese woman, 61 years old, of average build, short permed greying hair, round friendly face with soft laugh lines. She has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw her with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing a soft red-checked flannel shirt, a beige field apron, dark brown trousers and grey trainers, with white cotton work gloves. Bright everyday expression. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
 ```
 
-CHAR-05 3人目の夫（60代男性）
+### CHAR-05: 3人目の夫（60代男性）
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese man in his early 60s, lean and wiry, short greying hair, CLEAN-SHAVEN with no beard, no moustache and no stubble, deeply lined face. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing a navy zip-up work jacket, khaki trousers, black rubber boots and a grey cap. Steady dependable expression. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
 ```
 
-CHAR-06 佐藤浩人さん（当時26歳・消防団員）
+### CHAR-06: 佐藤浩人さん（当時26歳・消防団員）
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese man, 26 years old, athletic and broad-shouldered, thick black hair, CLEAN-SHAVEN with no beard, no moustache and no stubble, tanned young face. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing a navy volunteer fire brigade jacket with plain reflective bands and no lettering, dark grey trousers, black boots and white cotton gloves. Serious steady expression. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no wounds, no gore. Generate 1 image.
 ```
 
-CHAR-07 佐藤浩人さん（現在63歳）
+### CHAR-07: 佐藤浩人さん（現在63歳）
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese man, 63 years old, still broad-shouldered but thickened with age, sparse thin grey hair, deeply lined face, sunken cheeks, sagging skin at the jaw, age spots on the hands, CLEAN-SHAVEN with no beard, no moustache and no stubble. NOT middle-aged. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing a moss-green fleece work jacket, brown work trousers and black rubber boots. Calm reflective expression. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
 ```
 
-CHAR-08 富樫邦男さん（酒田市・銃砲店経営・熟練ハンター）
+### CHAR-08: 富樫邦男さん（酒田市・銃砲店経営・熟練ハンター）
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese man in his late 60s, solidly built, thick white hair swept back, deeply lined weathered face, sunken cheeks, age spots, CLEAN-SHAVEN with no beard, no moustache and no stubble. NOT middle-aged. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing an olive-brown hunting vest over a checked wool shirt, dark brown trousers and leather boots. Confident open expression. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
 ```
 
-CHAR-09 小林直樹室長（戸沢村役場 総務課危機管理室）
+### CHAR-09: 小林直樹室長（戸沢村役場 総務課危機管理室）
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese local government official, man in his late 40s, average build, short neatly parted black hair with slight greying at the temples, CLEAN-SHAVEN with no beard, no moustache and no stubble. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing a dark grey blazer over a pale blue shirt, no tie, dark trousers, plain lanyard with a blank card and no lettering. Earnest and level expression, eyebrows relaxed with no furrow between them, eyes open at their normal width, mouth closed in a soft even line. NOT grinning, NOT angry, NOT frightened, NOT grim. 1:1 aspect ratio. No lettering, no readable characters anywhere. Generate 1 image.
 ```
 
-CHAR-10 大津高教授（山形大学理学部）
+### CHAR-10: 大津高教授（山形大学理学部）
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese university professor, man in his late 50s, slim, greying hair thinning at the front, round glasses, CLEAN-SHAVEN with no beard, no moustache and no stubble. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing a beige corduroy jacket over a white shirt, a dark knitted tie and grey trousers. Earnest and level expression, eyebrows relaxed with no furrow between them, mouth closed in a soft even line. NOT grinning, NOT angry, NOT grim. 1:1 aspect ratio. No lettering, no readable characters anywhere. Generate 1 image.
 ```
 
-CHAR-11 加害個体のツキノワグマ（オス・推定4歳・体長140cm・体重84kg）
+### CHAR-11: 加害個体のツキノワグマ（オス・推定4歳・体長140cm・体重84kg）
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, side-front view, poised ON ALL FOURS. An adult male Japanese black bear (Asiatic black bear, Ursus thibetanus japonicus), 140cm body length and 84kg, four years old — a young adult, not a giant. Glossy jet-black coat, a clear white crescent-moon patch across the chest, large round ears, a short blunt muzzle, a stocky but slender frame, and NO shoulder hump. Its shoulder is no higher than an adult's waist, and it is clearly much smaller than a grizzly or a brown bear. NOT reared up, NOT on two legs. Alert watchful eyes. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
 ```
 
-CHAR-12 杉沢で目撃された、より大きなツキノワグマ（別個体）
+### CHAR-12: 杉沢で目撃された、より大きなツキノワグマ（別個体）
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, side-front view, poised ON ALL FOURS. A large adult Japanese black bear (Asiatic black bear, Ursus thibetanus japonicus), about 150cm body length and about 110kg — noticeably longer, heavier and broader across the chest than CHAR-11, with a coarser shaggier coat and a broader head. Glossy jet-black coat, a clear white crescent-moon patch across the chest, large round ears, a short blunt muzzle, and NO shoulder hump. Even so, its shoulder is no higher than an adult's chest and it is clearly much smaller than a grizzly or a brown bear. NOT reared up, NOT on two legs. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
 ```
 
-CHAR-13 飼われていた子グマ（のちに成長した個体）
+### CHAR-13: 飼われていた子グマ（のちに成長した個体）
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view, poised ON ALL FOURS. A Japanese black bear cub (Asiatic black bear, Ursus thibetanus japonicus), about 60cm body length and about 12kg, roughly one year old. Soft glossy jet-black fur, an oversized round head, a clear white crescent-moon patch across the chest, large round ears, a short blunt muzzle, NO shoulder hump, short stubby legs. Trusting affectionate eyes. It is clearly a cub, far smaller than an adult bear. NOT reared up, NOT on two legs. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
 ```
 
-CHAR-14 猟友会のベテランハンター（1988年・加害個体を撃った人物）
+### CHAR-14: 猟友会のベテランハンター（1988年・加害個体を撃った人物）
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese hunter in his mid-50s, stocky and weathered, short black hair going grey at the sides under a faded orange cap, CLEAN-SHAVEN with no beard, no moustache and no stubble, deeply lined face. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing an olive-brown hunting jacket, dark green trousers, rubber boots, and a plain bolt-action hunting rifle slung on one shoulder drawn in the same cartoon style. Only the rifle as a prop, nothing else around him. Alert steady expression. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no wounds, no gore. Generate 1 image.
 ```
+
+---
+
+## 1. 全素材リスト（台本順）
 
 ---
 
