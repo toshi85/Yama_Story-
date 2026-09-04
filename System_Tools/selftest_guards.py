@@ -525,6 +525,30 @@ def main():
                                          "同じ1頭だったとは、どこにも記されていないということです。"),
                          "反対の結論の断定に"))
 
+    # ㉝ 全否定が、別の章の「記録されています」とぶつかる（2026-09-04 新設）
+    #    ㉜ の直しで §14 を「どこにも記されていません」にしたら、
+    #    §8 の「報告書にも…として記録されています」と正面からぶつかった。
+    import os as _os32
+    def mkneg(name, last):
+        f = _os32.path.join(tmp, name + ".md")
+        open(f, "w", encoding="utf-8").write(
+            "## 8. 200メートル\n"
+            "<!-- src: JBN報告書 p.53＝素材#113 -->\n"
+            "ナレーター: 日本クマネットワークの報告書にも「同じ1頭だった可能性が考えられる」"
+            "として記録されています。\n\n"
+            "## 14. 1頭なのか、複数なのか\n"
+            "<!-- src: 山形県資料6-1＝素材#45 -->\n"
+            "ナレーター: " + last + "\n")
+        return f
+
+    ok.append(check("㉝ 全否定が別の章の記録とぶつかる", "validate_yama_coherence.py",
+                    mkneg("neg_ng", "同じ1頭だったとは、どこにも記されていないということです。"),
+                    "の全否定が、"))
+
+    ok.append(check_pass("㉝b どの記録の話かを付けて狭めれば通る", "validate_yama_coherence.py",
+                         mkneg("neg_ok", "県の記録の上では、同じ1頭だったとは扱われていないということです。"),
+                         "の全否定が、"))
+
     f3 = mkki("cq_short", "ところが、この日は戻りません。")
     _s = open(f3, encoding="utf-8").read()
     open(f3, "w", encoding="utf-8").write("<!-- CQ_OK: 不要 -->\n" + _s)
