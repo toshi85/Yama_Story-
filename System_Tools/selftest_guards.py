@@ -36,10 +36,10 @@ HEAD = """# テスト用タイトル
 ## 1. フック
 """
 
-def run(script, path):
+def run(script, path, *extra):
     # Windows の既定エンコーディング（cp932）だと日本語の出力で落ちるため UTF-8 を明示する
     env = {**os.environ, "PYTHONIOENCODING": "utf-8"}
-    r = subprocess.run([PY, os.path.join(HERE, script), path],
+    r = subprocess.run([PY, os.path.join(HERE, script), path, *extra],
                        capture_output=True, text=True,
                        encoding="utf-8", errors="replace", env=env)
     return r.returncode, (r.stdout or "") + (r.stderr or "")
@@ -65,9 +65,9 @@ def _group_of(name):
     m = _re.match(r"^([\u2460-\u2473\u3251-\u325f])", name.strip())
     return m.group(1) if m else name.strip()[:2]
 
-def check(name, script, path, must_contain):
+def check(name, script, path, must_contain, *extra):
     """事故そのものを注入して、止まることを確かめる"""
-    code, out = run(script, path)
+    code, out = run(script, path, *extra)
     hit = must_contain in out
     REGISTRY.append((_group_of(name), "fail", name, script))
     print(f"  {'✅' if hit else '❌'} {name:<42} {script}")
@@ -75,9 +75,9 @@ def check(name, script, path, must_contain):
         print(f"      期待: 「{must_contain}」を含む出力 / 実際の末尾: {out.strip().splitlines()[-1][:70] if out.strip() else '(空)'}")
     return hit
 
-def check_pass(name, script, path, must_not_contain):
+def check_pass(name, script, path, must_not_contain, *extra):
     """直した版を通して、余計に止めないことを確かめる"""
-    code, out = run(script, path)
+    code, out = run(script, path, *extra)
     hit = must_not_contain not in out
     REGISTRY.append((_group_of(name), "pass", name, script))
     print(f"  {'✅' if hit else '❌'} {name:<42} {script}")
@@ -501,6 +501,59 @@ def main():
         "<!-- CQ_OK: 答えは本文の中で語っているので転では言い直さない -->\n" + _s)
     ok.append(check_pass("㉛b CQ_OK 宣言があれば見送る", "validate_yama_intro.py",
                          f2, "が転で回収されていません"))
+
+    # ㉞ 静止画の文字数を、記号を除いて数える（2026-09-04 新設）
+    #    ASSET_CHECKLIST STEP3 は「素材タイプは文字数で決まる ※句読点・記号を除いて数える」。
+    #    validate_yama_prompts.py だけが句読点を含めて数えていたため、
+    #    validate_phase2_assets.py と同じ台本で結果が食い違った（戸沢村で11件）。
+    import os as _os33
+    def mkstill(name, narr):
+        f = _os33.path.join(tmp, name + ".md")
+        open(f, "w", encoding="utf-8").write(
+            "ナレーター: " + narr + "\n\n"
+            "【制作メモ】ASSET-001 [Lovart静止画]\n"
+            "シーン: 山道の入り口\n"
+            "```\n"
+            "A narrow mountain footpath in Yamagata, Japan in late October, dry leaf litter, "
+            "autumn gold and rust. No snow anywhere, no frost, no winter. "
+            "Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. "
+            "No people, no humans visible. Generate 1 image.\n"
+            "```\n"
+            "→ 編集者指示: ゆっくり寄る。\n")
+        return f
+
+    ok.append(check("㉞ 静止画に長すぎるナレーションが付いている", "validate_yama_prompts.py",
+                    mkstill("still_ng", "落ち葉に埋もれた細い山道が、林の奥へまっすぐ続いているのが見えました"),
+                    "25文字超過"))
+
+    ok.append(check_pass("㉞b 記号を除けば25字以内なら通す", "validate_yama_prompts.py",
+                         mkstill("still_ok", "そして現場には、クマの痕跡がいくつも残っていました。"),
+                         "25文字超過"))
+
+    # ㉟ 台本突合は、推測の太字を落としてから比べる（2026-09-04 新設）
+    #    台本は YCP-035 で推測を **…** にするが、納品物は Markdown 装飾を使わない規則。
+    #    素で比べると、太字を含む行が必ず「欠落」に見えた（戸沢村で22行）。
+    import os as _os34
+    def mkcover(name, asset_narr):
+        m = _os34.path.join(tmp, name + "_master.md")
+        open(m, "w", encoding="utf-8").write(
+            "<!-- PART: KI -->\n## 1. 冒頭\n"
+            "ナレーター: 自然に囲まれた村で、**定期的にクマの目撃情報が相次いでいました**。\n")
+        f = _os34.path.join(tmp, name + ".md")
+        open(f, "w", encoding="utf-8").write(
+            "ナレーター: " + asset_narr + "\n\n"
+            "【制作メモ】ASSET-001 [テキストのみ]\n"
+            "シーン: 黒背景に日付テロップ\n"
+            "→ 編集者指示: 黒背景に白テキスト。\n")
+        return f, m
+
+    f, m = mkcover("cov_ng", "まったく違う一行がここに入っています。")
+    ok.append(check("㉟ 台本の行が納品物から抜けている", "validate_yama_prompts.py",
+                    f, "行が欠落", m))
+
+    f, m = mkcover("cov_ok", "自然に囲まれた村で、定期的にクマの目撃情報が相次いでいました。")
+    ok.append(check_pass("㉟b 太字を落とせば一致として扱う", "validate_yama_prompts.py",
+                         f, "行が欠落", m))
 
     # ㉜ 記載が無いことを、反対の結論の断定に変えている（2026-09-04 新設）
     #    県の一覧に「同一個体」の注記が無いことを「複数頭による犯行として記録されています」

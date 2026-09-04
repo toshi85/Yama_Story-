@@ -640,7 +640,12 @@ def check_static_narration_length(lines):
         # ナレーター行を検出
         if s.startswith('ナレーター:') or s.startswith('ナレーター：'):
             narr_text = s.split(':', 1)[1].strip() if ':' in s else s.split('：', 1)[1].strip()
-            narration_buffer.append((i + 1, narr_text, len(narr_text)))
+            # 2026-09-04: 文字数の数え方を validate_phase2_assets.py（規則の正本）に揃えた。
+            #   ASSET_CHECKLIST STEP3「素材タイプは文字数で決まる ※句読点・記号を除いて数える」が規則。
+            #   ここだけ句読点を含めて数えていたため、同じ台本で2つの検査が食い違っていた
+            #   （戸沢村で11件が片方だけ落ちた。全件、記号を除けば25字以内）。
+            counted = re.sub(r'[、。「」『』（）()？?！!，．,.\s〜・…—ー―]', '', narr_text)
+            narration_buffer.append((i + 1, narr_text, len(counted)))
             continue
 
         # 制作メモ行を検出
@@ -684,14 +689,22 @@ def check_narration_coverage(asset_lines, master_path):
     except Exception as e:
         return [(-1, f"台本ファイル読み込みエラー: {e}", "")]
 
+    # 2026-09-04: 台本側の推測マーク（**…**）とHTMLコメントを落としてから突き合わせる。
+    #   台本は YCP-035 で推測を太字にするが、納品物は Markdown 装飾を使わない規則
+    #   （ASSET_CHECKLIST STEP3.5 / validate_asset_deliverable.py H5）なので、
+    #   素の比較だと太字を含む行が必ず「欠落」に見える（戸沢村で22行が誤検出された）。
+    def _plain(s):
+        s = re.sub(r'<!--.*?-->', '', s)
+        return s.replace('**', '').strip()
+
     master_narrations = {}
     for i, line in enumerate(master_lines):
         stripped = line.strip()
         if stripped.startswith("ナレーター:") or stripped.startswith("ナレーター："):
-            master_narrations[i + 1] = stripped
+            master_narrations[i + 1] = _plain(stripped)
 
     # Asset_Promptsの全テキストを結合
-    asset_content = ''.join(asset_lines)
+    asset_content = _plain(''.join(asset_lines))
 
     missing = []
     for line_num, text in sorted(master_narrations.items()):
