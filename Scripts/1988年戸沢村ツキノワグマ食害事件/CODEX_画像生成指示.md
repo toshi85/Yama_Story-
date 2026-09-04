@@ -28,6 +28,18 @@ Yama_Story の画像生成は launchd（com.yama.imagegen）が常駐で回し�
 - 進捗を聞かれたら images/*.png の枚数で答える（目標311枚）。
 ```
 
+### 上限が解けるころの入れ直しも自動です（2026-09-04 追加）
+
+`com.yama.imagegen.kick` が 8:35 / 14:35 / 15:35 / 17:35 / 20:35 / 23:35 に様子を見て、
+**前回から1枚も増えていないときだけ** `com.yama.imagegen` を入れ直します。
+生成中は枚数が増えるので触りません。ChatGPTの画像生成上限は「20時間後に解除」で
+毎日ずれていくため、時刻を決め打ちにせず一日に何度か見にいく作りです。
+
+```bash
+launchctl print gui/$(id -u)/com.yama.imagegen.kick   # 予定と実行回数
+grep " kick: " ".imagegen/imagegen.log"               # 入れ直した記録
+```
+
 ### 止まっている・入れ直したいとき（人が使うコマンド）
 
 ```bash

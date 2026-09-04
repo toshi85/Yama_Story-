@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.yama.imagegen.kick</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/opt/homebrew/opt/python@3.14/bin/python3.14</string>
+		<string>-u</string>
+		<string>/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/imagegen/kick.py</string>
+		<string>/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件</string>
+	</array>
+	<key>StartCalendarInterval</key>
+	<array>
+		<dict><key>Hour</key><integer>14</integer><key>Minute</key><integer>35</integer></dict>
+		<dict><key>Hour</key><integer>15</integer><key>Minute</key><integer>35</integer></dict>
+		<dict><key>Hour</key><integer>17</integer><key>Minute</key><integer>35</integer></dict>
+		<dict><key>Hour</key><integer>20</integer><key>Minute</key><integer>35</integer></dict>
+		<dict><key>Hour</key><integer>23</integer><key>Minute</key><integer>35</integer></dict>
+		<dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>35</integer></dict>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>StandardOutPath</key>
+	<string>/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/.imagegen/imagegen.log</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/.imagegen/imagegen.log</string>
+</dict>
+</plist>
