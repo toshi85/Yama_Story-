@@ -225,6 +225,16 @@ def main(path):
     # 出典: たちばなやすひと『「物語」の見つけ方』（CQ＝物語を最後まで見届けさせる問い。
     #       CQの結果はクライマックスで出る）。Yama では「フックの問い2つ」＝CQ。
     # よって **各CQは転（TEN-KETSU）で受ける**。承の途中で言い切って終わらせない。
+    # 2026-09-04 追加: 本人が「答えは本文の中で語っているので、転で言い直さない」と
+    #   決めた回は、台本に `<!-- CQ_OK: 理由（8字以上） -->` を1行置いて宣言する。
+    #   宣言は検査の出力に全部並ぶので隠せない。しきい値は動かさない（この回だけ外す）。
+    cq_ok = re.search(r"<!--\s*CQ_OK:\s*(.+?)\s*-->", t)
+    cq_reason = cq_ok.group(1) if cq_ok else None
+    if cq_ok and len(cq_reason) < 8:
+        fails.append(f"CQ_OK の理由が短すぎます（8字以上）: 「{cq_reason}」")
+        cq_reason = None
+        cq_ok = None
+
     if tk is not None and q:
         tk_text = "".join(narr(tk))
         for n, qq in enumerate(q, 1):
@@ -241,10 +251,14 @@ def main(path):
             hit = [w for w in terms if w in tk_text]
             if hit:
                 print(f"  CQ{n} 回収: OK  転に「{hit[0]}」が出てきます")
+            elif cq_ok:
+                print(f"  CQ{n} 回収: 宣言により見送り  ← {cq_reason}")
             else:
                 fails.append(
                     f"CQ{n}「{qq[:32]}」が転で回収されていません（探した語: {'/'.join(terms[:6])}）"
-                    " → CQの答えはクライマックス＝転で出す。承の途中で言い切って終わらせない")
+                    " → CQの答えはクライマックス＝転で出す。承の途中で言い切って終わらせない"
+                    " ／ 本文の中で答えているので転では言い直さない、と決めたなら"
+                    " `<!-- CQ_OK: 理由（8字以上） -->` を台本に1行置く")
 
     for x in q:
         print(f"      - {x}")

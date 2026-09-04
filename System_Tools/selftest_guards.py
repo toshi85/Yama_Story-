@@ -488,6 +488,26 @@ def main():
     ok.append(check_pass("⑭ c 前振り型（朱鞠内湖の形）も通す", "validate_yama_intro.py",
                          f, "「日常が崩れる予感」で終わっていません"))
 
+    # ㉛ CQ（イントロの問い2つ）の回収位置と、その見送り宣言（2026-09-04 新設）
+    #    転にも本文にも答えが無いなら止める。本人が「本文の中で答えているので転では言い直さない」
+    #    と決めた回は `<!-- CQ_OK: 理由（8字以上） -->` で外せる。理由が短ければ止める。
+    f = mkki("cq_ng", "ところが、この日は戻りません。")
+    ok.append(check("㉛ CQが転で回収されていない", "validate_yama_intro.py",
+                    f, "が転で回収されていません"))
+
+    f2 = mkki("cq_ok", "ところが、この日は戻りません。")
+    _s = open(f2, encoding="utf-8").read()
+    open(f2, "w", encoding="utf-8").write(
+        "<!-- CQ_OK: 答えは本文の中で語っているので転では言い直さない -->\n" + _s)
+    ok.append(check_pass("㉛b CQ_OK 宣言があれば見送る", "validate_yama_intro.py",
+                         f2, "が転で回収されていません"))
+
+    f3 = mkki("cq_short", "ところが、この日は戻りません。")
+    _s = open(f3, encoding="utf-8").read()
+    open(f3, "w", encoding="utf-8").write("<!-- CQ_OK: 不要 -->\n" + _s)
+    ok.append(check("㉛c CQ_OK の理由が短ければ止める", "validate_yama_intro.py",
+                    f3, "CQ_OK の理由が短すぎます"))
+
     # ⑮ V字（ボトムの宣言）2026-09-02
     #    出典: たちばなやすひと『「物語」の見つけ方』。落差を省略しないための宣言。
     import os as _os5
