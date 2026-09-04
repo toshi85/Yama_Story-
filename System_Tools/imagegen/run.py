@@ -140,6 +140,17 @@ def collect(work):
                    capture_output=True)
 
 
+def note_limit(work, until_ms):
+    """解除予定の時刻を残す。常駐（kick.py）がこれを見て、その時刻まで触らない。"""
+    path = work / '.imagegen' / 'limit_until.json'
+    path.parent.mkdir(exist_ok=True)
+    if until_ms:
+        path.write_text(json.dumps({'until': until_ms / 1000}), encoding='utf-8')
+    elif path.exists():
+        path.unlink()
+
+
+
 def main():
     try:
         sys.stdout.reconfigure(line_buffering=True)
@@ -166,6 +177,7 @@ def main():
     install_and_run(todo)
 
     last_count, last_change = len(queue) - len(todo), time.time()
+    last_note = None
     while True:
         time.sleep(60)
         collect(work)
@@ -177,6 +189,7 @@ def main():
             return
 
         if done != last_count:
+            note_limit(work, None)        # 動き出したので上限待ちの印は消す
             last_count, last_change = done, time.time()
             print(f'  {done}/{len(queue)} 枚', flush=True)
             continue
@@ -185,6 +198,7 @@ def main():
         try:
             state = json.loads(js(
                 'JSON.stringify({running: __yamaGen.running, '
+                'until: __yamaGen.limitUntil || 0, '
                 'last: __yamaGen.log.slice(-1)[0] || ""})'))
         except Exception as e:
             print(f'  ページを見失いました（{e}）— 入れ直します', flush=True)
@@ -193,7 +207,15 @@ def main():
             continue
 
         if '生成上限' in state['last']:
-            continue                      # 待てば空く。driver.js が自分で再開する
+            # 待てば空く。driver.js が自分で再開する。
+            # 解除予定の時刻を書き出しておくと、常駐がその時刻に合わせて起こしてくれる。
+            note_limit(work, state.get('until'))
+            if state.get('until'):
+                at = time.strftime('%m/%d %H:%M', time.localtime(state['until'] / 1000))
+                if at != last_note:
+                    print(f'  上限待ち。解除は {at} ごろ', flush=True)
+                    last_note = at
+            continue
         if not state['running'] or time.time() - last_change > STALL_LIMIT:
             print('  止まっているので入れ直します', flush=True)
             install_and_run(todo)

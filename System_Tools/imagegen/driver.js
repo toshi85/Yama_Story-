@@ -28,6 +28,7 @@
       lastLog: S.log.slice(-6),
     }),
     log: S.log || [],
+    limitUntil: S.limitUntil || null,   // 解除予定の時刻（epochミリ秒）。run.py が読む
   });
 
   const LIMIT_WAIT_MIN = 20;     // 投げ直す間隔の上限（解除が近いほど短くする）
@@ -73,17 +74,44 @@
     .test(convText());
 
   // 断り文句に書かれた「あと何分で解除か」を読む。読めなければ null。
+  // 🚨 文面は何通りもある。実際に出たものを全部拾う（2026-09-04 に「明日の14:33に
+  //    もう一度お試しください」「上限は17時間後にリセットされ」を取りこぼして、
+  //    20分おきに17時間投げ直し続け、77/311枚で一晩止まっていた）。
   function limitLeftMin() {
     const t = convText();
-    let m = t.match(/resets in (?:(\d+)\s*hours?)?(?:\s*and\s*)?(?:(\d+)\s*minutes?)?/i);
-    if (m && (m[1] || m[2])) return (+m[1] || 0) * 60 + (+m[2] || 0);
-    m = t.match(/(\d{1,2}):(\d{2})\s*までお待ちください/);
-    if (m) {
+    const now = new Date();
+    const atTime = (h, mi, tomorrow) => {
       const d = new Date();
-      d.setHours(+m[1], +m[2], 0, 0);
-      if (d <= new Date()) d.setDate(d.getDate() + 1);
-      return Math.round((d - new Date()) / 60000);
+      d.setHours(h, mi, 0, 0);
+      if (tomorrow) d.setDate(d.getDate() + 1);
+      while (d <= now) d.setDate(d.getDate() + 1);
+      return Math.round((d - now) / 60000);
+    };
+    let m;
+
+    // ① 「明日の 14:33にもう一度お試しください」「今日の 21:49 に」
+    m = t.match(/(明日|今日|翌日)の?\s*(\d{1,2}):(\d{2})/);
+    if (m) return atTime(+m[2], +m[3], m[1] !== '今日');
+    m = t.match(/(tomorrow|today)\s*at\s*(\d{1,2}):(\d{2})\s*(AM|PM)?/i);
+    if (m) {
+      let h = +m[2];
+      if (/pm/i.test(m[4] || '') && h < 12) h += 12;
+      if (/am/i.test(m[4] || '') && h === 12) h = 0;
+      return atTime(h, +m[3], !/today/i.test(m[1]));
     }
+
+    // ② 「21:49までお待ちください」
+    m = t.match(/(\d{1,2}):(\d{2})\s*(?:まで(?:お待ち|待って)|にもう一度|に再度)/);
+    if (m) return atTime(+m[1], +m[2], false);
+
+    // ③ 「◯時間後にリセット」/ "resets in 3 hours and 20 minutes"（丸めた値なので最後に見る）/ "resets in 3 hours and 20 minutes"
+    m = t.match(/上限は\s*(\d+)\s*時間(?:\s*(\d+)\s*分)?後にリセット/);
+    if (m) return (+m[1]) * 60 + (+m[2] || 0);
+    m = t.match(/(\d+)\s*時間後/);
+    if (m) return (+m[1]) * 60;
+    m = t.match(/resets? in (?:(\d+)\s*hours?)?(?:\s*and\s*)?(?:(\d+)\s*minutes?)?/i);
+    if (m && (m[1] || m[2])) return (+m[1] || 0) * 60 + (+m[2] || 0);
+
     return null;
   }
 
@@ -92,12 +120,19 @@
   function nextProbeMin() {
     const left = limitLeftMin();
     if (left === null) return LIMIT_WAIT_MIN;
+    // 解除がまだ遠いうちは1時間おきでいい。20分おきに17時間投げ続けると
+    // 「画像生成上限通知」の断りチャットが50本以上溜まる（実測）。
+    if (left > 90) return Math.min(60, left - 30);
     return Math.min(LIMIT_WAIT_MIN, Math.max(2, Math.ceil(left / 4)));
   }
 
   function limitNote() {
     const left = limitLeftMin();
-    return left === null ? '解除予定の表示なし' : `解除まで残り約${left}分`;
+    S.limitUntil = left === null ? null : Date.now() + left * 60000;
+    if (left === null) return '解除予定の表示なし';
+    const at = new Date(S.limitUntil);
+    const hhmm = `${String(at.getHours()).padStart(2, '0')}:${String(at.getMinutes()).padStart(2, '0')}`;
+    return `解除まで残り約${left}分（${hhmm}ごろ）`;
   }
 
   // 停止ボタンが消えるまで待つ（＝生成が終わるまで）

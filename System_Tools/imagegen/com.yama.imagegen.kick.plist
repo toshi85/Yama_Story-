@@ -11,15 +11,10 @@
 		<string>/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/imagegen/kick.py</string>
 		<string>/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件</string>
 	</array>
-	<key>StartCalendarInterval</key>
-	<array>
-		<dict><key>Hour</key><integer>14</integer><key>Minute</key><integer>35</integer></dict>
-		<dict><key>Hour</key><integer>15</integer><key>Minute</key><integer>35</integer></dict>
-		<dict><key>Hour</key><integer>17</integer><key>Minute</key><integer>35</integer></dict>
-		<dict><key>Hour</key><integer>20</integer><key>Minute</key><integer>35</integer></dict>
-		<dict><key>Hour</key><integer>23</integer><key>Minute</key><integer>35</integer></dict>
-		<dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>35</integer></dict>
-	</array>
+	<!-- 解除時刻は毎日ずれるので、決め打ちの時刻では起こさない。
+	     10分おきに様子を見て、run.py が書き出した解除予定を過ぎていたら入れ直す。 -->
+	<key>StartInterval</key>
+	<integer>600</integer>
 	<key>RunAtLoad</key>
 	<false/>
 	<key>StandardOutPath</key>
