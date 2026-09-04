@@ -26,3 +26,10 @@ System_Tools/update_token.json
 # 書籍のページ画像（著作物）はローカル保管のみ。public リポジトリへ出さない
 Yama_Story-/Scripts/*/_sources/熊が人を襲うとき_米田一彦/
 Scripts/*/_sources/熊が人を襲うとき_米田一彦/
+
+# 生成した画像と、生成中の作業ファイル（2026-09-04）
+# images/ は imagegen が作る中間素材で、これまでも1件も追跡していない（戸沢村は311枚で約580MB）。
+# 正本はプロンプト側（Asset_Prompts_Full.md / image_queue.json）。
+Scripts/*/images/
+Scripts/*/.imagegen/
+Scripts/*/.imagegen.lock
