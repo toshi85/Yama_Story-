@@ -502,6 +502,29 @@ def main():
     ok.append(check_pass("㉛b CQ_OK 宣言があれば見送る", "validate_yama_intro.py",
                          f2, "が転で回収されていません"))
 
+    # ㉜ 記載が無いことを、反対の結論の断定に変えている（2026-09-04 新設）
+    #    県の一覧に「同一個体」の注記が無いことを「複数頭による犯行として記録されています」
+    #    と書き、§8 で引いた日本クマネットワークの「同一個体の可能性」と食い違って見えた。
+    import os as _os31
+    def mkabs(name, second):
+        f = _os31.path.join(tmp, name + ".md")
+        open(f, "w", encoding="utf-8").write(
+            "## 14. 1頭なのか、複数なのか\n"
+            "<!-- src: 山形県資料6-1（一覧には「同一個体」の注記欄がある）＝素材#45 -->\n"
+            "ナレーター: 報告書には、同じクマの犯行だと分かるように「同一個体」と記入する欄があります。\n\n"
+            "ナレーター: " + second + "\n")
+        return f
+
+    ok.append(check("㉜ 記載が無いことを反対の結論の断定に変える", "validate_yama_coherence.py",
+                    mkabs("abs_ng", "しかし今回の3件には、同一個体という記述は結局なかったので、"
+                                    "複数頭による犯行として記録されています。"),
+                    "反対の結論の断定に"))
+
+    ok.append(check_pass("㉜b 「記されていません」までなら通る", "validate_yama_coherence.py",
+                         mkabs("abs_ok", "しかし今回の3件には、その記述がありません。"
+                                         "同じ1頭だったとは、どこにも記されていないということです。"),
+                         "反対の結論の断定に"))
+
     f3 = mkki("cq_short", "ところが、この日は戻りません。")
     _s = open(f3, encoding="utf-8").read()
     open(f3, "w", encoding="utf-8").write("<!-- CQ_OK: 不要 -->\n" + _s)
