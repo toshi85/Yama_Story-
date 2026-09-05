@@ -197,7 +197,9 @@ https://www.youtube.com/watch?v=c_kkIsQlFe8&list=PL_ow2u7kabiApZGuQ4hcL1oSt5DvAl
 
 ## 5. 商品タグ（YouTube ショッピング）
 - 対象: 『秋田 クマ襲撃事件 ── 2016-2025』 https://www.amazon.co.jp/dp/B0HHKVMJTW（Kindle B0HHKVMJTW）
-- Studio「動画の詳細」→「商品」でタグ付け（結果は本文§7に追記）
+- **結果（2026-09-05 Studio実測）: Kindle本はタグ付け不可。** YouTubeショッピングの接続先は Yahoo!ショッピング／楽天市場／Rakuten Fashion の3つだけで、Amazonが無い（Amazonリンクを貼っても「一致する結果はありません」）。KDP本はAmazon専売なので候補に出ない
+- 現状タグ付け済み＝**非常食セット5点（楽天市場・チャンネルが以前から使っている商品）**。そのまま維持
+- 楽天で唯一ヒットした関連書籍『熊!に出会った襲われた 2』（つり人社・3%）は他社本なので追加していない。追加するなら本人判断
 
 ---
 
