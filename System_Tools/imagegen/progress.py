@@ -27,8 +27,8 @@ def editing_snapshot(work, commands):
     except (OSError,ValueError):
         delivery={}
     stage=delivery.get('stage')
-    if stage in ('packaging','uploading','retry_upload','committing_records','uploaded'):
-        label={'packaging':'別PC用セットを梱包中','uploading':'GitHubへ転送中','retry_upload':'GitHub転送を再試行中','committing_records':'GitHubへ編集記録を反映中','uploaded':'GitHub保存確認済み・本人の最終確認待ち'}[stage]
+    if stage in ('packaging','uploading','retry_upload','committing_records','uploaded','error'):
+        label={'error':'編集セットの保存エラー・再試行待ち','packaging':'別PC用セットを梱包中','uploading':'GitHubへ転送中','retry_upload':'GitHub転送を再試行中','committing_records':'GitHubへ編集記録を反映中','uploaded':'GitHub保存確認済み・本人の最終確認待ち'}[stage]
         updated=delivery.get('updated')
     else:
         label=labels.get(edit.get('stage'),edit.get('stage','未確認'));updated=edit.get('updated')
