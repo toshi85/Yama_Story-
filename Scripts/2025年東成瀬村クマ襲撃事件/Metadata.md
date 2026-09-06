@@ -82,10 +82,10 @@
 この動画の事件を含む、秋田で起きたクマ襲撃事件をまとめた一冊です。
 
 Kindle 299円（Kindle Unlimitedなら0円）／紙の本 1,320円
-https://www.amazon.co.jp/dp/B0HHKVMJTW
+https://link.amazon/B05HZc0AN
 
 Kindle Unlimited（30日間無料体験）
-https://www.amazon.co.jp/kindle-dbs/hz/signup?tag=a120d-22
+https://www.amazon.co.jp/kindle-dbs/hz/signup?tag=a120a-22
 
 ━━━━━━━━━━━━━━━━
 
@@ -197,7 +197,7 @@ https://www.youtube.com/watch?v=c_kkIsQlFe8&list=PL_ow2u7kabiApZGuQ4hcL1oSt5DvAl
 ---
 
 ## 5. 商品タグ（YouTube ショッピング）
-- 対象: 『秋田 クマ襲撃事件 ── 2016-2025』 https://www.amazon.co.jp/dp/B0HHKVMJTW（Kindle B0HHKVMJTW）
+- 対象: 『秋田 クマ襲撃事件 ── 2016-2025』 https://link.amazon/B05HZc0AN（Kindle B0HHKVMJTW）
 - **結果（2026-09-05 Studio実測）: Kindle本はタグ付け不可。** YouTubeショッピングの接続先は Yahoo!ショッピング／楽天市場／Rakuten Fashion の3つだけで、Amazonが無い（Amazonリンクを貼っても「一致する結果はありません」）。KDP本はAmazon専売なので候補に出ない
 - **2026-09-05 本人「おすすめがあればそれにしたい」→ 非常食5点を外し、動画の内容に直結する3点へ入れ替えて保存済み（Studio「変更を保存しました」確認）**
 

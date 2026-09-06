@@ -24,10 +24,10 @@ HEADER = f"""{MARK}
 『秋田 クマ襲撃事件 ── 2016-2025 クマは、もう暮らしのすぐ隣にいる』
 
 Kindle 299円（Kindle Unlimitedなら0円）／紙の本 1,320円
-https://www.amazon.co.jp/dp/B0HHKVMJTW
+https://link.amazon/B05HZc0AN
 
 Kindle Unlimited（30日間無料体験）
-https://www.amazon.co.jp/kindle-dbs/hz/signup?tag=a120d-22
+https://www.amazon.co.jp/kindle-dbs/hz/signup?tag=a120a-22
 
 ──────────
 
