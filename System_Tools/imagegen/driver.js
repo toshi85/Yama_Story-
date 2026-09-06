@@ -11,6 +11,11 @@
    開始: __yamaRun()          停止: __yamaGen.stop = true
    状況: __yamaGen.status()                                              */
 (() => {
+  // 再注入で running を戻すと、古い非同期ループと新しいループが競合する。
+  if (window.__yamaGen?.running) {
+    console.log('[yama] 既存ループが稼働中。再注入しません');
+    return;
+  }
   // タブがリロードされるとページに入れたものは全部消える。進捗だけは localStorage に
   // 残しておき、入れ直したときに続きから拾えるようにする（実測でリロードが起きた）。
   const SAVE_KEY = 'yamaDone';
@@ -56,8 +61,14 @@
   // ページに出ている画像。生成中のプレビューもここに入るので、単独では完了の証拠にならない。
   // 🚨 naturalWidth で選ばない。裏のタブでは画像がデコードされず 0 のままになり、
   //    「完了したのに画像が無い」と誤診する（実測）。実体の確認は後段の blob サイズで行う。
-  const imgEls = () => [...document.querySelectorAll('[class*="imagegen-image"] img')]
-    .filter((i) => i.src && /backend-api|oaiusercontent/.test(i.src));
+  const imgEls = () => [...document.querySelectorAll('main img')]
+    .filter((i) => i.src && /backend-api\/estuary\/content|oaiusercontent/.test(i.src));
+  const norm = (s) => s.replace(/\n(?:表示を増やす|表示を減らす|Show more|Show less)\s*$/, '').replace(/\s+/g, ' ').trim();
+  const users = () => [...document.querySelectorAll('[data-message-author-role="user"]')];
+  const matchedUser = (prompt) => {
+    const list = users();
+    return list.length === 1 && norm(list[0].innerText) === norm(prompt) ? list[0] : null;
+  };
 
   const retryBtn = () => [...document.querySelectorAll('button')]
     .find((b) => b.textContent.includes('再試行') || b.textContent.includes('Retry'));
@@ -68,9 +79,9 @@
   // 判定は会話部分だけを見る。body だと左の履歴一覧のチャット名まで拾ってしまい、
   // 過去に「Image Generation Limit」という名前のチャットが並んだだけで
   // 永久に「上限中」と誤判定する（実測: 一晩まるごと空回りした）。
-  const convText = () => (document.querySelector('main') || document.body).innerText.slice(-3000);
+  const convText = () => (document.querySelector('main') || document.body).innerText.slice(-3000) + [...document.querySelectorAll('[role=dialog],[role=alertdialog]')].map(x=>x.innerText).join('\n');
 
-  const limitHit = () => /画像を使い切りました|利用上限に達し|画像の生成上限|上限に達し|しばらくお待ち|hit the [^.]{0,24}plan limit|limit for image generation|rate limit|generation limit/i
+  const limitHit = () => /リクエストが多すぎ|リクエストの頻度が高|Too many requests|画像を使い切りました|利用上限に達し|画像の生成上限|上限に達し|しばらくお待ち|hit the [^.]{0,24}plan limit|limit for image generation|rate limit|generation limit/i
     .test(convText());
 
   // 断り文句に書かれた「あと何分で解除か」を読む。読めなければ null。
@@ -141,6 +152,7 @@
     let quiet = 0;
     while (Date.now() - t0 < timeoutMs) {
       await sleep(2000);
+      if (limitHit()) return 'limit';
       if (busy()) { quiet = 0; continue; }
       quiet += 2000;
       if (quiet >= 6000) return true;    // 6秒続けて停止ボタンが無ければ完了
@@ -154,8 +166,9 @@
     if (btn) btn.click();                 // SPA遷移（フルリロードするとこのループが死ぬ）
     for (let i = 0; i < 24; i++) {
       await sleep(500);
-      if (q('#prompt-textarea') && imgEls().length === 0) return;
+      if (q('#prompt-textarea') && imgEls().length === 0 && users().length === 0 && !location.pathname.startsWith('/c/')) return;
     }
+    throw new Error('新しいチャットへ移れていないため送信しません');
   }
 
   async function send(prompt) {
@@ -170,13 +183,21 @@
     for (let i = 0; i < 24; i++) {
       await sleep(300);
       const b = q('[data-testid="send-button"]');
-      if (b && !b.disabled) { b.click(); return; }
+      if (b && !b.disabled) {
+        if (norm(el.innerText) !== norm(prompt)) throw new Error('入力欄が要求文と不一致');
+        b.click();
+        for (let j = 0; j < 40; j++) {
+          await sleep(500);
+          if (matchedUser(prompt)) return;
+        }
+        throw new Error('送信した要求文の表示を確認できません');
+      }
     }
     throw new Error('送信ボタンが出ない');
   }
 
   // 生成が終わるまで待って、完成画像を返す。エラー表示が出たら 'retry' を返す
-  async function waitImage(timeoutMs = 600000) {
+  async function waitImage(prompt, timeoutMs = 600000) {
     const t0 = Date.now();
     // まず生成が始まるのを確認する（停止ボタンが出る）
     for (let i = 0; i < 20 && !busy(); i++) {
@@ -190,6 +211,7 @@
     if (retryBtn()) return 'retry';
     if (limitHit()) return 'limit';
     await sleep(2000);
+    if (!matchedUser(prompt)) throw new Error('生成結果と要求文の対応が不一致');
     const imgs = imgEls();
     if (!imgs.length) throw new Error('完了したのに画像が無い');
     return imgs;
@@ -198,7 +220,8 @@
   // 候補を新しい順に試して、中身のある1枚を落とす。
   // 完了判定は停止ボタンで見ているので、ここは「明らかに壊れている」だけを弾く。
   // 平坦な1:1のキャラ絵は 240KB 程度で正常なことがある（しきい値を上げると取りこぼす）。
-  async function saveAs(imgs, filename) {
+  async function saveAs(imgs, item) {
+    if (!matchedUser(item.prompt) || busy()) throw new Error('保存前の要求文・完了確認に失敗');
     let blob = null, last = '';
     for (const img of [...imgs].reverse()) {
       try {
@@ -210,11 +233,22 @@
       } catch (e) { last = e.message; }
     }
     if (!blob) throw new Error('使える画像が無い（' + last + '）');
+    if (!matchedUser(item.prompt) || busy()) throw new Error('画像取得中に会話が変わりました');
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url; a.download = filename;
+    a.href = url; a.download = `${item.id}.png`;
     document.body.appendChild(a); a.click();
     setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 5000);
+    const hash = async (bytes) => [...new Uint8Array(await crypto.subtle.digest('SHA-256', bytes))].map(x=>x.toString(16).padStart(2,'0')).join('');
+    const receipt = {id:item.id, sha256:await hash(await blob.arrayBuffer()),
+      prompt_sha256:await hash(new TextEncoder().encode(item.prompt)),
+      conversation:location.href, message_id:matchedUser(item.prompt).getAttribute('data-message-id'),
+      method:'single-turn exact prompt match and completed generated image', at:Date.now()/1000};
+    const receiptUrl = URL.createObjectURL(new Blob([JSON.stringify(receipt)], {type:'application/json'}));
+    const receiptLink = document.createElement('a');
+    receiptLink.href = receiptUrl; receiptLink.download = `${item.id}.receipt.json`;
+    document.body.appendChild(receiptLink); receiptLink.click();
+    setTimeout(()=>{URL.revokeObjectURL(receiptUrl);receiptLink.remove();},5000);
     return blob.size;
   }
 
@@ -233,7 +267,7 @@
         await sleep(1500);
         await send(item.prompt);
 
-        let img = await waitImage();
+        let img = await waitImage(item.prompt);
 
         // 生成上限は「終わり」ではなく「待てば空く」。夜通し回すので待って続ける。
         // 🚨 上限の誤判定を機械で止める。上限らしき表示が出ても、解除までの残り時間が
@@ -259,7 +293,7 @@
           await newChat();
           await sleep(1500);
           await send(item.prompt);
-          img = await waitImage();
+          img = await waitImage(item.prompt);
         }
         if (S.stop) break;
         if (img === 'limit') { note('上限が32時間空かなかったので停止'); S.stop = true; break; }
@@ -267,12 +301,12 @@
         if (img === 'retry') {
           note(`${item.id} エラー → 再試行`);
           retryBtn().click();
-          img = await waitImage();
+          img = await waitImage(item.prompt);
           if (img === 'limit') { note('再試行中に上限 — 次の周回で拾い直します'); throw new Error('上限'); }
           if (img === 'retry') throw new Error('2回続けて生成エラー');
         }
 
-        const bytes = await saveAs(img, `${item.id}.png`);
+        const bytes = await saveAs(img, item);
         S.done.push(item.id);
         saveDone(S.done);
         note(`${item.id} 保存 ${Math.round(bytes / 1024)}KB (${S.done.length}/${queue.length})`);

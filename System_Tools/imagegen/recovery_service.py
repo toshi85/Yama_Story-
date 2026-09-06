@@ -47,7 +47,7 @@ def clear_orphan(work):
     if not isinstance(pid, int):
         return
     cmd = subprocess.run(['ps', '-p', str(pid), '-o', 'command='], capture_output=True, text=True).stdout
-    if str(Path(__file__).with_name('recover.py')) + ' ' in cmd and str(work) in cmd:
+    if any(str(Path(__file__).with_name(name)) + ' ' in cmd for name in ('recover.py', 'run.py')) and str(work) in cmd:
         try:
             if os.getpgid(pid) == pid:
                 os.killpg(pid, signal.SIGTERM)
@@ -55,14 +55,14 @@ def clear_orphan(work):
             pass
 
 
-def run_worker(command, work, restarts=0, stall=240, poll=5):
+def run_worker(command, work, restarts=0, stall=240, poll=5, phase='recover'):
     child = subprocess.Popen(command, start_new_session=True)
     started = time.time()
-    record = work / '.imagegen/recovery.json'
+    record = work / '.imagegen' / ('generation_status.json' if phase == 'generate' else 'recovery.json')
     try:
         while child.poll() is None:
             last = max(started, record.stat().st_mtime if record.exists() else started)
-            write_state(work, status='running', pid=child.pid, restarts=restarts, last_progress=last)
+            write_state(work, status='running', phase=phase, pid=child.pid, restarts=restarts, last_progress=last)
             if time.time() - last > stall:
                 print('無応答を検知：回収処理を終了し、保存済み位置から再開します', flush=True)
                 stop_child(child)
@@ -78,15 +78,20 @@ def main():
     ap.add_argument('work', type=Path)
     ap.add_argument('--history', type=Path, required=True)
     ap.add_argument('--retry-unmatched', action='store_true')
+    ap.add_argument('--generate-missing', action='store_true')
     args = ap.parse_args()
     work = args.work.resolve()
     (work / '.imagegen').mkdir(exist_ok=True)
+    if args.generate_missing:
+        (work / '.imagegen/require_receipts').touch(exist_ok=True)
+        (work / '.imagegen/require_image_validation').touch(exist_ok=True)
     # サービス自身の二重起動を防止。ワーカーは生成処理と共通の別ロックを取る。
     lock = (work / '.imagegen/recovery_service.lock').open('a+')
     try:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     except BlockingIOError:
         print('回収サービスは既に実行中です', flush=True)
+        lock.close()
         return
     signal.signal(signal.SIGTERM, lambda *_: sys.exit(143))
     clear_orphan(work)
@@ -95,16 +100,27 @@ def main():
     if args.retry_unmatched:
         command.append('--retry-unmatched')
     restarts = 0
+    phase_path = work / '.imagegen/pipeline_phase.json'
+    phase = json.loads(phase_path.read_text()).get('phase', 'recover') if phase_path.exists() else 'recover'
+    if not args.generate_missing:
+        phase = 'recover'
     while True:
-        result = run_worker(command, work, restarts)
+        worker_command = [sys.executable, '-u', str(Path(__file__).with_name('run.py')), str(work)] if phase == 'generate' else command
+        result = run_worker(worker_command, work, restarts, phase=phase)
         if result == 0:
             count = len(verified_ids(work, queue))
+            if count < len(queue) and args.generate_missing:
+                phase = 'generate'
+                phase_path.write_text(json.dumps({'phase': phase}))
+                print(f'自動移行：未完了の{len(queue)-count}枠を生成・検査します', flush=True)
+                continue
             data = dict(at=time.time(), exit_code=0, verified=count, total=len(queue), visual_review_complete=False)
             path = work / '.imagegen/recovery_job_result.json'
             tmp = path.with_suffix('.tmp')
             tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2)); tmp.replace(path)
-            write_state(work, status='finished', verified=count, total=len(queue), restarts=restarts)
-            notify(f'画像回収終了：{count}/{len(queue)}枠。' + ('目視確認が必要です。' if count == len(queue) else '未回収素材の対応が必要です。'))
+            write_state(work, status='finished', phase=phase, verified=count, total=len(queue), restarts=restarts)
+            notify((f'全画像の生成・自動検査終了：{count}/{len(queue)}枠。内容の最終目視確認が必要です。' if phase == 'generate' and count == len(queue) else f'画像回収終了：{count}/{len(queue)}枠。' + ('目視確認が必要です。' if count == len(queue) else '未回収素材の対応が必要です。')))
+            lock.close()
             return
         restarts += 1
         # 制限通知は15分待つ。通信障害も繰り返し連打しない。
@@ -113,7 +129,7 @@ def main():
             notify('ChatGPTの専用ブラウザでログイン確認が必要です。画像は保存されています。' if result == 76 else f'画像回収を自動復旧中です。{delay}秒後に再開します（再起動{restarts}回）。')
         until = time.time() + delay
         while time.time() < until:
-            write_state(work, status='retry_wait', restarts=restarts, retry_at=until, exit_code=result)
+            write_state(work, status='retry_wait', phase=phase, restarts=restarts, retry_at=until, exit_code=result)
             time.sleep(min(5, max(0, until-time.time())))
 
 

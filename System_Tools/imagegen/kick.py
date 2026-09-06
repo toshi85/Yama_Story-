@@ -19,13 +19,14 @@ import pathlib
 import subprocess
 import sys
 import time
+from integrity import verified_ids
 
 LABEL = 'com.yama.imagegen'
 
 
 def main(work: pathlib.Path, dry_run: bool = False) -> None:
     queue = json.loads((work / 'image_queue.json').read_text(encoding='utf-8'))
-    have = {p.stem for p in (work / 'images').glob('*.png')}
+    have = verified_ids(work, queue)
     done = sum(1 for q in queue if q['id'] in have)
     stamp = time.strftime('%H:%M:%S')
 
