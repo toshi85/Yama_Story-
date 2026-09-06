@@ -16,6 +16,27 @@ def classify(running, age, finished, count, total):
     return 'stopped', '停止中'
 
 
+def editing_snapshot(work, commands):
+    labels = {'maps':'地形映像を準備中','sync':'音声同期を検査中','render_draft':'確認用動画を書き出し中','gate_draft':'確認用動画を検査中','render_final':'720p動画を書き出し中','gate_final':'720p動画を検査中','review_ready':'動画の自動検査終了・目視と転送を確認中','draft_needs_fix':'検査で修正が必要','error':'処理エラーを確認中'}
+    try:
+        edit=json.loads((work/'.editing/status.json').read_text())
+    except (OSError,ValueError):
+        return None
+    try:
+        delivery=json.loads((work/'.editing/delivery_status.json').read_text())
+    except (OSError,ValueError):
+        delivery={}
+    stage=delivery.get('stage')
+    if stage in ('packaging','uploading','retry_upload','committing_records','uploaded'):
+        label={'packaging':'別PC用セットを梱包中','uploading':'GitHubへ転送中','retry_upload':'GitHub転送を再試行中','committing_records':'GitHubへ編集記録を反映中','uploaded':'GitHub保存確認済み・本人の最終確認待ち'}[stage]
+        updated=delivery.get('updated')
+    else:
+        label=labels.get(edit.get('stage'),edit.get('stage','未確認'));updated=edit.get('updated')
+    active=any('/tozawa_edit/'+name+' ' in c and str(work) in c for c in commands for name in ('run.py','publish.py'))
+    if not active and stage!='uploaded' and edit.get('stage')!='review_ready':label='処理の終了・停止を確認（最終工程：'+label+'）'
+    return dict(label=label,updated=updated,stage=stage or edit.get('stage'),release=delivery.get('release'),human_review='pending')
+
+
 def snapshot(work, log):
     state_path = work / '.imagegen/recovery.json'
     state = json.loads(state_path.read_text())
@@ -75,7 +96,7 @@ def snapshot(work, log):
     latest = sorted(records.items(), key=lambda x: x[1].get('at', 0), reverse=True)[:8]
     lines = log.read_text(errors='replace').splitlines() if log.exists() else []
     safe_lines = [line for line in lines if line.startswith(('回収 ', '会話確認', '既存会話', '通信エラー', '回収終了', '通信エラーが継続', '自動移行', '全311', 'ChatGPTのアクセス制限', '画像回収を自動復旧'))][-8:]
-    return dict(project=work.name, status=code, label=label, running=running,
+    return dict(editing=editing_snapshot(work, commands), project=work.name, status=code, label=label, running=running,
                 verified=count, phase=phase, total=total, inspected=len(state['visited']),
                 updated=updated, checked=now, age=int(now-updated), retry_at=retry_at, evidence=evidence,
                 latest=[dict(id=k, at=v.get('at', 0)) for k, v in latest], logs=safe_lines)
@@ -97,7 +118,7 @@ footer{font-size:12px;color:#758279;line-height:1.8}@media(max-width:600px){main
 <section class="card"><div id="status" class="badge">状況を確認中</div><p id="phase">現在の工程を確認中</p>
 <div class="count" id="count">— <span>/ 311 枠</span></div><progress id="bar" max="311" value="0"></progress>
 <p id="detail">読み込み中…</p><p id="evidence"></p><p>「照合済み」はプロンプト・保存ファイルの対応を確認した枠数です。全編編集の完了を表す数字ではありません。</p></section>
-<div class="grid"><section class="card"><h2>処理が進んでいるか</h2><p>回収記録の最終更新</p><div class="stat" id="updated">—</div><p id="age">—</p><p id="process">—</p><p>2分以上記録が更新されなければ「応答・更新待ち」、処理が終了していれば「停止」または「回収終了」と表示します。</p></section>
+<section class="card"><h2>全編編集・GitHubへの保存</h2><div id="editphase" class="badge">確認中</div><p id="editupdated"></p><p><a href="http://localhost:8795/check/sheet.html">専用編集ツールを開く</a></p><p>画像311枠の完了と、動画の検査・GitHubへの保存は別々に確認します。本人の最終確認は未実施です。</p></section><div class="grid"><section class="card"><h2>処理が進んでいるか</h2><p>回収記録の最終更新</p><div class="stat" id="updated">—</div><p id="age">—</p><p id="process">—</p><p>2分以上記録が更新されなければ「応答・更新待ち」、処理が終了していれば「停止」または「回収終了」と表示します。</p></section>
 <section class="card"><h2>最近回収できた画像</h2><ul id="latest"></ul></section></div>
 <section class="card"><h2>最近の作業ログ</h2><pre id="logs">—</pre></section>
 <footer>5秒ごとに自動確認します。画面を閉じても回収処理は続きます。<br><span id="checked">画面接続確認中</span><br>回収終了後も、画像の目視確認・未回収素材の対応が必要です。</footer></main>
@@ -106,6 +127,7 @@ const el=id=>document.getElementById(id), stamp=t=>new Date(t*1000).toLocaleTime
 let busy=false;
 async function refresh(){if(busy)return;busy=true;try{
 const r=await fetch('/status',{cache:'no-store',signal:AbortSignal.timeout(4000)});if(!r.ok)throw Error('HTTP');const d=await r.json();
+if(d.editing){el('editphase').textContent=d.editing.label;el('editupdated').textContent='工程記録の更新：'+d.editing.updated;}else{el('editphase').textContent='編集の工程記録はまだありません';}
 el('phase').textContent=d.phase==='generate'?'現在の工程：不足画像の生成・自動検査':'現在の工程：既存の生成履歴から、正しい画像を回収・照合';
 el('evidence').textContent=d.evidence?'判定時の表示（'+stamp(d.evidence.observedAt)+'）：'+d.evidence.text:'制限を示す明確な表示は現在確認できていません。';
 el('status').textContent=d.label;el('status').className='badge '+d.status;
