@@ -32,12 +32,22 @@ def snapshot(work, log):
     if result_path.exists() and result_path.stat().st_mtime >= updated:
         finished = json.loads(result_path.read_text()).get('exit_code') == 0
     code, label = classify(running, now - updated, finished, len(records), total)
+    service_path = work / '.imagegen/service.json'
+    retry_at = None
+    if service_path.exists():
+        service = json.loads(service_path.read_text())
+        service_alive = any('/imagegen/recovery_service.py ' in c and str(work) in c for c in commands)
+        if service_alive and service.get('status') == 'retry_wait' and now - service.get('at', 0) < 30:
+            code, label = 'waiting', '自動復旧・再開待ち'
+            if service.get('exit_code') == 76:
+                label = 'ログイン確認待ち'
+            retry_at = service.get('retry_at')
     latest = sorted(records.items(), key=lambda x: x[1].get('at', 0), reverse=True)[:8]
     lines = log.read_text(errors='replace').splitlines() if log.exists() else []
     safe_lines = [line for line in lines if line.startswith(('回収 ', '会話確認', '既存会話', '通信エラー', '回収終了', '通信エラーが継続'))][-8:]
     return dict(project=work.name, status=code, label=label, running=running,
                 verified=len(records), total=total, inspected=len(state['visited']),
-                updated=updated, checked=now, age=int(now-updated),
+                updated=updated, checked=now, age=int(now-updated), retry_at=retry_at,
                 latest=[dict(id=k, at=v.get('at', 0)) for k, v in latest], logs=safe_lines)
 
 
@@ -69,7 +79,7 @@ const r=await fetch('/status',{cache:'no-store',signal:AbortSignal.timeout(4000)
 el('status').textContent=d.label;el('status').className='badge '+d.status;
 el('count').replaceChildren(document.createTextNode(d.verified+' '));const n=document.createElement('span');n.textContent='/ '+d.total+' 枠';el('count').append(n);
 el('bar').max=d.total;el('bar').value=d.verified;el('detail').textContent='照合済み '+Math.round(d.verified/d.total*100)+'% ・ 残り '+(d.total-d.verified)+' 枠 ・ 履歴確認 '+d.inspected+' 件';
-el('updated').textContent=stamp(d.updated);el('age').textContent=d.age+'秒前に回収記録を更新';el('process').textContent='回収プロセス：'+(d.running?'起動中':'終了・停止');
+el('updated').textContent=stamp(d.updated);el('age').textContent=d.age+'秒前に回収記録を更新';el('process').textContent=d.retry_at?'自動再開予定：'+stamp(d.retry_at):'回収プロセス：'+(d.running?'起動中':'終了・停止');
 el('latest').replaceChildren(...d.latest.map(x=>{const li=document.createElement('li'),t=document.createElement('time');li.textContent=x.id;t.textContent=stamp(x.at);li.append(t);return li}));
 el('logs').textContent=d.logs.join('\\n')||'作業ログはまだありません';el('checked').textContent='画面の接続確認：'+stamp(d.checked);
 }catch(e){el('status').className='badge offline';el('status').textContent='状況を取得できません';el('process').textContent='表示は最後に取得した情報です。現在の稼働状況は不明です。'}finally{busy=false}}

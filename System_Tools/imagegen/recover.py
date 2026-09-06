@@ -8,6 +8,7 @@ import pathlib
 import re
 import sqlite3
 import time
+import fcntl
 
 import chrome_bridge as bridge
 
@@ -50,6 +51,12 @@ def main():
     ap.add_argument('--limit', type=int, default=1500)
     args = ap.parse_args()
     work = args.work.resolve()
+    lock = (work / '.imagegen.lock').open('a+')
+    try:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except BlockingIOError:
+        print('生成・回収処理が既に起動しています。二重起動せず待機します', flush=True)
+        raise SystemExit(75)
     queue = json.loads((work / 'image_queue.json').read_text())
     lookup = {}
     for item in queue:
@@ -78,8 +85,11 @@ def main():
         data = None
         for attempt in range(24):
             time.sleep(1.5)
-            raw = evaluate(ws, "JSON.stringify({url:location.href, ready:document.readyState, busy:!!document.querySelector('[data-testid=stop-button]'), users:[...document.querySelectorAll('[data-message-author-role=user]')].map(x=>({text:x.innerText,id:x.getAttribute('data-message-id')})), images:[...document.querySelectorAll('main img')].filter(x=>/backend-api\\/estuary\\/content|oaiusercontent/.test(x.src)).map(x=>x.src), text:document.querySelector('main')?.innerText || ''})")
+            raw = evaluate(ws, "JSON.stringify({loginRequired:!!document.querySelector('[data-testid=login-button]'), url:location.href, ready:document.readyState, busy:!!document.querySelector('[data-testid=stop-button]'), users:[...document.querySelectorAll('[data-message-author-role=user]')].map(x=>({text:x.innerText,id:x.getAttribute('data-message-id')})), images:[...document.querySelectorAll('main img')].filter(x=>/backend-api\\/estuary\\/content|oaiusercontent/.test(x.src)).map(x=>x.src), text:document.querySelector('main')?.innerText || ''})")
             data = json.loads(raw or '{}')
+            if data.get('loginRequired'):
+                print('ログイン確認待ち。保存済み画像を保持します', flush=True)
+                raise SystemExit(76)
             if data.get('url') != url or data.get('ready') != 'complete':
                 continue
             if data.get('users') and data.get('images') and not data.get('busy'):
@@ -122,7 +132,8 @@ def main():
                 status = 'already-recovered'
         elif data and re.search(r'Too many requests', data.get('text', ''), re.I):
             write_json(state_path, state)
-            raise RuntimeError('履歴取得の一時制限。新規生成せず回収記録を保存して停止')
+            print('履歴取得の一時制限。新規生成せず回収記録を保存して待機', flush=True)
+            raise SystemExit(75)
         state['visited'][url] = status
         write_json(state_path, state)
         if inspected % 10 == 0:
