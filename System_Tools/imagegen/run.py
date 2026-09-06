@@ -222,6 +222,8 @@ def main():
     handle_access_limit(work)
     wait_for_login()
     bridge.allow_downloads(work / 'images')
+    # 停止直前に保存された画像・照合記録を取り込み、再起動時の重複生成を防ぐ。
+    collect(work)
 
     queue, todo = remaining(work)
     if not todo:
