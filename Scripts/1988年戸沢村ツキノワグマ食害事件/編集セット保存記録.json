@@ -1,0 +1,18 @@
+{
+  "project": "1988年戸沢村ツキノワグマ食害事件",
+  "video": "out.mp4",
+  "gate": "PASS  2026-09-07 00:07  out.mp4",
+  "human_review": "pending",
+  "packages": [
+    {
+      "name": "Tozawa_Edit_Materials.zip",
+      "bytes": 1203771191,
+      "sha256": "576048b2b60b926bfad0c92e9806849e464b5505db211349e77392f4005cf0f2"
+    },
+    {
+      "name": "Tozawa_Edit_Review.zip",
+      "bytes": 416509268,
+      "sha256": "a019d53d07a6100df7497106773316a0d6fcb37cfcb36be8161865c46eaecfc0"
+    }
+  ]
+}
