@@ -70,6 +70,21 @@
     return list.length === 1 && norm(list[0].innerText) === norm(prompt) ? list[0] : null;
   };
 
+  const completedImages = (prompt) => {
+    if (!matchedUser(prompt)) return [];
+    return imgEls().filter(img => {
+      if (!img.complete || !img.naturalWidth) return false;
+      let parent = img;
+      for (let i = 0; i < 5 && parent; i++, parent = parent.parentElement) {
+        const buttons = [...parent.querySelectorAll('button')];
+        const edit = buttons.some(b => /^(画像を編集|Edit image)$/i.test(b.getAttribute('aria-label') || ''));
+        const share = buttons.some(b => /^(この画像を共有する|Share image|Share this image)$/i.test(b.getAttribute('aria-label') || ''));
+        if (edit && share) return true;
+      }
+      return false;
+    });
+  };
+
   const retryBtn = () => [...document.querySelectorAll('button')]
     .find((b) => b.textContent.includes('再試行') || b.textContent.includes('Retry'));
 
@@ -147,13 +162,25 @@
   }
 
   // 停止ボタンが消えるまで待つ（＝生成が終わるまで）
-  async function waitIdle(timeoutMs) {
+  async function waitIdle(timeoutMs, prompt) {
     const t0 = Date.now();
     let quiet = 0;
+    let stableSince = 0, stableImage = '';
     while (Date.now() - t0 < timeoutMs) {
       await sleep(2000);
       if (limitHit()) return 'limit';
-      if (busy()) { quiet = 0; continue; }
+      if (busy()) {
+        quiet = 0;
+        const ready = prompt ? completedImages(prompt) : [];
+        const key = ready.length ? [...new Set(ready.map(x=>x.src))].join('|') : '';
+        if (!key || key !== stableImage) { stableSince = key ? Date.now() : 0; stableImage = key; }
+        if (key && Date.now() - stableSince >= 20000) {
+          note('完成画像の表示が安定していますが停止ボタンが残っています。同じ会話を再読込して保存を確認します');
+          location.reload();
+          await new Promise(()=>{});
+        }
+        continue;
+      }
       quiet += 2000;
       if (quiet >= 6000) return true;    // 6秒続けて停止ボタンが無ければ完了
       if (limitHit()) return 'limit';
@@ -205,7 +232,7 @@
       if (retryBtn()) return 'retry';
       if (limitHit()) return 'limit';
     }
-    const idle = await waitIdle(timeoutMs - (Date.now() - t0));
+    const idle = await waitIdle(timeoutMs - (Date.now() - t0), prompt);
     if (idle === 'limit') return 'limit';
     if (!idle) throw new Error('生成タイムアウト');
     if (retryBtn()) return 'retry';
@@ -263,11 +290,17 @@
       S.current = item.id;
 
       try {
-        await newChat();
-        await sleep(1500);
-        await send(item.prompt);
-
-        let img = await waitImage(item.prompt);
+        let img;
+        if (!busy() && completedImages(item.prompt).length) {
+          note(`${item.id} 同じ会話の完成結果を保存します（再送なし）`);
+          await waitIdle(15000, item.prompt);
+          img = completedImages(item.prompt);
+        } else {
+          await newChat();
+          await sleep(1500);
+          await send(item.prompt);
+          img = await waitImage(item.prompt);
+        }
 
         // 生成上限は「終わり」ではなく「待てば空く」。夜通し回すので待って続ける。
         // 🚨 上限の誤判定を機械で止める。上限らしき表示が出ても、解除までの残り時間が
