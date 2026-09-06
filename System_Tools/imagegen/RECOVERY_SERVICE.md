@@ -13,7 +13,14 @@
 進捗画面：<http://127.0.0.1:8794>（このMac内のみ）。`com.yama.imagegen.progress` が管理する。
 回収記録は作品の `.imagegen/recovery.json`、稼働状態は `.imagegen/service.json`、ログは `/tmp/yama-image-recovery.log`。
 既存の生成サービス `com.yama.imagegen` と `com.yama.imagegen.kick` は回収中は解除しておく。
-画像の新規発注や動画APIへの切り替えは、このサービスでは行わない。
+`--generate-missing` 指定時は、回収終了後に未完了枠を既存のChatGPT画像生成処理 `run.py` へ自動で渡す。戸沢村では有効化済み。動画APIへの切り替えは行わない。
+
+生成工程は `.imagegen/pipeline_phase.json` に保存し、サービス再起動時も続きから行う。
+全311枠が要求文・SHA・PNGデコード・縦横比・キャラ透過の検査を通るまで、未完了枠を再生成する。
+不合格の既存ファイルは `.imagegen/unverified_existing` に退避し、削除しない。
+ChatGPTの「リクエストが多すぎます」ダイアログは送信を止めて15分待つ。期限前には再送しない。
+生成工程の生存確認は `.imagegen/generation_status.json`。利用上限待ちも生存確認を更新する。
+機械検査では内容・人物の同一性まで保証できないため、最終の目視確認は残す。
 
 設定の正本は `~/Library/LaunchAgents/com.yama.imagegen.recovery.plist`。
 `ProgramArguments` は仮想環境のPython、`recovery_service.py`、作品パス、`--history`、回収用履歴コピー。

@@ -15,6 +15,7 @@ import sys
 import time
 from collections import Counter
 from pathlib import Path
+from integrity import verified_ids
 
 DOWNLOADS = Path.home() / "Downloads"
 
@@ -25,12 +26,35 @@ def collect(work: Path) -> int:
     images = work / "images"
     images.mkdir(parents=True, exist_ok=True)
 
+    strict = (work / '.imagegen' / 'require_receipts').exists()
+    receipts = work / '.imagegen' / 'receipts'
+    receipts.mkdir(parents=True, exist_ok=True)
+    for folder in (DOWNLOADS, images):
+        for receipt in folder.glob('*.receipt*.json'):
+            try:
+                data = json.loads(receipt.read_text())
+                if data.get('id') not in ids:
+                    continue
+            except (OSError, ValueError):
+                continue
+            shutil.move(str(receipt), str(receipts / (data['id'] + '.json')))
+
     moved = 0
     for f in DOWNLOADS.glob("*.png"):
         # Chrome の重複回避サフィックス "ASSET-004_char (1).png" も拾う
         stem = re.sub(r"\s*\(\d+\)$", "", f.stem)
         if stem not in ids:
             continue
+        if strict:
+            receipt = receipts / (stem + '.json')
+            import hashlib
+            valid = receipt.exists() and hashlib.sha256(f.read_bytes()).hexdigest() == json.loads(receipt.read_text()).get('sha256')
+            if not valid:
+                quarantine = work / '.imagegen' / 'unverified_downloads'
+                quarantine.mkdir(exist_ok=True)
+                target = quarantine / (str(time.time_ns()) + '_' + f.name)
+                shutil.move(str(f), str(target))
+                continue
         # ダウンロードは生成した時にしか起きないので、新しい方を常に採用する
         dest = images / f"{stem}.png"
         shutil.move(str(f), str(dest))
@@ -41,7 +65,7 @@ def collect(work: Path) -> int:
 def report(work: Path):
     queue = json.loads((work / "image_queue.json").read_text(encoding="utf-8"))
     images = work / "images"
-    have = {p.stem for p in images.glob("*.png")} if images.exists() else set()
+    have = verified_ids(work, queue)
     todo = [q for q in queue if q["id"] not in have]
     print(f"完了 {len(queue) - len(todo)} / 全 {len(queue)}  残り {len(todo)}")
     if todo:

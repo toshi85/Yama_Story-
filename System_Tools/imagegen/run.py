@@ -27,6 +27,7 @@ else:
     import fcntl
 
 import chrome_bridge as bridge
+from integrity import verified_ids
 
 HERE = pathlib.Path(__file__).resolve().parent
 DRIVER = HERE / 'driver.js'
@@ -75,7 +76,9 @@ def js(expression):
     target = next((t for t in bridge.tabs() if 'chatgpt.com' in t.get('url', '')), None)
     if not target:
         raise RuntimeError('chatgpt.com のタブがありません')
-    res = bridge.evaluate(target['webSocketDebuggerUrl'], expression)
+    res = bridge.command(target['webSocketDebuggerUrl'], 'Runtime.evaluate', {
+        'expression': expression, 'awaitPromise': True, 'returnByValue': True,
+    }, timeout=45)
     inner = res.get('result', {})
     if 'exceptionDetails' in inner:
         raise RuntimeError(json.dumps(inner['exceptionDetails'], ensure_ascii=False)[:300])
@@ -101,21 +104,28 @@ def wait_for_login():
         return
     print('\n  開いたChromeでChatGPTにログインしてください（最初の1回だけです）')
     print('  ※ 普段のChromeとは別のウィンドウです\n')
-    while not js('!!document.querySelector("#prompt-textarea")'):
+    for _ in range(6):
         time.sleep(5)
+        if js('!!document.querySelector("#prompt-textarea")'):
+            break
+    else:
+        raise SystemExit(76)
     print('  ログインを確認しました\n')
 
 
 def remaining(work):
     """全体から保存済みを引く。これが唯一の進捗の source of truth。"""
     queue = json.loads((work / 'image_queue.json').read_text(encoding='utf-8'))
-    have = {p.stem for p in (work / 'images').glob('*.png')}
+    have = verified_ids(work, queue)
     return queue, [{'id': q['id'], 'prompt': q['prompt']}
                    for q in queue if q['id'] not in have]
 
 
 def install_and_run(todo):
     """キューとループをページへ入れ、走らせる。"""
+    if js('!!window.__yamaGen?.running'):
+        print('生成ループは稼働中です。再注入・二重起動はしません', flush=True)
+        return
     js(f'window.__yamaQueue = {json.dumps(todo, ensure_ascii=False)}; '
        'window.__yamaQueue.length')
     js(DRIVER.read_text(encoding='utf-8'))
@@ -137,7 +147,44 @@ def install_and_run(todo):
 
 def collect(work):
     subprocess.run([sys.executable, str(HERE / 'collect.py'), str(work)],
-                   capture_output=True)
+                   capture_output=True, timeout=30, check=True)
+
+
+def heartbeat(work, **state):
+    path = work / '.imagegen/generation_status.json'
+    tmp = path.with_suffix('.tmp')
+    tmp.write_text(json.dumps(dict(at=time.time(), **state), ensure_ascii=False))
+    tmp.replace(path)
+
+
+def handle_access_limit(work):
+    path = work / '.imagegen/access_limit.json'
+    previous = json.loads(path.read_text()) if path.exists() else None
+    if previous and previous['until'] > time.time():
+        raise SystemExit(75)
+    text = js('Array.from(document.querySelectorAll("[role=dialog],[role=alertdialog]")).map(x=>x.innerText).join("\\n")') or ''
+    import re
+    if re.search(r'リクエストが多すぎ|リクエストの頻度が高|Too many requests', text, re.I):
+        if previous:
+            js('(()=>{const d=[...document.querySelectorAll("[role=dialog],[role=alertdialog]")].find(x=>/リクエストが多すぎ|Too many requests/i.test(x.innerText));const b=d&&[...d.querySelectorAll("button")].find(x=>/^(了解|OK|Okay)$/i.test(x.innerText.trim()));if(b)b.click()})()')
+            path.unlink()
+        else:
+            js('(()=>{if(window.__yamaGen)window.__yamaGen.stop=true;clearInterval(window.__yamaSuper)})()')
+            until = time.time() + 900
+            path.write_text(json.dumps({'until': until}))
+            print('ChatGPTのアクセス制限を検知。15分待って自動再開します', flush=True)
+            raise SystemExit(75)
+    elif previous:
+        path.unlink()
+
+
+def quarantine_pending(work, todo):
+    quarantine = work / '.imagegen/unverified_existing'
+    quarantine.mkdir(exist_ok=True)
+    for item in todo:
+        old = work / 'images' / (item['id'] + '.png')
+        if old.exists():
+            old.replace(quarantine / (str(time.time_ns()) + '_' + old.name))
 
 
 def note_limit(work, until_ms):
@@ -166,6 +213,13 @@ def main():
 
     bridge.start()
     open_chatgpt()
+    try:
+        js('1')
+    except (TimeoutError, ConnectionError):
+        from recover import fresh_recovery_tab
+        ws = fresh_recovery_tab()
+        bridge.command(ws, 'Page.navigate', {'url': 'https://chatgpt.com/'}, timeout=30)
+    handle_access_limit(work)
     wait_for_login()
     bridge.allow_downloads(work / 'images')
 
@@ -174,17 +228,24 @@ def main():
         print(f'すべて完成しています（{len(queue)}枚）')
         return
     print(f'全{len(queue)}枚のうち、残り{len(todo)}枚を作ります')
+    if (work / '.imagegen' / 'require_receipts').exists():
+        if not js('!!window.__yamaGen?.running'):
+            quarantine_pending(work, todo)
     install_and_run(todo)
 
     last_count, last_change = len(queue) - len(todo), time.time()
     last_note = None
+    heartbeat(work, verified=last_count, total=len(queue), status='generating')
     while True:
-        time.sleep(60)
+        time.sleep(15)
+        handle_access_limit(work)
         collect(work)
         _, todo = remaining(work)
         done = len(queue) - len(todo)
+        heartbeat(work, verified=done, total=len(queue), status='generating')
 
         if not todo:
+            heartbeat(work, verified=done, total=len(queue), status='finished')
             print(f'完成しました（{len(queue)}枚）')
             return
 
@@ -198,6 +259,7 @@ def main():
         try:
             state = json.loads(js(
                 'JSON.stringify({running: __yamaGen.running, '
+                'busy: !!document.querySelector("[data-testid=stop-button]"), current: __yamaGen.current, '
                 'until: __yamaGen.limitUntil || 0, '
                 'last: __yamaGen.log.slice(-1)[0] || ""})'))
         except Exception as e:
@@ -206,7 +268,10 @@ def main():
             last_change = time.time()
             continue
 
+        heartbeat(work, verified=done, total=len(queue), status='generating', current=state.get('current'))
+
         if '生成上限' in state['last']:
+            heartbeat(work, verified=done, total=len(queue), status='limit_wait', until=state.get('until'), current=state.get('current'))
             # 待てば空く。driver.js が自分で再開する。
             # 解除予定の時刻を書き出しておくと、常駐がその時刻に合わせて起こしてくれる。
             note_limit(work, state.get('until'))
@@ -218,6 +283,12 @@ def main():
             continue
         if not state['running'] or time.time() - last_change > STALL_LIMIT:
             print('  止まっているので入れ直します', flush=True)
+            if state['running'] and not state.get('busy'):
+                target = next(t for t in bridge.tabs() if 'chatgpt.com' in t.get('url', ''))
+                bridge.command(target['webSocketDebuggerUrl'], 'Page.reload', {}, timeout=30)
+                time.sleep(5)
+            if not js('!!window.__yamaGen?.running'):
+                quarantine_pending(work, todo)
             install_and_run(todo)
             last_change = time.time()
 

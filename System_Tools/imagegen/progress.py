@@ -21,10 +21,13 @@ def snapshot(work, log):
     state = json.loads(state_path.read_text())
     total = len(json.loads((work / 'image_queue.json').read_text()))
     records = state['verified']
+    for path in (work / '.imagegen/receipts').glob('*.json'):
+        receipt = json.loads(path.read_text())
+        records[receipt['id']] = receipt
     # 記録だけ残って実ファイルが失われた枠はカウントしない。
     records = {k: v for k, v in records.items() if (work / 'images' / (k + '.png')).is_file()}
     commands = subprocess.run(['ps', '-axo', 'command='], capture_output=True, text=True, check=True).stdout.splitlines()
-    running = any('/imagegen/recover.py ' in c and str(work) in c for c in commands)
+    running = any(any('/imagegen/' + n + ' ' in c for n in ('recover.py', 'run.py')) and str(work) in c for c in commands)
     now = time.time()
     updated = state_path.stat().st_mtime
     result_path = work / '.imagegen/recovery_job_result.json'
@@ -34,19 +37,36 @@ def snapshot(work, log):
     code, label = classify(running, now - updated, finished, len(records), total)
     service_path = work / '.imagegen/service.json'
     retry_at = None
+    phase = 'recover'
+    count = len(records)
     if service_path.exists():
         service = json.loads(service_path.read_text())
+        phase = service.get('phase', 'recover')
+        generation_path = work / '.imagegen/generation_status.json'
+        if phase == 'generate' and generation_path.exists():
+            generation = json.loads(generation_path.read_text())
+            count = generation.get('verified', count)
+            updated = max((v.get('at', 0) for v in records.values()), default=updated)
+            if running and now - generation.get('at', 0) < 90:
+                code, label = 'running', '画像を生成・検査中'
+                if generation.get('status') == 'limit_wait':
+                    code, label = 'waiting', '生成上限・自動再開待ち'
+                    retry_at = (generation.get('until') or 0) / 1000 or None
+            elif service.get('status') == 'finished' and count == total:
+                code, label = 'review', '全画像の生成・自動検査終了'
         service_alive = any('/imagegen/recovery_service.py ' in c and str(work) in c for c in commands)
         if service_alive and service.get('status') == 'retry_wait' and now - service.get('at', 0) < 30:
             code, label = 'waiting', '自動復旧・再開待ち'
             if service.get('exit_code') == 76:
                 label = 'ログイン確認待ち'
+            elif service.get('exit_code') == 75 and (work / '.imagegen/access_limit.json').exists():
+                label = 'ChatGPTアクセス制限・自動再開待ち'
             retry_at = service.get('retry_at')
     latest = sorted(records.items(), key=lambda x: x[1].get('at', 0), reverse=True)[:8]
     lines = log.read_text(errors='replace').splitlines() if log.exists() else []
-    safe_lines = [line for line in lines if line.startswith(('回収 ', '会話確認', '既存会話', '通信エラー', '回収終了', '通信エラーが継続'))][-8:]
+    safe_lines = [line for line in lines if line.startswith(('回収 ', '会話確認', '既存会話', '通信エラー', '回収終了', '通信エラーが継続', '自動移行', '全311', 'ChatGPTのアクセス制限', '画像回収を自動復旧'))][-8:]
     return dict(project=work.name, status=code, label=label, running=running,
-                verified=len(records), total=total, inspected=len(state['visited']),
+                verified=count, phase=phase, total=total, inspected=len(state['visited']),
                 updated=updated, checked=now, age=int(now-updated), retry_at=retry_at,
                 latest=[dict(id=k, at=v.get('at', 0)) for k, v in latest], logs=safe_lines)
 
@@ -64,7 +84,7 @@ progress{width:100%;height:12px;accent-color:#337858}p{line-height:1.8;margin:12
 ul{padding:0;list-style:none;margin:0}li{display:flex;justify-content:space-between;border-top:1px solid #edf0ea;padding:10px 0;font-size:13px}time{color:#718078}pre{white-space:pre-wrap;font-size:12px;line-height:1.9;color:#526157;margin:0}
 footer{font-size:12px;color:#758279;line-height:1.8}@media(max-width:600px){main{margin:25px auto;padding:0 16px}.grid{grid-template-columns:1fr}.card{padding:22px}h1{font-size:21px}.count{font-size:52px}header{display:block}.badge{margin-top:10px}}
 </style><main><header><div><div class="eyebrow">山のチャンネル / 作業状況</div><h1>1988年 戸沢村ツキノワグマ食害事件</h1></div></header>
-<section class="card"><div id="status" class="badge">状況を確認中</div><p>現在の工程：既存の生成履歴から、正しい画像を回収・照合</p>
+<section class="card"><div id="status" class="badge">状況を確認中</div><p id="phase">現在の工程を確認中</p>
 <div class="count" id="count">— <span>/ 311 枠</span></div><progress id="bar" max="311" value="0"></progress>
 <p id="detail">読み込み中…</p><p>「照合済み」はプロンプト・保存ファイルの対応を確認した枠数です。全編編集の完了を表す数字ではありません。</p></section>
 <div class="grid"><section class="card"><h2>処理が進んでいるか</h2><p>回収記録の最終更新</p><div class="stat" id="updated">—</div><p id="age">—</p><p id="process">—</p><p>2分以上記録が更新されなければ「応答・更新待ち」、処理が終了していれば「停止」または「回収終了」と表示します。</p></section>
@@ -76,6 +96,7 @@ const el=id=>document.getElementById(id), stamp=t=>new Date(t*1000).toLocaleTime
 let busy=false;
 async function refresh(){if(busy)return;busy=true;try{
 const r=await fetch('/status',{cache:'no-store',signal:AbortSignal.timeout(4000)});if(!r.ok)throw Error('HTTP');const d=await r.json();
+el('phase').textContent=d.phase==='generate'?'現在の工程：不足画像の生成・自動検査':'現在の工程：既存の生成履歴から、正しい画像を回収・照合';
 el('status').textContent=d.label;el('status').className='badge '+d.status;
 el('count').replaceChildren(document.createTextNode(d.verified+' '));const n=document.createElement('span');n.textContent='/ '+d.total+' 枠';el('count').append(n);
 el('bar').max=d.total;el('bar').value=d.verified;el('detail').textContent='照合済み '+Math.round(d.verified/d.total*100)+'% ・ 残り '+(d.total-d.verified)+' 枠 ・ 履歴確認 '+d.inspected+' 件';
