@@ -138,55 +138,58 @@ def tabs():
     return [t for t in _http('/json') if t.get('type') == 'page']
 
 
-def command(ws_url, method, params=None):
+def command(ws_url, method, params=None, timeout=180):
     """CDPコマンドを1回だけ叩く。WebSocketは標準ライブラリで喋る。"""
     u = urlparse(ws_url)
     sock = socket.create_connection((u.hostname, u.port), timeout=10)
-    sock.settimeout(180)
-    key = base64.b64encode(os.urandom(16)).decode()
-    sock.sendall((
-        f'GET {u.path} HTTP/1.1\r\n'
-        f'Host: {u.hostname}:{u.port}\r\n'
-        'Upgrade: websocket\r\nConnection: Upgrade\r\n'
-        f'Sec-WebSocket-Key: {key}\r\nSec-WebSocket-Version: 13\r\n\r\n'
-    ).encode())
-    head = b''
-    while b'\r\n\r\n' not in head:
-        head += sock.recv(4096)
+    try:
+        sock.settimeout(timeout)
+        key = base64.b64encode(os.urandom(16)).decode()
+        sock.sendall((
+            f'GET {u.path} HTTP/1.1\r\n'
+            f'Host: {u.hostname}:{u.port}\r\n'
+            'Upgrade: websocket\r\nConnection: Upgrade\r\n'
+            f'Sec-WebSocket-Key: {key}\r\nSec-WebSocket-Version: 13\r\n\r\n'
+        ).encode())
+        head = b''
+        while b'\r\n\r\n' not in head:
+            head += sock.recv(4096)
 
-    body = json.dumps({
-        'id': 1, 'method': method, 'params': params or {},
-    }).encode()
-    mask = os.urandom(4)
-    n = len(body)
-    if n < 126:
-        header = bytes([0x81, 0x80 | n])
-    elif n < 65536:
-        header = bytes([0x81, 0xFE]) + struct.pack('>H', n)
-    else:
-        header = bytes([0x81, 0xFF]) + struct.pack('>Q', n)
-    sock.sendall(header + mask + bytes(b ^ mask[i % 4] for i, b in enumerate(body)))
+        body = json.dumps({
+            'id': 1, 'method': method, 'params': params or {},
+        }).encode()
+        mask = os.urandom(4)
+        n = len(body)
+        if n < 126:
+            header = bytes([0x81, 0x80 | n])
+        elif n < 65536:
+            header = bytes([0x81, 0xFE]) + struct.pack('>H', n)
+        else:
+            header = bytes([0x81, 0xFF]) + struct.pack('>Q', n)
+        sock.sendall(header + mask + bytes(b ^ mask[i % 4] for i, b in enumerate(body)))
 
-    def read(count):
-        buf = b''
-        while len(buf) < count:
-            chunk = sock.recv(count - len(buf))
-            if not chunk:
-                raise ConnectionError('接続が切れました')
-            buf += chunk
-        return buf
+        def read(count):
+            buf = b''
+            while len(buf) < count:
+                chunk = sock.recv(count - len(buf))
+                if not chunk:
+                    raise ConnectionError('接続が切れました')
+                buf += chunk
+            return buf
 
-    while True:
-        first, second = read(2)
-        length = second & 0x7F
-        if length == 126:
-            length = struct.unpack('>H', read(2))[0]
-        elif length == 127:
-            length = struct.unpack('>Q', read(8))[0]
-        message = json.loads(read(length))
-        if message.get('id') == 1:
-            sock.close()
-            return message
+        while True:
+            first, second = read(2)
+            length = second & 0x7F
+            if length == 126:
+                length = struct.unpack('>H', read(2))[0]
+            elif length == 127:
+                length = struct.unpack('>Q', read(8))[0]
+            message = json.loads(read(length))
+            if message.get('id') == 1:
+                sock.close()
+                return message
+    finally:
+        sock.close()
 
 
 def evaluate(ws_url, expression):
