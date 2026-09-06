@@ -77,6 +77,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('work', type=Path)
     ap.add_argument('--history', type=Path, required=True)
+    ap.add_argument('--retry-unmatched', action='store_true')
     args = ap.parse_args()
     work = args.work.resolve()
     (work / '.imagegen').mkdir(exist_ok=True)
@@ -91,6 +92,8 @@ def main():
     clear_orphan(work)
     queue = json.loads((work / 'image_queue.json').read_text())
     command = [sys.executable, '-u', str(Path(__file__).with_name('recover.py')), str(work), '--history', str(args.history.resolve())]
+    if args.retry_unmatched:
+        command.append('--retry-unmatched')
     restarts = 0
     while True:
         result = run_worker(command, work, restarts)
