@@ -71,14 +71,14 @@ def acquire_lock(work):
     return handle
 
 
-def js(expression):
+def js(expression, timeout=45):
     """自動化用タブでJavaScriptを実行し、返り値を受け取る。"""
     target = next((t for t in bridge.tabs() if 'chatgpt.com' in t.get('url', '')), None)
     if not target:
         raise RuntimeError('chatgpt.com のタブがありません')
     res = bridge.command(target['webSocketDebuggerUrl'], 'Runtime.evaluate', {
         'expression': expression, 'awaitPromise': True, 'returnByValue': True,
-    }, timeout=45)
+    }, timeout=timeout)
     inner = res.get('result', {})
     if 'exceptionDetails' in inner:
         raise RuntimeError(json.dumps(inner['exceptionDetails'], ensure_ascii=False)[:300])
@@ -157,24 +157,31 @@ def heartbeat(work, **state):
     tmp.replace(path)
 
 
+def dismiss_access_notice():
+    """既知のアクセス制限通知だけを閉じる。送信・再試行はしない。"""
+    return bool(js('''(()=>{
+      const d=[...document.querySelectorAll('[role=dialog],[role=alertdialog]')]
+        .find(x=>/リクエストが多すぎ|リクエストの頻度が高|Too many requests/i.test(x.innerText));
+      const b=d&&[...d.querySelectorAll('button')].find(x=>/^(了解|OK|Okay)$/i.test(x.innerText.trim()));
+      if(!b)return false;b.click();return true;
+    })()''', timeout=10))
+
+
 def handle_access_limit(work):
     path = work / '.imagegen/access_limit.json'
     previous = json.loads(path.read_text()) if path.exists() else None
+    # 通知を閉じる操作は待機期限の判定より先に行う。
+    dismissed = dismiss_access_notice()
+    if dismissed:
+        print('アクセス制限通知の「了解」を押しました', flush=True)
     if previous and previous['until'] > time.time():
         raise SystemExit(75)
-    text = js('Array.from(document.querySelectorAll("[role=dialog],[role=alertdialog]")).map(x=>x.innerText).join("\\n")') or ''
-    import re
-    if re.search(r'リクエストが多すぎ|リクエストの頻度が高|Too many requests', text, re.I):
-        if previous:
-            js('(()=>{const d=[...document.querySelectorAll("[role=dialog],[role=alertdialog]")].find(x=>/リクエストが多すぎ|Too many requests/i.test(x.innerText));const b=d&&[...d.querySelectorAll("button")].find(x=>/^(了解|OK|Okay)$/i.test(x.innerText.trim()));if(b)b.click()})()')
-            path.unlink()
-        else:
-            js('(()=>{if(window.__yamaGen)window.__yamaGen.stop=true;clearInterval(window.__yamaSuper)})()')
-            until = time.time() + 900
-            path.write_text(json.dumps({'until': until}))
-            print('ChatGPTのアクセス制限を検知。15分待って自動再開します', flush=True)
-            raise SystemExit(75)
-    elif previous:
+    if dismissed:
+        js('(()=>{if(window.__yamaGen)window.__yamaGen.stop=true;clearInterval(window.__yamaSuper)})()')
+        path.write_text(json.dumps({'until': time.time() + 180}))
+        print('ChatGPTのアクセス制限を検知。3分待って自動再開します', flush=True)
+        raise SystemExit(75)
+    if previous:
         path.unlink()
 
 

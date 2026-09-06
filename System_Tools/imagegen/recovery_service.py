@@ -125,11 +125,23 @@ def main():
         restarts += 1
         # 制限通知は15分待つ。通信障害も繰り返し連打しない。
         delay = 900 if result in (75, 76) else min(300, 30 * 2 ** min(restarts - 1, 4))
+        access_limit = work / '.imagegen/access_limit.json'
+        if result == 75 and phase == 'generate' and access_limit.exists():
+            delay = max(1, int(json.loads(access_limit.read_text())['until'] - time.time()) + 1)
         if restarts == 1 or restarts % 6 == 0:
             notify('ChatGPTの専用ブラウザでログイン確認が必要です。画像は保存されています。' if result == 76 else f'画像回収を自動復旧中です。{delay}秒後に再開します（再起動{restarts}回）。')
         until = time.time() + delay
+        next_notice_check = 0
         while time.time() < until:
             write_state(work, status='retry_wait', phase=phase, restarts=restarts, retry_at=until, exit_code=result)
+            if phase == 'generate' and time.time() >= next_notice_check:
+                try:
+                    from run import dismiss_access_notice
+                    if dismiss_access_notice():
+                        print('待機中のアクセス制限通知の「了解」を押しました', flush=True)
+                except Exception as exc:
+                    print(f'通知の確認待ち：{type(exc).__name__}', flush=True)
+                next_notice_check = time.time() + 15
             time.sleep(min(5, max(0, until-time.time())))
 
 

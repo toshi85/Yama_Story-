@@ -11,17 +11,19 @@ class AccessLimitTest(unittest.TestCase):
         with TemporaryDirectory() as tmp:
             work = Path(tmp)
             (work / '.imagegen').mkdir()
-            with patch.object(run, 'js', side_effect=['リクエストが多すぎます', None]) as js, patch.object(run.time, 'time', return_value=1000):
+            with patch.object(run, 'js', side_effect=[True, None]) as js, patch.object(run.time, 'time', return_value=1000):
                 with self.assertRaises(SystemExit) as raised:
                     run.handle_access_limit(work)
                 self.assertEqual(raised.exception.code, 75)
                 self.assertEqual(js.call_count, 2)
-            self.assertEqual(json.loads((work / '.imagegen/access_limit.json').read_text())['until'], 1900)
-            with patch.object(run, 'js') as js, patch.object(run.time, 'time', return_value=1800):
+            self.assertEqual(json.loads((work / '.imagegen/access_limit.json').read_text())['until'], 1180)
+            with patch.object(run, 'js', return_value=True) as js, patch.object(run.time, 'time', return_value=1100):
                 with self.assertRaises(SystemExit):
                     run.handle_access_limit(work)
-                js.assert_not_called()
-            with patch.object(run, 'js', side_effect=['リクエストが多すぎます', None]), patch.object(run.time, 'time', return_value=1901):
+                js.assert_called_once()
+                self.assertIn('b.click()', js.call_args.args[0])
+                self.assertEqual(json.loads((work / '.imagegen/access_limit.json').read_text())['until'], 1180)
+            with patch.object(run, 'js', return_value=False), patch.object(run.time, 'time', return_value=1181):
                 run.handle_access_limit(work)
             self.assertFalse((work / '.imagegen/access_limit.json').exists())
 
