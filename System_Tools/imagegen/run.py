@@ -126,6 +126,11 @@ def install_and_run(todo):
     if js('!!window.__yamaGen?.running'):
         print('生成ループは稼働中です。再注入・二重起動はしません', flush=True)
         return
+    # 再読込した会話に未保存の結果があれば、その要求を先頭にして引き継ぐ。
+    from recover import normalize
+    users = json.loads(js('JSON.stringify([...document.querySelectorAll("[data-message-author-role=user]")].map(x=>x.innerText))'))
+    if len(users) == 1:
+        todo = sorted(todo, key=lambda item: normalize(item['prompt']) != normalize(users[0]))
     js(f'window.__yamaQueue = {json.dumps(todo, ensure_ascii=False)}; '
        'window.__yamaQueue.length')
     js(DRIVER.read_text(encoding='utf-8'))
@@ -155,6 +160,19 @@ def heartbeat(work, **state):
     tmp = path.with_suffix('.tmp')
     tmp.write_text(json.dumps(dict(at=time.time(), **state), ensure_ascii=False))
     tmp.replace(path)
+
+
+def observed_generation_state(state):
+    evidence = state.get('liveLimit')
+    waiting = state.get('waitState') or {}
+    if evidence and evidence.get('kind') in ('image_limit', 'access_limit') and evidence.get('text'):
+        return dict(status='limit_wait' if evidence['kind'] == 'image_limit' else 'access_wait',
+                    evidence=evidence, retry_at=waiting.get('retryAt'), until=state.get('until'))
+    if waiting:
+        return dict(status='scheduled_wait', evidence=waiting.get('evidence'), retry_at=waiting.get('retryAt'))
+    if state.get('retryVisible'):
+        return dict(status='retrying' if state.get('busy') else 'error', evidence=None)
+    return dict(status='generating' if state.get('busy') else 'checking', evidence=None)
 
 
 def dismiss_access_notice():
@@ -270,6 +288,8 @@ def main():
                 'JSON.stringify({running: __yamaGen.running, '
                 'busy: !!document.querySelector("[data-testid=stop-button]"), current: __yamaGen.current, '
                 'until: __yamaGen.limitUntil || 0, '
+                'liveLimit: window.__yamaLimitEvidence?.() || null, waitState: __yamaGen.waitState || null, '
+                'retryVisible: [...document.querySelectorAll("main button")].some(b=>/^(再試行|Retry)$/.test(b.innerText.trim())), '
                 'last: __yamaGen.log.slice(-1)[0] || ""})'))
         except Exception as e:
             print(f'  ページを見失いました（{e}）— 入れ直します', flush=True)
@@ -277,10 +297,10 @@ def main():
             last_change = time.time()
             continue
 
-        heartbeat(work, verified=done, total=len(queue), status='generating', current=state.get('current'))
+        observation = observed_generation_state(state)
+        heartbeat(work, verified=done, total=len(queue), current=state.get('current'), **observation)
 
-        if '生成上限' in state['last']:
-            heartbeat(work, verified=done, total=len(queue), status='limit_wait', until=state.get('until'), current=state.get('current'))
+        if observation['status'] in ('limit_wait', 'access_wait', 'scheduled_wait'):
             # 待てば空く。driver.js が自分で再開する。
             # 解除予定の時刻を書き出しておくと、常駐がその時刻に合わせて起こしてくれる。
             note_limit(work, state.get('until'))

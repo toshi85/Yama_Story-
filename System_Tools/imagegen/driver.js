@@ -33,6 +33,7 @@
       lastLog: S.log.slice(-6),
     }),
     log: S.log || [],
+    waitState: null, limitEvidence: null,
     limitUntil: S.limitUntil || null,   // 解除予定の時刻（epochミリ秒）。run.py が読む
   });
 
@@ -94,17 +95,41 @@
   // 判定は会話部分だけを見る。body だと左の履歴一覧のチャット名まで拾ってしまい、
   // 過去に「Image Generation Limit」という名前のチャットが並んだだけで
   // 永久に「上限中」と誤判定する（実測: 一晩まるごと空回りした）。
-  const convText = () => (document.querySelector('main') || document.body).innerText.slice(-3000) + [...document.querySelectorAll('[role=dialog],[role=alertdialog]')].map(x=>x.innerText).join('\n');
-
-  const limitHit = () => /リクエストが多すぎ|リクエストの頻度が高|Too many requests|画像を使い切りました|利用上限に達し|画像の生成上限|上限に達し|しばらくお待ち|hit the [^.]{0,24}plan limit|limit for image generation|rate limit|generation limit/i
-    .test(convText());
+  const convText = () => {
+    const main = document.querySelector('main');
+    if (!main) return '';
+    const copy = main.cloneNode(true);
+    copy.querySelectorAll('[data-message-author-role="user"],#prompt-textarea').forEach(x=>x.remove());
+    return (copy.innerText || copy.textContent || '').slice(-5000);
+  };
+  const classifyLimitText = (text, source) => {
+    const image = /画像を使い切りました|画像(?:の生成|生成)?(?:の利用)?上限に達|画像生成[^。\n]{0,50}(?:利用上限|上限に達)|hit the [^.\n]{0,30}plan limit for image generation|limit for image generations? requests|(?:reached|exceeded)[^.\n]{0,50}image generation limit/i;
+    const access = /リクエストが多すぎ|リクエストの頻度が高|Too many requests|rate limit exceeded/i;
+    const match = text.match(image) || text.match(access);
+    if (!match) return null;
+    return {kind:image.test(text)?'image_limit':'access_limit', source,
+      text:text.slice(Math.max(0,match.index-40),match.index+360).trim(), observedAt:Date.now()/1000};
+  };
+  const readLimitEvidence = () => {
+    for (const d of document.querySelectorAll('[role=dialog],[role=alertdialog]')) {
+      const e = classifyLimitText(d.innerText || '', 'dialog');
+      if (e) return e;
+    }
+    return classifyLimitText(convText(), 'current_conversation');
+  };
+  const limitHit = () => {
+    const evidence = readLimitEvidence();
+    if (evidence) S.limitEvidence = evidence;
+    return !!evidence;
+  };
+  window.__yamaLimitEvidence = readLimitEvidence;
 
   // 断り文句に書かれた「あと何分で解除か」を読む。読めなければ null。
   // 🚨 文面は何通りもある。実際に出たものを全部拾う（2026-09-04 に「明日の14:33に
   //    もう一度お試しください」「上限は17時間後にリセットされ」を取りこぼして、
   //    20分おきに17時間投げ直し続け、77/311枚で一晩止まっていた）。
   function limitLeftMin() {
-    const t = convText();
+    const t = S.limitEvidence?.text || "";
     const now = new Date();
     const atTime = (h, mi, tomorrow) => {
       const d = new Date();
@@ -295,36 +320,33 @@
           note(`${item.id} 同じ会話の完成結果を保存します（再送なし）`);
           await waitIdle(15000, item.prompt);
           img = completedImages(item.prompt);
+        } else if (matchedUser(item.prompt) && busy()) {
+          note(`${item.id} 同じ会話の処理を引き継ぎます（再送なし）`);
+          img = await waitImage(item.prompt);
         } else {
           await newChat();
           await sleep(1500);
+          S.waitState = null;
           await send(item.prompt);
           img = await waitImage(item.prompt);
         }
 
-        // 生成上限は「終わり」ではなく「待てば空く」。夜通し回すので待って続ける。
-        // 🚨 上限の誤判定を機械で止める。上限らしき表示が出ても、解除までの残り時間が
-        //    読めないものは疑う（一晩空回りしたときの症状がまさにこれだった）。
-        //    2回続けて同じことが起きたときだけ本物として扱う。
-        if (img === 'limit' && limitLeftMin() === null) {
-          S.falseLimit = (S.falseLimit || 0) + 1;
-          note(`⚠ 上限らしき表示だが解除時刻が読めない（${S.falseLimit}回目）— 誤判定の疑い`);
-          if (S.falseLimit < 2) { throw new Error('上限判定が怪しいので次の周回で拾い直す'); }
-        } else if (img !== 'limit') {
-          S.falseLimit = 0;
-        }
-
+        // 回数では制限を確定しない。明示された表示と観測時刻を保持する。
+        if (img === 'limit' && !S.limitEvidence) throw new Error('制限表示の根拠を確認できません');
         // 上限は「書いてある時刻まで待つ」のではなく、一定間隔で投げ直して
         // 通った瞬間に再開する。これなら解除が5時間後でも20時間後でも取りこぼさない。
         let waits = 0;
         while (img === 'limit' && !S.stop && waits < LIMIT_MAX_TRIES) {
           waits++;
-          const wait = nextProbeMin();
-          note(`生成上限（${limitNote()}）— ${wait}分後にもう一度投げます (${waits}回目)`);
+          const wait = S.limitEvidence.kind === 'access_limit' ? 3 : nextProbeMin();
+          const detail = limitNote();
+          S.waitState = {kind:S.limitEvidence.kind, evidence:S.limitEvidence, retryAt:Date.now()/1000+wait*60};
+          note(`${S.waitState.kind === 'image_limit' ? '画像生成の上限表示を確認' : 'アクセス頻度の制限表示を確認'}（${detail}）— ${wait}分後に再試行 (${waits}回目)`);
           for (let m = 0; m < wait && !S.stop; m++) await sleep(60000);
           if (S.stop) break;
           await newChat();
           await sleep(1500);
+          S.waitState = null;
           await send(item.prompt);
           img = await waitImage(item.prompt);
         }
@@ -339,6 +361,7 @@
           if (img === 'retry') throw new Error('2回続けて生成エラー');
         }
 
+        S.waitState = null;
         const bytes = await saveAs(img, item);
         S.done.push(item.id);
         saveDone(S.done);

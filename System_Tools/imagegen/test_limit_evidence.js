@@ -1,0 +1,13 @@
+const vm=require('node:vm'), fs=require('node:fs'), assert=require('node:assert/strict');
+const src=fs.readFileSync(__dirname+'/driver.js','utf8');
+let removed=false;
+const clone={querySelectorAll(){return [{remove(){removed=true;}}];},get innerText(){return removed?'少々お待ちください。':'画像生成の利用上限に達しました';}};
+const sandbox={window:{},console:{log(){}},localStorage:{getItem:()=>null,setItem(){}},document:{querySelector:()=>({cloneNode:()=>clone}),querySelectorAll:()=>[]},Date};
+vm.runInNewContext(src.replace('window.__yamaRun = run;','window.__test={classifyLimitText,readLimitEvidence};window.__yamaRun=run;'),sandbox);
+const t=sandbox.window.__test;
+for(const text of ['しばらくお待ちください','より詳細な画像を生成しています。少々お待ちください。','問題が発生しました。もう一度お試しください。','思考中','上限に達したかもしれません'])assert.equal(t.classifyLimitText(text,'current_conversation'),null,text);
+assert.equal(t.classifyLimitText('画像生成の利用上限に達しました。明日の14:33にもう一度お試しください。','current_conversation').kind,'image_limit');
+assert.equal(t.classifyLimitText('リクエストが多すぎます。数分待ってから再試行してください。','dialog').kind,'access_limit');
+assert.equal(t.readLimitEvidence(),null,'要求文に含まれる制限の文言は根拠にしない');
+assert.equal(src.includes('S.falseLimit'),false,'回数だけで制限を確定しない');
+console.log('explicit limit evidence checks passed');
