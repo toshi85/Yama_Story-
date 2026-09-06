@@ -39,6 +39,7 @@ def snapshot(work, log):
     retry_at = None
     phase = 'recover'
     count = len(records)
+    evidence = None
     if service_path.exists():
         service = json.loads(service_path.read_text())
         phase = service.get('phase', 'recover')
@@ -49,9 +50,18 @@ def snapshot(work, log):
             updated = max((v.get('at', 0) for v in records.values()), default=updated)
             if running and now - generation.get('at', 0) < 90:
                 code, label = 'running', '画像を生成・検査中'
-                if generation.get('status') == 'limit_wait':
-                    code, label = 'waiting', '生成上限・自動再開待ち'
-                    retry_at = (generation.get('until') or 0) / 1000 or None
+                evidence = generation.get('evidence')
+                if generation.get('status') == 'limit_wait' and evidence and evidence.get('kind') == 'image_limit':
+                    code, label = 'waiting', '画像生成の上限表示を確認・再試行待ち'
+                elif generation.get('status') == 'access_wait' and evidence:
+                    code, label = 'waiting', 'アクセス頻度の制限表示を確認・再試行待ち'
+                elif generation.get('status') in ('limit_wait', 'access_wait', 'scheduled_wait'):
+                    code, label = 'waiting', '再試行待ち・現在の制限表示は未確認'
+                elif generation.get('status') in ('error', 'retrying'):
+                    code, label = 'waiting', '生成エラー・再試行中'
+                elif generation.get('status') == 'checking':
+                    label = '保存・結果確認中'
+                retry_at = generation.get('retry_at')
             elif service.get('status') == 'finished' and count == total:
                 code, label = 'review', '全画像の生成・自動検査終了'
         service_alive = any('/imagegen/recovery_service.py ' in c and str(work) in c for c in commands)
@@ -60,14 +70,14 @@ def snapshot(work, log):
             if service.get('exit_code') == 76:
                 label = 'ログイン確認待ち'
             elif service.get('exit_code') == 75 and (work / '.imagegen/access_limit.json').exists():
-                label = 'ChatGPTアクセス制限・自動再開待ち'
+                label = 'アクセス制限通知後の再試行待ち'
             retry_at = service.get('retry_at')
     latest = sorted(records.items(), key=lambda x: x[1].get('at', 0), reverse=True)[:8]
     lines = log.read_text(errors='replace').splitlines() if log.exists() else []
     safe_lines = [line for line in lines if line.startswith(('回収 ', '会話確認', '既存会話', '通信エラー', '回収終了', '通信エラーが継続', '自動移行', '全311', 'ChatGPTのアクセス制限', '画像回収を自動復旧'))][-8:]
     return dict(project=work.name, status=code, label=label, running=running,
                 verified=count, phase=phase, total=total, inspected=len(state['visited']),
-                updated=updated, checked=now, age=int(now-updated), retry_at=retry_at,
+                updated=updated, checked=now, age=int(now-updated), retry_at=retry_at, evidence=evidence,
                 latest=[dict(id=k, at=v.get('at', 0)) for k, v in latest], logs=safe_lines)
 
 
@@ -86,7 +96,7 @@ footer{font-size:12px;color:#758279;line-height:1.8}@media(max-width:600px){main
 </style><main><header><div><div class="eyebrow">山のチャンネル / 作業状況</div><h1>1988年 戸沢村ツキノワグマ食害事件</h1></div></header>
 <section class="card"><div id="status" class="badge">状況を確認中</div><p id="phase">現在の工程を確認中</p>
 <div class="count" id="count">— <span>/ 311 枠</span></div><progress id="bar" max="311" value="0"></progress>
-<p id="detail">読み込み中…</p><p>「照合済み」はプロンプト・保存ファイルの対応を確認した枠数です。全編編集の完了を表す数字ではありません。</p></section>
+<p id="detail">読み込み中…</p><p id="evidence"></p><p>「照合済み」はプロンプト・保存ファイルの対応を確認した枠数です。全編編集の完了を表す数字ではありません。</p></section>
 <div class="grid"><section class="card"><h2>処理が進んでいるか</h2><p>回収記録の最終更新</p><div class="stat" id="updated">—</div><p id="age">—</p><p id="process">—</p><p>2分以上記録が更新されなければ「応答・更新待ち」、処理が終了していれば「停止」または「回収終了」と表示します。</p></section>
 <section class="card"><h2>最近回収できた画像</h2><ul id="latest"></ul></section></div>
 <section class="card"><h2>最近の作業ログ</h2><pre id="logs">—</pre></section>
@@ -97,6 +107,7 @@ let busy=false;
 async function refresh(){if(busy)return;busy=true;try{
 const r=await fetch('/status',{cache:'no-store',signal:AbortSignal.timeout(4000)});if(!r.ok)throw Error('HTTP');const d=await r.json();
 el('phase').textContent=d.phase==='generate'?'現在の工程：不足画像の生成・自動検査':'現在の工程：既存の生成履歴から、正しい画像を回収・照合';
+el('evidence').textContent=d.evidence?'判定時の表示（'+stamp(d.evidence.observedAt)+'）：'+d.evidence.text:'制限を示す明確な表示は現在確認できていません。';
 el('status').textContent=d.label;el('status').className='badge '+d.status;
 el('count').replaceChildren(document.createTextNode(d.verified+' '));const n=document.createElement('span');n.textContent='/ '+d.total+' 枠';el('count').append(n);
 el('bar').max=d.total;el('bar').value=d.verified;el('detail').textContent='照合済み '+Math.round(d.verified/d.total*100)+'% ・ 残り '+(d.total-d.verified)+' 枠 ・ 履歴確認 '+d.inspected+' 件';
