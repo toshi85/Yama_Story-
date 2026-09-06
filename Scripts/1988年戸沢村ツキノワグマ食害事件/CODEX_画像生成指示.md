@@ -4,7 +4,7 @@
 
 以下の旧運用より本節を優先する。現在は `com.yama.imagegen.recovery` が回収→不足画像の生成→自動検査を管理する。旧 `com.yama.imagegen` と `com.yama.imagegen.kick` を並行して起動しない。
 進捗は <http://127.0.0.1:8794> と `.imagegen/generation_status.json` を確認する。ファイル枚数だけで完成と報告しない。
-再発防止の正本は [Codex用運用記録](/Users/tosimasa/Desktop/Antigravity/.codex/yama-imagegen-operations.md)。画像が完成しても停止ボタンが残る問題と、「了解」の自動操作は回帰テストを追加済み。
+再発防止の正本は [Codex用運用記録](../../.codex/yama-imagegen-operations.md)。画像が完成しても停止ボタンが残る問題と、「了解」の自動操作は回帰テストを追加済み。
 
 ---
 
