@@ -1,0 +1,115 @@
+{
+  "at": "2026-09-08T08:58:05.776428+09:00",
+  "checks": [
+    {
+      "check": "validate_yama_competitor",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_competitor.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_competitor.log",
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
+    },
+    {
+      "check": "validate_yama_safety",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_safety.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_safety.log",
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
+    },
+    {
+      "check": "validate_yama_structure",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_structure.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_structure.log",
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
+    },
+    {
+      "check": "validate_yama_narrative",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_narrative.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_narrative.log",
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
+    },
+    {
+      "check": "validate_yama_facts",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_facts.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_facts.log",
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
+    },
+    {
+      "check": "audit_numeric_facts",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/audit_numeric_facts.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/audit_numeric_facts.log",
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
+    },
+    {
+      "check": "validate_yama_intro",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_intro.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_intro.log",
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
+    },
+    {
+      "check": "validate_yama_consistency",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_consistency.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_consistency.log",
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
+    },
+    {
+      "check": "validate_yama_coherence",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_coherence.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_coherence.log",
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
+    },
+    {
+      "check": "validate_yama_plot",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_plot.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Plot_Sheet_八幡平クマ牧場事件.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_plot.log",
+      "input_sha256": "7fe86e03292af3f588c62b7ed76167a9feec9d46c2e66dc3e8beb42b706cb8ae"
+    }
+  ]
+}

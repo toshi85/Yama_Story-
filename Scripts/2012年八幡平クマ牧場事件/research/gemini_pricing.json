@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-09-07T23:14:08.549168+09:00",
+  "source": "https://ai.google.dev/gemini-api/docs/pricing",
+  "model": "gemini-3.8-flash",
+  "input_usd_per_million": 0.75,
+  "output_usd_per_million": 3.75,
+  "valid_through": "2026-12-31",
+  "billing": "actual usage will be recorded; not an invoice"
+}

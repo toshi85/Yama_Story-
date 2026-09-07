@@ -1,0 +1,9 @@
+{
+  "model": "gemini-3.7-flash",
+  "user_instruction": "競合の映像・音声分析が残っています。これも大替案で進めてください。",
+  "recorded_at": "2026-09-08T08:19:53.132640+09:00",
+  "scope": "競合3本。3.8 Flash停止後、ユーザー指示により代替モデルで新規分析。自動再試行なし。",
+  "pricing_source": "https://ai.google.dev/gemini-api/docs/pricing",
+  "input_usd_per_million": 0.75,
+  "output_usd_per_million": 3.75
+}

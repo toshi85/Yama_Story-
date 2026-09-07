@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-09-08T08:14:58.855539+09:00",
+  "sources": {
+    "fire2012": {
+      "sha256": "5e00be18f3c5bd4333aab1915e7ca64ec1f9f8b34fd9c2c4784ad14c9c17a98d",
+      "bytes": 16093520,
+      "url": "https://www.fdkazuno.jp/img/nenpou24.pdf",
+      "extraction_exit": 0,
+      "image_verified": true
+    },
+    "kitaakita_2014_transfer": {
+      "sha256": "edcd0135aa6b27ef714eaaf0817004edb90bd18e46c426497b94379fd65776ff",
+      "bytes": 8084323,
+      "url": "https://www.city.kitaakita.akita.jp/uploads/public/archive_0000007832_00/018_156P.pdf",
+      "extraction_exit": 0,
+      "image_verified": true
+    },
+    "kitaakita_2014_open": {
+      "sha256": "048c7a89241ca85e06a5b971fc5b80a6d17e152a024462a8b83d7a719a01aa91",
+      "bytes": 9300281,
+      "url": "https://www.city.kitaakita.akita.jp/uploads/public/archive_0000007827_00/014_161.pdf",
+      "extraction_exit": 0,
+      "image_verified": true
+    },
+    "akita_H26_requests": {
+      "sha256": "07a4acfce8005a34b34b793b342b6d411e508f8c12debe6db21113eac13deba8",
+      "bytes": 10200270,
+      "url": "https://www.pref.akita.lg.jp/uploads/public/archive_0000008520_00/H26youbou3.pdf",
+      "extraction_exit": 0,
+      "image_verified": false
+    }
+  }
+}

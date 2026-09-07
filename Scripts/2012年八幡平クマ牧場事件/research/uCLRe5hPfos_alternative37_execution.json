@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    ".codex/skills/video-reference-analysis/scripts/analyze.py",
+    "--model",
+    "gemini-3.7-flash",
+    "--model-authorization",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/alternative_model_authorization.json",
+    "--url",
+    "https://www.youtube.com/watch?v=uCLRe5hPfos",
+    "--duration",
+    "1144",
+    "--out",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/uCLRe5hPfos_alternative37_gemini.json"
+  ],
+  "started_at": "2026-09-08T08:21:02.221194+09:00",
+  "input_sha256": "f372e514aca2a4a3829cb6a211b8b34d194babded6437ac0e7a247c37a61bb8d",
+  "status": "needs_review",
+  "authorization": "alternative_model_authorization.json; user explicitly requested alternative after stop",
+  "next": "Check AV coverage and full transcript before further videos",
+  "exit_code": 1,
+  "finished_at": "2026-09-08T08:21:02.888680+09:00"
+}
