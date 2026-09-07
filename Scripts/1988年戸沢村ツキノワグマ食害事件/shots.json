@@ -1,7 +1,7 @@
 {
   "schema": "yama.shots/1",
   "title": "1988年戸沢村ツキノワグマ食害事件",
-  "video": "out.mp4",
+  "video": "BGM末尾25秒_確認版.mp4",
   "fps": 30.0,
   "total_frames": 44944,
   "generated_at": "2026-09-06T22:44:37+09:00",
@@ -9566,5 +9566,11 @@
   "source_assets": "Asset_Prompts_Full.md",
   "narration_audio": "音声/仮ナレーション_Kyoko.wav",
   "map_renderer": "tozawa_v1",
-  "intermediate_preset": "veryfast"
+  "intermediate_preset": "veryfast",
+  "bgm": {
+    "file": "音声/終章BGM.mp3",
+    "start": 1473.15,
+    "end": 1498.15,
+    "ending_seconds": 25.0
+  }
 }
