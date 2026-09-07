@@ -34,11 +34,15 @@ def spec_of(r):
  return dict(id=aid,lat=lat,lon=lon,pins=pins,secret=secret,alt0=a0,alt1=a1,wide=wide,radius=int(radius.group(1)) if radius else None,label=labels[aid[-3:]],source_note=r['edit_note'])
 
 def zoom(s):
+ if 'tile_zoom' in s:return s['tile_zoom']
  if s['wide']:return s.get('tile_zoom',8)
  return max(8,min(14,int(round(math.log2(156543*math.cos(math.radians(s['lat']))*1000/(s['alt0']*3))))))
 
 def frame(job):
+ global W,H
  s,i,n,cache,tmp=job;p=Path(tmp)/f'f{i:05d}.jpg'
+ W,H=s.get('width',1280),s.get('height',720)
+ make_map3d.W,make_map3d.H=W,H
  if p.exists():return str(p)
  q=i/max(n-1,1);u=q*q*(3-2*q);alt=s['alt0']*(s['alt1']/s['alt0'])**u;z=zoom(s)
  if s['wide']:
@@ -49,12 +53,14 @@ def frame(job):
   im=im.crop((x,y,x+cw,y+ch)).resize((W,H),Image.Resampling.LANCZOS)
  else:
   circle=(s['lat'],s['lon'],s['radius']) if s['radius'] else None
-  im=make_map3d.render(s['lat'],s['lon'],z,8,heading=s.get('heading',350)+20*u,pitch=max(15,min(65,58-15*u+s.get('pitch_delta',0))),cam_h=alt,far=max(alt*7,18000),cache=cache,src='s2',pins=s['pins'],circle=circle,gain=(1.05,1.15,1.12))
- d=ImageDraw.Draw(im);font=ImageFont.truetype(str(Path(fonts_setup.font_dir())/'MPLUSRounded1c-Bold.ttf'),30);small=ImageFont.truetype(str(Path(fonts_setup.font_dir())/'MPLUSRounded1c-Bold.ttf'),20)
- d.text((32,30),s['label'],font=font,fill='white',stroke_width=3,stroke_fill='black')
- if s['secret']:d.text((32,78),'地区の代表点を中心とした図 / 正確な現場位置は非公表',font=small,fill='white',stroke_width=2,stroke_fill='black')
- d.text((20,H-28),'Sentinel-2 cloudless / EOX / Copernicus · Terrain: Mapzen',font=small,fill='white',stroke_width=2,stroke_fill='black')
- im.save(p,quality=91);return str(p)
+  im=make_map3d.render(s['lat'],s['lon'],z,s.get('span',8),heading=s.get('heading',350)+20*u,pitch=max(15,min(65,58-15*u+s.get('pitch_delta',0))),cam_h=alt,far=max(alt*7,18000),cache=cache,src=s.get('source','s2'),pins=s['pins'],circle=circle,gain=(1.05,1.15,1.12),high_quality=s.get('quality','legacy')!='legacy')
+ scale=W/1280
+ d=ImageDraw.Draw(im);font=ImageFont.truetype(str(Path(fonts_setup.font_dir())/'MPLUSRounded1c-Bold.ttf'),round(30*scale));small=ImageFont.truetype(str(Path(fonts_setup.font_dir())/'MPLUSRounded1c-Bold.ttf'),round(18*scale))
+ d.text((32*scale,30*scale),s['label'],font=font,fill='white',stroke_width=max(2,round(3*scale)),stroke_fill='black')
+ if s['secret']:d.text((32*scale,78*scale),'地区の代表点を中心とした図 / 正確な現場位置は非公表',font=small,fill='white',stroke_width=max(2,round(2*scale)),stroke_fill='black')
+ credit='地理院タイル（国土地理院）を加工 · Terrain: Mapzen / 事件当時の撮影ではありません' if s.get('source')=='gsi' and not s['wide'] else 'Sentinel-2 cloudless / EOX / Copernicus · Terrain: Mapzen'
+ d.text((20*scale,H-28*scale),credit,font=small,fill='white',stroke_width=max(2,round(2*scale)),stroke_fill='black')
+ im.save(p,quality=97 if s.get('quality','legacy')!='legacy' else 91,subsampling=0);return str(p)
 
 def apply_overrides(spec,ov):
  s=dict(spec)
@@ -80,7 +86,7 @@ def preview(work,shot_id,override):
  cache=w/'.map_tiles';cache.mkdir(exist_ok=True);src=frame((spec,1,3,str(cache),str(tmp)));dst=w/'check/preview'/f'{shot_id:04d}_map.jpg';shutil.copy2(src,dst);return str(dst)
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('work',type=Path);p.add_argument('--jobs',type=int,default=3);p.add_argument('--only');p.add_argument('--force',action='store_true');p.add_argument('--overrides',type=Path);p.add_argument('--out',type=Path);a=p.parse_args();w=a.work.resolve();out=a.out or w/'地形図';out.mkdir(exist_ok=True,parents=True);cache=w/'.map_tiles';cache.mkdir(exist_ok=True)
+ p=argparse.ArgumentParser();p.add_argument('work',type=Path);p.add_argument('--jobs',type=int,default=3);p.add_argument('--only');p.add_argument('--force',action='store_true');p.add_argument('--overrides',type=Path);p.add_argument('--out',type=Path);p.add_argument('--quality',choices=['legacy','1080p','4k'],default='legacy');p.add_argument('--sample-only',action='store_true');a=p.parse_args();w=a.work.resolve();out=a.out or w/'地形図';out.mkdir(exist_ok=True,parents=True);cache=w/'.map_tiles';cache.mkdir(exist_ok=True)
  doc=json.loads((w/'shots.json').read_text());dur={s['asset_id']:(s['end_frame']-s['start_frame'])/doc['fps'] for s in doc['shots']}
  specs=[spec_of(r) for r in parse_master(w/'Asset_Prompts_Full.md') if '[Google Earth]' in r['memo']]
  settings={s['asset_id']:s for s in doc['shots']}
@@ -88,31 +94,39 @@ def main():
   for ov in json.loads(a.overrides.read_text()).get('shots',{}).values():
    if ov.get('asset_id'):settings[ov['asset_id']]=dict(settings.get(ov['asset_id'],{}),**ov)
  specs=[apply_overrides(s,settings.get(s['id'],{})) for s in specs]
+ if a.quality!='legacy':
+  for s in specs:
+   old_zoom=zoom(s)
+   s.update(quality=a.quality,width=3840 if a.quality=='4k' else 1920,height=2160 if a.quality=='4k' else 1080,source='gsi' if not s['wide'] else 's2')
+   if not s['wide']:s.update(tile_zoom=min(old_zoom+1,14),span=16)
  (out/'map_specs.json').write_text(json.dumps(specs,ensure_ascii=False,indent=2))
  for s in specs:
   aid=s['id']
   if a.only and aid!=a.only:continue
   target=out/(aid+'.mp4');seconds=dur[aid]
   if not a.force and target.exists() and abs(ff.probe_duration(str(target))-seconds)<.15:continue
-  tmp=out/('.frames_'+aid);tmp.mkdir(exist_ok=True);n=max(2,round(seconds*FPS))
+  render_fps=30 if a.quality!='legacy' else FPS
+  tmp=out/('.frames_'+aid);tmp.mkdir(exist_ok=True);n=max(2,round(seconds*render_fps))
   if a.force:shutil.rmtree(tmp);tmp.mkdir()
   # 必要な衛星・標高を先に取得。欠けた地図を完成扱いにしない。
   z=zoom(s);cx,cy=make_map.deg2num(s['lat'],s['lon'],z);todo=[]
-  size=10 if s['wide'] else 8
+  size=10 if s['wide'] else s.get('span',8)
   for x in range(int(cx)-size//2,int(cx)+size//2):
    for y in range(int(cy)-size//2,int(cy)+size//2):todo.append((x,y))
   def fetch(xy):
-   x,y=xy;ok=bool(make_map.fetch(z,x,y,str(cache)))
+   x,y=xy;ok=bool(make_map.fetch(z,x,y,str(cache),s.get('source','s2')))
    if not s['wide']:
     tp=cache/f'terr_{z}_{x}_{y}.png'
     ok=ok and (tp.exists() or make_map.download(make_map3d.TERRAIN.format(z=z,x=x,y=y),str(tp),300))
    return ok
   with ThreadPoolExecutor(max_workers=8) as pool:checks=list(pool.map(fetch,todo))
   if not all(checks):raise RuntimeError(f'{aid}:地図タイル取得不足 {sum(checks)}/{len(checks)}')
+  if a.sample_only:
+   sample=frame((s,n//2,n,str(cache),str(tmp)));shutil.copy2(sample,out/(aid+'_sample.jpg'));continue
   print(f'{aid}: {seconds:.2f}秒 / 座標{s["lat"]},{s["lon"]} / {n}フレーム',flush=True)
   with ProcessPoolExecutor(max_workers=a.jobs) as pool:list(pool.map(frame,[(s,i,n,str(cache),str(tmp)) for i in range(n)],chunksize=4))
   temp_video=target.with_suffix('.new.mp4')
-  ff.run(['-framerate',str(FPS),'-i',str(tmp/'f%05d.jpg'),'-vf','minterpolate=fps=30:mi_mode=blend','-t',str(seconds),'-c:v','libx264','-preset','fast','-crf','19','-pix_fmt','yuv420p',str(temp_video)])
+  ff.run(['-framerate',str(render_fps),'-i',str(tmp/'f%05d.jpg')]+(['-vf','minterpolate=fps=30:mi_mode=blend'] if a.quality=='legacy' else [])+['-t',str(seconds),'-c:v','libx264','-preset','fast','-crf','17' if a.quality!='legacy' else '19','-pix_fmt','yuv420p',str(temp_video)])
   if abs(ff.probe_duration(str(temp_video))-seconds)>.15:raise RuntimeError('地形動画の尺が合わない '+aid)
   os.replace(temp_video,target)
   (out/(aid+'.pins.json')).write_text(json.dumps({'pins':[p[2] for p in s['pins']],'heading':s.get('heading',350)},ensure_ascii=False))
