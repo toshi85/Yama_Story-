@@ -1,7 +1,7 @@
 {
   "schema": "yama.shots/1",
   "title": "1988年戸沢村ツキノワグマ食害事件",
-  "video": "BGM末尾25秒_確認版.mp4",
+  "video": "左上白テロップ削除_確認版.mp4",
   "fps": 30.0,
   "total_frames": 44944,
   "generated_at": "2026-09-06T22:44:37+09:00",
@@ -63,9 +63,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "深夜"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -96,9 +94,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "200m先"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -129,9 +125,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "5km先"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -162,9 +156,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "帰らぬ人に"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -319,9 +311,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "クマの目撃情報が相次いでいた"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -360,7 +350,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 12,
@@ -385,9 +376,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "61歳・農業"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -418,9 +407,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "午前10時ごろ"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -521,7 +508,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 17,
@@ -546,9 +534,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "午後9時過ぎ 新庄署へ通報"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -579,9 +565,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "家族と地元消防団 約30人"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -860,9 +844,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "大量出血"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -955,9 +937,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "山菜採り中の事故"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -988,9 +968,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "連絡へ 4人／現場に残る 6人"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -1029,7 +1007,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 33,
@@ -1178,9 +1157,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "石を投げても動かない"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -1281,7 +1258,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 41,
@@ -1306,9 +1284,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "消防団・警察 十数人／猟友会 6人"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -1401,9 +1377,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "珍しい特徴"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -1465,9 +1439,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "後ろ側に集中"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -1498,9 +1470,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "正面から向き合っていない"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -1571,7 +1541,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 50,
@@ -1596,9 +1567,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "有害鳥獣駆除 緊急許可"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -1691,9 +1660,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "捕獲 7〜8頭"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -1724,9 +1691,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "逃げ切った可能性が高い"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -1828,7 +1793,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 58,
@@ -1853,9 +1819,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "59歳・女性"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": true,
@@ -2010,9 +1974,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "夜9時ごろまで捜索"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -2043,9 +2005,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "クマの可能性 → 夜間の捜索を中止"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -2084,7 +2044,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 66,
@@ -2109,9 +2070,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "総勢57人・4班"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -2142,9 +2101,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "猟友会が先導"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -2184,7 +2141,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 69,
@@ -2336,9 +2294,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "杉沢地区"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -2369,9 +2325,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "頭と首に傷なし"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": true,
@@ -2402,9 +2356,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "1件目と同じ形"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": true,
@@ -2528,9 +2480,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "タナ＝木の実を食べるために枝を敷いた場所"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -2716,9 +2666,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "佐藤浩人さん（当時26歳）／消防団員"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -2788,7 +2736,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 88,
@@ -2813,9 +2762,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "佐藤浩人さん（現在63歳）"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -2908,9 +2855,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "山形大学理学部 大津高 教授"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -2972,9 +2917,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "山ブドウ 不作"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -3005,9 +2948,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "不作 → 人里へ下りる"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -3038,9 +2979,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "人喰いグマ"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -3079,7 +3018,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 97,
@@ -3104,9 +3044,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "ふたたびクマ狩り"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -3168,9 +3106,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "騒がしくなる → 移動する"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -3303,7 +3239,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 104,
@@ -3328,9 +3265,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "家族5人"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -3361,9 +3296,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "酒田市在住・61歳"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -3394,9 +3327,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "自分の家の持ち山"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -3466,7 +3397,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 109,
@@ -3491,9 +3423,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "それぞれ別々に"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -3524,9 +3454,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "人の声も、足音もあった"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -3743,9 +3671,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "ライターで火をつけた"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -3900,9 +3826,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "山形県立新庄病院へ緊急搬送"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -3941,7 +3865,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 124,
@@ -4090,9 +4015,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "5月・1件目"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -4123,9 +4046,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "猟友会 13人"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -4156,9 +4077,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "現場から約100m"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -4189,9 +4108,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "距離 約1m ＝ 手を伸ばせば届く"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -4408,9 +4325,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "右のわき腹"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -4503,9 +4418,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "銃を見て逃げた"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -4567,9 +4480,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "1頭"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -4600,9 +4511,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "動物学者"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -4641,7 +4550,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 146,
@@ -4666,9 +4576,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "傷の場所が似ている"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -4769,7 +4677,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 150,
@@ -4825,9 +4734,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "撃たれた個体（140cm・84kg）"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -4858,9 +4765,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "糞 多数"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -4891,9 +4796,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "長く住みついていた"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -4955,9 +4858,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "別の個体だとしたら"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -4988,9 +4889,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "複数いる前提で動いた"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5021,9 +4920,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "檻 2カ所"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5085,9 +4982,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "記述なし"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5149,9 +5044,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "新庄署"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5213,9 +5106,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "オス・ツキノワグマ"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5246,9 +5137,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "子グマ"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5279,9 +5168,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "胃の中：クリの実"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5343,9 +5230,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "理由：空腹"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5469,9 +5354,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "DNA鑑定"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5502,9 +5385,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "3人目＝確定"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5535,9 +5416,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "同一個体かどうかは分かっていない"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5568,9 +5447,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "翌年、論文に"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5663,9 +5540,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "警察の記録"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5704,7 +5579,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 179,
@@ -5729,9 +5605,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "食べるために襲う動物ではない"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5762,9 +5636,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "臆病な性格"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5795,9 +5667,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "多くの場合、クマの方が先に去る"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5828,9 +5698,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "定説"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -5861,9 +5729,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "どれにも当てはまらない"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6014,9 +5880,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "人狩り"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6078,9 +5942,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "同じ襲われ方"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6111,9 +5973,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "年齢"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6144,9 +6004,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "無駄が多い"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6177,9 +6035,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "長い時間、離れない"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6218,7 +6074,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 195,
@@ -6243,9 +6100,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "下半身に集中"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6338,9 +6193,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "足を刈りにくる"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6371,9 +6224,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "低く出る／離さない／長く続く"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6404,9 +6255,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "若いクマ＝足／大きなクマ＝頭"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6437,9 +6286,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "年齢"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6470,9 +6317,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "うつ伏せ"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6503,9 +6348,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "ごくわずか"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6536,9 +6379,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "攻撃する場所"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6600,9 +6441,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "怪我 108件"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6633,9 +6472,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "接触する機会は少なくない"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6705,7 +6542,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 210,
@@ -6730,9 +6568,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "山形県酒田市・78歳"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6763,9 +6599,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "2日後"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6827,9 +6661,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "大量出血"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6891,9 +6723,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "DNA鑑定 → 一致"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6924,9 +6754,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "佐藤浩人さん（63歳）"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -6988,9 +6816,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "数十頭"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7021,9 +6847,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "通り道"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7085,9 +6909,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "いまもなお残っている"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7118,9 +6940,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "富樫邦男さん"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7151,9 +6971,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "不動産会社"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7184,9 +7002,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "熟練のハンター"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7217,9 +7033,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "富樫さん（当時）"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7312,9 +7126,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "仲間の1人が仕留めた"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7345,9 +7157,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "別のクマの話"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7378,9 +7188,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "弾が貫いた古傷"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7411,9 +7219,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "弾が貫いた跡"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7444,9 +7250,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "しばらく生き延びた"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7477,9 +7281,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "向かってきた"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7572,9 +7374,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "頭蓋骨に関心を持つように"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7605,9 +7405,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "ハンター経由で譲り受けた"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7669,9 +7467,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "ある特徴"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7702,9 +7498,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "矢状稜（しじょうりょう）"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7735,9 +7529,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "正常なクマ"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7768,9 +7560,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "あるはずのものがない"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7801,9 +7591,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "矢状稜が潰れている"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -7958,9 +7746,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "事件の前／村の中で子グマが1頭"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8053,9 +7839,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "離れようとしない"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8241,9 +8025,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "あくまで推測"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8274,9 +8056,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "日本クマネットワーク"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8338,9 +8118,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "本人にも確認"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8371,9 +8149,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "2011年／秋田県林業センター／追跡調査"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8404,9 +8180,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "報告書に載っている"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8499,9 +8273,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "記述されている"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8532,9 +8304,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "かつて人に飼われていた、という説"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8565,9 +8335,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "戸沢村役場"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8598,9 +8366,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "総務課危機管理室 小林直樹室長"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8693,9 +8459,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "村の職員 ⇄ 山形県 自然保護課"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8788,9 +8552,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "疑問が残る"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8821,9 +8583,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "確定できていない"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8862,7 +8622,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "card_font_size": 78
     },
     {
       "id": 277,
@@ -8887,9 +8648,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "3月中旬の戸沢村"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -8982,9 +8741,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "数十頭"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -9015,9 +8772,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "珍しくない"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -9078,9 +8833,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "畑や民家の裏にも"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -9142,9 +8895,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "戸沢村 ⇄ 山形県"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -9175,9 +8926,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "かつて数十人 → いま16人"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
@@ -9487,9 +9236,7 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [
-        "境界線が曖昧になっている"
-      ],
+      "telops": [],
       "question": "",
       "bubble_delay": 0.5,
       "thought": false,
