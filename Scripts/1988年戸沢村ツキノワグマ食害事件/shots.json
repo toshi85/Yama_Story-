@@ -1,7 +1,7 @@
 {
   "schema": "yama.shots/1",
   "title": "1988年戸沢村ツキノワグマ食害事件",
-  "video": "左上白テロップ削除_確認版.mp4",
+  "video": "問い黒縁修正_確認版.mp4",
   "fps": 30.0,
   "total_frames": 44944,
   "generated_at": "2026-09-06T22:44:37+09:00",
@@ -193,7 +193,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "question_outline": 4
     },
     {
       "id": 7,
@@ -224,7 +225,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "question_outline": 4
     },
     {
       "id": 8,
