@@ -5,7 +5,7 @@ from concurrent.futures import ProcessPoolExecutor,ThreadPoolExecutor
 _sibling=Path(__file__).resolve().parents[1]/'edit'
 TOOLS=Path(os.environ.get('YAMA_EDIT_TOOLS',str(_sibling if _sibling.exists() else Path(__file__).resolve().parents[3]/'System_Tools/edit')))
 sys.path.insert(0,str(TOOLS))
-import make_map,make_map3d,ff,fonts_setup,map_camera,map_camera_render
+import make_map,make_map3d,ff,fonts_setup,map_camera,map_camera_render,earth_intro
 from build_shots import parse_master
 from PIL import Image,ImageDraw,ImageFont
 make_map3d._grid=functools.lru_cache(maxsize=3)(make_map3d._grid)
@@ -59,8 +59,6 @@ def frame(job):
   im=make_map3d.render(s['lat'],s['lon'],z,s.get('span',8),heading=s.get('heading',350)+20*u,pitch=max(15,min(65,58-15*u+s.get('pitch_delta',0))),cam_h=alt,far=max(alt*7,18000),cache=cache,src=s.get('source','s2'),pins=s['pins'],circle=circle,gain=(1.05,1.15,1.12),high_quality=s.get('quality','legacy')!='legacy')
  scale=W/1280
  d=ImageDraw.Draw(im);font=ImageFont.truetype(str(Path(fonts_setup.font_dir())/'MPLUSRounded1c-Bold.ttf'),round(30*scale));small=ImageFont.truetype(str(Path(fonts_setup.font_dir())/'MPLUSRounded1c-Bold.ttf'),round(18*scale))
- d.text((32*scale,30*scale),s['label'],font=font,fill='white',stroke_width=max(2,round(3*scale)),stroke_fill='black')
- if s['secret']:d.text((32*scale,78*scale),'地区の代表点を中心とした図 / 正確な現場位置は非公表',font=small,fill='white',stroke_width=max(2,round(2*scale)),stroke_fill='black')
  credit='地理院タイル（国土地理院）を加工 · Terrain: Mapzen / 事件当時の撮影ではありません' if s.get('source')=='gsi' and not s['wide'] else 'Sentinel-2 cloudless / EOX / Copernicus · Terrain: Mapzen'
  d.text((20*scale,H-28*scale),credit,font=small,fill='white',stroke_width=max(2,round(2*scale)),stroke_fill='black')
  im.save(p,quality=97 if s.get('quality','legacy')!='legacy' else 91,subsampling=0);return str(p)
@@ -121,7 +119,12 @@ def main():
   aid=s['id']
   if a.only and aid!=a.only:continue
   target=out/(aid+'.mp4');seconds=dur[aid]
-  if not a.force and target.exists() and abs(ff.probe_duration(str(target))-seconds)<.15:continue
+  intro=earth_intro.is_intro(settings.get(aid,{}))
+  if not a.force and target.exists() and abs(ff.probe_duration(str(target))-seconds)<.15 and (not intro or target.with_suffix('.earth.json').exists()):continue
+  if intro:
+   destination=next((v for v in specs if v['id']>aid and not v['wide']),s)
+   earth_intro.render_video(destination['lat'],destination['lon'],seconds,target,cache,width=s.get('width',1280),height=s.get('height',720))
+   print('保存',aid,flush=True);continue
   render_fps=30 if a.quality!='legacy' else FPS
   tmp=out/('.frames_'+aid);tmp.mkdir(exist_ok=True);n=max(2,round(seconds*render_fps))
   if a.force:shutil.rmtree(tmp);tmp.mkdir()
