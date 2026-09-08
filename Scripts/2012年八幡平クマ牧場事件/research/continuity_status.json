@@ -1,5 +1,5 @@
 {
-  "checked_at": 1788825647.640332,
+  "checked_at": 1788828929.237519,
   "production_complete": false,
   "work_running": false,
   "items": [
@@ -27,6 +27,20 @@
     {
       "id": "checks",
       "title": "機械検査と校閲",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "five_pass",
+      "title": "全文5周と初見の分かりやすさ確認",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "systemization",
+      "title": "今後の5周必須ルールと記録検査",
       "status": "complete",
       "reason": "完了",
       "owner": "Codex"

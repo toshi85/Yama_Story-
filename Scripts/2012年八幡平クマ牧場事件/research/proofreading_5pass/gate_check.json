@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    ".codex/skills/yama-five-pass/scripts/gate.py",
+    "check",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+  ],
+  "exit_code": 0,
+  "output": "{\"status\": \"PASS\", \"completed_passes\": 5, \"current_sha256\": \"7e7bf20522bb6981b25a49a85c99d69fd90262cc4373486ade3c72fba7fe9fcb\"}\n",
+  "at": "2026-09-08T09:55:29.095527+09:00"
+}

@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-08T09:54:07.808722+09:00",
+  "at": "2026-09-08T08:58:05.776428+09:00",
   "checks": [
     {
       "check": "validate_yama_competitor",
@@ -10,7 +10,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_competitor.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
     },
     {
       "check": "validate_yama_safety",
@@ -21,7 +21,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_safety.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
     },
     {
       "check": "validate_yama_structure",
@@ -32,7 +32,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_structure.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
     },
     {
       "check": "validate_yama_narrative",
@@ -43,7 +43,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_narrative.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
     },
     {
       "check": "validate_yama_facts",
@@ -54,7 +54,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_facts.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
     },
     {
       "check": "audit_numeric_facts",
@@ -65,7 +65,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/audit_numeric_facts.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
     },
     {
       "check": "validate_yama_intro",
@@ -76,7 +76,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_intro.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
     },
     {
       "check": "validate_yama_consistency",
@@ -87,7 +87,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_consistency.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
     },
     {
       "check": "validate_yama_coherence",
@@ -98,7 +98,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_coherence.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
     },
     {
       "check": "validate_yama_plot",
@@ -109,7 +109,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_plot.log",
-      "input_sha256": "105ab4b73fd55cbc2ffd25a7f8cf3e6dd3487b04561136d8dc56d56525a222d1"
+      "input_sha256": "7fe86e03292af3f588c62b7ed76167a9feec9d46c2e66dc3e8beb42b706cb8ae"
     }
   ]
 }
