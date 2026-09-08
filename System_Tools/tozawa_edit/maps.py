@@ -124,6 +124,7 @@ def main():
   if intro:
    destination=next((v for v in specs if v['id']>aid and not v['wide']),s)
    earth_intro.render_video(destination['lat'],destination['lon'],seconds,target,cache,width=s.get('width',1280),height=s.get('height',720))
+   target.with_suffix('.display_pins.json').write_text(json.dumps([{'label':s['label'],'x':640,'y':360,'font':'rounded','size':36,'start':0,'end':seconds}],ensure_ascii=False))
    print('保存',aid,flush=True);continue
   render_fps=30 if a.quality!='legacy' else FPS
   tmp=out/('.frames_'+aid);tmp.mkdir(exist_ok=True);n=max(2,round(seconds*render_fps))
