@@ -47,7 +47,7 @@ def frame(job):
  q=i/max(n-1,1);u=q*q*(3-2*q);alt=s['alt0']*(s['alt1']/s['alt0'])**u;z=zoom(s)
  if s.get('camera'):
   camera=map_camera.at(s['camera'],q)
-  im=map_camera_render.render(make_map3d,s['lat'],s['lon'],z,s.get('span',16),camera['heading'],camera['pitch'],s['camera_alt']/camera['zoom'],max(s['camera_alt']*40,18000),str(cache),src=s.get('source','s2'),pins=s['pins'],circle=(s['lat'],s['lon'],s['radius']) if s['radius'] else None,gain=(1.05,1.15,1.12),high_quality=s.get('quality','legacy')!='legacy')
+  im=map_camera_render.render(make_map3d,camera.get('lat',s['lat']),camera.get('lon',s['lon']),z,s.get('span',16),camera['heading'],camera['pitch'],s['camera_alt']/camera['zoom'],max(s['camera_alt']*40,18000),str(cache),src=s.get('source','s2'),pins=s['pins'],circle=(s.get('scene_lat',s['lat']),s.get('scene_lon',s['lon']),s['radius']) if s['radius'] else None,gain=(1.05,1.15,1.12),high_quality=s.get('quality','legacy')!='legacy',grid_center=(s['lat'],s['lon']))
  elif s['wide']:
   im,origin=make_map.build(s['lat'],s['lon'],z,cache,relief=0 if s['id']=='ASSET-008' else .25)
   im=make_map.draw_overlays(im,z,origin,s['pins'],False)
@@ -82,11 +82,16 @@ def apply_overrides(spec,ov):
  s['pins']=pins
  if ov.get('map_camera'):
   camera=map_camera.validate(ov['map_camera'])
-  s.update(camera=camera,camera_alt=spec['alt0'],camera_wide=spec['wide'],wide=False,span=16)
+  for side in ('start','end'):
+   camera[side].setdefault('lat',spec['lat']);camera[side].setdefault('lon',spec['lon'])
+  midpoint=map_camera.at(camera,.5)
+  s.update(camera=camera,camera_alt=spec['alt0'],camera_wide=spec['wide'],wide=False,span=16,scene_lat=spec['lat'],scene_lon=spec['lon'],lat=midpoint['lat'],lon=midpoint['lon'])
+  if camera.get('source'):s['source']=camera['source']
   # カメラの背後・地平線寄りまで含める。倍率を変えても同一タイル格子を使う。
   highest=spec['alt0']/min(camera['start']['zoom'],camera['end']['zoom'])
   shallowest=min(camera['start']['pitch'],camera['end']['pitch'])
-  radius=highest*(24 if shallowest<35 else 8)
+  travel=math.hypot((camera['end']['lat']-camera['start']['lat'])*110540,((camera['end']['lon']-camera['start']['lon']+180)%360-180)*111320*math.cos(math.radians(s['lat'])))
+  radius=highest*(24 if shallowest<35 else 8)+travel/2
   resolution=156543.03392*math.cos(math.radians(s['lat']))
   s['tile_zoom']=max(5,min(14,int(math.floor(math.log2(resolution*256*16/(2*radius))))))
  return s
@@ -109,7 +114,7 @@ def main():
  if a.quality!='legacy':
   for s in specs:
    old_zoom=zoom(s)
-   s.update(quality=a.quality,width=3840 if a.quality=='4k' else 1920,height=2160 if a.quality=='4k' else 1080,source='gsi' if not s['wide'] and not s.get('camera_wide') else 's2')
+   s.update(quality=a.quality,width=3840 if a.quality=='4k' else 1920,height=2160 if a.quality=='4k' else 1080,source=s.get('camera',{}).get('source') or ('gsi' if not s['wide'] and not s.get('camera_wide') else 's2'))
    if not s['wide'] and not s.get('camera'):s.update(tile_zoom=min(old_zoom+1,14),span=16)
  (out/'map_specs.json').write_text(json.dumps(specs,ensure_ascii=False,indent=2))
  for s in specs:
