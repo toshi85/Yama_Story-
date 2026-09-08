@@ -1,0 +1,43 @@
+{
+  "checked_at": 1788825647.640332,
+  "production_complete": false,
+  "work_running": false,
+  "items": [
+    {
+      "id": "research",
+      "title": "競合と一次資料の調査",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "plot",
+      "title": "執筆前プロット検査",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "narration",
+      "title": "ナレーション執筆",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "checks",
+      "title": "機械検査と校閲",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "human_review",
+      "title": "原稿の人間最終確認",
+      "status": "waiting_external",
+      "reason": "Master.mdの本文を確認",
+      "owner": "本人"
+    }
+  ],
+  "remaining": 1
+}

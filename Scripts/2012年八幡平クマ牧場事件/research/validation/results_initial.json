@@ -1,0 +1,113 @@
+{
+  "at": "2026-09-08T08:49:06.837087+09:00",
+  "checks": [
+    {
+      "check": "validate_yama_safety",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_safety.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_safety.log",
+      "input_sha256": "88fd813223b86b086cae61e5217bcaedfb7e97675dd4f271a8eabd5609e584c6",
+      "details": ""
+    },
+    {
+      "check": "validate_yama_structure",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_structure.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 1,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_structure.log",
+      "input_sha256": "88fd813223b86b086cae61e5217bcaedfb7e97675dd4f271a8eabd5609e584c6",
+      "details": "[Structure Check]: Validating Yama Story Structure + Safety + Volume: Master.md\n\n[Layer 0] Physical Blockade: Competitor & Thumbnail Analysis...\n\n============================================================\n[Gate 0] Competitor & Thumbnail Analysis Check\n  File: Master.md\n============================================================\n\n[Check 1] 競合分析セクションの存在...\n   ❌ MISSING\n\n[Check 2] 競合動画の記載...\n   ⚠️ Only 1 competitor(s) found (recommend 3+)\n\n[Check 3] 差別化3軸（映像・リサーチ・ナラティブ）...\n   ❌ Missing axes: 映像, リサーチ, ナラティブ\n\n[Check 4] 情報の穴の特定...\n   ⚠️ Only 2 hole(s) detected (recommend 3+)\n\n[Check 5] サムネイル競合分析セクションの存在...\n   ❌ MISSING\n\n[Check 6] サムネ分析の要素（テキスト・構図・色調）...\n   ⏭️ Skipped (no thumbnail section)\n\n============================================================\n[FAILED] Gate 0: 3 BLOCKADE(s), 2 warning(s)\n============================================================\n\n[BLOCKADE] 競合分析セクションが見つかりません。\n   台本に以下のいずれかのセクションを追加してください:\n   ## 競合との差別化要因レポート\n   ## 競合分析\n   マスタープロンプト §2-A「競合・完全包囲リサーチ」参照\n\n[BLOCKADE] 差別化軸が不足: 映像, リサーチ, ナラティブ\n   映像面・リサーチ面・ナラティブ面の3軸で差別化要因を記載してください。\n\n[BLOCKADE] サムネイル競合分析セクションが見つかりません。\n   台本に以下のセクションを追加してください:\n   ## サムネイル競合分析\n   競合Top 3のサムネのテキスト・構図・色調パターンを分析し、\n   差別化ポイントを明記してください。\n\n[WARNING] 競合動画が1本のみ。Top 3の分析を推奨。\n\n[WARNING] 情報の穴が2個のみ検出。3つ以上の特定を推奨。\n   例: 「判決文を読んでいない」「地形図を出していない」「手記を引用していない」\n\n台本に競合分析・サムネ分析を追加してから再実行してください。\n[BLOCKADE]: Competitor & Thumbnail Analysis missing. Cannot proceed.\n"
+    },
+    {
+      "check": "validate_yama_narrative",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_narrative.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_narrative.log",
+      "input_sha256": "88fd813223b86b086cae61e5217bcaedfb7e97675dd4f271a8eabd5609e584c6",
+      "details": "[WARN] 3 warning(s) found.\n  ⚠️  [孤立した固有名詞] Line 693: '北海道大学' は台本に1回しか出てきません\n  ⚠️  [孤立した固有名詞] Line 185: '消防署' は台本に1回しか出てきません\n  ⚠️  [孤立した固有名詞] Line 80: '飼育区' は台本に1回しか出てきません"
+    },
+    {
+      "check": "validate_yama_facts",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_facts.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_facts.log",
+      "input_sha256": "88fd813223b86b086cae61e5217bcaedfb7e97675dd4f271a8eabd5609e584c6",
+      "details": "--- WARN 2件 ---\n[PASS] 出典なしの断定はありません（WARN 2件は要確認）"
+    },
+    {
+      "check": "audit_numeric_facts",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/audit_numeric_facts.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/audit_numeric_facts.log",
+      "input_sha256": "88fd813223b86b086cae61e5217bcaedfb7e97675dd4f271a8eabd5609e584c6",
+      "details": ""
+    },
+    {
+      "check": "validate_yama_intro",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_intro.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 1,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_intro.log",
+      "input_sha256": "88fd813223b86b086cae61e5217bcaedfb7e97675dd4f271a8eabd5609e584c6",
+      "details": "==============================================================\n[朱鞠内湖フォーミュラ] Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md\n==============================================================\n\n総字数 8,764字 / 想定尺 27.1分\n\n[構成比]\n  OK KI            430字   4.9%  基準 270-950字 かつ 上限10%\n  OK SHO         7,531字  85.9%  許容 70-90%\n  OK TEN-KETSU     803字   9.2%  許容 5-15%\n\n[起の切り方] OK  最終行が『日常が崩れる予感』で終わっています\n    → 「しかし、その朝の作業中、クマがいるはずの場所から外へ出てしまいます。」\n\n[転・結] 転 590字 / 結 213字  OK（結は400字以内、かつ転より短い）\n\n[イントロ] 1. 2012年4月20日、秋田県鹿角市\n  228字 / 42秒   （朱鞠内湖 240字 / 44秒）\n  結末（画）到達: 91字 / 17秒 OK   （朱鞠内湖 27秒・上限 35秒）\n  問いの数: 2  OK   （基準 2つ固定）\n  CQ1 回収: OK  転に「検査」が出てきます\n  CQ2 回収: OK  転に「牧場」が出てきます\n      - 壁の高さは約4.5メートルもあったとされますが、なぜ検査を重ねていた牧場で脱走が起きたのでしょうか。\n      - そして、事故を受けて閉園を決めた牧場には、どんな仕事が残されたのでしょうか。\n  締めの一文: NG   「地形図とともに解説します。」\n\n[セクション別]\n  1. 2012年4月20日、秋田県鹿角市                   228字   42秒  累計  2.6%\n  2. Tさんが働く牧場                            202字   38秒  累計  4.9%\n  3. 通路の除雪と餌場の仕事                         329字   61秒  累計  8.7%\n  4. 壁際に残った雪                             356字   66秒  累計 12.7%\n  5. 叫び声のした方へ                            324字   60秒  累計 16.4%\n  6. 国道側からの目撃                            343字   64秒  累計 20.3%\n  7. 学校にも届いた連絡                           327字   61秒  累計 24.1%\n  8. 正午過ぎ、猟友会の対応                         370字   69秒  累計 28.3%\n  9. 小屋に入ったクマ                            359字   67秒  累計 32.4%\n  10. 午後の確認                              377字   70秒  累計 36.7%\n  11. 事故の前に出ていた指導                        400字   74秒  累計 41.2%\n  12. 柵のやり直しと台帳の見本                       387字   72秒  累計 45.7%\n  13. 餌を回収する調査員                          459字   85秒  累計 50.9%\n  14. 餌場へ近づけない個体                         376字   70秒  累計 55.2%\n  15. 水が再び流れるまで                          317字   59秒  累計 58.8%\n  16. 揃わない頭数                             326字   61秒  累計 62.5%\n  17. 廃業しても残る飼育                          366字   68秒  累計 66.7%\n  18. 県が引き受けた当面の仕事                       382字   71秒  累計 71.1%\n  19. 受入れ先に必要な場所と費用                      378字   70秒  累計 75.4%\n  20. ツキノワグマの移送                          400字   74秒  累計 79.9%\n  21. 移送後にも残った困難                         292字   54秒  累計 83.3%\n  22. ヒグマ19頭の引越し                         355字   66秒  累計 87.3%\n  23. 春の点検と除雪の順番                         308字   57秒  累計 90.8%\n  24. 検査と閉園で終わらなかった理由                    590字  110秒  累計 97.6%\n  25. TさんとSさん                            213字   40秒  累計100.0%\n\n[80%以降のセクション] 5件（最大の実用情報をここに置く）\n  - 21. 移送後にも残った困難  (累計83.3%)\n  - 22. ヒグマ19頭の引越し  (累計87.3%)\n  - 23. 春の点検と除雪の順番  (累計90.8%)\n  - 24. 検査と閉園で終わらなかった理由  (累計97.6%)\n  - 25. TさんとSさん  (累計100.0%)\n\n==============================================================\n[FAIL] 1件\n  ❌ 締めが「地形図とともに解説します。」でない（実際:「八幡平クマ牧場で働いていた人たちと、事故後も現地に残されたクマの経過を、地形図とともに解説します。」）\n==============================================================\n"
+    },
+    {
+      "check": "validate_yama_consistency",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_consistency.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_consistency.log",
+      "input_sha256": "88fd813223b86b086cae61e5217bcaedfb7e97675dd4f271a8eabd5609e584c6",
+      "details": ""
+    },
+    {
+      "check": "validate_yama_coherence",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_coherence.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_coherence.log",
+      "input_sha256": "88fd813223b86b086cae61e5217bcaedfb7e97675dd4f271a8eabd5609e584c6",
+      "details": "--- WARN 14件 ---\n    ⚠️ 一致率が低い＝未使用とは限らない（言い換えれば下がる）。**その章を音読して、素材の中身が本当に入っているかを目で見る**"
+    },
+    {
+      "check": "validate_yama_plot",
+      "command": [
+        "python3",
+        "Yama_Story/System_Tools/validate_yama_plot.py",
+        "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Plot_Sheet_八幡平クマ牧場事件.md"
+      ],
+      "exit_code": 0,
+      "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_plot.log",
+      "input_sha256": "1e75f8cb53d45f8f489d14c6e8f89fbea838005fa8c071c15c3572916e30af1f",
+      "details": "--- WARN 2件 ---\n[PASS] プロットは基準を満たしています。執筆に進んでよい（WARN 2件は確認）"
+    }
+  ]
+}

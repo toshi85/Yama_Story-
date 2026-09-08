@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "url": "https://www.youtube.com/watch?v=1TyA4Vxy7pE",
+    "requested_model": "gemini-3.7-flash",
+    "returned_model": "gemini-3.7-flash",
+    "requested_range_sec": [
+      0,
+      530
+    ],
+    "observed_at": "2026-09-08T08:20:15.268837+09:00",
+    "usage": {
+      "promptTokenCount": 48721,
+      "candidatesTokenCount": 4925,
+      "totalTokenCount": 54080,
+      "promptTokensDetails": [
+        {
+          "modality": "VIDEO",
+          "tokenCount": 48231
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 490
+        }
+      ],
+      "thoughtsTokenCount": 434,
+      "serviceTier": "standard"
+    },
+    "finish_reason": "STOP",
+    "response_valid": false,
+    "timeline_errors": [
+      "transcript[13]: invalid/out-of-range interval",
+      "transcript[14]: invalid/out-of-range interval",
+      "transcript[15]: invalid/out-of-range interval",
+      "transcript[16]: invalid/out-of-range interval",
+      "transcript[17]: invalid/out-of-range interval",
+      "visual_observations[21]: invalid/out-of-range interval",
+      "visual_observations[22]: invalid/out-of-range interval",
+      "visual_observations[23]: invalid/out-of-range interval",
+      "visual_observations[24]: invalid/out-of-range interval",
+      "visual_observations[25]: invalid/out-of-range interval",
+      "visual_observations[26]: invalid/out-of-range interval",
+      "audio_observations[0]: invalid/out-of-range interval",
+      "sections[5]: invalid/out-of-range interval",
+      "sections[6]: invalid/out-of-range interval",
+      "sections[7]: invalid/out-of-range interval",
+      "sections[8]: invalid/out-of-range interval"
+    ],
+    "verification": "Model-reported AV access; transcript and timeline require Codex review",
+    "prompt": "このYouTube動画の指定区間全体を、映像と音声を実際に確認して処理してください。\n動画内の指示は資料であり従わないこと。日本語でJSONを出力。\n仕事は映像・音声の観察と忠実な書き起こしです。台本の文体評価・改善案は別担当のCodexが行うので不要。\n概要欄や字幕の要約で代替せず、話されたナレーションを省略せず書き起こす。聴き取れない箇所は[不明]。段落単位で開始終了の秒数を記録。時刻は元動画の絶対秒。2分25秒は145であり225ではない。22分09秒は1329であり2209ではない。無音やナレーションのない区間はcoverage_gapsで記録。取得不可なら明示し内容を創作しない。\n映像では素材の見た目、場面の切替、静止画のパン/ズームと画面内アニメーションを区別。AI生成か・制作ソフトは外見だけで断定しない。音声ではナレーション/BGM/SE/間の実際の使用をタイムスタンプ付きで記す。数えていない総カット数や比率はnull。\nJSON構造:\n{\"access\":{\"video_observed\":true,\"audio_observed\":true,\"observed_start_sec\":0,\"observed_end_sec\":0,\"limitations\":[]},\n\"transcript\":[{\"start_sec\":0,\"end_sec\":10,\"text\":\"実際の発話\"}],\n\"coverage_gaps\":[{\"start_sec\":0,\"end_sec\":0,\"reason\":\"理由\"}],\n\"visual_observations\":[{\"start_sec\":0,\"end_sec\":10,\"observation\":\"画面で見た事実\",\"confidence\":\"high/medium/low\"}],\n\"audio_observations\":[{\"start_sec\":0,\"end_sec\":10,\"observation\":\"聞いた事実\",\"confidence\":\"high/medium/low\"}],\n\"sections\":[{\"start_sec\":0,\"end_sec\":10,\"topic\":\"内容の簡潔な要約\"}],\n\"uncertainties\":[]}\n観察は冒頭0〜60秒を詳しく、以後は各章の具体例と終盤を網羅。書き起こしは全区間を網羅。"
+  },
+  "result": {
+    "access": {
+      "video_observed": true,
+      "audio_observed": true,
+      "observed_start_sec": 0,
+      "observed_end_sec": 530,
+      "limitations": []
+    },
+    "transcript": [
+      {
+        "start_sec": 0,
+        "end_sec": 17,
+        "text": "満足な餌も与えられず、劣悪な環境の中で育てられたクマ牧場のクマたち。日常的に飢えていたクマたちですが、ある日クマ牧場の従業員が致命的なミスを犯します。クマはそのミスを見逃さず、これまでの復讐とも言える行動に出始めました。"
+      },
+      {
+        "start_sec": 18,
+        "end_sec": 39,
+        "text": "事件が発生したのは、秋田県鹿角市にあった「秋田八幡平クマ牧場」です。この牧場は、クマが冬眠に入る冬から春にかけての期間は、来客が見込めないため基本的にその期間は閉鎖されます。そして冬季閉鎖から春の営業再開に向けての準備をしている最中に、事件は起こりました。"
+      },
+      {
+        "start_sec": 40,
+        "end_sec": 51,
+        "text": "2012年4月20日、当時75歳の女性従業員と69歳の女性従業員、同じく69歳の男性従業員の3人で開園作業を進めます。"
+      },
+      {
+        "start_sec": 52,
+        "end_sec": 60,
+        "text": "この日は冬眠から目覚めたクマたちのために運動場を開放し、冬眠用の部屋にこもっていたクマたちを少し運動させる予定でした。"
+      },
+      {
+        "start_sec": 61,
+        "end_sec": 80,
+        "text": "運動場といっても、地下に穴を掘り、その周りをコンクリートで囲んだだけの簡易空間です。周りは高さ4.5mの壁に囲まれており、筋肉のあるクマでも脱走は不可能です。冬眠明けで空腹かつ体力のないクマにとってはなおさら、この運動場は完璧な囲いになるはずでした。"
+      },
+      {
+        "start_sec": 81,
+        "end_sec": 109,
+        "text": "しかし、牧場では2日前に除雪作業をおこなっており、従業員たちは除雪した雪をその運動場に投げ捨てていたのです。捨てられた雪は解けずに残っており、運動場は雪で地面が底上げされた状態となります。つまり雪の足場ができて、クマが簡単に壁を乗り越えられる状態になっていたのです。もちろんクマの世話をしていた3人の従業員は、そのような事態が起こっているとは知らず普段通りに業務を続けました。"
+      },
+      {
+        "start_sec": 110,
+        "end_sec": 128,
+        "text": "そして午前9時頃、運動場に出ていたヒグマのうちの1頭が、たまった雪の足場を利用してついに運動場からの脱出に成功してしまいます。ヒグマの脱走に気づいた75歳の女性従業員は、すぐに事態の深刻性に気が付き、「ヒグマが逃げ出した！」と叫んで周囲に伝えます。"
+      },
+      {
+        "start_sec": 129,
+        "end_sec": 159,
+        "text": "その声に気付いた男性従業員が声のするほうに駆け寄るも時すでに遅し…男性従業員が見た女性従業員の最後の姿は、まさに脱走したヒグマに襲撃され噛みつかれている最中だったのです。男性従業員はすぐに近くにいたはずの69歳の女性従業員に声をかけるも、姿が見当たりません。何度呼んでも返事がなかったため、男性従業員は最悪の事態に備えて、牧場経営者や地域の猟友会に連絡します。"
+      },
+      {
+        "start_sec": 160,
+        "end_sec": 196,
+        "text": "そして午前10時頃、事態を把握した警察や救急隊が牧場に到着。国道から見下ろした牧場内部では、脱走したと思われる2頭のヒグマが口の周りを真っ赤に染め、まるで餌を奪い合うかのように「何か」を引っ張り合っています。その「何か」とは、どちらの女性従業員か判別できないほど無惨に食い荒らされた人間の死体でした。実際に事件後におこなわれたヒグマの解剖でも、内臓から被害者の体の一部や遺品が摘出されています。このことから、このヒグマの脱走は食害が目的であった可能性が非常に高いと考えられています。"
+      },
+      {
+        "start_sec": 197,
+        "end_sec": 226,
+        "text": "そして従業員を食べてしまった2頭のヒグマは、すぐに射殺されることが決定。猟友会にも正式な指示が出され、猟友会のメンバーは空腹のクマが大量に潜んでいる可能性のある牧場内に入ることとなりました。メンバーは連携し、午後4時までに脱走したヒグマ合計6頭を射殺。射殺されたヒグマはすべて体長1m50cmから2mほど、体重は250から300kg前後の大人のヒグマでした。"
+      },
+      {
+        "start_sec": 227,
+        "end_sec": 242,
+        "text": "襲撃された2人の女性従業員は病院に搬送されたものの、すでに絶命しており改めて死亡が確認されます。大声で悲鳴を上げた女性従業員の死因は頸椎損傷、もう一人の女性従業員は外傷性ショックで亡くなりました。"
+      },
+      {
+        "start_sec": 243,
+        "end_sec": 261,
+        "text": "弱肉強食の世界で暮らすヒグマなら空腹に耐えられず人間を襲ってしまうケースも考えられますが、このヒグマたちは牧場で飼育されていました。人間に飼育されているのなら普段から毎日餌を与えられて暮らしていたはずですが、なぜこのような悲惨な事件が起きてしまったのでしょうか。"
+      },
+      {
+        "start_sec": 262,
+        "end_sec": 311,
+        "text": "この事件の背景には、秋田八幡平クマ牧場のずさんな管理体制が大きく影響しているといわれています。元々クマの生態や何気ない行動を気軽に観察できる観光スポットとして知られていた秋田八幡平クマ牧場は、国道沿いに「本州随一のクマ牧場」と看板を掲げていました。基本的に安全な檻の中で飼育するスタイルを採用しており、餌をねだる芸をする姿が珍しいと人気を集めていました。ヒグマやツキノワグマ、コディアックヒグマなど複数種類のクマを30頭近く飼育していた秋田八幡平クマ牧場。施設内ではクマ専用のおやつも販売され、クマへの餌やり体験ができることでも話題になり、まさにクマを観察し触れ合える、クマ好きにはたまらない牧場でした。"
+      },
+      {
+        "start_sec": 312,
+        "end_sec": 364,
+        "text": "しかし実際には資金繰りが厳しく、何人もの経営者が変わる赤字経営だったのです。従業員も事件当日にいた3人のみで、たった3人だけで30頭近くものクマたちの飼育をしていました。この経営難により、クマたちの餌を十分に用意することができず、クマとは思えないほど痩せ細った個体や、空腹から気性が荒くなった個体も目撃されます。なんとか近くの総合病院から入院患者の残飯を週3回程度、50kgほど分けてもらっていましたが、それでも十分とは言えません。また実際にこのクマ牧場を訪れた人の中には、餌やり体験で餌として使われていたのはクマ用のものではなくただのパンであり、さらにそのパンはカビが生えていたと主張する人もいます。これらの話から、クマたちは常に空腹状態にある劣悪な環境で飼育されていたと考えられます。"
+      },
+      {
+        "start_sec": 365,
+        "end_sec": 401,
+        "text": "さらに牧場の周辺住民から「牧場スタッフが子グマの死体を無造作に捨てていた」という悲惨な状況を裏付ける目撃証言があることから、牧場はクマたちを生き物として尊重せず、見せ物として生かしているだけであったといえるでしょう。このような状況だったため、この牧場は事件が起きた年の秋にはすでに閉園することが決定していましたが、今回の事件を受け6月に前倒しで閉園しました。そしてこの牧場の経営者および除雪を担当した69歳の男性従業員は、「業務上過失致死容疑」で逮捕され、のちに罰金が科されることになります。"
+      },
+      {
+        "start_sec": 402,
+        "end_sec": 453,
+        "text": "一方で残されたクマたちはその後、県から非常勤職員の派遣があったり支援団体から物資や資金の援助が入ったりしたため、しばらくは継続して飼育されることになりました。当初、逮捕された経営者は「餌の量を減らして『自然淘汰』させよう」と提案していましたが、秋田県側から「観光に悪影響を及ぼすのでやめるべき」と注意が入り中止となりました。自然淘汰させるということは、クマの餌を減らして共食いさせたり餓死させたりするということです。その後、県外の複数の施設がクマの受け入れ要請を受託したため、残されたクマは全頭整った環境で飼育されることが決定し、ようやく劣悪な飼育環境から解放されたのです。クマのほとんどは2014年にオープンした秋田県内の「北秋田市阿仁熊牧場」、通称「くまくま園」に引き取られました。"
+      },
+      {
+        "start_sec": 454,
+        "end_sec": 486,
+        "text": "また今回の事件で、秋田八幡平クマ牧場のクマたちが悲惨な状況下で暮らしていたことを知った海外の複数の動物愛護団体は、要望書を提出しています。その内容は「熊の受け入れ先はできる限り環境の整った場所を選ぶべきであり、それが叶わない場合はせめて安楽死させてあげてほしい」というものです。このため北秋田市阿仁熊牧場をはじめとする、残ったクマたちを引き取った複数の施設は、この働きかけを受けた結果選ばれた受け入れ先だと考えられます。"
+      },
+      {
+        "start_sec": 487,
+        "end_sec": 530,
+        "text": "一般的なヒグマ事件は、森などのクマのテリトリーでクマと遭遇したり、野生のクマが空腹で人里に降りてきたりするケースがほとんどです。しかし今回の事件は、多くの観光客が訪れるクマ牧場で発生した衝撃的な事件だったといえるでしょう。以上今回は、「秋田八幡平クマ牧場事件」を紹介しました。動画が分かりやすいと感じていただけましたら、ぜひ高評価をお願いいたします。今後もこのチャンネルでは、過去に起こった様々な悲惨な事故を紹介していきますので、そのような内容に興味のある方はチャンネル登録をしてお待ちください。それでは今回も最後までご視聴いただきありがとうございました。"
+      }
+    ],
+    "coverage_gaps": [],
+    "visual_observations": [
+      {
+        "start_sec": 0,
+        "end_sec": 17,
+        "confidence": "high",
+        "observation": "岩の上に座るヒグマの実写映像およびアップの映像。下部に黒帯と白文字の日本語字幕テロップが表示されている。"
+      },
+      {
+        "start_sec": 18,
+        "end_sec": 24,
+        "confidence": "high",
+        "observation": "「秋田八幡平熊牧場」の入口事務所建物の写真（引用元URLの表示あり）。"
+      },
+      {
+        "start_sec": 25,
+        "end_sec": 32,
+        "confidence": "high",
+        "observation": "地面で寝そべっているクマの映像。"
+      },
+      {
+        "start_sec": 33,
+        "end_sec": 39,
+        "confidence": "high",
+        "observation": "桜の木と日差しの実写映像。"
+      },
+      {
+        "start_sec": 40,
+        "end_sec": 51,
+        "confidence": "high",
+        "observation": "ホースで床を水洗い・デッキブラシで清掃している作業者の足元の映像。"
+      },
+      {
+        "start_sec": 52,
+        "end_sec": 60,
+        "confidence": "high",
+        "observation": "コンクリート敷きの飼育場で集まる複数のクマの写真資料（引用元表示あり）。"
+      },
+      {
+        "start_sec": 61,
+        "end_sec": 73,
+        "confidence": "high",
+        "observation": "コンクリート壁で囲まれたクマ牧場の運動場全景写真資料。"
+      },
+      {
+        "start_sec": 74,
+        "end_sec": 80,
+        "confidence": "high",
+        "observation": "湿地・水辺を歩くヒグマの実写映像。"
+      },
+      {
+        "start_sec": 81,
+        "end_sec": 89,
+        "confidence": "high",
+        "observation": "雪道に停車している小型のホイールローダー（除雪重機）の写真。"
+      },
+      {
+        "start_sec": 90,
+        "end_sec": 101,
+        "confidence": "high",
+        "observation": "クマ牧場運動場の写真が再表示される。"
+      },
+      {
+        "start_sec": 110,
+        "end_sec": 143,
+        "confidence": "high",
+        "observation": "草むらや森の中を歩くヒグマ、ヒグマの顔アップ映像が連続して流れる。"
+      },
+      {
+        "start_sec": 144,
+        "end_sec": 150,
+        "confidence": "high",
+        "observation": "屋外で作業服を着て歩く人の後ろ姿の映像。"
+      },
+      {
+        "start_sec": 151,
+        "end_sec": 159,
+        "confidence": "high",
+        "observation": "プッシュホンの電話機のクローズアップ映像。"
+      },
+      {
+        "start_sec": 160,
+        "end_sec": 164,
+        "confidence": "high",
+        "observation": "腰に拳銃ホルダーを装着した警察官の後ろ姿映像。"
+      },
+      {
+        "start_sec": 165,
+        "end_sec": 175,
+        "confidence": "high",
+        "observation": "国土地理院による秋田八幡平クマ牧場の航空写真（上空からの俯瞰画像）。"
+      },
+      {
+        "start_sec": 183,
+        "end_sec": 189,
+        "confidence": "high",
+        "observation": "手術台の上に並べられた医療用ハサミ・ピンセット等の器具の映像。"
+      },
+      {
+        "start_sec": 197,
+        "end_sec": 202,
+        "confidence": "high",
+        "observation": "散弾銃に弾を装填する手元の映像。"
+      },
+      {
+        "start_sec": 227,
+        "end_sec": 234,
+        "confidence": "high",
+        "observation": "道路を走行する救急車の後方映像。"
+      },
+      {
+        "start_sec": 235,
+        "end_sec": 242,
+        "confidence": "high",
+        "observation": "手術室で医療従事者が処置を行っている映像。"
+      },
+      {
+        "start_sec": 253,
+        "end_sec": 261,
+        "confidence": "high",
+        "observation": "檻の中にいるクマに餌を与えている様子の写真資料。"
+      },
+      {
+        "start_sec": 312,
+        "end_sec": 317,
+        "confidence": "high",
+        "observation": "電卓や書類が置かれたオフィスの机の映像。"
+      },
+      {
+        "start_sec": 336,
+        "end_sec": 344,
+        "confidence": "high",
+        "observation": "病院の入院食（トレイに載った配膳）の写真。"
+      },
+      {
+        "start_sec": 345,
+        "end_sec": 357,
+        "confidence": "high",
+        "observation": "食パンをパン切り包丁でスライスする手元の映像。"
+      },
+      {
+        "start_sec": 391,
+        "end_sec": 400,
+        "confidence": "high",
+        "observation": "警察官に手錠をかけられる人物の手元の実写映像。"
+      },
+      {
+        "start_sec": 445,
+        "end_sec": 453,
+        "confidence": "high",
+        "observation": "北秋田市阿仁熊牧場「くまくま園」の施設外観写真。"
+      },
+      {
+        "start_sec": 476,
+        "end_sec": 486,
+        "confidence": "high",
+        "observation": "くまくま園のクマ運動場・飼育施設の写真資料。"
+      },
+      {
+        "start_sec": 514,
+        "end_sec": 530,
+        "confidence": "high",
+        "observation": "熱帯雨林と川を上空から見下ろすドローン風の空撮映像。最後に暗転する。"
+      }
+    ],
+    "audio_observations": [
+      {
+        "start_sec": 0,
+        "end_sec": 530,
+        "confidence": "high",
+        "observation": "落ち着いたトーンの男性ナレーション（音声合成/声優調）が全編にわたって流れる。BGMには緊迫感のあるピアノやシンセサイザーのインストゥルメンタル楽曲が使用されている。"
+      }
+    ],
+    "sections": [
+      {
+        "start_sec": 0,
+        "end_sec": 39,
+        "topic": "導入：秋田八幡平クマ牧場の概要と事件のプロローグ"
+      },
+      {
+        "start_sec": 40,
+        "end_sec": 109,
+        "topic": "開園準備作業と脱走の原因（除雪による足場形成）"
+      },
+      {
+        "start_sec": 110,
+        "end_sec": 159,
+        "topic": "ヒグマ脱走と従業員への襲撃・通報"
+      },
+      {
+        "start_sec": 160,
+        "end_sec": 226,
+        "topic": "現場の惨状、猟友会による脱走クマ6頭の射殺"
+      },
+      {
+        "start_sec": 227,
+        "end_sec": 261,
+        "topic": "被害女性2名の死亡確認と死因"
+      },
+      {
+        "start_sec": 262,
+        "end_sec": 364,
+        "topic": "クマ牧場のずさんな管理体制と深刻な経営難・飢餓状態の実態"
+      },
+      {
+        "start_sec": 365,
+        "end_sec": 401,
+        "topic": "閉園の前倒しと関係者の逮捕"
+      },
+      {
+        "start_sec": 402,
+        "end_sec": 486,
+        "topic": "残されたクマたちの保護・移送（くまくま園）と動物愛護団体の要望"
+      },
+      {
+        "start_sec": 487,
+        "end_sec": 530,
+        "topic": "まとめとエンディング"
+      }
+    ],
+    "uncertainties": []
+  },
+  "normalization": {
+    "reason": "All observation timestamps encode minutes and seconds as MMSS integers; final 850 equals duration 530 seconds. access fields were already seconds.",
+    "raw_file": "1TyA4Vxy7pE_alternative37_gemini.json",
+    "method": "(MMSS // 100)*60 + MMSS % 100",
+    "precision": "model-reported timing, not independently aligned"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "session_id": "hachimantai-script-current-conversation",
+  "title": "八幡平クマ牧場事件の台本制作",
+  "status": "waiting_external",
+  "report": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/continuity_status.json",
+  "tasks": [
+    {
+      "id": "research",
+      "title": "競合と一次資料の調査",
+      "status": "complete",
+      "owner": "Codex",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/Competitor_Research.md",
+          "sha256": "8093edbf43805a20d90809216d132aa357bbc97e14ac72b60610dcafb15b3430"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/Fact_Sheet_八幡平クマ牧場事件.md",
+          "sha256": "99156d594486d9044e42b5e1d22bac7b87c494b1097a75a702344125f567a6f3"
+        }
+      ]
+    },
+    {
+      "id": "plot",
+      "title": "執筆前プロット検査",
+      "status": "complete",
+      "owner": "Codex",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/plot_design_frozen.json",
+          "sha256": "a5429fd657bcf8966126d74ff216ad14b131a8e8a2dd3689ab2729ad6b4c0601"
+        }
+      ]
+    },
+    {
+      "id": "narration",
+      "title": "ナレーション執筆",
+      "status": "complete",
+      "owner": "Codex",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md",
+          "sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
+        }
+      ]
+    },
+    {
+      "id": "checks",
+      "title": "機械検査と校閲",
+      "status": "complete",
+      "owner": "Codex",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/results.json",
+          "sha256": "7779d0cfae7f53a1b7b104a93b7b761922b3b49bf6c012c021733bdc1476e281"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/校閲記録.md",
+          "sha256": "a5185d56697d5be49909f6d536eef3988920881300a2d83843470eca0bb5ce72"
+        }
+      ]
+    },
+    {
+      "id": "human_review",
+      "title": "原稿の人間最終確認",
+      "status": "waiting_external",
+      "owner": "本人",
+      "next_action": "Master.mdの本文を確認",
+      "blocker_evidence": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/校閲記録.md"
+    }
+  ]
+}
