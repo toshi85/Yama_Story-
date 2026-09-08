@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-08T09:54:07.808722+09:00",
+  "at": "2026-09-08T09:51:59.661299+09:00",
   "checks": [
     {
       "check": "validate_yama_competitor",
@@ -10,7 +10,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_competitor.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "282b461fb4e9c269e9517982cde94408b9ae0f1654808d14a782052f192e616f"
     },
     {
       "check": "validate_yama_safety",
@@ -19,9 +19,9 @@
         "Yama_Story/System_Tools/validate_yama_safety.py",
         "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
       ],
-      "exit_code": 0,
+      "exit_code": 1,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_safety.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "282b461fb4e9c269e9517982cde94408b9ae0f1654808d14a782052f192e616f"
     },
     {
       "check": "validate_yama_structure",
@@ -30,9 +30,9 @@
         "Yama_Story/System_Tools/validate_yama_structure.py",
         "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md"
       ],
-      "exit_code": 0,
+      "exit_code": 1,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_structure.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "282b461fb4e9c269e9517982cde94408b9ae0f1654808d14a782052f192e616f"
     },
     {
       "check": "validate_yama_narrative",
@@ -43,7 +43,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_narrative.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "282b461fb4e9c269e9517982cde94408b9ae0f1654808d14a782052f192e616f"
     },
     {
       "check": "validate_yama_facts",
@@ -54,7 +54,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_facts.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "282b461fb4e9c269e9517982cde94408b9ae0f1654808d14a782052f192e616f"
     },
     {
       "check": "audit_numeric_facts",
@@ -65,7 +65,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/audit_numeric_facts.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "282b461fb4e9c269e9517982cde94408b9ae0f1654808d14a782052f192e616f"
     },
     {
       "check": "validate_yama_intro",
@@ -76,7 +76,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_intro.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "282b461fb4e9c269e9517982cde94408b9ae0f1654808d14a782052f192e616f"
     },
     {
       "check": "validate_yama_consistency",
@@ -87,7 +87,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_consistency.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "282b461fb4e9c269e9517982cde94408b9ae0f1654808d14a782052f192e616f"
     },
     {
       "check": "validate_yama_coherence",
@@ -98,7 +98,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_coherence.log",
-      "input_sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
+      "input_sha256": "282b461fb4e9c269e9517982cde94408b9ae0f1654808d14a782052f192e616f"
     },
     {
       "check": "validate_yama_plot",
@@ -109,7 +109,7 @@
       ],
       "exit_code": 0,
       "output": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/validate_yama_plot.log",
-      "input_sha256": "105ab4b73fd55cbc2ffd25a7f8cf3e6dd3487b04561136d8dc56d56525a222d1"
+      "input_sha256": "5cd14afd4e45454dfaee67f70500e9ed7537dc357f69fc6e59be6365cd88fe09"
     }
   ]
 }

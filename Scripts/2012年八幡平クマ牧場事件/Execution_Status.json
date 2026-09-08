@@ -1,13 +1,16 @@
 {
-  "checked_at": "2026-09-08T08:59:35.343420+09:00",
+  "checked_at": "2026-09-08T09:55:29.095527+09:00",
   "status": "phase1_ready_for_human_review",
   "completed": [
     "3 full competitor transcripts analyzed",
-    "121 numbered fact candidates classified",
+    "131 numbered fact candidates classified",
     "prewrite plot passed and frozen",
     "25 chapter narration saved",
     "10 required checks passed",
-    "source and warning review documented"
+    "source and warning review documented",
+    "5 sequential full-text reviews, all 25 chapters and 9 aspects each",
+    "first-time clarity checked each pass",
+    "Codex mandatory five-pass skill and record gate saved"
   ],
   "blocked": null,
   "narration_written": true,
@@ -51,15 +54,21 @@
   ],
   "automatic_ai_continuation_after_turn": false,
   "runner_check": {
-    "at": "2026-09-08T08:59:35.343420+09:00",
+    "at": "2026-09-08T09:55:29.095527+09:00",
     "matching_video_analyzer_processes": [],
-    "research_latest_execution_log": 1788823262.889024
+    "note": "この校閲工程は同期実行。AI API再発注・バックグラウンドランナー起動なし。"
   },
   "artifacts": {
-    "Master.md": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd",
+    "Master.md": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18",
     "Competitor_Research.md": "8093edbf43805a20d90809216d132aa357bbc97e14ac72b60610dcafb15b3430",
-    "Fact_Sheet_八幡平クマ牧場事件.md": "99156d594486d9044e42b5e1d22bac7b87c494b1097a75a702344125f567a6f3",
-    "Plot_Sheet_八幡平クマ牧場事件.md": "7fe86e03292af3f588c62b7ed76167a9feec9d46c2e66dc3e8beb42b706cb8ae",
-    "校閲記録.md": "a5185d56697d5be49909f6d536eef3988920881300a2d83843470eca0bb5ce72"
+    "Fact_Sheet_八幡平クマ牧場事件.md": "4f9f09ca8f5b146478ab04a4a5cf20352a9f613067baa40dd9acd6f66cd07f35",
+    "Plot_Sheet_八幡平クマ牧場事件.md": "105ab4b73fd55cbc2ffd25a7f8cf3e6dd3487b04561136d8dc56d56525a222d1",
+    "校閲記録.md": "e988151a71af71b8e8ac7c3b57bfb1ae06ddcf438fcac1c844830dc1ff4f1069"
+  },
+  "five_pass": {
+    "completed": 5,
+    "manifest": ".codex_review/Master/five_pass/manifest.json",
+    "gate_exit_code": 0,
+    "human_test": false
   }
 }

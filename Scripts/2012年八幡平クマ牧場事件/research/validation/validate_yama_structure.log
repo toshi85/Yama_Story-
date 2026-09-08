@@ -11,7 +11,7 @@
    ✅ Found
 
 [Check 2] 競合動画の記載...
-   ✅ 4 competitor references found
+   ✅ 5 competitor references found
 
 [Check 3] 差別化3軸（映像・リサーチ・ナラティブ）...
    ✅ All 3 axes covered
@@ -36,13 +36,13 @@
 [SUCCESS]: No Safety or Style Issues Found.
 
 [Layer 2] Physical Blockade: Volume Floor (8800 chars)...
-[OK]: Volume OK: 10499 chars
+[OK]: Volume OK: 10415 chars
 
 [Layer 3] Golden Ratio Check (1:8:1)...
 ----------------------------------------
-[Analysis]: Structural Analysis (Total: 10499 chars)
-   起 (Ki):       5.0%  (Target: 10% ±5%)
+[Analysis]: Structural Analysis (Total: 10415 chars)
+   起 (Ki):       5.1%  (Target: 10% ±5%)
    承 (Sho):      86.7%  (Target: 80% ±10%)
-   転結 (Ten):    8.3%  (Target: 10% ±5%)
+   転結 (Ten):    8.2%  (Target: 10% ±5%)
 ----------------------------------------
 [PASSED]: VALIDATION PASSED. Golden Ratio (1:8:1) Achieved.

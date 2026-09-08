@@ -1,0 +1,84 @@
+{
+  "reason": "依頼された全文5周校閲の実際の削除・追加を反映した設計改訂。元の凍結値を上書きしない。",
+  "changes": [
+    {
+      "chapter": 3,
+      "previous_plan": 360,
+      "revised_plan": 260,
+      "reason": "作業分担の反復を削除"
+    },
+    {
+      "chapter": 4,
+      "previous_plan": 380,
+      "revised_plan": 280,
+      "reason": "壁と雪の言い直しを整理"
+    },
+    {
+      "chapter": 6,
+      "previous_plan": 380,
+      "revised_plan": 300,
+      "reason": "目撃状況の反復を整理"
+    },
+    {
+      "chapter": 7,
+      "previous_plan": 340,
+      "revised_plan": 280,
+      "reason": "学校の連絡の再述を整理"
+    },
+    {
+      "chapter": 8,
+      "previous_plan": 430,
+      "revised_plan": 310,
+      "reason": "体格と小屋への移動の言い直しを整理"
+    },
+    {
+      "chapter": 9,
+      "previous_plan": 260,
+      "revised_plan": 180,
+      "reason": "前章と重なる小屋の経過を削除"
+    },
+    {
+      "chapter": 10,
+      "previous_plan": 400,
+      "revised_plan": 310,
+      "reason": "確認時刻と結果の反復を整理"
+    },
+    {
+      "chapter": 11,
+      "previous_plan": 400,
+      "revised_plan": 520,
+      "reason": "頭数増減の報告、繁殖指導の具体的記録を追加"
+    },
+    {
+      "chapter": 15,
+      "previous_plan": 440,
+      "revised_plan": 550,
+      "reason": "清掃の回答と作業場の観察を原資料から追加"
+    },
+    {
+      "chapter": 16,
+      "previous_plan": 360,
+      "revised_plan": 440,
+      "reason": "暗い母子の部屋と観察制限の事情を追加"
+    },
+    {
+      "chapter": 17,
+      "previous_plan": 390,
+      "revised_plan": 500,
+      "reason": "5月7日の立会い・餌の確保・引取り先探しを追加"
+    },
+    {
+      "chapter": 22,
+      "previous_plan": 370,
+      "revised_plan": 310,
+      "reason": "公開の経過の言い直しを削除"
+    },
+    {
+      "chapter": 23,
+      "previous_plan": 320,
+      "revised_plan": 260,
+      "reason": "点検と除雪の順番の反復を削除"
+    }
+  ],
+  "master_sha256": "282b461fb4e9c269e9517982cde94408b9ae0f1654808d14a782052f192e616f"
+}

@@ -17,7 +17,7 @@
         },
         {
           "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/Fact_Sheet_八幡平クマ牧場事件.md",
-          "sha256": "99156d594486d9044e42b5e1d22bac7b87c494b1097a75a702344125f567a6f3"
+          "sha256": "4f9f09ca8f5b146478ab04a4a5cf20352a9f613067baa40dd9acd6f66cd07f35"
         }
       ]
     },
@@ -43,7 +43,7 @@
       "evidence": [
         {
           "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md",
-          "sha256": "86157eef051a4c7ac0f32d31af8da37b35188948df97190d5d4c54d231c4ebbd"
+          "sha256": "d250e22ee2d29dd2fadcc9fa77a6b0869fd99f398cc8ad71239950c9bebd4c18"
         }
       ]
     },
@@ -56,11 +56,53 @@
       "evidence": [
         {
           "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/research/validation/results.json",
-          "sha256": "7779d0cfae7f53a1b7b104a93b7b761922b3b49bf6c012c021733bdc1476e281"
+          "sha256": "43eca171defad1ebe9db647e43112e2849feed1e5f6fd694253dea336f602a05"
         },
         {
           "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/校閲記録.md",
-          "sha256": "a5185d56697d5be49909f6d536eef3988920881300a2d83843470eca0bb5ce72"
+          "sha256": "e988151a71af71b8e8ac7c3b57bfb1ae06ddcf438fcac1c844830dc1ff4f1069"
+        }
+      ]
+    },
+    {
+      "id": "five_pass",
+      "title": "全文5周と初見の分かりやすさ確認",
+      "status": "complete",
+      "owner": "Codex",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/.codex_review/Master/five_pass/manifest.json",
+          "sha256": "1e9d32b591cf36e06b0252f63c6bbfb5af35bf4fbacda76b0fa22ea3e27fe11d"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/.codex_review/Master/five_pass/pass_5/reviewed.md",
+          "sha256": "7e7bf20522bb6981b25a49a85c99d69fd90262cc4373486ade3c72fba7fe9fcb"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2012年八幡平クマ牧場事件/.codex_review/Master/five_pass/pass_5/review.json",
+          "sha256": "f04378e7a25522ca0ce1a528ddaa93ec2ce04686e1fc3381b5aa0508dcd5cc3f"
+        }
+      ]
+    },
+    {
+      "id": "systemization",
+      "title": "今後の5周必須ルールと記録検査",
+      "status": "complete",
+      "owner": "Codex",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/.codex/skills/yama-five-pass/SKILL.md",
+          "sha256": "e9d153fcb72f738b6bf2e97a395b00688a07e1b70280c18d21f5cadcdf146193"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/.codex/skills/yama-five-pass/scripts/gate.py",
+          "sha256": "dbdd683795babd8a2d3a8d1aef3a9a616d4ad9e8795b41e04ab6a3be780a5cce"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/.codex/skills/yama-five-pass/scripts/test_gate.py",
+          "sha256": "e2413a229b8a5c579436d3ab0d8499680bb6d23316f17bcab3e48f4e755cb9f7"
         }
       ]
     },

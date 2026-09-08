@@ -61,10 +61,10 @@
 ナレーター: 牧場は、秋田県鹿角市の国道341号沿いにありました。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#86 -->
-ナレーター: 事故前年の県の回答書によれば、客を入れるのは5月から11月初旬までです。
+ナレーター: 県が前年に示した開場期間は、5月から11月初旬まで。
 
 <!-- src: S5 https://bunshun.jp/articles/-/58770 / S8 https://www.fdkazuno.jp/img/nenpou24.pdf ＝素材#51 -->
-ナレーター: 文春オンラインは、事故当日はまだ冬の休園中だったと伝えています。
+ナレーター: 文春オンラインの事故を伝える記事では、この日は冬の休園期間に当たります。
 
 <!-- src: S5 https://bunshun.jp/articles/-/58770 / S8 https://www.fdkazuno.jp/img/nenpou24.pdf ＝素材#51 #53 -->
 ナレーター: 客を迎える前の牧場で働いていたのが、75歳のTさんと、69歳のSさん。
@@ -106,16 +106,25 @@
 <!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#60 -->
 ナレーター: その運動場の内側は、2つの仕切りによって3つの区画に分かれていました。
 
+<!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#55 #59 -->
+ナレーター: この飼育場所への給餌と、人が行き来する通路の除雪。
+
+<!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#55 -->
+ナレーター: 女性たちとUさんは、同じ牧場の中で、それぞれの作業を進めていたのです。
+
 ## 4. 壁際に残った雪
 
 <!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#59 -->
 ナレーター: クマを囲うコンクリートの壁は、高さ約4.5メートル。
 
+<!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#59 -->
+ナレーター: 掘り下げた運動場の底から、外へ出るまでの高さです。
+
 <!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#61 -->
 ナレーター: 壁の上には、一部に高さ約70センチの柵もあったとされています。
 
 <!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#59 -->
-ナレーター: この約4.5メートルは、運動場の底から壁の上端までの高さです。
+ナレーター: ただ、この高さは、運動場の底から立ち上がる壁を測ったものです。
 
 <!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#59 #62 -->
 ナレーター: 壁際に積まれた雪の上から、同じ高さが残るわけではありません。
@@ -133,7 +142,13 @@
 ナレーター: 記事が記す脱走数は、ヒグマ6頭。
 
 <!-- src: S5 https://bunshun.jp/articles/-/58770 / S8 https://www.fdkazuno.jp/img/nenpou24.pdf ＝素材#62 #78 -->
-ナレーター: 一方、消防の年報は脱走したクマを4頭と記しており、資料の数字は一致していません。
+ナレーター: ただし、消防年報とは頭数の記載が食い違っており、この数は記事の記述として扱います。
+
+<!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#60 #62 -->
+ナレーター: 内部を3区画に分ける仕切りがあっても、外周の角には雪が残っていました。
+
+<!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#59 #62 -->
+ナレーター: 壁そのものの高さに加えて、足場となる雪の位置が、外へ通じる経路に関わったとされます。
 
 ## 5. 叫び声のした方へ
 
@@ -159,10 +174,13 @@
 ナレーター: Uさんが呼びかけても、Sさんから返事はありません。
 
 <!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#57 -->
+ナレーター: この場面で記されているのは、Uさんが到着したときの様子です。
+
+<!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#57 -->
 ナレーター: Sさんが襲われた瞬間や、女性たちが交わした言葉は確認できていません。
 
 <!-- src: S11 https://www.youtube.com/watch?v=H5HNvZ0ywL4 ＝素材#84 -->
-ナレーター: 当日の秋田魁（さきがけ）新報も、75歳と69歳の女性が、檻の近くに倒れていたと伝えています。
+ナレーター: 当日の秋田魁新報も、75歳と69歳の女性が、檻の近くに倒れていたと伝えています。
 
 <!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#58 -->
 ナレーター: Uさんは施設の外へ出て、経営者に連絡します。
@@ -188,13 +206,16 @@
 ナレーター: 文春オンラインの掲載記事では、国道側から牧場を見下ろして、状況を確かめたとされています。
 
 <!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#52 #63 -->
-ナレーター: 警察や消防は、国道から下にある飼育場所の様子を確かめていました。
+ナレーター: 国道341号沿いの施設ですが、対応する人たちの視線は、道路から下の飼育場所へ向いています。
 
 <!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#64 -->
 ナレーター: そのときの目撃について、記事には消防署員の証言が掲載されています。
 
 <!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#64 -->
 ナレーター: 「壁を乗り越えるクマ数頭を目撃した」
+
+<!-- src: S5 https://bunshun.jp/articles/-/58770 ＝素材#63 #64 -->
+ナレーター: 通報を受けて人が集まった段階でも、壁を越えるクマがいたという証言です。
 
 <!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 / S11 https://www.youtube.com/watch?v=H5HNvZ0ywL4 ＝素材#84 #118 -->
 ナレーター: 女性たちは檻の近くに倒れ、運動場の周辺ではクマが動いています。
@@ -222,15 +243,23 @@
 <!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#71 -->
 ナレーター: 教育委員会は、市内の小中学校14校に、屋外での活動を控えるよう求めました。
 
+<!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#71 -->
+ナレーター: 校外へ出る活動だけでなく、外で過ごすことへの注意が、学校にも届きます。
+
 <!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#72 -->
 ナレーター: さらに、下校の際には保護者に迎えを依頼する対応です。
+
+<!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#72 -->
+ナレーター: 子どもたちが帰宅する時間帯まで見据えた連絡でした。
 
 <!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#69 #71 #72 #119 -->
 ナレーター: 道路を通る人への規制と、学校への連絡が、施設での対応と並行して行われています。
 
 <!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#71 #119 -->
-ナレーター: 学校への連絡は、脱走への警戒を呼びかけたものです。
-ナレーター: 学校の近くまでクマが来たと伝えているわけではありません。
+ナレーター: この時点で、市外や学校の近くにクマが現れたと確認されたわけではありません。
+
+<!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#119 -->
+ナレーター: 脱走を受けて、周辺に注意を促すための措置です。
 
 ## 8. 正午過ぎ、猟友会の対応
 
@@ -244,13 +273,16 @@
 ナレーター: 相手は、体長1.5メートルから2メートル、体重250キロから300キロ前後と記されたヒグマ。
 
 <!-- src: S5 https://bunshun.jp/articles/-/58770 / S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#62 #117 -->
-ナレーター: この体格のクマが、壁の外に出ていました。
+ナレーター: この体格の個体が、壁の外に出ていました。
 
 <!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#116 -->
 ナレーター: 記事には、立ち上がって威嚇するクマもいたとあります。
 
+<!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#116 #118 -->
+ナレーター: すべてのクマが同じ姿勢で止まっている場面ではありません。
+
 <!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#65 #118 -->
-ナレーター: 動くクマに対して、猟友会が発砲していきます。
+ナレーター: 動く個体に対して、猟友会が発砲していきます。
 
 <!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#66 -->
 ナレーター: 記事の経過では、まず4頭への対応が進みました。
@@ -261,10 +293,22 @@
 <!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#66 -->
 ナレーター: 残る2頭は、プレハブの小屋へ入り込んだとされています。
 
+<!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#66 #118 -->
+ナレーター: それまで運動場の周辺にいたクマが、小屋の内部へ移ったのです。
+
 <!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#65 #66 -->
-ナレーター: 外で動いていたクマへの発砲に続いて、建物の中にいるクマへの対応が必要になります。
+ナレーター: 外で動いていた個体への発砲に続いて、建物の中にいるクマへの対応が必要になります。
+
+<!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#67 -->
+ナレーター: 記事は、このあと重機を使う経過を記しています。
 
 ## 9. 小屋に入ったクマ
+
+<!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#66 -->
+ナレーター: 残るクマが入ったのは、プレハブの小屋でした。
+
+<!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#66 -->
+ナレーター: 掲載記事では、4頭を撃ったところで、2頭がその中に隠れたとされています。
 
 <!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 ＝素材#67 -->
 ナレーター: 現場では、重機を使って小屋を壊す対応が取られます。
@@ -293,13 +337,19 @@
 ナレーター: もう1人について確認されたのは、午後3時48分です。
 
 <!-- src: S11 https://www.youtube.com/watch?v=H5HNvZ0ywL4 ＝素材#85 -->
-ナレーター: どちらの時刻がTさんとSさんのそれぞれに当たるかは、当日の報道だけでは特定できません。
+ナレーター: どちらがTさん、Sさんの時刻かは、この報道だけでは分かっていません。
+
+<!-- src: S11 https://www.youtube.com/watch?v=H5HNvZ0ywL4 ＝素材#83 #85 -->
+ナレーター: 午前10時5分ごろの119番から、午後の確認まで時間が経過しています。
 
 <!-- src: S11 https://www.youtube.com/watch?v=H5HNvZ0ywL4 ＝素材#85 -->
 ナレーター: ただ、これらは命を落としたことが確認された時刻です。
 
 <!-- src: S11 https://www.youtube.com/watch?v=H5HNvZ0ywL4 ＝素材#85 -->
 ナレーター: 襲われた瞬間や、搬送の時刻を示すものではありません。
+
+<!-- src: S6 https://bunshun.jp/articles/-/58770?page=2 / S11 https://www.youtube.com/watch?v=H5HNvZ0ywL4 ＝素材#68 #85 -->
+ナレーター: クマへの対応が続く中で、女性たちが命を落としたことが、別々の時刻に確認されていました。
 
 <!-- src: S3 https://www.pref.akita.lg.jp/pages/archive/21166 / S11 https://www.youtube.com/watch?v=H5HNvZ0ywL4 ＝素材#84 #39 -->
 ナレーター: 75歳と69歳の女性従業員が、ともに命を落としました。
@@ -319,29 +369,19 @@
 ナレーター: 動物愛護団体ALIVE（アライブ）が公開している文書です。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#9 -->
-ナレーター: 県の職員が現地に入って、設備や飼育の状態を確かめる立入検査。
-ナレーター: 2011年度の記録には、この検査が4回載っています。
+ナレーター: 2011年度に記録された立入検査は、4回。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#9 #12 -->
-ナレーター: 事故前年の検査記録には、施設をどう直すかまで記されています。
+ナレーター: 前年の検査の記録には、施設をどう直すかまで記されています。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#8 -->
-ナレーター: 指導の対象には、クマの数などの飼育情報を書きとめる管理台帳がありました。
+ナレーター: 指導の対象には、クマを管理する台帳がありました。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#8 -->
 ナレーター: 2009年にも、2010年にも、台帳に関する指導が記録されています。
 
-<!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#127 -->
-ナレーター: この両年度には、頭数が増えたり減ったりした場合の報告も求められていました。
-
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#2 #3 #4 #5 -->
 ナレーター: 県の把握数では、開園した1987年は48頭、1995年には120頭以上で、2011年5月には40頭となっていました。
-
-<!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#16 -->
-ナレーター: 県の回答書では、繁殖を制限する必要は経営者も認識していたとしています。
-
-<!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#16 #17 -->
-ナレーター: 一方、営業のために子グマの誕生を望んでいたとも記され、繁殖を抑える指導と経営者の希望には違いがありました。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#12 -->
 ナレーター: さらに、2011年6月7日には、修繕するか、廃止するかを検討するよう指導しています。
@@ -349,13 +389,19 @@
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#12 -->
 ナレーター: 見据えていたのは、2013年12月の許可更新。
 
+<!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#12 -->
+ナレーター: 施設の修繕と、営業を続けるかどうかが、事故前から指導の項目に入っていました。
+
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#10 #11 #12 -->
-ナレーター: 県から改善を求められたあとも、やり直しが必要になった設備がありました。
+ナレーター: この指導の記録と、実際にどこまで改善したのかは、別の確認が必要です。
+
+<!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#11 -->
+ナレーター: 回答書には、改善を求めたあと、やり直しまで指示した箇所も残っています。
 
 ## 12. 柵のやり直しと台帳の見本
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#10 -->
-ナレーター: クマの手が、観覧している人に届かないようにするための柵。
+ナレーター: 観客が手を伸ばして、クマに触れないようにする。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#10 -->
 ナレーター: 県が追加の柵を求めたのは、こうした接触を防ぐための2か所です。
@@ -367,22 +413,25 @@
 ナレーター: 追加すれば、そのまま確認が終わるというものではありませんでした。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm / S5 https://bunshun.jp/articles/-/58770 ＝素材#10 #62 -->
-ナレーター: これはクマが観客に手を伸ばすことを防ぐ指導で、雪を足場にした脱走への対策とは、対象が異なります。
+ナレーター: ただし、これは観客側からの接触を防ぐ指導で、雪を足場にした脱走への対策とは、対象が異なります。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#88 -->
 ナレーター: 管理台帳については、2011年度、県が作成例も示しています。
 
-<!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#126 -->
-ナレーター: その前年の2010年度には、生まれた子グマへ速やかに小さな識別用の装置、マイクロチップを付けるよう、指導した記録もあります。
+<!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#88 -->
+ナレーター: 台帳を作るよう求めるだけでなく、書き方の見本を渡す段階まで進んでいました。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#6 -->
-ナレーター: 一方、1頭ずつのクマをどう見分けるかについて、県の回答書が示す方法は写真です。
+ナレーター: 一方、個々のクマをどう見分けるかについて、県の回答書が示す方法は写真です。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#7 -->
 ナレーター: 経営者側は、マイクロチップを取り付けられる獣医師がいないことを理由に挙げていました。
 
+<!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#6 #7 -->
+ナレーター: チップで識別する方法を採れないという説明と、写真で見分けるという回答。
+
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#6 #88 -->
-ナレーター: 写真で見分けるという説明はあっても、飼育情報をまとめる台帳は、なお県から作成を求められていました。
+ナレーター: 県の文書には、その時点での管理方法と、なお作成を求めていた台帳の両方が記録されています。
 
 ## 13. 餌を回収する調査員
 
@@ -401,10 +450,6 @@
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#27 -->
 ナレーター: 施設で出る残飯を回収し、牧場へ運ぶ経路です。
 
-
-<!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#123 -->
-ナレーター: 1回の運搬に使われたのは、80リットルから100リットル入るバケツで、およそ9杯半という量でした。
-
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#28 -->
 ナレーター: 調査中の回収量として記されたのは、合計615キロでした。
 
@@ -412,10 +457,10 @@
 ナレーター: これは、水分を含む残飯を運んだ重量です。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#28 #31 -->
-ナレーター: 毎日必ずこの量が届いていた、あるいはそれぞれのクマが等しく食べていたと分かる数字ではありません。
+ナレーター: 毎日必ずこの量が届いていた、あるいは各個体が等しく食べていたと分かる数字ではありません。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#13 -->
-ナレーター: 事故前の県の回答書には、牧場で与えていた餌の量が示されています。
+ナレーター: 事故前の県の回答書には、別の時点の給餌量が示されています。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#13 -->
 ナレーター: 1頭当たり残飯10キロと、リンゴ2キロを、1日おきに与えるという回答。
@@ -427,48 +472,45 @@
 ナレーター: リンゴと野菜を両方加える計算ではなく、どちらかを与える運用です。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm / S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#13 #28 -->
-ナレーター: 事故前の県の回答にある餌の量と、事故後に調査員が回収した重量。
+ナレーター: 前年に申告された給餌量と、事故後に調査員が回収した重量。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm / S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#13 #19 #28 -->
 ナレーター: 時期も確かめ方も異なるため、その数字を組み合わせて、襲撃当日の餌の量にすることはできません。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#29 #30 #31 -->
-ナレーター: 調査では、餌が届いた先で、クマごとの差も記録されています。
+ナレーター: 調査では、餌が届いた先で、個体ごとの差も記録されています。
 
-## 14. 餌場へ近づけないクマ
+## 14. 餌場へ近づけない個体
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#29 -->
 ナレーター: 現地調査の報告で、ほとんどのクマは痩せていなかったとされています。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#30 -->
-ナレーター: 一方で、痩せたクマもいました。
+ナレーター: 一方で、痩せた個体もいました。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#19 #29 -->
 ナレーター: 観察の対象は、事故後に牧場に残っていたクマです。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#29 -->
-ナレーター: 襲撃したクマを調べた結果ではないため、この観察だけで、事故前の全頭の状態は決められません。
+ナレーター: 襲撃した個体を調べた結果ではないため、この観察だけで、事故前の全頭の状態は決められません。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#25 #31 -->
 ナレーター: 同じ区画で暮らす複数のクマの間には、餌の取り方に差がありました。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#31 -->
-ナレーター: 報告には、強いクマが餌を取り、十分に食べられないクマがいると記されています。
+ナレーター: 報告には、強いクマが餌を取り、十分に食べられない個体がいると記されています。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#31 -->
 ナレーター: 餌が運ばれていても、すべてのクマが同じように口にできる状況ではなかったのです。
-
-<!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#129 -->
-ナレーター: ただ、クマ同士の関係が比較的安定している集団にも、痩せたクマが見られました。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#32 -->
 ナレーター: また、調査員は、年を取っていたり、病気があったりして、食べられない可能性にも触れています。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#30 #32 -->
-ナレーター: 痩せているクマがいたことと、その理由が何かは、分けて記録されていました。
+ナレーター: 痩せている個体がいたことと、その理由が何かは、分けて記録されていました。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#29 #30 #31 -->
-ナレーター: この報告で確認できるのは、残されたクマの体つきと、餌を取る場面の差です。
+ナレーター: この報告で確認できるのは、残された個体の体つきと、餌を取る場面の差です。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#29 -->
 ナレーター: 脱走したクマが人を襲った動機を、ここから確定することはできません。
@@ -487,20 +529,11 @@
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#37 #38 -->
 ナレーター: 裏側の設備には錆びが目立ち、檻同士を隔てる窓にも破損が見つかります。
 
-<!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#130 -->
-ナレーター: 錆びが目立った裏側の場所は、餌を与える作業場でもありました。
-
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm / S5 https://bunshun.jp/articles/-/58770 ＝素材#38 #62 -->
 ナレーター: ただし、この窓は内部の区画を隔てるもので、今回クマが外へ出た場所ではありません。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#33 #34 -->
-ナレーター: 飲み水を入れる給水槽では、水が汚れ、雪を食べるクマも観察されていました。
-
-<!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#87 -->
-ナレーター: 前年の県の回答書では、客を入れる期間は毎日、休園中は1日おきに、施設を水で洗うことになっていました。
-
-<!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm / S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm / S15 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai6.htm ＝素材#87 #33 #106 -->
-ナレーター: 施設を水で洗うという回答があっても、翌年の給水槽には、水が循環せず汚れた箇所が残っていたのです。
+ナレーター: 給水槽に溜まった飲み水は汚れ、雪を食べるクマも観察されていました。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm / S15 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai6.htm ＝素材#33 #105 -->
 ナレーター: 餌を確保する一方で、水を飲むための設備にも対応が必要な状態です。
@@ -515,7 +548,7 @@
 ナレーター: 改善前後の写真も掲載され、水が溜まった状態から変わったことを伝えています。
 
 <!-- src: S15 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai6.htm ＝素材#107 -->
-ナレーター: 同じ報告には、5月以降、県職員が現地で餌やりや清掃などを手伝っているとあります。
+ナレーター: 同じ報告には、5月以降、県職員が現地で給餌や清掃などを手伝っているとあります。
 
 <!-- src: S15 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai6.htm ＝素材#105 #107 -->
 ナレーター: 残されたクマの飼育場所で、設備を直す作業と、日々の世話が続いていました。
@@ -534,17 +567,8 @@
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#22 #23 -->
 ナレーター: 経営者は子グマが2頭生まれたと説明していますが、調査員が確認できた子グマは1頭でした。
 
-<!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#124 -->
-ナレーター: 母グマと子グマがいたのは、照明のない暗い飼育場所です。
-
-<!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#131 -->
-ナレーター: 報告によると、この子グマは生後3か月ほどでした。
-
-<!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#125 -->
-ナレーター: 調査員は、母グマにストレスを与えないよう、過度に観察することを控えたと説明しています。
-
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#24 -->
-ナレーター: 現地には管理台帳がなく、年齢や性別、どこから来たクマかという詳細も把握できません。
+ナレーター: 現地には管理台帳がなく、年齢や性別、どこから来た個体かという詳細も把握できません。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#22 #23 -->
 ナレーター: 生まれたという説明と、実際に姿を確かめた数が、揃わない状態です。
@@ -563,20 +587,8 @@
 
 ## 17. 廃業しても残る飼育
 
-<!-- src: S3 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#40 -->
-ナレーター: 5月7日、知事は、その日から県職員が餌やりに立ち会うと説明しています。
-
-<!-- src: S3 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#41 -->
-ナレーター: 少ない人数でクマに餌を与えるのは危険だ、という説明でした。
-
-<!-- src: S3 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#43 -->
-ナレーター: その時点では、5月中旬ごろまでの餌を確保できる見通しも立っていました。
-
-<!-- src: S3 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#42 -->
-ナレーター: 県とALIVEは、全国の施設からクマの受入れ先を探していました。
-
 <!-- src: S13 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#96 -->
-ナレーター: それから3週間後の5月28日、県は警察とは別に、独自の調査を始めます。
+ナレーター: 5月28日、県は警察とは別に、独自の調査を始めます。
 
 <!-- src: S13 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#96 -->
 ナレーター: 知事は、その日の会見で調査の開始を説明しました。
@@ -597,10 +609,13 @@
 ナレーター: そして6月11日の知事会見では、経営者と元従業員の逮捕が確認されています。
 
 <!-- src: S14 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#98 -->
-ナレーター: 知事は、クマを客に見せる施設としての届出がなくなり、制度上は展示施設ではなくなったと説明しました。
+ナレーター: この会見で知事は、展示施設としての届出がなくなったことも説明しました。
 
 <!-- src: S13 https://www.pref.akita.lg.jp/pages/archive/21166 / S14 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#97 #98 #101 -->
 ナレーター: 見学客を受け入れる施設としての扱いが終わる一方、クマの世話をする必要は続いていました。
+
+<!-- src: S14 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#98 #101 -->
+ナレーター: 営業の届出がなくなったことで、現地の給餌まで終えられるわけではありません。
 
 <!-- src: S14 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#101 #102 -->
 ナレーター: 県は、当面の管理を誰が行い、その費用をどう確保するかという対応を進めます。
@@ -610,23 +625,26 @@
 <!-- src: S14 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#99 -->
 ナレーター: 6月11日の会見で、知事は、県が飼育を手伝っても、クマの所有権は経営者にあると説明しています。
 
-<!-- src: S13 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#122 -->
-ナレーター: 5月28日の会見では、クマを処分するかどうかを決める権限は所有者にあり、県には処分の命令も出せないと説明していました。
+<!-- src: S14 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#99 -->
+ナレーター: 県の支援が入ったことと、所有者が変わったことは、同じではありませんでした。
 
 <!-- src: S14 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#100 -->
 ナレーター: その状態で、県は土曜日と日曜日も含めて、安全対策を行う方針です。
 
 <!-- src: S14 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#101 -->
-ナレーター: 県は、当面の餌やりと管理を担当する職員を、臨時に雇うとしています。
+ナレーター: 当面の給餌と管理に当たるため、臨時の非常勤職員を採用するとしています。
+
+<!-- src: S14 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#101 -->
+ナレーター: 普段の県職員の仕事の中だけで、現地の作業を続ける計画ではありません。
 
 <!-- src: S14 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#102 -->
-ナレーター: さらに、10月までの餌代など、飼育にかかる予算を県議会に求めていると説明しています。
+ナレーター: さらに、10月までの餌などの飼養費用を、議会に求めていると説明しました。
 
 <!-- src: S14 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#102 -->
-ナレーター: まだ受入れ先が決まっていないため、現地で飼い続けるための費用も必要です。
+ナレーター: この時点で語られたのは、費用を確保するための手続きです。
 
 <!-- src: S13 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#103 -->
-ナレーター: ただ、引き取ってくれる施設も、すぐには決まりません。
+ナレーター: 受入れ先探しにも、すぐに結論は出ていません。
 
 <!-- src: S13 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#103 -->
 ナレーター: 5月28日の会見では、受入れを断る施設もあれば、情報を見てから検討するという施設もあるとされています。
@@ -655,8 +673,7 @@
 ナレーター: クマを移すという意向だけで、飼育できる広さや設備まで整うわけではありません。
 
 <!-- src: S13 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#104 -->
-ナレーター: 県が自らクマを引き受ける場合の費用も、問題になっていました。
-ナレーター: 知事は5月の会見で、施設を大きく直し、専門家を雇い、その費用を負担する必要があると説明しています。
+ナレーター: 県が引き受ける場合についても、知事は以前の会見で、大規模な施設改修と、専門家の雇用、費用の負担を挙げていました。
 
 <!-- src: S4 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#50 -->
 ナレーター: 8月の会見では、クマを生かしてほしいという意見が、国内外から届いているとも説明しています。
@@ -703,13 +720,10 @@
 ナレーター: 八幡平で写真による識別とされていたクマは、移送先でチップと耳標を付けられました。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#111 -->
-ナレーター: 阿仁では、雄と雌を別々に飼うグループと、繁殖させるグループに分けていました。
+ナレーター: 阿仁では、雌雄を分ける群と、繁殖できる群を分けて管理していました。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#112 -->
-ナレーター: 餌やりにも、カロリー計算に基づく飼料を用いていたと、県の回答書は伝えています。
-
-<!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#128 -->
-ナレーター: ただし、阿仁にも管理上の指導はあり、2011年度には飼育の情報を記録する台帳を作るよう求められていました。
+ナレーター: 給餌にも、カロリー計算に基づく飼料を用いていたと、県の回答書は伝えています。
 
 ## 21. 移送後にも残った困難
 
@@ -766,19 +780,31 @@
 <!-- src: S10 https://www.city.kitaakita.akita.jp/uploads/public/archive_0000007827_00/014_161.pdf ＝素材#82 -->
 ナレーター: 屋外の運動場の様子も紹介されました。
 
+<!-- src: S10 https://www.city.kitaakita.akita.jp/uploads/public/archive_0000007827_00/014_161.pdf / S12 https://www.city.kitaakita.akita.jp/uploads/public/archive_0000007847_00/006_141P1011.pdf ＝素材#95 #80 #81 -->
+ナレーター: ヒグマを受け入れるために準備していた施設が完成し、来場者を迎えた経過です。
+
+<!-- src: S7 https://bunshun.jp/articles/-/58770?page=3 / S9 https://www.city.kitaakita.akita.jp/uploads/public/archive_0000007832_00/018_156P.pdf / S10 https://www.city.kitaakita.akita.jp/uploads/public/archive_0000007827_00/014_161.pdf ＝素材#74 #81 -->
+ナレーター: 八幡平で続けられていた飼育から、新たな施設での飼育と公開へ移っていきました。
+
 ## 23. 春の点検と除雪の順番
 
 <!-- src: S16 https://news.livedoor.com/article/detail/29898271/ ＝素材#108 -->
 ナレーター: 2025年の取材で、北秋田市観光課の麻戸郁弥主任は、くまくま園の春の管理について説明しています。
 
 <!-- src: S16 https://news.livedoor.com/article/detail/29898271/ ＝素材#108 -->
-ナレーター: 冬にはクマを冬眠させ、春に施設を点検します。
+ナレーター: 冬にはクマを冬眠させ、春に施設を点検する。
 
 <!-- src: S16 https://news.livedoor.com/article/detail/29898271/ ＝素材#108 -->
-ナレーター: 点検を終えてから雪を取り除き、その後にクマを屋外の運動場へ出す順番です。
+ナレーター: そのあとで除雪し、クマを放し飼いにする順番です。
+
+<!-- src: S16 https://news.livedoor.com/article/detail/29898271/ ＝素材#108 -->
+ナレーター: 運動場へ出す前に、点検と雪の処理を済ませる体制が語られています。
 
 <!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm ＝素材#14 -->
 ナレーター: 八幡平では、経営を引き継ぐ前から冬眠させていなかったと、事故前の県の回答書に記されていました。
+
+<!-- src: S1 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai2.htm / S16 https://news.livedoor.com/article/detail/29898271/ ＝素材#108 #14 -->
+ナレーター: それに対し、受入れ先で説明されたのは、冬眠から春の点検、除雪、屋外への移動までの流れです。
 
 <!-- src: S16 https://news.livedoor.com/article/detail/29898271/ ＝素材#109 -->
 ナレーター: 麻戸主任は、クマのかわいらしさだけを伝えるのではなく、適切に恐れることも伝えるとしています。
@@ -791,7 +817,7 @@
 ## 24. 検査と閉園で終わらなかった理由
 
 <!-- src: S3 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#44 -->
-ナレーター: 事故直後の2012年5月7日、県の責任を問われた知事は、クマの飼育を許可する側の責任について、こう答えています。
+ナレーター: 事故直後の2012年5月7日、県の責任を問われた知事は、許認可を行う側の責任を否定せず、こう答えています。
 
 <!-- src: S3 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#44 -->
 ナレーター: 「何らかの責任はあるということです」
@@ -809,19 +835,22 @@
 ナレーター: ALIVEも、管理台帳がないため、残されたクマの譲渡先を探すことが難しいと指摘しています。
 
 <!-- src: S2 https://www.alive-net.net/zoocheck/kumabokujou/kuma-hachimantai5.htm ＝素材#115 -->
-ナレーター: クマの情報が揃わないことは、飼育中だけでなく、別の施設へ引き継ぐときにも支障となっていたのです。
+ナレーター: 個体の情報が揃わないことは、飼育中だけでなく、別の施設へ引き継ぐときにも支障となっていたのです。
 
 <!-- src: S13 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#113 -->
-ナレーター: 5月28日の会見では、牧場をやめるときの条件、経営を続けられるかの確認、安全を守るための県の指導を強めることが、課題に挙げられます。
+ナレーター: 5月28日の会見では、廃業するときの要件、経営を続けられる見通し、安全のための行政指導の強化が、課題に挙げられます。
+
+<!-- src: S13 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#113 -->
+ナレーター: 施設の現在の状態に加えて、経営を続けられなくなったときの扱いも、検討の対象となりました。
 
 <!-- src: S13 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#114 -->
 ナレーター: 同じ会見で、知事は、被害を受けた女性2人への補償にも言及しています。
 
 <!-- src: S13 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#114 -->
-ナレーター: 知事は当時、女性2人への補償がない一方で、クマの飼育に県のお金を使うことについて、県民の理解を得られるかと述べていました。
+ナレーター: 当時、2人への補償がない一方で、クマを生かすために県費を投じることの釣合いを、問題として挙げた発言です。
 
 <!-- src: S13 https://www.pref.akita.lg.jp/pages/archive/21166 ＝素材#114 -->
-ナレーター: 県のお金をどう使うかという議論には、クマを飼い続けるための費用とともに、被害を受けた人への補償の問題もあったのです。
+ナレーター: 事故後の公費負担をめぐる議論の中にも、クマの飼育とともに、被害を受けた人への対応が残っていました。
 
 ## 25. TさんとSさん
 
