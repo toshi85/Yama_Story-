@@ -5,7 +5,7 @@ from concurrent.futures import ProcessPoolExecutor,ThreadPoolExecutor
 _sibling=Path(__file__).resolve().parents[1]/'edit'
 TOOLS=Path(os.environ.get('YAMA_EDIT_TOOLS',str(_sibling if _sibling.exists() else Path(__file__).resolve().parents[3]/'System_Tools/edit')))
 sys.path.insert(0,str(TOOLS))
-import make_map,make_map3d,ff,fonts_setup
+import make_map,make_map3d,ff,fonts_setup,map_camera,map_camera_render
 from build_shots import parse_master
 from PIL import Image,ImageDraw,ImageFont
 make_map3d._grid=functools.lru_cache(maxsize=3)(make_map3d._grid)
@@ -45,7 +45,10 @@ def frame(job):
  make_map3d.W,make_map3d.H=W,H
  if p.exists():return str(p)
  q=i/max(n-1,1);u=q*q*(3-2*q);alt=s['alt0']*(s['alt1']/s['alt0'])**u;z=zoom(s)
- if s['wide']:
+ if s.get('camera'):
+  camera=map_camera.at(s['camera'],q)
+  im=map_camera_render.render(make_map3d,s['lat'],s['lon'],z,s.get('span',16),camera['heading'],camera['pitch'],s['camera_alt']/camera['zoom'],max(s['camera_alt']*40,18000),str(cache),src=s.get('source','s2'),pins=s['pins'],circle=(s['lat'],s['lon'],s['radius']) if s['radius'] else None,gain=(1.05,1.15,1.12),high_quality=s.get('quality','legacy')!='legacy')
+ elif s['wide']:
   im,origin=make_map.build(s['lat'],s['lon'],z,cache,relief=0 if s['id']=='ASSET-008' else .25)
   im=make_map.draw_overlays(im,z,origin,s['pins'],False)
   # 広域は俯瞰で寄る。図の実縮尺は衛星タイルの縮尺で決まる。
@@ -77,6 +80,15 @@ def apply_overrides(spec,ov):
   if e.get('hide'):continue
   pins.append((la+float(e.get('dn') or 0)/110540,lo+float(e.get('de') or 0)/(111320*math.cos(math.radians(la))),e.get('label') or label))
  s['pins']=pins
+ if ov.get('map_camera'):
+  camera=map_camera.validate(ov['map_camera'])
+  s.update(camera=camera,camera_alt=spec['alt0'],camera_wide=spec['wide'],wide=False,span=16)
+  # カメラの背後・地平線寄りまで含める。倍率を変えても同一タイル格子を使う。
+  highest=spec['alt0']/min(camera['start']['zoom'],camera['end']['zoom'])
+  shallowest=min(camera['start']['pitch'],camera['end']['pitch'])
+  radius=highest*(24 if shallowest<35 else 8)
+  resolution=156543.03392*math.cos(math.radians(s['lat']))
+  s['tile_zoom']=max(5,min(14,int(math.floor(math.log2(resolution*256*16/(2*radius))))))
  return s
 
 def preview(work,shot_id,override):
@@ -97,8 +109,8 @@ def main():
  if a.quality!='legacy':
   for s in specs:
    old_zoom=zoom(s)
-   s.update(quality=a.quality,width=3840 if a.quality=='4k' else 1920,height=2160 if a.quality=='4k' else 1080,source='gsi' if not s['wide'] else 's2')
-   if not s['wide']:s.update(tile_zoom=min(old_zoom+1,14),span=16)
+   s.update(quality=a.quality,width=3840 if a.quality=='4k' else 1920,height=2160 if a.quality=='4k' else 1080,source='gsi' if not s['wide'] and not s.get('camera_wide') else 's2')
+   if not s['wide'] and not s.get('camera'):s.update(tile_zoom=min(old_zoom+1,14),span=16)
  (out/'map_specs.json').write_text(json.dumps(specs,ensure_ascii=False,indent=2))
  for s in specs:
   aid=s['id']
@@ -114,17 +126,19 @@ def main():
   for x in range(int(cx)-size//2,int(cx)+size//2):
    for y in range(int(cy)-size//2,int(cy)+size//2):todo.append((x,y))
   def fetch(xy):
-   x,y=xy;ok=bool(make_map.fetch(z,x,y,str(cache),s.get('source','s2')))
+   x,y=xy;ok=bool(make_map.fetch(z,x%(2**z),y,str(cache),s.get('source','s2')))
    if not s['wide']:
     tp=cache/f'terr_{z}_{x}_{y}.png'
-    ok=ok and (tp.exists() or make_map.download(make_map3d.TERRAIN.format(z=z,x=x,y=y),str(tp),300))
+    ok=ok and (tp.exists() or make_map.download(make_map3d.TERRAIN.format(z=z,x=x%(2**z),y=y),str(tp),300))
    return ok
   with ThreadPoolExecutor(max_workers=8) as pool:checks=list(pool.map(fetch,todo))
   if not all(checks):raise RuntimeError(f'{aid}:地図タイル取得不足 {sum(checks)}/{len(checks)}')
   if a.sample_only:
    sample=frame((s,n//2,n,str(cache),str(tmp)));shutil.copy2(sample,out/(aid+'_sample.jpg'));continue
   print(f'{aid}: {seconds:.2f}秒 / 座標{s["lat"]},{s["lon"]} / {n}フレーム',flush=True)
-  with ProcessPoolExecutor(max_workers=a.jobs) as pool:list(pool.map(frame,[(s,i,n,str(cache),str(tmp)) for i in range(n)],chunksize=4))
+  with ProcessPoolExecutor(max_workers=a.jobs) as pool:
+   for done,_ in enumerate(pool.map(frame,[(s,i,n,str(cache),str(tmp)) for i in range(n)],chunksize=4),1):
+    if done%30==0 or done==n:print(f'{aid}: 描画 {done}/{n} フレーム',flush=True)
   temp_video=target.with_suffix('.new.mp4')
   ff.run(['-framerate',str(render_fps),'-i',str(tmp/'f%05d.jpg')]+(['-vf','minterpolate=fps=30:mi_mode=blend'] if a.quality=='legacy' else [])+['-t',str(seconds),'-c:v','libx264','-preset','fast','-crf','17' if a.quality!='legacy' else '19','-pix_fmt','yuv420p',str(temp_video)])
   if abs(ff.probe_duration(str(temp_video))-seconds)>.15:raise RuntimeError('地形動画の尺が合わない '+aid)
