@@ -1,7 +1,7 @@
 {
   "schema": "yama.shots/1",
   "title": "1988年戸沢村ツキノワグマ食害事件",
-  "video": "問い黒縁修正_確認版.mp4",
+  "video": "check/studio/jobs/20260908150535_c2a000ce/full_下書き.mp4",
   "fps": 30.0,
   "total_frames": 44944,
   "generated_at": "2026-09-06T22:44:37+09:00",
@@ -45,8 +45,8 @@
       "start_frame": 152,
       "end_frame": 271,
       "asset_id": "ASSET-002",
-      "asset_file": "画像/ASSET-002.mp4",
-      "asset_kind": "video",
+      "asset_file": "check/studio/jobs/20260908111101_6b98d442/candidate.png",
+      "asset_kind": "image",
       "background_file": "",
       "reused": false,
       "style": "",
@@ -76,7 +76,7 @@
       "start_frame": 271,
       "end_frame": 426,
       "asset_id": "ASSET-003",
-      "asset_file": "画像/ASSET-003.png",
+      "asset_file": "check/studio/jobs/20260908111128_c3400a64/candidate.png",
       "asset_kind": "image",
       "background_file": "",
       "reused": false,
@@ -138,8 +138,8 @@
       "start_frame": 583,
       "end_frame": 647,
       "asset_id": "ASSET-005",
-      "asset_file": "画像/ASSET-005.mp4",
-      "asset_kind": "video",
+      "asset_file": "check/studio/jobs/20260908111151_db3bc50e/candidate.png",
+      "asset_kind": "image",
       "background_file": "",
       "reused": false,
       "style": "",
@@ -194,7 +194,11 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "question_outline": 4
+      "question_outline": 4.0,
+      "question_timings": [
+        0.5,
+        2.213
+      ]
     },
     {
       "id": 7,
@@ -219,14 +223,30 @@
       "pan": "",
       "mono": false,
       "haze": false,
-      "telops": [],
-      "question": "満腹なのに、なぜ人を食べたのか？",
+      "telops": [
+        "なぜ人を食べたのか？"
+      ],
+      "question": "",
       "bubble_delay": 0.5,
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "question_outline": 4
+      "question_outline": 4.0,
+      "telop_highlights": [
+        {
+          "text": "人",
+          "color": "#FF0000"
+        }
+      ],
+      "telop_start": 0.0,
+      "telop_end": 3.966666666666667,
+      "telop_anim": "none",
+      "telop_anim_duration": 1,
+      "telop_position": [
+        640,
+        360
+      ]
     },
     {
       "id": 8,
@@ -353,7 +373,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 12,
@@ -391,14 +411,14 @@
       "start_frame": 1570,
       "end_frame": 1716,
       "asset_id": "ASSET-013",
-      "asset_file": "画像/ASSET-013.png",
+      "asset_file": "check/studio/jobs/20260908120901_bb280478/candidate.png",
       "asset_kind": "character",
       "background_file": "画像/ASSET-013-1.png",
       "reused": false,
       "style": "",
       "narration": "家族にタケノコを採りにいくと伝え、午前10時ごろに出発。",
       "edit_note": "「午前10時ごろ」テロップを左上に。日常の音（鶏の声、遠くの軽トラ）だけ。",
-      "speech": "",
+      "speech": "いってくるよ",
       "motion": "still",
       "drift": [
         409,
@@ -436,7 +456,7 @@
         -28
       ],
       "move_sec": 3.1,
-      "base_x": 281,
+      "base_x": -188,
       "pan": "",
       "mono": false,
       "haze": false,
@@ -446,7 +466,8 @@
       "thought": false,
       "part": "",
       "section": "1. 全素材リスト（台本順）",
-      "same_as_prev": false
+      "same_as_prev": false,
+      "base_y": 10
     },
     {
       "id": 15,
@@ -511,7 +532,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 17,
@@ -549,14 +570,14 @@
       "start_frame": 2221,
       "end_frame": 2332,
       "asset_id": "ASSET-018",
-      "asset_file": "画像/ASSET-018.png",
+      "asset_file": "check/studio/jobs/20260908121217_d4e64630/candidate.png",
       "asset_kind": "character",
       "background_file": "画像/ASSET-018-1.png",
       "reused": false,
       "style": "",
       "narration": "家族と地元の消防団員が山へ入ります。",
       "edit_note": "「家族と地元消防団 約30人」テロップ。足音と草をかき分ける音のSE。",
-      "speech": "",
+      "speech": "どこにいるんだよ",
       "motion": "drift_diag",
       "drift": [
         179,
@@ -673,7 +694,7 @@
       "start_frame": 2762,
       "end_frame": 2954,
       "asset_id": "ASSET-022",
-      "asset_file": "画像/ASSET-022.png",
+      "asset_file": "check/studio/jobs/20260908140446_alpha_22/candidate.png",
       "asset_kind": "character",
       "background_file": "画像/ASSET-022-1.png",
       "reused": false,
@@ -1010,7 +1031,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 33,
@@ -1261,7 +1282,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 41,
@@ -1544,7 +1565,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 50,
@@ -1796,7 +1817,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 58,
@@ -2047,7 +2068,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 66,
@@ -2144,7 +2165,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 69,
@@ -2739,7 +2760,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 88,
@@ -3021,7 +3042,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 97,
@@ -3242,7 +3263,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 104,
@@ -3400,7 +3421,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 109,
@@ -3868,7 +3889,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 124,
@@ -4553,7 +4574,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 146,
@@ -4680,7 +4701,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 150,
@@ -5582,7 +5603,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 179,
@@ -6077,7 +6098,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 195,
@@ -6545,7 +6566,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 210,
@@ -8625,7 +8646,7 @@
       "part": "",
       "section": "1. 全素材リスト（台本順）",
       "same_as_prev": false,
-      "card_font_size": 78
+      "card_font_size": 78.0
     },
     {
       "id": 277,
