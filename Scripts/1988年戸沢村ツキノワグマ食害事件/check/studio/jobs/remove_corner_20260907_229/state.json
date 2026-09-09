@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_229",
+  "kind": "text",
+  "shot_id": 229,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.826403+00:00",
+  "updated_at": "2026-09-07T13:09:59.833583+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 229,
+    "start_frame": 32780,
+    "end_frame": 32909,
+    "asset_id": "ASSET-229",
+    "asset_file": "画像/ASSET-229.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-229-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "以前、富樫さんは遭遇したクマを射殺したことがあり、",
+    "edit_note": "セピアを解いて現在の色に戻す。「別のクマの話」であることが分かるよう、小さく区切りのテロップを入れる。",
+    "speech": "",
+    "motion": "walk_cross",
+    "drift": [
+      -563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "別のクマの話"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

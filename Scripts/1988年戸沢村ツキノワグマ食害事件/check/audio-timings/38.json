@@ -1,0 +1,176 @@
+{
+  "audio": "音声/編集用ミックス.wav",
+  "audio_sha256": "604f5f9030e70dc2981a6e2d32860a1cdce497a28152131d3af5013959d96c40",
+  "start_frame": 4670,
+  "end_frame": 4885,
+  "fps": 30.0,
+  "method": "local faster-whisper small; recognized words may differ from script",
+  "narration": "すぐにでも、ご家族のために夫を救出したい状況でしたが、仕方なくこの日は引き返すことに。",
+  "words": [
+    {
+      "text": "す",
+      "start": 0.0,
+      "end": 0.22
+    },
+    {
+      "text": "ぐ",
+      "start": 0.22,
+      "end": 0.34
+    },
+    {
+      "text": "に",
+      "start": 0.34,
+      "end": 0.46
+    },
+    {
+      "text": "でも、",
+      "start": 0.46,
+      "end": 0.72
+    },
+    {
+      "text": "ご",
+      "start": 0.94,
+      "end": 1.06
+    },
+    {
+      "text": "家",
+      "start": 1.06,
+      "end": 1.24
+    },
+    {
+      "text": "族",
+      "start": 1.24,
+      "end": 1.48
+    },
+    {
+      "text": "の",
+      "start": 1.48,
+      "end": 1.6
+    },
+    {
+      "text": "ため",
+      "start": 1.6,
+      "end": 1.84
+    },
+    {
+      "text": "に、",
+      "start": 1.84,
+      "end": 2.06
+    },
+    {
+      "text": "ご",
+      "start": 2.16,
+      "end": 2.24
+    },
+    {
+      "text": "っと",
+      "start": 2.24,
+      "end": 2.46
+    },
+    {
+      "text": "を",
+      "start": 2.46,
+      "end": 2.62
+    },
+    {
+      "text": "救",
+      "start": 2.62,
+      "end": 2.8
+    },
+    {
+      "text": "出",
+      "start": 2.8,
+      "end": 3.02
+    },
+    {
+      "text": "した",
+      "start": 3.02,
+      "end": 3.4
+    },
+    {
+      "text": "い",
+      "start": 3.4,
+      "end": 3.5
+    },
+    {
+      "text": "状",
+      "start": 3.5,
+      "end": 3.74
+    },
+    {
+      "text": "況",
+      "start": 3.74,
+      "end": 3.92
+    },
+    {
+      "text": "でした",
+      "start": 3.92,
+      "end": 4.2
+    },
+    {
+      "text": "が、",
+      "start": 4.2,
+      "end": 4.52
+    },
+    {
+      "text": "仕",
+      "start": 4.78,
+      "end": 4.88
+    },
+    {
+      "text": "方",
+      "start": 4.88,
+      "end": 5.06
+    },
+    {
+      "text": "なく",
+      "start": 5.06,
+      "end": 5.34
+    },
+    {
+      "text": "この",
+      "start": 5.34,
+      "end": 5.58
+    },
+    {
+      "text": "日",
+      "start": 5.58,
+      "end": 5.78
+    },
+    {
+      "text": "は",
+      "start": 5.78,
+      "end": 5.94
+    },
+    {
+      "text": "引",
+      "start": 5.94,
+      "end": 6.06
+    },
+    {
+      "text": "き",
+      "start": 6.06,
+      "end": 6.18
+    },
+    {
+      "text": "返",
+      "start": 6.18,
+      "end": 6.36
+    },
+    {
+      "text": "す",
+      "start": 6.36,
+      "end": 6.54
+    },
+    {
+      "text": "こと",
+      "start": 6.54,
+      "end": 6.7
+    },
+    {
+      "text": "に",
+      "start": 6.7,
+      "end": 6.94
+    }
+  ]
+}

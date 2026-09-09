@@ -1,0 +1,121 @@
+{
+  "kind": "motion",
+  "requested_kind": "correction",
+  "shot_id": 12,
+  "brief": "キャラは動かさずに、\n「タケノコ\nとるか」のセリフ。",
+  "target": "asset",
+  "prompt": "",
+  "id": "20260908111615_1cdefe4a",
+  "state": "failed",
+  "created_at": "2026-09-08T02:16:15.406457+00:00",
+  "updated_at": "2026-09-08T02:21:15.951801+00:00",
+  "message": "'move_sec'",
+  "shot": {
+    "id": 12,
+    "start_frame": 1409,
+    "end_frame": 1570,
+    "asset_id": "ASSET-012",
+    "asset_file": "画像/ASSET-012.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-012-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "この村に住む61歳の男性が、タケノコを採りに山へ入ります。",
+    "edit_note": "「61歳・農業」のテロップをCHAR-01の下に。CHAR-01を画面左から山道の入り口へゆっくりスライド（3秒）。穏やかな環境音のみ。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      -230,
+      -72
+    ],
+    "move_sec": 2.4,
+    "base_x": -332,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 19869,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "469deb2df58a4121d5ff040a62e11d2bb051b9835ef6810a8b88f88852415646"
+      }
+    ],
+    "asset_id": "ASSET-012",
+    "shot_id": 12,
+    "snapshot": "check/studio/jobs/20260908111615_1cdefe4a/script-context.txt",
+    "snapshot_sha256": "dc1c39c058cf349145f9e1d621a91a3eb2598b5b8b912c503814eebdbb2caa6e"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908111615_1cdefe4a/routing-response.json",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-012.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 1,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "motion",
+        "motion_settings": {
+          "motion": "still"
+        }
+      },
+      {
+        "kind": "text",
+        "text_type": "dialogue",
+        "bubble_side": "",
+        "text_overlay": {
+          "text": "タケノコ\nとるか",
+          "x": 640,
+          "y": 360,
+          "size": 48,
+          "color": "#FFFFFF",
+          "anim": "none",
+          "start": 0,
+          "end": 5.3667
+        }
+      }
+    ],
+    "explanation": "キャラの移動を止め、「タケノコ\nとるか」を改行を保ち、各行中央揃えのセリフとして編集側で追加します。画像は再生成しません。",
+    "unsupported": ""
+  },
+  "step_index": 1,
+  "motion_settings": {
+    "motion": "still"
+  },
+  "input_sha256": "469deb2df58a4121d5ff040a62e11d2bb051b9835ef6810a8b88f88852415646"
+}

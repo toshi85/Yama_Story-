@@ -1,0 +1,1 @@
+{"steps":[{"kind":"motion","motion_settings":{"motion":"still"}},{"kind":"text","text_type":"dialogue","bubble_side":"","text_overlay":{"text":"タケノコ\nとるか","x":640,"y":360,"size":48,"color":"#FFFFFF","anim":"none","start":0,"end":5.3667}}],"explanation":"キャラの移動を止め、「タケノコ\nとるか」を改行を保ち、各行中央揃えのセリフとして編集側で追加します。画像は再生成しません。","unsupported":""}

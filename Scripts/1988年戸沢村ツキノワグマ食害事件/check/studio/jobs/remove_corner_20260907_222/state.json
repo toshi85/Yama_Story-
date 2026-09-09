@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_222",
+  "kind": "text",
+  "shot_id": 222,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.789177+00:00",
+  "updated_at": "2026-09-07T13:09:59.795698+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 222,
+    "start_frame": 31846,
+    "end_frame": 31959,
+    "asset_id": "ASSET-222",
+    "asset_file": "画像/ASSET-222.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-222-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "所有者は、山形県酒田市の富樫邦男（とがしくにお）さん。",
+    "edit_note": "「富樫邦男さん」「山形県酒田市」の2行テロップ。読み仮名を小さく添える。",
+    "speech": "",
+    "motion": "step_back",
+    "drift": [
+      179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "富樫邦男さん"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

@@ -1,0 +1,2386 @@
+[
+  {
+    "id": "ASSET-001",
+    "start": 0.0,
+    "end": 4.896875,
+    "text": "1988年5月25日。山形県の戸沢村（とざわむら）。",
+    "spoken_text": "1988年5月25日。山形県のとざわむら。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-002",
+    "start": 5.146875,
+    "end": 8.865916666666667,
+    "text": "深夜、タケノコ採りに行った男性が遺体で発見。",
+    "spoken_text": "深夜、タケノコ採りに行った男性が遺体で発見。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-003",
+    "start": 9.115916666666667,
+    "end": 14.027,
+    "text": "さらに、200m先でクルミ拾いに出た女性も遺体で見つかり、",
+    "spoken_text": "さらに、200m先でクルミ拾いに出た女性も遺体で見つかり、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-004",
+    "start": 14.277,
+    "end": 19.266791666666666,
+    "text": "そこから5km先にいた女性は家族5人でクリ拾い中に、",
+    "spoken_text": "そこから5km先にいた女性は家族5人でクリ拾い中に、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-005",
+    "start": 19.516791666666666,
+    "end": 21.382666666666665,
+    "text": "クマに襲われ帰らぬ人に、、",
+    "spoken_text": "クマに襲われ帰らぬ人に、、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-006",
+    "start": 21.632666666666665,
+    "end": 26.2505,
+    "text": "なぜ、立て続けに同じ村で3度も悲劇が繰り返されたのか。",
+    "spoken_text": "なぜ、立て続けに同じ村で3度も悲劇が繰り返されたのか。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-007",
+    "start": 26.5005,
+    "end": 30.213166666666666,
+    "text": "そしてなぜ、このクマは満腹なのに人を食べたのか？",
+    "spoken_text": "そしてなぜ、このクマは満腹なのに人を食べたのか？",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-008",
+    "start": 30.463166666666666,
+    "end": 32.50275,
+    "text": "地形図とともに解説します。",
+    "spoken_text": "地形図とともに解説します。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-009",
+    "start": 32.75275,
+    "end": 37.74825,
+    "text": "戸沢村は、山形県の北にあり、人口およそ4,300人。",
+    "spoken_text": "戸沢村は、山形県の北にあり、人口およそ4,300人。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-010",
+    "start": 37.99825,
+    "end": 43.389125,
+    "text": "自然に囲まれた村で、定期的にクマの目撃情報が相次いでいました。",
+    "spoken_text": "自然に囲まれた村で、定期的にクマの目撃情報が相次いでいました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-011",
+    "start": 43.639125,
+    "end": 46.782916666666665,
+    "text": "1988年5月25日。",
+    "spoken_text": "1988年5月25日。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-012",
+    "start": 47.032916666666665,
+    "end": 52.14966666666667,
+    "text": "この村に住む61歳の男性が、タケノコを採りに山へ入ります。",
+    "spoken_text": "この村に住む61歳の男性が、タケノコを採りに山へ入ります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-013",
+    "start": 52.39966666666667,
+    "end": 57.028708333333334,
+    "text": "家族にタケノコを採りにいくと伝え、午前10時ごろに出発。",
+    "spoken_text": "家族にタケノコを採りにいくと伝え、午前10時ごろに出発。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-014",
+    "start": 57.278708333333334,
+    "end": 62.0045,
+    "text": "奥さんは夕方には戻ってくるだろうと思い、そのまま見送ることに。",
+    "spoken_text": "奥さんは夕方には戻ってくるだろうと思い、そのまま見送ることに。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-015",
+    "start": 62.2545,
+    "end": 67.43583333333333,
+    "text": "しかし、これ以降、男性は二度と家族のもとへは戻ってきませんでした。",
+    "spoken_text": "しかし、これ以降、男性は二度と家族のもとへは戻ってきませんでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-016",
+    "start": 67.68583333333333,
+    "end": 68.56045833333333,
+    "text": "午後9時過ぎ",
+    "spoken_text": "午後9時過ぎ",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-017",
+    "start": 68.81045833333333,
+    "end": 73.86908333333334,
+    "text": "暗くなっても戻らない夫を心配して、奥さんが警察に通報。",
+    "spoken_text": "暗くなっても戻らない夫を心配して、奥さんが警察に通報。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-018",
+    "start": 74.11908333333334,
+    "end": 77.56391666666667,
+    "text": "家族と地元の消防団員が山へ入ります。",
+    "spoken_text": "家族と地元の消防団員が山へ入ります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-019",
+    "start": 77.81391666666667,
+    "end": 83.60395833333334,
+    "text": "暗闇で視界の悪い山道を歩いてると、沢の下に何かの塊を発見。",
+    "spoken_text": "暗闇で視界の悪い山道を歩いてると、沢の下に何かの塊を発見。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-020",
+    "start": 83.85395833333334,
+    "end": 88.18491666666667,
+    "text": "おそるおそる近づいてみると、それは無残な夫の姿でした。",
+    "spoken_text": "おそるおそる近づいてみると、それは無残な夫の姿でした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-021",
+    "start": 88.43491666666667,
+    "end": 91.90958333333333,
+    "text": "集落から、5、600メートルほど離れた付近。",
+    "spoken_text": "集落から、5、600メートルほど離れた付近。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-022",
+    "start": 92.15958333333333,
+    "end": 98.290125,
+    "text": "衣服がボロボロでお尻と両方の太ももの筋肉が削ぎ落とされていたとのこと。",
+    "spoken_text": "衣服がボロボロでお尻と両方の太ももの筋肉が削ぎ落とされていたとのこと。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-023",
+    "start": 98.540125,
+    "end": 100.74270833333334,
+    "text": "傷は、そこだけではありません。",
+    "spoken_text": "傷は、そこだけではありません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-024",
+    "start": 100.99270833333334,
+    "end": 104.10058333333333,
+    "text": "両足の先にも、腕にも、傷がありました。",
+    "spoken_text": "両足の先にも、腕にも、傷がありました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-025",
+    "start": 104.35058333333333,
+    "end": 108.88758333333334,
+    "text": "そしてあたりには、リュックサックと持ち物が散らばっていたといいます。",
+    "spoken_text": "そしてあたりには、リュックサックと持ち物が散らばっていたといいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-026",
+    "start": 109.13758333333334,
+    "end": 114.92770833333333,
+    "text": "この悲惨な現場を見て、消防はすぐ「クマの仕業だ」と確信したといいます。",
+    "spoken_text": "この悲惨な現場を見て、消防はすぐ「クマの仕業だ」と確信したといいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-027",
+    "start": 115.17770833333333,
+    "end": 119.74945833333334,
+    "text": "のちの検視で、亡くなった原因は大量出血とのことでした。",
+    "spoken_text": "のちの検視で、亡くなった原因は大量出血とのことでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-028",
+    "start": 119.99945833333334,
+    "end": 123.61025,
+    "text": "山菜採りの途中で、クマにばったり出会ってしまった。",
+    "spoken_text": "山菜採りの途中で、クマにばったり出会ってしまった。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-029",
+    "start": 123.86025,
+    "end": 128.51329166666667,
+    "text": "逃げようとしたところを後ろから襲われ、そのまま沢へ転落した。",
+    "spoken_text": "逃げようとしたところを後ろから襲われ、そのまま沢へ転落した。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-030",
+    "start": 128.76329166666667,
+    "end": 131.41945833333332,
+    "text": "それが、警察の出した結論でした。",
+    "spoken_text": "それが、警察の出した結論でした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-031",
+    "start": 131.66945833333332,
+    "end": 138.26141666666666,
+    "text": "その後、4人が被害状況の連絡のために山を下り、6人が現場に残りました。",
+    "spoken_text": "その後、4人が被害状況の連絡のために山を下り、6人が現場に残りました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-032",
+    "start": 138.51141666666666,
+    "end": 139.49558333333334,
+    "text": "40分後、",
+    "spoken_text": "40分後、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-033",
+    "start": 139.74558333333334,
+    "end": 142.40091666666666,
+    "text": "暗闇の中で、何やら音がしました。",
+    "spoken_text": "暗闇の中で、何やら音がしました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-034",
+    "start": 142.65091666666666,
+    "end": 145.26358333333334,
+    "text": "恐る恐る、懐中電灯を向けると、、",
+    "spoken_text": "恐る恐る、懐中電灯を向けると、、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-035",
+    "start": 145.51358333333334,
+    "end": 147.82004166666667,
+    "text": "凶暴なツキノワグマがいたのです。",
+    "spoken_text": "凶暴なツキノワグマがいたのです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-036",
+    "start": 148.07004166666667,
+    "end": 150.72516666666667,
+    "text": "6人は声を上げ、石を投げつけます。",
+    "spoken_text": "6人は声を上げ、石を投げつけます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-037",
+    "start": 150.97516666666667,
+    "end": 155.483125,
+    "text": "しかし、それでもクマは執念深くその場に居座り続けました。",
+    "spoken_text": "しかし、それでもクマは執念深くその場に居座り続けました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-038",
+    "start": 155.733125,
+    "end": 162.65275,
+    "text": "すぐにでも、ご家族のために夫を救出したい状況でしたが、仕方なくこの日は引き返すことに。",
+    "spoken_text": "すぐにでも、ご家族のために夫を救出したい状況でしたが、仕方なくこの日は引き返すことに。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-039",
+    "start": 162.90275,
+    "end": 167.72129166666667,
+    "text": "オーイ、オーイと声を出し、クマを警戒しながら山を下りました。",
+    "spoken_text": "オーイ、オーイと声を出し、クマを警戒しながら山を下りました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-040",
+    "start": 167.97129166666667,
+    "end": 168.81504166666667,
+    "text": "翌朝5時",
+    "spoken_text": "翌朝5時",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-041",
+    "start": 169.06504166666667,
+    "end": 176.754125,
+    "text": "消防団員と警察官が十数人。そこに猟友会のハンターが6人加わり、現場に到着。",
+    "spoken_text": "消防団員と警察官が十数人。そこに猟友会のハンターが6人加わり、現場に到着。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-042",
+    "start": 177.004125,
+    "end": 181.0875,
+    "text": "クマを警戒しましたが、幸いその場にはいませんでした。",
+    "spoken_text": "クマを警戒しましたが、幸いその場にはいませんでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-043",
+    "start": 181.3375,
+    "end": 185.23879166666666,
+    "text": "急いで男性の遺体を救出し村へと降りることに。",
+    "spoken_text": "急いで男性の遺体を救出し村へと降りることに。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-044",
+    "start": 185.48879166666666,
+    "end": 190.3965,
+    "text": "警察いわく、男性の遺体にはある珍しい特徴があったといいます。",
+    "spoken_text": "警察いわく、男性の遺体にはある珍しい特徴があったといいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-045",
+    "start": 190.6465,
+    "end": 194.35916666666665,
+    "text": "それは、頭と首に傷が全くないことでした。",
+    "spoken_text": "それは、頭と首に傷が全くないことでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-046",
+    "start": 194.60916666666665,
+    "end": 198.97116666666668,
+    "text": "傷は、背中や腰など、後ろ側に集中していたのです。",
+    "spoken_text": "傷は、背中や腰など、後ろ側に集中していたのです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-047",
+    "start": 199.22116666666668,
+    "end": 205.95170833333333,
+    "text": "これは襲われた際に、男性がクマと正面から向き合わずに命を失ったことを意味します。",
+    "spoken_text": "これは襲われた際に、男性がクマと正面から向き合わずに命を失ったことを意味します。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-048",
+    "start": 206.20170833333333,
+    "end": 208.57675,
+    "text": "振り返る間（ま）、すらなかったのでしょう。",
+    "spoken_text": "振り返るま、すらなかったのでしょう。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-049",
+    "start": 208.82675,
+    "end": 211.25554166666666,
+    "text": "5月27日（事故から2日後）",
+    "spoken_text": "5月27日（事故から2日後）",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-050",
+    "start": 211.50554166666666,
+    "end": 218.37441666666666,
+    "text": "地元の猟友会が、人を襲ったクマの処分のため、有害鳥獣駆除の緊急許可を取ります。",
+    "spoken_text": "地元の猟友会が、人を襲ったクマの処分のため、有害鳥獣駆除の緊急許可を取ります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-051",
+    "start": 218.62441666666666,
+    "end": 225.320875,
+    "text": "そこから一週間、現場のあった神田地区の中沢付近を中心に、主犯のクマを追跡。",
+    "spoken_text": "そこから一週間、現場のあった神田地区の中沢付近を中心に、主犯のクマを追跡。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-052",
+    "start": 225.570875,
+    "end": 231.68,
+    "text": "5月27日から、6月4日まで。村の男たちが、毎日山へ入りました。",
+    "spoken_text": "5月27日から、6月4日まで。村の男たちが、毎日山へ入りました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-053",
+    "start": 231.93,
+    "end": 241.29025,
+    "text": "合計で7頭から8頭のクマを捕らえ胃の内容物を確認しましたが、どのクマからも人の肉は検出されませんでした。",
+    "spoken_text": "合計で7頭から8頭のクマを捕らえ胃の内容物を確認しましたが、どのクマからも人の肉は検出されませんでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-054",
+    "start": 241.54025,
+    "end": 247.086,
+    "text": "つまり、夫を襲ったクマはハンターから逃げ切った可能性が高いと言えるでしょう。",
+    "spoken_text": "つまり、夫を襲ったクマはハンターから逃げ切った可能性が高いと言えるでしょう。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-055",
+    "start": 247.336,
+    "end": 254.22808333333333,
+    "text": "地元の猟友会員は、この事件について、「成果を上げられなかった」と悔しそうに語っています。",
+    "spoken_text": "地元の猟友会員は、この事件について、「成果を上げられなかった」と悔しそうに語っています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-056",
+    "start": 254.47808333333333,
+    "end": 258.29525,
+    "text": "そして、この事件の悲劇はまだ始まったばかりでした。",
+    "spoken_text": "そして、この事件の悲劇はまだ始まったばかりでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-057",
+    "start": 258.54525,
+    "end": 263.20995833333336,
+    "text": "1988年10月6日（事件から4か月半後）。",
+    "spoken_text": "1988年10月6日（事件から4か月半後）。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-058",
+    "start": 263.45995833333336,
+    "end": 268.76891666666666,
+    "text": "戸沢村に住む59歳の女性が、クルミを拾いに山へと出かけました。",
+    "spoken_text": "戸沢村に住む59歳の女性が、クルミを拾いに山へと出かけました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-059",
+    "start": 269.01891666666666,
+    "end": 273.31783333333334,
+    "text": "場所は、自宅から400メートルほど。権現山の山の裾（すそ）。",
+    "spoken_text": "場所は、自宅から400メートルほど。権現山の山のすそ。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-060",
+    "start": 273.56783333333334,
+    "end": 276.331375,
+    "text": "いつもクルミを拾いに出かけている場所です。",
+    "spoken_text": "いつもクルミを拾いに出かけている場所です。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-061",
+    "start": 276.581375,
+    "end": 281.12416666666667,
+    "text": "しかし、この女性もそれ以降、二度と戻ることはありませんでした。",
+    "spoken_text": "しかし、この女性もそれ以降、二度と戻ることはありませんでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-062",
+    "start": 281.37416666666667,
+    "end": 285.0860416666667,
+    "text": "山へ行った女性がなかなか村に帰ってこないことから、",
+    "spoken_text": "山へ行った女性がなかなか村に帰ってこないことから、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-063",
+    "start": 285.3360416666667,
+    "end": 291.41541666666666,
+    "text": "地元の人たちが夜の9時ごろまで捜索します。しかし、どこにも見当たりませんでした。",
+    "spoken_text": "地元の人たちが夜の9時ごろまで捜索します。しかし、どこにも見当たりませんでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-064",
+    "start": 291.66541666666666,
+    "end": 296.59633333333335,
+    "text": "クマ被害の可能性も考慮し、翌朝に改めて捜索することに。",
+    "spoken_text": "クマ被害の可能性も考慮し、翌朝に改めて捜索することに。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-065",
+    "start": 296.84633333333335,
+    "end": 298.63095833333335,
+    "text": "翌朝、6時20分。",
+    "spoken_text": "翌朝、6時20分。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-066",
+    "start": 298.88095833333335,
+    "end": 306.5468333333333,
+    "text": "消防団員、警察官、猟友会員。あわせて57人が、四つの班に分かれて山へ入ります。",
+    "spoken_text": "消防団員、警察官、猟友会員。あわせて57人が、四つの班に分かれて山へ入ります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-067",
+    "start": 306.7968333333333,
+    "end": 311.84383333333335,
+    "text": "クマがまだいるかもしれないので、猟友会が銃を持って先導します。",
+    "spoken_text": "クマがまだいるかもしれないので、猟友会が銃を持って先導します。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-068",
+    "start": 312.09383333333335,
+    "end": 315.92745833333333,
+    "text": "午前7時37分（捜索開始から1時間後）",
+    "spoken_text": "午前7時37分（捜索開始から1時間後）",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-069",
+    "start": 316.17745833333333,
+    "end": 318.5541666666667,
+    "text": "クルミの木の下で女性を発見。",
+    "spoken_text": "クルミの木の下で女性を発見。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-070",
+    "start": 318.8041666666667,
+    "end": 322.04679166666665,
+    "text": "残念ながら、すでに亡くなっている状態でした。",
+    "spoken_text": "残念ながら、すでに亡くなっている状態でした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-071",
+    "start": 322.29679166666665,
+    "end": 328.1555833333333,
+    "text": "女性が見つかったのは、5月の現場から200メートルの距離で、非常に近い場所。",
+    "spoken_text": "女性が見つかったのは、5月の現場から200メートルの距離で、非常に近い場所。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-072",
+    "start": 328.4055833333333,
+    "end": 332.551,
+    "text": "1件目は、砂防ダムの裏。2件目は、家の裏山です。",
+    "spoken_text": "1件目は、砂防ダムの裏。2件目は、家の裏山です。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-073",
+    "start": 332.801,
+    "end": 338.61804166666667,
+    "text": "同じ杉沢という集落の中で、半年以内に2人が襲われたこととなります。",
+    "spoken_text": "同じ杉沢という集落の中で、半年以内に2人が襲われたこととなります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-074",
+    "start": 338.86804166666667,
+    "end": 348.9078333333333,
+    "text": "また、この女性も頭と首に傷はなく、右の胸の筋肉、両方の太もも、そして右腕の筋肉に深い損傷がみられました。",
+    "spoken_text": "また、この女性も頭と首に傷はなく、右の胸の筋肉、両方の太もも、そして右腕の筋肉に深い損傷がみられました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-075",
+    "start": 349.1578333333333,
+    "end": 355.0059166666667,
+    "text": "傷の状態から下半身を噛まれ、襲われており1件目と非常に近い構図。",
+    "spoken_text": "傷の状態から下半身を噛まれ、襲われており1件目と非常に近い構図。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-076",
+    "start": 355.2559166666667,
+    "end": 359.28208333333333,
+    "text": "そして現場には、クマの痕跡がいくつも残っていました。",
+    "spoken_text": "そして現場には、クマの痕跡がいくつも残っていました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-077",
+    "start": 359.53208333333333,
+    "end": 363.1515,
+    "text": "まず、遺体が7〜8メートルほど引きずられた跡。",
+    "spoken_text": "まず、遺体が7〜8メートルほど引きずられた跡。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-078",
+    "start": 363.4015,
+    "end": 365.91591666666665,
+    "text": "付近のクリの木には、タナがありました。",
+    "spoken_text": "付近のクリの木には、タナがありました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-079",
+    "start": 366.16591666666665,
+    "end": 371.846375,
+    "text": "タナとは、木の実を食べるために木に登ったクマが、枝を敷いて作る場所のことです。",
+    "spoken_text": "タナとは、木の実を食べるために木に登ったクマが、枝を敷いて作る場所のことです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-080",
+    "start": 372.096375,
+    "end": 376.46179166666667,
+    "text": "さらに、別の木には、クマが皮を剥いだ跡も残っていました。",
+    "spoken_text": "さらに、別の木には、クマが皮を剥いだ跡も残っていました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-081",
+    "start": 376.71179166666667,
+    "end": 380.41204166666665,
+    "text": "この場所に、クマが長くいたことを示す痕跡です。",
+    "spoken_text": "この場所に、クマが長くいたことを示す痕跡です。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-082",
+    "start": 380.66204166666665,
+    "end": 391.50320833333336,
+    "text": "日本クマネットワークの報告書にも「加害の形が似ていて現場が近いことから、同じ1頭だった可能性が考えられる」として記録されています。",
+    "spoken_text": "日本クマネットワークの報告書にも「加害の形が似ていて現場が近いことから、同じ1頭だった可能性が考えられる」として記録されています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-083",
+    "start": 391.75320833333336,
+    "end": 396.66429166666666,
+    "text": "幸い、ハンターが到着した時は、近くにクマはいませんでした。",
+    "spoken_text": "幸い、ハンターが到着した時は、近くにクマはいませんでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-084",
+    "start": 396.91429166666666,
+    "end": 399.640125,
+    "text": "その隙に急いで女性を運び出します。",
+    "spoken_text": "その隙に急いで女性を運び出します。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-085",
+    "start": 399.890125,
+    "end": 409.79020833333334,
+    "text": "この時の状況を消防団員である佐藤浩人（ひろと）さん（当時26歳）は、「ひどかったな、あれは。なかなか見て気持ちのいいものではなかった」",
+    "spoken_text": "この時の状況を消防団員であるひろとさん（当時26歳）は、「ひどかったな、あれは。なかなか見て気持ちのいいものではなかった」",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-086",
+    "start": 410.04020833333334,
+    "end": 414.28975,
+    "text": "「俺、持ったけど。甥っ子が背負って、本家のお父さんと俺とで」",
+    "spoken_text": "「俺、持ったけど。甥っ子が背負って、本家のお父さんと俺とで」",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-087",
+    "start": 414.53975,
+    "end": 415.71708333333333,
+    "text": "「肋骨が出てた」",
+    "spoken_text": "「肋骨が出てた」",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-088",
+    "start": 415.96708333333333,
+    "end": 420.83875,
+    "text": "「地元だし、知ってる仲だし。クマの被害っていうのは、ひどいですよ」",
+    "spoken_text": "「地元だし、知ってる仲だし。クマの被害っていうのは、ひどいですよ」",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-089",
+    "start": 421.08875,
+    "end": 426.01166666666666,
+    "text": "「嫌だったよな。ああいう経験は、したくないね」と取材に答えています。",
+    "spoken_text": "「嫌だったよな。ああいう経験は、したくないね」と取材に答えています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-090",
+    "start": 426.26166666666666,
+    "end": 431.0871666666667,
+    "text": "実は亡くなった女性は、佐藤さんの知っている家のお母さんでした。",
+    "spoken_text": "実は亡くなった女性は、佐藤さんの知っている家のお母さんでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-091",
+    "start": 431.3371666666667,
+    "end": 437.97475,
+    "text": "山形大学理学部の大津高教授は、「（2人目を）襲ったのは、（5月と）同じクマだろう」",
+    "spoken_text": "山形大学理学部の大津高教授は、「（2人目を）襲ったのは、（5月と）同じクマだろう」",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-092",
+    "start": 438.22475,
+    "end": 447.311875,
+    "text": "「ツキノワグマでも血や肉の味を覚えると人を襲うこともあり得るので、早く駆除するべきだ」と山形新聞にコメントしています。",
+    "spoken_text": "「ツキノワグマでも血や肉の味を覚えると人を襲うこともあり得るので、早く駆除するべきだ」と山形新聞にコメントしています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-093",
+    "start": 447.561875,
+    "end": 451.994375,
+    "text": "専門家いわく、この年は、山ブドウもクルミも不作でした。",
+    "spoken_text": "専門家いわく、この年は、山ブドウもクルミも不作でした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-094",
+    "start": 452.244375,
+    "end": 456.862625,
+    "text": "その影響でクマが、人里の近くまで下りてきてしまったとのこと。",
+    "spoken_text": "その影響でクマが、人里の近くまで下りてきてしまったとのこと。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-095",
+    "start": 457.112625,
+    "end": 464.601625,
+    "text": "一方、村の人たちは、2人の犠牲者が出たことで、人喰いグマが近くにいる、と大騒ぎになります。",
+    "spoken_text": "一方、村の人たちは、2人の犠牲者が出たことで、人喰いグマが近くにいる、と大騒ぎになります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-096",
+    "start": 464.851625,
+    "end": 466.091375,
+    "text": "そして、翌日。",
+    "spoken_text": "そして、翌日。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-097",
+    "start": 466.341375,
+    "end": 470.40125,
+    "text": "猟友会が、ふたたび現場付近でクマ狩りを始めました。",
+    "spoken_text": "猟友会が、ふたたび現場付近でクマ狩りを始めました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-098",
+    "start": 470.65125,
+    "end": 473.197125,
+    "text": "しかし、一向に成果が上がりません。",
+    "spoken_text": "しかし、一向に成果が上がりません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-099",
+    "start": 473.447125,
+    "end": 481.7565416666667,
+    "text": "クマ被害の傾向として、現場が騒然となると、クマはその場から移動し、別の場所で人を襲うことがあります。",
+    "spoken_text": "クマ被害の傾向として、現場が騒然となると、クマはその場から移動し、別の場所で人を襲うことがあります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-100",
+    "start": 482.0065416666667,
+    "end": 487.7609166666667,
+    "text": "実際、2016年の十和利山（とわりやま）でも、クマは移動して被害が広がっています。",
+    "spoken_text": "実際、2016年のとわりやまでも、クマは移動して被害が広がっています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-101",
+    "start": 488.0109166666667,
+    "end": 493.0464166666667,
+    "text": "今回の1件目と2件目は、まさにそのパターンの可能性もありました。",
+    "spoken_text": "今回の1件目と2件目は、まさにそのパターンの可能性もありました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-102",
+    "start": 493.2964166666667,
+    "end": 498.2049166666667,
+    "text": "そして、戸沢村クマ事件の被害はさらに拡大することとなります。",
+    "spoken_text": "そして、戸沢村クマ事件の被害はさらに拡大することとなります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-103",
+    "start": 498.4549166666667,
+    "end": 502.95533333333333,
+    "text": "10月9日午前8時半ごろ（2人目の事件から3日後）",
+    "spoken_text": "10月9日午前8時半ごろ（2人目の事件から3日後）",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-104",
+    "start": 503.20533333333333,
+    "end": 505.4195,
+    "text": "家族5人が山へ向かいました。",
+    "spoken_text": "家族5人が山へ向かいました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-105",
+    "start": 505.6695,
+    "end": 509.57054166666666,
+    "text": "酒田市に住む61歳の女性と、その家族です。",
+    "spoken_text": "酒田市に住む61歳の女性と、その家族です。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-106",
+    "start": 509.82054166666666,
+    "end": 512.56825,
+    "text": "向かった先は、自分の家の持ち山。",
+    "spoken_text": "向かった先は、自分の家の持ち山。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-107",
+    "start": 512.81825,
+    "end": 517.0740416666666,
+    "text": "2人目の現場から、5キロ。山を一つ越えるほどの距離です。",
+    "spoken_text": "2人目の現場から、5キロ。山を一つ越えるほどの距離です。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-108",
+    "start": 517.3240416666666,
+    "end": 517.8033333333333,
+    "text": "正午",
+    "spoken_text": "正午",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-109",
+    "start": 518.0533333333333,
+    "end": 521.2960833333333,
+    "text": "5人はそれぞれ別々にクリを拾っていました。",
+    "spoken_text": "5人はそれぞれ別々にクリを拾っていました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-110",
+    "start": 521.5460833333333,
+    "end": 525.3922916666667,
+    "text": "周囲には、人の話し声もあれば、足音もあります。",
+    "spoken_text": "周囲には、人の話し声もあれば、足音もあります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-111",
+    "start": 525.6422916666667,
+    "end": 527.9037083333334,
+    "text": "それでも、クマはやってきたのです、、",
+    "spoken_text": "それでも、クマはやってきたのです、、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-112",
+    "start": 528.1537083333334,
+    "end": 530.9517916666666,
+    "text": "最初に異変に気づいたのは、夫でした。",
+    "spoken_text": "最初に異変に気づいたのは、夫でした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-113",
+    "start": 531.2017916666666,
+    "end": 533.4271666666667,
+    "text": "近くでクマの足跡を発見。",
+    "spoken_text": "近くでクマの足跡を発見。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-114",
+    "start": 533.6771666666667,
+    "end": 537.137,
+    "text": "すぐに知らせようとして、奥さんの下へと駆け寄ると、",
+    "spoken_text": "すぐに知らせようとして、奥さんの下へと駆け寄ると、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-115",
+    "start": 537.387,
+    "end": 539.3955833333333,
+    "text": "すでに血まみれの状態でした、、",
+    "spoken_text": "すでに血まみれの状態でした、、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-116",
+    "start": 539.6455833333333,
+    "end": 545.4394583333333,
+    "text": "奥さんの近くにはクマがいて、近づけません。戦うための武器もない状況。",
+    "spoken_text": "奥さんの近くにはクマがいて、近づけません。戦うための武器もない状況。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-117",
+    "start": 545.6894583333333,
+    "end": 549.5208333333334,
+    "text": "すかさず夫は持っていたライターで落ちていた枝に火をつけ、",
+    "spoken_text": "すかさず夫は持っていたライターで落ちていた枝に火をつけ、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-118",
+    "start": 549.7708333333334,
+    "end": 551.5360833333333,
+    "text": "大声で叫び続けます。",
+    "spoken_text": "大声で叫び続けます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-119",
+    "start": 551.7860833333333,
+    "end": 555.4432916666667,
+    "text": "叫び声を聞いて、散らばっていた家族が集結、",
+    "spoken_text": "叫び声を聞いて、散らばっていた家族が集結、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-120",
+    "start": 555.6932916666667,
+    "end": 561.3125833333334,
+    "text": "するとクマは、人間が複数人きたことで驚いたのか、少し距離を取ります。",
+    "spoken_text": "するとクマは、人間が複数人きたことで驚いたのか、少し距離を取ります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-121",
+    "start": 561.5625833333334,
+    "end": 565.577125,
+    "text": "その隙に妻のもとへ駆け寄り、慎重に山を降りました。",
+    "spoken_text": "その隙に妻のもとへ駆け寄り、慎重に山を降りました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-122",
+    "start": 565.827125,
+    "end": 569.781875,
+    "text": "女性は山形県立新庄病院へ緊急搬送。",
+    "spoken_text": "女性は山形県立新庄病院へ緊急搬送。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-123",
+    "start": 570.031875,
+    "end": 570.9874166666667,
+    "text": "午後3時半、",
+    "spoken_text": "午後3時半、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-124",
+    "start": 571.2374166666667,
+    "end": 575.176625,
+    "text": "残念ながら、奥さんは大量出血で亡くなりました。",
+    "spoken_text": "残念ながら、奥さんは大量出血で亡くなりました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-125",
+    "start": 575.426625,
+    "end": 581.448875,
+    "text": "傷は、またしても腰からお尻、そして両方のふくらはぎと後ろ側に集中しており、",
+    "spoken_text": "傷は、またしても腰からお尻、そして両方のふくらはぎと後ろ側に集中しており、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-126",
+    "start": 581.698875,
+    "end": 585.438,
+    "text": "頭と首に傷があったとは報告されていません。",
+    "spoken_text": "頭と首に傷があったとは報告されていません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-127",
+    "start": 585.688,
+    "end": 590.2946666666667,
+    "text": "そして傷がついた順番は、左の太もも裏が一撃目でした。",
+    "spoken_text": "そして傷がついた順番は、左の太もも裏が一撃目でした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-128",
+    "start": 590.5446666666667,
+    "end": 595.8239583333333,
+    "text": "この傷の流れも1件目で襲われた男性と、同じ状況だったのです。",
+    "spoken_text": "この傷の流れも1件目で襲われた男性と、同じ状況だったのです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-129",
+    "start": 596.0739583333333,
+    "end": 601.8988333333333,
+    "text": "これ以上、被害を増やさないために猟友会員13人が現場へ向かいます。",
+    "spoken_text": "これ以上、被害を増やさないために猟友会員13人が現場へ向かいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-130",
+    "start": 602.1488333333333,
+    "end": 607.800375,
+    "text": "そのうちの1人が、現場から100メートルほど離れた山道を歩いていたところ、",
+    "spoken_text": "そのうちの1人が、現場から100メートルほど離れた山道を歩いていたところ、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-131",
+    "start": 608.050375,
+    "end": 611.9950833333334,
+    "text": "目の前にツキノワグマと遭遇。距離およそ1メートル。",
+    "spoken_text": "目の前にツキノワグマと遭遇。距離およそ1メートル。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-132",
+    "start": 612.2450833333334,
+    "end": 614.8114166666667,
+    "text": "大きく口を開けて威嚇していました。",
+    "spoken_text": "大きく口を開けて威嚇していました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-133",
+    "start": 615.0614166666667,
+    "end": 618.72175,
+    "text": "手を伸ばせば届くほどの距離で、クマが立ち上がります。",
+    "spoken_text": "手を伸ばせば届くほどの距離で、クマが立ち上がります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-134",
+    "start": 618.97175,
+    "end": 621.5175416666667,
+    "text": "とても逃げられる状況ではありません。",
+    "spoken_text": "とても逃げられる状況ではありません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-135",
+    "start": 621.7675416666667,
+    "end": 624.1360416666666,
+    "text": "すかさずハンターは銃を構えます。",
+    "spoken_text": "すかさずハンターは銃を構えます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-136",
+    "start": 624.3860416666666,
+    "end": 627.6020833333333,
+    "text": "するとクマは、横を向いて逃げようとしたとのこと。",
+    "spoken_text": "するとクマは、横を向いて逃げようとしたとのこと。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-137",
+    "start": 627.8520833333333,
+    "end": 630.125125,
+    "text": "その隙をつき、ハンターは発砲。",
+    "spoken_text": "その隙をつき、ハンターは発砲。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-138",
+    "start": 630.375125,
+    "end": 635.1935416666666,
+    "text": "1発目がクマの右のわき腹に当たり、倒れたところをもう1発。",
+    "spoken_text": "1発目がクマの右のわき腹に当たり、倒れたところをもう1発。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-139",
+    "start": 635.4435416666666,
+    "end": 637.7499583333333,
+    "text": "こうしてクマは駆除されたのでした。",
+    "spoken_text": "こうしてクマは駆除されたのでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-140",
+    "start": 637.9999583333333,
+    "end": 640.6423333333333,
+    "text": "銃を向けられて、逃げようとしたことから、",
+    "spoken_text": "銃を向けられて、逃げようとしたことから、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-141",
+    "start": 640.8923333333333,
+    "end": 646.3572916666667,
+    "text": "このクマは過去に銃を向けられた経験があるのではないかと考えられています。",
+    "spoken_text": "このクマは過去に銃を向けられた経験があるのではないかと考えられています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-142",
+    "start": 646.6072916666667,
+    "end": 649.4251666666667,
+    "text": "このとき、村では意見が割れていました。",
+    "spoken_text": "このとき、村では意見が割れていました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-143",
+    "start": 649.6751666666667,
+    "end": 654.6329166666667,
+    "text": "一連の事件は、1頭によるものなのか。それとも、複数なのか。",
+    "spoken_text": "一連の事件は、1頭によるものなのか。それとも、複数なのか。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-144",
+    "start": 654.8829166666667,
+    "end": 660.1927083333334,
+    "text": "動物学者のあいだでも、地元の猟友会でも、見方は分かれたといいます。",
+    "spoken_text": "動物学者のあいだでも、地元の猟友会でも、見方は分かれたといいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-145",
+    "start": 660.4427083333334,
+    "end": 662.985625,
+    "text": "1頭だと考える根拠としては、",
+    "spoken_text": "1頭だと考える根拠としては、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-146",
+    "start": 663.235625,
+    "end": 666.710125,
+    "text": "犠牲になった方の傷の場所が、よく似ていること。",
+    "spoken_text": "犠牲になった方の傷の場所が、よく似ていること。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-147",
+    "start": 666.960125,
+    "end": 671.6012916666666,
+    "text": "また、最初の2件の現場が、200メートルしか離れていないこと。",
+    "spoken_text": "また、最初の2件の現場が、200メートルしか離れていないこと。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-148",
+    "start": 671.8512916666666,
+    "end": 680.9858333333333,
+    "text": "そして3件目も、直線なら4キロから5キロ。起伏を入れて10キロなら、クマにとっては十分に移動できる距離だということ。",
+    "spoken_text": "そして3件目も、直線なら4キロから5キロ。起伏を入れて10キロなら、クマにとっては十分に移動できる距離だということ。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-149",
+    "start": 681.2358333333333,
+    "end": 684.4872083333333,
+    "text": "一方、複数だと考える根拠もありました。",
+    "spoken_text": "一方、複数だと考える根拠もありました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-150",
+    "start": 684.7372083333333,
+    "end": 689.2541666666667,
+    "text": "1件目の捜索のとき、杉沢地区でクマを見た人がいます。",
+    "spoken_text": "1件目の捜索のとき、杉沢地区でクマを見た人がいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-151",
+    "start": 689.5041666666667,
+    "end": 694.7609583333333,
+    "text": "そのクマは、撃たれた個体よりも、もっと大きかったと証言されています。",
+    "spoken_text": "そのクマは、撃たれた個体よりも、もっと大きかったと証言されています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-152",
+    "start": 695.0109583333333,
+    "end": 702.1395416666667,
+    "text": "さらに、撃たれた現場の付近には糞が至るところにあり、寝床にしていた場所も数カ所見つかりました。",
+    "spoken_text": "さらに、撃たれた現場の付近には糞が至るところにあり、寝床にしていた場所も数カ所見つかりました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-153",
+    "start": 702.3895416666667,
+    "end": 707.0645416666666,
+    "text": "つまり、そこには長いあいだ住みついていたクマがいた、ということです。",
+    "spoken_text": "つまり、そこには長いあいだ住みついていたクマがいた、ということです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-154",
+    "start": 707.3145416666666,
+    "end": 713.1162083333334,
+    "text": "クマが撃たれたのは、3件目の現場。2件目から5キロ離れた、別の山です。",
+    "spoken_text": "クマが撃たれたのは、3件目の現場。2件目から5キロ離れた、別の山です。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-155",
+    "start": 713.3662083333334,
+    "end": 721.873625,
+    "text": "もし仮に、3件目の現場に元から住んでいたクマだったら、杉沢で2人を襲ったクマとは、別の個体だと言えます。",
+    "spoken_text": "もし仮に、3件目の現場に元から住んでいたクマだったら、杉沢で2人を襲ったクマとは、別の個体だと言えます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-156",
+    "start": 722.123625,
+    "end": 729.1202083333334,
+    "text": "地元の猟友会は、最悪の事態を想定し、複数の異常なクマがいる前提で動きました。",
+    "spoken_text": "地元の猟友会は、最悪の事態を想定し、複数の異常なクマがいる前提で動きました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-157",
+    "start": 729.3702083333334,
+    "end": 740.2809166666667,
+    "text": "まだ他のクマが潜んでいる場合に備え、檻を2カ所に設置し、毎日見回ったといいます。しかし、結局それらしいクマを見つけることはありませんでした。",
+    "spoken_text": "まだ他のクマが潜んでいる場合に備え、檻を2カ所に設置し、毎日見回ったといいます。しかし、結局それらしいクマを見つけることはありませんでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-158",
+    "start": 740.5309166666667,
+    "end": 749.131125,
+    "text": "なお、山形県のクマ事件の報告書には、同じクマの犯行だと分かるように「同一個体」と記入する欄があります。",
+    "spoken_text": "なお、山形県のクマ事件の報告書には、同じクマの犯行だと分かるように「同一個体」と記入する欄があります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-159",
+    "start": 749.381125,
+    "end": 756.2110833333334,
+    "text": "しかし、決定的な証拠がないため、今回のクマ事件3件には、その記述がありません。",
+    "spoken_text": "しかし、決定的な証拠がないため、今回のクマ事件3件には、その記述がありません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-160",
+    "start": 756.4610833333334,
+    "end": 762.436375,
+    "text": "つまり、県の記録の上では、同じ1頭だったとは扱われていないということです。",
+    "spoken_text": "つまり、県の記録の上では、同じ1頭だったとは扱われていないということです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-161",
+    "start": 762.686375,
+    "end": 767.3742916666666,
+    "text": "その日の夕方。撃たれたクマは、新庄署で解剖されることに。",
+    "spoken_text": "その日の夕方。撃たれたクマは、新庄署で解剖されることに。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-162",
+    "start": 767.6242916666666,
+    "end": 772.93325,
+    "text": "体長140センチ。体重84キロ。推定年齢4歳。",
+    "spoken_text": "体長140センチ。体重84キロ。推定年齢4歳。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-163",
+    "start": 773.18325,
+    "end": 774.7394166666667,
+    "text": "オスのツキノワグマでした。",
+    "spoken_text": "オスのツキノワグマでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-164",
+    "start": 774.9894166666667,
+    "end": 778.4002083333334,
+    "text": "人間でいえば、独り立ちしたばかりの年ごろです。",
+    "spoken_text": "人間でいえば、独り立ちしたばかりの年ごろです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-165",
+    "start": 778.6502083333334,
+    "end": 782.9697916666667,
+    "text": "胃の中には、食べたばかりのクリの実がぎっしりと詰まっていました。",
+    "spoken_text": "胃の中には、食べたばかりのクリの実がぎっしりと詰まっていました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-166",
+    "start": 783.2197916666667,
+    "end": 787.0485833333333,
+    "text": "そのため、空腹ではなかったと想定されています。",
+    "spoken_text": "そのため、空腹ではなかったと想定されています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-167",
+    "start": 787.2985833333333,
+    "end": 792.6627083333333,
+    "text": "一般的に、クマが人を襲う理由として、まず挙げられるのは「空腹」です。",
+    "spoken_text": "一般的に、クマが人を襲う理由として、まず挙げられるのは「空腹」です。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-168",
+    "start": 792.9127083333333,
+    "end": 797.3625416666666,
+    "text": "食べるものがないから、人里に下りてくる。とてもシンプルな理由。",
+    "spoken_text": "食べるものがないから、人里に下りてくる。とてもシンプルな理由。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-169",
+    "start": 797.6125416666666,
+    "end": 800.3557083333334,
+    "text": "ところが、このクマは違っていたのです。",
+    "spoken_text": "ところが、このクマは違っていたのです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-170",
+    "start": 800.6057083333334,
+    "end": 805.88575,
+    "text": "そして、胃の入り口付近からは、人の筋肉の一部と皮膚が見つかりました。",
+    "spoken_text": "そして、胃の入り口付近からは、人の筋肉の一部と皮膚が見つかりました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-171",
+    "start": 806.13575,
+    "end": 810.72475,
+    "text": "DNA鑑定をした結果、3人目の女性のものだと判明。",
+    "spoken_text": "DNA鑑定をした結果、3人目の女性のものだと判明。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-172",
+    "start": 810.97475,
+    "end": 815.9050416666666,
+    "text": "こうしてこのクマが、3人目を襲った個体だと証明されたのです。",
+    "spoken_text": "こうしてこのクマが、3人目を襲った個体だと証明されたのです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-173",
+    "start": 816.1550416666666,
+    "end": 823.7511666666667,
+    "text": "ただ、このクマが1人目と2人目を襲ったクマと同一個体かどうかは、今もなお、分かっていません。",
+    "spoken_text": "ただ、このクマが1人目と2人目を襲ったクマと同一個体かどうかは、今もなお、分かっていません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-174",
+    "start": 824.0011666666667,
+    "end": 828.5374166666667,
+    "text": "このときの司法解剖は、翌年、医学の論文になっています。",
+    "spoken_text": "このときの司法解剖は、翌年、医学の論文になっています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-175",
+    "start": 828.7874166666667,
+    "end": 832.4720833333333,
+    "text": "題名は「ツキノワグマに襲われ死亡した3症例」。",
+    "spoken_text": "題名は「ツキノワグマに襲われ死亡した3症例」。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-176",
+    "start": 832.7220833333333,
+    "end": 836.3213333333333,
+    "text": "法医学の専門誌に、5ページにわたって載りました。",
+    "spoken_text": "法医学の専門誌に、5ページにわたって載りました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-177",
+    "start": 836.5713333333333,
+    "end": 842.8555416666667,
+    "text": "戸沢村で起きたことは、警察の記録だけでなく、医学の記録としても残されたのです。",
+    "spoken_text": "戸沢村で起きたことは、警察の記録だけでなく、医学の記録としても残されたのです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-178",
+    "start": 843.1055416666667,
+    "end": 845.6018333333334,
+    "text": "ひとつ、はっきりしていることがあります。",
+    "spoken_text": "ひとつ、はっきりしていることがあります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-179",
+    "start": 845.8518333333334,
+    "end": 850.5155833333333,
+    "text": "ツキノワグマは、本来、人を食べるために襲う動物ではありません。",
+    "spoken_text": "ツキノワグマは、本来、人を食べるために襲う動物ではありません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-180",
+    "start": 850.7655833333333,
+    "end": 856.8467083333334,
+    "text": "そもそも臆病な性格で、人の気配を察知すると、逃げていくものとされています。",
+    "spoken_text": "そもそも臆病な性格で、人の気配を察知すると、逃げていくものとされています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-181",
+    "start": 857.0967083333334,
+    "end": 861.4122916666666,
+    "text": "山で出会っても、多くの場合、クマの方が先に去っていく。",
+    "spoken_text": "山で出会っても、多くの場合、クマの方が先に去っていく。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-182",
+    "start": 861.6622916666666,
+    "end": 864.7364166666666,
+    "text": "それが、この動物についての定説でした。",
+    "spoken_text": "それが、この動物についての定説でした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-183",
+    "start": 864.9864166666666,
+    "end": 868.8905833333333,
+    "text": "ところが戸沢村のクマは、そのどれにも当てはまりません。",
+    "spoken_text": "ところが戸沢村のクマは、そのどれにも当てはまりません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-184",
+    "start": 869.1405833333333,
+    "end": 872.1334166666667,
+    "text": "逃げるどころか、遺体のそばに居座り続け、",
+    "spoken_text": "逃げるどころか、遺体のそばに居座り続け、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-185",
+    "start": 872.3834166666667,
+    "end": 875.007625,
+    "text": "石を投げられても、動きませんでした。",
+    "spoken_text": "石を投げられても、動きませんでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-186",
+    "start": 875.257625,
+    "end": 878.7522916666667,
+    "text": "さらに、満腹の状態で、人を食べていたのです。",
+    "spoken_text": "さらに、満腹の状態で、人を食べていたのです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-187",
+    "start": 879.0022916666667,
+    "end": 880.8514583333333,
+    "text": "食べるために人を襲うクマ。",
+    "spoken_text": "食べるために人を襲うクマ。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-188",
+    "start": 881.1014583333333,
+    "end": 889.0509583333334,
+    "text": "研究者の間で通称「人狩り」と呼ぶ、この形の事件は時代が進むにつれて、増えてきてると言えます。",
+    "spoken_text": "研究者の間で通称「人狩り」と呼ぶ、この形の事件は時代が進むにつれて、増えてきてると言えます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-189",
+    "start": 889.3009583333334,
+    "end": 895.1030416666666,
+    "text": "なぜ、今回の事件では、臆病なはずのツキノワグマが人を襲ったのでしょうか？",
+    "spoken_text": "なぜ、今回の事件では、臆病なはずのツキノワグマが人を襲ったのでしょうか？",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-190",
+    "start": 895.3530416666666,
+    "end": 899.924875,
+    "text": "そしてなぜ、3人は同じような襲われ方をされたのでしょうか？",
+    "spoken_text": "そしてなぜ、3人は同じような襲われ方をされたのでしょうか？",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-191",
+    "start": 900.174875,
+    "end": 903.0400416666666,
+    "text": "それは、クマの年齢にあるとされています。",
+    "spoken_text": "それは、クマの年齢にあるとされています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-192",
+    "start": 903.2900416666666,
+    "end": 906.0188333333333,
+    "text": "幼いクマの攻撃には、無駄が多く、",
+    "spoken_text": "幼いクマの攻撃には、無駄が多く、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-193",
+    "start": 906.2688333333333,
+    "end": 909.7725,
+    "text": "長い時間しがみつき、咬みついたまま離れません。",
+    "spoken_text": "長い時間しがみつき、咬みついたまま離れません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-194",
+    "start": 910.0225,
+    "end": 912.3254166666667,
+    "text": "だから、深い傷になりやすいです。",
+    "spoken_text": "だから、深い傷になりやすいです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-195",
+    "start": 912.5754166666667,
+    "end": 916.4738333333333,
+    "text": "そしてとくに、下半身に傷がつく事例が多いとのこと。",
+    "spoken_text": "そしてとくに、下半身に傷がつく事例が多いとのこと。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-196",
+    "start": 916.7238333333333,
+    "end": 920.4132916666666,
+    "text": "その理由として、クマから逃げる際に、慌てて転び、",
+    "spoken_text": "その理由として、クマから逃げる際に、慌てて転び、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-197",
+    "start": 920.6632916666666,
+    "end": 925.0145,
+    "text": "そのままクマに足で反撃して傷がつくケースもありますが、",
+    "spoken_text": "そのままクマに足で反撃して傷がつくケースもありますが、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-198",
+    "start": 925.2645,
+    "end": 930.579375,
+    "text": "そもそも若いクマは積極的に人の足を刈りにくる傾向があるからです。",
+    "spoken_text": "そもそも若いクマは積極的に人の足を刈りにくる傾向があるからです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-199",
+    "start": 930.829375,
+    "end": 935.864875,
+    "text": "今回の事件は、若いクマにたびたび見られる行動パターンと言えます。",
+    "spoken_text": "今回の事件は、若いクマにたびたび見られる行動パターンと言えます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-200",
+    "start": 936.114875,
+    "end": 943.3714166666666,
+    "text": "一方で、年齢を重ねた大きなクマの場合、頭を狙う事例が圧倒的に多く報告されています。",
+    "spoken_text": "一方で、年齢を重ねた大きなクマの場合、頭を狙う事例が圧倒的に多く報告されています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-201",
+    "start": 943.6214166666666,
+    "end": 948.4826666666667,
+    "text": "クマの年齢や体型によっても、人間への襲い方が異なるため、",
+    "spoken_text": "クマの年齢や体型によっても、人間への襲い方が異なるため、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-202",
+    "start": 948.7326666666667,
+    "end": 953.141125,
+    "text": "確実に大丈夫とされるクマの対処法はいまだにありません。",
+    "spoken_text": "確実に大丈夫とされるクマの対処法はいまだにありません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-203",
+    "start": 953.391125,
+    "end": 958.7974583333333,
+    "text": "ちなみに、クマに頭が食べられたと報告された事例は、実はごくわずか。",
+    "spoken_text": "ちなみに、クマに頭が食べられたと報告された事例は、実はごくわずか。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-204",
+    "start": 959.0474583333333,
+    "end": 967.4962083333334,
+    "text": "このことから、クマにとって人間の頭は攻撃する場所であって、食べる場所ではないという認識なのかもしれません。",
+    "spoken_text": "このことから、クマにとって人間の頭は攻撃する場所であって、食べる場所ではないという認識なのかもしれません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-205",
+    "start": 967.7462083333334,
+    "end": 977.8792083333333,
+    "text": "1977年から2020年までの山形県でのクマ事故で、命が失われたと記録されているのは、今回の3件のみ。",
+    "spoken_text": "1977年から2020年までの山形県でのクマ事故で、命が失われたと記録されているのは、今回の3件のみ。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-206",
+    "start": 978.1292083333333,
+    "end": 982.6139583333334,
+    "text": "しかし、クマにより怪我を受けた事例は、108件にも上ります。",
+    "spoken_text": "しかし、クマにより怪我を受けた事例は、108件にも上ります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-207",
+    "start": 982.8639583333334,
+    "end": 990.7011666666667,
+    "text": "命が失われていないとはいえ、山形県でクマと人間が接触する機会は、決して少なくないのです。",
+    "spoken_text": "命が失われていないとはいえ、山形県でクマと人間が接触する機会は、決して少なくないのです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-208",
+    "start": 990.9511666666667,
+    "end": 996.0105833333333,
+    "text": "そして、最近になり山形で新たな犠牲者が報告されています。",
+    "spoken_text": "そして、最近になり山形で新たな犠牲者が報告されています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-209",
+    "start": 996.2605833333333,
+    "end": 998.3594166666667,
+    "text": "2026年5月3日。",
+    "spoken_text": "2026年5月3日。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-210",
+    "start": 998.6094166666667,
+    "end": 1005.8623333333334,
+    "text": "山形県酒田市で、78歳の男性が山菜を採りに山へ入ったきり、戻りませんでした。",
+    "spoken_text": "山形県酒田市で、78歳の男性が山菜を採りに山へ入ったきり、戻りませんでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-211",
+    "start": 1006.1123333333334,
+    "end": 1007.815125,
+    "text": "見つかったのは、2日後。",
+    "spoken_text": "見つかったのは、2日後。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-212",
+    "start": 1008.065125,
+    "end": 1013.4877083333333,
+    "text": "頭と腕に、引っかかれたような深い傷が複数あり、息を引き取っていました。",
+    "spoken_text": "頭と腕に、引っかかれたような深い傷が複数あり、息を引き取っていました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-213",
+    "start": 1013.7377083333333,
+    "end": 1018.1185,
+    "text": "調べた結果、命を落とした原因は大量出血でした。",
+    "spoken_text": "調べた結果、命を落とした原因は大量出血でした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-214",
+    "start": 1018.3685,
+    "end": 1024.54525,
+    "text": "発見の直後、ハンターが近くで駆除したクマの胃からは、人の体の一部が見つかり、",
+    "spoken_text": "発見の直後、ハンターが近くで駆除したクマの胃からは、人の体の一部が見つかり、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-215",
+    "start": 1024.79525,
+    "end": 1032.101,
+    "text": "DNA鑑定を実施したところ、男性のものと一致。このクマによる被害だと発表されました。",
+    "spoken_text": "DNA鑑定を実施したところ、男性のものと一致。このクマによる被害だと発表されました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-216",
+    "start": 1032.351,
+    "end": 1039.6917083333333,
+    "text": "当時、2件目の事件の際に、消防団員として活動していた佐藤浩人さん（63歳）は、",
+    "spoken_text": "当時、2件目の事件の際に、消防団員として活動していた佐藤浩人さん（63歳）は、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-217",
+    "start": 1039.9417083333333,
+    "end": 1043.540875,
+    "text": "「3件目のあと、この村で同じことは起きていない」",
+    "spoken_text": "「3件目のあと、この村で同じことは起きていない」",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-218",
+    "start": 1043.790875,
+    "end": 1047.2597083333333,
+    "text": "「村には、いまも数十頭のツキノワグマがいます」",
+    "spoken_text": "「村には、いまも数十頭のツキノワグマがいます」",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-219",
+    "start": 1047.5097083333333,
+    "end": 1051.669375,
+    "text": "「小中学校のそばが、通り道になっている場所もあります」",
+    "spoken_text": "「小中学校のそばが、通り道になっている場所もあります」",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-220",
+    "start": 1051.919375,
+    "end": 1056.415625,
+    "text": "「ただ、クマに襲われたという話は聞きませんね」と語っています。",
+    "spoken_text": "「ただ、クマに襲われたという話は聞きませんね」と語っています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-221",
+    "start": 1056.665625,
+    "end": 1061.375375,
+    "text": "ちなみに、当時撃たれたクマの頭蓋骨は、いまもなお残っています。",
+    "spoken_text": "ちなみに、当時撃たれたクマの頭蓋骨は、いまもなお残っています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-222",
+    "start": 1061.625375,
+    "end": 1065.1354166666667,
+    "text": "所有者は、山形県酒田市の富樫邦男（とがしくにお）さん。",
+    "spoken_text": "所有者は、山形県酒田市のとがしくにおさん。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-223",
+    "start": 1065.3854166666667,
+    "end": 1069.5138333333334,
+    "text": "不動産会社と、猟銃を売る銃砲店を営んでいます。",
+    "spoken_text": "不動産会社と、猟銃を売る銃砲店を営んでいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-224",
+    "start": 1069.7638333333334,
+    "end": 1071.9997916666666,
+    "text": "自身も、熟練のハンターです。",
+    "spoken_text": "自身も、熟練のハンターです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-225",
+    "start": 1072.2497916666666,
+    "end": 1077.295875,
+    "text": "実は富樫さんは、この事件のとき、駆除に加わっていた1人でした。",
+    "spoken_text": "実は富樫さんは、この事件のとき、駆除に加わっていた1人でした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-226",
+    "start": 1077.545875,
+    "end": 1082.1319583333334,
+    "text": "人を殺したクマは非常に危険で、必ず駆除しなければならない。",
+    "spoken_text": "人を殺したクマは非常に危険で、必ず駆除しなければならない。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-227",
+    "start": 1082.3819583333334,
+    "end": 1087.4759166666668,
+    "text": "そう強く感じて、仲間のハンターたちと加害個体を追ったといいます。",
+    "spoken_text": "そう強く感じて、仲間のハンターたちと加害個体を追ったといいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-228",
+    "start": 1087.7259166666668,
+    "end": 1092.4835,
+    "text": "そして最終的に、仲間の1人が1頭のクマを仕留めました。",
+    "spoken_text": "そして最終的に、仲間の1人が1頭のクマを仕留めました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-229",
+    "start": 1092.7335,
+    "end": 1096.785875,
+    "text": "以前、富樫さんは遭遇したクマを射殺したことがあり、",
+    "spoken_text": "以前、富樫さんは遭遇したクマを射殺したことがあり、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-230",
+    "start": 1097.035875,
+    "end": 1102.60925,
+    "text": "標本にしてみると、頭の骨に、弾が貫いた傷が残っていたといいます。",
+    "spoken_text": "標本にしてみると、頭の骨に、弾が貫いた傷が残っていたといいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-231",
+    "start": 1102.85925,
+    "end": 1108.3474583333334,
+    "text": "このクマはどうやら、過去に別のハンターによる攻撃で、おでこに穴があき、",
+    "spoken_text": "このクマはどうやら、過去に別のハンターによる攻撃で、おでこに穴があき、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-232",
+    "start": 1108.5974583333334,
+    "end": 1112.7457916666667,
+    "text": "頭蓋骨の一部が壊れたまま、しばらく生き延びていましたが、",
+    "spoken_text": "頭蓋骨の一部が壊れたまま、しばらく生き延びていましたが、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-233",
+    "start": 1112.9957916666667,
+    "end": 1115.8058333333333,
+    "text": "襲われそうになったので駆除したとのこと。",
+    "spoken_text": "襲われそうになったので駆除したとのこと。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-234",
+    "start": 1116.0558333333333,
+    "end": 1123.3965416666667,
+    "text": "富樫さんは、「普通は逃げるのに、近づいて来たから撃った、変なクマもいるもんだと、しょうがなく撃ったんです」",
+    "spoken_text": "富樫さんは、「普通は逃げるのに、近づいて来たから撃った、変なクマもいるもんだと、しょうがなく撃ったんです」",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-235",
+    "start": 1123.6465416666667,
+    "end": 1127.930875,
+    "text": "「放っておいたら人間を襲ったかもしれないので」と話しています。",
+    "spoken_text": "「放っておいたら人間を襲ったかもしれないので」と話しています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-236",
+    "start": 1128.180875,
+    "end": 1133.7769583333334,
+    "text": "そういう経緯もあり、富樫さんはクマの頭蓋骨に関心を持つようになりました。",
+    "spoken_text": "そういう経緯もあり、富樫さんはクマの頭蓋骨に関心を持つようになりました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-237",
+    "start": 1134.0269583333334,
+    "end": 1138.6625416666666,
+    "text": "戸沢村のクマの頭蓋骨は、ハンター経由で譲ってもらってます。",
+    "spoken_text": "戸沢村のクマの頭蓋骨は、ハンター経由で譲ってもらってます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-238",
+    "start": 1138.9125416666666,
+    "end": 1151.3849583333333,
+    "text": "取材に訪れた記者に対して、富樫さんは応接間の奥から、台座に乗った複数の頭蓋骨を持ってきて、「触ってごらんなさい。持ち上げてもいいですよ」と語っていたといいます。",
+    "spoken_text": "取材に訪れた記者に対して、富樫さんは応接間の奥から、台座に乗った複数の頭蓋骨を持ってきて、「触ってごらんなさい。持ち上げてもいいですよ」と語っていたといいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-239",
+    "start": 1151.6349583333333,
+    "end": 1157.4487083333333,
+    "text": "また、譲り受けた今回の事件のクマの頭蓋骨には、ある特徴があったといいます。",
+    "spoken_text": "また、譲り受けた今回の事件のクマの頭蓋骨には、ある特徴があったといいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-240",
+    "start": 1157.6987083333333,
+    "end": 1164.2200416666667,
+    "text": "通常、クマの頭のてっぺんの中心には、矢状稜（しじょうりょう）という、突起のような線があります。",
+    "spoken_text": "通常、クマの頭のてっぺんの中心には、しじょうりょうという、突起のような線があります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-241",
+    "start": 1164.4700416666667,
+    "end": 1167.28875,
+    "text": "正常なクマなら、そこが飛び出しています。",
+    "spoken_text": "正常なクマなら、そこが飛び出しています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-242",
+    "start": 1167.53875,
+    "end": 1172.3601666666666,
+    "text": "しかし、今回の事件のクマの頭蓋骨には、それがありませんでした。",
+    "spoken_text": "しかし、今回の事件のクマの頭蓋骨には、それがありませんでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-243",
+    "start": 1172.6101666666666,
+    "end": 1176.6194583333333,
+    "text": "矢状稜（しじょうりょう）が潰れて、ゆるやかな曲線になっていたのです。",
+    "spoken_text": "しじょうりょうが潰れて、ゆるやかな曲線になっていたのです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-244",
+    "start": 1176.8694583333333,
+    "end": 1180.5705416666667,
+    "text": "その潰れた頭蓋骨に、富樫さんは引っかかりました。",
+    "spoken_text": "その潰れた頭蓋骨に、富樫さんは引っかかりました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-245",
+    "start": 1180.8205416666667,
+    "end": 1186.4716666666666,
+    "text": "なぜ、こんな傷が付いているのか？と。早速自分で調べはじめたといいます。",
+    "spoken_text": "なぜ、こんな傷が付いているのか？と。早速自分で調べはじめたといいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-246",
+    "start": 1186.7216666666666,
+    "end": 1193.987,
+    "text": "そして1994年9月、岩手県遠野市で開かれた、第2回日本ツキノワグマ集会。",
+    "spoken_text": "そして1994年9月、岩手県遠野市で開かれた、第2回日本ツキノワグマ集会。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-247",
+    "start": 1194.237,
+    "end": 1201.807125,
+    "text": "同じ部屋に泊まった参加者に、事件のクマの頭蓋骨を見せると、思いもよらない話を聞かされたといいます。",
+    "spoken_text": "同じ部屋に泊まった参加者に、事件のクマの頭蓋骨を見せると、思いもよらない話を聞かされたといいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-248",
+    "start": 1202.057125,
+    "end": 1207.9275416666667,
+    "text": "実は事件の前、戸沢村の中で、子グマが1頭飼われていたというのです。",
+    "spoken_text": "実は事件の前、戸沢村の中で、子グマが1頭飼われていたというのです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-249",
+    "start": 1208.1775416666667,
+    "end": 1211.5070833333334,
+    "text": "その子グマは、飼い主にとても懐いていましたが、",
+    "spoken_text": "その子グマは、飼い主にとても懐いていましたが、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-250",
+    "start": 1211.7570833333334,
+    "end": 1218.1739166666666,
+    "text": "やがて成長し体が大きくなり、とても人間の手では飼えなくなってしまったとのこと。",
+    "spoken_text": "やがて成長し体が大きくなり、とても人間の手では飼えなくなってしまったとのこと。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-251",
+    "start": 1218.4239166666666,
+    "end": 1224.29525,
+    "text": "飼い主が山に放そうとしても、懐いてるクマは一向に離れようとしません。",
+    "spoken_text": "飼い主が山に放そうとしても、懐いてるクマは一向に離れようとしません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-252",
+    "start": 1224.54525,
+    "end": 1230.5915416666667,
+    "text": "そこで飼い主は、心を鬼にして持っていた棒で、クマの頭を激しく叩きました。",
+    "spoken_text": "そこで飼い主は、心を鬼にして持っていた棒で、クマの頭を激しく叩きました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-253",
+    "start": 1230.8415416666667,
+    "end": 1234.1122083333332,
+    "text": "クマはいきなりの攻撃に恐怖で怯えながら、",
+    "spoken_text": "クマはいきなりの攻撃に恐怖で怯えながら、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-254",
+    "start": 1234.3622083333332,
+    "end": 1236.7745833333333,
+    "text": "そのまま山へ逃げていったといいます。",
+    "spoken_text": "そのまま山へ逃げていったといいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-255",
+    "start": 1237.0245833333333,
+    "end": 1242.4713333333334,
+    "text": "あくまで、推測ではありますが、富樫さんは今回のクマ事件の犯行は、",
+    "spoken_text": "あくまで、推測ではありますが、富樫さんは今回のクマ事件の犯行は、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-256",
+    "start": 1242.7213333333334,
+    "end": 1245.4696666666666,
+    "text": "この時に飼われていたクマの仕業であり、",
+    "spoken_text": "この時に飼われていたクマの仕業であり、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-257",
+    "start": 1245.7196666666666,
+    "end": 1252.844875,
+    "text": "飼い主に受けた傷が痛み、いつしか人に憎しみを抱くようになったのではないか？と語っています。",
+    "spoken_text": "飼い主に受けた傷が痛み、いつしか人に憎しみを抱くようになったのではないか？と語っています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-258",
+    "start": 1253.094875,
+    "end": 1258.2696666666666,
+    "text": "この話を聞き取って報告書にまとめたのが、日本クマネットワークです。",
+    "spoken_text": "この話を聞き取って報告書にまとめたのが、日本クマネットワークです。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-259",
+    "start": 1258.5196666666666,
+    "end": 1263.73575,
+    "text": "富樫さんと同じ部屋に泊まった参加者から事情を聞き、まとめています。",
+    "spoken_text": "富樫さんと同じ部屋に泊まった参加者から事情を聞き、まとめています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-260",
+    "start": 1263.98575,
+    "end": 1269.6952916666667,
+    "text": "のちに富樫さん本人にも会い、資料の内容に間違いがないか確かめています。",
+    "spoken_text": "のちに富樫さん本人にも会い、資料の内容に間違いがないか確かめています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-261",
+    "start": 1269.9452916666667,
+    "end": 1279.11725,
+    "text": "さらに2011年、当時の新聞記事と文献をたどり直す追跡調査が秋田県の林業センターのもと行われました。",
+    "spoken_text": "さらに2011年、当時の新聞記事と文献をたどり直す追跡調査が秋田県の林業センターのもと行われました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-262",
+    "start": 1279.36725,
+    "end": 1283.4746666666667,
+    "text": "その報告書には、頭蓋骨を調べた結果も載っています。",
+    "spoken_text": "その報告書には、頭蓋骨を調べた結果も載っています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-263",
+    "start": 1283.7246666666667,
+    "end": 1290.2345416666667,
+    "text": "首の骨に近い矢状稜が潰れ、まわりの骨に、何カ所か陥没したような黒ずんだ跡。",
+    "spoken_text": "首の骨に近い矢状稜が潰れ、まわりの骨に、何カ所か陥没したような黒ずんだ跡。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-264",
+    "start": 1290.4845416666667,
+    "end": 1295.0679166666666,
+    "text": "殴りつけられるなどして、外から力がかかったことは確実。",
+    "spoken_text": "殴りつけられるなどして、外から力がかかったことは確実。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-265",
+    "start": 1295.3179166666666,
+    "end": 1304.1330833333334,
+    "text": "という形で、しっかりと今回の事件のクマは、過去に外側からの力で骨が変形したことが記述されています。",
+    "spoken_text": "という形で、しっかりと今回の事件のクマは、過去に外側からの力で骨が変形したことが記述されています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-266",
+    "start": 1304.3830833333334,
+    "end": 1308.2261666666666,
+    "text": "人を襲ったクマは、かつて人に飼われていたという説。",
+    "spoken_text": "人を襲ったクマは、かつて人に飼われていたという説。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-267",
+    "start": 1308.4761666666666,
+    "end": 1314.7488333333333,
+    "text": "取材班は、この可能性をさらに証明するべく、戸沢村の役場を訪ねています。",
+    "spoken_text": "取材班は、この可能性をさらに証明するべく、戸沢村の役場を訪ねています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-268",
+    "start": 1314.9988333333333,
+    "end": 1319.283,
+    "text": "すると、村にもクマを飼っていたという話が残っていました。",
+    "spoken_text": "すると、村にもクマを飼っていたという話が残っていました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-269",
+    "start": 1319.533,
+    "end": 1323.8086666666666,
+    "text": "ただ、こちらは、富樫さんが聞いた話とは別の場所です。",
+    "spoken_text": "ただ、こちらは、富樫さんが聞いた話とは別の場所です。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-270",
+    "start": 1324.0586666666666,
+    "end": 1340.858375,
+    "text": "総務課危機管理室の小林直樹室長は、「事件の前なのか後なのかはわかりませんが、村内の角川という地区で、犬がクマを連れて来て、山に戻らなくなってしまい、ある農家にしばらく居ついていたことがあるようです」と話しています。",
+    "spoken_text": "総務課危機管理室の小林直樹室長は、「事件の前なのか後なのかはわかりませんが、村内の角川という地区で、犬がクマを連れて来て、山に戻らなくなってしまい、ある農家にしばらく居ついていたことがあるようです」と話しています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-271",
+    "start": 1341.108375,
+    "end": 1348.7741666666666,
+    "text": "当時の村の職員が、山形県の自然保護課との間に立ち、そのクマをどうするかを相談していました。",
+    "spoken_text": "当時の村の職員が、山形県の自然保護課との間に立ち、そのクマをどうするかを相談していました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-272",
+    "start": 1349.0241666666666,
+    "end": 1352.2402083333334,
+    "text": "最終的に、クマは山へ放されています。",
+    "spoken_text": "最終的に、クマは山へ放されています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-273",
+    "start": 1352.4902083333334,
+    "end": 1358.629375,
+    "text": "そして、飼われていた場所から事件の現場までは、10キロも離れた違う集落でした。",
+    "spoken_text": "そして、飼われていた場所から事件の現場までは、10キロも離れた違う集落でした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-274",
+    "start": 1358.879375,
+    "end": 1364.1477916666668,
+    "text": "専門家も、事件との関係については疑問が残る、と話しています。",
+    "spoken_text": "専門家も、事件との関係については疑問が残る、と話しています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-275",
+    "start": 1364.3977916666668,
+    "end": 1370.2226666666666,
+    "text": "結局、加害グマがかつて村で飼われていたのかどうかは、確定できていません。",
+    "spoken_text": "結局、加害グマがかつて村で飼われていたのかどうかは、確定できていません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-276",
+    "start": 1370.4726666666666,
+    "end": 1374.6555416666667,
+    "text": "取材班が村を訪ねたのは、3月の中旬ごろでした。",
+    "spoken_text": "取材班が村を訪ねたのは、3月の中旬ごろでした。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-277",
+    "start": 1374.9055416666667,
+    "end": 1378.222,
+    "text": "村は、すっぽりと雪に埋もれていたといいます。",
+    "spoken_text": "村は、すっぽりと雪に埋もれていたといいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-278",
+    "start": 1378.472,
+    "end": 1381.114875,
+    "text": "例年、積雪は1.5メートル。",
+    "spoken_text": "例年、積雪は1.5メートル。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-279",
+    "start": 1381.364875,
+    "end": 1389.4415416666666,
+    "text": "最上川が村を横断するように流れ、松尾芭蕉が「五月雨を あつめて早し 最上川」を詠んだ地でもあります。",
+    "spoken_text": "最上川が村を横断するように流れ、松尾芭蕉が「五月雨を あつめて早し 最上川」を詠んだ地でもあります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-280",
+    "start": 1389.6915416666666,
+    "end": 1393.7517083333332,
+    "text": "この村には、いまも数十頭のツキノワグマが暮らしており、",
+    "spoken_text": "この村には、いまも数十頭のツキノワグマが暮らしており、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-281",
+    "start": 1394.0017083333332,
+    "end": 1396.401125,
+    "text": "見かけることも、珍しくありません。",
+    "spoken_text": "見かけることも、珍しくありません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-282",
+    "start": 1396.651125,
+    "end": 1400.9617083333333,
+    "text": "小中学校のそばが、クマの通り道になっている場所もあり、",
+    "spoken_text": "小中学校のそばが、クマの通り道になっている場所もあり、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-283",
+    "start": 1401.2117083333333,
+    "end": 1404.6291666666666,
+    "text": "畑や、民家の裏に出てくることもあるといいます。",
+    "spoken_text": "畑や、民家の裏に出てくることもあるといいます。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-284",
+    "start": 1404.8791666666666,
+    "end": 1411.1576666666667,
+    "text": "それでも、村の方は、「ただ、クマに襲われたという話は聞きませんね」と話していました。",
+    "spoken_text": "それでも、村の方は、「ただ、クマに襲われたという話は聞きませんね」と話していました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-285",
+    "start": 1411.4076666666667,
+    "end": 1419.990625,
+    "text": "戸沢村は、山形県と情報を共有しながら、生息数を調整するためのクマ狩りを定期的に行っています。",
+    "spoken_text": "戸沢村は、山形県と情報を共有しながら、生息数を調整するためのクマ狩りを定期的に行っています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-286",
+    "start": 1420.240625,
+    "end": 1427.1401666666666,
+    "text": "ただ、かつては村だけで数十人もいた会員が、いまは16人にまで減ってしまっています。",
+    "spoken_text": "ただ、かつては村だけで数十人もいた会員が、いまは16人にまで減ってしまっています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-287",
+    "start": 1427.3901666666666,
+    "end": 1431.7755,
+    "text": "このまま行くとハンターそのものがいなくなる危険性もあるでしょう。",
+    "spoken_text": "このまま行くとハンターそのものがいなくなる危険性もあるでしょう。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-288",
+    "start": 1432.0255,
+    "end": 1440.7537083333334,
+    "text": "そして、かつて遺体を運んだ佐藤さんは、自分のシイタケ栽培用のビニールハウスを見ながら、こう取材班に話しています。",
+    "spoken_text": "そして、かつて遺体を運んだ佐藤さんは、自分のシイタケ栽培用のビニールハウスを見ながら、こう取材班に話しています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-289",
+    "start": 1441.0037083333334,
+    "end": 1444.2977083333333,
+    "text": "「これクマだよ。爪で引っ掛けて鼻入れた跡」",
+    "spoken_text": "「これクマだよ。爪で引っ掛けて鼻入れた跡」",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-290",
+    "start": 1444.5477083333333,
+    "end": 1452.0555,
+    "text": "「昔は（クマは）裏手の山肌を歩いていたけど、ここに出るようになったんだよ。ここ1、2年だね」と。",
+    "spoken_text": "「昔は（クマは）裏手の山肌を歩いていたけど、ここに出るようになったんだよ。ここ1、2年だね」と。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-291",
+    "start": 1452.3055,
+    "end": 1457.6609166666667,
+    "text": "たしかにあの3件目のあと、この村では同じ規模の被害は起きていません。",
+    "spoken_text": "たしかにあの3件目のあと、この村では同じ規模の被害は起きていません。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-292",
+    "start": 1457.9109166666667,
+    "end": 1464.201,
+    "text": "それでも、1人が命を落とす事故や大きな事件になりうる被害は起こり続けています。",
+    "spoken_text": "それでも、1人が命を落とす事故や大きな事件になりうる被害は起こり続けています。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-293",
+    "start": 1464.451,
+    "end": 1471.05725,
+    "text": "ひとつの何か小さなきっかけで、再びかつてのような恐ろしい大事件が起こりうる状況です。",
+    "spoken_text": "ひとつの何か小さなきっかけで、再びかつてのような恐ろしい大事件が起こりうる状況です。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-294",
+    "start": 1471.30725,
+    "end": 1475.289625,
+    "text": "一人一人が、暮らしのすぐ近くに、クマがいるということ。",
+    "spoken_text": "一人一人が、暮らしのすぐ近くに、クマがいるということ。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-295",
+    "start": 1475.539625,
+    "end": 1481.8297083333334,
+    "text": "そして、人の生活圏とクマの生息地域が交わったとき、事故が起きるということ、",
+    "spoken_text": "そして、人の生活圏とクマの生息地域が交わったとき、事故が起きるということ、",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-296",
+    "start": 1482.0797083333334,
+    "end": 1488.1608333333334,
+    "text": "その境界線は年々、曖昧になってきているということを意識する必要があります。",
+    "spoken_text": "その境界線は年々、曖昧になってきているということを意識する必要があります。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-297",
+    "start": 1488.4108333333334,
+    "end": 1494.5375833333333,
+    "text": "山形県戸沢村で命を落とされた3人の方の、ご冥福をお祈りいたします。",
+    "spoken_text": "山形県戸沢村で命を落とされた3人の方の、ご冥福をお祈りいたします。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  },
+  {
+    "id": "ASSET-298",
+    "start": 1494.7875833333333,
+    "end": 1498.1545416666668,
+    "text": "最後までご視聴いただき、ありがとうございました。",
+    "spoken_text": "最後までご視聴いただき、ありがとうございました。",
+    "source": "Mac say Kyoko / rendered file measured sample count; not ASR"
+  }
+]

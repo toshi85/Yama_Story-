@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_268",
+  "kind": "text",
+  "shot_id": 268,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:10:00.011077+00:00",
+  "updated_at": "2026-09-07T13:10:00.019586+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 268,
+    "start_frame": 39448,
+    "end_frame": 39584,
+    "asset_id": "ASSET-268",
+    "asset_file": "画像/ASSET-268.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-268-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "すると、村にもクマを飼っていたという話が残っていました。",
+    "edit_note": "「総務課危機管理室 小林直樹室長」を編集でテロップとして表示。",
+    "speech": "",
+    "motion": "step_back",
+    "drift": [
+      -179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "総務課危機管理室 小林直樹室長"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

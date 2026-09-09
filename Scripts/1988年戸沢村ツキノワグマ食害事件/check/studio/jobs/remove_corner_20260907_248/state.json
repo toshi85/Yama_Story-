@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_248",
+  "kind": "text",
+  "shot_id": 248,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.924448+00:00",
+  "updated_at": "2026-09-07T13:09:59.932592+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 248,
+    "start_frame": 36059,
+    "end_frame": 36243,
+    "asset_id": "ASSET-248",
+    "asset_file": "画像/ASSET-248.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-248-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "実は事件の前、戸沢村の中で、子グマが1頭飼われていたというのです。",
+    "edit_note": "「事件の前／村の中で子グマが1頭」テロップ。BGMを一度やわらげ、あとで落差を作る。",
+    "speech": "",
+    "motion": "lean",
+    "drift": [
+      179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "事件の前／村の中で子グマが1頭"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

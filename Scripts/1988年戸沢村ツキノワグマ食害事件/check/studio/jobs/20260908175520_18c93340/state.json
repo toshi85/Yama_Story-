@@ -1,0 +1,133 @@
+{
+  "kind": "adjust",
+  "requested_kind": "adjust",
+  "shot_id": 44,
+  "brief": "カット内の位置・文言・人物の動きをまとめて編集",
+  "target": "asset",
+  "prompt": "",
+  "patch": {
+    "telop": "",
+    "speech": "これは\nめずらしい",
+    "bubble_dx": -68,
+    "bubble_dy": -16,
+    "character_position": [
+      506,
+      252
+    ],
+    "speech_position": [
+      438,
+      236
+    ]
+  },
+  "id": "20260908175520_18c93340",
+  "state": "review",
+  "created_at": "2026-09-08T08:55:20.867124+00:00",
+  "updated_at": "2026-09-08T08:55:26.389129+00:00",
+  "message": "修正後のカットを確認できます",
+  "shot": {
+    "id": 44,
+    "start_frame": 5562,
+    "end_frame": 5717,
+    "asset_id": "ASSET-044",
+    "asset_file": "画像/ASSET-044.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-044-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "警察いわく、男性の遺体にはある珍しい特徴があったといいます。",
+    "edit_note": "「珍しい特徴」テロップ。BGMを一瞬止めて注意を引く。",
+    "speech": "",
+    "motion": "lean",
+    "drift": [
+      -179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "quality_checks": true,
+  "worker_pid": 57138,
+  "input_sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9",
+  "explanation": "カット内の位置・文言・人物の動きをまとめて編集",
+  "rendered_override": {
+    "telop": "",
+    "speech": "これは\nめずらしい",
+    "bubble_dx": -68,
+    "bubble_dy": -16,
+    "character_position": [
+      506,
+      252
+    ],
+    "speech_position": [
+      438,
+      236
+    ]
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "44",
+    "--override",
+    "{\"telop\": \"\", \"speech\": \"これは\\nめずらしい\", \"bubble_dx\": -68, \"bubble_dy\": -16, \"character_position\": [506, 252], \"speech_position\": [438, 236]}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908175520_18c93340/preview.mp4",
+  "edit_layers": {
+    "character": "check/studio/jobs/20260908175520_18c93340/edit_layers/character.png",
+    "background": "画像/ASSET-044-1.png",
+    "meta": {
+      "pad_l": 68,
+      "pad_t": 16,
+      "char_w": 396,
+      "char_h": 396,
+      "cw": 464,
+      "ch": 412,
+      "bubble": [
+        0,
+        0,
+        252,
+        168
+      ],
+      "char_center": [
+        200.0,
+        198.5
+      ]
+    },
+    "source": "画像/ASSET-044.png",
+    "source_sha256": "d66e4b9248d7867505c9a7ab996301ba207b5fa25169b79f05efdeb5b8a8d912"
+  },
+  "quality_review": {
+    "status": "media_checked",
+    "media": {
+      "video": "check/studio/jobs/20260908175520_18c93340/quality/media/preview.mp4",
+      "video_sha256": "812e3fec28f04341787d91c2f7fd88d25e4b9f0bc46b9b18fe26f489484ac656",
+      "duration": 5.17,
+      "frames": [
+        {
+          "time": 0.1,
+          "file": "check/studio/jobs/20260908175520_18c93340/quality/media/frame-00.jpg"
+        },
+        {
+          "time": 2.5833,
+          "file": "check/studio/jobs/20260908175520_18c93340/quality/media/frame-01.jpg"
+        },
+        {
+          "time": 5.1,
+          "file": "check/studio/jobs/20260908175520_18c93340/quality/media/frame-02.jpg"
+        }
+      ]
+    }
+  }
+}

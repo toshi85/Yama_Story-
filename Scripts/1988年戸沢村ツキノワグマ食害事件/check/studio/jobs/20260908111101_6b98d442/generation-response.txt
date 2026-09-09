@@ -1,0 +1,3 @@
+指定プロンプトで標準画像生成を行い、[candidate.png](/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908111101_6b98d442/candidate.png)へ保存しました。
+
+男性の遺体が画面下中央に見え、顔・傷・流血・文字がないことを確認済みです。既存素材とshots.jsonは変更していません。

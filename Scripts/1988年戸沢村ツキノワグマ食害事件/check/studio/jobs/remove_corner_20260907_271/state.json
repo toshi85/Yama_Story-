@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_271",
+  "kind": "text",
+  "shot_id": 271,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:10:00.020249+00:00",
+  "updated_at": "2026-09-07T13:10:00.028357+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 271,
+    "start_frame": 40231,
+    "end_frame": 40468,
+    "asset_id": "ASSET-271",
+    "asset_file": "画像/ASSET-271.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "当時の村の職員が、山形県の自然保護課との間に立ち、そのクマをどうするかを相談していました。",
+    "edit_note": "「村の職員 ⇄ 山形県 自然保護課」を編集で矢印つきのテロップにする。機関名は画像に描かせない。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "村の職員 ⇄ 山形県 自然保護課"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

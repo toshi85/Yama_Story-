@@ -1,0 +1,149 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "shot_id": 2,
+  "brief": "ここは男性の遺体が写ってる状態にして\n",
+  "target": "asset",
+  "prompt": "Edit the supplied reference image while preserving its photorealistic style, 16:9 framing, wooded ravine, stream, wet rocks, dense fresh green foliage, and existing flashlight beams. Depict the nighttime discovery on May 25, 1988, in Tozawa Village, Yamagata, Japan. Add the motionless body of an adult male bamboo-shoot gatherer on the rocky ground beside the stream in the lower middle of the frame, clearly recognizable as a deceased person discovered during the search. His clothing should be plain, appropriate for rural Japan in 1988, worn and torn but covering his body. Position his face away from the camera and obscure identifying features naturally with the viewing angle and darkness; do not reconstruct the real victim's appearance. Direct one existing flashlight beam onto his clothed body so it remains clearly readable within the dark ravine. Show no exposed wounds, gore, exposed tissue, or pools of blood. Keep searchers outside the frame, represented only by their flashlight beams. Preserve the surrounding terrain and the restrained documentary atmosphere. Late May vegetation, no snow or ice. No bear, additional people, invented props, text, subtitles, or graphics. This is the opening image for a continuous video shot: the body must already be present and visible, with no subsequent appearance of a new subject or change of composition.",
+  "id": "20260908111101_6b98d442",
+  "state": "adopted",
+  "created_at": "2026-09-08T02:11:01.915513+00:00",
+  "updated_at": "2026-09-08T02:29:05.190755+00:00",
+  "message": "指示した修正を反映しました。確認してください",
+  "shot": {
+    "id": 2,
+    "start_frame": 152,
+    "end_frame": 271,
+    "asset_id": "ASSET-002",
+    "asset_file": "画像/ASSET-002.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "深夜、タケノコ採りに行った男性が遺体で発見。",
+    "edit_note": "光が一本止まったところでカット。「深夜」テロップを左上に。衝撃SEは入れず、無音に近い環境音のまま次へ。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 17453,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "469deb2df58a4121d5ff040a62e11d2bb051b9835ef6810a8b88f88852415646"
+      }
+    ],
+    "asset_id": "ASSET-002",
+    "shot_id": 2,
+    "snapshot": "check/studio/jobs/20260908111101_6b98d442/script-context.txt",
+    "snapshot_sha256": "aaaca44f3d10e771d17700656133e7711be9780ade3e3dcb2e82842af8187086"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908111101_6b98d442/generation-response.txt",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-002.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      }
+    ],
+    "explanation": "夜の沢と懐中電灯の光を保ち、沢底に男性の遺体が写る実写風の画像へ修正する。1988年5月の場面に合わせ、顔や傷の詳細は見せず、実在の被害者の容姿を推測で再現しない。文字は画像に加えない。",
+    "unsupported": ""
+  },
+  "step_index": 1,
+  "input_sha256": "469deb2df58a4121d5ff040a62e11d2bb051b9835ef6810a8b88f88852415646",
+  "explanation": "夜の沢と懐中電灯の光を保ち、沢底に男性の遺体が写る実写風の画像へ修正する。1988年5月の場面に合わせ、顔や傷の詳細は見せず、実在の被害者の容姿を推測で再現しない。文字は画像に加えない。",
+  "candidate": "check/studio/jobs/20260908111101_6b98d442/candidate.png",
+  "source": "check/studio/jobs/20260908111101_6b98d442/candidate.png",
+  "patch": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908111101_6b98d442/candidate.png",
+    "asset_kind": "image"
+  },
+  "awaiting_confirmation": false,
+  "before_override": {
+    "telop": ""
+  },
+  "before_shot": {
+    "id": 2,
+    "start_frame": 152,
+    "end_frame": 271,
+    "asset_id": "ASSET-002",
+    "asset_file": "画像/ASSET-002.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "深夜、タケノコ採りに行った男性が遺体で発見。",
+    "edit_note": "光が一本止まったところでカット。「深夜」テロップを左上に。衝撃SEは入れず、無音に近い環境音のまま次へ。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908111101_6b98d442/candidate.png",
+    "asset_kind": "image"
+  }
+}

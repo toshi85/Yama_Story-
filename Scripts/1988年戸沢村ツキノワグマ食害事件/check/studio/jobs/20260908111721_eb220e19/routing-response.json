@@ -1,0 +1,1 @@
+{"steps":[{"kind":"image","target":"asset"},{"kind":"text","text_type":"dialogue","bubble_side":"left","text_overlay":{"text":"いってくるよ","x":420,"y":180,"size":48,"color":"#FFFFFF","anim":"none","start":0,"end":4.87}}],"explanation":"男性と女性の顔の向きと目線を、お互いを見ながら話す姿に修正します。元の人物の画調・服装・透過背景を維持し、男性のセリフ「いってくるよ」は編集側で追加します。","unsupported":""}

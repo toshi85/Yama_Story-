@@ -1,0 +1,5 @@
+指定の最終プロンプトで標準画像生成ツールを使い、1枚生成・確認しました。人物・クマ・文字・小道具はありません。
+
+保存先：[candidate.png](/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908134116_a7f80d3c/candidate.png)
+
+既存素材とshots.jsonは変更していません。

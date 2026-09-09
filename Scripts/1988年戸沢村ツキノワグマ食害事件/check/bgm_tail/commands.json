@@ -1,0 +1,121 @@
+[
+  {
+    "argv": [
+      "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/tozawa_edit/audio_mix.py",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+      "--tools",
+      "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit",
+      "--bgm",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/音声/終章BGM.mp3",
+      "--ending-seconds",
+      "25"
+    ],
+    "exit_code": 0
+  },
+  {
+    "argv": [
+      "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+      "-hide_banner",
+      "-nostdin",
+      "-y",
+      "-i",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/out.mp4",
+      "-i",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/音声/編集用ミックス.wav",
+      "-map",
+      "0:v:0",
+      "-map",
+      "1:a:0",
+      "-c:v",
+      "copy",
+      "-c:a",
+      "aac",
+      "-b:a",
+      "192k",
+      "-t",
+      "1498.15",
+      "-movflags",
+      "+faststart",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/BGM末尾25秒_確認版.mp4"
+    ],
+    "exit_code": 0
+  },
+  {
+    "argv": [
+      "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+      "-v",
+      "error",
+      "-i",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/out.mp4",
+      "-map",
+      "0:v:0",
+      "-c",
+      "copy",
+      "-f",
+      "hash",
+      "-hash",
+      "sha256",
+      "-"
+    ],
+    "exit_code": 0
+  },
+  {
+    "argv": [
+      "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+      "-v",
+      "error",
+      "-i",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/BGM末尾25秒_確認版.mp4",
+      "-map",
+      "0:v:0",
+      "-c",
+      "copy",
+      "-f",
+      "hash",
+      "-hash",
+      "sha256",
+      "-"
+    ],
+    "exit_code": 0
+  },
+  {
+    "argv": [
+      "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+      "-hide_banner",
+      "-nostdin",
+      "-y",
+      "-stream_loop",
+      "-1",
+      "-i",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/音声/終章BGM.mp3",
+      "-filter_complex",
+      "[0:a]atrim=0:25.000000,asetpts=PTS-STARTPTS,loudnorm=I=-31:TP=-9:LRA=8,aresample=24000,aformat=channel_layouts=mono,afade=t=in:d=3.000000,afade=t=out:st=20.000000:d=5.000000,asetpts=PTS-STARTPTS[tail_music];anullsrc=r=24000:cl=mono,atrim=end_sample=35355600,asetpts=PTS-STARTPTS[quiet];[quiet][tail_music]concat=n=2:v=0:a=1[out]",
+      "-map",
+      "[out]",
+      "-t",
+      "1498.15",
+      "-ar",
+      "24000",
+      "-ac",
+      "1",
+      "-c:a",
+      "pcm_s16le",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/bgm_tail/BGM検査.wav"
+    ],
+    "exit_code": 0
+  },
+  {
+    "argv": [
+      "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+      "-v",
+      "error",
+      "-i",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/BGM末尾25秒_確認版.mp4",
+      "-f",
+      "null",
+      "-"
+    ],
+    "exit_code": 0
+  }
+]

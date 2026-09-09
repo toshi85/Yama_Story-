@@ -1,0 +1,89 @@
+{
+  "kind": "correction",
+  "requested_kind": "correction",
+  "shot_id": 36,
+  "brief": "ここは石を別素材で生成して、クマめがけて飛んでいくようにして。クマは右側に生成して。人間に威嚇してる横向き画像です。",
+  "target": "asset",
+  "prompt": "",
+  "id": "20260908154856_dcfda0ac",
+  "state": "failed",
+  "created_at": "2026-09-08T06:48:56.270806+00:00",
+  "updated_at": "2026-09-08T06:49:33.159896+00:00",
+  "message": "修正に必要な機能を利用できません：石を別素材として生成し、人間側から右側のクマへ飛ばすには、追加素材の生成と独立レイヤーへの移動設定が必要です。指定された手順ではasset生成を複数回指定できず、追加画像レイヤーの設定形式もないため、この部分は処理できません。",
+  "shot": {
+    "id": 36,
+    "start_frame": 4440,
+    "end_frame": 4527,
+    "asset_id": "ASSET-036",
+    "asset_file": "画像/ASSET-036.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-036-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "6人は声を上げ、石を投げつけます。",
+    "edit_note": "怒鳴り声と石が岩に当たる音のSE。画面を短く揺らす。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      -230,
+      -72
+    ],
+    "move_sec": 2.4,
+    "base_x": -332,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 91345,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9"
+      }
+    ],
+    "asset_id": "ASSET-036",
+    "shot_id": 36,
+    "snapshot": "check/studio/jobs/20260908154856_dcfda0ac/script-context.txt",
+    "snapshot_sha256": "c69b38cf4b9050b52e8afb198ae8747fd8a4b32b5198a4393e4cf9964b699ebc"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908154856_dcfda0ac/routing-response.json",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-036.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 1
+}

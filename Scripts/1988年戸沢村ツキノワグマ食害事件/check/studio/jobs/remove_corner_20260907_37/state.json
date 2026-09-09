@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_37",
+  "kind": "text",
+  "shot_id": 37,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.313505+00:00",
+  "updated_at": "2026-09-07T13:09:59.316412+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 37,
+    "start_frame": 4527,
+    "end_frame": 4670,
+    "asset_id": "ASSET-037",
+    "asset_file": "画像/ASSET-037.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-037-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "しかし、それでもクマは執念深くその場に居座り続けました。",
+    "edit_note": "クマをまったく動かさず、周囲だけを揺らす。「石を投げても動かない」テロップ。",
+    "speech": "",
+    "motion": "walk_cross",
+    "drift": [
+      -409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "石を投げても動かない"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

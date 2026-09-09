@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_182",
+  "kind": "text",
+  "shot_id": 182,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.609590+00:00",
+  "updated_at": "2026-09-07T13:09:59.615546+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 182,
+    "start_frame": 25848,
+    "end_frame": 25947,
+    "asset_id": "ASSET-182",
+    "asset_file": "画像/ASSET-182.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "それが、この動物についての定説でした。",
+    "edit_note": "空けてある挿絵の枠に、181のクマの静止画を編集ではめ込み、「定説」のテロップを重ねる。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "定説"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "shot_id": 6,
+  "audio": "音声/編集用ミックス.wav",
+  "audio_sha256": "604f5f9030e70dc2981a6e2d32860a1cdce497a28152131d3af5013959d96c40",
+  "method": "faster-whisper small / local cached model / observed word timestamps",
+  "time_origin": "カット先頭=0秒",
+  "words": [
+    {
+      "word": "な",
+      "start": 0.073,
+      "end": 0.173,
+      "probability": 0.7462865114212036
+    },
+    {
+      "word": "ぜ、",
+      "start": 0.173,
+      "end": 0.373,
+      "probability": 0.9995249509811401
+    },
+    {
+      "word": "建",
+      "start": 0.633,
+      "end": 0.733,
+      "probability": 0.27903828024864197
+    },
+    {
+      "word": "て",
+      "start": 0.733,
+      "end": 0.953,
+      "probability": 0.6636342406272888
+    },
+    {
+      "word": "続",
+      "start": 0.953,
+      "end": 1.153,
+      "probability": 0.9952740669250488
+    },
+    {
+      "word": "け",
+      "start": 1.153,
+      "end": 1.373,
+      "probability": 0.9915832877159119
+    },
+    {
+      "word": "に",
+      "start": 1.373,
+      "end": 1.453,
+      "probability": 0.9982641339302063
+    },
+    {
+      "word": "同",
+      "start": 1.453,
+      "end": 1.633,
+      "probability": 0.8591499924659729
+    },
+    {
+      "word": "じ",
+      "start": 1.633,
+      "end": 1.833,
+      "probability": 0.9866427183151245
+    },
+    {
+      "word": "村",
+      "start": 1.833,
+      "end": 2.033,
+      "probability": 0.9815483689308167
+    },
+    {
+      "word": "で",
+      "start": 2.033,
+      "end": 2.213,
+      "probability": 0.9978673458099365
+    },
+    {
+      "word": "3",
+      "start": 2.213,
+      "end": 2.453,
+      "probability": 0.9493306875228882
+    },
+    {
+      "word": "度",
+      "start": 2.453,
+      "end": 2.633,
+      "probability": 0.9506575465202332
+    },
+    {
+      "word": "も",
+      "start": 2.633,
+      "end": 2.813,
+      "probability": 0.9980741739273071
+    },
+    {
+      "word": "悲",
+      "start": 2.813,
+      "end": 3.033,
+      "probability": 0.6244296133518219
+    },
+    {
+      "word": "劇",
+      "start": 3.033,
+      "end": 3.293,
+      "probability": 0.9699690341949463
+    },
+    {
+      "word": "が",
+      "start": 3.293,
+      "end": 3.453,
+      "probability": 0.9966763257980347
+    },
+    {
+      "word": "繰",
+      "start": 3.453,
+      "end": 3.573,
+      "probability": 0.9971105754375458
+    },
+    {
+      "word": "り",
+      "start": 3.573,
+      "end": 3.733,
+      "probability": 0.9979645013809204
+    },
+    {
+      "word": "返",
+      "start": 3.733,
+      "end": 3.853,
+      "probability": 0.9958175122737885
+    },
+    {
+      "word": "さ",
+      "start": 3.853,
+      "end": 4.093,
+      "probability": 0.993647038936615
+    },
+    {
+      "word": "れた",
+      "start": 4.093,
+      "end": 4.293,
+      "probability": 0.9948133230209351
+    },
+    {
+      "word": "の",
+      "start": 4.293,
+      "end": 4.473,
+      "probability": 0.9967705011367798
+    },
+    {
+      "word": "か、",
+      "start": 4.473,
+      "end": 4.653,
+      "probability": 0.998955249786377
+    }
+  ],
+  "anchors": [
+    {
+      "text": "3度も",
+      "start": 2.213,
+      "confidence": "自動音声認識の推定時刻（3:0.949、度:0.951、も:0.998）"
+    }
+  ]
+}

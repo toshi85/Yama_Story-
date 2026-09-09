@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_172",
+  "kind": "text",
+  "shot_id": 172,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.567191+00:00",
+  "updated_at": "2026-09-07T13:09:59.572800+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 172,
+    "start_frame": 24327,
+    "end_frame": 24482,
+    "asset_id": "ASSET-172",
+    "asset_file": "画像/ASSET-172.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-172-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "こうしてこのクマが、3人目を襲った個体だと証明されたのです。",
+    "edit_note": "クマから3件目の現場へ1本だけ赤い線を引き、1件目と2件目へは線を引かない。「3人目＝確定」テロップ。",
+    "speech": "",
+    "motion": "walk_cross",
+    "drift": [
+      563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "3人目＝確定"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "kind": "correction",
+  "requested_kind": "correction",
+  "shot_id": 6,
+  "brief": "「なぜ同じ村で」と「3度も悲劇が〜」のテキストが出る間隔が早いです。「3度も悲劇が〜」は、「3度も〜」のナレーションのタイミングに合わせて出すようにして。",
+  "target": "asset",
+  "prompt": "",
+  "base_override": {
+    "question_outline": 4
+  },
+  "id": "20260908121348_d2cde63c",
+  "state": "review",
+  "created_at": "2026-09-08T03:13:48.176256+00:00",
+  "updated_at": "2026-09-08T03:35:16.657542+00:00",
+  "message": "指示した修正を反映しました。確認してください",
+  "shot": {
+    "id": 6,
+    "start_frame": 647,
+    "end_frame": 793,
+    "asset_id": "ASSET-006",
+    "asset_file": "画像/ASSET-006.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "なぜ、立て続けに同じ村で3度も悲劇が繰り返されたのか。",
+    "edit_note": "上部の余白に「なぜ、同じ村で3度も繰り返されたのか」を白文字でゆっくりフェードイン。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "なぜ同じ村で、3度も悲劇が繰り返されたのか？",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false,
+    "question_outline": 4.0
+  },
+  "worker_pid": 35421,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006"
+      },
+      {
+        "file": "check/audio-timings/6.json",
+        "sha256": "aa18f59a5b84ce7bb526bfa097399e410bad05f7a3f0925c128ceb0695728cd2"
+      }
+    ],
+    "asset_id": "ASSET-006",
+    "shot_id": 6,
+    "snapshot": "check/studio/jobs/20260908121348_d2cde63c/script-context.txt",
+    "snapshot_sha256": "5a7e9eb933d8cbc3aba3be03b0040f29f7688b78794b068d7c21ff7d7bae8a0f"
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "6",
+    "--override",
+    "{\"question_outline\": 4, \"question_timings\": [0.5, 2.213]}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "adjust",
+        "patch": {
+          "question_timings": [
+            0.5,
+            2.213
+          ]
+        }
+      }
+    ],
+    "explanation": "「なぜ同じ村で」は従来の開始時刻を維持し、「3度も悲劇が〜」は実音声の「3度も」が始まるカット内2.213秒に合わせて表示します。",
+    "unsupported": ""
+  },
+  "step_index": 1,
+  "patch": {
+    "question_outline": 4,
+    "question_timings": [
+      0.5,
+      2.213
+    ]
+  },
+  "input_sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006",
+  "explanation": "「なぜ同じ村で」は従来の開始時刻を維持し、「3度も悲劇が〜」は実音声の「3度も」が始まるカット内2.213秒に合わせて表示します。",
+  "rendered_override": {
+    "question_outline": 4,
+    "question_timings": [
+      0.5,
+      2.213
+    ]
+  },
+  "preview": "check/studio/jobs/20260908121348_d2cde63c/preview.mp4",
+  "awaiting_confirmation": false
+}

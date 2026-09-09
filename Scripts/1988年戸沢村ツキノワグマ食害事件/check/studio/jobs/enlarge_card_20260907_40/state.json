@@ -1,0 +1,49 @@
+{
+  "id": "enlarge_card_20260907_40",
+  "kind": "text",
+  "shot_id": 40,
+  "state": "adopted",
+  "patch": {
+    "card_font_size": 78
+  },
+  "created_at": "2026-09-07T13:11:18.024404+00:00",
+  "updated_at": "2026-09-07T13:11:18.032721+00:00",
+  "message": "本人指定：黒背景カードの白文字を全体的に30％拡大",
+  "before_override": {},
+  "before_shot": {
+    "id": 40,
+    "start_frame": 5037,
+    "end_frame": 5070,
+    "asset_id": "ASSET-040",
+    "asset_file": "",
+    "asset_kind": "black_card",
+    "background_file": "",
+    "reused": false,
+    "style": "black_card",
+    "narration": "翌朝5時",
+    "edit_note": "黒背景に「翌朝 5時」を白テキストでフェードイン（2秒）。鳥の鳴き始めるSEを重ねる。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "翌朝 5時"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "card_font_size": 78
+  }
+}

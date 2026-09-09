@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_157",
+  "kind": "text",
+  "shot_id": 157,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.520099+00:00",
+  "updated_at": "2026-09-07T13:09:59.525333+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 157,
+    "start_frame": 21879,
+    "end_frame": 22214,
+    "asset_id": "ASSET-157",
+    "asset_file": "画像/ASSET-157.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-157-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "まだ他のクマが潜んでいる場合に備え、檻を2カ所に設置し、毎日見回ったといいます。しかし、結局それらしいクマを見つけることはありませんでした。",
+    "edit_note": "「檻 2カ所」「毎日見回り」の2行テロップ。空の檻を2秒見せてから、肩を落とす動きを付ける。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "檻 2カ所"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "20260908160659_repair_24",
+  "kind": "image",
+  "shot_id": 24,
+  "shot": {
+    "id": 24,
+    "start_frame": 3027,
+    "end_frame": 3128,
+    "asset_id": "ASSET-024",
+    "asset_file": "画像/ASSET-024.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "両足の先にも、腕にも、傷がありました。",
+    "edit_note": "左から右へゆっくり流す（4秒）。「両足の先」「腕」は文字にせず、ナレーションだけで受ける。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "patch": {
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-022-1.png",
+    "scale": 0.9,
+    "character_position": [
+      270,
+      200
+    ],
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "asset_file": "check/studio/jobs/20260908160659_repair_24/candidate.png"
+  },
+  "state": "review",
+  "created_at": "2026-09-08T07:06:59.613224+00:00",
+  "updated_at": "2026-09-08T07:07:02.733802+00:00",
+  "brief": "キャラ画像と実写背景を合成",
+  "message": "修正後のカットを確認できます",
+  "candidate": "check/studio/jobs/20260908160659_repair_24/candidate.png",
+  "target": "asset",
+  "rendered_override": {
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-022-1.png",
+    "scale": 0.9,
+    "character_position": [
+      270,
+      200
+    ],
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "asset_file": "check/studio/jobs/20260908160659_repair_24/candidate.png"
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "24",
+    "--override",
+    "{\"asset_kind\": \"character\", \"background_file\": \"画像/ASSET-022-1.png\", \"scale\": 0.9, \"character_position\": [270, 200], \"speech\": \"\", \"motion\": \"still\", \"motion_path\": null, \"same_as_prev\": false, \"asset_file\": \"check/studio/jobs/20260908160659_repair_24/candidate.png\"}"
+  ],
+  "worker_pid": 6541,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908160659_repair_24/preview.mp4",
+  "edit_layers": {
+    "character": "check/studio/jobs/20260908160659_repair_24/edit_layers/character.png",
+    "background": "画像/ASSET-022-1.png",
+    "meta": {
+      "pad_l": 0,
+      "pad_t": 0,
+      "char_w": 632,
+      "char_h": 356,
+      "cw": 632,
+      "ch": 356,
+      "bubble": null,
+      "char_center": [
+        331.0,
+        177.5
+      ]
+    },
+    "source": "check/studio/jobs/20260908160659_repair_24/candidate.png",
+    "source_sha256": "48b1f2ed90fdeb57adc6bfa5419abcc6b5455dc83b7f5678b3e84503a5ca7cc6"
+  }
+}

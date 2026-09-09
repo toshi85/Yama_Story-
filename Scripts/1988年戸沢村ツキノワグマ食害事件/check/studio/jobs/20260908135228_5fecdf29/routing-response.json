@@ -1,0 +1,1 @@
+{"steps":[{"kind":"adjust","patch":{"question":"","telop":"なぜ人を食べたのか？","telop_position":[640,360],"telop_start":0.5,"telop_anim":"none"}}],"explanation":"左右から出る質問表示を解除し、中央に「なぜ人を食べたのか？」を表示します。白い明朝＋黒縁・影を維持し、画像は再生成しません。","unsupported":"「人」だけを赤字にする部分的な文字色指定は、使用可能な引数では対応できません。"}

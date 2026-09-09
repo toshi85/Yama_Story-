@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_105",
+  "kind": "text",
+  "shot_id": 105,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.418668+00:00",
+  "updated_at": "2026-09-07T13:09:59.422810+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 105,
+    "start_frame": 15168,
+    "end_frame": 15292,
+    "asset_id": "ASSET-105",
+    "asset_file": "画像/ASSET-105.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-105-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "酒田市に住む61歳の女性と、その家族です。",
+    "edit_note": "「酒田市在住・61歳」の2行テロップをCHAR-04の下に。柔らかいBGM。",
+    "speech": "",
+    "motion": "breathe",
+    "drift": [
+      -307,
+      -28
+    ],
+    "move_sec": 3.1,
+    "base_x": 281,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "酒田市在住・61歳"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

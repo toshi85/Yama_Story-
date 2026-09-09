@@ -1,0 +1,174 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "shot_id": 13,
+  "brief": "画像は、二人が端あってる感じにして欲しいので、男性と女性はお互いに見てる目線にして。いまは、こちらを向いていておかしいです。また、セリフは男性に「いってくるよ」と入れて。",
+  "target": "asset",
+  "prompt": "Edit the reference image as a transparent character layer for a departure scene on the morning of May 25, 1988, in Tozawa Village, Yamagata, Japan. Keep the same two fictional cartoon characters, full-body framing, square composition, thick black outlines, colors, and chibi proportions. Keep the man on the left and the woman on the right, preserving their existing clothing, hairstyles, accessories, and the man's straw hat and woven backpack basket. Turn the man's head and gaze toward the woman on his right, and turn the woman's head and gaze toward the man on her left, creating clear mutual eye contact. Neither character should look at the viewer. The man is about to leave to gather bamboo shoots, looking back toward his wife with one hand raised in a small casual farewell and his mouth slightly open as if saying 'いってくるよ'. The woman looks directly at him with a gentle everyday smile, holding the dishcloth in both hands. Adjust their upper bodies slightly toward one another so the exchange feels natural. Keep both figures fully visible and separate. Preserve a fully transparent background, including the space between the figures. No scenery, additional people, text, captions, lettering, or speech bubbles; the man's Japanese dialogue will be added during editing. Do not attempt to reconstruct the real victims' appearances.",
+  "id": "20260908120901_bb280478",
+  "state": "adopted",
+  "created_at": "2026-09-08T03:09:01.223044+00:00",
+  "updated_at": "2026-09-08T05:56:20.957844+00:00",
+  "message": "指示した修正を反映しました。確認してください",
+  "shot": {
+    "id": 13,
+    "start_frame": 1570,
+    "end_frame": 1716,
+    "asset_id": "ASSET-013",
+    "asset_file": "画像/ASSET-013.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-013-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "家族にタケノコを採りにいくと伝え、午前10時ごろに出発。",
+    "edit_note": "「午前10時ごろ」テロップを左上に。日常の音（鶏の声、遠くの軽トラ）だけ。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 32435,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006"
+      }
+    ],
+    "asset_id": "ASSET-013",
+    "shot_id": 13,
+    "snapshot": "check/studio/jobs/20260908120901_bb280478/script-context.txt",
+    "snapshot_sha256": "423f113bd06f77e41b9a158c6b958f6e7ffaacc783ad33d5da6a475a9be47592"
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "13",
+    "--override",
+    "{\"telop\": \"\", \"asset_file\": \"check/studio/jobs/20260908120901_bb280478/candidate.png\", \"asset_kind\": \"character\", \"speech\": \"いってくるよ\"}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      },
+      {
+        "kind": "adjust",
+        "patch": {
+          "speech": "いってくるよ"
+        }
+      }
+    ],
+    "explanation": "人物レイヤーの画調と透過背景を維持し、男性と女性が互いに顔と目線を向けて話している姿に修正します。男性のセリフ「いってくるよ」は画像に描き込まず、編集側で追加します。",
+    "unsupported": ""
+  },
+  "step_index": 2,
+  "input_sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006",
+  "explanation": "人物レイヤーの画調と透過背景を維持し、男性と女性が互いに顔と目線を向けて話している姿に修正します。男性のセリフ「いってくるよ」は画像に描き込まず、編集側で追加します。",
+  "candidate": "check/studio/jobs/20260908120901_bb280478/candidate.png",
+  "source": "check/studio/jobs/20260908120901_bb280478/candidate.png",
+  "patch": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908120901_bb280478/candidate.png",
+    "asset_kind": "character",
+    "speech": "いってくるよ"
+  },
+  "rendered_override": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908120901_bb280478/candidate.png",
+    "asset_kind": "character",
+    "speech": "いってくるよ"
+  },
+  "preview": "check/studio/jobs/20260908120901_bb280478/preview.mp4",
+  "awaiting_confirmation": false,
+  "before_override": {
+    "telop": ""
+  },
+  "before_shot": {
+    "id": 13,
+    "start_frame": 1570,
+    "end_frame": 1716,
+    "asset_id": "ASSET-013",
+    "asset_file": "画像/ASSET-013.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-013-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "家族にタケノコを採りにいくと伝え、午前10時ごろに出発。",
+    "edit_note": "「午前10時ごろ」テロップを左上に。日常の音（鶏の声、遠くの軽トラ）だけ。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908120901_bb280478/candidate.png",
+    "asset_kind": "character",
+    "speech": "いってくるよ"
+  },
+  "edit_layers": {
+    "character": "check/studio/jobs/20260908120901_bb280478/edit_layers/character.png",
+    "background": "画像/ASSET-013-1.png",
+    "meta": {
+      "pad_l": 0,
+      "pad_t": 80,
+      "char_w": 396,
+      "char_h": 396,
+      "cw": 506,
+      "ch": 476,
+      "bubble": [
+        210,
+        0,
+        296,
+        116
+      ]
+    },
+    "source": "check/studio/jobs/20260908120901_bb280478/candidate.png",
+    "source_sha256": "06d167207bf7ee4260d4c1abcd5b66c3665ae0c080234b5be0bd87bcf67f33f6"
+  }
+}

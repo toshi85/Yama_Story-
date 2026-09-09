@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_281",
+  "kind": "text",
+  "shot_id": 281,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:10:00.065387+00:00",
+  "updated_at": "2026-09-07T13:10:00.074033+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 281,
+    "start_frame": 41818,
+    "end_frame": 41897,
+    "asset_id": "ASSET-281",
+    "asset_file": "画像/ASSET-281.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-281-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "見かけることも、珍しくありません。",
+    "edit_note": "4頭を斜面のあちこちに配置し、1頭ずつ順に点灯させる。「珍しくない」テロップ。",
+    "speech": "",
+    "motion": "breathe",
+    "drift": [
+      179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "珍しくない"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

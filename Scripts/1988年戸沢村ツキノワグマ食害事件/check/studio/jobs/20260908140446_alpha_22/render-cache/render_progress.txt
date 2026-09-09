@@ -1,0 +1,12 @@
+frame=192
+fps=0.00
+stream_0_0_q=-1.0
+bitrate= 250.1kbits/s
+total_size=200080
+out_time_us=6400000
+out_time_ms=6400000
+out_time=00:00:06.400000
+dup_frames=0
+drop_frames=0
+speed=20.9x
+progress=end

@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_257",
+  "kind": "text",
+  "shot_id": 257,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.941690+00:00",
+  "updated_at": "2026-09-07T13:09:59.950202+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 257,
+    "start_frame": 37369,
+    "end_frame": 37591,
+    "asset_id": "ASSET-257",
+    "asset_file": "画像/ASSET-257.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-257-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "飼い主に受けた傷が痛み、いつしか人に憎しみを抱くようになったのではないか？と語っています。",
+    "edit_note": "「あくまで推測」の表示を維持したまま、証言を字幕で表示する。断定のテロップは出さない。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "あくまで推測"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

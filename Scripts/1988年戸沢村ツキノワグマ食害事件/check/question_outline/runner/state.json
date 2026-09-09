@@ -1,0 +1,23 @@
+{
+  "status": "review_required",
+  "pid": 81979,
+  "completed": [
+    "render",
+    "verify"
+  ],
+  "fingerprint": "bf975ee7e89513a41913bec9112fe9af57890e5e3303762977a34aa09cdc68c9",
+  "steps": 2,
+  "detail": "修正後の映像を本人確認",
+  "production_complete": false,
+  "step": "verify",
+  "worker_pid": null,
+  "heartbeat": 1788788582.03123,
+  "output_hashes": {
+    "render": {
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/問い黒縁修正_確認版.mp4": "151487ca40c30f969639728884b11edc8a07971859d89a2851da8b7acabcc849"
+    },
+    "verify": {
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/question_outline/result.json": "479ca323f3b21d50a750e67e13439deb2d1b4df87404a76398c8b721730f8456"
+    }
+  }
+}

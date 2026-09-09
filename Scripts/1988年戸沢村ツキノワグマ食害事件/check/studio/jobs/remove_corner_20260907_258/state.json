@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_258",
+  "kind": "text",
+  "shot_id": 258,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.950974+00:00",
+  "updated_at": "2026-09-07T13:09:59.958719+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 258,
+    "start_frame": 37591,
+    "end_frame": 37753,
+    "asset_id": "ASSET-258",
+    "asset_file": "画像/ASSET-258.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-258-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "この話を聞き取って報告書にまとめたのが、日本クマネットワークです。",
+    "edit_note": "「日本クマネットワーク」を編集でテロップとして表示。団体名は画像に描かせない。",
+    "speech": "",
+    "motion": "walk_cross",
+    "drift": [
+      486,
+      -57
+    ],
+    "move_sec": 1.4,
+    "base_x": -409,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "日本クマネットワーク"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

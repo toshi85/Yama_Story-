@@ -1,0 +1,227 @@
+{
+  "id": "20260908171347",
+  "kind": "image",
+  "shot_id": 21,
+  "shot": {
+    "id": 21,
+    "start_frame": 2651,
+    "end_frame": 2762,
+    "asset_id": "ASSET-021",
+    "asset_file": "地形図/ASSET-021.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "集落から、5、600メートルほど離れた付近。",
+    "edit_note": "集落に「神田地区」ラベル。集落を中心に半径600mの白い円を描き「約500〜600m 上流」と表示。第1の現場の正確な位置は非公表のため、ピンは打たず円と矢印だけで示す。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      230,
+      -72
+    ],
+    "move_sec": 2.4,
+    "base_x": -332,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "patch": {
+    "narration": "集落から500〜600メートルほど\n離れた付近。",
+    "asset_file": "check/studio/jobs/20260908163603_final_21/candidate.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "telops": [],
+    "map_pins": [
+      {
+        "label": "集落",
+        "x": 300,
+        "y": 455,
+        "size": 40,
+        "font": "mincho"
+      },
+      {
+        "label": "現場付近",
+        "x": 900,
+        "y": 255,
+        "size": 40,
+        "font": "mincho"
+      }
+    ],
+    "overlays": [
+      {
+        "type": "text",
+        "text": "約500〜600m上流",
+        "x": 635,
+        "y": 320,
+        "size": 36,
+        "start": 0,
+        "end": 3.7,
+        "anim": "none",
+        "font": "mincho"
+      },
+      {
+        "type": "text",
+        "text": "位置関係の概略図",
+        "x": 1070,
+        "y": 530,
+        "size": 23,
+        "start": 0,
+        "end": 3.7,
+        "anim": "none",
+        "font": "mincho"
+      }
+    ]
+  },
+  "state": "complete",
+  "created_at": "2026-09-08T07:36:03.695655+00:00",
+  "updated_at": "2026-09-08T08:14:45.974857+00:00",
+  "brief": "集落と現場付近を同時に見せる一枚の地図画像。二つのピン上のテキストはテロップと同じ明朝体。",
+  "message": "修正後のカットを確認できます",
+  "candidate": "check/studio/jobs/20260908163603_final_21/candidate.png",
+  "target": "asset",
+  "rendered_override": {
+    "narration": "集落から500〜600メートルほど\n離れた付近。",
+    "asset_file": "check/studio/jobs/20260908163603_final_21/candidate.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "telops": [],
+    "map_pins": [
+      {
+        "label": "集落",
+        "x": 300,
+        "y": 455,
+        "size": 40,
+        "font": "mincho"
+      },
+      {
+        "label": "現場付近",
+        "x": 900,
+        "y": 255,
+        "size": 40,
+        "font": "mincho"
+      }
+    ],
+    "overlays": [
+      {
+        "type": "text",
+        "text": "約500〜600m上流",
+        "x": 635,
+        "y": 320,
+        "size": 36,
+        "start": 0,
+        "end": 3.7,
+        "anim": "none",
+        "font": "mincho"
+      },
+      {
+        "type": "text",
+        "text": "位置関係の概略図",
+        "x": 1070,
+        "y": 530,
+        "size": 23,
+        "start": 0,
+        "end": 3.7,
+        "anim": "none",
+        "font": "mincho"
+      }
+    ]
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/quality-audits/20260908171347/quality/review-0.json",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/quality-audits/20260908171347/quality/attempt-0/frame-00.jpg",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/quality-audits/20260908171347/quality/attempt-0/frame-01.jpg",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/quality-audits/20260908171347/quality/attempt-0/frame-02.jpg",
+    "-"
+  ],
+  "worker_pid": 30534,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908163603_final_21/preview.mp4",
+  "edit_layers": null,
+  "quality_review": {
+    "ok": true,
+    "checks": [
+      {
+        "requirement": "最新指示の一枚の地図画像で集落と現場付近を同時に見せる",
+        "passed": true,
+        "evidence": "0.1秒・1.85秒・3.6333秒すべてで、左下の家屋が集まる集落と右上の現場付近が一枚の俯瞰画像内に見える。分割表示はない。"
+      },
+      {
+        "requirement": "最新の修正依頼に従い、集落と現場付近にピンを表示する",
+        "passed": true,
+        "evidence": "1.85秒で「集落」「現場付近」の赤いピンが明瞭に見える。最新の修正履歴は二つのピンを求めており、edit_noteの円と矢印による表示指定より優先して判定した。"
+      },
+      {
+        "requirement": "ピン上の文字を追加テロップと同じ明朝体で表示する",
+        "passed": true,
+        "evidence": "1.85秒の「集落」「現場付近」は「約500〜600m上流」と同じ明朝系の字形で、白文字に黒い縁取りがある。白い箱や帯はない。下部のナレーション字幕は別のゴシック体で表示されている。"
+      },
+      {
+        "requirement": "背景と文字が支障なく見え、位置関係の概略であることが伝わる",
+        "passed": true,
+        "evidence": "全添付時刻で集落の家屋、川、森林が見え、右下に「位置関係の概略図」と表示されている。透過の市松模様、文字の重複、追加テロップの不自然な分離は見られない。"
+      },
+      {
+        "requirement": "静止画から確認できる範囲で判定する",
+        "passed": true,
+        "evidence": "確認対象は0.1秒・1.85秒・3.6333秒の映像表示。音声時刻資料は提示されていないため、音声内容や字幕との同期は判定していない。"
+      }
+    ],
+    "issues": [],
+    "repair_patch": {},
+    "media": {
+      "video": "check/studio/quality-audits/20260908171347/quality/attempt-0/preview.mp4",
+      "video_sha256": "e7a4f41597d871b8d11385c836757bc2e1f2f7304fdcbbbd79cbaaf6d5f5f385",
+      "duration": 3.7,
+      "frames": [
+        {
+          "time": 0.1,
+          "file": "check/studio/quality-audits/20260908171347/quality/attempt-0/frame-00.jpg"
+        },
+        {
+          "time": 1.85,
+          "file": "check/studio/quality-audits/20260908171347/quality/attempt-0/frame-01.jpg"
+        },
+        {
+          "time": 3.6333,
+          "file": "check/studio/quality-audits/20260908171347/quality/attempt-0/frame-02.jpg"
+        }
+      ]
+    },
+    "attempt": 0,
+    "status": "passed"
+  }
+}

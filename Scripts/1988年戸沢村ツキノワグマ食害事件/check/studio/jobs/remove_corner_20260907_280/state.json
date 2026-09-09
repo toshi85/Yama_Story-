@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_280",
+  "kind": "text",
+  "shot_id": 280,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:10:00.056031+00:00",
+  "updated_at": "2026-09-07T13:10:00.064689+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 280,
+    "start_frame": 41688,
+    "end_frame": 41818,
+    "asset_id": "ASSET-280",
+    "asset_file": "画像/ASSET-280.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-280-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "この村には、いまも数十頭のツキノワグマが暮らしており、",
+    "edit_note": "クマの後ろに同じシルエットを薄く数十個並べ、頭数の多さを一目で見せる。「数十頭」テロップ。",
+    "speech": "",
+    "motion": "walk_cross",
+    "drift": [
+      563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "数十頭"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

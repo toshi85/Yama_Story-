@@ -1,0 +1,158 @@
+{
+  "id": "20260908163140_final_21",
+  "kind": "image",
+  "shot_id": 21,
+  "shot": {
+    "id": 21,
+    "start_frame": 2651,
+    "end_frame": 2762,
+    "asset_id": "ASSET-021",
+    "asset_file": "地形図/ASSET-021.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "集落から、5、600メートルほど離れた付近。",
+    "edit_note": "集落に「神田地区」ラベル。集落を中心に半径600mの白い円を描き「約500〜600m 上流」と表示。第1の現場の正確な位置は非公表のため、ピンは打たず円と矢印だけで示す。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      230,
+      -72
+    ],
+    "move_sec": 2.4,
+    "base_x": -332,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "patch": {
+    "asset_file": "check/studio/jobs/20260908163140_final_21/candidate.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "telops": [],
+    "map_pins": [
+      {
+        "label": "集落",
+        "x": 300,
+        "y": 455,
+        "size": 40,
+        "font": "mincho"
+      },
+      {
+        "label": "現場付近",
+        "x": 900,
+        "y": 255,
+        "size": 40,
+        "font": "mincho"
+      }
+    ],
+    "overlays": [
+      {
+        "type": "text",
+        "text": "約500〜600m上流",
+        "x": 635,
+        "y": 320,
+        "size": 36,
+        "start": 0,
+        "end": 3.7,
+        "anim": "none",
+        "font": "mincho"
+      },
+      {
+        "type": "text",
+        "text": "位置関係の概略図",
+        "x": 1070,
+        "y": 530,
+        "size": 23,
+        "start": 0,
+        "end": 3.7,
+        "anim": "none",
+        "font": "mincho"
+      }
+    ]
+  },
+  "state": "review",
+  "created_at": "2026-09-08T07:31:40.500056+00:00",
+  "updated_at": "2026-09-08T07:31:43.117081+00:00",
+  "brief": "1枚の地図画像に集落と現場付近のピン・テロップと同じ明朝体",
+  "message": "修正後のカットを確認できます",
+  "candidate": "check/studio/jobs/20260908163140_final_21/candidate.png",
+  "target": "asset",
+  "rendered_override": {
+    "asset_file": "check/studio/jobs/20260908163140_final_21/candidate.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "telops": [],
+    "map_pins": [
+      {
+        "label": "集落",
+        "x": 300,
+        "y": 455,
+        "size": 40,
+        "font": "mincho"
+      },
+      {
+        "label": "現場付近",
+        "x": 900,
+        "y": 255,
+        "size": 40,
+        "font": "mincho"
+      }
+    ],
+    "overlays": [
+      {
+        "type": "text",
+        "text": "約500〜600m上流",
+        "x": 635,
+        "y": 320,
+        "size": 36,
+        "start": 0,
+        "end": 3.7,
+        "anim": "none",
+        "font": "mincho"
+      },
+      {
+        "type": "text",
+        "text": "位置関係の概略図",
+        "x": 1070,
+        "y": 530,
+        "size": 23,
+        "start": 0,
+        "end": 3.7,
+        "anim": "none",
+        "font": "mincho"
+      }
+    ]
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "21",
+    "--override",
+    "{\"asset_file\": \"check/studio/jobs/20260908163140_final_21/candidate.png\", \"asset_kind\": \"image\", \"background_file\": \"\", \"speech\": \"\", \"motion\": \"still\", \"motion_path\": null, \"same_as_prev\": false, \"pan\": \"\", \"telops\": [], \"map_pins\": [{\"label\": \"集落\", \"x\": 300, \"y\": 455, \"size\": 40, \"font\": \"mincho\"}, {\"label\": \"現場付近\", \"x\": 900, \"y\": 255, \"size\": 40, \"font\": \"mincho\"}], \"overlays\": [{\"type\": \"text\", \"text\": \"約500〜600m上流\", \"x\": 635, \"y\": 320, \"size\": 36, \"start\": 0, \"end\": 3.7, \"anim\": \"none\", \"font\": \"mincho\"}, {\"type\": \"text\", \"text\": \"位置関係の概略図\", \"x\": 1070, \"y\": 530, \"size\": 23, \"start\": 0, \"end\": 3.7, \"anim\": \"none\", \"font\": \"mincho\"}]}"
+  ],
+  "worker_pid": 14163,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908163140_final_21/preview.mp4",
+  "edit_layers": null
+}

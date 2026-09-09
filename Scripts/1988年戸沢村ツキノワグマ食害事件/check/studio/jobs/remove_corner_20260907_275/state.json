@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_275",
+  "kind": "text",
+  "shot_id": 275,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:10:00.037774+00:00",
+  "updated_at": "2026-09-07T13:10:00.045913+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 275,
+    "start_frame": 40930,
+    "end_frame": 41112,
+    "asset_id": "ASSET-275",
+    "asset_file": "画像/ASSET-275.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-275-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "結局、加害グマがかつて村で飼われていたのかどうかは、確定できていません。",
+    "edit_note": "2つの間の点線を途中で切り、そこに「？」を編集で置く。「確定できていない」テロップ。BGMを落として次へ。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      307,
+      -28
+    ],
+    "move_sec": 3.1,
+    "base_x": 281,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "確定できていない"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

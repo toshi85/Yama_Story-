@@ -1,0 +1,99 @@
+{
+  "kind": "adjust",
+  "requested_kind": "adjust",
+  "shot_id": 17,
+  "brief": "カット内の位置・文言・人物の動きをまとめて編集",
+  "target": "asset",
+  "prompt": "",
+  "patch": {
+    "speech": "もしもし！",
+    "bubble_dx": 270,
+    "bubble_dy": 0,
+    "motion": "still",
+    "move_sec": 2,
+    "amount": 1,
+    "scale": 1,
+    "motion_path": null
+  },
+  "id": "20260908133350_04532950",
+  "state": "review",
+  "created_at": "2026-09-08T04:33:50.953396+00:00",
+  "updated_at": "2026-09-08T04:47:25.894808+00:00",
+  "message": "修正後のカットを確認できます",
+  "shot": {
+    "id": 17,
+    "start_frame": 2062,
+    "end_frame": 2221,
+    "asset_id": "ASSET-017",
+    "asset_file": "画像/ASSET-017.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-017-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "暗くなっても戻らない夫を心配して、奥さんが警察に通報。",
+    "edit_note": "ダイヤルを回す音と呼び出し音のSE。「午後9時過ぎ 新庄署へ通報」テロップ。BGMは入れない。",
+    "speech": "",
+    "motion": "breathe",
+    "drift": [
+      -563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 46599,
+  "input_sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006",
+  "explanation": "カット内の位置・文言・人物の動きをまとめて編集",
+  "rendered_override": {
+    "telop": "",
+    "speech": "もしもし！",
+    "bubble_dx": 270,
+    "bubble_dy": 0,
+    "motion": "still",
+    "move_sec": 2,
+    "amount": 1,
+    "scale": 1,
+    "motion_path": null
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "17",
+    "--override",
+    "{\"telop\": \"\", \"speech\": \"もしもし！\", \"bubble_dx\": 270, \"bubble_dy\": 0, \"motion\": \"still\", \"move_sec\": 2, \"amount\": 1, \"scale\": 1, \"motion_path\": null}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908133350_04532950/preview.mp4",
+  "edit_layers": {
+    "character": "check/studio/jobs/20260908133350_04532950/edit_layers/character.png",
+    "background": "画像/ASSET-017-1.png",
+    "meta": {
+      "pad_l": 0,
+      "pad_t": 60,
+      "char_w": 396,
+      "char_h": 396,
+      "cw": 804,
+      "ch": 456,
+      "bubble": [
+        552,
+        0,
+        252,
+        116
+      ]
+    },
+    "source": "画像/ASSET-017.png",
+    "source_sha256": "0026a838b21c1f5e281877706d2175b390df548811d61f83be2dfdf08bc24109"
+  }
+}

@@ -1,0 +1,3 @@
+指定プロンプトで標準画像生成を1回実行し、[指定先へ保存しました](/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908174304_222477fb/candidate_asset.png)。
+
+確認の結果、青白い顔色・破れた服・脱力した手は反映されています。ただし、指定に反して頬に傷が入り、アルファ透過もありません。再生成は行わず、既存素材・shots.jsonは変更していません。

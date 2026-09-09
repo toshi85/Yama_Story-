@@ -1,0 +1,158 @@
+{
+  "id": "20260908161829_repair_21",
+  "kind": "image",
+  "shot_id": 21,
+  "shot": {
+    "id": 21,
+    "start_frame": 2651,
+    "end_frame": 2762,
+    "asset_id": "ASSET-021",
+    "asset_file": "地形図/ASSET-021.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "集落から、5、600メートルほど離れた付近。",
+    "edit_note": "集落に「神田地区」ラベル。集落を中心に半径600mの白い円を描き「約500〜600m 上流」と表示。第1の現場の正確な位置は非公表のため、ピンは打たず円と矢印だけで示す。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      230,
+      -72
+    ],
+    "move_sec": 2.4,
+    "base_x": -332,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "patch": {
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "telops": [],
+    "overlays": [
+      {
+        "type": "text",
+        "text": "集落から約500〜600m上流",
+        "x": 640,
+        "y": 115,
+        "size": 42,
+        "start": 0,
+        "end": 3.7,
+        "anim": "none",
+        "font": "mincho"
+      },
+      {
+        "type": "text",
+        "text": "位置関係の説明用イメージ",
+        "x": 640,
+        "y": 510,
+        "size": 25,
+        "start": 0,
+        "end": 3.7,
+        "anim": "none",
+        "font": "mincho"
+      }
+    ],
+    "map_pins": [
+      {
+        "label": "神田地区の集落",
+        "x": 320,
+        "y": 375,
+        "size": 38,
+        "font": "mincho"
+      },
+      {
+        "label": "現場付近",
+        "x": 960,
+        "y": 375,
+        "size": 38,
+        "font": "mincho"
+      }
+    ],
+    "asset_file": "check/studio/jobs/20260908161829_repair_21/candidate.png"
+  },
+  "state": "review",
+  "created_at": "2026-09-08T07:18:29.406233+00:00",
+  "updated_at": "2026-09-08T07:18:31.380263+00:00",
+  "brief": "集落と現場付近の画像を同時に表示し、各画像にピンを表示（位置関係の説明用イメージ）",
+  "message": "修正後のカットを確認できます",
+  "candidate": "check/studio/jobs/20260908161829_repair_21/candidate.png",
+  "target": "asset",
+  "rendered_override": {
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "telops": [],
+    "overlays": [
+      {
+        "type": "text",
+        "text": "集落から約500〜600m上流",
+        "x": 640,
+        "y": 115,
+        "size": 42,
+        "start": 0,
+        "end": 3.7,
+        "anim": "none",
+        "font": "mincho"
+      },
+      {
+        "type": "text",
+        "text": "位置関係の説明用イメージ",
+        "x": 640,
+        "y": 510,
+        "size": 25,
+        "start": 0,
+        "end": 3.7,
+        "anim": "none",
+        "font": "mincho"
+      }
+    ],
+    "map_pins": [
+      {
+        "label": "神田地区の集落",
+        "x": 320,
+        "y": 375,
+        "size": 38,
+        "font": "mincho"
+      },
+      {
+        "label": "現場付近",
+        "x": 960,
+        "y": 375,
+        "size": 38,
+        "font": "mincho"
+      }
+    ],
+    "asset_file": "check/studio/jobs/20260908161829_repair_21/candidate.png"
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "21",
+    "--override",
+    "{\"asset_kind\": \"image\", \"background_file\": \"\", \"speech\": \"\", \"motion\": \"still\", \"motion_path\": null, \"same_as_prev\": false, \"pan\": \"\", \"telops\": [], \"overlays\": [{\"type\": \"text\", \"text\": \"集落から約500〜600m上流\", \"x\": 640, \"y\": 115, \"size\": 42, \"start\": 0, \"end\": 3.7, \"anim\": \"none\", \"font\": \"mincho\"}, {\"type\": \"text\", \"text\": \"位置関係の説明用イメージ\", \"x\": 640, \"y\": 510, \"size\": 25, \"start\": 0, \"end\": 3.7, \"anim\": \"none\", \"font\": \"mincho\"}], \"map_pins\": [{\"label\": \"神田地区の集落\", \"x\": 320, \"y\": 375, \"size\": 38, \"font\": \"mincho\"}, {\"label\": \"現場付近\", \"x\": 960, \"y\": 375, \"size\": 38, \"font\": \"mincho\"}], \"asset_file\": \"check/studio/jobs/20260908161829_repair_21/candidate.png\"}"
+  ],
+  "worker_pid": 10474,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908161829_repair_21/preview.mp4",
+  "edit_layers": null
+}

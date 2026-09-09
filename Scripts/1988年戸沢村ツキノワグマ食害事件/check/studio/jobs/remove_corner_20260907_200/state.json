@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_200",
+  "kind": "text",
+  "shot_id": 200,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.678969+00:00",
+  "updated_at": "2026-09-07T13:09:59.685908+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 200,
+    "start_frame": 28081,
+    "end_frame": 28306,
+    "asset_id": "ASSET-200",
+    "asset_file": "画像/ASSET-200.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-200-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "一方で、年齢を重ねた大きなクマの場合、頭を狙う事例が圧倒的に多く報告されています。",
+    "edit_note": "2頭それぞれの頭の高さに水平線を引き、人のシルエットの膝と頭に当てて示す。「若いクマ＝足／大きなクマ＝頭」テロップ。",
+    "speech": "",
+    "motion": "drift_diag",
+    "drift": [
+      307,
+      -28
+    ],
+    "move_sec": 3.1,
+    "base_x": 281,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "若いクマ＝足／大きなクマ＝頭"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

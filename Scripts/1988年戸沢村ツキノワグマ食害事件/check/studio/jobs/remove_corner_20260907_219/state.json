@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_219",
+  "kind": "text",
+  "shot_id": 219,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.773936+00:00",
+  "updated_at": "2026-09-07T13:09:59.780418+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 219,
+    "start_frame": 31423,
+    "end_frame": 31555,
+    "asset_id": "ASSET-219",
+    "asset_file": "画像/ASSET-219.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "「小中学校のそばが、通り道になっている場所もあります」",
+    "edit_note": "斜面の獣道を赤い破線で編集でなぞり、フェンスとの距離を「約○m」ではなく矢印だけで示す。「通り道」テロップ。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "通り道"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

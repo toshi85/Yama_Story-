@@ -1,0 +1,102 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "shot_id": 39,
+  "brief": "ここは、キャラ画像でいいです。",
+  "target": "asset",
+  "prompt": "Create a standalone character layer for a Japanese mountain-incident documentary, matching the photorealistic style and subdued nighttime lighting of the supplied reference. Depict the six searchers who remained at the scene in Tozawa Village, Yamagata, late at night on May 25, 1988, now retreating downhill while watching for the bear behind them. They are anonymous adult local searchers, including volunteer firefighters, with generic faces, wearing simple work jackets, long trousers and sturdy footwear appropriate to rural Japan in 1988 and late May. Show all six full-length in a staggered diagonal line, viewed slightly from above, descending toward the foreground. Their bodies are angled downhill while several turn their heads and shoulders back uphill, holding handheld flashlights aimed behind the group. Some have their mouths open as they call out to one another. Convey cautious, coordinated withdrawal through restrained poses. Keep every person clearly readable and every body fully within the frame. Cool, dim nighttime illumination with gentle warm flashlight reflections on hands and clothing. Transparent background, clean alpha edges; characters and handheld flashlights only, with no landscape, ground, village, bear, victim, or additional people. No detached lights or floating flashlight props. No text, captions, location labels, population figures, logos or watermarks. Do not recreate any real victim's likeness. Wide 16:9 canvas.",
+  "id": "20260908155028_27558e9a",
+  "state": "failed",
+  "created_at": "2026-09-08T06:50:28.537784+00:00",
+  "updated_at": "2026-09-08T07:00:22.729748+00:00",
+  "message": "Codexから画像ファイルが届いていません。生成応答を確認してください。",
+  "shot": {
+    "id": 39,
+    "start_frame": 4885,
+    "end_frame": 5037,
+    "asset_id": "ASSET-039",
+    "asset_file": "画像/ASSET-039.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "オーイ、オーイと声を出し、クマを警戒しながら山を下りました。",
+    "edit_note": "「オーイ、オーイ」という呼び声を山に反響させる。BGMは入れず声と足音だけ。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 96496,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9"
+      }
+    ],
+    "asset_id": "ASSET-039",
+    "shot_id": 39,
+    "snapshot": "check/studio/jobs/20260908155028_27558e9a/script-context.txt",
+    "snapshot_sha256": "9c1d1109ee09024860e621b877569c9987db0203ef49b5c02999f53e494c716d"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908155028_27558e9a/generation-response.txt",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-039.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 1,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      }
+    ],
+    "explanation": "ASSET-039を動画からキャラ静止画に変更します。1988年5月25日夜、現場に残った6人が懐中電灯を持ち、後方のクマを警戒しながら山道を下る場面を描きます。人物単体レイヤーは透過背景とし、画像に文字は入れません。",
+    "unsupported": ""
+  },
+  "step_index": 1,
+  "input_sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9",
+  "explanation": "5月25日深夜、現場に残った6人が声を出し、後方のクマを警戒しながら下山する透過キャラ素材です。参照画像の夜の実写調に合わせ、文字や背景は含めません。"
+}

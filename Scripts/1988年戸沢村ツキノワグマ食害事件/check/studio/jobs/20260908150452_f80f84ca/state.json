@@ -1,0 +1,89 @@
+{
+  "kind": "correction",
+  "requested_kind": "correction",
+  "shot_id": 21,
+  "brief": "ここは、集落の画像と、現場の画像の両方が映るようにしてもらい、それぞれピンを立てて。",
+  "target": "asset",
+  "prompt": "",
+  "id": "20260908150452_f80f84ca",
+  "state": "failed",
+  "created_at": "2026-09-08T06:04:52.742231+00:00",
+  "updated_at": "2026-09-08T06:05:11.817126+00:00",
+  "message": "修正に必要な機能を利用できません：現場の正確な位置は資料で確認できないため、現場ピンを実際の発見地点として確定配置することはできません。集落から約500〜600m上流という位置関係の目安になります。",
+  "shot": {
+    "id": 21,
+    "start_frame": 2651,
+    "end_frame": 2762,
+    "asset_id": "ASSET-021",
+    "asset_file": "地形図/ASSET-021.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "集落から、5、600メートルほど離れた付近。",
+    "edit_note": "集落に「神田地区」ラベル。集落を中心に半径600mの白い円を描き「約500〜600m 上流」と表示。第1の現場の正確な位置は非公表のため、ピンは打たず円と矢印だけで示す。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      230,
+      -72
+    ],
+    "move_sec": 2.4,
+    "base_x": -332,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 69825,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "badb51a089757f2ba81ec7bd3e156135bb2d54277533bfca52fbd8a4ee9f66de"
+      }
+    ],
+    "asset_id": "ASSET-021",
+    "shot_id": 21,
+    "snapshot": "check/studio/jobs/20260908150452_f80f84ca/script-context.txt",
+    "snapshot_sha256": "80c049e25467e970e2082e1e1f12d676fb6ec7265187b17c70a4a43a6a382356"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908150452_f80f84ca/routing-response.json",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908150452_f80f84ca/source-frame.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 1
+}

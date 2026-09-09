@@ -1,0 +1,149 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "shot_id": 3,
+  "brief": "ここは、木の下で倒れてる女性の遺体をいれて\n",
+  "target": "asset",
+  "prompt": "Edit the supplied photorealistic 16:9 image, preserving its low viewpoint, large central walnut tree, spreading branches, wooded hillside, and natural overcast morning light. Add one deceased adult woman lying motionless on the ground directly beneath the tree, near the base of the trunk, clearly visible within the existing wide composition. She represents the 59-year-old woman found on October 7, 1988, at the foot of a mountain in Tozawa, Yamagata, Japan. Use an anonymous figure with her face turned away and obscured; do not reconstruct the real victim’s appearance. Dress her in simple, muted, long-sleeved rural outdoor clothing and trousers appropriate to Japan in 1988. Her body rests naturally on its side, with no visible blood, exposed wounds, or graphic injury. Keep her scale realistic relative to the tree. Preserve the scattered walnuts and disturbed ground without adding further evidence or props. Set the seasonal appearance to early October rather than late October, with subdued early autumn foliage. Match the original image’s photographic texture, perspective, shadows, and documentary realism. No other people, bears, rescuers, text, captions, arrows, or diagrams.",
+  "id": "20260908111128_c3400a64",
+  "state": "adopted",
+  "created_at": "2026-09-08T02:11:28.470149+00:00",
+  "updated_at": "2026-09-08T02:29:17.395598+00:00",
+  "message": "指示した修正を反映しました。確認してください",
+  "shot": {
+    "id": 3,
+    "start_frame": 271,
+    "end_frame": 426,
+    "asset_id": "ASSET-003",
+    "asset_file": "画像/ASSET-003.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "さらに、200m先でクルミ拾いに出た女性も遺体で見つかり、",
+    "edit_note": "「200m先」テロップ。1件目からの距離であることを矢印つきの小さな図で右下に添える。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 18122,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "469deb2df58a4121d5ff040a62e11d2bb051b9835ef6810a8b88f88852415646"
+      }
+    ],
+    "asset_id": "ASSET-003",
+    "shot_id": 3,
+    "snapshot": "check/studio/jobs/20260908111128_c3400a64/script-context.txt",
+    "snapshot_sha256": "0881ef924dae54004f1dc447adfa6253213e47a44c484218d0f8cc4c74aa2e40"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908111128_c3400a64/generation-response.txt",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-003.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      }
+    ],
+    "explanation": "元画像の実写風の画調と構図を保ち、クルミの木の下に倒れている女性の遺体を追加する。顔を判別できない描写とし、実在の被害者の容姿は再現せず、血や傷、文字は描かない。",
+    "unsupported": ""
+  },
+  "step_index": 1,
+  "input_sha256": "469deb2df58a4121d5ff040a62e11d2bb051b9835ef6810a8b88f88852415646",
+  "explanation": "元画像の実写風の画調と構図を保ち、クルミの木の下に倒れている女性の遺体を追加する。顔を判別できない描写とし、実在の被害者の容姿は再現せず、血や傷、文字は描かない。",
+  "candidate": "check/studio/jobs/20260908111128_c3400a64/candidate.png",
+  "source": "check/studio/jobs/20260908111128_c3400a64/candidate.png",
+  "patch": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908111128_c3400a64/candidate.png",
+    "asset_kind": "image"
+  },
+  "awaiting_confirmation": false,
+  "before_override": {
+    "telop": ""
+  },
+  "before_shot": {
+    "id": 3,
+    "start_frame": 271,
+    "end_frame": 426,
+    "asset_id": "ASSET-003",
+    "asset_file": "画像/ASSET-003.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "さらに、200m先でクルミ拾いに出た女性も遺体で見つかり、",
+    "edit_note": "「200m先」テロップ。1件目からの距離であることを矢印つきの小さな図で右下に添える。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908111128_c3400a64/candidate.png",
+    "asset_kind": "image"
+  }
+}

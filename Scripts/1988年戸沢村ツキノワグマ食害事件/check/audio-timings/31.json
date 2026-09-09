@@ -1,0 +1,146 @@
+{
+  "audio": "音声/編集用ミックス.wav",
+  "audio_sha256": "604f5f9030e70dc2981a6e2d32860a1cdce497a28152131d3af5013959d96c40",
+  "start_frame": 3948,
+  "end_frame": 4153,
+  "fps": 30.0,
+  "method": "local faster-whisper small; recognized words may differ from script",
+  "narration": "その後、4人が被害状況の連絡のために山を下り、6人が現場に残りました。",
+  "words": [
+    {
+      "text": "その",
+      "start": 0.0,
+      "end": 0.28
+    },
+    {
+      "text": "後、",
+      "start": 0.28,
+      "end": 0.5
+    },
+    {
+      "text": "4",
+      "start": 0.7,
+      "end": 0.84
+    },
+    {
+      "text": "人",
+      "start": 0.84,
+      "end": 0.98
+    },
+    {
+      "text": "が",
+      "start": 0.98,
+      "end": 1.24
+    },
+    {
+      "text": "被",
+      "start": 1.24,
+      "end": 1.44
+    },
+    {
+      "text": "害",
+      "start": 1.44,
+      "end": 1.64
+    },
+    {
+      "text": "状",
+      "start": 1.64,
+      "end": 1.94
+    },
+    {
+      "text": "況",
+      "start": 1.94,
+      "end": 2.1
+    },
+    {
+      "text": "の",
+      "start": 2.1,
+      "end": 2.34
+    },
+    {
+      "text": "連",
+      "start": 2.34,
+      "end": 2.5
+    },
+    {
+      "text": "絡",
+      "start": 2.5,
+      "end": 2.84
+    },
+    {
+      "text": "の",
+      "start": 2.84,
+      "end": 2.98
+    },
+    {
+      "text": "ため",
+      "start": 2.98,
+      "end": 3.22
+    },
+    {
+      "text": "に、",
+      "start": 3.22,
+      "end": 3.44
+    },
+    {
+      "text": "山",
+      "start": 3.56,
+      "end": 3.7
+    },
+    {
+      "text": "を",
+      "start": 3.7,
+      "end": 3.92
+    },
+    {
+      "text": "下",
+      "start": 3.92,
+      "end": 4.18
+    },
+    {
+      "text": "り、",
+      "start": 4.18,
+      "end": 4.42
+    },
+    {
+      "text": "6",
+      "start": 4.6,
+      "end": 4.78
+    },
+    {
+      "text": "人",
+      "start": 4.78,
+      "end": 5.02
+    },
+    {
+      "text": "が",
+      "start": 5.02,
+      "end": 5.28
+    },
+    {
+      "text": "現",
+      "start": 5.28,
+      "end": 5.52
+    },
+    {
+      "text": "場",
+      "start": 5.52,
+      "end": 5.76
+    },
+    {
+      "text": "に",
+      "start": 5.76,
+      "end": 5.88
+    },
+    {
+      "text": "残",
+      "start": 5.88,
+      "end": 6.14
+    },
+    {
+      "text": "りました。",
+      "start": 6.14,
+      "end": 6.52
+    }
+  ]
+}

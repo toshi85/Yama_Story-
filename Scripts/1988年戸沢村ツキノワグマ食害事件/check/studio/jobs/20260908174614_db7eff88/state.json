@@ -1,0 +1,230 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "base_image_job": "20260908160659_repair_24",
+  "shot_id": 24,
+  "brief": "ここはキャラ画像で表現。カット２２と同じ人物とテイストにして。",
+  "target": "asset",
+  "prompt": "Edit the attached image as the sole editing base for ASSET-024. Create a single isolated character layer for the narration: “There were also injuries to both feet and the arms.” Maintain continuity with the same fictional older male character and illustration style used in Cut 22; do not invent or reconstruct the real victim’s appearance. Preserve the attached character’s existing identity, short gray hair, hidden face, olive work shirt with rolled sleeves, white neck towel, brown belt, dark navy trousers, and light gray socks. Keep the current full-body pose and composition exactly: head at upper left, feet toward lower right, torso facing upward, head turned away, and both arms resting outward. Preserve the existing clothing dirt, folds, proportions, muted colors, dark outlines, and restrained hand-drawn shading. Keep the existing non-graphic injury marks on both forearms and at both sock-covered toe areas readable, without increasing their severity or adding blood, exposed tissue, or new injuries. This depicts the first victim’s discovery in late May 1988, not either October incident. Retain all prior edits and leave unspecified details unchanged. Output only the complete character with true transparent alpha around the silhouette; the preview checkerboard must not become part of the image. Do not add scenery, other people, bears, props, text, labels, captions, or a background. Keep all limbs fully inside the frame and preserve the original aspect ratio.",
+  "source": "check/studio/jobs/20260908174614_db7eff88/candidate_asset.png",
+  "base_override": {
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-022-1.png",
+    "scale": 0.9,
+    "character_position": [
+      270,
+      200
+    ],
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "asset_file": "check/studio/jobs/20260908160659_repair_24/candidate.png"
+  },
+  "id": "20260908174614_db7eff88",
+  "state": "review",
+  "created_at": "2026-09-08T08:46:14.199431+00:00",
+  "updated_at": "2026-09-08T08:49:49.694948+00:00",
+  "message": "映像確認で修正が必要です：人物背景の市松模様が露出している。透過素材の修正または差し替えが必要で、配置・文字・時刻の変更だけでは解消できない。 / 指定された4秒間の左から右への移動が見えない。 / ナレーションだけで受ける指定の語句が字幕に表示されている。 / カット22と編集元素材の比較資料がなく、人物デザイン・画調の一致と維持条件の一部を検証できない。",
+  "shot": {
+    "id": 24,
+    "start_frame": 3027,
+    "end_frame": 3128,
+    "asset_id": "ASSET-024",
+    "asset_file": "画像/ASSET-024.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "両足の先にも、腕にも、傷がありました。",
+    "edit_note": "左から右へゆっくり流す（4秒）。「両足の先」「腕」は文字にせず、ナレーションだけで受ける。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "quality_checks": true,
+  "worker_pid": 51425,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9"
+      }
+    ],
+    "asset_id": "ASSET-024",
+    "shot_id": 24,
+    "snapshot": "check/studio/jobs/20260908174614_db7eff88/script-context.txt",
+    "snapshot_sha256": "81841a2cc2fb73a7bcdb8a074a855f00f9c5fa15cf8e7b743a3dfcc36f3e4df9"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908174614_db7eff88/quality/review-0.json",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908174614_db7eff88/quality/attempt-0/frame-00.jpg",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908174614_db7eff88/quality/attempt-0/frame-01.jpg",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908174614_db7eff88/quality/attempt-0/frame-02.jpg",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      }
+    ],
+    "requirements": [
+      "添付1枚目の人物素材を編集元にし、カット22と同じ人物デザインと画調に合わせる。実在の被害者の容姿を推測で再現しない。",
+      "現在の横たわる姿勢、服装、後頭部を見せる向き、両腕と両足先の傷の表現を維持する。",
+      "人物単体の透過背景を維持し、現在の実写背景、人物配置、スケール、動きを維持する。",
+      "字幕や説明文字を画像に焼き込まない。"
+    ],
+    "explanation": "現在の人物素材をもとに、カット22との人物デザインと画調の統一を行います。背景と編集設定は維持します。",
+    "unsupported": "",
+    "learning": []
+  },
+  "step_index": 1,
+  "input_sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9",
+  "explanation": "現在の人物素材をもとに、カット22との人物デザインと画調の統一を行います。背景と編集設定は維持します。",
+  "candidate": "check/studio/jobs/20260908174614_db7eff88/candidate_asset.png",
+  "patch": {
+    "asset_kind": "image",
+    "background_file": "画像/ASSET-022-1.png",
+    "scale": 0.9,
+    "character_position": [
+      270,
+      200
+    ],
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "asset_file": "check/studio/jobs/20260908174614_db7eff88/candidate_asset.png"
+  },
+  "rendered_override": {
+    "asset_kind": "image",
+    "background_file": "画像/ASSET-022-1.png",
+    "scale": 0.9,
+    "character_position": [
+      270,
+      200
+    ],
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "asset_file": "check/studio/jobs/20260908174614_db7eff88/candidate_asset.png"
+  },
+  "preview": "check/studio/jobs/20260908174614_db7eff88/preview.mp4",
+  "edit_layers": null,
+  "quality_review": {
+    "ok": false,
+    "checks": [
+      {
+        "requirement": "キャラ画像で表現する",
+        "passed": true,
+        "evidence": "0.1秒、1.6833秒、3.3秒すべてで、イラストの人物が森林背景に合成されている。"
+      },
+      {
+        "requirement": "指定人物素材を編集元とし、カット22と同じ人物デザイン・画調に合わせ、実在の被害者の容姿を推測しない",
+        "passed": false,
+        "evidence": "提示された合成フレームだけでは、編集元素材やカット22との一致、容姿の根拠を確認できない。"
+      },
+      {
+        "requirement": "横たわる姿勢、服装、後頭部の向き、両腕と両足先の傷を維持する",
+        "passed": true,
+        "evidence": "0.1秒、1.6833秒、3.3秒で、後頭部を見せて横たわり、緑系の上着と紺系のズボンを着用。両腕と両足先に紫色の傷の表現があり、全身が収まっている。"
+      },
+      {
+        "requirement": "人物単体の透過背景を維持し、現在の背景・配置・スケールを維持する",
+        "passed": false,
+        "evidence": "全時刻で人物の周囲に長方形の市松模様が見え、森林背景を遮っている。修正前との配置・スケールの一致は比較資料がなく確認できない。"
+      },
+      {
+        "requirement": "左から右へゆっくり4秒間流す",
+        "passed": false,
+        "evidence": "0.1秒、1.6833秒、3.3秒で人物と市松模様の位置が変わらず、指定された右方向への移動を確認できない。"
+      },
+      {
+        "requirement": "「両足の先」「腕」は文字にせずナレーションだけで受ける",
+        "passed": false,
+        "evidence": "全時刻で画面下に「両足の先にも腕にも傷がありました」と表示され、文字にしない指定と一致しない。音声は静止画から確認できない。"
+      },
+      {
+        "requirement": "字幕や説明文字を人物画像に焼き込まない",
+        "passed": false,
+        "evidence": "人物の矩形内に文字は見えないが、画面下の字幕が独立レイヤーか焼き込みかは合成フレームだけでは確認できない。"
+      }
+    ],
+    "issues": [
+      "人物背景の市松模様が露出している。透過素材の修正または差し替えが必要で、配置・文字・時刻の変更だけでは解消できない。",
+      "指定された4秒間の左から右への移動が見えない。",
+      "ナレーションだけで受ける指定の語句が字幕に表示されている。",
+      "カット22と編集元素材の比較資料がなく、人物デザイン・画調の一致と維持条件の一部を検証できない。"
+    ],
+    "repair_patch": {},
+    "media": {
+      "video": "check/studio/jobs/20260908174614_db7eff88/quality/attempt-0/preview.mp4",
+      "video_sha256": "7ebcc3992f6c783e2548dadf91a3d5c403c9e0e80a7f4ad45734f6950a8d552c",
+      "duration": 3.37,
+      "frames": [
+        {
+          "time": 0.1,
+          "file": "check/studio/jobs/20260908174614_db7eff88/quality/attempt-0/frame-00.jpg"
+        },
+        {
+          "time": 1.6833,
+          "file": "check/studio/jobs/20260908174614_db7eff88/quality/attempt-0/frame-01.jpg"
+        },
+        {
+          "time": 3.3,
+          "file": "check/studio/jobs/20260908174614_db7eff88/quality/attempt-0/frame-02.jpg"
+        }
+      ]
+    },
+    "attempt": 0,
+    "status": "needs_revision"
+  },
+  "awaiting_confirmation": false
+}

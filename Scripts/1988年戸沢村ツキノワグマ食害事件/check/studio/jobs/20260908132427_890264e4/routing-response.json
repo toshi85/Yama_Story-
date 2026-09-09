@@ -1,0 +1,1 @@
+{"steps":[{"kind":"adjust","patch":{"question":"なぜ人を食べたのか？","telop_position":[640,360],"question_animations":["none","none"]}}],"explanation":"質問を「なぜ人を食べたのか？」に変更し、左右からの表示をやめて画面中央に表示します。画像は再生成しません。","unsupported":"「人」だけを赤字にする部分指定は、提示された既存テキストの編集引数に文字色の指定がないため対応できません。"}

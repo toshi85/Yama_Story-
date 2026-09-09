@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_251",
+  "kind": "text",
+  "shot_id": 251,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.933337+00:00",
+  "updated_at": "2026-09-07T13:09:59.941001+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 251,
+    "start_frame": 36550,
+    "end_frame": 36734,
+    "asset_id": "ASSET-251",
+    "asset_file": "画像/ASSET-251.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-251-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "飼い主が山に放そうとしても、懐いてるクマは一向に離れようとしません。",
+    "edit_note": "2体を同じ速度で奥へスライドさせ、距離が縮まないことを見せる。「離れようとしない」テロップ。",
+    "speech": "",
+    "motion": "step_back",
+    "drift": [
+      -230,
+      -72
+    ],
+    "move_sec": 2.4,
+    "base_x": -332,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "離れようとしない"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

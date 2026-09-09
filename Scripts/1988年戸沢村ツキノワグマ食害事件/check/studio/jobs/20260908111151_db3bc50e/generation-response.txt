@@ -1,0 +1,3 @@
+指定の最終プロンプトで標準画像生成を行い、[candidate.png](check/studio/jobs/20260908111151_db3bc50e/candidate.png)へ保存しました。
+
+顔・血・傷・文字が映っていないことを確認済みです。既存素材とshots.jsonは変更していません。

@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_64",
+  "kind": "text",
+  "shot_id": 64,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.349267+00:00",
+  "updated_at": "2026-09-07T13:09:59.352481+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 64,
+    "start_frame": 8748,
+    "end_frame": 8903,
+    "asset_id": "ASSET-064",
+    "asset_file": "画像/ASSET-064.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-064-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "クマ被害の可能性も考慮し、翌朝に改めて捜索することに。",
+    "edit_note": "「クマの可能性 → 夜間の捜索を中止」テロップ。BGMを落として暗転へ渡す。",
+    "speech": "",
+    "motion": "lean",
+    "drift": [
+      179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "クマの可能性 → 夜間の捜索を中止"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

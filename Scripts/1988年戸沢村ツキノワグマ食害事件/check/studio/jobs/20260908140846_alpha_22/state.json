@@ -1,0 +1,82 @@
+{
+  "id": "20260908140846_alpha_22",
+  "kind": "image",
+  "shot_id": 22,
+  "shot": {
+    "id": 22,
+    "start_frame": 2762,
+    "end_frame": 2954,
+    "asset_id": "ASSET-022",
+    "asset_file": "画像/ASSET-022.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-022-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "衣服がボロボロでお尻と両方の太ももの筋肉が削ぎ落とされていたとのこと。",
+    "edit_note": "直接的な描写はしない。ナレーションの間はキャラの後頭部と差し出す腕だけを見せる。字幕も出さない。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "state": "review",
+  "created_at": "2026-09-08T05:08:50.826515+00:00",
+  "updated_at": "2026-09-08T05:08:50.826561+00:00",
+  "repair_of": "20260908133604_1edc8fff",
+  "brief": "市松模様を実透過へ修正し、背景・字幕と合成",
+  "candidate": "check/studio/jobs/20260908140846_alpha_22/candidate.png",
+  "preview": "check/studio/jobs/20260908140846_alpha_22/preview.mp4",
+  "target": "asset",
+  "patch": {
+    "asset_file": "check/studio/jobs/20260908140846_alpha_22/candidate.png",
+    "asset_kind": "character"
+  },
+  "rendered_override": {
+    "asset_file": "check/studio/jobs/20260908140846_alpha_22/candidate.png",
+    "asset_kind": "character"
+  },
+  "message": "実透過と背景合成を修正した候補です。映像を確認して採用してください",
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/render.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/.20260908140846_alpha_22.json",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908140846_alpha_22/preview.mp4",
+    "--shots-range",
+    "22-22",
+    "--draft",
+    "--tmp",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908140846_alpha_22/render-cache"
+  ],
+  "exit_code": 0,
+  "input_sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006",
+  "edit_layers": {
+    "character": "check/studio/jobs/20260908140846_alpha_22/edit_layers/character.png",
+    "background": "画像/ASSET-022-1.png",
+    "meta": {
+      "pad_l": 0,
+      "pad_t": 0,
+      "char_w": 528,
+      "char_h": 396,
+      "cw": 528,
+      "ch": 396,
+      "bubble": null
+    },
+    "source": "check/studio/jobs/20260908140846_alpha_22/candidate.png",
+    "source_sha256": "110c551e76b37b56e8af13f3959e5702903df08156e1575772c8e9cf239f58f3"
+  }
+}

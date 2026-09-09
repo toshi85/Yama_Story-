@@ -1,0 +1,1 @@
+{"steps":[{"kind":"image","target":"asset"},{"kind":"adjust","patch":{"speech":"どこにいるんだよ"}}],"explanation":"人物の怒った表情を心配そうな表情に変更し、元の画調・服装・持ち物・透過背景を維持します。家族のセリフ「どこにいるんだよ」を編集側で追加し、画像には文字を入れません。","unsupported":""}

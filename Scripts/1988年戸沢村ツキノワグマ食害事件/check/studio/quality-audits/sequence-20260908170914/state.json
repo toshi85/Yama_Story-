@@ -1,0 +1,136 @@
+{
+  "id": "sequence-20260908170914",
+  "kind": "image",
+  "shot_id": 28,
+  "shot": {
+    "id": 28,
+    "start_frame": 3598,
+    "end_frame": 3714,
+    "asset_id": "ASSET-028",
+    "asset_file": "画像/ASSET-028.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-028-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "山菜採りの途中で、クマにばったり出会ってしまった。",
+    "edit_note": "「※この場面は資料からの推定です」と小さく右下に添える。効果音は葉ずれの音を一瞬だけ。",
+    "speech": "",
+    "motion": "walk_cross",
+    "drift": [
+      -179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "patch": {
+    "asset_file": "check/studio/quality-audits/sequence-20260908170914/sequence-1.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "overlays": [
+      {
+        "type": "image",
+        "file": "check/studio/quality-audits/sequence-20260908170914/sequence-2.png",
+        "x": 640,
+        "y": 360,
+        "w": 1280,
+        "start": 1.5333333333333334,
+        "end": 2.1333333333333333,
+        "anim": "none"
+      },
+      {
+        "type": "image",
+        "file": "check/studio/quality-audits/sequence-20260908170914/sequence-3.png",
+        "x": 640,
+        "y": 360,
+        "w": 1280,
+        "start": 2.1333333333333333,
+        "end": 3.8666666666666667,
+        "anim": "none"
+      }
+    ]
+  },
+  "state": "review",
+  "created_at": "2026-09-08T07:18:31.382587+00:00",
+  "updated_at": "2026-09-08T08:09:24.991067+00:00",
+  "brief": "3枚をナレーションのクマに、ばったりに合わせて切り替える",
+  "message": "修正後のカットを確認できます",
+  "candidate": "check/studio/quality-audits/sequence-20260908170914/sequence-1.png",
+  "target": "asset",
+  "rendered_override": {
+    "asset_file": "check/studio/quality-audits/sequence-20260908170914/sequence-1.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "overlays": [
+      {
+        "type": "image",
+        "file": "check/studio/quality-audits/sequence-20260908170914/sequence-2.png",
+        "x": 640,
+        "y": 360,
+        "w": 1280,
+        "start": 1.5333333333333334,
+        "end": 2.1333333333333333,
+        "anim": "none"
+      },
+      {
+        "type": "image",
+        "file": "check/studio/quality-audits/sequence-20260908170914/sequence-3.png",
+        "x": 640,
+        "y": 360,
+        "w": 1280,
+        "start": 2.1333333333333333,
+        "end": 3.8666666666666667,
+        "anim": "none"
+      }
+    ]
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "28",
+    "--override",
+    "{\"asset_file\": \"check/studio/quality-audits/sequence-20260908170914/sequence-1.png\", \"asset_kind\": \"image\", \"background_file\": \"\", \"speech\": \"\", \"motion\": \"still\", \"motion_path\": null, \"same_as_prev\": false, \"overlays\": [{\"type\": \"image\", \"file\": \"check/studio/quality-audits/sequence-20260908170914/sequence-2.png\", \"x\": 640, \"y\": 360, \"w\": 1280, \"start\": 1.5333333333333334, \"end\": 2.1333333333333333, \"anim\": \"none\"}, {\"type\": \"image\", \"file\": \"check/studio/quality-audits/sequence-20260908170914/sequence-3.png\", \"x\": 640, \"y\": 360, \"w\": 1280, \"start\": 2.1333333333333333, \"end\": 3.8666666666666667, \"anim\": \"none\"}]}"
+  ],
+  "worker_pid": 30055,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/quality-audits/sequence-20260908170914/preview.mp4",
+  "edit_layers": null,
+  "quality_checks": false,
+  "timing_status": {
+    "status": "available",
+    "file": "check/audio-timings/28.json"
+  },
+  "sequence": {
+    "files": [
+      "check/studio/quality-audits/sequence-20260908170914/sequence-1.png",
+      "check/studio/quality-audits/sequence-20260908170914/sequence-2.png",
+      "check/studio/quality-audits/sequence-20260908170914/sequence-3.png"
+    ],
+    "starts": [
+      0.0,
+      1.5333333333333334,
+      2.1333333333333333
+    ],
+    "duration": 3.8666666666666667
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_232",
+  "kind": "text",
+  "shot_id": 232,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.849683+00:00",
+  "updated_at": "2026-09-07T13:09:59.856978+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 232,
+    "start_frame": 33256,
+    "end_frame": 33388,
+    "asset_id": "ASSET-232",
+    "asset_file": "画像/ASSET-232.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-232-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "頭蓋骨の一部が壊れたまま、しばらく生き延びていましたが、",
+    "edit_note": "額の傷跡に一度だけ小さな丸印を編集で置く。「しばらく生き延びた」テロップ。",
+    "speech": "",
+    "motion": "drift_diag",
+    "drift": [
+      486,
+      -57
+    ],
+    "move_sec": 1.4,
+    "base_x": -409,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "しばらく生き延びた"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

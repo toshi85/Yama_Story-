@@ -1,0 +1,146 @@
+{
+  "id": "20260908161831_repair_28",
+  "kind": "image",
+  "shot_id": 28,
+  "shot": {
+    "id": 28,
+    "start_frame": 3598,
+    "end_frame": 3714,
+    "asset_id": "ASSET-028",
+    "asset_file": "画像/ASSET-028.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-028-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "山菜採りの途中で、クマにばったり出会ってしまった。",
+    "edit_note": "「※この場面は資料からの推定です」と小さく右下に添える。効果音は葉ずれの音を一瞬だけ。",
+    "speech": "",
+    "motion": "walk_cross",
+    "drift": [
+      -179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "patch": {
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "telops": [],
+    "overlays": [
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908161831_repair_28/stage2.png",
+        "x": 640,
+        "y": 360,
+        "w": 1280,
+        "start": 1.5333333333333334,
+        "end": 2.1333333333333333,
+        "anim": "none"
+      },
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908161831_repair_28/stage3.png",
+        "x": 640,
+        "y": 360,
+        "w": 1280,
+        "start": 2.1333333333333333,
+        "end": 3.8666666666666667,
+        "anim": "none"
+      },
+      {
+        "type": "text",
+        "text": "※この場面は資料からの推定です",
+        "x": 950,
+        "y": 535,
+        "size": 22,
+        "start": 0,
+        "end": 3.8666666666666667,
+        "anim": "none",
+        "font": "mincho"
+      }
+    ],
+    "map_pins": [],
+    "asset_file": "check/studio/jobs/20260908161831_repair_28/stage1.png"
+  },
+  "state": "review",
+  "created_at": "2026-09-08T07:18:31.382587+00:00",
+  "updated_at": "2026-09-08T07:18:33.845141+00:00",
+  "brief": "山菜採り→クマが迫る→驚く男性を音声の1.533秒・2.133秒で切替",
+  "message": "修正後のカットを確認できます",
+  "candidate": "check/studio/jobs/20260908161831_repair_28/stage1.png",
+  "target": "asset",
+  "rendered_override": {
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "telops": [],
+    "overlays": [
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908161831_repair_28/stage2.png",
+        "x": 640,
+        "y": 360,
+        "w": 1280,
+        "start": 1.5333333333333334,
+        "end": 2.1333333333333333,
+        "anim": "none"
+      },
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908161831_repair_28/stage3.png",
+        "x": 640,
+        "y": 360,
+        "w": 1280,
+        "start": 2.1333333333333333,
+        "end": 3.8666666666666667,
+        "anim": "none"
+      },
+      {
+        "type": "text",
+        "text": "※この場面は資料からの推定です",
+        "x": 950,
+        "y": 535,
+        "size": 22,
+        "start": 0,
+        "end": 3.8666666666666667,
+        "anim": "none",
+        "font": "mincho"
+      }
+    ],
+    "map_pins": [],
+    "asset_file": "check/studio/jobs/20260908161831_repair_28/stage1.png"
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "28",
+    "--override",
+    "{\"asset_kind\": \"image\", \"background_file\": \"\", \"speech\": \"\", \"motion\": \"still\", \"motion_path\": null, \"same_as_prev\": false, \"pan\": \"\", \"telops\": [], \"overlays\": [{\"type\": \"image\", \"file\": \"check/studio/jobs/20260908161831_repair_28/stage2.png\", \"x\": 640, \"y\": 360, \"w\": 1280, \"start\": 1.5333333333333334, \"end\": 2.1333333333333333, \"anim\": \"none\"}, {\"type\": \"image\", \"file\": \"check/studio/jobs/20260908161831_repair_28/stage3.png\", \"x\": 640, \"y\": 360, \"w\": 1280, \"start\": 2.1333333333333333, \"end\": 3.8666666666666667, \"anim\": \"none\"}, {\"type\": \"text\", \"text\": \"※この場面は資料からの推定です\", \"x\": 950, \"y\": 535, \"size\": 22, \"start\": 0, \"end\": 3.8666666666666667, \"anim\": \"none\", \"font\": \"mincho\"}], \"map_pins\": [], \"asset_file\": \"check/studio/jobs/20260908161831_repair_28/stage1.png\"}"
+  ],
+  "worker_pid": 10474,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908161831_repair_28/preview.mp4",
+  "edit_layers": null
+}

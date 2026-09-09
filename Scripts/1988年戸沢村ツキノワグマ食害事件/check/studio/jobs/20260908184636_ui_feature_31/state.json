@@ -1,0 +1,131 @@
+{
+  "id": "20260908184636_ui_feature_31",
+  "kind": "adjust",
+  "shot_id": 31,
+  "shot": {
+    "id": 31,
+    "start_frame": 3948,
+    "end_frame": 4153,
+    "asset_id": "ASSET-031",
+    "asset_file": "画像/ASSET-031.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-031-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "その後、4人が被害状況の連絡のために山を下り、6人が現場に残りました。",
+    "edit_note": "「連絡へ 4人／現場に残る 6人」の2行テロップを左右に振り分けて表示。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      486,
+      -57
+    ],
+    "move_sec": 1.4,
+    "base_x": -409,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "state": "review",
+  "created_at": "2026-09-08T09:46:36.231106+00:00",
+  "updated_at": "2026-09-08T09:46:40.546048+00:00",
+  "brief": "本人の各カット修正依頼を反映",
+  "message": "修正後のカットを確認できます",
+  "target": "asset",
+  "quality_checks": false,
+  "sequence": {
+    "files": [
+      "check/studio/jobs/20260908184636_ui_feature_31/stage0.png",
+      "check/studio/jobs/20260908184636_ui_feature_31/stage1.png"
+    ],
+    "starts": [
+      0,
+      4.6
+    ]
+  },
+  "patch": {
+    "telop": "",
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "speech_segments": [],
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "camera_motion": "",
+    "hide_character": false,
+    "character_position": null,
+    "speech_position": null,
+    "scale": 1,
+    "base_x": 0,
+    "base_y": 0,
+    "telops": [],
+    "asset_file": "check/studio/jobs/20260908184636_ui_feature_31/stage0.png",
+    "overlays": [
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908184636_ui_feature_31/stage1.png",
+        "x": 640,
+        "y": 360,
+        "w": 1280,
+        "start": 4.6,
+        "end": 6.833333333333333,
+        "anim": "none"
+      }
+    ]
+  },
+  "candidate": "check/studio/jobs/20260908184636_ui_feature_31/stage0.png",
+  "rendered_override": {
+    "telop": "",
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "speech_segments": [],
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "camera_motion": "",
+    "hide_character": false,
+    "character_position": null,
+    "speech_position": null,
+    "scale": 1,
+    "base_x": 0,
+    "base_y": 0,
+    "telops": [],
+    "asset_file": "check/studio/jobs/20260908184636_ui_feature_31/stage0.png",
+    "overlays": [
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908184636_ui_feature_31/stage1.png",
+        "x": 640,
+        "y": 360,
+        "w": 1280,
+        "start": 4.6,
+        "end": 6.833333333333333,
+        "anim": "none"
+      }
+    ]
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "31",
+    "--override",
+    "{\"telop\": \"\", \"asset_kind\": \"image\", \"background_file\": \"\", \"speech\": \"\", \"speech_segments\": [], \"motion\": \"still\", \"motion_path\": null, \"same_as_prev\": false, \"pan\": \"\", \"camera_motion\": \"\", \"hide_character\": false, \"character_position\": null, \"speech_position\": null, \"scale\": 1, \"base_x\": 0, \"base_y\": 0, \"telops\": [], \"asset_file\": \"check/studio/jobs/20260908184636_ui_feature_31/stage0.png\", \"overlays\": [{\"type\": \"image\", \"file\": \"check/studio/jobs/20260908184636_ui_feature_31/stage1.png\", \"x\": 640, \"y\": 360, \"w\": 1280, \"start\": 4.6, \"end\": 6.833333333333333, \"anim\": \"none\"}]}"
+  ],
+  "worker_pid": 88078,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908184636_ui_feature_31/preview.mp4",
+  "edit_layers": null
+}

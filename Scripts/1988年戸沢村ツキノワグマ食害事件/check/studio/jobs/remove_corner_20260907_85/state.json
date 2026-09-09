@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_85",
+  "kind": "text",
+  "shot_id": 85,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.377373+00:00",
+  "updated_at": "2026-09-07T13:09:59.381154+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 85,
+    "start_frame": 11994,
+    "end_frame": 12299,
+    "asset_id": "ASSET-085",
+    "asset_file": "画像/ASSET-085.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-085-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "この時の状況を消防団員である佐藤浩人（ひろと）さん（当時26歳）は、「ひどかったな、あれは。なかなか見て気持ちのいいものではなかった」",
+    "edit_note": "「佐藤浩人さん（当時26歳）／消防団員」テロップ。証言は字幕で表示し、担架の中身は一切映さない。",
+    "speech": "",
+    "motion": "breathe",
+    "drift": [
+      -307,
+      -28
+    ],
+    "move_sec": 3.1,
+    "base_x": 281,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "佐藤浩人さん（当時26歳）／消防団員"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

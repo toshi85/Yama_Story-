@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_91",
+  "kind": "text",
+  "shot_id": 91,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.385795+00:00",
+  "updated_at": "2026-09-07T13:09:59.389586+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 91,
+    "start_frame": 12938,
+    "end_frame": 13144,
+    "asset_id": "ASSET-091",
+    "asset_file": "画像/ASSET-091.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-091-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "山形大学理学部の大津高教授は、「（2人目を）襲ったのは、（5月と）同じクマだろう」",
+    "edit_note": "「山形大学理学部 大津高 教授」を編集でテロップとして表示。機関名は画像に描かせない。発言は字幕で表示。",
+    "speech": "",
+    "motion": "step_back",
+    "drift": [
+      230,
+      -72
+    ],
+    "move_sec": 2.4,
+    "base_x": -332,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "山形大学理学部 大津高 教授"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

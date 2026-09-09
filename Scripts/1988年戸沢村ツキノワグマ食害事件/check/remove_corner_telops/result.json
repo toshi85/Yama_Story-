@@ -1,0 +1,17 @@
+{
+  "removed_cuts": 136,
+  "corner_caption_events": 0,
+  "enlarged_black_cards": 19,
+  "font_size": 78,
+  "other_shot_data_unchanged": true,
+  "opening_and_subtitles_preserved": true,
+  "full_decode": "PASS",
+  "duration": 1498.11,
+  "bgm": {
+    "file": "音声/終章BGM.mp3",
+    "start": 1473.15,
+    "end": 1498.15,
+    "ending_seconds": 25.0
+  },
+  "human_review": "pending"
+}

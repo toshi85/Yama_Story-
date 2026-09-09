@@ -1,0 +1,100 @@
+{
+  "shot_id": 7,
+  "text_type": "text",
+  "bubble_side": "",
+  "text_overlay": {
+    "text": "なぜ",
+    "x": 448,
+    "y": 360,
+    "size": 48,
+    "color": "#FFFFFF",
+    "anim": "none",
+    "start": 0,
+    "end": 3.97
+  },
+  "kind": "text",
+  "brief": "ここは、左右から出る形式ではなくて、中央に「なぜ人を食べたのか？」と表示してください。「人」を赤字。（終了時刻の丸め誤差を修正）",
+  "retry_of": "20260908120607_5bcf8572",
+  "id": "20260908123656_5c9f4b65",
+  "state": "review",
+  "created_at": "2026-09-08T03:36:56.950279+00:00",
+  "updated_at": "2026-09-08T03:36:59.454995+00:00",
+  "message": "修正後のカットを確認できます",
+  "shot": {
+    "id": 7,
+    "start_frame": 793,
+    "end_frame": 912,
+    "asset_id": "ASSET-007",
+    "asset_file": "画像/ASSET-007.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "そしてなぜ、このクマは満腹なのに人を食べたのか？",
+    "edit_note": "「満腹なのに、なぜ人を食べたのか？」を下段に白テロップ。クマが顔を上げるところで音を切る。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "満腹なのに、なぜ人を食べたのか？",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false,
+    "question_outline": 4.0
+  },
+  "worker_pid": 35719,
+  "input_sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006",
+  "patch": {
+    "overlays": [
+      {
+        "text": "なぜ",
+        "x": 448,
+        "y": 360,
+        "size": 48,
+        "color": "#FFFFFF",
+        "anim": "none",
+        "start": 0.0,
+        "end": 3.966666666666667,
+        "type": "text"
+      }
+    ]
+  },
+  "explanation": "テキスト「なぜ」を追加",
+  "rendered_override": {
+    "question_outline": 4,
+    "overlays": [
+      {
+        "text": "なぜ",
+        "x": 448,
+        "y": 360,
+        "size": 48,
+        "color": "#FFFFFF",
+        "anim": "none",
+        "start": 0.0,
+        "end": 3.966666666666667,
+        "type": "text"
+      }
+    ]
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "7",
+    "--override",
+    "{\"question_outline\": 4, \"overlays\": [{\"text\": \"なぜ\", \"x\": 448, \"y\": 360, \"size\": 48, \"color\": \"#FFFFFF\", \"anim\": \"none\", \"start\": 0.0, \"end\": 3.966666666666667, \"type\": \"text\"}]}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908123656_5c9f4b65/preview.mp4"
+}

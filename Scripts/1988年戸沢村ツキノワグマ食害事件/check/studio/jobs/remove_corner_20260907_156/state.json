@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_156",
+  "kind": "text",
+  "shot_id": 156,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.514802+00:00",
+  "updated_at": "2026-09-07T13:09:59.519583+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 156,
+    "start_frame": 21661,
+    "end_frame": 21879,
+    "asset_id": "ASSET-156",
+    "asset_file": "画像/ASSET-156.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-156-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "地元の猟友会は、最悪の事態を想定し、複数の異常なクマがいる前提で動きました。",
+    "edit_note": "地図の上の赤い印を1つずつ増やす演出。「複数いる前提で動いた」テロップ。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      230,
+      -72
+    ],
+    "move_sec": 2.4,
+    "base_x": -332,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "複数いる前提で動いた"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

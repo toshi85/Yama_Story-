@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_223",
+  "kind": "text",
+  "shot_id": 223,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.796220+00:00",
+  "updated_at": "2026-09-07T13:09:59.803380+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 223,
+    "start_frame": 31959,
+    "end_frame": 32091,
+    "asset_id": "ASSET-223",
+    "asset_file": "画像/ASSET-223.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-223-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "不動産会社と、猟銃を売る銃砲店を営んでいます。",
+    "edit_note": "「不動産会社」「銃砲店」の2つを左右に振り分けてテロップ表示。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      486,
+      -57
+    ],
+    "move_sec": 1.4,
+    "base_x": -409,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "不動産会社"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

@@ -22,6 +22,7 @@ System_Tools/analytics_token.json
 System_Tools/analytics_token.json
 System_Tools/analytics_token.json
 System_Tools/update_token.json
+System_Tools/comment_token.json
 
 # 書籍のページ画像（著作物）はローカル保管のみ。public リポジトリへ出さない
 Yama_Story-/Scripts/*/_sources/熊が人を襲うとき_米田一彦/
@@ -33,3 +34,13 @@ Scripts/*/_sources/熊が人を襲うとき_米田一彦/
 Scripts/*/images/
 Scripts/*/.imagegen/
 Scripts/*/.imagegen.lock
+
+# 編集の中間生成物（再生成される・戸沢村の .render_cache だけで382MB。2026-09-09）
+Scripts/*/.render_cache/
+Scripts/*/.render_cache_preview/
+Scripts/*/.map_tiles/
+Scripts/*/.editing/
+Scripts/*/check/frames/
+Scripts/*/check/clips/
+Scripts/*/check/preview/
+Scripts/*/check/serve.pid

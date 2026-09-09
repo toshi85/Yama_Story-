@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_155",
+  "kind": "text",
+  "shot_id": 155,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.509202+00:00",
+  "updated_at": "2026-09-07T13:09:59.514146+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 155,
+    "start_frame": 21399,
+    "end_frame": 21661,
+    "asset_id": "ASSET-155",
+    "asset_file": "画像/ASSET-155.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-155-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "もし仮に、3件目の現場に元から住んでいたクマだったら、杉沢で2人を襲ったクマとは、別の個体だと言えます。",
+    "edit_note": "2頭の間に尾根の稜線を挟んで合成し、「別の個体だとしたら」のテロップ。断定ではないことが分かるよう、画面全体をわずかに白く飛ばす。",
+    "speech": "",
+    "motion": "walk_cross",
+    "drift": [
+      486,
+      -57
+    ],
+    "move_sec": 1.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "別の個体だとしたら"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

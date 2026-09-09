@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_131",
+  "kind": "text",
+  "shot_id": 131,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.461613+00:00",
+  "updated_at": "2026-09-07T13:09:59.466426+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 131,
+    "start_frame": 18239,
+    "end_frame": 18365,
+    "asset_id": "ASSET-131",
+    "asset_file": "画像/ASSET-131.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-131-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "目の前にツキノワグマと遭遇。距離およそ1メートル。",
+    "edit_note": "衝撃音の一撃。「距離 約1m ＝ 手を伸ばせば届く」を白テロップで一瞬だけ。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "距離 約1m ＝ 手を伸ばせば届く"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

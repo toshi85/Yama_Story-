@@ -1,0 +1,89 @@
+{
+  "kind": "correction",
+  "requested_kind": "correction",
+  "shot_id": 38,
+  "brief": "ここは、すぐにで、救出したい状況と、引き返すでキャラ画像を変更して。",
+  "target": "asset",
+  "prompt": "",
+  "id": "20260908155012_35ff7535",
+  "state": "failed",
+  "created_at": "2026-09-08T06:50:12.157393+00:00",
+  "updated_at": "2026-09-08T06:54:49.495596+00:00",
+  "message": "修正に必要な機能を利用できません：同一カット内で語句に合わせて複数のキャラ画像を切り替える設定、およびカット分割は指定可能な手順では対応できません。切り替え時刻も音声時刻の根拠がないため確定できません。",
+  "shot": {
+    "id": 38,
+    "start_frame": 4670,
+    "end_frame": 4885,
+    "asset_id": "ASSET-038",
+    "asset_file": "画像/ASSET-038.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-038-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "すぐにでも、ご家族のために夫を救出したい状況でしたが、仕方なくこの日は引き返すことに。",
+    "edit_note": "BGMを一段落とし、押し殺した声のSEだけ。テロップは出さない。",
+    "speech": "",
+    "motion": "breathe",
+    "drift": [
+      307,
+      -28
+    ],
+    "move_sec": 3.1,
+    "base_x": 281,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 95440,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9"
+      }
+    ],
+    "asset_id": "ASSET-038",
+    "shot_id": 38,
+    "snapshot": "check/studio/jobs/20260908155012_35ff7535/script-context.txt",
+    "snapshot_sha256": "9b0aca88ecdbfec0abbd70552c5d9c99889fc8c8f180ff40c72a6e2310024d0d"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908155012_35ff7535/routing-response.json",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-038.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 1
+}

@@ -1,0 +1,125 @@
+{
+  "id": "20260908151226_text_fade1s",
+  "kind": "adjust",
+  "shot_id": 15,
+  "shot": {
+    "id": 15,
+    "start_frame": 1865,
+    "end_frame": 2028,
+    "asset_id": "ASSET-015",
+    "asset_file": "画像/ASSET-015.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "しかし、これ以降、男性は二度と家族のもとへは戻ってきませんでした。",
+    "edit_note": "カット尻を3秒かけて暗く落とす。低音のBGMをここで初めて入れる。テロップは出さない。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "patch": {
+    "mono_start": 1.613,
+    "telop": "戻らなかった、、",
+    "telop_position": [
+      640,
+      360
+    ],
+    "telop_start": 1.613,
+    "telop_end": 5.433333333333334,
+    "telop_anim": "fade",
+    "telop_anim_duration": 1
+  },
+  "state": "adopted",
+  "created_at": "2026-09-08T06:12:26.724873+00:00",
+  "updated_at": "2026-09-08T06:35:47.655102+00:00",
+  "brief": "text_fade1s",
+  "message": "修正後のカットを確認できます",
+  "candidate": null,
+  "target": "asset",
+  "rendered_override": {
+    "mono_start": 1.613,
+    "telop": "戻らなかった、、",
+    "telop_position": [
+      640,
+      360
+    ],
+    "telop_start": 1.613,
+    "telop_end": 5.433333333333334,
+    "telop_anim": "fade",
+    "telop_anim_duration": 1
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "15",
+    "--override",
+    "{\"mono_start\": 1.613, \"telop\": \"戻らなかった、、\", \"telop_position\": [640, 360], \"telop_start\": 1.613, \"telop_end\": 5.433333333333334, \"telop_anim\": \"fade\", \"telop_anim_duration\": 1}"
+  ],
+  "worker_pid": 76355,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908151226_text_fade1s/preview.mp4",
+  "edit_layers": null,
+  "before_override": {},
+  "before_shot": {
+    "id": 15,
+    "start_frame": 1865,
+    "end_frame": 2028,
+    "asset_id": "ASSET-015",
+    "asset_file": "画像/ASSET-015.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "しかし、これ以降、男性は二度と家族のもとへは戻ってきませんでした。",
+    "edit_note": "カット尻を3秒かけて暗く落とす。低音のBGMをここで初めて入れる。テロップは出さない。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "adopted_at": "2026-09-08T06:35:47.655075+00:00",
+  "applied_override": {
+    "mono_start": 1.613,
+    "telop": "戻らなかった、、",
+    "telop_position": [
+      640,
+      360
+    ],
+    "telop_start": 1.613,
+    "telop_end": 5.433333333333334,
+    "telop_anim": "fade",
+    "telop_anim_duration": 1
+  }
+}

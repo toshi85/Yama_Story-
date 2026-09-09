@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_93",
+  "kind": "text",
+  "shot_id": 93,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.390238+00:00",
+  "updated_at": "2026-09-07T13:09:59.394712+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 93,
+    "start_frame": 13425,
+    "end_frame": 13565,
+    "asset_id": "ASSET-093",
+    "asset_file": "画像/ASSET-093.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "専門家いわく、この年は、山ブドウもクルミも不作でした。",
+    "edit_note": "「山ブドウ 不作」「クルミ 不作」の2行テロップ。実がゼロであることが伝わるよう、枝先を指す矢印を1つ入れる。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "山ブドウ 不作"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

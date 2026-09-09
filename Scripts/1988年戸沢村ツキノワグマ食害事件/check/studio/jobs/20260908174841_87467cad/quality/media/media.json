@@ -1,0 +1,27 @@
+{
+  "video": "check/studio/jobs/20260908174841_87467cad/quality/media/preview.mp4",
+  "video_sha256": "1a84736199ec86fa2d1fa3de03db9c667fc70d9b715c0ff6f1194ef5827585bb",
+  "duration": 6.03,
+  "frames": [
+    {
+      "time": 0.1,
+      "file": "check/studio/jobs/20260908174841_87467cad/quality/media/frame-00.jpg"
+    },
+    {
+      "time": 2.3667,
+      "file": "check/studio/jobs/20260908174841_87467cad/quality/media/frame-01.jpg"
+    },
+    {
+      "time": 2.4333,
+      "file": "check/studio/jobs/20260908174841_87467cad/quality/media/frame-02.jpg"
+    },
+    {
+      "time": 3.0167,
+      "file": "check/studio/jobs/20260908174841_87467cad/quality/media/frame-03.jpg"
+    },
+    {
+      "time": 5.9667,
+      "file": "check/studio/jobs/20260908174841_87467cad/quality/media/frame-04.jpg"
+    }
+  ]
+}

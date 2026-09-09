@@ -1,0 +1,102 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "shot_id": 37,
+  "brief": "ここは、実写画像で、クマと後ろに男性がいる画像にして",
+  "target": "asset",
+  "prompt": "Create a photorealistic replacement for the supplied cartoon bear asset, with a Japanese black bear in the foreground and one adult man lying motionless behind it. This represents the nighttime discovery scene of May 25, 1988, in Tozawa Village, Yamagata Prefecture, Japan. Preserve the reference bear's frontal, low, firmly planted stance: all four paws on the ground, head lowered, ears pinned back, mouth open with teeth visible. The bear remains stationary, guarding its position. Give it realistic black fur, a natural pale crescent chest marking, and anatomically correct proportions without a shoulder hump. Behind the bear, show the partially obscured body of a 61-year-old male bamboo-shoot gatherer in plain outdoor clothing appropriate to rural Japan in 1988. Hide his face through positioning and occlusion; do not reconstruct the real victim's likeness. His body must rest on the same implied ground plane as the bear, with no visible blood, open wounds, exposed tissue, or graphic injury. Use restrained flashlight-like illumination appropriate to a dark mountain search scene, with enough detail to read both figures clearly. Full-body bear, square 1:1 composition, realistic photographic textures. Keep this as an isolated compositing asset with a transparent background; include only the bear and the partly concealed man, with no scenery or additional people. No text, captions, labels, symbols, or watermarks.",
+  "id": "20260908154929_79831dd5",
+  "state": "failed",
+  "created_at": "2026-09-08T06:49:29.962882+00:00",
+  "updated_at": "2026-09-08T06:54:13.253516+00:00",
+  "message": "Codexから画像ファイルが届いていません。生成応答を確認してください。",
+  "shot": {
+    "id": 37,
+    "start_frame": 4527,
+    "end_frame": 4670,
+    "asset_id": "ASSET-037",
+    "asset_file": "画像/ASSET-037.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-037-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "しかし、それでもクマは執念深くその場に居座り続けました。",
+    "edit_note": "クマをまったく動かさず、周囲だけを揺らす。「石を投げても動かない」テロップ。",
+    "speech": "",
+    "motion": "walk_cross",
+    "drift": [
+      -409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 92208,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9"
+      }
+    ],
+    "asset_id": "ASSET-037",
+    "shot_id": 37,
+    "snapshot": "check/studio/jobs/20260908154929_79831dd5/script-context.txt",
+    "snapshot_sha256": "371b691706fcf223045d18be1927fdd6e3c9d05f83e1a402940275e168512dc5"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908154929_79831dd5/generation-response.txt",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-037.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 1,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      }
+    ],
+    "explanation": "クマと、その後方に男性がいる実写調の画像に変更します。1988年5月の夜の山中という場面に合わせ、実在の被害者の容姿は再現せず、文字は焼き込みません。",
+    "unsupported": ""
+  },
+  "step_index": 1,
+  "input_sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9",
+  "explanation": "男性は、この場面で発見された61歳の被害者としてクマの後方に配置。顔や損傷を見せず、実写調・透過背景で合成用素材にします。"
+}

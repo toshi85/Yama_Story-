@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_151",
+  "kind": "text",
+  "shot_id": 151,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.493021+00:00",
+  "updated_at": "2026-09-07T13:09:59.497685+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 151,
+    "start_frame": 20683,
+    "end_frame": 20848,
+    "asset_id": "ASSET-151",
+    "asset_file": "画像/ASSET-151.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-151-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "そのクマは、撃たれた個体よりも、もっと大きかったと証言されています。",
+    "edit_note": "2頭の背の高さに水平線を引き、差を編集で示す。左に「撃たれた個体（140cm・84kg）」、右に「目撃された個体（もっと大きかった）」のテロップ。",
+    "speech": "",
+    "motion": "step_back",
+    "drift": [
+      307,
+      -28
+    ],
+    "move_sec": 3.1,
+    "base_x": 281,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "撃たれた個体（140cm・84kg）"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

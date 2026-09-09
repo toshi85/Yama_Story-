@@ -1,0 +1,65 @@
+{
+  "id": "20260908182236_ui_feature_46",
+  "kind": "adjust",
+  "shot_id": 46,
+  "shot": {
+    "id": 46,
+    "start_frame": 5836,
+    "end_frame": 5974,
+    "asset_id": "ASSET-046",
+    "asset_file": "画像/ASSET-046.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-046-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "傷は、背中や腰など、後ろ側に集中していたのです。",
+    "edit_note": "キャラの腰から下に赤い半透明のハイライトを編集で重ね、頭と首は白いままにする。「後ろ側に集中」テロップ。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      486,
+      -57
+    ],
+    "move_sec": 1.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "patch": {
+    "telop": "",
+    "hide_character": true
+  },
+  "state": "review",
+  "created_at": "2026-09-08T09:22:36.790416+00:00",
+  "updated_at": "2026-09-08T09:22:38.674548+00:00",
+  "brief": "この場面のキャラを取り除き背景だけ残す。元の素材は保持",
+  "message": "修正後のカットを確認できます",
+  "candidate": null,
+  "target": "asset",
+  "quality_checks": false,
+  "rendered_override": {
+    "telop": "",
+    "hide_character": true
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "46",
+    "--override",
+    "{\"telop\": \"\", \"hide_character\": true}"
+  ],
+  "worker_pid": 79036,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908182236_ui_feature_46/preview.mp4",
+  "edit_layers": null
+}

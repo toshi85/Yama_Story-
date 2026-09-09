@@ -1,0 +1,90 @@
+{
+  "id": "20260908151225_pin_tozawa",
+  "kind": "map",
+  "shot_id": 8,
+  "shot": {
+    "id": 8,
+    "start_frame": 912,
+    "end_frame": 980,
+    "asset_id": "ASSET-008",
+    "asset_file": "地形図/ASSET-008.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "地形図とともに解説します。",
+    "edit_note": "ズーム終点で赤ピンと「戸沢村」ラベルを役場位置に表示。ナレーションに合わせて2段階ズーム。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "patch": {
+    "asset_file": "check/studio/jobs/20260908142655_earth_intro/candidate.mp4",
+    "asset_kind": "video",
+    "telop": "",
+    "question": "",
+    "map_pins": [
+      {
+        "label": "戸沢村",
+        "x": 640,
+        "y": 360,
+        "font": "rounded",
+        "size": 40,
+        "start": 0,
+        "end": 2.2666666666666666
+      }
+    ]
+  },
+  "state": "review",
+  "created_at": "2026-09-08T06:12:25.409088+00:00",
+  "updated_at": "2026-09-08T06:12:26.721032+00:00",
+  "brief": "pin_tozawa",
+  "message": "修正後のカットを確認できます",
+  "candidate": null,
+  "target": "asset",
+  "rendered_override": {
+    "asset_file": "check/studio/jobs/20260908142655_earth_intro/candidate.mp4",
+    "asset_kind": "video",
+    "telop": "",
+    "question": "",
+    "map_pins": [
+      {
+        "label": "戸沢村",
+        "x": 640,
+        "y": 360,
+        "font": "rounded",
+        "size": 40,
+        "start": 0,
+        "end": 2.2666666666666666
+      }
+    ]
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "8",
+    "--override",
+    "{\"asset_file\": \"check/studio/jobs/20260908142655_earth_intro/candidate.mp4\", \"asset_kind\": \"video\", \"telop\": \"\", \"question\": \"\", \"map_pins\": [{\"label\": \"戸沢村\", \"x\": 640, \"y\": 360, \"font\": \"rounded\", \"size\": 40, \"start\": 0, \"end\": 2.2666666666666666}]}"
+  ],
+  "worker_pid": 76355,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908151225_pin_tozawa/preview.mp4",
+  "edit_layers": null
+}

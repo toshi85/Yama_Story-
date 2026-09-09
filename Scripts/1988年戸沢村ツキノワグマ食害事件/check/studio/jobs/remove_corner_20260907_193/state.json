@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_193",
+  "kind": "text",
+  "shot_id": 193,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.650706+00:00",
+  "updated_at": "2026-09-07T13:09:59.657705+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 193,
+    "start_frame": 27186,
+    "end_frame": 27298,
+    "asset_id": "ASSET-193",
+    "asset_file": "画像/ASSET-193.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "長い時間しがみつき、咬みついたまま離れません。",
+    "edit_note": "掘り返された範囲の広さが伝わるように、ゆっくり引きながら見せる。「長い時間、離れない」テロップ。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "長い時間、離れない"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

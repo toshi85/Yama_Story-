@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_218",
+  "kind": "text",
+  "shot_id": 218,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.766423+00:00",
+  "updated_at": "2026-09-07T13:09:59.773349+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 218,
+    "start_frame": 31311,
+    "end_frame": 31423,
+    "asset_id": "ASSET-218",
+    "asset_file": "画像/ASSET-218.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-218-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "「村には、いまも数十頭のツキノワグマがいます」",
+    "edit_note": "背後の山にクマの足跡アイコンを数十個ぶんだけ薄く散らす。「数十頭」テロップ。",
+    "speech": "村には、いまも数十頭のツキノワグマがいます",
+    "motion": "lean",
+    "drift": [
+      307,
+      -28
+    ],
+    "move_sec": 3.1,
+    "base_x": 281,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "数十頭"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

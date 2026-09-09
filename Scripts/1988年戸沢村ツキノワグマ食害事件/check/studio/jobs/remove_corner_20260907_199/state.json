@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_199",
+  "kind": "text",
+  "shot_id": 199,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.672418+00:00",
+  "updated_at": "2026-09-07T13:09:59.678402+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 199,
+    "start_frame": 27923,
+    "end_frame": 28081,
+    "asset_id": "ASSET-199",
+    "asset_file": "画像/ASSET-199.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-199-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "今回の事件は、若いクマにたびたび見られる行動パターンと言えます。",
+    "edit_note": "3つのポーズの下に「低く出る／離さない／長く続く」のテロップ。今回の3件と線で結ぶ。",
+    "speech": "",
+    "motion": "breathe",
+    "drift": [
+      409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "低く出る／離さない／長く続く"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

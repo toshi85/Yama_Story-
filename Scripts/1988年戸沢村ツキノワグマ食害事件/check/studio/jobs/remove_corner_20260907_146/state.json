@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_146",
+  "kind": "text",
+  "shot_id": 146,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.487733+00:00",
+  "updated_at": "2026-09-07T13:09:59.492406+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 146,
+    "start_frame": 19895,
+    "end_frame": 20007,
+    "asset_id": "ASSET-146",
+    "asset_file": "画像/ASSET-146.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "犠牲になった方の傷の場所が、よく似ていること。",
+    "edit_note": "3枚の同じ位置を線で結び、そろっていることを編集で示す。「傷の場所が似ている」テロップ。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "傷の場所が似ている"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "shot_id": 27,
+  "brief": "ここは実写画像にしてください。医療器具の画像などがいいかなと。\n",
+  "target": "asset",
+  "prompt": "Photorealistic documentary still, 16:9 landscape. Close-up of a stainless steel medical instrument tray on a plain examination-room worktop, showing a few clean reusable stainless steel forceps and surgical scissors beside folded white gauze. A modest rural Japanese medical examination setting consistent with 1988. Restrained composition, slightly oblique overhead view, soft cool fluorescent lighting, muted natural colors, realistic metal reflections. The instruments and gauze are clearly visible, with the plain background gently out of focus and some uncluttered space for captions added during editing. This is a symbolic insert accompanying narration about a subsequent postmortem examination that identified massive blood loss. No people, hands, bodies, body parts, blood, wounds, active procedure, modern digital equipment, readable text, labels, logos, emblems, or watermarks. No dramatic horror lighting. Generate one image.",
+  "id": "20260908133920_fd2a74f5",
+  "state": "adopted",
+  "created_at": "2026-09-08T04:39:20.573263+00:00",
+  "updated_at": "2026-09-08T06:45:37.943879+00:00",
+  "message": "指示した修正を反映しました。確認してください",
+  "shot": {
+    "id": 27,
+    "start_frame": 3453,
+    "end_frame": 3598,
+    "asset_id": "ASSET-027",
+    "asset_file": "画像/ASSET-027.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-027-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "のちの検視で、亡くなった原因は大量出血とのことでした。",
+    "edit_note": "「死因 失血」ではなく「大量出血」の語で1行テロップ。機関名は出さず、必要なら「新庄署」を編集でテロップとして添える。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      -563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 51401,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006"
+      }
+    ],
+    "asset_id": "ASSET-027",
+    "shot_id": 27,
+    "snapshot": "check/studio/jobs/20260908133920_fd2a74f5/script-context.txt",
+    "snapshot_sha256": "d90f98529952f4b70973a78426dfa8f79c4290136408e2f71d29373c53c492f9"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908133920_fd2a74f5/generation-response.txt",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-027.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      }
+    ],
+    "explanation": "警察官のイラストを、1988年当時と矛盾しない金属製の医療器具を写した実写調画像に差し替えます。検視結果を伝えるカットとして、人物・遺体・血液・文字は入れません。",
+    "unsupported": ""
+  },
+  "step_index": 1,
+  "input_sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006",
+  "explanation": "警察官のイラストを、1988年当時と矛盾しない金属製の医療器具を写した実写調画像に差し替えます。検視結果を伝えるカットとして、人物・遺体・血液・文字は入れません。",
+  "candidate": "check/studio/jobs/20260908133920_fd2a74f5/candidate.png",
+  "source": "check/studio/jobs/20260908133920_fd2a74f5/candidate.png",
+  "patch": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908133920_fd2a74f5/candidate.png",
+    "asset_kind": "character"
+  },
+  "awaiting_confirmation": false,
+  "before_override": {
+    "telop": ""
+  },
+  "before_shot": {
+    "id": 27,
+    "start_frame": 3453,
+    "end_frame": 3598,
+    "asset_id": "ASSET-027",
+    "asset_file": "画像/ASSET-027.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-027-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "のちの検視で、亡くなった原因は大量出血とのことでした。",
+    "edit_note": "「死因 失血」ではなく「大量出血」の語で1行テロップ。機関名は出さず、必要なら「新庄署」を編集でテロップとして添える。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      -563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "adopted_at": "2026-09-08T06:45:37.943848+00:00",
+  "applied_override": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908133920_fd2a74f5/candidate.png",
+    "asset_kind": "character"
+  }
+}

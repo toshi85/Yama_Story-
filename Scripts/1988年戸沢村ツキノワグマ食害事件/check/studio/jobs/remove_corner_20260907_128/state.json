@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_128",
+  "kind": "text",
+  "shot_id": 128,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.446931+00:00",
+  "updated_at": "2026-09-07T13:09:59.451464+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 128,
+    "start_frame": 17714,
+    "end_frame": 17880,
+    "asset_id": "ASSET-128",
+    "asset_file": "画像/ASSET-128.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "この傷の流れも1件目で襲われた男性と、同じ状況だったのです。",
+    "edit_note": "左に「5月・1件目」、右に「10月・3件目」のテロップ。同じ形であることを画で言い切る。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "5月・1件目"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

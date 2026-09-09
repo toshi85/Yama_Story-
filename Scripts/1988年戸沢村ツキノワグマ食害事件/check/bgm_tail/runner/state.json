@@ -1,0 +1,20 @@
+{
+  "status": "review_required",
+  "pid": 74456,
+  "completed": [
+    "bgm_tail"
+  ],
+  "fingerprint": "8900484f90e330488d531c767668eb754faedc031aac5093c835f485038ade3c",
+  "steps": 1,
+  "detail": "編集画面でBGM開始位置を本人確認",
+  "production_complete": false,
+  "step": "bgm_tail",
+  "worker_pid": null,
+  "heartbeat": 1788783137.030085,
+  "output_hashes": {
+    "bgm_tail": {
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/bgm_tail/result.json": "4e005f00e13fc9bad5fc20c643989f18c8b2971be207559836eb431a277f6368",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/BGM末尾25秒_確認版.mp4": "6a5a8c5b71c235661d173bdae9b2ae13d4f60d59126405f3d6067a64d88ffee9"
+    }
+  }
+}

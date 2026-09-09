@@ -1,0 +1,179 @@
+{
+  "id": "20260908145438_cut7_fade1s",
+  "kind": "adjust",
+  "shot_id": 7,
+  "shot": {
+    "id": 7,
+    "start_frame": 793,
+    "end_frame": 912,
+    "asset_id": "ASSET-007",
+    "asset_file": "画像/ASSET-007.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "そしてなぜ、このクマは満腹なのに人を食べたのか？",
+    "edit_note": "「満腹なのに、なぜ人を食べたのか？」を下段に白テロップ。クマが顔を上げるところで音を切る。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "満腹なのに、なぜ人を食べたのか？",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "patch": {
+    "question": "",
+    "telop": "なぜ人を食べたのか？",
+    "telop_position": [
+      640,
+      360
+    ],
+    "telop_start": 0,
+    "telop_end": 3.966666666666667,
+    "telop_anim": "fade",
+    "telop_anim_duration": 1,
+    "telop_highlights": [
+      {
+        "text": "人",
+        "color": "#FF0000"
+      }
+    ]
+  },
+  "state": "adopted",
+  "created_at": "2026-09-08T05:54:38.453486+00:00",
+  "updated_at": "2026-09-08T08:39:02.273737+00:00",
+  "repair_of": "20260908135228_5fecdf29",
+  "brief": "1秒かけてフェード表示。中央に「なぜ人を食べたのか？」を表示。「人」だけ赤字。",
+  "worker_pid": 68357,
+  "message": "修正後のカットを確認できます",
+  "input_sha256": "4a695cc52e6580dfda8444717249874c3295681c7df5e675842c1d3e665ed543",
+  "explanation": "1秒かけてフェード表示。中央に「なぜ人を食べたのか？」を表示。「人」だけ赤字。",
+  "rendered_override": {
+    "question_outline": 4,
+    "question": "",
+    "telop": "なぜ人を食べたのか？",
+    "telop_position": [
+      640,
+      360
+    ],
+    "telop_start": 0,
+    "telop_end": 3.966666666666667,
+    "telop_anim": "fade",
+    "telop_highlights": [
+      {
+        "text": "人",
+        "color": "#FF0000"
+      }
+    ],
+    "telop_anim_duration": 1
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "7",
+    "--override",
+    "{\"question_outline\": 4, \"question\": \"\", \"telop\": \"なぜ人を食べたのか？\", \"telop_position\": [640, 360], \"telop_start\": 0, \"telop_end\": 3.966666666666667, \"telop_anim\": \"fade\", \"telop_highlights\": [{\"text\": \"人\", \"color\": \"#FF0000\"}], \"telop_anim_duration\": 1}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908145438_cut7_fade1s/preview.mp4",
+  "before_override": {
+    "question_outline": 4,
+    "question": "",
+    "telop": "なぜ人を食べたのか？",
+    "telop_position": [
+      640,
+      360
+    ],
+    "telop_start": 0,
+    "telop_end": 3.966666666666667,
+    "telop_anim": "none",
+    "telop_highlights": [
+      {
+        "text": "人",
+        "color": "#FF0000"
+      }
+    ]
+  },
+  "before_shot": {
+    "id": 7,
+    "start_frame": 793,
+    "end_frame": 912,
+    "asset_id": "ASSET-007",
+    "asset_file": "画像/ASSET-007.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "そしてなぜ、このクマは満腹なのに人を食べたのか？",
+    "edit_note": "「満腹なのに、なぜ人を食べたのか？」を下段に白テロップ。クマが顔を上げるところで音を切る。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "なぜ人を食べたのか？"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false,
+    "question_outline": 4.0,
+    "telop_highlights": [
+      {
+        "text": "人",
+        "color": "#FF0000"
+      }
+    ],
+    "telop_start": 0.0,
+    "telop_end": 3.966666666666667,
+    "telop_anim": "none",
+    "telop_anim_duration": 1,
+    "telop_position": [
+      640,
+      360
+    ]
+  },
+  "adopted_at": "2026-09-08T08:39:02.273714+00:00",
+  "applied_override": {
+    "question_outline": 4,
+    "question": "",
+    "telop": "なぜ人を食べたのか？",
+    "telop_position": [
+      640,
+      360
+    ],
+    "telop_start": 0,
+    "telop_end": 3.966666666666667,
+    "telop_anim": "fade",
+    "telop_highlights": [
+      {
+        "text": "人",
+        "color": "#FF0000"
+      }
+    ],
+    "telop_anim_duration": 1
+  }
+}

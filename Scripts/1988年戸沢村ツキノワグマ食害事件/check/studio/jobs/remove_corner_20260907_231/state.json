@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_231",
+  "kind": "text",
+  "shot_id": 231,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.841614+00:00",
+  "updated_at": "2026-09-07T13:09:59.849004+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 231,
+    "start_frame": 33083,
+    "end_frame": 33256,
+    "asset_id": "ASSET-231",
+    "asset_file": "画像/ASSET-231.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "このクマはどうやら、過去に別のハンターによる攻撃で、おでこに穴があき、",
+    "edit_note": "穴の縁を編集で赤くなぞる。「弾が貫いた跡」テロップ。低音を一段沈める。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "弾が貫いた跡"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

@@ -1,0 +1,603 @@
+{
+  "shots": {
+    "2": {
+      "telop": "",
+      "asset_file": "check/studio/jobs/20260908111101_6b98d442/candidate.png",
+      "asset_kind": "image"
+    },
+    "3": {
+      "telop": "",
+      "asset_file": "check/studio/jobs/20260908111128_c3400a64/candidate.png",
+      "asset_kind": "image"
+    },
+    "4": {
+      "telop": ""
+    },
+    "5": {
+      "telop": "",
+      "asset_file": "check/studio/jobs/20260908111151_db3bc50e/candidate.png",
+      "asset_kind": "image"
+    },
+    "10": {
+      "telop": ""
+    },
+    "12": {
+      "telop": "",
+      "speech": "タケノコ\nとるか",
+      "bubble_delay": 0.0,
+      "bubble_side": "",
+      "motion": "path",
+      "move_sec": 3,
+      "amount": 1,
+      "scale": 1,
+      "motion_path": {
+        "start": [
+          419,
+          534
+        ],
+        "end": [
+          639,
+          337
+        ],
+        "duration": 3,
+        "midpoints": [
+          [
+            638,
+            537
+          ]
+        ]
+      },
+      "bubble_dx": 0,
+      "bubble_dy": 0
+    },
+    "13": {
+      "telop": "",
+      "asset_file": "check/studio/jobs/20260908120901_bb280478/candidate.png",
+      "asset_kind": "character",
+      "speech": "いってくるよ"
+    },
+    "17": {
+      "telop": "",
+      "speech": "もしもし！",
+      "motion": "still",
+      "motion_path": null,
+      "character_position": [
+        162,
+        252
+      ],
+      "speech_position": [
+        461,
+        253
+      ],
+      "bubble_dx": -252,
+      "bubble_dy": 61
+    },
+    "18": {
+      "telop": "",
+      "asset_file": "check/studio/jobs/20260908121217_d4e64630/candidate.png",
+      "asset_kind": "character",
+      "speech": "どこにいるんだよ",
+      "base_x": 510,
+      "base_y": -288,
+      "bubble_dx": -34,
+      "bubble_dy": 31,
+      "motion": "path",
+      "move_sec": 2.7,
+      "amount": 1,
+      "scale": 1,
+      "motion_path": {
+        "start": [
+          678,
+          314
+        ],
+        "end": [
+          638,
+          510
+        ],
+        "duration": 2.7,
+        "midpoints": [
+          [
+            660,
+            406
+          ]
+        ]
+      }
+    },
+    "27": {
+      "telop": "",
+      "asset_file": "check/studio/jobs/20260908133920_fd2a74f5/candidate.png",
+      "asset_kind": "character"
+    },
+    "30": {
+      "telop": ""
+    },
+    "31": {
+      "telop": ""
+    },
+    "37": {
+      "telop": ""
+    },
+    "41": {
+      "telop": ""
+    },
+    "44": {
+      "telop": ""
+    },
+    "46": {
+      "telop": ""
+    },
+    "47": {
+      "telop": ""
+    },
+    "50": {
+      "telop": ""
+    },
+    "53": {
+      "telop": ""
+    },
+    "54": {
+      "telop": ""
+    },
+    "58": {
+      "telop": ""
+    },
+    "63": {
+      "telop": ""
+    },
+    "64": {
+      "telop": ""
+    },
+    "66": {
+      "telop": ""
+    },
+    "67": {
+      "telop": ""
+    },
+    "73": {
+      "telop": ""
+    },
+    "74": {
+      "telop": ""
+    },
+    "75": {
+      "telop": ""
+    },
+    "79": {
+      "telop": ""
+    },
+    "85": {
+      "telop": ""
+    },
+    "88": {
+      "telop": ""
+    },
+    "91": {
+      "telop": ""
+    },
+    "93": {
+      "telop": ""
+    },
+    "94": {
+      "telop": ""
+    },
+    "95": {
+      "telop": ""
+    },
+    "97": {
+      "telop": ""
+    },
+    "99": {
+      "telop": ""
+    },
+    "104": {
+      "telop": ""
+    },
+    "105": {
+      "telop": ""
+    },
+    "106": {
+      "telop": ""
+    },
+    "109": {
+      "telop": ""
+    },
+    "110": {
+      "telop": ""
+    },
+    "117": {
+      "telop": ""
+    },
+    "122": {
+      "telop": ""
+    },
+    "128": {
+      "telop": ""
+    },
+    "129": {
+      "telop": ""
+    },
+    "130": {
+      "telop": ""
+    },
+    "131": {
+      "telop": ""
+    },
+    "138": {
+      "telop": ""
+    },
+    "141": {
+      "telop": ""
+    },
+    "143": {
+      "telop": ""
+    },
+    "144": {
+      "telop": ""
+    },
+    "146": {
+      "telop": ""
+    },
+    "151": {
+      "telop": ""
+    },
+    "152": {
+      "telop": ""
+    },
+    "153": {
+      "telop": ""
+    },
+    "155": {
+      "telop": ""
+    },
+    "156": {
+      "telop": ""
+    },
+    "157": {
+      "telop": ""
+    },
+    "159": {
+      "telop": ""
+    },
+    "161": {
+      "telop": ""
+    },
+    "163": {
+      "telop": ""
+    },
+    "164": {
+      "telop": ""
+    },
+    "165": {
+      "telop": ""
+    },
+    "167": {
+      "telop": ""
+    },
+    "171": {
+      "telop": ""
+    },
+    "172": {
+      "telop": ""
+    },
+    "173": {
+      "telop": ""
+    },
+    "174": {
+      "telop": ""
+    },
+    "177": {
+      "telop": ""
+    },
+    "179": {
+      "telop": ""
+    },
+    "180": {
+      "telop": ""
+    },
+    "181": {
+      "telop": ""
+    },
+    "182": {
+      "telop": ""
+    },
+    "183": {
+      "telop": ""
+    },
+    "188": {
+      "telop": ""
+    },
+    "190": {
+      "telop": ""
+    },
+    "191": {
+      "telop": ""
+    },
+    "192": {
+      "telop": ""
+    },
+    "193": {
+      "telop": ""
+    },
+    "195": {
+      "telop": ""
+    },
+    "198": {
+      "telop": ""
+    },
+    "199": {
+      "telop": ""
+    },
+    "200": {
+      "telop": ""
+    },
+    "201": {
+      "telop": ""
+    },
+    "202": {
+      "telop": ""
+    },
+    "203": {
+      "telop": ""
+    },
+    "204": {
+      "telop": ""
+    },
+    "206": {
+      "telop": ""
+    },
+    "207": {
+      "telop": ""
+    },
+    "210": {
+      "telop": ""
+    },
+    "211": {
+      "telop": ""
+    },
+    "213": {
+      "telop": ""
+    },
+    "215": {
+      "telop": ""
+    },
+    "216": {
+      "telop": ""
+    },
+    "218": {
+      "telop": ""
+    },
+    "219": {
+      "telop": ""
+    },
+    "221": {
+      "telop": ""
+    },
+    "222": {
+      "telop": ""
+    },
+    "223": {
+      "telop": ""
+    },
+    "224": {
+      "telop": ""
+    },
+    "225": {
+      "telop": ""
+    },
+    "228": {
+      "telop": ""
+    },
+    "229": {
+      "telop": ""
+    },
+    "230": {
+      "telop": ""
+    },
+    "231": {
+      "telop": ""
+    },
+    "232": {
+      "telop": ""
+    },
+    "233": {
+      "telop": ""
+    },
+    "236": {
+      "telop": ""
+    },
+    "237": {
+      "telop": ""
+    },
+    "239": {
+      "telop": ""
+    },
+    "240": {
+      "telop": ""
+    },
+    "241": {
+      "telop": ""
+    },
+    "242": {
+      "telop": ""
+    },
+    "243": {
+      "telop": ""
+    },
+    "248": {
+      "telop": ""
+    },
+    "251": {
+      "telop": ""
+    },
+    "257": {
+      "telop": ""
+    },
+    "258": {
+      "telop": ""
+    },
+    "260": {
+      "telop": ""
+    },
+    "261": {
+      "telop": ""
+    },
+    "262": {
+      "telop": ""
+    },
+    "265": {
+      "telop": ""
+    },
+    "266": {
+      "telop": ""
+    },
+    "267": {
+      "telop": ""
+    },
+    "268": {
+      "telop": ""
+    },
+    "271": {
+      "telop": ""
+    },
+    "274": {
+      "telop": ""
+    },
+    "275": {
+      "telop": ""
+    },
+    "277": {
+      "telop": ""
+    },
+    "280": {
+      "telop": ""
+    },
+    "281": {
+      "telop": ""
+    },
+    "283": {
+      "telop": ""
+    },
+    "285": {
+      "telop": ""
+    },
+    "286": {
+      "telop": ""
+    },
+    "296": {
+      "telop": ""
+    },
+    "11": {
+      "card_font_size": 78
+    },
+    "16": {
+      "card_font_size": 78
+    },
+    "32": {
+      "card_font_size": 78
+    },
+    "40": {
+      "card_font_size": 78
+    },
+    "49": {
+      "card_font_size": 78
+    },
+    "57": {
+      "card_font_size": 78
+    },
+    "65": {
+      "card_font_size": 78
+    },
+    "68": {
+      "card_font_size": 78
+    },
+    "87": {
+      "card_font_size": 78
+    },
+    "96": {
+      "card_font_size": 78
+    },
+    "103": {
+      "card_font_size": 78
+    },
+    "108": {
+      "card_font_size": 78
+    },
+    "123": {
+      "card_font_size": 78
+    },
+    "145": {
+      "card_font_size": 78
+    },
+    "149": {
+      "card_font_size": 78
+    },
+    "178": {
+      "card_font_size": 78
+    },
+    "194": {
+      "card_font_size": 78
+    },
+    "209": {
+      "card_font_size": 78
+    },
+    "276": {
+      "card_font_size": 78
+    },
+    "6": {
+      "question_outline": 4,
+      "question_timings": [
+        0.5,
+        2.213
+      ]
+    },
+    "7": {
+      "question_outline": 4,
+      "question": "",
+      "telop": "なぜ人を食べたのか？",
+      "telop_position": [
+        640,
+        360
+      ],
+      "telop_start": 0,
+      "telop_end": 3.966666666666667,
+      "telop_anim": "fade",
+      "telop_highlights": [
+        {
+          "text": "人",
+          "color": "#FF0000"
+        }
+      ],
+      "telop_anim_duration": 1
+    },
+    "14": {
+      "base_x": -188,
+      "base_y": 10
+    },
+    "22": {
+      "asset_file": "check/studio/jobs/20260908140446_alpha_22/candidate.png",
+      "asset_kind": "character"
+    },
+    "8": {
+      "asset_file": "check/studio/jobs/20260908142655_earth_intro/candidate.mp4",
+      "asset_kind": "video",
+      "telop": "",
+      "question": ""
+    },
+    "9": {
+      "asset_file": "check/studio/jobs/20260908142125_363e9ff7/candidate.png",
+      "asset_kind": "image"
+    },
+    "15": {
+      "mono_start": 1.613,
+      "telop": "戻らなかった、、",
+      "telop_position": [
+        640,
+        360
+      ],
+      "telop_start": 1.613,
+      "telop_end": 5.433333333333334,
+      "telop_anim": "fade",
+      "telop_anim_duration": 1
+    }
+  }
+}

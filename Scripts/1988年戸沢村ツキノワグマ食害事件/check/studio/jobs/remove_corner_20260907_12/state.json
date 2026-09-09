@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_12",
+  "kind": "text",
+  "shot_id": 12,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.291358+00:00",
+  "updated_at": "2026-09-07T13:09:59.293841+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 12,
+    "start_frame": 1409,
+    "end_frame": 1570,
+    "asset_id": "ASSET-012",
+    "asset_file": "画像/ASSET-012.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-012-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "この村に住む61歳の男性が、タケノコを採りに山へ入ります。",
+    "edit_note": "「61歳・農業」のテロップをCHAR-01の下に。CHAR-01を画面左から山道の入り口へゆっくりスライド（3秒）。穏やかな環境音のみ。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      -230,
+      -72
+    ],
+    "move_sec": 2.4,
+    "base_x": -332,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "61歳・農業"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

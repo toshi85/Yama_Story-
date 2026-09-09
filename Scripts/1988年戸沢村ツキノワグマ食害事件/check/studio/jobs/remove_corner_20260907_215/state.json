@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_215",
+  "kind": "text",
+  "shot_id": 215,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.750901+00:00",
+  "updated_at": "2026-09-07T13:09:59.758764+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 215,
+    "start_frame": 30742,
+    "end_frame": 30968,
+    "asset_id": "ASSET-215",
+    "asset_file": "画像/ASSET-215.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "DNA鑑定を実施したところ、男性のものと一致。このクマによる被害だと発表されました。",
+    "edit_note": "「DNA鑑定 → 一致」テロップ。分析装置の表示は編集で作り、画像には描かせない。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "DNA鑑定 → 一致"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_207",
+  "kind": "text",
+  "shot_id": 207,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.721958+00:00",
+  "updated_at": "2026-09-07T13:09:59.728628+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 207,
+    "start_frame": 29484,
+    "end_frame": 29726,
+    "asset_id": "ASSET-207",
+    "asset_file": "画像/ASSET-207.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "命が失われていないとはいえ、山形県でクマと人間が接触する機会は、決して少なくないのです。",
+    "edit_note": "森と畑の境目に細い赤い線を編集で引き、その線が途切れずに続くことを見せる。「接触する機会は少なくない」テロップ。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "接触する機会は少なくない"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

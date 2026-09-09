@@ -1,0 +1,51 @@
+{
+  "id": "question_outline_20260907_6",
+  "kind": "text",
+  "shot_id": 6,
+  "state": "adopted",
+  "patch": {
+    "question_outline": 4
+  },
+  "created_at": "2026-09-07T13:39:33.291803+00:00",
+  "updated_at": "2026-09-07T13:39:33.301843+00:00",
+  "message": "本人指定：冒頭の問いを黒縁で読みやすくする",
+  "before_override": {},
+  "before_shot": {
+    "id": 6,
+    "start_frame": 647,
+    "end_frame": 793,
+    "asset_id": "ASSET-006",
+    "asset_file": "画像/ASSET-006.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "なぜ、立て続けに同じ村で3度も悲劇が繰り返されたのか。",
+    "edit_note": "上部の余白に「なぜ、同じ村で3度も繰り返されたのか」を白文字でゆっくりフェードイン。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "なぜ同じ村で、3度も悲劇が繰り返されたのか？",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "question_outline": 4
+  },
+  "preview": "check/preview/0006.mp4",
+  "rendered_override": {
+    "question_outline": 4
+  }
+}

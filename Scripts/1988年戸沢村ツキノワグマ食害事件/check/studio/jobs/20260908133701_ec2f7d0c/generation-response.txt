@@ -1,0 +1,1 @@
+指定の最終プロンプトを標準画像生成ツールで使用し、1枚生成・確認しました。透過PNGを[指定先のcandidate.png](check/studio/jobs/20260908133701_ec2f7d0c/candidate.png)へ保存済みです。既存素材・shots.jsonは変更していません。

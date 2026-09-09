@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_190",
+  "kind": "text",
+  "shot_id": 190,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.629750+00:00",
+  "updated_at": "2026-09-07T13:09:59.635991+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 190,
+    "start_frame": 26858,
+    "end_frame": 27003,
+    "asset_id": "ASSET-190",
+    "asset_file": "画像/ASSET-190.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-190-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "そしてなぜ、3人は同じような襲われ方をされたのでしょうか？",
+    "edit_note": "3人の腰から下に同じ高さの赤い帯を編集で重ね、頭と首は白いままにする。「同じ襲われ方」テロップ。",
+    "speech": "",
+    "motion": "step_back",
+    "drift": [
+      409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "同じ襲われ方"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

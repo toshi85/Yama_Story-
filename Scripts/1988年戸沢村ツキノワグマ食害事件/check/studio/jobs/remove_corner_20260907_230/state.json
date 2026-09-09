@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_230",
+  "kind": "text",
+  "shot_id": 230,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.834162+00:00",
+  "updated_at": "2026-09-07T13:09:59.841024+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 230,
+    "start_frame": 32909,
+    "end_frame": 33083,
+    "asset_id": "ASSET-230",
+    "asset_file": "画像/ASSET-230.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-230-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "標本にしてみると、頭の骨に、弾が貫いた傷が残っていたといいます。",
+    "edit_note": "指の先の穴に矢印を編集で添える。「弾が貫いた古傷」テロップ。",
+    "speech": "",
+    "motion": "breathe",
+    "drift": [
+      -179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "弾が貫いた古傷"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

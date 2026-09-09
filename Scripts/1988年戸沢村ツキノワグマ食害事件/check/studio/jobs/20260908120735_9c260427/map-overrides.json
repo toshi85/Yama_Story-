@@ -1,0 +1,20 @@
+{
+  "shots": {
+    "9": {
+      "map_camera": {
+        "easing": "smooth",
+        "start": {
+          "zoom": 1.0,
+          "pitch": 90.0,
+          "heading": 350.0
+        },
+        "end": {
+          "zoom": 5.0,
+          "pitch": 25.0,
+          "heading": 10.0
+        }
+      },
+      "asset_id": "ASSET-009"
+    }
+  }
+}

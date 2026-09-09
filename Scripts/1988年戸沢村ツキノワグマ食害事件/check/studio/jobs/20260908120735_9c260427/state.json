@@ -1,0 +1,95 @@
+{
+  "kind": "map",
+  "requested_kind": "map",
+  "shot_id": 9,
+  "brief": "",
+  "target": "asset",
+  "prompt": "",
+  "quality": "1080p",
+  "map_camera": {
+    "easing": "smooth",
+    "start": {
+      "zoom": 1.0,
+      "pitch": 90.0,
+      "heading": 350.0
+    },
+    "end": {
+      "zoom": 5.0,
+      "pitch": 25.0,
+      "heading": 10.0
+    }
+  },
+  "id": "20260908120735_9c260427",
+  "state": "review",
+  "created_at": "2026-09-08T03:07:35.637820+00:00",
+  "updated_at": "2026-09-08T03:25:23.200598+00:00",
+  "message": "地形映像を再描画しました。元の映像と比較してください",
+  "shot": {
+    "id": 9,
+    "start_frame": 980,
+    "end_frame": 1138,
+    "asset_id": "ASSET-009",
+    "asset_file": "地形図/ASSET-009.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "戸沢村は、山形県の北にあり、人口およそ4,300人。",
+    "edit_note": "山形県の輪郭を白線でなぞり、戸沢村に赤ピンと「戸沢村」ラベル。「人口 約4,300人」を左下にテロップ。最上川の流路を細い水色のラインでなぞる。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 30906,
+  "input_sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006",
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/tozawa_edit/maps.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--only",
+    "ASSET-009",
+    "--overrides",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908120735_9c260427/map-overrides.json",
+    "--out",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908120735_9c260427",
+    "--quality",
+    "1080p",
+    "--force",
+    "--jobs",
+    "2"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "candidate": "check/studio/jobs/20260908120735_9c260427/ASSET-009.mp4",
+  "patch": {
+    "map_camera": {
+      "easing": "smooth",
+      "start": {
+        "zoom": 1.0,
+        "pitch": 90.0,
+        "heading": 350.0
+      },
+      "end": {
+        "zoom": 5.0,
+        "pitch": 25.0,
+        "heading": 10.0
+      }
+    },
+    "asset_id": "ASSET-009"
+  }
+}

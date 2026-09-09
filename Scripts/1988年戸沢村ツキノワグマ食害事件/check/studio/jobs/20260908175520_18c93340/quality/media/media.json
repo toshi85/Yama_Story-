@@ -1,0 +1,19 @@
+{
+  "video": "check/studio/jobs/20260908175520_18c93340/quality/media/preview.mp4",
+  "video_sha256": "812e3fec28f04341787d91c2f7fd88d25e4b9f0bc46b9b18fe26f489484ac656",
+  "duration": 5.17,
+  "frames": [
+    {
+      "time": 0.1,
+      "file": "check/studio/jobs/20260908175520_18c93340/quality/media/frame-00.jpg"
+    },
+    {
+      "time": 2.5833,
+      "file": "check/studio/jobs/20260908175520_18c93340/quality/media/frame-01.jpg"
+    },
+    {
+      "time": 5.1,
+      "file": "check/studio/jobs/20260908175520_18c93340/quality/media/frame-02.jpg"
+    }
+  ]
+}

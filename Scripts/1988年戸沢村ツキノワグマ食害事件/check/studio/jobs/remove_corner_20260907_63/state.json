@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_63",
+  "kind": "text",
+  "shot_id": 63,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.345453+00:00",
+  "updated_at": "2026-09-07T13:09:59.348665+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 63,
+    "start_frame": 8558,
+    "end_frame": 8748,
+    "asset_id": "ASSET-063",
+    "asset_file": "画像/ASSET-063.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-063-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "地元の人たちが夜の9時ごろまで捜索します。しかし、どこにも見当たりませんでした。",
+    "edit_note": "「夜9時ごろまで捜索」テロップ。呼びかける声を重ね、次のカットで急に静かにする。",
+    "speech": "",
+    "motion": "drift_diag",
+    "drift": [
+      563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "夜9時ごろまで捜索"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

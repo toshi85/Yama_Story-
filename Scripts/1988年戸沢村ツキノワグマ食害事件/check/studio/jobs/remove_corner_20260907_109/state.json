@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_109",
+  "kind": "text",
+  "shot_id": 109,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.427808+00:00",
+  "updated_at": "2026-09-07T13:09:59.432084+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 109,
+    "start_frame": 15539,
+    "end_frame": 15644,
+    "asset_id": "ASSET-109",
+    "asset_file": "画像/ASSET-109.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-109-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "5人はそれぞれ別々にクリを拾っていました。",
+    "edit_note": "5人を画面いっぱいに散らして配置し、間に大きな余白を残す。「それぞれ別々に」テロップ。",
+    "speech": "",
+    "motion": "drift_diag",
+    "drift": [
+      563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "それぞれ別々に"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

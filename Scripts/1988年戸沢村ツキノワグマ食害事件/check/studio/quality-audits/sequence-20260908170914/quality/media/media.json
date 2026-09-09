@@ -1,0 +1,27 @@
+{
+  "video": "check/studio/quality-audits/sequence-20260908170914/quality/media/preview.mp4",
+  "video_sha256": "0d232cca7be734e96709e45539b5d8ee1b653b0d22c4543a96c0b1d9f96f8c53",
+  "duration": 3.87,
+  "frames": [
+    {
+      "time": 0.1,
+      "file": "check/studio/quality-audits/sequence-20260908170914/quality/media/frame-00.jpg"
+    },
+    {
+      "time": 1.8333,
+      "file": "check/studio/quality-audits/sequence-20260908170914/quality/media/frame-01.jpg"
+    },
+    {
+      "time": 1.9333,
+      "file": "check/studio/quality-audits/sequence-20260908170914/quality/media/frame-02.jpg"
+    },
+    {
+      "time": 3.0,
+      "file": "check/studio/quality-audits/sequence-20260908170914/quality/media/frame-03.jpg"
+    },
+    {
+      "time": 3.8333,
+      "file": "check/studio/quality-audits/sequence-20260908170914/quality/media/frame-04.jpg"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_50",
+  "kind": "text",
+  "shot_id": 50,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.330804+00:00",
+  "updated_at": "2026-09-07T13:09:59.333874+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 50,
+    "start_frame": 6343,
+    "end_frame": 6556,
+    "asset_id": "ASSET-050",
+    "asset_file": "画像/ASSET-050.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-050-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "地元の猟友会が、人を襲ったクマの処分のため、有害鳥獣駆除の緊急許可を取ります。",
+    "edit_note": "判が押される音のSE。「有害鳥獣駆除 緊急許可」テロップ。機関名は編集でテロップとして添える。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "有害鳥獣駆除 緊急許可"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

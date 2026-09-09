@@ -1,0 +1,50 @@
+{
+  "id": "enlarge_card_20260907_103",
+  "kind": "text",
+  "shot_id": 103,
+  "state": "adopted",
+  "patch": {
+    "card_font_size": 78
+  },
+  "created_at": "2026-09-07T13:11:18.089087+00:00",
+  "updated_at": "2026-09-07T13:11:18.098021+00:00",
+  "message": "本人指定：黒背景カードの白文字を全体的に30％拡大",
+  "before_override": {},
+  "before_shot": {
+    "id": 103,
+    "start_frame": 14951,
+    "end_frame": 15094,
+    "asset_id": "ASSET-103",
+    "asset_file": "",
+    "asset_kind": "black_card",
+    "background_file": "",
+    "reused": false,
+    "style": "black_card",
+    "narration": "10月9日午前8時半ごろ（2人目の事件から3日後）",
+    "edit_note": "黒背景に「10月9日 午前8時半ごろ」を白テキストで表示、下段に小さく「2人目の事件から3日後」。2秒。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "10月9日 午前8時半ごろ",
+      "2人目の事件から3日後"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "card_font_size": 78
+  }
+}

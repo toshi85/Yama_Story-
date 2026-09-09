@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_163",
+  "kind": "text",
+  "shot_id": 163,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.537018+00:00",
+  "updated_at": "2026-09-07T13:09:59.542041+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 163,
+    "start_frame": 23193,
+    "end_frame": 23247,
+    "asset_id": "ASSET-163",
+    "asset_file": "画像/ASSET-163.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-163-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "オスのツキノワグマでした。",
+    "edit_note": "「オス・ツキノワグマ」テロップ。体長を測る目盛りを編集で重ね、ヒグマとの大きさの差も小さく並べる。",
+    "speech": "",
+    "motion": "drift_diag",
+    "drift": [
+      179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "オス・ツキノワグマ"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

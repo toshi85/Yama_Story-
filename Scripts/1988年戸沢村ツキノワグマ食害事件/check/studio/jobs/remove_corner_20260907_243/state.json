@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_243",
+  "kind": "text",
+  "shot_id": 243,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.915927+00:00",
+  "updated_at": "2026-09-07T13:09:59.923850+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 243,
+    "start_frame": 35176,
+    "end_frame": 35304,
+    "asset_id": "ASSET-243",
+    "asset_file": "画像/ASSET-243.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-243-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "矢状稜（しじょうりょう）が潰れて、ゆるやかな曲線になっていたのです。",
+    "edit_note": "左の頭骨に「正常」、右に「今回のクマ」のテロップ。てっぺんの高さに水平線を2本引いて差を見せる。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      230,
+      -72
+    ],
+    "move_sec": 2.4,
+    "base_x": -332,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "矢状稜が潰れている"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

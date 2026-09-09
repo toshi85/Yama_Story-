@@ -1,0 +1,131 @@
+{
+  "id": "20260908184742_ui_feature_38",
+  "kind": "adjust",
+  "shot_id": 38,
+  "shot": {
+    "id": 38,
+    "start_frame": 4670,
+    "end_frame": 4885,
+    "asset_id": "ASSET-038",
+    "asset_file": "画像/ASSET-038.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-038-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "すぐにでも、ご家族のために夫を救出したい状況でしたが、仕方なくこの日は引き返すことに。",
+    "edit_note": "BGMを一段落とし、押し殺した声のSEだけ。テロップは出さない。",
+    "speech": "",
+    "motion": "breathe",
+    "drift": [
+      307,
+      -28
+    ],
+    "move_sec": 3.1,
+    "base_x": 281,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "state": "review",
+  "created_at": "2026-09-08T09:47:42.838749+00:00",
+  "updated_at": "2026-09-08T09:47:50.329931+00:00",
+  "brief": "本人の各カット修正依頼を反映",
+  "message": "修正後のカットを確認できます",
+  "target": "asset",
+  "quality_checks": false,
+  "sequence": {
+    "files": [
+      "check/studio/jobs/20260908184742_ui_feature_38/stage0.png",
+      "check/studio/jobs/20260908184742_ui_feature_38/stage1.png"
+    ],
+    "starts": [
+      0,
+      5.933333333333334
+    ]
+  },
+  "patch": {
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "speech_segments": [],
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "camera_motion": "",
+    "hide_character": false,
+    "character_position": null,
+    "speech_position": null,
+    "scale": 1,
+    "base_x": 0,
+    "base_y": 0,
+    "telop": "",
+    "telops": [],
+    "asset_file": "check/studio/jobs/20260908184742_ui_feature_38/stage0.png",
+    "overlays": [
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908184742_ui_feature_38/stage1.png",
+        "x": 640,
+        "y": 360,
+        "w": 1280,
+        "start": 5.933333333333334,
+        "end": 7.166666666666667,
+        "anim": "none"
+      }
+    ]
+  },
+  "candidate": "check/studio/jobs/20260908184742_ui_feature_38/stage0.png",
+  "rendered_override": {
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "speech_segments": [],
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "camera_motion": "",
+    "hide_character": false,
+    "character_position": null,
+    "speech_position": null,
+    "scale": 1,
+    "base_x": 0,
+    "base_y": 0,
+    "telop": "",
+    "telops": [],
+    "asset_file": "check/studio/jobs/20260908184742_ui_feature_38/stage0.png",
+    "overlays": [
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908184742_ui_feature_38/stage1.png",
+        "x": 640,
+        "y": 360,
+        "w": 1280,
+        "start": 5.933333333333334,
+        "end": 7.166666666666667,
+        "anim": "none"
+      }
+    ]
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "38",
+    "--override",
+    "{\"asset_kind\": \"image\", \"background_file\": \"\", \"speech\": \"\", \"speech_segments\": [], \"motion\": \"still\", \"motion_path\": null, \"same_as_prev\": false, \"pan\": \"\", \"camera_motion\": \"\", \"hide_character\": false, \"character_position\": null, \"speech_position\": null, \"scale\": 1, \"base_x\": 0, \"base_y\": 0, \"telop\": \"\", \"telops\": [], \"asset_file\": \"check/studio/jobs/20260908184742_ui_feature_38/stage0.png\", \"overlays\": [{\"type\": \"image\", \"file\": \"check/studio/jobs/20260908184742_ui_feature_38/stage1.png\", \"x\": 640, \"y\": 360, \"w\": 1280, \"start\": 5.933333333333334, \"end\": 7.166666666666667, \"anim\": \"none\"}]}"
+  ],
+  "worker_pid": 88166,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908184742_ui_feature_38/preview.mp4",
+  "edit_layers": null
+}

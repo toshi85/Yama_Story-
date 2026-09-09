@@ -1,0 +1,11 @@
+{
+  "video": "BGM末尾25秒_確認版.mp4",
+  "bgm_start": 1473.15,
+  "bgm_end": 1498.15,
+  "bgm_duration": 25.0,
+  "silence_before_bgm": true,
+  "same_video_stream": true,
+  "video_sha256": "SHA256=a492cd3fadd5fe824c7240d6d7f989cab1273815f46652786192471cf65eac82",
+  "full_decode": "PASS",
+  "human_review": "pending"
+}

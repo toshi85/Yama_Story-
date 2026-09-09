@@ -1,0 +1,210 @@
+{
+  "kind": "adjust",
+  "requested_kind": "adjust",
+  "base_candidate": "20260908150131_cdc200f2",
+  "shot_id": 18,
+  "brief": "カット内の位置・文言・人物の動きをまとめて編集",
+  "target": "asset",
+  "prompt": "",
+  "patch": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908121217_d4e64630/candidate.png",
+    "asset_kind": "character",
+    "speech": "どこにいるんだよ",
+    "base_x": 510,
+    "base_y": -288,
+    "bubble_dx": -34,
+    "bubble_dy": 31,
+    "motion": "path",
+    "move_sec": 2.7,
+    "amount": 1,
+    "scale": 1,
+    "motion_path": {
+      "start": [
+        678,
+        314
+      ],
+      "end": [
+        638,
+        510
+      ],
+      "duration": 2.7,
+      "midpoints": [
+        [
+          660,
+          406
+        ]
+      ]
+    }
+  },
+  "id": "20260908153612_4e94521c",
+  "state": "adopted",
+  "created_at": "2026-09-08T06:36:12.826713+00:00",
+  "updated_at": "2026-09-08T06:52:48.244061+00:00",
+  "message": "修正後のカットを確認できます",
+  "shot": {
+    "id": 18,
+    "start_frame": 2221,
+    "end_frame": 2332,
+    "asset_id": "ASSET-018",
+    "asset_file": "check/studio/jobs/20260908121217_d4e64630/candidate.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-018-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "家族と地元の消防団員が山へ入ります。",
+    "edit_note": "「家族と地元消防団 約30人」テロップ。足音と草をかき分ける音のSE。",
+    "speech": "どこにいるんだよ",
+    "motion": "drift_diag",
+    "drift": [
+      179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 86387,
+  "input_sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9",
+  "explanation": "カット内の位置・文言・人物の動きをまとめて編集",
+  "rendered_override": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908121217_d4e64630/candidate.png",
+    "asset_kind": "character",
+    "speech": "どこにいるんだよ",
+    "base_x": 510,
+    "base_y": -288,
+    "bubble_dx": -34,
+    "bubble_dy": 31,
+    "motion": "path",
+    "move_sec": 2.7,
+    "amount": 1,
+    "scale": 1,
+    "motion_path": {
+      "start": [
+        678,
+        314
+      ],
+      "end": [
+        638,
+        510
+      ],
+      "duration": 2.7,
+      "midpoints": [
+        [
+          660,
+          406
+        ]
+      ]
+    }
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "18",
+    "--override",
+    "{\"telop\": \"\", \"asset_file\": \"check/studio/jobs/20260908121217_d4e64630/candidate.png\", \"asset_kind\": \"character\", \"speech\": \"どこにいるんだよ\", \"base_x\": 510, \"base_y\": -288, \"bubble_dx\": -34, \"bubble_dy\": 31, \"motion\": \"path\", \"move_sec\": 2.7, \"amount\": 1, \"scale\": 1, \"motion_path\": {\"start\": [678, 314], \"end\": [638, 510], \"duration\": 2.7, \"midpoints\": [[660, 406]]}}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908153612_4e94521c/preview.mp4",
+  "edit_layers": {
+    "character": "check/studio/jobs/20260908153612_4e94521c/edit_layers/character.png",
+    "background": "画像/ASSET-018-1.png",
+    "meta": {
+      "pad_l": 0,
+      "pad_t": 55,
+      "char_w": 396,
+      "char_h": 396,
+      "cw": 467,
+      "ch": 451,
+      "bubble": [
+        215,
+        0,
+        252,
+        168
+      ]
+    },
+    "source": "check/studio/jobs/20260908121217_d4e64630/candidate.png",
+    "source_sha256": "993ec63559b5c089cf638db35303737a0ba091d81cbe2b37731877ba4de092ba"
+  },
+  "before_override": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908121217_d4e64630/candidate.png",
+    "asset_kind": "character",
+    "speech": "どこにいるんだよ"
+  },
+  "before_shot": {
+    "id": 18,
+    "start_frame": 2221,
+    "end_frame": 2332,
+    "asset_id": "ASSET-018",
+    "asset_file": "check/studio/jobs/20260908121217_d4e64630/candidate.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-018-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "家族と地元の消防団員が山へ入ります。",
+    "edit_note": "「家族と地元消防団 約30人」テロップ。足音と草をかき分ける音のSE。",
+    "speech": "どこにいるんだよ",
+    "motion": "drift_diag",
+    "drift": [
+      179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "adopted_at": "2026-09-08T06:52:48.244026+00:00",
+  "applied_override": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908121217_d4e64630/candidate.png",
+    "asset_kind": "character",
+    "speech": "どこにいるんだよ",
+    "base_x": 510,
+    "base_y": -288,
+    "bubble_dx": -34,
+    "bubble_dy": 31,
+    "motion": "path",
+    "move_sec": 2.7,
+    "amount": 1,
+    "scale": 1,
+    "motion_path": {
+      "start": [
+        678,
+        314
+      ],
+      "end": [
+        638,
+        510
+      ],
+      "duration": 2.7,
+      "midpoints": [
+        [
+          660,
+          406
+        ]
+      ]
+    }
+  }
+}

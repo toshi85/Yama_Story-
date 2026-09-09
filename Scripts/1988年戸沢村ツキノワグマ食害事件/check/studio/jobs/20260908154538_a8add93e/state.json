@@ -1,0 +1,82 @@
+{
+  "kind": "preview",
+  "shot_id": 27,
+  "id": "20260908154538_a8add93e",
+  "state": "review",
+  "created_at": "2026-09-08T06:45:38.133093+00:00",
+  "updated_at": "2026-09-08T06:45:42.641036+00:00",
+  "message": "修正後のカットを確認できます",
+  "shot": {
+    "id": 27,
+    "start_frame": 3453,
+    "end_frame": 3598,
+    "asset_id": "ASSET-027",
+    "asset_file": "画像/ASSET-027.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-027-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "のちの検視で、亡くなった原因は大量出血とのことでした。",
+    "edit_note": "「死因 失血」ではなく「大量出血」の語で1行テロップ。機関名は出さず、必要なら「新庄署」を編集でテロップとして添える。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      -563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 88361,
+  "input_sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9",
+  "patch": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908133920_fd2a74f5/candidate.png",
+    "asset_kind": "character"
+  },
+  "rendered_override": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908133920_fd2a74f5/candidate.png",
+    "asset_kind": "character"
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "27",
+    "--override",
+    "{\"telop\": \"\", \"asset_file\": \"check/studio/jobs/20260908133920_fd2a74f5/candidate.png\", \"asset_kind\": \"character\"}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908154538_a8add93e/preview.mp4",
+  "edit_layers": {
+    "character": "check/studio/jobs/20260908154538_a8add93e/edit_layers/character.png",
+    "background": "画像/ASSET-027-1.png",
+    "meta": {
+      "pad_l": 0,
+      "pad_t": 0,
+      "char_w": 703,
+      "char_h": 396,
+      "cw": 703,
+      "ch": 396,
+      "bubble": null,
+      "char_center": [
+        351.5,
+        198.0
+      ]
+    },
+    "source": "check/studio/jobs/20260908133920_fd2a74f5/candidate.png",
+    "source_sha256": "dbb015743f62dfe1b881f8e080e72a4c17865eeefbea865cd45be7eb40b4a5c3"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "20260908140442_alpha_13",
+  "kind": "image",
+  "shot_id": 13,
+  "shot": {
+    "id": 13,
+    "start_frame": 1570,
+    "end_frame": 1716,
+    "asset_id": "ASSET-013",
+    "asset_file": "画像/ASSET-013.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-013-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "家族にタケノコを採りにいくと伝え、午前10時ごろに出発。",
+    "edit_note": "「午前10時ごろ」テロップを左上に。日常の音（鶏の声、遠くの軽トラ）だけ。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "state": "failed",
+  "created_at": "2026-09-08T05:04:46.925191+00:00",
+  "updated_at": "2026-09-08T05:04:46.925580+00:00",
+  "repair_of": "20260908133047_bcce5118",
+  "brief": "市松模様を実透過へ修正し、背景・字幕と合成",
+  "candidate": "check/studio/jobs/20260908140442_alpha_13/candidate.png",
+  "preview": "check/studio/jobs/20260908140442_alpha_13/preview.mp4",
+  "target": "asset",
+  "patch": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908140442_alpha_13/candidate.png",
+    "asset_kind": "character",
+    "speech": "いってくるよ"
+  },
+  "rendered_override": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908140442_alpha_13/candidate.png",
+    "asset_kind": "character",
+    "speech": "いってくるよ"
+  },
+  "message": "合成検査で文字の反映漏れを検出。修正版を作成しています。",
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/render.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/.20260908140442_alpha_13.json",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908140442_alpha_13/preview.mp4",
+    "--shots-range",
+    "13-13",
+    "--draft",
+    "--tmp",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908140442_alpha_13/render-cache"
+  ],
+  "exit_code": 0,
+  "input_sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006"
+}

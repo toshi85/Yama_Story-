@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_210",
+  "kind": "text",
+  "shot_id": 210,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.729432+00:00",
+  "updated_at": "2026-09-07T13:09:59.735928+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 210,
+    "start_frame": 29956,
+    "end_frame": 30181,
+    "asset_id": "ASSET-210",
+    "asset_file": "画像/ASSET-210.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-210-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "山形県酒田市で、78歳の男性が山菜を採りに山へ入ったきり、戻りませんでした。",
+    "edit_note": "「山形県酒田市・78歳」テロップ。後ろ姿を奥へゆっくりスライドさせ、林に入ったところでカット。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "山形県酒田市・78歳"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

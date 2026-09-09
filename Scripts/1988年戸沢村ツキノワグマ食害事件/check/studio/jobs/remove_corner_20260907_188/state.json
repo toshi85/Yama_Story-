@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_188",
+  "kind": "text",
+  "shot_id": 188,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.623044+00:00",
+  "updated_at": "2026-09-07T13:09:59.629115+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 188,
+    "start_frame": 26431,
+    "end_frame": 26677,
+    "asset_id": "ASSET-188",
+    "asset_file": "画像/ASSET-188.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-188-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "研究者の間で通称「人狩り」と呼ぶ、この形の事件は時代が進むにつれて、増えてきてると言えます。",
+    "edit_note": "「人狩り」を赤字のテロップで一度だけ大きく出す。上がっていく線を編集で描き足す。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      230,
+      -72
+    ],
+    "move_sec": 2.4,
+    "base_x": -332,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "人狩り"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

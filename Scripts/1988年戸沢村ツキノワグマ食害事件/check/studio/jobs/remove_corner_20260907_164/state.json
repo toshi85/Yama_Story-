@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_164",
+  "kind": "text",
+  "shot_id": 164,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.542547+00:00",
+  "updated_at": "2026-09-07T13:09:59.547920+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 164,
+    "start_frame": 23247,
+    "end_frame": 23357,
+    "asset_id": "ASSET-164",
+    "asset_file": "画像/ASSET-164.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-164-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "人間でいえば、独り立ちしたばかりの年ごろです。",
+    "edit_note": "3頭の下に「子グマ」「4歳（今回の個体）」「成獣」のテロップ。真ん中だけを明るく残し、両端を落とす。",
+    "speech": "",
+    "motion": "lean",
+    "drift": [
+      486,
+      -57
+    ],
+    "move_sec": 1.4,
+    "base_x": -409,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "子グマ"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

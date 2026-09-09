@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_138",
+  "kind": "text",
+  "shot_id": 138,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.467021+00:00",
+  "updated_at": "2026-09-07T13:09:59.471313+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 138,
+    "start_frame": 18909,
+    "end_frame": 19061,
+    "asset_id": "ASSET-138",
+    "asset_file": "画像/ASSET-138.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-138-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "1発目がクマの右のわき腹に当たり、倒れたところをもう1発。",
+    "edit_note": "ボルトを引く金属音と二発目の銃声。クマの側は一切映さない。「右のわき腹」は編集でテロップとして添える。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      -307,
+      -28
+    ],
+    "move_sec": 3.1,
+    "base_x": 281,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "右のわき腹"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

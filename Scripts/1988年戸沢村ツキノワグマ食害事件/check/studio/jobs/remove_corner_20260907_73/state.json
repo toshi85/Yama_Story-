@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_73",
+  "kind": "text",
+  "shot_id": 73,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.360770+00:00",
+  "updated_at": "2026-09-07T13:09:59.364453+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 73,
+    "start_frame": 9982,
+    "end_frame": 10164,
+    "asset_id": "ASSET-073",
+    "asset_file": "画像/ASSET-073.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "同じ杉沢という集落の中で、半年以内に2人が襲われたこととなります。",
+    "edit_note": "「杉沢地区」「半年で2人」の2行テロップ。旋回のあいだに2つの現場の目印を薄く重ねる。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "杉沢地区"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

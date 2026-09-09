@@ -1,0 +1,23 @@
+{
+  "status": "review_required",
+  "pid": 79641,
+  "completed": [
+    "render",
+    "verify"
+  ],
+  "fingerprint": "51914ea9a1f2a691bd0a293f8135988efb797191bf4eb02fcbacef6576dafc7f",
+  "steps": 2,
+  "detail": "修正後の映像を本人確認",
+  "production_complete": false,
+  "step": "verify",
+  "worker_pid": null,
+  "heartbeat": 1788787504.371298,
+  "output_hashes": {
+    "render": {
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/左上白テロップ削除_確認版.mp4": "a772056d5e9fbc493fc6dafca82a34c771b6cb465356d60ee15aa04f74085ded"
+    },
+    "verify": {
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/remove_corner_telops/result.json": "df71abfb3da3180dc1415fc1ffddbed386072c7a922fd28e02c08b31a6079ebf"
+    }
+  }
+}

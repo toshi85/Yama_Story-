@@ -1,0 +1,14 @@
+{
+  "shot_id": 15,
+  "audio": "音声/編集用ミックス.wav",
+  "audio_sha256": "604f5f9030e70dc2981a6e2d32860a1cdce497a28152131d3af5013959d96c40",
+  "method": "faster-whisper small / local cached model / observed word timestamps",
+  "time_origin": "カット先頭=0秒",
+  "anchors": [
+    {
+      "text": "男性は",
+      "start": 1.613,
+      "confidence": "音声認識の推定。男0.979／性0.967／は0.996"
+    }
+  ]
+}

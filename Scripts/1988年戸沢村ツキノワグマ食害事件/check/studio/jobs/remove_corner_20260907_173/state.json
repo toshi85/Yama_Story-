@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_173",
+  "kind": "text",
+  "shot_id": 173,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.573377+00:00",
+  "updated_at": "2026-09-07T13:09:59.578785+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 173,
+    "start_frame": 24482,
+    "end_frame": 24718,
+    "asset_id": "ASSET-173",
+    "asset_file": "画像/ASSET-173.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "ただ、このクマが1人目と2人目を襲ったクマと同一個体かどうかは、今もなお、分かっていません。",
+    "edit_note": "つながっていない2本の糸の先に「？」を編集で置く。「同一個体かどうかは分かっていない」テロップ。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "同一個体かどうかは分かっていない"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

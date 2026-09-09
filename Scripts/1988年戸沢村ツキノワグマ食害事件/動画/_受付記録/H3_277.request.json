@@ -1,0 +1,29 @@
+{
+  "digest": "6ea823cb0b25316864a65feb51dd2e4328999fc6010f67683b54a98c92748524",
+  "state": "saved",
+  "endpoint": "https://queue.fal.run/minimax/h3-max-turbo/image-to-video",
+  "shot_id": "ASSET-277",
+  "duration": 5,
+  "resolution": "768P",
+  "price_check": {
+    "model": "minimax/h3-max-turbo",
+    "duration": 5,
+    "resolution": "768P",
+    "usd_per_second": "0.01",
+    "usd_per_clip": "0.05",
+    "estimated_jpy": "7.50",
+    "jpy_reference_rate": 150,
+    "source": "https://fal.ai/models/minimax/h3-max-turbo/image-to-video",
+    "checked_at": "2026-09-06T01:00:37.755733+00:00"
+  },
+  "status": "IN_QUEUE",
+  "request_id": "01a0743b-5b3c-7d80-8689-046f9bf8ec79",
+  "response_url": "https://queue.fal.run/minimax/h3-max-turbo/requests/01a0743b-5b3c-7d80-8689-046f9bf8ec79",
+  "status_url": "https://queue.fal.run/minimax/h3-max-turbo/requests/01a0743b-5b3c-7d80-8689-046f9bf8ec79/status",
+  "cancel_url": "https://queue.fal.run/minimax/h3-max-turbo/requests/01a0743b-5b3c-7d80-8689-046f9bf8ec79/cancel",
+  "logs": null,
+  "metrics": {},
+  "queue_position": 0,
+  "actual_duration": 5.18,
+  "bytes": 15568461
+}

@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_99",
+  "kind": "text",
+  "shot_id": 99,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.409359+00:00",
+  "updated_at": "2026-09-07T13:09:59.413164+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 99,
+    "start_frame": 14201,
+    "end_frame": 14458,
+    "asset_id": "ASSET-099",
+    "asset_file": "画像/ASSET-099.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-099-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "クマ被害の傾向として、現場が騒然となると、クマはその場から移動し、別の場所で人を襲うことがあります。",
+    "edit_note": "クマを手前から尾根の向こうへゆっくりスライドさせる（4秒）。「騒がしくなる → 移動する」のテロップ。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "騒がしくなる → 移動する"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

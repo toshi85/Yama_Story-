@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_94",
+  "kind": "text",
+  "shot_id": 94,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.395349+00:00",
+  "updated_at": "2026-09-07T13:09:59.399270+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 94,
+    "start_frame": 13565,
+    "end_frame": 13711,
+    "asset_id": "ASSET-094",
+    "asset_file": "画像/ASSET-094.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "その影響でクマが、人里の近くまで下りてきてしまったとのこと。",
+    "edit_note": "「不作 → 人里へ下りる」テロップ。クマが立ち止まったところで音を落とす。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "不作 → 人里へ下りる"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

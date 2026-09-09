@@ -1,0 +1,50 @@
+{
+  "id": "enlarge_card_20260907_68",
+  "kind": "text",
+  "shot_id": 68,
+  "state": "adopted",
+  "patch": {
+    "card_font_size": 78
+  },
+  "created_at": "2026-09-07T13:11:18.060372+00:00",
+  "updated_at": "2026-09-07T13:11:18.069163+00:00",
+  "message": "本人指定：黒背景カードの白文字を全体的に30％拡大",
+  "before_override": {},
+  "before_shot": {
+    "id": 68,
+    "start_frame": 9361,
+    "end_frame": 9483,
+    "asset_id": "ASSET-068",
+    "asset_file": "",
+    "asset_kind": "black_card",
+    "background_file": "",
+    "reused": false,
+    "style": "black_card",
+    "narration": "午前7時37分（捜索開始から1時間後）",
+    "edit_note": "黒背景に「午前7時37分」を白テキストで表示、下段に小さく「捜索開始から1時間後」。1.5秒。短く切って次へ。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "午前7時37分",
+      "捜索開始から1時間後"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "card_font_size": 78
+  }
+}

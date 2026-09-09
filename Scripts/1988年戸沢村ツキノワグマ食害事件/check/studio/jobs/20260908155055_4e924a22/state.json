@@ -1,0 +1,102 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "shot_id": 41,
+  "brief": "ここは実写画像にして。後ほど動画にします。",
+  "target": "asset",
+  "prompt": "Transform the supplied five-person cartoon reference into a photorealistic full-body group portrait for a Japanese historical documentary. Preserve the reference's left-to-right order, five-person composition, recognizable clothing colors, equipment and overall arrangement, but replace all cartoon features with natural adult anatomy and realistic faces. These are generic rescue personnel, not portraits of identifiable historical individuals. Context: May 26, 1988, at approximately 5 a.m., during the recovery operation in the mountains near Tozawa Village, Yamagata Prefecture, Japan. Left to right: (1) a Japanese volunteer firefighter in his 50s wearing navy work clothing with simple reflective bands, carrying a folded orange canvas stretcher under one arm; (2) a Japanese police officer in his 30s wearing a period-appropriate dark blue uniform and peaked cap, holding a small notebook and pen; (3) a Japanese hunter in his mid-50s wearing an olive-brown hunting jacket, dark green trousers and a faded orange cap, holding a wooden-stock bolt-action hunting rifle across his body with its muzzle angled downward, away from the others; (4) a Japanese hunter in his 60s wearing a gray hunting vest and brown cap, with a wooden-stock hunting rifle slung securely on his shoulder, barrel upward; (5) a Japanese volunteer firefighter in his 40s wearing dark green work clothing with simple reflective bands, holding a coil of rope. Give each person a distinct face, hairstyle, build and height. Their expressions are serious, tired and watchful, with restrained concern rather than exaggerated anger. All five stand still in a natural, loosely aligned group, suitable as the starting frame for later subtle video animation. Keep every head, foot, hand and piece of equipment fully inside the frame, with comfortable margins. Realistic skin texture, fabric, canvas, wood and metal; clothing and equipment consistent with rural Japan in 1988, without modern tactical accessories. Soft, cool early-morning illumination with clearly visible faces and clothing. Square 1:1 composition. This remains an isolated character layer: use a genuinely transparent background with clean alpha edges, including gaps between bodies and equipment. No landscape, ground plane, scenery, additional people, bears, victims, blood or injuries. No text, captions, numbers, logos, readable markings or watermarks. Photographic realism, natural proportions and understated documentary color.",
+  "id": "20260908155055_4e924a22",
+  "state": "failed",
+  "created_at": "2026-09-08T06:50:55.770845+00:00",
+  "updated_at": "2026-09-08T07:05:55.784148+00:00",
+  "message": "Codexから画像ファイルが届いていません。生成応答を確認してください。",
+  "shot": {
+    "id": 41,
+    "start_frame": 5070,
+    "end_frame": 5308,
+    "asset_id": "ASSET-041",
+    "asset_file": "画像/ASSET-041.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-041-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "消防団員と警察官が十数人。そこに猟友会のハンターが6人加わり、現場に到着。",
+    "edit_note": "「消防団・警察 十数人／猟友会 6人」の2行テロップ。BGMを静かに立ち上げる。",
+    "speech": "",
+    "motion": "drift_diag",
+    "drift": [
+      563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 2200,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9"
+      }
+    ],
+    "asset_id": "ASSET-041",
+    "shot_id": 41,
+    "snapshot": "check/studio/jobs/20260908155055_4e924a22/script-context.txt",
+    "snapshot_sha256": "817d9164eaa18e445d4e95ec6edd77984f8de60f3f31d7ffe234451f8fe59e75"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908155055_4e924a22/generation-response.txt",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-041.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 1,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      }
+    ],
+    "explanation": "消防団員・警察官・猟友会員の人物素材を、1988年5月の戸沢村の救出場面に整合する実写調に変更します。人物単体レイヤーの透過背景を維持し、文字は焼き込みません。動画化は今回は行いません。",
+    "unsupported": ""
+  },
+  "step_index": 1,
+  "input_sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9",
+  "explanation": "5月26日午前5時の救出隊として、元画像の5人の配置と装備を保ち、実写調に変更するプロンプトです。人物単体レイヤーのため透過背景を維持し、文字は入れません。"
+}

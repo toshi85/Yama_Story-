@@ -1,0 +1,53 @@
+{
+  "id": "enlarge_card_20260907_11",
+  "kind": "text",
+  "shot_id": 11,
+  "state": "adopted",
+  "patch": {
+    "card_font_size": 78
+  },
+  "created_at": "2026-09-07T13:11:17.997310+00:00",
+  "updated_at": "2026-09-07T13:11:18.006344+00:00",
+  "message": "本人指定：黒背景カードの白文字を全体的に30％拡大",
+  "before_override": {},
+  "before_shot": {
+    "id": 11,
+    "start_frame": 1307,
+    "end_frame": 1409,
+    "asset_id": "ASSET-011",
+    "asset_file": "",
+    "asset_kind": "black_card",
+    "background_file": "",
+    "reused": false,
+    "style": "black_card",
+    "narration": "1988年5月25日。",
+    "edit_note": "黒背景に「1988年5月25日」を白テキストでフェードイン（2秒）。時計の秒針SE。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "1988年5月25日"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "card_font_size": 78
+  },
+  "preview": "check/preview/0011.mp4",
+  "rendered_override": {
+    "card_font_size": 78
+  }
+}

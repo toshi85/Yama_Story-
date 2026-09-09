@@ -1,0 +1,135 @@
+{
+  "id": "20260908154406_one_sentence23",
+  "kind": "adjust",
+  "shot_id": 23,
+  "shot": {
+    "id": 23,
+    "start_frame": 2954,
+    "end_frame": 3027,
+    "asset_id": "ASSET-023",
+    "asset_file": "画像/ASSET-023.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "傷は、そこだけではありません。",
+    "edit_note": "ゆっくり近づく（4秒で1.0→1.1）。水音だけを残す。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "patch": {
+    "asset_file": "check/studio/jobs/20260908140846_alpha_22/candidate.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-022-1.png",
+    "base_x": 0,
+    "motion": "still",
+    "drift": [
+      409,
+      43
+    ],
+    "move_sec": 1.7,
+    "mono_start": 0,
+    "motion_path": null,
+    "speech": "",
+    "telop": "傷はそこだけではない",
+    "overlays": [],
+    "telop_position": [
+      640,
+      360
+    ],
+    "telop_highlights": [
+      {
+        "text": "傷",
+        "color": "#FF0000"
+      }
+    ],
+    "telop_anim": "none",
+    "telop_start": 0,
+    "telop_end": 2.433333333333333,
+    "same_as_prev": false
+  },
+  "state": "review",
+  "created_at": "2026-09-08T06:44:06.479188+00:00",
+  "updated_at": "2026-09-08T06:44:08.973676+00:00",
+  "brief": "一文の中央テロップに統合",
+  "message": "修正後のカットを確認できます",
+  "source_candidate": "20260908140941_cut23_repair",
+  "rendered_override": {
+    "asset_file": "check/studio/jobs/20260908140846_alpha_22/candidate.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-022-1.png",
+    "base_x": 0,
+    "motion": "still",
+    "drift": [
+      409,
+      43
+    ],
+    "move_sec": 1.7,
+    "mono_start": 0,
+    "motion_path": null,
+    "speech": "",
+    "telop": "傷はそこだけではない",
+    "overlays": [],
+    "telop_position": [
+      640,
+      360
+    ],
+    "telop_highlights": [
+      {
+        "text": "傷",
+        "color": "#FF0000"
+      }
+    ],
+    "telop_anim": "none",
+    "telop_start": 0,
+    "telop_end": 2.433333333333333,
+    "same_as_prev": false
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "23",
+    "--override",
+    "{\"asset_file\": \"check/studio/jobs/20260908140846_alpha_22/candidate.png\", \"asset_kind\": \"character\", \"background_file\": \"画像/ASSET-022-1.png\", \"base_x\": 0, \"motion\": \"still\", \"drift\": [409, 43], \"move_sec\": 1.7, \"mono_start\": 0, \"motion_path\": null, \"speech\": \"\", \"telop\": \"傷はそこだけではない\", \"overlays\": [], \"telop_position\": [640, 360], \"telop_highlights\": [{\"text\": \"傷\", \"color\": \"#FF0000\"}], \"telop_anim\": \"none\", \"telop_start\": 0, \"telop_end\": 2.433333333333333, \"same_as_prev\": false}"
+  ],
+  "worker_pid": 88024,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908154406_one_sentence23/preview.mp4",
+  "edit_layers": {
+    "character": "check/studio/jobs/20260908154406_one_sentence23/edit_layers/character.png",
+    "background": "画像/ASSET-022-1.png",
+    "meta": {
+      "pad_l": 0,
+      "pad_t": 0,
+      "char_w": 528,
+      "char_h": 396,
+      "cw": 528,
+      "ch": 396,
+      "bubble": null,
+      "char_center": [
+        272.5,
+        201.5
+      ]
+    },
+    "source": "check/studio/jobs/20260908140846_alpha_22/candidate.png",
+    "source_sha256": "110c551e76b37b56e8af13f3959e5702903df08156e1575772c8e9cf239f58f3"
+  }
+}

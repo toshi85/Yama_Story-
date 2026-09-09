@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_265",
+  "kind": "text",
+  "shot_id": 265,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.985111+00:00",
+  "updated_at": "2026-09-07T13:09:59.993123+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 265,
+    "start_frame": 38857,
+    "end_frame": 39129,
+    "asset_id": "ASSET-265",
+    "asset_file": "画像/ASSET-265.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-265-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "という形で、しっかりと今回の事件のクマは、過去に外側からの力で骨が変形したことが記述されています。",
+    "edit_note": "「記述されている」テロップ。頭骨と報告書が重なったところで章を締め、次の転へ渡す。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "記述されている"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

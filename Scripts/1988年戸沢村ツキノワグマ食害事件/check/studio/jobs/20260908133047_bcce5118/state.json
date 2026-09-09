@@ -1,0 +1,141 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "base_image_job": "20260908120901_bb280478",
+  "shot_id": 13,
+  "brief": "画像は、二人が端あってる感じにして欲しいので、男性と女性はお互いに見てる目線にして。いまは、こちらを向いていておかしいです。また、セリフは男性に「いってくるよ」と入れて。",
+  "target": "asset",
+  "prompt": "Edit the attached image as the sole source, preserving all previous edits. Keep the same two stylized cartoon characters, full-body framing, positions, clothing, colors, proportions, thick outlines, shading, and transparent background. The man remains on the left with his straw hat, woven basket, neck towel, and raised waving hand; the woman remains on the right holding her dishcloth. Adjust only their head angles, facial orientation, and eye direction so they clearly look at each other during an ordinary morning farewell: turn the man's face toward the woman on the right and direct his pupils toward her eyes; turn the woman's face toward the man on the left and direct her pupils toward his eyes. Neither character should look toward the viewer. Preserve his friendly speaking smile and her gentle smile. His intended dialogue is 「いってくるよ」, to be added by the editor and attributed to the man; do not render any text, subtitles, or speech bubbles in the image. Preserve the existing illustrative character identities without attempting to reconstruct real victims' appearances. Do not add scenery, people, objects, or other changes. Maintain a 1:1 canvas and transparent background.",
+  "source": "check/studio/jobs/20260908133047_bcce5118/candidate.png",
+  "base_override": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908120901_bb280478/candidate.png",
+    "asset_kind": "character",
+    "speech": "いってくるよ"
+  },
+  "id": "20260908133047_bcce5118",
+  "state": "review",
+  "created_at": "2026-09-08T04:30:47.672779+00:00",
+  "updated_at": "2026-09-08T04:47:14.620236+00:00",
+  "message": "指示した修正を反映しました。確認してください",
+  "shot": {
+    "id": 13,
+    "start_frame": 1570,
+    "end_frame": 1716,
+    "asset_id": "ASSET-013",
+    "asset_file": "画像/ASSET-013.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-013-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "家族にタケノコを採りにいくと伝え、午前10時ごろに出発。",
+    "edit_note": "「午前10時ごろ」テロップを左上に。日常の音（鶏の声、遠くの軽トラ）だけ。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 45758,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006"
+      }
+    ],
+    "asset_id": "ASSET-013",
+    "shot_id": 13,
+    "snapshot": "check/studio/jobs/20260908133047_bcce5118/script-context.txt",
+    "snapshot_sha256": "423f113bd06f77e41b9a158c6b958f6e7ffaacc783ad33d5da6a475a9be47592"
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "13",
+    "--override",
+    "{\"telop\": \"\", \"asset_file\": \"check/studio/jobs/20260908133047_bcce5118/candidate.png\", \"asset_kind\": \"character\", \"speech\": \"いってくるよ\"}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      },
+      {
+        "kind": "adjust",
+        "patch": {
+          "speech": "いってくるよ"
+        }
+      }
+    ],
+    "explanation": "添付画像を編集元にして、男性と女性がお互いを見るよう顔の向きと目線を修正します。服装、持ち物、画調、透過背景など指定のない部分は維持します。セリフ「いってくるよ」は男性の発言として編集側で表示し、画像には描き込みません。",
+    "unsupported": ""
+  },
+  "step_index": 2,
+  "input_sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006",
+  "explanation": "添付画像を編集元にして、男性と女性がお互いを見るよう顔の向きと目線を修正します。服装、持ち物、画調、透過背景など指定のない部分は維持します。セリフ「いってくるよ」は男性の発言として編集側で表示し、画像には描き込みません。",
+  "candidate": "check/studio/jobs/20260908133047_bcce5118/candidate.png",
+  "patch": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908133047_bcce5118/candidate.png",
+    "asset_kind": "character",
+    "speech": "いってくるよ"
+  },
+  "rendered_override": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908133047_bcce5118/candidate.png",
+    "asset_kind": "character",
+    "speech": "いってくるよ"
+  },
+  "preview": "check/studio/jobs/20260908133047_bcce5118/preview.mp4",
+  "awaiting_confirmation": false,
+  "edit_layers": {
+    "character": "check/studio/jobs/20260908133047_bcce5118/edit_layers/character.png",
+    "background": "画像/ASSET-013-1.png",
+    "meta": {
+      "pad_l": 0,
+      "pad_t": 130,
+      "char_w": 396,
+      "char_h": 396,
+      "cw": 582,
+      "ch": 526,
+      "bubble": [
+        286,
+        0,
+        296,
+        116
+      ]
+    },
+    "source": "check/studio/jobs/20260908133047_bcce5118/candidate.png",
+    "source_sha256": "a9b67a37246151c0d7cda0caef23938fca1a016d96fe58dc79a90804f2ed5f6f"
+  }
+}

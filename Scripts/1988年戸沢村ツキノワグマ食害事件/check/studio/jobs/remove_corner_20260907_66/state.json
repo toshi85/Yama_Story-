@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_66",
+  "kind": "text",
+  "shot_id": 66,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.352976+00:00",
+  "updated_at": "2026-09-07T13:09:59.356433+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 66,
+    "start_frame": 8964,
+    "end_frame": 9202,
+    "asset_id": "ASSET-066",
+    "asset_file": "画像/ASSET-066.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-066-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "消防団員、警察官、猟友会員。あわせて57人が、四つの班に分かれて山へ入ります。",
+    "edit_note": "「総勢57人・4班」テロップ。キャラを4つのかたまりに配置し、班ごとに枠で囲む。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      -486,
+      -57
+    ],
+    "move_sec": 1.4,
+    "base_x": -409,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "総勢57人・4班"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

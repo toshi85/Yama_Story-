@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_153",
+  "kind": "text",
+  "shot_id": 153,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.503796+00:00",
+  "updated_at": "2026-09-07T13:09:59.508692+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 153,
+    "start_frame": 21069,
+    "end_frame": 21217,
+    "asset_id": "ASSET-153",
+    "asset_file": "画像/ASSET-153.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-153-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "つまり、そこには長いあいだ住みついていたクマがいた、ということです。",
+    "edit_note": "寝床のくぼみの位置にぴたりと重ねて合成する。「長く住みついていた」テロップ。BGMを落ち着かせる。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "長く住みついていた"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

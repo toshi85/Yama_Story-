@@ -1,0 +1,156 @@
+{
+  "kind": "adjust",
+  "requested_kind": "adjust",
+  "base_candidate": "20260908160702_repair_26",
+  "shot_id": 26,
+  "brief": "カット内の位置・文言・人物の動きをまとめて編集",
+  "target": "asset",
+  "prompt": "",
+  "patch": {
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-020-1.png",
+    "scale": 0.9,
+    "character_position": [
+      420,
+      190
+    ],
+    "speech_position": [
+      273,
+      198
+    ],
+    "speech": "クマだ、、",
+    "bubble_delay": 2.4,
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "asset_file": "check/studio/jobs/20260908160702_repair_26/candidate.png",
+    "bubble_dx": -577,
+    "bubble_dy": 18
+  },
+  "id": "20260908174841_87467cad",
+  "state": "review",
+  "created_at": "2026-09-08T08:48:41.543330+00:00",
+  "updated_at": "2026-09-08T08:49:55.792417+00:00",
+  "message": "修正後のカットを確認できます",
+  "shot": {
+    "id": 26,
+    "start_frame": 3272,
+    "end_frame": 3453,
+    "asset_id": "ASSET-026",
+    "asset_file": "画像/ASSET-026.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-026-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "この悲惨な現場を見て、消防はすぐ「クマの仕業だ」と確信したといいます。",
+    "edit_note": "背景の足跡に一瞬だけピントを送る。「クマの仕業だ」を字幕表示。低音の一撃SE。",
+    "speech": "",
+    "motion": "step_back",
+    "drift": [
+      -307,
+      -28
+    ],
+    "move_sec": 3.1,
+    "base_x": 281,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "quality_checks": true,
+  "worker_pid": 54450,
+  "input_sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9",
+  "explanation": "カット内の位置・文言・人物の動きをまとめて編集",
+  "rendered_override": {
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-020-1.png",
+    "scale": 0.9,
+    "character_position": [
+      420,
+      190
+    ],
+    "speech_position": [
+      273,
+      198
+    ],
+    "speech": "クマだ、、",
+    "bubble_delay": 2.4,
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "asset_file": "check/studio/jobs/20260908160702_repair_26/candidate.png",
+    "bubble_dx": -577,
+    "bubble_dy": 18
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "26",
+    "--override",
+    "{\"asset_kind\": \"character\", \"background_file\": \"画像/ASSET-020-1.png\", \"scale\": 0.9, \"character_position\": [420, 190], \"speech_position\": [273, 198], \"speech\": \"クマだ、、\", \"bubble_delay\": 2.4, \"motion\": \"still\", \"motion_path\": null, \"same_as_prev\": false, \"asset_file\": \"check/studio/jobs/20260908160702_repair_26/candidate.png\", \"bubble_dx\": -577, \"bubble_dy\": 18}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908174841_87467cad/preview.mp4",
+  "edit_layers": {
+    "character": "check/studio/jobs/20260908174841_87467cad/edit_layers/character.png",
+    "background": "画像/ASSET-020-1.png",
+    "meta": {
+      "pad_l": 147,
+      "pad_t": 0,
+      "char_w": 356,
+      "char_h": 356,
+      "cw": 503,
+      "ch": 356,
+      "bubble": [
+        0,
+        8,
+        230,
+        104
+      ],
+      "char_center": [
+        180.0,
+        178.0
+      ]
+    },
+    "source": "check/studio/jobs/20260908160702_repair_26/candidate.png",
+    "source_sha256": "5f0b440ebabe431b4086da3cda02ffbe3e2e759eb2db772d99a0e477c9c44b02"
+  },
+  "quality_review": {
+    "status": "media_checked",
+    "media": {
+      "video": "check/studio/jobs/20260908174841_87467cad/quality/media/preview.mp4",
+      "video_sha256": "1a84736199ec86fa2d1fa3de03db9c667fc70d9b715c0ff6f1194ef5827585bb",
+      "duration": 6.03,
+      "frames": [
+        {
+          "time": 0.1,
+          "file": "check/studio/jobs/20260908174841_87467cad/quality/media/frame-00.jpg"
+        },
+        {
+          "time": 2.3667,
+          "file": "check/studio/jobs/20260908174841_87467cad/quality/media/frame-01.jpg"
+        },
+        {
+          "time": 2.4333,
+          "file": "check/studio/jobs/20260908174841_87467cad/quality/media/frame-02.jpg"
+        },
+        {
+          "time": 3.0167,
+          "file": "check/studio/jobs/20260908174841_87467cad/quality/media/frame-03.jpg"
+        },
+        {
+          "time": 5.9667,
+          "file": "check/studio/jobs/20260908174841_87467cad/quality/media/frame-04.jpg"
+        }
+      ]
+    }
+  }
+}

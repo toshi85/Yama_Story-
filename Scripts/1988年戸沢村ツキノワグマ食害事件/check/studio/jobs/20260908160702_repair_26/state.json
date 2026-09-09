@@ -1,0 +1,117 @@
+{
+  "id": "20260908160702_repair_26",
+  "kind": "image",
+  "shot_id": 26,
+  "shot": {
+    "id": 26,
+    "start_frame": 3272,
+    "end_frame": 3453,
+    "asset_id": "ASSET-026",
+    "asset_file": "画像/ASSET-026.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-026-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "この悲惨な現場を見て、消防はすぐ「クマの仕業だ」と確信したといいます。",
+    "edit_note": "背景の足跡に一瞬だけピントを送る。「クマの仕業だ」を字幕表示。低音の一撃SE。",
+    "speech": "",
+    "motion": "step_back",
+    "drift": [
+      -307,
+      -28
+    ],
+    "move_sec": 3.1,
+    "base_x": 281,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "patch": {
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-020-1.png",
+    "scale": 0.9,
+    "character_position": [
+      420,
+      190
+    ],
+    "speech_position": [
+      850,
+      180
+    ],
+    "speech": "クマだ、、",
+    "bubble_delay": 2.4,
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "asset_file": "check/studio/jobs/20260908160702_repair_26/candidate.png"
+  },
+  "state": "review",
+  "created_at": "2026-09-08T07:07:02.780638+00:00",
+  "updated_at": "2026-09-08T07:07:09.665002+00:00",
+  "brief": "沢の広い背景と怯える消防隊員",
+  "message": "修正後のカットを確認できます",
+  "candidate": "check/studio/jobs/20260908160702_repair_26/candidate.png",
+  "target": "asset",
+  "rendered_override": {
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-020-1.png",
+    "scale": 0.9,
+    "character_position": [
+      420,
+      190
+    ],
+    "speech_position": [
+      850,
+      180
+    ],
+    "speech": "クマだ、、",
+    "bubble_delay": 2.4,
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "asset_file": "check/studio/jobs/20260908160702_repair_26/candidate.png"
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "26",
+    "--override",
+    "{\"asset_kind\": \"character\", \"background_file\": \"画像/ASSET-020-1.png\", \"scale\": 0.9, \"character_position\": [420, 190], \"speech_position\": [850, 180], \"speech\": \"クマだ、、\", \"bubble_delay\": 2.4, \"motion\": \"still\", \"motion_path\": null, \"same_as_prev\": false, \"asset_file\": \"check/studio/jobs/20260908160702_repair_26/candidate.png\"}"
+  ],
+  "worker_pid": 6541,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908160702_repair_26/preview.mp4",
+  "edit_layers": {
+    "character": "check/studio/jobs/20260908160702_repair_26/edit_layers/character.png",
+    "background": "画像/ASSET-020-1.png",
+    "meta": {
+      "pad_l": 0,
+      "pad_t": 10,
+      "char_w": 356,
+      "char_h": 356,
+      "cw": 660,
+      "ch": 366,
+      "bubble": [
+        430,
+        0,
+        230,
+        104
+      ],
+      "char_center": [
+        180.0,
+        178.0
+      ]
+    },
+    "source": "check/studio/jobs/20260908160702_repair_26/candidate.png",
+    "source_sha256": "5f0b440ebabe431b4086da3cda02ffbe3e2e759eb2db772d99a0e477c9c44b02"
+  }
+}

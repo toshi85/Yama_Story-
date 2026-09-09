@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_13",
+  "kind": "text",
+  "shot_id": 13,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.294374+00:00",
+  "updated_at": "2026-09-07T13:09:59.297038+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 13,
+    "start_frame": 1570,
+    "end_frame": 1716,
+    "asset_id": "ASSET-013",
+    "asset_file": "画像/ASSET-013.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-013-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "家族にタケノコを採りにいくと伝え、午前10時ごろに出発。",
+    "edit_note": "「午前10時ごろ」テロップを左上に。日常の音（鶏の声、遠くの軽トラ）だけ。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "午前10時ごろ"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_241",
+  "kind": "text",
+  "shot_id": 241,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.898330+00:00",
+  "updated_at": "2026-09-07T13:09:59.906238+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 241,
+    "start_frame": 34932,
+    "end_frame": 35024,
+    "asset_id": "ASSET-241",
+    "asset_file": "画像/ASSET-241.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "正常なクマなら、そこが飛び出しています。",
+    "edit_note": "稜線の高さに水平線を引き、どれだけ立っているかを編集で示す。「正常なクマ」テロップ。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "正常なクマ"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

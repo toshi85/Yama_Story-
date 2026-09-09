@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_31",
+  "kind": "text",
+  "shot_id": 31,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.310120+00:00",
+  "updated_at": "2026-09-07T13:09:59.312910+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 31,
+    "start_frame": 3948,
+    "end_frame": 4153,
+    "asset_id": "ASSET-031",
+    "asset_file": "画像/ASSET-031.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-031-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "その後、4人が被害状況の連絡のために山を下り、6人が現場に残りました。",
+    "edit_note": "「連絡へ 4人／現場に残る 6人」の2行テロップを左右に振り分けて表示。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      486,
+      -57
+    ],
+    "move_sec": 1.4,
+    "base_x": -409,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "連絡へ 4人／現場に残る 6人"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

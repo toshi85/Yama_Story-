@@ -1,0 +1,117 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "base_image_job": "20260908151228_body_scene",
+  "shot_id": 20,
+  "brief": "気持ちよさそうに寝てる画像になってるので、ちゃんと遺体にしてください。ボロボロの服装で、体に傷があり、青白い顔などにして。",
+  "target": "asset",
+  "prompt": "Edit the attached image directly. Preserve the existing 16:9 composition, photorealistic nighttime ravine, wet rocks, shallow stream, bamboo grass, lighting, camera angle, and the illustrated man's location and scale. Modify only the existing cartoon man so he reads as deceased after an attack rather than peacefully sleeping. Keep his generic elderly Japanese appearance, gray hair, thick black outlines, compact cartoon proportions, green jacket, brown trousers, dark boots, light neck towel, and nearby straw hat; do not attempt to recreate the real victim's likeness. Change his warm complexion to pale, desaturated gray-blue. Remove the contented expression, smile, and rosy warmth: use slack, unresponsive facial features and closed eyes without a relaxed smiling curve. Adjust his arms and hands minimally so they rest limply against the rocks instead of supporting his head like a pillow, while retaining his overall side-lying position and orientation. Make his jacket and trousers visibly ragged, with irregular tears, frayed edges, dirt, and abrasion marks. Add a few restrained, non-graphic scratches and abrasions to visible arms and near the ankles, with small muted dried-blood stains on damaged clothing. Keep his head and neck free of wounds. Do not show exposed flesh beneath deep wounds, exposed muscle, bone, dismemberment, or pools of blood. Preserve the existing blend of cartoon character and photographic background. Do not add people, animals, objects, text, subtitles, labels, or watermarks.",
+  "source": "check/studio/jobs/20260908151228_body_scene/candidate.png",
+  "base_override": {
+    "background_file": "",
+    "speech": "",
+    "telop": "",
+    "question": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "asset_file": "check/studio/jobs/20260908151228_body_scene/candidate.png",
+    "asset_kind": "image"
+  },
+  "id": "20260908174304_222477fb",
+  "state": "failed",
+  "created_at": "2026-09-08T08:43:04.441280+00:00",
+  "updated_at": "2026-09-08T08:46:08.029322+00:00",
+  "message": "処理に失敗しました。a/Desktop/Antigravity/System_Tools/edit/character_matte.cjs:11\nif(neutral.length/border.length<.95||levels[Math.floor(levels.length*.02)]<100)throw Error('背景が明るい無彩色と確認できないため、自動透過処理は行いません');\n                                                                               ^\n\nError: 背景が明るい無彩色と確認できないため、自動透過処理は行いません\n    at Object.<anonymous> (/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/character_matte.cjs:11:86)\n    at Module._compile (node:internal/modules/cjs/loader:1809:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1940:10)\n    at Module.load (node:internal/modules/cjs/loader:1530:32)\n    at Module._load (node:internal/modules/cjs/loader:1332:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v25.6.0\n",
+  "shot": {
+    "id": 20,
+    "start_frame": 2513,
+    "end_frame": 2651,
+    "asset_id": "ASSET-020",
+    "asset_file": "画像/ASSET-020.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-020-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "おそるおそる近づいてみると、それは無残な夫の姿でした。",
+    "edit_note": "後ろ姿だけで処理し、視線の先は一切映さない。心拍SEを立ち上げる。1〜2秒で次へ。",
+    "speech": "",
+    "motion": "lean",
+    "drift": [
+      486,
+      -57
+    ],
+    "move_sec": 1.4,
+    "base_x": -409,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "quality_checks": true,
+  "worker_pid": 46236,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9"
+      }
+    ],
+    "asset_id": "ASSET-020",
+    "shot_id": 20,
+    "snapshot": "check/studio/jobs/20260908174304_222477fb/script-context.txt",
+    "snapshot_sha256": "f9ca8fcb367a2f62f19f3b64b837de9255a707ca71b0fb0b293d816d298fffb3"
+  },
+  "command": [
+    "/opt/homebrew/bin/node",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/character_matte.cjs",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908174304_222477fb/candidate_asset-raw.png",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908174304_222477fb/candidate_asset-alpha.png",
+    "",
+    "1672",
+    "941",
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1"
+  ],
+  "child_pid": null,
+  "exit_code": 1,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      }
+    ],
+    "requirements": [
+      "添付1枚目を編集元にし、実写の夜の沢、岩、水、笹、照明、画角と人物の配置・大きさを維持する。",
+      "男性のイラスト画調、白髪、緑の上着、茶色のズボン、長靴、傍らの帽子を維持する。",
+      "安らかな寝顔を、青白く血の気がない、表情と力の抜けた顔に変更する。頭を手で支える寝姿を、腕と身体が脱力した姿勢に修正する。",
+      "衣服を破れやほつれのあるボロボロの状態にし、腕や足に傷を加える。露出した骨や筋肉などの直接的な損傷描写は避け、頭と首には傷を追加しない。",
+      "実在の被害者の容姿を推測で再現せず、既存の人物デザインを基に修正する。",
+      "背景込みの一枚画像を維持し、人物やクマを追加しない。文字を焼き込まず、既存字幕の配置と書式を維持する。"
+    ],
+    "explanation": "添付画像の男性だけを、眠って見える状態から、青白い顔・脱力した姿勢・破れた衣服・傷で亡くなっていることが伝わる描写へ修正します。",
+    "unsupported": "",
+    "learning": []
+  },
+  "step_index": 1,
+  "input_sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9",
+  "explanation": "添付画像の背景・構図・人物の画調を維持し、青白い顔、力の抜けた表情と手、破れた衣服、控えめな傷で遺体と分かる状態に修正します。頭と首には傷を加えません。"
+}

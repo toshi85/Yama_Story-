@@ -1,0 +1,5 @@
+指定の最終プロンプトをそのまま標準画像生成ツールで使用し、1枚生成・確認しました。
+
+保存先：[candidate.png](/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908111128_c3400a64/candidate.png)
+
+既存素材とshots.jsonは変更していません。

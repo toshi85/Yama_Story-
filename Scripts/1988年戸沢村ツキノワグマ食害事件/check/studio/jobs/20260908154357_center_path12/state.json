@@ -1,0 +1,136 @@
+{
+  "id": "20260908154357_center_path12",
+  "kind": "adjust",
+  "shot_id": 12,
+  "shot": {
+    "id": 12,
+    "start_frame": 1409,
+    "end_frame": 1570,
+    "asset_id": "ASSET-012",
+    "asset_file": "画像/ASSET-012.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-012-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "この村に住む61歳の男性が、タケノコを採りに山へ入ります。",
+    "edit_note": "「61歳・農業」のテロップをCHAR-01の下に。CHAR-01を画面左から山道の入り口へゆっくりスライド（3秒）。穏やかな環境音のみ。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      -230,
+      -72
+    ],
+    "move_sec": 2.4,
+    "base_x": -332,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "patch": {
+    "telop": "",
+    "speech": "タケノコ\nとるか",
+    "bubble_delay": 0.0,
+    "bubble_side": "",
+    "motion": "path",
+    "move_sec": 3,
+    "amount": 1,
+    "scale": 1,
+    "motion_path": {
+      "start": [
+        419,
+        534
+      ],
+      "end": [
+        639,
+        337
+      ],
+      "duration": 3,
+      "midpoints": [
+        [
+          638,
+          537
+        ]
+      ]
+    },
+    "bubble_dx": 290,
+    "bubble_dy": -50
+  },
+  "state": "review",
+  "created_at": "2026-09-08T06:43:57.314529+00:00",
+  "updated_at": "2026-09-08T06:44:02.513132+00:00",
+  "brief": "人物本体の中心を始点・中間点・終点に合わせる",
+  "message": "修正後のカットを確認できます",
+  "source_candidate": "20260908145558_561f2af9",
+  "rendered_override": {
+    "telop": "",
+    "speech": "タケノコ\nとるか",
+    "bubble_delay": 0.0,
+    "bubble_side": "",
+    "motion": "path",
+    "move_sec": 3,
+    "amount": 1,
+    "scale": 1,
+    "motion_path": {
+      "start": [
+        419,
+        534
+      ],
+      "end": [
+        639,
+        337
+      ],
+      "duration": 3,
+      "midpoints": [
+        [
+          638,
+          537
+        ]
+      ]
+    },
+    "bubble_dx": 290,
+    "bubble_dy": -50
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "12",
+    "--override",
+    "{\"telop\": \"\", \"speech\": \"タケノコ\\nとるか\", \"bubble_delay\": 0.0, \"bubble_side\": \"\", \"motion\": \"path\", \"move_sec\": 3, \"amount\": 1, \"scale\": 1, \"motion_path\": {\"start\": [419, 534], \"end\": [639, 337], \"duration\": 3, \"midpoints\": [[638, 537]]}, \"bubble_dx\": 290, \"bubble_dy\": -50}"
+  ],
+  "worker_pid": 88024,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908154357_center_path12/preview.mp4",
+  "edit_layers": {
+    "character": "check/studio/jobs/20260908154357_center_path12/edit_layers/character.png",
+    "background": "画像/ASSET-012-1.png",
+    "meta": {
+      "pad_l": 0,
+      "pad_t": 165,
+      "char_w": 396,
+      "char_h": 396,
+      "cw": 787,
+      "ch": 561,
+      "bubble": [
+        577,
+        0,
+        210,
+        168
+      ],
+      "char_center": [
+        198.0,
+        198.0
+      ]
+    },
+    "source": "画像/ASSET-012.png",
+    "source_sha256": "a896c48a2d0fff283263a88d35c4ad00a3988b86d4b3a2e0378d62f4c9a51b28"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_206",
+  "kind": "text",
+  "shot_id": 206,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.714816+00:00",
+  "updated_at": "2026-09-07T13:09:59.721344+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 206,
+    "start_frame": 29342,
+    "end_frame": 29484,
+    "asset_id": "ASSET-206",
+    "asset_file": "画像/ASSET-206.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-206-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "しかし、クマにより怪我を受けた事例は、108件にも上ります。",
+    "edit_note": "赤で光らせた3行はそのまま残し、その周りに黄色の行を108行分だけ点灯させる。「怪我 108件」テロップ。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      -409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "怪我 108件"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

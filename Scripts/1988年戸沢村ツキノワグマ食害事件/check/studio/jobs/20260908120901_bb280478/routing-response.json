@@ -1,0 +1,1 @@
+{"steps":[{"kind":"image","target":"asset"},{"kind":"adjust","patch":{"speech":"いってくるよ"}}],"explanation":"人物レイヤーの画調と透過背景を維持し、男性と女性が互いに顔と目線を向けて話している姿に修正します。男性のセリフ「いってくるよ」は画像に描き込まず、編集側で追加します。","unsupported":""}

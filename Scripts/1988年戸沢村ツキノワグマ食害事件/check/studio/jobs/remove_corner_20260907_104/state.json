@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_104",
+  "kind": "text",
+  "shot_id": 104,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.413765+00:00",
+  "updated_at": "2026-09-07T13:09:59.418159+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 104,
+    "start_frame": 15094,
+    "end_frame": 15168,
+    "asset_id": "ASSET-104",
+    "asset_file": "画像/ASSET-104.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-104-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "家族5人が山へ向かいました。",
+    "edit_note": "「家族5人」テロップ。5人を横一列に並べ、奥へゆっくりスライド。明るいBGM。",
+    "speech": "",
+    "motion": "walk_cross",
+    "drift": [
+      -409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "家族5人"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

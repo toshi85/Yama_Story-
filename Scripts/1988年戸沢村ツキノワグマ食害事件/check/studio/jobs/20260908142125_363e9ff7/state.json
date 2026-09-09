@@ -1,0 +1,141 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "shot_id": 9,
+  "brief": "ここは、戸沢村上空をドローン視点で見てる実写画像にして。あとから動画にします。",
+  "target": "asset",
+  "prompt": "Create a photorealistic 16:9 aerial still image of Tozawa Village in northern Yamagata Prefecture, Japan, for a historical documentary introducing the setting of events in May 1988. Replace the reference image's regional satellite-map composition with a much closer, oblique drone-style view above the village. Look across the broad Mogami River, the modest rural settlement along its valley, and the densely forested mountains surrounding it. Keep the river and village clearly visible in the middle ground, with overlapping mountain ridges extending into the distance. Depict late-May fresh green foliage under natural daylight, realistic atmospheric perspective, and restrained photographic colors. The scene should feel like genuine aerial location photography, with natural terrain textures and believable scale, not a satellite map, illustration, or CGI reconstruction. Keep visible development consistent with rural Japan in 1988; avoid conspicuously modern infrastructure. No people or bears. Use a stable, spacious composition suitable for later animation as one continuous aerial shot. No text, subtitles, labels, location pins, boundary outlines, highlighted river routes, graphic overlays, or logos.",
+  "id": "20260908142125_363e9ff7",
+  "state": "adopted",
+  "created_at": "2026-09-08T05:21:25.564905+00:00",
+  "updated_at": "2026-09-08T06:33:13.089256+00:00",
+  "message": "指示した修正を反映しました。確認してください",
+  "shot": {
+    "id": 9,
+    "start_frame": 980,
+    "end_frame": 1138,
+    "asset_id": "ASSET-009",
+    "asset_file": "地形図/ASSET-009.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "戸沢村は、山形県の北にあり、人口およそ4,300人。",
+    "edit_note": "山形県の輪郭を白線でなぞり、戸沢村に赤ピンと「戸沢村」ラベル。「人口 約4,300人」を左下にテロップ。最上川の流路を細い水色のラインでなぞる。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 58186,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006"
+      }
+    ],
+    "asset_id": "ASSET-009",
+    "shot_id": 9,
+    "snapshot": "check/studio/jobs/20260908142125_363e9ff7/script-context.txt",
+    "snapshot_sha256": "79ce1d27ed3bac9e537d47836bfc20c72671bdf32316cf0a1da3dc18d3399c03"
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "9",
+    "--override",
+    "{\"asset_file\": \"check/studio/jobs/20260908142125_363e9ff7/candidate.png\", \"asset_kind\": \"image\"}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      }
+    ],
+    "explanation": "ASSET-009を、戸沢村上空から山並み・集落・最上川を見下ろす、実写のドローン空撮風の静止画に変更します。地理と年代の整合性を保ち、人物・字幕・文字・地図ラベルは追加しません。動画化は今回は行いません。",
+    "unsupported": ""
+  },
+  "step_index": 1,
+  "input_sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006",
+  "explanation": "ASSET-009を、戸沢村上空から山並み・集落・最上川を見下ろす、実写のドローン空撮風の静止画に変更します。地理と年代の整合性を保ち、人物・字幕・文字・地図ラベルは追加しません。動画化は今回は行いません。",
+  "candidate": "check/studio/jobs/20260908142125_363e9ff7/candidate.png",
+  "patch": {
+    "asset_file": "check/studio/jobs/20260908142125_363e9ff7/candidate.png",
+    "asset_kind": "image"
+  },
+  "source": "check/studio/jobs/20260908142125_363e9ff7/candidate.png",
+  "rendered_override": {
+    "asset_file": "check/studio/jobs/20260908142125_363e9ff7/candidate.png",
+    "asset_kind": "image"
+  },
+  "preview": "check/studio/jobs/20260908142125_363e9ff7/preview.mp4",
+  "awaiting_confirmation": false,
+  "before_override": {},
+  "before_shot": {
+    "id": 9,
+    "start_frame": 980,
+    "end_frame": 1138,
+    "asset_id": "ASSET-009",
+    "asset_file": "地形図/ASSET-009.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "戸沢村は、山形県の北にあり、人口およそ4,300人。",
+    "edit_note": "山形県の輪郭を白線でなぞり、戸沢村に赤ピンと「戸沢村」ラベル。「人口 約4,300人」を左下にテロップ。最上川の流路を細い水色のラインでなぞる。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "adopted_at": "2026-09-08T06:33:13.089242+00:00",
+  "applied_override": {
+    "asset_file": "check/studio/jobs/20260908142125_363e9ff7/candidate.png",
+    "asset_kind": "image"
+  }
+}

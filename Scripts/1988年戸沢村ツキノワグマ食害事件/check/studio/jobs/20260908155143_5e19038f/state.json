@@ -1,0 +1,105 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "shot_id": 42,
+  "brief": "ここはキャラ画像も入れて、怯えながらクマを警戒する感じにして\n",
+  "target": "asset",
+  "prompt": "Edit the provided image, preserving its photorealistic documentary style, 16:9 framing, mountain stream, wet rocks, bamboo grass, beech trees, and soft late-May dawn light. The scene is in Tozawa Village, Yamagata, Japan, at approximately 5 a.m. on May 26, 1988. Add two members of the recovery party in the near foreground at the left edge, shown from behind in three-quarter view, leaving the empty opposite bank clearly visible. They are a local volunteer firefighter and a hunting association member, wearing plain, practical rural Japanese outdoor clothing appropriate to 1988. Show restrained fear and alertness through tense shoulders, slightly bent knees, hesitant forward posture, and heads turned toward the bamboo grass across the stream. The hunter holds a period-appropriate hunting shotgun low, muzzle directed away from his companion, finger off the trigger. Both are cautiously checking whether the bear is still nearby. These two figures are only a partial view of the larger recovery party, not the entire group. Match their scale, lighting, shadows, and photographic texture to the existing landscape. Keep the opposite bank completely empty: no bear, other animals, body, blood, or visible victim. Avoid exaggerated expressions or dramatic action. No modern equipment, snow, frost, or ice. No text, captions, labels, logos, or watermarks.",
+  "id": "20260908155143_5e19038f",
+  "state": "review",
+  "created_at": "2026-09-08T06:51:43.912582+00:00",
+  "updated_at": "2026-09-08T07:09:12.649442+00:00",
+  "message": "指示した修正を反映しました。確認してください",
+  "shot": {
+    "id": 42,
+    "start_frame": 5308,
+    "end_frame": 5438,
+    "asset_id": "ASSET-042",
+    "asset_file": "画像/ASSET-042.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "クマを警戒しましたが、幸いその場にはいませんでした。",
+    "edit_note": "前カット033/035と同じ画角で見せ、そこに何もいないことを対比で伝える。3秒。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 4864,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9"
+      }
+    ],
+    "asset_id": "ASSET-042",
+    "shot_id": 42,
+    "snapshot": "check/studio/jobs/20260908155143_5e19038f/script-context.txt",
+    "snapshot_sha256": "74de7f8ba2b50520b138b764de707d1fe78b850a1632f857dc87a2450f0d0cd1"
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "42",
+    "--override",
+    "{\"asset_file\": \"check/studio/jobs/20260908155143_5e19038f/candidate_asset.png\", \"asset_kind\": \"image\"}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      }
+    ],
+    "explanation": "翌朝5時の沢の背景を保ち、現場に到着した捜索隊の人物を加え、怯えた表情と慎重な姿勢で周囲のクマを警戒する様子に修正します。人物の服装は1988年の消防団員・警察官・猟友会員という設定に合わせ、クマや文字は描き込みません。",
+    "unsupported": ""
+  },
+  "step_index": 1,
+  "input_sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9",
+  "explanation": "翌朝5時の沢の背景を保ち、現場に到着した捜索隊の人物を加え、怯えた表情と慎重な姿勢で周囲のクマを警戒する様子に修正します。人物の服装は1988年の消防団員・警察官・猟友会員という設定に合わせ、クマや文字は描き込みません。",
+  "candidate": "check/studio/jobs/20260908155143_5e19038f/candidate_asset.png",
+  "patch": {
+    "asset_file": "check/studio/jobs/20260908155143_5e19038f/candidate_asset.png",
+    "asset_kind": "image"
+  },
+  "source": "check/studio/jobs/20260908155143_5e19038f/candidate_asset.png",
+  "rendered_override": {
+    "asset_file": "check/studio/jobs/20260908155143_5e19038f/candidate_asset.png",
+    "asset_kind": "image"
+  },
+  "preview": "check/studio/jobs/20260908155143_5e19038f/preview.mp4",
+  "edit_layers": null,
+  "awaiting_confirmation": false
+}

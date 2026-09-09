@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_286",
+  "kind": "text",
+  "shot_id": 286,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:10:00.094546+00:00",
+  "updated_at": "2026-09-07T13:10:00.103723+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 286,
+    "start_frame": 42605,
+    "end_frame": 42819,
+    "asset_id": "ASSET-286",
+    "asset_file": "画像/ASSET-286.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "ただ、かつては村だけで数十人もいた会員が、いまは16人にまで減ってしまっています。",
+    "edit_note": "椅子を数えられるように等間隔で並べ、16席だけを点灯させる。「かつて数十人 → いま16人」テロップ。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "かつて数十人 → いま16人"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

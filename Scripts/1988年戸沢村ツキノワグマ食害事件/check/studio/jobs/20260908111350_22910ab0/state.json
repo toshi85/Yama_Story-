@@ -1,0 +1,94 @@
+{
+  "kind": "correction",
+  "requested_kind": "correction",
+  "base_candidate": "question_outline_20260907_6",
+  "shot_id": 6,
+  "brief": "「なぜ同じ村で」と「3度も悲劇が〜」のテキストが出る間隔が早いです。「3度も悲劇が〜」は、「3度も〜」のナレーションのタイミングに合わせて出すようにして。",
+  "target": "asset",
+  "prompt": "",
+  "base_override": {
+    "question_outline": 4
+  },
+  "id": "20260908111350_22910ab0",
+  "state": "failed",
+  "created_at": "2026-09-08T02:13:50.365650+00:00",
+  "updated_at": "2026-09-08T02:20:02.935439+00:00",
+  "message": "修正に必要な機能を利用できません：提供情報には「3度も〜」の発話開始時刻がなく、指定されたadjustの引数にもquestionの後半だけの表示時刻を設定する項目がないため、正確な同期を指定できません。",
+  "shot": {
+    "id": 6,
+    "start_frame": 647,
+    "end_frame": 793,
+    "asset_id": "ASSET-006",
+    "asset_file": "画像/ASSET-006.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "なぜ、立て続けに同じ村で3度も悲劇が繰り返されたのか。",
+    "edit_note": "上部の余白に「なぜ、同じ村で3度も繰り返されたのか」を白文字でゆっくりフェードイン。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "なぜ同じ村で、3度も悲劇が繰り返されたのか？",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false,
+    "question_outline": 4
+  },
+  "worker_pid": 19294,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "469deb2df58a4121d5ff040a62e11d2bb051b9835ef6810a8b88f88852415646"
+      }
+    ],
+    "asset_id": "ASSET-006",
+    "shot_id": 6,
+    "snapshot": "check/studio/jobs/20260908111350_22910ab0/script-context.txt",
+    "snapshot_sha256": "47e0bd4620bb12572cd89fcb8fadf3b0607146188db8686217d9318d89d5f737"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908111350_22910ab0/routing-response.json",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-006.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 1
+}

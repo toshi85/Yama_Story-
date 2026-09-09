@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_41",
+  "kind": "text",
+  "shot_id": 41,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.316942+00:00",
+  "updated_at": "2026-09-07T13:09:59.319782+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 41,
+    "start_frame": 5070,
+    "end_frame": 5308,
+    "asset_id": "ASSET-041",
+    "asset_file": "画像/ASSET-041.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-041-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "消防団員と警察官が十数人。そこに猟友会のハンターが6人加わり、現場に到着。",
+    "edit_note": "「消防団・警察 十数人／猟友会 6人」の2行テロップ。BGMを静かに立ち上げる。",
+    "speech": "",
+    "motion": "drift_diag",
+    "drift": [
+      563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "消防団・警察 十数人／猟友会 6人"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

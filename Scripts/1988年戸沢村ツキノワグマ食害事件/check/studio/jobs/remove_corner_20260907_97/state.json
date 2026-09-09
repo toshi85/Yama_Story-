@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_97",
+  "kind": "text",
+  "shot_id": 97,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.404696+00:00",
+  "updated_at": "2026-09-07T13:09:59.408816+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 97,
+    "start_frame": 13988,
+    "end_frame": 14117,
+    "asset_id": "ASSET-097",
+    "asset_file": "画像/ASSET-097.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-097-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "猟友会が、ふたたび現場付近でクマ狩りを始めました。",
+    "edit_note": "3人を横一列に等間隔で並べ、同じ速度で奥へスライドさせる。「ふたたびクマ狩り」テロップ。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "ふたたびクマ狩り"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_95",
+  "kind": "text",
+  "shot_id": 95,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.399889+00:00",
+  "updated_at": "2026-09-07T13:09:59.404087+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 95,
+    "start_frame": 13711,
+    "end_frame": 13943,
+    "asset_id": "ASSET-095",
+    "asset_file": "画像/ASSET-095.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-095-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "一方、村の人たちは、2人の犠牲者が出たことで、人喰いグマが近くにいる、と大騒ぎになります。",
+    "edit_note": "大勢のざわめきのSEを重ねる。「人喰いグマ」を赤字のテロップで一度だけ大きく出す。",
+    "speech": "",
+    "motion": "walk_cross",
+    "drift": [
+      307,
+      -28
+    ],
+    "move_sec": 3.1,
+    "base_x": 281,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "人喰いグマ"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

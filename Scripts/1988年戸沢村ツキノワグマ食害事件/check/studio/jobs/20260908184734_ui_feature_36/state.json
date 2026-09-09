@@ -1,0 +1,303 @@
+{
+  "id": "20260908184734_ui_feature_36",
+  "kind": "adjust",
+  "shot_id": 36,
+  "shot": {
+    "id": 36,
+    "start_frame": 4440,
+    "end_frame": 4527,
+    "asset_id": "ASSET-036",
+    "asset_file": "画像/ASSET-036.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-036-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "6人は声を上げ、石を投げつけます。",
+    "edit_note": "怒鳴り声と石が岩に当たる音のSE。画面を短く揺らす。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      -230,
+      -72
+    ],
+    "move_sec": 2.4,
+    "base_x": -332,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "state": "review",
+  "created_at": "2026-09-08T09:47:34.363904+00:00",
+  "updated_at": "2026-09-08T09:47:39.067182+00:00",
+  "brief": "本人の各カット修正依頼を反映",
+  "message": "修正後のカットを確認できます",
+  "target": "asset",
+  "quality_checks": false,
+  "patch": {
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "speech_segments": [],
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "camera_motion": "",
+    "hide_character": false,
+    "character_position": null,
+    "speech_position": null,
+    "scale": 1,
+    "base_x": 0,
+    "base_y": 0,
+    "telop": "",
+    "telops": [],
+    "asset_file": "画像/ASSET-036-1.png",
+    "overlays": [
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908184734_ui_feature_36/men.png",
+        "x": 320,
+        "y": 430,
+        "w": 590,
+        "start": 0,
+        "end": 2.9,
+        "anim": "none"
+      },
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908184734_ui_feature_36/bear.png",
+        "x": 1020,
+        "y": 405,
+        "w": 480,
+        "start": 0,
+        "end": 2.9,
+        "anim": "none"
+      },
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908184734_ui_feature_36/stone.png",
+        "x": 435,
+        "y": 375,
+        "w": 72,
+        "start": 0.55,
+        "end": 1.4500000000000002,
+        "anim": "none",
+        "motion_path": {
+          "start": [
+            435,
+            375
+          ],
+          "midpoints": [
+            [
+              690,
+              240
+            ]
+          ],
+          "end": [
+            950,
+            415
+          ],
+          "duration": 0.9
+        }
+      },
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908184734_ui_feature_36/stone.png",
+        "x": 380,
+        "y": 420,
+        "w": 72,
+        "start": 1.05,
+        "end": 1.9500000000000002,
+        "anim": "none",
+        "motion_path": {
+          "start": [
+            380,
+            420
+          ],
+          "midpoints": [
+            [
+              690,
+              240
+            ]
+          ],
+          "end": [
+            950,
+            415
+          ],
+          "duration": 0.9
+        }
+      },
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908184734_ui_feature_36/stone.png",
+        "x": 500,
+        "y": 400,
+        "w": 72,
+        "start": 1.6,
+        "end": 2.5,
+        "anim": "none",
+        "motion_path": {
+          "start": [
+            500,
+            400
+          ],
+          "midpoints": [
+            [
+              690,
+              240
+            ]
+          ],
+          "end": [
+            950,
+            415
+          ],
+          "duration": 0.9
+        }
+      }
+    ]
+  },
+  "candidate": "画像/ASSET-036-1.png",
+  "rendered_override": {
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "speech_segments": [],
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "camera_motion": "",
+    "hide_character": false,
+    "character_position": null,
+    "speech_position": null,
+    "scale": 1,
+    "base_x": 0,
+    "base_y": 0,
+    "telop": "",
+    "telops": [],
+    "asset_file": "画像/ASSET-036-1.png",
+    "overlays": [
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908184734_ui_feature_36/men.png",
+        "x": 320,
+        "y": 430,
+        "w": 590,
+        "start": 0,
+        "end": 2.9,
+        "anim": "none"
+      },
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908184734_ui_feature_36/bear.png",
+        "x": 1020,
+        "y": 405,
+        "w": 480,
+        "start": 0,
+        "end": 2.9,
+        "anim": "none"
+      },
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908184734_ui_feature_36/stone.png",
+        "x": 435,
+        "y": 375,
+        "w": 72,
+        "start": 0.55,
+        "end": 1.4500000000000002,
+        "anim": "none",
+        "motion_path": {
+          "start": [
+            435,
+            375
+          ],
+          "midpoints": [
+            [
+              690,
+              240
+            ]
+          ],
+          "end": [
+            950,
+            415
+          ],
+          "duration": 0.9
+        }
+      },
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908184734_ui_feature_36/stone.png",
+        "x": 380,
+        "y": 420,
+        "w": 72,
+        "start": 1.05,
+        "end": 1.9500000000000002,
+        "anim": "none",
+        "motion_path": {
+          "start": [
+            380,
+            420
+          ],
+          "midpoints": [
+            [
+              690,
+              240
+            ]
+          ],
+          "end": [
+            950,
+            415
+          ],
+          "duration": 0.9
+        }
+      },
+      {
+        "type": "image",
+        "file": "check/studio/jobs/20260908184734_ui_feature_36/stone.png",
+        "x": 500,
+        "y": 400,
+        "w": 72,
+        "start": 1.6,
+        "end": 2.5,
+        "anim": "none",
+        "motion_path": {
+          "start": [
+            500,
+            400
+          ],
+          "midpoints": [
+            [
+              690,
+              240
+            ]
+          ],
+          "end": [
+            950,
+            415
+          ],
+          "duration": 0.9
+        }
+      }
+    ]
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "36",
+    "--override",
+    "{\"asset_kind\": \"image\", \"background_file\": \"\", \"speech\": \"\", \"speech_segments\": [], \"motion\": \"still\", \"motion_path\": null, \"same_as_prev\": false, \"pan\": \"\", \"camera_motion\": \"\", \"hide_character\": false, \"character_position\": null, \"speech_position\": null, \"scale\": 1, \"base_x\": 0, \"base_y\": 0, \"telop\": \"\", \"telops\": [], \"asset_file\": \"画像/ASSET-036-1.png\", \"overlays\": [{\"type\": \"image\", \"file\": \"check/studio/jobs/20260908184734_ui_feature_36/men.png\", \"x\": 320, \"y\": 430, \"w\": 590, \"start\": 0, \"end\": 2.9, \"anim\": \"none\"}, {\"type\": \"image\", \"file\": \"check/studio/jobs/20260908184734_ui_feature_36/bear.png\", \"x\": 1020, \"y\": 405, \"w\": 480, \"start\": 0, \"end\": 2.9, \"anim\": \"none\"}, {\"type\": \"image\", \"file\": \"check/studio/jobs/20260908184734_ui_feature_36/stone.png\", \"x\": 435, \"y\": 375, \"w\": 72, \"start\": 0.55, \"end\": 1.4500000000000002, \"anim\": \"none\", \"motion_path\": {\"start\": [435, 375], \"midpoints\": [[690, 240]], \"end\": [950, 415], \"duration\": 0.9}}, {\"type\": \"image\", \"file\": \"check/studio/jobs/20260908184734_ui_feature_36/stone.png\", \"x\": 380, \"y\": 420, \"w\": 72, \"start\": 1.05, \"end\": 1.9500000000000002, \"anim\": \"none\", \"motion_path\": {\"start\": [380, 420], \"midpoints\": [[690, 240]], \"end\": [950, 415], \"duration\": 0.9}}, {\"type\": \"image\", \"file\": \"check/studio/jobs/20260908184734_ui_feature_36/stone.png\", \"x\": 500, \"y\": 400, \"w\": 72, \"start\": 1.6, \"end\": 2.5, \"anim\": \"none\", \"motion_path\": {\"start\": [500, 400], \"midpoints\": [[690, 240]], \"end\": [950, 415], \"duration\": 0.9}}]}"
+  ],
+  "worker_pid": 88166,
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260908184734_ui_feature_36/preview.mp4",
+  "edit_layers": null
+}

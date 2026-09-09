@@ -1,0 +1,1 @@
+{"steps":[{"kind":"image","target":"background"},{"kind":"image","target":"asset"},{"kind":"adjust","patch":{"speech":"クマだ、、"}}],"explanation":"背景を1988年5月の夜の沢に変更し、消防団員を配置できるよう地面に寄りすぎない構図にします。人物レイヤーは元の画調と透過背景を維持し、年長の消防団員を恐れた表情に変更します。セリフ「クマだ、、」は画像に描かず、編集側で白い明朝体＋黒縁・影で表示します。","unsupported":""}

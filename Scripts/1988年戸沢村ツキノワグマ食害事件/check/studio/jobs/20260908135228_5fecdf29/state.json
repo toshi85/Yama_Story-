@@ -1,0 +1,94 @@
+{
+  "kind": "correction",
+  "requested_kind": "correction",
+  "base_candidate": "question_outline_20260907_7",
+  "shot_id": 7,
+  "brief": "ここは、左右から出る形式ではなくて、中央に「なぜ人を食べたのか？」と表示してください。「人」を赤字。",
+  "target": "asset",
+  "prompt": "",
+  "base_override": {
+    "question_outline": 4
+  },
+  "id": "20260908135228_5fecdf29",
+  "state": "failed",
+  "created_at": "2026-09-08T04:52:28.038964+00:00",
+  "updated_at": "2026-09-08T05:06:40.666164+00:00",
+  "message": "修正に必要な機能を利用できません：「人」だけを赤字にする部分的な文字色指定は、使用可能な引数では対応できません。",
+  "shot": {
+    "id": 7,
+    "start_frame": 793,
+    "end_frame": 912,
+    "asset_id": "ASSET-007",
+    "asset_file": "画像/ASSET-007.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "そしてなぜ、このクマは満腹なのに人を食べたのか？",
+    "edit_note": "「満腹なのに、なぜ人を食べたのか？」を下段に白テロップ。クマが顔を上げるところで音を切る。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "満腹なのに、なぜ人を食べたのか？",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false,
+    "question_outline": 4.0
+  },
+  "worker_pid": 53952,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006"
+      }
+    ],
+    "asset_id": "ASSET-007",
+    "shot_id": 7,
+    "snapshot": "check/studio/jobs/20260908135228_5fecdf29/script-context.txt",
+    "snapshot_sha256": "3e5a5d8ddd80167f794e4d95d4ce7dc5b6cde257e2857addfbbe682d9b1d383e"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908135228_5fecdf29/routing-response.json",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-007.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 1
+}

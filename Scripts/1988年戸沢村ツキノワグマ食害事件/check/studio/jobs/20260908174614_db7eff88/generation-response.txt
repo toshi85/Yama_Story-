@@ -1,0 +1,3 @@
+指定プロンプトで標準ツールを使い、1回だけ編集生成して[指定先へ保存しました](</Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908174614_db7eff88/candidate_asset.png>)。
+
+人物・構図・四肢の収まりを確認しました。ただし、出力はアルファ透過のないRGB PNGで、市松模様が描き込まれています。指示どおり再生成せず保存しています。既存素材・shots.jsonは変更していません。

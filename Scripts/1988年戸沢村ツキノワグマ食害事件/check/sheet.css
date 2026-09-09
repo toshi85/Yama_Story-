@@ -1,0 +1,136 @@
+/* 検収シートの見た目。visual_check.py が check/ へ複製する（Python の中に CSS を書かない） */
+:root {
+  --bg: #0f1115; --panel: #171a21; --panel2: #1f232c; --line: #2a2f3a;
+  --text: #e6e8ee; --muted: #9aa3b2; --accent: #ffcc44; --accent2: #7cc4ff; --ok: #7ee787; --bad: #ff7b72; --anim: #9be564;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; font-size: 14px; }
+a { color: var(--accent2); }
+button { font: inherit; font-size: 13px; padding: 7px 14px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel2); color: var(--text); cursor: pointer; }
+button:hover { border-color: var(--accent2); }
+button.primary { background: var(--accent); color: #111; border-color: var(--accent); font-weight: 700; }
+button.big { font-size: 15px; padding: 10px 18px; }
+select, input[type=text], input:not([type]) { font: inherit; font-size: 13px; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel2); color: var(--text); }
+textarea { width: 100%; min-height: 56px; font: inherit; font-size: 13px; padding: 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel2); color: var(--text); resize: vertical; }
+textarea.has { border-color: var(--accent); }
+
+/* 上部：手順 */
+#bar { position: sticky; top: 0; z-index: 9; background: var(--panel); border-bottom: 1px solid var(--line); padding: 10px 16px; }
+#bar .title { font-weight: 700; font-size: 15px; margin-bottom: 8px; }
+#bar .title small { color: var(--muted); font-weight: 400; margin-left: 10px; }
+.steps { display: flex; flex-wrap: wrap; gap: 10px; }
+.step { background: var(--panel2); border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; display: flex; align-items: center; gap: 8px; }
+.step b { color: var(--accent); margin-right: 4px; }
+.step .hint { color: var(--muted); font-size: 12px; }
+#cnt { color: var(--muted); font-size: 12px; margin-left: 8px; }
+#ai { white-space: pre-wrap; background: #101418; color: #cfe9d6; padding: 10px 14px; margin: 10px 16px; font-size: 12px; max-height: 40vh; overflow: auto; border: 1px solid var(--line); border-radius: 10px; }
+
+/* 注意リスト */
+#attn { margin: 10px 16px; padding: 10px 14px; background: #2a2412; border: 1px solid #5a4a1a; border-radius: 10px; line-height: 1.9; }
+#attn a { color: var(--accent); margin-right: 6px; }
+.lead { margin: 10px 16px; color: var(--muted); }
+
+/* カットの行 */
+.r { display: flex; align-items: flex-start; gap: 10px; padding: 10px 16px; border-bottom: 1px solid var(--line); }
+.r:hover { background: #13161c; }
+.r.attn { background: #1a1a12; }
+.r.bad { background: #2a1418; }
+.id { width: 64px; font-weight: 700; color: var(--accent2); }
+.k button.adj, .k button.anim { margin-top: 8px; padding: 7px 14px; font-size: 13px; width: 100%; }
+/* 2026-09-04: 「動かす」は静止画を動画にするボタン（fal / 約8円）。
+   「調整する」と同じ大きさに揃え、押すと課金が起きることが分かるよう黄緑にした。 */
+button.anim { background: var(--anim); color: #10240f; border-color: var(--anim); font-weight: 700; }
+button.anim:hover { background: #a8e86a; border-color: #a8e86a; }
+button.anim:disabled { background: var(--panel2); color: var(--muted); border-color: var(--line); font-weight: 400; cursor: default; }
+.k, .m { width: 120px; font-size: 12px; color: var(--muted); word-break: break-all; }
+.m { color: #f0c090; }
+.d { width: 52px; font-size: 12px; color: var(--muted); }
+.r img { border-radius: 6px; cursor: pointer; border: 1px solid transparent; }
+.r img:hover { border-color: var(--accent2); }
+.n { flex: 1; min-width: 200px; font-size: 12px; color: var(--muted); }
+video { background: #000; border-radius: 6px; }
+
+/* 手で直すパネル */
+.edbox { display: flex; gap: 14px; align-items: flex-start; padding: 12px 16px 16px 90px; background: var(--panel); border-bottom: 1px solid var(--line); }
+.ed { position: relative; width: 640px; height: 360px; background: #000 center/contain no-repeat; overflow: hidden; border: 2px solid var(--accent); border-radius: 8px; flex: none; }
+.ed img.layer { position: absolute; user-select: none; -webkit-user-drag: none; pointer-events: none; }
+.edctl { font-size: 13px; display: flex; flex-direction: column; gap: 10px; min-width: 260px; }
+.edctl label { display: flex; align-items: center; gap: 8px; }
+.edctl .hint { color: var(--muted); font-size: 12px; }
+.modes { display: flex; gap: 12px; flex-wrap: wrap; }
+.modes label { display: flex; align-items: center; gap: 4px; background: var(--panel2); border: 1px solid var(--line); border-radius: 8px; padding: 4px 10px; cursor: pointer; }
+.ed { cursor: crosshair; }
+.loading { display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: var(--panel2); border: 1px solid var(--line); border-radius: 8px; color: var(--text); }
+.spinner { width: 18px; height: 18px; border: 3px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.9s linear infinite; flex: none; }
+@keyframes spin { to { transform: rotate(360deg); } }
+button:disabled { opacity: .6; cursor: wait; }
+.guide { background: var(--panel2); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; line-height: 1.7; }
+.selnow { color: var(--accent); }
+/* 追加機能（2026-08-29 後半） */
+.done { font-size: 11px; color: var(--muted); display: flex; align-items: center; gap: 3px; margin-top: 4px; cursor: pointer; }
+.r.isdone { opacity: .55; }
+.hist { margin-top: 6px; font-size: 11px; color: var(--accent); line-height: 1.6; }
+.guides { position: absolute; inset: 0; pointer-events: none; }
+.guides .v { position: absolute; left: 50%; top: 0; bottom: 0; border-left: 1px dashed rgba(124,196,255,.7); }
+.guides .safe { position: absolute; left: 5%; right: 5%; top: 5%; bottom: 5%; border: 1px dashed rgba(255,255,255,.35); }
+.guides .sub { position: absolute; left: 0; right: 0; bottom: 0; height: 22%; background: rgba(255,80,80,.12); border-top: 1px dashed rgba(255,120,120,.6); }
+.guides .sub::after { content: '字幕の帯'; position: absolute; right: 6px; top: 2px; font-size: 10px; color: rgba(255,160,160,.9); }
+.rowbtns { display: flex; gap: 6px; flex-wrap: wrap; }
+.rowbtns button { padding: 5px 10px; font-size: 12px; }
+kbd { background: var(--panel2); border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; font-size: 11px; }
+/* テキスト・画像・図形の挿入（2026-08-29） */
+.ed .ov { position: absolute; transform: translate(-50%, -50%); pointer-events: none; }
+.ed .ov.text { white-space: pre; font-weight: 800; font-family: "Rounded Mplus 1c Bold", "M PLUS Rounded 1c", "Hiragino Sans", sans-serif; -webkit-text-stroke: 1.5px #000; text-shadow: 0 1px 2px rgba(0,0,0,.7); line-height: 1.2; }
+.ed .ov.sel { outline: 2px dashed #7cc4ff; outline-offset: 2px; }
+.ovlist { display: flex; flex-direction: column; gap: 6px; }
+.ovrow { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; background: var(--panel2); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; }
+.ovrow.sel { border-color: var(--accent2); }
+.ovrow input[type=number] { width: 64px; }
+.ovrow input[type=color] { width: 32px; height: 26px; padding: 0; border: none; background: none; }
+.ovrow .tag { font-size: 11px; color: var(--muted); }
+.pinpad { display: inline-grid; grid-template-columns: repeat(3, 26px); grid-template-rows: repeat(2, 24px); gap: 2px; }
+.pinpad button { padding: 0; font-size: 13px; line-height: 1; }
+.pinpad button:nth-child(1) { grid-column: 2; grid-row: 1; }
+.pinpad button:nth-child(2) { grid-column: 1; grid-row: 2; }
+.pinpad button:nth-child(3) { grid-column: 3; grid-row: 2; }
+.pinpad button:nth-child(4) { grid-column: 2; grid-row: 2; }
+
+/* 注意リスト（2026-09-04）: 済んだものは消えていき、全部済むと緑になる */
+#attn.cleared { background: #14321c; border-color: #2f6b3d; color: #b7f0c4; }
+#attn small { color: var(--muted); }
+
+/* 動画にする準備の案内（2026-09-04）。準備ができていないときだけ出る */
+#falguide { background: #2a2113; border: 1px solid #6b5326; border-radius: 10px; margin: 10px 16px; padding: 12px 16px; }
+#falguide .hd { font-weight: 700; margin-bottom: 8px; }
+#falguide ol { margin: 0; padding-left: 22px; }
+#falguide li { margin: 8px 0; color: var(--muted); }
+#falguide li.now { color: var(--text); }
+#falguide li.now b { color: #ffd34d; }
+#falguide li.done { opacity: .5; }
+#falguide li.done b::after { content: " ✓"; color: #7ee787; }
+#falguide li span { font-size: 13px; }
+#falguide .ft { margin-top: 10px; padding-top: 8px; border-top: 1px solid #6b5326; font-size: 13px; }
+#falguide button { padding: 4px 10px; font-size: 12px; }
+#falguide input[type=password] { width: 320px; font-family: ui-monospace, monospace; }
+
+/* 動かし方を聞く窓（2026-09-04） */
+.modalbg { position: fixed; inset: 0; z-index: 10000; background: rgba(0,0,0,.6); display: flex; align-items: center; justify-content: center; }
+.modalbg .modal { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; width: 560px; max-width: 92vw; }
+.modalbg .hd { font-weight: 700; font-size: 15px; }
+.modalbg .sub { color: var(--muted); font-size: 12px; margin: 2px 0 12px; }
+.modalbg .lbl { font-size: 13px; margin-bottom: 6px; }
+.modalbg .presets { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.modalbg .presets button { padding: 5px 10px; font-size: 12px; }
+.modalbg .presets button.on { background: var(--anim); color: #10240f; border-color: var(--anim); font-weight: 700; }
+.modalbg textarea { min-height: 84px; font-size: 12px; }
+.modalbg .note { color: var(--muted); font-size: 12px; margin-top: 8px; }
+.modalbg .btns { display: flex; justify-content: flex-end; gap: 8px; margin-top: 12px; }
+.modalbg .basep { margin-bottom: 10px; font-size: 12px; color: var(--muted); }
+.modalbg .basep div { margin-top: 6px; padding: 8px; background: var(--panel2); border-radius: 6px; max-height: 120px; overflow: auto; }
+.modalbg .aigen { display: flex; gap: 6px; align-items: center; }
+.modalbg .aigen input { flex: 1; }
+.modalbg .presets { margin-top: 8px; }
+/* 2026-09-04: 日本語で書く欄を主役にし、英語の欄は確認用に小さくした */
+.modalbg textarea.ja { min-height: 110px; font-size: 14px; }
+.modalbg textarea.en { min-height: 66px; font-size: 11px; color: var(--muted); font-family: ui-monospace, monospace; }
+.modalbg .aigen { margin-top: 8px; }

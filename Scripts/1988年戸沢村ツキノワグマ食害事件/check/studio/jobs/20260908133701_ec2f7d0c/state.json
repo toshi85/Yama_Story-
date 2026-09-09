@@ -1,0 +1,109 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "shot_id": 24,
+  "brief": "ここはキャラ画像で表現。",
+  "target": "asset",
+  "prompt": "Create a single isolated character layer for a Japanese mountain-incident documentary, illustrating the narration: “There were also injuries to the ends of both feet and to his arms.” Represent the 61-year-old male bamboo-shoot gatherer from the May 25, 1988 Tozawa Village incident using an anonymous, generic male figure, without attempting to reconstruct the real victim’s appearance. Use restrained, realistically proportioned character illustration. Show his entire body reclining, viewed obliquely from above, with both arms and both feet clearly visible and separated enough to read at video scale. Turn his face away so no identifying facial features are visible. Use plain, unbranded outdoor clothing appropriate to rural Japan in 1988. Suggest the affected areas on the arms and the ends of both feet through subtle, desaturated shading only; do not invent specific wound shapes or expose injuries beneath clothing. No blood, exposed flesh, graphic wounds, or dramatic expression. Fully transparent background, clean cutout edges, no ground plane or scenery. No bear, rescuers, belongings, additional people, text, labels, arrows, or symbols. Center the complete figure within a 16:9 canvas with generous margins for editing.",
+  "id": "20260908133701_ec2f7d0c",
+  "state": "review",
+  "created_at": "2026-09-08T04:37:01.641454+00:00",
+  "updated_at": "2026-09-08T04:58:37.561457+00:00",
+  "message": "指示した修正を反映しました。確認してください",
+  "shot": {
+    "id": 24,
+    "start_frame": 3027,
+    "end_frame": 3128,
+    "asset_id": "ASSET-024",
+    "asset_file": "画像/ASSET-024.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "両足の先にも、腕にも、傷がありました。",
+    "edit_note": "左から右へゆっくり流す（4秒）。「両足の先」「腕」は文字にせず、ナレーションだけで受ける。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 48334,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006"
+      }
+    ],
+    "asset_id": "ASSET-024",
+    "shot_id": 24,
+    "snapshot": "check/studio/jobs/20260908133701_ec2f7d0c/script-context.txt",
+    "snapshot_sha256": "f82465b9ee8567ddf7cf0d51992206ca3f69b797a5a7416d1b1b22427cf5d37f"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908133701_ec2f7d0c/generation-response.txt",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-024.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      }
+    ],
+    "explanation": "ASSET-024を、両足の先と腕にも傷があったことを間接的に伝えるキャラ画像へ変更します。1988年5月の夜、山形県戸沢村の沢という場面に合わせ、実在の被害者の容姿を推測せず、直接的な損傷描写や文字は入れません。人物単体レイヤーは透過背景にします。",
+    "unsupported": ""
+  },
+  "step_index": 1,
+  "input_sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006",
+  "explanation": "ASSET-024を、両足の先と腕にも傷があったことを間接的に伝えるキャラ画像へ変更します。1988年5月の夜、山形県戸沢村の沢という場面に合わせ、実在の被害者の容姿を推測せず、直接的な損傷描写や文字は入れません。人物単体レイヤーは透過背景にします。",
+  "candidate": "check/studio/jobs/20260908133701_ec2f7d0c/candidate.png",
+  "source": "check/studio/jobs/20260908133701_ec2f7d0c/candidate.png",
+  "patch": {
+    "asset_file": "check/studio/jobs/20260908133701_ec2f7d0c/candidate.png",
+    "asset_kind": "image"
+  },
+  "awaiting_confirmation": false
+}

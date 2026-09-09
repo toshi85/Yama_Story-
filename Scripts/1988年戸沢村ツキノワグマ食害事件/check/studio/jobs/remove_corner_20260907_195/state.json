@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_195",
+  "kind": "text",
+  "shot_id": 195,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.658393+00:00",
+  "updated_at": "2026-09-07T13:09:59.664371+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 195,
+    "start_frame": 27375,
+    "end_frame": 27499,
+    "asset_id": "ASSET-195",
+    "asset_file": "画像/ASSET-195.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-195-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "そしてとくに、下半身に傷がつく事例が多いとのこと。",
+    "edit_note": "腰から下に赤い印を1つずつ増やしていく（5個まで）。頭と首には1つも置かない。「下半身に集中」テロップ。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      179,
+      14
+    ],
+    "move_sec": 2.7,
+    "base_x": 128,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "下半身に集中"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

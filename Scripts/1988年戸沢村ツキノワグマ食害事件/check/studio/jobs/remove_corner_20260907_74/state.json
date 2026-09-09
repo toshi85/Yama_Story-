@@ -1,0 +1,49 @@
+{
+  "id": "remove_corner_20260907_74",
+  "kind": "text",
+  "shot_id": 74,
+  "state": "adopted",
+  "patch": {
+    "telop": ""
+  },
+  "created_at": "2026-09-07T13:09:59.365030+00:00",
+  "updated_at": "2026-09-07T13:09:59.368658+00:00",
+  "message": "本人指定：左上の白背景・黒文字を削除",
+  "before_override": {},
+  "before_shot": {
+    "id": 74,
+    "start_frame": 10164,
+    "end_frame": 10472,
+    "asset_id": "ASSET-074",
+    "asset_file": "画像/ASSET-074.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-074-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "また、この女性も頭と首に傷はなく、右の胸の筋肉、両方の太もも、そして右腕の筋肉に深い損傷がみられました。",
+    "edit_note": "右胸・両太もも・右腕の位置に赤い半透明のハイライトを編集で重ね、頭と首は白いままにする。「頭と首に傷なし」テロップ。文字は画像に描かせず、すべて編集で載せる。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "頭と首に傷なし"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": true,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": ""
+  }
+}

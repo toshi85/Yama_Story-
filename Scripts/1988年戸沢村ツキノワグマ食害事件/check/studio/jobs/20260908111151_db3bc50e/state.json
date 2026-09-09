@@ -1,0 +1,149 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "shot_id": 5,
+  "brief": "ここは、地面に倒れてる女性の遺体のシーンにして",
+  "target": "asset",
+  "prompt": "Create a photorealistic 16:9 source image for ASSET-005, set on a wooded chestnut-gathering slope in Tozawa Village, Yamagata Prefecture, Japan, around noon on October 9, 1988. Preserve the reference image's low, wide camera angle, forest depth, large tree on the left, tipped woven basket, scattered chestnuts, and leaf-covered ground. Replace the departing bear as the focal subject with the motionless body of a woman lying on the ground in the middle foreground, her body following the diagonal of the slope. She represents the 61-year-old woman in the narration, but must not resemble or attempt to reconstruct the actual victim. Frame her from behind, with her face completely concealed by her position and hair. Give her plain, modest outdoor clothing appropriate to rural Japan in 1988, with no conspicuously modern items. Her posture is still and naturally weighted against the ground, with no movement or theatrical posing. Keep injuries concealed by clothing and the viewing angle; no visible blood, exposed wounds, exposed flesh, or graphic detail. Remove the bear and suspended flying leaves. No other people, rescuers, weapons, fire, or added narrative elements. Early-October woodland under soft natural daylight, subdued realistic colors, documentary photographic style consistent with the reference. No text, subtitles, labels, logos, or watermarks.",
+  "id": "20260908111151_db3bc50e",
+  "state": "adopted",
+  "created_at": "2026-09-08T02:11:51.164507+00:00",
+  "updated_at": "2026-09-08T02:30:18.091002+00:00",
+  "message": "指示した修正を反映しました。確認してください",
+  "shot": {
+    "id": 5,
+    "start_frame": 583,
+    "end_frame": 647,
+    "asset_id": "ASSET-005",
+    "asset_file": "画像/ASSET-005.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "クマに襲われ帰らぬ人に、、",
+    "edit_note": "音を一瞬すべて消してこのカットを見せる（3〜4秒）。クマが林に消えた直後に心拍音を立ち上げる。「帰らぬ人に」のテロップは出さず、ナレーションだけで受ける。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 18695,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "469deb2df58a4121d5ff040a62e11d2bb051b9835ef6810a8b88f88852415646"
+      }
+    ],
+    "asset_id": "ASSET-005",
+    "shot_id": 5,
+    "snapshot": "check/studio/jobs/20260908111151_db3bc50e/script-context.txt",
+    "snapshot_sha256": "9c7173f02eb39d2f4fee464948f78cb5b3827e57128382424857b8dd27220446"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908111151_db3bc50e/generation-response.txt",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-005.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      }
+    ],
+    "explanation": "対象画像を、1988年10月9日の戸沢村の山で、クリ拾い中に襲われた61歳の女性が地面に倒れている場面へ修正する。実写風を保ち、顔を見せず、実在の被害者の容姿を推測で再現しない。血や損傷の露骨な描写、字幕・文字は加えない。",
+    "unsupported": ""
+  },
+  "step_index": 1,
+  "input_sha256": "469deb2df58a4121d5ff040a62e11d2bb051b9835ef6810a8b88f88852415646",
+  "explanation": "対象画像を、1988年10月9日の戸沢村の山で、クリ拾い中に襲われた61歳の女性が地面に倒れている場面へ修正する。実写風を保ち、顔を見せず、実在の被害者の容姿を推測で再現しない。血や損傷の露骨な描写、字幕・文字は加えない。",
+  "candidate": "check/studio/jobs/20260908111151_db3bc50e/candidate.png",
+  "source": "check/studio/jobs/20260908111151_db3bc50e/candidate.png",
+  "patch": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908111151_db3bc50e/candidate.png",
+    "asset_kind": "image"
+  },
+  "awaiting_confirmation": false,
+  "before_override": {
+    "telop": ""
+  },
+  "before_shot": {
+    "id": 5,
+    "start_frame": 583,
+    "end_frame": 647,
+    "asset_id": "ASSET-005",
+    "asset_file": "画像/ASSET-005.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "クマに襲われ帰らぬ人に、、",
+    "edit_note": "音を一瞬すべて消してこのカットを見せる（3〜4秒）。クマが林に消えた直後に心拍音を立ち上げる。「帰らぬ人に」のテロップは出さず、ナレーションだけで受ける。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "applied_override": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260908111151_db3bc50e/candidate.png",
+    "asset_kind": "image"
+  }
+}

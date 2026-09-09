@@ -1,0 +1,109 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "shot_id": 29,
+  "brief": "ここは実写動画にしたいので、まず実写画像で生成。",
+  "target": "asset",
+  "prompt": "Create one photorealistic live-action reference still, 16:9, for a historical documentary reenactment set in Tozawa Village, Yamagata Prefecture, Japan, on May 25, 1988. Match the supplied image's composition: an oblique side view of a steep forest bank occupying the left and center, with a rocky flowing stream below on the right. A broad strip of flattened, tangled green bamboo grass descends diagonally from the upper-left bank toward the lower-right stream bed. Disturbed soil, exposed roots, and scattered small stones make the downward route clearly visible. Keep the disturbed ground irregular and natural, without perfectly parallel tracks or identifiable footprints. Surround the bank with dense late-May foliage and beech and cedar trees. Soft daylight filtered through the canopy, subdued natural greens and browns, realistic soil and leaf textures, clear detail in the shadows. Frame the upper edge of the bank and the descent toward the stream together, allowing a later video camera movement to follow the flattened vegetation downward. Show only the empty landscape and disturbed vegetation; do not depict the attack or fall. No people, bodies, bears, blood, injuries, belongings, or added props. No snow, frost, dramatic fog, artificial lighting, text, subtitles, logos, or watermarks. Authentic location-photography appearance, natural perspective, 35mm lens, no illustration or CGI look.",
+  "id": "20260908134116_a7f80d3c",
+  "state": "review",
+  "created_at": "2026-09-08T04:41:16.012555+00:00",
+  "updated_at": "2026-09-08T05:06:21.860087+00:00",
+  "message": "指示した修正を反映しました。確認してください",
+  "shot": {
+    "id": 29,
+    "start_frame": 3714,
+    "end_frame": 3861,
+    "asset_id": "ASSET-029",
+    "asset_file": "画像/ASSET-029.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "逃げようとしたところを後ろから襲われ、そのまま沢へ転落した。",
+    "edit_note": "襲撃そのものは描かない。倒れた笹の筋を上から下へ追うカメラワークだけで示す。BGMは低音のみ。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 52754,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006"
+      }
+    ],
+    "asset_id": "ASSET-029",
+    "shot_id": 29,
+    "snapshot": "check/studio/jobs/20260908134116_a7f80d3c/script-context.txt",
+    "snapshot_sha256": "af9ea94efc4d25c17115ca2c9ae70018d76eaeab10b48bb01bc970e5c0644b46"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908134116_a7f80d3c/generation-response.txt",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-029.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      }
+    ],
+    "explanation": "ASSET-029を実写動画の元になるフォトリアルな静止画として生成。1988年5月下旬の山形県戸沢村の沢沿いで、斜面から沢へ続く倒れた笹と削れた土の筋を描きます。添付画像の地形と構図を踏まえ、人物・クマ・血・字幕・文字は加えません。今回は静止画生成のみ行います。",
+    "unsupported": ""
+  },
+  "step_index": 1,
+  "input_sha256": "72065b6a9b6bea7b0a6418dbc60076c3f989a511f1e96fae79d229b7d0caf006",
+  "explanation": "ASSET-029を実写動画の元になるフォトリアルな静止画として生成。1988年5月下旬の山形県戸沢村の沢沿いで、斜面から沢へ続く倒れた笹と削れた土の筋を描きます。添付画像の地形と構図を踏まえ、人物・クマ・血・字幕・文字は加えません。今回は静止画生成のみ行います。",
+  "candidate": "check/studio/jobs/20260908134116_a7f80d3c/candidate.png",
+  "source": "check/studio/jobs/20260908134116_a7f80d3c/candidate.png",
+  "patch": {
+    "asset_file": "check/studio/jobs/20260908134116_a7f80d3c/candidate.png",
+    "asset_kind": "image"
+  },
+  "awaiting_confirmation": false
+}

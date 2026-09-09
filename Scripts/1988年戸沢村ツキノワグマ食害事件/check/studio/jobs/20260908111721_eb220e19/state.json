@@ -1,0 +1,131 @@
+{
+  "kind": "text",
+  "requested_kind": "correction",
+  "shot_id": 13,
+  "brief": "画像は、二人が端あってる感じにして欲しいので、男性と女性はお互いに見てる目線にして。いまは、こちらを向いていておかしいです。また、セリフは男性に「いってくるよ」と入れて。",
+  "target": "asset",
+  "prompt": "Edit the reference character image for a departure scene on the morning of May 25, 1988, in Tozawa Village, Yamagata, Japan. Keep the man on the left and the woman on the right, both shown full body. Preserve their existing fictional character designs, clothing, accessories, thick black outlines, cute chibi proportions, and cel-shaded cartoon style. Turn the man's head and gaze toward the woman on his right, and turn the woman's head and gaze toward the man on her left, so they clearly make eye contact with each other rather than looking at the viewer. The man wears his straw hat and woven backpack basket, raises one hand in a small casual farewell gesture, and has his mouth slightly open as if saying, 'いってくるよ'. The woman holds the dishcloth in both hands and returns his gaze with a gentle everyday smile. Angle their upper bodies naturally toward one another to convey a brief, ordinary exchange before he leaves to gather bamboo shoots. Preserve the transparent background as a standalone character layer. Do not add scenery, additional people, text, captions, lettering, or speech bubbles; the man's Japanese dialogue will be added during editing. Do not attempt to reconstruct the actual victims' appearance.",
+  "id": "20260908111721_eb220e19",
+  "state": "failed",
+  "created_at": "2026-09-08T02:17:21.369707+00:00",
+  "updated_at": "2026-09-08T02:24:14.939775+00:00",
+  "message": "表示時間をカットの範囲内で指定してください",
+  "shot": {
+    "id": 13,
+    "start_frame": 1570,
+    "end_frame": 1716,
+    "asset_id": "ASSET-013",
+    "asset_file": "画像/ASSET-013.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-013-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "家族にタケノコを採りにいくと伝え、午前10時ごろに出発。",
+    "edit_note": "「午前10時ごろ」テロップを左上に。日常の音（鶏の声、遠くの軽トラ）だけ。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      409,
+      43
+    ],
+    "move_sec": 1.7,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 20054,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "469deb2df58a4121d5ff040a62e11d2bb051b9835ef6810a8b88f88852415646"
+      }
+    ],
+    "asset_id": "ASSET-013",
+    "shot_id": 13,
+    "snapshot": "check/studio/jobs/20260908111721_eb220e19/script-context.txt",
+    "snapshot_sha256": "acb731a5b02ee465b63c01e58b991dd34a9eb6e23876c0c257a5a7fd9a769207"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908111721_eb220e19/generation-response.txt",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-013.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 1,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset"
+      },
+      {
+        "kind": "text",
+        "text_type": "dialogue",
+        "bubble_side": "left",
+        "text_overlay": {
+          "text": "いってくるよ",
+          "x": 420,
+          "y": 180,
+          "size": 48,
+          "color": "#FFFFFF",
+          "anim": "none",
+          "start": 0,
+          "end": 4.87
+        }
+      }
+    ],
+    "explanation": "男性と女性の顔の向きと目線を、お互いを見ながら話す姿に修正します。元の人物の画調・服装・透過背景を維持し、男性のセリフ「いってくるよ」は編集側で追加します。",
+    "unsupported": ""
+  },
+  "step_index": 2,
+  "input_sha256": "469deb2df58a4121d5ff040a62e11d2bb051b9835ef6810a8b88f88852415646",
+  "explanation": "男性は右の女性へ、女性は左の男性へ顔と目線を向け、自然に会話している構図にします。既存の画調と透過背景を維持し、男性の「いってくるよ」は編集側で追加する想定です。",
+  "candidate": "check/studio/jobs/20260908111721_eb220e19/candidate.png",
+  "source": "check/studio/jobs/20260908111721_eb220e19/candidate.png",
+  "text_type": "dialogue",
+  "bubble_side": "left",
+  "text_overlay": {
+    "text": "いってくるよ",
+    "x": 420,
+    "y": 180,
+    "size": 48,
+    "color": "#FFFFFF",
+    "anim": "none",
+    "start": 0,
+    "end": 4.87
+  }
+}

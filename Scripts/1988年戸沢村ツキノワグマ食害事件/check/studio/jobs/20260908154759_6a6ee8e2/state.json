@@ -1,0 +1,89 @@
+{
+  "kind": "correction",
+  "requested_kind": "correction",
+  "shot_id": 31,
+  "brief": "ここは、4人が山を降りるシーンと、6人が現場に残るシーンの二つに分けてください。",
+  "target": "asset",
+  "prompt": "",
+  "id": "20260908154759_6a6ee8e2",
+  "state": "failed",
+  "created_at": "2026-09-08T06:47:59.760569+00:00",
+  "updated_at": "2026-09-08T06:48:32.088828+00:00",
+  "message": "修正に必要な機能を利用できません：カット分割は選択可能な手順では対応できません。カット31を2つに分割し、それぞれに4人の下山と6人の残留を描いた透過背景の人物素材を割り当てる必要があります。",
+  "shot": {
+    "id": 31,
+    "start_frame": 3948,
+    "end_frame": 4153,
+    "asset_id": "ASSET-031",
+    "asset_file": "画像/ASSET-031.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-031-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "その後、4人が被害状況の連絡のために山を下り、6人が現場に残りました。",
+    "edit_note": "「連絡へ 4人／現場に残る 6人」の2行テロップを左右に振り分けて表示。",
+    "speech": "",
+    "motion": "drift_x",
+    "drift": [
+      486,
+      -57
+    ],
+    "move_sec": 1.4,
+    "base_x": -409,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "worker_pid": 90112,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9"
+      }
+    ],
+    "asset_id": "ASSET-031",
+    "shot_id": 31,
+    "snapshot": "check/studio/jobs/20260908154759_6a6ee8e2/script-context.txt",
+    "snapshot_sha256": "42fb911b09a45921ad896b13fc160a139103096b089213263177cebf54c69919"
+  },
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--skip-git-repo-check",
+    "-C",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "--add-dir",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908154759_6a6ee8e2/routing-response.json",
+    "--color",
+    "never",
+    "--image",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-031.png",
+    "-"
+  ],
+  "child_pid": null,
+  "exit_code": 1
+}

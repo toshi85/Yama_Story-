@@ -1,0 +1,12 @@
+{
+  "question_cuts": [
+    6,
+    7
+  ],
+  "black_outline": 4,
+  "question_events": 4,
+  "other_shot_data_unchanged": true,
+  "duration": 1498.11,
+  "full_decode": "PASS",
+  "human_review": "pending"
+}

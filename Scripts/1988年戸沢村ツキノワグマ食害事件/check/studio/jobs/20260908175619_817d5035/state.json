@@ -1,0 +1,112 @@
+{
+  "kind": "image",
+  "requested_kind": "correction",
+  "shot_id": 45,
+  "brief": "ここは、キャラ画像で遺体を生成し、頭と首が綺麗な状態にして。体は白い布で隠れてる状態。背景画像もセットで生成。",
+  "target": "asset",
+  "prompt": "Create two separate, matching still-image assets for a Japanese historical documentary scene set in late May 1988, following the recovery of a 61-year-old man in Tozawa Village, Yamagata Prefecture. Match the reference image's restrained photorealistic style, muted colours and softly lit institutional setting. These are illustrative reconstructions, not authentic evidence photographs.\n\nASSET 1 — CHARACTER, TRANSPARENT BACKGROUND: A fictional elderly Japanese man lying supine, deceased, with closed eyes and a neutral, relaxed expression. Do not recreate or imply the actual victim's likeness. His entire head and neck must be clearly visible, clean and intact, without scratches, bruises, wounds or blood. An opaque plain white sheet covers his body from immediately below the base of the neck through the feet, including the shoulders, arms and hands. Keep the sheet clean and unstained, with natural folds. Use an elevated three-quarter view, with the head toward the upper left and the covered feet toward the lower right. Frame the entire figure with comfortable margins. The man and covering sheet must form one isolated character layer on a genuinely transparent background. No table, room, other people or surrounding objects in this asset.\n\nASSET 2 — MATCHING BACKGROUND: A 16:9 empty, modest examination room appropriate to rural Japan in 1988, with a plain metal examination table positioned to support the character from Asset 1. Match its camera angle, scale, perspective and lighting exactly so the character can be composited naturally onto the table. Understated grey walls, minimal furnishings and soft overhead lighting; dim but clearly readable. No people, bodies or covering sheet in the background asset. Avoid distinctive architectural details that would claim to reconstruct a specific real facility.\n\nFor both assets: no blood, gore, exposed injuries, dramatic horror effects, modern equipment, captions, lettering, labels, numbers, logos or watermarks. Deliver two separate assets, not a combined scene or side-by-side panel. All explanatory text will be added during editing.",
+  "id": "20260908175619_817d5035",
+  "state": "failed",
+  "created_at": "2026-09-08T08:56:19.723905+00:00",
+  "updated_at": "2026-09-08T09:00:09.670400+00:00",
+  "message": "処理に失敗しました。みで、アルファチャンネルがありません。また、背景画像は出力されませんでした。\n\n再生成は行わず、既存素材・shots.jsonも変更していません。\n/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/character_matte.cjs:16\nif(tail/(w*h)<.05||tail/(w*h)>.9)throw Error('人物と背景を確実に分離できないため、生成画像を保持して停止しました');\n                                 ^\n\nError: 人物と背景を確実に分離できないため、生成画像を保持して停止しました\n    at Object.<anonymous> (/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/character_matte.cjs:16:40)\n    at Module._compile (node:internal/modules/cjs/loader:1809:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1940:10)\n    at Module.load (node:internal/modules/cjs/loader:1530:32)\n    at Module._load (node:internal/modules/cjs/loader:1332:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v25.6.0\n",
+  "shot": {
+    "id": 45,
+    "start_frame": 5717,
+    "end_frame": 5836,
+    "asset_id": "ASSET-045",
+    "asset_file": "画像/ASSET-045.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "それは、頭と首に傷が全くないことでした。",
+    "edit_note": "頭と首の位置に「傷なし」、腰から下に「傷が集中」の指示線を編集で描き足す。文字は画像に描かせず、すべて編集で載せる。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "quality_checks": true,
+  "worker_pid": 58687,
+  "script_evidence": {
+    "sources": [
+      {
+        "file": "Master.md",
+        "sha256": "db462ffae6306c69599f73f1ea60205cf350c96c5f2afdc5181128d174a6ab17"
+      },
+      {
+        "file": "編集用素材台本.md",
+        "sha256": "f438c09042e0eae4f72ccad2b6bf817f433e5eeaec39011e30b10e2cd128b577"
+      },
+      {
+        "file": "Asset_Prompts_Full.md",
+        "sha256": "e49720027468bbe39ee9409bc72c1f5dfe9f2b0e98a0b6b1df97a70ef1f0ea2d"
+      },
+      {
+        "file": "shots.json",
+        "sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9"
+      }
+    ],
+    "asset_id": "ASSET-045",
+    "shot_id": 45,
+    "snapshot": "check/studio/jobs/20260908175619_817d5035/script-context.txt",
+    "snapshot_sha256": "33daa851fdde96550a24bc37786a9bd2fc949d30cabc7da72ee2cad3e6ee737f"
+  },
+  "command": [
+    "/opt/homebrew/bin/node",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/character_matte.cjs",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908175619_817d5035/candidate_asset-raw.png",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908175619_817d5035/candidate_asset-alpha.png",
+    "",
+    "1672",
+    "941",
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1"
+  ],
+  "child_pid": null,
+  "exit_code": 1,
+  "routing_plan": {
+    "steps": [
+      {
+        "kind": "image",
+        "target": "asset",
+        "composition": "character"
+      },
+      {
+        "kind": "image",
+        "target": "background",
+        "composition": "scene"
+      }
+    ],
+    "requirements": [
+      "人物は1件目の61歳男性を示す匿名のキャラクターとして描き、実在の被害者の容姿を推測で再現しない。",
+      "横たわる遺体の頭と首を見える状態にし、傷や血のない綺麗な状態で描く。",
+      "首から下の体は白い布で覆い、傷や損傷を露出させない。",
+      "人物と白い布は独立した透過背景の人物レイヤーにする。",
+      "背景は1988年5月、山から収容された後の所見を説明する場面に合う簡素な室内とし、特定の施設を断定する名称や追加人物を描かない。",
+      "背景と人物の視点・光・配置を合わせ、頭と首が確認できる構図にする。",
+      "字幕・注釈・地名・人口・説明文などの文字は画像に焼き込まない。"
+    ],
+    "explanation": "記録用紙の画像を、頭と首に傷がなく、体を白い布で覆った遺体のキャラクター素材へ変更します。透過の人物画像と、組み合わせる背景画像を別々に生成する工程を選びます。",
+    "unsupported": "",
+    "learning": []
+  },
+  "step_index": 1,
+  "composition": "character",
+  "input_sha256": "7abc2a1260c6fdc1d1271c013445ae0fcc411018dfe6fee847193381ba6481f9",
+  "explanation": "回収後の61歳男性を、実在の容姿によらない人物として表現。頭と首は無傷で見せ、体は白布で覆った透過素材と、合成用の無人背景を別々に指定しています。"
+}

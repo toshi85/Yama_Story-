@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "requirement": "最新指示の一枚の地図画像で集落と現場付近を同時に見せる",
+      "passed": true,
+      "evidence": "0.1秒・1.85秒・3.6333秒すべてで、左下の家屋が集まる集落と右上の現場付近が一枚の俯瞰画像内に見える。分割表示はない。"
+    },
+    {
+      "requirement": "最新の修正依頼に従い、集落と現場付近にピンを表示する",
+      "passed": true,
+      "evidence": "1.85秒で「集落」「現場付近」の赤いピンが明瞭に見える。最新の修正履歴は二つのピンを求めており、edit_noteの円と矢印による表示指定より優先して判定した。"
+    },
+    {
+      "requirement": "ピン上の文字を追加テロップと同じ明朝体で表示する",
+      "passed": true,
+      "evidence": "1.85秒の「集落」「現場付近」は「約500〜600m上流」と同じ明朝系の字形で、白文字に黒い縁取りがある。白い箱や帯はない。下部のナレーション字幕は別のゴシック体で表示されている。"
+    },
+    {
+      "requirement": "背景と文字が支障なく見え、位置関係の概略であることが伝わる",
+      "passed": true,
+      "evidence": "全添付時刻で集落の家屋、川、森林が見え、右下に「位置関係の概略図」と表示されている。透過の市松模様、文字の重複、追加テロップの不自然な分離は見られない。"
+    },
+    {
+      "requirement": "静止画から確認できる範囲で判定する",
+      "passed": true,
+      "evidence": "確認対象は0.1秒・1.85秒・3.6333秒の映像表示。音声時刻資料は提示されていないため、音声内容や字幕との同期は判定していない。"
+    }
+  ],
+  "issues": [],
+  "repair_patch": {},
+  "media": {
+    "video": "check/studio/quality-audits/20260908171347/quality/attempt-0/preview.mp4",
+    "video_sha256": "e7a4f41597d871b8d11385c836757bc2e1f2f7304fdcbbbd79cbaaf6d5f5f385",
+    "duration": 3.7,
+    "frames": [
+      {
+        "time": 0.1,
+        "file": "check/studio/quality-audits/20260908171347/quality/attempt-0/frame-00.jpg"
+      },
+      {
+        "time": 1.85,
+        "file": "check/studio/quality-audits/20260908171347/quality/attempt-0/frame-01.jpg"
+      },
+      {
+        "time": 3.6333,
+        "file": "check/studio/quality-audits/20260908171347/quality/attempt-0/frame-02.jpg"
+      }
+    ]
+  },
+  "attempt": 0,
+  "status": "passed"
+}
