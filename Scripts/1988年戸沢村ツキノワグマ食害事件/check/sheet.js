@@ -8,6 +8,7 @@ const KEY = 'notes:' + V;
 const OKEY = 'overrides:' + V;
 const DKEY = 'done:' + V;
 let notes = {};
+let timeNotes = [];
 let overrides = {};
 let doneSet = {};
 try { notes = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) {}
@@ -70,6 +71,11 @@ function play(id, t0, t1) {
 const ED = {};   // id → 編集中の状態
 let CUR = null;  // 開いているパネルの id
 
+// textarea の中身用。属性値と違って & と < も潰さないと壊れる。
+function escText(t) {
+  return String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
 function num(v, d) { const n = parseFloat(v); return isNaN(n) ? d : n; }
 const charRows = () => [...document.querySelectorAll('.r[data-kind="character"]')].map(r => +r.id.slice(1));
 
@@ -114,6 +120,11 @@ function effective(id) {          // 行の既定値に、保存済みの手直�
     return out;
   }
   for (const k of Object.keys(FIELD_NAMES)) if (o[k] !== undefined && o[k] !== null) out[k] = o[k];
+  // 経路つきの動きは motion_path.duration が実際に効く秒数なので、
+  // 「動く時間」のスライダーにはそちらを出す（違う数字を見せない）。
+  if (o.motion_path && Number.isFinite(Number(o.motion_path.duration))) {
+    out.move_sec = Number(o.motion_path.duration);
+  }
   return out;
 }
 
@@ -134,6 +145,9 @@ async function openEditor(id) {
     baseX: e.base_x, baseY: e.base_y, dx: e.drift[0], dy: e.drift[1], bdx: e.bubble_dx, bdy: e.bubble_dy,
     scale: e.scale, flip: e.flip, mode: 'start', meta: null, undo: [], redo: [], isChar,
     overlays: JSON.parse(JSON.stringify(e.overlays || [])), dur: e.dur, selOv: -1,
+    // 経路の中間地点（1280x720 の人物中心）。保存済みの経路があればそれを引き継ぐ。
+    mids: (((overrides[id] || {}).motion_path || {}).midpoints || []).map(p => [p[0], p[1]]),
+    selMid: -1,
   };
   const esc = t => String(t).replace(/"/g, '&quot;');
 
@@ -166,7 +180,18 @@ async function openEditor(id) {
           .map(o => '<option value="' + o[0] + '"' + (e.bubble_side === o[0] ? ' selected' : '') + '>' + o[1] + '</option>').join('') +
         '</select></label>';
     }
-    ctl += '<label>セリフ <input id="sp' + id + '" style="width:200px" value="' + esc(e.speech) + '" placeholder="空なら吹き出し無し"></label>';
+    // 2026-09-10: <input> は改行を打てないので <textarea> に。
+    //   render.py の _bubble_lines は改行があれば自動の折り返しより優先する作りで、
+    //   吹き出しの行割りを手で決められる。入れ物だけが追いついていなかった。
+    ctl += '<label>セリフ <textarea id="sp' + id + '" rows=2 style="width:200px;resize:vertical"' +
+           ' placeholder="空なら吹き出し無し／改行するとそこで行が変わります">' + escText(e.speech) + '</textarea>' +
+           '<button id="spins' + id + '" onclick="insertSpeech(' + id + ')">吹き出しを入れる</button>' +
+           '<span class=hint>入れると画面に吹き出しが出て、ドラッグで位置を直せます。改行した所で行が変わります</span></label>';
+    ctl += '<label>中間地点（経路の途中で通る場所）' +
+           '<button onclick="addMid(' + id + ')">＋足す</button>' +
+           '<button onclick="delMid(' + id + ')">選んだ点を消す</button>' +
+           '<span class=hint id="midn' + id + '"></span>' +
+           '<span class=hint>点をドラッグで移動／クリックで選ぶ（Delete でも消せる）。動きが「開始→終了へ動く」のときだけ効きます</span></label>';
     ctl += '<label>吹き出しを出す <input type=range id="bd' + id + '" min=0 max="' + Math.max(0.5, Math.round((e.dur - 0.3) * 10) / 10) + '" step=0.1 value="' + e.bubble_delay + '"> <span id="bdv' + id + '">' + (e.bubble_delay > 0 ? e.bubble_delay + '秒後' : '最初から') + '</span></label>';
     ctl += '<label class=hint>吹き出しの文字の位置 横<input type=number id="btx' + id + '" value="' + e.bubble_text_dx + '" step=1 style="width:60px">px 縦<input type=number id="bty' + id + '" value="' + e.bubble_text_dy + '" step=1 style="width:60px">px（プレビューで確認）</label>';
     ctl += '<div class=guide><b>位置の直し方</b><br>' +
@@ -249,6 +274,7 @@ async function openEditor(id) {
              '<img class=layer id="ly' + id + '" src="layers/' + pad4(id) + '_char.png" draggable=false title="開始位置">' +
              '<img class=layer id="lyB' + id + '" src="layers/' + pad4(id) + '_bub.png" draggable=false title="吹き出し" onerror="this.style.display=\'none\'">';
   }
+  if (isChar) stage += '<div id="mids' + id + '"></div>';
   stage += '<div id="ovs' + id + '"></div></div>';
 
   const box = document.createElement('div');
@@ -272,6 +298,10 @@ async function openEditor(id) {
     mo.addEventListener('change', () => { pushUndo(id); placeAll(id); });
     try {
       st.meta = await (await fetch('layers/' + pad4(id) + '.json', { cache: 'no-store' })).json();
+      // 🚨 2026-09-10: この層は「そのとき効いていた吹き出しのずれ」で作られている。
+      //    ずれ0のときの形に戻しておかないと、動かすたびに幅の計算が狂う。
+      st.metaBdx = num((overrides[id] || {}).bubble_dx, 0);
+      st.metaBdy = num((overrides[id] || {}).bubble_dy, 0);
     } catch (e2) { st.meta = null; }
   } else {
     st.mode = 'none';
@@ -415,41 +445,148 @@ function placeOverlays(id) {
 }
 
 // 描画側の式（2倍空間）: x = (W-w)/2 + base_x (+ dx*ease), y = H - h - 0.10H + base_y (+ dy*ease)
+// 🚨 2026-09-10: 吹き出しを動かすと層の幅がその分だけ広がり、層は中央揃えで
+//    置かれるので全体が半分だけ逆へ動く。パネルは開いた時点の幅を使い続けて
+//    いたため、ドラッグ量の半分がそのままズレになっていた（実測: ずれ+20 で
+//    層の幅 506→526、吹き出しは+20 だが中央揃えで全体が10左へ寄る）。
+//    レンダラー（build_character_layer）と同じ手順で幅を組み直す。
+// 人物本体の中心（層の中の位置）。経路の各点はここが乗る場所。
+// char_center は render.py が層と一緒に書き出す。無い古い層は本体の箱の中心で代用する。
+function charCenter(st, box) {
+  const m = st.meta || {};
+  const c = m.char_center;
+  if (Array.isArray(c) && c.length === 2) return [box.padL + c[0], box.padT + c[1]];
+  return [box.padL + (m.char_w || 396) / 2, box.padT + (m.char_h || 396) / 2];
+}
+
+// 画面（1280x720）での人物中心。開始位置＝経路の1点目。
+function charCenterOnScreen(id) {
+  const st = ED[id]; const g = groupOrigin(id);
+  const c = charCenter(st, g.box);
+  return [g.gx + c[0] * g.k, g.gy + c[1] * g.k];
+}
+
+function layerBox(st) {
+  const m = st.meta || { cw: 400, ch: 396, pad_l: 0, pad_t: 0, char_w: 400, char_h: 396 };
+  if (!m.bubble) return { cw: m.cw, ch: m.ch, padL: m.pad_l, padT: m.pad_t, bx: 0, by: 0, m };
+  // ずれ0のときの形へ戻す（層を作ったときのずれを取り除く）
+  const b0x = m.bubble[0] - m.pad_l - num(st.metaBdx, 0);
+  const b0y = m.bubble[1] - m.pad_t - num(st.metaBdy, 0);
+  const bw = m.bubble[2], bh = m.bubble[3];
+  const bx = b0x + st.bdx, by = b0y + st.bdy;
+  const left = Math.min(0, bx), top = Math.min(0, by);
+  const right = Math.max(m.char_w, bx + bw), bottom = Math.max(m.char_h, by + bh);
+  return { cw: right - left, ch: bottom - top, padL: -left, padT: -top,
+           bx: bx - left, by: by - top, m };
+}
+
 function groupOrigin(id) {
   const st = ED[id];
-  const m = st.meta || { cw: 400, ch: 396, pad_l: 0, pad_t: 0, char_w: 400, char_h: 396 };
+  const box = layerBox(st);
+  const m = box.m;
   const k = st.scale / (st.metaScale || 1);
-  const cw = m.cw * k, chh = m.ch * k;
+  const cw = box.cw * k, chh = box.ch * k;
   const gx = (1280 - cw) / 2 + st.baseX / 2;
   const gy = 720 - chh - 72 + st.baseY / 2;
-  return { gx, gy, m, k, cw, chh };
+  return { gx, gy, m, k, cw, chh, box };
+}
+
+// 中間地点（経路の途中で通る場所）。ドラッグで動かし、選んで Delete で消す。
+function placeMids(id) {
+  const st = ED[id]; const host = document.getElementById('mids' + id);
+  if (!host) return;
+  const usePath = (document.getElementById('mo' + id) || {}).value === 'path';
+  host.innerHTML = (usePath ? st.mids : []).map((p, i) =>
+    '<div class="mid' + (st.selMid === i ? ' sel' : '') + '" data-mid="' + i + '"' +
+    ' style="left:' + (p[0] * S) + 'px;top:' + (p[1] * S) + 'px">' + (i + 1) + '</div>').join('');
+}
+
+// セリフを入れて吹き出しを画面へ出す（掴めるようにする）。
+// 🚨 2026-09-10: もともとセリフの無いカットは吹き出しの層が無く、セリフを打っても
+//    画面に何も出ないのでドラッグできなかった。ここで層を作り直して置き換える。
+async function insertSpeech(id) {
+  const st = ED[id]; if (!st) return;
+  const btn = document.getElementById('spins' + id);
+  const before = btn ? btn.textContent : '';
+  if (btn) { btn.disabled = true; btn.textContent = '作成中…'; }
+  rowBusy(id, true, '吹き出しを作っています');
+  try {
+    const sp = document.getElementById('sp' + id);
+    const bs = document.getElementById('bs' + id);
+    const btx = document.getElementById('btx' + id), bty = document.getElementById('bty' + id);
+    const ov = {
+      speech: sp ? sp.value : '',
+      bubble_side: bs ? bs.value : '',
+      bubble_dx: Math.round(st.bdx), bubble_dy: Math.round(st.bdy),
+      scale: st.scale, flip: !!st.flip,
+      bubble_text_dx: Math.round(parseFloat(btx && btx.value) || 0),
+      bubble_text_dy: Math.round(parseFloat(bty && bty.value) || 0),
+    };
+    const r = await fetch('/build_layer', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+                                            body: JSON.stringify({ id: id, override: ov }) });
+    const j = await r.json();
+    if (!j.ok) { alert('吹き出しを作れませんでした。\n\n' + (j.error || '')); return; }
+    st.meta = j.meta || st.meta;
+    st.metaBdx = ov.bubble_dx; st.metaBdy = ov.bubble_dy;
+    const t = Date.now();
+    for (const [el, suf] of [[document.getElementById('ly' + id), '_char.png'],
+                             [document.getElementById('lyE' + id), '_char.png'],
+                             [document.getElementById('lyB' + id), '_bub.png']]) {
+      if (!el) continue;
+      el.style.display = (suf === '_bub.png' && !j.has_bubble) ? 'none' : '';
+      el.src = 'layers/' + pad4(id) + suf + '?t=' + t;
+    }
+    if (j.has_bubble) { st.mode = 'bubble'; const sel = document.getElementById('sel' + id); if (sel) sel.textContent = '吹き出し'; }
+    placeAll(id); pushUndo(id);
+  } catch (e) { alert('通信できませんでした: ' + e); }
+  finally { rowBusy(id, false); if (btn) { btn.disabled = false; btn.textContent = before || '吹き出しを入れる'; } }
+}
+
+function addMid(id) {
+  const st = ED[id]; if (!st || !st.meta) return;
+  const [sx, sy] = charCenterOnScreen(id);
+  const ex = sx + st.dx / 2, ey = sy + st.dy / 2;
+  // 直前の点と終わりの真ん中に置く（続けて押すと点が増えていく）
+  const from = st.mids.length ? st.mids[st.mids.length - 1] : [sx, sy];
+  st.mids.push([Math.round((from[0] + ex) / 2), Math.round((from[1] + ey) / 2)]);
+  st.selMid = st.mids.length - 1;
+  const mo = document.getElementById('mo' + id); if (mo) mo.value = 'path';
+  placeAll(id); pushUndo(id);
+}
+
+function delMid(id) {
+  const st = ED[id]; if (!st || st.selMid < 0) return;
+  st.mids.splice(st.selMid, 1); st.selMid = -1;
+  placeAll(id); pushUndo(id);
 }
 
 function placeAll(id) {
   const st = ED[id]; if (!st) return;
   placeOverlays(id);
+  placeMids(id);
   const pos = document.getElementById('pos' + id);
   if (!st.isChar) {
     if (pos && st.mode === 'ov' && st.overlays[st.selOv]) { const o = st.overlays[st.selOv]; pos.textContent = ovName(o) + ' 位置 横' + Math.round(o.x) + ' 縦' + Math.round(o.y) + '（1280x720基準 px）'; }
     return;
   }
-  const { gx, gy, m, k, cw, chh } = groupOrigin(id);
+  const { gx, gy, m, k, cw, chh, box } = groupOrigin(id);
   const ly = document.getElementById('ly' + id), lyE = document.getElementById('lyE' + id), lyB = document.getElementById('lyB' + id);
   const cwc = (ly.naturalWidth || m.char_w) * k;
   const flipCss = st.flip ? 'scaleX(-1)' : '';
   ly.style.width = (cwc * S) + 'px'; ly.style.transform = flipCss;
-  ly.style.left = ((gx + m.pad_l * k) * S) + 'px';
-  ly.style.top = ((gy + m.pad_t * k) * S) + 'px';
+  ly.style.left = ((gx + box.padL * k) * S) + 'px';
+  ly.style.top = ((gy + box.padT * k) * S) + 'px';
   const mo = document.getElementById('mo' + id);
   const usePath = mo && mo.value === 'path';
   lyE.style.display = usePath ? '' : 'none';
   lyE.style.width = (cwc * S) + 'px'; lyE.style.transform = flipCss;
-  lyE.style.left = ((gx + m.pad_l * k + st.dx / 2) * S) + 'px';
-  lyE.style.top = ((gy + m.pad_t * k + st.dy / 2) * S) + 'px';
+  lyE.style.left = ((gx + box.padL * k + st.dx / 2) * S) + 'px';
+  lyE.style.top = ((gy + box.padT * k + st.dy / 2) * S) + 'px';
   if (lyB && lyB.style.display !== 'none') {
-    lyB.style.width = (cw * S) + 'px';
-    lyB.style.left = ((gx + st.bdx) * S) + 'px';
-    lyB.style.top = ((gy + st.bdy) * S) + 'px';
+    // 吹き出しは層の中の位置で置く（層の幅は上で組み直してある）
+    lyB.style.width = (m.bubble ? m.bubble[2] * k * S : cw * S) + 'px';
+    lyB.style.left = ((gx + box.bx * k) * S) + 'px';
+    lyB.style.top = ((gy + box.by * k) * S) + 'px';
   }
   if (pos) {
     if (st.mode === 'ov' && st.overlays[st.selOv]) { const o = st.overlays[st.selOv]; pos.textContent = ovName(o) + ' 位置 横' + Math.round(o.x) + ' 縦' + Math.round(o.y); }
@@ -469,20 +606,28 @@ function moveTo(id, cx, cy) {
     placeAll(id); pushUndo(id); return;
   }
   if (!st.meta) return;
-  const { gx, gy, m, k, cw, chh } = groupOrigin(id);
+  const { gx, gy, m, k, cw, chh, box } = groupOrigin(id);
   if (mode === 'start') {
-    const targetGx = cx - m.pad_l * k - m.char_w * k / 2;      // キャラの足元中央をクリック位置へ
+    const targetGx = cx - box.padL * k - m.char_w * k / 2;     // キャラの足元中央をクリック位置へ
     const targetGy = cy - chh;
     st.baseX = (targetGx - (1280 - cw) / 2) * 2;
     st.baseY = (targetGy - (720 - chh - 72)) * 2;
   } else if (mode === 'end') {
-    const startCx = gx + m.pad_l * k + m.char_w * k / 2, startCy = gy + chh;
+    const startCx = gx + box.padL * k + m.char_w * k / 2, startCy = gy + chh;
     st.dx = (cx - startCx) * 2; st.dy = (cy - startCy) * 2;
     const mo = document.getElementById('mo' + id); if (mo) mo.value = 'path';
   } else if (mode === 'bubble' && m.bubble) {
-    const [bx, by, bw, bh] = m.bubble;
-    st.bdx = cx - gx - (bx + bw / 2) * k;
-    st.bdy = cy - gy - (by + bh / 2) * k;
+    // ずれを変えると層の幅が変わり、中央揃えの原点 gx も動く。
+    // 1回の計算では合わないので、狙った位置に落ちるまで数回詰める。
+    const bw = m.bubble[2], bh = m.bubble[3];
+    for (let i = 0; i < 40; i++) {
+      const g = groupOrigin(id);
+      const nowX = g.gx + g.box.bx * g.k + bw * g.k / 2;
+      const nowY = g.gy + g.box.by * g.k + bh * g.k / 2;
+      if (Math.abs(nowX - cx) < 0.25 && Math.abs(nowY - cy) < 0.25) break;
+      st.bdx += (cx - nowX) / g.k;
+      st.bdy += (cy - nowY) / g.k;
+    }
   }
   placeAll(id);
   pushUndo(id);
@@ -496,6 +641,7 @@ function nudge(id, dx, dy) {
   else if (mode === 'start') { st.baseX += dx * 2; st.baseY += dy * 2; }
   else if (mode === 'end') { st.dx += dx * 2; st.dy += dy * 2; }
   else if (mode === 'bubble') { st.bdx += dx; st.bdy += dy; }
+  else if (mode === 'mid' && st.mids[st.selMid]) { st.mids[st.selMid][0] += dx; st.mids[st.selMid][1] += dy; }
   else return;
   placeAll(id);
   pushUndo(id);
@@ -509,6 +655,12 @@ function setupDrag(id) {
 
   // 挿入したもの（矩形）→ 吹き出し → キャラ → 終了位置 の順に当たりを見る。透明な所は当たりにしない
   const hitTest = (px, py) => {
+    // 中間地点の丸が最優先（小さいので他より先に拾う）
+    for (const el of [...document.querySelectorAll('#mids' + id + ' .mid')].reverse()) {
+      const r = el.getBoundingClientRect(), sr = stage.getBoundingClientRect();
+      const l = r.left - sr.left, t = r.top - sr.top;
+      if (px >= l && px <= l + r.width && py >= t && py <= t + r.height) return 'mid:' + el.dataset.mid;
+    }
     const ovEls = [...document.querySelectorAll('#ovs' + id + ' .ov')].reverse();
     for (const el of ovEls) {
       const r = el.getBoundingClientRect(), sr = stage.getBoundingClientRect();
@@ -541,8 +693,9 @@ function setupDrag(id) {
   };
   const NAMES = { start: 'キャラ', end: '半透明のキャラ（動き終わりの場所）', bubble: '吹き出し' };
   const setMode = v => {
-    if (v.startsWith('ov:')) { st.selOv = +v.slice(3); st.mode = 'ov'; renderOverlayList(id); const el = document.getElementById('sel' + id); if (el) el.textContent = ovName(st.overlays[st.selOv]); return; }
-    st.mode = v; const el = document.getElementById('sel' + id); if (el) el.textContent = NAMES[v] || v;
+    if (v.startsWith('ov:')) { st.selOv = +v.slice(3); st.mode = 'ov'; st.selMid = -1; renderOverlayList(id); const el = document.getElementById('sel' + id); if (el) el.textContent = ovName(st.overlays[st.selOv]); return; }
+    if (v.startsWith('mid:')) { st.selMid = +v.slice(4); st.mode = 'mid'; placeMids(id); const el = document.getElementById('sel' + id); if (el) el.textContent = '中間地点 ' + (st.selMid + 1) + '（Delete で消せます）'; return; }
+    st.selMid = -1; st.mode = v; const el = document.getElementById('sel' + id); if (el) el.textContent = NAMES[v] || v;
   };
   const pos = e => { const r = stage.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
 
@@ -556,6 +709,7 @@ function setupDrag(id) {
       else if (drag.target === 'end') { st.dx = s0.dx + mx * 2; st.dy = s0.dy + my * 2; }
       else if (drag.target === 'bubble') { st.bdx = s0.bdx + mx; st.bdy = s0.bdy + my; }
       else if (drag.target.startsWith('ov:')) { const o = st.overlays[+drag.target.slice(3)]; if (o) { o.x = Math.round(s0.ox + mx); o.y = Math.round(s0.oy + my); } }
+      else if (drag.target.startsWith('mid:')) { const p = st.mids[+drag.target.slice(4)]; if (p) { p[0] = Math.round(s0.mx0 + mx); p[1] = Math.round(s0.my0 + my); } }
       placeAll(id);
       return;
     }
@@ -567,8 +721,10 @@ function setupDrag(id) {
     if (hit) {
       setMode(hit);
       const o = hit.startsWith('ov:') ? st.overlays[+hit.slice(3)] : null;
+      const mp = hit.startsWith('mid:') ? st.mids[+hit.slice(4)] : null;
       drag = { x: e.clientX, y: e.clientY, target: hit,
-               snap: { baseX: st.baseX, baseY: st.baseY, dx: st.dx, dy: st.dy, bdx: st.bdx, bdy: st.bdy, ox: o ? o.x : 0, oy: o ? o.y : 0 } };
+               snap: { baseX: st.baseX, baseY: st.baseY, dx: st.dx, dy: st.dy, bdx: st.bdx, bdy: st.bdy, ox: o ? o.x : 0, oy: o ? o.y : 0,
+                       mx0: mp ? mp[0] : 0, my0: mp ? mp[1] : 0 } };
       moved = false;
       stage.setPointerCapture(e.pointerId);
       stage.style.cursor = 'grabbing';
@@ -589,12 +745,30 @@ function setupDrag(id) {
   placeAll(id);
 }
 
-// キーボード: ⌘Z / ⇧⌘Z / 矢印（パネルが開いていて、入力欄にいないとき）
+// 保存したあとに1つ戻す（サーバーが保存直前の overrides.json を積んでいる）
+// 2026-09-10: ⌘Z はパネルを開いている間しか効かず、閉じると履歴ごと消えていた。
+async function undoSaved() {
+  try {
+    const r = await fetch('/undo_overrides', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+    const j = await r.json();
+    if (!j.ok) { alert(j.error || '戻せませんでした'); return; }
+    alert('保存を1つ戻しました（あと' + j.left + '回戻せます）。\n\n' +
+          '「下書きを作り直す」を押すと動画に反映されます。');
+    location.reload();
+  } catch (e) { alert('通信できませんでした: ' + e); }
+}
+
+// キーボード: ⌘Z / ⇧⌘Z / 矢印（入力欄にいないとき）
 document.addEventListener('keydown', e => {
-  if (CUR === null || !ED[CUR]) return;
   const tag = (e.target.tagName || '').toLowerCase();
   if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
+  // パネルを閉じていても、保存した分を1つ戻せる
+  if (CUR === null || !ED[CUR]) {
+    if ((e.metaKey || e.ctrlKey) && !e.shiftKey && e.key.toLowerCase() === 'z') { e.preventDefault(); undoSaved(); }
+    return;
+  }
   if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'z') { e.preventDefault(); e.shiftKey ? redoEd(CUR) : undoEd(CUR); return; }
+  if ((e.key === 'Delete' || e.key === 'Backspace') && ED[CUR].mode === 'mid') { e.preventDefault(); delMid(CUR); return; }
   const step = e.shiftKey ? 10 : 1;
   const map = { ArrowLeft: [-step, 0], ArrowRight: [step, 0], ArrowUp: [0, -step], ArrowDown: [0, step] };
   if (map[e.key]) { e.preventDefault(); nudge(CUR, map[e.key][0], map[e.key][1]); }
@@ -614,6 +788,29 @@ function collectEditor(id) {
   const mo = document.getElementById('mo' + id); if (mo) o.motion = mo.value;
   const am = document.getElementById('am' + id); if (am) o.amount = parseFloat(am.value);
   const sc = document.getElementById('sc' + id); if (sc) o.move_sec = parseFloat(sc.value);
+  // 🚨 2026-09-10: 経路つきの動き（motion=path）で実際に効くのは motion_path.duration で、
+  //    「動く時間」のスライダーは見ていなかった。スライダーを短くしても経路の秒数が
+  //    そのまま残るので「ずっと動いている」ように見えていた。スライダーへ合わせる。
+  //    カット尺を超える値は profiles.py が弾くので、ここで収める。
+  // 中間地点があるカットは、経路（motion_path）として保存する。
+  // 中間地点が無いときは今までどおり drift（開始→終了の直線）のままにして、
+  // 既にある全カットの動きを変えない。
+  if (st.isChar && st.meta && st.mids && st.mids.length && o.motion === 'path') {
+    const [sx, sy] = charCenterOnScreen(id);
+    o.motion_path = {
+      start: [Math.round(sx), Math.round(sy)],
+      midpoints: st.mids.map(p => [Math.round(p[0]), Math.round(p[1])]),
+      end: [Math.round(sx + st.dx / 2), Math.round(sy + st.dy / 2)],
+      duration: o.motion_path ? o.motion_path.duration : o.move_sec,
+    };
+  } else if (st.isChar && st.mids && !st.mids.length) {
+    o.motion_path = null;      // 点を全部消したら直線へ戻す
+  }
+  if (o.motion_path && Number.isFinite(o.move_sec)) {
+    const cut = parseFloat(row.dataset.dur) || 0;
+    const dur = Math.max(0.1, cut ? Math.min(o.move_sec, cut) : o.move_sec);
+    o.motion_path = Object.assign({}, o.motion_path, { duration: Math.round(dur * 100) / 100 });
+  }
   const bs = document.getElementById('bs' + id); if (bs) o.bubble_side = bs.value;
   const mz = document.getElementById('mz' + id); if (mz) o.map_zoom = mz.dataset.clear ? '' : parseFloat(mz.value);
   const mh = document.getElementById('mh' + id); if (mh) o.map_heading = mh.dataset.clear ? null : parseFloat(mh.value);
@@ -940,7 +1137,7 @@ function count() {
 
 function payload() {
   const out = Object.keys(notes).sort((a, b) => a - b).map(id => ({ shot_id: +id, note: notes[id] }));
-  return { video: V, corrections: out, backend: document.getElementById('backend').value };
+  return { video: V, corrections: out.concat(timeNotes), backend: document.getElementById('backend').value };
 }
 
 // AI につながるか試す（受講生の最初の確認用）
@@ -958,27 +1155,232 @@ async function aiCheck() {
 }
 
 // 送信 → サーバーが check/corrections.json に保存し、AI を裏で起動する
+// 🚨 2026-09-10: 押しても何も起きないように見えた。反応が離れた場所の
+//    細い文字（#cnt）だけで、ボタン自身は変わらず、作り直し中に弾かれた
+//    （already_running）ときも同じ細い文字にしか出ていなかった。
+//    → ボタンを「送信中…」にし、結果は必ず画面の帯か alert で知らせる。
 async function send() {
-  const p = payload();
-  if (!p.corrections.length) { alert('修正メモが1件もありません'); return; }
-  if (location.protocol !== 'http:') { alert('サーバー経由で開いていないので、代わりにファイルへ書き出します'); dl(); return; }
+  const btn = document.getElementById('sendbtn');
+  const label = btn ? btn.textContent : '';
+  const restore = () => { if (btn) { btn.disabled = false; btn.textContent = label || '送信'; } };
+  if (btn) { btn.disabled = true; btn.textContent = '送信中…'; }
   try {
-    const r = await fetch('/corrections', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(p) });
-    const j = await r.json();
+    if (location.protocol === 'http:') {
+      try { await loadTimeNotes(); }
+      catch (error) { alert('保存済みの時刻メモを確認できません: ' + error.message); return; }
+    }
+    const p = payload();
+    if (!p.corrections.length) { alert('修正メモが1件もありません。\n\n各カットの「修正メモ」に書くか、試写の「ここを指摘」で記録してください。'); return; }
+    if (location.protocol !== 'http:') { alert('サーバー経由で開いていないので、代わりにファイルへ書き出します'); dl(); return; }
+    let j;
+    try {
+      const r = await fetch('/corrections', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(p) });
+      j = await r.json();
+    } catch (e) { alert('送信できませんでした（サーバーにつながりません）: ' + e); return; }
     const ai = j.ai || {};
     document.getElementById('cnt').textContent =
-      ' 送信 ' + j.count + '件 → ' + (ai.backend || '') + ' が作業中（' + (ai.state || '') + (ai.error ? ' ' + ai.error : '') + '）';
+      ' 送信 ' + j.count + '件 → ' + (ai.backend || '') + '（' + (ai.state || '') + (ai.error ? ' ' + ai.error : '') + '）';
+    if (ai.state === 'already_running') {
+      alert('メモ ' + j.count + '件は保存しました。\n\n' +
+            'ただし、いま別の作業（' + (ai.started || '') + ' 開始）が動いているので、AIはまだ始めていません。\n' +
+            '終わってからもう一度「送信」を押してください。');
+      return;
+    }
+    if (ai.state === 'error' || ai.error) {
+      alert('メモ ' + j.count + '件は保存しましたが、AIを起動できませんでした。\n\n' + (ai.error || ''));
+      return;
+    }
+    showSent(j.count, ai);
     watch();
-  } catch (e) { alert('送信に失敗: ' + e); }
+  } finally { restore(); }
+}
+
+// 「18:27:14 開始」から今までの経過。AIの作業は進み具合が数字で出ないので、
+// せめて何分動いているかを見せる。
+function elapsedOf(started) {
+  const m = /^(\d{1,2}):(\d{2}):(\d{2})$/.exec(String(started || ''));
+  if (!m) return '';
+  const now = new Date();
+  const t0 = new Date(now); t0.setHours(+m[1], +m[2], +m[3], 0);
+  let sec = Math.floor((now - t0) / 1000);
+  if (sec < 0) sec += 86400;                       // 日付をまたいだとき
+  if (sec > 12 * 3600) return '';
+  return '（' + (sec >= 60 ? Math.floor(sec / 60) + '分' + (sec % 60) + '秒' : sec + '秒') + '経過）';
+}
+
+// 行そのものに「作っています」を出す（fal の動画化・吹き出しの作成など）。
+// 2026-09-10 本人の要望「生成中はそのカットの所でローディングを出してほしい」。
+function rowBusy(id, on, label) {
+  const row = document.getElementById('c' + id);
+  if (!row) return;
+  row.classList.toggle('working', !!on);
+  let tag = row.querySelector('.rowbadge');
+  if (!on) { if (tag) tag.remove(); return; }
+  if (!tag) {
+    tag = document.createElement('div');
+    tag.className = 'rowbadge';
+    const idcell = row.querySelector('.id');
+    if (idcell) idcell.appendChild(tag);
+  }
+  tag.innerHTML = '<span class=spin></span>' + (label || '作っています');
+}
+
+// ── カットの行に直接ようすを出す（2026-09-10 本人の要望）──────────────
+// 「AIが質問するなら、そのカットの所でやり取りしたい」「作っている最中はその行に
+//  ローディングを出してほしい」。上端の帯だけだと、どのカットの話か分からなかった。
+
+let MARKED = { active: [], ask: null, stale: [] };
+
+function markRows(s) {
+  const active = s.active_shots || [];
+  const stale = s.stale_shots || [];
+  const ask = (s.awaiting_answer && s.ask_shot != null) ? s.ask_shot : null;
+  const same = JSON.stringify([active, ask, stale]) === JSON.stringify([MARKED.active, MARKED.ask, MARKED.stale]);
+  if (same) return;
+  MARKED = { active: active, ask: ask, stale: stale };
+
+  document.querySelectorAll('.r.working, .r.needs, .r.asking').forEach(el => {
+    el.classList.remove('working', 'needs', 'asking');
+    const b = el.querySelector('.rowbadge'); if (b) b.remove();
+  });
+  document.querySelectorAll('.rowask').forEach(el => el.remove());
+
+  const badge = (id, cls, html) => {
+    const row = document.getElementById('c' + id);
+    if (!row) return null;
+    row.classList.add(cls);
+    const idcell = row.querySelector('.id');
+    if (idcell) {
+      const tag = document.createElement('div');
+      tag.className = 'rowbadge';
+      tag.innerHTML = html;
+      idcell.appendChild(tag);
+    }
+    return row;
+  };
+  stale.forEach(id => badge(id, 'needs', '未反映'));
+  active.forEach(id => badge(id, 'working', '<span class=spin></span>作業中'));
+
+  if (ask != null) {
+    const row = badge(ask, 'asking', '確認待ち');
+    if (row) {
+      const box = document.createElement('div');
+      box.className = 'rowask';
+      box.innerHTML = '<b>AIがこのカットについて確認しています</b>' +
+        '<div class=msg>' + escText(s.message || '') + '</div>' +
+        '<textarea id=rowans rows=2 placeholder="ここに答えると、このカットの続きから直します"></textarea>' +
+        '<button onclick="sendAiReply(\'rowans\')">返事を送る</button>';
+      row.after(box);
+      row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+}
+
+// 送ったメモのうち、どのカットが直って、どれが残っているか。
+// AIの自己申告ではなく、カット表が実際に変わったかで数える。
+function doneSummary(s) {
+  let t = '';
+  if (s.asked_shots && s.asked_shots.length) {
+    const ch = s.changed_shots || [], pd = s.pending_shots || [];
+    t += '　直った ' + ch.length + '件';
+    if (ch.length) t += '（#' + ch.join(' #') + '）';
+    if (pd.length) t += '／<b>残り ' + pd.length + '件（#' + pd.join(' #') + '）</b>';
+  }
+  // 🚨 いちばん大事な行。カット表は直っていても動画に入っていないことがある。
+  //    2026-09-10 はこれが見えず、3回の修正が全部落ちていた。
+  if (s.stale_shots && s.stale_shots.length) {
+    t += '　<b class=warn>動画に未反映 ' + s.stale_shots.length + '件（#' +
+         s.stale_shots.slice(0, 12).join(' #') + (s.stale_shots.length > 12 ? ' …' : '') + '）</b>' +
+         ' <button onclick="rebuild(false)">いま動画へ反映する</button>';
+  }
+  return t;
+}
+
+// 開いた時点で未反映が残っていないか見る（前回の作業が落ちていても気づける）
+function checkStale() {
+  fetch('/status', { cache: 'no-store' }).then(r => r.json()).then(s => {
+    if (s.state === 'running' || s.state === 'started') return;
+    if (!s.stale_shots || !s.stale_shots.length) return;
+    const el = workingBar();
+    el.className = 'ask';
+    el.innerHTML = '<b>動画に入っていない直しが ' + s.stale_shots.length + '件あります</b>' +
+      '　#' + s.stale_shots.slice(0, 12).join(' #') + (s.stale_shots.length > 12 ? ' …' : '') +
+      ' <button onclick="rebuild(false)">いま動画へ反映する</button>' +
+      ' <button onclick="this.closest(\'#working\').remove()">閉じる</button>';
+  }).catch(() => {});
+}
+
+// AIの質問に画面から返事する（同じ会話の続きとして届く）
+async function sendAiReply(fieldId) {
+  const ta = document.getElementById(fieldId || 'aians') || document.getElementById('aians');
+  const text = ta ? ta.value.trim() : '';
+  if (!text) { alert('返事を書いてください'); return; }
+  const backend = (document.getElementById('backend') || {}).value || '';
+  try {
+    const r = await fetch('/ai_reply', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+                                         body: JSON.stringify({ text: text, backend: backend }) });
+    const j = await r.json();
+    if (!j.ok) { alert(j.error || '送れませんでした'); return; }
+    const ai = j.ai || {};
+    if (ai.state === 'already_running') { alert('いま別の作業が動いています。終わってからもう一度どうぞ。'); return; }
+    if (ai.state === 'error' || ai.error) { alert('AIを起動できませんでした。\n\n' + (ai.error || '')); return; }
+    showSent(1, ai);
+    watch();
+  } catch (e) { alert('通信できませんでした: ' + e); }
+}
+
+// 画面上端の帯。見た目の指定は1回だけ入れる（showWorking と showSent で共用）。
+function workingBar() {
+  let el = document.getElementById('working');
+  if (el) return el;
+  el = document.createElement('div');
+  el.id = 'working';
+  document.body.appendChild(el);
+  if (!document.getElementById('workingcss')) {
+    const st = document.createElement('style');
+    st.id = 'workingcss';
+    st.textContent =
+      '#working{position:fixed;left:0;right:0;top:0;z-index:9999;padding:10px 16px;' +
+      'background:#1b2a4a;color:#e8eefc;font-size:14px;box-shadow:0 2px 10px rgba(0,0,0,.5)}' +
+      '#working.done{background:#14532d}#working.failed{background:#5b1a1a}#working.ask{background:#5a4410}' +
+      '#working .msg{margin:6px 0;padding:8px;background:#0006;border-radius:6px;max-height:150px;overflow:auto;white-space:pre-wrap;font-size:13px}' +
+      '#working .askrow{display:flex;gap:8px;align-items:flex-start}' +
+      '#working .warn{background:#7a1f1f;padding:2px 6px;border-radius:4px}' +
+      '#working textarea{flex:1;min-height:44px;font:inherit;padding:6px;border-radius:6px}' +
+      '#working .bar{height:8px;background:#0d1730;border-radius:4px;margin-top:6px;overflow:hidden}' +
+      '#working .bar>i{display:block;height:100%;background:#ffd34d;width:0;transition:width .4s}' +
+      '#working .spin{display:inline-block;width:12px;height:12px;margin-right:8px;border:2px solid #ffd34d;' +
+      'border-right-color:transparent;border-radius:50%;animation:sp 1s linear infinite;vertical-align:-1px}' +
+      '@keyframes sp{to{transform:rotate(360deg)}}' +
+      '#working button{margin-left:10px}';
+    document.head.appendChild(st);
+  }
+  return el;
+}
+
+// 送信した直後の帯（AIの進捗が届くまでの間も、押したことが分かるように）
+function showSent(count, ai) {
+  const el = workingBar();
+  el.className = '';
+  el.innerHTML = '<span class=spin></span><b>AIに送りました（メモ ' + count + '件）</b>' +
+    '　' + ((ai && ai.backend) || '') + ' が作業中' + (ai && ai.started ? '　' + ai.started + ' 開始' : '') +
+    '　<small>この帯が緑になったら終わりです</small><div class=bar><i style="width:3%"></i></div>';
 }
 
 // AI／作り直しの進捗を5秒ごとに表示
 async function watch() {
+  // 🚨 2026-09-10: 生ログをそのまま流していたので画面が端末の出力で埋まっていた。
+  //    帯に段階とカット数が日本語で出るようになったので、ふだんは畳んでおき、
+  //    失敗したときだけ自分から開く。
   let box = document.getElementById('ai');
   if (!box) {
+    const wrap = document.createElement('details');
+    wrap.id = 'aiwrap';
+    wrap.innerHTML = '<summary>実行の記録（うまくいかないときに開く）</summary>';
     box = document.createElement('pre');
     box.id = 'ai';
-    document.getElementById('bar').after(box);
+    wrap.appendChild(box);
+    document.getElementById('bar').after(wrap);
   }
   const tick = async () => {
     try {
@@ -988,9 +1390,12 @@ async function watch() {
       text += s.reply ? ('\n=== 返答 ===\n' + s.reply) : (s.log_tail || '');
       if (s.state === 'done') text += '\n\n完了。ページを再読み込みすると新しいコマと切り出しになります';
       box.textContent = text;
+      markRows(s);
+      const wrap = document.getElementById('aiwrap');
+      if (wrap && String(s.state).startsWith('failed')) wrap.open = true;
       showWorking(s);
       if (s.state === 'running' || s.state === 'started') setTimeout(tick, 3000);
-    } catch (e) { box.textContent = '状態取得に失敗: ' + e; }
+    } catch (e) { box.textContent = '状態取得に失敗: ' + e; setTimeout(tick, 5000); }
   };
   tick();
 }
@@ -1036,6 +1441,7 @@ async function animateCut(id) {
 
   const before = btn ? btn.textContent : '';
   if (btn) { btn.disabled = true; btn.textContent = '作成中…'; }
+  rowBusy(id, true, '動画にしています');
   try {
     const r = await fetch('/animate', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -1057,6 +1463,7 @@ async function animateCut(id) {
   } catch (e) {
     alert('通信できませんでした: ' + e);
   } finally {
+    rowBusy(id, false);
     if (btn && btn.textContent === '作成中…') { btn.disabled = false; btn.textContent = before; }
   }
 }
@@ -1069,10 +1476,24 @@ function showWorking(s) {
   const running = (s.state === 'running' || s.state === 'started');
   let el = document.getElementById('working');
   if (!running) {
+    // 🚨 2026-09-10: AIが質問して止まっても画面に何も出ず、待ち続けることになっていた。
+    //    報告（AI_REPLY.md）が書かれていなければ「返事待ち」。最後に言ったことを出して、
+    //    その場で返事を送れるようにする（会話は続きになる）。
+    if (s.awaiting_answer && (s.state === 'done' || String(s.state).startsWith('failed'))) {
+      el = el || workingBar();
+      el.className = 'ask';
+      el.innerHTML = '<b>AIが確認を待っています</b>' + doneSummary(s) +
+        '<div class=msg>' + escText(s.message || '（返答が読めません。下の記録を見てください）') + '</div>' +
+        '<div class=askrow><textarea id=aians rows=2 placeholder="返事を書いて送ると、さっきの続きから直します"></textarea>' +
+        '<button onclick="sendAiReply()">返事を送る</button>' +
+        '<button onclick="this.closest(\'#working\').remove()">閉じる</button></div>';
+      return;
+    }
     if (el) {
       if (s.state === 'done') {
         el.className = 'done';
-        el.innerHTML = '<b>できました</b>　このページを再読み込みすると、新しいコマになります' +
+        el.innerHTML = '<b>できました</b>' + doneSummary(s) +
+          '　このページを再読み込みすると、新しいコマになります' +
           ' <button onclick="location.reload()">再読み込み</button>' +
           ' <button onclick="this.closest(\'#working\').remove()">閉じる</button>';
       } else if (String(s.state).startsWith('failed')) {
@@ -1086,34 +1507,42 @@ function showWorking(s) {
     return;
   }
   if (!el) {
-    el = document.createElement('div');
-    el.id = 'working';
-    document.body.appendChild(el);
-    const st = document.createElement('style');
-    st.textContent =
-      '#working{position:fixed;left:0;right:0;top:0;z-index:9999;padding:10px 16px;' +
-      'background:#1b2a4a;color:#e8eefc;font-size:14px;box-shadow:0 2px 10px rgba(0,0,0,.5)}' +
-      '#working.done{background:#14532d}#working.failed{background:#5b1a1a}' +
-      '#working .bar{height:8px;background:#0d1730;border-radius:4px;margin-top:6px;overflow:hidden}' +
-      '#working .bar>i{display:block;height:100%;background:#ffd34d;width:0;transition:width .4s}' +
-      '#working .spin{display:inline-block;width:12px;height:12px;margin-right:8px;border:2px solid #ffd34d;' +
-      'border-right-color:transparent;border-radius:50%;animation:sp 1s linear infinite;vertical-align:-1px}' +
-      '@keyframes sp{to{transform:rotate(360deg)}}' +
-      '#working button{margin-left:10px}';
-    document.head.appendChild(st);
+    el = workingBar();
   }
   el.className = '';
-  const label = (s.backend || '').indexOf('final') >= 0 ? '仕上げ（本画質）' : '下書きを作り直しています';
+  const backend = String(s.backend || '');
+  const label = backend.indexOf('final') >= 0 ? '仕上げ（本画質）'
+    : backend.indexOf('rebuild') >= 0 ? '下書きを作り直しています'
+    : (backend === 'claude' || backend === 'codex') ? ('AIが直しています（' + backend + '）')
+    : '作業しています';
   let line = '<span class=spin></span><b>' + label + '</b>';
-  if (s.started) line += '　' + s.started + ' 開始';
+  if (s.started) line += '　' + s.started + ' 開始' + elapsedOf(s.started);
   if (s.step) line += '　' + s.step;
   let pct = null;
   if (s.total) {
     pct = Math.round(s.done / s.total * 100);
-    line += '　カット ' + s.done + ' / ' + s.total + '（' + pct + '%）';
+    // 🚨 2026-09-10: この数はカットの準備だけを数えている。準備が終わったあとに
+    //    結合・字幕の焼き込み・シートの作り直しが続くので、100%のまま数分止まって
+    //    見えた。数え終わったら「準備は完了」と書き、残りは段階名で示す。
+    if (s.done >= s.total) {
+      line += '　カットの準備は' + s.total + '本とも完了';
+      pct = null;                        // 満タンのバーで「終わった」と誤解させない
+    } else {
+      line += '　カット ' + s.done + ' / ' + s.total + '（' + pct + '%）';
+    }
   }
   line += '　<small>終わるまでページを閉じないでください</small>';
-  el.innerHTML = line + '<div class=bar><i style="width:' + (pct === null ? 3 : pct) + '%"></i></div>';
+  // 🚨 2026-09-10: AIの作業はカット数が出ないので、バーが3%のまま動かず
+  //    「止まっている」ように見えた。カット数が無いときはバーを出さず、
+  //    経過時間と、いまログに出ている最後の行を見せる。
+  if (pct === null) {
+    // AIは終わりが読めないので、いくつ作業したかと、いま触っているものを出す
+    if (s.ai_steps) line += '　' + s.ai_steps + '手め';
+    const tail = String(s.log_tail || '').trim().split('\n').filter(x => x.trim()).pop() || '';
+    el.innerHTML = line + (tail ? '<div class=tail>' + escText(tail.slice(-160)) + '</div>' : '');
+  } else {
+    el.innerHTML = line + '<div class=bar><i style="width:' + pct + '%"></i></div>';
+  }
 }
 
 // 押した直後から出す（サーバーの応答を待たずに反応させる）
@@ -1128,7 +1557,14 @@ function showWorking(s) {
 
 // 開いた時点で既に走っていたら拾う（ページを開き直した場合）
 if (location.protocol.startsWith('http')) {
-  fetch('/status', { cache: 'no-store' }).then(r => r.json()).then(showWorking).catch(() => {});
+  // 🚨 2026-09-10: 読み込み時に1回だけ状態を見て終わっていたので、ページを開き直すと
+  //    そこで見張りが止まり、AIが終わっても帯が出たままになっていた。走っていれば見張る。
+  fetch('/status', { cache: 'no-store' }).then(r => r.json()).then(s => {
+    showWorking(s);
+    markRows(s);
+    if (s.state === 'running' || s.state === 'started' || s.awaiting_answer) watch();
+    else checkStale();
+  }).catch(() => {});
 }
 
 // ── fal の準備（2026-09-04 新設）────────────────────────────
@@ -1392,3 +1828,103 @@ async function askMotion(id, name) {
     ja.focus();
   });
 }
+
+
+// ---- 全編を再生しながら時刻で指摘（保存だけではAIを起動しない） ----
+async function loadTimeNotes() {
+  const response = await fetch('/check/corrections.json', {cache: 'no-store'});
+  if (response.status === 404) { timeNotes = []; return; }
+  if (!response.ok) throw new Error('修正メモの読み込みに失敗');
+  const data = await response.json();
+  timeNotes = (data.corrections || []).filter(item => Number.isFinite(item.time_sec));
+}
+
+(async function setupTimeReview() {
+  const bar = document.getElementById('bar');
+  if (!bar || location.protocol !== 'http:') return;
+  const section = document.createElement('section');
+  section.id = 'time-review';
+  section.setAttribute('aria-label', '試写動画と時刻の指摘');
+  section.innerHTML = '<h2>試写しながら指摘</h2>' +
+    '<video id="review-video" controls playsinline preload="metadata" tabindex="0" aria-label="試写動画"></video>' +
+    '<p><button id="point-time" class="primary" disabled>ここを指摘</button> ' +
+    '<span>プレーヤーにフォーカスして Space：再生・一時停止 ／ Enter：ここを指摘</span></p>' +
+    '<p id="time-status" role="status">読み込み中…</p><ul id="time-notes"></ul>' +
+    '<dialog id="time-dialog"><form id="time-form"><h3 id="time-label"></h3>' +
+    '<label>修正してほしい内容<textarea id="time-note" required></textarea></label>' +
+    '<p id="time-error" role="alert"></p><button type="submit" class="primary">指摘を保存</button> ' +
+    '<button type="button" id="time-cancel">キャンセル</button></form></dialog>';
+  bar.before(section);
+  const video = document.getElementById('review-video');
+  const button = document.getElementById('point-time');
+  const status = document.getElementById('time-status');
+  const dialog = document.getElementById('time-dialog');
+  const form = document.getElementById('time-form');
+  const comment = document.getElementById('time-note');
+  const error = document.getElementById('time-error');
+  let selectedTime = null;
+  let saving = false;
+  function showNotes() {
+    const list = document.getElementById('time-notes');
+    list.replaceChildren();
+    for (const item of timeNotes) {
+      const li = document.createElement('li');
+      li.textContent = item.time_sec.toFixed(2) + '秒 ／ カット ' + item.shot_id + '：' + item.note;
+      list.append(li);
+    }
+  }
+  try {
+    const response = await fetch('/time_review', {cache: 'no-store'});
+    const data = await response.json();
+    if (!response.ok || !data.ok) throw new Error(data.error || '試写情報を取得できません');
+    video.src = data.video_url;
+    await loadTimeNotes();
+    showNotes();
+    if (data.timing_status === 'awaiting_measured_audio') throw new Error('時刻記録はできません（音声未同期）');
+    if (!data.shots.length || data.shots.some(s => !Number.isFinite(s.start_frame) || !Number.isFinite(s.end_frame))) {
+      throw new Error('時刻付きカット表が必要です');
+    }
+    status.textContent = '指摘を保存してから、上部の「送信」でAIに修正を依頼できます。';
+    button.disabled = false;
+    button.addEventListener('click', () => {
+      video.pause();
+      selectedTime = video.currentTime;
+      const matches = data.shots.filter(s => s.start_frame <= selectedTime * 30 && selectedTime * 30 < s.end_frame);
+      if (matches.length !== 1) { status.textContent = 'この時刻に対応するカットを特定できません。'; return; }
+      document.getElementById('time-label').textContent = selectedTime.toFixed(2) + '秒 ／ カット ' + matches[0].id;
+      comment.value = ''; error.textContent = '';
+      dialog.showModal(); comment.focus();
+    });
+    // 動画だけに限定し、入力欄や既存の調整ショートカットを妨げない。
+    video.addEventListener('keydown', event => {
+      if (event.repeat || event.isComposing || event.ctrlKey || event.metaKey || event.altKey) return;
+      if (event.code === 'Space') {
+        event.preventDefault();
+        if (video.paused) video.play().catch(e => { status.textContent = e.message; });
+        else video.pause();
+      } else if (event.key === 'Enter') {
+        event.preventDefault(); button.click();
+      }
+    });
+    document.getElementById('time-cancel').addEventListener('click', () => { if (!saving) dialog.close(); });
+    dialog.addEventListener('cancel', event => { if (saving) event.preventDefault(); });
+    dialog.addEventListener('close', () => video.focus());
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (saving) return;
+      saving = true;
+      const submit = form.querySelector('[type="submit"]');
+      submit.disabled = true; error.textContent = '';
+      try {
+        const response = await fetch('/time_corrections', {method: 'POST', headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({time_sec: selectedTime, note: comment.value})});
+        const result = await response.json();
+        if (!response.ok || !result.ok) throw new Error(result.error || '保存に失敗');
+        timeNotes.push({shot_id: result.shot_id, note: result.note, time_sec: result.time_sec});
+        showNotes(); dialog.close();
+        status.textContent = 'カット ' + result.shot_id + ' の指摘を保存しました。「送信」でAIに依頼できます。';
+      } catch (e) { error.textContent = e.message; }
+      finally { saving = false; submit.disabled = false; }
+    });
+  } catch (e) { status.textContent = e.message; }
+})();
