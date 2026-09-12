@@ -44,9 +44,9 @@
     "asset_file": "check/studio/jobs/20260908151228_body_scene/candidate.png",
     "asset_kind": "image"
   },
-  "state": "review",
+  "state": "adopted",
   "created_at": "2026-09-08T06:12:28.944467+00:00",
-  "updated_at": "2026-09-08T06:12:30.825596+00:00",
+  "updated_at": "2026-09-12T06:19:33.681892+00:00",
   "brief": "body_scene",
   "message": "修正後のカットを確認できます",
   "candidate": "check/studio/jobs/20260908151228_body_scene/candidate.png",
@@ -74,5 +74,49 @@
   "child_pid": null,
   "exit_code": 0,
   "preview": "check/studio/jobs/20260908151228_body_scene/preview.mp4",
-  "edit_layers": null
+  "edit_layers": null,
+  "before_override": {},
+  "before_shot": {
+    "id": 20,
+    "start_frame": 2972,
+    "end_frame": 3179,
+    "asset_id": "ASSET-020",
+    "asset_file": "画像/ASSET-020_実写.png",
+    "asset_kind": "image",
+    "background_file": "画像/ASSET-020-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "おそるおそる近づいてみると、それは無残な夫の姿でした。",
+    "edit_note": "後ろ姿だけで処理し、視線の先は一切映さない。心拍SEを立ち上げる。1〜2秒で次へ。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      486,
+      -57
+    ],
+    "move_sec": 1.4,
+    "base_x": -409,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "adopted_at": "2026-09-12T06:19:33.681868+00:00",
+  "applied_override": {
+    "background_file": "",
+    "speech": "",
+    "telop": "",
+    "question": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "asset_file": "check/studio/jobs/20260908151228_body_scene/candidate.png",
+    "asset_kind": "image"
+  }
 }

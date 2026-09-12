@@ -288,6 +288,15 @@
      "font": "mincho",
      "start": 1.3,
      "end": 2.2666666666666666
+    },
+    {
+     "label": "戸沢村",
+     "x": 640,
+     "y": 360,
+     "size": 36,
+     "start": 0,
+     "end": 3.6,
+     "font": "mincho"
     }
    ]
   },
@@ -296,8 +305,8 @@
    "start_frame": 1198,
    "end_frame": 1386,
    "asset_id": "ASSET-009",
-   "asset_file": "check/studio/jobs/20260908142125_363e9ff7/candidate.png",
-   "asset_kind": "image",
+   "asset_file": "check/studio/jobs/20260912144547_c89b291f/source.mp4",
+   "asset_kind": "video",
    "background_file": "",
    "reused": false,
    "style": "",
@@ -457,14 +466,14 @@
    "style": "",
    "narration": "奥さんは夕方には戻ってくるだろうと思い、そのまま見送ることに。",
    "edit_note": "CHAR-02を画面手前に置き、背景の道だけをわずかにズームイン（4秒で1.0→1.08）。BGMはまだ入れない。",
-   "speech": "",
-   "motion": "walk_cross",
+   "speech": "すぐ帰って\nくるでしょ",
+   "motion": "still",
    "drift": [
     -307,
     -28
    ],
    "move_sec": 3.1,
-   "base_x": -188,
+   "base_x": -406,
    "pan": "",
    "mono": false,
    "haze": false,
@@ -475,7 +484,27 @@
    "part": "",
    "section": "1. 全素材リスト（台本順）",
    "same_as_prev": false,
-   "base_y": 10
+   "base_y": 40,
+   "speech_segments": [
+    {
+     "text": "すぐ帰って\nくるでしょ",
+     "start": 0.5,
+     "end": 5.833333333333333
+    }
+   ],
+   "motion_path": null,
+   "character_position": [
+    239,
+    272
+   ],
+   "speech_position": [
+    561,
+    192
+   ],
+   "bubble_dx": 322,
+   "bubble_dy": -80,
+   "tail_tip_dx": 117,
+   "tail_tip_dy": -17
   },
   {
    "id": 15,
@@ -682,9 +711,9 @@
    "start_frame": 2972,
    "end_frame": 3179,
    "asset_id": "ASSET-020",
-   "asset_file": "画像/ASSET-020_実写.png",
+   "asset_file": "check/studio/jobs/20260908151228_body_scene/candidate.png",
    "asset_kind": "image",
-   "background_file": "画像/ASSET-020-1.png",
+   "background_file": "",
    "reused": false,
    "style": "",
    "narration": "おそるおそる近づいてみると、それは無残な夫の姿でした。",
@@ -706,7 +735,8 @@
    "thought": false,
    "part": "",
    "section": "1. 全素材リスト（台本順）",
-   "same_as_prev": false
+   "same_as_prev": false,
+   "motion_path": null
   },
   {
    "id": 21,
