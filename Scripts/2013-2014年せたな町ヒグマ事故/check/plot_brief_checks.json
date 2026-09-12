@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "chapters_28": true,
+    "total_8800_9000": true,
+    "intro_200_270": true,
+    "front_peak_20_35": true,
+    "back_peak_55_70": true,
+    "bottom_75_80_sho": true,
+    "all_facts_exist": true,
+    "density_at_most_120": true,
+    "ending_300_and_shorter": true
+  },
+  "pass": true,
+  "max_chars_per_fact": 120.0,
+  "used_facts": 79,
+  "note": "全値は執筆前の設計。本文実測ではない。"
+}

@@ -1,7 +1,7 @@
 {
   "schema": "yama.shots/1",
   "title": "1988年戸沢村ツキノワグマ食害事件",
-  "video": "check/studio/jobs/20260912181818_9b210ab1/full_下書き.mp4",
+  "video": "check/studio/jobs/20260912211703_8793e7a7/full_下書き.mp4",
   "fps": 30.0,
   "total_frames": 50716,
   "generated_at": "2026-09-11T23:27:57+09:00",
@@ -782,12 +782,12 @@
       "map_pins": [
         {
           "label": "集落",
-          "x": 315,
+          "x": 316,
           "y": 414,
           "size": 36,
           "start": 0,
           "end": 4.266666666666667,
-          "font": "mincho"
+          "font": "rounded"
         },
         {
           "label": "現場",
@@ -796,7 +796,7 @@
           "size": 36,
           "start": 0,
           "end": 4.266666666666667,
-          "font": "mincho"
+          "font": "rounded"
         }
       ],
       "motion_path": null,
@@ -804,14 +804,14 @@
         {
           "type": "text",
           "text": "約500〜600m上流",
-          "x": 532,
-          "y": 205,
+          "x": 549,
+          "y": 262,
           "size": 36,
           "start": 0,
           "end": 4.266666666666667,
           "anim": "none",
           "font": "rounded",
-          "angle": -19.41,
+          "angle": -18,
           "color": "#FFFFFF",
           "length": 300,
           "thickness": 8,
@@ -829,16 +829,16 @@
           "h": 140,
           "thickness": 6,
           "color": "#fff700",
-          "angle": -20,
-          "x": 547,
-          "y": 281,
+          "angle": 163.5,
+          "x": 569,
+          "y": 332,
           "start": 0,
           "end": 4.266666666666667,
           "anim": "fade",
           "arrow_heads": "both",
           "font": "rounded",
           "size": 48,
-          "length": 450
+          "length": 395
         }
       ]
     },

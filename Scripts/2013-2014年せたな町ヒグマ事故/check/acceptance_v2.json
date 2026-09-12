@@ -1,0 +1,25 @@
+{
+  "total_chars": 8564,
+  "parts_chars": {
+    "KI": 735,
+    "SHO": 6877,
+    "TEN-KETSU": 952
+  },
+  "parts_percent": {
+    "KI": 8.58,
+    "SHO": 80.3,
+    "TEN-KETSU": 11.12
+  },
+  "intro_chars": 256,
+  "hook_image_chars": 111,
+  "questions": 2,
+  "closing": "地形図とともに解説します。",
+  "placeholder_count": 0,
+  "victim_realname_count": 0,
+  "victim_realname_check": "全ナレーションの人物呼称を5周で目視確認。52歳の女性、45歳の女性、夫、同行男性のみ。",
+  "design_unchanged": true,
+  "design_total": 8900,
+  "chapter_order": "original_restored",
+  "five_pass_exit": 0,
+  "master_sha256": "0488a59f1d7d74adacee0b9f391acc6fb057f5bdd6c53c24abfe9fa96e0a7b75"
+}

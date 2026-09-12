@@ -1,0 +1,31 @@
+{
+  "video": "check/studio/jobs/20260912211547_aa0b6e0a/quality/media/preview.mp4",
+  "video_sha256": "3f0d6fb67071c3c187d948a91f3b5c0b99a8ad4883b1a4322fa178154c4592a0",
+  "duration": 4.27,
+  "frames": [
+    {
+      "time": 0.1,
+      "file": "check/studio/jobs/20260912211547_aa0b6e0a/quality/media/frame-00.jpg"
+    },
+    {
+      "time": 2.1333,
+      "file": "check/studio/jobs/20260912211547_aa0b6e0a/quality/media/frame-01.jpg"
+    },
+    {
+      "time": 4.2,
+      "file": "check/studio/jobs/20260912211547_aa0b6e0a/quality/media/frame-02.jpg"
+    }
+  ],
+  "checks": [
+    {
+      "requirement": "A カット尺",
+      "passed": true,
+      "evidence": "合成動画 4.270秒 / 指定 4.267秒"
+    },
+    {
+      "requirement": "E 静止画は動かさない",
+      "passed": null,
+      "evidence": "合成レイヤーの変化または標本不足のためフレーム差分で断定しない"
+    }
+  ]
+}

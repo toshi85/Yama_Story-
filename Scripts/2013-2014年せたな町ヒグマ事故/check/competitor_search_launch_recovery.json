@@ -1,0 +1,6 @@
+{
+  "pid": 10288,
+  "time": 1789215836.946738,
+  "reason": "初回nohup起動はstate.json作成前に終了、ログ0バイト、PID不存在。独立セッションで再起動。検索APIの再送ではない。",
+  "mechanism": "nohup + subprocess.Popen(start_new_session=True), stdout/stderr to runner log"
+}

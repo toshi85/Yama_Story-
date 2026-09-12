@@ -1,0 +1,50 @@
+{
+  "checked_at": 1789220625.277371,
+  "production_complete": false,
+  "work_running": false,
+  "items": [
+    {
+      "id": "edit",
+      "title": "指定修正・章順検証",
+      "status": "complete",
+      "reason": "完了証拠を保存済み",
+      "owner": "Codex"
+    },
+    {
+      "id": "checks",
+      "title": "9本検査",
+      "status": "complete",
+      "reason": "完了証拠を保存済み",
+      "owner": "Codex"
+    },
+    {
+      "id": "five",
+      "title": "全文5周",
+      "status": "complete",
+      "reason": "完了証拠を保存済み",
+      "owner": "Codex"
+    },
+    {
+      "id": "gemini",
+      "title": "Gemini v2と差分",
+      "status": "complete",
+      "reason": "完了証拠を保存済み",
+      "owner": "Codex"
+    },
+    {
+      "id": "report",
+      "title": "検収報告",
+      "status": "complete",
+      "reason": "完了証拠を保存済み",
+      "owner": "Codex"
+    },
+    {
+      "id": "human_final",
+      "title": "全体の最終判定・Gemini指摘採否",
+      "status": "waiting_external",
+      "reason": "保存済みの本文と指摘_v2を確認",
+      "owner": "Claude Code／人間"
+    }
+  ],
+  "remaining": 1
+}

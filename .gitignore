@@ -60,3 +60,5 @@ Scripts/*/check/**/*.mp4
 Scripts/*/check/**/*.wav
 Scripts/*/check/**/*.png
 Scripts/*/.render_cache/
+
+Analytics/topic_screening_2026-09-12/*.html

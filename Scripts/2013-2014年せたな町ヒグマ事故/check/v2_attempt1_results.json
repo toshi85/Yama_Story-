@@ -1,0 +1,47 @@
+[
+  {
+    "tool": "validate_yama_safety",
+    "exit": 1,
+    "last": "Line 512: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form."
+  },
+  {
+    "tool": "validate_yama_structure",
+    "exit": 1,
+    "last": "[BLOCKADE]: NG Words or Pronouns detected."
+  },
+  {
+    "tool": "validate_yama_narrative",
+    "exit": 0,
+    "last": "============================================================"
+  },
+  {
+    "tool": "validate_yama_facts",
+    "exit": 0,
+    "last": "[PASS] 出典なしの断定はありません"
+  },
+  {
+    "tool": "audit_numeric_facts",
+    "exit": 0,
+    "last": "    [src: デイリー新潮 §6]   ← インラインタグも可"
+  },
+  {
+    "tool": "validate_yama_intro",
+    "exit": 1,
+    "last": "=============================================================="
+  },
+  {
+    "tool": "validate_yama_consistency",
+    "exit": 1,
+    "last": "[FAIL] 1件。3つの資料が食い違ったままPhase2に進むと必ず事故る"
+  },
+  {
+    "tool": "validate_yama_coherence",
+    "exit": 1,
+    "last": "[FAIL] 2件。資料を並べただけになっている箇所があります"
+  },
+  {
+    "tool": "validate_yama_plot",
+    "exit": 1,
+    "last": "[FAIL] プロットを直してから執筆に入ること。9,000字書いてから直すより安い"
+  }
+]

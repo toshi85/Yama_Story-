@@ -1,0 +1,4 @@
+(version 1)
+(allow default)
+(deny file-write*)
+(allow file-write* (subpath "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014\u5e74\u305b\u305f\u306a\u753a\u30d2\u30b0\u30de\u4e8b\u6545") (literal "/dev/null") (literal "/dev/tty"))

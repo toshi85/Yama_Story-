@@ -1,0 +1,13 @@
+{
+  "status": "retrieval_complete_review_required",
+  "pid": 10288,
+  "started_at": "2026-09-12T12:23:56.986334+00:00",
+  "query_index": 4,
+  "worker_pid": null,
+  "completed_queries": 4,
+  "next_action": "検索終了後、Codexが同一事件の有無を判定し、Layer 0・Master.md執筆・9検査・全文5周・Gemini台本レビューへ進む",
+  "current_query": "今金町 ヒグマ 捕獲 DNA",
+  "updated_at": "2026-09-12T12:25:44.496498+00:00",
+  "exit_code": 0,
+  "ended_at": "2026-09-12T12:25:44.496859+00:00"
+}

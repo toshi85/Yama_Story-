@@ -1,0 +1,20 @@
+{
+  "checked_at": 1789215857.656374,
+  "state": {
+    "status": "running",
+    "pid": 10288,
+    "started_at": "2026-09-12T12:23:56.986334+00:00",
+    "query_index": 1,
+    "worker_pid": 10289,
+    "completed_queries": 0,
+    "next_action": "検索終了後、Codexが同一事件の有無を判定し、Layer 0・Master.md執筆・9検査・全文5周・Gemini台本レビューへ進む",
+    "current_query": "せたな町 ヒグマ",
+    "updated_at": "2026-09-12T12:23:56.990486+00:00"
+  },
+  "runner_ps": "10288 /opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -B /Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/run_competitor_search.py\n",
+  "worker_ps": "10289 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python /Users/tosimasa/Library/Python/3.9/bin/yt-dlp --extractor-args youtube:player_client=android --skip-download --dump-single-json --ignore-no-formats-error --no-progress --no-cache-dir --retries 0 --extractor-retries 0 --socket-timeout 20 ytsearch20:せたな町 ヒグマ\n",
+  "runner_alive": true,
+  "worker_alive": true,
+  "log_bytes": 39,
+  "log_mtime": 1789215836.9871292
+}

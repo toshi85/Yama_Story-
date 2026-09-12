@@ -1,0 +1,550 @@
+{
+  "kind": "adjust",
+  "requested_kind": "adjust",
+  "shot_id": 21,
+  "brief": "カット内の位置・文言・人物の動きをまとめて編集",
+  "target": "asset",
+  "prompt": "",
+  "patch": {
+    "narration": "集落から500〜600メートルほど\n離れた付近。",
+    "asset_file": "check/studio/jobs/20260908163603_final_21/candidate.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "telops": [],
+    "map_pins": [
+      {
+        "label": "集落",
+        "x": 316,
+        "y": 414,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "font": "rounded"
+      },
+      {
+        "label": "現場",
+        "x": 781,
+        "y": 288,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "font": "rounded"
+      }
+    ],
+    "overlays": [
+      {
+        "type": "text",
+        "text": "約500〜600m上流",
+        "x": 549,
+        "y": 262,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "anim": "none",
+        "font": "rounded",
+        "angle": -18,
+        "color": "#FFFFFF",
+        "length": 300,
+        "thickness": 8,
+        "w": 240,
+        "h": 140,
+        "shape": "ellipse",
+        "style": "outline",
+        "arrow_heads": "one"
+      },
+      {
+        "type": "arrow",
+        "shape": "rect",
+        "style": "outline",
+        "w": 240,
+        "h": 140,
+        "thickness": 6,
+        "color": "#fff700",
+        "angle": 163.5,
+        "x": 569,
+        "y": 332,
+        "start": 0,
+        "end": 4.266666666666667,
+        "anim": "fade",
+        "arrow_heads": "both",
+        "font": "rounded",
+        "size": 48,
+        "length": 395
+      }
+    ]
+  },
+  "auto_adopt": true,
+  "id": "20260912211547_aa0b6e0a",
+  "state": "adopted",
+  "created_at": "2026-09-12T12:15:47.857431+00:00",
+  "updated_at": "2026-09-12T12:16:59.289040+00:00",
+  "message": "修正後のカットを確認できます",
+  "shot": {
+    "id": 21,
+    "start_frame": 3179,
+    "end_frame": 3307,
+    "asset_id": "ASSET-021",
+    "asset_file": "check/studio/jobs/20260908163603_final_21/candidate.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "集落から500〜600メートルほど\n離れた付近。",
+    "edit_note": "集落に「神田地区」ラベル。集落を中心に半径600mの白い円を描き「約500〜600m 上流」と表示。第1の現場の正確な位置は非公表のため、ピンは打たず円と矢印だけで示す。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false,
+    "map_pins": [
+      {
+        "label": "集落",
+        "x": 315,
+        "y": 414,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "font": "mincho"
+      },
+      {
+        "label": "現場",
+        "x": 781,
+        "y": 288,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "font": "mincho"
+      }
+    ],
+    "motion_path": null,
+    "overlays": [
+      {
+        "type": "text",
+        "text": "約500〜600m上流",
+        "x": 532,
+        "y": 205,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "anim": "none",
+        "font": "rounded",
+        "angle": -19.41,
+        "color": "#FFFFFF",
+        "length": 300,
+        "thickness": 8,
+        "w": 240,
+        "h": 140,
+        "shape": "ellipse",
+        "style": "outline",
+        "arrow_heads": "one"
+      },
+      {
+        "type": "arrow",
+        "shape": "rect",
+        "style": "outline",
+        "w": 240,
+        "h": 140,
+        "thickness": 6,
+        "color": "#fff700",
+        "angle": -20,
+        "x": 547,
+        "y": 281,
+        "start": 0,
+        "end": 4.266666666666667,
+        "anim": "fade",
+        "arrow_heads": "both",
+        "font": "rounded",
+        "size": 48,
+        "length": 450
+      }
+    ]
+  },
+  "quality_checks": true,
+  "worker_pid": 4184,
+  "started_at": "2026-09-12T12:15:47.943785+00:00",
+  "progress": {
+    "stage": "編集用レイヤーの保存・確認",
+    "index": 2,
+    "total": 2
+  },
+  "input_sha256": "143a1ba20b4bb44063a507a5f0acce9c26cf21dca244dc252a20bb389adcbd7e",
+  "explanation": "カット内の位置・文言・人物の動きをまとめて編集",
+  "rendered_override": {
+    "narration": "集落から500〜600メートルほど\n離れた付近。",
+    "asset_file": "check/studio/jobs/20260908163603_final_21/candidate.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "telops": [],
+    "map_pins": [
+      {
+        "label": "集落",
+        "x": 316,
+        "y": 414,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "font": "rounded"
+      },
+      {
+        "label": "現場",
+        "x": 781,
+        "y": 288,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "font": "rounded"
+      }
+    ],
+    "overlays": [
+      {
+        "type": "text",
+        "text": "約500〜600m上流",
+        "x": 549,
+        "y": 262,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "anim": "none",
+        "font": "rounded",
+        "angle": -18,
+        "color": "#FFFFFF",
+        "length": 300,
+        "thickness": 8,
+        "w": 240,
+        "h": 140,
+        "shape": "ellipse",
+        "style": "outline",
+        "arrow_heads": "one"
+      },
+      {
+        "type": "arrow",
+        "shape": "rect",
+        "style": "outline",
+        "w": 240,
+        "h": 140,
+        "thickness": 6,
+        "color": "#fff700",
+        "angle": 163.5,
+        "x": 569,
+        "y": 332,
+        "start": 0,
+        "end": 4.266666666666667,
+        "anim": "fade",
+        "arrow_heads": "both",
+        "font": "rounded",
+        "size": 48,
+        "length": 395
+      }
+    ]
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "21",
+    "--override",
+    "{\"narration\": \"集落から500〜600メートルほど\\n離れた付近。\", \"asset_file\": \"check/studio/jobs/20260908163603_final_21/candidate.png\", \"asset_kind\": \"image\", \"background_file\": \"\", \"speech\": \"\", \"motion\": \"still\", \"motion_path\": null, \"same_as_prev\": false, \"pan\": \"\", \"telops\": [], \"map_pins\": [{\"label\": \"集落\", \"x\": 316, \"y\": 414, \"size\": 36, \"start\": 0, \"end\": 4.266666666666667, \"font\": \"rounded\"}, {\"label\": \"現場\", \"x\": 781, \"y\": 288, \"size\": 36, \"start\": 0, \"end\": 4.266666666666667, \"font\": \"rounded\"}], \"overlays\": [{\"type\": \"text\", \"text\": \"約500〜600m上流\", \"x\": 549, \"y\": 262, \"size\": 36, \"start\": 0, \"end\": 4.266666666666667, \"anim\": \"none\", \"font\": \"rounded\", \"angle\": -18, \"color\": \"#FFFFFF\", \"length\": 300, \"thickness\": 8, \"w\": 240, \"h\": 140, \"shape\": \"ellipse\", \"style\": \"outline\", \"arrow_heads\": \"one\"}, {\"type\": \"arrow\", \"shape\": \"rect\", \"style\": \"outline\", \"w\": 240, \"h\": 140, \"thickness\": 6, \"color\": \"#fff700\", \"angle\": 163.5, \"x\": 569, \"y\": 332, \"start\": 0, \"end\": 4.266666666666667, \"anim\": \"fade\", \"arrow_heads\": \"both\", \"font\": \"rounded\", \"size\": 48, \"length\": 395}]}"
+  ],
+  "command_started_at": "2026-09-12T12:15:47.953746+00:00",
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260912211547_aa0b6e0a/preview.mp4",
+  "edit_layers": null,
+  "quality_review": {
+    "status": "media_checked",
+    "media": {
+      "video": "check/studio/jobs/20260912211547_aa0b6e0a/quality/media/preview.mp4",
+      "video_sha256": "3f0d6fb67071c3c187d948a91f3b5c0b99a8ad4883b1a4322fa178154c4592a0",
+      "duration": 4.27,
+      "frames": [
+        {
+          "time": 0.1,
+          "file": "check/studio/jobs/20260912211547_aa0b6e0a/quality/media/frame-00.jpg"
+        },
+        {
+          "time": 2.1333,
+          "file": "check/studio/jobs/20260912211547_aa0b6e0a/quality/media/frame-01.jpg"
+        },
+        {
+          "time": 4.2,
+          "file": "check/studio/jobs/20260912211547_aa0b6e0a/quality/media/frame-02.jpg"
+        }
+      ],
+      "checks": [
+        {
+          "requirement": "A カット尺",
+          "passed": true,
+          "evidence": "合成動画 4.270秒 / 指定 4.267秒"
+        },
+        {
+          "requirement": "E 静止画は動かさない",
+          "passed": null,
+          "evidence": "合成レイヤーの変化または標本不足のためフレーム差分で断定しない"
+        }
+      ]
+    }
+  },
+  "before_override": {
+    "narration": "集落から500〜600メートルほど\n離れた付近。",
+    "asset_file": "check/studio/jobs/20260908163603_final_21/candidate.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "telops": [],
+    "map_pins": [
+      {
+        "label": "集落",
+        "x": 315,
+        "y": 414,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "font": "mincho"
+      },
+      {
+        "label": "現場",
+        "x": 781,
+        "y": 288,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "font": "mincho"
+      }
+    ],
+    "overlays": [
+      {
+        "type": "text",
+        "text": "約500〜600m上流",
+        "x": 532,
+        "y": 205,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "anim": "none",
+        "font": "rounded",
+        "angle": -19.41,
+        "color": "#FFFFFF",
+        "length": 300,
+        "thickness": 8,
+        "w": 240,
+        "h": 140,
+        "shape": "ellipse",
+        "style": "outline",
+        "arrow_heads": "one"
+      },
+      {
+        "type": "arrow",
+        "shape": "rect",
+        "style": "outline",
+        "w": 240,
+        "h": 140,
+        "thickness": 6,
+        "color": "#fff700",
+        "angle": -20,
+        "x": 547,
+        "y": 281,
+        "start": 0,
+        "end": 4.266666666666667,
+        "anim": "fade",
+        "arrow_heads": "both",
+        "font": "rounded",
+        "size": 48,
+        "length": 450
+      }
+    ]
+  },
+  "before_shot": {
+    "id": 21,
+    "start_frame": 3179,
+    "end_frame": 3307,
+    "asset_id": "ASSET-021",
+    "asset_file": "check/studio/jobs/20260908163603_final_21/candidate.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "集落から500〜600メートルほど\n離れた付近。",
+    "edit_note": "集落に「神田地区」ラベル。集落を中心に半径600mの白い円を描き「約500〜600m 上流」と表示。第1の現場の正確な位置は非公表のため、ピンは打たず円と矢印だけで示す。",
+    "speech": "",
+    "motion": "still",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false,
+    "map_pins": [
+      {
+        "label": "集落",
+        "x": 315,
+        "y": 414,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "font": "mincho"
+      },
+      {
+        "label": "現場",
+        "x": 781,
+        "y": 288,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "font": "mincho"
+      }
+    ],
+    "motion_path": null,
+    "overlays": [
+      {
+        "type": "text",
+        "text": "約500〜600m上流",
+        "x": 532,
+        "y": 205,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "anim": "none",
+        "font": "rounded",
+        "angle": -19.41,
+        "color": "#FFFFFF",
+        "length": 300,
+        "thickness": 8,
+        "w": 240,
+        "h": 140,
+        "shape": "ellipse",
+        "style": "outline",
+        "arrow_heads": "one"
+      },
+      {
+        "type": "arrow",
+        "shape": "rect",
+        "style": "outline",
+        "w": 240,
+        "h": 140,
+        "thickness": 6,
+        "color": "#fff700",
+        "angle": -20,
+        "x": 547,
+        "y": 281,
+        "start": 0,
+        "end": 4.266666666666667,
+        "anim": "fade",
+        "arrow_heads": "both",
+        "font": "rounded",
+        "size": 48,
+        "length": 450
+      }
+    ]
+  },
+  "adopted_at": "2026-09-12T12:16:59.289009+00:00",
+  "applied_override": {
+    "narration": "集落から500〜600メートルほど\n離れた付近。",
+    "asset_file": "check/studio/jobs/20260908163603_final_21/candidate.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "pan": "",
+    "telops": [],
+    "map_pins": [
+      {
+        "label": "集落",
+        "x": 316,
+        "y": 414,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "font": "rounded"
+      },
+      {
+        "label": "現場",
+        "x": 781,
+        "y": 288,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "font": "rounded"
+      }
+    ],
+    "overlays": [
+      {
+        "type": "text",
+        "text": "約500〜600m上流",
+        "x": 549,
+        "y": 262,
+        "size": 36,
+        "start": 0,
+        "end": 4.266666666666667,
+        "anim": "none",
+        "font": "rounded",
+        "angle": -18,
+        "color": "#FFFFFF",
+        "length": 300,
+        "thickness": 8,
+        "w": 240,
+        "h": 140,
+        "shape": "ellipse",
+        "style": "outline",
+        "arrow_heads": "one"
+      },
+      {
+        "type": "arrow",
+        "shape": "rect",
+        "style": "outline",
+        "w": 240,
+        "h": 140,
+        "thickness": 6,
+        "color": "#fff700",
+        "angle": 163.5,
+        "x": 569,
+        "y": 332,
+        "start": 0,
+        "end": 4.266666666666667,
+        "anim": "fade",
+        "arrow_heads": "both",
+        "font": "rounded",
+        "size": 48,
+        "length": 395
+      }
+    ]
+  }
+}

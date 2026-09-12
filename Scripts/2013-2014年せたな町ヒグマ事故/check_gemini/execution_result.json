@@ -1,0 +1,68 @@
+{
+  "review_exit_code": 0,
+  "unused_exit_code": 0,
+  "rounds": [
+    {
+      "pass": 1,
+      "items": 5,
+      "cost_jpy": 3.1,
+      "usage": {
+        "promptTokenCount": 13595,
+        "candidatesTokenCount": 626,
+        "totalTokenCount": 16395,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 13595
+          }
+        ],
+        "thoughtsTokenCount": 2174,
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "pass": 2,
+      "items": 4,
+      "cost_jpy": 3.55,
+      "usage": {
+        "promptTokenCount": 13586,
+        "candidatesTokenCount": 556,
+        "totalTokenCount": 17185,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 13586
+          }
+        ],
+        "thoughtsTokenCount": 3043,
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "pass": 3,
+      "items": 5,
+      "cost_jpy": 3.06,
+      "usage": {
+        "promptTokenCount": 14199,
+        "candidatesTokenCount": 701,
+        "totalTokenCount": 16802,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 14199
+          }
+        ],
+        "thoughtsTokenCount": 1902,
+        "serviceTier": "standard"
+      }
+    }
+  ],
+  "total_items": 14,
+  "cost_jpy": 9.72,
+  "cost_basis": "API返却の実測トークン数 × 既存スクリプト料金表。USDJPY=150。請求書実額ではない。",
+  "model": "gemini-3.8-flash",
+  "unused_items": 0,
+  "input_unchanged": true,
+  "completed_at": "2026-09-12T22:01:25.038049",
+  "human_adoption": "未判定。本文への自動反映なし。"
+}

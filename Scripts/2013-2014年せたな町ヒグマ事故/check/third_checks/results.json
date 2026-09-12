@@ -1,0 +1,105 @@
+{
+  "input_sha256": "df8a429d0e80e8b6c64c2aa74d4fb6604fc0563fb71f585d2c0607ff9a7d8ad0",
+  "checked_at": "2026-09-12T21:44:51.223118",
+  "results": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_safety.py",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+      ],
+      "exit_code": 0,
+      "last_line": "[SUCCESS]: No Safety or Style Issues Found.",
+      "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/third_checks/validate_yama_safety.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_structure.py",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+      ],
+      "exit_code": 0,
+      "last_line": "[PASSED]: VALIDATION PASSED. Golden Ratio (1:8:1) Achieved.",
+      "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/third_checks/validate_yama_structure.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_narrative.py",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+      ],
+      "exit_code": 0,
+      "last_line": "============================================================",
+      "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/third_checks/validate_yama_narrative.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_facts.py",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+      ],
+      "exit_code": 0,
+      "last_line": "[PASS] 出典なしの断定はありません",
+      "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/third_checks/validate_yama_facts.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/audit_numeric_facts.py",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+      ],
+      "exit_code": 0,
+      "last_line": "    [src: デイリー新潮 §6]   ← インラインタグも可",
+      "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/third_checks/audit_numeric_facts.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_intro.py",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+      ],
+      "exit_code": 0,
+      "last_line": "==============================================================",
+      "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/third_checks/validate_yama_intro.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_consistency.py",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+      ],
+      "exit_code": 0,
+      "last_line": "[PASS] 台本・プロット表・素材シートは整合しています",
+      "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/third_checks/validate_yama_consistency.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_coherence.py",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+      ],
+      "exit_code": 0,
+      "last_line": "[PASS with warnings] FAIL はありません",
+      "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/third_checks/validate_yama_coherence.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_plot.py",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Plot_Sheet_せたな町.md"
+      ],
+      "exit_code": 0,
+      "last_line": "[PASS] プロットは基準を満たしています。執筆に進んでよい（WARN 1件は確認）",
+      "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/third_checks/validate_yama_plot.log"
+    }
+  ]
+}

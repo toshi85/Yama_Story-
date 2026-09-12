@@ -1,0 +1,57 @@
+{
+  "checked_at": 1789218158.5680552,
+  "production_complete": false,
+  "work_running": false,
+  "items": [
+    {
+      "id": "plot",
+      "title": "プロット表作成・検査・設計凍結",
+      "status": "complete",
+      "reason": "",
+      "owner": "Codex"
+    },
+    {
+      "id": "competitor_search",
+      "title": "指定4検索・上位20件取得と同一事件判定",
+      "status": "complete",
+      "reason": "背景検索の出力・終了コードを確認し同一事件判定",
+      "owner": "Codex"
+    },
+    {
+      "id": "writing",
+      "title": "Master.md執筆",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "checks",
+      "title": "指定9本の全検査",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "five_pass",
+      "title": "全文文章チェック5周",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "gemini",
+      "title": "Geminiレビュー・未使用素材抽出",
+      "status": "complete",
+      "reason": "レビュー取得・未使用素材抽出は完了。採否は人へ。",
+      "owner": "Codex"
+    },
+    {
+      "id": "human",
+      "title": "Gemini指摘の採否・人間最終確認",
+      "status": "waiting_external",
+      "reason": "ブリーフDにより14件の指摘の採否と最終確認をClaude Code／本人が実施。",
+      "owner": "Claude／本人"
+    }
+  ],
+  "remaining": 1
+}

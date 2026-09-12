@@ -1,0 +1,24 @@
+{
+  "input_sha256": "e507836ae5db578d1ad131f5f22a6472fa2fd9e2665323527aa4759a9b2d5807",
+  "validators_all_exit_zero": true,
+  "validator_count": 9,
+  "narration_characters": 8770,
+  "ratios": {
+    "KI": 8.347,
+    "SHO": 80.479,
+    "TEN-KETSU": 11.174
+  },
+  "intro_characters": 236,
+  "intro_questions": 2,
+  "intro_closing": "地形図とともに解説します。",
+  "chapter_count": 28,
+  "chapters_missing_src": [],
+  "cited_fact_ids": 79,
+  "nonexistent_fact_ids": [],
+  "victim_real_name_count": 0,
+  "victim_name_check": "全ナレーション5周の目視。52歳の女性・45歳の女性・夫・同行の男性という属性で記述。",
+  "placeholder_count": 0,
+  "grep_exit_code": 1,
+  "design_chars_frozen": 8900,
+  "five_passes": 5
+}

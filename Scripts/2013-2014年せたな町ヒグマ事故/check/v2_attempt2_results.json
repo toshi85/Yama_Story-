@@ -1,0 +1,146 @@
+[
+  {
+    "tool": "validate_yama_safety",
+    "exit": 0,
+    "last": "[SUCCESS]: No Safety or Style Issues Found.",
+    "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_attempt2_validate_yama_safety.log",
+    "argv": [
+      "python3",
+      "-B",
+      "-c",
+      "import builtins,runpy,sys; original=builtins.open; src,dst,script,target=sys.argv[1:]; builtins.open=lambda file,*a,**kw:original(dst if str(file)==src else file,*a,**kw); sys.argv=[script,target]; runpy.run_path(script,run_name='__main__')",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/yama_safety_validation.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_safety_append.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_safety.py",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+    ]
+  },
+  {
+    "tool": "validate_yama_structure",
+    "exit": 1,
+    "last": "[FAILED]: VALIDATION FAILED. Please resize sections to match the Golden Ratio.",
+    "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_attempt2_validate_yama_structure.log",
+    "argv": [
+      "python3",
+      "-B",
+      "-c",
+      "import builtins,runpy,sys; original=builtins.open; src,dst,script,target=sys.argv[1:]; builtins.open=lambda file,*a,**kw:original(dst if str(file)==src else file,*a,**kw); sys.argv=[script,target]; runpy.run_path(script,run_name='__main__')",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/yama_safety_validation.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_safety_append.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_structure.py",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+    ]
+  },
+  {
+    "tool": "validate_yama_narrative",
+    "exit": 0,
+    "last": "============================================================",
+    "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_attempt2_validate_yama_narrative.log",
+    "argv": [
+      "python3",
+      "-B",
+      "-c",
+      "import builtins,runpy,sys; original=builtins.open; src,dst,script,target=sys.argv[1:]; builtins.open=lambda file,*a,**kw:original(dst if str(file)==src else file,*a,**kw); sys.argv=[script,target]; runpy.run_path(script,run_name='__main__')",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/yama_safety_validation.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_safety_append.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_narrative.py",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+    ]
+  },
+  {
+    "tool": "validate_yama_facts",
+    "exit": 0,
+    "last": "[PASS] 出典なしの断定はありません",
+    "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_attempt2_validate_yama_facts.log",
+    "argv": [
+      "python3",
+      "-B",
+      "-c",
+      "import builtins,runpy,sys; original=builtins.open; src,dst,script,target=sys.argv[1:]; builtins.open=lambda file,*a,**kw:original(dst if str(file)==src else file,*a,**kw); sys.argv=[script,target]; runpy.run_path(script,run_name='__main__')",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/yama_safety_validation.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_safety_append.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_facts.py",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+    ]
+  },
+  {
+    "tool": "audit_numeric_facts",
+    "exit": 0,
+    "last": "    [src: デイリー新潮 §6]   ← インラインタグも可",
+    "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_attempt2_audit_numeric_facts.log",
+    "argv": [
+      "python3",
+      "-B",
+      "-c",
+      "import builtins,runpy,sys; original=builtins.open; src,dst,script,target=sys.argv[1:]; builtins.open=lambda file,*a,**kw:original(dst if str(file)==src else file,*a,**kw); sys.argv=[script,target]; runpy.run_path(script,run_name='__main__')",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/yama_safety_validation.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_safety_append.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/audit_numeric_facts.py",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+    ]
+  },
+  {
+    "tool": "validate_yama_intro",
+    "exit": 1,
+    "last": "==============================================================",
+    "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_attempt2_validate_yama_intro.log",
+    "argv": [
+      "python3",
+      "-B",
+      "-c",
+      "import builtins,runpy,sys; original=builtins.open; src,dst,script,target=sys.argv[1:]; builtins.open=lambda file,*a,**kw:original(dst if str(file)==src else file,*a,**kw); sys.argv=[script,target]; runpy.run_path(script,run_name='__main__')",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/yama_safety_validation.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_safety_append.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_intro.py",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+    ]
+  },
+  {
+    "tool": "validate_yama_consistency",
+    "exit": 1,
+    "last": "[FAIL] 1件。3つの資料が食い違ったままPhase2に進むと必ず事故る",
+    "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_attempt2_validate_yama_consistency.log",
+    "argv": [
+      "python3",
+      "-B",
+      "-c",
+      "import builtins,runpy,sys; original=builtins.open; src,dst,script,target=sys.argv[1:]; builtins.open=lambda file,*a,**kw:original(dst if str(file)==src else file,*a,**kw); sys.argv=[script,target]; runpy.run_path(script,run_name='__main__')",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/yama_safety_validation.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_safety_append.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_consistency.py",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+    ]
+  },
+  {
+    "tool": "validate_yama_coherence",
+    "exit": 0,
+    "last": "[PASS with warnings] FAIL はありません",
+    "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_attempt2_validate_yama_coherence.log",
+    "argv": [
+      "python3",
+      "-B",
+      "-c",
+      "import builtins,runpy,sys; original=builtins.open; src,dst,script,target=sys.argv[1:]; builtins.open=lambda file,*a,**kw:original(dst if str(file)==src else file,*a,**kw); sys.argv=[script,target]; runpy.run_path(script,run_name='__main__')",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/yama_safety_validation.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_safety_append.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_coherence.py",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+    ]
+  },
+  {
+    "tool": "validate_yama_plot",
+    "exit": 0,
+    "last": "[PASS] プロットは基準を満たしています。執筆に進んでよい（WARN 1件は確認）",
+    "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_attempt2_validate_yama_plot.log",
+    "argv": [
+      "python3",
+      "-B",
+      "-c",
+      "import builtins,runpy,sys; original=builtins.open; src,dst,script,target=sys.argv[1:]; builtins.open=lambda file,*a,**kw:original(dst if str(file)==src else file,*a,**kw); sys.argv=[script,target]; runpy.run_path(script,run_name='__main__')",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/yama_safety_validation.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v2_safety_append.log",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/System_Tools/validate_yama_plot.py",
+      "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Plot_Sheet_せたな町.md"
+    ]
+  }
+]

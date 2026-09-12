@@ -1,0 +1,11 @@
+Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/active_work.json
+Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/continuity.log
+Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/continuity_report.json
+Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/handoff.md
+Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/local_competitor_candidates.log
+Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/local_incident_competitor_evidence.log
+Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/local_material_search.log
+Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/plot_brief_checks.json
+Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/plot_design_frozen.json
+Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/validate_yama_plot_before.log
+Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Plot_Sheet_せたな町.md

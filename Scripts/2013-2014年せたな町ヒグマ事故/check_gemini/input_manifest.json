@@ -1,0 +1,14 @@
+{
+  "input_file": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md",
+  "sha256": "e507836ae5db578d1ad131f5f22a6472fa2fd9e2665323527aa4759a9b2d5807",
+  "bytes": 53262,
+  "scope": "ファイル全体。省略・本文抽出なし。",
+  "command": [
+    ".venv-edit/bin/python",
+    "-B",
+    "System_Tools/review_script_gemini.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+  ],
+  "started_at": "2026-09-12T22:00:31.861324",
+  "automatic_retries": 0
+}

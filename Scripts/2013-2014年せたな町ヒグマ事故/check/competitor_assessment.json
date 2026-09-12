@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-09-12",
+  "source_sha256": "3cbc620653199cdad7338303b86558548af2251d15f35d19514e2e75dba80596",
+  "searches_completed": 4,
+  "search_exit_codes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "entries": 80,
+  "unique_videos": 70,
+  "confirmed_matches": [
+    {
+      "rank": 1,
+      "id": "wBKnyxZsuBg",
+      "title": "＜凶暴ヒグマ＞駆除済みだった…ＤＮＡ鑑定で判明　北海道",
+      "channel": "トレンチェックTV",
+      "channel_id": "UCXZQB7zH7A8hmr4AqcFKO3w",
+      "view_count": 192,
+      "upload_date": "20150423",
+      "timestamp": 1429796591,
+      "webpage_url": "https://www.youtube.com/watch?v=wBKnyxZsuBg",
+      "description": "【限定プレゼント】2015年YouTubeを使って稼ぐ方法☆\nhttp://nomadcompany.info/\n\n北海道せたな町で２０１３年４月と１４年４月、それぞれ女性１人がヒグマに襲われ死傷した問題で、道檜山（ひやま）振興局は２３日、ＤＮＡ鑑定の結果、襲ったのは昨年８月に今金町で捕獲され殺処分された雄のヒグマだったと発表した。両現場にあった体毛などから、ヒグマは同一と判明していたが、駆除されていたことが新たに分かった。\n引用：http://headlines.yahoo.co.jp/hl?a=20150423-00000107-mai-soci",
+      "duration": 77
+    }
+  ],
+  "matched_count": 1,
+  "basis": "4検索の全80件（重複除外70本）のタイトルと、地名・事故年に関係する概要欄を確認。wBKnyxZsuBgは2013年4月と2014年4月のせたな町の女性の事故、今金町で前年8月に捕獲済みの同一個体という記述が一致。",
+  "limitation": "公開メタデータによる同一事件判定。映像・音声・字幕の全編確認ではなく、他動画が一切存在しないとの判定でもない。",
+  "other_same_area_results": "2025年の目撃放送・2025/2026年の温泉ドライブ・親子熊岩等の観光動画を本件と区別。",
+  "existing_142_video_inventory": "指定競合2チャンネルの142本に本件なしという既存集計とは母集団が異なる。"
+}
