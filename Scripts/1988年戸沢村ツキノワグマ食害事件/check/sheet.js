@@ -69,6 +69,13 @@ function play(id, t0, t1) {
 
 // ---- 手で直す ----
 const ED = {};   // id → 編集中の状態
+// 🚨 2026-09-11: 「http でなければファイルとして開いている」と判定していたため、
+//    Tailscale 経由（https）で開くと試写プレーヤーも保存も送信も止まった。
+//    サーバー経由かどうかは http と https の両方で真になる。
+function servedByServer() {
+  return location.protocol === 'http:' || location.protocol === 'https:';
+}
+
 let CUR = null;  // 開いているパネルの id
 
 // textarea の中身用。属性値と違って & と < も潰さないと壊れる。
@@ -880,7 +887,7 @@ function rawDelta(before, after) {
 
 // このカットだけ、今の設定で作って見る（保存前でもよい）
 async function previewCut(id) {
-  if (location.protocol !== 'http:') { alert('サーバー経由で開いたときだけ使えます'); return; }
+  if (!servedByServer()) { alert('サーバー経由で開いたときだけ使えます'); return; }
   const box = document.getElementById('pv' + id);
   const btn = document.getElementById('pvb' + id);
   if (btn) { btn.disabled = true; btn.textContent = 'プレビュー作成中…'; }
@@ -967,7 +974,7 @@ function movePin(id, i, right, deep) {
 }
 
 function postOverride(id, o) {
-  if (location.protocol !== 'http:') return Promise.resolve();
+  if (!servedByServer()) return Promise.resolve();
   return fetch('/overrides', { method: 'POST', headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ shots: { [id]: o } }) }).then(r => r.json()).catch(e => alert('保存に失敗: ' + e));
 }
@@ -1057,7 +1064,7 @@ function copyToNext(id) {
 
 // 下書き（または本画質）を作り直す
 async function rebuild(final) {
-  if (location.protocol !== 'http:') { alert('サーバー経由で開いたときだけ使えます'); return; }
+  if (!servedByServer()) { alert('サーバー経由で開いたときだけ使えます'); return; }
   const r = await fetch('/rebuild', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ final: !!final }) });
   const j = await r.json();
   document.getElementById('cnt').textContent = ' ' + (j.backend || '') + ' ' + (j.state || '');
@@ -1142,7 +1149,7 @@ function payload() {
 
 // AI につながるか試す（受講生の最初の確認用）
 async function aiCheck() {
-  if (location.protocol !== 'http:') { alert('サーバー経由で開いたときだけ使えます'); return; }
+  if (!servedByServer()) { alert('サーバー経由で開いたときだけ使えます'); return; }
   const cnt = document.getElementById('cnt');
   cnt.textContent = ' AIにつながるか試しています…（30秒ほど）';
   try {
@@ -1165,13 +1172,13 @@ async function send() {
   const restore = () => { if (btn) { btn.disabled = false; btn.textContent = label || '送信'; } };
   if (btn) { btn.disabled = true; btn.textContent = '送信中…'; }
   try {
-    if (location.protocol === 'http:') {
+    if (servedByServer()) {
       try { await loadTimeNotes(); }
       catch (error) { alert('保存済みの時刻メモを確認できません: ' + error.message); return; }
     }
     const p = payload();
     if (!p.corrections.length) { alert('修正メモが1件もありません。\n\n各カットの「修正メモ」に書くか、試写の「ここを指摘」で記録してください。'); return; }
-    if (location.protocol !== 'http:') { alert('サーバー経由で開いていないので、代わりにファイルへ書き出します'); dl(); return; }
+    if (!servedByServer()) { alert('サーバー経由で開いていないので、代わりにファイルへ書き出します'); dl(); return; }
     let j;
     try {
       const r = await fetch('/corrections', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(p) });
@@ -1556,7 +1563,7 @@ function showWorking(s) {
 })();
 
 // 開いた時点で既に走っていたら拾う（ページを開き直した場合）
-if (location.protocol.startsWith('http')) {
+if (servedByServer()) {
   // 🚨 2026-09-10: 読み込み時に1回だけ状態を見て終わっていたので、ページを開き直すと
   //    そこで見張りが止まり、AIが終わっても帯が出たままになっていた。走っていれば見張る。
   fetch('/status', { cache: 'no-store' }).then(r => r.json()).then(s => {
@@ -1661,7 +1668,7 @@ async function falRegister() {
 }
 
 // 画面を開いたら、黙って一度だけ状態を見る（キーが無ければ課金は起きない）
-if (location.protocol.startsWith('http')) {
+if (servedByServer()) {
   fetch('/fal_check', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{"quiet":1}' })
     .then(r => r.json()).then(falMsg).catch(() => {});
 }
@@ -1671,7 +1678,7 @@ if (location.protocol.startsWith('http')) {
 // 404 を返していた。ボタンは押せているのに無反応に見える。
 // シート側が期待する版と食い違ったら、はっきり知らせる。
 const SHEET_BUILD = '2026-09-04';
-if (location.protocol.startsWith('http')) {
+if (servedByServer()) {
   fetch('/status', { cache: 'no-store' }).then(r => r.json()).then(s => {
     if (s.build !== SHEET_BUILD) {
       const d = document.createElement('div');
@@ -1841,7 +1848,7 @@ async function loadTimeNotes() {
 
 (async function setupTimeReview() {
   const bar = document.getElementById('bar');
-  if (!bar || location.protocol !== 'http:') return;
+  if (!bar || !servedByServer()) return;
   const section = document.createElement('section');
   section.id = 'time-review';
   section.setAttribute('aria-label', '試写動画と時刻の指摘');

@@ -1,0 +1,13 @@
+カット24の変更キー一覧: asset_file, asset_kind, background_file, motion
+  asset_file: "画像/ASSET-024.png" → "画像/ASSET-024_キャラ.png"
+  asset_kind: "image" → "character"
+  background_file: "" → "画像/ASSET-022-1.png"
+  motion: "" → "still"
+カット26の変更キー一覧: 変更なし（生成画像の条件不一致で反映停止）
+カット31の変更キー一覧: asset_file
+  asset_file: "画像/ASSET-031.png" → "画像/ASSET-031_キャラ_v2.png"
+3カットの start_frame / end_frame / narration / subtitle_segments が不変（キーの有無も含む）: PASS
+他の295カットが全フィールド一致: PASS。未反映の26も一致、実際には計296カット不変。
+トップレベルの全キー・値が一致: PASS（shots配列内の指定変更を除く。キー・配列長・順序も不変）。
+24・31のJSONブロックを除くファイル全体の文字列が一致: PASS。
+overrides既存キー保持・今回の変更値の一致: PASS。26の上書き項目追加なし。

@@ -1,0 +1,22 @@
+{
+  "shots_sha256": "4e12c71f9eb3115bbf3f8dfe11e45bf1772a81ccfe75389ffda9c313be4ff3ea",
+  "shot_count": 298,
+  "cache_clip_count": 298,
+  "cache_sig_count": 298,
+  "cut20": {
+    "clip_0020.mp4": {
+      "exists": true,
+      "mtime": "2026-09-10T15:08:03.000147+09:00"
+    },
+    "clip_0020.mp4.sig": {
+      "exists": true,
+      "mtime": "2026-09-10T16:25:54.195620+09:00"
+    }
+  },
+  "expected_clips_missing": [],
+  "signature_mismatch_count": 1,
+  "signature_mismatch_shots": [
+    20
+  ],
+  "signature_note": "読み取り専用で既存の署名判定関数を使用。山岳では--draftでもクリップ署名の_draftはFalse。各キャッシュ動画の尺・破損は未検査のため追加再作成の可能性あり。全編レンダリング未実行。"
+}

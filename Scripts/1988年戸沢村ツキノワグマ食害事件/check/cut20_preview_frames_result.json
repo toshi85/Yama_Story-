@@ -1,0 +1,66 @@
+{
+  "preview": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview/0020.mp4",
+  "duration": 4.6,
+  "commands": [
+    {
+      "command": [
+        "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+        "-hide_banner",
+        "-nostdin",
+        "-v",
+        "error",
+        "-y",
+        "-ss",
+        "0.500000",
+        "-i",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview/0020.mp4",
+        "-frames:v",
+        "1",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_cut20/cut20_a.png"
+      ],
+      "exit_code": 0,
+      "time": 0.5,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+        "-hide_banner",
+        "-nostdin",
+        "-v",
+        "error",
+        "-y",
+        "-ss",
+        "2.300000",
+        "-i",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview/0020.mp4",
+        "-frames:v",
+        "1",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_cut20/cut20_b.png"
+      ],
+      "exit_code": 0,
+      "time": 2.3,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+        "-hide_banner",
+        "-nostdin",
+        "-v",
+        "error",
+        "-y",
+        "-ss",
+        "4.300000",
+        "-i",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview/0020.mp4",
+        "-frames:v",
+        "1",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_cut20/cut20_c.png"
+      ],
+      "exit_code": 0,
+      "time": 4.3,
+      "stderr": ""
+    }
+  ]
+}

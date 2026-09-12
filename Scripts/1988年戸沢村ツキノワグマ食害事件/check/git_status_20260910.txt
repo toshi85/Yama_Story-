@@ -1,0 +1,63 @@
+ M Business/Jinruishi/SCRIPT_SPEC.md
+ M "Business/Jinruishi/video/\347\212\254/\346\224\271\347\250\277_\343\202\217\343\201\213\343\202\212\343\202\204\343\201\231\343\201\22520260907/\351\200\262\346\215\227/supervision.json"
+ M "Business/Jinruishi/video/\347\212\254/\351\200\262\346\215\227/\347\265\202\344\272\206\343\203\201\343\202\247\343\203\203\343\202\257.json"
+ M "Business/Jinruishi/video/\347\212\254/\351\200\262\346\215\227/\347\266\231\347\266\232\347\256\241\347\220\206.json"
+ M System_Tools/edit/JINRUISHI.md
+ M System_Tools/edit/final_limiter_validation_20260910/active_work.json
+ M System_Tools/edit/jinruishi_bgm.py
+ M System_Tools/edit/serve_check.py
+ M System_Tools/edit/sheet.js
+ M System_Tools/edit/test_jinruishi_bgm.py
+ M System_Tools/edit/visual_check.py
+ M System_Tools/tts/README.md
+ M System_Tools/tts/hybrid_audio_checks.py
+ M System_Tools/tts/narrate_mlx.py
+ M System_Tools/tts/run_jinruishi_narration.py
+?? "Business/Jinruishi/video/\347\212\254/\346\224\271\347\250\277_\343\202\217\343\201\213\343\202\212\343\202\204\343\201\231\343\201\22520260907/\351\237\263\345\243\260/ASR\347\205\247\345\220\210/v12/"
+?? "Business/Jinruishi/\343\203\226\343\203\251\343\203\263\343\203\211/\343\202\242\343\202\244\343\202\263\343\203\263\345\200\231\350\243\234/H_\351\241\224\343\202\242\343\203\203\343\203\227_E\343\201\256\350\247\222\345\272\246_\351\273\204\350\203\214\346\231\257.png"
+?? "Business/Jinruishi/\343\203\226\343\203\251\343\203\263\343\203\211/\343\202\242\343\202\244\343\202\263\343\203\263\345\200\231\350\243\234/H_\351\241\224\343\202\242\343\203\203\343\203\227_\346\241\2101_\351\273\204\350\203\214\346\231\257.png"
+?? "Business/Jinruishi/\343\203\226\343\203\251\343\203\263\343\203\211/\343\202\242\343\202\244\343\202\263\343\203\263\345\200\231\350\243\234/watermark_150_\351\273\204\350\203\214\346\231\257.png"
+?? "Business/Jinruishi/\343\203\226\343\203\251\343\203\263\343\203\211/\343\202\242\343\202\244\343\202\263\343\203\263\345\200\231\350\243\234/watermark_150_\351\273\204\350\203\214\346\231\257_\346\244\234\350\250\274.json"
+?? "Business/Jinruishi/\343\203\226\343\203\251\343\203\263\343\203\211/\343\202\242\343\202\244\343\202\263\343\203\263\345\200\231\350\243\234/\346\257\224\350\274\203_\351\273\204\350\203\214\346\231\257.png"
+?? "Business/Jinruishi/\343\203\226\343\203\251\343\203\263\343\203\211/\343\202\242\343\202\244\343\202\263\343\203\263\345\200\231\350\243\234/\351\273\204\350\203\214\346\231\257_active_work.json"
+?? "Business/Jinruishi/\343\203\226\343\203\251\343\203\263\343\203\211/\343\202\242\343\202\244\343\202\263\343\203\263\345\200\231\350\243\234/\351\273\204\350\203\214\346\231\257\345\207\246\347\220\206.py"
+?? "Business/Jinruishi/\343\203\226\343\203\251\343\203\263\343\203\211/\343\202\242\343\202\244\343\202\263\343\203\263\345\200\231\350\243\234/\351\273\204\350\203\214\346\231\257\345\256\214\344\272\206\343\203\201\343\202\247\343\203\203\343\202\257.json"
+?? "Business/Jinruishi/\343\203\226\343\203\251\343\203\263\343\203\211/\343\202\242\343\202\244\343\202\263\343\203\263\345\200\231\350\243\234/\351\273\204\350\203\214\346\231\257\346\244\234\350\250\274.json"
+?? System_Tools/edit/create_limiter_comparison.py
+?? System_Tools/edit/final_limiter_accepted_20260910/
+?? System_Tools/edit/final_limiter_validation_20260910/COMMANDS.md
+?? System_Tools/edit/final_limiter_validation_20260910/REPORT.md
+?? System_Tools/edit/final_limiter_validation_20260910/changes.patch
+?? System_Tools/edit/final_limiter_validation_20260910/code_versions.json
+?? System_Tools/edit/final_limiter_validation_20260910/continuity_report.json
+?? System_Tools/edit/final_limiter_validation_20260910/existing_after.json
+?? System_Tools/edit/final_limiter_validation_20260910/existing_after.txt
+?? System_Tools/edit/final_limiter_validation_20260910/existing_comparison.txt
+?? System_Tools/edit/final_limiter_validation_20260910/format_comparison.json
+?? System_Tools/edit/final_limiter_validation_20260910/gain_only.json
+?? System_Tools/edit/final_limiter_validation_20260910/limiter_diagnostic.json
+?? System_Tools/edit/final_limiter_validation_20260910/new_tests.txt
+?? System_Tools/edit/final_limiter_validation_20260910/preview_20_r100.json
+?? System_Tools/edit/final_limiter_validation_20260910/preview_20_r100_tp102.json
+?? System_Tools/edit/final_limiter_validation_20260910/preview_20_r50.json
+?? System_Tools/edit/final_limiter_validation_20260910/sha256_after.json
+?? System_Tools/edit/final_limiter_validation_20260910/sha256_comparison.json
+?? System_Tools/edit/finalize_limiter_validation.py
+?? System_Tools/edit/finish_accepted_limiter.py
+?? System_Tools/edit/jinruishi_final_limiter.py
+?? System_Tools/edit/run_accepted_limiter_tests.py
+?? System_Tools/edit/run_final_limiter_tests.py
+?? System_Tools/edit/test_animate_source.py
+?? System_Tools/edit/test_jinruishi_final_limiter.py
+?? System_Tools/edit/test_override_undo.py
+?? System_Tools/edit/verify_final_limiter.py
+?? System_Tools/edit/verify_final_loudnorm.py
+?? System_Tools/tts/asr_ctc_validation_20260910/
+?? System_Tools/tts/asr_gate.py
+?? System_Tools/tts/asr_gate_validation_20260910/
+?? System_Tools/tts/asr_gate_worker.py
+?? System_Tools/tts/ctc_comparison.py
+?? System_Tools/tts/kana_ctc.py
+?? System_Tools/tts/models/
+?? System_Tools/tts/test_asr_gate.py
+?? System_Tools/tts/test_ctc_gate.py

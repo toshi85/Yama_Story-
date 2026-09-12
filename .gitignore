@@ -44,3 +44,19 @@ Scripts/*/check/frames/
 Scripts/*/check/clips/
 Scripts/*/check/preview/
 Scripts/*/check/serve.pid
+
+# 素材フォルダの動画・音声・画像（2026-09-12 追記）
+# もともと一度も追跡していない（追跡済み0件）が、未追跡として2GB分が一覧に出て
+# `git add -A` の事故を招くので明示的に外す。
+Scripts/*/*.mp4
+Scripts/*/*.wav
+Scripts/*/*.mp3
+Scripts/*/画像/
+Scripts/*/動画/*.mp4
+Scripts/*/地形図/*.mp4
+Scripts/*/音声/**/*.wav
+Scripts/*/音声/**/*.mp3
+Scripts/*/check/**/*.mp4
+Scripts/*/check/**/*.wav
+Scripts/*/check/**/*.png
+Scripts/*/.render_cache/

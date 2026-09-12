@@ -1,0 +1,9 @@
+{
+ "outside_target_blocks_byte_identical": true,
+ "overrides_existing_keys_preserved": true,
+ "cut23_bc_pixels_identical": true,
+ "cut27_mean_pixel_difference": [
+  0.004453125,
+  0.006848958333333334
+ ]
+}

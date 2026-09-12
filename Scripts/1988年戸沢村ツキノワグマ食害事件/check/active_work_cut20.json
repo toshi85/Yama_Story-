@@ -1,0 +1,77 @@
+{
+  "session_id": "01a08ad4-70da-71b2-8023-cff52af9eb6b",
+  "report": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/continuity_report_cut20.json",
+  "tasks": [
+    {
+      "id": "1",
+      "title": "変更前保存",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "変更前保存",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/shots_修正前_20260910_カット20.json",
+          "sha256": "fd339490861c52137b12355570fe164fa2372d4943ef39067e525c38801244aa"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "画像1回生成・目視",
+      "owner": "Codex",
+      "status": "cancelled",
+      "next_action": "ユーザー追加指示で全編spliceから単独プレビューへ変更。active_work_cut20_preview.jsonで完了確認。",
+      "blocker_evidence": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/cut20_execution_report.md"
+    },
+    {
+      "id": "3",
+      "title": "カット20変更・差分検証",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "カット20変更・差分検証",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/shots_diff_20260910_カット20.txt",
+          "sha256": "2fb80abf1e4047cf5189010cb387da70430d9eeda5fe7b11237a4b87ac852ac6"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "区間差替え",
+      "owner": "Codex",
+      "status": "cancelled",
+      "next_action": "ユーザー追加指示で全編spliceから単独プレビューへ変更。active_work_cut20_preview.jsonで完了確認。",
+      "blocker_evidence": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/cut20_execution_report.md"
+    },
+    {
+      "id": "5",
+      "title": "gate検査",
+      "owner": "Codex",
+      "status": "cancelled",
+      "next_action": "ユーザー追加指示で全編spliceから単独プレビューへ変更。active_work_cut20_preview.jsonで完了確認。",
+      "blocker_evidence": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/cut20_execution_report.md"
+    },
+    {
+      "id": "6",
+      "title": "3コマ抽出・目視",
+      "owner": "Codex",
+      "status": "cancelled",
+      "next_action": "ユーザー追加指示で全編spliceから単独プレビューへ変更。active_work_cut20_preview.jsonで完了確認。",
+      "blocker_evidence": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/cut20_execution_report.md"
+    },
+    {
+      "id": "7",
+      "title": "AI_REPLYと最終記録",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "AI_REPLYと最終記録",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/AI_REPLY.md",
+          "sha256": "2f68d30ed9049b50430b139e3919045ac6e951e592efa5feb55753a4516f6110"
+        }
+      ]
+    }
+  ]
+}

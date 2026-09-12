@@ -1,0 +1,40 @@
+1) 変更ファイル
+shots.json（23・27・30のみ）、check/overrides.json。
+check/ に指定名の変更前バックアップ2件、shots_diff_20260910_2回目.txt、frames_2/の12枚、実行スクリプト・ログ・継続管理記録・プレビューと中間出力を保存。
+元ツールは変更せず、削除・Git・画像生成・外部送信・課金・全編レンダリングなし。
+
+2) 実行コマンドと終了コード
+作業ディレクトリ: /Users/tosimasa/Desktop/Antigravity
+PY=/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python
+CHECK=素材フォルダ/check
+バックアップ・指定フィールド更新: $PY -B - <<'PY'（Python標準ライブラリでコピーと局所置換）: 0
+PYTHONDONTWRITEBYTECODE=1 $PY -B "$CHECK/preview_safe_2.py" 23 : 0（初回とx補正後の計2回）
+PYTHONDONTWRITEBYTECODE=1 $PY -B "$CHECK/preview_safe_2.py" 27 : 0
+PYTHONDONTWRITEBYTECODE=1 $PY -B "$CHECK/preview_safe_2.py" 30 : 0
+各ラッパー内で既存preview_cut.py・render.pyを実行。一時ファイルをcheck内へ変更、削除を無効化、1ワーカーに限定。プレビューの画質・字幕・描画処理は同じ。
+$PY -B -c "import sys;sys.path.insert(0,'System_Tools/edit');import ff;print(ff.ffmpeg())" : 0
+PYTHONDONTWRITEBYTECODE=1 $PY -B "$CHECK/verify_extract_2.py" : 0
+12枚のffmpeg抽出コマンド全文・時刻・個別終了コード: extract_commands_2.json（全て0）
+追加のフレーム解析・JSON/バイト比較: 0
+
+最終プレビュー:
+check/preview_2_adjusted/0023.mp4
+check/preview_2/0027.mp4
+check/preview_2/0030.mp4
+抽出画像:
+check/frames_2/cut23_a.png,b,c（0.5 / 1.215 / 2.13秒）
+check/frames_2/cut27_a.png,b,c
+check/frames_2/cut30_a.png,b,c
+check/frames_2/asset009_a.png,b,c
+b,cはそれぞれ_b.png、_c.pngの意。
+
+3) 3コマを見て確認した結果
+カット23: 黒一色の背景に横一列の「傷は、そこだけではありません。」。「傷」だけ赤、その他白、下字幕の二重表示なし。初回に左寄り・文字間の隙間を確認し、xのみ220→302、670→682へ1回補正。size=60のまま。補正後の文字の実画素範囲は640pxプレビューでx=140〜498、中心319px（画面中心320px）。aはフェード途中、bとcは全画素一致で全文表示。欠け・重なりなし。
+カット27: 器具トレーの採用画像が全画面に固定表示。別背景の部屋写真は表示されていない。3コマで構図は同じ。下部ナレーション字幕あり。
+カット30: a（0.5秒）はフェード開始時点で中央テロップ未表示。b・cは中央に「事件の真相」、真相だけ赤。3コマとも下部ナレーション字幕あり。
+ASSET-009: 3枚を開いて確認。地形図・戸沢村役場ピン・上部人口表示があり、ズームが進む。元MP4の抽出前後SHA256一致。
+
+差分: 他295カットは全フィールド・文字列一致。指定3カットのstart_frame/end_frame/narration/subtitle_segmentsはキーの有無も不変。トップレベルはshots内の指定変更以外すべて一致。対象3カットのJSONブロックを除くファイル全体の文字列も一致。overridesの既存キーを保持し、30のtelop空文字も保持。
+
+4) 未完了・懸念・質問
+なし。プレビューと静止画の検収まで完了。削除禁止に従い中間ファイル・初回プレビュー・終了済みPIDのロックファイルもcheck内に保存。次回同じ出力へ再実行する場合は新しい出力先を使う必要がある。

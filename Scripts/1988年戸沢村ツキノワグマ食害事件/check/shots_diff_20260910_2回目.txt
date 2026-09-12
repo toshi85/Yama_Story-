@@ -1,0 +1,22 @@
+カット23の変更キー一覧: asset_file, asset_kind, style, motion, overlays
+  asset_file: "画像/ASSET-023.png" → ""
+  asset_kind: "image" → "black_card"
+  style: "" → "black_card"
+  motion: "" → "still"
+  overlays: "<キーなし>" → [{"type": "text", "text": "傷", "color": "#FF0000", "x": 302, "y": 360, "size": 60, "font": "mincho", "anim": "fade", "anim_duration": 0.8, "start": 0.3}, {"type": "text", "text": "は、そこだけではありません。", "color": "#FFFFFF", "x": 682, "y": 360, "size": 60, "font": "mincho", "anim": "fade", "anim_duration": 0.8, "start": 0.3}]
+カット27の変更キー一覧: asset_kind, background_file, motion, drift, base_x
+  asset_kind: "character" → "image"
+  background_file: "画像/ASSET-027-1.png" → ""
+  motion: "drift_x" → "still"
+  drift: [-563, -115] → [0, 0]
+  base_x: -153 → 0
+カット30の変更キー一覧: telops, telop_highlights, telop_position, telop_anim, telop_anim_duration, telop_start
+  telops: [] → ["事件の真相"]
+  telop_highlights: "<キーなし>" → [{"text": "真相", "color": "#FF0000"}]
+  telop_position: "<キーなし>" → [640, 360]
+  telop_anim: "<キーなし>" → "fade"
+  telop_anim_duration: "<キーなし>" → 1
+  telop_start: "<キーなし>" → 0.5
+3カットとも start_frame / end_frame / narration / subtitle_segments が不変（キーの有無も含む）: PASS
+他の295カットは全フィールド一致: PASS（JSON文字列も一致）
+トップレベルの全キー・値が一致: PASS（shots配列の指定3要素の変更を除く。shotsキーの存在・298要素の順序も不変）

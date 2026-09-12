@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "System_Tools/edit/splice_rebuild.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/shots.json",
+    "--master",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908150535_c2a000ce/full_下書き.mp4",
+    "--shots",
+    "20",
+    "--out",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/review_revised.mp4"
+  ],
+  "pid": 13819,
+  "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/cut20_splice.log",
+  "started": 1789035728.961206,
+  "status": "failed",
+  "exit_code": null,
+  "exit_code_note": "終了コードの直接回収なし。ログの未検証エラーに対応するmainのreturnは1。再実行はしていない。",
+  "next_action": "元動画の末尾1フレーム不足を解消または許容する方法について、指定範囲・コマンドの変更が必要。"
+}

@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "-hide_banner",
+    "-nostdin",
+    "-v",
+    "error",
+    "-i",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908150535_c2a000ce/full_下書き.mp4",
+    "-map",
+    "0:v:0",
+    "-c:v",
+    "copy",
+    "-f",
+    "framemd5",
+    "-"
+  ],
+  "exit_code": 0,
+  "actual_video_frames": 44943,
+  "stderr": ""
+}

@@ -1,0 +1,21 @@
+shot 7 変更されたキー:
+  telop_start: 0.0 → 1.0
+追加されたキー: なし
+削除されたキー: なし
+shot 7 start_frame: 793 == 793 OK
+shot 7 end_frame: 912 == 912 OK
+shot 7 narration: "そしてなぜ、このクマは満腹なのに人を食べたのか？" == "そしてなぜ、このクマは満腹なのに人を食べたのか？" OK
+shot 7 subtitle_segments: 両方とも不在 OK
+shot 8 変更されたキー:
+  なし
+追加されたキー: map_pins
+  map_pins: 不在 → [{"label": "戸沢村", "x": 640, "y": 360, "size": 36, "font": "mincho", "start": 1.3, "end": 2.2666666666666666}]
+削除されたキー: なし
+shot 8 start_frame: 912 == 912 OK
+shot 8 end_frame: 980 == 980 OK
+shot 8 narration: "地形図とともに解説します。" == "地形図とともに解説します。" OK
+shot 8 subtitle_segments: 両方とも不在 OK
+他 296 カットすべて一致
+トップレベル: shots以外の全キー・値・キーの有無が一致 OK（schema, title, video, fps, total_frames, generated_at, audio, narration_status, timing_source, source_master, source_assets, narration_audio, map_renderer, intermediate_preset, bgm）
+カット順・件数: 一致 OK
+overrides.json: カット7のtelop_start変更・カット8のmap_pins追加以外は全キー・値一致 OK

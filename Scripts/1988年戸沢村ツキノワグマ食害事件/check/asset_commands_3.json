@@ -1,0 +1,38 @@
+[
+ {
+  "operation": "copy2",
+  "source": "/Users/tosimasa/.codex/generated_images/01a08b08-f0c0-7a00-b8ce-01f2a7d43550/exec-28c54ca6-7fdb-415f-a95e-382846115cab.png",
+  "destination": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-024_キャラ_raw.png",
+  "sha256": "05c20843757c1b6362c122b9830d9f9d9703f7c52b39c22c66c63ee20b337958"
+ },
+ {
+  "operation": "copy2",
+  "source": "/Users/tosimasa/.codex/generated_images/01a08b08-f0c0-7a00-b8ce-01f2a7d43550/exec-655f32cd-3812-4b09-933c-df50ea1546ab.png",
+  "destination": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-026-1_v2.png",
+  "sha256": "01c3d679549a1afdd9a379f9f46db7d16d1fc3c9559762b5a8fedd8f8b24df98"
+ },
+ {
+  "operation": "copy2",
+  "source": "/Users/tosimasa/.codex/generated_images/01a08b08-f0c0-7a00-b8ce-01f2a7d43550/exec-4dd7e56c-285a-412e-9c5f-25ed87462519.png",
+  "destination": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-031_キャラ_v2_raw.png",
+  "sha256": "535b6fb179d7bb0c5eafbdf22ba520db7bd3cd9e70ffb61397e3d76a1f0e6816"
+ },
+ {
+  "command": "node System_Tools/edit/character_matte.cjs '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-024_キャラ_raw.png' '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-024_キャラ.png' '' 1254 1254 /Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+  "exit_code": 0,
+  "stdout": "{\"source\":\"/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-024_キャラ_raw.png\",\"out\":\"/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-024_キャラ.png\",\"width\":1254,\"height\":1254,\"removed_fraction\":0.5872868702130852,\"threshold\":243,\"method\":\"border-connected neutral matte\"}\n",
+  "stderr": "Truncating packet of size 6290064 to 65536\n",
+  "transparent_fraction": 0.5872868702130852,
+  "opaque_fraction": 0.4127131297869147,
+  "alpha_valid": true
+ },
+ {
+  "command": "node System_Tools/edit/character_matte.cjs '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-031_キャラ_v2_raw.png' '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-031_キャラ_v2.png' '' 1254 1254 /Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+  "exit_code": 0,
+  "stdout": "{\"source\":\"/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-031_キャラ_v2_raw.png\",\"out\":\"/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-031_キャラ_v2.png\",\"width\":1254,\"height\":1254,\"removed_fraction\":0.8014182367619789,\"threshold\":243,\"method\":\"border-connected neutral matte\"}\n",
+  "stderr": "Truncating packet of size 6290064 to 65536\n",
+  "transparent_fraction": 0.8014182367619789,
+  "opaque_fraction": 0.1985817632380211,
+  "alpha_valid": true
+ }
+]

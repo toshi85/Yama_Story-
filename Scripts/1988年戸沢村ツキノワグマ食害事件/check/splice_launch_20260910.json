@@ -1,0 +1,25 @@
+{
+  "pid": 82342,
+  "command": [
+    ".venv-edit/bin/python",
+    "System_Tools/edit/splice_rebuild.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/shots.json",
+    "--master",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908150535_c2a000ce/full_下書き.mp4",
+    "--shots",
+    "7,8",
+    "--out",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/review_revised.mp4"
+  ],
+  "script": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/splice_run_20260910.sh",
+  "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/splice_run_20260910.log",
+  "exit_code_file": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/splice_exit_20260910.txt",
+  "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/review_revised.mp4",
+  "pending": [
+    "splice完了確認",
+    "gate実行",
+    "比較再確認",
+    "AI_REPLY結果反映",
+    "git status最終確認"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "checked_at": 1789035860.417869,
+  "production_complete": false,
+  "work_running": false,
+  "items": [
+    {
+      "id": "1",
+      "title": "変更前保存",
+      "status": "complete",
+      "reason": "変更前保存",
+      "owner": "Codex"
+    },
+    {
+      "id": "2",
+      "title": "画像1回生成・目視",
+      "status": "waiting_external",
+      "reason": "画像は6項目目視済み。ただし1672×941で厳密16:9から微差。再生成禁止。",
+      "owner": "Codex"
+    },
+    {
+      "id": "3",
+      "title": "カット20変更・差分検証",
+      "status": "complete",
+      "reason": "カット20変更・差分検証",
+      "owner": "Codex"
+    },
+    {
+      "id": "4",
+      "title": "区間差替え",
+      "status": "waiting_external",
+      "reason": "元動画44943フレームとカット表44944フレームの差により指定コマンド停止。許可範囲では元動画・他カット・実装を変更できない。",
+      "owner": "Codex"
+    },
+    {
+      "id": "5",
+      "title": "gate検査",
+      "status": "waiting_external",
+      "reason": "元動画44943フレームとカット表44944フレームの差により指定コマンド停止。許可範囲では元動画・他カット・実装を変更できない。",
+      "owner": "Codex"
+    },
+    {
+      "id": "6",
+      "title": "3コマ抽出・目視",
+      "status": "waiting_external",
+      "reason": "元動画44943フレームとカット表44944フレームの差により指定コマンド停止。許可範囲では元動画・他カット・実装を変更できない。",
+      "owner": "Codex"
+    },
+    {
+      "id": "7",
+      "title": "AI_REPLYと最終記録",
+      "status": "complete",
+      "reason": "AI_REPLYと最終記録",
+      "owner": "Codex"
+    }
+  ],
+  "remaining": 4
+}

@@ -1,0 +1,90 @@
+{
+ "commands": [
+  {
+   "command": "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -hide_banner -nostdin -y -i '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_2_adjusted/0023.mp4' -ss 0.500000 -frames:v 1 '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut23_a.png'",
+   "exit_code": 0,
+   "time": 0.5,
+   "duration": 2.43,
+   "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut23_a.png"
+  },
+  {
+   "command": "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -hide_banner -nostdin -y -i '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_2_adjusted/0023.mp4' -ss 1.215000 -frames:v 1 '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut23_b.png'",
+   "exit_code": 0,
+   "time": 1.215,
+   "duration": 2.43,
+   "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut23_b.png"
+  },
+  {
+   "command": "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -hide_banner -nostdin -y -i '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_2_adjusted/0023.mp4' -ss 2.130000 -frames:v 1 '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut23_c.png'",
+   "exit_code": 0,
+   "time": 2.1300000000000003,
+   "duration": 2.43,
+   "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut23_c.png"
+  },
+  {
+   "command": "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -hide_banner -nostdin -y -i '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_2/0027.mp4' -ss 0.500000 -frames:v 1 '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut27_a.png'",
+   "exit_code": 0,
+   "time": 0.5,
+   "duration": 4.83,
+   "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut27_a.png"
+  },
+  {
+   "command": "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -hide_banner -nostdin -y -i '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_2/0027.mp4' -ss 2.415000 -frames:v 1 '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut27_b.png'",
+   "exit_code": 0,
+   "time": 2.415,
+   "duration": 4.83,
+   "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut27_b.png"
+  },
+  {
+   "command": "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -hide_banner -nostdin -y -i '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_2/0027.mp4' -ss 4.530000 -frames:v 1 '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut27_c.png'",
+   "exit_code": 0,
+   "time": 4.53,
+   "duration": 4.83,
+   "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut27_c.png"
+  },
+  {
+   "command": "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -hide_banner -nostdin -y -i '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_2/0030.mp4' -ss 0.500000 -frames:v 1 '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut30_a.png'",
+   "exit_code": 0,
+   "time": 0.5,
+   "duration": 2.9,
+   "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut30_a.png"
+  },
+  {
+   "command": "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -hide_banner -nostdin -y -i '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_2/0030.mp4' -ss 1.450000 -frames:v 1 '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut30_b.png'",
+   "exit_code": 0,
+   "time": 1.45,
+   "duration": 2.9,
+   "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut30_b.png"
+  },
+  {
+   "command": "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -hide_banner -nostdin -y -i '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_2/0030.mp4' -ss 2.600000 -frames:v 1 '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut30_c.png'",
+   "exit_code": 0,
+   "time": 2.6,
+   "duration": 2.9,
+   "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/cut30_c.png"
+  },
+  {
+   "command": "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -hide_banner -nostdin -y -i '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/地形図/ASSET-009.mp4' -ss 0.500000 -frames:v 1 '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/asset009_a.png'",
+   "exit_code": 0,
+   "time": 0.5,
+   "duration": 5.17,
+   "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/asset009_a.png"
+  },
+  {
+   "command": "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -hide_banner -nostdin -y -i '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/地形図/ASSET-009.mp4' -ss 2.585000 -frames:v 1 '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/asset009_b.png'",
+   "exit_code": 0,
+   "time": 2.585,
+   "duration": 5.17,
+   "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/asset009_b.png"
+  },
+  {
+   "command": "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -hide_banner -nostdin -y -i '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/地形図/ASSET-009.mp4' -ss 4.870000 -frames:v 1 '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/asset009_c.png'",
+   "exit_code": 0,
+   "time": 4.87,
+   "duration": 5.17,
+   "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_2/asset009_c.png"
+  }
+ ],
+ "asset009_sha256": "de6dde03885c88ed4821f6d42262884d8956e07d6024019f834bdb189a329afc",
+ "asset009_unchanged": true
+}

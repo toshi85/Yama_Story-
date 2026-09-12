@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "System_Tools/edit/gate.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/shots.json",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/review_revised.mp4"
+  ],
+  "exit_code": 1,
+  "output": "\n### 1. 同期\n$ python /Users/tosimasa/Desktop/Antigravity/System_Tools/edit/check_sync.py /Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/shots.json /Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/asr.json\n抜き取り 37箇所\n一致率 中央値 96%／6割超 37箇所／3割未満 0箇所\n\nOK  ずれていない\n\n### 2. 機械の検査＋シート\n$ python /Users/tosimasa/Desktop/Antigravity/System_Tools/edit/visual_check.py /Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/shots.json /Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/review_revised.mp4 -o /Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check\nTraceback (most recent call last):\n  File \"/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/visual_check.py\", line 464, in <module>\n    main()\n    ~~~~^^\n  File \"/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/visual_check.py\", line 128, in main\n    paths = [grab(args.video, t, os.path.join(frames, f\"{s['id']:04d}_{k}.jpg\"))\n             ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/visual_check.py\", line 41, in grab\n    stat = os.stat(video)\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/review_revised.mp4'\n\nFAIL → /Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/GATE.md\n目視: /Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/sheet.html\n"
+}

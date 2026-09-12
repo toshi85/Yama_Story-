@@ -1,0 +1,43 @@
+{
+  "checked_at": 1789039939.676251,
+  "production_complete": false,
+  "work_running": false,
+  "items": [
+    {
+      "id": "0",
+      "title": "カット24生成・検収・透過・反映",
+      "status": "complete",
+      "reason": "承認範囲の独立作業を完了（26の依存工程は停止）",
+      "owner": "Codex"
+    },
+    {
+      "id": "1",
+      "title": "カット26生成・検収・反映",
+      "status": "waiting_external",
+      "reason": "26の生成画像は4本指条件不一致。反映・プレビュー停止。ユーザーの判断待ち。",
+      "owner": "Codex"
+    },
+    {
+      "id": "2",
+      "title": "カット31生成・検収・透過・反映",
+      "status": "complete",
+      "reason": "承認範囲の独立作業を完了（26の依存工程は停止）",
+      "owner": "Codex"
+    },
+    {
+      "id": "3",
+      "title": "プレビュー・9静止画・目視検収",
+      "status": "complete",
+      "reason": "承認範囲の独立作業を完了（26の依存工程は停止）",
+      "owner": "Codex"
+    },
+    {
+      "id": "4",
+      "title": "差分検査・報告",
+      "status": "complete",
+      "reason": "承認範囲の独立作業を完了（26の依存工程は停止）",
+      "owner": "Codex"
+    }
+  ],
+  "remaining": 1
+}

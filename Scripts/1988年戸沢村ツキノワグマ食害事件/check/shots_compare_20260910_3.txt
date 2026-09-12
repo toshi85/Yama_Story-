@@ -1,0 +1,48 @@
+変更前: /Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/shots_修正前_20260910.json
+変更後: /Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/shots.json
+カット件数: 298 == 298 → OK
+id の並び: 一致 OK
+id の重複: なし OK
+
+カットごとの全フィールド差分（キーの有無を含む）
+カット7 / telop_start / 値変更: 0.0 → 1.0
+カット8 / map_pins / 追加: 不在 → [{"end": 2.2666666666666666, "font": "mincho", "label": "戸沢村", "size": 36, "start": 1.3, "x": 640, "y": 360}]
+
+指摘カットの保護対象4項目
+カット7 / start_frame: 793 == 793 → OK
+カット7 / end_frame: 912 == 912 → OK
+カット7 / narration: "そしてなぜ、このクマは満腹なのに人を食べたのか？" == "そしてなぜ、このクマは満腹なのに人を食べたのか？" → OK
+カット7 / subtitle_segments: 両方とも不在 OK
+カット8 / start_frame: 912 == 912 → OK
+カット8 / end_frame: 980 == 980 → OK
+カット8 / narration: "地形図とともに解説します。" == "地形図とともに解説します。" → OK
+カット8 / subtitle_segments: 両方とも不在 OK
+カット9 / start_frame: 980 == 980 → OK
+カット9 / end_frame: 1138 == 1138 → OK
+カット9 / narration: "戸沢村は、山形県の北にあり、人口およそ4,300人。" == "戸沢村は、山形県の北にあり、人口およそ4,300人。" → OK
+カット9 / subtitle_segments: 両方とも不在 OK
+カット20 / start_frame: 2513 == 2513 → OK
+カット20 / end_frame: 2651 == 2651 → OK
+カット20 / narration: "おそるおそる近づいてみると、それは無残な夫の姿でした。" == "おそるおそる近づいてみると、それは無残な夫の姿でした。" → OK
+カット20 / subtitle_segments: 両方とも不在 OK
+
+他 294 カットすべて一致
+
+shots 以外のトップレベルキー
+audio: 両方に存在・値一致 OK
+bgm: 両方に存在・値一致 OK
+fps: 両方に存在・値一致 OK
+generated_at: 両方に存在・値一致 OK
+intermediate_preset: 両方に存在・値一致 OK
+map_renderer: 両方に存在・値一致 OK
+narration_audio: 両方に存在・値一致 OK
+narration_status: 両方に存在・値一致 OK
+schema: 両方に存在・値一致 OK
+source_assets: 両方に存在・値一致 OK
+source_master: 両方に存在・値一致 OK
+timing_source: 両方に存在・値一致 OK
+title: 両方に存在・値一致 OK
+total_frames: 両方に存在・値一致 OK
+video: 両方に存在・値一致 OK
+
+今回の実行前 shots.json SHA-256: fd339490861c52137b12355570fe164fa2372d4943ef39067e525c38801244aa

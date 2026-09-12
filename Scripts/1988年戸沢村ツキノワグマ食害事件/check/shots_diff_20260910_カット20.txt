@@ -1,0 +1,17 @@
+カット20の変更キー一覧: asset_file, asset_kind, background_file, base_x, drift, edit_note, motion
+asset_file: "画像/ASSET-020.png" → "画像/ASSET-020_実写.png"
+asset_kind: "character" → "image"
+background_file: "画像/ASSET-020-1.png" → ""
+base_x: -409 → 0
+drift: [486, -57] → [0, 0]
+edit_note: "後ろ姿だけで処理し、視線の先は一切映さない。心拍SEを立ち上げる。1〜2秒で次へ。" → "実写の倒れた男性を全画面で1〜2秒。顔は見せない。心拍SEを立ち上げる。"
+motion: "lean" → "still"
+PASS カット20 start_frame: キーの有無・値とも不変（2513）
+PASS カット20 end_frame: キーの有無・値とも不変（2651）
+PASS カット20 narration: キーの有無・値とも不変（"おそるおそる近づいてみると、それは無残な夫の姿でした。"）
+PASS カット20 subtitle_segments: キーの有無・値とも不変（両方ともキーなし）
+PASS カット20以外の全297カット: 全フィールド一致
+PASS カット20の指定外キー: 有無・値とも一致
+PASS トップレベル: 全キー一致、shots以外の全値一致（shotsはカット20の指定7キーのみ変更）
+PASS カット20以外のJSON原文: 1文字も変更なし
+PASS JSON体裁: インデント1スペース・ensure_ascii=False・末尾改行

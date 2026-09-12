@@ -1,0 +1,56 @@
+1) 変更ファイルと新規ファイル
+変更: shots.json（24・31のみ）、check/overrides.json（24・31のみ）。26は生成条件不一致のため未変更。
+新規画像（すべて画像/配下、既存画像を上書きせず新規保存）:
+ASSET-024_キャラ_raw.png
+ASSET-024_キャラ.png
+ASSET-026-1_v2.png（未採用）
+ASSET-031_キャラ_v2_raw.png
+ASSET-031_キャラ_v2.png
+check/にshots_修正前_20260910_3回目.json、overrides_修正前_20260910_3回目.json、shots_diff_20260910_3回目.txt、生成プロンプト・検査・実行記録、プレビュー2本、静止画6枚、補助スクリプトと中間出力を保存。
+生成ツールの既定保存先にも生成原本が残る（asset_commands_3.json参照）。
+
+2) 実行コマンドと終了コード
+作業ディレクトリ: /Users/tosimasa/Desktop/Antigravity
+PY=/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python
+C=/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check
+image_gen__imagegen: 各指定プロンプトにつき1回、計3回。3回とも画像返却、拒否なし。ツールなのでシェル終了コードなし。
+プロンプトはユーザー指定全文を変更せず使用。imagegen_prompts_3.jsonに記録。CLI/API/FAL・課金操作・再生成なし。
+バックアップと台帳作成のPython標準入力実行: 終了0。
+PYTHONDONTWRITEBYTECODE=1 $PY -B "$C/prepare_assets_3.py": 終了0。
+node System_Tools/edit/character_matte.cjs <raw> <透過出力> "" 1254 1254 <ffmpeg実体>: 24・31とも終了0。実コマンド全文はasset_commands_3.json。
+matteのstderrには両方とも「Truncating packet of size 6290064 to 65536」が出たが、出力PNGの読込・全画素RGB一致・寸法・アルファ検査は合格。
+PYTHONDONTWRITEBYTECODE=1 $PY -B "$C/apply_shots_3.py": 終了0。
+PYTHONDONTWRITEBYTECODE=1 $PY -B "$C/preview_safe_3.py" 24: 終了0。
+PYTHONDONTWRITEBYTECODE=1 $PY -B "$C/preview_safe_3.py" 31: 終了0。
+前回と同じ安全ラッパーで既存preview_cut.pyとrender.pyを実行。一時出力をcheck内へ置き、削除を無効化。元ツールの変更なし。
+PYTHONDONTWRITEBYTECODE=1 $PY -B "$C/verify_extract_3.py": 終了0。
+ffmpeg静止画抽出6件: すべて終了0。時刻・コマンド全文はextract_commands_3.json。
+最終アルファ/RGB検査・報告保存: 終了0。
+継続管理検査: 別途実行結果をcontinuity_report_3.jsonへ保存。26が外部判断待ちのため未完了を維持。
+
+3) 生成画像とプレビュー3コマを見て確認した結果
+カット24:
+生成原画は白背景、カートゥン男性1人の全身。文字・風景の描き込みなし。片膝をつき、懐中電灯を下へ向けている。透過後は完全透明58.73%、完全不透明41.27%で両方1%以上。
+プレビュー: check/preview_3/0024.mp4
+静止画: check/frames_3/cut24_a.png、cut24_b.png、cut24_c.png
+3コマを開いて確認。22と同じ背景で静止し、沢底の岩場に片膝をついて見える。明らかな宙浮きなし。背景に収まる大きさで、字幕と人物の重なりなし。懐中電灯の光は原画由来の淡い不透明な三角形として残る。
+カット26:
+生成画像: 画像/ASSET-026-1_v2.png
+人物・雪なし。下部に平らな砂利と浅い水、中央に空間あり。ただし足跡は指定の4本指ではなく5本指に見える。生成条件不一致として停止。shots/overridesへの反映、修正後プレビュー、3コマ抽出は未実施。再生成・別手段への切替なし。
+カット31:
+原画と透過画像を確認。左4人は背中を向けて歩く姿、右6人は立っている姿で、間に空白のある2集団。全員の服装が異なり、文字なし。右集団の2人が振り返っている。透過後は完全透明80.14%、完全不透明19.86%で両方1%以上。
+プレビュー: check/preview_3/0031.mp4
+静止画: check/frames_3/cut31_a.png、cut31_b.png、cut31_c.png
+3コマを開いて確認。集団は遠景のため小さめだが、4人と6人の分離を確認できる。足元は沢の岩・浅瀬の位置にあり、明らかな宙浮きや字幕との重なりなし。
+元のmotion=drift_x、drift=[486,-57]、base_x=-409などを指示どおり維持したため、左右両集団が一枚の画像として一緒に右へ移動する。4人だけ動き6人が画面上で固定されるアニメーションではない。
+
+差分検査:
+24の変更キー: asset_file / asset_kind / background_file / motion（drift=[0,0]、base_x=0は元から一致）。
+26: 変更なし。
+31: asset_fileのみ。
+3カットのstart_frame/end_frame/narration/subtitle_segmentsはキーの有無も不変。他295カット全フィールド一致、さらに26も不変。トップレベルはshots内の指定変更を除き一致。24・31のJSONブロック以外はファイル全体の文字列も一致。overridesの既存キーを保持し、今回変更値との一致を確認。
+
+4) 未完了・懸念・質問
+26は生成画像の足跡の指の数が指定と違うため未反映。ユーザー指定の「満たしていなければ止まる」「各プロンプト1回だけ」に従い停止した。拒否文は発生していない。
+31は既存の動きを維持したことによる両集団一体の移動が残る。追加の位置・動きの変更はしていない。
+承認済みの独立工程は完了。26の採用判断または新たな指示待ち。画像生成・プレビューの継続プロセスは残っていない。

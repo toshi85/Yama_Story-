@@ -1,0 +1,247 @@
+{
+ "session_id": "01a08b08-f0c0-7a00-b8ce-020a95a8ba43",
+ "report": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/continuity_report_3.json",
+ "tasks": [
+  {
+   "id": "0",
+   "title": "カット24生成・検収・透過・反映",
+   "status": "complete",
+   "owner": "Codex",
+   "next_action": "承認範囲の独立作業を完了（26の依存工程は停止）",
+   "evidence": [
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/shots.json",
+     "sha256": "472dfb830b8d4b91068e96e5424b7bb067af77c99fa36ee0c9651162f944ef23"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/overrides.json",
+     "sha256": "4ad9cf40f2a8b909f72c08aae24d9fca7dd1c4a54a3a85f823c5d80353cbd5bb"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/shots_diff_20260910_3回目.txt",
+     "sha256": "6f4bb33b86aa6c89c0c91d6a353c4e624be24afc2b09c81d82f52bd0ae95a3f7"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/修正結果_20260910_3回目.txt",
+     "sha256": "f11ee17d1c53bd0f54395c0b762e19e49d3b7e40c16543fcb53a180f55e21394"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_3/0024.mp4",
+     "sha256": "ce7aff863ce0f2a49814f2b8f44b4bdcf9f75a05496dbbf1f98e09007ec9e5ee"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_3/0031.mp4",
+     "sha256": "c70119060e5581376de8a019257f43943074b594551319ac94d208148c030051"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut24_a.png",
+     "sha256": "ebb3138defed1412ec2fd439b4820f6c8f348d3d271004363fea65f7745d0145"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut24_b.png",
+     "sha256": "5edbb195b95eea9be0551875381a5be5b138fc1ed1946bfb2b9720632c68bddf"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut24_c.png",
+     "sha256": "e3e418ea23f872804c5d6dd73facaa92f5261ca581fdd2f4a905f4491b681059"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut31_a.png",
+     "sha256": "16e41b12f96c8da4a5b37c4b7334c2298910354cc537b3768b827ed0be570759"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut31_b.png",
+     "sha256": "4e8268e9b34dce5f6aba1b054bbffd584ba1c578bdec0b980562277e8ff7984d"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut31_c.png",
+     "sha256": "108b2af01c14522579b68bbac6d41297b8b682fa239f1c15a9a8a5cab8d56642"
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "title": "カット26生成・検収・反映",
+   "status": "waiting_external",
+   "owner": "Codex",
+   "next_action": "26の生成画像は4本指条件不一致。反映・プレビュー停止。ユーザーの判断待ち。",
+   "blocker_evidence": [
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/画像/ASSET-026-1_v2.png",
+     "reason": "足跡が5本指に見える。生成1回・不一致で停止というユーザー指示。"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "title": "カット31生成・検収・透過・反映",
+   "status": "complete",
+   "owner": "Codex",
+   "next_action": "承認範囲の独立作業を完了（26の依存工程は停止）",
+   "evidence": [
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/shots.json",
+     "sha256": "472dfb830b8d4b91068e96e5424b7bb067af77c99fa36ee0c9651162f944ef23"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/overrides.json",
+     "sha256": "4ad9cf40f2a8b909f72c08aae24d9fca7dd1c4a54a3a85f823c5d80353cbd5bb"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/shots_diff_20260910_3回目.txt",
+     "sha256": "6f4bb33b86aa6c89c0c91d6a353c4e624be24afc2b09c81d82f52bd0ae95a3f7"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/修正結果_20260910_3回目.txt",
+     "sha256": "f11ee17d1c53bd0f54395c0b762e19e49d3b7e40c16543fcb53a180f55e21394"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_3/0024.mp4",
+     "sha256": "ce7aff863ce0f2a49814f2b8f44b4bdcf9f75a05496dbbf1f98e09007ec9e5ee"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_3/0031.mp4",
+     "sha256": "c70119060e5581376de8a019257f43943074b594551319ac94d208148c030051"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut24_a.png",
+     "sha256": "ebb3138defed1412ec2fd439b4820f6c8f348d3d271004363fea65f7745d0145"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut24_b.png",
+     "sha256": "5edbb195b95eea9be0551875381a5be5b138fc1ed1946bfb2b9720632c68bddf"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut24_c.png",
+     "sha256": "e3e418ea23f872804c5d6dd73facaa92f5261ca581fdd2f4a905f4491b681059"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut31_a.png",
+     "sha256": "16e41b12f96c8da4a5b37c4b7334c2298910354cc537b3768b827ed0be570759"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut31_b.png",
+     "sha256": "4e8268e9b34dce5f6aba1b054bbffd584ba1c578bdec0b980562277e8ff7984d"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut31_c.png",
+     "sha256": "108b2af01c14522579b68bbac6d41297b8b682fa239f1c15a9a8a5cab8d56642"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "title": "プレビュー・9静止画・目視検収",
+   "status": "complete",
+   "owner": "Codex",
+   "next_action": "承認範囲の独立作業を完了（26の依存工程は停止）",
+   "evidence": [
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/shots.json",
+     "sha256": "472dfb830b8d4b91068e96e5424b7bb067af77c99fa36ee0c9651162f944ef23"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/overrides.json",
+     "sha256": "4ad9cf40f2a8b909f72c08aae24d9fca7dd1c4a54a3a85f823c5d80353cbd5bb"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/shots_diff_20260910_3回目.txt",
+     "sha256": "6f4bb33b86aa6c89c0c91d6a353c4e624be24afc2b09c81d82f52bd0ae95a3f7"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/修正結果_20260910_3回目.txt",
+     "sha256": "f11ee17d1c53bd0f54395c0b762e19e49d3b7e40c16543fcb53a180f55e21394"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_3/0024.mp4",
+     "sha256": "ce7aff863ce0f2a49814f2b8f44b4bdcf9f75a05496dbbf1f98e09007ec9e5ee"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_3/0031.mp4",
+     "sha256": "c70119060e5581376de8a019257f43943074b594551319ac94d208148c030051"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut24_a.png",
+     "sha256": "ebb3138defed1412ec2fd439b4820f6c8f348d3d271004363fea65f7745d0145"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut24_b.png",
+     "sha256": "5edbb195b95eea9be0551875381a5be5b138fc1ed1946bfb2b9720632c68bddf"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut24_c.png",
+     "sha256": "e3e418ea23f872804c5d6dd73facaa92f5261ca581fdd2f4a905f4491b681059"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut31_a.png",
+     "sha256": "16e41b12f96c8da4a5b37c4b7334c2298910354cc537b3768b827ed0be570759"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut31_b.png",
+     "sha256": "4e8268e9b34dce5f6aba1b054bbffd584ba1c578bdec0b980562277e8ff7984d"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut31_c.png",
+     "sha256": "108b2af01c14522579b68bbac6d41297b8b682fa239f1c15a9a8a5cab8d56642"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "title": "差分検査・報告",
+   "status": "complete",
+   "owner": "Codex",
+   "next_action": "承認範囲の独立作業を完了（26の依存工程は停止）",
+   "evidence": [
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/shots.json",
+     "sha256": "472dfb830b8d4b91068e96e5424b7bb067af77c99fa36ee0c9651162f944ef23"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/overrides.json",
+     "sha256": "4ad9cf40f2a8b909f72c08aae24d9fca7dd1c4a54a3a85f823c5d80353cbd5bb"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/shots_diff_20260910_3回目.txt",
+     "sha256": "6f4bb33b86aa6c89c0c91d6a353c4e624be24afc2b09c81d82f52bd0ae95a3f7"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/修正結果_20260910_3回目.txt",
+     "sha256": "f11ee17d1c53bd0f54395c0b762e19e49d3b7e40c16543fcb53a180f55e21394"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_3/0024.mp4",
+     "sha256": "ce7aff863ce0f2a49814f2b8f44b4bdcf9f75a05496dbbf1f98e09007ec9e5ee"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview_3/0031.mp4",
+     "sha256": "c70119060e5581376de8a019257f43943074b594551319ac94d208148c030051"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut24_a.png",
+     "sha256": "ebb3138defed1412ec2fd439b4820f6c8f348d3d271004363fea65f7745d0145"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut24_b.png",
+     "sha256": "5edbb195b95eea9be0551875381a5be5b138fc1ed1946bfb2b9720632c68bddf"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut24_c.png",
+     "sha256": "e3e418ea23f872804c5d6dd73facaa92f5261ca581fdd2f4a905f4491b681059"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut31_a.png",
+     "sha256": "16e41b12f96c8da4a5b37c4b7334c2298910354cc537b3768b827ed0be570759"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut31_b.png",
+     "sha256": "4e8268e9b34dce5f6aba1b054bbffd584ba1c578bdec0b980562277e8ff7984d"
+    },
+    {
+     "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_3/cut31_c.png",
+     "sha256": "108b2af01c14522579b68bbac6d41297b8b682fa239f1c15a9a8a5cab8d56642"
+    }
+   ]
+  }
+ ]
+}

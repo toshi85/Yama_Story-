@@ -1,0 +1,24 @@
+ps -p 82342 -o pid,ppid,stat,etime,command
+終了コード: 1
+  PID  PPID STAT ELAPSED COMMAND
+
+pgrep -fl splice_rebuild
+終了コード: 1
+出力なし
+
+pgrep -fl ffmpeg
+終了コード: 1
+出力なし
+
+.venv-edit/bin/python -V
+終了コード: 0
+Python 3.14.3
+
+前景splice終了コード: 1
+標準出力: 空
+標準エラー:
+未検証: masterの映像が30fps連続フレームではありません: {'frame_count': 44943, 'expected_frames': 44944, 'frame_count_match': False, 'pts_continuous': True, 'dts_increasing': True}
+
+旧nohupプロセスが消えた原因: 未特定。OOM・SIGKILLとは断定しない。
+前景実行で特定した停止原因: 元動画44943フレームと想定44944フレームの不一致。
+gate.py: 対象出力なしのため未実行。

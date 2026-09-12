@@ -1,0 +1,36 @@
+{
+  "checked_at": 1789036175.993164,
+  "production_complete": true,
+  "work_running": false,
+  "items": [
+    {
+      "id": "1",
+      "title": "単独プレビュー",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "2",
+      "title": "3コマ抽出と目視",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "3",
+      "title": "キャッシュ・元動画調査",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "4",
+      "title": "AI_REPLY追記と報告",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    }
+  ],
+  "remaining": 0
+}

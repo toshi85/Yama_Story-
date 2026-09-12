@@ -18,7 +18,12 @@ def spec_of(r):
  lat,lon=map(float,m.groups());pins=[]
  for label,la,lo in re.findall(r'地点[A-Z]（([^）]+)）:\s*(?:約\s*)?([\d.]+),\s*([\d.]+)',b):
   pins.append((float(la),float(lo),label))
- secret='非公表' in b or 'ピンは打たない' in b
+ # 🚨 2026-09-12: 「非公表」を見ただけでピンを全部消していた。だが制作メモの「非公表」は
+ #    *正確な位置を伏せる断り書き* であって、ピンを消せという指示ではない。
+ #    実際に消せと書いてあるのは「ピンは打たない」だけ（ASSET-147）。
+ #    ASSET-154 は「地点Bにだけラベルを置き、正確な位置は非公表のため地区の代表点である旨を
+ #    小さく添える」と書いてあるのに、ラベルごと消えていた。
+ secret='ピンは打たない' in b
  if secret:pins=[]
  if aid=='ASSET-205':pins=[(38.7376,140.1436,'戸沢村・1988年の3件')]
  altline=re.search(r'カメラ高度:\s*(.+)',b).group(1)
@@ -72,7 +77,12 @@ def apply_overrides(spec,ov):
  s['alt0']*=scale;s['alt1']*=scale
  if ov.get('map_heading') not in (None,''):s['heading']=float(ov['map_heading'])%360
  if ov.get('map_pitch') not in (None,''):s['pitch_delta']=max(-20,min(20,float(ov['map_pitch'])))
- edits=ov.get('map_pins') or {};pins=[]
+ # ⚠️ 2026-09-12: map_pins は本来「ラベル→調整」の辞書だが、検収シートが
+ #    リストで書き込むことがあり、その場合 .get で落ちていた。両方を受ける。
+ edits=ov.get('map_pins') or {}
+ if isinstance(edits,list):
+  edits={e.get('label'):e for e in edits if isinstance(e,dict) and e.get('label')}
+ pins=[]
  for la,lo,label in s['pins']:
   e=edits.get(label) or {}
   if e.get('hide'):continue

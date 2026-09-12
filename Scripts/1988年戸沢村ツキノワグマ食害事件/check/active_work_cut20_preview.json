@@ -1,0 +1,58 @@
+{
+  "session_id": "01a08ad4-70da-71b2-8023-cff52af9eb6b",
+  "report": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/continuity_report_cut20_preview.json",
+  "tasks": [
+    {
+      "id": "1",
+      "title": "単独プレビュー",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/preview/0020.mp4",
+          "sha256": "4bd55ed13493c5b454d43b5f9c356b2466a74e6c650d736cb401687e5a29572a"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "3コマ抽出と目視",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/frames_cut20/cut20_c.png",
+          "sha256": "17531d44ac343b901a8314119d9c1d24476e01323cb23d9f0bf9be2b076d582d"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "キャッシュ・元動画調査",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/cut20_preview_investigation.json",
+          "sha256": "ac4191d0679a75a40b0fc821e30a3608d9fd9202134fc13a8535109c09fe1c1f"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "AI_REPLY追記と報告",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/AI_REPLY.md",
+          "sha256": "3361cabee87e3d9f49c3e03d22d3e96612899b9e73e9b78d62a652aafe0e0ce5"
+        }
+      ]
+    }
+  ]
+}
