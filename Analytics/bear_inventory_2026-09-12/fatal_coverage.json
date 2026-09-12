@@ -1,0 +1,446 @@
+[
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2008,
+    "deaths": 3,
+    "pdf_page": 1,
+    "inventory_deaths": 3,
+    "incident_ids": [
+      "B0301",
+      "B0303",
+      "B0305"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2010,
+    "deaths": 2,
+    "pdf_page": 1,
+    "inventory_deaths": 2,
+    "incident_ids": [
+      "B0291",
+      "B0293"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2011,
+    "deaths": 1,
+    "pdf_page": 1,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0272"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2013,
+    "deaths": 1,
+    "pdf_page": 1,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0253"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2014,
+    "deaths": 1,
+    "pdf_page": 1,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0235"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2017,
+    "deaths": 1,
+    "pdf_page": 1,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0210"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "青森",
+    "fiscal_year": 2009,
+    "deaths": 1,
+    "pdf_page": 1,
+    "inventory_deaths": 0,
+    "incident_ids": [],
+    "status": "不足"
+  },
+  {
+    "prefecture": "岩手",
+    "fiscal_year": 2009,
+    "deaths": 1,
+    "pdf_page": 1,
+    "inventory_deaths": 0,
+    "incident_ids": [],
+    "status": "不足"
+  },
+  {
+    "prefecture": "秋田",
+    "fiscal_year": 2016,
+    "deaths": 4,
+    "pdf_page": 1,
+    "inventory_deaths": 4,
+    "incident_ids": [
+      "B0225",
+      "B0226",
+      "B0228",
+      "B0229"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "秋田",
+    "fiscal_year": 2017,
+    "deaths": 1,
+    "pdf_page": 1,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0217"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "福島",
+    "fiscal_year": 2010,
+    "deaths": 1,
+    "pdf_page": 1,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0292"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "福島",
+    "fiscal_year": 2011,
+    "deaths": 1,
+    "pdf_page": 1,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0269"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "福島",
+    "fiscal_year": 2012,
+    "deaths": 1,
+    "pdf_page": 1,
+    "inventory_deaths": 0,
+    "incident_ids": [],
+    "status": "不足"
+  },
+  {
+    "prefecture": "福島",
+    "fiscal_year": 2013,
+    "deaths": 1,
+    "pdf_page": 1,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0251"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "岐阜",
+    "fiscal_year": 2014,
+    "deaths": 1,
+    "pdf_page": 1,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0238"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "鳥取",
+    "fiscal_year": 2010,
+    "deaths": 1,
+    "pdf_page": 1,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0289"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2021,
+    "deaths": 4,
+    "pdf_page": 2,
+    "inventory_deaths": 4,
+    "incident_ids": [
+      "B0134",
+      "B0139",
+      "B0140",
+      "B0144"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2023,
+    "deaths": 2,
+    "pdf_page": 2,
+    "inventory_deaths": 2,
+    "incident_ids": [
+      "B0082",
+      "B0107"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2025,
+    "deaths": 2,
+    "pdf_page": 2,
+    "inventory_deaths": 2,
+    "incident_ids": [
+      "B0055",
+      "B0060"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "青森",
+    "fiscal_year": 2021,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0135"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "青森",
+    "fiscal_year": 2024,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0072"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "青森",
+    "fiscal_year": 2026,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0003"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "岩手",
+    "fiscal_year": 2023,
+    "deaths": 2,
+    "pdf_page": 2,
+    "inventory_deaths": 2,
+    "incident_ids": [
+      "B0086",
+      "B0098"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "岩手",
+    "fiscal_year": 2024,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0074"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "岩手",
+    "fiscal_year": 2025,
+    "deaths": 5,
+    "pdf_page": 2,
+    "inventory_deaths": 5,
+    "incident_ids": [
+      "B0021",
+      "B0031",
+      "B0035",
+      "B0038",
+      "B0061"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "岩手",
+    "fiscal_year": 2026,
+    "deaths": 3,
+    "pdf_page": 2,
+    "inventory_deaths": 3,
+    "incident_ids": [
+      "B0005",
+      "B0006",
+      "B0011"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "宮城",
+    "fiscal_year": 2019,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0185"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "宮城",
+    "fiscal_year": 2025,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0041"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "秋田",
+    "fiscal_year": 2020,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0145"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "秋田",
+    "fiscal_year": 2022,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0127"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "秋田",
+    "fiscal_year": 2025,
+    "deaths": 4,
+    "pdf_page": 2,
+    "inventory_deaths": 4,
+    "incident_ids": [
+      "B0019",
+      "B0022",
+      "B0027",
+      "B0058"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "秋田",
+    "fiscal_year": 2026,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0004"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "山形",
+    "fiscal_year": 2026,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0008"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "福島",
+    "fiscal_year": 2022,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0114"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "福島",
+    "fiscal_year": 2024,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0070"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "新潟",
+    "fiscal_year": 2020,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0147"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "富山",
+    "fiscal_year": 2023,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0087"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "長野",
+    "fiscal_year": 2023,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0089"
+    ],
+    "status": "人数一致"
+  },
+  {
+    "prefecture": "長野",
+    "fiscal_year": 2025,
+    "deaths": 1,
+    "pdf_page": 2,
+    "inventory_deaths": 1,
+    "incident_ids": [
+      "B0063"
+    ],
+    "status": "人数一致"
+  }
+]

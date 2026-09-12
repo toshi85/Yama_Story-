@@ -1,0 +1,30 @@
+{
+  "year": 2014,
+  "indexes": 16,
+  "visited": [
+    "https://www.ehako.com/news/news2014a/index0.shtml",
+    "https://www.ehako.com/news/news2014a/index37.shtml",
+    "https://www.ehako.com/news/news2014a/index36.shtml",
+    "https://www.ehako.com/news/news2014a/index35.shtml",
+    "https://www.ehako.com/news/news2014a/index34.shtml",
+    "https://www.ehako.com/news/news2014a/index33.shtml",
+    "https://www.ehako.com/news/news2014a/index32.shtml",
+    "https://www.ehako.com/news/news2014a/index31.shtml",
+    "https://www.ehako.com/news/news2014a/index30.shtml",
+    "https://www.ehako.com/news/news2014a/index29.shtml",
+    "https://www.ehako.com/news/news2014a/index28.shtml",
+    "https://www.ehako.com/news/news2014a/index27.shtml",
+    "https://www.ehako.com/news/news2014a/index26.shtml",
+    "https://www.ehako.com/news/news2014a/index25.shtml",
+    "https://www.ehako.com/news/news2014a/index24.shtml",
+    "https://www.ehako.com/news/news2014a/index23.shtml"
+  ],
+  "candidates": [
+    {
+      "title": "山菜採りクマに注意　複数で行動　グッズ携帯を",
+      "url": "https://www.ehako.com/news/news2014a/7340_index_msg.shtml",
+      "file": "expand_news_2014_7340.txt",
+      "error": null
+    }
+  ]
+}

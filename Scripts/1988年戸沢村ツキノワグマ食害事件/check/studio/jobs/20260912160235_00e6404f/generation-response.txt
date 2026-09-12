@@ -1,0 +1,39 @@
+STATUS: FAILED — 画像生成ツールが利用できない
+JOB: 20260912160235_00e6404f
+CUT: 21 / ASSET-021
+希望: 集落と現場が同時に映ってる画像にして
+保存先(未作成): check/studio/jobs/20260912160235_00e6404f/candidate_asset.png
+
+■ 結論
+このセッションには標準の画像生成ツールが読み込まれておらず、画像を1枚も生成できませんでした。
+指示どおり画像の捏造・代用は行っていないため、candidate_asset.png は作成していません。
+既存素材・shots.json は一切変更していません。
+
+■ 確認したこと（「できません」と言う前に潰した経路）
+1. imagegen スキルの存在確認 → 無し
+   - ~/.claude/skills/ : cloudflare系・web-perf 等のみ。imagegen は無い
+   - Antigravity/.claude/skills/ : Yama/Roblox系の35スキルのみ。imagegen は無い
+2. ツール検索（ToolSearch）を3回、語を変えて実行
+   - "image generation create image" / "imagegen generate photorealistic image from text prompt"
+     / "+image render picture png output"
+   - ヒットしたのは Blender の3Dモデル生成（Hyper3D / Hunyuan3D）、Roblox Studio の
+     スクリーンショット取得・アセットサムネイル取得のみ。テキストから2D画像を生成する
+     ツールは1件も存在しない
+3. 未認証MCP（claude.ai Gmail / Google Calendar / Google Drive / vidiq）→ いずれも画像生成機能は無く、
+   かつ本セッションは非対話のため authenticate 自体を実行できない
+4. 禁止事項に該当するため試していない経路: 有料API、FAL画像生成、ブラウザ代替、
+   SVG・描画コードでの代用（本指示で明示的に禁止）
+
+■ 再実行に必要なもの
+標準画像生成ツールが有効なセッション（またはツールを許可した環境）で同ジョブを再投入してください。
+プロンプトはそのまま使えます。下に確定版を再掲します。
+
+■ 使用予定だった最終プロンプト（16:9・1枚・そのまま再投入可）
+Photorealistic aerial oblique view of a small mountain hamlet in northern Yamagata, Japan, and the forested ravine directly above it, both clearly visible together in one frame. Camera: drone at roughly 700-900 m altitude, tilted about 45 degrees, wide 16:9 landscape, looking from the lower valley toward the upstream mountains so the settlement sits in the lower third of the frame and the wooded ravine recedes into the upper half. Foreground-lower area: a cluster of about fifteen traditional Japanese farmhouses with dark grey metal and tiled roofs, a few storage sheds and a small shrine grove, narrow paved lane, terraced rice paddies newly flooded and reflecting the sky, low stone retaining walls, parked light trucks - the houses are distinctly readable as a village, not hidden by trees. Middle and upper area: a narrow mountain stream and its gravel bed leading continuously from the edge of the hamlet up into a steep V-shaped ravine of dense beech and cedar forest, with a faint logging track along one bank, exposed rock and snow-free spring slopes, ridgelines layered into haze at the top of the frame, so the spatial relationship of village below and ravine upstream is instantly legible. Late May, fresh bright green new foliage contrasting with dark conifers, overcast soft daylight, subdued muted documentary color grading, slight atmospheric haze, natural desaturated tones, high detail, realistic satellite-to-drone survey photography look. Compositional space: keep the sky-free upper corners and the slope area between the village and the ravine relatively plain so captions can be added later. No people, no animals, no vehicles in motion, no text, no letters, no numbers, no map pins, no markers, no circles, no arrows, no UI overlays, no watermark, no logos, no borders, no modern high-rise buildings, no power pylons dominating the frame.
+
+■ 参考: 現行素材（source-frame.png）の問題点 ※次回の判断材料
+現行 ASSET-021 は Sentinel-2 の衛星地形で、画面ほぼ全面が暗い森。集落の家屋が一切見えず、
+黄色い楕円と「神田地区」ピンだけが乗っている状態。過去 brief「ただの森で何もわかりません」
+（20260908133544）の指摘が未解消のまま。今回の希望「集落と現場が同時に映ってる画像」は、
+上記プロンプト（下三分の一に集落、上半分に沢の上流）で満たせる構図になっている。
+文字・ピン・円は画像に焼き込まず、編集側で付ける前提（edit_note の指定どおり）。

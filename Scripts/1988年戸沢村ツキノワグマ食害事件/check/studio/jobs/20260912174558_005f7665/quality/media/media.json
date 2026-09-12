@@ -1,0 +1,26 @@
+{
+  "video": "check/studio/jobs/20260912174558_005f7665/quality/media/preview.mp4",
+  "video_sha256": "2ca0dd19c65db9bea999ecfa3d23bb91cd53189048e0afce1bc02ef0b68e3d01",
+  "duration": 6.27,
+  "frames": [
+    {
+      "time": 0.1,
+      "file": "check/studio/jobs/20260912174558_005f7665/quality/media/frame-00.jpg"
+    },
+    {
+      "time": 3.1333,
+      "file": "check/studio/jobs/20260912174558_005f7665/quality/media/frame-01.jpg"
+    },
+    {
+      "time": 6.2,
+      "file": "check/studio/jobs/20260912174558_005f7665/quality/media/frame-02.jpg"
+    }
+  ],
+  "checks": [
+    {
+      "requirement": "A カット尺",
+      "passed": true,
+      "evidence": "合成動画 6.270秒 / 指定 6.267秒"
+    }
+  ]
+}

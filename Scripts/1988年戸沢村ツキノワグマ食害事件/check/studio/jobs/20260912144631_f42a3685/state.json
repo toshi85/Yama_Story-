@@ -1,0 +1,93 @@
+{
+  "kind": "preview",
+  "shot_id": 9,
+  "id": "20260912144631_f42a3685",
+  "state": "review",
+  "created_at": "2026-09-12T05:46:31.371702+00:00",
+  "updated_at": "2026-09-12T05:46:40.354652+00:00",
+  "message": "修正後のカットを確認できます",
+  "shot": {
+    "id": 9,
+    "start_frame": 1198,
+    "end_frame": 1386,
+    "asset_id": "ASSET-009",
+    "asset_file": "check/studio/jobs/20260908142125_363e9ff7/candidate.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "戸沢村は、山形県の北にあり、人口およそ4,300人。",
+    "edit_note": "山形県の輪郭を白線でなぞり、戸沢村に赤ピンと「戸沢村」ラベル。「人口 約4,300人」を左下にテロップ。最上川の流路を細い水色のラインでなぞる。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "requested_kind": "preview",
+  "quality_checks": true,
+  "worker_pid": 27965,
+  "input_sha256": "158bb027cd081c1960d6b5bf8a0688b9dbd92a826ac1fd25d8c916c88e868c34",
+  "patch": {
+    "asset_file": "check/studio/jobs/20260912144547_c89b291f/source.mp4",
+    "asset_kind": "video"
+  },
+  "rendered_override": {
+    "asset_file": "check/studio/jobs/20260912144547_c89b291f/source.mp4",
+    "asset_kind": "video"
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "9",
+    "--override",
+    "{\"asset_file\": \"check/studio/jobs/20260912144547_c89b291f/source.mp4\", \"asset_kind\": \"video\"}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260912144631_f42a3685/preview.mp4",
+  "edit_layers": null,
+  "quality_review": {
+    "status": "media_checked",
+    "media": {
+      "video": "check/studio/jobs/20260912144631_f42a3685/quality/media/preview.mp4",
+      "video_sha256": "f8f16f453f2e130f6a64f768daf2e8d82afcaca4ce688185f2e6df5106e58fc3",
+      "duration": 6.27,
+      "frames": [
+        {
+          "time": 0.1,
+          "file": "check/studio/jobs/20260912144631_f42a3685/quality/media/frame-00.jpg"
+        },
+        {
+          "time": 3.1333,
+          "file": "check/studio/jobs/20260912144631_f42a3685/quality/media/frame-01.jpg"
+        },
+        {
+          "time": 6.2,
+          "file": "check/studio/jobs/20260912144631_f42a3685/quality/media/frame-02.jpg"
+        }
+      ],
+      "checks": [
+        {
+          "requirement": "A カット尺",
+          "passed": true,
+          "evidence": "合成動画 6.270秒 / 指定 6.267秒"
+        }
+      ]
+    }
+  }
+}

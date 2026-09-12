@@ -1,0 +1,16 @@
+{
+  "model": "minimax/h3-max-turbo",
+  "duration": 5,
+  "resolution": "768P",
+  "usd_per_second": "0.01",
+  "usd_per_clip": "0.05",
+  "estimated_jpy": "7.50",
+  "jpy_reference_rate": 150,
+  "source": "check/studio/jobs/20260908142125_363e9ff7/candidate.png",
+  "checked_at": "2026-09-12T05:45:44.842006+00:00",
+  "id": "b1fca9cec0084592b3e8c82412082bb6",
+  "timestamp": 1789191946.335498,
+  "prompt": "Live-action aerial drone footage of the same mountain village in the still image, held as one continuous 5-second shot with no cuts and no scene change. Very slow, smooth, steady push-in (dolly forward) toward the cluster of houses and rice paddies on the far bank of the wide river, the framing tightening gradually by only about 10-15 percent over the full 5 seconds; the horizon stays level and the composition, terrain, river course and building layout remain exactly as in the source image. Camera motion is gentle and continuous like a gimbal-stabilized drone in stable air, with no shake, no rotation, no orbit, no tilt change, no snap zoom. Only subtle natural ambience moves: faint drift of the pale clouds in the upper sky, soft glints and slow current on the greenish river surface, light breeze rippling the forested ridges. Bright clear early-summer daylight, natural color, deep green cedar-covered mountains, hazy blue distant ridgelines, documentary photographic realism. Do not add, remove or animate any people, vehicles, animals, aircraft, text, captions, labels, pins or graphic overlays. No blood, no wounds, no gore.",
+  "shot_id": 9,
+  "consumed": true
+}

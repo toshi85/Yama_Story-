@@ -1,0 +1,36 @@
+{
+  "year": 2013,
+  "indexes": 16,
+  "visited": [
+    "https://www.ehako.com/news/news2013a/index0.shtml",
+    "https://www.ehako.com/news/news2013a/index38.shtml",
+    "https://www.ehako.com/news/news2013a/index37.shtml",
+    "https://www.ehako.com/news/news2013a/index36.shtml",
+    "https://www.ehako.com/news/news2013a/index35.shtml",
+    "https://www.ehako.com/news/news2013a/index34.shtml",
+    "https://www.ehako.com/news/news2013a/index33.shtml",
+    "https://www.ehako.com/news/news2013a/index32.shtml",
+    "https://www.ehako.com/news/news2013a/index31.shtml",
+    "https://www.ehako.com/news/news2013a/index30.shtml",
+    "https://www.ehako.com/news/news2013a/index29.shtml",
+    "https://www.ehako.com/news/news2013a/index28.shtml",
+    "https://www.ehako.com/news/news2013a/index27.shtml",
+    "https://www.ehako.com/news/news2013a/index26.shtml",
+    "https://www.ehako.com/news/news2013a/index25.shtml",
+    "https://www.ehako.com/news/news2013a/index24.shtml"
+  ],
+  "candidates": [
+    {
+      "title": "入山時は鈴など携帯　クマに遭わない配慮を",
+      "url": "https://www.ehako.com/news/news2013a/5959_index_msg.shtml",
+      "file": "expand_news_2013_5959.txt",
+      "error": null
+    },
+    {
+      "title": "ヒグマ対策徹底、死亡事故受け会議",
+      "url": "https://www.ehako.com/news/news2013a/5981_index_msg.shtml",
+      "file": "expand_news_2013_5981.txt",
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "kind": "preview",
+  "shot_id": 3,
+  "id": "20260912142736_2b4a4444",
+  "state": "review",
+  "created_at": "2026-09-12T05:27:36.809128+00:00",
+  "updated_at": "2026-09-12T05:27:39.197865+00:00",
+  "message": "修正後のカットを確認できます",
+  "shot": {
+    "id": 3,
+    "start_frame": 361,
+    "end_frame": 523,
+    "asset_id": "ASSET-003",
+    "asset_file": "check/studio/jobs/20260908111128_c3400a64/candidate.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "さらに、200m先でクルミ拾いに出た女性も遺体で見つかり、",
+    "edit_note": "「200m先」テロップ。1件目からの距離であることを矢印つきの小さな図で右下に添える。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "requested_kind": "preview",
+  "quality_checks": true,
+  "worker_pid": 7264,
+  "input_sha256": "fbadc8071ba927511bc18ff5890723ff66fe358f993852d864c2ff02dd33ea73",
+  "patch": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260912142203_4e3462b0/source.mp4",
+    "asset_kind": "video"
+  },
+  "rendered_override": {
+    "telop": "",
+    "asset_file": "check/studio/jobs/20260912142203_4e3462b0/source.mp4",
+    "asset_kind": "video"
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "3",
+    "--override",
+    "{\"telop\": \"\", \"asset_file\": \"check/studio/jobs/20260912142203_4e3462b0/source.mp4\", \"asset_kind\": \"video\"}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260912142736_2b4a4444/preview.mp4",
+  "edit_layers": null,
+  "quality_review": {
+    "status": "media_checked",
+    "media": {
+      "video": "check/studio/jobs/20260912142736_2b4a4444/quality/media/preview.mp4",
+      "video_sha256": "bb80be8d6af398ae9bf4233b2ad0fcef71c9ee86f368216b1c329db691460408",
+      "duration": 5.4,
+      "frames": [
+        {
+          "time": 0.1,
+          "file": "check/studio/jobs/20260912142736_2b4a4444/quality/media/frame-00.jpg"
+        },
+        {
+          "time": 2.7,
+          "file": "check/studio/jobs/20260912142736_2b4a4444/quality/media/frame-01.jpg"
+        },
+        {
+          "time": 5.3333,
+          "file": "check/studio/jobs/20260912142736_2b4a4444/quality/media/frame-02.jpg"
+        }
+      ],
+      "checks": [
+        {
+          "requirement": "A カット尺",
+          "passed": true,
+          "evidence": "合成動画 5.400秒 / 指定 5.400秒"
+        }
+      ]
+    }
+  }
+}

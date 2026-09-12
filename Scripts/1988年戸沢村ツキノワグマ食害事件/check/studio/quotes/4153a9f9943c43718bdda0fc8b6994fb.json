@@ -1,0 +1,15 @@
+{
+  "model": "minimax/h3-max-turbo",
+  "duration": 5,
+  "resolution": "768P",
+  "usd_per_second": "0.01",
+  "usd_per_clip": "0.05",
+  "estimated_jpy": "7.50",
+  "jpy_reference_rate": 150,
+  "source": "check/studio/jobs/20260908111128_c3400a64/candidate.png",
+  "checked_at": "2026-09-12T05:21:51.321492+00:00",
+  "id": "4153a9f9943c43718bdda0fc8b6994fb",
+  "timestamp": 1789190512.337177,
+  "prompt": "Animate this exact photograph with wind only, keeping the identical camera position, framing and composition throughout. A steady autumn wind moves through the scene: the yellowing walnut leaves of the big tree flutter and shiver, the outer branches sway slowly up and down, the dry grass and weeds in the foreground and along the left edge bend and ripple in the same direction, and the forested hillside behind shifts subtly as the wind passes over it. A few loose leaves detach and drift down across the frame. The thick trunk and the heavy main limbs stay rooted and barely move. The person lying motionless on the ground beneath the tree remains completely still and unchanged in pose, position and clothing, with only the very edge of the garment fabric and hair trembling slightly in the wind. The fallen walnuts on the ground stay where they are. Cold flat overcast light, no change in exposure or color, no snow. 5 seconds, one continuous locked-off shot, no cuts, no zoom, no camera movement, no new people or animals entering the frame. Photorealistic, shot on RED camera, documentary drama style. No blood, no wounds, no gore.",
+  "shot_id": 3
+}

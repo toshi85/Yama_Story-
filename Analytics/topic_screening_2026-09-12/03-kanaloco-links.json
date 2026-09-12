@@ -1,0 +1,958 @@
+[
+  {
+    "text": "メインコンテンツに移動",
+    "url": "https://www.kanaloco.jp/news/social/entry-188392.html#main-content"
+  },
+  {
+    "text": "新しいコースの概要、変更はこちら",
+    "url": "https://www.kanaloco.jp/info/campaign-entry/#comparison"
+  },
+  {
+    "text": "menu",
+    "url": "https://www.kanaloco.jp/news/social/entry-188392.html#site-menu"
+  },
+  {
+    "text": "カナロコ",
+    "url": "https://www.kanaloco.jp/"
+  },
+  {
+    "text": "検索",
+    "url": "https://www.kanaloco.jp/news/social/entry-188392.html#site-search"
+  },
+  {
+    "text": "SP用ログイン",
+    "url": "javascript:void(0);"
+  },
+  {
+    "text": "新規登録",
+    "url": "https://www.kanaloco.jp/info/campaign-entry"
+  },
+  {
+    "text": "ログイン",
+    "url": "javascript:void(0);"
+  },
+  {
+    "text": "新規登録",
+    "url": "https://www.kanaloco.jp/info/campaign-entry"
+  },
+  {
+    "text": "ログイン",
+    "url": "javascript:void(0);"
+  },
+  {
+    "text": "マイページ",
+    "url": "https://www.kanaloco.jp/manage/mypage"
+  },
+  {
+    "text": "ログアウト",
+    "url": "javascript:void(0);"
+  },
+  {
+    "text": "ホーム",
+    "url": "https://www.kanaloco.jp/"
+  },
+  {
+    "text": "ニュース",
+    "url": "https://www.kanaloco.jp/news"
+  },
+  {
+    "text": "コロナ情報",
+    "url": "https://www.kanaloco.jp/tag/291"
+  },
+  {
+    "text": "社会",
+    "url": "https://www.kanaloco.jp/news/social"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/news/social"
+  },
+  {
+    "text": "事件事故",
+    "url": "https://www.kanaloco.jp/news/social/case"
+  },
+  {
+    "text": "政治・行政",
+    "url": "https://www.kanaloco.jp/news/government"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/news/government"
+  },
+  {
+    "text": "選挙",
+    "url": "https://www.kanaloco.jp/news/government/electiondata"
+  },
+  {
+    "text": "経済",
+    "url": "https://www.kanaloco.jp/news/economy"
+  },
+  {
+    "text": "カナBIZ",
+    "url": "https://www.kanaloco.jp/news/economy/kanabiz"
+  },
+  {
+    "text": "マーケット速報",
+    "url": "https://www.kanaloco.jp/news/economy/marketnews"
+  },
+  {
+    "text": "商況",
+    "url": "https://www.kanaloco.jp/news/economy/marketdata"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/news/economy"
+  },
+  {
+    "text": "教育",
+    "url": "https://www.kanaloco.jp/special/serial/schoolroom"
+  },
+  {
+    "text": "まちの話題",
+    "url": "https://www.kanaloco.jp/news/life"
+  },
+  {
+    "text": "国際",
+    "url": "https://www.kanaloco.jp/news/international"
+  },
+  {
+    "text": "減災",
+    "url": "https://www.kanaloco.jp/tag/減災新聞"
+  },
+  {
+    "text": "おくやみ",
+    "url": "https://www.kanaloco.jp/news/obituary"
+  },
+  {
+    "text": "人事",
+    "url": "https://www.kanaloco.jp/personnel"
+  },
+  {
+    "text": "職員・教員人事検索",
+    "url": "https://www.kanaloco.jp/personnel"
+  },
+  {
+    "text": "自治体",
+    "url": "https://www.kanaloco.jp/news/government/jinji"
+  },
+  {
+    "text": "企業",
+    "url": "https://www.kanaloco.jp/news/economy/kanabiz/jinji"
+  },
+  {
+    "text": "スポーツ",
+    "url": "https://www.kanaloco.jp/sports"
+  },
+  {
+    "text": "野球",
+    "url": "https://www.kanaloco.jp/sports/baseball"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/sports/baseball"
+  },
+  {
+    "text": "ベイスターズ",
+    "url": "https://www.kanaloco.jp/sports/baseball/baystars"
+  },
+  {
+    "text": "プロ野球",
+    "url": "https://www.kanaloco.jp/sports/baseball/npb"
+  },
+  {
+    "text": "高校野球",
+    "url": "https://www.kanaloco.jp/sports/baseball/hsbaseball"
+  },
+  {
+    "text": "大学野球",
+    "url": "https://www.kanaloco.jp/sports/baseball/jub"
+  },
+  {
+    "text": "社会人野球",
+    "url": "https://www.kanaloco.jp/sports/baseball/jab"
+  },
+  {
+    "text": "大リーグ",
+    "url": "https://www.kanaloco.jp/search?keyword=%E5%A4%A7%E3%83%AA%E3%83%BC%E3%82%B0"
+  },
+  {
+    "text": "サッカー",
+    "url": "https://www.kanaloco.jp/sports/soccer"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/sports/soccer"
+  },
+  {
+    "text": "横浜Ｆ・マリノス",
+    "url": "https://www.kanaloco.jp/sports/soccer/fmarinos"
+  },
+  {
+    "text": "川崎フロンターレ",
+    "url": "https://www.kanaloco.jp/sports/soccer/frontale"
+  },
+  {
+    "text": "湘南ベルマーレ",
+    "url": "https://www.kanaloco.jp/sports/soccer/bellmare"
+  },
+  {
+    "text": "横浜FC",
+    "url": "https://www.kanaloco.jp/sports/soccer/yokohamafc"
+  },
+  {
+    "text": "SC相模原",
+    "url": "https://www.kanaloco.jp/sports/soccer/scsagamihara"
+  },
+  {
+    "text": "YSCC横浜",
+    "url": "https://www.kanaloco.jp/tag/2903"
+  },
+  {
+    "text": "Jリーグ",
+    "url": "https://www.kanaloco.jp/sports/soccer/jleague"
+  },
+  {
+    "text": "バスケットボール",
+    "url": "https://www.kanaloco.jp/sports/basketball"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/sports/basketball"
+  },
+  {
+    "text": "横浜ビー・コルセアーズ",
+    "url": "https://www.kanaloco.jp/sports/basketball/b-corsairs"
+  },
+  {
+    "text": "川崎ブレイブサンダース",
+    "url": "https://www.kanaloco.jp/sports/basketball/kawasaki-bravethunders"
+  },
+  {
+    "text": "Bリーグ",
+    "url": "https://www.kanaloco.jp/sports/basketball/bleague"
+  },
+  {
+    "text": "その他スポーツ",
+    "url": "https://www.kanaloco.jp/sports/misc"
+  },
+  {
+    "text": "PREMIUM",
+    "url": "https://www.kanaloco.jp/rensai"
+  },
+  {
+    "text": "エリア別",
+    "url": "https://www.kanaloco.jp/kanagawa"
+  },
+  {
+    "text": "横浜エリア",
+    "url": "https://www.kanaloco.jp/kanagawa/yokohama_area"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/kanagawa/yokohama_area"
+  },
+  {
+    "text": "横浜みなと新聞",
+    "url": "https://www.kanaloco.jp/special/kikaku/minato"
+  },
+  {
+    "text": "川崎エリア",
+    "url": "https://www.kanaloco.jp/kanagawa/kawasaki_area"
+  },
+  {
+    "text": "相模原・県央エリア",
+    "url": "https://www.kanaloco.jp/kanagawa/sagamihara_area"
+  },
+  {
+    "text": "横須賀・三浦エリア",
+    "url": "https://www.kanaloco.jp/kanagawa/yokosuka_area"
+  },
+  {
+    "text": "湘南エリア",
+    "url": "https://www.kanaloco.jp/kanagawa/shonan_area"
+  },
+  {
+    "text": "小田原・県西エリア",
+    "url": "https://www.kanaloco.jp/kanagawa/odawara_area"
+  },
+  {
+    "text": "東京エリア",
+    "url": "https://www.kanaloco.jp/kanagawa/tokyo_area"
+  },
+  {
+    "text": "その他のエリア",
+    "url": "https://www.kanaloco.jp/kanagawa/other_area"
+  },
+  {
+    "text": "カルチャー",
+    "url": "https://www.kanaloco.jp/news/culture"
+  },
+  {
+    "text": "イマカナ",
+    "url": "https://www.kanaloco.jp/imakana"
+  },
+  {
+    "text": "文化・科学",
+    "url": "https://www.kanaloco.jp/news/culture/bunka"
+  },
+  {
+    "text": "芸能",
+    "url": "https://www.kanaloco.jp/news/culture/entertainment"
+  },
+  {
+    "text": "歌俳柳",
+    "url": "https://www.kanaloco.jp/news/culture/bunka/article-975389.html"
+  },
+  {
+    "text": "論説",
+    "url": "https://www.kanaloco.jp/special/discourse"
+  },
+  {
+    "text": "社説",
+    "url": "https://www.kanaloco.jp/special/discourse/editorial"
+  },
+  {
+    "text": "照明灯",
+    "url": "https://www.kanaloco.jp/special/discourse/lighting"
+  },
+  {
+    "text": "紙面ビューアー",
+    "url": "https://www.kanaloco.jp/paper"
+  },
+  {
+    "text": "ホーム",
+    "url": "https://www.kanaloco.jp/"
+  },
+  {
+    "text": "ニュース",
+    "url": "https://www.kanaloco.jp/news"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/news"
+  },
+  {
+    "text": "コロナ情報",
+    "url": "https://www.kanaloco.jp/tag/291"
+  },
+  {
+    "text": "社会",
+    "url": "https://www.kanaloco.jp/news/social"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/news/social"
+  },
+  {
+    "text": "事件事故",
+    "url": "https://www.kanaloco.jp/news/social/case"
+  },
+  {
+    "text": "政治・行政",
+    "url": "https://www.kanaloco.jp/news/government"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/news/government"
+  },
+  {
+    "text": "選挙",
+    "url": "https://www.kanaloco.jp/news/government/electiondata"
+  },
+  {
+    "text": "経済",
+    "url": "https://www.kanaloco.jp/news/economy"
+  },
+  {
+    "text": "カナBIZ",
+    "url": "https://www.kanaloco.jp/news/economy/kanabiz"
+  },
+  {
+    "text": "マーケット速報",
+    "url": "https://www.kanaloco.jp/news/economy/marketnews"
+  },
+  {
+    "text": "商況",
+    "url": "https://www.kanaloco.jp/news/economy/marketdata"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/news/economy"
+  },
+  {
+    "text": "教育",
+    "url": "https://www.kanaloco.jp/special/serial/schoolroom"
+  },
+  {
+    "text": "まちの話題",
+    "url": "https://www.kanaloco.jp/news/life"
+  },
+  {
+    "text": "国際",
+    "url": "https://www.kanaloco.jp/news/international"
+  },
+  {
+    "text": "減災",
+    "url": "https://www.kanaloco.jp/tag/減災新聞"
+  },
+  {
+    "text": "おくやみ",
+    "url": "https://www.kanaloco.jp/news/obituary"
+  },
+  {
+    "text": "人事",
+    "url": "https://www.kanaloco.jp/personnel"
+  },
+  {
+    "text": "職員・教員人事検索",
+    "url": "https://www.kanaloco.jp/personnel"
+  },
+  {
+    "text": "自治体",
+    "url": "https://www.kanaloco.jp/news/government/jinji"
+  },
+  {
+    "text": "企業",
+    "url": "https://www.kanaloco.jp/news/economy/kanabiz/jinji"
+  },
+  {
+    "text": "閉じる",
+    "url": "https://www.kanaloco.jp/news/social/entry-188392.html#close"
+  },
+  {
+    "text": "スポーツ",
+    "url": "https://www.kanaloco.jp/sports"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/sports"
+  },
+  {
+    "text": "野球",
+    "url": "https://www.kanaloco.jp/sports/baseball"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/sports/baseball"
+  },
+  {
+    "text": "ベイスターズ",
+    "url": "https://www.kanaloco.jp/sports/baseball/baystars"
+  },
+  {
+    "text": "プロ野球",
+    "url": "https://www.kanaloco.jp/sports/baseball/npb"
+  },
+  {
+    "text": "高校野球",
+    "url": "https://www.kanaloco.jp/sports/baseball/hsbaseball"
+  },
+  {
+    "text": "大学野球",
+    "url": "https://www.kanaloco.jp/sports/baseball/jub"
+  },
+  {
+    "text": "社会人野球",
+    "url": "https://www.kanaloco.jp/sports/baseball/jab"
+  },
+  {
+    "text": "大リーグ",
+    "url": "https://www.kanaloco.jp/search?keyword=%E5%A4%A7%E3%83%AA%E3%83%BC%E3%82%B0"
+  },
+  {
+    "text": "サッカー",
+    "url": "https://www.kanaloco.jp/sports/soccer"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/sports/soccer"
+  },
+  {
+    "text": "横浜Ｆ・マリノス",
+    "url": "https://www.kanaloco.jp/sports/soccer/fmarinos"
+  },
+  {
+    "text": "川崎フロンターレ",
+    "url": "https://www.kanaloco.jp/sports/soccer/frontale"
+  },
+  {
+    "text": "湘南ベルマーレ",
+    "url": "https://www.kanaloco.jp/sports/soccer/bellmare"
+  },
+  {
+    "text": "横浜FC",
+    "url": "https://www.kanaloco.jp/sports/soccer/yokohamafc"
+  },
+  {
+    "text": "SC相模原",
+    "url": "https://www.kanaloco.jp/sports/soccer/scsagamihara"
+  },
+  {
+    "text": "YSCC横浜",
+    "url": "https://www.kanaloco.jp/tag/2903"
+  },
+  {
+    "text": "Jリーグ",
+    "url": "https://www.kanaloco.jp/sports/soccer/jleague"
+  },
+  {
+    "text": "バスケットボール",
+    "url": "https://www.kanaloco.jp/sports/basketball"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/sports/basketball"
+  },
+  {
+    "text": "横浜ビー・コルセアーズ",
+    "url": "https://www.kanaloco.jp/sports/basketball/b-corsairs"
+  },
+  {
+    "text": "川崎ブレイブサンダース",
+    "url": "https://www.kanaloco.jp/sports/basketball/kawasaki-bravethunders"
+  },
+  {
+    "text": "Bリーグ",
+    "url": "https://www.kanaloco.jp/sports/basketball/bleague"
+  },
+  {
+    "text": "その他スポーツ",
+    "url": "https://www.kanaloco.jp/sports/misc"
+  },
+  {
+    "text": "閉じる",
+    "url": "https://www.kanaloco.jp/news/social/entry-188392.html#close"
+  },
+  {
+    "text": "PREMIUM",
+    "url": "https://www.kanaloco.jp/rensai"
+  },
+  {
+    "text": "エリア別",
+    "url": "https://www.kanaloco.jp/kanagawa"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/kanagawa"
+  },
+  {
+    "text": "横浜エリア",
+    "url": "https://www.kanaloco.jp/kanagawa/yokohama_area"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/kanagawa/yokohama_area"
+  },
+  {
+    "text": "横浜みなと新聞",
+    "url": "https://www.kanaloco.jp/special/kikaku/minato"
+  },
+  {
+    "text": "川崎エリア",
+    "url": "https://www.kanaloco.jp/kanagawa/kawasaki_area"
+  },
+  {
+    "text": "相模原・県央エリア",
+    "url": "https://www.kanaloco.jp/kanagawa/sagamihara_area"
+  },
+  {
+    "text": "横須賀・三浦エリア",
+    "url": "https://www.kanaloco.jp/kanagawa/yokosuka_area"
+  },
+  {
+    "text": "湘南エリア",
+    "url": "https://www.kanaloco.jp/kanagawa/shonan_area"
+  },
+  {
+    "text": "小田原・県西エリア",
+    "url": "https://www.kanaloco.jp/kanagawa/odawara_area"
+  },
+  {
+    "text": "東京エリア",
+    "url": "https://www.kanaloco.jp/kanagawa/tokyo_area"
+  },
+  {
+    "text": "その他のエリア",
+    "url": "https://www.kanaloco.jp/kanagawa/other_area"
+  },
+  {
+    "text": "閉じる",
+    "url": "https://www.kanaloco.jp/news/social/entry-188392.html#close"
+  },
+  {
+    "text": "カルチャー",
+    "url": "https://www.kanaloco.jp/news/culture"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/news/culture"
+  },
+  {
+    "text": "イマカナ",
+    "url": "https://www.kanaloco.jp/imakana"
+  },
+  {
+    "text": "文化・科学",
+    "url": "https://www.kanaloco.jp/news/culture/bunka"
+  },
+  {
+    "text": "芸能",
+    "url": "https://www.kanaloco.jp/news/culture/entertainment"
+  },
+  {
+    "text": "歌俳柳",
+    "url": "https://www.kanaloco.jp/news/culture/bunka/article-975389.html"
+  },
+  {
+    "text": "閉じる",
+    "url": "https://www.kanaloco.jp/news/social/entry-188392.html#close"
+  },
+  {
+    "text": "論説",
+    "url": "https://www.kanaloco.jp/special/discourse"
+  },
+  {
+    "text": "全て",
+    "url": "https://www.kanaloco.jp/special/discourse"
+  },
+  {
+    "text": "社説",
+    "url": "https://www.kanaloco.jp/special/discourse/editorial"
+  },
+  {
+    "text": "照明灯",
+    "url": "https://www.kanaloco.jp/special/discourse/lighting"
+  },
+  {
+    "text": "閉じる",
+    "url": "https://www.kanaloco.jp/news/social/entry-188392.html#close"
+  },
+  {
+    "text": "CLOSE",
+    "url": "https://www.kanaloco.jp/news/social/entry-188392.html#close"
+  },
+  {
+    "text": "ライト",
+    "url": "https://www.kanaloco.jp/news/social/entry-188392.html#theme-light"
+  },
+  {
+    "text": "ダーク",
+    "url": "https://www.kanaloco.jp/news/social/entry-188392.html#theme-dark"
+  },
+  {
+    "text": "Twitter",
+    "url": "https://twitter.com/kanalocolocal"
+  },
+  {
+    "text": "Facebook",
+    "url": "https://www.facebook.com/KanagawaShimbun/"
+  },
+  {
+    "text": "LINE",
+    "url": "https://line.me/R/ti/p/%40oa-kanagawa"
+  },
+  {
+    "text": "Instagram",
+    "url": "https://www.instagram.com/imakana777/?hl=ja"
+  },
+  {
+    "text": "Youtube",
+    "url": "https://www.youtube.com/user/kanaloco"
+  },
+  {
+    "text": "新規会員登録・コース案内",
+    "url": "https://www.kanaloco.jp/info/campaign-entry/"
+  },
+  {
+    "text": "ログイン",
+    "url": "javascript:void(0);"
+  },
+  {
+    "text": "カナロコの使い方",
+    "url": "https://www.kanaloco.jp/howto"
+  },
+  {
+    "text": "紙面ビューアー （＋電子版、新聞併読）",
+    "url": "https://www.kanaloco.jp/paper/"
+  },
+  {
+    "text": "有料記事",
+    "url": "https://www.kanaloco.jp/paid/"
+  },
+  {
+    "text": "エリアからニュースを探す",
+    "url": "https://www.kanaloco.jp/kanagawa/"
+  },
+  {
+    "text": "ニュース",
+    "url": "https://www.kanaloco.jp/news/"
+  },
+  {
+    "text": "経済（カナBIZ）",
+    "url": "https://www.kanaloco.jp/news/economy/kanabiz"
+  },
+  {
+    "text": "スポーツ",
+    "url": "https://www.kanaloco.jp/sports/"
+  },
+  {
+    "text": "カルチャー",
+    "url": "https://www.kanaloco.jp/news/culture/"
+  },
+  {
+    "text": "PREMIUM",
+    "url": "https://www.kanaloco.jp/rensai/"
+  },
+  {
+    "text": "お試し読みのご案内",
+    "url": "https://www.kanaloco.jp/company/read/shidoku.html"
+  },
+  {
+    "text": "定期購読のご案内",
+    "url": "https://www.kanaloco.jp/company/read/koudoku.html"
+  },
+  {
+    "text": "最新ニュース",
+    "url": "https://www.kanaloco.jp/news"
+  },
+  {
+    "text": "横浜市長選挙",
+    "url": "https://www.kanaloco.jp/news/government/electiondata/yokohama2026.html"
+  },
+  {
+    "text": "かながわの戦争遺跡",
+    "url": "https://www.kanaloco.jp/news/social/article-1296483.html"
+  },
+  {
+    "text": "ベイスターズ",
+    "url": "https://www.kanaloco.jp/sports/baseball/baystars/2026"
+  },
+  {
+    "text": "新聞２週間試読",
+    "url": "https://www.kanaloco.jp/company/read/shidoku.html"
+  },
+  {
+    "text": "ホーム",
+    "url": "https://www.kanaloco.jp/"
+  },
+  {
+    "text": "ニュース",
+    "url": "https://www.kanaloco.jp/news"
+  },
+  {
+    "text": "社会",
+    "url": "https://www.kanaloco.jp/news/social"
+  },
+  {
+    "text": "水難事故",
+    "url": "https://www.kanaloco.jp/taxonomy/term/1057"
+  },
+  {
+    "text": "減災",
+    "url": "https://www.kanaloco.jp/taxonomy/term/579"
+  },
+  {
+    "text": "フォロー・シェアボタン",
+    "url": "https://www.kanaloco.jp/news/social/entry-188392.html#menu-float01"
+  },
+  {
+    "text": "",
+    "url": "https://twitter.com/share?text="
+  },
+  {
+    "text": "",
+    "url": "https://www.facebook.com/sharer.php?u="
+  },
+  {
+    "text": "",
+    "url": "https://social-plugins.line.me/lineit/share?url="
+  },
+  {
+    "text": "X",
+    "url": "https://twitter.com/share?text="
+  },
+  {
+    "text": "Facebook",
+    "url": "https://www.facebook.com/sharer.php?u="
+  },
+  {
+    "text": "LINE",
+    "url": "https://social-plugins.line.me/lineit/share?url="
+  },
+  {
+    "text": "閉じる",
+    "url": "https://www.kanaloco.jp/news/social/entry-188392.html#close"
+  },
+  {
+    "text": "「どうしたら救えたか」　今なお悩む救助隊員たち",
+    "url": "https://www.kanaloco.jp/article/entry-188399.html"
+  },
+  {
+    "text": "命守る現場、動画で紹介　活動をＰＲ　藤沢市消防局",
+    "url": "https://www.kanaloco.jp/article/entry-185187.html"
+  },
+  {
+    "text": "",
+    "url": "https://www.kanaloco.jp/sports/baseball/baystars/2026"
+  },
+  {
+    "text": "",
+    "url": "https://www.kanaloco.jp/sports/baseball/hsbaseball"
+  },
+  {
+    "text": "",
+    "url": "https://www.kanaloco.jp/news/social/yamayuri-10.html"
+  },
+  {
+    "text": "",
+    "url": "https://www.kanaloco.jp/tag/5361"
+  },
+  {
+    "text": "",
+    "url": "https://www.kanaloco.jp/news/economy/article-995574.html"
+  },
+  {
+    "text": "",
+    "url": "https://www.kanaloco.jp/ohmykanagawa.html"
+  },
+  {
+    "text": "",
+    "url": "https://www.kanaloco.jp/news/social/GreatKantoEarthquake100th.html"
+  },
+  {
+    "text": "",
+    "url": "https://www.kanaloco.jp/special/kikaku/identity/"
+  },
+  {
+    "text": "",
+    "url": "https://kanagawashimbun-archives.jp/"
+  },
+  {
+    "text": "＞＞編集部おすすめまとめ一覧へ",
+    "url": "https://www.kanaloco.jp/rensai/matome"
+  },
+  {
+    "text": "Twitter",
+    "url": "https://twitter.com/kanalocolocal"
+  },
+  {
+    "text": "Facebook",
+    "url": "https://www.facebook.com/KanagawaShimbun/"
+  },
+  {
+    "text": "LINE",
+    "url": "https://line.me/R/ti/p/%40oa-kanagawa"
+  },
+  {
+    "text": "Instagram",
+    "url": "https://www.instagram.com/imakana777/?hl=ja"
+  },
+  {
+    "text": "Youtube",
+    "url": "https://www.youtube.com/user/kanaloco"
+  },
+  {
+    "text": "会社概要・アクセス",
+    "url": "https://www.kanaloco.jp/company/outline/outline.html"
+  },
+  {
+    "text": "採用情報",
+    "url": "https://www.kanaloco.jp/company/recruit/"
+  },
+  {
+    "text": "後援申請",
+    "url": "https://www.kanaloco.jp/company/outline/event_support.html"
+  },
+  {
+    "text": "おはようパズル",
+    "url": "https://www.kanaloco.jp/company/contact/puzzle.html"
+  },
+  {
+    "text": "自由の声",
+    "url": "https://www.kanaloco.jp/company/contact/voice.html"
+  },
+  {
+    "text": "歌俳柳",
+    "url": "https://www.kanaloco.jp/news/culture/bunka/article-975389.html"
+  },
+  {
+    "text": "お試し読みのご案内",
+    "url": "https://www.kanaloco.jp/company/read/shidoku.html"
+  },
+  {
+    "text": "定期購読のご案内",
+    "url": "https://www.kanaloco.jp/company/read/koudoku.html"
+  },
+  {
+    "text": "電子版購読のご案内",
+    "url": "https://www.kanaloco.jp/info/digitalservice"
+  },
+  {
+    "text": "有料コースのご案内",
+    "url": "https://www.kanaloco.jp/info/campaign-entry/"
+  },
+  {
+    "text": "ウエブ広告のご案内",
+    "url": "https://www.kanaloco.jp/company/ad/digital_ad.html"
+  },
+  {
+    "text": "新聞広告のご案内",
+    "url": "https://www.kanaloco.jp/company/ad/paper_ad.html"
+  },
+  {
+    "text": "書籍・自費出版のご案内",
+    "url": "http://www.kanagawa-shimbun-bookbar.com/"
+  },
+  {
+    "text": "H!P（高校生マガジン）",
+    "url": "https://www.kanaloco.jp/pr/hp_official"
+  },
+  {
+    "text": "かながわ音楽コンクール",
+    "url": "https://www.kanaloco.jp/kanacon/"
+  },
+  {
+    "text": "神奈川書家三十人展",
+    "url": "https://www.kanaloco.jp/kanashoka30/"
+  },
+  {
+    "text": "報道写真アーカイブズ",
+    "url": "http://www.kanagawashimbun-archives.jp/"
+  },
+  {
+    "text": "フォトサービス",
+    "url": "https://www.kanaloco.jp/company/contact/photoservice.html"
+  },
+  {
+    "text": "カナロコについて",
+    "url": "https://www.kanaloco.jp/info/campaign-entry/"
+  },
+  {
+    "text": "利用規約",
+    "url": "https://www.kanaloco.jp/company/info/terms.html"
+  },
+  {
+    "text": "サイトポリシー",
+    "url": "https://www.kanaloco.jp/company/info/policy.html"
+  },
+  {
+    "text": "個人情報保護",
+    "url": "https://www.kanaloco.jp/company/outline/privacy.html"
+  },
+  {
+    "text": "特定商取引法に基づく表示",
+    "url": "https://www.kanaloco.jp/company/info/info/trans.html"
+  },
+  {
+    "text": "著作権",
+    "url": "https://www.kanaloco.jp/company/outline/copyright.html"
+  },
+  {
+    "text": "よくある質問",
+    "url": "https://www.kanaloco.jp/company/contact/faq.html"
+  },
+  {
+    "text": "お問い合わせ",
+    "url": "https://www.kanaloco.jp/company/contact/contact_form.html"
+  }
+]

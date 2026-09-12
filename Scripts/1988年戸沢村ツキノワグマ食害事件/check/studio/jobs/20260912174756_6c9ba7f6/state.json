@@ -1,0 +1,150 @@
+{
+  "kind": "text",
+  "requested_kind": "text",
+  "shot_id": 9,
+  "brief": "",
+  "target": "asset",
+  "prompt": "",
+  "text_type": "plain",
+  "bubble_side": "",
+  "text_overlay": {
+    "text": "戸沢村（とざわむら）",
+    "x": 640,
+    "y": 180,
+    "size": 60,
+    "color": "#ffffff",
+    "font": "mincho",
+    "angle": 0,
+    "length": 300,
+    "thickness": 8,
+    "anim": "fade",
+    "anim_duration": 1,
+    "start": 0,
+    "end": 6.266
+  },
+  "id": "20260912174756_6c9ba7f6",
+  "state": "review",
+  "created_at": "2026-09-12T08:47:56.427163+00:00",
+  "updated_at": "2026-09-12T08:47:59.092788+00:00",
+  "message": "修正後のカットを確認できます",
+  "shot": {
+    "id": 9,
+    "start_frame": 1198,
+    "end_frame": 1386,
+    "asset_id": "ASSET-009",
+    "asset_file": "check/studio/jobs/20260912144547_c89b291f/source.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "戸沢村は、山形県の北にあり、人口およそ4,300人。",
+    "edit_note": "山形県の輪郭を白線でなぞり、戸沢村に赤ピンと「戸沢村」ラベル。「人口 約4,300人」を左下にテロップ。最上川の流路を細い水色のラインでなぞる。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "quality_checks": true,
+  "worker_pid": 42969,
+  "input_sha256": "141bbfb95d25f0eeb2d09cc1a44148a6004e0668dfbea98e652cee9945a53571",
+  "patch": {
+    "asset_file": "check/studio/jobs/20260912144547_c89b291f/source.mp4",
+    "asset_kind": "video",
+    "overlays": [
+      {
+        "text": "戸沢村（とざわむら）",
+        "x": 640,
+        "y": 180,
+        "size": 60,
+        "color": "#ffffff",
+        "font": "mincho",
+        "angle": 0,
+        "length": 300,
+        "thickness": 8,
+        "anim": "fade",
+        "anim_duration": 1,
+        "start": 0.0,
+        "end": 6.266,
+        "type": "text"
+      }
+    ]
+  },
+  "explanation": "テキスト「戸沢村（とざわむら）」を追加",
+  "rendered_override": {
+    "asset_file": "check/studio/jobs/20260912144547_c89b291f/source.mp4",
+    "asset_kind": "video",
+    "overlays": [
+      {
+        "text": "戸沢村（とざわむら）",
+        "x": 640,
+        "y": 180,
+        "size": 60,
+        "color": "#ffffff",
+        "font": "mincho",
+        "angle": 0,
+        "length": 300,
+        "thickness": 8,
+        "anim": "fade",
+        "anim_duration": 1,
+        "start": 0.0,
+        "end": 6.266,
+        "type": "text"
+      }
+    ]
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "9",
+    "--override",
+    "{\"asset_file\": \"check/studio/jobs/20260912144547_c89b291f/source.mp4\", \"asset_kind\": \"video\", \"overlays\": [{\"text\": \"戸沢村（とざわむら）\", \"x\": 640, \"y\": 180, \"size\": 60, \"color\": \"#ffffff\", \"font\": \"mincho\", \"angle\": 0, \"length\": 300, \"thickness\": 8, \"anim\": \"fade\", \"anim_duration\": 1, \"start\": 0.0, \"end\": 6.266, \"type\": \"text\"}]}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260912174756_6c9ba7f6/preview.mp4",
+  "edit_layers": null,
+  "quality_review": {
+    "status": "media_checked",
+    "media": {
+      "video": "check/studio/jobs/20260912174756_6c9ba7f6/quality/media/preview.mp4",
+      "video_sha256": "cb1d0595d973a6a4751d9bdd24725754cf107dffe34f76ac6f8565562943313d",
+      "duration": 6.27,
+      "frames": [
+        {
+          "time": 0.1,
+          "file": "check/studio/jobs/20260912174756_6c9ba7f6/quality/media/frame-00.jpg"
+        },
+        {
+          "time": 3.1333,
+          "file": "check/studio/jobs/20260912174756_6c9ba7f6/quality/media/frame-01.jpg"
+        },
+        {
+          "time": 6.2,
+          "file": "check/studio/jobs/20260912174756_6c9ba7f6/quality/media/frame-02.jpg"
+        }
+      ],
+      "checks": [
+        {
+          "requirement": "A カット尺",
+          "passed": true,
+          "evidence": "合成動画 6.270秒 / 指定 6.267秒"
+        }
+      ]
+    }
+  }
+}

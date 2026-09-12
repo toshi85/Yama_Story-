@@ -1,0 +1,10 @@
+{
+  "total": 508,
+  "eligible": 198,
+  "excluded": 221,
+  "unknown": 89,
+  "jbn": 54,
+  "non_jbn": 454,
+  "competition_absent": 503,
+  "death_records": 111
+}

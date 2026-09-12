@@ -1,0 +1,15 @@
+{
+  "model": "minimax/h3-max-turbo",
+  "duration": 5,
+  "resolution": "768P",
+  "usd_per_second": "0.01",
+  "usd_per_clip": "0.05",
+  "estimated_jpy": "7.50",
+  "jpy_reference_rate": 150,
+  "source": "check/studio/jobs/20260908111101_6b98d442/candidate.png",
+  "checked_at": "2026-09-12T01:21:32.151044+00:00",
+  "id": "3471913999324874ac26515051508bd5",
+  "timestamp": 1789176093.2004118,
+  "prompt": "Animate this exact photograph with a very slow, continuous push-in (dolly zoom toward the center of the frame), holding the identical composition and subject the whole time: a steep dark wooded ravine at night in late May, torch beams angling down from the upper left and upper center through the mist, and the single motionless figure lying face-down on the wet rocks of the stream bed in the lower middle of the frame. The camera creeps forward smoothly and gently over the full 5 seconds, easing in, so the figure and the beams grow slightly larger while staying in the same place in the frame; no pan, no tilt, no cut, no shake, no orbit. Only subtle ambient motion: the torch beams' volumetric shafts shimmer faintly and their edges breathe, mist drifts slowly across the beams, thin water trickles over the stones, and the bamboo grass and beech leaves stir very slightly in the night air. The body stays completely still and is never moved, re-lit or re-framed. No new people, no torch-holders, no animals or bears enter the frame, no light sources are added or removed, no new objects appear, no text or captions. Keep the same dim but readable night exposure, the same green foliage and dark wet rock, and the same color grade. No snow, no winter. Photorealistic, shot on RED camera, documentary drama style, 16:9, 5 seconds.",
+  "shot_id": 2
+}

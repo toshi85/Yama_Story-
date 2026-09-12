@@ -1,0 +1,36 @@
+{
+  "name": "shimane_plan_page",
+  "url": "https://www.pref.shimane.lg.jp/industry/norin/choujyu_taisaku/chojuhogo.html",
+  "links": [
+    {
+      "title": "第13次鳥獣保護管理事業計画の概要（ＰＤＦファイル：１０５ＫＢ）",
+      "url": "https://www.pref.shimane.lg.jp/industry/norin/choujyu_taisaku/chojuhogo.data/13ji_gaiyou.pdf"
+    },
+    {
+      "title": "第13次鳥獣保護管理事業計画（令和４年３月策定）（ＰＤＦファイル：４１１４ＫＢ）",
+      "url": "https://www.pref.shimane.lg.jp/industry/norin/choujyu_taisaku/chojuhogo.data/13ji.pdf"
+    },
+    {
+      "title": "特定計画の概要（ＰＤＦファイル：１１０ＫＢ）",
+      "url": "https://www.pref.shimane.lg.jp/industry/norin/choujyu_taisaku/chojuhogo.data/tokutei_gaiyou.pdf"
+    },
+    {
+      "title": "第二種特定鳥獣（イノシシ）管理計画（令和４年３月策定）（ＰＤＦファイル：１９３１ＫＢ）",
+      "url": "https://www.pref.shimane.lg.jp/industry/norin/choujyu_taisaku/chojuhogo.data/inosisi.pdf"
+    },
+    {
+      "title": "第二種特定鳥獣（ニホンジカ）管理計画（令和４年３月策定）（ＰＤＦファイル：４５０５ＫＢ）",
+      "url": "https://www.pref.shimane.lg.jp/industry/norin/choujyu_taisaku/chojuhogo.data/sika.pdf"
+    },
+    {
+      "title": "第二種特定鳥獣（ツキノワグマ）管理計画（令和４年３月策定）（ＰＤＦファイル：８０９５ＫＢ）",
+      "url": "https://www.pref.shimane.lg.jp/industry/norin/choujyu_taisaku/chojuhogo.data/kuma.pdf"
+    },
+    {
+      "title": "ツキノワグマの保護管理について",
+      "url": "https://www.pref.shimane.lg.jp/industry/norin/choujyu_taisaku/kuma_hogokanri.html"
+    }
+  ],
+  "sha256": "7c8cd8f55058048d19ad628835cb509cefdccda0162a027423ae5b20de732bbb",
+  "file": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/bear_inventory_2026-09-12/_sources/shimane_plan_page.html"
+}

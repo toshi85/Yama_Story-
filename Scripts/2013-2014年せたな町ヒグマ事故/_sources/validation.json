@@ -1,0 +1,27 @@
+{
+  "A_rows": 48,
+  "A_local_rows": 45,
+  "A_external_rows": 3,
+  "B_rows": 0,
+  "C_rows": 0,
+  "tier1_conservative_count": 4,
+  "tier1_ids": [
+    "S1",
+    "S4",
+    "S5",
+    "S6"
+  ],
+  "all_A_rows_have_source_id": true,
+  "ids_sequential": true,
+  "missing_link_targets": [],
+  "checked_local_links": 21,
+  "unknown_items_with_attempts": 14,
+  "victim_names": "本文目視確認：実名0件。被害者を52歳女性／45歳女性と表記。未知の実名辞書照合ではない。",
+  "no_script_or_plot": true,
+  "limitations": [
+    "事故の精密座標・時刻は不明",
+    "2014年照合の正確な完了日と2015年原公表文・鑑定書は未取得",
+    "空白期間の行動と本件に伴う制度変更は不明"
+  ],
+  "verified_at": "2026-09-12T09:47:38.306769+00:00"
+}

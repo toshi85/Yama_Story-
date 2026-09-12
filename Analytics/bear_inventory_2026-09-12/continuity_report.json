@@ -1,0 +1,57 @@
+{
+  "checked_at": 1789207912.466571,
+  "production_complete": false,
+  "work_running": false,
+  "items": [
+    {
+      "id": "jbn",
+      "title": "JBN全地域の事故抽出と出典範囲確認",
+      "status": "waiting_external",
+      "reason": "一次資料未確認例の暫定掲載・追加調査範囲をClaude Codeが裁定。未完了箇所はunresolved.md参照。",
+      "owner": "Codex"
+    },
+    {
+      "id": "prefectures",
+      "title": "16道県の管理計画・人身事故資料",
+      "status": "complete",
+      "reason": "結果はClaude Codeが確認。死亡全件の受け入れは未達。",
+      "owner": "Codex"
+    },
+    {
+      "id": "env",
+      "title": "環境省年度統計による死亡事例の不足確認",
+      "status": "waiting_external",
+      "reason": "一次資料未確認例の暫定掲載・追加調査範囲をClaude Codeが裁定。未完了箇所はunresolved.md参照。",
+      "owner": "Codex"
+    },
+    {
+      "id": "recent",
+      "title": "2011年以降の死亡・重傷・複数人被害の一次資料補完",
+      "status": "waiting_external",
+      "reason": "一次資料未確認例の暫定掲載・追加調査範囲をClaude Codeが裁定。未完了箇所はunresolved.md参照。",
+      "owner": "Codex"
+    },
+    {
+      "id": "normalize",
+      "title": "重複整理・全項目とABC判定",
+      "status": "waiting_external",
+      "reason": "一次資料未確認例の暫定掲載・追加調査範囲をClaude Codeが裁定。未完了箇所はunresolved.md参照。",
+      "owner": "Codex"
+    },
+    {
+      "id": "crossmatch",
+      "title": "投稿済み・Scripts・競合タイトル照合",
+      "status": "complete",
+      "reason": "結果はClaude Codeが確認。死亡全件の受け入れは未達。",
+      "owner": "Codex"
+    },
+    {
+      "id": "deliver",
+      "title": "新しい年順の一覧保存・受け入れ検査",
+      "status": "complete",
+      "reason": "結果はClaude Codeが確認。死亡全件の受け入れは未達。",
+      "owner": "Codex"
+    }
+  ],
+  "remaining": 4
+}

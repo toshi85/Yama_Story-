@@ -1,0 +1,286 @@
+{
+  "kind": "adjust",
+  "requested_kind": "adjust",
+  "base_candidate": "20260912150509_5e048a6a",
+  "shot_id": 14,
+  "brief": "カット内の位置・文言・人物の動きをまとめて編集",
+  "target": "asset",
+  "prompt": "",
+  "patch": {
+    "base_x": -406,
+    "base_y": 40,
+    "tail_tip_dx": 117,
+    "tail_tip_dy": -17,
+    "speech_segments": [
+      {
+        "text": "すぐ帰って\nくるでしょ",
+        "start": 0.5,
+        "end": 5.833333333333333
+      }
+    ],
+    "speech": "すぐ帰って\nくるでしょ",
+    "bubble_dx": 322,
+    "bubble_dy": -80,
+    "character_position": [
+      239,
+      272
+    ],
+    "speech_position": [
+      561,
+      192
+    ],
+    "motion": "still",
+    "move_sec": 3.1,
+    "amount": 1,
+    "scale": 1,
+    "flip": false,
+    "background_file": "画像/ASSET-014-1.png",
+    "motion_path": null
+  },
+  "auto_adopt": true,
+  "id": "20260912151108_6f8f1ce9",
+  "state": "adopted",
+  "created_at": "2026-09-12T06:11:08.289906+00:00",
+  "updated_at": "2026-09-12T06:11:19.036903+00:00",
+  "message": "修正後のカットを確認できます",
+  "shot": {
+    "id": 14,
+    "start_frame": 2052,
+    "end_frame": 2227,
+    "asset_id": "ASSET-014",
+    "asset_file": "画像/ASSET-014.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-014-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "奥さんは夕方には戻ってくるだろうと思い、そのまま見送ることに。",
+    "edit_note": "CHAR-02を画面手前に置き、背景の道だけをわずかにズームイン（4秒で1.0→1.08）。BGMはまだ入れない。",
+    "speech": "",
+    "motion": "walk_cross",
+    "drift": [
+      -307,
+      -28
+    ],
+    "move_sec": 3.1,
+    "base_x": -188,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false,
+    "base_y": 10
+  },
+  "quality_checks": true,
+  "worker_pid": 46216,
+  "input_sha256": "158bb027cd081c1960d6b5bf8a0688b9dbd92a826ac1fd25d8c916c88e868c34",
+  "explanation": "カット内の位置・文言・人物の動きをまとめて編集",
+  "rendered_override": {
+    "base_x": -406,
+    "base_y": 40,
+    "tail_tip_dx": 117,
+    "tail_tip_dy": -17,
+    "speech_segments": [
+      {
+        "text": "すぐ帰って\nくるでしょ",
+        "start": 0.5,
+        "end": 5.833333333333333
+      }
+    ],
+    "speech": "すぐ帰って\nくるでしょ",
+    "bubble_dx": 322,
+    "bubble_dy": -80,
+    "character_position": [
+      239,
+      272
+    ],
+    "speech_position": [
+      561,
+      192
+    ],
+    "motion": "still",
+    "move_sec": 3.1,
+    "amount": 1,
+    "scale": 1,
+    "flip": false,
+    "background_file": "画像/ASSET-014-1.png",
+    "motion_path": null
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "14",
+    "--override",
+    "{\"base_x\": -406, \"base_y\": 40, \"tail_tip_dx\": 117, \"tail_tip_dy\": -17, \"speech_segments\": [{\"text\": \"すぐ帰って\\nくるでしょ\", \"start\": 0.5, \"end\": 5.833333333333333}], \"speech\": \"すぐ帰って\\nくるでしょ\", \"bubble_dx\": 322, \"bubble_dy\": -80, \"character_position\": [239, 272], \"speech_position\": [561, 192], \"motion\": \"still\", \"move_sec\": 3.1, \"amount\": 1, \"scale\": 1, \"flip\": false, \"background_file\": \"画像/ASSET-014-1.png\", \"motion_path\": null}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260912151108_6f8f1ce9/preview.mp4",
+  "edit_layers": {
+    "character": "check/studio/jobs/20260912151108_6f8f1ce9/edit_layers/character.png",
+    "background": "画像/ASSET-014-1.png",
+    "meta": {
+      "pad_l": 0,
+      "pad_t": 80,
+      "char_w": 396,
+      "char_h": 396,
+      "cw": 574,
+      "ch": 476,
+      "bubble": [
+        322,
+        0,
+        252,
+        168
+      ],
+      "mouth": [
+        186,
+        158
+      ],
+      "tail_tip": [
+        303,
+        141
+      ],
+      "char_center": [
+        201.5,
+        198.0
+      ]
+    },
+    "source": "画像/ASSET-014.png",
+    "source_sha256": "7ca9e7e3dd7a710212f4d6f53560d2407bd6ffa8dc688939a2fc7c39f6a1dfd4"
+  },
+  "quality_review": {
+    "status": "media_checked",
+    "media": {
+      "video": "check/studio/jobs/20260912151108_6f8f1ce9/quality/media/preview.mp4",
+      "video_sha256": "3f8355c254e9ee42c0c87311aa28af7326e03d3b555458afe545f6c59d731464",
+      "duration": 5.83,
+      "frames": [
+        {
+          "time": 0.1,
+          "file": "check/studio/jobs/20260912151108_6f8f1ce9/quality/media/frame-00.jpg"
+        },
+        {
+          "time": 0.5,
+          "file": "check/studio/jobs/20260912151108_6f8f1ce9/quality/media/frame-01.jpg"
+        },
+        {
+          "time": 2.9167,
+          "file": "check/studio/jobs/20260912151108_6f8f1ce9/quality/media/frame-02.jpg"
+        },
+        {
+          "time": 3.1667,
+          "file": "check/studio/jobs/20260912151108_6f8f1ce9/quality/media/frame-03.jpg"
+        },
+        {
+          "time": 5.763333333333334,
+          "file": "check/studio/jobs/20260912151108_6f8f1ce9/quality/media/frame-04.jpg"
+        }
+      ],
+      "checks": [
+        {
+          "requirement": "A カット尺",
+          "passed": true,
+          "evidence": "合成動画 5.830秒 / 指定 5.833秒"
+        },
+        {
+          "requirement": "D 吹き出しは頭上",
+          "passed": null,
+          "evidence": "人物層の矩形がない、または複数セリフのため映像確認が必要"
+        }
+      ]
+    }
+  },
+  "before_override": {
+    "base_x": -406,
+    "base_y": 40,
+    "tail_tip_dx": 117,
+    "tail_tip_dy": -17,
+    "speech_segments": [
+      {
+        "text": "すぐ帰って\nくるでしょ",
+        "start": 0.5,
+        "end": 5.833333333333333
+      }
+    ],
+    "speech": "すぐ帰って\nくるでしょ",
+    "bubble_dx": 322,
+    "bubble_dy": -80,
+    "character_position": [
+      239,
+      272
+    ],
+    "speech_position": [
+      561,
+      192
+    ]
+  },
+  "before_shot": {
+    "id": 14,
+    "start_frame": 2052,
+    "end_frame": 2227,
+    "asset_id": "ASSET-014",
+    "asset_file": "画像/ASSET-014.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-014-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "奥さんは夕方には戻ってくるだろうと思い、そのまま見送ることに。",
+    "edit_note": "CHAR-02を画面手前に置き、背景の道だけをわずかにズームイン（4秒で1.0→1.08）。BGMはまだ入れない。",
+    "speech": "",
+    "motion": "walk_cross",
+    "drift": [
+      -307,
+      -28
+    ],
+    "move_sec": 3.1,
+    "base_x": -188,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false,
+    "base_y": 10
+  },
+  "adopted_at": "2026-09-12T06:11:19.036856+00:00",
+  "applied_override": {
+    "base_x": -406,
+    "base_y": 40,
+    "tail_tip_dx": 117,
+    "tail_tip_dy": -17,
+    "speech_segments": [
+      {
+        "text": "すぐ帰って\nくるでしょ",
+        "start": 0.5,
+        "end": 5.833333333333333
+      }
+    ],
+    "speech": "すぐ帰って\nくるでしょ",
+    "bubble_dx": 322,
+    "bubble_dy": -80,
+    "character_position": [
+      239,
+      272
+    ],
+    "speech_position": [
+      561,
+      192
+    ],
+    "motion": "still",
+    "move_sec": 3.1,
+    "amount": 1,
+    "scale": 1,
+    "flip": false,
+    "background_file": "画像/ASSET-014-1.png",
+    "motion_path": null
+  }
+}

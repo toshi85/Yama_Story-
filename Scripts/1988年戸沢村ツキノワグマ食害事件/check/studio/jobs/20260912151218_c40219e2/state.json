@@ -1,0 +1,74 @@
+{
+  "kind": "adjust",
+  "requested_kind": "adjust",
+  "shot_id": 17,
+  "brief": "カット内の位置・文言・人物の動きをまとめて編集",
+  "target": "asset",
+  "prompt": "",
+  "patch": {
+    "speech_segments": [
+      {
+        "text": "もしもし！",
+        "start": 0.5,
+        "end": 2
+      },
+      {
+        "text": "警察ですか？",
+        "start": 0,
+        "end": 4.5
+      }
+    ]
+  },
+  "auto_adopt": true,
+  "id": "20260912151218_c40219e2",
+  "state": "failed",
+  "created_at": "2026-09-12T06:12:18.748249+00:00",
+  "updated_at": "2026-09-12T06:12:18.858754+00:00",
+  "message": "セリフの開始・終了はカット内で、重ならない順に指定してください",
+  "shot": {
+    "id": 17,
+    "start_frame": 2480,
+    "end_frame": 2640,
+    "asset_id": "ASSET-017",
+    "asset_file": "画像/ASSET-017.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-017-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "暗くなっても戻らない夫を心配して、奥さんが警察に通報。",
+    "edit_note": "ダイヤルを回す音と呼び出し音のSE。「午後9時過ぎ 新庄署へ通報」テロップ。BGMは入れない。",
+    "speech": "もしもし！",
+    "motion": "still",
+    "drift": [
+      -563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false,
+    "motion_path": null,
+    "character_position": [
+      162,
+      252
+    ],
+    "speech_position": [
+      461,
+      253
+    ],
+    "bubble_dx": -252,
+    "bubble_dy": 61
+  },
+  "quality_checks": true,
+  "worker_pid": 46794,
+  "input_sha256": "158bb027cd081c1960d6b5bf8a0688b9dbd92a826ac1fd25d8c916c88e868c34",
+  "exit_code": 1
+}

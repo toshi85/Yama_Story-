@@ -1,0 +1,16 @@
+{
+  "name": "yamagata_death2026",
+  "url": "https://www.pref.yamagata.jp/050011/midori/0525kumapress.html",
+  "links": [
+    {
+      "title": "クマに注意チラシ（PDF：1,194KB）",
+      "url": "https://www.pref.yamagata.jp/documents/52483/kumatyuui.pdf"
+    },
+    {
+      "title": "クマ出没警報発令中チラシ（PDF：330KB）",
+      "url": "https://www.pref.yamagata.jp/documents/52483/kumakeihou.pdf"
+    }
+  ],
+  "sha256": "28bed6641fbbcdf5a879dec7f334f07754b5e7b794105c281ee00c012fbae5b4",
+  "file": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/bear_inventory_2026-09-12/_sources/yamagata_death2026.html"
+}

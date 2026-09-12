@@ -1,0 +1,240 @@
+{
+  "kind": "adjust",
+  "requested_kind": "adjust",
+  "shot_id": 7,
+  "brief": "カット内の位置・文言・人物の動きをまとめて編集",
+  "target": "asset",
+  "prompt": "",
+  "patch": {
+    "question_outline": 4,
+    "question": "",
+    "telop": "なぜ人を食べたのか？",
+    "telop_position": [
+      640,
+      360
+    ],
+    "telop_start": 1,
+    "telop_end": 5,
+    "telop_anim": "fade",
+    "telop_highlights": [
+      {
+        "text": "人",
+        "color": "#FF0000"
+      }
+    ],
+    "telop_anim_duration": 1
+  },
+  "auto_adopt": true,
+  "id": "20260912174209_bbe8b6f8",
+  "state": "adopted",
+  "created_at": "2026-09-12T08:42:09.489033+00:00",
+  "updated_at": "2026-09-12T08:42:13.540890+00:00",
+  "message": "修正後のカットを確認できます",
+  "shot": {
+    "id": 7,
+    "start_frame": 936,
+    "end_frame": 1090,
+    "asset_id": "ASSET-007",
+    "asset_file": "画像/ASSET-007.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "そしてなぜ、このクマは満腹なのに人を食べたのか？",
+    "edit_note": "「満腹なのに、なぜ人を食べたのか？」を下段に白テロップ。クマが顔を上げるところで音を切る。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "なぜ人を食べたのか？"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false,
+    "question_outline": 4.0,
+    "telop_highlights": [
+      {
+        "text": "人",
+        "color": "#FF0000"
+      }
+    ],
+    "telop_start": 1.0,
+    "telop_end": 3.966666666666667,
+    "telop_anim": "fade",
+    "telop_anim_duration": 1,
+    "telop_position": [
+      640,
+      360
+    ]
+  },
+  "quality_checks": true,
+  "worker_pid": 38947,
+  "input_sha256": "141bbfb95d25f0eeb2d09cc1a44148a6004e0668dfbea98e652cee9945a53571",
+  "explanation": "カット内の位置・文言・人物の動きをまとめて編集",
+  "rendered_override": {
+    "question_outline": 4,
+    "question": "",
+    "telop": "なぜ人を食べたのか？",
+    "telop_position": [
+      640,
+      360
+    ],
+    "telop_start": 1,
+    "telop_end": 5,
+    "telop_anim": "fade",
+    "telop_highlights": [
+      {
+        "text": "人",
+        "color": "#FF0000"
+      }
+    ],
+    "telop_anim_duration": 1
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "7",
+    "--override",
+    "{\"question_outline\": 4, \"question\": \"\", \"telop\": \"なぜ人を食べたのか？\", \"telop_position\": [640, 360], \"telop_start\": 1, \"telop_end\": 5, \"telop_anim\": \"fade\", \"telop_highlights\": [{\"text\": \"人\", \"color\": \"#FF0000\"}], \"telop_anim_duration\": 1}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260912174209_bbe8b6f8/preview.mp4",
+  "edit_layers": null,
+  "quality_review": {
+    "status": "media_checked",
+    "media": {
+      "video": "check/studio/jobs/20260912174209_bbe8b6f8/quality/media/preview.mp4",
+      "video_sha256": "cb1d02f2f1e6d2947bbc27ea7429a261df4d93a6bf3732b02af09dd8814688e4",
+      "duration": 5.13,
+      "frames": [
+        {
+          "time": 0.1,
+          "file": "check/studio/jobs/20260912174209_bbe8b6f8/quality/media/frame-00.jpg"
+        },
+        {
+          "time": 0.9667,
+          "file": "check/studio/jobs/20260912174209_bbe8b6f8/quality/media/frame-01.jpg"
+        },
+        {
+          "time": 1.0333,
+          "file": "check/studio/jobs/20260912174209_bbe8b6f8/quality/media/frame-02.jpg"
+        },
+        {
+          "time": 2.5667,
+          "file": "check/studio/jobs/20260912174209_bbe8b6f8/quality/media/frame-03.jpg"
+        },
+        {
+          "time": 5.0633333333333335,
+          "file": "check/studio/jobs/20260912174209_bbe8b6f8/quality/media/frame-04.jpg"
+        }
+      ],
+      "checks": [
+        {
+          "requirement": "A カット尺",
+          "passed": true,
+          "evidence": "合成動画 5.130秒 / 指定 5.133秒"
+        }
+      ]
+    }
+  },
+  "before_override": {
+    "question_outline": 4,
+    "question": "",
+    "telop": "なぜ人を食べたのか？",
+    "telop_position": [
+      640,
+      360
+    ],
+    "telop_start": 1.0,
+    "telop_end": 3.966666666666667,
+    "telop_anim": "fade",
+    "telop_highlights": [
+      {
+        "text": "人",
+        "color": "#FF0000"
+      }
+    ],
+    "telop_anim_duration": 1
+  },
+  "before_shot": {
+    "id": 7,
+    "start_frame": 936,
+    "end_frame": 1090,
+    "asset_id": "ASSET-007",
+    "asset_file": "画像/ASSET-007.png",
+    "asset_kind": "image",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "そしてなぜ、このクマは満腹なのに人を食べたのか？",
+    "edit_note": "「満腹なのに、なぜ人を食べたのか？」を下段に白テロップ。クマが顔を上げるところで音を切る。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [
+      "なぜ人を食べたのか？"
+    ],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false,
+    "question_outline": 4.0,
+    "telop_highlights": [
+      {
+        "text": "人",
+        "color": "#FF0000"
+      }
+    ],
+    "telop_start": 1.0,
+    "telop_end": 3.966666666666667,
+    "telop_anim": "fade",
+    "telop_anim_duration": 1,
+    "telop_position": [
+      640,
+      360
+    ]
+  },
+  "adopted_at": "2026-09-12T08:42:13.540822+00:00",
+  "applied_override": {
+    "question_outline": 4,
+    "question": "",
+    "telop": "なぜ人を食べたのか？",
+    "telop_position": [
+      640,
+      360
+    ],
+    "telop_start": 1,
+    "telop_end": 5,
+    "telop_anim": "fade",
+    "telop_highlights": [
+      {
+        "text": "人",
+        "color": "#FF0000"
+      }
+    ],
+    "telop_anim_duration": 1
+  }
+}

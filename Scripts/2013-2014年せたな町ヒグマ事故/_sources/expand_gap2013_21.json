@@ -1,0 +1,452 @@
+{
+  "url": "https://www.ehako.com/news/news2013a/index2.shtml",
+  "pages": 1,
+  "characters": 2898,
+  "format": "text extraction; personal names omitted; original binary not saved",
+  "links": [
+    {
+      "text": "",
+      "url": "https://www.ehako.com/index.shtml"
+    },
+    {
+      "text": "MENU",
+      "url": "https://www.ehako.com/news/news2013a/index2.shtml#"
+    },
+    {
+      "text": "函館地域ニュース",
+      "url": "https://www.ehako.com/news/"
+    },
+    {
+      "text": "ブックマーク",
+      "url": "https://www.ehako.com/bookmark/"
+    },
+    {
+      "text": "週刊いーハコ",
+      "url": "https://www.ehako.com/weekly/"
+    },
+    {
+      "text": "イベントカレンダー",
+      "url": "https://www.ehako.org/event/"
+    },
+    {
+      "text": "函館ネタブログ",
+      "url": "http://www.ehako.org/neta/"
+    },
+    {
+      "text": "函館旅行",
+      "url": "https://www.ehako.com/hakotabi/"
+    },
+    {
+      "text": "函館スポット",
+      "url": "https://www.ehako.com/maps/"
+    },
+    {
+      "text": "函館の写真・壁紙",
+      "url": "https://www.ehako.com/photo.html"
+    },
+    {
+      "text": "フォト散歩壁紙",
+      "url": "https://www.ehako.com/photo01/"
+    },
+    {
+      "text": "フォト散歩ブログ",
+      "url": "http://www.ehako.org/photowalk/"
+    },
+    {
+      "text": "フォトアーカイブ",
+      "url": "http://photolog.ehako.org/"
+    },
+    {
+      "text": "ホーム",
+      "url": "https://www.ehako.com/"
+    },
+    {
+      "text": "",
+      "url": "https://www.ehako.com/news/"
+    },
+    {
+      "text": "函館地域ニュースアーカイブ2013 by 函館新聞社",
+      "url": "https://www.ehako.com/news/news2013a/"
+    },
+    {
+      "text": "女性にうれしい生活情報満載、サイト「ＨＡＫＯ―ＬＩＦＥ」開設",
+      "url": "https://www.ehako.com/news/news2013a/6891_index_msg.shtml"
+    },
+    {
+      "text": "函商高と台湾の中学校交流",
+      "url": "https://www.ehako.com/news/news2013a/6890_index_msg.shtml"
+    },
+    {
+      "text": "ジャズ聴ける店を紹介、財団職員がリーフレット作成中",
+      "url": "https://www.ehako.com/news/news2013a/6889_index_msg.shtml"
+    },
+    {
+      "text": "廃校・江差南高　購入の意向　被災障害者らの就業場所などに",
+      "url": "https://www.ehako.com/news/news2013a/6888_index_msg.shtml"
+    },
+    {
+      "text": "「らっくる号」３台目が来た　早ければ年内デビュー",
+      "url": "https://www.ehako.com/news/news2013a/6887_index_msg.shtml"
+    },
+    {
+      "text": "ポーラーベア幸せ運ぶ　コカ・コーラキャンペーン",
+      "url": "https://www.ehako.com/news/news2013a/6886_index_msg.shtml"
+    },
+    {
+      "text": "旧ロシア領事館　国際コンペで利活用提案へ",
+      "url": "https://www.ehako.com/news/news2013a/6885_index_msg.shtml"
+    },
+    {
+      "text": "教会に美しい歌声響く",
+      "url": "https://www.ehako.com/news/news2013a/6884_index_msg.shtml"
+    },
+    {
+      "text": "Ｘマスファンタジー点灯式に「りんりん」ら登場",
+      "url": "https://www.ehako.com/news/news2013a/6883_index_msg.shtml"
+    },
+    {
+      "text": "年末年始の海外旅行順調",
+      "url": "https://www.ehako.com/news/news2013a/6882_index_msg.shtml"
+    },
+    {
+      "text": "生コン業界「ダブルパンチ」、需要減とコスト増",
+      "url": "https://www.ehako.com/news/news2013a/6881_index_msg.shtml"
+    },
+    {
+      "text": "養殖カキ栄養満点　知内で出荷最盛期",
+      "url": "https://www.ehako.com/news/news2013a/6880_index_msg.shtml"
+    },
+    {
+      "text": "市民活動の拠点施設整備　五稜郭タワー",
+      "url": "https://www.ehako.com/news/news2013a/6879_index_msg.shtml"
+    },
+    {
+      "text": "介護ボランティア制度　来秋から本格実施",
+      "url": "https://www.ehako.com/news/news2013a/6878_index_msg.shtml"
+    },
+    {
+      "text": "イルミナシオン映画祭開幕",
+      "url": "https://www.ehako.com/news/news2013a/6877_index_msg.shtml"
+    },
+    {
+      "text": "函館蔦屋書店オープン　カフェ併設　ライフスタイル提案型施設",
+      "url": "https://www.ehako.com/news/news2013a/6876_index_msg.shtml"
+    },
+    {
+      "text": "江差ニシンのぼり図案決定　大みそかにお披露目",
+      "url": "https://www.ehako.com/news/news2013a/6875_index_msg.shtml"
+    },
+    {
+      "text": "北斗市と協議「年内に１回」　新幹線駅名問題で工藤市長",
+      "url": "https://www.ehako.com/news/news2013a/6874_index_msg.shtml"
+    },
+    {
+      "text": "真冬の稲刈り　コメの品種　より早く開発へ",
+      "url": "https://www.ehako.com/news/news2013a/6873_index_msg.shtml"
+    },
+    {
+      "text": "函館出身の北大生・[氏名省略]、「まちセン」テーマに卒論",
+      "url": "https://www.ehako.com/news/news2013a/6872_index_msg.shtml"
+    },
+    {
+      "text": "大門地区に２２台の防犯カメラ",
+      "url": "https://www.ehako.com/news/news2013a/6871_index_msg.shtml"
+    },
+    {
+      "text": "スルメイカ　１１月は好漁",
+      "url": "https://www.ehako.com/news/news2013a/6870_index_msg.shtml"
+    },
+    {
+      "text": "日銀・佐藤審議委員が来函、地元代表と意見交換",
+      "url": "https://www.ehako.com/news/news2013a/6869_index_msg.shtml"
+    },
+    {
+      "text": "函館アリーナに熱視線　全国から会議や大会打診",
+      "url": "https://www.ehako.com/news/news2013a/6868_index_msg.shtml"
+    },
+    {
+      "text": "函館産酒米「函館奉行」完成間近",
+      "url": "https://www.ehako.com/news/news2013a/6867_index_msg.shtml"
+    },
+    {
+      "text": "正月料理にクジラいかが？　９日にベーコンなど特売",
+      "url": "https://www.ehako.com/news/news2013a/6866_index_msg.shtml"
+    },
+    {
+      "text": "高谷市長が再選出馬表明",
+      "url": "https://www.ehako.com/news/news2013a/6865_index_msg.shtml"
+    },
+    {
+      "text": "道南でも就活解禁",
+      "url": "https://www.ehako.com/news/news2013a/6864_index_msg.shtml"
+    },
+    {
+      "text": "日銀金融経済動向　11月も判断据え置き",
+      "url": "https://www.ehako.com/news/news2013a/6863_index_msg.shtml"
+    },
+    {
+      "text": "紹介店増加　200カ所超え…今夏開設グルメサイト「めーどｉｎはこだて」",
+      "url": "https://www.ehako.com/news/news2013a/6862_index_msg.shtml"
+    },
+    {
+      "text": "函館の杉山さん道代表連覇に貢献…ＪＡＦ全国ロードサービス競技大会",
+      "url": "https://www.ehako.com/news/news2013a/6861_index_msg.shtml"
+    },
+    {
+      "text": "いい湯だなぁ〜、熱帯植物園のサル山に温泉",
+      "url": "https://www.ehako.com/news/news2013a/6860_index_msg.shtml"
+    },
+    {
+      "text": "星形の城　幻想的、２年ぶり五稜星の夢",
+      "url": "https://www.ehako.com/news/news2013a/6859_index_msg.shtml"
+    },
+    {
+      "text": "Ｘマスファンタジー開幕、夜空彩る光と音色",
+      "url": "https://www.ehako.com/news/news2013a/6858_index_msg.shtml"
+    },
+    {
+      "text": "２０１２年度函館市、ごみ排出量が過去最少",
+      "url": "https://www.ehako.com/news/news2013a/6857_index_msg.shtml"
+    },
+    {
+      "text": "スイーツ電車　市電でケーキ堪能",
+      "url": "https://www.ehako.com/news/news2013a/6856_index_msg.shtml"
+    },
+    {
+      "text": "ごみのない西部地域に　振興協議会が清掃活動",
+      "url": "https://www.ehako.com/news/news2013a/6855_index_msg.shtml"
+    },
+    {
+      "text": "進まぬ障害者雇用　道南３年連続減",
+      "url": "https://www.ehako.com/news/news2013a/6854_index_msg.shtml"
+    },
+    {
+      "text": "サ高住や複合型高齢者施設　開業ラッシュ　競争激化",
+      "url": "https://www.ehako.com/news/news2013a/6853_index_msg.shtml"
+    },
+    {
+      "text": "函館市、上期観光客３２５万２０００人　競馬、ＧＬＡＹで大幅増　ＪＲ利用は減少",
+      "url": "https://www.ehako.com/news/news2013a/6852_index_msg.shtml"
+    },
+    {
+      "text": "最新",
+      "url": "https://www.ehako.com/news/news2013a/index.shtml"
+    },
+    {
+      "text": "<<次の一覧",
+      "url": "https://www.ehako.com/news/news2013a/index1.shtml"
+    },
+    {
+      "text": "前の一覧>>",
+      "url": "https://www.ehako.com/news/news2013a/index3.shtml"
+    },
+    {
+      "text": "最終",
+      "url": "https://www.ehako.com/news/news2013a/index0.shtml"
+    },
+    {
+      "text": "免責事項",
+      "url": "https://www.ehako.com/menseki.html"
+    },
+    {
+      "text": "地域ニュース提供 函館新聞社",
+      "url": "https://digital.hakoshin.jp/"
+    },
+    {
+      "text": "2026/1/1〜最新",
+      "url": "https://www.ehako.com/news/news2026a/"
+    },
+    {
+      "text": "〜2025/12/31",
+      "url": "https://www.ehako.com/news/news2024a/"
+    },
+    {
+      "text": "〜2023/12/31",
+      "url": "https://www.ehako.com/news/news2022a/"
+    },
+    {
+      "text": "〜2021/12/31",
+      "url": "https://www.ehako.com/news/news2021a/"
+    },
+    {
+      "text": "〜2020/12/31",
+      "url": "https://www.ehako.com/news/news2020a/"
+    },
+    {
+      "text": "〜2019/12/31",
+      "url": "https://www.ehako.com/news/news2019a/"
+    },
+    {
+      "text": "〜2018/12/31",
+      "url": "https://www.ehako.com/news/news2018a/"
+    },
+    {
+      "text": "〜2017/12/31",
+      "url": "https://www.ehako.com/news/news2017a/"
+    },
+    {
+      "text": "〜2016/12/31",
+      "url": "https://www.ehako.com/news/news2016a/"
+    },
+    {
+      "text": "〜2015/12/31",
+      "url": "https://www.ehako.com/news/news2015a/"
+    },
+    {
+      "text": "〜2014/12/31",
+      "url": "https://www.ehako.com/news/news2014a/"
+    },
+    {
+      "text": "〜2013/12/31",
+      "url": "https://www.ehako.com/news/news2013a/"
+    },
+    {
+      "text": "2011/12/29〜2012/12/31",
+      "url": "https://www.ehako.com/news/news2011a/"
+    },
+    {
+      "text": "2010/09/01〜2011/12/28",
+      "url": "https://www.ehako.com/news/news2010a/"
+    },
+    {
+      "text": "2009/09/03〜2010/10/01",
+      "url": "https://www.ehako.com/news/news2009a/"
+    },
+    {
+      "text": "2008/08/01〜2009/09/03",
+      "url": "https://www.ehako.com/news/news2008a/"
+    },
+    {
+      "text": "2007/02/13〜2008/09/05",
+      "url": "https://www.ehako.com/news/news2007a/"
+    },
+    {
+      "text": "2005/05/31〜2007/02/09",
+      "url": "https://www.ehako.com/news/news/"
+    },
+    {
+      "text": "2003/11/01〜2005/05/31",
+      "url": "https://www.ehako.com/news/newsbk2/"
+    },
+    {
+      "text": "2002/12/16〜2003/10/31",
+      "url": "https://www.ehako.com/news/newsbk1/"
+    },
+    {
+      "text": "函館情報ブックマーク新着",
+      "url": "https://www.ehako.com/bookmark/index.shtml"
+    },
+    {
+      "text": "函館ニュースヘッドライン ホーム",
+      "url": "https://www.ehako.com/news/"
+    },
+    {
+      "text": "ページ先頭へ ▲",
+      "url": "https://www.ehako.com/news/news2013a/index2.shtml#pagebox"
+    },
+    {
+      "text": "",
+      "url": "https://www.ehako.com/"
+    },
+    {
+      "text": "函館地域ニュース",
+      "url": "https://www.ehako.com/news/"
+    },
+    {
+      "text": "函館情報ブックマーク",
+      "url": "https://www.ehako.com/bookmark/"
+    },
+    {
+      "text": "週刊いーハコ・函館一週間",
+      "url": "https://www.ehako.com/weekly/"
+    },
+    {
+      "text": "函館道南イベントカレンダー",
+      "url": "https://www.ehako.org/event/"
+    },
+    {
+      "text": "函館ネタブログ",
+      "url": "http://www.ehako.org/neta/"
+    },
+    {
+      "text": "函館の旅・ハコ旅",
+      "url": "https://www.ehako.com/hakotabi/"
+    },
+    {
+      "text": "函館スポットマップ",
+      "url": "https://www.ehako.com/maps/"
+    },
+    {
+      "text": "函館フォト散歩壁紙",
+      "url": "https://www.ehako.com/photo01/"
+    },
+    {
+      "text": "函館フォト散歩ブログ",
+      "url": "http://www.ehako.org/photowalk/"
+    },
+    {
+      "text": "HAKODATE DaysBlog",
+      "url": "https://www.ehako.com/daysblog/"
+    },
+    {
+      "text": "週刊メールマガジン",
+      "url": "https://www.ehako.com/weekly/mailmagazine"
+    },
+    {
+      "text": "お知らせ・更新情報",
+      "url": "http://www.ehako.com/blog/archives/category/ehakoinfo"
+    },
+    {
+      "text": "サイトマップ",
+      "url": "https://www.ehako.com/sitemap.html"
+    },
+    {
+      "text": "e-HAKODATEについて",
+      "url": "https://www.ehako.com/about.html"
+    },
+    {
+      "text": "免責事項 プライバシーポリシー",
+      "url": "https://www.ehako.com/menseki.html"
+    },
+    {
+      "text": "お問合せ",
+      "url": "https://www.ehako.com/mailinfo/"
+    },
+    {
+      "text": "eHAKO ホーム",
+      "url": "https://www.ehako.com/"
+    },
+    {
+      "text": "eHAKO Photo 函館写真",
+      "url": "http://photolog.ehako.org/"
+    },
+    {
+      "text": "Twitter ehakodate",
+      "url": "http://twitter.com/ehakodate"
+    },
+    {
+      "text": "Twitter ehako_yossy",
+      "url": "https://twitter.com/ehako_yossy"
+    },
+    {
+      "text": "はてなブックマークehakodate",
+      "url": "http://b.hatena.ne.jp/ehakodate/"
+    },
+    {
+      "text": "はてなブックマークehakoyossy",
+      "url": "http://b.hatena.ne.jp/ehakoyossy/"
+    },
+    {
+      "text": "Facebookページ",
+      "url": "http://www.facebook.com/ehakodate"
+    },
+    {
+      "text": "Youtube eHAKODATE",
+      "url": "https://www.youtube.com/channel/UCL3DPToTt1SNVypLI-w7uoQ"
+    },
+    {
+      "text": "免責事項",
+      "url": "https://www.ehako.com/menseki.html"
+    }
+  ]
+}

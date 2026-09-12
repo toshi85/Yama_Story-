@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type" content="text/html; charset=EUC-JP" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"61bcf953f0",applicationID:"14238799",browserID:"14238806"};;/*! For license information please see nr-loader-rum-1.321.0.min.js.LICENSE.txt */
+(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):e[s]instanceof Map||e[s]instanceof Set||e[s]instanceof Date||e[s]instanceof RegExp?r[s]=e[s]:"object"==typeof e[s]&&null!==t[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>s});var n=r(384),i=r(8122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,a)])},7699(e,t,r){"use strict";var n=r(860);const i={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,1e6,"KC",0,i,"qh",0,"SESSION_ERROR"])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.321.0"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=""+s?.location,u=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,a,"gm",0,s,"m",0,c,"mw",0,o,"sb",0,d,"zk",0,()=>{const e=s?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<s.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),a=r(860),s=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:a.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const a=e.ee,o=i.i.handlers;if(a&&!a.aborted&&a.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof s.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete o[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),a=r(2646),s=r(5607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{s[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,()=>new a.y(o)):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(9908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,a=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(i(r,a++).toString(16));return s.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>s,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function s(e,t){if(a())return e();const r=(0,i.J)(e),s=setInterval(()=>{a()&&(clearInterval(s),r())},500);(0,n.sp)("load",r,t)}function o(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),a=r(944),s=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,s.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,a.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},9300(e,t,r){"use strict";r(860).K7.ajax;r.d(t,["mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>a});var n=r(9566),i=r(1741);class a extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(4261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),a=r(1863),s=r(944),o=r(3969),c=r(8362),u=r(860);function d(e,t,r,a){const d=a||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,s.R)(23,e)}})}function l(e,t,r,n,s){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(s||null===r)&&(0,i.p)("api-"+n,[(0,a.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",a="browser/blobs",s="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},u={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:a,[o.sessionReplay]:a,[o.logging]:s,[o.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,s,"df",0,a,"hg",0,"connect"])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const a=t[n]={exports:{}};return e[n](a,a.exports,r),a.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],a=t[n++];r.o(e,i)?0===a&&n++:0===a?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:a})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.321.0.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.321.0.PROD:";r.l=(n,i,a,s)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==a){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+a){o=r;break}}}if(!o){c=!0;var d={296:"sha512-auOJN989wXoxmQeiyRE/ZlrR6yqeuq5/WjLH1btsNQ6Iqm/RK+IqmjTuvad7oOBZyozPaWg6y2Uu2qAZy3e0cQ=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+a),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),d[s]&&(o.integrity=d[s])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const a=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=a);const s=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(s,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,a,s]=n;var o,c,u=0;if(i.some(t=>0!==e[t])){for(o in a)r.o(a,o)&&(r.m[o]=a[o]);if(s)s(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.321.0.PROD"]=self["webpackChunk:NRBA-1.321.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),a=r(1741);var s=r(2555),o=r(981);t.K7.genericEvents,o.R.PA,o.R.UA,o.R.BP;const c={RESOURCES:"experimental.resources",REGISTER:"register"};var u=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var l=r(2614),f=r(944),g=r(8122);const p="[data-nr-mask]",m=e=>(0,g.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:u.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(c.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(c.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,f.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:l.wk,inactiveMs:l.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(p):""===t||null===t?e.mask_selector=p:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var h=r(6154),v=r(9324);let b=0;const y={buildEnv:"PROD",distMethod:"CDN",version:v.xv,originTime:h.WN},_={consented:!1},w={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||_.consented},set consented(e){_.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,connector:void 0,harvester:void 0,v2Target:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++b},listeningForIframeMessages:!1},R="BA";var A=r(7836),x=r(3241);const E={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var S=r(9908);const k="newrelic-iframe-";function T(e,t={},n,o){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var p;e.init=m(c||{}),e.loader_config=(p=d||{},(0,g.a)(p,E)),u.jsAttributes??={},h.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,s.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,g.a)(e,w),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),e.runtime.v2Target??={type:R,instance:e.agentIdentifier,get id(){return e.runtime.appMetadata?.agents?.[0]?.entityGuid},get attributes(){return{"entity.guid":this.id,appId:e.info.applicationID}}},v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(a.W.prototype).forEach(r=>{const n=a.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=A.ee.get(e.agentIdentifier),e.exposed=f,(0,x.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&h.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(k)&&(0,S.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var j=r(1863),P=r(4261),N=r(1738);var O=r(1687),M=r(4234),I=r(5289),D=r(7767);function V(e){return!!(0,i.dV)().o.MO&&(0,D.V)(e)&&!0===e?.session_trace.enabled}var W=r(6389),B=r(7699);const C=new WeakSet,K=new WeakMap;class U extends M.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,O.Ak)(e,this.featureName),t()}))}):(0,O.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,s.f)(e.info))return(0,f.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);try{await async function(e,t,n){if(K.has(e))return K.get(e);const i=(async()=>{if((0,D.V)(e.init))try{const{setupAgentSession:t}=await r.e(296).then(r.bind(r,8391));t(e)}catch(e){(0,f.R)(20,e),t.emit("internal-error",[e]),(0,S.p)(B.qh,[e],void 0,n,t)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await Promise.resolve().then(function(){const e=new Error("Cannot find module '../../loaders/configure/iframe-message-handler'");throw e.code="MODULE_NOT_FOUND",e});t(e)}catch(e){(0,f.R)(23,e)}const[{Connector:i},{Harvester:a}]=await Promise.all([r.e(296).then(r.bind(r,6589)),r.e(296).then(r.bind(r,5237))]);e.runtime.connector=new i(e),e.runtime.harvester=new a(e);const s=Object.values(e.features).filter(t=>e.runtime.drainRegistry.has(t.featureName));Promise.all(s.map(e=>e.onAggregateImported)).then(()=>e.runtime.harvester.startTimer())})();K.set(e,i),await i}(e,this.ee,this.featureName)}catch(e){return(0,f.R)(79,e),this.ee.abort(),void this.loadedSuccessfully(!1)}try{if(!this.#r(this.featureName,e.runtime.session,e.init))return this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,f.R)(34,e),this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1)}};h.RI?(0,I.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return V(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!C.has(e)&&(C.add(e),!(0,s.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}T(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var L=r(6630);class F extends U{static featureName=L.T;constructor(e){var t;super(e,L.T),this.setupInspectionEvents(),t=e,(0,N.Y)(P.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,S.p)("api-"+P.Fw,[(0,j.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>e.init.feature_flags.includes("rum_v2")?r.e(296).then(r.bind(r,908)):r.e(296).then(r.bind(r,7927)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,I.sB)(t=>{e(t,"DOMContentLoaded")}),(0,I.GG)(t=>{e(t,"load")}),(0,I.Qr)(t=>{e(t,"navigate")}),this.ee.on(l.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class G extends e.d{constructor(e){var t;(super(),h.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(F),T(this,e,e.loaderType||"agent"),t=this,(0,N.Y)(P.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,N.U)(t,e,r,P.cD,n);(0,f.R)(40,typeof r)}else(0,f.R)(39,typeof e)},t),function(e){(0,N.Y)(P.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,f.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,S.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,N.U)(e,"enduser.id",t,P.Dl,!0)},e)}(this),function(e){(0,N.Y)(P.nb,function(t){if("string"==typeof t||null===t)return(0,N.U)(e,"application.version",t,P.nb,!1);(0,f.R)(42,typeof t)},e)}(this),function(e){(0,N.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,N.Y)(P.Pv,function(t=!0){if("boolean"==typeof t){if((0,S.p)("api-"+P.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum?.()})}}else(0,f.R)(65,typeof t)},e)}(this),this.run()):(0,f.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures],i=this.init.feature_flags.includes("rum_v2");r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&(i||r.featureName!==t.K7.pageViewEvent))return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,f.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,f.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var H=r(2843),z=r(782);class Y extends U{static featureName=z.T;constructor(e){super(e,z.T),h.RI&&((0,H.u)(()=>(0,S.p)("docHidden",[(0,j.t)()],void 0,z.T,this.ee),!0),(0,H.G)(()=>(0,S.p)("winPagehide",[(0,j.t)()],void 0,z.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9981))))}}var Z=r(3969);class q extends U{static featureName=Z.TZ;constructor(e){super(e,Z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new G({features:[F,Y,q],loaderType:"lite"})})()})();</script>
+<meta http-equiv="content-language" content="ja" />
+<meta name="robots" content="index,follow" /><meta name="application-name" content="ヤマレコ" />
+<meta name="viewport" content="target-densitydpi=device-dpi, width=1048, maximum-scale=1.9, user-scalable=yes">
+<meta property="og:title" content="6月の北アルプスの滑落事故 - 緑茶派さんの日記"/><meta property="og:type" content="article"/><meta property="og:description" content="2021年07月07日：  [[YT:TA1_gbMLcA0]] 有名な登山Youtuberの動画ですこの動画の10:05に登場する人物詳しくは動画を見ていただきたいのですが。。とにかく酷い6月の北アルプスでアイゼンもピッケルもなし知識も"/><meta property="og:image" content="http://yamareco.info/modules/diary/upimg/30984/c4e45388aa2a16da0d14c9e169c87ef9.png"/> <meta property="og:site_name" content="ヤマレコ"/> <meta property="fb:app_id" content="191822187571937"/><meta name="twitter:card" content="summary_large_image"><title>6月の北アルプスの滑落事故 - 緑茶派さんの日記-ヤマレコ</title>
+<link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="https://www.yamareco.com/diary_rss.php?uid=30984" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="//yamareco.info/themes/bootstrap3/css/style.css?v=192" />
+<!--<link rel="stylesheet" type="text/css" href="//yamareco.info/themes/bootstrap3/css/common.css?v=4" />-->
+<link rel="stylesheet" type="text/css" href="//yamareco.info/themes/bootstrap3/css/print.css?v=4" />
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.css" />
+
+<!-- 古いCSS等は後で消す -->
+<link rel="stylesheet" type="text/css" href="//yamareco.info/themes/bootstrap3/old/style.css?v=6" />
+<!-- 古いCSS等は後で消す -->
+
+<!-- シニア（老眼＆etc）モード -->
+<!-- no_js_css -->
+
+
+<link rel="search" type="application/opensearchdescription+xml" title="ヤマレコ山行記録" href="//www.yamareco.com/labo/opensearch.xml">
+<link rel="apple-touch-icon" sizes="57x57"   href="/apple-touch-icon-rn2-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-rn2-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72"   href="/apple-touch-icon-rn2-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-rn2-144x144.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- RMV: added module header -->
+
+
+<script type="text/javascript">
+  
+  // for yamareco.js
+  var targeting_ptid="0";
+  var targeting_area="0";
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-68264VR910"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-68264VR910');
+</script>
+<script>
+(function(){
+if(!document.addEventListener){return;}
+document.addEventListener("click", function(event){
+if(event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey){return;}
+if(typeof event.button === "number" && event.button !== 0){return;}
+var node = event.target;
+while(node && node.tagName !== "A"){ node = node.parentNode; }
+if(!node || !node.href){ return; }
+if((node.target || "").toLowerCase() === "_blank" || node.getAttribute("download") !== null){return;}
+var href = node.getAttribute("href") || "";
+var lowerHref = href.toLowerCase();
+if(href.charAt(0) === "#" || lowerHref.indexOf("javascript:") === 0){return;}
+var link = document.createElement("a");
+link.href = node.href;
+if(link.hostname === location.hostname && link.href.split("#")[0] !== location.href.split("#")[0]){
+document.cookie = "yr_internal_nav=1; max-age=15; path=/; SameSite=Lax";
+}
+}, false);
+})();
+</script>
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script type='text/javascript'>
+/*Google Ads*/
+window.googletag = window.googletag || {cmd: []};
+
+googletag.cmd.push(function() {
+googletag.defineSlot('/4500164/special_pc_1', [728, 90], 'div-gpt-ad-1499820629089-0').addService(googletag.pubads());
+googletag.defineSlot('/4500164/area1', [728, 90], 'div-gpt-ad-1387245196531-0').addService(googletag.pubads());
+googletag.defineSlot('/4500164/area3', [336, 280], 'div-gpt-ad-1387245196531-1').addService(googletag.pubads());
+googletag.defineSlot('/4500164/area4', [160, 600], 'div-gpt-ad-1387245196531-2').addService(googletag.pubads());
+googletag.defineSlot('/4500164/area_flow', [250, 250], 'div-gpt-ad-1387245196531-3').addService(googletag.pubads());
+googletag.defineSlot('/4500164/extarea', [336, 280], 'div-gpt-ad-1387245196531-4').addService(googletag.pubads());
+googletag.defineSlot('/4500164/listbottom', [336, 280], 'div-gpt-ad-1387245196531-5').addService(googletag.pubads());
+googletag.defineSlot('/4500164/area2', [160, 600], 'div-gpt-ad-1461131707935-0').addService(googletag.pubads());
+googletag.defineSlot('/4500164/area3-2', [336, 280], 'div-gpt-ad-1473140353487-0').addService(googletag.pubads());
+googletag.defineSlot('/4500164/toppage_center', [250, 140], 'div-gpt-ad-1473645812399-0').addService(googletag.pubads());
+googletag.defineSlot('/4500164/toppage_left', [250, 140], 'div-gpt-ad-1473645812399-1').addService(googletag.pubads());
+googletag.defineSlot('/4500164/toppage_right', [250, 140], 'div-gpt-ad-1473645812399-2').addService(googletag.pubads());
+googletag.defineSlot('/4500164/owned_728x90', [728, 90], 'div-gpt-ad-1485920001727-0').addService(googletag.pubads());
+googletag.defineSlot('/4500164/area5', [[300, 600],[300, 250]], 'div-gpt-ad-1503639727536-0').addService(googletag.pubads());
+googletag.defineSlot('/4500164/area6', [300, 250], 'div-gpt-ad-1503639727536-1').addService(googletag.pubads());
+googletag.pubads().setTargeting("ptid",targeting_ptid);
+googletag.pubads().setTargeting("area",targeting_area);
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+<script src="//yamareco.info/themes/bootstrap3/js/jquery-1.10.2.min.js"></script>
+<script src='//www.yamareco.com/themes/bootstrap3/js/yamareco.js?v=24'></script>
+<script defer type="text/javascript" src='https://yamareco.info/include/xoops.js'></script>
+<script defer src="//yamareco.info/themes/bootstrap3/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src='//yamareco.info/themes/bootstrap3/js/bootstrap.min.js'></script>
+<script defer type="text/javascript" src='//yamareco.info/themes/bootstrap3/js/rollover.js?v=3'></script>
+<script defer type="text/javascript" src='//yamareco.info/themes/bootstrap3/js/jquery.html5-placeholder-shim.js?v=2'></script>
+<script type="text/javascript" src='//yamareco.info/themes/bootstrap3/js/fixedSidebar.js?v=2'></script>
+<script defer type="text/javascript" src='//www.yamareco.com/themes/bootstrap3/js/opacity-rollover2.1.js'></script>
+<script defer type="text/javascript" src='//cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js'></script>
+<script type="text/javascript" src="//yamareco.info/modules/yamareco/include/jquery.cookie.js"></script>
+<script type="text/javascript" src="//www.yamareco.com/themes/bootstrap3/js/bb.js?v=16"></script>
+<!-- no_js_css -->
+
+<link rel="alternate" media="handheld" type="text/html" href="https://www.yamareco.com/modules/diary/30984-detail-244221" /></head>
+
+	
+		<link rel="stylesheet" type="text/css" href="//www.yamareco.com/modules/notification/include/css/notification.css?v=20260217" />
+		<script type="text/javascript" src="//www.yamareco.com/modules/notification/include/aj_resetcount.js?v=20260113"></script>
+
+		<!-- index else-->
+				<body class="main_sm header_bg_ad " style="position: relative; min-height: 99%; top: 0px; "><a href="https://www.yamareco.com/cdn-cgi/content?id=xVddTaTP.eBAQvbco.qCJ_KEzI373zPYzqG14.Bztlo-1789203016.753494-1.2.1.1-t.e6YlKoGJNuhUEiraBXF39McX8egv0EKYMDy4bSmAeCFeXSJEiimWQtJMlnub1K" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+
+											
+					
+					<div id="anker01"></div>
+					<header class="header ">
+											<div class="header-hd">
+							ヤマレコなら、もっと自由に冒険できる
+							<div class="header-hd-link font-jp">
+									<a href="https://www.yamareco.com/guide/faq/">FAQ</a>
+									<a href="https://www.yamareco.com/guide/">使い方ガイド</a>
+									<a href="https://www.yamareco.com/guide/contact/">お問い合わせ</a>
+							</div>
+						</div>
+							<div class="inner inner01">
+									<div class="header-logo"><a href="https://www.yamareco.com" class="ov"><img src="//yamareco.info/themes/bootstrap3/img/common/logo/logo-large.svg" alt="Yamareco"></a></div>
+																													<div id="ad_area01" class="header-ad">
+																														<!-- area1 -->
+										<div id='div-gpt-ad-1387245196531-0' style='width:728px; height:90px;'>
+										<script type='text/javascript'>
+												googletag.cmd.push(function() { googletag.display('div-gpt-ad-1387245196531-0'); });
+										</script>
+										</div>
+																		</div>
+																	</div>
+						    				<div class="inner inner02">
+														<div class="header-search div2">
+	<script src="//www.yamareco.com/modules/yamareco/include/aj_searchrec.js?v=6"></script>
+	<form class="form" name="recsearch" action="/modules/yamareco/search_redirect.php" method="get" autocomplete="off">
+			<input type="hidden" name="type" value="rec">
+			<input type="search" name="query" placeholder="記録検索" class="form-input js-searchbox" autocomplete="off">
+			<input type="hidden" name="view" value="pc">
+			<button type="submit" class="form-btn submit">検索</button>
+	</form>
+	<div id="suggest-mt-popup" class="suggest-mt-popup">
+		<div>
+			<ul class="list">
+			</ul>
+		</div>
+	</div>
+	<button class="form-btn black" onclick="location.href='/modules/yamareco/showroute_rec2.php'" style="letter-spacing:-0.1em">ここサーチ</button>
+</div>							<nav class="header-menu div4">
+<ul>
+		<li class="menu_record "><a href="https://www.yamareco.com/modules/yamareco/viewrecs-0-photo.html">山行記録</a></li>
+		<li class="menu_diary "><a href="https://www.yamareco.com/modules/diary/diarylist_summary.php">日記</a></li>
+		<li class="menu_question "><a href="https://www.yamareco.com/modules/plzXoo/">質問箱</a></li>
+		<li class="menu_note "><a href="https://www.yamareco.com/modules/yamanote/viewnotes.php">ヤマノート</a></li>
+		<li class="menu_data "><a href="https://www.yamareco.com/modules/yamainfo/">山のデータ</a></li>
+		<li class="menu_insurance"><a href="https://www.yamareco.com/modules/yamainfo/insurance.php">山岳保険</a></li>
+		<li class="menu_others has-child">
+				<a href="javascript:void(0);" class="js-has-pulldown">その他</a>
+				<div class="header-menu-child js-pulldown-menu">
+						<div class="inner">
+								<ul>
+										<li><a href="https://www.yamareco.com/modules/yamareco/aboutpremium.php">プレミアムプラン</a></li>
+										<li><a href="https://www.yamareco.com/10th/">ヤマレコ公式ブログ</a></li>
+										<li><a href="https://www.yamareco.com/modules/yamainfo/guide_search.php">ヤマレコのおすすめルート</a></li>
+										<li><a href="https://www.yamareco.com/modules/yamainfo/myitem_list.php">みんなのMyアイテム</a></li>
+								</ul>
+								<ul>
+										<li><a href="https://www.yamareco.com/modules/yr_plan/search_plan.php">山行計画</a></li>
+										<li><a href="https://www.yamareco.com/modules/yr_event/event_list.php">イベント</a></li>
+										<li><a href="https://www.yamareco.com/modules/xsns/">コミュニティ</a></li>
+										<li><a href="https://www.yamareco.com/modules/yamareco/grplist.html">グループ</a></li>
+										<li><a href="https://www.yamareco.com/modules/yamareco/search_user.php?request=1">ユーザー</a></li>
+										<li><a href="https://www.yamareco.com/modules/yamareco/mlpreview.php">メルマガ</a></li>
+										<li><a href="https://www.yamareco.com/labo/locviewer/">いまココ</a></li>
+										<li><a href="https://www.yamareco.com/sagasu/">SAGASU</a></li>
+										<li><a href="https://www.yamareco.com/modules/campaign/">開催中のキャンペーン</a></li>
+								</ul>
+								<ul>
+										<li><a href="https://www.yamareco.com/modules/yamainfo/search_word.php">山の用語集</a></li>
+										<li><a href="https://www.yamareco.com/modules/yamareco/search_photo.php">写真検索</a></li>
+										<li><a href="https://www.yamareco.com/modules/yamareco/brandlist.php">山のブランド</a></li>
+										<li><a href="https://www.yamareco.com/modules/yamainfo/itemlist.php">山道具（カメラ）</a></li>
+										<li><a href="https://www.yamareco.com/modules/yamareco/ranking_pt.php">山のランキング</a></li>
+										<li><a href="https://www.yamareco.com/modules/yamainfo/grading.php?type=1	">信州山のグレーディング</a></li>
+										<li><a href="https://www.yamareco.com/accident_log/">山岳遭難マップ</a></li>
+										<li><a href="https://www.yamareco.com/modules/yamainfo/organizations.php?type=license">山の資格一覧</a></li>
+										<li><a href="https://www.yamareco.com/modules/yamainfo/organizations.php?type=insurance">山岳保険の一覧</a></li>
+								</ul>
+						</div>
+				</div>
+		</li>
+</ul>
+</nav>							<div class="header-right div3">
+																	<a href="https://www.yamareco.com/modules/cubeUtils/index.php" class="header-right-login btn-general btn-general-green btn-general-sm">ログイン</a>
+															</div>
+						</div>
+					</header>
+
+										<div id="notifymsg" class="alert-wrap dis-n">
+							<div class="alert alert-info alert-dismissable fade in">
+									<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+							</div>
+					</div>
+
+		<!-- /index -->
+	<!-- /simpletheme -->
+
+	<!-- modal popup ad S-->  
+		<!-- /ad -->
+
+
+
+	
+		
+		
+			<div id="wraper" class="">
+
+				<!-- 中央横長のエリアは、右ブロックとして実装。ブロックタイトルはなし。 -->
+				
+				<!-- 左ブロック部分の定義。block.titleの表示はなし。 -->
+				<!-- no sidebar-->
+				
+				<!-- 中央ブロック部分の定義。block.titleの表示はなし。 -->
+				<!-- main start -->
+									<div id="main" class="sm">
+				
+					<!-- /index -->
+
+					
+					<div id="centercolumn" class="">
+						<!-- 各モジュールのコンテンツ -->
+						<!-- start module contents -->
+<style>
+#btn_clap {cursor:pointer}
+#favo_btn {cursor:pointer}
+</style>
+<link rel="stylesheet" href="https://yamareco.info/modules/yamareco/include/thickbox.css?v=2" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="include/highslide/highslide.css" />
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+<div id="diary_main" class="diary">
+<a href="https://www.yamareco.com/">HOME</a> &gt; 
+<a href="/modules/yamareco/userinfo-30984-prof.html">緑茶派</a>さんのHP &gt; 
+<a href="/modules/diary/30984">日記</a>
+
+<div id="diary_detail_header">
+<span class="label2 date">2021年07月07日 18:15</span><span class="cat label2"><a href="https://www.yamareco.com/modules/diary/30984-category-0">未分類</a></span><span class="privacy privacy02 label2">全体に公開</span>
+</div>
+
+<h3 class="diary_title">6月の北アルプスの滑落事故</h3>
+
+<div class="post">
+
+<table class="photo">
+<tbody>
+<tr>
+<td style="text-align:center;">
+<a class="highslide ov" onclick="return hs.expand(this, config1 )" href="https://yamareco.info/modules/diary/upimg/30984/c4e45388aa2a16da0d14c9e169c87ef9.png">
+<img class="photo" src="https://yamareco.info/modules/diary/upimg/30984/t_c4e45388aa2a16da0d14c9e169c87ef9.png">
+</a>
+<span class="highslide-caption"></span>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br /><iframe id="youtube" width="425" height="344" src="//www.youtube.com/embed/TA1_gbMLcA0?rel=0&amp;vq=hd1080" frameborder="0" allowfullscreen></iframe><br /> <br /><br />有名な登山Youtuberの動画です<br />この動画の10:05に登場する人物<br />詳しくは動画を見ていただきたいのですが。。<br />とにかく酷い<br />6月の北アルプスでアイゼンもピッケルもなし<br />知識も技術も体力もおそらく足りないのでしょう<br /><br />穂高岳山荘まで連れてきてもらったこの人物は<br />翌日には滑落してヘリコプターでご帰宅となりました<br /><br /><a href="https://twitter.com/police_nagano/status/1409380605528207364" rel="ugc" target="_blank"><a href="https://twitter.com/police_nagano/status/1409380605528207364" rel="ugc" target="_blank">https://twitter.com/police_nagano/status/1409380605528207364</a></a><br /><br /><br /><br />ヤマレコユーザーにこんな人はいないと思いますが
+</div>
+
+
+
+<!-- area3 -->
+<div id="ad_area03" class="ad_area" style="margin-top:10px">
+<div id='div-gpt-ad-1387245196531-1' style='width:336px; height:280px;float:left;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1387245196531-1'); });
+</script>
+</div>
+<div id='div-gpt-ad-1473140353487-0' style='height:280px; width:336px; float:left;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1473140353487-0'); });
+</script>
+</div>
+<div style="clear:both;"></div>
+</div>
+
+
+<div class="next_prev_diary">
+	<div class="prev_diary_block next_prev_diary_text ov"><a href="https://www.yamareco.com/modules/diary/30984-detail-230395" ><span class="link_diary_text">2021-02-03 トランププロジェクトに選ばれた</span></a></div>
+</div>
+
+<div id="clap_num" class="detail_ft">
+	<div class="inner">
+		<div class="block favo" id="favo_btn">
+			<div class="heading">お気に入りした人</div>
+			<div class="md">
+					<span id="favorite_num" class="font-en num"></span><span class="unit">人</span>
+			</div>
+			<button class="btn-general btn-general-sm btn-general-black">お気に入り追加</button>
+		</div>
+		<div id="btn_clap" class="block clap noclap">
+			<div class="attention_clap">
+					<div class="hand">
+							<div class="effect"></div>
+					</div>
+					<div class="btn_clap">拍手で応援</div>
+			</div>
+			<div class="heading">拍手した人</div>
+			<div class="md">
+					<span class="cheer_num font-en num"></span><span class="unit">拍手</span>
+			</div>
+			<button class="btn-general btn-general-sm btn-general-black">拍手をおくる</button>
+		</div>
+		<div class="counter">訪問者数：11968人</div>
+	</div>
+	<div class="usericon" style="display: none;">
+			<div class="usericon-inner">
+			</div>			
+	</div>
+</div>
+
+<div class="share_ft">
+    <div class="inner">
+        <div class="left">
+            <a href="https://www.yamareco.com/modules/yamareco/userinfo-30984-prof.html" title="緑茶派">
+                                <img src="https://yamareco.info/include/imgresize.php?maxsize=90&crop=1&fname=/uploads/ypb339755dedd0e23.jpg" class="user_icon mr10">
+                            
+            </a>
+            <a href="#anker01" class="title ov">6月の北アルプスの滑落事故</a>
+        </div>
+        <div class="right">
+            <div class="share_btn clap ac has_arrow" title="拍手する">
+                <span></span>拍手
+                <div class="clap_arrow">
+                    <img src="https://yamareco.info/themes/bootstrap3/img/icon_share_ft_clap_arrow.png" srcset="https://yamareco.info/themes/bootstrap3/img/icon_share_ft_clap_arrow@2x.png 2x" alt="こっそり拍手">
+                </div>
+                <div class="secretly popover fade bottom" style="top: 29px; left: 50.5px; display: block;">
+                    <div class="arrow"></div>
+                    <div class="popover-content secretlyClap">
+                        <p class="m-no">こっそり拍手</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="share_btn favo ac" title="お気に入りに追加">
+                <span></span>お気に入り
+            </div>
+
+            <a href="#comment" class="share_btn comme ac" title="コメントする"><span></span>コメント</a>
+
+            <div class="share">
+                <div>
+                    <span>シェア</span>
+                    <a href="https://twitter.com/intent/tweet?text=6%E6%9C%88%E3%81%AE%E5%8C%97%E3%82%A2%E3%83%AB%E3%83%97%E3%82%B9%E3%81%AE%E6%BB%91%E8%90%BD%E4%BA%8B%E6%95%85 - ryokuchaha%E3%81%95%E3%82%93%E3%81%AE%E6%97%A5%E8%A8%98%20-%20%E3%83%A4%E3%83%9E%E3%83%AC%E3%82%B3&amp;url=https%3A%2F%2Fwww.yamareco.com/modules/diary/30984-detail-244221.html" title="Twitterでシェア" class="tw"></a>
+                    <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.yamareco.com%2Fmodules%2Fdiary%2F30984-detail-244221.html&amp;t=6%E6%9C%88%E3%81%AE%E5%8C%97%E3%82%A2%E3%83%AB%E3%83%97%E3%82%B9%E3%81%AE%E6%BB%91%E8%90%BD%E4%BA%8B%E6%95%85" onclick="window.open('https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.yamareco.com%2Fmodules%2Fdiary%2F30984-detail-244221.html&amp;t=6%E6%9C%88%E3%81%AE%E5%8C%97%E3%82%A2%E3%83%AB%E3%83%97%E3%82%B9%E3%81%AE%E6%BB%91%E8%90%BD%E4%BA%8B%E6%95%85','','width=500,height=400');return false;" title="Facebookでシェア" class="fb"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+      var share_ft = $('.share_ft');
+      var pos_title = 50;
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > (pos_title + 60) ) {
+              share_ft.addClass('in');
+          } else {
+              share_ft.removeClass('in');
+              $('.secretly.popover').removeClass('in');
+          }
+      });
+      $('.share_btn.comme').click(function(){
+        $('#com_text').focus();
+      })
+    
+    $('.share_btn.clap').click(function(){
+      if($(this).hasClass('active')){
+            delcheer();
+      }else{
+            regcheer(0);
+      }
+      $(this).toggleClass('active');
+      $('.secretly.popover').removeClass('in');
+    });
+
+    $('.share_btn.favo').click(function(){
+      if($(this).hasClass('active')){
+        showfavdialog(1);
+      }else{
+        addfavorite();        
+      }
+      $('.secretly.popover').removeClass('in');
+    });
+
+    $('.clap_arrow').hover(function(){
+      $('.share_btn.clap').toggleClass('ac');
+    });
+    $('.clap_arrow, .secretlyClap').click(function(){ //こっそり拍手表示非表示
+      event.stopPropagation();
+      $('.secretly.popover').toggleClass('in');
+    });
+    $('.secretlyClap').click(function(){ //こっそり拍手実行
+        event.stopPropagation();
+        regcheer(1);
+    });
+    
+    $('#favo_btn').click(function(){
+        if($('.share_btn.favo').hasClass('active')){
+          showfavdialog(1);
+        }else{
+          addfavorite();        
+        }
+        $('.secretly.popover').removeClass('in');
+      });
+    $('#btn_clap.noclap').mouseover(function(){
+        $('.noclap .attention_clap').addClass('on');
+    });
+    
+    $('#btn_clap').click(function(){ //拍手実行後は「拍手で応援」を表示させない
+		if(owner_flag == 0){
+  	      $(this).toggleClass('noclap');
+		}
+        $('.attention_clap').removeClass('on');
+    });
+</script>
+
+<!-- start comment area -->
+<h3 id="h-comment" class="s01">コメント</h3>
+<div class="box comment_area">
+	<style>
+.modal-body {
+	max-height: 600px;
+	overflow-y: auto;
+}
+</style>
+
+<div class="comment_list">
+
+	
+						<div class="post" id="comment2567408">
+		
+		  <div class="left">
+			<div class="usericon">
+			  				<img class="mte"  style="display: none;"  src="https://yamareco.info/themes/bootstrap3/img/no_profile_img.gif" />
+				<a class="nmte"  href="https://www.yamareco.com/modules/yamareco/userinfo-457000-prof.html">
+										<img src="https://yamareco.info/include/imgresize.php?crop=1&amp;maxsize=92&amp;fname=https://www.yamareco.com/uploads/ypd446dda4a26fee7.jpg" alt="">
+									</a>
+			  			</div>
+		  </div>
+
+		  <div class="right">
+
+			
+			<div class="comment_txt">
+			  <div class="balloon">
+				<div class="name"><a href="https://www.yamareco.com/userinfo.php?uid=457000">コ</a> </div>
+								こんにちは。コレは酷いですね&#8230; 雪山はアイゼンとピッケルが有っても、怖いと思った時点で実力不足なので撤退ですよね。ってかこの人雪山登ったこと無さそう。。。
+			  </div>
+			  <div class="ft">
+				<div class="date">2021/7/7 19:59</div>
+				<div class="reaction">
+				  					<span class="btn_like">
+												<div class="btn_like-action js-btn-like">
+							<img src="https://yamareco.info/themes/bootstrap3/img/common/like-active.svg" alt="いいね" class="btn_like-action-img">いいね
+						</div>
+						<a href="javascript:void(0);" class="btn_like-num  js-btn-like-num" data-toggle="modal" data-id="2567408" data-target="#like_user">1</a>
+											</span>
+				  				</div>
+			  </div>
+			</div>
+			
+		  			  </div>
+
+		</div>		
+
+</div>
+
+<div class="add_comment reply dis-n">
+	<div class="inner">
+	<div class="left">
+		<div class="usericon">
+					<img src="https://yamareco.info//include/imgresize.php?maxsize=80&fname=%2Fthemes%2Fbootstrap3%2Fimg%2Fno_profile_img.gif" alt="プロフィール画像">
+				</div>
+	</div>
+	<div class="right">
+		<form role="form" action="comment_post.php" method="post" onsubmit='return xoopsFormValidate_commentform(this);'>
+		<textarea id="com_text_reply" name="com_text" class="form-control mb10" rows="3"></textarea>
+		<input name="com_id" id="legacy_xoopsform_com_id" type="hidden" value="0">
+		<input name="com_pid" id="legacy_xoopsform_com_pid" type="hidden" value="">
+		<input name="com_rootid" id="legacy_xoopsform_com_rootid" type="hidden" value="">
+		<input name="com_modid" id="legacy_xoopsform_com_modid" type="hidden" value="">
+		<input name="com_itemid" id="legacy_xoopsform_com_itemid" type="hidden" value="244221">
+		<input name="com_exparams" id="legacy_xoopsform_com_exparams" type="hidden" value="">
+		<input name="com_order" id="legacy_xoopsform_com_order" type="hidden" value="0">
+		<input name="dosmiley" id="legacy_xoopsform_dosmiley" type="hidden" value="1">
+		<input name="doxcode" id="legacy_xoopsform_doxcode" type="hidden" value="1">
+		<input name="dobr" id="legacy_xoopsform_dobr" type="hidden" value="1">				
+		<div class="ft">
+			<button class="btn btn-default btn_reply_cancel sm mr20" type="button">キャンセル</button>
+			<div style="position:relative;">
+			<div class="emoji_area dis-n">
+				<div class="inner fs-0">
+									<a href="#" onclick="doSmilie(':-D', 'reply'); return false;"><img src="/uploads/smil3dbd4d4e4c4f2.gif" alt="ニッ" title="ニッ"></a>
+									<a href="#" onclick="doSmilie(':-)', 'reply'); return false;"><img src="/uploads/smil3dbd4d6422f04.gif" alt="にっこり" title="にっこり"></a>
+									<a href="#" onclick="doSmilie(':-(', 'reply'); return false;"><img src="/uploads/smil3dbd4d75edb5e.gif" alt="シュン" title="シュン"></a>
+									<a href="#" onclick="doSmilie(':-o', 'reply'); return false;"><img src="/uploads/smil3dbd4d8676346.gif" alt="エッ!?" title="エッ!?"></a>
+									<a href="#" onclick="doSmilie(':-?', 'reply'); return false;"><img src="/uploads/smil3dbd4d99c6eaa.gif" alt="ん？" title="ん？"></a>
+									<a href="#" onclick="doSmilie('8-)', 'reply'); return false;"><img src="/uploads/smil3dbd4daabd491.gif" alt="フフッ" title="フフッ"></a>
+									<a href="#" onclick="doSmilie(':lol:', 'reply'); return false;"><img src="/uploads/smil3dbd4dbc14f3f.gif" alt="げらげら" title="げらげら"></a>
+									<a href="#" onclick="doSmilie(':-x', 'reply'); return false;"><img src="/uploads/smil3dbd4dcd7b9f4.gif" alt="むぅ" title="むぅ"></a>
+									<a href="#" onclick="doSmilie(':-P', 'reply'); return false;"><img src="/uploads/smil3dbd4ddd6835f.gif" alt="べー" title="べー"></a>
+									<a href="#" onclick="doSmilie(':oops:', 'reply'); return false;"><img src="/uploads/smil3dbd4df1944ee.gif" alt="はー" title="はー"></a>
+									<a href="#" onclick="doSmilie(':cry:', 'reply'); return false;"><img src="/uploads/smil3dbd4e02c5440.gif" alt="しくしく" title="しくしく"></a>
+									<a href="#" onclick="doSmilie(':evil:', 'reply'); return false;"><img src="/uploads/smil3dbd4e1748cc9.gif" alt="カーッ" title="カーッ"></a>
+									<a href="#" onclick="doSmilie(':roll:', 'reply'); return false;"><img src="/uploads/smil3dbd4e29bbcc7.gif" alt="ふんふん" title="ふんふん"></a>
+									<a href="#" onclick="doSmilie(';-)', 'reply'); return false;"><img src="/uploads/smil3dbd4e398ff7b.gif" alt="ウィンク" title="ウィンク"></a>
+									<a href="#" onclick="doSmilie(':idea:', 'reply'); return false;"><img src="/uploads/smil3dbd4e7853679.gif" alt="これだっ！" title="これだっ！"></a>
+									<a href="#" onclick="doSmilie('[[car]]', 'reply'); return false;"><img src="/uploads/smil46997c161e93e.gif" alt="車" title="車"></a>
+									<a href="#" onclick="doSmilie('[[camera]]', 'reply'); return false;"><img src="/uploads/smil78db6350c1ab92577f9757c9be14a23b.gif" alt="カメラ" title="カメラ"></a>
+									<a href="#" onclick="doSmilie('[[pencil]]', 'reply'); return false;"><img src="/uploads/smil4699acc0055c9.gif" alt="鉛筆" title="鉛筆"></a>
+									<a href="#" onclick="doSmilie('[[eraser]]', 'reply'); return false;"><img src="/uploads/smil4699acd8cb2d6.gif" alt="消しゴム" title="消しゴム"></a>
+									<a href="#" onclick="doSmilie('[[beer]]', 'reply'); return false;"><img src="/uploads/smildb4ee3481870be09c09d0b25fd136c40.gif" alt="ビール" title="ビール"></a>
+									<a href="#" onclick="doSmilie('[[wakaba-mk]]', 'reply'); return false;"><img src="/uploads/smil4699afe9cfb02.gif" alt="若葉マーク" title="若葉マーク"></a>
+									<a href="#" onclick="doSmilie('[[audio]]', 'reply'); return false;"><img src="/uploads/smil4699affd88f0a.gif" alt="音符" title="音符"></a>
+									<a href="#" onclick="doSmilie('[[heart]]', 'reply'); return false;"><img src="/uploads/smil4699b01c89057.gif" alt="ハートマーク" title="ハートマーク"></a>
+									<a href="#" onclick="doSmilie('[[idea]]', 'reply'); return false;"><img src="/uploads/smil4699b03a3af99.gif" alt="電球／アイデア" title="電球／アイデア"></a>
+									<a href="#" onclick="doSmilie('[[star]]', 'reply'); return false;"><img src="/uploads/smil4699b048b033b.gif" alt="星" title="星"></a>
+									<a href="#" onclick="doSmilie('[[pc]]', 'reply'); return false;"><img src="/uploads/smil4699b079056e4.gif" alt="パソコン" title="パソコン"></a>
+									<a href="#" onclick="doSmilie('[[mail]]', 'reply'); return false;"><img src="/uploads/smil4699b08781fb9.gif" alt="メール" title="メール"></a>
+									<a href="#" onclick="doSmilie('[[phone]]', 'reply'); return false;"><img src="/uploads/smil4699b094a6a2e.gif" alt="電話" title="電話"></a>
+									<a href="#" onclick="doSmilie('[[wt-clear]]', 'reply'); return false;"><img src="/uploads/smil4699b12451915.gif" alt="晴れ" title="晴れ"></a>
+									<a href="#" onclick="doSmilie('[[wt-fc]]', 'reply'); return false;"><img src="/uploads/smil4699b145f0593.gif" alt="曇り時々晴れ" title="曇り時々晴れ"></a>
+									<a href="#" onclick="doSmilie('[[wt-cloud]]', 'reply'); return false;"><img src="/uploads/smil4699b1629af9a.gif" alt="曇り" title="曇り"></a>
+									<a href="#" onclick="doSmilie('[[wt-rain]]', 'reply'); return false;"><img src="/uploads/smil4699b1733bcdf.gif" alt="雨" title="雨"></a>
+									<a href="#" onclick="doSmilie('[[wt-snow]]', 'reply'); return false;"><img src="/uploads/smil4699b18deba80.gif" alt="雪" title="雪"></a>
+									<a href="#" onclick="doSmilie('[[spa]]', 'reply'); return false;"><img src="/uploads/smil46e692ddbe88c.gif" alt="温泉" title="温泉"></a>
+									<a href="#" onclick="doSmilie('[[tree]]', 'reply'); return false;"><img src="/uploads/smil63b3a54a394f69109702812bbfb810b3.gif" alt="木" title="木"></a>
+									<a href="#" onclick="doSmilie('[[flower]]', 'reply'); return false;"><img src="/uploads/smil10884a75d246a85ec4298f79e3506da8.gif" alt="花" title="花"></a>
+									<a href="#" onclick="doSmilie('[[mountain1]]', 'reply'); return false;"><img src="/uploads/smil57f2c8ab0fb38ef415752b4c15b1fe4f.gif" alt="山" title="山"></a>
+									<a href="#" onclick="doSmilie('[[riceball]]', 'reply'); return false;"><img src="/uploads/smil9926124f1046231db91bd4ab61e62659.gif" alt="おにぎり" title="おにぎり"></a>
+									<a href="#" onclick="doSmilie('[[sweat]]', 'reply'); return false;"><img src="/uploads/smil7eeafacc86ed084f521e9ab461823577.gif" alt="汗" title="汗"></a>
+									<a href="#" onclick="doSmilie('[[train]]', 'reply'); return false;"><img src="/uploads/smil35ea269da4937f4165097a5498009d8f.gif" alt="電車" title="電車"></a>
+									<a href="#" onclick="doSmilie('[[bottle]]', 'reply'); return false;"><img src="/uploads/smil81f4f3ab1a6ec083338690c560c48ec1.gif" alt="お酒" title="お酒"></a>
+									<a href="#" onclick="doSmilie('[[dash]]', 'reply'); return false;"><img src="/uploads/smileb656b67972ce303ff03a912c22e7532.gif" alt="急ぐ" title="急ぐ"></a>
+									<a href="#" onclick="doSmilie('[[fuji]]', 'reply'); return false;"><img src="/uploads/smil7e5321b2e11aea2d4ccf24288be75639.gif" alt="富士山" title="富士山"></a>
+									<a href="#" onclick="doSmilie('[[scissors]]', 'reply'); return false;"><img src="/uploads/smilf991f5109695ef476291c29858c1b06a.gif" alt="ピース／チョキ" title="ピース／チョキ"></a>
+									<a href="#" onclick="doSmilie('[[punch]]', 'reply'); return false;"><img src="/uploads/smil06507e34c18bc717ea45204a398b43a2.gif" alt="パンチ" title="パンチ"></a>
+													<a href="#" onclick="doEmoji('140', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/happy01.gif" alt="happy01" /></a>
+									<a href="#" onclick="doEmoji('141', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/angry.gif" alt="angry" /></a>
+									<a href="#" onclick="doEmoji('142', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/despair.gif" alt="despair" /></a>
+									<a href="#" onclick="doEmoji('143', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sad.gif" alt="sad" /></a>
+									<a href="#" onclick="doEmoji('144', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/wobbly.gif" alt="wobbly" /></a>
+									<a href="#" onclick="doEmoji('1021', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/think.gif" alt="think" /></a>
+									<a href="#" onclick="doEmoji('1022', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/confident.gif" alt="confident" /></a>
+									<a href="#" onclick="doEmoji('1023', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/coldsweats01.gif" alt="coldsweats01" /></a>
+									<a href="#" onclick="doEmoji('1024', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/coldsweats02.gif" alt="coldsweats02" /></a>
+									<a href="#" onclick="doEmoji('1025', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/pout.gif" alt="pout" /></a>
+									<a href="#" onclick="doEmoji('1026', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/gawk.gif" alt="gawk" /></a>
+									<a href="#" onclick="doEmoji('1027', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/lovely.gif" alt="lovely" /></a>
+									<a href="#" onclick="doEmoji('1029', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bleah.gif" alt="bleah" /></a>
+									<a href="#" onclick="doEmoji('1030', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/wink.gif" alt="wink" /></a>
+									<a href="#" onclick="doEmoji('1031', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/happy02.gif" alt="happy02" /></a>
+									<a href="#" onclick="doEmoji('1032', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bearing.gif" alt="bearing" /></a>
+									<a href="#" onclick="doEmoji('1033', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/catface.gif" alt="catface" /></a>
+									<a href="#" onclick="doEmoji('1034', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/crying.gif" alt="crying" /></a>
+									<a href="#" onclick="doEmoji('1035', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/weep.gif" alt="weep" /></a>
+									<a href="#" onclick="doEmoji('1071', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/delicious.gif" alt="delicious" /></a>
+									<a href="#" onclick="doEmoji('1072', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/smile.gif" alt="smile" /></a>
+									<a href="#" onclick="doEmoji('1076', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/shock.gif" alt="shock" /></a>
+									<a href="#" onclick="doEmoji('145', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/up.gif" alt="up" /></a>
+									<a href="#" onclick="doEmoji('156', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/down.gif" alt="down" /></a>
+									<a href="#" onclick="doEmoji('150', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/shine.gif" alt="shine" /></a>
+									<a href="#" onclick="doEmoji('151', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/flair.gif" alt="flair" /></a>
+									<a href="#" onclick="doEmoji('152', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/annoy.gif" alt="annoy" /></a>
+									<a href="#" onclick="doEmoji('157', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sleepy.gif" alt="sleepy" /></a>
+									<a href="#" onclick="doEmoji('158', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sign01.gif" alt="sign01" /></a>
+									<a href="#" onclick="doEmoji('162', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sweat01.gif" alt="sweat01" /></a>
+									<a href="#" onclick="doEmoji('163', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sweat02.gif" alt="sweat02" /></a>
+									<a href="#" onclick="doEmoji('164', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/dash.gif" alt="dash" /></a>
+									<a href="#" onclick="doEmoji('146', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/note.gif" alt="note" /></a>
+									<a href="#" onclick="doEmoji('155', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/notes.gif" alt="notes" /></a>
+									<a href="#" onclick="doEmoji('147', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/spa.gif" alt="spa" /></a>
+									<a href="#" onclick="doEmoji('149', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/kissmark.gif" alt="kissmark" /></a>
+									<a href="#" onclick="doEmoji('136', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/heart01.gif" alt="heart01" /></a>
+									<a href="#" onclick="doEmoji('137', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/heart02.gif" alt="heart02" /></a>
+									<a href="#" onclick="doEmoji('138', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/heart03.gif" alt="heart03" /></a>
+									<a href="#" onclick="doEmoji('139', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/heart04.gif" alt="heart04" /></a>
+									<a href="#" onclick="doEmoji('154', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bomb.gif" alt="bomb" /></a>
+									<a href="#" onclick="doEmoji('153', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/punch.gif" alt="punch" /></a>
+									<a href="#" onclick="doEmoji('1028', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/good.gif" alt="good" /></a>
+									<a href="#" onclick="doEmoji('86', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/rock.gif" alt="rock" /></a>
+									<a href="#" onclick="doEmoji('87', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/scissors.gif" alt="scissors" /></a>
+									<a href="#" onclick="doEmoji('88', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/paper.gif" alt="paper" /></a>
+									<a href="#" onclick="doEmoji('85', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/ear.gif" alt="ear" /></a>
+									<a href="#" onclick="doEmoji('84', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/eye.gif" alt="eye" /></a>
+									<a href="#" onclick="doEmoji('1', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sun.gif" alt="sun" /></a>
+									<a href="#" onclick="doEmoji('2', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/cloud.gif" alt="cloud" /></a>
+									<a href="#" onclick="doEmoji('3', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/rain.gif" alt="rain" /></a>
+									<a href="#" onclick="doEmoji('4', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/snow.gif" alt="snow" /></a>
+									<a href="#" onclick="doEmoji('5', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/thunder.gif" alt="thunder" /></a>
+									<a href="#" onclick="doEmoji('6', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/typhoon.gif" alt="typhoon" /></a>
+									<a href="#" onclick="doEmoji('8', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sprinkle.gif" alt="sprinkle" /></a>
+									<a href="#" onclick="doEmoji('1052', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/wave.gif" alt="wave" /></a>
+									<a href="#" onclick="doEmoji('172', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/night.gif" alt="night" /></a>
+									<a href="#" onclick="doEmoji('100', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/dog.gif" alt="dog" /></a>
+									<a href="#" onclick="doEmoji('101', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/cat.gif" alt="cat" /></a>
+									<a href="#" onclick="doEmoji('1068', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/chick.gif" alt="chick" /></a>
+									<a href="#" onclick="doEmoji('1069', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/penguin.gif" alt="penguin" /></a>
+									<a href="#" onclick="doEmoji('1070', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/fish.gif" alt="fish" /></a>
+									<a href="#" onclick="doEmoji('1073', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/horse.gif" alt="horse" /></a>
+									<a href="#" onclick="doEmoji('1074', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/pig.gif" alt="pig" /></a>
+									<a href="#" onclick="doEmoji('9', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/aries.gif" alt="aries" /></a>
+									<a href="#" onclick="doEmoji('10', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/taurus.gif" alt="taurus" /></a>
+									<a href="#" onclick="doEmoji('11', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/gemini.gif" alt="gemini" /></a>
+									<a href="#" onclick="doEmoji('12', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/cancer.gif" alt="cancer" /></a>
+									<a href="#" onclick="doEmoji('13', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/leo.gif" alt="leo" /></a>
+									<a href="#" onclick="doEmoji('14', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/virgo.gif" alt="virgo" /></a>
+									<a href="#" onclick="doEmoji('15', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/libra.gif" alt="libra" /></a>
+									<a href="#" onclick="doEmoji('16', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/scorpius.gif" alt="scorpius" /></a>
+									<a href="#" onclick="doEmoji('17', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sagittarius.gif" alt="sagittarius" /></a>
+									<a href="#" onclick="doEmoji('18', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/capricornus.gif" alt="capricornus" /></a>
+									<a href="#" onclick="doEmoji('19', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/aquarius.gif" alt="aquarius" /></a>
+									<a href="#" onclick="doEmoji('20', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/pisces.gif" alt="pisces" /></a>
+									<a href="#" onclick="doEmoji('80', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/heart.gif" alt="heart" /></a>
+									<a href="#" onclick="doEmoji('81', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/spade.gif" alt="spade" /></a>
+									<a href="#" onclick="doEmoji('82', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/diamond.gif" alt="diamond" /></a>
+									<a href="#" onclick="doEmoji('83', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/club.gif" alt="club" /></a>
+									<a href="#" onclick="doEmoji('1011', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/pc.gif" alt="pc" /></a>
+									<a href="#" onclick="doEmoji('75', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/mobilephone.gif" alt="mobilephone" /></a>
+									<a href="#" onclick="doEmoji('110', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/mail.gif" alt="mail" /></a>
+									<a href="#" onclick="doEmoji('105', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/phoneto.gif" alt="phoneto" /></a>
+									<a href="#" onclick="doEmoji('106', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/mailto.gif" alt="mailto" /></a>
+									<a href="#" onclick="doEmoji('107', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/faxto.gif" alt="faxto" /></a>
+									<a href="#" onclick="doEmoji('74', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/telephone.gif" alt="telephone" /></a>
+									<a href="#" onclick="doEmoji('1012', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/loveletter.gif" alt="loveletter" /></a>
+									<a href="#" onclick="doEmoji('76', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/memo.gif" alt="memo" /></a>
+									<a href="#" onclick="doEmoji('103', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/xmas.gif" alt="xmas" /></a>
+									<a href="#" onclick="doEmoji('1054', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/clover.gif" alt="clover" /></a>
+									<a href="#" onclick="doEmoji('1056', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/tulip.gif" alt="tulip" /></a>
+									<a href="#" onclick="doEmoji('1058', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/apple.gif" alt="apple" /></a>
+									<a href="#" onclick="doEmoji('1059', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bud.gif" alt="bud" /></a>
+									<a href="#" onclick="doEmoji('1060', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/maple.gif" alt="maple" /></a>
+									<a href="#" onclick="doEmoji('1061', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/cherryblossom.gif" alt="cherryblossom" /></a>
+									<a href="#" onclick="doEmoji('115', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/id.gif" alt="id" /></a>
+									<a href="#" onclick="doEmoji('116', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/key.gif" alt="key" /></a>
+									<a href="#" onclick="doEmoji('123', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sharp.gif" alt="sharp" /></a>
+									<a href="#" onclick="doEmoji('125', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/one.gif" alt="one" /></a>
+									<a href="#" onclick="doEmoji('126', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/two.gif" alt="two" /></a>
+									<a href="#" onclick="doEmoji('127', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/three.gif" alt="three" /></a>
+									<a href="#" onclick="doEmoji('128', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/four.gif" alt="four" /></a>
+									<a href="#" onclick="doEmoji('129', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/five.gif" alt="five" /></a>
+									<a href="#" onclick="doEmoji('130', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/six.gif" alt="six" /></a>
+									<a href="#" onclick="doEmoji('131', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/seven.gif" alt="seven" /></a>
+									<a href="#" onclick="doEmoji('132', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/eight.gif" alt="eight" /></a>
+									<a href="#" onclick="doEmoji('133', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/nine.gif" alt="nine" /></a>
+									<a href="#" onclick="doEmoji('134', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/zero.gif" alt="zero" /></a>
+									<a href="#" onclick="doEmoji('1038', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/copyright.gif" alt="copyright" /></a>
+									<a href="#" onclick="doEmoji('1039', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/tm.gif" alt="tm" /></a>
+									<a href="#" onclick="doEmoji('1043', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/r-mark.gif" alt="r-mark" /></a>
+									<a href="#" onclick="doEmoji('1010', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/dollar.gif" alt="dollar" /></a>
+									<a href="#" onclick="doEmoji('113', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/yen.gif" alt="yen" /></a>
+									<a href="#" onclick="doEmoji('114', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/free.gif" alt="free" /></a>
+									<a href="#" onclick="doEmoji('119', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/search.gif" alt="search" /></a>
+									<a href="#" onclick="doEmoji('120', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/new.gif" alt="new" /></a>
+									<a href="#" onclick="doEmoji('135', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/ok.gif" alt="ok" /></a>
+									<a href="#" onclick="doEmoji('1041', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/secret.gif" alt="secret" /></a>
+									<a href="#" onclick="doEmoji('1044', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/danger.gif" alt="danger" /></a>
+									<a href="#" onclick="doEmoji('59', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/upwardright.gif" alt="upwardright" /></a>
+									<a href="#" onclick="doEmoji('104', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/downwardleft.gif" alt="downwardleft" /></a>
+									<a href="#" onclick="doEmoji('89', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/downwardright.gif" alt="downwardright" /></a>
+									<a href="#" onclick="doEmoji('90', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/upwardleft.gif" alt="upwardleft" /></a>
+									<a href="#" onclick="doEmoji('48', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/signaler.gif" alt="signaler" /></a>
+									<a href="#" onclick="doEmoji('49', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/toilet.gif" alt="toilet" /></a>
+									<a href="#" onclick="doEmoji('50', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/restaurant.gif" alt="restaurant" /></a>
+									<a href="#" onclick="doEmoji('94', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/wheelchair.gif" alt="wheelchair" /></a>
+									<a href="#" onclick="doEmoji('38', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/house.gif" alt="house" /></a>
+									<a href="#" onclick="doEmoji('39', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/building.gif" alt="building" /></a>
+									<a href="#" onclick="doEmoji('40', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/postoffice.gif" alt="postoffice" /></a>
+									<a href="#" onclick="doEmoji('41', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/hospital.gif" alt="hospital" /></a>
+									<a href="#" onclick="doEmoji('42', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bank.gif" alt="bank" /></a>
+									<a href="#" onclick="doEmoji('43', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/atm.gif" alt="atm" /></a>
+									<a href="#" onclick="doEmoji('44', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/hotel.gif" alt="hotel" /></a>
+									<a href="#" onclick="doEmoji('1051', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/school.gif" alt="school" /></a>
+									<a href="#" onclick="doEmoji('1053', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/fuji.gif" alt="fuji" /></a>
+									<a href="#" onclick="doEmoji('45', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/24hours.gif" alt="24hours" /></a>
+									<a href="#" onclick="doEmoji('46', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/gasstation.gif" alt="gasstation" /></a>
+									<a href="#" onclick="doEmoji('47', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/parking.gif" alt="parking" /></a>
+									<a href="#" onclick="doEmoji('1046', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/empty.gif" alt="empty" /></a>
+									<a href="#" onclick="doEmoji('1048', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/full.gif" alt="full" /></a>
+									<a href="#" onclick="doEmoji('66', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/smoking.gif" alt="smoking" /></a>
+									<a href="#" onclick="doEmoji('67', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/nosmoking.gif" alt="nosmoking" /></a>
+									<a href="#" onclick="doEmoji('1040', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/run.gif" alt="run" /></a>
+									<a href="#" onclick="doEmoji('22', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/baseball.gif" alt="baseball" /></a>
+									<a href="#" onclick="doEmoji('23', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/golf.gif" alt="golf" /></a>
+									<a href="#" onclick="doEmoji('24', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/tennis.gif" alt="tennis" /></a>
+									<a href="#" onclick="doEmoji('25', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/soccer.gif" alt="soccer" /></a>
+									<a href="#" onclick="doEmoji('26', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/ski.gif" alt="ski" /></a>
+									<a href="#" onclick="doEmoji('27', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/basketball.gif" alt="basketball" /></a>
+									<a href="#" onclick="doEmoji('28', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/motorsports.gif" alt="motorsports" /></a>
+									<a href="#" onclick="doEmoji('51', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/cafe.gif" alt="cafe" /></a>
+									<a href="#" onclick="doEmoji('52', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bar.gif" alt="bar" /></a>
+									<a href="#" onclick="doEmoji('53', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/beer.gif" alt="beer" /></a>
+									<a href="#" onclick="doEmoji('54', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/fastfood.gif" alt="fastfood" /></a>
+									<a href="#" onclick="doEmoji('55', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/boutique.gif" alt="boutique" /></a>
+									<a href="#" onclick="doEmoji('56', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/hairsalon.gif" alt="hairsalon" /></a>
+									<a href="#" onclick="doEmoji('57', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/karaoke.gif" alt="karaoke" /></a>
+									<a href="#" onclick="doEmoji('58', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/movie.gif" alt="movie" /></a>
+									<a href="#" onclick="doEmoji('61', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/music.gif" alt="music" /></a>
+									<a href="#" onclick="doEmoji('62', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/art.gif" alt="art" /></a>
+									<a href="#" onclick="doEmoji('63', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/drama.gif" alt="drama" /></a>
+									<a href="#" onclick="doEmoji('65', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/ticket.gif" alt="ticket" /></a>
+									<a href="#" onclick="doEmoji('68', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/camera.gif" alt="camera" /></a>
+									<a href="#" onclick="doEmoji('69', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bag.gif" alt="bag" /></a>
+									<a href="#" onclick="doEmoji('70', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/book.gif" alt="book" /></a>
+									<a href="#" onclick="doEmoji('71', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/ribbon.gif" alt="ribbon" /></a>
+									<a href="#" onclick="doEmoji('72', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/present.gif" alt="present" /></a>
+									<a href="#" onclick="doEmoji('73', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/birthday.gif" alt="birthday" /></a>
+									<a href="#" onclick="doEmoji('1063', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/cake.gif" alt="cake" /></a>
+									<a href="#" onclick="doEmoji('1075', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/wine.gif" alt="wine" /></a>
+									<a href="#" onclick="doEmoji('1066', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bread.gif" alt="bread" /></a>
+									<a href="#" onclick="doEmoji('1062', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/riceball.gif" alt="riceball" /></a>
+									<a href="#" onclick="doEmoji('1019', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/japanesetea.gif" alt="japanesetea" /></a>
+									<a href="#" onclick="doEmoji('1064', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bottle.gif" alt="bottle" /></a>
+									<a href="#" onclick="doEmoji('1065', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/noodle.gif" alt="noodle" /></a>
+									<a href="#" onclick="doEmoji('77', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/tv.gif" alt="tv" /></a>
+									<a href="#" onclick="doEmoji('79', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/cd.gif" alt="cd" /></a>
+									<a href="#" onclick="doEmoji('91', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/foot.gif" alt="foot" /></a>
+									<a href="#" onclick="doEmoji('92', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/shoe.gif" alt="shoe" /></a>
+									<a href="#" onclick="doEmoji('1003', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/t-shirt.gif" alt="t-shirt" /></a>
+									<a href="#" onclick="doEmoji('1005', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/rouge.gif" alt="rouge" /></a>
+									<a href="#" onclick="doEmoji('1016', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/ring.gif" alt="ring" /></a>
+									<a href="#" onclick="doEmoji('1015', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/crown.gif" alt="crown" /></a>
+									<a href="#" onclick="doEmoji('1008', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bell.gif" alt="bell" /></a>
+									<a href="#" onclick="doEmoji('167', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/slate.gif" alt="slate" /></a>
+									<a href="#" onclick="doEmoji('176', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/clock.gif" alt="clock" /></a>
+									<a href="#" onclick="doEmoji('95', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/newmoon.gif" alt="newmoon" /></a>
+									<a href="#" onclick="doEmoji('96', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/moon1.gif" alt="moon1" /></a>
+									<a href="#" onclick="doEmoji('97', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/moon2.gif" alt="moon2" /></a>
+									<a href="#" onclick="doEmoji('98', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/moon3.gif" alt="moon3" /></a>
+									<a href="#" onclick="doEmoji('30', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/train.gif" alt="train" /></a>
+									<a href="#" onclick="doEmoji('31', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/subway.gif" alt="subway" /></a>
+									<a href="#" onclick="doEmoji('32', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bullettrain.gif" alt="bullettrain" /></a>
+									<a href="#" onclick="doEmoji('33', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/car.gif" alt="car" /></a>
+									<a href="#" onclick="doEmoji('34', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/rvcar.gif" alt="rvcar" /></a>
+									<a href="#" onclick="doEmoji('35', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bus.gif" alt="bus" /></a>
+									<a href="#" onclick="doEmoji('36', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/ship.gif" alt="ship" /></a>
+									<a href="#" onclick="doEmoji('37', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/airplane.gif" alt="airplane" /></a>
+									<a href="#" onclick="doEmoji('1018', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bicycle.gif" alt="bicycle" /></a>
+									<a href="#" onclick="doEmoji('102', 'reply'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/yacht.gif" alt="yacht" /></a>
+								</div>
+			</div>
+			<button class="btn_emoji mr5 ov" type="button"><img src="/themes/bootstrap3/img/icon_emoji.svg" alt=""></button>
+			</div>
+			<button class="btn btn_add_comment sm ov" type="submit" name="com_dopost">投稿する</button>
+		</div>
+		</form>
+	</div>
+	</div>
+</div>
+
+
+<!-- Modal -->
+<div class="add_comment edit modal fade" id="edit_comment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 10010;">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">コメントを編集</h4>
+		</div>
+		<form role="form" action="comment_post.php" method="post" onsubmit='return xoopsFormValidate_commentform(this);'>
+		<div class="modal-body">
+			<textarea name="com_text" id="com_text_edit" class="form-control" rows="8"></textarea>
+		</div>
+		<div class="ft modal-footer">
+			<button class="btn btn-default btn_reply_cancel sm mr20" type="button" data-dismiss="modal">キャンセル</button>
+			<div style="position:relative;">
+				<div class="emoji_area dis-n">
+				<div class="inner fs-0">
+											<a href="#" onclick="doSmilie(':-D', 'edit'); return false;"><img src="/uploads/smil3dbd4d4e4c4f2.gif" alt="ニッ" title="ニッ"></a>
+											<a href="#" onclick="doSmilie(':-)', 'edit'); return false;"><img src="/uploads/smil3dbd4d6422f04.gif" alt="にっこり" title="にっこり"></a>
+											<a href="#" onclick="doSmilie(':-(', 'edit'); return false;"><img src="/uploads/smil3dbd4d75edb5e.gif" alt="シュン" title="シュン"></a>
+											<a href="#" onclick="doSmilie(':-o', 'edit'); return false;"><img src="/uploads/smil3dbd4d8676346.gif" alt="エッ!?" title="エッ!?"></a>
+											<a href="#" onclick="doSmilie(':-?', 'edit'); return false;"><img src="/uploads/smil3dbd4d99c6eaa.gif" alt="ん？" title="ん？"></a>
+											<a href="#" onclick="doSmilie('8-)', 'edit'); return false;"><img src="/uploads/smil3dbd4daabd491.gif" alt="フフッ" title="フフッ"></a>
+											<a href="#" onclick="doSmilie(':lol:', 'edit'); return false;"><img src="/uploads/smil3dbd4dbc14f3f.gif" alt="げらげら" title="げらげら"></a>
+											<a href="#" onclick="doSmilie(':-x', 'edit'); return false;"><img src="/uploads/smil3dbd4dcd7b9f4.gif" alt="むぅ" title="むぅ"></a>
+											<a href="#" onclick="doSmilie(':-P', 'edit'); return false;"><img src="/uploads/smil3dbd4ddd6835f.gif" alt="べー" title="べー"></a>
+											<a href="#" onclick="doSmilie(':oops:', 'edit'); return false;"><img src="/uploads/smil3dbd4df1944ee.gif" alt="はー" title="はー"></a>
+											<a href="#" onclick="doSmilie(':cry:', 'edit'); return false;"><img src="/uploads/smil3dbd4e02c5440.gif" alt="しくしく" title="しくしく"></a>
+											<a href="#" onclick="doSmilie(':evil:', 'edit'); return false;"><img src="/uploads/smil3dbd4e1748cc9.gif" alt="カーッ" title="カーッ"></a>
+											<a href="#" onclick="doSmilie(':roll:', 'edit'); return false;"><img src="/uploads/smil3dbd4e29bbcc7.gif" alt="ふんふん" title="ふんふん"></a>
+											<a href="#" onclick="doSmilie(';-)', 'edit'); return false;"><img src="/uploads/smil3dbd4e398ff7b.gif" alt="ウィンク" title="ウィンク"></a>
+											<a href="#" onclick="doSmilie(':idea:', 'edit'); return false;"><img src="/uploads/smil3dbd4e7853679.gif" alt="これだっ！" title="これだっ！"></a>
+											<a href="#" onclick="doSmilie('[[car]]', 'edit'); return false;"><img src="/uploads/smil46997c161e93e.gif" alt="車" title="車"></a>
+											<a href="#" onclick="doSmilie('[[camera]]', 'edit'); return false;"><img src="/uploads/smil78db6350c1ab92577f9757c9be14a23b.gif" alt="カメラ" title="カメラ"></a>
+											<a href="#" onclick="doSmilie('[[pencil]]', 'edit'); return false;"><img src="/uploads/smil4699acc0055c9.gif" alt="鉛筆" title="鉛筆"></a>
+											<a href="#" onclick="doSmilie('[[eraser]]', 'edit'); return false;"><img src="/uploads/smil4699acd8cb2d6.gif" alt="消しゴム" title="消しゴム"></a>
+											<a href="#" onclick="doSmilie('[[beer]]', 'edit'); return false;"><img src="/uploads/smildb4ee3481870be09c09d0b25fd136c40.gif" alt="ビール" title="ビール"></a>
+											<a href="#" onclick="doSmilie('[[wakaba-mk]]', 'edit'); return false;"><img src="/uploads/smil4699afe9cfb02.gif" alt="若葉マーク" title="若葉マーク"></a>
+											<a href="#" onclick="doSmilie('[[audio]]', 'edit'); return false;"><img src="/uploads/smil4699affd88f0a.gif" alt="音符" title="音符"></a>
+											<a href="#" onclick="doSmilie('[[heart]]', 'edit'); return false;"><img src="/uploads/smil4699b01c89057.gif" alt="ハートマーク" title="ハートマーク"></a>
+											<a href="#" onclick="doSmilie('[[idea]]', 'edit'); return false;"><img src="/uploads/smil4699b03a3af99.gif" alt="電球／アイデア" title="電球／アイデア"></a>
+											<a href="#" onclick="doSmilie('[[star]]', 'edit'); return false;"><img src="/uploads/smil4699b048b033b.gif" alt="星" title="星"></a>
+											<a href="#" onclick="doSmilie('[[pc]]', 'edit'); return false;"><img src="/uploads/smil4699b079056e4.gif" alt="パソコン" title="パソコン"></a>
+											<a href="#" onclick="doSmilie('[[mail]]', 'edit'); return false;"><img src="/uploads/smil4699b08781fb9.gif" alt="メール" title="メール"></a>
+											<a href="#" onclick="doSmilie('[[phone]]', 'edit'); return false;"><img src="/uploads/smil4699b094a6a2e.gif" alt="電話" title="電話"></a>
+											<a href="#" onclick="doSmilie('[[wt-clear]]', 'edit'); return false;"><img src="/uploads/smil4699b12451915.gif" alt="晴れ" title="晴れ"></a>
+											<a href="#" onclick="doSmilie('[[wt-fc]]', 'edit'); return false;"><img src="/uploads/smil4699b145f0593.gif" alt="曇り時々晴れ" title="曇り時々晴れ"></a>
+											<a href="#" onclick="doSmilie('[[wt-cloud]]', 'edit'); return false;"><img src="/uploads/smil4699b1629af9a.gif" alt="曇り" title="曇り"></a>
+											<a href="#" onclick="doSmilie('[[wt-rain]]', 'edit'); return false;"><img src="/uploads/smil4699b1733bcdf.gif" alt="雨" title="雨"></a>
+											<a href="#" onclick="doSmilie('[[wt-snow]]', 'edit'); return false;"><img src="/uploads/smil4699b18deba80.gif" alt="雪" title="雪"></a>
+											<a href="#" onclick="doSmilie('[[spa]]', 'edit'); return false;"><img src="/uploads/smil46e692ddbe88c.gif" alt="温泉" title="温泉"></a>
+											<a href="#" onclick="doSmilie('[[tree]]', 'edit'); return false;"><img src="/uploads/smil63b3a54a394f69109702812bbfb810b3.gif" alt="木" title="木"></a>
+											<a href="#" onclick="doSmilie('[[flower]]', 'edit'); return false;"><img src="/uploads/smil10884a75d246a85ec4298f79e3506da8.gif" alt="花" title="花"></a>
+											<a href="#" onclick="doSmilie('[[mountain1]]', 'edit'); return false;"><img src="/uploads/smil57f2c8ab0fb38ef415752b4c15b1fe4f.gif" alt="山" title="山"></a>
+											<a href="#" onclick="doSmilie('[[riceball]]', 'edit'); return false;"><img src="/uploads/smil9926124f1046231db91bd4ab61e62659.gif" alt="おにぎり" title="おにぎり"></a>
+											<a href="#" onclick="doSmilie('[[sweat]]', 'edit'); return false;"><img src="/uploads/smil7eeafacc86ed084f521e9ab461823577.gif" alt="汗" title="汗"></a>
+											<a href="#" onclick="doSmilie('[[train]]', 'edit'); return false;"><img src="/uploads/smil35ea269da4937f4165097a5498009d8f.gif" alt="電車" title="電車"></a>
+											<a href="#" onclick="doSmilie('[[bottle]]', 'edit'); return false;"><img src="/uploads/smil81f4f3ab1a6ec083338690c560c48ec1.gif" alt="お酒" title="お酒"></a>
+											<a href="#" onclick="doSmilie('[[dash]]', 'edit'); return false;"><img src="/uploads/smileb656b67972ce303ff03a912c22e7532.gif" alt="急ぐ" title="急ぐ"></a>
+											<a href="#" onclick="doSmilie('[[fuji]]', 'edit'); return false;"><img src="/uploads/smil7e5321b2e11aea2d4ccf24288be75639.gif" alt="富士山" title="富士山"></a>
+											<a href="#" onclick="doSmilie('[[scissors]]', 'edit'); return false;"><img src="/uploads/smilf991f5109695ef476291c29858c1b06a.gif" alt="ピース／チョキ" title="ピース／チョキ"></a>
+											<a href="#" onclick="doSmilie('[[punch]]', 'edit'); return false;"><img src="/uploads/smil06507e34c18bc717ea45204a398b43a2.gif" alt="パンチ" title="パンチ"></a>
+																<a href="#" onclick="doEmoji('140', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/happy01.gif" alt="happy01" /></a>
+											<a href="#" onclick="doEmoji('141', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/angry.gif" alt="angry" /></a>
+											<a href="#" onclick="doEmoji('142', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/despair.gif" alt="despair" /></a>
+											<a href="#" onclick="doEmoji('143', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sad.gif" alt="sad" /></a>
+											<a href="#" onclick="doEmoji('144', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/wobbly.gif" alt="wobbly" /></a>
+											<a href="#" onclick="doEmoji('1021', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/think.gif" alt="think" /></a>
+											<a href="#" onclick="doEmoji('1022', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/confident.gif" alt="confident" /></a>
+											<a href="#" onclick="doEmoji('1023', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/coldsweats01.gif" alt="coldsweats01" /></a>
+											<a href="#" onclick="doEmoji('1024', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/coldsweats02.gif" alt="coldsweats02" /></a>
+											<a href="#" onclick="doEmoji('1025', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/pout.gif" alt="pout" /></a>
+											<a href="#" onclick="doEmoji('1026', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/gawk.gif" alt="gawk" /></a>
+											<a href="#" onclick="doEmoji('1027', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/lovely.gif" alt="lovely" /></a>
+											<a href="#" onclick="doEmoji('1029', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bleah.gif" alt="bleah" /></a>
+											<a href="#" onclick="doEmoji('1030', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/wink.gif" alt="wink" /></a>
+											<a href="#" onclick="doEmoji('1031', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/happy02.gif" alt="happy02" /></a>
+											<a href="#" onclick="doEmoji('1032', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bearing.gif" alt="bearing" /></a>
+											<a href="#" onclick="doEmoji('1033', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/catface.gif" alt="catface" /></a>
+											<a href="#" onclick="doEmoji('1034', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/crying.gif" alt="crying" /></a>
+											<a href="#" onclick="doEmoji('1035', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/weep.gif" alt="weep" /></a>
+											<a href="#" onclick="doEmoji('1071', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/delicious.gif" alt="delicious" /></a>
+											<a href="#" onclick="doEmoji('1072', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/smile.gif" alt="smile" /></a>
+											<a href="#" onclick="doEmoji('1076', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/shock.gif" alt="shock" /></a>
+											<a href="#" onclick="doEmoji('145', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/up.gif" alt="up" /></a>
+											<a href="#" onclick="doEmoji('156', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/down.gif" alt="down" /></a>
+											<a href="#" onclick="doEmoji('150', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/shine.gif" alt="shine" /></a>
+											<a href="#" onclick="doEmoji('151', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/flair.gif" alt="flair" /></a>
+											<a href="#" onclick="doEmoji('152', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/annoy.gif" alt="annoy" /></a>
+											<a href="#" onclick="doEmoji('157', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sleepy.gif" alt="sleepy" /></a>
+											<a href="#" onclick="doEmoji('158', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sign01.gif" alt="sign01" /></a>
+											<a href="#" onclick="doEmoji('162', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sweat01.gif" alt="sweat01" /></a>
+											<a href="#" onclick="doEmoji('163', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sweat02.gif" alt="sweat02" /></a>
+											<a href="#" onclick="doEmoji('164', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/dash.gif" alt="dash" /></a>
+											<a href="#" onclick="doEmoji('146', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/note.gif" alt="note" /></a>
+											<a href="#" onclick="doEmoji('155', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/notes.gif" alt="notes" /></a>
+											<a href="#" onclick="doEmoji('147', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/spa.gif" alt="spa" /></a>
+											<a href="#" onclick="doEmoji('149', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/kissmark.gif" alt="kissmark" /></a>
+											<a href="#" onclick="doEmoji('136', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/heart01.gif" alt="heart01" /></a>
+											<a href="#" onclick="doEmoji('137', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/heart02.gif" alt="heart02" /></a>
+											<a href="#" onclick="doEmoji('138', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/heart03.gif" alt="heart03" /></a>
+											<a href="#" onclick="doEmoji('139', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/heart04.gif" alt="heart04" /></a>
+											<a href="#" onclick="doEmoji('154', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bomb.gif" alt="bomb" /></a>
+											<a href="#" onclick="doEmoji('153', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/punch.gif" alt="punch" /></a>
+											<a href="#" onclick="doEmoji('1028', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/good.gif" alt="good" /></a>
+											<a href="#" onclick="doEmoji('86', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/rock.gif" alt="rock" /></a>
+											<a href="#" onclick="doEmoji('87', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/scissors.gif" alt="scissors" /></a>
+											<a href="#" onclick="doEmoji('88', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/paper.gif" alt="paper" /></a>
+											<a href="#" onclick="doEmoji('85', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/ear.gif" alt="ear" /></a>
+											<a href="#" onclick="doEmoji('84', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/eye.gif" alt="eye" /></a>
+											<a href="#" onclick="doEmoji('1', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sun.gif" alt="sun" /></a>
+											<a href="#" onclick="doEmoji('2', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/cloud.gif" alt="cloud" /></a>
+											<a href="#" onclick="doEmoji('3', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/rain.gif" alt="rain" /></a>
+											<a href="#" onclick="doEmoji('4', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/snow.gif" alt="snow" /></a>
+											<a href="#" onclick="doEmoji('5', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/thunder.gif" alt="thunder" /></a>
+											<a href="#" onclick="doEmoji('6', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/typhoon.gif" alt="typhoon" /></a>
+											<a href="#" onclick="doEmoji('8', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sprinkle.gif" alt="sprinkle" /></a>
+											<a href="#" onclick="doEmoji('1052', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/wave.gif" alt="wave" /></a>
+											<a href="#" onclick="doEmoji('172', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/night.gif" alt="night" /></a>
+											<a href="#" onclick="doEmoji('100', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/dog.gif" alt="dog" /></a>
+											<a href="#" onclick="doEmoji('101', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/cat.gif" alt="cat" /></a>
+											<a href="#" onclick="doEmoji('1068', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/chick.gif" alt="chick" /></a>
+											<a href="#" onclick="doEmoji('1069', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/penguin.gif" alt="penguin" /></a>
+											<a href="#" onclick="doEmoji('1070', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/fish.gif" alt="fish" /></a>
+											<a href="#" onclick="doEmoji('1073', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/horse.gif" alt="horse" /></a>
+											<a href="#" onclick="doEmoji('1074', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/pig.gif" alt="pig" /></a>
+											<a href="#" onclick="doEmoji('9', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/aries.gif" alt="aries" /></a>
+											<a href="#" onclick="doEmoji('10', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/taurus.gif" alt="taurus" /></a>
+											<a href="#" onclick="doEmoji('11', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/gemini.gif" alt="gemini" /></a>
+											<a href="#" onclick="doEmoji('12', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/cancer.gif" alt="cancer" /></a>
+											<a href="#" onclick="doEmoji('13', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/leo.gif" alt="leo" /></a>
+											<a href="#" onclick="doEmoji('14', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/virgo.gif" alt="virgo" /></a>
+											<a href="#" onclick="doEmoji('15', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/libra.gif" alt="libra" /></a>
+											<a href="#" onclick="doEmoji('16', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/scorpius.gif" alt="scorpius" /></a>
+											<a href="#" onclick="doEmoji('17', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sagittarius.gif" alt="sagittarius" /></a>
+											<a href="#" onclick="doEmoji('18', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/capricornus.gif" alt="capricornus" /></a>
+											<a href="#" onclick="doEmoji('19', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/aquarius.gif" alt="aquarius" /></a>
+											<a href="#" onclick="doEmoji('20', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/pisces.gif" alt="pisces" /></a>
+											<a href="#" onclick="doEmoji('80', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/heart.gif" alt="heart" /></a>
+											<a href="#" onclick="doEmoji('81', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/spade.gif" alt="spade" /></a>
+											<a href="#" onclick="doEmoji('82', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/diamond.gif" alt="diamond" /></a>
+											<a href="#" onclick="doEmoji('83', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/club.gif" alt="club" /></a>
+											<a href="#" onclick="doEmoji('1011', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/pc.gif" alt="pc" /></a>
+											<a href="#" onclick="doEmoji('75', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/mobilephone.gif" alt="mobilephone" /></a>
+											<a href="#" onclick="doEmoji('110', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/mail.gif" alt="mail" /></a>
+											<a href="#" onclick="doEmoji('105', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/phoneto.gif" alt="phoneto" /></a>
+											<a href="#" onclick="doEmoji('106', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/mailto.gif" alt="mailto" /></a>
+											<a href="#" onclick="doEmoji('107', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/faxto.gif" alt="faxto" /></a>
+											<a href="#" onclick="doEmoji('74', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/telephone.gif" alt="telephone" /></a>
+											<a href="#" onclick="doEmoji('1012', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/loveletter.gif" alt="loveletter" /></a>
+											<a href="#" onclick="doEmoji('76', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/memo.gif" alt="memo" /></a>
+											<a href="#" onclick="doEmoji('103', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/xmas.gif" alt="xmas" /></a>
+											<a href="#" onclick="doEmoji('1054', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/clover.gif" alt="clover" /></a>
+											<a href="#" onclick="doEmoji('1056', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/tulip.gif" alt="tulip" /></a>
+											<a href="#" onclick="doEmoji('1058', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/apple.gif" alt="apple" /></a>
+											<a href="#" onclick="doEmoji('1059', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bud.gif" alt="bud" /></a>
+											<a href="#" onclick="doEmoji('1060', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/maple.gif" alt="maple" /></a>
+											<a href="#" onclick="doEmoji('1061', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/cherryblossom.gif" alt="cherryblossom" /></a>
+											<a href="#" onclick="doEmoji('115', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/id.gif" alt="id" /></a>
+											<a href="#" onclick="doEmoji('116', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/key.gif" alt="key" /></a>
+											<a href="#" onclick="doEmoji('123', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/sharp.gif" alt="sharp" /></a>
+											<a href="#" onclick="doEmoji('125', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/one.gif" alt="one" /></a>
+											<a href="#" onclick="doEmoji('126', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/two.gif" alt="two" /></a>
+											<a href="#" onclick="doEmoji('127', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/three.gif" alt="three" /></a>
+											<a href="#" onclick="doEmoji('128', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/four.gif" alt="four" /></a>
+											<a href="#" onclick="doEmoji('129', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/five.gif" alt="five" /></a>
+											<a href="#" onclick="doEmoji('130', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/six.gif" alt="six" /></a>
+											<a href="#" onclick="doEmoji('131', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/seven.gif" alt="seven" /></a>
+											<a href="#" onclick="doEmoji('132', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/eight.gif" alt="eight" /></a>
+											<a href="#" onclick="doEmoji('133', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/nine.gif" alt="nine" /></a>
+											<a href="#" onclick="doEmoji('134', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/zero.gif" alt="zero" /></a>
+											<a href="#" onclick="doEmoji('1038', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/copyright.gif" alt="copyright" /></a>
+											<a href="#" onclick="doEmoji('1039', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/tm.gif" alt="tm" /></a>
+											<a href="#" onclick="doEmoji('1043', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/r-mark.gif" alt="r-mark" /></a>
+											<a href="#" onclick="doEmoji('1010', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/dollar.gif" alt="dollar" /></a>
+											<a href="#" onclick="doEmoji('113', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/yen.gif" alt="yen" /></a>
+											<a href="#" onclick="doEmoji('114', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/free.gif" alt="free" /></a>
+											<a href="#" onclick="doEmoji('119', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/search.gif" alt="search" /></a>
+											<a href="#" onclick="doEmoji('120', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/new.gif" alt="new" /></a>
+											<a href="#" onclick="doEmoji('135', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/ok.gif" alt="ok" /></a>
+											<a href="#" onclick="doEmoji('1041', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/secret.gif" alt="secret" /></a>
+											<a href="#" onclick="doEmoji('1044', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/danger.gif" alt="danger" /></a>
+											<a href="#" onclick="doEmoji('59', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/upwardright.gif" alt="upwardright" /></a>
+											<a href="#" onclick="doEmoji('104', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/downwardleft.gif" alt="downwardleft" /></a>
+											<a href="#" onclick="doEmoji('89', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/downwardright.gif" alt="downwardright" /></a>
+											<a href="#" onclick="doEmoji('90', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/upwardleft.gif" alt="upwardleft" /></a>
+											<a href="#" onclick="doEmoji('48', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/signaler.gif" alt="signaler" /></a>
+											<a href="#" onclick="doEmoji('49', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/toilet.gif" alt="toilet" /></a>
+											<a href="#" onclick="doEmoji('50', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/restaurant.gif" alt="restaurant" /></a>
+											<a href="#" onclick="doEmoji('94', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/wheelchair.gif" alt="wheelchair" /></a>
+											<a href="#" onclick="doEmoji('38', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/house.gif" alt="house" /></a>
+											<a href="#" onclick="doEmoji('39', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/building.gif" alt="building" /></a>
+											<a href="#" onclick="doEmoji('40', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/postoffice.gif" alt="postoffice" /></a>
+											<a href="#" onclick="doEmoji('41', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/hospital.gif" alt="hospital" /></a>
+											<a href="#" onclick="doEmoji('42', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bank.gif" alt="bank" /></a>
+											<a href="#" onclick="doEmoji('43', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/atm.gif" alt="atm" /></a>
+											<a href="#" onclick="doEmoji('44', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/hotel.gif" alt="hotel" /></a>
+											<a href="#" onclick="doEmoji('1051', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/school.gif" alt="school" /></a>
+											<a href="#" onclick="doEmoji('1053', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/fuji.gif" alt="fuji" /></a>
+											<a href="#" onclick="doEmoji('45', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/24hours.gif" alt="24hours" /></a>
+											<a href="#" onclick="doEmoji('46', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/gasstation.gif" alt="gasstation" /></a>
+											<a href="#" onclick="doEmoji('47', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/parking.gif" alt="parking" /></a>
+											<a href="#" onclick="doEmoji('1046', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/empty.gif" alt="empty" /></a>
+											<a href="#" onclick="doEmoji('1048', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/full.gif" alt="full" /></a>
+											<a href="#" onclick="doEmoji('66', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/smoking.gif" alt="smoking" /></a>
+											<a href="#" onclick="doEmoji('67', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/nosmoking.gif" alt="nosmoking" /></a>
+											<a href="#" onclick="doEmoji('1040', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/run.gif" alt="run" /></a>
+											<a href="#" onclick="doEmoji('22', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/baseball.gif" alt="baseball" /></a>
+											<a href="#" onclick="doEmoji('23', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/golf.gif" alt="golf" /></a>
+											<a href="#" onclick="doEmoji('24', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/tennis.gif" alt="tennis" /></a>
+											<a href="#" onclick="doEmoji('25', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/soccer.gif" alt="soccer" /></a>
+											<a href="#" onclick="doEmoji('26', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/ski.gif" alt="ski" /></a>
+											<a href="#" onclick="doEmoji('27', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/basketball.gif" alt="basketball" /></a>
+											<a href="#" onclick="doEmoji('28', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/motorsports.gif" alt="motorsports" /></a>
+											<a href="#" onclick="doEmoji('51', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/cafe.gif" alt="cafe" /></a>
+											<a href="#" onclick="doEmoji('52', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bar.gif" alt="bar" /></a>
+											<a href="#" onclick="doEmoji('53', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/beer.gif" alt="beer" /></a>
+											<a href="#" onclick="doEmoji('54', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/fastfood.gif" alt="fastfood" /></a>
+											<a href="#" onclick="doEmoji('55', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/boutique.gif" alt="boutique" /></a>
+											<a href="#" onclick="doEmoji('56', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/hairsalon.gif" alt="hairsalon" /></a>
+											<a href="#" onclick="doEmoji('57', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/karaoke.gif" alt="karaoke" /></a>
+											<a href="#" onclick="doEmoji('58', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/movie.gif" alt="movie" /></a>
+											<a href="#" onclick="doEmoji('61', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/music.gif" alt="music" /></a>
+											<a href="#" onclick="doEmoji('62', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/art.gif" alt="art" /></a>
+											<a href="#" onclick="doEmoji('63', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/drama.gif" alt="drama" /></a>
+											<a href="#" onclick="doEmoji('65', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/ticket.gif" alt="ticket" /></a>
+											<a href="#" onclick="doEmoji('68', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/camera.gif" alt="camera" /></a>
+											<a href="#" onclick="doEmoji('69', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bag.gif" alt="bag" /></a>
+											<a href="#" onclick="doEmoji('70', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/book.gif" alt="book" /></a>
+											<a href="#" onclick="doEmoji('71', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/ribbon.gif" alt="ribbon" /></a>
+											<a href="#" onclick="doEmoji('72', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/present.gif" alt="present" /></a>
+											<a href="#" onclick="doEmoji('73', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/birthday.gif" alt="birthday" /></a>
+											<a href="#" onclick="doEmoji('1063', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/cake.gif" alt="cake" /></a>
+											<a href="#" onclick="doEmoji('1075', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/wine.gif" alt="wine" /></a>
+											<a href="#" onclick="doEmoji('1066', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bread.gif" alt="bread" /></a>
+											<a href="#" onclick="doEmoji('1062', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/riceball.gif" alt="riceball" /></a>
+											<a href="#" onclick="doEmoji('1019', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/japanesetea.gif" alt="japanesetea" /></a>
+											<a href="#" onclick="doEmoji('1064', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bottle.gif" alt="bottle" /></a>
+											<a href="#" onclick="doEmoji('1065', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/noodle.gif" alt="noodle" /></a>
+											<a href="#" onclick="doEmoji('77', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/tv.gif" alt="tv" /></a>
+											<a href="#" onclick="doEmoji('79', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/cd.gif" alt="cd" /></a>
+											<a href="#" onclick="doEmoji('91', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/foot.gif" alt="foot" /></a>
+											<a href="#" onclick="doEmoji('92', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/shoe.gif" alt="shoe" /></a>
+											<a href="#" onclick="doEmoji('1003', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/t-shirt.gif" alt="t-shirt" /></a>
+											<a href="#" onclick="doEmoji('1005', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/rouge.gif" alt="rouge" /></a>
+											<a href="#" onclick="doEmoji('1016', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/ring.gif" alt="ring" /></a>
+											<a href="#" onclick="doEmoji('1015', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/crown.gif" alt="crown" /></a>
+											<a href="#" onclick="doEmoji('1008', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bell.gif" alt="bell" /></a>
+											<a href="#" onclick="doEmoji('167', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/slate.gif" alt="slate" /></a>
+											<a href="#" onclick="doEmoji('176', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/clock.gif" alt="clock" /></a>
+											<a href="#" onclick="doEmoji('95', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/newmoon.gif" alt="newmoon" /></a>
+											<a href="#" onclick="doEmoji('96', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/moon1.gif" alt="moon1" /></a>
+											<a href="#" onclick="doEmoji('97', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/moon2.gif" alt="moon2" /></a>
+											<a href="#" onclick="doEmoji('98', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/moon3.gif" alt="moon3" /></a>
+											<a href="#" onclick="doEmoji('30', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/train.gif" alt="train" /></a>
+											<a href="#" onclick="doEmoji('31', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/subway.gif" alt="subway" /></a>
+											<a href="#" onclick="doEmoji('32', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bullettrain.gif" alt="bullettrain" /></a>
+											<a href="#" onclick="doEmoji('33', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/car.gif" alt="car" /></a>
+											<a href="#" onclick="doEmoji('34', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/rvcar.gif" alt="rvcar" /></a>
+											<a href="#" onclick="doEmoji('35', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bus.gif" alt="bus" /></a>
+											<a href="#" onclick="doEmoji('36', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/ship.gif" alt="ship" /></a>
+											<a href="#" onclick="doEmoji('37', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/airplane.gif" alt="airplane" /></a>
+											<a href="#" onclick="doEmoji('1018', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/bicycle.gif" alt="bicycle" /></a>
+											<a href="#" onclick="doEmoji('102', 'edit'); return false;"><img src="https://www.yamareco.com/modules/mobile/images/emoticons/yacht.gif" alt="yacht" /></a>
+									</div>
+				</div>
+				<button class="btn_emoji mr5" type="button"><img src="/themes/bootstrap3/img/icon_emoji.svg" alt=""></button>
+			</div>
+			<input name="com_id" id="legacy_xoopsform_com_id" type="hidden" value="0">
+			<input name="com_pid" id="legacy_xoopsform_com_pid" type="hidden" value="">
+			<input name="com_rootid" id="legacy_xoopsform_com_rootid" type="hidden" value="">
+			<input name="com_modid" id="legacy_xoopsform_com_modid" type="hidden" value="">
+			<input name="com_itemid" id="legacy_xoopsform_com_itemid" type="hidden" value="244221">
+			<input name="com_exparams" id="legacy_xoopsform_com_exparams" type="hidden" value="">
+			<input name="com_order" id="legacy_xoopsform_com_order" type="hidden" value="0">
+			<input name="dosmiley" id="legacy_xoopsform_dosmiley" type="hidden" value="1">
+			<input name="doxcode" id="legacy_xoopsform_doxcode" type="hidden" value="1">
+			<input name="dobr" id="legacy_xoopsform_dobr" type="hidden" value="1">				
+			<input class="btn btn_add_comment sm" type="submit" name="com_dopost" value="投稿する">
+		</div>
+		</div>
+		</form>
+	</div>
+</div>
+
+<!-- Modal いいね一覧 -->
+<div class="modal-likeuser modal fade" id="like_user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">いいねした人</h4>
+			</div>
+			<div id="likes" class="modal-body modal-likeuser-wrapper">
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+
+	$('#edit_comment').on('show.bs.modal', function (e) {
+		var requestUrl = "include/aj_get_comment.php?id=";
+		var com_id = $(e.relatedTarget).data('id');
+		var com_pid = $(e.relatedTarget).data('pid');
+		var com_rootid = $(e.relatedTarget).data('root');
+
+		$('#edit_comment #legacy_xoopsform_com_id').val(com_id);
+		$('#edit_comment #legacy_xoopsform_com_pid').val(com_pid);
+		$('#edit_comment #legacy_xoopsform_com_rootid').val(com_rootid);
+		$.get(requestUrl, {"com_id" : com_id}, function(res)
+		{
+			var comment = JSON.parse(res);
+			var t = comment.com_text;
+			var ptn = /\\\[emj:(\d+)\\\]/g;
+			var emjTxt = t.replace(ptn, '[emj:$1]');
+			$('#com_text_edit').val(emjTxt)
+		});	
+	});
+
+	$('.delete').on('click', function(e){
+		var ret = confirm('コメントを削除してもよろしいですか？');
+		if(ret){
+			var com_id = $(this).attr('data-id');
+			$.post('comment_delete.php', {'com_id': com_id, 'op': 'delete_one', 'access_type': 'ajax'} , function(result){
+				if(result == 0){
+					alert('コメントの削除に失敗しました。');
+				}else{
+					location.reload(true);
+				}
+			})
+			.done(function(){
+			})
+			.fail(function(){
+				alert('コメントの削除に失敗しました。');
+			}); 
+		}
+	});
+
+	var stop_flag = 0;
+	var com_id='';
+	$('#like_user').on('show.bs.modal', function(e) {
+		if($('.add_comment').hasClass('active')){
+			$('.add_comment').removeClass('active');
+			$('.balloon').removeClass('focus');
+			$('.emoji_area').fadeOut(200);
+			$('#com_text_reply').css({'height':'83px', 'width':'100%'});
+		}
+		$("#likes").scrollTop(0);
+		com_id = $(e.relatedTarget).data('id');
+		$("#likes").empty();
+		drawLikedList(com_id, 1, '');
+	});
+
+	$('#likes').on('mouseenter','.following', function(){
+			$(this).html("フォロー解除");
+			$(this).removeClass('btn-info');
+			$(this).addClass('btn-danger');
+	}).on('mouseleave','.following', function(){
+			$(this).html("フォロー中");
+			$(this).removeClass('btn-danger');
+			$(this).addClass('btn-info');
+	});
+
+	$('#likes').on('click', 'button', function(){
+
+		var requid = $(this).attr('data-uid');
+		var $button = $(this);
+		var act = '';
+		if($(this).text() === 'フォロー解除' || $(this).text() === 'フォロー中' ){
+			act = 'unfollow';
+		}else{
+			act = 'follow';
+		}
+
+		if(act === 'follow'){
+			$.post("/modules/yamareco/include/aj_follow.php", { "type": "user", "id":requid }, function(data){
+				if(data.success){
+					$button.css('color', '#fff').text('フォロー中');
+					$button.removeClass('btn-default');
+					$button.addClass('btn-info following');
+				}else{
+					if(data.errcode=="MAX_FOLLOWING_PREMIUM"){
+						if(confirm('最大フォロー人数を超えています。\nフォロー済みの人を解除をするためにフォローリストに移動しますか？')){
+							location.href="/modules/yamareco/showfollow.php?type=follow&uid=";
+						}
+					}else if(data.errcode=="MAX_FOLLOWING_STANDARD"){
+						if(confirm('最大フォロー人数を超えています。\nプレミアムプランに加入するとフォローの上限を引き上げられます。\n詳細を確認しますか？')){
+							location.href="/premiumplan/";
+						}
+					}else if(data.errcode=="FORBIDDEN"){
+						alert('このユーザーはフォローできません。');
+					}					
+				}
+			}, "json");	
+		}
+
+		if(act === 'unfollow'){
+			if(confirm('フォローを解除しますか?')){
+				$.post("/modules/yamareco/include/aj_unfollow.php", { "type": "user", "id":requid }, function(data){
+					if(data.success){
+						$button.css('color', '#333').text('フォローする');
+						$button.removeClass('btn-info following');
+						$button.addClass('btn-default');
+					}
+				}, "json");
+			}
+		}
+
+		return false;
+	});
+	
+	var load=2;
+	$("#likes").on('scroll', function(){
+		var start_regdate = $('.modal-likeuser-item').eq(0).attr('data-regdate');
+		if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight - 50) {
+			if(stop_flag < 1){
+				drawLikedList(com_id, load, start_regdate);
+				load++;
+			}	
+		}		
+	});
+
+	/* いいね一覧描画*/
+	function drawLikedList(com_id, load, start_regdate){
+		$.ajax({
+			url: '/modules/yamareco/include/aj_get_likelist.php',
+			type: 'GET',
+			data: {'com_id': com_id, 'load': load, 'start': start_regdate},
+			dataType: 'json'
+		})
+		.done(function(result){
+			var list = result.list;
+			for(var i=0; i<list.length; i++){
+				var avatar = list[i].avatar;
+				var prof_url = "https://www.yamareco.com/modules/yamareco/userinfo-"+list[i].uid+"-prof.html";
+				var divItem = $('<div>').addClass('modal-likeuser-item');
+				if(list[i].uid){
+					var aImg = $('<a>').attr('href', prof_url).append($('<img>').addClass('modal-likeuser-item-img').attr('src', avatar).attr('alt', 'プロフィール画像'));
+				}else{
+					var aImg = $('<img>').addClass('modal-likeuser-item-img').attr('src', avatar).attr('alt', 'プロフィール画像');
+					prof_url = 'javascript:void(0);';
+				}
+				var aName = $('<a>').attr('href', prof_url).addClass('modal-likeuser-item-name').html(list[i].nickname);
+				var divNameId = $('<div>').addClass('modal-likeuser-item-name-id').text('@'+list[i].uname);
+				if(list[i].follow){
+					var button = $('<button>').addClass('btn btn-info btn-sm fw-b following').attr('data-uid', list[i].uid).text('フォロー中');
+				}else{
+					var button = $('<button>').addClass('btn btn-default btn-sm fw-b').attr('data-uid', list[i].uid).text('フォローする');
+				}
+
+				aName.append(divNameId);
+				if(list[i].follow < 0){
+					divItem.append(aImg).append(aName);
+				}else{
+					divItem.append(aImg).append(aName).append(button);
+				}
+				$('#likes').append(divItem);
+			}
+			stop_flag = result.stop_flag;
+		});
+	}
+
+	$('.block.mute.is-parent .mute-msg a').on('click', function(){
+		$(this).parents('.mute').addClass('dis-n');
+		$(this).parents('.mute').next('.comment_txt').fadeIn();
+	
+		var $left = $(this).closest('.right').siblings('.left');
+        $left.find('.mte').hide();
+        $left.find('.nmte').show();	
+	});
+
+	$('.block.mute.non-parent .mute-msg a').on('click', function(){
+		$(this).closest('.mute').addClass('dis-n');
+		$(this).closest('.mute').next('.post').fadeIn();
+	});
+</script>
+		<div class="add_comment" id="comment" style="padding-top: 80px; margin-top: -80px;">
+		<h4>コメントを書く</h4>
+							ヤマレコにユーザー登録いただき、<a href="https://www.yamareco.com/user.php">ログイン</a>していただくことによって、コメントが書けるようになります。
+				<br />
+				<a href="https://www.yamareco.com/register.php">ヤマレコにユーザ登録する</a>
+				</div>
+
+	</div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6039287859543757"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-6039287859543757"
+     data-ad-slot="3263560144"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br /><br />
+
+</div><!-- diary_main -->
+
+<script>
+	var owner_flag = 0;
+</script>
+<script type="text/javascript" src="../yamareco/include/jquery.autosize.js"></script>
+<script type="text/javascript" src="../yamareco/include/cheer2_renew.js?v=15"></script>
+<script type="text/javascript" src="include/highslide/highslide-with-gallery.js"></script>
+<script type="text/javascript" src="include/highslide/highslide.config.js" charset="euc-jp"></script>
+<script type="text/javascript" src="https://yamareco.info/modules/yamareco/include/thickbox.js"></script>
+<script type="text/javascript" src="https://www.yamareco.com/modules/yamareco/include/aj_reglike.js?v=4"></script>
+<script type="text/javascript">
+<!--
+
+var bid=244221;
+var ftotal=0;
+var registered=0;
+var cr_id=244221;
+var cr_type="diary";
+var myuid = 0;
+
+var escapeHTML = function(val) {
+		return $('<div />').text(val).html();
+};
+
+$(function () {
+
+	loadcheers();
+	loadfavorites();
+	$("#com_text").autosize();
+
+	$(document).on('click',function(e) {
+		if($('.attention_clap').hasClass('on')){
+			if(!$(e.target).closest('.attention_clap').length) { //「拍手で応援」以外をタップで非表示にする
+				$('.ft_box.clap').removeClass('noclap');
+				$('.attention_clap').removeClass('on');
+			} else { //拍手実行後は「拍手で応援」を表示させない
+				$('.ft_box.clap').toggleClass('noclap');
+				$('.attention_clap').removeClass('on');
+			}			
+		}
+	});	
+});
+
+function loadfavorites(){
+	var favorites=$.get("../yamareco/include/aj_getfavorites.php", {type:"diary",id:bid, avatar:1},
+	function(){
+		eval("var myfavorites="+favorites.responseText);
+		var addtext="";
+		$.each(myfavorites, function(){
+            ftotal++;
+			if(myuid==this.uid){
+                addtext+='<a id="favorite_own" href="../yamareco/showfavorite.php?uid='+this.uid+'" class="favo" data-toggle="tooltip" data-placement="top" data-html="true" title="<img src=\''+this.avatar+'\' class=\'mt5 mb2\' width=\'80\'>';
+                addtext+='<br>';
+                addtext+='<span class=\'tooltip_icon favo\'></span>'+escapeHTML(this.uname)+'">';
+                addtext+='<img src="' +this.avatar+ '" alt="'+escapeHTML(this.uname)+'">';
+                addtext+='</a>';                
+				registered=1;
+			}else{
+                addtext+='<a href="../yamareco/showfavorite.php?uid='+this.uid+'" class="favo" data-toggle="tooltip" data-placement="top" data-html="true" title="<img src=\''+this.avatar+'\' class=\'mt5 mb2\' width=\'80\'>';
+                addtext+='<br>';
+                addtext+='<span class=\'tooltip_icon favo\'></span>'+escapeHTML(this.uname)+'">';
+                addtext+='<img src="' +this.avatar+ '" alt="'+escapeHTML(this.uname)+'">';
+                addtext+='</a>';                     
+			}
+		});
+		setfavbutton(false);
+		$(".usericon-inner").prepend(addtext);
+		$("#favorite_num").html(ftotal);
+		if(ftotal > 0) {
+			$('.usericon').show();
+		}
+		$('[data-toggle="tooltip"]').tooltip();
+	});
+}
+
+function setfavbutton(loading){
+	if(loading){
+        $(".share_btn.favo").removeClass("active");
+	}else{
+		$("#fav_loading").hide();
+		if(registered==1){
+            $(".share_btn.favo").addClass("active");
+		}else{
+            $(".share_btn.favo").removeClass("active");
+		}
+	}
+}
+
+function addfavorite(){
+	if(myuid==0){
+		alert("お気に入りに登録するには、ヤマレコへのログインが必要です。");
+		return;
+	}
+	setfavbutton(true);
+	var addresult=$.post("../yamareco/include/aj_regfavorite.php", {type:"diary",id:bid,category:"",comment:""},
+	function(){
+		eval("var myresult="+addresult.responseText);
+		if(myresult.success == 1){
+			if(registered==0){
+				var addavatar ='<a id="favorite_own" href="../yamareco/showfavorite.php?uid='+myresult.uid+'" class="favo" data-toggle="tooltip" data-placement="top" data-html="true" title="<img src=\''+myresult.avatar+'\' class=\'mt5 mb2\' width=\'80\'>';
+				addavatar+='<br>';
+				addavatar+='<span class=\'tooltip_icon favo\'></span>'+escapeHTML(myresult.uname)+'">';
+				addavatar+='<img src="' +myresult.avatar+ '" alt="'+escapeHTML(myresult.uname)+'">';
+				addavatar+='</a>';
+
+				$(".usericon-inner").prepend(addavatar);
+				
+				ftotal++;
+				$("#favorite_num").html(ftotal);
+				$('[data-toggle="tooltip"]').tooltip();
+
+				$('#favo_btn').children('button').removeClass('btn-general-black').addClass('btn-general-white');
+				$('#favo_btn').children('button').text('お気に入り削除');
+
+				var actnum = $(".usericon-inner").children().filter(function() {
+						return $(this).css("display") !== "none";
+					}).length;
+				if(actnum==1){
+					$('.usericon').slideDown(300);
+				}
+				registered=1;
+			}
+		}else{
+			if(myresult.message == 'reach_limit'){
+				if(confirm('ERROR\nスタンダードプランのお気に入りの上限'+myresult.max+'件以上のお気に入り（現在'+myresult.current+'件）が登録されています。\nプレミアムプランに加入いただくと無制限に登録いただけます。\nプレミアムプランの詳細を表示しますか？')){
+					window.location.href='/modules/yamareco/aboutpremium.php';
+				}
+			}else if(myresult.message == 'block'){
+				alert("この記事はお気に入りにできません。");
+			}else{
+				alert("お気に入りの登録に失敗しました。");
+			}
+			myresult.showfavwin=0;
+		}
+		setfavbutton(false);
+		if(myresult.showfavwin==1){
+			showfavdialog(0);
+		}
+	});
+}
+
+function showfavdialog(edit){
+	tb_show("", "../yamareco/include/if_favedit.php?type=diary&id="+bid+"&edit="+edit+"&width=550&height=400&modal=true", "");
+	modifymodalview();
+}
+
+function delfavorite(showfavwin){
+	setfavbutton(true);
+	var delresult=$.post("../yamareco/include/aj_delfavorite.php", {type:"diary",id:bid,category:"",comment:"",showfavwin:showfavwin},
+	function(){
+		eval("var myresult="+delresult.responseText);
+		if(myresult.success == 1){
+			//$("#favorite_own").fadeOut(500);
+			$("#favorite_own").hide();
+			ftotal--;
+			$("#favorite_num").html(ftotal);
+			registered=0;
+			$('#favo_btn').children('button').removeClass('btn-general-white').addClass('btn-general-black');
+			$('#favo_btn').children('button').text('お気に入り追加');
+			var actnum = $(".usericon-inner").children().filter(function() {
+					return $(this).css("display") !== "none";
+				}).length;
+			if(actnum==0){
+				$('.usericon').slideUp(300);
+			}
+		}else{
+			alert("お気に入りの削除に失敗しました。");
+		}
+		setfavbutton(false);
+	});
+}
+
+function modifymodalview(){
+	$("#TB_ajaxContent").css("line-height","1.42857");
+	$("#TB_ajaxContent").css("font-family", '"Helvetica Neue",Helvetica,Arial,sans-serif');
+	$("#TB_ajaxContent").css("padding", "0");
+	$("#TB_ajaxContent").css("width", "580px");
+	$("#TB_ajaxContent").css("font-size", "13px");
+	$("#TB_window").css("border","0");
+	$("#TB_window").css("color","#333333");
+	$("#TB_window").css("border-radius","4px");
+}
+
+// -->
+</script>
+
+
+						<!-- 各モジュールのコンテンツ終わり -->
+					</div>
+
+					<!-- 中央-中央ブロック部分の定義 -->
+					
+				</div><!-- /main -->
+
+				<!-- 右側ブロック -->
+														<div id="sidebar_right">
+										
+						<!-- お知らせアイコン、新規作成ボタン -->
+																			
+													<!-- start right block contents -->
+<div id="diary_right" style="clear:both;">
+
+<div class="box">
+<h3>この日記を書いた人</h3>
+<div style="float:right;">
+  <a href="https://www.yamareco.com/diary_rss.php?uid=30984" title="緑茶派さんの日記をRSSで購読する"><span class="ysp sprite-rss10"></span></a>
+</div>
+
+<a href="/modules/yamareco/userinfo-30984-prof.html"><img src="https://yamareco.info/include/imgresize.php?maxsize=90&amp;crop=1&amp;fname=%2Fuploads%2Fypb339755dedd0e23.jpg" width="60" height="60" style="border-radius:4px;" /></a>
+<br />
+<a href="/modules/yamareco/userinfo-30984-prof.html">緑茶派</a>
+
+
+</div>
+
+<div class="box next_prev_diary_right">
+	<a href="https://www.yamareco.com/modules/diary/30984-detail-230395" class="no_underline diary_link diary_link_prev ov mytips" title="前の日記： 2021-02-03 トランププロジェクトに選ばれた"><img src="https://yamareco.info/themes/bootstrap3/img/chevron-left.png" /></a>
+</div>
+<!-- detail -->
+
+<div class='sidebar-right-block' style='padding-top: 32px; border-top: 1px solid #e1e1e1'><h3 class='sidebar-right-heading reset'>7月のカレンダー</h3><div class='calendar'><table class='outer' style='text-align:center;'><tr><td colspan=7 class='odd'><table><tr><td style='text-align:left;'><a href='https://www.yamareco.com/modules/diary/30984-month-2021-06'>&laquo;前の月</a></td><td style='text-align:right;'><a href='https://www.yamareco.com/modules/diary/30984-month-2021-08'>次の月&raquo;</a></td></tr></table></td></tr><tr><td><font color='red'>日</font></td><td>月</td><td>火</td><td>水</td><td>木</td><td>金</td><td><font color='blue'>土</font></td></tr><tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td><a href='https://www.yamareco.com/modules/diary/30984-date-2021-07-7' >7</a></td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr></table></div></div>
+
+<div class="sidebar-right-block" style="padding-top: 32px; border-top: 1px solid #e1e1e1">
+	<h3 class="sidebar-right-heading reset">
+		カテゴリー	
+	</h3>
+	<div class="sidebar-right-list">
+			<div class="item"><div class="item-text"><a href="https://www.yamareco.com/modules/diary/30984-category-0" class="title">未分類(9)</a></div></div>
+		</div>
+	</div>
+
+
+<div class="sidebar-right-block" style="padding-top: 32px; border-top: 1px solid #e1e1e1">
+	<h3 class="sidebar-right-heading reset">
+		訪問者数	
+	</h3>
+	<div class="sidebar-right-list">
+		<div class="item"><div class="item-text">16617人 / 日記全体</a></div></div>
+	</div>
+</div>
+
+<div class="sidebar-right-block" style="padding-top: 32px; border-top: 1px solid #e1e1e1">
+	<h3 class="sidebar-right-heading reset">
+		最近の日記	
+	</h3>
+	<div class="sidebar-right-list recently">
+				<div class="item"><div class="item-text"><a href="https://www.yamareco.com/modules/diary/30984-detail-244221" class="title">6月の北アルプスの滑落事故</a></div></div>
+				<div class="item"><div class="item-text"><a href="https://www.yamareco.com/modules/diary/30984-detail-230395" class="title">トランププロジェクトに選ばれたああああああぁぁぁ</a></div></div>
+				<div class="item"><div class="item-text"><a href="https://www.yamareco.com/modules/diary/30984-detail-197413" class="title">祝！ 「東京都の山(分県登山ガイド)」登った山リストに追加さる！</a></div></div>
+				<div class="item"><div class="item-text"><a href="https://www.yamareco.com/modules/diary/30984-detail-194649" class="title">祝！ 「多摩100山」登った山リストに追加さる！</a></div></div>
+				<div class="item"><div class="item-text"><a href="https://www.yamareco.com/modules/diary/30984-detail-128314" class="title">三百名山を夢見て、四年経過。</a></div></div>
+				<div class="item"><div class="item-text"><a href="https://www.yamareco.com/modules/diary/30984-detail-102346" class="title">１０キロ痩せた！</a></div></div>
+				<div class="item"><div class="item-text"><a href="https://www.yamareco.com/modules/diary/30984-detail-102265" class="title">三百名山を夢見て、三年経過。</a></div></div>
+			</div>
+</div>
+
+<div class="sidebar-right-block" style="padding-top: 32px; border-top: 1px solid #e1e1e1">
+	<h3 class="sidebar-right-heading reset">
+		<a href="https://www.yamareco.com/modules/diary/viewcomment.php?req_uid=30984" class="text-link has-arrow-right arrow-circle no-line">最近のコメント</a>
+	</h3>
+	<div class="sidebar-right-list">
+			<div class="item" style="margin-bottom:-7px;">
+			<div class="item-text">
+				<a href="https://www.yamareco.com/modules/diary/30984-detail-244221#comment2567408" class="comment">こんにちは。コレは酷いですね&amp;#8230</a>
+			</div>
+		</div>
+		<div style="width: 100%;"></div>
+		<div style="padding-left:20px;margin-bottom: 10px;font-size:11px;color:#666;">コ [07/07 19:59]</div>
+			<div class="item" style="margin-bottom:-7px;">
+			<div class="item-text">
+				<a href="https://www.yamareco.com/modules/diary/30984-detail-197413#comment2260745" class="comment">Re: 山リスト追加お疲れ様です。</a>
+			</div>
+		</div>
+		<div style="width: 100%;"></div>
+		<div style="padding-left:20px;margin-bottom: 10px;font-size:11px;color:#666;">緑茶派 [12/29 15:45]</div>
+			<div class="item" style="margin-bottom:-7px;">
+			<div class="item-text">
+				<a href="https://www.yamareco.com/modules/diary/30984-detail-197413#comment2260000" class="comment">山リスト追加お疲れ様です。</a>
+			</div>
+		</div>
+		<div style="width: 100%;"></div>
+		<div style="padding-left:20px;margin-bottom: 10px;font-size:11px;color:#666;">vega [12/27 08:55]</div>
+		</div>
+</div>
+
+<div class="sidebar-right-block" style="padding-top: 32px; border-top: 1px solid #e1e1e1">
+	<h3 class="sidebar-right-heading reset">各月の日記</h3>
+	<div class="sidebar-right-list each-month">
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2021-07">2021/07</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2021-6">2021/06</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2021-5">2021/05</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2021-4">2021/04</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2021-3">2021/03</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2021-2">2021/02</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2021-1">2021/01</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2020-12">2020/12</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2020-11">2020/11</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2020-10">2020/10</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2020-9">2020/09</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2020-8">2020/08</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2020-7">2020/07</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2020-6">2020/06</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2020-5">2020/05</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2020-4">2020/04</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2020-3">2020/03</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2020-2">2020/02</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2020-1">2020/01</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2019-12">2019/12</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2019-11">2019/11</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2019-10">2019/10</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2019-9">2019/09</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2019-8">2019/08</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2019-7">2019/07</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2019-6">2019/06</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2019-5">2019/05</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2019-4">2019/04</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2019-3">2019/03</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2019-2">2019/02</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2019-1">2019/01</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2018-12">2018/12</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2018-11">2018/11</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2018-10">2018/10</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2018-9">2018/09</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2018-8">2018/08</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2018-7">2018/07</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2018-6">2018/06</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2018-5">2018/05</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2018-4">2018/04</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2018-3">2018/03</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2018-2">2018/02</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2018-1">2018/01</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2017-12">2017/12</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2017-11">2017/11</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2017-10">2017/10</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2017-9">2017/09</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2017-8">2017/08</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2017-7">2017/07</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2017-6">2017/06</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2017-5">2017/05</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2017-4">2017/04</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2017-3">2017/03</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2017-2">2017/02</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2017-1">2017/01</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2016-12">2016/12</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2016-11">2016/11</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2016-10">2016/10</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2016-9">2016/09</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2016-8">2016/08</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2016-7">2016/07</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2016-6">2016/06</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2016-5">2016/05</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2016-4">2016/04</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2016-3">2016/03</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2016-2">2016/02</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2016-1">2016/01</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2015-12">2015/12</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2015-11">2015/11</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2015-10">2015/10</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2015-9">2015/09</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2015-8">2015/08</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2015-7">2015/07</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2015-6">2015/06</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2015-5">2015/05</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2015-4">2015/04</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2015-3">2015/03</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2015-2">2015/02</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2015-1">2015/01</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2014-12">2014/12</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2014-11">2014/11</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2014-10">2014/10</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2014-9">2014/09</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2014-8">2014/08</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2014-7">2014/07</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2014-6">2014/06</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2014-5">2014/05</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2014-4">2014/04</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2014-3">2014/03</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2014-2">2014/02</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2014-1">2014/01</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2013-12">2013/12</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2013-11">2013/11</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2013-10">2013/10</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2013-9">2013/09</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2013-8">2013/08</a></div></div>
+			<div class="item"><div class="item-text"><a class="emonth" href="30984-month-2013-7">2013/07</a></div></div>
+		</div>
+</div>
+
+
+</div><!-- diary_right -->						<!-- E.日記以外 -->
+					</div><!-- /sidebar -->
+
+				<!-- /yr_rblock -->
+							
+	<!-- /onecolumn message 以外 -->
+
+	</div><!--/wrapper-->
+	
+		<div id="footer">
+		<div class="box01">
+			<div class="link whitelink">
+			<a href="https://www.yamareco.com/guide/contact/" class="ov" target="_blank">お問い合わせ</a>　 　|　 　
+			<a href="http://yamareco.co.jp/" class="ov">運営会社</a>　 　|　 　
+			<a href="https://www.yamareco.com/modules/pico/index.php?content_id=21" class="ov">広告掲載について</a>　 　|　 　
+			<a href="https://www.yamareco.com/modules/pico/index.php?content_id=11" class="ov">リンクについて</a>　 　|　 　
+			<a href="https://www.yamareco.com/modules/pico/index.php?content_id=22" class="ov">利用規約</a>　 　|　 　
+			<a href="https://www.yamareco.com/modules/pico/index.php?content_id=52" class="ov">プライバシーポリシー</a>
+		</div>
+			
+		<div class="box02 ft_app_info">
+			<h4>− ヤマレコがもっと便利になるスマートフォンアプリ −</h4>
+			<script>
+			function showAppAlert(){
+				alert('ヤマレコの記録を見る機能は「ヤマレコ」アプリに統合されました。ヤマレコアプリのページに移動します。');
+				window.location.href = "https://itunes.apple.com/jp/app/id1121091790?mt=8";
+			}
+			</script>
+			<ul>
+				<li>
+					<img src="https://yamareco.info/themes/bootstrap3/img/appicon_web_ft2.png" width="72" height="72" alt="ヤマレコ" class="appicon">
+					<div><a href="https://www.yamareco.com/yamarecomap/" target="_blank" style="color:#333;">ヤマレコ</a></div>
+					<p>登山・ハイキング用GPS地図アプリ</p>
+					<a href="https://itunes.apple.com/jp/app/id1121091790?mt=8" class="btn" target="_blank" rel="nofollow">AppStore</a><a href="https://play.google.com/store/apps/details?id=com.yamareco.memo" class="btn" target="_blank" rel="nofollow">GooglePlay</a>
+			</li>
+				<li>
+					<img src="https://yamareco.info/themes/bootstrap3/img/appicon_imakoko_rn2.png" width="72" height="72" alt="いまココ" class="appicon">
+					<div><a href="https://www.yamareco.com/imakoko/" target="_blank" style="color:#333;">いまココ</a></div>
+					<p>登山者の現在位置がわかる見守りアプリ</p>
+					<a href="https://itunes.apple.com/jp/app/imakoko-deng-shan-zheno-xian/id1092931956?mt=8" class="btn" target="_blank" rel="nofollow">AppStore</a><a class="btn mytips" href="https://play.google.com/store/apps/details?id=com.yamareco.imakoko" target="_blank" rel="nofollow">GooglePlay</a>
+				</li>
+				<li>
+					<img src="https://yamareco.info/themes/bootstrap3/img/icon_f_1442.png" width="72" height="72" alt="富士山" class="appicon">
+					<div><a href="https://www.yamareco.com/mtfuji/" target="_blank" style="color:#333;" ref="noopener">富士山アプリ</a></div>
+					<p>富士登山に役立つ地図アプリ</p>
+					<a href="https://apps.apple.com/jp/app/%E5%AF%8C%E5%A3%AB%E5%B1%B1-%E5%AF%8C%E5%A3%AB%E7%99%BB%E5%B1%B1%E3%81%AB%E5%BD%B9%E7%AB%8B%E3%81%A4%E5%9C%B0%E5%9B%B3%E3%82%A2%E3%83%97%E3%83%AA/id1572964303" class="btn" target="_blank">AppStore</a><a class="btn" href="https://play.google.com/store/apps/details?id=com.yamareco.fuji" target="_blank">GooglePlay</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="box02">
+			<div class="btn-group  dropup">
+				<button class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" type="button" style="font-size:medium;">
+				文字サイズと色の変更
+				<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+				<li>
+				<a rel="nofollow" style="text-decoration:none;" href="https://www.yamareco.com/modules/yamareco/chgviewmode.php?viewmode=normal">通常表示</a>
+				</li>
+				<li>
+				<a rel="nofollow" style="text-decoration:none;" href="https://www.yamareco.com/modules/yamareco/chgviewmode.php?viewmode=senior">くっきりモード</a>
+				</li>
+				<li>
+				<a rel="nofollow" style="text-decoration:none;" href="https://www.yamareco.com/modules/yamareco/chgviewmode.php?viewmode=senior_bold">くっきりモード（太字）</a>
+				</li>
+				</ul>
+			</div>	
+					
+			<div class="ft_sns_area">
+				<div>
+					<img src="https://yamareco.info/themes/bootstrap3/img/common/ft_sns_label_fb.png" alt="ヤマレコ facebookページ" class="ft_sns_label" width="186">
+					<a href="https://www.facebook.com/yamareco/" class="ft_sns_icon" target="_blank" rel="nofollow">
+						<img src="https://yamareco.info/themes/bootstrap3/img/common/ft_sns_icon_fb.svg">
+					</a>
+
+					<div class="fb-share-button" data-href="https://www.yamareco.com/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.yamareco.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェアする</a></div>
+					<div id="fb-root"></div>
+					<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v24.0&appId=191822187571937"></script>
+
+				</div>	
+				<div>
+					<img src="//yamareco.info/themes/bootstrap3/img/common/ft_sns_label_x.png" alt="ヤマレコ Xアカウント" class="ft_sns_label" width="136">
+					<a href="https://twitter.com/yamareco" class="ft_sns_icon" target="_blank" rel="nofollow">
+							<img src="//yamareco.info/themes/bootstrap3/img/common/ft_sns_icon_x.svg">
+					</a>
+					<div class="x_widget">
+							<a href="https://twitter.com/yamareco" class="twitter-follow-button" data-show-count="true">Follow @yamareco</a>
+							<script>
+									!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+							</script>
+							<a href="https://twitter.com/share" class="twitter-share-button" data-via="yamareco">Tweet</a>
+							<script>
+									!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+							</script>
+					</div>
+				</div>
+			</div>
+		</div><!-- box2 -->
+		
+		
+		<div id="ft_sitemap">
+		<ul>
+		<li><a href="https://www.yamareco.com/modules/mydata/" class="ov">マイページ</a></li>
+		
+		<li><a href="https://www.yamareco.com/modules/yamareco/viewrecs-0-photo.html" class="ov">山行記録</a></li>
+		<li><a href="https://www.yamareco.com/modules/yr_plan/search_plan.php" class="ov">山行計画</a></li>
+		<li><a href="https://www.yamareco.com/modules/yamainfo/" class="ov">山のデータ</a></li>
+		<li><a href="https://www.yamareco.com/modules/yamanote/viewnotes.php" class="ov">ヤマノート</a></li>
+		<li><a href="https://www.yamareco.com/modules/plzXoo/" class="ov">質問箱</a></li>
+		<li><a href="https://www.yamareco.com/modules/yamainfo/insurance.php" class="ov">山岳保険</a></li>
+		</ul>
+		<ul>
+		<li><a href="https://www.yamareco.com/modules/yamainfo/search_word.php" class="ov">山の用語集</a></li>
+		<li><a href="https://www.yamareco.com/modules/yr_event/event_list.php" class="ov">イベント</a></li>
+		<li><a href="https://www.yamareco.com/modules/yamareco/ranking_pt.php" class="ov">山のランキング</a></li>
+		<li><a href="https://www.yamareco.com/modules/yamainfo/itemlist.php" class="ov">山道具（カメラ）</a></li>
+		<li><a href="https://www.yamareco.com/modules/xsns/" class="ov">コミュニティ</a></li>
+		<li><a href="https://www.yamareco.com/modules/yamareco/grplist.html" class="ov">グループ</a></li>
+		<li><a href="https://www.yamareco.com/modules/yamareco/search_user.php?request=1" class="ov">ユーザー</a></li>
+		<li><a href="https://www.yamareco.com/modules/yamareco/mlpreview.php" class="ov">メルマガ</a></li>
+		<li><a href="https://www.yamareco.com/modules/yamareco/aboutpremium.php" class="ov">プレミアムプラン</a></li>
+		<li><a href="https://www.yamareco.com/modules/campaign/" class="ov">キャンペーン</a></li>
+		</ul>
+		<ul>
+			<li class="item01"><a href="https://www.yamareco.com/guide/" class="ov" target="_blank">使い方ガイド</a></li>
+			<div class="ft_sitemap-guide">
+			<ul>
+			<li><a href="https://www.yamareco.com/modules/pico/index.php?content_id=10" class="ov">・ヤマレコとは</a></li>
+			<li><a href="https://www.yamareco.com/guide/guide_web/userregistration/newuser/" class="ov">・ヤマレコへの参加登録</a></li>
+			<li><a href="https://www.yamareco.com/guide/guide_web/record/step1/" class="ov">・山行記録の登録</a></li>
+			<li><a href="https://www.yamareco.com/guide/guide_web/group/" class="ov">・グループの登録</a></li>
+			<li><a href="https://www.yamareco.com/guide/guide_web/group/" class="ov">・グループへ参加</a></li>
+			<li><a href="https://www.yamareco.com/guide/guide_web/userregistration/profilesetting/" class="ov">・プロフィール変更</a></li>
+			<li><a href="https://www.yamareco.com/guide/guide_web/record/step3/" class="ov">・ルートの登録方法</a></li>
+			</ul>
+			<ul>
+			<li><a href="https://www.yamareco.com/modules/pico/index.php?content_id=27" class="ov">・計画書の作成と、ルート地図の印刷</a></li>
+			<li><a href="https://www.yamareco.com/guide/guide_web/diary/" class="ov">・日記の登録方法</a></li>
+			<li><a href="https://www.yamareco.com/modules/pico/index.php?content_id=16" class="ov">・ヤマレコ日記と、ブログサービスとの連携方法</a></li>
+			<li><a href="https://www.yamareco.com/modules/yamareco/aboutpremium.php" class="ov">・プレミアムプランについて</a></li>
+			<li><a href="https://www.yamareco.com/modules/pico/index.php?content_id=38" class="ov">・ヤマレコ利用者の声</a></li>
+			<li><a href="https://www.yamareco.com/guide/faq/" class="ov" target="_blank">・よくある質問(FAQ)</a></li>
+			<li><a href="https://www.yamareco.com/guide/guide_web/questionbox/" class="ov">・ヤマレコ質問箱とは？</a></li>
+			</ul>
+			</div>
+		</ul>
+		<ul>
+			<li><a href="https://www.yamareco.com/guide/contact/" class="ov" target="_blank">お問い合わせ</a></li>
+			<li><a href="https://www.yamareco.com/modules/liaise/?form_id=21" class="ov">違反／スパム報告</a></li>
+			<li><a href="http://yamareco.co.jp/" class="ov">運営会社</a></li>
+			<li><a href="https://www.yamareco.com/modules/pico/index.php?content_id=77" class="ov">特定商取引法の表示</a></li>
+			<li><a href="https://www.yamareco.com/modules/news/" class="ov">システム更新情報</a></li>
+			<li><a href="https://sites.google.com/site/apiforyamareco/" class="ov">ヤマレコ API</a></li>
+			<li><a href="https://www.yamareco.com/modules/pico/index.php?content_id=21" class="ov">広告掲載について</a></li>
+			<li><a href="https://www.yamareco.com/10th/" class="ov">ヤマレコ公式ブログ</a></li>
+			<li><a href="https://hitococo.com/form/cocoheli_yamareco/" class="ov" target="_blank" rel="nofollow">ココヘリ 入会キャンペーン</a></li>
+			<li><a href="https://www.yamareco.com/sagasu/" class="ov" target="_blank" rel="nofollow">遭難者情報照会システム SAGASU</a></li>
+		</ul>
+
+		</div><!--/ft_sitemap-->
+		<div class="block01">
+		<div><a href="https://www.yamareco.com/?smp=1" rel="nofollow" class="btn" style="background: none repeat scroll 0 0 #b8b7b5;border-radius: 4px;color: #fff;display: inline-block;font-size: 18px;margin-bottom: 45px;padding: 8px 16px;text-decoration: none;"><span class="glyphicon glyphicon-phone"></span> スマホ用サイト</a></div>
+		<img class="mr10" src="//www.yamareco.com/themes/bootstrap3/img/footer_logo.png" srcset="//www.yamareco.com/themes/bootstrap3/img/footer_logo@2x.png 2x" alt="Yamareco"  />
+		<div id="copyright">Copyright (C)2005-2024 Yamareco Inc. All Rights Reserved.</div>
+		</div>
+		</div>
+
+	</div><!--/footer-->
+<!-- /except: simpletheme -->
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"61bcf953f0","applicationID":"14238799","transactionName":"NVVabEoEXUpQU0FbDAwfbUpRSl5WVUVZVxBNVFFZShwcXVREVFsPTEBQSA==","queueTime":0,"applicationTime":93,"atts":"GRJZGgIeTkQ=","errorBeacon":"bam.nr-data.net","agent":""}</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a39da9e6ba22f393',t:'MTc4OTIwMzAxNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<!-- /notheme-->
+</html>

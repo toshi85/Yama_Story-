@@ -1,0 +1,55 @@
+{
+  "status": "未検証",
+  "master": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908150535_c2a000ce/full_下書き.mp4",
+  "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/review_revised_20260910b.mp4",
+  "start_frame": 793,
+  "end_frame": 980,
+  "expected_frames": 44944,
+  "master_sha256": "32c88d9c5720d6ee3cb9530903c01c3fc46d390e3dc4e0e966bd50df00523999",
+  "error": "masterの映像が30fps連続フレームではありません: {'frame_count': 44943, 'expected_frames': 44944, 'frame_count_match': False, 'pts_continuous': True, 'dts_increasing': True}",
+  "commands": [
+    {
+      "command": [
+        "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+        "-X",
+        "utf8",
+        "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/render.py",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/shots.json",
+        "--shots-range",
+        "7-8",
+        "--keep-tmp",
+        "--tmp",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/splice/7-8/render_8as5nfs3/clips",
+        "-o",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/splice/7-8/render_8as5nfs3/rendered.mp4"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.2208670419931877,
+      "stderr_tail": ""
+    },
+    {
+      "command": [
+        "/Users/tosimasa/Desktop/Antigravity/.venv-edit/lib/python3.14/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+        "-hide_banner",
+        "-nostdin",
+        "-nostats",
+        "-n",
+        "-v",
+        "error",
+        "-i",
+        "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/check/studio/jobs/20260908150535_c2a000ce/full_下書き.mp4",
+        "-map",
+        "0:v:0",
+        "-c",
+        "copy",
+        "-f",
+        "framemd5",
+        "-"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.33238758399966173,
+      "stderr_tail": ""
+    }
+  ],
+  "elapsed_seconds": 3.725968542014016
+}

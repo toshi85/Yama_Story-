@@ -1,0 +1,300 @@
+{
+  "kind": "adjust",
+  "requested_kind": "adjust",
+  "shot_id": 17,
+  "brief": "カット内の位置・文言・人物の動きをまとめて編集",
+  "target": "asset",
+  "prompt": "",
+  "patch": {
+    "telop": "",
+    "speech": "もしもし！",
+    "motion": "still",
+    "motion_path": null,
+    "character_position": [
+      162,
+      252
+    ],
+    "speech_position": [
+      461,
+      253
+    ],
+    "bubble_dx": -252,
+    "bubble_dy": 61,
+    "speech_segments": [
+      {
+        "text": "もしもし！",
+        "start": 0.5,
+        "end": 2
+      },
+      {
+        "text": "警察ですか？",
+        "start": 2.5,
+        "end": 5.333
+      }
+    ]
+  },
+  "auto_adopt": true,
+  "id": "20260912180320_7483cec1",
+  "state": "adopted",
+  "created_at": "2026-09-12T09:03:20.467026+00:00",
+  "updated_at": "2026-09-12T09:03:32.215050+00:00",
+  "message": "修正後のカットを確認できます",
+  "shot": {
+    "id": 17,
+    "start_frame": 2480,
+    "end_frame": 2640,
+    "asset_id": "ASSET-017",
+    "asset_file": "画像/ASSET-017.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-017-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "暗くなっても戻らない夫を心配して、奥さんが警察に通報。",
+    "edit_note": "ダイヤルを回す音と呼び出し音のSE。「午後9時過ぎ 新庄署へ通報」テロップ。BGMは入れない。",
+    "speech": "もしもし！",
+    "motion": "still",
+    "drift": [
+      -563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false,
+    "motion_path": null,
+    "character_position": [
+      162,
+      252
+    ],
+    "speech_position": [
+      461,
+      253
+    ],
+    "bubble_dx": -252,
+    "bubble_dy": 61
+  },
+  "quality_checks": true,
+  "worker_pid": 53902,
+  "input_sha256": "90977fefeaf8afb3ed469622e6b780d161d57c416e9b7b4c91ed54d17901372f",
+  "explanation": "カット内の位置・文言・人物の動きをまとめて編集",
+  "rendered_override": {
+    "telop": "",
+    "speech": "もしもし！",
+    "motion": "still",
+    "motion_path": null,
+    "character_position": [
+      162,
+      252
+    ],
+    "speech_position": [
+      461,
+      253
+    ],
+    "bubble_dx": -252,
+    "bubble_dy": 61,
+    "speech_segments": [
+      {
+        "text": "もしもし！",
+        "start": 0.5,
+        "end": 2
+      },
+      {
+        "text": "警察ですか？",
+        "start": 2.5,
+        "end": 5.333
+      }
+    ]
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "17",
+    "--override",
+    "{\"telop\": \"\", \"speech\": \"もしもし！\", \"motion\": \"still\", \"motion_path\": null, \"character_position\": [162, 252], \"speech_position\": [461, 253], \"bubble_dx\": -252, \"bubble_dy\": 61, \"speech_segments\": [{\"text\": \"もしもし！\", \"start\": 0.5, \"end\": 2}, {\"text\": \"警察ですか？\", \"start\": 2.5, \"end\": 5.333}]}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260912180320_7483cec1/preview.mp4",
+  "edit_layers": {
+    "character": "check/studio/jobs/20260912180320_7483cec1/edit_layers/character.png",
+    "background": "画像/ASSET-017-1.png",
+    "meta": {
+      "pad_l": 0,
+      "pad_t": 0,
+      "char_w": 396,
+      "char_h": 396,
+      "cw": 551,
+      "ch": 396,
+      "bubble": [
+        299,
+        1,
+        252,
+        116
+      ],
+      "mouth": [
+        193,
+        82
+      ],
+      "tail_tip": [
+        261,
+        75
+      ],
+      "char_center": [
+        199.0,
+        198.5
+      ]
+    },
+    "source": "画像/ASSET-017.png",
+    "source_sha256": "0026a838b21c1f5e281877706d2175b390df548811d61f83be2dfdf08bc24109"
+  },
+  "quality_review": {
+    "status": "media_checked",
+    "media": {
+      "video": "check/studio/jobs/20260912180320_7483cec1/quality/media/preview.mp4",
+      "video_sha256": "3161e9b993935047f6d4ac05c8e30ba22a12d01b21321a0cd5b540faabedbee4",
+      "duration": 5.33,
+      "frames": [
+        {
+          "time": 0.1,
+          "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-00.jpg"
+        },
+        {
+          "time": 0.5,
+          "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-01.jpg"
+        },
+        {
+          "time": 1.25,
+          "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-02.jpg"
+        },
+        {
+          "time": 2.0333,
+          "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-03.jpg"
+        },
+        {
+          "time": 2.5,
+          "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-04.jpg"
+        },
+        {
+          "time": 2.6667,
+          "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-05.jpg"
+        },
+        {
+          "time": 3.9165,
+          "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-06.jpg"
+        },
+        {
+          "time": 5.263333333333334,
+          "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-07.jpg"
+        }
+      ],
+      "checks": [
+        {
+          "requirement": "A カット尺",
+          "passed": true,
+          "evidence": "合成動画 5.330秒 / 指定 5.333秒"
+        },
+        {
+          "requirement": "D 吹き出しは頭上",
+          "passed": null,
+          "evidence": "人物層の矩形がない、または複数セリフのため映像確認が必要"
+        }
+      ]
+    }
+  },
+  "before_override": {
+    "telop": "",
+    "speech": "もしもし！",
+    "motion": "still",
+    "motion_path": null,
+    "character_position": [
+      162,
+      252
+    ],
+    "speech_position": [
+      461,
+      253
+    ],
+    "bubble_dx": -252,
+    "bubble_dy": 61
+  },
+  "before_shot": {
+    "id": 17,
+    "start_frame": 2480,
+    "end_frame": 2640,
+    "asset_id": "ASSET-017",
+    "asset_file": "画像/ASSET-017.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-017-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "暗くなっても戻らない夫を心配して、奥さんが警察に通報。",
+    "edit_note": "ダイヤルを回す音と呼び出し音のSE。「午後9時過ぎ 新庄署へ通報」テロップ。BGMは入れない。",
+    "speech": "もしもし！",
+    "motion": "still",
+    "drift": [
+      -563,
+      -115
+    ],
+    "move_sec": 2.0,
+    "base_x": -153,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false,
+    "motion_path": null,
+    "character_position": [
+      162,
+      252
+    ],
+    "speech_position": [
+      461,
+      253
+    ],
+    "bubble_dx": -252,
+    "bubble_dy": 61
+  },
+  "adopted_at": "2026-09-12T09:03:32.215031+00:00",
+  "applied_override": {
+    "telop": "",
+    "speech": "もしもし！",
+    "motion": "still",
+    "motion_path": null,
+    "character_position": [
+      162,
+      252
+    ],
+    "speech_position": [
+      461,
+      253
+    ],
+    "bubble_dx": -252,
+    "bubble_dy": 61,
+    "speech_segments": [
+      {
+        "text": "もしもし！",
+        "start": 0.5,
+        "end": 2
+      },
+      {
+        "text": "警察ですか？",
+        "start": 2.5,
+        "end": 5.333
+      }
+    ]
+  }
+}

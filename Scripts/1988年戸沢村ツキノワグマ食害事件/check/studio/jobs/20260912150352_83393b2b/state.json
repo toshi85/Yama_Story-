@@ -1,0 +1,292 @@
+{
+  "kind": "adjust",
+  "requested_kind": "adjust",
+  "shot_id": 12,
+  "brief": "カット内の位置・文言・人物の動きをまとめて編集",
+  "target": "asset",
+  "prompt": "",
+  "patch": {
+    "asset_id": "ASSET-012",
+    "reset": true,
+    "base_x": 2,
+    "base_y": 0,
+    "tail_tip_dx": 86,
+    "tail_tip_dy": 21,
+    "speech": "タケノコ\nとるか",
+    "bubble_dx": 307,
+    "bubble_dy": -38,
+    "character_position": [
+      443,
+      252
+    ],
+    "speech_position": [
+      750,
+      214
+    ],
+    "motion": "path",
+    "move_sec": 5,
+    "amount": 1,
+    "scale": 1,
+    "flip": false,
+    "background_file": "画像/ASSET-012-1.png",
+    "motion_path": {
+      "start": [
+        328,
+        529
+      ],
+      "end": [
+        649,
+        324
+      ],
+      "duration": 5,
+      "midpoints": [
+        [
+          650,
+          532
+        ]
+      ]
+    }
+  },
+  "auto_adopt": true,
+  "id": "20260912150352_83393b2b",
+  "state": "adopted",
+  "created_at": "2026-09-12T06:03:52.129453+00:00",
+  "updated_at": "2026-09-12T06:04:03.033917+00:00",
+  "message": "修正後のカットを確認できます",
+  "shot": {
+    "id": 12,
+    "start_frame": 1710,
+    "end_frame": 1894,
+    "asset_id": "ASSET-012",
+    "asset_file": "画像/ASSET-012.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-012-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "この村に住む61歳の男性が、タケノコを採りに山へ入ります。",
+    "edit_note": "「61歳・農業」のテロップをCHAR-01の下に。CHAR-01を画面左から山道の入り口へゆっくりスライド（3秒）。穏やかな環境音のみ。",
+    "speech": "",
+    "drift": [
+      -230,
+      -72
+    ],
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "quality_checks": true,
+  "worker_pid": 43583,
+  "input_sha256": "158bb027cd081c1960d6b5bf8a0688b9dbd92a826ac1fd25d8c916c88e868c34",
+  "explanation": "カット内の位置・文言・人物の動きをまとめて編集",
+  "rendered_override": {
+    "asset_id": "ASSET-012",
+    "reset": true,
+    "base_x": 2,
+    "base_y": 0,
+    "tail_tip_dx": 86,
+    "tail_tip_dy": 21,
+    "speech": "タケノコ\nとるか",
+    "bubble_dx": 307,
+    "bubble_dy": -38,
+    "character_position": [
+      443,
+      252
+    ],
+    "speech_position": [
+      750,
+      214
+    ],
+    "motion": "path",
+    "move_sec": 5,
+    "amount": 1,
+    "scale": 1,
+    "flip": false,
+    "background_file": "画像/ASSET-012-1.png",
+    "motion_path": {
+      "start": [
+        328,
+        529
+      ],
+      "end": [
+        649,
+        324
+      ],
+      "duration": 5,
+      "midpoints": [
+        [
+          650,
+          532
+        ]
+      ]
+    }
+  },
+  "command": [
+    "/Users/tosimasa/Desktop/Antigravity/.venv-edit/bin/python",
+    "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/preview_cut.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件",
+    "12",
+    "--override",
+    "{\"asset_id\": \"ASSET-012\", \"reset\": true, \"base_x\": 2, \"base_y\": 0, \"tail_tip_dx\": 86, \"tail_tip_dy\": 21, \"speech\": \"タケノコ\\nとるか\", \"bubble_dx\": 307, \"bubble_dy\": -38, \"character_position\": [443, 252], \"speech_position\": [750, 214], \"motion\": \"path\", \"move_sec\": 5, \"amount\": 1, \"scale\": 1, \"flip\": false, \"background_file\": \"画像/ASSET-012-1.png\", \"motion_path\": {\"start\": [328, 529], \"end\": [649, 324], \"duration\": 5, \"midpoints\": [[650, 532]]}}"
+  ],
+  "child_pid": null,
+  "exit_code": 0,
+  "preview": "check/studio/jobs/20260912150352_83393b2b/preview.mp4",
+  "edit_layers": {
+    "character": "check/studio/jobs/20260912150352_83393b2b/edit_layers/character.png",
+    "background": "画像/ASSET-012-1.png",
+    "meta": {
+      "pad_l": 0,
+      "pad_t": 38,
+      "char_w": 396,
+      "char_h": 396,
+      "cw": 517,
+      "ch": 434,
+      "bubble": [
+        307,
+        0,
+        210,
+        168
+      ],
+      "mouth": [
+        198,
+        114
+      ],
+      "tail_tip": [
+        284,
+        135
+      ],
+      "char_center": [
+        198.0,
+        198.0
+      ]
+    },
+    "source": "画像/ASSET-012.png",
+    "source_sha256": "a896c48a2d0fff283263a88d35c4ad00a3988b86d4b3a2e0378d62f4c9a51b28"
+  },
+  "quality_review": {
+    "status": "media_checked",
+    "media": {
+      "video": "check/studio/jobs/20260912150352_83393b2b/quality/media/preview.mp4",
+      "video_sha256": "1381cf9009fd72c0290195ceea6c7faaa9da82a95c04dd82cc7221ce98d0cb56",
+      "duration": 6.13,
+      "frames": [
+        {
+          "time": 0.0,
+          "file": "check/studio/jobs/20260912150352_83393b2b/quality/media/frame-00.jpg"
+        },
+        {
+          "time": 0.1,
+          "file": "check/studio/jobs/20260912150352_83393b2b/quality/media/frame-01.jpg"
+        },
+        {
+          "time": 2.5,
+          "file": "check/studio/jobs/20260912150352_83393b2b/quality/media/frame-02.jpg"
+        },
+        {
+          "time": 3.0667,
+          "file": "check/studio/jobs/20260912150352_83393b2b/quality/media/frame-03.jpg"
+        },
+        {
+          "time": 5.0,
+          "file": "check/studio/jobs/20260912150352_83393b2b/quality/media/frame-04.jpg"
+        },
+        {
+          "time": 6.0633333333333335,
+          "file": "check/studio/jobs/20260912150352_83393b2b/quality/media/frame-05.jpg"
+        }
+      ],
+      "checks": [
+        {
+          "requirement": "A カット尺",
+          "passed": true,
+          "evidence": "合成動画 6.130秒 / 指定 6.133秒"
+        },
+        {
+          "requirement": "D 吹き出しは頭上",
+          "passed": false,
+          "evidence": "今回の合成人物層: 吹き出し下端=168, 可視人物頭上端=39"
+        }
+      ]
+    }
+  },
+  "before_override": {
+    "asset_id": "ASSET-012",
+    "reset": true
+  },
+  "before_shot": {
+    "id": 12,
+    "start_frame": 1710,
+    "end_frame": 1894,
+    "asset_id": "ASSET-012",
+    "asset_file": "画像/ASSET-012.png",
+    "asset_kind": "character",
+    "background_file": "画像/ASSET-012-1.png",
+    "reused": false,
+    "style": "",
+    "narration": "この村に住む61歳の男性が、タケノコを採りに山へ入ります。",
+    "edit_note": "「61歳・農業」のテロップをCHAR-01の下に。CHAR-01を画面左から山道の入り口へゆっくりスライド（3秒）。穏やかな環境音のみ。",
+    "speech": "",
+    "drift": [
+      -230,
+      -72
+    ],
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "adopted_at": "2026-09-12T06:04:03.033888+00:00",
+  "applied_override": {
+    "asset_id": "ASSET-012",
+    "reset": true,
+    "base_x": 2,
+    "base_y": 0,
+    "tail_tip_dx": 86,
+    "tail_tip_dy": 21,
+    "speech": "タケノコ\nとるか",
+    "bubble_dx": 307,
+    "bubble_dy": -38,
+    "character_position": [
+      443,
+      252
+    ],
+    "speech_position": [
+      750,
+      214
+    ],
+    "motion": "path",
+    "move_sec": 5,
+    "amount": 1,
+    "scale": 1,
+    "flip": false,
+    "background_file": "画像/ASSET-012-1.png",
+    "motion_path": {
+      "start": [
+        328,
+        529
+      ],
+      "end": [
+        649,
+        324
+      ],
+      "duration": 5,
+      "midpoints": [
+        [
+          650,
+          532
+        ]
+      ]
+    }
+  }
+}

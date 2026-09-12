@@ -1,0 +1,28 @@
+{
+  "baseline_A": 48,
+  "final_A": 79,
+  "added_A": 31,
+  "new_sources": 6,
+  "new_sources_with_opened_ranges": 6,
+  "original_48_rows_identical": true,
+  "original_rows_changed": 0,
+  "external_A_rows": 3,
+  "victim_real_names_in_sheet_manual_review": 0,
+  "numbering_contiguous": true,
+  "new_failed_research_rows": 11,
+  "missing_local_links": [],
+  "new_facts_not_paraphrases_manual_review": true,
+  "review_note": "追加31行の事実と限定をS12–S17に照合。旧48行の全文一致を確認。実名は目視確認で0件（氏名辞書による自動判定ではない）。地域集計は事故個体の履歴にしない。",
+  "sheet_sha256": "1b38135798f00482f85a3cbc12742e7255b3b4068a4f93dda616697b791d084e",
+  "input_sha256": "c4043a8d068bb4914d5f570c98e02dd3feed1b422a76f797a72e059a572ac725",
+  "checks_command": "python3 (section-scoped count, baseline comparison, local-link validation, human source review)",
+  "criteria": {
+    "A75": true,
+    "sources5": true,
+    "no_padding": true,
+    "external3": true,
+    "no_victim_names": true,
+    "failures_recorded": true
+  },
+  "exit_code": 0
+}

@@ -1,0 +1,43 @@
+{
+  "checked_at": 1789206458.456866,
+  "production_complete": true,
+  "work_running": false,
+  "items": [
+    {
+      "id": "1",
+      "title": "指定規則・テンプレート・既出照合",
+      "status": "complete",
+      "reason": "Claudeによる検証。台本・プロットは対象外。",
+      "owner": "Codex"
+    },
+    {
+      "id": "2",
+      "title": "一次資料と報道の本文取得・確認",
+      "status": "complete",
+      "reason": "Claudeによる検証。台本・プロットは対象外。",
+      "owner": "Codex"
+    },
+    {
+      "id": "3",
+      "title": "資料の厚みの判定",
+      "status": "complete",
+      "reason": "Claudeによる検証。台本・プロットは対象外。",
+      "owner": "Codex"
+    },
+    {
+      "id": "4",
+      "title": "素材シート作成・未確認事項と食い違い記録",
+      "status": "complete",
+      "reason": "Claudeによる検証。台本・プロットは対象外。",
+      "owner": "Codex"
+    },
+    {
+      "id": "5",
+      "title": "成果物・出典リンク・数値検査",
+      "status": "complete",
+      "reason": "Claudeによる検証。台本・プロットは対象外。",
+      "owner": "Codex"
+    }
+  ],
+  "remaining": 0
+}

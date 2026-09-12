@@ -1,0 +1,43 @@
+{
+  "video": "check/studio/jobs/20260912150352_83393b2b/quality/media/preview.mp4",
+  "video_sha256": "1381cf9009fd72c0290195ceea6c7faaa9da82a95c04dd82cc7221ce98d0cb56",
+  "duration": 6.13,
+  "frames": [
+    {
+      "time": 0.0,
+      "file": "check/studio/jobs/20260912150352_83393b2b/quality/media/frame-00.jpg"
+    },
+    {
+      "time": 0.1,
+      "file": "check/studio/jobs/20260912150352_83393b2b/quality/media/frame-01.jpg"
+    },
+    {
+      "time": 2.5,
+      "file": "check/studio/jobs/20260912150352_83393b2b/quality/media/frame-02.jpg"
+    },
+    {
+      "time": 3.0667,
+      "file": "check/studio/jobs/20260912150352_83393b2b/quality/media/frame-03.jpg"
+    },
+    {
+      "time": 5.0,
+      "file": "check/studio/jobs/20260912150352_83393b2b/quality/media/frame-04.jpg"
+    },
+    {
+      "time": 6.0633333333333335,
+      "file": "check/studio/jobs/20260912150352_83393b2b/quality/media/frame-05.jpg"
+    }
+  ],
+  "checks": [
+    {
+      "requirement": "A カット尺",
+      "passed": true,
+      "evidence": "合成動画 6.130秒 / 指定 6.133秒"
+    },
+    {
+      "requirement": "D 吹き出しは頭上",
+      "passed": false,
+      "evidence": "今回の合成人物層: 吹き出し下端=168, 可視人物頭上端=39"
+    }
+  ]
+}

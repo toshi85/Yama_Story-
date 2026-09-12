@@ -1,0 +1,15 @@
+{
+  "model": "minimax/h3-max-turbo",
+  "duration": 5,
+  "resolution": "768P",
+  "usd_per_second": "0.01",
+  "usd_per_clip": "0.05",
+  "estimated_jpy": "7.50",
+  "jpy_reference_rate": 150,
+  "source": "check/studio/jobs/20260908111151_db3bc50e/candidate.png",
+  "checked_at": "2026-09-12T05:22:19.248288+00:00",
+  "id": "63b0ddeb491a4b81bf67f1d9fe5e6588",
+  "timestamp": 1789190540.285768,
+  "prompt": "A locked-off wide static shot of the exact scene in the source image, unchanged in framing and content: an autumn chestnut grove on a forested slope in Yamagata, Japan, with a tipped-over woven basket and spilled chestnuts and burrs on the left, white cotton work gloves dropped on the leaf litter in the foreground, and a single motionless person lying face-down among the fallen leaves in the middle ground. A steady mountain breeze moves through the forest for the full five seconds: the gold and rust leaves in the canopy flutter and shimmer, thin branches and saplings sway gently, a few loose leaves drift down and skitter slowly across the ground, the dry leaf litter lifts and settles in small ripples, the fern and low undergrowth quiver, and the fabric of the person's clothing and their hair stir very slightly in the wind. The person does not move on their own and never changes pose or position; the basket, chestnuts and gloves stay exactly where they are. No camera movement, no zoom, no cut, no new subject entering the frame, no animals, no other people. Cold flat overcast autumn daylight, muted natural color, no snow, no blood, no gore. 5 seconds. Photorealistic, shot on RED camera. Documentary style. 16:9.",
+  "shot_id": 5
+}

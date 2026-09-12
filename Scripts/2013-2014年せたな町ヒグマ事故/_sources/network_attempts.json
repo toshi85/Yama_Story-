@@ -1,0 +1,20 @@
+[
+  {
+    "id": "accident_retry",
+    "url": "https://www.pref.hokkaido.lg.jp/ks/skn/higuma/higuma-accident.html",
+    "status": 200,
+    "bytes": 24429
+  },
+  {
+    "id": "setana_home",
+    "url": "https://www.town.setana.lg.jp/",
+    "status": 200,
+    "bytes": 33530
+  },
+  {
+    "id": "search_setana",
+    "url": "https://www.google.com/search?q=%E3%81%9B%E3%81%9F%E3%81%AA+2014+%E3%83%92%E3%82%B0%E3%83%9E+DNA",
+    "status": 200,
+    "bytes": 92492
+  }
+]

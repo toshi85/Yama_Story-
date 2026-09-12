@@ -1,0 +1,12 @@
+{
+  "candidate_blocks": 8,
+  "abc_judgments": 24,
+  "action_fields": 8,
+  "overall_judgments": 8,
+  "source_lines": 23,
+  "url_lines_without_scope": 0,
+  "forbidden_words": 0,
+  "candidate4_actual_year_identified": false,
+  "missing_referenced_files": [],
+  "sha256": "4a6e57015252df319b7c1d633647daf00997225c2e5a44b3abfe244eef4d8b35"
+}

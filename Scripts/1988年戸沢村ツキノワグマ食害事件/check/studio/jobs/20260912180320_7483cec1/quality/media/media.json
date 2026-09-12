@@ -1,0 +1,51 @@
+{
+  "video": "check/studio/jobs/20260912180320_7483cec1/quality/media/preview.mp4",
+  "video_sha256": "3161e9b993935047f6d4ac05c8e30ba22a12d01b21321a0cd5b540faabedbee4",
+  "duration": 5.33,
+  "frames": [
+    {
+      "time": 0.1,
+      "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-00.jpg"
+    },
+    {
+      "time": 0.5,
+      "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-01.jpg"
+    },
+    {
+      "time": 1.25,
+      "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-02.jpg"
+    },
+    {
+      "time": 2.0333,
+      "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-03.jpg"
+    },
+    {
+      "time": 2.5,
+      "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-04.jpg"
+    },
+    {
+      "time": 2.6667,
+      "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-05.jpg"
+    },
+    {
+      "time": 3.9165,
+      "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-06.jpg"
+    },
+    {
+      "time": 5.263333333333334,
+      "file": "check/studio/jobs/20260912180320_7483cec1/quality/media/frame-07.jpg"
+    }
+  ],
+  "checks": [
+    {
+      "requirement": "A カット尺",
+      "passed": true,
+      "evidence": "合成動画 5.330秒 / 指定 5.333秒"
+    },
+    {
+      "requirement": "D 吹き出しは頭上",
+      "passed": null,
+      "evidence": "人物層の矩形がない、または複数セリフのため映像確認が必要"
+    }
+  ]
+}

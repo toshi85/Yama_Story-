@@ -1,0 +1,29 @@
+[
+  {
+    "name": "令和8年度人身事故 (PDF 92.6KB)",
+    "url": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/9/9/4/8/2/_/R080426_%E5%B3%B6%E7%89%A7%E6%9D%91_%E6%A7%98%E5%BC%8F2(%E4%BA%BA%E8%BA%AB%E4%BA%8B%E6%95%85%E7%99%BA%E7%94%9F%E7%8A%B6%E6%B3%81)r.pdf",
+    "pdf": "Yama_Story/Analytics/bear_inventory_2026-09-12/_sources/hokkaido_2026.pdf",
+    "text": "Yama_Story/Analytics/bear_inventory_2026-09-12/_sources/hokkaido_2026.txt",
+    "sha256": "aa523b2cf0158fb5870931ad858c5554512dd07b4a3185f83542c2e38ab622b8",
+    "extraction_exit": 0,
+    "review": "未読"
+  },
+  {
+    "name": "令和7年度人身事故 (PDF 365KB)",
+    "url": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/8/7/7/8/7/_/R7%E4%BA%BA%E8%BA%AB%E4%BA%8B%E6%95%85%E7%99%BA%E7%94%9F%E7%8A%B6%E6%B3%81.pdf",
+    "pdf": "Yama_Story/Analytics/bear_inventory_2026-09-12/_sources/hokkaido_2025.pdf",
+    "text": "Yama_Story/Analytics/bear_inventory_2026-09-12/_sources/hokkaido_2025.txt",
+    "sha256": "c2adb3375d08200e7fc5b053e1ca9af18f2af417f6c14f719ec2fbd5b42fb5dc",
+    "extraction_exit": 0,
+    "review": "未読"
+  },
+  {
+    "name": "ヒグマ人身事故一覧（昭和37年度～） (PDF 674KB)",
+    "url": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/9/3/1/3/4/_/S37~%E3%83%92%E3%82%B0%E3%83%9E%E4%BA%BA%E8%BA%AB%E8%A2%AB%E5%AE%B3%E4%B8%80%E8%A6%A7_260804(%E6%9B%B4%E5%88%A5%E6%9D%91%E8%B2%A0%E5%82%B7%E4%BA%8B%E6%95%85%E5%90%AB%E3%82%80).pdf",
+    "pdf": "Yama_Story/Analytics/bear_inventory_2026-09-12/_sources/hokkaido_history.pdf",
+    "text": "Yama_Story/Analytics/bear_inventory_2026-09-12/_sources/hokkaido_history.txt",
+    "sha256": "6fdb9e087de025163ac9c49778d45b3701365e6763be72bff7c4420d44926e20",
+    "extraction_exit": 0,
+    "review": "未読"
+  }
+]

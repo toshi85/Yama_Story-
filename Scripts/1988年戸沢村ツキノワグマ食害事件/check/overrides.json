@@ -83,7 +83,19 @@
         253
       ],
       "bubble_dx": -252,
-      "bubble_dy": 61
+      "bubble_dy": 61,
+      "speech_segments": [
+        {
+          "text": "もしもし！",
+          "start": 0.5,
+          "end": 2
+        },
+        {
+          "text": "警察ですか？",
+          "start": 2.5,
+          "end": 5.333
+        }
+      ]
     },
     "18": {
       "telop": "",
@@ -579,8 +591,8 @@
         640,
         360
       ],
-      "telop_start": 1.0,
-      "telop_end": 3.966666666666667,
+      "telop_start": 1,
+      "telop_end": 5,
       "telop_anim": "fade",
       "telop_highlights": [
         {
@@ -713,16 +725,79 @@
       "video_fit": "stretch",
       "video_speed": null
     },
-    "20": {
+    "20": {},
+    "21": {
+      "narration": "集落から500〜600メートルほど\n離れた付近。",
+      "asset_file": "check/studio/jobs/20260908163603_final_21/candidate.png",
+      "asset_kind": "image",
       "background_file": "",
       "speech": "",
-      "telop": "",
-      "question": "",
       "motion": "still",
       "motion_path": null,
       "same_as_prev": false,
-      "asset_file": "check/studio/jobs/20260908151228_body_scene/candidate.png",
-      "asset_kind": "image"
+      "pan": "",
+      "telops": [],
+      "map_pins": [
+        {
+          "label": "集落",
+          "x": 316,
+          "y": 414,
+          "size": 36,
+          "start": 0,
+          "end": 4.266666666666667,
+          "font": "rounded"
+        },
+        {
+          "label": "現場",
+          "x": 781,
+          "y": 288,
+          "size": 36,
+          "start": 0,
+          "end": 4.266666666666667,
+          "font": "rounded"
+        }
+      ],
+      "overlays": [
+        {
+          "type": "text",
+          "text": "約500〜600m上流",
+          "x": 549,
+          "y": 262,
+          "size": 36,
+          "start": 0,
+          "end": 4.266666666666667,
+          "anim": "none",
+          "font": "rounded",
+          "angle": -18,
+          "color": "#FFFFFF",
+          "length": 300,
+          "thickness": 8,
+          "w": 240,
+          "h": 140,
+          "shape": "ellipse",
+          "style": "outline",
+          "arrow_heads": "one"
+        },
+        {
+          "type": "arrow",
+          "shape": "rect",
+          "style": "outline",
+          "w": 240,
+          "h": 140,
+          "thickness": 6,
+          "color": "#fff700",
+          "angle": 163.5,
+          "x": 569,
+          "y": 332,
+          "start": 0,
+          "end": 4.266666666666667,
+          "anim": "fade",
+          "arrow_heads": "both",
+          "font": "rounded",
+          "size": 48,
+          "length": 395
+        }
+      ]
     }
   }
 }

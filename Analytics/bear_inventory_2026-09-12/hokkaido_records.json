@@ -1,0 +1,4127 @@
+[
+  {
+    "date": "1962-10-08",
+    "prefecture": "北海道",
+    "location": "雄武町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性53才／職業不明（S3に職業欄なし）",
+    "activity": "造材作業",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S37   1962.10. 8   網走    雄武町     造材作業     男    ５３才   負傷     子連れ",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1962-09-24",
+    "prefecture": "北海道",
+    "location": "標津町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性73才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S37   1962. 9.24   根室    標津町     クマ駆除     男    ７３才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1962-10-10",
+    "prefecture": "北海道",
+    "location": "標津町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性40才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S37   1962.10.10   根室    標津町     クマ駆除     男    ４０才   負傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1962-10-19",
+    "prefecture": "北海道",
+    "location": "標津町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性51才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "S37   7   3   4   7   S37   1962.10.19   根室    標津町     クマ駆除     男    ５１才   死亡     雄６才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1962-10-20",
+    "prefecture": "北海道",
+    "location": "浦幌町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性71才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S37   1962.10.20   十勝    浦幌町     クマ駆除     男    ７１才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1962-10-25",
+    "prefecture": "北海道",
+    "location": "北檜山町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性19才／職業不明（S3に職業欄なし）",
+    "activity": "放牧点検",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S37   1962.10.25   檜山   北檜山町     放牧点検     女    １９才   重傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1962-11-01",
+    "prefecture": "北海道",
+    "location": "浦河町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性61才／職業不明（S3に職業欄なし）",
+    "activity": "帰宅途中",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S37   1962.11. 1   日高    浦河町     帰宅途中     男    ６１才   重傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1963-08-09",
+    "prefecture": "北海道",
+    "location": "猿払村",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性34才／職業不明（S3に職業欄なし）",
+    "activity": "牧場作業",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S38   1963. 8. 9   宗谷    猿払村     牧場作業     女    ３４才   死亡     雄５才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1963-08-11",
+    "prefecture": "北海道",
+    "location": "浜頓別町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性59才／職業不明（S3に職業欄なし）",
+    "activity": "牧場点検",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S38   1963. 8.11   宗谷   浜頓別町     牧場点検     男    ５９才   重傷     雄６才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1964-07-20",
+    "prefecture": "北海道",
+    "location": "上川町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性50才／職業不明（S3に職業欄なし）",
+    "activity": "登山",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S39   1964. 7.20   上川    上川町      登山      男    ５０才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1964-09-09",
+    "prefecture": "北海道",
+    "location": "平取町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性11才／職業不明（S3に職業欄なし）",
+    "activity": "登校中",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S39   1964. 9. 9   日高    平取町     登校中      女    １１才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1964-09-23",
+    "prefecture": "北海道",
+    "location": "上富良野町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性52才／職業不明（S3に職業欄なし）",
+    "activity": "農作業中",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S39   1964. 9.23   上川   上富良野町    農作業中     女    ５２才   重傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1964-09-25",
+    "prefecture": "北海道",
+    "location": "札幌市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性24才／職業不明（S3に職業欄なし）",
+    "activity": "登山",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S39   1964. 9.25   石狩    札幌市      登山      男    ２４才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1964-10-25",
+    "prefecture": "北海道",
+    "location": "静内町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性46才／職業不明（S3に職業欄なし）",
+    "activity": "クマ狩猟",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S39   1964.10.25   日高    静内町     クマ狩猟     男    ４６才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1964-10-26",
+    "prefecture": "北海道",
+    "location": "帯広市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性44才／職業不明（S3に職業欄なし）",
+    "activity": "クマ狩猟",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S39   1964.10.26   十勝    帯広市     クマ狩猟     男    ４４才   重傷     雄６才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1965-04-24",
+    "prefecture": "北海道",
+    "location": "愛別町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性44才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S40   1965. 4.24   上川    愛別町     クマ駆除     男    ４４才   重傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1965-04-25",
+    "prefecture": "北海道",
+    "location": "初山別村",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性57才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S40   1965. 4.25   留萌   初山別村     クマ駆除     男    ５７才   軽傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1965-05-01",
+    "prefecture": "北海道",
+    "location": "下川町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性46才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S40   1965. 5. 1   上川    下川町     クマ駆除     男    ４６才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1965-08-05",
+    "prefecture": "北海道",
+    "location": "猿払村",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性65才／職業不明（S3に職業欄なし）",
+    "activity": "歩行中",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "S40   7   3   4   7   S40   1965. 8. 5   宗谷    猿払村      歩行中     女    ６５才   重傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1965-08-22",
+    "prefecture": "北海道",
+    "location": "猿払村",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性52才／職業不明（S3に職業欄なし）",
+    "activity": "飯場へ行く途中",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S40   1965. 8.22   宗谷    猿払村    飯場へ行く途中   男    ５２才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1965-09-29",
+    "prefecture": "北海道",
+    "location": "椴法華村",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性57才／職業不明（S3に職業欄なし）",
+    "activity": "農作業中",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S40   1965. 9.29   渡島   椴法華村     農作業中     女    ５７才   負傷     2～3才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1965-11-06",
+    "prefecture": "北海道",
+    "location": "清里町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性57才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S40   1965.11. 6   網走    清里町     クマ駆除     男    ５７才   死亡     ２才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1966-05-03",
+    "prefecture": "北海道",
+    "location": "小平町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性50才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S41   1966. 5. 3   留萌    小平町     クマ駆除     男    ５０才   重傷     10才上",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1966-10-13",
+    "prefecture": "北海道",
+    "location": "北檜山町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性34才／職業不明（S3に職業欄なし）",
+    "activity": "牧場作業",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S41   1966.10.13   檜山   北檜山町     牧場作業     男    ３４才   重傷     ２才前後",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1967-04-19",
+    "prefecture": "北海道",
+    "location": "猿払村",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性43才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S42   1967. 4.19   宗谷    猿払村     クマ駆除     男    ４３才   重傷     5～6才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1967-05-10",
+    "prefecture": "北海道",
+    "location": "島牧村",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性37才／職業不明（S3に職業欄なし）",
+    "activity": "農作業中",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S42   1967. 5.10   後志    島牧村     農作業中     女    ３７才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1968-06-02",
+    "prefecture": "北海道",
+    "location": "南富良野町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性24才／職業不明（S3に職業欄なし）",
+    "activity": "川釣り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S43   1968. 6. 2   上川   南富良野町     川釣り     男    ２４才   死亡     雄８才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1968-11-18",
+    "prefecture": "北海道",
+    "location": "穂別町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性65才／職業不明（S3に職業欄なし）",
+    "activity": "クマ狩猟",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "S43   3   2   1   3   S43   1968.11.18   胆振    穂別町     クマ狩猟     男    ６５才   死亡     5～6才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1968-11-21",
+    "prefecture": "北海道",
+    "location": "穂別町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性64才／職業不明（S3に職業欄なし）",
+    "activity": "クマ狩猟",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S43   1968.11.21   胆振    穂別町     クマ狩猟     男    ６４才   重傷     雄６才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1969-04-20",
+    "prefecture": "北海道",
+    "location": "南富良野町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性56才／職業不明（S3に職業欄なし）",
+    "activity": "造材場で昼食中",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S44   1969. 4.20   上川   南富良野町   造材場で昼食中   男    ５６才   死亡     雄６才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1969-08-28",
+    "prefecture": "北海道",
+    "location": "千歳市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性78才／職業不明（S3に職業欄なし）",
+    "activity": "果実採取",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S44   1969. 8.28   石狩    千歳市     果実採取     女    ７８才   死亡     雌4～5才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1970-07-27",
+    "prefecture": "北海道",
+    "location": "士別市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性75才／職業不明（S3に職業欄なし）",
+    "activity": "笹刈り作業",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S45   1970. 7.27   上川   士別市      笹刈り作業    男    ７５才   負傷     3～4才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1970-12-05",
+    "prefecture": "北海道",
+    "location": "八雲町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性49才／職業不明（S3に職業欄なし）",
+    "activity": "クマ追跡中",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S45   1970.12. 5   渡島   八雲町      クマ追跡中    男    ４９才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1971-11-04",
+    "prefecture": "北海道",
+    "location": "滝上町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性69才／職業不明（S3に職業欄なし）",
+    "activity": "クマ追跡中",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "S46   1   1   0   1   S46   1971.11. 4   網走   滝上町      クマ追跡中    男    ６９才   死亡     雄12才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1972-04-06",
+    "prefecture": "北海道",
+    "location": "美深町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性41才／職業不明（S3に職業欄なし）",
+    "activity": "春クマ駆除",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "S47   1   0   1   1   S47   1972. 4. 6   上川   美深町      春クマ駆除    男    ４１才   重傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1973-05-02",
+    "prefecture": "北海道",
+    "location": "当別町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性54才／職業不明（S3に職業欄なし）",
+    "activity": "手負クマ追跡中",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S48   1973. 5. 2   石狩   当別町     手負クマ追跡中   男    ５４才   重傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1973-05-06",
+    "prefecture": "北海道",
+    "location": "木古内町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性50才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "S48   3   2   1   3   S48   1973. 5. 6   渡島   木古内町     山菜採り     男    ５０才   死亡     雄7～8才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1973-09-17",
+    "prefecture": "北海道",
+    "location": "厚沢部町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性45才／職業不明（S3に職業欄なし）",
+    "activity": "造林作業中",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S48   1973. 9.17   檜山   厚沢部町     造林作業中    男    ４５才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1974-05-30",
+    "prefecture": "北海道",
+    "location": "上ノ国町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性44才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S49   1974. 5.30   檜山   上ノ国町     クマ駆除     男    ４４才   負傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1974-08-16",
+    "prefecture": "北海道",
+    "location": "留辺蘂町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性46才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "S49   3   1   2   3   S49   1974. 8.16   網走   留辺蘂町     クマ駆除     男    ４６才   重傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1974-11-11",
+    "prefecture": "北海道",
+    "location": "斜里町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性37才／職業不明（S3に職業欄なし）",
+    "activity": "クマ狩猟",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S49   1974.11.11   網走   斜里町      クマ狩猟     男    ３７才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1975-04-08",
+    "prefecture": "北海道",
+    "location": "長万部町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性54才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業中",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S50   1975. 4. 8   渡島   長万部町     林内作業中    男    ５４才   負傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1975-07-01",
+    "prefecture": "北海道",
+    "location": "浦幌町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性40才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業中",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S50   1975. 7. 1   十勝   浦幌町      林内作業中    女    ４０才   負傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1976-12-02",
+    "prefecture": "北海道",
+    "location": "下川町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性56才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S51   1976.12. 2   上川   下川町      林内作業     男    ５６才   死亡     雌12～3才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1977-03-31",
+    "prefecture": "北海道",
+    "location": "三笠市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性45才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S51   1977. 3.31   空知   三笠市      林内作業     男    ４５才   負傷     雄６才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1977-04-07",
+    "prefecture": "北海道",
+    "location": "滝上町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性39才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S52   1977. 4. 7   網走   滝上町      林内作業     男    ３９才   負傷     ４才位",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1977-05-27",
+    "prefecture": "北海道",
+    "location": "大成町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性55才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "S52   3   2   1   3   S52   1977. 5.27   檜山   大成町      山菜採り     男    ５５才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1977-09-24",
+    "prefecture": "北海道",
+    "location": "大成町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性36才／職業不明（S3に職業欄なし）",
+    "activity": "川釣り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S52   1977. 9.24   檜山   大成町      川釣り      男    ３６才   死亡     雌６才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1979-04-26",
+    "prefecture": "北海道",
+    "location": "枝幸町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性69才／職業不明（S3に職業欄なし）",
+    "activity": "春グマ駆除",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S54   1979. 4.26   宗谷   枝幸町     春グマ駆除     男    ６９才   重傷     雌",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1979-06-14",
+    "prefecture": "北海道",
+    "location": "富良野市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性38才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S54   1979. 6.14   上川   富良野市    山菜採り      男    ３８才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1979-09-28",
+    "prefecture": "北海道",
+    "location": "江差町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性79才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S54   1979. 9.28   檜山   江差町     林内作業      男    ７９才   軽傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1980-02-25",
+    "prefecture": "北海道",
+    "location": "留辺蘂町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性50才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S54   1980. 2.25   網走   留辺蘂町    林内作業      男    ５０才   重傷     雌6～7才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1980-10-27",
+    "prefecture": "北海道",
+    "location": "羅臼町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性57才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "S55   1   0   1   1   S55   1980.10.27   根室   羅臼町     クマ駆除      男    ５７才   重傷     雌",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1981-05-15",
+    "prefecture": "北海道",
+    "location": "穂別町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性45才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S56   1981. 5.15   胆振   穂別町     山菜採り      男    ４５才   負傷     雌",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1981-08-18",
+    "prefecture": "北海道",
+    "location": "えりも町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性38才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S56   1981. 8.18   日高   えりも町    クマ駆除      男    ３８才   負傷     雌",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1983-05-19",
+    "prefecture": "北海道",
+    "location": "置戸町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性34才／職業不明（S3に職業欄なし）",
+    "activity": "測量作業",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S58   1983. 5.19   網走   置戸町     測量作業      男    ３４才   重傷     雄５才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1983-06-04",
+    "prefecture": "北海道",
+    "location": "島牧村",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性48才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "S58   3   0   3   3   S58   1983. 6. 4   後志   島牧村     山菜採り      男    ４８才   重傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1983-07-11",
+    "prefecture": "北海道",
+    "location": "八雲町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性37才／職業不明（S3に職業欄なし）",
+    "activity": "土木工事",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S58   1983. 7.11   渡島   八雲町     土木工事      男    ３７才   負傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1984-08-30",
+    "prefecture": "北海道",
+    "location": "広尾町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性49才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "S59   1   0   1   1   S59   1984. 8.30   十勝   広尾町     林内作業      男    ４９才   軽傷     雌",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1985-04-22",
+    "prefecture": "北海道",
+    "location": "羅臼町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性62才／職業不明（S3に職業欄なし）",
+    "activity": "春グマ駆除",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S60   1985. 4.22   根室   羅臼町     春グマ駆除     男    ６２才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1985-07-16",
+    "prefecture": "北海道",
+    "location": "福島町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性59才／職業不明（S3に職業欄なし）",
+    "activity": "農作業",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      S60   1985.7.16    渡島   福島町      農作業      女    ５９才   負傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1986-08-30",
+    "prefecture": "北海道",
+    "location": "斜里町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性59才／職業不明（S3に職業欄なし）",
+    "activity": "漁場巡視",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "S61  1    0   1   1   S61   1986. 8.30   網走   斜里町     漁場巡視      男    ５９才   負傷     雌",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1988-07-06",
+    "prefecture": "北海道",
+    "location": "生田原町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性44才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "S63  1    0   1   1   S63   1988. 7. 6   網走   生田原町     林内作業     男    ４４才   軽傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1989-11-15",
+    "prefecture": "北海道",
+    "location": "広尾町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性51才／職業不明（S3に職業欄なし）",
+    "activity": "シカ狩猟",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H1    1989.11.15   十勝      広尾町      シカ狩猟     男    ５１才   重傷     雌5～6才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1989-11-25",
+    "prefecture": "北海道",
+    "location": "弟子屈町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性40才／職業不明（S3に職業欄なし）",
+    "activity": "シカ狩猟",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H元    3   0   3   3   H1    1989.11.25   釧路      弟子屈町     シカ狩猟     男    ４０才   重傷     雌",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1990-03-07",
+    "prefecture": "北海道",
+    "location": "芦別市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性52才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H1    1990. 3. 7   空知      芦別市      林内作業     男    ５２才   軽傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1990-09-21",
+    "prefecture": "北海道",
+    "location": "森町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性75才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H2    1990. 9.21   渡島       森町      山菜採り     男    ７５才   死亡     雄7才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1990-10-21",
+    "prefecture": "北海道",
+    "location": "上ノ国町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性85才／職業不明（S3に職業欄なし）",
+    "activity": "生け花用木採取",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H2    3   2   1   3   H2    1990.10.21   檜山      上ノ国町    生け花用木採取   男    ８５才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1990-10-29",
+    "prefecture": "北海道",
+    "location": "紋別市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性54才／職業不明（S3に職業欄なし）",
+    "activity": "クマ狩猟",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H2    1990.10.29   網走      紋別市      クマ狩猟     男    ５４才   負傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1991-05-12",
+    "prefecture": "北海道",
+    "location": "上ノ国町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性58才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H3  1     0   1   1   H3    1991. 5.12   檜山      上ノ国町     山菜採り     男    ５８才   負傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1992-11-17",
+    "prefecture": "北海道",
+    "location": "遠軽町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性54才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H4  1     0   1   1   H4    1992.11.17   網走      遠軽町      林内作業     男    ５４才   負傷     ３～４才位",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1993-10-02",
+    "prefecture": "北海道",
+    "location": "上磯町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性77才／職業不明（S3に職業欄なし）",
+    "activity": "狩猟",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H5  1     0   1   1   H5    1993.10. 2   渡島      上磯町       狩猟      男    ７７才   負傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1995-02-13",
+    "prefecture": "北海道",
+    "location": "紋別市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性51才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H6  1     0   1   1   H6    1995. 2.13   網走      紋別市      林内作業     男    ５１才   負傷     ４～５才位",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1996-06-02",
+    "prefecture": "北海道",
+    "location": "紋別市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性60才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H8  1     0   1   1   H8    1996. 6. 2   網走      紋別市      山菜採り     男    ６０才   重傷     子連れ",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1997-08-24",
+    "prefecture": "北海道",
+    "location": "滝上町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性66才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H9  1     0   1   1   H9    1997. 8.24   網走      滝上町      クマ駆除     男    ６６才   重傷     ７才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1998-11-23",
+    "prefecture": "北海道",
+    "location": "新得町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性51才／職業不明（S3に職業欄なし）",
+    "activity": "シカ狩猟",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H10   1998.11.23   十勝      新得町      シカ狩猟     男    ５１才   負傷     雌",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1998-11-23",
+    "prefecture": "北海道",
+    "location": "白糠町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性44才／職業不明（S3に職業欄なし）",
+    "activity": "シカ狩猟",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H10   1998.11.23   釧路      白糠町      シカ狩猟     男    ４４才   負傷     雄7～8才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1999-10-10",
+    "prefecture": "北海道",
+    "location": "登別市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性31才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H11   1999.10.10   胆振       登別市    山菜採り      男    ３１才   軽傷     当歳の可能性",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1999-10-31",
+    "prefecture": "北海道",
+    "location": "音別町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性64才／職業不明（S3に職業欄なし）",
+    "activity": "クマ狩猟",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H11   1999.10.31   釧路       音別町    クマ狩猟      男    ６４才   重傷     雄３才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "1999-12-19",
+    "prefecture": "北海道",
+    "location": "紋別市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性58才／職業不明（S3に職業欄なし）",
+    "activity": "クマ狩猟",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H11   1999.12.19   網走       紋別市    クマ狩猟      男    ５８才   軽傷     雄６才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2000-11-01",
+    "prefecture": "北海道",
+    "location": "白糠町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性60才／職業不明（S3に職業欄なし）",
+    "activity": "シカ狩猟",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H12   2000.11. 1   釧路       白糠町    シカ狩猟      男    ６０才   重傷     雌4～5才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2000-11-12",
+    "prefecture": "北海道",
+    "location": "平取町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性73才／職業不明（S3に職業欄なし）",
+    "activity": "シカ狩猟",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H12   2000.11.12   日高       平取町    シカ狩猟      男    ７３才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2001-04-18",
+    "prefecture": "北海道",
+    "location": "白糠町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性42才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H13   2001. 4.18   釧路       白糠町    山菜採り      女    ４２才   死亡     親子（推測）、逃走",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2001-04-30",
+    "prefecture": "北海道",
+    "location": "遠別町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性70才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H13   2001. 4.30   留萌       遠別町    山菜採り      男    ７０才   重傷     親子（仔明け２歳２頭）",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2001-05-07",
+    "prefecture": "北海道",
+    "location": "札幌市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性53才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H13   2001. 5. 7   石狩       札幌市    山菜採り      男    ５３才   死亡     雄8～10才",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2001-05-10",
+    "prefecture": "北海道",
+    "location": "門別町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性81才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H13   2001. 5.10   日高       門別町    クマ駆除      男    ８１才   死亡     成獣",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2002-08-26",
+    "prefecture": "北海道",
+    "location": "南富良野町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性78才／職業不明（S3に職業欄なし）",
+    "activity": "被害畑点検",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H14   1   0   1   1   H14   2002. 8.26   上川      南富良野町   被害畑点検     男    ７８才   軽傷     成獣",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2003-11-14",
+    "prefecture": "北海道",
+    "location": "苫小牧市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性64才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H15   1   0   1   1   H15   2003.11.14   胆振      苫小牧市    クマ駆除      男    ６４才   軽傷     オス亜成獣の可能性",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2005-09-24",
+    "prefecture": "北海道",
+    "location": "白糠町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性74才／職業不明（S3に職業欄なし）",
+    "activity": "キノコ採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H17   2005.9.24    釧路      白糠町     キノコ採り     男    ７４才   死亡     親子",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2006-06-16",
+    "prefecture": "北海道",
+    "location": "新ひだか町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性53才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H18   2006.6.16    日高      新ひだか町   山菜採り      男    ５３才   死亡     不明",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2006-10-01",
+    "prefecture": "北海道",
+    "location": "浦河町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性78才／職業不明（S3に職業欄なし）",
+    "activity": "キノコ採り",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H18   2006.10.1    日高       浦河町    キノコ採り     男    ７８才   重傷     体長150cm",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2006-10-28",
+    "prefecture": "北海道",
+    "location": "新十津川町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性62才／職業不明（S3に職業欄なし）",
+    "activity": "キノコ採り",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H18   2006.10.28   空知      新十津川町   キノコ採り     男    ６２才   重傷     不明（小型）",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2007-08-08",
+    "prefecture": "北海道",
+    "location": "様似町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性68才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H19    2007.8.8    日高       様似町     クマ駆除     男    ６８才   重傷     不明",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2007-10-04",
+    "prefecture": "北海道",
+    "location": "北斗市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性60才／職業不明（S3に職業欄なし）",
+    "activity": "キノコ採り",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H19   3   0   3   3   H19   2007.10.4    渡島       北斗市    キノコ採り     男    ６０才   軽傷     小型",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2007-10-13",
+    "prefecture": "北海道",
+    "location": "士別市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性52才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H19   2007.10.13   上川       士別市     クマ駆除     男    ５２才   重傷     不明",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2008-04-06",
+    "prefecture": "北海道",
+    "location": "北斗市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性50才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H20    2008.4.6    渡島       北斗市     山菜採り     男    ５０才   死亡     オス3才程度 体重70kg",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2008-07-30",
+    "prefecture": "北海道",
+    "location": "松前町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性67才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H20   3   3   0   3   H20   2008.7.30    渡島       松前町     クマ駆除     男    ６７才   死亡     不明",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2008-09-18",
+    "prefecture": "北海道",
+    "location": "標津町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性58才／職業不明（S3に職業欄なし）",
+    "activity": "釣(魚採り)",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H20   2008.9.18    根室       標津町    釣（魚採り）    男    ５８才   死亡     オス捕獲",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2009-09-08",
+    "prefecture": "北海道",
+    "location": "新ひだか",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性71才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H21    2009.9.8    日高      新ひだか     クマ駆除     男    ７１才   重傷     オス捕獲",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2009-10-30",
+    "prefecture": "北海道",
+    "location": "苫前町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性66才／職業不明（S3に職業欄なし）",
+    "activity": "散歩",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H21   2009.10.30   留萌       苫前町      散歩      男    ６６才   重傷     逃走",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2010-05-22",
+    "prefecture": "北海道",
+    "location": "むかわ町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性73才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H22   2010.5.22    胆振      むかわ町     山菜採り     男    ７３才   死亡     不明",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2010-06-05",
+    "prefecture": "北海道",
+    "location": "帯広市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性66才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H22   3   2   1   3   H22    2010.6.5    十勝       帯広市     山菜採り     女    ６６才   死亡     親子 逃走",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2010-12-05",
+    "prefecture": "北海道",
+    "location": "上川町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性60才／職業不明（S3に職業欄なし）",
+    "activity": "シカ狩猟中",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H22   2010.12.5    上川       上川町    シカ狩猟中     男    ６０才   重傷     オス捕獲",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2011-04-12",
+    "prefecture": "北海道",
+    "location": "上ノ国町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性63才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H23   2011.4.12    檜山      上ノ国町     山菜採り     男    ６３才   死亡     不明",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2012-09-30",
+    "prefecture": "北海道",
+    "location": "八雲町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性73才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H24   2012.9.30    渡島       八雲町     クマ駆除     男    ７３才   軽傷     オス3歳    捕獲",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2012-10-27",
+    "prefecture": "北海道",
+    "location": "足寄町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性66才／職業不明（S3に職業欄なし）",
+    "activity": "クマ狩猟",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H24   2012.10.27   十勝       足寄町     クマ狩猟     男    ６６才   軽傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2013-04-16",
+    "prefecture": "北海道",
+    "location": "せたな町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性52才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H25   2013.4.16    檜山      せたな町     山菜採り     女    ５２才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2013-04-29",
+    "prefecture": "北海道",
+    "location": "新ひだか町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性53才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H25   2013.4.29    日高      新ひだか町    山菜採り     男    ５３才   重傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2013-09-24",
+    "prefecture": "北海道",
+    "location": "函館市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性63才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H25   2013.9.24    渡島       函館市     山菜採り     男    ６３才   軽傷     親子",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2013-10-14",
+    "prefecture": "北海道",
+    "location": "福島町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性58才／職業不明（S3に職業欄なし）",
+    "activity": "シカ狩猟",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                      H25   2013.10.14   渡島       福島町     シカ狩猟     男    ５８才   重傷     その場で捕獲",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2014-04-04",
+    "prefecture": "北海道",
+    "location": "せたな町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性45才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        H26    2014.4.4  檜山        せたな町   山菜採り      女    ４５才   重傷     オス（H25.4.16と同一個体）",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2014-09-30",
+    "prefecture": "北海道",
+    "location": "滝上町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性76才／職業不明（S3に職業欄なし）",
+    "activity": "散歩",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        H26   2014.9.30 ｵﾎｰﾂｸ      滝上町     散歩       男    ７６才   重傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2014-10-11",
+    "prefecture": "北海道",
+    "location": "千歳市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性59才／職業不明（S3に職業欄なし）",
+    "activity": "キノコ採り",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H26   5   1   4    5    H26   2014.10.11 石狩        千歳市    キノコ採り     男    ５９才   重傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2015-01-26",
+    "prefecture": "北海道",
+    "location": "標茶町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性64才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        H26   2015.1.26 釧路         標茶町    林内作業      男    ６４才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2015-02-02",
+    "prefecture": "北海道",
+    "location": "厚岸町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性74才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        H26    2015.2.2  釧路        厚岸町    林内作業      男    ７４才   重傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2016-10-06",
+    "prefecture": "北海道",
+    "location": "厚岸町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性40才／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H28  1    0   1    1    H28   2016.10.6 釧路         厚岸町    林内作業      男    ４０才   重傷     前掌幅約２０cm",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2017-04-16",
+    "prefecture": "北海道",
+    "location": "標茶町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性54才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        H29   2017.4.16 釧路         標茶町    山菜採り      男    ５４才   重傷     親子",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2017-10-03",
+    "prefecture": "北海道",
+    "location": "白糠町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性73才／職業不明（S3に職業欄なし）",
+    "activity": "キノコ採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        H29   2017.10.3 釧路         白糠町    キノコ採り     男    ７３才   死亡",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2017-10-06",
+    "prefecture": "北海道",
+    "location": "白糠町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性60才／職業不明（S3に職業欄なし）",
+    "activity": "シカ狩猟",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        H29   2017.10.6 釧路         白糠町    シカ狩猟      男    ６０才   負傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2017-10-09",
+    "prefecture": "北海道",
+    "location": "斜里町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性70才／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        H29   2017.10.9 ｵﾎｰﾂｸ      斜里町    クマ駆除      男    ７０才   負傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2018-04-20",
+    "prefecture": "北海道",
+    "location": "函館市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性66才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        H30   2018.4.20 渡島         函館市    山菜採り      男    ６６才   軽傷     親子",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2018-04-29",
+    "prefecture": "北海道",
+    "location": "中標津町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性70才／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H30   3   0   3    3    H30   2018.4.29 根室         中標津町   山菜採り      男    ７０才   軽傷     親子（子２頭）",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2018-10-11",
+    "prefecture": "北海道",
+    "location": "八雲町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性58才／職業不明（S3に職業欄なし）",
+    "activity": "キノコ採り",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        H30   2018.10.11 渡島        八雲町    キノコ採り     男    ５８才   負傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2019-04-16",
+    "prefecture": "北海道",
+    "location": "斜里町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性74歳／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "H31                     H31   2019.4.16 ｵﾎｰﾂｸ      斜里町    クマ駆除      男    ７４歳   負傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2019-07-11",
+    "prefecture": "北海道",
+    "location": "中札内村",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性65歳／職業不明（S3に職業欄なし）",
+    "activity": "登山",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "      3   0   3    3    R1    2019.7.11 十勝         中札内村    登山       男    ６５歳   軽傷     高山の山頂付近",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2019-07-29",
+    "prefecture": "北海道",
+    "location": "中札内村",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性47歳／職業不明（S3に職業欄なし）",
+    "activity": "登山",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R1    2019.7.29 十勝         中札内村    登山       男    ４７歳   軽傷     前と同一付近",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2020-05-08",
+    "prefecture": "北海道",
+    "location": "滝上町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性62歳／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "軽傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R2     2020.5.8 ｵﾎｰﾂｸ      滝上町    山菜採り      男    ６２歳   軽傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2020-05-15",
+    "prefecture": "北海道",
+    "location": "古平町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性71歳／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "R2    3   1   2    3    R2    2020.5.15    後志      古平町     山菜採り     男    ７１歳   死亡",
+    "notes": "S3はヒグマによる可能性が極めて高い事例として記載。原因確定とは区別。",
+    "key": ""
+  },
+  {
+    "date": "2020-08-24",
+    "prefecture": "北海道",
+    "location": "士別市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性69歳／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "重傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R2    2020.8.24    上川      士別市    クマ駆除      男    ６９歳   重傷",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2021-04-10",
+    "prefecture": "北海道",
+    "location": "厚岸町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性60歳／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R3    2021.4.10    釧路      厚岸町    山菜採り      男    ６０歳   死亡     親子？",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2021-04-27",
+    "prefecture": "北海道",
+    "location": "富良野市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性48歳／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R3    2021.4.27    上川      富良野市   クマ駆除      男    ４８歳   負傷     親子（子2頭）",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2021-06-14",
+    "prefecture": "北海道",
+    "location": "厚岸町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性67歳／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R3    2021.6.14    釧路      厚岸町    林内作業      男    ６７歳   負傷     不明",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2021-07-02",
+    "prefecture": "北海道",
+    "location": "福島町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性77歳／職業不明（S3に職業欄なし）",
+    "activity": "農作業",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R3     2021.7.2    渡島      福島町     農作業      女    ７７歳   死亡     R7.7.12と同一個体",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2021-07-12",
+    "prefecture": "北海道",
+    "location": "滝上町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性69歳／職業不明（S3に職業欄なし）",
+    "activity": "ハイキング",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R3    2021.7.12    ｵﾎｰﾂｸ   滝上町    ハイキング     女    ６９歳   死亡     ヒグマによる可能性が極めて高い",
+    "notes": "S3はヒグマによる可能性が極めて高い事例として記載。原因確定とは区別。",
+    "key": ""
+  },
+  {
+    "date": "2021-11-24",
+    "prefecture": "北海道",
+    "location": "夕張市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性53歳／職業不明（S3に職業欄なし）",
+    "activity": "狩猟",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R3    2021.11.24   空知      夕張市      狩猟      男    ５３歳   死亡     ヒグマによる可能性が極めて高い",
+    "notes": "S3はヒグマによる可能性が極めて高い事例として記載。原因確定とは区別。",
+    "key": ""
+  },
+  {
+    "date": "2022-07-05",
+    "prefecture": "北海道",
+    "location": "滝上町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性68歳／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R4     2022.7.5    ｵﾎｰﾂｸ   滝上町     クマ駆除     男    ６８歳   負傷     不明",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2023-02-04",
+    "prefecture": "北海道",
+    "location": "函館市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性69歳／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R4     2023.2.4    渡島      函館市     林内作業     男    ６９歳   負傷     不明",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2023-04-01",
+    "prefecture": "北海道",
+    "location": "厚岸町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：女性非公表／職業不明（S3に職業欄なし）",
+    "activity": "散歩中",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R5     2023.4.1    釧路      厚岸町      散歩中     女    非公表   負傷     不明",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2023-05-14",
+    "prefecture": "北海道",
+    "location": "幌加内町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性54歳／職業不明（S3に職業欄なし）",
+    "activity": "釣り",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R5    2023.5.14    上川      幌加内町     釣り      男    ５４歳   死亡     加害個体を駆除",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2023-06-28",
+    "prefecture": "北海道",
+    "location": "羅臼町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性43歳／職業不明（S3に職業欄なし）",
+    "activity": "シカ駆除",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R5    2023.6.28    根室      羅臼町     シカ駆除     男    ４３歳   負傷     不明",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2024-05-05",
+    "prefecture": "北海道",
+    "location": "浦河町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性81歳／職業不明（S3に職業欄なし）",
+    "activity": "山菜採り",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R6     2024.5.5    日高      浦河町    山菜採り      男    ８１歳   負傷     不明",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2024-06-03",
+    "prefecture": "北海道",
+    "location": "雨竜町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性51歳／職業不明（S3に職業欄なし）",
+    "activity": "林内作業",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "R6    3   0   3    3    R6     2024.6.3    空知      雨竜町    林内作業      男    ５１歳   負傷     不明",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2024-07-30",
+    "prefecture": "北海道",
+    "location": "斜里町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性64歳／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R6    2024.7.30    ｵﾎｰﾂｸ   斜里町    クマ駆除      男    ６４歳   負傷     加害個体を駆除",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2025-04-03",
+    "prefecture": "北海道",
+    "location": "美唄市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性76歳／職業不明（S3に職業欄なし）",
+    "activity": "シカ駆除",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R7     2025.4.3    空知      美唄市    シカ駆除      男    ７６歳   負傷     不明",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2025-07-12",
+    "prefecture": "北海道",
+    "location": "福島町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性52歳／職業不明（S3に職業欄なし）",
+    "activity": "新聞配達中",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R7    2025.7.12    渡島      福島町    新聞配達中     男    ５２歳   死亡     加害個体を駆除",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2025-08-14",
+    "prefecture": "北海道",
+    "location": "斜里町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性26歳／職業不明（S3に職業欄なし）",
+    "activity": "登山",
+    "outcome": "死亡",
+    "n": 1,
+    "dead": 1,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R7    2025.8.14    ｵﾎｰﾂｸ   斜里町     登山       男    ２６歳   死亡     加害個体を駆除",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2025-09-26",
+    "prefecture": "北海道",
+    "location": "札幌市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性43歳／職業不明（S3に職業欄なし）",
+    "activity": "散歩中",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R7    2025.9.26    石狩      札幌市     散歩中      男    ４３歳   負傷     加害個体を駆除",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2026-04-26",
+    "prefecture": "北海道",
+    "location": "島牧村",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性69歳／職業不明（S3に職業欄なし）",
+    "activity": "クマ駆除",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R8    2026.4.26    後志      島牧村    クマ駆除      男    ６９歳   負傷     加害個体を駆除",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2026-07-17",
+    "prefecture": "北海道",
+    "location": "更別村",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性48歳／職業不明（S3に職業欄なし）",
+    "activity": "<調査中>",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "                        R8    2026.7.17    十勝      更別村    ＜調査中＞     男    ４８歳   負傷     加害個体を駆除",
+    "notes": "活動はS3の2026-08-04時点で調査中。",
+    "key": ""
+  },
+  {
+    "date": "1964-09-30",
+    "prefecture": "北海道",
+    "location": "白滝村",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "2人：男性64歳死亡・男性27歳重傷／クマ駆除従事",
+    "activity": "クマ駆除",
+    "outcome": "死亡1人・重傷1人",
+    "n": 2,
+    "dead": 1,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": ""
+  },
+  {
+    "date": "1970-07-26・27",
+    "prefecture": "北海道",
+    "location": "中札内村・日高山脈",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "3人：男性18歳・19歳・20歳／大学生（S1）",
+    "activity": "縦走登山",
+    "outcome": "死亡3人",
+    "n": 3,
+    "dead": 3,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": "福岡大"
+  },
+  {
+    "date": "1976-06-04～09",
+    "prefecture": "北海道",
+    "location": "千歳市・風不死岳（照合名称）",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "5人：男性56歳・53歳・26歳負傷、男性58歳・54歳死亡／職業不明",
+    "activity": "4日山林作業、5・9日山菜採り",
+    "outcome": "死亡2人・負傷3人",
+    "n": 5,
+    "dead": 2,
+    "injured": 3,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          1
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": "風不死岳"
+  },
+  {
+    "date": "1999-05-08・11",
+    "prefecture": "北海道",
+    "location": "木古内町大川・チリチリ川（詳細S1）",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "3人：男性47歳、女性39歳・50歳／職業不明",
+    "activity": "8日川釣り、11日山菜採り",
+    "outcome": "死亡1人・負傷2人（S3）；S1は女性2人を重傷と記載",
+    "n": 3,
+    "dead": 1,
+    "injured": 2,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": "木古内"
+  },
+  {
+    "date": "2004-11-26",
+    "prefecture": "北海道",
+    "location": "新冠町岩清水（詳細S1）",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "2人：男性67歳重傷・男性65歳軽傷／狩猟者（S1）",
+    "activity": "S3クマ駆除；S1送電線点検同行後の捕獲",
+    "outcome": "重傷1人・軽傷1人（S3）；S1は重傷2人",
+    "n": 2,
+    "dead": 0,
+    "injured": 2,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": ""
+  },
+  {
+    "date": "2005-10-04",
+    "prefecture": "北海道",
+    "location": "穂別町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "2人：男性58歳重傷・男性71歳軽傷／狩猟者",
+    "activity": "狩猟",
+    "outcome": "重傷1人・軽傷1人",
+    "n": 2,
+    "dead": 0,
+    "injured": 2,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": ""
+  },
+  {
+    "date": "2006-10-14",
+    "prefecture": "北海道",
+    "location": "浜中町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "2人：男性62歳・59歳／クマ狩猟者",
+    "activity": "クマ狩猟",
+    "outcome": "死亡2人（S3）；S1 p31は死亡1人・負傷1人",
+    "n": 2,
+    "dead": 2,
+    "injured": 0,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": ""
+  },
+  {
+    "date": "2011-08-24",
+    "prefecture": "北海道",
+    "location": "遠軽町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "2人：男性61歳2人／駆除従事",
+    "activity": "クマ駆除",
+    "outcome": "軽傷1人・重傷1人",
+    "n": 2,
+    "dead": 0,
+    "injured": 2,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          2
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": ""
+  },
+  {
+    "date": "2021-06-18",
+    "prefecture": "北海道",
+    "location": "札幌市東区",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "4人：男性75歳軽傷・女性80代負傷（ごみ出し）、男性40代重傷（歩行）、男性43歳負傷（自衛隊警備）／他職業不明",
+    "activity": "市街地のごみ出し・歩行・自衛隊警備",
+    "outcome": "重傷1人・軽傷1人・負傷2人",
+    "n": 4,
+    "dead": 0,
+    "injured": 4,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": ""
+  },
+  {
+    "date": "2021-08-07",
+    "prefecture": "北海道",
+    "location": "津別町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "2人：女性66歳・39歳／職業不明",
+    "activity": "農作業",
+    "outcome": "負傷2人",
+    "n": 2,
+    "dead": 0,
+    "injured": 2,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": ""
+  },
+  {
+    "date": "2022-03-31",
+    "prefecture": "北海道",
+    "location": "札幌市",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "2人：男性47歳・58歳／冬眠穴調査従事",
+    "activity": "冬眠穴調査",
+    "outcome": "負傷2人",
+    "n": 2,
+    "dead": 0,
+    "injured": 2,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": ""
+  },
+  {
+    "date": "2022-07-15",
+    "prefecture": "北海道",
+    "location": "松前町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "2人：男性81歳・女性78歳／職業不明",
+    "activity": "農作業",
+    "outcome": "負傷2人",
+    "n": 2,
+    "dead": 0,
+    "injured": 2,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": ""
+  },
+  {
+    "date": "2023-10-13",
+    "prefecture": "北海道",
+    "location": "阿寒町（S3表記）",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "1人：男性52歳／職業不明",
+    "activity": "林道を自転車で走行",
+    "outcome": "負傷",
+    "n": 1,
+    "dead": 0,
+    "injured": 1,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "",
+    "key": ""
+  },
+  {
+    "date": "2023-10-29・31",
+    "prefecture": "北海道",
+    "location": "福島町・大千軒岳（照合名称）",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "3人：男性22歳死亡、男性41歳2人負傷／職業はS3未記載",
+    "activity": "登山",
+    "outcome": "死亡1人・負傷2人",
+    "n": 3,
+    "dead": 1,
+    "injured": 2,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": "大千軒岳"
+  },
+  {
+    "date": "2023-11-21",
+    "prefecture": "北海道",
+    "location": "滝上町",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "2人：男性49歳・女性58歳／狩猟者",
+    "activity": "狩猟",
+    "outcome": "負傷2人",
+    "n": 2,
+    "dead": 0,
+    "injured": 2,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": ""
+  },
+  {
+    "date": "2025-10-04",
+    "prefecture": "北海道",
+    "location": "小樽市桃内（S4）",
+    "terrain": "不明（S3は市町村・活動内容まで）",
+    "species": "ヒグマ",
+    "victims": "2人：男性75歳・68歳／捕獲従事者",
+    "activity": "シカ用くくりわなのヒグマ錯誤捕獲への対処",
+    "outcome": "負傷2人",
+    "n": 2,
+    "dead": 0,
+    "injured": 2,
+    "source_refs": [
+      {
+        "id": "S3",
+        "pdf_pages": [
+          3
+        ],
+        "range": "当該年月日・市町村の行"
+      }
+    ],
+    "raw": "",
+    "notes": "同一事故・連続事案を1件にまとめた行。公式の発生件数とは集計単位が異なる場合がある。",
+    "key": ""
+  }
+]

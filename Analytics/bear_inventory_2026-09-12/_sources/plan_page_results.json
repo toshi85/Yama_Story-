@@ -1,0 +1,492 @@
+[
+  {
+    "prefecture": "北海道",
+    "url": "https://www.pref.hokkaido.lg.jp/ks/skn/higuma_plan.html",
+    "error": "404 Client Error: Not Found for url: https://www.pref.hokkaido.lg.jp/ks/skn/higuma_plan.html"
+  },
+  {
+    "prefecture": "岩手",
+    "url": "https://www.pref.iwate.jp/kurashikankyou/shizen/yaseichoju/index.html",
+    "error": "404 Client Error: Not Found for url: https://www.pref.iwate.jp/kurashikankyou/shizen/yaseichoju/index.html"
+  },
+  {
+    "prefecture": "岐阜",
+    "url": "https://www.pref.gifu.lg.jp/page/4729.html",
+    "links": []
+  },
+  {
+    "prefecture": "宮城",
+    "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/tukinowaguma.html",
+    "links": [
+      {
+        "title": "鳥獣保護",
+        "url": "https://www.pref.miyagi.jp/life/chojuhogo/index.html"
+      },
+      {
+        "title": "令和7年8月18日開催（PDF：278KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/r7kumagizi2.pdf"
+      },
+      {
+        "title": "令和7年6月2日開催（PDF：530KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/bukair71.pdf"
+      },
+      {
+        "title": "令和6年8月5日開催（PDF：363KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/r6_kuma_giziroku.pdf"
+      },
+      {
+        "title": "令和5年8月9日開催（PDF：483KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/r5_kuma_giziroku.pdf"
+      },
+      {
+        "title": "令和4年8月3日開催（PDF：399KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/r4_kuma_giziroku.pdf"
+      },
+      {
+        "title": "令和3年12月21日開催（PDF：401KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/r3kumabukai2gijiroku.pdf"
+      },
+      {
+        "title": "令和3年8月24日開催（PDF：412KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/r3kumabukai.pdf"
+      },
+      {
+        "title": "令和2年7月17日開催（PDF：179KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/811322_1.pdf"
+      },
+      {
+        "title": "令和元年8月20日開催（PDF：272KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/773926_1.pdf"
+      },
+      {
+        "title": "平成30年6月11日開催（PDF：315KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/707144_1.pdf"
+      },
+      {
+        "title": "平成29年8月30日開催（PDF：302KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/663395_1.pdf"
+      },
+      {
+        "title": "平成29年1月19日開催（PDF：240KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/618567_1.pdf"
+      },
+      {
+        "title": "平成28年9月1日開催（PDF：272KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/618566_1.pdf"
+      },
+      {
+        "title": "平成27年8月31日開催（PDF：230KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/349812_1.pdf"
+      },
+      {
+        "title": "平成26年10月27日開催（PDF：249KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/296654_1.pdf"
+      },
+      {
+        "title": "平成25年10月29日開催（PDF：298KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/241964_1.pdf"
+      },
+      {
+        "title": "平成25年1月8日開催（PDF：44KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/200139_1.pdf"
+      },
+      {
+        "title": "平成24年9月13日開催（PDF：43KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/128457_1.pdf"
+      },
+      {
+        "title": "平成23年7月4日開催（PDF：38KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/4768_1.pdf"
+      },
+      {
+        "title": "平成22年6月8日開催（PDF：45KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/4769_1.pdf"
+      },
+      {
+        "title": "平成22年3月25日開催（PDF：59KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/4770_1.pdf"
+      },
+      {
+        "title": "次第（PDF：306KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/00sidai.pdf"
+      },
+      {
+        "title": "議事(1)ツキノワグマ管理事業実施計画（県分）（PDF：1,071KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/01giji1ken.pdf"
+      },
+      {
+        "title": "議事(1)ツキノワグマ管理事業実施計画（市町村分）（PDF：744KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/02giji1sichouson.pdf"
+      },
+      {
+        "title": "議事(2)令和７ 年 度宮城県指定管理鳥獣捕獲等事業実施計画（PDF：1,956KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/03giji2keikaku.pdf"
+      },
+      {
+        "title": "第四期ツキノワグマ管理計画の一部改正について（PDF：747KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/04hokokujikou.pdf"
+      },
+      {
+        "title": "ツキノワグマに関する各種データ（PDF：6,488KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/03dateissiki.pdf"
+      },
+      {
+        "title": "緊急銃猟ガイドライン（簡易版）（PDF：1,580KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/05gaid.pdf"
+      },
+      {
+        "title": "次第（PDF：78KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/sidai.pdf"
+      },
+      {
+        "title": "情報提供資料1環境省事業によるツキノワグマに対する県の対応（PDF：153KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/siryo1.pdf"
+      },
+      {
+        "title": "議事資料2第四期宮城県ツキノワグマ管理計画の一部改正について【概要】（PDF：335KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/siryo2.pdf"
+      },
+      {
+        "title": "議事資料3第四期宮城県ツキノワグマ管理計画新旧対照表（PDF：105KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/siryo3.pdf"
+      },
+      {
+        "title": "議事資料4第四期宮城県ツキノワグマ管理計画全文案（PDF：2,730KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/siryo4.pdf"
+      },
+      {
+        "title": "次第（PDF：665KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/01_r6_kuma_shidai.pdf"
+      },
+      {
+        "title": "議事(1)ツキノワグマ管理事業実施計画（県分）（PDF：722KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/02_r6_kuma_gizi1_ken.pdf"
+      },
+      {
+        "title": "議事(1)ツキノワグマ管理事業実施計画（市町村分）（PDF：647KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/03_r6_kuma_gizi1_sityouson.pdf"
+      },
+      {
+        "title": "ツキノワグマに関する各種データ（PDF：4,860KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/04_r6_kuma_siryou1.pdf"
+      },
+      {
+        "title": "宮城県における指定管理鳥獣としてのツキノワグマの対応方針等（PDF：1,246KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/05_r6_kuma_siryou2_3.pdf"
+      },
+      {
+        "title": "次第（PDF：154KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/r5_kuma_01_shidai.pdf"
+      },
+      {
+        "title": "議事(1)ツキノワグマ管理事業実施計画（県分）（PDF：830KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/r5_kuma_02_gizi1_ken.pdf"
+      },
+      {
+        "title": "議事(1)ツキノワグマ管理事業実施計画（市町村分）（PDF：924KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/r5_kuma_02_gizi1_sityouson.pdf"
+      },
+      {
+        "title": "ツキノワグマに関する各種データ（PDF：3,859KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/r5_kuma_03_data.pdf"
+      },
+      {
+        "title": "次第（PDF：166KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/01_shidai.pdf"
+      },
+      {
+        "title": "議事(1)ツキノワグマ管理事業実施計画（県分）（PDF：682KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/02_ken.pdf"
+      },
+      {
+        "title": "議事(1)ツキノワグマ管理事業実施計画（市町村分）（PDF：867KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/03_sityouson.pdf"
+      },
+      {
+        "title": "ツキノワグマに関する各種データ（PDF：4,340KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/04_data.pdf"
+      },
+      {
+        "title": "次第（PDF：439KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/01sidai_1.pdf"
+      },
+      {
+        "title": "資料1第四期宮城県ツキノワグマ管理計画の概要（案）（PDF：145KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/02siryou1gaiyou.pdf"
+      },
+      {
+        "title": "資料2第四期宮城県ツキノワグマ管理計画（案）（PDF：2,556KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/03siryou2hontai.pdf"
+      },
+      {
+        "title": "資料3新旧対照表（案）（PDF：479KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/04siryou3sinkyu.pdf"
+      },
+      {
+        "title": "資料4第三期宮城県ツキノワグマ管理計画達成状況及び次期管理計画策定方針（PDF：979KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/05siryou4hosin.pdf"
+      },
+      {
+        "title": "資料5「第四期宮城県ツキノワグマ管理計画の策定方針」についての主な意見等（PDF：228KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/06siryou5iken.pdf"
+      },
+      {
+        "title": "資料6次期第二種特定鳥獣管理計画策定スケジュール（案）（PDF：87KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/07siryou6schedule.pdf"
+      },
+      {
+        "title": "次第（PDF：195KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/01sidai.pdf"
+      },
+      {
+        "title": "議事(1)ツキノワグマ管理事業実施計画（PDF：959KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/03giji1.pdf"
+      },
+      {
+        "title": "議事(2)県内ツキノワグマ推定個体数(案)（PDF：913KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/04giji2.pdf"
+      },
+      {
+        "title": "議事(3)第三期宮城県ツキノワグマ管理計画の達成状況及び第四期宮城県ツキノワグマ管理計画の策定方針(案)（PDF：4,907KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/05giji3.pdf"
+      },
+      {
+        "title": "資料1ツキノワグマに関する各種データ（PDF：4,634KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/06siryou1.pdf"
+      },
+      {
+        "title": "次第（PDF：104KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/810884_1.pdf"
+      },
+      {
+        "title": "議事ツキノワグマ管理事業実施計画書（PDF：1,636KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/810885_1.pdf"
+      },
+      {
+        "title": "令和元年度ツキノワグマに関する各種データ（PDF：4,268KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/810886_1.pdf"
+      },
+      {
+        "title": "次第（PDF：65KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/772108_1.pdf"
+      },
+      {
+        "title": "議事（1）：第二種特定鳥獣管理事業実施計画について（PDF：199KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/772109_1.pdf"
+      },
+      {
+        "title": "議事（1）：ツキノワグマ管理事業実施計画書（PDF：483KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/772110_1.pdf"
+      },
+      {
+        "title": "平成30年度ツキノワグマに関する各種データ（PDF：4,680KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/772111_1.pdf"
+      },
+      {
+        "title": "議事(1)：平成30年度ツキノワグマ管理事業実施計画書（案）（PDF：56KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/707149_1.pdf"
+      },
+      {
+        "title": "資料1：平成29年度ツキノワグマ管理事業実績報告書（県分）（PDF：118KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/707151_1.pdf"
+      },
+      {
+        "title": "資料2：平成29年度ツキノワグマ管理事業実績報告書（市町村分）（PDF：435KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/707152_1.pdf"
+      },
+      {
+        "title": "資料3：平成30年度ツキノワグマ管理事業実施計画書（市町村分）（PDF：215KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/707153_1.pdf"
+      },
+      {
+        "title": "資料4：平成29年度ツキノワグマに関する各種データ（PDF：4,948KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/707155_1.pdf"
+      },
+      {
+        "title": "資料5：宮城県特定鳥獣保護管理計画検討・評価委員会条例（PDF：113KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/707156_1.pdf"
+      },
+      {
+        "title": "議事(1)：平成29年度ツキノワグマ管理事業実施計画書（案）（PDF：46KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/663398_1.pdf"
+      },
+      {
+        "title": "資料1：平成28年度ツキノワグマ管理事業実績報告書（県分）（PDF：107KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/663399_1.pdf"
+      },
+      {
+        "title": "資料2：平成28年度ツキノワグマ管理事業実績報告書（市町村分）（PDF：302KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/663400_1.pdf"
+      },
+      {
+        "title": "資料3：平成29年度ツキノワグマ管理事業実施計画書（市町村分）（PDF：203KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/663401_1.pdf"
+      },
+      {
+        "title": "資料4：平成28年度ツキノワグマに関する各種データ（PDF：2,210KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/663403_1.pdf"
+      },
+      {
+        "title": "資料5：宮城県特定鳥獣保護管理計画検討・評価委員会条例（PDF：70KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/663404_1.pdf"
+      },
+      {
+        "title": "資料1：平成26年度ツキノワグマ保護管理事業実績報告書（PDF：704KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/350283_1.pdf"
+      },
+      {
+        "title": "資料2：平成27年度ツキノワグマ保護管理事業実施計画書（PDF：240KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/350284_1.pdf"
+      },
+      {
+        "title": "資料1：平成25年度ツキノワグマ保護管理事業実績報告書（PDF：900KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/296655_1.pdf"
+      },
+      {
+        "title": "資料2：平成26年度ツキノワグマ保護管理事業実施計画書（PDF：609KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/296656_1.pdf"
+      },
+      {
+        "title": "資料3：平成26年度ツキノワグマに関する各種データ（PDF：1,273KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/296658_1.pdf"
+      },
+      {
+        "title": "平成24年度宮城県ツキノワグマ保護管理事業実施計画書（PDF：35KB）",
+        "url": "https://www.pref.miyagi.jp/documents/24283/128470_1.pdf"
+      },
+      {
+        "title": "鳥獣保護",
+        "url": "https://www.pref.miyagi.jp/life/chojuhogo/index.html"
+      },
+      {
+        "title": "宮城県特定鳥獣保護管理計画検討・評価委員会　ツキノワグマ部会",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/tukinowaguma.html"
+      },
+      {
+        "title": "宮城県特定鳥獣保護管理計画検討・評価委員会",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/oyakai.html"
+      },
+      {
+        "title": "宮城県特定鳥獣保護管理計画検討・評価委員会ニホンザル部会",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/sarukyougikai.html"
+      },
+      {
+        "title": "宮城県特定鳥獣保護管理計画検討・評価委員会　イノシシ部会",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/inosisibukai.html"
+      },
+      {
+        "title": "宮城県特定鳥獣保護管理計画検討・評価委員会　ニホンジカ部会",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/sikabukai.html"
+      },
+      {
+        "title": "第四期宮城県ツキノワグマ管理計画",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/tukinowaguma-kanrikeikaku.html"
+      },
+      {
+        "title": "第五期宮城県ニホンザル管理計画",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/nihonzaru-kanrikeikaku.html"
+      },
+      {
+        "title": "第13次宮城県鳥獣保護管理事業計画を一部改正しました。",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/13-jigyoukeikaku.html"
+      },
+      {
+        "title": "第四期宮城県イノシシ管理計画",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/inosisi-kanrikeikaku.html"
+      },
+      {
+        "title": "第三期宮城県ニホンジカ管理計画",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/sika-kanrikeikaku.html"
+      },
+      {
+        "title": "第11次宮城県鳥獣保護事業計画",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/11-keikaku.html"
+      },
+      {
+        "title": "第10次鳥獣保護事業変更計画",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/10-henkoukeikaku.html"
+      },
+      {
+        "title": "宮城県イノシシ保護管理計画について",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/inosisikei-kaku.html"
+      },
+      {
+        "title": "牡鹿半島ニホンジカ保護管理計画について",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/sika-keikaku.html"
+      },
+      {
+        "title": "牡鹿半島ニホンジカ保護管理計画の変更について",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/sika-keikakuhenkou.html"
+      },
+      {
+        "title": "宮城県ニホンザル保護管理計画について",
+        "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/sarukeikaku.html"
+      }
+    ]
+  },
+  {
+    "prefecture": "群馬",
+    "url": "https://www.pref.gunma.jp/page/4842.html",
+    "error": "404 Client Error: Not Found for url: https://www.pref.gunma.jp/page/4842.html"
+  },
+  {
+    "prefecture": "広島",
+    "url": "https://www.pref.hiroshima.lg.jp/site/eco/",
+    "links": [
+      {
+        "title": "鳥獣保護事業計画",
+        "url": "https://www.pref.hiroshima.lg.jp/site/wildlife-management/"
+      }
+    ]
+  },
+  {
+    "prefecture": "秋田",
+    "url": "https://www.pref.akita.lg.jp/pages/archive/49625",
+    "error": "404 Client Error: Not Found for url: https://www.pref.akita.lg.jp/pages/archive/49625"
+  },
+  {
+    "prefecture": "新潟",
+    "url": "https://www.pref.niigata.lg.jp/sec/shizenkankyo/1356896834301.html",
+    "error": "404 Client Error: Not Found for url: https://www.pref.niigata.lg.jp/sec/shizenkankyo/1356896834301.html"
+  },
+  {
+    "prefecture": "青森",
+    "url": "https://www.pref.aomori.lg.jp/nature/protection/kuma_plan.html",
+    "error": "403 Client Error: Forbidden for url: https://www.pref.aomori.lg.jp/nature/protection/kuma_plan.html"
+  },
+  {
+    "prefecture": "石川",
+    "url": "https://www.pref.ishikawa.lg.jp/sizen/wildlife/tsukinowaguma.html",
+    "error": "404 Client Error: Not Found for url: https://www.pref.ishikawa.lg.jp/sizen/wildlife/tsukinowaguma.html"
+  },
+  {
+    "prefecture": "長野",
+    "url": "https://www.pref.nagano.lg.jp/yasei/kurashi/shizen/hogo/yacho/index.html",
+    "error": "404 Client Error: Not Found for url: https://www.pref.nagano.lg.jp/yasei/kurashi/shizen/hogo/yacho/index.html"
+  },
+  {
+    "prefecture": "島根",
+    "url": "https://www.pref.shimane.lg.jp/life/nature/kankyo/yaseichoju/",
+    "error": "404 Client Error: Not Found for url: https://www.pref.shimane.lg.jp/life/nature/kankyo/yaseichoju/"
+  },
+  {
+    "prefecture": "栃木",
+    "url": "https://www.pref.tochigi.lg.jp/d04/eco/shizenkankyou/shizen/yaseidoubutu.html",
+    "error": "404 Client Error: Not Found for url: https://www.pref.tochigi.lg.jp/d04/eco/shizenkankyou/shizen/yaseidoubutu.html"
+  },
+  {
+    "prefecture": "富山",
+    "url": "https://www.pref.toyama.jp/1709/kurashi/kankyoushizen/shizen/yaseidoubutu/kj00021727.html",
+    "error": "404 Client Error: Not Found for url: https://www.pref.toyama.jp/1709/kurashi/kankyoushizen/shizen/yaseidoubutu/kj00021727.html"
+  },
+  {
+    "prefecture": "福井",
+    "url": "https://www.pref.fukui.lg.jp/doc/sizen/yaseidoubutsu/index.html",
+    "error": "404 Client Error: Not Found for url: https://www.pref.fukui.lg.jp/doc/sizen/yaseidoubutsu/index.html"
+  },
+  {
+    "prefecture": "福島",
+    "url": "https://www.pref.fukushima.lg.jp/sec/16035d/wildlife-tsukinowaguma.html",
+    "error": "404 Client Error: Not Found for url: https://www.pref.fukushima.lg.jp/sec/16035d/wildlife-tsukinowaguma.html"
+  }
+]

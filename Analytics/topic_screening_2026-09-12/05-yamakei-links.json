@@ -1,0 +1,578 @@
+[
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/"
+  },
+  {
+    "text": "ニュース",
+    "url": "https://www.yamakei-online.com/news/"
+  },
+  {
+    "text": "ニューストップ",
+    "url": "https://www.yamakei-online.com/news/"
+  },
+  {
+    "text": "山のニュース",
+    "url": "https://www.yamakei-online.com/journal/"
+  },
+  {
+    "text": "山岳最新情報",
+    "url": "https://www.yamakei-online.com/mt_info/"
+  },
+  {
+    "text": "山の天気",
+    "url": "https://www.yamakei-online.com/weather/"
+  },
+  {
+    "text": "記事を読む",
+    "url": "https://www.yamakei-online.com/yama-ya/"
+  },
+  {
+    "text": "記事を読むトップ",
+    "url": "https://www.yamakei-online.com/yama-ya/"
+  },
+  {
+    "text": "コースガイド",
+    "url": "https://www.yamakei-online.com/yama-ya/tags/list.php?cid=1/"
+  },
+  {
+    "text": "ノウハウ",
+    "url": "https://www.yamakei-online.com/yama-ya/tags/list.php?cid=2"
+  },
+  {
+    "text": "道具・装備",
+    "url": "https://www.yamakei-online.com/yama-ya/tags/list.php?cid=3"
+  },
+  {
+    "text": "その他",
+    "url": "https://www.yamakei-online.com/yama-ya/tags/list.php?cid=4"
+  },
+  {
+    "text": "連載",
+    "url": "https://www.yamakei-online.com/yama-ya/group_top.php"
+  },
+  {
+    "text": "特集",
+    "url": "https://www.yamakei-online.com/special/"
+  },
+  {
+    "text": "探す・調べる",
+    "url": "https://www.yamakei-online.com/yamanavi/"
+  },
+  {
+    "text": "探す・調べるトップ",
+    "url": "https://www.yamakei-online.com/yamanavi/"
+  },
+  {
+    "text": "山",
+    "url": "https://www.yamakei-online.com/yamanavi/yama_search.php"
+  },
+  {
+    "text": "コース",
+    "url": "https://www.yamakei-online.com/yamanavi/route_search.php"
+  },
+  {
+    "text": "登山口",
+    "url": "https://www.yamakei-online.com/trailhead/"
+  },
+  {
+    "text": "山小屋・宿泊施設",
+    "url": "https://www.yamakei-online.com/lodge/"
+  },
+  {
+    "text": "登山ツアー",
+    "url": "https://www.yamakei-online.com/tour/"
+  },
+  {
+    "text": "山の求人情報",
+    "url": "https://www.yamakei-online.com/job/"
+  },
+  {
+    "text": "登る",
+    "url": "https://www.yamakei-online.com/yk_map/"
+  },
+  {
+    "text": "登るトップ",
+    "url": "https://www.yamakei-online.com/yk_map/"
+  },
+  {
+    "text": "ヤマタイム 登山地図",
+    "url": "https://www.yamakei-online.com/yk_map/"
+  },
+  {
+    "text": "ヤマタイム コース計画",
+    "url": "https://www.yamakei-online.com/yk_map/edit_clplan_yk_map.php"
+  },
+  {
+    "text": "記録・共有する",
+    "url": "https://www.yamakei-online.com/record/"
+  },
+  {
+    "text": "記録・共有するトップ",
+    "url": "https://www.yamakei-online.com/record/"
+  },
+  {
+    "text": "みんなの登山記録",
+    "url": "https://www.yamakei-online.com/cl_record/"
+  },
+  {
+    "text": "みんなの山道具",
+    "url": "https://www.yamakei-online.com/cl_tool/"
+  },
+  {
+    "text": "写真レポート＆フォトコン",
+    "url": "https://www.yamakei-online.com/photo/"
+  },
+  {
+    "text": "",
+    "url": "https://www.facebook.com/YamakeiOnline/"
+  },
+  {
+    "text": "",
+    "url": "https://twitter.com/YAMAKEI_ONLINE"
+  },
+  {
+    "text": "",
+    "url": "https://www.instagram.com/yamakei_online/"
+  },
+  {
+    "text": "ログイン・新規登録",
+    "url": "https://www.yamakei-online.com/member/login.php"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/member/login.php"
+  },
+  {
+    "text": "トップ",
+    "url": "https://www.yamakei-online.com/yama-ya/"
+  },
+  {
+    "text": "コースガイド",
+    "url": "https://www.yamakei-online.com/yama-ya/tags/list.php?cid=1"
+  },
+  {
+    "text": "ノウハウ",
+    "url": "https://www.yamakei-online.com/yama-ya/tags/list.php?cid=2"
+  },
+  {
+    "text": "道具・装備",
+    "url": "https://www.yamakei-online.com/yama-ya/tags/list.php?cid=3"
+  },
+  {
+    "text": "その他",
+    "url": "https://www.yamakei-online.com/yama-ya/tags/list.php?cid=4"
+  },
+  {
+    "text": "連載",
+    "url": "https://www.yamakei-online.com/yama-ya/group_top.php"
+  },
+  {
+    "text": "特集",
+    "url": "https://www.yamakei-online.com/special/"
+  },
+  {
+    "text": "タグ一覧",
+    "url": "https://www.yamakei-online.com/yama-ya/tags/"
+  },
+  {
+    "text": "移住見学会の参加者募集中。大町市、上市町で開催 [PR]長野県大町市",
+    "url": "https://www.yamakei-online.com/journal/detail.php?id=8578"
+  },
+  {
+    "text": "遭難・事件",
+    "url": "https://www.yamakei-online.com/yama-ya/tags/list.php?tid=30"
+  },
+  {
+    "text": "危機管理",
+    "url": "https://www.yamakei-online.com/yama-ya/tags/list.php?tid=36"
+  },
+  {
+    "text": "その他",
+    "url": "https://www.yamakei-online.com/yama-ya/tags/list.php?cid=4"
+  },
+  {
+    "text": "島崎三歩の「山岳通信」",
+    "url": "https://www.yamakei-online.com/yama-ya/group.php?gid=11"
+  },
+  {
+    "text": "",
+    "url": "https://twitter.com/intent/tweet?&url=https%3A%2F%2Fwww.yamakei-online.com%2Fyama-ya%2Fdetail.php%3Fid%3D1532&text=%E6%A2%85%E9%9B%A8%E7%A9%BA%E3%81%AE%E7%99%BB%E5%B1%B1%E3%81%A7%E3%81%AF%E6%99%B4%E5%A4%A9%E6%99%82%E3%82%88%E3%82%8A%E3%82%82%E9%9B%86%E4%B8%AD%E5%8A%9B%E3%83%BB%E4%BD%93%E5%8A%9B%E3%81%8C%E5%BF%85%E8%A6%81%E3%80%80%E5%B3%B6%E5%B4%8E%E4%B8%89%E6%AD%A9%E3%81%AE%E3%80%8C%E5%B1%B1%E5%B2%B3%E9%80%9A%E4%BF%A1%E3%80%8D+%E7%AC%AC226%E5%8F%B7"
+  },
+  {
+    "text": "",
+    "url": "http://www.facebook.com/sharer.php?&u=https%3A%2F%2Fwww.yamakei-online.com%2Fyama-ya%2Fdetail.php%3Fid%3D1532"
+  },
+  {
+    "text": "",
+    "url": "https://social-plugins.line.me/lineit/share?url=%E6%A2%85%E9%9B%A8%E7%A9%BA%E3%81%AE%E7%99%BB%E5%B1%B1%E3%81%A7%E3%81%AF%E6%99%B4%E5%A4%A9%E6%99%82%E3%82%88%E3%82%8A%E3%82%82%E9%9B%86%E4%B8%AD%E5%8A%9B%E3%83%BB%E4%BD%93%E5%8A%9B%E3%81%8C%E5%BF%85%E8%A6%81%E3%80%80%E5%B3%B6%E5%B4%8E%E4%B8%89%E6%AD%A9%E3%81%AE%E3%80%8C%E5%B1%B1%E5%B2%B3%E9%80%9A%E4%BF%A1%E3%80%8D+%E7%AC%AC226%E5%8F%B7+https%3A%2F%2Fwww.yamakei-online.com%2Fyama-ya%2Fdetail.php%3Fid%3D1532"
+  },
+  {
+    "text": "",
+    "url": "https://b.hatena.ne.jp/entry/s/www.yamakei-online.com/yama-ya/detail.php?id=1532"
+  },
+  {
+    "text": "登山者への５つのお願い（PDF）",
+    "url": "https://www.pref.nagano.lg.jp/kankoki/sangaku/documents/5rule.pdf"
+  },
+  {
+    "text": "⇒バックナンバーはコチラ！",
+    "url": "http://www.pref.nagano.lg.jp/kankoki/sangyo/kanko/sotaikyo/sangakutusin.html"
+  },
+  {
+    "text": "記事一覧を見る",
+    "url": "https://www.yamakei-online.com/yama-ya/writer.php?id=31"
+  },
+  {
+    "text": "装備の軽量化以上に、リスクへの対処力を補う準備を　島崎三歩の「山岳通信」 第461号 2026.09.09",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=5134"
+  },
+  {
+    "text": "寒暖差のある秋山へと季節は移行、適切な服装と装備の用意を　島崎三歩の「山岳通信」 第460号 2026.09.03",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=5116"
+  },
+  {
+    "text": "転倒・滑落による遭難事故に注意。最後まで慎重な行動を　島崎三歩の「山岳通信」 第459号 2026.08.28",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=5105"
+  },
+  {
+    "text": "高山病に注意！ 自発的な呼吸と水分・カロリー摂取の意識を　島崎三歩の「山岳通信」 第458号 2026.08.19",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=5082"
+  },
+  {
+    "text": "疲労遭難が多発。行動中は意識的に水分補給を　島崎三歩の「山岳通信」 第457号 2026.08.13",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=5059"
+  },
+  {
+    "text": "連載トップへ戻る",
+    "url": "https://www.yamakei-online.com/yama-ya/group.php?gid=11"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yk/issue/aminovital_photo2026/"
+  },
+  {
+    "text": "上高地＆北アルプス フォトコンテスト2026 [PR]",
+    "url": "https://www.yamakei-online.com/yk/issue/aminovital_photo2026/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=5086"
+  },
+  {
+    "text": "着たまま快適！ミレーが誇るポーラテック採用ウェア [PR]",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=5086"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yk/issue/achi/"
+  },
+  {
+    "text": "7つの頂が待っている。南信州・阿智村で山のぼり！ [PR]",
+    "url": "https://www.yamakei-online.com/yk/issue/achi/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yk/issue/japantrail2025/"
+  },
+  {
+    "text": "日本を歩こう！ JAPAN TRAILの歩き方 [PR]",
+    "url": "https://www.yamakei-online.com/yk/issue/japantrail2025/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=4887"
+  },
+  {
+    "text": "絶景に抱かれるおすすめキャンプ場7選 [PR]",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=4887"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/journal/detail.php?id=8578"
+  },
+  {
+    "text": "移住見学会の参加者募集中。大町市、上市町で開催 [PR]",
+    "url": "https://www.yamakei-online.com/journal/detail.php?id=8578"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yk/secure/yolbis2026_top.php"
+  },
+  {
+    "text": "夏の大アンケート第1弾！登山用具購買動向調査 [PR]",
+    "url": "https://www.yamakei-online.com/yk/secure/yolbis2026_top.php"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yk/issue/ropeway2026/"
+  },
+  {
+    "text": "ロープウェイで手軽に絶景ハイキングを楽しもう！ [PR]",
+    "url": "https://www.yamakei-online.com/yk/issue/ropeway2026/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yama-ya/group.php?gid=19"
+  },
+  {
+    "text": "下山メシのよろこび",
+    "url": "https://www.yamakei-online.com/yama-ya/group.php?gid=19"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yama-ya/group.php?gid=21"
+  },
+  {
+    "text": "大昔にヒマラヤを越えた僧侶、河口慧海の足跡をたどる",
+    "url": "https://www.yamakei-online.com/yama-ya/group.php?gid=21"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yama-ya/group.php?gid=11"
+  },
+  {
+    "text": "島崎三歩の「山岳通信」",
+    "url": "https://www.yamakei-online.com/yama-ya/group.php?gid=11"
+  },
+  {
+    "text": "コースガイド 登らずしてアルプスの絶景紅葉を満喫！ この秋おすすめのロープウェイ散策コース6選 2026.09.10",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=5115"
+  },
+  {
+    "text": "コースガイド 日帰りできる山に「あえて泊まる」贅沢。八ヶ岳の絶景と小屋で過ごす1泊2日の山行 2026.09.01",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=5084"
+  },
+  {
+    "text": "コースガイド 【日帰り八ヶ岳】大パノラマから神秘の池まで！週末に行きたい絶景ハイキングコース4選 2026.09.02",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=5073"
+  },
+  {
+    "text": "その他 黒又川中岩沢。パックラフトでダム湖を渡り、秘境「毛猛連山」の深淵を遡行する 2026.09.05",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=5096"
+  },
+  {
+    "text": "その他 2012年、北八ヶ岳生まれのコケ丸。登山者をとりこにするかわいさの秘密に迫る 2026.08.23",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=5078"
+  },
+  {
+    "text": "その他 【山レポ】写真と一言で伝える、今の山 2026.07.07",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=4959"
+  },
+  {
+    "text": "千代田区の天気予報",
+    "url": "https://www.yamakei-online.com/weather/week.php?id=960044101"
+  },
+  {
+    "text": "山域を変更",
+    "url": "https://www.yamakei-online.com/mypage/edit.php"
+  },
+  {
+    "text": "千代田区の天気予報",
+    "url": "https://www.yamakei-online.com/weather/week.php?id=960044101"
+  },
+  {
+    "text": "明日 27℃ 20℃ 30%",
+    "url": "https://www.yamakei-online.com/weather/week.php?id=960044101"
+  },
+  {
+    "text": "明後日 32℃ 23℃ 20%",
+    "url": "https://www.yamakei-online.com/weather/week.php?id=960044101"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yama-ya/info/guide.php"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yama-ya/yk_map/"
+  },
+  {
+    "text": "PR 北アルプスを望み、信州で働く。キャリア移住という選択",
+    "url": "https://www.yamakei-online.com/yk/issue/epson-careers/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/journal/detail.php?id=8578"
+  },
+  {
+    "text": "移住見学会の参加者募集中。大町市、上市町で開催 [PR]",
+    "url": "https://www.yamakei-online.com/journal/detail.php?id=8578"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=4887"
+  },
+  {
+    "text": "絶景に抱かれるおすすめキャンプ場7選 [PR]",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=4887"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yk/issue/epson-careers/"
+  },
+  {
+    "text": "北アルプスを望み、信州で働く。キャリア移住という選択 [PR]",
+    "url": "https://www.yamakei-online.com/yk/issue/epson-careers/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yk/issue/iju-navi/"
+  },
+  {
+    "text": "毎日、山が見える暮らし。山麓移住 [PR]",
+    "url": "https://www.yamakei-online.com/yk/issue/iju-navi/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yk/issue/achi/"
+  },
+  {
+    "text": "7つの頂が待っている。南信州・阿智村で山のぼり！ [PR]",
+    "url": "https://www.yamakei-online.com/yk/issue/achi/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yk/secure/yolbis2026_top.php"
+  },
+  {
+    "text": "夏の大アンケート第1弾！登山用具購買動向調査 [PR]",
+    "url": "https://www.yamakei-online.com/yk/secure/yolbis2026_top.php"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=5086"
+  },
+  {
+    "text": "着たまま快適！ミレーが誇るポーラテック採用ウェア [PR]",
+    "url": "https://www.yamakei-online.com/yama-ya/detail.php?id=5086"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yk/issue/japantrail2025/"
+  },
+  {
+    "text": "日本を歩こう！ JAPAN TRAILの歩き方 [PR]",
+    "url": "https://www.yamakei-online.com/yk/issue/japantrail2025/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yama-ya/tour/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yama-ya/job/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yama-ya/yk/issue/iju-navi/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yama-ya/yk/tozanyouth/"
+  },
+  {
+    "text": "山と溪谷チャンネルへ",
+    "url": "https://www.youtube.com/channel/UC3pc1Em-ucFRuCr_1EzKMIw"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei.co.jp/products/2826901622.html"
+  },
+  {
+    "text": "最新号の詳細を見る",
+    "url": "https://www.yamakei.co.jp/products/2826901622.html"
+  },
+  {
+    "text": "HOME",
+    "url": "https://www.yamakei-online.com/"
+  },
+  {
+    "text": "記事を読む",
+    "url": "https://www.yamakei-online.com/yama-ya/"
+  },
+  {
+    "text": "その他",
+    "url": "https://www.yamakei-online.com/yama-ya/yama-ya/tags/list.php?cid=4"
+  },
+  {
+    "text": "",
+    "url": "https://hikesinjapan.yamakei-online.com/"
+  },
+  {
+    "text": "",
+    "url": "https://www.climbing-net.com/"
+  },
+  {
+    "text": "",
+    "url": "http://sangakuisan.yamakei.co.jp/"
+  },
+  {
+    "text": "",
+    "url": "https://i-zukan.jp/"
+  },
+  {
+    "text": "",
+    "url": "https://yamasta.yamakei.co.jp/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/insurance/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei-online.com/yk/tozanyouth/"
+  },
+  {
+    "text": "",
+    "url": "https://www.facebook.com/YamakeiOnline/"
+  },
+  {
+    "text": "",
+    "url": "https://twitter.com/YAMAKEI_ONLINE"
+  },
+  {
+    "text": "",
+    "url": "https://www.instagram.com/yamatokeikoku_official/"
+  },
+  {
+    "text": "",
+    "url": "https://www.yamakei.co.jp/"
+  },
+  {
+    "text": "初めてご利用になる方へ",
+    "url": "https://www.yamakei-online.com/info/guide.php"
+  },
+  {
+    "text": "利用規約",
+    "url": "https://www.yamakei-online.com/info/about.php"
+  },
+  {
+    "text": "お問い合わせ",
+    "url": "https://www.yamakei-online.com/info/contact.php"
+  },
+  {
+    "text": "プライバシーポリシー",
+    "url": "https://www.yamakei.co.jp/info/policy.html"
+  },
+  {
+    "text": "会社概要",
+    "url": "https://www.yamakei.co.jp/company/index.html"
+  },
+  {
+    "text": "採用情報",
+    "url": "https://job.rikunabi.com/2025/company/r557140047/"
+  },
+  {
+    "text": "広告について",
+    "url": "https://www.yamakei.co.jp/ad"
+  },
+  {
+    "text": "インプレスグループトップ",
+    "url": "https://www.impressholdings.com/"
+  }
+]

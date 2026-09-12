@@ -1,0 +1,65 @@
+{
+  "records": 508,
+  "missing_required_fields": [],
+  "bad_source_refs": [],
+  "missing_source_files": [],
+  "forbidden_word_hits": [],
+  "same_date_place_review": [
+    {
+      "key": [
+        "2026-04-21",
+        "岩手県",
+        "紫波町山屋地内"
+      ],
+      "ids": [
+        "B0010",
+        "B0011"
+      ]
+    },
+    {
+      "key": [
+        "2023-08-19",
+        "岩手県",
+        "雫石町御明神地内"
+      ],
+      "ids": [
+        "B0096",
+        "B0097"
+      ]
+    }
+  ],
+  "jbn_records": 54,
+  "non_jbn_records": 454,
+  "years_descending": true,
+  "unmatched_fatal_pref_years": [
+    {
+      "prefecture": "青森",
+      "fiscal_year": 2009,
+      "deaths": 1,
+      "pdf_page": 1,
+      "inventory_deaths": 0,
+      "incident_ids": [],
+      "status": "不足"
+    },
+    {
+      "prefecture": "岩手",
+      "fiscal_year": 2009,
+      "deaths": 1,
+      "pdf_page": 1,
+      "inventory_deaths": 0,
+      "incident_ids": [],
+      "status": "不足"
+    },
+    {
+      "prefecture": "福島",
+      "fiscal_year": 2012,
+      "deaths": 1,
+      "pdf_page": 1,
+      "inventory_deaths": 0,
+      "incident_ids": [],
+      "status": "不足"
+    }
+  ],
+  "all_national_fatalities_verified": false,
+  "output_sha256": "81820c1bab8beba0dda232472f3859523f2485cdbfa8e8ad2d440cf6a2315a34"
+}

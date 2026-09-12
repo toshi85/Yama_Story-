@@ -1,0 +1,9 @@
+{
+  "name": "aomori_plan",
+  "url": "https://www.pref.aomori.lg.jp/soshiki/kankyo/shizen/files/kumakannrikeikaku_.pdf",
+  "previous_error": "403 Client Error: Forbidden for url: https://www.pref.aomori.lg.jp/soshiki/kankyo/shizen/files/kumakannrikeikaku_.pdf",
+  "method": "Chrome native PDF download to approved directory",
+  "file": "Yama_Story/Analytics/bear_inventory_2026-09-12/_sources/aomori_plan.pdf",
+  "sha256": "b61e8e2d35e21d306c67777aa425de39784eb255d64072ed12480a17e995de24",
+  "pages": 35
+}

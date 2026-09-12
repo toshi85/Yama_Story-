@@ -1,0 +1,236 @@
+[
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2008,
+    "deaths": 3,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2010,
+    "deaths": 2,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2011,
+    "deaths": 1,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2013,
+    "deaths": 1,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2014,
+    "deaths": 1,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2017,
+    "deaths": 1,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "青森",
+    "fiscal_year": 2009,
+    "deaths": 1,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "岩手",
+    "fiscal_year": 2009,
+    "deaths": 1,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "秋田",
+    "fiscal_year": 2016,
+    "deaths": 4,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "秋田",
+    "fiscal_year": 2017,
+    "deaths": 1,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "福島",
+    "fiscal_year": 2010,
+    "deaths": 1,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "福島",
+    "fiscal_year": 2011,
+    "deaths": 1,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "福島",
+    "fiscal_year": 2012,
+    "deaths": 1,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "福島",
+    "fiscal_year": 2013,
+    "deaths": 1,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "岐阜",
+    "fiscal_year": 2014,
+    "deaths": 1,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "鳥取",
+    "fiscal_year": 2010,
+    "deaths": 1,
+    "pdf_page": 1
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2021,
+    "deaths": 4,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2023,
+    "deaths": 2,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "北海道",
+    "fiscal_year": 2025,
+    "deaths": 2,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "青森",
+    "fiscal_year": 2021,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "青森",
+    "fiscal_year": 2024,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "青森",
+    "fiscal_year": 2026,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "岩手",
+    "fiscal_year": 2023,
+    "deaths": 2,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "岩手",
+    "fiscal_year": 2024,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "岩手",
+    "fiscal_year": 2025,
+    "deaths": 5,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "岩手",
+    "fiscal_year": 2026,
+    "deaths": 3,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "宮城",
+    "fiscal_year": 2019,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "宮城",
+    "fiscal_year": 2025,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "秋田",
+    "fiscal_year": 2020,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "秋田",
+    "fiscal_year": 2022,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "秋田",
+    "fiscal_year": 2025,
+    "deaths": 4,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "秋田",
+    "fiscal_year": 2026,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "山形",
+    "fiscal_year": 2026,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "福島",
+    "fiscal_year": 2022,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "福島",
+    "fiscal_year": 2024,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "新潟",
+    "fiscal_year": 2020,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "富山",
+    "fiscal_year": 2023,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "長野",
+    "fiscal_year": 2023,
+    "deaths": 1,
+    "pdf_page": 2
+  },
+  {
+    "prefecture": "長野",
+    "fiscal_year": 2025,
+    "deaths": 1,
+    "pdf_page": 2
+  }
+]

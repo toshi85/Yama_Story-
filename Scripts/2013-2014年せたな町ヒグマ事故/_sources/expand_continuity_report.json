@@ -1,0 +1,92 @@
+{
+  "checked_at": 1789208738.411632,
+  "production_complete": true,
+  "work_running": false,
+  "items": [
+    {
+      "id": "1",
+      "title": "既存シート・出典・未取得14項目確認",
+      "status": "complete",
+      "reason": "Claudeによる検証。探索で未取得の情報はシート末尾に限定・方法付きで記録。",
+      "owner": "Codex"
+    },
+    {
+      "id": "2",
+      "title": "当時報道",
+      "status": "complete",
+      "reason": "Claudeによる検証。探索で未取得の情報はシート末尾に限定・方法付きで記録。",
+      "owner": "Codex"
+    },
+    {
+      "id": "3",
+      "title": "せたな広報",
+      "status": "complete",
+      "reason": "Claudeによる検証。探索で未取得の情報はシート末尾に限定・方法付きで記録。",
+      "owner": "Codex"
+    },
+    {
+      "id": "4",
+      "title": "今金広報・議会",
+      "status": "complete",
+      "reason": "Claudeによる検証。探索で未取得の情報はシート末尾に限定・方法付きで記録。",
+      "owner": "Codex"
+    },
+    {
+      "id": "5",
+      "title": "檜山発表",
+      "status": "complete",
+      "reason": "Claudeによる検証。探索で未取得の情報はシート末尾に限定・方法付きで記録。",
+      "owner": "Codex"
+    },
+    {
+      "id": "6",
+      "title": "道総研報告",
+      "status": "complete",
+      "reason": "Claudeによる検証。探索で未取得の情報はシート末尾に限定・方法付きで記録。",
+      "owner": "Codex"
+    },
+    {
+      "id": "7",
+      "title": "地区地形",
+      "status": "complete",
+      "reason": "Claudeによる検証。探索で未取得の情報はシート末尾に限定・方法付きで記録。",
+      "owner": "Codex"
+    },
+    {
+      "id": "8",
+      "title": "空白期間の記録",
+      "status": "complete",
+      "reason": "Claudeによる検証。探索で未取得の情報はシート末尾に限定・方法付きで記録。",
+      "owner": "Codex"
+    },
+    {
+      "id": "9",
+      "title": "土地の性格",
+      "status": "complete",
+      "reason": "Claudeによる検証。探索で未取得の情報はシート末尾に限定・方法付きで記録。",
+      "owner": "Codex"
+    },
+    {
+      "id": "10",
+      "title": "山菜採り外部枠確認",
+      "status": "complete",
+      "reason": "Claudeによる検証。探索で未取得の情報はシート末尾に限定・方法付きで記録。",
+      "owner": "Codex"
+    },
+    {
+      "id": "11",
+      "title": "事実追記・重複照合",
+      "status": "complete",
+      "reason": "Claudeによる検証。探索で未取得の情報はシート末尾に限定・方法付きで記録。",
+      "owner": "Codex"
+    },
+    {
+      "id": "12",
+      "title": "受け入れ基準検査",
+      "status": "complete",
+      "reason": "Claudeによる検証。探索で未取得の情報はシート末尾に限定・方法付きで記録。",
+      "owner": "Codex"
+    }
+  ],
+  "remaining": 0
+}

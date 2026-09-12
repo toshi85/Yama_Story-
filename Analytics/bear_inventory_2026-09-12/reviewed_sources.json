@@ -1,0 +1,14 @@
+[
+  {
+    "id": "S1",
+    "path": "Yama_Story/Analytics/next_topic_2026-09-12/JBN_2011.txt",
+    "read": "全191ページ相当の抽出テキストを順に確認。末尾改ページ後の空要素はページに数えない。本文印刷p1=PDF7。文字化け・文字未抽出ページあり、原PDF全内容確認ではない。",
+    "sha256": "8fb6570af0496033ff7a0f582c0440aa9500da74efd1b0b6c24209994d1a9276"
+  },
+  {
+    "id": "S2",
+    "path": "Yama_Story/Analytics/next_topic_2026-09-12/yamagata_plan4.txt",
+    "read": "全47ページ相当の抽出テキスト。人身事故表=PDF42-43/印刷40-41、集計=PDF44-45/印刷42-43。",
+    "sha256": "5ff37adbe2e9f2bb78481c079e099033d00892e3ed5f5d9408741c45ab22e93d"
+  }
+]

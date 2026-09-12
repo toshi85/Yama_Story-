@@ -1,0 +1,39 @@
+{
+  "video": "check/studio/jobs/20260912151108_6f8f1ce9/quality/media/preview.mp4",
+  "video_sha256": "3f8355c254e9ee42c0c87311aa28af7326e03d3b555458afe545f6c59d731464",
+  "duration": 5.83,
+  "frames": [
+    {
+      "time": 0.1,
+      "file": "check/studio/jobs/20260912151108_6f8f1ce9/quality/media/frame-00.jpg"
+    },
+    {
+      "time": 0.5,
+      "file": "check/studio/jobs/20260912151108_6f8f1ce9/quality/media/frame-01.jpg"
+    },
+    {
+      "time": 2.9167,
+      "file": "check/studio/jobs/20260912151108_6f8f1ce9/quality/media/frame-02.jpg"
+    },
+    {
+      "time": 3.1667,
+      "file": "check/studio/jobs/20260912151108_6f8f1ce9/quality/media/frame-03.jpg"
+    },
+    {
+      "time": 5.763333333333334,
+      "file": "check/studio/jobs/20260912151108_6f8f1ce9/quality/media/frame-04.jpg"
+    }
+  ],
+  "checks": [
+    {
+      "requirement": "A カット尺",
+      "passed": true,
+      "evidence": "合成動画 5.830秒 / 指定 5.833秒"
+    },
+    {
+      "requirement": "D 吹き出しは頭上",
+      "passed": null,
+      "evidence": "人物層の矩形がない、または複数セリフのため映像確認が必要"
+    }
+  ]
+}

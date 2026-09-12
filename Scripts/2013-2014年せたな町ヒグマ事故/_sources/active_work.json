@@ -1,0 +1,92 @@
+{
+  "session_id": "setana_fact_research_2026-09-12",
+  "report": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/_sources/continuity_report.json",
+  "tasks": [
+    {
+      "id": "1",
+      "title": "指定規則・テンプレート・既出照合",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "Claudeによる検証。台本・プロットは対象外。",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Fact_Sheet_せたな町.md",
+          "sha256": "c4043a8d068bb4914d5f570c98e02dd3feed1b422a76f797a72e059a572ac725"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/_sources/validation.json",
+          "sha256": "34415d255941716446d87637234a5805de8554813b46ac82c280363b49bc866c"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "一次資料と報道の本文取得・確認",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "Claudeによる検証。台本・プロットは対象外。",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Fact_Sheet_せたな町.md",
+          "sha256": "c4043a8d068bb4914d5f570c98e02dd3feed1b422a76f797a72e059a572ac725"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/_sources/validation.json",
+          "sha256": "34415d255941716446d87637234a5805de8554813b46ac82c280363b49bc866c"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "資料の厚みの判定",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "Claudeによる検証。台本・プロットは対象外。",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Fact_Sheet_せたな町.md",
+          "sha256": "c4043a8d068bb4914d5f570c98e02dd3feed1b422a76f797a72e059a572ac725"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/_sources/validation.json",
+          "sha256": "34415d255941716446d87637234a5805de8554813b46ac82c280363b49bc866c"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "素材シート作成・未確認事項と食い違い記録",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "Claudeによる検証。台本・プロットは対象外。",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Fact_Sheet_せたな町.md",
+          "sha256": "c4043a8d068bb4914d5f570c98e02dd3feed1b422a76f797a72e059a572ac725"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/_sources/validation.json",
+          "sha256": "34415d255941716446d87637234a5805de8554813b46ac82c280363b49bc866c"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "成果物・出典リンク・数値検査",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "Claudeによる検証。台本・プロットは対象外。",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Fact_Sheet_せたな町.md",
+          "sha256": "c4043a8d068bb4914d5f570c98e02dd3feed1b422a76f797a72e059a572ac725"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/_sources/validation.json",
+          "sha256": "34415d255941716446d87637234a5805de8554813b46ac82c280363b49bc866c"
+        }
+      ]
+    }
+  ],
+  "scope_note": "変更許可ディレクトリ外への書込み禁止に従い台帳・検査結果も同ディレクトリ内。未確認の事実はシート末尾に明示。"
+}

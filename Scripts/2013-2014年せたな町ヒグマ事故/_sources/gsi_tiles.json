@@ -1,0 +1,14 @@
+[
+  {
+    "region": "2013_region",
+    "url": "https://cyberjapandata.gsi.go.jp/xyz/std/13/7277/3030.png",
+    "file": "gsi_std_13_7277_3030.png",
+    "note": "住所代表点を含む地理院標準地図タイル。事故座標ではない。"
+  },
+  {
+    "region": "2014_region",
+    "url": "https://cyberjapandata.gsi.go.jp/xyz/std/13/7277/3032.png",
+    "file": "gsi_std_13_7277_3032.png",
+    "note": "住所代表点を含む地理院標準地図タイル。事故座標ではない。"
+  }
+]

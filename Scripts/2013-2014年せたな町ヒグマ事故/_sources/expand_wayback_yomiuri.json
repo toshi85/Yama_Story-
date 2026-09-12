@@ -1,0 +1,5 @@
+{
+  "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>",
+  "source_url": "http://www.yomiuri.co.jp/e-japan/hokkaido/news/20130417-OYT8T00756.htm",
+  "api": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.yomiuri.co.jp%2Fe-japan%2Fhokkaido%2Fnews%2F20130417-OYT8T00756.htm&timestamp=20130418"
+}

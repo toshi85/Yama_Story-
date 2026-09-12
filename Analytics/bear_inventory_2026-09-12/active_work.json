@@ -1,0 +1,79 @@
+{
+  "session_id": "01a094e6-5438-7a31-b81f-4b0e4ca0ee90",
+  "status": "awaiting_claude_review",
+  "title": "クマ人身事故の全国棚卸し",
+  "report": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/bear_inventory_2026-09-12/continuity_report.json",
+  "tasks": [
+    {
+      "id": "jbn",
+      "title": "JBN全地域の事故抽出と出典範囲確認",
+      "status": "waiting_external",
+      "owner": "Codex",
+      "next_action": "一次資料未確認例の暫定掲載・追加調査範囲をClaude Codeが裁定。未完了箇所はunresolved.md参照。",
+      "blocker_evidence": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/bear_inventory_2026-09-12/unresolved.md"
+    },
+    {
+      "id": "prefectures",
+      "title": "16道県の管理計画・人身事故資料",
+      "status": "complete",
+      "owner": "Codex",
+      "next_action": "結果はClaude Codeが確認。死亡全件の受け入れは未達。",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/bear_inventory_2026-09-12/sources.json",
+          "sha256": "d5227a709cccf06e5ffbc646184acd16b791969900db2042375112bbeda86ef2"
+        }
+      ]
+    },
+    {
+      "id": "env",
+      "title": "環境省年度統計による死亡事例の不足確認",
+      "status": "waiting_external",
+      "owner": "Codex",
+      "next_action": "一次資料未確認例の暫定掲載・追加調査範囲をClaude Codeが裁定。未完了箇所はunresolved.md参照。",
+      "blocker_evidence": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/bear_inventory_2026-09-12/unresolved.md"
+    },
+    {
+      "id": "recent",
+      "title": "2011年以降の死亡・重傷・複数人被害の一次資料補完",
+      "status": "waiting_external",
+      "owner": "Codex",
+      "next_action": "一次資料未確認例の暫定掲載・追加調査範囲をClaude Codeが裁定。未完了箇所はunresolved.md参照。",
+      "blocker_evidence": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/bear_inventory_2026-09-12/unresolved.md"
+    },
+    {
+      "id": "normalize",
+      "title": "重複整理・全項目とABC判定",
+      "status": "waiting_external",
+      "owner": "Codex",
+      "next_action": "一次資料未確認例の暫定掲載・追加調査範囲をClaude Codeが裁定。未完了箇所はunresolved.md参照。",
+      "blocker_evidence": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/bear_inventory_2026-09-12/unresolved.md"
+    },
+    {
+      "id": "crossmatch",
+      "title": "投稿済み・Scripts・競合タイトル照合",
+      "status": "complete",
+      "owner": "Codex",
+      "next_action": "結果はClaude Codeが確認。死亡全件の受け入れは未達。",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/bear_inventory_2026-09-12/incidents.json",
+          "sha256": "11b6b7b2d70fef6fbe1e80e09aa50aee5b1e0899cb6d4bfda5c5fae5f981c8f5"
+        }
+      ]
+    },
+    {
+      "id": "deliver",
+      "title": "新しい年順の一覧保存・受け入れ検査",
+      "status": "complete",
+      "owner": "Codex",
+      "next_action": "結果はClaude Codeが確認。死亡全件の受け入れは未達。",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/bear_inventory_2026-09-12/checks.json",
+          "sha256": "ef4284436899fa2bb6ad5c934cf1fa642c1038dbd8fd7952bbc8f51b188364bf"
+        }
+      ]
+    }
+  ]
+}
