@@ -1,0 +1,27 @@
+[
+  {
+    "name": "selftest",
+    "command": [
+      "python3",
+      "Yama_Story/System_Tools/selftest_guards.py"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "calibration_after",
+    "command": [
+      "python3",
+      "Yama_Story/System_Tools/check_calibration.py"
+    ],
+    "exit": 1
+  },
+  {
+    "name": "setana",
+    "command": [
+      "python3",
+      "Yama_Story/System_Tools/validate_yama_narrative.py",
+      "Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md"
+    ],
+    "exit": 1
+  }
+]

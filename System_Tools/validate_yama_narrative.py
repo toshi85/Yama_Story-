@@ -4,6 +4,39 @@ import _infermarks
 import sys
 import re
 
+# Gate 9: 資料記述ナレーション禁止。意味が確定しない候補は WARN に留める。
+DOCUMENT_WORD = r'(?:地形図|地図|資料|記録|一覧|報告書|広報|会議録)'
+DESCRIPTION_PREDICATE = r'(?:描かれています|描かれた|描く|記されています|記された|載っています|示す線|線です|書かれています)'
+
+
+def document_description_level(content):
+    content = re.sub(r'<!--.*?-->', '', content).strip()
+    if not (re.search(DOCUMENT_WORD, content) and
+            re.search(DESCRIPTION_PREDICATE, content)):
+        return None
+    # 出典付きの事実・人や組織による発表・事件の動作は止めない。
+    if re.search(r'によると|によれば|には[^。]*とあります', content):
+        return None
+    if re.search(r'(?:が|は)[、]?[^。]*?(?:発表|答弁|報じ|報道|証言|説明|救助|捜索|襲撃|発生|遭難|避難|発見|入山|出発|到着|襲われ|亡くな|命を落とした|捕まえた|見る)', content):
+        return None
+    # 主語を省略した調査・施設改善も、記載内容の具体的な動作として扱う。
+    if re.search(r'を(?:調べた|調査した|検査した|どう直す|修理した|改善した)', content):
+        return None
+    # 「丸山という標高334メートルの山」のように、数値・名前の対象を
+    # 実体として述べる文。線や図示の説明に数字があるだけでは免除しない。
+    depiction = re.search(r'示す線|線です|等高線|細い線|記号', content)
+    fact_subject = re.search(
+        r'(?:[0-9０-９]+(?:[.,．][0-9０-９]+)?(?:メートル|キロ|m|人|頭|件|歳|年)|'
+        r'[^、。]+という[^、。]+|[一-龥ヶヵ]{2,}(?:山|岳|川|湖|峠)(?:が|の標高)|'
+        r'加害個体[^。]*(?:オス|メス))', content)
+    if fact_subject and not depiction:
+        return None
+    ending = re.search(DESCRIPTION_PREDICATE + r'[。.!！]?$', content)
+    if ending:
+        return 'FAIL'
+    return 'WARN'
+
+
 def validate_narrative_tone(file_path):
     """
     Validates Yama_Story narrator lines for:
@@ -142,6 +175,19 @@ def validate_narrative_tone(file_path):
                     f"   → 削除して直接内容に入る。出典を示したいなら文の後ろへ回す"
                 )
                 break
+
+        # Gate 9: 資料記述ナレーション禁止
+        description_level = document_description_level(content)
+        if description_level:
+            target = errors if description_level == 'FAIL' else warnings
+            reason = ("資料語と記載系述語で終わり、事実の主題・人や事件の動作がない"
+                      if description_level == 'FAIL' else
+                      "資料語と記載系表現を含むが、資料の説明だけかは要確認")
+            target.append(
+                f"[資料記述ナレーション禁止 Gate9] Line {i+1}: {reason}\n"
+                f"   > \"{content}\"\n"
+                f"   → 資料の描写ではなく、人物・現場・事件の具体的な事実を述べる"
+            )
 
         # Gate 4: Literary/jargon (warnings)
         for phrase, suggestion in LITERARY_PHRASES:

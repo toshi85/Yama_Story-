@@ -1,0 +1,17 @@
+{
+  "exit_code": 0,
+  "items_per_pass": {
+    "1": 5,
+    "2": 4,
+    "3": 5
+  },
+  "total_items": 14,
+  "cost_jpy": 10.91,
+  "tokens_in": 40762,
+  "tokens_out_including_thoughts": 11245,
+  "previous_outputs_unchanged": true,
+  "inputs_unchanged": true,
+  "fourth_pass_reason": "未使用候補0件",
+  "judgment": "未判定",
+  "output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/指摘_v3.md"
+}

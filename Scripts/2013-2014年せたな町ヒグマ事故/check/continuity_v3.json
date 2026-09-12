@@ -1,0 +1,64 @@
+{
+  "checked_at": 1789223031.117387,
+  "production_complete": false,
+  "work_running": false,
+  "items": [
+    {
+      "id": "1",
+      "title": "指定箇所修正・素材照合",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "2",
+      "title": "字数・プロット整合",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "3",
+      "title": "9本の検査",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "4",
+      "title": "較正",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "5",
+      "title": "全文5周",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "6",
+      "title": "Gemini v3",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "7",
+      "title": "出力確認",
+      "status": "complete",
+      "reason": "完了",
+      "owner": "Codex"
+    },
+    {
+      "id": "8",
+      "title": "人の最終確認・Gemini指摘の採否（実行依頼の後続工程）",
+      "status": "waiting_external",
+      "reason": "保存済み指摘と修正差分の採否を判断",
+      "owner": "Claude Code／本人"
+    }
+  ],
+  "remaining": 1
+}

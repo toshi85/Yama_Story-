@@ -1,0 +1,141 @@
+{
+  "session_id": "01a095f4-f4fc-7fc0-ba34-f2cd22b8635e",
+  "report": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/continuity_v3.json",
+  "tasks": [
+    {
+      "id": "1",
+      "title": "指定箇所修正・素材照合",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md",
+          "sha256": "b785255f12649b398bc760f4c37c755f6cc34daeef97a0aaccfbf8b1268c4f7c"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v3_change_verification.json",
+          "sha256": "b21afe15012fce8d92930cea8b99ee32be097671510ef45eb762580b09e72ab2"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "字数・プロット整合",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Plot_Sheet_せたな町.md",
+          "sha256": "bca84505e33c779b23d6aea836dab6f61e547cf73d5b4ca1eaf9b0c8049f6b40"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Fact_Sheet_せたな町.md",
+          "sha256": "b201f28c31bbb921cba7787f09880853893a9a8f7eb75f6f2f1237bef74c738c"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v3_checks_1/metrics.json",
+          "sha256": "aa80246d2f4ad7187f1046694656abcf64f53acc7aa95aff9e56dc6ba1ea0c22"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "9本の検査",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/v3_checks_1/results.json",
+          "sha256": "5440c0243ee8a068912ac370d95dce53b3c13ffdfc8c9af58130f00ea43c97e2"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "較正",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/calibration_result_v3.json",
+          "sha256": "53322799466fa96661dc5d46e0b2437c28eaf972ceb7c5069907cd09a8152d9b"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "全文5周",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/.codex_review/Master/five_pass/manifest.json",
+          "sha256": "7a12b5442e428959f833a85ff9c46f9ff70fbcc78f204a08dbb9e162529029f0"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/.codex_review/Master/five_pass/pass_5/review.json",
+          "sha256": "29ea2ad5d84137d7280c702ce8a61f8d182b969159e2cfadac27d29116bee320"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/.codex_review/Master/five_pass/pass_5/reviewed.md",
+          "sha256": "d17191dd18ae09f2a01926e0d3c54121e46ca9a4ea0cad62b8fc5fa0ff40148e"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Gemini v3",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/指摘_v3.md",
+          "sha256": "55b9b428b58ee23aedd7f0ccd642fcfa122a52e8d8c49a49a4f0630c2526aa69"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/指摘_v3.json",
+          "sha256": "d3951d63f8c0ec8d5f311dfabca1bc8106a5cd4d825d1266ebd081ca4d111975"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/execution_result_v3.json",
+          "sha256": "e290f75836d17b9dc9cd4ea847c8dbd159e3f50ced1ebcf7ddfe7570135e2200"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "出力確認",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "完了",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/acceptance_v3.json",
+          "sha256": "36e9b8541ca71b5cb14e9585123ae5fc3c1c2146c320cf83ac337a0994c3bf44"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/output_verification_v3.json",
+          "sha256": "2b81234f5475ff532ac7e1255a1e12ce6a9acc0fdbe9201548ec1fe897e0eec0"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "人の最終確認・Gemini指摘の採否（実行依頼の後続工程）",
+      "owner": "Claude Code／本人",
+      "status": "waiting_external",
+      "next_action": "保存済み指摘と修正差分の採否を判断",
+      "blocker_evidence": {
+        "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/handoff_v3.md",
+        "sha256": "3daa1d95949c954b35887f3069261d094c8dc276eb0513445bafec68ae2b1327",
+        "reason": "ブリーフは実行担当に合否判定・Gemini指摘による本文改稿を許可していない"
+      }
+    }
+  ]
+}

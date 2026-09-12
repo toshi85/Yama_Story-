@@ -1,0 +1,12 @@
+# 実測結果
+- selftest_guards.py: Exit 0、86/86。新規組㊱（本文）・㊲（プロット）は FAIL/PASS ペア。
+- 修正版3行: Exit 0。本文事故2行は各々 Exit 1、Gate9 Line 1。
+- プロット§3: 〔記載〕3/5でExit 1、2/5でExit 0、3/6（半数）でExit 0。
+- check_calibration.py: 変更前Exit 0、変更後Exit 1。対象9本のうち新規失敗は未修正せたな町のnarrativeのみ。
+- せたな町本文: Exit 1、Gate9は57・58・349・488行。本文は編集していない。
+- 他8本の新Gate FAILは0件（既知失敗によるマスクとは別に計測）。
+- 較正対象にせたな町が含まれるため、本文をFAILにしつつ較正Exit 0という要件は現在の許可範囲では両立しない。台帳・較正コードは変更していない。
+- 変更前較正で既存validate_yama_safety.pyが固定パスYama_Story/yama_safety_validation.logへ自動追記した。許可外の副作用。復元も変更となるため触れていない。
+- 以後の実行はPYTHONDONTWRITEBYTECODE=1、PYTHONPATHをこのフォルダに設定し、sitecustomize.pyで固定安全ログだけをtests配下へ転送。検査ロジックは変えていない。
+- 自己試験は入力・子プロセス生出力をtests配下に保持する形へ変更。既存フック試験は一時プロジェクトを参照し、共有状態ファイルの削除を行わない。
+- 継続台帳の更新・通常のcontinuity.pyは許可外へ書き込むため実行していない。背景起動・git操作・外部送信は行っていない。

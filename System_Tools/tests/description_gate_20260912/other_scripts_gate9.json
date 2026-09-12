@@ -1,0 +1,42 @@
+[
+  {
+    "script": "Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/Master.md",
+    "gate9_fail_lines": [],
+    "gate9_warn_lines": []
+  },
+  {
+    "script": "Yama_Story/Scripts/1996年星野道夫ヒグマ襲撃事件/Master.md",
+    "gate9_fail_lines": [],
+    "gate9_warn_lines": []
+  },
+  {
+    "script": "Yama_Story/Scripts/2012年八幡平クマ牧場事件/Master.md",
+    "gate9_fail_lines": [],
+    "gate9_warn_lines": []
+  },
+  {
+    "script": "Yama_Story/Scripts/2023年大千軒岳ヒグマ事件/Master.md",
+    "gate9_fail_lines": [],
+    "gate9_warn_lines": []
+  },
+  {
+    "script": "Yama_Story/Scripts/2023年朱鞠内湖ヒグマ襲撃事件/Master.md",
+    "gate9_fail_lines": [],
+    "gate9_warn_lines": []
+  },
+  {
+    "script": "Yama_Story/Scripts/2025年東成瀬村クマ襲撃事件/Master.md",
+    "gate9_fail_lines": [],
+    "gate9_warn_lines": []
+  },
+  {
+    "script": "Yama_Story/Scripts/羅臼岳ヒグマ襲撃事件/Master.md",
+    "gate9_fail_lines": [],
+    "gate9_warn_lines": []
+  },
+  {
+    "script": "Yama_Story/Scripts/風不死岳ヒグマ事件/Master.md",
+    "gate9_fail_lines": [],
+    "gate9_warn_lines": []
+  }
+]

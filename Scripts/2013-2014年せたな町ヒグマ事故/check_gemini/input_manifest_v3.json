@@ -1,0 +1,29 @@
+{
+  "started_at": "2026-09-12T23:21:05.463894+09:00",
+  "inputs": {
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md": "b785255f12649b398bc760f4c37c755f6cc34daeef97a0aaccfbf8b1268c4f7c",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Fact_Sheet_せたな町.md": "b201f28c31bbb921cba7787f09880853893a9a8f7eb75f6f2f1237bef74c738c",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Plot_Sheet_せたな町.md": "bca84505e33c779b23d6aea836dab6f61e547cf73d5b4ca1eaf9b0c8049f6b40"
+  },
+  "previous_outputs": {
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/指摘_v2.md": "1182b97f063ba25ef1e1245c7c9fefbf5e4a41dc9417ab605c1a2d7019ca69b8",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/input_manifest.json": "9d5f8255ef217f55c8a02ef1d86200a6c8ab33c83c1f06e36a82a0c0837d1c04",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/execution_result.json": "6bee664edeac7939ad990a497ffb914c036f86f71882326f1381c872219de4ee",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/差分_v2.md": "6f1171ddc18ec09104caf6dff96d0c4a848a81914aa22979659f11d95b059d5e",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/未使用素材.json": "145c256c274859716e1bfd2896f35f13ad1a62039b22d4bef5c9b11107227f04",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/review.stdout.log": "37c1ee03653e8b1c34a27f7ef55e65cbdf22b6054ba00b130735d51669506f04",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/指摘.json": "58787beb0d985287fdaebd6172c05f0be1f373545c43cbdcdf68edc8569cd08b",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/review_v2.stdout.log": "b0f81b2d8c55a0ae9220522a78e24af23dbbff1080c9f8bdfb6286695d45ad59",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/execution_notes.md": "cc5cb4ebe742908baf4dbe874c011cecf146fad008c6a7aaf5e071dbd12ce7cd",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/execution_result_v2.json": "4ffe82fbe555d25ded7ca5ef99a12c1a569fb8b3f6e267815e284edd602e428e",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/input_manifest_v2.json": "c5a1b7f14270724d752f0278b75e22c6400d5027b825f809c237ffa7ffe234eb",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/指摘.md": "3b5dbc22c2f9ddd7dd7efd3d7e7845bb75d7905cd7bf07b5970b560becb7e9b2",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/未使用素材.md": "0e6676e27e080151158c553c4bb248fe620fbb77dc86056dc68eae6c0f65a99e",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/unused.stdout.log": "e0a98d5a6ec5d59ca424ebaf84c6a366992789930ac8f98b9365c9ad24a978db",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/指摘_v2.json": "8078c0f60822f5a9aa42b7549e97d6020c0aa4263857c5e35ec8b763e6920c7b",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/v2_raw/指摘.json": "8078c0f60822f5a9aa42b7549e97d6020c0aa4263857c5e35ec8b763e6920c7b",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/v2_raw/指摘.md": "1182b97f063ba25ef1e1245c7c9fefbf5e4a41dc9417ab605c1a2d7019ca69b8"
+  },
+  "tool": "/Users/tosimasa/Desktop/Antigravity/System_Tools/review_script_gemini.py",
+  "tool_sha256": "7a8a586e67c7c008762c842e9420031b88f4ace12cb698bf999e7132e2fb2231"
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/checks_write_scope.sb",
+    "python3",
+    "-B",
+    "Yama_Story/System_Tools/check_calibration.py"
+  ],
+  "exit_code": 0,
+  "log": "Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check/calibration_v3_verified.log",
+  "master_sha256": "b785255f12649b398bc760f4c37c755f6cc34daeef97a0aaccfbf8b1268c4f7c"
+}

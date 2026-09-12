@@ -1,0 +1,44 @@
+--- validate_yama_plot.py.before
++++ validate_yama_plot.py
+@@ -19,6 +19,7 @@
+   8. 全章に素材#がある
+   9. 素材密度（字数÷素材数 ≤ 120）★創作の予防
+  10. 主題占有率（外部素材だけで組まれた章 ≤ 15%）★他事件・全国統計での水増しの予防
++ 13. 記載素材の過半禁止（章の〔記載〕素材が1/2超ならFAIL）
+  11. 設計からの乖離（設計字数 ±15%）★しきい値合わせの水増しの予防
+ 
+ 使い方:
+@@ -336,6 +337,33 @@
+                     "他事件・全国統計で尺を伸ばさず、本件の未使用素材で埋めること")
+             print()
+ 
++    # 13. 記載素材の過半禁止。Check 10 と同じ素材シート・章の素材#を使う。
++    if not fs:
++        warns.append("素材シートが無いため、記載素材の過半を測れません")
++    else:
++        description_ids = set()
++        # 見出しの無い旧表も読めるようにし、確度B/C・不採用表は数えない。
++        in_a = True
++        for line in body.splitlines():
++            if re.match(r'^##\s', line):
++                in_a = bool(re.search(r'確度\s*[AＡ]', line))
++            m = re.match(r'^\|\s*(\d+)\s*\|([^|]*)\|', line)
++            if in_a and m and "〔記載〕" in m.group(2):
++                description_ids.add(m.group(1))
++        print("[記載素材の過半禁止] 章ごとの〔記載〕素材（上限1/2）")
++        for r in rows:
++            ids = list(dict.fromkeys(re.findall(r'\d+', r["src"])))
++            marked = [x for x in ids if x in description_ids]
++            other = [x for x in ids if x not in description_ids]
++            if not marked:
++                continue
++            detail = (f"§{r['no']}「{r['title']}」 記載素材 {len(marked)}/{len(ids)}"
++                      f"  〔記載〕素材#: {', '.join(marked)} / その他素材#: {', '.join(other) or 'なし'}")
++            print(f"    {detail}")
++            if 2 * len(marked) > len(ids):
++                fails.append(f"記載素材の過半禁止 — {detail}（1/2超）。事件・現場の事実で章を組むこと")
++        print()
++
+     # 種別の語彙
+     bad = {r["kind"] for r in rows} - KINDS
+     if bad:

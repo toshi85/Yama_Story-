@@ -8,7 +8,7 @@
 
   python3 selftest_guards.py
 """
-import subprocess, sys, os, tempfile, shutil
+import subprocess, sys, os, tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PY = sys.executable
@@ -42,7 +42,10 @@ def run(script, path, *extra):
     r = subprocess.run([PY, os.path.join(HERE, script), path, *extra],
                        capture_output=True, text=True,
                        encoding="utf-8", errors="replace", env=env)
-    return r.returncode, (r.stdout or "") + (r.stderr or "")
+    out = (r.stdout or "") + (r.stderr or "")
+    with open(path + "." + script + ".log", "a", encoding="utf-8") as log:
+        log.write(f"command: {script} {path} {extra}\nExit: {r.returncode}\n{out}\n")
+    return r.returncode, out
 
 # --- 3点セットの強制（2026-09-02 新設）-------------------------------------
 #   矛盾検査を書いたとき、1回目も2回目も「素通りする検査」を書いてしまった。
@@ -62,23 +65,23 @@ REGISTRY = []          # [(グループ記号, "fail"|"pass", 表示名, 検査�
 def _group_of(name):
     # ⚠️ ①〜⑳ は U+2460〜、㉑〜㉟ は U+3251〜 で連続していない。
     #    範囲を ①-⑳ だけにしていると ㉑ 以降が対にならず、増やした瞬間に赤くなる（2026-09-03）
-    m = _re.match(r"^([\u2460-\u2473\u3251-\u325f])", name.strip())
+    m = _re.match(r"^([\u2460-\u2473\u3251-\u325f\u32b1-\u32bf])", name.strip())
     return m.group(1) if m else name.strip()[:2]
 
-def check(name, script, path, must_contain, *extra):
+def check(name, script, path, must_contain, *extra, expected_code=None):
     """事故そのものを注入して、止まることを確かめる"""
     code, out = run(script, path, *extra)
-    hit = must_contain in out
+    hit = must_contain in out and (expected_code is None or code == expected_code)
     REGISTRY.append((_group_of(name), "fail", name, script))
     print(f"  {'✅' if hit else '❌'} {name:<42} {script}")
     if not hit:
         print(f"      期待: 「{must_contain}」を含む出力 / 実際の末尾: {out.strip().splitlines()[-1][:70] if out.strip() else '(空)'}")
     return hit
 
-def check_pass(name, script, path, must_not_contain, *extra):
+def check_pass(name, script, path, must_not_contain, *extra, expected_code=None):
     """直した版を通して、余計に止めないことを確かめる"""
     code, out = run(script, path, *extra)
-    hit = must_not_contain not in out
+    hit = must_not_contain not in out and (expected_code is None or code == expected_code)
     REGISTRY.append((_group_of(name), "pass", name, script))
     print(f"  {'✅' if hit else '❌'} {name:<42} {script}")
     if not hit:
@@ -86,7 +89,9 @@ def check_pass(name, script, path, must_not_contain, *extra):
     return hit
 
 def main():
-    tmp = tempfile.mkdtemp()
+    os.makedirs(os.path.join(HERE, "tests"), exist_ok=True)
+    tmp = tempfile.mkdtemp(prefix="selftest_guards_", dir=os.path.join(HERE, "tests"))
+    print(f"試験入力・生出力: {tmp}")
     ok = []
     print("=" * 74)
     print("検査の自己試験 — 過去に実際に起きたミスを注入して、止まるか確かめる")
@@ -684,9 +689,7 @@ def main():
     proj = os.path.abspath(os.path.join(HERE, "..", ".."))
     hook = os.path.join(proj, ".claude", "hooks", "guard-yama-script-reference.sh")
     if os.path.exists(hook):
-        st = os.path.join(proj, ".claude", ".state", "yama_reads_selftest.log")
-        if os.path.exists(st): os.remove(st)
-        env = {**os.environ, "CLAUDE_PROJECT_DIR": proj}
+        env = {**os.environ, "CLAUDE_PROJECT_DIR": tmp}
         import json as _json
         cases = [
             ({"tool_name": "Write", "tool_input": {"file_path": "/x/Yama_Story/Scripts/e/Master.md"}}, 2, "Write"),
@@ -784,7 +787,78 @@ def main():
     ok.append(check_pass("⑦b 110字/素材なら通す", "validate_yama_plot.py",
                          p, "素材密度"))
 
-    shutil.rmtree(tmp)
+    # ㊱/㊲ せたな町の資料記述事故と修正版（Exitコードも検証する）。
+    bad_lines = [
+        "北檜山区の新成地区を描く地形図に、幾重にも並ぶ山の高さを示す線。",
+        "谷に沿って流れる川も、地図の上を通る細い線です。",
+    ]
+    for n, line in enumerate(bad_lines, 1):
+        p = os.path.join(tmp, f"description_bad_{n}.md")
+        open(p, "w", encoding="utf-8").write("ナレーター: " + line + "\n")
+        ok.append(check(f"㊱ 資料記述事故の{n}行目", "validate_yama_narrative.py", p,
+                        "❌ [資料記述ナレーション禁止 Gate9] Line 1:", expected_code=1))
+    p = os.path.join(tmp, "description_fixed.md")
+    open(p, "w", encoding="utf-8").write(
+        "ナレーター: 女性が入ったのは、北檜山区の新成地区です。\n"
+        "ナレーター: 地図には、丸山という標高334メートルの山が記されています。\n"
+        "ナレーター: 山あいには、谷に沿って流れる川があります。\n")
+    ok.append(check_pass("㊱b 修正版3行", "validate_yama_narrative.py", p,
+                         "[資料記述ナレーション禁止", expected_code=0))
+    p = os.path.join(tmp, "description_exempt.md")
+    open(p, "w", encoding="utf-8").write(
+        "ナレーター: 報告書によると、女性が山に入ったと書かれています。\n"
+        "ナレーター: 記録には女性が入山したとあります。\n"
+        "ナレーター: 道の一覧には、加害個体をオスとする記載があります。\n"
+        "ナレーター: 報告書に記された結果を、町が発表しました。\n"
+        "ナレーター: その報告書には、頭蓋骨を調べた結果も載っています。\n"
+        "ナレーター: 事故前年の検査記録には、施設をどう直すかまで記されています。\n"
+        "ナレーター: 市の広報には、来場者がガラス越しにヒグマを見る場所の写真が載っています。\n"
+        "ナレーター: 道の人身事故の一覧にも、この女性が命を落としたことが記されています。\n")
+    ok.append(check_pass("㊱c 出典と動作の除外", "validate_yama_narrative.py", p,
+                         "[資料記述ナレーション禁止", expected_code=0))
+    p = os.path.join(tmp, "description_ambiguous.md")
+    open(p, "w", encoding="utf-8").write(
+        "ナレーター: 地図に描かれた場所は、山の向こう側です。\n")
+    ok.append(check("㊱d 曖昧な候補はWARNのみ", "validate_yama_narrative.py", p,
+                    "⚠️  [資料記述ナレーション禁止", expected_code=0))
+
+    def mkdescription(name, marked, chapter_ids="1,2,3,4,5"):
+        d = os.path.join(tmp, name)
+        os.makedirs(d, exist_ok=True)
+        with open(os.path.join(d, "Fact_Sheet_test.md"), "w", encoding="utf-8") as f:
+            f.write("## 確度A（実物確認済み）\n| # | 事実 | 出典 | 確認 | 使う章 |\n")
+            for n in range(1, 11):
+                mark = "〔記載〕" if n <= marked else ""
+                if n == 1:
+                    mark += "〔外部〕"
+                f.write(f"| {n} | {mark}素材{n} | X | 実物 | §3 |\n")
+            f.write("## 確度B\n| 11 | 〔記載〕未確認 | X | 未確認 | §3 |\n")
+        p = os.path.join(d, "Plot_Sheet_test.md")
+        with open(p, "w", encoding="utf-8") as f:
+            f.write("- 前半ピーク: 5\n- 後半ピーク: 12\n- ボトム: 10\n"
+                    "| 章 | タイトル | PART | 種別 | 設計字数 | 実測字数 | 素材# |\n")
+            for n in range(1, 21):
+                chars = 300 if n <= 2 else 450 if n >= 19 else 500
+                part = "KI" if n <= 2 else "TEN-KETSU" if n >= 19 else "SHO"
+                kind = "フック" if n == 1 else "実用" if n == 18 else "動き"
+                ids = chapter_ids if n == 3 else "6,7,8,9,10"
+                f.write(f"| {n} | 現場{n} | {part} | {kind} | {chars} | {chars} | {ids} |\n")
+        return p
+
+    p = mkdescription("description_plot_bad", 3)
+    ok.append(check("㊲ 記載素材3/5の章", "validate_yama_plot.py", p,
+                    "x 記載素材の過半禁止 — §3「現場3」 記載素材 3/5", expected_code=1))
+    p = mkdescription("description_plot_fixed", 2)
+    ok.append(check_pass("㊲b 修正版は2/5", "validate_yama_plot.py", p,
+                         "x 記載素材の過半禁止", expected_code=0))
+    p = mkdescription("description_plot_half", 3, "1,2,3,4,5,6,6")
+    ok.append(check_pass("㊲c ちょうど1/2・重複素材は1件", "validate_yama_plot.py", p,
+                         "x 記載素材の過半禁止", expected_code=0))
+    p = mkdescription("description_plot_b", 2, "1,2,3,4,11")
+    ok.append(check_pass("㊲d 確度Bの印は数えない", "validate_yama_plot.py", p,
+                         "x 記載素材の過半禁止", expected_code=0))
+
+    # 再検証用の入力と生出力は tests/ 配下に保存する（削除しない）。
 
     # --- メタチェック: 3点セットが揃っているか ---------------------------
     print()
