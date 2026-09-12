@@ -1,0 +1,59 @@
+{
+  "reference_date": "2026-09-12",
+  "acquisition_date": "2026-09-12",
+  "yt_dlp_version": "2025.10.14",
+  "player_client": "android",
+  "acquired": 195,
+  "failed": 1,
+  "failed_ids": [
+    "3f68dRLjiPQ"
+  ],
+  "invalid_json_or_title_count": 0,
+  "invalid_ids": [],
+  "single_incident_count": 142,
+  "excluded_count": 53,
+  "median_views": 689942.0,
+  "median_views_per_day": 1235.578756026819,
+  "published_mark_count": 22,
+  "channels": [
+    {
+      "channel": "山岳遭難ファイル",
+      "acquired": 32,
+      "single_incident": 31,
+      "excluded": 1,
+      "median_views_single_incident": 477267
+    },
+    {
+      "channel": "生きて山から帰るには【山岳遭難解説】",
+      "acquired": 163,
+      "single_incident": 111,
+      "excluded": 52,
+      "median_views_single_incident": 694446
+    }
+  ],
+  "channel_repairs": [
+    {
+      "id": "zqZh25jHRCM",
+      "field": "channel",
+      "channel_id": "UCe505brfgZ0UHE6d43SlqhA",
+      "value": "生きて山から帰るには【山岳遭難解説】",
+      "basis": "同一channel_idを持つ取得済みJSONのchannel値は1種類"
+    }
+  ],
+  "missing_view_count": 25,
+  "own_source": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Video_Performance_Log.md",
+  "own_source_sha256": "c3ab6583000f88b008d911b63e3538b4638243fe8a093b469b664ec04302028f",
+  "literal_title_conflicts": [
+    {
+      "id": "Pjyc6m2GFGk",
+      "title": "担任「多分行けるだろう」おススメコースで死亡 六甲山落石事故1985年【地図とアニメで解説】",
+      "matched_words": [
+        "おススメ"
+      ]
+    }
+  ],
+  "report_status": "complete",
+  "classification_basis": "取得済みのタイトル・availability・概要欄・章立て。動画映像の内容確認は未実施。",
+  "count_unit": "動画単位。同一事件でもチャンネル間の動画は統合しない。単一災害を扱う動画は含め、複数事故を並べた動画は除外。",
+  "title_quote_policy": "ユーザー承認：原題を保持し、禁止語検査はタイトル列を除外。"
+}

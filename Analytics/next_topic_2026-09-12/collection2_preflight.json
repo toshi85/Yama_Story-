@@ -1,0 +1,13 @@
+{
+  "target_ids": 196,
+  "existing_nonempty": 134,
+  "all_json": 134,
+  "invalid_json_or_title": [],
+  "yt_dlp_version": "2025.10.14",
+  "version_stderr": "/Users/tosimasa/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020\n  warnings.warn(\n",
+  "script_syntax": "PASS",
+  "input_sha256": {
+    "channel_1_all.csv": "32d055898e6964a18016c21ef547de598740e650ef5f92d08361183bad060716",
+    "channel_2_all.csv": "feb6c2837183118467343d3be3b08a59550a39917ebec2566fbf52822435015c"
+  }
+}

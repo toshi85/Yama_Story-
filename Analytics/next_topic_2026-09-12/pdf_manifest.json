@@ -1,0 +1,36 @@
+[
+  {
+    "source": "Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/_sources/JBN_人身事故情報のとりまとめに関する報告書_2011.pdf",
+    "source_sha256": "2359ca71d7bb897c56404314e86615e95a61e8218ecdc1aaf6029b60a9de0aee",
+    "text": "Yama_Story/Analytics/next_topic_2026-09-12/JBN_2011.txt",
+    "text_sha256": "8fb6570af0496033ff7a0f582c0440aa9500da74efd1b0b6c24209994d1a9276",
+    "characters": 181766,
+    "pages": 191,
+    "command": [
+      "pdftotext",
+      "-layout",
+      "Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/_sources/JBN_人身事故情報のとりまとめに関する報告書_2011.pdf",
+      "Yama_Story/Analytics/next_topic_2026-09-12/JBN_2011.txt"
+    ],
+    "returncode": 0,
+    "retrieved_at": "2026-09-12T16:54:52.400194+09:00",
+    "body_review": "一部のみ。全事例の確認は未完了"
+  },
+  {
+    "source": "Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/_sources/山形県_第4期ツキノワグマ管理計画_本文.pdf",
+    "source_sha256": "cb5c88c3f3bcacd041f574566cf832b8b9882237f549c48c5aafe82abe896497",
+    "text": "Yama_Story/Analytics/next_topic_2026-09-12/yamagata_plan4.txt",
+    "text_sha256": "5ff37adbe2e9f2bb78481c079e099033d00892e3ed5f5d9408741c45ab22e93d",
+    "characters": 114826,
+    "pages": 47,
+    "command": [
+      "pdftotext",
+      "-layout",
+      "Yama_Story/Scripts/1988年戸沢村ツキノワグマ食害事件/_sources/山形県_第4期ツキノワグマ管理計画_本文.pdf",
+      "Yama_Story/Analytics/next_topic_2026-09-12/yamagata_plan4.txt"
+    ],
+    "returncode": 0,
+    "retrieved_at": "2026-09-12T16:54:52.405723+09:00",
+    "body_review": "一部のみ。全事例の確認は未完了"
+  }
+]

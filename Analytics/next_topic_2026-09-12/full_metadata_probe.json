@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "/Users/tosimasa/Library/Python/3.9/bin/yt-dlp",
+    "--ignore-config",
+    "--no-cache-dir",
+    "--retries",
+    "0",
+    "--extractor-retries",
+    "0",
+    "--socket-timeout",
+    "20",
+    "--skip-download",
+    "--ignore-no-formats-error",
+    "--no-playlist",
+    "--dump-json",
+    "https://www.youtube.com/watch?v=BdYSsshllTQ"
+  ],
+  "started_at": "2026-09-12T17:03:57.852718+09:00",
+  "finished_at": "2026-09-12T17:04:03.408969+09:00",
+  "returncode": 0,
+  "id": "BdYSsshllTQ",
+  "view_count": 597713,
+  "upload_date": "20260830",
+  "duration": 1402,
+  "output": "Yama_Story/Analytics/next_topic_2026-09-12/video_full_default_BdYSsshllTQ.json"
+}

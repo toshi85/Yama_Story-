@@ -1,0 +1,41 @@
+{
+  "session_id": "01a094b9-9a35-7a12-b58c-288215da8d73",
+  "report": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/next_topic_2026-09-12/continuity2_report.json",
+  "tasks": [
+    {
+      "id": "collect2",
+      "title": "androidで未取得・既失敗IDを逐次取得",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "collection_state2.jsonがcompleteになった後、次ターンで取得検査",
+      "pid": 33164,
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/next_topic_2026-09-12/collection_state2.json",
+          "sha256": "b9c68efaa475144bc637f729c4aaf1cec9420b1268333ad1e12051b8b0bd247a"
+        }
+      ]
+    },
+    {
+      "id": "aggregate2",
+      "title": "単独事件抽出・既出28本照合・レポート更新・受け入れ検査",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "Claudeによる結果の確認",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/Next_Topic_Candidates_2026-09-12.md",
+          "sha256": "9e18fff9abe35d7f8dbebda39bb957630c0acc9af7ec5e59067edfced9ff6908"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/next_topic_2026-09-12/aggregation_checks.json",
+          "sha256": "c711ea0c9a83e130e07cbe11ce03e12df82a8e99399f943c0b57b4d2a241eddc"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/next_topic_2026-09-12/aggregation_classification.json",
+          "sha256": "6fe08b2aafd535c2fd184e75b036d0aa4d7797e712d318143113c3fada0da586"
+        }
+      ]
+    }
+  ]
+}

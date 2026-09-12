@@ -1,0 +1,22 @@
+{
+  "checked_at": 1789202979.165948,
+  "production_complete": true,
+  "work_running": false,
+  "items": [
+    {
+      "id": "collect2",
+      "title": "androidで未取得・既失敗IDを逐次取得",
+      "status": "complete",
+      "reason": "collection_state2.jsonがcompleteになった後、次ターンで取得検査",
+      "owner": "Codex"
+    },
+    {
+      "id": "aggregate2",
+      "title": "単独事件抽出・既出28本照合・レポート更新・受け入れ検査",
+      "status": "complete",
+      "reason": "Claudeによる結果の確認",
+      "owner": "Codex"
+    }
+  ],
+  "remaining": 0
+}

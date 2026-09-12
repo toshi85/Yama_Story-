@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "/Users/tosimasa/Library/Python/3.9/bin/yt-dlp",
+    "--ignore-config",
+    "--no-cache-dir",
+    "--retries",
+    "0",
+    "--extractor-retries",
+    "0",
+    "--socket-timeout",
+    "20",
+    "--flat-playlist",
+    "--dump-single-json",
+    "https://www.youtube.com/channel/UCe505brfgZ0UHE6d43SlqhA/videos"
+  ],
+  "started_at": "2026-09-12T17:02:56.384462+09:00",
+  "finished_at": "2026-09-12T17:03:02.850723+09:00",
+  "returncode": 0,
+  "total": 164,
+  "view_count_available": 0,
+  "method": 1
+}

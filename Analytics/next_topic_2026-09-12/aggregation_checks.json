@@ -1,0 +1,38 @@
+{
+  "json_valid": true,
+  "json_count": 195,
+  "invalid_json_or_title_count": 0,
+  "invalid_ids": [],
+  "report_rows": 142,
+  "single_incident_count": 142,
+  "excluded_count": 53,
+  "count_conservation": true,
+  "sorted_descending": true,
+  "median_views": 689942.0,
+  "median_views_per_day": 1235.578756026819,
+  "published_mark_count": 22,
+  "matched_rows_in_source": true,
+  "header_data_complete": true,
+  "channels": [
+    {
+      "channel": "山岳遭難ファイル",
+      "acquired": 32,
+      "single_incident": 31,
+      "excluded": 1,
+      "median_views_single_incident": 477267
+    },
+    {
+      "channel": "生きて山から帰るには【山岳遭難解説】",
+      "acquired": 163,
+      "single_incident": 111,
+      "excluded": 52,
+      "median_views_single_incident": 694446
+    }
+  ],
+  "forbidden_words_outside_title_count": 0,
+  "title_column_excluded_from_word_check": true,
+  "original_titles_preserved": true,
+  "report_overwritten": true,
+  "report_sha256": "9e18fff9abe35d7f8dbebda39bb957630c0acc9af7ec5e59067edfced9ff6908",
+  "all_pass": true
+}

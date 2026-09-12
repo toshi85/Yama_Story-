@@ -1,0 +1,12 @@
+{
+  "process_alive": true,
+  "process": "33164 00:12 /opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -u /Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/next_topic_2026-09-12/collect_remaining2.py",
+  "state": {
+    "done": 136,
+    "remaining": 60,
+    "failed": 0,
+    "status": "running"
+  },
+  "log_bytes": 729,
+  "log_tail": "{\"event\": \"started\", \"pid\": 33164, \"player_client\": \"android\", \"done\": 136, \"remaining\": 60, \"failed\": 0, \"status\": \"running\"}\n{\"event\": \"attempt\", \"id\": \"3f68dRLjiPQ\", \"attempt\": 1, \"started\": 1789202051.6006231}\n/Users/tosimasa/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020\n  warnings.warn(\nDeprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above\nERROR: [youtube] 3f68dRLjiPQ: Join this channel to get access to members-only content like this video, and other exclusive perks.\n"
+}

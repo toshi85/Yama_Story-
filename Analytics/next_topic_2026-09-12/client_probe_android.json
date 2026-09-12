@@ -1,0 +1,24 @@
+{
+  "id": "e0L4ji2pVPc",
+  "player_client": "android",
+  "exit_code": 0,
+  "valid": true,
+  "seconds": 2.04,
+  "argv": [
+    "yt-dlp",
+    "--quiet",
+    "--no-warnings",
+    "--skip-download",
+    "--dump-single-json",
+    "--ignore-config",
+    "--no-cache-dir",
+    "--retries",
+    "0",
+    "--extractor-retries",
+    "0",
+    "--extractor-args",
+    "youtube:player_client=android",
+    "https://www.youtube.com/watch?v=e0L4ji2pVPc"
+  ],
+  "title": "【SOS無視】主催者の末路は…黄河石林2021年トレランレース遭難事故【地図とアニメで解説】"
+}

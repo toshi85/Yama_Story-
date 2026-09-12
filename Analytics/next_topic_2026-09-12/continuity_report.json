@@ -1,0 +1,50 @@
+{
+  "checked_at": 1789200437.543926,
+  "production_complete": false,
+  "work_running": true,
+  "items": [
+    {
+      "id": "1",
+      "title": "PDFテキスト抽出",
+      "status": "complete",
+      "reason": "PDFテキスト抽出",
+      "owner": "Codex"
+    },
+    {
+      "id": "2",
+      "title": "チャンネル特定・全動画取得",
+      "status": "running",
+      "reason": "手順2で296本の個別メタデータ取得。完了後に題材同定へ。",
+      "owner": "Codex"
+    },
+    {
+      "id": "3",
+      "title": "PDF死亡・複数被害事例の本文抽出",
+      "status": "pending",
+      "reason": "PDF死亡・複数被害事例の本文抽出",
+      "owner": "Codex"
+    },
+    {
+      "id": "4",
+      "title": "題材同定・既出28本照合",
+      "status": "pending",
+      "reason": "題材同定・既出28本照合",
+      "owner": "Codex"
+    },
+    {
+      "id": "5",
+      "title": "各事件ytsearch20・同一事件確認",
+      "status": "pending",
+      "reason": "各事件ytsearch20・同一事件確認",
+      "owner": "Codex"
+    },
+    {
+      "id": "6",
+      "title": "統合表作成・受け入れ検査",
+      "status": "pending",
+      "reason": "統合表作成・受け入れ検査",
+      "owner": "Codex"
+    }
+  ],
+  "remaining": 5
+}

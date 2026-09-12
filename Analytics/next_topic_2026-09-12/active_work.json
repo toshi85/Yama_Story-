@@ -1,0 +1,59 @@
+{
+  "session_id": "01a0949a-83b3-76a0-87a9-a3fcfaa9e9d6",
+  "report": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/next_topic_2026-09-12/continuity_report.json",
+  "tasks": [
+    {
+      "id": "1",
+      "title": "PDFテキスト抽出",
+      "owner": "Codex",
+      "status": "complete",
+      "next_action": "PDFテキスト抽出",
+      "evidence": [
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/next_topic_2026-09-12/yamagata_plan4.txt",
+          "sha256": "5ff37adbe2e9f2bb78481c079e099033d00892e3ed5f5d9408741c45ab22e93d"
+        },
+        {
+          "path": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/next_topic_2026-09-12/JBN_2011.txt",
+          "sha256": "8fb6570af0496033ff7a0f582c0440aa9500da74efd1b0b6c24209994d1a9276"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "チャンネル特定・全動画取得",
+      "owner": "Codex",
+      "status": "running",
+      "next_action": "手順2で296本の個別メタデータ取得。完了後に題材同定へ。",
+      "pid": 13850
+    },
+    {
+      "id": "3",
+      "title": "PDF死亡・複数被害事例の本文抽出",
+      "owner": "Codex",
+      "status": "pending",
+      "next_action": "PDF死亡・複数被害事例の本文抽出"
+    },
+    {
+      "id": "4",
+      "title": "題材同定・既出28本照合",
+      "owner": "Codex",
+      "status": "pending",
+      "next_action": "題材同定・既出28本照合"
+    },
+    {
+      "id": "5",
+      "title": "各事件ytsearch20・同一事件確認",
+      "owner": "Codex",
+      "status": "pending",
+      "next_action": "各事件ytsearch20・同一事件確認"
+    },
+    {
+      "id": "6",
+      "title": "統合表作成・受け入れ検査",
+      "owner": "Codex",
+      "status": "pending",
+      "next_action": "統合表作成・受け入れ検査"
+    }
+  ]
+}

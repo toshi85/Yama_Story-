@@ -1,0 +1,7 @@
+{
+  "syntax": "PASS",
+  "interval_seconds": 3,
+  "parallelism": 1,
+  "prior_failed_requeued": true,
+  "client_source": "collection2_client.json"
+}

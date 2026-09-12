@@ -1,0 +1,6 @@
+{
+  "player_client": "android",
+  "probe": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Analytics/next_topic_2026-09-12/client_probe_android.json",
+  "yt_dlp_version": "2025.10.14",
+  "next_action": "次ターンのレポート冒頭に使用player_clientを記載"
+}
