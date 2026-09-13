@@ -130,3 +130,38 @@ todo = [{'id': x['id'], 'prompt': x['prompt']} for x in q if x['id'] not in have
 
 ページへの流し込みは file_upload（`<input type=file>` を作って渡す）。CSPのため
 localhost への fetch もクリップボードもページ内 eval も通らない。
+
+## 修正カットだけ作り直す（最短手順）
+
+Pillow が利用できる Python 環境で実行する。この作業環境ではルートの
+`.venv-edit/bin/activate` を有効にしてから、以下の `python3` を使う。
+
+1. `Asset_Prompts_Full.md` のプロンプトを直してコミットする。
+2. 修正前のコミットと比較して、変更・追加された画像だけを生成する。
+   `python3 Yama_Story/System_Tools/imagegen/regen.py <作品> --since <直す前のコミット> --run`
+3. 終わったら `python3 Yama_Story/System_Tools/imagegen/regen.py <作品> --verify`。
+   `.imagegen/regen_<YYYYMMDD>/sheet.jpg` をClaudeが目視確認する。
+4. 目視確認後に `python3 Yama_Story/System_Tools/imagegen/regen.py <作品> --apply [--drive-dir <同期フォルダ>]`。
+
+作業フォルダには対象だけの `image_queue.json`、`run.log`、`run.pid` が残る。
+`--run` は既存の専用Chrome・`run.py` をnohupで背景起動してすぐ戻る。
+未ログインなら専用Chromeに表示される案内に従って本人がログインし、同じコマンドで再開する。
+生成の完了は `run.log` の「完成しました」と対象PNGがすべてそろったことを確認する。
+検査結果は `verify.json`。未生成・透過不足・描き込まれた市松模様があれば適用できない。
+
+`--assets CHAR-15,ASSET-020_char,...` を付けると差分検出を指定IDで上書きする。
+動画プロンプト、フェンスのない再利用・文字だけのカットは対象外。
+CHAR基準画像を先に、その後はASSET番号順に生成する。
+
+納品名は固定で、`CHAR-XX` は `画像/キャライラスト/CHAR-XX.png`、
+`ASSET-NNN_char` と `_still` は `画像/ASSET-NNN.png`、
+`_bg` は `画像/ASSET-NNN-1.png`、`_overlay` は `画像/ASSET-NNN_overlay.png`。
+shots.jsonとの差異は `mapping_notes.json` に参考情報として残す。shots.jsonは変更しない。
+標準名の既存ファイルは `画像/_旧_<YYYYMMDD>/` の同じ相対パスへ退避し、なければ新規に置く。
+派生ファイル（`_実写`、`_キャラ`、`_raw`、`_v2` 等）は変更しない。
+`--drive-dir` は「画像/」に相当する同期フォルダを指定し、その直下にも同じ相対パスでコピーする。
+同日の退避先が既にある場合は停止し、前の原本を上書きしない。
+
+`--since`・`--assets` を省いた検査・適用は、最新日付の既存キューを使うため、
+生成が日付をまたいでも同じコマンドで続けられる。
+同日に別の対象・変更版で既存キューを上書きする操作も停止する。

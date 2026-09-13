@@ -69,6 +69,7 @@ BOILERPLATE_RE = re.compile(
 
 # フェンス直前のラベルからスロットを判定する
 SLOT_RULES = [
+    ("追加素材プロンプト", ("overlay", "1:1")),
     ("Google Flow動画プロンプト", None),          # 動画プロンプト＝生成対象外
     ("キャラプロンプト", ("char", "1:1")),
     ("背景プロンプト", ("bg", "16:9")),
@@ -141,7 +142,7 @@ def parse(md_path: Path):
             suffix = "" if seen[name] == 1 else f"-{seen[name]}"
             raw = fm.group(1).strip()
 
-            if name == "char":
+            if name in ("char", "overlay"):
                 body = char_body(raw)
                 prompt = f"{CHAR_STYLE} {pose_of(body)}{body} {CHAR_TAIL}"
                 ref = char_ref_of(raw)
