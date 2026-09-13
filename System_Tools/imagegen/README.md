@@ -141,7 +141,9 @@ Pillow が利用できる Python 環境で実行する。この作業環境で�
    `python3 Yama_Story/System_Tools/imagegen/regen.py <作品> --since <直す前のコミット> --run`
 3. 終わったら `python3 Yama_Story/System_Tools/imagegen/regen.py <作品> --verify`。
    `.imagegen/regen_<YYYYMMDD>/sheet.jpg` をClaudeが目視確認する。
-4. 目視確認後に `python3 Yama_Story/System_Tools/imagegen/regen.py <作品> --apply [--drive-dir <同期フォルダ>]`。
+4. 目視確認後に `python3 Yama_Story/System_Tools/imagegen/regen.py <作品> --export`。
+   表示されたデスクトップの `<作品の短い名前>_差し替え画像_<YYYYMMDD>/` を本人がDriveへアップする。
+   `--apply [--drive-dir <同期フォルダ>]` は「画像/」を差し替えたいときだけ使う。
 
 作業フォルダには対象だけの `image_queue.json`、`run.log`、`run.pid` が残る。
 `--run` は既存の専用Chrome・`run.py` をnohupで背景起動してすぐ戻る。

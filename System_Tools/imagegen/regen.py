@@ -90,6 +90,48 @@ def standard_name(item):
     return Path(NAME_RULES[slot].format(base=key.split("_")[0]))
 
 
+def short_project_name(project):
+    """年を除き、市町村・山岳・峠で終わる地名を抽出。判別不能なら原名。"""
+    name = re.sub(r"^\d{4}年", "", project.name)
+    match = re.fullmatch(
+        r"(.+?(?:市|町|村|山|岳|峠))"
+        r"(?:(?:ツキノワグマ|ヒグマ|クマ|熊)?"
+        r"(?:食害|獣害|襲撃|雪中行軍|集団|雪崩|滑落|遭難)*(?:事件|事故)?)?", name)
+    return match.group(1) if match else project.name
+
+
+def export_directory(project):
+    date = datetime.now().strftime("%Y%m%d")
+    return Path.home() / "Desktop" / f"{short_project_name(project)}_差し替え画像_{date}"
+
+
+def export(project, work, queue):
+    report_path = work / "verify.json"
+    if not report_path.exists() or not json.loads(report_path.read_text())["all_pass"]:
+        raise ValueError("先に --verify を全件合格させ、sheet.jpg を目視確認してください")
+    if not verify(work, queue)["all_pass"]:
+        raise ValueError("現在の画像が検査不合格のため書き出しません")
+    root = export_directory(project)
+    if root.is_symlink():
+        raise ValueError(f"リンク先には書き出しません: {root}")
+    plans, destinations = [], set()
+    for item in queue:
+        relative = standard_name(item)
+        dest = root / relative
+        if dest in destinations:
+            raise ValueError(f"標準名が衝突しています: {relative}")
+        destinations.add(dest)
+        if (dest.is_symlink() or dest.parent.is_symlink()
+                or not dest.resolve().is_relative_to(root.resolve())
+                or (dest.exists() and not dest.is_file())):
+            raise ValueError(f"書き出し先が不正です: {dest}")
+        plans.append((work / "images" / (item["id"] + ".png"), dest))
+    for source, dest in plans:
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, dest)
+    return root.resolve()
+
+
 def mapping_notes(project, items):
     """shots の参照は納品名を変更する根拠にせず、相違を参考情報として残す。"""
     source = project / "shots.json"
@@ -281,6 +323,7 @@ def main(argv=None):
     modes.add_argument("--run", action="store_true")
     modes.add_argument("--verify", action="store_true")
     modes.add_argument("--apply", action="store_true")
+    modes.add_argument("--export", action="store_true")
     parser.add_argument("--drive-dir", type=Path)
     args = parser.parse_args(argv)
     if args.drive_dir and not args.apply:
@@ -290,7 +333,7 @@ def main(argv=None):
     try:
         current = extract_prompts.parse(project / "Asset_Prompts_Full.md")
         indexed(current)
-        if not args.since and not args.assets and (args.verify or args.apply):
+        if not args.since and not args.assets and (args.verify or args.apply or args.export):
             candidates = sorted(path.parent for path in (project / ".imagegen").glob(
                 "regen_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/image_queue.json"))
             if candidates:
@@ -329,6 +372,9 @@ def main(argv=None):
                 return 0 if report["all_pass"] else 1
             if args.apply:
                 print(f"適用 {apply(project, work, queue, args.drive_dir)}枚")
+                return 0
+            if args.export:
+                print(export(project, work, queue))
                 return 0
         print(f"対象 {len(queue)}枚: {queue_path}")
         if args.run:

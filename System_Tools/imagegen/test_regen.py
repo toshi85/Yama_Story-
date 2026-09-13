@@ -210,6 +210,96 @@ class RegenTest(unittest.TestCase):
         self.assertTrue((work / "verify.json").is_file())
         self.assertFalse((project / ".imagegen/regen_20260913").exists())
 
+    def test_short_project_name_rules_and_fallback(self):
+        cases = {
+            "1988年戸沢村ツキノワグマ食害事件": "戸沢村",
+            "1915年三毛別羆事件": "1915年三毛別羆事件",
+            "1902年八甲田山雪中行軍遭難事件": "八甲田山",
+            "2009年トムラウシ山遭難事故": "トムラウシ山",
+            "羅臼岳遭難事件": "羅臼岳",
+            "戸沢村": "戸沢村",
+            "2026年名前を判別できない事件": "2026年名前を判別できない事件",
+        }
+        for name, expected in cases.items():
+            with self.subTest(name=name):
+                self.assertEqual(regen.short_project_name(Path(name)), expected)
+
+    def test_export_directory_uses_desktop_short_name_and_current_date(self):
+        with patch.object(Path, "home", return_value=self.root), patch.object(regen, "datetime") as clock:
+            clock.now.return_value = datetime(2026, 9, 13)
+            self.assertEqual(regen.export_directory(PROJECT),
+                             self.root / "Desktop/戸沢村_差し替え画像_20260913")
+            self.assertEqual(regen.export_directory(Path("判別不能")),
+                             self.root / "Desktop/判別不能_差し替え画像_20260913")
+
+    def test_export_standard_names_and_leaves_project_images_untouched(self):
+        project, work, queue = self.fixture()
+        queue.extend([item("ASSET-045_bg", "bg"), item("ASSET-053_overlay", "overlay"),
+                      item("ASSET-069_still", "still")])
+        for entry in queue:
+            self.transparent(work / "images" / (entry["id"] + ".png"))
+        original = project / "画像/ASSET-020.png"
+        original.write_bytes(b"keep original")
+        regen.verify(work, queue)
+        with patch.object(Path, "home", return_value=self.root):
+            dest = regen.export(project, work, queue)
+        self.assertTrue(dest.is_absolute())
+        self.assertEqual({p.relative_to(dest).as_posix() for p in dest.rglob("*.png")},
+                         {"ASSET-020.png", "キャライラスト/CHAR-15.png", "ASSET-045-1.png",
+                          "ASSET-053_overlay.png", "ASSET-069.png"})
+        for entry in queue:
+            self.assertEqual(regen.sha(dest / regen.standard_name(entry)),
+                             regen.sha(work / "images" / (entry["id"] + ".png")))
+        self.assertEqual(original.read_bytes(), b"keep original")
+        self.assertEqual(list((project / "画像").iterdir()), [original])
+
+    def test_export_requires_verify_and_rechecks_stale_images(self):
+        project, work, queue = self.fixture()
+        with patch.object(Path, "home", return_value=self.root):
+            with self.assertRaises(ValueError):
+                regen.export(project, work, queue)
+            regen.write_json(work / "verify.json", {"all_pass": False})
+            with self.assertRaises(ValueError):
+                regen.export(project, work, queue)
+            regen.verify(work, queue)
+            Image.new("RGB", (256,256), "white").save(work / "images/CHAR-15.png")
+            with self.assertRaises(ValueError):
+                regen.export(project, work, queue)
+        self.assertFalse((self.root / "Desktop").exists())
+
+    def test_export_rejects_collision_before_copy(self):
+        project, work, queue = self.fixture()
+        queue.append(item("ASSET-020_still", "still"))
+        self.transparent(work / "images/ASSET-020_still.png")
+        regen.verify(work, queue)
+        with patch.object(Path, "home", return_value=self.root):
+            with self.assertRaises(ValueError):
+                regen.export(project, work, queue)
+        self.assertFalse((self.root / "Desktop").exists())
+
+    def test_export_cli_uses_latest_queue_and_prints_absolute_path_last(self):
+        from contextlib import redirect_stdout
+        from io import StringIO
+        project = self.root / PROJECT.name
+        work = project / ".imagegen/regen_20260912"
+        work.mkdir(parents=True)
+        (project / "Asset_Prompts_Full.md").write_text("### CHAR-15: test\n```a person```\n")
+        queue = extract_prompts.parse(project / "Asset_Prompts_Full.md")
+        regen.write_json(work / "image_queue.json", queue)
+        self.transparent(work / "images/CHAR-15.png")
+        regen.verify(work, queue)
+        output = StringIO()
+        with patch.object(Path, "home", return_value=self.root), patch.object(regen, "datetime") as clock:
+            clock.now.return_value = datetime(2026, 9, 13)
+            with redirect_stdout(output), patch.object(regen.subprocess, "Popen") as start:
+                self.assertEqual(regen.main([str(project), "--export"]), 0)
+                start.assert_not_called()
+        dest = self.root / "Desktop/戸沢村_差し替え画像_20260913"
+        self.assertEqual(output.getvalue().splitlines()[-1], str(dest.resolve()))
+        self.assertTrue((dest / "キャライラスト/CHAR-15.png").is_file())
+        self.assertFalse((project / "画像").exists())
+        self.assertFalse((project / ".imagegen/regen_20260913").exists())
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
