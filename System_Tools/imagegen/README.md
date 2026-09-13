@@ -232,3 +232,18 @@ N=3は未計測で、追加の実測は行わない。
 ```sh
 python3 -B -m unittest discover -s System_Tools/imagegen -p test_parallel.py
 ```
+
+
+## ChatGPTとLovartで分担する
+
+```bash
+python3 regen.py <作品フォルダ> --assets <既存キューの全IDをカンマで連結> --work-name regen_20260913_review --run --parallel 2 --min-interval 60 --exclude-slots bg,still
+python3 run.py <作業フォルダ> --exclude ASSET-001_char,ASSET-002_char
+```
+
+`--exclude` はID、`--exclude-slots` はキューの `slot` で除外する（併用可）。
+`image_queue.json` は変更しないので、再開時も同じ `--assets` を指定する。
+1ウィンドウの場合もPythonが1件ずつ割り当て、各投入直前に `images/<id>.png` の存在を確認する。
+Lovartが途中で保存したPNGも次の割当てで飛ばす。除外対象と保存済みは投入数・再試行数に含めない。
+ログは `飛ばした：<id>（保存済み／除外指定）`。保存済み判定はPNGの存在であり、品質検査の合格を意味しない。
+除外分が未保存でもChatGPT担当分の処理は終了する。画像全体の検査は従来どおり `--verify` で行う。

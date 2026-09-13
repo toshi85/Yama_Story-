@@ -10,7 +10,7 @@ import extract_prompts
 import regen
 
 PROJECT = regen.REPO / "Scripts/1988年戸沢村ツキノワグマ食害事件"
-LOG = regen.REPO.parent / ".codex/handoff/delegations/logs/2026-09-13-regen-tool"
+LOG = regen.REPO.parent / ".codex/handoff/delegations/logs/2026-09-13-split-chatgpt"
 EXPECTED = [
     "CHAR-15", "CHAR-16", "CHAR-17", "ASSET-020_char", "ASSET-022_char",
     "ASSET-024_char", "ASSET-045_char", "ASSET-045_bg", "ASSET-047_char",
@@ -220,6 +220,21 @@ class RegenTest(unittest.TestCase):
         self.assertEqual(start.call_args.args[0][-4:], ["--parallel", "2", "--min-interval", "60.0"])
         self.assertIn(str(work), start.call_args.args[0])
         self.assertTrue(start.call_args.kwargs["start_new_session"])
+
+    def test_run_forwards_exclusions_without_changing_existing_queue(self):
+        project = self.root / "project"
+        project.mkdir()
+        (project / "Asset_Prompts_Full.md").write_text("### CHAR-15: test\n```a person```\n")
+        work = project / ".imagegen/regen_20260913_review"
+        common = [str(project), "--assets", "CHAR-15", "--work-name", work.name]
+        self.assertEqual(regen.main(common), 0)
+        before = (work / "image_queue.json").read_bytes()
+        with patch.object(regen.subprocess, "Popen", return_value=Mock(pid=12345)) as start:
+            self.assertEqual(regen.main(common + ["--run", "--exclude", "CHAR-15",
+                                                 "--exclude-slots", "bg,still"]), 0)
+        self.assertEqual(start.call_args.args[0][-4:],
+                         ["--exclude", "CHAR-15", "--exclude-slots", "bg,still"])
+        self.assertEqual((work / "image_queue.json").read_bytes(), before)
 
     def test_work_name_isolates_run_and_verify(self):
         project = self.root / "project"

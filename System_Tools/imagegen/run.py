@@ -242,6 +242,8 @@ def parse_args(argv=None):
     parser.add_argument('work')
     parser.add_argument('--parallel', type=int, default=DEFAULT_PARALLEL)
     parser.add_argument('--min-interval', type=float, default=60)
+    parser.add_argument('--exclude', default='', help='投入しないID（カンマ区切り）')
+    parser.add_argument('--exclude-slots', default='', help='投入しないslot（例: bg,still）')
     args = parser.parse_args(argv)
     if args.parallel < 1:
         parser.error('--parallel は1以上を指定してください')
@@ -264,10 +266,15 @@ class ParallelQueue:
         self.retries = 0
         self.stopped = False
 
-    def assign(self, worker):
+    def assign(self, worker, skip=None):
         if self.stopped or worker in self.inflight or not self.pending:
             return None
-        key = self.pending.popleft()
+        while self.pending:
+            key = self.pending.popleft()
+            if skip is None or not skip(self.items[key]):
+                break
+        else:
+            return None
         self.inflight[worker] = key
         self.attempts[key] = self.attempts.get(key, 0) + 1
         self.retries += int(self.attempts[key] > 1)
@@ -285,6 +292,25 @@ class ParallelQueue:
 
     def stop(self):
         self.stopped = True
+
+
+class DispatchFilter:
+    """ディスクのキューを変えず、各割当て直前の保存状況で判定する。"""
+    def __init__(self, work, queue, exclude='', exclude_slots=''):
+        self.images = work / 'images'
+        self.slots = {item['id']: item.get('slot') for item in queue}
+        self.exclude = {value.strip() for value in exclude.split(',') if value.strip()}
+        self.exclude_slots = {value.strip() for value in exclude_slots.split(',') if value.strip()}
+        self.logged = set()
+
+    def __call__(self, item):
+        key = item['id']
+        reason = ('保存済み' if (self.images / (key + '.png')).exists() else
+                  '除外指定' if key in self.exclude or self.slots.get(key) in self.exclude_slots else None)
+        if reason and key not in self.logged:
+            print(f'飛ばした：{key}（{reason}）', flush=True)
+            self.logged.add(key)
+        return bool(reason)
 
 
 class SendPacer:
@@ -555,7 +581,7 @@ def wait_parallel_login(target):
     raise RuntimeError('専用ChromeでChatGPTへのログインを確認できません')
 
 
-def run_parallel(work, count, *, min_interval=60, max_attempts=None):
+def run_parallel(work, count, *, min_interval=60, max_attempts=None, exclude='', exclude_slots=''):
     """独立ウィンドウへ配分。max_attemptsは実測の発注上限用（CLI非公開）。"""
     (work / '.imagegen').mkdir(exist_ok=True)
     limit_path = work / '.imagegen/limit_until.json'
@@ -563,8 +589,12 @@ def run_parallel(work, count, *, min_interval=60, max_attempts=None):
         raise SystemExit(75)
     collect(work)
     queue, todo = remaining(work)
+    skip = DispatchFilter(work, queue, exclude, exclude_slots)
+    for item in queue:
+        skip(item)
+    todo = [item for item in todo if not skip(item)]
     if not todo:
-        print(f'すべて完成しています（{len(queue)}枚）', flush=True)
+        print(f'投入対象は残り0件（全キュー{len(queue)}件）', flush=True)
         return
     scheduler = ParallelQueue(todo)
     key = 'yamaParallelLimit:' + hashlib.sha256(str(work).encode()).hexdigest()
@@ -573,7 +603,7 @@ def run_parallel(work, count, *, min_interval=60, max_attempts=None):
     started = time.time()
     previous = json.loads(state_path.read_text()) if state_path.exists() else {}
     pacer = SendPacer(min_interval, previous.get('pacing'))
-    initial_have = {q['id'] for q in queue} - {q['id'] for q in todo}
+    initial_have = verified_ids(work, queue)
     access = AccessCooldown(work, initial_have)
     cooling = access.waiting()
     last_wait_log = 0
@@ -635,15 +665,17 @@ def run_parallel(work, count, *, min_interval=60, max_attempts=None):
             pacer.observe(snapshots, time.time())
             collect(work)
             _, left = remaining(work)
-            have = {i['id'] for i in queue} - {i['id'] for i in left}
+            have = ({i['id'] for i in queue} - {i['id'] for i in left}) | {
+                i['id'] for i in queue if (work / 'images' / (i['id'] + '.png')).exists()}
+            left = [item for item in left if not skip(item)]
             access.saved(have)
             if not left:
                 scheduler.pending.clear()
                 scheduler.inflight.clear()
                 status = 'finished'
                 result = record()
-                heartbeat(work, verified=len(queue), total=len(queue), status=status)
-                print(f'完成 {len(queue)}枚 / {result["elapsed"]:.1f}秒 / 失敗{scheduler.failures} / 再投入{scheduler.retries}', flush=True)
+                heartbeat(work, verified=len(have), total=len(queue), status=status)
+                print(f'投入対象の処理終了（保存済み{len(have)}/{len(queue)}枚） / {result["elapsed"]:.1f}秒 / 失敗{scheduler.failures} / 再投入{scheduler.retries}', flush=True)
                 return result
             if cooling:
                 if access.consecutive >= 4:
@@ -738,7 +770,7 @@ def run_parallel(work, count, *, min_interval=60, max_attempts=None):
                     if not scheduler.inflight:
                         raise RuntimeError('実測の投入数上限に達したため停止しました')
                     break
-                item = scheduler.assign(worker)
+                item = scheduler.assign(worker, skip)
                 if item:
                     dispatched_at[worker] = time.time()
                     idle_since.pop(worker, None)
@@ -776,91 +808,8 @@ def main():
     _lock_handle = acquire_lock(work)
 
     bridge.start()
-    if args.parallel > 1:
-        return run_parallel(work, args.parallel, min_interval=args.min_interval)
-    open_chatgpt()
-    try:
-        js('1')
-    except (TimeoutError, ConnectionError):
-        from recover import fresh_recovery_tab
-        ws = fresh_recovery_tab()
-        bridge.command(ws, 'Page.navigate', {'url': 'https://chatgpt.com/'}, timeout=30)
-    handle_access_limit(work)
-    wait_for_login()
-    bridge.allow_downloads(work / 'images')
-    # 停止直前に保存された画像・照合記録を取り込み、再起動時の重複生成を防ぐ。
-    collect(work)
-
-    queue, todo = remaining(work)
-    if not todo:
-        print(f'すべて完成しています（{len(queue)}枚）')
-        return
-    print(f'全{len(queue)}枚のうち、残り{len(todo)}枚を作ります')
-    if (work / '.imagegen' / 'require_receipts').exists():
-        if not js('!!window.__yamaGen?.running'):
-            quarantine_pending(work, todo)
-    install_and_run(todo)
-
-    last_count, last_change = len(queue) - len(todo), time.time()
-    last_note = None
-    heartbeat(work, verified=last_count, total=len(queue), status='generating')
-    while True:
-        time.sleep(15)
-        handle_access_limit(work)
-        collect(work)
-        _, todo = remaining(work)
-        done = len(queue) - len(todo)
-        heartbeat(work, verified=done, total=len(queue), status='generating')
-
-        if not todo:
-            heartbeat(work, verified=done, total=len(queue), status='finished')
-            print(f'完成しました（{len(queue)}枚）')
-            return
-
-        if done != last_count:
-            note_limit(work, None)        # 動き出したので上限待ちの印は消す
-            last_count, last_change = done, time.time()
-            print(f'  {done}/{len(queue)} 枚', flush=True)
-            continue
-
-        # 増えていないとき。上限待ちなら正常なので、そのまま待つ。
-        try:
-            state = json.loads(js(
-                'JSON.stringify({running: __yamaGen.running, '
-                'busy: !!document.querySelector("[data-testid=stop-button]"), current: __yamaGen.current, '
-                'until: __yamaGen.limitUntil || 0, '
-                'liveLimit: window.__yamaLimitEvidence?.() || null, waitState: __yamaGen.waitState || null, '
-                'retryVisible: [...document.querySelectorAll("main button")].some(b=>/^(再試行|Retry)$/.test(b.innerText.trim())), '
-                'last: __yamaGen.log.slice(-1)[0] || ""})'))
-        except Exception as e:
-            print(f'  ページを見失いました（{e}）— 入れ直します', flush=True)
-            open_chatgpt(); wait_for_login(); install_and_run(todo)
-            last_change = time.time()
-            continue
-
-        observation = observed_generation_state(state)
-        heartbeat(work, verified=done, total=len(queue), current=state.get('current'), **observation)
-
-        if observation['status'] in ('limit_wait', 'access_wait', 'scheduled_wait'):
-            # 待てば空く。driver.js が自分で再開する。
-            # 解除予定の時刻を書き出しておくと、常駐がその時刻に合わせて起こしてくれる。
-            note_limit(work, state.get('until'))
-            if state.get('until'):
-                at = time.strftime('%m/%d %H:%M', time.localtime(state['until'] / 1000))
-                if at != last_note:
-                    print(f'  上限待ち。解除は {at} ごろ', flush=True)
-                    last_note = at
-            continue
-        if not state['running'] or time.time() - last_change > STALL_LIMIT:
-            print('  止まっているので入れ直します', flush=True)
-            if state['running'] and not state.get('busy'):
-                target = next(t for t in bridge.tabs() if 'chatgpt.com' in t.get('url', ''))
-                bridge.command(target['webSocketDebuggerUrl'], 'Page.reload', {}, timeout=30)
-                time.sleep(5)
-            if not js('!!window.__yamaGen?.running'):
-                quarantine_pending(work, todo)
-            install_and_run(todo)
-            last_change = time.time()
+    return run_parallel(work, args.parallel, min_interval=args.min_interval,
+                        exclude=args.exclude, exclude_slots=args.exclude_slots)
 
 
 if __name__ == '__main__':

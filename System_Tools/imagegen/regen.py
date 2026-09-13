@@ -322,6 +322,8 @@ def main(argv=None):
     parser.add_argument("--work-name", help="作業フォルダ名（既定: regen_<YYYYMMDD>）")
     parser.add_argument("--parallel", type=int, help="run.py に渡す並列数")
     parser.add_argument("--min-interval", type=float, help="run.py に渡す全ウィンドウ共通の最小送信間隔（秒）")
+    parser.add_argument("--exclude", help="run.py に渡す除外ID（カンマ区切り）")
+    parser.add_argument("--exclude-slots", help="run.py に渡す除外slot（例: bg,still）")
     modes = parser.add_mutually_exclusive_group()
     modes.add_argument("--run", action="store_true")
     modes.add_argument("--verify", action="store_true")
@@ -392,7 +394,9 @@ def main(argv=None):
                 proc = subprocess.Popen(
                     ["nohup", sys.executable, "-B", "-u", str(HERE / "run.py"), str(work)]
                     + (["--parallel", str(args.parallel)] if args.parallel is not None else [])
-                    + (["--min-interval", str(args.min_interval)] if args.min_interval is not None else []),
+                    + (["--min-interval", str(args.min_interval)] if args.min_interval is not None else [])
+                    + (["--exclude", args.exclude] if args.exclude is not None else [])
+                    + (["--exclude-slots", args.exclude_slots] if args.exclude_slots is not None else []),
                     stdin=subprocess.DEVNULL, stdout=log, stderr=subprocess.STDOUT,
                     start_new_session=True,
                 )

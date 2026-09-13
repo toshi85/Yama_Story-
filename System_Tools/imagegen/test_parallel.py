@@ -77,10 +77,11 @@ class QueueTests(unittest.TestCase):
 
 
 class IntegrationTests(unittest.TestCase):
-    def simulate(self, failure=False, limit=False, budget=None):
+    def simulate(self, failure=False, limit=False, budget=None, external=False, exclude='', exclude_slots='', count=3):
         with TemporaryDirectory() as temp:
             work = Path(temp)
-            queue = [{'id': str(i), 'prompt': f'p{i}'} for i in range(6)]
+            queue = [{'id': str(i), 'prompt': f'p{i}', 'slot': ('bg' if i == 3 else 'still' if i == 4 else 'char')} for i in range(6)]
+            (work / 'images').mkdir()
             (work / 'image_queue.json').write_text(json.dumps(queue))
             completed, active, attempts, stops = set(), {}, [], []
             targets = [{'id': str(i), 'webSocketDebuggerUrl': f'ws://{i}'} for i in range(3)]
@@ -106,6 +107,11 @@ class IntegrationTests(unittest.TestCase):
                 self.assertNotIn(item['id'], active.values())
                 active[target['id']] = item['id']
                 attempts.append(item['id'])
+                if external and len(attempts) == 1:
+                    # 最初の生成中に別プロセスが次の画像を保存する。
+                    subprocess.run([run.sys.executable, '-B', '-c',
+                                    'from pathlib import Path; import sys; Path(sys.argv[1]).write_bytes(b"png")',
+                                    str(work / 'images/1.png')], check=True)
             with patch.object(run.bridge, 'tabs', return_value=[]), \
                  patch.object(run.bridge, 'new_window', side_effect=targets), \
                  patch.object(run, 'ParallelDownloads'), \
@@ -117,7 +123,7 @@ class IntegrationTests(unittest.TestCase):
                  patch.object(run, 'stop_parallel', side_effect=lambda ts,k: stops.extend(ts) or []), \
                  patch.object(run.time, 'sleep'):
                 try:
-                    run.run_parallel(work, 3, max_attempts=budget)
+                    run.run_parallel(work, count, max_attempts=budget, exclude=exclude, exclude_slots=exclude_slots)
                     exit_code = 0
                 except SystemExit as exc:
                     exit_code = exc.code
@@ -126,6 +132,68 @@ class IntegrationTests(unittest.TestCase):
             state = json.loads((work / '.imagegen/parallel_state.json').read_text())
             until = work / '.imagegen/limit_until.json'
             return attempts, stops, state, exit_code, until.exists()
+
+    def test_external_save_skipped_at_next_dispatch(self):
+        for count in (1, 3):
+            with self.subTest(count=count):
+                attempts, _, state, code, _ = self.simulate(external=True, count=count)
+                self.assertEqual(attempts, ['0', '2', '3', '4', '5'])
+                self.assertEqual((code, state['status'], state['retries']), (0, 'finished', 0))
+
+    def test_exclude_ids_are_never_dispatched(self):
+        attempts, _, state, code, _ = self.simulate(exclude='1,4')
+        self.assertEqual(attempts, ['0', '2', '3', '5'])
+        self.assertEqual((code, state['remaining_ids']), (0, []))
+
+    def test_exclude_slots_uses_queue_metadata(self):
+        attempts, _, state, code, _ = self.simulate(exclude_slots='bg,still')
+        self.assertEqual(attempts, ['0', '1', '2', '5'])
+        self.assertEqual((code, state['remaining_ids']), (0, []))
+
+    def test_combined_exclusions(self):
+        attempts, _, _, code, _ = self.simulate(exclude='1', exclude_slots='bg,still')
+        self.assertEqual(attempts, ['0', '2', '5'])
+        self.assertEqual(code, 0)
+
+    def test_all_excluded_does_not_open_windows_or_change_queue(self):
+        with TemporaryDirectory() as temp:
+            work = Path(temp)
+            queue = [{'id': 'x', 'slot': 'bg', 'prompt': 'p'}]
+            path = work / 'image_queue.json'
+            path.write_text(json.dumps(queue))
+            before = path.read_bytes()
+            with patch.object(run, 'collect'), patch.object(run.bridge, 'new_window') as create:
+                run.run_parallel(work, 2, exclude_slots='bg')
+            create.assert_not_called()
+            self.assertEqual(path.read_bytes(), before)
+
+    def test_skip_logs_reasons_and_does_not_count_attempts(self):
+        with TemporaryDirectory() as temp:
+            work = Path(temp)
+            (work / 'images').mkdir()
+            (work / 'images/a.png').write_bytes(b'png')
+            queue = [{'id': 'a'}, {'id': 'b'}, {'id': 'c'}]
+            skip = run.DispatchFilter(work, queue, exclude='b')
+            scheduler = run.ParallelQueue(queue)
+            output = io.StringIO()
+            with contextlib.redirect_stdout(output):
+                self.assertEqual(scheduler.assign('w', skip)['id'], 'c')
+            self.assertEqual(scheduler.attempts, {'c': 1})
+            self.assertIn('飛ばした：a（保存済み）', output.getvalue())
+            self.assertIn('飛ばした：b（除外指定）', output.getvalue())
+
+    def test_cli_accepts_both_exclusions(self):
+        args = run.parse_args(['/tmp/work', '--exclude', 'a,b', '--exclude-slots', 'bg,still'])
+        self.assertEqual((args.exclude, args.exclude_slots), ('a,b', 'bg,still'))
+
+    def test_single_window_uses_dispatch_filter(self):
+        with TemporaryDirectory() as temp, patch.object(run, 'prepare_work'), \
+                patch.object(run, 'acquire_lock'), patch.object(run.bridge, 'start'), \
+                patch.object(run, 'run_parallel') as start, \
+                patch.object(run.sys, 'argv', ['run.py', temp, '--parallel', '1', '--exclude-slots', 'bg,still']):
+            run.main()
+            self.assertEqual(start.call_args.args[1], 1)
+            self.assertEqual(start.call_args.kwargs['exclude_slots'], 'bg,still')
 
     def test_complete_saves_all_six(self):
         attempts, stops, state, code, _ = self.simulate()
