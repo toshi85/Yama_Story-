@@ -42,9 +42,9 @@
     "same_as_prev": false,
     "asset_file": "check/studio/jobs/20260908160709_repair_29/candidate.png"
   },
-  "state": "review",
+  "state": "adopted",
   "created_at": "2026-09-08T07:07:09.707424+00:00",
-  "updated_at": "2026-09-08T07:07:12.252543+00:00",
+  "updated_at": "2026-09-13T01:43:43.133961+00:00",
   "brief": "クマに後ろから襲われる男性の実写再現",
   "message": "修正後のカットを確認できます",
   "candidate": "check/studio/jobs/20260908160709_repair_29/candidate.png",
@@ -70,5 +70,47 @@
   "child_pid": null,
   "exit_code": 0,
   "preview": "check/studio/jobs/20260908160709_repair_29/preview.mp4",
-  "edit_layers": null
+  "edit_layers": null,
+  "before_override": {},
+  "before_shot": {
+    "id": 29,
+    "start_frame": 4367,
+    "end_frame": 4532,
+    "asset_id": "ASSET-029",
+    "asset_file": "画像/ASSET-029.mp4",
+    "asset_kind": "video",
+    "background_file": "",
+    "reused": false,
+    "style": "",
+    "narration": "逃げようとしたところを後ろから襲われ、そのまま沢へ転落した。",
+    "edit_note": "襲撃そのものは描かない。倒れた笹の筋を上から下へ追うカメラワークだけで示す。BGMは低音のみ。",
+    "speech": "",
+    "motion": "",
+    "drift": [
+      0,
+      0
+    ],
+    "move_sec": 2.4,
+    "base_x": 0,
+    "pan": "",
+    "mono": false,
+    "haze": false,
+    "telops": [],
+    "question": "",
+    "bubble_delay": 0.5,
+    "thought": false,
+    "part": "",
+    "section": "1. 全素材リスト（台本順）",
+    "same_as_prev": false
+  },
+  "adopted_at": "2026-09-13T01:43:43.133900+00:00",
+  "applied_override": {
+    "asset_kind": "image",
+    "background_file": "",
+    "speech": "",
+    "motion": "still",
+    "motion_path": null,
+    "same_as_prev": false,
+    "asset_file": "check/studio/jobs/20260908160709_repair_29/candidate.png"
+  }
 }

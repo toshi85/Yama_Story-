@@ -145,16 +145,98 @@
     },
     "31": {
       "telop": "",
-      "asset_file": "画像/ASSET-031_キャラ_v2.png"
+      "asset_file": "check/studio/jobs/20260908184636_ui_feature_31/stage0.png",
+      "asset_kind": "image",
+      "background_file": "",
+      "speech": "",
+      "speech_segments": [],
+      "motion": "still",
+      "motion_path": null,
+      "same_as_prev": false,
+      "pan": "",
+      "camera_motion": "",
+      "hide_character": false,
+      "character_position": null,
+      "speech_position": null,
+      "scale": 1,
+      "base_x": 0,
+      "base_y": 0,
+      "telops": [],
+      "overlays": [
+        {
+          "type": "image",
+          "file": "check/studio/jobs/20260908184636_ui_feature_31/stage1.png",
+          "x": 640,
+          "y": 360,
+          "w": 1280,
+          "start": 4.6,
+          "end": 6.833333333333333,
+          "anim": "none"
+        }
+      ]
     },
     "37": {
-      "telop": ""
+      "telop": "",
+      "motion": "jump",
+      "move_sec": 1,
+      "amount": 0.4,
+      "scale": 1,
+      "motion_path": null
     },
     "41": {
-      "telop": ""
+      "telop": "",
+      "asset_kind": "image",
+      "background_file": "",
+      "speech": "",
+      "speech_segments": [],
+      "motion": "still",
+      "motion_path": null,
+      "same_as_prev": false,
+      "pan": "",
+      "camera_motion": "",
+      "hide_character": false,
+      "character_position": null,
+      "speech_position": null,
+      "scale": 1,
+      "base_x": 0,
+      "base_y": 0,
+      "telops": [],
+      "asset_file": "画像/ASSET-041-1.png",
+      "overlays": [
+        {
+          "type": "image",
+          "file": "check/studio/jobs/20260908185007_ui_feature_41/people-alpha.png",
+          "x": 640,
+          "y": 350,
+          "w": 900,
+          "start": 0,
+          "end": 7.933333333333334,
+          "anim": "none"
+        }
+      ]
     },
     "44": {
-      "telop": ""
+      "telop": "",
+      "tail_tip_dx": 72,
+      "tail_tip_dy": 57,
+      "speech_segments": [
+        {
+          "text": "珍しい\nことです",
+          "start": 0.5,
+          "end": 5.7
+        }
+      ],
+      "speech": "珍しい\nことです",
+      "bubble_dx": 260,
+      "bubble_dy": -29,
+      "character_position": [
+        365.5,
+        252
+      ],
+      "speech_position": [
+        625,
+        223
+      ]
     },
     "46": {
       "telop": ""
@@ -665,7 +747,25 @@
     },
     "9": {
       "asset_file": "check/studio/jobs/20260912144547_c89b291f/source.mp4",
-      "asset_kind": "video"
+      "asset_kind": "video",
+      "overlays": [
+        {
+          "text": "戸沢村（とざわむら）",
+          "x": 640,
+          "y": 360,
+          "size": 60,
+          "color": "#ffffff",
+          "font": "mincho",
+          "angle": 0,
+          "length": 300,
+          "thickness": 8,
+          "anim": "fade",
+          "anim_duration": 1,
+          "start": 0.0,
+          "end": 6.266,
+          "type": "text"
+        }
+      ]
     },
     "15": {
       "mono_start": 1.613,
@@ -680,35 +780,36 @@
       "telop_anim_duration": 1
     },
     "23": {
-      "overlays": [
+      "overlays": [],
+      "asset_kind": "character",
+      "style": "black_card",
+      "motion": "still",
+      "asset_file": "check/studio/jobs/20260908140846_alpha_22/candidate.png",
+      "background_file": "画像/ASSET-022-1.png",
+      "base_x": 0,
+      "drift": [
+        409,
+        43
+      ],
+      "move_sec": 1.7,
+      "mono_start": 0,
+      "motion_path": null,
+      "speech": "",
+      "telop": "傷はそこだけではない",
+      "telop_position": [
+        640,
+        360
+      ],
+      "telop_highlights": [
         {
-          "type": "text",
           "text": "傷",
-          "color": "#FF0000",
-          "x": 302,
-          "y": 360,
-          "size": 60,
-          "font": "mincho",
-          "anim": "fade",
-          "anim_duration": 0.8,
-          "start": 0.3
-        },
-        {
-          "type": "text",
-          "text": "は、そこだけではありません。",
-          "color": "#FFFFFF",
-          "x": 682,
-          "y": 360,
-          "size": 60,
-          "font": "mincho",
-          "anim": "fade",
-          "anim_duration": 0.8,
-          "start": 0.3
+          "color": "#FF0000"
         }
       ],
-      "asset_kind": "black_card",
-      "style": "black_card",
-      "motion": "still"
+      "telop_anim": "none",
+      "telop_start": 0,
+      "telop_end": 2.433333333333333,
+      "same_as_prev": false
     },
     "24": {
       "asset_file": "画像/ASSET-024_キャラ.png",
@@ -719,13 +820,32 @@
         0,
         0
       ],
-      "base_x": 0
+      "base_x": -20,
+      "base_y": -160,
+      "tail_tip_dx": 78,
+      "tail_tip_dy": 22,
+      "speech": "これは\nひどい、、",
+      "bubble_dx": 282,
+      "bubble_dy": -49,
+      "character_position": [
+        432,
+        172
+      ],
+      "speech_position": [
+        714,
+        123
+      ]
     },
     "1": {
       "video_fit": "stretch",
       "video_speed": null
     },
-    "20": {},
+    "20": {
+      "hide_character": false,
+      "motion": "zoom_in",
+      "motion_path": null,
+      "camera_amount": 0.04
+    },
     "21": {
       "narration": "集落から500〜600メートルほど\n離れた付近。",
       "asset_file": "check/studio/jobs/20260908163603_final_21/candidate.png",
@@ -796,6 +916,149 @@
           "font": "rounded",
           "size": 48,
           "length": 395
+        }
+      ]
+    },
+    "25": {
+      "motion": "pan_r",
+      "camera_amount": 0.06,
+      "motion_path": null
+    },
+    "28": {
+      "asset_kind": "image",
+      "background_file": "",
+      "speech": "",
+      "speech_segments": [],
+      "motion": "still",
+      "motion_path": null,
+      "same_as_prev": false,
+      "pan": "",
+      "camera_motion": "",
+      "hide_character": false,
+      "character_position": null,
+      "speech_position": null,
+      "scale": 1,
+      "base_x": 0,
+      "base_y": 0,
+      "telop": "",
+      "telops": [],
+      "asset_file": "check/studio/jobs/20260908182230_ui_feature_28/stage1.png",
+      "overlays": [
+        {
+          "type": "text",
+          "text": "※この場面は資料からの推定です",
+          "x": 950,
+          "y": 535,
+          "size": 22,
+          "start": 0,
+          "end": 3.8666666666666667,
+          "anim": "none",
+          "font": "mincho"
+        },
+        {
+          "type": "image",
+          "file": "check/studio/jobs/20260908182230_ui_feature_28/stage2.png",
+          "x": 640,
+          "y": 360,
+          "w": 1280,
+          "start": 1.5333333333333334,
+          "end": 2.1333333333333333,
+          "anim": "none"
+        },
+        {
+          "type": "image",
+          "file": "check/studio/jobs/20260908182230_ui_feature_28/stage3.png",
+          "x": 640,
+          "y": 360,
+          "w": 1280,
+          "start": 2.1333333333333333,
+          "end": 3.8666666666666667,
+          "anim": "none"
+        }
+      ]
+    },
+    "29": {
+      "asset_kind": "image",
+      "background_file": "",
+      "speech": "",
+      "motion": "still",
+      "motion_path": null,
+      "same_as_prev": false,
+      "asset_file": "check/studio/jobs/20260908160709_repair_29/candidate.png"
+    },
+    "34": {
+      "asset_file": "check/studio/jobs/20260913104623_51fcfe61/source.mp4",
+      "asset_kind": "video"
+    },
+    "38": {
+      "base_x": -170,
+      "base_y": -46,
+      "tail_tip_dx": 239,
+      "tail_tip_dy": 51,
+      "speech_segments": [
+        {
+          "text": "はやく\n助けないと",
+          "start": 0.5,
+          "end": 7
+        }
+      ],
+      "speech": "はやく\n助けないと",
+      "bubble_dx": 371,
+      "bubble_dy": 15,
+      "character_position": [
+        357,
+        229
+      ],
+      "speech_position": [
+        728,
+        244
+      ]
+    },
+    "26": {
+      "background_file": "check/studio/jobs/20260913104025_250e5767/candidate.png"
+    },
+    "42": {
+      "asset_kind": "image",
+      "background_file": "",
+      "speech": "",
+      "speech_segments": [],
+      "motion": "still",
+      "motion_path": null,
+      "same_as_prev": false,
+      "pan": "",
+      "camera_motion": "",
+      "hide_character": false,
+      "character_position": null,
+      "speech_position": null,
+      "scale": 1,
+      "base_x": 0,
+      "base_y": 0,
+      "telop": "",
+      "telops": [],
+      "asset_file": "check/studio/jobs/20260908182234_ui_feature_42/candidate.png"
+    },
+    "51": {
+      "asset_file": "check/studio/jobs/20260913110849_6549373d/candidate_asset_kanda_overview.png",
+      "asset_kind": "image",
+      "background_file": "",
+      "motion": "still",
+      "motion_path": null,
+      "speech": "",
+      "speech_segments": [],
+      "character_position": null,
+      "speech_position": null,
+      "base_x": 0,
+      "base_y": 0,
+      "scale": 1,
+      "map_pins": [
+        {
+          "label": "神田地区",
+          "x": 640,
+          "y": 500,
+          "font": "mincho",
+          "size": 36,
+          "start": 0,
+          "end": 7.9
         }
       ]
     }
