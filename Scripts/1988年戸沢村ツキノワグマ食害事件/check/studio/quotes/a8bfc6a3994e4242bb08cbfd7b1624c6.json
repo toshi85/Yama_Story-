@@ -1,0 +1,16 @@
+{
+  "model": "minimax/h3-max-turbo",
+  "duration": 5,
+  "resolution": "768P",
+  "usd_per_second": "0.01",
+  "usd_per_clip": "0.05",
+  "estimated_jpy": "7.50",
+  "jpy_reference_rate": 150,
+  "source": "画像/ASSET-034.png",
+  "checked_at": "2026-09-13T01:46:18.332943+00:00",
+  "id": "a8bfc6a3994e4242bb08cbfd7b1624c6",
+  "timestamp": 1789263979.6069078,
+  "prompt": "Create a 5-second continuous shot from the provided image. Preserve the original composition of the nighttime mountain stream, wet foreground rocks, and dense green bamboo grass on the opposite bank. Keep the camera fixed. Animate the existing flashlight illumination so its soft-edged oval slowly sweeps from left to right across the bamboo and stream bank, as someone off-screen cautiously searches the surroundings. Add subtle hesitation and slight natural hand tremor to the beam movement. Leaves and rocks brighten as the light passes and return to dim ambient darkness afterward; maintain faint visibility outside the beam. Keep the flashlight itself off-screen. End while the beam is still searching, without revealing anything. No cuts, no camera movement, no new people or animals, no added objects, no text. No blood, no wounds, no gore.",
+  "shot_id": 34,
+  "consumed": true
+}

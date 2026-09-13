@@ -138,7 +138,25 @@
         0,
         0
       ],
-      "base_x": 0
+      "base_x": 0,
+      "overlays": [
+        {
+          "text": "大量<赤>出血</赤>",
+          "x": 640,
+          "y": 360,
+          "size": 48,
+          "color": "#ffffff",
+          "font": "mincho",
+          "angle": 0,
+          "length": 300,
+          "thickness": 8,
+          "anim": "fade",
+          "anim_duration": 1,
+          "start": 0.0,
+          "end": 5.433,
+          "type": "text"
+        }
+      ]
     },
     "30": {
       "telop": ""
@@ -181,7 +199,22 @@
       "move_sec": 1,
       "amount": 0.4,
       "scale": 1,
-      "motion_path": null
+      "motion_path": null,
+      "base_x": -146,
+      "base_y": -20,
+      "tail_tip_dx": 92,
+      "tail_tip_dy": 72,
+      "speech": "ガルゥゥゥ！",
+      "bubble_dx": 252,
+      "bubble_dy": 16,
+      "character_position": [
+        369,
+        242
+      ],
+      "speech_position": [
+        621,
+        258
+      ]
     },
     "41": {
       "telop": "",
@@ -236,34 +269,223 @@
       "speech_position": [
         625,
         223
-      ]
+      ],
+      "motion": "still",
+      "move_sec": 1,
+      "amount": 1,
+      "scale": 1,
+      "flip": false,
+      "background_file": "画像/ASSET-044-1.png",
+      "motion_path": null
     },
     "46": {
       "telop": ""
     },
     "47": {
-      "telop": ""
+      "telop": "",
+      "asset_file": "check/studio/jobs/20260913134648_a5c52a80/candidate-alpha.png",
+      "asset_kind": "character",
+      "background_file": "画像/ASSET-047-1.png",
+      "base_x": -90,
+      "base_y": -166,
+      "speech_segments": [],
+      "speech": "",
+      "bubble_dx": 256,
+      "bubble_dy": 109,
+      "character_position": [
+        397,
+        169
+      ],
+      "speech_position": [
+        653,
+        278
+      ],
+      "motion": "lean",
+      "move_sec": 1.4,
+      "amount": 1,
+      "scale": 1.25,
+      "flip": false,
+      "motion_path": null
     },
     "50": {
-      "telop": ""
+      "telop": "",
+      "asset_file": "check/studio/jobs/20260913110754_7ee438c1/candidate_asset.png",
+      "asset_kind": "character",
+      "background_file": "画像/ASSET-050-1.png",
+      "base_x": -319,
+      "base_y": 8,
+      "tail_tip_dx": 76,
+      "tail_tip_dy": 43,
+      "speech_segments": [
+        {
+          "text": "おねがい\nします",
+          "start": 1.5,
+          "end": 7.433
+        }
+      ],
+      "speech": "おねがい\nします",
+      "bubble_dx": 443.5,
+      "bubble_dy": -12,
+      "character_position": [
+        129,
+        256
+      ],
+      "speech_position": [
+        572,
+        244
+      ]
     },
     "53": {
-      "telop": ""
+      "telop": "",
+      "overlays": [
+        {
+          "type": "image",
+          "file": "check/studio/jobs/20260913134647_9664836b/candidate-alpha.png",
+          "x": 247,
+          "y": 559,
+          "w": 520,
+          "start": 0,
+          "end": 10.1,
+          "anim": "none"
+        }
+      ],
+      "base_x": 86,
+      "base_y": 76,
+      "tail_tip_dx": 55,
+      "tail_tip_dy": 19,
+      "speech": "このクマも\n違うか！",
+      "bubble_dx": 260.5,
+      "bubble_dy": -42,
+      "character_position": [
+        485,
+        290
+      ],
+      "speech_position": [
+        745,
+        248
+      ]
     },
     "54": {
       "telop": ""
     },
     "58": {
-      "telop": ""
+      "telop": "",
+      "base_x": -166,
+      "base_y": -14,
+      "tail_tip_dx": 75,
+      "tail_tip_dy": 46,
+      "speech": "たくさん\n採るわよ",
+      "bubble_dx": 290,
+      "bubble_dy": -24,
+      "character_position": [
+        359,
+        245
+      ],
+      "speech_position": [
+        649,
+        221
+      ],
+      "motion": "path",
+      "move_sec": 4,
+      "amount": 1,
+      "scale": 1,
+      "flip": false,
+      "background_file": "画像/ASSET-058-1.png",
+      "motion_path": {
+        "start": [
+          873,
+          388
+        ],
+        "end": [
+          208,
+          478
+        ],
+        "duration": 4,
+        "midpoints": [
+          [
+            693,
+            451
+          ]
+        ]
+      }
     },
     "63": {
-      "telop": ""
+      "telop": "",
+      "tail_tip_dx": -296,
+      "tail_tip_dy": 39,
+      "speech": "聞こえ\nますか？",
+      "bubble_dx": -173,
+      "bubble_dy": -32,
+      "character_position": [
+        276,
+        252
+      ],
+      "speech_position": [
+        103,
+        220
+      ],
+      "motion": "path",
+      "move_sec": 2.4,
+      "amount": 1,
+      "scale": 1,
+      "flip": false,
+      "background_file": "画像/ASSET-063-1.png",
+      "motion_path": {
+        "start": [
+          230,
+          493
+        ],
+        "end": [
+          1037,
+          421
+        ],
+        "duration": 2.4,
+        "midpoints": [
+          [
+            648,
+            446
+          ]
+        ]
+      }
     },
     "64": {
-      "telop": ""
+      "telop": "",
+      "tail_tip_dx": 77,
+      "tail_tip_dy": 7,
+      "speech_segments": [
+        {
+          "text": "仕方ないか",
+          "start": 0.5,
+          "end": 6.033
+        }
+      ],
+      "speech": "仕方ないか",
+      "bubble_dx": 296,
+      "bubble_dy": -24,
+      "character_position": [
+        442,
+        252
+      ],
+      "speech_position": [
+        738,
+        228
+      ]
     },
     "66": {
-      "telop": ""
+      "telop": "",
+      "base_x": -90,
+      "base_y": 10,
+      "speech": "すぐに\n見つかるさ",
+      "bubble_dx": 221.5,
+      "bubble_dy": -65,
+      "character_position": [
+        397,
+        257
+      ],
+      "speech_position": [
+        618,
+        192
+      ]
     },
     "67": {
       "telop": ""
@@ -945,17 +1167,6 @@
       "asset_file": "check/studio/jobs/20260908182230_ui_feature_28/stage1.png",
       "overlays": [
         {
-          "type": "text",
-          "text": "※この場面は資料からの推定です",
-          "x": 950,
-          "y": 535,
-          "size": 22,
-          "start": 0,
-          "end": 3.8666666666666667,
-          "anim": "none",
-          "font": "mincho"
-        },
-        {
           "type": "image",
           "file": "check/studio/jobs/20260908182230_ui_feature_28/stage2.png",
           "x": 640,
@@ -1015,7 +1226,28 @@
       ]
     },
     "26": {
-      "background_file": "check/studio/jobs/20260913104025_250e5767/candidate.png"
+      "background_file": "check/studio/jobs/20260913104025_250e5767/candidate.png",
+      "base_x": 18,
+      "base_y": -238,
+      "tail_tip_dx": -182,
+      "tail_tip_dy": 110,
+      "speech": "こりゃ\nクマだ",
+      "bubble_dx": -98,
+      "bubble_dy": 41,
+      "character_position": [
+        451,
+        133
+      ],
+      "speech_position": [
+        353,
+        174
+      ],
+      "motion": "still",
+      "move_sec": 1.7,
+      "amount": 1,
+      "scale": 1,
+      "flip": false,
+      "motion_path": null
     },
     "42": {
       "asset_kind": "image",
@@ -1053,14 +1285,153 @@
       "map_pins": [
         {
           "label": "神田地区",
-          "x": 640,
+          "x": 639,
           "y": 500,
           "font": "mincho",
           "size": 36,
           "start": 0,
           "end": 7.9
         }
+      ],
+      "overlays": [
+        {
+          "type": "shape",
+          "shape": "ellipse",
+          "style": "outline",
+          "w": 360,
+          "h": 251,
+          "thickness": 6,
+          "color": "#fff700",
+          "angle": 0,
+          "x": 649,
+          "y": 448,
+          "start": 0,
+          "end": 7.9,
+          "anim": "fade",
+          "font": "rounded",
+          "arrow_heads": "one",
+          "size": 48,
+          "length": 300
+        }
       ]
+    },
+    "56": {
+      "overlays": [
+        {
+          "text": "さらなる悲劇",
+          "x": 640,
+          "y": 360,
+          "size": 48,
+          "color": "#ffffff",
+          "font": "mincho",
+          "angle": 0,
+          "length": 300,
+          "thickness": 8,
+          "anim": "fade",
+          "anim_duration": 1,
+          "start": 0.0,
+          "end": 5.166,
+          "type": "text"
+        }
+      ]
+    },
+    "60": {
+      "motion": "zoom_in",
+      "motion_path": null
+    },
+    "33": {
+      "asset_file": "check/studio/jobs/20260913131732_918a4ca7/source.mp4",
+      "asset_kind": "video"
+    },
+    "52": {
+      "asset_file": "check/studio/jobs/20260913134648_36eba98a/candidate-alpha.png",
+      "asset_kind": "character",
+      "background_file": "画像/ASSET-052-1.png",
+      "motion": "path",
+      "move_sec": 4,
+      "amount": 1,
+      "scale": 1,
+      "flip": false,
+      "motion_path": {
+        "start": [
+          1066,
+          609
+        ],
+        "end": [
+          502,
+          378
+        ],
+        "duration": 4,
+        "midpoints": [
+          [
+            572,
+            547
+          ]
+        ]
+      }
+    },
+    "55": {
+      "asset_file": "check/studio/jobs/20260913134647_d6934762/candidate-alpha.png",
+      "asset_kind": "character",
+      "background_file": "画像/ASSET-055-1.png"
+    },
+    "61": {
+      "asset_file": "画像/ASSET-060.png",
+      "asset_kind": "image",
+      "background_file": "",
+      "base_x": 0,
+      "motion": "still",
+      "motion_path": null,
+      "drift": [
+        0,
+        0
+      ],
+      "move_sec": 2.4,
+      "telop": "二度と戻りませんでした、、",
+      "telop_position": [
+        640,
+        360
+      ],
+      "telop_start": 0,
+      "telop_anim": "fade",
+      "telop_anim_duration": 1,
+      "telop_highlights": [
+        {
+          "text": "二度と",
+          "color": "#FF0000"
+        }
+      ]
+    },
+    "62": {
+      "base_x": 2,
+      "base_y": 184,
+      "tail_tip_dx": -178,
+      "tail_tip_dy": 3,
+      "speech": "あっち\nらしいわ",
+      "bubble_dx": -162.5,
+      "bubble_dy": -30,
+      "character_position": [
+        443,
+        344
+      ],
+      "speech_position": [
+        280,
+        314
+      ]
+    },
+    "69": {
+      "asset_file": "check/studio/jobs/20260913134351_a229bd84/candidate_asset_scene69_woman.png",
+      "asset_kind": "image",
+      "background_file": "",
+      "motion": "zoom_in",
+      "motion_path": null,
+      "speech": "",
+      "speech_segments": [],
+      "character_position": null,
+      "speech_position": null,
+      "base_x": 0,
+      "base_y": 0,
+      "scale": 1
     }
   }
 }

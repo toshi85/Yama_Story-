@@ -1,0 +1,141 @@
+{
+  "audio": "音声/本番ナレーション.mp3",
+  "audio_sha256": "29e8a9a66a849440d327e9c0b0d951542f1168e38b2b1b799dd33f69b5960eec",
+  "start_frame": 8426,
+  "end_frame": 8630,
+  "fps": 30.0,
+  "method": "local faster-whisper small; recognized words may differ from script",
+  "narration": "つまり、夫を襲ったクマはハンターから逃げ切った可能性が高いと言えるでしょう。",
+  "words": [
+    {
+      "text": "つ",
+      "start": 0.0,
+      "end": 0.18
+    },
+    {
+      "text": "まり、",
+      "start": 0.18,
+      "end": 0.42
+    },
+    {
+      "text": "夫",
+      "start": 0.84,
+      "end": 1.04
+    },
+    {
+      "text": "を",
+      "start": 1.04,
+      "end": 1.28
+    },
+    {
+      "text": "襲",
+      "start": 1.28,
+      "end": 1.34
+    },
+    {
+      "text": "った",
+      "start": 1.34,
+      "end": 1.54
+    },
+    {
+      "text": "ク",
+      "start": 1.54,
+      "end": 1.7
+    },
+    {
+      "text": "マ",
+      "start": 1.7,
+      "end": 1.84
+    },
+    {
+      "text": "は、",
+      "start": 1.84,
+      "end": 2.02
+    },
+    {
+      "text": "ハ",
+      "start": 2.32,
+      "end": 2.42
+    },
+    {
+      "text": "ン",
+      "start": 2.42,
+      "end": 2.48
+    },
+    {
+      "text": "ター",
+      "start": 2.48,
+      "end": 2.62
+    },
+    {
+      "text": "から",
+      "start": 2.62,
+      "end": 2.86
+    },
+    {
+      "text": "逃",
+      "start": 2.86,
+      "end": 3.02
+    },
+    {
+      "text": "げ",
+      "start": 3.02,
+      "end": 3.18
+    },
+    {
+      "text": "切",
+      "start": 3.18,
+      "end": 3.3
+    },
+    {
+      "text": "った",
+      "start": 3.3,
+      "end": 3.46
+    },
+    {
+      "text": "可能",
+      "start": 3.46,
+      "end": 3.64
+    },
+    {
+      "text": "性",
+      "start": 3.64,
+      "end": 3.9
+    },
+    {
+      "text": "が",
+      "start": 3.9,
+      "end": 4.04
+    },
+    {
+      "text": "高",
+      "start": 4.04,
+      "end": 4.24
+    },
+    {
+      "text": "い",
+      "start": 4.24,
+      "end": 4.44
+    },
+    {
+      "text": "と",
+      "start": 4.44,
+      "end": 4.54
+    },
+    {
+      "text": "言",
+      "start": 4.54,
+      "end": 4.66
+    },
+    {
+      "text": "える",
+      "start": 4.66,
+      "end": 4.78
+    },
+    {
+      "text": "でしょう。",
+      "start": 4.78,
+      "end": 5.08
+    }
+  ]
+}

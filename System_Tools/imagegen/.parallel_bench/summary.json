@@ -1,0 +1,32 @@
+{
+  "status": "stopped_error",
+  "at": 1789290692.406573,
+  "pid": 51680,
+  "reference_n1_seconds": 105,
+  "results": [
+    {
+      "parallel": 2,
+      "requested": 4,
+      "verified": 0,
+      "started": 1789290554.502321,
+      "elapsed_seconds": 137.90329599380493,
+      "seconds_per_image": null,
+      "all_saved": false,
+      "failures": 3,
+      "retries": 2,
+      "attempts": 4,
+      "limit_display": false,
+      "evidence": {
+        "error": "同じ項目が2回失敗したため停止しました"
+      },
+      "exit_code": 1,
+      "error": "同じ項目が2回失敗したため停止しました",
+      "displayed_text": {
+        "9D76D004F402A4B69474E60DA10BC7AC": "",
+        "ED7E66A5CB750AF74A3F2EA875039C60": ""
+      },
+      "queue_sha256": "4f893deedb7246a2015779935e4308ac3a25bc0b88ba06c85b52ecdc2bbb8514"
+    }
+  ],
+  "remaining": "ログ確認。N=3へ自動で切り替えない"
+}

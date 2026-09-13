@@ -1,0 +1,16 @@
+{
+  "model": "minimax/h3-max-turbo",
+  "duration": 5,
+  "resolution": "768P",
+  "usd_per_second": "0.01",
+  "usd_per_clip": "0.05",
+  "estimated_jpy": "7.50",
+  "jpy_reference_rate": 150,
+  "source": "画像/ASSET-033.png",
+  "checked_at": "2026-09-13T04:17:28.933521+00:00",
+  "id": "76979b80a3b14dfea3d9ecb53ad82d66",
+  "timestamp": 1789273050.135941,
+  "prompt": "Create a 5-second photorealistic video from the reference image. Preserve the original composition, dark nighttime lighting, forest vegetation, wet rocks, and mountain stream. Gently animate the bamboo grass on the far bank: slender stems sway slightly from side to side, while their leaves flutter softly with small, irregular movements. The bent stalk near the center flexes subtly and eases back, keeping its original shape and position. Keep the motion localized and restrained, with no strong wind or dramatic shaking. Lock the camera in place for one continuous shot. No cuts, new subjects, people, animals, flashlight beams, lighting changes, or text. No blood, no wounds, no gore.",
+  "shot_id": 33,
+  "consumed": true
+}

@@ -516,7 +516,7 @@ A plain office interior in a small Japanese rural town at night in late May: a s
 ```
 A tight view of a wall of fresh green bamboo grass on a steep slope in Yamagata, Japan in late May, the stalks parted in one place to show a narrow gap of dark ground beyond, young beech leaves overhead filtering the light. Late May, dim under the canopy but NOT pure black — the stalks and the gap stay clearly readable. No snow anywhere, no frost, no winter. Claustrophobic closeness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
-→ 編集者指示: 「※この場面は資料からの推定です」と小さく右下に添える。効果音は葉ずれの音を一瞬だけ。
+→ 編集者指示: 効果音は葉ずれの音を一瞬だけ。
 →男性セリフ「クマ、、！」
 
 ---
