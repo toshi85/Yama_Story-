@@ -18,6 +18,7 @@ import base64
 from collections import deque
 import hashlib
 import json
+import math
 import os
 import pathlib
 import socket
@@ -184,14 +185,14 @@ def observed_generation_state(state):
     return dict(status='generating' if state.get('busy') else 'checking', evidence=None)
 
 
-def dismiss_access_notice():
+def dismiss_access_notice(target=None):
     """既知のアクセス制限通知だけを閉じる。送信・再試行はしない。"""
     return bool(js('''(()=>{
       const d=[...document.querySelectorAll('[role=dialog],[role=alertdialog]')]
         .find(x=>/リクエストが多すぎ|リクエストの頻度が高|Too many requests/i.test(x.innerText));
       const b=d&&[...d.querySelectorAll('button')].find(x=>/^(了解|OK|Okay)$/i.test(x.innerText.trim()));
       if(!b)return false;b.click();return true;
-    })()''', timeout=10))
+    })()''', timeout=10, target=target))
 
 
 def handle_access_limit(work):
@@ -206,7 +207,7 @@ def handle_access_limit(work):
     if dismissed:
         js('(()=>{if(window.__yamaGen)window.__yamaGen.stop=true;clearInterval(window.__yamaSuper)})()')
         path.write_text(json.dumps({'until': time.time() + 180}))
-        print('ChatGPTのアクセス制限を検知。3分待って自動再開します', flush=True)
+        print('ChatGPTのアクセス制限を検知。終了コード75で停止します。再開は3分以降に外部から実行してください', flush=True)
         raise SystemExit(75)
     if previous:
         path.unlink()
@@ -240,9 +241,12 @@ def parse_args(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('work')
     parser.add_argument('--parallel', type=int, default=DEFAULT_PARALLEL)
+    parser.add_argument('--min-interval', type=float, default=60)
     args = parser.parse_args(argv)
     if args.parallel < 1:
         parser.error('--parallel は1以上を指定してください')
+    if not math.isfinite(args.min_interval) or args.min_interval < 0:
+        parser.error('--min-interval は0以上の有限の秒数を指定してください')
     return args
 
 
@@ -256,6 +260,7 @@ class ParallelQueue:
         self.inflight = {}
         self.attempts = {}
         self.failures = 0
+        self.item_failures = {}
         self.retries = 0
         self.stopped = False
 
@@ -272,7 +277,8 @@ class ParallelQueue:
         key = self.inflight.pop(worker)
         if not success:
             self.failures += 1
-            if self.attempts[key] >= 2:
+            self.item_failures[key] = self.item_failures.get(key, 0) + 1
+            if self.item_failures[key] >= 2:
                 self.stopped = True
             else:
                 self.pending.appendleft(key)
@@ -281,11 +287,153 @@ class ParallelQueue:
         self.stopped = True
 
 
+class SendPacer:
+    """全ウィンドウ共通で、実送信の確認後から次の許可までを計測する。"""
+    def __init__(self, interval, previous=None):
+        previous = previous or {}
+        self.interval = interval
+        self.last_sent_at = previous.get('last_sent_at', 0)
+        self.pending = None
+        self.sends = previous.get('sends', [])
+        if previous.get('pending'):
+            self.last_sent_at = max(self.last_sent_at, time.time())
+
+    def ready(self, now):
+        return self.pending is None and now >= self.last_sent_at + self.interval
+
+    def reserve(self, worker, request, now):
+        if not self.ready(now):
+            return False
+        self.pending = dict(worker=worker, **request)
+        return True
+
+    def observe(self, states, now):
+        if not self.pending:
+            return
+        state = states.get(self.pending['worker'], {})
+        if state.get('sentToken') == self.pending['token'] and state.get('sentAt') is not None:
+            self.last_sent_at = max(now, state['sentAt'])
+            self.sends.append(dict(**self.pending, sent_at=state['sentAt'], observed_at=now))
+            self.pending = None
+
+    def cancel(self, now):
+        # 許可済み送信の成否が不明でも、次の許可は少なくともinterval秒後。
+        if self.pending:
+            self.last_sent_at = max(self.last_sent_at, now)
+        self.pending = None
+
+    def state(self):
+        return dict(interval=self.interval, last_sent_at=self.last_sent_at,
+                    pending=self.pending, sends=self.sends)
+
+
+def grant_next_send(pacer, targets, snapshots, inflight, persist):
+    pacer.observe(snapshots, time.time())
+    if pacer.pending:
+        pending = pacer.pending
+        state = snapshots.get(pending['worker'], {})
+        if state.get('installed') and state.get('running'):
+            return
+        target = next(t for t in targets if t['id'] == pending['worker'])
+        js('(()=>{if(window.__yamaGen) __yamaGen.sendGrant=null;return true})()', target=target)
+        pacer.cancel(time.time())
+    for target in targets:
+        worker = target['id']
+        request = snapshots[worker].get('sendRequest')
+        if not request or request['id'] != inflight.get(worker):
+            continue
+        if not pacer.reserve(worker, request, time.time()):
+            return
+        persist()  # 許可を渡す前に所有者と時刻を記録する。
+        granted = js("""(()=>{
+          const g=window.__yamaGen, p=window.__yamaParallel;
+          if(!g || g.stop || localStorage.getItem(p.limitKey) || g.sendRequest?.token!==%s)return false;
+          g.sendGrant=%s; return true;
+        })()""" % (json.dumps(request['token']), json.dumps(request['token'])), target=target)
+        if not granted:
+            pacer.cancel(time.time())
+        return
+
+
+class AccessCooldown:
+    """アクセス制限だけの待機。画像枚数上限のlimit_until.jsonは触らない。"""
+    def __init__(self, work, have):
+        self.path = work / '.imagegen/access_limit.json'
+        previous = json.loads(self.path.read_text()) if self.path.exists() else {}
+        self.consecutive = previous.get('consecutive', 0)
+        self.until = previous.get('until', 0)
+        self.have = set(previous.get('verified', have))
+        self.evidence = previous.get('evidence')
+        if self.consecutive >= 4 and self.until <= time.time():
+            self.consecutive = 0  # 20分後の明示的な外部起動は新しい試行として扱う。
+        self.saved(have)
+
+    def persist(self):
+        self.path.write_text(json.dumps(dict(consecutive=self.consecutive, until=self.until,
+                                            verified=sorted(self.have), evidence=self.evidence), ensure_ascii=False))
+
+    def saved(self, have):
+        have = set(have)
+        if have - self.have:
+            self.consecutive = 0
+            self.have = have
+            self.persist()
+
+    def detect(self, evidence):
+        self.consecutive += 1
+        minutes = min(self.consecutive, 4) * 5
+        self.until = time.time() + minutes*60
+        self.evidence = evidence
+        self.persist()
+        return minutes
+
+    def waiting(self):
+        return time.time() < self.until
+
+    def finish(self):
+        self.until = 0
+        self.persist()
+
+    def log_wait(self):
+        minutes = max(1, math.ceil((self.until-time.time())/60))
+        at = time.strftime('%H:%M', time.localtime(self.until))
+        print(f'アクセス制限: 待機中 {minutes}分（再開予定 {at}）', flush=True)
+
+
+def resume_access_targets(targets, scheduler, key, pacer):
+    # 待機中に完成した画像は同じ会話で回収する。稼働中の同じidを別窓に移さない。
+    for target in targets:
+        state = parallel_state(target, key)
+        item_id = scheduler.inflight.get(target['id'])
+        if not item_id:
+            continue
+        # 会話そのものの拒否文は新しい要求でしか消えない。生成中・完成画像は残す。
+        own_limit = state.get('liveLimit') or {}
+        if own_limit.get('source') == 'current_conversation' and not state.get('busy'):
+            bridge.command(target['webSocketDebuggerUrl'], 'Page.navigate',
+                           {'url': 'https://chatgpt.com/'}, timeout=30)
+            wait_parallel_login(target)
+        js('''(()=>{
+          const g=window.__yamaGen;
+          if(g){g.limitEvidence=null;g.limitUntil=null;g.waitState=null;g.sendGrant=null;g.stop=false;}
+          return true;
+        })()''', target=target)
+    js(f'localStorage.removeItem({json.dumps(key)})', target=targets[0])
+    pacer.cancel(time.time())
+    for target in targets:
+        item_id = scheduler.inflight.get(target['id'])
+        if item_id and not js('!!window.__yamaGen?.running', target=target):
+            install_parallel(target, scheduler.items[item_id], key)
+    scheduler.stopped = False
+
+
 def parallel_state(target, limit_key):
     return json.loads(js("""JSON.stringify({
-      installed:!!window.__yamaGen, running:!!window.__yamaGen?.running,
+      installed:!!window.__yamaGen, running:!!window.__yamaGen?.running, stopped:!!window.__yamaGen?.stop,
       busy:!!document.querySelector('[data-testid=stop-button]'),
       current:window.__yamaGen?.current,
+      sendRequest:window.__yamaGen?.sendRequest || null,
+      sentToken:window.__yamaGen?.sentToken || null, sentAt:window.__yamaGen?.sentAt || null,
       done:window.__yamaGen?.done || [], failed:window.__yamaGen?.failed || [],
       liveLimit:window.__yamaLimitEvidence?.() || window.__yamaGen?.limitEvidence || null,
       until:window.__yamaGen?.limitUntil || 0,
@@ -297,7 +445,7 @@ def parallel_state(target, limit_key):
 
 def install_parallel(target, item, limit_key, *, resume=False):
     """supervisorや全件キューを入れず、中央で割り当てた1件だけ実行。"""
-    config = json.dumps({'limitKey': limit_key, 'resume': resume})
+    config = json.dumps({'limitKey': limit_key, 'resume': resume, 'paced': True})
     js(f'window.__yamaParallel = {config};', target=target)
     js(DRIVER.read_text(encoding='utf-8'), target=target)
     js("""(() => {
@@ -315,7 +463,7 @@ def stop_parallel(targets, limit_key):
         try:
             js("""(() => {
               localStorage.setItem(%s, localStorage.getItem(%s) || '{}');
-              if(window.__yamaGen) window.__yamaGen.stop = true;
+              if(window.__yamaGen){window.__yamaGen.stop = true;window.__yamaGen.sendGrant=null;}
               clearInterval(window.__yamaSuper);
               return true;
             })()""" % (json.dumps(limit_key), json.dumps(limit_key)), target=target)
@@ -407,7 +555,7 @@ def wait_parallel_login(target):
     raise RuntimeError('専用ChromeでChatGPTへのログインを確認できません')
 
 
-def run_parallel(work, count, *, max_attempts=None):
+def run_parallel(work, count, *, min_interval=60, max_attempts=None):
     """独立ウィンドウへ配分。max_attemptsは実測の発注上限用（CLI非公開）。"""
     (work / '.imagegen').mkdir(exist_ok=True)
     limit_path = work / '.imagegen/limit_until.json'
@@ -424,6 +572,11 @@ def run_parallel(work, count, *, max_attempts=None):
     targets = []
     started = time.time()
     previous = json.loads(state_path.read_text()) if state_path.exists() else {}
+    pacer = SendPacer(min_interval, previous.get('pacing'))
+    initial_have = {q['id'] for q in queue} - {q['id'] for q in todo}
+    access = AccessCooldown(work, initial_have)
+    cooling = access.waiting()
+    last_wait_log = 0
     snapshots = {}
     dispatched_at = {}
     idle_since = {}
@@ -436,7 +589,9 @@ def run_parallel(work, count, *, max_attempts=None):
                     elapsed=time.time()-started, failures=scheduler.failures,
                     retries=scheduler.retries, attempts=scheduler.attempts,
                     inflight=scheduler.inflight, targets=targets, evidence=evidence,
-                    snapshots=snapshots)
+                    snapshots=snapshots, pacing=pacer.state(),
+                    pending=list(scheduler.pending), remaining_ids=sorted(set(scheduler.pending) | set(scheduler.inflight.values())),
+                    access_consecutive=access.consecutive, access_retry_at=access.until)
         tmp = state_path.with_suffix('.tmp')
         tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2))
         tmp.replace(state_path)
@@ -470,16 +625,82 @@ def run_parallel(work, count, *, max_attempts=None):
                 scheduler.inflight[worker] = item_id
                 scheduler.attempts[item_id] = previous.get('attempts', {}).get(item_id, 1)
                 dispatched_at[worker] = time.time()
-        status = 'generating'
-        print(f'並列 N={count}: {len(todo)}件、別ウィンドウ{len(targets)}本', flush=True)
+        status = 'access_wait' if cooling else 'generating'
+        if cooling:
+            stop_parallel(targets, key)
+        print(f'並列 N={count}: 残り{len(todo)}/{len(queue)}件、別ウィンドウ{len(targets)}本、送信間隔{min_interval:g}秒', flush=True)
         while True:
             # 全ウィンドウの上限を先に確認し、途中で完了があっても投入を先行させない。
             snapshots = {t['id']: parallel_state(t, key) for t in targets}
-            limited = next((s for s in snapshots.values() if s['liveLimit'] or s['shared']), None)
+            pacer.observe(snapshots, time.time())
+            collect(work)
+            _, left = remaining(work)
+            have = {i['id'] for i in queue} - {i['id'] for i in left}
+            access.saved(have)
+            if not left:
+                scheduler.pending.clear()
+                scheduler.inflight.clear()
+                status = 'finished'
+                result = record()
+                heartbeat(work, verified=len(queue), total=len(queue), status=status)
+                print(f'完成 {len(queue)}枚 / {result["elapsed"]:.1f}秒 / 失敗{scheduler.failures} / 再投入{scheduler.retries}', flush=True)
+                return result
+            if cooling:
+                if access.consecutive >= 4:
+                    status = 'access_stopped'
+                    record()
+                    at = time.strftime('%H:%M', time.localtime(access.until))
+                    print(f'アクセス制限が4回連続。終了コード75で停止します。外部からの再開は{at}以降です', flush=True)
+                    raise SystemExit(75)
+                if access.waiting():
+                    if time.time()-last_wait_log >= 60:
+                        access.log_wait()
+                        last_wait_log = time.time()
+                    record()
+                    heartbeat(work, verified=len(have), total=len(queue), status='access_wait',
+                              retry_at=access.until, access_consecutive=access.consecutive)
+                    time.sleep(2)
+                    continue
+                for target in targets:
+                    worker = target['id']
+                    if scheduler.inflight.get(worker) in have and not snapshots[worker]['running']:
+                        scheduler.finish(worker, True)
+                resume_access_targets(targets, scheduler, key, pacer)
+                access.finish()
+                cooling, status, evidence = False, 'generating', None
+                idle_since.clear()
+                dispatched_at.update({worker: time.time() for worker in scheduler.inflight})
+                print(f'待機終了。未完了{len(left)}件から再開します', flush=True)
+                record()
+                continue
+            candidates = [s for s in snapshots.values() if s['liveLimit'] or s['shared']]
+            limited = next((s for s in candidates if (s.get('liveLimit') or (s.get('shared') or {}).get('evidence') or {}).get('kind') == 'image_limit'),
+                           candidates[0] if candidates else None)
             if limited:
                 scheduler.stop()
                 shared = limited.get('shared') or {}
                 evidence = limited.get('liveLimit') or shared.get('evidence')
+                if evidence and evidence.get('kind') == 'access_limit':
+                    errors = stop_parallel(targets, key)
+                    if errors:
+                        raise RuntimeError('投入停止を確認できません: ' + '; '.join(errors))
+                    pacer.cancel(time.time())
+                    for target in targets:
+                        if dismiss_access_notice(target):
+                            print(f'{target["id"]}: アクセス制限通知の「了解」を押しました', flush=True)
+                    access.detect(evidence)
+                    cooling, status = True, 'access_wait'
+                    record()
+                    if access.consecutive >= 4:
+                        status = 'access_stopped'
+                        record()
+                        at = time.strftime('%H:%M', time.localtime(access.until))
+                        heartbeat(work, verified=len(have), total=len(queue), status=status, retry_at=access.until)
+                        print(f'アクセス制限が4回連続。終了コード75で停止します。外部からの再開は{at}以降です', flush=True)
+                        raise SystemExit(75)
+                    access.log_wait()
+                    last_wait_log = time.time()
+                    continue
                 until = limited.get('until') or shared.get('until') or (time.time()+1200)*1000
                 note_limit(work, until)
                 status = 'limit_wait'
@@ -487,9 +708,6 @@ def run_parallel(work, count, *, max_attempts=None):
                 heartbeat(work, total=len(queue), status=status, evidence=evidence, until=until)
                 print('全ウィンドウの投入停止: ' + json.dumps(evidence, ensure_ascii=False), flush=True)
                 raise SystemExit(75)
-            collect(work)
-            _, left = remaining(work)
-            have = {i['id'] for i in queue} - {i['id'] for i in left}
             for target in targets:
                 worker = target['id']
                 state = snapshots[worker]
@@ -505,17 +723,11 @@ def run_parallel(work, count, *, max_attempts=None):
                     continue
                 if item_id in have:
                     scheduler.finish(worker, True)
-                elif not state['installed']:
+                elif not state['installed'] or state.get('stopped'):
                     # リロード後も同じ会話で引き継ぎ、完成済みなら再送せず保存。
                     install_parallel(target, scheduler.items[item_id], key, resume=True)
                 elif state['failed'] or time.time()-idle_since.setdefault(worker, time.time()) > 30:
                     scheduler.finish(worker, False)
-            if not left:
-                status = 'finished'
-                result = record()
-                heartbeat(work, verified=len(queue), total=len(queue), status=status)
-                print(f'完成 {len(queue)}枚 / {result["elapsed"]:.1f}秒 / 失敗{scheduler.failures} / 再投入{scheduler.retries}', flush=True)
-                return result
             if scheduler.stopped:
                 raise RuntimeError('同じ項目が2回失敗したため停止しました')
             for target in targets[:count]:
@@ -532,6 +744,7 @@ def run_parallel(work, count, *, max_attempts=None):
                     idle_since.pop(worker, None)
                     record()  # 送信前に所有権を保存。通信断で別ウィンドウへ再送しない。
                     install_parallel(target, item, key)
+            grant_next_send(pacer, targets, snapshots, scheduler.inflight, record)
             record()
             heartbeat(work, verified=len(have), total=len(queue), status=status)
             time.sleep(2)
@@ -564,7 +777,7 @@ def main():
 
     bridge.start()
     if args.parallel > 1:
-        return run_parallel(work, args.parallel)
+        return run_parallel(work, args.parallel, min_interval=args.min_interval)
     open_chatgpt()
     try:
         js('1')

@@ -196,6 +196,50 @@ class RegenTest(unittest.TestCase):
             self.assertEqual(regen.main([str(project), "--verify"]), 1)
             start.assert_not_called()
 
+    def test_run_passes_parallel_to_runner(self):
+        project = self.root / "project"
+        project.mkdir()
+        (project / "Asset_Prompts_Full.md").write_text("### CHAR-15: test\n```a person```\n")
+        work = project / ".imagegen/regen_20260913_review"
+        with patch.object(regen.subprocess, "Popen", return_value=Mock(pid=12345)) as start:
+            self.assertEqual(regen.main([str(project), "--assets", "CHAR-15",
+                                        "--work-name", work.name, "--run", "--parallel", "1"]), 0)
+        self.assertEqual(start.call_args.args[0],
+                         ["nohup", regen.sys.executable, "-B", "-u", str(regen.HERE / "run.py"),
+                          str(work), "--parallel", "1"])
+        self.assertEqual((work / "run.pid").read_text().strip(), "12345")
+
+    def test_run_passes_global_min_interval_and_work_name(self):
+        project = self.root / "project"
+        project.mkdir()
+        (project / "Asset_Prompts_Full.md").write_text("### CHAR-15: test\n```a person```\n")
+        work = project / ".imagegen/regen_20260913_review"
+        with patch.object(regen.subprocess, "Popen", return_value=Mock(pid=12345)) as start:
+            self.assertEqual(regen.main([str(project), "--assets", "CHAR-15", "--work-name", work.name,
+                                        "--run", "--parallel", "2", "--min-interval", "60"]), 0)
+        self.assertEqual(start.call_args.args[0][-4:], ["--parallel", "2", "--min-interval", "60.0"])
+        self.assertIn(str(work), start.call_args.args[0])
+        self.assertTrue(start.call_args.kwargs["start_new_session"])
+
+    def test_work_name_isolates_run_and_verify(self):
+        project = self.root / "project"
+        old = project / ".imagegen/regen_20260913"
+        old.mkdir(parents=True)
+        regen.write_json(old / "image_queue.json", [])
+        original = (old / "image_queue.json").read_bytes()
+        (project / "Asset_Prompts_Full.md").write_text("### CHAR-15: test\n```a person```\n")
+        work = project / ".imagegen/regen_20260913_review"
+        with patch.object(regen.subprocess, "Popen", return_value=Mock(pid=12345)) as start:
+            self.assertEqual(regen.main([str(project), "--assets", "CHAR-15",
+                                        "--work-name", work.name, "--run"]), 0)
+        self.assertEqual(start.call_args.args[0][-1], str(work))
+        self.assertEqual((work / "run.pid").read_text().strip(), "12345")
+        self.transparent(work / "images/CHAR-15.png")
+        self.assertEqual(regen.main([str(project), "--verify", "--work-name", work.name]), 0)
+        self.assertTrue((work / "verify.json").is_file())
+        self.assertEqual((old / "image_queue.json").read_bytes(), original)
+        self.assertEqual(list(old.iterdir()), [old / "image_queue.json"])
+
     def test_verify_uses_existing_queue_across_midnight(self):
         project = self.root / "project"
         work = project / ".imagegen/regen_20260912"

@@ -250,5 +250,78 @@ class DownloadSessionTests(unittest.TestCase):
         self.assertTrue(sock.closed)
 
 
+class SendPacingTests(unittest.TestCase):
+    def test_two_windows_use_actual_send_ack_and_sixty_seconds(self):
+        pacer = run.SendPacer(60)
+        self.assertTrue(pacer.reserve('window1', {'id':'a', 'token':'a1'}, 1000))
+        # ウィンドウ1が遅れて実際に送ったのは30秒後。割当て時刻からは数えない。
+        self.assertFalse(pacer.reserve('window2', {'id':'b', 'token':'b1'}, 1100))
+        pacer.observe({'window1': {'sentToken':'a1','sentAt':1030}}, 1032)
+        self.assertFalse(pacer.reserve('window2', {'id':'b', 'token':'b1'}, 1091.99))
+        self.assertTrue(pacer.reserve('window2', {'id':'b', 'token':'b1'}, 1092))
+        pacer.observe({'window2': {'sentToken':'b1','sentAt':1092.2}}, 1094)
+        self.assertGreaterEqual(pacer.sends[1]['sent_at']-pacer.sends[0]['sent_at'], 60)
+
+    def test_interval_survives_restart(self):
+        pacer = run.SendPacer(60, {'last_sent_at':1032})
+        self.assertFalse(pacer.ready(1091))
+        self.assertTrue(pacer.ready(1092))
+
+    def test_cancelled_unconfirmed_grant_keeps_safe_gap(self):
+        pacer = run.SendPacer(60)
+        pacer.reserve('w1', {'id':'a','token':'a1'}, 1000)
+        pacer.cancel(1050)
+        self.assertFalse(pacer.ready(1109))
+        self.assertTrue(pacer.ready(1110))
+
+    def test_only_assigned_id_gets_a_grant(self):
+        pacer=run.SendPacer(60)
+        targets=[{'id':'w1'},{'id':'w2'}]
+        states={'w1':{'sendRequest':{'id':'wrong','token':'x'}},
+                'w2':{'sendRequest':{'id':'b','token':'b1'}}}
+        with patch.object(run, 'js', return_value=True) as js, patch.object(run.time, 'time', return_value=1000):
+            run.grant_next_send(pacer, targets, states, {'w1':'a','w2':'b'}, lambda:None)
+        self.assertEqual(js.call_count,1)
+        self.assertEqual(js.call_args.kwargs['target']['id'],'w2')
+        self.assertEqual(pacer.pending['id'],'b')
+
+    def test_interval_argument_default_and_validation(self):
+        self.assertEqual(run.parse_args(['work']).min_interval,60)
+        self.assertEqual(run.parse_args(['work','--min-interval','90']).min_interval,90)
+        for value in ['-1','nan','inf']:
+            with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+                run.parse_args(['work','--min-interval',value])
+
+    def test_driver_does_not_send_without_python_grant(self):
+        script = r"""
+const vm=require('node:vm'),fs=require('node:fs'),assert=require('node:assert/strict');
+let clock=1000000,sent=0,timers=[];
+class Clock extends Date {static now(){return clock;}}
+const editor={innerText:'approved prompt',focus(){}};
+const button={disabled:false,click(){sent++}};
+const ctx={window:{__yamaParallel:{limitKey:'limit',paced:true}},Date:Clock,Math,Promise,
+ console:{log(){}},sessionStorage:{getItem:()=>null,setItem(){}},localStorage:{getItem:()=>null,setItem(){}},
+ document:{execCommand(){},querySelector:s=>s==='#prompt-textarea'?editor:s.includes('send-button')?button:null,
+  querySelectorAll:s=>s.includes('data-message-author-role')&&sent?[{innerText:'approved prompt'}]:[]},
+ setTimeout(fn,ms){timers.push({at:clock+ms,fn})}};
+let src=fs.readFileSync(process.argv[1],'utf8').replace('window.__yamaRun = run;', 'window.testSend=send; window.__yamaRun=run;');
+vm.runInNewContext(src,ctx);ctx.window.__yamaGen.current='a';
+async function tick(ms){clock+=ms;const due=timers.filter(t=>t.at<=clock);timers=timers.filter(t=>t.at>clock);due.forEach(t=>t.fn());for(let i=0;i<10;i++)await Promise.resolve();}
+(async()=>{
+ const promise=ctx.window.testSend('approved prompt');
+ await tick(300);assert.equal(sent,0);assert.ok(ctx.window.__yamaGen.sendRequest);
+ await tick(60000);assert.equal(sent,0,'60秒経過だけでは送信しない');
+ const token=ctx.window.__yamaGen.sendRequest.token;
+ ctx.window.__yamaGen.sendGrant=token;
+ await tick(200);assert.equal(sent,1);assert.equal(ctx.window.__yamaGen.sentToken,token);
+ await tick(500);await promise;assert.equal(ctx.window.__yamaGen.sendRequest,null);
+ console.log('driver central grant PASS');
+})().catch(e=>{console.error(e);process.exitCode=1});
+"""
+        result=subprocess.run(['node','-e',script,str(run.DRIVER)],capture_output=True,text=True)
+        self.assertEqual(result.returncode,0,result.stderr)
+        self.assertIn('central grant PASS',result.stdout)
+
+
 if __name__ == '__main__':
     unittest.main()

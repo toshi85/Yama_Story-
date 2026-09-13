@@ -39,7 +39,7 @@
       lastLog: S.log.slice(-6),
     }),
     log: S.log || [],
-    waitState: null, limitEvidence: null,
+    waitState: null, limitEvidence: null, sendRequest: null, sendGrant: null, sentToken: null, sentAt: null,
     limitUntil: S.limitUntil || null,   // 解除予定の時刻（epochミリ秒）。run.py が読む
   });
 
@@ -252,7 +252,28 @@
       if (b && !b.disabled) {
         checkSending();
         if (norm(el.innerText) !== norm(prompt)) throw new Error('入力欄が要求文と不一致');
-        b.click();
+        let sendToken = null, sendButton = b;
+        if (parallel?.paced) {
+          sendToken = `${S.current}:${Date.now()}:${Math.random()}`;
+          S.sendRequest = {id:S.current, token:sendToken};
+          S.sendGrant = null;
+          while (S.sendGrant !== sendToken) {
+            checkSending();
+            await sleep(200);
+          }
+          checkSending();
+          sendButton = q('[data-testid="send-button"]');
+          if (!sendButton || sendButton.disabled || norm(q('#prompt-textarea')?.innerText || '') !== norm(prompt)) {
+            throw new Error('送信許可の待機中に入力欄・送信ボタンが変わりました');
+          }
+        }
+        sendButton.click();
+        if (sendToken) {
+          S.sentAt = Date.now()/1000;
+          S.sentToken = sendToken;
+          S.sendRequest = null;
+          S.sendGrant = null;
+        }
         for (let j = 0; j < 40; j++) {
           await sleep(500);
           if (matchedUser(prompt)) return;

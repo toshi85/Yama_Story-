@@ -319,6 +319,9 @@ def main(argv=None):
     parser.add_argument("project", type=Path)
     parser.add_argument("--since")
     parser.add_argument("--assets")
+    parser.add_argument("--work-name", help="作業フォルダ名（既定: regen_<YYYYMMDD>）")
+    parser.add_argument("--parallel", type=int, help="run.py に渡す並列数")
+    parser.add_argument("--min-interval", type=float, help="run.py に渡す全ウィンドウ共通の最小送信間隔（秒）")
     modes = parser.add_mutually_exclusive_group()
     modes.add_argument("--run", action="store_true")
     modes.add_argument("--verify", action="store_true")
@@ -328,15 +331,22 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if args.drive_dir and not args.apply:
         parser.error("--drive-dir は --apply と併用してください")
+    if args.work_name is not None and (not args.work_name or args.work_name in (".", "..")
+                                      or Path(args.work_name).name != args.work_name):
+        parser.error("--work-name は単一のフォルダ名を指定してください")
+    if args.parallel is not None and args.parallel < 1:
+        parser.error("--parallel は1以上を指定してください")
+    if args.min_interval is not None and (not math.isfinite(args.min_interval) or args.min_interval < 0):
+        parser.error("--min-interval は0以上の有限の秒数を指定してください")
     project = args.project.resolve()
-    work = project / ".imagegen" / ("regen_" + datetime.now().strftime("%Y%m%d"))
+    work = project / ".imagegen" / (args.work_name or "regen_" + datetime.now().strftime("%Y%m%d"))
     try:
         current = extract_prompts.parse(project / "Asset_Prompts_Full.md")
         indexed(current)
         if not args.since and not args.assets and (args.verify or args.apply or args.export):
             candidates = sorted(path.parent for path in (project / ".imagegen").glob(
                 "regen_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/image_queue.json"))
-            if candidates:
+            if candidates and args.work_name is None:
                 work = candidates[-1]
             queue = json.loads((work / "image_queue.json").read_text(encoding="utf-8"))
         else:
@@ -380,7 +390,9 @@ def main(argv=None):
         if args.run:
             with (work / "run.log").open("a", encoding="utf-8") as log:
                 proc = subprocess.Popen(
-                    ["nohup", sys.executable, "-B", "-u", str(HERE / "run.py"), str(work)],
+                    ["nohup", sys.executable, "-B", "-u", str(HERE / "run.py"), str(work)]
+                    + (["--parallel", str(args.parallel)] if args.parallel is not None else [])
+                    + (["--min-interval", str(args.min_interval)] if args.min_interval is not None else []),
                     stdin=subprocess.DEVNULL, stdout=log, stderr=subprocess.STDOUT,
                     start_new_session=True,
                 )
