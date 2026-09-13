@@ -1,0 +1,40 @@
+{
+  "total_chars": 8410,
+  "chars_added": 263,
+  "changed_chapters": [
+    8,
+    12,
+    22
+  ],
+  "fact65_chapter": 22,
+  "fact65_lines": 3,
+  "external_rows_before": 3,
+  "external_rows_after": 3,
+  "new_fact_ids": [
+    80,
+    81
+  ],
+  "new_facts_have_sources_and_opened_ranges": true,
+  "unchanged_chapters_23_through_28": true,
+  "excluded_four_not_implemented": true,
+  "ten_checks_exit": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "five_pass_count": 5,
+  "note": "4件の不採用は、既存の§11・§24・§27・§28と差分を照合して確認。",
+  "gemini_output": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/指摘_v4.md",
+  "gemini_exit": 0,
+  "gemini_items": 14,
+  "gemini_cost_jpy": 10.05,
+  "all_requested_outputs_exist": true,
+  "human_final_review": "Claude Codeによる指摘の採否・最終判断は本依頼の後工程。未実施。"
+}

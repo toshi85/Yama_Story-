@@ -1,0 +1,35 @@
+{
+  "total_chars": 8410,
+  "chars_added": 263,
+  "changed_chapters": [
+    8,
+    12,
+    22
+  ],
+  "fact65_chapter": 22,
+  "fact65_lines": 3,
+  "external_rows_before": 3,
+  "external_rows_after": 3,
+  "new_fact_ids": [
+    80,
+    81
+  ],
+  "new_facts_have_sources_and_opened_ranges": true,
+  "unchanged_chapters_23_through_28": true,
+  "excluded_four_not_implemented": true,
+  "ten_checks_exit": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "five_pass_count": 5,
+  "gemini_yet_to_run": true,
+  "note": "4件の不採用は、既存の§11・§24・§27・§28と差分を照合して確認。"
+}

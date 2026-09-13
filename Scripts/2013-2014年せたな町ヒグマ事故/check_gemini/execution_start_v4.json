@@ -1,0 +1,13 @@
+{
+  "argv": [
+    ".venv-edit/bin/python",
+    "-B",
+    "System_Tools/review_script_gemini.py",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Master.md",
+    "-o",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/check_gemini/v4_raw"
+  ],
+  "started_at": "2026-09-13T08:03:32.383310+09:00",
+  "foreground": true,
+  "pid": 60783
+}

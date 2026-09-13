@@ -1,0 +1,8 @@
+{
+  "inputs": true,
+  "old_outputs": true,
+  "v4_md_exact_raw_copy": true,
+  "v4_json_exact_raw_copy": true,
+  "exit_code": 0,
+  "instruction_not_to_edit_after_gemini_respected": true
+}

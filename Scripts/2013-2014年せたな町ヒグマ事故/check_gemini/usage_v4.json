@@ -1,0 +1,20 @@
+{
+  "input_tokens": 40972,
+  "output_and_thinking_tokens": 9667,
+  "cost_jpy": 10.05,
+  "precise_jpy": 10.0470375,
+  "passes": [
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      5
+    ]
+  ]
+}
