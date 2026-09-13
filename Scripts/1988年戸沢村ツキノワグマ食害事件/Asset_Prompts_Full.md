@@ -730,7 +730,7 @@ A low tracking shot just above the ground along a narrow mountain footpath in Ya
 ```
 背景プロンプト（16:9）:
 ```
-A plain dim room in a small Japanese rural public building in late May 1988: bare wooden floorboards, plain cream plaster walls, a closed frosted-glass window, a single fluorescent tube giving flat cold light, a low wooden platform against the far wall. No real institution name, no crest, no emblem, no logo, no lettering, no readable characters anywhere. Somber and hushed. The lower middle of the frame is left as clear open floor space. Framed from adult eye height roughly 1.5 metres above the floor and about four metres back. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. No blood, no wounds, no gore. Generate 1 image.
+A plain dim room in a small Japanese rural public building in late May 1988: bare wooden floorboards, plain cream plaster walls, a closed frosted-glass window, a single fluorescent tube giving flat cold light, a low wooden platform against the far wall. No real institution name, no crest, no emblem, no logo, no lettering, no readable characters anywhere. Somber and hushed. Dim but NOT pure black — the floorboards, the walls and the platform stay clearly readable. The lower middle of the frame is left as clear open floor space. Framed from adult eye height roughly 1.5 metres above the floor and about four metres back. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. No blood, no wounds, no gore. Generate 1 image.
 ```
 → 編集者指示: キャラを画面下中央に置く。頭と首の位置に「傷なし」、布の腰から下に「傷が集中」の指示線を編集で描き足す。文字は画像に描かせず、すべて編集で載せる。
 
@@ -738,14 +738,10 @@ A plain dim room in a small Japanese rural public building in late May 1988: bar
 
 ナレーター: 傷は、背中や腰など、後ろ側に集中していたのです。
 
-【制作メモ】ASSET-046 [キャラアニメーション]
-シーン: CHAR-01の後ろ姿。腰から下だけが影で沈んでいる
-キャラプロンプト（1:1）:
-```
-(CHAR-01 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-01: Japanese farmer, 61 years old, faded dark green work jacket, brown work trousers, black rubber boots, beige towel at his neck, woven basket on his back, seen from directly behind so that only his back, waist and legs face the camera and his face is completely hidden, standing upright and still. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
-```
-→ 背景再使用: 045
-→ 編集者指示: キャラの腰から下に赤い半透明のハイライトを編集で重ね、頭と首は白いままにする。「後ろ側に集中」テロップ。
+【制作メモ】ASSET-046 [再利用＋テキスト]
+シーン: 045の画面のまま、白い布の腰から下にだけ赤い半透明の強調を重ねる
+→ 画像再使用: 045（キャラと背景の合成済みの画面）
+→ 編集者指示: 布の腰から下に赤い半透明のハイライトを編集で重ね、頭と首は何も重ねない。「後ろ側に集中」テロップ。
 
 ---
 
@@ -765,6 +761,7 @@ A plain dim room in a small Japanese rural public building in late May 1988: bar
 ナレーター: 振り返る間（ま）、すらなかったのでしょう。
 
 【制作メモ】ASSET-048 [再利用＋テキスト]
+シーン: 047の画面をそのまま白黒にし、中央に文字だけを載せる
 → 画像再使用: 047（キャラと背景の合成済みの画面）
 → 編集者指示: 047の画面をそのまま白黒にする。画面中央に「振り返る間すら」「なかった、、」の2行をふんわりフェードイン。このカットのナレーション字幕（「（ま）」を含む）は出さない。BGMをここで落とし、次の章へ渡す。
 
@@ -834,7 +831,7 @@ A steep forested mountain slope above a Japanese village in Yamagata, Japan in l
 ```
 追加素材プロンプト（1:1・積み重なったクマ）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, slightly chibi proportions, children's animation style. A small heap of three dead adult Japanese black bears (Asiatic black bear, Ursus thibetanus japonicus), each about 120cm body length and about 80kg, its shoulder no higher than an adult's waist and clearly much smaller than a grizzly or a brown bear, glossy jet-black coats, large round ears, short blunt muzzles, NO shoulder hump, piled loosely with each bear partly lying across the one below. Each bear lies PRONE, flat on its belly, exactly the way a four-legged animal drops: chest and stomach flat down, all four legs splayed straight out limp — the two front legs stretched forward past the head, the two back legs stretched out behind — and the head down with the chin and muzzle resting on the ground or on the bear below, mouth a little open with the tongue just showing. The white chest crescents are hidden under their bodies. They are four-legged animals throughout: NOT sitting, NOT sitting up, NOT reclining, NOT on their backs, NOT belly-up, NOT posed like people, and no leg is raised in the air. Seen from a low three-quarter front angle so that all three heads and all six X-mark eyes are clearly visible. BOTH EYES OF EVERY BEAR ARE DRAWN AS SIMPLE BLACK X MARKS — two crossed straight lines for each eye. Do NOT draw open eyes, do NOT draw closed eyelids, do NOT draw pupils or irises — each eye is an X mark and nothing else. Transparent background, real alpha transparency. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, slightly chibi proportions, children's animation style. A small heap of three dead adult Japanese black bears (Asiatic black bear, Ursus thibetanus japonicus), each about 120cm body length and about 80kg, its shoulder no higher than an adult's waist and clearly much smaller than a grizzly or a brown bear, glossy jet-black coats, large round ears, short blunt muzzles, NO shoulder hump, piled loosely with each bear partly lying across the one below. Left to right and bottom to top: 1) the largest bear lying at the bottom with a broad head; 2) a medium-sized bear lying across its back with a slightly browner muzzle; 3) the smallest, youngest bear lying on top with a narrower head. No two of them are the same size. Each bear lies PRONE, flat on its belly, exactly the way a four-legged animal drops: chest and stomach flat down, all four legs splayed straight out limp — the two front legs stretched forward past the head, the two back legs stretched out behind — and the head down with the chin and muzzle resting on the ground or on the bear below, mouth a little open with the tongue just showing. The white chest crescents are hidden under their bodies. They are four-legged animals throughout: NOT sitting, NOT sitting up, NOT reclining, NOT on their backs, NOT belly-up, NOT posed like people, and no leg is raised in the air. Seen from a low three-quarter front angle so that all three heads and all six X-mark eyes are clearly visible. BOTH EYES OF EVERY BEAR ARE DRAWN AS SIMPLE BLACK X MARKS — two crossed straight lines for each eye. Do NOT draw open eyes, do NOT draw closed eyelids, do NOT draw pupils or irises — each eye is an X mark and nothing else. Transparent background, real alpha transparency. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
@@ -936,6 +933,7 @@ The foot of a large old walnut tree at the edge of a forested slope in Yamagata,
 ナレーター: しかし、この女性もそれ以降、二度と戻ることはありませんでした。
 
 【制作メモ】ASSET-061 [再利用＋テキスト]
+シーン: 060の画面のまま、中央に文字だけを載せる
 → 画像再使用: 060
 → 編集者指示: 060の画面のまま、中央に「二度と戻りませんでした、、」を表示。「二度と」だけ赤字、残りは白。光が引いていくのに合わせてBGMを沈める。
 
@@ -1048,6 +1046,7 @@ The foot of a large old walnut tree at the edge of a forested slope in Yamagata,
 ナレーター: 残念ながら、すでに亡くなっている状態でした。
 
 【制作メモ】ASSET-070 [再利用＋テキスト]
+シーン: 069の画面のまま、中央に文字だけを載せる
 → 画像再使用: 069
 → 編集者指示: 069の画面のまま、中央に「亡くなっていた、、」を白文字でふんわり表示。心拍SEを一度だけ。1〜2秒で次へ。
 
