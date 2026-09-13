@@ -1,0 +1,254 @@
+"""中央配分と全体停止を、ChatGPTへ送信せず検査する。"""
+import contextlib
+import json
+import io
+from pathlib import Path
+import subprocess
+from tempfile import TemporaryDirectory
+import unittest
+from unittest.mock import patch
+
+import run
+
+
+class QueueTests(unittest.TestCase):
+    def queue(self, count=6):
+        return run.ParallelQueue([{'id': str(i), 'prompt': f'p{i}'} for i in range(count)])
+
+    def test_no_duplicates_or_omissions_with_uneven_workers(self):
+        q = self.queue()
+        assigned = []
+        for worker in ['a', 'b', 'c', 'b', 'b', 'a']:
+            if worker in q.inflight:
+                q.finish(worker, True)
+            assigned.append(q.assign(worker)['id'])
+            self.assertEqual(len(set(q.inflight.values())), len(q.inflight))
+        self.assertEqual(set(assigned), set('012345'))
+        self.assertEqual(len(assigned), 6)
+        self.assertIsNone(q.assign('d'))
+
+    def test_busy_worker_does_not_receive_second_item(self):
+        q = self.queue()
+        q.assign('a')
+        self.assertIsNone(q.assign('a'))
+        self.assertEqual(len(q.pending), 5)
+
+    def test_failure_requeues_once_without_loss(self):
+        q = self.queue(2)
+        q.assign('a')
+        q.assign('b')
+        q.finish('a', False)
+        self.assertEqual(q.assign('a')['id'], '0')
+        q.finish('a', True)
+        q.finish('b', True)
+        self.assertFalse(q.pending)
+        self.assertFalse(q.inflight)
+        self.assertEqual((q.failures, q.retries), (1, 1))
+
+    def test_second_failure_stops(self):
+        q = self.queue()
+        q.assign('a'); q.finish('a', False)
+        q.assign('a'); q.finish('a', False)
+        self.assertTrue(q.stopped)
+        self.assertIsNone(q.assign('b'))
+
+    def test_limit_stops_all_workers(self):
+        q = self.queue()
+        q.assign('a'); q.assign('b')
+        q.stop()
+        q.finish('a', True)
+        for worker in ['a', 'b', 'c']:
+            self.assertIsNone(q.assign(worker))
+        self.assertEqual(sum(q.attempts.values()), 2)
+
+    def test_duplicate_input_rejected(self):
+        with self.assertRaises(ValueError):
+            run.ParallelQueue([{'id': 'a'}, {'id': 'a'}])
+
+    def test_regen_invocation_keeps_work_only_interface(self):
+        args = run.parse_args(['/tmp/regen_work'])
+        self.assertEqual(args.work, '/tmp/regen_work')
+        self.assertEqual(args.parallel, run.DEFAULT_PARALLEL)
+        self.assertEqual(run.parse_args(['/tmp/work', '--parallel', '3']).parallel, 3)
+
+    def test_invalid_parallel(self):
+        with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+            run.parse_args(['/tmp/work', '--parallel', '0'])
+
+
+class IntegrationTests(unittest.TestCase):
+    def simulate(self, failure=False, limit=False, budget=None):
+        with TemporaryDirectory() as temp:
+            work = Path(temp)
+            queue = [{'id': str(i), 'prompt': f'p{i}'} for i in range(6)]
+            (work / 'image_queue.json').write_text(json.dumps(queue))
+            completed, active, attempts, stops = set(), {}, [], []
+            targets = [{'id': str(i), 'webSocketDebuggerUrl': f'ws://{i}'} for i in range(3)]
+            ticks = 0
+            def snapshot(target, key):
+                nonlocal ticks
+                ticks += 1
+                worker = target['id']
+                item = active.pop(worker, None)
+                failed = []
+                evidence = None
+                if item:
+                    if failure and item == '0' and attempts.count(item) == 1:
+                        failed = [{'id': item, 'error': 'mock failure'}]
+                    elif limit and item == '1':
+                        evidence = {'kind': 'image_limit', 'text': '画像生成の利用上限に達しました'}
+                    else:
+                        completed.add(item)
+                return dict(installed=True, running=False, busy=False, failed=failed,
+                            liveLimit=evidence, shared=None, until=9999999999000,
+                            done=list(completed), text='', log=[])
+            def install(target, item, key):
+                self.assertNotIn(item['id'], active.values())
+                active[target['id']] = item['id']
+                attempts.append(item['id'])
+            with patch.object(run.bridge, 'tabs', return_value=[]), \
+                 patch.object(run.bridge, 'new_window', side_effect=targets), \
+                 patch.object(run, 'ParallelDownloads'), \
+                 patch.object(run, 'js', return_value=True), \
+                 patch.object(run, 'collect'), \
+                 patch.object(run, 'remaining', side_effect=lambda w: (queue, [q for q in queue if q['id'] not in completed])), \
+                 patch.object(run, 'parallel_state', side_effect=snapshot), \
+                 patch.object(run, 'install_parallel', side_effect=install), \
+                 patch.object(run, 'stop_parallel', side_effect=lambda ts,k: stops.extend(ts) or []), \
+                 patch.object(run.time, 'sleep'):
+                try:
+                    run.run_parallel(work, 3, max_attempts=budget)
+                    exit_code = 0
+                except SystemExit as exc:
+                    exit_code = exc.code
+                except RuntimeError:
+                    exit_code = 1
+            state = json.loads((work / '.imagegen/parallel_state.json').read_text())
+            until = work / '.imagegen/limit_until.json'
+            return attempts, stops, state, exit_code, until.exists()
+
+    def test_complete_saves_all_six(self):
+        attempts, stops, state, code, _ = self.simulate()
+        self.assertEqual(len(attempts), 6)
+        self.assertEqual(len(set(attempts)), 6)
+        self.assertEqual((code, state['status'], state['failures']), (0, 'finished', 0))
+        self.assertEqual(len(stops), 3)
+
+    def test_real_loop_requeues_failed_item(self):
+        attempts, _, state, code, _ = self.simulate(failure=True)
+        self.assertEqual((len(attempts), attempts.count('0')), (7, 2))
+        self.assertEqual((code, state['failures'], state['retries']), (0, 1, 1))
+
+    def test_limit_seen_after_success_stops_before_dispatch(self):
+        attempts, stops, state, code, limit_file = self.simulate(limit=True)
+        self.assertEqual(len(attempts), 3)
+        self.assertEqual(len(stops), 3)
+        self.assertEqual((code, state['status'], limit_file), (75, 'limit_wait', True))
+        self.assertEqual(state['evidence']['kind'], 'image_limit')
+
+    def test_bench_budget_bounds_retry_dispatch(self):
+        attempts, _, state, code, _ = self.simulate(failure=True, budget=6)
+        self.assertEqual(len(attempts), 6)
+        self.assertEqual(code, 1)
+
+    def test_new_window_waits_for_execution_context(self):
+        with patch.object(run, 'js', side_effect=[RuntimeError('Cannot find default execution context'), False, True]) as js, patch.object(run.time, 'sleep'):
+            run.wait_parallel_login({'id': 'new'})
+        self.assertEqual(js.call_count, 3)
+
+    def test_login_does_not_hide_other_errors(self):
+        with patch.object(run, 'js', side_effect=RuntimeError('connection lost')), self.assertRaisesRegex(RuntimeError, 'connection lost'):
+            run.wait_parallel_login({'id': 'new'})
+
+    def test_saved_limit_blocks_before_opening_browser(self):
+        with TemporaryDirectory() as temp:
+            work = Path(temp)
+            (work / '.imagegen').mkdir()
+            (work / '.imagegen/limit_until.json').write_text(json.dumps({'until': 9999999999}))
+            with patch.object(run.bridge, 'new_window') as create, self.assertRaises(SystemExit) as error:
+                run.run_parallel(work, 3)
+            self.assertEqual(error.exception.code, 75)
+            create.assert_not_called()
+
+    def test_targeted_js_uses_requested_window(self):
+        response = {'result': {'result': {'value': 7}}}
+        with patch.object(run.bridge, 'tabs') as tabs, patch.object(run.bridge, 'command', return_value=response) as cmd:
+            self.assertEqual(run.js('7', target={'webSocketDebuggerUrl': 'ws://second'}), 7)
+            self.assertEqual(cmd.call_args.args[0], 'ws://second')
+            tabs.assert_not_called()
+
+    def test_new_window_uses_cdp_new_window_flag(self):
+        bridge = run.bridge
+        with patch.object(bridge, '_http', return_value={'webSocketDebuggerUrl': 'ws://browser'}), \
+             patch.object(bridge, 'command', return_value={'result': {'targetId': 'new'}}) as cmd, \
+             patch.object(bridge, 'tabs', return_value=[{'id': 'new'}]):
+            self.assertEqual(bridge.new_window()['id'], 'new')
+        self.assertEqual(cmd.call_args.args[2], {'url': 'https://chatgpt.com/', 'newWindow': True})
+
+    def test_driver_shared_limit_prevents_sending_and_isolates_progress(self):
+        script = r"""
+const vm=require('node:vm'),fs=require('node:fs'),assert=require('node:assert/strict');
+let shared={}, localWrites=0, sessionWrites=0;
+const ctx={window:{__yamaParallel:{limitKey:'test'}},Date,console:{log(){}},
+  localStorage:{getItem:k=>shared[k]||null,setItem(k,v){shared[k]=v;localWrites++;}},
+  sessionStorage:{getItem:()=>null,setItem(){sessionWrites++;}},
+  document:{querySelector:()=>null,querySelectorAll:()=>[]}};
+let src=fs.readFileSync(process.argv[1],'utf8').replace('window.__yamaRun = run;',
+  'window.test={checkSending,limitHit}; window.__yamaRun=run;');
+vm.runInNewContext(src,ctx);
+ctx.window.__yamaGen.forget();
+assert.equal(sessionWrites,1);assert.equal(localWrites,0);
+ctx.window.test.checkSending();
+shared.test=JSON.stringify({evidence:{kind:'image_limit'}});
+assert.throws(()=>ctx.window.test.checkSending(),/投入停止/);
+shared={};
+ctx.document.querySelectorAll=s=>s.includes('role=dialog')?[{innerText:'画像生成の利用上限に達しました。上限は3時間後にリセット'}]:[];
+assert.equal(ctx.window.test.limitHit(),true);
+assert.equal(JSON.parse(shared.test).evidence.kind,'image_limit');
+assert.ok(JSON.parse(shared.test).until > Date.now());
+assert.throws(()=>ctx.window.test.checkSending(),/投入停止/);
+console.log('shared limit / session progress PASS');
+"""
+        result = subprocess.run(['node', '-e', script, str(run.DRIVER)], capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+
+
+class DownloadSessionTests(unittest.TestCase):
+    class Socket:
+        def __init__(self, response):
+            import struct
+            payload = json.dumps(response).encode()
+            self.data = b'HTTP/1.1 101 Switching Protocols\r\n\r\n' + bytes([129, 126]) + struct.pack('>H', len(payload)) + payload
+            self.closed = False
+            self.sent = []
+        def sendall(self, data):
+            self.sent.append(data)
+        def recv(self, size):
+            result, self.data = self.data[:size], self.data[size:]
+            return result
+        def close(self):
+            self.closed = True
+
+    def test_download_policy_session_stays_open_until_collection_finishes(self):
+        sock = self.Socket({'id': 1, 'result': {}})
+        with TemporaryDirectory() as tmp, patch.object(run.bridge, '_http', return_value={'webSocketDebuggerUrl': 'ws://localhost:9222/devtools/browser/test'}), patch.object(run.socket, 'create_connection', return_value=sock):
+            downloads = run.ParallelDownloads(Path(tmp) / 'images')
+            self.assertFalse(sock.closed, '設定応答直後に切断すると保存先が既定値へ戻る')
+            frame = sock.sent[1]
+            length = int.from_bytes(frame[2:4], 'big')
+            mask, payload = frame[4:8], frame[8:8+length]
+            command = json.loads(bytes(b ^ mask[i % 4] for i,b in enumerate(payload)))
+            self.assertEqual(command['method'], 'Browser.setDownloadBehavior')
+            self.assertEqual(command['params']['downloadPath'], str((Path(tmp)/'images').resolve()))
+            downloads.close()
+            self.assertTrue(sock.closed)
+
+    def test_download_policy_error_closes_session(self):
+        sock = self.Socket({'id': 1, 'error': {'message': 'denied'}})
+        with TemporaryDirectory() as tmp, patch.object(run.bridge, '_http', return_value={'webSocketDebuggerUrl': 'ws://localhost:9222/devtools/browser/test'}), patch.object(run.socket, 'create_connection', return_value=sock), self.assertRaisesRegex(RuntimeError, 'denied'):
+            run.ParallelDownloads(tmp)
+        self.assertTrue(sock.closed)
+
+
+if __name__ == '__main__':
+    unittest.main()

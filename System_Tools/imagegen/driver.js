@@ -19,8 +19,14 @@
   // タブがリロードされるとページに入れたものは全部消える。進捗だけは localStorage に
   // 残しておき、入れ直したときに続きから拾えるようにする（実測でリロードが起きた）。
   const SAVE_KEY = 'yamaDone';
-  const loadDone = () => { try { return JSON.parse(localStorage.getItem(SAVE_KEY)) || []; } catch (e) { return []; } };
-  const saveDone = (d) => { try { localStorage.setItem(SAVE_KEY, JSON.stringify(d)); } catch (e) {} };
+  const parallel = window.__yamaParallel;
+  const progressStorage = parallel ? sessionStorage : localStorage;
+  const loadDone = () => { try { return JSON.parse(progressStorage.getItem(SAVE_KEY)) || []; } catch (e) { return []; } };
+  const saveDone = (d) => { try { progressStorage.setItem(SAVE_KEY, JSON.stringify(d)); } catch (e) {} };
+  const sharedStop = () => parallel && localStorage.getItem(parallel.limitKey);
+  const checkSending = () => {
+    if (parallel && (S.stop || sharedStop())) throw new Error('並列全体の投入停止');
+  };
 
   const S = (window.__yamaGen = window.__yamaGen || {});
   Object.assign(S, {
@@ -119,7 +125,13 @@
   };
   const limitHit = () => {
     const evidence = readLimitEvidence();
-    if (evidence) S.limitEvidence = evidence;
+    if (evidence) {
+      S.limitEvidence = evidence;
+      if (parallel) {
+        limitNote();
+        localStorage.setItem(parallel.limitKey, JSON.stringify({evidence, until:S.limitUntil}));
+      }
+    }
     return !!evidence;
   };
   window.__yamaLimitEvidence = readLimitEvidence;
@@ -214,6 +226,7 @@
   }
 
   async function newChat() {
+    checkSending();
     const btn = q('[data-testid="create-new-chat-button"]');
     if (btn) btn.click();                 // SPA遷移（フルリロードするとこのループが死ぬ）
     for (let i = 0; i < 24; i++) {
@@ -224,6 +237,7 @@
   }
 
   async function send(prompt) {
+    checkSending();
     const el = q('#prompt-textarea');
     if (!el) throw new Error('入力欄が無い');
     // 前の生成が走っていると送信ボタンが出ない。必ず空くまで待つ。
@@ -236,6 +250,7 @@
       await sleep(300);
       const b = q('[data-testid="send-button"]');
       if (b && !b.disabled) {
+        checkSending();
         if (norm(el.innerText) !== norm(prompt)) throw new Error('入力欄が要求文と不一致');
         b.click();
         for (let j = 0; j < 40; j++) {
@@ -320,7 +335,7 @@
           note(`${item.id} 同じ会話の完成結果を保存します（再送なし）`);
           await waitIdle(15000, item.prompt);
           img = completedImages(item.prompt);
-        } else if (matchedUser(item.prompt) && busy()) {
+        } else if (matchedUser(item.prompt) && (busy() || parallel?.resume)) {
           note(`${item.id} 同じ会話の処理を引き継ぎます（再送なし）`);
           img = await waitImage(item.prompt);
         } else {
@@ -333,6 +348,7 @@
 
         // 回数では制限を確定しない。明示された表示と観測時刻を保持する。
         if (img === 'limit' && !S.limitEvidence) throw new Error('制限表示の根拠を確認できません');
+        if (parallel && img === 'limit') { S.stop = true; break; }
         // 上限は「書いてある時刻まで待つ」のではなく、一定間隔で投げ直して
         // 通った瞬間に再開する。これなら解除が5時間後でも20時間後でも取りこぼさない。
         let waits = 0;
@@ -354,6 +370,7 @@
         if (img === 'limit') { note('上限が32時間空かなかったので停止'); S.stop = true; break; }
 
         if (img === 'retry') {
+          if (parallel) throw new Error('再試行表示（run.pyへ再投入を委譲）');
           note(`${item.id} エラー → 再試行`);
           retryBtn().click();
           img = await waitImage(item.prompt);

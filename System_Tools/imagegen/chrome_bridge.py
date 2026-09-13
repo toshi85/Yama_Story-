@@ -138,6 +138,21 @@ def tabs():
     return [t for t in _http('/json') if t.get('type') == 'page']
 
 
+def new_window(url='https://chatgpt.com/'):
+    """専用Chromeに独立したウィンドウを作り、対象タブを返す。"""
+    ws = _http('/json/version')['webSocketDebuggerUrl']
+    result = command(ws, 'Target.createTarget', {'url': url, 'newWindow': True})
+    if result.get('error'):
+        raise RuntimeError(result['error'])
+    target_id = result['result']['targetId']
+    for _ in range(20):
+        target = next((t for t in tabs() if t['id'] == target_id), None)
+        if target:
+            return target
+        time.sleep(.25)
+    raise RuntimeError(f'新しいウィンドウを確認できません: {target_id}')
+
+
 def command(ws_url, method, params=None, timeout=180):
     """CDPコマンドを1回だけ叩く。WebSocketは標準ライブラリで喋る。"""
     u = urlparse(ws_url)
