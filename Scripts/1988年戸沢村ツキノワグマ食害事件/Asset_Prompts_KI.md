@@ -76,6 +76,21 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese hunter in his mid-50s, stocky and weathered, short black hair going grey at the sides under a faded orange cap, CLEAN-SHAVEN with no beard, no moustache and no stubble, deeply lined face. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing an olive-brown hunting jacket, dark green trousers, rubber boots, and a plain bolt-action hunting rifle slung on one shoulder drawn in the same cartoon style. Only the rifle as a prop, nothing else around him. Alert steady expression. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no wounds, no gore. Generate 1 image.
 ```
 
+### CHAR-15: 地元の消防団員（50代・沢で遺体を見つけた班）
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese volunteer firefighter, man in his mid-50s, stocky build, short black hair greying at the sides, square weathered face, thick eyebrows, CLEAN-SHAVEN with no beard, no moustache and no stubble. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing a navy volunteer fire brigade jacket with plain silver reflective bands and no lettering, dark grey trousers, black rubber boots and white cotton gloves. Serious steady expression. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no wounds, no gore. Generate 1 image.
+```
+
+### CHAR-16: 猟友会のハンター（60代・1988年5月の山狩り）
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese hunter in his mid-60s, lean and wiry, thin white hair under a brown cloth cap, long narrow face with deep lines, CLEAN-SHAVEN with no beard, no moustache and no stubble. NOT middle-aged. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing a grey quilted hunting vest over a dark red checked flannel shirt, khaki trousers, black rubber boots, and a canvas satchel on a strap across his body. Quiet watchful expression. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no wounds, no gore. Generate 1 image.
+```
+
+### CHAR-17: 村の男性（40代・1988年5月の山狩り）
+```
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Full body, white background, single character only, front-facing view. A Japanese villager, man in his early 40s, broad and muscular, round face, short black hair under a white towel tied as a headband, CLEAN-SHAVEN with no beard, no moustache and no stubble. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions — not six or seven heads tall, not slender, not elongated. Wearing a khaki work jacket with the sleeves pushed up, dark navy work trousers and black split-toe tabi work boots. Earnest and level expression. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no wounds, no gore. Generate 1 image.
+```
+
 ---
 
 ## 1. 全素材リスト（台本順）
@@ -92,9 +107,9 @@ High aerial still view at first light in late May over a small mountain village 
 ```
 Google Flow動画プロンプト:
 ```
-Slow forward aerial drone movement at first light in late May over a narrow Japanese mountain valley in Yamagata, Japan: a wide river winding west below, dark forested ridges in fresh early-summer green, a thin line of village rooftops along one road, white mist drifting off the water, steady ominous glide. Cold blue pre-dawn light, dim but not pure black. No snow anywhere. No people visible. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+Slow forward aerial drone movement at first light in late May over a narrow Japanese mountain valley in Yamagata, Japan: a wide river winding west below, dark forested ridges in fresh early-summer green, a thin line of village rooftops along one road, white mist drifting off the water, one continuous steady ominous glide that never stops or freezes. Cold blue pre-dawn light, dim but not pure black. No snow anywhere. No people visible. 8 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
-→ 編集者指示: 動画の上に「1988年5月25日」を白テキストでフェードイン（1秒）、続けて下段に「山形県 戸沢村」。低いドローン音のBGMを開始。
+→ 編集者指示: 動画はカットの最後まで止めずに動かす（足りなければ再生速度を落として尺いっぱいに伸ばす）。動画の上に「1988年5月25日」を白テキストでフェードイン（1秒）、続けて下段に「山形県 戸沢村」。低いドローン音のBGMを開始。
 
 ---
 
