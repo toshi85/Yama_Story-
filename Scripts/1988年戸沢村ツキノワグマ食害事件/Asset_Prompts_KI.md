@@ -288,6 +288,7 @@ The entrance of a narrow mountain footpath at the edge of a Japanese village in 
 The front entrance of an old Japanese country house in Yamagata, Japan in late May: a sliding wooden door pushed half open, worn stepping stones across a small swept yard, a pair of rubber boots by the step, a bucket and a bundle of bamboo poles against the wall, fresh green mountains rising close behind the roof. Late May morning, warm soft light. No snow anywhere, no frost, no ice, no winter. The middle of the frame is left as clear open space. Framed from adult eye height roughly 1.5 metres above the ground and about four metres back. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「午前10時ごろ」テロップを左上に。日常の音（鶏の声、遠くの軽トラ）だけ。
+→左の男性セリフ「タケノコ採ってくる」
 
 ---
 
@@ -304,6 +305,7 @@ The front entrance of an old Japanese country house in Yamagata, Japan in late M
 A view from the gateway of an old Japanese farmhouse in Yamagata, Japan in late May, looking up a narrow lane that curves away between vegetable plots toward the fresh green forested slope behind the village. Bamboo poles leaning on a fence, a persimmon tree just coming into leaf, morning light along the lane. Late May, soft warm flat light. No snow anywhere, no frost, no ice, no winter. The middle of the frame is left as clear open space. Framed from adult eye height roughly 1.5 metres above the ground and about four metres back. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: CHAR-02を画面手前に置き、背景の道だけをわずかにズームイン（4秒で1.0→1.08）。BGMはまだ入れない。
+→女性セリフ「夕方には戻るべ」
 
 ---
 

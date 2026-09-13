@@ -25,6 +25,7 @@
 The dim earthen-floored entrance room of an old Japanese country house in Yamagata, Japan at night in late May: a low wooden shelf with an old black rotary telephone and a notepad, a bare bulb overhead, sliding paper doors half open onto a dark corridor, boots by the step. Late May night, dim but NOT pure black — the shelf, the telephone and the doorway all stay clearly readable. No snow anywhere, no frost, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: ダイヤルを回す音と呼び出し音のSE。「午後9時過ぎ 新庄署へ通報」テロップ。BGMは入れない。
+→女性セリフ「夫が帰らねんです！」
 
 ---
 
@@ -41,6 +42,7 @@ The dim earthen-floored entrance room of an old Japanese country house in Yamaga
 The entrance of a narrow mountain footpath at the edge of a Japanese village in Yamagata, Japan at night in late May: a gap in a wall of fresh green bamboo grass, young beech and cedar closing over the path, wet dark soil, torch light spilling in from the near side. Late May night, dim but NOT pure black — the path mouth and the bamboo leaves stay clearly readable. No snow anywhere, no frost, no winter. The middle of the frame is left as clear open space. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「家族と地元消防団 約30人」テロップ。足音と草をかき分ける音のSE。
+→左端の男性セリフ「探すぞ！」
 
 ---
 
@@ -99,6 +101,7 @@ A handheld night shot from a narrow mountain path in Yamagata, Japan in late May
 The bottom of a steep wooded ravine in Yamagata, Japan at night in late May, very tight framing on wet rock and shallow water with fresh green bamboo grass blurred at the edges, torch light from one side, shallow depth of field. Late May night, dim but NOT pure black — the rock and water stay clearly readable. No snow anywhere, no frost, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 直接的な描写はしない。ナレーションの間はキャラの後頭部と差し出す腕だけを見せる。字幕も出さない。
+→男性セリフ「なんてことだ、、」
 
 ---
 
@@ -187,6 +190,7 @@ A plain office interior in a small Japanese rural town at night in late May: a s
 A tight view of a wall of fresh green bamboo grass on a steep slope in Yamagata, Japan in late May, the stalks parted in one place to show a narrow gap of dark ground beyond, young beech leaves overhead filtering the light. Late May, dim under the canopy but NOT pure black — the stalks and the gap stay clearly readable. No snow anywhere, no frost, no winter. Claustrophobic closeness. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「※この場面は資料からの推定です」と小さく右下に添える。効果音は葉ずれの音を一瞬だけ。
+→男性セリフ「クマ、、！」
 
 ---
 
@@ -227,6 +231,7 @@ A closed old cardboard document folder tied with cloth ribbon lying on a plain s
 ```
 → 背景再使用: 020
 → 編集者指示: 「連絡へ 4人／現場に残る 6人」の2行テロップを左右に振り分けて表示。
+→左の4人の先頭の男性セリフ「村さ知らせる！」右の6人の男性「頼んだぞ、、」
 
 ---
 
@@ -286,6 +291,8 @@ A torch beam swings across the far bank of a mountain stream in Yamagata, Japan 
 ```
 → 背景再使用: 033
 → 編集者指示: 怒鳴り声と石が岩に当たる音のSE。画面を短く揺らす。
+→左の男性セリフ「あっち行け！」真ん中の男性「来るな！」
+→2つともギザギザの吹き出しに入れ、出した瞬間に小刻みに揺らしてください。
 
 ---
 
@@ -312,6 +319,7 @@ A torch beam swings across the far bank of a mountain stream in Yamagata, Japan 
 ```
 → 背景再使用: 020
 → 編集者指示: BGMを一段落とし、押し殺した声のSEだけ。テロップは出さない。
+→左の年長の男性セリフ「今日は無理だ、、」右の若い男性「でも、、！」
 
 ---
 
@@ -392,6 +400,7 @@ A low tracking shot just above the ground along a narrow mountain footpath in Ya
 ```
 → 背景再使用: 027
 → 編集者指示: 「珍しい特徴」テロップ。BGMを一瞬止めて注意を引く。
+→警察官セリフ「これは、、？」
 
 ---
 
@@ -493,6 +502,7 @@ The public counter of a small Japanese rural village office in late May: a low w
 A steep forested mountain slope above a Japanese village in Yamagata, Japan in late May: dense bamboo grass about 1.5 metres tall, young beech and oak trunks, a faint narrow animal trail winding up through the undergrowth, fresh early-summer green, patches of bare dark soil. Late May morning, soft flat light filtering through the canopy, bright enough that the slope and the trail stay clearly readable. No snow anywhere, no frost, no ice, no winter. The middle of the frame is left as clear open space. Framed from adult eye height roughly 1.5 metres above the ground and about five metres back. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「5月27日 → 6月4日」を日めくり風に切り替えて9日分を早回しで見せる。キャラをわずかに左右へ動かし、探している動きを出す。
+→右端の男性セリフ「どこさ行った、、」
 
 ---
 
@@ -513,6 +523,7 @@ A steep forested mountain slope above a Japanese village in Yamagata, Japan in l
 A rough open work yard at the edge of a Japanese mountain village in Yamagata, Japan in late May: a long wooden trestle table under a corrugated tin lean-to, empty enamel basins and a metal bucket on it, a coiled hose, a stack of timber, fresh green mountains rising close behind. Late May, flat overcast daylight. No snow anywhere, no frost, no ice, no winter. Nothing red and nothing stained. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 積み重なったクマを作業台の横に置き、その手前にハンター3人を並べる。「捕獲 7〜8頭」「人の肉は検出されず」の2行テロップ。
+→真ん中の男性セリフ「こいつも違う、、」
 
 ---
 
@@ -553,6 +564,8 @@ A long telephoto shot across a hazy forested valley in Yamagata, Japan in late M
 A wide view of a small Japanese mountain village in Yamagata, Japan in early summer seen from a low rise: dark-tiled rooftops and green paddy fields on the narrow flat land, forested ridges rising steeply behind in full fresh green, a wide river beyond, thin cloud over the ridgeline. Early summer, warm flat daylight. No snow anywhere, no frost, no ice, no winter. The upper third of the frame is deliberately left as clean open uncluttered space for a large caption added in editing. Peaceful in a way that will not last. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no humans visible. Generate 1 image.
 ```
 → 編集者指示: BGMを一段暗く落とす。ゆっくり引く（4秒で1.08→1.0）。上部の余白は次の日付テロップのために空けておく。
+→アセット056のまま、中央に「悲劇は、/まだ始まったばかり、、」と入れてください。/で改行。中央揃え。「悲劇」だけ赤字、残りは白。
+→ナレーション「まだ始まったばかり」のタイミングでふんわりフェードインし、そのままカット尻まで残してください。
 
 ---
 
@@ -577,6 +590,7 @@ A wide view of a small Japanese mountain village in Yamagata, Japan in early sum
 The back door of an old Japanese country house in Yamagata, Japan in late October, a few stepping stones across a small yard, a persimmon tree hung with orange fruit, and immediately behind it a forested slope in full autumn gold and rust rising over the roof. Dry fallen leaves on the ground, a bamboo rake against the wall. Late October morning, soft warm light. No snow anywhere, no frost, no winter. The middle of the frame is left as clear open space. Framed from adult eye height roughly 1.5 metres above the ground and about four metres back. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. No blood, no wounds, no gore. Generate 1 image.
 ```
 → 編集者指示: 「59歳・女性」テロップ。CHAR-03を画面右から裏山の方向へゆっくりスライド（3秒）。穏やかなBGM。
+→女性セリフ「クルミ拾いに行くべ」
 
 ---
 
@@ -627,6 +641,7 @@ The foot of a large old walnut tree at the edge of a forested slope in Yamagata,
 A narrow lane between old houses in a Japanese mountain village in Yamagata, Japan in late October at dusk: dark-tiled roofs, a stone wall, drying persimmons hanging under an eave, the forested slope behind already in deep shade, one street light just coming on. Late October evening, dim but NOT pure black — the lane, the walls and the roofs stay clearly readable. No snow anywhere, no frost, no ice, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 環境音のみ。夕方の犬の鳴き声を遠くに置く。
+→左の女性セリフ「まだ戻らねぇ、、」右の女性「どうしたんだべ？」
 
 ---
 
@@ -643,6 +658,7 @@ A narrow lane between old houses in a Japanese mountain village in Yamagata, Jap
 The foot of a forested slope behind a Japanese mountain village in Yamagata, Japan at night in late October: bare-branched walnut and chestnut trees, thick dry leaf litter, autumn undergrowth going brown, torch light spilling in from one side and falling off fast into darkness. Late October night, dim but NOT pure black — the trunks, the leaf litter and the slope stay clearly readable. No snow anywhere, no frost, no ice, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「夜9時ごろまで捜索」テロップ。呼びかける声を重ね、次のカットで急に静かにする。
+→左の男性セリフ「おーい！」真ん中の女性「どこだー！」
 
 ---
 
@@ -656,6 +672,7 @@ The foot of a forested slope behind a Japanese mountain village in Yamagata, Jap
 ```
 → 背景再使用: 063
 → 編集者指示: 「クマの可能性 → 夜間の捜索を中止」テロップ。BGMを落として暗転へ渡す。
+→セリフ「戻れ、危ねぇ！」
 
 ---
 
@@ -696,6 +713,7 @@ Google Flow動画プロンプト:
 A slow handheld shot from just behind the shoulder of a Japanese hunter in an olive-brown jacket and orange cap walking into a wood at first light in late October in Yamagata, Japan, a plain bolt-action rifle held low across his body, muzzle forward. Only his back and shoulder are in frame, his face is never visible. Mist drifts between the bare trunks, dry leaves crunch underfoot, the camera sways with his steps. Dim but not pure black. No snow. No blood, no gore. 5 seconds. Photorealistic, shot on RED camera. Documentary drama style.
 ```
 → 編集者指示: 足音と落ち葉の音だけ。BGMは入れない。「猟友会が先導」テロップを小さく。
+→ハンターセリフ「気ぃ抜くなよ、、」
 
 ---
 
@@ -895,6 +913,7 @@ A plain research desk in a small Japanese office in late October: a thick stack 
 ```
 → 背景再使用: 069
 → 編集者指示: 首を左右にゆっくり振るキーフレーム。息づかいのSEだけ。
+→ハンターセリフ「いねぇな、、」
 
 ---
 
@@ -990,6 +1009,7 @@ Google Flow動画プロンプト:
 A locked-off shot of the front of an old Japanese country house in a mountain village in Yamagata, Japan in late October: a dark-tiled roof, a closed sliding door, a row of persimmons hung to dry under the eave turning very slightly in the breeze, boots left by the step, an empty swept yard. Nobody comes out. Soft warm autumn light, no snow. No people visible. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: 干し柿の揺れだけを残す。BGMを最小にして、次の章へ渡す。
+→アセット090のまま、「お母さんでした」のタイミングで中央に「知っている家の/お母さん、、」と入れてください。/で改行。中央揃え。「知っている」は赤字。干し柿の揺れが終わるまで残してください。
 
 ---
 
@@ -1063,6 +1083,7 @@ A tracking shot of an adult Japanese black bear, 140cm long, glossy jet-black wi
 The interior of a plain village community hall in a Japanese mountain village in Yamagata, Japan in late October: a tatami floor, folding tables pushed together, stacked cushions, fluorescent tubes overhead, a blank notice board on the wall, windows showing autumn gold and rust on the slope outside. No real institution name, no crest, no emblem, no logo, no lettering, no readable characters anywhere. Late October evening, flat interior light. No snow anywhere, no frost, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 大勢のざわめきのSEを重ねる。「人喰いグマ」を赤字のテロップで一度だけ大きく出す。
+→左の男性セリフ「なんとかしてけろ！」右から2番目の女性「おっかねぇ、、」
 
 ---
 
@@ -1087,6 +1108,7 @@ The interior of a plain village community hall in a Japanese mountain village in
 The foot of a wooded mountain slope in Tozawa village, Yamagata, Japan in autumn, late October, during full daylight: a broad approach to a wall of brush, walnut and chestnut trees with remaining gold and rust leaves, dry leaf litter and a harvested field at the edge. Bright overcast daytime sky, no night lighting, no moonlight. Framed from adult eye height about 1.5 metres above the ground and four metres back, ground in the lower third, the centre open for the hunters. No snow anywhere, no frost, no ice, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. No animals. Generate 1 image.
 ```
 → 編集者指示: 3人を横一列に等間隔で並べ、同じ速度で奥へスライドさせる。「ふたたびクマ狩り」テロップ。
+→左のハンターセリフ「今度こそ、、」
 
 ---
 
@@ -1267,6 +1289,7 @@ Google Flow動画プロンプト:
 A locked-off shot into the shaded depth of a chestnut grove in Yamagata, Japan in late October. An adult Japanese black bear, 140cm long, glossy jet-black with a white crescent chest patch, large round ears, a short blunt muzzle and no shoulder hump, slides out from between the far trunks and creeps toward the camera on all fours in a low stalking posture, placing each paw slowly and deliberately, ears pinned flat against the skull, black lips peeled back off the teeth in a low snarl, the fur along its neck and spine bristled up into a raised ridge, claws spread and hooked into the leaf litter. It never stands upright and never breaks its gaze. Dry leaves barely move. Dim but not pure black. No snow. No people visible. No blood, no gore. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: BGMを完全に止め、落ち葉を踏む音だけを立てる。クマが画面手前に達する直前でカットを切る。
+→アセット111のまま、カットを切る1秒前に中央へ「それでも、/クマはやってきた、、」と入れてください。/で改行。中央揃え。「クマ」は赤字。落ち葉を踏む音と同時にふっと出してください。
 
 ---
 
@@ -1280,6 +1303,7 @@ A locked-off shot into the shaded depth of a chestnut grove in Yamagata, Japan i
 ```
 → 背景再使用: 106
 → 編集者指示: 明るいBGMをここでぴたりと止める。1〜2秒。
+→セリフ「ん、、？」
 
 ---
 
@@ -1317,6 +1341,7 @@ Close low view of damp bare soil showing through the dry leaf litter on the floo
 ```
 → 背景再使用: 110
 → 編集者指示: 視線の先は一切映さない。画面を短く白フラッシュさせ、心拍と耳鳴りのSEに切り替える。1秒。
+→セリフ「あぁ、、」
 
 ---
 
@@ -1359,6 +1384,7 @@ A close locked-off shot of a small heap of dry branches and fallen leaves on the
 ```
 → 背景再使用: 117
 → 編集者指示: 叫び声を山に反響させる。炎の揺れを重ねる。画面をわずかに揺らし続ける。
+→ギザギザの吹き出しを右上に挿入し「うおぉぉ！」と入れてください。最初に小刻みに揺らして叫びの感じを表現してください。
 
 ---
 
@@ -1401,6 +1427,7 @@ Google Flow動画プロンプト:
 A low tracking shot just above the ground on a leaf-covered slope in a chestnut grove in Yamagata, Japan in late October, following four pairs of legs in country work clothes and rubber boots moving downhill very close together, one pair barely touching the ground and carried between the others. Only legs and feet are in frame, no faces. A dropped white work glove stays behind on the leaves as they pass. Dim but not pure black. No snow. No blood, no gore. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: 足元だけで処理する。荒い息と落ち葉の音。BGMは入れない。
+→セリフ「しっかり！」別の声「ゆっくりな、、」
 
 ---
 
@@ -1433,6 +1460,7 @@ The corridor outside a treatment room in a small Japanese regional hospital in t
 ```
 → 背景再使用: 122
 → 編集者指示: 音を全部落とす。3秒たっぷり止めてから次へ。テロップは出さない。
+→夫のセリフ「・・・」
 
 ---
 
@@ -1495,6 +1523,7 @@ Close overhead view of a single sheet of old cream-coloured paper lying on a pla
 A narrow farm track at the foot of a forested slope in Yamagata, Japan in late October: two white kei mini trucks parked nose to tail with their tailgates down, harvested fields on one side, autumn gold and rust rising steeply on the other, low afternoon light along the track. Late October afternoon, warm flat light. No snow anywhere, no frost, no ice, no winter. The middle of the frame is left as clear open space. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「猟友会 13人」テロップ。4人を横並びに配置し、残りは画面外の含みにする。BGMを緊張側へ。
+→左の男性セリフ「行くぞ！」右の男性「おう！」
 
 ---
 
@@ -1527,6 +1556,7 @@ A slow handheld shot from just behind the shoulder of a Japanese hunter in an ol
 A tight blind bend on a narrow path along a forested slope in Yamagata, Japan in late October, the path turning hard around the shoulder of the hill with bare-branched trunks and dry upright grass crowding both sides so nothing beyond the bend can be seen. Thick dry leaf litter, autumn gold and rust, low afternoon light. Late October afternoon, dim between the trunks but NOT pure black — the path and the bend stay clearly readable. No snow anywhere, no frost, no ice, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 衝撃音の一撃。「距離 約1m ＝ 手を伸ばせば届く」を白テロップで一瞬だけ。
+→ハンターセリフ「うわっ！」ギザギザの吹き出しを右上に挿入し、最初に小刻みに揺らしてください。
 
 ---
 
@@ -1564,6 +1594,7 @@ A tight blind bend on a narrow path along a forested slope in Yamagata, Japan in
 A narrow path along the side of a steep forested slope in Yamagata, Japan in late October, seen looking along its length: on one side the ground drops away sharply into a wooded ravine, on the other side a dense wall of dry upright grass and bare branches blocks the way completely, leaving only the narrow strip of leaf-covered path between them. Autumn gold and rust, low afternoon light raking along the path. Late October afternoon, dim between the trunks but NOT pure black — the path, the drop and the wall of grass all stay clearly readable. No snow anywhere, no frost, no ice, no winter. Nowhere to go. Photorealistic, shot on RED camera, 35mm lens. Documentary style. 16:9 aspect ratio. No people, no humans visible. Generate 1 image.
 ```
 → 編集者指示: 左右の逃げ場のなさを矢印とバツ印で編集で示す。1.5秒で短く切る。
+→アセット134のまま、中央に「逃げ場なし」と入れてください。なしは赤字。バツ印と同時に出して、1.5秒で切ってください。
 
 ---
 
@@ -1577,6 +1608,7 @@ A narrow path along the side of a steep forested slope in Yamagata, Japan in lat
 ```
 → 背景再使用: 131
 → 編集者指示: 構えた瞬間に環境音を全部落とす。呼吸音だけ残す。
+→ハンターセリフ「落ち着け、、」
 
 ---
 
@@ -1678,6 +1710,8 @@ The exterior of a plain single-storey village community hall in a Japanese mount
 The interior of a plain village community hall in Tozawa village, Yamagata, Japan at night in autumn, late October: tatami floor, folding tables pushed aside, stacked cushions and a blank notice board, the windows showing a dark night sky and faint outlines of trees with remaining autumn leaves outside, no daylight through the glass. Warm indoor lamps match the lit windows of the preceding exterior. The interior is dim but NOT pure black — the floor, windows and furnishings stay clearly readable. The centre is open for two separate groups. No snow anywhere, no frost, no ice, no winter. No real institution name, no crest, no emblem, no logo, no lettering, no readable characters anywhere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
 ```
 → 編集者指示: 画面中央に縦線を引き、左に「1頭」、右に「複数」のテロップを置く。ざわめきのSE。
+→左の男性セリフ「同じクマだべ！」右の男性「いや、別だ！」
+→「1頭によるものなのか」のタイミングで左、「複数なのか」のタイミングで右のセリフを入れてください。
 
 ---
 
@@ -1761,6 +1795,7 @@ Close overhead view of three sheets of old cream-coloured paper laid side by sid
 A wooded slope in the Sugisawa district of Tozawa village, Yamagata, Japan in early summer, late May: fresh light-green beech and walnut leaves, green undergrowth and bamboo grass, young foliage filtering clear daytime light, a narrow open patch through the trunks leading toward dense brush. No autumn foliage or brown autumn canopy. Framed from adult eye height about 1.5 metres above the ground and four metres back, ground occupying the lower third, a clear open middle for two searchers. No snow anywhere, no frost, no ice, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. No animals. Generate 1 image.
 ```
 → 編集者指示: 指さす先を一瞬だけぼかして見せ、正体は次のカットまで出さない。
+→左の男性セリフ「おい！あれ！」右の男性「どこだ？」
 
 ---
 
@@ -1846,6 +1881,7 @@ A slow low tracking shot across the floor of a chestnut grove on a forested slop
 A plain wooden table in a village community hall in a Japanese mountain village in Yamagata, Japan at night in late October, seen from directly above: a large blank paper map of a mountain valley spread across it with no lettering and no place names anywhere, several small red marker magnets placed on it, a pencil, an ashtray, a thermos and a stack of cups around the edges. No real institution name, no crest, no emblem, no logo, no readable characters anywhere. Late October night, no snow anywhere, no frost, no winter. Warm interior light, dim at the edges but NOT pure black — the map and the markers stay clearly readable. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 地図の上の赤い印を1つずつ増やす演出。「複数いる前提で動いた」テロップ。
+→左の男性セリフ「ここもだ」真ん中の男性「油断すんなよ！」
 
 ---
 
@@ -1862,6 +1898,7 @@ A plain wooden table in a village community hall in a Japanese mountain village 
 A simple steel box trap set on the leaf-covered floor of a wood on a forested slope in Yamagata, Japan in late October, its door propped open at one end and a few chestnuts placed on the ground inside as bait, dry leaves banked against its base, bare-branched trunks and autumn gold and rust around it, thin morning mist. Late October morning, cool flat light. No snow anywhere, no frost, no ice, no winter. Nothing inside it. Photorealistic, shot on RED camera, 35mm lens. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「檻 2カ所」「毎日見回り」の2行テロップ。空の檻を2秒見せてから、肩を落とす動きを付ける。
+→ハンターセリフ「今日もいねぇか、、」肩を落とすタイミングで入れてください。
 
 ---
 
@@ -2008,6 +2045,7 @@ A wider view of a plain steel workbench in a rural Japanese work yard at night i
 The lower edge of a wood on a slope above Tozawa village, Yamagata, Japan in autumn, late October: walnut branches bare of nuts and grapevines bare of fruit, dry leaf litter, gold and rust leaves remaining on the trees. A clear downhill route leads from the trees to the edge of harvested fields; dark-tiled village rooftops are visible on the valley floor below. The empty path through the middle stays open for a separate character layer. Cool flat daylight. No snow anywhere, no frost, no ice, no winter. No animals, no bear, no animal silhouettes or animal shadows anywhere. No people, no figures, no humans visible. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: 林から畑の縁まで、クマを一直線にスライドさせる（4秒）。「食べ物がない → 人里へ」の矢印を編集で重ねる。
+→クマのセリフ「腹へった、、」
 
 ---
 
@@ -2019,6 +2057,7 @@ The lower edge of a wood on a slope above Tozawa village, Yamagata, Japan in aut
 A single white enamel basin heaped to overflowing with crushed chestnut kernels and shell fragments, set alone in the centre of a plain steel workbench in a rural Japanese work yard at night in late October, everything around it falling away into shade, one bare bulb picking out only the heap itself. No lettering, no readable characters anywhere. No real institution name, no crest, no emblem, no logo. Late October night, the surroundings dim but NOT pure black — the basin and the heaped chestnuts stay clearly readable. No snow anywhere, no frost, no winter. Nothing red and nothing stained. Photorealistic, shot on RED camera, 85mm lens, shallow depth of field. Documentary evidence photography style. 16:9 aspect ratio. No people, no humans visible, no animals. Generate 1 image.
 ```
 → 編集者指示: 前カットの矢印を画面から消し、この容器だけを残す。「ところが」で一瞬音を切る。
+→アセット169のまま、「ところが」で音を切った直後に中央へ「このクマは違った」と入れてください。違ったは赤字。
 
 ---
 
@@ -2051,6 +2090,7 @@ A slow close overhead push in on a clean stainless steel tray on a workbench in 
 A plain small laboratory bench in Japan at night in late October: a rack of empty glass test tubes, a microscope, a notebook with blank pages, a desk lamp, tiled wall behind. No real institution name, no crest, no emblem, no logo, no lettering, no readable characters anywhere. Late October night, cool even light, dim at the edges but NOT pure black — the bench and the equipment stay clearly readable. No snow anywhere, no frost, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「DNA鑑定」テロップ。1988年当時の技術ではないという指摘があるため、鑑定の年代は画面に出さない。
+→検査員セリフ「これは、、」
 
 ---
 
@@ -2165,6 +2205,7 @@ A slow overhead pull back from a plain wooden desk in Japan with two closed obje
 ```
 → 背景再使用: 099
 → 編集者指示: 「臆病な性格」テロップ。クマを画面奥へ小さくスライドさせる。
+→クマのセリフ「ひっ！」
 
 ---
 
@@ -2205,6 +2246,7 @@ Close overhead view of an old natural history reference book lying open on a pla
 ```
 → 背景再使用: 082
 → 編集者指示: 本が閉じる音のSE。「どれにも当てはまらない」テロップ。BGMを不穏側へ。
+→研究者セリフ「おかしい、、」
 
 ---
 
@@ -2221,6 +2263,7 @@ Close overhead view of an old natural history reference book lying open on a pla
 The foot of a wooded mountain slope in Tozawa village, Yamagata, Japan at dawn in early summer, late May: fresh green bamboo grass, young beech leaves, a small dense patch of grass at the centre-right, open earth in front of that patch and the slope rising behind it. Pale first light reaches the leaves and the ground. The scene is dim but NOT pure black — the grass patch, earth and tree trunks stay clearly readable. Framed from about 1.5 metres above the ground and four metres back, the ground occupies the lower third with clear space in front of the grass patch. No snow anywhere, no frost, no ice, no winter. No people, no figures, no humans visible. No animals, no bodies, no remains. No blood, no wounds, no gore. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → 編集者指示: クマの背中が背景の草むらの一点に接する配置にし、動かさず見せる。遺体は描かない。
+→クマのセリフ「・・・」
 
 ---
 
@@ -2234,6 +2277,7 @@ The foot of a wooded mountain slope in Tozawa village, Yamagata, Japan at dawn i
 ```
 → 背景再使用: 184
 → 編集者指示: 左の6人だけに石を投げる動きを付け、右のクマは座り込んだまま動かさない。遺体は描かない。
+→左の男たちのセリフ「どけ！」右のクマ「・・・」
 
 ---
 
@@ -2250,6 +2294,7 @@ Google Flow動画プロンプト:
 An 8-second slow continuous push in toward a single white enamel basin heaped with chestnut kernels and shell fragments, alone on a steel workbench in a rural Japanese work yard in Tozawa, Yamagata at night in autumn, late October. The basin and its contents remain perfectly still. One bare bulb illuminates the pile, surroundings dim but NOT pure black, the basin and chestnuts clearly readable throughout. No people, no animals, no blood, no wounds, no gore. No snow anywhere, no frost, no ice, no winter. No lettering. Photorealistic, shot on RED camera. Documentary evidence style.
 ```
 → 編集者指示: カットの後半で色を落とし、容器の赤いふちだけを編集で残す。
+→アセット169のまま、色が落ちるタイミングで中央に「満腹なのに、、」と入れてください。満腹は赤字。ゆっくりフェードイン。
 
 ---
 
@@ -2313,6 +2358,7 @@ A very slow steady push straight down a corridor of bare-branched trunks in a wo
 ```
 → 背景再使用: 106
 → 編集者指示: 164の3頭並びを背景に合成し、指の先が真ん中の4歳に当たるようにする。「年齢」テロップ。
+→研究者セリフ「注目は、ここ！」
 
 ---
 
@@ -2376,6 +2422,7 @@ A slow low push across a large patch of churned bare soil on the floor of a wood
 ```
 → 背景再使用: 193
 → 編集者指示: 転ぶ動きを速いキーフレームで付ける。落ち葉が舞う効果を重ねる。
+→ギザギザの吹き出しを右上に挿入し「うわっ！」と入れてください。最初に小刻みに揺らしてください。
 
 ---
 
@@ -2389,6 +2436,7 @@ A slow low push across a large patch of churned bare soil on the floor of a wood
 ```
 → 背景再使用: 193
 → 編集者指示: 蹴り返す動きを2回くり返す。直接の接触は描かず、足とクマの間に必ず隙間を残す。
+→セリフ「来るな！」
 
 ---
 
@@ -2444,6 +2492,7 @@ A very low locked-off shot just above the leaf litter in a wood on a forested sl
 ```
 → 背景再使用: 082
 → 編集者指示: 左右の手の先に「年齢」「体型」のテロップを置き、その間を線で結ばない。
+→研究者セリフ「一概には、、」
 
 ---
 
@@ -2545,6 +2594,7 @@ A slow aerial drift along the boundary between forest and farmland in Yamagata, 
 ```
 → 背景再使用: 206
 → 編集者指示: 資料の画像を背景の机上に配置する。一覧のいちばん下に新しい行が1本だけ加わる演出。BGMを不穏側へ切り替える。
+→職員セリフ「そんな、、」
 
 ---
 
@@ -2620,6 +2670,7 @@ A closed grey ring binder lying on a modern office desk in Japan in early May: a
 A wooded slope near the coast in Yamagata, Japan in early May: fresh bright green new leaves on beech and oak, thick bamboo grass, wet dark soil, patches of sunlight through the canopy, a narrow deer trail crossing the slope. Early May, warm soft light. No snow anywhere, no frost, no ice, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 無線のノイズ音を重ねる。駆除の場面そのものは映さない。
+→ハンターセリフ「至急、至急！」
 
 ---
 
@@ -2675,6 +2726,7 @@ A slow close tracking shot along a modern laboratory bench in Japan in early May
 ```
 → 背景再使用: 088
 → 編集者指示: 背後の山にクマの足跡アイコンを数十個ぶんだけ薄く散らす。「数十頭」テロップ。
+→佐藤さんセリフ「いまも数十頭おる」
 
 ---
 
@@ -2794,6 +2846,7 @@ The back room of a small licensed firearms shop in a coastal town in Yamagata, J
 ```
 → 背景再使用: 113
 → 編集者指示: セピア寄りの色調を維持。足跡から山の奥へ矢印を編集で伸ばす。
+→真ん中の男性セリフ「足跡だ！」右の男性「奥か？」
 
 ---
 
@@ -2831,6 +2884,7 @@ A wide view across layered forested ridges in Yamagata, Japan in late October, a
 ```
 → 背景再使用: 224
 → 編集者指示: 指の先の穴に矢印を編集で添える。「弾が貫いた古傷」テロップ。
+→富樫さんセリフ「ここに穴が、、」
 
 ---
 
@@ -2952,6 +3006,7 @@ The skull is from an adult Japanese black bear (Asiatic black bear, Ursus thibet
 ```
 → 背景再使用: 221
 → 編集者指示: なぞる指の軌跡を編集で線として残す。「ある特徴」テロップ。
+→富樫さんセリフ「ここが、、」
 
 ---
 
@@ -3021,6 +3076,7 @@ The skull is from an adult Japanese black bear (Asiatic black bear, Ursus thibet
 ```
 → 背景再使用: 221
 → 編集者指示: 時計の音だけを残し、動きを止める。2秒。
+→時計の音の2秒が明けたタイミングでセリフ「ん？この傷、、」
 
 ---
 
@@ -3066,6 +3122,7 @@ A slow steady push through the entrance hall of a modest 1990s Japanese regional
 A plain Japanese tatami guest room in a modest inn in Iwate, Japan in early September: folded futon bedding stacked in one corner, a low table pushed aside, a paper-screen window with a bare bulb overhead, a thermos and two cups. No real institution name, no crest, no emblem, no logo, no lettering, no readable characters anywhere. Early September night, no snow anywhere, no frost, no winter. Warm dim interior light, dim at the edges but NOT pure black — the tatami, the table and the window stay clearly readable. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 話す相手ではなく、聞き手のCHAR-08が驚いて少し身を引く動きを付ける。BGMを止め、話し声だけにする。
+→右の男性セリフ「実はな、、」左の男性「え？」
 
 ---
 
@@ -3124,6 +3181,7 @@ A slow steady tilt up a weathered wooden post under the eave of an old farmhouse
 ```
 → 背景再使用: 012
 → 編集者指示: 2体を同じ速度で奥へスライドさせ、距離が縮まないことを見せる。「離れようとしない」テロップ。
+→セリフ「ほれ、山さ帰れ！」
 
 ---
 
@@ -3137,6 +3195,7 @@ A slow steady tilt up a weathered wooden post under the eave of an old farmhouse
 ```
 → 背景再使用: 012
 → 編集者指示: 振り上げたところで暗転させ、当たる瞬間は一切描かない。鈍い打撃音を暗転の中で一度だけ鳴らす。
+→振り上げたところでセリフ「すまん、、」暗転の前に入れてください。
 
 ---
 
@@ -3179,6 +3238,7 @@ A locked-off shot up a steep slope of fresh green bamboo grass and young beech i
 ```
 → 背景再使用: 224
 → 編集者指示: 「あくまで推測」を画面の隅に小さく常時表示し、ここから先ずっと出しておく。
+→セリフ「推測ですがね、、」
 
 ---
 

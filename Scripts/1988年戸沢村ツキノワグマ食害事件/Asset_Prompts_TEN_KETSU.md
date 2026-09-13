@@ -44,6 +44,7 @@ A slow forward tracking shot along a cleared village road in a Japanese mountain
 The interior of a small Japanese rural village office in mid-March: steel desks pushed together, a wall of unmarked binder spines, a kerosene heater with a kettle on top, a window showing deep winter snow banked outside and a snow-covered ridge beyond. No real institution name, no crest, no emblem, no logo, no lettering, no readable characters anywhere. Mid-March, flat interior light, deep snow visible outside. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 「総務課危機管理室 小林直樹室長」を編集でテロップとして表示。
+→セリフ「飼ってた話なら！」
 
 ---
 
@@ -60,6 +61,7 @@ The interior of a small Japanese rural village office in mid-March: steel desks 
 The interior of the same small Japanese rural village office in mid-March: steel desks pushed together, unmarked binder spines on shelving at the left, a kerosene heater with a kettle on top and a window showing deep winter snow banked outside and low snow-covered hills beyond. A large clearly visible paper map is fixed flat to the wall in the RIGHT half of the frame with its centre 1.4 metres above the floor; it shows the winding Mogami River, roads, village blocks and low hill contours around Tozawa in muted colours without labels. The LEFT half has clear empty floor space. Seen straight toward the wall from about four metres back, at adult eye height. No real institution name, no crest, no emblem, no logo, no lettering, no readable characters anywhere. Mid-March, flat interior light, deep snow visible outside. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 1 image.
 ```
 → 編集者指示: CHAR-09を左に配置し、伸ばした指の先を右の壁地図の一点に確実に重ねる。同じ壁地図上の離れた位置に、富樫さんの話の場所を示す薄い印を編集で置き、2地点の違いを見せる。
+→セリフ「場所は別です」
 
 ---
 
@@ -299,6 +301,8 @@ A slow sideways tracking shot along a long row of empty folding steel chairs set
 ```
 → 背景再使用: 286
 → 編集者指示: 点灯していた16席のうち、1席ずつ消していく演出。最後に1人だけ残す。
+→セリフ「誰も来ねぇな、、」
+→最後の1人だけ残ったタイミングで、アセット287のまま中央に「ハンターが、いなくなる、、」と白テキストでゆっくりフェードイン。いなくなるは赤字。
 
 ---
 
@@ -315,6 +319,7 @@ A slow sideways tracking shot along a long row of empty folding steel chairs set
 A small plastic-sheeted growing tunnel for shiitake mushrooms set up beside an old farmhouse in a Japanese mountain village in Yamagata, Japan in mid-March: a low steel-hooped frame covered in cloudy polythene, stacked oak logs for mushroom growing beside it, patchy deep winter snow on the ground, the forested slope rising close behind with snow still between the bare trunks. Mid-March, cold flat overcast light, snow still on the ground. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 → 編集者指示: 指の先に次のカットの傷跡が来るよう、画角を288と289で揃える。
+→セリフ「ほれ、ここ見て」
 
 ---
 
@@ -371,6 +376,7 @@ A very slow aerial drift over a small Japanese mountain village in Yamagata, Jap
 An interior office at a Japanese prefectural government building in Yamagata, Japan in mid-March: plain steel desks with unmarked binders at the left and a window showing banked snow outside. A LARGE clearly visible paper map of Yamagata is pinned flat to the wall in the RIGHT half of the frame with its centre 1.6 metres above the floor, showing river lines, road lines and administrative boundaries in muted colours without text, with a few small round markers already attached. Clear empty floor space occupies the LEFT half. The map is seen almost straight on from adult eye height about four metres back; its entire surface and the floor below it are in frame. Mid-March, soft flat interior daylight, winter snow visible outside. No real institution name, no crest, no emblem, no logo, no lettering, no readable characters anywhere. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty interior only. Generate 1 image.
 ```
 → 編集者指示: 女性職員を左に置き、手に持つ丸い印を右側の壁地図の表面に重ねる。手の動きに合わせ、地図の印を1つずつ増やしていく。増えたところで音を切る。テロップは出さない。
+→印を置くたびにセリフ「また1件、、」
 
 ---
 
@@ -400,6 +406,7 @@ A very slow push forward from inside the edge of a wood on a forested slope in Y
 ```
 → 背景再使用: 283
 → 編集者指示: 2体の間に距離の目盛りを編集で置く。互いに気づいていない構図のまま止める。
+→左の女性セリフ「ええ天気だなぁ」右のクマ「・・・」
 
 ---
 
@@ -415,6 +422,7 @@ A very slow push forward from inside the edge of a wood on a forested slope in Y
 地点B（神田地区）: 約 38.7938, 140.1434
 地点C（古口地区）: 約 38.7574, 140.0887
 → 編集者指示: 集落と耕地を青、山林を緑で半透明に塗り分け、2色が接する線を赤くなぞる。地点Bと地点Cが、いずれもその赤い線のすぐ上にあることを示す。
+→赤い線をなぞり終えたタイミングで、アセット295のまま中央に「交わったとき、事故が起きる」と白テキスト。事故は赤字。
 
 ---
 
