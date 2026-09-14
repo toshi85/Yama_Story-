@@ -479,7 +479,10 @@ AIは自分向けの仕様書を書き、本人はそれを作業指示書に直
 python3 System_Tools/validate_phase2_assets.py --prompts <Asset_Prompts.md>
 python3 System_Tools/validate_yama_prompts.py  <Asset_Prompts.md>
 python3 System_Tools/validate_asset_deliverable.py <Asset_Prompts_Full.md>   # ← 2026-08-25 追加・納品形式
+python3 System_Tools/imagegen/precheck_subjects.py <Asset_Prompts.md>   ★2026-09-14新設: ナレーションの主題がプロンプトに描かれているか（FAIL が0になるまで生成しない）
 ```
+物差しは「ナレーションで言っていることが画面に見えるか」の1本。反応・痕跡・書類・風景で主題を代替していたら FAIL（定石P）
+戸沢村で 022・074・125（遺体の傷を描かず後ろ姿＋編集の赤丸）等12カットが本人差し戻しになった事故の再発防止
 
 `validate_asset_deliverable.py` は **人間チェック済み版の実測残存率が合格ライン**（H1〜H7）。
 AI生成版はこの検査で8項目全部が超過した＝それが手直しの中身だった。
