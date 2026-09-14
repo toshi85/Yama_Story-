@@ -419,16 +419,16 @@ A handheld night shot from a narrow mountain path in Yamagata, Japan in late May
 ナレーター: 衣服がボロボロでお尻と両方の太ももの筋肉が削ぎ落とされていたとのこと。
 
 【制作メモ】ASSET-022 [キャラアニメーション]
-シーン: 消防団員が思わず顔をそむけ、上着を脱いで前に差し出す。対象は画面の外
+シーン: 沢の岩の上にうつ伏せのCHAR-01。破れたズボン越しに、お尻と両太ももの欠損が見える
 キャラプロンプト（1:1）:
 ```
-(CHAR-15 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-15: Japanese volunteer firefighter in his mid-50s, short black hair greying at the sides, square weathered face, navy volunteer fire brigade jacket with plain silver reflective bands and no lettering, dark grey trousers, black rubber boots, white cotton gloves, CLEAN-SHAVEN with no beard, no moustache and no stubble, turning his face sharply away to one side with his eyes screwed shut into tight creases and his teeth bared, while both arms hold a folded jacket straight out in front of him toward something off-frame. Only the folded jacket as a prop, nothing else around him. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no wounds, no gore. Generate 1 image.
+(CHAR-01 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, slightly chibi proportions, children's animation style. CHAR-01: Japanese farmer, 61 years old, short cropped grey hair, CLEAN-SHAVEN with no beard, no moustache and no stubble, lying face-down and motionless on the ground, clearly dead and NOT sleeping, seen from behind and slightly above so that his back, buttocks and the backs of both thighs face the camera and his face is turned away and hidden. His faded dark green work jacket is shredded into hanging strips and his brown work trousers are torn wide open across the seat and the backs of both thighs; through the torn cloth the buttocks and both thighs are drawn as large dark hollowed patches with ragged jagged edges, the muscle visibly missing, in simple flat cartoon shading, nothing red and nothing stained. One black rubber boot is missing. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no gore. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
 The bottom of a steep wooded ravine in Yamagata, Japan at night in late May, very tight framing on wet rock and shallow water with fresh green bamboo grass blurred at the edges, torch light from one side, shallow depth of field. Late May night, dim but NOT pure black — the rock and water stay clearly readable. No snow anywhere, no frost, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
-→ 編集者指示: 直接的な描写はしない。ナレーションの間はキャラの後頭部と差し出す腕だけを見せる。字幕も出さない。
+→ 編集者指示: 遺体を沢底の背景の岩の上に置き、4秒でゆっくり寄る。字幕は出さない。
 →男性セリフ「なんてことだ、、」
 
 ---
@@ -1119,13 +1119,13 @@ A slow low aerial orbit around a tiny hamlet in a Japanese mountain valley in Ya
 ナレーター: また、この女性も頭と首に傷はなく、右の胸の筋肉、両方の太もも、そして右腕の筋肉に深い損傷がみられました。
 
 【制作メモ】ASSET-074 [キャラアニメーション]
-シーン: CHAR-03の後ろ姿。頭と首は白いまま、右胸・両太もも・右腕の位置だけが沈む
+シーン: 仰向けのCHAR-03を斜め上から。顔と首はきれいなまま。右胸・両太もも・右腕の服が破れ、欠損が見える
 キャラプロンプト（1:1）:
 ```
-(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-03: Japanese woman, 59 years old, mustard-yellow work smock, dark grey monpe trousers, black rubber boots, faded blue headscarf, standing upright and still with both arms slightly away from her sides, seen from directly behind so that only her back, waist and legs face the camera and her face is completely hidden. She has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw her with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
+(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, slightly chibi proportions, children's animation style. CHAR-03: Japanese woman, 59 years old, faded blue headscarf, mustard-yellow work smock, dark grey monpe trousers, black rubber boots, lying on her back on the ground, motionless, clearly dead and NOT sleeping, seen from slightly above at a three-quarter angle so that her whole body is visible. Her head and neck are completely clean and unmarked: face pale bluish-white, eyes closed, mouth slack, headscarf still in place. The right side of her smock over the chest is torn open and the area beneath is drawn as a large dark hollowed patch with ragged edges; both legs of her monpe trousers are ripped wide open across the thighs, each thigh showing a large dark hollowed patch; her right sleeve is shredded and the right forearm shows the same dark hollowed patch. Simple flat cartoon shading, nothing red and nothing stained. Her expression is NOT peaceful, NOT smiling and NOT relaxed. She has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw her with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no gore. Generate 1 image.
 ```
 → 背景再使用: 045
-→ 編集者指示: 右胸・両太もも・右腕の位置に赤い半透明のハイライトを編集で重ね、頭と首は白いままにする。「頭と首に傷なし」テロップ。文字は画像に描かせず、すべて編集で載せる。
+→ 編集者指示: 045と同じ画角で置く。頭と首の位置に「傷なし」の指示線だけを編集で添える。文字は画像に描かせない。
 
 ---
 
@@ -1676,13 +1676,13 @@ Close low view of damp bare soil showing through the dry leaf litter on the floo
 ナレーター: 奥さんの近くにはクマがいて、近づけません。戦うための武器もない状況。
 
 【制作メモ】ASSET-116 [キャラアニメーション]
-シーン: CHAR-05の空の両手と、その先で低く構えるCHAR-11
+シーン: 手前にCHAR-05の空の両手。奥でCHAR-11が低く構え、その足元にCHAR-04が倒れている
 キャラプロンプト（1:1）:
 ```
-(CHAR-05 再利用)(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two clearly separated depth planes with a broad empty gap between them. Foreground at the lower left: 1) CHAR-05: Japanese man in his early 60s, lean and wiry, short greying hair, deeply lined face, CLEAN-SHAVEN with no beard, no moustache and no stubble, wearing a navy zip-up work jacket, khaki trousers, black rubber boots and a grey cap, standing with both empty hands held open and low in front of him, nothing in either hand, one foot half a step back, eyebrows raised, eyes stretched wide, mouth open with the teeth showing, NOT smiling, NOT grinning, NOT angry; 2) far behind him at the upper right, CHAR-11: adult male Japanese black bear, 140cm body length and 84kg, glossy jet-black coat, white crescent-moon chest patch, large round ears, short blunt muzzle, NO shoulder hump, planted ON ALL FOURS facing him with its chest and both shoulders squared toward him, head dropped low between bunched shoulders, ears flattened right back against the skull, mouth wrenched wide open in a roaring snarl with the teeth clearly showing, the fur along its neck and shoulders bristled up into a raised ridge, claws spread. It is NOT calm, NOT curious and NOT gentle — it reads as furious at a glance. NOT reared up, NOT on two legs. The bear stays several metres away, its image visibly smaller because it is deeper in the scene, with a broad transparent strip between the man and the bear. It is NOT beside him, NOT touching him and NOT pouncing toward his body. Both have large heads, short compact torsos and short stubby limbs, roughly four to five heads tall. Do NOT draw them with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
+(CHAR-05 再利用)(CHAR-11 再利用)(CHAR-04 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two clearly separated depth planes with a broad empty gap between them. Foreground at the lower left: 1) CHAR-05: Japanese man in his early 60s, lean and wiry, short greying hair, deeply lined face, CLEAN-SHAVEN with no beard, no moustache and no stubble, wearing a navy zip-up work jacket, khaki trousers, black rubber boots and a grey cap, standing with both empty hands held open and low in front of him, nothing in either hand, one foot half a step back, eyebrows raised, eyes stretched wide, mouth open with the teeth showing, NOT smiling, NOT grinning, NOT angry; 2) far behind him at the upper right, CHAR-11: adult male Japanese black bear, 140cm body length and 84kg, glossy jet-black coat, white crescent-moon chest patch, large round ears, short blunt muzzle, NO shoulder hump, planted ON ALL FOURS facing him with its chest and both shoulders squared toward him, head dropped low between bunched shoulders, ears flattened right back against the skull, mouth wrenched wide open in a roaring snarl with the teeth clearly showing, the fur along its neck and shoulders bristled up into a raised ridge, claws spread. It is NOT calm, NOT curious and NOT gentle — it reads as furious at a glance. NOT reared up, NOT on two legs. 3) CHAR-04: Japanese woman, 61 years old, soft red-checked flannel shirt, beige field apron, dark brown trousers, grey trainers, short permed greying hair, lying motionless on her side on the ground directly in front of the bear's front paws, her face turned away and hidden, one arm flung out, a woven basket tipped over beside her, in the same far depth plane as the bear. The bear stays several metres away, its image visibly smaller because it is deeper in the scene, with a broad transparent strip between the man and the bear. It is NOT beside him, NOT touching him and NOT pouncing toward his body. Both have large heads, short compact torsos and short stubby limbs, roughly four to five heads tall. Do NOT draw them with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
 ```
 → 背景再使用: 106
-→ 編集者指示: 「武器なし」を3連のバツ印で示さず、空の両手のアップだけで見せる。クマは画面奥に小さく置き、夫との間に広い空間を残す。BGMは低音の持続音。
+→ 編集者指示: 空の両手のアップから引いて、奥のクマと倒れた妻を見せる。クマと夫の間に広い空間を残す。BGMは低音の持続音。
 
 ---
 
@@ -1795,13 +1795,13 @@ The corridor outside a treatment room in a small Japanese regional hospital in t
 ナレーター: 傷は、またしても腰からお尻、そして両方のふくらはぎと後ろ側に集中しており、
 
 【制作メモ】ASSET-125 [キャラアニメーション]
-シーン: CHAR-04の後ろ姿。腰からお尻と、両方のふくらはぎだけが沈んでいる
+シーン: うつ伏せのCHAR-04を後ろ上から。腰からお尻と両ふくらはぎのズボンが破れ、欠損が見える
 キャラプロンプト（1:1）:
 ```
-(CHAR-04 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-04: Japanese woman, 61 years old, soft red-checked flannel shirt, beige field apron, dark brown trousers, grey trainers, short permed greying hair, standing upright and still with both arms slightly away from her sides, seen from directly behind so that only her back, waist and legs face the camera and her face is completely hidden. She has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw her with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
+(CHAR-04 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, slightly chibi proportions, children's animation style. CHAR-04: Japanese woman, 61 years old, soft red-checked flannel shirt, beige field apron, dark brown trousers, grey trainers, short permed greying hair, lying face-down and motionless on the ground, clearly dead and NOT sleeping, seen from behind and slightly above so that her back, lower back, buttocks and the backs of both calves face the camera and her face is completely hidden. Her head and neck are clean and unmarked. Her trousers are torn wide open from the lower back across the buttocks, and both trouser legs are ripped open across the backs of the calves; through the torn cloth the lower back, buttocks and both calves are drawn as large dark hollowed patches with ragged jagged edges, the muscle visibly missing, in simple flat cartoon shading, nothing red and nothing stained. She has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw her with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no gore. Generate 1 image.
 ```
 → 背景再使用: 045
-→ 編集者指示: 腰からお尻と両方のふくらはぎに赤い半透明のハイライトを編集で重ねる。3人目も同じ形であることが分かるよう、045・074と同じ画角で並べる。
+→ 編集者指示: 3人目も同じ形であることが分かるよう、045・074と同じ画角で並べる。文字は画像に描かせない。
 
 ---
 
@@ -1844,13 +1844,13 @@ Close overhead view of a single sheet of old cream-coloured paper lying on a pla
 シーン: 猟銃を担いだハンターたちが軽トラの荷台から降り、山へ向かって歩き出す
 キャラプロンプト（1:1）:
 ```
-(CHAR-14 再利用)[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Left to right: 1) CHAR-14: Japanese hunter in his mid-50s, stocky and weathered, short black hair going grey at the sides under a faded orange cap, deeply lined face, CLEAN-SHAVEN with no beard, no moustache and no stubble, wearing an olive-brown hunting jacket, dark green trousers and rubber boots, plain bolt-action rifle slung muzzle-down on one shoulder, striding forward; 2) a Japanese hunter in his 60s in a grey hunting vest, brown cap and rubber boots, CLEAN-SHAVEN with no beard, no moustache and no stubble, with a plain bolt-action hunting rifle slung muzzle-down over his shoulder, pulling on a white cotton glove; 3) a Japanese hunter in his 40s in a dark green jacket and knitted cap, CLEAN-SHAVEN with no beard, no moustache and no stubble, with a plain bolt-action hunting rifle slung muzzle-down over his shoulder, carrying a canvas cartridge belt over one arm; 4) a Japanese hunter in his 30s in a khaki jacket and orange armband, CLEAN-SHAVEN with no beard, no moustache and no stubble, gripping the strap of his own plain bolt-action hunting rifle slung muzzle-down over his shoulder, jumping down from an unseen tailgate. Exactly four hunters and four visibly separate hunting rifles, one rifle on every hunter, all rifles in the same cartoon style. NOT smiling, NOT grinning. Every person is a distinct individual and no two dressed alike. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT, and no two of them are the same height. All have eyebrows driven down hard and pulled together, eyes narrowed to a hard unblinking stare, mouths pressed into flat grim lines with the jaw muscles tight. All have large heads, short compact torsos and short stubby arms and legs, roughly four to five heads tall. Do NOT draw them with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No lettering, no readable characters anywhere. Generate 1 image.
+(CHAR-14 再利用)[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Left to right: 1) CHAR-14: Japanese hunter in his mid-50s, stocky and weathered, short black hair going grey at the sides under a faded orange cap, deeply lined face, CLEAN-SHAVEN with no beard, no moustache and no stubble, wearing an olive-brown hunting jacket, dark green trousers and rubber boots, plain bolt-action rifle slung muzzle-down on one shoulder, striding forward; 2) a Japanese hunter in his 60s in a grey hunting vest, brown cap and rubber boots, CLEAN-SHAVEN with no beard, no moustache and no stubble, with a plain bolt-action hunting rifle slung muzzle-down over his shoulder, pulling on a white cotton glove; 3) a Japanese hunter in his 40s in a dark green jacket and knitted cap, CLEAN-SHAVEN with no beard, no moustache and no stubble, with a plain bolt-action hunting rifle slung muzzle-down over his shoulder, carrying a canvas cartridge belt over one arm; 4) a Japanese hunter in his 30s in a khaki jacket and orange armband, CLEAN-SHAVEN with no beard, no moustache and no stubble, gripping the strap of his own plain bolt-action hunting rifle slung muzzle-down over his shoulder, jumping down from an unseen tailgate. Directly behind these four stand two more rows of Japanese hunters, partly hidden by the front row so that only their heads, shoulders and the muzzles of slung rifles show, drawn a little smaller because they are farther back: nine more men in caps, hunting vests and jackets of different colours — thirteen hunters in all. Every face in the back rows is different. Do NOT draw only four people. Exactly four hunters in the front row, each with a visibly separate rifle, all rifles in the same cartoon style. NOT smiling, NOT grinning. Every person is a distinct individual and no two dressed alike. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT, and no two of them are the same height. All have eyebrows driven down hard and pulled together, eyes narrowed to a hard unblinking stare, mouths pressed into flat grim lines with the jaw muscles tight. All have large heads, short compact torsos and short stubby arms and legs, roughly four to five heads tall. Do NOT draw them with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No lettering, no readable characters anywhere. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
 A narrow farm track at the foot of a forested slope in Yamagata, Japan in late October: two white kei mini trucks parked nose to tail with their tailgates down, harvested fields on one side, autumn gold and rust rising steeply on the other, low afternoon light along the track. Late October afternoon, warm flat light. No snow anywhere, no frost, no ice, no winter. The middle of the frame is left as clear open space. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
-→ 編集者指示: 「猟友会 13人」テロップ。4人を横並びに配置し、残りは画面外の含みにする。BGMを緊張側へ。
+→ 編集者指示: 「猟友会 13人」テロップ。BGMを緊張側へ。
 →左の男性セリフ「行くぞ！」右の男性「おう！」
 
 ---
@@ -1955,25 +1955,30 @@ A narrow path along the side of a steep forested slope in Yamagata, Japan in lat
 
 ナレーター: その隙をつき、ハンターは発砲。
 
-【制作メモ】ASSET-137 [Lovart静止画]
-シーン: 銃口の先に白い煙が広がり、驚いた鳥が斜面から一斉に飛び立つ
+【制作メモ】ASSET-137 [キャラアニメーション]
+シーン: CHAR-14が構えた銃を撃つ瞬間。銃口から白い煙
+キャラプロンプト（1:1）:
 ```
-A wide view across a forested slope in Yamagata, Japan in late October at the instant of a rifle shot: a thin cloud of pale smoke hanging in the air at the left edge of the frame, and a scatter of small birds bursting up out of the bare branches all across the slope, wings caught mid-beat, dry leaves shaken loose and drifting. Autumn gold and rust, low afternoon light. Late October afternoon, warm flat light. No snow anywhere, no frost, no ice, no winter. No people, no humans visible, no animals on the ground. Photorealistic, shot on RED camera, 50mm lens. Documentary style. 16:9 aspect ratio. Generate 1 image.
+(CHAR-14 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-14: Japanese hunter in his mid-50s, olive-brown hunting jacket, dark green trousers, rubber boots, faded orange cap, CLEAN-SHAVEN with no beard, no moustache and no stubble, standing side-on with a plain bolt-action hunting rifle raised to his shoulder and his cheek down on the stock, THE WHOLE LENGTH OF THE RIFLE VISIBLE across the frame pointing toward the right edge, at the exact instant of firing: a puff of pale grey smoke bursting from the muzzle, the rifle butt driven back into his shoulder, one eye narrowed to a hard unblinking stare, mouth pressed into a flat grim line with the jaw muscles tight. Only the rifle and the muzzle smoke as props, nothing else around him. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no wounds, no gore. Generate 1 image.
 ```
-→ 編集者指示: 銃声のSEを一発だけ、山に反響させる。着弾は映さない。
+背景プロンプト（16:9）:
+```
+A wide view across a forested slope in Yamagata, Japan in late October at the instant of a rifle shot: a scatter of small birds bursting up out of the bare branches all across the slope, wings caught mid-beat, dry leaves shaken loose and drifting. Autumn gold and rust, low afternoon light. Late October afternoon, warm flat light. No snow anywhere, no frost, no ice, no winter. No people, no figures, no humans visible, no animals on the ground. Empty landscape only. Photorealistic, shot on RED camera, 50mm lens. Documentary style. 16:9 aspect ratio. Generate 1 image.
+```
+→ 編集者指示: CHAR-14を画面左に置き、銃声SEを一発だけ山に反響させる。着弾は次のカットで見せる。
 
 ---
 
 ナレーター: 1発目がクマの右のわき腹に当たり、倒れたところをもう1発。
 
 【制作メモ】ASSET-138 [キャラアニメーション]
-シーン: CHAR-14が素早くボルトを操作し、二発目を送り込む
+シーン: 右わき腹を撃たれたCHAR-11。脚が崩れ、倒れかける瞬間
 キャラプロンプト（1:1）:
 ```
-(CHAR-14 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-14: Japanese hunter in his mid-50s, olive-brown hunting jacket, dark green trousers, faded orange cap, the rifle still up in his shoulder while his right hand works the bolt back in a sharp movement, a small brass case tumbling in the air beside the action, the whole length of the rifle visible across the frame, cheek still down on the stock, one eye narrowed to a hard unblinking stare, mouth pressed into a flat grim line with the jaw muscles tight. Only the rifle and the tumbling brass case as props, nothing else around him. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
+(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. CHAR-11: adult male Japanese black bear, 140cm body length and 84kg, glossy jet-black coat, white crescent-moon chest patch, large round ears, short blunt muzzle, NO shoulder hump, seen from the side with its right flank toward the camera, caught in the instant of going down: its front legs still planted but its hind legs buckling and folding under it, its body sagging toward the ground, head thrown back with the mouth open and eyes squeezed shut, ears flattened, a small tuft of fur puffing off the right side of its belly where the shot struck, nothing red and nothing stained. It is a four-legged animal collapsing ON ALL FOURS: NOT reared up, NOT on two legs, NOT lying flat yet, NOT belly-up. Full body. White background. 1:1 aspect ratio. No blood, no gore. Generate 1 image.
 ```
 → 背景再使用: 134
-→ 編集者指示: ボルトを引く金属音と二発目の銃声。クマの側は一切映さない。「右のわき腹」は編集でテロップとして添える。
+→ 編集者指示: 銃声と同時にこの画へ。「右のわき腹」テロップを添え、二発目の銃声で次のカット（139）へ。
 
 ---
 
@@ -2290,7 +2295,8 @@ The rear yard of a small Japanese rural civic building at dusk in late October: 
 ```
 Close view of a plain steel workbench in a rural Japanese work yard at night in late October: an old metal tape measure pulled out in a long straight line across the bench, a heavy cast-iron platform scale with a blank dial beside it, a pair of white cotton gloves folded on the corner, a bare bulb overhead. No lettering, no readable characters anywhere, no numbers on the dial. No real institution name, no crest, no emblem, no logo. Late October night, dim at the edges but NOT pure black — the tape measure and the scale stay clearly readable. No snow anywhere, no frost, no winter. Nothing red and nothing stained. Photorealistic, shot on RED camera, 50mm lens. Documentary evidence photography style. 16:9 aspect ratio. No people, no humans visible, no animals. Generate 1 image.
 ```
-→ 編集者指示: 巻き尺に「140cm」、台ばかりに「84kg」、余白に「推定4歳」を編集で書き入れる。数字は画像に描かせない。
+→ 画像再使用: 139（倒れたクマ）
+→ 編集者指示: 139の倒れたクマを作業台の上に置き、巻き尺を体に沿わせる。巻き尺に「140cm」、台ばかりに「84kg」、余白に「推定4歳」を編集で書き入れる。数字は画像に描かせない。
 
 ---
 
@@ -2705,17 +2711,17 @@ A very slow steady push straight down a corridor of bare-branched trunks in a wo
 
 ナレーター: 長い時間しがみつき、咬みついたまま離れません。
 
-【制作メモ】ASSET-193 [Lovart動画]
-シーン: 落ち葉の上が長い時間かけて広く掘り返され、争った跡だけが残っている
-静止画プロンプト（16:9・フォトリアル）:
+【制作メモ】ASSET-193 [キャラアニメーション]
+シーン: 大きなクマ（CHAR-12）が人の背中にのしかかり、肩に咬みついたまま離れない
+キャラプロンプト（1:1）:
+```
+(CHAR-12 再利用)[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two figures locked together on the ground, seen from the side. CHAR-12: a large adult Japanese black bear, about 150cm body length and about 110kg, glossy jet-black coat, large round ears, short blunt muzzle, NO shoulder hump, clearly much smaller than a grizzly or a brown bear, lying ON ALL FOURS on top of a Japanese man's back with its full weight pressing him flat to the ground, its jaws clamped onto the back of his shoulder and NOT letting go, ears flattened right back against the skull, eyes narrowed and locked on, the fur along its neck and shoulders bristled up into a raised ridge, claws spread. It is NOT calm, NOT curious and NOT gentle — it reads as ferocious at a glance. The man beneath it: a Japanese man in his 50s in a brown work jacket and dark trousers, face-down, his face turned away and hidden, arms spread on the ground. The bear is NOT reared up, NOT on two legs. Nothing red and nothing stained. Both have large heads, short compact torsos and short stubby limbs, roughly four to five heads tall. Do NOT draw them with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no gore. Generate 1 image.
+```
+背景プロンプト（16:9）:
 ```
 A wide low view of the floor of a wood on a forested slope in Yamagata, Japan in late October: a large irregular patch of leaf litter completely swept away down to bare damp soil, the soil itself churned and gouged in many overlapping directions across several metres, dry stalks pressed flat and rumpled all around the edges, small stones turned up, a scatter of torn leaves settled over everything. Bare-branched trunks and autumn gold and rust around it, thin mist. Late October afternoon, cool flat light. No snow anywhere, no frost, no ice, no winter. Nothing red and nothing stained. No people, no humans visible, no animals. No blood, no wounds, no gore. Photorealistic, shot on RED camera, 35mm lens. Documentary evidence photography style. 16:9 aspect ratio. Generate 1 image.
 ```
-Google Flow動画プロンプト:
-```
-A slow low push across a large patch of churned bare soil on the floor of a wood on a forested slope in Yamagata, Japan in late October, the leaf litter swept away and the ground gouged in many overlapping directions across several metres, flattened stalks and turned stones around the edges. A few torn leaves drift down and settle. Nothing else moves. Cool flat autumn light, no snow. No people visible, no animals. No blood, no gore. 5 seconds. Photorealistic, shot on RED camera. Documentary evidence style.
-```
-→ 編集者指示: 掘り返された範囲の広さが伝わるように、ゆっくり引きながら見せる。「長い時間、離れない」テロップ。
+→ 編集者指示: 掘り返された地面の背景の上にキャラを置き、動かさずに3秒。「長い時間、離れない」テロップ。
 
 ---
 
@@ -2988,16 +2994,16 @@ A closed grey ring binder lying on a modern office desk in Japan in early May: a
 ナレーター: 発見の直後、ハンターが近くで駆除したクマの胃からは、人の体の一部が見つかり、
 
 【制作メモ】ASSET-214 [キャラアニメーション]
-シーン: 現代のハンターが、山の中で無線を手に報告している
+シーン: 現代のハンターが無線で報告している。足元に駆除したクマが倒れている
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese hunter in his 50s in a modern blaze-orange hunting vest over a grey softshell jacket, dark trousers and boots, a plain cap, standing and holding a small handheld radio up near his mouth with one hand while the other rests on a plain bolt-action hunting rifle slung muzzle-down on his shoulder, mouth open speaking into the radio, eyebrows driven down hard and pulled together, eyes narrowed to a hard unblinking stare, mouth otherwise pressed into a flat grim line. Only the radio and the rifle as props, nothing else around him. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no wounds, no gore. Generate 1 image.
+[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese hunter in his 50s in a modern blaze-orange hunting vest over a grey softshell jacket, dark trousers and boots, a plain cap, standing and holding a small handheld radio up near his mouth with one hand while the other rests on a plain bolt-action hunting rifle slung muzzle-down on his shoulder, mouth open speaking into the radio, eyebrows driven down hard and pulled together, eyes narrowed to a hard unblinking stare, mouth otherwise pressed into a flat grim line. At his feet lies a dead Japanese black bear, about 120cm body length and about 80kg, glossy jet-black coat, large round ears, short blunt muzzle, NO shoulder hump, lying PRONE flat on its belly exactly the way a four-legged animal drops, all four legs splayed out limp on the ground, head down with the chin resting on the ground, BOTH EYES DRAWN AS SIMPLE BLACK X MARKS — two crossed straight lines for each eye, NOT belly-up, NOT posed like a person. Only the radio, the rifle and the bear, nothing else around them. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no wounds, no gore. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
 A wooded slope near the coast in Yamagata, Japan in early May: fresh bright green new leaves on beech and oak, thick bamboo grass, wet dark soil, patches of sunlight through the canopy, a narrow deer trail crossing the slope. Early May, warm soft light. No snow anywhere, no frost, no ice, no winter. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
-→ 編集者指示: 無線のノイズ音を重ねる。駆除の場面そのものは映さない。
+→ 編集者指示: 無線のノイズ音を重ねる。クマは倒れたまま動かさない。
 →ハンターセリフ「至急、至急！」
 
 ---
@@ -3185,7 +3191,8 @@ The back room of a small licensed firearms shop in a coastal town in Yamagata, J
 ```
 A wide view across layered forested ridges in Yamagata, Japan in late October, autumn gold and rust receding into haze, a pale overcast sky above, and a scatter of small birds bursting up out of the trees on the nearest ridge, wings caught mid-beat. Late October afternoon, cool flat light. No snow anywhere, no frost, no ice, no winter. No people, no humans visible, no animals on the ground. Photorealistic, shot on RED camera, 100mm lens. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
-→ 編集者指示: 銃声を一発だけ遠くで鳴らし、山に反響させる。「仲間の1人が仕留めた」テロップ。
+→ 画像再使用: 139（倒れたクマ）
+→ 編集者指示: 尾根の画の手前下に139の倒れたクマを置く。銃声を一発だけ遠くで鳴らし、山に反響させる。「仲間の1人が仕留めた」テロップ。
 
 ---
 
@@ -3516,13 +3523,13 @@ A slow steady tilt up a weathered wooden post under the eave of an old farmhouse
 ナレーター: そこで飼い主は、心を鬼にして持っていた棒で、クマの頭を激しく叩きました。
 
 【制作メモ】ASSET-252 [キャラアニメーション]
-シーン: 飼い主が棒を振り上げる。当たる瞬間は描かず、振り上げたところで止める
+シーン: 飼い主が振り下ろした棒が、子グマの頭に当たる瞬間
 キャラプロンプト（1:1）:
 ```
-[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A Japanese farmer in his 50s in a faded blue work jacket, grey work trousers and rubber boots, CLEAN-SHAVEN with no beard, no moustache and no stubble, standing alone with a long plain wooden stick drawn in the same cartoon style raised high above his head in both hands and held there at the top of the swing, his whole body turned away from the direction of the swing, his face screwed up with the eyes squeezed shut into tight creases, teeth bared, tendons standing out on his neck. Only the wooden stick as a prop, nothing else around him. He has a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Do NOT draw him with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
+[Generic group](CHAR-13 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Seen from the side. Left: a Japanese farmer in his 50s in a faded blue work jacket, grey work trousers and rubber boots, CLEAN-SHAVEN with no beard, no moustache and no stubble, both hands gripping a long plain wooden stick that he has just swung down hard, the stick caught at the exact instant it lands on the top of the bear cub's head, his face screwed up with the eyes squeezed shut into tight creases, teeth bared, tendons standing out on his neck. Right, at his feet: CHAR-13: a Japanese black bear cub, about 60cm body length and about 12kg, soft glossy jet-black fur, an oversized round head, a white crescent-moon patch across the chest, large round ears, short blunt muzzle, NO shoulder hump, ON ALL FOURS, hunched down low with its head pulled in, eyes squeezed shut, ears flattened right back, a few short motion lines around the point of impact, nothing red and nothing stained. Only the wooden stick as a prop, nothing else around them. Both have large heads, short compact torsos and short stubby limbs, roughly four to five heads tall. Do NOT draw them with realistic adult proportions. Full body. White background. 1:1 aspect ratio. No lettering, no readable characters anywhere. No blood, no gore. Generate 1 image.
 ```
 → 背景再使用: 012
-→ 編集者指示: 振り上げたところで暗転させ、当たる瞬間は一切描かない。鈍い打撃音を暗転の中で一度だけ鳴らす。
+→ 編集者指示: 当たる瞬間で1秒止め、鈍い打撃音を一度だけ鳴らしてから暗転。
 →振り上げたところでセリフ「すまん、、」暗転の前に入れてください。
 
 ---
