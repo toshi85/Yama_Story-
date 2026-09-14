@@ -333,6 +333,44 @@ Not a ground-level shot, not a close-up, no macro texture, no worm's-eye angle.
   `grep -c "^ナレーター:" <ファイル>` が**元の本数と一致**することを確認する
 - 検査が「正しく書いてあるプロンプト」を落としたら、**検査側の打ち消しマッチのバグを疑う**（`NOT a close-up` が禁止語に当たる型。フックの二足歩行検査・validate_yama_prompts の全身検査で各1回発生）
 
+### 🧾 プロンプト執筆の定石（続き・2026-09-13〜14 戸沢村の本人指摘20件＋機械検品23件から確定）
+
+> **前節A〜Oと同じく、実際に差し戻された原因を一般化したもの。出典: `.codex/handoff/delegations/2026-09-13-tozawa-prompt-fixes.md` §A、同 `2026-09-14-tozawa-prompt-check.md`。**
+
+**P. ナレーションの主題を「映さない」で逃げない（最重要）**
+- 遺体・捕獲したクマなど、ナレーションの主語をプロンプトから外すと、画像はプロンプト通りでも本人差し戻しになる（戸沢村 020・045・069）。機械検品もプロンプト準拠で見るため見逃す
+- 主題はカートゥンで描く。遺体＝`pale bluish-white face, eyes closed, mouth slack, one arm at an unnatural angle, clothes badly torn, one boot missing` ＋ `clearly dead and NOT sleeping, NOT peaceful, NOT relaxed`。血は描かない（`No blood, no gore, no open wounds.`）
+- 例外は「描くとポリシー拒否になる部位」（削ぎ落とされた筋肉など）だけ。そのときは**当事者の反応**（顔をそむける・上着をかける）で受け、編集者指示に「直接描写はしない」と書く（022・024）
+- 生成前に自問: 「ナレーションの主語・主題は、プロンプトのどの文に描かれているか」。答えられない文は書き直す
+
+**Q. 群像の人数はナレーションと同数を番号付きで書く**
+- ナレーションが「6人」なら 1)〜6) を年齢・体格・服・動作で全員列挙し、`exactly six, count them 1, 2, 3, 4, 5, 6` ＋ `Do NOT draw fewer than six` を添える。3人だけ書いて「他にも」は効かない（036 実測）
+- 十数人以上は**前列を番号付き**で描き、後列は `partly hidden by the front row, only heads and shoulders show, drawn a little smaller` ＋ `roughly twenty people in all` ＋ `Do NOT draw only five people`（041）
+- 2カット以上に出る無名人物は `[Generic group]` のままにせず **CHAR に登録**して `(CHAR-XX 再利用)` で呼ぶ（戸沢村 CHAR-15〜17）。同一性の崩れは機械検品で最多の項目
+
+**R. ナレーションに出ない人物を足さない**
+- 「許可を取る」の場面に窓口係を足す等、語られていない人物は描かない（050）。語られた人物だけを描き、状況は小道具（書類1枚）で示す
+
+**S. 体格差は数値だけでは効かない。失敗の形を名指しで潰す**
+- `140cm` と `150cm` を並べると片方が子グマに化ける（200 実測）。`a FULLY GROWN adult, NOT a cub, NOT a juvenile` ＋ `about nine-tenths of its length and height, the top of its back only a hand's width lower` ＋ `Do NOT draw the left bear as a tiny cub` のように、**比率・身近な物差し・否定**の3点で書く
+
+**T. 「背後から襲われた」は真横から描く**
+- 真後ろからだと人とクマが重なって伝わらない。真横（`side-on`）にし、人は前を向いたまま（`NOT turning around, NOT looking back`）、クマは後ろから飛びかかる（047）
+
+**U. 地形図（Google Earth）は語る地点を同じ1画面に入れる**
+- 高度が高すぎて座標1点だけだと緑一色になる（021・051・059）。集落と現場など**語る地点を全部入れる高度・向き**を書き、集落の屋根と田畑が見分けられる高度にする。遠い地点（役場など）を無理に入れて高度を上げない
+- 書き出し: Google Earth Studio 1920×1080 以上・昼の順光・雲とかすみオフ・3D建物ON
+
+**V. 白い物が主役のキャラは透過で生成し、アルファを機械で確認する**
+- 白い布・白い上着などは白背景だと輪郭が消える。`Transparent background, real alpha transparency` で生成し、生成後にアルファチャンネルの有無を検査する（市松模様を描き込んだ偽の透過を弾く）
+
+**W. 動画の長さはカットの尺以上にする／文字だけのカットは新規生成しない**
+- 動画プロンプトの `5 seconds` がカット7.4秒より短いと途中で止まる（001）。尺以上（8秒）を書き、編集者指示に「足りなければ再生速度を落として尺いっぱい」と添える
+- 同じ絵に文字を載せるだけのカットは「→ 画像再使用: NNN ＋ テロップ」の編集者指示にし、生成枠を消費しない（048・061・070）
+
+**X. 書式の事故＝閉じフェンスとラベルを同じ行に書かない**
+- 「```背景プロンプト（16:9）:」のように閉じフェンスと次のラベルが同一行だと、validate_yama_prompts が背景本文をキャラプロンプトとして誤読し、誤警告（'at night'）を出す（022 実測）。フェンスは必ず単独行
+
 ### タイプの決め方（機械が判定できる部分は数える）
 
 > 🔧 **2026-09-04: 2つの検査で数え方が食い違っていたのを揃えた。** `validate_yama_prompts.py` だけが句読点を含めて数えており、
