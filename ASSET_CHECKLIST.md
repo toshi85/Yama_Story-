@@ -17,6 +17,7 @@
 | 5 | `Structure_Rules.md` §5 | 素材カテゴリ・文字数ルール・禁止事項 | ✅ |
 | 6 | `Generic_Person_Prompts.md` | 名無し人物のテンプレ（CHAR番号を振らない人） | 大量作成時 |
 | 7 | `System_Tools/Visual_Style_Guide.md` | 画調の統一（カートゥン調／フォトリアル） | 大量作成時 |
+| 8 | `Image_Correction_Log.md` の「未昇格」「据え置き」行 | 本人の修正指示と、直さない判断 | ★2026-09-14 |
 | 補 | `Scripts/羅臼岳ヒグマ襲撃事件/Asset_Prompts_SHO.md` `_TEN_KETSU.md` | 10件以上作るときの追加リファレンス | 大型時 |
 | 補 | `EDITING_RULES.md` | **編集側の実測基準**（カット平均7.04秒・静止画埋め18.9%/最長6.7秒）。素材数・尺の設計時に参照 | 枚数判断時 |
 
@@ -522,6 +523,11 @@ AI生成版はこの検査で8項目全部が超過した＝それが手直し�
       → `feedback_yama_script_changes_show_in_chat.md`
 
 ---
+
+## 画像修正の学習ループ（2026-09-14 本人指示）
+- 本人が画像の修正を指示したら、Claude はその場で `Image_Correction_Log.md` に原文で記録し、同じセッションで一般化ルールをこの索引の定石へ昇格する
+- 「そのままでいい」も記録する（据え置き）。次作で同じ点を過剰に直さない
+- 機械で見られるものは validate_phase2_assets.py / precheck_subjects.py に足す候補として台帳に書き、まとめて実装を委任する
 
 ## STEP 6. 最小手数の自問（提案前に1行で明示する）
 
