@@ -431,7 +431,7 @@ AIは自分向けの仕様書を書き、本人はそれを作業指示書に直
 - [ ] **チェックリストの「見てほしい所」は、置いた最終版の画像を開いて見てから書く**（作り直したら行も書き直す。前の版の説明を残さない）
 - [ ] **直した分をもう一度見てもらうときは、直したファイルだけを別フォルダ（`<作品>_作り直し画像_<日付>/`）にコピーし、そのフォルダ専用のチェックリストを入れる**
 - [ ] 渡す前に次を実行し、exit 0 にしてから、一覧の jpg を目で見る
-      `python3 System_Tools/imagegen/check_handoff_folder.py ~/Desktop/<フォルダ> --sheet check/handoff_sheet.jpg`
+      `../System_Tools/kindle/.venv/bin/python System_Tools/imagegen/check_handoff_folder.py ~/Desktop/<フォルダ> --sheet check/handoff_sheet.jpg`
 
 ---
 
