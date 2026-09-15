@@ -17,6 +17,12 @@ def warnings_for(text, prefix):
     return [warning for warning in warns if warning.startswith(prefix)]
 
 
+def errors_for(text, prefix):
+    errors, warns, info = [], [], []
+    prompt_lint(text, errors, warns, info)
+    return [error for error in errors if error.startswith(prefix)]
+
+
 class Phase2LintCalibrationTest(unittest.TestCase):
     person_prompt = '''キャラプロンプト（1:1）:
 ```
@@ -33,7 +39,7 @@ Cute cartoon character design. A paper tag and a clock. White background.
         self.assertEqual(1, len(warns))
         self.assertIn('ASSET-001', warns[0])
 
-    def test_lint41_limits_subject_and_accepts_dialogue_variants(self):
+    def test_lint41_requires_dialogue_for_every_character_prompt(self):
         notes = [
             '→セリフ「行こう」',
             '→ セリフ：行こう',
@@ -45,11 +51,12 @@ Cute cartoon character design. A paper tag and a clock. White background.
         text = ''.join(segment(i + 1, body=self.person_prompt, note=note)
                        for i, note in enumerate(notes))
         text += segment(7, body=self.person_prompt)
-        text += segment(8, body=self.object_prompt)
+        text += segment(8, asset_type='Lovart動画', body=self.object_prompt)
         text += segment(9, body='', note='→素材の再利用。')
-        warns = warnings_for(text, 'キャラアニメーションにセリフ行なし')
-        self.assertEqual(1, len(warns))
-        self.assertIn('1件: ASSET-007', warns[0])
+        errors = errors_for(text, 'キャラプロンプトがあるのにセリフ行なし')
+        self.assertEqual(1, len(errors))
+        self.assertIn('2件: ASSET-007, ASSET-008', errors[0])
+        self.assertNotIn('ASSET-009', errors[0])
 
     def test_lint42_counts_display_units_and_ignores_other_quotes(self):
         text = segment(

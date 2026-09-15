@@ -457,7 +457,8 @@ def prompt_lint(text, errors, warns, info):
     if winter:
         warns.append(f'夕暮れ・夜の屋外に季節宣言も雪の打ち消しも無い {len(winter)}件（季節を名指しするか "No snow anywhere, no frost, no ice, no winter" を書く。暗い屋外は無指定だと冬になる）: {", ".join(dict.fromkeys(winter))}')
 
-    # ===== rules 40-44: 戸沢村の本人チェック（2026-09-15）を機械化（すべてWARN） =====
+    # ===== rules 40-44: 戸沢村の本人チェック（2026-09-15）を機械化 =====
+    # 41はERROR、40・42・43・44はWARN。
     # 既存成果物の較正に使えるよう、1項目につき該当行/セグメント数をまとめて出す。
 
     # 40) セリフの方言語尾・訛り。本人裁定「方言を入れなくていい。標準語で」。
@@ -471,33 +472,21 @@ def prompt_lint(text, errors, warns, info):
             f'セリフに方言語尾 {len(dialect)}件: {", ".join(dict.fromkeys(dialect))}'
             '\n    → 直し方: 標準語にする')
 
-    # 41) 人物かクマを描くキャラアニメーションは、黙る場面も「・・・」を含む短いセリフを付ける。
-    #     再利用・黒背景・物だけなど、キャラプロンプト自体に人物/クマがいないカットは対象外。
-    CHAR_SUBJECT = re.compile(
-        r'\bCHAR-\d+\b|\bbears?\b|'
-        r'\b(humans?|persons?|people|men|man|women|woman|males?|females?|children?|boys?|girls?|'
-        r'bab(?:y|ies)|mother|father|husband|wife|son|daughter|family|hunters?|workers?|patients?|'
-        r'doctors?|officers?|farmers?|residents?|paramedics?|nurses?|firefighters?|carpenters?|'
-        r'researchers?|guards?|veterinarians?|mayors?|governors?|members?|officials?|drivers?|'
-        r'villagers?|figures?|experts?|professors?|staff|anglers?|hikers?|journalists?|fisherm(?:a|e)n|'
-        r'guides?|passengers?)\b', re.I)
+    # 41) キャラプロンプトがあるカットには、黙る場面も「・・・」を含む短い標準語のセリフを付ける。
+    #     人物・クマの語では絞らず、キャラプロンプトの有無だけで対象を決める。
     DIALOGUE = re.compile(
-        r'^\s*→.*?(?:セリフ(?:\s*「|\s*[:：]\s*\S)|'
-        r'心の声(?:の吹き出しで)?(?:\s*「|\s*[:：]\s*\S)|'
+        r'^\s*→[^\n]*(?:セリフ|心の声)|'
+        r'^\s*→.*?(?:'
         r'吹き出し[^「\n]{0,40}「)', re.M)
-
-    def has_char_subject(seg):
-        return any('キャラプロンプト' in lab and CHAR_SUBJECT.search(b)
-                   for lab, b in labeled_blocks(seg))
 
     silent_char = []
     for nar, seg in segs:
-        if asset_type(seg) == 'キャラ' and has_char_subject(seg) and not DIALOGUE.search(seg):
+        if 'キャラプロンプト' in seg and not DIALOGUE.search(seg):
             silent_char.append(asset_no(seg))
     if silent_char:
-        warns.append(
-            f'キャラアニメーションにセリフ行なし {len(silent_char)}件: {", ".join(dict.fromkeys(silent_char))}'
-            '\n    → 直し方: 映っている人物かクマに短いセリフ（黙るなら「・・・」）を足す')
+        errors.append(
+            f'キャラプロンプトがあるのにセリフ行なし {len(silent_char)}件: {", ".join(dict.fromkeys(silent_char))}'
+            '\n    → 直し方: 映っている人物かクマに短い標準語のセリフを足す（黙る場面は「・・・」、クマは鳴き声）')
 
     # 42) 編集者指示のテロップは10字以内が基本。14字を超えた表示単位だけ警告する。
     #     複数段・左右枠・数値/固有名詞の列挙は、区切りごとに別の表示単位として数える。
