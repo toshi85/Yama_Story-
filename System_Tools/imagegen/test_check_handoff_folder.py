@@ -4,6 +4,7 @@ import subprocess
 import sys
 import unicodedata
 from pathlib import Path
+import importlib.util
 
 from PIL import Image
 
@@ -135,3 +136,29 @@ def test_sheet_inside_folder_is_error_and_not_written(tmp_path: Path) -> None:
     assert result.returncode == 1
     assert "ERROR T3 出力先が検査フォルダ内" in result.stdout
     assert not sheet.exists()
+
+
+def test_fix_transparency_changes_t1_result_and_creates_external_backup(
+    tmp_path: Path, capsys
+) -> None:
+    folder = tmp_path / "handoff"
+    folder.mkdir()
+    name = "ASSET-001_キャラ.png"
+    make_white(folder / name)
+    checklist(folder, name)
+    spec = importlib.util.spec_from_file_location("handoff_under_test", SCRIPT)
+    module = importlib.util.module_from_spec(spec)
+    assert spec.loader is not None
+    spec.loader.exec_module(module)
+    module.REPO = tmp_path
+    assert module.inspect(folder, None) == 1
+    assert "T1 ERROR 1件 / T2 ERROR 0件" in capsys.readouterr().out
+    assert module.inspect(folder, None, True) == 0
+    output = capsys.readouterr().out
+    assert "透過修正 1枚" in output
+    assert "T1 ERROR 0件 / T2 ERROR 0件" in output
+    backups = list((tmp_path / "check/transparency_backup").iterdir())
+    assert len(backups) == 1
+    backup_dir = backups[0]
+    assert str(backup_dir) in output
+    assert (backup_dir / name).is_file()

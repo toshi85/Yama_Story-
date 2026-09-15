@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from datetime import datetime
 import re
 import sys
 import unicodedata
@@ -11,9 +12,12 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
+from transparency import make_transparent
+
 
 ASSET_RE = re.compile(r"ASSET-[^|／`\n]*?\.(?:png|mp4)", re.IGNORECASE)
 MEDIA_SUFFIXES = {".png", ".mp4"}
+REPO = Path(__file__).resolve().parents[3]
 
 
 def normalized(name: str) -> str:
@@ -149,7 +153,7 @@ def is_within(path: Path, folder: Path) -> bool:
         return False
 
 
-def inspect(folder: Path, sheet: Path | None) -> int:
+def inspect(folder: Path, sheet: Path | None, fix_transparency: bool = False) -> int:
     if not folder.is_dir():
         print(f"ERROR 検査フォルダがない: {folder}")
         print("T1 ERROR 0件 / T2 ERROR 0件")
@@ -157,6 +161,16 @@ def inspect(folder: Path, sheet: Path | None) -> int:
 
     files = direct_files(folder)
     targets = t1_targets(files)
+    fixed = 0
+    backup_dir = None
+    if fix_transparency:
+        failing = [path for path in targets if not transparency_result(path)[0]]
+        if failing:
+            timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+            backup_dir = REPO / "check/transparency_backup" / f"{folder.name}_{timestamp}"
+            for path in failing:
+                if make_transparent(path, backup_dir)["processed"]:
+                    fixed += 1
     t1_errors: list[str] = []
     for path in targets:
         valid, mode, corners, transparent_percent = transparency_result(path)
@@ -197,6 +211,9 @@ def inspect(folder: Path, sheet: Path | None) -> int:
 
     for message in t1_errors + t2_errors:
         print(message)
+    if fix_transparency:
+        location = str(backup_dir) if backup_dir is not None else "なし"
+        print(f"透過修正 {fixed}枚 / 控え {location}")
     print(f"T1 ERROR {len(t1_errors)}件 / T2 ERROR {len(t2_errors)}件")
     return 1 if t1_errors or t2_errors or sheet_error else 0
 
@@ -205,8 +222,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("folder", type=Path)
     parser.add_argument("--sheet", type=Path)
+    parser.add_argument("--fix-transparency", action="store_true")
     args = parser.parse_args()
-    return inspect(args.folder, args.sheet)
+    return inspect(args.folder, args.sheet, args.fix_transparency)
 
 
 if __name__ == "__main__":

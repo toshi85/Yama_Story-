@@ -13,6 +13,7 @@ import subprocess
 import sys
 
 import extract_prompts
+from transparency import make_transparent
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[1]
@@ -226,9 +227,30 @@ def inspect_image(path, slot):
     return result
 
 
-def verify(work, queue):
+def auto_fix_transparency(work, queue):
+    """市松模様以外の、アルファ不足の透過対象だけを補正する。"""
+    fixed = set()
+    backup_dir = work / "transparency_backup"
+    for item in queue:
+        if item["slot"] not in TRANSPARENT_SLOTS:
+            continue
+        path = work / "images" / (item["id"] + ".png")
+        result = inspect_image(path, item["slot"])
+        if (not result.get("exists") or any(result.get("checker_corners", []))
+                or result.get("pass")):
+            continue
+        if not result.get("alpha", False) or result.get("alpha_zero_fraction", 0) < .2:
+            outcome = make_transparent(path, backup_dir)
+            if outcome["processed"]:
+                fixed.add(item["id"])
+    return fixed
+
+
+def verify(work, queue, auto_transparent_ids=None):
     from PIL import Image, ImageDraw
+    auto_transparent_ids = set(auto_transparent_ids or ())
     results = [dict(id=item["id"], slot=item["slot"],
+                    **({"auto_transparent": True} if item["id"] in auto_transparent_ids else {}),
                     **inspect_image(work / "images" / (item["id"] + ".png"), item["slot"]))
                for item in queue]
     report = {"total": len(results), "passed": sum(r["pass"] for r in results),
@@ -379,7 +401,8 @@ def main(argv=None):
             # 既存の回収処理が要求文と画像ハッシュを照合する仕組みを使用。
             (work / ".imagegen" / "require_receipts").touch()
             if args.verify:
-                report = verify(work, queue)
+                fixed = auto_fix_transparency(work, queue)
+                report = verify(work, queue, fixed)
                 print(f'検査 {report["passed"]}/{report["total"]} PASS: {work / "verify.json"}')
                 return 0 if report["all_pass"] else 1
             if args.apply:

@@ -140,10 +140,13 @@ Pillow が利用できる Python 環境で実行する。この作業環境で�
 2. 修正前のコミットと比較して、変更・追加された画像だけを生成する。
    `python3 Yama_Story/System_Tools/imagegen/regen.py <作品> --since <直す前のコミット> --run`
 3. 終わったら `python3 Yama_Story/System_Tools/imagegen/regen.py <作品> --verify`。
+   `--verify` はキャラ画像の白背景を自動で透過にしてから検査する（控えは作業フォルダの `transparency_backup/`）。市松模様が描き込まれた画像は直せないので作り直す。
    `.imagegen/regen_<YYYYMMDD>/sheet.jpg` と各カットを `System_Tools/imagegen/IMAGE_CHECK.md` の項目で確認する（Sol が全カット → Astra が挙がったカットだけ）。
 4. 目視確認後に `python3 Yama_Story/System_Tools/imagegen/regen.py <作品> --export`。
    表示されたデスクトップの `<作品の短い名前>_差し替え画像_<YYYYMMDD>/` を本人がDriveへアップする。
    `--apply [--drive-dir <同期フォルダ>]` は「画像/」を差し替えたいときだけ使う。
+
+Codex の image_gen などで直接作った画像を渡すときは、`check_handoff_folder.py <フォルダ> --fix-transparency --sheet check/handoff_sheet.jpg` を必ず通す。
 
 作業フォルダには対象だけの `image_queue.json`、`run.log`、`run.pid` が残る。
 `--run` は既存の専用Chrome・`run.py` をnohupで背景起動してすぐ戻る。
