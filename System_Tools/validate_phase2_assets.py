@@ -23,11 +23,13 @@ def prompt_lint(text, errors, warns, info):
     marks = [(mo.start(), mo.group(1)) for mo in re.finditer(
         r'^(?:ナレーター:|\*\*ナレ行\*\*:\s*ナレーター:)\s*(.*)$', text, re.M)]
     segs = []
+    seg_mark_indexes = []
     for i, (pos, nar) in enumerate(marks):
         end = marks[i + 1][0] if i + 1 < len(marks) else len(text)
         seg = text[pos:end]
         if '【制作メモ】' in seg:
             segs.append((nar, seg))
+            seg_mark_indexes.append(i)
 
     def asset_no(seg):
         mo = re.search(r'ASSET-\d+', seg)
@@ -469,27 +471,65 @@ def prompt_lint(text, errors, warns, info):
             f'セリフに方言語尾 {len(dialect)}件: {", ".join(dict.fromkeys(dialect))}'
             '\n    → 直し方: 標準語にする')
 
-    # 41) キャラアニメーションは、黙る場面も「・・・」を含む短いセリフを付ける。
+    # 41) 人物かクマを描くキャラアニメーションは、黙る場面も「・・・」を含む短いセリフを付ける。
+    #     再利用・黒背景・物だけなど、キャラプロンプト自体に人物/クマがいないカットは対象外。
+    CHAR_SUBJECT = re.compile(
+        r'\bCHAR-\d+\b|\bbears?\b|'
+        r'\b(humans?|persons?|people|men|man|women|woman|males?|females?|children?|boys?|girls?|'
+        r'bab(?:y|ies)|mother|father|husband|wife|son|daughter|family|hunters?|workers?|patients?|'
+        r'doctors?|officers?|farmers?|residents?|paramedics?|nurses?|firefighters?|carpenters?|'
+        r'researchers?|guards?|veterinarians?|mayors?|governors?|members?|officials?|drivers?|'
+        r'villagers?|figures?|experts?|professors?|staff|anglers?|hikers?|journalists?|fisherm(?:a|e)n|'
+        r'guides?|passengers?)\b', re.I)
+    DIALOGUE = re.compile(
+        r'^\s*→.*?(?:セリフ(?:\s*「|\s*[:：]\s*\S)|'
+        r'心の声(?:の吹き出しで)?(?:\s*「|\s*[:：]\s*\S)|'
+        r'吹き出し[^「\n]{0,40}「)', re.M)
+
+    def has_char_subject(seg):
+        return any('キャラプロンプト' in lab and CHAR_SUBJECT.search(b)
+                   for lab, b in labeled_blocks(seg))
+
     silent_char = []
     for nar, seg in segs:
-        if asset_type(seg) == 'キャラ' and not any('セリフ' in line for line in seg.splitlines()):
+        if asset_type(seg) == 'キャラ' and has_char_subject(seg) and not DIALOGUE.search(seg):
             silent_char.append(asset_no(seg))
     if silent_char:
         warns.append(
             f'キャラアニメーションにセリフ行なし {len(silent_char)}件: {", ".join(dict.fromkeys(silent_char))}'
             '\n    → 直し方: 映っている人物かクマに短いセリフ（黙るなら「・・・」）を足す')
 
-    # 42) 編集者指示のテロップは10字以内が基本。14字を超えたものだけ警告する。
+    # 42) 編集者指示のテロップは10字以内が基本。14字を超えた表示単位だけ警告する。
+    #     複数段・左右枠・数値/固有名詞の列挙は、区切りごとに別の表示単位として数える。
+    TELOP_SEPARATOR = re.compile(r'\s*(?:→|⇒|⇄|／|/|＝|=|・|─{2,}|—{2,})\s*')
+
+    def displayed_telop_quotes(line):
+        """編集者指示の「…」から、直後にテロップ指定がある引用だけを返す。"""
+        matches = list(re.finditer(r'「([^」]+)」', line))
+        displayed = []
+        for i, mo in enumerate(matches):
+            previous_quote = matches[i - 1].end() if i else 0
+            head = line[previous_quote:mo.start()]
+            next_quote = matches[i + 1].start() if i + 1 < len(matches) else len(line)
+            tail = line[mo.end():next_quote]
+            head_clause = re.split(r'[。！？]', head)[-1]
+            tail_clause = re.split(r'[。！？]', tail, maxsplit=1)[0]
+            if (re.search(r'(?:テロップ|表示)', tail_clause) or re.search(r'テロップ', head_clause)) \
+               and not re.search(r'テロップ(?:は|を)?出さない|テロップなし', tail_clause):
+                displayed.append(mo.group(1))
+        return displayed
+
     long_telop = []
     for nar, seg in segs:
         found = []
         for line in seg.splitlines():
             if not line.startswith('→ 編集者指示:') or 'テロップ' not in line:
                 continue
-            for quoted in re.findall(r'「([^」]+)」', line):
-                length = len(re.sub(r'[\s/／]', '', quoted))
-                if length > 14:
-                    found.append(f'「{quoted}」({length}字)')
+            for quoted in displayed_telop_quotes(line):
+                for unit in filter(None, TELOP_SEPARATOR.split(quoted)):
+                    length = len(re.sub(r'\s', '', unit))
+                    if length > 14:
+                        found.append(f'「{unit}」({length}字)')
         if found:
             long_telop.append(f'{asset_no(seg)} {", ".join(found)}')
     if long_telop:
@@ -500,17 +540,20 @@ def prompt_lint(text, errors, warns, info):
     # 43) 読点で意味の続く1文を2ナレーションへ割ると、2行目だけの素材が増える。
     split_sentence = []
     for i, (nar, seg) in enumerate(segs[:-1]):
-        if nar.rstrip().endswith('、'):
+        if nar.rstrip().endswith('、') and seg_mark_indexes[i + 1] == seg_mark_indexes[i] + 1:
             split_sentence.append(f'{asset_no(seg)}→{asset_no(segs[i + 1][1])}')
     if split_sentence:
         warns.append(
             f'読点で分割された連続ナレーション {len(split_sentence)}件: {", ".join(split_sentence)}'
             '\n    → 直し方: 1行にまとめ、2行目の素材を消す')
 
-    # 44) 本人は「テロップなし」を上書きして要点テロップを足している。
+    # 44) 本人は一律の「テロップなし」を上書きして要点テロップを足している。
+    #     「『数百キロ』のテロップは出さない」のように特定の語だけを抑える指示は対象外。
+    BLANKET_NO_TELOP = re.compile(
+        r'(?:^|[。:：]\s*)テロップ(?:は|を)?\s*(?:一切\s*|何も\s*)?(?:なし|出さない)')
     no_telop = []
     for nar, seg in segs:
-        if 'テロップは出さない' in seg or 'テロップなし' in seg:
+        if any(BLANKET_NO_TELOP.search(line) for line in seg.splitlines()):
             no_telop.append(asset_no(seg))
     if no_telop:
         warns.append(
