@@ -3,10 +3,11 @@ import unittest
 from validate_phase2_assets import prompt_lint
 
 
-def segment(no, nar='説明です。', asset_type='キャラアニメーション', body='', note=''):
+def segment(no, nar='説明です。', asset_type='キャラアニメーション', body='', note='', scene=''):
     return (
         f'ナレーター: {nar}\n'
         f'【制作メモ】ASSET-{no:03d} [{asset_type}]\n'
+        f'{f"シーン: {scene}\\n" if scene else ""}'
         f'{body}\n{note}\n\n'
     )
 
@@ -97,6 +98,73 @@ Cute cartoon character design. A paper tag and a clock. White background.
         self.assertEqual(1, len(warns))
         self.assertIn('1件: ASSET-002', warns[0])
         self.assertNotIn('ASSET-001', warns[0])
+
+    def test_lint45_warns_when_singular_narration_draws_multiple_bears(self):
+        body = '''キャラプロンプト（1:1）:\n```\nTwo bears side by side. White background.\n```'''
+        text = segment(45, nar='そのクマは、撃たれた個体よりも大きかった。', body=body)
+        warns = warnings_for(text, 'ナレーションは単数なのに複数を描かせている')
+        self.assertEqual(1, len(warns))
+        self.assertIn('ASSET-045', warns[0])
+
+    def test_lint45_accepts_plural_narration_and_multiple_bears(self):
+        body = '''キャラプロンプト（1:1）:\n```\nA mother bear and two cubs. White background.\n```'''
+        text = segment(45, nar='親子のクマが歩いていた。', body=body)
+        self.assertEqual([], warnings_for(text, 'ナレーションは単数なのに複数を描かせている'))
+
+    def test_lint45_accepts_singular_prompt(self):
+        self.assertEqual([], warnings_for(
+            segment(45, nar='男性が立っていた。', body=self.person_prompt),
+            'ナレーションは単数なのに複数を描かせている'))
+
+    def test_lint45_ignores_plural_word_inside_single_reused_character_description(self):
+        body = '''キャラプロンプト（1:1）:\n```\n(CHAR-01 再利用) CHAR-01 raises both arms. White background.\n```'''
+        text = segment(45, nar='男性が驚いた。', body=body)
+        self.assertEqual([], warnings_for(
+            text, 'ナレーションは単数なのに複数を描かせている'))
+
+    def test_lint46_warns_when_scene_direction_is_missing_from_prompts(self):
+        text = segment(46, asset_type='静止画', scene='男性が山の方へ向く', body='''静止画プロンプト（16:9）:\n```\nA Japanese man on a mountain trail.\n```''')
+        self.assertEqual(1, len(warnings_for(text, '向きの指定なし')))
+
+    def test_lint46_accepts_direction_in_any_prompt(self):
+        text = segment(46, asset_type='静止画', scene='男性が山の方へ向く', body='''静止画プロンプト（16:9）:\n```\nA Japanese man facing to the right.\n```''')
+        self.assertEqual([], warnings_for(text, '向きの指定なし'))
+
+    def test_lint47_warns_when_environment_prompt_has_no_time(self):
+        text = segment(47, nar='深夜に小屋を出た。', asset_type='静止画', body='''背景プロンプト（16:9）:\n```\nA remote mountain hut under a dark sky.\n```''')
+        self.assertEqual(1, len(warnings_for(text, '時間帯の指定なし')))
+
+    def test_lint47_ignores_character_only_cut(self):
+        text = segment(47, nar='深夜に立ち尽くした。', body=self.person_prompt)
+        self.assertEqual([], warnings_for(text, '時間帯の指定なし'))
+
+    def test_lint48_warns_for_historical_scene_without_period(self):
+        body = '''静止画プロンプト（16:9）:\n```\nA Japanese man beside a telephone in an office.\n```'''
+        text = '# 1988年の事件\n' + segment(48, asset_type='静止画', body=body)
+        self.assertEqual(1, len(warnings_for(text, '時代の指定なし')))
+
+    def test_lint48_accepts_explicit_historical_period(self):
+        body = '''静止画プロンプト（16:9）:\n```\nLate 1980s Japan, a Japanese man beside a telephone in a Showa-era office.\n```'''
+        text = '# 1988年の事件\n' + segment(48, asset_type='静止画', body=body)
+        self.assertEqual([], warnings_for(text, '時代の指定なし'))
+
+    def test_lint49_warns_when_positioned_telop_has_no_space(self):
+        body = '''静止画プロンプト（16:9）:\n```\nA wide mountain landscape.\n```'''
+        text = segment(49, asset_type='静止画', body=body, note='→ 編集者指示: 上部にテロップを入れる。')
+        self.assertEqual(1, len(warnings_for(text, 'テロップ余白の指定なし')))
+
+    def test_lint49_accepts_prompt_with_copy_space(self):
+        body = '''静止画プロンプト（16:9）:\n```\nA wide mountain landscape, leave empty space in the upper third for a caption.\n```'''
+        text = segment(49, asset_type='静止画', body=body, note='→ 編集者指示: 上部にテロップを入れる。')
+        self.assertEqual([], warnings_for(text, 'テロップ余白の指定なし'))
+
+    def test_lint50_warns_when_diagram_text_is_deferred(self):
+        text = segment(50, asset_type='テキスト図解', note='→ 編集者指示: 数字は編集で入れる。')
+        self.assertEqual(1, len(warnings_for(text, '図解・グラフを編集任せにしている')))
+
+    def test_lint50_ignores_completed_diagram(self):
+        text = segment(50, asset_type='テキスト図解', note='→ 編集者指示: 数字と文字は画像内に完成済み。')
+        self.assertEqual([], warnings_for(text, '図解・グラフを編集任せにしている'))
 
 
 if __name__ == '__main__':
