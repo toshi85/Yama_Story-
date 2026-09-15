@@ -432,6 +432,7 @@ AIは自分向けの仕様書を書き、本人はそれを作業指示書に直
 - [ ] **直した分をもう一度見てもらうときは、直したファイルだけを別フォルダ（`<作品>_作り直し画像_<日付>/`）にコピーし、そのフォルダ専用のチェックリストを入れる**
 - [ ] 渡す前に次を実行し、exit 0 にしてから、一覧の jpg を目で見る
       `../System_Tools/kindle/.venv/bin/python System_Tools/imagegen/check_handoff_folder.py ~/Desktop/<フォルダ> --sheet check/handoff_sheet.jpg`
+- [ ] **画像の中身は `System_Tools/imagegen/IMAGE_CHECK.md` の項目（A〜F）で確認してから渡す**（Sol が全カットを見て、挙がったカットだけ Astra が詳しく見る）
 
 ---
 
