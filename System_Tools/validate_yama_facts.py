@@ -50,6 +50,17 @@ ASSERTION = [
     r"ことが判明しました", r"と決まりました", r"に違いありません",
 ]
 
+CLOSING = "違反した箇所は、語を置き換えるのではなく、その文を丸ごと書き直してください（前後の文とのつながりも読み直す）。"
+
+# 出典: Correction_Patterns.md YCP-028・YCP-029・YCP-030・YCP-042、
+# SCRIPT_CHECKLIST.md STEP 3、および本スクリプト A・B の既存説明文。
+GOOD = {
+    "answer_first": "問いを置いた段落を、6行以内に結論を一言で示してから根拠や詳細へ進む流れに組み直す。",
+    "authority": "講座名・学会名・掲載誌名を読み上げる文を外し、資料が示した内容そのものを主語にした文へ組み直す。",
+    "assertion": "出典が断定していない内容は断定文から外し、資料で確認できる事実と推定を分けた文に組み直す。例: 同じクマの仕業だと判断されました→同じ個体である可能性は高いものの、断定はされていません。",
+    "quote": "発言は素材シートの語尾までそのまま使い、長い場合は語を書き換えずに必要な部分だけを抜粋して引用文を組み直す。",
+}
+
 
 def near_src(lines, idx, span=3):
     """前後 span 行以内に src コメントがあるか"""
@@ -78,14 +89,15 @@ def main(path):
             window = [lines[j][len(NARR):] for j in narr_idx[n + 1:n + 7]]
             if not any(ANSWER.search(w) for w in window):
                 warns.append((i + 1, "A/答え先行",
-                              "問いの6行以内に答えが見当たらない", body))
+                              "問いの6行以内に答えが見当たらない", body,
+                              "answer_first"))
 
     # --- B. 権威名詞 ---
     for i in narr_idx:
         body = lines[i][len(NARR):]
         for pat, msg in AUTHORITY:
             if re.search(pat, body):
-                warns.append((i + 1, "B/権威名詞", msg, body))
+                warns.append((i + 1, "B/権威名詞", msg, body, "authority"))
                 break
 
     # --- C. 断定語 ---
@@ -95,10 +107,11 @@ def main(path):
             if re.search(pat, body):
                 if near_src(lines, i):
                     warns.append((i + 1, "C/断定語",
-                                  "断定している。出典が本当に断定しているか確認", body))
+                                  "断定している。出典が本当に断定しているか確認", body,
+                                  "assertion"))
                 else:
                     fails.append((i + 1, "C/断定語",
-                                  "出典なしで断定している", body))
+                                  "出典なしで断定している", body, "assertion"))
                 break
 
     # --- D. 出典カバー率 ---
@@ -146,7 +159,7 @@ def main(path):
                                   f"素材シートの引用と、否定か数字が食い違います（一致率{_best[0]:.2f}）\n"
                                   f"      素材: {_best[1][:60]}\n"
                                   f"      → 発言の引用は語尾まで資料のまま。抜粋は可、書き換えは不可（YCP-042）",
-                                  _q[:60]))
+                                  _q[:60], "quote"))
 
     print("=" * 62)
     print(f"[Yama Facts Validator] {p.name}")
@@ -161,14 +174,19 @@ def main(path):
         if not items:
             continue
         print(f"--- {label} {len(items)}件 ---")
-        for ln, kind, msg, body in items:
-            print(f"  L{ln:>5} [{kind}] {msg}")
+        for ln, kind, msg, body, good_key in items:
+            msg_lines = msg.splitlines()
+            print(f"  L{ln:>5} [{kind}] {msg_lines[0]}")
+            print(f"    → 直し方: {GOOD[good_key]}")
+            for extra in msg_lines[1:]:
+                print(extra)
             print(f"          {body[:70]}")
         print()
 
     if fails:
         print(f"[FAIL] 出典なしの断定 {len(fails)}件。素材シートで根拠を示すか、"
               f"推定表現（〜とみられています）に直すこと")
+        print(CLOSING)
         return 1
     print("[PASS] 出典なしの断定はありません"
           + (f"（WARN {len(warns)}件は要確認）" if warns else ""))

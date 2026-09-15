@@ -20,6 +20,29 @@ except ImportError:
         validate_yama_safety = None
 
 MIN_VOLUME_CHARS = 8800  # 最適尺26分（340字/分）に基づく最低文字数
+CLOSING = "違反した箇所は、語を置き換えるのではなく、その文を丸ごと書き直してください（前後の文とのつながりも読み直す）。"
+
+# 出典: SCRIPT_CHECKLIST.md STEP 1、Structure_Rules.md §0.1・§0.2・§1・§2、
+# Correction_Patterns.md YCP-031・YCP-032。
+GOOD = {
+    "competitor": "競合上位3本の分析と情報の穴3つを先にまとめ、その差別化を台本の構成へ反映する。",
+    "safety": "禁止語や代名詞を含む文を、上に示された項目別の直し方に沿って文全体から組み直す。",
+    "markers": "起、承、転結の各パートが役割どおりに分かれる構成へ戻し、それぞれの先頭に指定のPARTマーカーを置く。",
+    "volume": "検査を通すための文を足さず、素材シートの未使用素材を棚卸しし、その事件自体を深掘りする構成から組み直す。",
+    "ki_chars": "起をフック、最初の被害者の日常、その日常が崩れる予感の一文で組み、270〜950字に収める。",
+    "ki_ratio": "起をフック、最初の被害者の日常、その日常が崩れる予感の一文までに絞り、全体の1割未満に組み直す。",
+    "sho_ratio": "承に主人公の行動、障害、葛藤を集め、事件の具体が全体の70〜90%になるよう章を組み直す。",
+    "ten_ratio": "転に最大の障害とテーマ、結に短い余韻を置き、転結全体を5〜15%に組み直す。",
+}
+
+
+def fail(message, good_key, *details):
+    print(message)
+    print(f"    → 直し方: {GOOD[good_key]}")
+    for detail in details:
+        print(detail)
+    print(CLOSING)
+    sys.exit(1)
 
 def validate_structure(file_path):
     print(f"[Structure Check]: Validating Yama Story Structure + Safety + Volume: {os.path.basename(file_path)}")
@@ -33,8 +56,7 @@ def validate_structure(file_path):
         print("[Layer 0] PASSED.")
     except SystemExit as e:
         if e.code != 0:
-            print("[BLOCKADE]: Competitor & Thumbnail Analysis missing. Cannot proceed.")
-            sys.exit(1)
+            fail("[BLOCKADE]: Competitor & Thumbnail Analysis missing. Cannot proceed.", "competitor")
     except ImportError:
         print("⚠️ [Layer 0] Skipped (validate_yama_competitor module not found).")
 
@@ -42,9 +64,8 @@ def validate_structure(file_path):
     # Physically block entry if Safety Check fails.
     if validate_yama_safety:
         print("\n[Layer 1] Physical Blockade: NG Words & Pronouns...")
-        if not validate_yama_safety.validate_file(file_path):
-            print("[BLOCKADE]: NG Words or Pronouns detected.")
-            sys.exit(1)
+        if not validate_yama_safety.validate_file(file_path, show_closing=False):
+            fail("[BLOCKADE]: NG Words or Pronouns detected.", "safety")
     else:
         print("⚠️ [Layer 1] Skipped (Module not found).")
     
@@ -58,17 +79,18 @@ def validate_structure(file_path):
     # 1. Check for Markers
     markers = ["<!-- PART: KI -->", "<!-- PART: SHO -->", "<!-- PART: TEN-KETSU -->"]
     if not all(marker in content for marker in markers):
-        print("[CRITICAL]: Missing Structural Markers.")
-        print("   Required: <!-- PART: KI -->, <!-- PART: SHO -->, <!-- PART: TEN-KETSU -->")
-        print("   Please demarcate the script sections explicitly.")
-        sys.exit(1)
+        fail(
+            "[CRITICAL]: Missing Structural Markers.",
+            "markers",
+            "   Required: <!-- PART: KI -->, <!-- PART: SHO -->, <!-- PART: TEN-KETSU -->",
+            "   Please demarcate the script sections explicitly.",
+        )
 
     # 2. Extract Sections
     parts = re.split(r'<!-- PART: [A-Z-]+ -->', content)
     
     if len(parts) < 4:
-         print("[ERROR]: Could not split content correctly. Ensure markers are synonymous with the start of sections.")
-         sys.exit(1)
+         fail("[ERROR]: Could not split content correctly. Ensure markers are synonymous with the start of sections.", "markers")
          
     ki_text = parts[1]
     sho_text = parts[2]
@@ -97,9 +119,11 @@ def validate_structure(file_path):
     # Physically block if the script is too "thin" (Summarized/Compressed).
     print(f"\n[Layer 2] Physical Blockade: Volume Floor ({MIN_VOLUME_CHARS} chars)...")
     if total < MIN_VOLUME_CHARS:
-         print(f"[BLOCKADE]: Script volume ({total}) is below safety floor ({MIN_VOLUME_CHARS}).")
-         print("   Reason: Potential over-summarization detected.")
-         sys.exit(1)
+         fail(
+             f"[BLOCKADE]: Script volume ({total}) is below safety floor ({MIN_VOLUME_CHARS}).",
+             "volume",
+             "   Reason: Potential over-summarization detected.",
+         )
     else:
          print(f"[OK]: Volume OK: {total} chars")
 
@@ -125,25 +149,27 @@ def validate_structure(file_path):
     #   上限だけ比率で見る。切り方そのものは validate_yama_intro.py が検査する。
     KI_CHARS = (270, 950)
     if not (KI_CHARS[0] <= len_ki <= KI_CHARS[1]):
-        errors.append(f"[Structure Violation]: 'Ki' is {len_ki} chars. "
-                      f"Must be between {KI_CHARS[0]}-{KI_CHARS[1]} chars "
-                      f"(hook 120-380 + setup 150-500).")
+        errors.append((f"[Structure Violation]: 'Ki' is {len_ki} chars. "
+                       f"Must be between {KI_CHARS[0]}-{KI_CHARS[1]} chars "
+                       f"(hook 120-380 + setup 150-500).", "ki_chars"))
     # 2026-09-02 ユーザー指示:「起は短ければ短いほどいい。1割未満に抑える」
     if ratio_ki >= 10:
-        errors.append(f"[Structure Violation]: 'Ki' is {ratio_ki:.1f}%. Must be under 10%.")
+        errors.append((f"[Structure Violation]: 'Ki' is {ratio_ki:.1f}%. Must be under 10%.", "ki_ratio"))
 
     # SHO Logic (70-90%)
     if not (70 <= ratio_sho <= 90):
-        errors.append(f"[Structure Violation]: 'Sho' is {ratio_sho:.1f}%. Must be between 70-90%.")
+        errors.append((f"[Structure Violation]: 'Sho' is {ratio_sho:.1f}%. Must be between 70-90%.", "sho_ratio"))
 
     # TEN Logic (5-15%)
     if not (5 <= ratio_ten <= 15):
-        errors.append(f"[Structure Violation]: 'Ten-Ketsu' is {ratio_ten:.1f}%. Must be between 5-15%.")
+        errors.append((f"[Structure Violation]: 'Ten-Ketsu' is {ratio_ten:.1f}%. Must be between 5-15%.", "ten_ratio"))
 
     if errors:
-        for e in errors:
-            print(e)
+        for message, good_key in errors:
+            print(message)
+            print(f"    → 直し方: {GOOD[good_key]}")
         print("\n[FAILED]: VALIDATION FAILED. Please resize sections to match the Golden Ratio.")
+        print(CLOSING)
         sys.exit(1)
     else:
         print("[PASSED]: VALIDATION PASSED. Golden Ratio (1:8:1) Achieved.")

@@ -4,6 +4,33 @@ import _infermarks
 import sys
 import re
 
+CLOSING = "違反した箇所は、語を置き換えるのではなく、その文を丸ごと書き直してください（前後の文とのつながりも読み直す）。"
+
+# 出典: Correction_Patterns.md YCP-002・003・004・013・016・020・039・040・041、
+# Structure_Rules.md §0.3・§0.5、および本スクリプト Gate 5・8・9 の既存説明文。
+GOOD = {
+    "show_dont_tell": "教訓や評価を先に言わず、人物の行動と起きた事実から視聴者が意味を受け取れる段落に組み直す。",
+    "dash": "ダッシュを外し、前後の関係が伝わる句読点と文構造で間を作る。例: しかし ── 日没が迫っていた→しかし、すでにあたりは暗くなりかけていました。",
+    "written_language": "紙面の上下を前提にせず、直後の内容へそのまま続く音声用の文に組み直す。例: 「投入された装備は、以下の通り。」という前置きを「投入された装備は、」にして列挙へ続ける。",
+    "meta_narration": "動画や語り手の段取りを削り、人物の行動や事件の事実から直接始まる段落に組み直す。例: この事件の経緯を、時系列で見ていきましょう→削除して事件の事実へ直結。",
+    "document_description": "資料そのものの見た目を説明せず、人物、現場、事件について資料から分かる具体的な事実を主語にした文へ組み直す。",
+    "literary_jargon": "一度聞いて意味が分かる主語と動作の文に組み直す。例: 火を噴いた→部隊は発砲しました。",
+    "quote_intro": "引用の直前で、誰がどの取材や記録で述べた言葉かが分かる導入文を置いてから引用へ続ける。",
+    "trailing_attribution": "帰属だけの行を地の文の後ろに残さず、引用に続けて閉じるか、帰属と本文を1文にまとめる。",
+    "colloquial_quote": "発言なら資料の語尾まで「」で囲み、誰の発言か分かる帰属と一続きにする。要約ならナレーターの文として組み直す。",
+    "isolated_proper_noun": "後半の出来事に使わない固有名詞の紹介文は削り、使うならその人物・場所が事件にどう関わるかを同じ流れで示す。",
+    "math": "期間、総数、換算結果の関係が一度で分かるよう、根拠となる数値から結論へ進む文に組み直す。",
+    "missing_quote_marks": "資料の原文なら語尾まで「」で囲み、要約なら「〜と話しています」の文にして引用を予告しない。",
+    "enumeration_count": "個数を先に宣言せず、「〜としては、」で受け、「また、」「そして」で各項目をつなぐ段落に組み直す。例: 「根拠は、三つ。」を「根拠としては、」にして列挙へ続ける。",
+    "attribution_order": "話者とセリフを続けて提示し、最後の行を「……」と話しています。で閉じる引用段落に組み直す。",
+}
+
+
+def with_good(message, key):
+    """Keep the existing first line and put one actionable rewrite directly after it."""
+    lines = message.splitlines()
+    return "\n".join([lines[0], f"    → 直し方: {GOOD[key]}", *lines[1:]])
+
 # Gate 9: 資料記述ナレーション禁止。意味が確定しない候補は WARN に留める。
 DOCUMENT_WORD = r'(?:地形図|地図|資料|記録|一覧|報告書|広報|会議録)'
 DESCRIPTION_PREDICATE = r'(?:描かれています|描かれた|描く|記されています|記された|載っています|示す線|線です|書かれています)'
@@ -139,28 +166,31 @@ def validate_narrative_tone(file_path):
         # Gate 1: Show Don't Tell
         for phrase in BANNED_PHRASES:
             if phrase in content:
-                errors.append(
+                errors.append(with_good(
                     f"[Show Don't Tell] Line {i+1}: '{phrase}'\n"
-                    f"   > \"{content[:60]}...\""
-                )
+                    f"   > \"{content[:60]}...\"",
+                    "show_dont_tell",
+                ))
 
         # Gate 2: Dash prohibition
         if DASH_PATTERN.search(content):
             dash_count += 1
-            errors.append(
+            errors.append(with_good(
                 f"[Dash Prohibited] Line {i+1}: ダッシュ（──）を検出\n"
                 f"   > \"{content[:60]}...\"\n"
-                f"   → 句読点と文構造で間を表現してください"
-            )
+                f"   → 句読点と文構造で間を表現してください",
+                "dash",
+            ))
 
         # Gate 3: Written-language
         for phrase in WRITTEN_LANG_PHRASES:
             if phrase in content:
-                errors.append(
+                errors.append(with_good(
                     f"[Written Language] Line {i+1}: '{phrase}' は書き言葉\n"
                     f"   > \"{content[:60]}...\"\n"
-                    f"   → 音声ナレーションでは不適切。削除または言い換え"
-                )
+                    f"   → 音声ナレーションでは不適切。削除または言い換え",
+                    "written_language",
+                ))
 
         # Gate 6: メタ語り禁止（YCP-020）
         # ⚠️ 証言の導入（「〜さんは、こう振り返ります。」等）は除外する。
@@ -169,11 +199,12 @@ def validate_narrative_tone(file_path):
                          or re.search(r'(さん|氏|教授|さんたち)(は|も)、?こう', content)
         for pat, why in (META_NARRATION if not is_quote_intro else []):
             if re.search(pat, content):
-                errors.append(
+                errors.append(with_good(
                     f"[メタ語り禁止 YCP-020] Line {i+1}: {why}\n"
                     f"   > \"{content[:60]}\"\n"
-                    f"   → 削除して直接内容に入る。出典を示したいなら文の後ろへ回す"
-                )
+                    f"   → 削除して直接内容に入る。出典を示したいなら文の後ろへ回す",
+                    "meta_narration",
+                ))
                 break
 
         # Gate 9: 資料記述ナレーション禁止
@@ -183,19 +214,21 @@ def validate_narrative_tone(file_path):
             reason = ("資料語と記載系述語で終わり、事実の主題・人や事件の動作がない"
                       if description_level == 'FAIL' else
                       "資料語と記載系表現を含むが、資料の説明だけかは要確認")
-            target.append(
+            target.append(with_good(
                 f"[資料記述ナレーション禁止 Gate9] Line {i+1}: {reason}\n"
                 f"   > \"{content}\"\n"
-                f"   → 資料の描写ではなく、人物・現場・事件の具体的な事実を述べる"
-            )
+                f"   → 資料の描写ではなく、人物・現場・事件の具体的な事実を述べる",
+                "document_description",
+            ))
 
         # Gate 4: Literary/jargon (warnings)
         for phrase, suggestion in LITERARY_PHRASES:
             if phrase in content:
-                warnings.append(
+                warnings.append(with_good(
                     f"[Literary/Jargon] Line {i+1}: '{phrase}' {suggestion}\n"
-                    f"   > \"{content[:60]}...\""
-                )
+                    f"   > \"{content[:60]}...\"",
+                    "literary_jargon",
+                ))
 
     # Gate 8: 引用の作法（2026-09-01 追加）
     # 出荷済みの型（羅臼岳・大千軒岳）: 導入文で「誰が・どこで」を示し、次の行に「引用」を置く。
@@ -211,11 +244,12 @@ def validate_narrative_tone(file_path):
             ctx = [c for _, c in narrator_lines[max(0, idx - 2):idx]]
             prev_quote = bool(ctx) and ctx[-1].startswith("「")
             if not prev_quote and not any(INTRO_PAT.search(c) for c in ctx):
-                warnings.append(
+                warnings.append(with_good(
                     f"[引用に導入がない] Line {ln}: 誰の・どこでの発言か直前に示されていません\n"
                     f"   > \"{content[:44]}\"\n"
-                    f"   → 「◯◯さんは、△△の取材にこう話しています。」を直前に置く（羅臼岳・大千軒岳の型）"
-                )
+                    f"   → 「◯◯さんは、△△の取材にこう話しています。」を直前に置く（羅臼岳・大千軒岳の型）",
+                    "quote_intro",
+                ))
         # 8c. 帰属だけの単独行を後ろに置かない（2026-09-01）
         #  出荷済み3本（羅臼岳・朱鞠内湖・大千軒岳）に「そう書いています。」単独行は0件。
         #  唯一の後置は羅臼岳の「と記録されています。」で、直前が必ず「」引用だった。
@@ -227,20 +261,22 @@ def validate_narrative_tone(file_path):
         if is_trailing:
             prev = narrator_lines[idx - 1][1] if idx else ""
             if not prev.startswith("「"):
-                errors.append(
+                errors.append(with_good(
                     f"[帰属だけの単独行] Line {ln}: 引用でない地の文に、後置の帰属行を足しています\n"
                     f"   > \"{content}\"\n"
                     f"   → 導入を前に置く（「米田さんは、こう書いています。」→ 本文）か、1行にまとめる。"
-                    f"後置の単独行は出荷済み3本で0件"
-                )
+                    f"後置の単独行は出荷済み3本で0件",
+                    "trailing_attribution",
+                ))
         # 8b. 話し言葉が「」の外に出ていないか（引用行そのものは対象外）
         is_quoted = content.startswith("「") and content.rstrip().endswith("」")
         if not is_quoted and COLLOQUIAL.search(content):
-            errors.append(
+            errors.append(with_good(
                 f"[話し言葉が括弧の外] Line {ln}: 証言は「」で囲む\n"
                 f"   > \"{content[:44]}\"\n"
-                f"   → ナレーターが一人称で話す形になっています。引用なら「」で囲み、導入文を付ける"
-            )
+                f"   → ナレーターが一人称で話す形になっています。引用なら「」で囲み、導入文を付ける",
+                "colloquial_quote",
+            ))
 
     # Gate 7: 1回しか出てこない固有名詞を列挙（WARNING）
     all_body = "\n".join(c for _, c in narrator_lines)
@@ -254,10 +290,11 @@ def validate_narrative_tone(file_path):
     for word, hits in sorted(seen.items()):
         if all_body.count(word) == 1:
             line_no = hits[0]
-            warnings.append(
+            warnings.append(with_good(
                 f"[孤立した固有名詞] Line {line_no}: '{word}' は台本に1回しか出てきません\n"
-                f"   → 後半で使わないなら削る。比較事例・列挙なら問題なし（判断は人間）"
-            )
+                f"   → 後半で使わないなら削る。比較事例・列挙なら問題なし（判断は人間）",
+                "isolated_proper_noun",
+            ))
 
     # Gate 5: Math consistency check (YCP-025 related)
     # Detect lines with numbers and frequency expressions, check if math adds up
@@ -308,12 +345,13 @@ def validate_narrative_tone(file_path):
                                 break  # Math checks out for this period
                         else:
                             # No reasonable period makes the math work
-                            warnings.append(
+                            warnings.append(with_good(
                                 f"[Math Check] Line {line_num}: 「{claimed_interval:.0f}日に1回」の計算を確認してください\n"
                                 f"   近くの数値: {val:.0f}（Line {w_line_num}）\n"
                                 f"   → 期間が不明確、または換算が合わない可能性があります\n"
-                                f"   > \"{content[:70]}...\""
-                            )
+                                f"   > \"{content[:70]}...\"",
+                                "math",
+                            ))
 
     # Output results
     print()
@@ -347,11 +385,13 @@ def validate_narrative_tone(file_path):
         _body = _re3.sub(r"\s*<!--.*?-->", "", _nx).split(":", 1)[1].strip()
         if "「" in _body or _CUE.search(_nx):
             continue
-        warnings.append(
+        warnings.append(with_good(
             f"L{_no} 発言に「」が付いていません: 「{_l.split(':', 1)[1].strip()[:30]}」の次の "
             f"L{_nn}「{_body[:40]}」\n"
             f"   → 資料の原文に「」があるならそのまま「」で囲む。"
-            f"要約なら『〜と話しています』の形にして、引用だと約束しない")
+            f"要約なら『〜と話しています』の形にして、引用だと約束しない",
+            "missing_quote_marks",
+        ))
 
     # --- 列挙の前に個数を宣言している（2026-09-03 追加・WARNのみ）----------
     #   ユーザー指示:「3つなど最初に数字を出す書き方はやめてください」
@@ -368,9 +408,11 @@ def validate_narrative_tone(file_path):
     for _no, _l in _nl:
         _t = _re3.sub(r"\s*<!--.*?-->", "", _l).split(":", 1)[1].strip()
         if _CNT.search(_t):
-            warnings.append(
+            warnings.append(with_good(
                 f"L{_no} 列挙の前に個数を宣言しています: 「{_t[:34]}」\n"
-                f"   → 「〜としては、」で受け、「また、」「そして」で継ぐ。数は先に言わない（YCP-041）")
+                f"   → 「〜としては、」で受け、「また、」「そして」で継ぐ。数は先に言わない（YCP-041）",
+                "enumeration_count",
+            ))
 
     # --- 発言の帰属が前に出ている（2026-09-03 追加・WARNのみ）--------------
     #   ユーザー指示:「セリフの後に、と語ってますとか、話してますという区切り方です。今後は」
@@ -386,9 +428,11 @@ def validate_narrative_tone(file_path):
     for _no, _l in _nl:
         _t = _re3.sub(r"\s*<!--.*?-->", "", _l).split(":", 1)[1].strip()
         if _CUE2.search(_t):
-            warnings.append(
+            warnings.append(with_good(
                 f"L{_no} 発言の帰属が前に出ています: 「{_t[:36]}」\n"
-                f"   → セリフを先に出し、最後の行を「……」と話しています。で閉じる（YCP-040）")
+                f"   → セリフを先に出し、最後の行を「……」と話しています。で閉じる（YCP-040）",
+                "attribution_order",
+            ))
 
     if warnings:
         print(f"[WARN] {len(warnings)} warning(s) found.")
@@ -488,6 +532,7 @@ def validate_narrative_tone(file_path):
     print("=" * 60)
 
     if errors:
+        print(CLOSING)
         sys.exit(1)
     else:
         sys.exit(0)

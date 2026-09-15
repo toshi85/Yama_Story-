@@ -7,38 +7,58 @@ import os
 
 # Configuration
 LOG_FILE = "/Users/tosimasa/Desktop/Antigravity/Yama_Story/yama_safety_validation.log"
+CLOSING = "違反した箇所は、語を置き換えるのではなく、その文を丸ごと書き直してください（前後の文とのつながりも読み直す）。"
+
+# 出典: Channel_Master_Prompt_Yama.md §4・§5、Correction_Patterns.md YCP-016・YCP-037。
+# TERM_DB は既存コードに正しい読みだけがあり、文・段落の修正例は指定文書にない。
+GOOD = {
+    "title_thumbnail": "刺激の強い語を中心にせず、何が起きたかという現象や発見結果が伝わるタイトル全体に組み直す。",
+    "safety_word": "禁止語を使わず、起きた結果や行為を直接想像させない文全体に組み直す。",
+    "pronoun": "固有名詞か属性名を主語に置き、誰が何をしたかが一度で分かる文に組み直す。",
+    "book_source": "書籍名や著者名を主語にせず、記録・研究・集計が示す内容を主語にした文に組み直す。例: 米田さんは、そう書いています→研究者は、そう見ています。",
+    "repetitive_ending": "前後の文をまとめて読み直し、体言止めや「のです」を織り交ぜて語尾の流れを組み直す。例: 走りました。そして転びました。立ち上がりました。→ファンさんは走りました。しかし、転倒。それでも立ち上がったのです。",
+    "term_reading": "（文書に修正例なし）",
+    "sensationalism": "評価語を外し、何が起きたかを主語、出来事、補足の順で述べる文に組み直す。",
+    "victim_dignity": "被害者を非難する評価を外し、置かれた状況と行動を事実で伝える文に組み直す。",
+}
+
+
+def with_good(message, key):
+    """Keep the existing first line and put one actionable rewrite directly after it."""
+    lines = message.splitlines()
+    return "\n".join([lines[0], f"    → 直し方: {GOOD[key]}", *lines[1:]])
 
 # Strict Prohibited Words (Demonetization Risk & Style)
 BANNED_WORDS = {
     # Death (High Risk) - Must use euphemisms
-    r"(?<!必)(?<!不)死(?!守|角|球|力|闘|去)": "NG: '死' (Direct Death/Corpse reference). Use '悲劇', '帰らぬ人', '命を落とす'. (Exception: '必死', '不死' included in regex)",
-    r"死亡": "NG: '死亡'. Use '帰らぬ人', '命が失われた'.",
-    r"死体": "NG: '死体'. Use '遺体', 'なきがら'.",
-    r"全滅": "NG: '全滅'. Use '誰ひとり戻らない', '壊滅'.",
-    r"即死": "NG: '即死'. Use 'その瞬間に意識を失う'.",
+    r"(?<!必)(?<!不)死(?!守|角|球|力|闘|去)": ("NG: '死' (Direct Death/Corpse reference). Use '悲劇', '帰らぬ人', '命を落とす'. (Exception: '必死', '不死' included in regex)", "safety_word"),
+    r"死亡": ("NG: '死亡'. Use '帰らぬ人', '命が失われた'.", "safety_word"),
+    r"死体": ("NG: '死体'. Use '遺体', 'なきがら'.", "safety_word"),
+    r"全滅": ("NG: '全滅'. Use '誰ひとり戻らない', '壊滅'.", "safety_word"),
+    r"即死": ("NG: '即死'. Use 'その瞬間に意識を失う'.", "safety_word"),
     
     # Violence/Crime
-    r"殺す": "NG: '殺す'. Use '奪う', '手にかける'.",
-    r"殺人": "NG: '殺人'. Use '事件', '犯行'.",
-    r"殺害": "NG: '殺害'. Use '命を奪う'.",
-    r"刺す": "NG: '刺す'.",
-    r"殴る": "NG: '殴る'.",
-    r"暴行": "NG: '暴行'.",
+    r"殺す": ("NG: '殺す'. Use '奪う', '手にかける'.", "safety_word"),
+    r"殺人": ("NG: '殺人'. Use '事件', '犯行'.", "safety_word"),
+    r"殺害": ("NG: '殺害'. Use '命を奪う'.", "safety_word"),
+    r"刺す": ("NG: '刺す'.", "safety_word"),
+    r"殴る": ("NG: '殴る'.", "safety_word"),
+    r"暴行": ("NG: '暴行'.", "safety_word"),
     
     # Mental
-    r"発狂": "NG: '発狂'. Use '錯乱', 'パニック'.",
-    r"狂う": "NG: '狂う'. Use '常軌を逸する'.",
+    r"発狂": ("NG: '発狂'. Use '錯乱', 'パニック'.", "safety_word"),
+    r"狂う": ("NG: '狂う'. Use '常軌を逸する'.", "safety_word"),
     
     # Children
-    r"子供の死": "NG: '子供の死'. Use '小さな命が失われる'.",
+    r"子供の死": ("NG: '子供の死'. Use '小さな命が失われる'.", "safety_word"),
 
     # Pronouns (Strict Ban: No Generic Pronouns)
-    r"彼(?!女)": "NG: '彼' (He). Use specific name (e.g. 'Liang', 'The Runner').",
-    r"彼女": "NG: '彼女' (She). Use specific name.",
-    r"彼ら": "NG: '彼ら' (They). Use '選手たち', '村人たち'.",
-    r"あいつ": "NG: 'あいつ'. Use Name.",
-    r"こいつ": "NG: 'こいつ'. Use Name.",
-    r"やつ": "NG: 'やつ'. Use Name.",
+    r"彼(?!女)": ("NG: '彼' (He). Use specific name (e.g. 'Liang', 'The Runner').", "pronoun"),
+    r"彼女": ("NG: '彼女' (She). Use specific name.", "pronoun"),
+    r"彼ら": ("NG: '彼ら' (They). Use '選手たち', '村人たち'.", "pronoun"),
+    r"あいつ": ("NG: 'あいつ'. Use Name.", "pronoun"),
+    r"こいつ": ("NG: 'こいつ'. Use Name.", "pronoun"),
+    r"やつ": ("NG: 'やつ'. Use Name.", "pronoun"),
 
     # --- 本を元に作ったと分かる言い回し（2026-09-03 新設・ユーザー指示）---
     # 「米田さんは、そう書いています」のように書籍の著者名を出すと、
@@ -55,7 +75,7 @@ BANNED_WORDS = {
     r"(?<![絵日標基資根台手見])(?<![一二三四五六七八九十数何\d])本(?![人州家当部社来能質格音棚語])[のにはをでも、。]|"
     r"著書|という本|この本|同書|巻末|"
     r"別のページ|同じページ|ページには|ページ目|第[一二三四五六七八九十\d]+章には":
-        "NG: 本を出典として明かす言い回し。「記録には」「この集計では」「別のところで」など、本だと分からない形にする（YCP-037）",
+        ("NG: 本を出典として明かす言い回し。「記録には」「この集計では」「別のところで」など、本だと分からない形にする（YCP-037）", "book_source"),
 }
 
 # 書籍の著者名（1行1名）。本文に出たら止める。2026-09-03 新設
@@ -66,7 +86,8 @@ if os.path.exists(_AUTHORS):
         if _name:
             BANNED_WORDS[re.escape(_name)] = (
                 f"NG: 書籍の著者名『{_name}』。本を元に作ったと分かってしまう。"
-                f"「研究者は、そう見ています」「記録には、こうあります」のように名前を出さない形にする（YCP-037）")
+                f"「研究者は、そう見ています」「記録には、こうあります」のように名前を出さない形にする（YCP-037）",
+                "book_source")
 
 # --- TITLE / THUMBNAIL ONLY (2026-09-01 新設) ---
 # 本文では許容し、タイトル・サムネイルでのみ止める語。
@@ -77,7 +98,7 @@ if os.path.exists(_AUTHORS):
 #       さらに辞書内で矛盾していた（'死体' の指示が「'遺体' を使え」）。
 # → feedback_calibrate_audits_to_shipped_content.md（出荷済みの内容が通る値に較正する）
 TITLE_THUMB_BANNED = {
-    r"遺体": "NG(タイトル/サムネのみ): '遺体'. Use '発見', '姿'. 本文での使用は可.",
+    r"遺体": ("NG(タイトル/サムネのみ): '遺体'. Use '発見', '姿'. 本文での使用は可.", "title_thumbnail"),
 }
 
 # --- SENSATIONALISM CHECK (Warning Level) ---
@@ -125,7 +146,7 @@ def log_print(msg):
     except Exception:
         pass
 
-def validate_file(file_path):
+def validate_file(file_path, show_closing=True):
     log_print(f"\n--- [Safety Blockade]: Checking {os.path.basename(file_path)} ---")
     log_print(f"    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency")
     
@@ -149,9 +170,9 @@ def validate_file(file_path):
         is_title = s_line.startswith('# ') and not s_line.startswith('##')
         if not (is_title or in_thumb):
             continue
-        for pattern, reason in TITLE_THUMB_BANNED.items():
+        for pattern, (reason, good_key) in TITLE_THUMB_BANNED.items():
             if re.search(pattern, s_line):
-                errors.append(f"Line {i+1}: {reason} \n   -> Context: \"{s_line}\"")
+                errors.append(with_good(f"Line {i+1}: {reason} \n   -> Context: \"{s_line}\"", good_key))
 
     # Repetition Check Variables
     last_ending = ""
@@ -212,10 +233,10 @@ def validate_file(file_path):
         if _ok:
             declared.append(f"Line {line_num}: {_ok.group(1)}")
         if not is_metadata and not _ok:
-            for pattern, reason in BANNED_WORDS.items():
+            for pattern, (reason, good_key) in BANNED_WORDS.items():
                 matches = re.finditer(pattern, line)
                 for match in matches:
-                    errors.append(f"Line {line_num}: {reason} \n   -> Context: \"{stripped_line}\"")
+                    errors.append(with_good(f"Line {line_num}: {reason} \n   -> Context: \"{stripped_line}\"", good_key))
 
             # 2. Consecutive Ending Check
             match = ending_pattern.search(stripped_line)
@@ -228,7 +249,7 @@ def validate_file(file_path):
                     repetition_count = 1
                 
                 if repetition_count >= 2: 
-                    errors.append(f"Line {line_num}: Repetitive Ending '{current_ending}' (Count: {repetition_count}). Change to noun stop (体言止め) or other form.")
+                    errors.append(with_good(f"Line {line_num}: Repetitive Ending '{current_ending}' (Count: {repetition_count}). Change to noun stop (体言止め) or other form.", "repetitive_ending"))
             else:
                 last_ending = ""
                 repetition_count = 0
@@ -244,12 +265,12 @@ def validate_file(file_path):
                         expected_reading = correct_form.split("（")[1].replace("）", "")
 
                         if actual_reading != expected_reading:
-                            errors.append(f"Line {line_num}: Inconsistent Reading for '{term}'. Found '（{actual_reading}）', expected '（{expected_reading}）'.")
+                            errors.append(with_good(f"Line {line_num}: Inconsistent Reading for '{term}'. Found '（{actual_reading}）', expected '（{expected_reading}）'.", "term_reading"))
 
             # 4. SENSATIONALISM CHECK (Warning)
             for pattern, reason in SENSATIONAL_WORDS.items():
                 if re.search(pattern, line):
-                    errors.append(f"Line {line_num}: {reason}\n   -> \"{stripped_line}\"")
+                    errors.append(with_good(f"Line {line_num}: {reason}\n   -> \"{stripped_line}\"", "sensationalism"))
 
             # 5. VICTIM DIGNITY CHECK
             for neg_word in DIGNITY_NEGATIVE_WORDS:
@@ -258,7 +279,7 @@ def validate_file(file_path):
                     # Simple heuristic: same line contains both a negative descriptor and a proper noun pattern
                     has_name = bool(re.search(r'[ァ-ヶー]{2,}', stripped_line)) or bool(re.search(r'[A-Z][a-z]+', stripped_line))
                     if has_name:
-                        errors.append(f"Line {line_num}: Victim dignity concern: '{neg_word}' used near a proper name. Rephrase to respect victims.\n   -> \"{stripped_line}\"")
+                        errors.append(with_good(f"Line {line_num}: Victim dignity concern: '{neg_word}' used near a proper name. Rephrase to respect victims.\n   -> \"{stripped_line}\"", "victim_dignity"))
 
     if declared:
         log_print(f"--- 検査を外す宣言（SAFETY_OK）{len(declared)}件 ---")
@@ -270,6 +291,8 @@ def validate_file(file_path):
         log_print(f"[FAILED]: Found {len(errors)} issues.")
         for e in errors:
             log_print(e)
+        if show_closing:
+            log_print(CLOSING)
         return False
     
     log_print("[SUCCESS]: No Safety or Style Issues Found.")
