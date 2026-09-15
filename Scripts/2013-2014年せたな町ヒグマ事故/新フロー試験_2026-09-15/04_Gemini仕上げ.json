@@ -1,0 +1,8 @@
+{
+  "model": "gemini-3.8-flash",
+  "temperature": 1.0,
+  "input_tokens": 2476,
+  "output_tokens": 8278,
+  "円換算": 4.9349,
+  "生成日時": "2026-09-15T13:02:09+09:00"
+}
