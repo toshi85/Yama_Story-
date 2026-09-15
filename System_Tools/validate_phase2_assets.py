@@ -18,7 +18,7 @@ if hasattr(sys.stdout, 'reconfigure'):  # Windows cp932コンソール対策
 
 
 def prompt_lint(text, errors, warns, info):
-    """rules 14-20: 生成失敗パターン+ナレ行整合のlint。Master.md/修正版どちらの書式にも対応"""
+    """rules 14-44: 生成失敗パターン+ナレ行整合のlint。Master.md/修正版どちらの書式にも対応"""
     # ナレ行→次のナレ行までを1セグメントとして走査
     marks = [(mo.start(), mo.group(1)) for mo in re.finditer(
         r'^(?:ナレーター:|\*\*ナレ行\*\*:\s*ナレーター:)\s*(.*)$', text, re.M)]
@@ -455,7 +455,69 @@ def prompt_lint(text, errors, warns, info):
     if winter:
         warns.append(f'夕暮れ・夜の屋外に季節宣言も雪の打ち消しも無い {len(winter)}件（季節を名指しするか "No snow anywhere, no frost, no ice, no winter" を書く。暗い屋外は無指定だと冬になる）: {", ".join(dict.fromkeys(winter))}')
 
-    info.append(f'プロンプトlint(14-39): {len(segs)}セグメント走査')
+    # ===== rules 40-44: 戸沢村の本人チェック（2026-09-15）を機械化（すべてWARN） =====
+    # 既存成果物の較正に使えるよう、1項目につき該当行/セグメント数をまとめて出す。
+
+    # 40) セリフの方言語尾・訛り。本人裁定「方言を入れなくていい。標準語で」。
+    DIALECT = re.compile(r'べ」|べ[？?]|ねぇ|さ行|けろ|だべ|んだ|じゃ」|わい|とる」')
+    dialect = []
+    for nar, seg in segs:
+        if any('セリフ' in line and DIALECT.search(line) for line in seg.splitlines()):
+            dialect.append(asset_no(seg))
+    if dialect:
+        warns.append(
+            f'セリフに方言語尾 {len(dialect)}件: {", ".join(dict.fromkeys(dialect))}'
+            '\n    → 直し方: 標準語にする')
+
+    # 41) キャラアニメーションは、黙る場面も「・・・」を含む短いセリフを付ける。
+    silent_char = []
+    for nar, seg in segs:
+        if asset_type(seg) == 'キャラ' and not any('セリフ' in line for line in seg.splitlines()):
+            silent_char.append(asset_no(seg))
+    if silent_char:
+        warns.append(
+            f'キャラアニメーションにセリフ行なし {len(silent_char)}件: {", ".join(dict.fromkeys(silent_char))}'
+            '\n    → 直し方: 映っている人物かクマに短いセリフ（黙るなら「・・・」）を足す')
+
+    # 42) 編集者指示のテロップは10字以内が基本。14字を超えたものだけ警告する。
+    long_telop = []
+    for nar, seg in segs:
+        found = []
+        for line in seg.splitlines():
+            if not line.startswith('→ 編集者指示:') or 'テロップ' not in line:
+                continue
+            for quoted in re.findall(r'「([^」]+)」', line):
+                length = len(re.sub(r'[\s/／]', '', quoted))
+                if length > 14:
+                    found.append(f'「{quoted}」({length}字)')
+        if found:
+            long_telop.append(f'{asset_no(seg)} {", ".join(found)}')
+    if long_telop:
+        warns.append(
+            f'編集者指示の14字超テロップ {len(long_telop)}件: {" / ".join(long_telop)}'
+            '\n    → 直し方: 要点を10字以内に縮め、強調語1つを赤字にする')
+
+    # 43) 読点で意味の続く1文を2ナレーションへ割ると、2行目だけの素材が増える。
+    split_sentence = []
+    for i, (nar, seg) in enumerate(segs[:-1]):
+        if nar.rstrip().endswith('、'):
+            split_sentence.append(f'{asset_no(seg)}→{asset_no(segs[i + 1][1])}')
+    if split_sentence:
+        warns.append(
+            f'読点で分割された連続ナレーション {len(split_sentence)}件: {", ".join(split_sentence)}'
+            '\n    → 直し方: 1行にまとめ、2行目の素材を消す')
+
+    # 44) 本人は「テロップなし」を上書きして要点テロップを足している。
+    no_telop = []
+    for nar, seg in segs:
+        if 'テロップは出さない' in seg or 'テロップなし' in seg:
+            no_telop.append(asset_no(seg))
+    if no_telop:
+        warns.append(
+            f'テロップ抑制指示 {len(no_telop)}件: {", ".join(dict.fromkeys(no_telop))}'
+            '\n    → 直し方: 要点のテロップを入れる（本人は毎回足している）')
+
+    info.append(f'プロンプトlint(14-44): {len(segs)}セグメント走査')
 
 def main(master_path, daihon_path):
     m = open(master_path, encoding='utf-8').read()
@@ -571,7 +633,7 @@ def main(master_path, daihon_path):
     if memo_all and len(numbered) != len(memo_all):
         warns.append(f'制作メモのASSET番号併記が不足 {len(memo_all)-len(numbered)}件（全メモに ASSET-NNN を付ける）')
 
-    # 14-20) 生成失敗パターン+ナレ行整合のlint
+    # 14-44) 生成失敗パターン+ナレ行整合のlint
     prompt_lint(m, errors, warns, info)
 
     # ---- 出力 ----
