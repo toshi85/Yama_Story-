@@ -18,6 +18,32 @@ import _infermarks
 import sys, re, glob, os, itertools
 
 NEWLINE = chr(10)
+CLOSING = '違反した箇所は、語を置き換えるのではなく、その文を丸ごと書き直してください（前後の文とのつながりも読み直す）。'
+
+# 出典: Correction_Patterns.md YCP-020・YCP-038／本ファイル §1・§1b の既存説明
+GOOD = {
+    'exact_duplicate': '同じ事実を伝える段落を1つにまとめ、重複したナレーション行を削る。',
+    'near_duplicate': '近い章で同じ事実を言い換えず、1つの段落にまとめて片方を削る。',
+    'near_duplicate_warn': '離れた2章を読み比べ、再提示として必要かを人間が判断する。不要なら後段を削り、必要なら新しい情報が増える段落に組み直す。',
+    # 出典: Plot_Sheet_Template.md §「書き方」「表は7列」／本ファイル §2/3 の既存説明
+    'plot_row_missing': '本文の章ごとにプロット表の行を対応させ、章番号、章題、実測字数、素材#を同じ章として組み直す。',
+    'master_chapter_missing': 'プロット表の各章を本文の章に対応させ、不要な章なら素材の割り当てごと見直す。',
+    'title_mismatch': '同じ章の役割が分かる章題にそろえ、プロット表と本文を対応させる。',
+    'chars_mismatch': '本文から数えた実測字数をプロット表の実測字数へ反映する。設計字数は書き換えない。',
+    'plot_missing': '台本と同じフォルダに Plot_Sheet_<事件名>.md を置き、本文の各章を対応させる。',
+    # 出典: Fact_Sheet_Template.md §「シートの形」／Plot_Sheet_Template.md §「3段階の全体像」
+    'source_missing': '素材シートに実在する素材を章へ割り当て直す。必要な事実が無ければ、出典を確認して素材シートに行を足す。',
+    'used_chapter_missing': '素材シートの「使う章」を、実在する本文の章へ割り当て直す。',
+    'source_chapter_mismatch': 'プロット表の素材#と素材シートの「使う章」を突き合わせ、同じ章の割り当てに直す。',
+    'fact_missing': '台本と同じフォルダに Fact_Sheet_<事件名>.md を置き、素材#と「使う章」を対応させる。',
+    # 出典: Correction_Patterns.md YCP-033／本ファイル §「台本内の相互矛盾」
+    'contradiction': '食い違う記録を片方だけの断定にせず、矛盾する当の章の中で「記録は食い違ったままです」と伝える文に組み直す。',
+    'universal_claim': '全称の断定と個別章を突き合わせ、食い違うなら当の章で記録が割れていることを明示する文に組み直す。',
+}
+
+
+def issue(items, key, message):
+    items.append((key, message))
 
 def load_master(p):
     ch, cur, dup = [], None, {}
@@ -47,7 +73,7 @@ def main():
     # 1. 完全重複ナレーション行
     for text, lines in dup.items():
         if len(lines) > 1 and len(text) >= 12:
-            fails.append(f"完全重複ナレ行 行{','.join(str(n) for n, _ in lines)}: 「{text[:44]}」")
+            issue(fails, 'exact_duplicate', f"完全重複ナレ行 行{','.join(str(n) for n, _ in lines)}: 「{text[:44]}」")
 
     # 1b. 近似重複ナレーション行（2026-09-02 追加）
     #     完全一致だけを見ていたため「言い換えただけの水増し」がすり抜けていた。
@@ -77,9 +103,9 @@ def main():
         msg = (f"近似重複ナレ行 類似度{j:.2f} §{c1}行{l1} / §{c2}行{l2}: "
                f"「{t1[:30]}」/「{t2[:30]}」")
         if abs(c1 - c2) <= NEAR:
-            fails.append(msg + " → 近い場所で同じことを言い換えている。どちらかを削る")
+            issue(fails, 'near_duplicate', msg + " → 近い場所で同じことを言い換えている。どちらかを削る")
         else:
-            warns.append(msg + " → 章が離れているので再提示かもしれない（判断は人間）")
+            issue(warns, 'near_duplicate_warn', msg + " → 章が離れているので再提示かもしれない（判断は人間）")
 
     # 2/3. プロット表との整合（章番号・章題・字数）
     pp = glob.glob(os.path.join(d, "Plot_Sheet_*.md"))
@@ -94,14 +120,14 @@ def main():
                 plot_src[int(m.group(1))] = re.findall(r"\d+", m.group(4))
         mm = {c["no"]: c for c in ch}
         for n in sorted(set(rows) | set(mm)):
-            if n not in rows: fails.append(f"プロット表に §{n} の行がない（本文にはある）")
-            elif n not in mm: fails.append(f"本文に §{n} がない（プロット表にはある）")
+            if n not in rows: issue(fails, 'plot_row_missing', f"プロット表に §{n} の行がない（本文にはある）")
+            elif n not in mm: issue(fails, 'master_chapter_missing', f"本文に §{n} がない（プロット表にはある）")
             else:
                 t, c, _ = rows[n]
-                if t != mm[n]["title"]: fails.append(f"§{n} 章題の不一致  表『{t}』/ 本文『{mm[n]['title']}』")
-                if c != mm[n]["chars"]: fails.append(f"§{n} 字数の不一致  表 {c}字 / 本文 {mm[n]['chars']}字")
+                if t != mm[n]["title"]: issue(fails, 'title_mismatch', f"§{n} 章題の不一致  表『{t}』/ 本文『{mm[n]['title']}』")
+                if c != mm[n]["chars"]: issue(fails, 'chars_mismatch', f"§{n} 字数の不一致  表 {c}字 / 本文 {mm[n]['chars']}字")
     else:
-        warns.append("Plot_Sheet_*.md が見つからない")
+        issue(warns, 'plot_missing', "Plot_Sheet_*.md が見つからない")
 
     # 4/5. 素材シートとの整合（素材#の実在・「使う章」の実在）
     fp = glob.glob(os.path.join(d, "Fact_Sheet_*.md"))
@@ -110,7 +136,7 @@ def main():
         have = set(re.findall(r"^\|\s*(\d+)\s*\|", body, re.M))
         for n, ids in plot_src.items():
             miss = [i for i in ids if i not in have]
-            if miss: fails.append(f"§{n} の素材# {','.join(miss)} が素材シートに存在しない")
+            if miss: issue(fails, 'source_missing', f"§{n} の素材# {','.join(miss)} が素材シートに存在しない")
         used = set()
         for l in body.split("\n"):
             if l.startswith("|"):
@@ -118,7 +144,7 @@ def main():
                     used.add(int(s))
         exist = {c["no"] for c in ch}
         bad = sorted(used - exist)
-        if bad: fails.append(f"素材シートの「使う章」が本文に存在しない: {', '.join('§'+str(b) for b in bad)}")
+        if bad: issue(fails, 'used_chapter_missing', f"素材シートの「使う章」が本文に存在しない: {', '.join('§'+str(b) for b in bad)}")
 
         # 6. 素材# と「使う章」の双方向一致（2026-09-02 追加）
         #    2026-09-01 の戸沢村で、§22 を新設したのに素材シートの「使う章」を振り直さず 65件がズレていた。
@@ -135,10 +161,10 @@ def main():
                 if sid in row_use and str(n) not in row_use[sid]:
                     miss.append(f"素材#{sid} を §{n} で使っているが、素材シートの「使う章」に §{n} が無い")
         if miss:
-            fails.append(f"素材#と「使う章」の食い違い {len(miss)}件: " + " / ".join(miss[:6])
-                         + (" ..." if len(miss) > 6 else ""))
+            issue(fails, 'source_chapter_mismatch', f"素材#と「使う章」の食い違い {len(miss)}件: " + " / ".join(miss[:6])
+                  + (" ..." if len(miss) > 6 else ""))
     else:
-        warns.append("Fact_Sheet_*.md が見つからない")
+        issue(warns, 'fact_missing', "Fact_Sheet_*.md が見つからない")
 
     # ------------------------------------------------------------------
     # Check: 台本内の相互矛盾（2026-09-02 新設）
@@ -208,23 +234,26 @@ def main():
                     if key in seen:
                         continue
                     seen.add(key)
-                    fails.append(
+                    issue(fails, 'contradiction',
                         f"台本内の矛盾（{what}）: §{n}「{t[:26]}」が全称で断定しているのに、"
                         f"§{n2}「{t2[:26]}」が逆を言っています"
                         f" → 資料が割れているなら、その章の中で「記録は食い違ったままです」と書く")
 
     for n, t in narr:
         if re.search(ALL_OF, t):
-            warns.append(f"全称表現 §{n}: 「{t[:32]}」 → 個別章と矛盾しないか目視（判断は人間）")
+            issue(warns, 'universal_claim', f"全称表現 §{n}: 「{t[:32]}」 → 個別章と矛盾しないか目視（判断は人間）")
 
     for label, items in (("FAIL", fails), ("WARN", warns)):
         if items:
             print(f"\n--- {label} {len(items)}件 ---")
-            for x in items: print(f"  {'x' if label=='FAIL' else '!'} {x}")
+            for key, x in items:
+                print(f"  {'x' if label=='FAIL' else '!'} {x}")
+                print("    → 直し方:", GOOD[key])
     if not fails:
         print("\n[PASS] 台本・プロット表・素材シートは整合しています")
         return 0
     print(f"\n[FAIL] {len(fails)}件。3つの資料が食い違ったままPhase2に進むと必ず事故る")
+    print(CLOSING)
     return 1
 
 if __name__ == "__main__":
