@@ -18,16 +18,18 @@ if hasattr(sys.stdout, 'reconfigure'):  # Windows cp932コンソール対策
 
 
 def prompt_lint(text, errors, warns, info):
-    """rules 14-20: 生成失敗パターン+ナレ行整合のlint。Master.md/修正版どちらの書式にも対応"""
+    """rules 14-44: 生成失敗パターン+ナレ行整合のlint。Master.md/修正版どちらの書式にも対応"""
     # ナレ行→次のナレ行までを1セグメントとして走査
     marks = [(mo.start(), mo.group(1)) for mo in re.finditer(
         r'^(?:ナレーター:|\*\*ナレ行\*\*:\s*ナレーター:)\s*(.*)$', text, re.M)]
     segs = []
+    seg_mark_indexes = []
     for i, (pos, nar) in enumerate(marks):
         end = marks[i + 1][0] if i + 1 < len(marks) else len(text)
         seg = text[pos:end]
         if '【制作メモ】' in seg:
             segs.append((nar, seg))
+            seg_mark_indexes.append(i)
 
     def asset_no(seg):
         mo = re.search(r'ASSET-\d+', seg)
@@ -455,7 +457,218 @@ def prompt_lint(text, errors, warns, info):
     if winter:
         warns.append(f'夕暮れ・夜の屋外に季節宣言も雪の打ち消しも無い {len(winter)}件（季節を名指しするか "No snow anywhere, no frost, no ice, no winter" を書く。暗い屋外は無指定だと冬になる）: {", ".join(dict.fromkeys(winter))}')
 
-    info.append(f'プロンプトlint(14-39): {len(segs)}セグメント走査')
+    # ===== rules 40-44: 戸沢村の本人チェック（2026-09-15）を機械化 =====
+    # 41はERROR、40・42・43・44はWARN。
+    # 既存成果物の較正に使えるよう、1項目につき該当行/セグメント数をまとめて出す。
+
+    # 40) セリフの方言語尾・訛り。本人裁定「方言を入れなくていい。標準語で」。
+    DIALECT = re.compile(r'べ」|べ[？?]|ねぇ|さ行|けろ|だべ|んだ|じゃ」|わい|とる」')
+    dialect = []
+    for nar, seg in segs:
+        if any('セリフ' in line and DIALECT.search(line) for line in seg.splitlines()):
+            dialect.append(asset_no(seg))
+    if dialect:
+        warns.append(
+            f'セリフに方言語尾 {len(dialect)}件: {", ".join(dict.fromkeys(dialect))}'
+            '\n    → 直し方: 標準語にする')
+
+    # 41) キャラプロンプトがあるカットには、黙る場面も「・・・」を含む短い標準語のセリフを付ける。
+    #     人物・クマの語では絞らず、キャラプロンプトの有無だけで対象を決める。
+    DIALOGUE = re.compile(
+        r'^\s*→[^\n]*(?:セリフ|心の声)|'
+        r'^\s*→.*?(?:'
+        r'吹き出し[^「\n]{0,40}「)', re.M)
+
+    silent_char = []
+    for nar, seg in segs:
+        if 'キャラプロンプト' in seg and not DIALOGUE.search(seg):
+            silent_char.append(asset_no(seg))
+    if silent_char:
+        errors.append(
+            f'キャラプロンプトがあるのにセリフ行なし {len(silent_char)}件: {", ".join(dict.fromkeys(silent_char))}'
+            '\n    → 直し方: 映っている人物かクマに短い標準語のセリフを足す（黙る場面は「・・・」、クマは鳴き声）')
+
+    # 42) 編集者指示のテロップは10字以内が基本。14字を超えた表示単位だけ警告する。
+    #     複数段・左右枠・数値/固有名詞の列挙は、区切りごとに別の表示単位として数える。
+    TELOP_SEPARATOR = re.compile(r'\s*(?:→|⇒|⇄|／|/|＝|=|・|─{2,}|—{2,})\s*')
+
+    def displayed_telop_quotes(line):
+        """編集者指示の「…」から、直後にテロップ指定がある引用だけを返す。"""
+        matches = list(re.finditer(r'「([^」]+)」', line))
+        displayed = []
+        for i, mo in enumerate(matches):
+            previous_quote = matches[i - 1].end() if i else 0
+            head = line[previous_quote:mo.start()]
+            next_quote = matches[i + 1].start() if i + 1 < len(matches) else len(line)
+            tail = line[mo.end():next_quote]
+            head_clause = re.split(r'[。！？]', head)[-1]
+            tail_clause = re.split(r'[。！？]', tail, maxsplit=1)[0]
+            if (re.search(r'(?:テロップ|表示)', tail_clause) or re.search(r'テロップ', head_clause)) \
+               and not re.search(r'テロップ(?:は|を)?出さない|テロップなし', tail_clause):
+                displayed.append(mo.group(1))
+        return displayed
+
+    long_telop = []
+    for nar, seg in segs:
+        found = []
+        for line in seg.splitlines():
+            if not line.startswith('→ 編集者指示:') or 'テロップ' not in line:
+                continue
+            for quoted in displayed_telop_quotes(line):
+                for unit in filter(None, TELOP_SEPARATOR.split(quoted)):
+                    length = len(re.sub(r'\s', '', unit))
+                    if length > 14:
+                        found.append(f'「{unit}」({length}字)')
+        if found:
+            long_telop.append(f'{asset_no(seg)} {", ".join(found)}')
+    if long_telop:
+        warns.append(
+            f'編集者指示の14字超テロップ {len(long_telop)}件: {" / ".join(long_telop)}'
+            '\n    → 直し方: 要点を10字以内に縮め、強調語1つを赤字にする')
+
+    # 43) 読点で意味の続く1文を2ナレーションへ割ると、2行目だけの素材が増える。
+    split_sentence = []
+    for i, (nar, seg) in enumerate(segs[:-1]):
+        if nar.rstrip().endswith('、') and seg_mark_indexes[i + 1] == seg_mark_indexes[i] + 1:
+            split_sentence.append(f'{asset_no(seg)}→{asset_no(segs[i + 1][1])}')
+    if split_sentence:
+        warns.append(
+            f'読点で分割された連続ナレーション {len(split_sentence)}件: {", ".join(split_sentence)}'
+            '\n    → 直し方: 1行にまとめ、2行目の素材を消す')
+
+    # 44) 本人は一律の「テロップなし」を上書きして要点テロップを足している。
+    #     「『数百キロ』のテロップは出さない」のように特定の語だけを抑える指示は対象外。
+    BLANKET_NO_TELOP = re.compile(
+        r'(?:^|[。:：]\s*)テロップ(?:は|を)?\s*(?:一切\s*|何も\s*)?(?:なし|出さない)')
+    no_telop = []
+    for nar, seg in segs:
+        if any(BLANKET_NO_TELOP.search(line) for line in seg.splitlines()):
+            no_telop.append(asset_no(seg))
+    if no_telop:
+        warns.append(
+            f'テロップ抑制指示 {len(no_telop)}件: {", ".join(dict.fromkeys(no_telop))}'
+            '\n    → 直し方: 要点のテロップを入れる（本人は毎回足している）')
+
+    # 45) ナレーションは単数なのに、キャラプロンプトかシーンが複数を描かせていないか。
+    PROMPT_MULTI = re.compile(
+        r'\b(?:two|three|four|several|multiple|bears|cubs|people|men|women|hunters|villagers)\b|'
+        r'\b(?:group|pair) of\b|\ba row of\b|\bside by side\b|\beach other\b|\bboth\b|'
+        r'\banother (?:bear|person|man|woman)\b|'
+        r'2頭|3頭|二頭|三頭|複数|並べ|並ぶ|たち|ら[がはを]|親子|左右', re.I)
+    NARRATION_MULTI = re.compile(
+        r'2頭|3頭|二頭|三頭|複数|たち|ら[がはを]|親子|人|家族|仲間|全員|みんな|夫婦|兄弟')
+    singular_narration_multi_prompt = []
+    for nar, seg in segs:
+        char_blocks = [b for lab, b in labeled_blocks(seg) if 'キャラプロンプト' in lab]
+        if not char_blocks or NARRATION_MULTI.search(nar or ''):
+            continue
+        scene_lines = [line for line in seg.splitlines() if line.startswith('シーン:')]
+        scene_has_multi = any(PROMPT_MULTI.search(line) for line in scene_lines)
+        multi_blocks = [b for b in char_blocks if PROMPT_MULTI.search(b)]
+        # 単一の再利用キャラ説明内の "both arms" 等は、複数の登場物指定ではない。
+        only_single_reused_char = multi_blocks and all(
+            len(re.findall(r'\(CHAR-\d+\s+再利用\)', b)) == 1 for b in multi_blocks)
+        if scene_has_multi or (multi_blocks and not only_single_reused_char):
+            singular_narration_multi_prompt.append(asset_no(seg))
+    if singular_narration_multi_prompt:
+        warns.append(
+            f'ナレーションは単数なのに複数を描かせている {len(singular_narration_multi_prompt)}件: '
+            f'{", ".join(dict.fromkeys(singular_narration_multi_prompt))}'
+            '\n    → 直し方: ナレーションで語る1体（1人）だけを描く。ほかの登場物はプロンプトとシーンから外し、'
+            '"No other people or animals." を足す（本人裁定 151・199）')
+
+    # 46) シーン行で向き・視線を求めているのに、英語プロンプトに指定がない。
+    SCENE_DIRECTION = re.compile(r'見る|見つめ|向く|向け|振り返|指さ|指差|視線|の方へ|のほうへ|にらむ|睨')
+    PROMPT_DIRECTION = re.compile(
+        r'facing|faces|looking|looks|toward|towards|turns?|turning|'
+        r'to the (?:left|right)|profile|three-quarter|glanc', re.I)
+    no_direction = []
+    for nar, seg in segs:
+        scene_lines = [line for line in seg.splitlines() if line.startswith('シーン:')]
+        blocks = [b for _, b in labeled_blocks(seg)]
+        if any(SCENE_DIRECTION.search(line) for line in scene_lines) \
+                and not any(PROMPT_DIRECTION.search(b) for b in blocks):
+            no_direction.append(asset_no(seg))
+    if no_direction:
+        warns.append(
+            f'向きの指定なし {len(no_direction)}件: {", ".join(dict.fromkeys(no_direction))}'
+            '\n    → 直し方: "facing to the right, looking toward ..." のように向きと視線の先を英語で書く')
+
+    # 47) 時間帯が明示されたカットの環境系プロンプトに、英語の時間指定があるか。
+    JP_TIME = re.compile(r'深夜|夜|夕方|夕暮れ|日没|明け方|早朝|朝|昼|日中|未明')
+    EN_TIME = re.compile(
+        r'night|midnight|evening|dusk|sunset|twilight|dawn|sunrise|'
+        r'early morning|morning|midday|noon|daytime|afternoon', re.I)
+    no_time = []
+    for nar, seg in segs:
+        scene_lines = [line for line in seg.splitlines() if line.startswith('シーン:')]
+        env_blocks = [b for lab, b in labeled_blocks(seg)
+                      if any(kind in lab for kind in ('背景プロンプト', '静止画プロンプト', 'Flow動画プロンプト'))]
+        if (JP_TIME.search(nar or '') or any(JP_TIME.search(line) for line in scene_lines)) \
+                and env_blocks and not any(EN_TIME.search(b) for b in env_blocks):
+            no_time.append(asset_no(seg))
+    if no_time:
+        warns.append(
+            f'時間帯の指定なし {len(no_time)}件: {", ".join(dict.fromkeys(no_time))}'
+            '\n    → 直し方: 時間帯を英語で名指しする（夜なら "at night, dark sky" と明度の下限も）')
+
+    # 48) 2000年より前の事件で、時代に左右される要素を描く環境系プロンプトに時代指定があるか。
+    heading_text = '\n'.join(line for line in text.splitlines() if line.startswith('# '))
+    years = [int(year) for year in re.findall(r'(?<!\d)(\d{4})(?!\d)', text[:500] + '\n' + heading_text)]
+    historical_work = any(year < 2000 for year in years)
+    PERIOD_OBJECT = re.compile(
+        r'\b(person|people|man|woman|room|office|house|home|building|street|car|truck|'
+        r'phone|telephone|desk|shop|store|hospital|police)\b', re.I)
+    PERIOD_WORD = re.compile(r'19[0-9]0s|Showa|era|period|vintage|retro|old-fashioned|1[0-9]{3}', re.I)
+    no_period = []
+    if historical_work:
+        for nar, seg in segs:
+            for lab, b in labeled_blocks(seg):
+                if any(kind in lab for kind in ('背景プロンプ', '静止画プロンプ')) \
+                        and PERIOD_OBJECT.search(b) and not PERIOD_WORD.search(b):
+                    no_period.append(asset_no(seg))
+                    break
+    if no_period:
+        warns.append(
+            f'時代の指定なし {len(no_period)}件: {", ".join(dict.fromkeys(no_period))}'
+            '\n    → 直し方: "late 1980s Japan, Showa-era ..." のように時代を書き、"no smartphones, no modern devices" を足す')
+
+    # 49) 位置指定付きのテロップを載せるカットに、その余白指定があるか。
+    TELOP_POSITION = re.compile(r'上部|下部|上に|下に|左側|右側|左に|右に|上段|下段|余白')
+    COPY_SPACE = re.compile(
+        r'empty space|negative space|copy space|room for text|clear area|open sky|'
+        r'uncluttered|space for (?:a )?caption', re.I)
+    no_telop_space = []
+    for nar, seg in segs:
+        editor_lines = [line for line in seg.splitlines() if '編集者指示' in line]
+        blocks = [b for _, b in labeled_blocks(seg)]
+        if any('テロップ' in line and TELOP_POSITION.search(line) for line in editor_lines) \
+                and not any(COPY_SPACE.search(b) for b in blocks):
+            no_telop_space.append(asset_no(seg))
+    if no_telop_space:
+        warns.append(
+            f'テロップ余白の指定なし {len(no_telop_space)}件: {", ".join(dict.fromkeys(no_telop_space))}'
+            '\n    → 直し方: "leave empty space in the upper third for a caption" のように余白の位置を書く')
+
+    # 50) 数字・文字の入力を後工程に回した図解・グラフを検出する。
+    DIAGRAM = re.compile(r'グラフ|図解|円グラフ|棒グラフ|(?:^|[\s「『【（(・／/])表(?:$|[\s」』】）)、。・／/])')
+    EDIT_CONTENT = re.compile(r'数字|数値|件数|文字')
+    EDIT_LATER = re.compile(r'編集で|後で|編集者が')
+    deferred_diagram = []
+    for nar, seg in segs:
+        memo = next((line for line in seg.splitlines() if line.startswith('【制作メモ】')), '')
+        scene_lines = [line for line in seg.splitlines() if line.startswith('シーン:')]
+        editor_lines = [line for line in seg.splitlines() if '編集者指示' in line]
+        if (DIAGRAM.search(memo) or any(DIAGRAM.search(line) for line in scene_lines)) \
+                and any(EDIT_CONTENT.search(line) for line in editor_lines) \
+                and any(EDIT_LATER.search(line) for line in editor_lines):
+            deferred_diagram.append(asset_no(seg))
+    if deferred_diagram:
+        warns.append(
+            f'図解・グラフを編集任せにしている {len(deferred_diagram)}件: {", ".join(dict.fromkeys(deferred_diagram))}'
+            '\n    → 直し方: 数字と文字まで入れた1枚の画像で完成させる（本人裁定 203）')
+
+    info.append(f'プロンプトlint(14-50): {len(segs)}セグメント走査')
 
 def main(master_path, daihon_path):
     m = open(master_path, encoding='utf-8').read()
@@ -571,7 +784,7 @@ def main(master_path, daihon_path):
     if memo_all and len(numbered) != len(memo_all):
         warns.append(f'制作メモのASSET番号併記が不足 {len(memo_all)-len(numbered)}件（全メモに ASSET-NNN を付ける）')
 
-    # 14-20) 生成失敗パターン+ナレ行整合のlint
+    # 14-50) 生成失敗パターン+ナレ行整合のlint
     prompt_lint(m, errors, warns, info)
 
     # ---- 出力 ----

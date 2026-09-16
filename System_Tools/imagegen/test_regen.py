@@ -10,7 +10,7 @@ import extract_prompts
 import regen
 
 PROJECT = regen.REPO / "Scripts/1988年戸沢村ツキノワグマ食害事件"
-LOG = regen.REPO.parent / ".codex/handoff/delegations/logs/2026-09-13-split-chatgpt"
+LOG = regen.REPO.parent / ".codex/handoff/delegations/logs/2026-09-16-image-check-transparency"
 EXPECTED = [
     "CHAR-15", "CHAR-16", "CHAR-17", "ASSET-020_char", "ASSET-022_char",
     "ASSET-024_char", "ASSET-045_char", "ASSET-045_bg", "ASSET-047_char",
@@ -129,6 +129,33 @@ class RegenTest(unittest.TestCase):
         ImageDraw.Draw(im).rectangle((0,0,99,19), fill=(0,0,0,0))
         im.save(path)
         self.assertTrue(regen.inspect_image(path, "char")["pass"])
+
+    def test_verify_auto_fixes_white_background_and_records_it(self):
+        work = self.root / "work"
+        (work / "images").mkdir(parents=True)
+        path = work / "images/ASSET-020_char.png"
+        Image.new("RGB", (100, 100), "white").save(path)
+        queue = [item("ASSET-020_char", "char")]
+        fixed = regen.auto_fix_transparency(work, queue)
+        report = regen.verify(work, queue, fixed)
+        self.assertEqual(fixed, {"ASSET-020_char"})
+        self.assertTrue(report["all_pass"])
+        self.assertTrue(report["items"][0]["auto_transparent"])
+        self.assertTrue((work / "transparency_backup/ASSET-020_char.png").is_file())
+
+    def test_checkerboard_is_not_auto_fixed(self):
+        work = self.root / "work"
+        (work / "images").mkdir(parents=True)
+        path = work / "images/ASSET-020_char.png"
+        image = Image.new("RGB", (128, 128))
+        image.putdata([(255, 255, 255) if (x // 8 + y // 8) % 2 else (210, 210, 210)
+                       for y in range(128) for x in range(128)])
+        image.save(path)
+        before = path.read_bytes()
+        fixed = regen.auto_fix_transparency(work, [item("ASSET-020_char", "char")])
+        self.assertEqual(fixed, set())
+        self.assertEqual(path.read_bytes(), before)
+        self.assertFalse((work / "transparency_backup").exists())
 
     def test_missing_and_corrupt_images_are_in_sheet_and_report(self):
         (self.root / "images").mkdir()

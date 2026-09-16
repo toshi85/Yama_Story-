@@ -18,6 +18,13 @@ import re
 import sys
 from pathlib import Path
 
+CLOSING = '違反した箇所は、語を置き換えるのではなく、その文を丸ごと書き直してください（前後の文とのつながりも読み直す）。'
+
+# 出典: SCRIPT_CHECKLIST.md §STEP 1.5「執筆ルール」／Fact_Sheet_Template.md §「執筆ルール（これだけ）」
+GOOD = {
+    'unverified_numeric': '素材シートの該当行と照合し、出典のある数字だけで文を組み直す。素材シートに無い数字は、出典を確認して行を足すか、台本には書かない。',
+}
+
 # 数値ファクト検出パターン（半角・全角両対応）
 NUMERIC_PATTERNS = [
     (r'(\d+|[０-９]+)\s*時間', '時間'),
@@ -142,6 +149,7 @@ def main():
         for item in unverified[:15]:
             cats = '/'.join(item['categories'])
             print(f"   L{item['lineno']:>5} [{cats}] {item['line']}")
+            print("    → 直し方:", GOOD['unverified_numeric'])
         if len(unverified) > 15:
             print(f"   ...（残り{len(unverified) - 15}件は省略）")
         print()
@@ -156,6 +164,9 @@ def main():
     print("    <!-- src: YAMAP コースタイム 2026-05 -->")
     print("    <!-- src: 知床財団 調査報告書 2024 -->")
     print("    [src: デイリー新潮 §6]   ← インラインタグも可")
+
+    if total_unverified:
+        print(CLOSING)
 
     sys.exit(0 if total_unverified == 0 else 1)
 

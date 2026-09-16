@@ -55,6 +55,51 @@ PEAK1 = (15.0, 45.0)
 #       → Analytics/Why_Shumarinai_Hit.md §4-5
 PEAK2 = (35.0, 75.0)
 KINDS = {"フック", "動き", "証言", "感情", "説明", "データ", "実用"}
+CLOSING = '違反した章は、字数を足し引きするのではなく、章の並びと素材の割り当てから組み直してください。'
+
+# 出典: Plot_Sheet_Template.md §「検査」「表は7列」／SCRIPT_CHECKLIST.md §STEP 2
+GOOD = {
+    'total_chars': '素材シートの未使用素材を数え直し、章の並びと素材の割り当てを8,400〜11,300字の構成に組み直す。',
+    'ki_chars': '起をフック、最初の被害者の日常、その日常が崩れる予感に絞り、事件の具体は承へ割り当て直す。',
+    'ki_ratio': '起から事件の具体を承へ移し、起をフック、最初の被害者の日常、その日常が崩れる予感までに組み直す。',
+    'part_ratio': '各章の役割と素材を見直し、起承転結を1:8:1の配分に並べ直す。',
+    'hook_missing': 'イントロに使う素材を選び、先頭章を種別「フック」として割り当て直す。',
+    'intro_chars': '日付と地名、危険、無視、状況、異変、画になる結末、問い2つ、締めに使う素材を選び、イントロ章を組み直す。',
+    'explain_long': '説明章の素材を人の動き、証言、緊張のある章へ分け、1つの説明章に集めない。',
+    'explain_consecutive': '連続する説明章の間に、人の動き、証言、感情の素材を割り当てた章を挟む。例: 医学解説→防御姿勢→医学解説→高台の証言。',
+    'valley': '累計50〜55%の説明章を別の位置へ移し、その帯には人の動き、証言、緊張のある章を割り当てる。',
+    'practical_tail': '視聴者が持ち帰れる最大の実用情報の素材を、累計80%以降の章へ割り当て直す。',
+    # 出典: Structure_Rules.md §6-2「二山構造」／Plot_Sheet_Template.md §「書き方」
+    'peak_declaration': '前半と後半の緊張のピークになる章を選び、プロット表に章番号を宣言する。',
+    'peak_number': '二山構造のピークを担う章を選び、その章番号を宣言へ書く。',
+    'peak_missing': '表に実在する章へピーク素材を割り当て直し、その章番号を宣言する。',
+    'peak_position': '前半と後半の緊張のピークになる章を推奨帯へ並べ直し、素材もその章へ割り当て直す。',
+    # 出典: Plot_Sheet_Template.md §「書き方」「素材密度」／Fact_Sheet_Template.md §「執筆ルール」
+    'source_empty': '素材シートに実在する素材を章へ割り当てる。必要な事実が無ければ、出典を確認して素材シートに行を足す。',
+    'source_density': '素材シートの未使用素材を章へ追加するか、その素材だけで担える短い章へ組み直す。',
+    'old_format': '章、タイトル、PART、種別、設計字数、実測字数、素材#の7列へ直し、設計字数と実測字数を分ける。',
+    'drift': '本文を設計した章の役割に戻すか、設計変更の理由を記録して章の並びと素材の割り当てから更新する。検査を通すための行は足さない。',
+    # 出典: SCRIPT_CHECKLIST.md §STEP 1.5「CQとV字」／Structure_Rules.md §0.3
+    'bottom_declaration': '実際に物語がいちばん落ちる素材を承の章へ割り当て、その章番号をボトムとして宣言する。',
+    'bottom_none': '素材シートを見直し、実際にあった落差を省略していないか確認して、該当するなら承の章へ割り当てる。',
+    'bottom_number': '物語がいちばん落ちる章を選び、表にある章番号をボトムの宣言へ書く。',
+    'bottom_missing': '表に実在する承の章へ最低点の素材を割り当て直し、その章番号をボトムとして宣言する。',
+    'bottom_part': 'ボトムになる素材を承の章へ移し、そこから転のクライマックスへ反転する並びに組み直す。',
+    'peak_before_bottom': 'ボトムの後に後半ピークが来るよう、最低点とクライマックスの章順・素材割り当てを組み直す。',
+    # 出典: Structure_Rules.md §0.5／Plot_Sheet_Template.md §「主題占有率」
+    'fact_sheet_missing_subject': '同じフォルダに素材シートを置き、各素材へ〔外部〕印を付けてから章へ割り当て直す。',
+    'external_marks_missing': '全国統計、他事件、一般知識の素材へ〔外部〕印を付け、本件素材との章配分を確認する。',
+    'external_budget': '統計を削るだけで済ませず、本件の未使用素材を数え直し、外部素材だけの章を本件の章へ組み直す。',
+    # 出典: Fact_Sheet_Template.md §「〔記載〕印」
+    'fact_sheet_missing_description': '同じフォルダに素材シートを置き、〔記載〕素材と事件・現場の素材を章へ割り当て直す。',
+    'description_majority': '資料の記載を説明する素材だけで章を作らず、事件・現場の具体的な事実を過半へ割り当て直す。',
+    # 出典: Plot_Sheet_Template.md §「種別の語彙（この7つだけ使う）」
+    'unknown_kind': '章の役割を見直し、フック、動き、証言、感情、説明、データ、実用のいずれかへ分類し直す。',
+}
+
+
+def issue(items, key, message):
+    items.append((key, message))
 
 # --- 検査10 主題占有率（2026-09-02 追加）---------------------------------
 # 「他の事件で文字を水増しするのではなく、その事件を深掘りして分量を満たす」を機械で守らせる。
@@ -152,7 +197,7 @@ def main(path):
 
     # 1. 合計字数
     if not (TOTAL_LO <= total <= TOTAL_HI):
-        fails.append(f"合計 {total:,}字（基準 {TOTAL_LO:,}〜{TOTAL_HI:,}字＝26〜35分）")
+        issue(fails, 'total_chars', f"合計 {total:,}字（基準 {TOTAL_LO:,}〜{TOTAL_HI:,}字＝26〜35分）")
 
     # 2. 起承転結
     #    2026-09-02: 起は「機能」で切るので比率の下限では判定しない。
@@ -166,61 +211,61 @@ def main(path):
             print(f"  {'OK ' if ok else 'NG '}{part:<10} {c:6,}字 {pct:5.1f}%"
                   f"  基準 {KI_CHARS[0]:,}-{KI_CHARS[1]:,}字 かつ 上限{hi}%")
             if not (KI_CHARS[0] <= c <= KI_CHARS[1]):
-                fails.append(f"KI 字数 {c:,}字（基準 {KI_CHARS[0]:,}〜{KI_CHARS[1]:,}字）"
-                             "＝フック120-380＋セットアップ150-500")
+                issue(fails, 'ki_chars', f"KI 字数 {c:,}字（基準 {KI_CHARS[0]:,}〜{KI_CHARS[1]:,}字）"
+                      "＝フック120-380＋セットアップ150-500")
             if pct > hi:
-                fails.append(f"KI 比率 {pct:.1f}%（上限 {hi}%）")
+                issue(fails, 'ki_ratio', f"KI 比率 {pct:.1f}%（上限 {hi}%）")
             continue
         ok = lo <= pct <= hi
         print(f"  {'OK ' if ok else 'NG '}{part:<10} {c:6,}字 {pct:5.1f}%  許容 {lo}-{hi}%")
         if not ok:
-            fails.append(f"{part} 比率 {pct:.1f}%（許容 {lo}-{hi}%）")
+            issue(fails, 'part_ratio', f"{part} 比率 {pct:.1f}%（許容 {lo}-{hi}%）")
     print()
 
     # 3. イントロ章
     intro = next((r for r in rows if r["kind"] == "フック"), None)
     if intro is None:
-        fails.append("種別「フック」の章がありません（イントロ未設計）")
+        issue(fails, 'hook_missing', "種別「フック」の章がありません（イントロ未設計）")
     elif not (INTRO_LO <= intro["chars"] <= INTRO_HI):
-        fails.append(f"イントロ {intro['chars']}字（基準 {INTRO_LO}〜{INTRO_HI}字）")
+        issue(fails, 'intro_chars', f"イントロ {intro['chars']}字（基準 {INTRO_LO}〜{INTRO_HI}字）")
 
     # 4. 説明の連続・上限
     for i, r in enumerate(rows):
         if r["kind"] in EXPLAIN and r["chars"] > EXPLAIN_MAX:
-            warns.append(f"§{r['no']}「{r['title'][:20]}」が{r['chars']:,}字（説明は{EXPLAIN_MAX}字が上限）")
+            issue(warns, 'explain_long', f"§{r['no']}「{r['title'][:20]}」が{r['chars']:,}字（説明は{EXPLAIN_MAX}字が上限）")
         if i and rows[i - 1]["kind"] in EXPLAIN and r["kind"] in EXPLAIN:
-            fails.append(f"説明が連続: §{rows[i-1]['no']} → §{r['no']}（間に動き/証言/感情を挟む）")
+            issue(fails, 'explain_consecutive', f"説明が連続: §{rows[i-1]['no']} → §{r['no']}（間に動き/証言/感情を挟む）")
 
     # 5. 谷の帯
     for r, c in zip(rows, cum):
         if VALLEY[0] <= c <= VALLEY[1] and r["kind"] in EXPLAIN:
-            fails.append(f"谷の帯（累計{VALLEY[0]:.0f}〜{VALLEY[1]:.0f}%）に説明を配置: §{r['no']}「{r['title'][:20]}」")
+            issue(fails, 'valley', f"谷の帯（累計{VALLEY[0]:.0f}〜{VALLEY[1]:.0f}%）に説明を配置: §{r['no']}「{r['title'][:20]}」")
 
     # 6. 80%以降の実用情報
     if not any(r["kind"] == "実用" and c >= 80 for r, c in zip(rows, cum)):
-        fails.append("累計80%以降に種別「実用」の章がありません（持ち帰れる知識を後半に置く）")
+        issue(fails, 'practical_tail', "累計80%以降に種別「実用」の章がありません（持ち帰れる知識を後半に置く）")
 
     # 7. 二山構造
     pos = {r["no"]: c for r, c in zip(rows, cum)}
     for key, (lo, hi) in (("前半ピーク", PEAK1), ("後半ピーク", PEAK2)):
         v = meta.get(key)
         if not v:
-            fails.append(f"「- {key}: <章番号>」の宣言がありません（二山構造）")
+            issue(fails, 'peak_declaration', f"「- {key}: <章番号>」の宣言がありません（二山構造）")
             continue
         try:
             n = int(re.search(r"\d+", v.split("#")[0]).group())
         except ValueError:
-            fails.append(f"{key} の章番号が読めません: {v}")
+            issue(fails, 'peak_number', f"{key} の章番号が読めません: {v}")
             continue
         if n not in pos:
-            fails.append(f"{key} の§{n} が表にありません")
+            issue(fails, 'peak_missing', f"{key} の§{n} が表にありません")
         elif not (lo <= pos[n] <= hi):
-            warns.append(f"{key} §{n} が累計{pos[n]:.1f}%（推奨 {lo:.0f}〜{hi:.0f}%）")
+            issue(warns, 'peak_position', f"{key} §{n} が累計{pos[n]:.1f}%（推奨 {lo:.0f}〜{hi:.0f}%）")
 
     # 8. 素材の紐づけ
     nosrc = [r["no"] for r in rows if not re.search(r"\d", r["src"])]
     if nosrc:
-        fails.append(f"素材#が空の章: {', '.join('§'+str(n) for n in nosrc)}（素材シートに無い章は作れない）")
+        issue(fails, 'source_empty', f"素材#が空の章: {', '.join('§'+str(n) for n in nosrc)}（素材シートに無い章は作れない）")
 
     # 9. 素材密度（2026-09-01 追加）— 1素材あたりの字数
     # 戸沢村の実測: 平均96字/素材。創作で埋めていた5章が全て120字/素材を超えていた。
@@ -237,7 +282,7 @@ def main(path):
                 dense.append((r["no"], r["title"][:18], r["chars"], cnt, d))
     if dense:
         for no, ti, ch, cnt, d in dense:
-            fails.append(
+            issue(fails, 'source_density',
                 f"素材密度 §{no}「{ti}」= {d:.0f}字/素材（{ch}字 ÷ 素材{cnt}件・上限{DENSITY_HI}）"
                 f" → 素材を足すか章を短くする。この比率を超えた章は創作で埋まる"
             )
@@ -245,9 +290,9 @@ def main(path):
     # 11. 設計からの乖離（2026-09-02 追加）— 書きながら膨らませるのを止める
     planned = [r for r in rows if r.get("plan")]
     if not planned:
-        warns.append("プロット表に「設計字数」列がありません。"
-                     "6列の旧形式では、書きながら膨らませても検知できません"
-                     "（列: 章／タイトル／PART／種別／設計字数／実測字数／素材#）")
+        issue(warns, 'old_format', "プロット表に「設計字数」列がありません。"
+              "6列の旧形式では、書きながら膨らませても検知できません"
+              "（列: 章／タイトル／PART／種別／設計字数／実測字数／素材#）")
     else:
         drift = []
         for r in planned:
@@ -256,9 +301,9 @@ def main(path):
                 drift.append((r["no"], r["title"][:20], r["plan"], r["chars"], d))
         if drift:
             for no, ti, pl, ch, d in drift:
-                fails.append(f"設計からの乖離 §{no}「{ti}」= {pl}字 → {ch}字（{d:+.0f}%・上限±{DRIFT:.0f}%）"
-                             " → 本文を設計に戻すか、設計を意識して更新する。"
-                             "検査を通すために行を足さない")
+                issue(fails, 'drift', f"設計からの乖離 §{no}「{ti}」= {pl}字 → {ch}字（{d:+.0f}%・上限±{DRIFT:.0f}%）"
+                      " → 本文を設計に戻すか、設計を意識して更新する。"
+                      "検査を通すために行を足さない")
         print("[設計との差] 全%d章 / 上限±%.0f%% / 乖離 %d章" % (len(planned), DRIFT, len(drift)))
         print()
 
@@ -266,23 +311,23 @@ def main(path):
     bt = meta.get("ボトム")
     part_of = {r["no"]: r["part"] for r in rows}
     if not bt:
-        fails.append("「- ボトム: <章番号>」の宣言がありません"
-                     " → 物語がいちばん落ちる章。ここが深いほど、そこからの反転が大きく見える"
-                     "（ノンフィクションでは谷を作らず、実際にあった落差を省略しない）")
+        issue(fails, 'bottom_declaration', "「- ボトム: <章番号>」の宣言がありません"
+              " → 物語がいちばん落ちる章。ここが深いほど、そこからの反転が大きく見える"
+              "（ノンフィクションでは谷を作らず、実際にあった落差を省略しない）")
     elif "なし" in bt:
-        warns.append("ボトムが「なし」。落差のない構成は上がり幅が出ない。本当に無いか確認すること")
+        issue(warns, 'bottom_none', "ボトムが「なし」。落差のない構成は上がり幅が出ない。本当に無いか確認すること")
     else:
         try:
             bn = int(re.search(r"\d+", bt.split("#")[0]).group())
         except ValueError:
-            fails.append(f"ボトムの章番号が読めません: {bt}")
+            issue(fails, 'bottom_number', f"ボトムの章番号が読めません: {bt}")
             bn = None
         if bn is not None:
             if bn not in pos:
-                fails.append(f"ボトムの §{bn} が表にありません")
+                issue(fails, 'bottom_missing', f"ボトムの §{bn} が表にありません")
             elif part_of.get(bn) != "SHO":
-                fails.append(f"ボトム §{bn} が承（SHO）にありません（PART: {part_of.get(bn)}）"
-                             " → ボトムは承の中。そこから転（クライマックス）へ向けて反転させる")
+                issue(fails, 'bottom_part', f"ボトム §{bn} が承（SHO）にありません（PART: {part_of.get(bn)}）"
+                      " → ボトムは承の中。そこから転（クライマックス）へ向けて反転させる")
             else:
                 print(f"[V字] ボトム §{bn}「{next(r['title'] for r in rows if r['no']==bn)[:22]}」"
                       f" 累計{pos[bn]:.1f}%")
@@ -291,8 +336,8 @@ def main(path):
                     try:
                         pn = int(re.search(r"\d+", p2.split("#")[0]).group())
                         if pn <= bn:
-                            warns.append(f"後半ピーク §{pn} がボトム §{bn} より前にあります"
-                                         "（落ちてから上げる形になっていない）")
+                            issue(warns, 'peak_before_bottom', f"後半ピーク §{pn} がボトム §{bn} より前にあります"
+                                  "（落ちてから上げる形になっていない）")
                     except ValueError:
                         pass
                 print()
@@ -300,7 +345,7 @@ def main(path):
     # 10. 主題占有率（2026-09-02 追加）— 他事件・全国統計での水増しを止める
     fs = sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(path)), "Fact_Sheet_*.md")))
     if not fs:
-        warns.append("素材シート（Fact_Sheet_*.md）が同じフォルダに無いため、主題占有率を測れません")
+        issue(warns, 'fact_sheet_missing_subject', "素材シート（Fact_Sheet_*.md）が同じフォルダに無いため、主題占有率を測れません")
     else:
         body = _infermarks.strip_infer(Path(fs[0]).read_text(encoding="utf-8"))
         ext_ids, all_ids = set(), set()
@@ -312,7 +357,7 @@ def main(path):
             if "〔外部〕" in m.group(2):
                 ext_ids.add(m.group(1))
         if not ext_ids:
-            warns.append(
+            issue(warns, 'external_marks_missing',
                 f"素材シート {os.path.basename(fs[0])} に〔外部〕印が1件もありません。"
                 "全素材が本件由来なら正常ですが、印の付け忘れなら主題占有率の検査が空振りします")
         else:
@@ -332,14 +377,14 @@ def main(path):
             for no, ti, ch, e, n in ext_rows:
                 print(f"    §{no} {ti}  {ch:,}字  外部素材 {e}/{n}")
             if pct > EXT_BUDGET:
-                fails.append(
+                issue(fails, 'external_budget',
                     f"主題占有率 — 外部素材だけで組まれた章が {pct:.1f}%（上限 {EXT_BUDGET:.0f}%）。"
                     "他事件・全国統計で尺を伸ばさず、本件の未使用素材で埋めること")
             print()
 
     # 13. 記載素材の過半禁止。Check 10 と同じ素材シート・章の素材#を使う。
     if not fs:
-        warns.append("素材シートが無いため、記載素材の過半を測れません")
+        issue(warns, 'fact_sheet_missing_description', "素材シートが無いため、記載素材の過半を測れません")
     else:
         description_ids = set()
         # 見出しの無い旧表も読めるようにし、確度B/C・不採用表は数えない。
@@ -361,23 +406,25 @@ def main(path):
                       f"  〔記載〕素材#: {', '.join(marked)} / その他素材#: {', '.join(other) or 'なし'}")
             print(f"    {detail}")
             if 2 * len(marked) > len(ids):
-                fails.append(f"記載素材の過半禁止 — {detail}（1/2超）。事件・現場の事実で章を組むこと")
+                issue(fails, 'description_majority', f"記載素材の過半禁止 — {detail}（1/2超）。事件・現場の事実で章を組むこと")
         print()
 
     # 種別の語彙
     bad = {r["kind"] for r in rows} - KINDS
     if bad:
-        warns.append(f"未知の種別: {', '.join(sorted(bad))}（使えるのは {', '.join(sorted(KINDS))}）")
+        issue(warns, 'unknown_kind', f"未知の種別: {', '.join(sorted(bad))}（使えるのは {', '.join(sorted(KINDS))}）")
 
     for label, items in (("FAIL", fails), ("WARN", warns)):
         if items:
             print(f"--- {label} {len(items)}件 ---")
-            for x in items:
+            for key, x in items:
                 print(f"  {'x' if label=='FAIL' else '!'} {x}")
+                print("    → 直し方:", GOOD[key])
             print()
 
     if fails:
         print("[FAIL] プロットを直してから執筆に入ること。9,000字書いてから直すより安い")
+        print(CLOSING)
         return 1
     print("[PASS] プロットは基準を満たしています。執筆に進んでよい"
           + (f"（WARN {len(warns)}件は確認）" if warns else ""))

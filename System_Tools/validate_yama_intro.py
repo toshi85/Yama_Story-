@@ -17,6 +17,38 @@ import sys
 
 CPS = 323 / 60.0  # 実測 323字/分
 
+CLOSING = '違反した箇所は、語を置き換えるのではなく、その文を丸ごと書き直してください（前後の文とのつながりも読み直す）。'
+
+# 出典: SCRIPT_CHECKLIST.md §STEP 1.5「起（KI）はどこで切るか」「転・結はどこで切るか」
+GOOD = {
+    'total_chars': '素材シートの事実を増減せず、起・承・転結の役割を見直して台本全体を8,400〜11,300字に組み直す。',
+    'ki_chars': '起をフック、最初の被害者の日常、その日常が崩れる予感の一文で組み直す。',
+    'ki_ratio': '起をフック、最初の被害者の日常、その日常が崩れる予感までに絞り、事件の具体は承へ移す。',
+    'part_ratio': '起承転結を1:8:1の役割と配分に戻し、該当パートの文と段落を組み直す。',
+    'ki_empty': '起にフック、最初の被害者の日常、その日常が崩れる予感のナレーションを置く。',
+    'ki_turn': '起の最後を日常が崩れる予感で閉じ、次の承から事件の具体に入る。例: ふつうの一日のはずでした。→ところが、この日は戻りません。',
+    'ten_ketsu_split': '転を最大の障害とテーマ、結をテーマの定着と余韻として、別の章に組み直す。',
+    'ketsu_chars': '結をテーマの定着と余韻に絞り、ワンシーンかツーシーンで組み直す。',
+    'ketsu_vs_ten': '最大の障害とテーマを転へ移し、結はその余韻だけに絞って転より短く組み直す。',
+    # 出典: Winning_Formula_Shumarinai.md §2「イントロの型」
+    'intro_chars': '日付と地名、危険、無視、状況、異変、画になる結末、問い2つ、締めの順でイントロ全体を組み直す。',
+    'intro_secs': '日付と地名、危険、無視、状況、異変、画になる結末、問い2つ、締めの順を保ち、イントロ全体を20〜72秒に組み直す。',
+    'hook_image': '結果の要約ではなく一枚の画になる結末を、35秒以内に届く位置へ置いてイントロを組み直す。例: 男性は帰らぬ人となりました→代わりにいたのは、男性の衣服をくわえた、一頭のヒグマでした。',
+    'hook_marker': '結末が一枚の画になる文の直後に <!-- HOOK-IMAGE --> を置く。',
+    'questions': 'イントロの問いを2つに絞り、最後まで見届けたくなる「なぜ」の形で組み直す。',
+    # 出典: SCRIPT_CHECKLIST.md §STEP 1.5「CQとV字」
+    'cq_reason': '本文中で答えていて転で言い直さない理由を8字以上で具体化し、<!-- CQ_OK: 理由 --> に書く。',
+    'cq_unresolved': 'CQの答えをクライマックスである転に置く。本文中で答えていて転で言い直さない場合は、8字以上の理由を CQ_OK に書く。',
+    # 出典: Winning_Formula_Shumarinai.md §2「型の要件」／§3「谷の型」／§4「後半の型」
+    'closing': 'イントロの最後を「地形図とともに解説します。」で閉じる。',
+    'long_sections': '長い説明の間に、人の動き、証言、緊張のあるセクションを挟んで段落を組み直す。例: 医学解説→防御姿勢→医学解説→高台の証言。',
+    'tail_missing': '視聴者が持ち帰れる最大の実用情報を、累計80%以降のセクションへ配置し直す。',
+}
+
+
+def issue(items, key, message):
+    items.append((key, message))
+
 # 朱鞠内湖の実測値
 REF = {
     # 2026-09-01 較正: 旧値 (200,270)/(37,50) は出荷済み7本のうち4本を落としていた。
@@ -97,7 +129,7 @@ def main(path):
     print(f"\n総字数 {total:,}字 / 想定尺 {total/CPS/60:.1f}分")
     lo, hi = REF["total_chars"]
     if not lo <= total <= hi:
-        fails.append(f"尺が範囲外: {total:,}字（基準 {lo:,}〜{hi:,}字＝26〜35分）")
+        issue(fails, 'total_chars', f"尺が範囲外: {total:,}字（基準 {lo:,}〜{hi:,}字＝26〜35分）")
 
     print("\n[構成比]")
     for name, c in pdata:
@@ -109,17 +141,17 @@ def main(path):
             ok_c = klo <= c <= khi
             ok_r = pct < REF["ki_ratio_max"]
             if not ok_c:
-                fails.append(f"KI 字数 {c:,}字（基準 {klo:,}〜{khi:,}字）"
-                             "＝フック120-380＋セットアップ150-500。出荷済み実測は328-929字")
+                issue(fails, 'ki_chars', f"KI 字数 {c:,}字（基準 {klo:,}〜{khi:,}字）"
+                      "＝フック120-380＋セットアップ150-500。出荷済み実測は328-929字")
             if not ok_r:
-                fails.append(f"KI 比率 {pct:.1f}%（10%未満に抑える。短いほど離脱が減る）")
+                issue(fails, 'ki_ratio', f"KI 比率 {pct:.1f}%（10%未満に抑える。短いほど離脱が減る）")
             print(f"  {'OK ' if ok_c and ok_r else 'NG '}{name:10} {c:6,}字 {pct:5.1f}%"
                   f"  基準 {klo:,}-{khi:,}字 かつ 上限{REF['ki_ratio_max']}%")
             continue
         rlo, rhi = REF["ratio"].get(name, (0, 100))
         ok = "OK " if rlo <= pct <= rhi else "NG "
         if ok == "NG ":
-            fails.append(f"{name} 比率 {pct:.1f}%（許容 {rlo}-{rhi}%）")
+            issue(fails, 'part_ratio', f"{name} 比率 {pct:.1f}%（許容 {rlo}-{rhi}%）")
         print(f"  {ok}{name:10} {c:6,}字 {pct:5.1f}%  許容 {rlo}-{rhi}%")
 
     # ---- 起の切り方（2026-09-02 確定・設計ルール）----
@@ -132,12 +164,12 @@ def main(path):
     if ki_block is not None:
         kl = narr(ki_block)
         if not kl:
-            fails.append("起にナレーション行がありません")
+            issue(fails, 'ki_empty', "起にナレーション行がありません")
         elif KI_TURN.search(kl[-1]):
             print("\n[起の切り方] OK  最終行が『日常が崩れる予感』で終わっています")
             print(f"    → 「{kl[-1][:48]}」")
         else:
-            fails.append(
+            issue(fails, 'ki_turn',
                 f"起の最後が「日常が崩れる予感」で終わっていません: 「{kl[-1][:44]}」"
                 " → 起＝フック＋最初の被害者の日常＋『ところが、この日は戻りません。』のような一行。"
                 "承はそこから事件の具体に入る")
@@ -159,7 +191,7 @@ def main(path):
         tk_secs = re.split(r"\n## (?:§|第)?\d+[\.．][^\n]*\n", "\n" + tk)
         tk_lens = [chars(narr(x)) for x in tk_secs if chars(narr(x)) > 0]
         if len(tk_lens) < 2:
-            fails.append(
+            issue(fails, 'ten_ketsu_split',
                 "転結が1章しかありません（転と結が分かれていない）"
                 " → 転＝クライマックス（最大の障害・テーマを伝える）／結＝テーマの定着と余韻。"
                 "結は短く、ワンシーンかツーシーン")
@@ -169,11 +201,11 @@ def main(path):
             print(f"\n[転・結] 転 {ten:,}字 / 結 {ketsu:,}字  "
                   f"{'OK' if ok else 'NG'}（結は{KETSU_MAX}字以内、かつ転より短い）")
             if ketsu > KETSU_MAX:
-                fails.append(f"結が {ketsu:,}字（上限 {KETSU_MAX}字）"
-                             " → 結はテーマの定着と余韻。ワンシーンかツーシーンで短く")
+                issue(fails, 'ketsu_chars', f"結が {ketsu:,}字（上限 {KETSU_MAX}字）"
+                      " → 結はテーマの定着と余韻。ワンシーンかツーシーンで短く")
             if ketsu >= ten:
-                fails.append(f"結（{ketsu:,}字）が転（{ten:,}字）以上あります"
-                             " → 山場は転。結はその余韻で、必ず短くする")
+                issue(fails, 'ketsu_vs_ten', f"結（{ketsu:,}字）が転（{ten:,}字）以上あります"
+                      " → 山場は転。結はその余韻で、必ず短くする")
 
     # ---- セクション分解 ----
     # 2026-08-30: 見出しの「§」「第」を許容。朱鞠内湖（実測で当たった1本）は "## §1. フック" 形式で、
@@ -195,10 +227,10 @@ def main(path):
     print(f"  {ic}字 / {isec:.0f}秒   （朱鞠内湖 240字 / 44秒）")
     lo, hi = REF["intro_chars"]
     if not lo <= ic <= hi:
-        fails.append(f"イントロ長 {ic}字（基準 {lo}〜{hi}字）")
+        issue(fails, 'intro_chars', f"イントロ長 {ic}字（基準 {lo}〜{hi}字）")
     lo, hi = REF["intro_secs"]
     if not lo <= isec <= hi:
-        fails.append(f"イントロ秒 {isec:.0f}秒（基準 {lo}〜{hi}秒）")
+        issue(fails, 'intro_secs', f"イントロ秒 {isec:.0f}秒（基準 {lo}〜{hi}秒）")
 
     # 結末（画）到達
     if "<!-- HOOK-IMAGE -->" in body:
@@ -209,9 +241,9 @@ def main(path):
         print(f"  結末（画）到達: {hc}字 / {hs:.0f}秒 {'OK' if ok else 'NG'}"
               f"   （朱鞠内湖 27秒・上限 {REF['hook_image_secs']}秒）")
         if not ok:
-            fails.append(f"結末（画）到達 {hs:.0f}秒（上限 {REF['hook_image_secs']}秒）")
+            issue(fails, 'hook_image', f"結末（画）到達 {hs:.0f}秒（上限 {REF['hook_image_secs']}秒）")
     else:
-        warns.append("<!-- HOOK-IMAGE --> マーカーが無いため結末到達時刻を測定できません")
+        issue(warns, 'hook_marker', "<!-- HOOK-IMAGE --> マーカーが無いため結末到達時刻を測定できません")
 
     # 問いの数
     # 「〜のか。」「〜のか？」の両方を問いとして数える（2026-08-17 追加）
@@ -219,7 +251,7 @@ def main(path):
     ok = len(q) == REF["questions"]
     print(f"  問いの数: {len(q)}  {'OK' if ok else 'NG'}   （基準 {REF['questions']}つ固定）")
     if not ok:
-        fails.append(f"問いの数 {len(q)}（基準 {REF['questions']}つ）")
+        issue(fails, 'questions', f"問いの数 {len(q)}（基準 {REF['questions']}つ）")
 
     # ---- CQ（セントラルクエスチョン）の回収位置（2026-09-02 新設）----
     # 出典: たちばなやすひと『「物語」の見つけ方』（CQ＝物語を最後まで見届けさせる問い。
@@ -231,7 +263,7 @@ def main(path):
     cq_ok = re.search(r"<!--\s*CQ_OK:\s*(.+?)\s*-->", t)
     cq_reason = cq_ok.group(1) if cq_ok else None
     if cq_ok and len(cq_reason) < 8:
-        fails.append(f"CQ_OK の理由が短すぎます（8字以上）: 「{cq_reason}」")
+        issue(fails, 'cq_reason', f"CQ_OK の理由が短すぎます（8字以上）: 「{cq_reason}」")
         cq_reason = None
         cq_ok = None
 
@@ -254,7 +286,7 @@ def main(path):
             elif cq_ok:
                 print(f"  CQ{n} 回収: 宣言により見送り  ← {cq_reason}")
             else:
-                fails.append(
+                issue(fails, 'cq_unresolved',
                     f"CQ{n}「{qq[:32]}」が転で回収されていません（探した語: {'/'.join(terms[:6])}）"
                     " → CQの答えはクライマックス＝転で出す。承の途中で言い切って終わらせない"
                     " ／ 本文の中で答えているので転では言い直さない、と決めたなら"
@@ -267,7 +299,7 @@ def main(path):
     ok = lines and lines[-1].strip() == REF["closing"]
     print(f"  締めの一文: {'OK' if ok else 'NG'}   「{REF['closing']}」")
     if not ok:
-        fails.append(f"締めが「{REF['closing']}」でない（実際:「{lines[-1] if lines else ''}」）")
+        issue(fails, 'closing', f"締めが「{REF['closing']}」でない（実際:「{lines[-1] if lines else ''}」）")
 
     # ---- 説明の連続 / 80%以降 ----
     print("\n[セクション別]")
@@ -282,7 +314,7 @@ def main(path):
     lim = REF["explain_chars"]
     for i in range(len(rows) - 1):
         if rows[i][1] > lim and rows[i + 1][1] > lim:
-            warns.append(
+            issue(warns, 'long_sections',
                 f"長いセクションが連続（谷のリスク）: 「{rows[i][0]}」{rows[i][1]:,}字 → "
                 f"「{rows[i+1][0]}」{rows[i+1][1]:,}字。間に人の動き／証言を挟むこと")
 
@@ -291,19 +323,23 @@ def main(path):
     for r in tail:
         print(f"  - {r[0]}  (累計{r[2]:.1f}%)")
     if not tail:
-        warns.append("累計80%以降にセクションがありません")
+        issue(warns, 'tail_missing', "累計80%以降にセクションがありません")
 
     # ---- 判定 ----
     print("\n" + "=" * 62)
     if fails:
         print(f"[FAIL] {len(fails)}件")
-        for f in fails:
+        for key, f in fails:
             print(f"  ❌ {f}")
+            print("    → 直し方:", GOOD[key])
     else:
         print("[PASS] 朱鞠内湖フォーミュラの必須項目をすべて満たしています")
-    for w in warns:
+    for key, w in warns:
         print(f"  ⚠️  {w}")
+        print("    → 直し方:", GOOD[key])
     print("=" * 62)
+    if fails:
+        print(CLOSING)
     return 1 if fails else 0
 
 
