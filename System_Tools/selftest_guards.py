@@ -858,6 +858,22 @@ def main():
     ok.append(check_pass("㊲d 確度Bの印は数えない", "validate_yama_plot.py", p,
                          "x 記載素材の過半禁止", expected_code=0))
 
+    # ㊳ 単独の「方」は読み違い防止のため止め、熟語・ひらがなは通す（Gate 10）。
+    p = os.path.join(tmp, "hou_kata_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        "ナレーター: 遺族の方の証言が残っています。\n"
+        "ナレーター: 音の方が有効です。\n")
+    ok.append(check("㊳ 単独の方を止める", "validate_yama_narrative.py", p,
+                    "[単独の方]", expected_code=1))
+
+    p = os.path.join(tmp, "hou_kata_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        "ナレーター: 一方、討伐隊は行方を追いました。\n"
+        "ナレーター: この方法と方針では、考え方が違います。\n"
+        "ナレーター: 遺族のかたは、音のほうが有効だと話しています。\n")
+    ok.append(check_pass("㊳b 熟語とひらがなの方は通す", "validate_yama_narrative.py", p,
+                         "[単独の方]", expected_code=0))
+
     # 再検証用の入力と生出力は tests/ 配下に保存する（削除しない）。
 
     # --- メタチェック: 3点セットが揃っているか ---------------------------

@@ -23,6 +23,7 @@ GOOD = {
     "missing_quote_marks": "資料の原文なら語尾まで「」で囲み、要約なら「〜と話しています」の文にして引用を予告しない。",
     "enumeration_count": "個数を先に宣言せず、「〜としては、」で受け、「また、」「そして」で各項目をつなぐ段落に組み直す。例: 「根拠は、三つ。」を「根拠としては、」にして列挙へ続ける。",
     "attribution_order": "話者とセリフを続けて提示し、最後の行を「……」と話しています。で閉じる引用段落に組み直す。",
+    "hou_kata": "人を指すなら「かた」、比較・方向なら「ほう」とひらがなで書く。熟語はそのまま。",
 }
 
 
@@ -34,6 +35,31 @@ def with_good(message, key):
 # Gate 9: 資料記述ナレーション禁止。意味が確定しない候補は WARN に留める。
 DOCUMENT_WORD = r'(?:地形図|地図|資料|記録|一覧|報告書|広報|会議録)'
 DESCRIPTION_PREDICATE = r'(?:描かれています|描かれた|描く|記されています|記された|載っています|示す線|線です|書かれています)'
+
+# Gate 10: 単独の「方」を検出する前に除外する熟語・複合語。
+# 取りこぼしはここに足す。
+HOU_KATA_MASK_WORDS = (
+    "一方的", "一方", "両方", "行方", "夕方", "朝方", "明け方", "暮れ方",
+    "大方", "地方", "遠方", "味方", "双方", "彼方", "当方", "先方", "後方",
+    "前方", "上方", "下方", "四方", "八方", "親方", "目方", "相手方", "貸方",
+    "借方", "敵方", "奥方", "見方", "片方", "仕方", "快方", "平方",
+    "方向", "方法", "方角", "方針", "方面", "方策", "方式", "方位", "方言",
+    "方形", "方々", "方舟", "方程式",
+    "生き方", "考え方", "話し方", "使い方", "書き方", "読み方", "作り方",
+    "登り方", "進み方", "やり方", "過ごし方", "戦い方", "伝え方", "捉え方",
+    "感じ方", "接し方", "受け止め方", "言い方", "呼び方", "教え方", "育て方",
+    "探し方", "防ぎ方", "逃げ方", "助け方", "下り方", "歩き方", "死に方",
+    "生かし方", "取り方", "確かめ方", "襲われ方", "襲い方", "入り方",
+    "つくり方", "みがき方", "見え方", "区切り方", "仕留め方", "奪われ方",
+    "かぶせ方", "撮り方", "開き方", "直し方", "向き合い方", "別れ方",
+)
+HOU_KATA_MASK_PATTERN = re.compile(
+    "|".join(re.escape(word) for word in sorted(HOU_KATA_MASK_WORDS, key=len, reverse=True))
+)
+
+
+def mask_hou_kata_compounds(content):
+    return HOU_KATA_MASK_PATTERN.sub(lambda m: "〇" * len(m.group(0)), content)
 
 
 def document_description_level(content):
@@ -219,6 +245,18 @@ def validate_narrative_tone(file_path):
                 f"   > \"{content}\"\n"
                 f"   → 資料の描写ではなく、人物・現場・事件の具体的な事実を述べる",
                 "document_description",
+            ))
+
+        # Gate 10: 単独の「方」は読み上げ時に「かた／ほう」を取り違えられるため禁止。
+        masked_hou_kata = mask_hou_kata_compounds(content)
+        for match in re.finditer("方", masked_hou_kata):
+            start = max(0, match.start() - 15)
+            end = min(len(content), match.end() + 15)
+            errors.append(with_good(
+                f"[単独の方] Line {i+1}: 「方」は読み違えられます（かた/ほう）\n"
+                f"   > 「{content[start:end]}」\n"
+                f"   → 人を指すなら「かた」、比較・方向なら「ほう」とひらがなで書く。熟語はそのまま",
+                "hou_kata",
             ))
 
         # Gate 4: Literary/jargon (warnings)
