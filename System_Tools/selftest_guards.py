@@ -1094,6 +1094,40 @@ def main():
     ok.append(check_pass("㊿b 初出を説明した略称はWARNなし", "validate_yama_narrative.py", p,
                          "[略称の初出説明 YCP-060]", expected_code=0))
 
+    # 51 一連の動作を「その〜を使い」で短文へ分割しない（YCP-062）。
+    p = os.path.join(tmp, "split_action_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 6. 毛から個体を特定する\n"
+        "ナレーター: 道総研は、現場に残っていたクマの毛を採取。\n"
+        "ナレーター: その毛を使い、遺伝子を調べます。\n")
+    ok.append(check("51a 同じ動作を分けた短文をWARN", "validate_yama_narrative.py", p,
+                    "[同じ動作の文分割 YCP-062]", expected_code=0))
+
+    p = os.path.join(tmp, "split_action_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 6. 毛から個体を特定する\n"
+        "ナレーター: 道総研は、現場に残っていたクマの毛を採取し、遺伝子を調べます。\n")
+    ok.append(check_pass("51b 1文にまとめた動作はWARNなし", "validate_yama_narrative.py", p,
+                         "[同じ動作の文分割 YCP-062]", expected_code=0))
+
+    # 52 同じ日付の同じ会議を章で分割して再掲しない（YCP-065）。
+    p = os.path.join(tmp, "duplicate_opening_date_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 8. 前足の幅は14センチ\n"
+        "ナレーター: 4月23日\nナレーター: 担当者が会議に集まります。\n"
+        "## 9. 町と猟友会の対応\nナレーター: 4月23日の対策会議\n"
+        "ナレーター: 目撃情報の通報を求めました。\n")
+    ok.append(check("52a 同じ日付の章冒頭再掲をWARN", "validate_yama_narrative.py", p,
+                    "[同日場面の章またぎ再掲 YCP-065]", expected_code=0))
+
+    p = os.path.join(tmp, "duplicate_opening_date_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 8. 前足の幅は14センチ\n"
+        "ナレーター: 4月23日（事件から7日後）\nナレーター: 担当者が会議に集まります。\n"
+        "ナレーター: 目撃情報の通報を求めました。\n")
+    ok.append(check_pass("52b 同じ会議を1章にまとめた版はWARNなし", "validate_yama_narrative.py", p,
+                         "[同日場面の章またぎ再掲 YCP-065]", expected_code=0))
+
     # ㊺ 定番資料のURL確認。本文が条件に当たるのにURLが無ければ執筆前に止める。
     def mkstandard(name, source_note):
         p = mkdescription(name, 2)

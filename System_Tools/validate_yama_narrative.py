@@ -10,7 +10,7 @@ if hasattr(sys.stdout, "reconfigure"):
 
 CLOSING = "違反した箇所は、語を置き換えるのではなく、その文を丸ごと書き直してください（前後の文とのつながりも読み直す）。"
 
-# 出典: Correction_Patterns.md YCP-002・003・004・013・016・020・039・040・041・045〜060、
+# 出典: Correction_Patterns.md YCP-002・003・004・013・016・020・039・040・041・045〜060・062・065、
 # Structure_Rules.md §0.3・§0.5、および本スクリプト Gate 5・8・9 の既存説明文。
 GOOD = {
     "show_dont_tell": "教訓や評価を先に言わず、人物の行動と起きた事実から視聴者が意味を受け取れる段落に組み直す。",
@@ -40,6 +40,8 @@ GOOD = {
     "source_voice": "出典はsrcコメントへ置き、資料を主語にせず、確認できた人物の行動や事件の事実を直接語る。",
     "preview_summary": "先の出来事の予告と直前の出来事の言い直しを削り、次に起きた具体的な行動へ進む。",
     "abbreviation_intro": "略称の初出行で、組織の種類や位置づけが分かる手がかり語を添える。",
+    "split_action": "同じ主体が続けて行う1つの流れは、対象を『その〜』と言い直さず、接続助詞で1文につなぐ。",
+    "duplicate_opening_date": "同じ日付の同じ会議・場面は章を分けず、情報を1つの時間の流れにまとめる。",
 }
 
 
@@ -588,6 +590,38 @@ def validate_narrative_tone(file_path):
                 f"   > 「{content}」",
                 "preview_summary",
             ))
+
+    # Gate 14: 一連の動作の短文分割と、同日会議の章またぎ再掲（WARNのみ）
+    split_action_pattern = re.compile(r"^その.{0,12}(?:を使い|で)[、,]")
+    for (previous_line_no, previous_content), (line_no, content) in zip(narrator_lines, narrator_lines[1:]):
+        if (line_no == previous_line_no + 1
+                and len(previous_content) <= 35
+                and split_action_pattern.search(content)):
+            warnings.append(with_good(
+                f"[同じ動作の文分割 YCP-062] L{previous_line_no}-{line_no}: 同じ主体の一連の動作は1文にまとめます\n"
+                f"   > 「{previous_content}」「{content}」",
+                "split_action",
+            ))
+
+    seen_opening_dates = {}
+    for chapter in chapters:
+        if not chapter["narrators"]:
+            continue
+        line_no, content = chapter["narrators"][0]
+        # 場所や本文を含む通常文ではなく、日付を見出しとして置いた短い行だけを対象にする。
+        date_match = re.fullmatch(r"(\d{1,2}月\d{1,2}日)(?:（[^）]+）|(?:の)?[^、。]{0,12})?", content)
+        if not date_match:
+            continue
+        date = date_match.group(1)
+        if date in seen_opening_dates:
+            previous_chapter, previous_line = seen_opening_dates[date]
+            warnings.append(with_good(
+                f"[同日場面の章またぎ再掲 YCP-065] L{line_no}: {date}が§{previous_chapter}と§{chapter['number']}の章冒頭に重複しています\n"
+                f"   > 先出L{previous_line}。同じ会議・場面なら1つの流れにまとめます",
+                "duplicate_opening_date",
+            ))
+        else:
+            seen_opening_dates[date] = (chapter["number"], line_no)
 
     for abbreviation, clue in load_abbreviations():
         first = next(((line_no, content) for line_no, content in narrator_lines
