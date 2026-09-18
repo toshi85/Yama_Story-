@@ -1,0 +1,10 @@
+{
+  "before_chars": 9037,
+  "after_chars": 5363,
+  "before_minutes": 27.978328173374614,
+  "after_minutes": 16.603715170278637,
+  "minimum_met": false,
+  "fixed_prefix_sha256": "8617a2dd00b0590047fff311002a51331a6e7894553b24253cde9619f9f551ce",
+  "fixed_prefix_identical": true,
+  "removed_or_rewritten_lines": 272
+}
