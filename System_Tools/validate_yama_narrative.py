@@ -10,7 +10,7 @@ if hasattr(sys.stdout, "reconfigure"):
 
 CLOSING = "違反した箇所は、語を置き換えるのではなく、その文を丸ごと書き直してください（前後の文とのつながりも読み直す）。"
 
-# 出典: Correction_Patterns.md YCP-002・003・004・013・016・020・039・040・041・045〜053、
+# 出典: Correction_Patterns.md YCP-002・003・004・013・016・020・039・040・041・045〜060、
 # Structure_Rules.md §0.3・§0.5、および本スクリプト Gate 5・8・9 の既存説明文。
 GOOD = {
     "show_dont_tell": "教訓や評価を先に言わず、人物の行動と起きた事実から視聴者が意味を受け取れる段落に組み直す。",
@@ -36,6 +36,10 @@ GOOD = {
     "map_reading": "資料の見た目を読み上げず、物語に必要な人物の動作や事件の事実を直接語る。",
     "purpose_intro": "年齢・人物・行き先を動作の1文にまとめ、目的は空行後の短い体言止めで置く。",
     "unknown_detail": "分からない細部の断りは削り、資料から分かっている人物の動作や事件の事実だけで前後をつなぐ。",
+    "chapter_opening_time": "日付・時刻を短い1行で先に置き、視聴者が場面の時間をつかんでから人物の行動へ入る。",
+    "source_voice": "出典はsrcコメントへ置き、資料を主語にせず、確認できた人物の行動や事件の事実を直接語る。",
+    "preview_summary": "先の出来事の予告と直前の出来事の言い直しを削り、次に起きた具体的な行動へ進む。",
+    "abbreviation_intro": "略称の初出行で、組織の種類や位置づけが分かる手がかり語を添える。",
 }
 
 
@@ -77,10 +81,13 @@ def mask_hou_kata_compounds(content):
 CORRECTION_WORD_MAP_PATH = _os.path.join(
     _os.path.dirname(_os.path.abspath(__file__)), "correction_word_map.txt"
 )
+ABBREVIATIONS_PATH = _os.path.join(
+    _os.path.dirname(_os.path.abspath(__file__)), "abbreviations.txt"
+)
 
 
 def load_correction_word_map(path=CORRECTION_WORD_MAP_PATH):
-    """Load append-only hook rewrites: source<TAB>replacement<TAB>YCP<TAB>reason."""
+    """Load rewrites: source<TAB>replacement<TAB>YCP<TAB>reason<TAB>scope."""
     entries = []
     try:
         with open(path, encoding="utf-8-sig") as f:
@@ -94,7 +101,30 @@ def load_correction_word_map(path=CORRECTION_WORD_MAP_PATH):
                     continue
                 source, replacement, pattern_id = parts[:3]
                 reason = parts[3] if len(parts) >= 4 else ""
-                entries.append((source, replacement, pattern_id, reason))
+                scope = parts[4].upper() if len(parts) >= 5 else "HOOK"
+                if scope not in ("HOOK", "ALL"):
+                    print(f"[WARN] correction_word_map.txt L{line_no}: 範囲が不正なためHOOKとして扱います")
+                    scope = "HOOK"
+                entries.append((source, replacement, pattern_id, reason, scope))
+    except FileNotFoundError:
+        pass
+    return entries
+
+
+def load_abbreviations(path=ABBREVIATIONS_PATH):
+    """Load abbreviation<TAB>clue pairs."""
+    entries = []
+    try:
+        with open(path, encoding="utf-8-sig") as f:
+            for line_no, raw in enumerate(f, 1):
+                line = raw.rstrip("\r\n")
+                if not line or line.lstrip().startswith("#"):
+                    continue
+                parts = line.split("\t")
+                if len(parts) != 2 or not all(parts):
+                    print(f"[WARN] abbreviations.txt L{line_no}: 形式が不正なため無視します")
+                    continue
+                entries.append(tuple(parts))
     except FileNotFoundError:
         pass
     return entries
@@ -131,6 +161,27 @@ def chapter_first_narrator_lines(lines):
             first_lines.append((line_no, stripped.split(":", 1)[1].strip()))
             waiting_for_first = False
     return first_lines
+
+
+def numbered_chapters(lines):
+    """Return numbered chapters with their PART and narrator lines."""
+    part = None
+    chapters = []
+    current = None
+    for line_no, raw in enumerate(lines, 1):
+        stripped = raw.strip()
+        marker = re.match(r"^<!-- PART: ([A-Z-]+) -->$", stripped)
+        if marker:
+            part = marker.group(1)
+            continue
+        heading = re.match(r"^##\s+(\d+)\.", stripped)
+        if heading:
+            current = {"number": int(heading.group(1)), "part": part, "narrators": []}
+            chapters.append(current)
+            continue
+        if current is not None and stripped.startswith("ナレーター:"):
+            current["narrators"].append((line_no, stripped.split(":", 1)[1].strip()))
+    return chapters
 
 
 def document_description_level(content):
@@ -420,8 +471,18 @@ def validate_narrative_tone(file_path):
                 f"   > 「{content}」",
                 "hook_ittou",
             ))
-        for source, replacement, pattern_id, reason in word_map:
-            if source in content:
+        for source, replacement, pattern_id, reason, scope in word_map:
+            if scope == "HOOK" and source in content:
+                suffix = f"（{reason}）" if reason else ""
+                warnings.append(with_good(
+                    f"[人間修正の言い換え {pattern_id}] L{line_no}: 『{source}』→『{replacement}』{suffix}\n"
+                    f"   > 「{content}」",
+                    "hook_word_map",
+                ))
+
+    for line_no, content in narrator_lines:
+        for source, replacement, pattern_id, reason, scope in word_map:
+            if scope == "ALL" and source in content:
                 suffix = f"（{reason}）" if reason else ""
                 warnings.append(with_good(
                     f"[人間修正の言い換え {pattern_id}] L{line_no}: 『{source}』→『{replacement}』{suffix}\n"
@@ -484,6 +545,61 @@ def validate_narrative_tone(file_path):
                 f"   > 「{content}」",
                 "unknown_detail",
             ))
+
+    # Gate 13: 本人修正から昇格した場面運び・資料口調・略称（WARNのみ）
+    time_pattern = re.compile(r"\d+月\d+日|午前|午後|正午|昼|夜|朝|翌日|\d+時")
+    chapters = numbered_chapters(lines)
+    active_time = False
+    warned_unanchored_scene = False
+    for chapter in chapters:
+        if chapter["number"] == 1 or chapter["part"] not in ("KI", "SHO"):
+            continue
+        opening = chapter["narrators"][:3]
+        has_time = any(time_pattern.search(content) for _, content in opening)
+        if has_time:
+            active_time = True
+        # 一度置いた時刻は、次の明示時刻まで続く場面の時間軸として扱う。
+        # §1はフックなのでactive_timeには入らず、未設定区間は先頭の1章だけをWARNする。
+        if opening and not has_time and not active_time and not warned_unanchored_scene:
+            line_no = opening[0][0]
+            warnings.append(with_good(
+                f"[章冒頭の時刻 YCP-054] L{line_no}: §{chapter['number']}の最初のナレーター行3行以内に日付・時刻を置きます",
+                "chapter_opening_time",
+            ))
+            warned_unanchored_scene = True
+
+    source_voice_pattern = re.compile(
+        r"(記事|報告|一覧|資料|報道|答弁|広報)(は|には|にも|でも).{0,30}"
+        r"(伝えて|伝えました|記して|記しています|記されて|載せ|載って)"
+    )
+    preview_summary_pattern = re.compile(r"このあと.{0,30}ことになります|につながりました。$")
+    for line_no, content in narrator_lines:
+        source_voice = source_voice_pattern.search(content)
+        if source_voice:
+            warnings.append(with_good(
+                f"[資料の出どころを語らない YCP-058] L{line_no}: 資料を主語にせず、事実を直接語ります\n"
+                f"   > 「{content}」",
+                "source_voice",
+            ))
+        preview_summary = preview_summary_pattern.search(content)
+        if preview_summary:
+            warnings.append(with_good(
+                f"[予告・まとめ文 YCP-059] L{line_no}: 先の予告や直前の要約を削ります\n"
+                f"   > 「{content}」",
+                "preview_summary",
+            ))
+
+    for abbreviation, clue in load_abbreviations():
+        first = next(((line_no, content) for line_no, content in narrator_lines
+                      if abbreviation in content), None)
+        if first:
+            line_no, content = first
+            if "「" not in content and "」" not in content and clue not in content:
+                warnings.append(with_good(
+                    f"[略称の初出説明 YCP-060] L{line_no}: 『{abbreviation}』の初出に『{clue}』などの説明を添えます\n"
+                    f"   > 「{content}」",
+                    "abbreviation_intro",
+                ))
 
     # Gate 7: 1回しか出てこない固有名詞を列挙（WARNING）
     all_body = "\n".join(c for _, c in narrator_lines)

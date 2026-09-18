@@ -1009,6 +1009,91 @@ def main():
     ok.append(check_pass("㊹d 普通の文はWARNなし", "validate_yama_narrative.py", p,
                          "[資料にない細部 YCP-053]", expected_code=0))
 
+    # ㊻ 起・承は§1を除き、冒頭3ナレーター行以内に日付・時刻を置く（YCP-054）。
+    p = os.path.join(tmp, "chapter_time_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n<!-- PART: KI -->\n\n## 2. 山菜を採りに入った山\n"
+        "ナレーター: 北海道の南西部、日本海に面したせたな町。\n"
+        "ナレーター: 町の北檜山区、52歳の女性が車で山へと向かいます。\n"
+        "ナレーター: 目的は春の山菜採り。\n")
+    ok.append(check("㊻a 時刻のない章冒頭をWARN", "validate_yama_narrative.py", p,
+                    "[章冒頭の時刻 YCP-054]", expected_code=0))
+
+    p = os.path.join(tmp, "chapter_time_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n<!-- PART: KI -->\n\n## 2. 山菜を採りに入った山\n"
+        "ナレーター: 4月16日午前\n"
+        "ナレーター: 北海道の南西部、日本海に面したせたな町。\n"
+        "ナレーター: 町の北檜山区、52歳の女性が車で山へと向かいます。\n")
+    ok.append(check_pass("㊻b 時刻で始めた章はWARNなし", "validate_yama_narrative.py", p,
+                         "[章冒頭の時刻 YCP-054]", expected_code=0))
+
+    p = os.path.join(tmp, "chapter_time_continuation_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n<!-- PART: KI -->\n\n## 2. 帰ってこない\n"
+        "ナレーター: 午前12時\nナレーター: 夫は妻を探しに山へ向かいます。\n"
+        "## 3. 捜索\nナレーター: 到着した警察と消防は辺りを捜索。\n"
+        "ナレーター: 車から離れた地点で妻を発見。\n")
+    ok.append(check_pass("㊻c 直前章と連続する場面は刻み直さない", "validate_yama_narrative.py", p,
+                         "[章冒頭の時刻 YCP-054]", expected_code=0))
+
+    # ㊼ 「帰らぬ人」は§1だけでなく全章で具体化する（YCP-057）。
+    p = os.path.join(tmp, "victim_state_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 4. 発見\nナレーター: 見つかった女性は、すでに帰らぬ人となっていたのです。\n")
+    ok.append(check("㊼a 全章の『帰らぬ人』をWARN", "validate_yama_narrative.py", p,
+                    "[人間修正の言い換え YCP-047]", expected_code=0))
+
+    p = os.path.join(tmp, "victim_state_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 4. 発見\nナレーター: しかし、すでに息を引き取っていました。\n"
+        "ナレーター: 遺体は両手両足の筋肉を食い取られており、見るに堪えない状況でした。\n")
+    ok.append(check_pass("㊼b 被害を具体化した版はWARNなし", "validate_yama_narrative.py", p,
+                         "[人間修正の言い換え YCP-047]", expected_code=0))
+
+    # ㊽ 資料の出どころを本文で語らない（YCP-058）。
+    p = os.path.join(tmp, "source_voice_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 4. 発見\nナレーター: 道の人身事故の一覧にも、この女性が命を落としたことが記されています。\n")
+    ok.append(check("㊽a 資料を主語にした文をWARN", "validate_yama_narrative.py", p,
+                    "[資料の出どころを語らない YCP-058]", expected_code=0))
+
+    p = os.path.join(tmp, "source_voice_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 4. 発見\nナレーター: しかし、すでに息を引き取っていました。\n")
+    ok.append(check_pass("㊽b 事実を直接語る版はWARNなし", "validate_yama_narrative.py", p,
+                         "[資料の出どころを語らない YCP-058]", expected_code=0))
+
+    # ㊾ 先の予告と直前のまとめを削る（YCP-059）。
+    p = os.path.join(tmp, "preview_summary_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 3. 帰ってこない\n"
+        "ナレーター: このあと、夫は女性の衣服などを見つけることになります。\n"
+        "ナレーター: 妻がいないと感じた夫の捜索は、衣服の発見と通報につながりました。\n")
+    ok.append(check("㊾a 予告・まとめ文をWARN", "validate_yama_narrative.py", p,
+                    "[予告・まとめ文 YCP-059]", expected_code=0))
+
+    p = os.path.join(tmp, "preview_summary_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 3. 帰ってこない\n"
+        "ナレーター: 昼食の時間になっても帰らない妻を心配した夫は、山のほうへと探しにいくことに。\n"
+        "ナレーター: すると、妻のワゴン車と衣服の一部が山で見つかります。\n")
+    ok.append(check_pass("㊾b 出来事を進める版はWARNなし", "validate_yama_narrative.py", p,
+                         "[予告・まとめ文 YCP-059]", expected_code=0))
+
+    # ㊿ 略称の初出で組織の位置づけを説明する（YCP-060）。
+    p = os.path.join(tmp, "abbreviation_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 5. 調査\nナレーター: 翌日の4月17日、道総研が現地の調査に入りました。\n")
+    ok.append(check("㊿a 説明のない略称初出をWARN", "validate_yama_narrative.py", p,
+                    "[略称の初出説明 YCP-060]", expected_code=0))
+
+    p = os.path.join(tmp, "abbreviation_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 5. 調査\nナレーター: 北海道の研究機関「道総研」が、現地の調査に入りました。\n")
+    ok.append(check_pass("㊿b 初出を説明した略称はWARNなし", "validate_yama_narrative.py", p,
+                         "[略称の初出説明 YCP-060]", expected_code=0))
+
     # ㊺ 定番資料のURL確認。本文が条件に当たるのにURLが無ければ執筆前に止める。
     def mkstandard(name, source_note):
         p = mkdescription(name, 2)
