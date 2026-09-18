@@ -1009,6 +1009,26 @@ def main():
     ok.append(check_pass("㊹d 普通の文はWARNなし", "validate_yama_narrative.py", p,
                          "[資料にない細部 YCP-053]", expected_code=0))
 
+    # ㊺ 定番資料のURL確認。本文が条件に当たるのにURLが無ければ執筆前に止める。
+    def mkstandard(name, source_note):
+        p = mkdescription(name, 2)
+        fact = os.path.join(os.path.dirname(p), "Fact_Sheet_test.md")
+        with open(fact, "a", encoding="utf-8") as f:
+            f.write("\nヒグマ事故の素材。\n" + source_note + "\n")
+        return p
+
+    p = mkstandard("standard_source_missing", "")
+    ok.append(check("㊺a 定番資料URLなしを止める", "validate_yama_plot.py", p,
+                    "不足URL: yasei.com/bearvictims.htm", expected_code=1))
+    p = mkstandard("standard_source_present", "https://yasei.com/bearvictims.htm\nhttps://naochiaki.biz/higuma/list-2013-h25/")
+    ok.append(check_pass("㊺b 定番資料URLありは止めない", "validate_yama_plot.py", p,
+                         "定番資料未確認", expected_code=0))
+    p = mkstandard("standard_source_checked_none",
+                   "確認済み・該当なし（yasei.com/bearvictims.htm）\n"
+                   "確認済み・該当なし（naochiaki.biz/higuma/）")
+    ok.append(check_pass("㊺c 確認済み・該当なしは止めない", "validate_yama_plot.py", p,
+                         "定番資料未確認", expected_code=0))
+
     # 再検証用の入力と生出力は tests/ 配下に保存する（削除しない）。
 
     # --- メタチェック: 3点セットが揃っているか ---------------------------

@@ -21,6 +21,7 @@ Yamaプロット表バリデーター（執筆前ゲート）
  10. 主題占有率（外部素材だけで組まれた章 ≤ 15%）★他事件・全国統計での水増しの予防
  13. 記載素材の過半禁止（章の〔記載〕素材が1/2超ならFAIL）
  11. 設計からの乖離（設計字数 ±15%）★しきい値合わせの水増しの予防
+ 14. 定番資料（素材シートの条件に応じた必須URLが無ければFAIL）
 
 使い方:
   python3 Yama_Story/System_Tools/validate_yama_plot.py <プロット表>
@@ -32,7 +33,6 @@ Yamaプロット表バリデーター（執筆前ゲート）
 import os as _os, sys as _sys
 _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 import _infermarks
-import glob
 import os
 import re
 import sys
@@ -95,11 +95,41 @@ GOOD = {
     'description_majority': '資料の記載を説明する素材だけで章を作らず、事件・現場の具体的な事実を過半へ割り当て直す。',
     # 出典: Plot_Sheet_Template.md §「種別の語彙（この7つだけ使う）」
     'unknown_kind': '章の役割を見直し、フック、動き、証言、感情、説明、データ、実用のいずれかへ分類し直す。',
+    'standard_source_missing': '不足URLを開いて事実を素材行にするか、該当情報が無ければ出典索引へ確認済み・該当なしと記録する。',
+    'standard_source_ledger': 'System_Tools/standard_sources.txt を復元し、条件・必須URL・説明をタブ区切りで記録する。',
+}
+
+# この検査の導入前に本人確認を経て出荷済みで、プロット素材シートが残る作品だけを除外する。
+# 出荷前の「2013-2014年せたな町ヒグマ事故」は、Master.md があっても除外しない。
+STANDARD_SOURCE_EXEMPT_FOLDERS = {
+    "1988年戸沢村ツキノワグマ食害事件",
+    "2012年八幡平クマ牧場事件",
 }
 
 
 def issue(items, key, message):
     items.append((key, message))
+
+
+def load_standard_sources():
+    ledger = Path(__file__).with_name("standard_sources.txt")
+    if not ledger.exists():
+        return None, f"定番資料台帳がありません: {ledger}"
+    rules = []
+    for lineno, raw in enumerate(ledger.read_text(encoding="utf-8").splitlines(), 1):
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = raw.split("\t", 2)
+        if len(parts) != 3 or not all(x.strip() for x in parts):
+            return None, f"定番資料台帳 {ledger.name}:{lineno} は3列のタブ区切りではありません"
+        condition, required_url, description = (x.strip() for x in parts)
+        try:
+            pattern = re.compile(condition)
+        except re.error as exc:
+            return None, f"定番資料台帳 {ledger.name}:{lineno} の条件が不正です: {exc}"
+        rules.append((condition, pattern, required_url, description))
+    return rules, None
 
 # --- 検査10 主題占有率（2026-09-02 追加）---------------------------------
 # 「他の事件で文字を水増しするのではなく、その事件を深掘りして分量を満たす」を機械で守らせる。
@@ -184,6 +214,26 @@ def main(path):
         cum.append(100 * acc / total)
 
     fails, warns = [], []
+
+    # 定番資料の確認漏れを執筆前に止める。出荷済みの旧作は明示リストだけを除外する。
+    fact_sheets = sorted(p.parent.glob("Fact_Sheet_*.md"))
+    if p.parent.name not in STANDARD_SOURCE_EXEMPT_FOLDERS:
+        standard_rules, ledger_error = load_standard_sources()
+        if ledger_error:
+            issue(fails, 'standard_source_ledger', ledger_error)
+        else:
+            for fact_sheet in fact_sheets:
+                fact_body = fact_sheet.read_text(encoding="utf-8")
+                for condition, pattern, required_url, description in standard_rules:
+                    if pattern.search(fact_body) and required_url not in fact_body:
+                        issue(
+                            fails,
+                            'standard_source_missing',
+                            f"定番資料未確認 — {fact_sheet.name} は条件 /{condition}/ に該当します。"
+                            f"不足URL: {required_url}（{description}）。"
+                            f"開いて素材行にするか、該当なしなら出典索引に"
+                            f"『確認済み・該当なし（{required_url}）』と書く",
+                        )
 
     print("=" * 68)
     print(f"[Yama Plot Validator] {p.name}")
@@ -343,7 +393,7 @@ def main(path):
                 print()
 
     # 10. 主題占有率（2026-09-02 追加）— 他事件・全国統計での水増しを止める
-    fs = sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(path)), "Fact_Sheet_*.md")))
+    fs = [str(x) for x in fact_sheets]
     if not fs:
         issue(warns, 'fact_sheet_missing_subject', "素材シート（Fact_Sheet_*.md）が同じフォルダに無いため、主題占有率を測れません")
     else:

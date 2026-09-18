@@ -116,6 +116,9 @@
 
 ## リサーチで詰まったときの手だて
 
+最初に `System_Tools/standard_sources.txt` の必須URLを開く（開かないと `validate_yama_plot.py` がFAIL）。
+検索AIの要約は根拠にしないが、要約が挙げる参照リンクは必ず全部開いて原文を確認する。要約を理由に捨てない。
+
 | 壁 | 手だて |
 |:--|:--|
 | **YouTube動画の中身が分からない** | `yt-dlp --skip-download --write-auto-sub --sub-lang ja --sub-format vtt -o "out.%(ext)s" <URL>`<br>自動字幕が取れる。**誤認識は多いが、数字と固有名詞は複数箇所の整合で判定できる。**<br>字幕が無い動画（ライブ配信など）は取得不可。取れないことを確認したら、それも記録する |
