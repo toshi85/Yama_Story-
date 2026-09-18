@@ -1,0 +1,42 @@
+[Structure Check]: Validating Yama Story Structure + Safety + Volume: Master.md
+
+[Layer 0] Physical Blockade: Competitor & Thumbnail Analysis...
+
+============================================================
+[Gate 0] Competitor & Thumbnail Analysis Check
+  File: Master.md
+============================================================
+
+[Check 1] 競合分析セクションの存在...
+   ✅ Found
+
+[Check 2] 競合動画の記載...
+   ✅ 10 competitor references found
+
+[Check 3] 差別化3軸（映像・リサーチ・ナラティブ）...
+   ✅ All 3 axes covered
+
+[Check 4] 情報の穴の特定...
+   ✅ 5 holes identified
+
+[Check 5] サムネイル競合分析セクションの存在...
+   ✅ Found
+
+[Check 6] サムネ分析の要素（テキスト・構図・色調）...
+   ✅ All elements covered
+
+============================================================
+[PASSED] Gate 0: Competitor & Thumbnail Analysis Check OK
+============================================================
+
+[Layer 1] Physical Blockade: NG Words & Pronouns...
+
+--- [Safety Blockade]: Checking Master.md ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[SUCCESS]: No Safety or Style Issues Found.
+
+[Layer 2] Physical Blockade: Volume Floor (8800 chars)...
+[BLOCKADE]: Script volume (4584) is below safety floor (8800).
+    → 直し方: 検査を通すための文を足さず、素材シートの未使用素材を棚卸しし、その事件自体を深掘りする構成から組み直す。
+   Reason: Potential over-summarization detected.
+違反した箇所は、語を置き換えるのではなく、その文を丸ごと書き直してください（前後の文とのつながりも読み直す）。

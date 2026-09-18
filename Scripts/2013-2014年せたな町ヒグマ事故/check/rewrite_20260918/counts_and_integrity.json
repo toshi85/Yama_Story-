@@ -1,0 +1,27 @@
+{
+  "fixed_prefix_bytes_match": true,
+  "fixed_section5_first_two_lines_match": true,
+  "narration_chars": 3548,
+  "minutes_at_323": 10.98452012383901,
+  "rewritten_chars": 3014,
+  "unused_src_ids": [
+    15,
+    29,
+    30,
+    45,
+    46,
+    47,
+    54,
+    61,
+    62,
+    63,
+    64,
+    65,
+    77,
+    78,
+    83,
+    84,
+    86,
+    92
+  ]
+}

@@ -1,4 +1,35 @@
-# プロット表: 2013・2014年せたな町ヒグマ人身事故
+from pathlib import Path
+import re
+import json
+
+d = Path(__file__).resolve().parents[2]
+work = Path(__file__).resolve().parent
+original = (work / 'Master.md.before').read_bytes()
+prefix = original.split('## 5.'.encode('utf-8'))[0]
+replacement = (work / 'replacement.md').read_text(encoding='utf-8')
+newline = '\r\n' if b'\r\n' in original else '\n'
+(d / 'Master.md').write_bytes(prefix + replacement.replace('\n', newline).encode('utf-8'))
+
+text = (d / 'Master.md').read_text(encoding='utf-8')
+chapters = []
+part = 'KI'
+for line in text.splitlines():
+    marker = re.match(r'<!-- PART: (.*?) -->', line)
+    if marker:
+        part = marker[1]
+    heading = re.match(r'## (\d+)\. (.*)', line)
+    if heading:
+        chapters.append(dict(no=int(heading[1]), title=heading[2], part=part, chars=0, src=set()))
+    elif chapters:
+        if line.startswith('ナレーター:'):
+            chapters[-1]['chars'] += len(line.split(':', 1)[1].strip())
+        if line.startswith('<!-- src:'):
+            chapters[-1]['src'].update(map(int, re.findall(r'#(\d+)', line)))
+
+# 固定章のsrcは原本どおり。そこで文章で示されている追加出典も改変しない。
+
+kinds = {1:'フック', 2:'動き', 3:'動き', 4:'動き', 5:'動き', 6:'動き', 7:'動き', 8:'動き', 9:'動き', 10:'動き', 11:'動き', 12:'動き', 13:'動き', 14:'動き', 15:'証言', 16:'証言', 17:'証言', 18:'動き', 19:'動き', 20:'動き', 21:'実用'}
+plot = '''# プロット表: 2013・2014年せたな町ヒグマ人身事故
 
 - 設計変更: 2026-09-18 本人指定の全面改稿。旧28章の制度・統計・出典説明・留保を整理し、追加された事故の具体と捕獲個体の照合を中心に21章へ再構成。旧設計はcheck/rewrite_20260918/Plot_Sheet_せたな町.md.before、改稿前の配分案は同design.mdに保存。
 - 目標尺: 最大30分（9,700字）。未使用素材の上限見積もり8,000字を字数ノルマにしない。内容の重複・創作による引き延ばしは禁止。
@@ -9,28 +40,17 @@
 
 | 章 | タイトル | PART | 種別 | 設計字数 | 実測字数 | 素材# |
 |--:|:--|:--|:--|--:|--:|:--|
-| 1 | 2013年4月16日、せたな町 | KI | フック | 240 | 240 | 1,2,4,6,7,8,9,12,13,14,27,28 |
-| 2 | 山菜を採りに入った山 | KI | 動き | 62 | 62 | 4,6,82 |
-| 3 | 帰ってこない | KI | 動き | 91 | 91 | 7 |
-| 4 | 車から200メートル | SHO | 動き | 141 | 141 | 5,8 |
-| 5 | 翌日、研究者が現場に立った | SHO | 動き | 202 | 202 | 10,11,12,85,87 |
-| 6 | 早朝からクマを捜す | SHO | 動き | 235 | 229 | 49,50,51,88 |
-| 7 | 現場の近くに仕掛けたわな | SHO | 動き | 246 | 246 | 52,53,55,56,60,81 |
-| 8 | 家の玄関まで送る | SHO | 動き | 232 | 232 | 57,58,59,72,79 |
-| 9 | 一致するクマはいない | SHO | 動き | 171 | 171 | 12,13,68 |
-| 10 | ギョウジャニンニクを採り終えて | SHO | 動き | 180 | 180 | 14,16,18,19,23,90,93,94,97 |
-| 11 | 後ろを歩く女性に | SHO | 動き | 96 | 96 | 17,21,89,93,94,95 |
-| 12 | 枝払い用のナタ | SHO | 動き | 130 | 130 | 21,22,91,95,96 |
-| 13 | 現場に残った血痕 | SHO | 動き | 202 | 202 | 12,20,21,23,24,25,26,27 |
-| 14 | 約8キロ離れた現場 | SHO | 動き | 144 | 144 | 3,5,6,16,17,18,27,28,31 |
-| 15 | 防災ヘリを使った捜索 | SHO | 証言 | 178 | 178 | 43,66,67,69 |
-| 16 | 捕獲を担う人を増やす | SHO | 証言 | 297 | 288 | 72,73,74,75,80 |
-| 17 | 「今なおこのクマの捕獲には至っておりません」 | SHO | 証言 | 143 | 125 | 70,71,76 |
-| 18 | また春を迎える | SHO | 動き | 121 | 121 | 39,44 |
-| 19 | 前の夏、今金町のビート畑で | SHO | 動き | 159 | 159 | 32,33,34,35,36,37,41,42 |
-| 20 | 四月二十二日夜、遺伝子が一致 | TEN-KETSU | 動き | 196 | 198 | 32,33,38,40,71 |
-| 21 | いま、山に入る人へ | TEN-KETSU | 実用 | 113 | 113 | 19,20,23,48,76,97 |
-
+'''
+design_path = work / 'final_design.json'
+if design_path.exists():
+    design = json.loads(design_path.read_text(encoding='utf-8'))
+else:
+    design = {str(c['no']): c['chars'] for c in chapters}
+    design_path.write_text(json.dumps(design, ensure_ascii=False, indent=2), encoding='utf-8')
+for c in chapters:
+    src = ','.join(map(str, sorted(c['src'])))
+    plot += f"| {c['no']} | {c['title']} | {c['part']} | {kinds[c['no']]} | {design[str(c['no'])]} | {c['chars']} | {src} |\n"
+plot += '''
 ## 事実と場面の制約
 
 - §1〜§4は本人確定の見出し・本文・コメント・空行を含め原本からバイト単位で保持。プロットの旧章題と実測のみ整合させた。§5冒頭2行も保持。
@@ -48,3 +68,26 @@
 - §20が結末の山。2014年8月の捕獲と、12月の認識、2015年4月22日夜の結果を区別する。鑑定の遅れの理由・住民の反応は足さない。
 - §21は本件の同行者・鈴・看板・入山規制に即した短い注意。ナタでの反撃を一般向けの対処法にしない。
 - 〔外部〕#45〜#47を使用しない。写真の#29・#30、個体を同定できない#64も実景描写の根拠へ転用しない。
+'''
+(d / 'Plot_Sheet_せたな町.md').write_text(plot, encoding='utf-8', newline=newline)
+
+# 素材本文は変えず、章再編に必要な「使う章」列だけ更新する。
+fact_path = d / 'Fact_Sheet_せたな町.md'
+fact = (work / 'Fact_Sheet_せたな町.md.before').read_text(encoding='utf-8')
+uses = {}
+for c in chapters:
+    for sid in c['src']:
+        uses.setdefault(sid, []).append(c['no'])
+lines = []
+for line in fact.splitlines():
+    m = re.match(r'^\|\s*(\d+)\s*\|', line)
+    if m:
+        cells = line.split('|')
+        cells[-2] = ' ' + (', '.join(f'§{n}' for n in uses.get(int(m[1]), [])) or '不使用（2026-09-18改稿）') + ' '
+        line = '|'.join(cells)
+    lines.append(line)
+fact_path.write_text('\n'.join(lines)+'\n', encoding='utf-8', newline=newline)
+assert (d / 'Master.md').read_bytes().split('## 5.'.encode('utf-8'))[0] == prefix
+print('fixed_prefix_bytes_match=True')
+print('total_chars=', sum(c['chars'] for c in chapters))
+print('minutes=', sum(c['chars'] for c in chapters)/323)

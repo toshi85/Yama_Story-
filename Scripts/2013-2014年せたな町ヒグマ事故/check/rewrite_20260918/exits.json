@@ -1,0 +1,11 @@
+{
+  "validate_yama_narrative": 0,
+  "validate_yama_safety": 0,
+  "validate_yama_facts": 0,
+  "audit_numeric_facts": 0,
+  "validate_yama_intro": 1,
+  "validate_yama_consistency": 0,
+  "validate_yama_structure": 1,
+  "validate_yama_plot": 1,
+  "validate_yama_coherence": 0
+}
