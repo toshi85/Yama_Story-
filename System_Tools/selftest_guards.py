@@ -42,6 +42,18 @@ HEAD = """# テスト用タイトル
 
 def run(script, path, *extra):
     # Windows の既定エンコーディング（cp932）だと日本語の出力で落ちるため UTF-8 を明示する
+    # 既存のプロット検査fixtureは尺の関所以前の目的で作ったもの。新しい検査と無関係な
+    # PASS例を巻き込まないよう、種別印がまだ無いfixtureだけ十分な〔場面〕行を補う。
+    if script == "validate_yama_plot.py":
+        folder = os.path.dirname(path)
+        sheets = [os.path.join(folder, name) for name in os.listdir(folder)
+                  if name.startswith("Fact_Sheet_") and name.endswith(".md")]
+        for sheet in sheets:
+            body = open(sheet, encoding="utf-8").read()
+            if not any(mark in body for mark in ("〔場面〕", "〔細部〕")):
+                with open(sheet, "a", encoding="utf-8") as f:
+                    for n in range(1000, 1130):
+                        f.write(f"| {n} | 〔場面〕既存検査用の場面素材{n} | X | 実物 | 未定 |\n")
     env = {**os.environ, "PYTHONIOENCODING": "utf-8"}
     r = subprocess.run([PY, os.path.join(HERE, script), path, *extra],
                        capture_output=True, text=True,
@@ -1139,14 +1151,52 @@ def main():
     p = mkstandard("standard_source_missing", "")
     ok.append(check("㊺a 定番資料URLなしを止める", "validate_yama_plot.py", p,
                     "不足URL: yasei.com/bearvictims.htm", expected_code=1))
-    p = mkstandard("standard_source_present", "https://yasei.com/bearvictims.htm\nhttps://naochiaki.biz/higuma/list-2013-h25/")
+    p = mkstandard("standard_source_present", "https://yasei.com/bearvictims.htm\nhttps://naochiaki.biz/higuma/list-2013-h25/\nhttps://db.hokkaido-np.co.jp/")
     ok.append(check_pass("㊺b 定番資料URLありは止めない", "validate_yama_plot.py", p,
                          "定番資料未確認", expected_code=0))
     p = mkstandard("standard_source_checked_none",
                    "確認済み・該当なし（yasei.com/bearvictims.htm）\n"
-                   "確認済み・該当なし（naochiaki.biz/higuma/）")
+                   "確認済み・該当なし（naochiaki.biz/higuma/）\n"
+                   "確認済み・該当なし（db.hokkaido-np.co.jp）")
     ok.append(check_pass("㊺c 確認済み・該当なしは止めない", "validate_yama_plot.py", p,
                          "定番資料未確認", expected_code=0))
+
+    # 53 場面素材の量で25分に届かない題材を、執筆前に止める。
+    d = os.path.join(tmp, "scene_length_gate")
+    os.makedirs(d, exist_ok=True)
+    p = os.path.join(d, "Fact_Sheet_low.md")
+    open(p, "w", encoding="utf-8").write(
+        "# 素材シート\n\n| # | 事実 | 出典 | 確認方法 | 使う章 |\n"
+        "|:--|:--|:--|:--|:--|\n| 1 | 〔場面〕一つだけの出来事 | X | 実物 | 未定 |\n")
+    ok.append(check("53a 〔場面〕が少なければ尺の関所で止める",
+                    "estimate_script_length.py", p, "[FAIL]", expected_code=1))
+
+    p = os.path.join(d, "Fact_Sheet_enough.md")
+    with open(p, "w", encoding="utf-8") as f:
+        f.write("# 素材シート\n\n| # | 事実 | 出典 | 確認方法 | 使う章 |\n"
+                "|:--|:--|:--|:--|:--|\n")
+        for n in range(1, 131):
+            f.write(f"| {n} | 〔場面〕出来事{n} | X | 実物 | 未定 |\n")
+    ok.append(check_pass("53b 〔場面〕130行なら尺の関所を通す",
+                         "estimate_script_length.py", p, "[FAIL]", expected_code=0))
+
+    p = mkdescription("scene_length_plot_low", 0)
+    fact = os.path.join(os.path.dirname(p), "Fact_Sheet_test.md")
+    open(fact, "w", encoding="utf-8").write(
+        "# 素材シート\n\n| # | 事実 | 出典 | 確認方法 | 使う章 |\n"
+        "|:--|:--|:--|:--|:--|\n| 1 | 〔場面〕一つだけの出来事 | X | 実物 | 未定 |\n")
+    ok.append(check("54a プロット関所も場面不足を止める", "validate_yama_plot.py", p,
+                    "尺の関所", expected_code=1))
+
+    p = mkdescription("scene_length_plot_enough", 0)
+    fact = os.path.join(os.path.dirname(p), "Fact_Sheet_test.md")
+    with open(fact, "w", encoding="utf-8") as f:
+        f.write("# 素材シート\n\n| # | 事実 | 出典 | 確認方法 | 使う章 |\n"
+                "|:--|:--|:--|:--|:--|\n")
+        for n in range(1, 131):
+            f.write(f"| {n} | 〔場面〕出来事{n} | X | 実物 | 未定 |\n")
+    ok.append(check_pass("54b プロット関所は場面130行を通す", "validate_yama_plot.py", p,
+                         "尺の関所 —", expected_code=0))
 
     # 再検証用の入力と生出力は tests/ 配下に保存する（削除しない）。
 

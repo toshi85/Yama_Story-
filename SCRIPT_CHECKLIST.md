@@ -271,6 +271,8 @@
 ③ 執筆        Master.md                … ①を②の順に並べ替える作業     → 下記5本を Exit 0 まで
 ```
 
+- [ ] **素材シートの段階で `python System_Tools/estimate_script_length.py <Fact_Sheet>` が exit 0（8,100字以上）であること**
+
 実行コマンド（すべて `Yama_Story-/System_Tools/` 配下）:
 
 ```bash

@@ -22,6 +22,7 @@ Yamaプロット表バリデーター（執筆前ゲート）
  13. 記載素材の過半禁止（章の〔記載〕素材が1/2超ならFAIL）
  11. 設計からの乖離（設計字数 ±15%）★しきい値合わせの水増しの予防
  14. 定番資料（素材シートの条件に応じた必須URLが無ければFAIL）
+ 15. 尺の関所（〔場面〕素材からの見積もりが8,100字未満ならFAIL）
 
 使い方:
   python3 Yama_Story/System_Tools/validate_yama_plot.py <プロット表>
@@ -33,6 +34,8 @@ Yamaプロット表バリデーター（執筆前ゲート）
 import os as _os, sys as _sys
 _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 import _infermarks
+from estimate_script_length import MIN_CHARS as SCENE_LENGTH_MIN
+from estimate_script_length import estimate as estimate_script_length
 import os
 import re
 import sys
@@ -97,6 +100,7 @@ GOOD = {
     'unknown_kind': '章の役割を見直し、フック、動き、証言、感情、説明、データ、実用のいずれかへ分類し直す。',
     'standard_source_missing': '不足URLを開いて事実を素材行にするか、該当情報が無ければ出典索引へ確認済み・該当なしと記録する。',
     'standard_source_ledger': 'System_Tools/standard_sources.txt を復元し、条件・必須URL・説明をタブ区切りで記録する。',
+    'scene_length': '追加で資料を探す（standard_sources.txt の必須先、北海道の事件は北海道新聞データベース）か、題材を見送る。',
 }
 
 # この検査の導入前に本人確認を経て出荷済みで、プロット素材シートが残る作品だけを除外する。
@@ -218,6 +222,16 @@ def main(path):
     # 定番資料の確認漏れを執筆前に止める。出荷済みの旧作は明示リストだけを除外する。
     fact_sheets = sorted(p.parent.glob("Fact_Sheet_*.md"))
     if p.parent.name not in STANDARD_SOURCE_EXEMPT_FOLDERS:
+        for fact_sheet in fact_sheets:
+            length_estimate = estimate_script_length(fact_sheet)
+            if length_estimate.chars < SCENE_LENGTH_MIN:
+                issue(
+                    fails,
+                    'scene_length',
+                    f"尺の関所 — {fact_sheet.name} の〔場面〕{length_estimate.scene_count}行から"
+                    f"見積もれるのは {length_estimate.chars:,}字・{length_estimate.minutes:.1f}分"
+                    f"（基準 {SCENE_LENGTH_MIN:,}字）",
+                )
         standard_rules, ledger_error = load_standard_sources()
         if ledger_error:
             issue(fails, 'standard_source_ledger', ledger_error)
@@ -239,6 +253,13 @@ def main(path):
     print(f"[Yama Plot Validator] {p.name}")
     print("=" * 68)
     print(f"全{len(rows)}章 / 合計 {total:,}字 / 想定尺 {total/CPS:.1f}分\n")
+    if fact_sheets and p.parent.name not in STANDARD_SOURCE_EXEMPT_FOLDERS:
+        for fact_sheet in fact_sheets:
+            length_estimate = estimate_script_length(fact_sheet)
+            print(f"[尺の関所] {fact_sheet.name}: 〔場面〕{length_estimate.scene_count}行 / "
+                  f"{length_estimate.chars:,}字 / {length_estimate.minutes:.1f}分"
+                  f"（最低 {SCENE_LENGTH_MIN:,}字）")
+        print()
     print(f"{'章':>3} {'種別':<5} {'PART':<10} {'字数':>6} {'累計%':>7}  タイトル")
     for r, c in zip(rows, cum):
         flag = "  ←谷帯" if VALLEY[0] <= c <= VALLEY[1] and r["kind"] in EXPLAIN else ""

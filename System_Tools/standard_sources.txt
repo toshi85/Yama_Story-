@@ -1,3 +1,4 @@
 # 条件（正規表現）<TAB>必須URL（前方一致可）<TAB>説明
 クマ|ヒグマ|ツキノワグマ|熊	yasei.com/bearvictims.htm	北海道野生動物研究所 門崎允昭 日本の熊による人身事故記録
 ヒグマ|北海道	naochiaki.biz/higuma/	ヒグマ研究室 年別ヒグマ事件一覧
+北海道|ヒグマ	db.hokkaido-np.co.jp	北海道新聞データベース（どうしんDB、本人契約済み・ログイン済みChromeで検索）
