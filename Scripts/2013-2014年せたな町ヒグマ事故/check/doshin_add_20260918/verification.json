@@ -1,0 +1,13 @@
+{
+  "before": 6993,
+  "after": 8913,
+  "seconds": 1656,
+  "add_only": true,
+  "sections_1_4_unchanged": true,
+  "validator_exit_codes": {
+    "validate_yama_narrative": 0,
+    "validate_yama_safety": 0,
+    "validate_yama_facts": 0,
+    "audit_numeric_facts": 0
+  }
+}
