@@ -4,9 +4,13 @@ import _infermarks
 import sys
 import re
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="replace")
+    sys.stderr.reconfigure(errors="replace")
+
 CLOSING = "違反した箇所は、語を置き換えるのではなく、その文を丸ごと書き直してください（前後の文とのつながりも読み直す）。"
 
-# 出典: Correction_Patterns.md YCP-002・003・004・013・016・020・039・040・041・045〜052、
+# 出典: Correction_Patterns.md YCP-002・003・004・013・016・020・039・040・041・045〜053、
 # Structure_Rules.md §0.3・§0.5、および本スクリプト Gate 5・8・9 の既存説明文。
 GOOD = {
     "show_dont_tell": "教訓や評価を先に言わず、人物の行動と起きた事実から視聴者が意味を受け取れる段落に組み直す。",
@@ -31,6 +35,7 @@ GOOD = {
     "chapter_location_intro": "広い位置を体言止めで置き、町、地区の順に絞ってから人物の動作へつなぐ。",
     "map_reading": "資料の見た目を読み上げず、物語に必要な人物の動作や事件の事実を直接語る。",
     "purpose_intro": "年齢・人物・行き先を動作の1文にまとめ、目的は空行後の短い体言止めで置く。",
+    "unknown_detail": "分からない細部の断りは削り、資料から分かっている人物の動作や事件の事実だけで前後をつなぐ。",
 }
 
 
@@ -439,6 +444,24 @@ def validate_narrative_tone(file_path):
 
     map_reading_pattern = re.compile(r"地図(?:に|で)は|記されています")
     purpose_intro_pattern = re.compile(r"(?:の目的は|入った目的は)、?.{0,20}でした。")
+    unknown_detail_pattern = re.compile(
+        r"(分かって|わかって)いません|(分から|わから)ない(のです|です)?。|"
+        r"(分かり|わかり)ません|示されていません|示していません|"
+        r"(記事|報告|一覧|答弁|資料)(に|には|からは).{0,6}"
+        r"(載って|書かれて|記されて)?(い)?ません|確認できていません|書かれていない"
+    )
+    ten_exception_lines = set()
+    in_ten = False
+    for line_no, raw_line in enumerate(lines, 1):
+        marker = raw_line.strip()
+        if marker in ("<!-- PART: TEN -->", "<!-- PART: TEN-KETSU -->"):
+            in_ten = True
+            continue
+        if marker == "<!-- PART: KETSU -->":
+            in_ten = False
+            continue
+        if in_ten:
+            ten_exception_lines.add(line_no)
     for line_no, content in narrator_lines:
         map_reading = map_reading_pattern.search(content)
         if map_reading:
@@ -453,6 +476,13 @@ def validate_narrative_tone(file_path):
                 f"[人物の目的紹介 YCP-052] L{line_no}: 人物は説明でなく動作で登場させます\n"
                 f"   > 「{content}」",
                 "purpose_intro",
+            ))
+        unknown_detail = unknown_detail_pattern.search(content)
+        if unknown_detail and line_no not in ten_exception_lines:
+            warnings.append(with_good(
+                f"[資料にない細部 YCP-053] L{line_no}: 分からない細部は書かず、分かっていることだけで語ります\n"
+                f"   > 「{content}」",
+                "unknown_detail",
             ))
 
     # Gate 7: 1回しか出てこない固有名詞を列挙（WARNING）

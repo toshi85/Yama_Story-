@@ -10,6 +10,10 @@
 """
 import subprocess, sys, os, tempfile, shutil
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="replace")
+    sys.stderr.reconfigure(errors="replace")
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 PY = sys.executable
 
@@ -707,7 +711,8 @@ def main():
         ]
         for payload, want, label in cases:
             payload["session_id"] = "selftest"
-            r = subprocess.run([bash, hook], input=_json.dumps(payload), capture_output=True, text=True, env=env)
+            r = subprocess.run([bash, hook], input=_json.dumps(payload), capture_output=True, text=True,
+                               encoding="utf-8", errors="replace", env=env)
             hit = r.returncode == want
             print(f"  {'✅' if hit else '❌'} {'⑩ 未読ガード: ' + label:<42} guard-yama-script-reference.sh")
             ok.append(hit)
@@ -973,6 +978,36 @@ def main():
                          "[地図・地形の読み上げ YCP-051]", expected_code=0))
     ok.append(check_pass("㊸b 動作と体言止めの版はWARNなし", "validate_yama_narrative.py", p,
                          "[人物の目的紹介 YCP-052]", expected_code=0))
+
+    # ㊹ 資料に無い細部を「分かっていません」と一文ずつ断らない（YCP-053）。
+    p = os.path.join(tmp, "unknown_detail_husband_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 3. 帰ってこない\n"
+        "ナレーター: 夫が出発する女性を見送ったのかは、分かっていません。\n")
+    ok.append(check("㊹a 見送ったか不明の一文をWARN", "validate_yama_narrative.py", p,
+                    "[資料にない細部 YCP-053]", expected_code=0))
+
+    p = os.path.join(tmp, "unknown_detail_broadcast_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 7. 注意喚起\n"
+        "ナレーター: 当時の放送の文面や回数までは、記事に載っていません。\n")
+    ok.append(check("㊹b 記事にない細部の一文をWARN", "validate_yama_narrative.py", p,
+                    "[資料にない細部 YCP-053]", expected_code=0))
+
+    p = os.path.join(tmp, "unknown_detail_ten_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n<!-- PART: TEN -->\n\n## 20. 核心の答え\n"
+        "ナレーター: なぜクマが戻ったのかは、分かっていません。\n"
+        "\n<!-- PART: KETSU -->\n\n## 21. 結び\nナレーター: 山を離れます。\n")
+    ok.append(check_pass("㊹c 転の『分かっていません』は例外", "validate_yama_narrative.py", p,
+                         "[資料にない細部 YCP-053]", expected_code=0))
+
+    p = os.path.join(tmp, "unknown_detail_plain_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 2. 山菜採り\n"
+        "ナレーター: 女性は、春の山菜を採りに山へ入りました。\n")
+    ok.append(check_pass("㊹d 普通の文はWARNなし", "validate_yama_narrative.py", p,
+                         "[資料にない細部 YCP-053]", expected_code=0))
 
     # 再検証用の入力と生出力は tests/ 配下に保存する（削除しない）。
 

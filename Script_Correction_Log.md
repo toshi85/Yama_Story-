@@ -18,3 +18,9 @@
 | 2026-09-18 | せたな町 | §2（場面導入） | 「地図には、丸山という標高334メートルの山が記されています。」 | （削除） | YCP-051 | `Correction_Patterns.md`／`validate_yama_narrative.py` WARN |
 | 2026-09-18 | せたな町 | §2（場面導入） | 「山あいには、谷に沿って流れる川があります。」 | （削除） | YCP-051 | `Correction_Patterns.md`／`validate_yama_narrative.py` WARN |
 | 2026-09-18 | せたな町 | §2（場面導入） | 「52歳の女性が山に入った目的は、山菜採りでした。」 | 「町の北檜山区、新成地区の山へと52歳の女性が足を踏み入れます。」＋空行＋「目的は春の山菜採り。」 | YCP-052 | `Correction_Patterns.md`／`validate_yama_narrative.py` WARN |
+| 2026-09-18 | せたな町 | §3 | 「夫が出発する女性を見送ったのかは、分かっていません。」 | （削除） | YCP-053 | `Correction_Patterns.md`／`validate_yama_narrative.py` WARN |
+| 2026-09-18 | せたな町 | §2 | 「ただし、採っていた山菜の種類までは分かっていません。」 | （削除） | YCP-053 | `Correction_Patterns.md`／`validate_yama_narrative.py` WARN |
+| 2026-09-18 | せたな町 | §7 | 「当時の放送の文面や回数までは、記事に載っていません。」 | （削除） | YCP-053 | `Correction_Patterns.md`／`validate_yama_narrative.py` WARN |
+| 2026-09-18 | せたな町 | §17 | 「ただし、けがをした部位や入院の期間までは、公表された一覧に示されていません。」 | （削除） | YCP-053 | `Correction_Patterns.md`／`validate_yama_narrative.py` WARN |
+| 2026-09-18 | せたな町 | §24 | 「2014年の2人が事前にどんな情報を見ていたかまでは、確認できていません。」 | （削除） | YCP-053 | `Correction_Patterns.md`／`validate_yama_narrative.py` WARN |
+| 2026-09-18 | せたな町 | §22 | 「どちらの事故の直後に設けたか、日付まではこの答弁にありません。」 | （削除） | YCP-053 | `Correction_Patterns.md`／`validate_yama_narrative.py` WARN |
