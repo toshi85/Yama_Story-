@@ -14,11 +14,12 @@
 | 2 | `Channel_Master_Prompt_Yama.md` | 役割・トーン・Phase0〜3・視聴者ファースト6原則・維持率5原則・NGワード |
 | 3 | `Structure_Rules.md` | 5文サマリー・黄金比1:8:1・2フェーズ分離・1ナレ=1アセット |
 | 4 | `Correction_Patterns.md`（**Promoted TOP5だけでOK**） | 過去のユーザー修正＝最頻ミス（YCP） |
-| 5 | `Learned_Patterns_Yama.md` | 勝ちパターン（テーマ/尺/タイトル/曜日） |
-| 6 | `memory/yama-script-cut-patterns.md` | 編集でカットされやすい構成を初稿で回避 |
-| 7 | **`Fact_Sheet_Template.md`** | **素材シートの作り方（2026-08-19新設・必読）** |
-| 8 | **`Plot_Sheet_Template.md`** | **プロット表の作り方（2026-08-19新設・必読）** |
-| 9 | **`ASSET_CHECKLIST.md`** | **Phase2（画像プロンプト・座標）の単一索引。Phase2に入る時に開く** |
+| 5 | `Script_Correction_Log.md`（**型一覧を読む**） | 本人の人間チェックと、次作へ適用する全型 |
+| 6 | `Learned_Patterns_Yama.md` | 勝ちパターン（テーマ/尺/タイトル/曜日） |
+| 7 | `memory/yama-script-cut-patterns.md` | 編集でカットされやすい構成を初稿で回避 |
+| 8 | **`Fact_Sheet_Template.md`** | **素材シートの作り方（2026-08-19新設・必読）** |
+| 9 | **`Plot_Sheet_Template.md`** | **プロット表の作り方（2026-08-19新設・必読）** |
+| 10 | **`ASSET_CHECKLIST.md`** | **Phase2（画像プロンプト・座標）の単一索引。Phase2に入る時に開く** |
 | 補 | `Performance_Data/Viewer_Insights_Analysis.md` | 何がウケるか（自己責任論・救助感謝のバランス） |
 
 > ⚠️ **2026-08-19 追加: 読んだことを宣言してから着手する。**
@@ -342,6 +343,8 @@ python3 validate_yama_plot.py      <プロット表> # ★必須 執筆前。素
 >
 > 🚨 **2026-09-03 新設**
 > - `validate_yama_coherence.py`（新規・PostToolUse で自動実行。FAIL は exit 2 でブロック）
+
+- [ ] **人間に渡す前の先回り確認**: `Script_Correction_Log.md` の全型を全章に当て、該当を直してから渡す
 
 ---
 

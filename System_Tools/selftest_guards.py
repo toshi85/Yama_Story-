@@ -8,7 +8,7 @@
 
   python3 selftest_guards.py
 """
-import subprocess, sys, os, tempfile
+import subprocess, sys, os, tempfile, shutil
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PY = sys.executable
@@ -689,6 +689,15 @@ def main():
     proj = os.path.abspath(os.path.join(HERE, "..", ".."))
     hook = os.path.join(proj, ".claude", "hooks", "guard-yama-script-reference.sh")
     if os.path.exists(hook):
+        bash = shutil.which("bash")
+        if not bash and os.name == "nt":
+            bash = next((candidate for candidate in (
+                r"C:\Program Files\Git\bin\bash.exe",
+                r"C:\Program Files\Git\usr\bin\bash.exe",
+                r"C:\Program Files (x86)\Git\bin\bash.exe",
+            ) if os.path.exists(candidate)), None)
+        if not bash:
+            raise FileNotFoundError("bash が見つからないため未読ガードを自己試験できません")
         env = {**os.environ, "CLAUDE_PROJECT_DIR": tmp}
         import json as _json
         cases = [
@@ -698,7 +707,7 @@ def main():
         ]
         for payload, want, label in cases:
             payload["session_id"] = "selftest"
-            r = subprocess.run(["bash", hook], input=_json.dumps(payload), capture_output=True, text=True, env=env)
+            r = subprocess.run([bash, hook], input=_json.dumps(payload), capture_output=True, text=True, env=env)
             hit = r.returncode == want
             print(f"  {'✅' if hit else '❌'} {'⑩ 未読ガード: ' + label:<42} guard-yama-script-reference.sh")
             ok.append(hit)
@@ -873,6 +882,97 @@ def main():
         "ナレーター: 遺族のかたは、音のほうが有効だと話しています。\n")
     ok.append(check_pass("㊳b 熟語とひらがなの方は通す", "validate_yama_narrative.py", p,
                          "[単独の方]", expected_code=0))
+
+    # ㊴ フックで「でした。」が重なると平坦になる（YCP-045）。
+    p = os.path.join(tmp, "hook_deshita_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        HEAD + "\nナレーター: 女性が、戻りませんでした。\n"
+        "ナレーター: 落ちていたのは、女性の衣服でした。\n"
+        "\n## 2. 本編\nナレーター: 町は捜索を続けました。\n")
+    ok.append(check("㊴ フックの『でした』重複をWARN", "validate_yama_narrative.py", p,
+                    "[フックの『でした』重複 YCP-045]", expected_code=0))
+
+    p = os.path.join(tmp, "hook_deshita_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        HEAD + "\nナレーター: 女性が、消息不明。\n"
+        "ナレーター: 落ちていたのは、女性の衣服のみ。\n"
+        "ナレーター: 見つけたのは、無残な姿となった女性でした。\n")
+    ok.append(check_pass("㊴b 体言止めで切った版はWARNなし", "validate_yama_narrative.py", p,
+                         "[フックの『でした』重複 YCP-045]", expected_code=0))
+
+    # ㊵ フックの距離数値は本編へ回す（YCP-048）。日付・年齢は対象外。
+    p = os.path.join(tmp, "hook_distance_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        HEAD + "\nナレーター: 一年後、約8キロ離れた山で、また女性が襲われました。\n")
+    ok.append(check("㊵ フックの距離数値をWARN", "validate_yama_narrative.py", p,
+                    "[フックの距離数値 YCP-048]", expected_code=0))
+
+    p = os.path.join(tmp, "hook_distance_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        HEAD + "\nナレーター: 2013年4月16日、52歳の女性が、消息不明。\n"
+        "ナレーター: 一年後、また女性が襲われました。\n")
+    ok.append(check_pass("㊵b 日付・年齢と距離を外した版はWARNなし", "validate_yama_narrative.py", p,
+                         "[フックの距離数値 YCP-048]", expected_code=0))
+
+    # ㊶ 助数詞だけで個体を受けず、対象名を言う（YCP-049）。
+    p = os.path.join(tmp, "hook_ittou_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        HEAD + "\nナレーター: 襲ったのは、同じ一頭です。\n"
+        "ナレーター: なぜ、その1頭は捕まらなかったのか。\n")
+    ok.append(check("㊶ フックの『一頭』をWARN", "validate_yama_narrative.py", p,
+                    "[フックの『一頭』 YCP-049]", expected_code=0))
+
+    p = os.path.join(tmp, "hook_ittou_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        HEAD + "\nナレーター: 襲ったのは、あの時のクマです。\n"
+        "ナレーター: なぜ、クマは捕まらなかったのか。\n")
+    ok.append(check_pass("㊶b 『クマ』で言い直した版はWARNなし", "validate_yama_narrative.py", p,
+                         "[フックの『一頭』 YCP-049]", expected_code=0))
+
+    # ㊷ 人間修正の語句辞書は追記だけで検査へ反映される（YCP-046/047）。
+    p = os.path.join(tmp, "hook_word_map_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        HEAD + "\nナレーター: 不在に気づいた夫が、山へ向かいます。\n"
+        "ナレーター: 見つけたのは、帰らぬ人となった女性の姿。\n")
+    ok.append(check("㊷a 辞書の『不在』をWARN", "validate_yama_narrative.py", p,
+                    "『不在』→『異変』", expected_code=0))
+    ok.append(check("㊷a 辞書の『帰らぬ人』をWARN", "validate_yama_narrative.py", p,
+                    "『帰らぬ人』→『無残な姿』", expected_code=0))
+
+    p = os.path.join(tmp, "hook_word_map_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        HEAD + "\nナレーター: 異変に気づいた夫が、山へ向かいます。\n"
+        "ナレーター: 見つけたのは、無残な姿となった女性でした。\n")
+    ok.append(check_pass("㊷b 辞書で直した版はWARNなし", "validate_yama_narrative.py", p,
+                         "[人間修正の言い換え", expected_code=0))
+
+    # ㊸ 場面導入は広い位置→町→地区、資料読み上げなし、人物は動作で登場（YCP-050〜052）。
+    p = os.path.join(tmp, "scene_intro_bad.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 2. 山菜を採りに入った山\n"
+        "ナレーター: 女性が入ったのは、北檜山区の新成地区です。\n"
+        "ナレーター: 地図には、丸山という標高334メートルの山が記されています。\n"
+        "ナレーター: 山あいには、谷に沿って流れる川があります。\n"
+        "ナレーター: 52歳の女性が山に入った目的は、山菜採りでした。\n")
+    ok.append(check("㊸a 章冒頭の地名説明をWARN", "validate_yama_narrative.py", p,
+                    "[章冒頭の地名説明 YCP-050]", expected_code=0))
+    ok.append(check("㊸a 地図の読み上げをWARN", "validate_yama_narrative.py", p,
+                    "[地図・地形の読み上げ YCP-051]", expected_code=0))
+    ok.append(check("㊸a 目的の紹介文をWARN", "validate_yama_narrative.py", p,
+                    "[人物の目的紹介 YCP-052]", expected_code=0))
+
+    p = os.path.join(tmp, "scene_intro_ok.md")
+    open(p, "w", encoding="utf-8").write(
+        "# T\n\n## 2. 山菜を採りに入った山\n"
+        "ナレーター: 北海道の南西部、日本海に面したせたな町。\n"
+        "ナレーター: 町の北檜山区、新成地区の山へと52歳の女性が足を踏み入れます。\n\n"
+        "ナレーター: 目的は春の山菜採り。\n")
+    ok.append(check_pass("㊸b 広い位置から入る版はWARNなし", "validate_yama_narrative.py", p,
+                         "[章冒頭の地名説明 YCP-050]", expected_code=0))
+    ok.append(check_pass("㊸b 地図を読まない版はWARNなし", "validate_yama_narrative.py", p,
+                         "[地図・地形の読み上げ YCP-051]", expected_code=0))
+    ok.append(check_pass("㊸b 動作と体言止めの版はWARNなし", "validate_yama_narrative.py", p,
+                         "[人物の目的紹介 YCP-052]", expected_code=0))
 
     # 再検証用の入力と生出力は tests/ 配下に保存する（削除しない）。
 

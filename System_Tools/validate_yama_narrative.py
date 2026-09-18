@@ -6,7 +6,7 @@ import re
 
 CLOSING = "違反した箇所は、語を置き換えるのではなく、その文を丸ごと書き直してください（前後の文とのつながりも読み直す）。"
 
-# 出典: Correction_Patterns.md YCP-002・003・004・013・016・020・039・040・041、
+# 出典: Correction_Patterns.md YCP-002・003・004・013・016・020・039・040・041・045〜052、
 # Structure_Rules.md §0.3・§0.5、および本スクリプト Gate 5・8・9 の既存説明文。
 GOOD = {
     "show_dont_tell": "教訓や評価を先に言わず、人物の行動と起きた事実から視聴者が意味を受け取れる段落に組み直す。",
@@ -24,6 +24,13 @@ GOOD = {
     "enumeration_count": "個数を先に宣言せず、「〜としては、」で受け、「また、」「そして」で各項目をつなぐ段落に組み直す。例: 「根拠は、三つ。」を「根拠としては、」にして列挙へ続ける。",
     "attribution_order": "話者とセリフを続けて提示し、最後の行を「……」と話しています。で閉じる引用段落に組み直す。",
     "hou_kata": "人を指すなら「かた」、比較・方向なら「ほう」とひらがなで書く。熟語はそのまま。",
+    "hook_deshita": "§1の事実報告を「でした。」で重ねず、緊迫する要点だけを「消息不明。」「衣服のみ。」のように切る。",
+    "hook_distance": "距離の数値は必要な本編へ回し、§1には事件の進行と問いだけを残す。日付と年齢は残してよい。",
+    "hook_ittou": "助数詞だけで個体を受けず、「あの時のクマ」「クマ」のように対象名を言い直す。",
+    "hook_word_map": "前後の事実に合うことを確認し、推奨語を手掛かりに文全体をフック向けに書き直す。",
+    "chapter_location_intro": "広い位置を体言止めで置き、町、地区の順に絞ってから人物の動作へつなぐ。",
+    "map_reading": "資料の見た目を読み上げず、物語に必要な人物の動作や事件の事実を直接語る。",
+    "purpose_intro": "年齢・人物・行き先を動作の1文にまとめ、目的は空行後の短い体言止めで置く。",
 }
 
 
@@ -60,6 +67,65 @@ HOU_KATA_MASK_PATTERN = re.compile(
 
 def mask_hou_kata_compounds(content):
     return HOU_KATA_MASK_PATTERN.sub(lambda m: "〇" * len(m.group(0)), content)
+
+
+CORRECTION_WORD_MAP_PATH = _os.path.join(
+    _os.path.dirname(_os.path.abspath(__file__)), "correction_word_map.txt"
+)
+
+
+def load_correction_word_map(path=CORRECTION_WORD_MAP_PATH):
+    """Load append-only hook rewrites: source<TAB>replacement<TAB>YCP<TAB>reason."""
+    entries = []
+    try:
+        with open(path, encoding="utf-8-sig") as f:
+            for line_no, raw in enumerate(f, 1):
+                line = raw.rstrip("\r\n")
+                if not line or line.lstrip().startswith("#"):
+                    continue
+                parts = line.split("\t")
+                if len(parts) < 3 or not parts[0] or not parts[1]:
+                    print(f"[WARN] correction_word_map.txt L{line_no}: 形式が不正なため無視します")
+                    continue
+                source, replacement, pattern_id = parts[:3]
+                reason = parts[3] if len(parts) >= 4 else ""
+                entries.append((source, replacement, pattern_id, reason))
+    except FileNotFoundError:
+        pass
+    return entries
+
+
+def hook_narrator_lines(lines):
+    """Return (line number, content) for numbered chapter §1 only."""
+    in_hook = False
+    hook = []
+    for line_no, line in enumerate(lines, 1):
+        stripped = line.strip()
+        heading = re.match(r"^##\s+(\d+)\.", stripped)
+        if heading:
+            in_hook = heading.group(1) == "1"
+            continue
+        if in_hook and stripped.startswith("ナレーター:"):
+            hook.append((line_no, stripped.split(":", 1)[1].strip()))
+    return hook
+
+
+def chapter_first_narrator_lines(lines):
+    """Return the first narrator line in each numbered chapter."""
+    in_numbered_chapter = False
+    waiting_for_first = False
+    first_lines = []
+    for line_no, line in enumerate(lines, 1):
+        stripped = line.strip()
+        heading = re.match(r"^##\s+(\d+)\.", stripped)
+        if heading:
+            in_numbered_chapter = True
+            waiting_for_first = True
+            continue
+        if in_numbered_chapter and waiting_for_first and stripped.startswith("ナレーター:"):
+            first_lines.append((line_no, stripped.split(":", 1)[1].strip()))
+            waiting_for_first = False
+    return first_lines
 
 
 def document_description_level(content):
@@ -314,6 +380,79 @@ def validate_narrative_tone(file_path):
                 f"   > \"{content[:44]}\"\n"
                 f"   → ナレーターが一人称で話す形になっています。引用なら「」で囲み、導入文を付ける",
                 "colloquial_quote",
+            ))
+
+    # Gate 11: 人間修正から昇格したフック規則（2026-09-18追加・WARNのみ）
+    # §1に限定し、本文で必要な距離・助数詞・語を誤検出しない。
+    hook_lines = hook_narrator_lines(lines)
+    deshita_lines = [(line_no, content) for line_no, content in hook_lines
+                     if re.search(r"でした[。.!！]?$", content)]
+    if len(deshita_lines) >= 2:
+        locations = ", ".join(f"L{line_no}" for line_no, _ in deshita_lines)
+        warnings.append(with_good(
+            f"[フックの『でした』重複 YCP-045] {locations}: §1で『でした。』終わりが{len(deshita_lines)}回あります",
+            "hook_deshita",
+        ))
+
+    hook_distance_pattern = re.compile(
+        r"(?:約|およそ)?[0-9０-９]+(?:[.,．][0-9０-９]+)?\s*(?:キロメートル|キロ|km|㎞|メートル|m)(?![A-Za-z])",
+        re.IGNORECASE,
+    )
+    hook_ittou_pattern = re.compile(r"(?:一|1|１)頭")
+    word_map = load_correction_word_map()
+    for line_no, content in hook_lines:
+        distance = hook_distance_pattern.search(content)
+        if distance:
+            warnings.append(with_good(
+                f"[フックの距離数値 YCP-048] L{line_no}: 『{distance.group(0)}』は本編で出します\n"
+                f"   > 「{content}」",
+                "hook_distance",
+            ))
+        ittou = hook_ittou_pattern.search(content)
+        if ittou:
+            warnings.append(with_good(
+                f"[フックの『一頭』 YCP-049] L{line_no}: 『{ittou.group(0)}』は対象名で言い直します\n"
+                f"   > 「{content}」",
+                "hook_ittou",
+            ))
+        for source, replacement, pattern_id, reason in word_map:
+            if source in content:
+                suffix = f"（{reason}）" if reason else ""
+                warnings.append(with_good(
+                    f"[人間修正の言い換え {pattern_id}] L{line_no}: 『{source}』→『{replacement}』{suffix}\n"
+                    f"   > 「{content}」",
+                    "hook_word_map",
+                ))
+
+    # Gate 12: 人間修正から昇格した全章規則（2026-09-18追加・WARNのみ）
+    chapter_location_pattern = re.compile(
+        r"のは、.{0,25}(?:地区|区|町|村|市)(?:です|でした)。"
+    )
+    for line_no, content in chapter_first_narrator_lines(lines):
+        location_intro = chapter_location_pattern.search(content)
+        if location_intro:
+            warnings.append(with_good(
+                f"[章冒頭の地名説明 YCP-050] L{line_no}: 広い位置から町・地区へ絞ります\n"
+                f"   > 「{content}」",
+                "chapter_location_intro",
+            ))
+
+    map_reading_pattern = re.compile(r"地図(?:に|で)は|記されています")
+    purpose_intro_pattern = re.compile(r"(?:の目的は|入った目的は)、?.{0,20}でした。")
+    for line_no, content in narrator_lines:
+        map_reading = map_reading_pattern.search(content)
+        if map_reading:
+            warnings.append(with_good(
+                f"[地図・地形の読み上げ YCP-051] L{line_no}: 『{map_reading.group(0)}』は資料を読むメタ的な語りです\n"
+                f"   > 「{content}」",
+                "map_reading",
+            ))
+        purpose_intro = purpose_intro_pattern.search(content)
+        if purpose_intro:
+            warnings.append(with_good(
+                f"[人物の目的紹介 YCP-052] L{line_no}: 人物は説明でなく動作で登場させます\n"
+                f"   > 「{content}」",
+                "purpose_intro",
             ))
 
     # Gate 7: 1回しか出てこない固有名詞を列挙（WARNING）
