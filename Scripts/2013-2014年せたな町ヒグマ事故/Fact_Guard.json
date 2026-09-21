@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "rules": [
+    {
+      "id": "setana-2013-police-summary-label",
+      "pattern": "負傷件数\\s*(?:は|が)?\\s*159件",
+      "severity": "ERROR",
+      "message": "159件を負傷件数としない。函館方面本部管内の『クマ目撃情報や負傷件数』の合計159件（184頭）として扱う。",
+      "source": "Fact_Sheet_せたな町.md 素材#61"
+    },
+    {
+      "id": "setana-bear-flight-speculation",
+      "pattern": "クマは驚いたのか",
+      "severity": "ERROR",
+      "message": "逃走理由の心理推測は資料にない。男性が動きを見てナタで反撃し、クマを撃退した事実までに留める。",
+      "source": "道総研講演資料 p.68-69"
+    },
+    {
+      "id": "setana-town-intent-overclaim",
+      "pattern": "なんとしても、去年のクマを捕獲することを目的にしていました",
+      "severity": "WARN",
+      "message": "町の内心・目的を強めた表現。町長答弁にある捕獲許可と前年事故への対応を超えていないか確認する。",
+      "source": "Fact_Sheet_せたな町.md 素材#68"
+    }
+  ]
+}
