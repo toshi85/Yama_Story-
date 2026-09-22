@@ -1,0 +1,24 @@
+exit_code: 1
+
+--- [Safety Blockade]: Checking Master.md ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[FAILED]: Found 7 issues.
+Line 18: NG: '死' (Direct Death/Corpse reference). Use '悲劇', '帰らぬ人', '命を落とす'. (Exception: '必死', '不死' included in regex) 
+    → 直し方: 禁止語を使わず、起きた結果や行為を直接想像させない文全体に組み直す。
+   -> Context: "ナレーター: 六日後には、この墜落現場を取材しようとした二人が、いったん国道まで戻った後に再び山へ入り、翌朝、川で発見され、二人とも死亡が確認されました。"
+Line 18: NG: '死亡'. Use '帰らぬ人', '命が失われた'. 
+    → 直し方: 禁止語を使わず、起きた結果や行為を直接想像させない文全体に組み直す。
+   -> Context: "ナレーター: 六日後には、この墜落現場を取材しようとした二人が、いったん国道まで戻った後に再び山へ入り、翌朝、川で発見され、二人とも死亡が確認されました。"
+Line 183: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+    → 直し方: 前後の文をまとめて読み直し、体言止めや「のです」を織り交ぜて語尾の流れを組み直す。例: 走りました。そして転びました。立ち上がりました。→ファンさんは走りました。しかし、転倒。それでも立ち上がったのです。
+Line 350: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+    → 直し方: 前後の文をまとめて読み直し、体言止めや「のです」を織り交ぜて語尾の流れを組み直す。例: 走りました。そして転びました。立ち上がりました。→ファンさんは走りました。しかし、転倒。それでも立ち上がったのです。
+Line 371: NG: '死' (Direct Death/Corpse reference). Use '悲劇', '帰らぬ人', '命を落とす'. (Exception: '必死', '不死' included in regex) 
+    → 直し方: 禁止語を使わず、起きた結果や行為を直接想像させない文全体に組み直す。
+   -> Context: "ナレーター: 警察の発表を伝えた記事では、二人とも水に溺れたことが死因とされています。"
+Line 380: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+    → 直し方: 前後の文をまとめて読み直し、体言止めや「のです」を織り交ぜて語尾の流れを組み直す。例: 走りました。そして転びました。立ち上がりました。→ファンさんは走りました。しかし、転倒。それでも立ち上がったのです。
+Line 425: Repetitive Ending 'でした' (Count: 2). Change to noun stop (体言止め) or other form.
+    → 直し方: 前後の文をまとめて読み直し、体言止めや「のです」を織り交ぜて語尾の流れを組み直す。例: 走りました。そして転びました。立ち上がりました。→ファンさんは走りました。しかし、転倒。それでも立ち上がったのです。
+違反した箇所は、語を置き換えるのではなく、その文を丸ごと書き直してください（前後の文とのつながりも読み直す）。
+

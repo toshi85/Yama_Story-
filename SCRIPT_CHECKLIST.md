@@ -13,7 +13,7 @@
 | 1 | **本ファイル** | 全ルールの俯瞰とチェック項目 |
 | 2 | `Channel_Master_Prompt_Yama.md` | 役割・トーン・Phase0〜3・視聴者ファースト6原則・維持率5原則・NGワード |
 | 3 | `Structure_Rules.md` | 5文サマリー・黄金比1:8:1・2フェーズ分離・1ナレ=1アセット |
-| 4 | `Correction_Patterns.md`（**Promoted TOP5だけでOK**） | 過去のユーザー修正＝最頻ミス（YCP） |
+| 4 | `Correction_Patterns_Active.md`（**この一覧だけでOK**） | 過去のユーザー修正から昇格した現役ルール（YCP） |
 | 5 | `Script_Correction_Log.md`（**型一覧を読む**） | 本人の人間チェックと、次作へ適用する全型 |
 | 6 | `Learned_Patterns_Yama.md` | 勝ちパターン（テーマ/尺/タイトル/曜日） |
 | 7 | `memory/yama-script-cut-patterns.md` | 編集でカットされやすい構成を初稿で回避 |
@@ -242,7 +242,7 @@
 - [ ] **改行=呼吸設計**（YCP-019）：1ブロック2-3文・重要数字の後に空行・引用は独立行・緊迫シーンは1文1行
 - [ ] **エンディング個人化**（YCP-005）：最後は被害者の名前で呼ぶ＋感謝で締める
 
-→ 参照: `Correction_Patterns.md`（Promoted TOP5＋全YCP）
+→ 参照: `Correction_Patterns_Active.md`（現役YCP一覧。詳細が必要な項目だけ `Correction_Patterns.md` を検索）
 
 ---
 

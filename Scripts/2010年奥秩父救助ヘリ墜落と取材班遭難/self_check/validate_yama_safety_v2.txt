@@ -1,0 +1,9 @@
+exit_code: 1
+
+--- [Safety Blockade]: Checking Master.md ---
+    Targeting: NG Words, Pronouns, Repetitive Endings, & Term Consistency
+[FAILED]: Found 1 issues.
+Line 236: Repetitive Ending 'ました' (Count: 2). Change to noun stop (体言止め) or other form.
+    → 直し方: 前後の文をまとめて読み直し、体言止めや「のです」を織り交ぜて語尾の流れを組み直す。例: 走りました。そして転びました。立ち上がりました。→ファンさんは走りました。しかし、転倒。それでも立ち上がったのです。
+違反した箇所は、語を置き換えるのではなく、その文を丸ごと書き直してください（前後の文とのつながりも読み直す）。
+

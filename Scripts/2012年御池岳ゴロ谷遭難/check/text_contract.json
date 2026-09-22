@@ -1,0 +1,170 @@
+{
+  "script": "Yama_Story/Scripts/2012年御池岳ゴロ谷遭難/Master.md",
+  "sha256": "8caffbf0afbdb6b91f017b4f7f15a091916d187fc261fb9b1311a3e72f48662c",
+  "status": "PASS",
+  "errors": [],
+  "narration_chars": 8303,
+  "chars_per_minute": 326,
+  "excluded_reading_note_chars": 32,
+  "text_chars_including_reading_notes": 8335,
+  "counting_note": "kana-only parenthetic readings excluded; punctuation retained; not audio timing",
+  "estimated_minutes": 25.47,
+  "recorded_audio_duration": null,
+  "part_chars": {
+    "KI": 503,
+    "SHO": 7315,
+    "TEN-KETSU": 485
+  },
+  "part_percent": {
+    "KI": 6.058051306756594,
+    "SHO": 88.10068649885584,
+    "TEN-KETSU": 5.84126219438757
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "一度戻れた山から、六日後の救助へ",
+      "chars": 210
+    },
+    {
+      "id": 2,
+      "title": "家に残した予定と遅れた出発",
+      "chars": 293
+    },
+    {
+      "id": 3,
+      "title": "遅い時間から山へ入る",
+      "chars": 296
+    },
+    {
+      "id": 4,
+      "title": "台地で下山口を探す",
+      "chars": 267
+    },
+    {
+      "id": 5,
+      "title": "同行者ができ、確認が減った",
+      "chars": 360
+    },
+    {
+      "id": 6,
+      "title": "沢で滑落し、同じ斜面を登り返す",
+      "chars": 317
+    },
+    {
+      "id": 7,
+      "title": "上下に分かれて過ごす第一夜",
+      "chars": 289
+    },
+    {
+      "id": 8,
+      "title": "台地へ戻り、家へ電話する",
+      "chars": 316
+    },
+    {
+      "id": 9,
+      "title": "見つけた別の下山口を選ばない",
+      "chars": 404
+    },
+    {
+      "id": 10,
+      "title": "引き返した先に同行者がいない",
+      "chars": 317
+    },
+    {
+      "id": 11,
+      "title": "水を求めて、ロープの先へ",
+      "chars": 329
+    },
+    {
+      "id": 12,
+      "title": "谷底から呼びかけた夜",
+      "chars": 284
+    },
+    {
+      "id": 13,
+      "title": "来るはずの救助を待つ",
+      "chars": 396
+    },
+    {
+      "id": 14,
+      "title": "地図を取り戻しても、現在地を誤る",
+      "chars": 274
+    },
+    {
+      "id": 15,
+      "title": "下流を塞いでいた大きな滝",
+      "chars": 304
+    },
+    {
+      "id": 16,
+      "title": "雨の中、逃げ場を選ぶ",
+      "chars": 244
+    },
+    {
+      "id": 17,
+      "title": "コンパスが変えた現在地",
+      "chars": 211
+    },
+    {
+      "id": 18,
+      "title": "上へ向かっても夜が来る",
+      "chars": 289
+    },
+    {
+      "id": 19,
+      "title": "荷物を投げ、再び谷底へ",
+      "chars": 364
+    },
+    {
+      "id": 20,
+      "title": "山の外では情報が集められていた",
+      "chars": 186
+    },
+    {
+      "id": 21,
+      "title": "無線の情報を受け、谷を進む",
+      "chars": 357
+    },
+    {
+      "id": 22,
+      "title": "見つけにくい場所で上がった手",
+      "chars": 268
+    },
+    {
+      "id": 23,
+      "title": "発見地点から、そのままは運べない",
+      "chars": 386
+    },
+    {
+      "id": 24,
+      "title": "一夜を越す準備から、空への引き渡しへ",
+      "chars": 302
+    },
+    {
+      "id": 25,
+      "title": "引き上げた後にも命綱を外さない",
+      "chars": 273
+    },
+    {
+      "id": 26,
+      "title": "谷に残った人たちの帰還",
+      "chars": 282
+    },
+    {
+      "id": 27,
+      "title": "病院で知った体の状態と周囲への影響",
+      "chars": 284
+    },
+    {
+      "id": 28,
+      "title": "歩き直し、技術を振り返る",
+      "chars": 201
+    }
+  ],
+  "scope": "user 25-minute text contract and structural measurements only; not release approval",
+  "shared_gate_overrides": [
+    "user requested transcript-only competitor analysis, not thumbnail/video assessment",
+    "user minimum 25 minutes, not default 26 minutes / 8,800 chars"
+  ]
+}

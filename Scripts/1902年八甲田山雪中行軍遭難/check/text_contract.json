@@ -1,0 +1,110 @@
+{
+  "script": "Yama_Story/Scripts/1902年八甲田山雪中行軍遭難/Master.md",
+  "sha256": "561c271d529eca7e74632696d1b652b05a42db6c753d24bd42350a3f4beaf51d",
+  "status": "PASS",
+  "errors": [],
+  "narration_chars": 8285,
+  "chars_per_minute": 326,
+  "excluded_reading_note_chars": 7,
+  "text_chars_including_reading_notes": 8292,
+  "counting_note": "kana-only parenthetic readings excluded; punctuation retained; not audio timing",
+  "estimated_minutes": 25.41,
+  "recorded_audio_duration": null,
+  "part_chars": {
+    "KI": 728,
+    "SHO": 6582,
+    "TEN-KETSU": 975
+  },
+  "part_percent": {
+    "KI": 8.786964393482197,
+    "SHO": 79.44477972238985,
+    "TEN-KETSU": 11.76825588412794
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "一泊の行軍が九日間に変わる",
+      "chars": 224
+    },
+    {
+      "id": 2,
+      "title": "田代への計画と備え",
+      "chars": 504
+    },
+    {
+      "id": 3,
+      "title": "装備・案内人・監督の判断",
+      "chars": 592
+    },
+    {
+      "id": 4,
+      "title": "23日・田代へ届かず森林で露営",
+      "chars": 393
+    },
+    {
+      "id": 5,
+      "title": "第一露営・雪上の炊事",
+      "chars": 638
+    },
+    {
+      "id": 6,
+      "title": "24日・帰営を決めても道を失う",
+      "chars": 805
+    },
+    {
+      "id": 7,
+      "title": "炊具を捨てた二夜目",
+      "chars": 529
+    },
+    {
+      "id": 8,
+      "title": "25日・誤進、指揮交代、斥候",
+      "chars": 682
+    },
+    {
+      "id": 9,
+      "title": "見つけたはずの道と分離",
+      "chars": 565
+    },
+    {
+      "id": 10,
+      "title": "26日・一キロに二時間半",
+      "chars": 250
+    },
+    {
+      "id": 11,
+      "title": "27日・高所と低所へ分かれる",
+      "chars": 598
+    },
+    {
+      "id": 12,
+      "title": "28〜30日・二方向とも出られない",
+      "chars": 441
+    },
+    {
+      "id": 13,
+      "title": "31日・雪面の変化を見て再挑戦",
+      "chars": 375
+    },
+    {
+      "id": 14,
+      "title": "山の外では、何が起きていたか",
+      "chars": 714
+    },
+    {
+      "id": 15,
+      "title": "調査が問題にした準備と救護",
+      "chars": 757
+    },
+    {
+      "id": 16,
+      "title": "帰らなかった人を迎える地域",
+      "chars": 218
+    }
+  ],
+  "scope": "user 25-minute text contract and structural measurements only; not release approval",
+  "shared_gate_overrides": [
+    "user requested transcript-only competitor analysis, not thumbnail/video assessment",
+    "user minimum 25 minutes, not default 26 minutes / 8,800 chars"
+  ]
+}

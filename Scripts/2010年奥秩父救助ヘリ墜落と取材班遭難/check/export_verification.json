@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "export identity only; not content or release approval",
+  "source_script_sha256": "e3f97bf12e15c9ee010cffdba42b2c77366201ef14a7db1ae2b84e650d4476a6",
+  "narration_chars": 8262,
+  "narration_sha256": "65f7e474f220cdc23343f43b51f348d76797900593ac7fccf9db5e4e0c37669a",
+  "outputs": [
+    {
+      "path": "Yama_Story/Scripts/2010年奥秩父救助ヘリ墜落と取材班遭難/台本本文.txt",
+      "sha256": "65f7e474f220cdc23343f43b51f348d76797900593ac7fccf9db5e4e0c37669a",
+      "read_back_exact_match": true
+    },
+    {
+      "path": "Yama_Story/Scripts/2010年奥秩父救助ヘリ墜落と取材班遭難/台本本文.md",
+      "sha256": "65f7e474f220cdc23343f43b51f348d76797900593ac7fccf9db5e4e0c37669a",
+      "read_back_exact_match": true
+    },
+    {
+      "path": "Yama_Story/Scripts/2010年奥秩父救助ヘリ墜落と取材班遭難/台本本文.html",
+      "sha256": "4e97801be4a4b3a21075a746b766ce9bf90d752285611fd69e99db112299b426",
+      "read_back_exact_match": true
+    }
+  ]
+}

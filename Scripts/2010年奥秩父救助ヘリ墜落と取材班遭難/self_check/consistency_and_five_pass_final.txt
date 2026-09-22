@@ -1,0 +1,8 @@
+exit_code: 0
+==============================================================
+[Yama Consistency Validator] Master.md
+==============================================================
+
+[PASS] 台本・プロット表・素材シートは整合しています
+{"status": "PASS", "completed_passes": 5, "current_sha256": "ad034a1b25eb16a13b9a581e7658dbeac2f4497e17bd0092f51bff12c7ad4348"}
+e3f97bf12e15c9ee010cffdba42b2c77366201ef14a7db1ae2b84e650d4476a6  Yama_Story/Scripts/2010年奥秩父救助ヘリ墜落と取材班遭難/Master.md

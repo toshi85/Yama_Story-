@@ -8,7 +8,13 @@
     八幡平 8,651/126=68.66字、戸沢村 8,869/106=83.67字。
   - 3値のうち低い八幡平の68.66字を、尺を過大評価しない値として採用した。
 
-無印・〔細部〕・〔外部〕は数えない。8,100字（323字/分で約25分）未満はFAIL。
+無印・〔細部〕・〔外部〕は数えない。狙いは25〜30分（2026-09-19 本人）＝8,200〜9,800字。
+8,200字未満はFAIL。9,800字を超えたら「多すぎ」と出すが、削れば済むのでPASSとする。
+
+読みの速さ（2026-09-19 実測に更新）:
+  AI検証「停止」の完成ナレーション 1,157.2秒 / 6,290字（記号抜き）＝ 326字/分。
+  以前の323字/分（推定値）とほぼ一致したので、実測値の326に置き換えた。
+  数え方＝本文から「」『』（）()、。・…—- と空白・改行を除いた文字数。
 """
 import re
 import sys
@@ -16,8 +22,9 @@ from dataclasses import dataclass
 from pathlib import Path
 
 CHARS_PER_SCENE = 8651 / 126
-CPS = 323
-MIN_CHARS = 8100
+CPS = 326
+MIN_CHARS = 8200   # 25分
+MAX_CHARS = 9800   # 30分
 ROW = re.compile(r"^\|\s*(\d+)\s*\|([^|]*)\|")
 
 
@@ -40,10 +47,12 @@ def estimate(path: Path) -> Estimate:
 
 def format_result(path: Path, result: Estimate) -> str:
     status = "PASS" if result.chars >= MIN_CHARS else "FAIL"
+    note = "" if result.chars <= MAX_CHARS else "　※30分を超える。削るか2本に分ける"
     return (
         f"[{status}] {path.name}: 〔場面〕{result.scene_count}行 × "
         f"{CHARS_PER_SCENE:.2f}字 = {result.chars:,}字 / {result.minutes:.1f}分 "
-        f"（基準 {MIN_CHARS:,}字・約{MIN_CHARS / CPS:.1f}分）"
+        f"（狙い {MIN_CHARS:,}〜{MAX_CHARS:,}字・"
+        f"{MIN_CHARS / CPS:.0f}〜{MAX_CHARS / CPS:.0f}分）{note}"
     )
 
 

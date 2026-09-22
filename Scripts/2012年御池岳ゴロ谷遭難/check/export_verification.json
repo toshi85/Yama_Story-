@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "export identity only; not content or release approval",
+  "source_script_sha256": "8caffbf0afbdb6b91f017b4f7f15a091916d187fc261fb9b1311a3e72f48662c",
+  "narration_chars": 8303,
+  "narration_sha256": "54ee4e297deca71d415dacd2a1ef597bd20068ce43f3ba8df9a4bd1acc5be5e7",
+  "outputs": [
+    {
+      "path": "Yama_Story/Scripts/2012年御池岳ゴロ谷遭難/台本本文.txt",
+      "sha256": "54ee4e297deca71d415dacd2a1ef597bd20068ce43f3ba8df9a4bd1acc5be5e7",
+      "read_back_exact_match": true
+    },
+    {
+      "path": "Yama_Story/Scripts/2012年御池岳ゴロ谷遭難/台本本文.md",
+      "sha256": "54ee4e297deca71d415dacd2a1ef597bd20068ce43f3ba8df9a4bd1acc5be5e7",
+      "read_back_exact_match": true
+    },
+    {
+      "path": "Yama_Story/Scripts/2012年御池岳ゴロ谷遭難/台本本文.html",
+      "sha256": "2a4d30074e532a9cd3c243d022e4ece01c4ce9b00e97cbbf8e840ba1fce97fce",
+      "read_back_exact_match": true
+    }
+  ]
+}

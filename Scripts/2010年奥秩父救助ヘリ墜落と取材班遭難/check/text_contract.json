@@ -1,0 +1,145 @@
+{
+  "script": "Yama_Story/Scripts/2010年奥秩父救助ヘリ墜落と取材班遭難/Master.md",
+  "sha256": "e3f97bf12e15c9ee010cffdba42b2c77366201ef14a7db1ae2b84e650d4476a6",
+  "status": "PASS",
+  "errors": [],
+  "narration_chars": 8262,
+  "chars_per_minute": 326,
+  "excluded_reading_note_chars": 32,
+  "text_chars_including_reading_notes": 8294,
+  "counting_note": "kana-only parenthetic readings excluded; punctuation retained; not audio timing",
+  "estimated_minutes": 25.34,
+  "recorded_audio_duration": null,
+  "part_chars": {
+    "KI": 381,
+    "SHO": 7399,
+    "TEN-KETSU": 482
+  },
+  "part_percent": {
+    "KI": 4.611474219317357,
+    "SHO": 89.55458726700557,
+    "TEN-KETSU": 5.833938513677076
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "救助と取材が向かった谷",
+      "chars": 217
+    },
+    {
+      "id": 2,
+      "title": "九人で入った沢",
+      "chars": 164
+    },
+    {
+      "id": 3,
+      "title": "二つの救出方法が届かない",
+      "chars": 393
+    },
+    {
+      "id": 4,
+      "title": "翌朝、尾根から通報する",
+      "chars": 274
+    },
+    {
+      "id": 5,
+      "title": "空と地上の救助が動く",
+      "chars": 791
+    },
+    {
+      "id": 6,
+      "title": "上空から選んだ場所へ",
+      "chars": 529
+    },
+    {
+      "id": 7,
+      "title": "地表近くで位置を直す",
+      "chars": 362
+    },
+    {
+      "id": 8,
+      "title": "着地した二人と墜落した機体",
+      "chars": 607
+    },
+    {
+      "id": 9,
+      "title": "地上隊への知らせが変わる",
+      "chars": 130
+    },
+    {
+      "id": 10,
+      "title": "谷へ入った次の救助隊",
+      "chars": 424
+    },
+    {
+      "id": 11,
+      "title": "到着した隊は署で待機する",
+      "chars": 278
+    },
+    {
+      "id": 12,
+      "title": "参加者が谷を離れて下山する",
+      "chars": 336
+    },
+    {
+      "id": 13,
+      "title": "取材依頼とガイドの懸念",
+      "chars": 353
+    },
+    {
+      "id": 14,
+      "title": "沢へ入り、引き返す",
+      "chars": 422
+    },
+    {
+      "id": 15,
+      "title": "国道へ戻った後の別計画",
+      "chars": 386
+    },
+    {
+      "id": 16,
+      "title": "運転手の連絡から捜索要請へ",
+      "chars": 226
+    },
+    {
+      "id": 17,
+      "title": "下流での発見と残された空白",
+      "chars": 322
+    },
+    {
+      "id": 18,
+      "title": "翌年、会社が説明した伝達の食い違い",
+      "chars": 289
+    },
+    {
+      "id": 19,
+      "title": "映像と木片を突き合わせる",
+      "chars": 557
+    },
+    {
+      "id": 20,
+      "title": "同型機で見える範囲を試す",
+      "chars": 242
+    },
+    {
+      "id": 21,
+      "title": "長さと確認手順を検証する",
+      "chars": 478
+    },
+    {
+      "id": 22,
+      "title": "事故後に変えられた運用",
+      "chars": 313
+    },
+    {
+      "id": 23,
+      "title": "分かった原因と分からない経路",
+      "chars": 169
+    }
+  ],
+  "scope": "user 25-minute text contract and structural measurements only; not release approval",
+  "shared_gate_overrides": [
+    "user requested transcript-only competitor analysis, not thumbnail/video assessment",
+    "user minimum 25 minutes, not default 26 minutes / 8,800 chars"
+  ]
+}

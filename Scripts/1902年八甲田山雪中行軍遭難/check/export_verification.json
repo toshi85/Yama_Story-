@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "export identity only; not content or release approval",
+  "source_script_sha256": "561c271d529eca7e74632696d1b652b05a42db6c753d24bd42350a3f4beaf51d",
+  "narration_chars": 8285,
+  "narration_sha256": "720696f2357a7b84cd0d89cf5f5b4ccf90424565acf30ebafde86542f2bf3da7",
+  "outputs": [
+    {
+      "path": "Yama_Story/Scripts/1902年八甲田山雪中行軍遭難/台本本文.txt",
+      "sha256": "720696f2357a7b84cd0d89cf5f5b4ccf90424565acf30ebafde86542f2bf3da7",
+      "read_back_exact_match": true
+    },
+    {
+      "path": "Yama_Story/Scripts/1902年八甲田山雪中行軍遭難/台本本文.md",
+      "sha256": "720696f2357a7b84cd0d89cf5f5b4ccf90424565acf30ebafde86542f2bf3da7",
+      "read_back_exact_match": true
+    },
+    {
+      "path": "Yama_Story/Scripts/1902年八甲田山雪中行軍遭難/台本本文.html",
+      "sha256": "1be0e78d6cb9ac30b80ea449df25574c927c721770aad64ea83fd363ff2b0ca8",
+      "read_back_exact_match": true
+    }
+  ]
+}
