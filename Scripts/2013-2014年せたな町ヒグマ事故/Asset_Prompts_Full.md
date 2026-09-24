@@ -1,3 +1,32 @@
+# 固定キャラ基準プロンプト（4人）
+
+以下は人物の再現用デザインであり、実在人物の顔や服装を特定したものではない。実写動画は写実スタイル、キャラアニメーションはカートゥンスタイルで生成する。顔が特定できる正面描写は作らない。ハンター・町職員・研究者・住民は複数人を含み得るため、固定キャラにはしない。
+対応カット: CHAR-01＝ASSET-002／CHAR-02＝ASSET-003・019・022／CHAR-03＝ASSET-008・063・075・076／CHAR-04＝ASSET-077・080・085。
+
+### CHAR-01｜2013年に山菜採りへ出た女性（52歳・冒頭の実写動画用）
+
+```text
+A Japanese woman aged 52 gathering spring wild vegetables in the forested hills near Setana, Hokkaido, in early spring. Consistent design for this reconstruction: muted olive field jacket, dark trousers, short dark hair mostly hidden by a plain brown outdoor hat, small woven gathering basket. Show her only from behind or over the shoulder; no identifiable face. Photorealistic live-action Japanese documentary style, natural light, restrained colors, no resemblance claim to the real person, no readable text, no logo, no blood, no wounds, no gore. One person, full body, 16:9.
+```
+
+### CHAR-02｜2013年の女性の夫（50代・本編のキャラ演出用）
+
+```text
+One full-body Japanese man in his 50s, the husband searching for his wife in the Setana incident reconstruction. Consistent design: dark blue field jacket, gray trousers, short black hair with a little gray, medium build. Rear or three-quarter back view only, face not identifiable. Cute Japanese cartoon character design, thick black outlines, flat cel-shaded colors, restrained expression, neutral standing pose, plain white background, no text, no logo, no blood, no wounds. Generate one character reference image, square 1:1.
+```
+
+### CHAR-03｜2014年に襲われた女性（40代半ば・本編のキャラ演出用）
+
+```text
+One full-body Japanese woman in her mid 40s in the 2014 Setana incident reconstruction. Consistent design: maroon field jacket, charcoal trousers, dark hair tied low, medium build. Rear or three-quarter back view only, face not identifiable. Cute Japanese cartoon character design, thick black outlines, flat cel-shaded colors, restrained expression, neutral standing pose, plain white background, no text, no logo, no blood, no wounds. Generate one character reference image, square 1:1.
+```
+
+### CHAR-04｜2014年に同行した男性（60代前半・本編のキャラ演出用）
+
+```text
+One full-body Japanese man in his early 60s accompanying the woman in the 2014 Setana incident reconstruction. Consistent design: gray field jacket, dark trousers, short graying hair, sturdy build. Rear or three-quarter back view only, face not identifiable. Cute Japanese cartoon character design, thick black outlines, flat cel-shaded colors, restrained expression, neutral standing pose, plain white background, no text, no logo, no blood, no wounds. Generate one character reference image, square 1:1.
+```
+
 ---
 
 ナレーター: 2013年4月16日、北海道せたな町。
@@ -20,6 +49,7 @@ Animate the frozen frame for 8 seconds. The aerial camera advances toward the fo
 
 【制作メモ】ASSET-002 [Lovart動画] 台本L2
 シーン: 春の山林で山菜を採る女性の後ろ姿。
+キャラ参照: CHAR-01（同一人物のデザインを維持。顔は特定させない）
 静止画プロンプト（16:9・フォトリアル）:
 ```
 A lone woman gathering spring wild vegetables in mountain woods in early spring in the Setana and Imakane area of southwestern Hokkaido, Japan. Documentary reconstruction, not a likeness of any real person. Any people are Japanese and filmed from behind, over a shoulder, or as hands only; no face visible.  No blood, no wounds, no gore. Photorealistic, restrained Japanese documentary aesthetic, natural light, shot on RED camera. No readable text, no real institution name, no crest, no emblem, no logo. 16:9 aspect ratio. Generate 1 image.
@@ -36,6 +66,7 @@ Animate the frozen frame for 8 seconds. The woman bends to pick one wild plant, 
 
 【制作メモ】ASSET-003 [Lovart動画] 台本L4
 シーン: 妻を探して山道を上る夫の背中。
+キャラ参照: CHAR-02（同一人物のデザインを維持。顔は特定させない）
 静止画プロンプト（16:9・フォトリアル）:
 ```
 A Japanese man in his 50s wearing a dark blue field jacket walks uphill on a narrow forest path in early spring near Setana, southwestern Hokkaido. Rear view only, his face never visible. Documentary reconstruction, not a likeness of the real husband. Damp ground, bare branches and subdued daylight. Photorealistic live-action documentary footage, natural light, shot on RED camera. No readable text, no logo, no blood, no wounds, no gore. 16:9 aspect ratio. Generate 1 image.
@@ -101,6 +132,7 @@ Two laboratory DNA sample cards that do not match in early spring in the Setana 
 
 【制作メモ】ASSET-008 [Lovart動画] 台本L11
 シーン: 翌春の山道を歩く別の女性の後ろ姿。
+キャラ参照: CHAR-03（同一人物のデザインを維持。顔は特定させない）
 静止画プロンプト（16:9・フォトリアル）:
 ```
 A different woman on a remote spring mountain path in early spring in the Setana and Imakane area of southwestern Hokkaido, Japan. Documentary reconstruction, not a likeness of any real person. Any people are Japanese and filmed from behind, over a shoulder, or as hands only; no face visible.  No blood, no wounds, no gore. Photorealistic, restrained Japanese documentary aesthetic, natural light, shot on RED camera. No readable text, no real institution name, no crest, no emblem, no logo. 16:9 aspect ratio. Generate 1 image.
@@ -236,6 +268,7 @@ An untouched family dining table at noon in early spring in the Setana and Imaka
 
 【制作メモ】ASSET-019 [キャラアニメーション] 台本L29
 シーン: 夫が家を出て山へ向かう後ろ姿。
+キャラ参照: CHAR-02（同一人物のデザインを維持。顔は特定させない）
 キャラプロンプト（1:1）:
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese husband in his 50s wearing a dark blue field jacket, seen from behind to avoid a real-person likeness, stepping out of a house toward the mountain with one arm forward, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
@@ -275,6 +308,7 @@ A woman's abandoned outer garment deeper in the woods in early spring in the Set
 
 【制作メモ】ASSET-022 [キャラアニメーション] 台本L34
 シーン: 山道で電話をかける夫の手元。
+キャラ参照: CHAR-02（同一人物のデザインを維持。顔は特定させない）
 キャラプロンプト（1:1）:
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese husband in his 50s wearing a dark blue field jacket, seen from behind to avoid a real-person likeness, holding a telephone handset against one ear while reaching for a notebook, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
@@ -834,6 +868,7 @@ Animate the frozen frame for 8 seconds. Evening shadow climbs the tree trunks; t
 
 【制作メモ】ASSET-063 [キャラアニメーション] 台本L113
 シーン: 山道の女性の背後に迫るヒグマの影。
+キャラ参照: CHAR-03（同一人物のデザインを維持。顔は特定させない）
 キャラプロンプト（1:1）:
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese woman in her mid 40s wearing a maroon field jacket, seen from behind to avoid a real-person likeness, turning sharply sideways with arms raised to shield the body, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
@@ -994,6 +1029,7 @@ Animate the frozen frame for 8 seconds. The older man leads downhill and the wom
 
 【制作メモ】ASSET-075 [キャラアニメーション] 台本L134
 シーン: 女性の背後から飛び出すヒグマを横から写す。
+キャラ参照: CHAR-03（同一人物のデザインを維持。顔は特定させない）
 キャラプロンプト（1:1）:
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese woman in her mid 40s wearing a maroon field jacket, seen from behind to avoid a real-person likeness, turning sharply sideways with arms raised to shield the body, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
@@ -1011,6 +1047,7 @@ An adult male Hokkaido brown bear on all fours on a narrow spring mountain path,
 
 【制作メモ】ASSET-076 [キャラアニメーション] 台本L136
 シーン: 女性が身をよじる瞬間と迫るクマの影。
+キャラ参照: CHAR-03（同一人物のデザインを維持。顔は特定させない）
 キャラプロンプト（1:1）:
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese woman in her mid 40s wearing a maroon field jacket, seen from behind to avoid a real-person likeness, turning sharply sideways with arms raised to shield the body, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
@@ -1028,6 +1065,7 @@ An adult male Hokkaido brown bear on all fours on a narrow spring mountain path,
 
 【制作メモ】ASSET-077 [キャラアニメーション] 台本L137
 シーン: 男性へ向かうヒグマを横から写す。
+キャラ参照: CHAR-04（同一人物のデザインを維持。顔は特定させない）
 キャラプロンプト（1:1）:
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese man in his early 60s wearing a gray field jacket, seen from behind to avoid a real-person likeness, turning sharply sideways with arms raised to shield the body, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
@@ -1072,6 +1110,7 @@ A male Hokkaido brown bear seen at human scale on the path in early spring in th
 
 【制作メモ】ASSET-080 [キャラアニメーション] 台本L142
 シーン: 男性がナタで応戦する直前の構え。
+キャラ参照: CHAR-04（同一人物のデザインを維持。顔は特定させない）
 キャラプロンプト（1:1）:
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese man in his early 60s wearing a gray field jacket, seen from behind to avoid a real-person likeness, holding a short brush-clearing hatchet in the right hand and bracing sideways, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
@@ -1143,6 +1182,7 @@ Animate the frozen frame for 8 seconds. The woman sits under a blanket while a n
 
 【制作メモ】ASSET-085 [キャラアニメーション] 台本L152
 シーン: 無事に立つ男性の後ろ姿。
+キャラ参照: CHAR-04（同一人物のデザインを維持。顔は特定させない）
 キャラプロンプト（1:1）:
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese man in his early 60s wearing a gray field jacket, seen from behind to avoid a real-person likeness, standing upright with arms relaxed and no visible wound, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
