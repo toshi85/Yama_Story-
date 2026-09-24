@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-09-24T17:22:51.354584+09:00",
+  "upload_count": 56,
+  "known_pinned_count": 28,
+  "edited_count": 27,
+  "returned_count": 27,
+  "exact_text_match_count": 27,
+  "target_remaining_count": 0,
+  "product_links_preserved_count": 27,
+  "untouched_known_pinned": [
+    "ayJLfUeouG0"
+  ],
+  "unmapped_match_count": 0,
+  "comments_disabled_count": 4,
+  "plan_sha256": "780cb69d295f93727f6d2f105069d181b734cc03e41aae12c7fdaaa0d65118db",
+  "result_sha256": "8fe1df269bd273001a25d181aab7a7254d3d2a1f9bfd15de09c805e3b6f89bd9"
+}
