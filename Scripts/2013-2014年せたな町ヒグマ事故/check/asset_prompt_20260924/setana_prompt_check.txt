@@ -1,0 +1,64 @@
+============================================================
+Yama プロンプト品質バリデーション: Asset_Prompts_Full.md
+============================================================
+
+✅ PASS: ナレーター:プレフィックス
+✅ PASS: プロンプト内禁止ワード
+✅ PASS: Generate表現
+
+⚠️  WARNING: 地名なし背景プロンプト (27件)
+   L13 (ASSET-001): Animate the frozen frame for 8 seconds. The aerial camera advances toward the fo
+   L111 (ASSET-008): Animate the frozen frame for 8 seconds. The second woman walks deeper along the 
+   L154 (ASSET-011): Animate the frozen frame for 8 seconds. The camera travels above an empty wooded
+   L300 (ASSET-023): Animate the frozen frame for 8 seconds. Police officers and firefighters separat
+   L429 (ASSET-033): Animate the frozen frame for 8 seconds. Hunters spread from the road onto separa
+✅ PASS: 安全ワード
+✅ PASS: カメラ専門用語
+✅ PASS: CHAR参照タグ
+✅ PASS: 複数キャラCHAR整合性
+✅ PASS: CHAR番号再利用
+✅ PASS: キャラプロンプト環境要素
+✅ PASS: キャラプロンプト全身ルール
+✅ PASS: 1ナレーション=1アセット
+✅ PASS: 孤立アセットなし
+✅ PASS: ナレーター行交互配置
+
+❌ FAIL: 静止画アセットのナレーション25文字超過 (48件)
+   L90: 27字 → ASSET-007 (L92) [静止画]
+   ナレーション: けれども、その年に付近で捕まったどのクマとも、一致しません。
+   → キャラアニメーション or 動画に変更し制作メモも書き直す
+   L251: 26字 → ASSET-020 (L253) [静止画]
+   ナレーション: しばらく歩いて行くと、川の近くに奥さんのワゴン車を発見。
+   → キャラアニメーション or 動画に変更し制作メモも書き直す
+   L362: 35字 → ASSET-028 (L364) [静止画]
+   ナレーション: 事故記録によると、奥さんは両手両足の筋肉を食い取られた状態だったとのこと。
+   → キャラアニメーション or 動画に変更し制作メモも書き直す
+   L381: 65字 → ASSET-030 (L383) [静止画]
+   ナレーション: また、現場から南へおよそ200メートルには、38世帯が暮らす新成地区の集落があり、かなり民家から近い
+   → キャラアニメーション or 動画に変更し制作メモも書き直す
+   L408: 42字 → ASSET-032 (L410) [静止画]
+   ナレーション: ちなみにこの年は、今回の事件が起きるまで、町にはクマの目撃情報が寄せられていませんでした。
+   → キャラアニメーション or 動画に変更し制作メモも書き直す
+   ...他43件
+✅ PASS: 静止画連続 (最大2)
+✅ PASS: 映像密度 0.0字/ASSET (0字/0ASSET)
+✅ PASS: 台本突合チェック (0/0行カバー)
+✅ PASS: ASSET構造順序（ナレーター→制作メモ→プロンプト）
+✅ PASS: シーン行（全ASSETに「シーン:」あり）
+✅ PASS: Google Earthプロンプト禁止（```ブロックなし）
+✅ PASS: Google Earth連続（2回以内）
+✅ PASS: [Lovart動画]静止画ブロックに動き記述なし
+✅ PASS: 冒頭・末尾動画ルール（KI先頭/TEN-KETSU末尾が[Lovart動画]）
+✅ PASS: 末尾ゴミ行なし
+✅ PASS: 背景プロンプト人物矛盾なし
+✅ PASS: 【AI動画】2ブロック構成
+
+⚠️  WARNING(強): キャラ系プロンプト比率 (37/114 = 32.5%)
+   目標60%以上。背景静止画偏重の可能性。リファレンス羅臼岳=72.8%
+✅ PASS: キャラプロンプト固定スタイルヘッダー
+✅ PASS: Generate指示の使い分け
+✅ PASS: キャラプロンプトにシーン状況描写なし
+✅ PASS: 背景プロンプト末尾Generate指示
+
+============================================================
+結果: ❌ FAIL — 修正が必要です
