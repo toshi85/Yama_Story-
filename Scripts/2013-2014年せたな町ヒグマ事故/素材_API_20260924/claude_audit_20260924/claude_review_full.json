@@ -1,0 +1,2965 @@
+{
+ "reviewed_at": "2026-09-24/25",
+ "reviewer": "Claude（本人指示で全件検収）",
+ "source": "Asset_Prompts_Full.md",
+ "cuts": [
+  {
+   "asset": "ASSET-001",
+   "category": "Lovart動画",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "静止画: 夜明けの海岸線と山林の空撮、人物なし。動画6コマ: カメラが海岸へ前進し霧が流れる。台本どおり。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-001_still.png": "5a695684522dec9ae278c50ccfa05777f0c6e14ecaab8da2d5ded50f336ba634",
+    "動画/ASSET-001_video.mp4": "6ecb6c48bba0082b50e36c7bd089d1ce8ab6a67c4704d486fd45440703bbc69b"
+   }
+  },
+  {
+   "asset": "ASSET-002",
+   "category": "Lovart動画",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "CHAR-01（オリーブの上着・茶の帽子・カゴ・後ろ姿）と一致。山菜（ギョウジャニンニク様）を採る。動画6コマ: 摘んで顔を上げるが顔は見えない。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-002_still.png": "78e329b1b70a80e534c31689bf76b66d18efe9200b322545b97ffc9c1e9ea29f",
+    "動画/ASSET-002_video.mp4": "c10f8da71a1bc25f7128b2262fc45918add7cbcca7a99bfa41ec00e3cdd5b738"
+   }
+  },
+  {
+   "asset": "ASSET-003",
+   "category": "Lovart動画",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "CHAR-02（紺の上着・灰のズボン・白髪混じり）と一致。山道を登る背中。動画6コマ: 左右を見回す。t=2〜3秒で横顔の一部が出るが小さく特定不能。",
+   "fix": null,
+   "severity": null,
+   "note": "軽微: t=2〜3秒に横顔の一部",
+   "files": {
+    "画像/ASSET-003_still.png": "1f9d5a0a8dfa127fced736fd40d5d66aa3d9bb1fa08f60b244f8e6471db5cbce",
+    "動画/ASSET-003_video.mp4": "44c03e44c6e368fcc052489649f211e858e99575ea6ee3196f2668c93999a3b4"
+   }
+  },
+  {
+   "asset": "ASSET-004",
+   "category": "Lovart静止画",
+   "verdict": "FAIL",
+   "part": "静止画",
+   "evidence": "シーン『林床に落ちた女性の上着を接写』に対し、①左前景にしゃがむ捜索者（女性・黒い上着・青手袋）が写る＝台本に無い人物、②落ちている上着が紺のキルティングで、002でCHAR-01が着ていたオリーブの上着と不一致（同一人物の服装固定の規則違反）、③背景に残雪が多い。",
+   "fix": "画像再生成（人物なし・オリーブの上着・接写・残雪は控えめ）",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-004_still.png": "a5e2e6a146527f7c0d7f1588d614fe58b4c2602cd3941038e60a3d61193e984c"
+   }
+  },
+  {
+   "asset": "ASSET-005",
+   "category": "Lovart動画",
+   "verdict": "FAIL",
+   "part": "既存動画",
+   "evidence": "シーン『沢へ到着した捜索者が立ち尽くす遠景』に対し、前景の捜索者1人（背中・接写）と、遠くの沢辺にオリーブの上着の人物が座った姿勢で1人。台本の『捜索に出た人たち』（複数）が1人しか見えず、遠景でもない。発見された女性が座った生存者に見え『無残な姿』の含意が伝わらない。",
+   "fix": "保留（動画の再生成は今回禁止）。編集で尺を短くしテロップで補う案を指示書に記す。",
+   "severity": "軽微",
+   "note": null,
+   "files": {
+    "画像/ASSET-005_still.png": "0e7e3a81bec1b6e9b696a6c5d318bbd8832b81c042b3e4d781dd636346e182a8",
+    "動画/ASSET-005_video.mp4": "601658f0fab4ed96095c5ce8cc878c5406ccf33af808eec568c59db80a25cfa4"
+   }
+  },
+  {
+   "asset": "ASSET-006",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "青い手袋の手が落ち葉から黒褐色の毛を拾う接写。顔なし。台本どおり。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-006_still.png": "4d43b8c687b7b806d9d0007e65dc75304cd60d3144c8444e0c884fb0fc220597"
+   }
+  },
+  {
+   "asset": "ASSET-007",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "白衣・白手袋の手が電気泳動像の紙2枚を持つ。『机に並べる』ではなく手持ちだが、左右2枚を比べる編集指示（左『現場の毛』右『捕獲個体』）は成立する。数値なし。",
+   "fix": null,
+   "severity": null,
+   "note": "軽微: 机上でなく手持ち",
+   "files": {
+    "画像/ASSET-007_still.png": "17bb1e3a87fbbd5cab9f91227f009b860134faec34cf6ffb7f4a20f6b07487ed"
+   }
+  },
+  {
+   "asset": "ASSET-008",
+   "category": "Lovart動画",
+   "verdict": "FAIL",
+   "part": "既存動画",
+   "evidence": "CHAR-03の定義は『えんじ色の上着・黒っぽいズボン・低く結んだ髪』。実物は灰緑のコート・黒ズボン・ポニーテール・布バッグ＝上着の色が不一致（063/075/076のカートゥン版と服装が食い違う）。場面（翌春の山道・後ろ姿）は合う。動画6コマ: ほぼ静止で『歩く』動きが乏しい。",
+   "fix": "保留（動画）。カートゥン版CHAR-03の上着色を実写に合わせるか、実写を作り直すかは本人裁定。",
+   "severity": "中",
+   "note": null,
+   "files": {
+    "画像/ASSET-008_still.png": "6727ae2d15c4a504bfc847083aba5491bc8991e2f84c763f0bb80c57b5566418",
+    "動画/ASSET-008_video.mp4": "4255da9342a6017cb755aac6046b8156b012d403e15d5377d005b04ddbc473f6"
+   }
+  },
+  {
+   "asset": "ASSET-009",
+   "category": "Lovart動画",
+   "verdict": "FAIL",
+   "part": "既存動画",
+   "evidence": "シーン『2件の記録を背後のヒグマ影と並べる』に対し、実物は威嚇するヒグマと人物（後頭部）の対峙。記録2件が無く、人物が写り、影でなく正面のクマ。動画6コマも同じ構図。",
+   "fix": "保留（動画）。編集案: 002と008の静止画を左右に並べ、中央にクマの影（既存の実写クマを暗く）を重ねる。",
+   "severity": "重",
+   "note": null,
+   "files": {
+    "画像/ASSET-009_still.png": "3342a3a83957862a00352a60b927e280913fbf1cb902e3a06ad5ef07b536946f",
+    "動画/ASSET-009_video.mp4": "fa7289444c8b5dffa0a1b7bae3fb85fe83d8563d8d40768a7e640f1791a8820b"
+   }
+  },
+  {
+   "asset": "ASSET-010",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "7人の捜索者の背中が空の落葉樹林を向く。顔なし。台本どおり。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-010_still.png": "b93a96297d62bd6572fc41324c4d9fa40acfe442f3a9be152e24b8a8733338ed"
+   }
+  },
+  {
+   "asset": "ASSET-011",
+   "category": "Lovart動画",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "捜索者1人の背中越しに無人の谷。動画6コマ: 人物が画面外へ抜け、谷だけが残る＝『捜索隊の先に続く無人の谷』を満たす。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-011_still.png": "bcc0a3f2ad65dbd8a76bdf3b0ee3d20b50d58ae899719de0ad0af2029d90efee",
+    "動画/ASSET-011_video.mp4": "03596be900761b9cc307d75c8e0bbed222ad8dd80b5a91d875324a270967f69e"
+   }
+  },
+  {
+   "asset": "ASSET-012",
+   "category": "Google Earth",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "地区名3点の表示・ピンなし・クレジット常時表示の指示を確認。素材なし。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-013",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景に『4月16日』。素材なし。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-014",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "FAIL",
+   "part": "静止画",
+   "evidence": "海と海岸林の俯瞰は合うが、右前景にニット帽・リュックの人物（後ろ姿）が大きく写る。シーン『俯瞰』に人物は不要。",
+   "fix": "画像再生成（人物なしの空撮）",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-014_still.png": "e73e1938b9877615b7f359327b1de5b8b8ff386480ac3b611570e0bceb3f8d82"
+   }
+  },
+  {
+   "asset": "ASSET-015",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方＋既存動画",
+   "evidence": "静止背景＝車内から前方を見る視点で運転者（人物）が写る。シーン『ワゴン車を後方から写す』と逆。キャラ＝無線機を持つ青い上着の若い男性で台本に根拠なし（52歳女性の車）。動画6コマも車内視点のまま。",
+   "fix": "背景再生成（林道を進むワゴン車の後部・人物なし）。キャラは台本に人物指定なし→不使用を提案。動画は保留。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-015_char.png": "64320ffef0fb9fb7a3d479d0eb4eb59a45f99641af0dad822a440a1c83a311db",
+    "画像/ASSET-015_still.png": "367e359f90f6cabbd749921ae4cd152e2b5bfba847fd295082e62a1aa6ceffc9",
+    "動画/ASSET-015_video.mp4": "09a16b90e6c34681e2126e185465c6309f465dd16d545da74e9d2749c58c3c8c"
+   }
+  },
+  {
+   "asset": "ASSET-016",
+   "category": "Lovart静止画",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "カゴに山菜（コゴミ・タラの芽・ギョウジャニンニク様）の接写。手で持つが顔なし＝プロンプトの『hands only』の範囲。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-016_still.png": "5c23315d074ebbd4f6208f5218339e7cd27584f9719de822d75579b09a2bb9d8"
+   }
+  },
+  {
+   "asset": "ASSET-017",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "キャラ",
+   "evidence": "静止背景＝昼の食卓に手つかずの食事、人物なし＝台本どおり。キャラ＝黄色い上着の若い女性が皿を持つ＝台本に根拠なし。待つのは夫（CHAR-02）。",
+   "fix": "キャラをCHAR-02（食卓の前で心配そうに立つ）へ差し替え。背景は流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-017_char.png": "d25b7b9eed5bdbe6d0e01bba2a799fe3fdf3ad7a342b398612d936cc85a7fa1a",
+    "画像/ASSET-017_still.png": "eb181e19af69f58710712966178e19dbf05ac5c9d365585e6a6d9438a449d3cb"
+   }
+  },
+  {
+   "asset": "ASSET-018",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『正午』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-019",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝家の戸口から山道と山を見る、人物なし。キャラ＝CHAR-02（紺の上着・灰ズボン・白髪混じり）が心配顔でリュックを背負い歩く。台本『夫が家を出て山へ向かう』を満たす。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-019_bg.png": "c9855d41a50c708d7764b2131305454de932f474615b9a76ef94cfe90a4fe20b",
+    "画像/ASSET-019_char.png": "5e6160d6116fa1562cbab21f3021796e682c7ed64e31e31df3758f9fba6197aa"
+   }
+  },
+  {
+   "asset": "ASSET-020",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝沢辺のワゴン車（後部ハッチ開）の横に釣り竿を持つ実写の人物が立つ＝人物混入。キャラ＝無線機を持つ緑の上着の若い男性＝台本に根拠なし。発見するのは夫（CHAR-02）。",
+   "fix": "背景再生成（沢近くに止まったワゴン車・人物なし）。キャラはCHAR-02（驚いて指さす）へ差し替え。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-020_char.png": "98d8765ee6837e82974b5c9c8a5d0208b33d03d526567fd3498fadea48b7addf",
+    "画像/ASSET-020_still.png": "838ae80d2fccfba77ea2a043b1fc44ab3d2dba69869a1076b92c5bf4eeaf4a16"
+   }
+  },
+  {
+   "asset": "ASSET-021",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "林床に落ちた土色の衣類、人物なし。『衣服』として成立。",
+   "fix": null,
+   "severity": null,
+   "note": "色がCHAR-01のオリーブの上着と同一とは言い切れない（軽微）",
+   "files": {
+    "画像/ASSET-021_still.png": "b0922ffe759831f45b310323bc6dc6ac2b8bd4c6d6bed20761726eb15d108502"
+   }
+  },
+  {
+   "asset": "ASSET-022",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "シーン『山道で電話をかける夫』に対し、背景は室内の机（固定電話・ノート・窓越しの雪山）。キャラ＝CHAR-02が携帯で通話＝人物は合う。",
+   "fix": "背景再生成（早春の山道・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-022_bg.png": "12ffea524c532777e85a61ce2b5a0c717c9bac4a6a3ec863f2d548fbf1cf2f03",
+    "画像/ASSET-022_char.png": "219d8dba118455527bc5d5670a820176e81bfb0877411519b98f9c8df57dce60"
+   }
+  },
+  {
+   "asset": "ASSET-023",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "動画6コマ＝警察と消防の列が林を進む（後ろ姿）＝動画としては台本どおり。ただし静止背景は同じコマで実写の人物が多数写り、キャラ表示中の背景に使えない。キャラ＝緑の帽子と懐中電灯の若い隊員1人＝『警察と消防』の2者を表さない。",
+   "fix": "背景再生成（同じ林・人物なし）。キャラ再生成（警察官と消防隊員の2人を1枚に）。動画は前後のつなぎ用として保留なしで使用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-023_char.png": "42b98d0b59fae5a248ebfbb144161947c9b9fe261872c85574f771e1a9407420",
+    "画像/ASSET-023_still.png": "fcaa60bb08d900e7689e3722c80d8f9629267b811f9987c972e83c0440bf72ab",
+    "動画/ASSET-023_video.mp4": "2291379afb503d6901492f0d2cf37826ea939d05f0b880b0d2edd796bff1b689"
+   }
+  },
+  {
+   "asset": "ASSET-024",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『午後1時45分』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-025",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方＋既存動画",
+   "evidence": "静止背景＝沢沿いを歩く警察官3人（実写・人物混入）で、発見された女性が写らない。動画6コマも捜索者3人が沢辺に立つだけで『発見』が見えない。キャラ＝指さす若い女性ハイカー＝台本に根拠なし。",
+   "fix": "背景再生成（沢辺の遠景・人物なし・遠くに毛布で覆った形）。キャラ再生成（捜索者2人が指さす）。動画は保留。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-025_char.png": "8e91df1e867c2410c3ef66c4ac92b72d9ed68210b6ae0103b25c5347cfca6c08",
+    "画像/ASSET-025_still.png": "d9c6a83af275b97fd19f5ada5283ff6800a2ba3a047df94ddab1148e8728aed5",
+    "動画/ASSET-025_video.mp4": "14e0d34e8e4f850f269962476797688b56b2c57493d6e7919694231645eccba7"
+   }
+  },
+  {
+   "asset": "ASSET-026",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝沢辺で白布に覆われた女性と、立ち尽くす実写の捜索者（後頭部）＝内容は台本どおりだがキャラ背景としては人物混入。動画6コマ＝同じ構図で静止＝動画としては可。キャラ＝トレッキングポールを持つ若い女性＝台本に根拠なし。",
+   "fix": "背景再生成（沢辺・毛布で覆われた形・人物なし）。キャラ再生成（立ち尽くす捜索者2人）。動画は前後のつなぎに使用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-026_char.png": "4f10609acb86ba2cecf5e6e8b408006ea1597ba00b12c5aadc474617f023f65c",
+    "画像/ASSET-026_still.png": "7a0f9cbd1f5f8b434ca3055bd72abff792e752acde24bb069f7e860fd67926ae",
+    "動画/ASSET-026_video.mp4": "4a4b82da2abc016deb6a90f9af432b269af95747182cb0177b82ba54f9ffe8be"
+   }
+  },
+  {
+   "asset": "ASSET-027",
+   "category": "Lovart動画",
+   "verdict": "FAIL",
+   "part": "既存動画",
+   "evidence": "泥に残る大きなクマの足跡（2つ）は台本どおり。ただし人物（手・帽子・頬から鼻の横顔）が写り、t=0〜2秒は横顔が見える。定規で測る動作は自然。",
+   "fix": "保留（動画）。軽微＝横顔は小さく特定不能。編集で t=3秒以降（手と足跡だけ）を使う指示。",
+   "severity": "軽微",
+   "note": null,
+   "files": {
+    "画像/ASSET-027_still.png": "588a117f6255a7a5334ee0b33b6f03706caf2d767c3bcb353d51aa6574c44eb9",
+    "動画/ASSET-027_video.mp4": "daa0e197cf2144650020a5f51de905ad3efe67062ba99c073883dfef43ef8653"
+   }
+  },
+  {
+   "asset": "ASSET-028",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝記録板に書く実写の手と腕、奥に青いシートで覆われた遺体（靴だけ見える）＝構図は台本どおりだが人物の手が写る。キャラ＝青い作業服で記録板を持つ職員＝役割は合う。",
+   "fix": "背景再生成（地面に置いた記録板＋覆われた遺体・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-028_char.png": "ff6b60cd16ae1e425bd7d84ccc1e2f7bd0ce45189c5d58c7e09076bf82e5427e",
+    "画像/ASSET-028_still.png": "33dc06326941085f89ab41b1d8252b75b87592f0c922dab0d14749d675fdd09e"
+   }
+  },
+  {
+   "asset": "ASSET-029",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『鈴も武器もなし』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-030",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "森のすぐ下に家々が並ぶ集落の遠景。畑を歩く男性の後ろ姿が1人（プロンプトの後ろ姿許容内）。",
+   "fix": null,
+   "severity": null,
+   "note": "人物は後ろ姿のみ",
+   "files": {
+    "画像/ASSET-030_still.png": "4e01b71d186251ff51e5636eb4cbbe241e27d5cefac56462d9ac214047ec8dce"
+   }
+  },
+  {
+   "asset": "ASSET-031",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方＋既存動画（軽微）",
+   "evidence": "静止背景＝机で手帳に書く実写の女性（後ろ姿・手）＝人物混入。動画6コマ＝手帳を閉じ、家族写真が表向きに置かれ顔が見える＝『伏せた家族写真』と不一致。キャラ＝手帳と写真を持つ若い女性＝台本に根拠なし。",
+   "fix": "背景再生成（手帳と伏せた写真・人物なし）。キャラは不使用を提案。動画は保留（軽微）。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-031_char.png": "294d65b3f309aeb577460871b3718765e8bb857e1cf2e4e8e6fc3863d5d6bb69",
+    "画像/ASSET-031_still.png": "ddef64fea4b5f9cb14890e002f9165457abaabfa765c847426c860137c7a7cd6",
+    "動画/ASSET-031_video.mp4": "a08c7efb500c4768f38959b3efaf86bb7aab412ee9f1fc9726870321cbc7347f"
+   }
+  },
+  {
+   "asset": "ASSET-032",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "FAIL",
+   "part": "静止画",
+   "evidence": "シーン『目撃通報前の空欄の記録台帳』に対し、屋外の空の掲示板と女性の後ろ姿。台帳でない。",
+   "fix": "画像再生成（机上の空欄の記録簿・人物なし）",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-032_still.png": "79a7b0d885edb51b79ff63098409f6ca2bf8baa87ddbb742f792372a3233fc39"
+   }
+  },
+  {
+   "asset": "ASSET-033",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "動画6コマ＝オレンジのベスト・帽子のハンター約11人が斜面を下る＝台本どおり。静止背景＝同じコマで人物多数＝キャラ背景に使えない。キャラ＝オレンジ帽のハンター1人＝役割は合うが台本の『11人』は表せない。",
+   "fix": "背景再生成（同じ斜面・人物なし）。キャラは動画で人数が見えるため不使用を提案（使うなら流用可）。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-033_char.png": "2eb846560414808c88b22e36ea6d6b5d1d96ca06a318a0cf57b2f128c8075651",
+    "画像/ASSET-033_still.png": "67bd5e1a738a2f8b9307e50edde4a3ef644cccd7897f0b5074419b560b0fee68",
+    "動画/ASSET-033_video.mp4": "2184b223d9303c2554b658a7d5e23582b5cd3acf0ab4b617c4710e37432e47f2"
+   }
+  },
+  {
+   "asset": "ASSET-034",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝残雪の残る林道に大きな足跡、人物なし。キャラ＝懐中電灯を持つ捜索者が驚いて探す。台本の編集指示『人物を足跡の手前まで移し、しゃがむ』と整合。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-034_bg.png": "5edebe4310cd3ac346ec44c169b3641a70ad3048489d2cc6bc430e4b8cb46bba",
+    "画像/ASSET-034_char.png": "969abc0f6b299b86464ff233c70121e581682b34be9b69850978a6933f5d31c7"
+   }
+  },
+  {
+   "asset": "ASSET-035",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "集落の防災無線スピーカー柱。手前に男性の後ろ姿（許容内）。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-035_still.png": "dae46017367381105a48829370790b1dda0899a620760ec3b1af290116eaf514"
+   }
+  },
+  {
+   "asset": "ASSET-036",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝色刷りのチラシ（地図・イラスト入り）を持つ実写の手と腕＝人物混入、かつ『緊急文書の束』に見えない。動画6コマ＝チラシを封筒に入れる（同じ問題）。キャラ＝書類を抱えて走る職員＝役割は合う。",
+   "fix": "背景再生成（机に積んだ無地の公文書と封筒5通・人物なし）。キャラ流用可。動画は保留。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-036_char.png": "c95eb4523425748164df2cc0765e563579fe7d4218cdc932119ab7c075c757e1",
+    "画像/ASSET-036_still.png": "d68fe66afeb5e10046ffa3e77ca3134048fa19e45bdf2d19b5d8690574fdf6f6",
+    "動画/ASSET-036_video.mp4": "9ac2dc55d96ccb8d203a1376d03c866a6f43363ab6519e0059007cccc7537c85"
+   }
+  },
+  {
+   "asset": "ASSET-037",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『4月17日』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-038",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝林道でワゴン車から降りる研究者3人（実写・後ろ姿）＝人物混入。キャラ＝白衣と眼鏡の研究者＝役割は合う。",
+   "fix": "背景再生成（林道に止まったワゴン車・人物なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-038_char.png": "a79fd543268e5d49d16a494f33a6ec0986484844b8829b82b66182a1858d56db",
+    "画像/ASSET-038_still.png": "5c223a3c80a85750297a2e0fe585f3c3dc92fcb3323901762390fbfe27dd40c6",
+    "動画/ASSET-038_video.mp4": "440c8dc30bfbb70ea1d22c743d62b595de3a2f81c08c41007cbae05c65595abd"
+   }
+  },
+  {
+   "asset": "ASSET-039",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝会議机に座るスーツの男性3人の頭部が欠けた生成不良＋手前に実写の後頭部＝人物混入かつ破綻。キャラ＝記録板を持つ職員1人＝台本『3人』を表さない。",
+   "fix": "背景再生成（役場の会議机と椅子・人物なし）。キャラ再生成（職員2人＋研究者1人の3人を1枚に）。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-039_char.png": "23611671ed993787a6f6b8f724911a31288625dcee46e0c828214bca5f280bdb",
+    "画像/ASSET-039_still.png": "c550462d671bd8c8cef315ebe816beddb5014395b1d2fe03280d49de46f46a8e",
+    "動画/ASSET-039_video.mp4": "8f14a24d85f8d16915d36a2268e88302d6286f3ede1353082107fdd06625029a"
+   }
+  },
+  {
+   "asset": "ASSET-040",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝事務机に開いた資料と鉛筆、人物なし。キャラ＝白衣の研究者が資料を読み考える。台本『研究者の手元に広がる現場資料』と整合。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-040_bg.png": "e45d7c29ee56cae4b5e8b09315c2a23f02e9e1a76e693dcc06b41e18405b275b",
+    "画像/ASSET-040_char.png": "c8f0456932a4feaeffd0704952a516fe19aa61b1c6313cc18feb2547029e9fe9"
+   }
+  },
+  {
+   "asset": "ASSET-041",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝青手袋の両手がクマの毛を試料管へ入れる＝手が写る（キャラ背景の規則違反）。内容自体は台本どおり。キャラ＝白衣の研究者がピンセットで毛を採る＝役割は合う。",
+   "fix": "背景再生成（落ち葉の上の毛と空の試料管・手なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-041_char.png": "8dc94f4c99ab4f7e0295329e712b7d1fc46044fe4960e72ae35329360d74973d",
+    "画像/ASSET-041_still.png": "a8dd24ded578f7f1432fa905eafee52e02e033978c26debec3948e2151c634bc"
+   }
+  },
+  {
+   "asset": "ASSET-042",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『午前5時』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-043",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "シーン『夜明け前に森へ入るハンター』に対し、背景は明るい日中の林道（034と同型の足跡つき）。キャラ＝ヘッドランプと銃を持つハンター＝役割は合う。",
+   "fix": "背景再生成（夜明け前の薄暗い林道・人物なし・黒つぶれしない）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-043_bg.png": "1191ec5406cdc9c4606f0191fb1e3eb45573b9e5e50fdad668c5bce572f403ce",
+    "画像/ASSET-043_char.png": "693007b60ee3599be1b7b2a0f855749035379022dc6b992b5af0167ae1a7d885"
+   }
+  },
+  {
+   "asset": "ASSET-044",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "FAIL",
+   "part": "静止画",
+   "evidence": "シーン『人影のないササやぶ』に対し、手前に紺の帽子・リュックの人物（後ろ姿）。",
+   "fix": "画像再生成（人影のないササやぶ）",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-044_still.png": "68bd99a5a7c2272ae0ef665da0e97baf0a06a9cc0aaf19f106a15df3c4f2d896"
+   }
+  },
+  {
+   "asset": "ASSET-045",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝クマの注意看板（絵記号のみ）と、記録板を持つ実写の人物（後ろ姿）＝人物混入。キャラ＝警告標識を持ち手を上げる作業員＝役割は合う。",
+   "fix": "背景再生成（道路脇の注意看板のみ・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-045_char.png": "9b77f7f75789d090b85320c57a215ae231fbfd57eaa4cb8612736409aba378ec",
+    "画像/ASSET-045_still.png": "62ef5b9f29f8e3c3375ac6432ff2e62b3f6216184740e199c99afb708865f9bd",
+    "動画/ASSET-045_video.mp4": "c26d6fd20668ecc8cb633f103fa871740bd2709b2cd28261aeaf973cfcb4bf66"
+   }
+  },
+  {
+   "asset": "ASSET-046",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『4月23日』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-047",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "編集作業（構造）",
+   "evidence": "静止背景＝会議室で地図を前に座る約26人（実写・後ろ姿）＝シーン『関係者が机を囲む対策会議』としては合うが、人物を消すと場面が成立しないためキャラ背景に転用できない。キャラ＝説明する職員＝重ねると人数が過剰。",
+   "fix": "キャラ不使用。静止画（または動画）のみで構成し、指示書を訂正。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-047_char.png": "67c636b2a86e69c7bb03814ea5e9cf243018f9b0222493eeed8ab9bafea3e743",
+    "画像/ASSET-047_still.png": "d80a1097f1ac9fa384e3fd95b26658065ab0a1dd1d5db6b9c9def5506b79f588",
+    "動画/ASSET-047_video.mp4": "2b935846cd55429c03a79b10a3e84def84cf23361a3e600741917069f63dc005"
+   }
+  },
+  {
+   "asset": "ASSET-048",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "泥の前足跡に定規、手のみ。台本どおり。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-048_still.png": "791c92e5ad023296d5497e55555fd109b2ff93749414b3d16ebea46395f42cf9"
+   }
+  },
+  {
+   "asset": "ASSET-049",
+   "category": "Lovart静止画",
+   "verdict": "FAIL",
+   "part": "静止画",
+   "evidence": "シーン『山林に置いた複数の箱わな』に対し、実物は草地に置かれたトラバサミ（はさみ罠）3台と手。罠の種類が違う。",
+   "fix": "画像再生成（山林の鉄製の箱わな複数・人物なし）",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-049_still.png": "64834d83e920c5871cc1600b3fc430d377866e6802ebb977b22e90140cc9d45d"
+   }
+  },
+  {
+   "asset": "ASSET-050",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝民家の机に電話と手帳、人物なし。キャラ＝電話で聞き取りメモを取る職員。台本どおり。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-050_bg.png": "339033d32b5503431247fa8a93b2a9d49447ae6ca447b0e5daf57043f23b5a55",
+    "画像/ASSET-050_char.png": "95e325054b8a00189a4420373dc0d5b0292341de3bcd198b391a12c9b0880abb"
+   }
+  },
+  {
+   "asset": "ASSET-051",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝電柱に紙を貼る実写の男性（後ろ姿）＝人物混入。キャラ＝紙を持つ若い女性＝『地区長』に見えない。",
+   "fix": "背景再生成（掲示板と白紙の掲示・人物なし）。キャラ再生成（高齢の地区長が紙を貼る）。動画は保留。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-051_char.png": "accb327b15f9a1a2e3fcd02cd37534ad25452ca68a1246d3bd10d77717bfc170",
+    "画像/ASSET-051_still.png": "e68ef840c06de1e8d2ffc19af45d89ed0e6f40920d7546dbb03af7e3f02b0024",
+    "動画/ASSET-051_video.mp4": "d8d82ee4d020783023196f7a7f3aa193996d031b3060bf463b8debb5d8db3c31"
+   }
+  },
+  {
+   "asset": "ASSET-052",
+   "category": "Lovart静止画",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "山裾に並ぶ家々と畑の広い引き画、人物なし。『住宅地と山林の境』を満たす。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-052_still.png": "9d1ea78365e999b1c1f3d48aba559a180e1a004f39644382eaeaeaf7553eb157"
+   }
+  },
+  {
+   "asset": "ASSET-053",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝民家脇のササを刈る実写の男性（後ろ姿）＝人物混入。キャラ＝刈払機を持つ作業員＝役割は合う。動画は前後のつなぎ。",
+   "fix": "背景再生成（民家脇のササやぶ・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-053_char.png": "f1155a1cb1650c2148b9d99ac5826f59f7df11b40935d348c1b1c2d28a63d135",
+    "画像/ASSET-053_still.png": "f2c123a00ef298f11dd2f958a5846dd8e074ec3a20fb80b94dd3789842ab4ba7",
+    "動画/ASSET-053_video.mp4": "109c4fe0a5f724128086bb5b1bae9a23d66b1f5a248103f7472e3a7fcc636d80"
+   }
+  },
+  {
+   "asset": "ASSET-054",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝米国型の黄色いスクールバスと門扉の実写の人物（後ろ姿）＝人物混入、かつ日本の送迎バスに見えない。キャラ＝誘導棒を持つ男性＝台本に根拠なし。",
+   "fix": "背景再生成（日本のマイクロバス型スクールバスが民家の門前に停車・人物なし）。キャラ再生成（ランドセルの小学生1人）。動画は保留。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-054_char.png": "f840fb25a7be157e6a3bd6c01ebf54530fdb54faa38c00646bc548d23f7089e5",
+    "画像/ASSET-054_still.png": "895044d9382f8a2d50ef6324c19e672f177a1b36c372578eadb23aa3768d5469",
+    "動画/ASSET-054_video.mp4": "a3da9277974485738a43a379120b0c774fad5f5806bb67f0e59bd294ba03802c"
+   }
+  },
+  {
+   "asset": "ASSET-055",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝ヘルメットの作業員が携帯と手帳を持つ実写（後ろ姿）＝人物混入。シーン『通報窓口の電話と記録用紙』に人物は不要。キャラ＝受話器を持つ職員＝役割は合う。",
+   "fix": "背景再生成（役場の窓口机に電話と記録用紙・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-055_char.png": "f6445b5609292cdbb7ddcd176924de1d99bf804ca29769743691fb7e9e441f06",
+    "画像/ASSET-055_still.png": "639e9f6e489acc7c6e755332d9f5ba36cb078dad9b5faf2d6d851a483f1897d3"
+   }
+  },
+  {
+   "asset": "ASSET-056",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "キャラ",
+   "evidence": "静止背景＝足跡・フン・食害跡の3分割接写、人物なし＝台本どおり。キャラ＝虫眼鏡を持つ少年風の人物＝台本に根拠なし（呼びかけの内容カット）。",
+   "fix": "キャラ不使用（3分割の静止画のみ）。背景流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-056_char.png": "3dae8becb3ee18604885a33979ac6f11e0efa8c58620f527c560fa1a2704f122",
+    "画像/ASSET-056_still.png": "5cb08617fe5d9093e1b8195cc37af1d718cb310f72bb827664da5acdb0a861a6",
+    "動画/ASSET-056_video.mp4": "94f18be8b51fa57aa7b4ae1b8326fbb75134b905d627f6019604f00db6454438"
+   }
+  },
+  {
+   "asset": "ASSET-057",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝集落の掲示板の横の空き地、人物なし。キャラ＝帽子の高齢男性が拡声器で呼びかける＝地区長として成立。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-057_bg.png": "6e9801ae0737f7c5297fda03b8f0fa380ee4dc9e2c96866f5b57aa93912abca3",
+    "画像/ASSET-057_char.png": "b0b0f0c1dd6847e2781d7b14036b023e6f4fec8f829d28ebc108baa7752adb5b"
+   }
+  },
+  {
+   "asset": "ASSET-058",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝ワゴン車に装備を積む実写のハンター3人（うち1人は銃を持ち横顔）＝人物混入。キャラ＝白髪の高齢ハンター＝役割は合う。",
+   "fix": "背景再生成（ワゴン車の後部と机に並ぶ装備・人物なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-058_char.png": "43d4f99d784cb558043affa195ec0a02411759e60f613a7fd169396457d2aaa7",
+    "画像/ASSET-058_still.png": "916ea6bb5e231faca589c4dbd71d526c5d11214619293e1d6bb4ad8a1d055e2b",
+    "動画/ASSET-058_video.mp4": "3132f43286b09078246051961321ca034ca5754c195339ee63f2618e644967da"
+   }
+  },
+  {
+   "asset": "ASSET-059",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝申請書に書く実写の手と、ケースに入った猟銃＝手が写る。キャラ＝銃ケースと書類を持つ若いハンター＝役割は合う。",
+   "fix": "背景再生成（机上の申請書と猟銃ケース・手なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-059_char.png": "cca977d3bbf7ed86e3ed052ec5de0d28932a9e7d25336891a3a6c3a765c63910",
+    "画像/ASSET-059_still.png": "fc20ba4829453bce7477b580e1035773a8ed47e68d4006b1c204ec30a3842e8a",
+    "動画/ASSET-059_video.mp4": "7fa67ff2eaf82370e60d2eeaa9a4248060ef5d4eab7f36e2dc04f39146488c62"
+   }
+  },
+  {
+   "asset": "ASSET-060",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "FAIL",
+   "part": "静止画",
+   "evidence": "シーン『森に置かれた空の箱わな』に対し、トラバサミ（はさみ罠）と実写の腕。罠の種類が違う。",
+   "fix": "画像再生成（森に置かれた空の鉄製箱わな・人物なし）",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-060_still.png": "75365037ac029a2062428e43891f4dd3dbf7dcafab5369845e0416409c8929e2"
+   }
+  },
+  {
+   "asset": "ASSET-061",
+   "category": "Lovart動画",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "暗くなる空と森、カゴを背負う女性の後ろ姿。動画6コマ＝空が暗転しつつ雲間に光。つなぎとして成立。",
+   "fix": null,
+   "severity": null,
+   "note": "女性の上着が濃緑（CHAR-03のえんじ色ではない）が、つなぎ用の匿名人物として許容",
+   "files": {
+    "画像/ASSET-061_still.png": "ca0e09ad7cb2dc00864b15eac314f4cc56292dce44c499eabb5a6fb1f909d107",
+    "動画/ASSET-061_video.mp4": "9fcd920d8a2a927240753ba6a43b1502cc45e68d3edb0373792bcce9b2b4e9d9"
+   }
+  },
+  {
+   "asset": "ASSET-062",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『2014年4月4日』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-063",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝山道を正面から迫るヒグマ（四足・口を開け威嚇）、人物なし。キャラ＝CHAR-03（えんじの上着・低く結んだ髪）が驚いて身を引く。キャラをクマの手前に置けば『背後に迫る』構図になる。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-063_bg.png": "7cebcfe1634b5c5420d25bd0d6acd427b8ba48c036d2d67461a002043a304a2b",
+    "画像/ASSET-063_char.png": "c7618cbb1029f1450089b2c68c7145c37419874e3ed87499dc89da7a85def19b"
+   }
+  },
+  {
+   "asset": "ASSET-064",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "FAIL",
+   "part": "静止画",
+   "evidence": "シーン『太田地区周辺の山道と森』に対し、車内から前方を見る視点で運転者が写る。人物混入かつ舞台が違う。",
+   "fix": "画像再生成（太田地区の山道と森・人物なし）",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-064_still.png": "3ca178bb3a92ce2642dd81ff6524694fb905eba4a9b00beb416e047a143eaa94"
+   }
+  },
+  {
+   "asset": "ASSET-065",
+   "category": "Google Earth",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "地区名のみ・線なし・クレジット常時の指示を確認。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-066",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝林道を歩く男女2人（実写・後ろ姿）＝内容は台本どおりだが人物混入。キャラ＝黄色い上着の若い女性1人＝CHAR-03（えんじ）でもCHAR-04でもなく、2人を表さない。",
+   "fix": "背景再生成（同じ林道・人物なし）。キャラ再生成（CHAR-03とCHAR-04の2人を1枚に並べて歩く）。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-066_char.png": "6fdeeec12349f48a535d18be168a3f2e0c2704417ac2c5bc2246c453eecd2ea9",
+    "画像/ASSET-066_still.png": "65e3bc5a6010aac7a39d25ae852c9ad3fe559b71e818cdaf17b8f1d8f1f9c9b7",
+    "動画/ASSET-066_video.mp4": "0882d7f5a48871bac28b57b37babde433953b8313c2ee3f56c2dab172b188ba0"
+   }
+  },
+  {
+   "asset": "ASSET-067",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝カゴにギョウジャニンニクを入れる実写の手と腕＝手が写る。キャラ＝ギョウジャニンニクとカゴを持つ女性＝役割は合う（服は緑でCHAR-03と不一致だが匿名扱いで許容）。",
+   "fix": "背景再生成（林床に置いたカゴとギョウジャニンニク・手なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-067_char.png": "1d2441cc15889acbb4fcea0535fb1a5bd72b9914fd6348758ec09243a029c91f",
+    "画像/ASSET-067_still.png": "131192fed93788a5cba30ad4aded43cb9e44fd9ebb9143ecc20f322e2b375cd7"
+   }
+  },
+  {
+   "asset": "ASSET-068",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝量りにギョウジャニンニクを載せる実写の手と腕＝手が写る。キャラ＝量りと山菜を持つ女性＝役割は合う。",
+   "fix": "背景再生成（量りとギョウジャニンニクの束・手なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-068_char.png": "3a9899663b351829300900e847e96a40da2c4916ca20377734ccfeb77d7567ed",
+    "画像/ASSET-068_still.png": "e7412a6a4ea4de7786ced0f90ac14431504c52988d2ccfcac96cc977f8491636",
+    "動画/ASSET-068_video.mp4": "babfb3df3221dcc8a26445ebf516cf0432de88db8f8890f93f8b78fc0ea80c8a"
+   }
+  },
+  {
+   "asset": "ASSET-069",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝カゴを背負い林道を歩く実写の2人（後ろ姿）＝内容は台本どおりだが人物混入。キャラ＝カゴを持つ女性＝役割は合う。",
+   "fix": "背景再生成（同じ林道・人物なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-069_char.png": "7fb9c4ece4423903eaecdfeecc7d2af88ab3253b1f284c67414357b6c871b977",
+    "画像/ASSET-069_still.png": "7558a84c8fa7faad0240068a02133421763b8715a1446ea242c32f2914de3a35",
+    "動画/ASSET-069_video.mp4": "0c458549377e8ee846e809beb5e3e4ecee46304e4c9b1e45365df6ad31f555ac"
+   }
+  },
+  {
+   "asset": "ASSET-070",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "林道入口のクマ注意看板（絵記号のみ）。右に人物の後ろ姿（許容内）。文字は編集で載せる指示と整合。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-070_still.png": "e3df7283b639b1bcb1952d1bc6e8bcac00661efc39b9682a23a4842fcef0cc60"
+   }
+  },
+  {
+   "asset": "ASSET-071",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝木の看板の先へ入る実写の2人（後ろ姿）＝人物混入。看板は無地。キャラ＝帽子の若い男性1人＝2人（CHAR-03・04）を表さない。",
+   "fix": "背景再生成（林道の入口と無地の看板・人物なし）。キャラ再生成（CHAR-03とCHAR-04の2人）。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-071_char.png": "5024e0b5d938f073a32b2279a9f6775960169e9221328d8115f9d39d890583bf",
+    "画像/ASSET-071_still.png": "68eb81079646a38363e05b0d65fc607c7ed37493447945597caf2e09fdb5a2b3",
+    "動画/ASSET-071_video.mp4": "6f6fed047077ca71f647de7c94e85d1bfe2f834c8e859d029a7b2af870f6a885"
+   }
+  },
+  {
+   "asset": "ASSET-072",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『午後2時』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-073",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "林道から続く山林の小道。手前に人物の後ろ姿（許容内）。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-073_still.png": "7e4c352676609094ca37c24d35c2f12beb322aeabed21b15ec8e22d65ad028a8"
+   }
+  },
+  {
+   "asset": "ASSET-074",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝下山する男女2人（実写・後ろ姿・海を見下ろす）＝内容は台本どおりだが人物混入。キャラ＝灰の上着の高齢男性（CHAR-04に近い）1人＝『男性を先頭に2人』を表さない。",
+   "fix": "背景再生成（同じ下り道・人物なし）。キャラ再生成（CHAR-04が前、CHAR-03が後ろの2人を横から）。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-074_char.png": "7585e9f9c553893b65e7f8715500ea929e029c5ae6b153802a6d1b9e306aa20d",
+    "画像/ASSET-074_still.png": "badfc2c1b87de6e2cf8fa845d6dea055ff229f85e35d8372e34b095dd95cb396",
+    "動画/ASSET-074_video.mp4": "f9597d9b1a9f4ca3aecbfd7f9a5be30b84c81abeecadfc7c670eb0a81abac433"
+   }
+  },
+  {
+   "asset": "ASSET-075",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景（構図）",
+   "evidence": "背景＝正面から迫るヒグマ（四足・威嚇）、人物なし。キャラ＝CHAR-03（えんじの上着）が驚く。台本『女性の背後から飛び出すヒグマを横から』に対し、クマが正面向きで『背後から』『横から』の構図にならない。一次監査と同じ指摘。",
+   "fix": "背景再生成（山道を横から見た構図でクマが画面右から左へ飛びかかる・人物なし）。キャラは流用可（左側に置く）。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-075_bg.png": "380bd9b74b6388901cc8ce9e929db160f0fc4a30abd7cda9acbc3ff390005a8b",
+    "画像/ASSET-075_char.png": "c248fb4eff292b4cae4cdf044561cec5b3589c98125e9421822d19c961565ba8"
+   }
+  },
+  {
+   "asset": "ASSET-076",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景（構図）",
+   "evidence": "075と同じ。クマが正面向きで、『身をよじる女性と迫る影』の横構図にならない。キャラ＝CHAR-03が身を引く＝合う。",
+   "fix": "背景再生成（075と同じ横構図・クマが女性の位置へ覆いかぶさる直前・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-076_bg.png": "224c35406dfee0066c83eb7645b0e8ef6181900035bd5936845d1eb59cd6541b",
+    "画像/ASSET-076_char.png": "19b6dae21b6fdab7438aff64f817226cff93d509c40dfdbf444e5b4570aaa6f0"
+   }
+  },
+  {
+   "asset": "ASSET-077",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝山道を正面から向かってくるヒグマ、人物なし。キャラ＝CHAR-04（灰の上着・白髪）が手を出して身構える。『男性へ向かうヒグマ』は成立（『横から』の指定は緩く許容。一覧の疑義『クマが背後に見える』は原寸ではクマが男性の右前方で問題なし）。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-077_bg.png": "456674e7f41580e0d44086cbb8d76873fe15d7cc043dd783808de8a04d961058",
+    "画像/ASSET-077_char.png": "7f9f693913a0eb16ceec9afc1df21aeb3f5cadd7e9ae53a3e6bda8c928eb29ba"
+   }
+  },
+  {
+   "asset": "ASSET-078",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝ナタを持つ実写の腕と手袋（人物の一部）。道具はナタとして合う。キャラ＝CHAR-04風の男性がナタを構える＝役割は合う。",
+   "fix": "背景再生成（ササやぶの地面に置かれたナタ・手なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-078_char.png": "7d759aed751d853f6a5c5a7d59942de92e21aa8c1081bc74ef7cf6de081c7a77",
+    "画像/ASSET-078_still.png": "b6dc8262249659b7f21f41b6d569e3d2deb7cd8d38db262d9cefff211bd24488",
+    "動画/ASSET-078_video.mp4": "d278a207278fdf361968f1c15496609a18ae13e65e46237a4c6ffb2764f37ecd"
+   }
+  },
+  {
+   "asset": "ASSET-079",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝山道で威嚇するヒグマと、手を伸ばす実写の人物（左前景・後頭部と手）＝人物混入。キャラ＝クマ撃退スプレーを持つ若い男性＝台本にスプレーは無く（男性が持つのはナタ）、CHAR-04でもない。",
+   "fix": "背景再生成（同じ山道のクマ・人物なし）。キャラはCHAR-04（何も持たず身構える）に差し替え。体長比較は編集の寸法テロップで示す。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-079_char.png": "6a13b7ab0fb878bd0b932ca9aada19ec07f793548682598b69ec6ec973e09640",
+    "画像/ASSET-079_still.png": "73027444fc7ae705d9d51a5de345048457c52db113653c407c086cd6001105e7"
+   }
+  },
+  {
+   "asset": "ASSET-080",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝林道の奥に離れて立つヒグマ、人物なし。キャラ＝CHAR-04（灰の上着・白髪）がナタを振り上げる構え。台本『ナタで応戦する直前の構え』と整合。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-080_bg.png": "fe17a577054c195d0e8e7df9ba29295c545f7dc32142e2086a204207f00aff8e",
+    "画像/ASSET-080_char.png": "cd3ca41d85055064f0dec85fe4c78f962307142f658d7db907bb343b431941f0"
+   }
+  },
+  {
+   "asset": "ASSET-081",
+   "category": "Lovart静止画",
+   "verdict": "FAIL",
+   "part": "静止画",
+   "evidence": "シーン『反撃で体勢を崩すヒグマ』に対し、河原でヘルメットの人物が棒を構え、クマは正面で威嚇。人物が写り、体勢も崩れていない。舞台も山道でなく河原。",
+   "fix": "画像再生成（山道で頭を振って後ずさるヒグマ・人物なし）",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-081_still.png": "394038e90a6561899d84819de9db3adb1b5c70d9690439c254633814bb76762f"
+   }
+  },
+  {
+   "asset": "ASSET-082",
+   "category": "Lovart動画",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "動画6コマ＝木立の奥へクマが向きを変えて去り、t=4秒以降は姿が消える。手前に人物の後頭部（帽子）。『四つ足で森へ逃げる』を満たす。",
+   "fix": null,
+   "severity": null,
+   "note": "人物は後頭部のみ（許容）",
+   "files": {
+    "画像/ASSET-082_still.png": "0cddf47d9f1fd9ad6d35d8c8592490dc9b2892689e2d842d30d1bd947a6af08d",
+    "動画/ASSET-082_video.mp4": "b015b8a389f9c92f3f068cb7b740dd0a911efc57d27a7e1af2093069295631fd"
+   }
+  },
+  {
+   "asset": "ASSET-083",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "キャラ",
+   "evidence": "静止背景＝雪の残る山道を走り去る救急車（後方から）、人物なし＝台本どおり。キャラ＝誘導棒を持つ若い男性＝台本に根拠なし（一次監査と同じ指摘）。",
+   "fix": "キャラ不使用（静止画のみ）。背景流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-083_char.png": "93fae73c880244ca71f49f257deed87c9f5f34df0b43cd5b427807d6b17ea060",
+    "画像/ASSET-083_still.png": "bcdfa4c1a7a92a683dc81cca4b1a3e30dcd7f58ea1020eab4328bfd04fa7ed47"
+   }
+  },
+  {
+   "asset": "ASSET-084",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝病院の廊下で車椅子に座り毛布をかけた実写の女性（後ろ姿）と奥に人影＝人物混入。キャラ＝毛布にくるまる女性＝役割は合う（服は緑でCHAR-03と不一致、要確認）。",
+   "fix": "背景再生成（病院の廊下と窓・人物なし）。キャラは流用可だがCHAR-03の顔・髪に合わせた再生成が望ましい。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-084_char.png": "96f9318493393349e8de86223c9dafef661b0bab1bfe10f5f7a82e85fe0fc22f",
+    "画像/ASSET-084_still.png": "db69f9049fddb2bb45420bb0cb28d2e519823cca78e6ebfd0a01df6c9884fe26",
+    "動画/ASSET-084_video.mp4": "cdcc1fba86040d4a08cf338a44aa381b03ad8c5aef1f175d50b04747f0cd1e83"
+   }
+  },
+  {
+   "asset": "ASSET-085",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝襲撃後の静かな林道、人物なし。キャラ＝CHAR-04が無傷で立つ。台本どおり。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-085_bg.png": "5e5ae4f6c48a8f54dfed033e809d28626a2d947b54b00a8c2f5750e4be1a7522",
+    "画像/ASSET-085_char.png": "e4157f707ee228a4318057bb4ab2c76520b4d5673a9fc540183d9ae9d04ed53b"
+   }
+  },
+  {
+   "asset": "ASSET-086",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝研究室の作業机に白紙1枚、人物なし。キャラ＝白衣の研究者が指さして説明。台本『応戦場面を指す専門家』は、編集指示どおり応戦の場面（080）を紙面に合成して矢印を足せば成立。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-086_bg.png": "9da86bdbbf0c23504efd7e801af724009417246574a3ab259add6b571fc85e54",
+    "画像/ASSET-086_char.png": "5275efa3bfa100c2c564cdd5dc81bccafc1420804b779fed71e0d5ddfc714659"
+   }
+  },
+  {
+   "asset": "ASSET-087",
+   "category": "Lovart動画",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "動画6コマ＝旧校舎の前の道をふさぐ柵（赤い板・青い支柱）、手前に人物の後頭部。『旧校舎近くの通行止め柵』を満たす。",
+   "fix": null,
+   "severity": null,
+   "note": "人物は後頭部のみ",
+   "files": {
+    "画像/ASSET-087_still.png": "8cf02db94859dc8967c90b8ce4c7788cc25dd6ed8b4be6d722fdfa77504fd4ff",
+    "動画/ASSET-087_video.mp4": "8315cc37e43e3d6fe805c9d0148509f32a7ab9490eddaa9ee69db638fb1705e8"
+   }
+  },
+  {
+   "asset": "ASSET-088",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "FAIL",
+   "part": "静止画",
+   "evidence": "シーン『旧校舎の向こうに見える山林』に対し、窓辺で外を見る実写の女性（後ろ姿）が画面の左半分を占める。山林は見えるが校舎が無く、人物が主役。一次監査と同じ。",
+   "fix": "画像再生成（校舎の屋根越しに山林・人物なし）",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-088_still.png": "aa1653329237267c0e865d23a9b6c3a9a35ac3b3b685da79e9da90db008c5b56"
+   }
+  },
+  {
+   "asset": "ASSET-089",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『4月5日』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-090",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝山道脇のクマ注意標識2枚と、左前景に帽子の実写の人物（後ろ姿）＝人物混入。キャラ＝杖と手を上げる若い男性＝役割は曖昧だが許容。",
+   "fix": "背景再生成（同じ山道と標識・人物なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-090_char.png": "7835b2d6a71de32f7439b1b5fe3861c87cc2f2fffb334ed9caa76556d8773387",
+    "画像/ASSET-090_still.png": "af5a17c9e9dd2fa7de7153948681c76db1001782bdf701600e0f46a359ef7b20",
+    "動画/ASSET-090_video.mp4": "88ccb813410d34188dd3e1deaf8a2e4165830ab7fef3be07104df220e8b0b6ff"
+   }
+  },
+  {
+   "asset": "ASSET-091",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝裏山を見る実写の男女2人（後ろ姿）＝人物混入。キャラ＝双眼鏡を持つ帽子の男性＝『警戒する住民』として合う。",
+   "fix": "背景再生成（家の裏手から見る山林・人物なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-091_char.png": "6945a495e821ade63149b2b3a05373a29c6f465eed806507f9402344c4870006",
+    "画像/ASSET-091_still.png": "27d375979c145ad8ecf9ed8c280c271df4dfc573e7cf3392c5954340d86348c0",
+    "動画/ASSET-091_video.mp4": "81654ae05c92be7381dd10db063f42fb1ac1150c0b321bc06b36c00cb452fd88"
+   }
+  },
+  {
+   "asset": "ASSET-092",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝笛と爆竹を持つ実写の高齢女性の手（紫の上着）＝手が写る。キャラ＝白髪の高齢女性が笛を吹き爆竹を持つ＝台本『80歳の女性』に合う。",
+   "fix": "背景再生成（畑の縁に置いた笛と爆竹・手なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-092_char.png": "b4a5b37bc530e68394f7d37df02c0c87da570dbcf65e266cf25939f156bb4db7",
+    "画像/ASSET-092_still.png": "afb27439bd3d2ace5b46636102403f04af744f34081cc7fad9c113d75a272dc5"
+   }
+  },
+  {
+   "asset": "ASSET-093",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝林床に立てた白い試料袋、人物なし。キャラ＝白衣と帽子の人物がピンセットで試料を採る。台本『ハンターが現場の試料を採る』に対し白衣は研究者風だが、採取の動作は成立。",
+   "fix": null,
+   "severity": null,
+   "note": "軽微: 白衣はハンターに見えない（本人判断）",
+   "files": {
+    "画像/ASSET-093_bg.png": "5c1c8e964ffc253f9d5ff63368ad15b52df1e6735a8218e6a01f9b197e84cbec",
+    "画像/ASSET-093_char.png": "6cd698baf530c553a867afbb7929b43bc3ef3f1db3a71d5df777f781860e50b5"
+   }
+  },
+  {
+   "asset": "ASSET-094",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "白手袋の両手が試料管2本を持つ、顔なし。『2013年と2014年の試料容器』を満たし、年は編集文字で載せる。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-094_still.png": "3dceceb742d92cbc6dd1ebb51b9ba94741759d5b432f0e1cde11862c45e2c7c7"
+   }
+  },
+  {
+   "asset": "ASSET-095",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "2人の手が無記名の封筒2枚を並べて持つ、顔なし。『一致』は編集文字で示す指示と整合。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-095_still.png": "72947104673d3580f33e735246e4dd31f76a4385c7142932e1d636fab7c635eb"
+   }
+  },
+  {
+   "asset": "ASSET-096",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "キャラ",
+   "evidence": "静止背景＝林床に空のカゴ2つ、人物なし＝台本『2人の女性の山菜カゴを年別に並べる』を満たす。キャラ＝カゴを持つ若い女性1人＝台本に根拠なし（一覧の疑義『2人の女性』も、このカットはカゴが主題で人物不要）。",
+   "fix": "キャラ不使用（静止画＋年別テロップ）。背景流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-096_char.png": "6803da5b08b9a734fa138e8504507b9ea97dc3f76e15dfe321256362de186450",
+    "画像/ASSET-096_still.png": "4444490aea56878cd5fd96972bb5820bd5f6a3c8a970da4f7105ad1b2a99a4ef",
+    "動画/ASSET-096_video.mp4": "9faef67002b71c988b46fb94d9b88d423e6d4fe05e326a89f515afe14faed919"
+   }
+  },
+  {
+   "asset": "ASSET-097",
+   "category": "Google Earth",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "2地区を同一画面。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-098",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『2度の犯行』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-099",
+   "category": "Google Earth",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "広域3D地形。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-100",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『再び人を襲う』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-101",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝鈴を付けたリュックを背負う実写の2人（後ろ姿）＝内容は台本どおりだが人物混入。キャラ＝鈴付きリュックを持つ女性＝役割は合う。",
+   "fix": "背景再生成（地面に置いた2つのリュックと鈴・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-101_char.png": "03d196adb29a39565fb22d4e71d1462043d1d63e755ac16bb4dcf0dd882df777",
+    "画像/ASSET-101_still.png": "301fc094d6d3d99d0b958b64bf3691792288eae40906dfe4d78ee5000f30245f",
+    "動画/ASSET-101_video.mp4": "192d984e63f7a85398bfcabddc94800e7173c1b8f92dca8cc47a65b119741ad7"
+   }
+  },
+  {
+   "asset": "ASSET-102",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝森の小道を歩く実写の2人（後ろ姿・鈴）＝人物混入。キャラ＝鈴を持つ女性＝役割は合う。",
+   "fix": "背景再生成（森の小道・人物なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-102_char.png": "b19130af2f66853d606cd007fe9efc41395af528a096760170a559cd86a59c53",
+    "画像/ASSET-102_still.png": "db02a800d25d1342e2fa44cd23579d4ed90b08b265aaf9eeca60266f1bb59dc8",
+    "動画/ASSET-102_video.mp4": "05a474acaff5f7e6280118c23630b13b4bb12b9da3aa8bb9e0d9b26b958abb33"
+   }
+  },
+  {
+   "asset": "ASSET-103",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝道に落ちたカゴと、左前景に実写の人物（後頭部）＝人物混入。キャラ＝カゴを持つ女性＝『襲撃後に残された籠』と矛盾（一次監査と同じ）。",
+   "fix": "背景再生成（道に転がった空のカゴ・人物なし）。キャラ不使用。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-103_char.png": "89dd13c3f5708ce0c8d83a99f021ac8dd8352d1a8c69476b4949a5677e85e0fb",
+    "画像/ASSET-103_still.png": "eb4a706878ea222920e63f1ffccfc463eff97ec8fb3ce9fdbc3b493c0e3c8279"
+   }
+  },
+  {
+   "asset": "ASSET-104",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "背景＝山道を歩くヒグマ、人物なし。キャラ＝白衣・眼鏡の専門家が指さす。台本『専門家が過去の事故資料を指す手元』に対し背景が資料でなくクマ（一次監査と同じ）。ただし『一度人間を襲ったクマは凶暴性を増す』の説明としてクマの画は意味が通る。",
+   "fix": "本人裁定: 資料の背景に替えるか、クマ背景のまま採用するか。替えるなら机上の事故資料（人物なし）を再生成。",
+   "severity": "軽微",
+   "note": null,
+   "files": {
+    "画像/ASSET-104_bg.png": "f2b05a5f225b851f21ba1561a3a51f41c35d6d385f45e1a8d9989e2480e9d0e0",
+    "画像/ASSET-104_char.png": "018aed64a109e9b99b1356a41fc5b5e233b446c5b466ad61d2eda494f579ecfe"
+   }
+  },
+  {
+   "asset": "ASSET-105",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝役場の会議机に資料、人物なし。キャラ＝作業服の町職員が資料を読む。台本どおり。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-105_bg.png": "7087f94a1b96fdcd56e025bc5b83e48963e93426d222d5fce452d576d57ff9b0",
+    "画像/ASSET-105_char.png": "1b9ddb7e4e5fc62abf698c9f8e6899197fdc11200591dc6312bbd3fc1260ae8b"
+   }
+  },
+  {
+   "asset": "ASSET-106",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『4月7日』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-107",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景（構図）",
+   "evidence": "背景＝林道に足跡1つ、人物なし（034・043と同じ型）。台本『複数の尾根を捜すハンター』に対し尾根の広がりが無い（一次監査と同じ）。キャラ＝双眼鏡のハンター＝役割は合う。",
+   "fix": "背景再生成（複数の尾根が連なる山並みの俯瞰・人物なし）。キャラ流用可。",
+   "severity": "中",
+   "note": null,
+   "files": {
+    "画像/ASSET-107_bg.png": "c95497854b4df39108a0a409b341c841f1d6a8d39ddb4c41c7ae3e0dff1577ee",
+    "画像/ASSET-107_char.png": "15af8f0971b1e32dc1a2fb9fc57238a561ff6888242d84c17212ec899681be99"
+   }
+  },
+  {
+   "asset": "ASSET-108",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝やぶで威嚇するヒグマ（正面・顔が見える）と、右前景に実写の人物（後頭部）＝人物混入、かつ台本『顔を隠したヒグマがやぶへ入る』（負傷した顔を見せない）と逆。一次監査と同じ。キャラ＝考える若い男性＝台本に根拠なし。",
+   "fix": "背景再生成（やぶへ背を向けて入っていくヒグマ・顔は見えない・人物なし）。キャラ不使用。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-108_char.png": "9a66d055f7606a1e20078b666e9e7e6415f914eaa2736477c595cef9b799aa3f",
+    "画像/ASSET-108_still.png": "dc67041caa4e7b4a7162c68f9b8a4b9636dc59a6968135cadeda16dc19045fe2"
+   }
+  },
+  {
+   "asset": "ASSET-109",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝背丈のササに埋もれた小道、人物なし。キャラ＝ハンターがササをかき分ける。台本どおり。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-109_bg.png": "95085c89d24e825cf3468d6aa388882d64002e3136c725c78587d14505663f8a",
+    "画像/ASSET-109_char.png": "8f206df669f89f1d8fddfc115f46edee9634e9fbff7d9011d8b611c2c6843458"
+   }
+  },
+  {
+   "asset": "ASSET-110",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝要請書（文字もどき入り）と防災ヘリ、ヘリの横に実写の隊員1人＝人物混入。キャラ＝無線機を持つ隊員＝役割は許容。",
+   "fix": "背景再生成（机上の無地の要請書と、窓外または隣接する着陸したヘリ・人物なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-110_char.png": "200cc18f4afff3a4eb49692b63625f6ccfd682009f9c24be3790cf5b76363495",
+    "画像/ASSET-110_still.png": "5827e320b2c58dc5fadc63ab426d3d4935615bb9c1d6b0af6a73e01f5a7ea5d3",
+    "動画/ASSET-110_video.mp4": "1474fbecc4364705de98bee564cab2aa4656479fed7157d2deb31e7a84bc9223"
+   }
+  },
+  {
+   "asset": "ASSET-111",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝山を見る実写の捜索者3人（後ろ姿）と上空のヘリ＝同一画面に収まっており台本どおりだが、人物混入。動画は一次監査で『前半捜索隊・後半ヘリ』と指摘済み（今回は静止画のみ確認）。キャラ＝ヘリを指さす隊員＝役割は合う。",
+   "fix": "背景再生成（山並みと上空のヘリ・人物なし）。キャラ流用可。動画は保留。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-111_char.png": "c9e10a0032fa1639839a7745e999c354b9ffac8341be60ecc3263d3481c9ed7f",
+    "画像/ASSET-111_still.png": "fd74f794841a2a1e64eae6a0dbe97f72476ecb7748358b6b616316b9840343e6",
+    "動画/ASSET-111_video.mp4": "45350fe3920dcf41bdf8097ff3d8aed03be06c40cc7a55079e8dfda21f3ae620"
+   }
+  },
+  {
+   "asset": "ASSET-112",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『4月9日』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-113",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝林道に集まるハンターと消防隊員（実写・多数・後ろ姿）＝内容は台本どおりだが人物混入。キャラ＝銃を持ち指さすハンター＝役割は合う。",
+   "fix": "背景再生成（林道と停車した車列・人物なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-113_char.png": "7f5a5fe184430d3d9aa93bc4b743969e44488ce5721ca6fe3efcb4b061402a3b",
+    "画像/ASSET-113_still.png": "8578201acc1e2d65a2bde23d9654ec61a60f97f8575b800a37b4e8f530197043",
+    "動画/ASSET-113_video.mp4": "6278bf995aa53510f7237065e35e7f2eef7e100e1e40826e9bc2387dcc43b492"
+   }
+  },
+  {
+   "asset": "ASSET-114",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝林道の脇に並ぶ装備、人物なし。キャラ＝銃を確かめるハンター。台本どおり。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-114_bg.png": "d323cfd7f5e3ed2477310fb0efd0e0d382eb1ca4d5bbc68a97bf3836514f620b",
+    "画像/ASSET-114_char.png": "c1c9005ced127c04c305267d64dd761f4f7f5e578211daf0dae148998a4bc941"
+   }
+  },
+  {
+   "asset": "ASSET-115",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝3本に分かれる山道を進む実写の捜索者4人（後ろ姿）＝内容は台本どおりだが人物混入。キャラ＝指さすハンター＝役割は合う。",
+   "fix": "背景再生成（3本に分かれる山道・人物なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-115_char.png": "594654460518c9bfad0e6d022efff14ff201e83fb5234aff418f49baf2f4936c",
+    "画像/ASSET-115_still.png": "eb1beaa955f4b796e094dcb42f95ef0dd9a18e21c28879082e7382d2ba942447",
+    "動画/ASSET-115_video.mp4": "5aa3ffe654da9257addffe77e8be0ab5cb7a97bdc27a1b6821e31d4cbe739309"
+   }
+  },
+  {
+   "asset": "ASSET-116",
+   "category": "Google Earth",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "北東方向が分かる構図。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-117",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝銃を持つ実写の手（オレンジのベスト）＝手が写る。キャラ＝口ひげの高齢ハンターが銃を持つ＝台本『ベテラン（62歳）』に合う。",
+   "fix": "背景再生成（車のボンネットや台に置かれた猟銃・手なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-117_char.png": "39ae344c9c21790bcfc721081c88b392c6a6cd5777cfde2ccf20c03dd5c7ce62",
+    "画像/ASSET-117_still.png": "fc36421dbf867a69d7ec75ec2f8656bfb942db81a26020672301f1d6603b7be3"
+   }
+  },
+  {
+   "asset": "ASSET-118",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝ササやぶを進む実写の捜索者2人（後ろ姿）と遠くのヘリ＝内容は台本どおりだが人物混入。キャラ＝無線機を持つハンター＝役割は合う。",
+   "fix": "背景再生成（残雪の山並みと遠くのヘリ・人物なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-118_char.png": "9df5b062b699556eb483c49dabebe24c887c9da964434b3cddab4142f5ac6575",
+    "画像/ASSET-118_still.png": "056867838ac3598345e3270149953543d1f21f918d06c54d93f435e2bfb1f4c1",
+    "動画/ASSET-118_video.mp4": "3b29651b6be3b1f0a0c94d81a50d330441c5b0c6f5651824f2612688cc96c76b"
+   }
+  },
+  {
+   "asset": "ASSET-119",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "FAIL",
+   "part": "静止画",
+   "evidence": "シーン『日陰に残る春の雪』に対し、左に大きく実写の人物（後ろ姿・リュック）。雪は合う。",
+   "fix": "画像再生成（林の日陰に残る雪・人物なし）。軽微だが人物は不要。",
+   "severity": "軽微",
+   "note": null,
+   "files": {
+    "画像/ASSET-119_still.png": "09f2f4b0d7bb2214e1e85b9bad3cdd1fafb01fa6d241a7dbc1b7c4e527f8e89d"
+   }
+  },
+  {
+   "asset": "ASSET-120",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝残雪の足跡を指さす実写の人物（後頭部と腕）＝人物混入。足跡は合う。キャラ＝しゃがんで足跡を見るハンター＝役割は合う。",
+   "fix": "背景再生成（残雪に残るクマの足跡・人物なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-120_char.png": "0594fab680513589373fa28d11a4be1142fff72bab5eda751ec59c45e01e796f",
+    "画像/ASSET-120_still.png": "c6710631d7c6f1448d2d96c9adda91030da37de71927b3de5c72c3b6faa18a50",
+    "動画/ASSET-120_video.mp4": "b831b87ac038ce1cd15e9fbe96d1c16ed2b10c1f4b135ce9846844e2c92cfdb8"
+   }
+  },
+  {
+   "asset": "ASSET-121",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "溶けかけた雪の足跡と、右下に手のみ。台本どおり。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-121_still.png": "80d12c88134d5baad734af197fa705791ccf24acbbed7ec76f7b5c0aa9983d49"
+   }
+  },
+  {
+   "asset": "ASSET-122",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝雪上の足跡を指すハンター3人（実写・オレンジの迷彩・横顔）＝人物混入で横顔も見える。キャラ＝指さすハンター＝役割は合う。",
+   "fix": "背景再生成（雪上の足跡の列・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-122_char.png": "8fe8af62fc580fbe1797f43ffc1ae2202d0c7158d08b45017b243bef91d2ec46",
+    "画像/ASSET-122_still.png": "8774eff9f8ff50326b3e287c7be1d108c7f4cbbac1e1e9b49caac94f8428de1c"
+   }
+  },
+  {
+   "asset": "ASSET-123",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『午後6時』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-124",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝夕日の林道と置かれた長靴、人物なし、黒つぶれなし。キャラ＝泥のついた疲れたハンターが戻る。台本どおり。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-124_bg.png": "8201551c3effe5e1e65da0571dfc62cfb475d125f38fad87335f3d9422524262",
+    "画像/ASSET-124_char.png": "06eba2aa8c60fc9a23dcd903ffe2d0ad28ff9598a7eda7cc9060bbf91c74e2f2"
+   }
+  },
+  {
+   "asset": "ASSET-125",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝山並みと上空のヘリに加え、草地を歩くヒグマと右前景の実写の人物＝台本『無人の山並み』と矛盾（一次監査と同じ）。キャラ＝無線機の隊員＝『無人』のカットに人物は不要。",
+   "fix": "背景再生成（無人の山並みと遠ざかるヘリ・クマなし・人物なし）。キャラ不使用。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-125_char.png": "56da34078f8821cf66776c20c7618c097d34b2dcfd06d77231ddfd99f11e1616",
+    "画像/ASSET-125_still.png": "a357d2d47bf8b9471bf1b229201fb85fb402d80c0daa0f65c9f0ca29ded57887",
+    "動画/ASSET-125_video.mp4": "51e107bfd3e17b7850719cee105ce15c69bfa42fc34bb75052465ec02316032e"
+   }
+  },
+  {
+   "asset": "ASSET-126",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "残雪の林を木々の間へ歩くヒグマ、人物なし。『木々の間へ消えるクマの影』を満たす。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-126_still.png": "9e5f04fac677eb3186a7d300f8a40e971fe2b142604680ee81845dc602927989"
+   }
+  },
+  {
+   "asset": "ASSET-127",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『警戒継続』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-128",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝夜の集落の道に立つ実写の人物（後ろ姿）＝人物混入。『閉じた玄関』が主画になっていない（家は写る）。一次監査と同じ。キャラ＝懐中電灯を持つ帽子の男性＝ハンターとして許容。",
+   "fix": "背景再生成（夜の集落と閉じた玄関を正面に・人物なし・黒つぶれしない）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-128_char.png": "6aec3e6c9767ab6ab2923e0db6fcfd1b1230da680b0923ab85b04bbacf20ae6d",
+    "画像/ASSET-128_still.png": "bb4f23508cc6b7bf4c0cd0e26c69f40d5987d9c81141f828d5b89baef5552367"
+   }
+  },
+  {
+   "asset": "ASSET-129",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『観光への懸念』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-130",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝夕暮れの山道、人物なし。キャラ＝泥まみれで疲れたハンターがタオルを首に歩く。台本『疲れた捜索隊が山から戻る』に対し1人だが、一次監査の『空の道と猟師1名』は現状の合成で成立している（『隊』を1人で代表）。",
+   "fix": null,
+   "severity": null,
+   "note": "軽微: 隊を1人で代表",
+   "files": {
+    "画像/ASSET-130_bg.png": "a596a335865e1ab9ad5abc8c04585e49765c8df8027e5d77b4d8904b9ebe6019",
+    "画像/ASSET-130_char.png": "6ff4923d0bddaf4d5b67feb56ad8a9479e02afcdb730736d8595490abe3e2219"
+   }
+  },
+  {
+   "asset": "ASSET-131",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『5月19日』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-132",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "箱わなに入ったヒグマ、手前にヘルメットの職員（後ろ姿）。台本『町職員が箱わなにかかっているクマを見つけました』と整合。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-132_still.png": "cf75cb03e14d3964d0ad82cbf4ff3753367e23c2a95927efad2dd5e020a8ad5b"
+   }
+  },
+  {
+   "asset": "ASSET-133",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "鉄格子越しの捕獲個体、手前に3人の後頭部。『鉄格子越しに捕獲個体』を満たす。",
+   "fix": null,
+   "severity": null,
+   "note": "132と絵柄が近い（本人判断）",
+   "files": {
+    "画像/ASSET-133_still.png": "7e52cc93ed7f71970be15cb715091e45bbc4d9593d611e694a4525bfb89436e8"
+   }
+  },
+  {
+   "asset": "ASSET-134",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『1.8m・250kg』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-135",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝山道脇の空の箱わな、人物なし。キャラ＝しゃがんで作業するハンター。台本『箱わなの横で作業するハンター』と整合（駆除の描写はしない方針）。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-135_bg.png": "18390a50df5884f284164dea5dbda805719968072b61cbba530d3b1aa8be2e97",
+    "画像/ASSET-135_char.png": "d403ce81050ba616bc4c52f577085b4cc4b83e5094e74b091b3a632265dc24a4"
+   }
+  },
+  {
+   "asset": "ASSET-136",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝発泡容器を持つ白衣の実写の人物（後ろ姿）＝人物混入。キャラ＝白衣の研究者が試料袋を持つ＝役割は合う。",
+   "fix": "背景再生成（机上の密封試料と発泡容器・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-136_char.png": "a671b8f5b19641a03321c9be9a14c0b7d8cda0e37c7c60c9822f0b6972b8635a",
+    "画像/ASSET-136_still.png": "e10cc0d4c265cf47753e681066ebb7b0611c101151f21f43c1dcef5b69532068"
+   }
+  },
+  {
+   "asset": "ASSET-137",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝林の箱わなと、左前景に実写の人物（横顔が見える）＝人物混入。キャラ＝懐中電灯のハンター＝役割は許容。",
+   "fix": "背景再生成（林の中の箱わな・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-137_char.png": "f50a3992a1c291b2d15657970bf469c10a437fedcf873e1459b3c772b7c691a2",
+    "画像/ASSET-137_still.png": "f25dce5004e43cf8c1da87cdeaf06522715764e8c8e154f1bd682cf27addb7eb"
+   }
+  },
+  {
+   "asset": "ASSET-138",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝作業机に白紙の記録用紙、人物なし。キャラ＝記録板の性別欄を指す職員。台本どおり。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-138_bg.png": "49d8cd5c0f9878a717f929be7ecb5cfb33d8123a0b31c101137f20fa9ba555dc",
+    "画像/ASSET-138_char.png": "c7e79f76f7d0865ec92642c1e5e73a81b12b58e3140468354479831f81226b3b"
+   }
+  },
+  {
+   "asset": "ASSET-139",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『有力な候補』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-140",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝机の封筒に伸びる実写の手と腕（セーター）＝手が写る。キャラ＝封筒を開けようとする女性＝役割は合う。",
+   "fix": "背景再生成（窓辺の机に置かれた封筒1通・手なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-140_char.png": "e40989c68315cdb5140c52a973c857481f36784b7c85bb0df9b396fc891b7531",
+    "画像/ASSET-140_still.png": "4d9fa4ac75c16d6cc758aba4f0ca457b3a96b2690a76a8d0c5b7d3cb9b36aafd",
+    "動画/ASSET-140_video.mp4": "c1d8ee2bab228ee4aa528ff1863797e3a1c60f5b5d6853ee206e2d1d1693d75c"
+   }
+  },
+  {
+   "asset": "ASSET-141",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝封筒2枚を並べる実写の両手と後頭部＝人物混入。キャラ＝封筒2通を持つ白衣の研究者＝役割は合う。",
+   "fix": "背景再生成（黒い机に無記名の封筒2枚・手なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-141_char.png": "0ae021add4d08ef1d45dd129621c072a6ddf654c2e5877c928102410e541637e",
+    "画像/ASSET-141_still.png": "dbfc00566891bbb5d167edf5e2a972d98ef4a3f4dd25f2e036aefe3ef68eb1b9"
+   }
+  },
+  {
+   "asset": "ASSET-142",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景（人物＋構図）",
+   "evidence": "静止背景＝箱わなの中のクマを見る実写の人物（後ろ姿）＝人物混入。台本『捕獲個体のカードを別箱へ移す』に対し、背景は檻のクマで、カードや箱が無い。キャラ＝カードを箱へ移す職員＝役割は合う。",
+   "fix": "背景再生成（机上の記録カードと2つの保管箱・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-142_char.png": "d3dd1c5d2a665cb1e22563f9eb00733f0f43a024fe75f5eaf290626d55d59e4f",
+    "画像/ASSET-142_still.png": "629bada26d7c06933dc2d25f229c90d8569d909a34fc68045ada8167880b2cbb"
+   }
+  },
+  {
+   "asset": "ASSET-143",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝集落の道と背後の山、人物なし。キャラ＝双眼鏡で山を見る住民。台本『家から森を見つめる住民』に対し家の中からではないが、一次監査の『集落路と双眼鏡の猟師』は住民として成立する。",
+   "fix": null,
+   "severity": null,
+   "note": "軽微: 家の中からではない（本人判断）",
+   "files": {
+    "画像/ASSET-143_bg.png": "4a12ef7d10a6423a6a6232f96149c4b3aeffcba9dfb2419d0f51847668790894",
+    "画像/ASSET-143_char.png": "cfee934b22f32acd875c0d7058e3e6783b2cfe512d170459f62870ce86b5b9f2"
+   }
+  },
+  {
+   "asset": "ASSET-144",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『12月18日』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-145",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝会議机でクマの写真を持つ実写の職員と、奥に2人の手＝人物混入。資料は合う。キャラ＝記録板を持ち指さすハンター＝『町の会議』に対しハンター姿は違和感（許容）。",
+   "fix": "背景再生成（会議机に広げたクマ対策の写真と資料・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-145_char.png": "b547eea135bea4baa694e8080efdb388a7f7be0627bf23e7484f486528035f51",
+    "画像/ASSET-145_still.png": "c41988e107cbfac2a4a6147bb307a98b7f1598754aab1db6dcb02e1a30774e64"
+   }
+  },
+  {
+   "asset": "ASSET-146",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝対策本部の机で地図を見る実写の2人（後ろ姿）＝人物混入。捜索記録は地図として写る。キャラ＝書類の束を持つ隊員＝役割は合う。",
+   "fix": "背景再生成（机に積まれた捜索記録と地図・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-146_char.png": "6647328d4742e72fc4670c1ba855e8a1537700ec496291f9e0fb3900600f5bf0",
+    "画像/ASSET-146_still.png": "e51ceda2789f78dafffdec8bfb435659d80b8cf69e23df7639a795f86ece6fa4"
+   }
+  },
+  {
+   "asset": "ASSET-147",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『捕獲20頭』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-148",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景（構造）",
+   "evidence": "静止背景＝会議室で多数の出席者（実写・顔が見える）に向かって話すスーツの男性の後ろ姿＝人物多数で、キャラを重ねると人数過剰（047と同型）。キャラ＝眼鏡の町長風の人物＝役割は合う。",
+   "fix": "背景再生成（会議室の演台側から見た空席の机・人物なし）。キャラ流用可。または047と同じくキャラ不使用。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-148_char.png": "148a6d7b0900e5ebcfcc5f48420380082ac5009008c7e962c16493cc07abf7bb",
+    "画像/ASSET-148_still.png": "93fbab6cda1a3a32968531da8c639726a5fb1ec75f432923d215a9324f65c97f"
+   }
+  },
+  {
+   "asset": "ASSET-149",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝山道の無地の掲示板と実写の登山者（後ろ姿）＝人物混入。キャラ＝誘導棒で制止する若い男性＝台本『入山自粛の掲示』に人物は不要。",
+   "fix": "背景再生成（山道の掲示板・人物なし）。キャラ不使用（文字は編集で載せる）。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-149_char.png": "55df80e3d40556baa1918e9e82bf64d5b6d5fcc6de39562187bcae43ce5b7d59",
+    "画像/ASSET-149_still.png": "91228227e19f989ed951d6a389b092abf4ff094901ecd036baa087c183a04ba3"
+   }
+  },
+  {
+   "asset": "ASSET-150",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『諦めない町長』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-151",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝机上の書類ファイル・手袋・冬山写真と、実写の手と腕＝手が写る。物は台本どおり。キャラ＝書類と写真を持つ隊員＝役割は合う。",
+   "fix": "背景再生成（同じ机上の物・手なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-151_char.png": "310d32f6c43b9b6370305f7adcb314fef008c00745b637435667dbc7027d6ffc",
+    "画像/ASSET-151_still.png": "066d54837ca1a91061c7ae89dde4992c180c49dd00738869fd28a1f3e5f31f96"
+   }
+  },
+  {
+   "asset": "ASSET-152",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝壁の2枚のカレンダーをめくる実写の人物（後頭部と腕）＝人物混入。カレンダーは合う。キャラ＝2枚のカレンダーを持ち考える男性＝役割は合う。",
+   "fix": "背景再生成（壁の2枚のカレンダー・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-152_char.png": "19d7e0aab41a9747e17e0ddd688cd0b0ea5c65628dd27cd849d34d221c7f730c",
+    "画像/ASSET-152_still.png": "5e150501c34f93826a720e58433339086b076e882bb0e75ad291d12d0609698a"
+   }
+  },
+  {
+   "asset": "ASSET-153",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝役場前の机にリュックと懐中電灯、人物なし。キャラ＝装備を詰める女性隊員。台本『春に向けた捜索装備を準備』と整合。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-153_bg.png": "2a456a3a7f0a226b98ea734e502de8f4815f07cff8d38f3dadd0a553fe58312e",
+    "画像/ASSET-153_char.png": "1c244309aa1e2e1df0ce7cbd0bad5481c650c99745b152b8c3308d26620706f4"
+   }
+  },
+  {
+   "asset": "ASSET-154",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『2015年3月』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-155",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝役場の机にファイルと白紙、人物なし。キャラ＝計画書を読む隊員。台本『大規模捜索計画を机に広げる』と整合。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-155_bg.png": "3b75084a3050b8f6935f2e5a381d1041367320056df012c31c4df030b0f78d60",
+    "画像/ASSET-155_char.png": "890cef504763d6bec9af0a2dc70daf57a9e54729e1aaf1bf4114a0dd6de2d4bd"
+   }
+  },
+  {
+   "asset": "ASSET-156",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝役場の机にファイルと書類、人物なし。キャラ＝ファイルを読む隊員。台本『2年前の事件資料を開き直す』と整合（105・155と同型の背景。本人判断で画変わり）。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-156_bg.png": "49100a10565c494326c51163c15798579b9e8f1b9508ee34af84a2e4203fe2c9",
+    "画像/ASSET-156_char.png": "02162bd165c86e89a7ab3015b13c6e5348896c268a624ac8347bd4d52a6ba8e6"
+   }
+  },
+  {
+   "asset": "ASSET-157",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝役場の窓口に並ぶ実写の住民3人（後ろ姿）＝人物混入。台本『役場の窓から住民の暮らしを見る』に対し窓口の列で意味が違う。キャラ＝双眼鏡の女性＝台本に根拠なし。",
+   "fix": "背景再生成（役場の窓から見える集落の道と家々・人物なし）。キャラは職員（窓の外を見る）へ差し替え、または不使用。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-157_char.png": "f76915a8fa3185226516afb13e864985bc09b7fd90cfc4cc2c2c305dfac584a8",
+    "画像/ASSET-157_still.png": "713e1d9432b776ad0a7462c5c3a1624cf891377b4f851f8bfc4892ea7eb29a5f"
+   }
+  },
+  {
+   "asset": "ASSET-158",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝残雪の足跡を追う実写のハンター5〜6人（オレンジ）＝内容は台本どおりだが人物混入。キャラ＝しゃがんで足跡を見るハンター＝役割は合う。",
+   "fix": "背景再生成（残雪の尾根道に続く足跡・人物なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-158_char.png": "a49291c5138ccfc7765bb02164e4ef5735d96f14b0df7033e1149fabe41bbb46",
+    "画像/ASSET-158_still.png": "61a15152df9592f372de0e61eaac7c395394f89ffbcc6e4f03fabd130bdc4908",
+    "動画/ASSET-158_video.mp4": "5371a6ddba2a93f48e0b7ceaee87cb3abe419f0e754baa6942d6f3a5e585d088"
+   }
+  },
+  {
+   "asset": "ASSET-159",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝木立の奥に遠く見えるヒグマ、人物なし。キャラ＝双眼鏡で確認するハンター。台本どおり。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-159_bg.png": "d4e2e948c44e238512eef5905899b36ea1d0c94fee7199bba5fa19adaf910292",
+    "画像/ASSET-159_char.png": "5e84e66ead71bb49b47df125bc1c9488efac3cc4e8aebf0309e051ef60f1a4f6"
+   }
+  },
+  {
+   "asset": "ASSET-160",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝箱わなの横にしゃがむ実写のハンター（胴と手袋の手）＝人物混入。箱わなは合う。キャラ＝小型の檻を運ぶハンター＝役割は合う（檻の大きさは絵として許容）。",
+   "fix": "背景再生成（山道脇に置いた未使用の箱わな・人物なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-160_char.png": "f5456a853815a9ed649d4750e294be5f60b5514887433da0b082df386530dabf",
+    "画像/ASSET-160_still.png": "fe115f7d2a3d56efa5dd8693aa95d708f82a70547d078f6753a391316f1b7a31",
+    "動画/ASSET-160_video.mp4": "4442c038ecc586ee897582eccde7e42c2ac6bb68ccd38bd533bbdb2e8fc7e621"
+   }
+  },
+  {
+   "asset": "ASSET-161",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "泥の前足跡に定規を当てる手のみ。台本どおり（048と同型。本人判断で再利用可）。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-161_still.png": "ae61a13f94ea5a3f14c3a0f1c2b5cc934fafa60f54ae3697b063a3ec0203ede9"
+   }
+  },
+  {
+   "asset": "ASSET-162",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝林道で正面から威嚇するヒグマ（近景・全身）と、右前景に実写の人物（後頭部）と車のボンネット＝人物混入、かつ台本『クマの鼻を遠景で示す』と逆（一次監査と同じ）。キャラ＝鼻を指さすハンター＝動作は合う。",
+   "fix": "背景再生成（遠くに見えるヒグマの横顔・人物なし・傷は描かない）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-162_char.png": "2cd8172f9472a9347c1202ce54a37005f73b537cd57690b1a15e79fbda685cc0",
+    "画像/ASSET-162_still.png": "28c6a019bf1e038603115ad587dc120362fc227af3439124ae4a5a5992af6c28"
+   }
+  },
+  {
+   "asset": "ASSET-163",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『4月末まで』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-164",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝ササとギョウジャニンニクの生える山道、人物なし。キャラ＝カゴと山菜を持つ女性1人。台本『春に増える山菜採りの人々』に対し1人だが、複数はナレーションの一般論で、1人で代表可（一覧の疑義は現状の合成で成立）。",
+   "fix": null,
+   "severity": null,
+   "note": "軽微: 人々を1人で代表",
+   "files": {
+    "画像/ASSET-164_bg.png": "cab1b9f3069647fe3b02eadd6423a878ff57306e58e9a797764e381530fec51a",
+    "画像/ASSET-164_char.png": "8f83eab7e8ee293485f113b5edc83f2bb47b6fd001e70e20408727ddf55e5c8e"
+   }
+  },
+  {
+   "asset": "ASSET-165",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『入山を控える』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-166",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝山道脇に並ぶ車3台と、荷台を開けた車の前に立つ実写の人物（後ろ姿）＝人物混入。車列は合う。キャラ＝山菜を持つ帽子の女性＝役割は合う。",
+   "fix": "背景再生成（山道脇に並ぶ山菜採りの車・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-166_char.png": "17afe6f6da92c453ea3d652651e5c6707bde938ab20e1be8d80ded2157f76929",
+    "画像/ASSET-166_still.png": "c19ad82bc05e047e8c57ea7cca36611ec163bda8d464b206be1fb9d1684d917b",
+    "動画/ASSET-166_video.mp4": "273276b32a50797c7933bff6b7b60bee940f610d103cbf329a8f88313f2b7c33"
+   }
+  },
+  {
+   "asset": "ASSET-167",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝クマの写真と地図を持つ実写の手と腕＝手が写る。資料は合う。キャラ＝作業服の町職員が記録板を見る＝台本『ハンターでもある町職員』に合う。",
+   "fix": "背景再生成（机上のクマの写真・地図・無線機・手なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-167_char.png": "b1d830ce3e66f7b59e7ee4ececa710a403e8e19eaa5de88bf85814a62d9525d0",
+    "画像/ASSET-167_still.png": "e16cee19a18e41d65785eb2737ccc8769fa86c6443fecf15acfa0574fa4983d6"
+   }
+  },
+  {
+   "asset": "ASSET-168",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝荒れた畑と山を見る実写の人物（後頭部）＝人物混入。畑と山林の境は合う。キャラ＝懐中電灯を持つ若いハンター＝台本『86歳の元漁師』に根拠なし。",
+   "fix": "背景再生成（荒れた畑と山林の境・人物なし）。キャラ再生成（86歳の高齢男性が畑を見る）。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-168_char.png": "10ca5dfb97b6d707f2a520433f2e7c0f6de804706d8bf38edfa39d385817436c",
+    "画像/ASSET-168_still.png": "8e1098e4e9f87908837b5f921c61c69f63bfda7585cb0c9df4ee60bb5e6d905b"
+   }
+  },
+  {
+   "asset": "ASSET-169",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝棚のラジオと笛は合うが、左に実写の男性（後ろ姿）＝人物混入。キャラ＝笛を吹きラジオを持つ女性＝役割は合う。",
+   "fix": "背景再生成（畑の小屋の棚に置いたラジオと笛・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-169_char.png": "5bbb2db000052189b026c0d8ffad062391231610dca092db916c23f9816bc8ce",
+    "画像/ASSET-169_still.png": "60735da8921f11bfacc95a57ee22f37a32b70c71841b1b9187c39cc7c16d365f",
+    "動画/ASSET-169_video.mp4": "ee833a6c869a15b9567307582f65b1ab06f5ae461af28e4a68d7e353030d21ea"
+   }
+  },
+  {
+   "asset": "ASSET-170",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景（人物＋構図）",
+   "evidence": "静止背景＝竹の柵を組む実写の作業員2人（後ろ姿）＝人物混入。台本『町の家々が裏山を警戒する』に対し家々が写らず柵作業の画。キャラ＝双眼鏡を持ち警戒する男性＝役割は合う。",
+   "fix": "背景再生成（裏山を背にした集落の家々・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-170_char.png": "304a0027ead0dc011bdf78f216858fce8636b64b063eaa2ef8e6c9c31750d35c",
+    "画像/ASSET-170_still.png": "f36eeb47d52fdfde492103816c1cf264026e1de34f6e1b4bba7bca13c64782d4"
+   }
+  },
+  {
+   "asset": "ASSET-171",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『4月5日』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-172",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝山林を見る実写の人物（黒い頭巾・背負いカゴ・後ろ姿）が右半分を占める＝人物混入。山林は合う。キャラ＝杖を持つハンター＝役割は許容。",
+   "fix": "背景再生成（北檜山と大成の間に続く山林の俯瞰・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-172_char.png": "3ac3c629a4babbb05afbdc1a5f2189232cd3c6561a52e5428f9734cb3bb73dcd",
+    "画像/ASSET-172_still.png": "6c213f3ff0b1747d2f065eccbec50c0aa01e71243c83c6b6f713771921ec1b13"
+   }
+  },
+  {
+   "asset": "ASSET-173",
+   "category": "Google Earth",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "広域地形。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-174",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝林道を進む実写のハンター3人（後ろ姿・銃）＝内容は台本どおりだが人物混入。キャラ＝杖を持つ隊員＝役割は合う。",
+   "fix": "背景再生成（同じ林道・人物なし）。キャラ流用可。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-174_char.png": "739f181f6d486907a745bad457e18442e04a553c3d54a38fe7b2ae428eb10957",
+    "画像/ASSET-174_still.png": "9f1ade3835384378cdb10e4f6720d6550f1fd50a992b9484472ea08609f835d1",
+    "動画/ASSET-174_video.mp4": "f0ead74e549a0829fe1b05518b4f894e786c233a8d7738936d23422acb1587f1"
+   }
+  },
+  {
+   "asset": "ASSET-175",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝広い山林を見下ろす斜面を下る実写の捜索隊7人＝人物混入。『前年より広い山林を俯瞰』は背景の奥で成立（一次監査の『林の人々だけ』は人物を消せば解消）。キャラ＝双眼鏡のハンター＝役割は合う。",
+   "fix": "背景再生成（広い山林の俯瞰・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-175_char.png": "93a83eef4e206f77e26e21090d6d429d3adee63f220fed71c4d9389307e76ad8",
+    "画像/ASSET-175_still.png": "64e2b838c59d70cb1ce37870a992a589f379aa7f41b3818ce1c33b169ee882aa"
+   }
+  },
+  {
+   "asset": "ASSET-176",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝誰もいない春のやぶ、人物なし・クマなし。キャラ＝双眼鏡で見つめるハンター。台本どおり。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-176_bg.png": "4c7e9e0638e2f8a2656c160e5d2ce906c889ac1572174c8e0f27ce3e32f4179c",
+    "画像/ASSET-176_char.png": "a4c85aecbf7c525cc8f451f97cb170a831163b7c58c2053856c245d971452e53"
+   }
+  },
+  {
+   "asset": "ASSET-177",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『最も危険な段階』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-178",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝店のカウンターにビラの束（クマの写真入り）と、左に実写の店員（後ろ姿）＝人物混入。ビラの束は合う。キャラ＝ビラを配る女性＝役割は合う。",
+   "fix": "背景再生成（コンビニのカウンターに置かれたビラの束・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-178_char.png": "66291b858306b3128b51275e51cb2fc0d241cfe7896b30adf9534840fe03ffc2",
+    "画像/ASSET-178_still.png": "ede8921bba3f2fd95b8ff3c9b05dd33e75ade5c252f5731a6b50a735a814b854",
+    "動画/ASSET-178_video.mp4": "d8925a95ea8e9d5a768ad688b605087fa1903c4fb6cef06eb2d1f3ef39f0e715"
+   }
+  },
+  {
+   "asset": "ASSET-179",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝白紙のビラを持つ実写の両手と頭部＝人物混入。白紙は編集で文字を重ねる指示と整合。キャラ＝赤ペンで紙に書く男性＝役割は許容。",
+   "fix": "背景再生成（机や掲示板に置いた白紙のビラ・手なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-179_char.png": "263eed900ceda7e933996722a43650b4b5e20757ff124d6a5031fd58afd368fd",
+    "画像/ASSET-179_still.png": "837ecce6ec707b9d600c6249a2bca9051cc1e7b9656e1b00a09ae54df02147a8"
+   }
+  },
+  {
+   "asset": "ASSET-180",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『思わぬ進展』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-181",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝左『林を歩く捜索者2人（後ろ姿）』右『ピペットを扱う実写の研究者』の2分割＝両方に人物。台本『捜索資料とDNA資料を並べる』に対し資料でなく人の作業（一次監査と同じ）。キャラ＝試料管を持つ研究者＝役割は合う。",
+   "fix": "背景再生成（左に捜索の地図と記録、右にDNA試料管とラベル、の2分割・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-181_char.png": "a15a4d86055419f34cd4ffca13e6f23726a58261f3026af7cefe2fb2d50c3260",
+    "画像/ASSET-181_still.png": "1aaa36eae9e8add8829d90162f58a10db374cf3f91cdb8d91f30508f5d4f37eb"
+   }
+  },
+  {
+   "asset": "ASSET-182",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝研究室の机に試料管2本と白紙、人物なし。キャラ＝試料袋を持つ研究者。台本『町外の試料を受け取る専門家』と整合。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-182_bg.png": "8d7b37a65fee69fbd02ea288ca60fc481b63dad3b5d3e6ec267e1a1c0bcaeccf",
+    "画像/ASSET-182_char.png": "a052cb3317d9e7337ffd44af332d645f4ac579d2e37aa65885cd4fcb44d4fa9a"
+   }
+  },
+  {
+   "asset": "ASSET-183",
+   "category": "Google Earth",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "広域地形。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-184",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝試料管のラックを扱う実写の研究者（後ろ姿・青手袋）＝人物混入。試料管は約20本で合う。キャラ＝試料管ラックを持つ研究者＝役割は合う。",
+   "fix": "背景再生成（ラックに並ぶ20本の試料管・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-184_char.png": "9c5d2ee0596969f556558302c81dfd01e32d73c97125934540de00676e55152c",
+    "画像/ASSET-184_still.png": "933ac328d5cd5745de2535b27e11480c403371ed39bbe4e9a50b4a0806d4038c"
+   }
+  },
+  {
+   "asset": "ASSET-185",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝研究室の机に試料管とラベル2枚、人物なし。キャラ＝ピペットで試料を扱う研究者＝『DNA比較を始める手元』として成立（一覧の疑義はキャラの動作で解消）。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-185_bg.png": "6cc233e02f4ede6dacb13ff4afc8fd88e143780e8c15407b819b364b466e7484",
+    "画像/ASSET-185_char.png": "e4cd633c5dd96cee5c59d00f53357b880daa29b53f426c5ec6caff76ba238532"
+   }
+  },
+  {
+   "asset": "ASSET-186",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『4月22日夜』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-187",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝並べた封筒18枚と、1枚を持つ実写の白衣の手＝手が写る。封筒は台本の20個に対し18枚（軽微）。キャラ＝封筒1通を掲げる研究者＝役割は合う。",
+   "fix": "背景再生成（机に並ぶ無記名封筒20枚・手なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-187_char.png": "be9160805123626ee75fde6f4942862b9eb2fbc279903d9017b7b12f46bdcb39",
+    "画像/ASSET-187_still.png": "445610ce2ec258ccc2764e19c68693bb5b73989926dcc00f4e10b1b7891cae30"
+   }
+  },
+  {
+   "asset": "ASSET-188",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝夏のビート畑と山、畑にかがむ実写の農家（後ろ姿）＝人物混入。畑と周辺林は合う。キャラ＝ビートを持つ農家風の男性＝役割は許容。",
+   "fix": "背景再生成（今金町のビート畑と周辺林・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-188_char.png": "11fe5cb7c02b94c65ab2f437cd38baa9218b0fe7fcdccc42bb5557d5eabe0deb",
+    "画像/ASSET-188_still.png": "6d16593886440480d263e4b6a598c18ad9224b89f6147fc1d81604fc836367d9"
+   }
+  },
+  {
+   "asset": "ASSET-189",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『2014年8月4日』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-190",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『事件から4か月』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-191",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝ビート畑の箱わなの横にしゃがむ実写のハンター（横顔）＝人物混入。箱わなは空で『設置』として合う（動画は一次監査で『途中でクマが檻内に現れる』と指摘済み＝保留）。キャラ＝懐中電灯のハンター＝役割は合う。",
+   "fix": "背景再生成（夏のビート畑に置かれた箱わな・人物なし）。キャラ流用可。動画は保留。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-191_char.png": "cf8779241e7d8fd2980761e5100f965ae7822ef373aa9a603a50312356e7859e",
+    "画像/ASSET-191_still.png": "e10fbaeadad6a80fd4ece30204ca18d11535b89e4d74268efe41d0340099b6d2",
+    "動画/ASSET-191_video.mp4": "1fab318534404088e04ebcb11a3be3a9e1770ff46037fae0d5a2c1f5c5af5eb3"
+   }
+  },
+  {
+   "asset": "ASSET-192",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『2m・230kg』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-193",
+   "category": "Google Earth",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "広域地形。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-194",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝海を見下ろす尾根に立つ実写の登山者（後ろ姿）＝人物混入。海岸線は左奥に見える（一次監査の『海がない』は原寸では海あり）。キャラ＝懐中電灯を持つ若者＝役割は不要（風景カット）。",
+   "fix": "背景再生成（日本海を望むせたな町の山地・人物なし）。キャラ不使用を提案。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-194_char.png": "339b585843c835ec0a61c77e8b055d95c8f02b50394e055bfb3546ee6fda402e",
+    "画像/ASSET-194_still.png": "fc52699852b3195ae66ecaae6a679cb567a959ea1dc906896349046951497d6f"
+   }
+  },
+  {
+   "asset": "ASSET-195",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『内陸で捕獲』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-196",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝左『春の海側の断崖』右『夏のビート畑で収穫する実写の農家（後ろ姿）』＝右に人物混入。左右対比の構図は合う。キャラ＝左右を指さす女性＝役割は合う。",
+   "fix": "背景再生成（右半分だけ夏のビート畑・人物なしに差し替え）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-196_char.png": "427e8b02bf3368206c23dc6964da01d86d49641d9e1f53af58ba784b17d71a21",
+    "画像/ASSET-196_still.png": "58072c875429b0880cc029301ebf33f016c71db5ec4fb7bf7ddc786c50e9e2d9"
+   }
+  },
+  {
+   "asset": "ASSET-197",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝机の封筒を挟んで座る実写の2人（後頭部・肩）＝人物混入。封筒は合う。キャラ＝封筒を見る男性＝役割は合う。",
+   "fix": "背景再生成（会議机に置かれた無記名封筒1通・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-197_char.png": "005bf3e52630a85f20f546e8620a588c59264ace71158ced76bdbe98e254feaa",
+    "画像/ASSET-197_still.png": "6934be7f79ac427a24c9cf205998f1272378e8086d73ee4dd2f5057f05225386"
+   }
+  },
+  {
+   "asset": "ASSET-198",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝林道脇の机に片づけた装備と長靴、人物なし。キャラ＝装備をしまうハンター。台本『捜索装備を片づける』と整合。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-198_bg.png": "246e327517789e1fcfa692a915cd0e80c8e7d53ea64d95e90249f22da042a2b6",
+    "画像/ASSET-198_char.png": "a7231863fe3192dd58dacedf62bedc758181ab9eb3f8fba33417ad2a37c020f0"
+   }
+  },
+  {
+   "asset": "ASSET-199",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝演台に立つスーツの実写の男性（後ろ姿）と、椅子に座る出席者多数＝人物混入。台本『顔を出さず安堵した町長の手元』に対し演説の場面で、手元でもない。キャラ＝安堵して汗を拭う町長風の人物＝役割は合う。",
+   "fix": "背景再生成（役場の机上の書類と手元の湯呑み・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-199_char.png": "6105f9d92eebd08838da6eab5426459ce3682d953edcc8945e56a8b049a80541",
+    "画像/ASSET-199_still.png": "35caffc1bf4ef14b63bc7d2e6eb44f3305eb01caf8d557a25c9d29c85db738f7"
+   }
+  },
+  {
+   "asset": "ASSET-200",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝物置に警戒具の箱をしまう実写の住民（後ろ姿）＝人物混入。警戒具は合う。キャラ＝笛と拡声器をリュックに入れる男性＝役割は合う。",
+   "fix": "背景再生成（物置の棚と警戒具の箱・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-200_char.png": "40fdc6786f1f9fca75e6f685693f06aed6ed54b7689b27d59028e671989bbe31",
+    "画像/ASSET-200_still.png": "f1e24e32d6dda31dbe5fda7613a4656c815d474f5ec6e7496850461b7383a4dc"
+   }
+  },
+  {
+   "asset": "ASSET-201",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『時系列で追う』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-202",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "両方",
+   "evidence": "静止背景＝林の空の箱わなと、白紙のファイルを持つ実写の手＝手が写る。資料と空のわなの構図は合う。キャラ＝トラバサミを持つハンター＝台本にトラバサミは無く（箱わな）、道具が違う。",
+   "fix": "背景再生成（林床に置いた事故資料のファイルと奥の空の箱わな・手なし）。キャラ再生成（ファイルを見る職員）。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-202_char.png": "97b02bcc97e898e05f4725d224fc68ed18866af41b87fd988ca90464255f2637",
+    "画像/ASSET-202_still.png": "d6880ffc42323eceb3f66e74b1c79fb01f567d75f662f06c8f1b8575195be16b"
+   }
+  },
+  {
+   "asset": "ASSET-203",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝残雪の山道と、写真ファイルを持つ実写の手（白手袋）＝手が写る。山道と資料の構図は合う。キャラ＝懐中電灯のハンター＝役割は許容。",
+   "fix": "背景再生成（残雪の山道の脇に置いた資料ファイル・手なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-203_char.png": "afdbc31cb223752839595307f5ef2727e4b50116ab07681fd6b97feb0318a58a",
+    "画像/ASSET-203_still.png": "4086c3c64cf2dc2e82238c527d44fb12cd3ead05822ef0e2c86629fc7e950dbf",
+    "動画/ASSET-203_video.mp4": "6e7d9e42d9d6bd3dacbf6cf9355f6a49a00d32df92e88f16c2cfa48731afd618"
+   }
+  },
+  {
+   "asset": "ASSET-204",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝ビート畑の箱わなへ向かうヒグマと、右前景に実写の人物（後頭部）＝人物混入。台本『夏の今金町の箱わなと記録』に対し、クマが檻の外を歩き記録が無い（一次監査と同じ）。キャラ＝記録板に書く隊員＝役割は合う。",
+   "fix": "背景再生成（夏のビート畑の箱わなと、手前に置いた捕獲記録・クマなし・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-204_char.png": "3447bff7b01f47578265bb48bd9486f8b31a902d561eb4ad7134293c8ca5038a",
+    "画像/ASSET-204_still.png": "3bef6d2ac874331fa9af7ba966fe5b34a4fcfe07409306f77d56d8f454bc6c55"
+   }
+  },
+  {
+   "asset": "ASSET-205",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『同じクマの移動』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-206",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝地面のナタ（手斧）と、試料管を持つ実写の白手袋の手＝手が写る。ナタと試料容器は合う。キャラ＝しゃがむ高齢男性（CHAR-04風）＝役割は合う。",
+   "fix": "背景再生成（地面に置いたナタと試料容器・手なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-206_char.png": "52a0e09c0a31c1ad7f675d818735bca150a69ed31360f887a63ccb5c8d41b8da",
+    "画像/ASSET-206_still.png": "0e3d8b1a5876ba3a20b876a6af46d3a1b951378c9ebc56b33086c417f61f18b3"
+   }
+  },
+  {
+   "asset": "ASSET-207",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝屋外の木の机に封筒2枚と箱、封筒を押さえる実写の手＝手が写る。封筒2枚は合う。キャラ＝封筒2通を持つ研究者＝役割は合う。",
+   "fix": "背景再生成（机上の無記名封筒2枚と保管箱・手なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-207_char.png": "51f11e29f753a10310b59b71ae6d555f64ca434f471af7a9d9c5a4abb427610f",
+    "画像/ASSET-207_still.png": "818a5cdbde13ec2c8761266254795e23340bb4aff94cd27c479e4ea3724f6ca1"
+   }
+  },
+  {
+   "asset": "ASSET-208",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝役場の机に開いたファイルと書類、人物なし。キャラ＝書類2枚を見比べるハンター。台本『両町の記録を並べて見るハンター』と整合。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-208_bg.png": "4918aabdbe300fb170f9844e861a0e481518a4050cd6c8445cd7ff636032c3cf",
+    "画像/ASSET-208_char.png": "5397be2bd8dc4e694244f131006a0652021204b66b990c40e640636de49068e0"
+   }
+  },
+  {
+   "asset": "ASSET-209",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『出没情報を確認』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-210",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝布の上の鈴と笛と手帳、それを扱う実写の手＝手が写る。鈴と笛は合う。キャラ＝白衣の研究者が鈴と笛を並べる＝台本『研究者の手で』に合う。",
+   "fix": "背景再生成（岩の上の布に置いた鈴・笛・手帳・手なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-210_char.png": "1356ed3a522dc9dba2262fc5d613012c8393cefb85358e9b7e0f914f4c4350c7",
+    "画像/ASSET-210_still.png": "596a2a033185791f2fad1b7f3ead3f8539ea4bdfec5ffe00a88aa973b3e0129f"
+   }
+  },
+  {
+   "asset": "ASSET-211",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝クマの足跡と鈴とラジオ（無線機に見える）、左に実写の人物の脚＝人物混入。物は概ね合う（ラジオが無線機に見える点は軽微）。キャラ＝鈴を持つハンター＝役割は許容。",
+   "fix": "背景再生成（地面の足跡の横に鈴と携帯ラジオ・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-211_char.png": "76707f0a7df201ae7238b436e0cf5c452f851ace8eee3d39382b573fa0494b3f",
+    "画像/ASSET-211_still.png": "a84c72039af72e9f5330053dfbef8c29780a79da3bd5f88f880904c2724299c6"
+   }
+  },
+  {
+   "asset": "ASSET-212",
+   "category": "キャラアニメーション",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "背景＝見通しの悪い林道の曲がり角、人物なし。キャラ＝笛を吹く女性。台本『見通しの悪い曲がり角で笛を持つ』と整合。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-212_bg.png": "d5f7b4be4aa072753a880aa6e47341d8f8b49eb84a3e2af207e0c671efc64100",
+    "画像/ASSET-212_char.png": "a7def2f77b3a4410a08dcf58b19b2dca11cbbddb893f244f0dc510a1591aff16"
+   }
+  },
+  {
+   "asset": "ASSET-213",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝海を望む尾根道を歩く実写の2人（後ろ姿）＝内容は台本どおりだが人物混入。キャラ＝杖を持つ男性1人＝『2人』を表さない。",
+   "fix": "背景再生成（同じ尾根道・人物なし）。キャラ再生成（2人が並んで歩く）。動画は前後のつなぎ。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-213_char.png": "9e455be07bc6fe734168047ae7de7c3cc693487dd1bf0bc7bd458af85de58939",
+    "画像/ASSET-213_still.png": "2a033ce8c42c04cba4848a02380fcfff6a55a41acd91a7a0b0726c4f6610c533",
+    "動画/ASSET-213_video.mp4": "48f5ec445474f9a54877c2a259d428d4a08b9b594b00fcb7b19eb17e9bf94ab7"
+   }
+  },
+  {
+   "asset": "ASSET-214",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝林道を歩く実写の2人（前後・後ろ姿）＝人物混入。キャラ＝周囲を見回す女性1人＝『2人』を表さない。",
+   "fix": "背景再生成（同じ林道・人物なし）。キャラ再生成（2人が周囲を警戒）。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-214_char.png": "05623fb9c80ff49cc14f6f8a05e0e47ab027243780e4be99796e7938064ff6e9",
+    "画像/ASSET-214_still.png": "fcea3413409c01e1cff8a45005345e2a826a1d461c7a9042ff257e75c90c4731",
+    "動画/ASSET-214_video.mp4": "bd2877bc070b94c979d3fe630b0fe73cffd13e48b0a90286b434bc4c39952638"
+   }
+  },
+  {
+   "asset": "ASSET-215",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝駐車場の机で装備を確かめる実写の2人（後ろ姿）＝人物混入。装備は合う。キャラ＝装備を確かめる若者1人＝『2人』を表さない。",
+   "fix": "背景再生成（登山口の机に並べた装備・人物なし）。キャラ再生成（2人が装備を確かめる）。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-215_char.png": "6d47c18816cb5a840ea6ffb37bc6db1f3283f254874530c58eaca392305cd9bc",
+    "画像/ASSET-215_still.png": "a5b6dd44269cf90af0f32bd31e86ff9148091b653b5ac457f7c5b171f9468039",
+    "動画/ASSET-215_video.mp4": "46cacf1b827bcde2960886ad0a31676cbb7ff9e4d5d13b83ba891687163dd62f"
+   }
+  },
+  {
+   "asset": "ASSET-216",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『戻らなかった女性』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-217",
+   "category": "Lovart静止画 + 編集者",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "林床に置かれたカゴ（山菜入り）とナタ、左に座る人物の後ろ姿（許容内）。台本『翌年の女性のカゴと男性のナタ』を満たす。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-217_still.png": "f0b419c59624fd116da586c91e17c55857938380d3891e1022e7207f1da414ab"
+   }
+  },
+  {
+   "asset": "ASSET-218",
+   "category": "キャラアニメーション",
+   "verdict": "FAIL",
+   "part": "背景",
+   "evidence": "静止背景＝登山口の掲示板（地図・クマの注意書き・スプレーの箱）と、右に実写の登山者（後ろ姿）＝人物混入。掲示板とスプレーは合う（文字は読めない擬似文字）。キャラ＝スプレーを構える女性＝役割は合う。",
+   "fix": "背景再生成（登山口の掲示板とクマスプレーの箱・人物なし）。キャラ流用可。",
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-218_char.png": "d689009d506afa3e83718cd019e51e5b8c3a59250ae504517ff462dc0c7866c4",
+    "画像/ASSET-218_still.png": "1997722fe0ce22dbbb8763321cefca1093e83c0cd64270134aa4aac69e0aa5d2"
+   }
+  },
+  {
+   "asset": "ASSET-219",
+   "category": "テキストのみ",
+   "verdict": "編集者待ち",
+   "part": "編集作業",
+   "evidence": "黒背景『ご冥福を祈る』。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {}
+  },
+  {
+   "asset": "ASSET-220",
+   "category": "Lovart動画",
+   "verdict": "PASS",
+   "part": null,
+   "evidence": "夕暮れの海と森を見る人物の後ろ姿（帽子）。動画6コマ＝雲と光がゆっくり動く。『夕暮れのせたな町の海と森』を満たし、末尾が動画の規則にも合う。",
+   "fix": null,
+   "severity": null,
+   "note": null,
+   "files": {
+    "画像/ASSET-220_still.png": "b6d1bd1554291aafe6964144a4e4d46bb6f1737d425e640570a89c9f546fcd9e",
+    "動画/ASSET-220_video.mp4": "7e1cc16c1cadb11fbd1710597320c0744267c7cac6377ad9f0ea10777b0a325f"
+   }
+  }
+ ]
+}

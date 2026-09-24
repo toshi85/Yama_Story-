@@ -1,0 +1,142 @@
+[
+ {
+  "asset": "ASSET-017",
+  "method": "reuse",
+  "source": "ASSET-019_char.png",
+  "note": "CHAR-02（夫）が食卓の前で心配そうに立つ＝019の夫を流用",
+  "sha256": "5e6160d6116fa1562cbab21f3021796e682c7ed64e31e31df3758f9fba6197aa"
+ },
+ {
+  "asset": "ASSET-020",
+  "method": "reuse",
+  "source": "ASSET-019_char.png",
+  "note": "CHAR-02（夫）がワゴン車を見つける＝019の夫を流用",
+  "sha256": "5e6160d6116fa1562cbab21f3021796e682c7ed64e31e31df3758f9fba6197aa"
+ },
+ {
+  "asset": "ASSET-079",
+  "method": "reuse",
+  "source": "ASSET-085_char.png",
+  "note": "CHAR-04（男性）が体長比較の横に立つ＝085の無傷の男性を流用",
+  "sha256": "e4157f707ee228a4318057bb4ab2c76520b4d5673a9fc540183d9ae9d04ed53b"
+ },
+ {
+  "asset": "ASSET-157",
+  "method": "reuse",
+  "source": "ASSET-105_char.png",
+  "note": "役場の職員が窓の外を見る＝105の職員を流用",
+  "sha256": "1b9ddb7e4e5fc62abf698c9f8e6899197fdc11200591dc6312bbd3fc1260ae8b"
+ },
+ {
+  "asset": "ASSET-168",
+  "method": "reuse",
+  "source": "ASSET-206_char.png",
+  "note": "86歳の元漁師＝206の高齢男性を流用",
+  "sha256": "52a0e09c0a31c1ad7f675d818735bca150a69ed31360f887a63ccb5c8d41b8da"
+ },
+ {
+  "asset": "ASSET-051",
+  "method": "reuse",
+  "source": "ASSET-057_char.png",
+  "note": "地区長が掲示を貼る＝057の拡声器の高齢男性を流用",
+  "sha256": "b0b0f0c1dd6847e2781d7b14036b023e6f4fec8f829d28ebc108baa7752adb5b"
+ },
+ {
+  "asset": "ASSET-202",
+  "method": "reuse",
+  "source": "ASSET-105_char.png",
+  "note": "資料を見る職員＝105を流用",
+  "sha256": "1b9ddb7e4e5fc62abf698c9f8e6899197fdc11200591dc6312bbd3fc1260ae8b"
+ },
+ {
+  "asset": "ASSET-066",
+  "method": "compose",
+  "source": [
+   "ASSET-085_char.png",
+   "ASSET-063_char.png"
+  ],
+  "note": "CHAR-04（男性）とCHAR-03（女性）が並んで入山",
+  "sha256": "b766fcd022871aa7782d8ae7f1b0e79c024a8c1c750d66ec8519f592a1d3e4e7"
+ },
+ {
+  "asset": "ASSET-071",
+  "method": "compose",
+  "source": [
+   "ASSET-085_char.png",
+   "ASSET-063_char.png"
+  ],
+  "note": "看板の先へ入る2人（CHAR-04・CHAR-03）",
+  "sha256": "b766fcd022871aa7782d8ae7f1b0e79c024a8c1c750d66ec8519f592a1d3e4e7"
+ },
+ {
+  "asset": "ASSET-074",
+  "method": "compose",
+  "source": [
+   "ASSET-085_char.png",
+   "ASSET-063_char.png"
+  ],
+  "note": "男性を先頭に下山する2人（CHAR-04が前・CHAR-03が後ろ）",
+  "sha256": "b766fcd022871aa7782d8ae7f1b0e79c024a8c1c750d66ec8519f592a1d3e4e7"
+ },
+ {
+  "asset": "ASSET-213",
+  "method": "compose",
+  "source": [
+   "ASSET-085_char.png",
+   "ASSET-063_char.png"
+  ],
+  "note": "2人で山道を歩く（CHAR-04・CHAR-03）",
+  "sha256": "b766fcd022871aa7782d8ae7f1b0e79c024a8c1c750d66ec8519f592a1d3e4e7"
+ },
+ {
+  "asset": "ASSET-214",
+  "method": "compose",
+  "source": [
+   "ASSET-063_char.png",
+   "ASSET-077_char.png"
+  ],
+  "note": "複数歩行で周囲を警戒する2人",
+  "sha256": "eb9e77401e90e7c686f2983c344c81617a116dfa1e9285031484da885b45729b"
+ },
+ {
+  "asset": "ASSET-215",
+  "method": "compose",
+  "source": [
+   "ASSET-085_char.png",
+   "ASSET-063_char.png"
+  ],
+  "note": "入山前に装備を確かめる2人",
+  "sha256": "b766fcd022871aa7782d8ae7f1b0e79c024a8c1c750d66ec8519f592a1d3e4e7"
+ },
+ {
+  "asset": "ASSET-025",
+  "method": "compose",
+  "source": [
+   "ASSET-034_char.png",
+   "ASSET-023_char.png"
+  ],
+  "note": "沢で発見した捜索者2人（034の捜索者＋023の隊員）",
+  "sha256": "91c7c3e8d9510a291f2f8810146cf6f491120a6cd15137a09f02710ec017b51f"
+ },
+ {
+  "asset": "ASSET-026",
+  "method": "compose",
+  "source": [
+   "ASSET-034_char.png",
+   "ASSET-023_char.png"
+  ],
+  "note": "立ち尽くす捜索者2人",
+  "sha256": "f57e7ad7f92790e21ddea2878f3533e01b0b0218f2fc65edc0ae78d1277ce254"
+ },
+ {
+  "asset": "ASSET-039",
+  "method": "compose",
+  "source": [
+   "ASSET-040_char.png",
+   "ASSET-105_char.png",
+   "ASSET-138_char.png"
+  ],
+  "note": "3人の職員（研究者＋職員2人）",
+  "sha256": "c41e614a2d55d9f9f9371980926f209d90e1f50dceb7dd3de82680472a6a908b"
+ }
+]

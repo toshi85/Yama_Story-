@@ -60,18 +60,23 @@
     return drift;
   };
   const q = (s) => document.querySelector(s);
+  // 2026-09-25: 新UI（ProseMirror入力欄・aria-labelだけのボタン・data-message-author-role無し）へのフォールバック
+  const byAria = (re) => [...document.querySelectorAll('button')].find((b) => re.test(b.getAttribute('aria-label') || ''));
+  const composer = () => q('#prompt-textarea') || q('div.ProseMirror[contenteditable="true"]');
+  const sendBtn = () => q('[data-testid="send-button"]') || byAria(/^(送信|Send)/);
+  const newChatBtn = () => q('[data-testid="create-new-chat-button"]') || [...document.querySelectorAll('a,button')].find((e) => /^(新しいチャット|New chat)$/.test((e.getAttribute('aria-label') || e.innerText || '').trim()));
   const note = (m) => { S.log.push(`${new Date().toLocaleTimeString()} ${m}`); if (S.log.length > 200) S.log.shift(); };
 
   // 生成中は送信ボタンが停止ボタンに変わる。これが「まだ描いている」の唯一の証拠。
-  const busy = () => !!q('[data-testid="stop-button"]');
+  const busy = () => !!q('[data-testid="stop-button"]') || !!byAria(/^(停止|Stop)/);
 
   // ページに出ている画像。生成中のプレビューもここに入るので、単独では完了の証拠にならない。
   // 🚨 naturalWidth で選ばない。裏のタブでは画像がデコードされず 0 のままになり、
   //    「完了したのに画像が無い」と誤診する（実測）。実体の確認は後段の blob サイズで行う。
   const imgEls = () => [...document.querySelectorAll('main img')]
-    .filter((i) => i.src && /backend-api\/estuary\/content|oaiusercontent/.test(i.src));
+    .filter((i) => i.src && /backend-api\/estuary\/content|oaiusercontent|^blob:/.test(i.src));  // 2026-09-25: 新UIは blob: で出る
   const norm = (s) => s.replace(/\n(?:表示を増やす|表示を減らす|Show more|Show less)\s*$/, '').replace(/\s+/g, ' ').trim();
-  const users = () => [...document.querySelectorAll('[data-message-author-role="user"]')];
+  const users = () => [...document.querySelectorAll('[data-message-author-role="user"],[data-user-message-bubble="true"]')];
   const matchedUser = (prompt) => {
     const list = users();
     return list.length === 1 && norm(list[0].innerText) === norm(prompt) ? list[0] : null;
@@ -84,8 +89,8 @@
       let parent = img;
       for (let i = 0; i < 5 && parent; i++, parent = parent.parentElement) {
         const buttons = [...parent.querySelectorAll('button')];
-        const edit = buttons.some(b => /^(画像を編集|Edit image)$/i.test(b.getAttribute('aria-label') || ''));
-        const share = buttons.some(b => /^(この画像を共有する|Share image|Share this image)$/i.test(b.getAttribute('aria-label') || ''));
+        const edit = buttons.some(b => /^(画像を編集|Edit image)$|を編集$|^Edit/i.test(b.getAttribute('aria-label') || ''));
+        const share = buttons.some(b => /^(この画像を共有する|Share image|Share this image)$|を共有$|^Share/i.test(b.getAttribute('aria-label') || ''));
         if (edit && share) return true;
       }
       return false;
@@ -105,7 +110,7 @@
     const main = document.querySelector('main');
     if (!main) return '';
     const copy = main.cloneNode(true);
-    copy.querySelectorAll('[data-message-author-role="user"],#prompt-textarea').forEach(x=>x.remove());
+    copy.querySelectorAll('[data-message-author-role="user"],[data-user-message-bubble="true"],#prompt-textarea,div.ProseMirror').forEach(x=>x.remove());
     return (copy.innerText || copy.textContent || '').slice(-5000);
   };
   const classifyLimitText = (text, source) => {
@@ -227,18 +232,18 @@
 
   async function newChat() {
     checkSending();
-    const btn = q('[data-testid="create-new-chat-button"]');
+    const btn = newChatBtn();
     if (btn) btn.click();                 // SPA遷移（フルリロードするとこのループが死ぬ）
     for (let i = 0; i < 24; i++) {
       await sleep(500);
-      if (q('#prompt-textarea') && imgEls().length === 0 && users().length === 0 && !location.pathname.startsWith('/c/')) return;
+      if (composer() && imgEls().length === 0 && users().length === 0 && !location.pathname.startsWith('/c/')) return;
     }
     throw new Error('新しいチャットへ移れていないため送信しません');
   }
 
   async function send(prompt) {
     checkSending();
-    const el = q('#prompt-textarea');
+    const el = composer();
     if (!el) throw new Error('入力欄が無い');
     // 前の生成が走っていると送信ボタンが出ない。必ず空くまで待つ。
     for (let i = 0; i < 120 && busy(); i++) await sleep(2000);
@@ -248,7 +253,7 @@
     document.execCommand('insertText', false, prompt);
     for (let i = 0; i < 24; i++) {
       await sleep(300);
-      const b = q('[data-testid="send-button"]');
+      const b = sendBtn();
       if (b && !b.disabled) {
         checkSending();
         if (norm(el.innerText) !== norm(prompt)) throw new Error('入力欄が要求文と不一致');
@@ -262,8 +267,8 @@
             await sleep(200);
           }
           checkSending();
-          sendButton = q('[data-testid="send-button"]');
-          if (!sendButton || sendButton.disabled || norm(q('#prompt-textarea')?.innerText || '') !== norm(prompt)) {
+          sendButton = sendBtn();
+          if (!sendButton || sendButton.disabled || norm(composer()?.innerText || '') !== norm(prompt)) {
             throw new Error('送信許可の待機中に入力欄・送信ボタンが変わりました');
           }
         }

@@ -1,0 +1,20 @@
+{
+  "batch": 3,
+  "range": "ASSET-026〜037",
+  "reviewer": "Claude",
+  "next": "ASSET-038",
+  "cuts": [
+    {"asset": "ASSET-026", "category": "キャラアニメーション", "verdict": "FAIL", "part": "両方", "evidence": "静止背景＝沢辺で白布に覆われた女性と、立ち尽くす実写の捜索者（後頭部）＝内容は台本どおりだがキャラ背景としては人物混入。動画6コマ＝同じ構図で静止＝動画としては可。キャラ＝トレッキングポールを持つ若い女性＝台本に根拠なし。", "fix": "背景再生成（沢辺・毛布で覆われた形・人物なし）。キャラ再生成（立ち尽くす捜索者2人）。動画は前後のつなぎに使用可。", "files": ["画像/ASSET-026_still.png", "画像/ASSET-026_char.png", "動画/ASSET-026_video.mp4"]},
+    {"asset": "ASSET-027", "category": "Lovart動画", "verdict": "FAIL", "part": "既存動画", "evidence": "泥に残る大きなクマの足跡（2つ）は台本どおり。ただし人物（手・帽子・頬から鼻の横顔）が写り、t=0〜2秒は横顔が見える。定規で測る動作は自然。", "fix": "保留（動画）。軽微＝横顔は小さく特定不能。編集で t=3秒以降（手と足跡だけ）を使う指示。", "files": ["画像/ASSET-027_still.png", "動画/ASSET-027_video.mp4"], "severity": "軽微"},
+    {"asset": "ASSET-028", "category": "キャラアニメーション", "verdict": "FAIL", "part": "背景", "evidence": "静止背景＝記録板に書く実写の手と腕、奥に青いシートで覆われた遺体（靴だけ見える）＝構図は台本どおりだが人物の手が写る。キャラ＝青い作業服で記録板を持つ職員＝役割は合う。", "fix": "背景再生成（地面に置いた記録板＋覆われた遺体・人物なし）。キャラ流用可。", "files": ["画像/ASSET-028_still.png", "画像/ASSET-028_char.png"]},
+    {"asset": "ASSET-029", "category": "テキストのみ", "verdict": "編集者待ち", "part": "編集作業", "evidence": "黒背景『鈴も武器もなし』。", "files": []},
+    {"asset": "ASSET-030", "category": "Lovart静止画 + 編集者", "verdict": "PASS", "part": null, "evidence": "森のすぐ下に家々が並ぶ集落の遠景。畑を歩く男性の後ろ姿が1人（プロンプトの後ろ姿許容内）。", "files": ["画像/ASSET-030_still.png"], "note": "人物は後ろ姿のみ"},
+    {"asset": "ASSET-031", "category": "キャラアニメーション", "verdict": "FAIL", "part": "両方＋既存動画（軽微）", "evidence": "静止背景＝机で手帳に書く実写の女性（後ろ姿・手）＝人物混入。動画6コマ＝手帳を閉じ、家族写真が表向きに置かれ顔が見える＝『伏せた家族写真』と不一致。キャラ＝手帳と写真を持つ若い女性＝台本に根拠なし。", "fix": "背景再生成（手帳と伏せた写真・人物なし）。キャラは不使用を提案。動画は保留（軽微）。", "files": ["画像/ASSET-031_still.png", "画像/ASSET-031_char.png", "動画/ASSET-031_video.mp4"]},
+    {"asset": "ASSET-032", "category": "Lovart静止画 + 編集者", "verdict": "FAIL", "part": "静止画", "evidence": "シーン『目撃通報前の空欄の記録台帳』に対し、屋外の空の掲示板と女性の後ろ姿。台帳でない。", "fix": "画像再生成（机上の空欄の記録簿・人物なし）", "files": ["画像/ASSET-032_still.png"]},
+    {"asset": "ASSET-033", "category": "キャラアニメーション", "verdict": "FAIL", "part": "背景", "evidence": "動画6コマ＝オレンジのベスト・帽子のハンター約11人が斜面を下る＝台本どおり。静止背景＝同じコマで人物多数＝キャラ背景に使えない。キャラ＝オレンジ帽のハンター1人＝役割は合うが台本の『11人』は表せない。", "fix": "背景再生成（同じ斜面・人物なし）。キャラは動画で人数が見えるため不使用を提案（使うなら流用可）。", "files": ["画像/ASSET-033_still.png", "画像/ASSET-033_char.png", "動画/ASSET-033_video.mp4"]},
+    {"asset": "ASSET-034", "category": "キャラアニメーション", "verdict": "PASS", "part": null, "evidence": "背景＝残雪の残る林道に大きな足跡、人物なし。キャラ＝懐中電灯を持つ捜索者が驚いて探す。台本の編集指示『人物を足跡の手前まで移し、しゃがむ』と整合。", "files": ["画像/ASSET-034_bg.png", "画像/ASSET-034_char.png"]},
+    {"asset": "ASSET-035", "category": "Lovart静止画 + 編集者", "verdict": "PASS", "part": null, "evidence": "集落の防災無線スピーカー柱。手前に男性の後ろ姿（許容内）。", "files": ["画像/ASSET-035_still.png"]},
+    {"asset": "ASSET-036", "category": "キャラアニメーション", "verdict": "FAIL", "part": "背景", "evidence": "静止背景＝色刷りのチラシ（地図・イラスト入り）を持つ実写の手と腕＝人物混入、かつ『緊急文書の束』に見えない。動画6コマ＝チラシを封筒に入れる（同じ問題）。キャラ＝書類を抱えて走る職員＝役割は合う。", "fix": "背景再生成（机に積んだ無地の公文書と封筒5通・人物なし）。キャラ流用可。動画は保留。", "files": ["画像/ASSET-036_still.png", "画像/ASSET-036_char.png", "動画/ASSET-036_video.mp4"]},
+    {"asset": "ASSET-037", "category": "テキストのみ", "verdict": "編集者待ち", "part": "編集作業", "evidence": "黒背景『4月17日』。", "files": []}
+  ]
+}

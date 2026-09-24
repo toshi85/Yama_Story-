@@ -1,0 +1,24 @@
+[
+  {
+    "id": "ASSET-023_char",
+    "asset_no": 23,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "aspect": "1:1",
+    "label": "",
+    "narration": "到着した警察と消防が、辺りを捜索することに。",
+    "char_ref": null,
+    "prompt": "Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. Exactly TWO full-body Japanese men standing side by side, count them 1, 2: 1) on the left a police officer in a dark navy uniform and cap with a flashlight, 2) on the right a firefighter in an orange rescue jacket and white helmet with a radio. Both three-quarter front view, faces clearly visible with distinct eyes, nose and mouth, serious alert expressions, no smile. NO TWO OF THEM SHARE A FACE OR AN OUTFIT. No emblem, no badge lettering, no logo. Show only the two people; do not draw scenery, a bear, a vehicle, a building, a map, or printed material. Heads and feet fully inside the square frame, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, blood, wounds, or gore. 1:1 square image."
+  },
+  {
+    "id": "ASSET-054_char",
+    "asset_no": 54,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "aspect": "1:1",
+    "label": "",
+    "narration": "また、小中学生を乗せたスクールバスは、家の玄関まで送り迎えするようにしました。",
+    "char_ref": null,
+    "prompt": "Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese elementary school boy, about 8 years old, wearing a yellow cap and a red randoseru school backpack, a light jacket and shorts, three-quarter front view, face clearly visible, slightly nervous expression, no smile, one hand gripping his backpack strap. Show only the boy; do not draw scenery, a bus, a house, a bear, or printed material. Head and feet fully inside the square frame, one figure only, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image."
+  }
+]

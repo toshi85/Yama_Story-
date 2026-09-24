@@ -1,0 +1,35 @@
+{
+ "preflight_with_pending_review": {
+  "errors": 485,
+  "blocked": true,
+  "sample": [
+   "ASSET-001: シーンに合う生成計画の確認が未完了",
+   "ASSET-002: シーンに合う生成計画の確認が未完了",
+   "ASSET-003: シーンに合う生成計画の確認が未完了"
+  ]
+ },
+ "delivery_with_injected_fail": {
+  "errors": 397,
+  "blocked": true,
+  "victim": "ASSET-015",
+  "victim_errors": [
+   "ASSET-015: 実素材のシーン適合確認が未完了",
+   "ASSET-015: 静止背景の人物なし目視確認が未完了",
+   "ASSET-015: キャラと静止背景を重ねた完成画の確認が未完了"
+  ]
+ },
+ "finalize_with_bad_review": {
+  "exit": 1,
+  "stdout_tail": [
+   "  OTHER: ASSET-168: 素材ハッシュが一致しない: 画像/ASSET-168_char.png",
+   "STOP: gate FAIL → 納品先への反映 0件"
+  ],
+  "delivery_files_changed": []
+ },
+ "codex_finalize_calls_gate": true,
+ "generation_queue_only_from_failed_review": {
+  "queue": 109,
+  "pass_leak": []
+ },
+ "overall": "PASS"
+}

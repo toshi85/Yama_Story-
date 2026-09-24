@@ -1,0 +1,674 @@
+{
+ "ASSET-004": {
+  "verdict": "PASS",
+  "evidence": "新背景: 林床に落ちたオリーブ色の上着の接写、人物なし、残雪は遠景のみ",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-015": {
+  "verdict": "PASS",
+  "evidence": "新背景: 林道を登って遠ざかる白いワゴン車の後部、人物なし。キャラは不使用の提案（指示書追記）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-020": {
+  "verdict": "PASS",
+  "evidence": "新背景: 沢沿いの砂利道に止まる白いワゴン車、人物なし。合成: CHAR-02（019流用）が歩く",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-022": {
+  "verdict": "PASS",
+  "evidence": "新背景: 沢沿いの山道、人物なし。合成: CHAR-02が携帯で通報",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-023": {
+  "verdict": "PASS",
+  "evidence": "新背景（試作）＋新キャラ: 警察官と消防隊員の2人（生成・透過確認済み）。合成で2者が揃う",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-025": {
+  "verdict": "PASS",
+  "evidence": "新背景: 沢の遠景、対岸に覆われた灰色の形、人物なし。合成: 捜索者2人（034＋023流用）が指さす",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-026": {
+  "verdict": "PASS",
+  "evidence": "新背景: 沢辺に毛布で覆われた形、人物なし。合成: 捜索者2人が立ち尽くす",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-028": {
+  "verdict": "PASS",
+  "evidence": "新背景: 手前の岩に記録板、奥にブルーシートで覆われた形、人物なし。合成: 職員が記録",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-014": {
+  "verdict": "PASS",
+  "evidence": "新背景: 日本海の海岸線と海岸林、港町を含む空撮、人物なし",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-031": {
+  "verdict": "PASS",
+  "evidence": "新背景: 居間の机に開いた手帳と伏せた写真立て、人物なし。キャラは不使用の提案",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-032": {
+  "verdict": "PASS",
+  "evidence": "新背景: 役場の机に空欄の台帳とペン・電話、人物なし。注: 窓外の緑が夏寄り（軽微・室内主体）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-033": {
+  "verdict": "PASS",
+  "evidence": "新背景: 残雪の斜面と裸木、人物なし。合成: ハンターが登る",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-036": {
+  "verdict": "PASS",
+  "evidence": "新背景: 役場の机に書類の束と封筒5通・印、人物なし。合成: 職員が書類を運ぶ",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-038": {
+  "verdict": "PASS",
+  "evidence": "新背景: 林道の端に止まった灰色のバン、人物なし。合成: 研究者が到着",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-039": {
+  "verdict": "PASS",
+  "evidence": "新背景: 役場の会議室の机と椅子、人物なし。合成: 3人の職員（研究者＋職員2人）。注: 女性2人が小さめ",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-041": {
+  "verdict": "PASS",
+  "evidence": "新背景: 落ち葉の上のクマの毛・空の試料管・ピンセット、手なし。合成: 研究者が採取",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-043": {
+  "verdict": "PASS",
+  "evidence": "新背景: 夜明け前の暗い林道、黒つぶれなし、人物なし。合成: ヘッドランプのハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-044": {
+  "verdict": "PASS",
+  "evidence": "新背景: 人影のないササやぶと海を望む斜面、人物なし",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-045": {
+  "verdict": "PASS",
+  "evidence": "新背景: 道路脇のクマ注意看板（絵記号のみ）、人物なし。合成: 標識を持つ作業員",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-049": {
+  "verdict": "PASS",
+  "evidence": "新背景: 山林に置かれた箱わな3台、人物なし",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-051": {
+  "verdict": "PASS",
+  "evidence": "新背景: 集落の掲示板に白紙、人物なし。合成: 地区長（057流用）が呼びかけ",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-053": {
+  "verdict": "PASS",
+  "evidence": "新背景: 民家脇のササやぶと鎌・熊手、人物なし。合成: 刈払機の作業員",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-055": {
+  "verdict": "PASS",
+  "evidence": "新背景: 役場の窓口に電話と記録用紙、人物なし。合成: 受話器を持つ職員",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-058": {
+  "verdict": "PASS",
+  "evidence": "新背景: 林道のバン後部と机上の装備、人物なし。合成: 高齢ハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-054": {
+  "verdict": "PASS",
+  "evidence": "新背景＋新キャラ: 日本型スクールバスと小学生（生成・透過確認済み）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-059": {
+  "verdict": "PASS",
+  "evidence": "新背景: 机上の申請書・ペン・印と施錠した銃ケース、人物なし。合成: 若いハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-060": {
+  "verdict": "PASS",
+  "evidence": "新背景: 森に置かれた空の箱わな、人物なし",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-064": {
+  "verdict": "PASS",
+  "evidence": "新背景: 太田地区の砂利の山道と森、人物なし",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-066": {
+  "verdict": "PASS",
+  "evidence": "新背景: 海を望む山道、人物なし。合成: CHAR-04とCHAR-03の2人（流用合成）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-067": {
+  "verdict": "PASS",
+  "evidence": "新背景: 林床のカゴ2つとギョウジャニンニク、手なし。合成: 女性が山菜を持つ",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-068": {
+  "verdict": "PASS",
+  "evidence": "新背景: 机上の量りとギョウジャニンニク、手なし。合成: 女性が量る。注: 窓外が夏の緑（軽微）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-069": {
+  "verdict": "PASS",
+  "evidence": "新背景: 林道入口と空のカゴ2つ、人物なし。合成: カゴを持つ女性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-071": {
+  "verdict": "PASS",
+  "evidence": "新背景: 林道入口と無地の木の看板、人物なし。合成: CHAR-04とCHAR-03の2人",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-074": {
+  "verdict": "PASS",
+  "evidence": "新背景: 海を望む下り道、人物なし。合成: 2人（男性が前）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-078": {
+  "verdict": "PASS",
+  "evidence": "新背景: 地面のナタと枝、手なし。合成: CHAR-04風がナタを構える",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-079": {
+  "verdict": "PASS",
+  "evidence": "新背景: 林道の奥から向かってくるヒグマ、人物なし。合成: CHAR-04（085流用）が横に立ち体長比較",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-081": {
+  "verdict": "PASS",
+  "evidence": "新背景: 山道で体勢を崩し後ずさるヒグマ、人物なし",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-084": {
+  "verdict": "PASS",
+  "evidence": "新背景: 病院の廊下と待合椅子の毛布、人物なし。合成: 毛布にくるまる女性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-088": {
+  "verdict": "PASS",
+  "evidence": "新背景: 旧校舎と背後の山林、人物なし",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-090": {
+  "verdict": "PASS",
+  "evidence": "新背景: 山道脇の新しい注意標識2枚、人物なし。合成: 杖の男性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-091": {
+  "verdict": "PASS",
+  "evidence": "新背景: 家の裏の畑と裏山、人物なし。合成: 双眼鏡の住民",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-092": {
+  "verdict": "PASS",
+  "evidence": "新背景: ベンチの笛・爆竹・ライター・手袋、手なし。合成: 高齢女性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-101": {
+  "verdict": "PASS",
+  "evidence": "新背景: 倒木に置いた鈴付きリュック2つ、人物なし。合成: 鈴付きリュックの女性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-102": {
+  "verdict": "PASS",
+  "evidence": "新背景: 森の小道、人物なし。合成: 鈴を持つ女性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-103": {
+  "verdict": "PASS",
+  "evidence": "新背景: 道に転がった空のカゴと散った山菜、人物なし。キャラ不使用（指示書追記）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-104": {
+  "verdict": "PASS",
+  "evidence": "新背景: 研究室の机に事故資料ファイル3冊、人物なし。合成: 専門家が指さす",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-107": {
+  "verdict": "PASS",
+  "evidence": "新背景: 複数の尾根が連なる山並みの俯瞰、人物なし。合成: 双眼鏡のハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-108": {
+  "verdict": "PASS",
+  "evidence": "新背景: やぶへ背を向けて入るヒグマ（顔は見えない）、人物なし。キャラ不使用（指示書追記）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-110": {
+  "verdict": "PASS",
+  "evidence": "新背景: 机上の無地の要請書、窓外にヘリ、人物なし。合成: 無線機の隊員。注: 窓外の緑が夏寄り（軽微）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-111": {
+  "verdict": "PASS",
+  "evidence": "新背景: 山並みと上空のヘリ、人物なし。合成: 隊員がヘリを指さす",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-113": {
+  "verdict": "PASS",
+  "evidence": "新背景: 林道に並ぶバン2台と消防車、人物なし。合成: 指さすハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-115": {
+  "verdict": "PASS",
+  "evidence": "新背景: 3本に分かれる山道、人物なし。合成: 指さすハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-117": {
+  "verdict": "PASS",
+  "evidence": "新背景: バンのボンネットに置いた猟銃と手入れ道具、手なし。合成: ベテランハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-118": {
+  "verdict": "PASS",
+  "evidence": "新背景: 残雪の斜面と上空のヘリ、人物なし。合成: 無線機のハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-119": {
+  "verdict": "PASS",
+  "evidence": "新背景: 日陰に残る春の雪と雪解け水、人物なし",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-120": {
+  "verdict": "PASS",
+  "evidence": "新背景: 残雪に刻まれたクマの足跡の列、人物なし。合成: しゃがむハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-122": {
+  "verdict": "PASS",
+  "evidence": "新背景: 雪上の足跡の列、人物なし。合成: 指さすハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-128": {
+  "verdict": "PASS",
+  "evidence": "新背景: 夜の集落と灯りのついた玄関、黒つぶれなし、人物なし。合成: 懐中電灯の男性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-125": {
+  "verdict": "PASS",
+  "evidence": "新背景: 無人の山並みと遠ざかるヘリ、クマなし、人物なし。キャラ不使用（指示書追記）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-136": {
+  "verdict": "PASS",
+  "evidence": "新背景: 検査台の密封試料と発泡容器、人物なし。合成: 研究者。注: 窓外の緑が夏寄り（軽微）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-137": {
+  "verdict": "PASS",
+  "evidence": "新背景: 沢近くの林の箱わな、人物なし。合成: 懐中電灯のハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-140": {
+  "verdict": "PASS",
+  "evidence": "新背景: 窓辺の机の封筒1通とレターオープナー、人物なし。合成: 封筒を開ける女性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-141": {
+  "verdict": "PASS",
+  "evidence": "新背景: 研究台の無記名封筒2枚、人物なし。合成: 封筒2通を持つ研究者",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-142": {
+  "verdict": "PASS",
+  "evidence": "新背景: 机上の保管箱2つと白紙カード、人物なし。合成: カードを箱へ移す職員",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-145": {
+  "verdict": "PASS",
+  "evidence": "新背景: 会議室の机にクマの写真と地図、人物なし。合成: ハンター。注: 窓外が秋の紅葉（12月の会議・軽微）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-146": {
+  "verdict": "PASS",
+  "evidence": "新背景: 対策本部の机に記録の束と地図・電話、人物なし。合成: 書類を持つ隊員",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-148": {
+  "verdict": "PASS",
+  "evidence": "新背景: 演台側から見た空席の会議室と無地の垂れ幕、人物なし。合成: 町長風の人物が話す",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-149": {
+  "verdict": "PASS",
+  "evidence": "新背景: 山道入口の白紙の掲示板とロープ、人物なし。キャラ不使用（指示書追記）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-151": {
+  "verdict": "PASS",
+  "evidence": "新背景: 机上の白紙の計画書と冬山写真・手袋、人物なし。合成: 隊員",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-152": {
+  "verdict": "PASS",
+  "evidence": "新背景: 壁の2枚のカレンダー、人物なし。合成: カレンダーを持つ男性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-157": {
+  "verdict": "PASS",
+  "evidence": "新背景: 役場の窓から見える集落の道と家々、人物なし。合成: 職員（105流用）が外を見る。注: 窓外の緑が夏寄り（軽微）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-158": {
+  "verdict": "PASS",
+  "evidence": "新背景: 雪の尾根道に続く足跡、人物なし。合成: しゃがむハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-160": {
+  "verdict": "PASS",
+  "evidence": "新背景: 山道脇の未使用の箱わな、人物なし。合成: 檻を運ぶハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-162": {
+  "verdict": "PASS",
+  "evidence": "新背景: 遠くの林縁に横向きのヒグマ（傷は描かない）、人物なし。合成: 鼻を指さすハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-166": {
+  "verdict": "PASS",
+  "evidence": "新背景: 山道脇に並ぶ車4台、人物なし。合成: 山菜を持つ女性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-167": {
+  "verdict": "PASS",
+  "evidence": "新背景: 机上のクマの写真・地図・無線機・記録板、手なし。合成: 町職員。注: 窓外の緑が夏寄り（軽微）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-168": {
+  "verdict": "PASS",
+  "evidence": "新背景: 荒れた畑と山林の境、人物なし。合成: 高齢男性（206流用）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-169": {
+  "verdict": "PASS",
+  "evidence": "新背景: 小屋の棚のラジオと笛、手なし。合成: 笛を吹く女性。注: 畑が夏の緑（軽微）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-170": {
+  "verdict": "PASS",
+  "evidence": "新背景: 裏山の下の集落の家々、人物なし。合成: 双眼鏡の男性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-172": {
+  "verdict": "PASS",
+  "evidence": "新背景: 2区にまたがる広い山林の俯瞰、人物なし。合成: 杖のハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-175": {
+  "verdict": "PASS",
+  "evidence": "新背景: 広い山林の谷と尾根の俯瞰、人物なし。合成: 双眼鏡のハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-178": {
+  "verdict": "PASS",
+  "evidence": "新背景: コンビニのカウンターにクマ写真入りのビラの束、人物なし。合成: ビラを配る女性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-179": {
+  "verdict": "PASS",
+  "evidence": "新背景: 掲示板に貼った白紙のビラ、人物なし。合成: 赤ペンの男性。注: 草が夏の緑（軽微）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-181": {
+  "verdict": "PASS",
+  "evidence": "新背景: 左に地図と捜索記録・右に試料管ラック、人物なし。合成: 研究者",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-184": {
+  "verdict": "PASS",
+  "evidence": "新背景: ラックの試料管約20本、人物なし。合成: 研究者。注: 窓外が夏の緑（軽微）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-187": {
+  "verdict": "PASS",
+  "evidence": "新背景: 机上の無記名封筒20枚、人物なし。合成: 封筒を掲げる研究者",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-174": {
+  "verdict": "PASS",
+  "evidence": "新背景: 林道入口の小道と木の杭、人物なし。合成: 隊員",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-188": {
+  "verdict": "PASS",
+  "evidence": "新背景: 今金町のビート畑と周辺林（夏）、人物なし。合成: 農家風の男性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-191": {
+  "verdict": "PASS",
+  "evidence": "新背景: 夏のビート畑の空の箱わな、人物なし。合成: ハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-194": {
+  "verdict": "PASS",
+  "evidence": "新背景: 日本海を望むせたな町の山地、人物なし。キャラ不使用（指示書追記）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-196": {
+  "verdict": "PASS",
+  "evidence": "新背景: 左に春の海岸・右に夏のビート畑の2分割、人物なし。合成: 左右を指さす女性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-197": {
+  "verdict": "PASS",
+  "evidence": "新背景: 会議机の無記名封筒と無地の名札台、人物なし。合成: 封筒を見る男性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-199": {
+  "verdict": "PASS",
+  "evidence": "新背景: 窓辺の机に湯呑み・眼鏡・ファイル、人物なし。合成: 安堵して汗を拭う町長風",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-200": {
+  "verdict": "PASS",
+  "evidence": "新背景: 物置の棚に笛・爆竹・懐中電灯・ラジオの箱、人物なし。合成: 片づける男性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-202": {
+  "verdict": "PASS",
+  "evidence": "新背景: 岩の上の資料ファイルと奥の空の箱わな、人物なし。合成: 職員（105流用）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-203": {
+  "verdict": "PASS",
+  "evidence": "新背景: 残雪の山道と岩の上の資料ファイル、人物なし。合成: ハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-204": {
+  "verdict": "PASS",
+  "evidence": "新背景: 夏のビート畑の箱わなと記録板、クマなし、人物なし。合成: 記録する隊員",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-206": {
+  "verdict": "PASS",
+  "evidence": "新背景: 苔の地面のナタと試料容器、手なし。合成: 高齢男性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-207": {
+  "verdict": "PASS",
+  "evidence": "新背景: 屋外の木の机に封筒2枚と保管箱、人物なし。合成: 研究者。注: 草地が夏寄り（軽微）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-210": {
+  "verdict": "PASS",
+  "evidence": "新背景: 布の上の鈴・笛・手帳、手なし。右下の生成文字もどきはトリミングで除去済み。合成: 研究者",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-211": {
+  "verdict": "PASS",
+  "evidence": "新背景: 泥の足跡の横に鈴と携帯ラジオ、人物なし。合成: しゃがむハンター",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-213": {
+  "verdict": "PASS",
+  "evidence": "新背景: 海を望む尾根道、人物なし。合成: 2人（CHAR-04・CHAR-03）",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-214": {
+  "verdict": "PASS",
+  "evidence": "新背景: 雪山を望む林道、人物なし。合成: 2人が周囲を警戒",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-215": {
+  "verdict": "PASS",
+  "evidence": "新背景: 登山口の机に並べた装備、人物なし。合成: 2人が装備を確かめる",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-218": {
+  "verdict": "PASS",
+  "evidence": "新背景: 登山口の案内板（地図とクマ絵記号）とスプレー箱、人物なし。合成: スプレーを構える女性",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-075": {
+  "verdict": "PASS",
+  "evidence": "新背景（穏当文で再生成）: 横から見た山道を右から左へ走るヒグマ（口を開け頭を低く）、人物なし。合成: CHAR-03が左で身を引く＝『背後から飛び出すヒグマを横から』の構図",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-017": {
+  "verdict": "PASS",
+  "evidence": "背景（現物）: 昼の食卓、人物なし。キャラ: CHAR-02（019流用）＝待つ夫。台本『昼になっても帰らない』に合う",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-047": {
+  "verdict": "PASS",
+  "evidence": "キャラ不使用（指示書追記）。静止画＝会議室で地図を前に座る関係者（後ろ姿）は台本『関係者が机を囲む対策会議』そのもの。キャラ表示なしのため人物混入の規則は適用外",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-056": {
+  "verdict": "PASS",
+  "evidence": "キャラ不使用（指示書追記）。静止画＝足跡・フン・食害跡の3分割、人物なし＝台本どおり",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-083": {
+  "verdict": "PASS",
+  "evidence": "キャラ不使用（指示書追記）。静止画＝山道を走り去る救急車、人物なし＝台本どおり",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-096": {
+  "verdict": "PASS",
+  "evidence": "キャラ不使用（指示書追記）。静止画＝林床のカゴ2つ、人物なし＝台本『2人のカゴを年別に並べる』",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ },
+ "ASSET-076": {
+  "verdict": "PASS",
+  "evidence": "新背景（穏当文で再生成）: 横から見た山道を右から左へ低く飛びかかるヒグマ、人物なし。合成: CHAR-03が左で身をよじる",
+  "reviewer": "Claude",
+  "stage": "修正後の合成見本を原寸相当で目視"
+ }
+}

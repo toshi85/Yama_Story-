@@ -1,0 +1,6 @@
+{
+ "paid_api_requests_this_session": [],
+ "estimated_additional_charge_jpy": 0,
+ "method": "全生成は専用ChromeのChatGPT（既存サブスクリプション）で行い、fal・OpenAI API・動画APIへの発注は0件。根拠＝この作業以降に作られた *.request.json が無いこと、および receipts の会話URLが chatgpt.com であること",
+ "chatgpt_receipts": 109
+}

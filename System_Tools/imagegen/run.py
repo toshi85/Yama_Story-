@@ -110,13 +110,13 @@ def open_chatgpt():
 
 def wait_for_login():
     """ログインしていなければ、済むまで待つ。ここだけは人の手が要る。"""
-    if js('!!document.querySelector("#prompt-textarea")'):
+    if js('!!(document.querySelector("#prompt-textarea")||document.querySelector("div.ProseMirror[contenteditable=true]"))'):
         return
     print('\n  開いたChromeでChatGPTにログインしてください（最初の1回だけです）')
     print('  ※ 普段のChromeとは別のウィンドウです\n')
     for _ in range(6):
         time.sleep(5)
-        if js('!!document.querySelector("#prompt-textarea")'):
+        if js('!!(document.querySelector("#prompt-textarea")||document.querySelector("div.ProseMirror[contenteditable=true]"))'):
             break
     else:
         raise SystemExit(76)
@@ -138,7 +138,7 @@ def install_and_run(todo):
         return
     # 再読込した会話に未保存の結果があれば、その要求を先頭にして引き継ぐ。
     from recover import normalize
-    users = json.loads(js('JSON.stringify([...document.querySelectorAll("[data-message-author-role=user]")].map(x=>x.innerText))'))
+    users = json.loads(js('JSON.stringify([...document.querySelectorAll("[data-message-author-role=user],[data-user-message-bubble=true]")].map(x=>x.innerText))'))
     if len(users) == 1:
         todo = sorted(todo, key=lambda item: normalize(item['prompt']) != normalize(users[0]))
     js(f'window.__yamaQueue = {json.dumps(todo, ensure_ascii=False)}; '
@@ -456,7 +456,7 @@ def resume_access_targets(targets, scheduler, key, pacer):
 def parallel_state(target, limit_key):
     return json.loads(js("""JSON.stringify({
       installed:!!window.__yamaGen, running:!!window.__yamaGen?.running, stopped:!!window.__yamaGen?.stop,
-      busy:!!document.querySelector('[data-testid=stop-button]'),
+      busy:!!document.querySelector('[data-testid=stop-button]')||[...document.querySelectorAll('button')].some(b=>/^(停止|Stop)/.test(b.getAttribute('aria-label')||'')),
       current:window.__yamaGen?.current,
       sendRequest:window.__yamaGen?.sendRequest || null,
       sentToken:window.__yamaGen?.sentToken || null, sentAt:window.__yamaGen?.sentAt || null,
@@ -464,7 +464,7 @@ def parallel_state(target, limit_key):
       liveLimit:window.__yamaLimitEvidence?.() || window.__yamaGen?.limitEvidence || null,
       until:window.__yamaGen?.limitUntil || 0,
       shared:JSON.parse(localStorage.getItem(%s) || 'null'),
-      text:[...document.querySelectorAll('[data-message-author-role=assistant],[role=dialog],[role=alertdialog]')].map(x=>x.innerText).join('\\n'),
+      text:[...document.querySelectorAll('[data-message-author-role=assistant],[data-content-search-unit-key$=":assistant"],[role=dialog],[role=alertdialog]')].map(x=>x.innerText).join('\\n'),
       log:window.__yamaGen?.log || []
     })""" % json.dumps(limit_key), target=target))
 
@@ -572,7 +572,7 @@ def wait_parallel_login(target):
     # Target.createTarget直後はページのJS実行領域がまだ作られていない。
     for _ in range(30):
         try:
-            if js('!!document.querySelector("#prompt-textarea")', target=target):
+            if js('!!(document.querySelector("#prompt-textarea")||document.querySelector("div.ProseMirror[contenteditable=true]"))', target=target):
                 return
         except RuntimeError as exc:
             if 'Cannot find default execution context' not in str(exc):

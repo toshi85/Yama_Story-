@@ -1,0 +1,22 @@
+{
+  "batch": 1,
+  "range": "ASSET-001〜013",
+  "reviewer": "Claude（本人指示 2026-09-24・全件検収）",
+  "method": "静止画は長辺1536pxの検査用JPEG（フック上限300KB）で全面を目視。動画は1fpsで全尺コマ抜き＋最終コマ（6コマ）を目視。判定は台本のナレーション・シーン文・キャラ定義に対して行う。",
+  "next": "ASSET-014",
+  "cuts": [
+    {"asset": "ASSET-001", "category": "Lovart動画", "verdict": "PASS", "part": null, "evidence": "静止画: 夜明けの海岸線と山林の空撮、人物なし。動画6コマ: カメラが海岸へ前進し霧が流れる。台本どおり。", "files": ["画像/ASSET-001_still.png", "動画/ASSET-001_video.mp4"]},
+    {"asset": "ASSET-002", "category": "Lovart動画", "verdict": "PASS", "part": null, "evidence": "CHAR-01（オリーブの上着・茶の帽子・カゴ・後ろ姿）と一致。山菜（ギョウジャニンニク様）を採る。動画6コマ: 摘んで顔を上げるが顔は見えない。", "files": ["画像/ASSET-002_still.png", "動画/ASSET-002_video.mp4"]},
+    {"asset": "ASSET-003", "category": "Lovart動画", "verdict": "PASS", "part": null, "evidence": "CHAR-02（紺の上着・灰のズボン・白髪混じり）と一致。山道を登る背中。動画6コマ: 左右を見回す。t=2〜3秒で横顔の一部が出るが小さく特定不能。", "files": ["画像/ASSET-003_still.png", "動画/ASSET-003_video.mp4"], "note": "軽微: t=2〜3秒に横顔の一部"},
+    {"asset": "ASSET-004", "category": "Lovart静止画", "verdict": "FAIL", "part": "静止画", "evidence": "シーン『林床に落ちた女性の上着を接写』に対し、①左前景にしゃがむ捜索者（女性・黒い上着・青手袋）が写る＝台本に無い人物、②落ちている上着が紺のキルティングで、002でCHAR-01が着ていたオリーブの上着と不一致（同一人物の服装固定の規則違反）、③背景に残雪が多い。", "fix": "画像再生成（人物なし・オリーブの上着・接写・残雪は控えめ）", "files": ["画像/ASSET-004_still.png"]},
+    {"asset": "ASSET-005", "category": "Lovart動画", "verdict": "FAIL", "part": "既存動画", "evidence": "シーン『沢へ到着した捜索者が立ち尽くす遠景』に対し、前景の捜索者1人（背中・接写）と、遠くの沢辺にオリーブの上着の人物が座った姿勢で1人。台本の『捜索に出た人たち』（複数）が1人しか見えず、遠景でもない。発見された女性が座った生存者に見え『無残な姿』の含意が伝わらない。", "fix": "保留（動画の再生成は今回禁止）。編集で尺を短くしテロップで補う案を指示書に記す。", "files": ["画像/ASSET-005_still.png", "動画/ASSET-005_video.mp4"], "severity": "軽微"},
+    {"asset": "ASSET-006", "category": "Lovart静止画 + 編集者", "verdict": "PASS", "part": null, "evidence": "青い手袋の手が落ち葉から黒褐色の毛を拾う接写。顔なし。台本どおり。", "files": ["画像/ASSET-006_still.png"]},
+    {"asset": "ASSET-007", "category": "Lovart静止画 + 編集者", "verdict": "PASS", "part": null, "evidence": "白衣・白手袋の手が電気泳動像の紙2枚を持つ。『机に並べる』ではなく手持ちだが、左右2枚を比べる編集指示（左『現場の毛』右『捕獲個体』）は成立する。数値なし。", "files": ["画像/ASSET-007_still.png"], "note": "軽微: 机上でなく手持ち"},
+    {"asset": "ASSET-008", "category": "Lovart動画", "verdict": "FAIL", "part": "既存動画", "evidence": "CHAR-03の定義は『えんじ色の上着・黒っぽいズボン・低く結んだ髪』。実物は灰緑のコート・黒ズボン・ポニーテール・布バッグ＝上着の色が不一致（063/075/076のカートゥン版と服装が食い違う）。場面（翌春の山道・後ろ姿）は合う。動画6コマ: ほぼ静止で『歩く』動きが乏しい。", "fix": "保留（動画）。カートゥン版CHAR-03の上着色を実写に合わせるか、実写を作り直すかは本人裁定。", "files": ["画像/ASSET-008_still.png", "動画/ASSET-008_video.mp4"], "severity": "中"},
+    {"asset": "ASSET-009", "category": "Lovart動画", "verdict": "FAIL", "part": "既存動画", "evidence": "シーン『2件の記録を背後のヒグマ影と並べる』に対し、実物は威嚇するヒグマと人物（後頭部）の対峙。記録2件が無く、人物が写り、影でなく正面のクマ。動画6コマも同じ構図。", "fix": "保留（動画）。編集案: 002と008の静止画を左右に並べ、中央にクマの影（既存の実写クマを暗く）を重ねる。", "files": ["画像/ASSET-009_still.png", "動画/ASSET-009_video.mp4"], "severity": "重"},
+    {"asset": "ASSET-010", "category": "Lovart静止画 + 編集者", "verdict": "PASS", "part": null, "evidence": "7人の捜索者の背中が空の落葉樹林を向く。顔なし。台本どおり。", "files": ["画像/ASSET-010_still.png"]},
+    {"asset": "ASSET-011", "category": "Lovart動画", "verdict": "PASS", "part": null, "evidence": "捜索者1人の背中越しに無人の谷。動画6コマ: 人物が画面外へ抜け、谷だけが残る＝『捜索隊の先に続く無人の谷』を満たす。", "files": ["画像/ASSET-011_still.png", "動画/ASSET-011_video.mp4"]},
+    {"asset": "ASSET-012", "category": "Google Earth", "verdict": "編集者待ち", "part": "編集作業", "evidence": "地区名3点の表示・ピンなし・クレジット常時表示の指示を確認。素材なし。", "files": []},
+    {"asset": "ASSET-013", "category": "テキストのみ", "verdict": "編集者待ち", "part": "編集作業", "evidence": "黒背景に『4月16日』。素材なし。", "files": []}
+  ]
+}
