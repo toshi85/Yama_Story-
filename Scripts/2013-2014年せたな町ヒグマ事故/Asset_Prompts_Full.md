@@ -34,18 +34,17 @@ Animate the frozen frame for 8 seconds. The woman bends to pick one wild plant, 
 
 ナレーター: 異変に気づいた夫が、山へ向かいますが、
 
-【制作メモ】ASSET-003 [キャラアニメーション] 台本L4
+【制作メモ】ASSET-003 [Lovart動画] 台本L4
 シーン: 妻を探して山道を上る夫の背中。
-キャラプロンプト（1:1）:
+静止画プロンプト（16:9・フォトリアル）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese husband in his 50s wearing a dark blue field jacket, seen from behind to avoid a real-person likeness, walking uphill with a worried posture, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
+A Japanese man in his 50s wearing a dark blue field jacket walks uphill on a narrow forest path in early spring near Setana, southwestern Hokkaido. Rear view only, his face never visible. Documentary reconstruction, not a likeness of the real husband. Damp ground, bare branches and subdued daylight. Photorealistic live-action documentary footage, natural light, shot on RED camera. No readable text, no logo, no blood, no wounds, no gore. 16:9 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
+Google Flow動画プロンプト:
 ```
-An empty spring mountain path climbing away from Setana houses in early spring in southwestern Hokkaido, Japan. No people, no legible text, no real institution name or emblem. No blood, no wounds, no gore. Photorealistic documentary background, 16:9 aspect ratio. Generate 1 image.
+Animate the source frame for 8 seconds as live-action documentary footage. The man hurries uphill and looks from side to side toward the trees while the camera follows from behind at walking speed. Keep his face out of frame and preserve the forest path, clothing and early-spring light. Do not add another person, a bear or an attack. No legible text, no logo, no blood, no wounds, no gore. Photorealistic.
 ```
-→セリフ「・・・」
-→ 編集者指示: 夫を山道の奥へ3秒で進ませる。中央に「夫が捜索」を白字で重ね、要点の一語だけ赤字。
+→ 編集者指示: Flow動画をナレーションの尺に合わせて使用。中央に「夫が捜索」を白字で重ね、要点の一語だけ赤字。
 
 ---
 
