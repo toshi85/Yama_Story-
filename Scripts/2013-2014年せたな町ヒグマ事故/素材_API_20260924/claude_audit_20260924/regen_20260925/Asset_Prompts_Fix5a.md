@@ -404,25 +404,24 @@ The back of an old wooden rural house near Ota in the Taisei district of Setana,
 
 ナレーター: 念のため、1年前に人を襲い逃げ延びたとされるクマのDNAと照合することにしました。
 
-【制作メモ】ASSET-094 [キャラアニメーション] 台本L169
-シーン: 研究室で、2014年の血痕の試料と1年前の試料を2本の試験管で見比べ、息をのんで照合に取りかかる研究者（CHAR-07）。
-キャラプロンプト（1:1）:
+【制作メモ】ASSET-094 [Lovart動画] 台本L169
+シーン: 研究室の机の上で、白衣の袖の手袋の両手が、2014年の試料と1年前の試料の試験管2本を並べて照合にかかる（実写・手元）。091〜093がキャラなので、ここは実写にしてキャラの4連続を避ける。
+静止画プロンプト（16:9・フォトリアル）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, her face clearly visible. She holds up one small capped sample tube in each hand side by side at eye level, eyebrows pulled together, eyes stretched wide and intense, mouth pressed tight, a bead of sweat on her temple, tense and focused, NOT calm, NOT smiling. The tubes are clear with plain white caps, no lettering, nothing red. No badge, no logo, no name tag. Only this one woman, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+A small genetics laboratory bench in a research facility in Hokkaido, in early April early spring: two gloved Japanese hands in white lab-coat sleeves hold two small clear sample tubes with plain white caps side by side just above a rack of tubes, a pipette and a small centrifuge beside them, a computer monitor behind showing only an abstract pattern, a window with bare brown trees outside, No snow anywhere, no frost, no ice, no winter. Only the hands and forearms are visible, no face visible. The tubes are clear, nothing red and nothing stained. No readable text or labels on the tubes, no real institution name, no crest, no emblem, no logo. Captured as a frozen moment. Framed from about one metre away at bench height, the upper third left as clean open space. Tense, focused cool daylight, NOT pure black, the bench clearly readable, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
-背景プロンプト（16:9）:
+Google Flow動画プロンプト:
 ```
-A small genetics laboratory bench in a research facility in Hokkaido, in early April early spring: a clean white bench with a rack of small capped sample tubes, a pipette, a small centrifuge and a computer monitor showing only an abstract pattern, a window with bare brown trees outside, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Tense, focused cool daylight, NOT pure black, the bench clearly readable, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
+One single continuous close shot on a laboratory bench: two gloved hands in white lab-coat sleeves bring two small capped sample tubes side by side, pause, then set them carefully into the rack next to each other. The camera pushes in very slowly. Only hands and forearms appear, no face visible. No readable labels. No cuts, no scene change. 8 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
-→研究者セリフ「1年前のクマと／照合します」
-→ 編集者指示: 背景・キャラとも新規。研究者を中央に置き、試験管を持つ両手を小さく寄せる（動画は作らない）。中央に「前年のDNAと照合」を白字で表示し、「DNA」だけ赤字。左右の試験管の上に「2014年」「2013年」を白字で小さく置く。
+→ 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。左右の試験管の上に「2014年」「2013年」を白字で小さく置く。中央に「前年のDNAと照合」を白字で表示し、「DNA」だけ赤字。
 
 ---
 
 ナレーター: すると、遺伝子がぴったり一致したのです。
 
 【制作メモ】ASSET-095 [キャラアニメーション] 台本L171
-シーン: 094と同じ研究室で、照合結果がぴったり一致して目をむいて驚く研究者（CHAR-07）。
+シーン: 研究室で、照合結果がぴったり一致して目をむいて驚く研究者（CHAR-07）。
 キャラプロンプト（1:1）:
 ```
 (CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, her face clearly visible, leaning back in shock. She holds one blank printed sheet in both hands, eyes bulging almost out of her head with pupils shrunk to tiny dots, eyebrows shot up so hard the forehead is a mass of creases, mouth stretched wide open in a gasp, sweat flying off her face in droplets, stunned, NOT calm, NOT smiling. No lettering on the sheet or coat, no badge, no logo, no name tag. Only this one woman, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
@@ -431,9 +430,8 @@ A small genetics laboratory bench in a research facility in Hokkaido, in early A
 ```
 A small genetics laboratory bench in a research facility in Hokkaido, in early April early spring: a clean white bench with a rack of small capped sample tubes, a pipette, a small centrifuge and a computer monitor showing only an abstract pattern, a window with bare brown trees outside, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Startling, cool daylight, NOT pure black, the bench clearly readable, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
 ```
-→ 背景は094で新しく作る ASSET-094_bg.png を再使用。新しく作るのはキャラだけ。
 →研究者セリフ「完全に／一致してる！」
-→ 編集者指示: 背景は094の ASSET-094_bg.png、キャラは新規の ASSET-095_char.png。研究者を中央に置き、のけぞるように1回小さく揺らす（動画は作らない）。中央に「DNAが一致」を白字で表示し、「一致」だけ赤字。
+→ 編集者指示: 背景・キャラとも新規。研究者を中央に置き、のけぞるように1回小さく揺らす（動画は作らない）。中央に「DNAが一致」を白字で表示し、「一致」だけ赤字。
 
 ---
 
@@ -455,4 +453,4 @@ One single continuous shot from a fixed camera at the edge of an early-spring Ho
 
 ## 動画を外すだけのカット
 
-なし。056は台本どおり実写の3分割（ASSET-056_still.png・雪なし）と既存の動画のままでよく、ASSET-056_char.png（別人のハンター）は使わないので作り直さない。範囲内の §9 の14カット（051・053・054・058・059・066・068・069・071・074・078・084・090・091）は、背景に雪が写っている・人物が違う・キャラが4連続になる、のどれかで直しが要るため、上に書いた。キャラと背景で作るカットは、編集者指示に「動画は作らない」と書いた。058・078・090はキャラをやめて実写の動画にした（キャラ4連続を避けるため）。
+なし。056は台本どおり実写の3分割（ASSET-056_still.png・雪なし）と既存の動画のままでよく、ASSET-056_char.png（別人のハンター）は使わないので作り直さない。範囲内の §9 の14カット（051・053・054・058・059・066・068・069・071・074・078・084・090・091）は、背景に雪が写っている・人物が違う・キャラが4連続になる、のどれかで直しが要るため、上に書いた。キャラと背景で作るカットは、編集者指示に「動画は作らない」と書いた。058・078・090・094はキャラをやめて実写の動画にした（キャラ4連続を避けるため）。
