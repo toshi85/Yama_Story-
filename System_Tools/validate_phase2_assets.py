@@ -593,7 +593,10 @@ def prompt_lint(text, errors, warns, info):
                         if PROMPT_MULTI.search(re.sub(
                             r'\bnot (?:four, five, )?six or seven heads tall\b|'
                             r'\b(?:roughly |about )?(?:three|four|five|six|seven)(?: to (?:four|five|six|seven))? heads tall\b|'
-                            r'\babout one third of the total height\b', '', b, flags=re.I))]
+                            r'\babout one third of the total height\b|'
+                            # 直し方の定型句「No other people」と、1人の体の部位の both（2026-09-25 せたな町028で誤検知）
+                            r'\bno other (?:people|figures)(?: or animals)?\b|'
+                            r'\bboth (?:hands|arms|legs|feet|cheeks|eyes|shoulders|fists)\b', '', b, flags=re.I))]
         # 単一の再利用キャラ説明内の "both arms" 等は、複数の登場物指定ではない。
         only_single_reused_char = multi_blocks and all(
             len(re.findall(r'\(CHAR-\d+\s+再利用\)', b)) == 1 for b in multi_blocks)
