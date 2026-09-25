@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-215",
+  "narration": "しかし、何も対策をしない場合と比べると生存確率は上がります。",
+  "asset_type": "キャラアニメーション",
+  "scene": "213と同じ山道で、同じ2人がクマスプレーと鈴を掲げて装備を確かめ、心強くうなずく。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Exactly two full-body Japanese wild-vegetable gatherers standing side by side, both facing the viewer with BOTH SHOULDERS EQUALLY VISIBLE, both faces clearly visible. Left to right: 1) a man in his 60s in a green field jacket, grey trousers and a bucket hat, CLEAN-SHAVEN with no beard and no moustache, a head taller than the woman, holding up a red bear spray canister with no lettering in his right hand; 2) a woman in her 50s in a beige windbreaker, dark trousers and a sun hat, holding up a small brass bell in her right hand. Both have eyebrows raised, eyes bright and determined, mouths open in confident grins, a bead of sweat on the man's temple, reassured and confident, NOT frightened, NOT calm. No lettering, no logo. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は ASSET-213_bg.png を再利用し、海の側へ寄せて213と画を変える（今の ASSET-215_still.png は雪があるので使わない。ASSET-215_video.mp4 も使わない＝動画は作らない）。キャラは新規の ASSET-215_char.png を中央に置く。中央に「生存確率は上がる」を白字で表示し、「上がる」だけ赤字。"
+  ]
+}

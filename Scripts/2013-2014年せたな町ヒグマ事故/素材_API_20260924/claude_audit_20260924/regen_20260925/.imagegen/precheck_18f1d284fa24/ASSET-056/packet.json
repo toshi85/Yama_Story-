@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-056",
+  "narration": "足跡やフン、農作物の被害なども見つけたら、すぐに知らせてほしいと、",
+  "asset_type": "キャラアニメーション",
+  "scene": "足跡・フン・食害跡の3分割の前で、町の職員（CHAR-06・055と同じ人）が「見つけたら知らせて」と必死に頼む。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. Both hands pressed together in front of his chest in a pleading gesture, eyebrows slanted steeply upward in the middle, eyes stretched wide and earnest, mouth wide open calling out, a bead of sweat flying from his temple, desperate and pleading, NOT calm, NOT smiling. No lettering, no badge, no logo, no name tag. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "Three side-by-side close views of bear signs near Setana, southwestern Hokkaido, in mid-April early spring: on the left a Hokkaido brown bear pawprint pressed into damp dark soil with small green shoots, in the middle a pile of bear droppings on dry brown grass, on the right a field of young crop shoots trampled and bitten off. No snow anywhere, no frost, no ice, no winter. No bear anywhere in the frame, no animal visible. Soft overcast daylight, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-056_still.png、キャラは新規の ASSET-056_char.png。職員を右下に置き、3枚を左から順に0.8秒ずつ明るくする（動画は作らない。旧ASSET-056_video.mp4は使わない）。中央に「痕跡も知らせて」を白字で表示し、「痕跡」だけ赤字。"
+  ]
+}

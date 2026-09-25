@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-015",
+  "verdict": "PASS",
+  "subject": "52歳の女性・新成地区の山",
+  "evidence": "「The entrance of a narrow forest road leading up into the wooded hills of Shinsei near Setana」「キャラは ASSET-029_char.png を再利用して左から中央へ歩くように移動させる」",
+  "missing": "",
+  "reason": "新成地区の山の入口が描かれ、女性は再利用するキャラ画像で画面に登場する。"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-148",
+  "verdict": "FAIL",
+  "subject": "町長・事件を起こしたクマ",
+  "evidence": "A full-body Japanese town mayor in his 60s with short greying hair and black-framed glasses",
+  "missing": "事件を起こしたクマ",
+  "reason": "町長は描かれていますが、ナレーションに登場するクマはプロンプトに描かれていません。"
+}

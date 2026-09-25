@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-168",
+  "narration": "地域で暮らす元漁師、岡部秀隆（ひでたか）さん（86歳）も、「人が減り、年寄りばかりになって奥の畑まで手入れができなくなった。荒れた場所に山菜が生え、クマが来やすくなったのかもしれない」と、近年のクマ被害について話していたとのこと。",
+  "asset_type": "キャラアニメーション",
+  "scene": "荒れた畑と山林の境で、寂しそうに語る86歳の元漁師（固定人物ではなく、このカットだけの人物）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese former fisherman aged 86, NOT middle-aged, with a deeply lined weathered face, sunken cheeks, sagging skin at the jaw, sparse thin white hair under a faded navy knit cap, age spots, CLEAN-SHAVEN with no beard, no moustache and no stubble, a slightly bent back, a worn dark brown work jacket, grey work trousers and black rubber boots, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He leans on a plain wooden walking stick with both hands, eyebrows slanted steeply upward in the middle, eyes wet and glistening with tears, mouth bent into a trembling downturned frown, sorrowful and lonely, NOT calm, NOT smiling. No lettering, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "An abandoned, overgrown hillside field at the edge of a small coastal settlement near Setana, southwestern Hokkaido, in April early spring: tall dry brown weeds and grass over old furrows, a leaning wooden fence post with rusted wire, the first green shoots of wild vegetables coming up among the weeds, a leafless wooded hill behind, the grey Sea of Japan in the distance, No snow anywhere, no snow patches, no frost, no ice, no winter. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Lonely, quiet, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規（今の ASSET-168_still.png は雪があり、キャラは別人なので使わない）。元漁師を右に置き、うつむくように小さく上下させる（動画は作らない）。左上に「岡部秀隆さん（86歳）」を白字で置き、中央に「荒れた畑に山菜」。「荒れた」だけ赤字。"
+  ]
+}

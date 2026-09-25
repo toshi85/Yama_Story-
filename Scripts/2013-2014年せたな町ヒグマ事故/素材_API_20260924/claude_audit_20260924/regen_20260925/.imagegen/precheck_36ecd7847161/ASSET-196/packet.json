@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-196",
+  "narration": "せたな町の担当者は、春先は雪解けが早く餌のある海側で過ごし、夏に内陸へ移ったのではないかと分析しています。",
+  "asset_type": "キャラアニメーション",
+  "scene": "左に春の海側、右に夏の内陸の畑を並べた背景の前で、クマの移動を説明する町の担当者（CHAR-06）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black shoes, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He holds a plain clipboard against his chest with his left hand and raises his right index finger in front of his chest as he explains, eyebrows raised high, eyes wide open, mouth open mid-explanation, a bead of sweat on his temple, earnest and intent, NOT calm, NOT smiling. No lettering, no badge, no logo, no name tag. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A split image of two places in southwestern Hokkaido divided by a thin vertical line: on the left, a green grassy coastal headland above the Sea of Japan near Setana in spring; on the right, a lush green sugar beet field below wooded hills in Imakane in summer, No snow anywhere, no frost, no ice, no winter. No readable text, no signs. Framed from adult eye height, the lower middle of the frame left as clear open space. Calm, explanatory mood, natural daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-196_still.png、キャラは新規の ASSET-196_char.png を中央下に置く（動画は作らない）。左の海側に「春」、右の畑に「夏」を白字で置き、左から右へ白い矢印を1本引く。中央に「春は海側、夏は内陸」を白字で表示し、「内陸」だけ赤字。"
+  ]
+}

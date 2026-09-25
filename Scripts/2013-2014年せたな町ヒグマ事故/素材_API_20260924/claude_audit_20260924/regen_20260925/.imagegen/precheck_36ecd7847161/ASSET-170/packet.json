@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-170",
+  "narration": "町全体が「新たな被害者を出してはならない」として、クマには細心の注意を払っていたのです。",
+  "asset_type": "キャラアニメーション",
+  "scene": "裏山の下の集落で、町の職員（CHAR-06）・住民（CHAR-10）・ハンター（CHAR-05）が並んで山を警戒する。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Exactly three full-body Japanese men standing side by side in a loose row, all facing the viewer with BOTH SHOULDERS EQUALLY VISIBLE, all faces clearly visible, only their eye direction and head tilt may differ. Left to right: 1) (CHAR-06 再利用) a male town official in his 40s with short black hair, a navy work jacket, a light blue shirt and grey trousers, the tallest of the three, eyebrows pulled together, eyes wide and alert, mouth pressed into a tight line; 2) (CHAR-10 再利用) a local resident man in his 70s with short white hair, CLEAN-SHAVEN, a beige work jacket, grey trousers and rubber boots, the shortest of the three, eyebrows slanted upward, eyes wide and worried, mouth trembling, a bead of sweat on his temple; 3) (CHAR-05 再利用) a local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest and khaki trousers, of middle height, eyebrows driven down, eyes narrowed and sharp, jaw clenched, holding a pair of binoculars at his chest. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT. No two of them are the same height. All three are tense and watchful, NOT calm, NOT smiling. No lettering, no badge, no logo. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A small coastal farming settlement at the foot of a steep wooded hill near Setana, southwestern Hokkaido, in April early spring: low houses with dark roofs along a country road, dry brown fields in front, the leafless wooded back hill rising behind the houses, the Sea of Japan on the left, No snow anywhere, no snow patches, no frost, no ice, no winter. No readable text, no signs. Framed from adult eye height about ten metres back, the fields in the lower third, the middle of the frame left as clear open space. Tense, watchful stillness, soft clear spring light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規（今の ASSET-170_still.png は手前に雪があり、キャラはハンター1人なので使わない）。3人を中央下に置き、裏山の方へ顔を向けるように小さく揺らす（動画は作らない）。中央に「町全体で警戒」を白字で表示し、「警戒」だけ赤字。"
+  ]
+}

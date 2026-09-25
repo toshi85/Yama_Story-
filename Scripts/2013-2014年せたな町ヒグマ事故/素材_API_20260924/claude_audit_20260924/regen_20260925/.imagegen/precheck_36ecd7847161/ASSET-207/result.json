@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-207",
+  "verdict": "PASS",
+  "subject": "DNA照合・同一個体",
+  "evidence": "背景は ASSET-182_bg.png を再利用し、2本の試料が左右に並ぶ全景で使う",
+  "missing": "",
+  "reason": "照合する2本の試料を並べ、同一個体という結論を文字で示している。"
+}

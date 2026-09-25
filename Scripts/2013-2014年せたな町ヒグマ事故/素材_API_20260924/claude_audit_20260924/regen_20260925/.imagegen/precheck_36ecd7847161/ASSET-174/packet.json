@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-174",
+  "narration": "捜索隊は日によって2人から10人ほどでした。",
+  "asset_type": "キャラアニメーション",
+  "scene": "林道の入口から、ハンター2人（CHAR-05・CHAR-09）が山へ入っていく。人数の幅はテロップで示す。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Exactly two full-body Japanese hunters walking side by side toward the viewer at a slight three-quarter angle, both faces clearly visible. Left to right: 1) (CHAR-05 再利用) a local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers, brown boots and a small backpack, a rifle slung on his back with the muzzle pointing up, eyebrows driven down, eyes narrowed and alert, mouth pressed into a grim line; 2) (CHAR-09 再利用) a young hunter in his 30s with short black hair, a dark green cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a head taller than the first man, eyebrows pulled together and raised, eyes wide and nervous, mouth tight, a bead of sweat on his temple. They do not share a face, a cap or a height. Both are tense, NOT calm, NOT smiling. No lettering, no badge, no logo. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "The entrance of a gravel forest track leading into leafless woods near Setana, southwestern Hokkaido, in April early spring: a weathered wooden marker post with no readable characters, low bamboo grass along the edges, bare birch and deciduous trees, brown leaf litter, and at the right side of the track a plain folding table with packed search gear, two backpacks, a coil of rope and a pair of rubber boots beside it, No snow anywhere, no snow patches, no frost, no ice, no winter. Framed from adult eye height about four metres back, the track entrance on the right, the middle and left of the frame left as clear open space. Tense, quiet morning light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規（今の ASSET-174_still.png は雪があるので使わない。ASSET-174_video.mp4 も使わない＝動画は作らない）。2人を左から林道の入口へ歩くように移動させる。中央に「日によって2〜10人」を白字で表示し、「2〜10人」だけ赤字。"
+  ]
+}

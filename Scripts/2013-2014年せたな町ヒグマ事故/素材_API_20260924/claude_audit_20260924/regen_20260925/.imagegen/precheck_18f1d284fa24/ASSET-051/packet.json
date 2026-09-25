@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-051",
+  "narration": "地区長を通じて、住民への注意も徹底することになりました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "集落の掲示板の横で、地区長が住民へ注意を呼びかける。キャラは既存の ASSET-051_char.png（057と同じ地区長）を使い、雪の残る背景だけを057の掲示板の背景に差し替える。",
+  "fences": [
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "An empty gravel lot beside a wooden community notice board at the edge of a small rural settlement near Setana, southwestern Hokkaido, in mid-April early spring: a small red-roofed community hall, bare and budding deciduous trees, brown leaf litter, forested hills behind, No snow anywhere, no frost, no ice, no winter. The notice board is present but its papers are small and not readable. Framed from adult eye height about six metres back, the left half of the frame left as clear open space. Quiet, uneasy overcast afternoon light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は ASSET-057_bg.png、キャラは既存の ASSET-051_char.png。地区長を左に置き、上げた手を小さく振る（動画は作らない）。左上に「住民へ注意を徹底」を白字で置き、「注意」だけ赤字。"
+  ]
+}

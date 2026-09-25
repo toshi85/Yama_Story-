@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-059",
+  "narration": "そのため、町は新たなハンターを増やすべく、2013年から狩猟免許や猟銃の購入など、ハンター活動に必要な資金の一部を負担することに決定。",
+  "asset_type": "キャラアニメーション",
+  "scene": "役場の窓口で、町の職員（CHAR-06）が若いハンター（CHAR-09）に費用負担の書類を差し出し、若いハンターが喜ぶ。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-06 再利用) (CHAR-09 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Exactly two full-body Japanese men facing each other at a slight three-quarter angle toward the viewer, both faces clearly visible. Left to right: 1) (CHAR-06 再利用) a male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black shoes, holding out one plain blank sheet of paper with both hands, eyebrows raised high, eyes wide and bright, mouth wide open in an encouraging call; 2) (CHAR-09 再利用) a young hunter in his 30s with short black hair, a dark green cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, reaching for the paper with both hands, eyebrows shot up, eyes sparkling and stretched wide, mouth wide open in a delighted grin, overjoyed. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT. No lettering on the paper, no badge, no logo, no name tag. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A public reception counter inside a small rural town office in Setana, southwestern Hokkaido, in mid-April: a long wooden counter with a corded telephone and a stack of blank report forms, grey filing cabinets and binders behind, a window showing the sea and low hills with bare brown trees, the hills brown and bare with no snow on any mountain, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Hopeful afternoon daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は055の ASSET-055_bg.png、キャラは新規の ASSET-059_char.png。2人を中央に置き、若いハンターを小さく跳ねさせる（動画は作らない）。中央に「免許・猟銃を支援」を白字で表示し、「支援」だけ赤字。"
+  ]
+}

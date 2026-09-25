@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-146",
+  "narration": "町はクマ事件後、対策本部を設けて休むことなく捜索を進めていました。",
+  "asset_type": "Lovart動画",
+  "scene": "12月の雪の山林へ、一列になって捜索に入っていく捜索隊の後ろ姿（小さく、顔は見えない）。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "A line of five Japanese hunters in blaze-orange safety vests over dark green jackets, seen from behind and small in the frame, frozen mid-stride in single file through knee-deep snow into a forest of snow-covered bare trees near Setana, southwestern Hokkaido, in mid-December winter, rifles slung on their backs pointing upward, a grey sky. Winter is intended in this scene. No face visible. Dim grey snowy light but NOT pure black — the figures and trees stay clearly readable. Framed from adult eye height about fifteen metres behind them, the upper third left as clean negative space for large lettering. Relentless, tired, determined mood, cold blue-grey light, muted tones. No lettering, no logo. No blood, no wounds, no gore. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous shot: the five Japanese hunters seen from behind keep trudging slowly in single file through the deep snow into the snowy forest, light snow falling, the camera follows slowly at walking pace. No cuts, no scene change, no face visible. 8 seconds. No blood, no wounds, no gore. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う（足りなければ再生速度を落として尺いっぱい）。中央上に「休まず捜索」を白字で表示し、「休まず」だけ赤字。"
+  ]
+}

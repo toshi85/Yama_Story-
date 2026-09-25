@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-169",
+  "verdict": "FAIL",
+  "subject": "住民・クマ・鳴り物",
+  "evidence": "He holds a small portable radio up in his right hand and a small red packet of firecrackers in his left hand",
+  "missing": "クマ",
+  "reason": "住民と鳴り物は描かれていますが、ナレーションに出るクマがプロンプトに登場しません。"
+}

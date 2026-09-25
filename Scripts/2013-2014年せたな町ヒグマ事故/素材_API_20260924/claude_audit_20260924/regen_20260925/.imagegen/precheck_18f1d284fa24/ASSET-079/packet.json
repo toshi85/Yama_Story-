@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-079",
+  "narration": "向かってくるクマは、体長およそ2メートル。",
+  "asset_type": "Lovart静止画",
+  "scene": "林道を四つ足でこちらへ向かってくる体長約2mのヒグマ（実写・数値はテロップ）。080の背景にも使うので左3分の1を空ける。",
+  "fences": [
+    {
+      "label": "シーン: 林道を四つ足でこちらへ向かってくる体長約2mのヒグマ（実写・数値はテロップ）。080の背景にも使うので左3分の1を空ける。",
+      "language": "",
+      "text": "An adult male Hokkaido brown bear (Ursus arctos yesoensis) about 2 metres long and roughly 150 to 250 kilograms charging straight toward the camera ON ALL FOURS along a narrow forest trail near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring, NOT standing upright, NOT on two legs. Its chest and both shoulders squared to the camera, head dropped low and driven forward between bunched shoulders, jaws wrenched wide open in a savage snarl with long curved canine fangs bared, ears pinned flat against the skull, the fur along its neck, shoulders and spine bristled up into a raised ridge, claws fully extended and tearing up the leaf litter, small eyes narrowed and fixed straight on the lens. Its shoulder reaches about the height of an adult's waist to chest, much larger than a person crouching. Ferocious, enraged, single-minded predatory fury. Dry brown bamboo grass and bare trees on both sides, brown leaf litter, No snow anywhere, no snow patches, no frost, no ice, no winter. The bear occupies the right two-thirds of the frame, the left third left as clear open space. Framed from adult eye height about eight metres away. Terrifying, cold overcast early-afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. No blood, no wounds, no gore. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 画面を5秒で1.0→1.15倍にクマへ寄せる。クマの横に白い両矢印を引き、中央に「体長約2m」を白字で表示し、「2m」だけ赤字。"
+  ]
+}

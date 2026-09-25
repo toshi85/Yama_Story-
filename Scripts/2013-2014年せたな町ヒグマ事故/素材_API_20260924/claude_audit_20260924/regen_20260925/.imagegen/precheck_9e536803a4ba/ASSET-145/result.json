@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-145",
+  "verdict": "FAIL",
+  "subject": "町の会議・クマ",
+  "evidence": "long tables pushed together with empty folding chairs, a plain photograph of a brown bear",
+  "missing": "会議の参加者とクマ",
+  "reason": "空の会議室とクマの写真だけで、会議の様子もクマ自身も描かれていません。"
+}

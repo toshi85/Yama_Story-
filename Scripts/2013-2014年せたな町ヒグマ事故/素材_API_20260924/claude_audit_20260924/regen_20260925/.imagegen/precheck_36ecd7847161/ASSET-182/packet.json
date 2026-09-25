@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-182",
+  "narration": "せたな町以外で捕獲されていたクマのDNA鑑定を専門家に依頼したのです。",
+  "asset_type": "キャラアニメーション",
+  "scene": "研究室の机で、町外のクマの試料袋を受け取り、鑑定を引き受ける研究者（CHAR-07）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, standing square to the viewer with her shoulder line parallel to the picture plane, her face clearly visible. She holds up a small sealed clear sample bag in both hands at chest height, eyebrows raised high, eyes wide and focused, mouth open as she speaks, a bead of sweat on her temple, serious and eager, NOT calm, NOT smiling. No lettering on the bag, no badge, no logo, no name tag. Only this one woman, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A clean laboratory table by a window in Hokkaido, in April early spring: two capped sample tubes standing apart for comparison, each on a blank white card, a small tube rack at the right edge; through the window, bare and budding trees and brown fields under a pale sky, No snow anywhere, no frost, no ice, no winter. No readable text, no labels with characters, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about two metres back, the middle of the frame left as clear open space. Quiet, focused mood, cool clean daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規（今の ASSET-182_bg.png は窓の外に雪があるので、新しい背景で上書きする。185・207も再利用する）。研究者を右から中央へスライドさせて止める（動画は作らない）。中央に「町外のクマもDNA鑑定」を白字で表示し、「DNA鑑定」だけ赤字。"
+  ]
+}

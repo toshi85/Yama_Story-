@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-178",
+  "narration": "町内のコンビニや民宿などにも200枚ほどのビラが配られ、",
+  "asset_type": "キャラアニメーション",
+  "scene": "コンビニのカウンターに、ビラの束を抱えて急いで配りに来た町の職員（CHAR-06）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black shoes, walking toward the viewer at a slight three-quarter angle, facing the viewer, his face clearly visible. He hugs a thick stack of plain white leaflets against his chest with both arms, each leaflet showing only a simple dark bear silhouette and no words, eyebrows pulled together and raised, eyes wide, mouth open as he calls out, beads of sweat flying from his temples, hurried and urgent, NOT calm, NOT smiling. No lettering, no badge, no logo, no name tag. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "The counter of a small convenience store in a seaside town near Setana, southwestern Hokkaido, in April early spring: a neat stack of warning leaflets with a bear photograph on the counter, snack shelves and a drinks cooler behind, a window showing the grey sea and a green headland, No snow anywhere, no frost, no ice, no winter. No readable text, no store name, no logo. Framed from adult eye height about three metres back, the left and middle of the frame left as clear open space. Busy, uneasy mood, soft daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-178_still.png、キャラは新規の ASSET-178_char.png。ASSET-178_video.mp4 は使わない（動画は作らない）。職員を右からカウンターの前へ急ぐように移動させる。中央に「ビラ200枚」を白字で表示し、「200枚」だけ赤字。"
+  ]
+}

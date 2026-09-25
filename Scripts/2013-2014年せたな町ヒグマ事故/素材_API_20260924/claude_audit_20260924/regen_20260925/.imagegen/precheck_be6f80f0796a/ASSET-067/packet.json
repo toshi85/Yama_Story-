@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-067",
+  "narration": "2人は、ギョウジャニンニクを採りに来ていました。",
+  "asset_type": "Lovart静止画",
+  "scene": "林床で、えんじ色の袖と灰色の袖の2人の手が、ギョウジャニンニクを摘み取る。実在の2人なので実写は手元だけ。",
+  "fences": [
+    {
+      "label": "シーン: 林床で、えんじ色の袖と灰色の袖の2人の手が、ギョウジャニンニクを摘み取る。実在の2人なので実写は手元だけ。",
+      "language": "",
+      "text": "(CHAR-03 再利用) (CHAR-04 再利用) A close view of a forest floor near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring: a dense patch of fresh wild garlic (gyoja-ninniku, Allium victorialis) with broad bright green leaves and reddish stems rising from brown leaf litter. Two Japanese hands pick it at the same time: on the left a woman's hand in a MAROON jacket sleeve, on the right a man's hand in a grey jacket sleeve, a woven basket with a few bundles already inside between them. Only hands and forearms are visible, no face visible. Bare trees behind, No snow anywhere, no frost, no ice, no winter. Framed from about one metre above at a slight angle, the upper third left as clean open space. Fresh, pleasant midday light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 画面を5秒で1.0→1.12倍にゆっくり近づける。中央に「ギョウジャニンニク」を白字で表示し、「ギョウジャニンニク」だけ赤字。"
+  ]
+}

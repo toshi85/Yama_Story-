@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-107",
+  "narration": "ハンターたちは、現場から半径数キロにわたって捜索を開始。",
+  "asset_type": "キャラアニメーション",
+  "scene": "尾根が連なる春の山並みを前に、双眼鏡で広い範囲を探すハンター（CHAR-05）。雪は描かない。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, standing toward the viewer at a slight three-quarter angle, his face clearly visible. He holds a pair of binoculars just below his eyes with both hands, eyebrows driven down hard, eyes narrowed and darting, mouth pressed into a tight grim line, a bead of sweat on his temple, tense and searching, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A wide view over several forested ridges rolling one behind another in the Ota area near Setana, southwestern Hokkaido, in mid-April early spring: brown bare and budding deciduous woods, dark green conifers, dry brown grass on the near slope, No snow anywhere, no snow on any ridge or distant mountain, no frost, no ice, no winter. Framed from adult eye height on a hilltop about four metres back, the near slope in the lower third, a clear horizon line visible, the middle of the frame left as clear open space. Tense, quiet, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。ハンターを左下に置き、双眼鏡を左右にゆっくり振るように小さく回す。中央に「半径数キロを捜索」を白字で表示し、「数キロ」だけ赤字。"
+  ]
+}

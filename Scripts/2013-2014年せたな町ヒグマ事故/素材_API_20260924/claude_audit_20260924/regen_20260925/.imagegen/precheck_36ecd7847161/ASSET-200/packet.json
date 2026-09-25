@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-200",
+  "narration": "住民も、裏山の畑に行くときまで警戒していたと話し、クマがすでに駆除されていたと知って安堵したとのことでした。",
+  "asset_type": "キャラアニメーション",
+  "scene": "物置の前で、爆竹とラジオを手に安堵の笑顔を見せる住民（CHAR-10＝169と同じ人）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local resident man in his 70s with short white hair, CLEAN-SHAVEN with no beard and no moustache, a beige work jacket, grey trousers and rubber boots, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He holds a small portable radio and a small red packet of firecrackers loosely against his chest, his shoulders dropping, eyebrows raised and relaxed, eyes crinkled into happy arcs with tears of relief at the corners, mouth open in a broad relieved smile, relieved and grateful, NOT calm. No lettering on the radio or packet, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "An open metal storage shed beside an old rural house in a seaside settlement near Setana, southwestern Hokkaido, in late April spring: on the shed shelf, a clear plastic box with a whistle, a flashlight, red firecracker packets and a portable radio; outside, a gravel yard, dry brown grass with first green shoots, bare and budding trees, the sea in the distance, No snow anywhere, no snow patches, no frost, no ice, no winter. No readable text, no logo. Framed from adult eye height about three metres back, the shed on the right, the left half of the frame left as clear open space. Calm, relieved mood, soft clear spring light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規（今の ASSET-200_still.png は庭に雪があり、キャラは別人なので使わない）。住民を左に置き、ほっとして肩を落とすように小さく沈ませる（動画は作らない）。中央に「住民も安堵」を白字で表示し、「安堵」だけ赤字。"
+  ]
+}

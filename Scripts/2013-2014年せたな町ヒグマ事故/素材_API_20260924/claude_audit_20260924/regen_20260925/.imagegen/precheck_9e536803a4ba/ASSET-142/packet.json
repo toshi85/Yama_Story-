@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-142",
+  "narration": "残念ながら箱わなにかかっていたのは、別のクマだったのです。",
+  "asset_type": "キャラアニメーション",
+  "scene": "役場の机で鑑定結果を聞き、「別のクマだった」と肩を落とす町の職員（CHAR-06）。窓の外は5月の緑で、雪は描かない。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. His shoulders slump and a plain blank card droops from his right hand, his left hand pressed to his forehead, eyebrows slanted steeply upward, eyes wet with tears, mouth bent into a trembling downturned frown, a bead of sweat on his temple, deeply disappointed, NOT calm, NOT smiling. No lettering on the card, no badge, no logo, no name tag. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "An office desk in a small rural town office in Setana, southwestern Hokkaido, in mid-May late spring: two plain storage boxes and a blank card on the desk, a filing cabinet, a window with fresh light-green new leaves and green hills outside, No snow anywhere, no snow on any distant mountain, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Heavy, disappointed mood, soft cool daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。職員を中央に置き、ゆっくり肩を落とすように小さく下げる。中央に「別のクマだった、、」を白字で表示し、「別のクマ」だけ赤字。"
+  ]
+}

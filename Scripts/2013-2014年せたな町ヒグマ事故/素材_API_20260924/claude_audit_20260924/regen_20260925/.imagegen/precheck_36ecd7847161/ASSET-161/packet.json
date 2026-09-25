@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-161",
+  "narration": "手がかりになる特徴は、足跡から判明したオスのクマで前足の幅が14センチということ。",
+  "asset_type": "キャラアニメーション",
+  "scene": "泥に残る前足の跡の横で、折り尺を広げて幅を示すハンター（CHAR-05）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He holds a plain yellow folding ruler with no readable markings horizontally in front of his chest with both hands, showing a width, eyebrows pulled together and raised, eyes stretched wide and intent, mouth open as he calls out, a bead of sweat on his temple, tense and urgent, NOT calm, NOT smiling. No lettering, no badge, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "One large fresh forepaw print of an adult male Hokkaido brown bear, an animal about 2 metres long and roughly 150 to 250 kilograms, pressed into damp dark mud on a forest path near Setana, southwestern Hokkaido, in April early spring: a broad pad about 14 centimetres wide, five toe marks and long claw marks in front of the toes, a plain yellow folding ruler with no readable markings lying across the print for scale, brown leaf litter and a few first green shoots around it, No snow anywhere, no frost, no ice, no winter. No bear anywhere in the frame, no animal visible. Framed from adult eye height about one and a half metres away, the camera angled downward, the print in the lower right, the left half of the frame left as clear open space. Tense, quiet, soft overcast daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規（今の ASSET-161_still.png は雪があるので使わない）。ハンターを左に置き、折り尺を持つ腕を小さく左右に動かす（動画は作らない）。中央に「前足幅14cm」を白字で表示し、「14cm」だけ赤字。"
+  ]
+}

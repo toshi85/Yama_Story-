@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-107",
+  "verdict": "FAIL",
+  "subject": "ハンターたちの捜索",
+  "evidence": "A full-body Japanese local hunter in his 60s",
+  "missing": "複数のハンターのうち、CHAR-05以外のハンター",
+  "reason": "ナレーションは複数のハンターによる捜索を述べているが、プロンプトに描かれるハンターは1人だけ。"
+}

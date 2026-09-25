@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-096",
+  "narration": "つまり、今回襲われた45歳の女性と、去年襲われた52歳の女性は、同じクマによる犯行ということになります。",
+  "asset_type": "Lovart動画",
+  "scene": "春の森の暗がりから、こちらをにらんでゆっくり迫る1頭のヒグマ＝2人を襲った同じクマ（実写）。2人は編集で左右に小さく示す。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "A single adult male Hokkaido brown bear (Ursus arctos yesoensis) about 2 metres long and roughly 150 to 250 kilograms emerging ON ALL FOURS from the shadowed edge of a forest of bare deciduous trees and dense dry bamboo grass near Setana, southwestern Hokkaido, in early April early spring, NOT standing upright, NOT on two legs. Its chest and both shoulders squared to the camera, head held low, lips peeled back to bare its fangs, ears pinned flat against the skull, the fur along its neck and shoulders bristled up into a raised ridge, small eyes narrowed and fixed straight on the lens. Ferocious, menacing, predatory. Brown leaf litter, No snow anywhere, no snow patches, no frost, no ice, no winter. Captured as a frozen moment. The bear sits in the centre of the frame, the upper left and upper right corners left as clean open space. Framed from adult eye height about ten metres away. Dim forest shade but NOT pure black, the bear clearly readable, cold muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. No blood, no wounds, no gore. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous shot from a fixed camera at the edge of an early-spring Hokkaido forest: a single adult brown bear on all fours steps slowly out of the shadowed bamboo grass toward the camera, head low, fangs bared, eyes fixed on the lens, and stops. It never stands up on two legs. No cuts, no scene change, no zoom. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。左上に026の女性（2013年・52歳）、右上に076の女性（2014年・45歳）を小さく置き、それぞれからクマへ白い矢印を引く。中央に「同じクマ」を白字で表示し、「同じ」だけ赤字。"
+  ]
+}

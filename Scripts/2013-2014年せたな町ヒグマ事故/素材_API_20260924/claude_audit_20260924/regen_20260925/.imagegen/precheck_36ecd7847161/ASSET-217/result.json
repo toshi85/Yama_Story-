@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-217",
+  "verdict": "FAIL",
+  "subject": "女性・男性・クマ",
+  "evidence": "a woman in her mid 40s ... clutching her left upper arm with her right hand; a man in his early 60s ... holding a small hatchet raised defensively in front of him with both hands",
+  "missing": "女性を襲い、男性も襲おうとしたクマが描かれていない。",
+  "reason": "女性と男性は描かれているが、背景プロンプトは「No animal visible.」と指定しており、襲撃の主語であるクマが絵にいない。"
+}

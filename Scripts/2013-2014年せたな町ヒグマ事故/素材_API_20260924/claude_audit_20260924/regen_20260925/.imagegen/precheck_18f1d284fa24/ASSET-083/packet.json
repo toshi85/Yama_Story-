@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-083",
+  "narration": "その後、女性はすぐさま病院へと緊急搬送。",
+  "asset_type": "Lovart静止画",
+  "scene": "山あいの道を走り去る救急車（雪の壁なし）。",
+  "fences": [
+    {
+      "label": "シーン: 山あいの道を走り去る救急車（雪の壁なし）。",
+      "language": "",
+      "text": "A white Japanese ambulance with red lights driving away along a narrow road through bare forested hills near Setana, southwestern Hokkaido, in early April early spring: dry brown roadside grass, bare and budding trees, No snow anywhere, no snow walls, no snow patches, no frost, no ice, no winter. Its markings and number plate are present in their normal place, but small, slightly out of focus and not readable, no real institution name, no crest, no emblem, no logo. Seen from behind at adult eye height about fifteen metres back, the upper third left as clean open space. Urgent, tense overcast afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 画面を5秒で1.0→1.12倍にゆっくり近づける。中央に「緊急搬送」を白字で表示し、「搬送」だけ赤字。"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-162",
+  "narration": "そして、鼻には男性がつけたナタの傷が残っている可能性が高いと考えられていました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "遠くの林縁にいるヒグマを背に、自分の鼻を指さして「鼻の傷」を伝えるハンター（CHAR-05）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He taps the tip of his own nose with his right index finger, eyebrows pulled together and slanted, eyes narrowed and sharp, teeth clenched in a tense grimace, a bead of sweat on his temple, wary and grim, NOT calm, NOT smiling. No lettering, no badge, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A dry brown meadow at the edge of a leafless forest near Setana, southwestern Hokkaido, in April early spring: bare birch and deciduous trees, low bamboo grass at the forest edge, a small stream, brown grass with the first green shoots, No snow anywhere, no snow patches, no frost, no ice, no winter. Far away at the forest edge on the right, small in the frame, an adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms stands ON ALL FOURS, NOT upright, NOT on two legs, side-on with its head turned toward the camera, head dropped low, ears flattened back, the fur along its neck bristled up; its muzzle shows no visible mark, nothing red and nothing stained. Framed from adult eye height about four metres back, the left half of the frame left as clear open space. Uneasy, tense, soft overcast daylight, muted natural tones. Photorealistic, shot on RED camera, telephoto lens. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規（今の ASSET-162_still.png は手前に雪があるので使わない）。ハンターを左に置き、奥のクマの鼻先へゆっくり寄る（動画は作らない）。中央に「鼻にナタの傷？」を白字で表示し、「ナタの傷」だけ赤字。"
+  ]
+}

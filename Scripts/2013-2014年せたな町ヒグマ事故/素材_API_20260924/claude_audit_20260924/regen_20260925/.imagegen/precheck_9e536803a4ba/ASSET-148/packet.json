@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-148",
+  "narration": "しかし、問題となったクマの捕獲の報告はいまだにできておらず、町長は「今なお、事件を起こしたクマの捕獲には至っておりません」と伝えるしかありませんでした。",
+  "asset_type": "キャラアニメーション",
+  "scene": "12月の町議会の演台で、捕獲に至っていないと苦しそうに報告する町長（CHAR-08）。窓の外は雪。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese town mayor in his 60s with short greying hair and black-framed glasses, CLEAN-SHAVEN with no beard and no moustache, a navy work-jacket blazer over a white shirt and navy tie, navy trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. He bows his head slightly with both hands pressed flat together in front of his chest, eyebrows slanted steeply upward, eyes squeezed half shut in anguish, mouth bent into a pained grimace, sweat running down his temples, deeply apologetic and pained, NOT calm, NOT smiling. No lettering, no badge, no logo, no name tag. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A small town council chamber in Setana, southwestern Hokkaido, in mid-December winter, seen from beside the speaker's podium: a wooden podium with a microphone on the right, rows of empty seats, tall windows showing snow falling on bare trees and snow-covered roofs outside. Winter is intended in this scene. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Heavy, grave mood, cold grey daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。町長を演台の左に置き、頭を下げるように小さく上下させる。中央に「捕獲に至らず、、」を白字で表示し、「至らず」だけ赤字。"
+  ]
+}

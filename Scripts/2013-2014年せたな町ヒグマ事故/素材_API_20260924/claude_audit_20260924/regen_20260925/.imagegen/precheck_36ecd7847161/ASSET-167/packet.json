@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-167",
+  "narration": "捜索が続く中、ハンターでもある町職員の八木忠義（ただよし）さんが、クマの行動について「多くのクマは人に気付くと避けていく。このクマは2年前の遭遇事故を機に、人を獲物と認識するようになったのか」と語っています。",
+  "asset_type": "キャラアニメーション",
+  "scene": "役場の机でクマの写真と地図を前に、不安そうに語る八木さん（ハンターでもある町職員＝CHAR-06）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black shoes, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He clutches a plain closed folder against his chest with both hands, eyebrows slanted steeply upward and pulled together, eyes wide and uneasy, mouth bent into a worried frown, a bead of sweat running down his temple, deeply troubled and uneasy, NOT calm, NOT smiling. No lettering, no badge, no logo, no name tag. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A worn wooden desk by a window in a small rural town office in Setana, southwestern Hokkaido, in April early spring: several printed telephoto photographs of an adult Hokkaido brown bear about 2 metres long spread on the desk, a folded topographic map, a handheld radio and a clipboard with blank sheets; through the window, bare and budding deciduous trees and a grey Sea of Japan, dry brown grass on the slope, No snow anywhere, no frost, no ice, no winter, no lush summer green. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Uneasy, grave mood, cool daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規（今の ASSET-167_still.png は窓の外が夏の緑なので使わない）。職員を右から中央へスライドさせて止め、うつむくように小さく上下させる（動画は作らない）。左上に「八木忠義さん（町職員）」を白字で置き、中央に「人を獲物と認識？」。「獲物」だけ赤字。"
+  ]
+}

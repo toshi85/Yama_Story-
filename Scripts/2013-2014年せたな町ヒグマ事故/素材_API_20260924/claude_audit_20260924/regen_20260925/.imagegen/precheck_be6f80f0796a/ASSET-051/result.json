@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-051",
+  "verdict": "FAIL",
+  "subject": "地区長・住民・注意喚起",
+  "evidence": "「キャラは既存の ASSET-051_char.png（057と同じ地区長）を使い」",
+  "missing": "住民が描かれていない",
+  "reason": "地区長のキャラは指定されているが、背景は「No people, no figures, no humans visible」で、住民を描く指定がない。"
+}

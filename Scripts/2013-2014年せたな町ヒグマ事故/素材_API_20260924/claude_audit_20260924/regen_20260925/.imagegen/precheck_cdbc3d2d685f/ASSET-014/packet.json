@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-014",
+  "narration": "北海道の南西部、日本海に面したせたな町。",
+  "asset_type": "Lovart動画",
+  "scene": "日本海とせたな町の海岸林を、ドローン視点でゆっくり進みながら見せる。",
+  "fences": [
+    {
+      "label": "シーン: 日本海とせたな町の海岸林を、ドローン視点でゆっくり進みながら見せる。",
+      "language": "",
+      "text": "A high aerial drone view over the coast of Setana on the Sea of Japan in southwestern Hokkaido, in mid-April early spring: a calm grey-blue sea, rocky headlands and a sea stack, a small quiet town of low houses along the shore, forested hills behind with bare and budding trees, no snow anywhere except a few thin patches on the distant ridges, no winter. The camera looks forward and slightly down from about 150 metres above the shoreline. No people visible, no readable signs, no real institution name, no crest, no emblem, no logo. Soft overcast morning light, calm and quiet mood, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "→ **Google Flow動画プロンプト:**",
+      "language": "",
+      "text": "One single continuous aerial drone shot: the camera glides slowly forward along the Sea of Japan coast of Setana in southwestern Hokkaido in early spring, over the small shoreline town toward the forested hills, gentle waves on the rocky headlands. No cuts, no scene change, smooth steady movement. No people visible. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。中央に「日本海側の町」を白字で表示し、「日本海」だけ赤字。"
+  ]
+}

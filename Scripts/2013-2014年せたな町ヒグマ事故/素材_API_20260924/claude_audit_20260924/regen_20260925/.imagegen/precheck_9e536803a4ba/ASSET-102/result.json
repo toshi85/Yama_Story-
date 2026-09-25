@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-102",
+  "verdict": "FAIL",
+  "subject": "クマ・登山者",
+  "evidence": "Two full-body Japanese hikers standing side by side facing the viewer, both faces clearly visible.",
+  "missing": "クマが描かれていない",
+  "reason": "ナレーションに登場する登山者は描かれていますが、クマはプロンプトに登場しません。"
+}

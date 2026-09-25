@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-058",
+  "verdict": "FAIL",
+  "subject": "猟友会のハンター・クマ",
+  "evidence": "Three aging Japanese hunters in their late 60s and 70s getting ready at the gravel entrance of a forest road near Setana",
+  "missing": "クマが描かれていない",
+  "reason": "高齢のハンター3人は描かれているが、ナレーションに登場するクマはプロンプトに登場しない。"
+}

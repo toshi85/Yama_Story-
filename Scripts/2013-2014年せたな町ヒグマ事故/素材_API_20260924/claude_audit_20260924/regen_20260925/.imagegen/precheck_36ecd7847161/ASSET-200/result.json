@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-200",
+  "verdict": "FAIL",
+  "subject": "住民・クマ",
+  "evidence": "A full-body Japanese local resident man in his 70s",
+  "missing": "駆除されたクマ",
+  "reason": "住民は描かれていますが、ナレーションに登場するクマはキャラ・背景のどちらのプロンプトにも描かれていません。"
+}

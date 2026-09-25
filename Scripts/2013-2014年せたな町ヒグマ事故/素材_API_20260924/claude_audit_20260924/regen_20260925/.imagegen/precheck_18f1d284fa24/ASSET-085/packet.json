@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-085",
+  "narration": "同行していた男性に関しては、大きな怪我はなかったと報告されています。",
+  "asset_type": "キャラアニメーション",
+  "scene": "クマが去った林道で、大きな怪我がなく、へなへなと安堵する男性（CHAR-04）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-04 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese man aged 63 with short greying hair, CLEAN-SHAVEN with no beard and no moustache, a grey field jacket, navy trousers and brown boots, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible, a small Japanese nata hatchet hanging loosely in his right hand. His knees half buckled, his left hand on his chest, eyebrows lifted and slanted upward in relief, eyes wide and watery, mouth wide open in a huge exhale, sweat droplets flying off his face, shaken but unhurt, NOT calm, NOT smiling broadly. His clothes are dusty but he has no injury. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "An empty narrow forest trail near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring, just after a bear has run off into the brush: the leaf litter on the trail scuffed and pressed flat in patches, bamboo grass bent at one side of the trail, bare and budding trees, the sea faintly visible through the trees, No snow anywhere, no snow patches, no frost, no ice, no winter. No bear anywhere in the frame, no animal visible. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Stunned, silent overcast afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。男性を中央に置き、ひざが抜けるように小さく沈ませる（動画は作らない）。中央に「男性は無事」を白字で表示し、「無事」だけ赤字。"
+  ]
+}

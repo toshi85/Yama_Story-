@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-128",
+  "verdict": "FAIL",
+  "subject": "ハンター・住民・クマ",
+  "evidence": "Left: 1) (CHAR-05 再利用) a Japanese local hunter in his 60s ... Right: 2) (CHAR-10 再利用) a Japanese local resident man in his 70s",
+  "missing": "クマ",
+  "reason": "ナレーションに登場するハンターと住民は描かれていますが、警告の対象であるクマはプロンプトの絵に登場しません。"
+}

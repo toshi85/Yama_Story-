@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-128",
+  "narration": "ハンターたちは、町の方達に「このクマは非常に危険。付近の住民は夜の外出を控えてほしい」と伝えたとのこと。",
+  "asset_type": "キャラアニメーション",
+  "scene": "夜の集落の玄関先で、ハンター（CHAR-05）が住民（CHAR-10）に夜の外出を控えるよう伝える。話す側と聞く側の両方を描く。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Two full-body Japanese men facing each other at a slight three-quarter angle toward the viewer, both faces clearly visible. Left: 1) (CHAR-05 再利用) a Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, holding a lit flashlight pointed at the ground in one hand and raising his other palm toward the viewer in warning, eyebrows driven down hard, eyes wide and stern, mouth wide open giving a warning, sweat on his temple. Right: 2) (CHAR-10 再利用) a Japanese local resident man in his 70s with short white hair, CLEAN-SHAVEN with no beard and no moustache, a deeply lined face, a beige work jacket, grey trousers and rubber boots, both hands pressed to his cheeks, eyebrows shot up, eyes stretched wide with fear, mouth hanging open, sweat flying from his temples. Both are NOT calm, NOT smiling. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT. The resident is a little shorter. No lettering, no badge, no logo. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A quiet rural settlement street at night near Setana, southwestern Hokkaido, in mid-April early spring: a wooden house on the right with its entrance light on, a single street lamp, a dark forested hill behind, No snow anywhere, no frost, no ice, no winter. Dark but NOT pure black — the house, road and hill stay clearly readable. No legible text, no nameplate, no sign. Framed from adult eye height about six metres back, the middle of the frame left as clear open space. Uneasy, quiet night mood, cool blue night light with a warm porch glow. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-128_still.png、キャラは新規の ASSET-128_char.png。2人を玄関の手前に置き、ハンターの手のひらを小さく前に出す。中央に「夜の外出は控えて」を白字で表示し、「夜」だけ赤字。"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-102",
+  "narration": "通常であれば、この条件でクマが寄ってくる可能性は低いです。",
+  "asset_type": "キャラアニメーション",
+  "scene": "鈴を鳴らしながら安心して山道を進む2人（CHAR-03・CHAR-04）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Two full-body Japanese hikers standing side by side facing the viewer, both faces clearly visible. Left to right: 1) (CHAR-03 再利用) a Japanese woman in her mid-40s with dark hair tied low at the nape, a maroon field jacket, charcoal trousers and brown hiking boots, a small daypack with a small brass bear bell, she shakes the bell at chest height, eyebrows relaxed and raised, eyes shining, mouth wide open in a relieved beaming smile; 2) (CHAR-04 再利用) a Japanese man in his early 60s with short greying hair, CLEAN-SHAVEN with no beard and no moustache, a sturdy build, a grey field jacket, navy trousers and brown boots, a small daypack with a small brass bear bell, giving a thumbs-up, eyebrows raised, eyes closed in a broad confident grin, mouth open laughing. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT. The woman is a little shorter than the man. No lettering, no logo. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は ASSET-101_bg.png を1.0→1.1倍に寄せて使う、キャラは新規の ASSET-102_char.png。2人を中央で止め、鈴を振る腕を小さく動かす（動画は作らない）。中央に「本来は安全なはず」を白字で表示し、「安全」だけ赤字。"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-056",
+  "verdict": "PASS",
+  "subject": "足跡・フン・農作物の被害",
+  "evidence": "on the left a Hokkaido brown bear pawprint pressed into damp dark soil with small green shoots, in the middle a pile of bear droppings on dry brown grass, on the right a field of young crop shoots trampled and bitten off.",
+  "missing": "",
+  "reason": "ナレーションで挙げた3種類の痕跡と被害が、背景プロンプトにそれぞれ描かれている。"
+}

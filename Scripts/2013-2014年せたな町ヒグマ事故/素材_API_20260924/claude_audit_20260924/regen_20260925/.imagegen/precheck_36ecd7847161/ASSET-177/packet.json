@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-177",
+  "narration": "北海道によるクマの問題行動の分類によると、このクマは最も有害性が高い「段階3」と認定されました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "対策本部の机の前で、道の職員（039と同じ灰色のスーツの50代男性）が分類資料の「段階3」を指し、深刻な顔で告げる。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male prefectural government official in his 50s in a grey suit, white shirt and dark tie, short greying hair, CLEAN-SHAVEN with no beard and no moustache, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He holds a plain document in his left hand and points hard at it with his right index finger, eyebrows pulled together and slanted upward, eyes stretched wide, mouth open as he speaks urgently, a bead of sweat running down his temple, alarmed and grave, NOT calm, NOT smiling, NOT grinning. No lettering on the document, no badge, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A municipal bear-response headquarters desk in Setana, southwestern Hokkaido, in late April spring: stacks of plain case files, a folded map, and pinned on the board behind the desk a large printed telephoto photograph of an adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms, ON ALL FOURS, head dropped low, jaws open in a savage snarl with long fangs bared, ears pinned flat, the fur along its neck bristled up into a raised ridge. No readable characters anywhere, no real institution name, no crest, no emblem, no logo. No snow anywhere, no frost, no ice, no winter. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Grave, urgent mood, cool office light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-177_bg.png、キャラは新規の ASSET-177_char.png（前の笑顔の版は使わない）。職員を左から中央へスライドさせ、資料を指したところで止める（動画は作らない）。中央に「段階3」を大きく表示し、「3」だけ赤字。後半「早急に対処すべき〜」は Regen のとおり ASSET-126 の再利用。"
+  ]
+}

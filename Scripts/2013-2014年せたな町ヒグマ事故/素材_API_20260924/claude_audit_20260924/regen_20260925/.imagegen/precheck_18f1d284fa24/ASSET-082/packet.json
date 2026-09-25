@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-082",
+  "narration": "諦めたのかそのまま山の中へ逃げていきました。",
+  "asset_type": "Lovart動画",
+  "scene": "背中を向けて四つ足で森の奥へ走り去るヒグマ（顔はこちらを向かない）。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "An adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms running away ON ALL FOURS into dense bamboo grass and bare woods on a hillside near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring, NOT standing upright, NOT on two legs. Only its back, rump and hind legs face the camera, its face is hidden, its head already pushing into the brush. Captured as a frozen mid-stride moment, dust and dead leaves kicked up behind its hind paws. Bare and budding trees, brown leaf litter, No snow anywhere, no snow patches, no frost, no ice, no winter. The bear sits in the upper middle of the frame, the lower half is the empty trail. Framed from adult eye height about ten metres behind it. Tense, then emptying, overcast early-afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. No blood, no wounds, no gore. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous shot from a fixed camera on an early-spring Hokkaido forest trail: an adult brown bear on all fours, its back and rump toward the camera, bounds away uphill into dense bamboo grass and bare woods and disappears; the bamboo sways and settles, and the trail is left empty. The bear never turns its face toward the camera and never stands up. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。左上に「山の中へ逃走」を白字で置き、「逃走」だけ赤字。"
+  ]
+}

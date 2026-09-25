@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-174",
+  "verdict": "FAIL",
+  "subject": "捜索隊の人数",
+  "evidence": "Exactly two full-body Japanese hunters walking side by side toward the viewer at a slight three-quarter angle, both faces clearly visible.",
+  "missing": "2人を超える捜索隊員（最大約10人）",
+  "reason": "プロンプトに描かれる捜索隊員は2人だけで、ナレーションにある約10人の日はテロップでしか示されていない。"
+}

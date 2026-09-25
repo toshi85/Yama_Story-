@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-199",
+  "narration": "町長も「正直、今年も事故が起きるのではと不安だった。ほっとした」と語っています。",
+  "asset_type": "キャラアニメーション",
+  "scene": "町長室の窓辺の机の前で、汗を拭いて大きく安堵する町長（CHAR-08）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese town mayor in his 60s with short greying hair and black-framed glasses, CLEAN-SHAVEN with no beard and no moustache, a navy work-jacket blazer over a white shirt and navy tie, navy trousers and black shoes, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He wipes his forehead with a white handkerchief in his right hand and presses his left hand to his chest, eyebrows slanted upward, eyes squeezed shut with tears of relief at the corners, mouth open in a long relieved sigh, beads of sweat on his forehead, deeply relieved, NOT calm, NOT grinning. No lettering, no badge, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A wooden desk by a window in a small town office in Setana, southwestern Hokkaido, in late April spring: a cup of green tea on a saucer, a pair of reading glasses and a closed dark folder on the desk, a potted plant; through the window, a harbour, the Sea of Japan and a distant mountain, No snow on the ground, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the left half of the frame left as clear open space. Calm, relieved mood, warm soft daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-199_still.png、キャラは新規の ASSET-199_char.png を左に置き、息をつくように小さく上下させる（動画は作らない）。左上に「せたな町長」を白字で置き、中央に「不安だった、、ほっとした」。「ほっとした」だけ赤字。"
+  ]
+}

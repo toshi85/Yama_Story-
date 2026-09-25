@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-060",
+  "narration": "こうした取り組みを必死ですすめていましたが、人を襲ったクマは結局、誰も捕まえることはできませんでした。",
+  "asset_type": "キャラアニメーション",
+  "scene": "扉が開いたままの空の箱わなの前で、捕まえられず悔しがるハンター（CHAR-05）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. Both fists clenched at his sides, eyebrows driven down hard and pulled together, eyes squeezed half shut with tears of frustration welling at the corners, teeth gritted and bared, sweat flying off his temples, bitterly frustrated, NOT calm, NOT smiling. No lettering, no badge, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "An empty steel box trap on the floor of a forest near Setana, southwestern Hokkaido, in mid-April early spring: its door is propped wide open, a little bait lies inside, and nothing is caught. Bare and budding deciduous trees, brown leaf litter, No snow anywhere, no frost, no ice, no winter. The trap sits in the right half of the frame, the left half left as clear open space. Framed from adult eye height about four metres back. Empty, frustrating stillness, soft overcast late-afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。ハンターを左に置き、握った拳を小さく震わせる。中央に「誰も捕まえられず」を白字で表示し、「捕まえられず」だけ赤字。"
+  ]
+}

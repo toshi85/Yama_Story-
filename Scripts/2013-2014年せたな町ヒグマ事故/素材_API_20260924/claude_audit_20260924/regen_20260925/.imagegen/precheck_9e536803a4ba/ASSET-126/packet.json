@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-126",
+  "narration": "昨年の事件といい、このクマはかなり厄介な相手だと言えます。",
+  "asset_type": "キャラアニメーション",
+  "scene": "残雪の林の奥へ消えていくヒグマを見送り、悔しさに歯を食いしばるハンター（CHAR-05）。台本どおり残雪を描く。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. Both fists clenched and trembling at his sides, eyebrows driven down hard and pulled together, eyes narrowed and glaring, teeth gritted and bared, veins standing out on his temple, sweat on his brow, bitter and frustrated, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "An adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms walking away ON ALL FOURS between the trunks of a bare deciduous forest near Setana, southwestern Hokkaido, in mid-April early spring, its back and rump toward the camera, its face hidden, half-hidden by tree trunks, lingering patches of old snow on the forest floor, brown leaf litter. Lingering spring snow is intended in this scene. NOT standing upright, NOT on two legs. Its shoulder is higher than a fallen log beside it and it is far larger than the young trees around it. Framed from adult eye height about ten metres back, the left half left as clear open space. Ominous, quiet, soft overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-126_still.png、キャラは新規の ASSET-126_char.png。ハンターを左下に置き、握った拳を小さく震わせる。背景はクマへゆっくり寄る。中央に「厄介な相手」を白字で表示し、「厄介」だけ赤字。"
+  ]
+}

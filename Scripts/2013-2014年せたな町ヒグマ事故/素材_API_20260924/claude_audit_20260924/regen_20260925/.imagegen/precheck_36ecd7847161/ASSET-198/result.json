@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-198",
+  "verdict": "FAIL",
+  "subject": "せたな町・クマの捜索打ち切り",
+  "evidence": "He holds a packed backpack by its top handle in his right hand",
+  "missing": "クマ",
+  "reason": "ナレーションに登場するクマがプロンプトの絵に描かれていないため。"
+}
