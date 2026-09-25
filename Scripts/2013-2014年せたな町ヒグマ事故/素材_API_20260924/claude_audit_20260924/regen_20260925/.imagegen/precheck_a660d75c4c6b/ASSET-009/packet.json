@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-009",
+  "narration": "襲ったのは、あの時のヒグマです。",
+  "asset_type": "Lovart動画",
+  "scene": "2件の記録ファイルを机に並べ、その背後の壁に同じヒグマの大きな影が落ちる。",
+  "fences": [
+    {
+      "label": "シーン: 2件の記録ファイルを机に並べ、その背後の壁に同じヒグマの大きな影が落ちる。",
+      "language": "",
+      "text": "Two plain closed case files lie side by side on a dark wooden desk, the left file a little older and yellowed, the right file newer, both with blank covers and no readable characters, lit by a single low desk lamp in a dim room at night in spring. On the plaster wall directly behind the two files falls the huge side-on shadow of an adult male Hokkaido brown bear, about 2 metres long and roughly 150 to 250 kilograms, with a prominent shoulder hump, ON ALL FOURS, NOT upright, NOT on two legs. The shadow shows the head dropped low and driven forward between bunched shoulders, the jaws wrenched wide open in a savage snarl with the long fangs visible in silhouette, the fur along the neck and spine bristled up into a raised ridge, claws fully extended. Ferocious, enraged, single-minded predatory fury. The shadow spans both files as if the same bear looms over both records, and at the dark edge of the room behind the desk the bear itself is dimly visible, its massive head and shoulders emerging from the gloom above the two files. The room is empty apart from the desk and files. Dim but NOT pure black, the two files and the bear shadow stay clearly readable. Eerie, cold blue-grey tones with warm lamp light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "→ **Google Flow動画プロンプト:**",
+      "language": "",
+      "text": "On the wall behind two closed case files on a dark desk, the huge side-on shadow of an adult male Hokkaido brown bear on all fours slowly grows larger and creeps from the left file to the right file, its head lowering and its jaws opening wider, as if the unseen bear is moving closer. The desk lamp flickers faintly. The two files stay still. The dim head and shoulders of the bear behind the desk shift forward out of the gloom. Dim but NOT pure black, the files and the bear stay clearly readable. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。左のファイルに「2013年」、右のファイルに「2014年」を白字で置き、中央に「同じクマ、、」。「同じクマ」だけ赤字。"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-189",
+  "narration": "捕獲された時期は昨年2014年8月4日。",
+  "asset_type": "Lovart静止画",
+  "scene": "夏のビート畑の脇で、扉が閉じた箱わなの中にヒグマ。",
+  "fences": [
+    {
+      "label": "シーン: 夏のビート畑の脇で、扉が閉じた箱わなの中にヒグマ。",
+      "language": "",
+      "text": "A steel box trap for bears standing at the edge of a sugar beet field bordered by woods in Imakane, southwestern Hokkaido, in early August summer, lush green beet leaves in rows, a hot hazy sky. The trap door is shut, and through the mesh a large dark brown adult male Hokkaido brown bear about 2 metres long is visible inside, crouched low on all fours. No snow anywhere, no frost, no ice, no winter. Framed from adult eye height about six metres back, the trap on the right half, the left third left as clear open space. Tense, heavy stillness, warm summer light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 5秒で1.0→1.1倍に箱わなへ寄る。左上に「2014年8月4日」を白字で置き、「8月4日」だけ赤字。"
+  ]
+}

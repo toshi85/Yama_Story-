@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-219",
+  "narration": "亡くなられたかたのご冥福をお祈りいたします。",
+  "asset_type": "Lovart動画",
+  "scene": "日本海と山を望む夕暮れの高台に、白い花が静かに供えられている。",
+  "fences": [
+    {
+      "label": "シーン: 日本海と山を望む夕暮れの高台に、白い花が静かに供えられている。",
+      "language": "",
+      "text": "A small bunch of white chrysanthemums laid on a weathered wooden rail on a quiet hilltop in Setana, southwestern Hokkaido, at dusk in late spring, facing out over the forested hills toward the Sea of Japan, the last violet-orange light lying along the horizon and the valleys already in shade, No snow anywhere, no frost, no ice, no winter. The rail and flowers are the only objects in the foreground. Dim in the valley but NOT pure black, the flowers and the sea stay clearly readable. Profound respectful stillness, gentle warm and cool tones. Photorealistic, shot on RED camera, 85mm lens, shallow depth of field. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "→ **Google Flow動画プロンプト:**",
+      "language": "",
+      "text": "A quiet mourning scene at dusk on a hilltop in Setana, Hokkaido, in late spring: the petals of a small bunch of white chrysanthemums on a weathered wooden rail tremble faintly in a soft breeze, facing out over forested hills toward the Sea of Japan, while the violet-orange light along the horizon slowly deepens. The camera is almost still with the gentlest push in. The frame holds only the rail, the flowers and the landscape. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 中央に「亡くなられたかたのご冥福をお祈りいたします」を白字で静かにフェードイン。BGMを絞る。"
+  ]
+}

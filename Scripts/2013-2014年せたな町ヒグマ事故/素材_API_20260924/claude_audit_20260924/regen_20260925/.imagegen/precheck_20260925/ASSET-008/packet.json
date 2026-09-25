@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-008",
+  "narration": "一年後、また別の女性が襲われました。",
+  "asset_type": "Lovart動画",
+  "scene": "翌春の山道を歩く別の女性（CHAR-03）の後ろ姿。",
+  "fences": [
+    {
+      "label": "シーン: 翌春の山道を歩く別の女性（CHAR-03）の後ろ姿。",
+      "language": "",
+      "text": "(CHAR-03 再利用) A Japanese woman in her mid 40s walks away from the camera along a narrow mountain trail in a forest near Setana, southwestern Hokkaido, in early April early spring: bare deciduous trees, brown leaf litter, fresh green shoots of wild garlic on the slope, No snow anywhere, no frost, no ice, no winter. She wears a MAROON field jacket (deep red-brown, NOT green, NOT grey, NOT olive), charcoal trousers, dark hair tied low at the nape in a short low bun, NOT a ponytail, and carries a small plain canvas bag over one shoulder. Seen from directly behind, mid-stride with one foot lifted, only her back visible, no face visible. Unseen by her, far behind her on the trail at the edge of the bamboo thicket, an adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms has stepped out ON ALL FOURS, NOT upright, head dropped low, ears pinned flat, the fur along its neck bristled up into a raised ridge, fixed on her back. Framed from adult eye height about five metres behind her, the trail leading into the middle of the frame. Soft overcast daylight, quiet uneasy mood, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "→ **Google Flow動画プロンプト:**",
+      "language": "",
+      "text": "A Japanese woman in her mid 40s in a maroon field jacket, charcoal trousers and dark hair tied in a low bun keeps walking steadily away along an early-spring Hokkaido forest trail, clearly taking step after step, her small canvas bag swinging slightly. The camera follows from behind at the same distance. She never turns around and her face is never visible. Far behind her, the adult brown bear on all fours at the bamboo edge takes two slow deliberate steps after her, head low. She does not notice. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。左上に「1年後、、」を白字で置き、「1年後」だけ赤字。"
+  ]
+}

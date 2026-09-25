@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-209",
+  "verdict": "FAIL",
+  "subject": "せたな町・クマ",
+  "evidence": "the man holding a small paper leaflet printed with a simple dark brown bear silhouette",
+  "missing": "クマが描かれていない。",
+  "reason": "クマは資料上のシルエットで示されているだけで、プロンプトの絵に登場しない。"
+}

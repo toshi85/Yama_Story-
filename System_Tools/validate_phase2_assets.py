@@ -35,6 +35,28 @@ def prompt_lint(text, errors, warns, info):
         mo = re.search(r'ASSET-\d+', seg)
         return mo.group(0) if mo else '?'
 
+    # 45) 文字カードは日付・時刻の章切り替えだけ／追悼は必ず動画（定石AB・2026-09-25 せたな町 195/205/209/219 本人指摘）
+    DATE_ONLY = re.compile(r'^(?:そして|同じ|[0-9０-９]|年|か?月|日|時|分|半|午前|午後|正午|ごろ|頃|過ぎ|後|前|翌朝|翌日|翌|深夜|未明|夜明け|夜|朝|昼|夕方|の|[、。\s])+$')
+    bad_text, bad_memorial, consecutive = [], [], []
+    prev_text = None
+    for nar, seg in segs:
+        kind = re.search(r'【制作メモ】ASSET-\d+\s*\[([^\]]*)\]', seg)
+        kind = kind.group(1) if kind else ''
+        core = re.sub(r'[（(][^）)]*[）)]', '', nar).strip()
+        if 'テキストのみ' in kind and not DATE_ONLY.match(core):
+            bad_text.append(f'{asset_no(seg)}「{nar[:20]}」')
+        if 'テキストのみ' in kind and prev_text:
+            consecutive.append(f'{prev_text}→{asset_no(seg)}')
+        prev_text = asset_no(seg) if 'テキストのみ' in kind else None
+        if '冥福' in nar and '動画' not in kind:
+            bad_memorial.append(asset_no(seg))
+    if bad_text:
+        errors.append(f'日付・時刻でないナレーションが[テキストのみ] {len(bad_text)}件（文字カードは章切り替えの日付・時刻だけ。説明は画を作り、地名・位置関係はGoogle Earth）: ' + ', '.join(bad_text))
+    if consecutive:
+        errors.append(f'文字カードが連続 {len(consecutive)}か所（黒画面が続く。日付カードの直後は画を作る）: ' + ', '.join(consecutive))
+    if bad_memorial:
+        errors.append('追悼（ご冥福）のカットが動画でない（必ず[Lovart動画]の静かな風景＋テロップ）: ' + ', '.join(bad_memorial))
+
     # 14) 冬化トリガー: 地名/北海道 + cold/grey系の光 + 季節宣言なし（朱鞠内湖=氷上ワカサギ連想）
     #     ※意図的な冬シーン（winter/snow等を明示宣言）は正しいので対象外。検出するのは「季節未指定の事故的冬化」のみ
     winter = []
@@ -564,7 +586,9 @@ def prompt_lint(text, errors, warns, info):
             continue
         scene_lines = [line for line in seg.splitlines() if line.startswith('シーン:')]
         scene_has_multi = any(PROMPT_MULTI.search(line) for line in scene_lines)
-        multi_blocks = [b for b in char_blocks if PROMPT_MULTI.search(b)]
+        # 定石Cの頭身の定型句（roughly four to five heads tall）は人数ではない（2026-09-25 せたな町177で誤検知）
+        multi_blocks = [b for b in char_blocks
+                        if PROMPT_MULTI.search(re.sub(r'\b(?:roughly |about )?(?:four|five|six|seven)(?: to (?:four|five|six|seven))? heads tall\b', '', b, flags=re.I))]
         # 単一の再利用キャラ説明内の "both arms" 等は、複数の登場物指定ではない。
         only_single_reused_char = multi_blocks and all(
             len(re.findall(r'\(CHAR-\d+\s+再利用\)', b)) == 1 for b in multi_blocks)

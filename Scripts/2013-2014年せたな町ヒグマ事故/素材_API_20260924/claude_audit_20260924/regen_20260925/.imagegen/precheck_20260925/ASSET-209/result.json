@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-209",
+  "verdict": "PASS",
+  "subject": "クマの出没情報・複数人での入山",
+  "evidence": "「背景は ASSET-218_bg.png を再利用」「Two full-body Japanese wild-vegetable gatherers standing side by side」「both leaning slightly forward and reading something at eye level together」",
+  "missing": "",
+  "reason": "背景再使用の参照先が案内板を描いていると仮定でき、2人が情報を確認する姿もプロンプトにある。"
+}

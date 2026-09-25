@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-008",
+  "verdict": "FAIL",
+  "subject": "女性・ヒグマ・襲撃",
+  "evidence": "the shot cuts to black just before contact",
+  "missing": "ヒグマが女性を襲う瞬間",
+  "reason": "女性とヒグマは登場しますが、接触前に暗転するため、ナレーションが述べる襲撃は描かれていません。"
+}

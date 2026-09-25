@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-027",
+  "narration": "現場付近には、犯行に及んだと思われるクマの足跡が残っており、明らかにヒグマによる犯行でした。",
+  "asset_type": "Lovart動画",
+  "scene": "湿った沢沿いの泥に残る大きなヒグマの足跡2つと、横に置いた折り尺。",
+  "fences": [
+    {
+      "label": "シーン: 湿った沢沿いの泥に残る大きなヒグマの足跡2つと、横に置いた折り尺。",
+      "language": "",
+      "text": "Two large fresh pawprints of an adult male Hokkaido brown bear, an animal about 2 metres long and roughly 150 to 250 kilograms, pressed deep into damp dark mud beside a small mountain stream near Setana, southwestern Hokkaido, in mid-April early spring: brown leaf litter and a few first green shoots around the mud, No snow anywhere, no frost, no ice, no winter. Each print shows a broad pad about 14 centimetres wide and five long hooked claw marks gouged well in front of the toes, the mud torn up and pushed back at the rear of each print by the heavy muscular stride, clearly the track of a powerful, dangerous animal. A plain yellow folding ruler lies on the mud right beside the nearer print for scale, with no readable markings. Framed from adult eye height about one metre away, the camera angled downward at the two prints. Far in the background between the trees, small and slightly out of focus, the same bear walks away from the camera ON ALL FOURS, only its dark rump and hind legs visible, its face hidden. Soft overcast daylight, ominous quiet, cool muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "→ **Google Flow動画プロンプト:**",
+      "language": "",
+      "text": "The camera slowly pushes down toward the nearer of two large brown bear pawprints in damp streamside mud in an early-spring Hokkaido forest until the print and the yellow folding ruler fill the frame. A thin trickle of stream water seeps into the edge of the print and the mud glistens. In the far background the dark rump of the bear disappears between the trees. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。左上に「残された足跡」を白字で置き、「足跡」だけ赤字。"
+  ]
+}

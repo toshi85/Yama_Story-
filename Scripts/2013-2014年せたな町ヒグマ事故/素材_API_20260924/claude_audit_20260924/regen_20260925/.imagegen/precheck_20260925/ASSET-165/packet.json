@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-165",
+  "narration": "そこで町は、町の人や旅行者にも、山へ入るのを控えるよう呼びかけました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "山道入口の掲示板の前で、町の職員が拡声器で入山を控えるよう呼びかける。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Three full-body Japanese figures standing side by side, left to right: 1) a male town official in his 40s in a navy work jacket, grey trousers and a navy cap, facing right toward the others, holding a white hand-held megaphone to his mouth and raising the other palm in a stop gesture, earnest and urgent, NOT angry; 2) a local woman in her 70s in a lavender cardigan and grey slacks, facing left toward him, nodding with a worried face; 3) a young male traveller in his 20s in a red windbreaker with a backpack, facing left toward him, listening with a surprised face. The official is a head taller than the woman, a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Full body. White background. 1:1 aspect ratio. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は ASSET-149_bg.png を再利用、キャラは新規。職員を右から中央へスライドさせて止める。拡声器の声のSE。左上に「入山を控えて」を白字で置き、「控えて」だけ赤字。"
+  ]
+}

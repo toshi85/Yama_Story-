@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-029",
+  "narration": "鈴などの鳴り物や、身を守る武器を持っていなかったとされています。",
+  "asset_type": "キャラアニメーション",
+  "scene": "山菜カゴだけを持って山に入る女性（CHAR-01）。鈴も武器も持っていない。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-01 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese woman aged 52 in a muted olive field jacket, dark trousers and a plain brown outdoor hat, holding only a small woven gathering basket in one hand, the other hand empty and open, no bell and no tool anywhere on her body or basket, walking forward with a calm unsuspecting face, a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Full body. White background. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A narrow wild-vegetable gathering path on a forested hillside near Setana, southwestern Hokkaido, in mid-April early spring: bare deciduous trees, brown leaf litter, first green shoots of edible plants, No snow anywhere, no frost, no ice, no winter. Framed from adult eye height roughly 1.5 metres above the ground and about four metres back, the ground occupying the lower third of the frame, the middle of the frame left as clear open space. Quiet, unguarded calm, soft overcast light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 女性を左から右へゆっくり歩くように移動させ、中央で止める。右上に「鈴×」「武器×」を1つずつ表示し、「×」だけ赤字。"
+  ]
+}
