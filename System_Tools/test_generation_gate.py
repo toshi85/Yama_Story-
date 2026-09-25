@@ -73,13 +73,27 @@ class GateTest(unittest.TestCase):
             gg.require("image", self.items, tool="fal_queue.py", paid=True)
         self.assertIn("approve", str(cm.exception))
 
-    def test_paid_samples_within_limit_pass_then_block(self):
-        self.assertEqual(3, len(gg.require("image", self.items[:3], tool="t", paid=True)))
+    def test_paid_one_sample_per_kind_then_block(self):
+        self.assertEqual(1, len(gg.require("image", self.items[:1], tool="t", paid=True)))
         with self.assertRaises(gg.GateError):
-            gg.require("image", self.items[3:4], tool="t", paid=True)
+            gg.require("image", self.items[1:2], tool="t", paid=True)   # 同じ種類（キャラ）の2件目
 
-    def test_unpaid_bulk_is_trimmed_to_samples(self):
-        self.assertEqual(3, len(gg.require("image", self.items, tool="run.py", paid=False)))
+    def test_unpaid_bulk_is_trimmed_to_one_per_kind(self):
+        self.assertEqual(1, len(gg.require("image", self.items, tool="run.py", paid=False)))
+
+    def test_samples_cover_every_kind_even_if_queue_starts_with_backgrounds(self):
+        # 2026-09-25: 先頭3件（背景だけ）を見本にすると、キャラを見ずに承認できた
+        queue = [{"id": q["id"], "prompt": q["prompt"]} for q in ep.parse(self.md)]
+        queue.sort(key=lambda q: q["id"].endswith("_char"))          # 背景を先頭に並べる
+        got = {gg.slot_of(i["id"], "image") for i in gg.require("image", queue, tool="run.py", paid=False)}
+        self.assertEqual({"bg", "char"}, got)
+
+    def test_approval_needs_samples_of_every_kind(self):
+        bg_only = [{"id": q["id"], "prompt": q["prompt"]} for q in ep.parse(self.md) if q["id"].endswith("_bg")][:1]
+        gg.require("image", bg_only, tool="run.py", paid=False)
+        used = json.loads(gg._usage_file(self.md, "image").read_text(encoding="utf-8"))
+        missing = gg.slots_in_md(self.md, "image") - {gg.slot_of(u, "image") for u in used}
+        self.assertEqual({"char"}, missing)
 
     def test_after_approval_all_pass_and_record_written(self):
         self.approve()

@@ -106,12 +106,26 @@ def export_directory(project):
     return Path.home() / "Desktop" / f"{short_project_name(project)}_差し替え画像_{date}"
 
 
+def require_ai_review(work, queue):
+    """本人に渡す前のAI検品（generation_gate.check_reviewed）。受講生の環境では対象外。"""
+    sys.path.insert(0, str(HERE.parent))
+    import generation_gate
+    if not generation_gate.owner_machine():
+        return
+    problems = generation_gate.check_reviewed([work / "images" / (item["id"] + ".png") for item in queue
+                                               if (work / "images" / (item["id"] + ".png")).exists()])
+    if problems:
+        raise ValueError("AI検品（ai_image_review.py）を通っていない画像があるため止めました:\n  "
+                         + "\n  ".join(problems[:10]))
+
+
 def export(project, work, queue):
     report_path = work / "verify.json"
     if not report_path.exists() or not json.loads(report_path.read_text())["all_pass"]:
         raise ValueError("先に --verify を全件合格させ、sheet.jpg を目視確認してください")
     if not verify(work, queue)["all_pass"]:
         raise ValueError("現在の画像が検査不合格のため書き出しません")
+    require_ai_review(work, queue)
     root = export_directory(project)
     if root.is_symlink():
         raise ValueError(f"リンク先には書き出しません: {root}")
@@ -284,6 +298,7 @@ def apply(project, work, queue, drive_dir=None):
     # 古い verify.json だけを根拠にしない。コピー直前の画像を再検査する。
     if not verify(work, queue)["all_pass"]:
         raise ValueError("現在の画像が検査不合格のため適用しません")
+    require_ai_review(work, queue)
     root = project / "画像"
     date = datetime.now().strftime("%Y%m%d")
     plans, destinations = [], set()

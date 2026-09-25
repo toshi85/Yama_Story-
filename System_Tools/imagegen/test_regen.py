@@ -27,6 +27,25 @@ class RegenTest(unittest.TestCase):
     def setUp(self):
         LOG.mkdir(parents=True, exist_ok=True)
         self.root = Path(tempfile.mkdtemp(prefix="fixture-", dir=LOG))
+        # 書き出し・適用の命名とコピーを見るテスト。AI検品の関所は test_export_blocks_unreviewed_images で別に見る
+        self._review = patch.object(regen, "require_ai_review", lambda work, queue: None)
+        self._review.start()
+        self.addCleanup(self._review.stop)
+
+    def test_export_blocks_unreviewed_images(self):
+        # 2026-09-25: AI検品（ai_image_review.py）を飛ばしても本人向けフォルダへ書き出せた
+        self._review.stop()
+        import sys
+        sys.path.insert(0, str(Path(regen.__file__).resolve().parents[1]))
+        import generation_gate
+        if not generation_gate.owner_machine():
+            self.skipTest("本人のPCでだけ関所がかかる")
+        work = self.root / "work"
+        self.transparent(work / "images" / "ASSET-001_char.png")
+        with patch.object(generation_gate, "REVIEWS", self.root / "reviews"):
+            with self.assertRaisesRegex(ValueError, "AI検品"):
+                regen.require_ai_review(work, [{"id": "ASSET-001_char"}])
+        self._review.start()
 
     def transparent(self, path):
         path.parent.mkdir(parents=True, exist_ok=True)

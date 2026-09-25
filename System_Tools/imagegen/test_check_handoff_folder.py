@@ -30,13 +30,35 @@ def checklist(folder: Path, *names: str) -> None:
     (folder / "チェックリスト.md").write_text("\n".join(rows), encoding="utf-8")
 
 
-def run(folder: Path, *args: str) -> subprocess.CompletedProcess[str]:
+def run(folder: Path, *args: str, owner: bool = False) -> subprocess.CompletedProcess[str]:
+    """T1〜T3 の検査はAI検品の関所（T4）と切り離して見る。owner=True で本人のPCとして T4 も走らせる。"""
+    shim = (
+        "import runpy, sys; sys.path.insert(0, sys.argv[1]); import generation_gate as g; "
+        + ("" if owner else "g.owner_machine = lambda: False; ")
+        + "script = sys.argv[2]; sys.argv = [script] + sys.argv[3:]; runpy.run_path(script, run_name='__main__')"
+    )
     return subprocess.run(
-        [sys.executable, str(SCRIPT), str(folder), *args],
+        [sys.executable, "-X", "utf8", "-c", shim, str(SCRIPT.parents[1]), str(SCRIPT), str(folder), *args],
         capture_output=True,
         text=True,
+        encoding="utf-8",   # Windows でも日本語の出力を読めるように
         check=False,
     )
+
+
+def test_unreviewed_image_is_t4_on_owner_machine(tmp_path: Path) -> None:
+    # 2026-09-25: AI検品（ai_image_review.py）を飛ばしても本人に渡せた
+    sys.path.insert(0, str(SCRIPT.parents[1]))
+    import generation_gate
+    if not generation_gate.owner_machine():
+        return
+    folder = tmp_path / "handoff"
+    folder.mkdir()
+    make_rgba(folder / "ASSET-001_char_t4probe.png")
+    checklist(folder, "ASSET-001_char_t4probe.png")
+    result = run(folder, owner=True)
+    assert result.returncode == 1
+    assert "ERROR T4 ASSET-001_char_t4probe.png" in result.stdout
 
 
 def test_transparent_character_is_ok(tmp_path: Path) -> None:
@@ -151,6 +173,17 @@ def test_fix_transparency_changes_t1_result_and_creates_external_backup(
     assert spec.loader is not None
     spec.loader.exec_module(module)
     module.REPO = tmp_path
+    sys.path.insert(0, str(SCRIPT.parents[1]))
+    import generation_gate
+    real_owner = generation_gate.owner_machine
+    generation_gate.owner_machine = lambda: False   # T1 の検査だけを見る（T4 は別テスト）
+    try:
+        _check_fix_transparency(module, folder, name, tmp_path, capsys)
+    finally:
+        generation_gate.owner_machine = real_owner
+
+
+def _check_fix_transparency(module, folder, name, tmp_path, capsys) -> None:
     assert module.inspect(folder, None) == 1
     assert "T1 ERROR 1件 / T2 ERROR 0件" in capsys.readouterr().out
     assert module.inspect(folder, None, True) == 0

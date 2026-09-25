@@ -209,13 +209,25 @@ def inspect(folder: Path, sheet: Path | None, fix_transparency: bool = False) ->
         else:
             write_sheet(targets, sheet)
 
-    for message in t1_errors + t2_errors:
+    # T4: 本人に渡す画像は、今の中身でAI検品（ai_image_review.py の Sol→Astra）を通り「直す」が残っていないこと。
+    # 2026-09-25: 検品は手順書にあるだけで、飛ばしても渡せた。透過修正で中身が変わるので、透過のあとに見る。
+    # 受講生の環境（親リポジトリなし）では対象外。
+    t4_errors: list[str] = []
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    import generation_gate
+    if generation_gate.owner_machine():
+        t4_errors = [f"ERROR T4 {p}" for p in generation_gate.check_reviewed(
+            [path for path in files if path.suffix.lower() == ".png"])]
+
+    for message in t1_errors + t2_errors + t4_errors:
         print(message)
     if fix_transparency:
         location = str(backup_dir) if backup_dir is not None else "なし"
         print(f"透過修正 {fixed}枚 / 控え {location}")
-    print(f"T1 ERROR {len(t1_errors)}件 / T2 ERROR {len(t2_errors)}件")
-    return 1 if t1_errors or t2_errors or sheet_error else 0
+    if t4_errors:
+        print("  → 透過を直したあとの画像で ai_image_review.py を回し、「直す」を作り直してから、もう一度このコマンドを通す")
+    print(f"T1 ERROR {len(t1_errors)}件 / T2 ERROR {len(t2_errors)}件 / T4 ERROR {len(t4_errors)}件")
+    return 1 if t1_errors or t2_errors or t4_errors or sheet_error else 0
 
 
 def main() -> int:

@@ -135,6 +135,41 @@ def parse_cuts(md_path: Path) -> list[Cut]:
     return cuts
 
 
+def _sha256(path: Path) -> str:
+    import hashlib
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def cut_digest(cut: "Cut") -> str:
+    """そのカットのナレーション・シーン・プロンプト等の指紋。変われば検品はやり直し。"""
+    import dataclasses
+    import hashlib
+    return hashlib.sha256(json.dumps(dataclasses.asdict(cut), ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
+
+
+def _record_review(md_path: Path, cut: "Cut", image: Path, digest: str, *, sol_flag, astra_verdict=None) -> None:
+    """本人に渡す前の関所（generation_gate.check_reviewed）が読む検品記録。画像の中身ごとに1件。"""
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    import generation_gate
+    generation_gate.record_image_review(digest, {
+        "asset": cut.asset, "image": str(image), "md": str(md_path), "cut_digest": cut_digest(cut),
+        "sol_flag": sol_flag, "astra_verdict": astra_verdict,
+    })
+
+
+def _already_reviewed(cuts, image_map, need_astra=False) -> bool:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    import generation_gate
+    for cut in cuts:
+        for path in image_map[cut.asset]:
+            rec = generation_gate.image_review(_sha256(path), cut.asset)
+            if not rec or rec.get("cut_digest") != cut_digest(cut):
+                return False
+            if need_astra and rec.get("astra_verdict") is None:
+                return False
+    return True
+
+
 def find_images(images_dir: Path, asset: int) -> list[Path]:
     """regen形式と渡し形式をともに含む ASSET-NNN_*.png を返す。"""
     prefix = f"ASSET-{asset:03d}_"
@@ -494,7 +529,8 @@ def run_review(args: argparse.Namespace, runner: Runner | None = None) -> dict[s
         (out_dir / "sol").mkdir(parents=True, exist_ok=True)
         for batch_no, group in enumerate(batches(available, args.batch), start=1):
             destination = out_dir / "sol" / f"{batch_no:03d}.json"
-            if destination.exists():
+            # 前回の結果は、画像とカットが検品時のままのときだけ使い回す（差し替え後は見直す）
+            if destination.exists() and _already_reviewed(group, image_map):
                 continue
             entries = [
                 (cut, image_map[cut.asset], neighbors[cut.asset][0], neighbors[cut.asset][1])
@@ -507,6 +543,8 @@ def run_review(args: argparse.Namespace, runner: Runner | None = None) -> dict[s
                 _dry_files(out_dir, f"sol_{batch_no:03d}", command, prompt)
                 continue
             calls["sol"] += 1
+            # 見せる前の画像の中身を控える（検品後に差し替えた画像を「検品済み」と数えないため）
+            seen = {cut.asset: [(path, _sha256(path)) for path in image_map[cut.asset]] for cut in group}
             try:
                 result = runner(command, prompt)
                 if result.returncode:
@@ -516,6 +554,10 @@ def run_review(args: argparse.Namespace, runner: Runner | None = None) -> dict[s
                     continue
                 value = _normalize_sol(_parse_json_output(result.stdout))
                 _write_json(destination, value)
+                flags = {int(item["asset"]): bool(item.get("flag")) for item in value.get("cuts", [])}
+                for cut in group:
+                    for path, digest in seen[cut.asset]:
+                        _record_review(md_path, cut, path, digest, sol_flag=flags.get(cut.asset))
             except Exception as exc:  # 1バッチの失敗で全体を止めない
                 failures.append(_append_error(
                     out_dir, f"sol batch {batch_no:03d}", [cut.asset for cut in group], exc
@@ -534,7 +576,7 @@ def run_review(args: argparse.Namespace, runner: Runner | None = None) -> dict[s
         (out_dir / "astra").mkdir(parents=True, exist_ok=True)
         for asset in sorted(flagged):
             destination = out_dir / "astra" / f"{asset:03d}.json"
-            if destination.exists():
+            if destination.exists() and _already_reviewed([by_number[asset]], image_map, need_astra=True):
                 continue
             cut = by_number[asset]
             previous, following = neighbors[asset]
@@ -548,6 +590,7 @@ def run_review(args: argparse.Namespace, runner: Runner | None = None) -> dict[s
                 _dry_files(out_dir, f"astra_{asset:03d}", command, prompt)
                 continue
             calls["astra"] += 1
+            seen = [(path, _sha256(path)) for path in image_map[asset]]
             try:
                 result = runner(command, prompt)
                 if result.returncode:
@@ -555,6 +598,8 @@ def run_review(args: argparse.Namespace, runner: Runner | None = None) -> dict[s
                     continue
                 value = _normalize_astra(_parse_json_output(result.stdout))
                 _write_json(destination, value)
+                for path, digest in seen:
+                    _record_review(md_path, cut, path, digest, sol_flag=True, astra_verdict=value["verdict"])
             except Exception as exc:  # 1カットの失敗で全体を止めない
                 failures.append(_append_error(out_dir, f"astra asset {asset:03d}", [asset], exc))
 

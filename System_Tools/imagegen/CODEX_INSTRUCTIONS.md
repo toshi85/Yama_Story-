@@ -25,8 +25,9 @@ System_Tools/imagegen/install_for_student.py を、画像を作る作品フォ�
 
 1. `python System_Tools/check_prompts_all.py <プロンプト.md>` を失敗0・警告0で通す（合格票が出る）
 2. キューはその .md から作り、**一字一句変えない**（1文でも足す・削ると全文一致せず止まる）
-3. 本人の承認前は **種類ごとに3件まで**。見本3件を作ったら本人に見せ、本人が自分のターミナルで
-   `python System_Tools/generation_gate.py approve <プロンプト.md> --kind image` を打つのを待つ（AI は打てない）
+3. 本人の承認前は **素材の種類（キャラ基準・キャラ・背景・静止画・追加素材／動画）ごとに1件の見本だけ**。全種類の見本を作ったら本人に見せ、本人が自分のターミナルで
+   `python System_Tools/generation_gate.py approve <プロンプト.md> --kind image` を打つのを待つ（AI は打てない。見本がそろうまで承認もできない）
 4. 発注の中身は `<作品>/発注記録/` に自動で残る。作業の締めに git へ入れる
+5. 本人に渡す前に `ai_image_review.py`（Sol→Astra）を今の画像で回し、「直す」を作り直してから `check_handoff_folder.py` を通す（未検品・「直す」残りは T4 ERROR で止まる）
 - Codex 内蔵の画像生成は設定で切ってある。使うのは `codex exec --enable image_generation` に合格票のキュー（image_queue*.json）を渡すときだけ
 - 合格票・見本承認・見本枠のファイルを書き換える、生成APIを直接叩くコードを書く、はフックで止まる

@@ -86,8 +86,15 @@ class ReviewTests(unittest.TestCase):
         self.images = self.root / "images"
         self.images.mkdir()
         self.out = self.root / "out"
+        # 検品記録は本物の .claude/.state ではなく一時フォルダへ（本人に渡す前の関所が読む記録を汚さない）
+        sys.path.insert(0, str(Path(review.__file__).resolve().parents[1]))
+        import generation_gate
+        self.gate = generation_gate
+        self._reviews = mock.patch.object(generation_gate, "REVIEWS", self.root / "image_reviews")
+        self._reviews.start()
 
     def tearDown(self) -> None:
+        self._reviews.stop()
         self.temp.cleanup()
 
     def test_parse_and_production_notes(self) -> None:
@@ -142,11 +149,57 @@ class ReviewTests(unittest.TestCase):
             "asset": "1", "verdict": "直す", "items": ["A1"], "why": "違う", "prompt_fix": "Replace it."
         }), encoding="utf-8")
 
+        # 前回の実行で、今の画像・今のカットの検品記録が残っている状態
+        cuts = {c.asset: c for c in review.parse_cuts(self.md)}
+        for number, verdict in ((1, "直す"), (2, None)):
+            path = self.images / f"ASSET-{number:03d}_char.png"
+            review._record_review(self.md, cuts[number], path, review._sha256(path),
+                                  sol_flag=number == 1, astra_verdict=verdict)
+
         def must_not_run(command: object, prompt: str) -> object:
             raise AssertionError(f"既存結果を飛ばしていない: {command}")
 
         calls = review.run_review(make_args(self.md, self.images, self.out, assets=[1, 2]), must_not_run)
         self.assertEqual(calls, {"sol": 0, "astra": 0, "failures": 0})
+
+    def test_resume_rereviews_image_replaced_after_review(self) -> None:
+        # 2026-09-25: 結果ファイルが残っていると、差し替えた画像を見ないまま「検品済み」になった
+        for number in (1, 2):
+            (self.images / f"ASSET-{number:03d}_char.png").write_bytes(b"old")
+        (self.out / "sol").mkdir(parents=True)
+        (self.out / "sol" / "001.json").write_text(json.dumps({"cuts": [
+            {"asset": "1", "flag": False, "items": [], "reason": "問題なし"},
+            {"asset": "2", "flag": False, "items": [], "reason": "問題なし"}]}), encoding="utf-8")
+        cuts = {c.asset: c for c in review.parse_cuts(self.md)}
+        for number in (1, 2):
+            path = self.images / f"ASSET-{number:03d}_char.png"
+            review._record_review(self.md, cuts[number], path, review._sha256(path), sol_flag=False)
+        (self.images / "ASSET-002_char.png").write_bytes(b"new")     # 検品のあとで差し替え
+        ran = []
+
+        def runner(command: object, prompt: str) -> object:
+            ran.append(prompt)
+            out = json.dumps({"cuts": [{"asset": "1", "flag": False, "items": [], "reason": "問題なし"},
+                                       {"asset": "2", "flag": False, "items": [], "reason": "問題なし"}]})
+            return mock.Mock(returncode=0, stdout=out, stderr="")
+
+        review.run_review(make_args(self.md, self.images, self.out, assets=[1, 2]), runner)
+        self.assertEqual(1, len(ran))
+        self.assertEqual([], self.gate.check_reviewed([self.images / "ASSET-002_char.png"]))
+
+    def test_handoff_gate_blocks_unreviewed_fix_and_changed_cut(self) -> None:
+        path = self.images / "ASSET-001_char.png"
+        path.write_bytes(b"img")
+        self.assertIn("まだ通っていない", self.gate.check_reviewed([path])[0])
+        cut = {c.asset: c for c in review.parse_cuts(self.md)}[1]
+        review._record_review(self.md, cut, path, review._sha256(path), sol_flag=True, astra_verdict="直す")
+        self.assertIn("直す", self.gate.check_reviewed([path])[0])
+        review._record_review(self.md, cut, path, review._sha256(path), sol_flag=True, astra_verdict=None)
+        self.assertIn("Astra", self.gate.check_reviewed([path])[0])
+        review._record_review(self.md, cut, path, review._sha256(path), sol_flag=True, astra_verdict="本人判断")
+        self.assertEqual([], self.gate.check_reviewed([path]))
+        self.md.write_text(self.md.read_text(encoding="utf-8").replace("ナレーター:", "ナレーター: 変更", 1), encoding="utf-8")
+        self.assertIn("変わった", self.gate.check_reviewed([path])[0])
 
     def test_markdown_has_three_sections(self) -> None:
         (self.out / "sol").mkdir(parents=True)

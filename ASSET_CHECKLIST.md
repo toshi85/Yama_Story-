@@ -405,7 +405,8 @@ Not a ground-level shot, not a close-up, no macro texture, no worm's-eye angle.
 - **頭身は3頭身**（本人裁定 2026-09-25。旧4〜5頭身は廃止。ChatGPT経路の extract_prompts.py と同じ）。定石Cの定型句を毎回書き、`chibi` 等の別の体型語・別の頭身を混ぜない（せたな町は `slightly chibi` と `four-to-five-head` が同居）
 - **背景**は透過キャラPNG＋人物なし（`No people`）の16:9静止画を別々に書く。動画を併記するなら編集者指示に「キャラ画の区間は開始画像を背景にする」
 - 機械検査: validate_phase2_assets.py lint51〜53（check_prompts_all.py の合格票に含まれる）／Codex側 check_character_generation.py
-- **一括生成の前に見本を本人に見せる。** 本人の承認前は、同じ .md から作れるのは画像・動画それぞれ3件まで（System_Tools/generation_gate.py が全生成スクリプトの中で止める）。本人が自分のターミナルで `python System_Tools/generation_gate.py approve <プロンプト.md> --kind image` を打つと全体を作れる。プロンプトは合格票の .md と全文一致したものしか生成に回らない
+- **一括生成の前に見本を本人に見せる。** 本人の承認前は、同じ .md から作れるのは素材の種類（キャラ基準・キャラ・背景・静止画・追加素材／動画）ごとに1件の見本だけ。全種類の見本がそろうまで承認できない（System_Tools/generation_gate.py が全生成スクリプトの中で止める）。本人が自分のターミナルで `python System_Tools/generation_gate.py approve <プロンプト.md> --kind image` を打つと全体を作れる。プロンプトは合格票の .md と全文一致したものしか生成に回らない
+- **本人に渡す前にAI検品を通す。** ai_image_review.py（Sol→Astra）を今の画像で回し、「直す」を作り直してから check_handoff_folder.py を通す。未検品・「直す」残り・検品後のカット変更は T4 ERROR で止まる（regen.py の書き出しも同じ）
 
 ### タイプの決め方（機械が判定できる部分は数える）
 
