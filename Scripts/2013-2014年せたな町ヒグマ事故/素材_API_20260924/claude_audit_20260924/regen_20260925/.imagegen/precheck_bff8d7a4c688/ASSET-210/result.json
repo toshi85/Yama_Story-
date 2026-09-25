@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-210",
+  "verdict": "FAIL",
+  "subject": "釣賀室長・山に入る人・クマ",
+  "evidence": "A full-body Japanese female researcher in her 40s",
+  "missing": "山に入る人とクマが描かれていない",
+  "reason": "釣賀室長は描かれているが、ナレーションに出る山に入る人とクマはプロンプトに登場しない。"
+}

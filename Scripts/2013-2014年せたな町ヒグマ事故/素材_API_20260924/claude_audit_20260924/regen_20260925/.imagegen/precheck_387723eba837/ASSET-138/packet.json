@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-138",
+  "narration": "性別も、捜索中のクマと重なっています。",
+  "asset_type": "キャラアニメーション",
+  "scene": "役場の作業机で、捕獲記録の性別欄を指して「同じオスだ」と驚く町の職員（CHAR-06）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. He holds up a plain blank clipboard in his left hand and taps it with his right index finger, eyebrows shot up high, eyes stretched wide open, mouth wide open in an excited gasp, a bead of sweat flying from his temple, surprised and excited, NOT calm. No lettering on the clipboard, no badge, no logo, no name tag. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A worn wooden worktable in a small rural town office in southwestern Hokkaido, in mid-May late spring: a plain blank record sheet on a clipboard and a pencil, a metal shelf of plain binders, a window with trees outside, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Focused, hopeful mood, soft daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-138_bg.png、キャラは新規の ASSET-138_char.png。職員を中央に置き、記録を指す手を小さく動かす。記録の上に「オス」を編集で表示。中央に「性別も一致」を白字で表示し、「一致」だけ赤字。"
+  ]
+}

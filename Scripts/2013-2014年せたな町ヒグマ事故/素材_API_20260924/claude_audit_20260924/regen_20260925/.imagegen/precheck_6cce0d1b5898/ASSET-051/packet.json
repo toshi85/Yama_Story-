@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-051",
+  "narration": "地区長を通じて、住民への注意も徹底することになりました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "集落の掲示板の横で、地区長が住民へ注意を呼びかけ、住民（CHAR-10）が不安そうに聞く。地区長は既存の ASSET-051_char.png（057と同じ地区長）を使い、聞く住民を新しく作る。雪の残る背景は057の掲示板の背景に差し替える。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local resident man in his 70s with short white hair, deeply lined face, CLEAN-SHAVEN with no beard and no moustache, a beige work jacket, grey trousers and rubber boots, standing at a slight three-quarter angle facing the viewer, his face clearly visible, head turned a little to his right as if listening to someone beside him. Both hands clasped tightly in front of his chest, eyebrows pulled together and slanted steeply upward, eyes wide and anxious, mouth bent into a worried frown, a bead of sweat on his temple, nodding seriously, NOT calm, NOT smiling. No lettering, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "An empty gravel lot beside a wooden community notice board at the edge of a small rural settlement near Setana, southwestern Hokkaido, in mid-April early spring: a small red-roofed community hall, bare and budding deciduous trees, brown leaf litter, forested hills behind, No snow anywhere, no frost, no ice, no winter. The notice board is present but its papers are small and not readable. Framed from adult eye height about six metres back, the left half of the frame left as clear open space. Quiet, uneasy overcast afternoon light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は ASSET-057_bg.png、キャラは既存の ASSET-051_char.png（地区長）と新規の ASSET-051_char2.png（住民）。地区長を左、住民を右に置き、地区長の上げた手を小さく振り、住民を小さくうなずかせる（動画は作らない）。左上に「住民へ注意を徹底」を白字で置き、「注意」だけ赤字。"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-135",
+  "verdict": "FAIL",
+  "subject": "ハンター・クマ・駆除",
+  "evidence": "「He holds a rifle with both hands, its muzzle pointed straight down at the ground」「Inside the trap an adult male Hokkaido brown bear ... crouches ON ALL FOURS」",
+  "missing": "クマを駆除する場面",
+  "reason": "ハンターとクマは描かれていますが、ナレーションの主題である駆除の出来事は描かれていません。"
+}

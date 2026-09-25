@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-191",
+  "verdict": "FAIL",
+  "subject": "クマ・ハンター・捕獲と駆除",
+  "evidence": "An empty steel box trap for bears",
+  "missing": "箱わなに捕獲され、駆除されたクマが描かれていない。",
+  "reason": "ハンターは描かれているが、箱わなは空で、捕獲・駆除されたクマが絵に見えない。"
+}

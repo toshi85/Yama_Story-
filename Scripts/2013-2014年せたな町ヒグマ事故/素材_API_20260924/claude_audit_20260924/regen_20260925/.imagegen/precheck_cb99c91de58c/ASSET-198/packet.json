@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-198",
+  "narration": "せたな町は、正式に実施していたクマの捜索を打ち切りとなり、",
+  "asset_type": "キャラアニメーション",
+  "scene": "クマの捜索が打ち切りになり、林道入口の机で荷物をまとめて大きく息をつくハンター（CHAR-05）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He holds a packed backpack by its top handle in his right hand, his shoulders dropping, eyebrows raised and relaxed in the middle, eyes squeezed shut, mouth open in a big long sigh, beads of sweat on his forehead, drained and relieved, NOT calm, NOT smiling. No lettering, no badge, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "The entrance of a gravel forest track leading into leafless woods near Setana, southwestern Hokkaido, in April early spring: a weathered wooden marker post with no readable characters, low bamboo grass along the edges, bare birch and deciduous trees, brown leaf litter, and at the right side of the track a plain folding table with packed search gear, two backpacks, a coil of rope and a pair of rubber boots beside it, No snow anywhere, no snow patches, no frost, no ice, no winter. Framed from adult eye height about four metres back, the track entrance on the right, the middle and left of the frame left as clear open space. Tense, quiet morning light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は ASSET-174_bg.png を再利用し、右の装備の机へ1.0→1.25倍に寄せて174と画を変える（今の ASSET-198_bg.png は林道に雪があるので使わない）。キャラは新規の ASSET-198_char.png を左に置き、肩を落とすように小さく沈ませる（動画は作らない）。中央に「捜索を打ち切り」を白字で表示し、「打ち切り」だけ赤字。"
+  ]
+}

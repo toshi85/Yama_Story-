@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-105",
+  "narration": "町も、今回の事件で極めて危険性が高いと判断し、すぐさまクマ駆除へと動き出します。",
+  "asset_type": "キャラアニメーション",
+  "scene": "役場の会議机の前で、駆除の方針を固め、資料を握って動き出す町の職員（CHAR-06）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. He grips a plain folder in his left hand and clenches his right fist in front of his chest, eyebrows driven down hard and pulled together, eyes wide and blazing, mouth open shouting an order, beads of sweat flying from his temples, urgent and determined, NOT calm, NOT smiling. No lettering, no badge, no logo, no name tag. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A meeting table in a small rural town office in Setana, southwestern Hokkaido, in mid-April early spring: an open plain case folder, loose unmarked papers and a pencil on the table, empty office chairs, a window with bare and budding trees and brown fields outside, No snow anywhere, no snow patches, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Tense, urgent mood, cool daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。職員を中央に置き、握った拳を小さく上下させる。中央に「すぐに駆除へ」を白字で表示し、「駆除」だけ赤字。"
+  ]
+}

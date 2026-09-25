@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-053",
+  "verdict": "FAIL",
+  "subject": "作業員・ササ・クマ",
+  "evidence": "a wide freshly cut strip where tall bamboo grass has been mown down to short stubble",
+  "missing": "クマが描かれていない",
+  "reason": "刈られたササと作業員は指定されているが、ナレーションに登場するクマは絵に指定されていない。"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-121",
+  "narration": "雪が溶けてしまうと、せっかくの手がかりも消えてしまいます。",
+  "asset_type": "キャラアニメーション",
+  "scene": "溶けかけた雪の足跡を前に、手がかりが消えると焦るハンター（CHAR-05）。台本どおり残雪を描く。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. He clutches his cap brim with both hands, eyebrows shot up and pulled together, eyes stretched wide, mouth wide open in dismay, beads of sweat flying from his temples, anxious and panicked, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A single Hokkaido brown bear pawprint about 14 centimetres wide, left by an adult male brown bear about 2 metres long and roughly 150 to 250 kilograms, slowly melting away in a thin patch of wet, slushy old snow on a forest slope near Setana, southwestern Hokkaido, in mid-April early spring: the print's edges softened and blurred by meltwater, dark wet soil and brown leaf litter showing through around it, droplets on dry grass. Lingering spring snow is intended in this scene. Seen from adult eye height about two metres back, the pawprint in the lower right, the left half left as clear open space. No hands, no feet, no one in the frame. Uneasy, quiet, soft overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。ハンターを左に置き、小刻みに揺らす。背景は足跡へゆっくり寄る。中央に「手がかりが消える」を白字で表示し、「消える」だけ赤字。"
+  ]
+}

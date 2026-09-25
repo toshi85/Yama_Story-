@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-149",
+  "narration": "いつまた犠牲者が出るか分からない状況だったので、山に入らないでほしいとも呼びかけ続けました。",
+  "asset_type": "Lovart動画",
+  "scene": "12月、冬の積雪の山道の入口。無地の掲示板とロープに雪が降り続ける。文言は編集で載せる。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "A mountain trail entrance at the edge of a forest near Setana, southwestern Hokkaido, in mid-December winter: a blank white notice board on two wooden posts, a single rope stretched loosely across the start of the snowy path, snow-covered bare trees behind, deep snow on the ground, snowflakes suspended in the air, a grey sky. Winter is intended in this scene. The notice board's face is blank, no lettering, no readable characters, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about five metres back, the upper third left as clean negative space for large lettering. Frozen, still moment. Grave, uneasy mood, cold grey light, NOT pure black, the board, rope and trees clearly readable, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous shot: light snow keeps falling past the blank notice board in the mountains near Setana, southwestern Hokkaido, and the rope at the snowy trail entrance, the camera pushes in very slowly toward the snowy forest beyond near Setana in winter, NOT pure black, the board and trees clearly readable. No cuts, no scene change, no people. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う（足りなければ再生速度を落として尺いっぱい）。掲示板の上に「入山注意」を編集で載せる。中央上に「山に入らないで」を白字で表示し、「入らないで」だけ赤字。"
+  ]
+}

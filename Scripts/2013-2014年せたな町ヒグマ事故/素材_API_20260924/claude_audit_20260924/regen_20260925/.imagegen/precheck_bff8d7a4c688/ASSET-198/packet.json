@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-198",
+  "narration": "せたな町は、正式に実施していたクマの捜索を打ち切りとなり、",
+  "asset_type": "Lovart動画",
+  "scene": "捜索の打ち切り。林道の入口で、オレンジのベストのハンターが装備の机からリュックを背負い、ロープを持って去っていく（実写・後ろ姿で顔は見せない）。196〜200のキャラの連続を切るため、ここは実写の動画にする。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "The entrance of a gravel forest track leading into leafless woods near Setana, southwestern Hokkaido, in April early spring: a weathered wooden marker post with no readable characters, low bamboo grass along the edges, bare birch and deciduous trees, brown leaf litter, and at the right side of the track a plain folding table with packed search gear, two backpacks, a coil of rope and a pair of rubber boots beside it, No snow anywhere, no snow patches, no frost, no ice, no winter. Framed from adult eye height about four metres back, the track entrance on the right, the middle and left of the frame left as clear open space. Tense, quiet morning light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous shot from a fixed camera at the entrance of a gravel forest track in early spring in Hokkaido: a Japanese hunter in a blaze-orange vest and orange cap, seen only from behind, walks into the frame, lifts one of the packed backpacks from the folding table onto his shoulder, picks up the coil of rope and walks slowly away down the road, leaving the track entrance empty and quiet. His face is never visible. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。中央に「捜索を打ち切り」を白字で表示し、「打ち切り」だけ赤字。今の ASSET-198_bg.png（林道に雪）と旧 ASSET-198_char.png は使わない。"
+  ]
+}

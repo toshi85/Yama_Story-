@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-169",
+  "narration": "またこの時期は、どうしても裏山の畑へ出かけないといけない場合は、クマ対策として、ラジオや爆竹などの鳴り物が欠かせない状況でした。",
+  "asset_type": "Lovart動画",
+  "scene": "家の裏から裏山の畑へ上る細い道を、鳴っている携帯ラジオと爆竹の包みを手に、おそるおそる上っていく高齢の住民（実写・後ろ姿で顔は見せない）。167〜170のキャラの連続を切るため、ここは実写の動画にする。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "A narrow dirt path leading from the back of an old wooden rural house up to a small hillside vegetable field at the foot of a wooded hill near Setana, southwestern Hokkaido, in April early spring. On the path, seen from behind and slightly to the side, a Japanese man in his 70s with short white hair in a beige work jacket, grey trousers and rubber boots climbs toward the field, a small portable radio held up in his right hand and a small red packet of firecrackers in his left hand, his head turned toward the wooded hill; his face is turned away and not visible. Dark freshly tilled soil, dry brown grass along the path, bare and budding deciduous trees on the hill, No snow anywhere, no frost, no ice, no winter, no lush summer green. No readable text or labels on the radio or packet, no logo. Captured as a frozen moment. Framed from adult eye height about five metres behind him, the upper third left as clean open space. Uneasy, quiet, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous shot from behind on a narrow dirt path up to a hillside vegetable field in early spring in Hokkaido: an elderly Japanese man in a beige work jacket walks slowly uphill holding up a small portable radio in one hand and a red packet of firecrackers in the other, pauses, turns his head warily toward the wooded hill, then keeps climbing. His face is never visible. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。ラジオの小さな音を効果音で重ねる。中央に「鳴り物が欠かせない」を白字で表示し、「鳴り物」だけ赤字。今の ASSET-169_still.png・ASSET-169_video.mp4・ASSET-169_char.png は使わない。"
+  ]
+}

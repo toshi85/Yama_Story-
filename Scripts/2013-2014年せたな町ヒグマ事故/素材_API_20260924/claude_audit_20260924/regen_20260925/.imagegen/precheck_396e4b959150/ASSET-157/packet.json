@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-157",
+  "narration": "とはいえ、町の人の安心のため、問題となった個体を駆除すべく動きます。",
+  "asset_type": "Lovart動画",
+  "scene": "2015年3月、冬の終わりで残雪のあるせたな町の上をドローン視点で進み、クマのいる山へ向かう。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "A high aerial drone view over the small coastal town of Setana, southwestern Hokkaido, in March, late winter: low houses with dark roofs, lingering patches of old snow in the fields and along the roads, bare trees, forested hills behind still partly white with snow, the grey-blue Sea of Japan at the edge of the frame. Late-winter snow is intended in this scene. The camera looks forward and slightly down from about 120 metres above the town toward the hills. No people visible, no readable signs, no real institution name, no crest, no emblem, no logo. Calm but resolute mood, soft overcast morning light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous aerial drone shot: the camera glides slowly forward over the small town of Setana in late winter, over the low roofs and snow-patched fields toward the forested hills. No cuts, no scene change, smooth steady movement. No people visible. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う（足りなければ再生速度を落として尺いっぱい）。中央に「町の安心のため」を白字で表示し、「安心」だけ赤字。"
+  ]
+}

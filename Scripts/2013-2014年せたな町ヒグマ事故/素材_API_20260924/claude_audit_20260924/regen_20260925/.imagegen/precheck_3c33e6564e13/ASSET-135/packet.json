@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-135",
+  "narration": "すかさずハンターが、クマを駆除し、",
+  "asset_type": "キャラアニメーション",
+  "scene": "箱わなのクマに向けて、ハンター（CHAR-05）が銃を撃つ（東成瀬村138と同じく発砲の閃光まで描く。クマの傷や血は描かない）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, his body turned three-quarters toward the right edge of the picture and his face in three-quarter view clearly visible. He has the rifle shouldered with his cheek on the stock and is firing it toward the right edge of the picture, a bright cartoon muzzle flash bursting from the end of the barrel, THE WHOLE LENGTH OF THE RIFLE IS VISIBLE across the frame, his shoulder absorbing the recoil. Eyebrows driven down hard and pulled together, one eye squeezed shut and the other narrowed to a hard unblinking stare, teeth clenched, a bead of sweat running down his temple, tense and resolute, NOT calm, NOT smiling. Do NOT draw the rifle hanging at his side or held flat across his chest, do NOT point it at the viewer. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A closed steel box trap on a forested hillside in the Ota area near Setana, southwestern Hokkaido, in mid-May late spring: fresh light-green new leaves, green bamboo grass, No snow anywhere, no frost, no ice, no winter. Inside the trap an adult male Hokkaido brown bear about 1.8 metres long and about 250 kilograms crouches ON ALL FOURS, its heavy dark-brown body filling most of the trap, its back almost touching the trap roof, clearly visible through the steel mesh. NOT upright, NOT on two legs. The trap sits in the right half of the frame, the left half left as clear open space. Framed from adult eye height about five metres back. Tense, soft overcast light, muted natural tones. No blood, no wounds, no gore. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は ASSET-132_bg.png を1.0→1.15倍に寄せて使う、キャラは新規の ASSET-135_char.png。ハンターを左に置き、銃口を右の箱わなへ向ける。銃声SE1発と同時に画面を一瞬白くフラッシュさせ、0.5秒の暗転で次のカットへつなぐ（クマの傷や血は描かない）。中央に「すぐに駆除」を白字で表示し、「駆除」だけ赤字。"
+  ]
+}

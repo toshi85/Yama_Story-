@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-175",
+  "narration": "昨年は現場近くを探していましたが、今回はさらに広い範囲での捜索となりました。",
+  "asset_type": "Lovart動画",
+  "scene": "見渡すかぎりの山林を、ドローン視点でゆっくり進む。尾根の上に、オレンジのベストの捜索隊が小さく一列に見え、その先に山また山が続く（実写）。174〜179のキャラの連続を切るため、ここは実写の動画にする。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "A high aerial drone view over a vast sea of forested ridges and deep valleys rolling away to the horizon inland from Setana, southwestern Hokkaido, in April early spring: layer after layer of leafless brown deciduous forest with dark green conifers, a winding valley road far below, the Sea of Japan faint on the far left, No snow anywhere, no snow patches on the slopes, no frost, no ice, no winter. On a bare ridge in the lower third of the frame, a tiny single file of five Japanese searchers in blaze-orange vests walks along the ridgeline, very small against the enormous forest, no face visible. Captured as a frozen moment. The upper third left as clean open space. Daunting, wide, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous aerial drone shot in early spring in Hokkaido: the camera glides slowly forward and rises over a tiny single file of searchers in blaze-orange vests walking along a bare ridge, revealing more and more forested ridges and valleys rolling away to the horizon until the searchers are only specks. No cuts, no scene change, smooth steady movement. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。中央に「範囲を広げて捜索」を白字で表示し、「広げて」だけ赤字。今の ASSET-175_still.png は斜面に雪があるので使わない。"
+  ]
+}

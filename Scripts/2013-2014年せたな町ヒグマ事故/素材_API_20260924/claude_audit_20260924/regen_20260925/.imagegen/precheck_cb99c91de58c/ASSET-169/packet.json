@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-169",
+  "narration": "またこの時期は、どうしても裏山の畑へ出かけないといけない場合は、クマ対策として、ラジオや爆竹などの鳴り物が欠かせない状況でした。",
+  "asset_type": "キャラアニメーション",
+  "scene": "クマ対策のラジオと爆竹を手に、不安そうに裏山の畑へ向かう住民（CHAR-10）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local resident man in his 70s with short white hair, CLEAN-SHAVEN with no beard and no moustache, a beige work jacket, grey trousers and rubber boots, walking toward the viewer at a slight three-quarter angle, facing the viewer, his face clearly visible. He holds a small portable radio up in his right hand and a small red packet of firecrackers in his left hand, eyebrows pulled together and slanted upward, eyes wide and darting, lips pressed tight and trembling, a bead of sweat on his temple, nervous and uneasy, NOT calm, NOT smiling. No lettering on the radio or packet, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A narrow dirt path leading from the back of an old wooden rural house up to a small hillside vegetable field at the foot of a wooded hill near Setana, southwestern Hokkaido, in April early spring: dark freshly tilled soil, dry brown grass along the path, bare and budding deciduous trees on the hill, No snow anywhere, no frost, no ice, no winter, no lush summer green. No readable text, no sign. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Uneasy, quiet, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規（今の ASSET-169_still.png は畑が夏の緑、キャラは若い女性なので使わない。ASSET-169_video.mp4 も使わない＝動画は作らない）。住民を左下から裏山の畑の方へ歩くように移動させる。中央に「鳴り物が欠かせない」を白字で表示し、「鳴り物」だけ赤字。"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-135",
+  "narration": "すかさずハンターが、クマを駆除し、",
+  "asset_type": "キャラアニメーション",
+  "scene": "箱わなの横で、銃口を下に向けたまま駆除に臨むハンター（CHAR-05）。駆除の直接描写はしない。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, standing toward the viewer at a slight three-quarter angle, his face clearly visible. He holds a rifle with both hands, its muzzle pointed straight down at the ground, eyebrows driven down hard and pulled together, eyes narrowed to a hard unblinking stare, mouth pressed into a flat grim line with the jaw tight, a bead of sweat running down his temple, tense and resolute, NOT calm, NOT smiling. The rifle is not pointed at anyone, do NOT draw the rifle held across the chest. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A closed steel box trap on a forested hillside in the Ota area near Setana, southwestern Hokkaido, in mid-May late spring: fresh light-green new leaves, green bamboo grass, No snow anywhere, no frost, no ice, no winter. Inside the trap an adult male Hokkaido brown bear about 1.8 metres long and about 250 kilograms crouches ON ALL FOURS, its heavy dark-brown body filling most of the trap, its back almost touching the trap roof, clearly visible through the steel mesh. NOT upright, NOT on two legs. The trap sits in the right half of the frame, the left half left as clear open space. Framed from adult eye height about five metres back. Tense, soft overcast light, muted natural tones. No blood, no wounds, no gore. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は ASSET-132_bg.png を1.0→1.15倍に寄せて使う、キャラは新規の ASSET-135_char.png。ハンターを左に置き、動かさない。駆除の瞬間は描かず、次のカットへ暗転でつなぐ。中央に「すぐに駆除」を白字で表示し、「駆除」だけ赤字。"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-117",
+  "narration": "出発にあたり、地元のベテランハンターである長田範男さん（62歳）が、他のハンターに銃の扱いについて念入りに指導。",
+  "asset_type": "キャラアニメーション",
+  "scene": "林道の集合場所で、長田さん（CHAR-05）が若いハンター（CHAR-09）に銃の扱いを教える。教える側と教わる側の両方を描く。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Two full-body Japanese hunters facing each other at a slight three-quarter angle toward the viewer, both faces clearly visible. Left: 1) (CHAR-05 再利用) the veteran, a Japanese local hunter aged 62 with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, holding a rifle with both hands with the muzzle pointed straight down at the ground, showing the safety catch with his thumb, eyebrows pulled together in intense concentration, eyes narrowed and sharp, mouth open mid-instruction, a bead of sweat on his temple, strict and earnest. Right: 2) (CHAR-09 再利用) a Japanese young hunter in his 30s with short black hair, a dark green cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, leaning in and nodding, eyebrows shot up, eyes wide and nervous, mouth open, sweat on his forehead. The rifle is not pointed at anyone, do NOT draw the rifle pointed at a person or held across the chest. Every person is a distinct individual, no two dressed alike. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT. The young hunter is a little taller. No lettering, no badge, no logo. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "The edge of a gravel forest road used as a staging area near Setana, southwestern Hokkaido, in mid-April early spring: a few field packs and a coil of rope on a folding table, a parked grey van to the right, bare and budding trees, dry brown grass, No snow anywhere, no snow patches, no frost, no ice, no winter. Number plate present in its normal place but small, slightly out of focus and not readable; no legible text, no logo. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Determined, tense morning mood, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は ASSET-114_bg.png を再利用、キャラは新規の ASSET-117_char.png。2人を中央に置き、長田さんの腕だけ小さく動かす。長田さんの横に「長田範男さん（62）」を小さく白字で添える。中央に「銃の扱いを指導」を白字で表示し、「銃」だけ赤字。"
+  ]
+}

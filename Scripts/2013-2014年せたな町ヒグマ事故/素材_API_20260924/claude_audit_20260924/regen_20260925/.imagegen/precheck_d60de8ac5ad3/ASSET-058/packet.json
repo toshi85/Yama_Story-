@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-058",
+  "narration": "一方、クマの捕獲のために動いていた猟友会からは、ハンターの高齢化を心配する声も多く寄せられました。",
+  "asset_type": "Lovart動画",
+  "scene": "林道の入口で装備を整える、白髪の高齢ハンター3人。年齢の高さが一目で分かる実写。057・059がキャラなので、ここは実写にしてキャラの4連続を避ける。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "Three aging Japanese hunters in their late 60s and 70s getting ready at the gravel entrance of a forest road near Setana, southwestern Hokkaido, in mid-April early spring: bare and budding deciduous trees, dry brown grass, No snow anywhere, no frost, no ice, no winter. Left to right: 1) a thin man with sparse white hair under a blaze-orange cap, bent at the waist with one hand pressed to his lower back; 2) a heavier man with grey hair and deep lines on his face in a dark green jacket and blaze-orange vest, sitting on the open tailgate of a small pickup truck pulling on a boot; 3) a short man with a white stubble and a khaki jacket, leaning on a walking stick with a cased rifle slung on his back. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT. Seen from a three-quarter side angle, faces partly turned away and not identifiable. The truck's number plate is present but small, out of focus and not readable, no lettering, no logo, no badge. Captured as a frozen moment. Framed from adult eye height about six metres back, the upper third of the frame left as clean open space. Tired, worried mood, soft overcast morning light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous shot at the gravel entrance of an early-spring Hokkaido forest road: three aging Japanese hunters get ready slowly; the white-haired man straightens up stiffly with a hand on his lower back, the man on the pickup tailgate pulls on his boot, the man with the walking stick adjusts the rifle case on his back. The camera drifts slowly sideways past them. No cuts, no scene change. Faces stay turned away and never identifiable. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。左上に「ハンターの高齢化」を白字で置き、「高齢化」だけ赤字。"
+  ]
+}

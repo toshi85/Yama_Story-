@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-158",
+  "narration": "計画では、ハンター5、6人が山でクマの足跡を探し追跡。",
+  "asset_type": "キャラアニメーション",
+  "scene": "雪の尾根道に続く足跡を追う計画の捜索隊6人（CHAR-05・CHAR-09を含む）。台本どおり残雪を描く。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) [Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Exactly six full-body Japanese hunters walking toward the viewer in a loose staggered line, heads bent to scan the ground, all faces clearly visible. Left to right: 1) (CHAR-05 再利用) a Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, pointing down at the ground, eyebrows driven down hard, eyes narrowed and sharp, mouth open giving an order; 2) (CHAR-09 再利用) a Japanese young hunter in his 30s with short black hair, a dark green cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, eyes wide and alert, sweat on his temple; 3) a Japanese hunter in his 50s, heavy-set, a brown cap, a brown jacket under a blaze-orange vest, jaw clenched, eyebrows pulled together; 4) a Japanese hunter in his 40s, tall and thin, a black knit hat, a navy jacket under a blaze-orange vest, eyes darting, mouth tight; 5) a Japanese hunter in his 60s, short and stocky, a grey cap, a khaki jacket under a blaze-orange vest, CLEAN-SHAVEN, frowning hard with sweat on his brow; 6) a Japanese hunter in his 30s, medium build, a red cap, an olive jacket under a blaze-orange vest, eyebrows raised, eyes wide and tense. Each has a rifle slung on the back pointing upward. Exactly six, count them 1, 2, 3, 4, 5, 6. Do NOT draw fewer than six. Every person is a distinct individual, no two dressed alike. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT. No two of them are the same height. All are tense and focused, NOT calm, NOT smiling. No lettering, no badge, no logo. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A snowy ridge path near Setana, southwestern Hokkaido, in March, late winter: a line of large bear pawprints, left by an adult male brown bear about 2 metres long and roughly 150 to 250 kilograms, stretching along the snow, dry grass and bare shrubs at the edge, the Sea of Japan and a partly snowy headland in the distance, an overcast sky. Late-winter snow is intended in this scene. No bear anywhere in the frame. Framed from adult eye height about four metres back, the left half left as clear open space. Tense, purposeful mood, cold grey light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-158_still.png、キャラは新規の ASSET-158_char.png。6人を左から中央へゆっくり歩かせて止める（動画は作らない）。中央に「5、6人で追跡」を白字で表示し、「追跡」だけ赤字。"
+  ]
+}

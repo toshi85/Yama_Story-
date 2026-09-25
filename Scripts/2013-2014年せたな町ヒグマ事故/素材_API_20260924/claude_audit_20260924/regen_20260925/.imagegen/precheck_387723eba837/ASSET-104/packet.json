@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-104",
+  "narration": "専門家は、積極的に人を襲った可能性が高いヒグマによる事故と捉え、「一度人間を襲ったクマは凶暴性を増す」と指摘しています。",
+  "asset_type": "キャラアニメーション",
+  "scene": "研究室の机の前で、事故資料を手に「一度人を襲ったクマは凶暴になる」と強く警告する研究者（CHAR-07）。横に編集で096のクマを重ねる。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, her face clearly visible. She holds a plain closed folder against her chest with her left hand and raises her right index finger in warning, eyebrows pulled together and slanted steeply upward, eyes stretched wide, mouth wide open mid-warning, a bead of sweat on her temple, alarmed and grave, NOT calm, NOT smiling. No lettering on the folder or coat, no badge, no logo, no name tag. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A small research office in southwestern Hokkaido, in mid-April early spring: a wooden desk with three closed plain case files and a magnifying glass, bookshelves of plain binders, a window with bare and budding trees and low brown hills outside, No snow anywhere, no snow on any distant mountain, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Serious, uneasy mood, soft cool daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。研究者を右から中央へスライドさせ、指を立てた手を小さく振る。研究者の左に096のクマ（2人を襲った同じクマ）を小さく重ね、研究者の指からクマへ白い矢印を1本引く。中央に「凶暴性を増す」を白字で表示し、「凶暴性」だけ赤字。"
+  ]
+}

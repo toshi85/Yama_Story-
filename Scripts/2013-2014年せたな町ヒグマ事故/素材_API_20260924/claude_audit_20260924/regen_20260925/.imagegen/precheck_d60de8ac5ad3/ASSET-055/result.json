@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-055",
+  "verdict": "FAIL",
+  "subject": "クマ・情報収集",
+  "evidence": "He presses a corded telephone handset to his right ear and holds a plain clipboard with a pen in his left hand",
+  "missing": "クマが描かれていない",
+  "reason": "ナレーションに出るクマが、キャラと背景のどちらのプロンプトにも登場しないため。"
+}

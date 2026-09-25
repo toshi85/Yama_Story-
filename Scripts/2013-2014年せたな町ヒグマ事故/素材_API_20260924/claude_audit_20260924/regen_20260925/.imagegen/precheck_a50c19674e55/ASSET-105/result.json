@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-105",
+  "verdict": "FAIL",
+  "subject": "町の職員・クマ・駆除",
+  "evidence": "A full-body Japanese male town official in his 40s",
+  "missing": "クマが描かれていない。",
+  "reason": "ナレーションに登場する町の職員は描かれているが、駆除対象のクマはプロンプトに登場しない。"
+}

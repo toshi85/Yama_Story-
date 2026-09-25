@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-207",
+  "narration": "しかし、保管されていたDNAとの照合から、同一個体だと見て間違いなさそうです。",
+  "asset_type": "Lovart動画",
+  "scene": "研究室の机で、白衣の袖の手袋の手が、保管されていた試料と照合した試料の2本を、左右に並ぶまで寄せる（実写・手元だけ）。207〜213のキャラの連続を切るため、ここは実写の動画にする。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "A clean laboratory table by a window in Hokkaido, in April early spring: two capped sample tubes set apart for comparison, each on a blank white card, a small tube rack at the right edge; through the window, bare and budding trees and brown fields under a pale sky, No snow anywhere, no frost, no ice, no winter. No readable text, no labels with characters, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about two metres back, the middle of the frame left as clear open space. Quiet, focused mood, cool clean daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous close shot on a laboratory table by a window: two gloved hands in white lab-coat sleeves slide the two capped sample tubes closer together until they stand side by side on their white cards, then let go and rest flat on the table. Only the hands and forearms appear, no face visible. No readable labels. The camera pushes in very slowly. No cuts, no scene change. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。左の試料に「保管試料」、右の試料に「照合試料」を白字で置き、中央に「同一個体」。「同一個体」だけ赤字。DNA波形や数値は出さない。今の ASSET-207_still.png（屋外の机）と旧 ASSET-207_char.png は使わない。"
+  ]
+}

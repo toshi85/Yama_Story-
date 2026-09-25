@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-083",
+  "verdict": "FAIL",
+  "subject": "女性・緊急搬送",
+  "evidence": "A white Japanese ambulance with red lights driving away along a narrow road through bare forested hills near Setana",
+  "missing": "緊急搬送される女性",
+  "reason": "救急車は描かれていますが、ナレーションの主語である女性はプロンプトで「No people, no figures, no humans visible」と明示され、絵に登場しません。"
+}

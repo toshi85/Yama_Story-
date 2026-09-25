@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-213",
+  "narration": "さらに、単独で山に入らず、複数で行動するよう呼びかけました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "209と同じ山菜採りの2人が、鈴を付けて並んで山道を歩き出す。怯えではなく、心強い顔。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Exactly two full-body Japanese wild-vegetable gatherers walking side by side toward the viewer at a slight three-quarter angle, both faces clearly visible. Left to right: 1) a man in his 60s in a green field jacket, grey trousers and a bucket hat, CLEAN-SHAVEN with no beard and no moustache, a head taller than the woman; 2) a woman in her 50s in a beige windbreaker, dark trousers and a sun hat. Each carries a small woven basket with a small brass bell on the strap. Both have eyebrows raised, eyes bright and wide, mouths open in big reassuring grins, the man giving a thumbs-up with his free hand, confident and encouraged, NOT frightened, NOT calm. No lettering, no logo. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A narrow mountain trail along a grassy ridge through low bamboo above the Sea of Japan near Setana, southwestern Hokkaido, in May spring: fresh pale green leaves on the bamboo and shrubs, budding deciduous trees, a rocky headland and the sea on the left, No snow anywhere, no snow patches, no snow on the peaks, no frost, no ice, no winter. No readable text, no signs. Framed from adult eye height about four metres back, the trail in the lower right, the middle of the frame left as clear open space. Hopeful, fresh, soft bright overcast light, natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規（今の ASSET-213_still.png は雪があり、今のキャラは怯えた顔の使い回しなので使わない。ASSET-213_video.mp4 も使わない＝動画は作らない）。2人を左から右へ歩くように移動させる。鈴の音SE。中央に「複数で行動」を白字で表示し、「複数」だけ赤字。"
+  ]
+}

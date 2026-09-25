@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-132",
+  "narration": "なんと二つ目の事件があった太田の山で、町職員が箱わなにかかっているクマを見つけました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "5月の太田の山で、箱わなにかかったヒグマを見つけて驚く町の職員（CHAR-06）。後ろ姿ではなく顔を見せる。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black rubber boots, standing toward the viewer at a slight three-quarter angle, his face clearly visible. He leans back with one foot lifted and points to his right with his right arm fully outstretched, his head turned toward where he points, eyebrows shot up so hard the forehead is creased, eyes bulging wide, mouth stretched wide open in a shout, sweat flying off his face in droplets, shocked and startled, NOT calm, NOT smiling. No lettering, no badge, no logo, no name tag. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A closed steel box trap on a forested hillside in the Ota area near Setana, southwestern Hokkaido, in mid-May late spring: fresh light-green new leaves, green bamboo grass, No snow anywhere, no frost, no ice, no winter. Inside the trap an adult male Hokkaido brown bear about 1.8 metres long and about 250 kilograms crouches ON ALL FOURS, its heavy dark-brown body filling most of the trap, its back almost touching the trap roof, clearly visible through the steel mesh. NOT upright, NOT on two legs. The trap sits in the right half of the frame, the left half left as clear open space. Framed from adult eye height about five metres back. Tense, soft overcast light, muted natural tones. No blood, no wounds, no gore. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。職員を左に置き、指さす腕を小さく動かす。背景は箱わなへゆっくり寄る。クマの唸り声のSE。中央に「箱わなにクマ！」を白字で表示し、「クマ」だけ赤字。"
+  ]
+}

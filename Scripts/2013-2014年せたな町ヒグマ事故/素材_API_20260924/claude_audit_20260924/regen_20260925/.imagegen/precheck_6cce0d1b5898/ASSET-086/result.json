@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-086",
+  "verdict": "FAIL",
+  "subject": "専門家・男性・クマ",
+  "evidence": "A full-body Japanese female researcher in her 40s",
+  "missing": "男性とクマがキャラ・背景プロンプトに描かれていない。",
+  "reason": "男性とクマは編集で重ねる080の画面にのみ指定されている。"
+}

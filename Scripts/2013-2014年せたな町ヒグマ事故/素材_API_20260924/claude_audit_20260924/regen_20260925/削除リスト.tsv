@@ -4,7 +4,7 @@ ASSET-009_video.mp4	作り直す（別のPCで同じ名前で作る）
 ASSET-014_still.png	作り直す（別のPCで同じ名前で作る）
 ASSET-014_video.mp4	作り直す（別のPCで同じ名前で作る）
 ASSET-015_char.png	別カットのキャラを使うので不要
-ASSET-015_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-015_still.png	背景は ASSET-029 のものを使うので不要
 ASSET-015_video.mp4	動画を外す（キャラと背景で表す）
 ASSET-017_char.png	作り直す（別のPCで同じ名前で作る）
 ASSET-019_char.png	作り直す（別のPCで同じ名前で作る）
@@ -39,13 +39,215 @@ ASSET-045_char.png	作り直す（別のPCで同じ名前で作る）
 ASSET-045_video.mp4	動画を外す（キャラと背景で表す）
 ASSET-047_char.png	キャラは使わない（検収で決定）
 ASSET-050_bg.png	作り直す（別のPCで同じ名前で作る）
+ASSET-051_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-053_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-053_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-054_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-054_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-055_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-055_still.png	背景を ASSET-055_bg.png の名前で作り直す
 ASSET-056_char.png	キャラは使わない（検収で決定）
-ASSET-083_char.png	キャラは使わない（検収で決定）
+ASSET-056_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-058_char.png	キャラをやめて実写にしたので不要
+ASSET-058_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-058_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-059_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-059_still.png	背景は ASSET-055 のものを使うので不要
+ASSET-059_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-060_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-064_still.png	地図（編集者が作る）に変更
+ASSET-066_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-066_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-066_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-067_char.png	キャラをやめて実写にしたので不要
+ASSET-067_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-068_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-068_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-068_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-069_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-069_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-070_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-071_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-071_still.png	背景は ASSET-070 のものを使うので不要
+ASSET-071_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-073_still.png	地図（編集者が作る）に変更
+ASSET-074_char.png	キャラをやめて実写にしたので不要
+ASSET-074_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-078_char.png	キャラをやめて実写にしたので不要
+ASSET-078_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-078_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-079_char.png	キャラをやめて実写にしたので不要
+ASSET-080_bg.png	背景は ASSET-079 のものを使うので不要
+ASSET-082_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-082_video.mp4	作り直す（別のPCで同じ名前で作る）
+ASSET-083_char.png	キャラをやめて実写にしたので不要
+ASSET-083_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-084_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-084_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-084_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-085_bg.png	作り直す（別のPCで同じ名前で作る）
+ASSET-085_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-086_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-088_still.png	地図（編集者が作る）に変更
+ASSET-090_char.png	キャラをやめて実写にしたので不要
+ASSET-090_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-090_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-091_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-091_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-091_video.mp4	動画を外す（キャラと背景で表す）
 ASSET-092_char.png	作り直す（別のPCで同じ名前で作る）
 ASSET-092_still.png	作り直す（別のPCで同じ名前で作る）
-ASSET-096_char.png	キャラは使わない（検収で決定）
+ASSET-094_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-094_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-095_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-096_char.png	キャラをやめて実写にしたので不要
+ASSET-096_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-096_video.mp4	作り直す（別のPCで同じ名前で作る）
+ASSET-101_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-101_still.png	背景を ASSET-101_bg.png の名前で作り直す
+ASSET-101_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-102_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-102_still.png	背景は ASSET-101 のものを使うので不要
+ASSET-102_video.mp4	動画を外す（キャラと背景で表す）
 ASSET-103_char.png	キャラは使わない（検収で決定）
+ASSET-104_bg.png	作り直す（別のPCで同じ名前で作る）
+ASSET-104_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-105_bg.png	作り直す（別のPCで同じ名前で作る）
+ASSET-105_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-107_bg.png	作り直す（別のPCで同じ名前で作る）
+ASSET-107_char.png	作り直す（別のPCで同じ名前で作る）
 ASSET-108_char.png	キャラは使わない（検収で決定）
+ASSET-109_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-110_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-110_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-110_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-111_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-113_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-113_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-113_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-114_bg.png	作り直す（別のPCで同じ名前で作る）
+ASSET-114_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-115_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-115_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-115_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-117_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-117_still.png	背景は ASSET-114 のものを使うので不要
+ASSET-118_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-120_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-120_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-121_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-122_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-124_bg.png	作り直す（別のPCで同じ名前で作る）
+ASSET-124_char.png	作り直す（別のPCで同じ名前で作る）
 ASSET-125_char.png	キャラは使わない（検収で決定）
-ASSET-149_char.png	キャラは使わない（検収で決定）
+ASSET-125_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-128_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-129_bg.png	作り直す（別のPCで同じ名前で作る）
+ASSET-130_bg.png	作り直す（別のPCで同じ名前で作る）
+ASSET-130_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-132_still.png	背景を ASSET-132_bg.png の名前で作り直す
+ASSET-135_bg.png	背景は ASSET-132 のものを使うので不要
+ASSET-135_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-136_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-137_char.png	地図（編集者が作る）に変更
+ASSET-137_still.png	地図（編集者が作る）に変更
+ASSET-138_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-140_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-140_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-141_char.png	キャラをやめて実写にしたので不要
+ASSET-141_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-142_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-142_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-143_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-145_char.png	キャラをやめて実写にしたので不要
+ASSET-145_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-146_char.png	キャラをやめて実写にしたので不要
+ASSET-146_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-146_video.mp4	作り直す（別のPCで同じ名前で作る）
+ASSET-148_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-148_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-149_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-149_still.png	背景を ASSET-149_bg.png の名前で作り直す
+ASSET-157_char.png	キャラをやめて実写にしたので不要
+ASSET-157_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-157_video.mp4	作り直す（別のPCで同じ名前で作る）
+ASSET-158_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-158_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-159_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-160_char.png	キャラをやめて実写にしたので不要
+ASSET-160_video.mp4	作り直す（別のPCで同じ名前で作る）
+ASSET-161_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-162_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-162_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-166_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-167_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-167_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-168_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-168_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-169_char.png	キャラをやめて実写にしたので不要
+ASSET-169_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-169_video.mp4	作り直す（別のPCで同じ名前で作る）
+ASSET-170_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-170_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-172_char.png	地図（編集者が作る）に変更
+ASSET-172_still.png	地図（編集者が作る）に変更
+ASSET-174_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-174_still.png	背景を ASSET-174_bg.png の名前で作り直す
+ASSET-174_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-175_char.png	キャラをやめて実写にしたので不要
+ASSET-175_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-175_video.mp4	作り直す（別のPCで同じ名前で作る）
+ASSET-176_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-177_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-178_char.png	キャラをやめて実写にしたので不要
+ASSET-178_video.mp4	作り直す（別のPCで同じ名前で作る）
+ASSET-179_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-179_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-181_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-181_still.png	背景を ASSET-181_bg.png の名前で作り直す
+ASSET-182_bg.png	作り直す（別のPCで同じ名前で作る）
+ASSET-182_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-184_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-184_still.png	背景は ASSET-181 のものを使うので不要
+ASSET-185_bg.png	背景は ASSET-182 のものを使うので不要
+ASSET-185_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-187_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-188_char.png	地図（編集者が作る）に変更
+ASSET-188_still.png	地図（編集者が作る）に変更
+ASSET-191_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-191_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-191_video.mp4	動画を外す（キャラと背景で表す）
 ASSET-194_char.png	キャラは使わない（検収で決定）
+ASSET-196_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-197_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-198_bg.png	キャラをやめて実写にしたので不要
+ASSET-198_char.png	キャラをやめて実写にしたので不要
+ASSET-198_video.mp4	作り直す（別のPCで同じ名前で作る）
+ASSET-199_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-200_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-200_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-202_char.png	別カットの再利用に変更
+ASSET-202_still.png	別カットの再利用に変更
+ASSET-203_char.png	別カットの再利用に変更
+ASSET-203_still.png	別カットの再利用に変更
+ASSET-203_video.mp4	別カットの再利用に変更
+ASSET-204_char.png	別カットの再利用に変更
+ASSET-204_still.png	別カットの再利用に変更
+ASSET-207_char.png	キャラをやめて実写にしたので不要
+ASSET-207_still.png	動画の元は ASSET-182_bg.png を使うので不要
+ASSET-207_video.mp4	作り直す（別のPCで同じ名前で作る）
+ASSET-208_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-210_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-210_still.png	背景は ASSET-181 のものを使うので不要
+ASSET-211_char.png	キャラをやめて実写にしたので不要
+ASSET-211_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-211_video.mp4	作り直す（別のPCで同じ名前で作る）
+ASSET-213_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-213_still.png	背景を ASSET-213_bg.png の名前で作り直す
+ASSET-213_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-214_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-215_char.png	作り直す（別のPCで同じ名前で作る）
+ASSET-215_still.png	背景は ASSET-213 のものを使うので不要
+ASSET-215_video.mp4	動画を外す（キャラと背景で表す）
+ASSET-217_still.png	作り直す（別のPCで同じ名前で作る）
+ASSET-218_still.png	背景を ASSET-218_bg.png の名前で作り直す

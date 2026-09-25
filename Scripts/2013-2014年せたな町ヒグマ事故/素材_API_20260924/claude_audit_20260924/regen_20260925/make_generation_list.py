@@ -27,6 +27,7 @@ if drive_dir.exists():  # ドライブの実物（画像）で上書き
 DONE = {"ASSET-008_video.mp4", "ASSET-008_still.png"}  # 008 は本人が「このままでよい」と承認済み
 
 gen, delete = [], []
+ALL_FIX = "\n".join((HERE / m).read_text(encoding="utf-8") for m in ["Asset_Prompts_Regen.md"] + FIX if (HERE / m).exists())
 
 
 def add_del(name, why):
@@ -56,21 +57,49 @@ for mdname in FIX:
             continue
         labels = re.findall(r"^(.*?)\n```", part, re.M)
         reuse_bg = re.search(r"背景は既存の (ASSET-\d+_\w+\.png)", part)
+        # 別カットで作る背景を借りるカット（059＝055の背景、080＝079の静止画）は、自分の背景を作らない
+        borrow = next((m for m in re.finditer(r"背景は[^\n。]*?ASSET-(\d+)_\w+\.png[^\n。]*?(?:再使用|再利用)", part)
+                       if int(m.group(1)) != n), None)
+        if borrow and not reuse_bg:
+            reuse_bg = borrow
+            if "キャラ" in kind:
+                for f in have:
+                    if f.endswith(("_still.png", "_bg.png")):
+                        add_del(f, f"背景は ASSET-{int(borrow.group(1)):03d} のものを使うので不要")
         reuse_char = re.search(r"キャラは既存の (ASSET-\d+_char\.png)|キャラは (ASSET-\d+_char\.png) を再利用", part)
         has = lambda key: any(key in l for l in labels)
         files = []
         if has("キャラプロンプト") and not reuse_char:
             files.append((f"ASSET-{n:03d}_char.png", "キャラ"))
+        # 既存キャラに1人足すカット（051＝既存の地区長＋新しく作る住民）は _char2.png で作る
+        for extra in re.findall(r"新規の (ASSET-\d+_char\d+\.png)", part):
+            files.append((extra, "キャラ（追加の1人）"))
         if has("背景プロンプト") and not reuse_bg:
             bgname = next((f for f in have if f.endswith("_bg.png")), None) or \
                      next((f for f in have if f.endswith("_still.png")), None) or f"ASSET-{n:03d}_bg.png"
+            # 資料が _bg.png の名前で指している背景（「ASSET-181_bg.png として保存」「055の ASSET-055_bg.png を再使用」）はその名前で作り、
+            # ドライブの古い _still.png は消す
+            want = f"ASSET-{n:03d}_bg.png"
+            if want in ALL_FIX and bgname != want:
+                if bgname in have:
+                    add_del(bgname, f"背景を {want} の名前で作り直す")
+                bgname = want
             files.append((bgname, "背景"))
+        # 動画の元の静止画を既存・別カットの画像で済ませるカット（160＝既存の _still、198＝174の _bg）
+        still_src = re.search(r"静止画は[^\n。]*?(ASSET-(\d+)_\w+\.png)[^\n。]*?(?:そのまま使い|を使い)", part)
         if "動画" in kind or has("動画プロンプト"):
-            if any(not l.strip() or "静止画" in l for l in labels) or re.search(r"^```\n", part, re.M):
+            if (any(not l.strip() or "静止画" in l for l in labels) or re.search(r"^```\n", part, re.M)) and not still_src:
                 files.append((f"ASSET-{n:03d}_still.png", "静止画（動画の元）"))
+            if still_src and int(still_src.group(2)) != n and f"ASSET-{n:03d}_still.png" in have:
+                add_del(f"ASSET-{n:03d}_still.png", f"動画の元は {still_src.group(1)} を使うので不要")
             files.append((f"ASSET-{n:03d}_video.mp4", "動画"))
         elif ("静止画" in kind or "Lovart" in kind) and not has("キャラ") and not has("背景"):
             files.append((f"ASSET-{n:03d}_still.png", "静止画"))
+        # キャラをやめて実写にしたカットは、古いキャラと背景を消す
+        if "キャラ" not in kind and not has("キャラプロンプト"):
+            for f in have:
+                if f.endswith(("_char.png", "_bg.png")):
+                    add_del(f, "キャラをやめて実写にしたので不要")
         for name, what in files:
             if name in DONE:
                 continue

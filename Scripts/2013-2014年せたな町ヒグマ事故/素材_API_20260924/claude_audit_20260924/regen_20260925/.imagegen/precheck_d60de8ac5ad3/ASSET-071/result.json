@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-071",
+  "verdict": "FAIL",
+  "subject": "クマ・男性・女性",
+  "evidence": "Exactly two full-body Japanese figures walking toward the viewer at a slight three-quarter angle, both faces clearly visible.",
+  "missing": "クマ",
+  "reason": "男性と女性は描かれるが、クマは看板のピクトグラムで示されるだけで、クマ自体は登場しない。"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-211",
+  "narration": "「ただ、鈴やラジオの音に、反応が鈍いクマもいることも事実」",
+  "asset_type": "キャラアニメーション",
+  "scene": "鳴っているラジオと鈴のすぐ先を、気にせず歩いていくヒグマの山道を背に、不安そうに言葉を続ける釣賀室長（CHAR-07）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, standing square to the viewer with her shoulder line parallel to the picture plane, her face clearly visible. She holds a small portable radio in both hands at chest height, eyebrows pulled together and slanted steeply upward, eyes wide and uneasy, mouth bent into a worried frown, a bead of sweat running down her temple, worried and cautious, NOT calm, NOT smiling. No lettering on the radio, no badge, no logo, no name tag. Only this one woman, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A muddy mountain trail through dry grass and low bamboo on a hillside near Setana, southwestern Hokkaido, in late April spring: in the lower right foreground a small portable radio and a small brass bell on a strap lie on a tree stump beside the trail; about ten metres further up the trail an adult Hokkaido brown bear, about 2 metres long and roughly 150 to 250 kilograms, ON ALL FOURS, NOT upright, NOT on two legs, is walking calmly across the trail side-on, its head level and turned away from the radio, paying it no attention at all, bare and budding trees, a bay and brown hills in the distance, No snow anywhere, no snow patches, no frost, no ice, no winter. No readable text, no logo. Framed from adult eye height about four metres back, the left half of the frame left as clear open space. Eerie, uneasy quiet, soft overcast light, muted natural tones. Photorealistic, shot on RED camera, telephoto lens. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規（今の ASSET-211_still.png は道の脇に雪があり、キャラはハンターなので使わない）。研究者を左に置き、背景は奥のクマへゆっくり寄る（動画は作らない）。中央に「音に鈍いクマも」を白字で表示し、「鈍い」だけ赤字。"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-124",
+  "verdict": "FAIL",
+  "subject": "ハンター・クマ",
+  "evidence": "A full-body Japanese local hunter in his 60s",
+  "missing": "クマが描かれていない",
+  "reason": "ナレーションに登場するハンターは描かれていますが、クマはプロンプトに登場しません。"
+}

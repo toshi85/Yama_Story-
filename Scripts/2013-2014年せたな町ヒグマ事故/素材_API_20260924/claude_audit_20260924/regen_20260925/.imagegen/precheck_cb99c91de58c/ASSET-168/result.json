@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-168",
+  "verdict": "FAIL",
+  "subject": "岡部さん・クマ・荒れた畑",
+  "evidence": "A full-body Japanese former fisherman aged 86／An abandoned, overgrown hillside field",
+  "missing": "クマが描かれていない。",
+  "reason": "ナレーションに登場する岡部さんとクマのうち、プロンプトに描かれるのは岡部さんだけである。"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-066",
+  "narration": "山へ入ったのは、45歳の女性と63歳の知人男性。",
+  "asset_type": "キャラアニメーション",
+  "scene": "春の山道の入口で、これから山菜採りに入る女性（CHAR-03）と男性（CHAR-04）。まだ何も起きていないので、2人とも明るい顔。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-03 再利用) (CHAR-04 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Exactly two full-body Japanese figures side by side, walking toward the viewer at a slight three-quarter angle, both faces clearly visible. Left to right: 1) (CHAR-03 再利用) a woman in her mid 40s in a MAROON field jacket (deep red-brown, NOT green), charcoal trousers and dark hair tied low in a short bun, an empty woven basket on her arm, eyebrows raised cheerfully, eyes curved into happy arcs, mouth wide open in a bright smile; 2) (CHAR-04 再利用) a man aged 63 with short greying hair, CLEAN-SHAVEN with no beard and no moustache, a grey field jacket, navy trousers and brown boots, a small canvas bag on his shoulder, eyebrows raised, eyes bright and wide, mouth open in a hearty laugh. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT. Both relaxed and looking forward to the day, NOT frightened, NOT worried. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "The start of a narrow mountain trail leading into bare woods from a gravel road near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring: bare and budding deciduous trees, dry brown bamboo grass, brown leaf litter, the Sea of Japan glimpsed through the trees, No snow anywhere, no frost, no ice, no winter. Framed from adult eye height about five metres back, the middle of the frame left as clear open space. Fresh, bright but slightly hazy midday light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。2人を右から中央へ歩かせる（動画は作らない）。左上に「2人で入山」を白字で置き、「2人」だけ赤字。2人の頭上に「45歳」「63歳」を白字で小さく置く。"
+  ]
+}

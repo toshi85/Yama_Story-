@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-141",
+  "narration": "鑑定の結果、DNAは不一致。",
+  "asset_type": "Lovart静止画",
+  "scene": "研究台に左右に並べた無記名の試料封筒2通。窓の外は5月の緑で、雪は描かない。判定は編集の文字で示す。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "Two plain sealed kraft specimen envelopes lying side by side on a dark laboratory bench in a small research laboratory in southwestern Hokkaido, in mid-May late spring: a microscope and a rack of capped sample tubes pushed to the back of the bench, a window with fresh light-green trees and the sea outside, No snow anywhere, no snow on any distant mountain, no frost, no ice, no winter. No lettering on the envelopes, no readable text, no real institution name, no crest, no emblem, no logo. The two envelopes sit in the lower middle of the frame, the upper third deliberately left as clean negative space for large lettering. Framed from adult eye height about two metres back. Heavy, disappointed mood, soft cool daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 静止画は新規。5秒で1.0→1.12倍にゆっくり寄る。左の封筒に「2014年の現場」、右の封筒に「5月のクマ」を小さく白字で置き、中央上に「DNAは不一致」を白字で表示し、「不一致」だけ赤字。DNAの波形などは描かない。"
+  ]
+}

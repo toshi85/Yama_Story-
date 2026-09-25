@@ -56,7 +56,8 @@ for name in OVERRIDES:
         text = text[:tail.start()]
     blocks, _ = split_blocks(text)
     for n, b in blocks.items():
-        base[n] = b
+        # 作業ファイルの題（「# せたな町 作り直し28カット」など）は納品物に入れない
+        base[n] = re.sub(r"\A(?:#[^\n]*\n+)+", "", b)
         source[n] = name.replace("Asset_Prompts_", "").replace(".md", "")
 
 

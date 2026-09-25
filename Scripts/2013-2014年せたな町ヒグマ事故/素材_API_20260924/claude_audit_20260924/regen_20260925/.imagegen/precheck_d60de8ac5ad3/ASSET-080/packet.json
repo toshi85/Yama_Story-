@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-080",
+  "narration": "男性はそのナタで、クマの顔面をたたきます。",
+  "asset_type": "キャラアニメーション",
+  "scene": "向かってくるクマの前で、ナタを振り上げる男性（CHAR-04）。キャラは既存の ASSET-080_char.png、夏の緑が写った背景を079の実写に差し替える。",
+  "fences": [
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "An adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms charging straight toward the camera ON ALL FOURS along a narrow forest trail near Setana, southwestern Hokkaido, in early April early spring, never rearing up on its hind legs, NOT on two legs, head dropped low, jaws wrenched wide open with fangs bared, ears pinned flat, the fur along its neck bristled up, claws fully extended. Ferocious, enraged. Dry brown bamboo grass and bare trees, No snow anywhere, no frost, no ice, no winter. The left third of the frame left as clear open space. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は079の ASSET-079_still.png、キャラは既存の ASSET-080_char.png。男性を左3分の1に置き、ナタを持つ腕を振り下ろす方向へ1回だけ動かし、接触の手前で止める（動画は作らない）。中央に「ナタで反撃」を白字で表示し、「反撃」だけ赤字。"
+  ]
+}

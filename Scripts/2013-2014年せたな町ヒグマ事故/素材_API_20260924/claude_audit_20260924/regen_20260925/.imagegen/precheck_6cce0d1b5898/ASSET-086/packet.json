@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-086",
+  "narration": "専門家は、男性が落ち着いてクマの動きを見て反撃し、被害を最小限に食い止めたと評価しています。",
+  "asset_type": "キャラアニメーション",
+  "scene": "研究室の机の前で、男性の応戦を「落ち着いた反撃だった」と感心して評価する研究者（CHAR-07）。机の白紙には編集で080の画面（ナタを振るう男性と迫るクマ）を重ねる。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, her face clearly visible. She holds one plain blank sheet in her left hand and points at it with her right index finger, eyebrows raised high, eyes wide and shining with admiration, mouth open mid-sentence in an impressed smile, deeply impressed, NOT neutral, NOT bored. No lettering on the sheet or coat, no badge, no logo, no name tag. Only this one woman, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A researcher's old wooden worktable by a large window in southwestern Hokkaido, in early April early spring: one blank white sheet on the table, pencils, books and rock samples on the shelves, bare birches and brown hills with the sea outside the window, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Thoughtful, calm afternoon daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-086_bg.png、キャラは新規の ASSET-086_char.png。研究者を右に置き、机の白紙の位置に080の画面（ナタを振るう男性と迫るクマ）を小さく重ねて、指さす腕を小さく動かす。中央に「冷静な反撃」を白字で表示し、「反撃」だけ赤字。"
+  ]
+}

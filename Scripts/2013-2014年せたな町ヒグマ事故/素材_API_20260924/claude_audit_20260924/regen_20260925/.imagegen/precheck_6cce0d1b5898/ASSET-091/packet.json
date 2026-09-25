@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-091",
+  "narration": "この地域では、山のそばに暮らす住民もクマを警戒していたとのこと。",
+  "asset_type": "キャラアニメーション",
+  "scene": "家の裏の畑で、すぐ上の裏山をこわごわ見上げる地元の住民（CHAR-10）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local resident man in his 70s with short white hair, deeply lined face, CLEAN-SHAVEN with no beard and no moustache, a beige work jacket, grey trousers and rubber boots, standing at a slight three-quarter angle facing the viewer, his face clearly visible, head turned to his right toward where he looks. He holds a garden hoe close to his chest with both hands, eyebrows pulled together and slanted steeply upward, eyes wide and darting, mouth bent into a worried frown, a bead of sweat on his temple, wary and uneasy, NOT calm, NOT smiling. No lettering, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "The back of an old wooden rural house near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring: a small freshly tilled vegetable field with a low wire fence right behind the house, and immediately beyond it a steep wooded hillside of bare deciduous trees and dense dry bamboo grass rising close above the field, No snow anywhere, no snow patches, no frost, no ice, no winter. No readable text, no nameplate. Framed from adult eye height about five metres back, the left half of the frame left as clear open space. Uneasy, quiet overcast afternoon light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。住民を左に置き、裏山のほうへ首を小さく振らせる（動画は作らない）。中央に「住民も警戒」を白字で表示し、「警戒」だけ赤字。"
+  ]
+}

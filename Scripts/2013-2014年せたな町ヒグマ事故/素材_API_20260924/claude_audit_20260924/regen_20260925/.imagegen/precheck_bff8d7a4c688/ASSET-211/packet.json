@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-211",
+  "narration": "「ただ、鈴やラジオの音に、反応が鈍いクマもいることも事実」",
+  "asset_type": "Lovart動画",
+  "scene": "山道の切り株の上で鳴っている携帯ラジオと鈴のすぐ先を、ヒグマが気にもとめずに横切っていく（実写）。釣賀室長の言葉の続き。207〜213のキャラの連続を切るため、ここは実写の動画にする。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "A muddy mountain trail through dry grass and low bamboo on a hillside near Setana, southwestern Hokkaido, in late April spring: in the lower right foreground a small portable radio and a small brass bell on a strap lie on a tree stump beside the trail; about ten metres further up the trail an adult Hokkaido brown bear, about 2 metres long and roughly 150 to 250 kilograms, ON ALL FOURS, NOT upright, NOT on two legs, is walking calmly across the trail side-on, its head level and turned away from the radio, paying it no attention at all, bare and budding trees, a bay and brown hills in the distance, No snow anywhere, no snow patches, no frost, no ice, no winter. No readable text, no logo. Captured as a frozen mid-stride moment. Framed from adult eye height about four metres back, the upper left of the frame left as clear open space. Eerie, uneasy quiet, soft overcast light, muted natural tones. Photorealistic, shot on RED camera, telephoto lens. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous shot from a fixed camera on a spring mountain trail in Hokkaido: a small brass bell on a strap swings gently on a tree stump beside a portable radio in the foreground, while an adult brown bear on all fours walks calmly across the trail further up, never turning its head toward the radio or the bell, and disappears into the low bamboo. It never stands up on two legs. No cuts, no scene change, no zoom. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。ラジオの音と鈴の音を効果音で重ねる。左上に「釣賀室長」を白字で小さく置き、中央に「音に鈍いクマも」を白字で表示し、「鈍い」だけ赤字。今の ASSET-211_still.png（道の脇に雪）と旧 ASSET-211_char.png は使わない。"
+  ]
+}

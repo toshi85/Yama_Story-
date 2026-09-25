@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-053",
+  "narration": "民家と山の境目に茂ったササを刈り、視界を良くすることでクマが家へ近づきにくくしたのです。",
+  "asset_type": "キャラアニメーション",
+  "scene": "民家の裏と山の境目で、刈り払われたササの帯。キャラは既存の ASSET-053_char.png（刈払機の作業員）を使い、雪の写った背景だけ作り直す。",
+  "fences": [
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "The boundary between the back of a rural wooden house and a forested hillside near Setana, southwestern Hokkaido, in mid-April early spring: a wide freshly cut strip where tall bamboo grass has been mown down to short stubble, piles of cut dry bamboo stalks along its edge, uncut dense bamboo grass still growing tall on the slope beyond, bare and budding deciduous trees, brown leaf litter, No snow anywhere, no frost, no ice, no winter. The open sightline from the house to the trees is clearly visible. Framed from adult eye height about five metres back, the middle of the frame left as clear open space. Calm, practical, soft overcast afternoon light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は新規、キャラは既存の ASSET-053_char.png。作業員を刈った帯の上で左から右へ少しずつ動かす（動画は作らない）。中央に「ササを刈って見通し」を白字で表示し、「ササ」だけ赤字。"
+  ]
+}

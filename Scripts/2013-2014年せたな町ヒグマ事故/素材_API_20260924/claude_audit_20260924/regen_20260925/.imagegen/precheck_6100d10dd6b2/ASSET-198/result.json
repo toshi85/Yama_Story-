@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-198",
+  "verdict": "FAIL",
+  "subject": "クマ・捜索打ち切り",
+  "evidence": "He holds a packed backpack by its top handle in his right hand, his shoulders dropping, eyebrows raised and relaxed in the middle, eyes squeezed shut, mouth open in a big long sigh",
+  "missing": "クマが描かれていない",
+  "reason": "ナレーションに登場するクマがプロンプトの絵におらず、ハンターの反応で代替しているため。"
+}

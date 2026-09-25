@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-130",
+  "narration": "しかし、その後も全力で捜索しましたが、見つけることはできませんでした。",
+  "asset_type": "キャラアニメーション",
+  "scene": "夕暮れの山道を、泥だらけで首にタオルを掛けて戻るハンター（CHAR-05）。落胆した顔。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, a small white towel around his neck, mud on his knees and boots, walking toward the viewer at a slight three-quarter angle with his head hanging, his face clearly visible. Eyebrows slanted steeply upward, eyes wet and glistening, mouth bent into a trembling downturned frown, sweat dripping down his cheeks, crushed and disappointed, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "An empty paved mountain road curving down out of the hills at dusk near Setana, southwestern Hokkaido, in late April spring: bare and budding trees, dry brown grass on the verges, an orange evening sky over brown forested hills, No snow anywhere, no snow on any distant mountain, no frost, no ice, no winter, no cherry blossoms. Dim but NOT pure black — the road stays clearly readable. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Weary, quiet mood, low warm dusk light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。ハンターを右から中央へゆっくり歩かせて止める。中央に「全力でも空振り」を白字で表示し、「空振り」だけ赤字。"
+  ]
+}

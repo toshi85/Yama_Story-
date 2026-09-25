@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-142",
+  "verdict": "FAIL",
+  "subject": "箱わなにかかった別のクマ",
+  "evidence": "a printed photograph of the captured adult male Hokkaido brown bear, about 1.8 metres long and about 250 kilograms, crouching inside a steel box trap, lying on the desk",
+  "missing": "箱わなにかかった別のクマをカートゥンで描いた姿",
+  "reason": "捕獲されたクマを机上の写真と編集で重ねる画像に任せており、プロンプトの絵には描いていないため。"
+}

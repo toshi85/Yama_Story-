@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-115",
+  "verdict": "FAIL",
+  "subject": "捜索隊・3班",
+  "evidence": "Three full-body Japanese search-team leaders, each heading off a different way",
+  "missing": "各班の隊員（描かれているのは班長3人のみ）",
+  "reason": "3班に分かれて山へ入る捜索隊が主題だが、プロンプトには各班の先頭に立つ3人しか描かれていない。"
+}

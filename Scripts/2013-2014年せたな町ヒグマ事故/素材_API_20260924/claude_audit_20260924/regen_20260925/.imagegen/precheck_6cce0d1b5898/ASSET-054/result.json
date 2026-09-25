@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-054",
+  "verdict": "FAIL",
+  "subject": "小中学生・スクールバス",
+  "evidence": "A small white Japanese school bus stopped right at the front entrance of a rural wooden house near Setana",
+  "missing": "中学生",
+  "reason": "スクールバスと既存の小学生キャラは指定されていますが、ナレーションに登場する中学生は描かれていません。"
+}

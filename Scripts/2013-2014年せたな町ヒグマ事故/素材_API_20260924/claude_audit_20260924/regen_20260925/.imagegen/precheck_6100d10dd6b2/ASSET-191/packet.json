@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-191",
+  "narration": "設置されていた箱わなにかかり、ハンターによって駆除されたとのこと。",
+  "asset_type": "キャラアニメーション",
+  "scene": "夏のビート畑脇の箱わなの横で、険しい顔で立つハンター（CHAR-05）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back with the muzzle pointing up, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He wipes sweat from his brow with the back of one hand, eyebrows pulled together, eyes narrowed and heavy, mouth pressed into a grim line, sweat dripping from his temple in the summer heat, grim and tense, NOT calm, NOT smiling. No lettering, no badge, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "An empty steel box trap for bears set at the edge of a sugar beet field bordered by woods in Imakane, southwestern Hokkaido, in early August summer: lush green beet leaves in rows, green wooded hills, a hot blue sky, the trap door raised open, No snow anywhere, no frost, no ice, no winter. No readable text, no logo. Framed from adult eye height about six metres back, the trap on the right, the left half of the frame left as clear open space. Heavy, still summer heat, bright light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-191_still.png、キャラは新規の ASSET-191_char.png を左に置く。ASSET-191_video.mp4 は使わない（動画は作らない）。中央に「箱わなで捕獲・駆除」を白字で表示し、「駆除」だけ赤字。"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-104",
+  "verdict": "FAIL",
+  "subject": "専門家・ヒグマ・襲われた人",
+  "evidence": "A full-body Japanese female researcher in her 40s",
+  "missing": "ヒグマと襲われた人が描かれていない",
+  "reason": "研究者は描かれているが、ナレーションに登場するヒグマと襲われた人はプロンプトに登場しない。"
+}

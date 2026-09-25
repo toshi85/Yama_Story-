@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-090",
+  "narration": "周辺の道にも、クマへの注意を呼びかける看板が設置されました。",
+  "asset_type": "Lovart動画",
+  "scene": "山沿いの道の脇で、新しく立てたクマ注意看板の支柱を、作業手袋の手が締める。091〜093がキャラなので、ここは実写にしてキャラの4連続を避ける。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "A newly installed bear warning sign beside a country road along the forested hills near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring: a yellow diamond sign showing only a black bear pictogram and no words, on a fresh metal post; a Japanese worker's gloved hands in navy work-jacket sleeves tighten the clamp on the post with a spanner, only the hands and forearms visible, no face visible. A second identical sign on a post further along the road. Dry brown roadside grass, bare and budding trees, the sea in the distance, No snow anywhere, no snow patches, no snow on any mountain, no frost, no ice, no winter. No readable text anywhere. Captured as a frozen moment. Framed from adult eye height about two metres away, the left half of the frame left as clear open space. Alert, businesslike midday light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous shot beside an early-spring Hokkaido country road: gloved hands in navy sleeves give the clamp of a new bear warning sign a final turn with a spanner and let go; the camera slowly pulls back and pans to reveal a second new sign further along the empty road and the bare forested hills. Only hands and forearms ever appear, no face visible. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。看板の上に「クマ出没注意」を白字で重ね、左上に「周辺の道にも看板」を白字で置き、「看板」だけ赤字。旧ASSET-090_char.png は使わない。"
+  ]
+}

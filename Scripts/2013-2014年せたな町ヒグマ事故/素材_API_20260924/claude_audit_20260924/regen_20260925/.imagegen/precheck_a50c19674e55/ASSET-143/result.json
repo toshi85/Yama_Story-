@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-143",
+  "verdict": "FAIL",
+  "subject": "町の人々・襲われた人・クマ",
+  "evidence": "Exactly three full-body Japanese townspeople standing close together toward the viewer at a slight three-quarter angle",
+  "missing": "人を襲ったクマと、襲われた人が描かれていない。",
+  "reason": "町の人々は描かれているが、ナレーションに登場するクマと襲われた人はプロンプトの絵に登場しない。"
+}

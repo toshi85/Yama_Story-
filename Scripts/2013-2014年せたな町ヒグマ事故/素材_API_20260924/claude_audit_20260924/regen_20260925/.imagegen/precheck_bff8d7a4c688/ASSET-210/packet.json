@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-210",
+  "narration": "専門家の釣賀一二三（つるが ひふみ）室長は、「山に入るときはクマへ人の存在を知らせることが重要」",
+  "asset_type": "キャラアニメーション",
+  "scene": "研究室で、クマよけの鈴を掲げて呼びかける専門家の釣賀室長（研究者・専門家＝CHAR-07）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, standing square to the viewer with her shoulder line parallel to the picture plane, her face clearly visible. She holds a small brass hiking bell up at shoulder height in her right hand and presses her left hand to her chest, eyebrows raised high, eyes wide open, mouth wide open as she speaks urgently, a bead of sweat on her temple, earnest and urgent, NOT calm, NOT smiling. No lettering, no badge, no logo, no name tag. Only this one woman, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A research laboratory bench by a window in Hokkaido, in April early spring: on the left a folded topographic map with a compass and a blank notebook, on the right a white rack with about twenty small capped sample tubes with blank labels, a microscope further back; through the window, bare and budding trees and brown hills under a pale sky, No snow anywhere, no frost, no ice, no winter, no lush summer green. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Focused, hopeful mood, cool clean daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は ASSET-181_bg.png を再利用し、左の地図の側へ寄せて181・184と画を変える（今の ASSET-210_still.png は岩の横に雪があるので使わない）。キャラは新規の ASSET-210_char.png を右に置き、鈴を持つ腕を小さく振る（動画は作らない）。左上に「釣賀一二三 室長」を白字で置き、中央に「人の存在を知らせる」。「知らせる」だけ赤字。"
+  ]
+}

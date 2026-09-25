@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-145",
+  "narration": "せたな町の会議で、クマへの対応が取り上げられます。",
+  "asset_type": "Lovart静止画",
+  "scene": "12月、冬の町の会議室。町の議員・職員が机を囲み、机にクマの写真と山の地図。窓の外は積雪の雪景色。参加者は後ろ姿と斜め後ろ姿で、顔は見せない。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "A meeting room in a small rural town office in Setana, southwestern Hokkaido, in mid-December winter: long tables pushed together, around which six Japanese town council members and officials in dark suits and navy work jackets sit, seen from behind and from a three-quarter back angle, faces turned toward the table and not identifiable, one of them leaning forward to point at the table; a plain photograph of an adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms and a plain topographic map of forested hills with no lettering laid on the table, tall windows showing deep snow on the ground, snow-covered roofs and bare trees outside, a grey Sea of Japan sky. Winter is intended in this scene. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about four metres back, from behind the seated members, the upper third left as clean negative space for large lettering. Serious, heavy mood, cold grey daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 静止画は新規。5秒で1.0→1.12倍に机の写真へゆっくり寄る。中央に「町の会議で議題に」を白字で表示し、「会議」だけ赤字。"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-146",
+  "verdict": "FAIL",
+  "subject": "町・クマ・捜索",
+  "evidence": "A line of five Japanese hunters in blaze-orange safety vests over dark green jackets, seen from behind and small in the frame, frozen mid-stride in single file through knee-deep snow into a forest of snow-covered bare trees",
+  "missing": "対策本部とクマが描かれていない",
+  "reason": "捜索隊は描かれていますが、ナレーションに出る町の対策本部とクマはプロンプトの絵に登場しません。"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-128",
+  "verdict": "FAIL",
+  "subject": "ハンター・住民・クマ",
+  "evidence": "Two full-body Japanese men facing each other at a slight three-quarter angle toward the viewer, both faces clearly visible.",
+  "missing": "クマが描かれていない。",
+  "reason": "ナレーションに登場するハンターと住民は描かれているが、クマはプロンプトの絵に登場しない。"
+}

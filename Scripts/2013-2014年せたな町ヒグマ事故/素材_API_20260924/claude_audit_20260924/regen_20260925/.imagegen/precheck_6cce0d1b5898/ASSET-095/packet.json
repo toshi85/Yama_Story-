@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-095",
+  "narration": "すると、遺伝子がぴったり一致したのです。",
+  "asset_type": "キャラアニメーション",
+  "scene": "研究室で、照合結果がぴったり一致して目をむいて驚く研究者（CHAR-07）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, her face clearly visible, leaning back in shock. She holds one blank printed sheet in both hands, eyes bulging almost out of her head with pupils shrunk to tiny dots, eyebrows shot up so hard the forehead is a mass of creases, mouth stretched wide open in a gasp, sweat flying off her face in droplets, stunned, NOT calm, NOT smiling. No lettering on the sheet or coat, no badge, no logo, no name tag. Only this one woman, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A small genetics laboratory bench in a research facility in Hokkaido, in early April early spring: a clean white bench with a rack of small capped sample tubes, a pipette, a small centrifuge and a computer monitor showing only an abstract pattern, a window with bare brown trees outside, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Startling, cool daylight, NOT pure black, the bench clearly readable, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。研究者を中央に置き、のけぞるように1回小さく揺らす（動画は作らない）。研究者の持つ紙の上に、白い縦じまの帯模様（DNAの型）を左右2列に並べた簡単な図を編集で重ね、左「2014年」右「2013年」の列のしまが同じ位置で並ぶようにして、2列を白い枠で囲む。中央に「DNAが一致」を白字で表示し、「一致」だけ赤字。"
+  ]
+}

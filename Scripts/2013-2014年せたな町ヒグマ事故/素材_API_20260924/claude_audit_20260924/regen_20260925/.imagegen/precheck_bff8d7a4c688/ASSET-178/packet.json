@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-178",
+  "narration": "町内のコンビニや民宿などにも200枚ほどのビラが配られ、",
+  "asset_type": "Lovart動画",
+  "scene": "コンビニのカウンターに、紺の作業着の袖の手が、クマの写真入りのビラの束を置き、1枚を客のほうへ差し出す（実写・手元だけ）。174〜179のキャラの連続を切るため、ここは実写の動画にする。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "The counter of a small convenience store in a seaside town near Setana, southwestern Hokkaido, in April early spring: a neat stack of warning leaflets with a photograph of an adult Hokkaido brown bear about 2 metres long on the counter, snack shelves and a drinks cooler behind, a window showing the grey sea and a green headland, No snow anywhere, no frost, no ice, no winter. No readable text, no store name, no logo. Framed from adult eye height about three metres back, the left and middle of the frame left as clear open space. Busy, uneasy mood, soft daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous shot at the counter of a small seaside convenience store in Hokkaido in spring: a hand in a navy work-jacket sleeve enters the frame, sets down a fresh stack of warning leaflets with a bear photograph beside the first stack, then slides one leaflet forward across the counter. Only the hand and forearm ever appear, no face visible. No readable text on the leaflets. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。中央に「ビラ200枚」を白字で表示し、「200枚」だけ赤字。旧 ASSET-178_char.png と今の ASSET-178_video.mp4 は使わない。"
+  ]
+}

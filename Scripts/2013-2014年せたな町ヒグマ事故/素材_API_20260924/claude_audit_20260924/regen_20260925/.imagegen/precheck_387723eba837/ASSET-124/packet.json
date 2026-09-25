@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-124",
+  "narration": "日が沈むまでクマを探したものの、結局クマは見つかりませんでした。",
+  "asset_type": "キャラアニメーション",
+  "scene": "夕暮れの林道を、疲れ切って肩を落として戻るハンター（CHAR-05）。雪は描かない。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, mud on his boots and trousers, trudging toward the viewer at a slight three-quarter angle with his shoulders slumped, his face clearly visible. Eyebrows slanted steeply upward, eyes half-closed and drooping with exhaustion, mouth hanging open panting, sweat dripping down his face, exhausted and dejected, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A gravel forest road leading out of the woods at sunset near Setana, southwestern Hokkaido, in mid-April early spring: bare and budding trees silhouetted against an orange sky, dry brown grass, brown leaf litter, No snow anywhere, no snow patches, no frost, no ice, no winter. Dim but NOT pure black — the road and trees stay clearly readable. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Weary, empty mood, low warm sunset light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。ハンターを奥から手前へ2秒でゆっくり歩かせて止める。中央に「見つからず、、」を白字で表示し、「見つからず」だけ赤字。"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-157",
+  "verdict": "FAIL",
+  "subject": "町の人・ハンター・問題となったクマ",
+  "evidence": "a single file of five Japanese hunters in blaze-orange caps and vests with cased rifles on their backs walks away from the town toward the mountains",
+  "missing": "町の人と問題となったクマが描かれていない。",
+  "reason": "ナレーションに登場するハンターは描かれているが、町の人と駆除対象のクマはプロンプトに登場しない。"
+}

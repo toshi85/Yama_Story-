@@ -3,14 +3,19 @@
 ナレーター: 地区長を通じて、住民への注意も徹底することになりました。
 
 【制作メモ】ASSET-051 [キャラアニメーション] 台本L90
-シーン: 集落の掲示板の横で、地区長が住民へ注意を呼びかける。キャラは既存の ASSET-051_char.png（057と同じ地区長）を使い、雪の残る背景だけを057の掲示板の背景に差し替える。
-→ キャラは既存の ASSET-051_char.png を再利用。
+シーン: 集落の掲示板の横で、地区長が住民へ注意を呼びかけ、住民（CHAR-10）が不安そうに聞く。地区長は既存の ASSET-051_char.png（057と同じ地区長）を使い、聞く住民を新しく作る。雪の残る背景は057の掲示板の背景に差し替える。
+→ 地区長は既存の ASSET-051_char.png を再利用。新しく作るのは聞く住民だけ。
+キャラプロンプト（1:1）:
+```
+(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local resident man in his 70s with short white hair, deeply lined face, CLEAN-SHAVEN with no beard and no moustache, a beige work jacket, grey trousers and rubber boots, standing at a slight three-quarter angle facing the viewer, his face clearly visible, head turned a little to his right as if listening to someone beside him. Both hands clasped tightly in front of his chest, eyebrows pulled together and slanted steeply upward, eyes wide and anxious, mouth bent into a worried frown, a bead of sweat on his temple, nodding seriously, NOT calm, NOT smiling. No lettering, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+```
 背景プロンプト（16:9）:
 ```
 An empty gravel lot beside a wooden community notice board at the edge of a small rural settlement near Setana, southwestern Hokkaido, in mid-April early spring: a small red-roofed community hall, bare and budding deciduous trees, brown leaf litter, forested hills behind, No snow anywhere, no frost, no ice, no winter. The notice board is present but its papers are small and not readable. Framed from adult eye height about six metres back, the left half of the frame left as clear open space. Quiet, uneasy overcast afternoon light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
 ```
-→ 背景は既存の ASSET-057_bg.png（掲示板の横の空き地・雪なし・人物なし）をそのまま使う。新しく作るものはない。
-→ 編集者指示: 背景は ASSET-057_bg.png、キャラは既存の ASSET-051_char.png。地区長を左に置き、上げた手を小さく振る（動画は作らない）。左上に「住民へ注意を徹底」を白字で置き、「注意」だけ赤字。
+→ 背景は既存の ASSET-057_bg.png（掲示板の横の空き地・雪なし・人物なし）をそのまま使う。新しく作るのは住民のキャラだけ。
+→住民セリフ「気をつけないと、、」
+→ 編集者指示: 背景は ASSET-057_bg.png、キャラは既存の ASSET-051_char.png（地区長）と新規の ASSET-051_char2.png（住民）。地区長を左、住民を右に置き、地区長の上げた手を小さく振り、住民を小さくうなずかせる（動画は作らない）。左上に「住民へ注意を徹底」を白字で置き、「注意」だけ赤字。
 
 ---
 
@@ -264,14 +269,14 @@ An adult male Hokkaido brown bear (Ursus arctos yesoensis) about 2 metres long a
 ナレーター: 男性はそのナタで、クマの顔面をたたきます。
 
 【制作メモ】ASSET-080 [キャラアニメーション] 台本L142
-シーン: 向かってくるクマの前で、ナタを振り上げる男性（CHAR-04）。キャラは既存の ASSET-080_char.png、夏の緑が写った背景を079の実写に差し替える。
+シーン: 向かってくるクマの顔面へ、男性（CHAR-04）がナタを振り下ろして当てる。キャラは既存の ASSET-080_char.png（ナタを振り上げる男性）、夏の緑が写った背景を079の実写に差し替え、当たる瞬間は編集の衝撃表現で見せる。
 → キャラは既存の ASSET-080_char.png を再利用。
 背景プロンプト（16:9）:
 ```
 An adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms charging straight toward the camera ON ALL FOURS along a narrow forest trail near Setana, southwestern Hokkaido, in early April early spring, never rearing up on its hind legs, NOT on two legs, head dropped low, jaws wrenched wide open with fangs bared, ears pinned flat, the fur along its neck bristled up, claws fully extended. Ferocious, enraged. Dry brown bamboo grass and bare trees, No snow anywhere, no frost, no ice, no winter. The left third of the frame left as clear open space. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
 ```
 → 背景は079で新しく作る ASSET-079_still.png を再使用。新しく作るものはない。
-→ 編集者指示: 背景は079の ASSET-079_still.png、キャラは既存の ASSET-080_char.png。男性を左3分の1に置き、ナタを持つ腕を振り下ろす方向へ1回だけ動かし、接触の手前で止める（動画は作らない）。中央に「ナタで反撃」を白字で表示し、「反撃」だけ赤字。
+→ 編集者指示: 背景は079の ASSET-079_still.png、キャラは既存の ASSET-080_char.png。男性を左3分の1に置き、ナタを持つ腕をクマの顔の方へ振り下ろし、ナタの刃先がクマの鼻先に重なった瞬間に白い衝撃の閃光（漫符の放射線）と「バシッ」の効果音を入れ、画面を1回だけ小さく揺らす（動画は作らない。血や傷は描かない）。中央に「ナタで反撃」を白字で表示し、「反撃」だけ赤字。
 
 ---
 
@@ -294,11 +299,11 @@ One single continuous shot from a fixed camera on an early-spring Hokkaido fores
 ナレーター: その後、女性はすぐさま病院へと緊急搬送。
 
 【制作メモ】ASSET-083 [Lovart静止画] 台本L148
-シーン: 山あいの道を走り去る救急車（雪の壁なし）。
+シーン: 山あいの道に止まった救急車の後ろで、救急隊員2人が女性を乗せたストレッチャーを車内へ運び入れる（雪の壁なし）。実在の被害者なので顔は見せず、えんじ色の袖と毛布だけが見える。
 ```
-A white Japanese ambulance with red lights driving away along a narrow road through bare forested hills near Setana, southwestern Hokkaido, in early April early spring: dry brown roadside grass, bare and budding trees, No snow anywhere, no snow walls, no snow patches, no frost, no ice, no winter. Its markings and number plate are present in their normal place, but small, slightly out of focus and not readable, no real institution name, no crest, no emblem, no logo. Seen from behind at adult eye height about fifteen metres back, the upper third left as clean open space. Urgent, tense overcast afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
+Two Japanese paramedics in navy-blue uniforms and white helmets lift a wheeled stretcher into the open rear doors of a white Japanese ambulance stopped on a narrow road through bare forested hills near Setana, southwestern Hokkaido, in early April early spring. On the stretcher lies a Japanese woman in her mid 40s covered to the shoulders by a grey blanket, one arm in a MAROON jacket sleeve resting on top of the blanket; her head is turned away toward the ambulance and no face visible. The two paramedics are seen from behind and from the side, faces turned away and not identifiable. Dry brown roadside grass, bare and budding trees, No snow anywhere, no snow walls, no snow patches, no frost, no ice, no winter. The ambulance markings and number plate are present in their normal place, but small, slightly out of focus and not readable, no real institution name, no crest, no emblem, no logo. Captured as a frozen moment. Framed from adult eye height about eight metres back, the upper third left as clean open space. Urgent, tense overcast afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No blood, no wounds, no gore. Generate 1 image.
 ```
-→ 編集者指示: 画面を5秒で1.0→1.12倍にゆっくり近づける。中央に「緊急搬送」を白字で表示し、「搬送」だけ赤字。
+→ 編集者指示: 画面を5秒で1.0→1.12倍にゆっくり近づける。中央に「緊急搬送」を白字で表示し、「搬送」だけ赤字。サイレンの音を遠くから入れる。
 
 ---
 
@@ -339,7 +344,7 @@ An empty narrow forest trail near Ota in the Taisei district of Setana, southwes
 ナレーター: 専門家は、男性が落ち着いてクマの動きを見て反撃し、被害を最小限に食い止めたと評価しています。
 
 【制作メモ】ASSET-086 [キャラアニメーション] 台本L154
-シーン: 研究室の机の前で、男性の応戦を「落ち着いた反撃だった」と感心して評価する研究者（CHAR-07）。
+シーン: 研究室の机の前で、男性の応戦を「落ち着いた反撃だった」と感心して評価する研究者（CHAR-07）。机の白紙には編集で080の画面（ナタを振るう男性と迫るクマ）を重ねる。
 キャラプロンプト（1:1）:
 ```
 (CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, her face clearly visible. She holds one plain blank sheet in her left hand and points at it with her right index finger, eyebrows raised high, eyes wide and shining with admiration, mouth open mid-sentence in an impressed smile, deeply impressed, NOT neutral, NOT bored. No lettering on the sheet or coat, no badge, no logo, no name tag. Only this one woman, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
@@ -350,7 +355,7 @@ A researcher's old wooden worktable by a large window in southwestern Hokkaido, 
 ```
 → 背景は既存の ASSET-086_bg.png（窓辺の作業机と白紙・雪なし・人物なし）をそのまま使う。新しく作るのはキャラだけ。
 →研究者セリフ「落ち着いた反撃が／被害を抑えました」
-→ 編集者指示: 背景は既存の ASSET-086_bg.png、キャラは新規の ASSET-086_char.png。研究者を右に置き、机の白紙に080の男性の絵を小さく重ねて、指さす腕を小さく動かす。中央に「冷静な反撃」を白字で表示し、「反撃」だけ赤字。
+→ 編集者指示: 背景は既存の ASSET-086_bg.png、キャラは新規の ASSET-086_char.png。研究者を右に置き、机の白紙の位置に080の画面（ナタを振るう男性と迫るクマ）を小さく重ねて、指さす腕を小さく動かす。中央に「冷静な反撃」を白字で表示し、「反撃」だけ赤字。
 
 ---
 
@@ -431,7 +436,7 @@ One single continuous close shot on a laboratory bench: two gloved hands in whit
 A small genetics laboratory bench in a research facility in Hokkaido, in early April early spring: a clean white bench with a rack of small capped sample tubes, a pipette, a small centrifuge and a computer monitor showing only an abstract pattern, a window with bare brown trees outside, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Startling, cool daylight, NOT pure black, the bench clearly readable, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
 ```
 →研究者セリフ「完全に／一致してる！」
-→ 編集者指示: 背景・キャラとも新規。研究者を中央に置き、のけぞるように1回小さく揺らす（動画は作らない）。中央に「DNAが一致」を白字で表示し、「一致」だけ赤字。
+→ 編集者指示: 背景・キャラとも新規。研究者を中央に置き、のけぞるように1回小さく揺らす（動画は作らない）。研究者の持つ紙の上に、白い縦じまの帯模様（DNAの型）を左右2列に並べた簡単な図を編集で重ね、左「2014年」右「2013年」の列のしまが同じ位置で並ぶようにして、2列を白い枠で囲む。中央に「DNAが一致」を白字で表示し、「一致」だけ赤字。
 
 ---
 

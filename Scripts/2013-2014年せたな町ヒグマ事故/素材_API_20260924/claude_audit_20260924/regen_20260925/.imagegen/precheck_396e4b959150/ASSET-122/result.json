@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-122",
+  "verdict": "FAIL",
+  "subject": "長田さん・他のハンター・捜索",
+  "evidence": "Two full-body Japanese hunters facing each other at a slight three-quarter angle toward the viewer",
+  "missing": "「他のハンター」が複数いるうち、若いハンター以外の人物",
+  "reason": "ナレーションに登場する長田さんと複数の他のハンターに対し、プロンプトに描かれるのは長田さんと若いハンターの2人だけです。"
+}

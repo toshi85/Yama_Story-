@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-078",
+  "narration": "そのとき男性が持っていたのは、枝を払うためのナタでした。",
+  "asset_type": "Lovart動画",
+  "scene": "灰色の袖の男性の手が、枝払い用のナタを握っている手元。075〜077がキャラなので、ここは実写にしてキャラの4連続を避ける。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "(CHAR-04 再利用) A close view on a narrow forest trail near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring: a Japanese man's right hand in a grey field jacket sleeve gripping a traditional Japanese nata brush-clearing hatchet with a broad rectangular steel blade and a worn wooden handle, held low at his side, a few cut twigs on the ground. Only the hand, forearm and hip are visible, no face visible. Dry brown bamboo grass and bare trees behind, brown leaf litter, No snow anywhere, no snow patches, no frost, no ice, no winter. Captured as a frozen moment. Framed from about one and a half metres away, the upper third left as clean open space. Tense, uneasy early-afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous close shot on an early-spring Hokkaido forest trail: a Japanese man's hand in a grey jacket sleeve slowly tightens its grip on a Japanese nata hatchet with a broad rectangular blade; a faint rustle in the bamboo grass, and the hand lifts the hatchet a little. The camera stays close on the hand and forearm, no face ever visible. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。左上に「手にはナタ」を白字で置き、「ナタ」だけ赤字。旧ASSET-078_char.png と旧背景は使わない。"
+  ]
+}

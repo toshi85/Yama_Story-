@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-136",
+  "verdict": "FAIL",
+  "subject": "女性・クマ・肉片",
+  "evidence": "She holds a small plain white insulated sample box with both hands at chest height",
+  "missing": "女性とクマが描かれていない。",
+  "reason": "試料を受け取る研究者は描かれているが、ナレーションに登場する女性とクマはプロンプトに登場しない。"
+}

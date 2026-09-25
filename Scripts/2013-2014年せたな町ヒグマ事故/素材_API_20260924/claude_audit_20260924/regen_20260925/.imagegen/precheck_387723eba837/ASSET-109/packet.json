@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-109",
+  "narration": "しかし、草むらが視界を塞ぎ、なかなか思うように探せません。",
+  "asset_type": "キャラアニメーション",
+  "scene": "背丈ほどのササをかき分けても先が見えず、いら立つハンター（CHAR-05）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. He pushes both arms forward as if parting tall grass, eyebrows pulled together and slanted upward, eyes squeezed in frustration, teeth gritted, sweat flying from his temples, frustrated and struggling, NOT calm, NOT smiling. Only his own gear as props, nothing of the surroundings. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A spring forest path almost swallowed by dense tall bamboo grass near Setana, southwestern Hokkaido, in mid-April early spring: bare trees above, the grass closing in from both sides, no path visible beyond a few metres, No snow anywhere, no frost, no ice, no winter. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Frustrating, closed-in mood, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-109_bg.png、キャラは新規の ASSET-109_char.png。ハンターを中央下に置き、左右に小さく揺らす。ササの擦れる音のSE。中央に「草むらが邪魔、、」を白字で表示し、「草むら」だけ赤字。"
+  ]
+}

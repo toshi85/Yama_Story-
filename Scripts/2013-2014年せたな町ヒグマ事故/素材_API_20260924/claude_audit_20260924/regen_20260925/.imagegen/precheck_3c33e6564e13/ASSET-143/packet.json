@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-143",
+  "narration": "町の人々は、人を襲ったクマが今もどこかに潜んでいると、不安でいっぱいの中、暮らすしかありませんでした。",
+  "asset_type": "キャラアニメーション",
+  "scene": "集落の家の前で、町の人々3人（住民 CHAR-10 と近所の女性2人）が裏山のほうを見て、不安で身を寄せ合う。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Exactly three full-body Japanese townspeople standing close together toward the viewer at a slight three-quarter angle, all three faces clearly visible, all glancing nervously to their right. Left to right: 1) (CHAR-10 再利用) a local resident man in his 70s with short white hair, CLEAN-SHAVEN with no beard and no moustache, a deeply lined face, a beige work jacket, grey trousers and rubber boots, hugging himself with both arms, eyebrows slanted steeply upward, eyes wide and darting, mouth bent into a trembling frown, sweat running down his temples; 2) a short, plump Japanese woman in her 60s with permed grey hair, a mustard-yellow cardigan over a white blouse, brown trousers and slip-on shoes, both hands pressed to her cheeks, eyebrows shot up, eyes stretched wide, mouth open in a small gasp; 3) a slim Japanese woman in her 40s with shoulder-length black hair, a dusty-blue windbreaker, black trousers and white sneakers, clutching a shopping bag to her chest, eyebrows pulled together, eyes wide and watery, lips pressed tight, a bead of sweat on her temple. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT. No two of them are the same height. All three frightened and anxious, NOT calm, NOT smiling. No lettering, no logo. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Exactly three people, count them 1, 2, 3. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A quiet residential street in a small settlement near Setana, southwestern Hokkaido, in mid-May late spring: low houses on both sides, power poles, a flowering cherry tree, forested hills rising close behind the houses, No snow anywhere, no frost, no ice, no winter. No readable text, no nameplate, no sign. Framed from adult eye height about six metres back, the middle of the frame left as clear open space. Uneasy, quiet mood, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-143_bg.png、キャラは新規の ASSET-143_char.png。3人を左下に置き、小刻みに震わせる。背景は奥の山へゆっくり寄る。中央に「今もどこかに、、」を白字で表示し、「どこかに」だけ赤字。"
+  ]
+}

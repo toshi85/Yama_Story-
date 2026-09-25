@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-120",
+  "narration": "山道を歩いてると、クマの足跡を発見。",
+  "asset_type": "キャラアニメーション",
+  "scene": "残雪の山道に続くクマの足跡を見つけ、しゃがんで指さし驚くハンター（CHAR-05）。台本どおり残雪を描く。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, crouching on one knee facing the viewer, his face clearly visible. He points down and to his right with his right index finger, eyebrows shot up high, eyes stretched wide open, mouth wide open in a gasp, a bead of sweat flying from his temple, shocked and alert, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A line of large Hokkaido brown bear pawprints, left by an adult male brown bear about 2 metres long and roughly 150 to 250 kilograms, pressed into a strip of lingering old granular snow on a hillside trail near Setana, southwestern Hokkaido, in mid-April early spring: brown leaf litter and dry grass around the snow, bare trees, the Sea of Japan in the distance. Lingering spring snow is intended in this scene. No bear anywhere in the frame. Framed from adult eye height about three metres back, the left half left as clear open space. Ominous, quiet, soft overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-120_still.png、キャラは新規の ASSET-120_char.png。ハンターを左に置き、足跡を指さす腕を小さく動かす（動画は作らない）。中央に「足跡を発見！」を白字で表示し、「足跡」だけ赤字。"
+  ]
+}
