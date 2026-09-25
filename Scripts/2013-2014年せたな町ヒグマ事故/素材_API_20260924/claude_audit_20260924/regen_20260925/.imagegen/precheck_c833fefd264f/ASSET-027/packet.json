@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-027",
+  "narration": "現場付近には、犯行に及んだと思われるクマの足跡が残っており、明らかにヒグマによる犯行でした。",
+  "asset_type": "Lovart静止画 + 編集者",
+  "scene": "沢辺の湿った土に残る、大きなヒグマの足跡だけを写す。クマも人も写さない。",
+  "fences": [
+    {
+      "label": "シーン: 沢辺の湿った土に残る、大きなヒグマの足跡だけを写す。クマも人も写さない。",
+      "language": "",
+      "text": "A close-up looking down at two large fresh Hokkaido brown bear pawprints pressed deep into damp dark streamside soil near Setana, southwestern Hokkaido, in mid-April early spring: five clear toe pads and long claw marks in front of a broad heel pad, each print about 20 centimetres wide, brown leaf litter and a few green shoots around them, No snow anywhere, no frost, no ice, no winter. No bear anywhere in the frame, no animal visible. No people, no hands, no tools, no ruler. Framed from about one metre above the ground, the two pawprints filling the centre of the frame. Ominous, cold overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 静止画をナレーションの尺に合わせて、足跡へゆっくり寄る（動画は作らない）。左上に「残された足跡」を白字で置き、「足跡」だけ赤字。"
+  ]
+}

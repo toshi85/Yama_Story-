@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-015",
+  "verdict": "FAIL",
+  "subject": "女性・車・山",
+  "evidence": "The road and verge are empty: no vehicles, no cars, no signs.",
+  "missing": "車で山へ向かう様子",
+  "reason": "女性は再利用するキャラとして指定され、山の入口も描かれますが、ナレーションの車で向かう出来事は描かれていません。"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-027",
+  "verdict": "FAIL",
+  "subject": "クマ・足跡・犯行",
+  "evidence": "Two large fresh Hokkaido brown bear pawprints pressed deep into damp dark streamside soil",
+  "missing": "犯行に及んだヒグマが描かれていない",
+  "reason": "足跡は描かれているが、ナレーションで犯行の主体となるヒグマは「No bear anywhere in the frame」と指定されている。"
+}

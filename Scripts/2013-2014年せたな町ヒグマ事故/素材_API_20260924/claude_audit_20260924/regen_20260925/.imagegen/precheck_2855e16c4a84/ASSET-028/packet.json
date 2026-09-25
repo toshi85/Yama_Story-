@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-028",
+  "narration": "事故記録によると、奥さんは両手両足の筋肉を食い取られた状態だったとのこと。",
+  "asset_type": "キャラアニメーション",
+  "scene": "診察室で、遺体の状態を悲しそうに説明する医師。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male doctor in his 50s in a plain white coat over a light blue shirt and grey trousers, short grey-black hair, CLEAN-SHAVEN, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He holds a plain clipboard against his chest with both hands, tears running down both cheeks, eyebrows slanted steeply upward in the middle, mouth bent into a trembling downturned frown, deeply grieving and sorrowful, NOT calm, NOT neutral. Only this one doctor, no other people. No lettering on the coat or clipboard, no name tag, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A small quiet consultation room in a rural hospital in southwestern Hokkaido, in mid-April: a plain desk with a closed folder, an empty chair, a white wall, a window with bare and budding trees outside, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Heavy, sorrowful mood, soft cool daylight, NOT pure black, the room clearly readable, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。医師を中央に置き、うつむくように小さく上下させる。中央に「事故記録」を白字で表示し、「事故記録」だけ赤字。"
+  ]
+}

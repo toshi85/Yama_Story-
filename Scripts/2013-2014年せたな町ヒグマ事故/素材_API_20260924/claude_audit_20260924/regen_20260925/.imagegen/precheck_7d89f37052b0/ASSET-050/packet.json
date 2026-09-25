@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-050",
+  "narration": "クマの情報を集めるため、住民からの目撃通報を集めるよう、それぞれの町へ要請します。",
+  "asset_type": "キャラアニメーション",
+  "scene": "047から続く対策会議の会議室で、職員が各町へ電話で要請する。キャラは既存の ASSET-050_char.png（電話でメモを取る職員）を使い、背景だけ会議室に作り直す。",
+  "fences": [
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A meeting room in a small rural town office in southwestern Hokkaido, in mid-April: long tables pushed together, empty folding chairs, a large blank map board on the wall, a desk telephone and scattered documents on the table, a window with bare and budding trees outside, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Tense, busy mood, cool daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は新規、キャラは既存の ASSET-050_char.png。職員を中央に置く。中央に「目撃通報を集める」を白字で表示し、「目撃通報」だけ赤字。"
+  ]
+}

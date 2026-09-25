@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-017",
+  "narration": "ところが、昼になっても奥さんは帰ってきませんでした。",
+  "asset_type": "キャラアニメーション",
+  "scene": "昼になっても帰らない妻を、家の食卓の前で時計を見ながら心配して待つ夫（CHAR-02）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese man in his 50s, the husband, in a dark blue field jacket and grey trousers, short black hair with a little grey, CLEAN-SHAVEN with no beard and no moustache, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He lifts his left wrist and stares at his wristwatch, eyebrows shot up and pulled together, eyes stretched wide, mouth open in a worried frown, a bead of sweat on his temple, his other hand clutching the back of his neck, restless and anxious, NOT calm, NOT smiling. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "An untouched dining table at noon in a rural house in Setana, southwestern Hokkaido, in mid-April early spring: two place settings laid out and not yet used, a wall clock showing about noon, a window with bare and budding trees outside, No snow anywhere, no frost, no ice, no winter. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Quiet, uneasy midday light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-017_still.png、キャラは新規の ASSET-017_char.png。夫を中央に置き、時計を見る腕を小さく上下させる。中央に「帰らぬ妻」を白字で表示し、「帰らぬ」だけ赤字。"
+  ]
+}

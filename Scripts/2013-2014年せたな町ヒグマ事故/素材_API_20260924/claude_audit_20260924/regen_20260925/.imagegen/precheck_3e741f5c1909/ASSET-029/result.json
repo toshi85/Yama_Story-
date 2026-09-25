@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-029",
+  "verdict": "PASS",
+  "subject": "女性・鈴・武器",
+  "evidence": "holding only a small woven gathering basket in one hand, the other hand empty and open, no bell and no tool anywhere on her body or basket",
+  "missing": "",
+  "reason": "ナレーションの主語である女性が描かれ、鈴や武器を持っていないこともプロンプトに明記されています。"
+}

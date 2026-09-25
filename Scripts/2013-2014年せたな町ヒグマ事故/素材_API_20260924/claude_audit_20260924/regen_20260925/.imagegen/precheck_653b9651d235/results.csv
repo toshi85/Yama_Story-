@@ -1,0 +1,9 @@
+﻿id,verdict,narration,subject,evidence,missing,reason
+ASSET-031,FAIL,地元の方によると、亡くなった奥さんは、次の日に夫とともに札幌に住む一人娘を訪ねる予定だったとのこと。,地元の方・奥さん・夫・娘,"Only this one woman, no other people.",亡くなった奥さん・夫・一人娘,地元の方は描かれているが、翌日に娘を訪ねる予定だった奥さんと夫、および訪問先の娘が描かれていない。
+ASSET-032,FAIL,ちなみにこの年は、今回の事件が起きるまで、町にはクマの目撃情報が寄せられていませんでした。,クマ・目撃情報,該当なし,クマ,ナレーションに出るクマがプロンプトに描かれておらず、町の風景とテロップで代替している。
+ASSET-034,FAIL,しかし、クマは一向に見つかりません。,クマ,該当なし,クマ,ナレーションの主題であるクマが描かれず、ハンターの反応と誰もいない山道で代替されている。
+ASSET-036,FAIL,北海道の行政も、念のためせたな町周囲の5つの町にも、事故を知らせる緊急文書を送りました。,北海道の行政・緊急文書の送付,該当なし,北海道の行政が周囲5町へ緊急文書を送る場面,職員が書類を抱えて廊下を急ぐ姿だけでは、緊急文書を送る出来事が描かれていない。
+ASSET-039,PASS,北海道の行政職員と研究者ら合わせて3人が派遣され、町と警察から聞き取りを行いました。,派遣された3人・町職員・警察官,"On the left, the three visitors facing right: 1) (CHAR-07 再利用) a female researcher; 2) a male prefectural official; 3) a male prefectural official. On the right, the two being interviewed facing left: 4) (CHAR-06 再利用) a male town official; 5) a male police officer",,ナレーションに登場する派遣された3人、町職員、警察官の全員が描かれ、聞き取りの場面も示されている。
+ASSET-043,FAIL,ハンターもクマの捜索に入っていました。,ハンター・クマの捜索,A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble,クマ,ハンターは描かれていますが、ナレーションに出るクマはプロンプトに描かれていません。
+ASSET-045,PASS,町は道路沿いの3カ所に注意看板を立て、新成地区の周辺には鉄製の箱わなを2つ設置。,町・注意看板・箱わな,a plain bear warning sign with only a bear pictogram and no words / He rests one hand on top of a small steel box trap beside him,,注意看板と箱わなが絵に描かれ、設置数はテロップで補われている。
+ASSET-050,FAIL,クマの情報を集めるため、住民からの目撃通報を集めるよう、それぞれの町へ要請します。,職員・住民・クマ,キャラは既存の ASSET-050_char.png（電話でメモを取る職員）を使い,住民とクマが描かれていない,電話をかける職員は描かれていますが、ナレーションに出る住民とクマは絵に登場しません。

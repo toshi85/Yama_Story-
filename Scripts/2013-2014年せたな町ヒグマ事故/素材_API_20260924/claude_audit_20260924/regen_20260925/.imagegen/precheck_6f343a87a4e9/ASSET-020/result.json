@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-020",
+  "verdict": "FAIL",
+  "subject": "夫・奥さん・ワゴン車",
+  "evidence": "He points to his right with his right arm fully outstretched; A white wagon car parked on a gravel track beside a mountain stream",
+  "missing": "奥さん",
+  "reason": "ナレーションに出る奥さんがプロンプトの絵に登場しない。"
+}

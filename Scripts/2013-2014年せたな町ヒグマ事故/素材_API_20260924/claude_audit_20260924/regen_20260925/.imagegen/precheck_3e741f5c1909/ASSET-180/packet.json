@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-180",
+  "narration": "そして数日後、事態は思わぬ形で進展することに。",
+  "asset_type": "Lovart静止画",
+  "scene": "対策本部の机で、受話器が外れたままの黒い電話と、書きかけのメモ。",
+  "fences": [
+    {
+      "label": "シーン: 対策本部の机で、受話器が外れたままの黒い電話と、書きかけのメモ。",
+      "language": "",
+      "text": "A black office desk telephone with its handset lifted off and lying beside it on a cluttered municipal desk near a window in Setana, southwestern Hokkaido, in late April spring, a blank notepad with a pencil, a folded map, a cup of tea still steaming, bare budding trees outside the window, No snow anywhere, no frost, no ice, no winter. The desk and chair are empty; the call has just come in. No readable characters on any paper, no real institution name, no crest, no emblem, no logo. Sudden, urgent, suspenseful mood, warm indoor light against cool daylight. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 5秒で1.0→1.12倍に電話へ寄る。電話の着信音SE。中央に「思わぬ進展」を白字で表示し、「進展」だけ赤字。"
+  ]
+}

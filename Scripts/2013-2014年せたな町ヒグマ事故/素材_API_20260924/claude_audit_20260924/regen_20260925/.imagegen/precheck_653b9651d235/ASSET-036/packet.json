@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-036",
+  "narration": "北海道の行政も、念のためせたな町周囲の5つの町にも、事故を知らせる緊急文書を送りました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "役場の廊下を、緊急文書の束を抱えて急ぐ職員。キャラは既存の ASSET-036_char.png（書類を運ぶ職員）を使い、背景だけ廊下に作り直す。",
+  "fences": [
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A plain corridor inside a small rural government office building in southwestern Hokkaido, in mid-April: a long linoleum floor, white walls, a row of closed office doors, a window at the far end with bare and budding trees outside, No snow anywhere, no frost, no ice, no winter. No readable text, no signs, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about four metres back looking down the corridor, the middle of the frame left as clear open space. Urgent, tense mood, cool fluorescent light, NOT pure black, the corridor clearly readable, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は新規、キャラは既存の ASSET-036_char.png。職員を右から左へ急ぐように移動させる（動画は作らない）。中央に「周囲5町へ緊急文書」を白字で表示し、「緊急文書」だけ赤字。"
+  ]
+}

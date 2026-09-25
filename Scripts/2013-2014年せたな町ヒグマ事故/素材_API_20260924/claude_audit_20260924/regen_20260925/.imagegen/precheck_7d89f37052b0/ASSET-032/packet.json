@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-032",
+  "narration": "ちなみにこの年は、今回の事件が起きるまで、町にはクマの目撃情報が寄せられていませんでした。",
+  "asset_type": "Lovart動画",
+  "scene": "せたな町の集落の上を、ドローン視点でゆっくり進む。静かで、クマの気配のない春の町。",
+  "fences": [
+    {
+      "label": "シーン: せたな町の集落の上を、ドローン視点でゆっくり進む。静かで、クマの気配のない春の町。",
+      "language": "",
+      "text": "A high aerial drone view over a small quiet farming settlement near Setana, southwestern Hokkaido, in mid-April early spring: low houses with dark roofs scattered along a country road, small brown fields, forested hills around it with bare and budding trees, the Sea of Japan faintly visible in the distance, No snow anywhere, no frost, no ice, no winter. The camera looks forward and slightly down from about 120 metres above the settlement. No people visible, no readable signs, no real institution name, no crest, no emblem, no logo. Calm, peaceful, soft overcast morning light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "→ **Google Flow動画プロンプト:**",
+      "language": "",
+      "text": "One single continuous aerial drone shot: the camera glides slowly forward over the small quiet farming settlement near Setana in early spring, over the low houses and brown fields toward the forested hills. No cuts, no scene change, smooth steady movement. No people visible. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。中央に「目撃情報ゼロ」を白字で表示し、「ゼロ」だけ赤字。"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-027",
+  "verdict": "FAIL",
+  "subject": "クマの足跡・ヒグマ",
+  "evidence": "Two large fresh Hokkaido brown bear pawprints pressed deep into damp dark streamside soil near Setana, southwestern Hokkaido",
+  "missing": "犯行の主語であるヒグマ本体",
+  "reason": "足跡は描かれていますが、ナレーションで犯行の主語となるヒグマはプロンプトで明示的に画面から除かれています。"
+}

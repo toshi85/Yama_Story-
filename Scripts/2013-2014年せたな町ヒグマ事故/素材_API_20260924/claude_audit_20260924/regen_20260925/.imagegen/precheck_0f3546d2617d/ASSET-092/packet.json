@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-092",
+  "narration": "「春先は畑に行くのにも爆竹、笛が欠かせない」と、旧校舎の近くに住む80歳の女性は語ります。",
+  "asset_type": "キャラアニメーション",
+  "scene": "旧校舎近くの畑の前で、笛と爆竹を手に不安そうに語る80歳の女性。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese woman aged 80 with short white hair, a slightly bent back, a beige work jacket, dark grey slacks and rubber boots, standing square to the viewer with her shoulder line parallel to the picture plane, her face clearly visible. She holds a small silver whistle on a cord up in her right hand and a small red packet of firecrackers in her left hand, eyebrows pulled together and slanted upward, eyes wet and glistening with tears, lips pressed tight and trembling, frightened and anxious, NOT calm, NOT smiling, NOT brave. No lettering on the packet. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A small vegetable field at the edge of a quiet rural settlement near Setana, southwestern Hokkaido, in late April: dark tilled soil, a low wooden fence, an old closed two-storey wooden school building in the background, forested hills behind with bare and budding trees, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no sign, no crest, no emblem, no logo. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Uneasy, quiet, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。女性を右から中央へスライドさせて止める。中央に「笛と爆竹」を白字で表示し、「爆竹」だけ赤字。"
+  ]
+}

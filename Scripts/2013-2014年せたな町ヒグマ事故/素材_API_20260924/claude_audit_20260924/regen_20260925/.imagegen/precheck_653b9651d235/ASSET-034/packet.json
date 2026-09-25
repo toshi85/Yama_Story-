@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-034",
+  "narration": "しかし、クマは一向に見つかりません。",
+  "asset_type": "キャラアニメーション",
+  "scene": "誰もいない春の山道で、クマが見つからず困り果てるハンター（CHAR-05）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He scratches the back of his head with one hand, eyebrows pulled together and slanted upward, eyes wide and darting, mouth bent into a worried frown, a bead of sweat on his temple, baffled and troubled, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "An empty mountain trail winding into a quiet forest near Setana, southwestern Hokkaido, in mid-April early spring: bare and budding deciduous trees, dense bamboo grass along the trail, brown leaf litter, No snow anywhere, no frost, no ice, no winter. No animal visible, no footprints. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Quiet, empty, frustrating stillness, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。ハンターを中央に置き、頭をかく腕を小さく動かす。中央に「見つからない」を白字で表示し、「見つからない」だけ赤字。"
+  ]
+}

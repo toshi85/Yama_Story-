@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-009",
+  "verdict": "FAIL",
+  "subject": "ヒグマ・襲撃",
+  "evidence": "the bear itself is dimly visible, its massive head and shoulders emerging from the gloom above the two files.",
+  "missing": "ヒグマが襲う瞬間",
+  "reason": "ヒグマは描かれていますが、ナレーションが述べる襲撃の瞬間は描かれていません。"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-045",
+  "verdict": "PASS",
+  "subject": "注意看板・箱わな",
+  "evidence": "a plain bear warning sign with only a bear pictogram and no words / He rests one hand on top of a small steel box trap beside him",
+  "missing": "",
+  "reason": "ナレーションに人物・動物は登場せず、主題の注意看板と箱わなはプロンプトに描かれ、設置数はテロップで補われています。"
+}

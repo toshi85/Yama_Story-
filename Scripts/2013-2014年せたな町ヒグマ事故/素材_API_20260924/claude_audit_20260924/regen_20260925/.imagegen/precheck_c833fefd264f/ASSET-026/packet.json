@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-026",
+  "narration": "しかし、奥さんは体から血を流し、すでに息を引き取っていました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "沢辺に倒れて亡くなっている女性（CHAR-01）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-01 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, children's animation style. A full-body Japanese woman aged 52 in a muted olive field jacket, dark trousers and a plain brown outdoor hat fallen beside her head, lying flat on her back seen from the side, her face clearly visible in profile, eyes closed, pale bluish-white face, lips slightly parted, lifeless. Her olive jacket is torn at the shoulder and sleeves, with dark red blood stains soaking the torn jacket and a small dark red pool on the ground under her arm, no open wounds shown, no organs, no bones. Her woven gathering basket lies tipped over near her feet. A very large head about one third of the total body length, a short compact torso and short stubby arms and legs, roughly three heads long. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads long. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A quiet mountain stream bank in a forest near Setana, southwestern Hokkaido, in mid-April early spring: a shallow clear stream over grey rocks, damp brown soil and leaf litter on the bank, bare and budding deciduous trees, No snow anywhere, no frost, no ice, no winter. Framed from adult eye height about four metres back, the flat bank in the lower half of the frame left as clear open space. Somber, silent, cold overcast light, muted desaturated tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。女性を沢辺の下半分に寝かせて置き、動かさない。ゆっくり寄る。左上に「女性は死亡」を白字で置き、「死亡」だけ赤字。"
+  ]
+}

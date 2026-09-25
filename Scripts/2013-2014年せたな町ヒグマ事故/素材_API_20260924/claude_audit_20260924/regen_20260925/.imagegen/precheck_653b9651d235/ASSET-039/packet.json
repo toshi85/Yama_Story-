@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-039",
+  "narration": "北海道の行政職員と研究者ら合わせて3人が派遣され、町と警察から聞き取りを行いました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "せたな町の町なかで、派遣された3人（研究者CHAR-07と道の職員2人）が、町の職員（CHAR-06）と警察官から話を聞く。聞く側と聞かれる側の両方を描く。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Five full-body Japanese figures in two groups facing each other, all faces clearly visible. On the left, the three visitors facing right: 1) (CHAR-07 再利用) a female researcher in her 40s in a plain white lab coat over a navy top, dark brown hair tied back, holding a clipboard and writing; 2) a male prefectural official in his 50s in a grey suit, listening with a deeply worried frown and furrowed eyebrows; 3) a male prefectural official in his 30s in a navy suit, holding a folder, eyes wide and serious. On the right, the two being interviewed facing left: 4) (CHAR-06 再利用) a male town official in his 40s in a navy work jacket, explaining with one hand raised, eyebrows pulled together, mouth open, anxious; 5) a male police officer in his 40s in a plain dark navy uniform and cap with no lettering and no badge, speaking with a grave frown. No lettering, no badge, no logo, no emblem anywhere. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A quiet main street in the small town of Setana, southwestern Hokkaido, in mid-April early spring: low two-storey shops and houses, a wide empty road, power poles, forested hills behind with bare and budding trees, No snow anywhere, no frost, no ice, no winter. No readable text, no signs, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about six metres back, the middle of the frame left as clear open space. Serious, tense mood, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。左の3人と右の2人を向かい合わせで中央に置き、話す職員の腕を小さく動かす（動画は作らない）。左上に「道から3人派遣」を白字で置き、「3人」だけ赤字。"
+  ]
+}

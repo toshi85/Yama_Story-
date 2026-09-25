@@ -1,5 +1,41 @@
 # せたな町 本人確認後の作り直し（2026-09-25・022／026／027／028／092）
 
+ナレーター: 妻の帰りを心配した夫は、山のほうへ探しにいきます。
+
+【制作メモ】ASSET-019 [キャラアニメーション] 台本L29
+シーン: 妻を心配して、リュックを背負い家から山へ急ぐ夫（CHAR-02）。心配が一目で分かる顔。
+キャラプロンプト（1:1）:
+```
+(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese man in his 50s, the husband, in a dark blue field jacket and grey trousers, short black hair with a little grey, CLEAN-SHAVEN with no beard and no moustache, a small dark backpack on his back, hurrying forward toward the viewer at a slight three-quarter angle, facing the viewer, his face clearly visible. Eyebrows pulled together and slanted steeply upward in the middle, eyes wet and welling with tears, mouth turned down and trembling, a bead of sweat on his temple, one hand clutching the backpack strap tightly, deeply worried and anxious, NOT calm, NOT smiling, NOT brave. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+```
+背景プロンプト（16:9）:
+```
+A rural house doorway opening toward a wooded mountain road near Setana, southwestern Hokkaido, in mid-April early spring: bare and budding deciduous trees, brown leaf litter, No snow anywhere, no frost, no ice, no winter. No legible text, no real institution name or emblem. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Uneasy, quiet afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+```
+→ 背景は既存の ASSET-019_bg.png（家の戸口から山道を見る・人物なし）をそのまま使う。新しく作るのはキャラだけ。
+→夫セリフ「無事で／いてくれ、、」
+→ 編集者指示: 背景は既存の ASSET-019_bg.png、キャラは新規の ASSET-019_char.png。夫を家から山道へ右向きに2秒で移動させる。中央に「夫が山へ」を白字で表示し、「山へ」だけ赤字。
+
+---
+
+ナレーター: しばらく歩いて行くと、川の近くに奥さんのワゴン車を発見。
+
+【制作メモ】ASSET-020 [キャラアニメーション] 台本L31
+シーン: 沢の近くで妻のワゴン車を見つけ、驚いて指さす夫（CHAR-02）。
+キャラプロンプト（1:1）:
+```
+(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese man in his 50s, the husband, in a dark blue field jacket and grey trousers, short black hair with a little grey, CLEAN-SHAVEN with no beard and no moustache, a small dark backpack on his back, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He points to his right with his right arm fully outstretched, his head turned to his right toward where he points, eyebrows shot up high, eyes stretched wide open, mouth wide open in a gasp, beads of sweat flying from his temples, shocked and startled, NOT calm, NOT smiling. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+```
+背景プロンプト（16:9）:
+```
+A white wagon car parked on a gravel track beside a mountain stream near Setana, southwestern Hokkaido, in mid-April early spring: bare and budding deciduous trees, brown leaf litter, No snow anywhere, no frost, no ice, no winter. No readable number plate, no legible text, no logo. The car sits in the right half of the frame, the left half left as clear open space. Framed from adult eye height about eight metres back. Uneasy, quiet overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
+```
+→ 背景は既存の ASSET-020_still.png（沢沿いの砂利道に止まる白いワゴン車・人物なし）をそのまま使う。新しく作るのはキャラだけ。
+→夫セリフ「妻の／車だ！」
+→ 編集者指示: 背景は既存の ASSET-020_still.png、キャラは新規の ASSET-020_char.png。夫を左に置き、車を指さす腕を小さく動かす。中央に「ワゴン車発見」を白字で表示し、「発見」だけ赤字。
+
+---
+
 ナレーター: ただ事ではないと判断した夫は、警察に通報。
 
 【制作メモ】ASSET-022 [キャラアニメーション] 台本L34
@@ -15,6 +51,21 @@ A rural household table with a corded telephone and an open blank notebook in a 
 → 背景は既存の ASSET-022_bg.png（電話とノートのある食卓・人物なし）をそのまま使う。新しく作るのはキャラだけ。
 →夫セリフ「妻が／戻らないんです！」
 → 編集者指示: 背景は既存の ASSET-022_bg.png、キャラは新規の ASSET-022_char.png。夫を中央に置き、小刻みに揺らす。中央に「警察に通報」を白字で表示し、「通報」だけ赤字。
+
+---
+
+ナレーター: 車からおよそ200メートル離れた沢の近くで奥さんを発見。
+
+【制作メモ】ASSET-025 [Google Earth] 台本L40
+シーン: Google Earthで新成の集落と、その北の現場付近（沢のある丘の山林）を1画面に入れ、発見場所を赤ピンで示す。
+- 検索座標: `42.3605, 139.8030`
+- カメラ高度: 約1,000m
+- カメラ角度: 斜め45°、3D地形ON
+- 向き: 南→北（新成の集落が手前、現場付近の丘の山林が奥）
+- 新成の集落（OSM建物の集まりの中心）: `42.3565, 139.7998`（標高 約66m）
+- 現場付近（道新「集落から北へ約200m・高さ約30mの丘の山林」から推定）: 約 `42.3645, 139.8060`（標高 約36m）
+- 演出: 現場付近に赤ピン＋「発見場所付近」ラベル／集落に白ラベル「新成の集落」／ゆっくり現場付近へズームイン
+→ 編集者指示: 中央に「車から約200m」を白字で表示し、「200m」だけ赤字。発見の正確な地点は資料に無いので、ピンは「付近」と表示する。Google Earthと画像提供元のクレジットを表示中ずっと残す。
 
 ---
 
@@ -38,10 +89,10 @@ A quiet mountain stream bank in a forest near Setana, southwestern Hokkaido, in 
 ナレーター: 現場付近には、犯行に及んだと思われるクマの足跡が残っており、明らかにヒグマによる犯行でした。
 
 【制作メモ】ASSET-027 [キャラアニメーション] 台本L44
-シーン: 沢辺の湿った土に残る大きなヒグマの足跡を見つけ、驚く捜索者。クマ本体は写さない。
+シーン: 沢辺の湿った土に残る大きなヒグマの足跡を見つけ、驚くハンター（CHAR-05・Fix4で固定）。クマ本体は写さない。
 キャラプロンプト（1:1）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s in a plain khaki field jacket, an orange cap, dark trousers and rubber boots, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He points down at the ground with his right hand, eyebrows shot up high, eyes stretched wide open, mouth wide open in a gasp, a bead of sweat on his temple, shocked and alarmed, NOT calm, NOT smiling. No lettering, no badge, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He points down at the ground with his right hand, eyebrows shot up high, eyes stretched wide open, mouth wide open in a gasp, a bead of sweat on his temple, shocked and alarmed, NOT calm, NOT smiling. No lettering, no badge, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```

@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-043",
+  "narration": "ハンターもクマの捜索に入っていました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "夜明け前の春の林道に、ヘッドランプを付けて捜索に入るハンター（CHAR-05）。雪は描かない。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap with a small headlamp, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, walking toward the viewer at a slight three-quarter angle, facing the viewer, his face clearly visible. Eyebrows pulled down hard, eyes narrowed and alert, mouth pressed into a tight grim line, a bead of sweat on his temple, tense and determined, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A forest track at dawn near Setana, southwestern Hokkaido, in mid-April early spring: bare and budding deciduous trees, brown leaf litter, dry brown grass along the track, a faint blue pre-dawn light over the hills, No snow anywhere, no snow patches, no frost, no ice, no winter. Dim but NOT pure black, the track and trees clearly readable. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Tense, quiet, cold blue dawn light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。ハンターを左から中央へ歩くように移動させる。左上に「ハンターも捜索」を白字で置き、「ハンター」だけ赤字。"
+  ]
+}

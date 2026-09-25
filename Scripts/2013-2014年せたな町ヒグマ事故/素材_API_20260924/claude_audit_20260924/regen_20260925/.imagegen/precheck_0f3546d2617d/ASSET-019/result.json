@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-019",
+  "verdict": "FAIL",
+  "subject": "妻・夫",
+  "evidence": "A full-body Japanese man in his 50s, the husband, in a dark blue field jacket and grey trousers",
+  "missing": "妻",
+  "reason": "ナレーションに登場する夫は描かれていますが、妻はプロンプトの絵に登場しません。"
+}

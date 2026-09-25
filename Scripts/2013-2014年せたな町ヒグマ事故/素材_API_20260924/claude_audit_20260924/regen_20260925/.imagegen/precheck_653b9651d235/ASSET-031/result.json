@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-031",
+  "verdict": "FAIL",
+  "subject": "地元の方・奥さん・夫・娘",
+  "evidence": "Only this one woman, no other people.",
+  "missing": "亡くなった奥さん・夫・一人娘",
+  "reason": "地元の方は描かれているが、翌日に娘を訪ねる予定だった奥さんと夫、および訪問先の娘が描かれていない。"
+}

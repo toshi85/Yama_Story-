@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-045",
+  "narration": "町は道路沿いの3カ所に注意看板を立て、新成地区の周辺には鉄製の箱わなを2つ設置。",
+  "asset_type": "キャラアニメーション",
+  "scene": "見つからないクマに困りながら、道路沿いの注意看板の横で箱わなを据えるハンター（CHAR-05＝043と同じ人）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He rests one hand on top of a small steel box trap beside him and wipes his forehead with the other, eyebrows pulled together and slanted upward, eyes wide and uneasy, mouth bent into a worried frown, sweat on his temple, troubled and anxious, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A country roadside near the forest edge near Setana, southwestern Hokkaido, in mid-April early spring: a plain bear warning sign with only a bear pictogram and no words, bare and budding trees, dry brown grass, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about four metres back, the left half of the frame left as clear open space. Uneasy, quiet overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-045_still.png、キャラは新規の ASSET-045_char.png。ハンターを左に置く（動画は作らない）。中央に「看板3カ所・わな2つ」を白字で表示し、「わな2つ」だけ赤字。"
+  ]
+}

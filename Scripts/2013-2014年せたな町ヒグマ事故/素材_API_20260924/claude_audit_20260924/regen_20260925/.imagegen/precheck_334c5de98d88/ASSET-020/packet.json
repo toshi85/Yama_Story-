@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-020",
+  "narration": "しばらく歩いて行くと、川の近くに奥さんのワゴン車を発見。",
+  "asset_type": "キャラアニメーション",
+  "scene": "沢の近くで妻のワゴン車を見つけ、驚いて指さす夫（CHAR-02）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese man in his 50s, the husband, in a dark blue field jacket and grey trousers, short black hair with a little grey, CLEAN-SHAVEN with no beard and no moustache, a small dark backpack on his back, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He points to his right with his right arm fully outstretched, his head turned to his right toward where he points, eyebrows shot up high, eyes stretched wide open, mouth wide open in a gasp, beads of sweat flying from his temples, shocked and startled, NOT calm, NOT smiling. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A white wagon car parked on a gravel track beside a mountain stream near Setana, southwestern Hokkaido, in mid-April early spring: bare and budding deciduous trees, brown leaf litter, No snow anywhere, no frost, no ice, no winter. No readable number plate, no legible text, no logo. The car sits in the right half of the frame, the left half left as clear open space. Framed from adult eye height about eight metres back. Uneasy, quiet overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-020_still.png、キャラは新規の ASSET-020_char.png。夫を左に置き、車を指さす腕を小さく動かす。中央に「ワゴン車発見」を白字で表示し、「発見」だけ赤字。"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-017",
+  "verdict": "FAIL",
+  "subject": "妻・未帰宅",
+  "evidence": "該当なし",
+  "missing": "妻",
+  "reason": "ナレーションに登場する妻がプロンプトの絵に描かれていません。"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-144",
+  "narration": "そして、事件から8か月余りが過ぎた、2014年12月18日。",
+  "asset_type": "キャラアニメーション",
+  "scene": "雪の積もった12月のせたな町の役場前を、町長が歩いて入っていく。",
+  "fences": [
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A small two-storey municipal office building in the town of Setana, southwestern Hokkaido, in mid-December winter: fresh snow piled along the road and on the roof, a cleared entrance path, bare trees, a grey Sea of Japan sky. Winter is intended in this scene. No real institution name, no crest, no emblem, no logo; signage present in its normal place but small, slightly out of focus and not readable. Framed from adult eye height about ten metres back, the entrance on the right third, the left and middle of the frame left as clear open space. Cold, heavy, determined mood, desaturated blue-white tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は新規、キャラは ASSET-148_char.png を再利用。町長を左から役場の入口へ歩くように移動させる。中央に「2014年12月18日」を白字で表示し、下に小さく「事件から8か月、、」。「8か月」だけ赤字。"
+  ]
+}

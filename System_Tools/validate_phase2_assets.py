@@ -643,6 +643,18 @@ def prompt_lint(text, errors, warns, info):
         errors.append(f'キャラの表情の書き込み不足 {len(few_parts)}件（眉・目・口・汗や涙のうち2つ以上を大げさに書く。例: eyebrows shot up / eyes stretched wide / mouth wide open in a scream / tears streaming）: '
                       + ', '.join(dict.fromkeys(few_parts)))
 
+    # 55) キャラのカット（キャラ＋背景）に動画も作らせていないか（2026-09-25 せたな町 本人指摘
+    #     015「すでにキャラ画像と背景で表現してるので」031「しかもなんで動画？」「余分なものを作ってお金を無駄にするなよ」）。
+    #     キャラ比率を上げるために動画カットへキャラを足し、動画を消さなかった48カットで発生。
+    char_and_video = []
+    for nar, seg in segs:
+        labs = [lab for lab, b in labeled_blocks(seg)]
+        if any('キャラ' in l for l in labs) and any('動画' in l for l in labs):
+            char_and_video.append(asset_no(seg))
+    if char_and_video:
+        errors.append(f'キャラのカットに動画プロンプトもある {len(char_and_video)}件（キャラ＋背景で表すカットに動画は作らない＝二重の生成費。どちらか1つにする）: '
+                      + ', '.join(dict.fromkeys(char_and_video)))
+
     # 46) シーン行で向き・視線を求めているのに、英語プロンプトに指定がない。
     SCENE_DIRECTION = re.compile(r'見る|見つめ|向く|向け|振り返|指さ|指差|視線|の方へ|のほうへ|にらむ|睨')
     PROMPT_DIRECTION = re.compile(

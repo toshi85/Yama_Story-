@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-027",
+  "narration": "現場付近には、犯行に及んだと思われるクマの足跡が残っており、明らかにヒグマによる犯行でした。",
+  "asset_type": "キャラアニメーション",
+  "scene": "沢辺の湿った土に残る大きなヒグマの足跡を見つけ、驚くハンター（CHAR-05・Fix4で固定）。クマ本体は写さない。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He points down at the ground with his right hand, eyebrows shot up high, eyes stretched wide open, mouth wide open in a gasp, a bead of sweat on his temple, shocked and alarmed, NOT calm, NOT smiling. No lettering, no badge, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "Two large fresh Hokkaido brown bear pawprints pressed deep into damp dark streamside soil near Setana, southwestern Hokkaido, in mid-April early spring, seen from adult eye height about two metres back: five clear toe pads and long claw marks in front of a broad heel pad, each print about 20 centimetres wide, left by an adult male brown bear about 2 metres long and roughly 150 to 250 kilograms, brown leaf litter and a few green shoots around them, a shallow stream behind, No snow anywhere, no frost, no ice, no winter. The pawprints sit in the lower right of the frame, the left half left as clear open space. No bear anywhere in the frame, no animal visible. Ominous, cold overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。猟師を左に置き、足跡を指さす腕を小さく動かす。背景は足跡へゆっくり寄る（動画は作らない）。左上に「残された足跡」を白字で置き、「足跡」だけ赤字。"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-019",
+  "narration": "妻の帰りを心配した夫は、山のほうへ探しにいきます。",
+  "asset_type": "キャラアニメーション",
+  "scene": "妻を心配して、リュックを背負い家から山へ急ぐ夫（CHAR-02）。心配が一目で分かる顔。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese man in his 50s, the husband, in a dark blue field jacket and grey trousers, short black hair with a little grey, CLEAN-SHAVEN with no beard and no moustache, a small dark backpack on his back, hurrying forward toward the viewer at a slight three-quarter angle, facing the viewer, his face clearly visible. Eyebrows pulled together and slanted steeply upward in the middle, eyes wet and welling with tears, mouth turned down and trembling, a bead of sweat on his temple, one hand clutching the backpack strap tightly, deeply worried and anxious, NOT calm, NOT smiling, NOT brave. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A rural house doorway opening toward a wooded mountain road near Setana, southwestern Hokkaido, in mid-April early spring: bare and budding deciduous trees, brown leaf litter, No snow anywhere, no frost, no ice, no winter. No legible text, no real institution name or emblem. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Uneasy, quiet afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-019_bg.png、キャラは新規の ASSET-019_char.png。夫を家から山道へ右向きに2秒で移動させる。中央に「夫が山へ」を白字で表示し、「山へ」だけ赤字。"
+  ]
+}

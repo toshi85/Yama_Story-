@@ -1,0 +1,4 @@
+﻿id,verdict,narration,subject,evidence,missing,reason
+ASSET-008,PASS,一年後、また別の女性が襲われました。,別の女性・ヒグマの襲撃,"Behind her on the left, an adult brown bear on all fours bursts out of the bamboo, jaws wrenched wide open with fangs bared, ears pinned flat, the fur along its neck bristled, closes the gap in two powerful bounds and lunges onto her back from behind, knocking her forward toward the ground.",,ナレーションに登場する別の女性と、襲うヒグマの両方が描かれ、襲撃の瞬間も示されている。
+ASSET-009,FAIL,襲ったのは、あの時のヒグマです。,ヒグマの襲撃,An adult male brown bear on all fours advances slowly step by step straight toward the camera out of the gloom,襲撃の瞬間,ナレーションに登場するヒグマは描かれていますが、近づく姿だけで襲撃は描かれていません。
+ASSET-014,PASS,北海道の南西部、日本海に面したせたな町。,せたな町・日本海,A high aerial drone view over the coast of Setana on the Sea of Japan in southwestern Hokkaido,,ナレーションの主題であるせたな町と日本海が、プロンプトの映像に描かれている。

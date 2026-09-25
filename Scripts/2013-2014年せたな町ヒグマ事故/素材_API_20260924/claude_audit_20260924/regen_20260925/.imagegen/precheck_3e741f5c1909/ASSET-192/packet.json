@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-192",
+  "narration": "体長2メートル、体重230キロ。推定7歳のオスでした。",
+  "asset_type": "Lovart静止画",
+  "scene": "捕獲された成獣オスのヒグマの全身（実写）。数値はテロップ。",
+  "fences": [
+    {
+      "label": "シーン: 捕獲された成獣オスのヒグマの全身（実写）。数値はテロップ。",
+      "language": "",
+      "text": "A full side-on view of a single adult male Hokkaido brown bear, about 2 metres long and about 230 kilograms, seven years old, a FULLY GROWN adult, NOT a cub, standing ON ALL FOURS, NOT upright, NOT on two legs, inside a steel box trap for bears at the edge of a summer beet field and woodland in Imakane, southwestern Hokkaido, in early August, seen side-on through the open mesh wall of the trap, the whole captured animal clearly visible. Massive shoulder hump, thick dark brown coat, head dropped low and driven forward between bunched shoulders, jaws open in a savage snarl with long curved fangs bared, ears pinned flat against the skull, the fur along its neck and spine bristled up into a raised ridge, claws fully extended. Ferocious, enraged, single-minded predatory fury. The whole body fits in the frame with clear empty space above the trap. No snow anywhere, no frost, no ice, no winter. Hot hazy summer light. Photorealistic, shot on RED camera, telephoto lens. Documentary wildlife style. 16:9 aspect ratio. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 5秒で1.0→1.1倍にゆっくり寄る。上部に「体長2m」「体重230kg」「推定7歳のオス」を左から1つずつ表示し、数字だけ赤字。"
+  ]
+}

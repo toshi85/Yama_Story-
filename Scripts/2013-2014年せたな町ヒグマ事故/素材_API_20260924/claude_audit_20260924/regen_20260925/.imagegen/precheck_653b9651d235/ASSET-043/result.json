@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-043",
+  "verdict": "FAIL",
+  "subject": "ハンター・クマの捜索",
+  "evidence": "A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble",
+  "missing": "クマ",
+  "reason": "ハンターは描かれていますが、ナレーションに出るクマはプロンプトに描かれていません。"
+}
