@@ -167,5 +167,70 @@ Cute cartoon character design. A paper tag and a clock. White background.
         self.assertEqual([], warnings_for(text, '図解・グラフを編集任せにしている'))
 
 
+class CharacterFacingHeadsBackgroundTest(unittest.TestCase):
+    """rules 51-53: 2026-09-24 せたな町で有料生成後に差し戻された3件を、実際の文面で注入する。"""
+    # せたな町 Asset_Prompts_Full.md ASSET-019 の実物（後ろ向き・chibiと4〜5頭身の混在）
+    FAILED_CHAR = ("Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, "
+                   "slightly chibi proportions, children's animation style. A full-body Japanese husband in his 50s wearing "
+                   "a dark blue field jacket, seen from behind to avoid a real-person likeness, stepping out of a house "
+                   "toward the mountain with one arm forward, four-to-five-head proportions, compact torso and short limbs. "
+                   "Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering.")
+    GOOD_CHAR = ("Cute cartoon character design, thick black outlines, flat cel-shaded colors. A full-body Japanese husband "
+                 "in his 50s, three-quarter front view facing to the right, face clearly visible, large expressive eyes, "
+                 "a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. "
+                 "Do NOT draw them with realistic adult proportions — not six or seven heads tall. Transparent background.")
+    STILL_BG = "A rural house doorway toward a wooded mountain road in early spring, Japan. No people. 16:9."
+    VIDEO_BG = "Animate the frozen frame for 8 seconds. The camera advances along the mountain road. No people."
+
+    def cut(self, no, char, bg=STILL_BG, memo='', extra=''):
+        body = f'キャラプロンプト（1:1）:\n```\n{char}\n```\n背景プロンプト（16:9）:\n```\n{bg}\n```\n{extra}'
+        return segment(no, body=body, note=memo)
+
+    def test_yesterdays_back_view_is_blocked(self):
+        self.assertEqual(1, len(errors_for(self.cut(19, self.FAILED_CHAR), 'キャラが後ろ向きなのに向き理由なし')))
+
+    def test_yesterdays_chibi_mix_is_blocked(self):
+        self.assertEqual(1, len(errors_for(self.cut(19, self.FAILED_CHAR), 'キャラの頭身指定が欠落・矛盾')))
+
+    def test_video_background_is_blocked(self):
+        self.assertEqual(1, len(errors_for(self.cut(19, self.GOOD_CHAR, bg=self.VIDEO_BG), 'キャラカットの背景が静止画になっていない')))
+
+    def test_video_alongside_without_editor_rule_is_blocked(self):
+        extra = 'Google Flow動画プロンプト:\n```\nAnimate the frozen frame for 8 seconds.\n```'
+        self.assertEqual(1, len(errors_for(self.cut(19, self.GOOD_CHAR, extra=extra), 'キャラカットの背景が静止画になっていない')))
+        ok = self.cut(19, self.GOOD_CHAR, extra=extra, memo='→ 編集者指示: キャラ画の区間は開始画像を背景にする。')
+        self.assertEqual([], errors_for(ok, 'キャラカットの背景が静止画になっていない'))
+
+    def test_good_character_cut_passes_all_three(self):
+        text = self.cut(19, self.GOOD_CHAR)
+        for prefix in ('キャラが後ろ向き', '後ろ向きのキャラカットが多すぎる', 'キャラの頭身', 'キャラカットの背景'):
+            self.assertEqual([], errors_for(text, prefix), prefix)
+
+    def test_needed_back_view_with_reason_passes(self):
+        back = self.GOOD_CHAR.replace('three-quarter front view facing to the right, face clearly visible',
+                                      'seen from behind walking away up the trail')
+        text = ''.join(self.cut(i, self.GOOD_CHAR) for i in range(1, 6)) + \
+            self.cut(6, back, memo='向き理由=走り去る後ろ姿をナレーションが語る')
+        self.assertEqual([], errors_for(text, 'キャラが後ろ向きなのに向き理由なし'))
+        self.assertEqual([], errors_for(text, '後ろ向きのキャラカットが多すぎる'))
+
+    def test_all_back_view_with_reasons_still_blocked_by_ratio(self):
+        back = self.GOOD_CHAR.replace('three-quarter front view facing to the right, face clearly visible', 'seen from behind')
+        text = ''.join(self.cut(i, back, memo='向き理由=顔を伏せる') for i in range(1, 6))
+        self.assertEqual(1, len(errors_for(text, '後ろ向きのキャラカットが多すぎる')))
+
+    def test_cartoon_master_back_view_is_blocked(self):
+        master = ('### CHAR-02｜夫\n\n```text\nOne full-body Japanese man. Rear or three-quarter back view only, '
+                  'face not identifiable. Cute Japanese cartoon character design.\n```\n\n---\n\n')
+        errs = errors_for(master + self.cut(19, self.GOOD_CHAR), 'キャラが後ろ向きなのに向き理由なし')
+        self.assertEqual(1, len(errs))
+        self.assertIn('CHAR-02(基準画像)', errs[0])
+
+    def test_photoreal_master_back_view_is_allowed(self):
+        master = ('### CHAR-01｜女性\n\n```text\nA Japanese woman. Show her only from behind; no identifiable face. '
+                  'Photorealistic live-action style.\n```\n\n---\n\n')
+        self.assertEqual([], errors_for(master + self.cut(19, self.GOOD_CHAR), 'キャラが後ろ向きなのに向き理由なし'))
+
+
 if __name__ == '__main__':
     unittest.main()

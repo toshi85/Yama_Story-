@@ -100,7 +100,7 @@
 | **暗いシーン**（pre-dawn / at night / dim / deep shadow / dark room 等） | `dark but NOT pure black — <主要素> stays clearly readable` ／ 黒いクマ＋暗所は最も潰れる |
 | **実在の機関・施設**（大学・病院・省庁・市役所・消防・ドクターヘリ等） | `no real institution name, no crest, no emblem, no logo` ＋ **名称はテロップで出す**（AI生成で実在施設の偽映像を作らない） |
 | **あるはずの物を消すと不自然になる場合** | **「消す」のでなく「読めなくする」**。看板・ナンバープレート・表札などは `present in their normal place, but small, slightly out of focus and not readable` と書く。`no signage` `no number plates` と書くと、ぽっかり空いた偽物くさい絵になる（2026-08-26 実測。診療所の看板・緊急車両のナンバーの2件で発生） |
-| **実在の被害者・公人が関わるカット** | 顔を出さない構図にする（手元／肩越し／首から下／POV／後ろ姿）＋ `no face visible` |
+| **実在の被害者・公人が関わる実写カット** | 顔を出さない構図にする（手元／肩越し／首から下／POV／後ろ姿）＋ `no face visible`。**カートゥンキャラには適用しない**（定石AC） |
 | **日本語の文字を描かせるとき** | ラベルに **【chatGPT推奨】** を付ける（Lovartは日本語を崩す）＋ 描かせる文字は**1〜2個に限定**、残りは `too small to read` |
 | **文字を出したくない画** | `No legible text, no signage, no nameplate anywhere` |
 | **テロップを乗せる画** | 構図で余白を確保する（`the upper two-thirds is deliberately left as clean negative space for large text`）。指定しないと被写体が画面を埋める |
@@ -398,6 +398,13 @@ Not a ground-level shot, not a close-up, no macro texture, no worm's-eye angle.
 - **「ご冥福をお祈りします」の追悼カットは必ず [Lovart動画]**（戸沢村「末尾は必ずAI動画（恒久ルール）」・朱鞠内湖「★追悼（必ず動画）」）。現場の山や海の静かな風景に、文言をテロップで載せる
 - **文字カードを2カット続けない**（190 本人指摘「なんでここは189と連続でテキストにしてるの？」）。日付カードの直後は必ず画
 - 機械検査: validate_phase2_assets.py が、日付・時刻でないナレーションの [テキストのみ]、文字カードの連続、追悼文の非動画を ERROR にする
+
+**AC. カートゥンキャラは顔を見せる・頭身は数字・背景は静止画**（2026-09-24 せたな町で有料生成後に全面差し戻し：全員後ろ向き／頭身の崩れ／キャラの背景が動画）
+- **後ろ向きは理由のあるカットだけ。** 制作メモに `向き理由=走り去る` のように1行書く。理由があってもキャラカットの**2割まで**（本人裁定 2026-09-25「後ろ向きのシーンもあるので、後ろはNGだとおかしいのでは？」）
+- 「実在の被害者は顔を出さない（後ろ姿）」は**実写カットのルール**。カートゥンキャラ（基準画像 CHAR-xx を含む）へ持ち込まない。せたな町の全員後ろ向きはこの持ち込みが原因
+- **頭身**は定石Cの定型句を毎回書き、`chibi` 等の別の体型語を混ぜない（せたな町は `slightly chibi` と `four-to-five-head` が同居）
+- **背景**は透過キャラPNG＋人物なし（`No people`）の16:9静止画を別々に書く。動画を併記するなら編集者指示に「キャラ画の区間は開始画像を背景にする」
+- 機械検査: validate_phase2_assets.py lint51〜53（check_prompts_all.py の合格票に含まれる）／Codex側 check_character_generation.py
 
 ### タイプの決め方（機械が判定できる部分は数える）
 

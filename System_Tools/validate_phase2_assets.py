@@ -693,7 +693,95 @@ def prompt_lint(text, errors, warns, info):
             f'図解・グラフを編集任せにしている {len(deferred_diagram)}件: {", ".join(dict.fromkeys(deferred_diagram))}'
             '\n    → 直し方: 数字と文字まで入れた1枚の画像で完成させる（本人裁定 203）')
 
-    info.append(f'プロンプトlint(14-50): {len(segs)}セグメント走査')
+    # ===== rules 51-53: キャラの向き・頭身・背景（2026-09-24 せたな町で有料生成後に全面差し戻し）=====
+    # 全員後ろ向き／頭身の崩れ／キャラの背景が動画、の3件。Codex側 check_character_generation.py にしか
+    # 検査が無く、Claude・ChatGPT経由の関所（check_prompts_all.py）を素通りしていた。
+    # カートゥンの基準画像（冒頭の ### CHAR-xx）も対象にする。後ろ向きの元はここだった。
+    first_nar = re.search(r'^(?:ナレーター:|\*\*ナレ行\*\*:)', text, re.M)
+    header = text[:first_nar.start()] if first_nar else ''
+    masters = []
+    for mo in re.finditer(r'^###\s*(CHAR-\d+)[^\n]*\n(.*?)(?=^###\s|^---|\Z)', header, re.M | re.S):
+        blocks = re.findall(r'```[^\n]*\n(.*?)```', mo.group(2), re.S)
+        if any(re.search(r'cartoon', b, re.I) for b in blocks):
+            masters.append((mo.group(1), mo.group(0), blocks))
+    char_cuts = []  # (asset番号, セグメント, キャラプロンプト群)
+    for nar, seg in segs:
+        kind = re.search(r'【制作メモ】\s*ASSET-\d+\s*\[([^\]]*)\]', seg)
+        if kind and 'キャラ' in kind.group(1):
+            char_cuts.append((asset_no(seg), seg, [b for lab, b in labeled_blocks(seg) if 'キャラプロンプト' in lab]))
+
+    # 51) 後ろ向きは理由があるカットだけ。理由なし＝FAIL、理由ありでもキャラカットの2割超＝FAIL（本人裁定 2026-09-25）
+    BACK_VIEW = re.compile(
+        r'\b(?:seen|viewed|shown|drawn|shot|filmed) from behind\b|\bback view\b|\brear view\b|'
+        r'\bthree-quarter back\b|\bback to the (?:camera|viewer)\b|\bfacing away\b|'
+        r'\bface (?:is )?not identifiable\b|\bno (?:identifiable )?face visible\b|後ろ姿|後ろ向き', re.I)
+    FACING_REASON = re.compile(r'向き理由\s*[=＝:：]\s*\S')
+    back_no_reason, back_cuts = [], []
+    for no, seg, blocks in char_cuts:
+        if any(BACK_VIEW.search(b) for b in blocks):
+            back_cuts.append(no)
+            if not FACING_REASON.search(seg):
+                back_no_reason.append(no)
+    for cid, section, blocks in masters:
+        if any(BACK_VIEW.search(b) for b in blocks) and not FACING_REASON.search(section):
+            back_no_reason.append(f'{cid}(基準画像)')
+    if back_no_reason:
+        errors.append(
+            f'キャラが後ろ向きなのに向き理由なし {len(back_no_reason)}件: {", ".join(back_no_reason)}'
+            '\n    → 直し方: 顔を見せる（front-facing / three-quarter front, face clearly visible）。'
+            '走り去る・見送る等で後ろ向きが必要なカットだけ、制作メモに「向き理由=走り去る」のように1行書く')
+    if char_cuts and len(back_cuts) > len(char_cuts) * 0.2:
+        errors.append(
+            f'後ろ向きのキャラカットが多すぎる {len(back_cuts)}/{len(char_cuts)}件（上限2割）: {", ".join(back_cuts)}'
+            '\n    → 直し方: 後ろ向きでなくても伝わるカットを正面・斜め前に戻す')
+
+    # 52) 頭身は数字で指定し、矛盾する体型語（chibi 等）を混ぜない（ASSET_CHECKLIST 定石C）
+    HEADS = re.compile(r'\b(?:three|four to five|four-to-five)[- ]heads?[- ]tall\b', re.I)
+    NOT_REAL = re.compile(r'realistic adult proportions|not six or seven heads tall', re.I)
+    BODY_CONFLICT = re.compile(r'\bchibi\b|super[- ]deformed|\b(?:two|six|seven)[- ]heads?[- ]tall\b', re.I)
+    bad_heads = []
+    targets = [(no, blocks) for no, _, blocks in char_cuts if blocks] + \
+              [(f'{cid}(基準画像)', blocks) for cid, _, blocks in masters]
+    for no, blocks in targets:
+        for b in blocks:
+            conflict = BODY_CONFLICT.search(re.sub(r'not six or seven heads tall', '', b, flags=re.I))
+            if not HEADS.search(b) or not NOT_REAL.search(b) or conflict \
+                    or len({m.group(0).lower().replace('-', ' ') for m in HEADS.finditer(b)}) > 1:
+                bad_heads.append(no)
+                break
+    if bad_heads:
+        errors.append(
+            f'キャラの頭身指定が欠落・矛盾 {len(bad_heads)}件: {", ".join(bad_heads)}'
+            '\n    → 直し方: "roughly four to five heads tall, a large head, a short compact torso and short stubby arms and legs" '
+            '＋ "Do NOT draw them with realistic adult proportions — not six or seven heads tall" を入れ、chibi 等の別の体型語は消す')
+
+    # 53) キャラカットの背景は人物なしの静止画。動画を併記するなら「キャラ画の区間は開始画像を背景にする」必須
+    VIDEO_LABEL = re.compile(r'動画プロンプト')
+    bad_bg = []
+    for no, seg, blocks in char_cuts:
+        labeled = labeled_blocks(seg)
+        bg = [b for lab, b in labeled if '背景プロンプト' in lab]
+        has_video = any(VIDEO_LABEL.search(lab) for lab, _ in labeled)
+        reasons = []
+        if not bg:
+            reasons.append('背景プロンプトなし')
+        elif any(re.search(r'\banimate\b|\bfor \d+ seconds\b|\bcamera (?:moves|pans|pushes|advances)', b, re.I) for b in bg):
+            reasons.append('背景が動画指示')
+        elif not all(re.search(r'\bno people\b|\bno humans\b|\bno person\b', b, re.I) for b in bg):
+            reasons.append('背景に no people なし')
+        if has_video and 'キャラ画の区間は開始画像を背景にする' not in seg:
+            reasons.append('動画を併記しているのに背景指定なし')
+        if blocks and not all(re.search(r'transparen|alpha', b, re.I) for b in blocks):
+            reasons.append('キャラが透過指定なし')
+        if reasons:
+            bad_bg.append(f'{no}（{"・".join(reasons)}）')
+    if bad_bg:
+        errors.append(
+            f'キャラカットの背景が静止画になっていない {len(bad_bg)}件: {", ".join(bad_bg)}'
+            '\n    → 直し方: 透過キャラPNG＋人物なしの16:9静止背景PNGを別々に書く。'
+            '動画を併記するなら編集者指示に「キャラ画の区間は開始画像を背景にする」')
+
+    info.append(f'プロンプトlint(14-53): {len(segs)}セグメント走査')
 
 def main(master_path, daihon_path):
     m = open(master_path, encoding='utf-8').read()
