@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-083",
+  "verdict": "FAIL",
+  "subject": "女性・緊急搬送",
+  "evidence": "No people, no figures, no humans visible.",
+  "missing": "緊急搬送される女性",
+  "reason": "救急車は描かれていますが、ナレーションの主語である女性は描かれていません。"
+}

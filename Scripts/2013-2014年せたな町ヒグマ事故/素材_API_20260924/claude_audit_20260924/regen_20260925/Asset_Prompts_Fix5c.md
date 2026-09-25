@@ -246,17 +246,17 @@ A research laboratory bench by a window in Hokkaido, in April early spring: on t
 ナレーター: せたな町以外で捕獲されていたクマのDNA鑑定を専門家に依頼したのです。
 
 【制作メモ】ASSET-182 [キャラアニメーション] 台本L329
-シーン: 研究室の机で、町外のクマの試料袋を受け取り、鑑定を引き受ける研究者（CHAR-07）。
+シーン: 研究室で、町の職員（CHAR-06＝依頼する側）が町外で捕獲されたクマの試料袋を差し出し、研究者（CHAR-07＝依頼される側）が受け取る。
 キャラプロンプト（1:1）:
 ```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, standing square to the viewer with her shoulder line parallel to the picture plane, her face clearly visible. She holds up a small sealed clear sample bag in both hands at chest height, eyebrows raised high, eyes wide and focused, mouth open as she speaks, a bead of sweat on her temple, serious and eager, NOT calm, NOT smiling. No lettering on the bag, no badge, no logo, no name tag. Only this one woman, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Exactly two full-body Japanese people facing each other at a slight three-quarter angle toward the viewer, both faces clearly visible. Left to right: 1) (CHAR-06 再利用) a male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black shoes, holding out a small sealed clear sample bag with both hands, bowing slightly, eyebrows slanted upward and pulled together, eyes wide and pleading, mouth open as he asks, a bead of sweat on his temple, anxious and earnest; 2) (CHAR-07 再利用) a female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, reaching out with one hand to take the bag and pressing the other hand to her chest, eyebrows raised high, eyes wide and focused, mouth open in a firm reply, serious and willing. Every person is a distinct individual, no two dressed alike; the man is a little taller than the woman. Both NOT calm, NOT smiling. No lettering on the bag, no badge, no logo, no name tag. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
 A clean laboratory table by a window in Hokkaido, in April early spring: two capped sample tubes set apart for comparison, each on a blank white card, a small tube rack at the right edge; through the window, bare and budding trees and brown fields under a pale sky, No snow anywhere, no frost, no ice, no winter. No readable text, no labels with characters, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about two metres back, the middle of the frame left as clear open space. Quiet, focused mood, cool clean daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
 ```
-→研究者セリフ「町の外の／クマも調べます」
-→ 編集者指示: 背景・キャラとも新規（今の ASSET-182_bg.png は窓の外に雪があるので、新しい背景で上書きする。185・207も再利用する）。研究者を右から中央へスライドさせて止める（動画は作らない）。中央に「町外のクマもDNA鑑定」を白字で表示し、「DNA鑑定」だけ赤字。
+→職員セリフ「町の外のクマも／調べてください」
+→ 編集者指示: 背景・キャラとも新規（今の ASSET-182_bg.png は窓の外に雪があるので、新しい背景で上書きする。185・207も再利用する）。職員を左、研究者を右に置き、試料袋を渡す腕を小さく動かす（動画は作らない）。中央に「町外のクマもDNA鑑定」を白字で表示し、「DNA鑑定」だけ赤字。
 
 ---
 
@@ -519,17 +519,17 @@ A research laboratory bench by a window in Hokkaido, in April early spring: on t
 ナレーター: 「ただ、鈴やラジオの音に、反応が鈍いクマもいることも事実」
 
 【制作メモ】ASSET-211 [キャラアニメーション] 台本L384
-シーン: 鈴とラジオの横にクマの足跡が残る春の山道を背に、不安そうに言葉を続ける釣賀室長（CHAR-07）。
+シーン: 鳴っているラジオと鈴のすぐ先を、気にせず歩いていくヒグマの山道を背に、不安そうに言葉を続ける釣賀室長（CHAR-07）。
 キャラプロンプト（1:1）:
 ```
 (CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, standing square to the viewer with her shoulder line parallel to the picture plane, her face clearly visible. She holds a small portable radio in both hands at chest height, eyebrows pulled together and slanted steeply upward, eyes wide and uneasy, mouth bent into a worried frown, a bead of sweat running down her temple, worried and cautious, NOT calm, NOT smiling. No lettering on the radio, no badge, no logo, no name tag. Only this one woman, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A muddy mountain trail through dry grass and low bamboo on a hillside near Setana, southwestern Hokkaido, in late April spring: one large fresh pawprint of an adult Hokkaido brown bear, an animal about 2 metres long and roughly 150 to 250 kilograms, pressed into the mud beside the trail, a small brass bell on a strap and a small portable radio lying right next to the print, bare and budding trees, a bay and brown hills in the distance, No snow anywhere, no snow patches, no frost, no ice, no winter. No bear anywhere in the frame, no animal visible. No readable text, no logo. Framed from adult eye height about two metres back, the camera angled slightly downward, the print, bell and radio in the lower right, the left half of the frame left as clear open space. Ominous, quiet, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A muddy mountain trail through dry grass and low bamboo on a hillside near Setana, southwestern Hokkaido, in late April spring: in the lower right foreground a small portable radio and a small brass bell on a strap lie on a tree stump beside the trail; about ten metres further up the trail an adult Hokkaido brown bear, about 2 metres long and roughly 150 to 250 kilograms, ON ALL FOURS, NOT upright, NOT on two legs, is walking calmly across the trail side-on, its head level and turned away from the radio, paying it no attention at all, bare and budding trees, a bay and brown hills in the distance, No snow anywhere, no snow patches, no frost, no ice, no winter. No readable text, no logo. Framed from adult eye height about four metres back, the left half of the frame left as clear open space. Eerie, uneasy quiet, soft overcast light, muted natural tones. Photorealistic, shot on RED camera, telephoto lens. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
 ```
 →研究者セリフ「音に鈍い／クマもいます」
-→ 編集者指示: 背景・キャラとも新規（今の ASSET-211_still.png は道の脇に雪があり、キャラはハンターなので使わない）。研究者を左に置き、背景は足跡と鈴へゆっくり寄る（動画は作らない）。中央に「音に鈍いクマも」を白字で表示し、「鈍い」だけ赤字。
+→ 編集者指示: 背景・キャラとも新規（今の ASSET-211_still.png は道の脇に雪があり、キャラはハンターなので使わない）。研究者を左に置き、背景は奥のクマへゆっくり寄る（動画は作らない）。中央に「音に鈍いクマも」を白字で表示し、「鈍い」だけ赤字。
 
 ---
 
@@ -571,17 +571,17 @@ A narrow mountain trail along a grassy ridge through low bamboo above the Sea of
 ナレーター: 翌年、同じクマに襲われた45歳の女性は、肩や腕に重いけがを負い、一緒にいた男性も襲われかけています。
 
 【制作メモ】ASSET-217 [キャラアニメーション] 台本L395
-シーン: 2014年の女性（CHAR-03）が肩と腕を押さえて痛みにうずくまり、同行男性（CHAR-04）がナタを構えて恐怖に叫ぶ。
+シーン: 竹やぶから迫るヒグマの前で、2014年の女性（CHAR-03）が肩と腕を押さえて痛みにうずくまり、同行男性（CHAR-04）がナタを構えて恐怖に叫ぶ。
 キャラプロンプト（1:1）:
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Exactly two full-body Japanese people side by side, both facing the viewer, both faces clearly visible. Left to right: 1) (CHAR-03 再利用) a woman in her mid 40s in a MAROON field jacket (deep red-brown, NOT green, NOT grey), charcoal trousers and dark hair tied low, half crouching and clutching her left upper arm with her right hand, the maroon sleeve torn at the shoulder, eyes screwed shut into tight creases, teeth bared, tears on her cheeks, in severe pain; 2) (CHAR-04 再利用) a man in his early 60s in a grey field jacket, navy trousers and short greying hair, a sturdy build, CLEAN-SHAVEN, standing a head taller than her, holding a small hatchet raised defensively in front of him with both hands, eyebrows shot up, eyes bulging, mouth stretched wide open in a scream, sweat flying from his face, terrified. Every person is a distinct individual, no two dressed alike. Both NOT calm, NOT smiling. No blood, no wounds, no gore, nothing stained. No lettering, no logo. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A narrow forest trail on a wooded hillside near Setana, southwestern Hokkaido, in early April early spring: bare deciduous trees, a dense bamboo thicket along one side, brown leaf litter, fresh green shoots of wild garlic, a small woven basket tipped over on the trail, No snow anywhere, no frost, no ice, no winter. No animal visible. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Frightening, tense, cold overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A narrow forest trail on a wooded hillside near Setana, southwestern Hokkaido, in early April early spring: bare deciduous trees, brown leaf litter, fresh green shoots of wild garlic, a small woven basket tipped over on the trail, No snow anywhere, no frost, no ice, no winter. On the right, an adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms pushes out of a dense bamboo thicket ON ALL FOURS, NOT upright, NOT on two legs, its chest and both shoulders squared to the camera, head dropped low and driven forward between bunched shoulders, jaws wrenched wide open in a savage snarl with long fangs bared, ears pinned flat against the skull, the fur along its neck and spine bristled up into a raised ridge, claws fully extended. Ferocious, enraged. Captured at the moment before any contact only. Nothing red and nothing stained. Framed from adult eye height about six metres back, the bear on the right third, the left and middle of the frame left as clear open space. Frightening, tense, cold overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
 ```
 →女性セリフ「肩と腕が、、！」
-→ 編集者指示: 背景・キャラとも新規（今の ASSET-217_still.png は使わない）。2人を中央に置き、小刻みに揺らす（動画は作らない）。左上に「翌年・45歳の女性」を白字で置き、中央に「肩や腕に重いけが」。「重いけが」だけ赤字。傷や血は描かない。
+→ 編集者指示: 背景・キャラとも新規（今の ASSET-217_still.png は使わない）。2人を左と中央に置き、右のクマから逃げるように小刻みに揺らす（動画は作らない）。左上に「翌年・45歳の女性」を白字で置き、中央に「肩や腕に重いけが」。「重いけが」だけ赤字。傷や血は描かない。
 
 ---
 

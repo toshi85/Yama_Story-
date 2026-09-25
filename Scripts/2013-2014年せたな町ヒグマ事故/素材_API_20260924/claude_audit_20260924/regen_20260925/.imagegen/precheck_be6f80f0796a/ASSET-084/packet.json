@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-084",
+  "narration": "幸い肩や腕に重いけがを負いましたが、命に別状はなかったとのことです。",
+  "asset_type": "キャラアニメーション",
+  "scene": "病院の廊下で、肩と腕に包帯を巻き、腕をつった女性（CHAR-03）が、助かったと涙ぐむ。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese woman in her mid 40s in a MAROON field jacket (deep red-brown, NOT green) worn over her shoulders, charcoal trousers and dark hair tied low in a short bun, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, her face clearly visible. Clean white bandages are wrapped around her left shoulder and upper arm, and her left arm rests in a white sling; her right hand is pressed to her chest. Tears of relief streaming down both cheeks, eyebrows slanted steeply upward in the middle, mouth trembling into a weak relieved smile, a bead of sweat on her temple, shaken but alive, NOT calm, NOT neutral. The bandages are clean white, nothing red and nothing stained. Only this one woman, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. No blood, no wounds, no gore. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A quiet corridor in a small regional hospital in southwestern Hokkaido, in early April early spring: a polished floor, pale walls with a handrail, a row of blue waiting chairs with a folded grey blanket, a window at the far end showing the sea and low brown hills with bare trees, the hills brown and bare with no snow on any mountain, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Hushed, relieved mood, soft afternoon daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。女性を中央に置き、肩を小さく上下させる（動画は作らない）。中央に「命に別状なし」を白字で表示し、「命」だけ赤字。"
+  ]
+}

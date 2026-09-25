@@ -52,6 +52,16 @@ RESULT_KEYS = {"id", "verdict", "subject", "evidence", "missing", "reason"}
 CREATE_NO_WINDOW = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
 
 
+def codex_environment() -> dict[str, str]:
+    """Use the tested, local no-window PowerShell launcher for Codex children."""
+    env = os.environ.copy()
+    if os.name == "nt" and env.get("LOCALAPPDATA"):
+        shim_dir = Path(env["LOCALAPPDATA"]) / "CodexWindowFix" / "ScopedPwsh"
+        if (shim_dir / "pwsh.exe").is_file():
+            env["PATH"] = str(shim_dir) + os.pathsep + env.get("PATH", "")
+    return env
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="ナレーションの主題が素材プロンプトの画面に見えるかを Codex で事前検査する。"
@@ -194,7 +204,7 @@ def judge_one(block: dict, out: Path, progress: Path, lock: threading.Lock) -> d
     try:
         run = subprocess.run(
             cmd, input=prompt, capture_output=True, text=True, encoding="utf-8", errors="replace",
-            timeout=900, creationflags=CREATE_NO_WINDOW,
+            timeout=900, creationflags=CREATE_NO_WINDOW, env=codex_environment(),
         )
         (folder / "exec.log").write_text(
             run.stdout + ("\n[stderr]\n" + run.stderr if run.stderr else ""), encoding="utf-8"

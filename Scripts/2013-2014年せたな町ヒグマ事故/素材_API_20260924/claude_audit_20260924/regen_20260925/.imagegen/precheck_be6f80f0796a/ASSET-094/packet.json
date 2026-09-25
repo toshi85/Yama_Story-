@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-094",
+  "narration": "念のため、1年前に人を襲い逃げ延びたとされるクマのDNAと照合することにしました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "研究室で、2014年の血痕の試料と1年前の試料を2本の試験管で見比べ、息をのんで照合に取りかかる研究者（CHAR-07）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, her face clearly visible. She holds up one small capped sample tube in each hand side by side at eye level, eyebrows pulled together, eyes stretched wide and intense, mouth pressed tight, a bead of sweat on her temple, tense and focused, NOT calm, NOT smiling. The tubes are clear with plain white caps, no lettering, nothing red. No badge, no logo, no name tag. Only this one woman, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A small genetics laboratory bench in a research facility in Hokkaido, in early April early spring: a clean white bench with a rack of small capped sample tubes, a pipette, a small centrifuge and a computer monitor showing only an abstract pattern, a window with bare brown trees outside, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Tense, focused cool daylight, NOT pure black, the bench clearly readable, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。研究者を中央に置き、試験管を持つ両手を小さく寄せる（動画は作らない）。中央に「前年のDNAと照合」を白字で表示し、「DNA」だけ赤字。左右の試験管の上に「2014年」「2013年」を白字で小さく置く。"
+  ]
+}

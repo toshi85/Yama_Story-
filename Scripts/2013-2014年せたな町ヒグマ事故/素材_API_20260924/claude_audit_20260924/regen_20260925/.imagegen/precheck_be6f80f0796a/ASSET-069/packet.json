@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-069",
+  "narration": "副収入を得ようとする人が一定数、毎年こうして山に入っていきます。",
+  "asset_type": "キャラアニメーション",
+  "scene": "林道の入口から山へ入る山菜採りの人。キャラは既存の ASSET-069_char.png（カゴを持つ人）を使い、雪の写った背景だけ作り直す。",
+  "fences": [
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "The entrance of a gravel forest road where a narrow footpath climbs into bare woods near Setana, southwestern Hokkaido, in early April early spring: dense dry bamboo grass, bare and budding deciduous trees, brown leaf litter, two empty woven gathering baskets set down at the foot of the path, the sea faintly visible in the distance, No snow anywhere, no snow patches, no frost, no ice, no winter. Framed from adult eye height about five metres back, the left half of the frame left as clear open space. Bright, ordinary midday light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は新規、キャラは既存の ASSET-069_char.png。人を左から山道の入口へ歩かせる（動画は作らない）。中央に「副収入を求めて」を白字で表示し、「副収入」だけ赤字。"
+  ]
+}

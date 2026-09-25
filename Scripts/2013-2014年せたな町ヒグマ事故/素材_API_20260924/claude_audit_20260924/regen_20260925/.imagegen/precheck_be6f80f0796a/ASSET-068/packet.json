@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-068",
+  "narration": "ギョウジャニンニクは1キロ2000円ほどで売れるので、",
+  "asset_type": "キャラアニメーション",
+  "scene": "採ったギョウジャニンニクの束を掲げて、いい値で売れると喜ぶ女性（CHAR-03）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-03 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese woman in her mid 40s in a MAROON field jacket (deep red-brown, NOT green), charcoal trousers and dark hair tied low in a short bun, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, her face clearly visible. She holds up a big bundle of wild garlic with broad green leaves and reddish stems in both hands, eyebrows raised high, eyes sparkling and stretched wide, mouth wide open in a delighted grin, cheeks flushed, thrilled, NOT calm, NOT worried. Only this one woman, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A weathered wooden workbench under the eaves of a rural farmhouse shed near Setana, southwestern Hokkaido, in early April early spring: a simple kitchen scale and several tied bundles of fresh wild garlic with broad green leaves and reddish stems on the bench, bare brown trees and a tilled brown field beyond, No snow anywhere, no frost, no ice, no winter. No readable numbers or lettering on the scale, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Warm, hopeful late-afternoon light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。女性を中央に置き、束を持つ腕を上下に小さく弾ませる（動画は作らない）。中央に「1キロ2000円」を白字で表示し、「2000円」だけ赤字。"
+  ]
+}

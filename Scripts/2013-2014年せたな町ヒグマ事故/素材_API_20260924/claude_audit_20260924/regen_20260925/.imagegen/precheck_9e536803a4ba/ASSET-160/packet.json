@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-160",
+  "narration": "見つからなければ、箱わなを設置して様子を見る手はずでした。",
+  "asset_type": "キャラアニメーション",
+  "scene": "山道脇に据えた箱わなの横で、「見つからなければわなで待つ」と説明するハンター（CHAR-05）。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. He points to his right with his right thumb over his shoulder, eyebrows pulled together and slanted upward, eyes wide and uneasy, mouth open mid-explanation, a bead of sweat on his temple, worried but determined, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "An empty steel box trap with its door raised open, set beside a gravel mountain road near Setana, southwestern Hokkaido, in March, late winter: bare trees and a few conifers, dry grass, a small lingering patch of old snow, the sea in the distance. Late-winter snow is intended in this scene. The trap sits in the right third of the frame, the left and middle left as clear open space. Framed from adult eye height about five metres back. Quiet, waiting mood, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は既存の ASSET-160_still.png、キャラは新規の ASSET-160_char.png。ハンターを左に置き、親指で指す腕を小さく動かす（動画は作らない）。中央に「なければ箱わな」を白字で表示し、「箱わな」だけ赤字。"
+  ]
+}

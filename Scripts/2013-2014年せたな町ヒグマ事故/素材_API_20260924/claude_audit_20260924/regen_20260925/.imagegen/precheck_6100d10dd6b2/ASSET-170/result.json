@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-170",
+  "verdict": "FAIL",
+  "subject": "町全体・クマ",
+  "evidence": "Exactly three full-body Japanese men standing side by side in a loose row",
+  "missing": "クマが描かれていない",
+  "reason": "町の人々を表す3人は描かれていますが、ナレーションに登場するクマはプロンプトの絵に現れません。"
+}

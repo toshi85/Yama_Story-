@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-070",
+  "narration": "林道の入口には、「クマ出没注意」の看板。",
+  "asset_type": "Lovart静止画",
+  "scene": "林道の入口に立つクマ注意の看板（絵記号だけ・文字は編集で載せる）。",
+  "fences": [
+    {
+      "label": "シーン: 林道の入口に立つクマ注意の看板（絵記号だけ・文字は編集で載せる）。",
+      "language": "",
+      "text": "A bear warning sign at the entrance of a gravel forest road near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring: a yellow diamond sign on a metal post showing only a black bear pictogram and no words, the forest road disappearing into bare and budding woods behind it, dry brown bamboo grass on both sides, No snow anywhere, no snow patches, no frost, no ice, no winter. No readable text anywhere. The sign sits in the right third of the frame, the left and middle left as clear open space. Framed from adult eye height about five metres back. Quiet, ominous overcast midday light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 画面を5秒で1.0→1.12倍に看板へ寄せる。看板の上に「クマ出没注意」を白字で表示し、「クマ」だけ赤字。"
+  ]
+}

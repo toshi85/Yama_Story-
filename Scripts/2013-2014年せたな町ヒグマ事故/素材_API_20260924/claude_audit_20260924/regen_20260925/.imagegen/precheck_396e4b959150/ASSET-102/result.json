@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-102",
+  "verdict": "FAIL",
+  "subject": "クマの接近",
+  "evidence": "該当なし",
+  "missing": "クマ",
+  "reason": "ナレーションに出るクマがプロンプトの絵に描かれていません。"
+}
