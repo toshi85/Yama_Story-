@@ -209,6 +209,8 @@ Do NOT draw open eyes, do NOT draw closed eyelids, do NOT draw pupils or irises 
 
 **B. 表情は「極端に」振る。部位ごとに書き、望まない顔を否定で潰す**
 
+> 🚦 **機械検査（lint54・2026-09-25）**: キャラのプロンプト（冒頭の CHAR 基準を含む）に `restrained expression` `neutral pose` `calm expression` 等があれば FAIL。眉・目・口・汗や涙のうち**2つ以上**を大げさに書いていなければ FAIL。せたな町は基準に restrained expression と書いたため、全キャラが無表情で差し戻しになった（本人「なんでずっと冷静な顔なの？」「喜怒哀楽を強調するってルールだよね？」）
+
 > ⚠️ **迷ったら常に大げさな側へ倒す**（2026-08-28 ユーザー指定「極端にするのを意識してもいい。今だと表情のインパクトが弱い」）。
 > カートゥン調は誇張して初めて等身大に見える。**控えめに書くと必ず無表情になる。**
 

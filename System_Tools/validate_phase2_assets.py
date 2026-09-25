@@ -606,6 +606,40 @@ def prompt_lint(text, errors, warns, info):
             '\n    → 直し方: ナレーションで語る1体（1人）だけを描く。ほかの登場物はプロンプトとシーンから外し、'
             '"No other people or animals." を足す（本人裁定 151・199）')
 
+    # 54) キャラの表情が弱い（定石B「表情は極端に振る」・2026-09-25 せたな町 本人指摘「なんでずっと冷静な顔なの？」
+    #     「喜怒哀楽を強調するってルールだよね？」「ちゃんとシステム化してるんだよね？」）。
+    #     控えめ・無表情の指定を止め、眉・目・口などの動きを2つ以上書かせる。
+    WEAK_FACE = re.compile(r'restrained expression|neutral (?:standing )?pose|neutral expression|expressionless|'
+                           r'calm (?:face|expression)|blank expression|straight face', re.I)
+    FACE_PARTS = [
+        r'eyebrows? (?:shot|drawn|pulled|raised|knitted|driven|furrowed|slanted|lifted)|brows? (?:knitted|furrowed)',
+        r'eyes? (?:stretched|wide|bulging|welling|brimming|squeezed|screwed|narrowed|sparkling|shining|crinkled)|tears?|teary|crying|sobbing',
+        r'mouth (?:open|wide|stretched|wrenched|turned down|pulled|trembling)|scream|shout|gasp|grin|beaming|big smile|wide smile|clenched teeth|gritted teeth|teeth (?:bared|gritted|clenched)|frown|pout',
+        r'sweat|blush|cheeks? (?:flushed|puffed|pale|drained)|face (?:drained|pale|crumpled|flushed|twisted)',
+    ]
+    weak_face, few_parts = [], []
+    for nar, seg in segs:
+        for lab, b in labeled_blocks(seg):
+            if 'キャラ' not in lab and 'CHAR' not in lab and 'Cute cartoon character design' not in b:
+                continue
+            if 'Cute cartoon character design' not in b and 'cartoon' not in b.lower():
+                continue
+            if WEAK_FACE.search(b):
+                weak_face.append(asset_no(seg))
+            elif sum(1 for pat in FACE_PARTS if re.search(pat, b, re.I)) < 2 and 'clearly dead' not in b:
+                few_parts.append(asset_no(seg))
+    # 冒頭のキャラ基準（CHAR-xx）も見る。せたな町は基準に restrained expression と書いたため全キャラが無表情になった
+    head = text[:marks[0][0]] if marks else ''
+    for m in re.finditer(r'(CHAR-\d+)[^\n]*\n(?:[^\n]*\n)*?```[^\n]*\n(.*?)\n```', head, re.S):
+        if 'cartoon' in m.group(2).lower() and WEAK_FACE.search(m.group(2)):
+            weak_face.append(m.group(1))
+    if weak_face:
+        errors.append(f'キャラの表情が控えめ・無表情の指定 {len(weak_face)}件（定石B違反。restrained/neutral/calm を消し、場面の喜怒哀楽を眉・目・口で大げさに書く）: '
+                      + ', '.join(dict.fromkeys(weak_face)))
+    if few_parts:
+        errors.append(f'キャラの表情の書き込み不足 {len(few_parts)}件（眉・目・口・汗や涙のうち2つ以上を大げさに書く。例: eyebrows shot up / eyes stretched wide / mouth wide open in a scream / tears streaming）: '
+                      + ', '.join(dict.fromkeys(few_parts)))
+
     # 46) シーン行で向き・視線を求めているのに、英語プロンプトに指定がない。
     SCENE_DIRECTION = re.compile(r'見る|見つめ|向く|向け|振り返|指さ|指差|視線|の方へ|のほうへ|にらむ|睨')
     PROMPT_DIRECTION = re.compile(
