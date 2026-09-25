@@ -28,6 +28,7 @@ import argparse
 import datetime
 import hashlib
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -36,10 +37,14 @@ HERE = Path(__file__).resolve().parent
 YAMA_REPO = HERE.parent
 ROOT = YAMA_REPO.parent                       # D:\0（Mac では Antigravity）
 STATE = ROOT / ".claude" / ".state"
-STAMPS = STATE / "prompt_checks"
-APPROVALS = STATE / "sample_approvals"
-USAGE = STATE / "sample_usage"
-REVIEWS = STATE / "image_reviews"
+# 関所の記録（合格票・見本承認・見本枠・AI検品）は非公開の親リポジトリで git 共有する（2026-09-25 本人
+# 「別のパソコンでも機能するようにしておいて」）。書いたら自動で commit・push、読むときは origin/main も合わせて見る。
+GATE_DIR = ROOT / ".claude" / "yama_gate"
+STAMPS = GATE_DIR / "prompt_checks"
+APPROVALS = GATE_DIR / "sample_approvals"
+USAGE = GATE_DIR / "sample_usage"
+REVIEWS = GATE_DIR / "image_reviews"
+LEGACY_STAMPS = STATE / "prompt_checks"       # 共有化の前にこのPCで出た合格票（読むだけ）
 YAMA_DIRS = {"Yama_Story", "Yama_Story-"}
 
 
@@ -73,19 +78,109 @@ def owner_machine():
     return (ROOT / ".claude" / "settings.json").is_file()
 
 
-def valid_stamps():
-    """[(票, .mdのパス, 正規化本文)]。票の sha256 が .md の今の中身と一致するものだけ。"""
-    out = []
-    if not STAMPS.is_dir():
+# ---- PC 間の共有（git） ----
+def portable(path):
+    """PC をまたいで同じになる .md の名前。Yama リポジトリ内なら「yama:Scripts/…」（Windows の Yama_Story- と
+    Mac の Yama_Story の違い、D:\\0 と /Users/… の違いを吸収）。外なら絶対パスのまま。"""
+    p = Path(path).resolve()
+    try:
+        return "yama:" + p.relative_to(YAMA_REPO.resolve()).as_posix()
+    except ValueError:
+        return str(p)
+
+
+def from_portable(name):
+    s = str(name)
+    return YAMA_REPO / s[5:] if s.startswith("yama:") else Path(s)
+
+
+def _shared(d):
+    """このフォルダが本物の共有フォルダか（テストで一時フォルダに差し替えたときは共有しない）。"""
+    try:
+        return Path(d).resolve().parent == GATE_DIR.resolve()
+    except Exception:
+        return False
+
+
+def _git(*args, timeout=30):
+    import subprocess
+    return subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True, text=True,
+                          encoding="utf-8", errors="replace", timeout=timeout)
+
+
+_FETCHED = []
+
+
+def _remote(d):
+    """origin/main にある共有記録 {ファイル名: 本文}。別のPCで書いてまだ取り込んでいない分も読むため。"""
+    if not _shared(d) or os.environ.get("YAMA_GATE_NO_SYNC"):
+        return {}
+    try:
+        if not _FETCHED:
+            _FETCHED.append(True)
+            _git("fetch", "-q", "origin", "main", timeout=20)
+        rel = Path(d).resolve().relative_to(ROOT.resolve()).as_posix()
+        names = _git("ls-tree", "--name-only", "origin/main", rel + "/").stdout.split()
+        out = {}
+        for n in names:
+            text = _git("show", f"origin/main:{n}").stdout
+            if text:
+                out[Path(n).name] = text
         return out
-    for f in STAMPS.glob("*.json"):
-        if f.name == "last_run.json":
+    except Exception:
+        return {}
+
+
+def _read_all(d):
+    """{ファイル名: 本文}（origin/main ＋このPC。同名はこのPCを優先）。"""
+    out = _remote(d)
+    if Path(d).is_dir():
+        for f in Path(d).glob("*.json"):
+            try:
+                out[f.name] = f.read_text(encoding="utf-8")
+            except Exception:
+                pass
+    return out
+
+
+def _read(d, name):
+    f = Path(d) / name
+    if f.is_file():
+        return f.read_text(encoding="utf-8")
+    return _read_all(d).get(name) if _shared(d) else None
+
+
+def share(message="関所の記録を共有"):
+    """共有フォルダの記録だけを commit して push する（ほかの変更は巻き込まない）。失敗しても生成は止めない。"""
+    if os.environ.get("YAMA_GATE_NO_SYNC") or not GATE_DIR.is_dir():
+        return
+    try:
+        rel = GATE_DIR.resolve().relative_to(ROOT.resolve()).as_posix()
+        _git("add", "--", rel)
+        if _git("diff", "--cached", "--quiet", "--", rel).returncode == 0:
+            return
+        _git("commit", "-q", "-m", message, "--", rel)
+        if _git("push", "-q", "origin", "HEAD:main", timeout=60).returncode != 0:
+            print("⚠️ 関所の記録を別のPCへ共有できませんでした（次の push で届きます）", flush=True)
+    except Exception:
+        print("⚠️ 関所の記録を別のPCへ共有できませんでした（次の push で届きます）", flush=True)
+
+
+def valid_stamps():
+    """[(票, .mdのパス, 正規化本文)]。票の sha256 が .md の今の中身と一致するものだけ（別のPCで出た票も含む）。"""
+    out, seen = [], set()
+    texts = list(_read_all(STAMPS).items())
+    if LEGACY_STAMPS.is_dir() and _shared(STAMPS):
+        texts += [(f.name, f.read_text(encoding="utf-8")) for f in LEGACY_STAMPS.glob("*.json")]
+    for name, text in texts:
+        if name == "last_run.json":
             continue
         try:
-            rec = json.loads(f.read_text(encoding="utf-8"))
-            p = Path(rec["file"])
-            if rec.get("status") == "PASS" and p.is_file() \
+            rec = json.loads(text)
+            p = from_portable(rec["file"])
+            if rec.get("status") == "PASS" and p.is_file() and str(p) not in seen \
                     and hashlib.sha256(p.read_bytes()).hexdigest() == rec["sha256"]:
+                seen.add(str(p))
                 out.append((rec, p, norm(p.read_text(encoding="utf-8"))))
         except Exception:
             continue
@@ -124,7 +219,7 @@ def header_key(md_path):
     text = Path(md_path).read_text(encoding="utf-8")
     m = re.search(r"^(?:ナレーター:|\*\*ナレ行\*\*:)", text, re.M)
     head = text[:m.start()] if m else text
-    return hashlib.sha256((str(Path(md_path).resolve()) + "\n" + head).encode("utf-8")).hexdigest()[:16]
+    return hashlib.sha256((portable(md_path) + "\n" + head).encode("utf-8")).hexdigest()[:16]
 
 
 def slot_of(item_id, kind):
@@ -155,12 +250,24 @@ def slots_in_md(md_path, kind):
 
 
 def approved(md_path, kind):
-    f = APPROVALS / f"{header_key(md_path)}_{kind}.json"
-    return f.is_file()
+    return _read(APPROVALS, f"{header_key(md_path)}_{kind}.json") is not None
 
 
 def _usage_file(md_path, kind):
     return USAGE / f"{header_key(md_path)}_{kind}.json"
+
+
+def used_samples(md_path, kind):
+    """作成済みの見本ID（このPC＋別のPCで作った分）。"""
+    f = _usage_file(md_path, kind)
+    ids = set()
+    for text in (f.read_text(encoding="utf-8") if f.is_file() else None,
+                 _remote(USAGE).get(f.name) if _shared(USAGE) else None):
+        try:
+            ids |= set(json.loads(text)) if text else set()
+        except Exception:
+            pass
+    return sorted(ids)
 
 
 def require(kind, items, *, tool, paid, paths=(), record=True):
@@ -209,7 +316,7 @@ def require(kind, items, *, tool, paid, paths=(), record=True):
         # 承認前は「種類（キャラ基準・キャラ・背景・静止画・追加素材／動画）ごとに1件」だけ。
         # 2026-09-25: 先頭3件を見本にすると背景3枚だけで承認でき、キャラの崩れを見ずに全体へ進めた
         uf = _usage_file(md, kind)
-        used = json.loads(uf.read_text(encoding="utf-8")) if uf.is_file() else []
+        used = used_samples(md, kind)
         sampled = {slot_of(u, kind) for u in used}
         keep, extra = set(used), []
         for i in items:
@@ -233,7 +340,10 @@ def require(kind, items, *, tool, paid, paths=(), record=True):
                 raise GateError(msg)
             print("⚠️ " + msg + f"\n  → 今回は見本 {', '.join(i['id'] for i in allowed if i['id'] not in used) or 'なし'} だけ作ります。", flush=True)
         USAGE.mkdir(parents=True, exist_ok=True)
+        new_ids = {i["id"] for i in allowed} - set(used)
         uf.write_text(json.dumps(sorted(set(used) | {i["id"] for i in allowed}), ensure_ascii=False), encoding="utf-8")
+        if new_ids and _shared(USAGE):
+            share("関所: 見本を記録")
 
     if record:
         # 一括の確認のあと1件ずつ再確認するスクリプトでも、同じIDの記録は1回だけ書く
@@ -252,15 +362,27 @@ def record_image_review(image_sha, rec):
     （再利用カットは同じ中身の画像が複数のカットに入るため、中身だけだと記録がぶつかる）。"""
     REVIEWS.mkdir(parents=True, exist_ok=True)
     rec = dict(rec, at=datetime.datetime.now().isoformat(timespec="seconds"))
+    rec["md"] = portable(rec["md"]) if rec.get("md") else ""
     (REVIEWS / f"{image_sha}_{int(rec['asset']):03d}.json").write_text(json.dumps(rec, ensure_ascii=False), encoding="utf-8")
+    _PENDING_SHARE.append(True)
 
 
 def image_review(image_sha, asset):
-    f = REVIEWS / f"{image_sha}_{int(asset):03d}.json"
     try:
-        return json.loads(f.read_text(encoding="utf-8")) if f.is_file() else None
+        text = _read(REVIEWS, f"{image_sha}_{int(asset):03d}.json")
+        return json.loads(text) if text else None
     except Exception:
         return None
+
+
+_PENDING_SHARE = []
+
+
+def share_pending():
+    """検品記録など、まとめて書いたあとに1回だけ共有する（1枚ごとに push しない）。"""
+    if _PENDING_SHARE and _shared(REVIEWS):
+        _PENDING_SHARE.clear()
+        share("関所: AI検品の記録")
 
 
 def check_reviewed(paths):
@@ -282,7 +404,7 @@ def check_reviewed(paths):
         md = rec.get("md", "")
         if md not in digests:
             try:
-                digests[md] = {c.asset: air.cut_digest(c) for c in air.parse_cuts(Path(md))}
+                digests[md] = {c.asset: air.cut_digest(c) for c in air.parse_cuts(from_portable(md))}
             except Exception:
                 digests[md] = {}
         if digests[md].get(rec.get("asset")) != rec.get("cut_digest"):
@@ -314,8 +436,7 @@ def cmd_approve(a):
         sys.exit(f"見つかりません: {md}")
     if not (sys.stdin.isatty() and sys.stdout.isatty()):
         sys.exit("承認は本人が自分のターミナルで打つものです（AIの非対話実行からは承認できません）。")
-    uf = _usage_file(md, a.kind)
-    used = json.loads(uf.read_text(encoding="utf-8")) if uf.is_file() else []
+    used = used_samples(md, a.kind)
     missing = slots_in_md(md, a.kind) - {slot_of(u, a.kind) for u in used}
     if missing:
         sys.exit(f"見本がそろっていないため承認できません。まだ見本が無い種類: {', '.join(sorted(missing))}"
@@ -326,9 +447,10 @@ def cmd_approve(a):
         sys.exit("承認しませんでした。")
     APPROVALS.mkdir(parents=True, exist_ok=True)
     f = APPROVALS / f"{header_key(md)}_{a.kind}.json"
-    f.write_text(json.dumps({"md": str(md), "kind": a.kind, "at": datetime.datetime.now().isoformat(timespec="seconds")},
+    f.write_text(json.dumps({"md": portable(md), "kind": a.kind, "at": datetime.datetime.now().isoformat(timespec="seconds")},
                             ensure_ascii=False), encoding="utf-8")
-    print(f"承認しました: {f.name}（この .md の冒頭＝基準キャラ・画風を書き換えると承認は切れます）")
+    share("関所: 本人が見本を承認")
+    print(f"承認しました（別のPCにも共有）: {f.name}（この .md の冒頭＝基準キャラ・画風を書き換えると承認は切れます）")
 
 
 def cmd_status(a):
@@ -336,8 +458,7 @@ def cmd_status(a):
     stamped = any(p.resolve() == md for _, p, _ in valid_stamps())
     print(f"合格票: {'あり' if stamped else 'なし'}")
     for kind in ("image", "video"):
-        uf = _usage_file(md, kind)
-        used = json.loads(uf.read_text(encoding="utf-8")) if uf.is_file() else []
+        used = used_samples(md, kind)
         need = slots_in_md(md, kind) - {slot_of(u, kind) for u in used}
         print(f"{kind}: 見本承認={'済' if approved(md, kind) else '未'}／見本 {used}／まだ見本が無い種類 {sorted(need) or 'なし'}")
 

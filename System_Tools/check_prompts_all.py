@@ -13,7 +13,7 @@
   3. imagegen/precheck_subjects.py       … 全ASSETが PASS（Codex でナレーションの主題が絵に描かれているかを判定）
   4. 「要設定・TBD・仮置き・TODO」0件
 
-合格すると .claude/.state/prompt_checks/<sha256>.json に合格票を書く。
+合格すると .claude/yama_gate/prompt_checks/<sha256>.json に合格票を書き、git で別のPCへ共有する。
 生成の関所（.claude/hooks/guard-yama-generation-gate.sh と imagegen/regen.py）は、
 この合格票がプロンプトの「今の中身」と一致するときだけ生成を通す。中身を1字でも変えたら取り直し。
 報告するときは、最後に出る「総合判定」の行をそのまま貼る（自分の言葉で要約しない）。
@@ -31,7 +31,9 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]  # D:\0
-STAMPS = ROOT / ".claude" / ".state" / "prompt_checks"
+sys.path.insert(0, str(HERE))
+import generation_gate  # noqa: E402  合格票は PC 間で共有する（generation_gate.STAMPS）
+STAMPS = generation_gate.STAMPS
 TODO = re.compile(r"（要設定）|要設定|TBD|仮置き|後で埋める|TODO")
 
 
@@ -119,13 +121,15 @@ def main() -> int:
     ids = asset_ids(text)
     status = "PASS" if not problems else "FAIL"
     STAMPS.mkdir(parents=True, exist_ok=True)
-    record = {"file": str(path), "sha256": sha, "status": status, "asset_ids": ids,
+    record = {"file": generation_gate.portable(path), "sha256": sha, "status": status, "asset_ids": ids,
               "excerpt_mode": a.excerpt, "accepted_warnings": accepted,
               "checked_at": datetime.now().isoformat(timespec="seconds"), "results": results,
               "problems": problems}
     if status == "PASS":
         (STAMPS / f"{sha}.json").write_text(json.dumps(record, ensure_ascii=False, indent=1), encoding="utf-8")
     (STAMPS / "last_run.json").write_text(json.dumps(record, ensure_ascii=False, indent=1), encoding="utf-8")
+    if status == "PASS":
+        generation_gate.share("関所: 合格票")
 
     for p in problems:
         print(p)

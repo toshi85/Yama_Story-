@@ -604,6 +604,9 @@ def run_review(args: argparse.Namespace, runner: Runner | None = None) -> dict[s
                 failures.append(_append_error(out_dir, f"astra asset {asset:03d}", [asset], exc))
 
     calls["failures"] = len(failures)
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    import generation_gate
+    generation_gate.share_pending()   # 検品記録を別のPCへ（1回だけ push）
     if not args.dry_run:
         reported_calls = {
             "sol": prior_calls["sol"] + calls["sol"],

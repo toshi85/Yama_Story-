@@ -4,6 +4,7 @@ import json
 import sys
 import tempfile
 import unittest
+import unittest.mock
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -128,6 +129,28 @@ class GateTest(unittest.TestCase):
         queue[0]["prompt"] += " Rear view only."
         with self.assertRaises(gg.GateError):
             gg.require("image", queue, tool="run.py", paid=False)
+
+    def test_portable_name_is_same_on_every_pc(self):
+        # Windows は D:\0\Yama_Story-、Mac は …/Antigravity/Yama_Story。記録の名前はどちらでも同じにする
+        md = gg.YAMA_REPO / "Scripts" / "作品" / "Asset_Prompts.md"
+        self.assertEqual("yama:Scripts/作品/Asset_Prompts.md", gg.portable(md))
+        self.assertEqual(md, gg.from_portable("yama:Scripts/作品/Asset_Prompts.md"))
+
+    def test_approval_made_on_other_pc_is_used(self):
+        # 別のPCで本人が承認し push した記録（origin/main にだけある）を、このPCでも使う
+        name = f"{gg.header_key(self.md)}_image.json"
+        with unittest.mock.patch.object(gg, "_shared", lambda d: True), \
+             unittest.mock.patch.object(gg, "_remote", lambda d: {name: "{}"} if d == gg.APPROVALS else {}):
+            self.assertTrue(gg.approved(self.md, "image"))
+            self.assertEqual(5, len(gg.require("image", self.items, tool="t", paid=True, record=False)))
+
+    def test_samples_made_on_other_pc_count(self):
+        name = gg._usage_file(self.md, "image").name
+        with unittest.mock.patch.object(gg, "_shared", lambda d: True), \
+             unittest.mock.patch.object(gg, "_remote", lambda d: {name: '["ASSET-001_char"]'} if d == gg.USAGE else {}), \
+             unittest.mock.patch.object(gg, "share", lambda *a, **k: None):
+            with self.assertRaises(gg.GateError):   # キャラの見本は別のPCで作成済み→2件目は止まる
+                gg.require("image", self.items[1:2], tool="t", paid=True, record=False)
 
     def test_is_yama(self):
         self.assertTrue(gg.is_yama(r"D:\0\Yama_Story-\Scripts\x\plan.json"))
