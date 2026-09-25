@@ -20,9 +20,9 @@ SOL_MODEL = "gpt-5.6-sol"
 ASTRA_MODEL = "gpt-6-astra"
 EFFORT = "medium"
 ITEM_CODES = [
-    "A1", "A2", "A3", "A4", "A5", "A6",
-    "B1", "B2", "B3", "B4",
-    "C1", "C2", "C3", "C4", "C5",
+    "A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8", "A9", "A10",
+    "B1", "B2", "B3", "B4", "B5",
+    "C1", "C2", "C3", "C4", "C5", "C6",
     "D1", "D2", "D3",
     "E1", "E2", "E3", "E4", "E5",
     "F1", "F2",
@@ -75,6 +75,8 @@ class Cut:
     scene: str
     editor: str
     background_reuse: str
+    month: int = 0
+    chars: tuple[str, ...] = ()
 
 
 Runner = Callable[[Sequence[str], str], subprocess.CompletedProcess[str]]
@@ -116,6 +118,16 @@ def parse_cuts(md_path: Path) -> list[Cut]:
     text = md_path.read_text(encoding="utf-8")
     matches = list(re.finditer(r"^【制作メモ】ASSET-(\d+)\s*\[([^\]]+)\]", text, re.MULTILINE))
     cuts: list[Cut] = []
+    # この場面の月: ナレーションに出た「N月」を後ろのカットへ持ち越す（B5 季節の判定用。2026-09-25 せたな町043の雪）
+    month_at: dict[int, int] = {}
+    current = 0
+    for m in re.finditer(r"^ナレーター:(.*)$|^【制作メモ】ASSET-(\d+)", text, re.MULTILINE):
+        if m.group(1) is not None:
+            found = re.findall(r"(\d{1,2})月", m.group(1))
+            if found and 1 <= int(found[-1]) <= 12:
+                current = int(found[-1])
+        else:
+            month_at[int(m.group(2))] = current
     for index, match in enumerate(matches):
         asset = int(match.group(1))
         if asset not in by_asset:
@@ -131,6 +143,8 @@ def parse_cuts(md_path: Path) -> list[Cut]:
             scene=_line(block, "シーン:"),
             editor=_line(block, "→ 編集者指示:"),
             background_reuse=_line(block, "→ 背景再使用:"),
+            month=month_at.get(asset, 0),
+            chars=tuple(dict.fromkeys(re.findall(r"CHAR-\d+", block))),
         ))
     return cuts
 
@@ -195,7 +209,21 @@ def _context(cut: Cut | None, heading: str) -> str:
     )
 
 
+ROSTER_DIR: Path | None = None
+
+
+def roster_images(cut: Cut) -> list[Path]:
+    """固定人物（CHAR-NN）の基準画像。画像フォルダの CHAR-NN*.png を添付して同じ人か見比べる（C6）。"""
+    if ROSTER_DIR is None:
+        return []
+    found: list[Path] = []
+    for tag in cut.chars:
+        found.extend(sorted(ROSTER_DIR.glob(f"{tag}*.png"))[:1])
+    return found
+
+
 def _cut_text(cut: Cut, image_paths: Sequence[Path], previous: Cut | None, following: Cut | None) -> str:
+    roster_lines = "".join(f"  基準画像（{path.stem}）: {path.name}\n" for path in roster_images(cut))
     prompt_lines = "\n".join(
         f"  プロンプト{index}: {prompt}" for index, prompt in enumerate(cut.prompts, start=1)
     )
@@ -207,8 +235,11 @@ def _cut_text(cut: Cut, image_paths: Sequence[Path], previous: Cut | None, follo
         f"シーン: {cut.scene or 'なし'}\n"
         f"編集者指示: {cut.editor or 'なし'}\n"
         f"背景再使用: {cut.background_reuse or 'なし'}\n"
+        f"この場面の月: {str(cut.month) + '月' if cut.month else '不明'}\n"
+        f"固定人物: {', '.join(cut.chars) if cut.chars else 'なし（何度も出る役なら C6 で挙げる）'}\n"
         f"{prompt_lines}\n"
         f"添付画像（この順番）:\n{image_lines}\n"
+        f"{roster_lines}"
         f"{_context(previous, '前のカット')}\n"
         f"{_context(following, '次のカット')}"
     )
@@ -479,6 +510,8 @@ def run_review(args: argparse.Namespace, runner: Runner | None = None) -> dict[s
     if not images_dir.is_dir():
         raise NotADirectoryError(images_dir)
 
+    global ROSTER_DIR
+    ROSTER_DIR = images_dir
     check_path = Path(__file__).with_name("IMAGE_CHECK.md")
     rules = extract_review_rules(check_path)
     all_cuts = parse_cuts(md_path)
@@ -537,7 +570,7 @@ def run_review(args: argparse.Namespace, runner: Runner | None = None) -> dict[s
                 for cut in group
             ]
             prompt = make_sol_prompt(rules, entries)
-            images = [path for cut in group for path in image_map[cut.asset]]
+            images = [path for cut in group for path in (list(image_map[cut.asset]) + roster_images(cut))]
             command = command_for(SOL_MODEL, schema_dir / "sol.json", images)
             if args.dry_run:
                 _dry_files(out_dir, f"sol_{batch_no:03d}", command, prompt)

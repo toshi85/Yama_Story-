@@ -655,6 +655,68 @@ def prompt_lint(text, errors, warns, info):
         errors.append(f'キャラのカットに動画プロンプトもある {len(char_and_video)}件（キャラ＋背景で表すカットに動画は作らない＝二重の生成費。どちらか1つにする）: '
                       + ', '.join(dict.fromkeys(char_and_video)))
 
+    # 56) 何度も出る役（ハンター・職員・研究者・町長・医師・警察官）は CHAR で固定して再利用する
+    #     （2026-09-25 せたな町045「なんでアセット43と違う人なの？」／全画像目視でハンター25カット・職員12カットが別人）。
+    ROLE = re.compile(r'\b(hunters?|town official|researcher|scientist|expert|mayor)\b', re.I)
+    role_no_char = []
+    for nar, seg in segs:
+        for lab, b in labeled_blocks(seg):
+            if 'キャラ' not in lab or 'cartoon' not in b.lower():
+                continue
+            if ROLE.search(b) and not re.search(r'CHAR-\d+', b):
+                role_no_char.append(asset_no(seg))
+    if role_no_char:
+        errors.append(f'何度も出る役にCHAR番号が無い {len(role_no_char)}件（ハンター・職員・研究者・町長などは冒頭でCHARとして1人決め、(CHAR-NN 再利用) で同じ人を描く）: '
+                      + ', '.join(dict.fromkeys(role_no_char)))
+
+    # 57) 季節: ナレーションの「N月」を後ろへ持ち越し、4〜11月（または月不明）の写実背景に No snow が無ければ止める
+    #     （2026-09-25 せたな町043「なんで4月なのに雪があるの？」。旧プロンプトは in early spring だけで雪が描かれた）。
+    #     台本が雪に触れている場面（「雪が残っていた」等）は対象外。
+    month_now, snow_missing = 0, []
+    for nar, seg in segs:
+        found = re.findall(r'(\d{1,2})月', nar or '')
+        if found and 1 <= int(found[-1]) <= 12:
+            month_now = int(found[-1])
+        # 月が分からない抜粋ファイル（作り直し分だけの md）も対象にする。冬（12〜3月）と、台本・シーンが雪や冬に触れる場面だけ除く
+        if month_now in (12, 1, 2, 3) or '雪' in (nar or '') or re.search(r'残雪|雪が残|積雪|冬の', seg.split('```')[0]):
+            continue
+        for lab, b in labeled_blocks(seg):
+            if 'cartoon' in b.lower() or 'Google Flow' in lab or '動画' in lab:
+                continue
+            if 'photorealistic' in b.lower() and not re.search(r'no snow', b, re.I):
+                snow_missing.append(f'{asset_no(seg)}({month_now}月)')
+                break
+    if snow_missing:
+        errors.append(f'4〜11月の写実背景に No snow が無い {len(snow_missing)}件（季節だけ書くと雪が描かれる。"No snow anywhere, no frost, no ice, no winter." を入れる）: '
+                      + ', '.join(dict.fromkeys(snow_missing)))
+
+    # 58) 地名・距離・位置関係を語る文は Google Earth（定石AB・2026-09-25 せたな町025・030・195 本人指摘）
+    PLACE = re.compile(r'(キロ|メートル)(ほど|ほど離れ|離れ|先|の距離|の範囲)|離れた地点|の距離|にまたがる|と非常に近く|^現場は、.*(地区|町)。')
+    place_not_map = []
+    for nar, seg in segs:
+        km = re.search(r'【制作メモ】ASSET-\d+\s*\[([^\]]+)\]', seg)
+        head = km.group(1) if km else ''
+        if nar and PLACE.search(nar) and 'Google Earth' not in head and '再利用' not in head:
+            place_not_map.append(asset_no(seg))
+    if place_not_map:
+        warns.append(f'地名・距離を語る文が地図になっていない {len(place_not_map)}件（Google Earth にする。地図3連続になるなら前の地図の再利用で線を足す）: '
+                     + ', '.join(dict.fromkeys(place_not_map)))
+
+    # 59) 26字以上なのに静止画だけ（キャラも動画も無い）。Structure_Rules の文字数ルール。
+    #     せたな町で「Lovart静止画 + 編集者」表記の長文カットが validate_yama_prompts をすり抜けた（060・094・217 など）。
+    long_still = []
+    for nar, seg in segs:
+        km = re.search(r'【制作メモ】ASSET-\d+\s*\[([^\]]+)\]', seg)
+        head = km.group(1) if km else ''
+        labs = [lab for lab, b in labeled_blocks(seg)]
+        if '静止画' in head and not any('キャラ' in l or '動画' in l for l in labs):
+            n = len(re.sub(r'[\s、。，．,.「」『』（）()！？!?・…―ー-]', '', nar or ''))
+            if n > 25:
+                long_still.append(f'{asset_no(seg)}({n}字)')
+    if long_still:
+        errors.append(f'26字以上なのに静止画だけ {len(long_still)}件（26〜50字はキャラアニメ・動画・Google Earth のみ）: '
+                      + ', '.join(dict.fromkeys(long_still)))
+
     # 46) シーン行で向き・視線を求めているのに、英語プロンプトに指定がない。
     SCENE_DIRECTION = re.compile(r'見る|見つめ|向く|向け|振り返|指さ|指差|視線|の方へ|のほうへ|にらむ|睨')
     PROMPT_DIRECTION = re.compile(
