@@ -1,0 +1,760 @@
+{
+  "ASSET-001": [
+    "動画/ASSET-001_video.mp4",
+    "画像/ASSET-001_still.png"
+  ],
+  "ASSET-002": [
+    "動画/ASSET-002_video.mp4",
+    "画像/ASSET-002_still.png"
+  ],
+  "ASSET-003": [
+    "動画/ASSET-003_video.mp4",
+    "画像/ASSET-003_still.png"
+  ],
+  "ASSET-004": [
+    "画像/ASSET-004_still.png"
+  ],
+  "ASSET-005": [
+    "動画/ASSET-005_video.mp4",
+    "画像/ASSET-005_still.png"
+  ],
+  "ASSET-006": [
+    "画像/ASSET-006_still.png"
+  ],
+  "ASSET-007": [
+    "画像/ASSET-007_still.png"
+  ],
+  "ASSET-008": [
+    "動画/ASSET-008_video.mp4",
+    "画像/ASSET-008_still.png"
+  ],
+  "ASSET-009": [
+    "動画/ASSET-009_video.mp4",
+    "画像/ASSET-009_still.png"
+  ],
+  "ASSET-010": [
+    "画像/ASSET-010_still.png"
+  ],
+  "ASSET-011": [
+    "動画/ASSET-011_video.mp4",
+    "画像/ASSET-011_still.png"
+  ],
+  "ASSET-012": [],
+  "ASSET-013": [],
+  "ASSET-014": [
+    "画像/ASSET-014_still.png"
+  ],
+  "ASSET-015": [
+    "動画/ASSET-015_video.mp4",
+    "画像/ASSET-015_char.png",
+    "画像/ASSET-015_still.png"
+  ],
+  "ASSET-016": [
+    "画像/ASSET-016_still.png"
+  ],
+  "ASSET-017": [
+    "画像/ASSET-017_char.png",
+    "画像/ASSET-017_still.png"
+  ],
+  "ASSET-018": [],
+  "ASSET-019": [
+    "画像/ASSET-019_bg.png",
+    "画像/ASSET-019_char.png"
+  ],
+  "ASSET-020": [
+    "画像/ASSET-020_char.png",
+    "画像/ASSET-020_still.png"
+  ],
+  "ASSET-021": [
+    "画像/ASSET-021_still.png"
+  ],
+  "ASSET-022": [
+    "画像/ASSET-022_bg.png",
+    "画像/ASSET-022_char.png"
+  ],
+  "ASSET-023": [
+    "動画/ASSET-023_video.mp4",
+    "画像/ASSET-023_char.png",
+    "画像/ASSET-023_still.png"
+  ],
+  "ASSET-024": [],
+  "ASSET-025": [
+    "動画/ASSET-025_video.mp4",
+    "画像/ASSET-025_char.png",
+    "画像/ASSET-025_still.png"
+  ],
+  "ASSET-026": [
+    "動画/ASSET-026_video.mp4",
+    "画像/ASSET-026_char.png",
+    "画像/ASSET-026_still.png"
+  ],
+  "ASSET-027": [
+    "動画/ASSET-027_video.mp4",
+    "画像/ASSET-027_still.png"
+  ],
+  "ASSET-028": [
+    "画像/ASSET-028_char.png",
+    "画像/ASSET-028_still.png"
+  ],
+  "ASSET-029": [],
+  "ASSET-030": [
+    "画像/ASSET-030_still.png"
+  ],
+  "ASSET-031": [
+    "動画/ASSET-031_video.mp4",
+    "画像/ASSET-031_char.png",
+    "画像/ASSET-031_still.png"
+  ],
+  "ASSET-032": [
+    "画像/ASSET-032_still.png"
+  ],
+  "ASSET-033": [
+    "動画/ASSET-033_video.mp4",
+    "画像/ASSET-033_char.png",
+    "画像/ASSET-033_still.png"
+  ],
+  "ASSET-034": [
+    "画像/ASSET-034_bg.png",
+    "画像/ASSET-034_char.png"
+  ],
+  "ASSET-035": [
+    "画像/ASSET-035_still.png"
+  ],
+  "ASSET-036": [
+    "動画/ASSET-036_video.mp4",
+    "画像/ASSET-036_char.png",
+    "画像/ASSET-036_still.png"
+  ],
+  "ASSET-037": [],
+  "ASSET-038": [
+    "動画/ASSET-038_video.mp4",
+    "画像/ASSET-038_char.png",
+    "画像/ASSET-038_still.png"
+  ],
+  "ASSET-039": [
+    "動画/ASSET-039_video.mp4",
+    "画像/ASSET-039_char.png",
+    "画像/ASSET-039_still.png"
+  ],
+  "ASSET-040": [
+    "画像/ASSET-040_bg.png",
+    "画像/ASSET-040_char.png"
+  ],
+  "ASSET-041": [
+    "画像/ASSET-041_char.png",
+    "画像/ASSET-041_still.png"
+  ],
+  "ASSET-042": [],
+  "ASSET-043": [
+    "画像/ASSET-043_bg.png",
+    "画像/ASSET-043_char.png"
+  ],
+  "ASSET-044": [
+    "画像/ASSET-044_still.png"
+  ],
+  "ASSET-045": [
+    "動画/ASSET-045_video.mp4",
+    "画像/ASSET-045_char.png",
+    "画像/ASSET-045_still.png"
+  ],
+  "ASSET-046": [],
+  "ASSET-047": [
+    "動画/ASSET-047_video.mp4",
+    "画像/ASSET-047_char.png",
+    "画像/ASSET-047_still.png"
+  ],
+  "ASSET-048": [
+    "画像/ASSET-048_still.png"
+  ],
+  "ASSET-049": [
+    "画像/ASSET-049_still.png"
+  ],
+  "ASSET-050": [
+    "画像/ASSET-050_bg.png",
+    "画像/ASSET-050_char.png"
+  ],
+  "ASSET-051": [
+    "動画/ASSET-051_video.mp4",
+    "画像/ASSET-051_char.png",
+    "画像/ASSET-051_still.png"
+  ],
+  "ASSET-052": [
+    "画像/ASSET-052_still.png"
+  ],
+  "ASSET-053": [
+    "動画/ASSET-053_video.mp4",
+    "画像/ASSET-053_char.png",
+    "画像/ASSET-053_still.png"
+  ],
+  "ASSET-054": [
+    "動画/ASSET-054_video.mp4",
+    "画像/ASSET-054_char.png",
+    "画像/ASSET-054_still.png"
+  ],
+  "ASSET-055": [
+    "画像/ASSET-055_char.png",
+    "画像/ASSET-055_still.png"
+  ],
+  "ASSET-056": [
+    "動画/ASSET-056_video.mp4",
+    "画像/ASSET-056_char.png",
+    "画像/ASSET-056_still.png"
+  ],
+  "ASSET-057": [
+    "画像/ASSET-057_bg.png",
+    "画像/ASSET-057_char.png"
+  ],
+  "ASSET-058": [
+    "動画/ASSET-058_video.mp4",
+    "画像/ASSET-058_char.png",
+    "画像/ASSET-058_still.png"
+  ],
+  "ASSET-059": [
+    "動画/ASSET-059_video.mp4",
+    "画像/ASSET-059_char.png",
+    "画像/ASSET-059_still.png"
+  ],
+  "ASSET-060": [
+    "画像/ASSET-060_still.png"
+  ],
+  "ASSET-061": [
+    "動画/ASSET-061_video.mp4",
+    "画像/ASSET-061_still.png"
+  ],
+  "ASSET-062": [],
+  "ASSET-063": [
+    "画像/ASSET-063_bg.png",
+    "画像/ASSET-063_char.png"
+  ],
+  "ASSET-064": [
+    "画像/ASSET-064_still.png"
+  ],
+  "ASSET-065": [],
+  "ASSET-066": [
+    "動画/ASSET-066_video.mp4",
+    "画像/ASSET-066_char.png",
+    "画像/ASSET-066_still.png"
+  ],
+  "ASSET-067": [
+    "画像/ASSET-067_char.png",
+    "画像/ASSET-067_still.png"
+  ],
+  "ASSET-068": [
+    "動画/ASSET-068_video.mp4",
+    "画像/ASSET-068_char.png",
+    "画像/ASSET-068_still.png"
+  ],
+  "ASSET-069": [
+    "動画/ASSET-069_video.mp4",
+    "画像/ASSET-069_char.png",
+    "画像/ASSET-069_still.png"
+  ],
+  "ASSET-070": [
+    "画像/ASSET-070_still.png"
+  ],
+  "ASSET-071": [
+    "動画/ASSET-071_video.mp4",
+    "画像/ASSET-071_char.png",
+    "画像/ASSET-071_still.png"
+  ],
+  "ASSET-072": [],
+  "ASSET-073": [
+    "画像/ASSET-073_still.png"
+  ],
+  "ASSET-074": [
+    "動画/ASSET-074_video.mp4",
+    "画像/ASSET-074_char.png",
+    "画像/ASSET-074_still.png"
+  ],
+  "ASSET-075": [
+    "画像/ASSET-075_bg.png",
+    "画像/ASSET-075_char.png"
+  ],
+  "ASSET-076": [
+    "画像/ASSET-076_bg.png",
+    "画像/ASSET-076_char.png"
+  ],
+  "ASSET-077": [
+    "画像/ASSET-077_bg.png",
+    "画像/ASSET-077_char.png"
+  ],
+  "ASSET-078": [
+    "動画/ASSET-078_video.mp4",
+    "画像/ASSET-078_char.png",
+    "画像/ASSET-078_still.png"
+  ],
+  "ASSET-079": [
+    "画像/ASSET-079_char.png",
+    "画像/ASSET-079_still.png"
+  ],
+  "ASSET-080": [
+    "画像/ASSET-080_bg.png",
+    "画像/ASSET-080_char.png"
+  ],
+  "ASSET-081": [
+    "画像/ASSET-081_still.png"
+  ],
+  "ASSET-082": [
+    "動画/ASSET-082_video.mp4",
+    "画像/ASSET-082_still.png"
+  ],
+  "ASSET-083": [
+    "画像/ASSET-083_char.png",
+    "画像/ASSET-083_still.png"
+  ],
+  "ASSET-084": [
+    "動画/ASSET-084_video.mp4",
+    "画像/ASSET-084_char.png",
+    "画像/ASSET-084_still.png"
+  ],
+  "ASSET-085": [
+    "画像/ASSET-085_bg.png",
+    "画像/ASSET-085_char.png"
+  ],
+  "ASSET-086": [
+    "画像/ASSET-086_bg.png",
+    "画像/ASSET-086_char.png"
+  ],
+  "ASSET-087": [
+    "動画/ASSET-087_video.mp4",
+    "画像/ASSET-087_still.png"
+  ],
+  "ASSET-088": [
+    "画像/ASSET-088_still.png"
+  ],
+  "ASSET-089": [],
+  "ASSET-090": [
+    "動画/ASSET-090_video.mp4",
+    "画像/ASSET-090_char.png",
+    "画像/ASSET-090_still.png"
+  ],
+  "ASSET-091": [
+    "動画/ASSET-091_video.mp4",
+    "画像/ASSET-091_char.png",
+    "画像/ASSET-091_still.png"
+  ],
+  "ASSET-092": [
+    "画像/ASSET-092_char.png",
+    "画像/ASSET-092_still.png"
+  ],
+  "ASSET-093": [
+    "画像/ASSET-093_bg.png",
+    "画像/ASSET-093_char.png"
+  ],
+  "ASSET-094": [
+    "画像/ASSET-094_still.png"
+  ],
+  "ASSET-095": [
+    "画像/ASSET-095_still.png"
+  ],
+  "ASSET-096": [
+    "動画/ASSET-096_video.mp4",
+    "画像/ASSET-096_char.png",
+    "画像/ASSET-096_still.png"
+  ],
+  "ASSET-097": [],
+  "ASSET-098": [],
+  "ASSET-099": [],
+  "ASSET-100": [],
+  "ASSET-101": [
+    "動画/ASSET-101_video.mp4",
+    "画像/ASSET-101_char.png",
+    "画像/ASSET-101_still.png"
+  ],
+  "ASSET-102": [
+    "動画/ASSET-102_video.mp4",
+    "画像/ASSET-102_char.png",
+    "画像/ASSET-102_still.png"
+  ],
+  "ASSET-103": [
+    "画像/ASSET-103_char.png",
+    "画像/ASSET-103_still.png"
+  ],
+  "ASSET-104": [
+    "画像/ASSET-104_bg.png",
+    "画像/ASSET-104_char.png"
+  ],
+  "ASSET-105": [
+    "画像/ASSET-105_bg.png",
+    "画像/ASSET-105_char.png"
+  ],
+  "ASSET-106": [],
+  "ASSET-107": [
+    "画像/ASSET-107_bg.png",
+    "画像/ASSET-107_char.png"
+  ],
+  "ASSET-108": [
+    "画像/ASSET-108_char.png",
+    "画像/ASSET-108_still.png"
+  ],
+  "ASSET-109": [
+    "画像/ASSET-109_bg.png",
+    "画像/ASSET-109_char.png"
+  ],
+  "ASSET-110": [
+    "動画/ASSET-110_video.mp4",
+    "画像/ASSET-110_char.png",
+    "画像/ASSET-110_still.png"
+  ],
+  "ASSET-111": [
+    "動画/ASSET-111_video.mp4",
+    "画像/ASSET-111_char.png",
+    "画像/ASSET-111_still.png"
+  ],
+  "ASSET-112": [],
+  "ASSET-113": [
+    "動画/ASSET-113_video.mp4",
+    "画像/ASSET-113_char.png",
+    "画像/ASSET-113_still.png"
+  ],
+  "ASSET-114": [
+    "画像/ASSET-114_bg.png",
+    "画像/ASSET-114_char.png"
+  ],
+  "ASSET-115": [
+    "動画/ASSET-115_video.mp4",
+    "画像/ASSET-115_char.png",
+    "画像/ASSET-115_still.png"
+  ],
+  "ASSET-116": [],
+  "ASSET-117": [
+    "画像/ASSET-117_char.png",
+    "画像/ASSET-117_still.png"
+  ],
+  "ASSET-118": [
+    "動画/ASSET-118_video.mp4",
+    "画像/ASSET-118_char.png",
+    "画像/ASSET-118_still.png"
+  ],
+  "ASSET-119": [
+    "画像/ASSET-119_still.png"
+  ],
+  "ASSET-120": [
+    "動画/ASSET-120_video.mp4",
+    "画像/ASSET-120_char.png",
+    "画像/ASSET-120_still.png"
+  ],
+  "ASSET-121": [
+    "画像/ASSET-121_still.png"
+  ],
+  "ASSET-122": [
+    "画像/ASSET-122_char.png",
+    "画像/ASSET-122_still.png"
+  ],
+  "ASSET-123": [],
+  "ASSET-124": [
+    "画像/ASSET-124_bg.png",
+    "画像/ASSET-124_char.png"
+  ],
+  "ASSET-125": [
+    "動画/ASSET-125_video.mp4",
+    "画像/ASSET-125_char.png",
+    "画像/ASSET-125_still.png"
+  ],
+  "ASSET-126": [
+    "画像/ASSET-126_still.png"
+  ],
+  "ASSET-127": [],
+  "ASSET-128": [
+    "画像/ASSET-128_char.png",
+    "画像/ASSET-128_still.png"
+  ],
+  "ASSET-129": [],
+  "ASSET-130": [
+    "画像/ASSET-130_bg.png",
+    "画像/ASSET-130_char.png"
+  ],
+  "ASSET-131": [],
+  "ASSET-132": [
+    "画像/ASSET-132_still.png"
+  ],
+  "ASSET-133": [
+    "画像/ASSET-133_still.png"
+  ],
+  "ASSET-134": [],
+  "ASSET-135": [
+    "画像/ASSET-135_bg.png",
+    "画像/ASSET-135_char.png"
+  ],
+  "ASSET-136": [
+    "画像/ASSET-136_char.png",
+    "画像/ASSET-136_still.png"
+  ],
+  "ASSET-137": [
+    "画像/ASSET-137_char.png",
+    "画像/ASSET-137_still.png"
+  ],
+  "ASSET-138": [
+    "画像/ASSET-138_bg.png",
+    "画像/ASSET-138_char.png"
+  ],
+  "ASSET-139": [],
+  "ASSET-140": [
+    "動画/ASSET-140_video.mp4",
+    "画像/ASSET-140_char.png",
+    "画像/ASSET-140_still.png"
+  ],
+  "ASSET-141": [
+    "画像/ASSET-141_char.png",
+    "画像/ASSET-141_still.png"
+  ],
+  "ASSET-142": [
+    "画像/ASSET-142_char.png",
+    "画像/ASSET-142_still.png"
+  ],
+  "ASSET-143": [
+    "画像/ASSET-143_bg.png",
+    "画像/ASSET-143_char.png"
+  ],
+  "ASSET-144": [],
+  "ASSET-145": [
+    "画像/ASSET-145_char.png",
+    "画像/ASSET-145_still.png"
+  ],
+  "ASSET-146": [
+    "画像/ASSET-146_char.png",
+    "画像/ASSET-146_still.png"
+  ],
+  "ASSET-147": [],
+  "ASSET-148": [
+    "画像/ASSET-148_char.png",
+    "画像/ASSET-148_still.png"
+  ],
+  "ASSET-149": [
+    "画像/ASSET-149_char.png",
+    "画像/ASSET-149_still.png"
+  ],
+  "ASSET-150": [],
+  "ASSET-151": [
+    "画像/ASSET-151_char.png",
+    "画像/ASSET-151_still.png"
+  ],
+  "ASSET-152": [
+    "画像/ASSET-152_char.png",
+    "画像/ASSET-152_still.png"
+  ],
+  "ASSET-153": [
+    "画像/ASSET-153_bg.png",
+    "画像/ASSET-153_char.png"
+  ],
+  "ASSET-154": [],
+  "ASSET-155": [
+    "画像/ASSET-155_bg.png",
+    "画像/ASSET-155_char.png"
+  ],
+  "ASSET-156": [
+    "画像/ASSET-156_bg.png",
+    "画像/ASSET-156_char.png"
+  ],
+  "ASSET-157": [
+    "画像/ASSET-157_char.png",
+    "画像/ASSET-157_still.png"
+  ],
+  "ASSET-158": [
+    "動画/ASSET-158_video.mp4",
+    "画像/ASSET-158_char.png",
+    "画像/ASSET-158_still.png"
+  ],
+  "ASSET-159": [
+    "画像/ASSET-159_bg.png",
+    "画像/ASSET-159_char.png"
+  ],
+  "ASSET-160": [
+    "動画/ASSET-160_video.mp4",
+    "画像/ASSET-160_char.png",
+    "画像/ASSET-160_still.png"
+  ],
+  "ASSET-161": [
+    "画像/ASSET-161_still.png"
+  ],
+  "ASSET-162": [
+    "画像/ASSET-162_char.png",
+    "画像/ASSET-162_still.png"
+  ],
+  "ASSET-163": [],
+  "ASSET-164": [
+    "画像/ASSET-164_bg.png",
+    "画像/ASSET-164_char.png"
+  ],
+  "ASSET-165": [],
+  "ASSET-166": [
+    "動画/ASSET-166_video.mp4",
+    "画像/ASSET-166_char.png",
+    "画像/ASSET-166_still.png"
+  ],
+  "ASSET-167": [
+    "画像/ASSET-167_char.png",
+    "画像/ASSET-167_still.png"
+  ],
+  "ASSET-168": [
+    "画像/ASSET-168_char.png",
+    "画像/ASSET-168_still.png"
+  ],
+  "ASSET-169": [
+    "動画/ASSET-169_video.mp4",
+    "画像/ASSET-169_char.png",
+    "画像/ASSET-169_still.png"
+  ],
+  "ASSET-170": [
+    "画像/ASSET-170_char.png",
+    "画像/ASSET-170_still.png"
+  ],
+  "ASSET-171": [],
+  "ASSET-172": [
+    "画像/ASSET-172_char.png",
+    "画像/ASSET-172_still.png"
+  ],
+  "ASSET-173": [],
+  "ASSET-174": [
+    "動画/ASSET-174_video.mp4",
+    "画像/ASSET-174_char.png",
+    "画像/ASSET-174_still.png"
+  ],
+  "ASSET-175": [
+    "画像/ASSET-175_char.png",
+    "画像/ASSET-175_still.png"
+  ],
+  "ASSET-176": [
+    "画像/ASSET-176_bg.png",
+    "画像/ASSET-176_char.png"
+  ],
+  "ASSET-177": [],
+  "ASSET-178": [
+    "動画/ASSET-178_video.mp4",
+    "画像/ASSET-178_char.png",
+    "画像/ASSET-178_still.png"
+  ],
+  "ASSET-179": [
+    "画像/ASSET-179_char.png",
+    "画像/ASSET-179_still.png"
+  ],
+  "ASSET-180": [],
+  "ASSET-181": [
+    "画像/ASSET-181_char.png",
+    "画像/ASSET-181_still.png"
+  ],
+  "ASSET-182": [
+    "画像/ASSET-182_bg.png",
+    "画像/ASSET-182_char.png"
+  ],
+  "ASSET-183": [],
+  "ASSET-184": [
+    "画像/ASSET-184_char.png",
+    "画像/ASSET-184_still.png"
+  ],
+  "ASSET-185": [
+    "画像/ASSET-185_bg.png",
+    "画像/ASSET-185_char.png"
+  ],
+  "ASSET-186": [],
+  "ASSET-187": [
+    "画像/ASSET-187_char.png",
+    "画像/ASSET-187_still.png"
+  ],
+  "ASSET-188": [
+    "画像/ASSET-188_char.png",
+    "画像/ASSET-188_still.png"
+  ],
+  "ASSET-189": [],
+  "ASSET-190": [],
+  "ASSET-191": [
+    "動画/ASSET-191_video.mp4",
+    "画像/ASSET-191_char.png",
+    "画像/ASSET-191_still.png"
+  ],
+  "ASSET-192": [],
+  "ASSET-193": [],
+  "ASSET-194": [
+    "画像/ASSET-194_char.png",
+    "画像/ASSET-194_still.png"
+  ],
+  "ASSET-195": [],
+  "ASSET-196": [
+    "画像/ASSET-196_char.png",
+    "画像/ASSET-196_still.png"
+  ],
+  "ASSET-197": [
+    "画像/ASSET-197_char.png",
+    "画像/ASSET-197_still.png"
+  ],
+  "ASSET-198": [
+    "画像/ASSET-198_bg.png",
+    "画像/ASSET-198_char.png"
+  ],
+  "ASSET-199": [
+    "画像/ASSET-199_char.png",
+    "画像/ASSET-199_still.png"
+  ],
+  "ASSET-200": [
+    "画像/ASSET-200_char.png",
+    "画像/ASSET-200_still.png"
+  ],
+  "ASSET-201": [],
+  "ASSET-202": [
+    "画像/ASSET-202_char.png",
+    "画像/ASSET-202_still.png"
+  ],
+  "ASSET-203": [
+    "動画/ASSET-203_video.mp4",
+    "画像/ASSET-203_char.png",
+    "画像/ASSET-203_still.png"
+  ],
+  "ASSET-204": [
+    "画像/ASSET-204_char.png",
+    "画像/ASSET-204_still.png"
+  ],
+  "ASSET-205": [],
+  "ASSET-206": [
+    "画像/ASSET-206_char.png",
+    "画像/ASSET-206_still.png"
+  ],
+  "ASSET-207": [
+    "画像/ASSET-207_char.png",
+    "画像/ASSET-207_still.png"
+  ],
+  "ASSET-208": [
+    "画像/ASSET-208_bg.png",
+    "画像/ASSET-208_char.png"
+  ],
+  "ASSET-209": [],
+  "ASSET-210": [
+    "画像/ASSET-210_char.png",
+    "画像/ASSET-210_still.png"
+  ],
+  "ASSET-211": [
+    "画像/ASSET-211_char.png",
+    "画像/ASSET-211_still.png"
+  ],
+  "ASSET-212": [
+    "画像/ASSET-212_bg.png",
+    "画像/ASSET-212_char.png"
+  ],
+  "ASSET-213": [
+    "動画/ASSET-213_video.mp4",
+    "画像/ASSET-213_char.png",
+    "画像/ASSET-213_still.png"
+  ],
+  "ASSET-214": [
+    "動画/ASSET-214_video.mp4",
+    "画像/ASSET-214_char.png",
+    "画像/ASSET-214_still.png"
+  ],
+  "ASSET-215": [
+    "動画/ASSET-215_video.mp4",
+    "画像/ASSET-215_char.png",
+    "画像/ASSET-215_still.png"
+  ],
+  "ASSET-216": [],
+  "ASSET-217": [
+    "画像/ASSET-217_still.png"
+  ],
+  "ASSET-218": [
+    "画像/ASSET-218_char.png",
+    "画像/ASSET-218_still.png"
+  ],
+  "ASSET-219": [],
+  "ASSET-220": [
+    "動画/ASSET-220_video.mp4",
+    "画像/ASSET-220_still.png"
+  ]
+}

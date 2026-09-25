@@ -1,0 +1,1582 @@
+{
+  "schema": "setana_media_manifest_v1",
+  "source_script_sha256": "f5a3fcca39397e2c9a22f07728073dc8c335b58e6c763b0fad5117f5a2aa8485",
+  "counts": {
+    "final_images": 213,
+    "video_clips": 60,
+    "text_cards": 39,
+    "editor_google_earth": 8
+  },
+  "editor_google_earth_assets": [
+    "ASSET-012",
+    "ASSET-065",
+    "ASSET-097",
+    "ASSET-099",
+    "ASSET-116",
+    "ASSET-173",
+    "ASSET-183",
+    "ASSET-193"
+  ],
+  "files": [
+    {
+      "path": "画像/ASSET-001_still.png",
+      "bytes": 3034322,
+      "sha256": "5a695684522dec9ae278c50ccfa05777f0c6e14ecaab8da2d5ded50f336ba634"
+    },
+    {
+      "path": "画像/ASSET-002_still.png",
+      "bytes": 3756415,
+      "sha256": "78e329b1b70a80e534c31689bf76b66d18efe9200b322545b97ffc9c1e9ea29f"
+    },
+    {
+      "path": "画像/ASSET-003_still.png",
+      "bytes": 3035479,
+      "sha256": "1f9d5a0a8dfa127fced736fd40d5d66aa3d9bb1fa08f60b244f8e6471db5cbce"
+    },
+    {
+      "path": "画像/ASSET-004_still.png",
+      "bytes": 3288393,
+      "sha256": "a5e2e6a146527f7c0d7f1588d614fe58b4c2602cd3941038e60a3d61193e984c"
+    },
+    {
+      "path": "画像/ASSET-005_still.png",
+      "bytes": 3475871,
+      "sha256": "0e7e3a81bec1b6e9b696a6c5d318bbd8832b81c042b3e4d781dd636346e182a8"
+    },
+    {
+      "path": "画像/ASSET-006_still.png",
+      "bytes": 2989185,
+      "sha256": "4d43b8c687b7b806d9d0007e65dc75304cd60d3144c8444e0c884fb0fc220597"
+    },
+    {
+      "path": "画像/ASSET-007_still.png",
+      "bytes": 2212763,
+      "sha256": "17bb1e3a87fbbd5cab9f91227f009b860134faec34cf6ffb7f4a20f6b07487ed"
+    },
+    {
+      "path": "画像/ASSET-008_still.png",
+      "bytes": 2777035,
+      "sha256": "6727ae2d15c4a504bfc847083aba5491bc8991e2f84c763f0bb80c57b5566418"
+    },
+    {
+      "path": "画像/ASSET-009_still.png",
+      "bytes": 2533768,
+      "sha256": "3342a3a83957862a00352a60b927e280913fbf1cb902e3a06ad5ef07b536946f"
+    },
+    {
+      "path": "画像/ASSET-010_still.png",
+      "bytes": 3729553,
+      "sha256": "b93a96297d62bd6572fc41324c4d9fa40acfe442f3a9be152e24b8a8733338ed"
+    },
+    {
+      "path": "画像/ASSET-011_still.png",
+      "bytes": 2521463,
+      "sha256": "bcc0a3f2ad65dbd8a76bdf3b0ee3d20b50d58ae899719de0ad0af2029d90efee"
+    },
+    {
+      "path": "画像/ASSET-014_still.png",
+      "bytes": 2419701,
+      "sha256": "e73e1938b9877615b7f359327b1de5b8b8ff386480ac3b611570e0bceb3f8d82"
+    },
+    {
+      "path": "画像/ASSET-015_still.png",
+      "bytes": 2689219,
+      "sha256": "367e359f90f6cabbd749921ae4cd152e2b5bfba847fd295082e62a1aa6ceffc9"
+    },
+    {
+      "path": "画像/ASSET-016_still.png",
+      "bytes": 2758302,
+      "sha256": "5c23315d074ebbd4f6208f5218339e7cd27584f9719de822d75579b09a2bb9d8"
+    },
+    {
+      "path": "画像/ASSET-017_still.png",
+      "bytes": 2181502,
+      "sha256": "eb181e19af69f58710712966178e19dbf05ac5c9d365585e6a6d9438a449d3cb"
+    },
+    {
+      "path": "画像/ASSET-019_bg.png",
+      "bytes": 3100814,
+      "sha256": "c9855d41a50c708d7764b2131305454de932f474615b9a76ef94cfe90a4fe20b"
+    },
+    {
+      "path": "画像/ASSET-019_char.png",
+      "bytes": 744043,
+      "sha256": "916d37f5f3f4c9c06e6188f57bd6bcd8186471126c898108b4a6b1d575aa17e6"
+    },
+    {
+      "path": "画像/ASSET-020_still.png",
+      "bytes": 3775677,
+      "sha256": "838ae80d2fccfba77ea2a043b1fc44ab3d2dba69869a1076b92c5bf4eeaf4a16"
+    },
+    {
+      "path": "画像/ASSET-021_still.png",
+      "bytes": 3366014,
+      "sha256": "b0922ffe759831f45b310323bc6dc6ac2b8bd4c6d6bed20761726eb15d108502"
+    },
+    {
+      "path": "画像/ASSET-022_bg.png",
+      "bytes": 2823728,
+      "sha256": "12ffea524c532777e85a61ce2b5a0c717c9bac4a6a3ec863f2d548fbf1cf2f03"
+    },
+    {
+      "path": "画像/ASSET-022_char.png",
+      "bytes": 795196,
+      "sha256": "74c04fd7a22e2bcc97f68a828acddeb728229e2cbd57c70d3e17ef861b7a21e2"
+    },
+    {
+      "path": "画像/ASSET-023_still.png",
+      "bytes": 3044086,
+      "sha256": "fcaa60bb08d900e7689e3722c80d8f9629267b811f9987c972e83c0440bf72ab"
+    },
+    {
+      "path": "画像/ASSET-025_still.png",
+      "bytes": 3663492,
+      "sha256": "d9c6a83af275b97fd19f5ada5283ff6800a2ba3a047df94ddab1148e8728aed5"
+    },
+    {
+      "path": "画像/ASSET-026_still.png",
+      "bytes": 3067202,
+      "sha256": "7a0f9cbd1f5f8b434ca3055bd72abff792e752acde24bb069f7e860fd67926ae"
+    },
+    {
+      "path": "画像/ASSET-027_still.png",
+      "bytes": 3479579,
+      "sha256": "588a117f6255a7a5334ee0b33b6f03706caf2d767c3bcb353d51aa6574c44eb9"
+    },
+    {
+      "path": "画像/ASSET-028_still.png",
+      "bytes": 2137142,
+      "sha256": "33dc06326941085f89ab41b1d8252b75b87592f0c922dab0d14749d675fdd09e"
+    },
+    {
+      "path": "画像/ASSET-030_still.png",
+      "bytes": 3302333,
+      "sha256": "4e01b71d186251ff51e5636eb4cbbe241e27d5cefac56462d9ac214047ec8dce"
+    },
+    {
+      "path": "画像/ASSET-031_still.png",
+      "bytes": 2207189,
+      "sha256": "ddef64fea4b5f9cb14890e002f9165457abaabfa765c847426c860137c7a7cd6"
+    },
+    {
+      "path": "画像/ASSET-032_still.png",
+      "bytes": 2518977,
+      "sha256": "79a7b0d885edb51b79ff63098409f6ca2bf8baa87ddbb742f792372a3233fc39"
+    },
+    {
+      "path": "画像/ASSET-033_still.png",
+      "bytes": 3747931,
+      "sha256": "67bd5e1a738a2f8b9307e50edde4a3ef644cccd7897f0b5074419b560b0fee68"
+    },
+    {
+      "path": "画像/ASSET-034_bg.png",
+      "bytes": 4302870,
+      "sha256": "5edebe4310cd3ac346ec44c169b3641a70ad3048489d2cc6bc430e4b8cb46bba"
+    },
+    {
+      "path": "画像/ASSET-034_char.png",
+      "bytes": 922825,
+      "sha256": "efb531ef1046894218b709bf6d255d9652ba97219fdd2477e54279bdee9fc09c"
+    },
+    {
+      "path": "画像/ASSET-035_still.png",
+      "bytes": 2396610,
+      "sha256": "dae46017367381105a48829370790b1dda0899a620760ec3b1af290116eaf514"
+    },
+    {
+      "path": "画像/ASSET-036_still.png",
+      "bytes": 2196388,
+      "sha256": "d68fe66afeb5e10046ffa3e77ca3134048fa19e45bdf2d19b5d8690574fdf6f6"
+    },
+    {
+      "path": "画像/ASSET-038_still.png",
+      "bytes": 2875710,
+      "sha256": "5c223a3c80a85750297a2e0fe585f3c3dc92fcb3323901762390fbfe27dd40c6"
+    },
+    {
+      "path": "画像/ASSET-039_still.png",
+      "bytes": 2070799,
+      "sha256": "c550462d671bd8c8cef315ebe816beddb5014395b1d2fe03280d49de46f46a8e"
+    },
+    {
+      "path": "画像/ASSET-040_bg.png",
+      "bytes": 2184218,
+      "sha256": "e45d7c29ee56cae4b5e8b09315c2a23f02e9e1a76e693dcc06b41e18405b275b"
+    },
+    {
+      "path": "画像/ASSET-040_char.png",
+      "bytes": 774481,
+      "sha256": "117998c75b70eea48149046194c2e87894d9660949b1c6c7d61d34647009e5ef"
+    },
+    {
+      "path": "画像/ASSET-041_still.png",
+      "bytes": 2203838,
+      "sha256": "a8dd24ded578f7f1432fa905eafee52e02e033978c26debec3948e2151c634bc"
+    },
+    {
+      "path": "画像/ASSET-043_bg.png",
+      "bytes": 4509915,
+      "sha256": "1191ec5406cdc9c4606f0191fb1e3eb45573b9e5e50fdad668c5bce572f403ce"
+    },
+    {
+      "path": "画像/ASSET-043_char.png",
+      "bytes": 936464,
+      "sha256": "19454b2f66af7735aada768ddcdc8761ca69844ca85325567c0983b4f442f220"
+    },
+    {
+      "path": "画像/ASSET-044_still.png",
+      "bytes": 3230800,
+      "sha256": "68bd99a5a7c2272ae0ef665da0e97baf0a06a9cc0aaf19f106a15df3c4f2d896"
+    },
+    {
+      "path": "画像/ASSET-045_still.png",
+      "bytes": 2300199,
+      "sha256": "62ef5b9f29f8e3c3375ac6432ff2e62b3f6216184740e199c99afb708865f9bd"
+    },
+    {
+      "path": "画像/ASSET-047_still.png",
+      "bytes": 2267581,
+      "sha256": "d80a1097f1ac9fa384e3fd95b26658065ab0a1dd1d5db6b9c9def5506b79f588"
+    },
+    {
+      "path": "画像/ASSET-048_still.png",
+      "bytes": 3835256,
+      "sha256": "791c92e5ad023296d5497e55555fd109b2ff93749414b3d16ebea46395f42cf9"
+    },
+    {
+      "path": "画像/ASSET-049_still.png",
+      "bytes": 3667432,
+      "sha256": "64834d83e920c5871cc1600b3fc430d377866e6802ebb977b22e90140cc9d45d"
+    },
+    {
+      "path": "画像/ASSET-050_bg.png",
+      "bytes": 2527102,
+      "sha256": "339033d32b5503431247fa8a93b2a9d49447ae6ca447b0e5daf57043f23b5a55"
+    },
+    {
+      "path": "画像/ASSET-050_char.png",
+      "bytes": 705149,
+      "sha256": "dc1e170a3177e47227f9f5cd6c6f074ffcce7dc8602b5cef8ac5607d64dabd2c"
+    },
+    {
+      "path": "画像/ASSET-051_still.png",
+      "bytes": 2320649,
+      "sha256": "e68ef840c06de1e8d2ffc19af45d89ed0e6f40920d7546dbb03af7e3f02b0024"
+    },
+    {
+      "path": "画像/ASSET-052_still.png",
+      "bytes": 3184095,
+      "sha256": "9d1ea78365e999b1c1f3d48aba559a180e1a004f39644382eaeaeaf7553eb157"
+    },
+    {
+      "path": "画像/ASSET-053_still.png",
+      "bytes": 3746808,
+      "sha256": "f2c123a00ef298f11dd2f958a5846dd8e074ec3a20fb80b94dd3789842ab4ba7"
+    },
+    {
+      "path": "画像/ASSET-054_still.png",
+      "bytes": 2362793,
+      "sha256": "895044d9382f8a2d50ef6324c19e672f177a1b36c372578eadb23aa3768d5469"
+    },
+    {
+      "path": "画像/ASSET-055_still.png",
+      "bytes": 2377120,
+      "sha256": "639e9f6e489acc7c6e755332d9f5ba36cb078dad9b5faf2d6d851a483f1897d3"
+    },
+    {
+      "path": "画像/ASSET-056_still.png",
+      "bytes": 3493866,
+      "sha256": "5cb08617fe5d9093e1b8195cc37af1d718cb310f72bb827664da5acdb0a861a6"
+    },
+    {
+      "path": "画像/ASSET-057_bg.png",
+      "bytes": 4049944,
+      "sha256": "6e9801ae0737f7c5297fda03b8f0fa380ee4dc9e2c96866f5b57aa93912abca3"
+    },
+    {
+      "path": "画像/ASSET-057_char.png",
+      "bytes": 804799,
+      "sha256": "2d55cd5bedbd46f7ec4c7b9ff77b7846d0bb99bf6aa7b94d06e6fa95eceb01b8"
+    },
+    {
+      "path": "画像/ASSET-058_still.png",
+      "bytes": 2894727,
+      "sha256": "916ea6bb5e231faca589c4dbd71d526c5d11214619293e1d6bb4ad8a1d055e2b"
+    },
+    {
+      "path": "画像/ASSET-059_still.png",
+      "bytes": 2347398,
+      "sha256": "fc20ba4829453bce7477b580e1035773a8ed47e68d4006b1c204ec30a3842e8a"
+    },
+    {
+      "path": "画像/ASSET-060_still.png",
+      "bytes": 2965440,
+      "sha256": "75365037ac029a2062428e43891f4dd3dbf7dcafab5369845e0416409c8929e2"
+    },
+    {
+      "path": "画像/ASSET-061_still.png",
+      "bytes": 2745754,
+      "sha256": "ca0e09ad7cb2dc00864b15eac314f4cc56292dce44c499eabb5a6fb1f909d107"
+    },
+    {
+      "path": "画像/ASSET-063_bg.png",
+      "bytes": 3500484,
+      "sha256": "7cebcfe1634b5c5420d25bd0d6acd427b8ba48c036d2d67461a002043a304a2b"
+    },
+    {
+      "path": "画像/ASSET-063_char.png",
+      "bytes": 878135,
+      "sha256": "74d29392797647dc45654ca8c52e31a6334b38d1bc06580a0c35d13c06d978e2"
+    },
+    {
+      "path": "画像/ASSET-064_still.png",
+      "bytes": 2093881,
+      "sha256": "3ca178bb3a92ce2642dd81ff6524694fb905eba4a9b00beb416e047a143eaa94"
+    },
+    {
+      "path": "画像/ASSET-066_still.png",
+      "bytes": 3528757,
+      "sha256": "65e3bc5a6010aac7a39d25ae852c9ad3fe559b71e818cdaf17b8f1d8f1f9c9b7"
+    },
+    {
+      "path": "画像/ASSET-067_still.png",
+      "bytes": 2610701,
+      "sha256": "131192fed93788a5cba30ad4aded43cb9e44fd9ebb9143ecc20f322e2b375cd7"
+    },
+    {
+      "path": "画像/ASSET-068_still.png",
+      "bytes": 2374515,
+      "sha256": "e7412a6a4ea4de7786ced0f90ac14431504c52988d2ccfcac96cc977f8491636"
+    },
+    {
+      "path": "画像/ASSET-069_still.png",
+      "bytes": 2854459,
+      "sha256": "7558a84c8fa7faad0240068a02133421763b8715a1446ea242c32f2914de3a35"
+    },
+    {
+      "path": "画像/ASSET-070_still.png",
+      "bytes": 2763377,
+      "sha256": "e3df7283b639b1bcb1952d1bc6e8bcac00661efc39b9682a23a4842fcef0cc60"
+    },
+    {
+      "path": "画像/ASSET-071_still.png",
+      "bytes": 3477948,
+      "sha256": "68eb81079646a38363e05b0d65fc607c7ed37493447945597caf2e09fdb5a2b3"
+    },
+    {
+      "path": "画像/ASSET-073_still.png",
+      "bytes": 4287260,
+      "sha256": "7e4c352676609094ca37c24d35c2f12beb322aeabed21b15ec8e22d65ad028a8"
+    },
+    {
+      "path": "画像/ASSET-074_still.png",
+      "bytes": 2883250,
+      "sha256": "badfc2c1b87de6e2cf8fa845d6dea055ff229f85e35d8372e34b095dd95cb396"
+    },
+    {
+      "path": "画像/ASSET-075_bg.png",
+      "bytes": 3714096,
+      "sha256": "380bd9b74b6388901cc8ce9e929db160f0fc4a30abd7cda9acbc3ff390005a8b"
+    },
+    {
+      "path": "画像/ASSET-075_char.png",
+      "bytes": 871860,
+      "sha256": "ccf3205510bc20cc1113a3046d1048a62585f75afac8398aeb9a896d70637ecc"
+    },
+    {
+      "path": "画像/ASSET-076_bg.png",
+      "bytes": 3632930,
+      "sha256": "224c35406dfee0066c83eb7645b0e8ef6181900035bd5936845d1eb59cd6541b"
+    },
+    {
+      "path": "画像/ASSET-076_char.png",
+      "bytes": 870519,
+      "sha256": "e902c0f53a4ebecddbf4db6d26c9c759ad2fac701b2c3d78e644792950b54556"
+    },
+    {
+      "path": "画像/ASSET-077_bg.png",
+      "bytes": 3954719,
+      "sha256": "456674e7f41580e0d44086cbb8d76873fe15d7cc043dd783808de8a04d961058"
+    },
+    {
+      "path": "画像/ASSET-077_char.png",
+      "bytes": 885883,
+      "sha256": "632d1f558615e065697183cb10aaef88028a6b0dd38735c805633fb49c3c5fb4"
+    },
+    {
+      "path": "画像/ASSET-078_still.png",
+      "bytes": 2468638,
+      "sha256": "b6dc8262249659b7f21f41b6d569e3d2deb7cd8d38db262d9cefff211bd24488"
+    },
+    {
+      "path": "画像/ASSET-079_still.png",
+      "bytes": 3120391,
+      "sha256": "73027444fc7ae705d9d51a5de345048457c52db113653c407c086cd6001105e7"
+    },
+    {
+      "path": "画像/ASSET-080_bg.png",
+      "bytes": 4618801,
+      "sha256": "fe17a577054c195d0e8e7df9ba29295c545f7dc32142e2086a204207f00aff8e"
+    },
+    {
+      "path": "画像/ASSET-080_char.png",
+      "bytes": 927787,
+      "sha256": "e54f557321fa5bb58ed45141194da169f58479d74c47155d197e11431c612eeb"
+    },
+    {
+      "path": "画像/ASSET-081_still.png",
+      "bytes": 3050362,
+      "sha256": "394038e90a6561899d84819de9db3adb1b5c70d9690439c254633814bb76762f"
+    },
+    {
+      "path": "画像/ASSET-082_still.png",
+      "bytes": 3175187,
+      "sha256": "0cddf47d9f1fd9ad6d35d8c8592490dc9b2892689e2d842d30d1bd947a6af08d"
+    },
+    {
+      "path": "画像/ASSET-083_still.png",
+      "bytes": 2765811,
+      "sha256": "bcdfa4c1a7a92a683dc81cca4b1a3e30dcd7f58ea1020eab4328bfd04fa7ed47"
+    },
+    {
+      "path": "画像/ASSET-084_still.png",
+      "bytes": 2286482,
+      "sha256": "db69f9049fddb2bb45420bb0cb28d2e519823cca78e6ebfd0a01df6c9884fe26"
+    },
+    {
+      "path": "画像/ASSET-085_bg.png",
+      "bytes": 4376045,
+      "sha256": "5e5ae4f6c48a8f54dfed033e809d28626a2d947b54b00a8c2f5750e4be1a7522"
+    },
+    {
+      "path": "画像/ASSET-085_char.png",
+      "bytes": 785342,
+      "sha256": "2f6a88d03fe1ff2e5833f3c056f1b58ea7745d4ccfeb1591c806d0874d0c573f"
+    },
+    {
+      "path": "画像/ASSET-086_bg.png",
+      "bytes": 2886164,
+      "sha256": "9da86bdbbf0c23504efd7e801af724009417246574a3ab259add6b571fc85e54"
+    },
+    {
+      "path": "画像/ASSET-086_char.png",
+      "bytes": 885013,
+      "sha256": "041453b05bd5f8068052f6b3096b6f77ab72e4c09105c5cc6a760268c21fbde7"
+    },
+    {
+      "path": "画像/ASSET-087_still.png",
+      "bytes": 3305746,
+      "sha256": "8cf02db94859dc8967c90b8ce4c7788cc25dd6ed8b4be6d722fdfa77504fd4ff"
+    },
+    {
+      "path": "画像/ASSET-088_still.png",
+      "bytes": 2404437,
+      "sha256": "aa1653329237267c0e865d23a9b6c3a9a35ac3b3b685da79e9da90db008c5b56"
+    },
+    {
+      "path": "画像/ASSET-090_still.png",
+      "bytes": 3343625,
+      "sha256": "af5a17c9e9dd2fa7de7153948681c76db1001782bdf701600e0f46a359ef7b20"
+    },
+    {
+      "path": "画像/ASSET-091_still.png",
+      "bytes": 2521051,
+      "sha256": "27d375979c145ad8ecf9ed8c280c271df4dfc573e7cf3392c5954340d86348c0"
+    },
+    {
+      "path": "画像/ASSET-092_still.png",
+      "bytes": 2176522,
+      "sha256": "afb27439bd3d2ace5b46636102403f04af744f34081cc7fad9c113d75a272dc5"
+    },
+    {
+      "path": "画像/ASSET-093_bg.png",
+      "bytes": 3546834,
+      "sha256": "5c1c8e964ffc253f9d5ff63368ad15b52df1e6735a8218e6a01f9b197e84cbec"
+    },
+    {
+      "path": "画像/ASSET-093_char.png",
+      "bytes": 851738,
+      "sha256": "1f40d5e95b454a8ecdb400907d5e0f581b3f1d385af3d7ba66da864a8b215e89"
+    },
+    {
+      "path": "画像/ASSET-094_still.png",
+      "bytes": 1705693,
+      "sha256": "3dceceb742d92cbc6dd1ebb51b9ba94741759d5b432f0e1cde11862c45e2c7c7"
+    },
+    {
+      "path": "画像/ASSET-095_still.png",
+      "bytes": 2463065,
+      "sha256": "72947104673d3580f33e735246e4dd31f76a4385c7142932e1d636fab7c635eb"
+    },
+    {
+      "path": "画像/ASSET-096_still.png",
+      "bytes": 2963309,
+      "sha256": "4444490aea56878cd5fd96972bb5820bd5f6a3c8a970da4f7105ad1b2a99a4ef"
+    },
+    {
+      "path": "画像/ASSET-101_still.png",
+      "bytes": 2509002,
+      "sha256": "301fc094d6d3d99d0b958b64bf3691792288eae40906dfe4d78ee5000f30245f"
+    },
+    {
+      "path": "画像/ASSET-102_still.png",
+      "bytes": 3445972,
+      "sha256": "db02a800d25d1342e2fa44cd23579d4ed90b08b265aaf9eeca60266f1bb59dc8"
+    },
+    {
+      "path": "画像/ASSET-103_still.png",
+      "bytes": 3538926,
+      "sha256": "eb4a706878ea222920e63f1ffccfc463eff97ec8fb3ce9fdbc3b493c0e3c8279"
+    },
+    {
+      "path": "画像/ASSET-104_bg.png",
+      "bytes": 4117100,
+      "sha256": "f2b05a5f225b851f21ba1561a3a51f41c35d6d385f45e1a8d9989e2480e9d0e0"
+    },
+    {
+      "path": "画像/ASSET-104_char.png",
+      "bytes": 783831,
+      "sha256": "c9dd4b7d6d017043e9c2a2c4d160e858f2f4c337adf4921f09f7f07a0e0d3ba0"
+    },
+    {
+      "path": "画像/ASSET-105_bg.png",
+      "bytes": 2318215,
+      "sha256": "7087f94a1b96fdcd56e025bc5b83e48963e93426d222d5fce452d576d57ff9b0"
+    },
+    {
+      "path": "画像/ASSET-105_char.png",
+      "bytes": 769470,
+      "sha256": "0cb651951ff14be7a02d38faa4e76a5b2e0733684d84b4e42730f832918fece1"
+    },
+    {
+      "path": "画像/ASSET-107_bg.png",
+      "bytes": 4540487,
+      "sha256": "c95497854b4df39108a0a409b341c841f1d6a8d39ddb4c41c7ae3e0dff1577ee"
+    },
+    {
+      "path": "画像/ASSET-107_char.png",
+      "bytes": 919873,
+      "sha256": "03eaa28c70cd09ff81e43246b2530c73f170f960eddbd3ab574eea053f517e27"
+    },
+    {
+      "path": "画像/ASSET-108_still.png",
+      "bytes": 3204866,
+      "sha256": "dc67041caa4e7b4a7162c68f9b8a4b9636dc59a6968135cadeda16dc19045fe2"
+    },
+    {
+      "path": "画像/ASSET-109_bg.png",
+      "bytes": 4663333,
+      "sha256": "95085c89d24e825cf3468d6aa388882d64002e3136c725c78587d14505663f8a"
+    },
+    {
+      "path": "画像/ASSET-109_char.png",
+      "bytes": 1301943,
+      "sha256": "aa400a8370aa4ae048b3d2265d2550be5bce6aa659a8d72d0bdb731daa627658"
+    },
+    {
+      "path": "画像/ASSET-110_still.png",
+      "bytes": 2886434,
+      "sha256": "5827e320b2c58dc5fadc63ab426d3d4935615bb9c1d6b0af6a73e01f5a7ea5d3"
+    },
+    {
+      "path": "画像/ASSET-111_still.png",
+      "bytes": 2735511,
+      "sha256": "fd74f794841a2a1e64eae6a0dbe97f72476ecb7748358b6b616316b9840343e6"
+    },
+    {
+      "path": "画像/ASSET-113_still.png",
+      "bytes": 3369766,
+      "sha256": "8578201acc1e2d65a2bde23d9654ec61a60f97f8575b800a37b4e8f530197043"
+    },
+    {
+      "path": "画像/ASSET-114_bg.png",
+      "bytes": 4220694,
+      "sha256": "d323cfd7f5e3ed2477310fb0efd0e0d382eb1ca4d5bbc68a97bf3836514f620b"
+    },
+    {
+      "path": "画像/ASSET-114_char.png",
+      "bytes": 861290,
+      "sha256": "115e3fc5df5e8c2ab08a4378c6fd2b1f6b29d443d5aebd23509677c5e586f4bd"
+    },
+    {
+      "path": "画像/ASSET-115_still.png",
+      "bytes": 3836929,
+      "sha256": "eb1beaa955f4b796e094dcb42f95ef0dd9a18e21c28879082e7382d2ba942447"
+    },
+    {
+      "path": "画像/ASSET-117_still.png",
+      "bytes": 1984107,
+      "sha256": "fc36421dbf867a69d7ec75ec2f8656bfb942db81a26020672301f1d6603b7be3"
+    },
+    {
+      "path": "画像/ASSET-118_still.png",
+      "bytes": 3387613,
+      "sha256": "056867838ac3598345e3270149953543d1f21f918d06c54d93f435e2bfb1f4c1"
+    },
+    {
+      "path": "画像/ASSET-119_still.png",
+      "bytes": 3575167,
+      "sha256": "09f2f4b0d7bb2214e1e85b9bad3cdd1fafb01fa6d241a7dbc1b7c4e527f8e89d"
+    },
+    {
+      "path": "画像/ASSET-120_still.png",
+      "bytes": 2861062,
+      "sha256": "c6710631d7c6f1448d2d96c9adda91030da37de71927b3de5c72c3b6faa18a50"
+    },
+    {
+      "path": "画像/ASSET-121_still.png",
+      "bytes": 2966901,
+      "sha256": "80d12c88134d5baad734af197fa705791ccf24acbbed7ec76f7b5c0aa9983d49"
+    },
+    {
+      "path": "画像/ASSET-122_still.png",
+      "bytes": 3024664,
+      "sha256": "8774eff9f8ff50326b3e287c7be1d108c7f4cbbac1e1e9b49caac94f8428de1c"
+    },
+    {
+      "path": "画像/ASSET-124_bg.png",
+      "bytes": 3653568,
+      "sha256": "8201551c3effe5e1e65da0571dfc62cfb475d125f38fad87335f3d9422524262"
+    },
+    {
+      "path": "画像/ASSET-124_char.png",
+      "bytes": 788569,
+      "sha256": "708f71b5b69f1b082bfd42c5c4134023cdeb40d62f198af2a92b06c51cd25395"
+    },
+    {
+      "path": "画像/ASSET-125_still.png",
+      "bytes": 2720486,
+      "sha256": "a357d2d47bf8b9471bf1b229201fb85fb402d80c0daa0f65c9f0ca29ded57887"
+    },
+    {
+      "path": "画像/ASSET-126_still.png",
+      "bytes": 2929734,
+      "sha256": "9e5f04fac677eb3186a7d300f8a40e971fe2b142604680ee81845dc602927989"
+    },
+    {
+      "path": "画像/ASSET-128_still.png",
+      "bytes": 2420200,
+      "sha256": "bb4f23508cc6b7bf4c0cd0e26c69f40d5987d9c81141f828d5b89baef5552367"
+    },
+    {
+      "path": "画像/ASSET-130_bg.png",
+      "bytes": 3387234,
+      "sha256": "a596a335865e1ab9ad5abc8c04585e49765c8df8027e5d77b4d8904b9ebe6019"
+    },
+    {
+      "path": "画像/ASSET-130_char.png",
+      "bytes": 828942,
+      "sha256": "d4d2eac6966e0e54ba173281ff279e179fd51be8098f775898ca43eb8429df16"
+    },
+    {
+      "path": "画像/ASSET-132_still.png",
+      "bytes": 3346066,
+      "sha256": "cf75cb03e14d3964d0ad82cbf4ff3753367e23c2a95927efad2dd5e020a8ad5b"
+    },
+    {
+      "path": "画像/ASSET-133_still.png",
+      "bytes": 3147601,
+      "sha256": "7e52cc93ed7f71970be15cb715091e45bbc4d9593d611e694a4525bfb89436e8"
+    },
+    {
+      "path": "画像/ASSET-135_bg.png",
+      "bytes": 4136414,
+      "sha256": "18390a50df5884f284164dea5dbda805719968072b61cbba530d3b1aa8be2e97"
+    },
+    {
+      "path": "画像/ASSET-135_char.png",
+      "bytes": 1040343,
+      "sha256": "03fe923967327c05e671af14ba3738b48c29bd58bb5ca5692635af9a8748db1a"
+    },
+    {
+      "path": "画像/ASSET-136_still.png",
+      "bytes": 2060636,
+      "sha256": "e10cc0d4c265cf47753e681066ebb7b0611c101151f21f43c1dcef5b69532068"
+    },
+    {
+      "path": "画像/ASSET-137_still.png",
+      "bytes": 2892102,
+      "sha256": "f25dce5004e43cf8c1da87cdeaf06522715764e8c8e154f1bd682cf27addb7eb"
+    },
+    {
+      "path": "画像/ASSET-138_bg.png",
+      "bytes": 2658374,
+      "sha256": "49d8cd5c0f9878a717f929be7ecb5cfb33d8123a0b31c101137f20fa9ba555dc"
+    },
+    {
+      "path": "画像/ASSET-138_char.png",
+      "bytes": 822443,
+      "sha256": "aaad29aa66e4e41b91b6242b605f704dbf188b0becc78f91205688df5835b157"
+    },
+    {
+      "path": "画像/ASSET-140_still.png",
+      "bytes": 2543996,
+      "sha256": "4d9fa4ac75c16d6cc758aba4f0ca457b3a96b2690a76a8d0c5b7d3cb9b36aafd"
+    },
+    {
+      "path": "画像/ASSET-141_still.png",
+      "bytes": 2289312,
+      "sha256": "dbfc00566891bbb5d167edf5e2a972d98ef4a3f4dd25f2e036aefe3ef68eb1b9"
+    },
+    {
+      "path": "画像/ASSET-142_still.png",
+      "bytes": 3104564,
+      "sha256": "629bada26d7c06933dc2d25f229c90d8569d909a34fc68045ada8167880b2cbb"
+    },
+    {
+      "path": "画像/ASSET-143_bg.png",
+      "bytes": 3340638,
+      "sha256": "4a12ef7d10a6423a6a6232f96149c4b3aeffcba9dfb2419d0f51847668790894"
+    },
+    {
+      "path": "画像/ASSET-143_char.png",
+      "bytes": 749164,
+      "sha256": "ac8bd6b58f6305ee3398e28bda58af5dab452b277c55d777bb1c6b90432c2954"
+    },
+    {
+      "path": "画像/ASSET-145_still.png",
+      "bytes": 2313902,
+      "sha256": "c41988e107cbfac2a4a6147bb307a98b7f1598754aab1db6dcb02e1a30774e64"
+    },
+    {
+      "path": "画像/ASSET-146_still.png",
+      "bytes": 2394359,
+      "sha256": "e51ceda2789f78dafffdec8bfb435659d80b8cf69e23df7639a795f86ece6fa4"
+    },
+    {
+      "path": "画像/ASSET-148_still.png",
+      "bytes": 2312185,
+      "sha256": "93fbab6cda1a3a32968531da8c639726a5fb1ec75f432923d215a9324f65c97f"
+    },
+    {
+      "path": "画像/ASSET-149_still.png",
+      "bytes": 3310678,
+      "sha256": "91228227e19f989ed951d6a389b092abf4ff094901ecd036baa087c183a04ba3"
+    },
+    {
+      "path": "画像/ASSET-151_still.png",
+      "bytes": 2526289,
+      "sha256": "066d54837ca1a91061c7ae89dde4992c180c49dd00738869fd28a1f3e5f31f96"
+    },
+    {
+      "path": "画像/ASSET-152_still.png",
+      "bytes": 2096238,
+      "sha256": "5e150501c34f93826a720e58433339086b076e882bb0e75ad291d12d0609698a"
+    },
+    {
+      "path": "画像/ASSET-153_bg.png",
+      "bytes": 2761303,
+      "sha256": "2a456a3a7f0a226b98ea734e502de8f4815f07cff8d38f3dadd0a553fe58312e"
+    },
+    {
+      "path": "画像/ASSET-153_char.png",
+      "bytes": 750887,
+      "sha256": "3786b610671e208423b1900d88345d0c4829338e4f7d297d5342a16272580abd"
+    },
+    {
+      "path": "画像/ASSET-155_bg.png",
+      "bytes": 2209254,
+      "sha256": "3b75084a3050b8f6935f2e5a381d1041367320056df012c31c4df030b0f78d60"
+    },
+    {
+      "path": "画像/ASSET-155_char.png",
+      "bytes": 753366,
+      "sha256": "258773c108817862978d7b1735d4c1332ef8c0c61bad9cf8b140e6daf9e61562"
+    },
+    {
+      "path": "画像/ASSET-156_bg.png",
+      "bytes": 2422644,
+      "sha256": "49100a10565c494326c51163c15798579b9e8f1b9508ee34af84a2e4203fe2c9"
+    },
+    {
+      "path": "画像/ASSET-156_char.png",
+      "bytes": 751013,
+      "sha256": "e2201ec1a006560e06fa3771f6fe3e6f686a1e441680d01d756fe53825db8ed5"
+    },
+    {
+      "path": "画像/ASSET-157_still.png",
+      "bytes": 2404158,
+      "sha256": "713e1d9432b776ad0a7462c5c3a1624cf891377b4f851f8bfc4892ea7eb29a5f"
+    },
+    {
+      "path": "画像/ASSET-158_still.png",
+      "bytes": 3188659,
+      "sha256": "61a15152df9592f372de0e61eaac7c395394f89ffbcc6e4f03fabd130bdc4908"
+    },
+    {
+      "path": "画像/ASSET-159_bg.png",
+      "bytes": 3667524,
+      "sha256": "d4e2e948c44e238512eef5905899b36ea1d0c94fee7199bba5fa19adaf910292"
+    },
+    {
+      "path": "画像/ASSET-159_char.png",
+      "bytes": 968618,
+      "sha256": "850880b19b07015ff3ce3abca39e559639fe9ed3546e8fea462d251a83003fa1"
+    },
+    {
+      "path": "画像/ASSET-160_still.png",
+      "bytes": 3148580,
+      "sha256": "fe115f7d2a3d56efa5dd8693aa95d708f82a70547d078f6753a391316f1b7a31"
+    },
+    {
+      "path": "画像/ASSET-161_still.png",
+      "bytes": 3701989,
+      "sha256": "ae61a13f94ea5a3f14c3a0f1c2b5cc934fafa60f54ae3697b063a3ec0203ede9"
+    },
+    {
+      "path": "画像/ASSET-162_still.png",
+      "bytes": 3027648,
+      "sha256": "28c6a019bf1e038603115ad587dc120362fc227af3439124ae4a5a5992af6c28"
+    },
+    {
+      "path": "画像/ASSET-164_bg.png",
+      "bytes": 4711716,
+      "sha256": "cab1b9f3069647fe3b02eadd6423a878ff57306e58e9a797764e381530fec51a"
+    },
+    {
+      "path": "画像/ASSET-164_char.png",
+      "bytes": 955392,
+      "sha256": "ac7e8907c22bf99acbab690db443fca8667d9add7983a7e98d4b26c252b1267b"
+    },
+    {
+      "path": "画像/ASSET-166_still.png",
+      "bytes": 3110152,
+      "sha256": "c19ad82bc05e047e8c57ea7cca36611ec163bda8d464b206be1fb9d1684d917b"
+    },
+    {
+      "path": "画像/ASSET-167_still.png",
+      "bytes": 2383979,
+      "sha256": "e16cee19a18e41d65785eb2737ccc8769fa86c6443fecf15acfa0574fa4983d6"
+    },
+    {
+      "path": "画像/ASSET-168_still.png",
+      "bytes": 2805629,
+      "sha256": "8e1098e4e9f87908837b5f921c61c69f63bfda7585cb0c9df4ee60bb5e6d905b"
+    },
+    {
+      "path": "画像/ASSET-169_still.png",
+      "bytes": 2616080,
+      "sha256": "60735da8921f11bfacc95a57ee22f37a32b70c71841b1b9187c39cc7c16d365f"
+    },
+    {
+      "path": "画像/ASSET-170_still.png",
+      "bytes": 2647575,
+      "sha256": "f36eeb47d52fdfde492103816c1cf264026e1de34f6e1b4bba7bca13c64782d4"
+    },
+    {
+      "path": "画像/ASSET-172_still.png",
+      "bytes": 3142737,
+      "sha256": "6c213f3ff0b1747d2f065eccbec50c0aa01e71243c83c6b6f713771921ec1b13"
+    },
+    {
+      "path": "画像/ASSET-174_still.png",
+      "bytes": 2407431,
+      "sha256": "9f1ade3835384378cdb10e4f6720d6550f1fd50a992b9484472ea08609f835d1"
+    },
+    {
+      "path": "画像/ASSET-175_still.png",
+      "bytes": 4204844,
+      "sha256": "64e2b838c59d70cb1ce37870a992a589f379aa7f41b3818ce1c33b169ee882aa"
+    },
+    {
+      "path": "画像/ASSET-176_bg.png",
+      "bytes": 4796355,
+      "sha256": "4c7e9e0638e2f8a2656c160e5d2ce906c889ac1572174c8e0f27ce3e32f4179c"
+    },
+    {
+      "path": "画像/ASSET-176_char.png",
+      "bytes": 830357,
+      "sha256": "2219dcf131694e6776233dec0992760b73818e2e2de5ecf3aefdb39c2c3c0fd7"
+    },
+    {
+      "path": "画像/ASSET-178_still.png",
+      "bytes": 2515417,
+      "sha256": "ede8921bba3f2fd95b8ff3c9b05dd33e75ade5c252f5731a6b50a735a814b854"
+    },
+    {
+      "path": "画像/ASSET-179_still.png",
+      "bytes": 2156689,
+      "sha256": "837ecce6ec707b9d600c6249a2bca9051cc1e7b9656e1b00a09ae54df02147a8"
+    },
+    {
+      "path": "画像/ASSET-181_still.png",
+      "bytes": 2284296,
+      "sha256": "1aaa36eae9e8add8829d90162f58a10db374cf3f91cdb8d91f30508f5d4f37eb"
+    },
+    {
+      "path": "画像/ASSET-182_bg.png",
+      "bytes": 2205723,
+      "sha256": "8d7b37a65fee69fbd02ea288ca60fc481b63dad3b5d3e6ec267e1a1c0bcaeccf"
+    },
+    {
+      "path": "画像/ASSET-182_char.png",
+      "bytes": 813262,
+      "sha256": "5060280bf08bf1fa206ed0ac6ea6ec5bf36001c8d6b1ba30db89be2205f75b0f"
+    },
+    {
+      "path": "画像/ASSET-184_still.png",
+      "bytes": 2476086,
+      "sha256": "933ac328d5cd5745de2535b27e11480c403371ed39bbe4e9a50b4a0806d4038c"
+    },
+    {
+      "path": "画像/ASSET-185_bg.png",
+      "bytes": 2091335,
+      "sha256": "6cc233e02f4ede6dacb13ff4afc8fd88e143780e8c15407b819b364b466e7484"
+    },
+    {
+      "path": "画像/ASSET-185_char.png",
+      "bytes": 818788,
+      "sha256": "622d9d7c62798664ba7adb1c08dbaaa584444aac37db6d18126639cafaddaf4f"
+    },
+    {
+      "path": "画像/ASSET-187_still.png",
+      "bytes": 2255205,
+      "sha256": "445610ce2ec258ccc2764e19c68693bb5b73989926dcc00f4e10b1b7891cae30"
+    },
+    {
+      "path": "画像/ASSET-188_still.png",
+      "bytes": 3206401,
+      "sha256": "6d16593886440480d263e4b6a598c18ad9224b89f6147fc1d81604fc836367d9"
+    },
+    {
+      "path": "画像/ASSET-191_still.png",
+      "bytes": 2880861,
+      "sha256": "e10fbaeadad6a80fd4ece30204ca18d11535b89e4d74268efe41d0340099b6d2"
+    },
+    {
+      "path": "画像/ASSET-194_still.png",
+      "bytes": 3196999,
+      "sha256": "fc52699852b3195ae66ecaae6a679cb567a959ea1dc906896349046951497d6f"
+    },
+    {
+      "path": "画像/ASSET-196_still.png",
+      "bytes": 3009690,
+      "sha256": "58072c875429b0880cc029301ebf33f016c71db5ec4fb7bf7ddc786c50e9e2d9"
+    },
+    {
+      "path": "画像/ASSET-197_still.png",
+      "bytes": 2074287,
+      "sha256": "6934be7f79ac427a24c9cf205998f1272378e8086d73ee4dd2f5057f05225386"
+    },
+    {
+      "path": "画像/ASSET-198_bg.png",
+      "bytes": 3504799,
+      "sha256": "246e327517789e1fcfa692a915cd0e80c8e7d53ea64d95e90249f22da042a2b6"
+    },
+    {
+      "path": "画像/ASSET-198_char.png",
+      "bytes": 859212,
+      "sha256": "ce67fcd623843f3c54f47ea5d61152faa3212efb28b99b6c036868a097c04732"
+    },
+    {
+      "path": "画像/ASSET-199_still.png",
+      "bytes": 2255550,
+      "sha256": "35caffc1bf4ef14b63bc7d2e6eb44f3305eb01caf8d557a25c9d29c85db738f7"
+    },
+    {
+      "path": "画像/ASSET-200_still.png",
+      "bytes": 2544228,
+      "sha256": "f1e24e32d6dda31dbe5fda7613a4656c815d474f5ec6e7496850461b7383a4dc"
+    },
+    {
+      "path": "画像/ASSET-202_still.png",
+      "bytes": 2740467,
+      "sha256": "d6880ffc42323eceb3f66e74b1c79fb01f567d75f662f06c8f1b8575195be16b"
+    },
+    {
+      "path": "画像/ASSET-203_still.png",
+      "bytes": 2584170,
+      "sha256": "4086c3c64cf2dc2e82238c527d44fb12cd3ead05822ef0e2c86629fc7e950dbf"
+    },
+    {
+      "path": "画像/ASSET-204_still.png",
+      "bytes": 2696690,
+      "sha256": "3bef6d2ac874331fa9af7ba966fe5b34a4fcfe07409306f77d56d8f454bc6c55"
+    },
+    {
+      "path": "画像/ASSET-206_still.png",
+      "bytes": 3100561,
+      "sha256": "0e3d8b1a5876ba3a20b876a6af46d3a1b951378c9ebc56b33086c417f61f18b3"
+    },
+    {
+      "path": "画像/ASSET-207_still.png",
+      "bytes": 2493401,
+      "sha256": "818a5cdbde13ec2c8761266254795e23340bb4aff94cd27c479e4ea3724f6ca1"
+    },
+    {
+      "path": "画像/ASSET-208_bg.png",
+      "bytes": 2452294,
+      "sha256": "4918aabdbe300fb170f9844e861a0e481518a4050cd6c8445cd7ff636032c3cf"
+    },
+    {
+      "path": "画像/ASSET-208_char.png",
+      "bytes": 873611,
+      "sha256": "edf2d6e8d0aa887241e9cce451760485b92ef0e94fbcb4f8b826113543babd33"
+    },
+    {
+      "path": "画像/ASSET-210_still.png",
+      "bytes": 2979456,
+      "sha256": "596a2a033185791f2fad1b7f3ead3f8539ea4bdfec5ffe00a88aa973b3e0129f"
+    },
+    {
+      "path": "画像/ASSET-211_still.png",
+      "bytes": 3119325,
+      "sha256": "a84c72039af72e9f5330053dfbef8c29780a79da3bd5f88f880904c2724299c6"
+    },
+    {
+      "path": "画像/ASSET-212_bg.png",
+      "bytes": 4903204,
+      "sha256": "d5f7b4be4aa072753a880aa6e47341d8f8b49eb84a3e2af207e0c671efc64100"
+    },
+    {
+      "path": "画像/ASSET-212_char.png",
+      "bytes": 724835,
+      "sha256": "7669f8aca916f0a5903fa94e1374c99dc4d7c211f9ec299330b46df9efe9dae7"
+    },
+    {
+      "path": "画像/ASSET-213_still.png",
+      "bytes": 2634365,
+      "sha256": "2a033ce8c42c04cba4848a02380fcfff6a55a41acd91a7a0b0726c4f6610c533"
+    },
+    {
+      "path": "画像/ASSET-214_still.png",
+      "bytes": 4123245,
+      "sha256": "fcea3413409c01e1cff8a45005345e2a826a1d461c7a9042ff257e75c90c4731"
+    },
+    {
+      "path": "画像/ASSET-215_still.png",
+      "bytes": 2660869,
+      "sha256": "a5b6dd44269cf90af0f32bd31e86ff9148091b653b5ac457f7c5b171f9468039"
+    },
+    {
+      "path": "画像/ASSET-217_still.png",
+      "bytes": 3003964,
+      "sha256": "f0b419c59624fd116da586c91e17c55857938380d3891e1022e7207f1da414ab"
+    },
+    {
+      "path": "画像/ASSET-218_still.png",
+      "bytes": 2622053,
+      "sha256": "1997722fe0ce22dbbb8763321cefca1093e83c0cd64270134aa4aac69e0aa5d2"
+    },
+    {
+      "path": "画像/ASSET-220_still.png",
+      "bytes": 2493155,
+      "sha256": "b6d1bd1554291aafe6964144a4e4d46bb6f1737d425e640570a89c9f546fcd9e"
+    },
+    {
+      "path": "画像/CHAR-01.png",
+      "bytes": 4431271,
+      "sha256": "b772cb9f6aed6ca4bf64e113b0a27e1ac6f59d3e1daad165dfdeacad88f84516"
+    },
+    {
+      "path": "画像/CHAR-02-v2.png",
+      "bytes": 761041,
+      "sha256": "d69edf558f77f038ac53aed4fb78b29a1c7f0e13415077d71e16e4328050acce"
+    },
+    {
+      "path": "画像/CHAR-03-v2.png",
+      "bytes": 809022,
+      "sha256": "e14ac8b984aa8e34b741e58e550c56639b8c4b5ba6aa030643f26f068714d9f8"
+    },
+    {
+      "path": "画像/CHAR-04-v2.png",
+      "bytes": 787410,
+      "sha256": "32275189967c0631d77f4789f01358a06d273316abc8ebcc231dc1f988e26287"
+    },
+    {
+      "path": "動画/H3_001.mp4",
+      "bytes": 9764952,
+      "sha256": "6ecb6c48bba0082b50e36c7bd089d1ce8ab6a67c4704d486fd45440703bbc69b"
+    },
+    {
+      "path": "動画/H3_002.mp4",
+      "bytes": 18707430,
+      "sha256": "c10f8da71a1bc25f7128b2262fc45918add7cbcca7a99bfa41ec00e3cdd5b738"
+    },
+    {
+      "path": "動画/H3_003.mp4",
+      "bytes": 10186120,
+      "sha256": "44c03e44c6e368fcc052489649f211e858e99575ea6ee3196f2668c93999a3b4"
+    },
+    {
+      "path": "動画/H3_005.mp4",
+      "bytes": 14347670,
+      "sha256": "601658f0fab4ed96095c5ce8cc878c5406ccf33af808eec568c59db80a25cfa4"
+    },
+    {
+      "path": "動画/H3_008.mp4",
+      "bytes": 9951651,
+      "sha256": "4255da9342a6017cb755aac6046b8156b012d403e15d5377d005b04ddbc473f6"
+    },
+    {
+      "path": "動画/H3_009.mp4",
+      "bytes": 8105480,
+      "sha256": "fa7289444c8b5dffa0a1b7bae3fb85fe83d8563d8d40768a7e640f1791a8820b"
+    },
+    {
+      "path": "動画/H3_011.mp4",
+      "bytes": 10353676,
+      "sha256": "03596be900761b9cc307d75c8e0bbed222ad8dd80b5a91d875324a270967f69e"
+    },
+    {
+      "path": "動画/H3_015.mp4",
+      "bytes": 10376522,
+      "sha256": "09a16b90e6c34681e2126e185465c6309f465dd16d545da74e9d2749c58c3c8c"
+    },
+    {
+      "path": "動画/H3_023.mp4",
+      "bytes": 16009884,
+      "sha256": "2291379afb503d6901492f0d2cf37826ea939d05f0b880b0d2edd796bff1b689"
+    },
+    {
+      "path": "動画/H3_025.mp4",
+      "bytes": 17328029,
+      "sha256": "14e0d34e8e4f850f269962476797688b56b2c57493d6e7919694231645eccba7"
+    },
+    {
+      "path": "動画/H3_026.mp4",
+      "bytes": 10153798,
+      "sha256": "4a4b82da2abc016deb6a90f9af432b269af95747182cb0177b82ba54f9ffe8be"
+    },
+    {
+      "path": "動画/H3_027.mp4",
+      "bytes": 12420595,
+      "sha256": "daa0e197cf2144650020a5f51de905ad3efe67062ba99c073883dfef43ef8653"
+    },
+    {
+      "path": "動画/H3_031.mp4",
+      "bytes": 6468652,
+      "sha256": "a08c7efb500c4768f38959b3efaf86bb7aab412ee9f1fc9726870321cbc7347f"
+    },
+    {
+      "path": "動画/H3_033.mp4",
+      "bytes": 19301774,
+      "sha256": "2184b223d9303c2554b658a7d5e23582b5cd3acf0ab4b617c4710e37432e47f2"
+    },
+    {
+      "path": "動画/H3_036.mp4",
+      "bytes": 5222420,
+      "sha256": "9ac2dc55d96ccb8d203a1376d03c866a6f43363ab6519e0059007cccc7537c85"
+    },
+    {
+      "path": "動画/H3_038.mp4",
+      "bytes": 11712768,
+      "sha256": "440c8dc30bfbb70ea1d22c743d62b595de3a2f81c08c41007cbae05c65595abd"
+    },
+    {
+      "path": "動画/H3_039.mp4",
+      "bytes": 4645923,
+      "sha256": "8f14a24d85f8d16915d36a2268e88302d6286f3ede1353082107fdd06625029a"
+    },
+    {
+      "path": "動画/H3_045.mp4",
+      "bytes": 4463742,
+      "sha256": "c26d6fd20668ecc8cb633f103fa871740bd2709b2cd28261aeaf973cfcb4bf66"
+    },
+    {
+      "path": "動画/H3_047.mp4",
+      "bytes": 5649839,
+      "sha256": "2b935846cd55429c03a79b10a3e84def84cf23361a3e600741917069f63dc005"
+    },
+    {
+      "path": "動画/H3_051.mp4",
+      "bytes": 5821790,
+      "sha256": "d8d82ee4d020783023196f7a7f3aa193996d031b3060bf463b8debb5d8db3c31"
+    },
+    {
+      "path": "動画/H3_053.mp4",
+      "bytes": 17447522,
+      "sha256": "109c4fe0a5f724128086bb5b1bae9a23d66b1f5a248103f7472e3a7fcc636d80"
+    },
+    {
+      "path": "動画/H3_054.mp4",
+      "bytes": 8347799,
+      "sha256": "a3da9277974485738a43a379120b0c774fad5f5806bb67f0e59bd294ba03802c"
+    },
+    {
+      "path": "動画/H3_056.mp4",
+      "bytes": 12076678,
+      "sha256": "94f18be8b51fa57aa7b4ae1b8326fbb75134b905d627f6019604f00db6454438"
+    },
+    {
+      "path": "動画/H3_058.mp4",
+      "bytes": 9143922,
+      "sha256": "3132f43286b09078246051961321ca034ca5754c195339ee63f2618e644967da"
+    },
+    {
+      "path": "動画/H3_059.mp4",
+      "bytes": 6394093,
+      "sha256": "7fa67ff2eaf82370e60d2eeaa9a4248060ef5d4eab7f36e2dc04f39146488c62"
+    },
+    {
+      "path": "動画/H3_061.mp4",
+      "bytes": 12070296,
+      "sha256": "9fcd920d8a2a927240753ba6a43b1502cc45e68d3edb0373792bcce9b2b4e9d9"
+    },
+    {
+      "path": "動画/H3_066.mp4",
+      "bytes": 14916899,
+      "sha256": "0882d7f5a48871bac28b57b37babde433953b8313c2ee3f56c2dab172b188ba0"
+    },
+    {
+      "path": "動画/H3_068.mp4",
+      "bytes": 6312494,
+      "sha256": "babfb3df3221dcc8a26445ebf516cf0432de88db8f8890f93f8b78fc0ea80c8a"
+    },
+    {
+      "path": "動画/H3_069.mp4",
+      "bytes": 9301102,
+      "sha256": "0c458549377e8ee846e809beb5e3e4ecee46304e4c9b1e45365df6ad31f555ac"
+    },
+    {
+      "path": "動画/H3_071.mp4",
+      "bytes": 10750343,
+      "sha256": "6f6fed047077ca71f647de7c94e85d1bfe2f834c8e859d029a7b2af870f6a885"
+    },
+    {
+      "path": "動画/H3_074.mp4",
+      "bytes": 10559137,
+      "sha256": "f9597d9b1a9f4ca3aecbfd7f9a5be30b84c81abeecadfc7c670eb0a81abac433"
+    },
+    {
+      "path": "動画/H3_078.mp4",
+      "bytes": 8751373,
+      "sha256": "d278a207278fdf361968f1c15496609a18ae13e65e46237a4c6ffb2764f37ecd"
+    },
+    {
+      "path": "動画/H3_082.mp4",
+      "bytes": 9804546,
+      "sha256": "b015b8a389f9c92f3f068cb7b740dd0a911efc57d27a7e1af2093069295631fd"
+    },
+    {
+      "path": "動画/H3_084.mp4",
+      "bytes": 5237582,
+      "sha256": "cdcc1fba86040d4a08cf338a44aa381b03ad8c5aef1f175d50b04747f0cd1e83"
+    },
+    {
+      "path": "動画/H3_087.mp4",
+      "bytes": 13913552,
+      "sha256": "8315cc37e43e3d6fe805c9d0148509f32a7ab9490eddaa9ee69db638fb1705e8"
+    },
+    {
+      "path": "動画/H3_090.mp4",
+      "bytes": 8959667,
+      "sha256": "88ccb813410d34188dd3e1deaf8a2e4165830ab7fef3be07104df220e8b0b6ff"
+    },
+    {
+      "path": "動画/H3_091.mp4",
+      "bytes": 5753085,
+      "sha256": "81654ae05c92be7381dd10db063f42fb1ac1150c0b321bc06b36c00cb452fd88"
+    },
+    {
+      "path": "動画/H3_096.mp4",
+      "bytes": 5935187,
+      "sha256": "9faef67002b71c988b46fb94d9b88d423e6d4fe05e326a89f515afe14faed919"
+    },
+    {
+      "path": "動画/H3_101.mp4",
+      "bytes": 8248175,
+      "sha256": "192d984e63f7a85398bfcabddc94800e7173c1b8f92dca8cc47a65b119741ad7"
+    },
+    {
+      "path": "動画/H3_102.mp4",
+      "bytes": 14199219,
+      "sha256": "05a474acaff5f7e6280118c23630b13b4bb12b9da3aa8bb9e0d9b26b958abb33"
+    },
+    {
+      "path": "動画/H3_110.mp4",
+      "bytes": 6572691,
+      "sha256": "1474fbecc4364705de98bee564cab2aa4656479fed7157d2deb31e7a84bc9223"
+    },
+    {
+      "path": "動画/H3_111.mp4",
+      "bytes": 10612691,
+      "sha256": "45350fe3920dcf41bdf8097ff3d8aed03be06c40cc7a55079e8dfda21f3ae620"
+    },
+    {
+      "path": "動画/H3_113.mp4",
+      "bytes": 14412611,
+      "sha256": "6278bf995aa53510f7237065e35e7f2eef7e100e1e40826e9bc2387dcc43b492"
+    },
+    {
+      "path": "動画/H3_115.mp4",
+      "bytes": 22585905,
+      "sha256": "5aa3ffe654da9257addffe77e8be0ab5cb7a97bdc27a1b6821e31d4cbe739309"
+    },
+    {
+      "path": "動画/H3_118.mp4",
+      "bytes": 14790942,
+      "sha256": "3b29651b6be3b1f0a0c94d81a50d330441c5b0c6f5651824f2612688cc96c76b"
+    },
+    {
+      "path": "動画/H3_120.mp4",
+      "bytes": 9443476,
+      "sha256": "b831b87ac038ce1cd15e9fbe96d1c16ed2b10c1f4b135ce9846844e2c92cfdb8"
+    },
+    {
+      "path": "動画/H3_125.mp4",
+      "bytes": 6888414,
+      "sha256": "51e107bfd3e17b7850719cee105ce15c69bfa42fc34bb75052465ec02316032e"
+    },
+    {
+      "path": "動画/H3_140.mp4",
+      "bytes": 6969659,
+      "sha256": "c1d8ee2bab228ee4aa528ff1863797e3a1c60f5b5d6853ee206e2d1d1693d75c"
+    },
+    {
+      "path": "動画/H3_158.mp4",
+      "bytes": 11447834,
+      "sha256": "5371a6ddba2a93f48e0b7ceaee87cb3abe419f0e754baa6942d6f3a5e585d088"
+    },
+    {
+      "path": "動画/H3_160.mp4",
+      "bytes": 10275452,
+      "sha256": "4442c038ecc586ee897582eccde7e42c2ac6bb68ccd38bd533bbdb2e8fc7e621"
+    },
+    {
+      "path": "動画/H3_166.mp4",
+      "bytes": 6985238,
+      "sha256": "273276b32a50797c7933bff6b7b60bee940f610d103cbf329a8f88313f2b7c33"
+    },
+    {
+      "path": "動画/H3_169.mp4",
+      "bytes": 7226615,
+      "sha256": "ee833a6c869a15b9567307582f65b1ab06f5ae461af28e4a68d7e353030d21ea"
+    },
+    {
+      "path": "動画/H3_174.mp4",
+      "bytes": 8206909,
+      "sha256": "f0ead74e549a0829fe1b05518b4f894e786c233a8d7738936d23422acb1587f1"
+    },
+    {
+      "path": "動画/H3_178.mp4",
+      "bytes": 6501675,
+      "sha256": "d8925a95ea8e9d5a768ad688b605087fa1903c4fb6cef06eb2d1f3ef39f0e715"
+    },
+    {
+      "path": "動画/H3_191.mp4",
+      "bytes": 8733777,
+      "sha256": "1fab318534404088e04ebcb11a3be3a9e1770ff46037fae0d5a2c1f5c5af5eb3"
+    },
+    {
+      "path": "動画/H3_203.mp4",
+      "bytes": 5919292,
+      "sha256": "6e7d9e42d9d6bd3dacbf6cf9355f6a49a00d32df92e88f16c2cfa48731afd618"
+    },
+    {
+      "path": "動画/H3_213.mp4",
+      "bytes": 10253025,
+      "sha256": "48f5ec445474f9a54877c2a259d428d4a08b9b594b00fcb7b19eb17e9bf94ab7"
+    },
+    {
+      "path": "動画/H3_214.mp4",
+      "bytes": 9768452,
+      "sha256": "bd2877bc070b94c979d3fe630b0fe73cffd13e48b0a90286b434bc4c39952638"
+    },
+    {
+      "path": "動画/H3_215.mp4",
+      "bytes": 8083852,
+      "sha256": "46cacf1b827bcde2960886ad0a31676cbb7ff9e4d5d13b83ba891687163dd62f"
+    },
+    {
+      "path": "動画/H3_220.mp4",
+      "bytes": 9005746,
+      "sha256": "7e1cc16c1cadb11fbd1710597320c0744267c7cac6377ad9f0ea10777b0a325f"
+    },
+    {
+      "path": "文字/ASSET-013_text.png",
+      "bytes": 14703,
+      "sha256": "b383e5b88367baa8723d9ee8f85d18ee2c9a80e1dd82ae016d78e16f31607b8d"
+    },
+    {
+      "path": "文字/ASSET-018_text.png",
+      "bytes": 8739,
+      "sha256": "77f66a0f477b22379f05506b02bb6b0baa014fb3fa5b6e660bd2b6f5031438f9"
+    },
+    {
+      "path": "文字/ASSET-024_text.png",
+      "bytes": 26502,
+      "sha256": "27d2ae14f4e8e66fad05f8f2c57866c2f116cd232c9decbc5f4e07780fdd58a3"
+    },
+    {
+      "path": "文字/ASSET-029_text.png",
+      "bytes": 29222,
+      "sha256": "a3464aea36d3066e58f1f0e8be8911efbfd46c932a4e96aa304f3a3783ac567f"
+    },
+    {
+      "path": "文字/ASSET-037_text.png",
+      "bytes": 12308,
+      "sha256": "295a9808f676b740af778909a3d24ab0b0b4819312c9207adb16f75cdd1a9be8"
+    },
+    {
+      "path": "文字/ASSET-042_text.png",
+      "bytes": 15861,
+      "sha256": "d1cbda4557024ec120ae27a8bfb84c900cfd5b3e5d6633e41eed102eac317843"
+    },
+    {
+      "path": "文字/ASSET-046_text.png",
+      "bytes": 16634,
+      "sha256": "6cf8709b60c59c45e20042c829b5e352c9a3defc3f0d9ed6684f6e68a48c4035"
+    },
+    {
+      "path": "文字/ASSET-062_text.png",
+      "bytes": 19076,
+      "sha256": "f6ab22e001d9790ce544ac367cea6ff358d68c562086e62c0e28d5ff16f10ca4"
+    },
+    {
+      "path": "文字/ASSET-072_text.png",
+      "bytes": 19910,
+      "sha256": "713a3316c6fcf132b44093ddb00f8507e4f20d533f881d0f88cf2376cb6f2521"
+    },
+    {
+      "path": "文字/ASSET-089_text.png",
+      "bytes": 13202,
+      "sha256": "845ab26eb2e44321fa1a9ac8136420bed5145f6f63677971ae0274fc8f845ec4"
+    },
+    {
+      "path": "文字/ASSET-098_text.png",
+      "bytes": 24331,
+      "sha256": "5f6a89c40018c4630262648a3932317d892f1a8611c218570a6f799d61d4c6da"
+    },
+    {
+      "path": "文字/ASSET-100_text.png",
+      "bytes": 27430,
+      "sha256": "3cf55b38245c19b4f003ff2dd2f9bdfff562a489a0e3bda82d6622f0edc913fc"
+    },
+    {
+      "path": "文字/ASSET-106_text.png",
+      "bytes": 12001,
+      "sha256": "aff6104ae00c4bc0cef54979de259d703f642c706d45fe846df79f4aa95e7466"
+    },
+    {
+      "path": "文字/ASSET-112_text.png",
+      "bytes": 14323,
+      "sha256": "b510fce66b76e3dbce9bd8d8e4c55cbb67a4df612653856f45d84b487e809c8a"
+    },
+    {
+      "path": "文字/ASSET-123_text.png",
+      "bytes": 20390,
+      "sha256": "58c2d3ada03f8d936a2e8e49c5e0f8d4bb29e5e3387af663af4e94a595af44d5"
+    },
+    {
+      "path": "文字/ASSET-127_text.png",
+      "bytes": 27135,
+      "sha256": "ade72a96d5e173f836b35eb5ed495d77f41062a2f4f7feb9c0c5869cd4e15a77"
+    },
+    {
+      "path": "文字/ASSET-129_text.png",
+      "bytes": 31887,
+      "sha256": "8c4b6a056f547c9f5c9dec6ae1f4da1a30bdadc9b1489241d6913f2c88e360cc"
+    },
+    {
+      "path": "文字/ASSET-131_text.png",
+      "bytes": 15662,
+      "sha256": "1ed82c541d212a929161d6d5762d0607423bcd08819538dba096185f40563a59"
+    },
+    {
+      "path": "文字/ASSET-134_text.png",
+      "bytes": 25951,
+      "sha256": "6fad22f7d83c41257bf91336f570b7b2950fe337112abbb8aba672c2ac740e5f"
+    },
+    {
+      "path": "文字/ASSET-139_text.png",
+      "bytes": 24639,
+      "sha256": "7a9c157f170483918a84523f33de218179c1c07fd2e92a52fe764750de4f44a4"
+    },
+    {
+      "path": "文字/ASSET-144_text.png",
+      "bytes": 16223,
+      "sha256": "82df49f9cd6ad77a4b474a0f4ebeb60e115e1b1546bfb6f6ff4ce0d392616d49"
+    },
+    {
+      "path": "文字/ASSET-147_text.png",
+      "bytes": 25114,
+      "sha256": "c55362ad5beaa3f861d39fdd893aba8ed3da01efe430840cb51ce9c42132a97a"
+    },
+    {
+      "path": "文字/ASSET-150_text.png",
+      "bytes": 26799,
+      "sha256": "d027725b76d35ef9c37070b27965d67ade0786428b41616756f9ef6435b09168"
+    },
+    {
+      "path": "文字/ASSET-154_text.png",
+      "bytes": 22176,
+      "sha256": "9761a8c161a37a6f13757610191ec2e6b5ec80f9cd36ade20a3ca38cfe4b1220"
+    },
+    {
+      "path": "文字/ASSET-163_text.png",
+      "bytes": 19593,
+      "sha256": "5cd47a0989259c0a0dc243791968ae8276f87bc0361c23122a66cafe7f182491"
+    },
+    {
+      "path": "文字/ASSET-165_text.png",
+      "bytes": 25272,
+      "sha256": "06acbac03e4f57aec4fe800ae2c7b1dac244b185453f90bbb1478dae078e99ca"
+    },
+    {
+      "path": "文字/ASSET-171_text.png",
+      "bytes": 13202,
+      "sha256": "845ab26eb2e44321fa1a9ac8136420bed5145f6f63677971ae0274fc8f845ec4"
+    },
+    {
+      "path": "文字/ASSET-177_text.png",
+      "bytes": 35292,
+      "sha256": "98de355d6b460492bd4083baaf081975e6aa1d12ba34decf560b901c4693f7aa"
+    },
+    {
+      "path": "文字/ASSET-180_text.png",
+      "bytes": 26317,
+      "sha256": "9cbad0ada7f280f1b45f107c09ab4bcd3dee1ede087c0f5a459675797da4d4a0"
+    },
+    {
+      "path": "文字/ASSET-186_text.png",
+      "bytes": 18974,
+      "sha256": "c7a88e97e2686dc7486f7ff059c70b8fa22f5aa963b193f939f0cc13dde7ef53"
+    },
+    {
+      "path": "文字/ASSET-189_text.png",
+      "bytes": 22766,
+      "sha256": "68f91119361227e8ea13bbef6d9b9c59281d5f68897c90bfdff1e246d58a77f0"
+    },
+    {
+      "path": "文字/ASSET-190_text.png",
+      "bytes": 23243,
+      "sha256": "6b58f6a0cd29bcd652675a716f269de5244ba792df9d17a446424042a44e77c7"
+    },
+    {
+      "path": "文字/ASSET-192_text.png",
+      "bytes": 22266,
+      "sha256": "a6df2d0266aa4cde640041dcb97c3d3acf66a3749a1147bb0c7190959a04cf17"
+    },
+    {
+      "path": "文字/ASSET-195_text.png",
+      "bytes": 25906,
+      "sha256": "2b9af69c27244956256bb104d60f09dac85f4ec13b63e4e2a5545fd55b60699c"
+    },
+    {
+      "path": "文字/ASSET-201_text.png",
+      "bytes": 27115,
+      "sha256": "e9e0396e152554a476d300a58dae2c11376fd976610e26a13db31d7dc29435f1"
+    },
+    {
+      "path": "文字/ASSET-205_text.png",
+      "bytes": 31609,
+      "sha256": "d44a87532cb29d4135c1d0292bc09bc6dad444e0e035eee5334cc9ca86d4eef6"
+    },
+    {
+      "path": "文字/ASSET-209_text.png",
+      "bytes": 34864,
+      "sha256": "b6c500f4605c4a384cae96f022d1a4143aed018d57ae1931e1bf25f52cc20bc5"
+    },
+    {
+      "path": "文字/ASSET-216_text.png",
+      "bytes": 32540,
+      "sha256": "2cb54da4c75dd28b9cb15e3be171efcf7c770dcb4d081ff0cfc1f91407df7353"
+    },
+    {
+      "path": "文字/ASSET-219_text.png",
+      "bytes": 26919,
+      "sha256": "c7ee4aa0ba3e45d408f6deaef863c8aad3e3be1945ccf88a7115823469e12411"
+    }
+  ]
+}

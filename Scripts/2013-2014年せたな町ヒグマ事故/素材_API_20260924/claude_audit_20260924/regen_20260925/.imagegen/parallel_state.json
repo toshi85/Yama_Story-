@@ -1,0 +1,217 @@
+{
+  "status": "generating",
+  "started": 1790343654.337697,
+  "at": 1790343861.276923,
+  "parallel": 2,
+  "elapsed": 206.93922591209412,
+  "failures": 2,
+  "retries": 2,
+  "attempts": {
+    "ASSET-053_bg": 1,
+    "ASSET-058_still": 2,
+    "ASSET-060_char": 2
+  },
+  "inflight": {
+    "257C4FEAF3421BD76E0AADB7DD4BA639": "ASSET-058_still"
+  },
+  "targets": [
+    {
+      "description": "",
+      "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@792bf6722e73a45aa9e47c163b9901bdc17f3230/inspector.html?ws=127.0.0.1:9222/devtools/page/257C4FEAF3421BD76E0AADB7DD4BA639",
+      "faviconUrl": "https://chatgpt.com/cdn/assets/favicon.6a33781f61.svg",
+      "id": "257C4FEAF3421BD76E0AADB7DD4BA639",
+      "title": "ChatGPT",
+      "type": "page",
+      "url": "https://chatgpt.com/",
+      "webSocketDebuggerUrl": "ws://127.0.0.1:9222/devtools/page/257C4FEAF3421BD76E0AADB7DD4BA639"
+    },
+    {
+      "description": "",
+      "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@792bf6722e73a45aa9e47c163b9901bdc17f3230/inspector.html?ws=127.0.0.1:9222/devtools/page/F80D5C4509E4BAD4E77E50D5324D6CC7",
+      "faviconUrl": "https://chatgpt.com/cdn/assets/favicon.6a33781f61.svg",
+      "id": "F80D5C4509E4BAD4E77E50D5324D6CC7",
+      "title": "ChatGPT",
+      "type": "page",
+      "url": "https://chatgpt.com/",
+      "webSocketDebuggerUrl": "ws://127.0.0.1:9222/devtools/page/F80D5C4509E4BAD4E77E50D5324D6CC7"
+    }
+  ],
+  "evidence": null,
+  "snapshots": {
+    "257C4FEAF3421BD76E0AADB7DD4BA639": {
+      "installed": true,
+      "running": true,
+      "stopped": false,
+      "busy": true,
+      "current": "ASSET-058_still",
+      "sendRequest": null,
+      "sentToken": "ASSET-058_still:1790343850131:0.154100358283361",
+      "sentAt": 1790343854.981,
+      "done": [],
+      "failed": [],
+      "liveLimit": null,
+      "until": 0,
+      "shared": null,
+      "text": "",
+      "log": [
+        "22:41:39 ASSET-053_bg 保存 3475KB (1/1)",
+        "22:41:43 ループ終了 完了1 失敗0",
+        "22:43:02 ASSET-060_char 失敗: 再試行表示（run.pyへ再投入を委譲）",
+        "22:43:06 ループ終了 完了0 失敗1",
+        "22:43:08 ASSET-060_char 同じ会話の完成結果を保存します（再送なし）",
+        "22:43:14 ASSET-060_char 保存 991KB (1/1)",
+        "22:43:18 ループ終了 完了1 失敗0"
+      ]
+    },
+    "F80D5C4509E4BAD4E77E50D5324D6CC7": {
+      "installed": true,
+      "running": false,
+      "stopped": false,
+      "busy": false,
+      "current": null,
+      "sendRequest": null,
+      "sentToken": "ASSET-058_still:1790343656919:0.19611839254476238",
+      "sentAt": 1790343790.888,
+      "done": [],
+      "failed": [
+        {
+          "id": "ASSET-058_still",
+          "error": "再試行表示（run.pyへ再投入を委譲）"
+        }
+      ],
+      "liveLimit": null,
+      "until": 0,
+      "shared": null,
+      "text": "",
+      "log": [
+        "22:44:00 ASSET-058_still 失敗: 再試行表示（run.pyへ再投入を委譲）",
+        "22:44:04 ループ終了 完了0 失敗1"
+      ]
+    }
+  },
+  "pacing": {
+    "interval": 60,
+    "last_sent_at": 1790343856.998419,
+    "pending": null,
+    "sends": [
+      {
+        "worker": "257C4FEAF3421BD76E0AADB7DD4BA639",
+        "id": "ASSET-032_still",
+        "token": "ASSET-032_still:1790341742996:0.5755592126671345",
+        "sent_at": 1790341743.417,
+        "observed_at": 1790341745.2398999
+      },
+      {
+        "worker": "F80D5C4509E4BAD4E77E50D5324D6CC7",
+        "id": "ASSET-043_char",
+        "token": "ASSET-043_char:1790341743436:0.48085772986222675",
+        "sent_at": 1790341806.086,
+        "observed_at": 1790341808.070736
+      },
+      {
+        "worker": "257C4FEAF3421BD76E0AADB7DD4BA639",
+        "id": "ASSET-043_bg",
+        "token": "ASSET-043_bg:1790341818882:0.10614975187550657",
+        "sent_at": 1790341869.01,
+        "observed_at": 1790341871.001311
+      },
+      {
+        "worker": "F80D5C4509E4BAD4E77E50D5324D6CC7",
+        "id": "ASSET-043_char",
+        "token": "ASSET-043_char:1790341833580:0.5107310171278999",
+        "sent_at": 1790341932.053,
+        "observed_at": 1790341933.878637
+      },
+      {
+        "worker": "257C4FEAF3421BD76E0AADB7DD4BA639",
+        "id": "CHAR-05",
+        "token": "CHAR-05:1790342108432:0.022990596943002206",
+        "sent_at": 1790342167.318,
+        "observed_at": 1790342169.184685
+      },
+      {
+        "worker": "257C4FEAF3421BD76E0AADB7DD4BA639",
+        "id": "ASSET-043_char",
+        "token": "ASSET-043_char:1790342587695:0.759052155661478",
+        "sent_at": 1790342589.714,
+        "observed_at": 1790342591.7008388
+      },
+      {
+        "worker": "257C4FEAF3421BD76E0AADB7DD4BA639",
+        "id": "ASSET-043_char",
+        "token": "ASSET-043_char:1790342951555:0.8077799547359189",
+        "sent_at": 1790342957.853,
+        "observed_at": 1790342959.84514
+      },
+      {
+        "worker": "257C4FEAF3421BD76E0AADB7DD4BA639",
+        "id": "ASSET-009_still",
+        "token": "ASSET-009_still:1790343307850:0.9786474106269858",
+        "sent_at": 1790343310.276,
+        "observed_at": 1790343312.103338
+      },
+      {
+        "worker": "F80D5C4509E4BAD4E77E50D5324D6CC7",
+        "id": "ASSET-017_char",
+        "token": "ASSET-017_char:1790343307969:0.6452739452120536",
+        "sent_at": 1790343373.905,
+        "observed_at": 1790343375.7981849
+      },
+      {
+        "worker": "257C4FEAF3421BD76E0AADB7DD4BA639",
+        "id": "ASSET-015_bg",
+        "token": "ASSET-015_bg:1790343373878:0.40017014879639956",
+        "sent_at": 1790343436.655,
+        "observed_at": 1790343438.452339
+      },
+      {
+        "worker": "257C4FEAF3421BD76E0AADB7DD4BA639",
+        "id": "ASSET-026_bg",
+        "token": "ASSET-026_bg:1790343506197:0.39033755232938705",
+        "sent_at": 1790343508.422,
+        "observed_at": 1790343510.3301098
+      },
+      {
+        "worker": "F80D5C4509E4BAD4E77E50D5324D6CC7",
+        "id": "ASSET-027_char",
+        "token": "ASSET-027_char:1790343506343:0.03685099314846374",
+        "sent_at": 1790343580.239,
+        "observed_at": 1790343582.074922
+      },
+      {
+        "worker": "257C4FEAF3421BD76E0AADB7DD4BA639",
+        "id": "ASSET-053_bg",
+        "token": "ASSET-053_bg:1790343656783:0.0787254350262514",
+        "sent_at": 1790343659.014,
+        "observed_at": 1790343660.944488
+      },
+      {
+        "worker": "257C4FEAF3421BD76E0AADB7DD4BA639",
+        "id": "ASSET-060_char",
+        "token": "ASSET-060_char:1790343707297:0.5770307158070641",
+        "sent_at": 1790343728.121,
+        "observed_at": 1790343730.0497541
+      },
+      {
+        "worker": "F80D5C4509E4BAD4E77E50D5324D6CC7",
+        "id": "ASSET-058_still",
+        "token": "ASSET-058_still:1790343656919:0.19611839254476238",
+        "sent_at": 1790343790.888,
+        "observed_at": 1790343792.866094
+      },
+      {
+        "worker": "257C4FEAF3421BD76E0AADB7DD4BA639",
+        "id": "ASSET-058_still",
+        "token": "ASSET-058_still:1790343850131:0.154100358283361",
+        "sent_at": 1790343854.981,
+        "observed_at": 1790343856.998419
+      }
+    ]
+  },
+  "pending": [],
+  "remaining_ids": [
+    "ASSET-058_still"
+  ],
+  "access_consecutive": 0,
+  "access_retry_at": 0
+}

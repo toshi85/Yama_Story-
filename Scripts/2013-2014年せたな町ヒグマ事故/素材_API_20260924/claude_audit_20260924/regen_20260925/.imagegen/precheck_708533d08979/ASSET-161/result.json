@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-161",
+  "verdict": "FAIL",
+  "subject": "オスのクマ・前足幅14センチ",
+  "evidence": "One large fresh forepaw print of an adult male Hokkaido brown bear ... a broad pad about 14 centimetres wide",
+  "missing": "オスのクマ",
+  "reason": "足跡と前足幅は描かれているが、ナレーションに登場するクマは「No bear anywhere in the frame」と指定され、絵に登場しない。"
+}

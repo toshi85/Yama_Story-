@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-149",
+  "narration": "いつまた犠牲者が出るか分からない状況だったので、山に入らないでほしいとも呼びかけ続けました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "2014年12月、冬の雪の降る山道の入口で、町の職員（CHAR-06）が手のひらを前に突き出し「山に入らないで」と必死に呼びかける。背景は無地の掲示板とロープのある雪の山道入口。文言は編集で載せる。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. He holds his right palm out toward the viewer at chest height in a firm stop gesture and cups his left hand beside his mouth as he calls out, eyebrows shot up and pulled together, eyes stretched wide, mouth wide open in an urgent shout with the teeth showing, sweat flying off his temples, desperate and pleading, NOT calm, NOT smiling. No lettering, no badge, no logo, no name tag. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A mountain trail entrance at the edge of a forest near Setana, southwestern Hokkaido, in mid-December winter: a blank white notice board on two wooden posts, a single rope stretched loosely across the start of the snowy path, snow-covered bare trees behind, deep snow on the ground, snowflakes suspended in the air, a grey sky. Winter is intended in this scene. The notice board's face is blank, no lettering, no readable characters, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about five metres back, the left half of the frame left as clear open space. Grave, uneasy mood, cold grey light, NOT pure black, the board, rope and trees clearly readable, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規（動画は作らない。今の ASSET-149 の動画は使わない）。職員を左に置き、突き出した手のひらを小さく前後に動かす。背景に白い雪の粒を編集で降らせる。掲示板の上に「入山注意」を編集で載せる。中央上に「山に入らないで」を白字で表示し、「入らないで」だけ赤字。"
+  ]
+}

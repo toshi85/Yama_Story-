@@ -1,0 +1,18 @@
+{
+  "source": "Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/Asset_Prompts_Full.md",
+  "source_sha256": "f5a3fcca39397e2c9a22f07728073dc8c335b58e6c763b0fad5117f5a2aa8485",
+  "masters": 4,
+  "asset_images": 209,
+  "total_images": 213,
+  "video_starts": 60,
+  "google_earth": 8,
+  "text_only": 39,
+  "references": 9,
+  "model": "openai/gpt-image-2",
+  "quality": "medium",
+  "estimated_usd_text_to_image": 9.03,
+  "estimated_usd_edit_supplement": 0.08,
+  "video_model": "minimax/h3-max-turbo/image-to-video",
+  "video_price_usd_per_5s_after_promo": 0.2,
+  "video_estimated_usd": 12.0
+}

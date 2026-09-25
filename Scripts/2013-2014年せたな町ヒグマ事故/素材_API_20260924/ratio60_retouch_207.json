@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ASSET-207_char_clean",
+    "asset_no": 207,
+    "slot": "char_retouch",
+    "kind": "キャラアニメーション",
+    "prompt": "Edit the supplied transparent cartoon character image. Remove the floating green checkmark and any other validation or approval symbol near the character. Preserve the fictional Japanese female research worker, face, clothing, pose, envelope and sample vial exactly. Keep the full-body figure and all existing details. Do not add any result symbol, text, number, diagram, logo, or background. Maintain a truly transparent alpha background and 1:1 square format.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": [
+      "ASSET-207_char.png"
+    ]
+  }
+]

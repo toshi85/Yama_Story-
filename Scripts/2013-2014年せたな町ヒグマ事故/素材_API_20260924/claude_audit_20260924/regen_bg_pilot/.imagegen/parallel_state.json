@@ -1,0 +1,66 @@
+{
+  "status": "finished",
+  "started": 1790261400.823309,
+  "at": 1790261451.628824,
+  "parallel": 1,
+  "elapsed": 50.80551505088806,
+  "failures": 0,
+  "retries": 0,
+  "attempts": {
+    "ASSET-023_still": 1
+  },
+  "inflight": {},
+  "targets": [
+    {
+      "description": "",
+      "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@792bf6722e73a45aa9e47c163b9901bdc17f3230/inspector.html?ws=127.0.0.1:9222/devtools/page/9113E3C9A769D64B857DF95515F56CFE",
+      "id": "9113E3C9A769D64B857DF95515F56CFE",
+      "title": "",
+      "type": "page",
+      "url": "https://chatgpt.com/",
+      "webSocketDebuggerUrl": "ws://127.0.0.1:9222/devtools/page/9113E3C9A769D64B857DF95515F56CFE"
+    }
+  ],
+  "evidence": null,
+  "snapshots": {
+    "9113E3C9A769D64B857DF95515F56CFE": {
+      "installed": true,
+      "running": true,
+      "stopped": false,
+      "busy": false,
+      "current": "ASSET-023_still",
+      "sendRequest": null,
+      "sentToken": "ASSET-023_still:1790261406023:0.3958853396547303",
+      "sentAt": 1790261408.044,
+      "done": [
+        "ASSET-023_still"
+      ],
+      "failed": [],
+      "liveLimit": null,
+      "until": 0,
+      "shared": null,
+      "text": "",
+      "log": [
+        "23:50:51 ASSET-023_still 保存 3520KB (1/1)"
+      ]
+    }
+  },
+  "pacing": {
+    "interval": 60,
+    "last_sent_at": 1790261409.91679,
+    "pending": null,
+    "sends": [
+      {
+        "worker": "9113E3C9A769D64B857DF95515F56CFE",
+        "id": "ASSET-023_still",
+        "token": "ASSET-023_still:1790261406023:0.3958853396547303",
+        "sent_at": 1790261408.044,
+        "observed_at": 1790261409.91679
+      }
+    ]
+  },
+  "pending": [],
+  "remaining_ids": [],
+  "access_consecutive": 0,
+  "access_retry_at": 0
+}

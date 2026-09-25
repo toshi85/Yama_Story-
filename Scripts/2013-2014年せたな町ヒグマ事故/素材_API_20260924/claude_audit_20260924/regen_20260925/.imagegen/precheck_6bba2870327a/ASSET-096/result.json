@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-096",
+  "verdict": "FAIL",
+  "subject": "45歳の女性・52歳の女性・クマ",
+  "evidence": "A single adult male Hokkaido brown bear (Ursus arctos yesoensis)",
+  "missing": "45歳の女性と52歳の女性がプロンプトの絵に描かれていない。",
+  "reason": "2人の女性は編集者指示で後から配置されるだけで、プロンプトにはクマしか登場しない。"
+}

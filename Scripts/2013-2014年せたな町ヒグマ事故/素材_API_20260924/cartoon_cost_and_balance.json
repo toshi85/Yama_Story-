@@ -1,0 +1,14 @@
+{
+  "checked_date": "2026-09-24",
+  "provider": "fal",
+  "model": "openai/gpt-image-2/edit",
+  "source_url": "https://fal.ai/models/openai/gpt-image-2/edit",
+  "current_credit_usd": 1.42,
+  "character_cuts": 132,
+  "masters": 3,
+  "planned_requests": 135,
+  "medium_square_edit_unit_usd": 0.061,
+  "estimated_total_usd": 8.235,
+  "estimated_shortfall_usd": 6.815,
+  "note": "Reference-image edit scenario; final token-based charge and taxes may vary. No paid requests placed for this revision."
+}

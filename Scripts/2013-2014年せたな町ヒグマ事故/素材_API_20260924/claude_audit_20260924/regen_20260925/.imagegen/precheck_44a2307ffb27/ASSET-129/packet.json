@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-129",
+  "narration": "町の観光協会からは、「解決が遅れると観光にも影響を与えかねない」という心配の声も上がりました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "4月のせたな町の海岸の観光地を背に、観光協会の職員が心配そうに話す。背景だけ4月の景色に作り直す。",
+  "fences": [
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A quiet scenic coastline of Setana on the Sea of Japan in southwestern Hokkaido in mid-April early spring: a rocky shore with a tall sea stack, a small empty parking area and a closed souvenir kiosk with its shutters down, grey-blue sea, a brown headland with bare and budding shrubs and dry grass, No snow anywhere, no frost, no ice, no winter, no green summer leaves. Signage present in its normal place but small, slightly out of focus and not readable. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Subdued, uneasy mood, soft overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は新規の ASSET-129_bg.png、キャラは ドライブ上書き用_20260925 の ASSET-129_char.png。職員を右下から中央へスライドさせて止める。左上に「観光にも影響、、」を白字で置き、「影響」だけ赤字。"
+  ]
+}

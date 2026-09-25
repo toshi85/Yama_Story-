@@ -1,0 +1,1200 @@
+{
+  "status": "FAIL",
+  "cuts": [
+    {
+      "asset_no": 15,
+      "scene": "新成地区へ向かうワゴン車を後方から写す。",
+      "static_background": "ASSET-015_still.png",
+      "character": "ASSET-015_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 17,
+      "scene": "昼になっても空いたままの食卓。",
+      "static_background": "ASSET-017_still.png",
+      "character": "ASSET-017_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 19,
+      "scene": "夫が家を出て山へ向かう顔が見える斜め前の姿。",
+      "static_background": "ASSET-019_bg.png",
+      "character": "ASSET-019_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 20,
+      "scene": "沢近くに止まったワゴン車。",
+      "static_background": "ASSET-020_still.png",
+      "character": "ASSET-020_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 22,
+      "scene": "山道で電話をかける夫の手元。",
+      "static_background": "ASSET-022_bg.png",
+      "character": "ASSET-022_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 23,
+      "scene": "警察と消防の捜索者が山林を進む。",
+      "static_background": "ASSET-023_still.png",
+      "character": "ASSET-023_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 25,
+      "scene": "沢で女性を発見した捜索者の遠景。",
+      "static_background": "ASSET-025_still.png",
+      "character": "ASSET-025_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 26,
+      "scene": "沢辺で毛布に覆われた女性と立ち尽くす捜索者。",
+      "static_background": "ASSET-026_still.png",
+      "character": "ASSET-026_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 28,
+      "scene": "事故記録と覆われた遺体を離れた構図で示す。",
+      "static_background": "ASSET-028_still.png",
+      "character": "ASSET-028_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 31,
+      "scene": "訪問予定を記した無記名の手帳と伏せた家族写真。",
+      "static_background": "ASSET-031_still.png",
+      "character": "ASSET-031_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 33,
+      "scene": "11人のハンターが斜面に散る。",
+      "static_background": "ASSET-033_still.png",
+      "character": "ASSET-033_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 34,
+      "scene": "茂みの奥を探しても何も見えない。",
+      "static_background": "ASSET-034_bg.png",
+      "character": "ASSET-034_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 36,
+      "scene": "近隣自治体へ送る緊急文書の束。",
+      "static_background": "ASSET-036_still.png",
+      "character": "ASSET-036_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 38,
+      "scene": "研究者が山道の現場へ到着する顔が見える斜め前の姿。",
+      "static_background": "ASSET-038_still.png",
+      "character": "ASSET-038_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 39,
+      "scene": "3人の職員が机を囲み聞き取りをする。",
+      "static_background": "ASSET-039_still.png",
+      "character": "ASSET-039_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 40,
+      "scene": "研究者の手元に広がる現場資料。",
+      "static_background": "ASSET-040_bg.png",
+      "character": "ASSET-040_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 41,
+      "scene": "落ち葉のクマの毛を試料容器へ移す。",
+      "static_background": "ASSET-041_still.png",
+      "character": "ASSET-041_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 43,
+      "scene": "夜明け前に森へ入るハンター。",
+      "static_background": "ASSET-043_bg.png",
+      "character": "ASSET-043_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 45,
+      "scene": "道路沿いの注意看板を主画にして数値は編集で示す。",
+      "static_background": "ASSET-045_still.png",
+      "character": "ASSET-045_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 47,
+      "scene": "関係者が机を囲む対策会議。",
+      "static_background": "ASSET-047_still.png",
+      "character": "ASSET-047_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 50,
+      "scene": "住民の目撃情報を記録する電話と手帳。",
+      "static_background": "ASSET-050_bg.png",
+      "character": "ASSET-050_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 51,
+      "scene": "地区の掲示板に注意書きを貼る手元。",
+      "static_background": "ASSET-051_still.png",
+      "character": "ASSET-051_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 53,
+      "scene": "民家脇のササを刈って見通しを確保する。",
+      "static_background": "ASSET-053_still.png",
+      "character": "ASSET-053_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 54,
+      "scene": "家の門前に止まるスクールバス。",
+      "static_background": "ASSET-054_still.png",
+      "character": "ASSET-054_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 55,
+      "scene": "通報窓口の電話と記録用紙。",
+      "static_background": "ASSET-055_still.png",
+      "character": "ASSET-055_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 56,
+      "scene": "足跡・フン・食害跡の接写を順に見せる。",
+      "static_background": "ASSET-056_still.png",
+      "character": "ASSET-056_char.png",
+      "video_present": true,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 57,
+      "scene": "地区長が住民へ呼びかける顔が見える斜め前の姿。",
+      "static_background": "ASSET-057_bg.png",
+      "character": "ASSET-057_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 58,
+      "scene": "高齢のハンターたちが装備を整える。",
+      "static_background": "ASSET-058_still.png",
+      "character": "ASSET-058_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 59,
+      "scene": "免許申請書と猟銃の保管ケース。",
+      "static_background": "ASSET-059_still.png",
+      "character": "ASSET-059_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 63,
+      "scene": "山道の女性の背後に迫るヒグマの影。",
+      "static_background": "ASSET-063_bg.png",
+      "character": "ASSET-063_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 66,
+      "scene": "45歳女性と63歳男性が並んで山へ入る。",
+      "static_background": "ASSET-066_still.png",
+      "character": "ASSET-066_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 67,
+      "scene": "2人のカゴに入るギョウジャニンニク。",
+      "static_background": "ASSET-067_still.png",
+      "character": "ASSET-067_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 68,
+      "scene": "山菜を量りに載せる手元。",
+      "static_background": "ASSET-068_still.png",
+      "character": "ASSET-068_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 69,
+      "scene": "山菜採りの人々がカゴを持って入山。",
+      "static_background": "ASSET-069_still.png",
+      "character": "ASSET-069_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 71,
+      "scene": "看板の先へ入っていく2人の顔が見える斜め前の姿。",
+      "static_background": "ASSET-071_still.png",
+      "character": "ASSET-071_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 74,
+      "scene": "男性を先頭に下山する2人を横から写す。",
+      "static_background": "ASSET-074_still.png",
+      "character": "ASSET-074_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 75,
+      "scene": "女性の背後から飛び出すヒグマを横から写す。",
+      "static_background": "ASSET-075_bg.png",
+      "character": "ASSET-075_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 76,
+      "scene": "女性が身をよじる瞬間と迫るクマの影。",
+      "static_background": "ASSET-076_bg.png",
+      "character": "ASSET-076_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 77,
+      "scene": "男性へ向かうヒグマを横から写す。",
+      "static_background": "ASSET-077_bg.png",
+      "character": "ASSET-077_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 78,
+      "scene": "男性の手に握られたナタ。",
+      "static_background": "ASSET-078_still.png",
+      "character": "ASSET-078_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 79,
+      "scene": "人の横にいる体長約2mのヒグマ。",
+      "static_background": "ASSET-079_still.png",
+      "character": "ASSET-079_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 80,
+      "scene": "男性がナタで応戦する直前の構え。",
+      "static_background": "ASSET-080_bg.png",
+      "character": "ASSET-080_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 83,
+      "scene": "山道を離れる救急車の顔が見える斜め前の姿。",
+      "static_background": "ASSET-083_still.png",
+      "character": "ASSET-083_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 84,
+      "scene": "病院で毛布を掛けられた女性の顔が見える斜め前の姿。",
+      "static_background": "ASSET-084_still.png",
+      "character": "ASSET-084_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 85,
+      "scene": "無事に立つ男性の顔が見える斜め前の姿。",
+      "static_background": "ASSET-085_bg.png",
+      "character": "ASSET-085_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 86,
+      "scene": "応戦場面を指す専門家の手元。",
+      "static_background": "ASSET-086_bg.png",
+      "character": "ASSET-086_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 90,
+      "scene": "山道脇に新しい注意看板。",
+      "static_background": "ASSET-090_still.png",
+      "character": "ASSET-090_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 91,
+      "scene": "裏山を警戒する住民の顔が見える斜め前の姿。",
+      "static_background": "ASSET-091_still.png",
+      "character": "ASSET-091_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 92,
+      "scene": "高齢女性が持つ笛と爆竹の手元。",
+      "static_background": "ASSET-092_still.png",
+      "character": "ASSET-092_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 93,
+      "scene": "ハンターが現場の試料を採る手元。",
+      "static_background": "ASSET-093_bg.png",
+      "character": "ASSET-093_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 96,
+      "scene": "2人の女性の山菜カゴを年別に並べる。",
+      "static_background": "ASSET-096_still.png",
+      "character": "ASSET-096_char.png",
+      "video_present": true,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 101,
+      "scene": "2人分のリュックに付いた鈴。",
+      "static_background": "ASSET-101_still.png",
+      "character": "ASSET-101_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 102,
+      "scene": "鈴を付けた2人が森の小道を歩く。",
+      "static_background": "ASSET-102_still.png",
+      "character": "ASSET-102_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 103,
+      "scene": "襲撃後の道に残る山菜カゴ。",
+      "static_background": "ASSET-103_still.png",
+      "character": "ASSET-103_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 104,
+      "scene": "専門家が過去の事故資料を指す手元。",
+      "static_background": "ASSET-104_bg.png",
+      "character": "ASSET-104_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 105,
+      "scene": "町職員が駆除方針を資料で確認。",
+      "static_background": "ASSET-105_bg.png",
+      "character": "ASSET-105_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 107,
+      "scene": "複数の尾根を捜すハンター。",
+      "static_background": "ASSET-107_bg.png",
+      "character": "ASSET-107_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 108,
+      "scene": "顔を隠したヒグマがやぶへ入る。",
+      "static_background": "ASSET-108_still.png",
+      "character": "ASSET-108_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 109,
+      "scene": "ササに視界を遮られるハンター。",
+      "static_background": "ASSET-109_bg.png",
+      "character": "ASSET-109_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 110,
+      "scene": "ヘリ要請書と一般的な防災ヘリ。",
+      "static_background": "ASSET-110_still.png",
+      "character": "ASSET-110_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 111,
+      "scene": "地上の捜索隊と上空のヘリを同画面に収める。",
+      "static_background": "ASSET-111_still.png",
+      "character": "ASSET-111_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 113,
+      "scene": "ハンターと消防職員が林道に集合。",
+      "static_background": "ASSET-113_still.png",
+      "character": "ASSET-113_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 114,
+      "scene": "出発前に装備を確かめるハンター。",
+      "static_background": "ASSET-114_bg.png",
+      "character": "ASSET-114_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 115,
+      "scene": "捜索隊が3本の道へ分かれる。",
+      "static_background": "ASSET-115_still.png",
+      "character": "ASSET-115_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 117,
+      "scene": "ベテランが銃の扱いを教える手元。",
+      "static_background": "ASSET-117_still.png",
+      "character": "ASSET-117_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 118,
+      "scene": "地上の捜索隊と遠くのヘリ。",
+      "static_background": "ASSET-118_still.png",
+      "character": "ASSET-118_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 120,
+      "scene": "残雪に刻まれたクマの足跡。",
+      "static_background": "ASSET-120_still.png",
+      "character": "ASSET-120_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 122,
+      "scene": "雪上の足跡を指すハンターの手。",
+      "static_background": "ASSET-122_still.png",
+      "character": "ASSET-122_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 124,
+      "scene": "夕暮れの森から空手で戻る捜索隊。",
+      "static_background": "ASSET-124_bg.png",
+      "character": "ASSET-124_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 125,
+      "scene": "無人の山並みを離れるヘリ。",
+      "static_background": "ASSET-125_still.png",
+      "character": "ASSET-125_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 128,
+      "scene": "夜の集落と閉じた玄関。",
+      "static_background": "ASSET-128_still.png",
+      "character": "ASSET-128_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 130,
+      "scene": "疲れた捜索隊が山から戻る。",
+      "static_background": "ASSET-130_bg.png",
+      "character": "ASSET-130_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 135,
+      "scene": "箱わなの横で作業するハンターの顔が見える姿。",
+      "static_background": "ASSET-135_bg.png",
+      "character": "ASSET-135_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 136,
+      "scene": "密封した肉片試料を研究所へ送る手元。",
+      "static_background": "ASSET-136_still.png",
+      "character": "ASSET-136_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 137,
+      "scene": "事件現場に近い山の箱わな。",
+      "static_background": "ASSET-137_still.png",
+      "character": "ASSET-137_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 138,
+      "scene": "捕獲記録の性別欄を指す手。",
+      "static_background": "ASSET-138_bg.png",
+      "character": "ASSET-138_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 140,
+      "scene": "結果封筒を開ける直前の手元。",
+      "static_background": "ASSET-140_still.png",
+      "character": "ASSET-140_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 141,
+      "scene": "無記名の試料封筒を左右に並べ判定は編集文字で示す。",
+      "static_background": "ASSET-141_still.png",
+      "character": "ASSET-141_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 142,
+      "scene": "捕獲個体のカードを別箱へ移す。",
+      "static_background": "ASSET-142_still.png",
+      "character": "ASSET-142_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 143,
+      "scene": "家から森を見つめる住民。",
+      "static_background": "ASSET-143_bg.png",
+      "character": "ASSET-143_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 145,
+      "scene": "町の会議室とクマ対策資料。",
+      "static_background": "ASSET-145_still.png",
+      "character": "ASSET-145_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 146,
+      "scene": "対策本部の机に積まれた捜索記録。",
+      "static_background": "ASSET-146_still.png",
+      "character": "ASSET-146_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 148,
+      "scene": "町長の架空の顔を見せて会議の顔が見える姿と手元。",
+      "static_background": "ASSET-148_still.png",
+      "character": "ASSET-148_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 149,
+      "scene": "入山自粛を知らせる山道の注意掲示。",
+      "static_background": "ASSET-149_still.png",
+      "character": "ASSET-149_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 151,
+      "scene": "無記名の捜索計画書と冬山写真を机に並べる。",
+      "static_background": "ASSET-151_still.png",
+      "character": "ASSET-151_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 152,
+      "scene": "2013年と2014年の4月のカレンダー。",
+      "static_background": "ASSET-152_still.png",
+      "character": "ASSET-152_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 153,
+      "scene": "春に向けた捜索装備を準備する。",
+      "static_background": "ASSET-153_bg.png",
+      "character": "ASSET-153_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 155,
+      "scene": "大規模捜索計画を机に広げる。",
+      "static_background": "ASSET-155_bg.png",
+      "character": "ASSET-155_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 156,
+      "scene": "2年前の事件資料を開き直す。",
+      "static_background": "ASSET-156_bg.png",
+      "character": "ASSET-156_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 157,
+      "scene": "役場の窓から住民の暮らしを見る。",
+      "static_background": "ASSET-157_still.png",
+      "character": "ASSET-157_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 158,
+      "scene": "5、6人のハンターが足跡を追う。",
+      "static_background": "ASSET-158_still.png",
+      "character": "ASSET-158_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 159,
+      "scene": "森の中で遠くを確認するハンター。",
+      "static_background": "ASSET-159_bg.png",
+      "character": "ASSET-159_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 160,
+      "scene": "未使用の箱わなを山道に置く。",
+      "static_background": "ASSET-160_still.png",
+      "character": "ASSET-160_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 162,
+      "scene": "クマの鼻を遠景で示し傷は断定しない。",
+      "static_background": "ASSET-162_still.png",
+      "character": "ASSET-162_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 164,
+      "scene": "春に増える山菜採りの人々。",
+      "static_background": "ASSET-164_bg.png",
+      "character": "ASSET-164_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 166,
+      "scene": "山道脇に並ぶ山菜採りの車。",
+      "static_background": "ASSET-166_still.png",
+      "character": "ASSET-166_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 167,
+      "scene": "町職員が行動記録を見直す手元。",
+      "static_background": "ASSET-167_still.png",
+      "character": "ASSET-167_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 168,
+      "scene": "荒れた畑と山林の境目。",
+      "static_background": "ASSET-168_still.png",
+      "character": "ASSET-168_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 169,
+      "scene": "畑へ向かう際のラジオと笛。",
+      "static_background": "ASSET-169_still.png",
+      "character": "ASSET-169_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 170,
+      "scene": "町の家々が裏山を警戒する。",
+      "static_background": "ASSET-170_still.png",
+      "character": "ASSET-170_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 172,
+      "scene": "北檜山と大成の間に続く山林。",
+      "static_background": "ASSET-172_still.png",
+      "character": "ASSET-172_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 174,
+      "scene": "一日の捜索隊が山へ入る顔が見える斜め前の姿。",
+      "static_background": "ASSET-174_still.png",
+      "character": "ASSET-174_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 175,
+      "scene": "前年より広い山林を俯瞰。",
+      "static_background": "ASSET-175_still.png",
+      "character": "ASSET-175_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 176,
+      "scene": "誰もいないやぶを見つめる捜索隊。",
+      "static_background": "ASSET-176_bg.png",
+      "character": "ASSET-176_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 178,
+      "scene": "コンビニと民宿へ置かれるビラの束。",
+      "static_background": "ASSET-178_still.png",
+      "character": "ASSET-178_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 179,
+      "scene": "注意ビラの文字を編集で重ねる。",
+      "static_background": "ASSET-179_still.png",
+      "character": "ASSET-179_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 181,
+      "scene": "捜索資料とDNA資料を並べる。",
+      "static_background": "ASSET-181_still.png",
+      "character": "ASSET-181_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 182,
+      "scene": "町外の試料を受け取る専門家の手。",
+      "static_background": "ASSET-182_bg.png",
+      "character": "ASSET-182_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 184,
+      "scene": "保管された20本の試料容器。",
+      "static_background": "ASSET-184_still.png",
+      "character": "ASSET-184_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 185,
+      "scene": "専門家がDNA比較を始める手元。",
+      "static_background": "ASSET-185_bg.png",
+      "character": "ASSET-185_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 187,
+      "scene": "20個の無記名封筒から1つを編集で強調。",
+      "static_background": "ASSET-187_still.png",
+      "character": "ASSET-187_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 188,
+      "scene": "今金町金原のビート畑と周辺林。",
+      "static_background": "ASSET-188_still.png",
+      "character": "ASSET-188_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 191,
+      "scene": "夏のビート畑に設置された箱わな。",
+      "static_background": "ASSET-191_still.png",
+      "character": "ASSET-191_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 194,
+      "scene": "日本海側のせたな町の山地。",
+      "static_background": "ASSET-194_still.png",
+      "character": "ASSET-194_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 196,
+      "scene": "春の海側と夏の内陸を左右に並べる。",
+      "static_background": "ASSET-196_still.png",
+      "character": "ASSET-196_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 197,
+      "scene": "公表前の結果を収めた無記名封筒。",
+      "static_background": "ASSET-197_still.png",
+      "character": "ASSET-197_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 198,
+      "scene": "捜索装備を片づけるハンター。",
+      "static_background": "ASSET-198_bg.png",
+      "character": "ASSET-198_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 199,
+      "scene": "顔を出さず安堵した町長の手元。",
+      "static_background": "ASSET-199_still.png",
+      "character": "ASSET-199_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 200,
+      "scene": "警戒具を片づける住民の手元。",
+      "static_background": "ASSET-200_still.png",
+      "character": "ASSET-200_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 202,
+      "scene": "2013年の事故資料と空のわな。",
+      "static_background": "ASSET-202_still.png",
+      "character": "ASSET-202_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 203,
+      "scene": "2014年の事故資料と山道。",
+      "static_background": "ASSET-203_still.png",
+      "character": "ASSET-203_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 204,
+      "scene": "夏の今金町の箱わなと記録。",
+      "static_background": "ASSET-204_still.png",
+      "character": "ASSET-204_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 206,
+      "scene": "ナタと試料容器を置き傷の真偽は描かない。",
+      "static_background": "ASSET-206_still.png",
+      "character": "ASSET-206_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 207,
+      "scene": "保管試料と照合試料の封筒を並べ判定は編集文字で示す。",
+      "static_background": "ASSET-207_still.png",
+      "character": "ASSET-207_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 208,
+      "scene": "両町の記録を並べて見るハンターの手。",
+      "static_background": "ASSET-208_bg.png",
+      "character": "ASSET-208_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 210,
+      "scene": "研究者の手で鈴と笛を並べる。",
+      "static_background": "ASSET-210_still.png",
+      "character": "ASSET-210_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 211,
+      "scene": "鈴とラジオの横に残るクマの足跡。",
+      "static_background": "ASSET-211_still.png",
+      "character": "ASSET-211_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 212,
+      "scene": "見通しの悪い曲がり角で笛を持つ手。",
+      "static_background": "ASSET-212_bg.png",
+      "character": "ASSET-212_char.png",
+      "video_present": false,
+      "human_or_hands_visible": false,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 213,
+      "scene": "2人で山道を歩く顔が見える斜め前の姿。",
+      "static_background": "ASSET-213_still.png",
+      "character": "ASSET-213_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 214,
+      "scene": "複数歩行でも周囲を警戒する2人。",
+      "static_background": "ASSET-214_still.png",
+      "character": "ASSET-214_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 215,
+      "scene": "入山前に装備を確かめる2人。",
+      "static_background": "ASSET-215_still.png",
+      "character": "ASSET-215_char.png",
+      "video_present": true,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    },
+    {
+      "asset_no": 218,
+      "scene": "登山口のクマスプレーと出没情報。",
+      "static_background": "ASSET-218_still.png",
+      "character": "ASSET-218_char.png",
+      "video_present": false,
+      "human_or_hands_visible": true,
+      "review": "132背景のコンタクトシート目視。小さな人物の見落としはあり得る。"
+    }
+  ],
+  "counts": {
+    "character_cuts": 132,
+    "video_present": 48,
+    "human_or_hands_visible": 92,
+    "videos_for_transition_only": 48
+  },
+  "note": "動画48件は編集指示上、キャラ表示区間の前後のつなぎ用。キャラ背景としての動画使用は確認されていない。静止背景の実写人物・手は別の不一致。"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-198",
+  "verdict": "FAIL",
+  "subject": "せたな町・クマ・捜索打ち切り",
+  "evidence": "a Japanese hunter in a blaze-orange vest and orange cap, seen only from behind, walks into the frame, lifts one of the packed backpacks from the folding table onto his shoulder, picks up the coil of rope and walks slowly away down the road",
+  "missing": "クマ",
+  "reason": "捜索を終えるハンターは描かれていますが、ナレーションに出るクマはプロンプトに登場しません。"
+}

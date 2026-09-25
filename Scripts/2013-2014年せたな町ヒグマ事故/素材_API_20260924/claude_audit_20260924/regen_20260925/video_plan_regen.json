@@ -1,0 +1,146 @@
+[
+  {
+    "id": "H3_009",
+    "shot_id": 9,
+    "prompt": "One single continuous take from a low locked-off camera in a dark early-spring Hokkaido mountain forest at dusk: no cuts, no scene change. An adult male brown bear on all fours advances slowly step by step straight toward the camera out of the gloom, head dropped low, eyes fixed on the lens, fangs bared, the fur along its neck bristled, until its head and shoulders fill most of the frame. Thin mist drifts between the bare trees. Dark but NOT pure black, the bear stays clearly readable. The forest is empty apart from the bear. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-009_still.png",
+    "deliver_as": "ASSET-009_video.mp4",
+    "md": "Asset_Prompts_Fix2.md"
+  },
+  {
+    "id": "H3_014",
+    "shot_id": 14,
+    "prompt": "One single continuous aerial drone shot: the camera glides slowly forward along the Sea of Japan coast of Setana in southwestern Hokkaido in early spring, over the small shoreline town toward the forested hills, gentle waves on the rocky headlands. No cuts, no scene change, smooth steady movement. No people visible. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-014_still.png",
+    "deliver_as": "ASSET-014_video.mp4",
+    "md": "Asset_Prompts_Fix2.md"
+  },
+  {
+    "id": "H3_032",
+    "shot_id": 32,
+    "prompt": "One single continuous aerial drone shot: the camera glides slowly forward over the small quiet farming settlement near Setana in early spring, over the low houses and brown fields toward the forested hills. No cuts, no scene change, smooth steady movement. No people visible. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-032_still.png",
+    "deliver_as": "ASSET-032_video.mp4",
+    "md": "Asset_Prompts_Fix4.md"
+  },
+  {
+    "id": "H3_058",
+    "shot_id": 58,
+    "prompt": "One single continuous shot at the gravel entrance of an early-spring Hokkaido forest road: three aging Japanese hunters get ready slowly; the white-haired man straightens up stiffly with a hand on his lower back, the man on the pickup tailgate pulls on his boot, the man with the walking stick adjusts the rifle case on his back. The camera drifts slowly sideways past them. No cuts, no scene change. Faces stay turned away and never identifiable. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-058_still.png",
+    "deliver_as": "ASSET-058_video.mp4",
+    "md": "Asset_Prompts_Fix5a.md"
+  },
+  {
+    "id": "H3_078",
+    "shot_id": 78,
+    "prompt": "One single continuous close shot on an early-spring Hokkaido forest trail: a Japanese man's hand in a grey jacket sleeve slowly tightens its grip on a Japanese nata hatchet with a broad rectangular blade; a faint rustle in the bamboo grass, and the hand lifts the hatchet a little. The camera stays close on the hand and forearm, no face ever visible. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-078_still.png",
+    "deliver_as": "ASSET-078_video.mp4",
+    "md": "Asset_Prompts_Fix5a.md"
+  },
+  {
+    "id": "H3_082",
+    "shot_id": 82,
+    "prompt": "One single continuous shot from a fixed camera on an early-spring Hokkaido forest trail: an adult brown bear on all fours, its back and rump toward the camera, bounds away uphill into dense bamboo grass and bare woods and disappears; the bamboo sways and settles, and the trail is left empty. The bear never turns its face toward the camera and never stands up. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-082_still.png",
+    "deliver_as": "ASSET-082_video.mp4",
+    "md": "Asset_Prompts_Fix5a.md"
+  },
+  {
+    "id": "H3_090",
+    "shot_id": 90,
+    "prompt": "One single continuous shot beside an early-spring Hokkaido country road: gloved hands in navy sleeves give the clamp of a new bear warning sign a final turn with a spanner and let go; the camera slowly pulls back and pans to reveal a second new sign further along the empty road and the bare forested hills. Only hands and forearms ever appear, no face visible. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-090_still.png",
+    "deliver_as": "ASSET-090_video.mp4",
+    "md": "Asset_Prompts_Fix5a.md"
+  },
+  {
+    "id": "H3_094",
+    "shot_id": 94,
+    "prompt": "One single continuous close shot on a laboratory bench: two gloved hands in white lab-coat sleeves bring two small capped sample tubes side by side, pause, then set them carefully into the rack next to each other. The camera pushes in very slowly. Only hands and forearms appear, no face visible. No readable labels. No cuts, no scene change. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-094_still.png",
+    "deliver_as": "ASSET-094_video.mp4",
+    "md": "Asset_Prompts_Fix5a.md"
+  },
+  {
+    "id": "H3_096",
+    "shot_id": 96,
+    "prompt": "One single continuous shot from a fixed camera at the edge of an early-spring Hokkaido forest: a single adult brown bear on all fours steps slowly out of the shadowed bamboo grass toward the camera, head low, fangs bared, ears pinned flat, eyes fixed on the lens, and stops. It never stands up on two legs. No cuts, no scene change, no zoom. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-096_still.png",
+    "deliver_as": "ASSET-096_video.mp4",
+    "md": "Asset_Prompts_Fix5a.md"
+  },
+  {
+    "id": "H3_146",
+    "shot_id": 146,
+    "prompt": "One single continuous shot near Setana, southwestern Hokkaido, in winter: the five Japanese hunters seen from behind keep trudging slowly in single file through the deep snow into the snowy forest, light snow falling, the camera follows slowly at walking pace. No cuts, no scene change, no face visible. 8 seconds. No blood, no wounds, no gore. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-146_still.png",
+    "deliver_as": "ASSET-146_video.mp4",
+    "md": "Asset_Prompts_Fix5b.md"
+  },
+  {
+    "id": "H3_157",
+    "shot_id": 157,
+    "prompt": "One single continuous aerial drone shot: the camera glides slowly forward over the edge of the small town of Setana in late winter, passes above a single file of five Japanese hunters in blaze-orange walking along a snowy farm track toward the hills, and continues on toward the forested hills ahead. The hunters stay small and seen from behind, no face visible. No cuts, no scene change, smooth steady movement. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-157_still.png",
+    "deliver_as": "ASSET-157_video.mp4",
+    "md": "Asset_Prompts_Fix5b.md"
+  },
+  {
+    "id": "H3_160",
+    "shot_id": 160,
+    "prompt": "One single continuous shot from a fixed camera beside a gravel mountain road near Setana in March, late winter: an empty steel box trap with its door raised open waits at the roadside; a light wind stirs the dry grass and the bare branches, and the camera pushes in very slowly toward the open trap door. Nothing enters the trap, no animal and no people appear. Late-winter snow is intended in this scene. No cuts, no scene change. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "drive/ASSET-160_still.png",
+    "deliver_as": "ASSET-160_video.mp4",
+    "md": "Asset_Prompts_Fix5b.md"
+  },
+  {
+    "id": "H3_169",
+    "shot_id": 169,
+    "prompt": "One single continuous shot from behind on a narrow dirt path up to a hillside vegetable field in early spring in Hokkaido: an elderly Japanese man in a beige work jacket walks slowly uphill holding up a small portable radio in one hand and a red packet of firecrackers in the other, pauses, turns his head warily toward the wooded hill, then keeps climbing. His face is never visible. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-169_still.png",
+    "deliver_as": "ASSET-169_video.mp4",
+    "md": "Asset_Prompts_Fix5c.md"
+  },
+  {
+    "id": "H3_175",
+    "shot_id": 175,
+    "prompt": "One single continuous aerial drone shot in early spring in Hokkaido: the camera glides slowly forward and rises over a tiny single file of searchers in blaze-orange vests walking along a bare ridge, revealing more and more forested ridges and valleys rolling away to the horizon until the searchers are only specks. No cuts, no scene change, smooth steady movement. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-175_still.png",
+    "deliver_as": "ASSET-175_video.mp4",
+    "md": "Asset_Prompts_Fix5c.md"
+  },
+  {
+    "id": "H3_178",
+    "shot_id": 178,
+    "prompt": "One single continuous shot at the counter of a small seaside convenience store in Hokkaido in spring: a hand in a navy work-jacket sleeve enters the frame, sets down a fresh stack of warning leaflets with a bear photograph beside the first stack, then slides one leaflet forward across the counter. Only the hand and forearm ever appear, no face visible. No readable text on the leaflets. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "drive/ASSET-178_still.png",
+    "deliver_as": "ASSET-178_video.mp4",
+    "md": "Asset_Prompts_Fix5c.md"
+  },
+  {
+    "id": "H3_198",
+    "shot_id": 198,
+    "prompt": "One single continuous shot from a fixed camera at the entrance of a gravel forest track in early spring in Hokkaido: a Japanese hunter in a blaze-orange vest and orange cap, seen only from behind, walks into the frame, lifts one of the packed backpacks from the folding table onto his shoulder, picks up the coil of rope and walks slowly away down the road, leaving the track entrance empty and quiet. His face is never visible. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-174_bg.png",
+    "deliver_as": "ASSET-198_video.mp4",
+    "md": "Asset_Prompts_Fix5c.md"
+  },
+  {
+    "id": "H3_207",
+    "shot_id": 207,
+    "prompt": "One single continuous close shot on a laboratory table by a window: two gloved hands in white lab-coat sleeves slide the two capped sample tubes closer together until they stand side by side on their white cards, then let go and rest flat on the table. Only the hands and forearms appear, no face visible. No readable labels. The camera pushes in very slowly. No cuts, no scene change. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-182_bg.png",
+    "deliver_as": "ASSET-207_video.mp4",
+    "md": "Asset_Prompts_Fix5c.md"
+  },
+  {
+    "id": "H3_211",
+    "shot_id": 211,
+    "prompt": "One single continuous shot from a fixed camera on a spring mountain trail in Hokkaido: a small brass bell on a strap swings gently on a tree stump beside a portable radio in the foreground, while an adult brown bear on all fours walks calmly across the trail further up, never turning its head toward the radio or the bell, and disappears into the low bamboo. It never stands up on two legs. No cuts, no scene change, no zoom. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
+    "image": "images/ASSET-211_still.png",
+    "deliver_as": "ASSET-211_video.mp4",
+    "md": "Asset_Prompts_Fix5c.md"
+  }
+]

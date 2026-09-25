@@ -1,0 +1,41 @@
+[
+  {
+    "id": "CHAR-02-v2",
+    "prompt": "One full-body Japanese man in his 50s, the husband searching for his wife in the Setana incident reconstruction. Consistent design: dark blue field jacket, gray trousers, short black hair with a little gray, medium build. Rear or three-quarter back view only, face not identifiable. Cute Japanese cartoon character design, thick black outlines, flat cel-shaded colors, restrained expression, neutral standing pose, plain white background, no text, no logo, no blood, no wounds. ONE isolated full-body person only, centered and large in the square frame. Exactly one pose. Empty transparent background. No duplicate person, no alternate views, no turnaround sheet, no character sheet, no panel grid, no inset details. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "kind": "character_master",
+    "slot": "char_ref",
+    "label": "2013年の女性の夫（50代・本編のキャラ演出用）"
+  },
+  {
+    "id": "CHAR-03-v2",
+    "prompt": "One full-body Japanese woman in her mid 40s in the 2014 Setana incident reconstruction. Consistent design: maroon field jacket, charcoal trousers, dark hair tied low, medium build. Rear or three-quarter back view only, face not identifiable. Cute Japanese cartoon character design, thick black outlines, flat cel-shaded colors, restrained expression, neutral standing pose, plain white background, no text, no logo, no blood, no wounds. ONE isolated full-body person only, centered and large in the square frame. Exactly one pose. Empty transparent background. No duplicate person, no alternate views, no turnaround sheet, no character sheet, no panel grid, no inset details. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "kind": "character_master",
+    "slot": "char_ref",
+    "label": "2014年に襲われた女性（40代半ば・本編のキャラ演出用）"
+  },
+  {
+    "id": "CHAR-04-v2",
+    "prompt": "One full-body Japanese man in his early 60s accompanying the woman in the 2014 Setana incident reconstruction. Consistent design: gray field jacket, dark trousers, short graying hair, sturdy build. Rear or three-quarter back view only, face not identifiable. Cute Japanese cartoon character design, thick black outlines, flat cel-shaded colors, restrained expression, neutral standing pose, plain white background, no text, no logo, no blood, no wounds. ONE isolated full-body person only, centered and large in the square frame. Exactly one pose. Empty transparent background. No duplicate person, no alternate views, no turnaround sheet, no character sheet, no panel grid, no inset details. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "kind": "character_master",
+    "slot": "char_ref",
+    "label": "2014年に同行した男性（60代前半・本編のキャラ演出用）"
+  }
+]

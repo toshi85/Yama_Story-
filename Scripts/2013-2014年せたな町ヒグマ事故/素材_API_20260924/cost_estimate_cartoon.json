@@ -1,0 +1,86 @@
+{
+  "method": "fal公開のMedium標準サイズ単価 × 保存済みrequest件数。GPT Image 2は実際のトークン量で変動するため請求確定額ではない。最新画風修正は134件の異なる受付IDを確認。",
+  "exchange_rate_jpy_per_usd": 150,
+  "sources": [
+    "https://fal.ai/models/openai/gpt-image-2",
+    "https://fal.ai/models/openai/gpt-image-2/edit",
+    "https://fal.ai/models/minimax/h3-max-turbo/image-to-video"
+  ],
+  "batches": {
+    "initial_images": {
+      "requests": 216,
+      "breakdown": [
+        {
+          "endpoint": "edit",
+          "shape": "landscape",
+          "requests": 1,
+          "unit_usd": 0.053,
+          "estimated_usd": 0.053
+        },
+        {
+          "endpoint": "edit",
+          "shape": "square",
+          "requests": 8,
+          "unit_usd": 0.061,
+          "estimated_usd": 0.488
+        },
+        {
+          "endpoint": "gpt-image-2",
+          "shape": "landscape",
+          "requests": 173,
+          "unit_usd": 0.04,
+          "estimated_usd": 6.92
+        },
+        {
+          "endpoint": "gpt-image-2",
+          "shape": "square",
+          "requests": 34,
+          "unit_usd": 0.053,
+          "estimated_usd": 1.802
+        }
+      ],
+      "estimated_usd": 9.263
+    },
+    "ratio_correction_images": {
+      "requests": 139,
+      "breakdown": [
+        {
+          "endpoint": "edit",
+          "shape": "square",
+          "requests": 12,
+          "unit_usd": 0.061,
+          "estimated_usd": 0.732
+        },
+        {
+          "endpoint": "gpt-image-2",
+          "shape": "square",
+          "requests": 127,
+          "unit_usd": 0.053,
+          "estimated_usd": 6.731
+        }
+      ],
+      "estimated_usd": 7.463
+    },
+    "initial_videos": {
+      "requests": 60,
+      "model": "H3 Max Turbo 768p 5s",
+      "unit_usd": 0.1,
+      "estimated_usd": 6.0
+    },
+    "cartoon_style_correction_images": {
+      "requests": 134,
+      "model": "openai/gpt-image-2/edit",
+      "shape": "square",
+      "quality": "medium",
+      "unit_usd": 0.061,
+      "estimated_usd": 8.174,
+      "approved_sample_reused": 1,
+      "notes": "132 cut images plus CHAR-03/04 masters; CHAR-02 approved sample reused, no duplicate order."
+    }
+  },
+  "initial_estimated_usd": 15.263,
+  "correction_estimated_usd": 7.463,
+  "total_estimated_usd": 30.9,
+  "total_estimated_jpy": 4635,
+  "cartoon_correction_estimated_usd": 8.174
+}

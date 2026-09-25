@@ -1,0 +1,13 @@
+[
+  "caffeinate",
+  "-i",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/.venv/bin/python",
+  "System_Tools/edit/fal_queue.py",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/images_plan.json",
+  "--out",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/画像",
+  "--references",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/画像",
+  "--jobs",
+  "3"
+]

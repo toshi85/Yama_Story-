@@ -1,0 +1,6 @@
+﻿id,verdict,narration,subject,evidence,missing,reason
+ASSET-008,PASS,一年後、また別の女性が襲われました。,別の女性・ヒグマ・襲撃,"Behind her on the left, an adult brown bear on all fours bursts out of the bamboo, jaws wrenched wide open with fangs bared, ears pinned flat, the fur along its neck bristled, closes the gap in two powerful bounds and lunges onto her back from behind, knocking her forward toward the ground.",,別の女性とヒグマが登場し、背後から襲われる瞬間が描かれている。
+ASSET-009,PASS,襲ったのは、あの時のヒグマです。,あの時のヒグマ,An adult male brown bear on all fours advances slowly step by step straight toward the camera out of the gloom,,ナレーションに登場するヒグマがプロンプトの映像に描かれている。
+ASSET-014,PASS,北海道の南西部、日本海に面したせたな町。,せたな町・日本海,A high aerial drone view over the coast of Setana on the Sea of Japan in southwestern Hokkaido,,ナレーションの主題である日本海に面したせたな町の海岸が描かれている。
+ASSET-015,FAIL,52歳の女性が車で向かったのは、町の北檜山区（きたひやまく）にある新成地区（しんせい）の山。,女性・車での移動,キャラは ASSET-029_char.png を再利用して左から中央へ歩くように移動させる。,車と、女性が車で山へ向かう場面,女性は登場するが、ナレーションで述べる車での移動は描かれていない。
+ASSET-017,FAIL,ところが、昼になっても奥さんは帰ってきませんでした。,奥さん,該当なし,奥さん,ナレーションの主語である奥さんがプロンプトに描かれていません。

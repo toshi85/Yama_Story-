@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-148",
+  "verdict": "FAIL",
+  "subject": "町長・クマ・捕獲報告",
+  "evidence": "A full-body Japanese town mayor in his 60s",
+  "missing": "事件を起こしたクマ",
+  "reason": "ナレーションに登場する町長は描かれていますが、クマはプロンプトに登場しません。"
+}

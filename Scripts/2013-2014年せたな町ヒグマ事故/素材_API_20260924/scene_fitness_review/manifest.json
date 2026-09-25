@@ -1,0 +1,1762 @@
+[
+  {
+    "asset": "ASSET-001",
+    "category": "Lovart動画",
+    "scene": "夜明けの日本海沿いに広がるせたな町の山林を空から写す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-001_still.png",
+    "character": null,
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-001_video.mp4"
+  },
+  {
+    "asset": "ASSET-002",
+    "category": "Lovart動画",
+    "scene": "春の山林で山菜を採る女性の後ろ姿。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-002_still.png",
+    "character": null,
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-002_video.mp4"
+  },
+  {
+    "asset": "ASSET-003",
+    "category": "Lovart動画",
+    "scene": "妻を探して山道を上る夫の背中。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-003_still.png",
+    "character": null,
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-003_video.mp4"
+  },
+  {
+    "asset": "ASSET-004",
+    "category": "Lovart静止画",
+    "scene": "林床に落ちた女性の上着を接写。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-004_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-005",
+    "category": "Lovart動画",
+    "scene": "沢へ到着した捜索者が立ち尽くす遠景。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-005_still.png",
+    "character": null,
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-005_video.mp4"
+  },
+  {
+    "asset": "ASSET-006",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "落ち葉からクマの毛を拾う手袋の手。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-006_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-007",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "一致しないDNA試料2枚を机に並べる。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-007_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-008",
+    "category": "Lovart動画",
+    "scene": "翌春の山道を歩く別の女性の後ろ姿。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-008_still.png",
+    "character": null,
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-008_video.mp4"
+  },
+  {
+    "asset": "ASSET-009",
+    "category": "Lovart動画",
+    "scene": "2件の記録を背後のヒグマ影と並べる。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-009_still.png",
+    "character": null,
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-009_video.mp4"
+  },
+  {
+    "asset": "ASSET-010",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "空の森を見つめる捜索隊の背中。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-010_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-011",
+    "category": "Lovart動画",
+    "scene": "捜索隊の先に続く無人の谷を写す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-011_still.png",
+    "character": null,
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-011_video.mp4"
+  },
+  {
+    "asset": "ASSET-012",
+    "category": "Google Earth",
+    "scene": "Google Earthで北海道南西部からせたな町周辺へ寄り、事件に登場する地区の位置関係を見せる。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-013",
+    "category": "テキストのみ",
+    "scene": "黒背景に「4月16日」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-014",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "日本海とせたな町周辺の海岸林を俯瞰。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-014_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-015",
+    "category": "キャラアニメーション",
+    "scene": "新成地区へ向かうワゴン車を後方から写す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-015_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-015_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-015_video.mp4"
+  },
+  {
+    "asset": "ASSET-016",
+    "category": "Lovart静止画",
+    "scene": "カゴに入った春の山菜を接写。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-016_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-017",
+    "category": "キャラアニメーション",
+    "scene": "昼になっても空いたままの食卓。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-017_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-017_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-018",
+    "category": "テキストのみ",
+    "scene": "黒背景に「正午」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-019",
+    "category": "キャラアニメーション",
+    "scene": "夫が家を出て山へ向かう顔が見える斜め前の姿。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-019_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-019_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-020",
+    "category": "キャラアニメーション",
+    "scene": "沢近くに止まったワゴン車。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-020_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-020_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-021",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "奥の山林に落ちた女性の衣服。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-021_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-022",
+    "category": "キャラアニメーション",
+    "scene": "山道で電話をかける夫の手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-022_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-022_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-023",
+    "category": "キャラアニメーション",
+    "scene": "警察と消防の捜索者が山林を進む。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-023_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-023_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-023_video.mp4"
+  },
+  {
+    "asset": "ASSET-024",
+    "category": "テキストのみ",
+    "scene": "黒背景に「午後1時45分」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-025",
+    "category": "キャラアニメーション",
+    "scene": "沢で女性を発見した捜索者の遠景。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-025_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-025_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-025_video.mp4"
+  },
+  {
+    "asset": "ASSET-026",
+    "category": "キャラアニメーション",
+    "scene": "沢辺で毛布に覆われた女性と立ち尽くす捜索者。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-026_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-026_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-026_video.mp4"
+  },
+  {
+    "asset": "ASSET-027",
+    "category": "Lovart動画",
+    "scene": "湿った地面に残る大きなクマの足跡。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-027_still.png",
+    "character": null,
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-027_video.mp4"
+  },
+  {
+    "asset": "ASSET-028",
+    "category": "キャラアニメーション",
+    "scene": "事故記録と覆われた遺体を離れた構図で示す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-028_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-028_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-029",
+    "category": "テキストのみ",
+    "scene": "黒背景に「鈴も武器もなし」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-030",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "森のすぐそばに家々が並ぶ集落の遠景。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-030_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-031",
+    "category": "キャラアニメーション",
+    "scene": "訪問予定を記した無記名の手帳と伏せた家族写真。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-031_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-031_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-031_video.mp4"
+  },
+  {
+    "asset": "ASSET-032",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "目撃通報前の空欄の記録台帳。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-032_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-033",
+    "category": "キャラアニメーション",
+    "scene": "11人のハンターが斜面に散る。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-033_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-033_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-033_video.mp4"
+  },
+  {
+    "asset": "ASSET-034",
+    "category": "キャラアニメーション",
+    "scene": "茂みの奥を探しても何も見えない。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-034_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-034_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-035",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "集落の防災無線スピーカー。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-035_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-036",
+    "category": "キャラアニメーション",
+    "scene": "近隣自治体へ送る緊急文書の束。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-036_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-036_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-036_video.mp4"
+  },
+  {
+    "asset": "ASSET-037",
+    "category": "テキストのみ",
+    "scene": "黒背景に「4月17日」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-038",
+    "category": "キャラアニメーション",
+    "scene": "研究者が山道の現場へ到着する顔が見える斜め前の姿。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-038_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-038_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-038_video.mp4"
+  },
+  {
+    "asset": "ASSET-039",
+    "category": "キャラアニメーション",
+    "scene": "3人の職員が机を囲み聞き取りをする。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-039_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-039_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-039_video.mp4"
+  },
+  {
+    "asset": "ASSET-040",
+    "category": "キャラアニメーション",
+    "scene": "研究者の手元に広がる現場資料。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-040_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-040_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-041",
+    "category": "キャラアニメーション",
+    "scene": "落ち葉のクマの毛を試料容器へ移す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-041_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-041_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-042",
+    "category": "テキストのみ",
+    "scene": "黒背景に「午前5時」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-043",
+    "category": "キャラアニメーション",
+    "scene": "夜明け前に森へ入るハンター。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-043_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-043_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-044",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "人影のないササやぶを写す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-044_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-045",
+    "category": "キャラアニメーション",
+    "scene": "道路沿いの注意看板を主画にして数値は編集で示す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-045_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-045_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-045_video.mp4"
+  },
+  {
+    "asset": "ASSET-046",
+    "category": "テキストのみ",
+    "scene": "黒背景に「4月23日」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-047",
+    "category": "キャラアニメーション",
+    "scene": "関係者が机を囲む対策会議。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-047_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-047_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-047_video.mp4"
+  },
+  {
+    "asset": "ASSET-048",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "定規を添えたクマの前足跡。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-048_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-049",
+    "category": "Lovart静止画",
+    "scene": "山林に置いた複数の箱わな。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-049_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-050",
+    "category": "キャラアニメーション",
+    "scene": "住民の目撃情報を記録する電話と手帳。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-050_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-050_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-051",
+    "category": "キャラアニメーション",
+    "scene": "地区の掲示板に注意書きを貼る手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-051_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-051_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-051_video.mp4"
+  },
+  {
+    "asset": "ASSET-052",
+    "category": "Lovart静止画",
+    "scene": "住宅地と山林の境を俯瞰する。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-052_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-053",
+    "category": "キャラアニメーション",
+    "scene": "民家脇のササを刈って見通しを確保する。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-053_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-053_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-053_video.mp4"
+  },
+  {
+    "asset": "ASSET-054",
+    "category": "キャラアニメーション",
+    "scene": "家の門前に止まるスクールバス。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-054_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-054_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-054_video.mp4"
+  },
+  {
+    "asset": "ASSET-055",
+    "category": "キャラアニメーション",
+    "scene": "通報窓口の電話と記録用紙。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-055_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-055_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-056",
+    "category": "キャラアニメーション",
+    "scene": "足跡・フン・食害跡の接写を順に見せる。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-056_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-056_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-056_video.mp4"
+  },
+  {
+    "asset": "ASSET-057",
+    "category": "キャラアニメーション",
+    "scene": "地区長が住民へ呼びかける顔が見える斜め前の姿。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-057_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-057_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-058",
+    "category": "キャラアニメーション",
+    "scene": "高齢のハンターたちが装備を整える。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-058_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-058_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-058_video.mp4"
+  },
+  {
+    "asset": "ASSET-059",
+    "category": "キャラアニメーション",
+    "scene": "免許申請書と猟銃の保管ケース。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-059_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-059_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-059_video.mp4"
+  },
+  {
+    "asset": "ASSET-060",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "森に置かれた空の箱わな。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-060_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-061",
+    "category": "Lovart動画",
+    "scene": "暗くなる森を次の場面へのつなぎに使う。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-061_still.png",
+    "character": null,
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-061_video.mp4"
+  },
+  {
+    "asset": "ASSET-062",
+    "category": "テキストのみ",
+    "scene": "黒背景に「2014年4月4日」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-063",
+    "category": "キャラアニメーション",
+    "scene": "山道の女性の背後に迫るヒグマの影。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-063_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-063_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-064",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "太田地区周辺の山道と森。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-064_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-065",
+    "category": "Google Earth",
+    "scene": "新成地区から南の太田地区へカメラを移し、2つの地区が離れていることを見せる。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-066",
+    "category": "キャラアニメーション",
+    "scene": "45歳女性と63歳男性が並んで山へ入る。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-066_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-066_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-066_video.mp4"
+  },
+  {
+    "asset": "ASSET-067",
+    "category": "キャラアニメーション",
+    "scene": "2人のカゴに入るギョウジャニンニク。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-067_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-067_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-068",
+    "category": "キャラアニメーション",
+    "scene": "山菜を量りに載せる手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-068_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-068_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-068_video.mp4"
+  },
+  {
+    "asset": "ASSET-069",
+    "category": "キャラアニメーション",
+    "scene": "山菜採りの人々がカゴを持って入山。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-069_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-069_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-069_video.mp4"
+  },
+  {
+    "asset": "ASSET-070",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "林道入口のクマ注意看板。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-070_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-071",
+    "category": "キャラアニメーション",
+    "scene": "看板の先へ入っていく2人の顔が見える斜め前の姿。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-071_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-071_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-071_video.mp4"
+  },
+  {
+    "asset": "ASSET-072",
+    "category": "テキストのみ",
+    "scene": "黒背景に「午後2時」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-073",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "林道から伸びる山林の小道。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-073_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-074",
+    "category": "キャラアニメーション",
+    "scene": "男性を先頭に下山する2人を横から写す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-074_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-074_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-074_video.mp4"
+  },
+  {
+    "asset": "ASSET-075",
+    "category": "キャラアニメーション",
+    "scene": "女性の背後から飛び出すヒグマを横から写す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-075_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-075_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-076",
+    "category": "キャラアニメーション",
+    "scene": "女性が身をよじる瞬間と迫るクマの影。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-076_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-076_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-077",
+    "category": "キャラアニメーション",
+    "scene": "男性へ向かうヒグマを横から写す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-077_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-077_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-078",
+    "category": "キャラアニメーション",
+    "scene": "男性の手に握られたナタ。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-078_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-078_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-078_video.mp4"
+  },
+  {
+    "asset": "ASSET-079",
+    "category": "キャラアニメーション",
+    "scene": "人の横にいる体長約2mのヒグマ。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-079_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-079_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-080",
+    "category": "キャラアニメーション",
+    "scene": "男性がナタで応戦する直前の構え。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-080_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-080_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-081",
+    "category": "Lovart静止画",
+    "scene": "反撃で体勢を崩すヒグマ。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-081_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-082",
+    "category": "Lovart動画",
+    "scene": "四つ足で森へ逃げるヒグマ。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-082_still.png",
+    "character": null,
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-082_video.mp4"
+  },
+  {
+    "asset": "ASSET-083",
+    "category": "キャラアニメーション",
+    "scene": "山道を離れる救急車の顔が見える斜め前の姿。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-083_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-083_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-084",
+    "category": "キャラアニメーション",
+    "scene": "病院で毛布を掛けられた女性の顔が見える斜め前の姿。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-084_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-084_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-084_video.mp4"
+  },
+  {
+    "asset": "ASSET-085",
+    "category": "キャラアニメーション",
+    "scene": "無事に立つ男性の顔が見える斜め前の姿。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-085_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-085_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-086",
+    "category": "キャラアニメーション",
+    "scene": "応戦場面を指す専門家の手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-086_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-086_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-087",
+    "category": "Lovart動画",
+    "scene": "旧校舎近くの通行止め柵。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-087_still.png",
+    "character": null,
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-087_video.mp4"
+  },
+  {
+    "asset": "ASSET-088",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "旧校舎の向こうに見える山林。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-088_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-089",
+    "category": "テキストのみ",
+    "scene": "黒背景に「4月5日」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-090",
+    "category": "キャラアニメーション",
+    "scene": "山道脇に新しい注意看板。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-090_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-090_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-090_video.mp4"
+  },
+  {
+    "asset": "ASSET-091",
+    "category": "キャラアニメーション",
+    "scene": "裏山を警戒する住民の顔が見える斜め前の姿。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-091_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-091_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-091_video.mp4"
+  },
+  {
+    "asset": "ASSET-092",
+    "category": "キャラアニメーション",
+    "scene": "高齢女性が持つ笛と爆竹の手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-092_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-092_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-093",
+    "category": "キャラアニメーション",
+    "scene": "ハンターが現場の試料を採る手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-093_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-093_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-094",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "2013年と2014年の試料容器。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-094_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-095",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "2つの無記名試料封筒を並べ一致は編集文字で示す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-095_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-096",
+    "category": "キャラアニメーション",
+    "scene": "2人の女性の山菜カゴを年別に並べる。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-096_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-096_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-096_video.mp4"
+  },
+  {
+    "asset": "ASSET-097",
+    "category": "Google Earth",
+    "scene": "新成地区と太田地区を同じ画面で見せる。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-098",
+    "category": "テキストのみ",
+    "scene": "黒背景に「2度の犯行」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-099",
+    "category": "Google Earth",
+    "scene": "新成地区と太田地区を広域の3D地形で見せる。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-100",
+    "category": "テキストのみ",
+    "scene": "黒背景に「再び人を襲う」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-101",
+    "category": "キャラアニメーション",
+    "scene": "2人分のリュックに付いた鈴。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-101_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-101_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-101_video.mp4"
+  },
+  {
+    "asset": "ASSET-102",
+    "category": "キャラアニメーション",
+    "scene": "鈴を付けた2人が森の小道を歩く。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-102_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-102_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-102_video.mp4"
+  },
+  {
+    "asset": "ASSET-103",
+    "category": "キャラアニメーション",
+    "scene": "襲撃後の道に残る山菜カゴ。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-103_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-103_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-104",
+    "category": "キャラアニメーション",
+    "scene": "専門家が過去の事故資料を指す手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-104_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-104_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-105",
+    "category": "キャラアニメーション",
+    "scene": "町職員が駆除方針を資料で確認。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-105_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-105_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-106",
+    "category": "テキストのみ",
+    "scene": "黒背景に「4月7日」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-107",
+    "category": "キャラアニメーション",
+    "scene": "複数の尾根を捜すハンター。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-107_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-107_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-108",
+    "category": "キャラアニメーション",
+    "scene": "顔を隠したヒグマがやぶへ入る。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-108_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-108_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-109",
+    "category": "キャラアニメーション",
+    "scene": "ササに視界を遮られるハンター。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-109_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-109_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-110",
+    "category": "キャラアニメーション",
+    "scene": "ヘリ要請書と一般的な防災ヘリ。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-110_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-110_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-110_video.mp4"
+  },
+  {
+    "asset": "ASSET-111",
+    "category": "キャラアニメーション",
+    "scene": "地上の捜索隊と上空のヘリを同画面に収める。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-111_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-111_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-111_video.mp4"
+  },
+  {
+    "asset": "ASSET-112",
+    "category": "テキストのみ",
+    "scene": "黒背景に「4月9日」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-113",
+    "category": "キャラアニメーション",
+    "scene": "ハンターと消防職員が林道に集合。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-113_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-113_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-113_video.mp4"
+  },
+  {
+    "asset": "ASSET-114",
+    "category": "キャラアニメーション",
+    "scene": "出発前に装備を確かめるハンター。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-114_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-114_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-115",
+    "category": "キャラアニメーション",
+    "scene": "捜索隊が3本の道へ分かれる。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-115_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-115_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-115_video.mp4"
+  },
+  {
+    "asset": "ASSET-116",
+    "category": "Google Earth",
+    "scene": "2014年の太田地区周辺を北東方向が分かる構図で見せる。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-117",
+    "category": "キャラアニメーション",
+    "scene": "ベテランが銃の扱いを教える手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-117_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-117_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-118",
+    "category": "キャラアニメーション",
+    "scene": "地上の捜索隊と遠くのヘリ。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-118_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-118_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-118_video.mp4"
+  },
+  {
+    "asset": "ASSET-119",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "日陰に残る春の雪。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-119_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-120",
+    "category": "キャラアニメーション",
+    "scene": "残雪に刻まれたクマの足跡。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-120_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-120_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-120_video.mp4"
+  },
+  {
+    "asset": "ASSET-121",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "溶けかけた雪で足跡が消える。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-121_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-122",
+    "category": "キャラアニメーション",
+    "scene": "雪上の足跡を指すハンターの手。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-122_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-122_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-123",
+    "category": "テキストのみ",
+    "scene": "黒背景に「午後6時」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-124",
+    "category": "キャラアニメーション",
+    "scene": "夕暮れの森から空手で戻る捜索隊。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-124_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-124_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-125",
+    "category": "キャラアニメーション",
+    "scene": "無人の山並みを離れるヘリ。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-125_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-125_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-125_video.mp4"
+  },
+  {
+    "asset": "ASSET-126",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "木々の間へ消えるクマの影。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-126_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-127",
+    "category": "テキストのみ",
+    "scene": "黒背景に「警戒継続」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-128",
+    "category": "キャラアニメーション",
+    "scene": "夜の集落と閉じた玄関。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-128_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-128_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-129",
+    "category": "テキストのみ",
+    "scene": "黒背景に「観光への懸念」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-130",
+    "category": "キャラアニメーション",
+    "scene": "疲れた捜索隊が山から戻る。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-130_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-130_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-131",
+    "category": "テキストのみ",
+    "scene": "黒背景に「5月19日」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-132",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "箱わなに入ったオスのヒグマ。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-132_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-133",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "鉄格子越しに捕獲個体を写す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-133_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-134",
+    "category": "テキストのみ",
+    "scene": "黒背景に「1.8m・250kg」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-135",
+    "category": "キャラアニメーション",
+    "scene": "箱わなの横で作業するハンターの顔が見える姿。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-135_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-135_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-136",
+    "category": "キャラアニメーション",
+    "scene": "密封した肉片試料を研究所へ送る手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-136_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-136_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-137",
+    "category": "キャラアニメーション",
+    "scene": "事件現場に近い山の箱わな。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-137_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-137_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-138",
+    "category": "キャラアニメーション",
+    "scene": "捕獲記録の性別欄を指す手。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-138_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-138_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-139",
+    "category": "テキストのみ",
+    "scene": "黒背景に「有力な候補」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-140",
+    "category": "キャラアニメーション",
+    "scene": "結果封筒を開ける直前の手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-140_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-140_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-140_video.mp4"
+  },
+  {
+    "asset": "ASSET-141",
+    "category": "キャラアニメーション",
+    "scene": "無記名の試料封筒を左右に並べ判定は編集文字で示す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-141_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-141_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-142",
+    "category": "キャラアニメーション",
+    "scene": "捕獲個体のカードを別箱へ移す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-142_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-142_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-143",
+    "category": "キャラアニメーション",
+    "scene": "家から森を見つめる住民。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-143_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-143_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-144",
+    "category": "テキストのみ",
+    "scene": "黒背景に「12月18日」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-145",
+    "category": "キャラアニメーション",
+    "scene": "町の会議室とクマ対策資料。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-145_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-145_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-146",
+    "category": "キャラアニメーション",
+    "scene": "対策本部の机に積まれた捜索記録。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-146_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-146_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-147",
+    "category": "テキストのみ",
+    "scene": "黒背景に「捕獲20頭」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-148",
+    "category": "キャラアニメーション",
+    "scene": "町長の架空の顔を見せて会議の顔が見える姿と手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-148_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-148_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-149",
+    "category": "キャラアニメーション",
+    "scene": "入山自粛を知らせる山道の注意掲示。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-149_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-149_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-150",
+    "category": "テキストのみ",
+    "scene": "黒背景に「諦めない町長」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-151",
+    "category": "キャラアニメーション",
+    "scene": "無記名の捜索計画書と冬山写真を机に並べる。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-151_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-151_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-152",
+    "category": "キャラアニメーション",
+    "scene": "2013年と2014年の4月のカレンダー。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-152_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-152_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-153",
+    "category": "キャラアニメーション",
+    "scene": "春に向けた捜索装備を準備する。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-153_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-153_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-154",
+    "category": "テキストのみ",
+    "scene": "黒背景に「2015年3月」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-155",
+    "category": "キャラアニメーション",
+    "scene": "大規模捜索計画を机に広げる。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-155_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-155_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-156",
+    "category": "キャラアニメーション",
+    "scene": "2年前の事件資料を開き直す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-156_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-156_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-157",
+    "category": "キャラアニメーション",
+    "scene": "役場の窓から住民の暮らしを見る。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-157_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-157_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-158",
+    "category": "キャラアニメーション",
+    "scene": "5、6人のハンターが足跡を追う。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-158_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-158_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-158_video.mp4"
+  },
+  {
+    "asset": "ASSET-159",
+    "category": "キャラアニメーション",
+    "scene": "森の中で遠くを確認するハンター。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-159_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-159_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-160",
+    "category": "キャラアニメーション",
+    "scene": "未使用の箱わなを山道に置く。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-160_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-160_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-160_video.mp4"
+  },
+  {
+    "asset": "ASSET-161",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "幅14cmの足跡と定規。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-161_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-162",
+    "category": "キャラアニメーション",
+    "scene": "クマの鼻を遠景で示し傷は断定しない。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-162_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-162_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-163",
+    "category": "テキストのみ",
+    "scene": "黒背景に「4月末まで」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-164",
+    "category": "キャラアニメーション",
+    "scene": "春に増える山菜採りの人々。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-164_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-164_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-165",
+    "category": "テキストのみ",
+    "scene": "黒背景に「入山を控える」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-166",
+    "category": "キャラアニメーション",
+    "scene": "山道脇に並ぶ山菜採りの車。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-166_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-166_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-166_video.mp4"
+  },
+  {
+    "asset": "ASSET-167",
+    "category": "キャラアニメーション",
+    "scene": "町職員が行動記録を見直す手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-167_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-167_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-168",
+    "category": "キャラアニメーション",
+    "scene": "荒れた畑と山林の境目。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-168_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-168_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-169",
+    "category": "キャラアニメーション",
+    "scene": "畑へ向かう際のラジオと笛。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-169_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-169_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-169_video.mp4"
+  },
+  {
+    "asset": "ASSET-170",
+    "category": "キャラアニメーション",
+    "scene": "町の家々が裏山を警戒する。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-170_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-170_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-171",
+    "category": "テキストのみ",
+    "scene": "黒背景に「4月5日」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-172",
+    "category": "キャラアニメーション",
+    "scene": "北檜山と大成の間に続く山林。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-172_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-172_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-173",
+    "category": "Google Earth",
+    "scene": "せたな町から今金町にかけての広域地形を見せる。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-174",
+    "category": "キャラアニメーション",
+    "scene": "一日の捜索隊が山へ入る顔が見える斜め前の姿。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-174_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-174_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-174_video.mp4"
+  },
+  {
+    "asset": "ASSET-175",
+    "category": "キャラアニメーション",
+    "scene": "前年より広い山林を俯瞰。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-175_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-175_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-176",
+    "category": "キャラアニメーション",
+    "scene": "誰もいないやぶを見つめる捜索隊。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-176_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-176_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-177",
+    "category": "テキストのみ",
+    "scene": "黒背景に「最も危険な段階」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-178",
+    "category": "キャラアニメーション",
+    "scene": "コンビニと民宿へ置かれるビラの束。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-178_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-178_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-178_video.mp4"
+  },
+  {
+    "asset": "ASSET-179",
+    "category": "キャラアニメーション",
+    "scene": "注意ビラの文字を編集で重ねる。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-179_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-179_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-180",
+    "category": "テキストのみ",
+    "scene": "黒背景に「思わぬ進展」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-181",
+    "category": "キャラアニメーション",
+    "scene": "捜索資料とDNA資料を並べる。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-181_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-181_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-182",
+    "category": "キャラアニメーション",
+    "scene": "町外の試料を受け取る専門家の手。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-182_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-182_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-183",
+    "category": "Google Earth",
+    "scene": "せたな町と今金町を含む広域地形を見せる。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-184",
+    "category": "キャラアニメーション",
+    "scene": "保管された20本の試料容器。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-184_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-184_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-185",
+    "category": "キャラアニメーション",
+    "scene": "専門家がDNA比較を始める手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-185_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-185_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-186",
+    "category": "テキストのみ",
+    "scene": "黒背景に「4月22日夜」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-187",
+    "category": "キャラアニメーション",
+    "scene": "20個の無記名封筒から1つを編集で強調。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-187_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-187_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-188",
+    "category": "キャラアニメーション",
+    "scene": "今金町金原のビート畑と周辺林。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-188_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-188_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-189",
+    "category": "テキストのみ",
+    "scene": "黒背景に「2014年8月4日」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-190",
+    "category": "テキストのみ",
+    "scene": "黒背景に「事件から4か月」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-191",
+    "category": "キャラアニメーション",
+    "scene": "夏のビート畑に設置された箱わな。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-191_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-191_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-191_video.mp4"
+  },
+  {
+    "asset": "ASSET-192",
+    "category": "テキストのみ",
+    "scene": "黒背景に「2m・230kg」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-193",
+    "category": "Google Earth",
+    "scene": "太田地区から北東の今金町金原地区までを広域地形で示す。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-194",
+    "category": "キャラアニメーション",
+    "scene": "日本海側のせたな町の山地。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-194_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-194_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-195",
+    "category": "テキストのみ",
+    "scene": "黒背景に「内陸で捕獲」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-196",
+    "category": "キャラアニメーション",
+    "scene": "春の海側と夏の内陸を左右に並べる。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-196_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-196_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-197",
+    "category": "キャラアニメーション",
+    "scene": "公表前の結果を収めた無記名封筒。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-197_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-197_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-198",
+    "category": "キャラアニメーション",
+    "scene": "捜索装備を片づけるハンター。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-198_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-198_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-199",
+    "category": "キャラアニメーション",
+    "scene": "顔を出さず安堵した町長の手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-199_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-199_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-200",
+    "category": "キャラアニメーション",
+    "scene": "警戒具を片づける住民の手元。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-200_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-200_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-201",
+    "category": "テキストのみ",
+    "scene": "黒背景に「時系列で追う」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-202",
+    "category": "キャラアニメーション",
+    "scene": "2013年の事故資料と空のわな。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-202_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-202_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-203",
+    "category": "キャラアニメーション",
+    "scene": "2014年の事故資料と山道。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-203_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-203_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-203_video.mp4"
+  },
+  {
+    "asset": "ASSET-204",
+    "category": "キャラアニメーション",
+    "scene": "夏の今金町の箱わなと記録。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-204_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-204_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-205",
+    "category": "テキストのみ",
+    "scene": "黒背景に「同じクマの移動」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-206",
+    "category": "キャラアニメーション",
+    "scene": "ナタと試料容器を置き傷の真偽は描かない。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-206_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-206_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-207",
+    "category": "キャラアニメーション",
+    "scene": "保管試料と照合試料の封筒を並べ判定は編集文字で示す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-207_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-207_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-208",
+    "category": "キャラアニメーション",
+    "scene": "両町の記録を並べて見るハンターの手。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-208_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-208_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-209",
+    "category": "テキストのみ",
+    "scene": "黒背景に「出没情報を確認」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-210",
+    "category": "キャラアニメーション",
+    "scene": "研究者の手で鈴と笛を並べる。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-210_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-210_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-211",
+    "category": "キャラアニメーション",
+    "scene": "鈴とラジオの横に残るクマの足跡。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-211_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-211_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-212",
+    "category": "キャラアニメーション",
+    "scene": "見通しの悪い曲がり角で笛を持つ手。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-212_bg.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-212_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-213",
+    "category": "キャラアニメーション",
+    "scene": "2人で山道を歩く顔が見える斜め前の姿。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-213_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-213_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-213_video.mp4"
+  },
+  {
+    "asset": "ASSET-214",
+    "category": "キャラアニメーション",
+    "scene": "複数歩行でも周囲を警戒する2人。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-214_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-214_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-214_video.mp4"
+  },
+  {
+    "asset": "ASSET-215",
+    "category": "キャラアニメーション",
+    "scene": "入山前に装備を確かめる2人。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-215_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-215_char.png",
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-215_video.mp4"
+  },
+  {
+    "asset": "ASSET-216",
+    "category": "テキストのみ",
+    "scene": "黒背景に「戻らなかった女性」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-217",
+    "category": "Lovart静止画 + 編集者",
+    "scene": "翌年の女性のカゴと男性のナタ。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-217_still.png",
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-218",
+    "category": "キャラアニメーション",
+    "scene": "登山口のクマスプレーと出没情報。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-218_still.png",
+    "character": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-218_char.png",
+    "video": null
+  },
+  {
+    "asset": "ASSET-219",
+    "category": "テキストのみ",
+    "scene": "黒背景に「ご冥福を祈る」の短い文字を表示。",
+    "primary": null,
+    "character": null,
+    "video": null
+  },
+  {
+    "asset": "ASSET-220",
+    "category": "Lovart動画",
+    "scene": "夕暮れのせたな町の海と森を広く写す。",
+    "primary": "/Users/tosimasa/Desktop/せたな町_素材_20260924/画像/ASSET-220_still.png",
+    "character": null,
+    "video": "/Users/tosimasa/Desktop/せたな町_素材_20260924/動画/ASSET-220_video.mp4"
+  }
+]

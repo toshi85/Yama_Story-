@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-182",
+  "narration": "せたな町以外で捕獲されていたクマのDNA鑑定を専門家に依頼したのです。",
+  "asset_type": "キャラアニメーション",
+  "scene": "研究室で、町の職員（CHAR-06＝依頼する側）が町外で捕獲されたクマの試料袋を差し出し、研究者（CHAR-07＝依頼される側）が受け取る。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Exactly two full-body Japanese people facing each other at a slight three-quarter angle toward the viewer, both faces clearly visible. Left to right: 1) (CHAR-06 再利用) a male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black shoes, holding out a small sealed clear sample bag with both hands, bowing slightly, eyebrows slanted upward and pulled together, eyes wide and pleading, mouth open as he asks, a bead of sweat on his temple, anxious and earnest; 2) (CHAR-07 再利用) a female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, reaching out with one hand to take the bag and pressing the other hand to her chest, eyebrows raised high, eyes wide and focused, mouth open in a firm reply, serious and willing. Every person is a distinct individual, no two dressed alike; the man is a little taller than the woman. Both NOT calm, NOT smiling. No lettering on the bag, no badge, no logo, no name tag. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A clean laboratory table by a window in Hokkaido, in April early spring: two capped sample tubes set apart for comparison, each on a blank white card, a small tube rack at the right edge; through the window, bare and budding trees and brown fields under a pale sky, No snow anywhere, no frost, no ice, no winter. No readable text, no labels with characters, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about two metres back, the middle of the frame left as clear open space. Quiet, focused mood, cool clean daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規（今の ASSET-182_bg.png は窓の外に雪があるので、新しい背景で上書きする。185・207も再利用する）。職員を左、研究者を右に置き、試料袋を渡す腕を小さく動かす（動画は作らない）。中央に「町外のクマもDNA鑑定」を白字で表示し、「DNA鑑定」だけ赤字。"
+  ]
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "ASSET-023_still",
+    "prompt": "Use case: photorealistic-natural. Asset type: 16:9 static documentary background for a separate transparent cartoon search-rescuer overlay. Empty mountain woodland trail near Setana, southwestern Hokkaido, Japan, in mid April 2013. A narrow muddy path curves through sparse deciduous trees and low bamboo grass beside a small stream. The path and forest remain clearly visible with open space on the left for the cartoon searcher. Natural overcast daylight, restrained Japanese documentary photography, realistic vegetation and terrain, shot on RED camera, wide 16:9 composition. Crucial: this is an EMPTY BACKGROUND PLATE. No people, no hands, no body parts, no human silhouettes, no rescuers, no uniforms, no vehicles, no bear, no text, no signs, no logo, no collage, no cartoon art. Generate one image only.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1920,
+      "height": 1080
+    }
+  }
+]

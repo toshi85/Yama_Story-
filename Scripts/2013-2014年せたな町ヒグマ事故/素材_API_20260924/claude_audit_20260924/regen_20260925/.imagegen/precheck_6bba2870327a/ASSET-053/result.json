@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-053",
+  "verdict": "FAIL",
+  "subject": "作業員・ササ・クマ",
+  "evidence": "「キャラは既存の ASSET-053_char.png（刈払機の作業員）を使い」「a wide freshly cut strip where tall bamboo grass has been mown down to short stubble」",
+  "missing": "クマが描かれていない。",
+  "reason": "ナレーションに登場するクマが、背景プロンプトにもキャラの指定にも含まれていない。"
+}

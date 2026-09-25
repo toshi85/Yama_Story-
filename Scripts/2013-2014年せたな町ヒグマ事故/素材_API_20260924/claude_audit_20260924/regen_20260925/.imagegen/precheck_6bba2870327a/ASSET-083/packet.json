@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-083",
+  "narration": "その後、女性はすぐさま病院へと緊急搬送。",
+  "asset_type": "Lovart静止画",
+  "scene": "山あいの道に止まった救急車の後ろで、救急隊員2人が女性を乗せたストレッチャーを車内へ運び入れる（雪の壁なし）。実在の被害者なので顔は見せず、えんじ色の袖と毛布だけが見える。",
+  "fences": [
+    {
+      "label": "シーン: 山あいの道に止まった救急車の後ろで、救急隊員2人が女性を乗せたストレッチャーを車内へ運び入れる（雪の壁なし）。実在の被害者なので顔は見せず、えんじ色の袖と毛布だけが見える。",
+      "language": "",
+      "text": "Two Japanese paramedics in navy-blue uniforms and white helmets lift a wheeled stretcher into the open rear doors of a white Japanese ambulance stopped on a narrow road through bare forested hills near Setana, southwestern Hokkaido, in early April early spring. On the stretcher lies a Japanese woman in her mid 40s covered to the shoulders by a grey blanket, one arm in a MAROON jacket sleeve resting on top of the blanket; her head is turned away toward the ambulance and no face visible. The two paramedics are seen from behind and from the side, faces turned away and not identifiable. Dry brown roadside grass, bare and budding trees, No snow anywhere, no snow walls, no snow patches, no frost, no ice, no winter. The ambulance markings and number plate are present in their normal place, but small, slightly out of focus and not readable, no real institution name, no crest, no emblem, no logo. Captured as a frozen moment. Framed from adult eye height about eight metres back, the upper third left as clean open space. Urgent, tense overcast afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No blood, no wounds, no gore. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 画面を5秒で1.0→1.12倍にゆっくり近づける。中央に「緊急搬送」を白字で表示し、「搬送」だけ赤字。サイレンの音を遠くから入れる。"
+  ]
+}

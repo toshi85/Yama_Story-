@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-114",
+  "narration": "「きょうこそ仕留めたい」と、ハンターたちは語り、",
+  "asset_type": "キャラアニメーション",
+  "scene": "林道の集合場所で装備を整え、意気込むハンター2人（CHAR-05・CHAR-09）。雪は描かない。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Two full-body Japanese hunters standing side by side facing the viewer, both faces clearly visible. Left to right: 1) (CHAR-05 再利用) a Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, pulling his cap down firmly, eyebrows driven down hard, eyes blazing, mouth open in a fierce shout, sweat on his temple; 2) (CHAR-09 再利用) a Japanese young hunter in his 30s with short black hair, a dark green cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, tightening a backpack strap, fist clenched, eyebrows pulled down, eyes wide and fierce, teeth gritted. Both are fired up and determined, NOT calm, NOT smiling. Every person is a distinct individual, no two dressed alike. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT. The young hunter is a little taller. No lettering, no badge, no logo. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "The edge of a gravel forest road used as a staging area near Setana, southwestern Hokkaido, in mid-April early spring: a few field packs and a coil of rope on a folding table, a parked grey van to the right, bare and budding trees, dry brown grass, No snow anywhere, no snow patches, no frost, no ice, no winter. Number plate present in its normal place but small, slightly out of focus and not readable; no legible text, no logo. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Determined, tense morning mood, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景・キャラとも新規。2人を中央に置き、拳を小さく突き上げる。中央に「今日こそ仕留める」を白字で表示し、「仕留める」だけ赤字。"
+  ]
+}

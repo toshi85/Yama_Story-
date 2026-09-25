@@ -1,0 +1,362 @@
+[
+  {
+    "id": "H3_001",
+    "shot_id": 1,
+    "prompt": "Animate the frozen frame for five seconds. The aerial camera advances toward the forested coast while thin dawn mist drifts inland. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-001_still.png"
+  },
+  {
+    "id": "H3_002",
+    "shot_id": 2,
+    "prompt": "Animate the frozen frame for five seconds. The woman bends to pick one wild plant, then freezes and looks toward the trees; the camera follows from behind. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-002_still.png"
+  },
+  {
+    "id": "H3_003",
+    "shot_id": 3,
+    "prompt": "Animate the source frame for five seconds as live-action documentary footage. The man hurries uphill and looks from side to side toward the trees while the camera follows from behind at walking speed. Keep his face out of frame and preserve the forest path, clothing and early-spring light. Do not add another person, a bear or an attack. No legible text, no logo, no blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-003_still.png"
+  },
+  {
+    "id": "H3_005",
+    "shot_id": 5,
+    "prompt": "Animate the frozen frame for five seconds. Two searchers step to the stream edge and stop; the camera approaches only as far as their shoulders. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-005_still.png"
+  },
+  {
+    "id": "H3_008",
+    "shot_id": 8,
+    "prompt": "Animate the frozen frame for five seconds. The second woman walks deeper along the spring trail; the camera follows at a measured distance from behind. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-008_still.png"
+  },
+  {
+    "id": "H3_009",
+    "shot_id": 9,
+    "prompt": "Animate the frozen frame for five seconds. A bear shadow crosses the two case cards as the camera moves from the first card to the second. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  an adult male Hokkaido brown bear, species-scale body about 1.9 to 2.3 m long; its exact incident weight is not claimed. On all fours, never upright. Low head, flattened ears, bristled shoulder fur, bared teeth; clearly threatening, not gentle. No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-009_still.png"
+  },
+  {
+    "id": "H3_011",
+    "shot_id": 11,
+    "prompt": "Animate the frozen frame for five seconds. The camera travels above an empty wooded valley, then stops on the deep forest where the bear remains unseen. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-011_still.png"
+  },
+  {
+    "id": "H3_015",
+    "shot_id": 15,
+    "prompt": "Animate the frozen frame for five seconds. The wagon car rounds a bend toward the woodland; the camera tracks behind it and stops at the tree line. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-015_still.png"
+  },
+  {
+    "id": "H3_023",
+    "shot_id": 23,
+    "prompt": "Animate the frozen frame for five seconds. Police officers and firefighters separate into a line and enter the forest; the camera follows from behind. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-023_still.png"
+  },
+  {
+    "id": "H3_025",
+    "shot_id": 25,
+    "prompt": "Animate the frozen frame for five seconds. Searchers part low branches and halt at the stream; the camera moves in behind them without revealing injury. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-025_still.png"
+  },
+  {
+    "id": "H3_026",
+    "shot_id": 26,
+    "prompt": "Animate the frozen frame for five seconds. A searcher kneels beside the covered body; the camera lowers toward the blanket and then holds still. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-026_still.png"
+  },
+  {
+    "id": "H3_027",
+    "shot_id": 27,
+    "prompt": "Animate the frozen frame for five seconds. A gloved hand brings a ruler beside the pawprint; the camera moves down until print and scale fill the frame. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-027_still.png"
+  },
+  {
+    "id": "H3_031",
+    "shot_id": 31,
+    "prompt": "Animate the frozen frame for five seconds. A hand closes an undated visit diary and sets a face-down family photograph beside it; the camera moves from diary to photograph. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-031_still.png"
+  },
+  {
+    "id": "H3_033",
+    "shot_id": 33,
+    "prompt": "Animate the frozen frame for five seconds. Hunters spread from the road onto separate slopes; the camera rises enough to show their diverging paths. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-033_still.png"
+  },
+  {
+    "id": "H3_036",
+    "shot_id": 36,
+    "prompt": "Animate the frozen frame for five seconds. An official slides emergency notices into separate envelopes; the camera moves across the row of envelopes. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-036_still.png"
+  },
+  {
+    "id": "H3_038",
+    "shot_id": 38,
+    "prompt": "Animate the frozen frame for five seconds. Researchers step out of a vehicle at the forest road; the camera follows their backs toward the trail. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-038_still.png"
+  },
+  {
+    "id": "H3_039",
+    "shot_id": 39,
+    "prompt": "Animate the frozen frame for five seconds. Three officials sit around the table and exchange a document; the camera moves from hands to the open file. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-039_still.png"
+  },
+  {
+    "id": "H3_045",
+    "shot_id": 45,
+    "prompt": "Animate the frozen frame for five seconds. A worker fixes one warning board beside the road; the camera holds on the board while the editor adds separate counts for three boards and two traps. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-045_still.png"
+  },
+  {
+    "id": "H3_047",
+    "shot_id": 47,
+    "prompt": "Animate the frozen frame for five seconds. Officials pass a field map across the table; the camera moves from one hand to another without showing faces. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-047_still.png"
+  },
+  {
+    "id": "H3_051",
+    "shot_id": 51,
+    "prompt": "Animate the frozen frame for five seconds. A district leader presses a warning notice to the board; the camera moves closer to the fastening hand. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-051_still.png"
+  },
+  {
+    "id": "H3_053",
+    "shot_id": 53,
+    "prompt": "Animate the frozen frame for five seconds. A cutter removes tall sasa and exposes the houses behind it; the camera moves sideways along the newly opened sightline. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-053_still.png"
+  },
+  {
+    "id": "H3_054",
+    "shot_id": 54,
+    "prompt": "Animate the frozen frame for five seconds. The school bus rolls to a house gate, stops, and opens its door; the camera remains outside at roadside. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-054_still.png"
+  },
+  {
+    "id": "H3_056",
+    "shot_id": 56,
+    "prompt": "Animate the frozen frame for five seconds. The camera crosses three separate close views: a pawprint, droppings, then damaged crops. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-056_still.png"
+  },
+  {
+    "id": "H3_058",
+    "shot_id": 58,
+    "prompt": "Animate the frozen frame for five seconds. Older hunters check boots and packs one by one; the camera walks behind the group toward the trailhead. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-058_still.png"
+  },
+  {
+    "id": "H3_059",
+    "shot_id": 59,
+    "prompt": "Animate the frozen frame for five seconds. A hand places a hunter-license form beside a secured rifle case; the camera moves down to the two objects. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-059_still.png"
+  },
+  {
+    "id": "H3_061",
+    "shot_id": 61,
+    "prompt": "Animate the frozen frame for five seconds. Evening shadow climbs the tree trunks; the camera retreats slowly from the now empty forest path. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-061_still.png"
+  },
+  {
+    "id": "H3_066",
+    "shot_id": 66,
+    "prompt": "Animate the frozen frame for five seconds. The woman in maroon and the older man in gray walk side by side from the car toward the trail; the camera follows both from behind. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-066_still.png"
+  },
+  {
+    "id": "H3_068",
+    "shot_id": 68,
+    "prompt": "Animate the frozen frame for five seconds. A hand lowers gathered wild garlic onto the produce scale; the camera tilts from leaves to the scale platform. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-068_still.png"
+  },
+  {
+    "id": "H3_069",
+    "shot_id": 69,
+    "prompt": "Animate the frozen frame for five seconds. Foragers walk past parked cars into the woods; the camera follows the last basket from behind. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-069_still.png"
+  },
+  {
+    "id": "H3_071",
+    "shot_id": 71,
+    "prompt": "Animate the frozen frame for five seconds. The woman and man pass the warning board and enter the forest; the camera remains by the board as they recede. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-071_still.png"
+  },
+  {
+    "id": "H3_074",
+    "shot_id": 74,
+    "prompt": "Animate the frozen frame for five seconds. The older man leads downhill and the woman follows a few steps behind; the camera moves alongside them to preserve their order. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-074_still.png"
+  },
+  {
+    "id": "H3_078",
+    "shot_id": 78,
+    "prompt": "Animate the frozen frame for five seconds. The older man tightens his grip on the hatchet and turns toward a sound; the camera moves from hand to shoulders. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-078_still.png"
+  },
+  {
+    "id": "H3_082",
+    "shot_id": 82,
+    "prompt": "Animate the frozen frame for five seconds. The brown bear turns away and runs into the brush on all fours; the camera remains fixed on the empty trail after it disappears. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  an adult male Hokkaido brown bear, species-scale body about 1.9 to 2.3 m long; its exact incident weight is not claimed. On all fours, never upright. Low head, flattened ears, bristled shoulder fur, bared teeth; clearly threatening, not gentle. No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-082_still.png"
+  },
+  {
+    "id": "H3_084",
+    "shot_id": 84,
+    "prompt": "Animate the frozen frame for five seconds. The woman sits under a blanket while a nurse adjusts it; the camera stays behind her shoulder and stops there. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-084_still.png"
+  },
+  {
+    "id": "H3_087",
+    "shot_id": 87,
+    "prompt": "Animate the frozen frame for five seconds. A road barrier is pulled across the lane beside the former school; the camera follows the barrier to its locked end. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-087_still.png"
+  },
+  {
+    "id": "H3_090",
+    "shot_id": 90,
+    "prompt": "Animate the frozen frame for five seconds. A worker plants a warning board beside the road; the camera moves from the stake upward to its unreadable face. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-090_still.png"
+  },
+  {
+    "id": "H3_091",
+    "shot_id": 91,
+    "prompt": "Animate the frozen frame for five seconds. A resident opens a back door, sees the wooded slope and closes it; the camera stays inside behind the resident. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-091_still.png"
+  },
+  {
+    "id": "H3_096",
+    "shot_id": 96,
+    "prompt": "Animate the frozen frame for five seconds. Two hands place the two women’s separate foraging baskets on a table one after the other; the camera holds both in view. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-096_still.png"
+  },
+  {
+    "id": "H3_101",
+    "shot_id": 101,
+    "prompt": "Animate the frozen frame for five seconds. Two hikers walk with bells swinging from their packs; the camera follows the bells from waist height. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-101_still.png"
+  },
+  {
+    "id": "H3_102",
+    "shot_id": 102,
+    "prompt": "Animate the frozen frame for five seconds. The pair walks together with bells visible on both packs; the camera follows from behind at walking pace. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-102_still.png"
+  },
+  {
+    "id": "H3_110",
+    "shot_id": 110,
+    "prompt": "Animate the frozen frame for five seconds. An official signs the helicopter request, then a generic helicopter lifts off; the camera remains behind the document. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-110_still.png"
+  },
+  {
+    "id": "H3_111",
+    "shot_id": 111,
+    "prompt": "Animate the frozen frame for five seconds. Ground searchers advance across the ridge while the helicopter crosses overhead; the camera rises above the line of searchers. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-111_still.png"
+  },
+  {
+    "id": "H3_113",
+    "shot_id": 113,
+    "prompt": "Animate the frozen frame for five seconds. Hunters and firefighters arrive in small groups at the roadhead; the camera moves from their boots to the assembled line. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-113_still.png"
+  },
+  {
+    "id": "H3_115",
+    "shot_id": 115,
+    "prompt": "Animate the frozen frame for five seconds. The assembled search team splits into three groups taking separate forest paths; the camera rises to show the split. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-115_still.png"
+  },
+  {
+    "id": "H3_118",
+    "shot_id": 118,
+    "prompt": "Animate the frozen frame for five seconds. Ground searchers advance along the ridge while a generic helicopter passes overhead; the camera tilts from backs to sky. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-118_still.png"
+  },
+  {
+    "id": "H3_120",
+    "shot_id": 120,
+    "prompt": "Animate the frozen frame for five seconds. A hunter steps beside a bear print in melting snow; the camera lowers from boot to footprint. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-120_still.png"
+  },
+  {
+    "id": "H3_125",
+    "shot_id": 125,
+    "prompt": "Animate the frozen frame for five seconds. A generic helicopter flies away beyond the ridge while ground searchers return; the camera remains on the empty forest below. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  an adult male Hokkaido brown bear, species-scale body about 1.9 to 2.3 m long; its exact incident weight is not claimed. On all fours, never upright. No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-125_still.png"
+  },
+  {
+    "id": "H3_140",
+    "shot_id": 140,
+    "prompt": "Animate the frozen frame for five seconds. A hand reaches for the sealed result envelope, pauses, then opens it; the camera moves closer without revealing fabricated contents. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-140_still.png"
+  },
+  {
+    "id": "H3_158",
+    "shot_id": 158,
+    "prompt": "Animate the frozen frame for five seconds. Five or six hunters walk single file and stop to inspect a print; the camera follows the line from behind. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-158_still.png"
+  },
+  {
+    "id": "H3_160",
+    "shot_id": 160,
+    "prompt": "Animate the frozen frame for five seconds. A hunter places an empty steel box trap beside the forest road and steps away; the camera holds on the secured trap. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-160_still.png"
+  },
+  {
+    "id": "H3_166",
+    "shot_id": 166,
+    "prompt": "Animate the frozen frame for five seconds. One forager car pulls onto the mountain-road shoulder, stops, and its occupants lift baskets from the rear; the camera remains at roadside. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-166_still.png"
+  },
+  {
+    "id": "H3_169",
+    "shot_id": 169,
+    "prompt": "Animate the frozen frame for five seconds. A person places a portable radio and whistle into a field bag before walking toward the farm; the camera follows the hands. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-169_still.png"
+  },
+  {
+    "id": "H3_174",
+    "shot_id": 174,
+    "prompt": "Animate the frozen frame for five seconds. On one spring search day, a small party enters the woods; the camera follows that group only. The varying daily count is added by the editor. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-174_still.png"
+  },
+  {
+    "id": "H3_178",
+    "shot_id": 178,
+    "prompt": "Animate the frozen frame for five seconds. A stack of blank warning leaflets is divided between a shop counter and an inn counter; the camera follows the hands passing them. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-178_still.png"
+  },
+  {
+    "id": "H3_191",
+    "shot_id": 191,
+    "prompt": "Animate the frozen frame for five seconds. A brown bear moves inside a secured box trap in the summer beet field while the camera stays outside the bars; no capture or killing is shown. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  approximately 2 m long and 230 kg. On all fours, never upright. No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-191_still.png"
+  },
+  {
+    "id": "H3_203",
+    "shot_id": 203,
+    "prompt": "Animate the frozen frame for five seconds. A hand turns from the 2013 case folder to the 2014 folder; the camera moves between the two dated covers. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-203_still.png"
+  },
+  {
+    "id": "H3_213",
+    "shot_id": 213,
+    "prompt": "Animate the frozen frame for five seconds. Two hikers set off together on the spring trail; the camera follows both from behind. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-213_still.png"
+  },
+  {
+    "id": "H3_214",
+    "shot_id": 214,
+    "prompt": "Animate the frozen frame for five seconds. The two hikers stop at a blind bend, check the brush, and continue together; the camera holds to the side. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-214_still.png"
+  },
+  {
+    "id": "H3_215",
+    "shot_id": 215,
+    "prompt": "Animate the frozen frame for five seconds. Before entering the trail, one hiker checks a bell while the other checks a pack; the camera moves between their hands. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-215_still.png"
+  },
+  {
+    "id": "H3_220",
+    "shot_id": 220,
+    "prompt": "Animate the frozen frame for five seconds. The camera moves slowly above the sea toward Setana forest at sunset; the last frame holds still for the closing thanks. Maintain the subjects and objects from the source still. Where a person appears, show only the back, shoulder, or hands; no identifiable face. Do not add attack contact.  No legible text, no logo. No blood, no wounds, no gore. Photorealistic. No music. No dialogue. One continuous five-second shot.",
+    "image": "画像/ASSET-220_still.png"
+  }
+]

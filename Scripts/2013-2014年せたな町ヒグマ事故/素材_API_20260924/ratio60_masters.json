@@ -1,0 +1,32 @@
+[
+  {
+    "id": "CHAR-02-front-v2",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese husband in his 50s, short black hair with some gray, dark blue field jacket, gray trousers. Fictional Japanese cartoon person, three-quarter front view, visible serious and concerned expressive face with clearly drawn eyes, nose and mouth. Mouth closed, eyebrows slightly tense, alert eyes, absolutely no smile, no cheerful expression. Neutral standing pose, hands visible, head and feet fully in frame. Exactly one character and one pose, no character sheet, no turnaround panels. Transparent alpha background, no scenery, no text, no logo, no gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent"
+  },
+  {
+    "id": "CHAR-03-front-v2",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese woman in her mid 40s, dark hair tied low, maroon field jacket, charcoal trousers. Fictional Japanese cartoon person, three-quarter front view, visible serious and concerned expressive face with clearly drawn eyes, nose and mouth. Mouth closed, eyebrows slightly tense, alert eyes, absolutely no smile, no cheerful expression. Neutral standing pose, hands visible, head and feet fully in frame. Exactly one character and one pose, no character sheet, no turnaround panels. Transparent alpha background, no scenery, no text, no logo, no gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent"
+  },
+  {
+    "id": "CHAR-04-front-v2",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese man in his early 60s, short graying hair, gray field jacket, dark trousers. Fictional Japanese cartoon person, three-quarter front view, visible serious and concerned expressive face with clearly drawn eyes, nose and mouth. Mouth closed, eyebrows slightly tense, alert eyes, absolutely no smile, no cheerful expression. Neutral standing pose, hands visible, head and feet fully in frame. Exactly one character and one pose, no character sheet, no turnaround panels. Transparent alpha background, no scenery, no text, no logo, no gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-017",
+  "verdict": "FAIL",
+  "subject": "奥さん",
+  "evidence": "該当なし",
+  "missing": "奥さん",
+  "reason": "ナレーションの主語である奥さんがプロンプトに描かれていません。"
+}

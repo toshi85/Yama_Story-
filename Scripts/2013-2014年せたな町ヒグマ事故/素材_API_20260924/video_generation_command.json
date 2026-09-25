@@ -1,0 +1,11 @@
+{
+  "command": [
+    "caffeinate",
+    "-i",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/.venv/bin/python",
+    "-u",
+    "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/run_video_batches.py"
+  ],
+  "pid": 17826,
+  "log": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/video_generation.log"
+}

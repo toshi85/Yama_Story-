@@ -1,0 +1,75 @@
+{
+  "method": "fal公開のMedium標準サイズ単価 × 保存済みrequest件数。GPT Image 2は実際のトークン量で変動するため請求確定額ではない。",
+  "exchange_rate_jpy_per_usd": 150,
+  "sources": [
+    "https://fal.ai/models/openai/gpt-image-2",
+    "https://fal.ai/models/openai/gpt-image-2/edit",
+    "https://fal.ai/models/minimax/h3-max-turbo/image-to-video"
+  ],
+  "batches": {
+    "initial_images": {
+      "requests": 216,
+      "breakdown": [
+        {
+          "endpoint": "edit",
+          "shape": "landscape",
+          "requests": 1,
+          "unit_usd": 0.053,
+          "estimated_usd": 0.053
+        },
+        {
+          "endpoint": "edit",
+          "shape": "square",
+          "requests": 8,
+          "unit_usd": 0.061,
+          "estimated_usd": 0.488
+        },
+        {
+          "endpoint": "gpt-image-2",
+          "shape": "landscape",
+          "requests": 173,
+          "unit_usd": 0.04,
+          "estimated_usd": 6.92
+        },
+        {
+          "endpoint": "gpt-image-2",
+          "shape": "square",
+          "requests": 34,
+          "unit_usd": 0.053,
+          "estimated_usd": 1.802
+        }
+      ],
+      "estimated_usd": 9.263
+    },
+    "ratio_correction_images": {
+      "requests": 139,
+      "breakdown": [
+        {
+          "endpoint": "edit",
+          "shape": "square",
+          "requests": 12,
+          "unit_usd": 0.061,
+          "estimated_usd": 0.732
+        },
+        {
+          "endpoint": "gpt-image-2",
+          "shape": "square",
+          "requests": 127,
+          "unit_usd": 0.053,
+          "estimated_usd": 6.731
+        }
+      ],
+      "estimated_usd": 7.463
+    },
+    "initial_videos": {
+      "requests": 60,
+      "model": "H3 Max Turbo 768p 5s",
+      "unit_usd": 0.1,
+      "estimated_usd": 6.0
+    }
+  },
+  "initial_estimated_usd": 15.263,
+  "correction_estimated_usd": 7.463,
+  "total_estimated_usd": 22.726,
+  "total_estimated_jpy": 3409
+}

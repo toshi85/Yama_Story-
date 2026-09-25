@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-168",
+  "verdict": "FAIL",
+  "subject": "岡部秀隆さん・クマ",
+  "evidence": "A full-body Japanese former fisherman aged 86",
+  "missing": "クマが描かれていない",
+  "reason": "元漁師は描かれているが、ナレーションに登場するクマはプロンプトに登場しない。"
+}

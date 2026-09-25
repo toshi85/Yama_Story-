@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-054",
+  "narration": "また、小中学生を乗せたスクールバスは、家の玄関まで送り迎えするようにしました。",
+  "asset_type": "キャラアニメーション",
+  "scene": "家の玄関先に止まったスクールバス。キャラは既存の ASSET-054_char.png（ランドセルの小学生）を使い、雪の写った背景だけ作り直す。",
+  "fences": [
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A small white Japanese school bus stopped right at the front entrance of a rural wooden house near Setana, southwestern Hokkaido, in mid-April early spring: the bus door open toward the house, a short gravel path to the front door, bare and budding trees, a tilled brown vegetable plot, forested hills behind, No snow anywhere, no frost, no ice, no winter. The number plate and any markings are present in their normal place, but small, slightly out of focus and not readable, no logo. The bus sits in the right half of the frame, the left half left as clear open space. Framed from adult eye height about eight metres back. Safe, quiet morning light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は新規、キャラは既存の ASSET-054_char.png。子どもを左に置き、バスの扉のほうへ小さく歩かせる（動画は作らない）。中央に「玄関まで送迎」を白字で表示し、「玄関」だけ赤字。"
+  ]
+}

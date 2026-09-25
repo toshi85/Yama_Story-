@@ -1,0 +1,87 @@
+{
+  "status": "finished",
+  "started": 1790269392.4671528,
+  "at": 1790269526.457449,
+  "parallel": 1,
+  "elapsed": 133.990296125412,
+  "failures": 1,
+  "retries": 1,
+  "attempts": {
+    "ASSET-076_bg": 2
+  },
+  "inflight": {},
+  "targets": [
+    {
+      "description": "",
+      "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@792bf6722e73a45aa9e47c163b9901bdc17f3230/inspector.html?ws=127.0.0.1:9222/devtools/page/F4C6B96D55EFCE97B9F8AB801B88C4E0",
+      "faviconUrl": "https://chatgpt.com/cdn/assets/favicon.6a33781f61.svg",
+      "id": "F4C6B96D55EFCE97B9F8AB801B88C4E0",
+      "title": "Generate Bear Image",
+      "type": "page",
+      "url": "https://chatgpt.com/c/6ab55774-a674-83ee-9567-f848749fed10",
+      "webSocketDebuggerUrl": "ws://127.0.0.1:9222/devtools/page/F4C6B96D55EFCE97B9F8AB801B88C4E0"
+    }
+  ],
+  "evidence": null,
+  "snapshots": {
+    "F4C6B96D55EFCE97B9F8AB801B88C4E0": {
+      "installed": true,
+      "running": true,
+      "stopped": false,
+      "busy": false,
+      "current": "ASSET-076_bg",
+      "sendRequest": null,
+      "sentToken": "ASSET-076_bg:1790269464097:0.6434907034782017",
+      "sentAt": 1790269466.119,
+      "done": [
+        "ASSET-076_bg"
+      ],
+      "failed": [],
+      "liveLimit": null,
+      "until": 0,
+      "shared": null,
+      "text": "",
+      "log": [
+        "2:01:34 ASSET-075_bg 失敗: 送信ボタンが出ない",
+        "2:01:38 ループ終了 完了0 失敗1",
+        "2:02:21 ASSET-075_bg 保存 3093KB (1/1)",
+        "2:02:25 ループ終了 完了1 失敗0",
+        "2:04:17 ASSET-076_bg 失敗: 再試行表示（run.pyへ再投入を委譲）",
+        "2:04:21 ループ終了 完了0 失敗1",
+        "2:05:24 ASSET-076_bg 保存 3219KB (1/1)"
+      ]
+    }
+  },
+  "pacing": {
+    "interval": 60,
+    "last_sent_at": 1790269468.050161,
+    "pending": null,
+    "sends": [
+      {
+        "worker": "F4C6B96D55EFCE97B9F8AB801B88C4E0",
+        "id": "ASSET-075_bg",
+        "token": "ASSET-075_bg:1790269302422:0.5515238060113902",
+        "sent_at": 1790269304.446,
+        "observed_at": 1790269306.359235
+      },
+      {
+        "worker": "F4C6B96D55EFCE97B9F8AB801B88C4E0",
+        "id": "ASSET-076_bg",
+        "token": "ASSET-076_bg:1790269394885:0.9050162376743595",
+        "sent_at": 1790269396.908,
+        "observed_at": 1790269398.828586
+      },
+      {
+        "worker": "F4C6B96D55EFCE97B9F8AB801B88C4E0",
+        "id": "ASSET-076_bg",
+        "token": "ASSET-076_bg:1790269464097:0.6434907034782017",
+        "sent_at": 1790269466.119,
+        "observed_at": 1790269468.050161
+      }
+    ]
+  },
+  "pending": [],
+  "remaining_ids": [],
+  "access_consecutive": 0,
+  "access_retry_at": 0
+}

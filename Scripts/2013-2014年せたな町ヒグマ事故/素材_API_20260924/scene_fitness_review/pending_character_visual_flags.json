@@ -1,0 +1,30 @@
+{
+  "scope": "一覧画像による追加の疑義。FAIL確定ではなく原寸照合待ち。",
+  "flags": [
+    {
+      "asset_no": 43,
+      "observation": "「夜明け前」に対し背景が明るい。原寸と編集時の色調整可否を要確認。",
+      "contact_sheet": "pending_character_contact_01.jpg"
+    },
+    {
+      "asset_no": 77,
+      "observation": "「横から襲う」に対しクマが人物の背後に見える。原寸で位置関係を要確認。",
+      "contact_sheet": "pending_character_contact_01.jpg"
+    },
+    {
+      "asset_no": 96,
+      "observation": "「2人の女性」に対し合成画面では女性1人のみ。2人の表現方法を要確認。",
+      "contact_sheet": "pending_character_contact_02.jpg"
+    },
+    {
+      "asset_no": 164,
+      "observation": "「山菜採りの人々」に対し画面上は1人。複数人を要するか台本指定と照合。",
+      "contact_sheet": "pending_character_contact_03.jpg"
+    },
+    {
+      "asset_no": 185,
+      "observation": "「DNA比較を始める」に対し画面は試料を手に持つだけに見える。比較要素を原寸確認。",
+      "contact_sheet": "pending_character_contact_04.jpg"
+    }
+  ]
+}

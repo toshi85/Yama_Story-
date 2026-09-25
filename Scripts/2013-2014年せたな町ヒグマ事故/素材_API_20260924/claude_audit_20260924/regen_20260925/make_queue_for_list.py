@@ -97,6 +97,16 @@ def main():
         ids = set(args[args.index("--ids") + 1].split(","))
         queue = [q for q in queue if q["id"] in ids]
         unknown = ids - {q["id"] for q in queue}
+        if unknown and fix:
+            # 生成リストに無いが、関所の見本に種類が要るもの（例: Fix2 の背景）。納品はしない（deliver_as=None）
+            extra = {it["id"]: it for it in ep.parse(HERE / f"Asset_Prompts_{fix}.md")}
+            for u in sorted(unknown):
+                if u in extra:
+                    it = extra[u]
+                    queue.append({"id": it["id"], "kind": it["kind"], "slot": it["slot"], "aspect": it["aspect"],
+                                  "prompt": it["prompt"], "deliver_as": None, "md": f"Asset_Prompts_{fix}.md",
+                                  "note": "関所の見本用（生成リスト外・納品しない）"})
+            unknown = ids - {q["id"] for q in queue}
         if unknown:
             sys.exit(f"--ids に無いID: {sorted(unknown)}")
     for q in queue:  # キャラが再利用する固定人物（run.py が基準画像を添付する）

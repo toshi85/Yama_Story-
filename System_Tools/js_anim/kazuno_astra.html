@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><title>鹿角・大平｜60秒模式アニメーション</title>
+<style>html,body{margin:0;background:#091820;overflow:hidden}canvas{display:block;width:100vw;height:100vh;object-fit:contain}</style></head>
+<body><canvas id="stage" width="1920" height="1080"></canvas><script>
+(() => {
+  const W=1920,H=1080,FPS=30,TOTAL=1800,DURATION=60;
+  window.META={W,H,FPS,TOTAL,DURATION};
+  const c=document.getElementById('stage'),g=c.getContext('2d');
+  const C={night:'#091820',ink:'#102932',teal:'#51d0bb',ivory:'#f1ecd9',muted:'#9fb2ae',orange:'#f3b568',red:'#dd756b',blue:'#83bad3',line:'#426168',forest:'#133b39'};
+  const SCENES=[
+    {a:0,b:4,date:'5/15',tag:'入山',kind:'walk',sub:'5月15日、64歳の佐藤宏さんはタケノコ採りで山に入り、行方が分からなくなりました。'},
+    {a:4,b:9,date:'5/15',tag:'知人の証言',kind:'bag',sub:'午前9時ごろ、知人はリュックと電子音の出る拡声器を発見。藪から返事を聞いたと語ります。'},
+    {a:9,b:13,date:'5/16',tag:'地上と空から',kind:'search',sub:'16日、警察と消防が地上で交代捜索し、ヘリも使われました。'},
+    {a:13,b:17,date:'5/17',tag:'雨と風',kind:'rain',sub:'17日は雨と風が強く、捜索隊は待機しました。'},
+    {a:17,b:22,date:'5/18',tag:'発見の通報',kind:'mapFind',sub:'18日午前9時半ごろ、佐藤さん発見の通報がありました。'},
+    {a:22,b:28,date:'5/18',tag:'搬送作業の中断',kind:'encounter',sub:'搬送中、25歳と45歳の警察官2人が相次いでクマに襲われ、作業は中断しました。'},
+    {a:28,b:33,date:'5/18 夜',tag:'緊急対策会議',kind:'mapBan',sub:'18日夜、県の緊急対策会議で入山禁止と捕獲用のおりの設置が報告されました。'},
+    {a:33,b:37,date:'5/19',tag:'確認',kind:'heli',sub:'19日、ヘリと猟友会が現場を確認しましたが、クマは見つかりませんでした。'},
+    {a:37,b:41,date:'5/21',tag:'林道の拡幅',kind:'road',sub:'21日、重機で林道を広げました。'},
+    {a:41,b:47,date:'5/22',tag:'搬出',kind:'mapCarry',sub:'22日午前11時ごろ警察と猟友会が出発し、午後1時前に佐藤さんを運び出しました。'},
+    {a:47,b:52,date:'5/23',tag:'司法解剖',kind:'report',sub:'23日の司法解剖でも死因は特定されず、失血死の可能性が報じられました。'},
+    {a:52,b:56,date:'5/31',tag:'おりで捕獲',kind:'trap',sub:'31日、現場周辺のおりで雌のクマ1頭が捕獲されました。'},
+    {a:56,b:60,date:'6/3',tag:'DNA鑑定',kind:'dna',sub:'6月3日、毛の状態が悪く、DNA鑑定ではクマかどうか特定できませんでした。'}
+  ];
+  const DATES=['5/15','5/16','5/17','5/18','5/19','5/21','5/22','5/23','5/31','6/3'];
+  const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v));
+  const smooth=v=>{v=clamp(v);return v*v*(3-2*v)};
+  const hash=n=>{let x=Math.sin(n*127.1+19.7)*43758.5453;return x-Math.floor(x)};
+  const line=(x1,y1,x2,y2,color=C.ivory,width=4)=>{g.strokeStyle=color;g.lineWidth=width;g.lineCap='round';g.beginPath();g.moveTo(x1,y1);g.lineTo(x2,y2);g.stroke()};
+  const round=(x,y,w,h,r,fill,stroke)=>{g.beginPath();g.roundRect(x,y,w,h,r);if(fill){g.fillStyle=fill;g.fill()}if(stroke){g.strokeStyle=stroke;g.lineWidth=2;g.stroke()}};
+  function txt(s,x,y,size=40,color=C.ivory,weight=600,align='left'){
+    g.fillStyle=color;g.font=`${weight} ${size}px "Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif`;g.textAlign=align;g.textBaseline='middle';g.fillText(s,x,y);
+  }
+  function tree(x,y,scale=1,seed=0){
+    g.save();g.translate(x,y);g.scale(scale,scale);
+    line(0,0,0,-130,C.line,13);
+    for(let i=0;i<7;i++){const px=(hash(seed+i)-.5)*116,py=-118+(hash(seed+i+30)-.5)*85;
+      g.fillStyle=i%2?C.forest:'#174540';g.beginPath();g.arc(px,py,43+hash(seed+i+60)*21,0,Math.PI*2);g.fill()}
+    g.restore();
+  }
+  function mountains(t){
+    g.fillStyle='#0d2a30';g.beginPath();g.moveTo(0,705);
+    for(let x=0;x<=W;x+=20)g.lineTo(x,570+80*Math.sin(x/340+.6)+40*Math.sin(x/170+1.3));
+    g.lineTo(W,865);g.lineTo(0,865);g.fill();
+    g.fillStyle='#17423e';g.beginPath();g.moveTo(0,790);
+    for(let x=0;x<=W;x+=20)g.lineTo(x,690+55*Math.sin(x/220+2.5));
+    g.lineTo(W,865);g.lineTo(0,865);g.fill();
+    g.fillStyle='#1b3434';g.fillRect(0,790,W,138);
+    for(let i=0;i<13;i++)tree(35+i*159,815+(i%3)*10,.65+(i%4)*.08,i*13);
+  }
+  function person(x,y,scale,phase,coat=C.orange,move=1,arms=1){
+    const step=Math.sin(phase*10)*move,back=Math.sin(phase*10+Math.PI)*move;
+    g.save();g.translate(x,y);g.scale(scale,scale);
+    g.fillStyle='#07181b';g.beginPath();g.ellipse(0,7,38,9,0,0,Math.PI*2);g.fill();
+    line(0,-62,-15+step*17,0,C.ivory,9);line(0,-62,15+back*17,0,C.ivory,9);
+    line(0,-135,0,-62,coat,26);
+    line(0,-119,-29+back*13,-84+arms*step*9,coat,11);
+    line(0,-119,29+step*13,-84+arms*back*9,coat,11);
+    g.fillStyle=C.ivory;g.beginPath();g.arc(0,-162,20,0,Math.PI*2);g.fill();
+    g.restore();
+  }
+  function bear(x,y,scale,phase){
+    g.save();g.translate(x,y+Math.sin(phase*7)*3);g.scale(scale,scale);
+    g.fillStyle='#2d4645';g.beginPath();g.ellipse(0,-47,80,47,0,0,Math.PI*2);g.fill();
+    for(const dx of [-50,-25,34,62]){line(dx,-37,dx+Math.sin(phase*8+dx)*7,3,'#2d4645',19)}
+    g.beginPath();g.arc(76,-79,35,0,Math.PI*2);g.fill();
+    for(const dx of [57,92]){g.beginPath();g.arc(dx,-106,13,0,Math.PI*2);g.fill()}
+    g.fillStyle=C.ivory;g.beginPath();g.arc(90,-83,3,0,Math.PI*2);g.fill();
+    g.restore();
+  }
+  function helicopter(x,y,scale=1){
+    g.save();g.translate(x,y);g.scale(scale,scale);g.fillStyle=C.blue;
+    g.beginPath();g.ellipse(0,0,72,25,0,0,Math.PI*2);g.fill();
+    line(60,0,145,15,C.blue,10);line(-45,30,45,30,C.blue,5);
+    line(-82,-31,77,-31,C.ivory,5);line(0,-31,0,-10,C.ivory,4);
+    g.restore();
+  }
+  function pin(x,y,color,label,delay,p){
+    const a=smooth((p-delay)*3);if(a<=0)return;
+    g.save();g.globalAlpha=a;g.fillStyle=color;g.beginPath();g.arc(x,y,11+14*(1-a),0,Math.PI*2);g.fill();
+    g.strokeStyle=color;g.lineWidth=2;g.beginPath();g.arc(x,y,22,0,Math.PI*2);g.stroke();
+    txt(label,x+29,y-16,26,C.ivory,600);g.restore();
+  }
+  function map(p,mode){
+    round(110,212,1700,647,24,'#102b32','#355b5d');
+    g.save();g.beginPath();g.roundRect(112,214,1696,643,22);g.clip();
+    for(let i=0;i<12;i++){
+      g.strokeStyle=i%2?'#2b4b4b':'#345953';g.lineWidth=2;g.beginPath();
+      for(let x=50;x<1890;x+=18){const y=278+i*53+16*Math.sin(x/160+i*.7)+10*Math.cos(x/78+i);if(x===50)g.moveTo(x,y);else g.lineTo(x,y)}g.stroke();
+    }
+    // Relative positions are illustrative only; no scale or cardinal direction is implied.
+    g.strokeStyle=C.orange;g.lineWidth=22;g.lineCap='round';g.beginPath();g.moveTo(255,777);g.bezierCurveTo(620,800,670,626,945,640);g.bezierCurveTo(1110,624,1200,430,1580,390);g.stroke();
+    g.setLineDash([18,15]);g.strokeStyle=C.ivory;g.lineWidth=2;g.stroke();g.setLineDash([]);
+    if(mode==='ban'){
+      g.fillStyle='rgba(221,117,107,.12)';g.beginPath();g.ellipse(1300,495,330,210,-.3,0,Math.PI*2);g.fill();
+      g.strokeStyle=C.red;g.lineWidth=4;g.setLineDash([15,10]);g.stroke();g.setLineDash([]);
+      txt('入山禁止の範囲',1330,680,32,C.red,700);
+    }
+    pin(255,775,C.blue,'駐車場',0,p);
+    pin(660,698,C.orange,'林道',.1,p);
+    pin(925,628,C.teal,'リュックの発見地点',.2,p);
+    pin(1175,459,C.ivory,'佐藤さんが見つかった斜面',.34,p);
+    if(mode!=='find'){
+      pin(1435,534,C.red,'警察官が襲われた地点',.1,p);
+      pin(1595,330,C.orange,'おり',.2,p);
+    }
+    if(mode==='carry'){
+      g.strokeStyle=C.teal;g.lineWidth=9;g.setLineDash([12,10]);g.beginPath();g.moveTo(1175,459);g.quadraticCurveTo(960,720,255,775);g.stroke();g.setLineDash([]);
+    }
+    g.restore();
+    txt('秋田県鹿角市大平',138,258,27,C.muted,700);
+    round(1454,228,324,54,10,'#243f43');txt('位置関係は模式図',1616,256,25,C.ivory,700,'center');
+  }
+  function scene(s,t,p){
+    const k=s.kind;
+    if(k.startsWith('map')){map(p,k==='mapBan'?'ban':k==='mapCarry'?'carry':'find');return}
+    if(k==='report'||k==='dna'){
+      round(350,286,1220,510,28,'#17353a','#4b6d6c');
+      txt(k==='report'?'司法解剖':'DNA鑑定',960,390,62,C.ivory,800,'center');
+      line(525,475,1395,475,C.line,3);
+      txt(k==='report'?'死因の特定に至らず':'毛の状態が悪く、特定できず',960,575,50,k==='report'?C.orange:C.teal,700,'center');
+      txt(k==='report'?'「失血死の可能性」と報道':'捕獲個体との同一性は不明',960,663,32,C.muted,600,'center');
+      return;
+    }
+    mountains(t);
+    if(k==='walk'){person(260+900*smooth(p),771,1.45,t,C.orange,1);txt('2024年 5月15日',960,330,62,C.ivory,800,'center');txt('秋田県鹿角市大平',960,415,42,C.teal,700,'center')}
+    if(k==='bag'){
+      person(255+380*smooth(p),774,1.3,t,C.blue,1);
+      round(1090,724,90,78,15,C.orange);line(1110,720,1160,720,C.ivory,5);
+      round(1230,753,75,36,8,C.ivory);for(let i=0;i<3;i++){g.strokeStyle=C.teal;g.lineWidth=4;g.beginPath();g.arc(1275,770,30+i*20,-.8,.8);g.stroke()}
+      txt('藪からの返事を聞いたと知人は語る',960,445,38,C.ivory,700,'center');
+    }
+    if(k==='search'){
+      person(420+380*smooth(p),788,1.25,t,C.blue,1);
+      person(1120+320*smooth(p),788,1.25,t+1.7,C.orange,1);
+      helicopter(340+1150*smooth(p),365,1.3);
+      txt('警察',440,525,35,C.blue,700,'center');txt('消防',1110,525,35,C.orange,700,'center');
+    }
+    if(k==='rain'){
+      round(590,566,740,250,20,'#233d3e');
+      person(745,780,1.1,0,C.blue,0);person(1100,780,1.1,0,C.orange,0);
+      for(let i=0;i<95;i++){const x=hash(i*5)*W,y=((hash(i*11)*1000+t*730+i*13)%840);line(x,y,x-18,y+39,C.blue,2)}
+      txt('雨風で待機',960,375,72,C.ivory,800,'center');
+    }
+    if(k==='encounter'){
+      bear(1380-120*smooth(p),776,1.7,t);
+      person(790-400*smooth(p),785,1.22,t,C.blue,1.8);
+      person(1030-360*smooth(p),785,1.22,t+1.3,C.blue,1.8);
+      round(1260,252,520,60,10,'#263f44');txt('再現ではなく状況の図解',1520,282,27,C.ivory,700,'center');
+      txt('遭遇 → 退避',960,420,62,C.ivory,800,'center');
+    }
+    if(k==='heli'){
+      helicopter(230+1110*smooth(p),358,1.35);
+      person(480+320*smooth(p),774,1.25,t,C.orange,1);
+      txt('クマは見つからず',960,448,63,C.ivory,800,'center');
+    }
+    if(k==='road'){
+      g.fillStyle=C.orange;g.fillRect(640,655,430,110);round(725,560,255,100,20,C.orange);
+      for(const x of [720,1000]){g.fillStyle='#142a2c';g.beginPath();g.arc(x,770,61,0,Math.PI*2);g.fill();g.strokeStyle=C.ivory;g.lineWidth=8;g.stroke()}
+      line(1045,610,1270+190*smooth(p),646,C.orange,29);
+      line(1270+190*smooth(p),646,1320+190*smooth(p),750,C.orange,25);
+      txt('林道を広げる',960,393,65,C.ivory,800,'center');
+    }
+    if(k==='trap'){
+      bear(1050,770,1.2,0);
+      for(let x=805;x<=1305;x+=62)line(x,553,x,816,C.ivory,8);
+      line(805,553,1305,553,C.ivory,8);line(805,816,1305,816,C.ivory,8);
+      txt('雌のクマ 1頭',960,390,64,C.ivory,800,'center');
+      round(650,840,625,54,10,'#263f44');txt('加害個体との一致は未確定',962,868,27,C.ivory,700,'center');
+    }
+  }
+  function timeline(date){
+    const active=DATES.indexOf(date.replace(' 夜',''));
+    line(134,953,1786,953,C.line,4);
+    for(let i=0;i<DATES.length;i++){
+      const x=134+i*1652/(DATES.length-1),on=i===active;
+      g.fillStyle=on?C.orange:i<active?C.teal:C.line;g.beginPath();g.arc(x,953,on?13:8,0,Math.PI*2);g.fill();
+      txt(DATES[i],x,994,on?27:23,on?C.ivory:C.muted,on?800:500,'center');
+    }
+  }
+  function draw(f){
+    f=Math.max(0,Math.min(TOTAL-1,Math.floor(f)));const t=f/FPS;
+    const s=SCENES.find(x=>t>=x.a&&t<x.b)||SCENES[SCENES.length-1];const p=(t-s.a)/(s.b-s.a);
+    g.fillStyle=C.night;g.fillRect(0,0,W,H);
+    for(let i=0;i<68;i++){const x=hash(i*13)*W,y=hash(i*29)*H;g.fillStyle='rgba(238,238,213,.09)';g.fillRect(x,y,2,2)}
+    txt('鹿角市 大平地区｜2024',100,85,32,C.muted,700);
+    round(1375,50,442,72,13,'#18353a');txt(s.date,1410,86,39,C.orange,800);txt(s.tag,1510,86,29,C.ivory,700);
+    scene(s,t,p);
+    round(75,870,1770,54,12,'#112b31');
+    txt(s.sub,960,897,30,C.ivory,700,'center');
+    timeline(s.date);
+  }
+  window.renderFrame=draw;
+  let raf=0,epoch=performance.now();
+  window.stopPlayback=()=>{if(raf){cancelAnimationFrame(raf);raf=0}};
+  if(!window.__capture){const tick=now=>{draw(Math.floor(((now-epoch)/1000%DURATION)*FPS));raf=requestAnimationFrame(tick)};raf=requestAnimationFrame(tick)}
+  else draw(0);
+})();
+</script></body></html>

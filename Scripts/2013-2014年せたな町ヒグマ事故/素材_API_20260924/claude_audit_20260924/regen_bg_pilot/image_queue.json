@@ -1,0 +1,14 @@
+[
+  {
+    "id": "ASSET-023_still",
+    "asset_no": 23,
+    "kind": "キャラアニメーション",
+    "slot": "still",
+    "aspect": "16:9",
+    "label": "",
+    "narration": "到着した警察と消防が、辺りを捜索することに。",
+    "char_ref": null,
+    "body": "Early spring in mid April, bare deciduous trees, brown grass, small patches of old snow only in shade. Dense mountain woodland with a faint trail through leaf litter and low bamboo grass beside a small stream, seen from eye height; the trail leads away between thin bare trunks. Empty woodland.",
+    "prompt": "Generate one photorealistic image, 16:9 landscape. A documentary background plate (a cartoon character will be overlaid later on the left). Setting: Setana and Imakane area, southwestern Hokkaido, Japan. Early spring in mid April, bare deciduous trees, brown grass, small patches of old snow only in shade. Dense mountain woodland with a faint trail through leaf litter and low bamboo grass beside a small stream, seen from eye height; the trail leads away between thin bare trunks. Empty woodland. Natural light, restrained Japanese documentary photography, realistic materials and terrain, shot on RED camera, wide 16:9 landscape composition, the left third kept as calm open space. Crucial: this is an EMPTY BACKGROUND PLATE. No people, no hands, no arms, no body parts, no human silhouettes, no reflections of people, no vehicles with drivers. No readable text, no lettering, no signage wording, no logo, no emblem, no collage, no split screen unless stated, no cartoon art. Generate one image only."
+  }
+]

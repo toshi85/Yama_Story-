@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-160",
+  "narration": "見つからなければ、箱わなを設置して様子を見る手はずでした。",
+  "asset_type": "Lovart動画",
+  "scene": "3月、残雪の山道脇に、扉を開けて据えた空の箱わな（実写）。見つからなかったときに備えて、わなで待つ手はず。158〜162のキャラの連続を切るため、ここは実写の動画にする。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "An empty steel box trap with its door raised open, set beside a gravel mountain road near Setana, southwestern Hokkaido, in March, late winter: bare trees and a few conifers, dry grass, a small lingering patch of old snow, the sea in the distance. Late-winter snow is intended in this scene. The trap sits in the right third of the frame, the left and middle left as clear open space. Framed from adult eye height about five metres back. Quiet, waiting mood, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous shot from a fixed camera beside a gravel mountain road near Setana in March, late winter: an empty steel box trap with its door raised open waits at the roadside; a light wind stirs the dry grass and the bare branches, and the camera pushes in very slowly toward the open trap door. Nothing enters the trap, no animal and no people appear. Late-winter snow is intended in this scene. No cuts, no scene change. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。中央に「なければ箱わな」を白字で表示し、「箱わな」だけ赤字。旧 ASSET-160_char.png は使わない。"
+  ]
+}

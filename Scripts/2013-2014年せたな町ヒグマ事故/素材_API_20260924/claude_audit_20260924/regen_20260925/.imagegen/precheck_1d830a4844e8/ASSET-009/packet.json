@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-009",
+  "narration": "襲ったのは、あの時のヒグマです。",
+  "asset_type": "Lovart動画",
+  "scene": "暗い春の山の中で、あの時のヒグマが暗がりからこちらへ怖そうに近づいてくる。",
+  "fences": [
+    {
+      "label": "シーン: 暗い春の山の中で、あの時のヒグマが暗がりからこちらへ怖そうに近づいてくる。",
+      "language": "",
+      "text": "An adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms, with a heavy shoulder hump, frozen mid-stride as it emerges straight toward the camera out of a dark mountain forest near Setana, southwestern Hokkaido, at dusk in mid-April early spring: bare grey trees, brown leaf litter, thin mist between the trunks, No snow anywhere, no frost, no ice, no winter. ON ALL FOURS, NOT upright, NOT on two legs, its chest and both shoulders squared to the camera, head dropped low and driven forward between bunched shoulders, small eyes narrowed and fixed straight on the lens, black lips peeled back with the long fangs bared, ears pinned flat against the skull, the fur along its neck and spine bristled up into a raised ridge. Ferocious, enraged, single-minded predatory fury. The forest is empty apart from the bear. Dark, dim blue dusk light, but NOT pure black — the bear's face and body stay clearly readable. Eerie, menacing, cold desaturated tones. Photorealistic, shot on RED camera, telephoto lens. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "→ **Google Flow動画プロンプト:**",
+      "language": "",
+      "text": "One single continuous take from a low locked-off camera in a dark early-spring Hokkaido mountain forest at dusk: no cuts, no scene change. An adult male brown bear on all fours advances slowly step by step straight toward the camera out of the gloom, head dropped low, eyes fixed on the lens, fangs bared, the fur along its neck bristled, until its head and shoulders fill most of the frame. Thin mist drifts between the bare trees. Dark but NOT pure black, the bear stays clearly readable. The forest is empty apart from the bear. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。中央に「あの時のヒグマ、、」を白字で表示し、「ヒグマ」だけ赤字。"
+  ]
+}

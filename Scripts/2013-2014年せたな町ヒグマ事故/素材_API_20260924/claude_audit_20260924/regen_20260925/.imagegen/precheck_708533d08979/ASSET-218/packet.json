@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-218",
+  "narration": "常にクマの出没情報の確認をしつつ、クマスプレーなどを備えておき、身を守ることが大切と言えます。",
+  "asset_type": "キャラアニメーション",
+  "scene": "登山口の案内板の前で、クマスプレーを構える女性。キャラは既存の ASSET-218_char.png（顔が見える・背景透過済み）を使い、背景だけ雪のない春の登山口に作り直す。",
+  "fences": [
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "A mountain trailhead near Setana, southwestern Hokkaido, in May spring: a wooden notice board with a simple trail map and a dark bear pictogram but no readable words, a small shelf below it with one red bear spray canister in a box, a gravel parking area, budding deciduous trees with fresh pale green leaves, low bamboo along the edge, No snow anywhere, no snow patches, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about four metres back, the notice board on the right, the left half of the frame left as clear open space. Alert, practical mood, soft bright daylight, natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は新規（ASSET-218_bg.png として保存。Regen の209も再利用する。今の ASSET-218_still.png は雪があるので使わない）、キャラは既存の ASSET-218_char.png を左に置く（動画は作らない）。中央に「出没情報とクマスプレー」を白字で表示し、「クマスプレー」だけ赤字。"
+  ]
+}

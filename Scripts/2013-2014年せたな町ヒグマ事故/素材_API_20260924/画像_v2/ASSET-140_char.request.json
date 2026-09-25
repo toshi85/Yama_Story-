@@ -1,0 +1,17 @@
+{
+  "digest": "90dc589b0e6155ec5b57a2a8c42e2727b0b9a902e17bc59549a04343c6cbc22a",
+  "state": "saved",
+  "endpoint": "https://queue.fal.run/openai/gpt-image-2",
+  "status": "IN_QUEUE",
+  "request_id": "01a0d2f9-f665-7bd0-ba6d-6028b6fff4b1",
+  "response_url": "https://queue.fal.run/openai/gpt-image-2/requests/01a0d2f9-f665-7bd0-ba6d-6028b6fff4b1",
+  "status_url": "https://queue.fal.run/openai/gpt-image-2/requests/01a0d2f9-f665-7bd0-ba6d-6028b6fff4b1/status",
+  "cancel_url": "https://queue.fal.run/openai/gpt-image-2/requests/01a0d2f9-f665-7bd0-ba6d-6028b6fff4b1/cancel",
+  "logs": null,
+  "metrics": {},
+  "queue_position": 1,
+  "size": [
+    1024,
+    1024
+  ]
+}

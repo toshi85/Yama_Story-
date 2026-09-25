@@ -1,0 +1,31 @@
+{
+  "digest": "7faa2cb730c4667273170c47547c875e487514b110ba40b9015f633e950ef4a8",
+  "state": "saved",
+  "endpoint": "https://queue.fal.run/minimax/h3-max-turbo/image-to-video",
+  "shot_id": 113,
+  "duration": 5,
+  "resolution": "768P",
+  "price_check": {
+    "model": "minimax/h3-max-turbo",
+    "duration": 5,
+    "resolution": "768P",
+    "usd_per_second": "0.02",
+    "usd_per_clip": "0.10",
+    "estimated_jpy": "15.00",
+    "jpy_reference_rate": 150,
+    "source": "https://fal.ai/models/minimax/h3-max-turbo/image-to-video",
+    "checked_at": "2026-09-24T09:41:54.638419+00:00",
+    "approved_max_usd_per_clip": "0.20",
+    "approval_required": true
+  },
+  "status": "IN_QUEUE",
+  "request_id": "01a0d2cb-0f69-7bb2-8252-cd9fd19a90cd",
+  "response_url": "https://queue.fal.run/minimax/h3-max-turbo/requests/01a0d2cb-0f69-7bb2-8252-cd9fd19a90cd",
+  "status_url": "https://queue.fal.run/minimax/h3-max-turbo/requests/01a0d2cb-0f69-7bb2-8252-cd9fd19a90cd/status",
+  "cancel_url": "https://queue.fal.run/minimax/h3-max-turbo/requests/01a0d2cb-0f69-7bb2-8252-cd9fd19a90cd/cancel",
+  "logs": null,
+  "metrics": {},
+  "queue_position": 0,
+  "actual_duration": 5.18,
+  "bytes": 14412611
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "ASSET-076_bg",
+    "asset_no": 76,
+    "kind": "キャラアニメーション",
+    "slot": "bg",
+    "aspect": "16:9",
+    "label": "",
+    "narration": "抵抗する間もなく、女性は肩や腕に噛みつかれます。",
+    "char_ref": null,
+    "body": "Early spring in mid April, bare deciduous trees, brown grass, small patches of old snow only in shade. Side view of a narrow mountain path through bare trees. A large adult Hokkaido brown bear, dark brown coat, about 2 metres long, on all fours, is lunging low from the right toward the left in full profile with its front paws just leaving the ground, mouth open, ears back. The left third of the frame is empty path. No people.",
+    "prompt": "Generate one photorealistic image, 16:9 landscape. A documentary background plate (a cartoon character will be overlaid later on the left). Setting: Setana and Imakane area, southwestern Hokkaido, Japan. Early spring in mid April, bare deciduous trees, brown grass, small patches of old snow only in shade. Side view of a narrow mountain path through bare trees. A large adult Hokkaido brown bear, dark brown coat, about 2 metres long, on all fours, is lunging low from the right toward the left in full profile with its front paws just leaving the ground, mouth open, ears back. The left third of the frame is empty path. No people. Natural light, restrained Japanese documentary photography, realistic animal anatomy and terrain, wide 16:9 landscape composition. No people, no hands, no human silhouettes. No readable text, no logo, no cartoon art. Generate one image only."
+  }
+]

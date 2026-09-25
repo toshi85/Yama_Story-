@@ -1,0 +1,1872 @@
+[
+  {
+    "id": "ASSET-015_char",
+    "asset_no": 15,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 新成地区へ向かうワゴン車を後方から写す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-017_char",
+    "asset_no": 17,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 昼になっても空いたままの食卓。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-019_char",
+    "asset_no": 19,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese husband in his 50s, short black hair with some gray, dark blue field jacket, gray trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 夫が家を出て山へ向かう斜め前から顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": [
+      "CHAR-02-front-v2.png"
+    ]
+  },
+  {
+    "id": "ASSET-020_char",
+    "asset_no": 20,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 沢近くに止まったワゴン車。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-022_char",
+    "asset_no": 22,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese husband in his 50s, short black hair with some gray, dark blue field jacket, gray trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 山道で電話をかける夫の手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": [
+      "CHAR-02-front-v2.png"
+    ]
+  },
+  {
+    "id": "ASSET-023_char",
+    "asset_no": 23,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 警察と消防の捜索者が山林を進む。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-025_char",
+    "asset_no": 25,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult woman in a muted outdoor jacket, clearly fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 沢で女性を発見した捜索者の遠景。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-026_char",
+    "asset_no": 26,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult woman in a muted outdoor jacket, clearly fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 沢辺で毛布に覆われた女性と立ち尽くす捜索者。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-028_char",
+    "asset_no": 28,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 事故記録と覆われた遺体を離れた構図で示す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-031_char",
+    "asset_no": 31,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 訪問予定を記した無記名の手帳と伏せた家族写真。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-033_char",
+    "asset_no": 33,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 11人のハンターが斜面に散る。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-034_char",
+    "asset_no": 34,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 茂みの奥を探しても何も見えない。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-036_char",
+    "asset_no": 36,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 近隣自治体へ送る緊急文書の束。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-038_char",
+    "asset_no": 38,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 研究者が山道の現場へ到着する斜め前から顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-039_char",
+    "asset_no": 39,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 3人の職員が机を囲み聞き取りをする。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-040_char",
+    "asset_no": 40,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 研究者の手元に広がる現場資料。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-041_char",
+    "asset_no": 41,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 落ち葉のクマの毛を試料容器へ移す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-043_char",
+    "asset_no": 43,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 夜明け前に森へ入るハンター。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-045_char",
+    "asset_no": 45,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 道路沿いの注意看板を主画にして数値は編集で示す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-047_char",
+    "asset_no": 47,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 関係者が机を囲む対策会議。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-050_char",
+    "asset_no": 50,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 住民の目撃情報を記録する電話と手帳。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-051_char",
+    "asset_no": 51,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 地区の掲示板に注意書きを貼る手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-053_char",
+    "asset_no": 53,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 民家脇のササを刈って見通しを確保する。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-054_char",
+    "asset_no": 54,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 家の門前に止まるスクールバス。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-055_char",
+    "asset_no": 55,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 通報窓口の電話と記録用紙。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-056_char",
+    "asset_no": 56,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 足跡・フン・食害跡の接写を順に見せる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-057_char",
+    "asset_no": 57,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 地区長が住民へ呼びかける斜め前から顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-058_char",
+    "asset_no": 58,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 高齢のハンターたちが装備を整える。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-059_char",
+    "asset_no": 59,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 免許申請書と猟銃の保管ケース。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-063_char",
+    "asset_no": 63,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese woman in her mid 40s, dark hair tied low, maroon field jacket, charcoal trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 山道の女性の背後に迫るヒグマの影。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": [
+      "CHAR-03-front-v2.png"
+    ]
+  },
+  {
+    "id": "ASSET-066_char",
+    "asset_no": 66,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult woman in a muted outdoor jacket, clearly fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 45歳女性と63歳男性が並んで山へ入る。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-067_char",
+    "asset_no": 67,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 2人のカゴに入るギョウジャニンニク。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-068_char",
+    "asset_no": 68,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult woman in a muted outdoor jacket, clearly fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 山菜を量りに載せる手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-069_char",
+    "asset_no": 69,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult woman in a muted outdoor jacket, clearly fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 山菜採りの人々がカゴを持って入山。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-071_char",
+    "asset_no": 71,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 看板の先へ入っていく2人の斜め前から顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-074_char",
+    "asset_no": 74,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese man in his early 60s, short graying hair, gray field jacket, dark trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 男性を先頭に下山する2人を横から写す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": [
+      "CHAR-04-front-v2.png"
+    ]
+  },
+  {
+    "id": "ASSET-075_char",
+    "asset_no": 75,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese woman in her mid 40s, dark hair tied low, maroon field jacket, charcoal trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 女性の背後から飛び出すヒグマを横から写す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": [
+      "CHAR-03-front-v2.png"
+    ]
+  },
+  {
+    "id": "ASSET-076_char",
+    "asset_no": 76,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese woman in her mid 40s, dark hair tied low, maroon field jacket, charcoal trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 女性が身をよじる瞬間と迫るクマの影。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": [
+      "CHAR-03-front-v2.png"
+    ]
+  },
+  {
+    "id": "ASSET-077_char",
+    "asset_no": 77,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese man in his early 60s, short graying hair, gray field jacket, dark trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 男性へ向かうヒグマを横から写す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": [
+      "CHAR-04-front-v2.png"
+    ]
+  },
+  {
+    "id": "ASSET-078_char",
+    "asset_no": 78,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese man in his early 60s, short graying hair, gray field jacket, dark trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 男性の手に握られたナタ。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": [
+      "CHAR-04-front-v2.png"
+    ]
+  },
+  {
+    "id": "ASSET-079_char",
+    "asset_no": 79,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 人の横にいる体長約2mのヒグマ。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-080_char",
+    "asset_no": 80,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese man in his early 60s, short graying hair, gray field jacket, dark trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 男性がナタで応戦する直前の構え。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": [
+      "CHAR-04-front-v2.png"
+    ]
+  },
+  {
+    "id": "ASSET-083_char",
+    "asset_no": 83,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 山道を離れる救急車の斜め前から顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-084_char",
+    "asset_no": 84,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult woman in a muted outdoor jacket, clearly fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 病院で毛布を掛けられた女性の斜め前から顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-085_char",
+    "asset_no": 85,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese man in his early 60s, short graying hair, gray field jacket, dark trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 無事に立つ男性の斜め前から顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": [
+      "CHAR-04-front-v2.png"
+    ]
+  },
+  {
+    "id": "ASSET-086_char",
+    "asset_no": 86,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 応戦場面を指す専門家の手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-090_char",
+    "asset_no": 90,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 山道脇に新しい注意看板。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-091_char",
+    "asset_no": 91,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 裏山を警戒する住民の斜め前から顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-092_char",
+    "asset_no": 92,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult woman in a muted outdoor jacket, clearly fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 高齢女性が持つ笛と爆竹の手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-093_char",
+    "asset_no": 93,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: ハンターが現場の試料を採る手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-096_char",
+    "asset_no": 96,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult woman in a muted outdoor jacket, clearly fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 2人の女性の山菜カゴを年別に並べる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-101_char",
+    "asset_no": 101,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 2人分のリュックに付いた鈴。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-102_char",
+    "asset_no": 102,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 鈴を付けた2人が森の小道を歩く。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-103_char",
+    "asset_no": 103,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 襲撃後の道に残る山菜カゴ。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-104_char",
+    "asset_no": 104,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 専門家が過去の事故資料を指す手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-105_char",
+    "asset_no": 105,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 町職員が駆除方針を資料で確認。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-107_char",
+    "asset_no": 107,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 複数の尾根を捜すハンター。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-108_char",
+    "asset_no": 108,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 顔を隠したヒグマがやぶへ入る。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-109_char",
+    "asset_no": 109,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: ササに視界を遮られるハンター。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-110_char",
+    "asset_no": 110,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: ヘリ要請書と一般的な防災ヘリ。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-111_char",
+    "asset_no": 111,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 地上の捜索隊と上空のヘリを同画面に収める。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-113_char",
+    "asset_no": 113,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: ハンターと消防職員が林道に集合。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-114_char",
+    "asset_no": 114,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 出発前に装備を確かめるハンター。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-115_char",
+    "asset_no": 115,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 捜索隊が3本の道へ分かれる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-117_char",
+    "asset_no": 117,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: ベテランが銃の扱いを教える手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-118_char",
+    "asset_no": 118,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 地上の捜索隊と遠くのヘリ。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-120_char",
+    "asset_no": 120,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 残雪に刻まれたクマの足跡。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-122_char",
+    "asset_no": 122,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 雪上の足跡を指すハンターの手。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-124_char",
+    "asset_no": 124,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 夕暮れの森から空手で戻る捜索隊。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-125_char",
+    "asset_no": 125,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 無人の山並みを離れるヘリ。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-128_char",
+    "asset_no": 128,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 夜の集落と閉じた玄関。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-130_char",
+    "asset_no": 130,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 疲れた捜索隊が山から戻る。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-135_char",
+    "asset_no": 135,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 箱わなの横で作業するハンターの顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-136_char",
+    "asset_no": 136,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 密封した肉片試料を研究所へ送る手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-137_char",
+    "asset_no": 137,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 事件現場に近い山の箱わな。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-138_char",
+    "asset_no": 138,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 捕獲記録の性別欄を指す手。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-140_char",
+    "asset_no": 140,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 結果封筒を開ける直前の手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-141_char",
+    "asset_no": 141,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 無記名の試料封筒を左右に並べ判定は編集文字で示す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-142_char",
+    "asset_no": 142,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 捕獲個体のカードを別箱へ移す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-143_char",
+    "asset_no": 143,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 家から森を見つめる住民。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-145_char",
+    "asset_no": 145,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 町の会議室とクマ対策資料。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-146_char",
+    "asset_no": 146,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 対策本部の机に積まれた捜索記録。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-148_char",
+    "asset_no": 148,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 町長の架空の顔を見せ会議の顔が見える姿と手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-149_char",
+    "asset_no": 149,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 入山自粛を知らせる山道の注意掲示。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-151_char",
+    "asset_no": 151,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 無記名の捜索計画書と冬山写真を机に並べる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-152_char",
+    "asset_no": 152,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 2013年と2014年の4月のカレンダー。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-153_char",
+    "asset_no": 153,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 春に向けた捜索装備を準備する。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-155_char",
+    "asset_no": 155,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 大規模捜索計画を机に広げる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-156_char",
+    "asset_no": 156,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 2年前の事件資料を開き直す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-157_char",
+    "asset_no": 157,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 役場の窓から住民の暮らしを見る。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-158_char",
+    "asset_no": 158,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 5、6人のハンターが足跡を追う。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-159_char",
+    "asset_no": 159,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 森の中で遠くを確認するハンター。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-160_char",
+    "asset_no": 160,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 未使用の箱わなを山道に置く。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-162_char",
+    "asset_no": 162,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: クマの鼻を遠景で示し傷は断定しない。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-164_char",
+    "asset_no": 164,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult woman in a muted outdoor jacket, clearly fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 春に増える山菜採りの人々。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-166_char",
+    "asset_no": 166,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult woman in a muted outdoor jacket, clearly fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 山道脇に並ぶ山菜採りの車。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-167_char",
+    "asset_no": 167,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 町職員が行動記録を見直す手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-168_char",
+    "asset_no": 168,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 荒れた畑と山林の境目。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-169_char",
+    "asset_no": 169,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 畑へ向かう際のラジオと笛。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-170_char",
+    "asset_no": 170,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 町の家々が裏山を警戒する。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-172_char",
+    "asset_no": 172,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 北檜山と大成の間に続く山林。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-174_char",
+    "asset_no": 174,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 一日の捜索隊が山へ入る斜め前から顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-175_char",
+    "asset_no": 175,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 前年より広い山林を俯瞰。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-176_char",
+    "asset_no": 176,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 誰もいないやぶを見つめる捜索隊。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-178_char",
+    "asset_no": 178,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: コンビニと民宿へ置かれるビラの束。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-179_char",
+    "asset_no": 179,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 注意ビラの文字を編集で重ねる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-181_char",
+    "asset_no": 181,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 捜索資料とDNA資料を並べる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-182_char",
+    "asset_no": 182,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 町外の試料を受け取る専門家の手。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-184_char",
+    "asset_no": 184,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 保管された20本の試料容器。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-185_char",
+    "asset_no": 185,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 専門家がDNA比較を始める手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-187_char",
+    "asset_no": 187,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 20個の無記名封筒から1つを編集で強調。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-188_char",
+    "asset_no": 188,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 今金町金原のビート畑と周辺林。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-191_char",
+    "asset_no": 191,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 夏のビート畑に設置された箱わな。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-194_char",
+    "asset_no": 194,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 日本海側のせたな町の山地。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-196_char",
+    "asset_no": 196,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 春の海側と夏の内陸を左右に並べる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-197_char",
+    "asset_no": 197,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 公表前の結果を収めた無記名封筒。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-198_char",
+    "asset_no": 198,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 捜索装備を片づけるハンター。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-199_char",
+    "asset_no": 199,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 顔を出さず安堵した町長の手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-200_char",
+    "asset_no": 200,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 警戒具を片づける住民の手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-202_char",
+    "asset_no": 202,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 2013年の事故資料と空のわな。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-203_char",
+    "asset_no": 203,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 2014年の事故資料と山道。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-204_char",
+    "asset_no": 204,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 夏の今金町の箱わなと記録。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-206_char",
+    "asset_no": 206,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese man in his early 60s, short graying hair, gray field jacket, dark trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: ナタと試料容器を置き傷の真偽は描かない。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": [
+      "CHAR-04-front-v2.png"
+    ]
+  },
+  {
+    "id": "ASSET-207_char",
+    "asset_no": 207,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 保管試料と照合試料の封筒を並べ判定は編集文字で示す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-208_char",
+    "asset_no": 208,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 両町の記録を並べて見るハンターの手。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-210_char",
+    "asset_no": 210,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 研究者の手で鈴と笛を並べる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-211_char",
+    "asset_no": 211,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 鈴とラジオの横に残るクマの足跡。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-212_char",
+    "asset_no": 212,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 見通しの悪い曲がり角で笛を持つ手。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-213_char",
+    "asset_no": 213,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 2人で山道を歩く斜め前から顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-214_char",
+    "asset_no": 214,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 複数歩行でも周囲を警戒する2人。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-215_char",
+    "asset_no": 215,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 入山前に装備を確かめる2人。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  },
+  {
+    "id": "ASSET-218_char",
+    "asset_no": 218,
+    "kind": "キャラアニメーション",
+    "slot": "char",
+    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 登山口のクマスプレーと出没情報。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.",
+    "quality": "medium",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "background": "transparent",
+    "references": []
+  }
+]

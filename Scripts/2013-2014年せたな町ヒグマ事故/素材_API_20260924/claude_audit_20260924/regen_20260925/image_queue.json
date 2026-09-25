@@ -1,44 +1,34 @@
 [
   {
-    "id": "ASSET-032_still",
-    "slot": "still",
-    "aspect": "16:9",
-    "prompt": "A high aerial drone view over a small quiet farming settlement near Setana, southwestern Hokkaido, in mid-April early spring: low houses with dark roofs scattered along a country road, small brown fields, forested hills around it with bare and budding trees, the Sea of Japan faintly visible in the distance, No snow anywhere, no frost, no ice, no winter. The camera looks forward and slightly down from about 120 metres above the settlement. No people visible, no readable signs, no real institution name, no crest, no emblem, no logo. Calm, peaceful, soft overcast morning light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.",
-    "deliver_as": "ASSET-032_still.png",
-    "md": "Asset_Prompts_Fix4.md",
-    "char_refs": [],
-    "kind": "静止画"
-  },
-  {
-    "id": "ASSET-043_char",
-    "slot": "char",
-    "aspect": "1:1",
-    "prompt": "Simple flat cartoon sticker illustration for children, in the style of plain clean vector clip art. Bold uniform black outline of even thickness around the figure and around each interior shape. Absolutely flat solid fill colours - one flat tone per area, plus at most one slightly darker tone as a simple shadow. No gradients, no airbrushing, no blush, no cheek shading, no skin shading, no soft light, no ambient occlusion, no texture, no fabric pattern, no glossy highlights except one small white dot in each eye. Very large head, about one third of the total height, three heads tall overall, short stubby limbs, small simple mitten-like hands. Simple oval eyes with plain dark irises, tiny simple nose, small simple mouth, plain flat face with no wrinkles and no detailed features. Keep the clothing extremely simple: only a few large plain shapes, no small pockets, no straps, no cords, no buckles, no badges, no gadgets, no accessories other than the ones listed. If the description below mentions many pockets, straps or accessories, simplify them into a few plain shapes. Full body head to feet, whole figure inside the frame, centred. Posed exactly as described below, front-facing where possible. (CHAR-05 再利用) A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap with a small headlamp, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, walking toward the viewer at a slight three-quarter angle, facing the viewer, his face clearly visible. Eyebrows pulled down hard, eyes narrowed and alert, mouth pressed into a tight grim line, a bead of sweat on his temple, tense and determined, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. Generate 1 image. No written words or lettering anywhere. Fully transparent background, PNG with alpha, no backdrop and no ground shadow. 1:1 square aspect ratio.",
-    "deliver_as": "ASSET-043_char.png",
-    "md": "Asset_Prompts_Fix4.md",
-    "char_refs": [
-      "CHAR-05"
-    ],
-    "kind": "キャラ"
-  },
-  {
-    "id": "ASSET-043_bg",
+    "id": "ASSET-053_bg",
     "slot": "bg",
     "aspect": "16:9",
-    "prompt": "A forest track at dawn near Setana, southwestern Hokkaido, in mid-April early spring: bare and budding deciduous trees, brown leaf litter, dry brown grass along the track, a faint blue pre-dawn light over the hills, No snow anywhere, no snow patches, no frost, no ice, no winter. Dim but NOT pure black, the track and trees clearly readable. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Tense, quiet, cold blue dawn light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.",
-    "deliver_as": "ASSET-043_bg.png",
-    "md": "Asset_Prompts_Fix4.md",
+    "prompt": "The boundary between the back of a rural wooden house and a forested hillside near Setana, southwestern Hokkaido, in mid-April early spring: a wide freshly cut strip where tall bamboo grass has been mown down to short stubble, piles of cut dry bamboo stalks along its edge, uncut dense bamboo grass still growing tall on the slope beyond, bare and budding deciduous trees, brown leaf litter, No snow anywhere, no frost, no ice, no winter. The open sightline from the house to the trees is clearly visible. Framed from adult eye height about five metres back, the middle of the frame left as clear open space. Calm, practical, soft overcast afternoon light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.",
+    "deliver_as": "ASSET-053_still.png",
+    "md": "Asset_Prompts_Fix5a.md",
     "char_refs": [],
     "kind": "背景"
   },
   {
-    "id": "CHAR-05",
-    "slot": "char_ref",
-    "aspect": "1:1",
-    "prompt": "Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. One full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.",
-    "deliver_as": "CHAR-05.png",
-    "md": "Asset_Prompts_Fix4.md",
+    "id": "ASSET-058_still",
+    "slot": "still",
+    "aspect": "16:9",
+    "prompt": "Three aging Japanese hunters in their late 60s and 70s getting ready at the gravel entrance of a forest road near Setana, southwestern Hokkaido, in mid-April early spring: bare and budding deciduous trees, dry brown grass, No snow anywhere, no frost, no ice, no winter. Left to right: 1) a thin man with sparse white hair under a blaze-orange cap, bent at the waist with one hand pressed to his lower back; 2) a heavier man with grey hair and deep lines on his face in a dark green jacket and blaze-orange vest, sitting on the open tailgate of a small pickup truck pulling on a boot; 3) a short man with a white stubble and a khaki jacket, leaning on a walking stick with a cased rifle slung on his back. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT. Seen from a three-quarter side angle, faces partly turned away and not identifiable. The truck's number plate is present but small, out of focus and not readable, no lettering, no logo, no badge. Captured as a frozen moment. Framed from adult eye height about six metres back, the upper third of the frame left as clean open space. Tired, worried mood, soft overcast morning light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.",
+    "deliver_as": "ASSET-058_still.png",
+    "md": "Asset_Prompts_Fix5a.md",
     "char_refs": [],
-    "kind": "キャラ基準画像"
+    "kind": "静止画"
+  },
+  {
+    "id": "ASSET-060_char",
+    "slot": "char",
+    "aspect": "1:1",
+    "prompt": "Simple flat cartoon sticker illustration for children, in the style of plain clean vector clip art. Bold uniform black outline of even thickness around the figure and around each interior shape. Absolutely flat solid fill colours - one flat tone per area, plus at most one slightly darker tone as a simple shadow. No gradients, no airbrushing, no blush, no cheek shading, no skin shading, no soft light, no ambient occlusion, no texture, no fabric pattern, no glossy highlights except one small white dot in each eye. Very large head, about one third of the total height, three heads tall overall, short stubby limbs, small simple mitten-like hands. Simple oval eyes with plain dark irises, tiny simple nose, small simple mouth, plain flat face with no wrinkles and no detailed features. Keep the clothing extremely simple: only a few large plain shapes, no small pockets, no straps, no cords, no buckles, no badges, no gadgets, no accessories other than the ones listed. If the description below mentions many pockets, straps or accessories, simplify them into a few plain shapes. Full body head to feet, whole figure inside the frame, centred. Standing upright, front-facing, symmetrical, arms relaxed at the sides. (CHAR-05 再利用) A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. Both fists clenched at his sides, eyebrows driven down hard and pulled together, eyes squeezed half shut with tears of frustration welling at the corners, teeth gritted and bared, sweat flying off his temples, bitterly frustrated, NOT calm, NOT smiling. No lettering, no badge, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. Generate 1 image. No written words or lettering anywhere. Fully transparent background, PNG with alpha, no backdrop and no ground shadow. 1:1 square aspect ratio.",
+    "deliver_as": "ASSET-060_char.png",
+    "md": "Asset_Prompts_Fix5a.md",
+    "char_refs": [
+      "CHAR-05"
+    ],
+    "kind": "キャラ"
   }
 ]

@@ -1,0 +1,18 @@
+{
+ "at": "2026-09-25T22:26:11",
+ "tool": "imagegen/run.py",
+ "kind": "image",
+ "paid": false,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix4.md",
+ "md_sha256": "7d89f37052b0c4aeab514f3599431cfc8b6f7e22a96b2ffd6373aafd6bff70ea",
+ "sample_approved": false,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925"
+ ],
+ "items": [
+  {
+   "id": "ASSET-043_char",
+   "prompt": "Simple flat cartoon sticker illustration for children, in the style of plain clean vector clip art. Bold uniform black outline of even thickness around the figure and around each interior shape. Absolutely flat solid fill colours - one flat tone per area, plus at most one slightly darker tone as a simple shadow. No gradients, no airbrushing, no blush, no cheek shading, no skin shading, no soft light, no ambient occlusion, no texture, no fabric pattern, no glossy highlights except one small white dot in each eye. Very large head, about one third of the total height, three heads tall overall, short stubby limbs, small simple mitten-like hands. Simple oval eyes with plain dark irises, tiny simple nose, small simple mouth, plain flat face with no wrinkles and no detailed features. Keep the clothing extremely simple: only a few large plain shapes, no small pockets, no straps, no cords, no buckles, no badges, no gadgets, no accessories other than the ones listed. If the description below mentions many pockets, straps or accessories, simplify them into a few plain shapes. Full body head to feet, whole figure inside the frame, centred. Posed exactly as described below, front-facing where possible. (CHAR-05 再利用) A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap with a small headlamp, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, walking toward the viewer at a slight three-quarter angle, facing the viewer, his face clearly visible. Eyebrows pulled down hard, eyes narrowed and alert, mouth pressed into a tight grim line, a bead of sweat on his temple, tense and determined, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. Generate 1 image. No written words or lettering anywhere. Fully transparent background, PNG with alpha, no backdrop and no ground shadow. 1:1 square aspect ratio."
+  }
+ ]
+}

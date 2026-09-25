@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>鹿角2024 サンプル（JSアニメーション）</title>
+<style>
+  html,body{margin:0;padding:0;background:#000;overflow:hidden}
+  canvas{display:block}
+</style>
+</head>
+<body>
+<canvas id="c" width="1920" height="1080"></canvas>
+<script>
+/* =========================================================================
+   Yama_Story JSアニメーション試作 — 2024年鹿角市大平地区クマ事件
+   60秒 / 30fps / 1920x1080 / 決定論的（renderFrame(f) で同じ絵が出る）
+   事実は Fact_Sheet_鹿角2024.md の確度Aのみ。地図は模式図。
+   ========================================================================= */
+const W = 1920, H = 1080, FPS = 30, DURATION = 60, TOTAL = FPS * DURATION;
+const cv = document.getElementById('c');
+const ctx = cv.getContext('2d');
+
+/* ---------- 乱数（シード固定） ---------- */
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+
+/* ---------- 補間 ---------- */
+const clamp=(v,a,b)=>v<a?a:v>b?b:v;
+const lerp=(a,b,t)=>a+(b-a)*t;
+const smooth=t=>t*t*(3-2*t);
+function ramp(t,a,b){return smooth(clamp((t-a)/(b-a),0,1));}         // a→bで0→1
+function band(t,a,b,fi,fo){return Math.min(ramp(t,a,a+fi),1-ramp(t,b-fo,b));} // 台形フェード
+const ease=t=>t<0.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
+
+/* =========================================================================
+   1. 地形（値ノイズ＋マーチングスクエアで等高線）
+   ========================================================================= */
+const GX = 192, GY = 112;
+const MAP = {x: 0, y: 0, w: W, h: H};
+const field = new Float32Array(GX * GY);
+
+(function buildField(){
+  const rnd = mulberry32(20240515);
+  // 値ノイズ格子
+  const oct = [{n:4,a:1.0},{n:8,a:0.5},{n:16,a:0.26},{n:32,a:0.13}];
+  const grids = oct.map(o=>{
+    const g = new Float32Array((o.n+1)*(o.n+1));
+    for(let i=0;i<g.length;i++) g[i]=rnd();
+    return g;
+  });
+  const sample=(g,n,u,v)=>{
+    const x=u*n, y=v*n;
+    const x0=Math.floor(x), y0=Math.floor(y);
+    const fx=smooth(x-x0), fy=smooth(y-y0);
+    const gi=(a,b)=>g[clamp(b,0,n)*(n+1)+clamp(a,0,n)];
+    return lerp(lerp(gi(x0,y0),gi(x0+1,y0),fx), lerp(gi(x0,y0+1),gi(x0+1,y0+1),fx), fy);
+  };
+  for(let j=0;j<GY;j++){
+    for(let i=0;i<GX;i++){
+      const u=i/(GX-1), v=j/(GY-1);
+      let h=0, sum=0;
+      oct.forEach((o,k)=>{ h+=sample(grids[k],o.n,u,v)*o.a; sum+=o.a; });
+      h/=sum;
+      // 尾根と谷の大きな骨格：右上が高く、中央を谷が走る
+      const ridge = 0.55 + 0.42*(1-v) + 0.18*(u-0.5);
+      const valley = -0.30*Math.exp(-Math.pow((u*1.25 - v*0.55 - 0.30)/0.13, 2));
+      h = h*0.55 + ridge*0.45 + valley;
+      field[j*GX+i]=h;
+    }
+  }
+})();
+
+const fieldAt=(i,j)=>field[clamp(j,0,GY-1)*GX+clamp(i,0,GX-1)];
+const cellW = MAP.w/(GX-1), cellH = MAP.h/(GY-1);
+
+/* マーチングスクエアで1本の等高線を描く */
+function contour(level){
+  const segs=[];
+  for(let j=0;j<GY-1;j++){
+    for(let i=0;i<GX-1;i++){
+      const a=fieldAt(i,j), b=fieldAt(i+1,j), c=fieldAt(i+1,j+1), d=fieldAt(i,j+1);
+      let idx=0;
+      if(a>level)idx|=8; if(b>level)idx|=4; if(c>level)idx|=2; if(d>level)idx|=1;
+      if(idx===0||idx===15) continue;
+      const x0=i*cellW, y0=j*cellH;
+      const top   =()=>[x0+cellW*(level-a)/(b-a), y0];
+      const right =()=>[x0+cellW, y0+cellH*(level-b)/(c-b)];
+      const bottom=()=>[x0+cellW*(level-d)/(c-d), y0+cellH];
+      const left  =()=>[x0, y0+cellH*(level-a)/(d-a)];
+      const push=(p,q)=>segs.push([p[0],p[1],q[0],q[1]]);
+      switch(idx){
+        case 1: case 14: push(left(),bottom()); break;
+        case 2: case 13: push(bottom(),right()); break;
+        case 3: case 12: push(left(),right()); break;
+        case 4: case 11: push(top(),right()); break;
+        case 5: push(left(),top()); push(bottom(),right()); break;
+        case 6: case 9: push(top(),bottom()); break;
+        case 7: case 8: push(left(),top()); break;
+        case 10: push(left(),bottom()); push(top(),right()); break;
+      }
+    }
+  }
+  return segs;
+}
+const LEVELS=[];
+for(let L=0.18; L<=0.98; L+=0.035) LEVELS.push({v:L, segs:contour(L), major:(Math.round(L*1000)%140<35)});
+
+/* 標高の陰影（低解像度→拡大） */
+const shade = document.createElement('canvas');
+shade.width=GX; shade.height=GY;
+(function(){
+  const sctx=shade.getContext('2d');
+  const img=sctx.createImageData(GX,GY);
+  for(let j=0;j<GY;j++)for(let i=0;i<GX;i++){
+    const h=fieldAt(i,j);
+    // 北西からの斜面陰影
+    const dx=fieldAt(i+1,j)-fieldAt(i-1,j), dy=fieldAt(i,j+1)-fieldAt(i,j-1);
+    const sh=clamp(0.5 + (dx*2.2 + dy*2.2)*2.4, 0, 1);
+    const t=clamp((h-0.15)/0.85,0,1);
+    const r=lerp(16,52,t)*lerp(0.55,1.25,sh);
+    const g=lerp(26,64,t)*lerp(0.55,1.25,sh);
+    const b=lerp(28,58,t)*lerp(0.6,1.2,sh);
+    const o=(j*GX+i)*4;
+    img.data[o]=r; img.data[o+1]=g; img.data[o+2]=b; img.data[o+3]=255;
+  }
+  sctx.putImageData(img,0,0);
+})();
+
+/* ---------- 地図上の地点（模式） ---------- */
+const P = {
+  park:   [0.300, 0.790],   // 駐車場・車
+  gate:   [0.345, 0.735],   // 管理ゲート
+  roadEnd:[0.520, 0.560],   // 当初の林道終点
+  pack:   [0.583, 0.470],   // リュックと拡声器のあった辺り
+  found:  [0.640, 0.382],   // 佐藤さんが見つかった斜面
+  attack: [0.622, 0.404],   // 搬送中に警察官が襲われた辺り
+  cage:   [0.470, 0.640],   // おり
+};
+const mx = p => MAP.x + p[0]*MAP.w;
+const my = p => MAP.y + p[1]*MAP.h;
+
+/* 林道（当初）と、21〜22日に重機で広げた延長部 */
+const roadPts = [P.park,[0.335,0.745],[0.386,0.700],[0.430,0.655],[0.468,0.612],P.roadEnd];
+const roadExt = [P.roadEnd,[0.545,0.530],[0.568,0.500],[0.588,0.470]];
+function pathThrough(pts, prog){
+  const n=pts.length-1, at=clamp(prog,0,1)*n;
+  ctx.beginPath();
+  ctx.moveTo(mx(pts[0]),my(pts[0]));
+  for(let i=1;i<=n;i++){
+    const k=clamp(at-(i-1),0,1);
+    if(k<=0) break;
+    const a=pts[i-1], b=pts[i];
+    ctx.lineTo(lerp(mx(a),mx(b),k), lerp(my(a),my(b),k));
+  }
+}
+
+/* =========================================================================
+   2. 共通の描画部品
+   ========================================================================= */
+function vignette(alpha){
+  const g=ctx.createRadialGradient(W*0.5,H*0.48,H*0.25,W*0.5,H*0.5,H*0.95);
+  g.addColorStop(0,'rgba(0,0,0,0)'); g.addColorStop(1,`rgba(0,0,0,${alpha})`);
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+}
+function grain(f,alpha){
+  const rnd=mulberry32(1000+f);
+  ctx.save(); ctx.globalAlpha=alpha; ctx.fillStyle='#fff';
+  for(let i=0;i<260;i++) ctx.fillRect(rnd()*W|0, rnd()*H|0, 2, 2);
+  ctx.restore();
+}
+function jpFont(size,weight,serif){
+  return `${weight||400} ${size}px ${serif?'"Hiragino Mincho ProN","Yu Mincho",serif':'"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif'}`;
+}
+function textShadow(on){
+  if(on){ ctx.shadowColor='rgba(0,0,0,0.85)'; ctx.shadowBlur=14; ctx.shadowOffsetY=2; }
+  else { ctx.shadowColor='transparent'; ctx.shadowBlur=0; ctx.shadowOffsetY=0; }
+}
+
+/* 日付チップ（左上） */
+function dateChip(label,alpha){
+  if(alpha<=0.01) return;
+  ctx.save(); ctx.globalAlpha=alpha;
+  const x=104,y=104;
+  ctx.fillStyle='rgba(8,11,14,0.72)';
+  ctx.fillRect(x-22,y-52,ctx.measureText(label).width+0,0); // 実幅は下で測る
+  ctx.font=jpFont(52,600,true);
+  const tw=ctx.measureText(label).width;
+  ctx.fillStyle='rgba(8,11,14,0.72)';
+  ctx.fillRect(x-24,y-54,tw+48,84);
+  ctx.fillStyle='#c9a227';
+  ctx.fillRect(x-24,y-54,5,84);
+  ctx.fillStyle='#f2efe9';
+  ctx.textBaseline='middle';
+  ctx.fillText(label,x+6,y-10);
+  ctx.restore();
+}
+
+/* 字幕（下部中央寄せ・1〜2行） */
+function caption(lines,alpha,yBase){
+  if(alpha<=0.01) return;
+  ctx.save(); ctx.globalAlpha=alpha;
+  const sg=ctx.createLinearGradient(0,H-250,0,H);
+  sg.addColorStop(0,'rgba(4,6,9,0)'); sg.addColorStop(0.5,'rgba(4,6,9,0.55)'); sg.addColorStop(1,'rgba(4,6,9,0.82)');
+  ctx.fillStyle=sg; ctx.fillRect(0,H-250,W,250);
+  ctx.textAlign='center'; ctx.textBaseline='middle';
+  const y0=yBase||H-206;
+  lines.forEach((ln,i)=>{
+    const big = i===0 && lines.length>1;
+    ctx.font=jpFont(big?56:44, big?600:400, true);
+    textShadow(true);
+    ctx.fillStyle = big? '#f4f1ea' : '#cfd5d8';
+    ctx.fillText(ln, W/2, y0 + i*72);
+    textShadow(false);
+  });
+  ctx.restore();
+}
+
+/* 進行バー（5/15→6/3）。pは物語の日付の位置（0=5/15, 1=6/3） */
+function timeline(p,alpha){
+  if(alpha<=0.01) return;
+  const x0=200, x1=W-200, y=H-92;
+  ctx.save(); ctx.globalAlpha=alpha;
+  ctx.strokeStyle='rgba(255,255,255,0.20)'; ctx.lineWidth=2;
+  ctx.beginPath(); ctx.moveTo(x0,y); ctx.lineTo(x1,y); ctx.stroke();
+  const marks=[['5/15',0],['5/18',3/19],['5/22',7/19],['5/31',16/19],['6/3',1]];
+  ctx.font=jpFont(22,400,false); ctx.textAlign='center'; ctx.fillStyle='rgba(255,255,255,0.45)';
+  marks.forEach(([lb,p])=>{
+    const x=lerp(x0,x1,p);
+    ctx.fillRect(x-1,y-7,2,14);
+    ctx.fillText(lb,x,y+34);
+  });
+  p=clamp(p,0,1);
+  ctx.strokeStyle='#c9a227'; ctx.lineWidth=3;
+  ctx.beginPath(); ctx.moveTo(x0,y); ctx.lineTo(lerp(x0,x1,p),y); ctx.stroke();
+  ctx.fillStyle='#c9a227';
+  ctx.beginPath(); ctx.arc(lerp(x0,x1,p),y,7,0,7); ctx.fill();
+  ctx.restore();
+}
+
+/* =========================================================================
+   3. キャラクター（シルエット）
+   ========================================================================= */
+function limb(x1,y1,x2,y2,w){
+  ctx.lineWidth=w; ctx.lineCap='round';
+  ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke();
+}
+/* 人物：歩く／走る／立つ／しゃがむ */
+function drawHuman(o){
+  const {x,y,s=1,phase=0,mode='walk',flip=1,color='#05070a',pack=false,lean=0}=o;
+  ctx.save();
+  ctx.translate(x,y); ctx.scale(flip*s,s);
+  const spd = mode==='run'?1.9:1.0;
+  const ph = phase*spd;
+  const bob = mode==='stand'? Math.sin(phase*0.6)*1.2 : Math.abs(Math.sin(ph))*(mode==='run'?9:4);
+  const crouch = mode==='crouch'? 26 : 0;
+  ctx.strokeStyle=color; ctx.fillStyle=color;
+  const hipY = -60 + bob + crouch, shY = -128 + bob + crouch*0.7;
+  const tilt = (mode==='run'? 16 : mode==='crouch'? 22 : 4) + lean;
+
+  // 脚
+  const swing = mode==='stand'? 0 : Math.sin(ph)*(mode==='run'?52:34);
+  const knee  = mode==='run'? 26 : 12;
+  [1,-1].forEach(sgn=>{
+    const sw = sgn*swing;
+    const kx = sw*0.55, ky = hipY+44;
+    const fx = sw, fy = hipY+92 - Math.max(0,sgn*Math.sin(ph))*(mode==='run'?26:9);
+    limb(0,hipY,kx,ky,16);
+    limb(kx,ky,fx+ (mode==='run'? sgn*knee*0.2:0),fy,13);
+  });
+  // 胴
+  ctx.lineWidth=33; ctx.lineCap='round';
+  ctx.beginPath(); ctx.moveTo(0,hipY); ctx.lineTo(tilt*0.5, shY); ctx.stroke();
+  // 背負子
+  if(pack){
+    ctx.save(); ctx.translate(-20+tilt*0.35, shY+28); ctx.rotate(-0.08);
+    ctx.fillRect(-26,-34,44,64); ctx.restore();
+  }
+  // 腕
+  const aswing = mode==='stand'? 0 : Math.sin(ph+Math.PI)*(mode==='run'?52:26);
+  [1,-1].forEach(sgn=>{
+    const sw=sgn*aswing;
+    const ex=tilt*0.5+sw*0.55, ey=shY+42;
+    const hx=tilt*0.5+sw, hy=shY+80 + (mode==='run'? -Math.max(0,sgn*Math.sin(ph))*28 : 0);
+    limb(tilt*0.5,shY+6,ex,ey,13);
+    limb(ex,ey,hx,hy,11);
+  });
+  // 首と頭
+  ctx.lineWidth=13; limb(tilt*0.56, shY-4, tilt*0.60, shY-20, 13);
+  ctx.beginPath(); ctx.arc(tilt*0.62, shY-38, 21, 0, 7); ctx.fill();
+  ctx.restore();
+}
+/* クマ：四つ脚で歩く／立ち上がる */
+function drawBear(o){
+  const {x,y,s=1,phase=0,mode='walk',flip=1,color='#04060a'}=o;
+  ctx.save(); ctx.translate(x,y); ctx.scale(flip*s,s);
+  ctx.fillStyle=color; ctx.strokeStyle=color;
+  if(mode==='rear'){
+    // 立ち上がった姿勢
+    ctx.lineWidth=58; ctx.lineCap='round';
+    ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(-6,-118); ctx.stroke();
+    ctx.beginPath(); ctx.ellipse(-2,-58,52,66,0,0,7); ctx.fill();
+    // 前脚
+    const sw=Math.sin(phase*1.2)*16;
+    limb(-6,-108, 46+sw, -78, 26); limb(-6,-104, 40-sw, -40, 24);
+    // 後脚
+    limb(0,-14,-26,8,30); limb(6,-14,24,10,30);
+    // 頭＋耳＋鼻
+    ctx.beginPath(); ctx.arc(2,-146,36,0,7); ctx.fill();
+    ctx.beginPath(); ctx.arc(-24,-176,13,0,7); ctx.fill();
+    ctx.beginPath(); ctx.arc(26,-174,13,0,7); ctx.fill();
+    ctx.beginPath(); ctx.ellipse(34,-138,20,13,0.2,0,7); ctx.fill();
+  } else {
+    ctx.translate(0, Math.sin(phase*2)*3);
+    // 胴（肩のこぶが最も高く、尻が下がる）
+    ctx.beginPath();
+    ctx.moveTo(-104,-96);
+    ctx.bezierCurveTo(-98,-134,-44,-156,6,-148);
+    ctx.bezierCurveTo(44,-142,74,-126,86,-108);
+    ctx.bezierCurveTo(96,-94,92,-64,74,-58);
+    ctx.bezierCurveTo(20,-44,-56,-46,-92,-58);
+    ctx.bezierCurveTo(-106,-64,-110,-84,-104,-96);
+    ctx.fill();
+    // 脚（前後で位相をずらす）
+    const leg=(bx,by,p,len,w)=>{
+      const a=Math.sin(phase+p)*0.62;
+      const kx=bx+Math.sin(a)*len*0.45, ky=by+Math.cos(a)*len*0.5;
+      const fx=bx+Math.sin(a*0.5)*len*0.7, fy=by+len;
+      limb(bx,by,kx,ky,w); limb(kx,ky,fx,fy,w*0.8);
+    };
+    leg( 62,-104, 0,           102, 30);
+    leg( 40,-102, Math.PI,     102, 25);
+    leg(-70,-90,  Math.PI*0.85, 94, 31);
+    leg(-88,-86,  0.15,         94, 25);
+    // 首と頭（低く突き出す）
+    ctx.beginPath();
+    ctx.moveTo(56,-142); ctx.lineTo(112,-126); ctx.lineTo(114,-86); ctx.lineTo(54,-88); ctx.fill();
+    ctx.beginPath(); ctx.ellipse(120,-114,33,30,0.10,0,7); ctx.fill();
+    ctx.beginPath(); ctx.ellipse(148,-106,19,14,0.18,0,7); ctx.fill();
+    ctx.beginPath(); ctx.arc(102,-142,13,0,7); ctx.fill();
+    ctx.beginPath(); ctx.arc(130,-138,13,0,7); ctx.fill();
+  }
+  ctx.restore();
+}
+
+/* =========================================================================
+   4. 山の情景（キャラ場面の背景）
+   ========================================================================= */
+function skyGradient(top,bottom){
+  const g=ctx.createLinearGradient(0,0,0,H);
+  g.addColorStop(0,top); g.addColorStop(1,bottom);
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+}
+/* 地平線までを明るくする空。シルエットはこの帯に重ねて読ませる */
+function skyBand(horizon,top,bottom){
+  const g=ctx.createLinearGradient(0,0,0,horizon);
+  g.addColorStop(0,top); g.addColorStop(0.62,lerpColor(top,bottom,0.55)); g.addColorStop(1,bottom);
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,horizon+2);
+}
+function lerpColor(a,b,t){
+  const pa=[parseInt(a.slice(1,3),16),parseInt(a.slice(3,5),16),parseInt(a.slice(5,7),16)];
+  const pb=[parseInt(b.slice(1,3),16),parseInt(b.slice(3,5),16),parseInt(b.slice(5,7),16)];
+  return `rgb(${pa.map((v,i)=>Math.round(lerp(v,pb[i],t))).join(',')})`;
+}
+/* キャラ場面の共通背景（地平線を下げ、空の帯を明るく保つ） */
+function charBackdrop(lt,o){
+  const {horizon=H*0.60, top='#101b25', glow='#6f97ab', seed=11}=o||{};
+  skyBand(horizon, top, glow);
+  mist(lt, horizon-230, 0.16, 1, seed+5);
+  ridgeLayer(seed,    horizon-30, 340, 'rgba(19,32,42,0.95)', 0, 6);
+  ridgeLayer(seed+12, horizon+10, 240, 'rgba(12,21,28,0.97)', 90, 11);
+  mist(lt, horizon-40, 0.20, 1.6, seed+9);
+  // 地面（地平線側を明るく＝手前のシルエットが読める）
+  const g=ctx.createLinearGradient(0,horizon-20,0,H);
+  g.addColorStop(0,'#1b2831'); g.addColorStop(0.45,'#111b22'); g.addColorStop(1,'#080d11');
+  ctx.fillStyle=g;
+  ctx.beginPath(); ctx.moveTo(0,horizon+4);
+  for(let x=0;x<=W;x+=40) ctx.lineTo(x, horizon+4 - Math.sin(x*0.0022+seed)*16);
+  ctx.lineTo(W,H); ctx.lineTo(0,H); ctx.closePath(); ctx.fill();
+}
+/* シルエット＋わずかな縁の光（背景に溶けないように） */
+function silhouette(drawFn,opt){
+  ctx.save(); ctx.globalAlpha=0.55;
+  drawFn(Object.assign({},opt,{color:'#66869a', x:opt.x-5, y:opt.y-6}));
+  ctx.restore();
+  drawFn(Object.assign({},opt,{color:'#04070a'}));
+}
+function ridgeLayer(seed,yBase,amp,color,scroll,n){
+  const N=n||7;
+  const rnd=mulberry32(seed);
+  const pts=[];
+  for(let i=0;i<=N;i++) pts.push(Math.pow(rnd(),1.4));
+  ctx.fillStyle=color;
+  ctx.beginPath(); ctx.moveTo(-100,H);
+  for(let x=-100;x<=W+100;x+=12){
+    const u=(x+scroll)/(W+200)*N;
+    const i=Math.floor(u), fr=smooth(u-i);
+    const a=pts[((i%N)+N)%N], b=pts[(((i+1)%N)+N)%N];
+    const y=yBase - lerp(a,b,fr)*amp - Math.sin(x*0.0016+seed)*amp*0.22;
+    ctx.lineTo(x,y);
+  }
+  ctx.lineTo(W+100,H); ctx.closePath(); ctx.fill();
+}
+/* 笹薮 */
+function sasa(seed,yBase,count,hMin,hMax,color,t,swayAmp,xOff){
+  const rnd=mulberry32(seed);
+  ctx.strokeStyle=color; ctx.lineCap='round';
+  for(let i=0;i<count;i++){
+    const x=rnd()*(W+400)-200 + (xOff||0);
+    const h=lerp(hMin,hMax,rnd());
+    const lean=(rnd()-0.5)*0.9;
+    const ph=rnd()*Math.PI*2;
+    const sway=Math.sin(t*1.6+ph)*swayAmp*(h/hMax);
+    ctx.lineWidth=lerp(3,7,rnd());
+    ctx.beginPath();
+    ctx.moveTo(x,yBase+20);
+    ctx.quadraticCurveTo(x+lean*h*0.4+sway*0.4, yBase-h*0.55, x+lean*h+sway, yBase-h);
+    ctx.stroke();
+  }
+}
+function mist(t,y,alpha,speed,seed){
+  const rnd=mulberry32(seed);
+  ctx.save();
+  for(let i=0;i<7;i++){
+    const w=lerp(600,1500,rnd()), h=lerp(70,190,rnd());
+    const x=((rnd()*W + t*speed*lerp(6,22,rnd())) % (W+w*2)) - w;
+    const yy=y+lerp(-140,160,rnd());
+    const g=ctx.createRadialGradient(x,yy,0,x,yy,w*0.5);
+    g.addColorStop(0,`rgba(186,204,212,${alpha})`);
+    g.addColorStop(1,'rgba(186,204,212,0)');
+    ctx.fillStyle=g;
+    ctx.beginPath(); ctx.ellipse(x,yy,w*0.5,h*0.5,0,0,7); ctx.fill();
+  }
+  ctx.restore();
+}
+function rain(f,amount,slant){
+  const rnd=mulberry32(77);
+  ctx.save(); ctx.strokeStyle='rgba(190,210,225,0.35)'; ctx.lineWidth=2;
+  for(let i=0;i<amount;i++){
+    const sx=rnd()*W, sy=rnd()*H, sp=lerp(26,54,rnd());
+    const y=(sy + f*sp*1.6)%(H+200)-100;
+    const x=(sx + y*slant)%(W+200)-100;
+    ctx.beginPath(); ctx.moveTo(x,y); ctx.lineTo(x-slant*26,y+26); ctx.stroke();
+  }
+  ctx.restore();
+}
+
+/* =========================================================================
+   5. 地図シーンの描画
+   ========================================================================= */
+function drawMap(t,opt){
+  const o=Object.assign({reveal:1, road:0, roadExt:0, heli:0, teams:0,
+    markers:{}, banZone:0, cage:0, focus:null, zoom:1, label:true}, opt);
+  ctx.save();
+  // ズーム（注目点へ寄る）
+  if(o.focus){
+    const fx=mx(o.focus), fy=my(o.focus);
+    ctx.translate(W/2,H/2); ctx.scale(o.zoom,o.zoom); ctx.translate(-fx,-fy);
+  }
+  ctx.fillStyle='#0a0d10'; ctx.fillRect(-W,-H,W*3,H*3);
+  ctx.save();
+  ctx.beginPath(); ctx.rect(MAP.x, MAP.y, MAP.w*clamp(o.reveal*1.15,0,1), MAP.h); ctx.clip();
+  ctx.imageSmoothingEnabled=true;
+  ctx.globalAlpha=0.95;
+  ctx.drawImage(shade, MAP.x, MAP.y, MAP.w, MAP.h);
+  ctx.globalAlpha=1;
+  // 等高線
+  LEVELS.forEach(L=>{
+    ctx.beginPath();
+    for(const s of L.segs){ ctx.moveTo(MAP.x+s[0],MAP.y+s[1]); ctx.lineTo(MAP.x+s[2],MAP.y+s[3]); }
+    ctx.strokeStyle = L.major? 'rgba(150,178,168,0.40)' : 'rgba(126,152,146,0.20)';
+    ctx.lineWidth  = L.major? 2.0 : 1.2;
+    ctx.stroke();
+  });
+  ctx.restore();
+
+  // 入山禁止の範囲
+  if(o.banZone>0){
+    ctx.save(); ctx.globalAlpha=o.banZone*0.5;
+    const cx=mx([0.53,0])/1, cy=my([0,0.52]);
+    ctx.setLineDash([16,12]); ctx.lineDash;
+    ctx.strokeStyle='#e0533f'; ctx.lineWidth=4;
+    ctx.beginPath(); ctx.ellipse(mx([0.53,0]), my([0,0.54]), 330*o.banZone, 250*o.banZone, -0.2, 0, 7); ctx.stroke();
+    ctx.fillStyle='rgba(224,83,63,0.10)'; ctx.fill();
+    ctx.setLineDash([]);
+    ctx.restore();
+  }
+
+  // 林道
+  if(o.road>0){
+    ctx.save();
+    ctx.lineCap='round'; ctx.lineJoin='round';
+    ctx.strokeStyle='rgba(20,24,28,0.85)'; ctx.lineWidth=13; pathThrough(roadPts,o.road); ctx.stroke();
+    ctx.strokeStyle='#d8cfbc'; ctx.lineWidth=6; pathThrough(roadPts,o.road); ctx.stroke();
+    if(o.roadExt>0){
+      ctx.strokeStyle='rgba(20,24,28,0.85)'; ctx.lineWidth=15; pathThrough(roadExt,o.roadExt); ctx.stroke();
+      ctx.setLineDash([18,10]);
+      ctx.strokeStyle='#c9a227'; ctx.lineWidth=7; pathThrough(roadExt,o.roadExt); ctx.stroke();
+      ctx.setLineDash([]);
+    }
+    ctx.restore();
+  }
+
+  // 捜索の隊（林道上を動く点）
+  if(o.teams>0){
+    const n=6;
+    for(let i=0;i<n;i++){
+      const pr=((t*0.10 + i/n)%1)*0.92;
+      const at=pr*(roadPts.length-1);
+      const k=Math.floor(at), fr=at-k;
+      const a=roadPts[Math.min(k,roadPts.length-2)], b=roadPts[Math.min(k+1,roadPts.length-1)];
+      const x=lerp(mx(a),mx(b),fr), y=lerp(my(a),my(b),fr);
+      ctx.save(); ctx.globalAlpha=o.teams;
+      ctx.fillStyle='#7fc8e8';
+      ctx.beginPath(); ctx.arc(x,y,7,0,7); ctx.fill();
+      ctx.shadowColor='#7fc8e8'; ctx.shadowBlur=18;
+      ctx.beginPath(); ctx.arc(x,y,7,0,7); ctx.fill();
+      ctx.restore();
+    }
+  }
+
+  // ヘリ（旋回）
+  if(o.heli>0){
+    const a=t*1.15;
+    const cx=mx([0.60,0]), cy=my([0,0.45]);
+    const hx=cx+Math.cos(a)*250, hy=cy+Math.sin(a)*150;
+    ctx.save(); ctx.globalAlpha=o.heli;
+    ctx.setLineDash([10,14]); ctx.strokeStyle='rgba(127,200,232,0.45)'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.ellipse(cx,cy,250,150,0,0,7); ctx.stroke(); ctx.setLineDash([]);
+    ctx.translate(hx,hy); ctx.rotate(a+Math.PI/2);
+    ctx.fillStyle='#e6eef2';
+    ctx.beginPath(); ctx.ellipse(0,0,9,20,0,0,7); ctx.fill();
+    ctx.fillRect(-4,14,8,26);
+    const rot=t*40;
+    ctx.strokeStyle='rgba(230,238,242,0.8)'; ctx.lineWidth=3;
+    ctx.beginPath(); ctx.moveTo(-Math.cos(rot)*42,-Math.sin(rot)*42); ctx.lineTo(Math.cos(rot)*42,Math.sin(rot)*42); ctx.stroke();
+    ctx.restore();
+  }
+
+  // おり
+  if(o.cage>0){
+    ctx.save(); ctx.globalAlpha=o.cage;
+    const x=mx(P.cage), y=my(P.cage);
+    ctx.strokeStyle='#d8cfbc'; ctx.lineWidth=3;
+    ctx.strokeRect(x-22,y-16,44,32);
+    for(let i=1;i<4;i++){ ctx.beginPath(); ctx.moveTo(x-22+i*11,y-16); ctx.lineTo(x-22+i*11,y+16); ctx.stroke(); }
+    ctx.restore();
+  }
+
+  // 地点マーカー
+  const markerDefs=[
+    ['park','駐車場','#9fb3bd',22,-12,'left'],
+    ['pack','リュックと拡声器','#e8d9a0',22,-12,'left'],
+    ['found','佐藤さんが見つかった斜面','#e0533f',22,-30,'left'],
+    ['attack','警察官2人が襲われた','#e0533f',-22,34,'right'],
+  ];
+  markerDefs.forEach(([key,label,col,ox,oy,align])=>{
+    const a=o.markers[key]||0;
+    if(a<=0.01) return;
+    const x=mx(P[key]), y=my(P[key]);
+    ctx.save(); ctx.globalAlpha=clamp(a,0,1);
+    // 出現時の波紋
+    const pulse=(t*0.9)%1;
+    ctx.strokeStyle=col; ctx.globalAlpha=clamp(a,0,1)*(1-pulse)*0.5; ctx.lineWidth=3;
+    ctx.beginPath(); ctx.arc(x,y,10+pulse*34,0,7); ctx.stroke();
+    ctx.globalAlpha=clamp(a,0,1);
+    ctx.fillStyle=col;
+    ctx.beginPath(); ctx.arc(x,y,9,0,7); ctx.fill();
+    ctx.strokeStyle='rgba(10,13,16,0.9)'; ctx.lineWidth=3; ctx.stroke();
+    if(o.label){
+      ctx.font=jpFont(30,500,false);
+      const tw=ctx.measureText(label).width;
+      const lx=x+ox, ly=y+oy;
+      const bx = align==='right' ? lx-tw-10 : lx-10;
+      ctx.fillStyle='rgba(8,11,14,0.78)';
+      ctx.fillRect(bx,ly-24,tw+20,44);
+      ctx.fillStyle='#eae6de'; ctx.textBaseline='middle'; ctx.textAlign=align;
+      ctx.fillText(label,lx,ly);
+    }
+    ctx.restore();
+  });
+  ctx.restore();
+
+  // 右上の注記
+  ctx.save();
+  ctx.globalAlpha=0.55*o.reveal; ctx.font=jpFont(24,400,false); ctx.textAlign='right'; ctx.textBaseline='alphabetic';
+  ctx.fillStyle='#cfd5d8';
+  ctx.fillText('秋田県鹿角市 大平地区（位置関係は模式図）', W-90, 92);
+  ctx.restore();
+  vignette(0.55);
+}
+
+/* =========================================================================
+   6. シーン（0〜60秒）
+   ========================================================================= */
+/* --- S1: タイトル（地図が立ち上がる） 0-5s --- */
+function sceneTitle(t){
+  const r=ramp(t,0.3,3.2);
+  drawMap(t,{reveal:r, road:ramp(t,1.6,3.4)*1, markers:{}, label:false});
+  const a=band(t,0.6,5.0,0.8,0.6);
+  ctx.save(); ctx.globalAlpha=a; ctx.textAlign='center';
+  ctx.fillStyle='rgba(6,9,12,0.55)'; ctx.fillRect(0,H*0.30,W,300);
+  textShadow(true);
+  ctx.font=jpFont(96,600,true); ctx.fillStyle='#f4f1ea';
+  ctx.fillText('2024年5月　秋田県鹿角市 大平',W/2,H*0.44);
+  ctx.font=jpFont(44,400,true); ctx.fillStyle='#c9a227';
+  ctx.fillText('タケノコ採りの男性が戻らなかった　—　その後の19日間',W/2,H*0.53);
+  textShadow(false);
+  ctx.restore();
+}
+
+/* --- S2: 5/15 入山（キャラ：笹薮を歩く） 5-13s --- */
+function sceneEnter(t){
+  const lt=t-5;
+  const hz=H*0.58;
+  charBackdrop(lt,{horizon:hz, top:'#0f1a24', glow:'#6d94a8', seed:11});
+  // 奥の笹
+  sasa(101, H*0.79, 150, 26, 74, 'rgba(12,20,25,1)', lt, 5, 0);
+  // 人物（右へ歩く）
+  const walkX = lerp(W*0.18, W*0.66, ease(clamp(lt/6.6,0,1)));
+  silhouette(drawHuman,{x:walkX, y:H*0.76, s:2.05, phase:lt*4.6, mode:'walk', pack:true});
+  // 手前の笹（足元だけ隠す）
+  sasa(202, H*1.02, 90, 130, 250, 'rgba(6,11,13,1)', lt, 11, 0);
+  sasa(303, H*1.08, 44, 190, 330, 'rgba(3,6,8,1)', lt, 15, 0);
+  mist(lt, H*0.93, 0.05, 2, 9);
+  vignette(0.5);
+  dateChip('5月15日', band(lt,0.4,7.9,0.5,0.5));
+  caption(['佐藤宏さん（64）は、タケノコを採りに山へ入った','この日から、行方が分からなくなった'], band(lt,1.0,7.7,0.7,0.6));
+}
+
+/* --- S3: 5/15 午前9時ごろ リュックと声 13-19s --- */
+function scenePack(t){
+  const lt=t-13;
+  const hz=H*0.58;
+  charBackdrop(lt,{horizon:hz, top:'#11202b', glow:'#7ba3b6', seed:29});
+  sasa(101, H*0.81, 150, 26, 74, 'rgba(12,20,25,1)', lt, 5, 0);
+  // 置かれたリュックと拡声器
+  const gx=W*0.36, gy=H*0.78;
+  ctx.save(); ctx.fillStyle='#05070a';
+  ctx.beginPath(); ctx.ellipse(gx,gy-70,84,78,-0.1,0,7); ctx.fill();
+  ctx.fillRect(gx-24,gy-146,46,38);
+  ctx.beginPath(); ctx.ellipse(gx+132,gy-34,42,30,0.2,0,7); ctx.fill();
+  ctx.restore();
+  // 電子音の波紋
+  const beep=(lt*0.8)%1;
+  ctx.save(); ctx.strokeStyle='rgba(201,162,39,0.55)'; ctx.lineWidth=3;
+  for(let i=0;i<3;i++){
+    const p=(beep+i/3)%1;
+    ctx.globalAlpha=(1-p)*0.6;
+    ctx.beginPath(); ctx.arc(gx+132,gy-34,28+p*200,-0.9,0.9); ctx.stroke();
+  }
+  ctx.restore();
+  // 知人A（立って藪へ呼びかける）
+  silhouette(drawHuman,{x:W*0.70, y:H*0.76, s:2.0, phase:lt*2, mode:'stand', flip:-1});
+  sasa(202, H*1.02, 90, 130, 250, 'rgba(6,11,13,1)', lt, 11, 0);
+  mist(lt, H*0.95, 0.05, 2, 9);
+  vignette(0.5);
+  dateChip('5月15日 午前9時ごろ', band(lt,0.3,5.9,0.5,0.5));
+  caption(['知人はリュックと、電子音の出る拡声器を見つけたという','藪の奥から返事が聞こえた、と本人は語っている'], band(lt,0.7,5.7,0.7,0.6));
+}
+
+/* --- S4: 遭遇（キャラ：藪が揺れてクマが現れる） 19-27s --- */
+function sceneBear(t){
+  const lt=t-19;
+  const hz=H*0.58;
+  charBackdrop(lt,{horizon:hz, top:'#0d1620', glow:'#648 da0'.replace(' ',''), seed:43});
+  // 揺れる藪（登場前に強く揺れる）
+  const shakeGain = band(lt,0.6,3.4,0.5,0.8)*20;
+  sasa(101, H*0.81, 160, 30, 90, 'rgba(12,20,25,1)', lt, 5+shakeGain*0.4, 0);
+  // クマ（右から歩いて来て、手前で立ち上がる）
+  const appear = ramp(lt,2.2,5.0);
+  const bx = lerp(W*1.16, W*0.62, ease(appear));
+  const rear = ramp(lt,5.2,6.2);
+  if(rear<0.5){
+    silhouette(drawBear,{x:bx, y:H*0.78, s:2.0*lerp(0.86,1.0,appear), phase:lt*5.0, mode:'walk', flip:-1});
+  } else {
+    silhouette(drawBear,{x:W*0.62, y:H*0.78, s:2.2, phase:lt*3.0, mode:'rear', flip:-1});
+  }
+  // 手前の笹
+  sasa(202, H*1.02, 100, 140, 270, 'rgba(6,11,13,1)', lt, 12+shakeGain*0.3, 0);
+  sasa(303, H*1.08, 46, 200, 350, 'rgba(3,6,8,1)', lt, 16, 0);
+  mist(lt, H*0.94, 0.05, 2, 9);
+  vignette(0.52);
+  // 息づかいのような明滅
+  ctx.save(); ctx.globalAlpha=0.06+0.05*Math.sin(lt*3.4); ctx.fillStyle='#000'; ctx.fillRect(0,0,W,H); ctx.restore();
+  dateChip('', 0);
+  caption(['この山では、クマの目撃が相次いでいた','※ 何が起きたかは確認されていない　再現ではなく状況の図解'], band(lt,1.2,7.6,0.8,0.7));
+}
+
+/* --- S5: 5/16-17 捜索 27-34s --- */
+function sceneSearch(t){
+  const lt=t-27;
+  const zoom=lerp(1.0,1.18,ease(clamp(lt/6.8,0,1)));
+  drawMap(t,{reveal:1, road:1, heli:ramp(lt,0.6,1.6), teams:ramp(lt,0.3,1.2),
+    markers:{park:1, pack:ramp(lt,0.2,1.0)}, focus:[0.50,0.58], zoom:zoom});
+  // 17日の雨
+  const rainA=band(lt,4.2,7.0,0.6,0.5);
+  if(rainA>0.01){ ctx.save(); ctx.globalAlpha=rainA; rain(t*FPS,260,0.35); ctx.restore(); }
+  dateChip(lt<4.0?'5月16日':'5月17日', band(lt,0.3,6.9,0.5,0.5));
+  caption(lt<4.0
+    ? ['警察と消防が地上で交代しながら捜索した','ヘリコプターも使われた']
+    : ['17日は雨と風が強く、隊は待機した'],
+    band(lt,0.6,3.9,0.5,0.4)+band(lt,4.3,6.8,0.5,0.4));
+  timeline(lerp(1/19,2/19,clamp(lt/6.8,0,1)),0.9);
+}
+
+/* --- S6: 5/18 発見 34-38s --- */
+function sceneFound(t){
+  const lt=t-34;
+  drawMap(t,{reveal:1, road:1, heli:0, teams:0.5,
+    markers:{pack:1, found:ramp(lt,0.6,1.4)}, focus:[0.60,0.44], zoom:lerp(1.18,1.45,ease(clamp(lt/3.8,0,1)))});
+  dateChip('5月18日 午前9時半ごろ', band(lt,0.2,3.9,0.5,0.5));
+  caption(['知人ともう1人が山へ入り、斜面の上で佐藤さんを見つけた'], band(lt,0.5,3.8,0.6,0.5));
+  timeline(3/19,0.9);
+}
+
+/* --- S7: 5/18 搬送中に警察官2人が襲われる（キャラ） 38-46s --- */
+function sceneAttack(t){
+  const lt=t-38;
+  const hz=H*0.52;
+  charBackdrop(lt,{horizon:hz, top:'#111c26', glow:'#6c93a6', seed:61});
+  // 斜面（右上が高い）
+  const sg2=ctx.createLinearGradient(0,hz,0,H);
+  sg2.addColorStop(0,'#17232b'); sg2.addColorStop(1,'#070c10');
+  ctx.fillStyle=sg2;
+  ctx.beginPath(); ctx.moveTo(0,H*1.02); ctx.lineTo(W,hz+4); ctx.lineTo(W,H); ctx.lineTo(0,H); ctx.fill();
+  sasa(101, H*0.80, 140, 26, 80, 'rgba(12,20,25,1)', lt, 6, 0);
+
+  // クマ（斜面の上手に現れる）
+  const bearA=ramp(lt,1.4,2.6);
+  if(bearA>0.02){
+    ctx.save(); ctx.globalAlpha=bearA;
+    silhouette(drawBear,{x:lerp(W*1.14,W*0.90,bearA), y:hz+96, s:1.05, phase:lt*6, mode:'walk', flip:-1});
+    ctx.restore();
+  }
+  // 逃げる2人（右上から左下へ）
+  const p1=ease(clamp((lt-2.4)/4.2,0,1)), p2=ease(clamp((lt-2.9)/4.2,0,1));
+  silhouette(drawHuman,{x:lerp(W*0.70,W*0.12,p1), y:lerp(hz+190,H*0.88,p1), s:lerp(1.45,2.10,p1), phase:lt*7.4, mode:'run', flip:-1, lean:6});
+  silhouette(drawHuman,{x:lerp(W*0.86,W*0.34,p2), y:lerp(hz+150,H*0.81,p2), s:lerp(1.35,1.95,p2), phase:lt*7.4+2.1, mode:'run', flip:-1, lean:6});
+  sasa(202, H*1.04, 90, 150, 290, 'rgba(6,11,13,1)', lt, 13, 0);
+  mist(lt, H*0.95, 0.05, 2, 9);
+  vignette(0.52);
+  // 赤い警告の明滅
+  ctx.save(); ctx.globalAlpha=band(lt,1.8,5.4,0.3,1.0)*(0.05+0.05*Math.sin(lt*9));
+  ctx.fillStyle='#e0533f'; ctx.fillRect(0,0,W,H); ctx.restore();
+  dateChip('5月18日', band(lt,0.3,7.7,0.5,0.5));
+  caption(['佐藤さんを運び出そうとしていた警察官2人が、相次いでクマに襲われた','25歳と45歳の男性　搬送作業は中断した'], band(lt,0.8,7.6,0.7,0.6));
+}
+
+/* --- S8: 5/18夜〜5/19 入山禁止・おり 46-51s --- */
+function sceneBan(t){
+  const lt=t-46;
+  drawMap(t,{reveal:1, road:1, heli:band(lt,2.4,5.0,0.6,0.4), teams:0,
+    markers:{found:1, attack:ramp(lt,0.1,0.8)}, banZone:ramp(lt,0.4,1.6),
+    cage:ramp(lt,1.4,2.2), focus:[0.55,0.50], zoom:1.25});
+  dateChip(lt<2.4?'5月18日 夜':'5月19日', band(lt,0.2,4.9,0.4,0.4));
+  caption(lt<2.4
+    ? ['県の緊急対策会議で、現場付近の入山禁止と、捕獲用のおりの設置が報告された']
+    : ['19日はヘリと猟友会が現場を確認したが、クマは見つからなかった'],
+    band(lt,0.5,2.3,0.4,0.3)+band(lt,2.6,4.8,0.4,0.4));
+  timeline(lerp(3/19,4/19,clamp(lt/4.9,0,1)),0.9);
+}
+
+/* --- S9: 5/21-22 重機で道を広げ、搬出 51-56s --- */
+function sceneRoad(t){
+  const lt=t-51;
+  drawMap(t,{reveal:1, road:1, roadExt:ramp(lt,0.4,3.0), teams:ramp(lt,2.8,3.6),
+    markers:{found:1}, focus:[0.55,0.50], zoom:1.25});
+  dateChip(lt<2.6?'5月21日':'5月22日', band(lt,0.2,4.9,0.4,0.4));
+  caption(lt<2.6
+    ? ['現場へ車を近づけるため、重機で林道を広げた']
+    : ['22日午前11時ごろ出発し、午後1時前に佐藤さんを運び出した'],
+    band(lt,0.5,2.5,0.4,0.3)+band(lt,2.8,4.8,0.4,0.4));
+  timeline(lerp(6/19,7/19,clamp(lt/4.9,0,1)),0.9);
+}
+
+/* --- S10: 5/23-6/3 その後 56-60s --- */
+function sceneAfter(t){
+  const lt=t-56;
+  drawMap(t,{reveal:1, road:1, roadExt:1, markers:{}, cage:1, focus:[0.52,0.52], zoom:lerp(1.25,1.02,ease(clamp(lt/3.4,0,1))), label:false});
+  ctx.save(); ctx.globalAlpha=ramp(lt,0.2,1.2)*0.62; ctx.fillStyle='#05080b'; ctx.fillRect(0,0,W,H); ctx.restore();
+  const rows=[
+    ['5月23日','司法解剖。死因の特定には至らず、失血死の可能性と伝えられた'],
+    ['5月31日','現場周辺のおりで、雌のクマ1頭が捕獲された'],
+    ['6月3日','毛の状態が悪く、DNA鑑定では個体を特定できなかった'],
+  ];
+  ctx.save(); ctx.textAlign='left'; ctx.textBaseline='middle';
+  rows.forEach((r,i)=>{
+    const a=band(lt,0.5+i*0.55, 4.0, 0.5, 0.0);
+    if(a<=0.01) return;
+    ctx.globalAlpha=a;
+    const y=H*0.40+i*110;
+    ctx.font=jpFont(40,600,true); ctx.fillStyle='#c9a227';
+    ctx.fillText(r[0], W*0.20, y);
+    ctx.font=jpFont(40,400,true); ctx.fillStyle='#eae6de';
+    ctx.fillText(r[1], W*0.20+190, y);
+  });
+  ctx.restore();
+  timeline(lerp(8/19,1,clamp(lt/3.2,0,1)), band(lt,0,3.2,0.3,0.6));
+  // 終幕
+  const fo=ramp(lt,3.2,4.0);
+  if(fo>0){ ctx.save(); ctx.globalAlpha=fo; ctx.fillStyle='#000'; ctx.fillRect(0,0,W,H); ctx.restore(); }
+}
+
+/* =========================================================================
+   7. タイムライン制御
+   ========================================================================= */
+const SCENES=[
+  [0,  5,  sceneTitle],
+  [5,  13, sceneEnter],
+  [13, 19, scenePack],
+  [19, 27, sceneBear],
+  [27, 34, sceneSearch],
+  [34, 38, sceneFound],
+  [38, 46, sceneAttack],
+  [46, 51, sceneBan],
+  [51, 56, sceneRoad],
+  [56, 60, sceneAfter],
+];
+function renderFrame(f){
+  const t=f/FPS;
+  ctx.setTransform(1,0,0,1,0,0);
+  ctx.fillStyle='#000'; ctx.fillRect(0,0,W,H);
+  ctx.textAlign='left'; ctx.textBaseline='alphabetic'; ctx.globalAlpha=1;
+  const sc=SCENES.find(s=>t>=s[0]&&t<s[1]) || SCENES[SCENES.length-1];
+  sc[2](t);
+  // シーン切替の黒フェード（各シーン境界±0.25秒）
+  ctx.setTransform(1,0,0,1,0,0);
+  let cut=0;
+  SCENES.forEach(s=>{
+    if(s[0]===0) return;
+    const d=Math.abs(t-s[0]);
+    if(d<0.28) cut=Math.max(cut, 1-d/0.28);
+  });
+  if(cut>0){ ctx.save(); ctx.globalAlpha=cut*0.95; ctx.fillStyle='#000'; ctx.fillRect(0,0,W,H); ctx.restore(); }
+  grain(f, 0.035);
+  return true;
+}
+window.renderFrame=renderFrame;
+window.META={W,H,FPS,TOTAL,DURATION};
+
+/* ブラウザで開いたときは実時間で再生（確認用） */
+let playing = !window.__capture;
+let t0=null;
+function loop(ts){
+  if(!playing) return;
+  if(t0===null) t0=ts;
+  const f=Math.floor((ts-t0)/1000*FPS)%TOTAL;
+  renderFrame(f);
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+window.stopPlayback=()=>{playing=false;};
+</script>
+</body>
+</html>

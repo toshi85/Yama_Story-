@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-105",
+  "verdict": "FAIL",
+  "subject": "町の職員・クマ・駆除",
+  "evidence": "A full-body Japanese male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black shoes",
+  "missing": "クマが描かれていない",
+  "reason": "町の職員は描かれているが、ナレーションに登場するクマはプロンプトに登場しない。"
+}

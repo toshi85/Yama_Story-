@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-210",
+  "verdict": "FAIL",
+  "subject": "釣賀室長・人・クマ",
+  "evidence": "A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top",
+  "missing": "クマが描かれていない。",
+  "reason": "ナレーションに登場する釣賀室長と人は描かれているが、クマはプロンプトに登場しない。"
+}

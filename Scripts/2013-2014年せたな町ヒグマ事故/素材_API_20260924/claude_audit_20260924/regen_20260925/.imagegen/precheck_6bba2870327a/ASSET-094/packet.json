@@ -1,0 +1,21 @@
+{
+  "id": "ASSET-094",
+  "narration": "念のため、1年前に人を襲い逃げ延びたとされるクマのDNAと照合することにしました。",
+  "asset_type": "Lovart動画",
+  "scene": "研究室の机の上で、白衣の袖の手袋の両手が、2014年の試料と1年前の試料の試験管2本を並べて照合にかかる（実写・手元）。091〜093がキャラなので、ここは実写にしてキャラの4連続を避ける。",
+  "fences": [
+    {
+      "label": "静止画プロンプト（16:9・フォトリアル）:",
+      "language": "",
+      "text": "A small genetics laboratory bench in a research facility in Hokkaido, in early April early spring: two gloved Japanese hands in white lab-coat sleeves hold two small clear sample tubes with plain white caps side by side just above a rack of tubes, a pipette and a small centrifuge beside them, a computer monitor behind showing only an abstract pattern, a window with bare brown trees outside, No snow anywhere, no frost, no ice, no winter. Only the hands and forearms are visible, no face visible. The tubes are clear, nothing red and nothing stained. No readable text or labels on the tubes, no real institution name, no crest, no emblem, no logo. Captured as a frozen moment. Framed from about one metre away at bench height, the upper third left as clean open space. Tense, focused cool daylight, NOT pure black, the bench clearly readable, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+    },
+    {
+      "label": "Google Flow動画プロンプト:",
+      "language": "",
+      "text": "One single continuous close shot on a laboratory bench: two gloved hands in white lab-coat sleeves bring two small capped sample tubes side by side, pause, then set them carefully into the rack next to each other. The camera pushes in very slowly. Only hands and forearms appear, no face visible. No readable labels. No cuts, no scene change. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。左右の試験管の上に「2014年」「2013年」を白字で小さく置く。中央に「前年のDNAと照合」を白字で表示し、「DNA」だけ赤字。"
+  ]
+}

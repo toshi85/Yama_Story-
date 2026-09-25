@@ -1,0 +1,4526 @@
+{
+ "ASSET-001": {
+  "still": {
+   "path": "画像/ASSET-001_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "5a695684522dec9ae278c50ccfa05777f0c6e14ecaab8da2d5ded50f336ba634"
+  },
+  "video": {
+   "path": "動画/ASSET-001_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "6ecb6c48bba0082b50e36c7bd089d1ce8ab6a67c4704d486fd45440703bbc69b"
+  }
+ },
+ "ASSET-002": {
+  "still": {
+   "path": "画像/ASSET-002_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "78e329b1b70a80e534c31689bf76b66d18efe9200b322545b97ffc9c1e9ea29f"
+  },
+  "video": {
+   "path": "動画/ASSET-002_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "c10f8da71a1bc25f7128b2262fc45918add7cbcca7a99bfa41ec00e3cdd5b738"
+  }
+ },
+ "ASSET-003": {
+  "still": {
+   "path": "画像/ASSET-003_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "1f9d5a0a8dfa127fced736fd40d5d66aa3d9bb1fa08f60b244f8e6471db5cbce"
+  },
+  "video": {
+   "path": "動画/ASSET-003_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "44c03e44c6e368fcc052489649f211e858e99575ea6ee3196f2668c93999a3b4"
+  }
+ },
+ "ASSET-004": {
+  "still": {
+   "path": "画像/ASSET-004_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "a5e2e6a146527f7c0d7f1588d614fe58b4c2602cd3941038e60a3d61193e984c"
+  }
+ },
+ "ASSET-005": {
+  "still": {
+   "path": "画像/ASSET-005_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "0e7e3a81bec1b6e9b696a6c5d318bbd8832b81c042b3e4d781dd636346e182a8"
+  },
+  "video": {
+   "path": "動画/ASSET-005_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "601658f0fab4ed96095c5ce8cc878c5406ccf33af808eec568c59db80a25cfa4"
+  }
+ },
+ "ASSET-006": {
+  "still": {
+   "path": "画像/ASSET-006_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "4d43b8c687b7b806d9d0007e65dc75304cd60d3144c8444e0c884fb0fc220597"
+  }
+ },
+ "ASSET-007": {
+  "still": {
+   "path": "画像/ASSET-007_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "17bb1e3a87fbbd5cab9f91227f009b860134faec34cf6ffb7f4a20f6b07487ed"
+  }
+ },
+ "ASSET-008": {
+  "still": {
+   "path": "画像/ASSET-008_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "6727ae2d15c4a504bfc847083aba5491bc8991e2f84c763f0bb80c57b5566418"
+  },
+  "video": {
+   "path": "動画/ASSET-008_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "4255da9342a6017cb755aac6046b8156b012d403e15d5377d005b04ddbc473f6"
+  }
+ },
+ "ASSET-009": {
+  "still": {
+   "path": "画像/ASSET-009_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "3342a3a83957862a00352a60b927e280913fbf1cb902e3a06ad5ef07b536946f"
+  },
+  "video": {
+   "path": "動画/ASSET-009_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "fa7289444c8b5dffa0a1b7bae3fb85fe83d8563d8d40768a7e640f1791a8820b"
+  }
+ },
+ "ASSET-010": {
+  "still": {
+   "path": "画像/ASSET-010_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "b93a96297d62bd6572fc41324c4d9fa40acfe442f3a9be152e24b8a8733338ed"
+  }
+ },
+ "ASSET-011": {
+  "still": {
+   "path": "画像/ASSET-011_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "bcc0a3f2ad65dbd8a76bdf3b0ee3d20b50d58ae899719de0ad0af2029d90efee"
+  },
+  "video": {
+   "path": "動画/ASSET-011_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "03596be900761b9cc307d75c8e0bbed222ad8dd80b5a91d875324a270967f69e"
+  }
+ },
+ "ASSET-014": {
+  "still": {
+   "path": "画像/ASSET-014_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "e73e1938b9877615b7f359327b1de5b8b8ff386480ac3b611570e0bceb3f8d82"
+  }
+ },
+ "ASSET-015": {
+  "char": {
+   "path": "画像/ASSET-015_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.723
+   },
+   "sha256": "64320ffef0fb9fb7a3d479d0eb4eb59a45f99641af0dad822a440a1c83a311db"
+  },
+  "still": {
+   "path": "画像/ASSET-015_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "367e359f90f6cabbd749921ae4cd152e2b5bfba847fd295082e62a1aa6ceffc9"
+  },
+  "video": {
+   "path": "動画/ASSET-015_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "09a16b90e6c34681e2126e185465c6309f465dd16d545da74e9d2749c58c3c8c"
+  }
+ },
+ "ASSET-016": {
+  "still": {
+   "path": "画像/ASSET-016_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "5c23315d074ebbd4f6208f5218339e7cd27584f9719de822d75579b09a2bb9d8"
+  }
+ },
+ "ASSET-017": {
+  "char": {
+   "path": "画像/ASSET-017_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.706
+   },
+   "sha256": "d25b7b9eed5bdbe6d0e01bba2a799fe3fdf3ad7a342b398612d936cc85a7fa1a"
+  },
+  "still": {
+   "path": "画像/ASSET-017_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "eb181e19af69f58710712966178e19dbf05ac5c9d365585e6a6d9438a449d3cb"
+  }
+ },
+ "ASSET-019": {
+  "bg": {
+   "path": "画像/ASSET-019_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "c9855d41a50c708d7764b2131305454de932f474615b9a76ef94cfe90a4fe20b"
+  },
+  "char": {
+   "path": "画像/ASSET-019_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.712
+   },
+   "sha256": "5e6160d6116fa1562cbab21f3021796e682c7ed64e31e31df3758f9fba6197aa"
+  }
+ },
+ "ASSET-020": {
+  "char": {
+   "path": "画像/ASSET-020_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.667
+   },
+   "sha256": "98d8765ee6837e82974b5c9c8a5d0208b33d03d526567fd3498fadea48b7addf"
+  },
+  "still": {
+   "path": "画像/ASSET-020_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "838ae80d2fccfba77ea2a043b1fc44ab3d2dba69869a1076b92c5bf4eeaf4a16"
+  }
+ },
+ "ASSET-021": {
+  "still": {
+   "path": "画像/ASSET-021_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "b0922ffe759831f45b310323bc6dc6ac2b8bd4c6d6bed20761726eb15d108502"
+  }
+ },
+ "ASSET-022": {
+  "bg": {
+   "path": "画像/ASSET-022_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "12ffea524c532777e85a61ce2b5a0c717c9bac4a6a3ec863f2d548fbf1cf2f03"
+  },
+  "char": {
+   "path": "画像/ASSET-022_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.711
+   },
+   "sha256": "219d8dba118455527bc5d5670a820176e81bfb0877411519b98f9c8df57dce60"
+  }
+ },
+ "ASSET-023": {
+  "char": {
+   "path": "画像/ASSET-023_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.701
+   },
+   "sha256": "42b98d0b59fae5a248ebfbb144161947c9b9fe261872c85574f771e1a9407420"
+  },
+  "still": {
+   "path": "画像/ASSET-023_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "fcaa60bb08d900e7689e3722c80d8f9629267b811f9987c972e83c0440bf72ab"
+  },
+  "video": {
+   "path": "動画/ASSET-023_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "2291379afb503d6901492f0d2cf37826ea939d05f0b880b0d2edd796bff1b689"
+  }
+ },
+ "ASSET-025": {
+  "char": {
+   "path": "画像/ASSET-025_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.65
+   },
+   "sha256": "8e91df1e867c2410c3ef66c4ac92b72d9ed68210b6ae0103b25c5347cfca6c08"
+  },
+  "still": {
+   "path": "画像/ASSET-025_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "d9c6a83af275b97fd19f5ada5283ff6800a2ba3a047df94ddab1148e8728aed5"
+  },
+  "video": {
+   "path": "動画/ASSET-025_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "14e0d34e8e4f850f269962476797688b56b2c57493d6e7919694231645eccba7"
+  }
+ },
+ "ASSET-026": {
+  "char": {
+   "path": "画像/ASSET-026_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.682
+   },
+   "sha256": "4f10609acb86ba2cecf5e6e8b408006ea1597ba00b12c5aadc474617f023f65c"
+  },
+  "still": {
+   "path": "画像/ASSET-026_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "7a0f9cbd1f5f8b434ca3055bd72abff792e752acde24bb069f7e860fd67926ae"
+  },
+  "video": {
+   "path": "動画/ASSET-026_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "4a4b82da2abc016deb6a90f9af432b269af95747182cb0177b82ba54f9ffe8be"
+  }
+ },
+ "ASSET-027": {
+  "still": {
+   "path": "画像/ASSET-027_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "588a117f6255a7a5334ee0b33b6f03706caf2d767c3bcb353d51aa6574c44eb9"
+  },
+  "video": {
+   "path": "動画/ASSET-027_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "daa0e197cf2144650020a5f51de905ad3efe67062ba99c073883dfef43ef8653"
+  }
+ },
+ "ASSET-028": {
+  "char": {
+   "path": "画像/ASSET-028_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.656
+   },
+   "sha256": "ff6b60cd16ae1e425bd7d84ccc1e2f7bd0ce45189c5d58c7e09076bf82e5427e"
+  },
+  "still": {
+   "path": "画像/ASSET-028_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "33dc06326941085f89ab41b1d8252b75b87592f0c922dab0d14749d675fdd09e"
+  }
+ },
+ "ASSET-030": {
+  "still": {
+   "path": "画像/ASSET-030_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "4e01b71d186251ff51e5636eb4cbbe241e27d5cefac56462d9ac214047ec8dce"
+  }
+ },
+ "ASSET-031": {
+  "char": {
+   "path": "画像/ASSET-031_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.683
+   },
+   "sha256": "294d65b3f309aeb577460871b3718765e8bb857e1cf2e4e8e6fc3863d5d6bb69"
+  },
+  "still": {
+   "path": "画像/ASSET-031_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "ddef64fea4b5f9cb14890e002f9165457abaabfa765c847426c860137c7a7cd6"
+  },
+  "video": {
+   "path": "動画/ASSET-031_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "a08c7efb500c4768f38959b3efaf86bb7aab412ee9f1fc9726870321cbc7347f"
+  }
+ },
+ "ASSET-032": {
+  "still": {
+   "path": "画像/ASSET-032_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "79a7b0d885edb51b79ff63098409f6ca2bf8baa87ddbb742f792372a3233fc39"
+  }
+ },
+ "ASSET-033": {
+  "char": {
+   "path": "画像/ASSET-033_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.675
+   },
+   "sha256": "2eb846560414808c88b22e36ea6d6b5d1d96ca06a318a0cf57b2f128c8075651"
+  },
+  "still": {
+   "path": "画像/ASSET-033_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "67bd5e1a738a2f8b9307e50edde4a3ef644cccd7897f0b5074419b560b0fee68"
+  },
+  "video": {
+   "path": "動画/ASSET-033_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "2184b223d9303c2554b658a7d5e23582b5cd3acf0ab4b617c4710e37432e47f2"
+  }
+ },
+ "ASSET-034": {
+  "bg": {
+   "path": "画像/ASSET-034_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "5edebe4310cd3ac346ec44c169b3641a70ad3048489d2cc6bc430e4b8cb46bba"
+  },
+  "char": {
+   "path": "画像/ASSET-034_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.658
+   },
+   "sha256": "969abc0f6b299b86464ff233c70121e581682b34be9b69850978a6933f5d31c7"
+  }
+ },
+ "ASSET-035": {
+  "still": {
+   "path": "画像/ASSET-035_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "dae46017367381105a48829370790b1dda0899a620760ec3b1af290116eaf514"
+  }
+ },
+ "ASSET-036": {
+  "char": {
+   "path": "画像/ASSET-036_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.687
+   },
+   "sha256": "c95eb4523425748164df2cc0765e563579fe7d4218cdc932119ab7c075c757e1"
+  },
+  "still": {
+   "path": "画像/ASSET-036_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "d68fe66afeb5e10046ffa3e77ca3134048fa19e45bdf2d19b5d8690574fdf6f6"
+  },
+  "video": {
+   "path": "動画/ASSET-036_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "9ac2dc55d96ccb8d203a1376d03c866a6f43363ab6519e0059007cccc7537c85"
+  }
+ },
+ "ASSET-038": {
+  "char": {
+   "path": "画像/ASSET-038_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.675
+   },
+   "sha256": "a79fd543268e5d49d16a494f33a6ec0986484844b8829b82b66182a1858d56db"
+  },
+  "still": {
+   "path": "画像/ASSET-038_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "5c223a3c80a85750297a2e0fe585f3c3dc92fcb3323901762390fbfe27dd40c6"
+  },
+  "video": {
+   "path": "動画/ASSET-038_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "440c8dc30bfbb70ea1d22c743d62b595de3a2f81c08c41007cbae05c65595abd"
+  }
+ },
+ "ASSET-039": {
+  "char": {
+   "path": "画像/ASSET-039_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.714
+   },
+   "sha256": "23611671ed993787a6f6b8f724911a31288625dcee46e0c828214bca5f280bdb"
+  },
+  "still": {
+   "path": "画像/ASSET-039_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "c550462d671bd8c8cef315ebe816beddb5014395b1d2fe03280d49de46f46a8e"
+  },
+  "video": {
+   "path": "動画/ASSET-039_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "8f14a24d85f8d16915d36a2268e88302d6286f3ede1353082107fdd06625029a"
+  }
+ },
+ "ASSET-040": {
+  "bg": {
+   "path": "画像/ASSET-040_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "e45d7c29ee56cae4b5e8b09315c2a23f02e9e1a76e693dcc06b41e18405b275b"
+  },
+  "char": {
+   "path": "画像/ASSET-040_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.692
+   },
+   "sha256": "c8f0456932a4feaeffd0704952a516fe19aa61b1c6313cc18feb2547029e9fe9"
+  }
+ },
+ "ASSET-041": {
+  "char": {
+   "path": "画像/ASSET-041_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.576
+   },
+   "sha256": "8dc94f4c99ab4f7e0295329e712b7d1fc46044fe4960e72ae35329360d74973d"
+  },
+  "still": {
+   "path": "画像/ASSET-041_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "a8dd24ded578f7f1432fa905eafee52e02e033978c26debec3948e2151c634bc"
+  }
+ },
+ "ASSET-043": {
+  "bg": {
+   "path": "画像/ASSET-043_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "1191ec5406cdc9c4606f0191fb1e3eb45573b9e5e50fdad668c5bce572f403ce"
+  },
+  "char": {
+   "path": "画像/ASSET-043_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.698
+   },
+   "sha256": "693007b60ee3599be1b7b2a0f855749035379022dc6b992b5af0167ae1a7d885"
+  }
+ },
+ "ASSET-044": {
+  "still": {
+   "path": "画像/ASSET-044_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "68bd99a5a7c2272ae0ef665da0e97baf0a06a9cc0aaf19f106a15df3c4f2d896"
+  }
+ },
+ "ASSET-045": {
+  "char": {
+   "path": "画像/ASSET-045_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.639
+   },
+   "sha256": "9b77f7f75789d090b85320c57a215ae231fbfd57eaa4cb8612736409aba378ec"
+  },
+  "still": {
+   "path": "画像/ASSET-045_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "62ef5b9f29f8e3c3375ac6432ff2e62b3f6216184740e199c99afb708865f9bd"
+  },
+  "video": {
+   "path": "動画/ASSET-045_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "c26d6fd20668ecc8cb633f103fa871740bd2709b2cd28261aeaf973cfcb4bf66"
+  }
+ },
+ "ASSET-047": {
+  "char": {
+   "path": "画像/ASSET-047_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.683
+   },
+   "sha256": "67c636b2a86e69c7bb03814ea5e9cf243018f9b0222493eeed8ab9bafea3e743"
+  },
+  "still": {
+   "path": "画像/ASSET-047_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "d80a1097f1ac9fa384e3fd95b26658065ab0a1dd1d5db6b9c9def5506b79f588"
+  },
+  "video": {
+   "path": "動画/ASSET-047_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "2b935846cd55429c03a79b10a3e84def84cf23361a3e600741917069f63dc005"
+  }
+ },
+ "ASSET-048": {
+  "still": {
+   "path": "画像/ASSET-048_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "791c92e5ad023296d5497e55555fd109b2ff93749414b3d16ebea46395f42cf9"
+  }
+ },
+ "ASSET-049": {
+  "still": {
+   "path": "画像/ASSET-049_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "64834d83e920c5871cc1600b3fc430d377866e6802ebb977b22e90140cc9d45d"
+  }
+ },
+ "ASSET-050": {
+  "bg": {
+   "path": "画像/ASSET-050_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "339033d32b5503431247fa8a93b2a9d49447ae6ca447b0e5daf57043f23b5a55"
+  },
+  "char": {
+   "path": "画像/ASSET-050_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.672
+   },
+   "sha256": "95e325054b8a00189a4420373dc0d5b0292341de3bcd198b391a12c9b0880abb"
+  }
+ },
+ "ASSET-051": {
+  "char": {
+   "path": "画像/ASSET-051_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.664
+   },
+   "sha256": "accb327b15f9a1a2e3fcd02cd37534ad25452ca68a1246d3bd10d77717bfc170"
+  },
+  "still": {
+   "path": "画像/ASSET-051_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "e68ef840c06de1e8d2ffc19af45d89ed0e6f40920d7546dbb03af7e3f02b0024"
+  },
+  "video": {
+   "path": "動画/ASSET-051_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "d8d82ee4d020783023196f7a7f3aa193996d031b3060bf463b8debb5d8db3c31"
+  }
+ },
+ "ASSET-052": {
+  "still": {
+   "path": "画像/ASSET-052_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "9d1ea78365e999b1c1f3d48aba559a180e1a004f39644382eaeaeaf7553eb157"
+  }
+ },
+ "ASSET-053": {
+  "char": {
+   "path": "画像/ASSET-053_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.681
+   },
+   "sha256": "f1155a1cb1650c2148b9d99ac5826f59f7df11b40935d348c1b1c2d28a63d135"
+  },
+  "still": {
+   "path": "画像/ASSET-053_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "f2c123a00ef298f11dd2f958a5846dd8e074ec3a20fb80b94dd3789842ab4ba7"
+  },
+  "video": {
+   "path": "動画/ASSET-053_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "109c4fe0a5f724128086bb5b1bae9a23d66b1f5a248103f7472e3a7fcc636d80"
+  }
+ },
+ "ASSET-054": {
+  "char": {
+   "path": "画像/ASSET-054_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.638
+   },
+   "sha256": "f840fb25a7be157e6a3bd6c01ebf54530fdb54faa38c00646bc548d23f7089e5"
+  },
+  "still": {
+   "path": "画像/ASSET-054_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "895044d9382f8a2d50ef6324c19e672f177a1b36c372578eadb23aa3768d5469"
+  },
+  "video": {
+   "path": "動画/ASSET-054_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "a3da9277974485738a43a379120b0c774fad5f5806bb67f0e59bd294ba03802c"
+  }
+ },
+ "ASSET-055": {
+  "char": {
+   "path": "画像/ASSET-055_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.684
+   },
+   "sha256": "f6445b5609292cdbb7ddcd176924de1d99bf804ca29769743691fb7e9e441f06"
+  },
+  "still": {
+   "path": "画像/ASSET-055_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "639e9f6e489acc7c6e755332d9f5ba36cb078dad9b5faf2d6d851a483f1897d3"
+  }
+ },
+ "ASSET-056": {
+  "char": {
+   "path": "画像/ASSET-056_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.619
+   },
+   "sha256": "3dae8becb3ee18604885a33979ac6f11e0efa8c58620f527c560fa1a2704f122"
+  },
+  "still": {
+   "path": "画像/ASSET-056_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "5cb08617fe5d9093e1b8195cc37af1d718cb310f72bb827664da5acdb0a861a6"
+  },
+  "video": {
+   "path": "動画/ASSET-056_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "94f18be8b51fa57aa7b4ae1b8326fbb75134b905d627f6019604f00db6454438"
+  }
+ },
+ "ASSET-057": {
+  "bg": {
+   "path": "画像/ASSET-057_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "6e9801ae0737f7c5297fda03b8f0fa380ee4dc9e2c96866f5b57aa93912abca3"
+  },
+  "char": {
+   "path": "画像/ASSET-057_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.651
+   },
+   "sha256": "b0b0f0c1dd6847e2781d7b14036b023e6f4fec8f829d28ebc108baa7752adb5b"
+  }
+ },
+ "ASSET-058": {
+  "char": {
+   "path": "画像/ASSET-058_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.673
+   },
+   "sha256": "43d4f99d784cb558043affa195ec0a02411759e60f613a7fd169396457d2aaa7"
+  },
+  "still": {
+   "path": "画像/ASSET-058_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "916ea6bb5e231faca589c4dbd71d526c5d11214619293e1d6bb4ad8a1d055e2b"
+  },
+  "video": {
+   "path": "動画/ASSET-058_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "3132f43286b09078246051961321ca034ca5754c195339ee63f2618e644967da"
+  }
+ },
+ "ASSET-059": {
+  "char": {
+   "path": "画像/ASSET-059_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.652
+   },
+   "sha256": "cca977d3bbf7ed86e3ed052ec5de0d28932a9e7d25336891a3a6c3a765c63910"
+  },
+  "still": {
+   "path": "画像/ASSET-059_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "fc20ba4829453bce7477b580e1035773a8ed47e68d4006b1c204ec30a3842e8a"
+  },
+  "video": {
+   "path": "動画/ASSET-059_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "7fa67ff2eaf82370e60d2eeaa9a4248060ef5d4eab7f36e2dc04f39146488c62"
+  }
+ },
+ "ASSET-060": {
+  "still": {
+   "path": "画像/ASSET-060_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "75365037ac029a2062428e43891f4dd3dbf7dcafab5369845e0416409c8929e2"
+  }
+ },
+ "ASSET-061": {
+  "still": {
+   "path": "画像/ASSET-061_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "ca0e09ad7cb2dc00864b15eac314f4cc56292dce44c499eabb5a6fb1f909d107"
+  },
+  "video": {
+   "path": "動画/ASSET-061_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "9fcd920d8a2a927240753ba6a43b1502cc45e68d3edb0373792bcce9b2b4e9d9"
+  }
+ },
+ "ASSET-063": {
+  "bg": {
+   "path": "画像/ASSET-063_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "7cebcfe1634b5c5420d25bd0d6acd427b8ba48c036d2d67461a002043a304a2b"
+  },
+  "char": {
+   "path": "画像/ASSET-063_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.685
+   },
+   "sha256": "c7618cbb1029f1450089b2c68c7145c37419874e3ed87499dc89da7a85def19b"
+  }
+ },
+ "ASSET-064": {
+  "still": {
+   "path": "画像/ASSET-064_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "3ca178bb3a92ce2642dd81ff6524694fb905eba4a9b00beb416e047a143eaa94"
+  }
+ },
+ "ASSET-066": {
+  "char": {
+   "path": "画像/ASSET-066_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.666
+   },
+   "sha256": "6fdeeec12349f48a535d18be168a3f2e0c2704417ac2c5bc2246c453eecd2ea9"
+  },
+  "still": {
+   "path": "画像/ASSET-066_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "65e3bc5a6010aac7a39d25ae852c9ad3fe559b71e818cdaf17b8f1d8f1f9c9b7"
+  },
+  "video": {
+   "path": "動画/ASSET-066_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "0882d7f5a48871bac28b57b37babde433953b8313c2ee3f56c2dab172b188ba0"
+  }
+ },
+ "ASSET-067": {
+  "char": {
+   "path": "画像/ASSET-067_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.585
+   },
+   "sha256": "1d2441cc15889acbb4fcea0535fb1a5bd72b9914fd6348758ec09243a029c91f"
+  },
+  "still": {
+   "path": "画像/ASSET-067_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "131192fed93788a5cba30ad4aded43cb9e44fd9ebb9143ecc20f322e2b375cd7"
+  }
+ },
+ "ASSET-068": {
+  "char": {
+   "path": "画像/ASSET-068_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.609
+   },
+   "sha256": "3a9899663b351829300900e847e96a40da2c4916ca20377734ccfeb77d7567ed"
+  },
+  "still": {
+   "path": "画像/ASSET-068_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "e7412a6a4ea4de7786ced0f90ac14431504c52988d2ccfcac96cc977f8491636"
+  },
+  "video": {
+   "path": "動画/ASSET-068_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "babfb3df3221dcc8a26445ebf516cf0432de88db8f8890f93f8b78fc0ea80c8a"
+  }
+ },
+ "ASSET-069": {
+  "char": {
+   "path": "画像/ASSET-069_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.689
+   },
+   "sha256": "7fb9c4ece4423903eaecdfeecc7d2af88ab3253b1f284c67414357b6c871b977"
+  },
+  "still": {
+   "path": "画像/ASSET-069_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "7558a84c8fa7faad0240068a02133421763b8715a1446ea242c32f2914de3a35"
+  },
+  "video": {
+   "path": "動画/ASSET-069_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "0c458549377e8ee846e809beb5e3e4ecee46304e4c9b1e45365df6ad31f555ac"
+  }
+ },
+ "ASSET-070": {
+  "still": {
+   "path": "画像/ASSET-070_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "e3df7283b639b1bcb1952d1bc6e8bcac00661efc39b9682a23a4842fcef0cc60"
+  }
+ },
+ "ASSET-071": {
+  "char": {
+   "path": "画像/ASSET-071_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.665
+   },
+   "sha256": "5024e0b5d938f073a32b2279a9f6775960169e9221328d8115f9d39d890583bf"
+  },
+  "still": {
+   "path": "画像/ASSET-071_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "68eb81079646a38363e05b0d65fc607c7ed37493447945597caf2e09fdb5a2b3"
+  },
+  "video": {
+   "path": "動画/ASSET-071_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "6f6fed047077ca71f647de7c94e85d1bfe2f834c8e859d029a7b2af870f6a885"
+  }
+ },
+ "ASSET-073": {
+  "still": {
+   "path": "画像/ASSET-073_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "7e4c352676609094ca37c24d35c2f12beb322aeabed21b15ec8e22d65ad028a8"
+  }
+ },
+ "ASSET-074": {
+  "char": {
+   "path": "画像/ASSET-074_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.712
+   },
+   "sha256": "7585e9f9c553893b65e7f8715500ea929e029c5ae6b153802a6d1b9e306aa20d"
+  },
+  "still": {
+   "path": "画像/ASSET-074_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "badfc2c1b87de6e2cf8fa845d6dea055ff229f85e35d8372e34b095dd95cb396"
+  },
+  "video": {
+   "path": "動画/ASSET-074_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "f9597d9b1a9f4ca3aecbfd7f9a5be30b84c81abeecadfc7c670eb0a81abac433"
+  }
+ },
+ "ASSET-075": {
+  "bg": {
+   "path": "画像/ASSET-075_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "380bd9b74b6388901cc8ce9e929db160f0fc4a30abd7cda9acbc3ff390005a8b"
+  },
+  "char": {
+   "path": "画像/ASSET-075_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.648
+   },
+   "sha256": "c248fb4eff292b4cae4cdf044561cec5b3589c98125e9421822d19c961565ba8"
+  }
+ },
+ "ASSET-076": {
+  "bg": {
+   "path": "画像/ASSET-076_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "224c35406dfee0066c83eb7645b0e8ef6181900035bd5936845d1eb59cd6541b"
+  },
+  "char": {
+   "path": "画像/ASSET-076_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.662
+   },
+   "sha256": "19b6dae21b6fdab7438aff64f817226cff93d509c40dfdbf444e5b4570aaa6f0"
+  }
+ },
+ "ASSET-077": {
+  "bg": {
+   "path": "画像/ASSET-077_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "456674e7f41580e0d44086cbb8d76873fe15d7cc043dd783808de8a04d961058"
+  },
+  "char": {
+   "path": "画像/ASSET-077_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.672
+   },
+   "sha256": "7f9f693913a0eb16ceec9afc1df21aeb3f5cadd7e9ae53a3e6bda8c928eb29ba"
+  }
+ },
+ "ASSET-078": {
+  "char": {
+   "path": "画像/ASSET-078_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.65
+   },
+   "sha256": "7d759aed751d853f6a5c5a7d59942de92e21aa8c1081bc74ef7cf6de081c7a77"
+  },
+  "still": {
+   "path": "画像/ASSET-078_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "b6dc8262249659b7f21f41b6d569e3d2deb7cd8d38db262d9cefff211bd24488"
+  },
+  "video": {
+   "path": "動画/ASSET-078_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "d278a207278fdf361968f1c15496609a18ae13e65e46237a4c6ffb2764f37ecd"
+  }
+ },
+ "ASSET-079": {
+  "char": {
+   "path": "画像/ASSET-079_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.685
+   },
+   "sha256": "6a13b7ab0fb878bd0b932ca9aada19ec07f793548682598b69ec6ec973e09640"
+  },
+  "still": {
+   "path": "画像/ASSET-079_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "73027444fc7ae705d9d51a5de345048457c52db113653c407c086cd6001105e7"
+  }
+ },
+ "ASSET-080": {
+  "bg": {
+   "path": "画像/ASSET-080_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "fe17a577054c195d0e8e7df9ba29295c545f7dc32142e2086a204207f00aff8e"
+  },
+  "char": {
+   "path": "画像/ASSET-080_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.659
+   },
+   "sha256": "cd3ca41d85055064f0dec85fe4c78f962307142f658d7db907bb343b431941f0"
+  }
+ },
+ "ASSET-081": {
+  "still": {
+   "path": "画像/ASSET-081_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "394038e90a6561899d84819de9db3adb1b5c70d9690439c254633814bb76762f"
+  }
+ },
+ "ASSET-082": {
+  "still": {
+   "path": "画像/ASSET-082_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "0cddf47d9f1fd9ad6d35d8c8592490dc9b2892689e2d842d30d1bd947a6af08d"
+  },
+  "video": {
+   "path": "動画/ASSET-082_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "b015b8a389f9c92f3f068cb7b740dd0a911efc57d27a7e1af2093069295631fd"
+  }
+ },
+ "ASSET-083": {
+  "char": {
+   "path": "画像/ASSET-083_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.668
+   },
+   "sha256": "93fae73c880244ca71f49f257deed87c9f5f34df0b43cd5b427807d6b17ea060"
+  },
+  "still": {
+   "path": "画像/ASSET-083_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "bcdfa4c1a7a92a683dc81cca4b1a3e30dcd7f58ea1020eab4328bfd04fa7ed47"
+  }
+ },
+ "ASSET-084": {
+  "char": {
+   "path": "画像/ASSET-084_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.49
+   },
+   "sha256": "96f9318493393349e8de86223c9dafef661b0bab1bfe10f5f7a82e85fe0fc22f"
+  },
+  "still": {
+   "path": "画像/ASSET-084_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "db69f9049fddb2bb45420bb0cb28d2e519823cca78e6ebfd0a01df6c9884fe26"
+  },
+  "video": {
+   "path": "動画/ASSET-084_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "cdcc1fba86040d4a08cf338a44aa381b03ad8c5aef1f175d50b04747f0cd1e83"
+  }
+ },
+ "ASSET-085": {
+  "bg": {
+   "path": "画像/ASSET-085_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "5e5ae4f6c48a8f54dfed033e809d28626a2d947b54b00a8c2f5750e4be1a7522"
+  },
+  "char": {
+   "path": "画像/ASSET-085_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.701
+   },
+   "sha256": "e4157f707ee228a4318057bb4ab2c76520b4d5673a9fc540183d9ae9d04ed53b"
+  }
+ },
+ "ASSET-086": {
+  "bg": {
+   "path": "画像/ASSET-086_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "9da86bdbbf0c23504efd7e801af724009417246574a3ab259add6b571fc85e54"
+  },
+  "char": {
+   "path": "画像/ASSET-086_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.649
+   },
+   "sha256": "5275efa3bfa100c2c564cdd5dc81bccafc1420804b779fed71e0d5ddfc714659"
+  }
+ },
+ "ASSET-087": {
+  "still": {
+   "path": "画像/ASSET-087_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "8cf02db94859dc8967c90b8ce4c7788cc25dd6ed8b4be6d722fdfa77504fd4ff"
+  },
+  "video": {
+   "path": "動画/ASSET-087_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "8315cc37e43e3d6fe805c9d0148509f32a7ab9490eddaa9ee69db638fb1705e8"
+  }
+ },
+ "ASSET-088": {
+  "still": {
+   "path": "画像/ASSET-088_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "aa1653329237267c0e865d23a9b6c3a9a35ac3b3b685da79e9da90db008c5b56"
+  }
+ },
+ "ASSET-090": {
+  "char": {
+   "path": "画像/ASSET-090_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.682
+   },
+   "sha256": "7835b2d6a71de32f7439b1b5fe3861c87cc2f2fffb334ed9caa76556d8773387"
+  },
+  "still": {
+   "path": "画像/ASSET-090_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "af5a17c9e9dd2fa7de7153948681c76db1001782bdf701600e0f46a359ef7b20"
+  },
+  "video": {
+   "path": "動画/ASSET-090_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "88ccb813410d34188dd3e1deaf8a2e4165830ab7fef3be07104df220e8b0b6ff"
+  }
+ },
+ "ASSET-091": {
+  "char": {
+   "path": "画像/ASSET-091_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.658
+   },
+   "sha256": "6945a495e821ade63149b2b3a05373a29c6f465eed806507f9402344c4870006"
+  },
+  "still": {
+   "path": "画像/ASSET-091_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "27d375979c145ad8ecf9ed8c280c271df4dfc573e7cf3392c5954340d86348c0"
+  },
+  "video": {
+   "path": "動画/ASSET-091_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "81654ae05c92be7381dd10db063f42fb1ac1150c0b321bc06b36c00cb452fd88"
+  }
+ },
+ "ASSET-092": {
+  "char": {
+   "path": "画像/ASSET-092_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.634
+   },
+   "sha256": "b4a5b37bc530e68394f7d37df02c0c87da570dbcf65e266cf25939f156bb4db7"
+  },
+  "still": {
+   "path": "画像/ASSET-092_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "afb27439bd3d2ace5b46636102403f04af744f34081cc7fad9c113d75a272dc5"
+  }
+ },
+ "ASSET-093": {
+  "bg": {
+   "path": "画像/ASSET-093_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "5c1c8e964ffc253f9d5ff63368ad15b52df1e6735a8218e6a01f9b197e84cbec"
+  },
+  "char": {
+   "path": "画像/ASSET-093_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.601
+   },
+   "sha256": "6cd698baf530c553a867afbb7929b43bc3ef3f1db3a71d5df777f781860e50b5"
+  }
+ },
+ "ASSET-094": {
+  "still": {
+   "path": "画像/ASSET-094_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "3dceceb742d92cbc6dd1ebb51b9ba94741759d5b432f0e1cde11862c45e2c7c7"
+  }
+ },
+ "ASSET-095": {
+  "still": {
+   "path": "画像/ASSET-095_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "72947104673d3580f33e735246e4dd31f76a4385c7142932e1d636fab7c635eb"
+  }
+ },
+ "ASSET-096": {
+  "char": {
+   "path": "画像/ASSET-096_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.511
+   },
+   "sha256": "6803da5b08b9a734fa138e8504507b9ea97dc3f76e15dfe321256362de186450"
+  },
+  "still": {
+   "path": "画像/ASSET-096_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "4444490aea56878cd5fd96972bb5820bd5f6a3c8a970da4f7105ad1b2a99a4ef"
+  },
+  "video": {
+   "path": "動画/ASSET-096_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "9faef67002b71c988b46fb94d9b88d423e6d4fe05e326a89f515afe14faed919"
+  }
+ },
+ "ASSET-101": {
+  "char": {
+   "path": "画像/ASSET-101_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.614
+   },
+   "sha256": "03d196adb29a39565fb22d4e71d1462043d1d63e755ac16bb4dcf0dd882df777"
+  },
+  "still": {
+   "path": "画像/ASSET-101_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "301fc094d6d3d99d0b958b64bf3691792288eae40906dfe4d78ee5000f30245f"
+  },
+  "video": {
+   "path": "動画/ASSET-101_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "192d984e63f7a85398bfcabddc94800e7173c1b8f92dca8cc47a65b119741ad7"
+  }
+ },
+ "ASSET-102": {
+  "char": {
+   "path": "画像/ASSET-102_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.696
+   },
+   "sha256": "b19130af2f66853d606cd007fe9efc41395af528a096760170a559cd86a59c53"
+  },
+  "still": {
+   "path": "画像/ASSET-102_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "db02a800d25d1342e2fa44cd23579d4ed90b08b265aaf9eeca60266f1bb59dc8"
+  },
+  "video": {
+   "path": "動画/ASSET-102_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "05a474acaff5f7e6280118c23630b13b4bb12b9da3aa8bb9e0d9b26b958abb33"
+  }
+ },
+ "ASSET-103": {
+  "char": {
+   "path": "画像/ASSET-103_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.608
+   },
+   "sha256": "89dd13c3f5708ce0c8d83a99f021ac8dd8352d1a8c69476b4949a5677e85e0fb"
+  },
+  "still": {
+   "path": "画像/ASSET-103_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "eb4a706878ea222920e63f1ffccfc463eff97ec8fb3ce9fdbc3b493c0e3c8279"
+  }
+ },
+ "ASSET-104": {
+  "bg": {
+   "path": "画像/ASSET-104_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "f2b05a5f225b851f21ba1561a3a51f41c35d6d385f45e1a8d9989e2480e9d0e0"
+  },
+  "char": {
+   "path": "画像/ASSET-104_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.664
+   },
+   "sha256": "018aed64a109e9b99b1356a41fc5b5e233b446c5b466ad61d2eda494f579ecfe"
+  }
+ },
+ "ASSET-105": {
+  "bg": {
+   "path": "画像/ASSET-105_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "7087f94a1b96fdcd56e025bc5b83e48963e93426d222d5fce452d576d57ff9b0"
+  },
+  "char": {
+   "path": "画像/ASSET-105_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.692
+   },
+   "sha256": "1b9ddb7e4e5fc62abf698c9f8e6899197fdc11200591dc6312bbd3fc1260ae8b"
+  }
+ },
+ "ASSET-107": {
+  "bg": {
+   "path": "画像/ASSET-107_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "c95497854b4df39108a0a409b341c841f1d6a8d39ddb4c41c7ae3e0dff1577ee"
+  },
+  "char": {
+   "path": "画像/ASSET-107_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.66
+   },
+   "sha256": "15af8f0971b1e32dc1a2fb9fc57238a561ff6888242d84c17212ec899681be99"
+  }
+ },
+ "ASSET-108": {
+  "char": {
+   "path": "画像/ASSET-108_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.684
+   },
+   "sha256": "9a66d055f7606a1e20078b666e9e7e6415f914eaa2736477c595cef9b799aa3f"
+  },
+  "still": {
+   "path": "画像/ASSET-108_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "dc67041caa4e7b4a7162c68f9b8a4b9636dc59a6968135cadeda16dc19045fe2"
+  }
+ },
+ "ASSET-109": {
+  "bg": {
+   "path": "画像/ASSET-109_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "95085c89d24e825cf3468d6aa388882d64002e3136c725c78587d14505663f8a"
+  },
+  "char": {
+   "path": "画像/ASSET-109_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.483
+   },
+   "sha256": "8f206df669f89f1d8fddfc115f46edee9634e9fbff7d9011d8b611c2c6843458"
+  }
+ },
+ "ASSET-110": {
+  "char": {
+   "path": "画像/ASSET-110_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.694
+   },
+   "sha256": "200cc18f4afff3a4eb49692b63625f6ccfd682009f9c24be3790cf5b76363495"
+  },
+  "still": {
+   "path": "画像/ASSET-110_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "5827e320b2c58dc5fadc63ab426d3d4935615bb9c1d6b0af6a73e01f5a7ea5d3"
+  },
+  "video": {
+   "path": "動画/ASSET-110_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "1474fbecc4364705de98bee564cab2aa4656479fed7157d2deb31e7a84bc9223"
+  }
+ },
+ "ASSET-111": {
+  "char": {
+   "path": "画像/ASSET-111_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.659
+   },
+   "sha256": "c9e10a0032fa1639839a7745e999c354b9ffac8341be60ecc3263d3481c9ed7f"
+  },
+  "still": {
+   "path": "画像/ASSET-111_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "fd74f794841a2a1e64eae6a0dbe97f72476ecb7748358b6b616316b9840343e6"
+  },
+  "video": {
+   "path": "動画/ASSET-111_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "45350fe3920dcf41bdf8097ff3d8aed03be06c40cc7a55079e8dfda21f3ae620"
+  }
+ },
+ "ASSET-113": {
+  "char": {
+   "path": "画像/ASSET-113_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.651
+   },
+   "sha256": "7f5a5fe184430d3d9aa93bc4b743969e44488ce5721ca6fe3efcb4b061402a3b"
+  },
+  "still": {
+   "path": "画像/ASSET-113_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "8578201acc1e2d65a2bde23d9654ec61a60f97f8575b800a37b4e8f530197043"
+  },
+  "video": {
+   "path": "動画/ASSET-113_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "6278bf995aa53510f7237065e35e7f2eef7e100e1e40826e9bc2387dcc43b492"
+  }
+ },
+ "ASSET-114": {
+  "bg": {
+   "path": "画像/ASSET-114_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "d323cfd7f5e3ed2477310fb0efd0e0d382eb1ca4d5bbc68a97bf3836514f620b"
+  },
+  "char": {
+   "path": "画像/ASSET-114_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.692
+   },
+   "sha256": "c1c9005ced127c04c305267d64dd761f4f7f5e578211daf0dae148998a4bc941"
+  }
+ },
+ "ASSET-115": {
+  "char": {
+   "path": "画像/ASSET-115_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.652
+   },
+   "sha256": "594654460518c9bfad0e6d022efff14ff201e83fb5234aff418f49baf2f4936c"
+  },
+  "still": {
+   "path": "画像/ASSET-115_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "eb1beaa955f4b796e094dcb42f95ef0dd9a18e21c28879082e7382d2ba942447"
+  },
+  "video": {
+   "path": "動画/ASSET-115_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "5aa3ffe654da9257addffe77e8be0ab5cb7a97bdc27a1b6821e31d4cbe739309"
+  }
+ },
+ "ASSET-117": {
+  "char": {
+   "path": "画像/ASSET-117_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.676
+   },
+   "sha256": "39ae344c9c21790bcfc721081c88b392c6a6cd5777cfde2ccf20c03dd5c7ce62"
+  },
+  "still": {
+   "path": "画像/ASSET-117_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "fc36421dbf867a69d7ec75ec2f8656bfb942db81a26020672301f1d6603b7be3"
+  }
+ },
+ "ASSET-118": {
+  "char": {
+   "path": "画像/ASSET-118_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.687
+   },
+   "sha256": "9df5b062b699556eb483c49dabebe24c887c9da964434b3cddab4142f5ac6575"
+  },
+  "still": {
+   "path": "画像/ASSET-118_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "056867838ac3598345e3270149953543d1f21f918d06c54d93f435e2bfb1f4c1"
+  },
+  "video": {
+   "path": "動画/ASSET-118_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "3b29651b6be3b1f0a0c94d81a50d330441c5b0c6f5651824f2612688cc96c76b"
+  }
+ },
+ "ASSET-119": {
+  "still": {
+   "path": "画像/ASSET-119_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "09f2f4b0d7bb2214e1e85b9bad3cdd1fafb01fa6d241a7dbc1b7c4e527f8e89d"
+  }
+ },
+ "ASSET-120": {
+  "char": {
+   "path": "画像/ASSET-120_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.58
+   },
+   "sha256": "0594fab680513589373fa28d11a4be1142fff72bab5eda751ec59c45e01e796f"
+  },
+  "still": {
+   "path": "画像/ASSET-120_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "c6710631d7c6f1448d2d96c9adda91030da37de71927b3de5c72c3b6faa18a50"
+  },
+  "video": {
+   "path": "動画/ASSET-120_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "b831b87ac038ce1cd15e9fbe96d1c16ed2b10c1f4b135ce9846844e2c92cfdb8"
+  }
+ },
+ "ASSET-121": {
+  "still": {
+   "path": "画像/ASSET-121_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "80d12c88134d5baad734af197fa705791ccf24acbbed7ec76f7b5c0aa9983d49"
+  }
+ },
+ "ASSET-122": {
+  "char": {
+   "path": "画像/ASSET-122_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.602
+   },
+   "sha256": "8fe8af62fc580fbe1797f43ffc1ae2202d0c7158d08b45017b243bef91d2ec46"
+  },
+  "still": {
+   "path": "画像/ASSET-122_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "8774eff9f8ff50326b3e287c7be1d108c7f4cbbac1e1e9b49caac94f8428de1c"
+  }
+ },
+ "ASSET-124": {
+  "bg": {
+   "path": "画像/ASSET-124_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "8201551c3effe5e1e65da0571dfc62cfb475d125f38fad87335f3d9422524262"
+  },
+  "char": {
+   "path": "画像/ASSET-124_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.696
+   },
+   "sha256": "06eba2aa8c60fc9a23dcd903ffe2d0ad28ff9598a7eda7cc9060bbf91c74e2f2"
+  }
+ },
+ "ASSET-125": {
+  "char": {
+   "path": "画像/ASSET-125_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.687
+   },
+   "sha256": "56da34078f8821cf66776c20c7618c097d34b2dcfd06d77231ddfd99f11e1616"
+  },
+  "still": {
+   "path": "画像/ASSET-125_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "a357d2d47bf8b9471bf1b229201fb85fb402d80c0daa0f65c9f0ca29ded57887"
+  },
+  "video": {
+   "path": "動画/ASSET-125_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "51e107bfd3e17b7850719cee105ce15c69bfa42fc34bb75052465ec02316032e"
+  }
+ },
+ "ASSET-126": {
+  "still": {
+   "path": "画像/ASSET-126_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "9e5f04fac677eb3186a7d300f8a40e971fe2b142604680ee81845dc602927989"
+  }
+ },
+ "ASSET-128": {
+  "char": {
+   "path": "画像/ASSET-128_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.649
+   },
+   "sha256": "6aec3e6c9767ab6ab2923e0db6fcfd1b1230da680b0923ab85b04bbacf20ae6d"
+  },
+  "still": {
+   "path": "画像/ASSET-128_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "bb4f23508cc6b7bf4c0cd0e26c69f40d5987d9c81141f828d5b89baef5552367"
+  }
+ },
+ "ASSET-130": {
+  "bg": {
+   "path": "画像/ASSET-130_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "a596a335865e1ab9ad5abc8c04585e49765c8df8027e5d77b4d8904b9ebe6019"
+  },
+  "char": {
+   "path": "画像/ASSET-130_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.689
+   },
+   "sha256": "6ff4923d0bddaf4d5b67feb56ad8a9479e02afcdb730736d8595490abe3e2219"
+  }
+ },
+ "ASSET-132": {
+  "still": {
+   "path": "画像/ASSET-132_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "cf75cb03e14d3964d0ad82cbf4ff3753367e23c2a95927efad2dd5e020a8ad5b"
+  }
+ },
+ "ASSET-133": {
+  "still": {
+   "path": "画像/ASSET-133_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "7e52cc93ed7f71970be15cb715091e45bbc4d9593d611e694a4525bfb89436e8"
+  }
+ },
+ "ASSET-135": {
+  "bg": {
+   "path": "画像/ASSET-135_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "18390a50df5884f284164dea5dbda805719968072b61cbba530d3b1aa8be2e97"
+  },
+  "char": {
+   "path": "画像/ASSET-135_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.58
+   },
+   "sha256": "d403ce81050ba616bc4c52f577085b4cc4b83e5094e74b091b3a632265dc24a4"
+  }
+ },
+ "ASSET-136": {
+  "char": {
+   "path": "画像/ASSET-136_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.664
+   },
+   "sha256": "a671b8f5b19641a03321c9be9a14c0b7d8cda0e37c7c60c9822f0b6972b8635a"
+  },
+  "still": {
+   "path": "画像/ASSET-136_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "e10cc0d4c265cf47753e681066ebb7b0611c101151f21f43c1dcef5b69532068"
+  }
+ },
+ "ASSET-137": {
+  "char": {
+   "path": "画像/ASSET-137_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.67
+   },
+   "sha256": "f50a3992a1c291b2d15657970bf469c10a437fedcf873e1459b3c772b7c691a2"
+  },
+  "still": {
+   "path": "画像/ASSET-137_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "f25dce5004e43cf8c1da87cdeaf06522715764e8c8e154f1bd682cf27addb7eb"
+  }
+ },
+ "ASSET-138": {
+  "bg": {
+   "path": "画像/ASSET-138_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "49d8cd5c0f9878a717f929be7ecb5cfb33d8123a0b31c101137f20fa9ba555dc"
+  },
+  "char": {
+   "path": "画像/ASSET-138_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.661
+   },
+   "sha256": "c7e79f76f7d0865ec92642c1e5e73a81b12b58e3140468354479831f81226b3b"
+  }
+ },
+ "ASSET-140": {
+  "char": {
+   "path": "画像/ASSET-140_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.664
+   },
+   "sha256": "e40989c68315cdb5140c52a973c857481f36784b7c85bb0df9b396fc891b7531"
+  },
+  "still": {
+   "path": "画像/ASSET-140_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "4d9fa4ac75c16d6cc758aba4f0ca457b3a96b2690a76a8d0c5b7d3cb9b36aafd"
+  },
+  "video": {
+   "path": "動画/ASSET-140_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "c1d8ee2bab228ee4aa528ff1863797e3a1c60f5b5d6853ee206e2d1d1693d75c"
+  }
+ },
+ "ASSET-141": {
+  "char": {
+   "path": "画像/ASSET-141_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.64
+   },
+   "sha256": "0ae021add4d08ef1d45dd129621c072a6ddf654c2e5877c928102410e541637e"
+  },
+  "still": {
+   "path": "画像/ASSET-141_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "dbfc00566891bbb5d167edf5e2a972d98ef4a3f4dd25f2e036aefe3ef68eb1b9"
+  }
+ },
+ "ASSET-142": {
+  "char": {
+   "path": "画像/ASSET-142_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.591
+   },
+   "sha256": "d3dd1c5d2a665cb1e22563f9eb00733f0f43a024fe75f5eaf290626d55d59e4f"
+  },
+  "still": {
+   "path": "画像/ASSET-142_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "629bada26d7c06933dc2d25f229c90d8569d909a34fc68045ada8167880b2cbb"
+  }
+ },
+ "ASSET-143": {
+  "bg": {
+   "path": "画像/ASSET-143_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "4a12ef7d10a6423a6a6232f96149c4b3aeffcba9dfb2419d0f51847668790894"
+  },
+  "char": {
+   "path": "画像/ASSET-143_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.649
+   },
+   "sha256": "cfee934b22f32acd875c0d7058e3e6783b2cfe512d170459f62870ce86b5b9f2"
+  }
+ },
+ "ASSET-145": {
+  "char": {
+   "path": "画像/ASSET-145_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.713
+   },
+   "sha256": "b547eea135bea4baa694e8080efdb388a7f7be0627bf23e7484f486528035f51"
+  },
+  "still": {
+   "path": "画像/ASSET-145_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "c41988e107cbfac2a4a6147bb307a98b7f1598754aab1db6dcb02e1a30774e64"
+  }
+ },
+ "ASSET-146": {
+  "char": {
+   "path": "画像/ASSET-146_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.697
+   },
+   "sha256": "6647328d4742e72fc4670c1ba855e8a1537700ec496291f9e0fb3900600f5bf0"
+  },
+  "still": {
+   "path": "画像/ASSET-146_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "e51ceda2789f78dafffdec8bfb435659d80b8cf69e23df7639a795f86ece6fa4"
+  }
+ },
+ "ASSET-148": {
+  "char": {
+   "path": "画像/ASSET-148_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.678
+   },
+   "sha256": "148a6d7b0900e5ebcfcc5f48420380082ac5009008c7e962c16493cc07abf7bb"
+  },
+  "still": {
+   "path": "画像/ASSET-148_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "93fbab6cda1a3a32968531da8c639726a5fb1ec75f432923d215a9324f65c97f"
+  }
+ },
+ "ASSET-149": {
+  "char": {
+   "path": "画像/ASSET-149_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.661
+   },
+   "sha256": "55df80e3d40556baa1918e9e82bf64d5b6d5fcc6de39562187bcae43ce5b7d59"
+  },
+  "still": {
+   "path": "画像/ASSET-149_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "91228227e19f989ed951d6a389b092abf4ff094901ecd036baa087c183a04ba3"
+  }
+ },
+ "ASSET-151": {
+  "char": {
+   "path": "画像/ASSET-151_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.682
+   },
+   "sha256": "310d32f6c43b9b6370305f7adcb314fef008c00745b637435667dbc7027d6ffc"
+  },
+  "still": {
+   "path": "画像/ASSET-151_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "066d54837ca1a91061c7ae89dde4992c180c49dd00738869fd28a1f3e5f31f96"
+  }
+ },
+ "ASSET-152": {
+  "char": {
+   "path": "画像/ASSET-152_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.664
+   },
+   "sha256": "19d7e0aab41a9747e17e0ddd688cd0b0ea5c65628dd27cd849d34d221c7f730c"
+  },
+  "still": {
+   "path": "画像/ASSET-152_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "5e150501c34f93826a720e58433339086b076e882bb0e75ad291d12d0609698a"
+  }
+ },
+ "ASSET-153": {
+  "bg": {
+   "path": "画像/ASSET-153_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "2a456a3a7f0a226b98ea734e502de8f4815f07cff8d38f3dadd0a553fe58312e"
+  },
+  "char": {
+   "path": "画像/ASSET-153_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.573
+   },
+   "sha256": "1c244309aa1e2e1df0ce7cbd0bad5481c650c99745b152b8c3308d26620706f4"
+  }
+ },
+ "ASSET-155": {
+  "bg": {
+   "path": "画像/ASSET-155_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "3b75084a3050b8f6935f2e5a381d1041367320056df012c31c4df030b0f78d60"
+  },
+  "char": {
+   "path": "画像/ASSET-155_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.7
+   },
+   "sha256": "890cef504763d6bec9af0a2dc70daf57a9e54729e1aaf1bf4114a0dd6de2d4bd"
+  }
+ },
+ "ASSET-156": {
+  "bg": {
+   "path": "画像/ASSET-156_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "49100a10565c494326c51163c15798579b9e8f1b9508ee34af84a2e4203fe2c9"
+  },
+  "char": {
+   "path": "画像/ASSET-156_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.692
+   },
+   "sha256": "02162bd165c86e89a7ab3015b13c6e5348896c268a624ac8347bd4d52a6ba8e6"
+  }
+ },
+ "ASSET-157": {
+  "char": {
+   "path": "画像/ASSET-157_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.686
+   },
+   "sha256": "f76915a8fa3185226516afb13e864985bc09b7fd90cfc4cc2c2c305dfac584a8"
+  },
+  "still": {
+   "path": "画像/ASSET-157_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "713e1d9432b776ad0a7462c5c3a1624cf891377b4f851f8bfc4892ea7eb29a5f"
+  }
+ },
+ "ASSET-158": {
+  "char": {
+   "path": "画像/ASSET-158_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.494
+   },
+   "sha256": "a49291c5138ccfc7765bb02164e4ef5735d96f14b0df7033e1149fabe41bbb46"
+  },
+  "still": {
+   "path": "画像/ASSET-158_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "61a15152df9592f372de0e61eaac7c395394f89ffbcc6e4f03fabd130bdc4908"
+  },
+  "video": {
+   "path": "動画/ASSET-158_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "5371a6ddba2a93f48e0b7ceaee87cb3abe419f0e754baa6942d6f3a5e585d088"
+  }
+ },
+ "ASSET-159": {
+  "bg": {
+   "path": "画像/ASSET-159_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "d4e2e948c44e238512eef5905899b36ea1d0c94fee7199bba5fa19adaf910292"
+  },
+  "char": {
+   "path": "画像/ASSET-159_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.682
+   },
+   "sha256": "5e84e66ead71bb49b47df125bc1c9488efac3cc4e8aebf0309e051ef60f1a4f6"
+  }
+ },
+ "ASSET-160": {
+  "char": {
+   "path": "画像/ASSET-160_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.58
+   },
+   "sha256": "f5456a853815a9ed649d4750e294be5f60b5514887433da0b082df386530dabf"
+  },
+  "still": {
+   "path": "画像/ASSET-160_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "fe115f7d2a3d56efa5dd8693aa95d708f82a70547d078f6753a391316f1b7a31"
+  },
+  "video": {
+   "path": "動画/ASSET-160_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "4442c038ecc586ee897582eccde7e42c2ac6bb68ccd38bd533bbdb2e8fc7e621"
+  }
+ },
+ "ASSET-161": {
+  "still": {
+   "path": "画像/ASSET-161_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "ae61a13f94ea5a3f14c3a0f1c2b5cc934fafa60f54ae3697b063a3ec0203ede9"
+  }
+ },
+ "ASSET-162": {
+  "char": {
+   "path": "画像/ASSET-162_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.614
+   },
+   "sha256": "2cd8172f9472a9347c1202ce54a37005f73b537cd57690b1a15e79fbda685cc0"
+  },
+  "still": {
+   "path": "画像/ASSET-162_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "28c6a019bf1e038603115ad587dc120362fc227af3439124ae4a5a5992af6c28"
+  }
+ },
+ "ASSET-164": {
+  "bg": {
+   "path": "画像/ASSET-164_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "cab1b9f3069647fe3b02eadd6423a878ff57306e58e9a797764e381530fec51a"
+  },
+  "char": {
+   "path": "画像/ASSET-164_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.657
+   },
+   "sha256": "8f83eab7e8ee293485f113b5edc83f2bb47b6fd001e70e20408727ddf55e5c8e"
+  }
+ },
+ "ASSET-166": {
+  "char": {
+   "path": "画像/ASSET-166_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.715
+   },
+   "sha256": "17afe6f6da92c453ea3d652651e5c6707bde938ab20e1be8d80ded2157f76929"
+  },
+  "still": {
+   "path": "画像/ASSET-166_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "c19ad82bc05e047e8c57ea7cca36611ec163bda8d464b206be1fb9d1684d917b"
+  },
+  "video": {
+   "path": "動画/ASSET-166_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "273276b32a50797c7933bff6b7b60bee940f610d103cbf329a8f88313f2b7c33"
+  }
+ },
+ "ASSET-167": {
+  "char": {
+   "path": "画像/ASSET-167_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.724
+   },
+   "sha256": "b1d830ce3e66f7b59e7ee4ececa710a403e8e19eaa5de88bf85814a62d9525d0"
+  },
+  "still": {
+   "path": "画像/ASSET-167_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "e16cee19a18e41d65785eb2737ccc8769fa86c6443fecf15acfa0574fa4983d6"
+  }
+ },
+ "ASSET-168": {
+  "char": {
+   "path": "画像/ASSET-168_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.681
+   },
+   "sha256": "10ca5dfb97b6d707f2a520433f2e7c0f6de804706d8bf38edfa39d385817436c"
+  },
+  "still": {
+   "path": "画像/ASSET-168_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "8e1098e4e9f87908837b5f921c61c69f63bfda7585cb0c9df4ee60bb5e6d905b"
+  }
+ },
+ "ASSET-169": {
+  "char": {
+   "path": "画像/ASSET-169_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.681
+   },
+   "sha256": "5bbb2db000052189b026c0d8ffad062391231610dca092db916c23f9816bc8ce"
+  },
+  "still": {
+   "path": "画像/ASSET-169_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "60735da8921f11bfacc95a57ee22f37a32b70c71841b1b9187c39cc7c16d365f"
+  },
+  "video": {
+   "path": "動画/ASSET-169_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "ee833a6c869a15b9567307582f65b1ab06f5ae461af28e4a68d7e353030d21ea"
+  }
+ },
+ "ASSET-170": {
+  "char": {
+   "path": "画像/ASSET-170_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.656
+   },
+   "sha256": "304a0027ead0dc011bdf78f216858fce8636b64b063eaa2ef8e6c9c31750d35c"
+  },
+  "still": {
+   "path": "画像/ASSET-170_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "f36eeb47d52fdfde492103816c1cf264026e1de34f6e1b4bba7bca13c64782d4"
+  }
+ },
+ "ASSET-172": {
+  "char": {
+   "path": "画像/ASSET-172_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.695
+   },
+   "sha256": "3ac3c629a4babbb05afbdc1a5f2189232cd3c6561a52e5428f9734cb3bb73dcd"
+  },
+  "still": {
+   "path": "画像/ASSET-172_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "6c213f3ff0b1747d2f065eccbec50c0aa01e71243c83c6b6f713771921ec1b13"
+  }
+ },
+ "ASSET-174": {
+  "char": {
+   "path": "画像/ASSET-174_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.71
+   },
+   "sha256": "739f181f6d486907a745bad457e18442e04a553c3d54a38fe7b2ae428eb10957"
+  },
+  "still": {
+   "path": "画像/ASSET-174_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "9f1ade3835384378cdb10e4f6720d6550f1fd50a992b9484472ea08609f835d1"
+  },
+  "video": {
+   "path": "動画/ASSET-174_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "f0ead74e549a0829fe1b05518b4f894e786c233a8d7738936d23422acb1587f1"
+  }
+ },
+ "ASSET-175": {
+  "char": {
+   "path": "画像/ASSET-175_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.663
+   },
+   "sha256": "93a83eef4e206f77e26e21090d6d429d3adee63f220fed71c4d9389307e76ad8"
+  },
+  "still": {
+   "path": "画像/ASSET-175_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "64e2b838c59d70cb1ce37870a992a589f379aa7f41b3818ce1c33b169ee882aa"
+  }
+ },
+ "ASSET-176": {
+  "bg": {
+   "path": "画像/ASSET-176_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "4c7e9e0638e2f8a2656c160e5d2ce906c889ac1572174c8e0f27ce3e32f4179c"
+  },
+  "char": {
+   "path": "画像/ASSET-176_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.656
+   },
+   "sha256": "a4c85aecbf7c525cc8f451f97cb170a831163b7c58c2053856c245d971452e53"
+  }
+ },
+ "ASSET-178": {
+  "char": {
+   "path": "画像/ASSET-178_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.665
+   },
+   "sha256": "66291b858306b3128b51275e51cb2fc0d241cfe7896b30adf9534840fe03ffc2"
+  },
+  "still": {
+   "path": "画像/ASSET-178_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "ede8921bba3f2fd95b8ff3c9b05dd33e75ade5c252f5731a6b50a735a814b854"
+  },
+  "video": {
+   "path": "動画/ASSET-178_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "d8925a95ea8e9d5a768ad688b605087fa1903c4fb6cef06eb2d1f3ef39f0e715"
+  }
+ },
+ "ASSET-179": {
+  "char": {
+   "path": "画像/ASSET-179_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.703
+   },
+   "sha256": "263eed900ceda7e933996722a43650b4b5e20757ff124d6a5031fd58afd368fd"
+  },
+  "still": {
+   "path": "画像/ASSET-179_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "837ecce6ec707b9d600c6249a2bca9051cc1e7b9656e1b00a09ae54df02147a8"
+  }
+ },
+ "ASSET-181": {
+  "char": {
+   "path": "画像/ASSET-181_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.574
+   },
+   "sha256": "a15a4d86055419f34cd4ffca13e6f23726a58261f3026af7cefe2fb2d50c3260"
+  },
+  "still": {
+   "path": "画像/ASSET-181_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "1aaa36eae9e8add8829d90162f58a10db374cf3f91cdb8d91f30508f5d4f37eb"
+  }
+ },
+ "ASSET-182": {
+  "bg": {
+   "path": "画像/ASSET-182_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "8d7b37a65fee69fbd02ea288ca60fc481b63dad3b5d3e6ec267e1a1c0bcaeccf"
+  },
+  "char": {
+   "path": "画像/ASSET-182_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.658
+   },
+   "sha256": "a052cb3317d9e7337ffd44af332d645f4ac579d2e37aa65885cd4fcb44d4fa9a"
+  }
+ },
+ "ASSET-184": {
+  "char": {
+   "path": "画像/ASSET-184_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.685
+   },
+   "sha256": "9c5d2ee0596969f556558302c81dfd01e32d73c97125934540de00676e55152c"
+  },
+  "still": {
+   "path": "画像/ASSET-184_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "933ac328d5cd5745de2535b27e11480c403371ed39bbe4e9a50b4a0806d4038c"
+  }
+ },
+ "ASSET-185": {
+  "bg": {
+   "path": "画像/ASSET-185_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "6cc233e02f4ede6dacb13ff4afc8fd88e143780e8c15407b819b364b466e7484"
+  },
+  "char": {
+   "path": "画像/ASSET-185_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.671
+   },
+   "sha256": "e4cd633c5dd96cee5c59d00f53357b880daa29b53f426c5ec6caff76ba238532"
+  }
+ },
+ "ASSET-187": {
+  "char": {
+   "path": "画像/ASSET-187_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.657
+   },
+   "sha256": "be9160805123626ee75fde6f4942862b9eb2fbc279903d9017b7b12f46bdcb39"
+  },
+  "still": {
+   "path": "画像/ASSET-187_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "445610ce2ec258ccc2764e19c68693bb5b73989926dcc00f4e10b1b7891cae30"
+  }
+ },
+ "ASSET-188": {
+  "char": {
+   "path": "画像/ASSET-188_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.647
+   },
+   "sha256": "11fe5cb7c02b94c65ab2f437cd38baa9218b0fe7fcdccc42bb5557d5eabe0deb"
+  },
+  "still": {
+   "path": "画像/ASSET-188_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "6d16593886440480d263e4b6a598c18ad9224b89f6147fc1d81604fc836367d9"
+  }
+ },
+ "ASSET-191": {
+  "char": {
+   "path": "画像/ASSET-191_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.683
+   },
+   "sha256": "cf8779241e7d8fd2980761e5100f965ae7822ef373aa9a603a50312356e7859e"
+  },
+  "still": {
+   "path": "画像/ASSET-191_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "e10fbaeadad6a80fd4ece30204ca18d11535b89e4d74268efe41d0340099b6d2"
+  },
+  "video": {
+   "path": "動画/ASSET-191_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "1fab318534404088e04ebcb11a3be3a9e1770ff46037fae0d5a2c1f5c5af5eb3"
+  }
+ },
+ "ASSET-194": {
+  "char": {
+   "path": "画像/ASSET-194_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.691
+   },
+   "sha256": "339b585843c835ec0a61c77e8b055d95c8f02b50394e055bfb3546ee6fda402e"
+  },
+  "still": {
+   "path": "画像/ASSET-194_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "fc52699852b3195ae66ecaae6a679cb567a959ea1dc906896349046951497d6f"
+  }
+ },
+ "ASSET-196": {
+  "char": {
+   "path": "画像/ASSET-196_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.685
+   },
+   "sha256": "427e8b02bf3368206c23dc6964da01d86d49641d9e1f53af58ba784b17d71a21"
+  },
+  "still": {
+   "path": "画像/ASSET-196_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "58072c875429b0880cc029301ebf33f016c71db5ec4fb7bf7ddc786c50e9e2d9"
+  }
+ },
+ "ASSET-197": {
+  "char": {
+   "path": "画像/ASSET-197_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.694
+   },
+   "sha256": "005bf3e52630a85f20f546e8620a588c59264ace71158ced76bdbe98e254feaa"
+  },
+  "still": {
+   "path": "画像/ASSET-197_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "6934be7f79ac427a24c9cf205998f1272378e8086d73ee4dd2f5057f05225386"
+  }
+ },
+ "ASSET-198": {
+  "bg": {
+   "path": "画像/ASSET-198_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "246e327517789e1fcfa692a915cd0e80c8e7d53ea64d95e90249f22da042a2b6"
+  },
+  "char": {
+   "path": "画像/ASSET-198_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.607
+   },
+   "sha256": "a7231863fe3192dd58dacedf62bedc758181ab9eb3f8fba33417ad2a37c020f0"
+  }
+ },
+ "ASSET-199": {
+  "char": {
+   "path": "画像/ASSET-199_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.705
+   },
+   "sha256": "6105f9d92eebd08838da6eab5426459ce3682d953edcc8945e56a8b049a80541"
+  },
+  "still": {
+   "path": "画像/ASSET-199_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "35caffc1bf4ef14b63bc7d2e6eb44f3305eb01caf8d557a25c9d29c85db738f7"
+  }
+ },
+ "ASSET-200": {
+  "char": {
+   "path": "画像/ASSET-200_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.635
+   },
+   "sha256": "40fdc6786f1f9fca75e6f685693f06aed6ed54b7689b27d59028e671989bbe31"
+  },
+  "still": {
+   "path": "画像/ASSET-200_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "f1e24e32d6dda31dbe5fda7613a4656c815d474f5ec6e7496850461b7383a4dc"
+  }
+ },
+ "ASSET-202": {
+  "char": {
+   "path": "画像/ASSET-202_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.677
+   },
+   "sha256": "97b02bcc97e898e05f4725d224fc68ed18866af41b87fd988ca90464255f2637"
+  },
+  "still": {
+   "path": "画像/ASSET-202_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "d6880ffc42323eceb3f66e74b1c79fb01f567d75f662f06c8f1b8575195be16b"
+  }
+ },
+ "ASSET-203": {
+  "char": {
+   "path": "画像/ASSET-203_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.655
+   },
+   "sha256": "afdbc31cb223752839595307f5ef2727e4b50116ab07681fd6b97feb0318a58a"
+  },
+  "still": {
+   "path": "画像/ASSET-203_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "4086c3c64cf2dc2e82238c527d44fb12cd3ead05822ef0e2c86629fc7e950dbf"
+  },
+  "video": {
+   "path": "動画/ASSET-203_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "6e7d9e42d9d6bd3dacbf6cf9355f6a49a00d32df92e88f16c2cfa48731afd618"
+  }
+ },
+ "ASSET-204": {
+  "char": {
+   "path": "画像/ASSET-204_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.718
+   },
+   "sha256": "3447bff7b01f47578265bb48bd9486f8b31a902d561eb4ad7134293c8ca5038a"
+  },
+  "still": {
+   "path": "画像/ASSET-204_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "3bef6d2ac874331fa9af7ba966fe5b34a4fcfe07409306f77d56d8f454bc6c55"
+  }
+ },
+ "ASSET-206": {
+  "char": {
+   "path": "画像/ASSET-206_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.596
+   },
+   "sha256": "52a0e09c0a31c1ad7f675d818735bca150a69ed31360f887a63ccb5c8d41b8da"
+  },
+  "still": {
+   "path": "画像/ASSET-206_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "0e3d8b1a5876ba3a20b876a6af46d3a1b951378c9ebc56b33086c417f61f18b3"
+  }
+ },
+ "ASSET-207": {
+  "char": {
+   "path": "画像/ASSET-207_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.671
+   },
+   "sha256": "51f11e29f753a10310b59b71ae6d555f64ca434f471af7a9d9c5a4abb427610f"
+  },
+  "still": {
+   "path": "画像/ASSET-207_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "818a5cdbde13ec2c8761266254795e23340bb4aff94cd27c479e4ea3724f6ca1"
+  }
+ },
+ "ASSET-208": {
+  "bg": {
+   "path": "画像/ASSET-208_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "4918aabdbe300fb170f9844e861a0e481518a4050cd6c8445cd7ff636032c3cf"
+  },
+  "char": {
+   "path": "画像/ASSET-208_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.679
+   },
+   "sha256": "5397be2bd8dc4e694244f131006a0652021204b66b990c40e640636de49068e0"
+  }
+ },
+ "ASSET-210": {
+  "char": {
+   "path": "画像/ASSET-210_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.55
+   },
+   "sha256": "1356ed3a522dc9dba2262fc5d613012c8393cefb85358e9b7e0f914f4c4350c7"
+  },
+  "still": {
+   "path": "画像/ASSET-210_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "596a2a033185791f2fad1b7f3ead3f8539ea4bdfec5ffe00a88aa973b3e0129f"
+  }
+ },
+ "ASSET-211": {
+  "char": {
+   "path": "画像/ASSET-211_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.569
+   },
+   "sha256": "76707f0a7df201ae7238b436e0cf5c452f851ace8eee3d39382b573fa0494b3f"
+  },
+  "still": {
+   "path": "画像/ASSET-211_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "a84c72039af72e9f5330053dfbef8c29780a79da3bd5f88f880904c2724299c6"
+  }
+ },
+ "ASSET-212": {
+  "bg": {
+   "path": "画像/ASSET-212_bg.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "d5f7b4be4aa072753a880aa6e47341d8f8b49eb84a3e2af207e0c671efc64100"
+  },
+  "char": {
+   "path": "画像/ASSET-212_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.685
+   },
+   "sha256": "a7def2f77b3a4410a08dcf58b19b2dca11cbbddb893f244f0dc510a1591aff16"
+  }
+ },
+ "ASSET-213": {
+  "char": {
+   "path": "画像/ASSET-213_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.72
+   },
+   "sha256": "9e455be07bc6fe734168047ae7de7c3cc693487dd1bf0bc7bd458af85de58939"
+  },
+  "still": {
+   "path": "画像/ASSET-213_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "2a033ce8c42c04cba4848a02380fcfff6a55a41acd91a7a0b0726c4f6610c533"
+  },
+  "video": {
+   "path": "動画/ASSET-213_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "48f5ec445474f9a54877c2a259d428d4a08b9b594b00fcb7b19eb17e9bf94ab7"
+  }
+ },
+ "ASSET-214": {
+  "char": {
+   "path": "画像/ASSET-214_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.684
+   },
+   "sha256": "05623fb9c80ff49cc14f6f8a05e0e47ab027243780e4be99796e7938064ff6e9"
+  },
+  "still": {
+   "path": "画像/ASSET-214_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "fcea3413409c01e1cff8a45005345e2a826a1d461c7a9042ff257e75c90c4731"
+  },
+  "video": {
+   "path": "動画/ASSET-214_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "bd2877bc070b94c979d3fe630b0fe73cffd13e48b0a90286b434bc4c39952638"
+  }
+ },
+ "ASSET-215": {
+  "char": {
+   "path": "画像/ASSET-215_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.701
+   },
+   "sha256": "6d47c18816cb5a840ea6ffb37bc6db1f3283f254874530c58eaca392305cd9bc"
+  },
+  "still": {
+   "path": "画像/ASSET-215_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "a5b6dd44269cf90af0f32bd31e86ff9148091b653b5ac457f7c5b171f9468039"
+  },
+  "video": {
+   "path": "動画/ASSET-215_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "46cacf1b827bcde2960886ad0a31676cbb7ff9e4d5d13b83ba891687163dd62f"
+  }
+ },
+ "ASSET-217": {
+  "still": {
+   "path": "画像/ASSET-217_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "f0b419c59624fd116da586c91e17c55857938380d3891e1022e7207f1da414ab"
+  }
+ },
+ "ASSET-218": {
+  "char": {
+   "path": "画像/ASSET-218_char.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "mode": "RGBA",
+   "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparent_ratio": 0.663
+   },
+   "sha256": "d689009d506afa3e83718cd019e51e5b8c3a59250ae504517ff462dc0c7866c4"
+  },
+  "still": {
+   "path": "画像/ASSET-218_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "1997722fe0ce22dbbb8763321cefca1093e83c0cd64270134aa4aac69e0aa5d2"
+  }
+ },
+ "ASSET-220": {
+  "still": {
+   "path": "画像/ASSET-220_still.png",
+   "size": [
+    1920,
+    1072
+   ],
+   "mode": "RGB",
+   "alpha": null,
+   "sha256": "b6d1bd1554291aafe6964144a4e4d46bb6f1737d425e640570a89c9f546fcd9e"
+  },
+  "video": {
+   "path": "動画/ASSET-220_video.mp4",
+   "size": [
+    1344,
+    768
+   ],
+   "fps": "24/1",
+   "duration": 5.18,
+   "sha256": "7e1cc16c1cadb11fbd1710597320c0744267c7cac6377ad9f0ea10777b0a325f"
+  }
+ }
+}
