@@ -75,7 +75,8 @@
   //    「完了したのに画像が無い」と誤診する（実測）。実体の確認は後段の blob サイズで行う。
   const imgEls = () => [...document.querySelectorAll('main img')]
     .filter((i) => i.src && /backend-api\/estuary\/content|oaiusercontent|^blob:/.test(i.src));  // 2026-09-25: 新UIは blob: で出る
-  const norm = (s) => s.replace(/\n(?:表示を増やす|表示を減らす|Show more|Show less)\s*$/, '').replace(/\s+/g, ' ').trim();
+  // 2026-09-25: 新UIは長い送信文を「…\n展開」で折りたたむ（実測: 2,256字のキャラ文が「送信した要求文の表示を確認できません」で2回失敗）
+  const norm = (s) => s.replace(/\s*…?\s*(?:表示を増やす|表示を減らす|Show more|Show less|展開|折りたたむ|Expand|Collapse)\s*$/, '').replace(/\s+/g, ' ').trim();
   const users = () => [...document.querySelectorAll('[data-message-author-role="user"],[data-user-message-bubble="true"]')];
   const matchedUser = (prompt) => {
     const list = users();

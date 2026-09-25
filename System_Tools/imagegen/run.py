@@ -21,6 +21,7 @@ import json
 import math
 import os
 import pathlib
+import re
 import socket
 import struct
 import subprocess
@@ -353,7 +354,45 @@ class SendPacer:
                     pending=self.pending, sends=self.sends)
 
 
-def grant_next_send(pacer, targets, snapshots, inflight, persist):
+def reference_images(item, work):
+    """このキャラが再利用する固定人物（CHAR-NN）の基準画像。images/CHAR-NN.png にあるものだけ。"""
+    if not item:
+        return []
+    # 実行中の項目は id と prompt だけ（remaining() が落とす）。種類と参照先はキューの元データから引く。
+    try:
+        full = {q['id']: q for q in json.loads((pathlib.Path(work) / 'image_queue.json').read_text(encoding='utf-8'))}
+        item = {**full.get(item['id'], {}), **item}
+    except Exception:
+        pass
+    slot = item.get('slot') or (re.search(r'_(char|bg|still|overlay)\d*$', item['id']) or [None, None])[1]
+    if slot not in ('char', 'overlay'):
+        return []
+    refs = item.get('char_refs') or ([item['char_ref']] if item.get('char_ref') else [])
+    if not refs:
+        refs = [f'CHAR-{int(m):02d}' for m in re.findall(r'CHAR-(\d+)', item.get('prompt', ''))]
+    out = []
+    for r in dict.fromkeys(refs):
+        path = pathlib.Path(work) / 'images' / f'{r}.png'
+        if path.is_file():
+            out.append(str(path))
+    return out
+
+
+def attach_references(target, item, work):
+    """2026-09-25: キャラ生成の送信直前に、基準画像を参照として ChatGPT の入力欄に添える。
+    添えないと同じ人物が別人になる（043 で実測: 顔の輪郭・ひげ・ベストのポケットが変わり AI検品で「直す」）。"""
+    files = reference_images(item, work)
+    if not files:
+        return []
+    import attach_ref
+    ws = target['webSocketDebuggerUrl']
+    attach_ref.attach(ws, files)
+    attach_ref.wait_attached(ws, expect=len(files))
+    print(f"{item['id']}: 基準画像を添付 {[pathlib.Path(f).name for f in files]}", flush=True)
+    return files
+
+
+def grant_next_send(pacer, targets, snapshots, inflight, persist, items=None, work=None):
     pacer.observe(snapshots, time.time())
     if pacer.pending:
         pending = pacer.pending
@@ -371,6 +410,10 @@ def grant_next_send(pacer, targets, snapshots, inflight, persist):
         if not pacer.reserve(worker, request, time.time()):
             return
         persist()  # 許可を渡す前に所有者と時刻を記録する。
+        try:
+            attach_references(target, (items or {}).get(request['id']), work)
+        except Exception as exc:
+            print(f"⚠️ {request['id']}: 基準画像を添付できませんでした（参照なしで続行）: {exc}", flush=True)
         granted = js("""(()=>{
           const g=window.__yamaGen, p=window.__yamaParallel;
           if(!g || g.stop || localStorage.getItem(p.limitKey) || g.sendRequest?.token!==%s)return false;
@@ -796,7 +839,7 @@ def run_parallel(work, count, *, min_interval=60, max_attempts=None, exclude='',
                     idle_since.pop(worker, None)
                     record()  # 送信前に所有権を保存。通信断で別ウィンドウへ再送しない。
                     install_parallel(target, item, key)
-            grant_next_send(pacer, targets, snapshots, scheduler.inflight, record)
+            grant_next_send(pacer, targets, snapshots, scheduler.inflight, record, items=scheduler.items, work=work)
             record()
             heartbeat(work, verified=len(have), total=len(queue), status=status)
             time.sleep(2)
