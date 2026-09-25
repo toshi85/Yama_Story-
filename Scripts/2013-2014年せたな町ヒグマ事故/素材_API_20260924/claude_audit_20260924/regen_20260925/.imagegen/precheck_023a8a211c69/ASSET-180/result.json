@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-180",
+  "verdict": "PASS",
+  "subject": "事態の進展",
+  "evidence": "The desk and chair are empty; the call has just come in.",
+  "missing": "",
+  "reason": "ナレーションは抽象的な事態の進展を述べており、入ったばかりの電話で象徴している。"
+}

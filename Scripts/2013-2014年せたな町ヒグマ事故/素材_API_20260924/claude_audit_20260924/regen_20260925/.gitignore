@@ -1,0 +1,8 @@
+# 画像・動画の実体はコミットしない（109MB。納品はドライブ）
+*.png
+*.mp4
+*.jpg
+frames/
+rejected/
+images_codex/*.png
+ドライブ上書き用_*/

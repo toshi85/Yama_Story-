@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-209",
+  "narration": "現在のせたな町も、山へ入る前にクマの出没情報を確認し、単独で山に入るのを避けるよう呼びかけています。",
+  "asset_type": "キャラアニメーション",
+  "scene": "登山口の案内板の前で、2人組の山菜採りが出没情報を確かめてから入山する。",
+  "fences": [
+    {
+      "label": "キャラプロンプト（1:1）:",
+      "language": "",
+      "text": "[Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two full-body Japanese wild-vegetable gatherers standing side by side: 1) a man in his 60s in a green field jacket, grey trousers and a bucket hat, CLEAN-SHAVEN with no beard and no moustache, 2) a woman in her 50s in a beige windbreaker, dark trousers and a sun hat, both carrying small woven baskets with a small brass wildlife bell on each basket strap, the man holding a small paper leaflet printed with a simple dark brown bear silhouette, both leaning slightly forward and reading it together with careful serious faces, eyebrows relaxed, NOT frightened, NOT grinning, the man a head taller than the woman, a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Full body. White background. 1:1 aspect ratio. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は ASSET-218_bg.png を再利用、キャラは新規。2人を左から案内板の前へ移動させて止める。鈴の音SE。右上に「単独で入らない」を白字で置き、「単独」だけ赤字。"
+  ]
+}

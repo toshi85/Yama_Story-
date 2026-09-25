@@ -1,0 +1,16 @@
+{
+  "id": "ASSET-147",
+  "narration": "12月のこの時点までに、せたな町で捕獲したクマは20頭。",
+  "asset_type": "キャラアニメーション",
+  "scene": "雪の林に並ぶ空の箱わなと、作業するハンター。",
+  "fences": [
+    {
+      "label": "背景プロンプト（16:9）:",
+      "language": "",
+      "text": "Three steel box traps for bears placed in a row along the edge of a snowy forest near Setana, southwestern Hokkaido, in December winter, snow on their roofs, bare trees behind. The nearest trap's door is shut and a captured adult Hokkaido brown bear about 2 metres long crouches inside ON ALL FOURS, its dark shape clearly visible through the mesh; the other two stand with doors raised open. Winter is intended in this scene. Framed from adult eye height about five metres back, the traps on the right half, the left third left as clear open space. Grim, tired, relentless mood, cold blue-grey light. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+    }
+  ],
+  "directions": [
+    "→ 編集者指示: 背景は新規、キャラは ASSET-135_char.png を再利用し、左の空いた場所に置く。右上に「捕獲20頭」を白字で表示し、「20頭」だけ赤字。"
+  ]
+}

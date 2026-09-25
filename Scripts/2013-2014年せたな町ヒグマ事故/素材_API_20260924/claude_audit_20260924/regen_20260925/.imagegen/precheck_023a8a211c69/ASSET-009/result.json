@@ -1,0 +1,8 @@
+{
+  "id": "ASSET-009",
+  "verdict": "PASS",
+  "subject": "あの時のヒグマ",
+  "evidence": "The shadow spans both files as if the same bear looms over both records, and at the dark edge of the room behind the desk the bear itself is dimly visible, its massive head and shoulders emerging from the gloom above the two files.",
+  "missing": "",
+  "reason": "ナレーションは襲ったクマの同一性を述べており、プロンプトには同じヒグマの影とヒグマ自身が描かれている。"
+}
