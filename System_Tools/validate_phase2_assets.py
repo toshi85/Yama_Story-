@@ -275,8 +275,9 @@ def prompt_lint(text, errors, warns, info):
         warns.append(f'暗いシーンに明度の下限指定なし {len(darkish)}件（黒一色に沈む→NOT pure black＋主要素をclearly readableと明示）: {", ".join(dict.fromkeys(darkish))}')
 
     # 31) 実在機関を示す語があるのに打ち消し指定がない（実在施設の偽映像を作らないため）
-    REALORG = re.compile(r'\b(university|hospital|ministry|city hall|municipal|government (office|building)|police station|fire (department|headquarters)|air-ambulance)\b', re.I)
-    NEGORG  = re.compile(r'no (institution|university|hospital|building|ministry|organization|municipal) name|no logo|no crest|no emblem|no signage|matching no specific', re.I)
+    # 2026-09-25: 警察・消防などの制服も対象（せたな町005で背中に「北海道警察」「せたな消防」の文字が生成された）
+    REALORG = re.compile(r'\b(university|hospital|ministry|city hall|municipal|government (office|building)|police station|fire (department|headquarters)|air-ambulance|police (officer|officers|uniform)|firefighters?|fire rescue|rescue jacket|self-defense force|coast guard)\b', re.I)
+    NEGORG  = re.compile(r'no (real )?(institution|university|hospital|building|ministry|organization|municipal) name|no logo|no crest|no emblem|no signage|matching no specific|no lettering', re.I)
     org = []
     for nar, seg in segs:
         for b in re.findall(r'```\n?(.*?)\n?```', seg, re.S):
