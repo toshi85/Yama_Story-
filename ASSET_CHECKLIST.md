@@ -76,7 +76,7 @@
 - [ ] **人物には必ず `Japanese` を明記**（CHAR-XX 参照ありの場合は不要）
 - [ ] 名前のない人物は `[Generic group]`。**CHAR-XX は台本で名前がある人物にのみ**振る
 - [ ] **再利用は `(CHAR-XX 再利用)` をプロンプトの最先頭**に置く
-- [ ] **複数キャラを1枚に入れるときは頭身を数字で書く**。`(CHAR-XX 再利用)` タグだけでは**頭身が引き継がれず、頭の小さいリアル体型で出る**（2026-08-28 実測。ハンター3人で発生）。基準画像に合わせて `a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall, with the head taking up about a quarter of the total height` ＋ `Do NOT draw them with realistic adult proportions — not six or seven heads tall, not slender, not elongated` を明記する
+- [ ] **複数キャラを1枚に入れるときは頭身を数字で書く**。`(CHAR-XX 再利用)` タグだけでは**頭身が引き継がれず、頭の小さいリアル体型で出る**（2026-08-28 実測。ハンター3人で発生）。基準画像に合わせて `a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall` ＋ `Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall, not slender, not elongated` を明記する
 - [ ] **背景は同一ロケーションでマスター1枚→以降は再使用**（「ASSET-XXXの背景を再使用。ズーム位置・色調で画変わり」と書き、新規生成しない）。統合してよいのは場所・時間帯・演出が同じ場合のみ。人数・時刻・色調が画の意味になっているカットは統合しない → 2026-08-20 生成枚数削減のユーザー指示で恒久化
 - [ ] **同一人物の服装は全ASSETで固定**（CHAR定義の服装色を、実写風プロンプト・遠景・シルエットにも同じ色で書く）。複数人が映るカットは**1人ずつ服装で書き分け**、「farm work clothes」等の一括表記で済ませない → 2026-08-20 倒れる4人が同じ服になった指摘の再発防止
 - [ ] クマは**四足歩行**。`standing upright` `on two legs` 等は禁止（フックが検出する）
@@ -236,7 +236,7 @@ Do NOT draw open eyes, do NOT draw closed eyelids, do NOT draw pupils or irises 
 
 参照タグは服と顔立ちを引き継ぐが、**次は引き継がない**。毎回書く。
 
-- **頭身** … `a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall, the head about a quarter of the total height` ＋ `Do NOT draw them with realistic adult proportions — not six or seven heads tall`
+- **頭身（3頭身・本人裁定 2026-09-25）** … `a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall` ＋ `Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall`
 - **ひげ** … 高齢キャラは必ず `CLEAN-SHAVEN ... no beard, no moustache, no stubble`（白髪の老人を描くとAIはほぼ必ずひげを足す）
 - **老いの見た目** … 年齢の数字だけでは若く出る。`deeply lined face, sunken cheeks, sagging skin at the jaw, sparse thin white hair, age spots` ＋ `NOT middle-aged`
 - **身長** … 複数人は `All are the same height as one another apart from the one kneeling`
@@ -402,9 +402,10 @@ Not a ground-level shot, not a close-up, no macro texture, no worm's-eye angle.
 **AC. カートゥンキャラは顔を見せる・頭身は数字・背景は静止画**（2026-09-24 せたな町で有料生成後に全面差し戻し：全員後ろ向き／頭身の崩れ／キャラの背景が動画）
 - **後ろ向きは理由のあるカットだけ。** 制作メモに `向き理由=走り去る` のように1行書く。理由があってもキャラカットの**2割まで**（本人裁定 2026-09-25「後ろ向きのシーンもあるので、後ろはNGだとおかしいのでは？」）
 - 「実在の被害者は顔を出さない（後ろ姿）」は**実写カットのルール**。カートゥンキャラ（基準画像 CHAR-xx を含む）へ持ち込まない。せたな町の全員後ろ向きはこの持ち込みが原因
-- **頭身**は定石Cの定型句を毎回書き、`chibi` 等の別の体型語を混ぜない（せたな町は `slightly chibi` と `four-to-five-head` が同居）
+- **頭身は3頭身**（本人裁定 2026-09-25。旧4〜5頭身は廃止。ChatGPT経路の extract_prompts.py と同じ）。定石Cの定型句を毎回書き、`chibi` 等の別の体型語・別の頭身を混ぜない（せたな町は `slightly chibi` と `four-to-five-head` が同居）
 - **背景**は透過キャラPNG＋人物なし（`No people`）の16:9静止画を別々に書く。動画を併記するなら編集者指示に「キャラ画の区間は開始画像を背景にする」
 - 機械検査: validate_phase2_assets.py lint51〜53（check_prompts_all.py の合格票に含まれる）／Codex側 check_character_generation.py
+- **一括生成の前に見本を本人に見せる。** 本人の承認前は、同じ .md から作れるのは画像・動画それぞれ3件まで（System_Tools/generation_gate.py が全生成スクリプトの中で止める）。本人が自分のターミナルで `python System_Tools/generation_gate.py approve <プロンプト.md> --kind image` を打つと全体を作れる。プロンプトは合格票の .md と全文一致したものしか生成に回らない
 
 ### タイプの決め方（機械が判定できる部分は数える）
 

@@ -9,6 +9,8 @@ import unittest
 from unittest.mock import patch
 
 import run
+# 並列配分の単体テスト。関所（generation_gate.py）は test_generation_gate.py で別に検査し、ここでは本物の合格票・見本枠に触れない
+run.generation_gate_filter = lambda work, todo: todo
 
 
 class QueueTests(unittest.TestCase):

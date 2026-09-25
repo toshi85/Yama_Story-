@@ -1,0 +1,17 @@
+{
+  "description": "Yama素材の生成は親リポジトリの関所（合格票・全文一致・見本承認・改ざん禁止）を通す。",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/../.claude/hooks/guard_yama_generation_gate.py\" --codex",
+            "timeout": 60,
+            "statusMessage": "Yama素材生成の関所（合格票・全文一致・見本承認）"
+          }
+        ]
+      }
+    ]
+  }
+}

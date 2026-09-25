@@ -1,0 +1,3 @@
+# 2026-09-25: Codex 内蔵の画像生成は既定で切る。生成は関所つきの経路（codex exec --enable image_generation ＋ 合格票の .md から作ったキュー）だけ
+[features]
+image_generation = false

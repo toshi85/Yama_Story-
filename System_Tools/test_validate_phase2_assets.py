@@ -177,8 +177,9 @@ class CharacterFacingHeadsBackgroundTest(unittest.TestCase):
                    "Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering.")
     GOOD_CHAR = ("Cute cartoon character design, thick black outlines, flat cel-shaded colors. A full-body Japanese husband "
                  "in his 50s, three-quarter front view facing to the right, face clearly visible, large expressive eyes, "
-                 "a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. "
-                 "Do NOT draw them with realistic adult proportions — not six or seven heads tall. Transparent background.")
+                 "a very large head about one third of the total height, a short compact torso and short stubby arms and "
+                 "legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six "
+                 "or seven heads tall. Transparent background.")
     STILL_BG = "A rural house doorway toward a wooded mountain road in early spring, Japan. No people. 16:9."
     VIDEO_BG = "Animate the frozen frame for 8 seconds. The camera advances along the mountain road. No people."
 
@@ -191,6 +192,11 @@ class CharacterFacingHeadsBackgroundTest(unittest.TestCase):
 
     def test_yesterdays_chibi_mix_is_blocked(self):
         self.assertEqual(1, len(errors_for(self.cut(19, self.FAILED_CHAR), 'キャラの頭身指定が欠落・矛盾')))
+
+    def test_four_to_five_heads_is_blocked_after_three_heads_ruling(self):
+        # 本人裁定 2026-09-25: 3頭身。旧定型句の4〜5頭身は矛盾として止める
+        old = self.GOOD_CHAR.replace('roughly three heads tall', 'roughly four to five heads tall')
+        self.assertEqual(1, len(errors_for(self.cut(19, old), 'キャラの頭身指定が欠落・矛盾')))
 
     def test_video_background_is_blocked(self):
         self.assertEqual(1, len(errors_for(self.cut(19, self.GOOD_CHAR, bg=self.VIDEO_BG), 'キャラカットの背景が静止画になっていない')))

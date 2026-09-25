@@ -587,9 +587,13 @@ def prompt_lint(text, errors, warns, info):
             continue
         scene_lines = [line for line in seg.splitlines() if line.startswith('シーン:')]
         scene_has_multi = any(PROMPT_MULTI.search(line) for line in scene_lines)
-        # 定石Cの頭身の定型句（roughly four to five heads tall）は人数ではない（2026-09-25 せたな町177で誤検知）
+        # 定石Cの頭身の定型句（roughly three heads tall / not four, five, six or seven heads tall）は人数ではない
+        # （2026-09-25 せたな町177で誤検知）
         multi_blocks = [b for b in char_blocks
-                        if PROMPT_MULTI.search(re.sub(r'\b(?:roughly |about )?(?:four|five|six|seven)(?: to (?:four|five|six|seven))? heads tall\b', '', b, flags=re.I))]
+                        if PROMPT_MULTI.search(re.sub(
+                            r'\bnot (?:four, five, )?six or seven heads tall\b|'
+                            r'\b(?:roughly |about )?(?:three|four|five|six|seven)(?: to (?:four|five|six|seven))? heads tall\b|'
+                            r'\babout one third of the total height\b', '', b, flags=re.I))]
         # 単一の再利用キャラ説明内の "both arms" 等は、複数の登場物指定ではない。
         only_single_reused_char = multi_blocks and all(
             len(re.findall(r'\(CHAR-\d+\s+再利用\)', b)) == 1 for b in multi_blocks)
@@ -735,25 +739,26 @@ def prompt_lint(text, errors, warns, info):
             f'後ろ向きのキャラカットが多すぎる {len(back_cuts)}/{len(char_cuts)}件（上限2割）: {", ".join(back_cuts)}'
             '\n    → 直し方: 後ろ向きでなくても伝わるカットを正面・斜め前に戻す')
 
-    # 52) 頭身は数字で指定し、矛盾する体型語（chibi 等）を混ぜない（ASSET_CHECKLIST 定石C）
-    HEADS = re.compile(r'\b(?:three|four to five|four-to-five)[- ]heads?[- ]tall\b', re.I)
-    NOT_REAL = re.compile(r'realistic adult proportions|not six or seven heads tall', re.I)
-    BODY_CONFLICT = re.compile(r'\bchibi\b|super[- ]deformed|\b(?:two|six|seven)[- ]heads?[- ]tall\b', re.I)
+    # 52) 頭身は3頭身（本人裁定 2026-09-25。旧4〜5頭身は廃止）を数字で指定し、別の頭身・体型語を混ぜない（定石C）
+    HEADS = re.compile(r'\bthree[- ]heads?[- ]tall\b', re.I)
+    NOT_REAL = re.compile(r'realistic adult proportions', re.I)
+    BODY_CONFLICT = re.compile(
+        r'\bchibi\b|super[- ]deformed|\b(?:two|four|five|six|seven)[- ]heads?[- ]tall\b|four[- ]to[- ]five[- ]head', re.I)
     bad_heads = []
     targets = [(no, blocks) for no, _, blocks in char_cuts if blocks] + \
               [(f'{cid}(基準画像)', blocks) for cid, _, blocks in masters]
     for no, blocks in targets:
         for b in blocks:
-            conflict = BODY_CONFLICT.search(re.sub(r'not six or seven heads tall', '', b, flags=re.I))
-            if not HEADS.search(b) or not NOT_REAL.search(b) or conflict \
-                    or len({m.group(0).lower().replace('-', ' ') for m in HEADS.finditer(b)}) > 1:
+            conflict = BODY_CONFLICT.search(re.sub(r'not (?:four, five, )?six or seven heads tall', '', b, flags=re.I))
+            if not HEADS.search(b) or not NOT_REAL.search(b) or conflict:
                 bad_heads.append(no)
                 break
     if bad_heads:
         errors.append(
             f'キャラの頭身指定が欠落・矛盾 {len(bad_heads)}件: {", ".join(bad_heads)}'
-            '\n    → 直し方: "roughly four to five heads tall, a large head, a short compact torso and short stubby arms and legs" '
-            '＋ "Do NOT draw them with realistic adult proportions — not six or seven heads tall" を入れ、chibi 等の別の体型語は消す')
+            '\n    → 直し方: "a very large head about one third of the total height, a short compact torso and short stubby '
+            'arms and legs, roughly three heads tall" ＋ "Do NOT draw them with realistic adult proportions — not four, five, '
+            'six or seven heads tall" を入れ、chibi・4〜5頭身など別の体型語は消す（3頭身＝本人裁定 2026-09-25）')
 
     # 53) キャラカットの背景は人物なしの静止画。動画を併記するなら「キャラ画の区間は開始画像を背景にする」必須
     VIDEO_LABEL = re.compile(r'動画プロンプト')

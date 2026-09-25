@@ -581,6 +581,25 @@ def wait_parallel_login(target):
     raise RuntimeError('専用ChromeでChatGPTへのログインを確認できません')
 
 
+def generation_gate_filter(work, todo):
+    """投入直前の関所（generation_gate.py）。合格票の .md に全文があるものだけ、見本承認前は3件まで。
+
+    2026-09-25: 関所がClaudeのフックにしか無く、Codexや手動起動では素通りしていた。スクリプト自身で止める。
+    """
+    sys.path.insert(0, str(HERE.parent))
+    import generation_gate as gate
+    # 受講生は公開リポジトリ（Yama_Story-）だけを持ち、合格票の仕組みが無い。本人のPC（親リポジトリあり）か
+    # Yamaの作品フォルダのときだけ関所をかける
+    if not (gate.owner_machine() or gate.is_yama(work)):
+        return todo
+    try:
+        allowed = gate.require('image', todo, tool='imagegen/run.py', paid=False, paths=[work])
+    except gate.GateError as e:
+        raise SystemExit('❌ ' + str(e))
+    keep = {item['id'] for item in allowed}
+    return [item for item in todo if item['id'] in keep]
+
+
 def run_parallel(work, count, *, min_interval=60, max_attempts=None, exclude='', exclude_slots=''):
     """独立ウィンドウへ配分。max_attemptsは実測の発注上限用（CLI非公開）。"""
     (work / '.imagegen').mkdir(exist_ok=True)
@@ -596,6 +615,7 @@ def run_parallel(work, count, *, min_interval=60, max_attempts=None, exclude='',
     if not todo:
         print(f'投入対象は残り0件（全キュー{len(queue)}件）', flush=True)
         return
+    todo = generation_gate_filter(work, todo)
     scheduler = ParallelQueue(todo)
     key = 'yamaParallelLimit:' + hashlib.sha256(str(work).encode()).hexdigest()
     state_path = work / '.imagegen/parallel_state.json'
