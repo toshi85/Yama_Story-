@@ -72,10 +72,10 @@ A rural household table with a corded telephone and an open blank notebook in a 
 ナレーター: しかし、奥さんは体から血を流し、すでに息を引き取っていました。
 
 【制作メモ】ASSET-026 [キャラアニメーション] 台本L42
-シーン: 沢辺に倒れて亡くなっている女性（CHAR-01）。
+シーン: 沢辺に倒れて亡くなっている女性（CHAR-01）。※2026-09-26 本人「文言をかえるなどして、生成して」で、ChatGPT が描かない死亡・血の語を外した（血と傷は描かない方針。死亡はテロップ）。
 キャラプロンプト（1:1）:
 ```
-(CHAR-01 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, children's animation style. A full-body Japanese woman aged 52 in a muted olive field jacket, dark trousers and a plain brown outdoor hat fallen beside her head, lying flat on her back seen from the side, her face clearly visible in profile, eyes closed, eyebrows slack, mouth slightly open, pale bluish-white face, clearly dead, lifeless. Her olive jacket is torn at the shoulder and sleeves, with dark red stains soaking the torn jacket and a small dark red patch on the ground under her arm, no open wounds shown, no organs, no bones. Her woven gathering basket lies tipped over near her feet. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+(CHAR-01 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, children's animation style. A full-body Japanese woman aged 52 in a muted olive field jacket, dark trousers and a plain brown outdoor hat fallen beside her head, lying flat on her back seen from the side, her face clearly visible in profile, eyes closed, eyebrows slack, her face drained pale, mouth open a little, lying completely still, as if in a deep endless sleep. Her olive jacket is torn at the shoulder and sleeves. No blood, no stains, no wounds. Her woven gathering basket lies tipped over near her feet. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
@@ -106,10 +106,10 @@ Two large fresh Hokkaido brown bear pawprints pressed deep into damp dark stream
 ナレーター: 事故記録によると、奥さんは両手両足の筋肉を食い取られた状態だったとのこと。
 
 【制作メモ】ASSET-028 [キャラアニメーション] 台本L46
-シーン: 診察室で、遺体の状態を悲しそうに説明する医師。
+シーン: 診察室で、遺体の状態を悲しそうに説明する医師。※2026-09-26 本人指示で涙の書き方を弱めた（ChatGPT が描かなかったため）。
 キャラプロンプト（1:1）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male doctor in his 50s in a plain white coat over a light blue shirt and grey trousers, short grey-black hair, CLEAN-SHAVEN, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He holds a plain clipboard against his chest with both hands, tears running down both cheeks, eyebrows slanted steeply upward in the middle, mouth bent into a trembling downturned frown, deeply grieving and sorrowful, NOT calm, NOT neutral. Only this one doctor, no other people. No lettering on the coat or clipboard, no name tag, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male doctor in his 50s in a plain white coat over a light blue shirt and grey trousers, short grey-black hair, CLEAN-SHAVEN, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He holds a plain clipboard against his chest with both hands, eyes glistening with held-back tears, eyebrows slanted steeply upward in the middle, mouth bent into a trembling downturned frown, sorrowful and somber, NOT calm, NOT neutral. Only this one doctor, no other people. No lettering on the coat or clipboard, no name tag, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```

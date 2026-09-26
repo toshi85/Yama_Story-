@@ -1,0 +1,20 @@
+{
+ "at": "2026-09-26T12:40:03",
+ "tool": "fal_video_queue.py",
+ "kind": "video",
+ "paid": true,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix5a.md",
+ "md_sha256": "6bba2870327acf6a3b50fe4effd55fd589c17248f395990dc86ad90a83afe83f",
+ "sample_approved": true,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/video_plan_regen.json",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/動画_H3"
+ ],
+ "items": [
+  {
+   "id": "H3_078",
+   "prompt": "One single continuous close shot on an early-spring Hokkaido forest trail: a Japanese man's hand in a grey jacket sleeve slowly tightens its grip on a Japanese nata hatchet with a broad rectangular blade; a faint rustle in the bamboo grass, and the hand lifts the hatchet a little. The camera stays close on the hand and forearm, no face ever visible. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+  }
+ ]
+}

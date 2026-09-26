@@ -1,0 +1,20 @@
+{
+ "at": "2026-09-26T11:43:48",
+ "tool": "fal_video_queue.py",
+ "kind": "video",
+ "paid": true,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix5a.md",
+ "md_sha256": "6bba2870327acf6a3b50fe4effd55fd589c17248f395990dc86ad90a83afe83f",
+ "sample_approved": true,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/video_plan_regen.json",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/動画_H3"
+ ],
+ "items": [
+  {
+   "id": "H3_096",
+   "prompt": "One single continuous shot from a fixed camera at the edge of an early-spring Hokkaido forest: a single adult brown bear on all fours steps slowly out of the shadowed bamboo grass toward the camera, head low, fangs bared, ears pinned flat, eyes fixed on the lens, and stops. It never stands up on two legs. No cuts, no scene change, no zoom. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+  }
+ ]
+}

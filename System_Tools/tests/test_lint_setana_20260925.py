@@ -38,13 +38,18 @@ CASES = [
      lambda t: t.replace("→女性セリフ「娘さんに／会いに行くはずだったのに、、」",
                          "→ **Google Flow動画プロンプト:**\n```\nOne single continuous take. A hand closes a diary. 8 seconds. Photorealistic.\n```\n→女性セリフ「娘さんに／会いに行くはずだったのに、、」"),
      "動画プロンプトもある"),
+    # 2026-09-26: ChatGPT が絵を返さない言葉（026 の元の書き方）。打ち消し（No blood）は止めない
+    ("026 亡くなった人を clearly dead / dark red stains で書く（ChatGPT が描かない）",
+     lambda t: t.replace("baffled and troubled, NOT calm, NOT smiling.",
+                         "baffled and troubled, NOT calm, NOT smiling, clearly dead, lifeless, with dark red stains soaking his jacket."),
+     "ChatGPT が描かない言葉"),
 ]
 
 
 def main() -> int:
     ng = 0
     base_out = lint(BASE)
-    for key in ("何度も出る役にCHAR番号が無い", "No snow が無い", "静止画だけ", "動画プロンプトもある"):
+    for key in ("何度も出る役にCHAR番号が無い", "No snow が無い", "静止画だけ", "動画プロンプトもある", "ChatGPT が描かない言葉"):
         if key in base_out:
             print(f"NG  正しい版なのに止まった: {key}")
             ng += 1

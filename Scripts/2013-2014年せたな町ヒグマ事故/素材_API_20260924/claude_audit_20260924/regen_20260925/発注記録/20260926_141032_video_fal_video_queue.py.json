@@ -1,0 +1,20 @@
+{
+ "at": "2026-09-26T14:10:32",
+ "tool": "fal_video_queue.py",
+ "kind": "video",
+ "paid": true,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix5c.md",
+ "md_sha256": "708533d08979b0d7e05a7cb44f912ac89af9993223ca6cf26839c6d675863f09",
+ "sample_approved": true,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/video_plan_regen.json",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/../..",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/動画_H3"
+ ],
+ "items": [
+  {
+   "id": "H3_175",
+   "prompt": "One single continuous aerial drone shot in early spring in Hokkaido: the camera glides slowly forward and rises over a tiny single file of searchers in blaze-orange vests walking along a bare ridge, revealing more and more forested ridges and valleys rolling away to the horizon until the searchers are only specks. No cuts, no scene change, smooth steady movement. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+  }
+ ]
+}

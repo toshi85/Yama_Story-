@@ -1,0 +1,20 @@
+{
+ "at": "2026-09-26T11:03:23",
+ "tool": "fal_video_queue.py",
+ "kind": "video",
+ "paid": true,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix5b.md",
+ "md_sha256": "44a2307ffb2779cd411159c130645d20f9a96e968dbf8b9dc299d632c6068121",
+ "sample_approved": true,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/video_plan_regen.json",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/動画_H3"
+ ],
+ "items": [
+  {
+   "id": "H3_157",
+   "prompt": "One single continuous aerial drone shot: the camera glides slowly forward over the edge of the small town of Setana in late winter, passes above a single file of five Japanese hunters in blaze-orange walking along a snowy farm track toward the hills, and continues on toward the forested hills ahead. The hunters stay small and seen from behind, no face visible. No cuts, no scene change, smooth steady movement. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+  }
+ ]
+}

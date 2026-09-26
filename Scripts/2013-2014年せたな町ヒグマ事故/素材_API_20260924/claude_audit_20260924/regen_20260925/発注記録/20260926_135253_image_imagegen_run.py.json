@@ -1,0 +1,18 @@
+{
+ "at": "2026-09-26T13:52:53",
+ "tool": "imagegen/run.py",
+ "kind": "image",
+ "paid": false,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix5c.md",
+ "md_sha256": "708533d08979b0d7e05a7cb44f912ac89af9993223ca6cf26839c6d675863f09",
+ "sample_approved": true,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925"
+ ],
+ "items": [
+  {
+   "id": "ASSET-175_still",
+   "prompt": "A high aerial drone view over a vast sea of forested ridges and deep valleys rolling away to the horizon inland from Setana, southwestern Hokkaido, in April early spring: layer after layer of leafless brown deciduous forest with dark green conifers, a winding valley road far below, the Sea of Japan faint on the far left, No snow anywhere, no snow patches on the slopes, no frost, no ice, no winter. On a bare ridge in the lower third of the frame, a tiny single file of five Japanese searchers in blaze-orange vests walks along the ridgeline, very small against the enormous forest, no face visible. Captured as a frozen moment. The upper third left as clean open space. Daunting, wide, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "at": "2026-09-26T12:34:36",
+ "tool": "fal_video_queue.py",
+ "kind": "video",
+ "paid": true,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix5b.md",
+ "md_sha256": "44a2307ffb2779cd411159c130645d20f9a96e968dbf8b9dc299d632c6068121",
+ "sample_approved": true,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/video_plan_regen.json",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/動画_H3"
+ ],
+ "items": [
+  {
+   "id": "H3_146",
+   "prompt": "One single continuous shot near Setana, southwestern Hokkaido, in winter: the five Japanese hunters seen from behind keep trudging slowly in single file through the deep snow into the snowy forest, light snow falling, the camera follows slowly at walking pace. No cuts, no scene change, no face visible. 8 seconds. No blood, no wounds, no gore. Photorealistic, shot on RED camera. Documentary style."
+  }
+ ]
+}

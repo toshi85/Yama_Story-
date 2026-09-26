@@ -1,0 +1,18 @@
+{
+ "at": "2026-09-26T13:05:41",
+ "tool": "imagegen/run.py",
+ "kind": "image",
+ "paid": false,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix5a.md",
+ "md_sha256": "6bba2870327acf6a3b50fe4effd55fd589c17248f395990dc86ad90a83afe83f",
+ "sample_approved": true,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925"
+ ],
+ "items": [
+  {
+   "id": "ASSET-082_still",
+   "prompt": "An adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms bounding away from the camera ON ALL FOURS into dense bamboo grass and bare woods on a hillside near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring, never rearing up on its hind legs, NOT on two legs. Only its back, rump and hind legs face the camera, its face is hidden, its head already pushing into the brush. Captured as a frozen mid-stride moment, dust and dead leaves kicked up behind its hind paws. Bare and budding trees, brown leaf litter, No snow anywhere, no snow patches, no frost, no ice, no winter. The bear sits in the upper middle of the frame, the lower half is the empty trail. Framed from adult eye height about ten metres behind it. Tense, then emptying, overcast early-afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. No blood, no wounds, no gore. Generate 1 image."
+  }
+ ]
+}

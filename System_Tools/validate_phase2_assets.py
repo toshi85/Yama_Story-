@@ -717,6 +717,28 @@ def prompt_lint(text, errors, warns, info):
         errors.append(f'26字以上なのに静止画だけ {len(long_still)}件（26〜50字はキャラアニメ・動画・Google Earth のみ）: '
                       + ', '.join(dict.fromkeys(long_still)))
 
+    # 60) ChatGPT が絵を返さない言葉（2026-09-26 せたな町 026・028 本人「文言をかえるなどして、生成して」
+    #     「今後もうまく回避するように調整して」）。026 は clearly dead / lifeless / dark red stains で何度送っても
+    #     画像が返らず、言い換えたら1回で描けた。打ち消し（no blood / without wounds / nothing red）は数えない。
+    REFUSE_WORDS = re.compile(
+        r'clearly dead|\blifeless\b|\bdead (?:body|woman|man|person|victim)\b|\bcorpse\b|\bcadaver\b|'
+        r'\bblood(?:y|ied|stained)?\b|\bbleeding\b|\b(?:dark )?red (?:stains?|patch(?:es)?|pool)\b|\bgore\b|\bgory\b|'
+        r'\bopen wounds?\b|\bmutilat\w*|\bentrails\b|\borgans?\b|\bdismember\w*', re.I)
+    NEGATED = re.compile(r'\b(?:no|not|without|nothing|never|free of)\b[^.,;]*', re.I)   # 打ち消しは読点まで（NOT smiling, clearly dead を見逃さない）
+    refuse = []
+    for nar, seg in segs:
+        for lab, b in labeled_blocks(seg):
+            if 'Google Flow' in lab:
+                continue
+            if REFUSE_WORDS.search(NEGATED.sub(' ', b)):
+                refuse.append(asset_no(seg))
+    if refuse:
+        errors.append(f'ChatGPT が描かない言葉 {len(refuse)}件（死体・血・血の染み・傷口・臓器。何度送っても画像が返らない）: '
+                      + ', '.join(dict.fromkeys(refuse))
+                      + '\n    → 言い換え（026で実証）: 亡くなった人＝"eyes closed, eyebrows slack, her face drained pale, mouth open a little, '
+                        'lying completely still, as if in a deep endless sleep." ／ 血と傷＝描かずに "No blood, no stains, no wounds." '
+                        '／ 死亡・負傷の事実はテロップ（編集者指示）で示す')
+
     # 46) シーン行で向き・視線を求めているのに、英語プロンプトに指定がない。
     SCENE_DIRECTION = re.compile(r'見る|見つめ|向く|向け|振り返|指さ|指差|視線|の方へ|のほうへ|にらむ|睨')
     PROMPT_DIRECTION = re.compile(
