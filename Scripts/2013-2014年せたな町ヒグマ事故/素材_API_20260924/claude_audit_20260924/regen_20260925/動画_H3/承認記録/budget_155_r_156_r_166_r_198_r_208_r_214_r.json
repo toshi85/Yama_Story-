@@ -1,0 +1,19 @@
+{
+  "schema": "fal_video_budget_gate_v1",
+  "scene_ids": [
+    "S155",
+    "S156",
+    "S166",
+    "S198",
+    "S208",
+    "S214"
+  ],
+  "approval_update": {
+    "authorization_source": "2026-09-26 本人チャット「料金の了解（約210円）承認します」「今後もいちいち承認をもとめないようにシステム化しておいて」、fal モデルページ: H3 Max Turbo 768P $0.02/秒（9/30まで半額）＝5秒$0.10",
+    "auto_recharge": false,
+    "max_post_attempts_per_scene": 1,
+    "fallback_models_allowed": false,
+    "max_usd_per_clip": "0.10",
+    "max_total_usd": "0.60"
+  }
+}
