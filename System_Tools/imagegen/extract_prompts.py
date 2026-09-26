@@ -60,6 +60,17 @@ CHAR_TAIL = (
     "Fully transparent background, PNG with alpha, no backdrop and no ground shadow. "
     "1:1 square aspect ratio."
 )
+# 2026-09-26: 本文で「」付きの文字を指定したとき（例: 179 のビラ「クマ危険！」本人指示）は、その文字だけ許す。
+#   一律の "No written words" を付けると、本文の指定と食い違う。
+CHAR_TAIL_WITH_TEXT = (
+    "No other written words or lettering anywhere except the Japanese words given in 「」 above. "
+    "Fully transparent background, PNG with alpha, no backdrop and no ground shadow. "
+    "1:1 square aspect ratio."
+)
+
+
+def char_tail(body: str) -> str:
+    return CHAR_TAIL_WITH_TEXT if re.search(r"「[^」]+」", body) else CHAR_TAIL
 
 # 素材ファイル側の旧スタイル文（この1文を丸ごと CHAR_STYLE に差し替える）
 OLD_STYLE_RE = re.compile(r"Cute cartoon character design.*?children's animation style\.\s*", re.S)
@@ -118,7 +129,7 @@ def parse(md_path: Path):
         items.append({
             "id": cid, "asset_no": None, "kind": "キャラ基準画像", "slot": "char_ref",
             "aspect": "1:1", "label": label, "narration": "", "char_ref": None,
-            "body": body, "prompt": f"{CHAR_STYLE} {pose_of(body)}{body} {CHAR_TAIL}",
+            "body": body, "prompt": f"{CHAR_STYLE} {pose_of(body)}{body} {char_tail(body)}",
         })
 
     # --- 本文アセット ---
@@ -144,7 +155,7 @@ def parse(md_path: Path):
 
             if name in ("char", "overlay"):
                 body = char_body(raw)
-                prompt = f"{CHAR_STYLE} {pose_of(body)}{body} {CHAR_TAIL}"
+                prompt = f"{CHAR_STYLE} {pose_of(body)}{body} {char_tail(body)}"
                 ref = char_ref_of(raw)
             else:
                 body = prompt = re.sub(r"\s+", " ", raw).strip()
