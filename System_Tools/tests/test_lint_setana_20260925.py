@@ -59,6 +59,9 @@ CASES = [
     ("198 動画に8秒分の動き",
      lambda t: t.replace("→女性セリフ「娘さんに／会いに行くはずだったのに、、」", "→ Google Flow動画プロンプト:\n```\nOne single continuous shot: two hunters walk to a van, load it and drive away. 8 seconds.\n```\n→女性セリフ「娘さんに／会いに行くはずだったのに、、」"),
      "6秒以上"),
+    ("164 キャラの人物に年齢が無い",
+     lambda t: t.replace("A full-body Japanese local hunter in his 60s with short grey hair", "A full-body Japanese local hunter with short grey hair", 1),
+     "年齢が無い"),
 ]
 
 

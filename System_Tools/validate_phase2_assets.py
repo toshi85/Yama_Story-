@@ -821,6 +821,21 @@ def prompt_lint(text, errors, warns, info):
     if dup:
         errors.append(f'同じ番号のブロックが2つ以上 {len(dup)}件（資料が二重になっていないか確かめる）: ' + ', '.join(dup))
 
+    # 67) 人物の年齢が書かれていないキャラ（2026-09-26 せたな町 063・069・075・164 本人「若い人でおかしい」
+    #     「なんで若い人を生成するの？」）。年齢を書かないと若く描かれる。固定人物（CHAR-NN）も年齢を書く。
+    AGE = re.compile(r'\baged \d+|\b(?:in )?(?:his|her|their) (?:early |mid |late )?\d0s\b|\b\d+-year-old|'
+                     r'\bin (?:his|her|their) (?:early |mid |late )?(?:twenties|thirties|forties|fifties|sixties|seventies|eighties)', re.I)
+    HUMAN = re.compile(r'\b(?:man|woman|men|women|person|people|hunter|official|researcher|mayor|resident|hiker|forager|'
+                       r'officer|firefighter|husband|wife|fisherman|worker|staff)\b', re.I)
+    no_age = []
+    for nar, seg in segs:
+        for lab, b in labeled_blocks(seg):
+            if 'キャラプロンプト' in lab and HUMAN.search(NEGATED.sub(' ', b)) and not AGE.search(b):
+                no_age.append(asset_no(seg))
+    if no_age:
+        errors.append(f'キャラの人物に年齢が無い {len(no_age)}件（書かないと若く描かれる）: ' + ', '.join(dict.fromkeys(no_age))
+                      + '\n    → 直し方: "aged 45" / "in his 60s" のように人物ごとに年齢を書く。中高年は "clearly middle-aged, NOT young"')
+
     # 46) シーン行で向き・視線を求めているのに、英語プロンプトに指定がない。
     SCENE_DIRECTION = re.compile(r'見る|見つめ|向く|向け|振り返|指さ|指差|視線|の方へ|のほうへ|にらむ|睨')
     PROMPT_DIRECTION = re.compile(

@@ -2542,9 +2542,9 @@ A worn wooden desk by a window in a small rural town office in Setana, southwest
 ```
 Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese former fisherman aged 86, NOT middle-aged, with a deeply lined weathered face, sunken cheeks, sagging skin at the jaw, sparse thin white hair under a faded navy knit cap, age spots, CLEAN-SHAVEN with no beard, no moustache and no stubble, a slightly bent back, a worn dark brown work jacket, grey work trousers and black rubber boots, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He leans on a plain wooden walking stick with his left hand and scratches the back of his head with his right hand, eyebrows slanted steeply upward in the middle, eyes open and dry with NO tears, NOT crying, mouth bent into a puzzled downturned frown, troubled and at a loss, NOT calm, NOT smiling. No lettering, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
-→ 背景は Fix5c で作った ASSET-168_bg.png（荒れた畑）をそのまま使う。新しく作るのはキャラだけ。
+→ 背景は Fix5c で作った ASSET-168_still.png（荒れた畑）をそのまま使う。新しく作るのはキャラだけ。
 →男性セリフ「年寄りばかりで／畑も荒れた、、」
-→ 編集者指示: 背景は ASSET-168_bg.png、キャラは新規の ASSET-168_char.png（涙のない困った顔）。元漁師を右に置き、うつむくように小さく上下させる（動画は作らない）。左上に「岡部秀隆さん（86歳）」を白字で置き、中央に「荒れた畑に山菜」。「荒れた」だけ赤字。
+→ 編集者指示: 背景は ASSET-168_still.png、キャラは新規の ASSET-168_char.png（涙のない困った顔）。元漁師を右に置き、うつむくように小さく上下させる（動画は作らない）。左上に「岡部秀隆さん（86歳）」を白字で置き、中央に「荒れた畑に山菜」。「荒れた」だけ赤字。
 
 ---
 

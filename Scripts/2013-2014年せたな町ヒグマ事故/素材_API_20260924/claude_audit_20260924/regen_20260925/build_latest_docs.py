@@ -152,3 +152,10 @@ changed = {k: v for k, v in source.items() if v != "元の資料"}
 print(f"カット数 {len(base)}／差し替え {len(changed)}")
 from collections import Counter
 print(Counter(changed.values()))
+
+# 2026-09-26: 編集者用の指示が指すファイルが、ドライブに実在するか・作る予定にあるかを毎回確かめる（074「キャラ画像がありません」）
+import subprocess as _sp
+_r = _sp.run([sys.executable, str(HERE / "check_editor_refs.py")], capture_output=True, text=True)
+print(_r.stdout.strip().splitlines()[-1] if _r.stdout.strip() else "参照チェック: 出力なし")
+if _r.returncode:
+    print(_r.stdout)
