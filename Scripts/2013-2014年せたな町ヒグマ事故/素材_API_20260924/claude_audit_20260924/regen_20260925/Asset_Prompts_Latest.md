@@ -1,6 +1,6 @@
 # 固定キャラ基準プロンプト（4人）
 
-以下は人物の再現用デザインであり、実在人物の顔や服装を特定したものではない。実写動画は写実スタイル、キャラアニメーションはカートゥンスタイルで生成する。顔が特定できる正面描写は作らない。ハンター・町職員・研究者・住民は複数人を含み得るため、固定キャラにはしない。
+以下は人物の再現用デザインであり、実在人物の顔や服装を特定したものではない。実写動画は写実スタイル、キャラアニメーションはカートゥンスタイルで生成する。キャラ系は架空の顔を正面または斜め前から見せる。冒頭の実写動画だけは顔を特定させない。ハンター・町職員・研究者・住民は複数人を含み得るため、固定キャラにはしない。
 対応カット: CHAR-01＝ASSET-002／CHAR-02＝ASSET-003・019・022／CHAR-03＝ASSET-008・063・075・076／CHAR-04＝ASSET-077・080・085。
 
 ### CHAR-01｜2013年に山菜採りへ出た女性（52歳・冒頭の実写動画用）
@@ -12,19 +12,19 @@ A Japanese woman aged 52 gathering spring wild vegetables in the forested hills 
 ### CHAR-02｜2013年の女性の夫（50代・本編のキャラ演出用）
 
 ```text
-One full-body Japanese man in his 50s, the husband searching for his wife in the Setana incident reconstruction. Consistent design: dark blue field jacket, gray trousers, short black hair with a little gray, medium build. Rear or three-quarter back view only, face not identifiable. Cute Japanese cartoon character design, thick black outlines, flat cel-shaded colors, restrained expression, neutral standing pose, plain white background, no text, no logo, no blood, no wounds. Generate one character reference image, square 1:1.
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese husband in his 50s, short black hair with some gray, dark blue field jacket, gray trousers. Fictional Japanese cartoon person, three-quarter front view, visible serious and concerned expressive face with clearly drawn eyes, nose and mouth. Mouth closed, eyebrows slightly tense, alert eyes, absolutely no smile, no cheerful expression. Neutral standing pose, hands visible, head and feet fully in frame. Exactly one character and one pose, no character sheet, no turnaround panels. Transparent alpha background, no scenery, no text, no logo, no gore. 1:1 square image.
 ```
 
 ### CHAR-03｜2014年に襲われた女性（40代半ば・本編のキャラ演出用）
 
 ```text
-One full-body Japanese woman in her mid 40s in the 2014 Setana incident reconstruction. Consistent design: maroon field jacket, charcoal trousers, dark hair tied low, medium build. Rear or three-quarter back view only, face not identifiable. Cute Japanese cartoon character design, thick black outlines, flat cel-shaded colors, restrained expression, neutral standing pose, plain white background, no text, no logo, no blood, no wounds. Generate one character reference image, square 1:1.
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese woman in her mid 40s, dark hair tied low, maroon field jacket, charcoal trousers. Fictional Japanese cartoon person, three-quarter front view, visible serious and concerned expressive face with clearly drawn eyes, nose and mouth. Mouth closed, eyebrows slightly tense, alert eyes, absolutely no smile, no cheerful expression. Neutral standing pose, hands visible, head and feet fully in frame. Exactly one character and one pose, no character sheet, no turnaround panels. Transparent alpha background, no scenery, no text, no logo, no gore. 1:1 square image.
 ```
 
 ### CHAR-04｜2014年に同行した男性（60代前半・本編のキャラ演出用）
 
 ```text
-One full-body Japanese man in his early 60s accompanying the woman in the 2014 Setana incident reconstruction. Consistent design: gray field jacket, dark trousers, short graying hair, sturdy build. Rear or three-quarter back view only, face not identifiable. Cute Japanese cartoon character design, thick black outlines, flat cel-shaded colors, restrained expression, neutral standing pose, plain white background, no text, no logo, no blood, no wounds. Generate one character reference image, square 1:1.
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese man in his early 60s, short graying hair, gray field jacket, dark trousers. Fictional Japanese cartoon person, three-quarter front view, visible serious and concerned expressive face with clearly drawn eyes, nose and mouth. Mouth closed, eyebrows slightly tense, alert eyes, absolutely no smile, no cheerful expression. Neutral standing pose, hands visible, head and feet fully in frame. Exactly one character and one pose, no character sheet, no turnaround panels. Transparent alpha background, no scenery, no text, no logo, no gore. 1:1 square image.
 ```
 
 ---
@@ -275,6 +275,12 @@ The entrance of a narrow forest road leading up into the wooded hills of Shinsei
 
 ナレーター: 目的は、春の山菜採り。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 新成地区へ向かうワゴン車を後方から写す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-015_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-016 [Lovart静止画] 台本L23
 シーン: カゴに入った春の山菜を接写。
 ```
@@ -304,6 +310,12 @@ An untouched dining table at noon in a rural house in Setana, southwestern Hokka
 
 ナレーター: 正午
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 昼になっても空いたままの食卓。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-017_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-018 [テキストのみ] 台本L27
 シーン: 黒背景に「正午」の短い文字を表示。
 → 編集者指示: 黒背景の中央に「正午」を白字で表示。1秒でフェードイン、次カットへ。
@@ -348,6 +360,12 @@ A white wagon car parked on a gravel track beside a mountain stream near Setana,
 
 ナレーター: さらに山の方へと進むと、妻の衣服も見つかります。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 沢近くに止まったワゴン車。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-020_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-021 [Lovart静止画 + 編集者] 台本L32
 シーン: 奥の山林に落ちた女性の衣服。
 ```
@@ -377,7 +395,10 @@ A rural household table with a corded telephone and an open blank notebook in a 
 
 ナレーター: 到着した警察と消防が、辺りを捜索することに。
 
-【制作メモ】ASSET-023 [Lovart動画] 台本L36
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese husband in his 50s, short black hair with some gray, dark blue field jacket, gray trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 山道で電話をかける夫の手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+【制作メモ】ASSET-023 [キャラアニメーション] 台本L36
 シーン: 警察と消防の捜索者が山林を進む。
 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -389,6 +410,12 @@ Japanese police and firefighters searching dense woodland in early spring in the
 
 ナレーター: 午後1時45分ごろ
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 警察と消防の捜索者が山林を進む。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-023_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-024 [テキストのみ] 台本L38
 シーン: 黒背景に「午後1時45分」の短い文字を表示。
 → 編集者指示: 黒背景の中央に「午後1時45分」を白字で表示。1秒でフェードイン、次カットへ。
@@ -413,10 +440,10 @@ Japanese police and firefighters searching dense woodland in early spring in the
 ナレーター: しかし、奥さんは体から血を流し、すでに息を引き取っていました。
 
 【制作メモ】ASSET-026 [キャラアニメーション] 台本L42
-シーン: 沢辺に倒れて亡くなっている女性（CHAR-01）。
+シーン: 沢辺に倒れて亡くなっている女性（CHAR-01）。※2026-09-26 本人「文言をかえるなどして、生成して」で、ChatGPT が描かない死亡・血の語を外した（血と傷は描かない方針。死亡はテロップ）。
 キャラプロンプト（1:1）:
 ```
-(CHAR-01 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, children's animation style. A full-body Japanese woman aged 52 in a muted olive field jacket, dark trousers and a plain brown outdoor hat fallen beside her head, lying flat on her back seen from the side, her face clearly visible in profile, eyes closed, eyebrows slack, mouth slightly open, pale bluish-white face, clearly dead, lifeless. Her olive jacket is torn at the shoulder and sleeves, with dark red stains soaking the torn jacket and a small dark red patch on the ground under her arm, no open wounds shown, no organs, no bones. Her woven gathering basket lies tipped over near her feet. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+(CHAR-01 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, children's animation style. A full-body Japanese woman aged 52 in a muted olive field jacket, dark trousers and a plain brown outdoor hat fallen beside her head, lying flat on her back seen from the side, her face clearly visible in profile, eyes closed, eyebrows slack, her face drained pale, mouth open a little, lying completely still, as if in a deep endless sleep. Her olive jacket is torn at the shoulder and sleeves. No blood, no stains, no wounds. Her woven gathering basket lies tipped over near her feet. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
@@ -447,10 +474,10 @@ Two large fresh Hokkaido brown bear pawprints pressed deep into damp dark stream
 ナレーター: 事故記録によると、奥さんは両手両足の筋肉を食い取られた状態だったとのこと。
 
 【制作メモ】ASSET-028 [キャラアニメーション] 台本L46
-シーン: 診察室で、遺体の状態を悲しそうに説明する医師。
+シーン: 診察室で、遺体の状態を悲しそうに説明する医師。※2026-09-26 本人指示で涙の書き方を弱めた（ChatGPT が描かなかったため）。
 キャラプロンプト（1:1）:
 ```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male doctor in his 50s in a plain white coat over a light blue shirt and grey trousers, short grey-black hair, CLEAN-SHAVEN, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He holds a plain clipboard against his chest with both hands, tears running down both cheeks, eyebrows slanted steeply upward in the middle, mouth bent into a trembling downturned frown, deeply grieving and sorrowful, NOT calm, NOT neutral. Only this one doctor, no other people. No lettering on the coat or clipboard, no name tag, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male doctor in his 50s in a plain white coat over a light blue shirt and grey trousers, short grey-black hair, CLEAN-SHAVEN, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He holds a plain clipboard against his chest with both hands, eyes glistening with held-back tears, eyebrows slanted steeply upward in the middle, mouth bent into a trembling downturned frown, sorrowful and somber, NOT calm, NOT neutral. Only this one doctor, no other people. No lettering on the coat or clipboard, no name tag, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
@@ -527,7 +554,7 @@ One single continuous aerial drone shot: the camera glides slowly forward over t
 
 ナレーター: クマ事件が発生したとのことで、地元のハンター11人が現場周辺を捜します。
 
-【制作メモ】ASSET-033 [Lovart動画] 台本L56
+【制作メモ】ASSET-033 [キャラアニメーション] 台本L56
 シーン: 11人のハンターが斜面に散る。
 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -556,6 +583,9 @@ An empty mountain trail winding into a quiet forest near Setana, southwestern Ho
 
 ナレーター: 町は防災無線を使い、町内にクマへの注意を呼びかけます。
 
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 茂みの奥を探しても何も見えない。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 【制作メモ】ASSET-035 [Lovart静止画 + 編集者] 台本L60
 シーン: 集落の防災無線スピーカー。
 ```
@@ -580,6 +610,12 @@ A plain corridor inside a small rural government office building in southwestern
 
 ナレーター: 4月17日（事件から2日目）
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 近隣自治体へ送る緊急文書の束。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-036_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-037 [テキストのみ] 台本L64
 シーン: 黒背景に「4月17日」の短い文字を表示。
 → 編集者指示: 黒背景の中央に「4月17日」を白字で表示。1秒でフェードイン、次カットへ。
@@ -588,8 +624,8 @@ A plain corridor inside a small rural government office building in southwestern
 
 ナレーター: 北海道の研究機関「道総研（どうそうけん）」が、現地の調査に入ります。
 
-【制作メモ】ASSET-038 [Lovart動画] 台本L66
-シーン: 研究者が山道の現場へ到着する後ろ姿。
+【制作メモ】ASSET-038 [キャラアニメーション] 台本L66
+シーン: 研究者が山道の現場へ到着する顔が見える斜め前の姿。
 静止画プロンプト（16:9・フォトリアル）:
 ```
 A regional research team arriving at a forest road in early spring in the Setana and Imakane area of southwestern Hokkaido, Japan. Documentary reconstruction, not a likeness of any real person. Any people are Japanese and filmed from behind, over a shoulder, or as hands only; no face visible.  No blood, no wounds, no gore. Photorealistic, restrained Japanese documentary aesthetic, natural light, shot on RED camera. No readable text, no real institution name, no crest, no emblem, no logo. 16:9 aspect ratio. Generate 1 image.
@@ -617,12 +653,14 @@ A quiet main street in the small town of Setana, southwestern Hokkaido, in mid-A
 
 ナレーター: 道総研は、現場の状況から、人への危険が大きいクマによる事故と判断。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 3人の職員が机を囲み聞き取りをする。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-039_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-040 [キャラアニメーション] 台本L70
 シーン: 研究者の手元に広がる現場資料。
-キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese laboratory researcher wearing a pale gray laboratory coat, seen from behind to avoid a real-person likeness, holding an open unmarked case folder and pointing to one blank field with the right index finger, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
-```
 背景プロンプト（16:9）:
 ```
 An empty municipal worktable with one plain open case folder, loose unmarked papers and a pencil in early spring in southwestern Hokkaido, Japan. No people, no legible text, no real institution name or emblem. No blood, no wounds, no gore. Photorealistic documentary background, 16:9 aspect ratio. Generate 1 image.
@@ -634,7 +672,10 @@ An empty municipal worktable with one plain open case folder, loose unmarked pap
 
 ナレーター: 残っていたクマの毛を採取し、遺伝子を調べます。
 
-【制作メモ】ASSET-041 [Lovart静止画 + 編集者] 台本L71
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 研究者の手元に広がる現場資料。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+【制作メモ】ASSET-041 [キャラアニメーション] 台本L71
 シーン: 落ち葉のクマの毛を試料容器へ移す。
 ```
 A gloved hand sealing bear hair in a sample tube in early spring in the Setana and Imakane area of southwestern Hokkaido, Japan. Documentary reconstruction, not a likeness of any real person. Any people are Japanese and filmed from behind, over a shoulder, or as hands only; no face visible.  No blood, no wounds, no gore. Photorealistic, restrained Japanese documentary aesthetic, natural light, shot on RED camera. No readable text, no real institution name, no crest, no emblem, no logo. 16:9 aspect ratio. Generate 1 image.
@@ -645,6 +686,12 @@ A gloved hand sealing bear hair in a sample tube in early spring in the Setana a
 
 ナレーター: 同じ4月17日の午前5時
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 落ち葉のクマの毛を試料容器へ移す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-041_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-042 [テキストのみ] 台本L73
 シーン: 黒背景に「午前5時」の短い文字を表示。
 → 編集者指示: 黒背景の中央に「午前5時」を白字で表示。1秒でフェードイン、次カットへ。
@@ -670,6 +717,9 @@ A forest track at dawn near Setana, southwestern Hokkaido, in mid-April early sp
 
 ナレーター: 早朝からクマを捜しますが、それでも見つけられません。
 
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 夜明け前に森へ入るハンター。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 【制作メモ】ASSET-044 [Lovart静止画 + 編集者] 台本L76
 シーン: 人影のないササやぶを写す。
 ```
@@ -699,6 +749,12 @@ A country roadside near the forest edge near Setana, southwestern Hokkaido, in m
 
 ナレーター: 4月23日（事件から7日後）
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 道路沿いの注意看板を主画にして数値は編集で示す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-045_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-046 [テキストのみ] 台本L80
 シーン: 黒背景に「4月23日」の短い文字を表示。
 → 編集者指示: 黒背景の中央に「4月23日」を白字で表示。1秒でフェードイン、次カットへ。
@@ -707,7 +763,7 @@ A country roadside near the forest edge near Setana, southwestern Hokkaido, in m
 
 ナレーター: 町や警察などの関係者26人が集まり、今後のクマ対策を話し合いました。
 
-【制作メモ】ASSET-047 [Lovart動画] 台本L82
+【制作メモ】ASSET-047 [キャラアニメーション] 台本L82
 シーン: 関係者が机を囲む対策会議。
 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -719,6 +775,12 @@ Twenty-six officials at a response meeting, faces obscured in early spring in th
 
 ナレーター: 現場に残っていたクマの足跡から、女性を襲ったクマはオスで前足の幅は14センチと想定。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 関係者が机を囲む対策会議。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-047_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-048 [Lovart静止画 + 編集者] 台本L84
 シーン: 定規を添えたクマの前足跡。
 ```
@@ -773,6 +835,12 @@ An empty gravel lot beside a wooden community notice board at the edge of a smal
 
 ナレーター: クマを捜す一方で、町は住宅地への対応も進めます。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 地区の掲示板に注意書きを貼る手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-051_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-052 [Lovart静止画] 台本L92
 シーン: 住宅地と山林の境を俯瞰する。
 ```
@@ -827,7 +895,13 @@ A public reception counter inside a small rural town office in Setana, southwest
 
 ナレーター: 足跡やフン、農作物の被害なども見つけたら、すぐに知らせてほしいと、
 
-【制作メモ】ASSET-056 [Lovart動画] 台本L99
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 通報窓口の電話と記録用紙。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 既存の背景または動画に、画像/ASSET-055_char.pngを合成。文字は編集で付ける。
+【制作メモ】ASSET-056 [キャラアニメーション] 台本L99
 シーン: 足跡・フン・食害跡の接写を順に見せる。
 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -839,12 +913,14 @@ Pawprint, bear droppings and damaged crops shown as three separate field closeup
 
 ナレーター: 地区長から住民へ呼びかけました。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 足跡・フン・食害跡の接写を順に見せる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-056_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-057 [キャラアニメーション] 台本L101
-シーン: 地区長が住民へ呼びかける後ろ姿。
-キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese local district leader wearing a navy field jacket and gray trousers, seen from behind to avoid a real-person likeness, standing upright with one hand raised in a public warning gesture, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
-```
+シーン: 地区長が住民へ呼びかける顔が見える斜め前の姿。
 背景プロンプト（16:9）:
 ```
 An empty village meeting space beside a notice board in early spring in southwestern Hokkaido, Japan. No people, no legible text, no real institution name or emblem. No blood, no wounds, no gore. Photorealistic documentary background, 16:9 aspect ratio. Generate 1 image.
@@ -933,11 +1009,7 @@ Animate the frozen frame for 8 seconds. Evening shadow climbs the tree trunks; t
 
 【制作メモ】ASSET-063 [キャラアニメーション] 台本L113
 シーン: 山道の女性の背後に迫るヒグマの影。
-キャラ参照: CHAR-03（同一人物のデザインを維持。顔は特定させない）
-キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese woman in her mid 40s wearing a maroon field jacket, seen from behind to avoid a real-person likeness, turning sharply sideways with arms raised to shield the body, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
-```
+キャラ参照: CHAR-03（同一人物のデザインを維持。架空の顔を見せる）
 背景プロンプト（16:9）:
 ```
 An adult male Hokkaido brown bear on all fours on a narrow spring mountain path, head low, ears flattened, shoulder fur bristled, teeth visible; species-scale 1.9 to 2.3 m long and 150 to 400 kg as a general range, not a measured claim about this individual in early spring in southwestern Hokkaido, Japan. No people, no legible text, no real institution name or emblem. No blood, no wounds, no gore. Photorealistic documentary background, 16:9 aspect ratio. Generate 1 image.
@@ -1061,6 +1133,12 @@ A bear warning sign at the entrance of a gravel forest road near Ota in the Tais
 
 ナレーター: 午後2時ごろ。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 看板の先へ入っていく2人の斜め前から顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-071_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-072 [テキストのみ] 台本L129
 シーン: 黒背景に「午後2時」の短い文字を表示。
 → 編集者指示: 黒背景の中央に「午後2時」を白字で表示。1秒でフェードイン、次カットへ。
@@ -1094,13 +1172,15 @@ A bear warning sign at the entrance of a gravel forest road near Ota in the Tais
 
 ナレーター: すると突然、女性の背後からクマが襲いかかります。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese man in his early 60s, short graying hair, gray field jacket, dark trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 男性を先頭に下山する2人を横から写す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-074_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-075 [キャラアニメーション] 台本L134
 シーン: 女性の背後から飛び出すヒグマを横から写す。
-キャラ参照: CHAR-03（同一人物のデザインを維持。顔は特定させない）
-キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese woman in her mid 40s wearing a maroon field jacket, seen from behind to avoid a real-person likeness, turning sharply sideways with arms raised to shield the body, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
-```
+キャラ参照: CHAR-03（同一人物のデザインを維持。架空の顔を見せる）
 背景プロンプト（16:9）:
 ```
 An adult male Hokkaido brown bear on all fours on a narrow spring mountain path, head low, ears flattened, shoulder fur bristled, teeth visible; species-scale 1.9 to 2.3 m long and 150 to 400 kg as a general range, not a measured claim about this individual in early spring in southwestern Hokkaido, Japan. No people, no legible text, no real institution name or emblem. No blood, no wounds, no gore. Photorealistic documentary background, 16:9 aspect ratio. Generate 1 image.
@@ -1112,13 +1192,12 @@ An adult male Hokkaido brown bear on all fours on a narrow spring mountain path,
 
 ナレーター: 抵抗する間もなく、女性は肩や腕に噛みつかれます。
 
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese woman in her mid 40s, dark hair tied low, maroon field jacket, charcoal trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 女性の背後から飛び出すヒグマを横から写す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 【制作メモ】ASSET-076 [キャラアニメーション] 台本L136
 シーン: 女性が身をよじる瞬間と迫るクマの影。
-キャラ参照: CHAR-03（同一人物のデザインを維持。顔は特定させない）
-キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese woman in her mid 40s wearing a maroon field jacket, seen from behind to avoid a real-person likeness, turning sharply sideways with arms raised to shield the body, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
-```
+キャラ参照: CHAR-03（同一人物のデザインを維持。架空の顔を見せる）
 背景プロンプト（16:9）:
 ```
 An adult male Hokkaido brown bear on all fours on a narrow spring mountain path, head low, ears flattened, shoulder fur bristled, teeth visible; species-scale 1.9 to 2.3 m long and 150 to 400 kg as a general range, not a measured claim about this individual in early spring in southwestern Hokkaido, Japan. No people, no legible text, no real institution name or emblem. No blood, no wounds, no gore. Photorealistic documentary background, 16:9 aspect ratio. Generate 1 image.
@@ -1130,13 +1209,12 @@ An adult male Hokkaido brown bear on all fours on a narrow spring mountain path,
 
 ナレーター: さらに、先を歩いていた男性にも突進。
 
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese woman in her mid 40s, dark hair tied low, maroon field jacket, charcoal trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 女性が身をよじる瞬間と迫るクマの影。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 【制作メモ】ASSET-077 [キャラアニメーション] 台本L137
 シーン: 男性へ向かうヒグマを横から写す。
-キャラ参照: CHAR-04（同一人物のデザインを維持。顔は特定させない）
-キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese man in his early 60s wearing a gray field jacket, seen from behind to avoid a real-person likeness, turning sharply sideways with arms raised to shield the body, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
-```
+キャラ参照: CHAR-04（同一人物のデザインを維持。架空の顔を見せる）
 背景プロンプト（16:9）:
 ```
 An adult male Hokkaido brown bear on all fours on a narrow spring mountain path, head low, ears flattened, shoulder fur bristled, teeth visible; species-scale 1.9 to 2.3 m long and 150 to 400 kg as a general range, not a measured claim about this individual in early spring in southwestern Hokkaido, Japan. No people, no legible text, no real institution name or emblem. No blood, no wounds, no gore. Photorealistic documentary background, 16:9 aspect ratio. Generate 1 image.
@@ -1189,6 +1267,9 @@ An adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kil
 
 ナレーター: 反撃を受けたクマは負傷し、
 
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese man in his early 60s, short graying hair, gray field jacket, dark trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 男性がナタで応戦する直前の構え。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 【制作メモ】ASSET-081 [Lovart静止画] 台本L144
 シーン: 反撃で体勢を崩すヒグマ。
 ```
@@ -1279,6 +1360,9 @@ A researcher's old wooden worktable by a large window in southwestern Hokkaido, 
 
 ナレーター: 一方、町では、再びクマ事件が発生したこともあり、旧太田小学校の校舎付近を通る道を通行止めにします。
 
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 応戦場面を指す専門家の手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 【制作メモ】ASSET-087 [Lovart動画] 台本L156
 シーン: 旧校舎近くの通行止め柵。
 静止画プロンプト（16:9・フォトリアル）:
@@ -1368,12 +1452,14 @@ A small vegetable field at the edge of a quiet rural settlement near Setana, sou
 
 ナレーター: 一方、現場に到着したハンターは、クマの血痕を採取。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult woman in a muted outdoor jacket, clearly fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 高齢女性が持つ笛と爆竹の手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-092_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-093 [キャラアニメーション] 台本L168
 シーン: ハンターが現場の試料を採る手元。
-キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese hunter wearing a dark green field jacket and gray trousers, seen from behind to avoid a real-person likeness, kneeling and placing a field specimen into a sealed tube, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
-```
 背景プロンプト（16:9）:
 ```
 An empty spring forest floor with leaf litter and a blank specimen bag in early spring in southwestern Hokkaido, Japan. No people, no legible text, no real institution name or emblem. No blood, no wounds, no gore. Photorealistic documentary background, 16:9 aspect ratio. Generate 1 image.
@@ -1434,6 +1520,12 @@ One single continuous shot from a fixed camera at the edge of an early-spring Ho
 
 ナレーター: 2つの現場は、およそ8キロも離れており、地区が異なるエリア。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult woman in a muted outdoor jacket, clearly fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 2人の女性の山菜カゴを年別に並べる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-096_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-097 [Google Earth] 台本L175
 シーン: 新成地区と太田地区を同じ画面で見せる。
 座標（地区代表点・事故地点ではない）: 新成 42.332954, 139.794357／太田 42.280846, 139.802475。
@@ -1509,7 +1601,13 @@ A narrow mountain trail through a quiet deciduous forest in the Ota area near Se
 
 ナレーター: しかし、事件は起きてしまいました。
 
-【制作メモ】ASSET-103 [Lovart静止画] 台本L185
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 鈴を付けた2人が森の小道を歩く。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-102_char.pngを合成。文字は編集で付ける。
+【制作メモ】ASSET-103 [キャラアニメーション] 台本L185
 シーン: 襲撃後の道に残る山菜カゴ。
 ```
 The forest trail immediately after the attack, abandoned basket visible in early spring in the Setana and Imakane area of southwestern Hokkaido, Japan. Documentary reconstruction, not a likeness of any real person. Any people are Japanese and filmed from behind, over a shoulder, or as hands only; no face visible.  No blood, no wounds, no gore. Photorealistic, restrained Japanese documentary aesthetic, natural light, shot on RED camera. No readable text, no real institution name, no crest, no emblem, no logo. 16:9 aspect ratio. Generate 1 image.
@@ -1554,6 +1652,9 @@ A meeting table in a small rural town office in Setana, southwestern Hokkaido, i
 
 ナレーター: 4月7日（事件から3日後）
 
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 町職員が駆除方針を資料で確認。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 【制作メモ】ASSET-106 [テキストのみ] 台本L191
 シーン: 黒背景に「4月7日」の短い文字を表示。
 → 編集者指示: 黒背景の中央に「4月7日」を白字で表示。1秒でフェードイン、次カットへ。
@@ -1579,7 +1680,10 @@ A wide view over several forested ridges rolling one behind another in the Ota a
 
 ナレーター: クマは男性の反撃により顔面を負傷し、山の中へ逃げています。
 
-【制作メモ】ASSET-108 [Lovart静止画 + 編集者] 台本L195
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 複数の尾根を捜すハンター。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+【制作メモ】ASSET-108 [キャラアニメーション] 台本L195
 シーン: 顔を隠したヒグマがやぶへ入る。
 ```
 A bear moving through brush with its face turned away in early spring in the Setana and Imakane area of southwestern Hokkaido, Japan. Documentary reconstruction, not a likeness of any real person. Any people are Japanese and filmed from behind, over a shoulder, or as hands only; no face visible.  an adult male Hokkaido brown bear, species-scale body about 1.9 to 2.3 m long; its exact incident weight is not claimed. On all fours, never upright. Low head, flattened ears, bristled shoulder fur, bared teeth; clearly threatening, not gentle. No blood, no wounds, no gore. Photorealistic, restrained Japanese documentary aesthetic, natural light, shot on RED camera. No readable text, no real institution name, no crest, no emblem, no logo. 16:9 aspect ratio. Generate 1 image.
@@ -1625,7 +1729,13 @@ An office desk in a small rural town office in Setana, southwestern Hokkaido, in
 
 ナレーター: こうして、地上と空の2つでクマを捜索することとなりました。
 
-【制作メモ】ASSET-111 [Lovart動画] 台本L199
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: ヘリ要請書と一般的な防災ヘリ。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 既存の背景または動画に、画像/ASSET-110_char.pngを合成。文字は編集で付ける。
+【制作メモ】ASSET-111 [キャラアニメーション] 台本L199
 シーン: 地上の捜索隊と上空のヘリを同画面に収める。
 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1637,6 +1747,12 @@ Searchers on a ridge and a generic helicopter high overhead in early spring in t
 
 ナレーター: 4月9日（事件から5日後）
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 地上の捜索隊と上空のヘリを同画面に収める。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-111_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-112 [テキストのみ] 台本L201
 シーン: 黒背景に「4月9日」の短い文字を表示。
 → 編集者指示: 黒背景の中央に「4月9日」を白字で表示。1秒でフェードイン、次カットへ。
@@ -1696,6 +1812,12 @@ A forest trail that splits into three separate paths leading up into the hills n
 
 ナレーター: 今回捜すのは、事故現場から北東へ半径2キロの範囲。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 捜索隊が3本の道へ分かれる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-115_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-116 [Google Earth] 台本L209
 シーン: 2014年の太田地区周辺を北東方向が分かる構図で見せる。
 座標（地区代表点・事故地点ではない）: 太田 42.280846, 139.802475。
@@ -1725,7 +1847,13 @@ The edge of a gravel forest road used as a staging area near Setana, southwester
 
 ナレーター: 準備が整い、問題のクマを捕えるべく、地上と空の二つで捜索を開始。
 
-【制作メモ】ASSET-118 [Lovart動画] 台本L213
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: ベテランが銃の扱いを教える手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 既存の背景または動画に、画像/ASSET-117_char.pngを合成。文字は編集で付ける。
+【制作メモ】ASSET-118 [キャラアニメーション] 台本L213
 シーン: 地上の捜索隊と遠くのヘリ。
 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1737,6 +1865,12 @@ Ground searchers beneath a distant generic rescue helicopter in early spring in 
 
 ナレーター: この時期、山には、まだ雪が残っていました。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 地上の捜索隊と遠くのヘリ。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-118_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-119 [Lovart静止画 + 編集者] 台本L215
 シーン: 日陰に残る春の雪。
 ```
@@ -1801,6 +1935,12 @@ A trail of Hokkaido brown bear pawprints, left by an adult male brown bear about
 
 ナレーター: 午後6時
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 雪上の足跡を指すハンターの手。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-122_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-123 [テキストのみ] 台本L222
 シーン: 黒背景に「午後6時」の短い文字を表示。
 → 編集者指示: 黒背景の中央に「午後6時」を白字で表示。1秒でフェードイン、次カットへ。
@@ -1826,7 +1966,10 @@ A gravel forest road leading out of the woods at sunset near Setana, southwester
 
 ナレーター: 地上と空、ふたつの捜索を進めても、ヒグマは人間から逃げ切ったのです。
 
-【制作メモ】ASSET-125 [Lovart動画] 台本L226
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 夕暮れの森から空手で戻る捜索隊。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+【制作メモ】ASSET-125 [キャラアニメーション] 台本L226
 シーン: 無人の山並みを離れるヘリ。
 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -1913,6 +2056,9 @@ An empty paved mountain road curving down out of the hills at dusk near Setana, 
 
 ナレーター: 5月19日午前11時ごろ（事件から1ヶ月以上経過）
 
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 疲れた捜索隊が山から戻る。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 【制作メモ】ASSET-131 [テキストのみ] 台本L237
 シーン: 黒背景に「5月19日」の短い文字を表示。
 → 編集者指示: 黒背景の中央に「5月19日」を白字で表示。1秒でフェードイン、次カットへ。
@@ -2197,7 +2343,7 @@ A mountain trail entrance at the edge of a forest near Setana, southwestern Hokk
 
 ナレーター: 冬の時期を過ぎた来年の2月下旬以降に再び大規模な捜索を考えていたのです。
 
-【制作メモ】ASSET-151 [Lovart静止画 + 編集者] 台本L272
+【制作メモ】ASSET-151 [キャラアニメーション] 台本L272
 シーン: 無記名の捜索計画書と冬山写真を机に並べる。
 ```
 A plain planning folder, field gloves, and a generic late-winter forest photograph arranged on an office desk in late winter in the Setana and Imakane area of southwestern Hokkaido, Japan. Documentary reconstruction, not a likeness of any real person. Any people are Japanese and filmed from behind, over a shoulder, or as hands only; no face visible.  No blood, no wounds, no gore. Photorealistic, restrained Japanese documentary aesthetic, natural light, shot on RED camera. No readable text, no real institution name, no crest, no emblem, no logo. 16:9 aspect ratio. Generate 1 image.
@@ -2208,7 +2354,13 @@ A plain planning folder, field gloves, and a generic late-winter forest photogra
 
 ナレーター: 女性が襲われたのは、2年とも4月。
 
-【制作メモ】ASSET-152 [Lovart静止画 + 編集者] 台本L274
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 無記名の捜索計画書と冬山写真を机に並べる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-151_char.pngを合成。文字は編集で付ける。
+【制作メモ】ASSET-152 [キャラアニメーション] 台本L274
 シーン: 2013年と2014年の4月のカレンダー。
 ```
 Two April calendar pages from different years side by side in early spring in the Setana and Imakane area of southwestern Hokkaido, Japan. Documentary reconstruction, not a likeness of any real person. Any people are Japanese and filmed from behind, over a shoulder, or as hands only; no face visible.  No blood, no wounds, no gore. Photorealistic, restrained Japanese documentary aesthetic, natural light, shot on RED camera. No readable text, no real institution name, no crest, no emblem, no logo. 16:9 aspect ratio. Generate 1 image.
@@ -2219,12 +2371,14 @@ Two April calendar pages from different years side by side in early spring in th
 
 ナレーター: なんとしても、それまでにクマの捕獲をして、被害者を増やさないように動きます。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 2013年と2014年の4月のカレンダー。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-152_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-153 [キャラアニメーション] 台本L275
 シーン: 春に向けた捜索装備を準備する。
-キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese municipal worker wearing a navy jacket and plain gray trousers, seen from behind to avoid a real-person likeness, checking a field pack and placing a flashlight inside, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
-```
 背景プロンプト（16:9）:
 ```
 An empty municipal staging table with packs and flashlights in early spring in southwestern Hokkaido, Japan. No people, no legible text, no real institution name or emblem. No blood, no wounds, no gore. Photorealistic documentary background, 16:9 aspect ratio. Generate 1 image.
@@ -2236,6 +2390,9 @@ An empty municipal staging table with packs and flashlights in early spring in s
 
 ナレーター: 2015年3月
 
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 春に向けた捜索装備を準備する。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 【制作メモ】ASSET-154 [テキストのみ] 台本L277
 シーン: 黒背景に「2015年3月」の短い文字を表示。
 → 編集者指示: 黒背景の中央に「2015年3月」を白字で表示。1秒でフェードイン、次カットへ。
@@ -2246,10 +2403,6 @@ An empty municipal staging table with packs and flashlights in early spring in s
 
 【制作メモ】ASSET-155 [キャラアニメーション] 台本L279
 シーン: 大規模捜索計画を机に広げる。
-キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese municipal worker wearing a navy jacket and plain gray trousers, seen from behind to avoid a real-person likeness, holding an open unmarked case folder and pointing to one blank field with the right index finger, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
-```
 背景プロンプト（16:9）:
 ```
 An empty municipal worktable with one plain open case folder, loose unmarked papers and a pencil in early spring in southwestern Hokkaido, Japan. No people, no legible text, no real institution name or emblem. No blood, no wounds, no gore. Photorealistic documentary background, 16:9 aspect ratio. Generate 1 image.
@@ -2261,12 +2414,11 @@ An empty municipal worktable with one plain open case folder, loose unmarked pap
 
 ナレーター: すでに2人を襲ったクマの捜索とはいえ、2年ほど前に起きた事件のクマを改めて探すというのは異例でした。
 
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 大規模捜索計画を机に広げる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 【制作メモ】ASSET-156 [キャラアニメーション] 台本L281
 シーン: 2年前の事件資料を開き直す。
-キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese municipal worker wearing a navy jacket and plain gray trousers, seen from behind to avoid a real-person likeness, holding an open unmarked case folder and pointing to one blank field with the right index finger, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
-```
 背景プロンプト（16:9）:
 ```
 An empty municipal worktable with one plain open case folder, loose unmarked papers and a pencil in early spring in southwestern Hokkaido, Japan. No people, no legible text, no real institution name or emblem. No blood, no wounds, no gore. Photorealistic documentary background, 16:9 aspect ratio. Generate 1 image.
@@ -2392,10 +2544,6 @@ A dry brown meadow at the edge of a leafless forest near Setana, southwestern Ho
 
 【制作メモ】ASSET-164 [キャラアニメーション] 台本L296
 シーン: 春に増える山菜採りの人々。
-キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese mountain forager wearing a muted brown field jacket, seen from behind to avoid a real-person likeness, carrying a small woven basket and bending slightly to inspect plants, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
-```
 背景プロンプト（16:9）:
 ```
 An empty narrow spring mountain path bordered by low sasa grass and wild garlic leaves in early spring in southwestern Hokkaido, Japan. No people, no legible text, no real institution name or emblem. No blood, no wounds, no gore. Photorealistic documentary background, 16:9 aspect ratio. Generate 1 image.
@@ -2421,7 +2569,7 @@ An empty narrow spring mountain path bordered by low sasa grass and wild garlic 
 
 ナレーター: それでも4月になると山の道沿いには、副収入目当てでギョウジャニンニクを採りに来た人たちの車が目立っていたといいます。
 
-【制作メモ】ASSET-166 [Lovart動画] 台本L300
+【制作メモ】ASSET-166 [キャラアニメーション] 台本L300
 シーン: 山道脇に並ぶ山菜採りの車。
 静止画プロンプト（16:9・フォトリアル）:
 ```
@@ -2500,6 +2648,12 @@ A small coastal farming settlement at the foot of a steep wooded hill near Setan
 
 ナレーター: 4月5日。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 町の家々が裏山を警戒する。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-170_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-171 [テキストのみ] 台本L310
 シーン: 黒背景に「4月5日」の短い文字を表示。
 → 編集者指示: 黒背景の中央に「4月5日」を白字で表示。1秒でフェードイン、次カットへ。
@@ -2523,6 +2677,12 @@ A small coastal farming settlement at the foot of a steep wooded hill near Setan
 
 ナレーター: 範囲は、南北20キロ、東西12キロ。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 北檜山と大成の間に続く山林。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-172_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-173 [Google Earth] 台本L313
 シーン: せたな町から今金町にかけての広域地形を見せる。
 座標（地区代表点・事故地点ではない）: 新成 42.332954, 139.794357／太田 42.280846, 139.802475／金原 42.372704, 139.970032。
@@ -2621,10 +2781,10 @@ One single continuous shot at the counter of a small seaside convenience store i
 ナレーター: そこには「人を恐れないクマがいる」と書かれていたとのこと。
 
 【制作メモ】ASSET-179 [キャラアニメーション] 台本L323
-シーン: 店先の掲示板の前で、178と同じクマの写真入りのビラを手に取って読み、ぎょっとする住民（CHAR-10）。
+シーン: 店先の掲示板の前で、178と同じクマの写真入りのビラを手に取って読み、ぎょっとする住民（CHAR-10）。※2026-09-26 本人「ここはクマに変えて」→「クマがリアルすぎます。絵柄を揃えて。テキストでもクマ危険！など書かれたビラにして」で、ビラはキャラと同じ絵柄のクマと「クマ危険！」の文字。
 キャラプロンプト（1:1）:
 ```
-(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local resident man in his 70s with short white hair, CLEAN-SHAVEN with no beard and no moustache, a beige work jacket, grey trousers and rubber boots, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He holds a plain white leaflet up in front of his chest with both hands, the leaflet showing only a small dark picture and no words, leaning back in shock, eyebrows shot up so hard his forehead creases, eyes bulging, mouth wide open in a gasp, beads of sweat flying from his face, frightened and shocked, NOT calm, NOT smiling. No lettering, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+(CHAR-10 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local resident man in his 70s with short white hair, CLEAN-SHAVEN with no beard and no moustache, a beige work jacket, grey trousers and rubber boots, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He holds a plain white leaflet up in front of his chest with both hands, the leaflet facing the viewer and drawn in the same flat cartoon style as the character, NOT a photograph: a simple cartoon brown bear on all fours with its mouth open showing its teeth, and the Japanese words 「クマ危険！」 in bold red letters across the top of the leaflet, leaning back in shock, eyebrows shot up so hard his forehead creases, eyes bulging, mouth wide open in a gasp, beads of sweat flying from his face, frightened and shocked, NOT calm, NOT smiling. No lettering, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
@@ -2682,6 +2842,9 @@ A clean laboratory table by a window in Hokkaido, in April early spring: two cap
 
 ナレーター: もしかしたら、探してるクマが町の外で捕獲されてる可能性もあるかもしれないという仮説からの調査でした。
 
+
+キャラプロンプト（1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 町外の試料を受け取る専門家の手。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 【制作メモ】ASSET-183 [Google Earth] 台本L331
 シーン: せたな町と今金町を含む広域地形を見せる。
 座標（地区代表点・事故地点ではない）: 太田 42.280846, 139.802475／今金町金原 42.372704, 139.970032。
@@ -2829,7 +2992,7 @@ A full side-on view of a single adult male Hokkaido brown bear, about 2 metres l
 
 ナレーター: 春に起きた2件の事故現場は、どちらも日本海側のせたな町。
 
-【制作メモ】ASSET-194 [Lovart静止画 + 編集者] 台本L351
+【制作メモ】ASSET-194 [キャラアニメーション] 台本L351
 シーン: 日本海側のせたな町の山地。
 ```
 The sea-facing wooded slopes around Setana in early spring in the Setana and Imakane area of southwestern Hokkaido, Japan. Documentary reconstruction, not a likeness of any real person. Any people are Japanese and filmed from behind, over a shoulder, or as hands only; no face visible.  No blood, no wounds, no gore. Photorealistic, restrained Japanese documentary aesthetic, natural light, shot on RED camera. No readable text, no real institution name, no crest, no emblem, no logo. 16:9 aspect ratio. Generate 1 image.
@@ -2985,7 +3148,7 @@ An open metal storage shed beside an old rural house in a seaside settlement nea
 
 ナレーター: ちなみに、2件の事件の際に男性がクマにつけたとされるナタの傷は、すでにクマが駆除されたあとだったので、確認できていません。
 
-【制作メモ】ASSET-206 [Lovart静止画 + 編集者] 台本L374
+【制作メモ】ASSET-206 [キャラアニメーション] 台本L374
 シーン: ナタと試料容器を置き傷の真偽は描かない。
 ```
 A hatchet and an archived specimen tube, no visible scar claim in early spring in the Setana and Imakane area of southwestern Hokkaido, Japan. Documentary reconstruction, not a likeness of any real person. Any people are Japanese and filmed from behind, over a shoulder, or as hands only; no face visible.  No blood, no wounds, no gore. Photorealistic, restrained Japanese documentary aesthetic, natural light, shot on RED camera. No readable text, no real institution name, no crest, no emblem, no logo. 16:9 aspect ratio. Generate 1 image.
@@ -3079,12 +3242,14 @@ One single continuous shot from a fixed camera on a spring mountain trail in Hok
 
 ナレーター: 「そのため、要所ではホイッスルを吹いたり、大きな声を出したりすることも効果的だ」としています。
 
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 鈴とラジオの横に残るクマの足跡。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: 既存の背景または動画に、画像/ASSET-211_char.pngを合成。文字は編集で付ける。
 【制作メモ】ASSET-212 [キャラアニメーション] 台本L386
 シーン: 見通しの悪い曲がり角で笛を持つ手。
-キャラプロンプト（1:1）:
-```
-Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. A full-body Japanese local resident wearing a navy field jacket and gray trousers, seen from behind to avoid a real-person likeness, holding a whistle near the mouth, ready to blow at a blind bend, four-to-five-head proportions, compact torso and short limbs. Real alpha transparency, only this figure and one necessary hand-held prop, no setting, no lettering. 1:1 aspect ratio. Generate 1 image. No blood, no wounds, no gore.
-```
 背景プロンプト（16:9）:
 ```
 An empty spring forest path curving sharply behind dense vegetation in early spring in southwestern Hokkaido, Japan. No people, no legible text, no real institution name or emblem. No blood, no wounds, no gore. Photorealistic documentary background, 16:9 aspect ratio. Generate 1 image.
@@ -3113,7 +3278,13 @@ A narrow mountain trail along a grassy ridge through low bamboo above the Sea of
 
 ナレーター: 音を出すことや複数で歩くことで、必ずしも危険がなくなる保証にはなりません。
 
-【制作メモ】ASSET-214 [Lovart動画] 台本L390
+
+既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
+
+キャラプロンプト（背景透過・1:1）:
+Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 2人で山道を歩く斜め前から顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
+→ 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 既存の背景または動画に、画像/ASSET-213_char.pngを合成。文字は編集で付ける。
+【制作メモ】ASSET-214 [キャラアニメーション] 台本L390
 シーン: 複数歩行でも周囲を警戒する2人。
 静止画プロンプト（16:9・フォトリアル）:
 ```

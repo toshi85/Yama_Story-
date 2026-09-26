@@ -1,8 +1,8 @@
 {
-  "digest": "6aea2d59ece09be2c94133d0daf0ccbacf78376bacbba0c99c0b02e4497ed92f",
+  "digest": "7b5bd9051540650e36bb9fad52ddad6fdbeb378e9404b52539bbf3b84b6db7e1",
   "state": "saved",
   "endpoint": "https://queue.fal.run/minimax/h3-max-turbo/image-to-video",
-  "shot_id": 175,
+  "shot_id": 157,
   "duration": 5,
   "resolution": "768P",
   "price_check": {
@@ -14,18 +14,18 @@
     "estimated_jpy": "15.00",
     "jpy_reference_rate": 150,
     "source": "https://fal.ai/models/minimax/h3-max-turbo/image-to-video",
-    "checked_at": "2026-09-26T05:10:32.411514+00:00",
+    "checked_at": "2026-09-26T02:03:23.609517+00:00",
     "approved_max_usd_per_clip": "0.10",
     "approval_required": true
   },
   "status": "IN_QUEUE",
-  "request_id": "01a0dc1f-57a2-7692-8734-9f2bbfb0b608",
-  "response_url": "https://queue.fal.run/minimax/h3-max-turbo/requests/01a0dc1f-57a2-7692-8734-9f2bbfb0b608",
-  "status_url": "https://queue.fal.run/minimax/h3-max-turbo/requests/01a0dc1f-57a2-7692-8734-9f2bbfb0b608/status",
-  "cancel_url": "https://queue.fal.run/minimax/h3-max-turbo/requests/01a0dc1f-57a2-7692-8734-9f2bbfb0b608/cancel",
+  "request_id": "01a0db74-050c-7143-b32f-ef92b78a3987",
+  "response_url": "https://queue.fal.run/minimax/h3-max-turbo/requests/01a0db74-050c-7143-b32f-ef92b78a3987",
+  "status_url": "https://queue.fal.run/minimax/h3-max-turbo/requests/01a0db74-050c-7143-b32f-ef92b78a3987/status",
+  "cancel_url": "https://queue.fal.run/minimax/h3-max-turbo/requests/01a0db74-050c-7143-b32f-ef92b78a3987/cancel",
   "logs": null,
   "metrics": {},
   "queue_position": 0,
   "actual_duration": 5.18,
-  "bytes": 10222129
+  "bytes": 17635594
 }
