@@ -641,9 +641,10 @@ def generation_gate_filter(work, todo):
     """
     sys.path.insert(0, str(HERE.parent))
     import generation_gate as gate
-    # 受講生は公開リポジトリ（Yama_Story-）だけを持ち、合格票の仕組みが無い。本人のPC（親リポジトリあり）か
-    # Yamaの作品フォルダのときだけ関所をかける
-    if not (gate.owner_machine() or gate.is_yama(work)):
+    # 関所はYamaの作品フォルダのときだけかける（2026-09-26 本人裁定：AI研究所のブランド画像など
+    # Yama以外の題材には台本・素材番号が無く、Yamaの検査が当てはまらないため）。
+    # 受講生の公開リポジトリ（Yama_Story-）もYamaの作品なので、これまでどおり関所がかかる。
+    if not gate.is_yama(work):
         return todo
     try:
         allowed = gate.require('image', todo, tool='imagegen/run.py', paid=False, paths=[work])
