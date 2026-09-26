@@ -43,6 +43,16 @@ CASES = [
      lambda t: t.replace("baffled and troubled, NOT calm, NOT smiling.",
                          "baffled and troubled, NOT calm, NOT smiling, clearly dead, lifeless, with dark red stains soaking his jacket."),
      "ChatGPT が描かない言葉"),
+    # 2026-09-26 本人指摘（159・162「実写のクマとキャラ」／164「若い人」／168「なんで泣いてる」）
+    ("159 キャラのカットの背景に実写のクマ",
+     lambda t: t.replace("dry brown grass along the track, a faint blue pre-dawn light", "an adult Hokkaido brown bear about 2 metres long stands on all fours among the trees, dry brown grass along the track, a faint blue pre-dawn light"),
+     "背景に実写のクマ"),
+    ("164 旧い汎用キャラの型",
+     lambda t: t.replace("(CHAR-05 再利用) Cute cartoon character design,", "(CHAR-05 再利用) The person reacts to or performs the action in this Japanese scene description. Cute cartoon character design,", 1),
+     "旧い汎用キャラの型"),
+    ("168 台本に無い泣き顔",
+     lambda t: t.replace("(CHAR-05 再利用) Cute cartoon character design,", "(CHAR-05 再利用) Tears streaming down his cheeks, crying. Cute cartoon character design,", 1),
+     "泣いている"),
 ]
 
 

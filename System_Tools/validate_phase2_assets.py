@@ -629,7 +629,8 @@ def prompt_lint(text, errors, warns, info):
                 continue
             if WEAK_FACE.search(b):
                 weak_face.append(asset_no(seg))
-            elif sum(1 for pat in FACE_PARTS if re.search(pat, b, re.I)) < 2 and 'clearly dead' not in b:
+            elif sum(1 for pat in FACE_PARTS if re.search(pat, b, re.I)) < 2 and 'clearly dead' not in b \
+                    and not re.search(r'eyes (?:are )?drawn as (?:two )?(?:small )?X marks', b, re.I):   # 倒れたクマ（定石⑤の目はバツ印）
                 few_parts.append(asset_no(seg))
     # 冒頭のキャラ基準（CHAR-xx）も見る。せたな町は基準に restrained expression と書いたため全キャラが無表情になった
     head = text[:marks[0][0]] if marks else ''
@@ -649,6 +650,10 @@ def prompt_lint(text, errors, warns, info):
     char_and_video = []
     for nar, seg in segs:
         labs = [lab for lab, b in labeled_blocks(seg)]
+        # 例外: 本人が「背景を動画に」と明示したカット（2026-09-26 124「ASSET-124_bg.pngは動画にして」）。
+        #   シーン行に「背景を動画にする（本人指示」と書いたものだけ通す。
+        if '背景を動画にする（本人指示' in seg:
+            continue
         if any('キャラ' in l for l in labs) and any('動画' in l for l in labs):
             char_and_video.append(asset_no(seg))
     if char_and_video:
@@ -738,6 +743,53 @@ def prompt_lint(text, errors, warns, info):
                       + '\n    → 言い換え（026で実証）: 亡くなった人＝"eyes closed, eyebrows slack, her face drained pale, mouth open a little, '
                         'lying completely still, as if in a deep endless sleep." ／ 血と傷＝描かずに "No blood, no stains, no wounds." '
                         '／ 死亡・負傷の事実はテロップ（編集者指示）で示す')
+
+    # 61) キャラ画像のカットで、背景に実写のクマがいる（2026-09-26 せたな町 159・162 本人「なんで実写のクマとキャラ画像を
+    #     組み合わせてるの？ルール違反でしょ」「ここもなんで背景に実写のクマがいるの？」）。クマは CHAR-11 のキャラ画像で出す。
+    BEAR_ANIMAL = re.compile(r'\bbears?\b(?![- ](?:warning|pictogram|sign|trap|bell|spray|repellent|response|pawprints?|footprints?|prints?|tracks?))(?<!for bears)', re.I)
+    NO_BEAR = re.compile(r'\bno (?:bear|animals?)\b', re.I)
+    # 写真・足跡・ビラ・図の中のクマは実物ではない（121 足跡／142・167 写真／177 図／179 ビラ）
+    NOT_ANIMAL = re.compile(r'\b(?:photographs?|photos?|pictures?|prints?|pawprints?|footprints?|tracks?|leaflets?|posters?|'
+                            r'drawings?|illustrations?|pictograms?|images?|charts?|diagrams?|silhouettes?) of [^.;]*|\bleft by [^.;]*', re.I)
+    real_bear = []
+    for nar, seg in segs:
+        blocks = labeled_blocks(seg)
+        if not any('キャラプロンプト' in lab for lab, _ in blocks):
+            continue
+        for lab, b in blocks:
+            b2 = NOT_ANIMAL.sub(' ', NEGATED.sub(' ', b))
+            if '背景プロンプト' in lab and not NO_BEAR.search(b) and BEAR_ANIMAL.search(b2):
+                real_bear.append(asset_no(seg))
+    if real_bear:
+        errors.append(f'キャラ画像のカットで背景に実写のクマ {len(real_bear)}件（実写のクマとキャラ画像を組み合わせない）: '
+                      + ', '.join(dict.fromkeys(real_bear))
+                      + '\n    → 直し方: 背景からクマを消して "No bear anywhere in the frame." と書き、クマは (CHAR-11 再利用) の'
+                        '追加素材プロンプト（キャラ画像）で出す。背景だけで見せるなら実写の静止画・動画にしてキャラを外す')
+
+    # 62) 旧い汎用キャラの型（後ろ姿・年齢なし・固定キャラと絵柄が違う）。2026-09-26 せたな町 164・166 本人
+    #     「だからなんで若い人を生成するの？」「なんでまた作画が違うキャラを出すの？」。
+    old_generic = [asset_no(seg) for nar, seg in segs
+                   if any('The person reacts to or performs the action' in b for _, b in labeled_blocks(seg))]
+    if old_generic:
+        errors.append(f'旧い汎用キャラの型 {len(old_generic)}件（年齢も顔も決まらず、若い人・後ろ姿・違う絵柄になる）: '
+                      + ', '.join(dict.fromkeys(old_generic))
+                      + '\n    → 直し方: 固定キャラ（CHAR-05〜11）の型で書き直す。年齢・服・表情・「roughly three heads tall」を必ず入れる')
+
+    # 63) 台本とシーンに泣く記述が無いのに、キャラが泣いている（2026-09-26 せたな町 019・168 本人
+    #     「泣いてる顔ではなく、心配して神妙な顔にして」「なんで泣いてる画像なの？困った顔にして」）。
+    TEARS = re.compile(r'\b(?:tears?|tearful|crying|cries|weeping|weeps|sobbing|sobs)\b', re.I)
+    JP_CRY = re.compile(r'泣|涙|号泣|嗚咽')
+    tears = []
+    for nar, seg in segs:
+        scene = '\n'.join(l for l in seg.splitlines() if l.startswith('シーン:'))
+        if JP_CRY.search(nar or '') or JP_CRY.search(scene):
+            continue
+        for lab, b in labeled_blocks(seg):
+            if ('キャラ' in lab or '追加素材' in lab) and TEARS.search(NEGATED.sub(' ', b)):
+                tears.append(asset_no(seg))
+    if tears:
+        errors.append(f'台本に泣く記述が無いのにキャラが泣いている {len(tears)}件: ' + ', '.join(dict.fromkeys(tears))
+                      + '\n    → 直し方: 場面に合う顔（心配・困った・神妙）にし、"NO tears, NOT crying" と書く。泣かせるならシーン行に「泣く」と書く')
 
     # 46) シーン行で向き・視線を求めているのに、英語プロンプトに指定がない。
     SCENE_DIRECTION = re.compile(r'見る|見つめ|向く|向け|振り返|指さ|指差|視線|の方へ|のほうへ|にらむ|睨')
@@ -901,7 +953,8 @@ def prompt_lint(text, errors, warns, info):
         bg = [b for lab, b in labeled if '背景プロンプト' in lab]
         has_video = any(VIDEO_LABEL.search(lab) for lab, _ in labeled)
         reasons = []
-        if not bg:
+        reuse_bg = re.search(r'→ 背景は[^\n]*ASSET-\d+_(?:bg|still)\.png[^\n]*(?:再利用|そのまま使う)', seg)
+        if not bg and not reuse_bg:
             reasons.append('背景プロンプトなし')
         elif any(re.search(r'\banimate\b|\bfor \d+ seconds\b|\bcamera (?:moves|pans|pushes|advances)', b, re.I) for b in bg):
             reasons.append('背景が動画指示')

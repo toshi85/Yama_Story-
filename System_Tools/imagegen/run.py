@@ -375,16 +375,40 @@ def reference_images(item, work):
     except Exception:
         pass
     slot = item.get('slot') or (re.search(r'_(char|bg|still|overlay)\d*$', item['id']) or [None, None])[1]
-    if slot not in ('char', 'overlay'):
+    if slot == 'char_ref':
+        # 2026-09-26: 基準画像そのものを作るときは「絵柄の見本」だけを添える（見本なしだと写実寄りになった）
+        refs = item.get('style_refs') or []
+    elif slot not in ('char', 'overlay'):
         return []
-    refs = item.get('char_refs') or ([item['char_ref']] if item.get('char_ref') else [])
-    if not refs:
+    else:
+        refs = item.get('char_refs') or ([item['char_ref']] if item.get('char_ref') else [])
+    if not refs and slot != 'char_ref':
         refs = [f'CHAR-{int(m):02d}' for m in re.findall(r'CHAR-(\d+)', item.get('prompt', ''))]
     out = []
     for r in dict.fromkeys(refs):
         path = pathlib.Path(work) / 'images' / f'{r}.png'
         if path.is_file():
             out.append(str(path))
+    return out
+
+
+def missing_reference_images(work):
+    """2026-09-26 せたな町: CHAR-01〜04・08〜10 は基準画像が無いまま毎回ゼロから描かれ、同じ人が若い顔・別の絵柄になった
+    （本人「女性が若くて変です」「なんでまた作画が違うキャラを出すの？」）。キャラ・追加素材が参照する CHAR-NN の
+    images/CHAR-NN.png が無く、同じキューで先に作る予定も無ければ、その一覧を返す（呼び出し側が止める）。"""
+    try:
+        queue = json.loads((pathlib.Path(work) / 'image_queue.json').read_text(encoding='utf-8'))
+    except Exception:
+        return {}
+    out = {}
+    for q in queue:
+        if q.get('slot') not in ('char', 'overlay'):
+            continue
+        refs = q.get('char_refs') or [f'CHAR-{int(m):02d}' for m in re.findall(r'CHAR-(\d+)', q.get('prompt', ''))]
+        for r in refs:
+            # 同じキューで作る予定でも止める（並列送信で、基準画像より先にキャラが送られてしまうため）
+            if not (pathlib.Path(work) / 'images' / f'{r}.png').is_file():
+                out.setdefault(r, []).append(q['id'])
     return out
 
 
@@ -886,6 +910,12 @@ def main():
     if not work.is_dir():
         sys.exit(f'作品フォルダが見つかりません: {work}')
     prepare_work(work)
+    missing_refs = missing_reference_images(work)
+    if missing_refs:
+        print('❌ 固定キャラの基準画像が無いまま、そのキャラを描こうとしています（毎回別人・違う絵柄・若い顔になる）: '
+              + ', '.join(f'{r}（{"・".join(ids[:6])}）' for r, ids in missing_refs.items())
+              + '\n  先に: 資料の「### CHAR-NN｜…」から基準画像 images/CHAR-NN.png を作る（基準画像だけのキューで先に作る）')
+        sys.exit(2)
     _lock_handle = acquire_lock(work)
 
     bridge.start()

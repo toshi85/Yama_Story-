@@ -46,6 +46,15 @@ def char_refs(md_text):
     return out
 
 
+def style_refs(md_text):
+    """2026-09-26: 基準画像を新しく作るときに添える「絵柄の見本」（見出し行の【絵柄の見本: CHAR-06】）。
+    見本なしで作った基準画像が写実寄りになり、本人「いつものテイストにして」。"""
+    out = {}
+    for m in re.finditer(r"^### (CHAR-\d+)[｜:][^\n]*【絵柄の見本: ([^】]+)】", md_text, re.M):
+        out[m.group(1)] = re.findall(r"[A-Z]+(?:-[A-Z]+)*-\d+(?:_\w+)?", m.group(2))
+    return out
+
+
 def build(fix=None):
     rows = list(csv.DictReader((HERE / "生成リスト.tsv").open(encoding="utf-8"), delimiter="\t"))
     queue, missing, videos = [], [], []
@@ -82,9 +91,10 @@ def build(fix=None):
         missing.append((r["ファイル名"], r["種類"], md, sorted(k for k in items if k.startswith(base))))
     # 基準キャラ（Fix4 の ### CHAR-05｜…）
     for md, (items, blocks, refs) in by_md.items():
+        styles = style_refs((HERE / md).read_text(encoding="utf-8"))
         for cid, prompt in refs.items():
             queue.append({"id": cid, "slot": "char_ref", "aspect": "1:1", "prompt": prompt,
-                          "deliver_as": f"{cid}.png", "md": md})
+                          "deliver_as": f"{cid}.png", "md": md, "style_refs": styles.get(cid, [])})
     return queue, missing, videos
 
 
@@ -104,15 +114,18 @@ def main():
                 if u in extra:
                     it = extra[u]
                     queue.append({"id": it["id"], "kind": it["kind"], "slot": it["slot"], "aspect": it["aspect"],
-                                  "prompt": it["prompt"], "deliver_as": None, "md": f"Asset_Prompts_{fix}.md",
+                                  "prompt": it["prompt"],
+                                  # 追加素材（クマの1枚）は ASSET-NNN_bear.png で納品する（資料の編集者指示の名前）
+                                  "deliver_as": it["id"].replace("_overlay", "_bear") + ".png" if it["slot"] == "overlay" else None,
+                                  "md": f"Asset_Prompts_{fix}.md",
                                   "note": "関所の見本用（生成リスト外・納品しない）"})
             unknown = ids - {q["id"] for q in queue}
         if unknown:
             sys.exit(f"--ids に無いID: {sorted(unknown)}")
     for q in queue:  # キャラが再利用する固定人物（run.py が基準画像を添付する）
-        q["char_refs"] = [f"CHAR-{int(m):02d}" for m in dict.fromkeys(re.findall(r"CHAR-(\d+)", q["prompt"]))] if q["slot"] == "char" else []
+        q["char_refs"] = [f"CHAR-{int(m):02d}" for m in dict.fromkeys(re.findall(r"CHAR-(\d+)", q["prompt"]))] if q["slot"] in ("char", "overlay") else []
     for q in queue:  # collect.py の進捗表示が kind を読む
-        q.setdefault("kind", {"char_ref": "キャラ基準画像", "char": "キャラ", "bg": "背景", "still": "静止画"}[q["slot"]])
+        q.setdefault("kind", {"char_ref": "キャラ基準画像", "char": "キャラ", "bg": "背景", "still": "静止画", "overlay": "追加素材（クマ）"}[q["slot"]])
     print(f"画像 {len(queue)}件（動画 {len(videos)}件は別）／取りこぼし {len(missing)}件")
     for m in missing:
         print("  ✗", *m)

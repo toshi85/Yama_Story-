@@ -226,6 +226,7 @@ A small wooden notice board beside the entrance of a village shop in a seaside s
 ナレーター: クマの捜索と並行して、せたな町は別の方法でもクマを探し始めていました。
 
 【制作メモ】ASSET-181 [キャラアニメーション] 台本L327
+→ 素材名（2026-09-26 本人指示「再利用する際は、番号がわかい素材から」）: 背景は ASSET-100_bg.png を再利用（旧 ASSET-181_bg.png）。
 シーン: 地図と試料のある研究室の机の前で、クマを探す「別の方法」を提案する研究者（CHAR-07）。
 キャラプロンプト（1:1）:
 ```
@@ -236,7 +237,7 @@ A small wooden notice board beside the entrance of a village shop in a seaside s
 A research laboratory bench by a window in Hokkaido, in April early spring: on the left a folded topographic map with a compass and a blank notebook, on the right a white rack with about twenty small capped sample tubes with blank labels, a microscope further back; through the window, bare and budding trees and brown hills under a pale sky, No snow anywhere, no frost, no ice, no winter, no lush summer green. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Focused, hopeful mood, cool clean daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
 ```
 →研究者セリフ「別の方法で／探しましょう」
-→ 編集者指示: 背景・キャラとも新規。新しい背景は ASSET-181_bg.png として保存する（184・210と、Regen の100が再利用する。今の ASSET-181_still.png は窓の外が雪景色なので使わない）。研究者を右から中央へスライドさせ、指を立てたところで止める（動画は作らない）。中央に「別の方法でも捜索」を白字で表示し、「別の方法」だけ赤字。
+→ 編集者指示: 背景は ASSET-100_bg.png（研究室の机。181用に作り、番号の若い100の名前でドライブに置いてある。184・210も同じ背景を使う）、キャラは新規の ASSET-181_char.png。今の ASSET-181_still.png は窓の外が雪景色なので使わない。研究者を右から中央へスライドさせ、指を立てたところで止める（動画は作らない）。中央に「別の方法でも捜索」を白字で表示し、「別の方法」だけ赤字。
 
 ---
 
@@ -269,9 +270,9 @@ A clean laboratory table by a window in Hokkaido, in April early spring: two cap
 ```
 A research laboratory bench by a window in Hokkaido, in April early spring: on the left a folded topographic map with a compass and a blank notebook, on the right a white rack with about twenty small capped sample tubes with blank labels, a microscope further back; through the window, bare and budding trees and brown hills under a pale sky, No snow anywhere, no frost, no ice, no winter, no lush summer green. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Focused, hopeful mood, cool clean daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
 ```
-→ 背景は181の新しい背景（ASSET-181_bg.png）を再利用。
+→ 背景は181の新しい背景（ASSET-100_bg.png）を再利用。
 →研究者セリフ「20頭分を／調べます」
-→ 編集者指示: 背景は ASSET-181_bg.png を再利用し、右の試料管ラックへ1.0→1.3倍に寄せて181と画を変える（今の ASSET-184_still.png は窓の外が夏の緑なので使わない）。キャラは新規の ASSET-184_char.png を左に置く（動画は作らない）。中央に「駆除された20頭」を白字で表示し、「20頭」だけ赤字。
+→ 編集者指示: 背景は ASSET-100_bg.png を再利用し、右の試料管ラックへ1.0→1.3倍に寄せて181と画を変える（今の ASSET-184_still.png は窓の外が夏の緑なので使わない）。キャラは新規の ASSET-184_char.png を左に置く（動画は作らない）。中央に「駆除された20頭」を白字で表示し、「20頭」だけ赤字。
 
 ---
 
@@ -504,9 +505,9 @@ A grey steel office desk by a window in a small town office in southwestern Hokk
 ```
 A research laboratory bench by a window in Hokkaido, in April early spring: on the left a folded topographic map with a compass and a blank notebook, on the right a white rack with about twenty small capped sample tubes with blank labels, a microscope further back; through the window, bare and budding trees and brown hills under a pale sky, No snow anywhere, no frost, no ice, no winter, no lush summer green. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Focused, hopeful mood, cool clean daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
 ```
-→ 背景は181の新しい背景（ASSET-181_bg.png＝研究室の机）を再利用。
+→ 背景は181の新しい背景（ASSET-100_bg.png＝研究室の机）を再利用。
 →研究者セリフ「人の存在を／知らせて」
-→ 編集者指示: 背景は ASSET-181_bg.png を再利用し、左の地図の側へ寄せて181・184と画を変える（今の ASSET-210_still.png は岩の横に雪があるので使わない）。キャラは新規の ASSET-210_char.png を右に置き、鈴を持つ腕を小さく振る（動画は作らない）。左上に「釣賀一二三 室長」を白字で置き、中央に「人の存在を知らせる」。「知らせる」だけ赤字。
+→ 編集者指示: 背景は ASSET-100_bg.png を再利用し、左の地図の側へ寄せて181・184と画を変える（今の ASSET-210_still.png は岩の横に雪があるので使わない）。キャラは新規の ASSET-210_char.png を右に置き、鈴を持つ腕を小さく振る（動画は作らない）。左上に「釣賀一二三 室長」を白字で置き、中央に「人の存在を知らせる」。「知らせる」だけ赤字。
 
 ---
 
@@ -581,13 +582,14 @@ A narrow forest trail on a wooded hillside near Setana, southwestern Hokkaido, i
 ナレーター: 常にクマの出没情報の確認をしつつ、クマスプレーなどを備えておき、身を守ることが大切と言えます。
 
 【制作メモ】ASSET-218 [キャラアニメーション] 台本L397
+→ 素材名（2026-09-26 本人指示「再利用する際は、番号がわかい素材から」）: 背景は ASSET-209_bg.png を再利用（旧 ASSET-218_bg.png）。
 シーン: 登山口の案内板の前で、クマスプレーを構える女性。キャラは既存の ASSET-218_char.png（顔が見える・背景透過済み）を使い、背景だけ雪のない春の登山口に作り直す。
 → キャラは既存の ASSET-218_char.png を再利用。
 背景プロンプト（16:9）:
 ```
 A mountain trailhead near Setana, southwestern Hokkaido, in May spring: a wooden notice board with a simple trail map and a dark bear pictogram but no readable words, a small shelf below it with one red bear spray canister in a box, a gravel parking area, budding deciduous trees with fresh pale green leaves, low bamboo along the edge, No snow anywhere, no snow patches, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about four metres back, the notice board on the right, the left half of the frame left as clear open space. Alert, practical mood, soft bright daylight, natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
 ```
-→ 編集者指示: 背景は新規（ASSET-218_bg.png として保存。Regen の209も再利用する。今の ASSET-218_still.png は雪があるので使わない）、キャラは既存の ASSET-218_char.png を左に置く（動画は作らない）。中央に「出没情報とクマスプレー」を白字で表示し、「クマスプレー」だけ赤字。
+→ 編集者指示: 背景は新規（ASSET-209_bg.png として保存。Regen の209も再利用する。今の ASSET-218_still.png は雪があるので使わない）、キャラは既存の ASSET-218_char.png を左に置く（動画は作らない）。中央に「出没情報とクマスプレー」を白字で表示し、「クマスプレー」だけ赤字。
 
 ---
 

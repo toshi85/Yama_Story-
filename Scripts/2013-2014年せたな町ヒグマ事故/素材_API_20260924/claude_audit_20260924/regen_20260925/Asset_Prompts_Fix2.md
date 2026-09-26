@@ -49,13 +49,13 @@ One single continuous aerial drone shot: the camera glides slowly forward along 
 
 【制作メモ】ASSET-015 [キャラアニメーション] 台本L22
 シーン: 新成地区の山の入口に、山菜採りに来た52歳の女性（CHAR-01）が立つ。車は描かない。
-→ キャラは ASSET-029_char.png を再利用。
+→ キャラは ASSET-015_char.png（ASSET-029 と共通）を使う。
 背景プロンプト（16:9）:
 ```
 The entrance of a narrow forest road leading up into the wooded hills of Shinsei near Setana, southwestern Hokkaido, in mid-April early spring: bare and budding deciduous trees, brown leaf litter, the first green shoots of edible wild plants along the roadside, a gentle slope rising into the forest, No snow anywhere, no frost, no ice, no winter. The road and verge are empty: no vehicles, no cars, no signs. Framed from adult eye height roughly 1.5 metres above the ground and about four metres back, the ground occupying the lower third of the frame, the middle of the frame left as clear open space. Calm spring morning, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
 →セリフ「山菜を／採りに行こう」
-→ 編集者指示: 背景は新規、キャラは ASSET-029_char.png を再利用して左から中央へ歩くように移動させる。左上に「新成地区の山」を白字で置き、「新成地区」だけ赤字。
+→ 編集者指示: 背景は新規、キャラは ASSET-015_char.png（ASSET-029 と共通）を使うして左から中央へ歩くように移動させる。左上に「新成地区の山」を白字で置き、「新成地区」だけ赤字。
 
 ---
 

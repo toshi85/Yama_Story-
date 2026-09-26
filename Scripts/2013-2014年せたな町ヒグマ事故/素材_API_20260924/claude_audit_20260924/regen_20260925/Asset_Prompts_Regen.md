@@ -63,6 +63,7 @@ The camera slowly pushes down toward the nearer of two large brown bear pawprint
 ナレーター: 鈴などの鳴り物や、身を守る武器を持っていなかったとされています。
 
 【制作メモ】ASSET-029 [キャラアニメーション] 台本L48
+→ 素材名（2026-09-26 本人指示「再利用する際は、番号がわかい素材から」）: キャラは ASSET-015_char.png を再利用（旧 ASSET-029_char.png）。
 シーン: 山菜カゴだけを持って山に入る女性（CHAR-01）。鈴も武器も持っていない。
 キャラプロンプト（1:1）:
 ```
@@ -91,7 +92,7 @@ A narrow wild-vegetable gathering path on a forested hillside near Setana, south
 【制作メモ】ASSET-100 [再利用] 台本L179
 シーン: 研究者が捜索記録と試料を前に、該当箇所を指す。
 →アセット181の背景とアセット40のキャラの再利用。
-→ 編集者指示: 背景は ASSET-181_bg.png、キャラは ASSET-040_char.png を再利用。キャラを右から中央へ移動させ、資料を指したところで止める。中央に「再び人を襲う、、」を白字で表示し、「再び」だけ赤字。
+→ 編集者指示: 背景は ASSET-100_bg.png、キャラは ASSET-040_char.png を再利用。キャラを右から中央へ移動させ、資料を指したところで止める。中央に「再び人を襲う、、」を白字で表示し、「再び」だけ赤字。
 
 ---
 
@@ -141,14 +142,13 @@ A quiet scenic coastline of Setana on the Sea of Japan in southwestern Hokkaido 
 
 ナレーター: そして、事件から8か月余りが過ぎた、2014年12月18日。
 
-【制作メモ】ASSET-144 [キャラアニメーション] 台本L260
-シーン: 雪の積もった12月のせたな町の役場前を、町長が歩いて入っていく。
-→ キャラは ASSET-148_char.png を再利用。
-背景プロンプト（16:9）:
+【制作メモ】ASSET-144 [Lovart静止画] 台本L260
+シーン: 雪の積もった12月のせたな町の役場前（人物なし）。※2026-09-26 本人「なんで謝ってる表情にするの？いらないでしょ。背景のみでいいです」。
+静止画プロンプト（16:9・フォトリアル）:
 ```
 A small two-storey municipal office building in the town of Setana, southwestern Hokkaido, in mid-December winter: fresh snow piled along the road and on the roof, a cleared entrance path, bare trees, a grey Sea of Japan sky. Winter is intended in this scene. No real institution name, no crest, no emblem, no logo; signage present in its normal place but small, slightly out of focus and not readable. Framed from adult eye height about ten metres back, the entrance on the right third, the left and middle of the frame left as clear open space. Cold, heavy, determined mood, desaturated blue-white tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
-→ 編集者指示: 背景は新規、キャラは ASSET-148_char.png を再利用。町長を左から役場の入口へ歩くように移動させる。中央に「2014年12月18日」を白字で表示し、下に小さく「事件から8か月、、」。「8か月」だけ赤字。
+→ 編集者指示: 背景のみ（キャラは使わない）。画面を5秒で1.0→1.1倍にゆっくり寄せる。中央に「2014年12月18日」を白字で表示し、下に小さく「事件から8か月、、」。「8か月」だけ赤字。
 
 ---
 
@@ -325,9 +325,9 @@ A full side-on view of a single adult male Hokkaido brown bear, about 2 metres l
 ```
 [Generic group] Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, slightly chibi proportions, children's animation style. Two full-body Japanese wild-vegetable gatherers standing side by side: 1) a man in his 60s in a green field jacket, grey trousers and a bucket hat, CLEAN-SHAVEN with no beard and no moustache, 2) a woman in her 50s in a beige windbreaker, dark trousers and a sun hat, both carrying small woven baskets with a small brass wildlife bell on each basket strap, the man holding a small paper leaflet printed with a simple dark brown bear silhouette, both leaning slightly forward and reading it together with careful serious faces, eyebrows relaxed, NOT frightened, NOT grinning, the man a head taller than the woman, a large head, a short compact torso and short stubby arms and legs, roughly four to five heads tall. Full body. White background. 1:1 aspect ratio. Generate 1 image.
 ```
-→ 背景は ASSET-218_bg.png を再利用。
+→ 背景は ASSET-209_bg.png（ASSET-218 と共通）を使う。
 →セリフ「出没情報を／確かめよう」
-→ 編集者指示: 背景は ASSET-218_bg.png を再利用、キャラは新規。2人を左から案内板の前へ移動させて止める。鈴の音SE。右上に「単独で入らない」を白字で置き、「単独」だけ赤字。
+→ 編集者指示: 背景は ASSET-209_bg.png（ASSET-218 と共通）を使う、キャラは新規。2人を左から案内板の前へ移動させて止める。鈴の音SE。右上に「単独で入らない」を白字で置き、「単独」だけ赤字。
 
 ---
 

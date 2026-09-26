@@ -1,6 +1,6 @@
 # 2013・2014年せたな町ヒグマ事故 編集者用指示書（プロンプトなし）
 
-- 2026-09-25 最新版（本人チェックと全画像の見直しを反映）
+- 2026-09-26 最新版（本人の修正指示 約60件と全カットの点検を反映。作り直した素材はドライブの今と同じファイル名）
 - 素材の置き場所: Google ドライブ「画像」フォルダ（https://drive.google.com/drive/u/0/folders/1e50euC7lBOkK8IYc1HdI9FaixuawvE3G）
 - ファイル名は ASSET-番号_種類。_still.png＝16:9の静止画（キャラの背景にも使う）、_bg.png＝キャラを重ねる背景、_char.png＝背景透過のキャラ、_video.mp4＝動画
 - 「動画は使わない」とあるカットは、キャラと背景で表す（同じ番号の動画ファイルは使わない）
@@ -97,17 +97,14 @@
 
 - ナレーション: 52歳の女性が車で向かったのは、町の北檜山区（きたひやまく）にある新成地区（しんせい）の山。
 - 場面: 新成地区の山の入口に、山菜採りに来た52歳の女性（CHAR-01）が立つ。車は描かない。
-- キャラは ASSET-029_char.png を再利用。
+- キャラは ASSET-015_char.png（ASSET-029 と共通）を使う。
 - セリフ「山菜を／採りに行こう」
-- 編集者指示: 背景は新規、キャラは ASSET-029_char.png を再利用して左から中央へ歩くように移動させる。左上に「新成地区の山」を白字で置き、「新成地区」だけ赤字。
+- 編集者指示: 背景は新規、キャラは ASSET-015_char.png（ASSET-029 と共通）を使うして左から中央へ歩くように移動させる。左上に「新成地区の山」を白字で置き、「新成地区」だけ赤字。
 
 ## ASSET-016（Lovart静止画）
 
 - ナレーション: 目的は、春の山菜採り。
 - 場面: カゴに入った春の山菜を接写。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 新成地区へ向かうワゴン車を後方から写す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-015_char.pngを合成。文字は編集で付ける。
 - 編集者指示: 画面を5秒で1.0→1.12倍にゆっくり近づける。左上に「春の山菜採り」を白字で置き、要点の一語だけ赤字。
 
 ## ASSET-017（キャラアニメーション）
@@ -122,15 +119,12 @@
 
 - ナレーション: 正午
 - 場面: 黒背景に「正午」の短い文字を表示。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 昼になっても空いたままの食卓。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-017_char.pngを合成。文字は編集で付ける。
 - 編集者指示: 黒背景の中央に「正午」を白字で表示。1秒でフェードイン、次カットへ。
 
 ## ASSET-019（キャラアニメーション）
 
 - ナレーション: 妻の帰りを心配した夫は、山のほうへ探しにいきます。
-- 場面: 妻を心配して、リュックを背負い家から山へ急ぐ夫（CHAR-02）。心配が一目で分かる顔。
+- 場面: 妻を心配して、リュックを背負い家から山へ急ぐ夫（CHAR-02）。心配が一目で分かる顔。※2026-09-26 本人「泣いてる顔ではなく、心配して神妙な顔にして」。
 - 背景は既存の ASSET-019_bg.png（家の戸口から山道を見る・人物なし）をそのまま使う。新しく作るのはキャラだけ。
 - 夫セリフ「無事で／いてくれ、、」
 - 編集者指示: 背景は既存の ASSET-019_bg.png、キャラは新規の ASSET-019_char.png。夫を家から山道へ右向きに2秒で移動させる。中央に「夫が山へ」を白字で表示し、「山へ」だけ赤字。
@@ -147,34 +141,27 @@
 
 - ナレーション: さらに山の方へと進むと、妻の衣服も見つかります。
 - 場面: 奥の山林に落ちた女性の衣服。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 沢近くに止まったワゴン車。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-020_char.pngを合成。文字は編集で付ける。
 - 編集者指示: 被写体の全景から必要な物証の部分拡大へ切り替える。中央に「衣服を発見」を白字で表示し、要点の一語だけ赤字。数値・判定は確認済みのナレーションから手入力する。
 
 ## ASSET-022（キャラアニメーション）
 
 - ナレーション: ただ事ではないと判断した夫は、警察に通報。
-- 場面: 家の電話で、慌てて警察に通報する夫（CHAR-02）。
-- 背景は既存の ASSET-022_bg.png（電話とノートのある食卓・人物なし）をそのまま使う。新しく作るのはキャラだけ。
+- 場面: 妻の車を見つけた沢の近くの外で、スマホで慌てて警察に通報する夫（CHAR-02）。※2026-09-26 本人「固定電話の受話器になってます。外なのでスマホにして」。背景も外（020と同じ場所）にした。
+- 背景は既存の ASSET-020_still.png（沢沿いの砂利道に止まる白いワゴン車・人物なし）を再利用する。新しく作るのはキャラだけ。
 - 夫セリフ「妻が／戻らないんです！」
-- 編集者指示: 背景は既存の ASSET-022_bg.png、キャラは新規の ASSET-022_char.png。夫を中央に置き、小刻みに揺らす。中央に「警察に通報」を白字で表示し、「通報」だけ赤字。
+- 編集者指示: 背景は ASSET-020_still.png を再利用、キャラは新規の ASSET-022_char.png。夫を中央に置き、小刻みに揺らす。中央に「警察に通報」を白字で表示し、「通報」だけ赤字。
 
 ## ASSET-023（キャラアニメーション）
 
 - ナレーション: 到着した警察と消防が、辺りを捜索することに。
-- 場面: 警察と消防の捜索者が山林を進む。
-- 警察官セリフ「手分けして／探そう！」
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese husband in his 50s, short black hair with some gray, dark blue field jacket, gray trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 山道で電話をかける夫の手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 左上に「警察と消防」を白字で置き、要点の一語だけ赤字。
+- 場面: 通報を受けて到着した警察官と消防隊員が、懐中電灯を手に山林を捜す。※2026-09-26 全カット点検で発見: 編集者指示が「キャラは既存の _char.png」なのに、ドライブにこのカットのキャラ画像が無い（074 本人「キャラ画像がありません」と同じミス）。今の _still.png は人の写った実写で背景に使えないので、固定キャラの絵柄のキャラと人のいない背景で作る。
+- 警察官セリフ「この辺りを／捜すぞ！」
+- 編集者指示: 背景は新規の ASSET-023_bg.png、キャラは新規の ASSET-023_char.png。2人を右から左へ歩かせて止める（動画は作らない）。左上に「警察と消防」を白字で置き、「警察」「消防」だけ赤字。今の ASSET-023_still.png は使わない。
 
 ## ASSET-024（テキストのみ）
 
 - ナレーション: 午後1時45分ごろ
 - 場面: 黒背景に「午後1時45分」の短い文字を表示。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 警察と消防の捜索者が山林を進む。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-023_char.pngを合成。文字は編集で付ける。
 - 編集者指示: 黒背景の中央に「午後1時45分」を白字で表示。1秒でフェードイン、次カットへ。
 
 ## ASSET-025（Google Earth）
@@ -215,6 +202,7 @@
 
 - ナレーション: 鈴などの鳴り物や、身を守る武器を持っていなかったとされています。
 - 場面: 山菜カゴだけを持って山に入る女性（CHAR-01）。鈴も武器も持っていない。
+- 素材名（2026-09-26 本人指示「再利用する際は、番号がわかい素材から」）: キャラは ASSET-015_char.png を再利用（旧 ASSET-029_char.png）。
 - セリフ「・・・」
 - 編集者指示: 女性を左から右へゆっくり歩くように移動させ、中央で止める。右上に「鈴×」「武器×」を1つずつ表示し、「×」だけ赤字。
 
@@ -247,9 +235,9 @@
 ## ASSET-033（キャラアニメーション）
 
 - ナレーション: クマ事件が発生したとのことで、地元のハンター11人が現場周辺を捜します。
-- 場面: 11人のハンターが斜面に散る。
-- ハンターセリフ「このあたりを／探すぞ」
-- 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 左上に「ハンター11人」を白字で置き、要点の一語だけ赤字。
+- 場面: 地元のハンターたちが斜面に散って現場周辺を捜す（11人を代表して4人を描き、人数は文字で出す）。※2026-09-26 全カット点検で発見: 編集者指示が「キャラは既存の _char.png」なのに、ドライブにこのカットのキャラ画像が無い（074 本人「キャラ画像がありません」と同じミス）。今の _still.png は人の写った実写で背景に使えないので、固定キャラの絵柄のキャラと人のいない背景で作る。
+- ハンターセリフ「手分けして／捜すぞ」
+- 編集者指示: 背景は新規の ASSET-033_bg.png、キャラは新規の ASSET-033_char.png。4人を左から右へゆっくり歩かせて止める（動画は作らない）。左上に「ハンター11人」を白字で置き、「11人」だけ赤字。今の ASSET-033_still.png（4月なのに雪がある）は使わない。
 
 ## ASSET-034（キャラアニメーション）
 
@@ -262,7 +250,6 @@
 
 - ナレーション: 町は防災無線を使い、町内にクマへの注意を呼びかけます。
 - 場面: 集落の防災無線スピーカー。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 茂みの奥を探しても何も見えない。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 - 編集者指示: 被写体の全景から必要な物証の部分拡大へ切り替える。中央に「防災無線」を白字で表示し、要点の一語だけ赤字。数値・判定は確認済みのナレーションから手入力する。
 
 ## ASSET-036（キャラアニメーション）
@@ -276,17 +263,14 @@
 
 - ナレーション: 4月17日（事件から2日目）
 - 場面: 黒背景に「4月17日」の短い文字を表示。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 近隣自治体へ送る緊急文書の束。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-036_char.pngを合成。文字は編集で付ける。
 - 編集者指示: 黒背景の中央に「4月17日」を白字で表示。1秒でフェードイン、次カットへ。
 
 ## ASSET-038（キャラアニメーション）
 
 - ナレーション: 北海道の研究機関「道総研（どうそうけん）」が、現地の調査に入ります。
-- 場面: 研究者が山道の現場へ到着する顔が見える斜め前の姿。
+- 場面: 道総研の研究者（CHAR-07）が同僚と調査道具を持って山道の現場に着く。※2026-09-26 全カット点検で発見: 編集者指示が「キャラは既存の _char.png」なのに、ドライブにこのカットのキャラ画像が無い（074 本人「キャラ画像がありません」と同じミス）。今の _still.png は人の写った実写で背景に使えないので、固定キャラの絵柄のキャラと人のいない背景で作る。
 - 研究者セリフ「現場を／調べます」
-- 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 左上に「研究機関が調査」を白字で置き、要点の一語だけ赤字。
+- 編集者指示: 背景は新規の ASSET-038_bg.png、キャラは新規の ASSET-038_char.png。2人を奥から手前へ歩かせて止める（動画は作らない）。左上に「研究機関が調査」を白字で置き、「調査」だけ赤字。今の ASSET-038_still.png は使わない。
 
 ## ASSET-039（キャラアニメーション）
 
@@ -298,28 +282,21 @@
 ## ASSET-040（キャラアニメーション）
 
 - ナレーション: 道総研は、現場の状況から、人への危険が大きいクマによる事故と判断。
-- 場面: 研究者の手元に広がる現場資料。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 3人の職員が机を囲み聞き取りをする。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-039_char.pngを合成。文字は編集で付ける。
-- セリフ「・・・」
-- 編集者指示: 資料を画面中央へ動かし、該当箇所を指す。中央に「高い危険性」を白字で重ね、要点の一語だけ赤字。
+- 場面: 現場の資料を手に、人への危険が大きいクマだと判断する研究者（CHAR-07）。※2026-09-26 本人の指摘（164・166「作画が違うキャラ」）を受け、後ろ姿の旧キャラを固定キャラの絵柄で作り直す。
+- 背景は既存の ASSET-040_bg.png（資料の広がる机）をそのまま使う。新しく作るのはキャラだけ。
+- 研究者セリフ「人への危険が／大きいクマです」
+- 編集者指示: 背景は ASSET-040_bg.png、キャラは新規の ASSET-040_char.png（旧い後ろ姿のキャラは使わない）。研究者を右から中央へスライドさせ、資料を指したところで止める（動画は作らない）。中央に「高い危険性」を白字で表示し、「危険」だけ赤字。
 
-## ASSET-041（キャラアニメーション）
+## ASSET-041（Lovart静止画）
 
 - ナレーション: 残っていたクマの毛を採取し、遺伝子を調べます。
-- 場面: 落ち葉のクマの毛を試料容器へ移す。
-- 研究者セリフ「クマの毛を／採取します」
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 研究者の手元に広がる現場資料。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 被写体の全景から必要な物証の部分拡大へ切り替える。中央に「毛を採取」を白字で表示し、要点の一語だけ赤字。数値・判定は確認済みのナレーションから手入力する。
+- 場面: 手袋をした手が、落ち葉の上に残ったクマの毛をピンセットで試料容器へ移す（人物は手だけ）。※2026-09-26 全カット点検で発見: 種類が「キャラアニメーション」なのにキャラ画像が無く、編集者指示は静止画の扱いのままだった（074 本人「キャラ画像がありません」と同じミス）。 21字なので静止画にする。今の ASSET-041_still.png は4月なのに雪があるので作り直す。
+- 編集者指示: 静止画を5秒で1.0→1.1倍に試料容器へゆっくり寄せる。中央に「毛を採取」を白字で表示し、「毛」だけ赤字。前の ASSET-041_still.png（雪あり）は使わない（同じ名前で作り直す）。
 
 ## ASSET-042（テキストのみ）
 
 - ナレーション: 同じ4月17日の午前5時
 - 場面: 黒背景に「午前5時」の短い文字を表示。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 落ち葉のクマの毛を試料容器へ移す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-041_char.pngを合成。文字は編集で付ける。
 - 編集者指示: 黒背景の中央に「午前5時」を白字で表示。1秒でフェードイン、次カットへ。
 
 ## ASSET-043（キャラアニメーション）
@@ -333,7 +310,6 @@
 
 - ナレーション: 早朝からクマを捜しますが、それでも見つけられません。
 - 場面: 人影のないササやぶを写す。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 夜明け前に森へ入るハンター。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 - 編集者指示: 被写体の全景から必要な物証の部分拡大へ切り替える。中央に「捜索は空振り」を白字で表示し、要点の一語だけ赤字。数値・判定は確認済みのナレーションから手入力する。
 
 ## ASSET-045（キャラアニメーション）
@@ -348,24 +324,20 @@
 
 - ナレーション: 4月23日（事件から7日後）
 - 場面: 黒背景に「4月23日」の短い文字を表示。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 道路沿いの注意看板を主画にして数値は編集で示す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-045_char.pngを合成。文字は編集で付ける。
 - 編集者指示: 黒背景の中央に「4月23日」を白字で表示。1秒でフェードイン、次カットへ。
 
 ## ASSET-047（キャラアニメーション）
 
 - ナレーション: 町や警察などの関係者26人が集まり、今後のクマ対策を話し合いました。
-- 場面: 関係者が机を囲む対策会議。
-- 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 左上に「26人で協議」を白字で置き、要点の一語だけ赤字。
+- 場面: 町・警察・ハンターの関係者が会議室で今後のクマ対策を話し合う（26人を代表して3人を描き、人数は文字で出す）。※2026-09-26 全カット点検で発見: 編集者指示が「キャラは既存の _char.png」なのに、ドライブにこのカットのキャラ画像が無い（074 本人「キャラ画像がありません」と同じミス）。今の _still.png は人の写った実写で背景に使えないので、固定キャラの絵柄のキャラと人のいない背景で作る。 背景は050の会議室と同じ部屋なので、番号の若い047の名前にそろえる（本人指示「再利用する際は、番号がわかい素材から」）。
+- 背景は既存の ASSET-050_bg.png（会議室）を再利用する。ドライブでは番号の若い ASSET-047_bg.png に名前を変えて置く（050・153も ASSET-047_bg.png を使う）。新しく作るのはキャラだけ。
+- 職員セリフ「今後の対策を／決めましょう」
+- 編集者指示: 背景は ASSET-047_bg.png（会議室。旧 ASSET-050_bg.png）、キャラは新規の ASSET-047_char.png。3人を中央に置き、職員の手を小さく動かす（動画は作らない）。左上に「26人で協議」を白字で置き、「26人」だけ赤字。今の ASSET-047_still.png は使わない。
 
 ## ASSET-048（Lovart静止画 + 編集者）
 
 - ナレーション: 現場に残っていたクマの足跡から、女性を襲ったクマはオスで前足の幅は14センチと想定。
 - 場面: 定規を添えたクマの前足跡。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 関係者が机を囲む対策会議。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-047_char.pngを合成。文字は編集で付ける。
 - 編集者指示: 被写体の全景から必要な物証の部分拡大へ切り替える。中央に「前足幅14cm」を白字で表示し、要点の一語だけ赤字。数値・判定は確認済みのナレーションから手入力する。
 
 ## ASSET-049（Lovart静止画）
@@ -377,26 +349,25 @@
 ## ASSET-050（キャラアニメーション）
 
 - ナレーション: クマの情報を集めるため、住民からの目撃通報を集めるよう、それぞれの町へ要請します。
-- 場面: 047から続く対策会議の会議室で、職員が各町へ電話で要請する。キャラは既存の ASSET-050_char.png（電話でメモを取る職員）を使い、背景だけ会議室に作り直す。
-- キャラは既存の ASSET-050_char.png を再利用。
-- 編集者指示: 背景は新規、キャラは既存の ASSET-050_char.png。職員を中央に置く。中央に「目撃通報を集める」を白字で表示し、「目撃通報」だけ赤字。
+- 場面: 対策会議の会議室で、各町へ電話で目撃通報の収集を頼む町の職員（CHAR-06）。後ろ姿の旧キャラを固定キャラの絵柄で作り直す。
+- 背景は既存の ASSET-047_bg.png（会議室。旧 ASSET-050_bg.png を番号の若い047の名前にそろえた）を再利用する。新しく作るのはキャラだけ。
+- 職員セリフ「目撃の情報を／集めてください」
+- 編集者指示: 背景は ASSET-047_bg.png（旧 ASSET-050_bg.png）、キャラは新規の ASSET-050_char.png（旧い後ろ姿のキャラは使わない）。職員を中央に置き、メモを取る腕を小さく動かす（動画は作らない）。中央に「目撃通報を集める」を白字で表示し、「目撃通報」だけ赤字。
 
 ## ASSET-051（キャラアニメーション）
 
 - ナレーション: 地区長を通じて、住民への注意も徹底することになりました。
 - 場面: 集落の掲示板の横で、地区長が住民へ注意を呼びかけ、住民（CHAR-10）が不安そうに聞く。地区長は既存の ASSET-051_char.png（057と同じ地区長）を使い、聞く住民を新しく作る。雪の残る背景は057の掲示板の背景に差し替える。
+- ※2026-09-26 本人「なぜ、固定キャラとしてクマを作ってないの？いつも作ってるよね？」。クマが出るキャラの絵はすべてこの基準画像を添えて描く。
 - 地区長は既存の ASSET-051_char.png を再利用。新しく作るのは聞く住民だけ。
-- 背景は既存の ASSET-057_bg.png（掲示板の横の空き地・雪なし・人物なし）をそのまま使う。新しく作るのは住民のキャラだけ。
+- 背景は既存の ASSET-051_bg.png（掲示板の横の空き地・雪なし・人物なし）をそのまま使う。新しく作るのは住民のキャラだけ。
 - 住民セリフ「気をつけないと、、」
-- 編集者指示: 背景は ASSET-057_bg.png、キャラは既存の ASSET-051_char.png（地区長）と新規の ASSET-051_char2.png（住民）。地区長を左、住民を右に置き、地区長の上げた手を小さく振り、住民を小さくうなずかせる（動画は作らない）。左上に「住民へ注意を徹底」を白字で置き、「注意」だけ赤字。
+- 編集者指示: 背景は ASSET-051_bg.png、キャラは既存の ASSET-051_char.png（地区長）と新規の ASSET-051_char2.png（住民）。地区長を左、住民を右に置き、地区長の上げた手を小さく振り、住民を小さくうなずかせる（動画は作らない）。左上に「住民へ注意を徹底」を白字で置き、「注意」だけ赤字。
 
 ## ASSET-052（Lovart静止画）
 
 - ナレーション: クマを捜す一方で、町は住宅地への対応も進めます。
 - 場面: 住宅地と山林の境を俯瞰する。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 地区の掲示板に注意書きを貼る手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-051_char.pngを合成。文字は編集で付ける。
 - 編集者指示: 画面を5秒で1.0→1.12倍にゆっくり近づける。左上に「住宅地も対策」を白字で置き、要点の一語だけ赤字。
 
 ## ASSET-053（キャラアニメーション）
@@ -423,21 +394,18 @@
 ## ASSET-056（キャラアニメーション）
 
 - ナレーション: 足跡やフン、農作物の被害なども見つけたら、すぐに知らせてほしいと、
-- 場面: 足跡・フン・食害跡の接写を順に見せる。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 通報窓口の電話と記録用紙。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 既存の背景または動画に、画像/ASSET-055_char.pngを合成。文字は編集で付ける。
-- 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 左上に「痕跡も通報」を白字で置き、要点の一語だけ赤字。
+- 場面: 足跡・フン・畑の食害の3枚の写真を背に、見つけたらすぐ知らせてと呼びかける町の職員（CHAR-06）。※2026-09-26 全カット点検で発見: 編集者指示が「キャラは既存の _char.png」なのに、ドライブにこのカットのキャラ画像が無い（074 本人「キャラ画像がありません」と同じミス）。今の _still.png は人の写った実写で背景に使えないので、固定キャラの絵柄のキャラと人のいない背景で作る。 背景は今の ASSET-056_still.png（足跡・フン・食害の3枚並び・人物なし）をそのまま使う（ドライブではゴミ箱に入っていたので戻す）。
+- 背景は既存の ASSET-056_still.png（足跡・フン・食害の3枚並び）をそのまま使う。新しく作るのはキャラだけ。
+- 職員セリフ「見つけたら／すぐ知らせて！」
+- 編集者指示: 背景は ASSET-056_still.png（ドライブのゴミ箱から戻す）、キャラは新規の ASSET-056_char.png を右に置き、指さす腕を小さく動かす（動画は作らない）。左上に「痕跡も通報」を白字で置き、「痕跡」だけ赤字。
 
 ## ASSET-057（キャラアニメーション）
 
 - ナレーション: 地区長から住民へ呼びかけました。
-- 場面: 地区長が住民へ呼びかける顔が見える斜め前の姿。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 足跡・フン・食害跡の接写を順に見せる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-056_char.pngを合成。文字は編集で付ける。
-- セリフ「・・・」
-- 編集者指示: 人物を掲示板の横に置き、片手を住民の方へ上げる。中央に「地区長が呼びかけ」を白字で重ね、要点の一語だけ赤字。
+- 場面: 掲示板の横で、拡声器を手に住民へ呼びかける地区長（固定人物ではなく、このカットだけの人物）。後ろ姿の旧キャラを固定キャラの絵柄で作り直す。
+- 背景は既存の ASSET-051_bg.png（掲示板のある集落の広場。旧 ASSET-057_bg.png と同じ画像で、番号の若い051の名前でドライブに置いてある）を再利用する。新しく作るのはキャラだけ。
+- 地区長セリフ「クマに／気をつけて！」
+- 編集者指示: 背景は ASSET-051_bg.png、キャラは新規の ASSET-057_char.png（旧い後ろ姿のキャラは使わない）。地区長を掲示板の横に置き、上げた手を小さく振る（動画は作らない）。中央に「地区長が呼びかけ」を白字で表示し、「呼びかけ」だけ赤字。
 
 ## ASSET-058（Lovart動画）
 
@@ -456,7 +424,8 @@
 ## ASSET-060（キャラアニメーション）
 
 - ナレーション: こうした取り組みを必死ですすめていましたが、人を襲ったクマは結局、誰も捕まえることはできませんでした。
-- 場面: 扉が開いたままの空の箱わなの前で、捕まえられず悔しがるハンター（CHAR-05）。
+- 場面: 扉が開いたままの空の箱わなの前で、捕まえられず悔しがるハンター（CHAR-05）。※2026-09-26 泣き顔をやめる（台本に泣く記述がない。019・168 本人「泣いてる顔ではなく」「なんで泣いてる画像なの？困った顔にして」）。キャラだけ作り直し、背景は今のものを使う。
+- 背景は既存の ASSET-060_still.png をそのまま使う。新しく作るのはキャラだけ。
 - ハンターセリフ「どうして／捕まらないのか、、」
 - 編集者指示: 背景・キャラとも新規。ハンターを左に置き、握った拳を小さく震わせる。中央に「誰も捕まえられず」を白字で表示し、「捕まえられず」だけ赤字。
 
@@ -475,9 +444,9 @@
 ## ASSET-063（キャラアニメーション）
 
 - ナレーション: せたな町で、再び女性がクマに襲われます。
-- 場面: 山道の女性の背後に迫るヒグマの影。
-- セリフ「・・・」
-- 編集者指示: 人物を半歩だけ横へ退かせ、クマの手前で止める。中央に「再び襲撃」を白字で重ね、要点の一語だけ赤字。
+- 場面: 山道を歩く女性（CHAR-03・45歳）の背後から、ヒグマが迫る。女性は気づいて振り返り、おびえる。※2026-09-26 本人「ここはクマと女性のキャラ画像にして。背景も別途作成して。今だと背景にクマがいるので、削除」「アセット63が若い人でおかしいです」。
+- 女性セリフ「えっ、、クマ！？」
+- 編集者指示: 背景・キャラとも新規（今のクマが写った背景は使わない）。キャラ（女性とクマ）を中央に置き、少しずつ寄る（動画は作らない）。中央に「再び襲撃」を白字で重ね、「襲撃」だけ赤字。
 
 ## ASSET-064（Google Earth）
 
@@ -523,15 +492,15 @@
 ## ASSET-069（キャラアニメーション）
 
 - ナレーション: 副収入を得ようとする人が一定数、毎年こうして山に入っていきます。
-- 場面: 林道の入口から山へ入る山菜採りの人。キャラは既存の ASSET-069_char.png（カゴを持つ人）を使い、雪の写った背景だけ作り直す。
-- キャラは既存の ASSET-069_char.png を再利用。
-- 編集者指示: 背景は新規、キャラは既存の ASSET-069_char.png。人を左から山道の入口へ歩かせる（動画は作らない）。中央に「副収入を求めて」を白字で表示し、「副収入」だけ赤字。
+- 場面: 林道の入口から山へ入る地元の山菜採りの人（60代の女性・固定人物ではなく、このカットだけの人物）。※2026-09-26 本人「ASSET-069_char.pngも若い人でおかしいです」でキャラを新しく作る。
+- 女性セリフ「今年も／たくさん採るよ」
+- 編集者指示: 背景・キャラとも新規（今の ASSET-069_char.png は若すぎるので使わない）。人を左から山道の入口へ歩かせる（動画は作らない）。中央に「副収入を求めて」を白字で表示し、「副収入」だけ赤字。
 
 ## ASSET-070（Lovart静止画）
 
 - ナレーション: 林道の入口には、「クマ出没注意」の看板。
-- 場面: 林道の入口に立つクマ注意の看板（絵記号だけ・文字は編集で載せる）。
-- 編集者指示: 画面を5秒で1.0→1.12倍に看板へ寄せる。看板の上に「クマ出没注意」を白字で表示し、「クマ」だけ赤字。
+- 場面: 林道の入口に立つクマ出没注意の看板（看板に「クマ出没注意」の文字を入れる）。※2026-09-26 本人「ここはクマ出没のテキスト入りの看板で生成していいです」。
+- 編集者指示: 画面を5秒で1.0→1.12倍に看板へ寄せる。看板に「クマ出没注意」の文字が入っているので、文字は重ねない。
 
 ## ASSET-071（キャラアニメーション）
 
@@ -545,9 +514,6 @@
 
 - ナレーション: 午後2時ごろ。
 - 場面: 黒背景に「午後2時」の短い文字を表示。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 看板の先へ入っていく2人の斜め前から顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-071_char.pngを合成。文字は編集で付ける。
 - 編集者指示: 黒背景の中央に「午後2時」を白字で表示。1秒でフェードイン、次カットへ。
 
 ## ASSET-073（Google Earth）
@@ -562,37 +528,34 @@
 - - 演出: 代表点のまわりの山林と林道が見える高さで止める／画面右下に「1km」の縮尺バーを置く。林道と事故地点の正確な位置は資料に無いので、地図上の実際の道に赤い線を重ねず、ピンで地点を断定しない
 - 編集者指示: 中央に「林道から約1km」を白字で表示し、「約1km」だけ赤字。Google Earthと画像提供元のクレジットを表示中ずっと残す。
 
-## ASSET-074（Lovart静止画）
+## ASSET-074（キャラアニメーション）
 
 - ナレーション: 山菜採りを終えた2人は、男性を先頭にして下山中でした。
-- 場面: 海を望む下り道を、男性（灰色）が先頭、女性（えんじ色）がその後ろを歩いて下りる。実在の2人なので実写は後ろ姿（向き理由=実写の実在人物・下山の順番を見せる）。075からキャラが3連続なので、ここは実写にする。
-- 編集者指示: 画面を5秒で1.0→1.1倍にゆっくり近づける。先頭の男性に白い矢印と「男性が先頭」を白字で置き、「先頭」だけ赤字。
+- 場面: 海を望む下り道を、男性（CHAR-04・63歳）が先頭、女性（CHAR-03・45歳）がその後ろを歩いて下りる。山菜でいっぱいのカゴを持ち、まだ何も起きていない穏やかな顔。※2026-09-26 本人指示（ここのキャラ画像がありません）。
+- 男性セリフ「いっぱい／採れたな」
+- 編集者指示: 背景・キャラとも新規（今の ASSET-074_still.png は後ろ姿の実写なので使わない）。2人を右から左へゆっくり歩かせる（動画は作らない）。先頭の男性に白い矢印と「男性が先頭」を白字で置き、「先頭」だけ赤字。
 
 ## ASSET-075（キャラアニメーション）
 
 - ナレーション: すると突然、女性の背後からクマが襲いかかります。
-- 場面: 女性の背後から飛び出すヒグマを横から写す。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese man in his early 60s, short graying hair, gray field jacket, dark trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 男性を先頭に下山する2人を横から写す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-074_char.pngを合成。文字は編集で付ける。
-- セリフ「・・・」
-- 編集者指示: 人物を半歩だけ横へ退かせ、クマの手前で止める。中央に「背後から襲撃」を白字で重ね、要点の一語だけ赤字。
+- 場面: 山道で、女性（CHAR-03・45歳）の背後からヒグマが飛びかかる。女性は振り返り、恐怖で叫ぶ。※2026-09-26 本人指示（女性が若くて変です／女性とクマが一枚になった画像にして）。
+- 背景は既存の ASSET-063_bg.png（同じ山道・クマなし・人物なし）をそのまま使う。新しく作るのはキャラだけ（名前は最初に使う063に合わせる）。
+- 女性セリフ「キャーッ！」
+- 編集者指示: 背景は ASSET-063_bg.png を再利用、キャラは新規（今の実写のクマの背景は使わない）。キャラを中央に置き、右から左へ小さく飛び込むように動かす（動画は作らない）。中央に「背後から襲撃」を白字で重ね、「襲撃」だけ赤字。
 
 ## ASSET-076（キャラアニメーション）
 
 - ナレーション: 抵抗する間もなく、女性は肩や腕に噛みつかれます。
-- 場面: 女性が身をよじる瞬間と迫るクマの影。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese woman in her mid 40s, dark hair tied low, maroon field jacket, charcoal trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 女性の背後から飛び出すヒグマを横から写す。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- セリフ「・・・」
-- 編集者指示: 人物を半歩だけ横へ退かせ、クマの手前で止める。中央に「肩と腕に噛みつく」を白字で重ね、要点の一語だけ赤字。
+- 場面: 女性（CHAR-03・45歳）が肩と腕を押さえて身をよじり、ヒグマがその肩へ飛びかかる。血や傷は描かない。※2026-09-26 本人指示（ここも変です／女性とクマが一枚になった画像にして）。噛まれた痛みで泣き叫ぶ（涙は痛みの表現）。
+- 背景は既存の ASSET-063_bg.png（同じ山道・クマなし・人物なし）をそのまま使う。新しく作るのはキャラだけ（名前は最初に使う063に合わせる）。
+- 女性セリフ「肩が、、！」
+- 編集者指示: 背景は ASSET-063_bg.png を再利用、キャラは新規。キャラを中央に置き、小刻みに揺らす（動画は作らない）。噛みつきは描かず、編集の衝撃表現で見せる。中央に「肩と腕に噛みつく」を白字で重ね、「噛みつく」だけ赤字。
 
-## ASSET-077（キャラアニメーション）
+## ASSET-077（Lovart動画）
 
 - ナレーション: さらに、先を歩いていた男性にも突進。
-- 場面: 男性へ向かうヒグマを横から写す。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese woman in her mid 40s, dark hair tied low, maroon field jacket, charcoal trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 女性が身をよじる瞬間と迫るクマの影。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- セリフ「・・・」
-- 編集者指示: 人物を半歩だけ横へ退かせ、クマの手前で止める。中央に「男性へ突進」を白字で重ね、要点の一語だけ赤字。
+- 場面: 山道を、ヒグマが四つ足で先へ突進していく。その先の下り道に、先を歩いていた男性（灰色の上着）の小さな後ろ姿。実在の人物なので顔は見せない。キャラは作らない。※2026-09-26 本人指示（ここは動画にして／キャラは不要です）。
+- 編集者指示: 動画をナレーションの尺に合わせて使う（キャラは使わない）。中央に「男性へ突進」を白字で重ね、「突進」だけ赤字。
 
 ## ASSET-078（Lovart動画）
 
@@ -609,22 +572,23 @@
 ## ASSET-080（キャラアニメーション）
 
 - ナレーション: 男性はそのナタで、クマの顔面をたたきます。
-- 場面: 向かってくるクマの顔面へ、男性（CHAR-04）がナタを振り下ろして当てる。キャラは既存の ASSET-080_char.png（ナタを振り上げる男性）、夏の緑が写った背景を079の実写に差し替え、当たる瞬間は編集の衝撃表現で見せる。
-- キャラは既存の ASSET-080_char.png を再利用。
-- 背景は079で新しく作る ASSET-079_still.png を再使用。新しく作るものはない。
-- 編集者指示: 背景は079の ASSET-079_still.png、キャラは既存の ASSET-080_char.png。男性を左3分の1に置き、ナタを持つ腕をクマの顔の方へ振り下ろし、ナタの刃先がクマの鼻先に重なった瞬間に白い衝撃の閃光（漫符の放射線）と「バシッ」の効果音を入れ、画面を1回だけ小さく揺らす（動画は作らない。血や傷は描かない）。中央に「ナタで反撃」を白字で表示し、「反撃」だけ赤字。
+- 場面: 向かってくるヒグマの顔面へ、男性（CHAR-04・63歳）がナタを振り下ろす。男性とクマを1枚のキャラにし、当たる瞬間は編集の衝撃表現で見せる。背景はクマのいない山道。※2026-09-26 本人指示（ASSET-080_char.pngはクマの画像とせっとになってないし。背景もありません。079を背景にしたら、クマが映るのでおかしくなります）。
+- 背景は既存の ASSET-063_bg.png（同じ山道・クマなし・人物なし）をそのまま使う。新しく作るのはキャラだけ（名前は最初に使う063に合わせる）。
+- 男性セリフ「このっ！」
+- 編集者指示: 背景は ASSET-063_bg.png を再利用（079 はクマが写るので使わない）、キャラは新規（今の ASSET-080_char.png は使わない）。キャラを中央に置き、ナタの刃先がクマの鼻先に重なった瞬間に白い衝撃の閃光（漫符の放射線）と「バシッ」の効果音を入れ、画面を1回だけ小さく揺らす（動画は作らない。血や傷は描かない）。中央に「ナタで反撃」を白字で表示し、「反撃」だけ赤字。
 
-## ASSET-081（Lovart静止画）
+## ASSET-081（キャラアニメーション）
 
 - ナレーション: 反撃を受けたクマは負傷し、
-- 場面: 反撃で体勢を崩すヒグマ。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese man in his early 60s, short graying hair, gray field jacket, dark trousers. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 男性がナタで応戦する直前の構え。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 画面を5秒で1.0→1.12倍にゆっくり近づける。左上に「クマがひるむ」を白字で置き、要点の一語だけ赤字。
+- 場面: ナタの反撃を受けたヒグマが、顔を押さえるようにのけぞってひるむ。血や傷は描かない。※2026-09-26 本人「ここもキャラ画像で表現して」。
+- 背景は既存の ASSET-063_bg.png（同じ山道・クマなし・人物なし）をそのまま使う。新しく作るのはキャラだけ（名前は最初に使う063に合わせる）。
+- クマセリフ「グオォッ、、」
+- 編集者指示: 背景は ASSET-063_bg.png を再利用、キャラは新規。クマを中央に置き、後ろへのけぞるように小さく動かす（動画は作らない）。左上に「クマがひるむ」を白字で置き、「ひるむ」だけ赤字。
 
 ## ASSET-082（Lovart動画）
 
 - ナレーション: 諦めたのかそのまま山の中へ逃げていきました。
-- 場面: 背中を向けて四つ足で森の奥へ走り去るヒグマ（顔はこちらを向かない）。
+- 場面: 背中を向けて四つ足で森の奥へ全速力で走り去るヒグマ（顔はこちらを向かない）。※2026-09-26 本人「ここはもっと走って逃げてく動画にして」。
 - 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。左上に「山の中へ逃走」を白字で置き、「逃走」だけ赤字。
 
 ## ASSET-083（Lovart静止画）
@@ -636,16 +600,17 @@
 ## ASSET-084（キャラアニメーション）
 
 - ナレーション: 幸い肩や腕に重いけがを負いましたが、命に別状はなかったとのことです。
-- 場面: 病院の廊下で、肩と腕に包帯を巻き、腕をつった女性（CHAR-03）が、助かったと涙ぐむ。
+- 場面: 病院の廊下で、肩と腕に包帯を巻き、腕をつった女性（CHAR-03）が、助かったと泣く。※2026-09-26 本人「困った顔で泣いてて変です。泣いてる顔にして」。
 - 女性セリフ「助かった、、」
 - 編集者指示: 背景・キャラとも新規。女性を中央に置き、肩を小さく上下させる（動画は作らない）。中央に「命に別状なし」を白字で表示し、「命」だけ赤字。
 
 ## ASSET-085（キャラアニメーション）
 
 - ナレーション: 同行していた男性に関しては、大きな怪我はなかったと報告されています。
-- 場面: クマが去った林道で、大きな怪我がなく、へなへなと安堵する男性（CHAR-04）。
+- 場面: 病院の廊下で、頬と手に小さな絆創膏を貼っただけの軽いけがの男性（CHAR-04・63歳）が、ほっとして力が抜ける。※2026-09-26 本人「ここは病院内の背景に、軽い怪我の男性キャラにするべきでは？」。
+- 背景は既存の ASSET-084_still.png（病院の廊下・人物なし）をそのまま使う。新しく作るのはキャラだけ。
 - 男性セリフ「なんとか／無事だった、、」
-- 編集者指示: 背景・キャラとも新規。男性を中央に置き、ひざが抜けるように小さく沈ませる（動画は作らない）。中央に「男性は無事」を白字で表示し、「無事」だけ赤字。
+- 編集者指示: 背景は ASSET-084_still.png（病院の廊下）を再利用、キャラは新規（今の ASSET-085_bg.png の林道は使わない）。男性を中央に置き、ひざが抜けるように小さく沈ませる（動画は作らない）。中央に「男性は無事」を白字で表示し、「無事」だけ赤字。
 
 ## ASSET-086（キャラアニメーション）
 
@@ -658,9 +623,8 @@
 ## ASSET-087（Lovart動画）
 
 - ナレーション: 一方、町では、再びクマ事件が発生したこともあり、旧太田小学校の校舎付近を通る道を通行止めにします。
-- 場面: 旧校舎近くの通行止め柵。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 応戦場面を指す専門家の手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: Flow動画をナレーションの尺に合わせて使用。左上に「通行止め」を白字で置き、要点の一語だけ赤字。
+- 場面: 旧校舎近くの道で、紺の作業着の町の職員が後ろ姿で通行止めの柵を引いて道をふさぎ、鍵をかける（実写・顔は見せない）。※2026-09-26 本人「勝手にしまっていておかしいです。人が閉めてる感じにするべきでは？」。
+- 編集者指示: 動画をナレーションの尺に合わせて使う（人が柵を閉めて鍵をかける）。左上に「通行止め」を白字で置き、「通行止め」だけ赤字。旧 ASSET-087_video.mp4 は使わない（ひとりでに閉まるため）。
 
 ## ASSET-088（Google Earth）
 
@@ -684,8 +648,8 @@
 ## ASSET-090（Lovart動画）
 
 - ナレーション: 周辺の道にも、クマへの注意を呼びかける看板が設置されました。
-- 場面: 山沿いの道の脇で、新しく立てたクマ注意看板の支柱を、作業手袋の手が締める。091〜093がキャラなので、ここは実写にしてキャラの4連続を避ける。
-- 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。看板の上に「クマ出没注意」を白字で重ね、左上に「周辺の道にも看板」を白字で置き、「看板」だけ赤字。旧ASSET-090_char.png は使わない。
+- 場面: 山沿いの道の脇で、新しく立てた「クマ出没注意」の看板の支柱を、作業手袋の手が締める。※2026-09-26 本人「ここはテキスト入りの看板にするべきでは？」。091〜093がキャラなので、ここは実写にしてキャラの4連続を避ける。
+- 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。看板に「クマ出没注意」の文字が入っているので、看板の文字は重ねない。左上に「周辺の道にも看板」を白字で置き、「看板」だけ赤字。旧ASSET-090_char.png は使わない。
 
 ## ASSET-091（キャラアニメーション）
 
@@ -697,19 +661,17 @@
 ## ASSET-092（キャラアニメーション）
 
 - ナレーション: 「春先は畑に行くのにも爆竹、笛が欠かせない」と、旧校舎の近くに住む80歳の女性は語ります。
-- 場面: 旧校舎近くの畑の前で、笛と爆竹を手に不安そうに語る80歳の女性。
+- 場面: 旧校舎近くの畑の前で、笛と爆竹を手に不安そうに語る80歳の女性。※2026-09-26 泣き顔をやめる（台本に泣く記述がない。019・168 本人「泣いてる顔ではなく」「なんで泣いてる画像なの？困った顔にして」）。キャラだけ作り直し、背景は今のものを使う。
 - 女性セリフ「爆竹と笛は／欠かせない」
 - 編集者指示: 背景・キャラとも新規。女性を右から中央へスライドさせて止める。中央に「笛と爆竹」を白字で表示し、「爆竹」だけ赤字。
 
 ## ASSET-093（キャラアニメーション）
 
 - ナレーション: 一方、現場に到着したハンターは、クマの血痕を採取。
-- 場面: ハンターが現場の試料を採る手元。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult woman in a muted outdoor jacket, clearly fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 高齢女性が持つ笛と爆竹の手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-092_char.pngを合成。文字は編集で付ける。
-- セリフ「・・・」
-- 編集者指示: 試料容器を地面の手元へ寄せ、採取動作で止める。中央に「血痕を採取」を白字で重ね、要点の一語だけ赤字。
+- 場面: 現場に着いたハンター（CHAR-05）が、しゃがんで血痕の試料を小さな容器に採る。血は描かない。後ろ姿の旧キャラを固定キャラの絵柄で作り直す。
+- 背景は既存の ASSET-093_bg.png（落ち葉の林床）をそのまま使う。新しく作るのはキャラだけ。
+- ハンターセリフ「血の跡を／持ち帰る」
+- 編集者指示: 背景は ASSET-093_bg.png、キャラは新規の ASSET-093_char.png（旧い後ろ姿のキャラは使わない）。ハンターを右下に置き、容器を持つ手を小さく動かす（動画は作らない）。中央に「血痕を採取」を白字で表示し、「血痕」だけ赤字。
 
 ## ASSET-094（Lovart動画）
 
@@ -734,9 +696,6 @@
 
 - ナレーション: 2つの現場は、およそ8キロも離れており、地区が異なるエリア。
 - 場面: 新成地区と太田地区を同じ画面で見せる。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult woman in a muted outdoor jacket, clearly fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 2人の女性の山菜カゴを年別に並べる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-096_char.pngを合成。文字は編集で付ける。
 - 座標（地区代表点・事故地点ではない）: 新成 42.332954, 139.794357／太田 42.280846, 139.802475。
 - カメラ: 中心 42.307000, 139.798000。高度 約14,000m、俯角45°、北を上（方位0°）、3D地形ON。
 - 地形標高の参考値（代表点のみ）: 新成 約280m／太田 約223m。
@@ -763,7 +722,7 @@
 - ナレーション: さらに、再び人を襲う傾向があることを証明された事例ともいえるでしょう。
 - 場面: 研究者が捜索記録と試料を前に、該当箇所を指す。
 - アセット181の背景とアセット40のキャラの再利用。
-- 編集者指示: 背景は ASSET-181_bg.png、キャラは ASSET-040_char.png を再利用。キャラを右から中央へ移動させ、資料を指したところで止める。中央に「再び人を襲う、、」を白字で表示し、「再び」だけ赤字。
+- 編集者指示: 背景は ASSET-100_bg.png、キャラは ASSET-040_char.png を再利用。キャラを右から中央へ移動させ、資料を指したところで止める。中央に「再び人を襲う、、」を白字で表示し、「再び」だけ赤字。
 
 ## ASSET-101（キャラアニメーション）
 
@@ -783,11 +742,10 @@
 ## ASSET-103（キャラアニメーション）
 
 - ナレーション: しかし、事件は起きてしまいました。
-- 場面: 襲撃後の道に残る山菜カゴ。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 鈴を付けた2人が森の小道を歩く。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-102_char.pngを合成。文字は編集で付ける。
-- 編集者指示: 画面を5秒で1.0→1.12倍にゆっくり近づける。左上に「事件は起きた」を白字で置き、要点の一語だけ赤字。
+- 場面: 襲撃のあとの山道に山菜カゴが残され、そのそばをヒグマ（CHAR-11）がのそりと離れていく。※2026-09-26 本人「ここはクマのキャラ画像も必要です」。
+- 背景は既存の ASSET-103_still.png（道に残る山菜カゴ・人物なし）をそのまま使う。新しく作るのはクマのキャラだけ。
+- クマセリフ「グルル、、」
+- 編集者指示: 背景は既存の ASSET-103_still.png、キャラは新規の ASSET-103_char.png。クマを右に置き、右へゆっくり歩き去るように動かす（動画は作らない）。左上に「事件は起きた」を白字で置き、「事件」だけ赤字。
 
 ## ASSET-104（キャラアニメーション）
 
@@ -807,27 +765,25 @@
 
 - ナレーション: 4月7日（事件から3日後）
 - 場面: 黒背景に「4月7日」の短い文字を表示。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult municipal worker in a navy jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 町職員が駆除方針を資料で確認。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 - 編集者指示: 黒背景の中央に「4月7日」を白字で表示。1秒でフェードイン、次カットへ。
 
 ## ASSET-107（キャラアニメーション）
 
 - ナレーション: ハンターたちは、現場から半径数キロにわたって捜索を開始。
-- 場面: 尾根が連なる春の山並みを前に、双眼鏡で広い範囲を探すハンターたち（CHAR-05・CHAR-09）。雪は描かない。
+- 場面: 山の奥の森の中で、双眼鏡で広い範囲を探すハンターたち（CHAR-05・CHAR-09）。雪は描かない。※2026-09-26 本人「ここはもっと山の中にして」（背景）。
 - ハンターセリフ「どこに／いるのか、、」
 - 編集者指示: 背景・キャラとも新規。2人を左下に置き、双眼鏡を左右にゆっくり振るように小さく回す。中央に「半径数キロを捜索」を白字で表示し、「数キロ」だけ赤字。
 
 ## ASSET-108（キャラアニメーション）
 
 - ナレーション: クマは男性の反撃により顔面を負傷し、山の中へ逃げています。
-- 場面: 顔を隠したヒグマがやぶへ入る。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 複数の尾根を捜すハンター。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 被写体の全景から必要な物証の部分拡大へ切り替える。中央に「顔に負傷」を白字で表示し、要点の一語だけ赤字。数値・判定は確認済みのナレーションから手入力する。
+- 場面: 男性の反撃で顔を負傷したクマ（CHAR-11）が、前足で顔を押さえるようにしてやぶの奥へ逃げていく。血や傷は描かない。※2026-09-26 全カット点検で発見: 種類が「キャラアニメーション」なのにキャラ画像が無く、編集者指示は静止画の扱いのままだった（074 本人「キャラ画像がありません」と同じミス）。 今の ASSET-108_still.png は実写のクマと人が同じ画面にいるので使わない。
+- 編集者指示: 背景は新規の ASSET-108_bg.png、クマは新規の ASSET-108_bear.png を中央に置き、右のやぶの奥へ小さくなりながら動かして消す（動画は作らない）。中央に「顔に負傷」を白字で表示し、「負傷」だけ赤字。今の ASSET-108_still.png は使わない。
 
 ## ASSET-109（キャラアニメーション）
 
 - ナレーション: しかし、草むらが視界を塞ぎ、なかなか思うように探せません。
-- 場面: 背丈ほどのササをかき分けても先が見えず、いら立つハンター（CHAR-05）。
+- 場面: 背丈ほどのササを両腕でかき分け、額から汗を流して大変そうに進むハンター（CHAR-05）。※2026-09-26 本人「ポーズが変です。額に汗をながし大変そうな感じにして」。
 - 背景は既存の ASSET-109_bg.png（ササに埋もれた小道・人物なし）をそのまま使う。新しく作るのはキャラだけ。
 - ハンターセリフ「草で／見えない、、」
 - 編集者指示: 背景は既存の ASSET-109_bg.png、キャラは新規の ASSET-109_char.png。ハンターを中央下に置き、左右に小さく揺らす。ササの擦れる音のSE。中央に「草むらが邪魔、、」を白字で表示し、「草むら」だけ赤字。
@@ -839,23 +795,16 @@
 - 職員セリフ「ヘリを／お願いします！」
 - 編集者指示: 背景・キャラとも新規。職員を中央に置き、小刻みに揺らす（動画は作らない）。ヘリのローター音のSEを最後に小さく入れる。中央に「防災ヘリを要請」を白字で表示し、「ヘリ」だけ赤字。
 
-## ASSET-111（キャラアニメーション）
+## ASSET-111（Lovart動画）
 
 - ナレーション: こうして、地上と空の2つでクマを捜索することとなりました。
-- 場面: 地上の捜索隊と上空のヘリを同画面に収める。
-- 隊員セリフ「空からも／探すぞ」
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: ヘリ要請書と一般的な防災ヘリ。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 既存の背景または動画に、画像/ASSET-110_char.pngを合成。文字は編集で付ける。
-- 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 左上に「地上と空から」を白字で置き、要点の一語だけ赤字。
+- 場面: 森に覆われた尾根の上を、防災ヘリが低く飛んで捜索する。尾根には捜索隊が小さく見える（実写・顔は見えない）。※2026-09-26 本人「ここはヘリの動画にして」。
+- 編集者指示: 動画をナレーションの尺に合わせて使う。左上に「地上と空から」を白字で置き、「空から」だけ赤字。
 
 ## ASSET-112（テキストのみ）
 
 - ナレーション: 4月9日（事件から5日後）
 - 場面: 黒背景に「4月9日」の短い文字を表示。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 地上の捜索隊と上空のヘリを同画面に収める。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-111_char.pngを合成。文字は編集で付ける。
 - 編集者指示: 黒背景の中央に「4月9日」を白字で表示。1秒でフェードイン、次カットへ。
 
 ## ASSET-113（キャラアニメーション）
@@ -883,9 +832,6 @@
 
 - ナレーション: 今回捜すのは、事故現場から北東へ半径2キロの範囲。
 - 場面: 2014年の太田地区周辺を北東方向が分かる構図で見せる。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 捜索隊が3本の道へ分かれる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-115_char.pngを合成。文字は編集で付ける。
 - 座標（地区代表点・事故地点ではない）: 太田 42.280846, 139.802475。
 - カメラ: 中心 42.280846, 139.802475。高度 約8,000m、俯角40°、北を上（方位0°）、3D地形ON。
 - 地形標高の参考値（代表点のみ）: 太田 約223m。
@@ -899,23 +845,16 @@
 - 長田さんセリフ「銃口は／必ず下に」
 - 編集者指示: 背景は ASSET-114_bg.png を再利用、キャラは新規の ASSET-117_char.png。2人を中央に置き、長田さんの腕だけ小さく動かす。長田さんの横に「長田範男さん（62）」を小さく白字で添える。中央に「銃の扱いを指導」を白字で表示し、「銃」だけ赤字。
 
-## ASSET-118（キャラアニメーション）
+## ASSET-118（Lovart動画）
 
 - ナレーション: 準備が整い、問題のクマを捕えるべく、地上と空の二つで捜索を開始。
-- 場面: 地上の捜索隊と遠くのヘリ。
-- ハンターセリフ「捜索／開始！」
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: ベテランが銃の扱いを教える手元。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 既存の背景または動画に、画像/ASSET-117_char.pngを合成。文字は編集で付ける。
-- 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 左上に「捜索開始」を白字で置き、要点の一語だけ赤字。
+- 場面: 画面を左右に2分割し、左に森の斜面を進む地上の捜索隊、右に森の上を飛ぶ防災ヘリを写す（実写・顔は見えない）。※2026-09-26 本人「画面を2分割して、地上と空のふたつが写ってる静止画にして」。ナレーションが26字以上のため、静止画を元に左右がわずかに動く動画も作る（編集は静止画・動画のどちらでもよい）。
+- 編集者指示: 2分割の静止画（ASSET-118_still.png）か動画（ASSET-118_video.mp4）をナレーションの尺で使う。左上に「地上と空から捜索開始」を白字で置き、「捜索開始」だけ赤字。
 
 ## ASSET-119（Lovart静止画 + 編集者）
 
 - ナレーション: この時期、山には、まだ雪が残っていました。
 - 場面: 日陰に残る春の雪。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 地上の捜索隊と遠くのヘリ。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-118_char.pngを合成。文字は編集で付ける。
 - 編集者指示: 被写体の全景から必要な物証の部分拡大へ切り替える。中央に「残雪の山」を白字で表示し、要点の一語だけ赤字。数値・判定は確認済みのナレーションから手入力する。
 
 ## ASSET-120（キャラアニメーション）
@@ -945,39 +884,36 @@
 
 - ナレーション: 午後6時
 - 場面: 黒背景に「午後6時」の短い文字を表示。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 雪上の足跡を指すハンターの手。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-122_char.pngを合成。文字は編集で付ける。
 - 編集者指示: 黒背景の中央に「午後6時」を白字で表示。1秒でフェードイン、次カットへ。
 
 ## ASSET-124（キャラアニメーション）
 
 - ナレーション: 日が沈むまでクマを探したものの、結局クマは見つかりませんでした。
-- 場面: 夕暮れの林道を、疲れ切って肩を落として戻るハンター（CHAR-05）。雪は描かない。
+- 場面: 夕暮れの林道を、疲れ切って肩を落として戻るハンター（CHAR-05）。雪は描かない。※背景を動画にする（本人指示「ASSET-124_bg.pngは動画にして」2026-09-26）。キャラは静止画のまま重ねる。
+- 背景は既存の ASSET-124_bg.png（夕暮れの林道）をそのまま使う（作り直さない）。静止画は ASSET-124_bg.png をそのまま使い、これを元に背景の動画を作る。
 - ハンターセリフ「また／見つからない、、」
-- 編集者指示: 背景・キャラとも新規。ハンターを奥から手前へ2秒でゆっくり歩かせて止める。中央に「見つからず、、」を白字で表示し、「見つからず」だけ赤字。
+- 編集者指示: 背景は動画 ASSET-124_video.mp4（ASSET-124_bg.png から作る）、キャラは ASSET-124_char.png を重ねる（動画が使えない区間は、キャラ画の区間は開始画像を背景にする＝ASSET-124_bg.png）。ハンターを奥から手前へ2秒でゆっくり歩かせて止める。中央に「見つからず、、」を白字で表示し、「見つからず」だけ赤字。
 
 ## ASSET-125（キャラアニメーション）
 
 - ナレーション: 地上と空、ふたつの捜索を進めても、ヒグマは人間から逃げ切ったのです。
-- 場面: 無人の山並みを離れるヘリ。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 夕暮れの森から空手で戻る捜索隊。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 左上に「空でも見つからず」を白字で置き、要点の一語だけ赤字。
+- 場面: ヘリが遠ざかる山並みを背に、空を見上げて悔しがるハンター（CHAR-05）と、林の奥へ悠々と去っていくクマ（CHAR-11）。※2026-09-26 全カット点検で発見: 編集者指示が「キャラは既存の _char.png」なのに、ドライブにこのカットのキャラ画像が無い（074 本人「キャラ画像がありません」と同じミス）。今の _still.png は人の写った実写で背景に使えないので、固定キャラの絵柄のキャラと人のいない背景で作る。 今の ASSET-125_still.png は実写のクマと人が同じ画面にいるので使わない（実写のクマとキャラを組み合わせない）。
+- ハンターセリフ「空からも／見つからない、、」
+- 編集者指示: 背景は新規の ASSET-125_bg.png。ハンター（ASSET-125_char.png）を左に置き、クマ（ASSET-125_bear.png）を右下に置いて右へゆっくり歩かせ画面の外へ出す（動画は作らない）。左上に「空でも見つからず」を白字で置き、「見つからず」だけ赤字。今の ASSET-125_still.png は使わない。
 
-## ASSET-126（キャラアニメーション）
+## ASSET-126（Lovart動画）
 
 - ナレーション: 昨年の事件といい、このクマはかなり厄介な相手だと言えます。
-- 場面: 残雪の林の奥へ消えていくヒグマを見送り、悔しさに歯を食いしばるハンター（CHAR-05）。台本どおり残雪を描く。
-- 背景は既存の ASSET-126_still.png（残雪の林の奥へ歩くヒグマ・人物なし）をそのまま使う。新しく作るのはキャラだけ。
-- ハンターセリフ「厄介な／相手だ、、」
-- 編集者指示: 背景は既存の ASSET-126_still.png、キャラは新規の ASSET-126_char.png。ハンターを左下に置き、握った拳を小さく震わせる。背景はクマへゆっくり寄る。中央に「厄介な相手」を白字で表示し、「厄介」だけ赤字。
+- 場面: 残雪の林の奥へ悠々と歩いて消えていくヒグマ（実写・ドライブにある ASSET-126_still.png を元にした動画）。※2026-09-26 本人「ここは動画にして。…ドライブの画像を動画にして」。キャラは使わない。
+- 編集者指示: 動画をナレーションの尺に合わせて使う（旧 ASSET-126_char.png は使わない）。中央に「厄介な相手」を白字で表示し、「厄介」だけ赤字。
 
-## ASSET-127（再利用）
+## ASSET-127（キャラアニメーション）
 
 - ナレーション: 周辺の住民には引き続き警戒が呼びかけられました。
-- 場面: 集落の防災無線スピーカー（ASSET-035）。
-- アセット35の再利用。
-- 編集者指示: ASSET-035_still.png を再利用し、5秒で1.0→1.1倍へゆっくり寄る。左上に「警戒を続ける」を白字で置き、「警戒」だけ赤字。
+- 場面: 集落の掲示板の横で、町の職員（CHAR-06）が拡声器で警戒を呼びかけ、住民（CHAR-10）が不安そうに聞く。※2026-09-26 本人「ここは再利用ではなく、ちゃんと作って」。
+- 背景は既存の ASSET-051_bg.png（掲示板の横の空き地・雪なし・人物なし）を再利用する。新しく作るのはキャラだけ。
+- 職員セリフ「クマに／警戒してください！」
+- 編集者指示: 背景は ASSET-051_bg.png を再利用、キャラは新規の ASSET-127_char.png。2人を中央に置き、職員の拡声器を持つ腕を小さく動かす（動画は作らない）。左上に「警戒を続ける」を白字で置き、「警戒」だけ赤字。
 
 ## ASSET-128（キャラアニメーション）
 
@@ -997,7 +933,7 @@
 ## ASSET-130（キャラアニメーション）
 
 - ナレーション: しかし、その後も全力で捜索しましたが、見つけることはできませんでした。
-- 場面: 夕暮れの山道を、泥だらけで首にタオルを掛けて戻るハンター（CHAR-05）。落胆した顔。
+- 場面: 夕暮れの山の奥の山道を、泥だらけで首にタオルを掛けて戻るハンター（CHAR-05）。落胆した顔。※2026-09-26 本人「ここは山の中にして」（背景）。
 - ハンターセリフ「どこへ／消えたのか、、」
 - 編集者指示: 背景・キャラとも新規。ハンターを右から中央へゆっくり歩かせて止める。中央に「全力でも空振り」を白字で表示し、「空振り」だけ赤字。
 
@@ -1005,15 +941,15 @@
 
 - ナレーション: 5月19日午前11時ごろ（事件から1ヶ月以上経過）
 - 場面: 黒背景に「5月19日」の短い文字を表示。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 疲れた捜索隊が山から戻る。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 - 編集者指示: 黒背景の中央に「5月19日」を白字で表示。1秒でフェードイン、次カットへ。
 
 ## ASSET-132（キャラアニメーション）
 
 - ナレーション: なんと二つ目の事件があった太田の山で、町職員が箱わなにかかっているクマを見つけました。
-- 場面: 5月の太田の山で、箱わなにかかったヒグマを見つけて驚く町の職員（CHAR-06）。後ろ姿ではなく顔を見せる。
+- 場面: 5月の太田の山で、箱わなにかかったヒグマを見つけて驚く町の職員（CHAR-06）。※2026-09-26 本人の裁定「実写のクマとキャラ画像を組み合わせない」（159・162）に合わせ、実写のクマ入りの背景をやめる。箱わなとクマはキャラと同じ絵柄の1枚（ASSET-132_bear.png）にし、背景は箱わなもクマもいない5月の山にする。このクマは加害グマ（CHAR-11）とは別の個体なので、毛色を明るくして見分けがつくようにする。キャラは今の ASSET-132_char.png をそのまま使う。
+- キャラは今の ASSET-132_char.png（指さして驚く職員）をそのまま使う。新しく作るのは背景と、箱わなとクマの1枚。
 - 職員セリフ「クマが／かかってる！」
-- 編集者指示: 背景・キャラとも新規。職員を左に置き、指さす腕を小さく動かす。背景は箱わなへゆっくり寄る。クマの唸り声のSE。中央に「箱わなにクマ！」を白字で表示し、「クマ」だけ赤字。
+- 編集者指示: 背景は新規の ASSET-132_bg.png（箱わなもクマもいない山。142も使う）。右の空き地に箱わなとクマ（ASSET-132_bear.png）を置き、職員（ASSET-132_char.png）を左に置いて指さす腕を小さく動かす（動画は作らない）。クマの唸り声のSE。中央に「箱わなにクマ！」を白字で表示し、「クマ」だけ赤字。前の ASSET-132_bg.png（実写のクマ入りの箱わな）は使わない。
 
 ## ASSET-133（Lovart静止画 + 編集者）
 
@@ -1031,18 +967,16 @@
 ## ASSET-135（キャラアニメーション）
 
 - ナレーション: すかさずハンターが、クマを駆除し、
-- 場面: 箱わなのクマに向けて、ハンター（CHAR-05）が銃を撃つ（東成瀬村138と同じく発砲の閃光まで描く。クマの傷や血は描かない）。
-- 背景は 132 の新規背景 ASSET-132_bg.png（箱わなのクマ・5月・人物なし）を再利用。新しく作るのはキャラだけ。
-- ハンターセリフ「ここで／駆除する」
-- 編集者指示: 背景は ASSET-132_bg.png を1.0→1.15倍に寄せて使う、キャラは新規の ASSET-135_char.png。ハンターを左に置き、銃口を右の箱わなへ向ける。銃声SE1発と同時に画面を一瞬白くフラッシュさせ、0.5秒の暗転で次のカットへつなぐ（クマの傷や血は描かない）。中央に「すぐに駆除」を白字で表示し、「駆除」だけ赤字。
+- 場面: 駆除の直後。箱わなのそばの地面にヒグマ（CHAR-11）が倒れ、ハンター（CHAR-05）が銃を下ろして立つ。クマとハンターは別々の画像にし、背景も新しく作る（136でも再利用する）。※2026-09-26 本人「駆除した後のキャラ画像にしてもらい、クマとハンターそれぞれ生成。アセット136にも使える画像にして」「背景も生成して」。
+- ハンターセリフ「これで／終わりか、、」
+- 編集者指示: 背景・キャラとも新規。背景 ASSET-135_bg.png の中央下にクマ（ASSET-135_bear.png）を置き、ハンター（ASSET-135_char.png）を左に置く（動画は作らない）。直前に銃声SE1発と一瞬の白いフラッシュ（血や傷は描かない）。中央に「すぐに駆除」を白字で表示し、「駆除」だけ赤字。
 
-## ASSET-136（キャラアニメーション）
+## ASSET-136（再利用）
 
 - ナレーション: 女性を襲ったクマなのかを確かめるため、肉片を研究所へ送ります。
-- 場面: 研究所の検査台の前で、届いた試料の保冷箱を受け取り、確かめようと意気込む研究者（CHAR-07）。
-- 背景は既存の ASSET-136_still.png（検査台の密封試料と発泡容器・人物なし）をそのまま使う。新しく作るのはキャラだけ。
-- 研究者セリフ「すぐに／調べます」
-- 編集者指示: 背景は既存の ASSET-136_still.png、キャラは新規の ASSET-136_char.png。研究者を右から中央へスライドさせて止める。中央に「研究所へ送る」を白字で表示し、「研究所」だけ赤字。
+- 場面: 135 と同じ駆除直後の場面（クマ・ハンター・背景）を再利用し、文字で「研究所へ送る」と示す。※2026-09-26 本人「アセット136にも使える画像にして」。
+- アセット135の再利用（ASSET-135_bg.png・ASSET-135_char.png・ASSET-135_bear.png）。
+- 編集者指示: 135 の3素材を同じ配置で使い、画面をゆっくりクマへ寄せる（旧 ASSET-136_char.png は使わない）。中央に「肉片を研究所へ」を白字で表示し、「研究所」だけ赤字。
 
 ## ASSET-137（Google Earth）
 
@@ -1071,13 +1005,11 @@
 - アセット133の再利用。
 - 編集者指示: ASSET-133_still.png を再利用し、クマの頭部へ1.25→1.4倍にゆっくり寄る。中央に「探していたクマ！？」を白字で表示し、「探していた」だけ赤字。
 
-## ASSET-140（キャラアニメーション）
+## ASSET-140（テキスト）
 
 - ナレーション: しかし、そう上手くはいきませんでした、、
-- 場面: 窓辺の机で鑑定結果の封筒を開け、中身を見て愕然とする研究者（CHAR-07）。
-- 背景は既存の ASSET-140_still.png（窓辺の机の封筒1通・人物なし）をそのまま使う。新しく作るのはキャラだけ。
-- 研究者セリフ「そんな、、」
-- 編集者指示: 背景は既存の ASSET-140_still.png、キャラは新規の ASSET-140_char.png。研究者を中央に置き、紙を持つ手を小さく震わせる（動画は作らない）。中央に「しかし、、」を白字で表示し、「しかし」だけ赤字。
+- 場面: 黒い画面に文字だけ。※2026-09-26 本人「ここはテキストのみでいいです」。
+- 編集者指示: 画像・動画は使わない（旧 ASSET-140_char.png は使わない）。黒い画面の中央に「しかし、そう上手くはいきませんでした、、」を白字で表示し、「上手くはいきませんでした」だけ赤字。
 
 ## ASSET-141（Lovart静止画）
 
@@ -1088,9 +1020,10 @@
 ## ASSET-142（キャラアニメーション）
 
 - ナレーション: 残念ながら箱わなにかかっていたのは、別のクマだったのです。
-- 場面: 役場の机で、箱わなにかかったクマの写真を前に「別のクマだった」と肩を落とす町の職員（CHAR-06）。箱わなのクマは132の画像を編集で大きく重ねて見せる。窓の外は5月の緑で、雪は描かない。
+- 場面: 132と同じ山の箱わなの前で、「別のクマだった」と肩を落とす町の職員（CHAR-06）。※2026-09-26 本人「ここはアセット132の再利用ですね」。泣き顔にしない（台本に泣く記述がない。019・168 本人「泣いてる顔ではなく」「なんで泣いてる画像なの？」）。
+- 背景は132の新しい背景（ASSET-132_bg.png＝5月の山）と、箱わなとクマの1枚（ASSET-132_bear.png）を再利用する。新しく作るのはキャラだけ。
 - 職員セリフ「別の／クマだった、、」
-- 編集者指示: 背景・キャラとも新規。職員を右寄りに置き、ゆっくり肩を落とすように小さく下げる。画面左半分に132の画像（箱わなにかかったクマ）を白い枠つきで大きめに重ね、その上に「別のクマ」を白字で置く。中央に「別のクマだった、、」を白字で表示し、「別のクマ」だけ赤字。
+- 編集者指示: 背景は ASSET-132_bg.png、箱わなとクマは ASSET-132_bear.png を132と同じ位置に置く。キャラは新規の ASSET-142_char.png（涙なし）を左に置き、ゆっくり肩を落とすように小さく下げる（動画は作らない）。中央に「別のクマだった、、」を白字で表示し、「別のクマ」だけ赤字。旧 ASSET-142_still.png と前の ASSET-142_char.png（涙あり）は使わない。
 
 ## ASSET-143（キャラアニメーション）
 
@@ -1100,18 +1033,17 @@
 - 住民セリフ「まだ／どこかにいる、、」
 - 編集者指示: 背景は既存の ASSET-143_bg.png、キャラは新規の ASSET-143_char.png。3人を左下に置き、小刻みに震わせる。背景は奥の山へゆっくり寄る。中央に「今もどこかに、、」を白字で表示し、「どこかに」だけ赤字。
 
-## ASSET-144（キャラアニメーション）
+## ASSET-144（Lovart動画）
 
 - ナレーション: そして、事件から8か月余りが過ぎた、2014年12月18日。
-- 場面: 雪の積もった12月のせたな町の役場前を、町長が歩いて入っていく。
-- キャラは ASSET-148_char.png を再利用。
-- 編集者指示: 背景は新規、キャラは ASSET-148_char.png を再利用。町長を左から役場の入口へ歩くように移動させる。中央に「2014年12月18日」を白字で表示し、下に小さく「事件から8か月、、」。「8か月」だけ赤字。
+- 場面: 雪の積もった12月のせたな町の役場前（人物なし・背景だけ）。※2026-09-26 本人「なんで謝ってる表情にするの？いらないでしょ。背景のみでいいです」。ナレーションが26字以上のため、静止画を元に雪が静かに降る程度の動画も作る（編集は静止画・動画のどちらでもよい）。
+- 編集者指示: 静止画（ASSET-144_still.png）か動画（ASSET-144_video.mp4）を使う（キャラは使わない）。中央に「2014年12月18日」を白字で表示し、下に小さく「事件から8か月、、」。「8か月」だけ赤字。
 
-## ASSET-145（Lovart静止画）
+## ASSET-145（Lovart動画）
 
 - ナレーション: せたな町の会議で、クマへの対応が取り上げられます。
-- 場面: 12月、冬の町の会議室。町の議員・職員が机を囲み、机にクマの写真と山の地図。窓の外は積雪の雪景色。参加者は後ろ姿と斜め後ろ姿で、顔は見せない。
-- 編集者指示: 静止画は新規。5秒で1.0→1.12倍に机の写真へゆっくり寄る。中央に「町の会議で議題に」を白字で表示し、「会議」だけ赤字。
+- 場面: 12月、冬の町の会議室（動画）。※2026-09-26 本人「ここは動画にして」。町の議員・職員が机を囲み、机にクマの写真と山の地図。窓の外は積雪の雪景色。参加者は後ろ姿と斜め後ろ姿で、顔は見せない。
+- 編集者指示: 動画 ASSET-145_video.mp4 をナレーションの尺に合わせて使う。静止画は新規。5秒で1.0→1.12倍に机の写真へゆっくり寄る。中央に「町の会議で議題に」を白字で表示し、「会議」だけ赤字。
 
 ## ASSET-146（Lovart動画）
 
@@ -1129,7 +1061,7 @@
 ## ASSET-148（キャラアニメーション）
 
 - ナレーション: しかし、問題となったクマの捕獲の報告はいまだにできておらず、町長は「今なお、事件を起こしたクマの捕獲には至っておりません」と伝えるしかありませんでした。
-- 場面: 12月、冬の町議会の演台で、捕獲に至っていないと苦しそうに報告する町長（CHAR-08）。窓の外は積雪。
+- 場面: 12月、冬の町議会の演台で、捕獲に至っていないと報告する、困った顔の町長（CHAR-08）。※2026-09-26 本人「キャラ画像で困った顔にして。なんで背景だけしかないの？ちゃんと生成して」。窓の外は積雪。
 - 町長セリフ「捕獲には／至っておりません」
 - 編集者指示: 背景・キャラとも新規。町長を演台の左に置き、頭を下げるように小さく上下させる。中央に「捕獲に至らず、、」を白字で表示し、「至らず」だけ赤字。
 
@@ -1140,61 +1072,52 @@
 - 職員セリフ「山に／入らないでください！」
 - 編集者指示: 背景・キャラとも新規（動画は作らない。今の ASSET-149 の動画は使わない）。職員を左に置き、突き出した手のひらを小さく前後に動かす。背景に白い雪の粒を編集で降らせる。掲示板の上に「入山注意」を編集で載せる。中央上に「山に入らないで」を白字で表示し、「入らないで」だけ赤字。
 
-## ASSET-150（再利用）
+## ASSET-150（キャラアニメーション）
 
 - ナレーション: しかし、町長は決してクマの捕獲を諦めていませんでした。
-- 場面: 会議室で話す町長（ASSET-148）。
-- アセット148の再利用。
-- 編集者指示: ASSET-148 の背景とキャラをそのまま再利用し、町長へ1.0→1.15倍にゆっくり寄る。中央に「決して諦めない」を白字で表示し、「諦めない」だけ赤字。
+- 場面: 町議会の演台の前で、捕獲を諦めない決意の顔で拳を握る町長（CHAR-08）。※2026-09-26 本人「ここは諦めていない顔のキャラ画像にして」。
+- 背景は既存の ASSET-148_still.png（町議会の演台・雪の窓・人物なし）を再利用する。新しく作るのはキャラだけ。
+- 町長セリフ「捕獲は／諦めません」
+- 編集者指示: 背景は ASSET-148_still.png を再利用、キャラは新規の ASSET-150_char.png。町長を中央に置き、握った拳を小さく上下させる（動画は作らない）。中央に「諦めない」を白字で表示し、「諦めない」だけ赤字。
 
 ## ASSET-151（キャラアニメーション）
 
 - ナレーション: 冬の時期を過ぎた来年の2月下旬以降に再び大規模な捜索を考えていたのです。
-- 場面: 無記名の捜索計画書と冬山写真を机に並べる。
-- 隊員セリフ「2月下旬に／再開します」
-- 編集者指示: 冬の計画書の上に「2月下旬以降に再捜索を検討」と編集で表示。実施済みと誤認させない。
+- 場面: 冬の役場の机で、捜索計画書を手に「2月下旬以降に再び大規模な捜索を」と考える町の職員（CHAR-06）。163 もこの背景とキャラを再利用する。※2026-09-26 全カット点検で発見: 種類が「キャラアニメーション」なのにキャラ画像が無く、編集者指示は静止画の扱いのままだった（074 本人「キャラ画像がありません」と同じミス）。 今の ASSET-151_still.png は人の腕が写っているので背景に使わない。
+- 職員セリフ「2月下旬から／また捜そう」
+- 編集者指示: 背景は新規の ASSET-151_bg.png、キャラは新規の ASSET-151_char.png を中央に置き、指を立てた手を小さく動かす（動画は作らない）。冬の計画書の上に「2月下旬以降に再捜索を検討」と編集で表示（実施済みと誤認させない）。今の ASSET-151_still.png は使わない。163 も同じ背景とキャラを使う。
 
-## ASSET-152（キャラアニメーション）
+## ASSET-152（Lovart静止画）
 
 - ナレーション: 女性が襲われたのは、2年とも4月。
-- 場面: 2013年と2014年の4月のカレンダー。
-- 男性セリフ「2年とも／4月か、、」
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 無記名の捜索計画書と冬山写真を机に並べる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-151_char.pngを合成。文字は編集で付ける。
-- 編集者指示: 被写体の全景から必要な物証の部分拡大へ切り替える。中央に「2年とも4月」を白字で表示し、要点の一語だけ赤字。数値・判定は確認済みのナレーションから手入力する。
+- 場面: 2013年4月と2014年4月のカレンダーを並べた静止画（本人「文字がみにくいので、見えるようにして。カレンダーの」）。年と月の文字を大きく読めるように入れる。
+- 編集者指示: 静止画を5秒で1.0→1.08倍にゆっくり寄せる。カレンダーの見出しに「2013年4月」「2014年4月」が入っているので、画面下に「2年とも4月」を白字で置き、「4月」だけ赤字。旧 ASSET-152_still.png と ASSET-152_char.png は使わない。
 
 ## ASSET-153（キャラアニメーション）
 
 - ナレーション: なんとしても、それまでにクマの捕獲をして、被害者を増やさないように動きます。
-- 場面: 春に向けた捜索装備を準備する。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 2013年と2014年の4月のカレンダー。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-152_char.pngを合成。文字は編集で付ける。
-- セリフ「・・・」
-- 編集者指示: 準備する手をバッグへ動かして止める。中央に「春までに捕獲」を白字で重ね、要点の一語だけ赤字。
+- 場面: 会議室で、4月までに必ずクマを捕まえると決意する町長（CHAR-08）。※2026-09-26 本人「登場人物がだれかさっぱりわかりません。市長と会議室か、山の背景にハンターでは？」→町長と会議室にする。
+- 背景は既存の ASSET-047_bg.png（町役場の会議室。旧 ASSET-050_bg.png）を再利用する。新しく作るのはキャラだけ。
+- 町長セリフ「4月までに／必ず捕まえる」
+- 編集者指示: 背景は ASSET-047_bg.png（旧 ASSET-050_bg.png）、キャラは新規の ASSET-153_char.png（旧い後ろ姿のキャラと ASSET-153_bg.png は使わない）。町長を中央に置き、握った拳を小さく上下させる（動画は作らない）。中央に「4月までに捕獲を」を白字で表示し、「捕獲」だけ赤字。
 
 ## ASSET-154（テキストのみ）
 
 - ナレーション: 2015年3月
 - 場面: 黒背景に「2015年3月」の短い文字を表示。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 春に向けた捜索装備を準備する。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 - 編集者指示: 黒背景の中央に「2015年3月」を白字で表示。1秒でフェードイン、次カットへ。
 
-## ASSET-155（キャラアニメーション）
+## ASSET-155（Lovart動画）
 
 - ナレーション: 町は、女性たちを襲ったクマを捜すため、大規模な捜索の準備がはじまりました。
-- 場面: 大規模捜索計画を机に広げる。
-- セリフ「・・・」
-- 編集者指示: 資料を画面中央へ動かし、該当箇所を指す。中央に「大規模捜索へ」を白字で重ね、要点の一語だけ赤字。
+- 場面: 2015年3月、残雪の残る役場の駐車場で、ハンターと町の職員が大規模捜索の装備をワゴン車に積み込む（実写・後ろ姿や横向きで顔は見せない）。※2026-09-26 本人「ここは動画にして」「キャラ画像ではなく」。
+- 編集者指示: 動画（ASSET-155_video.mp4）をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。中央に「大規模捜索へ」を白字で表示し、「大規模」だけ赤字。旧 ASSET-155_bg.png と ASSET-155_char.png は使わない。
 
-## ASSET-156（キャラアニメーション）
+## ASSET-156（Lovart動画）
 
 - ナレーション: すでに2人を襲ったクマの捜索とはいえ、2年ほど前に起きた事件のクマを改めて探すというのは異例でした。
-- 場面: 2年前の事件資料を開き直す。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 大規模捜索計画を机に広げる。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- セリフ「・・・」
-- 編集者指示: 資料を画面中央へ動かし、該当箇所を指す。中央に「2年越しの捜索」を白字で重ね、要点の一語だけ赤字。
+- 場面: 2年前の事件資料が開かれた役場の机（人物なし・背景だけ）。※2026-09-26 本人「ここはキャラは不要です」。ナレーションが26字以上のため、既存の背景 ASSET-156_bg.png を元に動画を作る。
+- 編集者指示: 動画（ASSET-156_video.mp4）をナレーションの尺に合わせて使う（キャラは使わない。旧 ASSET-156_char.png は使わない）。中央に「2年越しの捜索」を白字で表示し、「2年越し」だけ赤字。
 
 ## ASSET-157（Lovart動画）
 
@@ -1210,13 +1133,12 @@
 - ハンターセリフ「足跡を／追うぞ」
 - 編集者指示: 背景は既存の ASSET-158_still.png、キャラは新規の ASSET-158_char.png。6人を左から中央へゆっくり歩かせて止める（動画は作らない）。中央に「5、6人で追跡」を白字で表示し、「追跡」だけ赤字。
 
-## ASSET-159（キャラアニメーション）
+## ASSET-159（Lovart静止画）
 
 - ナレーション: もしクマを見つけた場合は、その場で駆除。
-- 場面: 木立の奥の遠いヒグマを双眼鏡で見つけ、身構えるハンター（CHAR-05）。
-- 背景は既存の ASSET-159_bg.png（木立の奥に遠く見えるヒグマ・人物なし）をそのまま使う。新しく作るのはキャラだけ。
-- ハンターセリフ「見つけたら／ここで仕留める」
-- 編集者指示: 背景は既存の ASSET-159_bg.png、キャラは新規の ASSET-159_char.png。ハンターを左下に置き、動かさない。背景は奥のクマへゆっくり寄る。中央に「見つけたら駆除」を白字で表示し、「駆除」だけ赤字。
+- 場面: 木立の奥に遠く見えるヒグマ（実写・人物なし）。※2026-09-26 本人「ここは背景のみでいいです。というか、なんで実写のクマとキャラ画像を組み合わせてるの？ルール違反でしょ」→キャラを外し、既存の背景だけにする（20字以下なので静止画でよい）。
+- 静止画は既存の ASSET-159_bg.png（木立の奥に遠く見えるヒグマ・人物なし）をそのまま使う。新しく作るものはない。
+- 編集者指示: ASSET-159_bg.png を5秒で1.0→1.15倍に奥のクマへゆっくり寄せる（キャラは使わない。ASSET-159_char.png は使わない）。中央に「見つけたら駆除」を白字で表示し、「駆除」だけ赤字。
 
 ## ASSET-160（Lovart動画）
 
@@ -1228,16 +1150,18 @@
 ## ASSET-161（キャラアニメーション）
 
 - ナレーション: 手がかりになる特徴は、足跡から判明したオスのクマで前足の幅が14センチということ。
-- 場面: 泥に残る前足の跡の横で、折り尺を広げて幅を示すハンター（CHAR-05）。
+- 場面: 山道の泥に残る前足の跡と、その横で折り尺を広げて幅を示すハンター（CHAR-05）。※2026-09-26 本人「背景が地面から近くておかしいです」→背景を立った人の目の高さから山道の奥まで見通す構図に作り直す。キャラは今の ASSET-161_char.png をそのまま使う。
+- キャラは今の ASSET-161_char.png（折り尺を持つハンター）をそのまま使う。新しく作るのは背景だけ。
 - ハンターセリフ「前足の幅は／14センチだ」
-- 編集者指示: 背景・キャラとも新規（今の ASSET-161_still.png は雪があるので使わない）。ハンターを左に置き、折り尺を持つ腕を小さく左右に動かす（動画は作らない）。中央に「前足幅14cm」を白字で表示し、「14cm」だけ赤字。
+- 編集者指示: 背景は新規の ASSET-161_still.png（162も同じ背景を使う）、キャラは ASSET-161_char.png。ハンターを左に置き、折り尺を持つ腕を小さく左右に動かす（動画は作らない）。中央に「前足幅14cm」を白字で表示し、「14cm」だけ赤字。背景は前と同じ ASSET-161_still.png の名前で作り直す（前の雪の画像と地面に近すぎる画像は使わない）。
 
 ## ASSET-162（キャラアニメーション）
 
 - ナレーション: そして、鼻には男性がつけたナタの傷が残っている可能性が高いと考えられていました。
-- 場面: 林縁でこちらをにらむヒグマの鼻すじに、ナタでついたとみられる古い傷あと。その手前で自分の鼻を指さして「鼻の傷」を伝えるハンター（CHAR-05）。傷あとは治った白っぽい線で、血は描かない。
+- 場面: 自分の鼻を指さして「鼻の傷」を伝えるハンター（CHAR-05）。※2026-09-26 本人「ここもなんで背景に実写のクマがいるの？修正後のアセット161の背景と同じにして」→背景を161の新しい背景に変え、実写のクマは出さない。キャラは今の ASSET-162_char.png をそのまま使う。
+- 背景は161の新しい背景（ASSET-161_still.png＝前足の跡が残る山道）を再利用。キャラは今の ASSET-162_char.png。新しく作るものはない。
 - ハンターセリフ「鼻に／ナタの傷があるはずだ」
-- 編集者指示: 背景・キャラとも新規（今の ASSET-162_still.png は手前に雪があるので使わない）。ハンターを左に置き、奥のクマの鼻の傷あとへゆっくり寄り、傷あとを白い丸で1回囲む（動画は作らない）。中央に「鼻にナタの傷？」を白字で表示し、「ナタの傷」だけ赤字。
+- 編集者指示: 背景は ASSET-161_still.png、キャラは ASSET-162_char.png。ハンターを左に置き、鼻を指す手を小さく動かす（動画は作らない）。中央に「鼻にナタの傷？」を白字で表示し、「ナタの傷」だけ赤字。旧 ASSET-162_bg.png と ASSET-162_still.png（実写のクマ）は使わない。
 
 ## ASSET-163（再利用）
 
@@ -1249,9 +1173,10 @@
 ## ASSET-164（キャラアニメーション）
 
 - ナレーション: ちょうどお金目当てでやってくる山菜採りの方々が増える時期と重なります。
-- 場面: 春に増える山菜採りの人々。
-- セリフ「・・・」
-- 編集者指示: カゴを持つ手を少し下げ、山道の奥へ進ませる。中央に「山菜採りの季節」を白字で重ね、要点の一語だけ赤字。
+- 場面: 春の山道にやって来る、中高年の山菜採りの人たち。※2026-09-26 本人「だからなんで若い人を生成するの？場面と全然あってないでしょ」→60〜70代を中心にした3人を固定キャラの絵柄で作り直す。
+- 背景は既存の ASSET-164_bg.png（ササとギョウジャニンニクの春の山道・人物なし）をそのまま使う。新しく作るのはキャラだけ。
+- 山菜採りセリフ「今年も／たくさん採るぞ」
+- 編集者指示: 背景は ASSET-164_bg.png、キャラは新規の ASSET-164_char.png（旧い若い人のキャラは使わない）。3人を右から中央へゆっくり歩かせて止める（動画は作らない）。中央に「山菜採りの季節」を白字で表示し、「山菜採り」だけ赤字。
 
 ## ASSET-165（キャラアニメーション）
 
@@ -1261,12 +1186,11 @@
 - 職員セリフ「山へ入るのを／控えて！」
 - 編集者指示: 背景は ASSET-149_bg.png を再利用、キャラは新規。職員を右から中央へスライドさせて止める。拡声器の声のSE。左上に「入山を控えて」を白字で置き、「控えて」だけ赤字。
 
-## ASSET-166（キャラアニメーション）
+## ASSET-166（Lovart動画）
 
 - ナレーション: それでも4月になると山の道沿いには、副収入目当てでギョウジャニンニクを採りに来た人たちの車が目立っていたといいます。
-- 場面: 山道脇に並ぶ山菜採りの車。
-- 女性セリフ「山菜の／季節ね」
-- 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 左上に「山道に車が並ぶ」を白字で置き、要点の一語だけ赤字。
+- 場面: 山道沿いに並ぶ山菜採りの車（実写・人物は後ろ姿で顔は見せない）。※2026-09-26 本人「ASSET-166_char.pngは不要。というか、なんでまた作画が違うキャラを出すの？」→キャラを外す。ナレーションが26字以上のため動画にする。今の ASSET-166_still.png は4月なのに道ばたに雪が残っているので、雪なしで静止画から作り直す。
+- 編集者指示: 動画（ASSET-166_video.mp4）をナレーションの尺に合わせて使う（キャラは使わない）。左上に「山道に車が並ぶ」を白字で置き、「車」だけ赤字。旧 ASSET-166_still.png（道ばたに雪）と ASSET-166_char.png は使わない。
 
 ## ASSET-167（キャラアニメーション）
 
@@ -1278,9 +1202,10 @@
 ## ASSET-168（キャラアニメーション）
 
 - ナレーション: 地域で暮らす元漁師、岡部秀隆（ひでたか）さん（86歳）も、「人が減り、年寄りばかりになって奥の畑まで手入れができなくなった。荒れた場所に山菜が生え、クマが来やすくなったのかもしれない」と、近年のクマ被害について話していたとのこと。
-- 場面: 荒れた畑と山林の境で、クマが来やすくなったと寂しそうに語る86歳の元漁師（固定人物ではなく、このカットだけの人物）。
+- 場面: 荒れた畑と山林の境で、クマが来やすくなったと困った顔で語る86歳の元漁師（固定人物ではなく、このカットだけの人物）。※2026-09-26 本人「なんで泣いてる画像なの？困った顔にして」→涙をなくし、困った顔にする。
+- 背景は Fix5c で作った ASSET-168_bg.png（荒れた畑）をそのまま使う。新しく作るのはキャラだけ。
 - 男性セリフ「年寄りばかりで／畑も荒れた、、」
-- 編集者指示: 背景・キャラとも新規（今の ASSET-168_still.png は雪があり、キャラは別人なので使わない）。元漁師を右に置き、うつむくように小さく上下させる（動画は作らない）。左上に「岡部秀隆さん（86歳）」を白字で置き、中央に「荒れた畑に山菜」。「荒れた」だけ赤字。
+- 編集者指示: 背景は ASSET-168_bg.png、キャラは新規の ASSET-168_char.png（涙のない困った顔）。元漁師を右に置き、うつむくように小さく上下させる（動画は作らない）。左上に「岡部秀隆さん（86歳）」を白字で置き、中央に「荒れた畑に山菜」。「荒れた」だけ赤字。
 
 ## ASSET-169（Lovart動画）
 
@@ -1299,9 +1224,6 @@
 
 - ナレーション: 4月5日。
 - 場面: 黒背景に「4月5日」の短い文字を表示。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult local resident in a plain outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 町の家々が裏山を警戒する。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-170_char.pngを合成。文字は編集で付ける。
 - 編集者指示: 黒背景の中央に「4月5日」を白字で表示。1秒でフェードイン、次カットへ。
 
 ## ASSET-172（Google Earth）
@@ -1321,9 +1243,6 @@
 
 - ナレーション: 範囲は、南北20キロ、東西12キロ。
 - 場面: せたな町から今金町にかけての広域地形を見せる。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 北檜山と大成の間に続く山林。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-172_char.pngを合成。文字は編集で付ける。
 - 座標（地区代表点・事故地点ではない）: 新成 42.332954, 139.794357／太田 42.280846, 139.802475／金原 42.372704, 139.970032。
 - カメラ: 中心 42.329000, 139.855000。高度 約38,000m、俯角40°、北を上（方位0°）、3D地形ON。
 - 地形標高の参考値（代表点のみ）: 新成 約280m／太田 約223m／金原 約95m。
@@ -1381,9 +1300,10 @@
 ## ASSET-181（キャラアニメーション）
 
 - ナレーション: クマの捜索と並行して、せたな町は別の方法でもクマを探し始めていました。
-- 場面: 地図と試料のある研究室の机の前で、クマを探す「別の方法」を提案する研究者（CHAR-07）。
-- 研究者セリフ「別の方法で／探しましょう」
-- 編集者指示: 背景・キャラとも新規。新しい背景は ASSET-181_bg.png として保存する（184・210と、Regen の100が再利用する。今の ASSET-181_still.png は窓の外が雪景色なので使わない）。研究者を右から中央へスライドさせ、指を立てたところで止める（動画は作らない）。中央に「別の方法でも捜索」を白字で表示し、「別の方法」だけ赤字。
+- 場面: 役場の机で、捜索と並行してクマを探す「別の方法」（町外で捕獲されたクマのDNA鑑定）を提案する町の職員（CHAR-06）。※2026-09-26 本人「ここは専門家だとおかしでしょ。専門家は引き受ける側なので。男性職員などに変更して。背景も」→研究者をやめて町の職員にし、背景も研究室から役場の机に変える。
+- 背景は167で作った役場の机（ASSET-167_still.png＝クマの写真と地図が置かれた窓ぎわの机・人物なし）を再利用。新しく作るのはキャラだけ。
+- 職員セリフ「別の方法で／探しましょう」
+- 編集者指示: 背景は ASSET-167_still.png、キャラは新規の ASSET-181_char.png（町の職員。研究者の旧 ASSET-181_char.png は使わない）。職員を右から中央へスライドさせ、指を立てたところで止める（動画は作らない）。中央に「別の方法でも捜索」を白字で表示し、「別の方法」だけ赤字。研究室の ASSET-100_bg.png は184・210で使い、181では使わない。
 
 ## ASSET-182（キャラアニメーション）
 
@@ -1396,7 +1316,6 @@
 
 - ナレーション: もしかしたら、探してるクマが町の外で捕獲されてる可能性もあるかもしれないという仮説からの調査でした。
 - 場面: せたな町と今金町を含む広域地形を見せる。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult research worker in a pale gray laboratory coat, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 町外の試料を受け取る専門家の手。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
 - 座標（地区代表点・事故地点ではない）: 太田 42.280846, 139.802475／今金町金原 42.372704, 139.970032。
 - カメラ: 中心 42.327000, 139.886000。高度 約38,000m、俯角40°、北を上（方位0°）、3D地形ON。
 - 地形標高の参考値（代表点のみ）: 太田 約223m／金原 約95m。
@@ -1406,9 +1325,9 @@
 
 - ナレーション: 対象はせたな町と近隣の町で、前年に駆除された20頭。
 - 場面: 研究室で、20頭分の試料管のラックを抱えて目を見張る研究者（CHAR-07）。
-- 背景は181の新しい背景（ASSET-181_bg.png）を再利用。
+- 背景は181の新しい背景（ASSET-100_bg.png）を再利用。
 - 研究者セリフ「20頭分を／調べます」
-- 編集者指示: 背景は ASSET-181_bg.png を再利用し、右の試料管ラックへ1.0→1.3倍に寄せて181と画を変える（今の ASSET-184_still.png は窓の外が夏の緑なので使わない）。キャラは新規の ASSET-184_char.png を左に置く（動画は作らない）。中央に「駆除された20頭」を白字で表示し、「20頭」だけ赤字。
+- 編集者指示: 背景は ASSET-100_bg.png を再利用し、右の試料管ラックへ1.0→1.3倍に寄せて181と画を変える（今の ASSET-184_still.png は窓の外が夏の緑なので使わない）。キャラは新規の ASSET-184_char.png を左に置く（動画は作らない）。中央に「駆除された20頭」を白字で表示し、「20頭」だけ赤字。
 
 ## ASSET-185（キャラアニメーション）
 
@@ -1461,15 +1380,16 @@
 ## ASSET-191（キャラアニメーション）
 
 - ナレーション: 設置されていた箱わなにかかり、ハンターによって駆除されたとのこと。
-- 場面: 夏のビート畑脇で、扉の閉じた箱わなにかかったヒグマ（体長2m・230kg）の横に、険しい顔で立つハンター（CHAR-05）。背景は、クマの入った箱わなで新しく作る。
+- 場面: 夏のビート畑脇で、駆除されて倒れたヒグマ（CHAR-11）のそばに、険しい顔で立つハンター（CHAR-05）。※2026-09-26 本人「ここは駆除された後なのでクマは倒れた状態にして」→クマは135の倒れたクマの絵（ASSET-135_bear.png）を再利用し、実写のクマは背景に入れない（実写のクマとキャラを組み合わせない）。背景は扉の開いた空の箱わなで作り直す。キャラは今の ASSET-191_char.png をそのまま使う。
+- クマは135で作る ASSET-135_bear.png（倒れたクマ・CHAR-11）を再利用。キャラは今の ASSET-191_char.png。新しく作るのは背景だけ。
 - ハンターセリフ「わなに／かかったか」
-- 編集者指示: 背景は新規（クマの入った箱わな。今の ASSET-191_still.png は空の箱わななので上書きする）、キャラは新規の ASSET-191_char.png を左に置く。ASSET-191_video.mp4 は使わない（動画は作らない）。中央に「箱わなで捕獲・駆除」を白字で表示し、「駆除」だけ赤字。
+- 編集者指示: 背景は新規の ASSET-191_still.png（扉の開いた空の箱わな）。箱わなの手前の地面に倒れたクマ（ASSET-135_bear.png）を置き、ハンター（ASSET-191_char.png）を左に置く（動画は作らない）。直前に銃声SE1発と一瞬の白いフラッシュ（血や傷は描かない）。中央に「箱わなで捕獲・駆除」を白字で表示し、「駆除」だけ赤字。背景は前と同じ ASSET-191_still.png の名前で作り直す（前の実写のクマ入りの箱わなは使わない）。ASSET-191_video.mp4 は使わない。
 
 ## ASSET-192（Lovart静止画）
 
 - ナレーション: 体長2メートル、体重230キロ。推定7歳のオスでした。
-- 場面: 捕獲された成獣オスのヒグマの全身（実写）。数値はテロップ。
-- 編集者指示: 5秒で1.0→1.1倍にゆっくり寄る。上部に「体長2m」「体重230kg」「推定7歳のオス」を左から1つずつ表示し、数字だけ赤字。
+- 場面: 駆除された成獣オスのヒグマが、ビート畑脇の箱わなの前で横たわる全身（実写）。数値はテロップ。※2026-09-26 本人「ここも既に駆除された状態なので横たわってる感じにして」→わなの中で吠える姿をやめ、横向きに横たわる姿にする。血や傷は描かない。
+- 編集者指示: 5秒で1.0→1.1倍にゆっくり寄る。上部に「体長2m」「体重230kg」「推定7歳のオス」を左から1つずつ表示し、数字だけ赤字。旧 ASSET-192_still.png（わなの中で吠えるクマ）は使わない。
 
 ## ASSET-193（Google Earth）
 
@@ -1483,8 +1403,9 @@
 ## ASSET-194（キャラアニメーション）
 
 - ナレーション: 春に起きた2件の事故現場は、どちらも日本海側のせたな町。
-- 場面: 日本海側のせたな町の山地。
-- 編集者指示: 被写体の全景から必要な物証の部分拡大へ切り替える。中央に「海側の現場」を白字で表示し、要点の一語だけ赤字。数値・判定は確認済みのナレーションから手入力する。
+- 場面: 日本海を見下ろすせたな町の山の上で、海の方を指さして「2件とも海側だ」と示すハンター（CHAR-05）。※2026-09-26 全カット点検で発見: 種類が「キャラアニメーション」なのにキャラ画像が無く、編集者指示は静止画の扱いのままだった（074 本人「キャラ画像がありません」と同じミス）。 前後の193・195が地図なので、地図を3回続けないようキャラと背景にする。今の ASSET-194_still.png（登山者の後ろ姿）は使わない。
+- ハンターセリフ「2件とも／海側の山だ」
+- 編集者指示: 背景は新規の ASSET-194_bg.png、キャラは新規の ASSET-194_char.png を右に置き、指さす腕を小さく動かす（動画は作らない）。中央に「どちらも日本海側」を白字で表示し、「日本海側」だけ赤字。今の ASSET-194_still.png は使わない。
 
 ## ASSET-195（Google Earth）
 
@@ -1513,14 +1434,13 @@
 ## ASSET-198（Lovart動画）
 
 - ナレーション: せたな町は、正式に実施していたクマの捜索を打ち切りとなり、
-- 場面: 捜索の打ち切り。林道の入口で、オレンジのベストのハンターが装備の机からリュックを背負い、ロープを持って去っていく（実写・後ろ姿で顔は見せない）。196〜200のキャラの連続を切るため、ここは実写の動画にする。
-- 静止画は174で新しく作る ASSET-174_bg.png（林道入口と捜索装備の机・人物なし）を使い、動画だけ作る。
-- 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。中央に「捜索を打ち切り」を白字で表示し、「打ち切り」だけ赤字。今の ASSET-198_bg.png（林道に雪）と旧 ASSET-198_char.png は使わない。
+- 場面: 捜索の打ち切り。林道の奥から出てきたハンターたちが、入口に止めた白いワゴン車へ装備を積んで町へ帰っていく（実写・後ろ姿で顔は見せない）。※2026-09-26 本人「ここは山に向かっていく動画になってしまってます。帰る動画にして」→カメラを林道の中に置き、町の側（出口）へ向かって歩き去る向きに作り直す。
+- 編集者指示: 動画（ASSET-198_video.mp4）をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。中央に「捜索を打ち切り」を白字で表示し、「打ち切り」だけ赤字。前の ASSET-198_video.mp4（山へ向かう動画）と ASSET-198_bg.png・旧 ASSET-198_char.png は使わない。
 
 ## ASSET-199（キャラアニメーション）
 
 - ナレーション: 町長も「正直、今年も事故が起きるのではと不安だった。ほっとした」と語っています。
-- 場面: 町長室の窓辺の机の前で、汗を拭いて大きく安堵する町長（CHAR-08）。
+- 場面: 町長室の窓辺の机の前で、汗を拭いて大きく安堵する町長（CHAR-08）。※2026-09-26 泣き顔をやめる（台本に泣く記述がない。019・168 本人「泣いてる顔ではなく」「なんで泣いてる画像なの？困った顔にして」）。キャラだけ作り直し、背景は今のものを使う。
 - 背景は既存の ASSET-199_still.png（窓辺の机に湯呑み・眼鏡・ファイル・人物なし。遠くの山頂にだけ残雪、手前に雪なし）をそのまま使う。新しく作るのはキャラだけ。
 - 町長セリフ「正直、／ほっとした」
 - 編集者指示: 背景は既存の ASSET-199_still.png、キャラは新規の ASSET-199_char.png を左に置き、息をつくように小さく上下させる（動画は作らない）。左上に「せたな町長」を白字で置き、中央に「不安だった、、ほっとした」。「ほっとした」だけ赤字。
@@ -1528,7 +1448,8 @@
 ## ASSET-200（キャラアニメーション）
 
 - ナレーション: 住民も、裏山の畑に行くときまで警戒していたと話し、クマがすでに駆除されていたと知って安堵したとのことでした。
-- 場面: クマがすでに駆除されていたと知り、物置の前で爆竹とラジオを手に安堵の笑顔を見せる住民（CHAR-10＝169と同じ人）。
+- 場面: クマがすでに駆除されていたと知り、物置の前で爆竹とラジオを手に安堵の笑顔を見せる住民（CHAR-10＝169と同じ人）。※2026-09-26 泣き顔をやめる（台本に泣く記述がない。019・168 本人「泣いてる顔ではなく」「なんで泣いてる画像なの？困った顔にして」）。キャラだけ作り直し、背景は今のものを使う。
+- 背景は既存の ASSET-200_still.png をそのまま使う。新しく作るのはキャラだけ。
 - 男性セリフ「やっと／安心できる」
 - 編集者指示: 背景・キャラとも新規（今の ASSET-200_still.png は庭に雪があり、キャラは別人なので使わない）。住民を左に置き、ほっとして肩を落とすように小さく沈ませる（動画は作らない）。中央に「住民も安堵」を白字で表示し、「安堵」だけ赤字。
 
@@ -1572,9 +1493,10 @@
 ## ASSET-206（キャラアニメーション）
 
 - ナレーション: ちなみに、2件の事件の際に男性がクマにつけたとされるナタの傷は、すでにクマが駆除されたあとだったので、確認できていません。
-- 場面: ナタと試料容器を置き傷の真偽は描かない。
-- 高齢男性セリフ「傷は確かめ／られない」
-- 編集者指示: 被写体の全景から必要な物証の部分拡大へ切り替える。中央に「鼻の傷は未確認」を白字で表示し、要点の一語だけ赤字。数値・判定は確認済みのナレーションから手入力する。
+- 場面: クマが駆除されたビート畑の箱わなの前で、鼻のナタの傷を確かめられなかったと首をかしげるハンター（CHAR-05）。※2026-09-26 本人「ここは素材が変なのでもう一度違う感じで作り直して」→ナタと試料容器の実写をやめ、キャラで見せる。血や傷は描かない。
+- 背景は191で作る ASSET-191_still.png（クマが駆除されたビート畑脇の、扉の開いた空の箱わな）を再利用する。新しく作るのはキャラだけ。
+- ハンターセリフ「鼻の傷は／確かめられなかった、、」
+- 編集者指示: 背景は ASSET-191_still.png、キャラは新規の ASSET-206_char.png。ハンターを中央に置き、首をかしげる頭を小さく左右に揺らす（動画は作らない）。中央に「鼻の傷は未確認」を白字で表示し、「未確認」だけ赤字。旧 ASSET-206_still.png（ナタと試料容器）は使わない。
 
 ## ASSET-207（Lovart動画）
 
@@ -1583,29 +1505,27 @@
 - 静止画は182で新しく作る ASSET-182_bg.png（研究室の机に並べた2本の試料・人物なし）を使い、動画だけ作る。
 - 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。左の試料に「保管試料」、右の試料に「照合試料」を白字で置き、中央に「同一個体」。「同一個体」だけ赤字。DNA波形や数値は出さない。今の ASSET-207_still.png（屋外の机）と旧 ASSET-207_char.png は使わない。
 
-## ASSET-208（キャラアニメーション）
+## ASSET-208（Lovart動画）
 
 - ナレーション: この結果を知った現場のハンターは、「せたな町、今金町とも密に情報交換していれば、もっと早く地元の不安を取りのぞけていた」と語っていました。
-- 場面: 役場の机で、開いた資料を手に悔しさをにじませるハンター（CHAR-05）。
-- 背景は既存の ASSET-208_bg.png（役場の机に開いたファイルと書類・人物なし）をそのまま使う。新しく作るのはキャラだけ。
-- ハンターセリフ「もっと早く／分かっていれば、、」
-- 編集者指示: 背景は既存の ASSET-208_bg.png、キャラは新規の ASSET-208_char.png を中央に置き、拳を小さく震わせる（動画は作らない）。中央に「情報交換していれば」を白字で表示し、「情報交換」だけ赤字。
+- 場面: 役場の一室でインタビューに答える現場のハンター（実写。首から下だけを映し、顔は映さない）。※2026-09-26 本人「ここは実写動画でインタビューに答える感じにして。首から上は映らない感じ」。
+- 編集者指示: 動画（ASSET-208_video.mp4）をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。下部に「地元のハンター」を白字で置き、中央に「もっと早く情報交換していれば」。「情報交換」だけ赤字。旧 ASSET-208_char.png と ASSET-208_still.png は使わない。
 
 ## ASSET-209（キャラアニメーション）
 
 - ナレーション: 現在のせたな町も、山へ入る前にクマの出没情報を確認し、単独で山に入るのを避けるよう呼びかけています。
 - 場面: 登山口の案内板の前で、2人組の山菜採りが出没情報を確かめてから入山する。
-- 背景は ASSET-218_bg.png を再利用。
+- 背景は ASSET-209_bg.png（ASSET-218 と共通）を使う。
 - セリフ「出没情報を／確かめよう」
-- 編集者指示: 背景は ASSET-218_bg.png を再利用、キャラは新規。2人を左から案内板の前へ移動させて止める。鈴の音SE。右上に「単独で入らない」を白字で置き、「単独」だけ赤字。
+- 編集者指示: 背景は ASSET-209_bg.png（ASSET-218 と共通）を使う、キャラは新規。2人を左から案内板の前へ移動させて止める。鈴の音SE。右上に「単独で入らない」を白字で置き、「単独」だけ赤字。
 
 ## ASSET-210（キャラアニメーション）
 
 - ナレーション: 専門家の釣賀一二三（つるが ひふみ）室長は、「山に入るときはクマへ人の存在を知らせることが重要」
 - 場面: 研究室で、クマよけの鈴を掲げて呼びかける専門家の釣賀室長（研究者・専門家＝CHAR-07）。
-- 背景は181の新しい背景（ASSET-181_bg.png＝研究室の机）を再利用。
+- 背景は181の新しい背景（ASSET-100_bg.png＝研究室の机）を再利用。
 - 研究者セリフ「人の存在を／知らせて」
-- 編集者指示: 背景は ASSET-181_bg.png を再利用し、左の地図の側へ寄せて181・184と画を変える（今の ASSET-210_still.png は岩の横に雪があるので使わない）。キャラは新規の ASSET-210_char.png を右に置き、鈴を持つ腕を小さく振る（動画は作らない）。左上に「釣賀一二三 室長」を白字で置き、中央に「人の存在を知らせる」。「知らせる」だけ赤字。
+- 編集者指示: 背景は ASSET-100_bg.png を再利用し、左の地図の側へ寄せて181・184と画を変える（今の ASSET-210_still.png は岩の横に雪があるので使わない）。キャラは新規の ASSET-210_char.png を右に置き、鈴を持つ腕を小さく振る（動画は作らない）。左上に「釣賀一二三 室長」を白字で置き、中央に「人の存在を知らせる」。「知らせる」だけ赤字。
 
 ## ASSET-211（Lovart動画）
 
@@ -1616,12 +1536,10 @@
 ## ASSET-212（キャラアニメーション）
 
 - ナレーション: 「そのため、要所ではホイッスルを吹いたり、大きな声を出したりすることも効果的だ」としています。
-- 場面: 見通しの悪い曲がり角で笛を持つ手。
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 鈴とラジオの横に残るクマの足跡。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: 既存の背景または動画に、画像/ASSET-211_char.pngを合成。文字は編集で付ける。
-- セリフ「・・・」
-- 編集者指示: 笛を口元へ上げ、曲がり角の手前で止める。中央に「ホイッスルも」を白字で重ね、要点の一語だけ赤字。
+- 場面: 見通しの悪い山道の曲がり角の手前で、ホイッスルを吹く登山者（固定人物ではなく、このカットだけの人物）。後ろ姿の旧キャラを固定キャラの絵柄で作り直す。
+- 背景は既存の ASSET-212_bg.png（曲がり角の山道）をそのまま使う。新しく作るのはキャラだけ。
+- 登山者セリフ「ピーッ」
+- 編集者指示: 背景は ASSET-212_bg.png、キャラは新規の ASSET-212_char.png（旧い後ろ姿のキャラは使わない）。登山者を左に置き、笛を吹く頬を小さくふくらませる（動画は作らない）。笛の音のSE。中央に「ホイッスルも」を白字で表示し、「ホイッスル」だけ赤字。
 
 ## ASSET-213（キャラアニメーション）
 
@@ -1630,15 +1548,11 @@
 - 男性セリフ「2人で／行こう」
 - 編集者指示: 背景・キャラとも新規（今の ASSET-213_still.png は雪があり、今のキャラは怯えた顔の使い回しなので使わない。ASSET-213_video.mp4 も使わない＝動画は作らない）。2人を左から右へ歩くように移動させる。鈴の音SE。中央に「複数で行動」を白字で表示し、「複数」だけ赤字。
 
-## ASSET-214（キャラアニメーション）
+## ASSET-214（Lovart動画）
 
 - ナレーション: 音を出すことや複数で歩くことで、必ずしも危険がなくなる保証にはなりません。
-- 場面: 複数歩行でも周囲を警戒する2人。
-- 女性セリフ「油断は／禁物ね」
-- 既存の写実素材は背景またはつなぎ用。実写人物の顔非表示指定はキャラPNGには適用しない。
-- Cute 2D children's animation cartoon. A large head taking about one quarter of total height; four to five heads tall, large head, short compact torso, short stubby arms and legs. Uniform thick black outlines around the silhouette and major shapes, flat colors with at most one flat shadow shade, large expressive eyes. No realistic adult proportions, no slender or elongated body, no detailed fabric texture, no gradients, no painterly rendering, no photo realism. One full-body Japanese adult hunter or search volunteer in a dark green outdoor jacket, fictional cartoon design. Three-quarter front view, face clearly visible with distinct eyes, nose and mouth; serious or concerned expression appropriate to the situation, no cheerful smile. This is a fictional illustration, with no resemblance claim to a real person. The person reacts to or performs the action in this Japanese scene description: 2人で山道を歩く斜め前から顔が見える姿。 Show only the person and at most one necessary hand-held prop; do not draw the scenery, another person, a bear, a vehicle, a building, a map, or printed material. Head and feet fully inside the square frame, one figure only, no duplicate poses, no panel grid. Clean transparent alpha background. No written words, numbers, logos, blood, wounds, or gore. 1:1 square image.
-- 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 既存の背景または動画に、画像/ASSET-213_char.pngを合成。文字は編集で付ける。
-- 編集者指示: キャラと背景で表す（動画は使わない）。キャラは既存の _char.png、背景は既存の _still.png を使う。 左上に「安全の保証なし」を白字で置き、要点の一語だけ赤字。
+- 場面: 熊鈴を鳴らし声をかけ合いながら2人で歩いていても、やぶの奥を警戒する登山者（実写・後ろ姿で顔は見せない）。※2026-09-26 本人「ここは実写動画にして」。
+- 編集者指示: 動画（ASSET-214_video.mp4）をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。熊鈴の小さな音を効果音で重ねる。左上に「安全の保証なし」を白字で置き、「保証なし」だけ赤字。旧 ASSET-214_still.png と ASSET-214_char.png は使わない。
 
 ## ASSET-215（キャラアニメーション）
 
@@ -1658,16 +1572,18 @@
 ## ASSET-217（キャラアニメーション）
 
 - ナレーション: 翌年、同じクマに襲われた45歳の女性は、肩や腕に重いけがを負い、一緒にいた男性も襲われかけています。
-- 場面: 竹やぶから迫るヒグマの前で、2014年の女性（CHAR-03）が肩と腕を押さえて痛みにうずくまり、同行男性（CHAR-04）がナタを構えて恐怖に叫ぶ。
+- 場面: 翌年に同じクマに襲われた45歳の女性（CHAR-03）と、襲われかけた同行男性（CHAR-04）。※2026-09-26 本人の裁定「実写のクマとキャラ画像を組み合わせない」（159・162）に合わせ、竹やぶから迫る実写のクマの背景をやめる。076（女性とクマ）と080（男性とクマ）のキャラを並べて見せる（番号の若い素材の再利用）。新しく作るものはない。
+- キャラは076の ASSET-076_char.png（肩を押さえる女性と飛びかかるクマ）と、080の ASSET-080_char.png（ナタを振るう男性とクマ）を再利用。
+- 背景は063の ASSET-063_bg.png（クマのいない山道）を再利用する。
 - 女性セリフ「肩と腕が、、！」
-- 編集者指示: 背景・キャラとも新規（今の ASSET-217_still.png は使わない）。2人を左と中央に置き、右のクマから逃げるように小刻みに揺らす（動画は作らない）。左上に「翌年・45歳の女性」を白字で置き、中央に「肩や腕に重いけが」。「重いけが」だけ赤字。傷や血は描かない。
+- 編集者指示: 背景は ASSET-063_bg.png。左に ASSET-076_char.png、右に ASSET-080_char.png を並べ、小刻みに揺らす（動画は作らない）。左上に「翌年・45歳の女性」を白字で置き、中央に「肩や腕に重いけが」。「重いけが」だけ赤字。傷や血は描かない。前の ASSET-217_bg.png・ASSET-217_char.png・ASSET-217_still.png は使わない。
 
 ## ASSET-218（キャラアニメーション）
 
 - ナレーション: 常にクマの出没情報の確認をしつつ、クマスプレーなどを備えておき、身を守ることが大切と言えます。
-- 場面: 登山口の案内板の前で、クマスプレーを構える女性。キャラは既存の ASSET-218_char.png（顔が見える・背景透過済み）を使い、背景だけ雪のない春の登山口に作り直す。
-- キャラは既存の ASSET-218_char.png を再利用。
-- 編集者指示: 背景は新規（ASSET-218_bg.png として保存。Regen の209も再利用する。今の ASSET-218_still.png は雪があるので使わない）、キャラは既存の ASSET-218_char.png を左に置く（動画は作らない）。中央に「出没情報とクマスプレー」を白字で表示し、「クマスプレー」だけ赤字。
+- 場面: 春の登山道で、スマホで出没情報を確かめながらクマスプレーを構える女性の登山者と、道の先に現れたクマ（CHAR-11）。※2026-09-26 本人「ここはキャラのテイストが違うし、人とクマのキャラをそれぞれ生成し、背景も作成して」→人とクマを別々のキャラ画像にし、背景も新しく作る（前の ASSET-218_bg.png は209の名前にそろえたので、218は別の背景にする）。
+- 女性セリフ「クマスプレーを／用意しておこう」
+- 編集者指示: 背景は新規の ASSET-218_bg.png（春の登山道）。女性（ASSET-218_char.png）を左、クマ（ASSET-218_bear.png）を右奥に小さめに置き、女性がスプレーを構える腕を小さく前に出す（動画は作らない）。中央に「出没情報とクマスプレー」を白字で表示し、「クマスプレー」だけ赤字。前の ASSET-218_char.png・ASSET-218_still.png は使わない（登山口の背景は209の ASSET-209_bg.png として残す）。
 
 ## ASSET-219（Lovart動画）
 

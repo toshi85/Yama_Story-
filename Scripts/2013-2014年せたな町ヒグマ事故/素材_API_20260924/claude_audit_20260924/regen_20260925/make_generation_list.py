@@ -12,7 +12,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 A = HERE.parent
 FIX = ["Asset_Prompts_Fix2.md", "Asset_Prompts_Fix3.md", "Asset_Prompts_Fix4.md",
-       "Asset_Prompts_Fix5a.md", "Asset_Prompts_Fix5b.md", "Asset_Prompts_Fix5c.md"]
+       "Asset_Prompts_Fix5a.md", "Asset_Prompts_Fix5b.md", "Asset_Prompts_Fix5c.md", "Asset_Prompts_Fix6.md"]
 review = json.loads((A / "scene_fitness_review_claude.json").read_text(encoding="utf-8"))
 now = {c["asset_no"]: sorted(Path(f).name for f in c["files"]) for c in review["cuts"]}
 drive_dir = HERE.parents[1] / "drive_images_20260925"
@@ -35,10 +35,17 @@ def add_del(name, why):
         delete.append((name, why))
 
 
-for mdname in FIX:
+def _nums(md):
+    q = HERE / md
+    return {int(x) for x in re.findall(r"^【制作メモ】ASSET-(\d+)", q.read_text(encoding="utf-8"), re.M)} if q.exists() else set()
+
+
+for i_md, mdname in enumerate(FIX):
     p = HERE / mdname
     if not p.exists():
         continue
+    # 2026-09-26: 後のファイルで上書きしたカットは数えない（Fix5b の132と Fix6 の132が両方リストに載り、古い指示で作りかけた）
+    later = set().union(*[_nums(m) for m in FIX[i_md + 1:]]) if i_md + 1 < len(FIX) else set()
     text = p.read_text(encoding="utf-8").replace("\r\n", "\n")
     tail = re.search(r"^## 動画を外すだけのカット\s*$(.*)", text, re.M | re.S)
     if tail:
@@ -50,6 +57,8 @@ for mdname in FIX:
         if not m:
             continue
         n, kind = int(m.group(1)), m.group(2)
+        if n in later:
+            continue
         have = now.get(n, [])
         if "Google Earth" in kind or "再利用" in kind:
             for f in have:

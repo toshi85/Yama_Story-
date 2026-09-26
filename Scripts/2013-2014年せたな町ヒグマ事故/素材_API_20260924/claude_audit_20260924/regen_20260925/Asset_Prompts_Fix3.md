@@ -3,10 +3,10 @@
 ナレーター: 妻の帰りを心配した夫は、山のほうへ探しにいきます。
 
 【制作メモ】ASSET-019 [キャラアニメーション] 台本L29
-シーン: 妻を心配して、リュックを背負い家から山へ急ぐ夫（CHAR-02）。心配が一目で分かる顔。
+シーン: 妻を心配して、リュックを背負い家から山へ急ぐ夫（CHAR-02）。心配が一目で分かる顔。※2026-09-26 本人「泣いてる顔ではなく、心配して神妙な顔にして」。
 キャラプロンプト（1:1）:
 ```
-(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese man in his 50s, the husband, in a dark blue field jacket and grey trousers, short black hair with a little grey, CLEAN-SHAVEN with no beard and no moustache, a small dark backpack on his back, hurrying forward toward the viewer at a slight three-quarter angle, facing the viewer, his face clearly visible. Eyebrows pulled together and slanted steeply upward in the middle, eyes wet and welling with tears, mouth turned down and trembling, a bead of sweat on his temple, one hand clutching the backpack strap tightly, deeply worried and anxious, NOT calm, NOT smiling, NOT brave. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese man in his 50s, the husband, in a dark blue field jacket and grey trousers, short black hair with a little grey, CLEAN-SHAVEN with no beard and no moustache, a small dark backpack on his back, hurrying forward toward the viewer at a slight three-quarter angle, facing the viewer, his face clearly visible. Eyebrows pulled together and slanted steeply upward in the middle, eyes narrowed and fixed ahead with a grave, solemn look, mouth set in a tight frown, a bead of sweat on his temple, one hand clutching the backpack strap tightly, deeply worried and solemn, no tears, NOT crying, NOT calm, NOT smiling, NOT brave. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
@@ -39,18 +39,18 @@ A white wagon car parked on a gravel track beside a mountain stream near Setana,
 ナレーター: ただ事ではないと判断した夫は、警察に通報。
 
 【制作メモ】ASSET-022 [キャラアニメーション] 台本L34
-シーン: 家の電話で、慌てて警察に通報する夫（CHAR-02）。
+シーン: 妻の車を見つけた沢の近くの外で、スマホで慌てて警察に通報する夫（CHAR-02）。※2026-09-26 本人「固定電話の受話器になってます。外なのでスマホにして」。背景も外（020と同じ場所）にした。
 キャラプロンプト（1:1）:
 ```
-(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese man in his 50s, the husband, in a dark blue field jacket and grey trousers, short black hair with a little grey, CLEAN-SHAVEN with no beard and no moustache, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He presses a corded telephone handset hard against his right ear and shouts into it, eyebrows pulled sharply together, eyes stretched wide, mouth wide open, beads of sweat flying from his temples, his left hand clenched into a fist at his chest, panicked and desperate, NOT calm, NOT smiling. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+(CHAR-02 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese man in his 50s, the husband, in a dark blue field jacket and grey trousers, short black hair with a little grey, CLEAN-SHAVEN with no beard and no moustache, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He presses a smartphone hard against his right ear and shouts into it, eyebrows pulled sharply together, eyes stretched wide, mouth wide open, beads of sweat flying from his temples, his left hand clenched into a fist at his chest, panicked and desperate, NOT calm, NOT smiling. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A rural household table with a corded telephone and an open blank notebook in a house in Setana, southwestern Hokkaido, in mid-April early spring, a window with bare and budding trees outside, No snow anywhere, no frost, no ice, no winter. No legible text, no real institution name or emblem. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Tense, uneasy afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
+A gravel road beside a mountain stream in a forest near Setana, southwestern Hokkaido, in mid-April early spring, a white wagon car parked on the gravel, bare and budding trees, No snow anywhere, no frost, no ice, no winter. No legible text, no licence plate number, no real institution name or emblem. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Tense, uneasy afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
 ```
-→ 背景は既存の ASSET-022_bg.png（電話とノートのある食卓・人物なし）をそのまま使う。新しく作るのはキャラだけ。
+→ 背景は既存の ASSET-020_still.png（沢沿いの砂利道に止まる白いワゴン車・人物なし）を再利用する。新しく作るのはキャラだけ。
 →夫セリフ「妻が／戻らないんです！」
-→ 編集者指示: 背景は既存の ASSET-022_bg.png、キャラは新規の ASSET-022_char.png。夫を中央に置き、小刻みに揺らす。中央に「警察に通報」を白字で表示し、「通報」だけ赤字。
+→ 編集者指示: 背景は ASSET-020_still.png を再利用、キャラは新規の ASSET-022_char.png。夫を中央に置き、小刻みに揺らす。中央に「警察に通報」を白字で表示し、「通報」だけ赤字。
 
 ---
 

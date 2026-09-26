@@ -35,6 +35,24 @@ A narrow mountain trail through a quiet deciduous forest in the Ota area near Se
 
 ---
 
+ナレーター: しかし、事件は起きてしまいました。
+
+【制作メモ】ASSET-103 [キャラアニメーション] 台本L185
+シーン: 襲撃のあとの山道に山菜カゴが残され、そのそばをヒグマ（CHAR-11）がのそりと離れていく。※2026-09-26 本人「ここはクマのキャラ画像も必要です」。
+キャラプロンプト（1:1）:
+```
+(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. One cartoon adult Hokkaido brown bear about 2 metres long and roughly 200 kilograms, full body, ON ALL FOURS, NOT upright, NOT on two legs, walking away to the right while looking back over its shoulder toward the viewer, head low, eyes narrowed and glaring, mouth open showing its teeth, ears pinned flat, the fur on its back bristled, menacing and furious. No blood, no stains, no wounds. Only this one bear, no people. No lettering. A very large head about one third of the total height, a short compact body and short stubby legs, roughly three heads tall, in the same simple flat cartoon style as the other characters. Do NOT draw it with realistic adult proportions. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+```
+背景プロンプト（16:9）:
+```
+The forest trail immediately after the attack near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring: a woven basket of wild garlic lying tipped over on the trail, bare and budding trees, brown leaf litter, No snow anywhere, no frost, no ice, no winter. No people, no animals. No blood, no stains. Framed from adult eye height about four metres back, the right half of the frame left as clear open space. Silent, ominous overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+```
+→ 背景は既存の ASSET-103_still.png（道に残る山菜カゴ・人物なし）をそのまま使う。新しく作るのはクマのキャラだけ。
+→クマセリフ「グルル、、」
+→ 編集者指示: 背景は既存の ASSET-103_still.png、キャラは新規の ASSET-103_char.png。クマを右に置き、右へゆっくり歩き去るように動かす（動画は作らない）。左上に「事件は起きた」を白字で置き、「事件」だけ赤字。
+
+---
+
 ナレーター: 専門家は、積極的に人を襲った可能性が高いヒグマによる事故と捉え、「一度人間を襲ったクマは凶暴性を増す」と指摘しています。
 
 【制作メモ】ASSET-104 [キャラアニメーション] 台本L187
@@ -72,14 +90,14 @@ A meeting table in a small rural town office in Setana, southwestern Hokkaido, i
 ナレーター: ハンターたちは、現場から半径数キロにわたって捜索を開始。
 
 【制作メモ】ASSET-107 [キャラアニメーション] 台本L193
-シーン: 尾根が連なる春の山並みを前に、双眼鏡で広い範囲を探すハンターたち（CHAR-05・CHAR-09）。雪は描かない。
+シーン: 山の奥の森の中で、双眼鏡で広い範囲を探すハンターたち（CHAR-05・CHAR-09）。雪は描かない。※2026-09-26 本人「ここはもっと山の中にして」（背景）。
 キャラプロンプト（1:1）:
 ```
 (CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Two full-body Japanese hunters standing side by side toward the viewer at a slight three-quarter angle, both faces clearly visible. Left to right: 1) (CHAR-05 再利用) a Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, holding a pair of binoculars just below his eyes with both hands and looking to his right, eyebrows driven down hard, eyes narrowed and darting, mouth pressed into a tight grim line, a bead of sweat on his temple; 2) (CHAR-09 再利用) a Japanese young hunter in his 30s with short black hair, a dark green cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a rifle slung on his back pointing upward, shading his eyes with one hand and looking to his left, eyebrows pulled together, eyes wide and alert, mouth open, sweat on his forehead. Both are tense and searching, NOT calm, NOT smiling. Every person is a distinct individual, no two dressed alike. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT. The young hunter is a little taller. No lettering, no badge, no logo. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A wide view over several forested ridges rolling one behind another in the Ota area near Setana, southwestern Hokkaido, in mid-April early spring: brown bare and budding deciduous woods, dark green conifers, dry brown grass on the near slope, No snow anywhere, no snow on any ridge or distant mountain, no frost, no ice, no winter. Framed from adult eye height on a hilltop about four metres back, the near slope in the lower third, a clear horizon line visible, the middle of the frame left as clear open space. Tense, quiet, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+Deep inside the forested mountains near Ota in the Taisei district of Setana, southwestern Hokkaido, in mid-April early spring: a viewpoint low among the trees on a steep wooded slope, dense bare and budding deciduous woods and dark green conifers all around, more forested ridges crowding close behind, thick dry bamboo grass on the ground, no road, no buildings, no open view, No snow anywhere, no snow on any ridge or distant mountain, no frost, no ice, no winter. No people, no animals. No readable text. Framed from adult eye height, the lower left of the frame left as clear open space. Tense, quiet overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 →ハンターセリフ「どこに／いるのか、、」
 → 編集者指示: 背景・キャラとも新規。2人を左下に置き、双眼鏡を左右にゆっくり振るように小さく回す。中央に「半径数キロを捜索」を白字で表示し、「数キロ」だけ赤字。
@@ -89,10 +107,10 @@ A wide view over several forested ridges rolling one behind another in the Ota a
 ナレーター: しかし、草むらが視界を塞ぎ、なかなか思うように探せません。
 
 【制作メモ】ASSET-109 [キャラアニメーション] 台本L196
-シーン: 背丈ほどのササをかき分けても先が見えず、いら立つハンター（CHAR-05）。
+シーン: 背丈ほどのササを両腕でかき分け、額から汗を流して大変そうに進むハンター（CHAR-05）。※2026-09-26 本人「ポーズが変です。額に汗をながし大変そうな感じにして」。
 キャラプロンプト（1:1）:
 ```
-(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. He pushes both arms forward as if parting tall grass, eyebrows pulled together and slanted upward, eyes squeezed in frustration, teeth gritted, sweat flying from his temples, frustrated and struggling, NOT calm, NOT smiling. Only his own gear as props, nothing of the surroundings. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a rifle slung on his back, leaning forward and wading through chest-high bamboo grass, pushing the stalks apart with both arms, his face clearly visible, sweat pouring down his forehead and flying from his face, eyebrows pulled together, eyes squeezed half shut, mouth open panting hard, exhausted and struggling, NOT calm, NOT smiling. Only this one hunter. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
@@ -118,6 +136,22 @@ An office desk in a small rural town office in Setana, southwestern Hokkaido, in
 ```
 →職員セリフ「ヘリを／お願いします！」
 → 編集者指示: 背景・キャラとも新規。職員を中央に置き、小刻みに揺らす（動画は作らない）。ヘリのローター音のSEを最後に小さく入れる。中央に「防災ヘリを要請」を白字で表示し、「ヘリ」だけ赤字。
+
+---
+
+ナレーター: こうして、地上と空の2つでクマを捜索することとなりました。
+
+【制作メモ】ASSET-111 [Lovart動画] 台本L199
+シーン: 森に覆われた尾根の上を、防災ヘリが低く飛んで捜索する。尾根には捜索隊が小さく見える（実写・顔は見えない）。※2026-09-26 本人「ここはヘリの動画にして」。
+静止画プロンプト（16:9・フォトリアル）:
+```
+A red-and-white rescue helicopter with no markings flying low over forested ridges near Ota in the Taisei district of Setana, southwestern Hokkaido, in mid-April early spring: bare and budding deciduous woods and dark green conifers on steep slopes, and on a ridge far below, a small line of Japanese searchers in blaze-orange vests seen from far away, their faces not visible. No snow anywhere, no snow on any ridge or distant mountain, no frost, no ice, no winter. No readable text, no registration number, no real institution name, no crest, no emblem, no logo. Tense overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+```
+Google Flow動画プロンプト:
+```
+One single continuous shot: the red-and-white rescue helicopter flies slowly along the forested ridge, turning to search the slopes below, its rotor blades spinning and the treetops swaying in the downwash, while the small line of searchers on the ridge keeps walking. Nobody's face is ever visible. No cuts, no scene change, no text, no markings. No snow anywhere. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+```
+→ 編集者指示: 動画をナレーションの尺に合わせて使う。左上に「地上と空から」を白字で置き、「空から」だけ赤字。
 
 ---
 
@@ -190,6 +224,22 @@ The edge of a gravel forest road used as a staging area near Setana, southwester
 
 ---
 
+ナレーター: 準備が整い、問題のクマを捕えるべく、地上と空の二つで捜索を開始。
+
+【制作メモ】ASSET-118 [Lovart動画] 台本L213
+シーン: 画面を左右に2分割し、左に森の斜面を進む地上の捜索隊、右に森の上を飛ぶ防災ヘリを写す（実写・顔は見えない）。※2026-09-26 本人「画面を2分割して、地上と空のふたつが写ってる静止画にして」。ナレーションが26字以上のため、静止画を元に左右がわずかに動く動画も作る（編集は静止画・動画のどちらでもよい）。
+静止画プロンプト（16:9・フォトリアル）:
+```
+A split-screen image divided into two equal halves by a thin clean white vertical line. Left half: a line of Japanese searchers in blaze-orange vests and white helmets walking up a forested slope near Ota in the Taisei district of Setana, southwestern Hokkaido, seen from behind, their faces not visible. Right half: a red-and-white rescue helicopter with no markings flying low over the same forested ridges, seen from the ground. Both halves in mid-April early spring: bare and budding deciduous woods and dark green conifers, No snow anywhere, no snow on any ridge or distant mountain, no frost, no ice, no winter. No readable text, no registration number, no real institution name, no crest, no emblem, no logo. Tense overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+```
+Google Flow動画プロンプト:
+```
+Keep the split-screen layout and the white dividing line exactly as in the image. In the left half the searchers keep walking slowly up the slope; in the right half the helicopter drifts slowly along the ridge with its rotor spinning and the treetops swaying. No cuts, no new people, no faces visible, no text, no markings. No snow anywhere. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+```
+→ 編集者指示: 2分割の静止画（ASSET-118_still.png）か動画（ASSET-118_video.mp4）をナレーションの尺で使う。左上に「地上と空から捜索開始」を白字で置き、「捜索開始」だけ赤字。
+
+---
+
 ナレーター: 山道を歩いてると、クマの足跡を発見。
 
 【制作メモ】ASSET-120 [キャラアニメーション] 台本L216
@@ -246,7 +296,7 @@ A trail of Hokkaido brown bear pawprints, left by an adult male brown bear about
 ナレーター: 日が沈むまでクマを探したものの、結局クマは見つかりませんでした。
 
 【制作メモ】ASSET-124 [キャラアニメーション] 台本L224
-シーン: 夕暮れの林道を、疲れ切って肩を落として戻るハンター（CHAR-05）。雪は描かない。
+シーン: 夕暮れの林道を、疲れ切って肩を落として戻るハンター（CHAR-05）。雪は描かない。※背景を動画にする（本人指示「ASSET-124_bg.pngは動画にして」2026-09-26）。キャラは静止画のまま重ねる。
 キャラプロンプト（1:1）:
 ```
 (CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, mud on his boots and trousers, trudging toward the viewer at a slight three-quarter angle with his shoulders slumped, his face clearly visible. Eyebrows slanted steeply upward, eyes half-closed and drooping with exhaustion, mouth hanging open panting, sweat dripping down his face, exhausted and dejected, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
@@ -255,26 +305,48 @@ A trail of Hokkaido brown bear pawprints, left by an adult male brown bear about
 ```
 A gravel forest road leading out of the woods at sunset near Setana, southwestern Hokkaido, in mid-April early spring: bare and budding trees silhouetted against an orange sky, dry brown grass, brown leaf litter, No snow anywhere, no snow patches, no frost, no ice, no winter. Dim but NOT pure black — the road and trees stay clearly readable. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Weary, empty mood, low warm sunset light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
 ```
+→ 背景は既存の ASSET-124_bg.png（夕暮れの林道）をそのまま使う（作り直さない）。静止画は ASSET-124_bg.png をそのまま使い、これを元に背景の動画を作る。
+Google Flow動画プロンプト:
+```
+Keep the composition of the image exactly. One single continuous shot of the empty forest road at dusk: the sun slowly sinks behind the hills, the light fades to orange and grey, the bare treetops and dry grass sway gently in the wind, and the camera pushes in very slowly along the road. No people, no animals, no cuts, no text. No snow anywhere. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+```
 →ハンターセリフ「また／見つからない、、」
-→ 編集者指示: 背景・キャラとも新規。ハンターを奥から手前へ2秒でゆっくり歩かせて止める。中央に「見つからず、、」を白字で表示し、「見つからず」だけ赤字。
+→ 編集者指示: 背景は動画 ASSET-124_video.mp4（ASSET-124_bg.png から作る）、キャラは ASSET-124_char.png を重ねる（動画が使えない区間は、キャラ画の区間は開始画像を背景にする＝ASSET-124_bg.png）。ハンターを奥から手前へ2秒でゆっくり歩かせて止める。中央に「見つからず、、」を白字で表示し、「見つからず」だけ赤字。
 
 ---
 
 ナレーター: 昨年の事件といい、このクマはかなり厄介な相手だと言えます。
 
-【制作メモ】ASSET-126 [キャラアニメーション] 台本L227
-シーン: 残雪の林の奥へ消えていくヒグマを見送り、悔しさに歯を食いしばるハンター（CHAR-05）。台本どおり残雪を描く。
+【制作メモ】ASSET-126 [Lovart動画] 台本L227
+シーン: 残雪の林の奥へ悠々と歩いて消えていくヒグマ（実写・ドライブにある ASSET-126_still.png を元にした動画）。※2026-09-26 本人「ここは動画にして。…ドライブの画像を動画にして」。キャラは使わない。
+→ 静止画はドライブにある既存の ASSET-126_still.png を使い、動画だけ作る。（下の静止画プロンプトは既存画像の内容を書いたもの。作り直さない）
+静止画プロンプト（16:9・フォトリアル）:
+```
+An adult Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms, ON ALL FOURS, NOT upright, NOT on two legs, walking away among bare trees in a late-winter forest near Setana, southwestern Hokkaido, with patches of old snow on the ground, its head low and its shoulders hunched, ears flattened back, the fur along its back bristled, seen from a distance. Late-winter snow is intended in this scene. No people. Captured as a frozen moment. Framed from adult eye height. Uneasy, quiet, cold grey light, muted tones. Photorealistic, shot on RED camera, telephoto lens. Documentary style. 16:9 aspect ratio. Generate 1 image.
+```
+Google Flow動画プロンプト:
+```
+One single continuous shot from a fixed camera in a late-winter Hokkaido forest with patches of old snow: the adult brown bear walks slowly and calmly away on all fours, deeper into the trees, never turning its face toward the camera and never rising onto its hind legs, until it disappears among the trunks; the forest is left still and silent. No people, no cuts, no scene change, no text. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+```
+→ 編集者指示: 動画をナレーションの尺に合わせて使う（旧 ASSET-126_char.png は使わない）。中央に「厄介な相手」を白字で表示し、「厄介」だけ赤字。
+
+---
+
+ナレーター: 周辺の住民には引き続き警戒が呼びかけられました。
+
+【制作メモ】ASSET-127 [キャラアニメーション] 台本L229
+シーン: 集落の掲示板の横で、町の職員（CHAR-06）が拡声器で警戒を呼びかけ、住民（CHAR-10）が不安そうに聞く。※2026-09-26 本人「ここは再利用ではなく、ちゃんと作って」。
 キャラプロンプト（1:1）:
 ```
-(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. Both fists clenched and trembling at his sides, eyebrows driven down hard and pulled together, eyes narrowed and glaring, teeth gritted and bared, veins standing out on his temple, sweat on his brow, bitter and frustrated, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. Exactly two Japanese people, both full body, both faces clearly visible. Every person is a distinct individual, no two dressed alike. 1) On the left, (CHAR-06 再利用) a Japanese town official in his 40s with short black hair, a navy work jacket over a light blue shirt and grey trousers, holding a plain white handheld megaphone to his mouth and calling out, eyebrows pulled together, eyes wide and earnest, mouth wide open shouting, sweat on his temple, urgent, NOT calm. 2) On the right, (CHAR-10 再利用) a Japanese local resident man in his 70s with short white hair, a beige work jacket, grey trousers and rubber boots, listening with both hands clasped at his chest, eyebrows slanted upward, eyes wide and worried, mouth turned down, uneasy. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-An adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms walking away ON ALL FOURS between the trunks of a bare deciduous forest near Setana, southwestern Hokkaido, in mid-April early spring, its back and rump toward the camera, its face hidden, half-hidden by tree trunks, lingering patches of old snow on the forest floor, brown leaf litter. Lingering spring snow is intended in this scene. NOT upright, NOT on two legs. Its shoulder is higher than a fallen log beside it and it is far larger than the young trees around it. Framed from adult eye height about ten metres back, the left half left as clear open space. Ominous, quiet, soft overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
+An open patch of ground beside a small wooden notice board in a quiet farming settlement near Setana, southwestern Hokkaido, in mid-April early spring: low houses with dark roofs, bare and budding trees, dry brown grass, No snow anywhere, no frost, no ice, no winter. No people, no animals. No readable text. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Uneasy overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
-→ 背景は既存の ASSET-126_still.png（残雪の林の奥へ歩くヒグマ・人物なし）をそのまま使う。新しく作るのはキャラだけ。
-→ハンターセリフ「厄介な／相手だ、、」
-→ 編集者指示: 背景は既存の ASSET-126_still.png、キャラは新規の ASSET-126_char.png。ハンターを左下に置き、握った拳を小さく震わせる。背景はクマへゆっくり寄る。中央に「厄介な相手」を白字で表示し、「厄介」だけ赤字。
+→ 背景は既存の ASSET-051_bg.png（掲示板の横の空き地・雪なし・人物なし）を再利用する。新しく作るのはキャラだけ。
+→職員セリフ「クマに／警戒してください！」
+→ 編集者指示: 背景は ASSET-051_bg.png を再利用、キャラは新規の ASSET-127_char.png。2人を中央に置き、職員の拡声器を持つ腕を小さく動かす（動画は作らない）。左上に「警戒を続ける」を白字で置き、「警戒」だけ赤字。
 
 ---
 
@@ -312,70 +384,47 @@ A quiet scenic coastline of Setana on the Sea of Japan in southwestern Hokkaido 
 ナレーター: しかし、その後も全力で捜索しましたが、見つけることはできませんでした。
 
 【制作メモ】ASSET-130 [キャラアニメーション] 台本L235
-シーン: 夕暮れの山道を、泥だらけで首にタオルを掛けて戻るハンター（CHAR-05）。落胆した顔。
+シーン: 夕暮れの山の奥の山道を、泥だらけで首にタオルを掛けて戻るハンター（CHAR-05）。落胆した顔。※2026-09-26 本人「ここは山の中にして」（背景）。
 キャラプロンプト（1:1）:
 ```
 (CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, a small white towel around his neck, mud on his knees and boots, walking toward the viewer at a slight three-quarter angle with his head hanging, his face clearly visible. Eyebrows slanted steeply upward, eyes wet and glistening, mouth bent into a trembling downturned frown, sweat dripping down his cheeks, crushed and disappointed, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-An empty paved mountain road curving down out of the hills at dusk near Setana, southwestern Hokkaido, in late April spring: bare and budding trees, dry brown grass on the verges, an orange evening sky over brown forested hills, No snow anywhere, no snow on any distant mountain, no frost, no ice, no winter, no cherry blossoms. Dim but NOT pure black — the road stays clearly readable. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Weary, quiet mood, low warm dusk light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+A narrow mountain trail deep inside the forested mountains near Ota in the Taisei district of Setana, southwestern Hokkaido, at dusk in mid-April early spring: steep wooded slopes close on both sides, bare and budding deciduous trees and dark conifers, dry bamboo grass, the last orange light fading through the trees, no road, no buildings, no open view, No snow anywhere, no frost, no ice, no winter. No people, no animals. No readable text. Framed from adult eye height about four metres back, the middle of the frame left as clear open space. Weary, gloomy mood, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 →ハンターセリフ「どこへ／消えたのか、、」
 → 編集者指示: 背景・キャラとも新規。ハンターを右から中央へゆっくり歩かせて止める。中央に「全力でも空振り」を白字で表示し、「空振り」だけ赤字。
 
 ---
 
-ナレーター: なんと二つ目の事件があった太田の山で、町職員が箱わなにかかっているクマを見つけました。
-
-【制作メモ】ASSET-132 [キャラアニメーション] 台本L239
-シーン: 5月の太田の山で、箱わなにかかったヒグマを見つけて驚く町の職員（CHAR-06）。後ろ姿ではなく顔を見せる。
-キャラプロンプト（1:1）:
-```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black rubber boots, standing toward the viewer at a slight three-quarter angle, his face clearly visible. He leans back with one foot lifted and points to his right with his right arm fully outstretched, his head turned toward where he points, eyebrows shot up so hard the forehead is creased, eyes bulging wide, mouth stretched wide open in a shout, sweat flying off his face in droplets, shocked and startled, NOT calm, NOT smiling. No lettering, no badge, no logo, no name tag. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
-```
-背景プロンプト（16:9）:
-```
-A closed steel box trap on a forested hillside in the Ota area near Setana, southwestern Hokkaido, in mid-May late spring: fresh light-green new leaves, green bamboo grass, No snow anywhere, no frost, no ice, no winter. Inside the trap an adult male Hokkaido brown bear about 1.8 metres long and about 250 kilograms crouches ON ALL FOURS, its heavy dark-brown body filling most of the trap, its back almost touching the trap roof, clearly visible through the steel mesh. NOT upright, NOT on two legs. The trap sits in the right half of the frame, the left half left as clear open space. Framed from adult eye height about five metres back. Tense, soft overcast light, muted natural tones. No blood, no wounds, no gore. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
-```
-→職員セリフ「クマが／かかってる！」
-→ 編集者指示: 背景・キャラとも新規。職員を左に置き、指さす腕を小さく動かす。背景は箱わなへゆっくり寄る。クマの唸り声のSE。中央に「箱わなにクマ！」を白字で表示し、「クマ」だけ赤字。
-
----
-
 ナレーター: すかさずハンターが、クマを駆除し、
 
 【制作メモ】ASSET-135 [キャラアニメーション] 台本L244
-シーン: 箱わなのクマに向けて、ハンター（CHAR-05）が銃を撃つ（東成瀬村138と同じく発砲の閃光まで描く。クマの傷や血は描かない）。
+シーン: 駆除の直後。箱わなのそばの地面にヒグマ（CHAR-11）が倒れ、ハンター（CHAR-05）が銃を下ろして立つ。クマとハンターは別々の画像にし、背景も新しく作る（136でも再利用する）。※2026-09-26 本人「駆除した後のキャラ画像にしてもらい、クマとハンターそれぞれ生成。アセット136にも使える画像にして」「背景も生成して」。
 キャラプロンプト（1:1）:
 ```
-(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, his body turned three-quarters toward the right edge of the picture and his face in three-quarter view clearly visible. He has the rifle shouldered with his cheek on the stock and is firing it toward the right edge of the picture, a bright cartoon muzzle flash bursting from the end of the barrel, THE WHOLE LENGTH OF THE RIFLE IS VISIBLE across the frame, his shoulder absorbing the recoil. Eyebrows driven down hard and pulled together, one eye squeezed shut and the other narrowed to a hard unblinking stare, teeth clenched, a bead of sweat running down his temple, tense and resolute, NOT calm, NOT smiling. Do NOT draw the rifle hanging at his side or held flat across his chest, do NOT point it at the viewer. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, standing square to the viewer, his face clearly visible, holding his rifle lowered and pointed at the ground, eyebrows pulled together, eyes narrowed and grave, mouth pressed into a tight frown, sweat on his brow, exhausted and solemn after the cull, NOT smiling, NOT calm. Only this one hunter. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+```
+追加素材プロンプト（1:1・クマ）:
+```
+(CHAR-11 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. One cartoon adult Hokkaido brown bear about 2 metres long and roughly 200 kilograms, just culled and lying dead, full body. It lies PRONE, flat on its belly on the ground, exactly the way a four-legged animal drops: its chest and stomach flat against the ground, all four legs splayed straight out limp and flat on the ground around it — the two front legs stretched forward past its head, the two back legs stretched out behind it — and its head down flat with its chin and muzzle resting on the ground. Its mouth is a little open with its tongue just showing, and its eyes are drawn as two small X marks. NOT on its back, NOT belly-up, NOT sitting, NOT upright. No blood, no stains, no wounds. Only this one bear, no people. No lettering. A very large head about one third of the body, a chunky rounded body and short thick legs, roughly three heads tall, in the same simple flat cartoon style as the human characters. Do NOT draw it with realistic adult proportions. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
-A closed steel box trap on a forested hillside in the Ota area near Setana, southwestern Hokkaido, in mid-May late spring: fresh light-green new leaves, green bamboo grass, No snow anywhere, no frost, no ice, no winter. Inside the trap an adult male Hokkaido brown bear about 1.8 metres long and about 250 kilograms crouches ON ALL FOURS, its heavy dark-brown body filling most of the trap, its back almost touching the trap roof, clearly visible through the steel mesh. NOT upright, NOT on two legs. The trap sits in the right half of the frame, the left half left as clear open space. Framed from adult eye height about five metres back. Tense, soft overcast light, muted natural tones. No blood, no wounds, no gore. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
+A clearing at the edge of a May forest near Ota in the Taisei district of Setana, southwestern Hokkaido: a rusty steel box trap set on the ground with its door open and empty, fresh green grass and young leaves, bare trunks behind, No snow anywhere, no frost, no ice, no winter. No animals, no people, no figures. No blood, no stains. Framed from adult eye height about four metres back, the left and middle of the frame left as clear open space. Heavy, solemn overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
-→ 背景は 132 の新規背景 ASSET-132_bg.png（箱わなのクマ・5月・人物なし）を再利用。新しく作るのはキャラだけ。
-→ハンターセリフ「ここで／駆除する」
-→ 編集者指示: 背景は ASSET-132_bg.png を1.0→1.15倍に寄せて使う、キャラは新規の ASSET-135_char.png。ハンターを左に置き、銃口を右の箱わなへ向ける。銃声SE1発と同時に画面を一瞬白くフラッシュさせ、0.5秒の暗転で次のカットへつなぐ（クマの傷や血は描かない）。中央に「すぐに駆除」を白字で表示し、「駆除」だけ赤字。
+→ハンターセリフ「これで／終わりか、、」
+→ 編集者指示: 背景・キャラとも新規。背景 ASSET-135_bg.png の中央下にクマ（ASSET-135_bear.png）を置き、ハンター（ASSET-135_char.png）を左に置く（動画は作らない）。直前に銃声SE1発と一瞬の白いフラッシュ（血や傷は描かない）。中央に「すぐに駆除」を白字で表示し、「駆除」だけ赤字。
 
 ---
 
 ナレーター: 女性を襲ったクマなのかを確かめるため、肉片を研究所へ送ります。
 
-【制作メモ】ASSET-136 [キャラアニメーション] 台本L246
-シーン: 研究所の検査台の前で、届いた試料の保冷箱を受け取り、確かめようと意気込む研究者（CHAR-07）。
-キャラプロンプト（1:1）:
-```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, her face clearly visible. She holds a small plain white insulated sample box with both hands at chest height, eyebrows raised high and pulled together, eyes wide and intense, mouth open in an eager gasp, a bead of sweat on her temple, tense and determined, NOT calm, NOT smiling. No lettering on the box or coat, no badge, no logo, no name tag. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
-```
-背景プロンプト（16:9）:
-```
-A laboratory bench in a small research laboratory in southwestern Hokkaido, in mid-May late spring: a sealed clear specimen bag, a white insulated box and racks of capped sample tubes on a steel bench, a window with a green headland and the sea outside, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Focused, tense mood, soft daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
-```
-→ 背景は既存の ASSET-136_still.png（検査台の密封試料と発泡容器・人物なし）をそのまま使う。新しく作るのはキャラだけ。
-→研究者セリフ「すぐに／調べます」
-→ 編集者指示: 背景は既存の ASSET-136_still.png、キャラは新規の ASSET-136_char.png。研究者を右から中央へスライドさせて止める。中央に「研究所へ送る」を白字で表示し、「研究所」だけ赤字。
+【制作メモ】ASSET-136 [再利用] 台本L246
+シーン: 135 と同じ駆除直後の場面（クマ・ハンター・背景）を再利用し、文字で「研究所へ送る」と示す。※2026-09-26 本人「アセット136にも使える画像にして」。
+→アセット135の再利用（ASSET-135_bg.png・ASSET-135_char.png・ASSET-135_bear.png）。
+→ 編集者指示: 135 の3素材を同じ配置で使い、画面をゆっくりクマへ寄せる（旧 ASSET-136_char.png は使わない）。中央に「肉片を研究所へ」を白字で表示し、「研究所」だけ赤字。
 
 ---
 
@@ -413,19 +462,9 @@ A worn wooden worktable in a small rural town office in southwestern Hokkaido, i
 
 ナレーター: しかし、そう上手くはいきませんでした、、
 
-【制作メモ】ASSET-140 [キャラアニメーション] 台本L253
-シーン: 窓辺の机で鑑定結果の封筒を開け、中身を見て愕然とする研究者（CHAR-07）。
-キャラプロンプト（1:1）:
-```
-(CHAR-07 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese female researcher in her 40s with shoulder-length dark brown hair tied back, a plain white lab coat over a navy top, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, her face clearly visible. She holds an opened plain envelope in her left hand and a blank sheet of paper in her right hand, eyebrows slanted steeply upward, eyes stretched wide and welling with tears, jaw hanging slack, face drained pale, a bead of sweat on her temple, stunned and dismayed, NOT calm, NOT smiling. No lettering on the paper or envelope, no badge, no logo, no name tag. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw her with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
-```
-背景プロンプト（16:9）:
-```
-A wooden desk by a large window in a quiet office in southwestern Hokkaido, in mid-May late spring: one plain sealed envelope and a letter opener on the desk, the sea and a green headland outside, No snow anywhere, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Quiet, tense mood, soft daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
-```
-→ 背景は既存の ASSET-140_still.png（窓辺の机の封筒1通・人物なし）をそのまま使う。新しく作るのはキャラだけ。
-→研究者セリフ「そんな、、」
-→ 編集者指示: 背景は既存の ASSET-140_still.png、キャラは新規の ASSET-140_char.png。研究者を中央に置き、紙を持つ手を小さく震わせる（動画は作らない）。中央に「しかし、、」を白字で表示し、「しかし」だけ赤字。
+【制作メモ】ASSET-140 [テキスト] 台本L253
+シーン: 黒い画面に文字だけ。※2026-09-26 本人「ここはテキストのみでいいです」。
+→ 編集者指示: 画像・動画は使わない（旧 ASSET-140_char.png は使わない）。黒い画面の中央に「しかし、そう上手くはいきませんでした、、」を白字で表示し、「上手くはいきませんでした」だけ赤字。
 
 ---
 
@@ -438,23 +477,6 @@ A wooden desk by a large window in a quiet office in southwestern Hokkaido, in m
 Two plain sealed kraft specimen envelopes lying side by side on a dark laboratory bench in a small research laboratory in southwestern Hokkaido, in mid-May late spring: a microscope and a rack of capped sample tubes pushed to the back of the bench, a window with fresh light-green trees and the sea outside, No snow anywhere, no snow on any distant mountain, no frost, no ice, no winter. No lettering on the envelopes, no readable text, no real institution name, no crest, no emblem, no logo. The two envelopes sit in the lower middle of the frame, the upper third deliberately left as clean negative space for large lettering. Framed from adult eye height about two metres back. Heavy, disappointed mood, soft cool daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
 ```
 → 編集者指示: 静止画は新規。5秒で1.0→1.12倍にゆっくり寄る。左の封筒に「2014年の現場」、右の封筒に「5月のクマ」を小さく白字で置き、中央上に「DNAは不一致」を白字で表示し、「不一致」だけ赤字。DNAの波形などは描かない。
-
----
-
-ナレーター: 残念ながら箱わなにかかっていたのは、別のクマだったのです。
-
-【制作メモ】ASSET-142 [キャラアニメーション] 台本L256
-シーン: 役場の机で、箱わなにかかったクマの写真を前に「別のクマだった」と肩を落とす町の職員（CHAR-06）。箱わなのクマは132の画像を編集で大きく重ねて見せる。窓の外は5月の緑で、雪は描かない。
-キャラプロンプト（1:1）:
-```
-(CHAR-06 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese male town official in his 40s with short black hair, a navy work jacket, a light blue shirt, grey trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. His shoulders slump and a plain blank card droops from his right hand, his left hand pressed to his forehead, eyebrows slanted steeply upward, eyes wet with tears, mouth bent into a trembling downturned frown, a bead of sweat on his temple, deeply disappointed, NOT calm, NOT smiling. No lettering on the card, no badge, no logo, no name tag. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
-```
-背景プロンプト（16:9）:
-```
-An office desk in a small rural town office in Setana, southwestern Hokkaido, in mid-May late spring: two plain storage boxes, a blank card and a printed photograph of the captured adult male Hokkaido brown bear, about 1.8 metres long and about 250 kilograms, crouching inside a steel box trap, lying on the desk, a filing cabinet, a window with fresh light-green new leaves and green hills outside, No snow anywhere, no snow on any distant mountain, no frost, no ice, no winter. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about three metres back, the middle of the frame left as clear open space. Heavy, disappointed mood, soft cool daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
-```
-→職員セリフ「別の／クマだった、、」
-→ 編集者指示: 背景・キャラとも新規。職員を右寄りに置き、ゆっくり肩を落とすように小さく下げる。画面左半分に132の画像（箱わなにかかったクマ）を白い枠つきで大きめに重ね、その上に「別のクマ」を白字で置く。中央に「別のクマだった、、」を白字で表示し、「別のクマ」だけ赤字。
 
 ---
 
@@ -476,15 +498,35 @@ A quiet residential street in a small settlement near Setana, southwestern Hokka
 
 ---
 
+ナレーター: そして、事件から8か月余りが過ぎた、2014年12月18日。
+
+【制作メモ】ASSET-144 [Lovart動画] 台本L260
+シーン: 雪の積もった12月のせたな町の役場前（人物なし・背景だけ）。※2026-09-26 本人「なんで謝ってる表情にするの？いらないでしょ。背景のみでいいです」。ナレーションが26字以上のため、静止画を元に雪が静かに降る程度の動画も作る（編集は静止画・動画のどちらでもよい）。
+静止画プロンプト（16:9・フォトリアル）:
+```
+A small two-storey municipal office building in the town of Setana, southwestern Hokkaido, in mid-December winter: fresh snow piled along the road and on the roof, a cleared entrance path, bare trees, a grey Sea of Japan sky. Winter is intended in this scene. No real institution name, no crest, no emblem, no logo; signage present in its normal place but small, slightly out of focus and not readable. Framed from adult eye height about ten metres back, the entrance on the right third, the left and middle of the frame left as clear open space. Cold, heavy, determined mood, desaturated blue-white tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image.
+```
+Google Flow動画プロンプト:
+```
+Keep the composition of the image exactly. One single continuous shot of the snowy town office in December: fine snow keeps falling softly, the bare branches sway a little, and the camera pushes in very slowly toward the entrance. No people, no cuts, no text. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+```
+→ 編集者指示: 静止画（ASSET-144_still.png）か動画（ASSET-144_video.mp4）を使う（キャラは使わない）。中央に「2014年12月18日」を白字で表示し、下に小さく「事件から8か月、、」。「8か月」だけ赤字。
+
+---
+
 ナレーター: せたな町の会議で、クマへの対応が取り上げられます。
 
-【制作メモ】ASSET-145 [Lovart静止画] 台本L262
-シーン: 12月、冬の町の会議室。町の議員・職員が机を囲み、机にクマの写真と山の地図。窓の外は積雪の雪景色。参加者は後ろ姿と斜め後ろ姿で、顔は見せない。
+【制作メモ】ASSET-145 [Lovart動画] 台本L262
+シーン: 12月、冬の町の会議室（動画）。※2026-09-26 本人「ここは動画にして」。町の議員・職員が机を囲み、机にクマの写真と山の地図。窓の外は積雪の雪景色。参加者は後ろ姿と斜め後ろ姿で、顔は見せない。
 静止画プロンプト（16:9・フォトリアル）:
 ```
 A meeting room in a small rural town office in Setana, southwestern Hokkaido, in mid-December winter: long tables pushed together, around which six Japanese town council members and officials in dark suits and navy work jackets sit, seen from behind and from a three-quarter back angle, faces turned toward the table and not identifiable, one of them leaning forward to point at the table; a plain photograph of an adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms and a plain topographic map of forested hills with no lettering laid on the table, tall windows showing deep snow on the ground, snow-covered roofs and bare trees outside, a grey Sea of Japan sky. Winter is intended in this scene. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about four metres back, from behind the seated members, the upper third left as clean negative space for large lettering. Serious, heavy mood, cold grey daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
-→ 編集者指示: 静止画は新規。5秒で1.0→1.12倍に机の写真へゆっくり寄る。中央に「町の会議で議題に」を白字で表示し、「会議」だけ赤字。
+Google Flow動画プロンプト:
+```
+Keep the composition of the image exactly. One single continuous shot in the winter meeting room: the council members and officials around the table lean in over the bear photographs and the map, one of them slowly slides a photo toward the others and points at the map, snow keeps falling softly outside the window, and the camera pushes in very slowly. Everyone stays seen from behind or from the back three-quarters, no faces visible. No cuts, no new people, no text. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
+```
+→ 編集者指示: 動画 ASSET-145_video.mp4 をナレーションの尺に合わせて使う。静止画は新規。5秒で1.0→1.12倍に机の写真へゆっくり寄る。中央に「町の会議で議題に」を白字で表示し、「会議」だけ赤字。
 
 ---
 
@@ -507,10 +549,10 @@ One single continuous shot near Setana, southwestern Hokkaido, in winter: the fi
 ナレーター: しかし、問題となったクマの捕獲の報告はいまだにできておらず、町長は「今なお、事件を起こしたクマの捕獲には至っておりません」と伝えるしかありませんでした。
 
 【制作メモ】ASSET-148 [キャラアニメーション] 台本L267
-シーン: 12月、冬の町議会の演台で、捕獲に至っていないと苦しそうに報告する町長（CHAR-08）。窓の外は積雪。
+シーン: 12月、冬の町議会の演台で、捕獲に至っていないと報告する、困った顔の町長（CHAR-08）。※2026-09-26 本人「キャラ画像で困った顔にして。なんで背景だけしかないの？ちゃんと生成して」。窓の外は積雪。
 キャラプロンプト（1:1）:
 ```
-(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese town mayor in his 60s with short greying hair and black-framed glasses, CLEAN-SHAVEN with no beard and no moustache, a navy work-jacket blazer over a white shirt and navy tie, navy trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. He bows his head slightly with both hands pressed flat together in front of his chest, eyebrows slanted steeply upward, eyes squeezed half shut in anguish, mouth bent into a pained grimace, sweat running down his temples, deeply apologetic and pained, NOT calm, NOT smiling. No lettering, no badge, no logo, no name tag. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese town mayor in his 60s with short greying hair and black-framed glasses, CLEAN-SHAVEN with no beard and no moustache, a navy work-jacket blazer over a white shirt and navy tie, navy trousers and black shoes, standing square to the viewer with BOTH SHOULDERS EQUALLY VISIBLE, his face clearly visible. He stands holding a sheet of paper at his side with one hand and scratching the back of his head with the other, eyebrows slanted steeply upward, eyes wide and uneasy, mouth turned down in a worried frown, sweat running down his temples, troubled and at a loss, NOT bowing, NOT apologizing, NOT calm, NOT smiling. No lettering, no badge, no logo, no name tag. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
 ```
 背景プロンプト（16:9）:
 ```
@@ -535,6 +577,24 @@ A mountain trail entrance at the edge of a forest near Setana, southwestern Hokk
 ```
 →職員セリフ「山に／入らないでください！」
 → 編集者指示: 背景・キャラとも新規（動画は作らない。今の ASSET-149 の動画は使わない）。職員を左に置き、突き出した手のひらを小さく前後に動かす。背景に白い雪の粒を編集で降らせる。掲示板の上に「入山注意」を編集で載せる。中央上に「山に入らないで」を白字で表示し、「入らないで」だけ赤字。
+
+---
+
+ナレーター: しかし、町長は決してクマの捕獲を諦めていませんでした。
+
+【制作メモ】ASSET-150 [キャラアニメーション] 台本L271
+シーン: 町議会の演台の前で、捕獲を諦めない決意の顔で拳を握る町長（CHAR-08）。※2026-09-26 本人「ここは諦めていない顔のキャラ画像にして」。
+キャラプロンプト（1:1）:
+```
+(CHAR-08 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese town mayor in his 60s with short greying hair and black-framed glasses, a navy work-jacket blazer over a white shirt and navy tie, navy trousers and black shoes, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He clenches one fist firmly in front of his chest, eyebrows driven down hard, eyes narrowed and burning with resolve, mouth pressed into a firm determined line, a bead of sweat on his temple, determined and unyielding, NOT smiling, NOT calm. Only this one man. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
+```
+背景プロンプト（16:9）:
+```
+The podium of a small town council chamber in Setana, southwestern Hokkaido, in mid-December winter: wooden desks and a podium with a microphone, tall windows showing falling snow and snowy roofs outside. Winter is intended in this scene. No people, no figures. No readable text, no real institution name, no crest, no emblem, no logo. Framed from adult eye height about five metres back, the middle of the frame left as clear open space. Resolute, heavy overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
+```
+→ 背景は既存の ASSET-148_still.png（町議会の演台・雪の窓・人物なし）を再利用する。新しく作るのはキャラだけ。
+→町長セリフ「捕獲は／諦めません」
+→ 編集者指示: 背景は ASSET-148_still.png を再利用、キャラは新規の ASSET-150_char.png。町長を中央に置き、握った拳を小さく上下させる（動画は作らない）。中央に「諦めない」を白字で表示し、「諦めない」だけ赤字。
 
 ---
 
@@ -569,24 +629,6 @@ A snowy ridge path near Setana, southwestern Hokkaido, in March, late winter: a 
 → 背景は既存の ASSET-158_still.png（雪の尾根道に続く足跡・人物なし）をそのまま使う。新しく作るのはキャラだけ。
 →ハンターセリフ「足跡を／追うぞ」
 → 編集者指示: 背景は既存の ASSET-158_still.png、キャラは新規の ASSET-158_char.png。6人を左から中央へゆっくり歩かせて止める（動画は作らない）。中央に「5、6人で追跡」を白字で表示し、「追跡」だけ赤字。
-
----
-
-ナレーター: もしクマを見つけた場合は、その場で駆除。
-
-【制作メモ】ASSET-159 [キャラアニメーション] 台本L287
-シーン: 木立の奥の遠いヒグマを双眼鏡で見つけ、身構えるハンター（CHAR-05）。
-キャラプロンプト（1:1）:
-```
-(CHAR-05 再利用) Cute cartoon character design, thick black outlines, flat cel-shaded colors, large expressive eyes, children's animation style. A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, standing toward the viewer at a slight three-quarter angle, his face clearly visible. He lowers a pair of binoculars from his eyes with his left hand and holds his right palm out low in a hush gesture, eyebrows driven down hard, eyes narrowed to a hard stare, mouth pressed into a tight grim line, sweat running down his temple, tense and ready, NOT calm, NOT smiling. No lettering, no badge, no logo. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. 1:1 aspect ratio. Generate 1 image.
-```
-背景プロンプト（16:9）:
-```
-A thin deciduous woodland near Setana, southwestern Hokkaido, in early spring, No snow anywhere, no frost, no ice, no winter, with a distant adult Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms ON ALL FOURS far in the background among the trunks, small and distant, half-hidden by thin trees, its body larger than the shrubs around it. NOT upright, NOT on two legs. Framed from adult eye height about four metres back, the left half left as clear open space. Tense, quiet mood, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image.
-```
-→ 背景は既存の ASSET-159_bg.png（木立の奥に遠く見えるヒグマ・人物なし）をそのまま使う。新しく作るのはキャラだけ。
-→ハンターセリフ「見つけたら／ここで仕留める」
-→ 編集者指示: 背景は既存の ASSET-159_bg.png、キャラは新規の ASSET-159_char.png。ハンターを左下に置き、動かさない。背景は奥のクマへゆっくり寄る。中央に「見つけたら駆除」を白字で表示し、「駆除」だけ赤字。
 
 ---
 
