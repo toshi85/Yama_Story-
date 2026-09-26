@@ -791,6 +791,36 @@ def prompt_lint(text, errors, warns, info):
         errors.append(f'台本に泣く記述が無いのにキャラが泣いている {len(tears)}件: ' + ', '.join(dict.fromkeys(tears))
                       + '\n    → 直し方: 場面に合う顔（心配・困った・神妙）にし、"NO tears, NOT crying" と書く。泣かせるならシーン行に「泣く」と書く')
 
+    # 64) 動画のクマの頭数（2026-09-26 せたな町 082 本人「クマが二体写ってます。ちゃんとやって」）。
+    #     静止画のクマを動かす指示で「1頭だけ」と書かないと、手前に2頭目が割り込んだ。
+    # 65) 動画の長さ（2026-09-26 せたな町 198 本人「早送りになっていておかしいです」）。
+    #     fal H3 の動画は5秒。8秒分の動き（歩く→積む→閉める→乗る→走り去る）を書くと早送りになる。
+    ONE_BEAR = re.compile(r'\b(?:exactly|only) one (?:adult )?(?:brown )?bear\b', re.I)
+    LONG = re.compile(r'\b(?:[6-9]|[1-9]\d) seconds\b', re.I)
+    two_bears, too_long = [], []
+    for nar, seg in segs:
+        for lab, b in labeled_blocks(seg):
+            if '動画プロンプト' not in lab:
+                continue
+            if BEAR_ANIMAL.search(NOT_ANIMAL.sub(' ', NEGATED.sub(' ', b))) and not ONE_BEAR.search(b) \
+                    and not re.search(r'\bno (?:bear|animals?)\b', b, re.I):
+                two_bears.append(asset_no(seg))
+            if LONG.search(b):
+                too_long.append(asset_no(seg))
+    if two_bears:
+        errors.append(f'動画でクマの頭数を決めていない {len(two_bears)}件（2頭目が割り込む）: ' + ', '.join(dict.fromkeys(two_bears))
+                      + '\n    → 直し方: "There is exactly one bear in the whole shot; no other bear ever appears." と書く')
+    if too_long:
+        errors.append(f'動画に6秒以上の動きを書いている {len(too_long)}件（動画は5秒で作られ、早送りになる）: ' + ', '.join(dict.fromkeys(too_long))
+                      + '\n    → 直し方: "in real time, at a slow natural pace, NOT sped up" と書き、5秒で収まる動き1つにして "5 seconds" とする')
+
+    # 66) 同じ ASSET 番号のブロックが1つの資料に2つある（2026-09-26 せたな町: 注記の差し込み位置の検索が外れ、
+    #     Fix5a が丸ごと二重になった。後のブロックだけが生き、直したつもりの指示が使われない）。
+    dup = sorted({n for n in re.findall(r'^【制作メモ】(ASSET-\d+)', text, re.M)
+                  if len(re.findall(r'^【制作メモ】' + n + r'\b', text, re.M)) > 1})
+    if dup:
+        errors.append(f'同じ番号のブロックが2つ以上 {len(dup)}件（資料が二重になっていないか確かめる）: ' + ', '.join(dup))
+
     # 46) シーン行で向き・視線を求めているのに、英語プロンプトに指定がない。
     SCENE_DIRECTION = re.compile(r'見る|見つめ|向く|向け|振り返|指さ|指差|視線|の方へ|のほうへ|にらむ|睨')
     PROMPT_DIRECTION = re.compile(

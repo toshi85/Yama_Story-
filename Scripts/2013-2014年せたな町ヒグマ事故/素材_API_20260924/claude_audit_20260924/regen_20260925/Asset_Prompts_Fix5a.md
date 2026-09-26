@@ -81,7 +81,7 @@ Three aging Japanese hunters in their late 60s and 70s getting ready at the grav
 ```
 Google Flow動画プロンプト:
 ```
-One single continuous shot at the gravel entrance of an early-spring Hokkaido forest road: three aging Japanese hunters get ready slowly; the white-haired man straightens up stiffly with a hand on his lower back, the man on the pickup tailgate pulls on his boot, the man with the walking stick adjusts the rifle case on his back. The camera drifts slowly sideways past them. No cuts, no scene change. Faces stay turned away and never identifiable. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.
+One single continuous shot at the gravel entrance of an early-spring Hokkaido forest road: three aging Japanese hunters get ready slowly; the white-haired man straightens up stiffly with a hand on his lower back, the man on the pickup tailgate pulls on his boot, the man with the walking stick adjusts the rifle case on his back. The camera drifts slowly sideways past them. No cuts, no scene change. Faces stay turned away and never identifiable. No snow anywhere. in real time, NOT sped up. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。左上に「ハンターの高齢化」を白字で置き、「高齢化」だけ赤字。
 
@@ -295,14 +295,14 @@ A narrow mountain path through a spring forest in the Ota district of Taisei, Se
 ナレーター: さらに、先を歩いていた男性にも突進。
 
 【制作メモ】ASSET-077 [Lovart動画] 台本L137
-シーン: 山道を、ヒグマが四つ足で先へ突進していく。その先の下り道に、先を歩いていた男性（灰色の上着）の小さな後ろ姿。実在の人物なので顔は見せない。キャラは作らない。※2026-09-26 本人指示（ここは動画にして／キャラは不要です）。
+シーン: 山道を、ヒグマが四つ足で先へ突進していく。その先の下り道に、先を歩いていた男性（灰色の上着）の小さな後ろ姿。実在の人物なので顔は見せない。キャラは作らない。※2026-09-26 本人指示（ここは動画にして／キャラは不要です）。※2026-09-26 動画の途中で奥の男性が消えた（Claude の点検）→「男性は最後まで画面に残る」を明記して作り直す。
 静止画プロンプト（16:9・フォトリアル）:
 ```
 A narrow downhill forest trail near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring: bare and budding deciduous trees, brown leaf litter, dry bamboo grass, No snow anywhere, no frost, no ice, no winter. In the foreground, an adult male Hokkaido brown bear about 2 metres long and roughly 200 kilograms charges down the trail away from the camera ON ALL FOURS, NOT upright, head low, jaws open showing its fangs, ears pinned flat, fur bristled along its back, claws digging into the soil. Far ahead down the trail, small in the frame, a Japanese man in a grey jacket and navy trousers seen only from behind, his face not visible. Captured before any contact. No blood, no wounds. No readable text. Framed from low behind the bear. Tense, cold overcast light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 → **Google Flow動画プロンプト:**
 ```
-One single continuous shot: the brown bear charges forward down the forest trail on all fours toward the small figure of the man far ahead, the camera following low behind the bear, leaves and soil kicked up. The man stays small and seen only from behind; the shot ends before any contact. No blood, no wounds, no new people. Photorealistic. No music. No dialogue. 5 seconds.
+Keep the composition of the image exactly. One single continuous shot: the one brown bear in the image charges forward down the forest trail on all fours toward the small figure of the man far ahead, the camera following low behind the bear, leaves and soil kicked up. There is exactly one bear and exactly one man in the whole shot; no other bear and no other person ever appears. The man stays visible in the frame for the whole shot, small and seen only from behind, walking down the trail; he never disappears. The bear never turns around toward the camera. The shot ends before any contact. No blood, no wounds, no new people. Photorealistic. No music. No dialogue. 5 seconds.
 ```
 → 編集者指示: 動画をナレーションの尺に合わせて使う（キャラは使わない）。中央に「男性へ突進」を白字で重ね、「突進」だけ赤字。
 
@@ -317,7 +317,7 @@ One single continuous shot: the brown bear charges forward down the forest trail
 ```
 Google Flow動画プロンプト:
 ```
-One single continuous close shot on an early-spring Hokkaido forest trail: a Japanese man's hand in a grey jacket sleeve slowly tightens its grip on a Japanese nata hatchet with a broad rectangular blade; a faint rustle in the bamboo grass, and the hand lifts the hatchet a little. The camera stays close on the hand and forearm, no face ever visible. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.
+One single continuous close shot on an early-spring Hokkaido forest trail: a Japanese man's hand in a grey jacket sleeve slowly tightens its grip on a Japanese nata hatchet with a broad rectangular blade; a faint rustle in the bamboo grass, and the hand lifts the hatchet a little. The camera stays close on the hand and forearm, no face ever visible. No cuts, no scene change. No snow anywhere. in real time, NOT sped up. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。左上に「手にはナタ」を白字で置き、「ナタ」だけ赤字。旧ASSET-078_char.png と旧背景は使わない。
 
@@ -373,14 +373,14 @@ A narrow mountain path through a spring forest in the Ota district of Taisei, Se
 ナレーター: 諦めたのかそのまま山の中へ逃げていきました。
 
 【制作メモ】ASSET-082 [Lovart動画] 台本L146
-シーン: 背中を向けて四つ足で森の奥へ全速力で走り去るヒグマ（顔はこちらを向かない）。※2026-09-26 本人「ここはもっと走って逃げてく動画にして」。
+シーン: 背中を向けて四つ足で森の奥へ全速力で走り去るヒグマ（顔はこちらを向かない）。※2026-09-26 本人「ここはもっと走って逃げてく動画にして」。※2026-09-26 本人「ASSET-082_video.mp4はクマが二体写ってます。ちゃんとやって」→動画の指示に「クマは1頭だけ」を明記。奥に小さいクマの静止画からは、明記しても手前に2頭目が描き足されたので、静止画をクマが手前に大きく写る構図で作り直す。
 静止画プロンプト（16:9・フォトリアル）:
 ```
-An adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms bounding away from the camera ON ALL FOURS into dense bamboo grass and bare woods on a hillside near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring, never rearing up on its hind legs, NOT on two legs. Only its back, rump and hind legs face the camera, its face is hidden, its head already pushing into the brush. Captured as a frozen mid-stride moment, dust and dead leaves kicked up behind its hind paws. Bare and budding trees, brown leaf litter, No snow anywhere, no snow patches, no frost, no ice, no winter. The bear sits in the upper middle of the frame, the lower half is the empty trail. Framed from adult eye height about ten metres behind it. Tense, then emptying, overcast early-afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. No blood, no wounds, no gore. Generate 1 image.
+An adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms bounding away from the camera ON ALL FOURS into dense bamboo grass and bare woods on a hillside near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring, never rearing up on its hind legs, NOT on two legs. Only its back, rump and hind legs face the camera, its face is hidden, its head already pushing into the brush. Captured as a frozen mid-stride moment, dust and dead leaves kicked up behind its hind paws. Bare and budding trees, brown leaf litter, No snow anywhere, no snow patches, no frost, no ice, no winter. Exactly one bear in the image. The bear is close to the camera, about four metres away, large in the lower middle of the frame, with the empty trail leading on ahead of it up the hillside into the woods. Framed from low adult eye height about four metres behind it. Tense, then emptying, overcast early-afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. No blood, no wounds, no gore. Generate 1 image.
 ```
 Google Flow動画プロンプト:
 ```
-One single continuous shot from a fixed camera on an early-spring Hokkaido forest trail: an adult brown bear on all fours, its back and rump toward the camera, breaks into a full gallop and runs away fast uphill, bounding hard through dense bamboo grass and bare woods, leaves and soil flying from its paws, growing smaller quickly until it vanishes deep into the forest; the bamboo keeps swaying after it is gone and the trail is left empty. The bear never turns its face toward the camera and never stands up. No cuts, no scene change. No snow anywhere. Photorealistic. No music. No dialogue. 5 seconds.
+Keep the composition of the image exactly. One single continuous shot from a fixed camera on an early-spring Hokkaido forest trail: the one adult brown bear close in the foreground of the image, on all fours, its back and rump toward the camera, breaks into a full gallop and runs away fast up the trail, bounding hard through dense bamboo grass and bare woods, leaves and soil flying from its paws, growing smaller quickly until it vanishes deep into the forest; the bamboo keeps swaying after it is gone and the trail is left empty. There is exactly one bear in the whole shot; no other bear ever appears, and nothing passes close in front of the camera. The bear never turns its face toward the camera and never stands up. No cuts, no scene change. No snow anywhere. Photorealistic. No music. No dialogue. 5 seconds.
 ```
 → 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。左上に「山の中へ逃走」を白字で置き、「逃走」だけ赤字。
 
@@ -491,7 +491,7 @@ A newly installed bear warning sign beside a country road along the forested hil
 ```
 Google Flow動画プロンプト:
 ```
-One single continuous shot beside an early-spring Hokkaido country road: gloved hands in navy sleeves give the clamp of a new bear warning sign a final turn with a spanner and let go; the camera slowly pulls back and pans to reveal a second new sign further along the empty road and the bare forested hills. Only hands and forearms ever appear, no face visible. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.
+One single continuous shot beside an early-spring Hokkaido country road: gloved hands in navy sleeves give the clamp of a new bear warning sign a final turn with a spanner and let go; the camera slowly pulls back and pans to reveal a second new sign further along the empty road and the bare forested hills. Only hands and forearms ever appear, no face visible. No cuts, no scene change. No snow anywhere. in real time, NOT sped up. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。看板に「クマ出没注意」の文字が入っているので、看板の文字は重ねない。左上に「周辺の道にも看板」を白字で置き、「看板」だけ赤字。旧ASSET-090_char.png は使わない。
 
@@ -524,7 +524,7 @@ A small genetics laboratory bench in a research facility in Hokkaido, in early A
 ```
 Google Flow動画プロンプト:
 ```
-One single continuous close shot on a laboratory bench: two gloved hands in white lab-coat sleeves bring two small capped sample tubes side by side, pause, then set them carefully into the rack next to each other. The camera pushes in very slowly. Only hands and forearms appear, no face visible. No readable labels. No cuts, no scene change. 8 seconds. Photorealistic, shot on RED camera. Documentary style.
+One single continuous close shot on a laboratory bench: two gloved hands in white lab-coat sleeves bring two small capped sample tubes side by side, pause, then set them carefully into the rack next to each other. The camera pushes in very slowly. Only hands and forearms appear, no face visible. No readable labels. No cuts, no scene change. in real time, NOT sped up. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。左右の試験管の上に「2014年」「2013年」を白字で小さく置く。中央に「前年のDNAと照合」を白字で表示し、「DNA」だけ赤字。
 
@@ -557,7 +557,7 @@ A single adult male Hokkaido brown bear (Ursus arctos yesoensis) about 2 metres 
 ```
 Google Flow動画プロンプト:
 ```
-One single continuous shot from a fixed camera at the edge of an early-spring Hokkaido forest: a single adult brown bear on all fours steps slowly out of the shadowed bamboo grass toward the camera, head low, fangs bared, ears pinned flat, eyes fixed on the lens, and stops. It never stands up on two legs. No cuts, no scene change, no zoom. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.
+One single continuous shot from a fixed camera at the edge of an early-spring Hokkaido forest: a single adult brown bear on all fours steps slowly out of the shadowed bamboo grass toward the camera, head low, fangs bared, ears pinned flat, eyes fixed on the lens, and stops. It never stands up on two legs. No cuts, no scene change, no zoom. No snow anywhere. in real time, NOT sped up. 5 seconds. Photorealistic, shot on RED camera. Documentary style. There is exactly one bear in the whole shot; no other bear ever appears.
 ```
 → 編集者指示: 動画をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。左上に026の女性（2013年・52歳）、右上に076の女性（2014年・45歳）を小さく置き、それぞれからクマへ白い矢印を引く。中央に「同じクマ」を白字で表示し、「同じ」だけ赤字。
 

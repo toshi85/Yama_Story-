@@ -53,6 +53,12 @@ CASES = [
     ("168 台本に無い泣き顔",
      lambda t: t.replace("(CHAR-05 再利用) Cute cartoon character design,", "(CHAR-05 再利用) Tears streaming down his cheeks, crying. Cute cartoon character design,", 1),
      "泣いている"),
+    ("082 動画のクマの頭数が無い",
+     lambda t: t.replace("→女性セリフ「娘さんに／会いに行くはずだったのに、、」", "→ Google Flow動画プロンプト:\n```\nOne single continuous shot: a brown bear runs away up the trail. 5 seconds.\n```\n→女性セリフ「娘さんに／会いに行くはずだったのに、、」"),
+     "クマの頭数"),
+    ("198 動画に8秒分の動き",
+     lambda t: t.replace("→女性セリフ「娘さんに／会いに行くはずだったのに、、」", "→ Google Flow動画プロンプト:\n```\nOne single continuous shot: two hunters walk to a van, load it and drive away. 8 seconds.\n```\n→女性セリフ「娘さんに／会いに行くはずだったのに、、」"),
+     "6秒以上"),
 ]
 
 

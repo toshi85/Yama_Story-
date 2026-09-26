@@ -1,15 +1,12 @@
 [
   {
-    "id": "ASSET-125_overlay",
-    "kind": "キャラアニメーション",
-    "slot": "overlay",
-    "aspect": "1:1",
-    "prompt": "Simple flat cartoon sticker illustration for children, in the style of plain clean vector clip art. Bold uniform black outline of even thickness around the figure and around each interior shape. Absolutely flat solid fill colours - one flat tone per area, plus at most one slightly darker tone as a simple shadow. No gradients, no airbrushing, no blush, no cheek shading, no skin shading, no soft light, no ambient occlusion, no texture, no fabric pattern, no glossy highlights except one small white dot in each eye. Very large head, about one third of the total height, three heads tall overall, short stubby limbs, small simple mitten-like hands. Simple oval eyes with plain dark irises, tiny simple nose, small simple mouth, plain flat face with no wrinkles and no detailed features. Keep the clothing extremely simple: only a few large plain shapes, no small pockets, no straps, no cords, no buckles, no badges, no gadgets, no accessories other than the ones listed. If the description below mentions many pockets, straps or accessories, simplify them into a few plain shapes. Full body head to feet, whole figure inside the frame, centred. Standing on all four legs in a side-front view, never upright and never on two legs. (CHAR-11 再利用) One cartoon adult Hokkaido brown bear about 2 metres long and roughly 200 kilograms, full body, walking away to the right ON ALL FOURS, NOT upright, NOT on two legs, glancing back over its shoulder toward the viewer, eyebrows driven down, eyes narrowed and glaring, ears pinned flat, mouth open showing its teeth in a snarl, the fur on its back bristled, unhurried and defiant. Only this one bear, no people. No lettering, no logo. Transparent background, real alpha transparency. Generate 1 image. No written words or lettering anywhere. Fully transparent background, PNG with alpha, no backdrop and no ground shadow. 1:1 square aspect ratio.",
-    "deliver_as": "ASSET-125_bear.png",
-    "md": "Asset_Prompts_Fix6.md",
-    "note": "関所の見本用（生成リスト外・納品しない）",
-    "char_refs": [
-      "CHAR-11"
-    ]
+    "id": "ASSET-082_still",
+    "slot": "still",
+    "aspect": "16:9",
+    "prompt": "An adult male Hokkaido brown bear about 2 metres long and roughly 150 to 250 kilograms bounding away from the camera ON ALL FOURS into dense bamboo grass and bare woods on a hillside near Ota in the Taisei district of Setana, southwestern Hokkaido, in early April early spring, never rearing up on its hind legs, NOT on two legs. Only its back, rump and hind legs face the camera, its face is hidden, its head already pushing into the brush. Captured as a frozen mid-stride moment, dust and dead leaves kicked up behind its hind paws. Bare and budding trees, brown leaf litter, No snow anywhere, no snow patches, no frost, no ice, no winter. Exactly one bear in the image. The bear is close to the camera, about four metres away, large in the lower middle of the frame, with the empty trail leading on ahead of it up the hillside into the woods. Framed from low adult eye height about four metres behind it. Tense, then emptying, overcast early-afternoon light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. No blood, no wounds, no gore. Generate 1 image.",
+    "deliver_as": "ASSET-082_still.png",
+    "md": "Asset_Prompts_Fix5a.md",
+    "char_refs": [],
+    "kind": "静止画"
   }
 ]

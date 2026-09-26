@@ -341,14 +341,14 @@ Two paper wall calendars pinned side by side on a plain light wooden wall in a s
 ナレーター: 町は、女性たちを襲ったクマを捜すため、大規模な捜索の準備がはじまりました。
 
 【制作メモ】ASSET-155 [Lovart動画] 台本L279
-シーン: 2015年3月、残雪の残る役場の駐車場で、ハンターと町の職員が大規模捜索の装備をワゴン車に積み込む（実写・後ろ姿や横向きで顔は見せない）。※2026-09-26 本人「ここは動画にして」「キャラ画像ではなく」。
+シーン: 2015年3月、残雪の残る役場の駐車場で、ハンターと町の職員が大規模捜索の装備をワゴン車に積み込む（実写・後ろ姿や横向きで顔は見せない）。※2026-09-26 198と同じく8秒分の動きを5秒に詰めて速かったので、ゆっくりした動き1つに書き直す。※2026-09-26 本人「ここは動画にして」「キャラ画像ではなく」。
 静止画プロンプト（16:9・フォトリアル）:
 ```
 The parking lot in front of a small two-storey town office in Setana, southwestern Hokkaido, in March late winter: patches of old snow along the edges of the lot, bare trees, a grey overcast sky. Beside two plain white vans with their side doors open, a group of Japanese hunters in blaze-orange caps and vests and Japanese town staff in navy work jackets load backpacks, coils of rope, radios and cased rifles into the vans, seen from behind and from the side, their faces turned away and not visible. Late-winter snow is intended in this scene. No readable signs, no real institution name, no crest, no emblem, no logo, no lettering on the vans. Captured as a frozen moment. Framed from adult eye height about eight metres back. Busy, resolute mood, cold grey light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 Google Flow動画プロンプト:
 ```
-Keep the composition of the image exactly. One single continuous shot in a snowy town office parking lot in late winter: Japanese hunters in blaze-orange vests and town staff in navy jackets carry backpacks and coils of rope to two white vans and load them in, one hunter shoulders a backpack, a side door slides shut. Their faces are never visible. No cuts, no scene change, no text. 8 seconds. Photorealistic, shot on RED camera. Documentary style.
+Keep the composition of the image exactly. One single continuous shot in real time, at a slow natural pace, NOT sped up, NOT fast motion: in the snowy town office parking lot, one Japanese hunter in a blaze-orange vest slowly lifts one backpack into the open side door of the white van; everyone else stands almost still, moving only slightly. Their faces are never visible. Only this one simple action. No cuts, no scene change, no text. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: 動画（ASSET-155_video.mp4）をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。中央に「大規模捜索へ」を白字で表示し、「大規模」だけ赤字。旧 ASSET-155_bg.png と ASSET-155_char.png は使わない。
 
@@ -507,14 +507,14 @@ A view from a wooded hillside near Setana, southwestern Hokkaido, in April early
 ナレーター: せたな町は、正式に実施していたクマの捜索を打ち切りとなり、
 
 【制作メモ】ASSET-198 [Lovart動画] 台本L358
-シーン: 捜索の打ち切り。林道の奥から出てきたハンターたちが、入口に止めた白いワゴン車へ装備を積んで町へ帰っていく（実写・後ろ姿で顔は見せない）。※2026-09-26 本人「ここは山に向かっていく動画になってしまってます。帰る動画にして」→カメラを林道の中に置き、町の側（出口）へ向かって歩き去る向きに作り直す。
+シーン: 捜索の打ち切り。※2026-09-26 本人「ASSET-198_video.mp4は早送りになっていておかしいです」→ 5秒で収まるゆっくりした動き1つに書き直す（8秒分の動きを5秒の動画に詰めていた）。林道の奥から出てきたハンターたちが、入口に止めた白いワゴン車へ装備を積んで町へ帰っていく（実写・後ろ姿で顔は見せない）。※2026-09-26 本人「ここは山に向かっていく動画になってしまってます。帰る動画にして」→カメラを林道の中に置き、町の側（出口）へ向かって歩き去る向きに作り直す。
 静止画プロンプト（16:9・フォトリアル）:
 ```
 A gravel forest track in leafless woods near Setana, southwestern Hokkaido, in April early spring, seen from inside the woods looking back out toward the track entrance: at the entrance, where the trees open onto a paved road, a plain white van with no lettering is parked with its rear hatch open; beyond it the low roofs of the town and a grey sky. On the track, seen only from behind, two Japanese hunters in blaze-orange caps and vests walk away from the camera toward the van, one carrying a backpack on his shoulder and a coil of rope, the other a cased rifle on his back, their heads a little bowed, faces not visible. Bare birch and deciduous trees, low bamboo grass along the edges, brown leaf litter, No snow anywhere, no snow patches, no frost, no ice, no winter. No readable text, no logo. Captured as a frozen moment. Framed from adult eye height about eight metres behind them. Tired, subdued mood, soft late-afternoon overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 Google Flow動画プロンプト:
 ```
-Keep the composition of the image exactly. One single continuous shot from a fixed camera inside a forest track looking out toward the entrance: two Japanese hunters in blaze-orange vests, seen only from behind, walk slowly away from the camera out of the woods, reach the white van, load the backpack and rope into the rear, close the hatch and get in; the van drives off toward the town, leaving the track entrance empty. Their faces are never visible. They never turn back toward the woods. No cuts, no scene change, no text. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.
+Keep the composition of the image exactly. One single continuous shot from a fixed camera inside a forest track looking out toward the entrance, in real time, at a slow natural walking pace, NOT sped up, NOT fast motion: the two Japanese hunters in blaze-orange vests, seen only from behind, walk slowly away down the track toward the parked white van, covering only a few metres. The van stays parked and does not move. Their faces are never visible. They never turn back toward the woods. Only this one simple action. No cuts, no scene change, no text. No snow anywhere. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: 動画（ASSET-198_video.mp4）をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。中央に「捜索を打ち切り」を白字で表示し、「打ち切り」だけ赤字。前の ASSET-198_video.mp4（山へ向かう動画）と ASSET-198_bg.png・旧 ASSET-198_char.png は使わない。
 
@@ -573,14 +573,14 @@ An open metal storage shed beside an old rural house in a seaside settlement nea
 ナレーター: この結果を知った現場のハンターは、「せたな町、今金町とも密に情報交換していれば、もっと早く地元の不安を取りのぞけていた」と語っていました。
 
 【制作メモ】ASSET-208 [Lovart動画] 台本L378
-シーン: 役場の一室でインタビューに答える現場のハンター（実写。首から下だけを映し、顔は映さない）。※2026-09-26 本人「ここは実写動画でインタビューに答える感じにして。首から上は映らない感じ」。
+シーン: 役場の一室でインタビューに答える現場のハンター（実写。※2026-09-26 198と同じ理由で、手の動きを1回だけのゆっくりした動きに書き直す。首から下だけを映し、顔は映さない）。※2026-09-26 本人「ここは実写動画でインタビューに答える感じにして。首から上は映らない感じ」。
 静止画プロンプト（16:9・フォトリアル）:
 ```
 A documentary interview shot in a plain room of a small rural town office in Setana, southwestern Hokkaido, in summer: a Japanese hunter in his 60s sits on a simple chair facing slightly to the left of the camera, wearing a dark green field jacket under a blaze-orange safety vest and khaki trousers, his weathered hands resting on his knees, one hand half raised as he speaks. The frame is cropped at his neck: only his body from the collar down to his knees is visible, his head and face are completely out of frame. A plain wall and part of a window with green trees behind him, softly out of focus. No snow anywhere, no frost, no ice, no winter. No readable text, no badge, no logo, no microphone brand. Captured as a frozen moment. Framed at seated chest height about two metres away. Serious, regretful mood, soft natural window light, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 Google Flow動画プロンプト:
 ```
-Keep the composition of the image exactly, cropped at the neck. One single continuous shot of a seated Japanese hunter in a blaze-orange vest giving an interview: his weathered hands move slowly as he talks, one hand opening and closing, then both hands clasp together tightly on his knees in regret. His head and face never enter the frame. No cuts, no scene change, no text, no subtitles. 8 seconds. Photorealistic, shot on RED camera. Documentary style.
+Keep the composition of the image exactly, cropped at the neck. One single continuous shot of a seated Japanese hunter in a blaze-orange vest giving an interview, in real time, at a slow natural pace, NOT sped up: his weathered right hand moves slowly and gently once as he talks, then comes to rest on his knee. His head and face never enter the frame. Only this one simple action. No cuts, no scene change, no text, no subtitles. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: 動画（ASSET-208_video.mp4）をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。下部に「地元のハンター」を白字で置き、中央に「もっと早く情報交換していれば」。「情報交換」だけ赤字。旧 ASSET-208_char.png と ASSET-208_still.png は使わない。
 
@@ -603,14 +603,14 @@ Cute cartoon character design, thick black outlines, flat cel-shaded colors, lar
 ナレーター: 音を出すことや複数で歩くことで、必ずしも危険がなくなる保証にはなりません。
 
 【制作メモ】ASSET-214 [Lovart動画] 台本L390
-シーン: 熊鈴を鳴らし声をかけ合いながら2人で歩いていても、やぶの奥を警戒する登山者（実写・後ろ姿で顔は見せない）。※2026-09-26 本人「ここは実写動画にして」。
+シーン: 熊鈴を鳴らし声をかけ合いながら2人で歩いていても、やぶの奥を警戒する登山者（実写・後ろ姿で顔は見せない）。※2026-09-26 198と同じ理由で、ゆっくり歩く動き1つに書き直す。※2026-09-26 本人「ここは実写動画にして」。
 静止画プロンプト（16:9・フォトリアル）:
 ```
 A narrow forest hiking trail through budding deciduous woods and dense bamboo thickets near Setana, southwestern Hokkaido, in May spring. On the trail two Japanese hikers in their 50s walk one behind the other away from the camera, seen only from behind: the front one in a blue windbreaker with a small brass bear bell hanging from his backpack, the rear one in a red jacket, both with trekking poles; they are two distinct individuals, no two dressed alike; the rear hiker has turned his head a little toward the thick bamboo on the right, his face not visible. Fresh pale green leaves, brown leaf litter, No snow anywhere, no snow patches, no frost, no ice, no winter. No animals visible. No readable text, no logo. Captured as a frozen moment. Framed from adult eye height about six metres behind them. Uneasy, watchful mood, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image.
 ```
 Google Flow動画プロンプト:
 ```
-Keep the composition of the image exactly. One single continuous shot from behind on a forest trail in spring: two Japanese hikers walk slowly away from the camera, the bear bell on the front hiker's backpack swinging; the rear hiker stops, turns his head toward the thick bamboo on the right and listens, then walks on. Their faces are never visible. No animals appear. No cuts, no scene change, no text. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.
+Keep the composition of the image exactly. One single continuous shot from behind on a forest trail in spring, in real time, at a slow cautious walking pace, NOT sped up, NOT fast motion: the two Japanese hikers walk slowly away from the camera, covering only a few metres, the bear bell on the front hiker's backpack swinging gently, and the rear hiker turns his head toward the thick bamboo on the right. Their faces are never visible. No animals appear. No cuts, no scene change, no text. No snow anywhere. 5 seconds. Photorealistic, shot on RED camera. Documentary style.
 ```
 → 編集者指示: 動画（ASSET-214_video.mp4）をナレーションの尺に合わせて使う。足りなければ再生速度を落として尺いっぱい。熊鈴の小さな音を効果音で重ねる。左上に「安全の保証なし」を白字で置き、「保証なし」だけ赤字。旧 ASSET-214_still.png と ASSET-214_char.png は使わない。
 
