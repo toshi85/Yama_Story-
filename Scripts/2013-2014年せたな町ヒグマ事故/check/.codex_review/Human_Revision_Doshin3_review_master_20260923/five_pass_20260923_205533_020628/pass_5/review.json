@@ -1,0 +1,34 @@
+{
+  "reviewer": "Codex",
+  "full_text_read": true,
+  "checks": {
+    "japanese": true,
+    "names_numbers": true,
+    "meaning_timeline": true,
+    "duplication": true,
+    "readability": true,
+    "structure": true,
+    "sources": true,
+    "respect": true,
+    "first_time_clarity": true
+  },
+  "summary": "最終版の全文を五度目に通読。追加した4カ所は出典で言える範囲を超えず、話の進行に役割がある。旧稿の本人表現は今回の増補範囲では原則維持し、移動動機の断定のみ整合性のため削除した。",
+  "chapter_reviews": [
+    {
+      "chapter": 1,
+      "note": "イントロでクマの行方を問い、2013年の捜索・目撃情報・住民の体験を初見でも区別できる順で提示している。",
+      "plain_summary": "女性が山から戻らず、夫の通報を受けて捜索が始まるが、加害個体は見つからない。"
+    },
+    {
+      "chapter": 2,
+      "note": "2014年の襲撃から捜索、別個体の捕獲、年末の議会へ時間が進む。5人の免許取得者と猟友会の即応性を原因と結果の断定にしない。",
+      "plain_summary": "同じクマに再び襲われた後も捜索は空振りし、町は人員と体制の両面を考える。"
+    },
+    {
+      "chapter": 3,
+      "note": "2015年に前年の捕獲が判明した事実、町の季節移動説、住民の安堵が混ざらない。結末と安全への注意まで通読して追加部の重複を確認。",
+      "plain_summary": "クマは前年夏に今金で捕獲済みと分かり、町は捜索を終えつつ入山者への注意を続ける。"
+    }
+  ],
+  "issues": []
+}

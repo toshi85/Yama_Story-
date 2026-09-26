@@ -1,0 +1,12 @@
+{
+  "reviewer": "Codex",
+  "full_text_read": true,
+  "checks": {"japanese": true, "names_numbers": true, "meaning_timeline": true, "duplication": true, "readability": true, "structure": true, "sources": true, "respect": true, "first_time_clarity": true},
+  "summary": "二度目の全文通読。2013年の住民証言の次に当日の猟友会の捜索へ進み、削除した説明文を補う必要はない。元稿の残る文章は本人の今回の削除指示に含まれないため維持。",
+  "chapter_reviews": [
+    {"chapter": 1, "note": "発見・住民証言・当日の捜索の順を確認。『この年の春』の目撃通報と『以前に3回ほど』の証言は時点が区別される。", "plain_summary": "2013年に山菜採りの女性が襲われ、町と猟友会が加害個体を捜し始める。"},
+    {"chapter": 2, "note": "2014年の襲撃から別個体の捕獲、12月の会議まで、女性・同行男性・ハンター・町長を混同しないか確認。", "plain_summary": "翌年の被害後もクマを見つけられず、町は捜索と人員面の対応を続ける。"},
+    {"chapter": 3, "note": "2015年の捜索期間と、前年8月に今金町で捕まっていた結果が明確に分かれる。季節移動の理由は町の見立てと限定。", "plain_summary": "遺伝子の照合で、捜していたクマが前年に捕獲済みだったと分かる。"}
+  ],
+  "issues": []
+}

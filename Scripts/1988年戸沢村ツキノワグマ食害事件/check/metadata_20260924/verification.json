@@ -1,0 +1,35 @@
+{
+  "video_id": "xgwRe6lqDGw",
+  "watch_url": "https://youtu.be/xgwRe6lqDGw",
+  "studio_url": "https://studio.youtube.com/video/xgwRe6lqDGw/edit",
+  "verified_date": "2026-09-24",
+  "verification_method": "YouTube Data APIで保存後の概要欄・タイトル・公開設定を再取得し、概要欄の構成検査もPASS",
+  "privacy": "限定公開",
+  "title": "半年で3人が犠牲に…1988年戸沢村ツキノワグマ連続襲撃事件",
+  "description_saved": true,
+  "chapters_count": 9,
+  "watch_page_chapters_recognized": [
+    "0:51",
+    "4:58",
+    "9:36"
+  ],
+  "amazon_links": [
+    "https://link.amazon/B04FVwJpT",
+    "https://link.amazon/B09EtYziP"
+  ],
+  "tags": [
+    "戸沢村",
+    "山形県戸沢村",
+    "1988年戸沢村ツキノワグマ食害事件",
+    "ツキノワグマ",
+    "クマ被害",
+    "クマ襲撃",
+    "熊事件",
+    "山形県",
+    "獣害事件"
+  ],
+  "ai_use_disclosure": "はい",
+  "notes": "2026-09-24の再編集後、書籍・Kindle Unlimited案内と「▼ ご注意」の指定文はなし。おすすめ商品は本人指定の見本と同じ表記。29本の更新をAPIで再取得して照合。",
+  "description_layout": "おすすめ商品→動画概要→目次→参考資料→再生リスト→免責・クレジット→ハッシュタグ→文末のAmazonアソシエイト表記",
+  "latest_verification": ".codex/analysis/yama-affiliate-all-videos-20260923/description_cleanup_20260924/verification.json"
+}

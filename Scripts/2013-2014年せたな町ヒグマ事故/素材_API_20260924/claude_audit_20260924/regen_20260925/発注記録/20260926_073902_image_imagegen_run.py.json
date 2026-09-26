@@ -1,0 +1,18 @@
+{
+ "at": "2026-09-26T07:39:02",
+ "tool": "imagegen/run.py",
+ "kind": "image",
+ "paid": false,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix2.md",
+ "md_sha256": "1d830a4844e85bf8086075d6eb8292cd495ebd3ea47eba00c0719877fda1773c",
+ "sample_approved": true,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925"
+ ],
+ "items": [
+  {
+   "id": "ASSET-014_still",
+   "prompt": "A high aerial drone view over the coast of Setana on the Sea of Japan in southwestern Hokkaido, in mid-April early spring: a calm grey-blue sea, rocky headlands and a sea stack, a small quiet town of low houses along the shore, forested hills behind with bare and budding trees, no snow anywhere except a few thin patches on the distant ridges, no winter. The camera looks forward and slightly down from about 150 metres above the shoreline. No people visible, no readable signs, no real institution name, no crest, no emblem, no logo. Soft overcast morning light, calm and quiet mood, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+  }
+ ]
+}

@@ -74,7 +74,10 @@
   // 🚨 naturalWidth で選ばない。裏のタブでは画像がデコードされず 0 のままになり、
   //    「完了したのに画像が無い」と誤診する（実測）。実体の確認は後段の blob サイズで行う。
   const imgEls = () => [...document.querySelectorAll('main img')]
-    .filter((i) => i.src && /backend-api\/estuary\/content|oaiusercontent|^blob:/.test(i.src));  // 2026-09-25: 新UIは blob: で出る
+    .filter((i) => i.src && /backend-api\/estuary\/content|oaiusercontent|^blob:/.test(i.src))  // 2026-09-25: 新UIは blob: で出る
+    // 2026-09-26: こちらが添えた基準画像（alt「ユーザーの添付画像」・ユーザー発言内）を生成画像と取り違えない。
+    //   生成が失敗した会話で、添付の CHAR-05.png がそのまま 117/120/122/128 として保存された（完全一致）。
+    .filter((i) => !/添付|upload|attach/i.test(i.alt || '') && !(i.closest && i.closest('[data-message-author-role="user"],[data-user-message-bubble="true"]')));
   // 2026-09-25: 新UIは長い送信文を「…\n展開」で折りたたむ（実測: 2,256字のキャラ文が「送信した要求文の表示を確認できません」で2回失敗）
   const norm = (s) => s.replace(/\s*…?\s*(?:表示を増やす|表示を減らす|Show more|Show less|展開|折りたたむ|Expand|Collapse)\s*$/, '').replace(/\s+/g, ' ').trim();
   const users = () => [...document.querySelectorAll('[data-message-author-role="user"],[data-user-message-bubble="true"]')];

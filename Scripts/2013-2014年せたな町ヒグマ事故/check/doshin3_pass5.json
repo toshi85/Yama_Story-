@@ -1,0 +1,12 @@
+{
+  "reviewer": "Codex",
+  "full_text_read": true,
+  "checks": {"japanese": true, "names_numbers": true, "meaning_timeline": true, "duplication": true, "readability": true, "structure": true, "sources": true, "respect": true, "first_time_clarity": true},
+  "summary": "5周目に冒頭から末尾まで再読。追加3文は2013年の現場・人物、2015年の警戒という別の役割があり、繰り返しや尺埋めになっていない。説明のない推測、道路距離の食い違い、被害者の販売動機を加えていない。今回の本人修正版との差分は3文のみ。",
+  "chapter_reviews": [
+    {"chapter": 1, "note": "導入から2013年の初動まで、何が起きたかと集落・家族への近さを確認。", "plain_summary": "2013年、せたな町で山菜採りの女性が亡くなり、近くに暮らす住民への警戒が始まった。"},
+    {"chapter": 2, "note": "2014年の事故、反撃、クマのDNA一致、捜索の難航を確認。", "plain_summary": "翌年、同じクマが別地区で人を襲い、町はその個体を探し続けた。"},
+    {"chapter": 3, "note": "2015年の入山状況から鑑定結果と結びまで、知っている時点の違いを確認。", "plain_summary": "危険なクマが未捕獲と思われる中、前年の捕獲個体がそのクマだったと分かった。"}
+  ],
+  "issues": []
+}

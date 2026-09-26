@@ -1,0 +1,20 @@
+{
+ "at": "2026-09-26T10:17:52",
+ "tool": "fal_video_queue.py",
+ "kind": "video",
+ "paid": true,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix5c.md",
+ "md_sha256": "708533d08979b0d7e05a7cb44f912ac89af9993223ca6cf26839c6d675863f09",
+ "sample_approved": true,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/video_plan_regen.json",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/動画_H3"
+ ],
+ "items": [
+  {
+   "id": "H3_211",
+   "prompt": "One single continuous shot from a fixed camera on a spring mountain trail in Hokkaido: a small brass bell on a strap swings gently on a tree stump beside a portable radio in the foreground, while an adult brown bear on all fours walks calmly across the trail further up, never turning its head toward the radio or the bell, and disappears into the low bamboo. It never stands up on two legs. No cuts, no scene change, no zoom. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+  }
+ ]
+}

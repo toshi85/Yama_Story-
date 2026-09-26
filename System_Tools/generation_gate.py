@@ -249,7 +249,21 @@ def slots_in_md(md_path, kind):
         return set()
 
 
+SWITCH = HERE / "見本承認の設定.json"
+
+
+def approval_required():
+    """見本の本人承認を求めるか。本人が 見本承認の設定.json で切り替える（2026-09-25 本人「この仕組みは面倒なので、
+    解除できるようにしておいて」）。ファイルが無い・読めないときは求める（従来どおり）。"""
+    try:
+        return json.loads(SWITCH.read_text(encoding="utf-8")).get("見本承認を求める", True) is not False
+    except Exception:
+        return True
+
+
 def approved(md_path, kind):
+    if not approval_required():
+        return True
     return _read(APPROVALS, f"{header_key(md_path)}_{kind}.json") is not None
 
 

@@ -1,0 +1,12 @@
+{
+  "reviewer": "Codex",
+  "full_text_read": true,
+  "checks": {"japanese": true, "names_numbers": true, "meaning_timeline": true, "duplication": true, "readability": true, "structure": true, "sources": true, "respect": true, "first_time_clarity": true},
+  "summary": "2周目は追加箇所が前後の時間の流れを妨げないかを中心に全文を再読。2013年の現場位置は発見直後、訪問予定は初動対策前、2015年の車は入山自粛の直後にあり、それぞれ文脈が成立する。家族の予定を採集の理由と誤読させる接続はない。",
+  "chapter_reviews": [
+    {"chapter": 1, "note": "発見地点は車から200m、集落は現場から南へ200mと、それぞれ起点を文中で確認できる。", "plain_summary": "2013年、女性が亡くなり、集落からも近い山でクマの捜索と住民への注意喚起が始まる。"},
+    {"chapter": 2, "note": "太田の襲撃、同一個体の判明、別個体の捕獲、年末の未解決が時系列で追える。", "plain_summary": "2014年、同じクマが別の女性を襲い、別のクマを捕えても問題の個体は特定できなかった。"},
+    {"chapter": 3, "note": "入山自粛と山菜採りの車の対比から、捜索・DNA鑑定の結末へつながる。", "plain_summary": "2015年も人々が山に入る中、捜索対象のクマは前年に隣町で駆除済みだったと分かる。"}
+  ],
+  "issues": []
+}

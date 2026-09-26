@@ -1,0 +1,12 @@
+{
+  "reviewer": "Codex",
+  "full_text_read": true,
+  "checks": {"japanese": true, "names_numbers": true, "meaning_timeline": true, "duplication": true, "readability": true, "structure": true, "sources": true, "respect": true, "first_time_clarity": true},
+  "summary": "冒頭から結びまで通読。新成集落の約200mは車からの発見距離と起点が違うことを確認。翌日の訪問予定は住民談で、採集動機へ拡張していない。2015年の車は入山自粛の直後に置き、警戒との対比が一度聞いて追える。既存の本人原稿は今回の追加対象外として保持。",
+  "chapter_reviews": [
+    {"chapter": 1, "note": "2013年の事故、二つの200mの起点、住民談、初動捜索まで主語・時系列を確認。", "plain_summary": "女性が山菜採りから戻らず亡くなり、現場は集落にも近く、町がクマを捜し始めた。"},
+    {"chapter": 2, "note": "2014年の別地区の事故、男性の反撃、DNA一致、2014年末までの未捕獲という順を確認。", "plain_summary": "翌年も同じクマが人を襲い、町は捜したが、その年の暮れにはまだ見つかったと認識していなかった。"},
+    {"chapter": 3, "note": "2015年の警戒と入山者の車、広域捜索、過去の捕獲個体のDNA一致を確認。", "plain_summary": "町が三度目の事故を警戒する中、前年に別の町で捕獲されたクマが問題の個体だと分かった。"}
+  ],
+  "issues": []
+}

@@ -1,0 +1,14 @@
+{
+  "reviewer": "Codex",
+  "full_text_read": true,
+  "checks": {"japanese": true, "names_numbers": true, "meaning_timeline": true, "duplication": true, "readability": true, "structure": true, "sources": true, "respect": true, "first_time_clarity": true},
+  "summary": "全文を順に読み、今回の4増補の位置と前後の因果を確認。移動の動機を断定する旧文が新しい季節移動の留保と衝突したため、動機表現のみ削除して全文を再読した。",
+  "chapter_reviews": [
+    {"chapter": 1, "note": "春の町への通報と住民の過去の遭遇体験を別時点として区別。夫の捜索から公的な捜索・住民対策まで主語を追える。", "plain_summary": "妻を探した夫が事故の手掛かりを見つけ、町と猟友会がクマを捜すが見つからない。"},
+    {"chapter": 2, "note": "2014年の女性・同行男性・猟友会・議員の行動を別々に確認。12月の新規5人と即応体制の論点は同じ意味の反復ではない。", "plain_summary": "翌年、同じクマが別の山で女性を襲い、捜索後も捕まらず、町議会では追跡体制が問題になる。"},
+    {"chapter": 3, "note": "2015年の捜索から前年8月の捕獲判明へ進む順序を確認。海側から内陸への説明は町の見立てに限定した。", "plain_summary": "町が探したクマは前年に隣町で捕まっており、遺伝子の一致でようやく判明する。"}
+  ],
+  "issues": [
+    {"chapter": 3, "description": "旧文の『人間から逃げるように』がクマの移動動機を断定するように聞こえる", "resolution": "動機を削り、今金まで移動して捕獲された確認事実だけに直し、修正後の全文を再読", "status": "resolved"}
+  ]
+}

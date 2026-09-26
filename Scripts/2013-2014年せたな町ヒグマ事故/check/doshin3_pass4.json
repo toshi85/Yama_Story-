@@ -1,0 +1,12 @@
+{
+  "reviewer": "Codex",
+  "full_text_read": true,
+  "checks": {"japanese": true, "names_numbers": true, "meaning_timeline": true, "duplication": true, "readability": true, "structure": true, "sources": true, "respect": true, "first_time_clarity": true},
+  "summary": "4周目は読み上げのつながりと被害者配慮を全文確認。訪問予定は短い住民談にとどめ、娘のための採集など悲劇性を増幅する推測を入れていない。2015年の車は新たな被害者の描写でなく、同時期の入山状況だと理解できる。",
+  "chapter_reviews": [
+    {"chapter": 1, "note": "亡くなった場面から集落の近さ、残された家族の予定、初動対応への流れを確認。", "plain_summary": "最初の事故は集落に近い山で起き、町は人が襲われたクマへの警戒を始めた。"},
+    {"chapter": 2, "note": "反撃、負傷者、DNA判定、捜索不成功の各主語が一度聞いて分かるかを確認。", "plain_summary": "翌年も同じクマが襲い、男性の反撃で女性は助かったが、クマの捜索は続いた。"},
+    {"chapter": 3, "note": "入山自粛と山菜採りの車の対比は説明を膨らませず、後の鑑定の反転へ進む。", "plain_summary": "三度目の事故を警戒する町で人々は山へ入り、後にクマが前年に駆除済みだと判明した。"}
+  ],
+  "issues": []
+}

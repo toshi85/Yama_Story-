@@ -1,0 +1,15 @@
+{
+  "reviewer": "Codex",
+  "full_text_read": true,
+  "checks": {"japanese": true, "names_numbers": true, "meaning_timeline": true, "duplication": true, "readability": true, "structure": true, "sources": true, "respect": true, "first_time_clarity": true},
+  "summary": "本人の指摘を受けた2箇所を削除した版を冒頭から末尾まで通読。2013年の住民証言から捜索、2014年末の20頭捕獲からなお加害個体不明という本筋へ直接進み、削除による情報の穴はない。",
+  "chapter_reviews": [
+    {"chapter": 1, "note": "余計な『通報と遭遇の違い』の解説を削除。被害発見と住民証言、猟友会の初動は初見でも区別できる。", "plain_summary": "2013年に山菜採りの女性が襲われ、町と猟友会がクマを探し始める。"},
+    {"chapter": 2, "note": "議会の雇用案6文を削り、20頭捕獲したが加害個体は見つからないという話へ直結。女性と同行男性、捕獲された別個体の区別も維持。", "plain_summary": "翌年も同じクマが女性を襲い、捕獲を続けてもその個体は見つからない。"},
+    {"chapter": 3, "note": "2015年の再捜索と前年8月の今金での捕獲判明を区別。町の季節移動説は推測に限定される。", "plain_summary": "遺伝子照合でクマが前年夏に隣町で捕まっていたと判明する。"}
+  ],
+  "issues": [
+    {"chapter": 1, "description": "通報と遭遇を説明する1文は分かりにくく余分", "resolution": "本人指摘どおり削除し、全文で前後の連続性を確認", "status": "resolved"},
+    {"chapter": 2, "description": "狩猟免許取得者・町職員採用案の6文は事件の捜索経過から逸れる", "resolution": "段落全体を削除し、20頭捕獲と加害個体不明が連続して伝わることを確認", "status": "resolved"}
+  ]
+}

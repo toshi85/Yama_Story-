@@ -1,0 +1,26 @@
+{
+ "at": "2026-09-25T22:49:34",
+ "tool": "imagegen/run.py",
+ "kind": "image",
+ "paid": false,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix5c.md",
+ "md_sha256": "708533d08979b0d7e05a7cb44f912ac89af9993223ca6cf26839c6d675863f09",
+ "sample_approved": false,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925"
+ ],
+ "items": [
+  {
+   "id": "ASSET-161_char",
+   "prompt": "Simple flat cartoon sticker illustration for children, in the style of plain clean vector clip art. Bold uniform black outline of even thickness around the figure and around each interior shape. Absolutely flat solid fill colours - one flat tone per area, plus at most one slightly darker tone as a simple shadow. No gradients, no airbrushing, no blush, no cheek shading, no skin shading, no soft light, no ambient occlusion, no texture, no fabric pattern, no glossy highlights except one small white dot in each eye. Very large head, about one third of the total height, three heads tall overall, short stubby limbs, small simple mitten-like hands. Simple oval eyes with plain dark irises, tiny simple nose, small simple mouth, plain flat face with no wrinkles and no detailed features. Keep the clothing extremely simple: only a few large plain shapes, no small pockets, no straps, no cords, no buckles, no badges, no gadgets, no accessories other than the ones listed. If the description below mentions many pockets, straps or accessories, simplify them into a few plain shapes. Full body head to feet, whole figure inside the frame, centred. Posed exactly as described below, front-facing where possible. (CHAR-05 再利用) A full-body Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, standing square to the viewer with his shoulder line parallel to the picture plane, his face clearly visible. He holds a plain yellow folding ruler with no readable markings horizontally in front of his chest with both hands, showing a width, eyebrows pulled together and raised, eyes stretched wide and intent, mouth open as he calls out, a bead of sweat on his temple, tense and urgent, NOT calm, NOT smiling. No lettering, no badge, no logo. Only this one man, no other people. A very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw him with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. Generate 1 image. No written words or lettering anywhere. Fully transparent background, PNG with alpha, no backdrop and no ground shadow. 1:1 square aspect ratio."
+  },
+  {
+   "id": "ASSET-161_bg",
+   "prompt": "One large fresh forepaw print of an adult male Hokkaido brown bear, an animal about 2 metres long and roughly 150 to 250 kilograms, pressed into damp dark mud on a forest path near Setana, southwestern Hokkaido, in April early spring: a broad pad about 14 centimetres wide, five toe marks and long claw marks in front of the toes, a plain yellow folding ruler with no readable markings lying across the print for scale, brown leaf litter and a few first green shoots around it, No snow anywhere, no frost, no ice, no winter. No bear anywhere in the frame, no animal visible. Framed from adult eye height about one and a half metres away, the camera angled downward, the print in the lower right, the left half of the frame left as clear open space. Tense, quiet, soft overcast daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+  },
+  {
+   "id": "ASSET-169_still",
+   "prompt": "A narrow dirt path leading from the back of an old wooden rural house up to a small hillside vegetable field at the foot of a wooded hill near Setana, southwestern Hokkaido, in April early spring. On the path, seen from behind and slightly to the side, a Japanese man in his 70s with short white hair in a beige work jacket, grey trousers and rubber boots climbs toward the field, a small portable radio held up in his right hand and a small red packet of firecrackers in his left hand, his head turned toward the wooded hill; his face is turned away and not visible. Dark freshly tilled soil, dry brown grass along the path, bare and budding deciduous trees on the hill, No snow anywhere, no frost, no ice, no winter, no lush summer green. No readable text or labels on the radio or packet, no logo. Captured as a frozen moment. Framed from adult eye height about five metres behind him, the upper third left as clean open space. Uneasy, quiet, soft overcast light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. Generate 1 image."
+  }
+ ]
+}

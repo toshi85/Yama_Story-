@@ -1,0 +1,34 @@
+{
+  "reviewer": "Codex",
+  "full_text_read": true,
+  "checks": {
+    "japanese": true,
+    "names_numbers": true,
+    "meaning_timeline": true,
+    "duplication": true,
+    "readability": true,
+    "structure": true,
+    "sources": true,
+    "respect": true,
+    "first_time_clarity": true
+  },
+  "summary": "3周目は数字と地名の対応を全文で確認。38世帯は新成集落、2015年の車は日中部地区、太田・今金の距離とは別。200mが続くが各文に起点があり誤接続しない。家族の予定は固有名や推測を足していない。",
+  "chapter_reviews": [
+    {
+      "chapter": 1,
+      "note": "2013年、発見場所と南側の集落を区別。夫・妻・捜索者の主語を取り違えない。",
+      "plain_summary": "2013年、山菜採りの女性が集落に近い山で亡くなり、捜索が始まった。"
+    },
+    {
+      "chapter": 2,
+      "note": "2014年の太田地区、5月の別個体、12月の町長発言の順を確認。",
+      "plain_summary": "2014年、同じクマが再び襲い、別のクマは捕まったが事件の個体は不明のままだった。"
+    },
+    {
+      "chapter": 3,
+      "note": "2015年の日中部地区の山菜採り、北檜山・大成の捜索、今金町での前年捕獲を区別。",
+      "plain_summary": "2015年、町が捜索と警戒を続ける中、問題のクマは前年すでに今金町で捕まっていたと判明した。"
+    }
+  ],
+  "issues": []
+}

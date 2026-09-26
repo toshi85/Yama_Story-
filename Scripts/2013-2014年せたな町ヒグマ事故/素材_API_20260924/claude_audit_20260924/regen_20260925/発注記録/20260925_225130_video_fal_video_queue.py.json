@@ -1,0 +1,20 @@
+{
+ "at": "2026-09-25T22:51:30",
+ "tool": "fal_video_queue.py",
+ "kind": "video",
+ "paid": true,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix5a.md",
+ "md_sha256": "6bba2870327acf6a3b50fe4effd55fd589c17248f395990dc86ad90a83afe83f",
+ "sample_approved": false,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/video_plan_regen.json",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/動画_H3"
+ ],
+ "items": [
+  {
+   "id": "H3_058",
+   "prompt": "One single continuous shot at the gravel entrance of an early-spring Hokkaido forest road: three aging Japanese hunters get ready slowly; the white-haired man straightens up stiffly with a hand on his lower back, the man on the pickup tailgate pulls on his boot, the man with the walking stick adjusts the rifle case on his back. The camera drifts slowly sideways past them. No cuts, no scene change. Faces stay turned away and never identifiable. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+  }
+ ]
+}

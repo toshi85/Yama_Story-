@@ -1,0 +1,41 @@
+{
+  "reviewer": "Codex",
+  "full_text_read": true,
+  "checks": {
+    "japanese": true,
+    "names_numbers": true,
+    "meaning_timeline": true,
+    "duplication": true,
+    "readability": true,
+    "structure": true,
+    "sources": true,
+    "respect": true,
+    "first_time_clarity": true
+  },
+  "summary": "全文を順に通読。本人指摘の解説文を削ると、目撃証言から当日の捜索へ自然につながり、事実情報は失われない。残る目撃証言は町への目撃通報がなかった記録と主語・時点を混同しない。",
+  "chapter_reviews": [
+    {
+      "chapter": 1,
+      "note": "事故前の町への情報と住民の過去の遭遇談を続けても、余分な説明文なしで意味が伝わる。夫の捜索、猟友会、町の対応まで時間順に追える。",
+      "plain_summary": "夫が妻を探し、事故が判明して町と猟友会が加害個体を捜すが見つからない。"
+    },
+    {
+      "chapter": 2,
+      "note": "2014年の襲撃、男性の反撃、捜索、別個体の捕獲、議会の体制論まで初見で主語と時点を追える。",
+      "plain_summary": "同じクマが翌年も人を襲い、捜索を続けても捕まらず、町は対応体制も検討する。"
+    },
+    {
+      "chapter": 3,
+      "note": "2015年の再捜索から前年の捕獲判明へ進む時系列と、町の季節移動説が推測であることを区別できる。",
+      "plain_summary": "探していたクマは隣町で前年に捕獲済みと判明し、町は捜索を終える。"
+    }
+  ],
+  "issues": [
+    {
+      "chapter": 1,
+      "description": "『町への通報がなかったことと…同じではありません』が説明的で分かりにくく、本人が不要と指摘",
+      "resolution": "該当1文を削除。前後の全文を通読し、目撃証言と捜索開始の流れを再確認",
+      "status": "resolved"
+    }
+  ]
+}

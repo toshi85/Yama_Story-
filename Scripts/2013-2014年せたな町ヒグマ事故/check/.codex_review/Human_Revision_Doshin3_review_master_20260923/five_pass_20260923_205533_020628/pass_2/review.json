@@ -1,0 +1,34 @@
+{
+  "reviewer": "Codex",
+  "full_text_read": true,
+  "checks": {
+    "japanese": true,
+    "names_numbers": true,
+    "meaning_timeline": true,
+    "duplication": true,
+    "readability": true,
+    "structure": true,
+    "sources": true,
+    "respect": true,
+    "first_time_clarity": true
+  },
+  "summary": "全文を再読し、追加した70代・過去約3回、2014年末の5人、2014年8月の内陸捕獲の数字と帰属を素材シートと突合。2013年・2014年・2015年の時点を混同していない。",
+  "chapter_reviews": [
+    {
+      "chapter": 1,
+      "note": "2013年春の町への通報0と住民の過去の遭遇約3回は別の期間・母集団として読める。夫・住民・猟友会の行動順も保持。",
+      "plain_summary": "2013年に女性が山で亡くなり、住民も警戒するなか猟友会がクマを探す。"
+    },
+    {
+      "chapter": 2,
+      "note": "2014年の45歳女性・63歳男性と、12月議会の新規免許者5人を別人物として確認。議員案は決定ではない。",
+      "plain_summary": "翌春に同じクマが再び人を襲い、町が追跡するが見つからず、議会で対応体制も論じる。"
+    },
+    {
+      "chapter": 3,
+      "note": "事故現場間8キロと太田から金原まで16キロの起終点を分離。2015年4月の判定と2014年8月の捕獲も別時点。",
+      "plain_summary": "広い捜索を続けた町は、探していた個体が前年の夏に今金町で捕まっていたと知る。"
+    }
+  ],
+  "issues": []
+}

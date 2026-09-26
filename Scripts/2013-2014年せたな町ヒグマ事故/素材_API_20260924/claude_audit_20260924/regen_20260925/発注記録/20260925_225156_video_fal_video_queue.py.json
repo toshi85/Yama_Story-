@@ -1,0 +1,20 @@
+{
+ "at": "2026-09-25T22:51:56",
+ "tool": "fal_video_queue.py",
+ "kind": "video",
+ "paid": true,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix5c.md",
+ "md_sha256": "708533d08979b0d7e05a7cb44f912ac89af9993223ca6cf26839c6d675863f09",
+ "sample_approved": false,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/video_plan_regen.json",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/動画_H3"
+ ],
+ "items": [
+  {
+   "id": "H3_178",
+   "prompt": "One single continuous shot at the counter of a small seaside convenience store in Hokkaido in spring: a hand in a navy work-jacket sleeve enters the frame, sets down a fresh stack of warning leaflets with a bear photograph beside the first stack, then slides one leaflet forward across the counter. Only the hand and forearm ever appear, no face visible. No readable text on the leaflets. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+  }
+ ]
+}

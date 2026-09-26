@@ -1,0 +1,20 @@
+{
+ "at": "2026-09-25T22:53:56",
+ "tool": "fal_video_queue.py",
+ "kind": "video",
+ "paid": true,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix5b.md",
+ "md_sha256": "44a2307ffb2779cd411159c130645d20f9a96e968dbf8b9dc299d632c6068121",
+ "sample_approved": false,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/video_plan_regen.json",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/動画_H3"
+ ],
+ "items": [
+  {
+   "id": "H3_160",
+   "prompt": "One single continuous shot from a fixed camera beside a gravel mountain road near Setana in March, late winter: an empty steel box trap with its door raised open waits at the roadside; a light wind stirs the dry grass and the bare branches, and the camera pushes in very slowly toward the open trap door. Nothing enters the trap, no animal and no people appear. Late-winter snow is intended in this scene. No cuts, no scene change. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+  }
+ ]
+}

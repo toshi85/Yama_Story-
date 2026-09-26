@@ -47,12 +47,21 @@ class QueueTests(unittest.TestCase):
         self.assertFalse(q.inflight)
         self.assertEqual((q.failures, q.retries), (1, 1))
 
-    def test_second_failure_stops(self):
+    def test_second_failure_gives_up_that_item_and_keeps_going(self):
+        # 2026-09-26: 2回失敗したカットだけ外し、残りを作り続ける（全体を止めると数分〜9分止まっていた）
         q = self.queue()
-        q.assign('a'); q.finish('a', False)
-        q.assign('a'); q.finish('a', False)
-        self.assertTrue(q.stopped)
-        self.assertIsNone(q.assign('b'))
+        first = q.assign('a')['id']; q.finish('a', False)
+        ids = []
+        while True:
+            item = q.assign('a')
+            if item is None:
+                break
+            ids.append(item['id'])
+            q.finish('a', item['id'] != first)
+        self.assertFalse(q.stopped)
+        self.assertEqual(q.gave_up, [first])
+        self.assertEqual(ids[-1], first)            # やり直しは列の最後
+        self.assertEqual(len(set(ids)), len(q.items))  # 他のカットは全部回った
 
     def test_limit_stops_all_workers(self):
         q = self.queue()

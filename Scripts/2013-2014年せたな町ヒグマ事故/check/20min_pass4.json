@@ -1,0 +1,12 @@
+{
+  "reviewer": "Codex",
+  "full_text_read": true,
+  "checks": {"japanese": true, "names_numbers": true, "meaning_timeline": true, "duplication": true, "readability": true, "structure": true, "sources": true, "respect": true, "first_time_clarity": true},
+  "summary": "全文を四度目に通読。初見の視聴者にとって、追加の住民証言が2013年春の通報記録と矛盾しないこと、議員提案と町の決定が別であること、季節移動が仮説であることを確認した。",
+  "chapter_reviews": [
+    {"chapter": 1, "note": "女性、夫、住民、調査員の順で主体が替わるたびに語が示される。新成の過去の遭遇と当年の無通報は別として理解できる。", "plain_summary": "2013年、山菜採りの女性が亡くなり、夫の通報を受けた人々がクマを捜す。"},
+    {"chapter": 2, "note": "襲撃後に同じクマと判明し、地上・空の捜索、別個体の捕獲、議会の課題まで時間順で追える。新設段落は行政説明だけで終わらず捕獲未達へ接続する。", "plain_summary": "二度目の被害から年末まで捜索は続くが、加害個体は捕まったと分かっていない。"},
+    {"chapter": 3, "note": "2015年の捜索と前年夏の捕獲を混同しない。海側・内陸の対比は地図に合わせやすいが経路そのものは断定しない。", "plain_summary": "加害個体が前年に今金で捕獲済みだったことが分かり、町は捜索を終える。"}
+  ],
+  "issues": []
+}

@@ -1,0 +1,34 @@
+{
+  "reviewer": "Codex",
+  "full_text_read": true,
+  "checks": {
+    "japanese": true,
+    "names_numbers": true,
+    "meaning_timeline": true,
+    "duplication": true,
+    "readability": true,
+    "structure": true,
+    "sources": true,
+    "respect": true,
+    "first_time_clarity": true
+  },
+  "summary": "全文を三度目に通読。追加段落は2013年の認識差、2014年の捜索体制、2015年の捕獲地と季節移動の見立て、住民の安堵をそれぞれ一度だけ伝える。",
+  "chapter_reviews": [
+    {
+      "chapter": 1,
+      "note": "町への通報のない春と住民の以前の遭遇を並べることで、目撃情報ゼロをクマ不在と誤解させない。説明は短い。",
+      "plain_summary": "町に目撃通報がない春に死亡事故が起こり、住民と行政がクマを警戒し始める。"
+    },
+    {
+      "chapter": 2,
+      "note": "新規5人の免許取得と、仕事のある猟友会員がすぐ動けない場合の論点を別の事実として配置。町長が即時採用したとは書いていない。",
+      "plain_summary": "二度目の襲撃後に捜索が続き、町では捕獲の担い手と出動体制を話し合う。"
+    },
+    {
+      "chapter": 3,
+      "note": "捕獲地判明後に町の季節移動説を配置し、経路の実測とは区別。住民の安堵を町長発言の直後に置いて感情を重複させない。",
+      "plain_summary": "探していたクマは隣町の畑で前年に捕獲済みと判明し、町と住民が安堵する。"
+    }
+  ],
+  "issues": []
+}

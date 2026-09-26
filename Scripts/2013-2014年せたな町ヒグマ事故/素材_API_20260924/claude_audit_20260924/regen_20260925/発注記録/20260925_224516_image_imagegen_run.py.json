@@ -1,0 +1,26 @@
+{
+ "at": "2026-09-25T22:45:16",
+ "tool": "imagegen/run.py",
+ "kind": "image",
+ "paid": false,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix5b.md",
+ "md_sha256": "44a2307ffb2779cd411159c130645d20f9a96e968dbf8b9dc299d632c6068121",
+ "sample_approved": false,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925"
+ ],
+ "items": [
+  {
+   "id": "ASSET-101_bg",
+   "prompt": "A narrow mountain trail through a quiet deciduous forest in the Ota area near Setana, southwestern Hokkaido, in mid-April early spring: bare and budding trees, low green bamboo grass along the trail, brown leaf litter, the Sea of Japan faintly visible through the trees, No snow anywhere, no snow patches, no frost, no ice, no winter. No legible text, no sign. Framed from adult eye height about four metres back, the camera angled only slightly downward, the middle of the frame left as clear open space. Calm, peaceful, soft morning light, muted natural tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Empty landscape only. Generate 1 image."
+  },
+  {
+   "id": "ASSET-107_char",
+   "prompt": "Simple flat cartoon sticker illustration for children, in the style of plain clean vector clip art. Bold uniform black outline of even thickness around the figure and around each interior shape. Absolutely flat solid fill colours - one flat tone per area, plus at most one slightly darker tone as a simple shadow. No gradients, no airbrushing, no blush, no cheek shading, no skin shading, no soft light, no ambient occlusion, no texture, no fabric pattern, no glossy highlights except one small white dot in each eye. Very large head, about one third of the total height, three heads tall overall, short stubby limbs, small simple mitten-like hands. Simple oval eyes with plain dark irises, tiny simple nose, small simple mouth, plain flat face with no wrinkles and no detailed features. Keep the clothing extremely simple: only a few large plain shapes, no small pockets, no straps, no cords, no buckles, no badges, no gadgets, no accessories other than the ones listed. If the description below mentions many pockets, straps or accessories, simplify them into a few plain shapes. Full body head to feet, whole figure inside the frame, centred. Posed exactly as described below, front-facing where possible. (CHAR-05 再利用) Two full-body Japanese hunters standing side by side toward the viewer at a slight three-quarter angle, both faces clearly visible. Left to right: 1) (CHAR-05 再利用) a Japanese local hunter in his 60s with short grey hair and a grey stubble, an orange cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a small backpack, a rifle slung on his back pointing upward, holding a pair of binoculars just below his eyes with both hands and looking to his right, eyebrows driven down hard, eyes narrowed and darting, mouth pressed into a tight grim line, a bead of sweat on his temple; 2) (CHAR-09 再利用) a Japanese young hunter in his 30s with short black hair, a dark green cap, a dark green field jacket under a blaze-orange safety vest, khaki trousers and brown boots, a rifle slung on his back pointing upward, shading his eyes with one hand and looking to his left, eyebrows pulled together, eyes wide and alert, mouth open, sweat on his forehead. Both are tense and searching, NOT calm, NOT smiling. Every person is a distinct individual, no two dressed alike. NO TWO OF THEM SHARE A FACE, A HAIRSTYLE OR AN OUTFIT. The young hunter is a little taller. No lettering, no badge, no logo. Each figure has a very large head about one third of the total height, a short compact torso and short stubby arms and legs, roughly three heads tall. Do NOT draw them with realistic adult proportions — not four, five, six or seven heads tall. Full body. Transparent background, real alpha transparency. Generate 1 image. No written words or lettering anywhere. Fully transparent background, PNG with alpha, no backdrop and no ground shadow. 1:1 square aspect ratio."
+  },
+  {
+   "id": "ASSET-141_still",
+   "prompt": "Two plain sealed kraft specimen envelopes lying side by side on a dark laboratory bench in a small research laboratory in southwestern Hokkaido, in mid-May late spring: a microscope and a rack of capped sample tubes pushed to the back of the bench, a window with fresh light-green trees and the sea outside, No snow anywhere, no snow on any distant mountain, no frost, no ice, no winter. No lettering on the envelopes, no readable text, no real institution name, no crest, no emblem, no logo. The two envelopes sit in the lower middle of the frame, the upper third deliberately left as clean negative space for large lettering. Framed from adult eye height about two metres back. Heavy, disappointed mood, soft cool daylight, muted tones. Photorealistic, shot on RED camera. Documentary style. 16:9 aspect ratio. No people, no figures, no humans visible. Generate 1 image."
+  }
+ ]
+}

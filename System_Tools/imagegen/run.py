@@ -266,6 +266,9 @@ class ParallelQueue:
         self.item_failures = {}
         self.retries = 0
         self.stopped = False
+        # 2026-09-26: 1枚が2回失敗しても全体を止めない。そのカットだけ外して gave_up に残し、残りを作り続ける。
+        #   以前は全体を止めて立ち上げ直していたため、失敗が続く場面のたびに数分〜9分止まっていた（本人「だめじゃん」）。
+        self.gave_up = []
 
     def assign(self, worker, skip=None):
         if self.stopped or worker in self.inflight or not self.pending:
@@ -287,9 +290,9 @@ class ParallelQueue:
             self.failures += 1
             self.item_failures[key] = self.item_failures.get(key, 0) + 1
             if self.item_failures[key] >= 2:
-                self.stopped = True
+                self.gave_up.append(key)
             else:
-                self.pending.appendleft(key)
+                self.pending.append(key)   # やり直しは列の最後へ（他のカットを先に進める）
 
     def stop(self):
         self.stopped = True
@@ -357,6 +360,13 @@ class SendPacer:
 def reference_images(item, work):
     """このキャラが再利用する固定人物（CHAR-NN）の基準画像。images/CHAR-NN.png にあるものだけ。"""
     if not item:
+        return []
+    # 基準を添えると生成に失敗したカット（find_ref_copies.py が追記）は、基準なしで作る
+    try:
+        no_ref = set((pathlib.Path(work) / '.imagegen' / 'no_ref_ids.txt').read_text().split())
+    except OSError:
+        no_ref = set()
+    if item.get('id') in no_ref:
         return []
     # 実行中の項目は id と prompt だけ（remaining() が落とす）。種類と参照先はキューの元データから引く。
     try:
@@ -730,7 +740,7 @@ def run_parallel(work, count, *, min_interval=60, max_attempts=None, exclude='',
             _, left = remaining(work)
             have = ({i['id'] for i in queue} - {i['id'] for i in left}) | {
                 i['id'] for i in queue if (work / 'images' / (i['id'] + '.png')).exists()}
-            left = [item for item in left if not skip(item)]
+            left = [item for item in left if not skip(item) and item['id'] not in scheduler.gave_up]
             access.saved(have)
             if not left:
                 scheduler.pending.clear()
@@ -823,8 +833,15 @@ def run_parallel(work, count, *, min_interval=60, max_attempts=None, exclude='',
                     install_parallel(target, scheduler.items[item_id], key, resume=True)
                 elif state['failed'] or time.time()-idle_since.setdefault(worker, time.time()) > 30:
                     scheduler.finish(worker, False)
+            if scheduler.gave_up:
+                gave = work / '.imagegen' / 'gave_up.txt'
+                have_ids = set(gave.read_text().split()) if gave.exists() else set()
+                new_ids = [k for k in scheduler.gave_up if k not in have_ids]
+                if new_ids:
+                    gave.write_text('\n'.join(sorted(have_ids | set(new_ids))) + '\n')
+                    print(f'2回失敗したので外して続行: {new_ids}（{gave.name} に記録）', flush=True)
             if scheduler.stopped:
-                raise RuntimeError('同じ項目が2回失敗したため停止しました')
+                raise RuntimeError('生成を止めました')
             for target in targets[:count]:
                 worker = target['id']
                 if worker in scheduler.inflight:

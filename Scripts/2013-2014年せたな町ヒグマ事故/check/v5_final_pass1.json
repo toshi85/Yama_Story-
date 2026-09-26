@@ -1,0 +1,16 @@
+{
+  "reviewer": "Codex",
+  "full_text_read": true,
+  "checks": {"japanese": true, "names_numbers": true, "meaning_timeline": true, "duplication": true, "readability": true, "structure": true, "sources": true, "respect": true, "first_time_clarity": true},
+  "summary": "本人提示の確定候補全文を冒頭から末尾まで通読。削除対象3箇所がなく、2014年末の20頭捕獲から未捕獲の核心へ直結。町の季節移動説は『ではないかと見ています』で推測と分かる。",
+  "chapter_reviews": [
+    {"chapter": 1, "note": "事故前の目撃情報・住民証言から当日の捜索へつながり、不要な説明文が挟まらない。夫・猟友会・町の行動を順に追える。", "plain_summary": "2013年に山菜採りの女性が襲われ、町と猟友会が加害個体を捜すが発見できない。"},
+    {"chapter": 2, "note": "2014年の襲撃、別個体の捕獲、年末時点の未捕獲という三段階が明確。雇用案の脱線は消えている。", "plain_summary": "同じクマが翌年も人を襲い、町が捕まえたクマとも一致せず捜索が続く。"},
+    {"chapter": 3, "note": "2015年の再捜索と前年の今金町での捕獲判明を区別。町担当者の見方は推測として表現される。", "plain_summary": "遺伝子の一致によって、加害個体が前年夏に隣町で捕獲済みと分かる。"}
+  ],
+  "issues": [
+    {"chapter": 1, "description": "通報と目撃の違いを説明する一文が余分", "resolution": "本人指摘どおり削除し、前後の意味を全文で確認", "status": "resolved"},
+    {"chapter": 2, "description": "ハンター雇用案の段落が本件の核心から逸れる", "resolution": "6文の段落全体を削除し、20頭捕獲→未捕獲の流れを確認", "status": "resolved"},
+    {"chapter": 3, "description": "町の見立てを重ねて説明する留保文が余分", "resolution": "本人指摘どおり削除。推測を示す語尾が残ることを確認", "status": "resolved"}
+  ]
+}

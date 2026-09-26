@@ -1,0 +1,24 @@
+{
+ "at": "2026-09-26T09:00:19",
+ "tool": "fal_video_queue.py",
+ "kind": "video",
+ "paid": true,
+ "md": "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/Asset_Prompts_Fix2.md",
+ "md_sha256": "1d830a4844e85bf8086075d6eb8292cd495ebd3ea47eba00c0719877fda1773c",
+ "sample_approved": true,
+ "paths": [
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/video_plan_regen.json",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924",
+  "/Users/tosimasa/Desktop/Antigravity/Yama_Story/Scripts/2013-2014年せたな町ヒグマ事故/素材_API_20260924/claude_audit_20260924/regen_20260925/動画_H3"
+ ],
+ "items": [
+  {
+   "id": "H3_009",
+   "prompt": "One single continuous take from a low locked-off camera in a dark early-spring Hokkaido mountain forest at dusk: no cuts, no scene change. An adult male brown bear on all fours advances slowly step by step straight toward the camera out of the gloom, head dropped low, eyes fixed on the lens, fangs bared, the fur along its neck bristled, until its head and shoulders fill most of the frame. Thin mist drifts between the bare trees. Dark but NOT pure black, the bear stays clearly readable. The forest is empty apart from the bear. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+  },
+  {
+   "id": "H3_014",
+   "prompt": "One single continuous aerial drone shot: the camera glides slowly forward along the Sea of Japan coast of Setana in southwestern Hokkaido in early spring, over the small shoreline town toward the forested hills, gentle waves on the rocky headlands. No cuts, no scene change, smooth steady movement. No people visible. 8 seconds. Photorealistic, shot on RED camera. Documentary style."
+  }
+ ]
+}
