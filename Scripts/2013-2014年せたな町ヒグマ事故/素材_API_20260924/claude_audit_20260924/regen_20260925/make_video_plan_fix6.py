@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """2026-09-26 夕方: 本人の修正指示で作る・作り直す動画16本を fal H3 の発注リスト（video_plan_fix6.json）にする。
 プロンプト＝最後に上書きした資料（Fix5a < Fix5b < Fix6）のそのカットの「Google Flow動画プロンプト」を一字一句そのまま。
-id は作り直しと区別するため H3_NNN_r（納品名は前と同じ ASSET-NNN_video.mp4＝本人「修正後の素材名は修正前と同じに」）。"""
+id は H3_NNN（fal_video_queue の決まり。前の動画と混ざらないよう出力は 動画_H3_fix6 に分ける。納品名は前と同じ ASSET-NNN_video.mp4＝本人「修正後の素材名は修正前と同じに」）。"""
 import json, re
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
@@ -26,7 +26,7 @@ for no, image in CUTS.items():
                     found = (md, m.group(1).strip())
     if not found:
         raise SystemExit(f"ASSET-{no:03d}: 動画プロンプトが見つからない")
-    plan.append({"id": f"H3_{no:03d}_r", "shot_id": no, "prompt": found[1], "image": image,
+    plan.append({"id": f"H3_{no:03d}", "shot_id": no, "prompt": found[1], "image": image,
                  "deliver_as": f"ASSET-{no:03d}_video.mp4", "md": found[0]})
 (HERE / "video_plan_fix6.json").write_text(json.dumps(plan, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 root = HERE.parents[1]

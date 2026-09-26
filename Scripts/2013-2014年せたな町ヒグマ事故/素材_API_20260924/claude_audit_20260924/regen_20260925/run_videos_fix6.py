@@ -6,7 +6,7 @@ import json, subprocess, time
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]                      # 素材_API_20260924
-OUT = HERE / "動画_H3"
+OUT = HERE / "動画_H3_fix6"
 PY = str(ROOT / ".venv/bin/python")
 QUEUE = "/Users/tosimasa/Desktop/Antigravity/System_Tools/edit/fal_video_queue.py"
 AUTH = ("2026-09-26 本人チャット「料金の了解（約210円）承認します」「今後もいちいち承認をもとめないようにシステム化しておいて」、"

@@ -1,6 +1,6 @@
 [
   {
-    "id": "H3_077_r",
+    "id": "H3_077",
     "shot_id": 77,
     "prompt": "One single continuous shot: the brown bear charges forward down the forest trail on all fours toward the small figure of the man far ahead, the camera following low behind the bear, leaves and soil kicked up. The man stays small and seen only from behind; the shot ends before any contact. No blood, no wounds, no new people. Photorealistic. No music. No dialogue. 5 seconds.",
     "image": "claude_audit_20260924/regen_20260925/images/ASSET-077_still.png",
@@ -8,7 +8,7 @@
     "md": "Asset_Prompts_Fix5a.md"
   },
   {
-    "id": "H3_082_r",
+    "id": "H3_082",
     "shot_id": 82,
     "prompt": "One single continuous shot from a fixed camera on an early-spring Hokkaido forest trail: an adult brown bear on all fours, its back and rump toward the camera, breaks into a full gallop and runs away fast uphill, bounding hard through dense bamboo grass and bare woods, leaves and soil flying from its paws, growing smaller quickly until it vanishes deep into the forest; the bamboo keeps swaying after it is gone and the trail is left empty. The bear never turns its face toward the camera and never stands up. No cuts, no scene change. No snow anywhere. Photorealistic. No music. No dialogue. 5 seconds.",
     "image": "claude_audit_20260924/regen_20260925/images/ASSET-082_still.png",
@@ -16,7 +16,7 @@
     "md": "Asset_Prompts_Fix5a.md"
   },
   {
-    "id": "H3_087_r",
+    "id": "H3_087",
     "shot_id": 87,
     "prompt": "One single continuous shot on an early-spring Hokkaido rural road beside an old wooden school building: the town worker in a navy work jacket, seen only from behind, pulls the striped road barrier all the way across the lane, then bends and snaps a padlock shut on its end; the road is now closed. The worker never turns to the camera and his face is never visible. No cuts, no scene change, no new people. No snow anywhere. 5 seconds. Photorealistic, shot on RED camera. Documentary style.",
     "image": "claude_audit_20260924/regen_20260925/images/ASSET-087_still.png",
@@ -24,7 +24,7 @@
     "md": "Asset_Prompts_Fix5a.md"
   },
   {
-    "id": "H3_090_r",
+    "id": "H3_090",
     "shot_id": 90,
     "prompt": "One single continuous shot beside an early-spring Hokkaido country road: gloved hands in navy sleeves give the clamp of a new bear warning sign a final turn with a spanner and let go; the camera slowly pulls back and pans to reveal a second new sign further along the empty road and the bare forested hills. Only hands and forearms ever appear, no face visible. No cuts, no scene change. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
     "image": "claude_audit_20260924/regen_20260925/images/ASSET-090_still.png",
@@ -32,7 +32,7 @@
     "md": "Asset_Prompts_Fix5a.md"
   },
   {
-    "id": "H3_111_r",
+    "id": "H3_111",
     "shot_id": 111,
     "prompt": "One single continuous shot: the red-and-white rescue helicopter flies slowly along the forested ridge, turning to search the slopes below, its rotor blades spinning and the treetops swaying in the downwash, while the small line of searchers on the ridge keeps walking. Nobody's face is ever visible. No cuts, no scene change, no text, no markings. No snow anywhere. 5 seconds. Photorealistic, shot on RED camera. Documentary style.",
     "image": "claude_audit_20260924/regen_20260925/images/ASSET-111_still.png",
@@ -40,7 +40,7 @@
     "md": "Asset_Prompts_Fix5b.md"
   },
   {
-    "id": "H3_118_r",
+    "id": "H3_118",
     "shot_id": 118,
     "prompt": "Keep the split-screen layout and the white dividing line exactly as in the image. In the left half the searchers keep walking slowly up the slope; in the right half the helicopter drifts slowly along the ridge with its rotor spinning and the treetops swaying. No cuts, no new people, no faces visible, no text, no markings. No snow anywhere. 5 seconds. Photorealistic, shot on RED camera. Documentary style.",
     "image": "claude_audit_20260924/regen_20260925/images/ASSET-118_still.png",
@@ -48,7 +48,7 @@
     "md": "Asset_Prompts_Fix5b.md"
   },
   {
-    "id": "H3_124_r",
+    "id": "H3_124",
     "shot_id": 124,
     "prompt": "Keep the composition of the image exactly. One single continuous shot of the empty forest road at dusk: the sun slowly sinks behind the hills, the light fades to orange and grey, the bare treetops and dry grass sway gently in the wind, and the camera pushes in very slowly along the road. No people, no animals, no cuts, no text. No snow anywhere. 5 seconds. Photorealistic, shot on RED camera. Documentary style.",
     "image": "claude_audit_20260924/regen_20260925/images/ASSET-124_bg.png",
@@ -56,7 +56,7 @@
     "md": "Asset_Prompts_Fix5b.md"
   },
   {
-    "id": "H3_126_r",
+    "id": "H3_126",
     "shot_id": 126,
     "prompt": "One single continuous shot from a fixed camera in a late-winter Hokkaido forest with patches of old snow: the adult brown bear walks slowly and calmly away on all fours, deeper into the trees, never turning its face toward the camera and never rising onto its hind legs, until it disappears among the trunks; the forest is left still and silent. No people, no cuts, no scene change, no text. 5 seconds. Photorealistic, shot on RED camera. Documentary style.",
     "image": "画像/ASSET-126_still.png",
@@ -64,7 +64,7 @@
     "md": "Asset_Prompts_Fix5b.md"
   },
   {
-    "id": "H3_144_r",
+    "id": "H3_144",
     "shot_id": 144,
     "prompt": "Keep the composition of the image exactly. One single continuous shot of the snowy town office in December: fine snow keeps falling softly, the bare branches sway a little, and the camera pushes in very slowly toward the entrance. No people, no cuts, no text. 5 seconds. Photorealistic, shot on RED camera. Documentary style.",
     "image": "claude_audit_20260924/regen_20260925/images/ASSET-144_still.png",
@@ -72,7 +72,7 @@
     "md": "Asset_Prompts_Fix5b.md"
   },
   {
-    "id": "H3_145_r",
+    "id": "H3_145",
     "shot_id": 145,
     "prompt": "Keep the composition of the image exactly. One single continuous shot in the winter meeting room: the council members and officials around the table lean in over the bear photographs and the map, one of them slowly slides a photo toward the others and points at the map, snow keeps falling softly outside the window, and the camera pushes in very slowly. Everyone stays seen from behind or from the back three-quarters, no faces visible. No cuts, no new people, no text. 5 seconds. Photorealistic, shot on RED camera. Documentary style.",
     "image": "claude_audit_20260924/regen_20260925/images/ASSET-145_still.png",
@@ -80,7 +80,7 @@
     "md": "Asset_Prompts_Fix5b.md"
   },
   {
-    "id": "H3_155_r",
+    "id": "H3_155",
     "shot_id": 155,
     "prompt": "Keep the composition of the image exactly. One single continuous shot in a snowy town office parking lot in late winter: Japanese hunters in blaze-orange vests and town staff in navy jackets carry backpacks and coils of rope to two white vans and load them in, one hunter shoulders a backpack, a side door slides shut. Their faces are never visible. No cuts, no scene change, no text. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
     "image": "claude_audit_20260924/regen_20260925/images/ASSET-155_still.png",
@@ -88,7 +88,7 @@
     "md": "Asset_Prompts_Fix6.md"
   },
   {
-    "id": "H3_156_r",
+    "id": "H3_156",
     "shot_id": 156,
     "prompt": "Keep the composition of the image exactly. One single continuous shot of an office desk with an open case folder and loose papers: the camera pushes in very slowly toward the open folder, a light draught from the window lifts the corner of a loose sheet a little and lets it settle. No people, no hands, no cuts, no text. 5 seconds. Photorealistic, shot on RED camera. Documentary style.",
     "image": "画像/ASSET-156_bg.png",
@@ -96,7 +96,7 @@
     "md": "Asset_Prompts_Fix6.md"
   },
   {
-    "id": "H3_166_r",
+    "id": "H3_166",
     "shot_id": 166,
     "prompt": "Keep the composition of the image exactly. One single continuous shot on a mountain road in early spring: the man at the open tailgate, seen from behind, lifts a bag of wild garlic into the car, and far down the road another car pulls in and parks behind the others. His face is never visible. No cuts, no scene change, no text. No snow anywhere. 5 seconds. Photorealistic, shot on RED camera. Documentary style.",
     "image": "claude_audit_20260924/regen_20260925/images/ASSET-166_still.png",
@@ -104,7 +104,7 @@
     "md": "Asset_Prompts_Fix6.md"
   },
   {
-    "id": "H3_198_r",
+    "id": "H3_198",
     "shot_id": 198,
     "prompt": "Keep the composition of the image exactly. One single continuous shot from a fixed camera inside a forest track looking out toward the entrance: two Japanese hunters in blaze-orange vests, seen only from behind, walk slowly away from the camera out of the woods, reach the white van, load the backpack and rope into the rear, close the hatch and get in; the van drives off toward the town, leaving the track entrance empty. Their faces are never visible. They never turn back toward the woods. No cuts, no scene change, no text. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
     "image": "claude_audit_20260924/regen_20260925/images/ASSET-198_still.png",
@@ -112,7 +112,7 @@
     "md": "Asset_Prompts_Fix6.md"
   },
   {
-    "id": "H3_208_r",
+    "id": "H3_208",
     "shot_id": 208,
     "prompt": "Keep the composition of the image exactly, cropped at the neck. One single continuous shot of a seated Japanese hunter in a blaze-orange vest giving an interview: his weathered hands move slowly as he talks, one hand opening and closing, then both hands clasp together tightly on his knees in regret. His head and face never enter the frame. No cuts, no scene change, no text, no subtitles. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
     "image": "claude_audit_20260924/regen_20260925/images/ASSET-208_still.png",
@@ -120,7 +120,7 @@
     "md": "Asset_Prompts_Fix6.md"
   },
   {
-    "id": "H3_214_r",
+    "id": "H3_214",
     "shot_id": 214,
     "prompt": "Keep the composition of the image exactly. One single continuous shot from behind on a forest trail in spring: two Japanese hikers walk slowly away from the camera, the bear bell on the front hiker's backpack swinging; the rear hiker stops, turns his head toward the thick bamboo on the right and listens, then walks on. Their faces are never visible. No animals appear. No cuts, no scene change, no text. No snow anywhere. 8 seconds. Photorealistic, shot on RED camera. Documentary style.",
     "image": "claude_audit_20260924/regen_20260925/images/ASSET-214_still.png",
