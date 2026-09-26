@@ -58,7 +58,9 @@ for mdname in FIX:
         labels = re.findall(r"^(.*?)\n```", part, re.M)
         reuse_bg = re.search(r"背景は既存の (ASSET-\d+_\w+\.png)", part)
         # 別カットで作る背景を借りるカット（059＝055の背景、080＝079の静止画）は、自分の背景を作らない
-        borrow = next((m for m in re.finditer(r"背景は[^\n。]*?ASSET-(\d+)_\w+\.png[^\n。]*?(?:再使用|再利用)", part)
+        # 2026-09-26: 借りる対象は背景・静止画のファイルだけ。015「背景は新規、キャラは ASSET-029_char.png を再利用」を
+        #   背景の借用と取り違え、015 の新しい背景が生成リストから落ちていた（本人「アセット15がないです」）
+        borrow = next((m for m in re.finditer(r"背景は[^\n。、]*?ASSET-(\d+)_(?:bg|still)\w*\.png[^\n。]*?(?:再使用|再利用)", part)
                        if int(m.group(1)) != n), None)
         if borrow and not reuse_bg:
             reuse_bg = borrow
